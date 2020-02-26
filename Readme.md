@@ -9,6 +9,7 @@ The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT202
 
 
 Instructions to setup on BRAT:
+------------------
 
 In order to view the protocol annotations, 
 1. Setting up a brat server is necessary. Detailed instructions on how to setup a brat-sever can be found here: (http://brat.nlplab.org/installation.html)
