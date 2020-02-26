@@ -15,7 +15,6 @@ To set up a brat server with WLP data follow these steps:
 
 1. Setting up a brat server by following the instructions from [brat official pag](http://brat.nlplab.org/installation.html)
 2. Once your installation is ready, Place the `data` directory under "data" directory of your brat installation.
-3. make sure it has the right permissions using chmod as so: 
-			chmod -R g+rwx data.
+3. make sure it has the right permissions using chmod: `chmod -R g+rwx data`.
 4. You can now access this dataset on your brat installation, through one of the [supported web browsers](http://brat.nlplab.org/supported-browsers.html).
 
