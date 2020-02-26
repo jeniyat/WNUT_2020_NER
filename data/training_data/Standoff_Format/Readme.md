@@ -1,3 +1,4 @@
+Each `phase_*` directory contains 10 protocols in the standoff format.
 
 ## The standoff format:
 
