@@ -85,11 +85,4 @@ Binary relations have a unique ID and are defined by their type (e.g. Measure, M
 
 The format is similar to that applied for events, with the exception that the annotation does not identify a specific piece of text expressing the relation ("trigger"): the ID is separated by a TAB character, and the relation type and arguments by SPACE.
 
-Instructions to view on BRAT:
-In order to view the protocol annotations, 
-1. Setting up a brat server is necessary. Detailed instructions on how to setup a brat-sever can be found here: (http://brat.nlplab.org/installation.html)
-2. Once your installation is ready, Place the WLP-Dataset directory under "data" directory of your brat installation.
-3.  make sure it has the right permissions using chmod as so: 
-			chmod -R g+rwx data.
-4. You can now access this dataset on your brat installation, through one of the supported web browsers: (http://brat.nlplab.org/supported-browsers.html).
 
