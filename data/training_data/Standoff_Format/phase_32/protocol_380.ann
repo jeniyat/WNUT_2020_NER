@@ -1,0 +1,96 @@
+T1	Action 33 36	Add
+E1	Action:T1 Acts-on:T39 Site:T40
+T2	Action 109 112	Add
+E2	Action:T2 Acts-on:T19 Site:T20
+T3	Action 173 179	Pellet
+E3	Action:T3 Acts-on:T42 Site:T43
+T5	Action 301 304	Add
+E5	Action:T5 Acts-on:T44
+T6	Action 329 335	vortex
+E6	Action:T6 
+T7	Action 337 345	Incubate
+E7	Action:T7 
+T8	Action 380 389	vortexing
+E8	Action:T8 
+T9	Action 416 419	Add
+E9	Action:T9 Acts-on:T28 Site:T29
+T10	Action 447 454	pipette
+E10	Action:T10 Acts-on:T28 Commands:E17
+T11	Action 468 478	centrifuge
+E11	Action:T11 Acts-on:T29
+T12	Action 509 515	Remove
+E12	Action:T12 Acts-on:T32
+T13	Action 536 545	resuspend
+E13	Action:T13 Acts-on:T34 Site:T46
+T14	Action 579 585	spread
+E14	Action:T14 Acts-on:T34 Site:T35
+T15	Action 610 618	incubate
+E15	Action:T15 Acts-on:T34
+T16	Amount 37 42	90 uL
+T17	Amount 113 118	10 uL
+T18	Amount 191 195	1 mL
+T19	Reagent 128 143	Lithium Acetate
+T20	Location 151 171	microcentrifuge tube
+T21	Amount 80 86	1.5 mL
+T22	Temperature 349 353	45°C
+T25	Time 404 414	10 minutes
+T26	Modifier 390 397	briefly
+T27	Amount 420 424	1 mL
+T28	Reagent 425 430	water
+T29	Location 438 442	tube
+T30	Speed 482 492	14,000 RPM
+T31	Time 497 507	15 seconds
+T32	Reagent 520 531	supernatant
+T33	Amount 560 566	200 uL
+T34	Reagent 550 556	pellet
+T35	Location 589 605	selective plates
+T36	Temperature 622 626	30°C
+T37	Time 631 639	3-6 days
+T38	Generic-Measure 46 49	50%
+T39	Reagent 50 74	Polyethylene Glycol 3350
+T40	Location 87 107	microcentrifuge tube
+R1	Measure Arg1:T39 Arg2:T38	
+R2	Measure Arg1:T39 Arg2:T16	
+R3	Measure Arg1:T40 Arg2:T21	
+T41	Generic-Measure 122 127	0.2 N
+R4	Measure Arg1:T19 Arg2:T41	
+R5	Measure Arg1:T19 Arg2:T17	
+T42	Reagent 180 185	yeast
+T43	Location 196 210	liquid culture
+R6	Measure Arg1:T43 Arg2:T18	
+T4	Amount 305 309	1 ug
+T44	Reagent 313 316	DNA
+T45	Modifier 321 328	briefly
+R7	Measure Arg1:T44 Arg2:T4	
+R8	Mod-Link Arg1:E6 Arg2:T45	
+R9	Setting Arg1:E7 Arg2:T22	
+T23	Time 358 378	30 minutes to 1 hour
+R10	Setting Arg1:E7 Arg2:T23	
+R11	Mod-Link Arg1:E8 Arg2:T26	
+R12	Setting Arg1:E8 Arg2:T25	
+T24	Modifier 398 403	every
+R13	Mod-Link Arg1:E8 Arg2:T24	
+R14	Measure Arg1:T28 Arg2:T27	
+R15	Setting Arg1:E11 Arg2:T30	
+R16	Setting Arg1:E11 Arg2:T31	
+T46	Location 567 572	water
+R17	Measure Arg1:T46 Arg2:T33	
+R18	Setting Arg1:E15 Arg2:T36	
+R19	Setting Arg1:E15 Arg2:T37	
+T47	Method 9 23	Transformation
+T48	Reagent 27 32	Yeast
+T49	Modifier 0 8	One-Step
+T50	Device 221 230	toothpick
+T51	Modifier 239 252	freshly grown
+T52	Action 214 218	take
+E4	Action:T52 
+T53	Reagent 253 258	yeast
+T54	Location 264 269	plate
+T55	Action 274 283	resuspend
+E16	Action:T55 Acts-on:T50 Site:T56
+T56	Reagent 291 299	solution
+R20	Or Arg1:E3 Arg2:E4	
+R21	Mod-Link Arg1:T53 Arg2:T51	
+R22	Meronym Arg1:T53 Arg2:T50	
+T57	Action 458 461	mix
+E17	Action:T57 

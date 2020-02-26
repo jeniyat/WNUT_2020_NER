@@ -1,0 +1,91 @@
+T1	Action 38 45	Collect
+E1	Action:T1 Acts-on:T24
+T2	Action 129 132	Add
+E2	Action:T2 Acts-on:T21
+T3	Action 155 162	let sit
+E3	Action:T3 Acts-on:T21
+T4	Action 175 180	Raise
+E4	Action:T4 Using:T19 Measure-Type-Link:T44
+T5	Action 209 218	Spin down
+E5	Action:T5 
+T6	Action 230 236	Remove
+E6	Action:T6 Acts-on:T26
+T7	Action 247 250	Add
+E7	Action:T7 Acts-on:T28
+T8	Action 266 275	Spin down
+E8	Action:T8 
+T9	Action 283 289	Remove
+E9	Action:T9 Acts-on:T33
+T10	Action 300 303	Add
+E10	Action:T10 Acts-on:T32
+T11	Action 319 328	Spin down
+E11	Action:T11 
+T12	Action 337 343	Remove
+E12	Action:T12 Acts-on:T40 Using:T41
+T13	Action 372 375	Add
+E13	Action:T13 Acts-on:T39
+T14	Action 393 396	Add
+E14	Action:T14 Acts-on:T45
+T15	Action 456 460	Boil
+E15	Action:T15 
+T16	Action 490 495	Store
+E16	Action:T16 
+T17	Time 223 227	1min
+T18	Amount 191 196	1.5ml
+T19	Reagent 203 207	dH2O
+T20	Numerical 133 134	3
+T21	Reagent 144 150	bleach
+T22	Time 167 173	3 mins
+T23	Numerical 46 49	100
+T24	Reagent 50 57	embryos
+T25	Measure-Type 135 140	drops
+R1	Of-Type Arg1:T20 Arg2:T25	
+R2	Measure Arg1:T21 Arg2:T20	
+T26	Reagent 237 245	solution
+T27	Amount 251 256	1.5ml
+T28	Reagent 260 264	dH2O
+T29	Time 276 280	1min
+T30	Time 329 334	1 min
+T31	Amount 304 309	1.5ml
+T32	Reagent 313 317	dH2O
+T33	Reagent 290 298	solution
+T34	Temperature 499 512	-20 degrees C
+T35	Temperature 475 487	98 degrees C
+T36	Time 465 471	5 mins
+T37	Amount 397 401	50ul
+T38	Amount 376 380	50ul
+T39	Reagent 384 390	1X PBS
+T40	Reagent 344 352	solution
+T41	Device 358 370	micropipette
+R3	Setting Arg1:E3 Arg2:T22	
+R4	Measure Arg1:T24 Arg2:T23	
+T42	Action 62 67	place
+E17	Action:T42 Acts-on:T24 Site:T43
+T43	Location 73 87	eppendorf tube
+R5	Setting Arg1:E5 Arg2:T17	
+T44	Measure-Type 181 187	volume
+R6	Setting Arg1:E4 Arg2:T18	
+R7	Measure Arg1:T28 Arg2:T27	
+R8	Setting Arg1:E8 Arg2:T29	
+R9	Measure Arg1:T32 Arg2:T31	
+R10	Setting Arg1:E11 Arg2:T30	
+R11	Measure Arg1:T39 Arg2:T38	
+R12	Setting Arg1:E15 Arg2:T36	
+R13	Setting Arg1:E15 Arg2:T35	
+T45	Reagent 405 414	2X SDS SB
+R14	Measure Arg1:T45 Arg2:T37	
+T46	Action 415 425	Homogenize
+E18	Action:T46 Using:T47 Using2:T48
+T47	Device 431 437	pestle
+T48	Device 447 453	needle
+T49	Size 442 446	27ga
+R15	Measure Arg1:T48 Arg2:T49	
+R16	Setting Arg1:E16 Arg2:T34	
+T50	Amount 89 94	1.5ml
+R17	Measure Arg1:T43 Arg2:T50	
+T51	Amount 107 111	50ul
+T52	Reagent 115 126	embryo wash
+R18	Measure Arg1:T52 Arg2:T51	
+T53	Action 0 12	Western Blot
+E19	Action:T53 Acts-on:T54
+T54	Reagent 15 37	Whole Embryonic Sample

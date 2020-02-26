@@ -1,0 +1,247 @@
+T1	Action 29 36	Collect
+E1	Action:T1 Acts-on:T43
+T2	Action 47 57	centrifuge
+E2	Action:T2 Acts-on:T43
+T3	Action 92 96	Wash
+E3	Action:T3 Acts-on:T47 Using:T48
+T4	Action 147 154	pulsing
+E4	Action:T4 Site:T49
+T5	Action 209 217	Aspirate
+E5	Action:T5 Acts-on:T52
+T6	Action 222 229	discard
+E6	Action:T6 Acts-on:T52
+T7	Action 243 247	Wash
+E7	Action:T7 Acts-on:T53 Using:T54
+T8	Action 287 291	Wash
+E8	Action:T8 Acts-on:T55 Using:T56
+T9	Action 331 335	Wash
+E9	Action:T9 Acts-on:T57 Using:T58
+T10	Action 511 516	Place
+E10	Action:T10 Acts-on:T69 Site:T70
+T11	Action 375 381	Adjust
+E11	Action:T11 Measure-Type-Link:T59 Site:T62
+T12	Action 596 605	Spin down
+E12	Action:T12 Acts-on:T73
+T13	Action 659 663	wash
+E13	Action:T13 Acts-on:T76 Count:T77 Using:T78
+T14	Action 568 574	rotate
+E14	Action:T14 Acts-on:T69 Site:T70
+T15	Action 719 726	Discard
+E15	Action:T15 Acts-on:T79
+T16	Action 759 762	add
+E16	Action:T16 Acts-on:T83 Site:T84
+T17	Action 812 818	vortex
+E17	Action:T17 Acts-on:T84
+T18	Action 825 833	incubate
+E18	Action:T18 Site:T86 Acts-on:T84
+T19	Action 857 863	Freeze
+E19	Action:T19 Acts-on:T87 Using:T88 Count:T89
+T20	Action 868 872	thaw
+E20	Action:T20 Acts-on:T87 Count:T89
+T21	Action 964 971	release
+E21	Action:T21 Acts-on:T92 Site:T93
+T22	Action 1004 1008	Spin
+E22	Action:T22 Acts-on:T94 Site:T97
+T23	Action 1077 1081	keep
+E23	Action:T23 Acts-on:T99
+T24	Action 1099 1105	Adjust
+E24	Action:T24 Measure-Type-Link:T100 Site:T60 Using:T102
+T25	Action 1183 1186	Mix
+E25	Action:T25 Acts-on:T104 Acts-on2:T105
+T26	Action 1250 1256	rotate
+E26	Action:T26 Acts-on:T106
+T27	Action 1297 1304	Collect
+E27	Action:T27 Acts-on:T109
+T28	Action 1326 1333	pulsing
+E28	Action:T28 Site:T110 Acts-on:T109
+T29	Action 1393 1401	Aspirate
+E29	Action:T29 Acts-on:T114
+T30	Action 1406 1413	discard
+E30	Action:T30 Acts-on:T114
+T31	Action 1431 1435	Wash
+E31	Action:T31 Acts-on:T115 Using:T117
+T32	Action 1485 1489	Wash
+E32	Action:T32 Acts-on:T118 Using:T120
+T33	Action 1539 1543	Wash
+E33	Action:T33 Acts-on:T121 Using:T123
+T34	Action 430 438	transfer
+E34	Action:T34 Acts-on:T65 Site:T67
+T35	Action 1615 1621	remove
+E35	Action:T35 Acts-on:T124
+T36	Action 1642 1645	add
+E36	Action:T36 Acts-on:T127
+T37	Action 1677 1681	Load
+E37	Action:T37 Acts-on:T129 Site:T130
+T38	Action 1734 1737	Run
+E38	Action:T38 Acts-on:T133 Using:T134
+T39	Action 1807 1821	immunoblotting
+E39	Action:T39 Using:T135
+T40	Action 1995 1999	Boil
+E40	Action:T40 
+T41	Action 2033 2044	pipette off
+E41	Action:T41 Acts-on:T138
+T42	Action 2062 2071	Spin down
+E42	Action:T42 Acts-on:T140 Site:T142
+T43	Reagent 37 42	cells
+T44	Speed 61 69	1200 rpm
+T45	Time 74 83	5 minutes
+T46	Temperature 87 90	4°C
+T47	Reagent 97 120	protein G agarose beads
+T48	Reagent 126 143	cell lysis buffer
+T49	Location 160 180	microcentrifuge tube
+T50	Speed 197 206	5,000 rpm
+T51	Time 182 193	two minutes
+T52	Reagent 230 241	supernatant
+T53	Reagent 252 257	beads
+T54	Reagent 263 279	celllysis buffer
+T55	Reagent 296 301	beads
+T56	Reagent 307 323	celllysis buffer
+T57	Reagent 340 345	beads
+T58	Reagent 351 367	celllysis buffer
+T59	Measure-Type 382 404	antibody concentration
+T61	Concentration 408 418	5-10 µg/ml
+T62	Reagent 422 425	PBS
+T63	Amount 439 445	500 µl
+T64	Modifier 449 456	diluted
+T65	Reagent 457 465	antibody
+T66	Amount 469 476	5-10 µl
+T67	Reagent 480 493	agarose beads
+T68	Reagent 503 509	sample
+T69	Reagent 521 551	antibody-protein G agarose mix
+T70	Device 557 563	shaker
+T71	Temperature 578 581	4°C
+T72	Time 586 594	one hour
+T73	Reagent 610 625	protein G beads
+T74	Time 630 641	two minutes
+T75	Speed 645 654	5,000 rpm
+T76	Reagent 668 682	antibody-beads
+T77	Numerical 683 688	three
+T78	Reagent 700 717	cell lysis buffer
+T79	Reagent 731 742	supernatant
+T80	Modifier 747 758	immediately
+T81	Amount 763 769	800 µl
+T82	Modifier 773 781	ice-cold
+T83	Reagent 782 794	lysis buffer
+T84	Reagent 802 807	cells
+T85	Time 838 848	30 minutes
+T86	Reagent 852 855	ice
+T87	Reagent 877 884	samples
+T88	Reagent 890 897	dry ice
+T89	Numerical 902 905	two
+T90	Action 921 929	sonicate
+E43	Action:T90 
+T91	Time 934 944	15 seconds
+T92	Reagent 979 987	proteins
+T93	Reagent 997 1002	cells
+T94	Reagent 1009 1016	lysates
+T95	Speed 1020 1030	14,000 rpm
+T96	Modifier 1036 1046	pre-cooled
+T97	Device 1047 1057	centrifuge
+T98	Time 1062 1072	10 minutes
+T99	Reagent 1086 1097	supernatant
+T100	Measure-Type 1110 1131	protein concentration
+T60	Reagent 1139 1150	supernatant
+T101	Concentration 1154 1163	1-2 mg/ml
+T102	Reagent 1169 1181	lysis buffer
+T103	Amount 1187 1197	100-500 µl
+T104	Reagent 1201 1213	cell extract
+T105	Reagent 1219 1245	antibody-protein G agarose
+T106	Reagent 1261 1268	samples
+T107	Temperature 1272 1275	4°C
+T108	Time 1286 1295	two hours
+T109	Reagent 1309 1322	agarose beads
+T110	Device 1339 1359	microcentrifuge tube
+T111	Time 1361 1372	two minutes
+T112	Speed 1376 1385	5,000 rpm
+T113	Temperature 1387 1391	4°C)
+T114	Reagent 1418 1429	supernatant
+T115	Reagent 1440 1445	beads
+T116	Modifier 1451 1459	ice-cold
+T117	Reagent 1460 1477	cell lysis buffer
+T118	Reagent 1494 1499	beads
+T119	Modifier 1505 1513	ice-cold
+T120	Reagent 1514 1531	cell lysis buffer
+T121	Reagent 1548 1553	beads
+T122	Modifier 1559 1567	ice-cold
+T123	Reagent 1568 1585	cell lysis buffer
+T124	Reagent 1626 1637	supernatant
+T125	Amount 1646 1651	20 µl
+T126	Concentration 1655 1657	2X
+T127	Reagent 1658 1676	SDS sample buffer.
+T128	Amount 1682 1687	30 µl
+T129	Reagent 1691 1697	sample
+T130	Location 1701 1710	each well
+T131	Size 1716 1722	1.5 mm
+T132	Reagent 1729 1732	gel
+T133	Reagent 1742 1745	gel
+T134	Method 1758 1788	manufacturer’s recommendations
+T135	Method 1828 1865	BioLegend’s Western Blotting protocol
+T136	Time 2004 2013	5 minutes
+T137	Temperature 2017 2021	95°C
+T138	Reagent 2049 2060	supernatant
+T139	Modifier 2023 2032	Carefully
+T140	Reagent 2076 2081	beads
+T141	Speed 2085 2098	maximum speed
+T142	Device 2104 2119	microcentrifuge
+T143	Time 2124 2133	5 minutes
+T144	Temperature 2137 2153	room temperature
+R1	Setting Arg1:E2 Arg2:T44	
+R2	Setting Arg1:E2 Arg2:T45	
+R3	Setting Arg1:E2 Arg2:T46	
+R4	Setting Arg1:E4 Arg2:T51	
+R5	Setting Arg1:E4 Arg2:T50	
+R6	Setting Arg1:E11 Arg2:T61	
+R7	Mod-Link Arg1:T65 Arg2:T64	
+R8	Measure Arg1:T65 Arg2:T63	
+R9	Measure Arg1:T67 Arg2:T66	
+R10	Setting Arg1:E14 Arg2:T71	
+R11	Setting Arg1:E14 Arg2:T72	
+R12	Setting Arg1:E12 Arg2:T74	
+R13	Setting Arg1:E12 Arg2:T75	
+R14	Mod-Link Arg1:E16 Arg2:T80	
+R15	Mod-Link Arg1:T83 Arg2:T82	
+R16	Measure Arg1:T83 Arg2:T81	
+R18	Setting Arg1:E18 Arg2:T85	
+R17	Setting Arg1:E43 Arg2:T91	
+R19	Setting Arg1:E22 Arg2:T95	
+R20	Mod-Link Arg1:T97 Arg2:T96	
+R21	Setting Arg1:E22 Arg2:T98	
+R22	Setting Arg1:E24 Arg2:T101	
+R23	Measure Arg1:T104 Arg2:T103	
+R24	Setting Arg1:E26 Arg2:T107	
+R25	Setting Arg1:E26 Arg2:T108	
+R26	Setting Arg1:E28 Arg2:T111	
+R27	Setting Arg1:E28 Arg2:T112	
+R28	Setting Arg1:E28 Arg2:T113	
+R29	Mod-Link Arg1:T117 Arg2:T116	
+R30	Mod-Link Arg1:T120 Arg2:T119	
+R31	Mod-Link Arg1:T123 Arg2:T122	
+R32	Measure Arg1:T127 Arg2:T126	
+R33	Measure Arg1:T127 Arg2:T125	
+R34	Measure Arg1:T129 Arg2:T128	
+R35	Measure Arg1:T132 Arg2:T131	
+R36	Meronym Arg1:T130 Arg2:T132	
+R37	Setting Arg1:E40 Arg2:T136	
+R38	Setting Arg1:E40 Arg2:T137	
+R39	Mod-Link Arg1:E41 Arg2:T139	
+R40	Setting Arg1:E42 Arg2:T141	
+R41	Setting Arg1:E42 Arg2:T143	
+R42	Setting Arg1:E42 Arg2:T144	
+T145	Method 0 19	Immunoprecipitation
+T146	Modifier 959 963	full
+R43	Mod-Link Arg1:E21 Arg2:T146	
+T147	Action 1609 1613	wash
+E44	Action:T147 
+T148	Modifier 1880 1892	radiolabeled
+T149	Reagent 1893 1901	proteins
+R44	Mod-Link Arg1:T149 Arg2:T148	
+T150	Action 1902 1910	prepared
+E45	Action:T150 Using:T151 Acts-on:T149
+T151	Reagent 1916 1928	target cells
+T152	Modifier 1943 1951	directly
+T153	Action 1952 1961	visualize
+E46	Action:T153 Acts-on:T155
+T154	Modifier 1966 1984	immunoprecipitated
+T155	Reagent 1985 1992	protein
+R45	Mod-Link Arg1:T155 Arg2:T154	
+R46	Mod-Link Arg1:E46 Arg2:T152	

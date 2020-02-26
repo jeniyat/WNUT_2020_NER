@@ -1,0 +1,474 @@
+T1	Action 55 62	Prepare
+E1	Action:T1 Acts-on:T59
+T2	Action 114 119	Place
+E2	Action:T2 Acts-on:T61 Acts-on2:T63 Site:T64
+T3	Action 263 268	crush
+E3	Action:T3 Using:T65 Acts-on:T70
+T4	Action 388 391	Add
+E4	Action:T4 Acts-on:T74
+T5	Action 446 452	Vortex
+E5	Action:T5 
+T6	Action 469 472	Add
+E6	Action:T6 Acts-on:T80 Using:T82
+T7	Action 514 518	Spin
+E7	Action:T7 Site:T84
+T8	Action 630 635	Place
+E8	Action:T8 Site:T92
+T9	Action 682 686	Spin
+E9	Action:T9 
+T10	Action 743 751	separate
+E10	Action:T10 Acts-on:T97 Acts-on2:T98
+T11	Action 771 774	Add
+E11	Action:T11 Acts-on:T101 Site:T102
+T12	Action 834 838	Pour
+E12	Action:T12 Acts-on:T103 Site:T106
+T13	Action 936 944	transfer
+E13	Action:T13 Acts-on:T111 Using:T109 Site:T112
+T14	Action 1000 1006	Remove
+E14	Action:T14 Acts-on:T114
+T15	Action 1130 1133	Add
+E15	Action:T15 Acts-on:T121
+T16	Action 1093 1097	drag
+E16	Action:T16 Acts-on:T118 Acts-on2:T117 Site:T257
+T17	Action 1184 1190	Invert
+E17	Action:T17 
+T18	Action 1194 1197	mix
+E18	Action:T18 
+T19	Action 1210 1215	Store
+E19	Action:T19 
+T20	Action 1236 1242	Pellet
+E20	Action:T20 Acts-on:T125
+T21	Action 1370 1378	pour out
+E21	Action:T21 Acts-on:T132
+T22	Action 1395 1398	dry
+E22	Action:T22 Acts-on:T133 Site:T135
+T23	Action 1453 1462	Resuspend
+E23	Action:T23 Site:T139
+T24	Action 1508 1516	Transfer
+E24	Action:T24 Site:T144
+T25	Action 1541 1544	Add
+E25	Action:T25 Acts-on:T146
+T26	Action 1559 1562	Mix
+E26	Action:T26 Count:T147 Using:T148
+T27	Action 1592 1596	Spin
+E27	Action:T27 
+T28	Action 1630 1638	separate
+E28	Action:T28 Acts-on:T152 Acts-on2:T153
+T29	Action 1687 1693	Remove
+E29	Action:T29 Acts-on:T155
+T30	Action 1698 1705	discard
+E30	Action:T30 Acts-on:T155
+T31	Action 1746 1749	Add
+E31	Action:T31 Acts-on:T158 Acts-on2:T160 Site:T161
+T32	Action 1824 1827	Mix
+E32	Action:T32 Using:T163 Count:T164
+T33	Action 1857 1861	Spin
+E33	Action:T33 
+T34	Action 1893 1899	Remove
+E34	Action:T34 Acts-on:T167
+T35	Action 1904 1911	discard
+E35	Action:T35 Acts-on:T167
+T36	Action 1943 1946	Add
+E36	Action:T36 Acts-on:T170
+T37	Action 1987 1990	Mix
+E37	Action:T37 Using:T171
+T38	Action 2012 2016	Spin
+E38	Action:T38 
+T39	Action 2048 2054	Remove
+E39	Action:T39 Acts-on:T175
+T40	Action 2080 2088	transfer
+E40	Action:T40 Acts-on:T176 Acts-on2:T177
+T41	Action 2171 2174	Add
+E41	Action:T41 Acts-on:T182
+T42	Action 2195 2198	Mix
+E42	Action:T42 Count:T184 Using:T183
+T43	Action 2226 2229	Add
+E43	Action:T43 Acts-on:T188
+T44	Action 2289 2292	Mix
+E44	Action:T44 Count:T190 Using:T189
+T45	Action 2318 2329	Precipitate
+E45	Action:T45 
+T46	Action 2350 2354	Spin
+E46	Action:T46 Site:T194 Using:T195
+T47	Action 2486 2492	pellet
+E47	Action:T47 Acts-on:T198 Site:T199
+T48	Action 2535 2541	pellet
+E48	Action:T48 Acts-on:T201
+T49	Action 2563 2567	spin
+E49	Action:T49 Acts-on:T202
+T50	Action 2665 2673	pour off
+E50	Action:T50 Acts-on:T206
+T51	Action 2687 2690	Dry
+E51	Action:T51 Acts-on:T208
+T52	Action 2750 2759	Resuspend
+E52	Action:T52 Acts-on:T211 Acts-on2:T212 Site:T215 Acts-on3:T216 Site2:T222
+T53	Action 2865 2873	Transfer
+E53	Action:T53 Acts-on:T225 Site:T227
+T54	Action 2935 2942	Aliquot
+E54	Action:T54 Acts-on:T229 Site:T231
+T55	Action 3056 3064	quantify
+E55	Action:T55 Acts-on:T232
+T56	Action 3096 3103	Prepare
+E56	Action:T56 Acts-on:T234 Using:T235
+T57	Action 3175 3180	Store
+E57	Action:T57 Acts-on:T237
+T59	Reagent 65 83	boiling water bath
+T60	Modifier 100 112	rolling boil
+R1	Mod-Link Arg1:T59 Arg2:T60	
+T58	Amount 120 124	50ml
+T61	Location 125 136	falcon tube
+T62	Size 142 147	142mm
+T63	Device 148 154	filter
+T64	Reagent 158 165	dry ice
+R2	Measure Arg1:T61 Arg2:T58	
+R3	Setting Arg1:T63 Arg2:T62	
+T65	Device 177 183	bottom
+T66	Modifier 200 207	STERILE
+T67	Amount 208 212	15ml
+T68	Location 213 238	polypropylene falcon tube
+R4	Meronym Arg1:T65 Arg2:T68	
+R5	Measure Arg1:T68 Arg2:T67	
+R6	Mod-Link Arg1:T68 Arg2:T66	
+T69	Size 273 278	142mm
+T70	Device 279 285	filter
+T71	Amount 299 303	50ml
+T72	Location 304 310	falcon
+R7	Setting Arg1:T70 Arg2:T69	
+R8	Meronym Arg1:T70 Arg2:T72	
+R9	Measure Arg1:T72 Arg2:T71	
+T73	Amount 392 396	9mls
+T74	Reagent 400 406	1X STE
+T75	Modifier 423 430	crushed
+T76	Reagent 431 444	filter pieces
+T77	Time 457 467	10 seconds
+R10	Measure Arg1:T74 Arg2:T73	
+R11	Mod-Link Arg1:T76 Arg2:T75	
+R12	Setting Arg1:E5 Arg2:T77	
+T78	Amount 473 476	1ml
+T79	Concentration 480 483	10%
+T80	Reagent 484 487	SDS
+T82	Method 488 497	drop‐wise
+T81	Action 504 512	swirling
+E58	Action:T81 
+R13	Measure Arg1:T80 Arg2:T79	
+R14	Measure Arg1:T80 Arg2:T78	
+T83	Modifier 519 526	briefly
+T84	Device 530 556	Eppendorf 5810R centrifuge
+T85	Temperature 560 567	15‐25ºC
+T86	Action 571 579	spinning
+E59	Action:T86 
+T87	Speed 586 594	4000 rpm
+T88	Action 620 628	stopping
+E60	Action:T88 
+T89	Modifier 608 619	immediately
+R15	Mod-Link Arg1:E7 Arg2:T83	
+R16	Setting Arg1:E7 Arg2:T85	
+R17	Setting Arg1:E59 Arg2:T87	
+R18	Mod-Link Arg1:E60 Arg2:T89	
+T90	Modifier 639 646	rolling
+T91	Modifier 648 655	boiling
+T92	Reagent 656 666	water bath
+T93	Time 671 680	2 minutes
+R19	Mod-Link Arg1:T92 Arg2:T91	
+R20	Mod-Link Arg1:T92 Arg2:T90	
+R21	Setting Arg1:E8 Arg2:T93	
+T94	Speed 690 698	4000 rpm
+T95	Time 721 731	10 minutes
+T96	Temperature 735 739	15ºC
+T97	Device 752 758	filter
+T98	Reagent 763 769	debris
+R22	Setting Arg1:E9 Arg2:T94	
+R23	Setting Arg1:E9 Arg2:T95	
+R24	Setting Arg1:E9 Arg2:T96	
+T99	Amount 775 779	3mls
+T100	Concentration 783 788	10.5M
+T101	Reagent 789 795	NH4OAC
+T102	Location 802 816	Oak Ridge tube
+R25	Measure Arg1:T101 Arg2:T100	
+R26	Measure Arg1:T101 Arg2:T99	
+T104	Amount 863 867	50ml
+T105	Location 868 879	falcon tube
+T106	Location 885 899	Oak Ridge tube
+T103	Reagent 839 850	supernatant
+R27	Meronym Arg1:T103 Arg2:T105	
+R28	Measure Arg1:T105 Arg2:T104	
+T107	Amount 901 905	38ml
+R29	Measure Arg1:T106 Arg2:T107	
+T108	Amount 921 924	1ml
+T109	Location 925 932	pipette
+T110	Amount 949 958	remaining
+T111	Reagent 959 970	supernatant
+T112	Location 974 988	Oak Ridge tube
+R30	Setting Arg1:T109 Arg2:T108	
+R31	Measure Arg1:T111 Arg2:T110	
+T113	Size 1011 1016	large
+T114	Reagent 1017 1030	filter pieces
+T115	Modifier 1037 1044	STERILE
+T116	Size 1045 1048	1ml
+T117	Device 1049 1068	serological pipette
+T118	Reagent 1102 1115	filter pieces
+R32	Mod-Link Arg1:T117 Arg2:T115	
+R33	Setting Arg1:T117 Arg2:T116	
+R34	Measure Arg1:T114 Arg2:T113	
+T119	Amount 1134 1139	28mls
+T120	Generic-Measure 1143 1152	200 proof
+T121	Reagent 1160 1164	EtOH
+R35	Measure Arg1:T121 Arg2:T120	
+R36	Measure Arg1:T121 Arg2:T119	
+T122	Modifier 1198 1208	thoroughly
+R37	Mod-Link Arg1:E18 Arg2:T122	
+T123	Temperature 1219 1224	‐20°C
+T124	Time 1225 1234	overnight
+R38	Setting Arg1:E19 Arg2:T123	
+T125	Reagent 1243 1246	DNA
+T126	Device 1250 1263	Sorvall RC5‐B
+T127	Temperature 1267 1270	4ºC
+T128	Device 1281 1291	HB‐4 rotor
+T129	Action 1295 1303	spinning
+E61	Action:T129 Site:T126 Acts-on:T125 Using:T128
+T130	Speed 1320 1329	13,000RPM
+T131	Time 1354 1361	2 hours
+R40	Setting Arg1:E20 Arg2:T127	
+R41	Setting Arg1:E61 Arg2:T130	
+R42	Setting Arg1:E61 Arg2:T131	
+T132	Reagent 1379 1390	supernatant
+T133	Reagent 1399 1405	pellet
+T134	Modifier 1406 1417	upside‐down
+T135	Device 1421 1430	fume hood
+T136	Time 1444 1451	2 hours
+R43	Mod-Link Arg1:E22 Arg2:T134	
+R44	Setting Arg1:E22 Arg2:T136	
+T137	Amount 1466 1471	500ul
+T138	Concentration 1472 1474	1X
+T139	Reagent 1475 1477	TE
+T140	Generic-Measure 1479 1485	pH 8.0
+T141	Time 1491 1498	2 hours
+T142	Temperature 1502 1506	37ºC
+R45	Measure Arg1:T139 Arg2:T138	
+R46	Measure Arg1:T139 Arg2:T137	
+R47	Measure Arg1:T139 Arg2:T140	
+R48	Setting Arg1:E23 Arg2:T141	
+R49	Setting Arg1:E23 Arg2:T142	
+T143	Size 1520 1523	2ml
+T144	Location 1524 1539	non‐LoBind tube
+R50	Measure Arg1:T144 Arg2:T143	
+T145	Amount 1545 1550	500µl
+T146	Reagent 1551 1557	phenol
+R51	Measure Arg1:T146 Arg2:T145	
+T147	Numerical 1563 1564	5
+T149	Modifier 1574 1580	gentle
+T150	Time 1597 1602	2 min
+T151	Speed 1606 1615	12000 rpm
+R53	Setting Arg1:E27 Arg2:T150	
+R54	Setting Arg1:E27 Arg2:T151	
+T152	Reagent 1639 1646	organic
+T153	Reagent 1651 1660	inorganic
+T154	Location 1706 1712	bottom
+T155	Reagent 1714 1720	phenol
+R55	Meronym Arg1:T155 Arg2:T154	
+T157	Amount 1750 1755	300µl
+T158	Reagent 1756 1762	phenol
+T159	Amount 1767 1772	300µl
+T160	Reagent 1773 1778	SEVAG
+T161	Reagent 1809 1822	aqueous phase
+T162	Modifier 1831 1837	gentle
+T164	Numerical 1848 1849	5
+T165	Time 1862 1867	2 min
+T166	Speed 1871 1880	12000 rpm
+T167	Reagent 1912 1924	bottom layer
+T168	Action 1926 1941	LEAVE INTERFACE
+E65	Action:T168 
+R57	Setting Arg1:E33 Arg2:T165	
+R58	Setting Arg1:E33 Arg2:T166	
+T169	Amount 1947 1952	500µl
+T170	Reagent 1953 1958	SEVAG
+T172	Modifier 1994 2000	gentle
+T173	Time 2017 2022	2 min
+T174	Speed 2026 2035	12000 rpm
+T175	Reagent 2055 2064	TOP layer
+T176	Reagent 2066 2074	YOUR DNA
+T177	Location 2100 2115	non‐LoBind tube
+T178	Amount 2096 2099	2ml
+R59	Meronym Arg1:T176 Arg2:T175	
+R60	Measure Arg1:T177 Arg2:T178	
+R61	Measure Arg1:T170 Arg2:T169	
+R63	Setting Arg1:E38 Arg2:T173	
+R64	Setting Arg1:E38 Arg2:T174	
+T179	Action 2117 2123	LEAVE 
+E67	Action:T179 
+T180	Amount 2175 2180	125µl
+T181	Concentration 2181 2186	10.5M
+T182	Reagent 2187 2193	NH4OAC
+T184	Numerical 2212 2216	5‐10
+R65	Measure Arg1:T182 Arg2:T181	
+R66	Measure Arg1:T182 Arg2:T180	
+T185	Amount 2230 2237	1375 µl
+T186	Modifier 2238 2246	ice‐cold
+T187	Concentration 2247 2251	100%
+T188	Reagent 2252 2256	EtOH
+T190	Numerical 2306 2310	5‐10
+R67	Measure Arg1:T188 Arg2:T187	
+R68	Mod-Link Arg1:T188 Arg2:T186	
+R69	Measure Arg1:T188 Arg2:T185	
+T191	Time 2330 2339	overnight
+T192	Temperature 2343 2348	‐20ºC
+R70	Setting Arg1:E45 Arg2:T191	
+R71	Setting Arg1:E45 Arg2:T192	
+T193	Speed 2383 2392	13,750RPM
+T194	Device 2407 2426	Beckman Microfuge E
+T195	Device 2432 2448	horizontal rotor
+T196	Temperature 2452 2455	4ºC
+T197	Time 2472 2482	30 minutes
+T198	Reagent 2498 2501	DNA
+T199	Location 2509 2522	center/bottom
+T200	Location 2526 2530	tube
+R72	Setting Arg1:E46 Arg2:T193	
+R73	Setting Arg1:E46 Arg2:T196	
+R74	Setting Arg1:E46 Arg2:T197	
+R75	Meronym Arg1:T199 Arg2:T200	
+T201	Reagent 2558 2561	DNA
+T202	Location 2577 2581	tube
+T203	Time 2595 2605	90 minutes
+T204	Speed 2609 2619	14,000 rpm
+T205	Temperature 2634 2637	4ºC
+R76	Setting Arg1:E49 Arg2:T203	
+R77	Setting Arg1:E49 Arg2:T204	
+R78	Setting Arg1:E49 Arg2:T205	
+T206	Reagent 2674 2685	supernatant
+T207	Modifier 2658 2664	Gently
+R79	Mod-Link Arg1:E50 Arg2:T207	
+T208	Reagent 2691 2697	pellet
+T209	Time 2711 2716	2 hrs
+T210	Action 2720 2727	leaving
+E70	Action:T210 
+R80	Setting Arg1:E51 Arg2:T209	
+T211	Reagent 2760 2762	5m
+T212	Reagent 2767 2779	CMAX samples
+T213	Amount 2783 2787	50µl
+T214	Concentration 2791 2793	1X
+T215	Reagent 2794 2796	TE
+T216	Reagent 2822 2829	samples
+T217	Reagent 2801 2805	150m
+T218	Reagent 2807 2811	500m
+T219	Reagent 2817 2821	890m
+T220	Amount 2833 2837	30ul
+T221	Concentration 2838 2840	1X
+T222	Reagent 2841 2843	TE
+T223	Time 2848 2855	2 hours
+T224	Temperature 2859 2863	37ºC
+R81	Measure Arg1:T215 Arg2:T214	
+R82	Measure Arg1:T215 Arg2:T213	
+R83	Meronym Arg1:T217 Arg2:T216	
+R84	Meronym Arg1:T218 Arg2:T216	
+R85	Meronym Arg1:T219 Arg2:T216	
+R86	Measure Arg1:T222 Arg2:T221	
+R87	Measure Arg1:T222 Arg2:T220	
+R88	Setting Arg1:E52 Arg2:T223	
+R89	Setting Arg1:E52 Arg2:T224	
+T225	Reagent 2878 2898	re‐suspended extract
+T226	Amount 2902 2907	1.5ml
+T227	Location 2908 2933	Eppendorf LoBind DNA tube
+T228	Amount 2943 2947	10µl
+T229	Reagent 2951 2958	extract
+T230	Amount 2976 2981	1.5ml
+T231	Location 2982 3007	Eppendorf LoBind DNA tube
+R90	Measure Arg1:T229 Arg2:T228	
+R91	Measure Arg1:T231 Arg2:T230	
+T232	Reagent 3071 3081	PICO Green
+T233	Concentration 3104 3110	2ng/µl
+T234	Reagent 3111 3119	dilution
+R92	Measure Arg1:T234 Arg2:T233	
+T235	Reagent 3166 3173	extract
+T236	Amount 3159 3162	1µl
+R93	Measure Arg1:T235 Arg2:T236	
+T237	Reagent 3181 3189	dilution
+T238	Action 3191 3198	extract
+E71	Action:T238 Acts-on:T237
+T239	Action 3204 3211	archive
+E72	Action:T239 Acts-on:T237
+T240	Temperature 3215 3220	‐80ºC
+R94	Setting Arg1:E72 Arg2:T240	
+T241	Reagent 0 9	SPOT DNA 
+T242	Method 9 20	Extraction 
+T243	Size 25 30	142mm
+T244	Device 31 39	Durapore
+T245	Size 40 46	0.22µm
+T246	Device 47 54	Filters
+R95	Measure Arg1:T244 Arg2:T243	
+R96	Measure Arg1:T246 Arg2:T245	
+T247	Modifier 252 262	vigorously
+T248	Device 244 250	pestle
+R97	Mod-Link Arg1:E3 Arg2:T247	
+T249	Action 329 339	pulverized
+E73	Action:T249 
+T250	Reagent 348 363	filter material
+T251	Amount 377 381	10ml
+T252	Speed 596 602	3220xg
+R98	Coreference-Link Arg1:T252 Arg2:T87	
+T253	Device 700 715	Eppendorf 5810R
+T254	Device 826 832	filter
+T255	Modifier 990 991	~
+T256	Amount 991 998	0.5‐1ml
+R99	Mod-Link Arg1:T256 Arg2:T255	
+R100	Measure Arg1:T112 Arg2:T256	
+T257	Location 1123 1128	sides
+T258	Concentration 1154 1158	100%
+T259	Modifier 1166 1181	molecular grade
+R101	Mod-Link Arg1:T121 Arg2:T259	
+T260	Modifier 1363 1369	Gently
+R102	Mod-Link Arg1:E21 Arg2:T260	
+T261	Speed 1307 1316	max speed
+T262	Speed 1331 1339	27,900xg
+R103	Coreference-Link Arg1:T262 Arg2:T130	
+T263	Modifier 1345 1353	at least
+R104	Mod-Link Arg1:T131 Arg2:T263	
+T264	Modifier 1435 1443	at least
+R105	Mod-Link Arg1:T136 Arg2:T264	
+T148	Method 1581 1590	inversion
+T156	Action 1729 1735	LEAVE 
+E62	Action:T156 
+R52	Measure Arg1:T158 Arg2:T157	
+R106	Measure Arg1:T160 Arg2:T159	
+T265	Reagent 1780 1795	CHCl3:IsoamylOH
+T266	Concentration 1796 1800	24:1
+R107	Measure Arg1:T265 Arg2:T266	
+T163	Method 1838 1847	inversion
+T267	Reagent 1960 1975	CHCl3:IsoamylOH
+T268	Concentration 1976 1980	24:1
+R56	Measure Arg1:T267 Arg2:T268	
+T269	Speed 1882 1890	13,000xg
+R62	Coreference-Link Arg1:T269 Arg2:T166	
+T270	Speed 2037 2045	13,000xg
+R108	Coreference-Link Arg1:T270 Arg2:T174	
+T171	Method 2001 2010	inversion
+T271	Reagent 2146 2156	top layer 
+T272	Reagent 2164 2167	DNA
+R109	Coreference-Link Arg1:T272 Arg2:T271	
+T183	Method 2202 2211	inversion
+T273	Generic-Measure 2258 2267	200 proof
+T274	Modifier 2269 2284	molecular grade
+R110	Mod-Link Arg1:T188 Arg2:T274	
+T189	Method 2296 2305	inversion
+T275	Speed 2358 2367	max speed
+T276	Modifier 2369 2382	approximately
+R111	Mod-Link Arg1:T193 Arg2:T276	
+T277	Speed 2394 2402	12,535xg
+R112	Coreference-Link Arg1:T277 Arg2:T193	
+R113	Coreference-Link Arg1:T193 Arg2:T275	
+T278	Location 2457 2466	cold room
+T279	Speed 2621 2629	20,800xg
+R114	Coreference-Link Arg1:T279 Arg2:T204	
+T280	Device 2639 2654	Eppendorf 5810R
+T281	Modifier 2702 2710	at least
+R115	Mod-Link Arg1:T209 Arg2:T281	
+R116	Measure Arg1:T227 Arg2:T226	
+T282	Action 3012 3021	archiving
+E63	Action:T282 
+T283	Method 3029 3042	re‐suspension
+T284	Modifier 3044 3055	immediately
+R117	Mod-Link Arg1:E55 Arg2:T284	
+T285	Reagent 3083 3093	Invitrogen
+T286	Reagent 3126 3139	working stock
+T287	Modifier 3146 3158	no more than
+R118	Mod-Link Arg1:T236 Arg2:T287	
+R39	Setting Arg1:E19 Arg2:T124	

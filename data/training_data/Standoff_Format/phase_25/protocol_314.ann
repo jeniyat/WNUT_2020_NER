@@ -1,0 +1,39 @@
+T1	Action 28 33	Place
+E1	Action:T1 Acts-on:T7 Site:T8
+T2	Action 103 115	Flash freeze
+E2	Action:T2 
+T3	Action 210 216	Attach
+E3	Action:T3 Site:T15
+T4	Action 261 267	Scrape
+E4	Action:T4 Acts-on:T17 Site:T19
+T5	Action 315 318	Add
+E5	Action:T5 Acts-on:T20
+T6	Numerical 34 35	1
+T7	Reagent 36 49	cup of coffee
+T8	Location 80 100	lyophilization flask
+T9	Modifier 73 78	clean
+R1	Mod-Link Arg1:T8 Arg2:T9	
+R2	Measure Arg1:T7 Arg2:T6	
+T10	Action 119 126	bathing
+E6	Action:T10 Acts-on:T11 Using:T12 Site:T13
+T11	Location 127 132	flask
+T12	Method 139 152	hand rotation
+T13	Location 159 163	bath
+T14	Reagent 167 182	liquid nitrogen
+R3	Meronym Arg1:T14 Arg2:T13	
+T15	Device 220 248	vacuum lyophilization system
+T16	Time 249 258	overnight
+R4	Setting Arg1:E3 Arg2:T16	
+T17	Reagent 268 288	lyophilized crystals
+T18	Modifier 296 301	clean
+T19	Location 302 312	coffee cup
+R5	Mod-Link Arg1:T19 Arg2:T18	
+T20	Reagent 319 328	hot water
+T21	Reagent 0 27	Kane Lab Lyophilized Coffee
+T22	Reagent 51 56	cream
+T23	Reagent 57 62	sugar
+R6	Meronym Arg1:T22 Arg2:T7	
+R7	Meronym Arg1:T23 Arg2:T7	
+T24	Reagent 194 200	liquid
+T25	Modifier 201 207	frozen
+R8	Mod-Link Arg1:T24 Arg2:T25	

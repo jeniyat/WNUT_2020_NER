@@ -1,0 +1,65 @@
+T1	Action 100 107	placing
+E1	Action:T1 Acts-on:T2 Site:T4
+T2	Location 110 130	microcentrifuge tube
+T3	Reagent 146 165	buffered DNA sample
+T4	Location 174 188	ice-water bath
+T5	Device 194 212	cup-horn sonicator
+R1	Meronym Arg1:T3 Arg2:T2	
+R2	Meronym Arg1:T4 Arg2:T5	
+T6	Time 262 273	10 s bursts
+T9	Amount 462 468	100 µg
+T11	Reagent 476 485	TE buffer
+T12	Action 489 494	split
+E4	Action:T12 Acts-on:T10 Product:T15
+T13	Numerical 500 502	10
+T14	Amount 515 520	35 µL
+T10	Reagent 469 472	DNA
+R5	Measure Arg1:T10 Arg2:T9	
+T15	Reagent 503 511	aliquots
+R6	Measure Arg1:T15 Arg2:T14	
+R7	Measure Arg1:T15 Arg2:T13	
+R8	Meronym Arg1:T10 Arg2:T11	
+T16	Numerical 522 523	5
+T17	Reagent 524 532	aliquots
+T20	Time 587 598	10 s bursts
+R9	Measure Arg1:T17 Arg2:T16	
+T19	Reagent 600 608	Aliquots
+T21	Modifier 609 629	from each time point
+R11	Mod-Link Arg1:T19 Arg2:T21	
+T22	Action 634 637	run
+E5	Action:T22 Acts-on:T19 Acts-on2:T23
+T23	Reagent 644 655	agarose gel
+T24	Action 659 682	determine optimal-sized
+E6	Action:T24 Acts-on:T25
+T25	Reagent 683 696	DNA fragments
+T26	Numerical 762 773	remaining 5
+T27	Reagent 774 782	aliquots
+T28	Amount 784 802	approximately 8 µg
+T29	Action 808 817	sonicated
+E7	Action:T29 Acts-on:T27
+T30	Modifier 818 861	according to those predetermined conditions
+R12	Measure Arg1:T27 Arg2:T28	
+R13	Measure Arg1:T27 Arg2:T26	
+R14	Mod-Link Arg1:E7 Arg2:T30	
+T31	Method 0 10	Generation
+T32	Reagent 14 27	DNA fragments
+T33	Method 31 41	sonication
+T34	Method 42 52	Generation
+T35	Reagent 56 69	DNA fragments
+T36	Method 73 83	sonication
+T7	Method 214 224	Sonication
+T8	Method 338 348	sonication
+T37	Modifier 359 370	empirically
+T38	Action 371 381	determined
+E2	Action:T38 
+R3	Mod-Link Arg1:E2 Arg2:T37	
+T39	Reagent 394 404	DNA sample
+T40	Modifier 414 425	preparative
+T41	Method 426 436	sonication
+T42	Action 440 449	performed
+E8	Action:T42 Using:T41
+T18	Method 550 560	sonication
+T43	Generic-Measure 698 704	1–4 kb
+T44	Method 720 730	sonication
+T45	Action 746 756	determined
+E3	Action:T45 

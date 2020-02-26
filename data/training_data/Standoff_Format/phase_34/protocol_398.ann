@@ -1,0 +1,155 @@
+T2	Action 218 221	Use
+E2	Action:T2 Acts-on:T23
+T3	Action 240 246	Pellet
+E3	Action:T3 Acts-on:T26
+T4	Action 321 327	remove
+E4	Action:T4 Acts-on:T30
+T5	Action 332 339	discard
+E5	Action:T5 Acts-on:T30
+T6	Action 364 370	vortex
+E6	Action:T6 Commands:E23
+T7	Action 396 404	incubate
+E7	Action:T7 Acts-on:T33
+T8	Action 428 431	Add
+E8	Action:T8 Acts-on:T38
+T9	Action 468 475	Perform
+E9	Action:T9 Site:T37 Using:T1
+T10	Action 557 561	pull
+E10	Action:T10 Acts-on:T43 Using:T44 Count:T45
+T11	Action 602 605	Add
+E11	Action:T11 Acts-on:T48
+T12	Action 675 678	mix
+E12	Action:T12 
+T13	Action 693 703	Centrifuge
+E13	Action:T13 Acts-on:T50
+T14	Action 760 768	Transfer
+E14	Action:T14 Acts-on:T55 Site:T57
+T15	Action 800 810	Centrifuge
+E15	Action:T15 Acts-on:T58
+T16	Action 852 860	Transfer
+E16	Action:T16 Acts-on:T61 Site:T63
+T17	Action 969 972	Add
+E17	Action:T17 Acts-on:T66 Site:T67
+T18	Action 1019 1029	centrifuge
+E18	Action:T18 
+T19	Action 1065 1072	Discard
+E19	Action:T19 Acts-on:T70
+T20	Action 1090 1099	Resuspend
+E20	Action:T20 Acts-on:T71 Using:T74
+T21	Action 1179 1183	keep
+E21	Action:T21 Acts-on:T75 Site:T76
+T22	Modifier 222 227	fresh
+T23	Reagent 228 233	cells
+R1	Mod-Link Arg1:T23 Arg2:T22	
+T24	Modifier 234 238	only
+R2	Mod-Link Arg1:E2 Arg2:T24	
+T25	Modifier 251 260	harvested
+T26	Reagent 261 266	cells
+T28	Speed 289 296	800 x g
+T29	Time 301 309	1 minute
+R5	Mod-Link Arg1:T26 Arg2:T25	
+T30	Reagent 344 355	supernatant
+T31	Action 374 381	suspend
+E23	Action:T31 Acts-on:T32
+T32	Reagent 386 391	cells
+T33	Location 408 411	ice
+T34	Time 416 426	10 minutes
+R6	Setting Arg1:E7 Arg2:T34	
+T35	Amount 432 437	500µl
+T38	Reagent 450 466	SubCell Buffer‐I
+T36	Modifier 441 449	ice cold
+R7	Mod-Link Arg1:T38 Arg2:T36	
+R8	Measure Arg1:T38 Arg2:T35	
+T1	Method 481 491	lysis step
+T37	Location 495 498	ice
+T39	Modifier 508 522	narrow opening
+T40	Generic-Measure 524 532	20 gauge
+T41	Device 534 548	syringe needle
+R9	Mod-Link Arg1:T41 Arg2:T39	
+R10	Setting Arg1:T39 Arg2:T40	
+T42	Modifier 550 556	gently
+T43	Reagent 566 576	suspension
+T44	Method 577 588	up and down
+T45	Numerical 589 594	10‐30
+R11	Mod-Link Arg1:E10 Arg2:T42	
+T46	Amount 606 611	250µl
+T47	Concentration 612 614	3X
+T48	Reagent 615 632	SubCell Buffer‐II
+T49	Action 682 691	inverting
+E1	Action:T49 
+R12	Measure Arg1:T48 Arg2:T47	
+R13	Measure Arg1:T48 Arg2:T46	
+T50	Location 708 712	tube
+T51	Speed 716 722	700x g
+T52	Time 727 737	10 minutes
+T54	Reagent 752 758	nuclei
+T53	Action 741 747	pellet
+E24	Action:T53 Acts-on:T54
+R14	Setting Arg1:E13 Arg2:T51	
+R15	Setting Arg1:E13 Arg2:T52	
+T55	Reagent 773 784	supernatant
+T56	Modifier 790 793	new
+T57	Location 794 798	tube
+R16	Mod-Link Arg1:T57 Arg2:T56	
+T58	Reagent 811 822	supernatant
+T59	Speed 826 835	12,000x g
+T60	Time 840 850	15 minutes
+R17	Setting Arg1:E15 Arg2:T59	
+R18	Setting Arg1:E15 Arg2:T60	
+T61	Reagent 865 876	supernatant
+T62	Modifier 902 905	new
+T63	Location 906 910	tube
+R19	Mod-Link Arg1:T63 Arg2:T62	
+T64	Amount 973 978	500µl
+T65	Concentration 979 981	1X
+T66	Reagent 982 999	SubCell Buffer‐II
+T67	Reagent 1007 1013	pellet
+T68	Speed 1039 1049	12,000 x g
+T69	Time 1054 1063	5 minutes
+R20	Setting Arg1:E18 Arg2:T68	
+R21	Setting Arg1:E18 Arg2:T69	
+R22	Measure Arg1:T66 Arg2:T65	
+R23	Measure Arg1:T66 Arg2:T64	
+T70	Reagent 1077 1088	supernatant
+T71	Reagent 1104 1124	mitochondrial pellet
+T72	Amount 1130 1138	50‐100µl
+T73	Modifier 1139 1146	Working
+T74	Reagent 1147 1174	Mitochondria Storage Buffer
+T75	Reagent 1188 1198	suspension
+T76	Location 1202 1205	ice
+R24	Mod-Link Arg1:T74 Arg2:T73	
+R25	Measure Arg1:T74 Arg2:T72	
+T77	Method 0 25	Subcellular Fractionation
+T78	Reagent 31 43	Animal Cells
+T79	Device 45 63	FOCUS™ SubCell Kit
+T80	Action 75 78	Add
+E25	Action:T80 Acts-on:T81 Site:T82
+T81	Reagent 91 118	protease inhibitor cocktail
+T82	Reagent 175 191	SubCell Buffer‐I
+T83	Modifier 192 203	immediately
+R26	Mod-Link Arg1:E25 Arg2:T83	
+T84	Modifier 288 289	~
+R27	Mod-Link Arg1:T28 Arg2:T84	
+T27	Method 270 284	centrifugation
+T85	Modifier 311 320	Carefully
+R3	Mod-Link Arg1:E4 Arg2:T85	
+T86	Modifier 357 363	Gently
+R4	Mod-Link Arg1:E6 Arg2:T86	
+T87	Amount 634 639	350µl
+T88	Reagent 643 661	Dounce homogenizer
+R28	Measure Arg1:T48 Arg2:T87	
+T89	Reagent 878 895	post mitochondria
+R29	Coreference-Link Arg1:T89 Arg2:T61	
+T90	Action 923 933	processing
+E22	Action:T90 
+T91	Reagent 939 945	pellet
+T92	Reagent 955 967	mitochondria
+T93	Action 1213 1234	downstream processing
+E26	Action:T93 
+T94	Method 1236 1246	Enrichment
+T95	Reagent 1256 1271	cell organelles
+T96	Reagent 1277 1306	post mitochondria supernatant
+T97	Action 1337 1349	fractionated
+E27	Action:T97 Acts-on:T96 Using:T98 Using2:T99
+T99	Method 1382 1410	differential centrifugations
+T98	Method 1369 1377	gradient

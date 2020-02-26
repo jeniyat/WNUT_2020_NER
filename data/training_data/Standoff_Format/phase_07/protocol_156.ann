@@ -1,0 +1,161 @@
+T1	Action 42 47	Place
+E1	Action:T1 Acts-on:T23 Acts-on2:T24
+T2	Action 155 160	added
+E2	Action:T2 Acts-on:T30 Site:T28 Site2:T29
+T3	Action 162 166	Spin
+E3	Action:T3 Acts-on:T32
+T4	Action 227 235	Pour off
+E4	Action:T4 Acts-on:T35
+T5	Action 249 252	Add
+E5	Action:T5 Acts-on:T37 Site:T39
+T6	Action 289 295	vortex
+E6	Action:T6 Acts-on:T39
+T7	Action 347 353	vortex
+E7	Action:T7 Acts-on:T44
+T8	Action 305 308	Add
+E8	Action:T8 Acts-on:T43 Site:T44
+T9	Action 371 375	spin
+E9	Action:T9 
+T10	Action 399 407	Transfer
+E10	Action:T10 Acts-on:T53 Acts-on2:T50 Site:T54
+T11	Action 460 470	Centrifuge
+E11	Action:T11 
+T12	Action 509 514	Empty
+E12	Action:T12 Acts-on:T57
+T13	Action 532 535	Add
+E13	Action:T13 Acts-on:T59 Site:T60
+T14	Action 569 573	Spin
+E14	Action:T14 
+T15	Action 612 615	Add
+E15	Action:T15 Acts-on:T64 Site:T65
+T16	Action 649 653	Spin
+E16	Action:T16 
+T17	Action 692 697	Place
+E17	Action:T17 Acts-on:T68 Site:T69
+T18	Action 739 743	spin
+E18	Action:T18 
+T19	Action 782 790	Transfer
+E19	Action:T19 Acts-on:T73 Site:T75
+T20	Action 845 848	Add
+E20	Action:T20 Acts-on:T78 Site:T79
+T21	Action 915 923	incubate
+E21	Action:T21 
+T22	Action 948 952	Spin
+E22	Action:T22 
+T23	Reagent 48 58	Buffer ATL
+T24	Reagent 63 72	Buffer Al
+T25	Temperature 76 79	56C
+T26	Time 93 102	5 minutes
+T27	Modifier 84 92	at least
+R1	Mod-Link Arg1:T26 Arg2:T27	
+R2	Setting Arg1:E1 Arg2:T25	
+R3	Setting Arg1:E1 Arg2:T26	
+T28	Reagent 130 133	AW1
+T29	Reagent 138 141	AW2
+T30	Reagent 147 154	ethanol
+T31	Amount 168 173	500ul
+T32	Reagent 177 200	bacteria liquid culture
+T33	Speed 204 210	10000g
+T34	Time 215 225	10 minutes
+R4	Measure Arg1:T32 Arg2:T31	
+R5	Setting Arg1:E3 Arg2:T33	
+R6	Setting Arg1:E3 Arg2:T34	
+T35	Reagent 236 247	supernatant
+T36	Amount 253 258	200ul
+T37	Reagent 259 269	buffer ATL
+T38	Time 300 303	15s
+R7	Setting Arg1:E6 Arg2:T38	
+T39	Reagent 278 284	sample
+T40	Modifier 273 277	each
+R8	Mod-Link Arg1:T39 Arg2:T40	
+R9	Measure Arg1:T37 Arg2:T36	
+T41	Amount 309 314	200ul
+T42	Concentration 315 319	100%
+T43	Reagent 320 327	ethanol
+T44	Reagent 336 342	sample
+T45	Modifier 331 335	each
+T46	Time 358 361	15s
+R10	Setting Arg1:E7 Arg2:T46	
+R11	Measure Arg1:T43 Arg2:T41	
+R12	Measure Arg1:T43 Arg2:T42	
+R13	Mod-Link Arg1:T44 Arg2:T45	
+T47	Modifier 363 370	Briefly
+T48	Action 379 386	collect
+E23	Action:T48 Acts-on:T49
+T49	Reagent 391 397	liquid
+R14	Mod-Link Arg1:E9 Arg2:T47	
+T50	Reagent 415 421	sample
+T51	Amount 387 390	all
+R15	Measure Arg1:T49 Arg2:T51	
+T52	Amount 408 411	all
+R16	Measure Arg1:T50 Arg2:T52	
+T53	Reagent 432 443	precipitate
+T54	Location 447 458	spin column
+T55	Speed 486 492	20000g
+T56	Time 498 507	2 minutes
+R17	Setting Arg1:E11 Arg2:T55	
+R18	Setting Arg1:E11 Arg2:T56	
+T57	Location 515 530	collection tube
+T58	Amount 536 541	500ul
+T59	Reagent 542 552	buffer AW1
+T60	Location 556 567	spin column
+R19	Measure Arg1:T59 Arg2:T58	
+T61	Speed 589 595	20000g
+T62	Time 601 610	2 minutes
+R20	Setting Arg1:E14 Arg2:T61	
+R21	Setting Arg1:E14 Arg2:T62	
+T63	Amount 616 621	500ul
+T64	Reagent 622 632	buffer AW2
+T65	Location 636 647	spin column
+R22	Measure Arg1:T64 Arg2:T63	
+T66	Speed 669 675	20000g
+T67	Time 681 690	2 minutes
+R23	Setting Arg1:E16 Arg2:T66	
+R24	Setting Arg1:E16 Arg2:T67	
+T68	Location 698 709	spin column
+T69	Location 719 734	collection tube
+T70	Modifier 715 718	new
+T71	Speed 759 765	20000g
+T72	Time 771 780	3 minutes
+R25	Mod-Link Arg1:T69 Arg2:T70	
+R26	Setting Arg1:E18 Arg2:T71	
+R27	Setting Arg1:E18 Arg2:T72	
+T73	Location 791 802	spin column
+T74	Amount 816 821	1.5ml
+T75	Location 822 843	Eppendorf lobind tube
+R28	Measure Arg1:T75 Arg2:T74	
+T76	Modifier 808 815	labeled
+R29	Mod-Link Arg1:T75 Arg2:T76	
+T77	Amount 849 854	100ul
+T78	Reagent 858 867	buffer TE
+T79	Location 880 895	membrane/filter
+T80	Location 899 910	spin column
+T81	Temperature 927 936	room temp
+R30	Setting Arg1:E21 Arg2:T81	
+R31	Measure Arg1:T78 Arg2:T77	
+R32	Meronym Arg1:T79 Arg2:T80	
+T82	Time 942 947	1 min
+T83	Speed 956 962	10000g
+T84	Time 967 976	2 minutes
+R33	Setting Arg1:E22 Arg2:T82	
+R34	Setting Arg1:E22 Arg2:T83	
+R35	Setting Arg1:E22 Arg2:T84	
+T85	Reagent 13 21	bacteria
+T86	Location 0 12	General tube
+T87	Method 22 32	extraction
+T88	Modifier 167 168	>
+T89	Modifier 474 477	max
+T90	Speed 478 483	speed
+R36	Mod-Link Arg1:T90 Arg2:T89	
+T91	Modifier 485 486	>
+R37	Mod-Link Arg1:T55 Arg2:T91	
+T92	Measure-Type 581 586	speed
+T93	Modifier 577 580	max
+T94	Modifier 588 589	>
+R38	Mod-Link Arg1:T61 Arg2:T94	
+T95	Modifier 657 660	max
+T96	Measure-Type 661 666	speed
+T97	Modifier 668 669	>
+T98	Modifier 747 750	max
+T99	Measure-Type 751 756	speed
+T100	Modifier 758 759	>

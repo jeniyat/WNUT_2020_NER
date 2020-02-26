@@ -1,0 +1,89 @@
+T1	Action 37 44	Prepare
+E1	Action:T1 Using:T15 Product:T13
+T2	Action 66 73	Prepare
+E2	Action:T2 Product:T16 Using:T18
+T3	Action 95 102	Prepare
+E3	Action:T3 Product:T19 Using:T21
+T4	Action 124 136	Bring volume
+E4	Action:T4 Using:T23
+T6	Action 250 256	follow
+E6	Action:T6 Using:T24 Using2:T5
+T7	Action 326 338	Step dialyze
+E7	Action:T7 Using:T27
+T8	Action 380 392	Step dialyze
+E8	Action:T8 Using:T30
+T9	Action 434 446	Step dialyze
+E9	Action:T9 Using:T33
+T10	Action 548 552	Stir
+E10	Action:T10 
+T11	Action 637 645	Transfer
+E11	Action:T11 Acts-on:T45
+T12	Action 674 679	Store
+E12	Action:T12 Acts-on:T47
+T13	Reagent 45 51	MTN100
+T14	Concentration 57 59	5x
+T15	Reagent 60 64	NaCl
+R1	Measure Arg1:T15 Arg2:T14	
+T16	Reagent 74 80	MTN100
+T17	Concentration 86 88	3x
+T18	Reagent 89 93	NaCl
+R2	Measure Arg1:T18 Arg2:T17	
+T19	Reagent 103 109	MTN100
+T20	Concentration 115 117	1x
+T21	Reagent 118 122	NaCl
+R3	Measure Arg1:T21 Arg2:T20	
+T22	Amount 140 142	1L
+T23	Reagent 148 161	Milli-Q water
+R4	Setting Arg1:E4 Arg2:T22	
+T24	Location 167 198	Slide-A-Lyzer dialysis casettes
+T5	Method 261 324	manufacturer’s directions for loading and dialysis of cassettes
+T25	Time 344 350	30 min
+T26	Concentration 360 362	5x
+T27	Reagent 363 378	NaCl MTN buffer
+R5	Measure Arg1:T27 Arg2:T26	
+R6	Setting Arg1:E7 Arg2:T25	
+T28	Time 398 404	30 min
+T29	Concentration 414 416	3x
+T30	Reagent 417 432	NaCl MTN buffer
+R7	Measure Arg1:T30 Arg2:T29	
+R8	Setting Arg1:E8 Arg2:T28	
+T31	Time 452 458	30 min
+T32	Concentration 487 489	1x
+T33	Reagent 490 498	NaCl MTN
+T34	Modifier 506 514	at least
+T35	Numerical 515 518	300
+T36	Reagent 530 536	buffer
+R9	Measure Arg1:T36 Arg2:T35	
+R10	Mod-Link Arg1:T35 Arg2:T34	
+R11	Measure Arg1:T33 Arg2:T32	
+T38	Numerical 468 471	two
+R12	Measure Arg1:T33 Arg2:T38	
+R13	Setting Arg1:E9 Arg2:T31	
+T39	Modifier 553 559	gently
+T40	Temperature 563 579	room temperature
+T41	Action 580 586	Remove
+E13	Action:T41 Acts-on:T42 Using:T43
+T42	Reagent 591 597	sample
+T43	Method 611 636	manufacturer’s directions
+R14	Mod-Link Arg1:E10 Arg2:T39	
+R15	Setting Arg1:E10 Arg2:T40	
+T44	Modifier 649 656	sterile
+T45	Location 658 672	low bind tubes
+R16	Mod-Link Arg1:T45 Arg2:T44	
+T46	Modifier 680 688	dialyzed
+T47	Reagent 689 698	particles
+T48	Temperature 702 705	4°C
+R17	Mod-Link Arg1:T47 Arg2:T46	
+R18	Setting Arg1:E12 Arg2:T48	
+T49	Reagent 0 15	Cesium Chloride
+T50	Method 16 24	Dialysis
+T51	Reagent 29 36	Viruses
+T52	Amount 235 244	0.5-3.0ml
+T53	Modifier 343 344	~
+R19	Mod-Link Arg1:T25 Arg2:T53	
+T54	Modifier 397 398	~
+R20	Mod-Link Arg1:T28 Arg2:T54	
+T55	Modifier 451 452	~
+R21	Mod-Link Arg1:T31 Arg2:T55	
+T56	Measure-Type 519 526	volumes
+T37	Reagent 540 546	sample

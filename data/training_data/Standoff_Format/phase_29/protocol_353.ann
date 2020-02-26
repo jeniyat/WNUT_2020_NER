@@ -1,0 +1,41 @@
+T1	Action 41 48	Prepare
+E1	Action:T1 Acts-on:T6 Using:T7 Using2:T8
+T2	Action 82 87	Store
+E2	Action:T2 Acts-on:T10
+T3	Action 131 134	Add
+E3	Action:T3 Acts-on:T14 Site:T15 Measure-Type-Link:T12
+T4	Action 235 238	Fix
+E4	Action:T4 Acts-on:T17 Site:T18 Site2:T28
+T5	Action 279 283	Wash
+E5	Action:T5 Count:T20 Using:T21 Acts-on:T17
+T6	Reagent 49 52	PFA
+T7	Reagent 58 71	powder Dilute
+T8	Reagent 77 80	PBS
+T9	Modifier 92 101	undiluted
+T10	Reagent 102 107	stock
+T11	Temperature 111 116	-20°C
+R1	Mod-Link Arg1:T10 Arg2:T9	
+R2	Setting Arg1:E2 Arg2:T11	
+T13	Concentration 159 161	4%
+T14	Reagent 162 167	stock
+T15	Reagent 171 178	samples
+T16	Concentration 227 229	2%
+T17	Reagent 239 244	cells
+T18	Location 248 251	ice
+T19	Time 256 269	15-30 minutes
+T20	Numerical 284 285	2
+T21	Reagent 292 295	PBS
+R3	Measure Arg1:T14 Arg2:T13	
+R5	Measure Arg1:T14 Arg2:T16	
+R6	Setting Arg1:E4 Arg2:T19	
+T22	Action 0 6	Fixing
+E6	Action:T22 Acts-on:T23 Using:T24
+T23	Reagent 7 12	Cells
+T24	Reagent 18 34	Paraformaldehyde
+T25	Reagent 36 39	PFA
+R7	Coreference-Link Arg1:T25 Arg2:T24	
+T12	Measure-Type 145 151	volume
+T26	Measure-Type 202 215	concentration
+T27	Reagent 230 233	PFA
+R4	Measure Arg1:T27 Arg2:T16	
+T28	Location 273 276	ice

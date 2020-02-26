@@ -1,0 +1,93 @@
+T1	Action 32 40	Submerge
+E1	Action:T1 Acts-on:T2 Site:T3
+T2	Reagent 41 63	protein acrylamide gel
+T3	Reagent 67 87	coomassie blue stain
+T4	Action 92 97	shake
+E2	Action:T4 
+T5	Temperature 101 117	room temperature
+T6	Time 122 131	two hours
+R1	Setting Arg1:E2 Arg2:T5	
+R2	Setting Arg1:E2 Arg2:T6	
+T7	Action 133 141	Pour off
+E3	Action:T7 Acts-on:T8 Site:T9
+T8	Reagent 142 147	stain
+T9	Location 155 161	bottle
+T10	Action 194 198	wash
+E4	Action:T10 Acts-on:T11 Using:T12
+T11	Reagent 199 202	gel
+T12	Reagent 208 213	water
+T13	Action 220 224	pour
+E5	Action:T13 Acts-on:T14
+T14	Reagent 230 235	stain
+T15	Action 243 248	shake
+E6	Action:T15 
+T16	Temperature 252 268	room temperature
+T17	Time 273 290	another two hours
+T18	Amount 225 229	more
+R3	Measure Arg1:T14 Arg2:T18	
+R4	Setting Arg1:E6 Arg2:T16	
+R5	Setting Arg1:E6 Arg2:T17	
+T19	Action 292 300	Pour off
+E7	Action:T19 Acts-on:T20 Site:T21
+T20	Reagent 301 306	stain
+T21	Location 314 320	bottle
+T22	Action 322 326	wash
+E8	Action:T22 Acts-on:T23 Using:T24
+T23	Reagent 327 330	gel
+T24	Reagent 336 341	water
+T25	Action 405 419	take a picture
+E9	Action:T25 
+T26	Action 426 430	pour
+E10	Action:T26 Acts-on:T28
+T27	Amount 431 435	more
+T28	Reagent 436 441	stain
+T29	Action 449 454	shake
+E11	Action:T29 
+T30	Temperature 458 474	room temperature
+T31	Time 475 484	overnight
+R6	Setting Arg1:E11 Arg2:T30	
+R7	Setting Arg1:E11 Arg2:T31	
+R8	Measure Arg1:T28 Arg2:T27	
+T32	Action 486 494	Pour off
+E12	Action:T32 Acts-on:T33
+T33	Reagent 495 500	stain
+T34	Action 505 519	take a picture
+E13	Action:T34 Acts-on:T35
+T35	Reagent 527 540	protein bands
+T36	Action 542 550	Submerge
+E14	Action:T36 Acts-on:T37 Site:T38
+T37	Reagent 551 554	gel
+T38	Reagent 558 572	destain buffer
+T39	Amount 574 579	50 mL
+T40	Reagent 580 591	Acetic Acid
+T41	Amount 593 599	100 mL
+T42	Reagent 600 608	Methanol
+T43	Amount 610 616	350 mL
+T44	Reagent 617 622	Water
+T45	Time 631 635	hour
+T46	Action 640 645	shake
+E15	Action:T46 
+T47	Temperature 649 665	room temperature
+R9	Measure Arg1:T40 Arg2:T39	
+R10	Measure Arg1:T42 Arg2:T41	
+R11	Measure Arg1:T44 Arg2:T43	
+R12	Meronym Arg1:T40 Arg2:T38	
+R13	Meronym Arg1:T42 Arg2:T38	
+R14	Meronym Arg1:T44 Arg2:T38	
+R15	Setting Arg1:E14 Arg2:T45	
+R16	Setting Arg1:E15 Arg2:T47	
+T48	Action 667 671	Wash
+E16	Action:T48 Acts-on:T49
+T49	Reagent 677 682	water
+T50	Action 688 701	repeat step 5
+E17	Action:T50 
+T51	Reagent 0 7	Protein
+T52	Action 8 31	Coomassie Blue Staining
+E18	Action:T52 Acts-on:T51
+T53	Action 171 176	reuse
+E19	Action:T53 Count:T55 Acts-on:T54
+T54	Mention 177 179	it
+T55	Numerical 182 191	few times
+R17	Coreference-Link Arg1:T54 Arg2:T8	
+T56	Reagent 732 745	protein bands
+T57	Reagent 782 785	gel

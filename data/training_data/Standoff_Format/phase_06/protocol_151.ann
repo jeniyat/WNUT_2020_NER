@@ -1,0 +1,141 @@
+T1	Action 26 30	Mark
+E1	Action:T1 Count:T82 Acts-on:T81
+T2	Action 139 146	Prepare
+E2	Action:T2 Acts-on:T23
+T3	Action 170 182	centrifuging
+E3	Action:T3 Acts-on:T24
+T4	Action 230 237	compact
+E4	Action:T4 Acts-on:T27
+T5	Action 249 255	Remove
+E5	Action:T5 Acts-on:T28 Acts-on2:T29
+T6	Action 286 291	Place
+E6	Action:T6 Site:T30
+T7	Action 329 339	Centrifuge
+E7	Action:T7 Acts-on:T32
+T8	Action 378 384	remove
+E8	Action:T8 Acts-on:T35 Site:T32
+T9	Action 405 410	Place
+E9	Action:T9 Acts-on:T36 Site:T37
+T10	Action 451 457	remove
+E10	Action:T10 Acts-on:T39
+T11	Action 467 470	Add
+E11	Action:T11 Acts-on:T40 Site:T41
+T12	Action 537 540	use
+E12	Action:T12 Acts-on:T43 Site:T46
+T13	Action 571 574	use
+E13	Action:T13 Acts-on:T50 Site:T48
+T14	Action 606 609	use
+E14	Action:T14 Acts-on:T54 Site:T52
+T15	Action 641 644	use
+E15	Action:T15 Acts-on:T58 Site:T56
+T16	Action 677 680	use
+E16	Action:T16 Acts-on:T62 Site:T60
+T17	Action 692 702	Centrifuge
+E17	Action:T17 Acts-on:T63
+T18	Action 832 841	discarded
+E18	Action:T18 Acts-on:T68 Using:T69
+T19	Action 869 874	Place
+E19	Action:T19 Acts-on:T71 Site:T72
+T20	Action 915 921	remove
+E20	Action:T20 Acts-on:T74
+T21	Action 939 944	apply
+E21	Action:T21 Acts-on:T76 Site:T77
+T22	Action 1065 1072	Discard
+E22	Action:T22 Acts-on:T79
+T23	Location 151 166	SpinOUT™ column
+T24	Location 187 203	SpinOUT™ columns
+T25	Speed 207 213	1,000g
+T26	Time 218 226	1 minute
+T27	Reagent 242 247	resin
+R1	Setting Arg1:E3 Arg2:T25	
+R2	Setting Arg1:E3 Arg2:T26	
+T28	Seal 260 263	top
+T29	Seal 273 284	bottom caps
+T30	Location 312 327	collection tube
+T31	Modifier 300 311	appropriate
+R3	Mod-Link Arg1:T30 Arg2:T31	
+T32	Location 344 350	column
+T33	Speed 354 360	1,000g
+T34	Time 365 374	2 minutes
+R4	Setting Arg1:E7 Arg2:T33	
+R5	Setting Arg1:E7 Arg2:T34	
+T35	Reagent 389 403	storage buffer
+T36	Location 415 421	column
+T37	Location 431 446	collection tube
+T38	Modifier 427 430	new
+R6	Mod-Link Arg1:T37 Arg2:T38	
+T39	Seal 462 465	cap
+T40	Reagent 475 481	buffer
+T41	Location 510 517	columna
+T43	Reagent 546 553	bufferb
+T44	Amount 523 528	0.1ml
+T45	Amount 541 545	75µl
+T46	Location 529 535	column
+R8	Measure Arg1:T46 Arg2:T44	
+R9	Measure Arg1:T43 Arg2:T45	
+T47	Amount 559 562	1ml
+T48	Location 563 569	column
+R10	Measure Arg1:T48 Arg2:T47	
+T49	Amount 575 580	0.5ml
+T50	Reagent 581 588	bufferc
+R11	Measure Arg1:T50 Arg2:T49	
+T51	Amount 594 597	3ml
+T52	Location 598 604	column
+T53	Amount 610 615	1.5ml
+T54	Reagent 616 623	bufferd
+R12	Measure Arg1:T54 Arg2:T53	
+R13	Measure Arg1:T52 Arg2:T51	
+T55	Amount 629 632	5ml
+T56	Location 633 639	column
+T57	Amount 645 650	2.5ml
+T58	Reagent 651 658	buffere
+R14	Measure Arg1:T56 Arg2:T55	
+R15	Measure Arg1:T58 Arg2:T57	
+T59	Amount 664 668	10ml
+T60	Location 669 675	column
+T61	Amount 681 684	5ml
+T62	Reagent 685 691	buffer
+T63	Reagent 707 713	column
+T64	Speed 717 723	1,000g
+T65	Time 728 737	2 minutes
+T66	Action 741 747	remove
+E23	Action:T66 Acts-on:T67
+T67	Reagent 752 758	buffer
+R16	Measure Arg1:T62 Arg2:T61	
+R17	Measure Arg1:T60 Arg2:T59	
+R18	Setting Arg1:E17 Arg2:T64	
+R19	Setting Arg1:E17 Arg2:T65	
+T68	Reagent 822 828	buffer
+T69	Method 853 867	centrifugation
+T70	Amount 848 852	each
+R20	Setting Arg1:E18 Arg2:T70	
+T71	Location 879 885	column
+T72	Location 895 910	collection tube
+T73	Modifier 891 894	new
+T74	Seal 926 929	cap
+R21	Mod-Link Arg1:T72 Arg2:T73	
+T75	Modifier 931 937	Slowly
+R22	Mod-Link Arg1:E21 Arg2:T75	
+T76	Reagent 949 965	protein solution
+T77	Location 973 979	center
+T78	Reagent 987 1001	SpinOUT™ resin
+R23	Meronym Arg1:T77 Arg2:T78	
+T79	Location 1077 1083	column
+T80	Method 10 25	Buffer Exchange
+T81	Location 35 39	side
+T82	Numerical 31 34	one
+T83	Location 47 53	column
+R24	Meronym Arg1:T81 Arg2:T83	
+T84	Method 72 87	centrifugations
+T85	Method 123 137	centrifugation
+T86	Action 58 64	ensure
+E24	Action:T86 
+T42	Action 488 497	exchanged
+E25	Action:T42 Acts-on:T40 Site:T41
+T87	Action 760 766	Repeat
+E26	Action:T87 Count:T88
+T88	Numerical 792 796	five
+T89	Measure-Type 1019 1026	volumes
+T90	Action 1030 1035	apply
+E27	Action:T90 Measure-Type-Link:T89 Site:T91
+T91	Location 1043 1049	column

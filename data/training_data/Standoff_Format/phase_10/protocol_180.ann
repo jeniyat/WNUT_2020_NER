@@ -1,0 +1,227 @@
+T2	Action 449 454	Rinse
+E2	Action:T2 Acts-on:T62 Using:T63
+T3	Action 598 602	Heat
+E3	Action:T3 Acts-on:T64 Using:T66 Using2:T68 Site:T69
+T4	Action 692 698	Reduce
+E4	Action:T4 Using:T70
+T5	Action 716 722	simmer
+E5	Action:T5 Site:T72
+T6	Action 752 758	Remove
+E6	Action:T6 Site:T73
+T7	Action 794 798	cool
+E7	Action:T7 Acts-on:T74 Site:T75
+T8	Action 832 837	Rinse
+E8	Action:T8 Acts-on:T77 Using:T78
+T9	Action 867 872	Apply
+E9	Action:T9 Using:T79
+T10	Action 938 946	Blot off
+E10	Action:T10 Acts-on:T82
+T11	Action 960 965	Apply
+E11	Action:T11 Acts-on:T83
+T12	Action 1026 1034	Incubate
+E12	Action:T12 Acts-on:T84
+T13	Action 1084 1089	Rinse
+E13	Action:T13 Acts-on:T87 Using:T89
+T14	Action 1110 1115	Apply
+E14	Action:T14 Acts-on:T90 Using:T92
+T15	Action 1161 1166	Rinse
+E15	Action:T15 Acts-on:T93 Using:T95
+T16	Action 1187 1192	Apply
+E16	Action:T16 Acts-on:T96 Using:T98
+T17	Action 1235 1240	Rinse
+E17	Action:T17 Acts-on:T100
+T18	Action 1254 1259	Apply
+E18	Action:T18 Acts-on:T101 Using:T103
+T19	Action 1294 1300	Dilute
+E19	Action:T19 
+T20	Action 1405 1410	Rinse
+E20	Action:T20 Acts-on:T105 Using:T106
+T21	Action 1440 1448	Submerge
+E21	Action:T21 Acts-on:T107 Using:T108
+T22	Action 1495 1500	Rinse
+E22	Action:T22 Using:T110
+T23	Action 1569 1577	Submerge
+E23	Action:T23 Acts-on:T113 Site:T114
+T24	Action 1617 1622	Rinse
+E24	Action:T24 Using:T117
+T25	Action 1678 1683	slide
+E25	Action:T25 Acts-on:T120 Using:T119
+T1	Time 119 128	5 minutes
+T26	Reagent 112 118	Xylene
+T27	Amount 154 159	250mL
+T28	Location 160 170	containers
+R1	Measure Arg1:T28 Arg2:T27	
+T29	Numerical 141 142	3
+T30	Action 109 110	A
+E1	Action:T30 Using:T26 Count:T29 Site:T28
+R2	Setting Arg1:E1 Arg2:T1	
+T31	Concentration 175 179	100%
+T32	Reagent 180 187	alcohol
+T33	Time 188 197	5 minutes
+T34	Numerical 210 211	3
+T35	Amount 223 228	250mL
+T36	Location 229 239	containers
+R3	Measure Arg1:T36 Arg2:T35	
+T37	Action 172 173	B
+E26	Action:T37 Using:T32 Count:T34 Site:T36
+R4	Measure Arg1:T32 Arg2:T31	
+R5	Setting Arg1:E26 Arg2:T33	
+T38	Concentration 244 247	95%
+T39	Reagent 248 255	alcohol
+T40	Time 256 265	3 minutes
+T41	Amount 273 278	250mL
+T42	Amount 322 327	250mL
+T43	Amount 383 388	250mL
+T44	Location 279 288	container
+T45	Location 328 337	container
+T46	Location 389 399	containers
+R6	Measure Arg1:T46 Arg2:T43	
+R7	Measure Arg1:T45 Arg2:T42	
+R8	Measure Arg1:T44 Arg2:T41	
+T47	Numerical 370 371	3
+T48	Action 241 242	C
+E27	Action:T48 Using:T39 Site:T44 Count:T150
+R9	Measure Arg1:T39 Arg2:T38	
+R10	Setting Arg1:E27 Arg2:T40	
+T49	Concentration 293 296	70%
+T50	Reagent 297 304	alcohol
+T51	Time 305 314	3 minutes
+T52	Action 290 291	D
+E28	Action:T52 Using:T50 Site:T45 Count:T151
+R11	Measure Arg1:T50 Arg2:T49	
+R12	Setting Arg1:E28 Arg2:T51	
+T53	Reagent 342 347	Water
+T54	Time 348 357	1 minutes
+T55	Action 339 340	E
+E29	Action:T55 Using:T53 Count:T47 Site:T46
+R13	Setting Arg1:E29 Arg2:T54	
+T56	Reagent 404 408	H2O2
+T57	Concentration 410 412	3%
+T58	Time 414 424	15 minutes
+T59	Amount 432 437	250mL
+T60	Location 438 447	container
+R14	Measure Arg1:T60 Arg2:T59	
+T61	Action 401 402	F
+E30	Action:T61 Using:T56 Site:T60 Count:T129
+R15	Setting Arg1:E30 Arg2:T58	
+R16	Measure Arg1:T56 Arg2:T57	
+T62	Location 455 461	slides
+T63	Reagent 477 482	water
+T64	Location 603 609	slides
+T65	Concentration 613 615	1X
+T66	Reagent 616 639	Sodium Citrate solution
+T67	Time 644 663	1 minute 25 seconds
+T68	Method 667 677	high power
+T69	Device 681 690	microwave
+R17	Measure Arg1:T66 Arg2:T65	
+R18	Setting Arg1:E3 Arg2:T67	
+T70	Method 702 711	low power
+T71	Time 727 737	10 minutes
+T72	Device 741 750	microwave
+R19	Setting Arg1:E5 Arg2:T71	
+T73	Device 764 773	microwave
+T74	Location 784 790	slides
+T75	Location 806 815	bench top
+T76	Time 820 830	10 minutes
+R20	Setting Arg1:E7 Arg2:T76	
+T77	Location 838 844	slides
+T78	Reagent 850 865	lab grade water
+T79	Reagent 873 884	serum block
+T80	Modifier 889 897	at least
+T81	Time 898 907	5 minutes
+R21	Mod-Link Arg1:T81 Arg2:T80	
+R22	Setting Arg1:E9 Arg2:T81	
+T82	Reagent 947 958	serum block
+T83	Reagent 966 982	primary antibody
+T84	Reagent 1035 1051	primary antibody
+T85	Time 1052 1062	60 minutes
+T86	Temperature 1066 1082	room temperature
+R23	Setting Arg1:E12 Arg2:T85	
+R24	Setting Arg1:E12 Arg2:T86	
+T87	Location 1090 1096	slides
+T88	Concentration 1102 1104	1X
+T89	Reagent 1105 1108	PBS
+R25	Measure Arg1:T89 Arg2:T88	
+T90	Reagent 1116 1135	USA Linking reagent
+T91	Time 1138 1148	20 minutes
+T92	Method 1149 1159	incubation
+R26	Setting Arg1:E14 Arg2:T91	
+T93	Location 1167 1173	slides
+T94	Concentration 1179 1181	1X
+T95	Reagent 1182 1185	PBS
+R27	Measure Arg1:T95 Arg2:T94	
+T96	Reagent 1193 1209	Labeling Reagent
+T97	Time 1212 1222	20 minutes
+T98	Method 1223 1233	incubation
+R28	Setting Arg1:E16 Arg2:T97	
+T99	Concentration 1246 1248	1X
+T100	Reagent 1249 1252	PBS
+R29	Measure Arg1:T100 Arg2:T99	
+T101	Reagent 1260 1269	chromogen
+T102	Time 1272 1281	5 minutes
+T103	Method 1282 1292	incubation
+R30	Setting Arg1:E18 Arg2:T102	
+T105	Location 1411 1417	slides
+T106	Reagent 1423 1438	lab grade water
+T107	Location 1449 1455	slides
+T108	Reagent 1459 1478	Mayer’s Hematoxylin
+T109	Time 1483 1493	30 seconds
+R31	Setting Arg1:E21 Arg2:T109	
+T110	Reagent 1515 1530	lab grade water
+T111	Modifier 1507 1514	running
+R32	Mod-Link Arg1:T110 Arg2:T111	
+T112	Time 1535 1543	1 minute
+R33	Setting Arg1:E22 Arg2:T112	
+T113	Location 1578 1584	slides
+T114	Reagent 1588 1602	Bluing Reagent
+T115	Time 1607 1615	1 minute
+R34	Setting Arg1:E23 Arg2:T115	
+T116	Time 1657 1665	1 minute
+T117	Reagent 1637 1652	lab grade water
+T118	Modifier 1629 1636	running
+R35	Mod-Link Arg1:T117 Arg2:T118	
+R36	Setting Arg1:E24 Arg2:T116	
+T119	Reagent 1690 1723	Permanent Aqueous Mounting Medium
+T120	Location 1667 1677	Cover slip
+T121	Method 0 20	Immunohistochemistry
+T122	Reagent 34 52	Keratin Antibodies
+T123	Action 53 58	Clear
+E31	Action:T123 Acts-on:T124
+T124	Location 59 65	Slides
+T125	Action 67 74	Removes
+E32	Action:T125 Acts-on:T126
+T126	Reagent 75 83	paraffin
+T127	Action 88 96	hydrates
+E33	Action:T127 Acts-on:T128
+T128	Reagent 101 107	tissue
+T129	Numerical 429 430	1
+T130	Modifier 490 508	Lab grade filtered
+T131	Reagent 509 514	water
+R37	Mod-Link Arg1:T131 Arg2:T130	
+T132	Modifier 523 538	injection grade
+T133	Modifier 540 558	cell culture grade
+T134	Method 560 596	Reverse Osmosis De-Ionisation (RODI)
+T135	Action 916 920	wash
+E34	Action:T135 
+T136	Method 1000 1008	dilution
+T137	Reagent 1343 1356	AEC Chromogen
+T138	Amount 1358 1362	20μL
+T139	Reagent 1363 1376	AEC chromogen
+T140	Amount 1379 1382	1mL
+T141	Reagent 1383 1403	AEC substrate buffer
+R38	Measure Arg1:T141 Arg2:T140	
+R39	Measure Arg1:T139 Arg2:T138	
+T142	Reagent 1553 1558	water
+T143	Modifier 1562 1567	clear
+R40	Mod-Link Arg1:T142 Arg2:T143	
+T144	Reagent 1755 1773	xylene based mount
+T145	Action 1751 1754	use
+E35	Action:T145 Acts-on:T144 Acts-on2:T146
+T146	Reagent 1779 1792	AEC Chromogen
+T147	Action 1804 1812	dissolve
+E36	Action:T147 Acts-on:T148
+T148	Reagent 1817 1826	chromogen
+T149	Mention 1796 1798	it
+R41	Coreference-Link Arg1:T149 Arg2:T144	
+T150	Numerical 270 271	1
+T151	Numerical 319 320	1

@@ -1,0 +1,268 @@
+T3	Action 381 385	Heat
+E3	Action:T3 
+T4	Action 399 408	Autoclave
+E4	Action:T4 
+T5	Action 423 427	Pour
+E5	Action:T5 Site:T34
+T6	Action 501 507	streak
+E6	Action:T6 Acts-on:T35 Site:T36 Site2:T37
+T7	Action 581 589	Incubate
+E7	Action:T7 Acts-on:T39
+T1	Action 389 397	dissolve
+E1	Action:T1 Commands:E3
+T2	Action 412 421	sterilize
+E2	Action:T2 Commands:E4
+T33	Modifier 433 445	medium sized
+T34	Location 446 458	petri dishes
+T35	Reagent 513 519	liquid
+T36	Reagent 527 545	bacterized culture
+T37	Location 568 579	agar plates
+T38	Reagent 553 560	protist
+T39	Location 594 605	agar plates
+T8	Action 718 722	pick
+E8	Action:T8 Using:T15 Acts-on:T10
+T9	Numerical 723 726	one
+T10	Reagent 727 740	clonal strain
+T11	Action 745 748	dip
+E9	Action:T11 Acts-on:T12 Site:T13
+T12	Device 753 763	metal loop
+T13	Reagent 771 785	nutrient broth
+T14	Modifier 687 703	flame sterilized
+T15	Device 704 714	metal loop
+T16	Concentration 787 791	0.5%
+T17	Reagent 792 805	yeast extract
+T18	Concentration 808 812	0.5%
+T19	Reagent 813 820	trypton
+T20	Reagent 824 830	MQ/FSW
+T21	Action 850 854	grow
+E10	Action:T21 Acts-on:T22
+T22	Reagent 841 849	bacteria
+T24	Action 890 894	Grow
+E11	Action:T24 Acts-on:T26
+T25	Amount 897 909	large amount
+T26	Reagent 917 925	bacteria
+T28	Action 1106 1114	Transfer
+E12	Action:T28 Acts-on:T30 Site:T31
+T29	Amount 1115 1121	0.1 ml
+T30	Reagent 1129 1145	bacteria culture
+T31	Reagent 1155 1160	broth
+T32	Amount 935 938	1 L
+T40	Reagent 942 965	bacteria nutrient broth
+T41	Concentration 1031 1035	0.5%
+T42	Reagent 1036 1049	yeast extract
+T43	Concentration 1052 1056	0.5%
+T44	Reagent 1057 1064	trypton
+T45	Reagent 1068 1070	MQ
+T46	Reagent 1074 1077	FSW
+T47	Action 1082 1091	autoclave
+E13	Action:T47 Commands:E14
+T48	Action 1095 1104	sterilize
+E14	Action:T48 
+T50	Action 1179 1183	grow
+E16	Action:T50 Acts-on:T51
+T49	Time 1188 1195	~4 days
+T51	Reagent 1170 1178	bacteria
+T52	Action 1197 1209	Heat-killing
+E15	Action:T52 Acts-on:T53 Using:T57
+T53	Reagent 1214 1222	bacteria
+T54	Amount 1230 1236	250 ml
+T55	Location 1237 1255	centrifuge bottles
+T56	Modifier 1256 1264	entirely
+T57	Reagent 1274 1290	bacteria culture
+T58	Action 1292 1297	Place
+E17	Action:T58 Site:T59
+T59	Device 1301 1311	water bath
+T60	Temperature 1315 1319	70oC
+T61	Time 1324 1330	30 min
+T62	Action 1332 1342	Centrifuge
+E18	Action:T62 Acts-on:T64
+T63	Action 1347 1351	wash
+E19	Action:T63 Acts-on:T64
+T64	Reagent 1356 1364	bacteria
+T65	Action 1366 1376	Centrifuge
+E20	Action:T65 Acts-on:T66
+T66	Reagent 1381 1401	heat-killed bacteria
+T67	Speed 1405 1411	10 k g
+T68	Time 1416 1422	20 min
+T69	Action 1424 1430	Decant
+E21	Action:T69 Acts-on:T70
+T70	Reagent 1431 1442	supernatant
+T71	Action 1444 1447	Add
+E22	Action:T71 Acts-on:T74 Site:T75
+T72	Amount 1448 1454	~25 ml
+T73	Modifier 1458 1468	sterilized
+T74	Reagent 1469 1475	MQ/FSW
+T75	Location 1527 1533	bottle
+T76	Action 1535 1547	Vortex/shake
+E23	Action:T76 Acts-on:T78
+T77	Action 1551 1560	resuspend
+E24	Action:T77 Acts-on:T78
+T78	Reagent 1561 1567	pellet
+T79	Action 1569 1572	Add
+E25	Action:T79 Acts-on:T80
+T80	Reagent 1573 1579	MQ/FSW
+T81	Action 1583 1587	fill
+E26	Action:T81 
+T82	Amount 1591 1597	200 ml
+T83	Action 1602 1612	centrifuge
+E27	Action:T83 
+T84	Modifier 1613 1618	again
+T85	Speed 1622 1628	10 k g
+T86	Time 1633 1639	20 min
+T87	Action 1641 1647	Repeat
+E28	Action:T87 Using:T128
+T88	Reagent 1684 1692	bacteria
+T89	Numerical 1693 1694	3
+T90	Action 1673 1679	washed
+E29	Action:T90 Acts-on:T88 Count:T89 Commands:E28
+T91	Action 1735 1745	centrifuge
+E30	Action:T91 Acts-on:T93
+T92	Action 1750 1756	decant
+E31	Action:T92 Acts-on:T93
+T93	Reagent 1757 1768	supernatant
+T94	Action 1770 1773	Add
+E32	Action:T94 Acts-on:T95
+T95	Reagent 1784 1790	MQ/FSW
+T96	Modifier 1777 1783	little
+T97	Action 1807 1819	vortex/shake
+E33	Action:T97 Acts-on:T99
+T98	Action 1823 1832	resuspend
+E34	Action:T98 Acts-on:T99
+T99	Reagent 1833 1839	pellet
+T100	Action 1854 1862	sonicate
+E35	Action:T100 Acts-on:T102 Using:T103
+T101	Modifier 1867 1879	concentrated
+T102	Reagent 1880 1888	bacteria
+T103	Device 1894 1903	sonicator
+T104	Action 1918 1922	Test
+E36	Action:T104 Measure-Type-Link:T105 Acts-on:T106
+T105	Measure-Type 1927 1936	sterility
+T106	Reagent 1944 1952	bacteria
+T107	Action 1954 1958	Test
+E37	Action:T107 Measure-Type-Link:T108 Acts-on:T109
+T108	Measure-Type 1963 1972	sterility
+T109	Reagent 1980 1988	bacteria
+T110	Action 1992 1999	placing
+E38	Action:T110 Acts-on:T112 Site:T117 Site2:T119
+T111	Modifier 2002 2008	dilute
+T112	Reagent 2009 2016	aliquot
+T113	Modifier 2024 2035	heat-killed
+T114	Reagent 2036 2044	bacteria
+T115	Amount 2048 2052	5 ml
+T116	Concentration 2056 2060	0.5%
+T117	Reagent 2061 2074	yeast extract
+T118	Concentration 2077 2081	0.5%
+T119	Reagent 2082 2095	trypton broth
+T120	Action 2144 2150	adding
+E39	Action:T120 Acts-on:T121
+T121	Reagent 2155 2163	bacteria
+T123	Reagent 2116 2122	liquid
+T124	Action 2264 2272	Incubate
+E41	Action:T124 Acts-on:T125
+T125	Reagent 2277 2291	sterility test
+T126	Time 2296 2307	several day
+R1	Mod-Link Arg1:T34 Arg2:T33	
+R2	Meronym Arg1:T38 Arg2:T36	
+R3	Mod-Link Arg1:T15 Arg2:T14	
+R4	Measure Arg1:T10 Arg2:T9	
+R5	Measure Arg1:T17 Arg2:T16	
+R6	Measure Arg1:T19 Arg2:T18	
+R7	Meronym Arg1:T19 Arg2:T20	
+R8	Meronym Arg1:T17 Arg2:T13	
+R9	Meronym Arg1:T19 Arg2:T13	
+R10	Measure Arg1:T26 Arg2:T25	
+R11	Measure Arg1:T40 Arg2:T32	
+T127	Action 927 934	Prepare
+E42	Action:T127 Product:T40 Acts-on:T42 Acts-on2:T44
+R12	Measure Arg1:T42 Arg2:T41	
+R13	Measure Arg1:T44 Arg2:T43	
+R14	Meronym Arg1:T44 Arg2:T45	
+R15	Or Arg1:T45 Arg2:T46	
+R16	Measure Arg1:T30 Arg2:T29	
+R17	Setting Arg1:E16 Arg2:T49	
+R18	Measure Arg1:T55 Arg2:T54	
+R19	Meronym Arg1:T53 Arg2:T55	
+R20	Mod-Link Arg1:E15 Arg2:T56	
+R21	Setting Arg1:T59 Arg2:T60	
+R22	Setting Arg1:T59 Arg2:T61	
+R23	Setting Arg1:E20 Arg2:T67	
+R24	Setting Arg1:E20 Arg2:T68	
+R25	Mod-Link Arg1:T74 Arg2:T73	
+R26	Measure Arg1:T74 Arg2:T72	
+R27	Setting Arg1:E26 Arg2:T82	
+R28	Mod-Link Arg1:E27 Arg2:T84	
+R29	Setting Arg1:E27 Arg2:T85	
+R30	Setting Arg1:E27 Arg2:T86	
+T128	Method 1648 1657	this step
+R31	Mod-Link Arg1:T95 Arg2:T96	
+R32	Mod-Link Arg1:T102 Arg2:T101	
+R33	Mod-Link Arg1:T112 Arg2:T111	
+R34	Mod-Link Arg1:T114 Arg2:T113	
+R35	Meronym Arg1:T112 Arg2:T114	
+R36	Measure Arg1:T117 Arg2:T116	
+R37	Measure Arg1:T119 Arg2:T118	
+R38	Measure Arg1:T117 Arg2:T115	
+R39	Measure Arg1:T119 Arg2:T115	
+R40	Setting Arg1:E41 Arg2:T126	
+T129	Action 148 155	Prepare
+E43	Action:T129 Acts-on:T131 Acts-on2:T133 Acts-on3:T135
+T130	Concentration 156 161	1.5.%
+T131	Reagent 162 173	agar plates
+T132	Concentration 179 183	0.5%
+T133	Reagent 184 197	yeast extract
+T134	Concentration 202 206	0.5%
+T135	Reagent 207 214	trypton
+R41	Measure Arg1:T131 Arg2:T130	
+R42	Measure Arg1:T133 Arg2:T132	
+R43	Measure Arg1:T135 Arg2:T134	
+T137	Action 69 78	Obtaining
+E45	Action:T137 Product:T138 Commands:E43
+T138	Reagent 81 103	clonal bacteria strain
+T139	Amount 277 282	0.5 g
+T140	Amount 298 303	0.5 g
+T141	Amount 314 319	1.5 g
+T142	Amount 328 334	100 ml
+T143	Reagent 283 296	yeast extract
+T144	Reagent 304 311	trypton
+T145	Reagent 320 324	agar
+T146	Reagent 338 379	MiliQ water (MQ)/Filtered sea water (FSW)
+R44	Measure Arg1:T146 Arg2:T142	
+R45	Measure Arg1:T145 Arg2:T141	
+R46	Measure Arg1:T144 Arg2:T140	
+R47	Measure Arg1:T143 Arg2:T139	
+T136	Action 0 6	Making
+E44	Action:T136 Acts-on:T148
+T147	Modifier 7 18	heat-killed
+T148	Reagent 19 27	bacteria
+T149	Action 32 39	feeding
+E46	Action:T149 Acts-on:T151
+T150	Modifier 40 59	axenic phagotrophic
+T151	Reagent 60 68	protists
+R48	Mod-Link Arg1:T148 Arg2:T147	
+R49	Mod-Link Arg1:T151 Arg2:T150	
+T152	Action 216 219	Use
+E47	Action:T152 
+T153	Generic-Measure 224 232	salinity
+T154	Reagent 242 257	protist culture
+R50	Setting Arg1:E47 Arg2:T153	
+R51	Measure Arg1:T154 Arg2:T153	
+T155	Location 469 480	agar plates
+T27	Reagent 636 651	protist culture
+T156	Reagent 657 674	bacteria colonies
+T23	Action 1708 1715	washing
+E48	Action:T23 
+T122	Modifier 2132 2137	clear
+R52	Mod-Link Arg1:T123 Arg2:T122	
+T157	Reagent 2212 2218	liquid
+T158	Modifier 2226 2232	cloudy
+R53	Mod-Link Arg1:T157 Arg2:T158	
+T159	Reagent 2246 2262	bacterial growth
+T160	Reagent 2313 2321	bacteria
+T161	Modifier 2325 2332	sterile
+T162	Modifier 2348 2358	cloudiness
+T163	Time 2377 2383	5 days
+R54	Mod-Link Arg1:T160 Arg2:T161	
+R55	Mod-Link Arg1:T160 Arg2:T162	
+T164	Generic-Measure 1494 1502	salinity
+T165	Reagent 1511 1518	culture
+R56	Measure Arg1:T165 Arg2:T164	

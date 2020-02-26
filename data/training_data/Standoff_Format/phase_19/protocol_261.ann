@@ -1,0 +1,40 @@
+T1	Action 36 42	Set up
+E1	Action:T1 Acts-on:T11 Site:T13
+T2	Action 81 84	mix
+E2	Action:T2 Acts-on:T10
+T3	Action 99 106	Collect
+E3	Action:T3 Acts-on:T14 Site:T15
+T4	Action 155 159	spin
+E4	Action:T4 
+T5	Action 177 184	overlay
+E5	Action:T5 Acts-on:T18 Using:T19
+T6	Action 258 266	Transfer
+E6	Action:T6 Acts-on:T20 Site:T21 Site2:T22
+T7	Action 318 327	preheated
+E7	Action:T7 
+T9	Modifier 74 80	Gently
+T10	Reagent 89 97	reaction
+R1	Mod-Link Arg1:E2 Arg2:T9	
+T11	Reagent 57 65	reaction
+T12	Modifier 47 56	following
+R2	Mod-Link Arg1:T11 Arg2:T12	
+T13	Location 69 72	ice
+T14	Reagent 111 117	liquid
+T15	Location 125 131	bottom
+T16	Location 139 143	tube
+T17	Modifier 149 154	quick
+R3	Mod-Link Arg1:E4 Arg2:T17	
+R4	Meronym Arg1:T15 Arg2:T16	
+T18	Reagent 189 195	sample
+T19	Reagent 201 212	mineral oil
+T20	Reagent 267 276	PCR tubes
+T21	Location 282 285	ice
+T22	Device 291 302	PCR machine
+T23	Temperature 331 335	95°C
+T8	Action 346 359	thermocycling
+E8	Action:T8 
+R5	Setting Arg1:E7 Arg2:T23	
+T24	Method 0 3	PCR
+T25	Reagent 9 27	Taq DNA Polymerase
+T26	Device 224 235	PCR machine
+T27	Seal 246 256	heated lid

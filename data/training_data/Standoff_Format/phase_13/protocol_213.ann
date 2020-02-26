@@ -1,0 +1,127 @@
+T1	Action 20 24	Pour
+E1	Action:T1 Acts-on:T20 Site:T21 Using:T22
+T2	Action 170 174	Stir
+E2	Action:T2 
+T3	Action 257 260	cap
+E3	Action:T3 Acts-on:T26
+T4	Action 277 286	autoclave
+E4	Action:T4 Using:T29
+T5	Action 389 395	Remove
+E5	Action:T5 Site:T30
+T6	Action 415 423	let cool
+E6	Action:T6 
+T7	Action 564 568	Cool
+E7	Action:T7 Site:T34
+T8	Action 644 647	Add
+E8	Action:T8 Acts-on:T35
+T9	Action 721 725	pour
+E9	Action:T9 Acts-on:T37 Site:T39
+T10	Action 806 810	cool
+E10	Action:T10 
+T11	Action 818 825	placing
+E11	Action:T11 Acts-on:T43 Site:T41
+T12	Action 841 850	inverting
+E12	Action:T12 Acts-on:T42
+T13	Action 873 878	place
+E13	Action:T13 Acts-on:T44
+T15	Action 953 957	Wrap
+E15	Action:T15 Acts-on:T46 Using:T47
+T16	Action 984 989	store
+E16	Action:T16 Site:T50
+T17	Action 1047 1051	Wrap
+E17	Action:T17 Using:T51
+T18	Action 1141 1146	Store
+E18	Action:T18 Acts-on:T55
+T19	Concentration 25 46	1.5% w/v (7.5g/500mL)
+T20	Reagent 47 73	bacteriological grade agar
+T21	Location 82 106	autoclave safe container
+R1	Measure Arg1:T20 Arg2:T19	
+T22	Reagent 161 169	LB media
+T23	Amount 149 154	500mL
+R2	Setting Arg1:E1 Arg2:T23	
+T24	Modifier 175 185	vigorously
+R3	Mod-Link Arg1:E2 Arg2:T24	
+T25	Temperature 189 205	room temperature
+R4	Setting Arg1:E2 Arg2:T25	
+T26	Location 261 267	bottle
+T27	Time 304 314	30 minutes
+T28	Time 328 338	45 minutes
+R5	Setting Arg1:E4 Arg2:T27	
+R6	Or Arg1:T27 Arg2:T28	
+T29	Method 359 386	slow exhaust (liquid) cycle
+T30	Device 401 410	autoclave
+T31	Time 428 441	20-40 minutes
+T32	Time 445 468	until sufficiently cool
+R7	Setting Arg1:E6 Arg2:T31	
+R8	Or Arg1:T31 Arg2:T32	
+T33	Temperature 572 575	55C
+T34	Location 576 586	water bath
+R9	Setting Arg1:E7 Arg2:T33	
+T35	Reagent 648 668	antibiotic selection
+T36	Amount 732 739	20-25mL
+T37	Reagent 743 750	LB agar
+T38	Size 756 760	10cm
+T39	Location 761 773	Petri dishes
+R10	Measure Arg1:T39 Arg2:T38	
+R11	Measure Arg1:T37 Arg2:T36	
+T40	Reagent 801 805	agar
+T41	Location 833 836	top
+T42	Location 851 856	plate
+T43	Seal 826 829	lid
+T44	Seal 879 882	lid
+T45	Modifier 883 908	open slightly to the side
+R12	Mod-Link Arg1:E13 Arg2:T45	
+T46	Location 958 964	plates
+T47	Seal 968 980	plastic wrap
+T48	Action 1015 1022	prevent
+E19	Action:T48 Acts-on:T49
+T49	Location 1023 1029	plates
+T50	Location 1000 1011	plastic bag
+T51	Seal 1055 1068	aluminum foil
+T53	Reagent 1095 1122	light-sensitive antibiotics
+T54	Reagent 1129 1139	ampicillin
+R13	Meronym Arg1:T54 Arg2:T53	
+T55	Location 1147 1153	plates
+T56	Temperature 1157 1159	4C
+T57	Modifier 1161 1169	inverted
+R14	Setting Arg1:E18 Arg2:T56	
+R15	Mod-Link Arg1:E18 Arg2:T57	
+T58	Location 0 13	LB agar plate
+T59	Concentration 15 19	1.5%
+R16	Measure Arg1:T58 Arg2:T59	
+T60	Modifier 126 134	at least
+T61	Amount 135 140	500mL
+R17	Mod-Link Arg1:T61 Arg2:T60	
+T62	Reagent 212 224	particulates
+T63	Modifier 239 246	visible
+R18	Mod-Link Arg1:T62 Arg2:T63	
+R19	Measure Arg1:T21 Arg2:T61	
+T64	Modifier 249 256	Loosely
+R20	Mod-Link Arg1:E3 Arg2:T64	
+T65	Amount 349 351	1L
+T66	Device 500 520	nitrile/latex gloves
+T67	Device 524 535	bare handed
+R21	Or Arg1:T66 Arg2:T67	
+T68	Temperature 543 549	40-60C
+T69	Reagent 607 611	agar
+T70	Action 612 616	cool
+E21	Action:T70 Acts-on:T69
+T71	Action 635 642	pouring
+E22	Action:T71 
+T72	Reagent 675 679	agar
+T73	Modifier 684 695	cooled down
+R22	Mod-Link Arg1:T72 Arg2:T73	
+T74	Action 700 703	mix
+E23	Action:T74 
+T75	Modifier 704 708	well
+R23	Mod-Link Arg1:E23 Arg2:T75	
+T76	Modifier 711 720	Carefully
+R24	Mod-Link Arg1:E9 Arg2:T76	
+T77	Numerical 781 786	20-25
+T78	Location 787 793	plates
+R25	Measure Arg1:T78 Arg2:T77	
+T79	Reagent 941 945	agar
+T14	Method 922 933	evaporation
+T52	Action 1072 1079	prevent
+E14	Action:T52 Using:T80
+T80	Method 1080 1091	degradation

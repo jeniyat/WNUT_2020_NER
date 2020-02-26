@@ -1,0 +1,77 @@
+T1	Action 46 49	Add
+E1	Action:T1 Acts-on:T9 Site:T11
+T2	Action 177 180	Add
+E2	Action:T2 Acts-on:T21 Site:T22 Using:T23
+T3	Action 224 227	Add
+E3	Action:T3 Acts-on:T25 Site:T26
+T4	Action 269 274	place
+E4	Action:T4 Acts-on:T32 Site:T33
+T5	Action 382 386	pour
+E5	Action:T5 Acts-on:T35 Site:T36 Using:T43
+T8	Action 491 500	pass into
+E8	Action:T8 Site:T42 Acts-on:T39
+T6	Amount 50 56	12.9 g
+T9	Reagent 60 74	sodium nitrite
+T10	Amount 79 85	125 mL
+T11	Reagent 89 96	Milli-Q
+T12	Reagent 114 128	sodium nitrite
+T13	Modifier 129 137	directly
+T16	Modifier 145 168	large trace metal clean
+T17	Location 169 175	bottle
+R2	Mod-Link Arg1:T17 Arg2:T16	
+R5	Measure Arg1:T11 Arg2:T10	
+R6	Measure Arg1:T9 Arg2:T6	
+T18	Modifier 75 78	per
+R7	Mod-Link Arg1:T11 Arg2:T18	
+T19	Action 101 109	weighing
+E6	Action:T19 Acts-on:T12 Site:T17
+R4	Mod-Link Arg1:E6 Arg2:T13	
+T20	Amount 181 187	125 mL
+T21	Reagent 191 198	Milli-Q
+T22	Location 206 212	bottle
+T23	Method 216 222	weight
+R8	Measure Arg1:T21 Arg2:T20	
+T24	Modifier 228 233	clean
+T25	Reagent 234 250	Chelex-100 resin
+T26	Location 258 264	bottle
+R9	Mod-Link Arg1:T25 Arg2:T24	
+T27	Time 290 299	overnight
+T28	Reagent 314 320	Chelex
+T29	Action 321 326	mixes
+E9	Action:T29 Acts-on:T28 Site:T31
+T30	Modifier 327 337	throughout
+T31	Reagent 342 350	solution
+R10	Mod-Link Arg1:E9 Arg2:T30	
+T32	Mention 275 277	it
+T33	Device 283 289	shaker
+R11	Setting Arg1:E4 Arg2:T27	
+R12	Coreference-Link Arg1:T32 Arg2:T26	
+T34	Modifier 375 381	slowly
+T35	Reagent 391 399	solution
+T36	Reagent 411 422	HPLC column
+T37	Action 447 453	filter
+E10	Action:T37 Acts-on:T38
+T38	Reagent 458 464	chelex
+T39	Reagent 479 487	solution
+T40	Modifier 503 514	trace metal
+T41	Modifier 515 520	clean
+T42	Location 521 527	bottle
+R13	Mod-Link Arg1:T42 Arg2:T41	
+R14	Mod-Link Arg1:T42 Arg2:T40	
+R15	Mod-Link Arg1:E5 Arg2:T34	
+T43	Device 430 434	frit
+T7	Reagent 0 15	Nitrite reagent
+T44	Modifier 20 29	dissolved
+T45	Reagent 30 36	cobalt
+R16	Mod-Link Arg1:T45 Arg2:T44	
+T46	Method 37 45	analyses
+T47	Time 366 373	morning
+T48	Action 542 546	test
+E7	Action:T48 Acts-on:T49
+T49	Reagent 551 558	reagent
+T50	Action 573 579	ensure
+E11	Action:T50 Acts-on:T51
+T51	Mention 580 582	it
+T52	Modifier 586 591	clean
+R17	Coreference-Link Arg1:T51 Arg2:T49	
+R18	Mod-Link Arg1:T51 Arg2:T52	

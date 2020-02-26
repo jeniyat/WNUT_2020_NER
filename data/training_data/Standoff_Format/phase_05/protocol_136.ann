@@ -1,0 +1,269 @@
+T1	Action 53 61	Assemble
+E1	Action:T1 Acts-on:T34
+T2	Action 93 99	attach
+E2	Action:T2 Acts-on:T35 Site:T36 Using:T37
+T3	Action 194 204	Pre-filter
+E3	Action:T3 Acts-on:T39 Using:T40
+T4	Action 256 262	Filter
+E4	Action:T4 Using:T43
+T5	Action 272 278	remove
+E5	Action:T5 Acts-on:T42
+T6	Action 341 346	Treat
+E6	Action:T6 Acts-on:T44 Using:T45
+T7	Action 398 409	precipitate
+E7	Action:T7 Acts-on:T46
+T8	Action 425 431	adding
+E8	Action:T8 Acts-on:T48 Site:T51
+T9	Action 488 493	Shake
+E9	Action:T9 
+T10	Action 519 522	Add
+E10	Action:T10 Acts-on:T58
+T11	Action 649 654	Shake
+E11	Action:T11 
+T13	Action 711 714	sit
+E13	Action:T13 Acts-on:T64
+T14	Action 747 753	Filter
+E14	Action:T14 Acts-on:T67 Using:T68 Using2:T69
+T15	Action 883 892	attaching
+E15	Action:T15 Acts-on:T70 Site:T71 Using:T72
+T16	Action 987 992	Place
+E16	Action:T16 Acts-on:T74 Site2:T76
+T18	Action 1208 1215	Discard
+E18	Action:T18 Acts-on:T81
+T19	Action 1242 1249	Prepare
+E19	Action:T19 Acts-on:T83 Acts-on2:T84 Acts-on3:T85
+T20	Action 1309 1312	Add
+E20	Action:T20 Acts-on:T87
+T21	Action 1437 1442	Shake
+E21	Action:T21 Acts-on:T89
+T22	Action 1493 1499	rotate
+E22	Action:T22 
+T23	Action 1464 1469	Place
+E23	Action:T23 Acts-on:T91 Site:T92
+T24	Action 1518 1523	Leave
+E24	Action:T24 Acts-on:T99
+T25	Action 1553 1560	analyze
+E25	Action:T25 
+T26	Action 1572 1578	purify
+E26	Action:T26 Acts-on:T98
+T27	Action 1639 1643	open
+E27	Action:T27 Acts-on:T100
+T28	Action 1763 1767	pull
+E28	Action:T28 Using:T107 Using2:T106 Using3:T105 Site:T108 Site2:T110
+T29	Action 1850 1860	Centrifuge
+E29	Action:T29 
+T30	Action 1914 1921	recover
+E30	Action:T30 Acts-on:T114
+T31	Action 1972 1975	add
+E31	Action:T31 Acts-on:T116
+T32	Action 1989 1997	incubate
+E32	Action:T32 
+T33	Action 2028 2035	collect
+E33	Action:T33 Acts-on:T119
+T12	Numerical 62 65	two
+T34	Device 72 88	filtering towers
+T35	Device 104 120	filter apparatus
+T36	Location 126 142	peristaltic pump
+T37	Device 150 164	pressure gauge
+R1	Measure Arg1:T34 Arg2:T12	
+T38	Amount 205 208	20L
+T39	Reagent 212 220	seawater
+T40	Device 235 254	Whatman GF/A filter
+R2	Measure Arg1:T39 Arg2:T38	
+T41	Modifier 263 268	again
+T42	Reagent 279 287	bacteria
+T43	Device 310 339	Millipore Express Plus filter
+R3	Mod-Link Arg1:E4 Arg2:T41	
+T44	Reagent 351 365	virus fraction
+T45	Reagent 389 394	FeCl3
+T46	Reagent 414 421	viruses
+T47	Amount 432 435	1ml
+T48	Reagent 439 462	10g/L Fe Stock Solution
+T49	Modifier 466 470	each
+T50	Amount 471 474	20L
+T51	Reagent 478 486	filtrate
+R4	Measure Arg1:T48 Arg2:T47	
+R5	Mod-Link Arg1:T50 Arg2:T49	
+R6	Mod-Link Arg1:T51 Arg2:T49	
+T52	Modifier 494 504	vigorously
+T53	Time 509 517	1 minute
+T54	Modifier 655 665	vigorously
+T55	Time 670 678	1 minute
+R7	Mod-Link Arg1:E9 Arg2:T52	
+R8	Setting Arg1:E9 Arg2:T53	
+R9	Mod-Link Arg1:E11 Arg2:T54	
+R10	Setting Arg1:E11 Arg2:T55	
+T56	Modifier 526 536	additional
+T57	Amount 537 540	1ml
+T58	Reagent 550 567	Fe stock solution
+T59	Modifier 571 575	each
+T60	Amount 576 579	20L
+T61	Reagent 583 591	filtrate
+R11	Measure Arg1:T58 Arg2:T57	
+R12	Mod-Link Arg1:T58 Arg2:T56	
+R13	Measure Arg1:T61 Arg2:T60	
+R14	Mod-Link Arg1:T61 Arg2:T59	
+T64	Reagent 702 710	filtrate
+T62	Modifier 688 701	FeCl3 treated
+R15	Mod-Link Arg1:T64 Arg2:T62	
+T63	Time 719 725	1 hour
+T65	Temperature 729 745	room temperature
+R16	Setting Arg1:E13 Arg2:T63	
+R17	Setting Arg1:E13 Arg2:T65	
+T66	Modifier 758 771	FeCl3 treated
+T67	Reagent 772 780	filtrate
+T68	Device 803 837	polycarbonate (PC) membrane filter
+T69	Device 864 878	support filter
+T70	Device 897 913	filter apparatus
+T71	Location 919 935	peristaltic pump
+T72	Device 943 957	pressure gauge
+R18	Mod-Link Arg1:T67 Arg2:T66	
+T73	Modifier 993 996	all
+T74	Device 1004 1025	polycarbonate filters
+T75	Amount 1035 1038	20L
+T76	Location 1051 1066	centrifuge tube
+T77	Modifier 1073 1080	careful
+T17	Action 1088 1098	scrape off
+E12	Action:T17 Acts-on:T78 Site:T80
+T78	Reagent 1110 1115	FeCl3
+T79	Location 1123 1127	edge
+T80	Location 1135 1139	tube
+R19	Mod-Link Arg1:E16 Arg2:T73	
+R20	Mod-Link Arg1:E12 Arg2:T77	
+R21	Meronym Arg1:T80 Arg2:T79	
+T81	Device 1220 1240	Supor support filter
+T82	Modifier 1250 1255	fresh
+T83	Reagent 1261 1265	EDTA
+T84	Reagent 1272 1277	MgCl2
+T85	Reagent 1284 1300	Ascorbate Buffer
+T86	pH 1302 1307	pH6.5
+R22	Measure Arg1:T85 Arg2:T86	
+R23	Mod-Link Arg1:T83 Arg2:T82	
+R24	Mod-Link Arg1:T84 Arg2:T82	
+R25	Mod-Link Arg1:T85 Arg2:T82	
+T87	Reagent 1317 1323	buffer
+T88	Amount 1333 1336	1mg
+R26	Setting Arg1:E20 Arg2:T88	
+T89	Location 1447 1451	tube
+T90	Modifier 1452 1462	vigorously
+R27	Mod-Link Arg1:E21 Arg2:T90	
+T91	Location 1470 1475	tubes
+T92	Device 1481 1488	rotator
+T93	Temperature 1503 1506	4°C
+T94	Time 1507 1516	overnight
+R28	Setting Arg1:E22 Arg2:T93	
+R29	Setting Arg1:E22 Arg2:T94	
+T95	Temperature 1534 1537	4°C
+T96	Time 1538 1549	until ready
+T97	Modifier 1564 1571	further
+T98	Reagent 1583 1598	viral fraction.
+T99	Location 1524 1530	stored
+R30	Setting Arg1:E24 Arg2:T95	
+R31	Setting Arg1:E24 Arg2:T96	
+R32	Mod-Link Arg1:E26 Arg2:T97	
+R33	Setting Arg1:E25 Arg2:T96	
+T100	Location 1648 1652	tube
+T101	Action 1657 1664	collect
+E17	Action:T101 Acts-on:T102 Site:T104
+T102	Reagent 1665 1671	liquid
+T103	Modifier 1679 1684	fresh
+T104	Location 1685 1689	tube
+R34	Mod-Link Arg1:T104 Arg2:T103	
+T105	Device 1699 1712	sterile pipet
+T106	Device 1714 1730	applicator stick
+T107	Device 1735 1762	bleached and rinsed forceps
+T108	Location 1771 1775	edge
+T109	Device 1783 1789	filter
+T110	Location 1799 1808	tube edge
+R35	Meronym Arg1:T108 Arg2:T109	
+T111	Speed 1864 1873	low speed
+T112	Time 1899 1910	3-5 minutes
+T113	Modifier 1922 1926	more
+T114	Reagent 1927 1933	buffer
+R36	Setting Arg1:E29 Arg2:T111	
+R37	Setting Arg1:E29 Arg2:T112	
+R38	Mod-Link Arg1:T114 Arg2:T113	
+T115	Modifier 1976 1980	more
+T116	Reagent 1981 1987	buffer
+T117	Modifier 1998 2003	again
+T118	Time 2008 2022	a couple hours
+T119	Reagent 2036 2042	liquid
+R39	Mod-Link Arg1:T116 Arg2:T115	
+R40	Mod-Link Arg1:E32 Arg2:T117	
+R41	Setting Arg1:E32 Arg2:T118	
+T120	Reagent 0 13	Iron Chloride
+T121	Method 14 27	Precipitation
+T122	Reagent 31 38	Viruses
+T123	Reagent 44 52	Seawater
+R42	Meronym Arg1:T122 Arg2:T123	
+T124	Size 66 71	142mm
+R43	Measure Arg1:T34 Arg2:T124	
+T125	Modifier 166 173	maximum
+T126	Measure-Type 174 182	pressure
+T127	Generic-Measure 185 191	15 psi
+R44	Measure Arg1:T37 Arg2:T127	
+T128	Size 229 234	150mm
+R45	Measure Arg1:T40 Arg2:T128	
+T129	Size 296 309	0.22um, 142mm
+T130	Amount 367 373	0.22μm
+T131	Reagent 374 382	filtrate
+R46	Measure Arg1:T131 Arg2:T130	
+T132	Concentration 544 549	10g/L
+R47	Measure Arg1:T58 Arg2:T132	
+T133	Amount 608 611	2ml
+T134	Reagent 612 629	Fe Stock Solution
+T135	Amount 634 637	20L
+T136	Reagent 638 646	filtrate
+R48	Measure Arg1:T134 Arg2:T133	
+R49	Measure Arg1:T136 Arg2:T135	
+T137	Modifier 959 966	maximum
+T138	Measure-Type 967 975	pressure
+T139	Generic-Measure 978 984	15 psi
+R50	Measure Arg1:T72 Arg2:T139	
+T140	Size 789 801	1.0μm, 142mm
+R51	Measure Arg1:T68 Arg2:T140	
+T141	Size 850 862	0.8μm, 142mm
+R52	Measure Arg1:T69 Arg2:T141	
+T142	Amount 1046 1050	50ml
+R53	Measure Arg1:T76 Arg2:T142	
+T143	Reagent 1148 1159	precipitate
+T144	Action 1179 1189	dissolving
+E34	Action:T144 Acts-on:T145
+T145	Reagent 1194 1205	precipitate
+T146	Concentration 1256 1260	0.1M
+T147	Concentration 1267 1271	0.2M
+T148	Concentration 1279 1283	0.2M
+R54	Measure Arg1:T83 Arg2:T146	
+R55	Measure Arg1:T84 Arg2:T147	
+R56	Measure Arg1:T85 Arg2:T148	
+T149	Amount 1313 1316	1ml
+R57	Measure Arg1:T87 Arg2:T149	
+T150	Reagent 1337 1339	Fe
+R58	Measure Arg1:T150 Arg2:T88	
+T151	Amount 1350 1354	20ml
+T152	Concentration 1358 1360	1x
+T153	Reagent 1361 1367	buffer
+R59	Measure Arg1:T153 Arg2:T151	
+R60	Measure Arg1:T153 Arg2:T152	
+T154	Amount 1376 1379	20L
+T155	Reagent 1380 1400	seawater precipitate
+R61	Measure Arg1:T155 Arg2:T154	
+T156	Amount 1402 1406	10ml
+T157	Concentration 1412 1414	2X
+T158	Modifier 1415 1427	concentrated
+T159	Reagent 1428 1434	buffer
+R62	Mod-Link Arg1:T159 Arg2:T158	
+R63	Measure Arg1:T159 Arg2:T157	
+T160	Action 1602 1609	collect
+E35	Action:T160 Acts-on:T162
+T161	Modifier 1614 1625	resuspended
+T162	Reagent 1626 1637	precipitate
+R64	Mod-Link Arg1:T162 Arg2:T161	
+T163	Seal 1832 1835	lid
+T164	Modifier 1875 1884	less than
+T165	Speed 1885 1893	1000 rpm
+R65	Mod-Link Arg1:T165 Arg2:T164	
+R66	Coreference-Link Arg1:T111 Arg2:T165	
+T166	Device 1942 1948	filter
+T167	Reagent 1953 1964	precipitate
+R67	Meronym Arg1:T167 Arg2:T166	

@@ -1,0 +1,54 @@
+T1	Action 96 103	Aliquot
+E1	Action:T1 Acts-on:T10 Site:T11
+T2	Action 173 204	Keep a log of your plate layout
+E2	Action:T2 
+T3	Action 250 253	Add
+E3	Action:T3 Acts-on:T14 Site:T15
+T4	Action 303 306	Mix
+E4	Action:T4 Using:T17
+T5	Action 328 332	Read
+E5	Action:T5 Measure-Type-Link:T19 Using:T20
+T6	Action 394 400	Set up
+E6	Action:T6 Acts-on:T21
+T7	Action 553 557	Plot
+E7	Action:T7 Measure-Type-Link:T27
+T8	Action 583 588	track
+E8	Action:T8 Measure-Type-Link:T25
+T9	Amount 104 110	180 µl
+T10	Reagent 111 126	seawater medium
+T11	Location 143 152	each well
+T12	Location 158 171	96-well plate
+R1	Measure Arg1:T10 Arg2:T9	
+R2	Meronym Arg1:T11 Arg2:T12	
+T13	Amount 254 259	20 µl
+T14	Reagent 263 269	sample
+T15	Reagent 279 282	ASW
+T16	Concentration 289 292	10X
+T17	Device 319 326	pipette
+T18	Modifier 307 311	well
+T19	Measure-Type 333 345	fluorescence
+T20	Device 356 392	Tecan Infinite Pro 200M plate reader
+R3	Measure Arg1:T14 Arg2:T13	
+R4	Measure Arg1:T14 Arg2:T16	
+R5	Mod-Link Arg1:E4 Arg2:T18	
+T21	Device 403 410	program
+T25	Measure-Type 618 629	cell growth
+T26	Measure-Type 637 652	phage infection
+R6	Or Arg1:T25 Arg2:T26	
+T27	Measure-Type 558 579	fluorescence vs. time
+T22	Action 0 10	Monitoring
+E9	Action:T22 Measure-Type-Link:T23
+T23	Measure-Type 11 23	fluorescence
+T24	Reagent 31 62	cyanobacterial physiology/lysis
+T28	Method 83 94	Preparation
+T29	Location 237 242	Plate
+T30	Action 243 248	Setup
+E10	Action:T30 Acts-on:T29
+T31	Measure-Type 431 442	wavelengths
+T32	Generic-Measure 455 461	440 nm
+T33	Generic-Measure 472 478	680 nm
+T34	Reagent 483 496	chlorophyll a
+T35	Generic-Measure 510 516	544 nm
+T36	Generic-Measure 527 533	577 nm
+T37	Reagent 538 551	phycoerythrin
+T38	Reagent 133 136	ASW

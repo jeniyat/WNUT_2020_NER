@@ -1,0 +1,103 @@
+T1	Action 75 80	grown
+E1	Action:T1 Acts-on:T12 Acts-on2:T14
+T2	Action 155 161	Adjust
+E2	Action:T2 Measure-Type-Link:T50
+T3	Action 259 267	filtered
+E3	Action:T3 Acts-on:T17
+T4	Action 380 388	Transfer
+E4	Action:T4 Acts-on:T22 Site:T26
+T5	Action 451 454	Add
+E5	Action:T5 Acts-on:T28
+T6	Action 545 551	adding
+E6	Action:T6 Acts-on:T32 Site:T64
+T7	Action 676 684	Incubate
+E7	Action:T7 Acts-on:T33 Site:T34
+T8	Action 855 863	replaced
+E8	Action:T8 Acts-on:T39 Acts-on2:T41
+T9	Action 809 820	established
+E9	Action:T9 Acts-on:T38
+T10	Action 931 937	verify
+E10	Action:T10 Acts-on:T44
+T11	Action 516 521	Start
+E11	Action:T11 Acts-on:T30
+T12	Reagent 50 70	Potential host cells
+T13	Time 81 90	overnight
+T14	Reagent 94 109	liquid cultures
+R1	Setting Arg1:E1 Arg2:T13	
+T15	Reagent 123 141	rich growth medium
+R2	Meronym Arg1:T15 Arg2:T14	
+T16	Generic-Measure 196 202	525 nm
+R3	Setting Arg1:E2 Arg2:T16	
+T17	Reagent 243 255	water sample
+T18	Amount 237 242	25 mL
+R4	Measure Arg1:T17 Arg2:T18	
+T19	Action 307 315	minimize
+E12	Action:T19 Acts-on:T20 Site:T21
+T20	Reagent 328 337	bacterial
+T21	Reagent 359 378	enrichment cultures
+T22	Reagent 398 405	samples
+T24	Modifier 420 427	sterile
+T25	Amount 428 434	100 mL
+T26	Location 435 449	culture flasks
+T27	Amount 455 459	3 mL
+T28	Reagent 464 477	growth medium
+T29	Concentration 460 463	10×
+R5	Measure Arg1:T28 Arg2:T29	
+R6	Measure Arg1:T28 Arg2:T27	
+T30	Reagent 522 541	enrichment cultures
+T31	Amount 552 556	1 mL
+T32	Reagent 579 591	host strains
+R7	Measure Arg1:T32 Arg2:T31	
+T33	Reagent 689 697	cultures
+T34	Device 703 716	shaking table
+T35	Temperature 722 733	temperature
+T36	Time 738 744	period
+T37	Modifier 753 764	appropriate
+R8	Mod-Link Arg1:T36 Arg2:T37	
+R9	Mod-Link Arg1:T35 Arg2:T37	
+R10	Setting Arg1:E7 Arg2:T35	
+R11	Setting Arg1:E7 Arg2:T36	
+T38	Reagent 798 805	culture
+T39	Reagent 831 851	environmental sample
+T40	Amount 867 872	25 mL
+T41	Reagent 873 892	artificial seawater
+T42	Amount 897 904	0.02 µm
+T43	Reagent 905 926	filtered water sample
+T44	Reagent 938 954	bacterial growth
+R13	Measure Arg1:T41 Arg2:T40	
+R14	Or Arg1:T41 Arg2:T43	
+R15	Measure Arg1:T43 Arg2:T42	
+T46	Reagent 0 13	Bacteriophage
+T47	Method 14 23	isolation
+T48	Reagent 30 49	enrichment cultures
+T49	Reagent 149 152	MLB
+R16	Coreference-Link Arg1:T49 Arg2:T15	
+T50	Measure-Type 168 183	optical density
+R17	Of-Type Arg1:T16 Arg2:T50	
+T51	Generic-Measure 204 209	OD525
+T52	Generic-Measure 214 221	0.3–0.5
+T53	Modifier 223 236	Approximately
+R18	Mod-Link Arg1:T18 Arg2:T53	
+T54	Size 269 275	0.2 µm
+T55	Size 279 286	0.45 µm
+T56	Device 287 302	syringe filters
+R19	Measure Arg1:T56 Arg2:T55	
+R20	Measure Arg1:T56 Arg2:T54	
+R21	Or Arg1:T55 Arg2:T54	
+T57	Method 338 351	contamination
+T58	Modifier 389 397	filtered
+R22	Mod-Link Arg1:T22 Arg2:T58	
+R23	Measure Arg1:T26 Arg2:T25	
+R24	Mod-Link Arg1:T26 Arg2:T24	
+T23	Numerical 485 487	10
+T59	Modifier 494 506	concentrated
+T60	Reagent 507 513	medium
+R25	Mod-Link Arg1:T60 Arg2:T59	
+R26	Measure Arg1:T60 Arg2:T23	
+T61	Numerical 611 614	1–6
+T62	Reagent 625 632	strains
+T63	Method 642 652	incubation
+T64	Location 661 674	culture flask
+R27	Measure Arg1:T62 Arg2:T61	
+T65	Reagent 773 786	host bacteria
+T45	Reagent 969 975	phages

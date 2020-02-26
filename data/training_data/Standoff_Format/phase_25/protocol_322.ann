@@ -1,0 +1,140 @@
+T1	Action 72 78	Set up
+E1	Action:T1 Acts-on:T23 Using:T24
+T2	Action 162 168	set up
+E2	Action:T2 Acts-on:T27
+T3	Action 236 239	mix
+E3	Action:T3 Acts-on:T29
+T4	Action 254 261	Collect
+E4	Action:T4 Acts-on:T34 Site:T35
+T5	Action 310 314	spin
+E5	Action:T5 
+T6	Action 329 337	Transfer
+E6	Action:T6 Acts-on:T38 Site:T39
+T7	Action 375 388	thermocycling
+E7	Action:T7 Acts-on:T38
+T8	Action 390 397	Analyze
+E8	Action:T8 Acts-on:T42
+T9	Action 485 491	Purify
+E9	Action:T9 Acts-on:T45 Using:T47
+T10	Action 586 591	Elute
+E10	Action:T10 Acts-on:T48 Site:T50
+T11	Action 642 649	Measure
+E11	Action:T11 Acts-on:T54 Measure-Type-Link:T85
+T12	Action 698 706	Assemble
+E12	Action:T12 Acts-on:T53
+T13	Action 729 735	Anneal
+E13	Action:T13 Acts-on:T56 Site:T57
+T14	Action 805 808	Add
+E14	Action:T14 Acts-on:T59 Site:T61
+T15	Action 870 878	Incubate
+E15	Action:T15 
+T16	Action 904 908	Stop
+E16	Action:T16 Acts-on:T64
+T17	Action 955 961	Purify
+E17	Action:T17 Acts-on:T69 Using:T71
+T18	Action 1050 1055	Elute
+E18	Action:T18 Acts-on:T72 Site:T74
+T19	Action 1111 1118	Analyze
+E19	Action:T19 Acts-on:T78
+T20	Action 1151 1160	determine
+E20	Action:T20 Acts-on:T79 Measure-Type-Link:T86
+T21	Action 1233 1242	Calculate
+E21	Action:T21 Using:T80 Measure-Type-Link:T87
+T22	Amount 81 86	50 µl
+T23	Reagent 87 99	PCR reaction
+T24	Reagent 117 128	genomic DNA
+T25	Amount 107 113	100 ng
+T26	Numerical 169 170	3
+T27	Reagent 171 184	PCR reactions
+T29	Reagent 244 252	reaction
+T30	Modifier 229 235	Gently
+T31	Reagent 186 194	positive
+T32	Reagent 196 204	negative
+T33	Reagent 206 225	no-template control
+T34	Reagent 266 272	liquid
+T35	Location 280 286	bottom
+T36	Location 294 298	tube
+T37	Modifier 304 309	quick
+T39	Device 353 364	PCR machine
+T38	Location 342 347	tubes
+T40	Reagent 338 341	PCR
+T41	Amount 400 412	small amount
+T42	Reagent 427 438	PCR product
+T43	Action 442 448	verify
+E22	Action:T43 Measure-Type-Link:T28
+T45	Reagent 496 508	PCR reaction
+T46	Amount 515 520	90 µl
+T47	Reagent 524 539	Ampure XP beads
+T48	Reagent 592 604	PCR products
+T49	Amount 608 613	30 µl
+T50	Reagent 617 622	water
+T52	Action 624 634	recovering
+E24	Action:T52 
+T54	Reagent 684 696	PCR products
+T55	Modifier 675 683	purified
+T53	Reagent 707 716	reactions
+T56	Reagent 740 752	PCR products
+T57	Device 758 770	thermocycler
+T58	Amount 809 813	1 µl
+T59	Reagent 821 838	T7 Endonuclease I
+T60	Modifier 846 854	annealed
+T61	Reagent 855 867	PCR products
+T62	Temperature 882 886	37°C
+T63	Time 891 901	15 minutes
+T64	Reagent 913 921	reaction
+T65	Action 925 931	adding
+E25	Action:T65 Acts-on:T68
+T66	Amount 932 938	1.5 µl
+T67	Concentration 942 948	0.25 M
+T68	Reagent 949 953	EDTA
+T69	Reagent 966 974	reaction
+T70	Amount 981 986	36 µl
+T71	Reagent 990 1005	Ampure XP beads
+T72	Reagent 1060 1073	DNA fragments
+T73	Amount 1077 1082	20 µl
+T74	Reagent 1086 1091	water
+T75	Action 1093 1103	recovering
+E26	Action:T75 Acts-on:T76
+T76	Mention 1104 1109	15 µl
+T77	Modifier 1123 1133	fragmented
+T78	Reagent 1134 1146	PCR products
+T79	Reagent 1176 1211	nuclease-specific cleavage products
+R1	Measure Arg1:T23 Arg2:T22	
+R2	Measure Arg1:T24 Arg2:T25	
+R3	Measure Arg1:T27 Arg2:T26	
+R4	Meronym Arg1:T27 Arg2:T31	
+R5	Meronym Arg1:T27 Arg2:T32	
+R6	Meronym Arg1:T27 Arg2:T33	
+R7	Mod-Link Arg1:E3 Arg2:T30	
+R9	Meronym Arg1:T35 Arg2:T36	
+R10	Mod-Link Arg1:E5 Arg2:T37	
+R11	Meronym Arg1:T40 Arg2:T38	
+R12	Measure Arg1:T42 Arg2:T41	
+R13	Measure Arg1:T47 Arg2:T46	
+R14	Measure Arg1:T50 Arg2:T49	
+R16	Mod-Link Arg1:T54 Arg2:T55	
+R17	Measure Arg1:T59 Arg2:T58	
+R18	Mod-Link Arg1:T61 Arg2:T60	
+R19	Setting Arg1:E15 Arg2:T62	
+R20	Setting Arg1:E15 Arg2:T63	
+R21	Measure Arg1:T68 Arg2:T67	
+R22	Measure Arg1:T68 Arg2:T66	
+R23	Measure Arg1:T71 Arg2:T70	
+R24	Measure Arg1:T74 Arg2:T73	
+R25	Coreference-Link Arg1:T76 Arg2:T72	
+R26	Mod-Link Arg1:T78 Arg2:T77	
+T80	Method 1295 1302	formula
+T51	Amount 635 640	25 µl
+R15	Setting Arg1:E24 Arg2:T51	
+T81	Action 0 11	Determining
+E27	Action:T81 Measure-Type-Link:T82 Using:T83
+T82	Measure-Type 12 39	Genome Targeting Efficiency
+T83	Reagent 46 63	T7 Endonuclease I
+T84	Modifier 106 107	~
+R27	Mod-Link Arg1:T25 Arg2:T84	
+T28	Measure-Type 449 453	size
+T44	Method 470 483	amplification
+T85	Measure-Type 654 667	concentration
+T86	Measure-Type 1165 1172	percent
+T87	Measure-Type 1257 1274	gene modification
+T88	Measure-Type 1304 1323	% gene modification

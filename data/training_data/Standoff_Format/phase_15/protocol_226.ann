@@ -1,0 +1,122 @@
+T1	Action 69 76	Combine
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Site:T4
+T2	Reagent 77 92	affinity matrix
+T3	Reagent 97 106	IP Buffer
+T4	Location 112 126	microfuge tube
+T5	Concentration 132 144	1:5 dilution
+R1	Setting Arg1:E1 Arg2:T5	
+T6	Action 146 149	Add
+E2	Action:T6 Acts-on:T7 Site:T8
+T7	Reagent 150 164	tagged protein
+T8	Reagent 168 175	mixture
+T9	Action 177 188	Gently rock
+E3	Action:T9 Acts-on:T10
+T10	Reagent 189 197	aliquots
+T11	Time 202 210	one hour
+T12	Temperature 214 217	4°C
+T13	Action 219 229	Centrifuge
+E4	Action:T13 Acts-on:T14
+T14	Reagent 230 237	mixture
+T15	Speed 241 248	10,000g
+T16	Time 253 263	20 seconds
+T17	Temperature 267 270	4°C
+R2	Setting Arg1:E3 Arg2:T11	
+R3	Setting Arg1:E3 Arg2:T12	
+R4	Setting Arg1:E4 Arg2:T15	
+R5	Setting Arg1:E4 Arg2:T16	
+R6	Setting Arg1:E4 Arg2:T17	
+T18	Action 272 278	Remove
+E5	Action:T18 Acts-on:T19
+T19	Reagent 279 290	supernatant
+T21	Action 317 320	Add
+E6	Action:T21 Acts-on:T23 Site:T24 Measure-Type-Link:T22
+T23	Reagent 339 353	IP Wash Buffer
+T24	Reagent 361 366	beads
+T25	Action 371 381	re-suspend
+E7	Action:T25 Acts-on:T26
+T26	Reagent 382 388	matrix
+T27	Action 397 401	rock
+E8	Action:T27 Acts-on:T28
+T28	Reagent 402 410	aliquots
+T29	Time 415 421	20 min
+R9	Setting Arg1:E8 Arg2:T29	
+T30	Temperature 426 429	4°C
+T31	Action 430 434	Keep
+E9	Action:T31 Acts-on:T33
+T32	Amount 437 444	portion
+T33	Reagent 452 463	supernatant
+R11	Measure Arg1:T33 Arg2:T32	
+T34	Action 518 524	Repeat
+E10	Action:T34 Count:T35
+T35	Numerical 532 542	four times
+T36	Action 544 549	Elute
+E11	Action:T36 Acts-on:T37 Using:T38
+T37	Reagent 554 567	bound protein
+T38	Reagent 577 604	appropriate epitope peptide
+T39	Concentration 608 615	1 mg/ml
+T40	Concentration 633 638	50 mm
+T41	Reagent 639 647	Tris HCl
+T42	pH 648 654	pH 7.5
+T43	Concentration 657 662	50 mM
+T44	Reagent 663 667	NaCl
+T45	Concentration 669 673	1 mM
+T46	Reagent 674 678	EDTA
+T47	pH 680 686	pH 8.0
+R12	Measure Arg1:T41 Arg2:T40	
+R13	Measure Arg1:T41 Arg2:T42	
+R14	Measure Arg1:T44 Arg2:T43	
+R15	Measure Arg1:T46 Arg2:T45	
+R16	Measure Arg1:T46 Arg2:T47	
+R17	Measure Arg1:T38 Arg2:T39	
+R18	Meronym Arg1:T44 Arg2:T38	
+R19	Meronym Arg1:T46 Arg2:T38	
+R20	Meronym Arg1:T41 Arg2:T38	
+T48	Action 689 698	Resuspend
+E12	Action:T48 Acts-on:T49
+T49	Reagent 699 704	beads
+T50	Action 706 714	incubate
+E13	Action:T50 Acts-on:T53
+T51	Action 716 726	centrifuge
+E14	Action:T51 Acts-on:T53
+T52	Action 731 739	withdraw
+E15	Action:T52 Acts-on:T53
+T53	Reagent 739 750	supernatant
+T54	Modifier 751 763	as in step 2
+T55	Action 765 774	repeating
+E16	Action:T55 Count:T56
+T56	Numerical 790 794	four
+R21	Mod-Link Arg1:E15 Arg2:T54	
+R22	Mod-Link Arg1:E14 Arg2:T54	
+R23	Mod-Link Arg1:E13 Arg2:T54	
+R24	Mod-Link Arg1:E12 Arg2:T54	
+T57	Action 805 812	Recover
+E17	Action:T57 Acts-on:T58
+T58	Reagent 828 834	eluate
+T60	Action 886 893	prepare
+E18	Action:T60 Using:T62 Product:T63
+T61	Concentration 897 909	1:1 dilution
+T62	Reagent 915 942	reducing gel loading buffer
+R26	Setting Arg1:E18 Arg2:T61	
+T63	Reagent 870 884	elution sample
+T64	Action 944 948	Boil
+E19	Action:T64 Acts-on:T65
+T65	Reagent 949 954	tubes
+T66	Time 959 964	3 min
+R27	Setting Arg1:E19 Arg2:T66	
+T67	Action 966 973	Analyze
+E20	Action:T67 Acts-on:T68 Using:T69
+T68	Reagent 978 997	supernatant samples
+T69	Method 1001 1013	Western blot
+T70	Method 0 18	Immunopurification
+T71	Reagent 39 68	Epitope Tag Affinity Matrices
+T20	Action 299 309	disturbing
+E21	Action:T20 
+T72	Reagent 310 315	beads
+T22	Measure-Type 329 335	volume
+T73	Modifier 390 396	Gently
+R7	Mod-Link Arg1:E8 Arg2:T73	
+T74	Action 474 479	rinse
+E22	Action:T74 
+T75	Method 495 516	Western blot analysis
+T76	Measure-Type 616 629	concentration
+T77	Method 795 803	elutions

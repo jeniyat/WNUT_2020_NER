@@ -1,0 +1,354 @@
+T1	Action 89 94	Label
+E1	Action:T1 Acts-on:T52 Using:T53
+T2	Action 151 158	Aliquot
+E2	Action:T2 Acts-on:T55 Site:T56
+T3	Action 194 200	Dilute
+E3	Action:T3 Acts-on:T59 Site:T60
+T4	Action 246 252	vortex
+E4	Action:T4 
+T6	Action 348 354	vortex
+E6	Action:T6 
+T7	Action 363 369	Repeat
+E7	Action:T7 Using:T5
+T8	Action 396 404	Transfer
+E8	Action:T8 Acts-on:T70 Site:T73
+T9	Action 506 509	add
+E9	Action:T9 Acts-on:T76
+T10	Action 573 579	vortex
+E10	Action:T10 
+T11	Action 588 595	Aliquot
+E11	Action:T11 Site:T81
+T12	Action 631 635	snap
+E12	Action:T12 Acts-on:T80 Site:T83
+T13	Action 662 670	Incubate
+E13	Action:T13 Site:T86
+T14	Action 706 718	Flash freeze
+E14	Action:T14 Acts-on:T87
+T15	Action 742 747	store
+E15	Action:T15 
+T17	Action 786 790	Pour
+E17	Action:T17 Acts-on:T90 Site:T92
+T19	Action 879 882	add
+E19	Action:T19 Acts-on:T95 Site:T97 Using:T93
+T20	Action 948 955	Discard
+E20	Action:T20 Acts-on:T18
+T21	Action 974 978	fill
+E21	Action:T21 Site:T98 Acts-on:T99
+T22	Action 1015 1018	Add
+E22	Action:T22 Acts-on:T101 Site:T146
+T23	Action 1080 1087	Discard
+E23	Action:T23 Acts-on:T107
+T24	Action 1107 1111	Pour
+E24	Action:T24 Acts-on:T108
+T25	Action 1170 1173	Use
+E25	Action:T25 Acts-on:T112
+T26	Action 1200 1203	add
+E26	Action:T26 Using:T112 Acts-on:T114 Site:T116
+T27	Action 1287 1294	Discard
+E27	Action:T27 Acts-on:T121
+T28	Action 1336 1340	pour
+E28	Action:T28 Acts-on:T122 Site:T124
+T29	Action 1395 1398	Use
+E29	Action:T29 Acts-on:T126
+T30	Action 1424 1427	add
+E30	Action:T30 Using:T126 Acts-on:T129 Site:T131
+T31	Action 1500 1506	Repeat
+E31	Action:T31 
+T32	Action 1690 1697	measure
+E32	Action:T32 Measure-Type-Link:T138 Acts-on:T139 Using:T137
+T33	Action 1762 1770	incubate
+E33	Action:T33 Using:T140
+T34	Action 1896 1903	Turn on
+E34	Action:T34 Acts-on:T145
+T51	Amount 107 111	5 mL
+T52	Location 112 130	round bottom tubes
+T53	Method 136 149	10-1 to 10-10
+R1	Measure Arg1:T52 Arg2:T51	
+T54	Amount 159 165	1.8 mL
+T55	Reagent 166 179	culture media
+T56	Location 188 192	tube
+R2	Measure Arg1:T55 Arg2:T54	
+T57	Modifier 183 187	each
+R3	Mod-Link Arg1:T56 Arg2:T57	
+T58	Amount 201 207	200 µL
+T59	Reagent 208 220	virus sample
+T60	Location 230 241	“10-1” tube
+T61	Action 256 259	mix
+E51	Action:T61 
+R4	Measure Arg1:T59 Arg2:T58	
+T62	Modifier 267 272	clean
+T63	Location 273 284	pipette tip
+T64	Action 288 296	transfer
+E52	Action:T64 Acts-on:T66 Site:T67 Using:T63
+T65	Amount 297 303	200 µL
+T66	Location 313 324	“10-1” tube
+T67	Location 332 343	“10-2” tube
+T68	Action 358 361	mix
+E53	Action:T68 
+R5	Mod-Link Arg1:T63 Arg2:T62	
+R6	Measure Arg1:T66 Arg2:T65	
+T5	Method 370 385	serial dilution
+T69	Amount 405 411	500 µL
+T70	Reagent 412 424	virus sample
+T71	Modifier 430 437	sterile
+T72	Amount 438 444	1.2 mL
+T73	Reagent 445 453	cryovial
+R7	Measure Arg1:T73 Arg2:T72	
+R8	Mod-Link Arg1:T72 Arg2:T71	
+R9	Measure Arg1:T70 Arg2:T69	
+T74	Amount 510 514	5 µL
+T75	Concentration 515 518	25%
+T76	Reagent 519 533	glutaraldehyde
+T77	Modifier 566 572	gently
+T78	Action 583 586	mix
+E5	Action:T78 
+R10	Mod-Link Arg1:E10 Arg2:T77	
+R11	Measure Arg1:T76 Arg2:T75	
+R12	Measure Arg1:T76 Arg2:T74	
+T79	Amount 596 602	250 µL
+T80	Location 636 645	cryovials
+T81	Location 618 626	cryovial
+T82	Modifier 608 617	duplicate
+T83	Location 651 660	cryocanes
+R13	Mod-Link Arg1:T81 Arg2:T82	
+R14	Setting Arg1:E11 Arg2:T79	
+T84	Temperature 674 677	4°C
+T85	Time 682 692	30 minutes
+T86	Location 700 704	dark
+R15	Setting Arg1:E13 Arg2:T84	
+R16	Setting Arg1:E13 Arg2:T85	
+T87	Reagent 722 737	liquid nitrogen
+T88	Temperature 751 756	-80°C
+R17	Setting Arg1:E15 Arg2:T88	
+T89	Modifier 791 800	remaining
+T90	Reagent 801 815	culture medium
+T91	Modifier 823 830	sterile
+T92	Location 831 847	sample reservoir
+R18	Mod-Link Arg1:T92 Arg2:T91	
+R19	Mod-Link Arg1:T90 Arg2:T89	
+T93	Location 855 875	multichannel pipette
+T94	Amount 883 888	50 µL
+T95	Reagent 889 895	medium
+T96	Modifier 899 902	all
+T97	Location 903 908	wells
+R20	Mod-Link Arg1:T97 Arg2:T96	
+R21	Measure Arg1:T95 Arg2:T94	
+T18	Reagent 956 969	unused medium
+T98	Location 979 995	sample reservoir
+T99	Reagent 1001 1013	host culture
+T100	Amount 1019 1025	150 µL
+T101	Reagent 1026 1036	host cells
+T102	Modifier 1040 1043	all
+T103	Location 1044 1049	wells
+T104	Modifier 1068 1071	all
+T105	Location 1072 1078	plates
+T106	Modifier 1088 1097	remaining
+T107	Reagent 1098 1105	culture
+T108	Reagent 1112 1134	“10-10” viral dilution
+T110	Modifier 1140 1151	new sterile
+T111	Location 1152 1168	sample reservoir
+T112	Location 1176 1196	multichannel pipette
+T113	Amount 1204 1209	50 µL
+T114	Reagent 1210 1236	10-10-diluted virus sample
+T115	Modifier 1240 1243	all
+T116	Location 1244 1249	wells
+T117	Modifier 1265 1268	all
+T118	Location 1269 1285	replicate plates
+T119	Modifier 1295 1304	remaining
+T120	Modifier 1305 1318	10-10-diluted
+T121	Reagent 1319 1331	virus sample
+T122	Reagent 1341 1362	“10-9” viral dilution
+T123	Modifier 1372 1376	same
+T124	Location 1377 1393	sample reservoir
+T125	Modifier 1403 1407	same
+T126	Location 1408 1420	pipette tips
+T127	Amount 1428 1433	50 µL
+T128	Modifier 1434 1446	10-9-diluted
+T129	Reagent 1447 1459	virus sample
+T130	Modifier 1463 1466	all
+T131	Location 1467 1472	wells
+T132	Modifier 1488 1491	all
+T133	Location 1492 1498	plates
+T134	Action 1507 1516	additions
+E18	Action:T134 Acts-on:T136
+T135	Modifier 1520 1527	diluted
+T136	Reagent 1528 1541	virus samples
+R22	Mod-Link Arg1:T136 Arg2:T135	
+T137	Device 1724 1736	plate reader
+T138	Measure-Type 1698 1713	optical density
+T139	Location 1718 1720	T0
+T140	Method 1805 1831	standard growth conditions
+T141	Time 1837 1844	2 weeks
+T142	Action 1846 1855	measuring
+E54	Action:T142 Measure-Type-Link:T143
+T143	Measure-Type 1856 1862	growth
+T144	Time 1869 1877	few days
+R23	Setting Arg1:E54 Arg2:T144	
+R24	Setting Arg1:E33 Arg2:T141	
+T145	Device 1908 1955	Molecular Devices SpectraMax 340PC plate reader
+T16	Measure-Type 0 3	MPN
+T35	Action 27 32	assay
+E16	Action:T35 Measure-Type-Link:T16
+T36	Measure-Type 37 48	infectivity
+T37	Reagent 52 65	algal viruses
+T38	Reagent 66 71	Virus
+T39	Method 72 80	Dilution
+T40	Action 261 264	Use
+E35	Action:T40 Acts-on:T63
+T41	Measure-Type 471 481	FCM counts
+T42	Action 458 466	preserve
+E36	Action:T42 Acts-on:T73
+T43	Concentration 535 540	0.25%
+T44	Location 491 504	chemical hood
+T45	Modifier 541 546	final
+R25	Measure Arg1:T76 Arg2:T43	
+T46	Measure-Type 547 560	concentration
+T47	Method 763 771	analysis
+T48	Action 849 852	Use
+E37	Action:T48 Acts-on:T93
+T49	Location 912 920	Column 9
+R26	Meronym Arg1:T97 Arg2:T49	
+T50	Location 940 946	plates
+T146	Location 1053 1064	Columns 1-9
+T147	Measure-Type 5 25	Most Probable Number
+R27	Measure Arg1:T101 Arg2:T100	
+R28	Mod-Link Arg1:T103 Arg2:T102	
+R29	Meronym Arg1:T103 Arg2:T146	
+R30	Mod-Link Arg1:T105 Arg2:T104	
+R31	Mod-Link Arg1:T107 Arg2:T106	
+R32	Mod-Link Arg1:T111 Arg2:T110	
+R33	Measure Arg1:T114 Arg2:T113	
+R34	Mod-Link Arg1:T116 Arg2:T115	
+T109	Location 1253 1261	Column 8
+R35	Mod-Link Arg1:T118 Arg2:T117	
+R36	Mod-Link Arg1:T121 Arg2:T120	
+R37	Mod-Link Arg1:T121 Arg2:T119	
+R38	Mod-Link Arg1:T124 Arg2:T123	
+R39	Mod-Link Arg1:T126 Arg2:T125	
+R40	Measure Arg1:T129 Arg2:T127	
+R41	Mod-Link Arg1:T129 Arg2:T128	
+R42	Mod-Link Arg1:T131 Arg2:T130	
+T148	Location 1476 1484	Column 7
+R43	Meronym Arg1:T116 Arg2:T109	
+R44	Meronym Arg1:T131 Arg2:T148	
+R45	Mod-Link Arg1:T133 Arg2:T132	
+T149	Location 1618 1629	microplates
+T150	Modifier 1638 1656	final 10-3-diluted
+T151	Reagent 1657 1669	virus sample
+R46	Mod-Link Arg1:T151 Arg2:T150	
+T152	Location 1682 1688	plates
+T153	Action 1673 1678	added
+E38	Action:T153 Acts-on:T151 Site:T152
+T154	Modifier 1836 1837	~
+R47	Mod-Link Arg1:T141 Arg2:T154	
+T155	Action 1957 1965	Log into
+E39	Action:T155 Acts-on:T156
+T156	Device 1979 1987	computer
+T157	Action 1992 1996	open
+E40	Action:T157 Using:T158
+T158	Method 2001 2023	SoftMax Pro 6 software
+T159	Action 2025 2029	Open
+E41	Action:T159 
+T160	Action 2033 2039	create
+E42	Action:T160 Using:T162
+T161	Modifier 2042 2045	new
+T162	Method 2046 2083	“Basic Endpoint” protocol file (.spr)
+T163	Action 2085 2091	Rename
+E43	Action:T163 Acts-on:T164
+T164	Reagent 2096 2106	experiment
+T165	Modifier 2107 2120	appropriately
+T166	Action 2125 2134	configure
+E44	Action:T166 Acts-on:T167
+T167	Location 2137 2142	plate
+T168	Measure-Type 2182 2201	Endpoint Wavelength
+T169	Generic-Measure 2203 2209	750 nm
+T170	Measure-Type 2210 2220	Plate Type
+T171	Location 2222 2251	96-well standard clear bottom
+T172	Method 2279 2290	Calibration
+T173	Action 2294 2299	Shake
+E45	Action:T173 Count:T229
+T174	Time 2310 2315	3 sec
+T175	Location 2332 2338	Column
+T176	Action 2349 2352	Add
+E46	Action:T176 Acts-on:T177
+T177	Location 2358 2364	plates
+T178	Location 2401 2416	replicate plate
+T179	Action 2425 2430	assay
+E47	Action:T179 Acts-on:T178
+T180	Location 2464 2470	plates
+T181	Modifier 2460 2463	new
+R48	Mod-Link Arg1:T180 Arg2:T181	
+T182	Device 2507 2517	SpectraMax
+T183	Action 2639 2645	Select
+E48	Action:T183 Acts-on:T184
+T184	Location 2650 2655	plate
+T185	Action 2549 2557	click on
+E49	Action:T185 Acts-on:T187
+T186	Action 2614 2620	select
+E50	Action:T186 Acts-on:T188
+T187	Device 2562 2577	instrument icon
+T188	Mention 2621 2623	it
+R49	Coreference-Link Arg1:T188 Arg2:T187	
+T189	Method 2674 2682	software
+T190	Location 2712 2717	plate
+T191	Action 2688 2693	place
+E55	Action:T191 Acts-on:T190 Site:T192
+T192	Location 2725 2744	plate reader drawer
+T193	Location 2751 2759	Column 1
+T194	Device 2775 2785	instrument
+T195	Action 2788 2794	Remove
+E56	Action:T195 Acts-on:T196
+T196	Seal 2799 2808	plate lid
+T197	Action 2830 2834	read
+E57	Action:T197 Acts-on:T198
+T198	Location 2839 2844	plate
+T199	Action 2846 2850	Read
+E58	Action:T199 Acts-on:T200
+T200	Location 2856 2861	plate
+T201	Action 2951 2957	Create
+E59	Action:T201 
+T202	Method 2995 3010	master protocol
+T203	Time 3020 3030	time point
+T204	Modifier 3032 3040	Visually
+T205	Action 3041 3048	inspect
+E60	Action:T205 Acts-on:T206
+T206	Location 3049 3055	plates
+T207	Action 3060 3066	record
+E61	Action:T207 
+T208	Measure-Type 3086 3101	Dilution Factor
+T209	Measure-Type 3110 3124	dilution ratio
+T210	Action 3134 3145	inoculating
+E62	Action:T210 Acts-on:T211
+T211	Location 3150 3155	wells
+T212	Location 3164 3170	column
+T213	Measure-Type 3177 3183	Volume
+T214	Measure-Type 3192 3198	volume
+T215	Reagent 3206 3214	dilution
+T216	Action 3215 3220	added
+E63	Action:T216 Acts-on:T215 Site:T217
+T217	Location 3229 3233	well
+T218	Location 3242 3248	column
+T219	Measure-Type 3250 3265	Dilution Factor
+T220	Method 3300 3316	serial dilutions
+T221	Location 3331 3341	host wells
+T222	Action 3347 3352	lysed
+E64	Action:T222 
+T223	Reagent 3385 3394	dilutions
+T224	Numerical 3402 3410	24 of 24
+T225	Location 3411 3416	wells
+T226	Location 3459 3469	host wells
+T227	Numerical 3526 3533	0 of 24
+T228	Reagent 3509 3518	dilutions
+R50	Or Arg1:E41 Arg2:E42	
+R51	Mod-Link Arg1:E43 Arg2:T165	
+R52	Of-Type Arg1:T169 Arg2:T168	
+T229	Numerical 2301 2305	Once
+R53	Setting Arg1:E45 Arg2:T174	
+T230	Modifier 2862 2874	individually
+R54	Mod-Link Arg1:E58 Arg2:T230	
+R55	Mod-Link Arg1:E60 Arg2:T204	
+R56	Meronym Arg1:T211 Arg2:T212	
+R57	Meronym Arg1:T217 Arg2:T218	
+R58	Measure Arg1:T225 Arg2:T224	
+T231	Location 3534 3539	wells
+R59	Measure Arg1:T231 Arg2:T227	

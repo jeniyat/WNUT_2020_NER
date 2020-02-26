@@ -1,0 +1,84 @@
+T1	Action 203 209	boiled
+E1	Action:T1 Acts-on:T17 Acts-on2:T15
+T2	Action 213 221	dissolve
+E2	Action:T2 Acts-on:T18
+T3	Action 255 270	allowed to cool
+E3	Action:T3 Acts-on:T19
+T4	Action 327 336	are added
+E4	Action:T4 Acts-on:T23 Site:T26
+T5	Action 427 433	spread
+E5	Action:T5 Site:T28 Acts-on:T23
+T6	Action 539 546	spotted
+E6	Action:T6 Site:T33 Acts-on:T31 Acts-on2:T32
+T7	Action 632 639	spotted
+E7	Action:T7 Acts-on:T36
+T8	Action 652 661	incubated
+E8	Action:T8 Acts-on:T37
+T9	Action 692 700	examined
+E9	Action:T9 Acts-on:T40
+T10	Action 705 713	clearing
+E10	Action:T10 Acts-on:T41
+T11	Time 121 127	10 min
+T12	Temperature 131 135	80˚C
+T13	Action 139 142	dry
+E11	Action:T13 
+T14	Amount 144 149	10 mL
+T15	Reagent 153 170	Sulfolobus medium
+T16	Concentration 180 185	0.2 %
+T17	Reagent 192 199	Gelrite
+T18	Reagent 226 233	Gelrite
+R1	Measure Arg1:T17 Arg2:T16	
+R2	Measure Arg1:T15 Arg2:T14	
+T19	Reagent 241 250	softlayer
+T20	Modifier 271 279	slightly
+T21	Temperature 288 292	80˚C
+R3	Mod-Link Arg1:E3 Arg2:T20	
+R4	Setting Arg1:E3 Arg2:T21	
+T22	Amount 309 313	3 mL
+T23	Reagent 317 326	softlayer
+T24	Amount 344 350	0.2 mL
+T25	Modifier 354 375	exponentially growing
+T26	Reagent 376 386	host cells
+T27	Reagent 398 421	Sulfolobus solfataricus
+T28	Location 439 444	plate
+R5	Mod-Link Arg1:T26 Arg2:T25	
+R6	Measure Arg1:T23 Arg2:T22	
+R7	Measure Arg1:T26 Arg2:T24	
+R8	Meronym Arg1:T27 Arg2:T26	
+T30	Amount 488 494	1–2 µL
+T31	Reagent 498 505	culture
+T32	Reagent 509 520	supernatant
+T33	Location 554 559	plate
+R9	Measure Arg1:T31 Arg2:T30	
+R10	Or Arg1:T31 Arg2:T32	
+T34	Amount 585 589	1 µL
+T35	Concentration 595 600	0.01%
+T36	Reagent 607 628	Triton X-100 solution
+R11	Measure Arg1:T36 Arg2:T35	
+R12	Measure Arg1:T36 Arg2:T34	
+T37	Location 641 647	Plates
+T38	Time 675 680	2–3 d
+T39	Modifier 662 670	as above
+T40	Location 685 691	plates
+T41	Reagent 721 726	spots
+R13	Mod-Link Arg1:E8 Arg2:T39	
+R14	Setting Arg1:E8 Arg2:T38	
+T42	Action 104 116	preincubated
+E12	Action:T42 Acts-on:T49
+T43	Action 0 25	Spot-on-lawn (halo) assay
+E13	Action:T43 
+T44	Action 30 39	screening
+E14	Action:T44 Acts-on:T45 Acts-on2:T46
+T45	Reagent 40 59	enrichment cultures
+T46	Reagent 64 72	isolates
+T47	Reagent 77 84	viruses
+T48	Reagent 85 92	Gelrite
+T49	Location 93 99	plates
+T50	Modifier 295 308	Approximately
+R17	Mod-Link Arg1:T22 Arg2:T50	
+T29	Action 448 456	swirling
+E15	Action:T29 
+T51	Reagent 468 475	Gelrite
+T52	Action 527 535	screened
+E16	Action:T52 Acts-on:T32 Acts-on2:T31
+T53	Reagent 567 583	positive control

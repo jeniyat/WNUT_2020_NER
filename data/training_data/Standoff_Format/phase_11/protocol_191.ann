@@ -1,0 +1,199 @@
+T1	Action 29 36	Harvest
+E1	Action:T1 Acts-on:T88
+T2	Action 112 121	Resuspend
+E2	Action:T2 Acts-on:T35
+T3	Action 162 165	Add
+E3	Action:T3 Site:T39
+T4	Action 342 345	Add
+E4	Action:T4 Acts-on:T43
+T5	Action 423 431	Incubate
+E5	Action:T5 Site:T44
+T6	Action 518 528	Centrifuge
+E6	Action:T6 
+T7	Action 562 573	Equilibrate
+E7	Action:T7 Acts-on:T50
+T8	Action 663 668	Apply
+E8	Action:T8 Using:T27 Acts-on:T53
+T9	Action 764 768	Wash
+E9	Action:T9 Acts-on:T28
+T11	Action 874 879	Elute
+E11	Action:T11 Acts-on:T58 Using:T60
+T12	Action 1035 1046	Precipitate
+E12	Action:T12 Acts-on:T65
+T13	Action 1124 1134	Centrifuge
+E13	Action:T13 
+T14	Action 1177 1183	decant
+E14	Action:T14 Acts-on:T73
+T15	Action 1201 1205	Wash
+E15	Action:T15 Acts-on:T74
+T16	Action 1264 1274	centrifuge
+E16	Action:T16 
+T17	Action 1310 1316	decant
+E17	Action:T17 Acts-on:T81
+T18	Action 1362 1372	redissolve
+E18	Action:T18 Acts-on:T84
+T19	Action 68 80	centrifuging
+E19	Action:T19 
+T20	Action 182 185	mix
+E20	Action:T20 Commands:E21
+T22	Action 236 244	incubate
+E22	Action:T22 
+T23	Action 373 376	mix
+E23	Action:T23 Commands:E27
+T25	Action 478 481	mix
+E25	Action:T25 Acts-on:T46
+T26	Action 594 602	applying
+E26	Action:T26 Acts-on:T52
+T29	Action 965 975	prewarming
+E29	Action:T29 Acts-on:T63
+T30	Action 1119 1122	mix
+E30	Action:T30 Acts-on:T69
+T31	Action 1330 1337	Air-dry
+E31	Action:T31 Acts-on:T83
+T32	Speed 84 92	4000 x g
+T33	Time 97 103	15 min
+T34	Temperature 107 110	4°C
+T35	Reagent 126 142	bacterial pellet
+T36	Amount 146 150	4 ml
+T37	Reagent 151 160	Buffer P1
+R1	Or Arg1:T36 Arg2:T37	
+R2	Setting Arg1:E19 Arg2:T32	
+R3	Setting Arg1:E19 Arg2:T33	
+R4	Setting Arg1:E19 Arg2:T34	
+T38	Amount 166 170	4 ml
+T39	Reagent 171 180	Buffer P2
+R5	Measure Arg1:T39 Arg2:T38	
+T40	Temperature 266 273	15–25°C
+T41	Time 279 284	5 min
+R6	Setting Arg1:E22 Arg2:T40	
+R7	Setting Arg1:E22 Arg2:T41	
+T42	Amount 346 350	4 ml
+T43	Reagent 351 371	prechilled Buffer P3
+R8	Measure Arg1:T43 Arg2:T42	
+T44	Location 435 438	ice
+T45	Time 443 449	15 min
+R9	Setting Arg1:E5 Arg2:T45	
+T46	Reagent 460 477	LyseBlue reagent,
+T47	Speed 532 542	14,000 x g
+T48	Time 547 553	45 min
+T49	Temperature 557 560	4°C
+R10	Setting Arg1:E6 Arg2:T47	
+R11	Setting Arg1:E6 Arg2:T48	
+R12	Setting Arg1:E6 Arg2:T49	
+T50	Device 576 590	QIAGEN-tip 100
+T51	Amount 603 607	4 ml
+T52	Reagent 608 618	Buffer QBT
+R13	Measure Arg1:T52 Arg2:T51	
+T27	Reagent 673 684	supernatant
+T53	Device 704 714	QIAGEN-tip
+T28	Device 773 783	QIAGEN-tip
+T54	Amount 789 798	2 x 10 ml
+T55	Reagent 799 808	Buffer QC
+R14	Measure Arg1:T55 Arg2:T54	
+T56	Reagent 816 825	Buffer QC
+T10	Action 829 841	move through
+E10	Action:T10 Acts-on:T56 Acts-on2:T57 Using:T111
+T57	Device 846 856	QIAGEN-tip
+T58	Reagent 880 883	DNA
+T59	Amount 889 893	5 ml
+T60	Reagent 894 903	Buffer QF
+R15	Measure Arg1:T60 Arg2:T59	
+T61	Amount 917 922	15 ml
+T62	Location 923 929	vessel
+R16	Measure Arg1:T62 Arg2:T61	
+T63	Reagent 980 994	elution buffer
+T64	Temperature 998 1002	65°C
+R17	Setting Arg1:E29 Arg2:T64	
+T65	Reagent 1047 1050	DNA
+T66	Amount 1061 1067	3.5 ml
+T67	Temperature 1068 1084	room-temperature
+T68	Reagent 1085 1096	isopropanol
+R18	Measure Arg1:T68 Arg2:T66	
+R19	Setting Arg1:E12 Arg2:T67	
+T69	Reagent 1111 1114	DNA
+T70	Speed 1138 1147	4,000 x g
+T71	Time 1152 1158	60 min
+T72	Temperature 1162 1165	4°C
+R20	Setting Arg1:E13 Arg2:T70	
+R21	Setting Arg1:E13 Arg2:T71	
+R22	Setting Arg1:E13 Arg2:T72	
+T73	Reagent 1188 1199	supernatant
+T74	Reagent 1210 1220	DNA pellet
+T75	Amount 1226 1230	2 ml
+T76	Temperature 1231 1247	room-temperature
+T77	Concentration 1248 1251	70%
+T78	Reagent 1252 1259	ethanol
+T79	Speed 1278 1287	4,000 x g
+T80	Time 1292 1298	10 min
+R23	Measure Arg1:T78 Arg2:T75	
+R24	Measure Arg1:T78 Arg2:T77	
+R25	Setting Arg1:E15 Arg2:T76	
+R26	Setting Arg1:E16 Arg2:T79	
+R27	Setting Arg1:E16 Arg2:T80	
+T81	Reagent 1317 1328	supernatant
+T82	Time 1349 1357	5–10 min
+T83	Reagent 1338 1344	pellet
+R28	Setting Arg1:E31 Arg2:T82	
+T84	Reagent 1373 1376	DNA
+T85	Reagent 9 23	Qiagen Plasmid
+T86	Modifier 0 8	Modified
+R29	Mod-Link Arg1:T85 Arg2:T86	
+T87	Time 37 46	overnight
+T88	Reagent 47 64	bacterial culture
+T89	Numerical 221 224	4–6
+T90	Modifier 200 210	vigorously
+T91	Modifier 186 196	thoroughly
+R30	Mod-Link Arg1:E20 Arg2:T91	
+T21	Action 211 220	inverting
+E21	Action:T21 Count:T89
+R31	Mod-Link Arg1:E21 Arg2:T90	
+T92	Temperature 248 264	room temperature
+R32	Coreference-Link Arg1:T92 Arg2:T40	
+T93	Reagent 295 311	LyseBlue reagent
+T94	Reagent 317 325	solution
+T95	Modifier 336 340	blue
+T96	Action 289 294	using
+E24	Action:T96 Acts-on:T93
+T97	Modifier 377 387	thoroughly
+T98	Modifier 391 401	vigorously
+T99	Numerical 412 415	4–6
+R33	Mod-Link Arg1:E23 Arg2:T97	
+T24	Action 402 411	inverting
+E27	Action:T24 Count:T99
+R34	Mod-Link Arg1:E27 Arg2:T98	
+T100	Reagent 486 494	solution
+T101	Action 454 459	using
+E28	Action:T101 Acts-on:T46
+T102	Mention 501 503	it
+T103	Modifier 507 516	colorless
+R35	Mod-Link Arg1:T102 Arg2:T103	
+R36	Coreference-Link Arg1:T102 Arg2:T100	
+T104	Location 630 636	column
+T105	Action 624 629	allow
+E32	Action:T105 Acts-on:T104 Using:T109
+T106	Reagent 741 746	resin
+T107	Mention 725 727	it
+R37	Coreference-Link Arg1:T107 Arg2:T27	
+T108	Action 719 724	allow
+E33	Action:T108 Acts-on:T107 Site:T106 Using:T110
+T109	Method 649 661	gravity flow
+T110	Method 750 762	gravity flow
+T111	Method 860 872	gravity flow
+T112	Modifier 911 916	clean
+R38	Mod-Link Arg1:T62 Arg2:T112	
+T113	Generic-Measure 958 963	45 kb
+T114	Modifier 1167 1176	Carefully
+R39	Mod-Link Arg1:E14 Arg2:T114	
+T115	Modifier 1300 1309	Carefully
+R40	Mod-Link Arg1:E17 Arg2:T115	
+T116	Measure-Type 1391 1397	volume
+T117	Reagent 1413 1419	buffer
+T118	Reagent 1427 1436	TE buffer
+T119	pH 1438 1444	pH 8.0
+T120	Concentration 1449 1454	10 mM
+T121	Reagent 1455 1462	Tris·Cl
+T122	pH 1464 1470	pH 8.5
+R41	Measure Arg1:T118 Arg2:T119	
+R42	Measure Arg1:T121 Arg2:T120	
+R43	Measure Arg1:T121 Arg2:T122	
+R44	Or Arg1:T118 Arg2:T121	

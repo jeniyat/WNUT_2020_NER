@@ -1,0 +1,194 @@
+T1	Action 55 64	Weigh out
+E1	Action:T1 Acts-on:T26
+T2	Action 102 105	add
+E2	Action:T2 Acts-on:T37 Site:T27
+T3	Action 134 137	Add
+E3	Action:T3 Acts-on:T31
+T4	Action 377 383	Remove
+E4	Action:T4 Acts-on:T47 Site:T48
+T5	Action 451 455	cool
+E5	Action:T5 Acts-on:T51
+T6	Action 499 502	Add
+E6	Action:T6 Acts-on:T54 Site:T53
+T7	Action 566 571	swirl
+E7	Action:T7 Acts-on:T54 Site:T53
+T8	Action 618 623	Place
+E8	Action:T8 Acts-on:T57 Site:T58
+T9	Action 662 665	Add
+E9	Action:T9 Acts-on:T61 Site:T62
+T10	Action 741 745	Pour
+E10	Action:T10 Acts-on:T65 Site:T67
+T11	Action 807 810	sit
+E11	Action:T11 Acts-on:T68
+T12	Action 857 863	Remove
+E12	Action:T12 Acts-on:T70
+T13	Action 917 923	remove
+E13	Action:T13 Acts-on:T72 Site:T73
+T14	Action 989 994	Place
+E14	Action:T14 Acts-on2:T78 Site2:T79 Acts-on:T76 Site:T77
+T15	Action 1088 1092	Pour
+E15	Action:T15 Acts-on:T80 Product:T84
+T16	Action 1118 1122	fill
+E16	Action:T16 Acts-on:T81
+T17	Action 1216 1223	Prepare
+E17	Action:T17 Acts-on:T87 Acts-on2:T88
+T18	Action 1250 1256	adding
+E18	Action:T18 Acts-on:T90
+T19	Action 1306 1311	Place
+E19	Action:T19 Acts-on:T94 Site:T95
+T20	Action 1377 1380	Run
+E20	Action:T20 
+T21	Action 1494 1500	imaged
+E21	Action:T21 Acts-on:T104 Site2:T106 Using:T105
+T22	Action 1563 1570	removed
+E22	Action:T22 Acts-on:T104
+T23	Action 1575 1582	wrapped
+E23	Action:T23 Acts-on:T104 Using:T107
+T24	Amount 65 70	0.6 g
+T25	Concentration 72 76	1.2%
+T26	Reagent 90 97	agarose
+T27	Location 116 132	Erlenmeyer Flask
+T28	Amount 84 88	50mL
+T29	Amount 138 142	50mL
+T30	Concentration 146 148	1x
+T31	Reagent 149 159	TAE buffer
+T32	Action 160 165	Place
+E24	Action:T32 Acts-on:T33 Site:T34
+T33	Location 166 182	Erlenmeyer Flask
+T34	Device 186 195	microwave
+T35	Time 209 219	30 seconds
+R2	Measure Arg1:T26 Arg2:T24	
+T36	Reagent 77 80	w/v
+R1	Measure Arg1:T36 Arg2:T25	
+R3	Measure Arg1:T36 Arg2:T28	
+R4	Meronym Arg1:T36 Arg2:T26	
+T37	Mention 106 108	it
+R5	Coreference-Link Arg1:T37 Arg2:T26	
+R6	Measure Arg1:T31 Arg2:T30	
+R7	Measure Arg1:T31 Arg2:T29	
+T38	Action 204 208	wait
+E25	Action:T38 
+T39	Action 197 200	Set
+E26	Action:T39 
+T40	Action 366 375	dissolved
+E27	Action:T40 Acts-on:T41
+T41	Reagent 344 351	agarose
+T42	Reagent 322 330	solution
+T43	Time 302 312	30 seconds
+T44	Time 254 264	20 seconds
+R8	Setting Arg1:E25 Arg2:T35	
+T45	Generic-Measure 243 248	1250W
+R9	Setting Arg1:E26 Arg2:T45	
+R10	Setting Arg1:E26 Arg2:T44	
+T46	Generic-Measure 292 296	125W
+R11	Setting Arg1:E26 Arg2:T46	
+R12	Setting Arg1:E26 Arg2:T43	
+R13	Meronym Arg1:T41 Arg2:T42	
+T47	Location 384 400	Erlenmeyer Flask
+T48	Device 406 415	microwave
+T49	Action 427 430	sit
+E28	Action:T49 Acts-on:T51 Site:T50
+T50	Location 438 447	lab bench
+T51	Mention 424 426	it
+R14	Coreference-Link Arg1:T51 Arg2:T47	
+T52	Amount 503 506	1μL
+T54	Reagent 520 536	ethidium bromide
+T55	Concentration 538 545	10mg/mL
+T53	Location 556 561	flask
+T56	Action 575 578	mix
+E29	Action:T56 Acts-on:T54
+R15	Measure Arg1:T54 Arg2:T55	
+R16	Measure Arg1:T54 Arg2:T52	
+T57	Location 624 632	gel tray
+T58	Location 636 641	clamp
+T59	Action 646 651	clamp
+E30	Action:T59 Acts-on:T57 Site:T58
+T60	Modifier 652 660	securely
+R17	Mod-Link Arg1:E30 Arg2:T60	
+T61	Location 666 677	well plates
+T62	Location 678 698	where you want wells
+T63	Action 718 739	ensure it is balanced
+E31	Action:T63 Acts-on:T61 Acts-on2:T64
+T64	Reagent 709 714	level
+T65	Reagent 746 754	contents
+T66	Location 762 777	Erlemeyer Flask
+T67	Location 787 795	gel tray
+T68	Mention 804 806	it
+T69	Time 815 825	30 minutes
+R18	Setting Arg1:E11 Arg2:T69	
+R19	Coreference-Link Arg1:T68 Arg2:T67	
+R20	Meronym Arg1:T65 Arg2:T66	
+T70	Location 868 879	well plates
+T71	Modifier 880 889	carefully
+T72	Location 928 932	tray
+T73	Location 942 947	clamp
+T74	Action 953 975	ensure the gel remains
+E32	Action:T74 Site:T75
+T75	Location 983 987	tray
+R21	Mod-Link Arg1:E12 Arg2:T71	
+T76	Location 995 1003	gel tray
+T77	Device 1009 1038	gel electrophoresis apparatus
+T78	Location 1048 1053	wells
+T79	Location 1068 1086	negative/black end
+R22	Meronym Arg1:T79 Arg2:T77	
+R23	Meronym Arg1:T78 Arg2:T76	
+T80	Reagent 1104 1114	TAE Buffer
+T81	Location 1123 1132	each side
+T82	Device 1140 1149	apparatus
+T83	Amount 1166 1176	thin layer
+T84	Reagent 1180 1186	buffer
+T85	Location 1200 1203	top
+T86	Reagent 1211 1214	gel
+R24	Meronym Arg1:T85 Arg2:T86	
+R25	Meronym Arg1:T81 Arg2:T82	
+R26	Meronym Arg1:T84 Arg2:T85	
+R27	Measure Arg1:T84 Arg2:T83	
+T87	Reagent 1224 1234	DNA ladder
+T88	Reagent 1239 1246	samples
+T89	Concentration 1257 1259	6x
+T90	Reagent 1260 1268	blue dye
+T91	Action 1269 1276	Pipette
+E33	Action:T91 Acts-on:T93 Site:T92
+T92	Location 1295 1304	each well
+T93	Reagent 1282 1289	samples
+R28	Measure Arg1:T90 Arg2:T89	
+T94	Seal 1312 1315	lid
+T95	Device 1319 1328	apparatus
+T96	Action 1333 1337	plug
+E34	Action:T96 Acts-on:T97 Site:T98
+T97	Device 1338 1344	cables
+T98	Device 1350 1375	high voltage power supply
+T99	Generic-Measure 1384 1388	100V
+T100	Time 1404 1417	45-60 minutes
+T101	Action 1460 1473	migrated down
+E35	Action:T101 Acts-on:T102 Site:T103
+T102	Reagent 1431 1442	loading dye
+T103	Reagent 1478 1481	gel
+R29	Setting Arg1:E20 Arg2:T100	
+R30	Setting Arg1:E20 Arg2:T99	
+T104	Reagent 1483 1486	Gel
+T105	Device 1504 1523	UV transilluminator
+T106	Location 1536 1559	UV-transparent gel tray
+T107	Device 1586 1598	plastic wrap
+T108	Action 1603 1610	storage
+E36	Action:T108 
+T109	Temperature 1614 1617	4°C
+R31	Setting Arg1:E36 Arg2:T109	
+T110	Reagent 0 11	Agarose gel
+T111	Method 12 27	electrophoresis
+T112	Concentration 29 33	1.2%
+T113	Reagent 39 54	Ethidum bromide
+R32	Measure Arg1:T113 Arg2:T112	
+T114	Measure-Type 231 236	power
+R33	Of-Type Arg1:T45 Arg2:T114	
+T115	Modifier 475 486	comfortably
+T116	Action 487 491	pick
+E37	Action:T116 Acts-on:T117
+T117	Mention 492 494	it
+R34	Coreference-Link Arg1:T117 Arg2:T47	
+R35	Mod-Link Arg1:E37 Arg2:T115	
+T118	Modifier 507 519	concentrated
+R36	Mod-Link Arg1:T54 Arg2:T118	
+T119	Generic-Measure 1391 1398	6.6V/cm
+T120	Modifier 1390 1391	~
+R37	Mod-Link Arg1:T119 Arg2:T120	

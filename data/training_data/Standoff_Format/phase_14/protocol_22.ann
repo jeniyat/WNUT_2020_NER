@@ -1,0 +1,74 @@
+T1	Action 35 46	transformed
+E1	Action:T1 Acts-on:T3 Product:T2
+T2	Reagent 52 57	cells
+T3	Reagent 20 31	Ligated DNA
+T4	Action 59 64	Plate
+E2	Action:T4 Acts-on:T5 Site:T6
+T5	Reagent 65 82	transformed cells
+T6	Location 86 101	selection plate
+T7	Action 112 116	wait
+E3	Action:T7 
+T8	Time 117 125	13 hours
+R2	Setting Arg1:E3 Arg2:T8
+T10	Action 127 131	Pick
+E4	Action:T10 Acts-on:T13 Site:T11 Using:T12
+T11	Location 168 183	selection plate
+T12	Location 188 207	yellow pipette tips
+T13	Reagent 134 162	well separated single colony
+T14	Action 209 213	Move
+E5	Action:T14 Acts-on:T15 Site:T16
+T15	Reagent 214 225	said colony
+T16	Location 229 254	96 well microtittle plate
+T17	Action 256 261	Place
+E6	Action:T17 Acts-on:T18 Site:T19
+T18	Reagent 262 279	individual colony
+T19	Location 287 298	single well
+T20	Amount 310 315	50 µl
+T22	Reagent 324 339	distilled water
+R4	Meronym Arg1:T22 Arg2:T19
+R5	Measure Arg1:T22 Arg2:T20
+T23	Action 381 388	Make up
+E7	Action:T23 Product:T24
+T24	Reagent 389 396	PCR mix
+T25	Location 402 422	multichannel pipette
+T26	Action 426 429	add
+E8	Action:T26 Using:T25 Acts-on:T29 Site:T30
+T27	Amount 430 436	7.5 µl
+T29	Reagent 437 444	PCR mix
+T30	Location 450 467	96 well PCR plate
+R7	Measure Arg1:T29 Arg2:T27
+T31	Action 469 472	Add
+E9	Action:T31 Acts-on:T34
+T32	Amount 473 479	2.5 µl
+T34	Reagent 480 495	colony solution
+R9	Measure Arg1:T34 Arg2:T32
+T35	Action 497 500	Run
+E10	Action:T35 Using:T36
+T36	Method 501 513	PCR reaction
+T37	Action 515 518	Add
+E11	Action:T37 Acts-on:T40
+T38	Amount 519 523	4 µl
+T40	Reagent 524 535	loading dye
+R11	Measure Arg1:T40 Arg2:T38
+T41	Action 562 566	Load
+E12	Action:T41 Acts-on:T42 Site:T43
+T42	Reagent 568 590	PCR reaction mix + dye
+T43	Location 597 600	gel
+T44	Action 605 608	run
+E13	Action:T44 
+T9	Modifier 316 323	sterile
+R1	Mod-Link Arg1:T22 Arg2:T9	
+T21	Method 0 10	Colony PCR
+T28	Action 103 110	Go home
+E14	Action:T28 
+T33	Action 341 347	Repeat
+E15	Action:T33 
+T39	Reagent 360 368	colonies
+T46	Action 619 622	run
+E16	Action:T46 
+T47	Time 635 642	5 hours
+R3	Setting Arg1:E16 Arg2:T47	
+T45	Action 541 548	PCR run
+E17	Action:T45 
+T48	Action 398 401	Use
+E18	Action:T48 Acts-on:T25

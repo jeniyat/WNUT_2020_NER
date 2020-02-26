@@ -1,0 +1,64 @@
+T1	Action 38 46	Pre-cool
+E1	Action:T1 Acts-on:T12 Site:T13
+T2	Action 68 71	Add
+E2	Action:T2 Acts-on:T14
+T3	Action 111 114	Add
+E3	Action:T3 Acts-on:T15 Site:T16
+T4	Action 182 192	Homogenize
+E4	Action:T4 Acts-on:T17 Using:T18
+T5	Action 300 303	Mix
+E5	Action:T5 Acts-on:T19 Site:T20
+T6	Action 348 352	Spin
+E6	Action:T6 
+T8	Action 408 412	Save
+E8	Action:T8 
+T9	Action 426 435	Determine
+E9	Action:T9 Acts-on:T26
+T10	Action 468 473	store
+E10	Action:T10 
+T11	Action 450 454	Make
+E11	Action:T11 Acts-on:T27
+T12	Reagent 48 59	ysis buffer
+T13	Location 63 66	ice
+T14	Reagent 72 91	protease inhibitors
+T15	Reagent 115 135	10 fold lysis buffer
+T16	Location 139 146	tissues
+T17	Reagent 193 200	tissues
+T18	Device 206 215	dispenser
+T19	Reagent 304 311	samples
+T20	Device 317 331	rotating mixer
+T22	Time 344 346	2h
+R2	Setting Arg1:E5 Arg2:T22	
+T23	Speed 355 362	16,000g
+T24	Time 364 369	10min
+T25	Temperature 371 374	4°C
+R3	Setting Arg1:E6 Arg2:T23	
+R4	Setting Arg1:E6 Arg2:T24	
+R5	Setting Arg1:E6 Arg2:T25	
+T7	Reagent 413 424	supernatant
+T26	Reagent 436 448	protein conc
+T27	Reagent 455 463	aliquots
+T28	Temperature 477 482	-80°C
+R6	Setting Arg1:E10 Arg2:T28	
+T29	Modifier 0 5	Whole
+T30	Reagent 6 13	protein
+T31	Method 14 24	extraction
+T32	Reagent 30 37	tissues
+T33	Amount 148 151	1ml
+T34	Reagent 152 164	lysis buffer
+T35	Amount 167 172	100mg
+T36	Reagent 173 179	tissue
+R7	Measure Arg1:T34 Arg2:T33	
+R8	Measure Arg1:T36 Arg2:T35	
+T37	Time 231 234	10s
+T38	Time 247 250	20s
+T39	Action 252 258	repeat
+E7	Action:T39 
+T40	Numerical 259 260	5
+T41	Modifier 277 284	visible
+T42	Reagent 285 298	tissue blocks
+R9	Mod-Link Arg1:T42 Arg2:T41	
+T43	Action 390 400	centrifuge
+E12	Action:T43 
+T44	Temperature 335 340	4 °C 
+R10	Setting Arg1:E5 Arg2:T44	

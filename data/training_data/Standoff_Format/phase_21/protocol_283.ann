@@ -1,0 +1,168 @@
+T1	Action 46 50	Fill
+E1	Action:T1 Acts-on:T28 Using:T30 Using2:T31
+T2	Action 132 142	Centrifuge
+E2	Action:T2 Acts-on:T32
+T3	Action 190 198	Transfer
+E3	Action:T3 Acts-on:T36 Site:T38
+T4	Action 232 237	store
+E4	Action:T4 Acts-on:T38
+T5	Action 267 276	Resuspend
+E5	Action:T5 Acts-on:T40 Site:T42
+T6	Action 349 359	Centrifuge
+E6	Action:T6 Acts-on:T46
+T7	Action 405 413	Transfer
+E7	Action:T7 Acts-on:T50 Site:T52
+T8	Action 447 452	store
+E8	Action:T8 
+T9	Action 482 491	Resuspend
+E9	Action:T9 Acts-on:T54 Site:T57
+T10	Action 563 571	Transfer
+E10	Action:T10 Acts-on:T58
+T11	Action 632 635	Add
+E11	Action:T11 Acts-on:T63
+T12	Action 655 670	Disruptor Genie
+E12	Action:T12 
+T13	Action 682 688	Verify
+E13	Action:T13 Using:T65
+T14	Action 707 712	place
+E14	Action:T14 Site:T67
+T15	Action 744 759	Disruptor Genie
+E15	Action:T15 
+T16	Action 770 776	Verify
+E16	Action:T16 Using:T69
+T17	Action 795 800	place
+E17	Action:T17 Site:T71
+T18	Action 832 847	Disruptor Genie
+E18	Action:T18 
+T19	Action 858 864	Verify
+E19	Action:T19 Using:T73
+T20	Action 883 888	place
+E20	Action:T20 Site:T75
+T21	Action 920 934	Centrifugation
+E21	Action:T21 
+T22	Action 962 969	Removed
+E22	Action:T22 Acts-on:T79 Site:T82
+T23	Action 1017 1024	discard
+E23	Action:T23 Acts-on:T83
+T24	Action 1052 1066	Centrifugation
+E24	Action:T24 
+T25	Action 1100 1107	Removed
+E25	Action:T25 Acts-on:T87 Site:T90
+T26	Action 1155 1162	discard
+E26	Action:T26 Acts-on:T91
+T27	Action 1190 1198	Conserve
+E27	Action:T27 Acts-on:T92
+T28	Location 51 69	centrifuge bottles
+T29	Amount 75 80	450mL
+T30	Reagent 81 98	Perkinsus Culture
+T31	Method 106 130	logarithmic growth phase
+R1	Measure Arg1:T30 Arg2:T29	
+T32	Location 143 150	bottles
+T33	Speed 154 160	1500 g
+T34	Time 162 168	15 min
+T35	Temperature 172 188	room temperature
+R2	Setting Arg1:E2 Arg2:T33	
+R3	Setting Arg1:E2 Arg2:T34	
+R4	Setting Arg1:E2 Arg2:T35	
+T36	Reagent 199 210	supernatant
+T37	Modifier 216 221	clean
+T38	Location 222 226	tube
+T39	Temperature 241 244	4°C
+R5	Mod-Link Arg1:T38 Arg2:T37	
+R6	Setting Arg1:E4 Arg2:T39	
+T40	Reagent 277 283	pellet
+T41	Concentration 287 290	10%
+T42	Reagent 314 325	supernatant
+T43	Amount 291 313	initial culture volume
+R7	Measure Arg1:T42 Arg2:T43	
+R8	Measure Arg1:T42 Arg2:T41	
+T44	Amount 331 335	50mL
+T45	Location 336 347	Falcon Tube
+R9	Meronym Arg1:T42 Arg2:T45	
+T46	Location 360 365	tubes
+T47	Speed 369 375	1500 g
+T48	Time 377 383	15 min
+T49	Temperature 387 403	room temperature
+R10	Setting Arg1:E6 Arg2:T47	
+R11	Setting Arg1:E6 Arg2:T48	
+R12	Setting Arg1:E6 Arg2:T49	
+T50	Reagent 414 425	supernatant
+T51	Modifier 431 436	clean
+T52	Location 437 441	tube
+T53	Temperature 456 459	4°C
+R13	Mod-Link Arg1:T52 Arg2:T51	
+R14	Setting Arg1:E8 Arg2:T53	
+T54	Reagent 492 498	pellet
+T55	Amount 502 505	4mL
+T56	Reagent 534 561	protease inhibitor cocktail
+T57	Reagent 506 509	PBS
+R15	Measure Arg1:T57 Arg2:T55	
+R16	Meronym Arg1:T56 Arg2:T57	
+T58	Reagent 576 582	pellet
+T59	Action 583 594	resuspended
+E28	Action:T59 Acts-on:T58 Site:T61
+T60	Amount 598 601	2mL
+T61	Location 602 617	Eppendorf Tubes
+R17	Measure Arg1:T61 Arg2:T60	
+T62	Amount 636 641	100mL
+T63	Reagent 642 653	Glass beads
+R18	Measure Arg1:T63 Arg2:T62	
+T64	Time 675 680	15sec
+R19	Setting Arg1:E12 Arg2:T64	
+T65	Method 689 704	cell disruption
+T66	Amount 715 719	20mL
+T67	Device 726 742	light microscope
+R20	Setting Arg1:E14 Arg2:T66	
+T68	Time 764 768	1min
+R21	Setting Arg1:E15 Arg2:T68	
+T69	Method 777 792	cell disruption
+T70	Amount 803 807	20mL
+T71	Device 814 830	light microscope
+R22	Setting Arg1:E17 Arg2:T70	
+T72	Time 852 856	3min
+R23	Setting Arg1:E18 Arg2:T72	
+T73	Method 865 880	cell disruption
+T74	Amount 891 895	20mL
+T75	Device 902 918	light microscope
+R24	Setting Arg1:E20 Arg2:T74	
+T76	Speed 938 946	10,000 g
+T77	Time 948 954	30 min
+T78	Temperature 956 959	4°C
+R25	Setting Arg1:E21 Arg2:T76	
+R26	Setting Arg1:E21 Arg2:T77	
+R27	Setting Arg1:E21 Arg2:T78	
+T79	Reagent 974 985	supernatant
+T80	Modifier 989 994	clean
+T81	Amount 995 1000	1.5mL
+T82	Location 1001 1015	Eppendorf tube
+R28	Measure Arg1:T82 Arg2:T81	
+R29	Mod-Link Arg1:T82 Arg2:T80	
+T83	Reagent 1029 1035	pellet
+T84	Speed 1076 1084	10,000 g
+T85	Time 1086 1092	30 min
+T86	Temperature 1094 1097	4°C
+R30	Setting Arg1:E24 Arg2:T84	
+R31	Setting Arg1:E24 Arg2:T85	
+R32	Setting Arg1:E24 Arg2:T86	
+T87	Reagent 1112 1123	supernatant
+T88	Modifier 1127 1132	clean
+T89	Amount 1133 1138	1.5mL
+T90	Location 1139 1153	Eppendorf tube
+R33	Measure Arg1:T90 Arg2:T89	
+R34	Mod-Link Arg1:T90 Arg2:T88	
+T91	Reagent 1167 1173	pellet
+T92	Location 1203 1208	tubes
+T93	Temperature 1212 1215	4°C
+R35	Setting Arg1:E27 Arg2:T93	
+T94	Reagent 0 7	Viruses
+T95	Method 8 20	Purification
+T96	Reagent 24 37	Perkinsus spp
+T97	Method 257 265	analyses
+T98	Method 472 480	analyses
+T99	Amount 619 624	1.5mL
+T100	Location 625 629	tube
+R36	Measure Arg1:T100 Arg2:T99	
+T101	Reagent 1175 1186	cell debris
+T102	Reagent 1037 1048	cell debris
+R37	Coreference-Link Arg1:T83 Arg2:T102	
+R38	Coreference-Link Arg1:T91 Arg2:T101	

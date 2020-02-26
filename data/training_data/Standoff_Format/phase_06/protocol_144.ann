@@ -1,0 +1,73 @@
+T1	Action 23 30	Prepare
+E1	Action:T1 
+T2	Action 44 51	Perform
+E2	Action:T2 Using:T14
+T3	Action 72 75	add
+E3	Action:T3 Acts-on:T16 Site:T17
+T4	Action 106 114	Incubate
+E4	Action:T4 
+T5	Action 134 144	PCR Purify
+E5	Action:T5 Using:T21
+T6	Action 163 166	Add
+E6	Action:T6 Acts-on:T23 Site:T25
+T7	Action 220 228	Incubate
+E7	Action:T7 Site:T27
+T8	Action 251 260	Heatshock
+E8	Action:T8 
+T9	Action 284 291	Recover
+E9	Action:T9 Site:T31
+T10	Action 314 317	Add
+E10	Action:T10 Acts-on:T34 Site:T36
+T11	Action 379 384	Shake
+E11	Action:T11 
+T12	Action 404 409	Plate
+E12	Action:T12 Site:T40
+T13	Reagent 31 42	PCR mixture
+T14	Method 56 59	PCR
+T15	Amount 76 79	1ul
+T16	Reagent 83 87	DpnI
+T17	Location 96 104	pcr tube
+T18	Modifier 91 95	each
+R1	Mod-Link Arg1:T17 Arg2:T18	
+R2	Measure Arg1:T16 Arg2:T15	
+T19	Time 115 125	1 hour-O/N
+T20	Temperature 129 132	37C
+R3	Setting Arg1:E4 Arg2:T19	
+R4	Setting Arg1:E4 Arg2:T20	
+T21	Device 151 161	Qaigen kit
+T22	Amount 167 170	5ul
+T23	Reagent 174 186	PCR reaction
+T24	Amount 192 196	25ul
+T25	Reagent 197 205	DH5alpha
+T26	Reagent 209 218	TG1 cells
+R5	Or Arg1:T25 Arg2:T26	
+R6	Measure Arg1:T25 Arg2:T24	
+R7	Measure Arg1:T23 Arg2:T22	
+T27	Location 229 235	on ice
+T28	Time 240 249	5 minutes
+R8	Setting Arg1:E7 Arg2:T28	
+T29	Temperature 264 267	42C
+T30	Time 272 282	45 seconds
+R9	Setting Arg1:E8 Arg2:T29	
+R10	Setting Arg1:E8 Arg2:T30	
+T31	Location 292 298	on ice
+T32	Time 303 312	2 minutes
+R11	Setting Arg1:E9 Arg2:T32	
+T33	Amount 318 323	200ul
+T34	Reagent 324 326	LB
+R12	Measure Arg1:T34 Arg2:T33	
+T35	Modifier 364 368	each
+T36	Reagent 369 377	reaction
+R13	Mod-Link Arg1:T36 Arg2:T35	
+T37	Temperature 388 391	37C
+T38	Time 396 402	1 hour
+R14	Setting Arg1:E11 Arg2:T37	
+R15	Setting Arg1:E11 Arg2:T38	
+T39	Modifier 413 419	warmed
+T40	Location 420 437	antibiotic plates
+R16	Mod-Link Arg1:T40 Arg2:T39	
+T41	Method 0 22	QuikChange Mutagenesis
+T42	Method 67 70	PCR
+T43	Location 334 341	96 well
+T44	Location 345 352	8 strip
+R17	Or Arg1:T43 Arg2:T44	

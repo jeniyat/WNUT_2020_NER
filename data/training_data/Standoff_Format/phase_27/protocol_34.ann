@@ -1,0 +1,86 @@
+T1	Reagent 53 76	Soft agar overlay tubes
+T2	Action 81 87	melted
+E1	Action:T2 Acts-on:T1 Site:T3
+T3	Reagent 91 104	boiling water
+T4	Action 109 115	placed
+E2	Action:T4 Site:T6 Acts-on:T1
+T5	Temperature 123 127	47°C
+T6	Location 128 138	water bath
+T7	Reagent 140 148	One tube
+T8	Reagent 152 161	soft agar
+R2	Meronym Arg1:T7 Arg2:T8
+T9	Action 165 172	removed
+E3	Action:T9 Site:T10 Acts-on:T7
+T10	Location 182 192	water bath
+T11	Amount 194 200	1.0 mL
+T12	Reagent 201 213	host culture
+T13	Amount 232 238	0.1 mL
+T14	Reagent 239 256	viral concentrate
+T15	Action 260 265	added
+E4	Action:T15 Acts-on:T14 Acts-on2:T12
+T16	Reagent 271 279	contents
+T17	Location 287 291	tube
+R5	Meronym Arg1:T16 Arg2:T17
+T18	Action 295 300	mixed
+E5	Action:T18 Using:T20 Acts-on:T16
+T19	Modifier 301 305	well
+R6	Mod-Link Arg1:E5 Arg2:T19
+T20	Method 309 331	rolling back and forth
+T21	Location 359 363	tube
+T22	Reagent 364 372	contents
+R7	Meronym Arg1:T22 Arg2:T21
+T23	Modifier 377 388	immediately
+T24	Action 389 396	emptied
+E6	Action:T24 Site:T25 Acts-on:T22
+R8	Mod-Link Arg1:E6 Arg2:T23
+T25	Location 405 415	agar plate
+T26	Reagent 421 429	top agar
+T27	Modifier 433 439	gently
+T28	Action 440 446	spread
+E7	Action:T28 Acts-on:T26 Site:T29
+T29	Location 456 468	agar surface
+T30	Action 472 479	sliding
+E8	Action:T30 Acts-on:T31 Site:T32 Using:T33
+T31	Location 484 489	plate
+T32	Location 497 510	bench surface
+T33	Method 519 534	circular motion
+R9	Mod-Link Arg1:E7 Arg2:T27
+T34	Reagent 540 548	top agar
+T35	Action 563 569	harden
+E9	Action:T35 Acts-on:T34
+T36	Action 573 587	not disturbing
+E10	Action:T36 Acts-on:T37
+T37	Location 592 598	plates
+T38	Time 603 609	30 min
+R10	Setting Arg1:E10 Arg2:T38
+T39	Location 615 621	plates
+T40	Action 626 635	incubated
+E11	Action:T40 Acts-on:T39
+T41	Time 657 674	overnight to 48 h
+R11	Setting Arg1:E11 Arg2:T41
+R4	Measure Arg1:T14 Arg2:T13	
+R3	Measure Arg1:T12 Arg2:T11	
+R1	Setting Arg1:T6 Arg2:T5	
+T42	Amount 225 228	1.0
+R12	Or Arg1:T13 Arg2:T42	
+T43	Method 0 9	Isolation
+T44	Reagent 13 29	temperate phages
+T45	Reagent 33 44	plaque agar
+T46	Action 45 52	overlay
+E12	Action:T46 Acts-on:T45
+T47	Reagent 676 699	Temperate phage plaques
+T48	Modifier 715 721	turbid
+T49	Modifier 725 731	cloudy
+T50	Reagent 732 739	plaques
+R13	Or Arg1:T49 Arg2:T48	
+R14	Mod-Link Arg1:T50 Arg2:T49	
+R15	Mod-Link Arg1:T50 Arg2:T48	
+R16	Coreference-Link Arg1:T50 Arg2:T47	
+T51	Modifier 749 755	purely
+T52	Reagent 756 767	lytic phage
+R17	Mod-Link Arg1:T52 Arg2:T51	
+T53	Modifier 783 805	sharply defined, clear
+T54	Reagent 806 813	plaques
+R18	Mod-Link Arg1:T54 Arg2:T53	
+R19	Coreference-Link Arg1:T54 Arg2:T52	
+T55	Reagent 637 645	top agar

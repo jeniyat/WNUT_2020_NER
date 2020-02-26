@@ -1,0 +1,513 @@
+T2	Action 165 173	Initiate
+E2	Action:T2 Acts-on:T1 Using:T54
+T3	Action 350 357	Monitor
+E3	Action:T3 Measure-Type-Link:T55
+T4	Action 382 399	transfer/dilution
+E4	Action:T4 Measure-Type-Link:T58
+T5	Action 703 713	increasing
+E5	Action:T5 Acts-on:T61
+T6	Action 753 763	ramping up
+E6	Action:T6 Acts-on:T63
+T7	Action 1814 1817	Fit
+E7	Action:T7 Acts-on:T64
+T8	Action 1950 1955	Place
+E8	Action:T8 Acts-on:T67 Site:T68
+T9	Action 2011 2018	tighten
+E9	Action:T9 Acts-on:T69
+T11	Action 2338 2347	transport
+E11	Action:T11 Acts-on:T70 Site:T71
+T12	Action 2393 2402	resuspend
+E12	Action:T12 Acts-on:T72
+T13	Action 2435 2443	pour off
+E13	Action:T13 Acts-on:T74 Site:T75
+T14	Action 2540 2554	Resuspend/wash
+E14	Action:T14 Acts-on:T78 Using:T83 Site:T82
+T15	Action 2785 2788	Run
+E15	Action:T15 Acts-on:T84 Using:T124
+T16	Action 2858 2863	Store
+E16	Action:T16 Acts-on:T128
+T17	Action 2967 2976	Calculate
+E17	Action:T17 Measure-Type-Link:T134
+T18	Action 3027 3036	inoculate
+E18	Action:T18 Acts-on:T157
+T19	Action 3267 3273	Adjust
+E19	Action:T19 
+T20	Action 3287 3294	achieve
+E20	Action:T20 Measure-Type-Link:T275 Measure-Type-Link2:T276
+T21	Action 3375 3378	mix
+E21	Action:T21 
+T22	Action 3425 3432	monitor
+E22	Action:T22 Measure-Type-Link:T282
+T23	Action 3822 3830	Transfer
+E23	Action:T23 Acts-on:T140 Site:T143
+T24	Action 3882 3885	Add
+E24	Action:T24 Acts-on:T146
+T25	Action 3941 3947	vortex
+E25	Action:T25 
+T26	Action 3951 3954	mix
+E26	Action:T26 
+T27	Action 3956 3963	Aliquot
+E27	Action:T27 Site:T150
+T28	Action 3996 4000	Snap
+E28	Action:T28 Acts-on:T151 Site:T152
+T29	Action 4030 4038	incubate
+E29	Action:T29 Site:T155
+T30	Action 4074 4086	Flash freeze
+E30	Action:T30 Site:T156
+T31	Action 4107 4112	Store
+E31	Action:T31 
+T33	Action 4579 4584	Apply
+E33	Action:T33 Acts-on:T118 Site:T120
+T34	Action 4639 4646	turn on
+E34	Action:T34 Acts-on:T121
+T36	Action 4738 4745	collect
+E36	Action:T36 Site:T111
+T37	Action 4802 4806	Pour
+E37	Action:T37 Acts-on:T105 Site:T108
+T38	Action 4857 4863	Repeat
+E38	Action:T38 Acts-on:T104
+T39	Action 4886 4891	Rinse
+E39	Action:T39 Acts-on:T102 Using:T103
+T40	Action 4934 4939	Store
+E40	Action:T40 Acts-on:T100
+T41	Action 4952 4960	filtrate
+E41	Action:T41 
+T42	Action 5039 5047	Transfer
+E42	Action:T42 Acts-on:T88 Site:T87
+T44	Action 5119 5122	add
+E44	Action:T44 Site:T89 Acts-on:T92
+T45	Action 5172 5175	mix
+E45	Action:T45 Using:T46
+T47	Action 5197 5203	vortex
+E47	Action:T47 
+T48	Action 5205 5209	Snap
+E48	Action:T48 Acts-on:T94 Site:T95
+T49	Action 5239 5247	incubate
+E49	Action:T49 Site:T98
+T50	Action 5291 5296	Store
+E50	Action:T50 
+T1	Reagent 177 197	experimental culture
+T51	Modifier 211 219	at least
+T52	Modifier 237 250	characterized
+T53	Generic-Measure 220 233	7 generations
+T54	Reagent 251 269	exponential growth
+T55	Measure-Type 358 364	growth
+T56	Modifier 403 417	pre-determined
+T57	Modifier 418 433	mid-exponential
+T58	Measure-Type 434 441	density
+T59	Reagent 480 494	target biomass
+T60	Action 498 505	reached
+E1	Action:T60 Product:T59
+T61	Reagent 714 721	culture
+T62	Amount 722 728	volume
+T63	Reagent 767 781	target biomass
+R1	Measure Arg1:T61 Arg2:T62	
+T64	Device 1818 1828	centrifuge
+T65	Device 1834 1845	large rotor
+R2	Meronym Arg1:T65 Arg2:T64	
+T66	Modifier 1956 1962	paired
+T67	Location 1963 1970	bottles
+T68	Device 2001 2006	rotor
+T69	Seal 2023 2026	lid
+R3	Mod-Link Arg1:T67 Arg2:T66	
+T10	Modifier 2328 2337	carefully
+T70	Location 2352 2359	bottles
+T71	Location 2368 2372	hood
+T72	Reagent 2407 2426	cell pellets/smears
+R4	Mod-Link Arg1:E11 Arg2:T10	
+T73	Modifier 2428 2434	Gently
+T74	Reagent 2448 2459	supernatant
+T75	Location 2467 2482	waste container
+R5	Mod-Link Arg1:E13 Arg2:T73	
+T76	Reagent 2506 2516	cell smear
+T77	Action 2494 2501	disturb
+E10	Action:T77 Acts-on:T76
+T78	Reagent 2555 2560	cells
+T79	Measure-Type 2568 2574	volume
+T81	Modifier 2646 2650	each
+T82	Location 2651 2657	bottle
+T83	Reagent 2578 2601	nutrient deplete medium
+R6	Mod-Link Arg1:T82 Arg2:T81	
+T84	Reagent 2791 2797	sample
+T85	Amount 5048 5052	1 mL
+T86	Amount 5075 5081	1.2 mL
+T87	Location 5082 5095	cryovial tube
+T88	Reagent 5056 5063	culture
+R7	Measure Arg1:T87 Arg2:T86	
+T43	Modifier 5067 5074	sterile
+R8	Mod-Link Arg1:T87 Arg2:T43	
+R9	Measure Arg1:T88 Arg2:T85	
+T89	Location 5104 5117	chemical hood
+T90	Amount 5123 5129	100 µL
+T91	Concentration 5133 5136	37%
+T92	Reagent 5137 5149	formaldehyde
+T46	Method 5179 5188	inverting
+T93	Concentration 5151 5155	3.7%
+R10	Measure Arg1:T92 Arg2:T91	
+R11	Measure Arg1:T92 Arg2:T93	
+R12	Measure Arg1:T92 Arg2:T90	
+T94	Location 5210 5219	cryovials
+T95	Device 5225 5234	cryocanes
+T96	Temperature 5251 5260	room temp
+T97	Time 5265 5275	15 minutes
+T98	Location 5284 5288	dark
+R13	Setting Arg1:E49 Arg2:T96	
+R14	Setting Arg1:E49 Arg2:T97	
+T99	Temperature 5300 5303	4°C
+T100	Device 4940 4947	filters
+T101	Temperature 4964 4969	-20°C
+R15	Setting Arg1:E41 Arg2:T101	
+T102	Device 4892 4904	filter tower
+T103	Reagent 4910 4916	MilliQ
+T104	Reagent 4868 4874	sample
+T105	Reagent 4807 4815	filtrate
+T106	Modifier 4824 4836	acid-cleaned
+T107	Amount 4837 4842	50 mL
+T108	Location 4843 4855	conical tube
+R16	Measure Arg1:T108 Arg2:T107	
+R17	Mod-Link Arg1:T108 Arg2:T106	
+T109	Modifier 4687 4702	ethanol-cleaned
+T110	Device 4703 4710	forceps
+T111	Location 4751 4764	12-well plate
+T112	Seal 4787 4800	aluminum foil
+T113	Modifier 4777 4786	combusted
+R18	Mod-Link Arg1:T112 Arg2:T113	
+R19	Mod-Link Arg1:T110 Arg2:T109	
+T114	Action 4714 4718	fold
+E43	Action:T114 Acts-on:T115 Using:T110
+T115	Device 4719 4725	filter
+T116	Generic-Measure 4729 4733	half
+R20	Setting Arg1:E43 Arg2:T116	
+T35	Location 4768 4773	piece
+R21	Or Arg1:T111 Arg2:T35	
+R22	Meronym Arg1:T35 Arg2:T112	
+T117	Amount 4585 4593	20-40 mL
+T118	Reagent 4597 4602	media
+T119	Reagent 4606 4613	culture
+T120	Device 4621 4634	filter funnel
+T121	Device 4651 4657	vacuum
+T122	Device 4668 4674	filter
+T123	Action 4678 4681	dry
+E35	Action:T123 Acts-on:T122
+R23	Measure Arg1:T118 Arg2:T117	
+R24	Measure Arg1:T119 Arg2:T117	
+R25	Or Arg1:T118 Arg2:T119	
+T32	Temperature 4116 4121	-80°C
+T124	Device 2829 2835	Accuri
+T125	Action 2839 2848	determine
+E32	Action:T125 Measure-Type-Link:T126
+T126	Measure-Type 2849 2856	density
+T127	Reagent 2805 2821	cell concentrate
+R26	Meronym Arg1:T84 Arg2:T127	
+T128	Reagent 2864 2869	cells
+T129	Generic-Measure 2873 2897	normal growth conditions
+T130	Device 2905 2911	Accuri
+T131	Action 2912 2915	run
+E46	Action:T131 Acts-on:T130
+T132	Action 2920 2932	calculations
+E51	Action:T132 
+R27	Measure Arg1:T128 Arg2:T129	
+T133	Modifier 2977 2988	appropriate
+T134	Measure-Type 2989 2995	volume
+T135	Action 3071 3078	deplete
+E52	Action:T135 Acts-on:T136 Using:T137
+T136	Location 3079 3093	culture flasks
+T137	Reagent 3103 3119	cell concentrate
+T139	Amount 3831 3835	1 mL
+T140	Reagent 3839 3846	culture
+T141	Modifier 3852 3859	sterile
+T142	Amount 3860 3866	1.2 mL
+T143	Location 3867 3880	cryovial tube
+T144	Amount 3886 3891	10 µL
+T145	Concentration 3892 3895	25%
+T146	Reagent 3896 3910	glutaraldehyde
+T147	Modifier 3934 3940	gently
+R28	Measure Arg1:T146 Arg2:T145	
+R29	Measure Arg1:T146 Arg2:T144	
+R30	Mod-Link Arg1:E25 Arg2:T147	
+T148	Amount 3964 3970	500 µL
+T149	Modifier 3976 3985	duplicate
+T150	Location 3986 3994	cryovial
+R31	Mod-Link Arg1:T150 Arg2:T149	
+R32	Setting Arg1:E27 Arg2:T148	
+T151	Location 4001 4010	cryovials
+T152	Device 4016 4025	cryocanes
+T153	Temperature 4042 4045	4°C
+T154	Time 4050 4060	30 minutes
+T155	Location 4068 4072	dark
+R33	Setting Arg1:E29 Arg2:T153	
+R34	Setting Arg1:E29 Arg2:T154	
+T156	Reagent 4090 4105	liquid nitrogen
+R35	Setting Arg1:E31 Arg2:T32	
+R36	Setting Arg1:E50 Arg2:T99	
+R37	Measure Arg1:T140 Arg2:T139	
+R38	Measure Arg1:T143 Arg2:T142	
+R39	Mod-Link Arg1:T143 Arg2:T141	
+T157	Reagent 3037 3058	experimental nutrient
+T158	Action 3059 3066	replete
+E53	Action:T158 Acts-on:T136 Using:T137
+R44	Mod-Link Arg1:T53 Arg2:T51	
+R45	Mod-Link Arg1:T54 Arg2:T52	
+R46	Setting Arg1:E2 Arg2:T53	
+T159	Action 0 24	Nutrient deplete/replete
+E54	Action:T159 
+T160	Reagent 25 38	algal culture
+T161	Method 43 61	elemental analysis
+T162	Reagent 62 69	Culture
+T163	Method 70 81	Preparation
+T164	Measure-Type 82 99	GrowthComparative
+T165	Modifier 130 148	well-characterized
+T166	Reagent 149 163	culture growth
+R47	Mod-Link Arg1:T166 Arg2:T165	
+T167	Generic-Measure 271 285	10 generations
+T168	Method 317 331	centrifugation
+T169	Method 336 348	resuspension
+T170	Modifier 449 464	semi-continuous
+T171	Reagent 465 472	culture
+R48	Mod-Link Arg1:T171 Arg2:T170	
+T172	Measure-Type 734 746	cell density
+T173	Action 643 649	Ensure
+E55	Action:T173 Measure-Type-Link:T174
+T174	Measure-Type 650 662	cell density
+T175	Modifier 559 560	~
+T176	Measure-Type 538 545	biomass
+T177	Numerical 560 563	10%
+R49	Mod-Link Arg1:T177 Arg2:T175	
+T178	Method 564 572	recovery
+T179	Reagent 576 581	cells
+T180	Method 588 602	centrifugation
+T181	Action 607 614	washing
+E56	Action:T181 
+T182	Modifier 624 640	strain dependent
+R50	Mod-Link Arg1:E56 Arg2:T182	
+T183	Reagent 791 815	Ostreococcus lucimarinus
+T184	Reagent 828 835	culture
+T185	Method 836 847	preparation
+T186	Temperature 868 872	18°C
+T187	Time 874 884	14:10 hour
+T188	Measure-Type 903 919	light irradiance
+T189	Modifier 923 924	~
+T190	Generic-Measure 924 938	100 µE m-2 s-1
+R51	Mod-Link Arg1:T190 Arg2:T189	
+R52	Of-Type Arg1:T190 Arg2:T188	
+T191	Reagent 940 952	Growth media
+T192	Reagent 954 956	L1
+T193	Reagent 962 983	natural seawater base
+R53	Meronym Arg1:T193 Arg2:T192	
+R54	Coreference-Link Arg1:T192 Arg2:T191	
+T194	Concentration 1004 1026	7x105 – 2x107 cells/mL
+T195	Generic-Measure 1059 1070	(mL-1)3x107
+T196	Action 1183 1201	Dilution/ Transfer
+E57	Action:T196 
+T197	Measure-Type 1120 1131	Growth Rate
+T198	Generic-Measure 1134 1181	(d-1)NA0.5270.6280.5580.3840.7200.6390.5540.261
+R55	Of-Type Arg1:T198 Arg2:T197	
+T199	Measure-Type 1237 1244	density
+T200	Generic-Measure 1245 1291	(mL-1)5x1065x1065x1065x1065x1065x1065x1061x107
+R56	Of-Type Arg1:T200 Arg2:T199	
+T201	Measure-Type 1294 1300	Volume
+T202	Amount 1301 1347	(mL)30x386x3172x380x9125x9257x9401x9401x93.6 L
+T203	Modifier 1354 1355	~
+T204	Generic-Measure 1355 1368	7 generations
+R57	Mod-Link Arg1:T204 Arg2:T203	
+T205	Method 1388 1402	centrifugation
+T206	Action 1070 1074	Skip
+E58	Action:T206 
+T207	Measure-Type 1051 1058	density
+R58	Of-Type Arg1:T195 Arg2:T207	
+T208	Generic-Measure 1074 1118	1.5x1071x1079x1068x1061x1079x1061x1071.4x107
+R59	Setting Arg1:E58 Arg2:T208	
+T209	Measure-Type 1422 1429	volumes
+T210	Reagent 1439 1455	omics experiment
+T211	Measure-Type 1456 1469	Concentration
+T212	Method 1474 1486	Resuspension
+T213	Measure-Type 1500 1515	culture biomass
+T214	Measure-Type 1540 1546	volume
+T215	Action 1534 1539	split
+E59	Action:T215 Measure-Type-Link:T214
+T216	Modifier 1560 1561	2
+T217	Modifier 1565 1579	4 acid-cleaned
+T218	Modifier 1584 1594	autoclaved
+R60	Or Arg1:T217 Arg2:T216	
+T219	Location 1595 1613	centrifuge bottles
+R61	Mod-Link Arg1:T219 Arg2:T218	
+R62	Mod-Link Arg1:T219 Arg2:T217	
+R63	Mod-Link Arg1:T219 Arg2:T216	
+T220	Action 1615 1620	Weigh
+E60	Action:T220 Acts-on:T222
+T221	Action 1625 1632	balance
+E61	Action:T221 Acts-on:T222
+T222	Location 1633 1640	bottles
+T223	Action 1644 1652	removing
+E62	Action:T223 Measure-Type-Link:T224
+T224	Measure-Type 1653 1659	volume
+T225	Location 1666 1678	bottle pairs
+T226	Amount 1690 1696	0.01 g
+R64	Measure Arg1:T225 Arg2:T226	
+T228	Location 1722 1729	bottles
+T229	Location 1733 1737	hood
+T231	Measure-Type 1750 1759	axenicity
+T230	Action 1741 1749	maintain
+E63	Action:T230 Measure-Type-Link:T231
+T227	Action 1717 1721	open
+E64	Action:T227 Acts-on:T228 Site:T229
+T232	Action 1761 1766	Carry
+E65	Action:T232 Acts-on:T233 Site:T234
+T233	Location 1767 1774	bottles
+T234	Device 1783 1812	Sorvall RC 26 Plus centrifuge
+T235	Numerical 1859 1860	4
+T236	Location 1861 1879	centrifuge bottles
+R65	Measure Arg1:T236 Arg2:T235	
+T237	Device 1892 1896	pins
+T238	Device 1913 1918	rotor
+T239	Device 1938 1948	centrifuge
+T240	Action 1922 1928	placed
+E66	Action:T240 Acts-on:T238 Site:T239
+T241	Action 2028 2032	Spin
+E67	Action:T241 
+T242	Device 2060 2065	Rotor
+T243	Generic-Measure 2068 2072	GS-3
+T244	Measure-Type 2100 2105	Speed
+T245	Speed 2108 2116	7300 RPM
+T246	Speed 2132 2142	10,000 rcf
+T247	Device 2153 2164	large rotor
+T248	Measure-Type 2167 2171	Time
+T249	Time 2174 2186	0:32 minutes
+T250	Time 2197 2205	2 minute
+T251	Reagent 2217 2223	strain
+T252	Measure-Type 2232 2236	Temp
+T253	Temperature 2239 2248	+20/+25°C
+T254	Measure-Type 2278 2282	temp
+T255	Action 2288 2297	shut down
+E68	Action:T255 
+T256	Temperature 2301 2309	max temp
+R66	Setting Arg1:T242 Arg2:T243	
+R67	Coreference-Link Arg1:T246 Arg2:T245	
+R68	Setting Arg1:T247 Arg2:T246	
+R69	Setting Arg1:E68 Arg2:T256	
+T257	Action 2322 2326	spin
+E69	Action:T257 
+T80	Reagent 2628 2635	culture
+T258	Measure-Type 2636 2642	volume
+T259	Action 2670 2679	Resuspend
+E70	Action:T259 Acts-on:T260 Measure-Type-Link:T261 Site:T267 Using:T262
+T260	Reagent 2680 2685	cells
+T261	Measure-Type 2693 2699	volume
+T262	Reagent 2703 2726	nutrient deplete medium
+T263	Modifier 2735 2736	~
+T264	Amount 2736 2738	5%
+R42	Mod-Link Arg1:T264 Arg2:T263	
+T265	Reagent 2754 2761	culture
+T266	Measure-Type 2762 2768	volume
+T267	Location 2777 2783	bottle
+T268	Reagent 2934 2954	Experimental Culture
+T269	Method 2955 2965	Initiation
+R43	Measure Arg1:T265 Arg2:T264	
+T270	Device 3005 3011	Accuri
+T271	Measure-Type 3134 3141	density
+T272	Reagent 3223 3228	media
+T273	Modifier 3229 3242	pre-aliquoted
+T274	Location 3246 3265	experimental flasks
+R40	Mod-Link Arg1:T272 Arg2:T273	
+T275	Measure-Type 3295 3309	target density
+T276	Measure-Type 3314 3320	volume
+T277	Reagent 3331 3352	experimental cultures
+T278	Modifier 3363 3373	inoculated
+R41	Mod-Link Arg1:T277 Arg2:T278	
+T279	Method 3394 3397	FCM
+T280	Device 3402 3408	Accuri
+T138	Action 3383 3389	sample
+E71	Action:T138 
+T281	Measure-Type 3470 3481	growth rate
+T282	Measure-Type 3433 3439	growth
+T283	Reagent 3489 3514	nutrient deplete cultures
+T284	Measure-Type 3516 3521	GRDEP
+T285	Measure-Type 3558 3569	growth rate
+T286	Reagent 3577 3593	replete cultures
+T287	Measure-Type 3595 3606	GRDEP/GRREP
+T288	Modifier 3607 3608	<
+T289	Generic-Measure 3609 3612	0.5
+R70	Mod-Link Arg1:T289 Arg2:T288	
+R71	Of-Type Arg1:T289 Arg2:T287	
+T290	Action 3615 3622	collect
+E72	Action:T290 Acts-on:T291
+T291	Reagent 3623 3630	samples
+T292	Method 3635 3638	FCM
+T293	Measure-Type 3646 3657	cell counts
+T294	Method 3663 3681	elemental analyses
+T295	Reagent 3689 3707	particulate carbon
+T296	Reagent 3708 3716	nitrogen
+T297	Reagent 3721 3731	phosphorus
+T298	Reagent 3744 3763	dissolved nutrients
+T299	Method 3766 3797	Sample CollectionFlow Cytometry
+T300	Method 3799 3802	FCM
+T301	Measure-Type 3808 3819	cell counts
+T302	Concentration 3912 3917	0.25%
+T303	Measure-Type 3924 3928	conc
+T304	Method 4128 4136	analysis
+T305	Reagent 4996 5000	DAPI
+T306	Method 5006 5016	microscopy
+T307	Action 5020 5026	assess
+E73	Action:T307 Measure-Type-Link:T308
+T308	Measure-Type 5027 5036	axenicity
+T309	Action 4984 4994	processing
+E74	Action:T309 
+T310	Action 4925 4932	samples
+E75	Action:T310 
+T311	Action 4683 4686	Use
+E76	Action:T311 Acts-on:T110
+T312	Method 5310 5318	analysis
+T313	Action 5327 5333	stored
+E77	Action:T313 
+T314	Time 5338 5350	several days
+T315	Action 5354 5366	flash frozen
+E78	Action:T315 Site:T316
+T316	Reagent 5370 5385	liquid nitrogen
+T317	Action 5390 5396	stored
+E79	Action:T317 
+T318	Temperature 5400 5405	-80°C
+T319	Action 5408 5425	Sample Processing
+E80	Action:T319 
+T320	Reagent 5427 5434	Samples
+T321	Method 5439 5457	elemental analysis
+R72	Setting Arg1:E77 Arg2:T314	
+R73	Setting Arg1:E79 Arg2:T318	
+R74	Or Arg1:E78 Arg2:E77	
+T322	Modifier 4546 4561	ethanol-cleaned
+T323	Device 4562 4569	forceps
+T324	Action 4542 4545	Use
+E81	Action:T324 Acts-on:T323 Site:T325
+T325	Location 4573 4577	hood
+T326	Modifier 4138 4147	Dissolved
+T327	Modifier 4152 4163	Particulate
+T328	Method 4164 4182	Elemental Analysis
+T329	Method 4184 4186	EA
+T330	Reagent 4192 4222	cellular elemental composition
+T331	Modifier 4225 4234	dissolved
+T332	Reagent 4235 4243	nutrient
+T333	Measure-Type 4244 4258	concentrations
+R75	Mod-Link Arg1:T332 Arg2:T331	
+T334	Action 4267 4275	Separate
+E82	Action:T334 Acts-on:T335
+T335	Device 4276 4283	filters
+T336	Reagent 4305 4311	sample
+T337	Method 4316 4321	POC/N
+T338	Method 4326 4338	POP analyses
+R76	Mod-Link Arg1:T323 Arg2:T322	
+T339	Device 4351 4358	filters
+T340	Action 4367 4376	collected
+E83	Action:T340 Acts-on:T339
+T341	Reagent 4389 4409	technical replicates
+T342	Reagent 4419 4425	sample
+T343	Action 4432 4438	Set up
+E84	Action:T343 Acts-on:T346
+T344	Modifier 4442 4454	acid-cleaned
+T345	Modifier 4459 4469	autoclaved
+T346	Device 4470 4487	glass filter unit
+T347	Modifier 4493 4506	pre-combusted
+T348	Size 4507 4511	25mm
+T349	Device 4512 4539	Advantec glass fiber filter
+R77	Measure Arg1:T349 Arg2:T348	
+R78	Mod-Link Arg1:T349 Arg2:T347	
+R79	Mod-Link Arg1:T346 Arg2:T345	
+R80	Mod-Link Arg1:T346 Arg2:T344	

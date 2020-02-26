@@ -1,0 +1,401 @@
+T1	Action 80 83	Add
+E1	Action:T1 Acts-on:T58
+T2	Action 127 135	incubate
+E2	Action:T2 Using:T62
+T3	Action 203 213	Centrifuge
+E3	Action:T3 
+T4	Action 244 251	discard
+E4	Action:T4 Acts-on:T65
+T5	Action 292 295	Add
+E5	Action:T5 
+T6	Action 339 347	incubate
+E6	Action:T6 
+T7	Action 415 425	Centrifuge
+E7	Action:T7 
+T8	Action 456 463	discard
+E8	Action:T8 Acts-on:T80
+T9	Action 504 507	Add
+E9	Action:T9 Acts-on:T73
+T10	Action 531 539	incubate
+E10	Action:T10 Using:T76
+T12	Action 653 656	Add
+E12	Action:T12 Acts-on:T86
+T13	Action 678 681	mix
+E13	Action:T13 
+T14	Action 719 729	Centrifuge
+E14	Action:T14 
+T15	Action 771 777	remove
+E15	Action:T15 Acts-on:T93 Site:T95
+T16	Action 827 830	Add
+E16	Action:T16 Acts-on:T97 Site:T98
+T17	Action 877 883	invert
+E17	Action:T17 Count:T99
+T18	Action 906 914	Incubate
+E18	Action:T18 Acts-on:T101
+T19	Action 952 955	Add
+E19	Action:T19 Acts-on:T105
+T20	Action 989 992	mix
+E20	Action:T20 
+T21	Action 1030 1040	Centrifuge
+E21	Action:T21 Acts-on:T109
+T22	Action 1079 1087	Transfer
+E22	Action:T22 Acts-on:T115 Site:T117
+T23	Action 1124 1135	precipitate
+E23	Action:T23 Acts-on:T118 Using:T120
+T24	Action 1176 1182	Invert
+E24	Action:T24 Acts-on:T114 Count:T112
+T25	Action 1264 1267	add
+E25	Action:T25 Acts-on:T121
+T26	Action 1306 1316	Centrifuge
+E26	Action:T26 
+T27	Action 1366 1372	Remove
+E27	Action:T27 Acts-on:T127
+T28	Action 1390 1393	Add
+E28	Action:T28 Acts-on:T130 Site:T131
+T29	Action 1428 1434	invert
+E29	Action:T29 Count:T132
+T30	Action 1473 1483	Centrifuge
+E30	Action:T30 
+T31	Action 1510 1516	Decant
+E31	Action:T31 Acts-on:T137
+T32	Action 1520 1531	pipette off
+E32	Action:T32 Acts-on:T137
+T33	Action 1552 1558	Invert
+E33	Action:T33 Acts-on:T138 Site:T140
+T34	Action 1660 1663	Add
+E34	Action:T34 Acts-on:T147 Site:T148
+T35	Action 1694 1702	Incubate
+E35	Action:T35 
+T36	Action 1845 1850	Store
+E36	Action:T36 Acts-on:T158
+T37	Action 1910 1920	Centrifuge
+E37	Action:T37 
+T38	Action 1951 1958	discard
+E38	Action:T38 Acts-on:T165
+T39	Action 1999 2002	Add
+E39	Action:T39 Acts-on:T168
+T40	Action 2046 2054	incubate
+E40	Action:T40 Using:T172
+T41	Action 2122 2132	Centrifuge
+E41	Action:T41 
+T42	Action 2163 2170	discard
+E42	Action:T42 Acts-on:T175
+T43	Action 2191 2194	Add
+E43	Action:T43 Acts-on:T178
+T44	Action 2218 2226	incubate
+E44	Action:T44 Using:T181
+T45	Action 2294 2304	Centrifuge
+E45	Action:T45 
+T46	Action 2335 2342	discard
+E46	Action:T46 Acts-on:T184
+T47	Action 2363 2366	Add
+E47	Action:T47 Acts-on:T186
+T48	Action 2398 2408	homogenize
+E48	Action:T48 Acts-on:T187 Using:T188 Product:T190
+T49	Action 2516 2524	Incubate
+E49	Action:T49 Acts-on:T193
+T50	Action 2573 2577	heat
+E50	Action:T50 
+T51	Action 2633 2636	add
+E51	Action:T51 Acts-on:T199 Site:T202
+T52	Action 2696 2704	incubate
+E52	Action:T52 
+T53	Action 2728 2734	Invert
+E53	Action:T53 Acts-on:T205
+T54	Action 2857 2861	chop
+E54	Action:T54 Acts-on:T210
+T55	Action 2899 2904	place
+E55	Action:T55 Site:T212
+T56	Action 627 631	cool
+E56	Action:T56 Acts-on:T83
+T11	Action 1824 1829	added
+E11	Action:T11 
+T57	Amount 84 89	100µl
+T58	Reagent 90 96	xylene
+T59	Reagent 100 122	safe xylene substitute
+T60	Temperature 139 155	room temperature
+T61	Time 160 169	5 minutes
+T62	Method 175 190	constant mixing
+R1	Measure Arg1:T58 Arg2:T57	
+R2	Or Arg1:T58 Arg2:T59	
+R3	Setting Arg1:E2 Arg2:T60	
+R4	Setting Arg1:E2 Arg2:T61	
+T63	Speed 217 225	14,000xg
+T64	Time 230 239	2 minutes
+T65	Reagent 252 258	xylene
+T66	Reagent 262 279	xylene substitute
+R5	Or Arg1:T65 Arg2:T66	
+R6	Setting Arg1:E3 Arg2:T63	
+R7	Setting Arg1:E3 Arg2:T64	
+T67	Amount 296 301	100µl
+T68	Reagent 302 308	xylene
+T69	Reagent 312 334	safe xylene substitute
+T70	Speed 429 437	14,000xg
+T71	Amount 508 513	100µl
+T72	Time 442 451	2 minutes
+T73	Reagent 519 526	ethanol
+T74	Time 544 553	5 minutes
+T75	Temperature 557 573	room temperature
+T76	Method 579 594	constant mixing
+T77	Time 372 381	5 minutes
+T78	Method 387 402	constant mixing
+T79	Temperature 351 367	room temperature
+T80	Reagent 464 470	xylene
+T81	Reagent 474 491	xylene substitute
+R8	Measure Arg1:T68 Arg2:T67	
+R9	Or Arg1:T68 Arg2:T69	
+R10	Setting Arg1:E6 Arg2:T79	
+T82	Concentration 514 518	100%
+T83	Reagent 617 623	sample
+T84	Temperature 635 651	room temperature
+T85	Amount 657 662	200µl
+T86	Reagent 663 673	chloroform
+T87	Action 685 694	inverting
+E57	Action:T87 Acts-on:T88 Count:T89
+T88	Location 699 703	tube
+T89	Numerical 704 711	several
+T90	Time 734 744	10 minutes
+T91	Speed 748 756	14,000xg
+T92	Modifier 761 770	carefully
+T93	Reagent 782 793	upper phase
+T94	Modifier 799 804	clean
+T95	Location 805 826	microcentrifuge tube.
+R11	Mod-Link Arg1:E15 Arg2:T92	
+R12	Setting Arg1:E14 Arg2:T90	
+R13	Setting Arg1:E14 Arg2:T91	
+R14	Mod-Link Arg1:T95 Arg2:T94	
+T96	Amount 831 835	50µl
+T97	Reagent 836 858	DNA Stripping Solution
+T98	Reagent 866 872	sample
+T99	Numerical 884 891	several
+T100	Action 901 904	mix
+E58	Action:T100 
+R15	Measure Arg1:T97 Arg2:T96	
+T101	Reagent 919 925	sample
+T102	Time 930 942	5-10 minutes
+T103	Temperature 946 950	60°C
+T104	Amount 956 961	100µl
+T105	Reagent 962 984	Precipitation Solution
+T106	Action 996 1005	inverting
+E59	Action:T106 Acts-on:T107 Count:T108
+T107	Location 1010 1014	tube
+T108	Numerical 1015 1022	several
+T109	Reagent 1045 1051	sample
+T110	Speed 1055 1063	14,000xg
+T111	Time 1068 1077	5 minutes
+T112	Numerical 1193 1195	10
+T113	Reagent 1221 1224	DNA
+T114	Location 1187 1192	tubes
+T115	Reagent 1092 1103	supernatant
+T116	Modifier 1109 1114	clean
+T117	Location 1115 1119	tube
+T118	Reagent 1140 1151	genomic DNA
+T119	Amount 1157 1162	500µl
+T120	Reagent 1163 1174	isopropanol
+T121	Reagent 1272 1287	Mussel Glycogen
+T122	Amount 1268 1271	2µl
+T123	Speed 1320 1328	14,000xg
+T124	Time 1333 1342	5 minutes
+T125	Action 1346 1352	pellet
+E60	Action:T125 Acts-on:T126
+T126	Reagent 1353 1364	genomic DNA
+T127	Reagent 1377 1388	supernatant
+T128	Amount 1394 1399	700µl
+T129	Concentration 1400 1403	70%
+T130	Reagent 1404 1411	ethanol
+T131	Location 1419 1423	tube
+T132	Numerical 1435 1442	several
+T133	Action 1452 1456	wash
+E61	Action:T133 Acts-on:T134
+T134	Reagent 1461 1471	DNA pellet
+T135	Time 1488 1496	1 minute
+T136	Speed 1500 1508	14,000xg
+T137	Reagent 1536 1548	ethanol wash
+T138	Location 1563 1567	tube
+T139	Modifier 1573 1578	clean
+T140	Location 1579 1596	absorbent surface
+T141	Time 1601 1616	several minutes
+T142	Modifier 1630 1636	excess
+T143	Reagent 1637 1644	ethanol
+T144	Modifier 1626 1629	any
+T145	Action 1648 1658	drain away
+E62	Action:T145 Acts-on:T143
+T146	Amount 1664 1668	50µl
+T147	Reagent 1669 1678	TE Buffer
+T148	Reagent 1686 1692	pellet
+T149	Temperature 1706 1722	room temperature
+T150	Modifier 1727 1735	at least
+T151	Time 1736 1746	15 minutes
+T152	Action 1750 1759	rehydrate
+E63	Action:T152 
+T153	Amount 1771 1774	1µl
+T154	Reagent 1775 1790	LongLife™ RNase
+T155	Modifier 1795 1800	every
+T156	Amount 1801 1806	100µl
+T157	Reagent 1807 1816	TE Buffer
+T158	Reagent 1851 1854	DNA
+T159	Temperature 1858 1861	4°C
+T160	Action 1885 1890	store
+E64	Action:T160 
+T161	Temperature 1894 1899	-20°C
+T162	Temperature 1903 1908	-80°C
+T163	Speed 1924 1932	14,000xg
+T164	Time 1937 1946	2 minutes
+T165	Reagent 1959 1965	xylene
+T166	Reagent 1969 1986	xylene substitute
+T167	Amount 2003 2008	100µl
+T168	Reagent 2009 2015	xylene
+T169	Reagent 2019 2041	safe xylene substitute
+T170	Temperature 2058 2074	room temperature
+T171	Time 2079 2088	5 minutes
+T172	Method 2094 2109	constant mixing
+T173	Speed 2136 2144	14,000xg
+T174	Time 2149 2158	2 minutes
+T175	Reagent 2171 2178	ethanol
+T176	Amount 2195 2200	100µl
+T177	Concentration 2201 2205	100%
+T178	Reagent 2206 2213	ethanol
+T179	Temperature 2244 2260	room temperature
+T180	Time 2231 2240	5 minutes
+T181	Method 2266 2281	constant mixing
+T182	Speed 2308 2316	14,000xg
+T183	Time 2321 2330	2 minutes
+T184	Reagent 2343 2350	ethanol
+T185	Amount 2367 2372	100µl
+T186	Reagent 2373 2393	Genomic Lysis Buffer
+T187	Reagent 2413 2419	sample
+T188	Device 2427 2443	microfuge pestle
+T189	Modifier 2452 2462	homogenous
+T190	Reagent 2463 2473	suspension
+T191	Modifier 2487 2500	approximately
+T192	Generic-Measure 2501 2514	30-60 strokes
+T193	Reagent 2529 2535	sample
+T194	Temperature 2539 2546	55-60°C
+T195	Time 2551 2564	15-60 minutes
+T196	Temperature 2590 2594	60°C
+T197	Modifier 2578 2589	higher than
+T198	Amount 2637 2640	1µl
+T199	Reagent 2641 2662	Proteinase K solution
+T200	Modifier 2667 2672	every
+T201	Amount 2673 2678	100µl
+T202	Reagent 2679 2691	Lysis Buffer
+T203	Temperature 2708 2712	60°C
+T204	Time 2717 2726	1-2 hours
+T205	Location 2739 2743	tube
+T206	Modifier 2744 2756	periodically
+T207	Modifier 2757 2761	each
+T208	Time 2762 2766	hour
+T209	Amount 2862 2869	0.5-2mg
+T210	Reagent 2888 2894	tissue
+T211	Amount 2908 2913	1.5ml
+T212	Location 2914 2928	microfuge tube
+R16	Measure Arg1:T210 Arg2:T209	
+R17	Measure Arg1:T212 Arg2:T211	
+R18	Mod-Link Arg1:T208 Arg2:T207	
+R19	Mod-Link Arg1:E53 Arg2:T206	
+R20	Setting Arg1:E53 Arg2:T208	
+R21	Measure Arg1:T199 Arg2:T198	
+R22	Measure Arg1:T202 Arg2:T201	
+R23	Mod-Link Arg1:T202 Arg2:T200	
+R24	Setting Arg1:E52 Arg2:T203	
+R25	Setting Arg1:E52 Arg2:T204	
+R26	Mod-Link Arg1:T196 Arg2:T197	
+R27	Setting Arg1:E50 Arg2:T196	
+R28	Setting Arg1:E49 Arg2:T194	
+R29	Setting Arg1:E49 Arg2:T195	
+R30	Measure Arg1:T186 Arg2:T185	
+R31	Mod-Link Arg1:T190 Arg2:T189	
+R32	Mod-Link Arg1:T192 Arg2:T191	
+R33	Setting Arg1:E48 Arg2:T192	
+R34	Setting Arg1:E45 Arg2:T182	
+R35	Setting Arg1:E45 Arg2:T183	
+R36	Measure Arg1:T178 Arg2:T177	
+R37	Measure Arg1:T178 Arg2:T176	
+R38	Setting Arg1:E44 Arg2:T180	
+R39	Setting Arg1:E44 Arg2:T179	
+R40	Setting Arg1:E41 Arg2:T173	
+R41	Setting Arg1:E41 Arg2:T174	
+R42	Measure Arg1:T168 Arg2:T167	
+R43	Or Arg1:T168 Arg2:T169	
+R44	Setting Arg1:E40 Arg2:T170	
+R45	Setting Arg1:E40 Arg2:T171	
+R46	Setting Arg1:E37 Arg2:T163	
+R47	Setting Arg1:E37 Arg2:T164	
+R48	Or Arg1:T165 Arg2:T166	
+R49	Setting Arg1:E36 Arg2:T159	
+R50	Setting Arg1:E64 Arg2:T161	
+R51	Or Arg1:T161 Arg2:T162	
+R52	Setting Arg1:E35 Arg2:T149	
+R53	Mod-Link Arg1:T151 Arg2:T150	
+R54	Setting Arg1:E35 Arg2:T151	
+R55	Measure Arg1:T147 Arg2:T146	
+R56	Mod-Link Arg1:T140 Arg2:T139	
+R57	Setting Arg1:E33 Arg2:T141	
+R58	Mod-Link Arg1:T143 Arg2:T142	
+R59	Mod-Link Arg1:T143 Arg2:T144	
+R60	Setting Arg1:E30 Arg2:T135	
+R61	Setting Arg1:E30 Arg2:T136	
+R62	Measure Arg1:T130 Arg2:T129	
+R63	Measure Arg1:T130 Arg2:T128	
+R64	Setting Arg1:E26 Arg2:T123	
+R65	Setting Arg1:E26 Arg2:T124	
+R66	Measure Arg1:T121 Arg2:T122	
+T213	Action 1205 1216	precipitate
+E65	Action:T213 Acts-on:T113
+R67	Mod-Link Arg1:T117 Arg2:T116	
+R68	Measure Arg1:T120 Arg2:T119	
+R69	Setting Arg1:E21 Arg2:T110	
+R70	Setting Arg1:E21 Arg2:T111	
+R71	Measure Arg1:T105 Arg2:T104	
+R72	Setting Arg1:E18 Arg2:T102	
+R73	Setting Arg1:E18 Arg2:T103	
+R74	Measure Arg1:T86 Arg2:T85	
+R75	Setting Arg1:E56 Arg2:T84	
+R76	Measure Arg1:T73 Arg2:T82	
+R77	Measure Arg1:T73 Arg2:T71	
+R78	Setting Arg1:E10 Arg2:T74	
+R79	Setting Arg1:E10 Arg2:T75	
+R80	Setting Arg1:E7 Arg2:T70	
+R81	Setting Arg1:E7 Arg2:T72	
+R82	Or Arg1:T80 Arg2:T81	
+T214	Method 0 9	OmniPrep™
+T215	Modifier 14 26	High Quality
+T216	Reagent 27 38	Genomic DNA
+T217	Method 39 49	Extraction
+T218	Modifier 55 72	Paraffin-Embedded
+T219	Reagent 73 79	Tissue
+R83	Mod-Link Arg1:T219 Arg2:T218	
+R84	Mod-Link Arg1:T216 Arg2:T215	
+T220	Action 193 197	wash
+E66	Action:T220 
+T221	Action 282 286	wash
+E67	Action:T221 
+T222	Action 405 409	wash
+E68	Action:T222 
+T223	Action 494 498	wash
+E69	Action:T223 
+T224	Action 597 601	wash
+E70	Action:T224 
+T225	Reagent 1250 1253	DNA
+T226	Method 1254 1262	recovery
+T227	Reagent 1293 1304	DNA carrier
+R85	Or Arg1:E31 Arg2:E32	
+T228	Action 1989 1993	wash
+E71	Action:T228 
+T229	Action 2112 2116	wash
+E72	Action:T229 
+T230	Action 2181 2185	wash
+E73	Action:T230 
+T231	Action 2284 2288	wash
+E74	Action:T231 
+T232	Action 2353 2357	wash
+E75	Action:T232 
+T233	Reagent 2619 2622	DNA
+T234	Method 2623 2631	recovery
+T235	Action 2783 2789	digest
+E76	Action:T235 Acts-on:T237
+T236	Modifier 2790 2804	hard to handle
+T237	Reagent 2805 2812	tissues
+R86	Mod-Link Arg1:T237 Arg2:T236	
+T238	Modifier 2870 2887	paraffin-embedded
+R87	Mod-Link Arg1:T210 Arg2:T238	

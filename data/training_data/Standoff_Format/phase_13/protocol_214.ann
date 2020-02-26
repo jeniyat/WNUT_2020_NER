@@ -1,0 +1,139 @@
+T1	Action 67 74	Suspend
+E1	Action:T1 Acts-on:T15 Site:T16
+T2	Action 169 177	Incubate
+E2	Action:T2 Acts-on:T19
+T3	Action 234 242	incubate
+E3	Action:T3 
+T4	Action 260 267	Prepare
+E4	Action:T4 Acts-on:T24
+T5	Action 399 404	Check
+E5	Action:T5 Acts-on:T32 Using:T33 Measure-Type-Link:T51
+T6	Action 571 574	add
+E6	Action:T6 Acts-on:T37 Site:T39
+T7	Action 676 684	quantify
+E7	Action:T7 Measure-Type-Link:T56
+T8	Action 771 779	identify
+E8	Action:T8 Measure-Type-Link:T59 Using:T60
+T9	Action 918 925	perform
+E9	Action:T9 Using:T64
+T10	Action 1053 1061	Quantify
+E10	Action:T10 Acts-on:T71 Measure-Type-Link:T72
+T11	Action 1095 1101	remove
+E11	Action:T11 
+T12	Action 1116 1125	Calculate
+E12	Action:T12 Measure-Type-Link:T73
+T13	Action 1445 1454	Calculate
+E13	Action:T13 Measure-Type-Link:T74
+T14	Action 1775 1784	Calculate
+E14	Action:T14 
+T15	Reagent 75 86	genomic DNA
+T16	Reagent 102 121	nuclease-free water
+T17	Action 125 132	produce
+E15	Action:T17 Measure-Type-Link:T47 Acts-on:T46
+T18	Concentration 158 167	0.1 μg/μL
+R1	Setting Arg1:E15 Arg2:T18	
+T19	Reagent 178 192	rehydrated DNA
+T20	Time 193 202	overnight
+T21	Temperature 206 209	4°C
+R2	Setting Arg1:E2 Arg2:T20	
+R3	Setting Arg1:E2 Arg2:T21	
+T22	Time 247 250	1 h
+T23	Temperature 254 258	65°C
+R4	Setting Arg1:E3 Arg2:T22	
+R5	Setting Arg1:E3 Arg2:T23	
+T24	Reagent 268 284	working solution
+T25	Action 288 294	adding
+E16	Action:T25 Acts-on:T27 Site:T29
+T26	Amount 295 299	1 μL
+T27	Reagent 307 321	stock solution
+T28	Amount 325 330	99 μL
+T29	Reagent 334 353	nuclease-free water
+T30	Action 357 364	produce
+E17	Action:T30 Measure-Type-Link:T49
+T31	Concentration 390 397	1 ng/μL
+R6	Setting Arg1:E17 Arg2:T31	
+R7	Measure Arg1:T27 Arg2:T26	
+R8	Measure Arg1:T29 Arg2:T28	
+T32	Reagent 430 436	stocks
+T33	Device 460 496	Quant-iT™ PicoGreen® dsDNA Assay Kit
+T34	Reagent 497 508	Genomic DNA
+T35	Action 516 522	stored
+E18	Action:T35 Acts-on:T34
+T36	Temperature 526 532	−20 °C
+R9	Setting Arg1:E18 Arg2:T36	
+T37	Reagent 582 594	standard DNA
+T38	Modifier 598 602	each
+T39	Reagent 603 609	sample
+T40	Action 613 618	reach
+E19	Action:T40 
+T41	Concentration 620 628	0.1-1.0%
+R10	Mod-Link Arg1:T39 Arg2:T38	
+R11	Setting Arg1:E19 Arg2:T41	
+T42	Modifier 0 8	Internal
+T43	Reagent 9 20	Genomic DNA
+R12	Mod-Link Arg1:T43 Arg2:T42	
+T44	Method 34 66	Quantitative Metagenome Analysis
+T45	Measure-Type 92 98	volume
+T46	Reagent 135 140	stock
+T47	Measure-Type 141 154	concentration
+T48	Action 216 223	rocking
+E20	Action:T48 
+T49	Measure-Type 373 386	concentration
+T50	Reagent 409 412	DNA
+T51	Measure-Type 413 426	concentration
+T52	Reagent 548 558	sample DNA
+T53	Method 559 569	extraction
+T54	Modifier 619 620	~
+R13	Mod-Link Arg1:T41 Arg2:T54	
+T55	Action 664 674	sequencing
+E21	Action:T55 
+T56	Measure-Type 699 721	genomic standard reads
+T57	Measure-Type 747 763	bit score cutoff
+T58	Numerical 767 769	50
+R14	Of-Type Arg1:T58 Arg2:T57	
+T59	Measure-Type 780 794	standard reads
+T60	Method 798 820	BLASTn homology search
+T61	Reagent 850 856	genome
+T62	Measure-Type 894 910	bit score cutoff
+T63	Numerical 914 916	40
+R15	Of-Type Arg1:T63 Arg2:T62	
+T64	Method 928 934	BLASTx
+T65	Reagent 947 961	RefSeq Protein
+T66	Action 974 982	identify
+E22	Action:T66 Measure-Type-Link:T68 Acts-on:T67
+T67	Reagent 987 994	protein
+T68	Measure-Type 995 1009	encoding reads
+T69	Reagent 1045 1051	genome
+T70	Modifier 1062 1071	recovered
+T71	Reagent 1072 1084	standard DNA
+T72	Measure-Type 1085 1090	reads
+R16	Mod-Link Arg1:T71 Arg2:T70	
+T73	Measure-Type 1130 1149	number of molecules
+T74	Measure-Type 1459 1483	community gene pool size
+T75	Measure-Type 1211 1230	number of molecules
+T76	Reagent 1252 1258	genome
+T77	Measure-Type 1853 1872	number of molecules
+T78	Reagent 1912 1918	sample
+T79	Reagent 1816 1821	genes
+T80	Reagent 1891 1895	gene
+T81	Measure-Type 1509 1541	number of protein encoding genes
+T82	Reagent 1549 1555	sample
+T83	Measure-Type 1560 1596	number of protein encoding sequences
+T84	Reagent 1604 1614	metagenome
+T85	Measure-Type 1952 1956	mass
+T86	Measure-Type 1960 1966	volume
+T87	Reagent 1970 1976	sample
+T88	Action 1990 1999	calculate
+E23	Action:T88 
+T89	Action 1937 1944	divided
+E24	Action:T89 
+T90	Measure-Type 2004 2018	gene abundance
+T91	Measure-Type 2023 2029	volume
+T92	Measure-Type 2033 2039	weight
+T93	Measure-Type 2044 2059	number of genes
+T94	Measure-Type 2106 2138	number of protein encoding genes
+T95	Reagent 2146 2152	sample
+T96	Measure-Type 2157 2193	number of protein encoding sequences
+T97	Reagent 2201 2211	metagenome
+T98	Modifier 437 453	fluorometrically
+R17	Mod-Link Arg1:E5 Arg2:T98	

@@ -1,0 +1,194 @@
+T1	Action 55 59	Thaw
+E1	Action:T1 Acts-on:T18 Site:T20
+T2	Action 165 168	Fix
+E2	Action:T2 Site:T25
+T3	Action 246 249	Dry
+E3	Action:T3 
+T4	Action 286 294	Incubate
+E4	Action:T4 Acts-on:T29 Site:T30
+T5	Action 416 423	Perform
+E5	Action:T5 Using:T41
+T6	Action 473 477	Wash
+E6	Action:T6 Count:T43 Using:T46
+T7	Action 559 568	performed
+E7	Action:T7 Using:T47
+T8	Action 603 611	Incubate
+E8	Action:T8 Acts-on:T48 Using:T50
+T9	Action 869 877	incubate
+E9	Action:T9 Acts-on:T55 Using:T58
+T10	Action 1077 1081	Wash
+E10	Action:T10 Count:T61 Using:T63
+T11	Action 1157 1165	Incubate
+E11	Action:T11 Acts-on:T65 Using:T67 Site:T68 Commands:E26
+T12	Action 1308 1312	Wash
+E12	Action:T12 Count:T70 Using:T73
+T13	Action 1370 1378	Incubate
+E13	Action:T13 Acts-on:T74 Using:T75 Site:T77
+T14	Action 1565 1570	Using
+E14	Action:T14 Acts-on:T81 Acts-on2:T82
+T15	Action 1682 1686	Wash
+E15	Action:T15 Count:T83 Using:T85
+T16	Action 1719 1731	Counterstain
+E16	Action:T16 Count:T86 Using:T89 Count2:T90 Using2:T92
+T17	Action 1804 1813	Coverslip
+E17	Action:T17 Using:T93
+T18	Reagent 67 75	sections
+T19	Modifier 60 66	frozen
+R1	Mod-Link Arg1:T18 Arg2:T19	
+T20	Location 88 99	environment
+T21	Modifier 81 87	sealed
+R2	Mod-Link Arg1:T20 Arg2:T21	
+T22	Time 156 162	1 hour
+R3	Setting Arg1:E1 Arg2:T22	
+T23	Modifier 142 155	Approximately
+R4	Mod-Link Arg1:T22 Arg2:T23	
+T24	Time 173 182	5 minutes
+T25	Reagent 186 193	acetone
+T26	Temperature 195 200	-20°C
+R5	Setting Arg1:E2 Arg2:T24	
+R6	Setting Arg1:E2 Arg2:T26	
+T27	Time 254 264	10 minutes
+T28	Temperature 268 284	room temperature
+R7	Setting Arg1:E3 Arg2:T27	
+R8	Setting Arg1:E3 Arg2:T28	
+T29	Reagent 295 303	sections
+T30	Reagent 307 312	TBS-T
+T31	Reagent 320 324	Tris
+T32	Reagent 333 337	NaCl
+T33	Amount 314 319	50 mM
+T34	Amount 326 332	150 mM
+T35	Action 339 345	adjust
+E18	Action:T35 Acts-on:T32 Acts-on2:T31 Using:T36 Using2:T38 Product:T30
+T36	Reagent 354 357	HCl
+T37	pH 361 364	7.6
+T38	Reagent 376 384	Tween 20
+T39	Concentration 370 375	0.05%
+T40	Time 390 400	15 minutes
+R9	Setting Arg1:E4 Arg2:T40	
+R10	Measure Arg1:T31 Arg2:T33	
+R11	Measure Arg1:T32 Arg2:T34	
+R12	Setting Arg1:E18 Arg2:T37	
+R13	Measure Arg1:T38 Arg2:T39	
+T41	Method 424 441	antigen retrieval
+T42	Method 445 461	enzyme digestion
+R14	Or Arg1:T41 Arg2:T42	
+T43	Numerical 478 483	twice
+T44	Time 488 497	2 minutes
+T45	Modifier 498 502	each
+T46	Reagent 508 513	TBS-T
+T47	Method 525 551	staining of surface marker
+R15	Setting Arg1:E6 Arg2:T44	
+R16	Mod-Link Arg1:T44 Arg2:T45	
+T48	Reagent 612 620	sections
+T49	Concentration 626 628	1%
+T50	Reagent 629 641	Triton X-100
+T51	Reagent 653 656	TBS
+T52	Action 642 649	diluted
+E19	Action:T52 Acts-on:T50 Using:T51
+R17	Measure Arg1:T50 Arg2:T49	
+T53	Time 661 671	30 minutes
+T54	Temperature 675 691	room temperature
+R18	Setting Arg1:E8 Arg2:T53	
+R19	Setting Arg1:E8 Arg2:T54	
+T55	Reagent 878 886	sections
+T56	Modifier 887 895	directly
+T57	Concentration 901 903	5%
+T58	Reagent 904 951	normal mouse/rat/rabbit serum blocking solution
+T59	Time 956 966	30 minutes
+T60	Temperature 970 986	room temperature
+R20	Mod-Link Arg1:E9 Arg2:T56	
+R21	Measure Arg1:T58 Arg2:T57	
+R22	Setting Arg1:E9 Arg2:T59	
+R23	Setting Arg1:E9 Arg2:T60	
+T61	Numerical 1082 1093	three times
+T62	Time 1098 1107	2 minutes
+T63	Reagent 1118 1123	TBS-T
+T64	Modifier 1108 1112	each
+R24	Mod-Link Arg1:T62 Arg2:T64	
+R25	Setting Arg1:E10 Arg2:T62	
+T65	Reagent 1166 1174	sections
+T66	Concentration 1180 1182	3%
+T67	Reagent 1183 1187	H2O2
+T68	Reagent 1191 1194	TBS
+T69	Time 1199 1209	10 minutes
+R26	Measure Arg1:T67 Arg2:T66	
+R27	Setting Arg1:E11 Arg2:T69	
+T70	Numerical 1313 1320	3 times
+T71	Time 1325 1334	2 minutes
+T72	Modifier 1335 1339	each
+T73	Reagent 1345 1350	TBS-T
+R28	Setting Arg1:E12 Arg2:T71	
+R29	Mod-Link Arg1:T71 Arg2:T72	
+T74	Reagent 1379 1387	sections
+T75	Reagent 1393 1409	primary antibody
+T76	Concentration 1417 1432	optimaldilution
+R30	Measure Arg1:T75 Arg2:T76	
+T77	Reagent 1495 1518	antibodydilution buffer
+T78	Time 1524 1537	30-60 minutes
+T79	Temperature 1541 1557	room temperature
+R31	Setting Arg1:E13 Arg2:T78	
+R32	Setting Arg1:E13 Arg2:T79	
+T80	Modifier 1573 1593	purifiedunconjugated
+T81	Reagent 1594 1602	antibody
+T82	Reagent 1616 1633	secondary reagent
+R33	Mod-Link Arg1:T81 Arg2:T80	
+T83	Numerical 1687 1692	twice
+T84	Time 1697 1706	2 minutes
+T85	Reagent 1712 1717	TBS-T
+R34	Setting Arg1:E15 Arg2:T84	
+T86	Numerical 1732 1737	twice
+T87	Time 1742 1751	3 minutes
+T88	Modifier 1752 1756	each
+T89	Reagent 1762 1771	DAPI Wash
+T90	Numerical 1772 1777	twice
+T91	Time 1782 1791	2 minutes
+T92	Reagent 1797 1802	TBS-T
+R35	Setting Arg1:E16 Arg2:T87	
+R36	Mod-Link Arg1:T87 Arg2:T88	
+R37	Setting Arg1:E16 Arg2:T91	
+T93	Reagent 1819 1825	Mowiol
+T94	Reagent 1829 1844	mounting medium
+R38	Or Arg1:T93 Arg2:T94	
+T95	Action 0 26	Immunofluorescent Staining
+E20	Action:T95 Acts-on:T96 Site:T97
+T96	Reagent 30 35	Foxp3
+T97	Reagent 39 54	Frozen Sections
+T98	Reagent 126 139	watercrystals
+T99	Action 216 219	use
+E21	Action:T99 Count:T101
+T100	Modifier 220 235	more often than
+T101	Numerical 236 237	5
+R39	Mod-Link Arg1:E21 Arg2:T100	
+T102	Action 723 742	background staining
+E22	Action:T102 
+T103	Method 751 761	incubation
+T104	Reagent 799 807	sections
+T105	Modifier 808 820	thicker than
+T106	Size 821 826	10 μm
+R40	Mod-Link Arg1:T106 Arg2:T105	
+R41	Measure Arg1:T104 Arg2:T106	
+T107	Action 842 850	Blocking
+E23	Action:T107 Acts-on:T110
+T108	Action 860 867	washing
+E24	Action:T108 
+T109	Reagent 994 1006	Normal serum
+T110	Reagent 829 841	Normal Serum
+T111	Reagent 1057 1065	antibody
+T112	Modifier 1047 1056	secondary
+R42	Mod-Link Arg1:T111 Arg2:T112	
+T113	Reagent 1125 1146	Endogenous Peroxidase
+T114	Action 1147 1155	Blocking
+E25	Action:T114 Acts-on:T113
+T115	Action 1213 1218	block
+E26	Action:T115 Acts-on:T116
+T116	Reagent 1219 1240	endogenous peroxidise
+T117	Reagent 1259 1273	liver sections
+T118	Reagent 1298 1305	tissues
+T119	Modifier 1352 1359	Primary
+T120	Reagent 1360 1368	Antibody
+R43	Mod-Link Arg1:T120 Arg2:T119	
+T121	Reagent 1434 1457	Mouse Foxp3-Alexa Fluor
+T122	Action 1646 1654	staining
+E27	Action:T122 
+T123	Method 1668 1680	amplifcation
+T124	Measure-Type 346 348	pH

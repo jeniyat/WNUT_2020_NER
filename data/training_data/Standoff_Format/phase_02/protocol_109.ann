@@ -1,0 +1,188 @@
+T1	Action 52 57	Place
+E1	Action:T1 Acts-on:T32 Site:T34
+T2	Action 109 112	Add
+E2	Action:T2 Acts-on:T36
+T3	Action 145 151	vortex
+E3	Action:T3 Commands:E32
+T4	Action 160 170	Centrifuge
+E4	Action:T4 Acts-on:T38
+T5	Action 210 216	Remove
+E5	Action:T5 Acts-on:T41 Using:T42
+T6	Action 321 329	Dissolve
+E6	Action:T6 Acts-on:T43 Using:T45
+T7	Action 433 439	Vortex
+E7	Action:T7 
+T9	Action 501 507	Vortex
+E9	Action:T9 
+T11	Action 569 576	Combine
+E11	Action:T11 Acts-on:T47 Acts-on2:T49
+T12	Action 657 663	vortex
+E12	Action:T12 Commands:E35
+T13	Action 676 681	place
+E13	Action:T13 
+T14	Action 735 738	add
+E14	Action:T14 Acts-on:T52
+T15	Action 780 783	Add
+E15	Action:T15 Acts-on:T54 Site:T55
+T16	Action 838 841	Add
+E16	Action:T16 Acts-on:T57 Site:T58
+T17	Action 823 829	vortex
+E17	Action:T17 Commands:E36
+T18	Action 880 885	Clean
+E18	Action:T18 Acts-on:T59 Acts-on2:T60 Using:T61 Using2:T62
+T19	Action 957 960	mix
+E19	Action:T19 Acts-on:T64 Using:T65
+T20	Action 1028 1035	pipette
+E20	Action:T20 Acts-on:T68 Site:T69
+T21	Action 1079 1084	Place
+E21	Action:T21 Using:T70 Acts-on:T71
+T22	Action 1158 1163	Place
+E22	Action:T22 Using:T72 Acts-on:T73
+T23	Action 1237 1241	View
+E23	Action:T23 Acts-on:T74 Using3:T77 Using:T120 Using2:T75
+T24	Action 1335 1340	Count
+E24	Action:T24 Acts-on:T78
+T25	Action 1408 1418	switch off
+E25	Action:T25 Acts-on:T79
+T26	Action 1438 1445	turn on
+E26	Action:T26 Acts-on:T80
+T27	Action 1483 1488	count
+E27	Action:T27 Acts-on:T81
+T28	Action 1560 1568	counting
+E28	Action:T28 Acts-on:T82 Acts-on2:T83 Count:T121
+T29	Action 1693 1703	determined
+E29	Action:T29 
+T30	Action 1756 1762	stored
+E30	Action:T30 Site:T87 Acts-on:T122
+T31	Amount 58 62	1 mL
+T32	Reagent 66 72	sample
+T33	Amount 80 86	1.5 mL
+T34	Location 87 107	microcentrifuge tube
+R1	Measure Arg1:T34 Arg2:T33	
+R2	Measure Arg1:T32 Arg2:T31	
+T35	Amount 113 117	1 μL
+T36	Reagent 118 140	Iron Chloride Solution
+R3	Measure Arg1:T36 Arg2:T35	
+T38	Reagent 175 181	sample
+T39	Speed 185 193	~14K RCF
+T40	Time 198 208	20 minutes
+R4	Setting Arg1:E4 Arg2:T39	
+R5	Setting Arg1:E4 Arg2:T40	
+T41	Reagent 217 228	supernatant
+T42	Device 237 244	pipette
+T43	Reagent 334 340	pellet
+T44	Amount 344 349	10 μL
+T45	Reagent 353 373	Ascorbic-EDTA Buffer
+R6	Measure Arg1:T45 Arg2:T44	
+T8	Action 449 468	pipette up and down
+E8	Action:T8 
+T10	Action 517 536	pipette up and down
+E10	Action:T10 
+T46	Amount 577 582	10 μL
+T47	Reagent 583 589	sample
+R7	Measure Arg1:T47 Arg2:T46	
+T48	Amount 627 631	2 μL
+T49	Reagent 632 655	SYBR Gold Working Stock
+R8	Measure Arg1:T49 Arg2:T48	
+T50	Time 694 704	15 minutes
+R9	Setting Arg1:E13 Arg2:T50	
+T51	Amount 739 743	1 μL
+T52	Reagent 747 778	Ascorbic Acid Antifade Solution
+R10	Measure Arg1:T52 Arg2:T51	
+T53	Amount 784 788	5 μL
+T54	Reagent 792 800	glycerol
+R11	Measure Arg1:T54 Arg2:T53	
+T55	Reagent 804 818	stained sample
+T56	Amount 842 846	2 µL
+T57	Reagent 847 868	Working Bead Solution
+R12	Measure Arg1:T57 Arg2:T56	
+T58	Reagent 872 878	sample
+T59	Location 886 898	glass slides
+T60	Location 903 914	cover slips
+T61	Reagent 920 931	isopropanol
+T62	Device 936 944	Kimwipes
+T63	Modifier 946 956	Thoroughly
+R13	Mod-Link Arg1:E19 Arg2:T63	
+T64	Reagent 965 984	sample/bead mixture
+T65	Method 988 1009	pipetting up and down
+T66	Modifier 1016 1027	immediately
+R14	Mod-Link Arg1:E20 Arg2:T66	
+T67	Amount 1036 1041	10 μL
+T68	Mention 1045 1047	it
+R15	Measure Arg1:T68 Arg2:T67	
+T69	Location 1055 1077	glass microscope slide
+T70	Seal 1087 1096	coverslip
+T71	Reagent 1106 1113	mixture
+T72	Seal 1166 1175	coverslip
+T73	Reagent 1185 1192	mixture
+T74	Reagent 1242 1249	viruses
+T77	Device 1307 1333	epifluorescence microscope
+T78	Reagent 1355 1362	viruses
+T79	Device 1423 1433	excitation
+T80	Device 1469 1479	microscope
+T81	Reagent 1493 1498	beads
+T82	Reagent 1569 1576	viruses
+T83	Reagent 1581 1586	beads
+T84	Concentration 1656 1669	concentration
+T85	Reagent 1673 1680	viruses
+R16	Measure Arg1:T85 Arg2:T84	
+R17	Setting Arg1:E29 Arg2:T84	
+T86	Temperature 1766 1771	-20ºC
+R18	Setting Arg1:E30 Arg2:T86	
+T87	Location 1786 1806	microcentrifuge tube
+T88	Action 1848 1858	mounted on
+E31	Action:T88 Site:T89
+T89	Location 1859 1865	slides
+T90	Method 0 9	Wet-mount
+T91	Method 21 32	Enumeration
+T92	Modifier 36 43	Aquatic
+T93	Reagent 44 51	Viruses
+R19	Mod-Link Arg1:T93 Arg2:T92	
+T94	Action 155 158	mix
+E32	Action:T94 
+T95	Reagent 275 281	pellet
+T96	Reagent 285 301	Fe oxyhydroxides
+T97	Numerical 386 394	100-fold
+T98	Measure-Type 395 408	concentration
+T99	Modifier 416 424	original
+T100	Reagent 425 431	sample
+R20	Mod-Link Arg1:T100 Arg2:T99	
+R21	Meronym Arg1:T96 Arg2:T95	
+T101	Action 472 478	ensure
+E33	Action:T101 Using:T103
+T102	Action 540 546	ensure
+E34	Action:T102 Using:T104
+T103	Method 488 499	dissolution
+T104	Method 556 567	dissolution
+T105	Modifier 591 603	concentrated
+T106	Modifier 607 621	unconcentrated
+R22	Or Arg1:T105 Arg2:T106	
+R23	Mod-Link Arg1:T47 Arg2:T105	
+R24	Mod-Link Arg1:T47 Arg2:T106	
+T107	Action 667 670	mix
+E35	Action:T107 
+T37	Reagent 709 715	sample
+T108	Modifier 719 733	unconcentrated
+R25	Mod-Link Arg1:T37 Arg2:T108	
+T109	Action 833 836	mix
+E36	Action:T109 
+T110	Reagent 1948 1953	virus
+T111	Measure-Type 1954 1967	concentration
+T112	Seal 1147 1156	coverslip
+T113	Seal 1226 1235	coverslip
+T114	Action 1124 1132	trapping
+E37	Action:T114 Acts-on:T115 Site:T112
+T115	Reagent 1133 1136	air
+T116	Action 1203 1211	trapping
+E38	Action:T116 Acts-on:T117 Site:T113
+T117	Reagent 1212 1215	air
+T75	Method 1264 1274	excitation
+T118	Modifier 1256 1257	~
+T119	Generic-Measure 1257 1263	495 nm
+R26	Mod-Link Arg1:T119 Arg2:T118	
+T76	Numerical 1278 1283	1000X
+T120	Method 1284 1297	magnification
+T121	Numerical 1621 1624	100
+T122	Reagent 1741 1748	samples
+T123	Modifier 1732 1740	Prepared
+R27	Mod-Link Arg1:T122 Arg2:T123	

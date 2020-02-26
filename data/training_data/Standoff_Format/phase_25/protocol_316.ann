@@ -1,0 +1,137 @@
+T1	Action 17 23	Dilute
+E1	Action:T1 Acts-on:T17 Product:T19
+T2	Action 85 89	pour
+E2	Action:T2 Acts-on:T24 Site:T22
+T3	Action 110 113	Add
+E3	Action:T3 Acts-on:T28
+T4	Action 141 144	mix
+E4	Action:T4 
+T5	Action 157 161	Pour
+E5	Action:T5 Acts-on:T31
+T6	Action 222 225	add
+E6	Action:T6 Acts-on:T38 Site:T40 Using:T41
+T7	Action 288 292	Take
+E7	Action:T7 Acts-on:T42 Site:T45
+T8	Action 366 371	pipet
+E8	Action:T8 Using:T46 Using2:T50 Site:T51 Count:T53
+T9	Action 419 427	transfer
+E9	Action:T9 Site:T57 Site2:T56
+T10	Action 477 482	Pipet
+E10	Action:T10 Using:T59 Acts-on:T60 Count:T61
+T11	Action 551 555	Seal
+E11	Action:T11 Acts-on:T68 Using:T69
+T12	Action 609 614	Place
+E12	Action:T12 Site:T70
+T13	Action 641 648	Re-seal
+E13	Action:T13 Acts-on:T74 Using:T75
+T14	Action 691 696	place
+E14	Action:T14 Site:T76
+T15	Action 742 747	place
+E15	Action:T15 Acts-on:T81 Site:T83
+T16	Concentration 24 28	100%
+T17	Reagent 29 37	Glycerol
+T18	Concentration 41 44	50%
+T19	Reagent 45 53	Glycerol
+R1	Measure Arg1:T19 Arg2:T18	
+R2	Measure Arg1:T17 Arg2:T16	
+T20	Modifier 60 67	sterile
+T21	Amount 68 72	50ml
+T22	Location 73 84	Falcon tube
+T23	Concentration 95 99	100%
+T24	Reagent 100 108	glycerol
+R3	Measure Arg1:T24 Arg2:T23	
+T25	Amount 90 94	25ml
+R4	Measure Arg1:T24 Arg2:T25	
+R5	Measure Arg1:T22 Arg2:T21	
+R6	Mod-Link Arg1:T22 Arg2:T20	
+T26	Amount 114 118	25ml
+T27	Modifier 119 129	autoclaved
+T28	Reagent 130 136	MilliQ
+T29	Modifier 145 155	thoroughly
+R7	Mod-Link Arg1:E4 Arg2:T29	
+R8	Mod-Link Arg1:T28 Arg2:T27	
+R9	Measure Arg1:T28 Arg2:T26	
+T30	Modifier 167 174	sterile
+T31	Location 175 184	reservoir
+R10	Mod-Link Arg1:T31 Arg2:T30	
+T32	Modifier 189 196	sterile
+T33	Amount 197 202	500ml
+T34	Modifier 203 207	deep
+T35	Location 208 221	96 well plate
+T36	Amount 226 231	240μl
+T37	Concentration 235 238	50%
+T38	Reagent 239 247	glycerol
+T39	Modifier 251 255	each
+T40	Location 256 260	well
+T41	Location 280 285	pipet
+R12	Mod-Link Arg1:T35 Arg2:T34	
+R11	Measure Arg1:T35 Arg2:T33	
+R13	Mod-Link Arg1:T35 Arg2:T32	
+R14	Measure Arg1:T38 Arg2:T37	
+R15	Measure Arg1:T38 Arg2:T36	
+R16	Mod-Link Arg1:T40 Arg2:T39	
+R17	Meronym Arg1:T40 Arg2:T35	
+T42	Reagent 293 302	pore film
+T43	Amount 310 313	2ml
+T44	Modifier 314 318	deep
+T45	Location 319 332	96 well plate
+R18	Mod-Link Arg1:T45 Arg2:T44	
+R19	Measure Arg1:T45 Arg2:T43	
+T46	Location 359 364	pipet
+T47	Amount 353 358	200μl
+T48	Generic-Measure 270 279	8 channel
+R20	Setting Arg1:T41 Arg2:T48	
+T49	Generic-Measure 342 352	12 channel
+R21	Setting Arg1:T46 Arg2:T47	
+R22	Setting Arg1:T46 Arg2:T49	
+T50	Method 372 383	up and down
+T51	Location 389 395	bottom
+T52	Location 399 404	wells
+T53	Numerical 405 406	3
+T54	Amount 428 433	160μl
+T55	Modifier 439 443	each
+T56	Location 444 448	well
+T57	Location 456 461	plate
+T58	Reagent 467 475	glycerol
+R23	Mod-Link Arg1:T56 Arg2:T55	
+R25	Meronym Arg1:T58 Arg2:T57	
+R26	Meronym Arg1:T51 Arg2:T52	
+R24	Setting Arg1:E9 Arg2:T54	
+T59	Method 483 494	up and down
+T60	Reagent 498 506	glycerol
+T61	Numerical 507 508	5
+T62	Action 516 522	Repeat
+E16	Action:T62 Using:T63 Acts-on:T65
+T63	Method 523 529	step 4
+T64	Modifier 534 537	all
+T65	Location 538 548	rows/wells
+R27	Mod-Link Arg1:T65 Arg2:T64	
+T66	Amount 556 561	500ml
+T67	Modifier 562 566	deep
+T68	Location 567 580	96 well plate
+T69	Seal 603 607	foil
+R28	Mod-Link Arg1:T68 Arg2:T67	
+R29	Measure Arg1:T68 Arg2:T66	
+T70	Device 618 624	shaker
+T71	Time 629 639	30 minutes
+R30	Setting Arg1:E12 Arg2:T71	
+T72	Amount 649 652	2ml
+T73	Modifier 653 657	deep
+T74	Location 658 671	96 well plate
+T75	Seal 677 686	pore film
+T76	Device 700 712	refrigerator
+R31	Mod-Link Arg1:T74 Arg2:T73	
+R32	Measure Arg1:T74 Arg2:T72	
+T79	Amount 748 753	500ml
+T80	Modifier 754 758	deep
+T81	Location 759 764	plate
+T82	Temperature 768 773	-80ºC
+T83	Device 774 781	freezer
+R33	Setting Arg1:T83 Arg2:T82	
+R34	Mod-Link Arg1:T81 Arg2:T80	
+R35	Measure Arg1:T81 Arg2:T79	
+T77	Method 0 16	Cryopreservation
+T78	Location 582 596	glycerol plate
+T84	Time 720 730	30 minutes
+T85	Device 734 740	shaker
+R36	Setting Arg1:T85 Arg2:T84	

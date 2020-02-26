@@ -1,0 +1,59 @@
+T1	Action 66 73	Prepare
+E1	Action:T1 Product:T12
+T2	Action 89 97	diluting
+E2	Action:T2 Acts-on:T13 Using:T15 Site:T16
+T3	Action 141 148	Prepare
+E3	Action:T3 Product:T18
+T4	Action 201 209	diluting
+E4	Action:T4 Acts-on:T19 Using:T21 Site:T22
+T5	Action 253 261	Assemble
+E5	Action:T5 Acts-on:T23
+T6	Action 341 353	Pre-incubate
+E6	Action:T6 
+T7	Action 379 382	Add
+E7	Action:T7 Acts-on:T28
+T8	Action 402 405	Mix
+E8	Action:T8 
+T9	Action 418 426	Incubate
+E9	Action:T9 
+T10	Action 447 454	Proceed
+E10	Action:T10 Using:T32
+T11	Concentration 74 79	300nM
+T12	Reagent 80 85	sgRNA
+T13	Reagent 102 107	stock
+T14	Modifier 113 126	nuclease-free
+T15	Reagent 127 132	water
+T16	Location 136 139	ice
+R1	Mod-Link Arg1:T15 Arg2:T14	
+R2	Measure Arg1:T12 Arg2:T11	
+T17	Concentration 149 153	30nM
+T18	Reagent 154 167	substrate DNA
+T19	Reagent 214 219	stock
+T20	Modifier 225 238	nuclease-free
+T21	Reagent 239 244	water
+T22	Location 248 251	ice
+R3	Mod-Link Arg1:T21 Arg2:T20	
+R4	Measure Arg1:T18 Arg2:T17	
+T23	Reagent 266 274	reaction
+T24	Temperature 278 294	room temperature
+R5	Setting Arg1:E5 Arg2:T24	
+T25	Time 358 368	10 minutes
+T26	Temperature 372 376	37⁰C
+R6	Setting Arg1:E6 Arg2:T25	
+R7	Setting Arg1:E6 Arg2:T26	
+T27	Concentration 383 387	30nM
+T28	Reagent 388 401	substrate DNA
+T29	Modifier 406 416	thoroughly
+R8	Mod-Link Arg1:E8 Arg2:T29	
+R9	Measure Arg1:T28 Arg2:T27	
+T30	Temperature 430 434	37°C
+T31	Time 439 445	1 hour
+R10	Setting Arg1:E9 Arg2:T30	
+R11	Setting Arg1:E9 Arg2:T31	
+T32	Method 460 477	fragment analysis
+T33	Method 0 18	In vitro digestion
+T34	Reagent 22 25	DNA
+T35	Reagent 31 44	Cas9 Nuclease
+T36	Reagent 46 57	S. pyogenes
+T37	Measure-Type 325 331	volume
+T38	Amount 332 337	30 µl

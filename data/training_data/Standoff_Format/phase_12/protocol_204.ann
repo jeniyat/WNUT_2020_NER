@@ -1,0 +1,28 @@
+T1	Action 12 20	Dissolve
+E1	Action:T1 Acts-on:T6 Site:T8
+T2	Action 59 65	Adjust
+E2	Action:T2 Using:T10
+T3	Action 95 101	Adjust
+E3	Action:T3 Acts-on:T13
+T4	Action 138 147	Autoclave
+E4	Action:T4 
+T5	Amount 21 28	30.275g
+T6	Reagent 29 40	Trizma base
+T7	Amount 44 49	200ml
+T8	Reagent 50 56	MilliQ
+T9	pH 69 75	pH 7.5
+T10	Reagent 81 84	HCl
+T11	Amount 87 91	35ml
+T12	Amount 118 123	250ml
+T13	Reagent 129 135	MilliQ
+R1	Measure Arg1:T6 Arg2:T5	
+R2	Measure Arg1:T8 Arg2:T7	
+R3	Setting Arg1:E2 Arg2:T9	
+R4	Measure Arg1:T10 Arg2:T11	
+R5	Setting Arg1:E3 Arg2:T12	
+T14	Concentration 0 2	1M
+T15	Reagent 3 10	Tris-HC
+T16	Modifier 86 87	~
+R6	Mod-Link Arg1:T11 Arg2:T16	
+T17	Measure-Type 108 114	volume
+R7	Measure Arg1:T15 Arg2:T14	

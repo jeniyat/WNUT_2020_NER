@@ -1,0 +1,76 @@
+T1	Action 123 131	filtered
+E1	Action:T1 Acts-on:T14
+T2	Action 136 147	centrifuged
+E2	Action:T2 Acts-on:T14
+T3	Action 192 199	spotted
+E3	Action:T3 Acts-on:T16 Site:T20
+T4	Action 303 309	absorb
+E4	Action:T4 Acts-on:T22
+T5	Action 321 327	Remove
+E5	Action:T5 Acts-on:T23
+T6	Action 355 363	bringing
+E6	Action:T6 Acts-on:T25 Site:T26
+T7	Action 475 481	remove
+E7	Action:T7 Acts-on:T29 Using:T28
+T8	Action 495 500	Stain
+E8	Action:T8 Acts-on:T30
+T9	Action 509 516	placing
+E9	Action:T9 Acts-on2:T33 Site:T30
+T10	Action 593 599	Remove
+E10	Action:T10 Acts-on:T36 Using:T37
+T11	Action 627 634	Air dry
+E11	Action:T11 
+T12	Action 672 679	examine
+E12	Action:T12 Acts-on:T39 Using:T40
+T13	Amount 83 86	5µL
+T14	Reagent 93 111	enrichment culture
+T15	Amount 116 122	0.2 µm
+T16	Reagent 166 187	cell-free supernatant
+T17	Time 149 155	10 min
+T18	Speed 159 164	3000g
+T19	Modifier 205 226	carbon/formvar-coated
+T20	Location 227 252	electron microscope grids
+T21	Time 314 319	2 min
+T22	Mention 281 283	It
+T23	Reagent 328 334	sample
+T24	Size 366 371	small
+T25	Device 383 404	piece of filter paper
+T26	Location 438 454	side of the grid
+T29	Reagent 460 466	sample
+T28	Method 486 493	wicking
+T30	Reagent 501 505	grid
+T31	Amount 522 525	5μL
+T32	Concentration 534 536	2%
+T33	Reagent 537 551	Uranyl Acetate
+T34	Reagent 556 572	Phosphotungstate
+T35	Time 578 591	15-30 seconds
+T36	Reagent 600 605	stain
+T37	Method 609 616	wicking
+T38	Time 648 658	10 minutes
+T39	Reagent 660 667	Samples
+T40	Method 684 716	transmission electron microscopy
+R1	Measure Arg1:T14 Arg2:T13	
+R2	Or Arg1:T13 Arg2:T15	
+R3	Setting Arg1:E2 Arg2:T17	
+R4	Setting Arg1:E2 Arg2:T18	
+R5	Mod-Link Arg1:T20 Arg2:T19	
+R7	Setting Arg1:E4 Arg2:T21	
+R8	Setting Arg1:T25 Arg2:T24	
+T27	Modifier 405 430	perpendicular to the grid
+R9	Mod-Link Arg1:T26 Arg2:T27	
+R10	Measure Arg1:T33 Arg2:T32	
+R11	Measure Arg1:T33 Arg2:T31	
+R12	Meronym Arg1:T33 Arg2:T34	
+R13	Setting Arg1:E9 Arg2:T35	
+R14	Setting Arg1:E11 Arg2:T38	
+T41	Method 0 19	Electron microscopy
+T42	Reagent 24 29	virus
+T43	Method 30 44	identification
+T44	Reagent 49 54	virus
+T45	Method 55 82	assemblage characterization
+T46	Size 377 381	1cm2
+R6	Coreference-Link Arg1:T46 Arg2:T24	
+T47	Modifier 639 647	at least
+R15	Mod-Link Arg1:T38 Arg2:T47	
+T48	Method 718 721	TEM
+T49	Generic-Measure 755 762	100 keV

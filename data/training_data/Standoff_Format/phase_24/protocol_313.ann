@@ -1,0 +1,164 @@
+T1	Action 132 142	centrifuge
+E1	Action:T1 
+T2	Action 171 177	pellet
+E2	Action:T2 Acts-on:T31
+T3	Action 79 82	add
+E3	Action:T3 Site:T25 Acts-on:T27 Site2:T28
+T4	Action 185 192	Discard
+E4	Action:T4 Acts-on:T32
+T5	Action 210 213	Add
+E5	Action:T5 Acts-on:T34 Acts-on2:T42 Acts-on3:T44
+T6	Action 360 368	Incubate
+E6	Action:T6 
+T7	Action 405 412	rocking
+E7	Action:T7 
+T8	Action 421 427	vortex
+E8	Action:T8 
+T9	Action 458 468	centrifuge
+E9	Action:T9 Acts-on:T47
+T10	Action 504 511	Replace
+E10	Action:T10 Acts-on:T50 Using:T51
+T11	Action 550 557	discard
+E11	Action:T11 Acts-on:T52
+T12	Action 619 624	Place
+E12	Action:T12 Acts-on:T53 Using:T54 Site:T56
+T13	Action 688 698	centrifuge
+E13	Action:T13 
+T14	Action 727 732	bring
+E14	Action:T14 Acts-on:T59 Site:T60
+T15	Action 772 778	Remove
+E15	Action:T15 Acts-on:T61 Site:T64 Using:T65
+T17	Action 890 897	dialyze
+E17	Action:T17 Site:T72 Using:T75
+T19	Action 1002 1005	mix
+E19	Action:T19 Acts-on:T77 Using2:T79
+T20	Action 1080 1092	concentrated
+E20	Action:T20 Using:T81 Site:T80 Acts-on:T103
+T21	Action 1227 1234	prepare
+E21	Action:T21 Acts-on:T83 Using:T84
+T22	Action 1280 1286	invert
+E22	Action:T22 Acts-on:T85 Site:T87
+T23	Action 1406 1416	centrifuge
+E23	Action:T23 Acts-on:T88
+T24	Action 1450 1457	Replace
+E24	Action:T24 Acts-on:T91 Using:T92
+T25	Location 74 77	ice
+T26	Amount 83 88	0.5ml
+T27	Reagent 89 105	bacteria culture
+T28	Location 111 127	Tube-O-DIALYZER™
+T29	Speed 146 153	5,000xg
+T30	Time 158 167	5 minutes
+T31	Reagent 178 183	cells
+R1	Setting Arg1:E1 Arg2:T29	
+R2	Setting Arg1:E1 Arg2:T30	
+R3	Measure Arg1:T27 Arg2:T26	
+T32	Reagent 197 208	supernatant
+T33	Amount 214 218	50µl
+T34	Reagent 219 233	lysis solution
+T35	Concentration 245 247	1%
+T36	Reagent 248 251	SDS
+T37	Concentration 253 257	0.1N
+T38	Reagent 258 262	NaOH
+T39	Concentration 267 271	10mM
+T40	Reagent 272 276	EDTA
+T41	Amount 293 297	25µl
+T42	Reagent 301 317	Digestion Buffer
+T43	Amount 322 326	10µl
+T44	Reagent 327 358	LongLife™ Proteinase K Solution
+T45	Temperature 372 376	55°C
+T46	Time 381 390	2-4 hours
+T47	Location 473 477	tube
+T48	Time 482 492	20 seconds
+T49	Speed 496 502	1,000g
+T50	Seal 516 519	cap
+T51	Seal 529 541	dialysis cap
+T52	Seal 562 573	storage cap
+T53	Location 629 645	Tube-O-DIALYZER™
+T54	Method 646 657	upside down
+T55	Amount 663 667	50ml
+T56	Location 668 683	centrifuge tube
+T57	Speed 702 708	1000xg
+T58	Time 713 723	30 seconds
+T59	Reagent 737 743	sample
+T60	Location 753 770	dialysis membrane
+T61	Location 783 799	Tube-O-DIALYZER™
+R4	Measure Arg1:T36 Arg2:T35	
+R5	Measure Arg1:T38 Arg2:T37	
+R6	Measure Arg1:T40 Arg2:T39	
+R7	Measure Arg1:T42 Arg2:T41	
+R8	Measure Arg1:T44 Arg2:T43	
+R9	Measure Arg1:T34 Arg2:T33	
+R10	Meronym Arg1:T36 Arg2:T34	
+R11	Meronym Arg1:T38 Arg2:T34	
+R12	Meronym Arg1:T40 Arg2:T34	
+R13	Setting Arg1:E6 Arg2:T45	
+R14	Setting Arg1:E6 Arg2:T46	
+T62	Modifier 396 404	periodic
+R15	Mod-Link Arg1:E7 Arg2:T62	
+R16	Setting Arg1:E9 Arg2:T48	
+R17	Setting Arg1:E9 Arg2:T49	
+R18	Measure Arg1:T56 Arg2:T55	
+R19	Setting Arg1:E13 Arg2:T57	
+R20	Setting Arg1:E13 Arg2:T58	
+T63	Amount 809 813	50ml
+T64	Location 814 818	tube
+T65	Device 824 831	forceps
+T66	Mention 844 846	it
+T67	Action 856 861	slide
+E25	Action:T67 Acts-on:T66 Site:T68
+T68	Reagent 880 885	float
+T69	Modifier 871 879	provided
+T70	Amount 901 906	500ml
+T71	Concentration 907 909	1X
+T72	Reagent 910 919	TE buffer
+T73	Temperature 923 939	room temperature
+T74	Time 944 955	18-24 hours
+T75	Method 961 979	2-3 buffer changes
+R21	Measure Arg1:T64 Arg2:T63	
+R22	Coreference-Link Arg1:T66 Arg2:T61	
+R23	Mod-Link Arg1:T68 Arg2:T69	
+R24	Measure Arg1:T72 Arg2:T71	
+R25	Measure Arg1:T72 Arg2:T70	
+R26	Setting Arg1:E17 Arg2:T73	
+R27	Setting Arg1:E17 Arg2:T74	
+T16	Action 988 993	swirl
+E16	Action:T16 Acts-on:T76
+T18	Modifier 981 987	Gently
+T76	Location 994 998	tube
+T77	Reagent 1006 1014	contents
+R29	Mod-Link Arg1:E16 Arg2:T18	
+T78	Modifier 1018 1022	each
+T79	Method 1023 1036	buffer change
+R28	Or Arg1:T79 Arg2:T78	
+T80	Location 1100 1116	Tube-O-DIALYZER™
+T81	Device 1130 1159	Tube-O-DIALYZER™ Concentrator
+T82	Reagent 1180 1201	Concentrator Solution
+R30	Or Arg1:T81 Arg2:T82	
+T83	Reagent 1239 1251	Concentrator
+T84	Method 1259 1275	the instructions
+T85	Location 1291 1307	Tube-O-DIALYZER™
+T86	Reagent 1324 1327	DNA
+T87	Reagent 1335 1343	solution
+R31	Meronym Arg1:T86 Arg2:T85	
+T88	Location 1421 1425	tube
+T89	Speed 1429 1435	1000xg
+T90	Time 1440 1448	1 minute
+R32	Setting Arg1:E23 Arg2:T89	
+R33	Setting Arg1:E23 Arg2:T90	
+T91	Seal 1462 1474	dialysis cap
+T92	Seal 1484 1494	normal cap
+T93	Method 0 9	MegaLong™
+T94	Method 23 32	Isolation
+T95	Modifier 36 37	>
+T96	Generic-Measure 37 42	100kb
+R34	Mod-Link Arg1:T96 Arg2:T95	
+T97	Reagent 43 54	Genomic DNA
+T98	Reagent 56 69	Bacterial DNA
+T99	Method 435 444	digestion
+T101	Reagent 614 617	DNA
+T100	Method 603 610	storage
+T102	Method 1048 1056	dialysis
+T103	Reagent 1061 1072	genomic DNA
+T104	Method 1348 1361	concentration
+T105	Method 1391 1404	concentration
+T106	Reagent 1500 1511	genomic DNA

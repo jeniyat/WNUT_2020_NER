@@ -1,0 +1,71 @@
+T1	Action 32 36	Thaw
+E1	Action:T1 Acts-on:T2
+T2	Reagent 41 61	T4 DNA Ligase Buffer
+T3	Action 66 77	resuspended
+E2	Action:T3 Acts-on:T2
+T4	Temperature 81 97	room temperature
+T5	Action 99 105	Set up
+E3	Action:T5 Product:T7 Acts-on:T10 Acts-on2:T12
+T6	Modifier 110 119	following
+T7	Reagent 120 136	reaction mixture
+T8	Temperature 140 149	room temp
+T9	Concentration 150 153	10x
+T10	Reagent 155 175	T4 DNA Ligase Buffer
+T11	Amount 177 181	2 ul
+T12	Reagent 183 193	Vector DNA
+T13	Concentration 195 206	0.020, pmol
+R1	Measure Arg1:T12 Arg2:T13	
+R2	Measure Arg1:T12 Arg2:T11	
+R3	Measure Arg1:T10 Arg2:T9	
+R4	Mod-Link Arg1:T7 Arg2:T6	
+R5	Setting Arg1:E3 Arg2:T8	
+T14	Action 208 214	Insert
+E4	Action:T14 Acts-on:T15 Acts-on2:T17 Acts-on3:T19
+T15	Reagent 215 218	DNA
+T16	Concentration 220 230	0.060 pmol
+T17	Reagent 232 251	Nuclease-free Water
+T18	Amount 255 260	20 ul
+T19	Reagent 262 275	T4 DNA Ligase
+T20	Amount 277 281	1 ul
+R6	Measure Arg1:T19 Arg2:T20	
+R7	Measure Arg1:T15 Arg2:T16	
+R8	Measure Arg1:T17 Arg2:T18	
+T21	Modifier 284 290	Gently
+T22	Action 291 294	mix
+E5	Action:T22 Acts-on:T23 Using:T24
+T23	Reagent 299 307	reaction
+T24	Method 311 332	pipetting up and down
+T25	Action 337 346	microfuge
+E6	Action:T25 
+T26	Modifier 347 354	briefly
+R9	Mod-Link Arg1:E6 Arg2:T26	
+R10	Mod-Link Arg1:E5 Arg2:T21	
+T27	Action 373 381	incubate
+E7	Action:T27 Product:T30
+T28	Temperature 385 389	22 C
+T29	Time 394 404	10 minutes
+R11	Setting Arg1:E7 Arg2:T28	
+R12	Setting Arg1:E7 Arg2:T29	
+T30	Reagent 360 371	sticky ends
+T31	Action 406 410	Heat
+E8	Action:T31 Acts-on:T32
+T32	Reagent 411 421	inactivate
+T33	Temperature 425 437	65 degrees C
+T34	Time 442 452	10 minutes
+R13	Setting Arg1:E8 Arg2:T33	
+R14	Setting Arg1:E8 Arg2:T34	
+T35	Action 454 459	Chill
+E9	Action:T35 Site:T36
+T36	Location 463 466	ice
+T37	Action 471 480	transform
+E10	Action:T37 Acts-on:T39 Product:T41
+T38	Amount 481 487	1-5 μl
+T39	Reagent 495 503	reaction
+T40	Amount 509 514	50 μl
+T41	Reagent 515 530	competent cells
+R15	Measure Arg1:T41 Arg2:T40	
+R16	Measure Arg1:T39 Arg2:T38	
+T42	Method 0 8	Ligation
+T43	Reagent 12 23	Sticky Ends
+T44	Reagent 29 31	T4
+R17	Setting Arg1:E2 Arg2:T4	

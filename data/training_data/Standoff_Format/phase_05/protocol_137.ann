@@ -1,0 +1,66 @@
+T1	Action 47 54	Dissect
+E1	Action:T1 Acts-on:T12 Site:T13
+T2	Action 80 87	keeping
+E2	Action:T2 Acts-on:T14 Site:T15 Measure-Type-Link:T43
+T3	Action 143 146	Fix
+E3	Action:T3 Acts-on:T17 Site:T18
+T4	Action 181 185	Wash
+E4	Action:T4 Acts-on:T20 Count:T21 Site:T22
+T5	Action 205 210	Stain
+E5	Action:T5 Acts-on:T23 Site:T24
+T6	Action 271 275	Wash
+E6	Action:T6 Acts-on:T29 Count:T30 Site:T31
+T7	Action 305 312	replace
+E7	Action:T7 Acts-on:T33 Using:T34
+T8	Action 349 361	transferring
+E8	Action:T8 Acts-on:T35 Site:T36
+T9	Action 384 391	imaging
+E9	Action:T9 
+T10	Action 393 398	Image
+E10	Action:T10 
+T11	Action 427 432	store
+E11	Action:T11 Acts-on:T40
+T12	Reagent 55 62	tissues
+T13	Location 66 79	ice cold PBS,
+T14	Reagent 88 95	samples
+T15	Location 99 102	ice
+T17	Reagent 147 154	tissues
+T18	Reagent 161 164	PFA
+T19	Time 169 179	20 minutes
+R2	Setting Arg1:E3 Arg2:T19	
+T20	Reagent 186 193	tissues
+T21	Numerical 194 196	3x
+T22	Reagent 200 203	PBS
+T23	Reagent 211 218	samples
+T24	Reagent 222 230	Nile Red
+T25	Concentration 234 243	0.5 ug/mL
+T26	Action 244 251	diluted
+E12	Action:T26 Site:T27
+T27	Reagent 255 258	PBS
+T28	Time 263 269	1 hour
+R3	Setting Arg1:E5 Arg2:T25	
+R4	Setting Arg1:E12 Arg2:T28	
+T29	Reagent 276 283	tissues
+T30	Numerical 284 286	3x
+T31	Reagent 290 293	PBS
+T32	Modifier 295 304	Carefully
+T33	Reagent 317 320	PBS
+T34	Reagent 326 341	mounting medium
+T35	Reagent 362 369	samples
+T36	Location 373 379	slides
+R5	Mod-Link Arg1:E7 Arg2:T32	
+T37	Modifier 399 410	immediately
+R6	Mod-Link Arg1:E10 Arg2:T37	
+T38	Modifier 415 426	temporarily
+R7	Mod-Link Arg1:E11 Arg2:T38	
+T39	Temperature 443 446	4°C
+T40	Location 433 439	slides
+R8	Setting Arg1:E11 Arg2:T39	
+T41	Action 0 17	Nile Red Staining
+E13	Action:T41 Acts-on:T42
+T42	Reagent 21 46	Drosophila Larval Tissues
+T16	Reagent 118 124	sample
+T43	Measure-Type 125 129	size
+T44	Concentration 158 160	4%
+R1	Measure Arg1:T18 Arg2:T44	
+R9	Or Arg1:E10 Arg2:E11	

@@ -1,0 +1,177 @@
+T1	Action 101 108	collect
+E1	Action:T1 Acts-on:T22 Site:T24 Using:T25
+T2	Action 202 209	Collect
+E2	Action:T2 Acts-on:T27 Product:T28 Acts-on2:T30 Product2:T31
+T3	Action 267 271	Spin
+E3	Action:T3 Acts-on:T32 Using:T35
+T4	Action 472 478	decant
+E4	Action:T4 Acts-on:T36 Site:T39
+T5	Action 537 541	pool
+E5	Action:T5 Acts-on:T40 Acts-on2:T41 Product:T43
+T6	Action 680 686	decant
+E6	Action:T6 Acts-on:T44 Site:T45
+T7	Action 721 733	Flash-freeze
+E7	Action:T7 Acts-on:T46 Site:T48 Using:T49
+T8	Action 785 790	store
+E8	Action:T8 Acts-on:T50 Site:T52
+T11	Action 959 965	Remove
+E11	Action:T11 Acts-on:T9 Site:T54
+T12	Action 1005 1011	Attach
+E12	Action:T12 Acts-on:T57 Site:T58
+T13	Action 1055 1059	Pour
+E13	Action:T13 Acts-on:T60 Site:T61
+T14	Action 1123 1130	Replace
+E14	Action:T14 Acts-on:T63
+T15	Action 1158 1164	filter
+E15	Action:T15 Acts-on:T66 Site:T68
+T16	Action 1319 1325	Repeat
+E16	Action:T16 Using:T69 Acts-on:T71
+T18	Action 1429 1434	Store
+E18	Action:T18 Acts-on:T72
+T19	Action 1530 1535	store
+E19	Action:T19 
+T20	Amount 109 113	10ml
+T22	Location 124 148	experimental bottle/tube
+T23	Amount 156 160	15ml
+T24	Location 161 173	conical tube
+T25	Location 183 200	serological pipet
+T26	Amount 214 218	10ml
+T27	Reagent 219 225	sample
+T28	Reagent 230 233	RNA
+T29	Amount 242 246	10ml
+T30	Reagent 247 253	sample
+T31	Reagent 258 265	protein
+T32	Location 272 277	tubes
+T33	Time 282 292	15 minutes
+T34	Speed 296 304	4700 rpm
+T35	Device 321 342	swinging bucket rotor
+T36	Reagent 479 491	supernatants
+T38	Amount 513 518	50 ml
+T39	Location 519 532	conical tubes
+T40	Reagent 546 549	RNA
+T41	Reagent 554 574	protein supernatants
+T42	Amount 599 603	20ml
+T43	Reagent 604 624	combined supernatant
+T44	Reagent 687 698	supernatant
+T45	Location 704 719	waste container
+T46	Reagent 734 746	cell pellets
+T47	Amount 750 755	15 ml
+T48	Location 756 761	tubes
+T49	Reagent 768 783	liquid nitrogen
+T50	Reagent 791 798	pellets
+T51	Temperature 802 807	-80°C
+T52	Device 808 815	freezer
+T9	Device 970 977	plunger
+T10	Amount 985 989	20ml
+T53	Modifier 990 995	clean
+T54	Device 996 1003	syringe
+T55	Modifier 1014 1017	new
+T56	Size 1018 1023	0.2µm
+T57	Device 1024 1038	syringe filter
+T58	Device 1046 1053	syringe
+T59	Amount 1065 1069	20ml
+T60	Reagent 1070 1090	combined supernatant
+T61	Location 1100 1106	barrel
+T62	Device 1114 1121	syringe
+T63	Device 1131 1138	plunger
+T64	Device 1146 1153	syringe
+T66	Reagent 1175 1186	supernatant
+T68	Location 1204 1209	tubes
+T69	Method 1326 1332	step 5
+T70	Modifier 1337 1341	each
+T71	Reagent 1342 1348	sample
+T17	Size 1435 1440	0.2µm
+T72	Reagent 1441 1457	filtered samples
+T73	Temperature 1461 1466	-20ºC
+R1	Measure Arg1:T72 Arg2:T17	
+R3	Measure Arg1:T22 Arg2:T20	
+R4	Measure Arg1:T24 Arg2:T23	
+T74	Numerical 210 213	one
+T75	Numerical 238 241	one
+R6	Measure Arg1:T27 Arg2:T74	
+R5	Measure Arg1:T28 Arg2:T26	
+R7	Measure Arg1:T30 Arg2:T75	
+R8	Measure Arg1:T31 Arg2:T29	
+R9	Setting Arg1:T35 Arg2:T34	
+R10	Setting Arg1:T35 Arg2:T33	
+T76	Modifier 497 512	labeled sterile
+R11	Measure Arg1:T39 Arg2:T38	
+R13	Mod-Link Arg1:T39 Arg2:T76	
+R14	Measure Arg1:T43 Arg2:T42	
+R15	Measure Arg1:T48 Arg2:T47	
+R16	Setting Arg1:T52 Arg2:T51	
+R17	Mod-Link Arg1:T54 Arg2:T53	
+R18	Measure Arg1:T54 Arg2:T10	
+R19	Measure Arg1:T57 Arg2:T56	
+R20	Mod-Link Arg1:T57 Arg2:T55	
+R21	Measure Arg1:T60 Arg2:T59	
+R22	Meronym Arg1:T61 Arg2:T62	
+R23	Meronym Arg1:T63 Arg2:T64	
+R26	Mod-Link Arg1:T71 Arg2:T70	
+R27	Setting Arg1:E18 Arg2:T73	
+T21	Action 0 8	Sampling
+E9	Action:T21 Acts-on:T37 Acts-on2:T65 Acts-on3:T67 Site:T77
+T37	Reagent 13 16	RNA
+T65	Reagent 19 26	Protein
+T67	Reagent 28 47	dissolved nutrients
+T77	Reagent 53 68	phage infection
+T78	Time 89 99	time point
+R2	Setting Arg1:E1 Arg2:T78	
+T79	Speed 306 314	4816 x g
+R12	Coreference-Link Arg1:T79 Arg2:T34	
+T80	Action 359 366	collect
+E10	Action:T80 Acts-on:T82
+T81	Modifier 371 380	cell-free
+T82	Reagent 381 389	fraction
+R24	Mod-Link Arg1:T82 Arg2:T81	
+T83	Action 400 409	analyzing
+E17	Action:T83 Acts-on:T87
+T84	Modifier 410 419	dissolved
+T85	Modifier 420 429	inorganic
+T86	Modifier 433 440	organic
+T87	Reagent 441 450	nutrients
+T88	Reagent 454 469	phage particles
+R25	Or Arg1:T85 Arg2:T86	
+R28	Mod-Link Arg1:T87 Arg2:T86	
+R29	Mod-Link Arg1:T87 Arg2:T84	
+R30	Or Arg1:T87 Arg2:T88	
+T89	Action 648 655	collect
+E20	Action:T89 Acts-on:T91
+T90	Modifier 660 669	cell-free
+T91	Reagent 670 678	fraction
+R31	Mod-Link Arg1:T91 Arg2:T90	
+T92	Method 828 836	analysis
+T93	Action 853 863	collecting
+E21	Action:T93 Acts-on:T95
+T94	Modifier 868 877	cell-free
+T95	Reagent 878 886	fraction
+R32	Mod-Link Arg1:T95 Arg2:T94	
+T96	Action 910 920	collecting
+E22	Action:T96 Acts-on:T98
+T97	Modifier 925 934	cell-free
+T98	Reagent 935 943	fraction
+R33	Mod-Link Arg1:T98 Arg2:T97	
+T99	Amount 1170 1175	20ml 
+R34	Measure Arg1:T66 Arg2:T99	
+T100	Reagent 1219 1238	downstream nutrient
+T101	Reagent 1239 1244	phage
+T102	Method 1245 1253	analysis
+R35	Or Arg1:T101 Arg2:T100	
+T103	Amount 1264 1268	15ml
+T104	Location 1269 1281	conical tube
+T105	Amount 1289 1292	5ml
+T106	Modifier 1293 1301	snap-cap
+T107	Location 1302 1316	Eppendorf tube
+R36	Mod-Link Arg1:T107 Arg2:T106	
+R37	Measure Arg1:T107 Arg2:T105	
+R38	Measure Arg1:T104 Arg2:T103	
+T108	Device 1373 1380	syringe
+T109	Action 1358 1363	reuse
+E23	Action:T109 Acts-on:T108
+T110	Method 1473 1481	analysis
+T111	Action 1487 1496	analyzing
+E24	Action:T111 Acts-on:T112 Site:T113
+T112	Reagent 1497 1512	phage particles
+T113	Reagent 1520 1528	filtrate
+T114	Temperature 1539 1542	4ºC
+R39	Setting Arg1:E19 Arg2:T114	

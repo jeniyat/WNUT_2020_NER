@@ -1,0 +1,136 @@
+T1	Action 37 40	Add
+E1	Action:T1 Acts-on:T15 Acts-on2:T17 Site:T19
+T2	Action 94 97	Add
+E2	Action:T2 Acts-on:T21 Acts-on2:T23 Site:T25
+T3	Action 150 153	Add
+E3	Action:T3 Acts-on:T27 Acts-on2:T29 Site:T31
+T4	Action 234 237	Add
+E4	Action:T4 Acts-on:T33 Acts-on2:T35 Site:T37 Product:T38
+T5	Action 291 294	Add
+E5	Action:T5 Acts-on:T40 Acts-on2:T42 Site:T44
+T6	Action 344 347	Add
+E6	Action:T6 Acts-on:T46 Acts-on2:T48 Site:T50
+T7	Action 404 407	Add
+E7	Action:T7 Acts-on:T52 Site:T56 Product:T51
+T8	Action 535 543	chelexed
+E8	Action:T8 Acts-on:T57
+T9	Action 548 565	filter-sterilized
+E9	Action:T9 Acts-on:T57
+T10	Action 607 624	filter-sterilized
+E10	Action:T10 Acts-on:T58
+T11	Action 641 644	add
+E11	Action:T11 Acts-on:T60 Product:T59 Site:T64
+T12	Action 758 761	Add
+E12	Action:T12 Acts-on:T69 Acts-on2:T71 Acts-on3:T73 Acts-on4:T75 Acts-on5:T77 Acts-on6:T79 Acts-on7:T81
+T13	Action 910 916	Invert
+E13	Action:T13 Acts-on:T82 Count:T83 Using:T84
+T14	Amount 41 46	1.42g
+T15	Reagent 47 62	Sodium Silicate
+T16	Amount 66 70	50ml
+T17	Reagent 74 77	UPW
+T18	Amount 83 87	50ml
+T19	Location 88 92	vial
+R1	Measure Arg1:T19 Arg2:T18	
+R2	Measure Arg1:T17 Arg2:T16	
+R3	Measure Arg1:T15 Arg2:T14	
+T20	Amount 98 103	0.43g
+T21	Reagent 104 118	Sodium Nitrate
+T22	Amount 122 126	50ml
+T23	Reagent 130 133	UPW
+T24	Amount 139 143	50ml
+T25	Location 144 148	vial
+R4	Measure Arg1:T25 Arg2:T24	
+R5	Measure Arg1:T23 Arg2:T22	
+R6	Measure Arg1:T21 Arg2:T20	
+T26	Amount 154 160	0.069g
+T27	Reagent 161 188	Sodium dihydrogen Phosphate
+T28	Amount 192 196	50ml
+T29	Reagent 200 203	UPW
+T30	Amount 209 213	50ml
+T31	Location 214 218	vial
+R7	Measure Arg1:T31 Arg2:T30	
+R8	Measure Arg1:T29 Arg2:T28	
+R9	Measure Arg1:T27 Arg2:T26	
+T32	Amount 238 244	0.037g
+T33	Reagent 248 259	Vitamin B12
+T34	Amount 263 267	50ml
+T35	Reagent 271 274	UPW
+T36	Amount 280 284	50ml
+T37	Location 285 289	vial
+T38	Reagent 220 233	Vitamin Stock
+R10	Measure Arg1:T33 Arg2:T32	
+R11	Measure Arg1:T35 Arg2:T34	
+R12	Measure Arg1:T37 Arg2:T36	
+T39	Amount 295 302	0.0061g
+T40	Reagent 306 312	Biotin
+T41	Amount 316 320	50ml
+T42	Reagent 324 327	UPW
+T43	Amount 333 337	50ml
+T44	Location 338 342	vial
+R13	Measure Arg1:T44 Arg2:T43	
+R14	Measure Arg1:T42 Arg2:T41	
+R15	Measure Arg1:T40 Arg2:T39	
+T45	Amount 348 352	1.5g
+T46	Reagent 353 361	Thiamine
+T47	Amount 365 369	50ml
+T48	Reagent 373 376	UPW
+T49	Amount 382 386	50ml
+T50	Location 387 391	vial
+R16	Measure Arg1:T50 Arg2:T49	
+R17	Measure Arg1:T48 Arg2:T47	
+R18	Measure Arg1:T46 Arg2:T45	
+T52	Reagent 429 442	dry chemicals
+T53	Modifier 452 457	clean
+T54	Numerical 448 451	one
+T55	Amount 458 462	50ml
+T56	Location 463 467	vial
+R19	Measure Arg1:T56 Arg2:T55	
+R20	Mod-Link Arg1:T56 Arg2:T53	
+R21	Measure Arg1:T56 Arg2:T54	
+T51	Reagent 485 495	EDTA stock
+T57	Reagent 497 524	Nutrient and vitamin stocks
+T58	Reagent 578 596	EDTA(metals) stock
+T59	Reagent 634 639	AQUIL
+T60	Reagent 659 667	reagents
+T61	Amount 671 673	1L
+T62	Modifier 677 685	chelexed
+T63	Modifier 687 707	microwave-sterilized
+T64	Reagent 708 711	ASW
+T65	Amount 716 718	1L
+T66	Modifier 719 739	microwave sterilized
+T67	Reagent 740 756	surface seawater
+R22	Mod-Link Arg1:T67 Arg2:T66	
+R23	Measure Arg1:T67 Arg2:T65	
+R24	Mod-Link Arg1:T64 Arg2:T63	
+R25	Mod-Link Arg1:T64 Arg2:T62	
+R26	Measure Arg1:T64 Arg2:T61	
+R27	Or Arg1:T64 Arg2:T67	
+T68	Amount 762 765	1ml
+T69	Reagent 766 776	EDTA stock
+T70	Amount 778 781	1ml
+T71	Reagent 782 797	sodium silicate
+T72	Amount 799 802	1ml
+T73	Reagent 803 817	sodium nitrate
+T74	Amount 819 822	1ml
+T75	Reagent 823 850	sodium dihydrogen phosphate
+T76	Amount 852 857	100ul
+T77	Reagent 858 869	vitamin B12
+T78	Amount 871 876	100ul
+T79	Reagent 877 883	biotin
+T80	Amount 888 893	100ul
+T81	Reagent 894 908	thiamine stock
+R28	Measure Arg1:T69 Arg2:T68	
+R29	Measure Arg1:T71 Arg2:T70	
+R30	Measure Arg1:T73 Arg2:T72	
+R31	Measure Arg1:T75 Arg2:T74	
+R32	Measure Arg1:T77 Arg2:T76	
+R33	Measure Arg1:T79 Arg2:T78	
+R34	Measure Arg1:T81 Arg2:T80	
+T82	Location 917 923	bottle
+T83	Numerical 924 929	twice
+T84	Method 934 940	mixing
+T85	Action 0 9	Preparing
+E14	Action:T85 Acts-on:T86
+T86	Reagent 10 21	AQUIL Media
+T87	Reagent 22 36	Nutrient Stock
+T88	Reagent 393 403	EDTA Stock

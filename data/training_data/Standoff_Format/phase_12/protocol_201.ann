@@ -1,0 +1,117 @@
+T1	Action 82 85	Add
+E1	Action:T1 Acts-on:T22
+T2	Action 107 113	mixing
+E2	Action:T2 Acts-on:T22 Site:T25 Product:T27
+T3	Action 175 183	Incubate
+E3	Action:T3 Acts-on:T29
+T4	Action 222 232	Centrifuge
+E4	Action:T4 
+T5	Action 258 262	Wash
+E5	Action:T5 Acts-on:T34 Using:T36
+T6	Action 288 297	Resuspend
+E6	Action:T6 Acts-on:T37 Using:T40
+T7	Action 321 324	Add
+E7	Action:T7 Acts-on:T42
+T8	Action 364 382	protect from light
+E8	Action:T8 
+T9	Action 386 389	Add
+E9	Action:T9 Acts-on:T44
+T10	Action 425 443	protect from light
+E10	Action:T10 
+T11	Action 446 456	Centrifuge
+E11	Action:T11 
+T12	Action 484 493	resuspend
+E12	Action:T12 Using:T71
+T13	Action 508 513	Mount
+E13	Action:T13 Acts-on:T49
+T14	Action 529 534	ready
+E14	Action:T14 
+T15	Action 552 556	Wash
+E15	Action:T15 Acts-on:T50 Using:T52
+T16	Action 582 590	Incubate
+E16	Action:T16 
+T17	Action 625 643	protect from light
+E17	Action:T17 
+T18	Action 646 654	Incubate
+E18	Action:T18 
+T19	Action 688 706	protect from light
+E19	Action:T19 
+T20	Action 709 713	Wash
+E20	Action:T20 Using:T59
+T21	Action 733 737	Wash
+E21	Action:T21 Using:T60
+T22	Reagent 86 89	PFA
+T23	Modifier 90 102	drop by drop
+T24	Amount 129 132	1mL
+T25	Reagent 133 138	cells
+T26	Concentration 168 170	2%
+T27	Reagent 170 173	PFA
+T28	Modifier 114 123	carefully
+T29	Reagent 184 189	cells
+T30	Time 194 199	4 min
+T31	Temperature 203 219	room temperature
+T32	Speed 236 241	1000g
+T33	Time 246 255	5 minutes
+T34	Reagent 263 268	cells
+T35	Concentration 274 276	1X
+T36	Reagent 276 279	PBS
+R1	Mod-Link Arg1:E1 Arg2:T23	
+R2	Mod-Link Arg1:E2 Arg2:T28	
+R3	Measure Arg1:T25 Arg2:T24	
+R4	Measure Arg1:T27 Arg2:T26	
+R5	Setting Arg1:E3 Arg2:T30	
+R6	Setting Arg1:E3 Arg2:T31	
+R7	Setting Arg1:E4 Arg2:T32	
+R8	Setting Arg1:E4 Arg2:T33	
+T37	Reagent 298 303	cells
+T38	Amount 309 312	1mL
+T39	Concentration 313 315	1x
+T40	Reagent 315 318	PBS
+R9	Measure Arg1:T40 Arg2:T39	
+R10	Measure Arg1:T40 Arg2:T38	
+T41	Concentration 325 328	1mM
+T42	Reagent 329 344	mitotracker dye
+R11	Measure Arg1:T42 Arg2:T41	
+T43	Temperature 346 362	Room temperature
+T44	Reagent 397 405	DAPI dye
+T45	Concentration 390 396	1/1000
+R12	Measure Arg1:T44 Arg2:T45	
+T46	Temperature 407 423	Room temperature
+T47	Speed 460 465	1000g
+T48	Time 470 479	5 minutes
+R13	Setting Arg1:E11 Arg2:T47	
+T49	Location 519 524	slide
+T50	Reagent 557 562	cells
+T51	Concentration 568 570	1X
+T52	Reagent 570 573	PBS
+R14	Measure Arg1:T52 Arg2:T51	
+T53	Time 595 605	10 minutes
+R15	Setting Arg1:E16 Arg2:T53	
+T54	Temperature 607 623	Room temperature
+T55	Time 659 668	5 minutes
+R16	Setting Arg1:E10 Arg2:T46	
+R17	Setting Arg1:E17 Arg2:T54	
+R18	Setting Arg1:E18 Arg2:T55	
+T56	Temperature 670 686	Room temperature
+R19	Setting Arg1:E19 Arg2:T56	
+T57	Concentration 719 721	1x
+T58	Concentration 743 745	1x
+T59	Reagent 721 724	PBS
+T60	Reagent 745 748	PBS
+R20	Measure Arg1:T59 Arg2:T57	
+R21	Measure Arg1:T60 Arg2:T58	
+T61	Action 0 8	Staining
+E22	Action:T61 
+T62	Reagent 22 42	unicellular protists
+T63	Reagent 44 55	Mitotracker
+T64	Reagent 60 64	Dapi
+T65	Reagent 68 71	PFA
+T66	Method 72 80	Fixation
+T67	Concentration 65 67	2%
+R22	Measure Arg1:T65 Arg2:T67	
+T68	Measure-Type 151 164	concentration
+T69	Modifier 145 150	final
+R23	Setting Arg1:E8 Arg2:T43	
+T70	Concentration 499 501	1x
+T71	Reagent 501 504	PBS
+R24	Measure Arg1:T71 Arg2:T70	

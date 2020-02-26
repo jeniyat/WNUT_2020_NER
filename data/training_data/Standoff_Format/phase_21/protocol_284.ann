@@ -1,0 +1,151 @@
+T1	Action 42 47	Sting
+E1	Action:T1 Product:T21 Acts-on:T23
+T2	Action 85 88	put
+E2	Action:T2 Site:T25
+T3	Action 131 137	Remove
+E3	Action:T3 Acts-on:T26
+T4	Action 156 161	spear
+E4	Action:T4 Acts-on:T27 Using:T28
+T5	Action 203 210	Collect
+E5	Action:T5 Acts-on:T30 Site:T32 Site2:T33
+T6	Action 275 285	Centrifuge
+E6	Action:T6 Acts-on:T35 Site:T37
+T7	Action 358 365	Discard
+E7	Action:T7 Acts-on:T42
+T8	Action 391 395	soak
+E8	Action:T8 Acts-on:T43 Using:T44
+T9	Action 425 431	Record
+E9	Action:T9 Acts-on:T85
+T10	Action 554 565	transferred
+E10	Action:T10 Acts-on:T45 Site:T46 Using:T47
+T11	Action 597 600	Add
+E11	Action:T11 Acts-on:T51 Site:T53
+T12	Action 638 641	Add
+E12	Action:T12 Acts-on:T55 Site:T57 Site2:T60
+T13	Action 748 756	Incubate
+E13	Action:T13 
+T14	Action 777 780	Add
+E14	Action:T14 Acts-on:T64
+T15	Action 823 828	added
+E15	Action:T15 Acts-on:T66 Site:T68 Site2:T70
+T16	Action 937 945	Incubate
+E16	Action:T16 
+T17	Action 974 978	Stop
+E17	Action:T17 Using:T74
+T18	Action 991 997	adding
+E18	Action:T18 Acts-on:T76
+T19	Action 1019 1026	Measure
+E19	Action:T19 Using:T78
+T20	Numerical 48 49	3
+T21	Reagent 50 55	holes
+T22	Amount 61 66	0.5ml
+T23	Location 67 80	Eppendorf cap
+T24	Amount 94 98	15ml
+T25	Location 99 112	Eppendorf cap
+R2	Measure Arg1:T23 Arg2:T22	
+R3	Measure Arg1:T21 Arg2:T20	
+R1	Measure Arg1:T25 Arg2:T24	
+T26	Reagent 142 154	flies’ wings
+T27	Reagent 166 178	fly’s thorax
+T28	Device 188 201	peaked stylus
+T29	Numerical 211 213	20
+T30	Reagent 214 227	speared flies
+T31	Amount 235 240	0.5ml
+T32	Location 241 265	Eppendorf cap with holes
+T33	Location 270 273	ice
+R4	Measure Arg1:T30 Arg2:T29	
+R5	Measure Arg1:T32 Arg2:T31	
+T34	Amount 290 295	0.5ml
+T35	Location 296 309	Eppendorf cap
+T36	Amount 321 326	1.5ml
+T37	Location 327 330	one
+R6	Measure Arg1:T37 Arg2:T36	
+R7	Measure Arg1:T35 Arg2:T34	
+T38	Time 332 337	1 min
+T39	Speed 339 347	5000 rpm
+T40	Temperature 352 355	4°C
+R8	Setting Arg1:E6 Arg2:T38	
+R9	Setting Arg1:E6 Arg2:T39	
+R10	Setting Arg1:E6 Arg2:T40	
+T41	Amount 370 375	0.5ml
+T42	Location 376 389	Eppendorf cap
+T43	Reagent 400 406	pellet
+R11	Measure Arg1:T42 Arg2:T41	
+T44	Location 414 423	capillary
+T45	Reagent 517 527	haemolymph
+T46	Location 537 546	capillary
+T47	Device 575 586	suction cup
+T48	Modifier 587 595	anywhere
+R12	Mod-Link Arg1:E10 Arg2:T48	
+T49	Amount 601 607	19.5µl
+T50	Modifier 608 612	cold
+T51	Reagent 613 616	PBS
+T52	Amount 620 625	0.5µl
+T53	Reagent 626 636	haemolymph
+R13	Measure Arg1:T53 Arg2:T52	
+R14	Mod-Link Arg1:T51 Arg2:T50	
+R15	Measure Arg1:T51 Arg2:T49	
+T54	Amount 642 646	10µl
+T55	Reagent 655 662	mixture
+T56	Amount 666 670	30µl
+T57	Reagent 671 690	Citrate Acid Buffer
+T58	Amount 695 699	10µl
+T59	Concentration 705 707	3%
+T60	Reagent 708 746	Trehalase-Citrate acid buffer solution
+R16	Measure Arg1:T60 Arg2:T59	
+R17	Measure Arg1:T60 Arg2:T58	
+R18	Measure Arg1:T57 Arg2:T56	
+R19	Measure Arg1:T55 Arg2:T54	
+T61	Time 757 767	over night
+T62	Temperature 771 775	37°C
+R20	Setting Arg1:E13 Arg2:T61	
+R21	Setting Arg1:E13 Arg2:T62	
+T63	Amount 781 785	50µl
+T64	Reagent 786 797	Tris Buffer
+R22	Measure Arg1:T64 Arg2:T63	
+T65	Amount 799 802	80µ
+T66	Reagent 811 818	mixture
+T67	Amount 832 838	156.8µ
+T68	Reagent 839 854	Glucose oxidase
+T69	Amount 884 889	3.2µl
+T70	Reagent 890 903	o-Dianisidine
+R23	Measure Arg1:T70 Arg2:T69	
+R24	Measure Arg1:T68 Arg2:T67	
+R25	Measure Arg1:T66 Arg2:T65	
+T71	Modifier 950 957	exactly
+T72	Time 958 964	30 min
+T73	Temperature 968 972	37°C
+R26	Mod-Link Arg1:T72 Arg2:T71	
+R27	Setting Arg1:E16 Arg2:T72	
+R28	Setting Arg1:E16 Arg2:T73	
+T74	Method 979 987	reaction
+T75	Amount 998 1003	160µl
+T76	Reagent 1004 1017	Sulfuric Acid
+R29	Measure Arg1:T76 Arg2:T75	
+T77	Generic-Measure 1030 1035	540nm
+T78	Device 1054 1066	spectrometer
+R30	Setting Arg1:E19 Arg2:T77	
+T79	Reagent 0 10	Haemolymph
+T80	Method 11 21	extraction
+T81	Reagent 25 41	adult Drosophila
+T82	Modifier 118 125	removed
+T83	Seal 126 129	lid
+R31	Mod-Link Arg1:T83 Arg2:T82	
+T84	Modifier 446 452	soaked
+T85	Reagent 453 463	haemolymph
+T86	Action 468 475	fill up
+E20	Action:T86 
+T87	Amount 480 485	0.5μl
+T88	Numerical 502 504	50
+T89	Reagent 505 510	flies
+R32	Mod-Link Arg1:T85 Arg2:T84	
+R33	Setting Arg1:E20 Arg2:T87	
+R34	Measure Arg1:T89 Arg2:T88	
+T90	Reagent 856 863	aliquot
+T91	Device 871 878	freezer
+T92	Modifier 905 912	freshly
+T93	Action 913 918	added
+E21	Action:T93 Site:T94
+T94	Device 928 934	fridge
+R35	Mod-Link Arg1:E21 Arg2:T92	
+T95	Device 1044 1052	nanoDrop

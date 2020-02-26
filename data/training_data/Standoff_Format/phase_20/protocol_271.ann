@@ -1,0 +1,106 @@
+T1	Action 32 38	Excise
+E1	Action:T1 Acts-on:T18 Site:T19 Using:T20
+T2	Action 126 134	transfer
+E2	Action:T2 Site:T24 Acts-on:T18
+T3	Action 174 177	Add
+E3	Action:T3 Acts-on:T26 Measure-Type-Link:T25
+T4	Action 243 251	Incubate
+E4	Action:T4 
+T5	Action 326 334	Transfer
+E5	Action:T5 Acts-on:T29 Site:T30
+T6	Action 408 418	Centrifuge
+E6	Action:T6 
+T7	Action 438 445	Discard
+E7	Action:T7 Acts-on:T33
+T8	Action 472 475	Add
+E8	Action:T8 Acts-on:T35 Site:T36
+T9	Action 525 535	Centrifuge
+E9	Action:T9 
+T10	Action 552 559	Discard
+E10	Action:T10 Acts-on:T38
+T11	Action 587 590	Add
+E11	Action:T11 Acts-on:T40 Site:T41
+T12	Action 640 650	Centrifuge
+E12	Action:T12 
+T13	Action 667 674	Discard
+E13	Action:T13 Acts-on:T43
+T14	Action 693 696	Add
+E14	Action:T14 Acts-on:T46 Site:T48
+T15	Action 763 768	Place
+E15	Action:T15 Acts-on:T47 Site:T52
+T16	Action 799 809	centrifuge
+E16	Action:T16 
+T17	Action 831 836	elute
+E17	Action:T17 Acts-on:T54
+T18	Reagent 43 55	DNA fragment
+T19	Reagent 65 76	agarose gel
+T20	Device 85 96	razor blade
+T21	Device 98 105	scalpel
+T22	Device 109 121	other device
+T23	Amount 145 150	15 ml
+T24	Location 151 171	microcentrifuge tube
+R1	Measure Arg1:T24 Arg2:T23	
+R2	Or Arg1:T20 Arg2:T21	
+R3	Or Arg1:T21 Arg2:T22	
+T25	Measure-Type 180 187	volumes
+T26	Reagent 191 194	ADB
+T27	Temperature 255 263	37-55 °C
+T28	Time 268 280	5-10 minutes
+R5	Setting Arg1:E4 Arg2:T27	
+R6	Setting Arg1:E4 Arg2:T28	
+T29	Reagent 339 362	melted agarose solution
+T30	Location 368 385	Zymo-Spin™ Column
+T31	Location 391 406	Collection Tube
+R7	Meronym Arg1:T30 Arg2:T31	
+T32	Time 423 436	30-60 seconds
+R8	Setting Arg1:E6 Arg2:T32	
+T33	Reagent 450 462	flow-through
+T34	Amount 476 482	200 µl
+T35	Reagent 486 501	DNA Wash Buffer
+T36	Location 509 515	column
+R9	Measure Arg1:T35 Arg2:T34	
+T37	Time 540 550	30 seconds
+R10	Setting Arg1:E9 Arg2:T37	
+T38	Reagent 564 576	flow-through
+T39	Amount 591 597	200 µl
+T40	Reagent 601 616	DNA Wash Buffer
+T41	Location 624 630	column
+R11	Measure Arg1:T40 Arg2:T39	
+T42	Time 655 665	30 seconds
+R12	Setting Arg1:E12 Arg2:T42	
+T43	Reagent 679 691	flow-through
+T44	Modifier 697 698	≥
+T45	Amount 699 703	6 µl
+T46	Reagent 704 722	DNA Elution Buffer
+T48	Location 748 761	column matrix
+R13	Measure Arg1:T46 Arg2:T45	
+R14	Mod-Link Arg1:T45 Arg2:T44
+T49	Modifier 732 740	directly
+R16	Mod-Link Arg1:E14 Arg2:T49	
+T50	Reagent 726 731	water
+R17	Or Arg1:T46 Arg2:T50	
+T47	Location 769 775	column
+T51	Amount 783 789	1.5 ml
+T52	Location 790 794	tube
+T53	Time 814 827	30-60 seconds
+T54	Reagent 837 840	DNA
+R15	Measure Arg1:T52 Arg2:T51	
+R18	Setting Arg1:E16 Arg2:T53	
+T55	Device 0 31	Zymoclean™ Gel DNA Recovery Kit
+T56	Measure-Type 203 209	volume
+T57	Reagent 213 220	agarose
+T59	Reagent 238 241	gel
+T58	Action 221 228	excised
+E18	Action:T58 Acts-on:T57 Measure-Type-Link:T56 Site:T59
+T60	Numerical 178 179	3
+T61	Reagent 291 300	gel slice
+T62	Modifier 315 324	dissolved
+R4	Mod-Link Arg1:T61 Arg2:T62	
+T63	Action 464 468	Wash
+E19	Action:T63 
+T64	Action 517 521	Wash
+E20	Action:T64 
+T65	Action 578 582	Wash
+E21	Action:T65 
+T66	Action 632 636	Wash
+E22	Action:T66 

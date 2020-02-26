@@ -1,0 +1,209 @@
+T1	Action 88 94	poured
+E1	Action:T1 Acts-on:T29
+T2	Action 110 116	set up
+E2	Action:T2 Acts-on:T29
+T3	Action 139 154	electrophoresed
+E3	Action:T3 
+T4	Action 195 202	stained
+E4	Action:T4 Acts-on:T33
+T5	Action 214 223	kept cold
+E5	Action:T5 Acts-on:T33
+T6	Action 275 282	Cut out
+E6	Action:T6 Acts-on:T34 Site:T35
+T7	Action 333 336	Use
+E7	Action:T7 Acts-on2:T40 Using:T39
+T8	Action 370 375	Place
+E8	Action:T8 Acts-on:T41 Site:T42
+T9	Action 492 495	Add
+E9	Action:T9 Acts-on:T44 Site:T45
+T10	Action 613 621	Transfer
+E10	Action:T10 Acts-on:T46
+T11	Action 641 644	Add
+E11	Action:T11 Acts-on:T49
+T12	Action 717 723	warmed
+E12	Action:T12 Acts-on:T51
+T13	Action 733 743	Centrifuge
+E13	Action:T13 Acts-on:T52
+T14	Action 798 808	Centrifuge
+E14	Action:T14 Site:T56
+T15	Action 873 881	Transfer
+E15	Action:T15 Acts-on:T59 Site:T60
+T16	Action 923 926	Add
+E16	Action:T16 Acts-on:T62 Site:T64
+T17	Action 999 1002	Mix
+E17	Action:T17 
+T18	Action 1012 1022	centrifuge
+E18	Action:T18 Site:T68
+T19	Action 1087 1097	Re-extract
+E19	Action:T19 Acts-on:T71 Count:T72 Using:T73 Site:T75
+T20	Action 1182 1185	Add
+E20	Action:T20 Acts-on:T77
+T21	Action 1309 1319	Centrifuge
+E21	Action:T21 Acts-on:T85
+T22	Action 1350 1360	Centrifuge
+E22	Action:T22 Site:T86
+T23	Action 1442 1446	Wash
+E23	Action:T23 Acts-on:T93 Using:T96 Count:T94 Site:T97 Product:T98
+T24	Action 1505 1508	dry
+E24	Action:T24 Acts-on:T98 Using:T99
+T25	Action 1590 1599	Resuspend
+E25	Action:T25 Acts-on:T101 Using:T104
+T26	Action 1646 1650	Heat
+E26	Action:T26 Acts-on:T105
+T27	Action 1684 1687	Mix
+E27	Action:T27 
+T28	Modifier 47 64	Low melting point
+T29	Reagent 65 77	agarose gels
+R1	Mod-Link Arg1:T29 Arg2:T28	
+T30	Temperature 124 133	cold room
+R2	Setting Arg1:E2 Arg2:T30	
+T31	Temperature 158 174	room temperature
+R3	Setting Arg1:E3 Arg2:T31	
+T32	Temperature 206 209	4°C
+R4	Setting Arg1:E4 Arg2:T32	
+T33	Reagent 180 184	gels
+T34	Reagent 287 296	DNA bands
+T35	Reagent 306 309	gel
+T36	Device 319 331	razor blades
+T37	Modifier 315 318	new
+R5	Mod-Link Arg1:T36 Arg2:T37	
+T38	Modifier 339 342	new
+T39	Device 343 354	razor blade
+R6	Mod-Link Arg1:T39 Arg2:T38	
+T40	Reagent 364 368	band
+T41	Reagent 380 394	agarose pieces
+T42	Location 400 420	sterile capped tubes
+T43	Concentration 496 498	1X
+T44	Reagent 499 508	TE buffer
+R7	Measure Arg1:T44 Arg2:T43	
+T45	Location 516 521	tubes
+T46	Location 626 631	tubes
+T47	Temperature 635 639	37°C
+R8	Setting Arg1:E10 Arg2:T47	
+T48	Measure-Type 648 660	equal volume
+T49	Reagent 664 687	buffer-saturated phenol
+R10	Measure Arg1:T49 Arg2:T48	
+T50	Temperature 727 731	37°C
+R9	Setting Arg1:E12 Arg2:T50	
+T51	Reagent 693 699	phenol
+T52	Location 748 753	tubes
+T53	Temperature 757 773	room temperature
+R11	Setting Arg1:E13 Arg2:T53	
+T54	Speed 812 822	10,000 rpm
+T55	Time 824 830	10 min
+T56	Device 838 845	Sorvall
+T57	Time 849 854	5 min
+T58	Device 862 871	microfuge
+R12	Setting Arg1:E14 Arg2:T54	
+R13	Setting Arg1:E14 Arg2:T55	
+R14	Or Arg1:T55 Arg2:T57	
+R15	Or Arg1:T56 Arg2:T58	
+T59	Reagent 886 906	upper aqueous layers
+T60	Location 910 921	clean tubes
+T61	Measure-Type 930 942	equal volume
+T62	Reagent 946 974	phenol:CHCl3:Isoamyl alcohol
+T63	Concentration 976 983	25:24:1
+R17	Measure Arg1:T62 Arg2:T63	
+T64	Location 992 997	tubes
+R16	Measure Arg1:T62 Arg2:T61	
+T65	Modifier 1003 1007	well
+R18	Mod-Link Arg1:E17 Arg2:T65	
+T66	Speed 1026 1036	10,000 rpm
+T67	Time 1038 1044	10 min
+T68	Device 1052 1059	Sorvall
+T69	Time 1063 1068	5 min
+T70	Device 1076 1085	microfuge
+R19	Setting Arg1:E18 Arg2:T66	
+R20	Setting Arg1:E18 Arg2:T67	
+R21	Or Arg1:T67 Arg2:T69	
+R22	Or Arg1:T68 Arg2:T70	
+T71	Reagent 1102 1115	aqueous layer
+T72	Numerical 1116 1118	2X
+T73	Reagent 1124 1145	CHCl3:Isoamyl alcohol
+T74	Concentration 1147 1151	24:1
+R23	Measure Arg1:T73 Arg2:T74	
+T75	Device 1160 1170	centrifuge
+T76	Concentration 1186 1189	3 M
+T77	Reagent 1190 1200	Na acetate
+R24	Measure Arg1:T77 Arg2:T76	
+T78	Action 1239 1250	precipitate
+E28	Action:T78 Acts-on:T79 Using:T82
+T79	Reagent 1255 1259	DNAs
+T80	Measure-Type 1268 1275	volumes
+T81	Concentration 1279 1283	100%
+T82	Reagent 1284 1288	EtOH
+T83	Temperature 1292 1297	-20°C
+T84	Time 1298 1307	overnight
+R25	Measure Arg1:T82 Arg2:T81	
+R26	Measure Arg1:T82 Arg2:T80	
+R27	Setting Arg1:E28 Arg2:T83	
+R28	Setting Arg1:E28 Arg2:T84	
+T85	Location 1324 1329	tubes
+T86	Device 1368 1375	Sorvall
+T87	Speed 1379 1389	10,000 rpm
+T88	Time 1391 1397	10 min
+T89	Temperature 1399 1402	4°C
+T90	Time 1406 1415	10-15 min
+T91	Temperature 1419 1422	4°C
+T92	Device 1430 1439	microfuge
+R29	Setting Arg1:E22 Arg2:T87	
+R30	Setting Arg1:E22 Arg2:T88	
+R31	Setting Arg1:E22 Arg2:T89	
+R32	Or Arg1:T88 Arg2:T90	
+R33	Or Arg1:T89 Arg2:T91	
+R34	Or Arg1:T86 Arg2:T92	
+T93	Reagent 1451 1455	DNAs
+T94	Numerical 1456 1458	1X
+T95	Concentration 1464 1467	70%
+T96	Reagent 1468 1472	EtOH
+R35	Measure Arg1:T96 Arg2:T95	
+T97	Device 1480 1490	centrifuge
+T98	Reagent 1513 1524	DNA pellets
+T99	Device 1532 1549	vacuum desiccator
+T100	Time 1559 1568	10-15 min
+R36	Setting Arg1:E24 Arg2:T100	
+T101	Reagent 1604 1608	DNAs
+T102	Generic-Measure 1616 1628	small volume
+T103	Concentration 1632 1634	1X
+T104	Reagent 1635 1644	TE buffer
+R37	Measure Arg1:T104 Arg2:T103	
+R38	Measure Arg1:T104 Arg2:T102	
+T105	Location 1655 1660	tubes
+T106	Temperature 1664 1668	65°C
+T107	Time 1673 1682	10-15 min
+R39	Setting Arg1:E26 Arg2:T106	
+R40	Setting Arg1:E26 Arg2:T107	
+T108	Modifier 1688 1692	well
+R41	Mod-Link Arg1:E27 Arg2:T108	
+T109	Method 0 8	Recovery
+T110	Reagent 12 15	DNA
+T111	Modifier 21 38	Low Melting Point
+T112	Reagent 39 46	Agarose
+R42	Mod-Link Arg1:T112 Arg2:T111	
+T113	Action 239 246	cut out
+E29	Action:T113 Acts-on:T114 Site:T115
+T114	Reagent 251 260	DNA bands
+T115	Reagent 270 273	gel
+T116	Measure-Type 426 430	size
+T117	Location 438 443	tubes
+T118	Measure-Type 459 465	volume
+T119	Reagent 473 480	agarose
+T120	Measure-Type 545 551	volume
+T121	Numerical 579 581	5X
+T122	Measure-Type 586 592	volume
+T123	Reagent 600 610	gel pieces
+T124	Action 777 785	separate
+E30	Action:T124 Acts-on:T125
+T125	Reagent 790 796	phases
+T126	Measure-Type 1212 1225	concentration
+T127	Modifier 1206 1211	final
+T128	Concentration 1229 1234	0.3 M
+T129	Numerical 1265 1267	2X
+T130	Action 1333 1339	pellet
+E31	Action:T130 Acts-on:T131
+T131	Reagent 1344 1348	DNAs
+T132	Action 1573 1579	remove
+E32	Action:T132 Acts-on:T133
+T133	Reagent 1584 1588	EtOH
+T134	Modifier 1550 1557	briefly
+R43	Mod-Link Arg1:E24 Arg2:T134	

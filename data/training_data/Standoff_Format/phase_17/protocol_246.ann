@@ -1,0 +1,255 @@
+T1	Action 24 30	Dilute
+E1	Action:T1 Product:T2 Using:T4
+T2	Reagent 31 57	unlabeled capture antibody
+T3	Concentration 86 99	0.5 – 8 µg/ml
+T4	Reagent 103 146	Coating Buffer (BioLegend, Cat. No. 421701)
+T5	Action 151 159	transfer
+E2	Action:T5 Acts-on:T2 Site:T8
+T6	Amount 160 166	100 µl
+T7	Modifier 170 174	each
+T8	Location 175 179	well
+T9	Location 200 226	protein-bindingELISA plate
+R2	Meronym Arg1:T8 Arg2:T9	
+R3	Mod-Link Arg1:T8 Arg2:T7	
+R4	Setting Arg1:E2 Arg2:T6	
+T10	Action 262 266	Seal
+E3	Action:T10 Acts-on:T11
+T11	Location 267 272	plate
+T12	Action 276 283	prevent
+E4	Action:T12 
+T13	Action 297 305	Incubate
+E5	Action:T13 
+T14	Temperature 309 312	4°C
+T15	Time 313 322	overnight
+R5	Setting Arg1:E5 Arg2:T14	
+R6	Setting Arg1:E5 Arg2:T15	
+T16	Action 324 329	Bring
+E6	Action:T16 Acts-on:T17
+T17	Location 334 339	plate
+T18	Temperature 343 359	room temperature
+T19	Action 361 370	flick off
+E7	Action:T19 Acts-on:T20
+T20	Reagent 375 400	capture antibody solution
+R7	Setting Arg1:E6 Arg2:T18	
+T21	Action 402 406	Seal
+E8	Action:T21 Acts-on:T22
+T22	Location 407 412	plate
+T23	Action 417 425	incubate
+E9	Action:T23 Acts-on:T22
+T24	Temperature 429 445	room temperature
+T25	Time 452 458	1 hour
+R8	Setting Arg1:E9 Arg2:T24	
+R9	Setting Arg1:E9 Arg2:T25	
+T26	Modifier 460 466	Firmly
+T27	Action 467 471	blot
+E10	Action:T27 Acts-on:T28 Using:T29
+T28	Location 472 477	plate
+T29	Location 492 504	paper towels
+R10	Mod-Link Arg1:E10 Arg2:T26	
+T30	Action 506 512	Dilute
+E11	Action:T30 Product:T31 Product2:T32 Using:T34 Site:T36
+T31	Reagent 513 522	standards
+T32	Reagent 527 534	samples
+T33	Concentration 538 560	desired concentrations
+T34	Reagent 564 581	Blocking Solution
+T36	Location 604 623	polypropylene tubes
+T37	Location 627 632	plate
+T38	Action 638 641	add
+E13	Action:T38 Acts-on:T31 Acts-on2:T32 Site:T41
+T39	Amount 642 648	100 µl
+T40	Location 653 657	well
+T41	Location 665 676	ELISA plate
+T42	Modifier 649 652	per
+R12	Setting Arg1:E13 Arg2:T39	
+R1	Setting Arg1:E1 Arg2:T3	
+R13	Setting Arg1:E11 Arg2:T33	
+R14	Or Arg1:T36 Arg2:T37	
+R15	Mod-Link Arg1:T39 Arg2:T42	
+R11	Mod-Link Arg1:T40 Arg2:T42	
+T35	Action 678 682	Seal
+E12	Action:T35 Acts-on:T43
+T43	Location 687 692	plate
+T44	Action 697 705	incubate
+E14	Action:T44 Acts-on:T43
+T45	Temperature 709 725	room temperature
+T46	Time 730 739	2-4 hours
+T47	Temperature 746 749	4°C
+T48	Time 750 759	overnight
+R16	Setting Arg1:E14 Arg2:T45	
+R17	Setting Arg1:E14 Arg2:T46	
+R18	Or Arg1:T45 Arg2:T47	
+R19	Or Arg1:T46 Arg2:T48	
+T49	Action 761 765	Wash
+E15	Action:T49 Using:T50
+T50	Reagent 771 780	PBS/Tween
+T51	Action 788 792	Wash
+E16	Action:T51 Using:T52
+T52	Reagent 798 807	PBS/Tween
+T53	Action 815 819	Wash
+E17	Action:T53 Using:T54
+T54	Reagent 825 834	PBS/Tween
+T55	Action 842 848	Dilute
+E18	Action:T55 Product:T56 Using:T58
+T56	Reagent 868 886	detection antibody
+T57	Concentration 890 904	0.25 – 2 µg/ml
+T58	Reagent 908 925	Blocking Solution
+R20	Setting Arg1:E18 Arg2:T57	
+T59	Action 927 930	Add
+E19	Action:T59 Acts-on:T61 Site:T63
+T60	Amount 931 937	100 µl
+T61	Reagent 941 957	diluted antibody
+R21	Measure Arg1:T61 Arg2:T60	
+T62	Modifier 961 965	each
+T63	Location 966 970	well
+R22	Mod-Link Arg1:T63 Arg2:T62	
+T64	Action 972 976	Seal
+E20	Action:T64 Acts-on:T65
+T65	Location 981 986	plate
+T66	Action 991 999	incubate
+E21	Action:T66 
+T67	Temperature 1003 1019	room temperature
+T68	Time 1024 1030	1 hour
+R23	Setting Arg1:E21 Arg2:T67	
+R24	Setting Arg1:E21 Arg2:T68	
+T69	Action 1032 1036	Wash
+E22	Action:T69 Using:T72
+T70	Action 1059 1063	Wash
+E23	Action:T70 Using:T73
+T71	Action 1086 1090	Wash
+E24	Action:T71 Using:T74
+T72	Reagent 1042 1051	PBS/Tween
+T73	Reagent 1069 1078	PBS/Tween
+T74	Reagent 1096 1105	PBS/Tween
+T75	Action 1113 1119	Dilute
+E25	Action:T75 Product:T76 Using:T79
+T76	Reagent 1124 1158	Av-HRP conjugate (Cat. No. 405103)
+T77	Reagent 1162 1184	other enzyme conjugate
+T79	Reagent 1232 1247	Blocking Buffer
+R25	Or Arg1:T76 Arg2:T77	
+T80	Action 1282 1285	Add
+E26	Action:T80 
+T81	Amount 1286 1292	100 µl
+T82	Location 1297 1301	well
+T83	Modifier 1293 1296	per
+R27	Mod-Link Arg1:T81 Arg2:T83	
+R28	Mod-Link Arg1:T82 Arg2:T83	
+R29	Setting Arg1:E26 Arg2:T81	
+T84	Action 1303 1307	Seal
+E27	Action:T84 Acts-on:T85
+T85	Location 1312 1317	plate
+T86	Action 1322 1330	incubate
+E28	Action:T86 
+T87	Temperature 1334 1350	room temperature
+T88	Time 1355 1365	30 minutes
+R30	Setting Arg1:E28 Arg2:T87	
+R31	Setting Arg1:E28 Arg2:T88	
+T89	Action 1367 1371	Wash
+E29	Action:T89 Using:T94
+T90	Action 1394 1398	Wash
+E30	Action:T90 Using:T95
+T91	Action 1421 1425	Wash
+E31	Action:T91 Using:T96
+T92	Action 1448 1452	Wash
+E32	Action:T92 Using:T97
+T93	Action 1475 1479	Wash
+E33	Action:T93 Using:T98
+T94	Reagent 1377 1386	PBS/Tween
+T95	Reagent 1404 1413	PBS/Tween
+T96	Reagent 1431 1440	PBS/Tween
+T97	Reagent 1458 1467	PBS/Tween
+T98	Reagent 1485 1494	PBS/Tween
+T99	Action 1502 1506	Thaw
+E34	Action:T99 Acts-on:T100
+T100	Reagent 1507 1530	ABTS Substrate Solution
+T101	Time 1531 1551	within 20 min of use
+R32	Setting Arg1:E34 Arg2:T101	
+T102	Action 1553 1556	Add
+E35	Action:T102 Acts-on:T105
+T103	Amount 1557 1562	11 µl
+T104	Concentration 1566 1569	30%
+T105	Reagent 1570 1574	H2O2
+T106	Amount 1579 1584	11 ml
+T107	Reagent 1588 1607	substrateand vortex
+R33	Measure Arg1:T107 Arg2:T106	
+T108	Modifier 1575 1578	per
+R34	Mod-Link Arg1:T106 Arg2:T108	
+R35	Mod-Link Arg1:T103 Arg2:T108	
+R36	Measure Arg1:T105 Arg2:T104	
+R37	Measure Arg1:T105 Arg2:T103	
+T109	Action 1621 1629	dispense
+E36	Action:T109 
+T110	Amount 1630 1636	100 µl
+T111	Modifier 1642 1646	each
+T112	Location 1647 1651	well
+T113	Action 1656 1664	incubate
+E37	Action:T113 
+T114	Temperature 1668 1684	room temperature
+T115	Time 1686 1697	4-60minutes
+R38	Mod-Link Arg1:T112 Arg2:T111	
+R39	Measure Arg1:T112 Arg2:T110	
+R40	Setting Arg1:E36 Arg2:T110	
+R41	Setting Arg1:E37 Arg2:T114	
+R42	Setting Arg1:E37 Arg2:T115	
+T116	Action 1750 1753	add
+E38	Action:T116 Acts-on:T118
+T117	Amount 1754 1759	50 µl
+T118	Reagent 1763 1781	ABTS Stop Solution
+R43	Measure Arg1:T118 Arg2:T117	
+T119	Action 1783 1787	Read
+E39	Action:T119 Acts-on:T121 Using:T123
+T120	Generic-Measure 1792 1812	optical density (OD)
+R44	Setting Arg1:E39 Arg2:T120	
+T121	Location 1822 1826	well
+T122	Modifier 1817 1821	each
+T123	Device 1834 1851	microplate reader
+T124	Generic-Measure 1859 1865	405 nm
+R45	Setting Arg1:T123 Arg2:T124	
+R46	Mod-Link Arg1:T121 Arg2:T122	
+T125	Action 1867 1871	Wash
+E40	Action:T125 Using:T131
+T126	Action 1894 1898	Wash
+E41	Action:T126 Using:T132
+T127	Action 1921 1925	Wash
+E42	Action:T127 Using:T133
+T128	Action 2033 2037	Wash
+E43	Action:T128 Using:T134
+T129	Action 2060 2064	Wash
+E44	Action:T129 Using:T135
+T130	Action 2087 2091	Wash
+E45	Action:T130 Using:T136
+T131	Reagent 1877 1886	PBS/Tween
+T132	Reagent 1904 1913	PBS/Tween
+T133	Reagent 1931 1940	PBS/Tween
+T134	Reagent 2043 2052	PBS/Tween
+T135	Reagent 2070 2079	PBS/Tween
+T136	Reagent 2097 2106	PBS/Tween
+T137	Action 1948 1953	Block
+E46	Action:T137 Acts-on:T138
+T138	Reagent 1954 1980	non-specific binding sites
+T139	Action 1984 1990	adding
+E47	Action:T139 Acts-on:T141 Site:T143
+T140	Amount 1991 1997	200 µl
+T141	Reagent 2001 2018	Blocking Solution
+T142	Modifier 2022 2026	each
+T143	Location 2027 2031	well
+R47	Mod-Link Arg1:T143 Arg2:T142	
+R48	Measure Arg1:T141 Arg2:T140	
+T144	Method 0 14	Sandwich ELISA
+T145	Modifier 63 68	final
+T146	Measure-Type 69 82	concentration
+T147	Modifier 185 198	high affinity
+R49	Mod-Link Arg1:T9 Arg2:T147	
+T148	Method 284 295	evaporation
+T149	Modifier 486 491	clean
+R50	Mod-Link Arg1:T29 Arg2:T149	
+T150	Modifier 450 451	≥
+R51	Mod-Link Arg1:T25 Arg2:T150	
+T151	Modifier 853 867	biotin-labeled
+R52	Mod-Link Arg1:T56 Arg2:T151	
+T152	Concentration 1265 1279	1/500 – 1/2000
+T78	Measure-Type 1215 1228	concentration
+T153	Action 1725 1729	stop
+E48	Action:T153 Acts-on:T154
+T154	Reagent 1734 1748	color reaction
+T155	Modifier 1609 1620	Immediately
+R26	Mod-Link Arg1:E36 Arg2:T155	

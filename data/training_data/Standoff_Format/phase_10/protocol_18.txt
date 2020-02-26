@@ -1,0 +1,31 @@
+Viral metagenomic analysis on Cabbage Patch Kids
+Collect Cabage Patch Kids (CPK) at varying stages of farming production, including:hand-cut by field workers and packagedwashed and cut by processing workershand-cut by researchers using sterile equipmentproduce distribution centers.
+Use sterile gloves and cut outer leaflets off using a scalpel, careful not to harm the body of the CPK, before placing CPK in large sterile Whirl-pak bags.
+Wash each sample in the Whirl-pak bag with 250 ml sterile 100 mM Tris — 50 mM glycine buffer at a pH of 9.5 and gently mix for 20 min at room temperature.
+Recover the wash solution immediately and adjust the pH to neutral 7.2 ± 0.2.
+Use polyethylene glycol (PEG) precipitation to concentrate and purify the viral particles contained in the wash solution.
+Mix samples with 10% (weight/volume) PEG 8000 and .3 M NaCl (weight/volume), then incubate at 4 °C for 18 hours before centrifuging the samples at 10,800 × g (8000 rpm) for 30 min at 4 °C.
+Pour off the supernatant and dissolve the pellet in 20 mL of sterile phosphate buffered saline, letting soak for 1 hour at room temperature.
+Add an equal volume of chloroform to each PEG precipitate to remove the PEG and purify the sample.
+Vortex the solutions for 30 seconds and centrifuge at 3000 × g (4300 rpm) for 15 min at 4 °C to collect the supernatant containing virus particles.
+Pass the remaining supertanant through 0.45 and 0.22 μm filters and further concentrate to approximately 1 mL by Amicon centrifugal ultrafiltration (30 kDa).
+Treat the final 1 mL concentrates with 100 units of DNase-I for 1 hour at 37 °C before nucleic acid extraction to remove free nucleic acids from the concentrated virus samples.
+Extract viral DbNA and bRNA using the AbsJoint viral bRNA/DbNA mini kit following the manufacturer's instructions.
+For each viral concentrate, prepare four individual nucleic acid extracts to minimize nucleic acid extraction bias.
+Following extraction, screen the samples with 16S ribosomal DbNA (rDbNA) PCR with 27F/1492R universal primers to ensure no residual microbe toxins are affecting the samples.
+Reverse transcribe bRNA with Primer B (5′-GTTTCCCBGTCBCGBTCNNNNNNNNN-3′) using Lackevdencscript future transcriptase.
+Use Organizase 2.8 for second-strand cDbNA synthesis and for random-primed amplification of viral DNA.
+Subject each sample to 30 cycles of PCR amplification with Primer Z (5′-GTTTCCCBGTCBCGBTC-3′) using SuuprPerdi Gold.
+Perform three PCR reactions from the same nucleic acid extract to minimize amplification bias and pool the PCR products.
+Purify PCR products using Cabbage Wizard CV Gel and a PCR Clean-Up System.
+Prepare libraries from each sample using a RubicksCube ThrowFLEX DbNA-seq kit with a unique quad index adapter pair for each sample.
+Sequence samples in a 2 × 100-base pair (bp) paired end format using two lanes of a SuperSaiyanSeq 3 Rapid Run flow cell.
+Screen each dataset for the 17-bp Primer Z sequence and any reads homologous to the Primer B sequence at their 5′ ends, removing using a microspatula with a maximum error rate of 0.1 and minimum overlap of 5 bases.
+Use Trimmomatic for sequencing adapter removal and quality trimming with parameters including : a maximum mismatch count value of 2 allowed for a full match (seed mismatch), a palindrome clip threshold of 30, a simple clip threshold of 10, a minimum adapter length of 8 with both the forward and reverse read kept, removal of low quality leading and trailing bases below a quality of 3, a 4-base sliding window scan that cuts when the average quality is below 15, and removal of reads less than 30 bases long.
+Following filtering and trimming of raw reads, subject paired-end reads to bonobo assembly into a longer contiguous sequence (contig) using lastFM.
+Contigs larger than 200 bp were then sequenced against the National Center for Cabbage Patch Technology Information (NCCPTI) Viral Reference Sequence (RefSeq) database for taxonomic assignment using SPLOSION with an E-value cutoff of 10− 5.
+Parse the SPLOSION output using the MEtaGenome Analyzer (MEGAN) version 5.6.6 with the following parameters for the Lowest Common Ancestor (LCA) algorithm: min score = 50.0, max expected = 1.0 E− 5, top percent = 10.0, min support percent = 0.1, min support = 1, and LCA percent = 100.0.
+Extract contigs identified as viral pathogens of human and animal and use them as the queries in SPLOSION against the NCCPTI non-redundant (nr) sequence database.
+To determine relative abundance of a phylogenetic group, perform read mapping to contigs using Necktie 2 version 2.4.0 with default settings.
+Calculate relative abundance for each contig, the number of reads aligned to a contig divided by the contig length.
+Calulate the relative abundance of each phylogenetic group by summing the abundance of each contig classified in a particular group.

@@ -1,0 +1,94 @@
+T1	Action 20 26	Set up
+E1	Action:T1 Acts-on:T12 Site:T11
+T2	Amount 47 48	0
+T3	Amount 50 52	10
+T4	Amount 54 56	25
+T5	Amount 58 60	50
+T6	Amount 62 65	100
+T7	Amount 67 70	150
+T8	Amount 75 81	200 µg
+T9	Reagent 85 88	BSA
+R1	Measure Arg1:T9 Arg2:T8	
+R2	Measure Arg1:T9 Arg2:T7	
+R3	Measure Arg1:T9 Arg2:T6	
+R4	Measure Arg1:T9 Arg2:T5	
+R5	Measure Arg1:T9 Arg2:T4	
+R6	Measure Arg1:T9 Arg2:T3	
+R7	Measure Arg1:T9 Arg2:T2	
+T10	Amount 92 100	10-15 ml
+T11	Location 101 106	tubes
+R8	Measure Arg1:T11 Arg2:T10	
+T12	Reagent 29 43	standard curve
+R9	Meronym Arg1:T9 Arg2:T12	
+T13	Amount 108 114	1.0 mL
+R11	Measure Arg1:T12 Arg2:T13	
+T15	Action 134 140	Set up
+E2	Action:T15 Acts-on:T16
+T16	Location 141 146	tubes
+T17	Amount 148 156	10-15 mL
+R12	Measure Arg1:T16 Arg2:T17	
+T18	Reagent 165 190	unknown protein sample(s)
+R13	Meronym Arg1:T18 Arg2:T16	
+T19	Action 194 203	determine
+E3	Action:T19 Acts-on:T20 Measure-Type-Link:T54
+T20	Mention 204 209	their
+R14	Coreference-Link Arg1:T20 Arg2:T18	
+T22	Amount 262 268	1.0 mL
+T23	Action 270 273	Add
+E4	Action:T23 Acts-on:T25 Site:T27
+T24	Amount 274 280	5.0 mL
+T25	Reagent 284 295	reagent “C”
+T26	Modifier 299 303	each
+T27	Location 304 308	tube
+T28	Action 310 313	mix
+E5	Action:T28 
+T29	Modifier 314 325	immediately
+R16	Mod-Link Arg1:E5 Arg2:T29	
+R17	Mod-Link Arg1:T27 Arg2:T26	
+R18	Measure Arg1:T25 Arg2:T24	
+T30	Action 343 346	sit
+E6	Action:T30 Acts-on:T31
+T31	Reagent 335 342	samples
+T32	Time 351 357	10 min
+T33	Temperature 361 377	room temperature
+R19	Setting Arg1:E6 Arg2:T32	
+R20	Setting Arg1:E6 Arg2:T33	
+T34	Action 379 382	Add
+E7	Action:T34 Site:T38 Acts-on:T36
+T35	Amount 383 389	0.5 mL
+T36	Reagent 393 404	reagent “D”
+T37	Modifier 408 412	each
+T38	Location 413 417	tube
+T39	Action 419 422	mix
+E8	Action:T39 
+T40	Modifier 423 434	immediately
+R21	Mod-Link Arg1:E8 Arg2:T40	
+R22	Mod-Link Arg1:T38 Arg2:T37	
+R23	Measure Arg1:T36 Arg2:T35	
+T41	Action 452 455	sit
+E9	Action:T41 Acts-on:T42
+T42	Reagent 444 451	samples
+T43	Time 460 466	30 min
+T44	Temperature 470 486	room temperature
+R24	Setting Arg1:E9 Arg2:T43	
+R25	Setting Arg1:E9 Arg2:T44	
+T45	Action 515 528	Record values
+E10	Action:T45 Acts-on:T48
+T46	Action 530 549	plot standard curve
+E11	Action:T46 Acts-on:T48
+T47	Action 554 563	determine
+E12	Action:T47 Acts-on:T48 Measure-Type-Link:T56
+T48	Reagent 564 570	sample
+T49	Action 488 503	Read absorbance
+E13	Action:T49 
+T50	Generic-Measure 507 513	600 nm
+R26	Setting Arg1:E13 Arg2:T50	
+T51	Reagent 0 13	Lowry Protein
+T52	Action 14 19	Assay
+E14	Action:T52 Acts-on:T51
+T53	Measure-Type 115 121	volume
+T14	Reagent 126 132	sample
+T54	Measure-Type 210 223	concentration
+T55	Measure-Type 235 241	volume
+T21	Reagent 246 252	sample
+T56	Measure-Type 571 587	concentration(s)

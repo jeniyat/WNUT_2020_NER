@@ -1,0 +1,356 @@
+T1	Action 1049 1052	Mix
+E1	Action:T1 Acts-on:T50
+T2	Action 1136 1139	Mix
+E2	Action:T2 Acts-on:T53 Acts-on2:T55 Acts-on3:T57
+T3	Action 1271 1279	Incubate
+E3	Action:T3 
+T4	Action 1333 1342	Transform
+E4	Action:T4 Acts-on:T61
+T5	Action 1521 1528	Prepare
+E5	Action:T5 Product:T63
+T6	Action 1988 1995	Prepare
+E6	Action:T6 Product:T70 Acts-on:T71
+T7	Action 2092 2098	Inject
+E7	Action:T7 Site:T72 Acts-on:T159
+T8	Action 2204 2212	Transfer
+E8	Action:T8 Site:T75 Acts-on:T74
+T9	Action 2304 2307	Use
+E9	Action:T9 Acts-on:T76
+T10	Action 2476 2479	Put
+E10	Action:T10 Acts-on:T78
+T11	Action 2558 2565	Prepare
+E11	Action:T11 Acts-on:T80
+T12	Action 2570 2586	filter sterilize
+E12	Action:T12 Acts-on:T80 Site:T175
+T13	Action 2674 2679	pipet
+E13	Action:T13 Acts-on:T87
+T14	Action 2841 2846	Swirl
+E14	Action:T14 
+T15	Action 2932 2935	Put
+E15	Action:T15 Acts-on:T188
+T16	Action 2960 2967	Examine
+E16	Action:T16 Acts-on:T189
+T17	Action 3391 3395	Pick
+E17	Action:T17 Acts-on:T91
+T18	Action 3739 3745	Return
+E18	Action:T18 Acts-on:T229
+T19	Action 3615 3625	Heat shock
+E19	Action:T19 Acts-on:T92 Site:T226
+T20	Action 506 512	Digest
+E20	Action:T20 Acts-on:T38
+T21	Action 626 632	Purify
+E21	Action:T21 Using:T41 Acts-on:T129
+T22	Action 688 694	remove
+E22	Action:T22 Acts-on:T42
+T23	Action 708 715	Process
+E23	Action:T23 Acts-on:T43
+T24	Action 758 772	do not attempt
+E24	Action:T24 
+T25	Action 842 848	stored
+E25	Action:T25 
+T26	Action 896 905	construct
+E26	Action:T26 Product:T46
+T27	Action 933 941	Generate
+E27	Action:T27 Product:T47 Using:T49
+T28	Action 1078 1084	purify
+E28	Action:T28 Acts-on:T136 Site:T135
+T29	Action 1393 1400	Isolate
+E29	Action:T29 Acts-on:T62 Site:T142
+T30	Action 1425 1433	sequence
+E30	Action:T30 Using:T143 Using2:T144
+T31	Action 2357 2361	make
+E31	Action:T31 Acts-on:T77
+T32	Action 2503 2506	let
+E32	Action:T32 Acts-on:T172
+T33	Action 2927 2930	dry
+E33	Action:T33 
+T34	Action 2875 2881	covers
+E34	Action:T34 Acts-on:T185
+T35	Action 3460 3467	perform
+E35	Action:T35 Using:T216
+T36	Action 3707 3715	activate
+E36	Action:T36 
+T37	Action 3774 3778	Pick
+E37	Action:T37 Acts-on:T231 Site:T233
+T38	Reagent 535 548	FP–SEC vector
+T40	Temperature 562 566	37°C
+R2	Setting Arg1:E20 Arg2:T40	
+T41	Location 661 684	PCR cleanup spin column
+T42	Reagent 699 706	enzymes
+T43	Reagent 727 742	digested vector
+T44	Temperature 852 855	4°C
+R3	Setting Arg1:E25 Arg2:T44	
+T45	Time 871 881	few months
+R4	Setting Arg1:E25 Arg2:T45	
+T46	Reagent 915 931	repair templates
+T47	Reagent 946 958	PCR products
+T48	Numerical 942 945	two
+R5	Measure Arg1:T47 Arg2:T48	
+T49	Reagent 985 996	genomic DNA
+T50	Reagent 1061 1073	PCR products
+T51	Numerical 1057 1060	two
+R6	Measure Arg1:T50 Arg2:T51	
+T52	Amount 1140 1144	1 µL
+T53	Reagent 1148 1154	vector
+R7	Measure Arg1:T53 Arg2:T52	
+T54	Amount 1156 1160	4 µL
+T55	Reagent 1164 1177	homology arms
+R8	Measure Arg1:T55 Arg2:T54	
+T56	Amount 1182 1186	5 µL
+T57	Reagent 1190 1219	isothemal assembly enzyme mix
+R9	Measure Arg1:T57 Arg2:T56	
+T58	Time 1280 1282	1h
+R10	Setting Arg1:E3 Arg2:T58	
+T59	Temperature 1285 1289	50°C
+R11	Setting Arg1:E3 Arg2:T59	
+T60	Amount 1343 1347	2 µL
+T61	Reagent 1355 1363	reaction
+R12	Measure Arg1:T61 Arg2:T60	
+T62	Reagent 1401 1404	DNA
+T63	Reagent 1532 1545	injection mix
+T64	Concentration 1572 1580	10 ng/µL
+T65	Reagent 1581 1607	homologous repair template
+R13	Measure Arg1:T65 Arg2:T64	
+T67	Reagent 1618 1628	Cas9-sgRNA
+T66	Concentration 1609 1617	50 ng/µL
+R14	Measure Arg1:T67 Arg2:T66	
+T68	Reagent 1747 1751	pGH8
+T69	Concentration 1738 1746	10 ng/µL
+R15	Measure Arg1:T68 Arg2:T69	
+T70	Reagent 1996 2007	plasmid DNA
+T71	Device 2014 2050	Invitrogen’s PureLink mini-prep kit,
+T72	Reagent 2136 2153	young adult worms
+T73	Numerical 2130 2135	50-60
+R16	Measure Arg1:T72 Arg2:T73	
+T74	Reagent 2217 2231	injected worms
+T75	Location 2239 2252	seeded plates
+T76	Location 2316 2326	NGM plates
+T77	Location 2364 2377	control plate
+T78	Location 2484 2490	plates
+T79	Temperature 2494 2498	25°C
+R17	Setting Arg1:E10 Arg2:T79	
+T80	Reagent 2597 2616	hygromycin solution
+T81	Concentration 2589 2596	5 mg/mL
+R18	Measure Arg1:T80 Arg2:T81	
+T82	Size 2631 2635	6 cm
+T83	Location 2636 2642	plates
+R19	Measure Arg1:T83 Arg2:T82	
+T84	Amount 2655 2660	10 mL
+T85	Location 2661 2672	agar plates
+T86	Amount 2680 2686	500 µL
+T87	Reagent 2690 2694	drug
+R21	Measure Arg1:T87 Arg2:T86	
+T88	Concentration 2765 2775	~250 µg/mL
+R22	Measure Arg1:T87 Arg2:T88	
+T89	Temperature 2954 2958	25ºC
+R23	Setting Arg1:E15 Arg2:T89	
+T90	Amount 3396 3399	6-8
+T91	Reagent 3400 3412	L1/L2 larvae
+R24	Measure Arg1:T91 Arg2:T90	
+T92	Location 3630 3636	plates
+T93	Temperature 3640 3644	34°C
+T94	Time 3649 3656	4 hours
+R25	Setting Arg1:T92 Arg2:T94	
+R26	Setting Arg1:T92 Arg2:T93	
+T95	Temperature 3760 3764	20°C
+R27	Setting Arg1:E18 Arg2:T95	
+T96	Action 0 10	Generating
+E38	Action:T96 Acts-on:T98
+T97	Modifier 11 36	Cas9-mediated fluorescent
+T98	Reagent 37 54	protein knock-ins
+R28	Mod-Link Arg1:T98 Arg2:T97	
+T99	Modifier 62 75	self-excising
+T100	Reagent 76 94	selection cassette
+R29	Mod-Link Arg1:T100 Arg2:T99	
+T101	Reagent 96 99	SEC
+R30	Coreference-Link Arg1:T101 Arg2:T100	
+T102	Action 128 136	Choosing
+E39	Action:T102 Acts-on:T103
+T103	Reagent 141 153	Cas9 targets
+T104	Action 162 168	Adding
+E40	Action:T104 Acts-on:T105 Site:T106
+T105	Reagent 173 188	target sequence
+T106	Reagent 196 216	Cas9–sgRNA construct
+T107	Action 220 229	Designing
+E41	Action:T107 Acts-on:T108
+T108	Reagent 230 237	primers
+T109	Action 241 244	add
+E42	Action:T109 Acts-on:T110 Site:T111
+T110	Reagent 245 258	homology arms
+T111	Reagent 265 278	FP–SEC vector
+T112	Action 279 283	Grow
+E43	Action:T112 Acts-on:T113
+T113	Reagent 284 292	bacteria
+T114	Reagent 306 319	FP–SEC vector
+T115	Reagent 337 348	plasmid DNA
+R31	Meronym Arg1:T114 Arg2:T113	
+T116	Action 324 332	miniprep
+E44	Action:T116 Acts-on:T115
+T117	Action 370 379	replacing
+E45	Action:T117 Acts-on:T118
+T118	Reagent 384 397	ccdB elements
+T119	Reagent 403 416	homology arms
+T120	Reagent 418 432	FP–SEC vectors
+T121	Action 441 446	grown
+E46	Action:T121 Site:T122 Acts-on:T118
+T122	Reagent 450 455	cells
+T123	Reagent 478 482	ccdB
+T124	Modifier 465 474	resistant
+T125	Reagent 484 503	ccdB Survival cells
+R32	Meronym Arg1:T119 Arg2:T118	
+R33	Meronym Arg1:T120 Arg2:T118	
+R34	Mod-Link Arg1:T122 Arg2:T124	
+T39	Time 549 558	overnight
+R1	Setting Arg1:E20 Arg2:T39	
+T126	Action 595 604	construct
+E47	Action:T126 Acts-on:T127
+T127	Reagent 609 616	enzymes
+T128	Modifier 637 645	digested
+T129	Reagent 646 652	vector
+R35	Mod-Link Arg1:T129 Arg2:T128	
+T130	Modifier 809 827	digested, purified
+T131	Reagent 828 834	vector
+R36	Mod-Link Arg1:T131 Arg2:T130	
+T132	Reagent 964 977	homology arms
+R37	Coreference-Link Arg1:T132 Arg2:T47	
+T133	Reagent 1021 1028	primers
+T134	Numerical 1104 1110	single
+T135	Location 1111 1134	PCR cleanup spin column
+T136	Mention 1085 1089	them
+R38	Measure Arg1:T135 Arg2:T134	
+R39	Coreference-Link Arg1:T136 Arg2:T50	
+T137	Reagent 1228 1259	NEBuilder HiFi DNA assembly mix
+T138	Reagent 1312 1318	enzyme
+T139	Reagent 1265 1268	NEB
+T140	Reagent 1376 1391	competent cells
+T141	Numerical 1410 1413	3-6
+T142	Reagent 1414 1420	clones
+R40	Measure Arg1:T142 Arg2:T141	
+T143	Reagent 1439 1450	M13 Forward
+T144	Reagent 1455 1470	Reverse primers
+T145	Action 1474 1480	verify
+E48	Action:T145 
+T146	Method 1489 1498	insertion
+T147	Reagent 1506 1519	homology arms
+T148	Modifier 1649 1692	targeting sequence Fluorescent co-injection
+T149	Reagent 1693 1700	markers
+R41	Mod-Link Arg1:T149 Arg2:T148	
+T150	Concentration 1816 1823	5 ng/µL
+T151	Reagent 1824 1831	pCFJ104
+R42	Measure Arg1:T151 Arg2:T150	
+T152	Concentration 1904 1913	2.5 ng/µL
+T153	Reagent 1914 1920	pCFJ90
+R43	Measure Arg1:T153 Arg2:T152	
+T154	Modifier 1866 1878	co-injection
+T155	Reagent 1879 1885	marker
+R44	Mod-Link Arg1:T155 Arg2:T154	
+T156	Modifier 1949 1961	co-injection
+T157	Reagent 1962 1968	marker
+R45	Mod-Link Arg1:T157 Arg2:T156	
+T158	Method 2068 2077	injection
+T159	Reagent 2103 2110	mixture
+T160	Reagent 2157 2166	strain N2
+T161	Action 2171 2181	substitute
+E49	Action:T161 Acts-on:T162
+T162	Reagent 2186 2192	strain
+T163	Reagent 2260 2267	animals
+T164	Numerical 2254 2259	three
+T165	Location 2272 2277	plate
+R46	Measure Arg1:T163 Arg2:T164	
+R47	Meronym Arg1:T163 Arg2:T165	
+T166	Modifier 2383 2393	uninjected
+T167	Reagent 2394 2399	worms
+R48	Mod-Link Arg1:T167 Arg2:T166	
+R49	Meronym Arg1:T167 Arg2:T77	
+T168	Reagent 2425 2429	drug
+T169	Method 2430 2439	selection
+T170	Reagent 2458 2474	negative control
+T171	Mention 2440 2442	it
+R50	Coreference-Link Arg1:T171 Arg2:T167	
+T172	Reagent 2511 2516	worms
+T173	Method 2534 2543	selection
+T174	Time 2548 2556	2-3 days
+T175	Reagent 2620 2625	water
+R20	Measure Arg1:T85 Arg2:T84	
+T176	Location 2704 2711	surface
+T177	Location 2720 2725	plate
+T178	Reagent 2729 2734	worms
+T179	Modifier 2742 2747	final
+T180	Measure-Type 2748 2761	concentration
+R51	Meronym Arg1:T176 Arg2:T177	
+R52	Meronym Arg1:T178 Arg2:T177	
+T181	Location 2801 2807	plates
+T182	Measure-Type 2820 2826	volume
+T183	Modifier 2847 2853	gently
+R53	Mod-Link Arg1:E14 Arg2:T183	
+T184	Reagent 2866 2874	solution
+T185	Location 2893 2900	surface
+T186	Location 2908 2913	plate
+T187	Mention 2924 2926	it
+R54	Coreference-Link Arg1:T187 Arg2:T186	
+R55	Meronym Arg1:T185 Arg2:T186	
+T188	Reagent 2940 2945	worms
+T189	Location 2972 2978	plates
+T190	Action 2983 2991	identify
+E50	Action:T190 Acts-on:T191
+T191	Mention 2992 2997	those
+R56	Coreference-Link Arg1:T191 Arg2:T189	
+T192	Reagent 3011 3031	Roller (Rol) animals
+R57	Meronym Arg1:T192 Arg2:T191	
+T193	Method 3050 3070	hygromycin treatment
+T194	Action 3072 3081	Candidate
+E51	Action:T194 Acts-on:T195
+T195	Reagent 3082 3098	knock-in animals
+T196	Method 3129 3149	hygromycin selection
+T197	Reagent 3158 3161	Rol
+T198	Action 3170 3174	lack
+E52	Action:T198 Acts-on:T201
+T199	Action 3121 3128	survive
+E53	Action:T199 
+T200	Modifier 3179 3211	red fluorescent extrachromosomal
+T201	Reagent 3212 3225	array markers
+R58	Mod-Link Arg1:T201 Arg2:T200	
+T203	Numerical 3234 3238	5-10
+T204	Reagent 3239 3264	candidate knock-in adults
+T202	Action 3227 3233	Single
+E54	Action:T202 Acts-on:T204
+R59	Measure Arg1:T204 Arg2:T203	
+T205	Modifier 3268 3271	new
+T206	Location 3272 3278	plates
+R60	Mod-Link Arg1:T206 Arg2:T205	
+T207	Reagent 3287 3297	hygromycin
+T208	Action 3299 3307	Look for
+E55	Action:T208 Acts-on:T209
+T209	Location 3308 3314	plates
+T210	Numerical 3321 3325	100%
+T211	Reagent 3103 3112	L4/adults
+T212	Reagent 3329 3332	L4s
+T213	Numerical 3424 3429	three
+T214	Modifier 3430 3433	new
+T215	Location 3434 3440	plates
+R61	Mod-Link Arg1:T215 Arg2:T214	
+R62	Measure Arg1:T215 Arg2:T213	
+T216	Method 3468 3483	marker excision
+T217	Reagent 3490 3503	older animals
+T218	Action 3509 3514	using
+E56	Action:T218 Acts-on:T222
+T219	Action 3484 3489	using
+E57	Action:T219 Acts-on:T217
+T220	Reagent 3337 3343	adults
+T221	Reagent 3348 3355	Rollers
+T222	Reagent 3515 3527	young larvae
+T223	Reagent 3574 3584	germ cells
+T224	Temperature 3664 3668	32°C
+T225	Time 3673 3682	4-5 hours
+T226	Device 3690 3703	air incubator
+T227	Method 3716 3726	expression
+T228	Reagent 3730 3737	hs::Cre
+R63	Or Arg1:T93 Arg2:T224	
+R64	Or Arg1:T94 Arg2:T225	
+T229	Location 3750 3756	plates
+T230	Temperature 3768 3772	25°C
+R65	Or Arg1:T95 Arg2:T230	
+T231	Reagent 3779 3794	wild-type worms
+T232	Modifier 3798 3801	new
+T233	Location 3802 3808	plates
+R66	Mod-Link Arg1:T233 Arg2:T232	

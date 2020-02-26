@@ -1,0 +1,77 @@
+T1	Action 31 35	Thaw
+E1	Action:T1 Acts-on:T2
+T2	Reagent 50 64	kit components
+T3	Action 66 69	Mix
+E2	Action:T3 Site:T5
+T4	Action 74 84	pulse-spin
+E3	Action:T4 Site:T5
+T5	Device 88 97	microfuge
+T6	Action 144 148	Keep
+E4	Action:T6 Site:T7
+T7	Location 152 155	ice
+T8	Action 157 165	Assemble
+E5	Action:T8 Product:T9
+T9	Reagent 170 178	reaction
+T10	Action 224 227	Mix
+E6	Action:T10 
+T11	Action 243 253	pulse-spin
+E7	Action:T11 Site:T12
+T12	Device 259 268	microfuge
+T13	Action 270 278	Incubate
+E8	Action:T13 
+T14	Time 291 298	2 hours
+T16	Method 315 330	DNase treatment
+T15	Action 334 340	remove
+E9	Action:T15 Acts-on:T17 Using:T16
+T17	Reagent 341 353	DNA template
+T18	Action 379 382	add
+E10	Action:T18 Acts-on:T20 Acts-on3:T24 Site:T22
+T19	Amount 383 388	30 μl
+T20	Reagent 389 408	nuclease-free water
+T21	Amount 417 422	20 μl
+T22	Reagent 423 431	reaction
+T23	Amount 445 449	2 μl
+T24	Reagent 453 473	DNase I (RNase-free)
+T25	Action 475 478	mix
+E11	Action:T25 
+T26	Action 483 491	incubate
+E12	Action:T26 
+T27	Time 496 506	15 minutes
+T29	Reagent 545 560	synthesized RNA
+T30	Action 564 572	analysis
+E14	Action:T30 Acts-on:T31 Using:T32
+T31	Reagent 576 598	transcription products
+T32	Method 602 621	gel electrophoresis
+R1	Measure Arg1:T24 Arg2:T23	
+R2	Measure Arg1:T20 Arg2:T19	
+R3	Measure Arg1:T22 Arg2:T21	
+R4	Setting Arg1:E12 Arg2:T27	
+R5	Setting Arg1:E8 Arg2:T14	
+T34	Reagent 109 118	solutions
+T35	Location 126 133	bottoms
+T36	Location 137 142	tubes
+T37	Action 101 108	collect
+E16	Action:T37 Product:T34 Site:T35
+R6	Meronym Arg1:T35 Arg2:T36	
+T38	Modifier 40 49	necessary
+R7	Mod-Link Arg1:T2 Arg2:T38	
+T39	Temperature 182 198	room temperature
+R8	Setting Arg1:E5 Arg2:T39	
+T40	Modifier 228 238	thoroughly
+R9	Mod-Link Arg1:E6 Arg2:T40	
+T41	Temperature 282 286	37°C
+R10	Setting Arg1:E8 Arg2:T41	
+T42	Action 358 364	remove
+E17	Action:T42 Acts-on:T43
+T43	Reagent 365 377	template DNA
+R11	Setting Arg1:E11 Arg2:T27	
+T44	Temperature 510 514	37°C
+R12	Setting Arg1:E12 Arg2:T44	
+R13	Setting Arg1:E11 Arg2:T44	
+T45	Modifier 412 416	each
+R14	Mod-Link Arg1:T22 Arg2:T45	
+T33	Reagent 9 12	RNA
+T46	Method 13 22	Synthesis
+T28	Action 516 523	Proceed
+E13	Action:T28 Using:T47
+T47	Method 529 541	purification

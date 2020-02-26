@@ -1,0 +1,18 @@
+T1	Action 75 83	Incubate
+E1	Action:T1 
+T2	Temperature 87 91	37°C
+T3	Time 96 106	30 minutes
+T4	Action 108 112	Heat
+E2	Action:T4 Acts-on:T5
+T5	Reagent 113 123	inactivate
+T6	Action 127 137	incubating
+E3	Action:T6 
+T7	Temperature 141 145	65°C
+T8	Time 150 160	20 minutes
+R2	Setting Arg1:E1 Arg2:T3
+R3	Setting Arg1:E3 Arg2:T7
+R4	Setting Arg1:E3 Arg2:T8
+R1	Setting Arg1:E1 Arg2:T2
+T9	Modifier 0 15	Non-radioactive
+T10	Method 16 31	phosphorylation
+T11	Reagent 37 43	T4 PNK

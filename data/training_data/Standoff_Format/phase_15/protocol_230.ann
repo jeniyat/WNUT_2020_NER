@@ -1,0 +1,47 @@
+T1	Action 70 77	Suspend
+E1	Action:T1 Acts-on:T6 Site:T9
+T2	Action 163 166	Add
+E2	Action:T2 Acts-on:T15
+T3	Action 210 218	Incubate
+E3	Action:T3 
+T4	Action 243 253	Inactivate
+E4	Action:T4 Acts-on:T19 Using:T20
+T5	Action 329 336	Recover
+E5	Action:T5 Acts-on:T24 Using:T25
+T6	Reagent 78 81	DNA
+T7	Concentration 83 92	0.1 μg/μl
+T8	Concentration 97 99	1X
+T9	Reagent 100 125	Mung Bean Nuclease Buffer
+T10	Concentration 129 131	1X
+T11	Reagent 132 144	NEBuffer 1.1
+T12	Reagent 146 149	2.1
+T13	Reagent 153 161	CutSmart
+R1	Or Arg1:T11 Arg2:T12	
+R2	Or Arg1:T12 Arg2:T13	
+R3	Measure Arg1:T6 Arg2:T7	
+R4	Measure Arg1:T9 Arg2:T8	
+T14	Amount 167 175	1.0 unit
+T15	Reagent 179 197	Mung Bean Nuclease
+R6	Measure Arg1:T15 Arg2:T14	
+T17	Temperature 222 226	30°C
+T18	Time 231 241	30 minutes
+R7	Setting Arg1:E3 Arg2:T17	
+R8	Setting Arg1:E3 Arg2:T18	
+T19	Reagent 258 264	enzyme
+T20	Method 286 296	extraction
+T21	Action 303 311	addition
+E6	Action:T21 Acts-on:T22
+T22	Reagent 315 318	SDS
+T23	Concentration 322 327	0.01%
+R9	Setting Arg1:E6 Arg2:T23	
+T24	Reagent 341 344	DNA
+T25	Method 356 369	precipitation
+T26	Method 0 7	Removal
+T27	Reagent 11 36	Single-Stranded Extension
+T28	Reagent 43 61	Mung Bean Nuclease
+R10	Measure Arg1:T11 Arg2:T10	
+T16	Amount 202 204	μg
+T29	Reagent 205 208	DNA
+R5	Measure Arg1:T29 Arg2:T16	
+T30	Reagent 348 355	ethanol
+T31	Reagent 268 285	phenol/chloroform

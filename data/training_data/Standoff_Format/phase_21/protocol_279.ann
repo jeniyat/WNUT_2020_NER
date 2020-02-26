@@ -1,0 +1,44 @@
+T1	Action 67 73	Digest
+E1	Action:T1 Acts-on:T8 Site:T10
+T2	Action 128 136	Incubate
+E2	Action:T2 
+T3	Action 202 205	Add
+E3	Action:T3 Acts-on:T14 Acts-on2:T16
+T4	Action 282 290	Incubate
+E4	Action:T4 
+T5	Action 318 322	Stop
+E5	Action:T5 Acts-on:T19 Using:T6
+T7	Amount 74 80	1–5 μg
+T8	Reagent 84 95	plasmid DNA
+T9	Amount 101 106	20 μl
+T10	Reagent 107 115	reaction
+R1	Measure Arg1:T10 Arg2:T9	
+R2	Measure Arg1:T8 Arg2:T7	
+T11	Temperature 140 144	37°C
+T12	Time 149 159	60 minutes
+R3	Setting Arg1:E2 Arg2:T11	
+R4	Setting Arg1:E2 Arg2:T12	
+T13	Amount 206 212	1 unit
+T14	Reagent 216 220	rSAP
+T15	Concentration 231 237	1 pmol
+T16	Reagent 241 249	DNA ends
+R5	Measure Arg1:T16 Arg2:T15	
+R6	Measure Arg1:T14 Arg2:T13	
+T17	Temperature 294 298	37°C
+T18	Time 303 316	30–60 minutes
+R7	Setting Arg1:E4 Arg2:T17	
+R8	Setting Arg1:E4 Arg2:T18	
+T20	Reagent 356 360	rSAP
+T21	Reagent 365 383	restriction enzyme
+T22	Method 0 17	Dephosphorylation
+T23	Reagent 24 28	rSAP
+T24	Reagent 32 59	Restriction Enzyme Reaction
+T25	Action 18 23	using
+E7	Action:T25 
+T26	Amount 257 261	1 μg
+T27	Generic-Measure 267 271	3 kb
+T28	Reagent 272 279	plasmid
+R9	Measure Arg1:T28 Arg2:T27	
+R10	Measure Arg1:T28 Arg2:T26	
+T19	Reagent 323 331	reaction
+T6	Method 335 352	heat-inactivation

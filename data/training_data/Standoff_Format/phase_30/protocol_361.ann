@@ -1,0 +1,66 @@
+T1	Action 477 483	Dilute
+E1	Action:T1 Site:T34
+T2	Action 30 38	Incubate
+E2	Action:T2 Site:T13
+T3	Action 109 114	lysed
+E3	Action:T3 Acts-on:T16
+T4	Action 139 147	degraded
+E4	Action:T4 Acts-on:T18 Acts-on2:T17
+T5	Action 156 164	released
+E5	Action:T5 Acts-on:T19
+T6	Action 166 174	Incubate
+E6	Action:T6 
+T7	Action 200 210	inactivate
+E7	Action:T7 Acts-on:T22
+T8	Action 259 265	Vortex
+E8	Action:T8 Acts-on:T23
+T9	Action 296 306	Centrifuge
+E9	Action:T9 
+T10	Action 337 343	pellet
+E10	Action:T10 Acts-on:T27
+T11	Action 351 359	Transfer
+E11	Action:T11 Acts-on:T29 Site:T30
+T12	Action 448 451	PCR
+E12	Action:T12 Acts-on:T32
+T13	Device 44 56	thermocycler
+T14	Time 61 71	10 minutes
+T15	Temperature 75 79	75ºC
+T16	Reagent 99 104	cells
+T17	Reagent 116 125	nucleases
+T18	Reagent 130 138	proteins
+T19	Reagent 152 155	DNA
+T20	Time 179 188	5 minutes
+T21	Temperature 192 196	95ºC
+T22	Reagent 215 257	thermostable KAPA Express Extract protease
+T23	Reagent 266 282	reaction product
+T24	Time 287 294	2-3 sec
+T25	Speed 310 320	high speed
+T26	Time 325 333	1 minute
+T27	Reagent 344 350	debris
+T29	Reagent 360 386	DNA-containing supernatant
+T28	Modifier 392 397	fresh
+T30	Location 398 402	tube
+T31	Amount 408 412	1 μl
+T32	Reagent 416 427	DNA extract
+T33	Amount 442 447	25 μl
+T34	Reagent 487 496	TE Buffer
+T35	Temperature 522 527	-20ºC
+T36	Action 511 518	storage
+E13	Action:T36 
+R1	Setting Arg1:E2 Arg2:T14	
+R2	Setting Arg1:E2 Arg2:T15	
+R3	Setting Arg1:E6 Arg2:T20	
+R4	Setting Arg1:E6 Arg2:T21	
+R5	Setting Arg1:E8 Arg2:T24	
+R6	Setting Arg1:E9 Arg2:T25	
+R7	Setting Arg1:E9 Arg2:T26	
+R8	Mod-Link Arg1:T30 Arg2:T28	
+R9	Measure Arg1:T32 Arg2:T31	
+R10	Setting Arg1:E12 Arg2:T33	
+R11	Setting Arg1:E13 Arg2:T35	
+T37	Modifier 0 8	Modified
+T38	Reagent 9 29	KAPA Express Extract
+R12	Mod-Link Arg1:T38 Arg2:T37	
+T39	Method 461 475	quantification
+T40	Modifier 501 510	long-term
+R13	Mod-Link Arg1:E13 Arg2:T40	

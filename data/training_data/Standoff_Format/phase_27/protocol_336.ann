@@ -1,0 +1,169 @@
+T1	Action 53 59	remove
+E1	Action:T1 Acts-on:T28 Site:T30 Using:T92
+T2	Action 95 101	Attach
+E2	Action:T2 Acts-on:T32 Site:T33
+T3	Action 157 161	Pour
+E3	Action:T3 Acts-on:T37 Site:T39
+T4	Action 211 218	Replace
+E4	Action:T4 Acts-on:T40
+T5	Action 231 236	mount
+E5	Action:T5 Acts-on:T41 Acts-on2:T6 Site:T42
+T7	Action 282 286	Push
+E7	Action:T7 Acts-on:T44 Site:T45 Using:T46
+T8	Action 365 373	applying
+E8	Action:T8 
+T10	Action 474 486	stop pushing
+E10	Action:T10 
+T11	Action 513 519	remove
+E11	Action:T11 Acts-on:T9 Site:T47 Using:T98
+T12	Action 590 597	Suck up
+E12	Action:T12 Acts-on:T53 Site:T55
+T13	Action 675 684	Re-attach
+E13	Action:T13 Acts-on:T56 Site:T57
+T14	Action 738 742	Push
+E14	Action:T14 Acts-on:T60 Site:T48 Using:T90
+T15	Action 813 819	Remove
+E15	Action:T15 Acts-on:T61 Site:T62
+T16	Action 849 854	Write
+E16	Action:T16 
+T17	Action 905 909	Wrap
+E17	Action:T17 Acts-on:T65 Using:T66
+T18	Action 976 981	Label
+E18	Action:T18 Acts-on:T70
+T19	Action 1066 1070	Wrap
+E19	Action:T19 Acts-on:T72 Using:T73
+T20	Action 1123 1128	Label
+E20	Action:T20 Acts-on:T74
+T21	Action 1175 1182	Collect
+E21	Action:T21 Acts-on:T75
+T22	Action 1202 1205	put
+E22	Action:T22 Acts-on2:T75 Site:T79
+T23	Action 1265 1268	Put
+E23	Action:T23 Acts-on:T81 Site:T83
+T24	Action 1323 1329	Freeze
+E24	Action:T24 Acts-on:T84 Site:T86
+T25	Action 1415 1422	Discard
+E25	Action:T25 Acts-on:T87
+T26	Action 1439 1447	filtrate
+E26	Action:T26 
+T27	Action 556 561	touch
+E27	Action:T27 Acts-on:T50 Acts-on2:T49
+T28	Device 64 71	plunger
+T29	Amount 81 85	60mL
+T30	Location 86 93	syringe
+R1	Measure Arg1:T30 Arg2:T29	
+T31	Size 106 113	0.02 µm
+T33	Location 137 140	end
+T34	Location 148 155	syringe
+T35	Amount 162 167	50 mL
+T36	Size 171 177	0.2 µm
+T37	Reagent 178 186	filtrate
+T38	Amount 196 201	60-mL
+T39	Location 202 209	syringe
+T40	Device 219 226	plunger
+T41	Location 241 248	syringe
+T42	Device 269 280	can crusher
+T43	Size 291 297	0.2 µm
+T44	Reagent 298 306	filtrate
+T45	Location 331 337	Anotop
+T46	Device 349 360	can crusher
+T32	Location 122 128	Anotop
+T9	Location 524 530	Anotop
+T47	Location 540 547	syringe
+T49	Location 582 588	outlet
+T50	Location 566 578	filter inlet
+T51	Amount 612 616	50mL
+T52	Size 620 626	0.2 µm
+T53	Reagent 627 635	filtrate
+T54	Amount 660 665	60-mL
+T55	Location 666 673	syringe
+T56	Location 689 695	Anotop
+T57	Location 703 706	end
+T58	Location 714 721	syringe
+T59	Size 747 753	0.2 µm
+T60	Reagent 754 762	filtrate
+T61	Location 824 830	Anotop
+T62	Location 840 847	syringe
+T63	Location 862 868	Anotop
+T64	Device 895 902	Sharpie
+T65	Location 914 920	Anotop
+T66	Seal 924 938	clean parafilm
+T67	Action 940 948	covering
+E9	Action:T67 Acts-on:T68 Acts-on2:T69
+T68	Location 958 963	inlet
+T69	Location 968 974	outlet
+T70	Seal 984 1006	piece of aluminum foil
+T71	Modifier 1075 1085	parafilmed
+T72	Location 1086 1092	Anotop
+T73	Seal 1108 1121	aluminum foil
+T74	Location 1131 1141	Ziploc bag
+T75	Location 1191 1198	Anotops
+T76	Numerical 1183 1190	several
+T77	Modifier 1215 1222	labeled
+T78	Modifier 1100 1107	labeled
+T79	Location 1223 1229	Ziploc
+T80	Modifier 1273 1285	foil-wrapped
+T81	Location 1286 1293	Anotops
+T82	Modifier 1303 1310	labeled
+T83	Location 1311 1321	Ziploc bag
+T84	Location 1334 1340	Ziploc
+T85	Temperature 1344 1349	-80°C
+T86	Device 1350 1357	freezer
+T87	Location 1427 1434	syringe
+R2	Measure Arg1:T32 Arg2:T31	
+R3	Meronym Arg1:T33 Arg2:T34	
+R4	Measure Arg1:T37 Arg2:T36	
+R5	Measure Arg1:T37 Arg2:T35	
+R6	Measure Arg1:T39 Arg2:T38	
+T6	Location 253 259	filter
+R7	Measure Arg1:T44 Arg2:T43	
+T88	Modifier 307 318	very slowly
+R8	Mod-Link Arg1:E7 Arg2:T88	
+R9	Measure Arg1:T53 Arg2:T52	
+R10	Measure Arg1:T53 Arg2:T51	
+R11	Measure Arg1:T55 Arg2:T54	
+R12	Meronym Arg1:T57 Arg2:T58	
+R13	Measure Arg1:T60 Arg2:T59	
+T48	Location 782 788	Anotop
+T89	Modifier 763 769	slowly
+T90	Device 800 811	can crusher
+R14	Mod-Link Arg1:E14 Arg2:T89	
+R15	Mod-Link Arg1:T72 Arg2:T71	
+R16	Mod-Link Arg1:T73 Arg2:T78	
+R17	Measure Arg1:T75 Arg2:T76	
+R18	Mod-Link Arg1:T79 Arg2:T77	
+R19	Mod-Link Arg1:T81 Arg2:T80	
+R20	Mod-Link Arg1:T83 Arg2:T82	
+R21	Setting Arg1:T86 Arg2:T85	
+T91	Method 0 18	Can Crusher-Culley
+T92	Method 34 51	sterile technique
+T93	Location 114 120	filter
+R22	Coreference-Link Arg1:T32 Arg2:T93	
+T94	Action 399 404	Watch
+E6	Action:T94 Acts-on:T96
+T95	Modifier 405 414	carefully
+R23	Mod-Link Arg1:E6 Arg2:T95	
+T96	Reagent 436 441	water
+T97	Location 457 463	Anotop
+T98	Method 494 511	sterile technique
+R24	Or Arg1:T50 Arg2:T49	
+T99	Action 723 729	Repeat
+E28	Action:T99 
+T100	Modifier 1045 1055	waterproof
+T101	Device 1056 1063	Sharpie
+R25	Mod-Link Arg1:T101 Arg2:T100	
+T102	Modifier 884 894	waterproof
+R26	Mod-Link Arg1:T64 Arg2:T102	
+T103	Location 1260 1263	bag
+T104	Location 1235 1250	location/sample
+T105	Numerical 1231 1234	one
+R27	Measure Arg1:T104 Arg2:T105	
+T106	Temperature 1365 1370	-80°C
+T107	Device 1371 1378	freezer
+R28	Setting Arg1:T107 Arg2:T106	
+T108	Temperature 1399 1404	-20°C
+T109	Device 1405 1412	freezer
+R29	Setting Arg1:T109 Arg2:T108	
+T110	Modifier 1470 1477	sterile
+T111	Reagent 1478 1483	water
+R30	Mod-Link Arg1:T111 Arg2:T110	

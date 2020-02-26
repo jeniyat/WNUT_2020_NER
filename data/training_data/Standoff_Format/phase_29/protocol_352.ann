@@ -1,0 +1,140 @@
+T1	Action 42 48	Set up
+E1	Action:T1 Acts-on:T19 Site:T21
+T2	Action 104 107	Add
+E2	Action:T2 Acts-on:T22 Site:T24
+T3	Action 291 297	adsorb
+E3	Action:T3 Acts-on:T28 Site:T29
+T4	Action 388 394	Set up
+E4	Action:T4 Acts-on:T33
+T5	Action 601 608	Prepare
+E5	Action:T5 Acts-on:T42
+T6	Action 566 572	remove
+E6	Action:T6 
+T7	Action 455 462	replace
+E7	Action:T7 Acts-on:T34 Acts-on2:T35
+T8	Action 675 678	Add
+E8	Action:T8 Acts-on:T46 Site:T47
+T9	Action 718 721	Mix
+E9	Action:T9 Acts-on:T48
+T10	Action 726 732	remove
+E10	Action:T10 Acts-on:T48
+T11	Action 758 778	Perform plaque assay
+E11	Action:T11 
+T12	Action 794 803	determine
+E12	Action:T12 Measure-Type-Link:T52
+T13	Action 838 841	Add
+E13	Action:T13 Acts-on:T54 Site:T55
+T14	Action 882 890	Incubate
+E14	Action:T14 Acts-on:T56 Acts-on2:T57
+T15	Action 1066 1075	Determine
+E15	Action:T15 Measure-Type-Link:T69 Using:T70
+T16	Action 1102 1105	Add
+E16	Action:T16 Acts-on:T68 Site:T71
+T17	Action 1177 1186	Determine
+E17	Action:T17 Measure-Type-Link:T72
+T18	Action 959 965	Remove
+E18	Action:T18 Acts-on:T62 Site:T64 Site2:T65
+T19	Location 49 76	triplicate adsorption tubes
+T20	Amount 85 91	1.5 mL
+T21	Location 92 102	microtubes
+R1	Measure Arg1:T21 Arg2:T20	
+T22	Reagent 108 114	phages
+T23	Modifier 120 131	known titer
+T24	Reagent 139 157	cyanobacteria host
+T25	Measure-Type 244 247	MOI
+T26	Numerical 265 269	0.02
+R2	Of-Type Arg1:T26 Arg2:T25	
+R3	Mod-Link Arg1:T22 Arg2:T23	
+T27	Modifier 161 179	exponential growth
+R4	Mod-Link Arg1:T24 Arg2:T27	
+R5	Measure Arg1:T24 Arg2:T26	
+T28	Reagent 281 287	phages
+T29	Reagent 305 310	hosts
+T30	Time 315 321	60 min
+R6	Setting Arg1:E3 Arg2:T30	
+T31	Temperature 326 342	room temperature
+T32	Generic-Measure 366 386	25µmol quanta m–2s–1
+R7	Setting Arg1:E3 Arg2:T31	
+R8	Setting Arg1:E3 Arg2:T32	
+T33	Location 395 408	control tubes
+T34	Reagent 463 473	host cells
+T35	Reagent 479 484	media
+T36	Action 541 545	omit
+E19	Action:T36 Acts-on:T37
+T37	Reagent 546 551	virus
+T38	Reagent 584 590	phages
+T39	Modifier 573 583	unadsorbed
+T40	Amount 609 613	nine
+T41	Size 614 619	15-mL
+T42	Location 620 636	centrifuge tubes
+T43	Amount 648 653	10 mL
+T44	Reagent 654 672	algal growth media
+R9	Measure Arg1:T44 Arg2:T43	
+R10	Meronym Arg1:T44 Arg2:T42	
+R11	Measure Arg1:T42 Arg2:T41	
+R12	Measure Arg1:T42 Arg2:T40	
+T45	Amount 679 685	100 µL
+T46	Reagent 691 693	AT
+T47	Reagent 697 700	FGT
+R13	Measure Arg1:T46 Arg2:T45	
+T48	Reagent 740 746	sample
+T49	Generic-Measure 751 756	T = 0
+T50	Amount 733 739	0.1 mL
+R14	Measure Arg1:T48 Arg2:T50	
+R15	Setting Arg1:E10 Arg2:T49	
+T51	Modifier 779 790	immediately
+T52	Measure-Type 804 827	total infective centers
+R16	Mod-Link Arg1:E11 Arg2:T51	
+T53	Amount 842 848	100 µL
+T54	Reagent 854 857	FGT
+T55	Reagent 861 864	SGT
+R17	Measure Arg1:T54 Arg2:T53	
+T56	Reagent 891 894	FGT
+T57	Reagent 899 902	SGT
+T58	Temperature 912 928	room temperature
+R18	Setting Arg1:E14 Arg2:T58	
+T60	Amount 966 972	100 µL
+T62	Reagent 973 980	samples
+T61	Time 981 990	every 3 h
+T63	Generic-Measure 937 958	25 µmol quanta m–2s–1
+T64	Reagent 996 999	FGT
+T65	Reagent 1027 1030	SGT
+T66	Time 1059 1063	30 h
+T67	Amount 1106 1112	100 µL
+T68	Location 1118 1139	positive control tube
+T69	Measure-Type 1080 1083	TIC
+R20	Measure Arg1:T62 Arg2:T60	
+R21	Setting Arg1:E18 Arg2:T61	
+R22	Setting Arg1:E18 Arg2:T66	
+T70	Method 1088 1100	plaque assay
+T71	Location 1148 1159	FGT-control
+T72	Measure-Type 1191 1208	total phage input
+T73	Reagent 29 40	cyanophages
+T74	Reagent 9 27	growth experiments
+T75	Modifier 0 8	One-step
+T76	Location 78 80	AT
+R23	Coreference-Link Arg1:T76 Arg2:T19	
+T77	Measure-Type 186 199	concentration
+T78	Reagent 181 185	cell
+T79	Method 214 224	microscopy
+T80	Method 226 236	Cyanoinput
+T81	Method 350 362	illumination
+T82	Location 410 412	CT
+R24	Coreference-Link Arg1:T82 Arg2:T33	
+T83	Reagent 436 453	positive controls
+T84	Reagent 522 539	negative controls
+T85	Time 558 564	60 min
+R25	Setting Arg1:E6 Arg2:T85	
+T86	Generic-Measure 702 706	10–2
+T87	Method 707 715	dilution
+T88	Generic-Measure 866 870	10–4
+T89	Method 871 879	dilution
+T90	Time 1004 1021	3, 6, 9, 12, 16 h
+R26	Setting Arg1:E18 Arg2:T90	
+T91	Generic-Measure 1161 1165	10–2
+T92	Measure-Type 1210 1220	Phageinput
+T93	Location 1141 1143	CT
+T94	Method 1166 1174	dilution
+R27	Coreference-Link Arg1:T93 Arg2:T68	
+T95	Time 1037 1041	12 h
+R28	Setting Arg1:E18 Arg2:T95	

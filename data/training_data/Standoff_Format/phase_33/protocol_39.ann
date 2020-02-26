@@ -1,0 +1,74 @@
+T1	Action 67 76	Inoculate
+E1	Action:T1 Acts-on:T2 Acts-on2:T5
+T2	Reagent 77 96	E. coli BL21 strain
+T3	Reagent 112 168	recombinant protein of chloramphenicol acetyltransferase
+R1	Meronym Arg1:T3 Arg2:T2
+T4	Amount 172 175	5mL
+T5	Reagent 176 192	LB liquid medium
+T6	Concentration 205 213	100ug/mL
+T7	Reagent 214 224	ampicillin
+R3	Or Arg1:T6 Arg2:T7
+R4	Meronym Arg1:T7 Arg2:T5
+T8	Temperature 227 231	37 ℃
+T9	Action 232 239	shaking
+E2	Action:T9 
+T10	Action 244 251	culture
+E3	Action:T10 
+T11	Time 252 261	overnight
+R5	Setting Arg1:E3 Arg2:T11
+R6	Setting Arg1:E2 Arg2:T8
+T12	Action 263 271	Transfer
+E4	Action:T12 Acts-on:T15 Acts-on2:T17
+T13	Amount 272 275	1mL
+T14	Modifier 276 285	overnight
+T15	Reagent 286 294	cultures
+R7	Mod-Link Arg1:T15 Arg2:T14
+T16	Amount 298 304	100 mL
+T17	Reagent 338 354	LB liquid medium
+T18	Concentration 317 325	100ug/mL
+T19	Reagent 326 336	ampicillin
+R10	Meronym Arg1:T19 Arg2:T17
+T20	Temperature 356 360	37 ℃
+R12	Setting Arg1:E4 Arg2:T20
+T21	Action 361 366	shake
+E5	Action:T21 Acts-on:T22
+T22	Reagent 367 374	culture
+T26	Amount 405 409	10ul
+T27	Reagent 410 417	samples
+R14	Measure Arg1:T27 Arg2:T26
+T28	Action 441 444	Add
+E7	Action:T28 Acts-on:T29 Product:T43
+T29	Reagent 445 449	IPTG
+T30	Concentration 478 488	0.5 mmol/l
+T31	Action 490 497	culture
+E8	Action:T31 
+T32	Time 498 502	1-3h
+T33	Temperature 506 510	37 ℃
+R15	Setting Arg1:E8 Arg2:T32
+R16	Setting Arg1:E8 Arg2:T33
+T35	Time 541 547	10 min
+T36	Speed 512 521	12,000rpm
+T37	Action 549 556	discard
+E10	Action:T37 Acts-on:T38
+T38	Reagent 561 572	supernatant
+T39	Action 574 579	store
+E11	Action:T39 Acts-on:T40
+T40	Reagent 580 596	cell precipitate
+T41	Temperature 600 605	-20 ℃
+T42	Temperature 609 614	-70 ℃
+R19	Setting Arg1:E11 Arg2:T41
+R2	Measure Arg1:T5 Arg2:T4	
+R11	Measure Arg1:T15 Arg2:T13	
+R9	Measure Arg1:T17 Arg2:T16	
+R8	Measure Arg1:T19 Arg2:T18	
+T43	Reagent 455 474	final concentration
+R21	Measure Arg1:T43 Arg2:T30	
+T23	Generic-Measure 381 398	OD600 = 0.6 - 0.8
+R13	Setting Arg1:E5 Arg2:T23	
+R20	Or Arg1:T41 Arg2:T42	
+T24	Method 0 9	Induction
+T44	Reagent 13 66	Chloramphenicol acetyltransferase recombinant protein
+T45	Action 400 404	Take
+E12	Action:T45 Acts-on:T27
+T25	Method 422 439	SDS-PAGE analysis
+T34	Method 522 536	centrifugation

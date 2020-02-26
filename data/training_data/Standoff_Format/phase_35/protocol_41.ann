@@ -1,0 +1,208 @@
+T1	Action 149 152	add
+E1	Action:T1 Acts-on:T3 Site:T6 Acts-on2:T9
+T2	Amount 156 168	equal volume
+T3	Reagent 172 175	PCI
+T4	Action 189 197	emulsify
+E2	Action:T4 
+T5	Action 180 185	shake
+E3	Action:T5 
+R1	Measure Arg1:T3 Arg2:T2
+T6	Location 98 118	microcentrifuge tube
+T7	Amount 93 97	2-mL
+R2	Measure Arg1:T6 Arg2:T7
+T8	Amount 82 88	0.6 mL
+T9	Reagent 63 79	viral suspension
+R3	Measure Arg1:T9 Arg2:T8
+T10	Action 199 209	Centrifuge
+E4	Action:T10 Product:T13 Product2:T14
+T11	Speed 213 220	10,000g
+T12	Time 225 230	5 min
+R4	Setting Arg1:E4 Arg2:T11
+R5	Setting Arg1:E4 Arg2:T12
+T13	Reagent 263 270	organic
+T14	Reagent 275 289	aqueous phases
+T15	Action 291 299	Transfer
+E5	Action:T15 Acts-on:T16 Site:T17
+T16	Reagent 304 332	DNA-containing aqueous phase
+T17	Location 350 354	tube
+T18	Action 358 368	aspiration
+E6	Action:T18 Using:T19
+T19	Location 376 383	pipette
+T20	Action 592 595	Add
+E7	Action:T20 Acts-on:T22 Acts-on2:T23
+T21	Amount 599 611	equal volume
+T22	Reagent 615 617	CI
+T23	Reagent 625 638	aqueous phase
+T24	Action 643 648	shake
+E8	Action:T24 
+T25	Action 652 660	emulsify
+E9	Action:T25 
+R6	Measure Arg1:T22 Arg2:T21
+T26	Action 662 672	Centrifuge
+E10	Action:T26 Using:T65
+T27	Action 689 704	separate phases
+E11	Action:T27 
+T28	Action 706 714	Transfer
+E12	Action:T28 Acts-on:T29 Site:T30
+T29	Reagent 719 732	aqueous phase
+T30	Location 750 754	tube
+T31	Modifier 346 349	new
+R7	Mod-Link Arg1:T17 Arg2:T31
+T32	Modifier 746 749	new
+R8	Mod-Link Arg1:T30 Arg2:T32
+T33	Action 756 759	Add
+E13	Action:T33 Acts-on:T35
+T34	Amount 760 764	1 µL
+T35	Reagent 765 782	polyacryl carrier
+R9	Measure Arg1:T35 Arg2:T34
+T36	Action 784 787	Add
+E14	Action:T36 Acts-on:T38
+T37	Amount 788 804	1/10 of a volume
+T38	Reagent 808 822	sodium acetate
+T39	Action 827 833	invert
+E15	Action:T39 Acts-on:T40
+T40	Location 834 838	tube
+T41	Action 842 848	vortex
+E16	Action:T41 
+T42	Action 852 855	mix
+E17	Action:T42 
+R10	Measure Arg1:T38 Arg2:T37
+T43	Action 857 860	Add
+E18	Action:T43 Acts-on:T45
+T44	Amount 861 870	2 volumes
+T45	Reagent 874 881	ethanol
+T46	Action 886 892	invert
+E19	Action:T46 Acts-on:T47
+T47	Location 893 897	tube
+T48	Action 901 904	mix
+E20	Action:T48 
+R11	Measure Arg1:T45 Arg2:T44
+T49	Action 906 914	Incubate
+E21	Action:T49 Acts-on:T50 Site:T51
+T50	Reagent 915 921	sample
+T51	Location 925 928	ice
+T52	Time 933 939	10 min
+R12	Setting Arg1:E21 Arg2:T52
+T53	Action 941 951	Centrifuge
+E22	Action:T53 
+T54	Time 956 969	10 to 30 min,
+T55	Temperature 973 978	0–4°C
+R13	Setting Arg1:E22 Arg2:T54
+R14	Setting Arg1:E22 Arg2:T55
+T56	Action 992 1000	Aspirate
+E23	Action:T56 Acts-on:T57
+T57	Reagent 1015 1026	supernatant
+T58	Action 1049 1056	disturb
+E24	Action:T58 Acts-on:T59
+T59	Reagent 1061 1067	pellet
+T60	Action 1069 1072	Add
+E25	Action:T60 Acts-on:T64
+T61	Amount 1073 1079	500 µL
+T62	Modifier 1080 1088	ice-cold
+T63	Concentration 1089 1092	70%
+T64	Reagent 1093 1100	ethanol
+R15	Measure Arg1:T64 Arg2:T63
+R16	Mod-Link Arg1:T64 Arg2:T62
+R17	Measure Arg1:T64 Arg2:T61
+T65	Method 679 685	step 2
+T66	Action 1102 1112	Centrifuge
+E26	Action:T66 
+T67	Speed 1116 1123	10,000g
+T68	Time 1128 1134	10 min
+T69	Action 1136 1142	Decant
+E27	Action:T69 Acts-on:T71
+T70	Action 1146 1154	aspirate
+E28	Action:T70 
+T71	Reagent 1155 1166	supernatant
+T72	Action 1215 1222	disturb
+E29	Action:T72 Acts-on:T73
+T73	Reagent 1227 1233	pellet
+T74	Action 1272 1281	evaporate
+E30	Action:T74 Acts-on:T75
+T75	Reagent 1241 1256	residual liquid
+T76	Location 1264 1268	tube
+T77	Action 1285 1295	air-drying
+E31	Action:T77 Using:T79 Using2:T78
+T78	Location 1322 1326	tube
+T79	Seal 1305 1308	cap
+T80	Action 1345 1352	placing
+E32	Action:T80 Site:T82
+T81	Modifier 1353 1360	briefly
+T82	Device 1366 1397	centrifugal vacuum concentrator
+T83	Device 1405 1426	SpeedVac concentrator
+T84	Device 1428 1445	Thermo Scientific
+T85	Device 1447 1475	Concentrator plus, Eppendorf
+R18	Meronym Arg1:T75 Arg2:T76	
+R19	Mod-Link Arg1:E32 Arg2:T81	
+T86	Action 1478 1487	Resuspend
+E33	Action:T86 Acts-on:T88 Site:T90
+T87	Modifier 1492 1497	dried
+T88	Reagent 1498 1504	pellet
+T89	Amount 1510 1522	small volume
+T90	Reagent 1526 1530	Tris
+T91	Concentration 1532 1537	10 mM
+T92	pH 1539 1543	pH 8
+T93	Reagent 1548 1557	TE buffer
+R23	Mod-Link Arg1:T88 Arg2:T87	
+R24	Measure Arg1:T90 Arg2:T89	
+R25	Measure Arg1:T90 Arg2:T91	
+R26	Measure Arg1:T90 Arg2:T92	
+R27	Or Arg1:T90 Arg2:T93	
+T94	Modifier 1573 1584	solubilized
+T95	Reagent 1585 1588	DNA
+T96	Modifier 1563 1571	purified
+T97	Temperature 1606 1609	4°C
+T98	Time 1614 1635	short periods of time
+T99	Temperature 1640 1645	–20°C
+T100	Time 1650 1670	long periods of time
+T101	Temperature 1679 1684	–80°C
+T102	Time 1685 1697	indefinitely
+T103	Action 1596 1602	stored
+E34	Action:T103 Acts-on:T95
+R28	Mod-Link Arg1:T95 Arg2:T94	
+R29	Mod-Link Arg1:T95 Arg2:T96	
+R30	Setting Arg1:E34 Arg2:T97	
+R31	Setting Arg1:E34 Arg2:T98	
+R32	Or Arg1:T97 Arg2:T99	
+R33	Or Arg1:T98 Arg2:T100	
+R34	Or Arg1:T99 Arg2:T101	
+R35	Or Arg1:T100 Arg2:T102	
+T104	Reagent 0 17	Phenol-chloroform
+T105	Method 18 28	extraction
+T106	Reagent 34 41	ethanol
+T107	Method 42 55	precipitation
+T108	Modifier 81 82	≤
+R36	Mod-Link Arg1:T8 Arg2:T108	
+T109	Measure-Type 140 147	volumes
+T110	Action 120 128	scale up
+E35	Action:T110 
+T111	Method 245 255	separation
+T112	Reagent 334 339	upper
+T113	Reagent 408 416	material
+T114	Action 402 407	avoid
+E36	Action:T114 Acts-on:T113 Site:T115
+T115	Location 424 433	interface
+T116	Action 435 441	Repeat
+E37	Action:T116 
+T117	Location 472 481	interface
+T118	Reagent 514 522	material
+T119	Modifier 504 513	extracted
+R37	Mod-Link Arg1:T118 Arg2:T119	
+T120	Numerical 524 527	one
+T121	Method 528 538	extraction
+T122	Modifier 566 570	pure
+T123	Method 571 589	viral preparations
+T124	Reagent 734 739	upper
+R38	Coreference-Link Arg1:T124 Arg2:T29	
+R39	Coreference-Link Arg1:T112 Arg2:T16	
+T125	Action 1004 1010	decant
+E38	Action:T125 
+R40	Or Arg1:E23 Arg2:E38	
+R41	Setting Arg1:E26 Arg2:T67	
+R42	Setting Arg1:E26 Arg2:T68	
+R43	Or Arg1:E27 Arg2:E28	
+T126	Modifier 1170 1180	completely
+R44	Mod-Link Arg1:E27 Arg2:T126	
+R20	Coreference-Link Arg1:T83 Arg2:T82	
+R21	Coreference-Link Arg1:T84 Arg2:T82	
+R22	Coreference-Link Arg1:T85 Arg2:T82	

@@ -1,0 +1,242 @@
+T1	Action 81 87	Invert
+E1	Action:T1 Acts-on:T42
+T2	Action 100 103	mix
+E2	Action:T2 
+T3	Action 108 116	incubate
+E3	Action:T3 Acts-on:T42
+T4	Action 150 160	Centrifuge
+E4	Action:T4 
+T5	Action 188 194	remove
+E5	Action:T5 Acts-on:T47
+T6	Action 248 251	Add
+E6	Action:T6 Acts-on:T52 Site:T53
+T7	Action 295 298	mix
+E7	Action:T7 Acts-on:T53 Acts-on2:T52
+T8	Action 300 310	Centrifuge
+E8	Action:T8 
+T9	Action 338 344	remove
+E9	Action:T9 Acts-on:T56
+T10	Action 403 409	Vortex
+E10	Action:T10 Acts-on:T61
+T11	Action 422 431	resuspend
+E11	Action:T11 Acts-on:T62 Site:T63
+T12	Action 466 469	Add
+E12	Action:T12 Acts-on:T65 Site:T66
+T13	Action 545 549	lyse
+E13	Action:T13 Acts-on:T68
+T14	Action 524 530	vortex
+E14	Action:T14 Acts-on:T66
+T15	Action 646 654	incubate
+E15	Action:T15 Acts-on:T71
+T16	Action 717 720	Add
+E16	Action:T16 Acts-on:T74 Site:T75
+T17	Action 779 782	mix
+E17	Action:T17 Acts-on:T75
+T18	Action 786 795	inverting
+E18	Action:T18 Acts-on:T76
+T19	Action 818 828	Centrifuge
+E19	Action:T19 
+T20	Action 865 873	transfer
+E20	Action:T20 Acts-on:T81 Site:T82
+T21	Action 905 908	Add
+E21	Action:T21 Acts-on:T85 Site:T86
+T22	Action 948 951	mix
+E22	Action:T22 Acts-on:T86
+T23	Action 962 971	inverting
+E23	Action:T23 Acts-on:T88 Count:T89
+T24	Action 1005 1015	Centrifuge
+E24	Action:T24 
+T25	Action 1041 1048	Discard
+E25	Action:T25 Acts-on:T92
+T26	Action 1096 1102	remove
+E26	Action:T26 Acts-on:T95 Using:T93
+T27	Action 1155 1158	Add
+E27	Action:T27 Acts-on:T100
+T28	Action 1179 1185	invert
+E28	Action:T28 Acts-on:T101
+T29	Action 1204 1208	wash
+E29	Action:T29 Acts-on:T103
+T30	Action 1221 1231	Centrifuge
+E30	Action:T30 
+T31	Action 1257 1264	Discard
+E31	Action:T31 Acts-on:T106
+T32	Action 1285 1290	drain
+E32	Action:T32 Acts-on:T107 Site:T111
+T33	Action 1346 1353	air dry
+E33	Action:T33 
+T34	Action 1370 1373	Add
+E34	Action:T34 Acts-on:T114
+T35	Action 1393 1401	dissolve
+E35	Action:T35 Acts-on:T115
+T36	Action 1411 1420	Rehydrate
+E36	Action:T36 Acts-on:T116
+T37	Action 1440 1450	incubating
+E37	Action:T37 Acts-on:T116
+T38	Action 1476 1484	Incubate
+E38	Action:T38 
+T39	Action 1557 1562	Store
+E39	Action:T39 Acts-on:T123
+T40	Action 1597 1602	store
+E40	Action:T40 
+T41	Action 1620 1623	Add
+E41	Action:T41 Acts-on:T133 Site:T129
+T42	Location 92 96	tube
+T43	Time 117 128	2‐3 minutes
+T44	Temperature 132 148	room temperature
+T45	Speed 161 168	2,000xg
+T46	Time 173 182	5 minutes
+T47	Reagent 195 206	supernatant
+T48	Modifier 207 216	carefully
+T49	Action 217 235	without disturbing
+E42	Action:T49 Acts-on:T50
+T50	Reagent 240 246	pellet
+T51	Amount 252 256	10ml
+T52	Reagent 260 276	RBC Lysis Buffer
+T53	Reagent 284 290	pellet
+T54	Speed 311 318	2,000xg
+T55	Time 323 332	5 minutes
+T56	Reagent 345 356	supernatant
+T57	Reagent 382 388	pellet
+T58	Action 358 364	Repeat
+E43	Action:T58 
+T61	Location 414 418	tube
+T60	Action 396 401	white
+E44	Action:T60 Acts-on:T57
+T62	Reagent 436 441	cells
+T63	Reagent 449 464	residual liquid
+T64	Amount 470 473	4ml
+T65	Reagent 477 494	XIT™ Lysis Buffer
+T67	Modifier 531 541	vigorously
+T68	Mention 554 559	cells
+T69	Temperature 658 662	37°C
+T70	Time 667 679	5‐10 minutes
+T71	Reagent 693 701	solution
+T72	Action 705 715	homogenous
+E45	Action:T72 
+R1	Setting Arg1:E15 Arg2:T69	
+R2	Setting Arg1:E15 Arg2:T70	
+T73	Amount 721 726	900µl
+T74	Reagent 727 760	XIT™ Protein Precipitation Buffer
+T75	Reagent 768 774	sample
+T76	Location 800 804	tube
+T77	Time 805 816	10‐20 times
+T78	Speed 832 838	2,000g
+T79	Time 843 852	5 minutes
+T80	Modifier 854 863	Carefully
+T81	Reagent 878 889	supernatant
+T82	Location 899 903	tube
+T83	Modifier 895 898	new
+T84	Amount 909 912	4ml
+T85	Reagent 913 924	isopropanol
+T86	Reagent 932 943	supernatant
+T87	Modifier 955 961	gently
+T88	Reagent 976 982	sample
+T89	Numerical 992 1003	20‐25 times
+T90	Speed 1019 1025	2,000g
+T91	Time 1030 1039	5 minutes
+T92	Reagent 1053 1064	supernatant
+T93	Location 1075 1082	pipette
+T94	Modifier 1086 1095	carefully
+T95	Reagent 1113 1119	liquid
+T96	Action 1128 1138	disturbing
+E46	Action:T96 Acts-on:T97
+T97	Reagent 1143 1153	DNA pellet
+T98	Amount 1159 1162	2ml
+T99	Concentration 1163 1166	70%
+T100	Reagent 1167 1174	ethanol
+T101	Location 1190 1194	tube
+T102	Time 1195 1200	twice
+T103	Reagent 1213 1219	pellet
+T104	Speed 1235 1241	2,000g
+T105	Time 1246 1255	3 minutes
+T106	Reagent 1269 1280	supernatant
+T107	Location 1295 1299	tube
+T109	Modifier 1314 1319	clean
+T110	Modifier 1320 1329	absorbent
+T111	Reagent 1330 1335	paper
+T112	Time 1358 1368	15 minutes
+T113	Amount 1374 1379	500µl
+T114	Reagent 1380 1389	TE buffer
+T115	Reagent 1406 1409	DNA
+T116	Reagent 1425 1436	genomic DNA
+T117	Temperature 1454 1461	55‐65°C
+T118	Time 1466 1474	one hour
+T119	Time 1485 1494	overnight
+T120	Temperature 1498 1514	room temperature
+T122	Reagent 1534 1545	genomic DNA
+T123	Reagent 1563 1566	DNA
+T124	Temperature 1570 1573	4°C
+T125	Temperature 1606 1609	‐20
+T126	Temperature 1613 1618	‐80°C
+T127	Amount 1624 1627	5ml
+T128	Amount 1645 1649	15ml
+T130	Amount 1677 1680	5ml
+T131	Reagent 1681 1697	RBC Lysis Buffer
+R3	Setting Arg1:E3 Arg2:T43	
+R4	Setting Arg1:E3 Arg2:T44	
+R5	Setting Arg1:E4 Arg2:T45	
+R6	Setting Arg1:E4 Arg2:T46	
+R7	Mod-Link Arg1:E5 Arg2:T48	
+R8	Measure Arg1:T52 Arg2:T51	
+R9	Setting Arg1:E8 Arg2:T54	
+R10	Setting Arg1:E8 Arg2:T55	
+R11	Meronym Arg1:T62 Arg2:T61	
+R12	Meronym Arg1:T63 Arg2:T61	
+R13	Measure Arg1:T65 Arg2:T64	
+T66	Reagent 514 519	cells
+T132	Modifier 502 513	resuspended
+R14	Mod-Link Arg1:T66 Arg2:T132	
+R15	Mod-Link Arg1:E14 Arg2:T67	
+R16	Coreference-Link Arg1:T68 Arg2:T66	
+R17	Mod-Link Arg1:E13 Arg2:T67	
+R18	Measure Arg1:T74 Arg2:T73	
+R19	Setting Arg1:E18 Arg2:T77	
+R20	Setting Arg1:E19 Arg2:T78	
+R21	Setting Arg1:E19 Arg2:T79	
+R22	Mod-Link Arg1:T82 Arg2:T83	
+R23	Mod-Link Arg1:E20 Arg2:T80	
+R24	Measure Arg1:T85 Arg2:T84	
+R25	Mod-Link Arg1:E23 Arg2:T87	
+R26	Meronym Arg1:T86 Arg2:T88	
+R28	Setting Arg1:E24 Arg2:T90	
+R29	Setting Arg1:E24 Arg2:T91	
+R30	Mod-Link Arg1:E26 Arg2:T94	
+R31	Measure Arg1:T100 Arg2:T99	
+R32	Measure Arg1:T100 Arg2:T98	
+R33	Setting Arg1:E28 Arg2:T102	
+R34	Setting Arg1:E30 Arg2:T104	
+R35	Setting Arg1:E30 Arg2:T105	
+R36	Setting Arg1:E33 Arg2:T112	
+R37	Mod-Link Arg1:T111 Arg2:T110	
+R38	Mod-Link Arg1:T111 Arg2:T109	
+T108	Amount 1303 1310	a piece
+R39	Measure Arg1:T111 Arg2:T108	
+R40	Measure Arg1:T114 Arg2:T113	
+R41	Setting Arg1:E37 Arg2:T117	
+R42	Setting Arg1:E37 Arg2:T118	
+R43	Setting Arg1:E38 Arg2:T119	
+R44	Setting Arg1:E38 Arg2:T120	
+R45	Setting Arg1:E39 Arg2:T124	
+R46	Setting Arg1:E40 Arg2:T125	
+R47	Or Arg1:T125 Arg2:T126	
+T133	Reagent 1628 1639	whole blood
+R48	Measure Arg1:T133 Arg2:T127	
+T129	Location 1650 1665	centrifuge tube
+R49	Meronym Arg1:T131 Arg2:T129	
+R50	Measure Arg1:T131 Arg2:T130	
+R51	Measure Arg1:T129 Arg2:T128	
+T134	Device 0 26	XIT™ Genomic DNA Blood Kit
+T135	Method 40 49	Isolation
+T136	Modifier 53 60	Genomic
+T137	Reagent 61 64	DNA
+T138	Amount 70 73	5ml
+T139	Reagent 74 79	blood
+R52	Measure Arg1:T139 Arg2:T138	
+R53	Mod-Link Arg1:T137 Arg2:T136	
+T59	Method 572 582	incubation
+T140	Reagent 608 619	cell clumps
+T141	Modifier 624 631	visible
+T142	Action 638 644	mixing
+E48	Action:T142 
+R54	Mod-Link Arg1:T140 Arg2:T141	
+T121	Method 1546 1555	hydration

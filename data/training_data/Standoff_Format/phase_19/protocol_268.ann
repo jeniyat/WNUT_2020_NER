@@ -1,0 +1,131 @@
+T1	Action 43 47	Grow
+E1	Action:T1 Product:T18
+T2	Action 90 100	Centrifuge
+E2	Action:T2 
+T3	Action 145 154	Resuspend
+E3	Action:T3 Site:T25
+T5	Action 320 323	Mix
+E5	Action:T5 Acts-on:T4
+T6	Action 339 345	Vortex
+E6	Action:T6 
+T7	Action 376 380	Take
+E7	Action:T7 Acts-on:T29
+T8	Action 413 416	add
+E8	Action:T8 Site:T31 Acts-on:T29 Using:T33
+T9	Action 466 472	Spread
+E9	Action:T9 Site:T34 Acts-on:T37 Using:T38
+T11	Action 600 604	Seal
+E11	Action:T11 Acts-on:T40 Using:T41
+T13	Action 654 658	grow
+E13	Action:T13 Acts-on:T42
+T12	Action 573 576	dry
+E12	Action:T12 Acts-on:T39
+T10	Action 697 705	Transfer
+E10	Action:T10 Acts-on:T43 Site:T46 Using:T48
+T14	Action 791 799	Incubate
+E14	Action:T14 Using:T50
+T15	Action 844 847	Add
+E15	Action:T15 Acts-on:T52
+T16	Action 930 936	spread
+E16	Action:T16 Acts-on:T56 Acts-on2:T55 Using:T59 Using2:T60
+T17	Action 893 897	Take
+E17	Action:T17 Acts-on:T55
+T18	Reagent 48 60	cell culture
+T19	Measure-Type 67 72	OD750
+T20	Numerical 76 87	0.15 to 0.4
+R1	Of-Type Arg1:T20 Arg2:T19	
+R2	Measure Arg1:T18 Arg2:T20	
+T21	Speed 104 108	400g
+T22	Time 113 122	5 minutes
+T23	Temperature 126 142	room temperature
+R3	Setting Arg1:E2 Arg2:T21	
+R4	Setting Arg1:E2 Arg2:T22	
+R5	Setting Arg1:E2 Arg2:T23	
+T24	Amount 158 185	1/100th the original volume
+T25	Reagent 189 192	TAP
+R6	Measure Arg1:T25 Arg2:T24	
+T4	Location 331 338	pipette
+T26	Speed 349 358	max speed
+R7	Setting Arg1:E6 Arg2:T26	
+T27	Time 363 373	15 seconds
+R8	Setting Arg1:E6 Arg2:T27	
+T28	Amount 381 385	25uL
+T29	Reagent 393 408	cell suspension
+T30	Amount 420 425	100uL
+T31	Reagent 429 432	TAP
+T32	Modifier 441 452	appropriate
+T33	Reagent 453 463	antibiotic
+R9	Mod-Link Arg1:T33 Arg2:T32	
+R10	Measure Arg1:T29 Arg2:T28	
+R11	Measure Arg1:T31 Arg2:T30	
+T34	Location 478 481	TAP
+T35	Location 485 493	YA plate
+R12	Or Arg1:T34 Arg2:T35	
+T36	Modifier 503 514	appropriate
+T37	Reagent 515 525	antibiotic
+R13	Mod-Link Arg1:T37 Arg2:T36	
+T38	Device 539 550	glass beads
+T39	Reagent 563 569	liquid
+T40	Reagent 609 615	plates
+T41	Seal 621 629	parafilm
+T42	Reagent 642 650	colonies
+T43	Reagent 720 739	cell/vortex culture
+T44	Modifier 710 719	remaining
+R14	Mod-Link Arg1:T43 Arg2:T44	
+T45	Amount 745 750	125mL
+T46	Location 751 756	flask
+T47	Amount 762 766	20mL
+T48	Reagent 770 773	TAP
+R15	Measure Arg1:T48 Arg2:T47	
+R16	Measure Arg1:T46 Arg2:T45	
+T49	Time 804 811	6 hours
+T50	Device 818 832	orbital shaker
+T51	Speed 836 841	70rpm
+R17	Setting Arg1:E14 Arg2:T49	
+R18	Setting Arg1:E14 Arg2:T51	
+T52	Reagent 848 858	antibiotic
+T53	Concentration 877 890	concentration
+R19	Measure Arg1:T52 Arg2:T53	
+T54	Amount 898 902	50uL
+T55	Reagent 910 925	cell suspension
+T56	Location 942 945	TAP
+T57	Location 949 957	YA plate
+R20	Or Arg1:T56 Arg2:T57	
+T58	Modifier 966 977	appropriate
+T59	Reagent 978 988	antibiotic
+R21	Mod-Link Arg1:T59 Arg2:T58	
+T60	Device 1000 1011	glass beads
+T61	Modifier 994 999	large
+R22	Mod-Link Arg1:T60 Arg2:T61	
+R23	Measure Arg1:T55 Arg2:T54	
+T62	Modifier 865 876	appropriate
+R24	Mod-Link Arg1:T53 Arg2:T62	
+T63	Modifier 533 538	large
+R25	Mod-Link Arg1:T38 Arg2:T63	
+T64	Reagent 0 10	Glass Bead
+T65	Method 11 25	Transformation
+T66	Reagent 29 42	Chlamydomonas
+T67	Action 195 198	Add
+E4	Action:T67 Acts-on:T68 Acts-on2:T69 Acts-on3:T74 Acts-on4:T76 Acts-on5:T77 Acts-on6:T79
+T68	Reagent 214 218	8000
+T69	Reagent 220 223	PEG
+T70	Concentration 227 229	5%
+T71	Modifier 230 235	final
+T72	Measure-Type 236 240	conc
+T73	Amount 243 247	3 ug
+T74	Reagent 251 254	DNA
+T75	Amount 256 260	0.3g
+T76	Reagent 264 267	500
+T77	Device 269 287	micron glass beads
+T78	Amount 288 293	0.4mL
+T79	Reagent 295 317	Chlamy cell suspension
+R26	Measure Arg1:T69 Arg2:T70	
+R27	Measure Arg1:T74 Arg2:T73	
+R28	Measure Arg1:T76 Arg2:T75	
+R29	Measure Arg1:T77 Arg2:T78	
+T80	Reagent 660 668	colonies
+T81	Time 684 693	1-3 weeks
+T82	Action 674 680	appear
+E18	Action:T82 Acts-on:T80
+R30	Setting Arg1:E18 Arg2:T81	
+T83	Reagent 780 790	antibiotic

@@ -1,0 +1,243 @@
+T1	Action 11 14	Put
+E1	Action:T1 Acts-on:T3 Site:T5
+T2	Amount 15 19	2 mL
+T3	Reagent 20 25	media
+T4	Modifier 26 29	per
+T5	Location 30 34	well
+T6	Location 38 51	6-wells plate
+T7	Action 91 96	Clean
+E2	Action:T7 Acts-on:T8 Site:T9 Using2:T10
+T8	Reagent 97 102	femur
+T9	Location 128 133	petri
+T10	Reagent 155 176	phenol red free media
+T11	Reagent 180 183	PBS
+T12	Modifier 141 151	little bit
+T14	Action 226 233	Cut off
+E3	Action:T14 Acts-on:T15
+T15	Location 234 243	both ends
+T16	Reagent 251 256	femur
+T17	Action 260 266	expose
+E4	Action:T17 Acts-on:T18
+T18	Reagent 271 277	marrow
+T19	Action 279 283	Fill
+E5	Action:T19 Using:T22 Acts-on:T20
+T20	Device 284 291	syringe
+T21	Amount 304 307	2ml
+T22	Reagent 311 316	media
+T23	Action 318 324	insert
+E6	Action:T23 Site:T24 Acts-on:T22
+T24	Reagent 330 336	marrow
+T25	Action 341 346	flush
+E7	Action:T25 Site:T26
+T26	Location 356 368	6 well plate
+T27	Action 387 392	clean
+E8	Action:T27 Acts-on:T28
+T28	Reagent 379 383	bone
+T29	Action 420 424	Pass
+E9	Action:T29 Acts-on:T30 Site:T31 Count:T32
+T30	Reagent 429 434	media
+T31	Device 447 454	syringe
+T32	Numerical 455 458	1-2
+T33	Action 494 502	Transfer
+E10	Action:T33 Acts-on:T34 Site:T36
+T34	Reagent 507 512	cells
+T35	Amount 518 523	50 ml
+T36	Location 524 528	tube
+T37	Action 531 538	Prepare
+E11	Action:T37 Site:T39 Product:T38
+T38	Reagent 539 557	RBC lysis solution
+T39	Location 574 594	cell culture cabinet
+T40	Action 622 625	Add
+E12	Action:T40 Acts-on:T42
+T41	Amount 626 629	5ml
+T42	Reagent 634 640	marrow
+T43	Action 642 647	Place
+E13	Action:T43 Acts-on:T44
+T44	Location 651 654	ice
+T45	Time 659 664	10min
+T46	Modifier 665 672	excatly
+T47	Action 674 684	Centrifuge
+E14	Action:T47 
+T48	Time 689 694	10min
+T49	Temperature 698 701	4°C
+T50	Speed 702 706	400g
+T51	Action 729 736	Discard
+E15	Action:T51 Acts-on:T52
+T52	Reagent 737 748	supernatant
+T53	Action 751 754	Add
+E16	Action:T53 Acts-on:T55 Acts-on2:T57
+T54	Amount 755 758	5ml
+T55	Reagent 759 762	CSF
+T56	Amount 767 771	12ml
+T57	Reagent 775 786	RPMI Medium
+T58	Action 835 838	add
+E17	Action:T58 Acts-on:T59
+T59	Reagent 839 845	medium
+T60	Modifier 846 857	immediately
+T62	Amount 905 910	15 mL
+T63	Reagent 911 926	cell suspension
+T64	Size 932 938	100 mm
+T65	Location 939 972	polystyrene tissue culture petris
+T66	Time 1016 1022	24 hrs
+T67	Action 1025 1033	Transfer
+E18	Action:T67 Acts-on:T68 Site:T71
+T68	Reagent 1034 1052	non-adherent cells
+T69	Time 1059 1065	24 hrs
+T70	Modifier 1069 1074	fresh
+T71	Location 1075 1093	polystyrene petris
+T72	Location 1097 1116	non adherent flasks
+T73	Reagent 1135 1143	Cultures
+T74	Action 1148 1153	grown
+E19	Action:T74 Acts-on:T73 Using:T77
+T75	Time 1158 1164	6 days
+T76	Concentration 1170 1179	15% (v/v)
+T77	Reagent 1180 1209	L-929 cell-conditioned medium
+T78	Action 1232 1235	Add
+E20	Action:T78 Acts-on:T80
+T79	Modifier 1236 1241	fresh
+T80	Reagent 1242 1245	CSF
+T81	Modifier 1246 1251	every
+T82	Time 1252 1258	3 days
+T83	Action 1344 1349	After
+E21	Action:T83 
+T84	Time 1350 1356	6 days
+T85	Action 1358 1365	collect
+E22	Action:T85 Acts-on:T86 Using:T87
+T86	Reagent 1370 1374	cell
+T87	Device 1382 1391	policeman
+T88	Device 1393 1405	cell scraper
+T89	Size 1406 1412	25 cm,
+T91	Time 1449 1454	10min
+T92	Speed 1455 1462	400 x g
+T93	Action 1464 1471	Discard
+E23	Action:T93 Acts-on:T94
+T94	Reagent 1472 1483	supernatant
+T95	Action 1488 1497	resuspend
+E24	Action:T95 Acts-on:T96 Site:T98 Site2:T100
+T96	Reagent 1498 1504	pellet
+T97	Amount 1508 1511	2ml
+T98	Reagent 1515 1519	RPMI
+T99	Concentration 1520 1523	10%
+T100	Reagent 1524 1527	FBS
+T101	Action 1567 1572	Flush
+E25	Action:T101 Acts-on:T102 Using:T104
+T102	Reagent 1573 1578	media
+T103	Generic-Measure 1587 1603	25, 27, and 30 G
+T104	Device 1604 1611	needles
+T105	Action 1615 1623	separate
+E26	Action:T105 Acts-on:T106
+T106	Reagent 1624 1634	aggregates
+T107	Action 1636 1641	Count
+E27	Action:T107 Acts-on:T108 Product:T109
+T108	Reagent 1642 1647	cells
+T109	Reagent 1651 1670	final concentration
+T110	Concentration 1674 1690	1 x 106 cells/ml
+T111	Action 1695 1700	count
+E28	Action:T111 Acts-on:T112
+T112	Reagent 1701 1706	cells
+T113	Action 1708 1714	dilute
+E29	Action:T113 Site:T115
+T114	Generic-Measure 1715 1718	1/5
+T115	Location 1722 1727	Turks
+T116	Action 1729 1736	Aliquot
+E30	Action:T116 Acts-on:T128 Site:T119
+T117	Amount 1737 1743	500 µL
+T118	Location 1765 1769	well
+T119	Location 1773 1787	24-wells plate
+T120	Amount 1789 1794	100ul
+T121	Location 1799 1812	96 well plate
+T122	Action 1814 1822	Incubate
+E31	Action:T122 Acts-on:T124
+T123	Concentration 1828 1830	5%
+T124	Reagent 1831 1834	CO2
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Mod-Link Arg1:T5 Arg2:T4	
+R3	Meronym Arg1:T5 Arg2:T6	
+R4	Mod-Link Arg1:T10 Arg2:T12	
+R5	Or Arg1:T10 Arg2:T11	
+R6	Meronym Arg1:T15 Arg2:T16	
+R7	Measure Arg1:T22 Arg2:T21	
+R8	Measure Arg1:T36 Arg2:T35	
+R9	Setting Arg1:E12 Arg2:T41	
+R10	Setting Arg1:E13 Arg2:T45	
+R11	Mod-Link Arg1:T45 Arg2:T46	
+R12	Setting Arg1:E14 Arg2:T48	
+R13	Setting Arg1:E14 Arg2:T49	
+R14	Setting Arg1:E14 Arg2:T50	
+T125	Speed 717 725	1200 rpm
+R15	Or Arg1:T50 Arg2:T125	
+R16	Measure Arg1:T55 Arg2:T54	
+R17	Measure Arg1:T57 Arg2:T56	
+R18	Mod-Link Arg1:E17 Arg2:T60	
+R19	Measure Arg1:T63 Arg2:T62	
+T61	Action 892 900	Transfer
+E32	Action:T61 Acts-on:T63 Site:T65
+R20	Measure Arg1:T65 Arg2:T64	
+R21	Setting Arg1:E32 Arg2:T66	
+R22	Mod-Link Arg1:T71 Arg2:T70	
+T126	Modifier 1053 1058	after
+R23	Mod-Link Arg1:T69 Arg2:T126	
+R24	Setting Arg1:E18 Arg2:T69	
+R25	Or Arg1:T71 Arg2:T72	
+R26	Setting Arg1:E19 Arg2:T75	
+R27	Measure Arg1:T77 Arg2:T76	
+R28	Mod-Link Arg1:T80 Arg2:T79	
+R29	Mod-Link Arg1:T82 Arg2:T81	
+R30	Setting Arg1:E20 Arg2:T82	
+R31	Setting Arg1:E21 Arg2:T84	
+R32	Or Arg1:T87 Arg2:T88	
+R33	Measure Arg1:T88 Arg2:T89	
+T90	Action 1433 1444	Centrifuged
+E33	Action:T90 
+R34	Setting Arg1:E33 Arg2:T91	
+R35	Setting Arg1:E33 Arg2:T92	
+R36	Measure Arg1:T98 Arg2:T97	
+R37	Measure Arg1:T100 Arg2:T99	
+R38	Setting Arg1:T104 Arg2:T103	
+R39	Measure Arg1:T109 Arg2:T110	
+R40	Setting Arg1:E29 Arg2:T114	
+T127	Generic-Measure 1745 1750	5x105
+T128	Reagent 1751 1759	cellules
+R41	Measure Arg1:T128 Arg2:T127	
+R42	Measure Arg1:T128 Arg2:T117	
+R43	Measure Arg1:T121 Arg2:T120	
+R44	Measure Arg1:T124 Arg2:T123	
+T129	Reagent 0 10	Mouse BMDM
+T130	Numerical 53 54	1
+T131	Location 55 59	well
+R45	Measure Arg1:T131 Arg2:T130	
+T132	Numerical 64 65	2
+T133	Reagent 66 73	marrows
+T134	Reagent 81 87	animal
+R46	Measure Arg1:T133 Arg2:T132	
+R47	Or Arg1:T133 Arg2:T134	
+T13	Modifier 404 408	pink
+T135	Modifier 412 417	white
+R48	Mod-Link Arg1:T28 Arg2:T13	
+R49	Mod-Link Arg1:T28 Arg2:T135	
+T136	Generic-Measure 477 480	20G
+T137	Generic-Measure 487 490	26G
+T138	Speed 709 712	RCF
+T139	Modifier 708 709	~
+R50	Mod-Link Arg1:T138 Arg2:T139	
+T140	Measure-Type 794 800	volume
+T141	Amount 804 809	15 ml
+T142	Reagent 824 829	cells
+T143	Modifier 830 833	dry
+R51	Mod-Link Arg1:T142 Arg2:T143	
+T144	Amount 862 865	9ml
+T145	Reagent 866 877	RMPI medium
+R52	Or Arg1:T59 Arg2:T145	
+T146	Amount 882 885	3ml
+T147	Reagent 886 889	CSF
+R53	Measure Arg1:T145 Arg2:T144	
+R54	Measure Arg1:T147 Arg2:T146	
+T148	Reagent 1225 1230	M-CSF
+T149	Concentration 1260 1263	15%
+T150	Amount 1267 1271	15ml
+T151	Amount 1281 1284	3ml
+T152	Concentration 1326 1329	30%
+T153	Amount 1339 1342	5ml
+T154	Reagent 1536 1552	Pen/Strep Phenol
+T155	Reagent 1562 1565	LDH
+T156	Method 1842 1851	infection

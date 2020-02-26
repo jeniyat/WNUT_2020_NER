@@ -1,0 +1,113 @@
+T1	Action 105 108	add
+E1	Action:T1 Acts-on:T14 Site:T16 Site2:T21
+T2	Action 226 229	fix
+E2	Action:T2 Using:T27 Acts-on:T23
+T4	Action 292 295	add
+E4	Action:T4 Product:T30 Acts-on:T28 Site:T50
+T5	Action 377 386	incubated
+E5	Action:T5 Acts-on:T51
+T6	Action 423 428	fixed
+E6	Action:T6 Acts-on:T34
+T8	Action 635 642	counted
+E8	Action:T8 Acts-on:T7
+T9	Action 672 678	stored
+E9	Action:T9 Acts-on:T7
+T12	Amount 109 114	25 mL
+T13	Modifier 72 86	unconcentrated
+T14	Reagent 87 103	seawater samples
+R1	Mod-Link Arg1:T14 Arg2:T13	
+T15	Modifier 115 119	each
+R2	Mod-Link Arg1:T14 Arg2:T15	
+R3	Measure Arg1:T14 Arg2:T12	
+T16	Reagent 125 132	control
+T17	Reagent 136 145	treatment
+T18	Amount 147 152	50-mL
+T19	Modifier 153 160	sterile
+T20	Modifier 162 169	conical
+T21	Location 170 186	centrifuge tubes
+R4	Mod-Link Arg1:T21 Arg2:T20	
+R5	Mod-Link Arg1:T21 Arg2:T19	
+R6	Measure Arg1:T21 Arg2:T18	
+R7	Meronym Arg1:T16 Arg2:T17	
+T22	Modifier 196 206	additional
+T23	Reagent 207 213	sample
+T24	Amount 215 220	25 mL
+T25	Concentration 235 237	1%
+T26	Size 238 245	0.02-µm
+T27	Reagent 255 263	formalin
+R8	Measure Arg1:T27 Arg2:T26	
+R9	Measure Arg1:T27 Arg2:T25	
+R10	Measure Arg1:T23 Arg2:T24	
+R11	Mod-Link Arg1:T23 Arg2:T22	
+T3	Concentration 296 303	1 µg/mL
+T28	Reagent 304 315	mitomycin C
+T29	Concentration 320 329	0.5 µg/mL
+T30	Reagent 273 290	treatment samples
+R12	Measure Arg1:T28 Arg2:T3	
+R13	Or Arg1:T3 Arg2:T29	
+T31	Time 391 398	16–24 h
+T32	Temperature 402 418	room temperature
+T33	Concentration 441 443	2%
+T34	Reagent 444 458	glutaraldehyde
+T35	Concentration 470 472	1%
+T36	Reagent 473 481	formalin
+T37	Concentration 515 517	1%
+T38	Reagent 518 526	formalin
+T39	Concentration 527 531	0.5%
+T40	Reagent 532 546	glutaraldehyde
+R14	Setting Arg1:E5 Arg2:T31	
+R15	Setting Arg1:E5 Arg2:T32	
+R16	Measure Arg1:T34 Arg2:T33	
+R17	Or Arg1:T34 Arg2:T36	
+R18	Measure Arg1:T36 Arg2:T35	
+R19	Or Arg1:T36 Arg2:T38	
+R20	Measure Arg1:T38 Arg2:T37	
+R21	Or Arg1:T38 Arg2:T40	
+R22	Measure Arg1:T40 Arg2:T39	
+T42	Time 650 654	24 h
+R23	Setting Arg1:E8 Arg2:T42	
+T43	Modifier 643 649	within
+R24	Mod-Link Arg1:T42 Arg2:T43	
+T7	Reagent 571 578	Samples
+T44	Method 598 624	epifluorescence microscopy
+T10	Reagent 0 8	Prophage
+T11	Method 9 18	Induction
+T45	Modifier 45 58	Heterotrophic
+T46	Reagent 59 67	Bacteria
+R25	Mod-Link Arg1:T46 Arg2:T45	
+T47	Modifier 246 254	filtered
+R26	Mod-Link Arg1:T27 Arg2:T47	
+T48	Action 188 192	Take
+E7	Action:T48 Acts-on:T23
+T49	Modifier 333 345	oligotrophic
+T50	Location 346 358	environments
+R27	Mod-Link Arg1:T50 Arg2:T49	
+T51	Reagent 365 372	samples
+T52	Method 483 509	epifluorescence microscopy
+T53	Method 548 562	flow cytometry
+T54	Method 564 567	FCM
+T55	Modifier 682 688	frozen
+T56	Location 689 695	slides
+T57	Action 696 703	stained
+E10	Action:T57 Acts-on:T56 Using:T58
+T58	Reagent 709 718	SYBR Gold
+T59	Method 658 668	collection
+R28	Or Arg1:E8 Arg2:E9	
+T41	Method 583 594	enumeration
+T60	Action 720 725	Count
+E3	Action:T60 Acts-on:T61 Acts-on2:T62 Site:T63 Site2:T64
+T61	Reagent 731 739	bacteria
+T62	Reagent 744 751	viruses
+T63	Reagent 755 762	control
+T64	Reagent 767 782	treated samples
+T65	Action 784 793	Calculate
+E11	Action:T65 Measure-Type-Link:T66
+T66	Measure-Type 798 818	% lysogenic bacteria
+T67	Measure-Type 830 840	% lysogens
+T68	Measure-Type 885 895	burst size
+T69	Method 914 929	TEM observation
+T70	Measure-Type 933 949	bacterial bursts
+T71	Reagent 962 969	viruses
+T72	Modifier 977 984	visible
+T73	Reagent 992 996	cell
+R29	Mod-Link Arg1:T71 Arg2:T72	

@@ -1,0 +1,52 @@
+T1	Action 53 62	Inoculate
+E1	Action:T1 Acts-on:T6 Using:T7 Site:T9
+T2	Action 266 271	Store
+E2	Action:T2 Acts-on:T8 Site:T10 Using:T11
+T4	Action 416 423	Harvest
+E4	Action:T4 Acts-on:T15 Using:T17 Site:T18
+T5	Action 518 525	Collect
+E5	Action:T5 Acts-on:T21
+T6	Reagent 63 71	Mycelium
+T7	Reagent 77 83	spores
+T9	Location 108 124	fresh SNA plates
+T8	Location 272 277	plate
+T10	Device 283 297	growth chamber
+T11	Method 303 330	12/12 h darkness/blacklight
+T12	Temperature 356 360	22°C
+T14	Action 398 402	grow
+E6	Action:T14 
+T3	Time 407 414	3 weeks
+R2	Setting Arg1:E6 Arg2:T3	
+T15	Reagent 424 430	spores
+T16	Concentration 443 451	0.0-0.5%
+T17	Reagent 452 466	tween solution
+R3	Measure Arg1:T17 Arg2:T16	
+T18	Location 474 479	plate
+T19	Action 484 499	scraping gently
+E3	Action:T19 Using:T20 Acts-on:T15
+T20	Reagent 507 516	coverslip
+T21	Reagent 530 536	liquid
+T22	Action 549 563	Filter through
+E7	Action:T22 Using:T24
+T23	Size 564 575	four layers
+T24	Device 579 583	mesh
+R4	Measure Arg1:T24 Arg2:T23	
+T25	Method 0 11	Cultivation
+T26	Reagent 14 19	Spore
+T27	Method 20 30	Production
+T28	Reagent 35 52	Alternaria Solani
+T29	Location 93 104	stock plate
+T30	Action 139 148	inoculate
+E8	Action:T30 Site:T31
+T31	Location 182 188	middle
+T32	Location 196 201	plate
+R1	Meronym Arg1:T31 Arg2:T32	
+T33	Location 259 264	plate
+T34	Measure-Type 341 352	temperature
+T35	Reagent 542 548	spores
+T36	Device 590 602	cheese cloth
+T37	Reagent 614 629	mycelial debris
+T38	Action 607 613	remove
+E9	Action:T38 Acts-on:T37
+T13	Measure-Type 371 379	humidity
+T39	Generic-Measure 380 386	60-70%

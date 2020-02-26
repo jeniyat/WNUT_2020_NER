@@ -1,0 +1,145 @@
+T1	Action 39 45	Freeze
+E1	Action:T1 Acts-on:T24
+T2	Action 91 94	Add
+E2	Action:T2 Acts-on:T29
+T3	Action 125 130	Grind
+E3	Action:T3 Acts-on:T30 Using:T31
+T4	Action 157 162	Rinse
+E4	Action:T4 Acts-on:T32 Using:T34
+T5	Action 192 200	Incubate
+E5	Action:T5 
+T6	Action 223 226	Add
+E6	Action:T6 Acts-on:T39
+T7	Action 240 248	Incubate
+E7	Action:T7 
+T8	Action 269 279	Centrifuge
+E8	Action:T8 
+T9	Action 312 319	Collect
+E9	Action:T9 Acts-on:T45
+T10	Action 336 339	add
+E10	Action:T10 Acts-on:T48
+T11	Action 439 447	incubate
+E11	Action:T11 
+T12	Action 479 489	Centrifuge
+E12	Action:T12 
+T13	Action 521 528	Discard
+E13	Action:T13 Acts-on:T58
+T14	Action 566 576	Centrifuge
+E14	Action:T14 
+T15	Action 606 613	Discard
+E15	Action:T15 Acts-on:T65
+T16	Action 652 662	Centrifuge
+E16	Action:T16 
+T17	Action 693 700	Discard
+E17	Action:T17 Acts-on:T72
+T18	Action 745 754	Resuspend
+E18	Action:T18 Acts-on:T75
+T19	Action 762 766	heat
+E19	Action:T19 
+T20	Action 717 725	aird dry
+E20	Action:T20 
+T21	Action 630 633	add
+E21	Action:T21 Acts-on:T68
+T22	Action 545 548	add
+E22	Action:T22 Acts-on:T61
+T23	Action 61 69	separate
+E23	Action:T23 Acts-on:T26 Site:T27
+T24	Reagent 46 56	mosquitoes
+T25	Numerical 70 71	1
+T26	Reagent 72 80	mosquito
+R1	Measure Arg1:T26 Arg2:T25	
+T27	Location 85 89	tube
+T28	Amount 95 100	25 uL
+T29	Reagent 104 123	fly grinding buffer
+R2	Measure Arg1:T29 Arg2:T28	
+T30	Reagent 131 141	mosquitoes
+T31	Device 149 155	pestle
+T32	Device 163 169	pestle
+T33	Amount 175 180	25 uL
+T34	Reagent 184 190	buffer
+R3	Measure Arg1:T34 Arg2:T33	
+T35	Temperature 204 209	65o C
+T36	Time 214 220	30 min
+R4	Setting Arg1:E5 Arg2:T35	
+R5	Setting Arg1:E5 Arg2:T36	
+T37	Amount 227 230	7uL
+T38	Concentration 231 233	8M
+T39	Reagent 234 237	KAc
+R6	Measure Arg1:T39 Arg2:T38	
+R7	Measure Arg1:T39 Arg2:T37	
+T40	Temperature 252 255	ice
+T41	Time 260 266	30 min
+R8	Setting Arg1:E7 Arg2:T40	
+R9	Setting Arg1:E7 Arg2:T41	
+T42	Speed 283 292	max speed
+R10	Setting Arg1:E8 Arg2:T42	
+T43	Time 297 303	15 min
+T44	Temperature 307 309	RT
+R11	Setting Arg1:E8 Arg2:T43	
+R12	Setting Arg1:E8 Arg2:T44	
+T45	Reagent 320 331	supernatant
+T46	Amount 340 347	0.7 vol
+T47	Temperature 370 386	room temperature
+T48	Reagent 390 401	isopropanol
+R13	Measure Arg1:T48 Arg2:T46	
+R14	Setting Arg1:E10 Arg2:T47	
+T49	Amount 406 411	1 vol
+T50	Modifier 415 423	ice cold
+T51	Concentration 424 428	100%
+T52	Reagent 429 433	EtOH
+R15	Measure Arg1:T52 Arg2:T51	
+R16	Measure Arg1:T52 Arg2:T49	
+R17	Mod-Link Arg1:T52 Arg2:T50	
+T53	Time 452 457	5 min
+T54	Temperature 461 477	room temperature
+R18	Setting Arg1:E11 Arg2:T53	
+R19	Setting Arg1:E11 Arg2:T54	
+R20	Or Arg1:T48 Arg2:T52	
+T55	Temperature 493 495	RT
+R21	Setting Arg1:E12 Arg2:T55	
+T56	Time 500 506	15 min
+R22	Setting Arg1:E12 Arg2:T56	
+T57	Speed 510 519	max speed
+R23	Setting Arg1:E12 Arg2:T57	
+T58	Reagent 529 540	supernatant
+T59	Amount 549 555	100 uL
+T60	Concentration 556 559	70%
+T61	Reagent 560 564	EtOH
+R24	Measure Arg1:T61 Arg2:T60	
+R25	Measure Arg1:T61 Arg2:T59	
+T62	Time 581 585	5min
+T63	Speed 589 598	max speed
+R26	Setting Arg1:E14 Arg2:T62	
+R27	Setting Arg1:E14 Arg2:T63	
+T64	Temperature 602 604	RT
+R28	Setting Arg1:E14 Arg2:T64	
+T65	Reagent 614 625	supernatant
+T66	Amount 634 640	100 uL
+T67	Concentration 641 645	100%
+T68	Reagent 646 650	EtOH
+R29	Measure Arg1:T68 Arg2:T67	
+R30	Measure Arg1:T68 Arg2:T66	
+T69	Time 667 672	5 min
+T70	Speed 676 685	max speed
+T71	Temperature 689 691	RT
+R31	Setting Arg1:E16 Arg2:T69	
+R32	Setting Arg1:E16 Arg2:T70	
+R33	Setting Arg1:E16 Arg2:T71	
+T72	Reagent 701 712	supernatant
+T73	Temperature 729 731	RT
+R34	Setting Arg1:E20 Arg2:T73	
+T74	Time 736 742	1 hour
+R35	Setting Arg1:E20 Arg2:T74	
+T75	Reagent 758 760	TE
+T76	Time 771 781	10 minutes
+R36	Setting Arg1:E19 Arg2:T76	
+T77	Action 786 794	quantify
+E24	Action:T77 Using:T78
+T78	Device 800 808	nanodrop
+T79	Modifier 0 7	Genomic
+T80	Reagent 8 11	DNA
+T81	Method 12 22	extraction
+T82	Reagent 28 38	mosquitoes
+R37	Mod-Link Arg1:T80 Arg2:T79	
+T83	Amount 349 354	28 uL
+T84	Amount 360 365	40 uL

@@ -1,0 +1,131 @@
+T1	Action 80 87	prepare
+E1	Action:T1 Acts-on:T21
+T2	Action 108 114	Assign
+E2	Action:T2 Measure-Type-Link:T63
+T3	Action 180 183	Add
+E3	Action:T3 Acts-on:T22 Acts-on2:T23 Site:T24
+T4	Action 243 246	Add
+E4	Action:T4 Acts-on:T26 Site:T28
+T5	Action 278 285	Heating
+E5	Action:T5 
+T6	Action 343 346	Add
+E6	Action:T6 Acts-on:T33 Site:T34
+T7	Action 397 401	peel
+E7	Action:T7 Acts-on:T35 Site:T36
+T8	Action 436 445	take away
+E8	Action:T8 Acts-on:T37
+T9	Action 475 478	set
+E9	Action:T9 Acts-on:T38 Site:T39
+T10	Action 515 519	Fill
+E10	Action:T10 Acts-on:T41 Using:T40
+T11	Action 744 748	Load
+E11	Action:T11 Acts-on:T42 Site:T43
+T12	Action 780 787	Connect
+E12	Action:T12 Acts-on:T44 Using:T45
+T13	Action 837 844	perform
+E13	Action:T13 Using:T46
+T14	Action 969 973	Wash
+E14	Action:T14 Acts-on:T48 Using:T49
+T15	Action 990 996	Remove
+E15	Action:T15 Acts-on:T50 Site:T52
+T16	Action 1035 1038	add
+E16	Action:T16 Acts-on:T53 Site:T52
+T17	Action 1057 1064	agitate
+E17	Action:T17 Acts-on:T52
+T18	Action 1077 1081	Wash
+E18	Action:T18 Acts-on:T55 Using:T56
+T19	Action 1205 1209	keep
+E19	Action:T19 Acts-on:T85 Site:T86
+T20	Action 1230 1237	agitate
+E20	Action:T20 
+T21	Reagent 92 105	mucin samples
+T22	Reagent 184 193	DDI water
+T23	Reagent 201 208	samples
+T24	Location 219 223	tube
+T25	Amount 228 232	30ul
+R1	Setting Arg1:E3 Arg2:T25	
+T26	Reagent 247 261	loading buffer
+T27	Modifier 265 269	each
+T28	Reagent 270 276	sample
+R2	Mod-Link Arg1:T28 Arg2:T27	
+T29	Temperature 294 303	95 degree
+T30	Time 308 313	10min
+R3	Setting Arg1:E5 Arg2:T29	
+R4	Setting Arg1:E5 Arg2:T30	
+T31	Reagent 327 341	running buffer
+T32	Action 315 322	Loading
+E21	Action:T32 Acts-on:T31
+T33	Reagent 352 366	running buffer
+T34	Device 376 395	electrophrosis cell
+T35	Reagent 406 417	green paste
+T36	Location 425 431	bottom
+T37	Seal 450 473	top green plastic cover
+T38	Reagent 483 486	gel
+T39	Device 494 513	electrophorsis cell
+T40	Reagent 561 576	running buffer.
+T41	Location 524 555	inner and outer buffer chambers
+T42	Reagent 753 767	protein sample
+T43	Reagent 775 778	gel
+T44	Device 792 812	electrophoresis cell
+T45	Device 820 832	power supply
+T46	Method 845 858	electrophores
+T47	Generic-Measure 878 889	150 V~200 V
+R5	Setting Arg1:E13 Arg2:T47	
+T48	Reagent 974 978	gels
+T49	Reagent 982 988	DI H2O
+T50	Reagent 1001 1006	water
+T51	Modifier 997 1000	all
+R6	Mod-Link Arg1:T50 Arg2:T51	
+T52	Location 1012 1030	staining container
+T53	Reagent 1039 1044	stain
+T54	Time 1065 1074	overnight
+R7	Setting Arg1:E17 Arg2:T54	
+T55	Reagent 1082 1085	gel
+T56	Reagent 1092 1100	DI water
+T57	Method 0 8	SDS-PAGE
+T58	Action 13 24	Identifying
+E22	Action:T58 Acts-on:T59
+T59	Reagent 25 41	nonmucin protein
+T60	Reagent 45 48	BSM
+R8	Meronym Arg1:T59 Arg2:T60	
+T61	Action 49 56	Prepare
+E23	Action:T61 Acts-on:T62
+T62	Reagent 61 77	sample solutions
+T63	Measure-Type 125 131	volume
+T64	Reagent 141 147	sample
+T65	Amount 149 153	10ul
+T66	Amount 154 158	20ul
+T67	Amount 159 163	30ul
+R9	Measure Arg1:T64 Arg2:T65	
+R10	Measure Arg1:T64 Arg2:T66	
+R11	Measure Arg1:T64 Arg2:T67	
+T68	Reagent 233 241	solution
+R12	Measure Arg1:T68 Arg2:T25	
+R13	Meronym Arg1:T68 Arg2:T24	
+T69	Reagent 609 623	running buffer
+T70	Measure-Type 596 601	level
+T71	Action 577 586	Make sure
+E24	Action:T71 Measure-Type-Link:T70
+T72	Reagent 645 648	gel
+T73	Device 682 702	inner buffer chamber
+T74	Device 710 715	outer
+T75	Action 717 727	Performing
+E25	Action:T75 Using:T76
+T76	Method 728 742	electrophorsis
+T77	Measure-Type 889 897	Run time
+T78	Reagent 909 923	loading buffer
+T79	Reagent 955 958	gel
+T80	Action 959 967	Staining
+E26	Action:T80 
+T81	Time 1113 1122	5 minutes
+T82	Time 1136 1146	10 minutes
+T83	Time 1159 1169	30 minutes
+T84	Time 1183 1189	1 hour
+T85	Reagent 1214 1217	gel
+T86	Reagent 1221 1229	DI water
+T87	Time 1238 1247	overnight
+R14	Setting Arg1:E20 Arg2:T87	
+R15	Setting Arg1:E18 Arg2:T81	
+R16	Setting Arg1:E18 Arg2:T82	
+R17	Setting Arg1:E18 Arg2:T83	
+R18	Setting Arg1:E18 Arg2:T84	

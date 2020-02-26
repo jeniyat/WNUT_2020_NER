@@ -1,0 +1,121 @@
+T1	Action 42 45	Add
+E1	Action:T1 Site:T20
+T2	Action 205 213	Incubate
+E2	Action:T2 
+T3	Action 265 271	Dilute
+E3	Action:T3 Acts-on:T25 Product:T13 Using:T12
+T19	Amount 166 172	100 μl
+T20	Reagent 176 203	anti-coagulated whole blood
+R1	Measure Arg1:T20 Arg2:T19	
+T21	Temperature 217 233	room temperature
+T22	Time 238 251	15-20 minutes
+R2	Setting Arg1:E2 Arg2:T21	
+R3	Setting Arg1:E2 Arg2:T22	
+T24	Concentration 272 275	10X
+T25	Reagent 276 309	Red Blood Cell (RBC) Lysis Buffer
+R4	Measure Arg1:T25 Arg2:T24	
+T5	Modifier 46 67	predetermined optimum
+T6	Concentration 68 82	concentrations
+T7	Modifier 86 93	desired
+R8	Mod-Link Arg1:T6 Arg2:T5	
+T11	Concentration 341 343	1X
+T12	Reagent 371 379	DI water
+T13	Reagent 344 365	working concentration
+R12	Measure Arg1:T13 Arg2:T11	
+T14	Action 381 385	Warm
+E4	Action:T14 
+T15	Temperature 389 405	room temperature
+R13	Setting Arg1:E4 Arg2:T15	
+T16	Action 420 423	Add
+E5	Action:T16 Acts-on:T27 Site:T28
+T17	Amount 424 428	2 ml
+T26	Concentration 432 434	1X
+T27	Reagent 435 453	RBC lysis solution
+T28	Reagent 457 484	wholeblood/antibody mixture
+R14	Measure Arg1:T27 Arg2:T26	
+R15	Measure Arg1:T27 Arg2:T17	
+T29	Action 486 494	Incubate
+E6	Action:T29 
+T30	Temperature 498 514	room temperature
+T31	Time 519 529	10 minutes
+R16	Setting Arg1:E6 Arg2:T30	
+R17	Setting Arg1:E6 Arg2:T31	
+T32	Action 531 541	Centrifuge
+E7	Action:T32 
+T33	Speed 545 552	350 X g
+T34	Time 557 566	5 minutes
+T35	Action 568 575	discard
+E8	Action:T35 Acts-on:T36
+T36	Reagent 580 591	supernatant
+T37	Action 593 597	Wash
+E9	Action:T37 Count:T38 Using:T41 Using2:T42
+T39	Modifier 606 614	at least
+T40	Amount 615 619	2 ml
+T41	Reagent 623 643	Cell Staining Buffer
+T43	Speed 665 672	350 x g
+T44	Time 677 686	5 minutes
+T45	Action 726 735	resuspend
+E11	Action:T45 Acts-on:T46 Site:T47
+T46	Reagent 736 742	pellet
+T47	Reagent 746 761	residual buffer
+T48	Action 766 769	add
+E12	Action:T48 Acts-on:T53
+T49	Modifier 772 782	previously
+T50	Modifier 783 793	determined
+T51	Modifier 794 801	optimum
+T52	Concentration 802 815	concentration
+T53	Reagent 819 889	anti-species immunoglobulin fluorochrome conjugated secondary antibody
+T8	Reagent 94 162	fluorochrome conjugated, biotinylated, orpurified primary antibodies
+R5	Mod-Link Arg1:T8 Arg2:T7	
+R6	Measure Arg1:T8 Arg2:T6	
+R7	Measure Arg1:T53 Arg2:T52	
+R10	Mod-Link Arg1:T52 Arg2:T51	
+R11	Mod-Link Arg1:T52 Arg2:T50	
+R18	Mod-Link Arg1:T52 Arg2:T49	
+T9	Action 919 927	incubate
+E13	Action:T9 Acts-on:E12
+T18	Time 944 957	15-20 minutes
+R19	Setting Arg1:E13 Arg2:T18	
+T54	Action 959 963	Wash
+E14	Action:T54 Count:T55 Using:T58 Using2:T10
+T56	Modifier 972 980	at least
+T57	Amount 981 985	2 ml
+T58	Reagent 989 1009	Cell Staining Buffer
+T60	Speed 1031 1038	350 x g
+T61	Time 1043 1052	5 minutes
+T62	Action 1054 1063	Resuspend
+E16	Action:T62 Acts-on:T63 Site:T65
+T63	Reagent 1064 1069	cells
+T64	Amount 1073 1079	0.5 ml
+T65	Reagent 1080 1100	Cell Staining Buffer
+T66	Amount 1104 1110	0.5 ml
+T67	Concentration 1111 1113	2%
+T68	Reagent 1114 1150	paraformaldehyde-PBS fixation buffer
+R20	Measure Arg1:T68 Arg2:T67	
+R21	Measure Arg1:T68 Arg2:T66	
+R22	Measure Arg1:T65 Arg2:T64	
+R23	Or Arg1:T65 Arg2:T68	
+T69	Action 1152 1159	Analyze
+E17	Action:T69 Using:T70
+T70	Device 1167 1181	Flow Cytometer
+T55	Numerical 964 966	1X
+R24	Measure Arg1:T58 Arg2:T57	
+R25	Mod-Link Arg1:T57 Arg2:T56	
+T38	Numerical 598 600	1X
+R28	Measure Arg1:T41 Arg2:T40	
+R32	Setting Arg1:E7 Arg2:T33	
+R33	Setting Arg1:E7 Arg2:T34	
+T71	Modifier 0 17	Immunofluorescent
+T73	Modifier 30 35	Whole
+T74	Reagent 36 41	Blood
+T72	Action 18 26	Staining
+E18	Action:T72 Acts-on:T74
+R34	Mod-Link Arg1:E18 Arg2:T71	
+R35	Mod-Link Arg1:T74 Arg2:T73	
+R29	Mod-Link Arg1:T40 Arg2:T39	
+T42	Method 647 661	centrifugation
+T75	Modifier 699 715	purified primary
+T76	Reagent 716 724	antibody
+R30	Mod-Link Arg1:T76 Arg2:T75	
+T77	Reagent 895 913	FITC anti-mouse Ig
+T10	Method 1013 1027	centrifugation

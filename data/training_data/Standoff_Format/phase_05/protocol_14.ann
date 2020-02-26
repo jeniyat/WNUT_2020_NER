@@ -1,0 +1,251 @@
+T1	Action 26 31	Place
+E1	Action:T1 Acts-on:T2 Site:T3
+T2	Reagent 32 37	cells
+T3	Location 43 63	microcentrifuge tube
+T4	Action 68 78	centrifuge
+E2	Action:T4 Product:T5 Acts-on:T3
+T5	Reagent 94 105	cell pellet
+T6	Action 107 111	Lyse
+E3	Action:T6 Acts-on:T7 Acts-on2:T9 Site:T10
+T7	Reagent 116 127	cell pellet
+T8	Amount 133 139	100 µl
+T9	Reagent 143 155	lysis buffer
+T10	Location 159 162	ice
+T11	Time 167 173	30 min
+R2	Setting Arg1:E3 Arg2:T11
+T12	Action 228 238	Centrifuge
+E4	Action:T12 
+T13	Speed 242 252	14,000 rpm
+T14	Time 270 280	10 minutes
+T15	Temperature 284 287	4°C
+R3	Setting Arg1:E4 Arg2:T13
+T16	Speed 254 264	16,000 x g
+R4	Setting Arg1:E4 Arg2:T16
+R5	Setting Arg1:E4 Arg2:T14
+R6	Setting Arg1:E4 Arg2:T15
+T17	Action 289 297	Transfer
+E5	Action:T17 Acts-on:T18 Site:T19
+T18	Reagent 302 313	supernatant
+T19	Location 323 327	tube
+T20	Action 332 339	discard
+E6	Action:T20 Acts-on:T21
+T21	Reagent 344 350	pellet
+T22	Action 352 358	Remove
+E7	Action:T22 Acts-on:T24
+T23	Amount 359 364	20 µl
+T24	Reagent 368 379	supernatant
+T25	Action 384 387	mix
+E8	Action:T25 Acts-on:T28 Acts-on2:T24
+T26	Amount 393 398	20 µl
+T27	Concentration 402 404	2x
+T28	Reagent 405 418	sample buffer
+T29	Action 420 424	Boil
+E9	Action:T29 
+T30	Time 429 434	5 min
+R10	Setting Arg1:E9 Arg2:T30
+T31	Action 436 440	Cool
+E10	Action:T31 
+T32	Temperature 444 460	room temperature
+T33	Time 465 474	5 minutes
+R11	Setting Arg1:E10 Arg2:T32
+R12	Setting Arg1:E10 Arg2:T33
+T34	Action 476 491	Microcentrifuge
+E11	Action:T34 
+T35	Time 496 505	5 minutes
+R13	Setting Arg1:E11 Arg2:T35
+T36	Action 507 511	Load
+E12	Action:T36 Site:T39
+T37	Amount 518 523	40 µl
+T38	Mention 527 533	sample
+T39	Location 537 546	each well
+T40	Reagent 552 568	1.5 mm thick gel
+R15	Or Arg1:T37 Arg2:T38
+T43	Action 643 651	Transfer
+E13	Action:T43 Acts-on:T44 Acts-on2:T45 Acts-on3:T46
+T44	Reagent 656 664	proteins
+T45	Reagent 668 683	anitrocellulose
+T46	Reagent 687 700	PVDF membrane
+T47	Action 776 782	Remove
+E14	Action:T47 Acts-on:T48 Site:T49
+T48	Reagent 787 803	blotted membrane
+T49	Location 813 831	transfer apparatus
+T50	Action 848 853	place
+E15	Action:T50 Acts-on:T51 Acts-on2:T48
+T51	Reagent 857 872	blocking buffer
+T52	Concentration 887 889	5%
+T53	Reagent 890 911	nonfat dry milk/TBS-T
+R14	Or Arg1:T52 Arg2:T53
+T54	Action 913 921	Incubate
+E16	Action:T54 Acts-on:T55 Using:T60
+T55	Reagent 926 930	blot
+T56	Time 935 941	1 hour
+R16	Setting Arg1:E16 Arg2:T56
+T57	Temperature 945 961	room temperature
+T58	Time 966 975	overnight
+T59	Temperature 979 982	4°C
+T60	Method 988 997	agitation
+R17	Setting Arg1:E16 Arg2:T57
+R18	Setting Arg1:E16 Arg2:T58
+R19	Setting Arg1:E16 Arg2:T59
+T61	Action 999 1005	Dilute
+E17	Action:T61 Acts-on:T62 Using:T65
+T62	Reagent 1010 1026	primary antibody
+T63	Concentration 1034 1068	recommended concentration/dilution
+T64	Concentration 1072 1074	5%
+T65	Reagent 1075 1096	nonfat dry milk/TBS-T
+T66	Action 1120 1125	Place
+E18	Action:T66 Acts-on:T67 Site:T68
+T67	Reagent 1130 1138	membrane
+T68	Reagent 1146 1171	primary antibody solution
+T69	Action 1176 1184	incubate
+E19	Action:T69 Using:T74
+T70	Time 1189 1196	2 hours
+T71	Temperature 1200 1216	room temperature
+R21	Setting Arg1:E19 Arg2:T70
+R22	Setting Arg1:E19 Arg2:T71
+T72	Time 1221 1230	overnight
+T73	Temperature 1234 1237	4°C
+T74	Method 1243 1252	agitation
+R23	Setting Arg1:E19 Arg2:T72
+R24	Setting Arg1:E19 Arg2:T73
+T75	Action 1254 1258	Wash
+E20	Action:T75 
+T76	Time 1264 1273	5 minutes
+T77	Reagent 1279 1290	Wash Buffer
+T78	Reagent 1292 1295	TBS
+T79	Concentration 1307 1311	0.1%
+T80	Reagent 1312 1320	Tween-20
+T81	Action 1335 1339	Wash
+E21	Action:T81 Acts-on:T83
+T82	Time 1345 1354	5 minutes
+T83	Reagent 1360 1371	Wash Buffer
+R28	Setting Arg1:E21 Arg2:T82
+T84	Action 1416 1420	Wash
+E22	Action:T84 Acts-on:T86
+T85	Time 1426 1435	5 minutes
+T86	Reagent 1441 1452	Wash Buffer
+R29	Setting Arg1:E22 Arg2:T85
+T87	Action 1497 1505	Incubate
+E23	Action:T87 Acts-on:T88 Acts-on2:T91
+T88	Reagent 1510 1518	membrane
+T89	Time 1523 1533	30 minutes
+T90	Temperature 1537 1553	room temperature
+R30	Setting Arg1:E23 Arg2:T89
+R31	Setting Arg1:E23 Arg2:T90
+T91	Reagent 1559 1617	horseradish peroxidase (HRP)‐conjugated secondary antibody
+T92	Action 1619 1626	diluted
+E24	Action:T92 Product:T91
+T93	Concentration 1630 1636	1:1000
+T94	Concentration 1640 1642	5%
+T95	Reagent 1643 1664	nonfat dry milk/TBS‐T
+T96	Action 1666 1670	Wash
+E25	Action:T96 Acts-on:T98
+T97	Time 1675 1685	10 minutes
+T98	Reagent 1691 1694	TBS
+T99	Concentration 1706 1710	0.1%
+T100	Reagent 1711 1719	Tween‐20
+R34	Setting Arg1:E25 Arg2:T97
+T101	Action 1728 1732	Wash
+E26	Action:T101 Acts-on:T103
+T102	Time 1737 1747	10 minutes
+T103	Reagent 1753 1756	TBS
+T104	Concentration 1768 1772	0.1%
+T105	Reagent 1773 1781	Tween‐20
+R37	Setting Arg1:E26 Arg2:T102
+T106	Action 1790 1794	Wash
+E27	Action:T106 Acts-on:T108
+T107	Time 1799 1809	10 minutes
+T108	Reagent 1815 1818	TBS
+T109	Concentration 1830 1834	0.1%
+T110	Reagent 1835 1843	Tween‐20
+R39	Setting Arg1:E27 Arg2:T107
+T111	Action 1852 1856	Wash
+E28	Action:T111 Acts-on:T113
+T112	Time 1861 1871	10 minutes
+T113	Reagent 1877 1880	TBS
+T114	Concentration 1892 1896	0.1%
+T115	Reagent 1897 1905	Tween‐20
+R44	Setting Arg1:E28 Arg2:T112
+T116	Action 1914 1918	Wash
+E29	Action:T116 Acts-on:T119
+T117	Time 1928 1937	2 minutes
+T118	Numerical 1919 1923	once
+R45	Setting Arg1:E29 Arg2:T117
+T119	Reagent 1943 1946	PBS
+T120	Action 1948 1956	Incubate
+E30	Action:T120 Acts-on:T121 Acts-on2:T123
+T121	Reagent 1957 1965	membrane
+T122	Amount 1989 1994	10 ml
+T123	Mention 1998 2001	ECL
+T124	Reagent 2003 2039	enhanced chemiluminescence substrate
+R46	Coreference-Link Arg1:T123 Arg2:T124
+T125	Time 2045 2056	1-2 minutes
+R48	Setting Arg1:E30 Arg2:T125
+T126	Action 2101 2110	Drain off
+E31	Action:T126 Acts-on:T127
+T127	Reagent 2115 2139	excess detection reagent
+T128	Action 2141 2148	wrap up
+E32	Action:T128 Acts-on:T129
+T129	Reagent 2153 2158	blots
+T130	Action 2171 2181	smooth out
+E33	Action:T130 Acts-on:T131
+T131	Reagent 2186 2197	air bubbles
+T132	Action 2199 2204	Place
+E34	Action:T132 Acts-on:T133 Site:T134
+T133	Reagent 2209 2222	wrapped blots
+T134	Device 2247 2266	X-ray film cassette
+T135	Action 2271 2291	expose to x-ray film
+E35	Action:T135 Site:T134 Acts-on:T133
+R1	Measure Arg1:T9 Arg2:T8	
+R7	Measure Arg1:T28 Arg2:T27	
+R8	Measure Arg1:T28 Arg2:T26	
+R9	Measure Arg1:T24 Arg2:T23	
+R20	Measure Arg1:T65 Arg2:T64	
+R49	Setting Arg1:E17 Arg2:T63	
+R26	Measure Arg1:T80 Arg2:T79	
+R32	Measure Arg1:T95 Arg2:T94	
+R33	Measure Arg1:T100 Arg2:T99	
+R36	Measure Arg1:T105 Arg2:T104	
+R38	Measure Arg1:T110 Arg2:T109	
+R42	Measure Arg1:T115 Arg2:T114	
+R47	Coreference-Link Arg1:T123 Arg2:T122	
+T41	Action 0 16	Western Blotting
+E36	Action:T41 
+T42	Numerical 179 186	1 X 106
+T136	Reagent 187 192	cells
+R27	Measure Arg1:T136 Arg2:T42	
+T137	Action 194 198	lyse
+E37	Action:T137 Using:T139
+T138	Amount 204 210	100 µl
+T139	Reagent 213 225	lysis buffer
+R35	Measure Arg1:T139 Arg2:T138	
+R40	Coreference-Link Arg1:T16 Arg2:T13	
+T140	Modifier 319 322	new
+R41	Mod-Link Arg1:T19 Arg2:T140	
+R43	Or Arg1:T58 Arg2:T56	
+R50	Or Arg1:T59 Arg2:T57	
+T141	Concentration 1111 1117	1µg/ml
+R51	Or Arg1:T70 Arg2:T72	
+R52	Or Arg1:T71 Arg2:T73	
+R25	Meronym Arg1:T80 Arg2:T78	
+T142	Reagent 1373 1376	TBS
+T143	Reagent 1454 1457	TBS
+T144	Concentration 1388 1392	0.1%
+T145	Reagent 1393 1401	Tween-20
+T146	Concentration 1469 1473	0.1%
+T147	Reagent 1474 1482	Tween-20
+R53	Measure Arg1:T145 Arg2:T144	
+R54	Meronym Arg1:T145 Arg2:T142	
+R55	Measure Arg1:T147 Arg2:T146	
+R56	Meronym Arg1:T147 Arg2:T143	
+R57	Meronym Arg1:T100 Arg2:T98	
+R58	Meronym Arg1:T105 Arg2:T103	
+R59	Meronym Arg1:T110 Arg2:T108	
+R60	Meronym Arg1:T115 Arg2:T113	
+T148	Reagent 1967 1974	protein
+T149	Modifier 2062 2067	final
+T150	Measure-Type 2068 2074	volume
+T151	Amount 2087 2099	0.125 ml/cm2
+T152	Reagent 2224 2231	protein
+T153	Method 2293 2302	Exposures
+T154	Time 2317 2340	5 seconds to 60 minutes

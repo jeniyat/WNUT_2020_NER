@@ -1,0 +1,90 @@
+T1	Action 50 53	Run
+E1	Action:T1 Acts-on:T11
+T2	Action 73 81	Transfer
+E2	Action:T2 Acts-on:T12 Site:T13
+T3	Action 100 105	Rinse
+E3	Action:T3 Acts-on:T14 Site:T16 Using:T18
+T4	Action 179 187	Incubate
+E4	Action:T4 Acts-on:T22 Using:T23 Site:T29
+T5	Action 282 287	Rinse
+E5	Action:T5 Acts-on:T33 Count:T34 Acts-on2:T36
+T6	Action 331 336	Block
+E6	Action:T6 Using:T39 Site:T41
+T7	Action 427 430	Add
+E7	Action:T7 Acts-on:T44
+T8	Action 511 519	Incubate
+E8	Action:T8 
+T9	Action 536 541	Rinse
+E9	Action:T9 Count:T48
+T10	Action 576 585	Visualize
+E10	Action:T10 Using:T52
+T11	Reagent 54 70	tris-glycine gel
+T12	Reagent 82 89	protein
+T13	Reagent 93 97	PVDF
+T14	Reagent 106 114	membrane
+T15	Amount 118 120	1x
+T16	Reagent 121 131	TBST Block
+T17	Concentration 135 137	5%
+T18	Reagent 138 150	non-fat milk
+T19	Reagent 151 155	TBST
+T20	Time 160 170	30 minutes
+T21	Temperature 174 176	RT
+R1	Measure Arg1:T16 Arg2:T15	
+R2	Measure Arg1:T18 Arg2:T17	
+R3	Meronym Arg1:T18 Arg2:T19	
+R4	Measure Arg1:T19 Arg2:T17	
+R5	Setting Arg1:E3 Arg2:T20	
+R6	Setting Arg1:E3 Arg2:T21	
+T22	Reagent 188 196	membrane
+T23	Reagent 202 215	anti-FMRP 1C3
+T24	Concentration 219 225	1:4000
+T25	Temperature 229 231	RT
+T26	Time 236 239	1hr
+R7	Measure Arg1:T23 Arg2:T24	
+R8	Setting Arg1:E4 Arg2:T25	
+R9	Setting Arg1:E4 Arg2:T26	
+T27	Temperature 250 252	4C
+T28	Concentration 256 258	5%
+T29	Reagent 259 271	non-fat milk
+T30	Concentration 272 274	1x
+T31	Reagent 275 279	TBST
+R10	Or Arg1:T29 Arg2:T31	
+R11	Measure Arg1:T31 Arg2:T30	
+R12	Measure Arg1:T29 Arg2:T28	
+R13	Or Arg1:T25 Arg2:T27	
+T32	Reagent 243 246	O/N
+R14	Or Arg1:T23 Arg2:T32	
+T33	Reagent 288 296	membrane
+T34	Numerical 297 298	5
+T35	Concentration 305 307	1x
+T36	Reagent 308 312	TBST
+T37	Time 318 328	30 minutes
+R15	Measure Arg1:T36 Arg2:T35	
+R16	Setting Arg1:E5 Arg2:T37	
+T38	Concentration 342 344	5%
+T39	Reagent 369 389	Bovine Serum Albumin
+T40	Concentration 393 395	1x
+T41	Reagent 396 400	TBST
+T42	Time 405 418	30-45 minutes
+T43	Temperature 422 424	RT
+R17	Measure Arg1:T39 Arg2:T38	
+R18	Measure Arg1:T41 Arg2:T40	
+R19	Setting Arg1:E6 Arg2:T42	
+R20	Setting Arg1:E6 Arg2:T43	
+T44	Reagent 467 496	light-chain specific antibody
+T45	Concentration 500 508	1:10,000
+R21	Setting Arg1:E7 Arg2:T45	
+T46	Time 524 527	1hr
+T47	Temperature 531 533	RT
+T48	Numerical 542 543	5
+T49	Concentration 550 552	1x
+T50	Reagent 553 557	TBST
+T51	Time 563 573	30 minutes
+T52	Reagent 591 603	ECL solution
+T53	Method 0 21	FMRP 1C3 Western Blot
+T54	Method 23 40	Millipore MAB2160
+T55	Modifier 42 49	post-IP
+T56	Modifier 345 368	IgG-Free, Protease-Free
+R22	Mod-Link Arg1:T39 Arg2:T56	
+T57	Modifier 431 466	HRP-conjugated goat-anti-mouse IgG,
+R23	Mod-Link Arg1:T44 Arg2:T57	

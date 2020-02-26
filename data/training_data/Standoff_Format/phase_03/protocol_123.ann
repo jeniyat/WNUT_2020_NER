@@ -1,0 +1,209 @@
+T1	Action 116 123	Harvest
+E1	Action:T1 Acts-on:T10
+T3	Action 251 261	Re-suspend
+E3	Action:T3 Acts-on:T33 Acts-on2:T34
+T4	Action 343 346	Add
+E4	Action:T4 Acts-on:T36
+T5	Action 438 444	Sample
+E5	Action:T5 Acts-on:T40 Site:T42 Using:T46
+T6	Action 576 581	place
+E6	Action:T6 Site:T44
+T7	Action 590 600	Centrifuge
+E7	Action:T7 
+T8	Action 628 632	Wash
+E8	Action:T8 Acts-on:T49
+T9	Action 644 657	re-suspending
+E9	Action:T9 Acts-on:T49 Site:T51
+T12	Action 786 796	Re-suspend
+E12	Action:T12 Acts-on:T60 Site:T64
+T13	Action 836 839	Add
+E13	Action:T13 Acts-on:T65 Acts-on2:T67 Site:T68
+T14	Action 923 926	mix
+E14	Action:T14 Acts-on:T65 Acts-on2:T67
+T15	Action 989 993	pour
+E15	Action:T15 Acts-on:T70 Site:T71
+T16	Action 1026 1031	Place
+E16	Action:T16 Acts-on:T72 Site:T73
+T17	Action 1097 1103	remove
+E17	Action:T17 Acts-on:T76 Site:T77
+T18	Action 1133 1138	place
+E18	Action:T18 Site:T79
+T19	Action 1212 1216	wash
+E19	Action:T19 Count:T85 Acts-on:T82 Using:T84
+T20	Action 1264 1267	Cut
+E20	Action:T20 Acts-on:T59
+T21	Action 1309 1313	Load
+E21	Action:T21 Acts-on:T88 Site:T89
+T22	Action 1348 1352	seal
+E22	Action:T22 Using:T91 Site:T93
+T23	Action 1709 1717	Separate
+E23	Action:T23 Acts-on:T94 Site:T95 Using:T97
+T24	Action 1819 1822	Run
+E24	Action:T24 Using:T98
+T25	Action 1917 1923	Change
+E25	Action:T25 Acts-on:T103
+T26	Action 1946 1951	Stain
+E26	Action:T26 Acts-on:T105 Using:T106 Count:T108
+T27	Action 1995 1998	Add
+E27	Action:T27 Acts-on:T110 Site:T112
+T28	Action 2058 2063	place
+E28	Action:T28 Site:T113
+T29	Action 2077 2085	Incubate
+E29	Action:T29 Acts-on:T114
+T10	Reagent 124 154	Chlorella NC64A (or Pbi) cells
+T11	Speed 227 235	4000 x g
+T30	Time 240 249	5 minutes
+T31	Location 160 178	4 day old cultures
+T32	Concentration 179 205	(1.2 - 2.0 x 107 cells/ml)
+T33	Reagent 265 283	MBBM (NC64A cells)
+T34	Reagent 287 302	FES (Pbi cells)
+T35	Concentration 323 341	8.6 x 107 cells/mL
+R2	Setting Arg1:E3 Arg2:T35	
+T36	Reagent 347 362	chlorella virus
+T37	Numerical 402 404	10
+T38	Measure-Type 405 436	plaque-forming units (pfu)/cell
+R3	Of-Type Arg1:T37 Arg2:T38	
+T40	Reagent 454 469	chlorella cells
+T41	Modifier 445 453	infected
+T42	Location 492 508	centrifuge tubes
+T43	Modifier 483 491	prepared
+T44	Location 585 588	ice
+T45	Amount 471 476	25 mL
+T46	Device 514 526	formaldehyde
+R4	Measure Arg1:T40 Arg2:T45	
+R5	Mod-Link Arg1:T40 Arg2:T41	
+R6	Mod-Link Arg1:T42 Arg2:T43	
+T47	Speed 604 612	4000 x g
+T48	Time 617 626	5 minutes
+R7	Setting Arg1:E7 Arg2:T47	
+R8	Setting Arg1:E7 Arg2:T48	
+T49	Reagent 633 640	samples
+T50	Amount 666 671	10 mL
+T51	Location 675 679	MBBM
+T52	Amount 693 698	50 mM
+T53	Reagent 699 703	EDTA
+T54	Speed 736 744	4000 x g
+T55	Time 749 758	5 minutes
+R9	Measure Arg1:T51 Arg2:T50	
+R10	Measure Arg1:T53 Arg2:T52	
+R11	Setting Arg1:E9 Arg2:T54	
+R12	Setting Arg1:E9 Arg2:T55	
+T56	Action 760 766	Repeat
+E10	Action:T56 Using:T57 Count:T58
+T58	Numerical 777 778	3
+T57	Method 767 771	wash
+T60	Reagent 813 818	cells
+T61	Modifier 797 803	washed
+T62	Modifier 804 812	infected
+T63	Amount 822 828	0.5 mL
+T64	Location 832 834	SB
+R14	Mod-Link Arg1:T60 Arg2:T62	
+R15	Mod-Link Arg1:T60 Arg2:T61	
+R16	Measure Arg1:T64 Arg2:T63	
+T65	Reagent 847 852	cells
+T66	Amount 853 858	0.5 m
+T67	Reagent 863 890	2% low melting point agaros
+T68	Location 904 906	SB
+T70	Reagent 998 1001	mix
+T71	Location 1007 1024	BioRad plug molds
+R17	Measure Arg1:T65 Arg2:T66	
+T69	Temperature 916 919	45°
+T72	Reagent 1032 1042	plug molds
+T73	Location 1046 1058	refrigerator
+T74	Time 1063 1073	15 minutes
+R18	Setting Arg1:E16 Arg2:T74	
+T75	Modifier 1087 1096	Carefully
+R19	Mod-Link Arg1:E17 Arg2:T75	
+T76	Reagent 1104 1118	agarose blocks
+T77	Location 1124 1128	mold
+T78	Amount 1149 1153	2 mL
+T79	Location 1157 1159	DB
+T80	Concentration 1173 1179	1mg/mL
+T81	Reagent 1180 1192	Proteinase K
+R20	Measure Arg1:T79 Arg2:T78	
+R21	Measure Arg1:T81 Arg2:T80	
+T82	Reagent 1217 1231	agarose blocks
+T83	Time 1236 1246	30 minutes
+T84	Reagent 1252 1254	DB
+T85	Numerical 1255 1256	4
+R13	Setting Arg1:E19 Arg2:T83	
+T59	Reagent 1268 1274	blocks
+T86	Size 1284 1290	pieces
+T87	Modifier 1278 1283	small
+R22	Mod-Link Arg1:T86 Arg2:T87	
+R23	Setting Arg1:E20 Arg2:T86	
+T88	Reagent 1314 1328	agarose blocks
+T89	Location 1334 1343	gel wells
+T90	Modifier 1363 1369	melted
+T91	Reagent 1399 1406	agarose
+T92	Modifier 1378 1398	1% low melting point
+T93	Location 1410 1424	running buffer
+R24	Mod-Link Arg1:T91 Arg2:T92	
+R25	Mod-Link Arg1:T91 Arg2:T90	
+T94	Reagent 1718 1733	chromosomal DNA
+T95	Location 1738 1790	CHEF-DR  (BioRad, Hercules, CA) electrophoresis unit
+T96	Modifier 1796 1802	1X TAE
+T97	Reagent 1803 1817	running buffer
+R26	Mod-Link Arg1:T97 Arg2:T96	
+T98	Method 1823 1838	electrophoresis
+T99	Speed 1842 1848	3 V/cm
+T100	Time 1886 1904	250 to 900 seconds
+T101	Time 1909 1915	60 hrs
+R27	Setting Arg1:E24 Arg2:T99	
+T102	Action 1873 1880	ramping
+E11	Action:T102 
+R28	Setting Arg1:E11 Arg2:T100	
+R29	Setting Arg1:E11 Arg2:T101	
+T103	Reagent 1924 1930	buffer
+T104	Time 1938 1944	24 hrs
+R30	Setting Arg1:E25 Arg2:T104	
+T105	Reagent 1952 1955	gel
+T106	Reagent 1970 1986	ethidium bromide
+T107	Amount 1961 1969	0.5 mg/L
+T108	Numerical 1991 1993	20
+R31	Measure Arg1:T106 Arg2:T107	
+T109	Amount 1999 2005	3.1 ml
+T110	Reagent 2009 2025	37% formaldehyde
+T111	Amount 2031 2036	40 ml
+T112	Location 2037 2053	centrifuge tubes
+T113	Location 2072 2075	ice
+R32	Measure Arg1:T110 Arg2:T109	
+R33	Measure Arg1:T112 Arg2:T111	
+T114	Reagent 2086 2100	agarose blocks
+T115	Time 2105 2111	24 hrs
+T116	Temperature 2115 2119	50°C
+T117	Action 2120 2127	Prepare
+E30	Action:T117 Acts-on:T118 Site:T119 Using:T120
+T118	Reagent 2128 2142	1% agarose gel
+T119	Location 2159 2172	1× TAE buffer
+T120	Device 2179 2199	BioRad casting stand
+R34	Setting Arg1:E29 Arg2:T115	
+R35	Setting Arg1:E29 Arg2:T116	
+T121	Reagent 0 15	Pulse Field Gel
+T122	Method 16 31	Electrophoresis
+T123	Method 33 37	PFGE
+T124	Method 52 62	separation
+T125	Modifier 66 87	Chlorella chromosomal
+T126	Reagent 88 91	DNA
+R36	Mod-Link Arg1:T126 Arg2:T125	
+T127	Reagent 96 115	Chlorella virus DNA
+T2	Method 209 223	centrifugation
+T39	Generic-Measure 368 393	multiplicity of infection
+T128	Generic-Measure 395 398	MOI
+T129	Measure-Type 306 319	concentration
+T130	Reagent 538 550	formaldehyde
+T131	Modifier 532 537	final
+R1	Mod-Link Arg1:T130 Arg2:T131	
+T132	Measure-Type 551 564	concentration
+T133	Concentration 568 570	4%
+R37	Measure Arg1:T130 Arg2:T133	
+T134	Method 1200 1210	incubation
+T135	Reagent 1430 1441	chromosomes
+T136	Reagent 1445 1461	Hansenula wingei
+R38	Meronym Arg1:T135 Arg2:T136	
+T137	Reagent 1493 1512	Schizosaccharomyces
+T138	Reagent 1575 1595	Yeast Chromosome PFG
+T139	Generic-Measure 1683 1699	molecular weight
+T140	Action 1675 1679	used
+E2	Action:T140 Acts-on:T138
+T141	Method 2144 2148	PFGE

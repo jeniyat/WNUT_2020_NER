@@ -1,0 +1,208 @@
+T1	Action 149 152	add
+E1	Action:T1 Acts-on:T27 Site:T29
+T2	Action 180 185	shake
+E2	Action:T2 
+T3	Action 199 209	Centrifuge
+E3	Action:T3 
+T4	Action 291 299	Transfer
+E4	Action:T4 Acts-on:T39 Site:T41
+T5	Action 435 441	Repeat
+E5	Action:T5 Using:T44
+T6	Action 592 595	Add
+E6	Action:T6 Acts-on:T46 Site:T47
+T7	Action 643 648	shake
+E7	Action:T7 
+T8	Action 662 672	Centrifuge
+E8	Action:T8 Using:T49
+T9	Action 706 714	Transfer
+E9	Action:T9 Acts-on:T52 Site:T54
+T10	Action 756 759	Add
+E10	Action:T10 Acts-on:T56
+T11	Action 784 787	Add
+E11	Action:T11 Acts-on:T58
+T12	Action 827 833	invert
+E12	Action:T12 Acts-on:T59
+T13	Action 842 848	vortex
+E13	Action:T13 
+T14	Action 857 860	Add
+E14	Action:T14 Acts-on:T62
+T15	Action 906 914	Incubate
+E15	Action:T15 Acts-on:T66 Site:T67
+T16	Action 941 951	Centrifuge
+E16	Action:T16 
+T17	Action 992 1000	Aspirate
+E17	Action:T17 Acts-on:T71
+T18	Action 1004 1010	decant
+E18	Action:T18 Acts-on:T71
+T19	Action 1069 1072	Add
+E19	Action:T19 Acts-on:T77
+T20	Action 1102 1112	Centrifuge
+E20	Action:T20 
+T21	Action 1136 1142	Decant
+E21	Action:T21 Acts-on:T80
+T22	Action 1146 1154	aspirate
+E22	Action:T22 Acts-on:T80
+T24	Action 1478 1487	Resuspend
+E24	Action:T24 Acts-on:T91 Site:T93
+T25	Action 1272 1281	evaporate
+E25	Action:T25 Acts-on:T85
+T23	Action 1596 1602	stored
+E23	Action:T23 Acts-on:T105
+T26	Amount 156 168	equal volume
+T27	Reagent 172 175	PCI
+T28	Action 189 197	emulsify
+E26	Action:T28 Using:E2
+R1	Measure Arg1:T27 Arg2:T26	
+T29	Reagent 63 79	viral suspension
+T30	Amount 82 88	0.6 mL
+T31	Modifier 89 92	per
+T32	Amount 93 97	2-mL
+T33	Location 98 118	microcentrifuge tube
+R2	Measure Arg1:T33 Arg2:T32	
+R3	Mod-Link Arg1:T33 Arg2:T31	
+R4	Measure Arg1:T29 Arg2:T30	
+R5	Meronym Arg1:T29 Arg2:T33	
+T34	Speed 213 220	10,000g
+T35	Time 225 230	5 min
+T37	Reagent 263 270	organic
+T38	Reagent 275 289	aqueous phases
+R6	Setting Arg1:E3 Arg2:T34	
+R7	Setting Arg1:E3 Arg2:T35	
+T39	Reagent 304 332	DNA-containing aqueous phase
+T40	Modifier 346 349	new
+T41	Location 350 354	tube
+T42	Action 358 368	aspiration
+E28	Action:T42 Using:T43
+T43	Device 376 383	pipette
+R8	Mod-Link Arg1:T41 Arg2:T40	
+T44	Method 442 451	steps 1–3
+T45	Amount 599 611	equal volume
+T46	Reagent 615 617	CI
+T47	Reagent 625 638	aqueous phase
+T48	Action 652 660	emulsify
+E29	Action:T48 
+R9	Measure Arg1:T46 Arg2:T45	
+T49	Method 679 685	step 2
+T50	Action 689 697	separate
+E30	Action:T50 Product:T51
+T51	Reagent 698 704	phases
+T52	Reagent 719 732	aqueous phase
+T53	Modifier 746 749	new
+T54	Location 750 754	tube
+R10	Mod-Link Arg1:T54 Arg2:T53	
+T55	Amount 760 764	1 µL
+T56	Reagent 765 782	polyacryl carrier
+R11	Measure Arg1:T56 Arg2:T55	
+T57	Amount 788 804	1/10 of a volume
+T58	Reagent 808 822	sodium acetate
+T59	Location 834 838	tube
+T60	Action 852 855	mix
+E31	Action:T60 
+R12	Measure Arg1:T58 Arg2:T57	
+T61	Amount 861 870	2 volumes
+T62	Reagent 874 881	ethanol
+T63	Action 886 892	invert
+E32	Action:T63 Acts-on:T64
+T64	Location 893 897	tube
+T65	Action 901 904	mix
+E33	Action:T65 
+R13	Measure Arg1:T62 Arg2:T61	
+T66	Reagent 915 921	sample
+T67	Location 925 928	ice
+T68	Time 933 939	10 min
+R14	Setting Arg1:E15 Arg2:T68	
+T69	Time 956 968	10 to 30 min
+T70	Temperature 973 978	0–4°C
+R15	Setting Arg1:E16 Arg2:T69	
+R16	Setting Arg1:E16 Arg2:T70	
+T71	Reagent 1015 1026	supernatant
+T72	Reagent 1061 1067	pellet
+T73	Action 1049 1056	disturb
+E34	Action:T73 Acts-on:T72
+T74	Amount 1073 1079	500 µL
+T75	Modifier 1080 1088	ice-cold
+T76	Concentration 1089 1092	70%
+T77	Reagent 1093 1100	ethanol
+R17	Measure Arg1:T77 Arg2:T76	
+R18	Mod-Link Arg1:T77 Arg2:T75	
+R19	Measure Arg1:T77 Arg2:T74	
+T78	Speed 1116 1123	10,000g
+T79	Time 1128 1134	10 min
+R20	Setting Arg1:E20 Arg2:T78	
+R21	Setting Arg1:E20 Arg2:T79	
+T80	Reagent 1155 1166	supernatant
+T81	Action 1215 1222	disturb
+E35	Action:T81 Acts-on:T82
+T82	Reagent 1227 1233	pellet
+T83	Location 1264 1268	tube
+T84	Modifier 1241 1249	residual
+T85	Reagent 1250 1256	liquid
+R22	Mod-Link Arg1:T85 Arg2:T84	
+R23	Meronym Arg1:T85 Arg2:T83	
+T86	Action 1285 1295	air-drying
+E36	Action:T86 
+T87	Action 1345 1352	placing
+E37	Action:T87 Site:T89 Acts-on:T83
+T88	Modifier 1353 1360	briefly
+T89	Device 1366 1397	centrifugal vacuum concentrator
+R24	Mod-Link Arg1:E37 Arg2:T88	
+T90	Modifier 1492 1497	dried
+T91	Reagent 1498 1504	pellet
+T92	Amount 1510 1522	small volume
+T93	Reagent 1526 1530	Tris
+T94	Concentration 1532 1537	10 mM
+T95	pH 1539 1543	pH 8
+T96	Reagent 1548 1557	TE buffer
+R25	Measure Arg1:T93 Arg2:T94	
+R26	Measure Arg1:T93 Arg2:T95	
+R27	Measure Arg1:T93 Arg2:T92	
+R28	Mod-Link Arg1:T91 Arg2:T90	
+R29	Or Arg1:T93 Arg2:T96	
+T97	Temperature 1606 1609	4°C
+T98	Time 1614 1635	short periods of time
+T99	Temperature 1640 1645	–20°C
+T100	Time 1650 1670	long periods of time
+T101	Temperature 1679 1684	–80°C
+T102	Time 1685 1697	indefinitely
+T103	Modifier 1573 1584	solubilized
+T104	Modifier 1563 1571	purified
+T105	Reagent 1585 1588	DNA
+R30	Mod-Link Arg1:T105 Arg2:T103	
+R31	Mod-Link Arg1:T105 Arg2:T104	
+R32	Setting Arg1:E23 Arg2:T97	
+R33	Setting Arg1:E23 Arg2:T98	
+R35	Or Arg1:T98 Arg2:T100	
+R36	Or Arg1:T99 Arg2:T101	
+R34	Or Arg1:T97 Arg2:T99	
+R37	Or Arg1:T100 Arg2:T102	
+T106	Reagent 0 17	Phenol-chloroform
+T107	Method 18 28	extraction
+T108	Reagent 34 41	ethanol
+T109	Method 42 55	precipitation
+T110	Modifier 81 82	≤
+R38	Mod-Link Arg1:T30 Arg2:T110	
+T36	Method 245 255	separation
+T111	Reagent 408 416	material
+T112	Location 424 433	interface
+T113	Location 472 481	interface
+T114	Reagent 514 522	material
+T115	Method 528 538	extraction
+T116	Reagent 571 576	viral
+T117	Modifier 566 570	pure
+T118	Method 577 589	preparations
+R39	Mod-Link Arg1:T116 Arg2:T117	
+T119	Numerical 524 527	one
+R40	Or Arg1:E17 Arg2:E18	
+R41	Or Arg1:E21 Arg2:E22	
+T120	Modifier 1170 1180	completely
+R42	Mod-Link Arg1:E22 Arg2:T120	
+T121	Seal 1305 1308	cap
+T122	Location 1322 1326	tube
+T123	Modifier 1327 1338	upside down
+R43	Mod-Link Arg1:T122 Arg2:T123	
+T124	Modifier 1309 1313	open
+R44	Mod-Link Arg1:T121 Arg2:T124	
+T125	Device 1405 1426	SpeedVac concentrator
+T127	Device 1466 1475	Eppendorf
+T126	Device 1447 1464	Concentrator plus
+T128	Device 1428 1445	Thermo Scientific

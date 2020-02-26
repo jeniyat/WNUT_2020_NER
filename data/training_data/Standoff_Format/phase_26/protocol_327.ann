@@ -1,0 +1,100 @@
+T1	Action 153 158	place
+E1	Action:T1 Site:T27 Acts-on:T19 Acts-on2:T26
+T2	Action 50 61	anesthetize
+E2	Action:T2 Acts-on:T14 Using:T15
+T3	Action 93 97	clip
+E3	Action:T3 Acts-on:T17
+T4	Action 282 287	Place
+E4	Action:T4 Acts-on:T21 Site:T28
+T5	Action 363 370	Turn on
+E5	Action:T5 Acts-on:T31
+T6	Action 389 397	Transfer
+E6	Action:T6 Acts-on:T32 Site:T33
+T7	Action 434 441	tapping
+E7	Action:T7 Acts-on:T34
+T8	Action 461 465	pull
+E8	Action:T8 Acts-on:T35
+T9	Action 520 524	kept
+E9	Action:T9 Acts-on:T38 Site:T39
+T10	Action 553 562	Pull down
+E10	Action:T10 Acts-on:T41
+T11	Action 719 724	Close
+E11	Action:T11 Acts-on:T48
+T12	Action 826 831	Count
+E12	Action:T12 Acts-on:T54 Site:T56
+T13	Modifier 62 71	3-6 d old
+T14	Reagent 72 77	flies
+T15	Reagent 84 87	CO2
+T16	Amount 98 101	2/3
+T17	Reagent 107 117	both wings
+R2	Measure Arg1:T17 Arg2:T16	
+R3	Mod-Link Arg1:T14 Arg2:T13	
+T18	Amount 166 168	30
+T19	Reagent 169 174	flies
+T20	Modifier 180 193	clipped wings
+T22	Modifier 209 215	intact
+T23	Amount 121 125	half
+T24	Mention 129 133	them
+R4	Meronym Arg1:T24 Arg2:T14	
+R1	Coreference-Link Arg1:T24 Arg2:T23	
+R5	Meronym Arg1:T17 Arg2:T24	
+T25	Amount 206 208	30
+T26	Reagent 216 221	flies
+T27	Location 147 151	vial
+R6	Measure Arg1:T19 Arg2:T18	
+R7	Mod-Link Arg1:T19 Arg2:T20	
+R8	Mod-Link Arg1:T26 Arg2:T22	
+R9	Measure Arg1:T26 Arg2:T25	
+T21	Reagent 292 297	flies
+T28	Location 305 318	entrance tube
+T29	Action 336 350	let them adapt
+E13	Action:T29 Acts-on:T21
+T30	Time 355 361	10 min
+R10	Setting Arg1:E13 Arg2:T30	
+T31	Device 375 387	light source
+T32	Reagent 402 407	flies
+T33	Location 415 423	elevator
+T34	Device 446 455	apparatus
+T35	Device 470 482	movable part
+R11	Meronym Arg1:T35 Arg2:T34	
+T36	Modifier 427 433	gently
+R12	Mod-Link Arg1:E7 Arg2:T36	
+T37	Action 500 505	close
+E14	Action:T37 Acts-on:T34
+T38	Reagent 510 515	Flies
+T39	Location 532 540	elevator
+T40	Time 545 551	30 sec
+R13	Setting Arg1:E9 Arg2:T40	
+T41	Device 567 579	movable part
+T42	Action 605 611	placed
+E15	Action:T42 Acts-on:T43 Site:T44
+T43	Location 593 601	elevator
+T44	Location 612 656	between the transparent and the opaque tubes
+T45	Action 658 663	Allow
+E16	Action:T45 Acts-on:T62
+T46	Time 711 717	30 sec
+R14	Setting Arg1:E16 Arg2:T46	
+T47	Amount 725 728	all
+T48	Location 729 734	tubes
+T49	Action 738 748	pulling up
+E17	Action:T49 Acts-on:T50
+T50	Device 753 765	movable part
+T51	Action 779 783	lock
+E18	Action:T51 Acts-on:T53 Site:T52
+T52	Location 801 805	tube
+T53	Reagent 788 793	flies
+R15	Coreference-Link Arg1:T52 Arg2:T48	
+R16	Measure Arg1:T48 Arg2:T47	
+T54	Reagent 846 851	flies
+T55	Amount 878 882	each
+T56	Location 883 887	tube
+R17	Measure Arg1:T56 Arg2:T55	
+T57	Action 889 898	Calculate
+E19	Action:T57 Measure-Type-Link:T58
+T58	Measure-Type 903 915	Choice Index
+T59	Device 0 6	T-maze
+T60	Time 23 26	24h
+T61	Mention 227 231	them
+T62	Reagent 668 673	flies
+T63	Mention 806 810	they
+R18	Coreference-Link Arg1:T63 Arg2:T53	

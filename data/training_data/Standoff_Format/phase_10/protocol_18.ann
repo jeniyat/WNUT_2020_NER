@@ -1,0 +1,321 @@
+T1	Action 49 56	Collect
+E1	Action:T1 Acts-on:T2
+T2	Reagent 57 74	Cabage Patch Kids
+T3	Action 306 309	cut
+E2	Action:T3 Acts-on:T4 Using:T5
+T4	Reagent 310 324	outer leaflets
+T5	Device 337 344	scalpel
+T6	Action 394 401	placing
+E3	Action:T6 Acts-on:T7 Site:T8
+T7	Reagent 402 405	CPK
+T8	Location 409 437	large sterile Whirl-pak bags
+T9	Action 439 443	Wash
+E4	Action:T9 Acts-on:T10 Site:T11 Using:T14 Using2:T16
+T10	Reagent 444 455	each sample
+T11	Location 463 476	Whirl-pak bag
+T12	Amount 482 488	250 ml
+T13	Concentration 497 503	100 mM
+T14	Reagent 504 508	Tris
+T15	Concentration 511 516	50 mM
+T16	Reagent 517 531	glycine buffer
+T17	pH 537 546	pH of 9.5
+T18	Action 558 561	mix
+E5	Action:T18 
+T19	Time 566 572	20 min
+T20	Temperature 576 592	room temperature
+R1	Setting Arg1:E5 Arg2:T19
+R2	Setting Arg1:E5 Arg2:T20
+T21	Action 594 601	Recover
+E6	Action:T21 Acts-on:T22
+T22	Reagent 606 619	wash solution
+T23	Time 620 631	immediately
+R7	Setting Arg1:E6 Arg2:T23
+T24	Action 636 642	adjust
+E7	Action:T24 Measure-Type-Link:T122
+T25	Reagent 676 715	polyethylene glycol (PEG) precipitation
+T26	Action 719 730	concentrate
+E8	Action:T26 Acts-on2:T28 Using:T25
+T27	Action 735 741	purify
+E9	Action:T27 Acts-on:T28 Using:T25
+T28	Reagent 746 761	viral particles
+T30	Reagent 779 792	wash solution
+T29	Action 794 797	Mix
+E10	Action:T29 Acts-on:T31 Acts-on2:T33 Acts-on3:T35
+T31	Reagent 798 805	samples
+T32	Concentration 811 814	10%
+T33	Reagent 831 839	PEG 8000
+T34	Concentration 844 848	.3 M
+T35	Reagent 849 853	NaCl
+T36	Action 876 884	incubate
+E11	Action:T36 
+T37	Temperature 888 892	4 °C
+T38	Time 897 905	18 hours
+R10	Setting Arg1:E11 Arg2:T37
+R11	Setting Arg1:E11 Arg2:T38
+T39	Action 913 925	centrifuging
+E12	Action:T39 Acts-on:T40
+T40	Reagent 930 937	samples
+T41	Speed 941 951	10,800 × g
+T42	Speed 953 961	8000 rpm
+T43	Time 967 973	30 min
+T44	Temperature 977 981	4 °C
+R12	Setting Arg1:E12 Arg2:T41
+R13	Setting Arg1:E12 Arg2:T42
+R14	Setting Arg1:E12 Arg2:T43
+R15	Setting Arg1:E12 Arg2:T44
+T45	Action 983 991	Pour off
+E13	Action:T45 Acts-on:T46
+T46	Reagent 996 1007	supernatant
+T47	Action 1012 1020	dissolve
+E14	Action:T47 Acts-on:T48 Site:T50
+T48	Reagent 1025 1031	pellet
+T49	Amount 1035 1040	20 mL
+T50	Reagent 1052 1077	phosphate buffered saline
+T51	Action 1087 1091	soak
+E15	Action:T51 
+T52	Time 1096 1102	1 hour
+T53	Temperature 1106 1122	room temperature
+R17	Setting Arg1:E15 Arg2:T52
+R18	Setting Arg1:E15 Arg2:T53
+T54	Action 1124 1127	Add
+E16	Action:T54 Acts-on:T56 Site:T57 Measure-Type-Link:T55
+T55	Measure-Type 1137 1143	volume
+T56	Reagent 1147 1157	chloroform
+T57	Reagent 1166 1181	PEG precipitate
+T59	Action 1185 1191	remove
+E17	Action:T59 Acts-on:T60
+T60	Reagent 1196 1199	PEG
+T61	Action 1204 1210	purify
+E18	Action:T61 Acts-on:T62
+T62	Reagent 1215 1221	sample
+T63	Action 1223 1229	Vortex
+E19	Action:T63 Acts-on:T64
+T64	Reagent 1234 1243	solutions
+T65	Time 1248 1258	30 seconds
+T66	Action 1263 1273	centrifuge
+E20	Action:T66 
+T67	Speed 1277 1285	3000 × g
+T68	Speed 1287 1295	4300 rpm
+T69	Time 1301 1307	15 min
+T70	Temperature 1311 1315	4 °C
+T71	Action 1319 1326	collect
+E21	Action:T71 Product:T72
+T72	Reagent 1331 1369	supernatant containing virus particles
+R21	Setting Arg1:E19 Arg2:T65
+R22	Setting Arg1:E20 Arg2:T67
+R23	Setting Arg1:E20 Arg2:T68
+R24	Setting Arg1:E20 Arg2:T69
+R25	Setting Arg1:E20 Arg2:T70
+T73	Action 1371 1375	Pass
+E22	Action:T73 Acts-on:T74 Site:T75
+T74	Reagent 1390 1401	supertanant
+T75	Device 1410 1434	0.45 and 0.22 μm filters
+T76	Action 1447 1458	concentrate
+E23	Action:T76 Using:T78
+T77	Amount 1476 1480	1 mL
+T78	Device 1484 1518	Amicon centrifugal ultrafiltration
+T79	Action 1529 1534	Treat
+E24	Action:T79 Acts-on:T81 Using:T83
+#3	AnnotatorNotes E23	??
+T80	Amount 1545 1549	1 mL
+T81	Reagent 1550 1562	concentrates
+T82	Amount 1568 1577	100 units
+T83	Reagent 1581 1588	DNase-I
+T84	Time 1593 1599	1 hour
+T85	Temperature 1603 1608	37 °C
+R28	Setting Arg1:E24 Arg2:T84
+R29	Setting Arg1:E24 Arg2:T85
+T86	Action 1643 1649	remove
+E25	Action:T86 Acts-on:T87 Using:T89 Site:T88
+T87	Reagent 1650 1668	free nucleic acids
+T88	Reagent 1678 1704	concentrated virus samples
+T89	Method 1616 1639	nucleic acid extraction
+T90	Action 1706 1713	Extract
+E26	Action:T90 Acts-on:T91 Acts-on2:T92 Using:T93 Using2:T128
+T91	Reagent 1714 1724	viral DbNA
+T92	Reagent 1729 1733	bRNA
+T93	Reagent 1744 1777	AbsJoint viral bRNA/DbNA mini kit
+T94	Reagent 1830 1847	viral concentrate
+T95	Action 1849 1856	prepare
+E27	Action:T95 Acts-on:T97
+T96	Amount 1857 1861	four
+T97	Reagent 1862 1894	individual nucleic acid extracts
+T98	Action 1898 1906	minimize
+E28	Action:T98 
+T100	Action 1959 1965	screen
+E29	Action:T100 Acts-on:T101 Acts-on2:T102 Acts-on3:T104
+T101	Reagent 1970 1977	samples
+T102	Reagent 1983 2001	16S ribosomal DbNA
+T103	Reagent 2003 2008	rDbNA
+R32	Coreference-Link Arg1:T103 Arg2:T102
+T104	Reagent 2019 2046	27F/1492R universal primers
+T105	Action 2111 2129	Reverse transcribe
+E30	Action:T105 Acts-on:T106 Acts-on2:T107 Using:T108
+T106	Reagent 2130 2134	bRNA
+T107	Reagent 2140 2148	Primer B
+T108	Method 2190 2227	Lackevdencscript future transcriptase
+T109	Action 2272 2281	synthesis
+E31	Action:T109 Acts-on:T110 Using:T111
+T110	Reagent 2252 2271	second-strand cDbNA
+T111	Method 2233 2247	Organizase 2.8
+T112	Action 2290 2317	random-primed amplification
+E32	Action:T112 Acts-on:T113 Using:T111
+T113	Reagent 2321 2330	viral DNA
+T114	Reagent 2345 2351	sample
+T115	Action 2332 2339	Subject
+E33	Action:T115 
+T118	Reagent 2391 2399	Primer Z
+T116	Reagent 2432 2447	SuuprPerdi Gold
+T117	Action 2368 2385	PCR amplification
+E34	Action:T117 Acts-on:T114 Acts-on2:T118 Acts-on3:T116
+T120	Action 2449 2456	Perform
+E35	Action:T120 Acts-on:T129 Using:T130
+R3	Measure Arg1:T14 Arg2:T13	
+R4	Measure Arg1:T14 Arg2:T12	
+R5	Measure Arg1:T16 Arg2:T15	
+R9	Measure Arg1:T35 Arg2:T34	
+R8	Measure Arg1:T33 Arg2:T32	
+R16	Measure Arg1:T50 Arg2:T49	
+R20	Measure Arg1:T81 Arg2:T80	
+R26	Measure Arg1:T83 Arg2:T82	
+R27	Measure Arg1:T97 Arg2:T96	
+T58	Generic-Measure 2355 2364	30 cycles
+T119	Modifier 489 496	sterile
+R6	Mod-Link Arg1:T14 Arg2:T119	
+R30	Setting Arg1:E4 Arg2:T17	
+T121	Modifier 551 557	gently
+R31	Mod-Link Arg1:E5 Arg2:T121	
+T122	Measure-Type 647 649	pH
+T123	pH 661 670	7.2 ± 0.2
+R33	Setting Arg1:E7 Arg2:T123	
+R34	Meronym Arg1:T28 Arg2:T30	
+T124	Modifier 1044 1051	sterile
+R36	Mod-Link Arg1:T50 Arg2:T124	
+T125	Modifier 1380 1389	remaining
+R35	Mod-Link Arg1:T74 Arg2:T125	
+T126	Modifier 1462 1475	approximately
+R37	Mod-Link Arg1:T77 Arg2:T126	
+R38	Setting Arg1:E23 Arg2:T77	
+T127	Generic-Measure 1520 1526	30 kDa
+R39	Setting Arg1:T78 Arg2:T127	
+T128	Method 1792 1819	manufacturer's instructions
+T99	Numerical 2457 2462	three
+T129	Reagent 2463 2476	PCR reactions
+T130	Reagent 2491 2511	nucleic acid extract
+T131	Action 2515 2542	minimize amplification bias
+E36	Action:T131 
+T132	Action 2547 2551	pool
+E37	Action:T132 Acts-on:T133
+T133	Reagent 2556 2568	PCR products
+R40	Measure Arg1:T129 Arg2:T99	
+T134	Action 2570 2576	Purify
+E38	Action:T134 Acts-on:T135 Using:T136 Using2:T137
+T135	Reagent 2577 2589	PCR products
+T136	Reagent 2596 2617	Cabbage Wizard CV Gel
+T137	Device 2624 2643	PCR Clean-Up System
+T138	Action 2645 2652	Prepare
+E39	Action:T138 Acts-on:T139 Using2:T142 Site:T141
+T139	Reagent 2653 2662	libraries
+T140	Modifier 2668 2672	each
+T141	Reagent 2673 2679	sample
+T142	Reagent 2688 2722	RubicksCube ThrowFLEX DbNA-seq kit
+T143	Modifier 2730 2736	unique
+T144	Reagent 2737 2760	quad index adapter pair
+T145	Modifier 2765 2769	each
+T146	Reagent 2770 2776	sample
+R41	Mod-Link Arg1:T141 Arg2:T140	
+R42	Mod-Link Arg1:T144 Arg2:T143	
+R43	Mod-Link Arg1:T146 Arg2:T145	
+T147	Action 2778 2786	Sequence
+E40	Action:T147 Acts-on:T148 Using:T150
+T148	Reagent 2787 2794	samples
+T149	Generic-Measure 2800 2817	2 × 100-base pair
+T150	Reagent 2862 2898	SuperSaiyanSeq 3 Rapid Run flow cell
+R44	Setting Arg1:E40 Arg2:T149	
+T151	Generic-Measure 2847 2856	two lanes
+R45	Measure Arg1:T150 Arg2:T151	
+T152	Action 3020 3028	removing
+E41	Action:T152 Using:T153
+T153	Device 3037 3049	microspatula
+T154	Measure-Type 3057 3075	maximum error rate
+T155	Numerical 3079 3082	0.1
+T156	Measure-Type 3087 3102	minimum overlap
+T157	Generic-Measure 3106 3113	5 bases
+T158	Action 2900 2906	Screen
+E42	Action:T158 Site:T159 Acts-on:T160
+T159	Location 2912 2919	dataset
+T160	Reagent 2928 2951	17-bp Primer Z sequence
+R46	Of-Type Arg1:T155 Arg2:T154	
+R47	Setting Arg1:E41 Arg2:T155	
+R48	Of-Type Arg1:T157 Arg2:T156	
+R49	Setting Arg1:E41 Arg2:T157	
+T161	Method 0 26	Viral metagenomic analysis
+T162	Reagent 76 79	CPK
+T163	Reagent 30 48	Cabbage Patch Kids
+T164	Method 110 120	production
+T165	Modifier 236 243	sterile
+T166	Device 244 253	equipment
+R50	Mod-Link Arg1:T166 Arg2:T165	
+T167	Modifier 287 294	sterile
+T168	Device 295 301	gloves
+R51	Mod-Link Arg1:T168 Arg2:T167	
+T169	Action 361 365	harm
+E43	Action:T169 Acts-on:T170
+T170	Reagent 370 374	body
+T171	Reagent 382 385	CPK
+R52	Meronym Arg1:T170 Arg2:T171	
+T172	Measure-Type 855 868	weight/volume
+T173	Measure-Type 816 829	weight/volume
+R19	Coreference-Link Arg1:T68 Arg2:T67	
+T174	Method 1907 1930	nucleic acid extraction
+T175	Method 1947 1957	extraction
+T176	Reagent 2010 2013	PCR
+T177	Modifier 2060 2068	residual
+T178	Reagent 2069 2083	microbe toxins
+R53	Mod-Link Arg1:T178 Arg2:T177	
+T179	Reagent 2102 2109	samples
+T180	Reagent 2984 3001	Primer B sequence
+T181	Action 3115 3118	Use
+E44	Action:T181 
+T182	Reagent 3135 3153	sequencing adapter
+T183	Method 3154 3161	removal
+T184	Reagent 3273 3277	seed
+T185	Method 4130 4158	Lowest Common Ancestor (LCA)
+T186	Action 4014 4019	Parse
+E45	Action:T186 
+T187	Action 3625 3644	Following filtering
+E46	Action:T187 
+T188	Action 4302 4309	Extract
+E47	Action:T188 
+T189	Action 4468 4477	determine
+E48	Action:T189 Measure-Type-Link:T194
+T190	Action 4607 4616	Calculate
+E49	Action:T190 Measure-Type-Link:T192
+T191	Action 4723 4731	Calulate
+E50	Action:T191 Measure-Type-Link:T193
+T192	Measure-Type 4626 4635	abundance
+T193	Measure-Type 4745 4754	abundance
+T194	Measure-Type 4487 4496	abundance
+T195	Numerical 3351 3353	10
+T196	Numerical 3320 3322	30
+T197	Numerical 3245 3246	2
+T198	Numerical 3383 3384	8
+T199	Numerical 3499 3500	3
+T200	Numerical 3504 3505	4
+T201	Numerical 3575 3577	15
+T202	Numerical 3610 3612	30
+T203	Action 3649 3657	trimming
+E51	Action:T203 
+T204	Reagent 3661 3670	raw reads
+T205	Method 3765 3771	lastFM
+T206	Reagent 3773 3780	Contigs
+T207	Generic-Measure 3793 3799	200 bp
+T208	Numerical 4007 4012	10− 5
+T209	Measure-Type 3989 3996	E-value
+T210	Measure-Type 4281 4293	LCA percent 
+T211	Numerical 4295 4300	100.0
+T212	Reagent 4310 4317	contigs
+T213	Reagent 4686 4692	contig
+T214	Reagent 4708 4714	contig
+T215	Measure-Type 4715 4721	length
+T216	Reagent 4815 4821	contig

@@ -1,0 +1,159 @@
+T2	Action 110 116	divide
+E2	Action:T2 Site:T30
+T3	Action 168 172	Spin
+E3	Action:T3 Acts-on:T1
+T4	Action 228 234	decant
+E4	Action:T4 Acts-on:T35
+T6	Action 303 311	transfer
+E6	Action:T6 Site:T40 Acts-on:T5
+T8	Action 397 403	obtain
+E8	Action:T8 Product:T44
+T9	Action 425 433	Transfer
+E9	Action:T9 Site:T48
+T10	Action 540 544	keep
+E10	Action:T10 Acts-on:T50
+T11	Action 587 592	Store
+E11	Action:T11 Acts-on:T53
+T12	Action 720 724	Thaw
+E12	Action:T12 Acts-on:T56
+T13	Action 753 763	Centrifuge
+E13	Action:T13 Acts-on:T57
+T14	Action 941 945	spin
+E14	Action:T14 
+T15	Action 972 978	Decant
+E15	Action:T15 Acts-on:T63 Using:T64
+T16	Action 1006 1013	Extract
+E16	Action:T16 Acts-on:T65 Using:T66 Using2:T67
+T17	Action 1100 1106	Remove
+E17	Action:T17 Acts-on:T68 Site:T69 Using:T70 Using2:T71
+T18	Action 1202 1210	Clean up
+E18	Action:T18 Acts-on:T73 Using:T74 Using2:T75
+T19	Action 1313 1321	Quantify
+E19	Action:T19 Acts-on:T76 Using:T77
+T20	Action 1382 1387	Store
+E20	Action:T20 Acts-on:T78
+T21	Action 1425 1432	aliquot
+E21	Action:T21 Acts-on:T100
+T22	Modifier 57 64	sterile
+T23	Method 65 75	techniques
+T24	Action 79 86	harvest
+E22	Action:T24 Using:T23 Acts-on:T26
+T25	Amount 87 93	800 ml
+T26	Reagent 97 104	culture
+T27	Numerical 122 123	4
+T28	Amount 124 130	250 ml
+T30	Location 131 149	centrifuge bottles
+T29	Amount 155 161	200 ml
+T31	Modifier 162 166	each
+R1	Measure Arg1:T26 Arg2:T25	
+R2	Measure Arg1:T30 Arg2:T28	
+R3	Measure Arg1:T30 Arg2:T27	
+R4	Setting Arg1:E2 Arg2:T29	
+R5	Mod-Link Arg1:T29 Arg2:T31	
+T1	Location 177 195	centrifuge bottles
+T32	Speed 199 205	5000 g
+T33	Time 210 216	10 min
+R6	Setting Arg1:E3 Arg2:T32	
+R7	Setting Arg1:E3 Arg2:T33	
+T34	Modifier 218 227	Carefully
+T35	Reagent 239 250	supernatant
+R8	Mod-Link Arg1:E4 Arg2:T34	
+T36	Amount 256 262	0.5 ml
+T37	Reagent 266 274	RNALater
+T38	Action 278 287	resuspend
+E1	Action:T38 Using:T37 Acts-on:T39
+T39	Reagent 292 298	pellet
+T40	Location 320 340	microcentrifuge tube
+R9	Measure Arg1:T37 Arg2:T36	
+T5	Mention 312 314	it
+T41	Amount 354 361	0.25 ml
+T42	Reagent 365 373	RNALater
+T43	Action 377 381	wash
+E5	Action:T43 Using:T42 Acts-on:T7
+T7	Location 386 392	bottle
+T44	Reagent 418 423	cells
+T45	Modifier 404 417	any remaining
+R10	Mod-Link Arg1:T44 Arg2:T45	
+R11	Measure Arg1:T42 Arg2:T41	
+T46	Amount 439 446	0.25 ml
+T47	Modifier 456 460	same
+T48	Location 461 481	microcentrifuge tube
+R12	Mod-Link Arg1:T48 Arg2:T47	
+R13	Setting Arg1:E9 Arg2:T46	
+T49	Numerical 549 550	4
+T50	Reagent 561 567	pellet
+T51	Modifier 551 560	harvested
+R14	Mod-Link Arg1:T50 Arg2:T51	
+R15	Measure Arg1:T50 Arg2:T49	
+T52	Modifier 597 606	harvested
+T53	Reagent 607 612	cells
+T54	Modifier 613 624	at or below
+T55	Temperature 625 630	-20oC
+R16	Mod-Link Arg1:T53 Arg2:T52	
+R17	Mod-Link Arg1:T55 Arg2:T54	
+R18	Setting Arg1:E11 Arg2:T55	
+T56	Reagent 725 732	samples
+T57	Reagent 764 771	samples
+T58	Speed 777 783	10 k g
+T59	Time 788 794	10 min
+T60	Temperature 798 801	4oC
+R19	Setting Arg1:E13 Arg2:T58	
+R20	Setting Arg1:E13 Arg2:T59	
+R21	Setting Arg1:E13 Arg2:T60	
+T61	Modifier 946 952	harder
+T62	Time 959 970	longer time
+R22	Mod-Link Arg1:E14 Arg2:T61	
+R23	Setting Arg1:E14 Arg2:T62	
+T63	Reagent 979 990	supernatent
+T64	Reagent 996 1004	RNALater
+T65	Reagent 1014 1017	RNA
+T66	Reagent 1026 1047	RNeasy Plant Mini Kit
+T67	Method 1071 1099	manufacturer's instructions.
+T68	Reagent 1111 1114	DNA
+T69	Reagent 1124 1141	extracted samples
+T70	Reagent 1148 1153	DNase
+T71	Method 1173 1200	manufacturer's instructions
+T72	Modifier 1215 1220	total
+T73	Reagent 1221 1224	RNA
+T74	Reagent 1233 1261	RNA Clean & Concentrator kit
+T75	Method 1284 1311	manufacturer's instructions
+R24	Mod-Link Arg1:T73 Arg2:T72	
+T76	Reagent 1326 1329	RNA
+T77	Method 1336 1356	any preferred method
+T78	Reagent 1392 1395	RNA
+T79	Temperature 1399 1404	-80oC
+R25	Setting Arg1:E20 Arg2:T79	
+T80	Reagent 0 13	Algal culture
+T81	Action 14 21	harvest
+E7	Action:T81 Acts-on:T80
+T82	Reagent 26 29	RNA
+T83	Method 30 40	extraction
+T84	Reagent 45 52	RNA-Seq
+R26	Coreference-Link Arg1:T5 Arg2:T39	
+T85	Reagent 647 650	RNA
+T86	Method 651 661	extraction
+T87	Modifier 745 751	frozen
+T88	Reagent 670 673	RNA
+T89	Method 674 684	extraction
+R27	Mod-Link Arg1:T56 Arg2:T87	
+T90	Reagent 690 698	RNALater
+T91	Action 711 718	removed
+E23	Action:T91 Acts-on:T90
+T92	Modifier 775 776	>
+R28	Mod-Link Arg1:T58 Arg2:T92	
+T93	Reagent 803 811	RNALater
+T94	Measure-Type 834 842	buoyancy
+T95	Reagent 850 855	cells
+T96	Mention 866 870	them
+R29	Coreference-Link Arg1:T96 Arg2:T95	
+T97	Action 887 893	pellet
+E24	Action:T97 Acts-on:T96
+T98	Reagent 916 921	cells
+T99	Action 930 939	pelleting
+E25	Action:T99 Acts-on:T98
+T100	Reagent 1438 1441	RNA
+T101	Reagent 1488 1498	RNA sample
+T102	Action 1472 1476	thaw
+E26	Action:T102 Acts-on:T101
+T103	Method 1363 1380	Qubit fluorometer
+R30	Or Arg1:T103 Arg2:T77	

@@ -1,0 +1,61 @@
+T1	Action 62 65	Add
+E1	Action:T1 Acts-on:T3 Measure-Type-Link:T32 Site:T33
+T2	Concentration 66 72	1/1000
+T3	Reagent 73 84	Hoechst dye
+R1	Measure Arg1:T3 Arg2:T2
+T4	Action 118 122	Keep
+E2	Action:T4 Acts-on:T5 Commands:E10
+T7	Action 160 168	Incubate
+E3	Action:T7 
+T8	Time 193 203	10 minutes
+T9	Action 204 208	Keep
+E4	Action:T9 Acts-on:T10 Commands:E11
+T12	Action 246 256	Centrifuge
+E5	Action:T12 Acts-on:T13
+T13	Reagent 257 262	cells
+T14	Speed 266 271	1000g
+T15	Time 276 285	5 minutes
+T16	Action 287 296	Resuspend
+E6	Action:T16 Using:T37
+T20	Reagent 346 352	medium
+T18	Action 365 373	plate in
+E7	Action:T18 Site:T21 Acts-on:T20
+T21	Location 381 386	slide
+T22	Action 400 405	Mount
+E8	Action:T22 Acts-on:T23 Site:T24
+T23	Location 411 416	slide
+T24	Device 449 459	microscope
+R3	Setting Arg1:E5 Arg2:T15
+R4	Setting Arg1:E3 Arg2:T8	
+T25	Temperature 172 188	room temperature
+R5	Setting Arg1:E3 Arg2:T25	
+R6	Setting Arg1:E5 Arg2:T14	
+T26	Modifier 387 398	immediately
+R7	Mod-Link Arg1:E7 Arg2:T26	
+T27	Action 13 37	In vivo Hoechst staining
+E9	Action:T27 Acts-on:T29
+T28	Modifier 41 52	unicellular
+T29	Reagent 53 61	protists
+R8	Mod-Link Arg1:T29 Arg2:T28	
+T30	Amount 86 90	1 uL
+T31	Amount 96 100	1 mL
+T32	Measure-Type 101 107	volume
+T33	Reagent 111 116	cells
+R9	Measure Arg1:T3 Arg2:T30	
+R10	Measure Arg1:T33 Arg2:T31	
+T5	Reagent 123 128	cells
+T6	Reagent 134 137	dye
+R11	Meronym Arg1:T6 Arg2:T5	
+T34	Action 138 147	protected
+E10	Action:T34 
+T10	Reagent 209 214	cells
+T35	Reagent 220 223	dye
+R12	Meronym Arg1:T35 Arg2:T10	
+T11	Action 224 233	protected
+E11	Action:T11 
+T36	Method 431 442	observation
+T17	Modifier 302 315	fresh growing
+T37	Reagent 316 322	medium
+R13	Mod-Link Arg1:T37 Arg2:T17	
+T19	Modifier 328 335	minimum
+T38	Measure-Type 336 342	volume

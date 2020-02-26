@@ -1,0 +1,102 @@
+T1	Action 27 35	Transfer
+E1	Action:T1 Acts-on:T16 Site:T17 Site2:T20
+T2	Action 142 154	scraping off
+E2	Action:T2 Acts-on:T25 Using:T29
+T4	Action 254 261	diffuse
+E4	Action:T4 Acts-on:T30 Site:T31
+T5	Action 296 302	Vortex
+E5	Action:T5 Acts-on:T3
+T6	Action 316 326	centrifuge
+E6	Action:T6 Acts-on:T34
+T7	Action 362 368	remove
+E7	Action:T7 Acts-on:T35 Acts-on2:T36
+T8	Action 388 396	Transfer
+E8	Action:T8 Acts-on:T39 Site:T41
+T9	Action 487 494	isolate
+E9	Action:T9 Acts-on:T43
+T10	Action 510 519	dilutions
+E10	Action:T10 Acts-on:T43
+T11	Action 568 580	plaque assay
+E11	Action:T11 Acts-on:T43
+T13	Action 685 695	dilute out
+E13	Action:T13 Acts-on:T48
+T14	Action 895 903	filtered
+E14	Action:T14 Acts-on:T49
+T15	Action 908 912	kept
+E15	Action:T15 Site:T51 Acts-on:T49
+T16	Reagent 36 42	phages
+T17	Location 52 65	clearing zone
+T18	Location 73 78	plate
+T19	Amount 82 86	1 mL
+T20	Reagent 87 99	phage buffer
+T21	Modifier 103 110	sterile
+T22	Reagent 111 120	sea water
+T23	Modifier 126 133	sterile
+T24	Location 134 138	tube
+T25	Reagent 159 172	surface layer
+T26	Reagent 180 189	soft agar
+T27	Reagent 205 211	phages
+T28	Modifier 220 227	sterile
+T29	Device 228 232	loop
+R1	Meronym Arg1:T17 Arg2:T18	
+R2	Measure Arg1:T20 Arg2:T19	
+R3	Mod-Link Arg1:T22 Arg2:T21	
+R4	Or Arg1:T20 Arg2:T22	
+R5	Meronym Arg1:T22 Arg2:T24	
+R6	Mod-Link Arg1:T24 Arg2:T23	
+R7	Meronym Arg1:T25 Arg2:T26	
+R8	Meronym Arg1:T27 Arg2:T25	
+R9	Mod-Link Arg1:T29 Arg2:T28	
+T30	Reagent 244 250	phages
+T31	Reagent 271 277	medium
+T32	Time 278 287	overnight
+T33	Temperature 291 294	4°C
+R10	Setting Arg1:E4 Arg2:T32	
+R11	Setting Arg1:E4 Arg2:T33	
+T3	Location 307 311	tube
+T34	Reagent 331 337	sample
+T35	Reagent 369 377	bacteria
+T36	Reagent 382 386	agar
+T37	Speed 339 349	10,000 x g
+T38	Time 351 357	10 min
+R12	Setting Arg1:E6 Arg2:T37	
+R13	Setting Arg1:E6 Arg2:T38	
+T39	Reagent 401 412	supernatant
+T40	Modifier 418 421	new
+T41	Location 422 426	tube
+R14	Mod-Link Arg1:T41 Arg2:T40	
+T42	Numerical 495 501	single
+T43	Reagent 502 508	phages
+R15	Measure Arg1:T43 Arg2:T42	
+T44	Reagent 610 616	phages
+T45	Numerical 622 628	single
+T46	Reagent 629 636	plaques
+R16	Measure Arg1:T46 Arg2:T45	
+T47	Modifier 700 711	contaminant
+T48	Reagent 712 717	phage
+R17	Mod-Link Arg1:T48 Arg2:T47	
+T49	Reagent 867 884	phage concentrate
+T50	Generic-Measure 888 894	0.2 µm
+R18	Setting Arg1:E14 Arg2:T50	
+T51	Device 920 926	fridge
+T52	Action 0 9	Obtaining
+E3	Action:T52 Acts-on:T54
+T53	Modifier 10 14	pure
+T54	Reagent 15 26	phage stock
+R19	Mod-Link Arg1:T54 Arg2:T53	
+T55	Reagent 433 439	sample
+T56	Numerical 463 470	106–108
+T57	Reagent 471 477	phages
+T58	Amount 478 482	mL–1
+R20	Measure Arg1:T57 Arg2:T56	
+R21	Measure Arg1:T57 Arg2:T58	
+R22	Meronym Arg1:T57 Arg2:T55	
+T12	Method 597 606	isolation
+T59	Action 665 673	repeated
+E12	Action:T59 Count:T60
+T60	Numerical 674 675	3
+T61	Reagent 738 743	phage
+T62	Reagent 808 813	phage
+T63	Reagent 838 849	phage stock
+T64	Modifier 832 837	final
+R23	Mod-Link Arg1:T63 Arg2:T64	

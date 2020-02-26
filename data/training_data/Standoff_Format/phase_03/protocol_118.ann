@@ -1,0 +1,44 @@
+T1	Action 31 35	Grow
+E1	Action:T1 Acts-on:T19
+T2	Action 138 143	Plate
+E2	Action:T2 Acts-on:T8 Site:T9
+T3	Action 190 193	Add
+E3	Action:T3 Acts-on:T12
+T4	Action 242 246	rest
+E4	Action:T4 Acts-on:T15
+T5	Action 273 282	stimulate
+E5	Action:T5 
+T6	Amount 181 187	500 ul
+T7	Amount 144 153	50,000 c/
+T11	Concentration 194 204	10-50ng/ml
+T12	Reagent 208 211	PMA
+R3	Measure Arg1:T12 Arg2:T11	
+T13	Time 216 224	72 hours
+R4	Setting Arg1:E3 Arg2:T13	
+T14	Time 257 264	16hours
+T15	Reagent 247 252	cells
+R5	Setting Arg1:E4 Arg2:T14	
+T16	Modifier 267 272	Gamma
+R6	Mod-Link Arg1:E5 Arg2:T16	
+T17	Amount 288 294	10-50U
+T18	Reagent 295 299	IFNg
+R7	Measure Arg1:T18 Arg2:T17	
+T19	Reagent 36 41	cells
+T20	Action 73 77	grow
+E6	Action:T20 
+T21	Reagent 81 87	clumps
+T9	Location 164 177	24 well plate
+T8	Location 154 158	well
+T10	Reagent 0 9	THP1 cell
+T22	Method 10 30	line differentiation
+T23	Reagent 59 64	cells
+R1	Setting Arg1:E2 Arg2:T7	
+R2	Measure Arg1:T9 Arg2:T6	
+R8	Setting Arg1:E3 Arg2:T11	
+T24	Method 314 330	PAMP stimulation
+T25	Time 233 239	3 days
+T26	Reagent 90 95	Media
+T27	Reagent 103 107	RPMI
+T28	Concentration 110 113	10%
+T29	Reagent 114 117	FBS
+T30	Reagent 120 137	b-mercaptoethanol

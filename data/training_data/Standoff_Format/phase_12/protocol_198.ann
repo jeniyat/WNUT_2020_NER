@@ -1,0 +1,54 @@
+T1	Action 41 48	Combine
+E1	Action:T1 
+T2	Action 101 109	Denature
+E2	Action:T2 Acts-on:T10
+T3	Action 126 133	heating
+E3	Action:T3 Acts-on:T11
+T4	Action 166 171	Chill
+E4	Action:T4 Acts-on:T14 Site:T15
+T5	Action 204 214	Centrifuge
+E5	Action:T5 
+T6	Action 228 231	Add
+E6	Action:T6 
+T7	Action 291 294	Add
+E7	Action:T7 
+T8	Action 313 316	Mix
+E8	Action:T8 
+T9	Action 326 334	Incubate
+E9	Action:T9 Acts-on:T19
+T10	Reagent 110 122	glycoprotein
+T11	Reagent 134 142	reaction
+T12	Temperature 146 150	95°C
+T13	Time 155 164	5 minutes
+R1	Setting Arg1:E3 Arg2:T12	
+R2	Setting Arg1:E3 Arg2:T13	
+T14	Reagent 182 194	glycoprotein
+T15	Location 198 201	ice
+T16	Time 215 225	10 seconds
+R3	Setting Arg1:E5 Arg2:T16	
+T17	Reagent 295 303	PNGase F
+T18	Amount 306 310	1 µl
+R4	Measure Arg1:T17 Arg2:T18	
+R5	Setting Arg1:E7 Arg2:T18	
+T19	Reagent 335 343	reaction
+T20	Temperature 347 351	37°C
+T21	Time 356 362	1 hour
+R6	Setting Arg1:E9 Arg2:T20	
+R7	Setting Arg1:E9 Arg2:T21	
+T22	Reagent 0 8	PNGase F
+T23	Action 19 29	Denaturing
+E10	Action:T23 
+T24	Amount 70 75	10 µl
+T25	Measure-Type 91 97	volume
+T26	Reagent 82 90	reaction
+R8	Measure Arg1:T26 Arg2:T24	
+T27	Modifier 172 181	denatured
+R9	Mod-Link Arg1:T14 Arg2:T27	
+T28	Reagent 262 270	reaction
+T29	Measure-Type 271 277	volume
+T30	Amount 281 286	20 µl
+T31	Modifier 317 323	gently
+R10	Mod-Link Arg1:E8 Arg2:T31	
+T32	Action 366 373	Analyze
+E11	Action:T32 Using:T33
+T33	Method 377 393	method of choice

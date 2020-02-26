@@ -1,0 +1,37 @@
+T1	Action 54 63	Prefilter
+E1	Action:T1 Acts-on:T8 Using:T10
+T2	Action 99 102	Add
+E2	Action:T2 Acts-on:T13 Site:T15
+T3	Action 162 165	Add
+E3	Action:T3 Acts-on:T16
+T4	Action 173 176	Add
+E4	Action:T4 Acts-on:T17
+T5	Action 202 208	Vortex
+E5	Action:T5 
+T6	Action 211 215	Wait
+E6	Action:T6 
+T7	Action 225 237	Flash freeze
+E7	Action:T7 Site:T19
+T8	Reagent 64 79	seawater sample
+T9	Size 85 91	200 µm
+T10	Device 92 96	mesh
+R1	Measure Arg1:T10 Arg2:T9	
+T11	Amount 103 109	1.5 mL
+T12	Modifier 113 124	prefiltered
+T13	Reagent 125 140	seawater sample
+T14	Amount 146 150	2 mL
+T15	Location 151 159	cryotube
+T16	Reagent 166 170	DMSO
+T17	Reagent 177 185	Pluronic
+T18	Time 216 222	10 min
+T19	Location 241 261	liquid nitrogen tank
+R2	Setting Arg1:E6 Arg2:T18	
+R3	Mod-Link Arg1:T13 Arg2:T12	
+R4	Measure Arg1:T13 Arg2:T11	
+R5	Measure Arg1:T15 Arg2:T14	
+T20	Method 0 8	Fixation
+T21	Reagent 12 26	marine samples
+T22	Action 31 53	flow cytometry sorting
+E8	Action:T22 
+T23	Modifier 187 198	facultative
+R6	Mod-Link Arg1:T17 Arg2:T23	

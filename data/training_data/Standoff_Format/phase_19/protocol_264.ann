@@ -1,0 +1,144 @@
+T1	Action 77 85	Incubate
+E1	Action:T1 Acts-on:T23 Using:T26
+T2	Action 146 149	Add
+E2	Action:T2 Acts-on:T28
+T3	Action 176 185	incubated
+E3	Action:T3 Product:T28
+T4	Action 207 212	Bring
+E4	Action:T4 Measure-Type-Link:T34 Using:T33
+T5	Action 287 290	Add
+E5	Action:T5 Acts-on:T36
+T6	Action 426 433	Pipette
+E6	Action:T6 
+T7	Action 437 440	mix
+E7	Action:T7 Count:T37
+T8	Action 450 458	Incubate
+E8	Action:T8 
+T9	Action 492 497	Place
+E9	Action:T9 Site:T40
+T10	Action 525 532	Discard
+E10	Action:T10 Acts-on:T42
+T11	Action 554 557	Add
+E11	Action:T11 Acts-on:T45
+T12	Action 576 580	Wait
+E12	Action:T12 
+T13	Action 588 594	Remove
+E13	Action:T13 Acts-on:T47
+T14	Action 610 613	Add
+E14	Action:T14 Acts-on:T50
+T15	Action 632 636	Wait
+E15	Action:T15 
+T16	Action 657 664	Air dry
+E16	Action:T16 
+T17	Action 728 733	Elute
+E17	Action:T17 Acts-on:T56
+T18	Action 756 763	Pipette
+E18	Action:T18 Count:T58 Acts-on:T87
+T19	Action 778 786	Incubate
+E19	Action:T19 
+T20	Action 819 824	Place
+E20	Action:T20 Site:T61
+T21	Action 852 856	Keep
+E21	Action:T21 Acts-on:T63
+T22	Action 870 878	Transfer
+E22	Action:T22 Site:T64
+T23	Reagent 86 103	transcription mix
+T24	Time 108 117	~18 hours
+T25	Temperature 121 124	37˚
+T26	Device 130 143	thermalcycler
+R1	Setting Arg1:E1 Arg2:T24	
+R2	Setting Arg1:E1 Arg2:T25	
+T27	Amount 150 154	1 µl
+T28	Reagent 158 174	RNase-free DNase
+R3	Measure Arg1:T28 Arg2:T27	
+T29	Time 186 192	20 min
+T30	Temperature 194 203	room Temp
+R4	Setting Arg1:E3 Arg2:T29	
+R5	Setting Arg1:E3 Arg2:T30	
+T31	Amount 223 229	150 uL
+T32	Concentration 235 239	100%
+T33	Reagent 240 244	EtOH
+R6	Measure Arg1:T33 Arg2:T32	
+R7	Setting Arg1:E4 Arg2:T31	
+T34	Measure-Type 213 219	volume
+T35	Concentration 291 293	5X
+T36	Reagent 294 298	SPRI
+T37	Numerical 441 443	10
+T38	Time 459 468	5 minutes
+R8	Setting Arg1:E8 Arg2:T38	
+T39	Temperature 472 488	room temperature
+R9	Setting Arg1:E8 Arg2:T39	
+T40	Device 501 515	magnetic stand
+T41	Time 517 522	5 min
+R10	Setting Arg1:E9 Arg2:T41	
+T42	Reagent 533 544	supernatant
+T43	Amount 558 564	200 uL
+T44	Concentration 566 569	80%
+T45	Reagent 570 574	EtOH
+R11	Measure Arg1:T45 Arg2:T44	
+R12	Measure Arg1:T45 Arg2:T43	
+T46	Time 581 586	2 min
+R13	Setting Arg1:E12 Arg2:T46	
+T47	Reagent 595 599	EtOH
+T48	Amount 614 620	200 uL
+T49	Concentration 622 625	80%
+T50	Reagent 626 630	EtOH
+R14	Measure Arg1:T50 Arg2:T49	
+R15	Measure Arg1:T50 Arg2:T48	
+T51	Time 637 642	2 min
+R16	Setting Arg1:E15 Arg2:T51	
+T52	Action 644 650	Remove
+E23	Action:T52 Acts-on:T53
+T53	Reagent 651 655	EtOH
+T54	Time 665 673	5-10 min
+T55	Amount 734 739	20 uL
+T56	Reagent 743 748	water
+T57	Reagent 752 754	TE
+R17	Or Arg1:T56 Arg2:T57	
+R18	Measure Arg1:T56 Arg2:T55	
+T58	Numerical 768 770	10
+T59	Time 787 796	2 minutes
+T60	Temperature 800 816	room temperature
+R19	Setting Arg1:E19 Arg2:T59	
+R20	Setting Arg1:E19 Arg2:T60	
+T61	Device 828 842	magnetic stand
+T62	Time 844 849	5 min
+R21	Setting Arg1:E20 Arg2:T62	
+T63	Reagent 857 868	Supernatant
+T64	Location 888 893	plate
+T65	Location 896 901	tubes
+R22	Or Arg1:T64 Arg2:T65	
+T66	Modifier 884 887	new
+R23	Mod-Link Arg1:T64 Arg2:T66	
+R24	Mod-Link Arg1:T65 Arg2:T66	
+T67	Method 0 22	In vitro transcription
+T68	Reagent 32 36	RNAs
+T69	Method 40 51	PCR cleanup
+T70	Reagent 268 283	small fragments
+T71	Reagent 316 330	SeraPure beads
+T72	Modifier 307 315	homemade
+R25	Mod-Link Arg1:T71 Arg2:T72	
+T73	Action 257 264	binding
+E24	Action:T73 Acts-on:T70
+T74	Reagent 335 338	RNA
+T75	Action 339 346	binding
+E25	Action:T75 Acts-on:T74
+T76	Reagent 354 363	IVT sgRNA
+T77	Amount 367 372	50 uL
+T78	Reagent 376 386	SPRI Beads
+T79	Reagent 392 401	IVT sgRNA
+T80	Amount 405 411	100 uL
+T81	Reagent 412 422	SPRI Beads
+R26	Measure Arg1:T36 Arg2:T35	
+R27	Measure Arg1:T78 Arg2:T77	
+R28	Measure Arg1:T81 Arg2:T80	
+T82	Action 547 551	Wash
+E26	Action:T82 
+T83	Action 601 605	Wash
+E27	Action:T83 
+T84	Reagent 675 681	pellet
+T85	Modifier 701 711	glossy/wet
+T86	Modifier 715 724	matte/dry
+R29	Mod-Link Arg1:T84 Arg2:T85	
+R30	Mod-Link Arg1:T84 Arg2:T86	
+T87	Reagent 764 767	mix

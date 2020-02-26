@@ -1,0 +1,203 @@
+T1	Action 46 53	Prepare
+E1	Action:T1 Product:T3
+T2	Modifier 56 62	single
+T3	Reagent 63 78	cell suspension
+T4	Action 83 92	resuspend
+E2	Action:T4 Acts-on:T5 Using:T7
+T5	Reagent 97 102	cells
+T6	Modifier 108 116	ice cold
+T7	Reagent 117 139	cell separation buffer
+T8	Action 171 175	Pass
+E3	Action:T8 Acts-on:T9 Site:T11
+T9	Reagent 180 185	cells
+T10	Size 196 201	70 μm
+T11	Device 202 208	filter
+T12	Action 210 220	centrifuge
+E4	Action:T12 
+T13	Action 246 253	discard
+E5	Action:T13 Acts-on:T14
+T14	Reagent 258 269	supernatant
+T15	Action 274 283	resuspend
+E6	Action:T15 Acts-on:T16 Using:T17
+T16	Reagent 288 293	cells
+T17	Reagent 297 319	cell separation buffer
+T18	Action 321 327	Adjust
+E7	Action:T18 Measure-Type-Link:T19
+T19	Measure-Type 332 350	cell concentration
+T20	Generic-Measure 354 370	1 x 108 cells/mL
+T21	Action 372 379	Aliquot
+E8	Action:T21 Site:T24 Acts-on:T92
+T22	Amount 380 386	100 μL
+T23	Modifier 406 409	new
+T24	Location 410 414	tube
+T25	Action 416 419	Add
+E9	Action:T25 Acts-on:T28
+T26	Amount 420 425	10 μL
+T27	Modifier 433 444	pre-diluted
+T28	Reagent 445 469	Biotin-Antibody Cocktail
+T29	Action 471 474	mix
+E10	Action:T29 
+T30	Modifier 475 479	well
+T31	Action 484 492	incubate
+E11	Action:T31 Acts-on:T32
+T32	Location 496 499	ice
+T33	Time 504 514	15 minutes
+T38	Action 575 578	add
+E13	Action:T38 Acts-on:T35
+T39	Amount 579 585	100 μL
+T34	Modifier 589 600	pre-diluted
+T35	Reagent 601 618	antibody cocktail
+T36	Amount 651 654	1ml
+T37	Reagent 658 664	buffer
+T40	Action 741 744	Add
+E12	Action:T40 Acts-on:T41
+T41	Reagent 745 767	cell separation buffer
+T42	Amount 774 778	4 mL
+T43	Action 780 790	centrifuge
+E14	Action:T43 Acts-on:T44
+T44	Reagent 795 800	cells
+T45	Speed 804 811	300 x g
+T46	Time 816 825	5 minutes
+T47	Action 827 834	Discard
+E15	Action:T47 Acts-on:T48
+T48	Reagent 835 846	supernatant
+T49	Action 851 860	resuspend
+E16	Action:T49 Site:T51 Acts-on:T48
+T50	Amount 864 870	100 μL
+T51	Reagent 874 880	buffer
+T52	Action 882 888	Vortex
+E17	Action:T52 Acts-on:T54
+T53	Modifier 893 916	Streptavidin conjugated
+T54	Reagent 917 926	Nanobeads
+T55	Speed 945 954	max speed
+T56	Generic-Measure 956 965	5 touches
+T57	Action 971 978	prepare
+E18	Action:T57 Product:T58
+T58	Reagent 983 992	dilutions
+T59	Action 1002 1005	Add
+E19	Action:T59 Acts-on:T62
+T60	Amount 1006 1011	10 μL
+T61	Modifier 1015 1026	pre-diluted
+T62	Reagent 1027 1049	Streptavidin Nanobeads
+T63	Action 1051 1054	Mix
+E20	Action:T63 
+T64	Modifier 1055 1059	well
+T65	Action 1064 1072	incubate
+E21	Action:T65 Acts-on:T66
+T66	Location 1076 1079	ice
+T67	Time 1084 1094	15 minutes
+T68	Action 1167 1170	add
+E22	Action:T68 Acts-on:T71
+T69	Amount 1171 1177	100 μL
+T70	Modifier 1181 1192	pre-diluted
+T71	Reagent 1193 1202	Nanobeads
+T72	Action 1207 1217	separating
+E23	Action:T72 Acts-on:T74 Site:T76
+T73	Generic-Measure 1218 1225	1 x 108
+T74	Reagent 1226 1231	cells
+T75	Amount 1235 1238	1ml
+T76	Reagent 1242 1248	buffer
+T77	Action 1464 1472	maximize
+E24	Action:T77 
+T78	Action 1488 1495	disrupt
+E25	Action:T78 Acts-on:T79
+T79	Reagent 1500 1510	aggregates
+T80	Action 1514 1523	pipetting
+E26	Action:T80 Acts-on:T81 Using:T82
+T81	Reagent 1528 1536	solution
+T82	Method 1537 1548	up and down
+T83	Action 1550 1559	Resuspend
+E27	Action:T83 Acts-on:T84 Site:T87
+T84	Reagent 1564 1569	cells
+T85	Modifier 1573 1584	appropriate
+T86	Amount 1585 1591	amount
+T87	Reagent 1595 1601	buffer
+R1	Mod-Link Arg1:T3 Arg2:T2	
+R2	Mod-Link Arg1:T7 Arg2:T6	
+R3	Setting Arg1:T11 Arg2:T10	
+T90	Speed 222 229	300 x g
+T91	Time 234 243	5 minutes
+R4	Setting Arg1:E4 Arg2:T90	
+R5	Setting Arg1:E4 Arg2:T91	
+R6	Setting Arg1:E7 Arg2:T20	
+R7	Mod-Link Arg1:T24 Arg2:T23	
+T92	Reagent 392 397	cells
+T93	Numerical 388 391	107
+R8	Measure Arg1:T92 Arg2:T93	
+R9	Or Arg1:T93 Arg2:T22	
+R10	Mod-Link Arg1:T28 Arg2:T27	
+R11	Measure Arg1:T28 Arg2:T26	
+R12	Mod-Link Arg1:E10 Arg2:T30	
+R13	Setting Arg1:E11 Arg2:T33	
+R14	Mod-Link Arg1:T35 Arg2:T34	
+R15	Measure Arg1:T35 Arg2:T39	
+R16	Measure Arg1:T37 Arg2:T36	
+T94	Reagent 642 647	cells
+T95	Generic-Measure 634 641	1 x 108
+R17	Measure Arg1:T94 Arg2:T95	
+T96	Action 623 633	separating
+E29	Action:T96 Acts-on:T94 Site:T37
+T97	Modifier 768 773	up to
+R18	Mod-Link Arg1:T42 Arg2:T97	
+R19	Measure Arg1:T41 Arg2:T42	
+R20	Setting Arg1:E14 Arg2:T45	
+R21	Setting Arg1:E14 Arg2:T46	
+R22	Measure Arg1:T51 Arg2:T50	
+R23	Mod-Link Arg1:T54 Arg2:T53	
+R24	Setting Arg1:E17 Arg2:T55	
+R25	Setting Arg1:E17 Arg2:T56	
+R26	Mod-Link Arg1:T62 Arg2:T61	
+R27	Measure Arg1:T62 Arg2:T60	
+R28	Mod-Link Arg1:E20 Arg2:T64	
+R29	Setting Arg1:E21 Arg2:T67	
+R30	Mod-Link Arg1:T71 Arg2:T70	
+R31	Measure Arg1:T71 Arg2:T69	
+R32	Measure Arg1:T74 Arg2:T73	
+R33	Measure Arg1:T76 Arg2:T75	
+R34	Measure Arg1:T87 Arg2:T86	
+R35	Mod-Link Arg1:T86 Arg2:T85	
+T88	Method 0 36	MojoSort™ Negative Selection Columns
+T89	Reagent 141 156	MojoSort™buffer
+T98	Action 516 524	Scale up
+E28	Action:T98 Measure-Type-Link:T99
+T99	Measure-Type 529 535	volume
+T100	Action 539 549	separating
+E30	Action:T100 Acts-on:T101
+T101	Reagent 555 560	cells
+T102	Numerical 693 696	107
+T103	Reagent 697 702	cells
+R36	Measure Arg1:T103 Arg2:T102	
+T104	Measure-Type 718 725	volumes
+T105	Numerical 730 733	107
+T106	Reagent 734 739	cells
+R37	Measure Arg1:T106 Arg2:T105	
+T107	Action 1096 1104	Scale up
+E31	Action:T107 Measure-Type-Link:T108
+T108	Measure-Type 1109 1115	volume
+T109	Action 1131 1141	separating
+E32	Action:T109 Acts-on:T110
+T110	Reagent 1147 1152	cells
+T111	Modifier 1268 1277	less than
+T112	Numerical 1278 1281	107
+T113	Reagent 1282 1287	cells
+R38	Measure Arg1:T113 Arg2:T112	
+R39	Mod-Link Arg1:T112 Arg2:T111	
+T114	Measure-Type 1302 1309	volumes
+T115	Numerical 1314 1317	107
+T116	Reagent 1318 1323	cells
+R40	Measure Arg1:T116 Arg2:T115	
+T117	Device 1348 1361	isolation kit
+T118	Action 1379 1383	wash
+E33	Action:T118 
+T119	Action 1418 1425	observe
+E34	Action:T119 Acts-on:T120
+T120	Reagent 1426 1436	aggregates
+T121	Action 1438 1444	filter
+E35	Action:T121 Acts-on:T122
+T122	Reagent 1449 1459	suspension
+T123	Modifier 1603 1611	At least
+T124	Amount 1612 1618	500 μL
+R41	Mod-Link Arg1:T124 Arg2:T123	
+T125	Method 1633 1650	column separation
+T126	Location 1708 1715	columns
+T127	Location 1827 1833	column

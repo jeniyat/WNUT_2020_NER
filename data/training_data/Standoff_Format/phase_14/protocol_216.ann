@@ -1,0 +1,73 @@
+T1	Action 20 25	Place
+E1	Action:T1 Acts-on:T13 Site:T14
+T2	Action 56 60	Wrap
+E2	Action:T2 Acts-on:T15 Using:T16
+T3	Action 80 85	place
+E3	Action:T3 Acts-on:T17 Site:T18
+T4	Action 120 125	Place
+E4	Action:T4 Acts-on:T19 Site:T20
+T5	Action 162 167	Place
+E5	Action:T5 Acts-on:T23 Site:T22
+T6	Action 203 208	Bring
+E6	Action:T6 Site:T21
+T7	Action 223 231	Fill out
+E7	Action:T7 
+T8	Action 514 519	Close
+E8	Action:T8 Acts-on:T29
+T9	Action 538 546	pressing
+E9	Action:T9 Acts-on:T30
+T10	Action 555 561	Select
+E10	Action:T10 
+T11	Action 618 623	Press
+E11	Action:T11 Acts-on:T39
+T12	Action 641 645	wait
+E12	Action:T12 
+T13	Location 26 36	reservoirs
+T14	Location 40 54	autoclave bags
+T15	Location 61 67	plates
+T16	Device 71 75	foil
+T17	Seal 86 111	a piece of autoclave tape
+T18	Location 112 118	on top
+R1	Meronym Arg1:T18 Arg2:T15	
+T19	Seal 126 140	autoclave tape
+T20	Location 144 159	pipet tip boxes
+T21	Device 212 221	autoclave
+T22	Location 181 201	beige autoclave tray
+T23	Reagent 168 177	all items
+T24	Action 344 349	place
+E13	Action:T24 Acts-on:T25 Site:T27
+T25	Location 350 354	tray
+T26	Reagent 360 365	items
+T27	Location 373 379	middle
+T28	Location 387 396	autoclave
+R2	Meronym Arg1:T26 Arg2:T25	
+R3	Meronym Arg1:T27 Arg2:T28	
+T29	Seal 520 534	autoclave door
+T30	Device 547 553	button
+T31	Action 416 420	fill
+E14	Action:T31 Acts-on:T32 Using:T33
+T32	Location 421 443	large Erlenmeyer flask
+T33	Reagent 449 457	DI water
+T34	Action 465 466	c
+E15	Action:T34 Site:T35
+T35	Device 475 484	autoclave
+T36	Device 490 496	sensor
+T37	Action 497 503	placed
+E16	Action:T37 Acts-on:T36 Site:T38
+T38	Location 507 512	flask
+T39	Device 624 636	Start button
+T40	Action 8 19	Autoclaving
+E17	Action:T40 
+T41	Device 251 260	autoclave
+T42	Measure-Type 281 285	Time
+T43	Device 291 300	autoclave
+T44	Action 309 317	pressing
+E18	Action:T44 Acts-on:T45
+T45	Device 318 324	button
+T46	Device 334 343	autoclave
+T47	Modifier 330 333	dry
+R4	Mod-Link Arg1:T46 Arg2:T47	
+T48	Modifier 402 405	wet
+T49	Device 406 415	autoclave
+R5	Mod-Link Arg1:T49 Arg2:T48	
+T50	Device 568 577	autoclave

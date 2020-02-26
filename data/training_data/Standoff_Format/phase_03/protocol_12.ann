@@ -1,0 +1,69 @@
+T1	Action 16 23	Prepare
+E1	Action:T1 Product:T3
+T2	Concentration 24 29	0.5 M
+T3	Reagent 30 34	EDTA
+R1	Measure Arg1:T3 Arg2:T2
+T4	Action 36 43	Prepare
+E2	Action:T4 Product:T6
+T5	Concentration 44 47	1 M
+T6	Reagent 48 62	Sodium citrate
+R2	Measure Arg1:T6 Arg2:T5
+T7	Amount 69 70	2
+T8	Amount 74 77	3 L
+T9	Location 78 83	flask
+T10	Action 84 87	mix
+E3	Action:T10 Site:T9 Acts-on:T12 Acts-on2:T15 Acts-on3:T18
+T11	Amount 88 96	1,400 mL
+T12	Reagent 97 109	MilliQ water
+T13	Amount 115 120	60 mL
+T14	Concentration 121 125	0.5M
+T15	Reagent 126 130	EDTA
+T16	Amount 135 142	37.5 mL
+T17	Concentration 143 145	1M
+T18	Reagent 146 160	sodium citrate
+T19	Action 166 174	stirring
+E4	Action:T19 
+T20	Action 215 218	add
+E5	Action:T20 Acts-on:T22 Using:T23
+T21	Amount 219 226	1.05 kg
+T22	Reagent 239 255	Ammonium sulfate
+T23	Method 259 272	100 g amounts
+T24	Amount 228 237	= 1,050 g
+T25	Action 274 278	Stir
+E6	Action:T25 Site:T27
+T26	Time 279 286	~30 min
+T27	Location 290 299	hot plate
+T28	Temperature 307 310	low
+R12	Setting Arg1:E6 Arg2:T26
+R13	Setting Arg1:E6 Arg2:T28
+T29	Action 330 334	cool
+E7	Action:T29 Acts-on:T31
+T30	Temperature 338 354	room temperature
+T31	Reagent 318 326	solution
+T32	Time 368 373	30min
+R14	Setting Arg1:E7 Arg2:T30
+R15	Setting Arg1:E7 Arg2:T32
+T33	Action 407 413	Filter
+E8	Action:T33 Acts-on:T34 Using:T36
+T34	Reagent 414 422	solution
+T36	Device 438 444	filter
+T37	Action 466 471	Store
+E9	Action:T37 
+T38	Temperature 475 484	room temp
+T39	Temperature 491 494	4°C
+R16	Setting Arg1:E9 Arg2:T38
+R3	Measure Arg1:T9 Arg2:T8	
+R4	Or Arg1:T8 Arg2:T7	
+R5	Measure Arg1:T18 Arg2:T17	
+R6	Measure Arg1:T18 Arg2:T16	
+R7	Measure Arg1:T15 Arg2:T14	
+R8	Measure Arg1:T15 Arg2:T13	
+R9	Measure Arg1:T12 Arg2:T11	
+R10	Measure Arg1:T22 Arg2:T24	
+R11	Or Arg1:T24 Arg2:T21	
+T35	Modifier 359 367	at least
+R18	Mod-Link Arg1:T32 Arg2:T35	
+T40	Size 431 437	0.2 μm
+R19	Measure Arg1:T36 Arg2:T40	
+R17	Or Arg1:T38 Arg2:T39	
+T41	Reagent 0 3	RNA

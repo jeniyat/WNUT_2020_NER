@@ -1,0 +1,200 @@
+T1	Action 39 43	Grow
+E1	Action:T1 Acts-on:T28 Site:T29
+T2	Action 106 109	add
+E2	Action:T2 Acts-on:T33 Site:T35
+T3	Action 271 276	Rinse
+E3	Action:T3 Acts-on:T43 Site:T45
+T4	Action 299 302	Fix
+E4	Action:T4 Acts-on:T46 Using:T47 Using2:T49
+T5	Action 388 393	Rinse
+E5	Action:T5 Acts-on:T53
+T6	Action 418 423	Rinse
+E6	Action:T6 Acts-on:T55
+T7	Action 448 453	Rinse
+E7	Action:T7 Acts-on:T57
+T8	Action 478 481	Add
+E8	Action:T8 Acts-on:T60 Site:T61
+T9	Action 511 519	incubate
+E9	Action:T9 
+T10	Action 563 568	Rinse
+E10	Action:T10 Acts-on:T64
+T11	Action 593 598	Rinse
+E11	Action:T11 Acts-on:T66
+T12	Action 623 628	Rinse
+E12	Action:T12 Acts-on:T68
+T13	Action 653 658	Block
+E13	Action:T13 Acts-on:T70 Using:T72 Site:T73
+T14	Action 718 724	Dilute
+E14	Action:T14 Acts-on:T76 Using:T80
+T15	Action 803 806	Add
+E15	Action:T15 Acts-on:T83 Site:T84
+T16	Action 859 867	incubate
+E16	Action:T16 
+T17	Action 928 933	Rinse
+E17	Action:T17 Acts-on:T89
+T18	Action 958 963	Rinse
+E18	Action:T18 Acts-on:T90
+T19	Action 988 993	Rinse
+E19	Action:T19 Acts-on:T91
+T20	Action 1018 1025	Prepare
+E20	Action:T20 Acts-on:T96 Site:T98
+T21	Action 1155 1158	add
+E21	Action:T21 Acts-on:T102 Site:T103
+T22	Action 1208 1216	Incubate
+E22	Action:T22 Acts-on:T104 Site:T107
+T23	Action 1272 1277	Rinse
+E23	Action:T23 Acts-on:T108
+T24	Action 1302 1307	Rinse
+E24	Action:T24 Acts-on:T110
+T25	Action 1332 1337	Rinse
+E25	Action:T25 Acts-on:T112
+T26	Action 1404 1408	Seal
+E26	Action:T26 Acts-on:T115 Using:T116
+T27	Action 1362 1371	Coverslip
+E27	Action:T27 Acts-on:T114
+T28	Reagent 44 58	cultured cells
+T29	Location 62 73	cover slips
+T30	Location 77 91	chamber slides
+T31	Time 92 101	overnight
+T32	Modifier 110 121	appropriate
+T33	Reagent 132 137	cells
+T34	Modifier 141 161	poly-L-lysine coated
+T35	Location 162 176	chamber slides
+T36	Action 181 189	incubate
+E28	Action:T36 Product:T41
+T37	Modifier 190 198	at least
+T38	Time 199 205	30 min
+T39	Temperature 209 213	37°C
+R1	Or Arg1:T29 Arg2:T30	
+R2	Setting Arg1:E1 Arg2:T31	
+T40	Amount 122 128	amount
+R3	Mod-Link Arg1:T40 Arg2:T32	
+R4	Measure Arg1:T33 Arg2:T40	
+R5	Mod-Link Arg1:T35 Arg2:T34	
+R6	Mod-Link Arg1:T38 Arg2:T37	
+R7	Setting Arg1:E28 Arg2:T38	
+R8	Setting Arg1:E28 Arg2:T39	
+T41	Reagent 230 244	fixation cells
+T42	Generic-Measure 256 269	50% confluent
+R9	Measure Arg1:T41 Arg2:T42	
+T43	Reagent 277 282	cells
+T44	Modifier 283 290	briefly
+T45	Reagent 294 297	PBS
+R10	Mod-Link Arg1:T43 Arg2:T44	
+T46	Reagent 303 308	cells
+T48	Concentration 328 330	4%
+T49	Reagent 331 347	Paraformaldehyde
+T50	Reagent 352 355	PBS
+T51	Time 360 366	15 min
+T52	Temperature 370 386	room temperature
+R11	Measure Arg1:T49 Arg2:T48	
+T53	Reagent 397 400	PBS
+T54	Time 405 410	5 min
+R14	Setting Arg1:E5 Arg2:T54	
+T55	Reagent 427 430	PBS
+T56	Time 435 440	5 min
+R15	Setting Arg1:E6 Arg2:T56	
+T57	Reagent 457 460	PBS
+T58	Time 465 470	5 min
+R16	Setting Arg1:E7 Arg2:T58	
+T59	Concentration 482 486	0.5%
+T60	Reagent 487 499	Triton X-100
+T61	Reagent 503 506	PBS
+T62	Temperature 523 539	room temperature
+T63	Time 544 561	three to five min
+R17	Setting Arg1:E9 Arg2:T62	
+R18	Setting Arg1:E9 Arg2:T63	
+R19	Measure Arg1:T60 Arg2:T59	
+T64	Reagent 572 575	PBS
+T65	Time 580 585	5 min
+R20	Setting Arg1:E10 Arg2:T65	
+T66	Reagent 602 605	PBS
+T67	Time 610 615	5 min
+R21	Setting Arg1:E11 Arg2:T67	
+T68	Reagent 632 635	PBS
+T69	Time 640 645	5 min
+R22	Setting Arg1:E12 Arg2:T69	
+T70	Reagent 659 666	samples
+T71	Concentration 670 672	5%
+T72	Reagent 673 676	FBS
+T73	Reagent 680 683	PBS
+T74	Temperature 687 703	room temperature
+T75	Time 708 716	one hour
+R23	Measure Arg1:T72 Arg2:T71	
+R24	Setting Arg1:E13 Arg2:T74	
+R25	Setting Arg1:E13 Arg2:T75	
+T76	Reagent 729 745	primary antibody
+T77	Modifier 753 764	recommended
+T78	Concentration 765 787	concentration/dilution
+T79	Concentration 791 793	5%
+T80	Reagent 794 801	FBS/PBS
+R26	Mod-Link Arg1:T78 Arg2:T77	
+R27	Setting Arg1:E14 Arg2:T78	
+R28	Measure Arg1:T80 Arg2:T79	
+T81	Amount 807 813	200 µl
+T82	Modifier 814 817	per
+T83	Location 818 822	well
+T84	Location 840 854	chamber slides
+T85	Time 868 886	two to three hours
+T86	Temperature 890 906	room temperature
+T87	Time 910 919	overnight
+T88	Temperature 923 926	4°C
+R29	Mod-Link Arg1:T83 Arg2:T82	
+R30	Measure Arg1:T83 Arg2:T81	
+R31	Setting Arg1:E16 Arg2:T85	
+R32	Setting Arg1:E16 Arg2:T86	
+R33	Or Arg1:T85 Arg2:T87	
+R34	Or Arg1:T86 Arg2:T88	
+T89	Reagent 937 940	PBS
+T90	Reagent 967 970	PBS
+T91	Reagent 997 1000	PBS
+T92	Time 945 950	5 min
+T93	Time 975 980	5 min
+T94	Time 1005 1010	5 min
+R35	Setting Arg1:E17 Arg2:T92	
+R36	Setting Arg1:E18 Arg2:T93	
+R37	Setting Arg1:E19 Arg2:T94	
+T95	Modifier 1026 1049	fluorochrome-conjugated
+T96	Reagent 1050 1068	secondary antibody
+T97	Concentration 1072 1074	5%
+T98	Reagent 1075 1082	FBS/PBS
+T100	Amount 1159 1165	200 µl
+T101	Modifier 1166 1169	per
+T102	Location 1170 1174	well
+T103	Location 1192 1206	chamber slides
+R38	Measure Arg1:T98 Arg2:T97	
+R39	Mod-Link Arg1:T96 Arg2:T95	
+R40	Measure Arg1:T102 Arg2:T100	
+R41	Mod-Link Arg1:T102 Arg2:T101	
+T104	Reagent 1221 1228	samples
+T105	Time 1233 1236	1 h
+T106	Temperature 1241 1257	room temperature
+T107	Location 1266 1270	dark
+R42	Setting Arg1:E22 Arg2:T105	
+R43	Setting Arg1:E22 Arg2:T106	
+T108	Reagent 1281 1284	PBS
+T109	Time 1289 1294	5 min
+T110	Reagent 1311 1314	PBS
+T111	Time 1319 1324	5 min
+T112	Reagent 1341 1344	PBS
+T113	Time 1349 1354	5 min
+R44	Setting Arg1:E23 Arg2:T109	
+R45	Setting Arg1:E24 Arg2:T111	
+R46	Setting Arg1:E25 Arg2:T113	
+T114	Reagent 1387 1402	mounting medium
+T115	Location 1409 1415	slides
+T116	Seal 1421 1432	nail polish
+T117	Method 0 29	Immunofluorescence Microscopy
+T118	Modifier 255 256	~
+R47	Mod-Link Arg1:T42 Arg2:T118	
+T47	Method 312 322	incubation
+R12	Setting Arg1:E4 Arg2:T51	
+R13	Setting Arg1:E4 Arg2:T52	
+T119	Numerical 824 825	8
+T120	Location 826 831	wells
+R48	Measure Arg1:T120 Arg2:T119	
+T99	Numerical 1176 1177	8
+T121	Location 1178 1183	wells
+R49	Measure Arg1:T121 Arg2:T99	
+T122	Modifier 1377 1386	anti-fade
+R50	Mod-Link Arg1:T114 Arg2:T122	

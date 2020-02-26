@@ -1,0 +1,47 @@
+T1	Action 36 39	Add
+E1	Action:T1 Acts-on:T4
+T2	Amount 40 51	1/10 volume
+T3	Concentration 55 58	10X
+T4	Reagent 59 96	Antarctic Phosphatase Reaction Buffer
+T5	Amount 100 106	1-5 µg
+T6	Reagent 110 113	DNA
+T7	Reagent 123 151	any restriction endonuclease
+T8	Reagent 155 165	any buffer
+R1	Meronym Arg1:T7 Arg2:T8	
+R2	Measure Arg1:T6 Arg2:T5	
+T9	Action 114 117	cut
+E2	Action:T9 Using:T7 Product:T6
+R3	Measure Arg1:T4 Arg2:T3	
+R4	Measure Arg1:T4 Arg2:T2	
+T10	Action 167 170	Add
+E3	Action:T10 Acts-on:T12
+T11	Amount 171 175	1 µl
+T12	Reagent 179 200	Antarctic Phosphatase
+T13	Action 215 218	mix
+E4	Action:T13 
+R5	Measure Arg1:T12 Arg2:T11	
+T14	Action 220 228	Incubate
+E5	Action:T14 
+T15	Time 233 243	15 minutes
+T16	Temperature 247 251	37°C
+T17	Time 285 295	60 minutes
+R6	Setting Arg1:E5 Arg2:T15	
+R7	Setting Arg1:E5 Arg2:T16	
+R8	Or Arg1:T15 Arg2:T17	
+T18	Action 315 330	Heat inactivate
+E6	Action:T18 
+T19	Time 389 398	5 minutes
+T20	Temperature 402 406	70°C
+R9	Setting Arg1:E6 Arg2:T19	
+R10	Setting Arg1:E6 Arg2:T20	
+T21	Action 408 415	Proceed
+E7	Action:T21 Using:T27
+T22	Method 0 17	Dephosphorylation
+T23	Reagent 24 27	AnP
+T24	Generic-Measure 202 209	5 units
+T25	Action 350 360	inactivate
+E8	Action:T25 Acts-on:T26
+T26	Reagent 365 383	restriction enzyme
+T27	Method 421 429	ligation
+T28	Amount 256 258	5´
+T29	Amount 300 302	3´

@@ -1,0 +1,114 @@
+T1	Action 58 62	Thaw
+E1	Action:T1 Acts-on:T17
+T2	Action 113 122	Pre-chill
+E2	Action:T2 Acts-on:T23
+T3	Action 182 189	Pipette
+E3	Action:T3 Acts-on:T25 Acts-on2:T26
+T4	Action 242 245	Add
+E4	Action:T4 Acts-on:T28 Site:T31
+T5	Action 323 326	Mix
+E5	Action:T5 
+T6	Action 335 343	Incubate
+E6	Action:T6 Acts-on:T33
+T7	Action 373 383	Heat shock
+E7	Action:T7 Acts-on:T36
+T8	Action 414 419	Place
+E8	Action:T8 Acts-on:T39
+T9	Action 469 472	Add
+E9	Action:T9 Acts-on:T45 Site:T46
+T10	Action 511 519	incubate
+E10	Action:T10 
+T11	Action 540 548	Transfer
+E11	Action:T11 Acts-on:T49 Site:T51
+T12	Action 598 602	spin
+E12	Action:T12 
+T13	Action 626 632	Remove
+E13	Action:T13 Acts-on:T55
+T14	Action 663 672	resuspend
+E14	Action:T14 Acts-on:T56
+T15	Action 685 694	Plate out
+E15	Action:T15 Acts-on:T57 Site:T58
+T16	Action 768 776	Incubate
+E16	Action:T16 Acts-on:T60
+T17	Reagent 89 104	competent cells
+T18	Temperature 108 111	ice
+R1	Setting Arg1:E1 Arg2:T18	
+T20	Numerical 127 142	required number
+T21	Modifier 146 151	empty
+T22	Amount 152 158	1.5 ml
+T23	Location 159 180	microcentrifuge tubes
+R3	Measure Arg1:T23 Arg2:T22	
+R4	Mod-Link Arg1:T23 Arg2:T21	
+R5	Measure Arg1:T23 Arg2:T20	
+T24	Amount 190 195	50 µl
+T25	Reagent 208 213	cells
+R6	Measure Arg1:T25 Arg2:T24	
+T26	Location 235 240	tubes
+T27	Amount 246 253	5-10 µl
+T28	Reagent 259 280	ligation reaction mix
+R7	Measure Arg1:T28 Arg2:T27	
+T29	Amount 284 288	5 ng
+T30	Reagent 292 308	pure plasmid DNA
+T31	Location 317 321	tube
+R8	Or Arg1:T28 Arg2:T30	
+R9	Measure Arg1:T30 Arg2:T29	
+T32	Modifier 327 333	gently
+R10	Mod-Link Arg1:E5 Arg2:T32	
+T33	Location 348 353	tubes
+T34	Reagent 357 360	ice
+T35	Time 365 371	30 min
+R12	Setting Arg1:E6 Arg2:T35	
+T36	Reagent 388 393	cells
+T37	Time 398 404	45 sec
+T38	Temperature 408 412	42°C
+R13	Setting Arg1:E7 Arg2:T37	
+R14	Setting Arg1:E7 Arg2:T38	
+T39	Location 424 429	tubes
+T40	Modifier 430 441	immediately
+R15	Mod-Link Arg1:E8 Arg2:T40	
+T41	Temperature 445 448	ice
+T42	Modifier 453 461	at least
+T43	Time 462 467	2 min
+R16	Mod-Link Arg1:T43 Arg2:T42	
+R17	Setting Arg1:E8 Arg2:T41	
+R18	Setting Arg1:E8 Arg2:T43	
+T44	Amount 473 479	800 µl
+T45	Reagent 483 493	SOC medium
+T46	Location 502 506	tube
+T47	Time 524 530	1 hour
+T48	Temperature 534 538	37°C
+R19	Measure Arg1:T45 Arg2:T44	
+R20	Setting Arg1:E10 Arg2:T47	
+R21	Setting Arg1:E10 Arg2:T48	
+T49	Reagent 553 561	cultures
+T50	Amount 565 571	1.5 ml
+T51	Location 572 593	microcentrifuge tubes
+T52	Time 607 612	1 min
+T53	Speed 616 624	6000 rpm
+R22	Measure Arg1:T51 Arg2:T50	
+R23	Setting Arg1:E12 Arg2:T52	
+R24	Setting Arg1:E12 Arg2:T53	
+T54	Amount 633 639	800 µl
+T55	Reagent 647 658	supernatant
+R25	Measure Arg1:T55 Arg2:T54	
+T56	Reagent 677 683	pellet
+T57	Reagent 699 709	suspension
+T58	Location 715 728	LB agar plate
+T60	Location 781 787	plates
+T61	Time 788 797	overnight
+T62	Temperature 801 805	37°C
+R27	Setting Arg1:E16 Arg2:T61	
+R28	Setting Arg1:E16 Arg2:T62	
+T63	Method 0 14	Transformation
+T64	Modifier 18 27	competent
+T65	Reagent 28 40	E.coli cells
+T66	Modifier 46 53	plasmid
+T67	Reagent 54 57	DNA
+R29	Mod-Link Arg1:T67 Arg2:T66	
+R30	Mod-Link Arg1:T65 Arg2:T64	
+T19	Reagent 756 766	antibiotic
+R2	Meronym Arg1:T19 Arg2:T58	
+T59	Modifier 223 234	pre-chilled
+R26	Mod-Link Arg1:T26 Arg2:T59	
+T68	Reagent 196 204	aliquots
+R31	Meronym Arg1:T68 Arg2:T25	

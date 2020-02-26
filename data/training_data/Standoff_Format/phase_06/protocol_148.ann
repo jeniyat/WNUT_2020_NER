@@ -1,0 +1,178 @@
+T1	Action 125 134	Resuspend
+E1	Action:T1 Acts-on:T26 Site:T27
+T2	Action 194 204	centrifuge
+E2	Action:T2 
+T3	Action 303 340	perform cell surface antigen staining
+E3	Action:T3 
+T4	Action 425 428	fix
+E4	Action:T4 Acts-on:T31 Site:T33
+T5	Action 542 552	Centrifuge
+E5	Action:T5 
+T6	Action 579 586	discard
+E6	Action:T6 Acts-on:T39
+T7	Action 680 684	wash
+E7	Action:T7 Acts-on:T40 Count:T41 Using:T42
+T8	Action 748 757	Resuspend
+E8	Action:T8 Acts-on:T91 Site:T92
+T9	Action 792 797	store
+E9	Action:T9 Acts-on:T93
+T10	Action 931 937	Dilute
+E10	Action:T10 Acts-on:T44 Site:T46
+T11	Action 1019 1028	Resuspend
+E11	Action:T11 Acts-on:T47 Site:T48
+T12	Action 1088 1098	centrifuge
+E12	Action:T12 
+T13	Action 1134 1143	Resuspend
+E13	Action:T13 Acts-on:T51 Acts-on2:T53
+T14	Action 1226 1229	add
+E14	Action:T14 Acts-on:T55
+T15	Action 1494 1501	perform
+E15	Action:T15 Site:T60
+T16	Action 1616 1620	Wash
+E16	Action:T16 Using:T62
+T17	Action 1678 1688	centrifuge
+E17	Action:T17 
+T18	Action 1721 1725	Wash
+E18	Action:T18 Using:T66
+T19	Action 1783 1793	centrifuge
+E19	Action:T19 
+T20	Action 1826 1835	Resuspend
+E20	Action:T20 Acts-on:T69 Site:T71
+T21	Action 1911 1918	analyze
+E21	Action:T21 Using:T72
+T22	Action 1946 1955	Resuspend
+E22	Action:T22 Acts-on:T73 Site:T74
+T23	Action 2015 2025	centrifuge
+E23	Action:T23 
+T24	Action 2132 2152	Set quadrant markers
+E24	Action:T24 Using:T78
+T25	Action 2061 2093	Set PMT voltage and compensation
+E25	Action:T25 Using:T77
+T26	Reagent 135 146	fixed cells
+T27	Reagent 150 189	Intracellular Staining Perm Wash Buffer
+T28	Speed 208 215	350 x g
+T29	Time 220 232	5-10 minutes
+R1	Setting Arg1:E2 Arg2:T28	
+R2	Setting Arg1:E2 Arg2:T29	
+T31	Reagent 429 434	cells
+T32	Amount 438 449	0.5 ml/tube
+T33	Reagent 450 493	Fixation Buffer (BioLegend Cat. No. 420801)
+T34	Modifier 494 505	in the dark
+T35	Time 510 520	20 minutes
+T36	Temperature 524 540	room temperature
+R4	Measure Arg1:T33 Arg2:T32	
+R5	Mod-Link Arg1:E4 Arg2:T34	
+R6	Setting Arg1:E4 Arg2:T35	
+R7	Setting Arg1:E4 Arg2:T36	
+T37	Speed 556 563	350 x g
+T38	Time 568 577	5 minutes
+T39	Reagent 587 598	supernatant
+T40	Reagent 685 690	cells
+T41	Numerical 691 693	1x
+T42	Reagent 699 746	Cell StainingBuffer (BioLegend Cat. No. 420201)
+T43	Concentration 938 941	10X
+T44	Reagent 942 999	Intracellular Staining Perm Wash Buffer (Cat. No. 421002)
+T45	Concentration 1003 1005	1X
+T46	Reagent 1009 1017	DI water
+R8	Measure Arg1:T44 Arg2:T43	
+R9	Setting Arg1:E10 Arg2:T45	
+T47	Reagent 1029 1040	fixed cells
+T48	Reagent 1044 1083	Intracellular Staining Perm Wash Buffer
+T49	Speed 1102 1109	350 x g
+T50	Time 1114 1126	5-10 minutes
+T51	Reagent 1144 1169	fixed/permeabilized cells
+T52	Modifier 1173 1181	residual
+T53	Reagent 1182 1221	Intracellular Staining Perm Wash Buffer
+T54	Concentration 1230 1267	a predetermined optimum concentration
+T55	Reagent 1271 1335	fluorophore-conjugated antibody of interest (e.g. PE anti-IFN-γ)
+T56	Reagent 1339 1370	an appropriate negative control
+R10	Or Arg1:T55 Arg2:T56	
+R11	Mod-Link Arg1:T53 Arg2:T52	
+R12	Measure Arg1:T55 Arg2:T54	
+T57	Time 1375 1385	20 minutes
+T58	Modifier 1386 1397	in the dark
+T59	Temperature 1401 1417	room temperature
+R13	Setting Arg1:E14 Arg2:T57	
+R14	Mod-Link Arg1:E14 Arg2:T58	
+R15	Setting Arg1:E14 Arg2:T59	
+T60	Reagent 1575 1614	Intracellular Staining Perm Wash Buffer
+T61	Amount 1626 1630	2 ml
+T62	Reagent 1634 1673	Intracellular Staining Perm Wash Buffer
+T63	Speed 1692 1699	350 x g
+T64	Time 1704 1713	5 minutes
+R16	Measure Arg1:T62 Arg2:T61	
+R17	Setting Arg1:E17 Arg2:T63	
+R18	Setting Arg1:E17 Arg2:T64	
+T65	Amount 1731 1735	2 ml
+T66	Reagent 1739 1778	Intracellular Staining Perm Wash Buffer
+T67	Speed 1797 1804	350 x g
+T68	Time 1809 1818	5 minutes
+R19	Measure Arg1:T66 Arg2:T65	
+R20	Setting Arg1:E19 Arg2:T67	
+R21	Setting Arg1:E19 Arg2:T68	
+T69	Reagent 1836 1875	fixed and intracellularly labeled cells
+T70	Amount 1879 1885	0.5 ml
+T71	Reagent 1886 1906	Cell Staining Buffer
+T72	Reagent 1924 1944	appropriate controls
+R22	Measure Arg1:T71 Arg2:T70	
+T73	Reagent 1956 1967	fixed cells
+T74	Reagent 1971 2010	Intracellular Staining Perm Wash Buffer
+T75	Speed 2029 2036	350 x g
+T76	Time 2041 2053	5-10 minutes
+R23	Setting Arg1:E23 Arg2:T75	
+R24	Setting Arg1:E23 Arg2:T76	
+T77	Reagent 2100 2130	cell surface staining controls
+T78	Reagent 2162 2179	blocking controls
+T79	Reagent 2181 2197	isotype controls
+T80	Reagent 2202 2217	unstained cells
+R25	Or Arg1:T78 Arg2:T79	
+R26	Or Arg1:T79 Arg2:T80	
+T81	Method 0 37	Intracellular Flow Cytometry Staining
+T82	Method 56 65	Detection
+T83	Reagent 69 92	Intracellular Cytokines
+T84	Reagent 103 124	Intracellular Targets
+T85	Action 243 251	staining
+E26	Action:T85 Acts-on:T86
+T86	Reagent 252 274	intracellular antigens
+T87	Reagent 281 286	IFN-γ
+T88	Reagent 290 294	IL-4
+R27	Or Arg1:T87 Arg2:T88	
+T30	Method 369 409	Cell Surface Immunofluorescence Staining
+R3	Setting Arg1:E5 Arg2:T37	
+R28	Setting Arg1:E5 Arg2:T38	
+T89	Action 657 665	staining
+E27	Action:T89 
+T90	Method 670 678	analysis
+T91	Reagent 758 763	cells
+T92	Reagent 767 787	Cell Staining Buffer
+T93	Reagent 798 803	cells
+T94	Temperature 807 810	4°C
+R29	Setting Arg1:E9 Arg2:T94	
+T95	Concentration 830 833	90%
+T96	Reagent 834 837	FCS
+T97	Concentration 838 841	10%
+T98	Reagent 842 846	DMSO
+T99	Temperature 862 867	-80°C
+R30	Or Arg1:T94 Arg2:T99	
+R31	Measure Arg1:T96 Arg2:T95	
+R32	Measure Arg1:T98 Arg2:T97	
+T100	Modifier 884 889	fixed
+T101	Reagent 890 895	cells
+R33	Or Arg1:T92 Arg2:T96	
+R34	Or Arg1:T96 Arg2:T98	
+R35	Mod-Link Arg1:T101 Arg2:T100	
+T102	Action 904 928	surface antigen staining
+E28	Action:T102 
+R36	Setting Arg1:E12 Arg2:T49	
+R37	Setting Arg1:E12 Arg2:T50	
+T103	Modifier 1422 1429	primary
+T104	Reagent 1430 1452	intracellular antibody
+T105	Action 1456 1468	biotinylated
+E29	Action:T105 Acts-on:T104
+R38	Mod-Link Arg1:T104 Arg2:T103	
+T106	Modifier 1502 1524	fluorophore conjugated
+T107	Reagent 1525 1537	Streptavidin
+R39	Mod-Link Arg1:T107 Arg2:T106	
+T108	Method 1538 1549	incubations
+T109	Action 1565 1571	washes
+E30	Action:T109 Site:T60

@@ -1,0 +1,39 @@
+T1	Action 58 65	Dissect
+E1	Action:T1 Acts-on:T7 Site:T9
+T2	Action 131 136	Rinse
+E2	Action:T2 Count:T14 Using:T16
+T3	Action 156 161	Stain
+E3	Action:T3 Site:T18
+T4	Action 200 205	Rinse
+E4	Action:T4 Site:T20 Count:T19
+T5	Action 219 224	Mount
+E5	Action:T5 Site:T21
+T6	Action 241 246	image
+E6	Action:T6 
+T7	Reagent 66 73	tissues
+T8	Concentration 77 79	1X
+T9	Reagent 80 83	PBS
+T10	Action 88 91	fix
+E7	Action:T10 Site:T12 Acts-on:T7
+T11	Concentration 95 97	4%
+T12	Reagent 98 114	Paraformaldehyde
+T13	Time 119 129	20 minutes
+R1	Measure Arg1:T9 Arg2:T8	
+R2	Measure Arg1:T12 Arg2:T11	
+R3	Setting Arg1:E7 Arg2:T13	
+T14	Numerical 137 142	twice
+T15	Concentration 148 150	1X
+T16	Reagent 151 154	PBS
+R4	Measure Arg1:T16 Arg2:T15	
+T17	Time 166 176	20 minutes
+T18	Reagent 180 198	Oil Red O Solution
+R5	Setting Arg1:E3 Arg2:T17	
+T19	Numerical 206 208	2X
+T20	Reagent 212 217	water
+T21	Reagent 228 236	glycerol
+T22	Modifier 247 258	immediately
+R6	Mod-Link Arg1:E6 Arg2:T22	
+T23	Action 0 18	Oil Red O Staining
+E8	Action:T23 Acts-on:T24 Acts-on2:T25
+T24	Reagent 19 36	Drosophila Larval
+T25	Reagent 41 57	Prepupal Tissues
