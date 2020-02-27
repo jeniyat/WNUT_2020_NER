@@ -1,6 +1,6 @@
 The conll format:
 =================================================
-In `Conlll_Format` directory, there are multiple `*.txt` files.  Each `*.txt` file contains annotations for a protocol. Each line is in the following format:
+In `Conlll_Format` directory, there are multiple `phase_*` directories.  Each `phase_*` directory contains 10 protocols in the conll format. Each `*.txt` file contains annotations for one protocol. Each line is in the following format:
 
 			<word>+"\t"+<NE>
 
