@@ -1,4 +1,4 @@
-The standoff format:
+The conll format:
 =================================================
 In `Conlll_Format` directory, there are multiple `*.txt` files.  Each `*.txt` file contains annotations for a protocol. Each line is in the following format:
 
