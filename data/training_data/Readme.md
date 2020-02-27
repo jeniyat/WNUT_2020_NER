@@ -1,6 +1,15 @@
-Each `phase_*` directory contains 10 protocols in the standoff format.
+The standoff format:
+=================================================
+In `Conlll_Format` directory, there are multiple `*.txt` files.  Each `*.txt` file contains annotations for a protocol. Each line is in the following format:
 
-## The standoff format:
+			<word>+"\t"+<NE>
+
+The end of sentence is marked with an empty line.
+
+The standoff format:
+=================================================
+
+In `Standoff_Format` directory, there are multiple `phase_*` directories.  Each `phase_*` directory contains 10 protocols in the standoff format.
 
 Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
 
