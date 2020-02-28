@@ -1,0 +1,73 @@
+T1	Action 88 95	Prepare
+E1	Action:T1 Product:T9 Acts-on:T11 Acts-on2:T13
+T2	Action 180 187	prepare
+E2	Action:T2 Product:T16
+T3	Action 253 268	make a baseline
+E3	Action:T3 Acts-on:T14
+T4	Action 290 296	Expose
+E4	Action:T4 Acts-on:T20 Site:T22 Using:T24 Using2:T25
+T5	Action 409 416	measure
+T6	Action 504 509	Rinse
+E6	Action:T6 Acts-on:T29 Using:T30
+T7	Action 545 549	Flow
+E7	Action:T7 Acts-on:T31 Site:T33
+T8	Action 646 651	Rinse
+E8	Action:T8 Acts-on:T35 Using:T36
+T9	Reagent 98 119	Hepes Buffered Saline
+T10	Concentration 146 152	150 mM
+T11	Reagent 153 157	NaCl
+T12	Concentration 162 167	10 mM
+T13	Reagent 168 173	Hepes
+R1	Measure Arg1:T13 Arg2:T12	
+R2	Measure Arg1:T11 Arg2:T10	
+T15	Concentration 202 210	25 µg/ml
+T16	Reagent 211 223	streptavidin
+T17	Reagent 227 230	HBS
+R3	Measure Arg1:T16 Arg2:T15	
+R4	Meronym Arg1:T16 Arg2:T17	
+T14	Reagent 276 288	HBS solution
+T19	Modifier 301 309	modified
+T20	Device 310 317	sensors
+T21	Modifier 321 332	non-diluted
+T22	Reagent 333 351	Fetal Bovine Serum
+T23	Time 362 371	30-60 min
+T24	Method 378 395	static conditions
+T25	Device 399 404	QCM-D
+T26	Amount 421 427	amount
+R7	Mod-Link Arg1:T22 Arg2:T21	
+R8	Mod-Link Arg1:T20 Arg2:T19	
+R9	Setting Arg1:E4 Arg2:T23	
+T29	Device 514 521	sensors
+T30	Reagent 531 543	HBS solution
+T31	Reagent 554 575	streptavidin solution
+T32	Modifier 585 593	modified
+T33	Device 594 601	sensors
+T34	Generic-Measure 603 617	100-500 µl/min
+R10	Mod-Link Arg1:T33 Arg2:T32	
+R11	Measure Arg1:T31 Arg2:T34	
+T35	Device 656 663	sensors
+T36	Reagent 673 685	HBS solution
+T37	Action 0 13	Investigating
+E9	Action:T37 Acts-on:T39 Acts-on2:T40
+T38	Modifier 14 26	non-specific
+T39	Reagent 27 42	protein binding
+T40	Reagent 47 67	streptavidin binding
+T41	Action 74 87	QCM-D sensing
+E10	Action:T41 
+T42	Reagent 121 124	HBS
+T43	Reagent 126 134	solution
+R12	Coreference-Link Arg1:T42 Arg2:T9	
+R13	Mod-Link Arg1:T39 Arg2:T38	
+R14	Meronym Arg1:T11 Arg2:T9	
+R15	Meronym Arg1:T13 Arg2:T9	
+T44	Reagent 190 198	solution
+T45	Reagent 353 356	FBS
+R16	Coreference-Link Arg1:T45 Arg2:T22	
+T46	Reagent 440 444	FBS 
+T18	Action 238 251	QCM-D sensing
+E11	Action:T18 
+T47	Modifier 431 440	adsorbed 
+T48	Reagent 460 472	HBS baseline
+R17	Mod-Link Arg1:T46 Arg2:T47	
+T27	Modifier 635 644	saturated
+R5	Mod-Link Arg1:T31 Arg2:T27	

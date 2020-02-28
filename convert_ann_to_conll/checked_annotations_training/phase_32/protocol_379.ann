@@ -1,0 +1,140 @@
+T2	Action 127 134	running
+E2	Action:T2 Using:T20 Using2:T22
+T3	Action 356 360	load
+E3	Action:T3 Acts-on:T34 Site:T37 Using:T39
+T4	Action 459 464	Shift
+E4	Action:T4 Acts-on:T42 Site:T43
+T5	Action 494 497	tap
+E5	Action:T5 Acts-on:T44 Site:T45
+T6	Action 530 534	move
+E6	Action:T6 Acts-on:T46 Site:T47
+T7	Action 608 613	Bring
+E7	Action:T7 Acts-on:T48 Site:T49
+T8	Action 661 664	put
+E8	Action:T8 Acts-on:T50 Site:T52
+T9	Action 794 797	Tap
+E9	Action:T9 Acts-on:T57 Site:T58
+T10	Action 919 922	put
+E10	Action:T10 Acts-on2:T63 Site:T64
+T11	Action 990 999	calm down
+E11	Action:T11 
+T12	Action 1016 1022	Repeat
+E12	Action:T12 Using:T67
+T13	Action 1082 1088	Switch
+E13	Action:T13 Acts-on:T68 Using:T70
+T14	Action 1176 1182	repeat
+E14	Action:T14 Using:T73
+T15	Action 1242 1245	Put
+E15	Action:T15 Acts-on:T74 Site:T75
+T16	Action 1266 1271	count
+E16	Action:T16 Acts-on:T76 Site:T77 Site2:T78 Site3:T79
+T17	Action 1351 1364	anesthetizing
+E17	Action:T17 Acts-on:T80
+T18	Modifier 137 144	regular
+T19	Modifier 146 158	single-trial
+T20	Method 159 180	photoxasis experiment
+T21	Modifier 189 197	aversive
+T22	Reagent 198 206	stimulus
+T23	Action 211 218	collect
+E18	Action:T23 Acts-on:T24 Site:T27
+T24	Reagent 228 233	flies
+T25	Modifier 248 254	bright
+T26	Modifier 262 266	dark
+T27	Location 267 271	tube
+R1	Or Arg1:T25 Arg2:T26	
+R2	Mod-Link Arg1:T27 Arg2:T25	
+R3	Mod-Link Arg1:T22 Arg2:T21	
+T28	Modifier 181 188	without
+R4	Mod-Link Arg1:T22 Arg2:T28	
+T29	Action 279 286	placing
+E19	Action:T29 Acts-on:T30 Site:T32 Using:T40
+T30	Device 291 303	filter paper
+T31	Modifier 311 322	appropriate
+T32	Location 323 327	tube
+R5	Mod-Link Arg1:T32 Arg2:T31	
+T33	Modifier 365 373	selected
+T34	Reagent 374 379	flies
+T35	Numerical 388 390	50
+T36	Modifier 381 387	around
+T37	Location 401 414	entrance tube
+T38	Time 429 439	10 minutes
+T39	Method 444 457	dark adaption
+R6	Mod-Link Arg1:T34 Arg2:T33	
+R7	Measure Arg1:T34 Arg2:T35	
+R8	Or Arg1:T35 Arg2:T36	
+R9	Setting Arg1:E3 Arg2:T38	
+T40	Device 341 349	elevator
+T41	Modifier 350 354	down
+R10	Mod-Link Arg1:T40 Arg2:T41	
+T42	Device 469 477	elevator
+T44	Reagent 502 507	flies
+T45	Device 517 525	elevator
+T46	Mention 535 537	it
+T47	Location 545 560	middle position
+R11	Coreference-Link Arg1:T46 Arg2:T45	
+T48	Device 618 624	T-maze
+T49	Location 639 656	vertical position
+T50	Device 669 677	elevator
+T51	Reagent 687 692	flies
+T52	Location 705 709	down
+T43	Location 490 492	up
+T53	Modifier 478 489	all the way
+R12	Mod-Link Arg1:T43 Arg2:T53	
+T54	Modifier 625 629	back
+R13	Mod-Link Arg1:T49 Arg2:T54	
+R14	Meronym Arg1:T51 Arg2:T50	
+T55	Modifier 693 704	all the way
+R15	Mod-Link Arg1:T52 Arg2:T55	
+T56	Modifier 798 801	all
+T57	Reagent 806 811	flies
+T58	Location 821 825	tube
+T59	Modifier 832 847	doesn’t contain
+T60	Reagent 852 869	aversive stimulus
+R16	Mod-Link Arg1:T60 Arg2:T59	
+R17	Meronym Arg1:T60 Arg2:T58	
+R18	Mod-Link Arg1:T57 Arg2:T56	
+T61	Location 910 914	tube
+T62	Modifier 923 926	all
+T63	Reagent 931 936	flies
+T64	Location 944 957	entrance tube
+T65	Modifier 958 963	again
+R19	Mod-Link Arg1:E10 Arg2:T65	
+R20	Mod-Link Arg1:T63 Arg2:T62	
+R21	Meronym Arg1:T63 Arg2:T61	
+T66	Time 1004 1014	15 seconds
+R22	Setting Arg1:E11 Arg2:T66	
+T67	Method 1028 1051	Bright/dark tube choice
+T68	Location 1093 1097	tube
+T69	Reagent 1117 1134	aversive stimulus
+T70	Location 1142 1146	tube
+T71	Modifier 1147 1158	without any
+T72	Device 1159 1171	filter paper
+T73	Method 1188 1211	Bright/dark tube choice
+R23	Meronym Arg1:T69 Arg2:T68	
+R24	Mod-Link Arg1:T72 Arg2:T71	
+R25	Meronym Arg1:T72 Arg2:T70	
+T74	Device 1250 1258	elevator
+T75	Location 1259 1261	up
+T76	Reagent 1276 1281	flies
+T77	Location 1289 1302	entrance tube
+T78	Location 1308 1324	transparent tube
+T79	Location 1333 1344	opaque tube
+T80	Mention 1365 1369	them
+R26	Coreference-Link Arg1:T80 Arg2:T76	
+T81	Reagent 0 10	Phototaxis
+T82	Method 11 22	suppression
+T83	Modifier 51 78	photopositive/photonegative
+T84	Reagent 79 84	flies
+R27	Mod-Link Arg1:T84 Arg2:T83	
+T85	Location 574 587	entrance tube
+T86	Location 596 605	dark tube
+T87	Reagent 723 728	flies
+T88	Location 748 759	bright tube
+T89	Location 768 777	dark tube
+T90	Time 782 792	30 seconds
+T91	Device 875 883	elevator
+T92	Mention 985 989	them
+T93	Mention 424 428	them
+R28	Coreference-Link Arg1:T93 Arg2:T34	
+T1	Action 111 123	preselection
+E1	Action:T1 

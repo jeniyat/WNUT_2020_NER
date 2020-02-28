@@ -1,0 +1,97 @@
+T1	Action 174 178	pick
+E1	Action:T1 Using:T8 Acts-on:T25
+T2	Action 31 36	Plate
+E2	Action:T2 Product:T19
+T4	Action 500 507	harvest
+E4	Action:T4 Acts-on:T29
+T5	Action 539 545	decant
+E5	Action:T5 Acts-on:T9 Site:T11
+T6	Action 660 668	Transfer
+E6	Action:T6 Acts-on:T16 Site:T18
+T7	Action 593 597	Spin
+E7	Action:T7 Using:T12
+T8	Method 194 212	“coring” technique
+T9	Device 550 554	tube
+T11	Location 584 589	tubes
+T12	Device 605 624	Beckman JA-17 rotor
+T13	Speed 626 629	10K
+T14	Temperature 642 646	17°C
+T15	Time 648 658	20 minutes
+R2	Setting Arg1:E7 Arg2:T13	
+R3	Setting Arg1:E7 Arg2:T14	
+R4	Setting Arg1:E7 Arg2:T15	
+T16	Reagent 673 684	supernatant
+T17	Modifier 694 699	fresh
+T18	Device 743 748	tubes
+R5	Mod-Link Arg1:T18 Arg2:T17	
+T19	Reagent 37 42	cells
+T20	Action 59 66	Plating
+E8	Action:T20 Acts-on:T21 Acts-on2:T22 Site:T23 Using:T24
+T21	Reagent 67 82	Prochlorococcus
+T22	Reagent 87 108	Synechococcus strains
+T23	Reagent 112 123	top agarose
+T24	Reagent 128 141	plaque assays
+T25	Mention 179 183	them
+T26	Reagent 148 155	plaques
+R6	Coreference-Link Arg1:T25 Arg2:T26	
+T10	Numerical 560 563	two
+T27	Amount 564 569	50 ml
+T28	Modifier 570 583	orange capped
+R1	Mod-Link Arg1:T11 Arg2:T28	
+R7	Measure Arg1:T11 Arg2:T27	
+R8	Measure Arg1:T11 Arg2:T10	
+T29	Reagent 513 523	cyanophage
+T30	Speed 632 639	13,800g
+T31	Modifier 700 711	pre-labeled
+T32	Modifier 712 723	acid-washed
+T33	Modifier 724 742	glass black-capped
+R10	Mod-Link Arg1:T18 Arg2:T33	
+R11	Mod-Link Arg1:T18 Arg2:T32	
+R12	Mod-Link Arg1:T18 Arg2:T31	
+T34	Numerical 690 693	two
+R13	Setting Arg1:T18 Arg2:T34	
+T3	Action 341 346	check
+E3	Action:T3 Acts-on:T35
+T35	Mention 347 351	them
+T36	Action 353 357	give
+E9	Action:T36 Acts-on:T37
+T37	Mention 358 362	them
+T38	Modifier 365 370	quick
+T39	Speed 371 380	LOW-SPEED
+T40	Action 381 387	vortex
+E10	Action:T40 
+T41	Speed 390 391	4
+T42	Action 410 413	off
+E11	Action:T42 Acts-on:T43 Site:T44
+T43	Reagent 404 409	cells
+T44	Location 418 424	bottom
+T45	Location 432 436	tube
+T46	Action 460 476	without spilling
+E12	Action:T46 Acts-on:T47
+T47	Reagent 477 482	cells
+R14	Meronym Arg1:T44 Arg2:T45	
+R16	Mod-Link Arg1:T39 Arg2:T38	
+R15	Setting Arg1:E10 Arg2:T39	
+R17	Or Arg1:T39 Arg2:T41	
+T48	Reagent 0 10	Cyanophage
+T49	Method 11 30	plaque purification
+T50	Reagent 228 243	liquid cultures
+T51	Time 283 297	couple of days
+T52	Action 325 330	lysed
+E13	Action:T52 Acts-on:T53
+T53	Mention 315 319	them
+T54	Action 262 267	check
+E14	Action:T54 
+R18	Setting Arg1:E14 Arg2:T51	
+R19	Coreference-Link Arg1:T53 Arg2:T50	
+T55	Modifier 389 390	<
+R20	Mod-Link Arg1:T41 Arg2:T55	
+T56	Method 531 536	lysis
+T57	Modifier 631 632	~
+R9	Mod-Link Arg1:T30 Arg2:T57	
+R21	Coreference-Link Arg1:T13 Arg2:T30	
+T58	Location 850 854	hood
+T59	Action 825 829	Work
+E15	Action:T59 
+T60	Modifier 830 842	asceptically
+R22	Mod-Link Arg1:E15 Arg2:T60	

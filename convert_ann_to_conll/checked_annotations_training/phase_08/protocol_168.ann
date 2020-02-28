@@ -1,0 +1,198 @@
+T1	Action 165 171	adhere
+E1	Action:T1 Acts-on:T33 Using:T35
+T2	Action 215 230	de-paraffinized
+E2	Action:T2 Acts-on:T37 Using:T39
+T3	Action 247 257	rehydrated
+E3	Action:T3 
+T4	Action 296 304	staining
+E4	Action:T4 Acts-on:T40
+T5	Action 526 533	prepare
+E5	Action:T5 Using:T43
+T6	Action 654 662	incubate
+E6	Action:T6 Acts-on:T44 Site:T46
+T7	Action 798 803	Rinse
+E7	Action:T7 Using:T48
+T8	Action 1023 1027	Wash
+E8	Action:T8 Using:T30 Count:T32
+T9	Action 1057 1062	Apply
+E9	Action:T9 Acts-on:T50
+T10	Action 1150 1158	Incubate
+E10	Action:T10 Site:T52
+T11	Action 1197 1202	Drain
+E11	Action:T11 Acts-on:T54
+T12	Action 1206 1214	blot off
+E12	Action:T12 Acts-on:T54
+T13	Action 1239 1244	Apply
+E13	Action:T13 
+T14	Action 1324 1332	Incubate
+E14	Action:T14 Site:T58
+T15	Action 1374 1379	Rinse
+E15	Action:T15 Using:T60 Count:T62
+T16	Action 1409 1414	Apply
+E16	Action:T16 Acts-on:T65
+T17	Action 1502 1510	Incubate
+E17	Action:T17 Site:T66
+T18	Action 1552 1557	Rinse
+E18	Action:T18 Using:T68 Count:T70
+T19	Action 1587 1592	Apply
+E19	Action:T19 Acts-on:T73
+T20	Action 1680 1688	Incubate
+E20	Action:T20 Site:T74
+T21	Action 1727 1732	Rinse
+E21	Action:T21 Using:T76 Count:T78
+T22	Action 1957 1962	Rinse
+E22	Action:T22 Acts-on:T81
+T23	Action 2035 2047	Counterstain
+E23	Action:T23 Acts-on:T82
+T24	Action 2075 2080	Mount
+E24	Action:T24 
+T25	Action 2085 2094	coverslip
+E25	Action:T25 
+T26	Action 2120 2128	prepared
+E26	Action:T26 Acts-on:T83 Using:T84 Using2:T87
+T27	Action 2208 2216	prepared
+E27	Action:T27 Acts-on:T88 Using:T90 Using2:T92
+T30	Reagent 1033 1036	PBS
+T31	Time 1037 1046	2 minutes
+T32	Numerical 1048 1049	3
+T33	Reagent 172 178	tissue
+T34	Modifier 115 133	Positively charged
+T35	Location 134 140	slides
+T36	Modifier 156 164	securely
+R1	Mod-Link Arg1:E1 Arg2:T36	
+R2	Mod-Link Arg1:T35 Arg2:T34	
+T37	Location 198 206	sections
+T38	Modifier 180 197	Paraffin embedded
+R3	Mod-Link Arg1:T37 Arg2:T38	
+T39	Reagent 236 242	xylene
+T40	Reagent 282 295	ethanolbefore
+T41	Modifier 265 278	graded series
+R4	Mod-Link Arg1:E4 Arg2:T41	
+T43	Method 541 561	recommended protocol
+T44	Location 663 669	slides
+T45	Concentration 673 675	3%
+T46	Reagent 676 710	hydrogen peroxide blocking reagent
+T47	Time 715 725	10 minutes
+R5	Setting Arg1:E6 Arg2:T47	
+R6	Measure Arg1:T46 Arg2:T45	
+T48	Reagent 809 824	distilled water
+R7	Setting Arg1:E8 Arg2:T31	
+T49	Amount 1072 1078	100 μL
+T50	Reagent 1124 1148	ACUITYAdvanced Reagent 1
+T51	Amount 1063 1070	2 drops
+R8	Measure Arg1:T50 Arg2:T49	
+R9	Or Arg1:T49 Arg2:T51	
+T52	Device 1164 1180	humidity chamber
+T53	Time 1185 1195	10 minutes
+T54	Reagent 1215 1223	solution
+T55	Amount 1245 1252	2 drops
+T56	Amount 1254 1260	100 μL
+T57	Reagent 1306 1322	primary antibody
+T58	Device 1338 1354	humidity chamber
+T59	Time 1359 1372	30-60 minutes
+T60	Reagent 1385 1388	PBS
+T61	Time 1389 1398	2 minutes
+T62	Numerical 1400 1401	3
+R10	Setting Arg1:E15 Arg2:T61	
+T63	Amount 1415 1422	2 drops
+T64	Amount 1424 1430	100 μL
+T65	Reagent 1476 1501	ACUITYAdvanced Reagent 2.
+R11	Measure Arg1:T65 Arg2:T64	
+R12	Or Arg1:T64 Arg2:T63	
+T66	Device 1516 1532	humidity chamber
+T67	Time 1537 1550	15-20 minutes
+T68	Reagent 1563 1566	PBS
+T69	Time 1567 1576	2 minutes
+T70	Numerical 1578 1579	3
+R13	Setting Arg1:E18 Arg2:T69	
+T71	Amount 1593 1600	2 drops
+T72	Amount 1602 1608	100 μL
+T73	Reagent 1654 1678	ACUITYAdvanced Reagent 3
+T74	Device 1694 1710	humidity chamber
+T75	Time 1715 1725	15 minutes
+R14	Setting Arg1:E20 Arg2:T75	
+R15	Measure Arg1:T73 Arg2:T72	
+R16	Or Arg1:T72 Arg2:T71	
+T76	Reagent 1738 1741	PBS
+T77	Time 1742 1751	2 minutes
+T78	Numerical 1753 1754	3
+R17	Setting Arg1:E21 Arg2:T77	
+T79	Modifier 1968 1977	distilled
+T80	Modifier 1981 1984	tap
+T81	Reagent 1985 1990	water
+R18	Mod-Link Arg1:T81 Arg2:T80	
+R19	Or Arg1:T80 Arg2:T79	
+T82	Reagent 2053 2073	desired counterstain
+T83	Reagent 2096 2109	AEC chromogen
+T84	Reagent 2136 2149	AEC chromogen
+T85	Amount 2129 2135	1 part
+T86	Amount 2153 2161	50 parts
+T87	Reagent 2162 2182	AEC Substrate Buffer
+R20	Measure Arg1:T84 Arg2:T85	
+R21	Measure Arg1:T87 Arg2:T86	
+T88	Reagent 2184 2197	DAB chromogen
+T89	Amount 2217 2223	1 part
+T90	Reagent 2224 2237	DAB Chromogen
+T91	Amount 2241 2249	25 parts
+T92	Reagent 2250 2270	DAB Substrate Buffer
+R22	Measure Arg1:T90 Arg2:T89	
+R23	Measure Arg1:T92 Arg2:T91	
+T93	Method 0 14	ACUITYAdvanced
+T94	Device 24 45	ACUITYAdvanced system
+T95	Modifier 72 104	formalin fixed paraffin embedded
+T96	Reagent 105 113	sections
+R24	Mod-Link Arg1:T96 Arg2:T95	
+T42	Action 313 316	let
+E30	Action:T42 Commands:E31
+T97	Reagent 317 325	specimen
+T98	Reagent 329 335	tissue
+R25	Or Arg1:T97 Arg2:T98	
+T99	Action 336 339	dry
+E31	Action:T99 Acts-on:T98 Acts-on2:T97
+T100	Method 376 384	dilution
+T101	Method 389 399	incubation
+T102	Measure-Type 400 405	times
+T103	Reagent 460 476	Peroxidase Block
+T104	Reagent 620 652	ACUITYAdvanced hydrogen peroxide
+T105	Reagent 727 744	hydrogen peroxide
+T106	Reagent 847 855	antibody
+T107	Reagent 909 913	HIER
+T108	Reagent 927 931	HIER
+T109	Reagent 970 974	HIER
+T110	Reagent 978 984	enzyme
+T111	Method 989 998	digestion
+R26	Or Arg1:T110 Arg2:T109	
+T112	Measure-Type 1089 1095	volume
+T113	Action 1099 1104	cover
+E32	Action:T113 Acts-on:T114
+T114	Reagent 1105 1119	tissue section
+R27	Setting Arg1:E10 Arg2:T53	
+R28	Or Arg1:E11 Arg2:E12	
+T28	Action 1232 1237	rinse
+E28	Action:T28 
+R29	Or Arg1:T56 Arg2:T55	
+T115	Measure-Type 1271 1277	volume
+T116	Action 1281 1286	cover
+E33	Action:T116 Acts-on:T117
+T117	Reagent 1287 1301	tissue section
+R30	Measure Arg1:T57 Arg2:T56	
+R31	Setting Arg1:E14 Arg2:T59	
+T118	Measure-Type 1441 1447	volume
+T119	Action 1451 1456	cover
+E34	Action:T119 
+T120	Reagent 1457 1471	tissue section
+R32	Setting Arg1:E17 Arg2:T67	
+T121	Measure-Type 1619 1625	volume
+T122	Action 1629 1634	cover
+E35	Action:T122 Acts-on:T123
+T123	Reagent 1635 1649	tissue section
+T124	Action 1782 1789	prepare
+E36	Action:T124 Using:T125
+T125	Method 1797 1817	recommended protocol
+T126	Reagent 1830 1855	ACUITYAdvanced Chromogens
+T127	Reagent 1992 1995	AEC
+T128	Modifier 1999 2014	alcohol soluble
+R33	Mod-Link Arg1:T127 Arg2:T128	
+T29	Action 2023 2032	dehydrate
+E29	Action:T29 
+T129	Method 2306 2324	sample preparation

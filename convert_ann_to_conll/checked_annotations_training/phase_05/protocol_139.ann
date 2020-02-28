@@ -1,0 +1,271 @@
+T1	Action 69 75	sliced
+E1	Action:T1 Acts-on:T17 Using:T49
+T3	Action 123 130	mounted
+E3	Action:T3 Site:T2
+T4	Action 156 160	Thaw
+E4	Action:T4 Acts-on:T50
+T5	Action 215 222	Immerse
+E5	Action:T5 Acts-on:T52 Site:T53
+T6	Action 288 292	Wash
+E6	Action:T6 Acts-on:T57
+T7	Action 330 334	Wash
+E7	Action:T7 Acts-on:T61
+T8	Action 414 421	immerse
+E8	Action:T8 Acts-on:T63 Site:T64 Acts-on2:T67
+T9	Action 512 516	warm
+E9	Action:T9 Acts-on:T68
+T10	Action 571 574	Mix
+E10	Action:T10 
+T11	Action 583 592	vortexing
+E11	Action:T11 
+T12	Action 599 609	centrifuge
+E12	Action:T12 
+T13	Action 673 676	add
+E13	Action:T13 Acts-on:T74 Site:T76
+T14	Action 622 629	prepare
+E14	Action:T14 Acts-on:T72
+T15	Action 750 756	vortex
+E15	Action:T15 Acts-on:T76
+T16	Action 761 771	centrifuge
+E16	Action:T16 Acts-on:T76
+T18	Action 904 911	Immerse
+E18	Action:T18 Acts-on:T126 Site:T127
+T19	Action 1006 1014	Assemble
+E19	Action:T19 Acts-on:T129
+T20	Action 1142 1148	Remove
+E20	Action:T20 Acts-on:T137 Site:T138
+T21	Action 1191 1195	wipe
+E21	Action:T21 Acts-on:T141 Site:T142
+T22	Action 1247 1255	Dispense
+E22	Action:T22 Acts-on:T134 Site:T136
+T23	Action 1352 1357	place
+E23	Action:T23 Acts-on:T120 Site:T121
+T24	Action 1451 1456	cover
+E24	Action:T24 Acts-on:T123
+T25	Action 1481 1486	allow
+E25	Action:T25 Acts-on:T125
+T26	Action 1526 1531	Place
+E26	Action:T26 Acts-on:T110 Site:T111
+T27	Action 1569 1574	cover
+E27	Action:T27 Acts-on:T112
+T28	Action 1608 1612	seal
+E28	Action:T28 Acts-on:T113
+T29	Action 1628 1636	Incubate
+E29	Action:T29 Acts-on:T114
+T30	Action 1680 1687	Immerse
+E30	Action:T30 Acts-on:T104 Site:T105
+T31	Action 1720 1725	allow
+E31	Action:T31 Acts-on:T107
+T32	Action 1784 1792	Incubate
+E32	Action:T32 
+T33	Action 1830 1836	Decant
+E33	Action:T33 Acts-on:T98
+T34	Action 1861 1864	add
+E34	Action:T34 Acts-on:T99
+T35	Action 1933 1945	counterstain
+E35	Action:T35 Acts-on:T100
+T36	Action 2004 2010	Decant
+E36	Action:T36 Acts-on:T95
+T37	Action 1958 1966	Incubate
+E37	Action:T37 
+T38	Action 2046 2053	immerse
+E38	Action:T38 Acts-on:T161 Site:T162
+T39	Action 2094 2100	Remove
+E39	Action:T39 Acts-on:T89 Site:T90
+T40	Action 2145 2154	wipe away
+E40	Action:T40 Acts-on:T93 Site:T94
+T41	Action 2201 2204	Add
+E41	Action:T41 Acts-on:T85 Site:T86
+T42	Action 2300 2305	cover
+E42	Action:T42 Using:T88
+T43	Action 2354 2361	squeeze
+E43	Action:T43 Acts-on:T168 Site:T169
+T44	Action 2415 2419	Seal
+E44	Action:T44 Site:T81 Using:T83
+T46	Action 2486 2493	Proceed
+E46	Action:T46 Commands:E49
+T17	Reagent 47 60	Frozen tissue
+T47	Size 94 101	4-10 μm
+T48	Measure-Type 81 90	thickness
+T49	Device 110 118	cryostat
+R2	Setting Arg1:E1 Arg2:T47	
+T2	Location 138 154	microscope slide
+T50	Reagent 179 193	tissue section
+T51	Temperature 197 213	room temperature
+R3	Setting Arg1:E4 Arg2:T51	
+T52	Location 227 232	slide
+T53	Reagent 236 251	fixation buffer
+T54	Time 256 266	10 minutes
+T55	Temperature 270 286	room temperature
+R4	Setting Arg1:E5 Arg2:T54	
+R5	Setting Arg1:E5 Arg2:T55	
+T56	Amount 298 302	1 mL
+T57	Reagent 309 312	PBS
+T58	Time 317 328	2-5 minutes
+R6	Measure Arg1:T57 Arg2:T56	
+R7	Setting Arg1:E6 Arg2:T58	
+T59	Modifier 335 340	again
+T60	Amount 346 350	1 mL
+T61	Reagent 357 360	PBS
+T62	Time 365 376	2-5 minutes
+R8	Measure Arg1:T61 Arg2:T60	
+R9	Mod-Link Arg1:T61 Arg2:T59	
+R10	Setting Arg1:E7 Arg2:T62	
+T63	Location 426 431	slide
+T64	Reagent 439 446	ethanol
+T65	Modifier 451 459	at least
+T66	Time 460 466	1 hour
+T67	Location 470 486	room temperature
+R11	Setting Arg1:E8 Arg2:T66	
+R12	Mod-Link Arg1:T66 Arg2:T65	
+T68	Reagent 521 549	reconstituted probe solution
+T69	Temperature 553 569	room temperature
+R13	Setting Arg1:E9 Arg2:T69	
+T70	Modifier 575 579	well
+R14	Mod-Link Arg1:E10 Arg2:T70	
+T71	Modifier 610 617	briefly
+R15	Mod-Link Arg1:E12 Arg2:T71	
+T72	Reagent 634 671	Hybridization Buffer containing probe
+T73	Amount 677 681	1 µL
+T74	Reagent 685 705	probe stock solution
+T75	Amount 709 715	100 µL
+T76	Reagent 719 739	Hybridization Buffer
+R16	Measure Arg1:T74 Arg2:T73	
+R17	Measure Arg1:T76 Arg2:T75	
+T77	Reagent 823 845	working probe solution
+T78	Amount 849 855	125 nM
+T79	Action 813 820	creates
+E2	Action:T79 Product:T77
+R18	Measure Arg1:T77 Arg2:T78	
+T81	Location 2424 2444	coverglass perimeter
+T82	Numerical 2450 2455	clear
+T83	Reagent 2456 2466	nailpolish
+T84	Action 2481 2484	dry
+E17	Action:T84 Acts-on:T81
+R19	Measure Arg1:T83 Arg2:T82	
+T45	Amount 2207 2217	small drop
+T85	Reagent 2243 2270	Vectashield Mounting Medium
+T86	Location 2280 2294	tissue section
+T87	Modifier 2313 2318	clean
+T88	Seal 2325 2345	square #1 coverglass
+R20	Measure Arg1:T85 Arg2:T45	
+R21	Mod-Link Arg1:T88 Arg2:T87	
+T89	Location 2105 2110	slide
+T90	Reagent 2116 2129	Wash Buffer 2
+T91	Modifier 2135 2144	carefully
+T92	Modifier 2155 2161	excess
+T93	Reagent 2162 2168	buffer
+T94	Location 2185 2199	tissue section
+R22	Mod-Link Arg1:E40 Arg2:T91	
+R23	Mod-Link Arg1:T93 Arg2:T92	
+T96	Temperature 1982 1987	37 °C
+T97	Time 1992 2002	30 minutes
+R25	Setting Arg1:E37 Arg2:T97	
+T98	Reagent 1837 1850	Wash Buffer 1
+T99	Reagent 1865 1883	DAPI nuclear stain
+T100	Reagent 1950 1956	nuclei
+T102	Temperature 1808 1813	37 °C
+T103	Time 1818 1828	30 minutes
+R26	Setting Arg1:E32 Arg2:T102	
+R27	Setting Arg1:E32 Arg2:T103	
+T104	Location 1692 1697	slide
+T105	Reagent 1701 1714	Wash Buffer 1
+T106	Modifier 1730 1739	submerged
+T107	Location 1740 1750	coverglass
+T108	Action 1754 1763	slide off
+E45	Action:T108 Acts-on:T107 Site:T109
+T109	Reagent 1768 1782	tissue section
+R28	Mod-Link Arg1:T107 Arg2:T106	
+T110	Location 1536 1541	slide
+T111	Device 1549 1567	humidified chamber
+T112	Seal 1584 1602	tissue culture lid
+T113	Seal 1618 1626	Parafilm
+T114	Location 1644 1648	dark
+T115	Temperature 1652 1657	37 °C
+T116	Modifier 1662 1670	at least
+T117	Time 1671 1678	4 hours
+R29	Setting Arg1:E29 Arg2:T115	
+R30	Mod-Link Arg1:T117 Arg2:T116	
+R31	Setting Arg1:E29 Arg2:T117	
+T118	Modifier 1342 1351	Carefully
+T119	Modifier 1360 1365	clean
+T120	Seal 1372 1389	square coverglass
+T121	Reagent 1399 1436	Hybridization Buffer containing probe
+T122	Modifier 1440 1450	completely
+T123	Reagent 1462 1475	issue section
+T124	Modifier 1491 1508	even distribution
+T125	Reagent 1516 1524	solution
+R32	Mod-Link Arg1:E23 Arg2:T118	
+R33	Mod-Link Arg1:T120 Arg2:T119	
+R34	Mod-Link Arg1:E24 Arg2:T122	
+R35	Mod-Link Arg1:E25 Arg2:T124	
+T126	Reagent 930 944	tissue section
+T127	Reagent 951 964	Wash Buffer 1
+T128	Time 993 1004	2-5 minutes
+R36	Setting Arg1:E18 Arg2:T128	
+T129	Device 1015 1033	humidified chamber
+T130	Location 1042 1062	tissue culture plate
+T131	Location 1066 1100	single water-saturated paper towel
+T133	Amount 1256 1262	100 µL
+T134	Reagent 1266 1303	Hybridization Buffer containing probe
+T135	Location 1313 1327	tissue section
+T136	Location 1335 1340	slide
+R38	Meronym Arg1:T136 Arg2:T135	
+R39	Measure Arg1:T134 Arg2:T133	
+T137	Location 1153 1158	slide
+T138	Reagent 1164 1174	wash buffe
+T139	Modifier 1181 1190	carefully
+T140	Modifier 1201 1207	excess
+T141	Reagent 1208 1214	buffer
+T142	Location 1215 1245	surrounding the tissue section
+R40	Mod-Link Arg1:E21 Arg2:T139	
+R41	Mod-Link Arg1:T141 Arg2:T140	
+T143	Method 0 19	Stellaris® RNA FISH
+T144	Reagent 33 46	Frozen Tissue
+T145	Modifier 165 178	slide-mounted
+R1	Mod-Link Arg1:T50 Arg2:T145	
+T146	Concentration 306 308	1X
+R42	Measure Arg1:T57 Arg2:T146	
+T147	Concentration 354 356	1X
+R43	Measure Arg1:T61 Arg2:T147	
+T148	Action 381 393	permeabilize
+E47	Action:T148 Acts-on:T149
+T149	Reagent 398 412	tissue section
+T150	Concentration 435 438	70%
+R44	Measure Arg1:T64 Arg2:T150	
+T151	Location 797 806	coverslip
+T152	Reagent 862 870	solution
+T153	Modifier 916 929	slide-mounted
+R45	Mod-Link Arg1:T126 Arg2:T153	
+T154	Concentration 948 950	1X
+R46	Measure Arg1:T127 Arg2:T154	
+T132	Action 1101 1107	placed
+E48	Action:T132 Acts-on:T131 Site:T156
+T155	Size 1035 1041	150 mm
+R37	Measure Arg1:T130 Arg2:T155	
+T156	Location 1122 1140	inner chamber edge
+T157	Size 1366 1371	18 mm
+R47	Measure Arg1:T120 Arg2:T157	
+T101	Concentration 1885 1887	1X
+T158	Reagent 1888 1901	Wash Buffer 1
+T159	Concentration 1916 1923	5 ng/mL
+T160	Reagent 1924 1928	DAPI
+R48	Measure Arg1:T158 Arg2:T101	
+R49	Measure Arg1:T160 Arg2:T159	
+T95	Reagent 2015 2035	DAPI staining buffer
+T161	Location 2054 2059	slide
+T162	Reagent 2063 2076	Wash Buffer 2
+T163	Time 2081 2092	2-5 minutes
+R50	Setting Arg1:E38 Arg2:T163	
+T164	Modifier 2219 2232	approximately
+T165	Amount 2233 2238	15 µL
+R51	Mod-Link Arg1:T165 Arg2:T164	
+T166	Size 2319 2324	18 mm
+R52	Measure Arg1:T88 Arg2:T166	
+T167	Modifier 2347 2353	Gently
+R53	Mod-Link Arg1:E43 Arg2:T167	
+T168	Reagent 2373 2382	anti-fade
+T169	Location 2403 2413	coverglass
+T80	Action 2497 2504	imaging
+E49	Action:T80 
+R24	Setting Arg1:E37 Arg2:T96	

@@ -1,0 +1,180 @@
+T1	Action 50 55	start
+E1	Action:T1 Product:T2 Site:T4 Using:T6
+T2	Reagent 58 70	cell culture
+T3	Amount 76 80	50ml
+T4	Location 81 85	tube
+T5	Amount 93 97	10ml
+T6	Reagent 101 104	CSM
+T7	Time 44 48	10am
+R3	Setting Arg1:E1 Arg2:T7
+T8	Action 106 110	Grow
+E2	Action:T8 Site:T10
+T9	Time 115 125	8-10 hours
+T10	Location 131 137	shaker
+T11	Temperature 141 146	30 °C
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E2 Arg2:T11
+T12	Action 148 155	Measure
+E3	Action:T12 Measure-Type-Link:T13
+T13	Measure-Type 156 158	OD
+T14	Time 166 173	evening
+T15	Action 178 184	dilute
+E4	Action:T15 Site:T17 Acts-on:T19 Using:T21
+T16	Amount 190 195	250ml
+T17	Location 196 208	glass flasks
+R6	Setting Arg1:E3 Arg2:T14
+T18	Amount 219 223	45ml
+T19	Reagent 227 230	CSM
+T20	Time 235 244	overnight
+R8	Setting Arg1:E4 Arg2:T20
+T21	Method 245 251	growth
+T22	Action 305 313	Transfer
+E5	Action:T22 Site:T24
+T23	Amount 317 321	50ml
+T24	Location 322 334	falcon tubes
+T25	Action 336 339	Add
+E6	Action:T25 Acts-on:T27
+T26	Amount 340 343	5ml
+T27	Reagent 347 359	Formaldehyde
+T28	Action 361 367	invert
+E7	Action:T28 Count:T29
+T29	Numerical 370 380	few times,
+T30	Action 381 384	set
+E8	Action:T30 Site:T31
+T31	Location 388 396	benchtop
+T32	Time 401 406	45min
+R11	Setting Arg1:E8 Arg2:T32
+T33	Action 408 417	Spin down
+E9	Action:T33 
+T34	Speed 421 429	3,000rpm
+T35	Time 434 438	4min
+R12	Setting Arg1:E9 Arg2:T34
+R13	Setting Arg1:E9 Arg2:T35
+T36	Action 451 455	wash
+E10	Action:T36 Using:T37 Acts-on:T39
+T37	Method 459 468	pipetting
+T38	Amount 474 477	1ml
+T39	Reagent 490 497	BufferB
+T40	Action 499 507	Transfer
+E11	Action:T40 Site:T42
+T41	Amount 511 516	1.5ml
+T42	Location 517 522	tubes
+T43	Action 536 540	Spin
+E12	Action:T43 
+T44	Speed 549 557	3,000rpm
+T45	Time 562 566	4min
+R16	Setting Arg1:E12 Arg2:T44
+R17	Setting Arg1:E12 Arg2:T45
+T46	Action 580 584	Wash
+E13	Action:T46 Acts-on:T48
+T47	Amount 600 603	1ml
+T48	Reagent 604 620	ice-cold BufferB
+T49	Action 634 638	Spin
+E14	Action:T49 
+T50	Speed 647 655	3,000rpm
+T51	Time 660 664	4min
+R19	Setting Arg1:E14 Arg2:T50
+R20	Setting Arg1:E14 Arg2:T51
+T52	Action 678 698	Decant and resuspend
+E15	Action:T52 Acts-on:T54
+T53	Amount 702 705	1ml
+T54	Reagent 709 716	BufferB
+T55	Action 718 721	Add
+E16	Action:T55 Acts-on:T57
+T56	Amount 722 727	2.5ul
+T57	Reagent 731 740	Zymolyase
+T58	Action 745 751	digest
+E17	Action:T58 
+T59	Temperature 755 760	30 °C
+R23	Setting Arg1:E17 Arg2:T59
+T60	Action 868 872	Drop
+E18	Action:T60 Site:T63 Acts-on:T62
+T61	Amount 873 877	1 μL
+T62	Reagent 885 890	cells
+T63	Location 898 909	glass slide
+T64	Action 969 972	Use
+E19	Action:T64 Acts-on:T97
+T65	Device 992 1011	phase contrast ring
+T66	Action 1180 1184	Wash
+E20	Action:T66 Acts-on:T68
+T67	Amount 1190 1193	1ml
+T68	Reagent 1194 1210	ice-cold BufferB
+T69	Action 1212 1220	spinning
+E21	Action:T69 
+T70	Time 1221 1227	5-6min
+R26	Setting Arg1:E21 Arg2:T70
+T71	Speed 1231 1239	2,000rpm
+R27	Setting Arg1:E21 Arg2:T71
+T72	Action 1264 1268	wash
+E22	Action:T72 Acts-on:T74
+T73	Amount 1280 1283	1ml
+T74	Reagent 1284 1300	ice-cold BufferB
+R28	Setting Arg1:E22 Arg2:T73
+T75	Action 1302 1310	spinning
+E23	Action:T75 
+T76	Time 1311 1317	5-6min
+T77	Speed 1321 1329	2,000rpm
+R29	Setting Arg1:E23 Arg2:T76
+R30	Setting Arg1:E23 Arg2:T77
+T78	Action 1343 1352	Resuspend
+E24	Action:T78 Acts-on:T81
+T79	Amount 1356 1359	1ml
+T80	Concentration 1363 1366	70%
+T81	Reagent 1367 1374	Ethanol
+T82	Time 1375 1384	overnight
+T83	Temperature 1388 1392	4 °C
+R33	Setting Arg1:E24 Arg2:T82
+R34	Setting Arg1:E24 Arg2:T83
+R1	Measure Arg1:T4 Arg2:T3	
+R2	Measure Arg1:T6 Arg2:T5	
+R7	Measure Arg1:T17 Arg2:T16	
+R35	Measure Arg1:T19 Arg2:T18	
+R9	Measure Arg1:T24 Arg2:T23	
+R10	Measure Arg1:T27 Arg2:T26	
+R14	Measure Arg1:T39 Arg2:T38	
+R15	Measure Arg1:T42 Arg2:T41	
+R18	Measure Arg1:T48 Arg2:T47	
+R21	Measure Arg1:T54 Arg2:T53	
+R22	Measure Arg1:T57 Arg2:T56	
+R24	Measure Arg1:T62 Arg2:T61	
+R25	Measure Arg1:T68 Arg2:T67	
+R31	Measure Arg1:T81 Arg2:T80	
+R32	Measure Arg1:T81 Arg2:T79	
+T84	Modifier 481 489	ice-cold
+R36	Mod-Link Arg1:T39 Arg2:T84	
+T85	Method 0 8	Fixation
+T86	Reagent 12 23	yeast cells
+T87	Reagent 28 36	RNA-FISH
+T88	Generic-Measure 264 274	OD 0.2-0.4
+T89	Time 282 286	10am
+T90	Time 296 303	morning
+T91	Action 440 446	Decant
+E25	Action:T91 Acts-on:T39
+T92	Reagent 779 784	cells
+T93	Action 800 807	checked
+E26	Action:T93 Acts-on:T92 Using:T94
+T94	Device 811 836	phase contrast microscope
+T95	Action 918 923	cover
+E27	Action:T95 
+T96	Mention 953 957	they
+R37	Coreference-Link Arg1:T96 Arg2:T62	
+T97	Device 975 984	20x scope
+R38	Meronym Arg1:T65 Arg2:T97	
+T98	Method 1019 1028	digestion
+T99	Time 1044 1054	30 minutes
+T100	Reagent 1060 1065	cells
+T101	Modifier 1071 1081	black/grey
+T102	Modifier 1087 1098	white/shiny
+R39	Mod-Link Arg1:T100 Arg2:T101	
+R40	Mod-Link Arg1:T100 Arg2:T102	
+T103	Amount 1108 1115	80%-90%
+T104	Reagent 1123 1128	cells
+T105	Modifier 1151 1159	digested
+T106	Modifier 958 966	digested
+R41	Mod-Link Arg1:T96 Arg2:T106	
+R42	Mod-Link Arg1:T104 Arg2:T105	
+R43	Measure Arg1:T104 Arg2:T103	
+T107	Action 1168 1178	overdigest
+E28	Action:T107 
+T108	Action 1253 1259	Decant
+E29	Action:T108 Acts-on:T74

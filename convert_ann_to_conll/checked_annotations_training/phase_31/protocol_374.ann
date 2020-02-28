@@ -1,0 +1,204 @@
+T1	Action 107 113	dilute
+E1	Action:T1 Acts-on:T23
+T2	Action 224 230	Dilute
+E2	Action:T2 Acts-on:T29 Using:T33
+T3	Action 290 294	Open
+E3	Action:T3 Acts-on:T34
+T4	Action 323 329	remove
+E4	Action:T4 Acts-on:T35
+T5	Action 343 352	peel away
+E5	Action:T5 Acts-on:T36 Using:T37
+T6	Action 403 409	Attach
+E6	Action:T6 Acts-on:T38 Site:T39 Using:T40
+T7	Action 482 487	Apply
+E7	Action:T7 Acts-on:T43 Site:T44
+T8	Action 673 680	Squeeze
+E8	Action:T8 Acts-on:T45
+T9	Action 755 760	Lower
+E9	Action:T9 Acts-on:T50
+T10	Action 909 914	Apply
+E10	Action:T10 Acts-on:T54 Using:T55
+T11	Action 1037 1041	Keep
+E11	Action:T11 Acts-on:T56 Using:T57
+T12	Action 1491 1496	Place
+E12	Action:T12 Acts-on:T62 Site:T63
+T13	Action 1574 1579	Apply
+E13	Action:T13 Acts-on:T67 Site:T69
+T14	Action 1621 1629	Incubate
+E14	Action:T14 Using:T73
+T15	Action 1691 1698	Discard
+E15	Action:T15 Acts-on:T70
+T16	Action 1719 1724	rinse
+E16	Action:T16 Acts-on:T77 Using:T76
+T17	Action 1776 1783	Discard
+E17	Action:T17 Acts-on:T78
+T18	Action 1798 1802	wash
+E18	Action:T18 Using:T80
+T19	Action 1889 1895	Remove
+E19	Action:T19 Acts-on:T84 Site:T85
+T21	Action 2136 2145	determine
+E21	Action:T21 Using:T90 Measure-Type-Link:T20 Acts-on:T89
+T23	Reagent 118 146	Nucleic Acid Dilution Buffer
+T24	Generic-Measure 147 155	100 fold
+T25	Amount 166 169	1µl
+T26	Reagent 170 198	Nucleic Acid Dilution Buffer
+T27	Amount 202 206	99µl
+T28	Reagent 207 223	ultrapure water.
+T29	Reagent 231 238	samples
+T30	Modifier 239 247	at least
+T31	Concentration 248 251	1:1
+T32	Modifier 261 272	appropriate
+T33	Reagent 273 288	Dilution Buffer
+T34	Location 299 321	NUCLEIC Test Strip box
+T35	Location 332 337	strip
+T36	Seal 357 374	protective sheets
+T37	Device 385 392	forceps
+T38	Location 420 433	NUCLEIC Strip
+T39	Location 441 458	application board
+T40	Device 468 480	side magnets
+T41	Amount 488 493	1‐5µl
+T42	Modifier 501 508	diluted
+T43	Reagent 509 516	samples
+T44	Location 524 534	Test Strip
+T45	Location 685 700	pipette plunger
+T46	Action 717 723	formed
+E23	Action:T46 Product:T49 Site:T47
+T47	Location 731 734	tip
+T48	Location 742 753	pipette tip
+T49	Reagent 709 713	drop
+T50	Reagent 765 769	drop
+T51	Action 779 786	touches
+E24	Action:T51 Acts-on:T52 Site:T53
+T52	Mention 776 778	it
+T53	Location 791 801	Test Strip
+T54	Reagent 915 921	sample
+T55	Method 925 958	point of contact capillary action
+T56	Location 1046 1057	pipette tip
+T57	Method 1058 1069	straight up
+T58	Action 1117 1121	draw
+E25	Action:T58 Using:T59 Acts-on:T60 Site:T61
+T59	Method 1084 1113	capillary action of the strip
+T60	Reagent 1126 1132	sample
+T61	Location 1142 1153	pipette tip
+T62	Reagent 1501 1514	NUCLEIC strip
+T63	Location 1520 1535	developing tray
+T64	Location 1562 1572	small dish
+T65	Modifier 1556 1561	other
+T66	Amount 1580 1585	0.5ml
+T67	Reagent 1586 1597	NUCLEIC Dye
+T68	Modifier 1598 1606	directly
+T69	Location 1614 1619	strip
+T70	Reagent 1703 1714	NUCLEIC Dye
+T71	Temperature 1633 1649	room temperature
+T72	Time 1654 1662	1 minute
+T73	Method 1663 1689	without shaking or rocking
+T74	Time 1739 1749	10 seconds
+T75	Amount 1753 1757	50ml
+T76	Reagent 1758 1774	ultra pure water
+T77	Location 1729 1734	strip
+T78	Reagent 1788 1793	rinse
+T79	Amount 1808 1812	50ml
+T80	Reagent 1813 1829	ultra pure water
+T81	Time 1834 1847	30‐60 seconds
+T82	Action 1877 1887	disappears
+E26	Action:T82 Acts-on:T83
+T83	Reagent 1861 1876	blue background
+T84	Location 1900 1905	strip
+T85	Reagent 1915 1926	second wash
+T86	Action 1958 1968	disappears
+E27	Action:T86 Acts-on:T87
+T87	Reagent 1942 1957	blue background
+T20	Measure-Type 2150 2163	concentration
+T88	Modifier 2171 2178	diluted
+T89	Reagent 2179 2185	sample
+T90	Device 2108 2132	NUCLEIC dotMETRIC™ scale
+R1	Setting Arg1:E1 Arg2:T24	
+R2	Measure Arg1:T26 Arg2:T25	
+R3	Measure Arg1:T28 Arg2:T27	
+T22	Action 162 165	Use
+E20	Action:T22 Acts-on:T26 Site:T28
+R4	Mod-Link Arg1:T31 Arg2:T30	
+R5	Setting Arg1:E2 Arg2:T31	
+R6	Mod-Link Arg1:T33 Arg2:T32	
+R7	Mod-Link Arg1:T43 Arg2:T42	
+R8	Measure Arg1:T43 Arg2:T41	
+R9	Meronym Arg1:T47 Arg2:T48	
+R10	Coreference-Link Arg1:T52 Arg2:T50	
+R11	Mod-Link Arg1:T64 Arg2:T65	
+R12	Or Arg1:T63 Arg2:T64	
+R13	Measure Arg1:T67 Arg2:T66	
+R14	Mod-Link Arg1:E13 Arg2:T68	
+R15	Setting Arg1:E14 Arg2:T71	
+R16	Setting Arg1:E14 Arg2:T72	
+R17	Setting Arg1:E16 Arg2:T74	
+R18	Measure Arg1:T76 Arg2:T75	
+R19	Measure Arg1:T80 Arg2:T79	
+R20	Setting Arg1:E18 Arg2:T81	
+R21	Mod-Link Arg1:T89 Arg2:T88	
+T91	Method 0 18	NUCLEIC dotMETRIC™
+T92	Modifier 23 38	double stranded
+T93	Reagent 39 42	DNA
+T94	Modifier 48 57	undiluted
+T95	Reagent 58 86	Nucleic Acid Dilution Buffer
+R22	Mod-Link Arg1:T95 Arg2:T94	
+R23	Mod-Link Arg1:T93 Arg2:T92	
+T96	Action 44 47	use
+E22	Action:T96 Acts-on:T95
+T97	Reagent 92 95	RNA
+T98	Reagent 99 105	oligos
+R24	Or Arg1:T98 Arg2:T97	
+T99	Modifier 414 419	white
+R25	Mod-Link Arg1:T38 Arg2:T99	
+T100	Method 641 657	Free‐Drop Method
+T101	Device 599 637	G‐Biosciences’ Spot Application Device
+T102	Reagent 807 833	nucleic acid solution drop
+T103	Modifier 839 850	immediately
+T104	Action 851 857	spread
+E28	Action:T104 Acts-on:T102 Site:T105
+T105	Location 865 875	Test Strip
+R26	Mod-Link Arg1:E28 Arg2:T103	
+T106	Method 877 906	dotMETRIC™ Application Method
+T107	Action 960 963	Use
+E29	Action:T107 Acts-on:T108
+T108	Location 964 976	pipette tips
+T109	Measure-Type 985 1006	outside bore diameter
+T110	Size 1009 1019	0.6‐0.7 mm
+R27	Measure Arg1:T108 Arg2:T110	
+T111	Action 1181 1184	use
+E30	Action:T111 Acts-on:T112
+T112	Device 1189 1196	plunger
+T113	Action 1200 1205	force
+E31	Action:T113 Using:T112 Acts-on:T114
+T114	Reagent 1210 1218	solution
+T115	Modifier 1230 1240	Accurately
+T116	Action 1241 1250	pipetting
+E32	Action:T116 
+T117	Amount 1251 1254	1µl
+R28	Mod-Link Arg1:E32 Arg2:T115	
+R29	Setting Arg1:E32 Arg2:T117	
+T118	Measure-Type 1285 1294	deviation
+T119	Generic-Measure 1304 1309	± 20%
+R30	Of-Type Arg1:T119 Arg2:T118	
+T120	Action 1333 1342	pipetting
+E33	Action:T120 
+T121	Modifier 1383 1384	>
+T122	Amount 1384 1388	1 µl
+R31	Mod-Link Arg1:T122 Arg2:T121	
+T123	Action 1364 1372	applying
+E34	Action:T123 
+R32	Setting Arg1:E34 Arg2:T122	
+T124	Reagent 1437 1444	Samples
+T125	Action 1460 1463	dry
+E35	Action:T125 Acts-on:T124
+T126	Action 1471 1477	adding
+E36	Action:T126 Acts-on:T127
+T127	Reagent 1478 1489	NUCLEIC Dye
+R33	Or Arg1:E18 Arg2:E26	
+T128	Method 1974 1990	Free‐Drop Method
+T129	Reagent 2017 2033	test sample spot
+T130	Reagent 2043 2062	dotMETRIC™ Standard
+T131	Method 2077 2098	dotMETRIC Application
+T132	Reagent 2192 2195	dot
+T133	Modifier 2203 2214	symmetrical
+R34	Mod-Link Arg1:T132 Arg2:T133	
+T134	Reagent 2267 2270	dot

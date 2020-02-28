@@ -1,0 +1,130 @@
+T1	Action 62 67	Place
+E1	Action:T1 Acts-on:T23 Site:T24
+T2	Action 95 100	flick
+E2	Action:T2 Count:T25
+T3	Action 116 119	mix
+E3	Action:T3 
+T4	Action 121 128	Combine
+E4	Action:T4 Acts-on:T27 Acts-on2:T28
+T5	Action 213 216	Add
+E5	Action:T5 Acts-on:T35
+T6	Action 263 266	mix
+E6	Action:T6 Count:T38
+T7	Action 319 324	place
+E7	Action:T7 Acts-on:T39
+T8	Action 388 392	Thaw
+E8	Action:T8 Acts-on:T41 Site:T42
+T9	Action 417 424	Aliquot
+E9	Action:T9 Acts-on:T44 Site:T46
+T10	Action 476 479	Add
+E10	Action:T10 Acts-on:T48 Site:T49
+T11	Action 527 530	mix
+E11	Action:T11 Using:T50
+T12	Action 558 564	vortex
+E12	Action:T12 Acts-on:T51
+T13	Action 575 583	Incubate
+E13	Action:T13 Acts-on:T52 Site:T53
+T14	Action 623 626	mix
+E14	Action:T14 
+T15	Action 628 638	Heat shock
+E15	Action:T15 
+T16	Action 664 670	Return
+E16	Action:T16 Acts-on:T57 Site:T58
+T17	Action 698 701	Add
+E17	Action:T17 Acts-on:T61 Site:T62
+T18	Action 750 758	Incubate
+E18	Action:T18 Using:T19
+T21	Action 820 826	Spread
+E21	Action:T21 Acts-on:T66 Site:T71
+T22	Action 947 955	incubate
+E22	Action:T22 
+T23	Location 68 83	master mix tube
+T24	Location 87 90	ice
+T25	Numerical 103 106	few
+T26	Generic-Measure 129 138	20–100 ng
+T27	Reagent 142 148	vector
+T28	Reagent 156 185	3-fold molar excess of insert
+T30	Amount 198 201	5μl
+T31	Reagent 207 211	dH2O
+R1	Measure Arg1:T27 Arg2:T26	
+T29	Action 190 194	q.s.
+E23	Action:T29 Using:T31
+R2	Setting Arg1:E23 Arg2:T30	
+T32	Amount 217 221	5 μl
+T33	Modifier 225 232	Instant
+T34	Modifier 233 243	Sticky-end
+T35	Reagent 244 261	Ligase Master Mix
+R3	Mod-Link Arg1:T35 Arg2:T34	
+R4	Mod-Link Arg1:T35 Arg2:T33	
+R5	Measure Arg1:T35 Arg2:T32	
+T36	Modifier 267 277	thoroughly
+R6	Mod-Link Arg1:E6 Arg2:T36	
+T37	Method 291 302	up and down
+T38	Numerical 303 307	7-10
+T39	Location 328 331	ice
+T40	Modifier 393 402	competent
+T41	Reagent 403 408	cells
+R7	Mod-Link Arg1:T41 Arg2:T40	
+T42	Location 412 415	ice
+T43	Amount 425 430	50 μl
+T44	Reagent 434 439	cells
+T45	Amount 447 453	1.5 ml
+T46	Location 454 474	microcentrifuge tube
+R8	Measure Arg1:T46 Arg2:T45	
+R9	Measure Arg1:T44 Arg2:T43	
+T47	Amount 480 484	2 μl
+T48	Reagent 492 509	ligation reaction
+T49	Reagent 517 522	cells
+R10	Measure Arg1:T48 Arg2:T47	
+T50	Method 534 549	finger-flicking
+T51	Location 569 573	tube
+T52	Location 588 592	tube
+T53	Location 596 599	ice
+T54	Time 604 614	30 minutes
+R11	Setting Arg1:E13 Arg2:T54	
+T55	Temperature 642 646	42°C
+T56	Time 651 661	30 seconds
+R12	Setting Arg1:E15 Arg2:T55	
+R13	Setting Arg1:E15 Arg2:T56	
+T57	Location 671 675	tube
+T58	Location 679 682	ice
+T59	Time 687 696	2 minutes
+R14	Setting Arg1:E16 Arg2:T59	
+T60	Amount 702 708	950 μl
+T61	Reagent 709 723	recovery media
+T62	Location 742 746	tube
+R15	Measure Arg1:T61 Arg2:T60	
+T63	Time 763 771	one hour
+T64	Temperature 775 779	37°C
+R16	Setting Arg1:E18 Arg2:T63	
+R17	Setting Arg1:E18 Arg2:T64	
+T65	Speed 806 817	200–250 rpm
+T19	Method 785 804	rotation or shaking
+R18	Setting Arg1:E18 Arg2:T65	
+T20	Amount 827 833	100 μl
+T66	Reagent 841 850	outgrowth
+T68	Concentration 873 876	1:5
+T69	Reagent 882 896	recovery media
+R20	Measure Arg1:T66 Arg2:T20	
+T70	Modifier 903 914	appropriate
+T71	Location 915 942	antibiotic selection plates
+R21	Mod-Link Arg1:T71 Arg2:T70	
+T72	Time 956 965	overnight
+T73	Temperature 969 973	37°C
+R22	Setting Arg1:E22 Arg2:T72	
+R23	Setting Arg1:E22 Arg2:T73	
+T74	Action 0 7	Cloning
+E20	Action:T74 
+T75	Reagent 13 53	NEB Instant Sticky-end Ligase Master Mix
+T76	Reagent 337 343	sample
+T77	Method 372 386	transformation
+T78	Action 281 290	pipetting
+E24	Action:T78 Using:T37
+T79	Reagent 730 733	SOC
+R24	Coreference-Link Arg1:T79 Arg2:T61	
+T67	Action 852 861	undiluted
+E19	Action:T67 
+T80	Action 865 872	diluted
+E25	Action:T80 Using:T69
+R19	Or Arg1:E19 Arg2:E25	
+R25	Setting Arg1:E25 Arg2:T68	

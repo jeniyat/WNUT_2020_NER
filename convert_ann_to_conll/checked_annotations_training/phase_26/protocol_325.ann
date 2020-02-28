@@ -1,0 +1,132 @@
+T1	Action 49 56	Prepare
+E1	Action:T1 Acts-on:T16
+T2	Action 87 91	Load
+E2	Action:T2 Acts-on:T19 Site:T20
+T3	Action 96 99	run
+E3	Action:T3 Acts-on:T19 Site:T20
+T4	Action 286 293	Confirm
+E4	Action:T4 Site:T32 Using:T33
+T5	Action 386 393	Confirm
+E5	Action:T5 Using:T34 Using2:T35
+T6	Action 450 455	Block
+E6	Action:T6 Acts-on:T36 Site:T39 Using:T42
+T7	Action 562 570	Incubate
+E7	Action:T7 Acts-on:T45 Site:T46 Acts-on2:T47 Site2:T48
+T8	Action 698 702	Wash
+E8	Action:T8 Acts-on:T54 Using:T56
+T9	Action 768 776	Incubate
+E9	Action:T9 Acts-on:T61 Using:T71
+T10	Action 876 880	Wash
+E10	Action:T10 Acts-on:T64 Using:T66
+T11	Action 947 954	Develop
+E11	Action:T11 Acts-on:T73 Using:T74
+T12	Action 930 937	rocking
+E12	Action:T12 
+T13	Action 751 758	rocking
+E13	Action:T13 
+T14	Action 688 695	rocking
+E14	Action:T14 
+T15	Action 544 551	rocking
+E15	Action:T15 
+T16	Reagent 71 84	SDS-PAGE gels
+T17	Modifier 61 70	identical
+T18	Numerical 57 60	two
+R1	Mod-Link Arg1:T16 Arg2:T17	
+R2	Measure Arg1:T16 Arg2:T18	
+T19	Reagent 100 107	samples
+T20	Reagent 111 125	loading buffer
+T21	Location 157 163	Lane 1
+T22	Location 190 204	Lanes 2, 8, 10
+T23	Location 213 222	Lanes 3-6
+T24	Location 233 239	Lane 7
+T25	Location 259 265	Lane 9
+T26	Reagent 165 188	Molecular Weight Marker
+T27	Reagent 224 231	Samples
+T28	Action 140 147	loading
+E16	Action:T28 Acts-on:T29
+T29	Reagent 151 154	gel
+R8	Meronym Arg1:T26 Arg2:T21	
+R9	Meronym Arg1:T27 Arg2:T23	
+T30	Reagent 241 257	Positive Control
+R10	Meronym Arg1:T30 Arg2:T24	
+T31	Reagent 267 283	Negative Control
+R11	Meronym Arg1:T31 Arg2:T25	
+T32	Reagent 322 325	gel
+T33	Reagent 353 361	proteins
+T34	Method 414 421	Ponceau
+T35	Method 431 447	method of choice
+T36	Reagent 461 469	membrane
+T37	Amount 456 460	each
+T38	Amount 473 478	20 ml
+T39	Reagent 479 484	TBS-T
+T40	Amount 490 496	200 μl
+T41	Modifier 497 504	diluted
+T42	Reagent 505 535	Neu5Gc Assay Blocking Solution
+T43	Temperature 555 558	4°C
+T44	Modifier 537 543	gently
+R12	Measure Arg1:T36 Arg2:T37	
+R13	Measure Arg1:T39 Arg2:T38	
+R14	Measure Arg1:T42 Arg2:T40	
+R15	Mod-Link Arg1:T42 Arg2:T41	
+R16	Mod-Link Arg1:E15 Arg2:T44	
+R17	Setting Arg1:E15 Arg2:T43	
+T45	Reagent 571 581	first blot
+T46	Reagent 585 601	Primary Antibody
+T47	Reagent 611 615	blot
+T48	Reagent 619 635	Control Antibody
+T49	Time 640 647	2 hours
+T50	Temperature 651 655	25°C
+T51	Time 659 668	overnight
+T52	Temperature 672 675	4°C
+T53	Modifier 681 687	gentle
+R18	Setting Arg1:E7 Arg2:T49	
+R19	Setting Arg1:E7 Arg2:T50	
+R20	Or Arg1:T49 Arg2:T51	
+R21	Or Arg1:T50 Arg2:T52	
+R22	Mod-Link Arg1:E14 Arg2:T53	
+T54	Reagent 703 707	blot
+T55	Amount 713 718	50 ml
+T56	Reagent 719 724	TBS-T
+T57	Time 729 734	5 min
+T58	Temperature 738 742	25°C
+T59	Modifier 744 750	gently
+T60	Numerical 759 760	5
+T61	Reagent 777 782	blots
+T62	Temperature 858 862	25°C
+T63	Time 867 873	1 hour
+T64	Reagent 881 885	blot
+T65	Amount 891 896	50 ml
+T66	Reagent 897 902	TBS-T
+T67	Time 907 912	5 min
+T68	Temperature 916 920	25°C
+T69	Numerical 938 939	5
+T70	Concentration 788 804	optimal dilution
+T71	Reagent 808 844	enzyme-conjugated secondary antibody
+R23	Measure Arg1:T56 Arg2:T55	
+R24	Setting Arg1:E8 Arg2:T57	
+R25	Setting Arg1:E8 Arg2:T58	
+R26	Mod-Link Arg1:E13 Arg2:T59	
+R27	Setting Arg1:E13 Arg2:T60	
+R28	Measure Arg1:T71 Arg2:T70	
+R29	Setting Arg1:E9 Arg2:T62	
+R30	Setting Arg1:E9 Arg2:T63	
+R31	Measure Arg1:T66 Arg2:T65	
+R32	Setting Arg1:E10 Arg2:T67	
+R33	Setting Arg1:E10 Arg2:T68	
+R34	Setting Arg1:E12 Arg2:T69	
+T72	Modifier 923 929	gently
+T73	Reagent 960 964	blot
+T74	Reagent 974 995	appropriate substrate
+T75	Amount 955 959	each
+R35	Measure Arg1:T73 Arg2:T75	
+T76	Reagent 394 401	protein
+T77	Action 402 410	transfer
+E17	Action:T77 Acts-on:T76
+T78	Location 365 373	membrane
+T79	Action 329 352	Coomassie Staining Blot
+E18	Action:T79 Site:T78
+T80	Reagent 310 318	proteins
+T81	Device 0 24	Anti-Neu5Gc Antibody Kit
+T82	Action 36 48	Western blot
+E19	Action:T82 
+R36	Or Arg1:T34 Arg2:T35	

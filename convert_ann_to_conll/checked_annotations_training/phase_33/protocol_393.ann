@@ -1,0 +1,207 @@
+T1	Action 1539 1548	Inoculate
+E1	Action:T1 Acts-on:T8 Site:T13
+T2	Action 1735 1743	Transfer
+E2	Action:T2 Acts-on:T19 Site:T21
+T3	Action 1833 1838	shake
+E3	Action:T3 Product:T23
+T4	Action 1872 1876	Take
+E4	Action:T4 Acts-on:T28 Using:T29
+T5	Action 1913 1916	Add
+E5	Action:T5 Acts-on:T30 Measure-Type-Link:T34
+T6	Action 1962 1969	culture
+E6	Action:T6 
+T7	Action 2021 2028	discard
+E7	Action:T7 Acts-on:T38
+T9	Action 2046 2051	store
+E9	Action:T9 Acts-on:T39
+T8	Reagent 1549 1568	E. coli BL21 strain
+T10	Reagent 1584 1603	recombinant protein
+T11	Reagent 1607 1640	chloramphenicol acetyltransferase
+R1	Meronym Arg1:T10 Arg2:T11	
+R2	Meronym Arg1:T10 Arg2:T8	
+T12	Amount 1644 1647	5mL
+T13	Reagent 1648 1664	LB liquid medium
+T14	Temperature 1699 1703	37 C
+T15	Action 1704 1711	shaking
+E8	Action:T15 
+T16	Action 1716 1723	culture
+E10	Action:T16 
+T17	Time 1724 1733	overnight
+R3	Setting Arg1:E8 Arg2:T14	
+R4	Measure Arg1:T13 Arg2:T12	
+R5	Setting Arg1:E10 Arg2:T17	
+T18	Amount 1744 1747	1mL
+T19	Reagent 1748 1766	overnight cultures
+T20	Amount 1770 1776	100 mL
+T21	Reagent 1810 1826	LB liquid medium
+T22	Temperature 1828 1832	37 C
+T23	Reagent 1839 1846	culture
+T24	Generic-Measure 1853 1870	OD600 = 0.6 - 0.8
+R6	Measure Arg1:T23 Arg2:T24	
+R7	Setting Arg1:E3 Arg2:T22	
+R8	Measure Arg1:T21 Arg2:T20	
+R9	Measure Arg1:T19 Arg2:T18	
+T25	Concentration 1789 1797	100ug/mL
+T26	Reagent 1798 1808	ampicillin
+R10	Measure Arg1:T26 Arg2:T25	
+R11	Meronym Arg1:T26 Arg2:T21	
+T27	Amount 1877 1881	10ul
+T28	Reagent 1882 1889	samples
+T29	Method 1894 1911	SDS-PAGE analysis
+R12	Measure Arg1:T28 Arg2:T27	
+T30	Reagent 1917 1921	IPTG
+T31	Concentration 1950 1960	0.5 mmol/l
+T32	Time 1970 1974	1-3h
+T33	Temperature 1978 1982	37 C
+R13	Setting Arg1:E6 Arg2:T32	
+R14	Setting Arg1:E6 Arg2:T33	
+T34	Measure-Type 1927 1946	final concentration
+R15	Setting Arg1:E5 Arg2:T31	
+T35	Speed 1984 1993	12,000rpm
+T37	Time 2013 2019	10 min
+T38	Reagent 2033 2044	supernatant
+T39	Reagent 2052 2068	cell precipitate
+T40	Temperature 2072 2077	-20 C
+T41	Temperature 2081 2086	-70 C
+R16	Setting Arg1:E9 Arg2:T40	
+R17	Or Arg1:T40 Arg2:T41	
+T42	Reagent 0 7	Protein
+T43	Method 8 18	Expression
+T44	Method 21 30	Isolation
+T45	Method 33 45	Purification
+T46	Method 54 64	expression
+T47	Method 115 125	regulation
+T48	Reagent 129 144	gene expression
+T49	Reagent 161 168	protein
+T50	Action 169 176	encoded
+E12	Action:T50 Acts-on:T49
+T51	Method 180 202	cloned gene expression
+T52	Reagent 256 263	E. Coli
+T53	Method 288 314	protein expression systems
+T54	Measure-Type 323 339	expression level
+T55	Reagent 343 365	exogenous gene product
+T56	Method 392 415	gene expression systems
+T57	Concentration 1677 1685	100ug/mL
+T58	Reagent 1686 1696	ampicillin
+R20	Measure Arg1:T58 Arg2:T57	
+R21	Meronym Arg1:T58 Arg2:T13	
+T36	Method 1994 2008	centrifugation
+T59	Method 1471 1480	Induction
+T60	Reagent 1484 1537	Chloramphenicol acetyltransferase recombinant protein
+T61	Reagent 440 447	protein
+T62	Action 448 457	expressed
+E11	Action:T62 Acts-on:T61
+T63	Modifier 431 439	targeted
+R18	Mod-Link Arg1:T61 Arg2:T63	
+T64	Concentration 476 479	80%
+T65	Reagent 493 511	bacterial proteins
+R19	Measure Arg1:T65 Arg2:T64	
+T66	Reagent 530 537	plasmid
+T67	Reagent 551 555	gene
+T68	Reagent 563 577	target protein
+T69	Reagent 581 593	E. coli BL21
+T70	Temperature 602 606	37 C
+T71	Method 608 635	IPTG induced overexpression
+T72	Numerical 647 650	six
+T73	Reagent 663 735	histidine residues recombinant chloramphenicol acetyltransferase protein
+T74	Method 763 783	covalent conjugation
+T75	Reagent 787 808	nitrilotriacetic acid
+T76	Reagent 810 813	NTA
+T77	Reagent 815 826	nickel ions
+T78	Reagent 828 833	Ni2 +
+T79	Modifier 835 846	immobilized
+T80	Reagent 847 868	chromatographic media
+T81	Modifier 875 883	purified
+T82	Method 893 927	boil metal affinity chromatography
+T83	Method 929 933	MCAC
+T84	Method 950 962	purification
+T85	Reagent 970 977	protein
+T86	Action 985 993	analyzed
+E13	Action:T86 Acts-on:T85 Using:T87
+T87	Method 997 1031	polyacrylamide gel electrophoresis
+T88	Reagent 1033 1041	Reagents
+T89	Reagent 1046 1071	Equipment ReagentLB broth
+T90	Reagent 1073 1080	Trytone
+T91	Amount 1081 1084	10g
+T92	Reagent 1086 1099	yeast extract
+T93	Amount 1100 1102	5g
+T94	Reagent 1104 1108	NaCl
+T95	Amount 1109 1112	10g
+T96	Action 1114 1117	add
+E14	Action:T96 Using:T99
+T97	Modifier 1118 1123	up to
+T98	Amount 1124 1130	1000ml
+T99	Reagent 1136 1151	distilled water
+T100	Reagent 1152 1162	ampicillin
+T101	Concentration 1164 1174	100mg / mL
+T102	Reagent 1174 1186	SampleBuffer
+T103	Concentration 1188 1194	100 mM
+T104	Reagent 1195 1202	NaH2PO4
+T105	Concentration 1204 1209	10 mM
+T106	Reagent 1209 1213	Tris
+T107	Concentration 1215 1217	8M
+T108	Reagent 1218 1222	Urea
+T109	Concentration 1224 1229	10 mM
+T110	Reagent 1229 1233	2-ME
+T111	pH 1235 1240	pH8.0
+T112	Reagent 1244 1258	Washing Buffer
+T113	Concentration 1259 1265	100 mM
+T114	Reagent 1266 1273	NaH2PO4
+T115	Concentration 1275 1280	10 mM
+T116	Reagent 1281 1285	Tris
+T117	Concentration 1287 1290	8 M
+T118	Reagent 1291 1295	Urea
+T119	pH 1297 1302	pH6.3
+T120	Reagent 1306 1320	Elution Buffer
+T121	Concentration 1321 1327	100 mM
+T122	Reagent 1328 1335	NaH2PO4
+T123	Concentration 1337 1342	10 mM
+T124	Reagent 1342 1346	Tris
+T125	Concentration 1348 1350	8M
+T126	Reagent 1351 1355	Urea
+T127	Concentration 1357 1363	500 mM
+T128	Reagent 1364 1373	Imidazole
+T129	pH 1375 1380	pH8.0
+T130	Device 1384 1404	IPTG EquipmentShaker
+T132	Location 1419 1440	chromatography column
+T133	Size 1442 1449	1'10 cm
+R22	Meronym Arg1:T67 Arg2:T66	
+R23	Coreference-Link Arg1:T76 Arg2:T75	
+R24	Coreference-Link Arg1:T78 Arg2:T77	
+R25	Mod-Link Arg1:T80 Arg2:T79	
+R26	Mod-Link Arg1:T80 Arg2:T81	
+R27	Measure Arg1:T90 Arg2:T91	
+R28	Measure Arg1:T92 Arg2:T93	
+R29	Measure Arg1:T94 Arg2:T95	
+R30	Setting Arg1:E14 Arg2:T98	
+R31	Mod-Link Arg1:T98 Arg2:T97	
+R32	Measure Arg1:T100 Arg2:T101	
+R33	Measure Arg1:T104 Arg2:T103	
+R34	Measure Arg1:T106 Arg2:T105	
+R35	Measure Arg1:T108 Arg2:T107	
+R36	Measure Arg1:T110 Arg2:T109	
+R37	Measure Arg1:T110 Arg2:T111	
+R38	Measure Arg1:T114 Arg2:T113	
+R39	Measure Arg1:T116 Arg2:T115	
+R40	Measure Arg1:T118 Arg2:T117	
+R41	Measure Arg1:T118 Arg2:T119	
+R42	Measure Arg1:T122 Arg2:T121	
+R43	Measure Arg1:T124 Arg2:T123	
+R44	Measure Arg1:T126 Arg2:T125	
+R45	Measure Arg1:T128 Arg2:T127	
+R46	Measure Arg1:T128 Arg2:T129	
+R47	Measure Arg1:T132 Arg2:T133	
+T131	Device 1406 1417	centrifuges
+T134	Action 1453 1462	Operating
+E15	Action:T134 
+R48	Meronym Arg1:T104 Arg2:T102	
+R49	Meronym Arg1:T106 Arg2:T102	
+R50	Meronym Arg1:T108 Arg2:T102	
+R51	Meronym Arg1:T110 Arg2:T102	
+R52	Meronym Arg1:T114 Arg2:T112	
+R53	Meronym Arg1:T116 Arg2:T112	
+R54	Meronym Arg1:T118 Arg2:T112	
+R55	Meronym Arg1:T122 Arg2:T120	
+R56	Meronym Arg1:T124 Arg2:T120	
+R57	Meronym Arg1:T126 Arg2:T120	
+R58	Meronym Arg1:T128 Arg2:T120	

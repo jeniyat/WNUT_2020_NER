@@ -1,0 +1,128 @@
+T1	Amount 45 51	200 µL
+T2	Reagent 52 69	overnight culture
+T3	Action 73 83	inoculated
+E1	Action:T3 Acts-on:T2 Site:T5 Using:T7
+T4	Size 87 93	100 mL
+T5	Location 94 107	culture flask
+T6	Amount 113 118	50 mL
+T7	Reagent 119 132	growth medium
+T8	Reagent 140 142	LB
+R1	Meronym Arg1:T8 Arg2:T7	
+R2	Measure Arg1:T7 Arg2:T6	
+R3	Measure Arg1:T2 Arg2:T1	
+R4	Measure Arg1:T5 Arg2:T4	
+T9	Action 145 153	Incubate
+E2	Action:T9 Site:T10
+T10	Location 157 172	a shaking table
+T12	Amount 289 293	1 mL
+T13	Reagent 294 302	aliquots
+T14	Reagent 310 327	bacterial culture
+T15	Action 332 337	mixed
+E3	Action:T15 Acts-on:T13 Acts-on2:T16 Site:T18
+R6	Measure Arg1:T13 Arg2:T12	
+R7	Meronym Arg1:T14 Arg2:T13	
+T16	Reagent 343 353	subsamples
+T17	Reagent 361 372	phage stock
+R8	Meronym Arg1:T17 Arg2:T16	
+T18	Location 376 402	triplicate microfuge tubes
+T19	Measure-Type 409 440	multiplicity of infection (MOI)
+R9	Setting Arg1:E3 Arg2:T19	
+T20	Action 464 472	Incubate
+E4	Action:T20 
+T21	Time 477 483	10 min
+T22	Action 487 492	allow
+E5	Action:T22 Site:T24 Acts-on:T23
+T23	Reagent 497 503	phages
+T24	Reagent 521 531	host cells
+R10	Setting Arg1:E4 Arg2:T21	
+T25	Action 533 543	Centrifuge
+E6	Action:T25 Acts-on:T26
+T26	Reagent 548 553	cells
+T27	Speed 555 560	6000g
+T28	Time 562 568	10 min
+R11	Setting Arg1:E6 Arg2:T27	
+R12	Setting Arg1:E6 Arg2:T28	
+T29	Action 571 577	Remove
+E7	Action:T29 Acts-on:T30
+T30	Reagent 582 593	supernatant
+T31	Action 595 604	Resuspend
+E8	Action:T31 Site:T34 Acts-on:T32
+T32	Reagent 609 615	pellet
+T33	Amount 619 623	1 mL
+T34	Reagent 624 637	growth medium
+T35	Reagent 645 647	LB
+R13	Meronym Arg1:T35 Arg2:T34	
+R14	Measure Arg1:T34 Arg2:T33	
+T36	Action 650 666	Repeat steps 5-7
+E9	Action:T36 
+T37	Action 670 678	wash out
+E10	Action:T37 Acts-on:T38
+T38	Reagent 691 708	unadsorbed phages
+T39	Action 710 718	Transfer
+E11	Action:T39 Acts-on:T41 Site:T45
+T40	Amount 719 724	50 µL
+T41	Reagent 732 751	resuspended culture
+T42	Reagent 753 761	bacteria
+T43	Reagent 766 781	adsorbed phages
+R15	Meronym Arg1:T42 Arg2:T41	
+R16	Meronym Arg1:T43 Arg2:T41	
+R17	Measure Arg1:T41 Arg2:T40	
+T44	Amount 786 791	50 mL
+T45	Reagent 792 805	growth medium
+T46	Amount 811 817	100 mL
+T47	Location 818 831	culture flask
+T48	Action 836 839	mix
+E12	Action:T48 
+R18	Measure Arg1:T45 Arg2:T44	
+R19	Measure Arg1:T47 Arg2:T46	
+R20	Meronym Arg1:T45 Arg2:T47	
+T49	Action 846 854	Transfer
+E13	Action:T49 Site:T51
+T50	Amount 855 859	1 mL
+T51	Location 865 879	microfuge tube
+T52	Action 881 889	Incubate
+E14	Action:T52 Acts-on:T54 Site:T56
+T53	Amount 905 910	50 mL
+T54	Reagent 911 919	cultures
+T55	Modifier 894 904	triplicate
+R21	Measure Arg1:T54 Arg2:T53	
+R22	Mod-Link Arg1:T54 Arg2:T55	
+T56	Location 923 938	a shaking table
+T57	Action 940 949	Determine
+E15	Action:T57 Using:T59 Acts-on:T60
+T58	Generic-Measure 954 967	number of PFU
+T59	Method 998 1010	plaque assay
+T60	Reagent 1018 1034	collected sample
+R23	Setting Arg1:E15 Arg2:T58	
+T61	Reagent 1056 1063	samples
+T62	Action 1036 1055	Continue to collect
+E16	Action:T62 Acts-on:T61
+T63	Time 1086 1095	6–8 hours
+R24	Setting Arg1:E16 Arg2:T63	
+T64	Reagent 9 27	growth experiments
+T65	Reagent 29 43	bacteriophages
+T66	Modifier 0 8	One-step
+R25	Mod-Link Arg1:T64 Arg2:T66	
+T11	Measure-Type 183 190	density
+T67	Reagent 198 205	culture
+T68	Reagent 218 222	cell
+T69	Measure-Type 223 230	density
+T70	Modifier 234 235	~
+T71	Generic-Measure 235 251	5 × 108 CFU mL–1
+R5	Mod-Link Arg1:T71 Arg2:T70	
+T72	Measure-Type 273 278	OD525
+T73	Numerical 283 286	0.3
+R26	Of-Type Arg1:T73 Arg2:T72	
+T74	Modifier 282 283	~
+R27	Mod-Link Arg1:T73 Arg2:T74	
+T75	Numerical 458 462	0.01
+R28	Of-Type Arg1:T75 Arg2:T19	
+T76	Modifier 444 457	approximately
+R29	Mod-Link Arg1:T75 Arg2:T76	
+T77	Measure-Type 1068 1071	PFU
+T78	Generic-Measure 969 993	total infectious centers
+R30	Coreference-Link Arg1:T78 Arg2:T58	
+T79	Modifier 840 844	well
+R31	Mod-Link Arg1:E12 Arg2:T79	
+T80	Action 507 513	adsorb
+E17	Action:T80 Acts-on:T24

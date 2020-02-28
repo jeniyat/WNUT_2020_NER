@@ -1,0 +1,190 @@
+T1	Action 46 53	Arrange
+E1	Action:T1 Acts-on:T25
+T2	Action 206 211	Place
+E2	Action:T2 Acts-on:T34 Site:T35
+T3	Action 236 241	Place
+E3	Action:T3 Acts-on:T36 Site:T38 Using:T37
+T4	Action 284 289	Place
+E4	Action:T4 Acts-on:T40 Site:T41
+T5	Action 351 357	Remove
+E5	Action:T5 Acts-on:T46 Site:T45
+T6	Action 379 384	rinse
+E6	Action:T6 Count:T48
+T8	Action 494 498	move
+E8	Action:T8 Acts-on:T7 Using:T56
+T10	Action 686 691	Rinse
+E10	Action:T10 
+T11	Action 744 749	Place
+E11	Action:T11 Acts-on:T67 Using:T68 Site:T70
+T12	Action 815 821	invert
+E12	Action:T12 Acts-on:T72
+T13	Action 829 835	rotate
+E13	Action:T13 Acts-on:T72
+T14	Action 909 915	Remove
+E14	Action:T14 Acts-on:T78 Acts-on2:T79 Site:T80
+T15	Action 949 954	rinse
+E15	Action:T15 Acts-on:T82
+T16	Action 1000 1005	Clean
+E16	Action:T16 Acts-on:T87 Using:T89
+T17	Action 1057 1062	place
+E17	Action:T17 Acts-on:T91 Site:T92
+T18	Action 1140 1146	remove
+E18	Action:T18 Acts-on:T94 Using:T100 Site:T95
+T19	Action 1229 1234	Stand
+E19	Action:T19 Acts-on:T104
+T20	Action 1265 1274	shake out
+E20	Action:T20 Acts-on:T107
+T21	Action 1289 1292	cap
+E21	Action:T21 Acts-on:T108
+T22	Action 1303 1308	place
+E22	Action:T22 Acts-on:T109
+T23	Action 141 144	fit
+E23	Action:T23 Acts-on:T31 Site:T32
+T24	Action 623 628	shake
+E24	Action:T24 Acts-on:T62
+T9	Action 1188 1193	rinse
+E9	Action:T9 Acts-on:T96 Count:T99 Acts-on2:T98
+T25	Location 54 59	vials
+T26	Mention 68 72	they
+T27	Action 77 80	sit
+E25	Action:T27 Acts-on:T26 Using:T28 Site:T29
+T28	Method 81 88	upright
+T29	Location 94 112	large plastic cage
+R1	Coreference-Link Arg1:T26 Arg2:T25	
+T30	Numerical 151 153	60
+T31	Location 154 159	vials
+T32	Location 193 204	single cage
+R2	Measure Arg1:T31 Arg2:T30	
+T33	Modifier 145 150	about
+R3	Mod-Link Arg1:T31 Arg2:T33	
+T34	Seal 212 216	caps
+T35	Location 224 234	small cage
+T36	Location 242 247	cages
+T37	Method 248 255	upright
+T38	Device 263 272	soap bath
+T39	Time 273 282	overnight
+R4	Setting Arg1:E3 Arg2:T39	
+T40	Reagent 292 311	large piece of PTFE
+T41	Location 321 326	cages
+T42	Action 330 334	keep
+E26	Action:T42 Acts-on:T43
+T43	Mention 335 339	them
+R5	Coreference-Link Arg1:T43 Arg2:T40	
+T45	Location 358 363	cages
+T46	Reagent 369 373	soap
+T47	Modifier 385 395	thoroughly
+T48	Numerical 396 397	7
+T49	Action 407 413	remove
+E27	Action:T49 Acts-on:T50
+T50	Reagent 414 418	soap
+R6	Mod-Link Arg1:E6 Arg2:T47	
+T51	Reagent 453 458	water
+T52	Action 459 463	gets
+E28	Action:T52 Acts-on:T51 Site:T55
+T53	Modifier 469 473	each
+T54	Modifier 474 484	individual
+T55	Location 485 489	vial
+R7	Mod-Link Arg1:T55 Arg2:T54	
+R8	Mod-Link Arg1:T55 Arg2:T53	
+T7	Location 503 507	cage
+T56	Method 508 522	back and forth
+T57	Modifier 529 533	each
+T58	Location 541 546	vials
+T59	Modifier 559 568	partially
+T60	Modifier 550 558	at least
+T61	Action 569 575	filled
+E7	Action:T61 Acts-on:T58
+R9	Mod-Link Arg1:E7 Arg2:T59	
+R10	Mod-Link Arg1:E7 Arg2:T60	
+R11	Mod-Link Arg1:T58 Arg2:T57	
+T62	Location 633 637	cage
+T63	Action 678 684	rinsed
+E29	Action:T63 Acts-on:T64
+T64	Location 649 657	interior
+T65	Location 669 674	vials
+T66	Modifier 661 664	all
+R12	Mod-Link Arg1:T65 Arg2:T66	
+R13	Meronym Arg1:T64 Arg2:T65	
+T67	Location 750 755	cages
+T68	Method 756 763	upright
+T69	Concentration 771 773	1N
+T70	Device 774 782	HCl bath
+R14	Setting Arg1:T70 Arg2:T69	
+T71	Modifier 836 839	all
+T72	Location 847 852	cages
+T73	Action 900 907	exposed
+E30	Action:T73 Acts-on:T75
+T74	Modifier 883 886	all
+T75	Location 887 895	surfaces
+T76	Location 854 859	vials
+T77	Seal 864 868	caps
+R15	Meronym Arg1:T77 Arg2:T72	
+R16	Meronym Arg1:T76 Arg2:T72	
+R17	Mod-Link Arg1:T72 Arg2:T71	
+R18	Mod-Link Arg1:T75 Arg2:T74	
+T78	Location 916 921	vials
+T79	Location 926 930	caps
+T80	Device 940 944	bath
+T81	Modifier 955 959	each
+T82	Location 960 964	cage
+T83	Numerical 965 966	7
+T84	Action 976 982	remove
+E31	Action:T84 Acts-on:T86
+T85	Modifier 983 987	most
+T86	Reagent 995 998	HCl
+R19	Mod-Link Arg1:T86 Arg2:T85	
+R20	Mod-Link Arg1:T82 Arg2:T81	
+R21	Setting Arg1:E15 Arg2:T83	
+T87	Location 1009 1013	area
+T88	Modifier 1041 1046	clean
+T89	Device 1047 1051	wipe
+R22	Mod-Link Arg1:T89 Arg2:T88	
+T90	Location 1021 1033	drying bench
+R23	Meronym Arg1:T87 Arg2:T90	
+T91	Location 1063 1068	cages
+T92	Location 1078 1090	drying bench
+T93	Modifier 1147 1151	each
+T94	Location 1152 1156	vial
+T95	Location 1166 1170	cage
+T96	Location 1198 1202	vial
+T97	Numerical 1208 1211	one
+T98	Seal 1212 1215	cap
+T99	Numerical 1216 1221	three
+R24	Mod-Link Arg1:T94 Arg2:T93	
+R25	Measure Arg1:T98 Arg2:T97	
+T100	Device 1127 1138	poly gloves
+T101	Modifier 1120 1126	rinsed
+T102	Modifier 1097 1115	thoroughly cleaned
+R26	Mod-Link Arg1:T100 Arg2:T101	
+R27	Mod-Link Arg1:T100 Arg2:T102	
+T103	Modifier 1175 1187	individually
+R28	Mod-Link Arg1:E9 Arg2:T103	
+T104	Location 1238 1243	front
+T105	Location 1251 1261	flow bench
+R29	Meronym Arg1:T104 Arg2:T105	
+T106	Modifier 1275 1281	excess
+T107	Reagent 1282 1287	water
+R30	Mod-Link Arg1:T107 Arg2:T106	
+T108	Location 1293 1297	vial
+T109	Location 1314 1317	bag
+T110	Method 0 21	Time Efficient Method
+T111	Action 26 33	Washing
+E32	Action:T111 Acts-on:T113
+T112	Amount 34 39	15 mL
+T113	Location 40 45	Vials
+R31	Measure Arg1:T113 Arg2:T112	
+T114	Numerical 177 180	one
+T115	Location 181 184	bag
+T44	Modifier 340 349	submerged
+R32	Mod-Link Arg1:T43 Arg2:T44	
+T116	Action 582 589	pouring
+E33	Action:T116 Acts-on:T117
+T117	Reagent 594 599	water
+T118	Location 696 704	outsides
+T119	Action 716 723	rinsing
+E34	Action:T119 
+T120	Location 728 742	vial interiors
+T121	Numerical 784 788	Once
+T122	Numerical 792 797	twice
+R33	Or Arg1:T121 Arg2:T122	
+T123	Time 809 813	week

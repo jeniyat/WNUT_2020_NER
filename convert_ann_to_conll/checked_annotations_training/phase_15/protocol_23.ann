@@ -1,0 +1,539 @@
+T1	Action 55 64	Inoculate
+E1	Action:T1 Acts-on:T3 Using:T5
+T2	Amount 65 72	1000 mL
+T3	Reagent 76 83	L broth
+T4	Amount 127 132	10 mL
+T5	Reagent 139 178	overnight culture of the E. coli strain
+T6	Reagent 194 201	plasmid
+T7	Action 218 226	Incubate
+E2	Action:T7 
+T8	Temperature 230 234	37°C
+T9	Time 235 244	overnight
+R3	Setting Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T9
+T10	Action 392 395	add
+E3	Action:T10 Acts-on:T11 Acts-on2:T14
+T11	Reagent 396 411	chloramphenicol
+T12	Concentration 413 421	34 mg/mL
+T13	Reagent 465 478	spectinomycin
+T14	Reagent 495 514	final concentration
+T16	Concentration 452 461	170 ug/mL
+T17	Concentration 480 488	10 mg/mL
+T18	Concentration 518 526	50 ug/mL
+T19	Action 581 589	Incubate
+E4	Action:T19 
+T20	Temperature 593 597	37°C
+T21	Time 598 607	overnight
+R7	Setting Arg1:E4 Arg2:T20
+R8	Setting Arg1:E4 Arg2:T21
+T22	Action 609 619	Centrifuge
+E5	Action:T22 Acts-on:T23 Site:T24
+T23	Reagent 624 639	bacterial cells
+T24	Device 647 664	Sorvall GSA rotor
+T25	Speed 668 677	5,000 rpm
+T26	Time 679 684	5 min
+T27	Temperature 686 689	4°C
+R9	Setting Arg1:E5 Arg2:T25
+R10	Setting Arg1:E5 Arg2:T26
+R11	Setting Arg1:E5 Arg2:T27
+T28	Action 691 694	Use
+E6	Action:T28 Acts-on:T30
+T29	Amount 695 703	3-250 mL
+T30	Location 704 715	GSA bottles
+T31	Action 739 746	Discard
+E7	Action:T31 Acts-on:T32
+T32	Reagent 751 763	supernatants
+T33	Action 765 774	Resuspend
+E8	Action:T33 Acts-on:T34 Site:T36
+T34	Reagent 779 784	cells
+T35	Amount 790 795	60 mL
+T36	Reagent 821 838	lysozyme solution
+T37	Action 840 848	Incubate
+E9	Action:T37 Site:T38
+T38	Location 852 855	ice
+T39	Time 860 866	30 min
+R14	Setting Arg1:E9 Arg2:T39
+T40	Action 868 871	Add
+E10	Action:T40 Acts-on:T42
+T41	Amount 872 878	120 mL
+T42	Reagent 908 929	alkaline SDS solution
+T43	Modifier 931 937	Gently
+T44	Action 938 941	mix
+E11	Action:T44 Using:T45
+T45	Method 946 955	inversion
+T46	Action 984 992	Incubate
+E12	Action:T46 Acts-on:T47
+T47	Location 996 999	ice
+T48	Time 1004 1009	5 min
+R16	Setting Arg1:E12 Arg2:T48
+T49	Action 1011 1014	Add
+E13	Action:T49 Acts-on:T51
+T50	Amount 1015 1020	90 mL
+T51	Reagent 1050 1068	high salt solution
+T52	Action 1070 1073	Mix
+E14	Action:T52 
+T53	Action 1083 1091	incubate
+E15	Action:T53 Acts-on:T55
+T54	Modifier 1074 1078	well
+T55	Location 1095 1098	ice
+T56	Time 1103 1112	30-60 min
+R18	Setting Arg1:E15 Arg2:T56
+T57	Action 1114 1124	Centrifuge
+E16	Action:T57 Acts-on:T58 Site:T59
+T58	Location 1129 1136	bottles
+T59	Device 1144 1161	Sorvall GSA rotor
+T60	Speed 1165 1175	10,000 rpm
+T61	Time 1177 1183	10 min
+T62	Temperature 1185 1188	4°C
+T63	Action 1190 1196	Decant
+E17	Action:T63 Acts-on:T64 Site:T66
+T64	Reagent 1201 1213	supernatants
+T65	Modifier 1217 1222	clean
+T66	Location 1223 1230	bottles
+T67	Action 1232 1243	Precipitate
+E18	Action:T67 Acts-on:T68 Acts-on2:T71
+T68	Reagent 1248 1251	DNA
+T69	Amount 1283 1293	170-180 mL
+T70	Concentration 1298 1302	100%
+T71	Reagent 1303 1307	EtOH
+T72	Action 1309 1313	Hold
+E19	Action:T72 
+T73	Temperature 1317 1322	-80°C
+T74	Time 1327 1333	60 min
+T75	Action 1335 1345	Centrifuge
+E20	Action:T75 Acts-on:T76 Site:T77
+T76	Location 1350 1357	bottles
+T77	Device 1365 1382	Sorvall GSA rotor
+T78	Speed 1386 1396	10,000 rpm
+T79	Time 1398 1404	10 min
+T80	Temperature 1406 1409	4°C
+T81	Action 1411 1418	Discard
+E21	Action:T81 Acts-on:T82
+T82	Reagent 1423 1435	supernatants
+T83	Action 1437 1446	Resuspend
+E22	Action:T83 Acts-on:T84 Using:T87
+T84	Reagent 1451 1458	pellets
+T85	Amount 1464 1469	10 mL
+T86	Concentration 1478 1483	50 mM
+T87	Reagent 1484 1492	Tris-HCl
+T90	Concentration 1502 1508	100 mM
+T91	Reagent 1509 1514	NaOAc
+T92	Action 1516 1524	Transfer
+E23	Action:T92 Acts-on:T93 Site:T95
+T93	Reagent 1529 1537	material
+T94	Amount 1541 1546	30 mL
+T95	Location 1547 1558	corex tubes
+R19	Measure Arg1:T95 Arg2:T94
+T96	Action 1560 1563	Add
+E24	Action:T96 Acts-on:T98 Site:T99 Measure-Type-Link:T97
+T98	Reagent 1583 1606	buffer-saturated phenol
+T99	Location 1615 1619	tube
+T100	Action 1621 1624	Mix
+E25	Action:T100 
+T101	Modifier 1625 1629	well
+T102	Action 1634 1644	centrifuge
+E26	Action:T102 Site:T103
+T103	Device 1652 1670	Sorvall SS34 rotor
+T104	Speed 1674 1684	10,000 rpm
+T105	Time 1686 1692	10 min
+T106	Temperature 1694 1710	room temperature
+T107	Action 1712 1718	Remove
+E27	Action:T107 Acts-on:T108
+T108	Reagent 1723 1743	upper aqueous layers
+T109	Action 1747 1752	clean
+E28	Action:T109 Acts-on:T111
+T110	Amount 1753 1758	30 mL
+T111	Location 1759 1770	corex tubes
+T112	Action 1772 1783	Precipitate
+E29	Action:T112 Acts-on:T113 Using:T115
+T113	Reagent 1788 1792	DNAs
+T114	Concentration 1812 1816	100%
+T115	Reagent 1817 1821	EtOH
+T117	Action 1823 1827	Hold
+E30	Action:T117 
+T118	Temperature 1831 1836	-80°C
+T119	Time 1841 1847	45 min
+T120	Action 1849 1859	Centrifuge
+E31	Action:T120 Acts-on:T121 Site:T122
+T121	Location 1864 1869	tubes
+T122	Device 1877 1895	Sorvall HB-4 rotor
+T123	Speed 1899 1909	10,000 rpm
+T124	Time 1911 1917	10 min
+T125	Temperature 1919 1922	4°C
+T126	Action 1924 1931	Discard
+E32	Action:T126 Acts-on:T127
+T127	Reagent 1936 1948	supernatants
+T128	Action 1950 1953	Dry
+E33	Action:T128 Acts-on:T129 Site:T132
+T129	Reagent 1958 1965	pellets
+T130	Modifier 1966 1973	briefly
+T131	Time 1975 1984	10-15 min
+T132	Device 1993 2011	vacuum  desiccator
+T133	Action 2015 2021	remove
+E34	Action:T133 Acts-on:T134
+T134	Reagent 2026 2030	EtOH
+T135	Action 2032 2041	Resuspend
+E35	Action:T135 Acts-on:T136 Using:T139
+T136	Reagent 2047 2058	plasmid DNA
+T137	Amount 2075 2080	10 mL
+T138	Concentration 2084 2086	1X
+T139	Reagent 2087 2096	TE buffer
+T140	Action 2098 2107	Weigh out
+E36	Action:T140 Acts-on:T142 Site:T144 Acts-on2:T145
+T141	Amount 2116 2122	6.8 gm
+T142	Reagent 2126 2130	CsCl
+T143	Amount 2144 2151	2-30 mL
+T144	Location 2152 2163	corex tubes
+T145	Reagent 2173 2184	plasmid DNA
+T146	Action 2186 2192	Divide
+E37	Action:T146 Acts-on:T147 Site:T149
+T147	Reagent 2198 2218	plasmid DNA solution
+T148	Numerical 2231 2232	2
+T149	Location 2233 2238	tubes
+T150	Action 2270 2273	Add
+E38	Action:T150 Acts-on:T152 Site:T153 Product:T295
+T151	Concentration 2274 2276	1X
+T152	Reagent 2277 2286	TE buffer
+T153	Location 2294 2299	tubes
+R21	Setting Arg1:E16 Arg2:T60
+R22	Setting Arg1:E16 Arg2:T61
+R23	Setting Arg1:E16 Arg2:T62
+R27	Setting Arg1:E19 Arg2:T73
+R28	Setting Arg1:E19 Arg2:T74
+R29	Setting Arg1:E20 Arg2:T78
+R30	Setting Arg1:E20 Arg2:T79
+R31	Setting Arg1:E20 Arg2:T80
+R34	Measure Arg1:T91 Arg2:T90
+R36	Setting Arg1:E26 Arg2:T104
+R37	Setting Arg1:E26 Arg2:T105
+R38	Setting Arg1:E26 Arg2:T106
+R41	Setting Arg1:E30 Arg2:T118
+R42	Setting Arg1:E30 Arg2:T119
+R43	Setting Arg1:E31 Arg2:T123
+R44	Setting Arg1:E31 Arg2:T124
+R45	Setting Arg1:E31 Arg2:T125
+R46	Setting Arg1:E33 Arg2:T131
+T154	Action 2357 2360	Mix
+E39	Action:T154 
+T156	Modifier 2361 2365	well
+T157	Action 2402 2405	Add
+E40	Action:T157 Acts-on:T159 Site:T161
+T158	Amount 2406 2412	512 µL
+T159	Reagent 2416 2432	ethidium bromide
+T160	Concentration 2434 2442	10 mg/mL
+T161	Location 2452 2456	tube
+T162	Action 2458 2461	Mix
+E41	Action:T162 
+T163	Modifier 2462 2466	well
+T164	Action 2468 2478	Centrifuge
+E42	Action:T164 Acts-on:T165 Site:T166
+T165	Location 2483 2488	tubes
+T166	Device 2496 2514	Sorvall SS34 rotor
+T167	Speed 2518 2528	10,000 rpm
+T168	Time 2530 2536	15 min
+T169	Temperature 2538 2541	4°C
+R55	Setting Arg1:E42 Arg2:T167
+R56	Setting Arg1:E42 Arg2:T168
+R57	Setting Arg1:E42 Arg2:T169
+T170	Action 2543 2551	Transfer
+E43	Action:T170 Acts-on:T171 Site:T172 Using:T173 Using2:T174
+T171	Reagent 2556 2568	supernatants
+T172	Location 2572 2619	Beckman polyallomar Ti50 rotor quick-seal tubes
+T173	Device 2628 2635	syringe
+T174	Device 2640 2646	needle
+T175	Generic-Measure 2648 2651	18g
+T176	Action 2654 2658	Fill
+E44	Action:T176 Acts-on:T177 Acts-on2:T178
+T177	Location 2663 2668	tubes
+T178	Reagent 2689 2719	CsCl/ethidium bromide solution
+T179	Amount 2721 2727	6.8 gm
+T180	Reagent 2728 2732	CsCl
+T181	Reagent 2744 2753	TE buffer
+T182	Reagent 2771 2787	ethidium bromide
+T183	Amount 2734 2740	6.4 mL
+T184	Amount 2755 2761	512 µL
+T185	Concentration 2741 2743	1X
+T186	Concentration 2762 2770	10 mg/ml
+T187	Action 2790 2794	Seal
+E45	Action:T187 Acts-on:T188 Using:T189
+T188	Location 2799 2804	tubes
+T189	Seal 2814 2833	Beckman tube sealer
+T190	Action 2835 2845	Centrifuge
+E46	Action:T190 Acts-on:T191 Site:T192
+T191	Reagent 2850 2859	gradients
+T192	Device 2867 2885	Beckamn Ti50 rotor
+T193	Speed 2889 2899	35,000 rpm
+T194	Time 2901 2909	72 hours
+T195	Temperature 2911 2915	25°C
+R64	Setting Arg1:E46 Arg2:T193
+R65	Setting Arg1:E46 Arg2:T194
+R66	Setting Arg1:E46 Arg2:T195
+T196	Action 2917 2926	Visualize
+E47	Action:T196 Acts-on:T197 Using:T198
+T197	Reagent 2931 2934	DNA
+T198	Device 2943 2958	UV light source
+T199	Action 2960 2966	Remove
+E48	Action:T199 Acts-on:T200 Acts-on2:T201
+T200	Reagent 2971 2982	plasmid DNA
+T201	Reagent 2992 3001	gradients
+T202	Action 3005 3015	puncturing
+E49	Action:T202 Acts-on:T203 Using:T205
+T203	Location 3020 3024	side
+T204	Generic-Measure 3045 3048	18g
+T205	Device 3049 3067	needle and syringe
+T206	Action 3069 3074	Place
+E50	Action:T206 Acts-on:T208 Site:T209
+T207	Amount 3077 3089	small amount
+T208	Reagent 3093 3101	Vaseline
+T209	Location 3109 3113	side
+T210	Location 3121 3125	tube
+R67	Meronym Arg1:T209 Arg2:T210
+T211	Action 3130 3138	puncture
+E51	Action:T211 Acts-on:T212
+T212	Reagent 3151 3159	Vaseline
+T213	Modifier 3139 3146	through
+T214	Action 3161 3166	Smear
+E52	Action:T214 Acts-on:T215 Site:T216
+T215	Reagent 3171 3179	Vaseline
+T216	Location 3189 3202	puncture hole
+T217	Action 3223 3230	removed
+E53	Action:T217 Using:T218
+T218	Device 3212 3219	syringe
+T219	Action 3234 3238	seal
+E54	Action:T219 Acts-on:T220
+T220	Location 3243 3247	hole
+T221	Action 3383 3388	Place
+E55	Action:T221 Acts-on:T222 Site:T224
+T222	Reagent 3393 3405	DNA solution
+T223	Amount 3411 3416	30 mL
+T224	Location 3417 3428	corex tubes
+T225	Action 3430 3437	Extract
+E56	Action:T225 Acts-on:T226 Acts-on2:T227
+T226	Reagent 3442 3458	ethidium bromide
+T227	Reagent 3468 3480	DNA solution
+T228	Action 3484 3490	adding
+E57	Action:T228 Acts-on:T230
+T229	Amount 3494 3507	equal  volume
+T230	Reagent 3511 3548	CsCl/TE buffer saturated isopropanol.
+T231	Action 3549 3552	Mix
+E58	Action:T231 
+T232	Modifier 3553 3559	gently
+T233	Action 3564 3574	centrifuge
+E59	Action:T233 Site:T234
+T234	Device 3582 3600	Sorvall SS34 rotor
+T235	Speed 3604 3613	3,000 rpm
+T236	Time 3615 3620	1 min
+T237	Temperature 3622 3625	4°C
+R71	Setting Arg1:E59 Arg2:T235
+R72	Setting Arg1:E59 Arg2:T236
+R73	Setting Arg1:E59 Arg2:T237
+T238	Action 3627 3636	Pipet off
+E60	Action:T238 Acts-on:T239
+T239	Reagent 3641 3664	upper isopropanol layer
+T240	Action 3666 3672	Repeat
+E61	Action:T240 Using:T241 Count:T337
+T241	Method 3689 3699	extraction
+T242	Action 3704 3707	Add
+E62	Action:T242 Acts-on:T245 Site:T246
+T243	Amount 3708 3714	1.0 mL
+T244	Concentration 3718 3721	3 M
+T245	Reagent 3722 3727	NaOAc
+T246	Location 3736 3740	tube
+T247	Reagent 3744 3747	DNA
+T248	Action 3752 3758	adjust
+E63	Action:T248 Measure-Type-Link:T249 Site:T250
+T249	Measure-Type 3763 3769	volume
+T250	Location 3778 3782	tube
+T251	Amount 3786 3793	10.0 mL
+T252	Concentration 3799 3801	1X
+T253	Reagent 3802 3811	TE buffer
+R76	Meronym Arg1:T247 Arg2:T246
+T254	Action 3813 3824	Precipitate
+E64	Action:T254 Acts-on:T255 Acts-on2:T258
+T255	Reagent 3829 3833	DNAs
+T257	Concentration 3853 3857	100%
+T258	Reagent 3858 3862	EtOH
+T259	Action 3864 3868	Hold
+E65	Action:T259 
+T260	Temperature 3872 3877	-20°C
+T261	Time 3878 3887	overnight
+R81	Setting Arg1:E65 Arg2:T260
+R82	Setting Arg1:E65 Arg2:T261
+T262	Action 3889 3899	Centrifuge
+E66	Action:T262 Acts-on:T263 Site:T264
+T263	Location 3904 3909	tubes
+T264	Device 3917 3935	Sorvall HB-4 rotor
+T265	Speed 3939 3949	10,000 rpm
+T266	Time 3951 3957	10 min
+T267	Temperature 3959 3962	4°C
+R83	Setting Arg1:E66 Arg2:T265
+R84	Setting Arg1:E66 Arg2:T266
+R85	Setting Arg1:E66 Arg2:T267
+T268	Action 3964 3971	Discard
+E67	Action:T268 Acts-on:T269
+T269	Reagent 3976 3988	supernatants
+T270	Action 3990 3993	Dry
+E68	Action:T270 Acts-on:T271 Site:T274
+T271	Reagent 3998 4005	pellets
+T272	Modifier 4006 4013	briefly
+T273	Time 4015 4024	10-15 min
+T274	Device 4033 4050	vacuum desiccator
+T275	Action 4054 4060	remove
+E69	Action:T275 Acts-on:T276
+T276	Reagent 4065 4069	EtOH
+T277	Action 4071 4080	Resuspend
+E70	Action:T277 Acts-on:T278 Acts-on2:T280
+T278	Reagent 4085 4097	plasmid DNAs
+T279	Concentration 4103 4105	1X
+T280	Reagent 4106 4115	TE buffer
+T281	Action 4117 4126	Determine
+E71	Action:T281 Measure-Type-Link:T339
+T282	Reagent 4131 4134	DNA
+T283	Action 4150 4155	Store
+E72	Action:T283 Acts-on:T284
+T284	Reagent 4160 4164	DNAs
+T285	Temperature 4168 4171	4°C
+R88	Setting Arg1:E72 Arg2:T285
+R2	Measure Arg1:T3 Arg2:T2	
+R1	Measure Arg1:T5 Arg2:T4	
+R6	Measure Arg1:T13 Arg2:T17	
+R5	Measure Arg1:T11 Arg2:T12	
+R12	Measure Arg1:T30 Arg2:T29	
+R13	Measure Arg1:T36 Arg2:T35	
+R15	Measure Arg1:T42 Arg2:T41	
+R17	Measure Arg1:T51 Arg2:T50	
+R24	Measure Arg1:T71 Arg2:T70	
+R25	Measure Arg1:T71 Arg2:T69	
+R26	Measure Arg1:T87 Arg2:T86	
+R32	Measure Arg1:T87 Arg2:T85	
+T88	pH 1494 1500	pH 8.0
+R20	Measure Arg1:T111 Arg2:T110	
+R35	Measure Arg1:T115 Arg2:T114	
+R40	Measure Arg1:T139 Arg2:T138	
+R47	Measure Arg1:T139 Arg2:T137	
+R48	Measure Arg1:T142 Arg2:T141	
+R49	Measure Arg1:T144 Arg2:T143	
+R50	Measure Arg1:T149 Arg2:T148	
+R51	Measure Arg1:T152 Arg2:T151	
+R52	Measure Arg1:T159 Arg2:T158	
+R53	Measure Arg1:T159 Arg2:T160	
+R54	Mod-Link Arg1:E41 Arg2:T163	
+R59	Measure Arg1:T180 Arg2:T179	
+R60	Measure Arg1:T182 Arg2:T186	
+R61	Measure Arg1:T182 Arg2:T184	
+R62	Measure Arg1:T181 Arg2:T185	
+R63	Measure Arg1:T181 Arg2:T183	
+R68	Measure Arg1:T208 Arg2:T207	
+R69	Measure Arg1:T224 Arg2:T223	
+R70	Measure Arg1:T230 Arg2:T229	
+R89	Mod-Link Arg1:E58 Arg2:T232	
+R74	Measure Arg1:T245 Arg2:T244	
+R75	Measure Arg1:T245 Arg2:T243	
+R77	Measure Arg1:T253 Arg2:T252	
+R78	Measure Arg1:T253 Arg2:T251	
+R79	Measure Arg1:T258 Arg2:T257	
+R87	Measure Arg1:T280 Arg2:T279	
+T89	Modifier 99 110	appropriate
+T286	Reagent 111 121	antibiotic
+R90	Mod-Link Arg1:T286 Arg2:T89	
+R91	Meronym Arg1:T286 Arg2:T3	
+R92	Meronym Arg1:T6 Arg2:T5	
+R94	Or Arg1:T11 Arg2:T13	
+R95	Measure Arg1:T14 Arg2:T18	
+R96	Mod-Link Arg1:E11 Arg2:T43	
+R97	Mod-Link Arg1:E14 Arg2:T54	
+R98	Mod-Link Arg1:T66 Arg2:T65	
+T287	Modifier 1269 1282	approximately
+R99	Mod-Link Arg1:T69 Arg2:T287	
+R101	Measure Arg1:T87 Arg2:T88	
+T288	Modifier 1610 1614	each
+R102	Mod-Link Arg1:T99 Arg2:T288	
+R103	Mod-Link Arg1:E25 Arg2:T101	
+R104	Mod-Link Arg1:E33 Arg2:T130	
+T289	Modifier 2108 2115	exactly
+R105	Mod-Link Arg1:T141 Arg2:T289	
+T290	Modifier 2136 2140	each
+R106	Mod-Link Arg1:T144 Arg2:T290	
+T291	Modifier 2168 2172	each
+R107	Mod-Link Arg1:T145 Arg2:T291	
+T292	Modifier 2193 2197	each
+R108	Mod-Link Arg1:T147 Arg2:T292	
+T293	Reagent 2242 2246	CsCl
+R109	Meronym Arg1:T293 Arg2:T149	
+T294	Reagent 2303 2307	CsCl
+R110	Meronym Arg1:T294 Arg2:T153	
+T295	Reagent 2313 2325	final volume
+T296	Amount 2329 2335	6.4 mL
+T297	Action 2336 2341	added
+E73	Action:T297 Site:T299 Acts-on:T295
+T298	Modifier 2345 2349	each
+T299	Location 2351 2355	tube
+R111	Measure Arg1:T295 Arg2:T296	
+R112	Mod-Link Arg1:T299 Arg2:T298	
+R113	Mod-Link Arg1:E39 Arg2:T156	
+T300	Modifier 2447 2451	each
+R114	Mod-Link Arg1:T161 Arg2:T300	
+R115	Setting Arg1:T205 Arg2:T204	
+R58	Setting Arg1:T174 Arg2:T175	
+R116	Mod-Link Arg1:E51 Arg2:T213	
+T301	Modifier 3773 3777	each
+R117	Mod-Link Arg1:T250 Arg2:T301	
+R118	Setting Arg1:T272 Arg2:T273	
+R119	Mod-Link Arg1:E68 Arg2:T272	
+T302	Location 3032 3036	tube
+R86	Meronym Arg1:T203 Arg2:T302	
+T303	Method 0 9	Isolation
+T304	Method 14 26	Purification
+T305	Reagent 30 41	Plasmid DNA
+T306	Reagent 47 54	E. coli
+T307	Modifier 208 216	purified
+R120	Mod-Link Arg1:T6 Arg2:T307	
+T308	Method 249 262	amplification
+T309	Reagent 270 281	plasmid DNA
+T310	Reagent 331 338	plasmid
+T311	Time 371 380	4-8 hours
+T15	Measure-Type 434 449	concentration  
+T312	Reagent 535 543	bacteria
+T313	Modifier 552 578	chloramphenicol resistance
+R93	Mod-Link Arg1:T312 Arg2:T313	
+T314	Amount 720 725	liter
+T315	Reagent 729 737	bacteria
+R121	Measure Arg1:T315 Arg2:T314	
+T316	Amount 804 809	20 mL
+T317	Location 810 816	bottle
+T318	Amount 887 892	40 mL
+T319	Location 893 899	bottle
+T320	Reagent 967 975	solution
+T321	Amount 1029 1034	30 mL
+T322	Location 1035 1041	bottle
+T155	Numerical 1257 1259	2X
+T323	Measure-Type 1260 1267	volumes
+R100	Of-Type Arg1:T155 Arg2:T323	
+T97	Measure-Type 1573 1579	volume
+T116	Numerical 1798 1800	2X
+T324	Measure-Type 1801 1808	volumes
+R33	Of-Type Arg1:T116 Arg2:T324	
+T325	Action 2248 2257	measuring
+E74	Action:T325 Measure-Type-Link:T326
+T326	Measure-Type 2262 2268	volume
+T327	Reagent 2381 2385	CsCl
+T328	Reagent 2392 2400	solution
+R39	Meronym Arg1:T327 Arg2:T328	
+T329	Reagent 3249 3269	Circular plasmid DNA
+T330	Reagent 3277 3287	lower band
+T331	Reagent 3295 3303	gradient
+R122	Coreference-Link Arg1:T329 Arg2:T330	
+T332	Reagent 3305 3320	Chromosomal DNA
+T333	Reagent 3325 3344	nicked circular DNA
+T334	Reagent 3355 3365	upper band
+R123	Meronym Arg1:T330 Arg2:T331	
+T335	Reagent 3373 3381	gradient
+R124	Meronym Arg1:T334 Arg2:T335	
+R125	Coreference-Link Arg1:T332 Arg2:T334	
+R126	Coreference-Link Arg1:T333 Arg2:T334	
+T336	Reagent 3677 3688	isopropanol
+T337	Numerical 3700 3702	1X
+T256	Measure-Type 3842 3849	volumes
+T338	Numerical 3839 3841	2X
+R80	Of-Type Arg1:T338 Arg2:T256	
+T339	Measure-Type 4135 4148	concentration

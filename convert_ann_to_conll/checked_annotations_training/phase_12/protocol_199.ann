@@ -1,0 +1,123 @@
+T1	Action 199 206	Prepare
+E1	Action:T1 Acts-on:T17 Site:T62
+T2	Action 257 260	Add
+E2	Action:T2 Acts-on:T19 Site:T21
+T3	Action 313 316	Mix
+E3	Action:T3 Commands:E17
+T4	Action 355 363	Incubate
+E4	Action:T4 
+T5	Action 391 394	Add
+E5	Action:T5 Acts-on:T26 Acts-on2:T27 Site:T65
+T6	Action 450 455	Place
+E6	Action:T6 Acts-on:T28 Site:T29
+T7	Action 502 508	Remove
+E7	Action:T7 Acts-on:T31 Acts-on2:T32
+T8	Action 583 586	Fix
+E8	Action:T8 Acts-on:T35 Site:T36 Using:T73 Site2:T72
+T9	Action 684 688	Wash
+E9	Action:T9 Acts-on:T41 Acts-on2:T71
+T10	Action 721 724	Add
+E10	Action:T10 Acts-on:T46 Site:T76
+T11	Action 809 816	Observe
+E11	Action:T11 Acts-on:T77 Site:T78
+T12	Action 904 908	Wash
+E12	Action:T12 Acts-on:T48 Acts-on2:T81
+T13	Action 538 542	wash
+E13	Action:T13 Count:T69 Acts-on:T68 Using:T70
+T14	Action 771 779	incubate
+E14	Action:T14 Acts-on:T43
+T15	Action 848 856	evaluate
+E15	Action:T15 Measure-Type-Link:T80
+T16	Concentration 207 216	0.02μg/μl
+T17	Reagent 217 243	pCMVβ plasmid DNA solution
+R1	Measure Arg1:T17 Arg2:T16	
+T18	Amount 261 264	6μl
+T19	Reagent 268 275	reagent
+T20	Amount 279 285	100 μl
+T21	Reagent 289 311	OptiMEM® /DNA solution
+R2	Measure Arg1:T21 Arg2:T20	
+R3	Measure Arg1:T19 Arg2:T18	
+T23	Time 364 369	5 min
+T24	Temperature 373 389	room temperature
+R4	Setting Arg1:E4 Arg2:T24	
+R5	Setting Arg1:E4 Arg2:T23	
+T25	Amount 395 398	5μl
+T26	Reagent 399 406	complex
+R6	Measure Arg1:T26 Arg2:T25	
+T27	Reagent 423 428	cells
+T28	Reagent 460 465	cells
+T29	Device 471 484	CO2 incubator
+T30	Time 489 500	26-28 hours
+R7	Setting Arg1:E6 Arg2:T30	
+T31	Reagent 513 519	medium
+T32	Location 529 533	well
+T33	Amount 563 568	100μl
+T34	Location 573 577	well
+T35	Reagent 591 596	cells
+T36	Location 604 608	well
+T37	Amount 614 618	50μl
+T38	Reagent 634 646	formaldehyde
+T39	Concentration 631 633	4%
+R9	Measure Arg1:T38 Arg2:T39	
+T40	Amount 704 709	100μl
+T41	Reagent 710 713	PBS
+R10	Measure Arg1:T41 Arg2:T40	
+T42	Amount 725 729	50μl
+T43	Location 784 789	plate
+T44	Time 790 799	overnight
+T45	Temperature 803 807	37°C
+R11	Setting Arg1:E14 Arg2:T44	
+R12	Setting Arg1:E14 Arg2:T45	
+T46	Reagent 742 766	substrate/stain solution
+R13	Meronym Arg1:T46 Arg2:T42	
+T47	Amount 924 929	100μl
+T48	Reagent 930 933	PBS
+R14	Measure Arg1:T48 Arg2:T47	
+T49	Reagent 13 21	STO Cell
+T50	Method 22 34	Transfection
+T51	Reagent 38 47	FuGENE HD
+T52	Reagent 48 57	STO cells
+T53	Action 63 69	seeded
+E16	Action:T53 Acts-on:T52
+T54	Method 85 97	transfection
+T55	Measure-Type 107 114	density
+T56	Reagent 115 127	15,000 cells
+T57	Location 132 136	well
+T58	Amount 140 146	100 μl
+T59	Reagent 147 174	complete growth medium DMEM
+R15	Measure Arg1:T59 Arg2:T58	
+R16	Meronym Arg1:T56 Arg2:T57	
+T60	Concentration 175 178	10%
+T61	Reagent 179 197	Fetal Bovine Serum
+R17	Measure Arg1:T61 Arg2:T60	
+T62	Reagent 247 255	OptiMEM®
+T63	Modifier 317 326	carefully
+R18	Mod-Link Arg1:E3 Arg2:T63	
+T22	Action 330 339	pipetting
+E17	Action:T22 Count:T64
+T64	Numerical 341 346	10-15
+T65	Location 411 415	well
+T66	Action 434 437	mix
+E18	Action:T66 Acts-on:T26
+T67	Modifier 438 448	thoroughly
+R19	Mod-Link Arg1:E18 Arg2:T67	
+T68	Reagent 547 552	cells
+T69	Numerical 553 557	once
+T70	Reagent 578 581	PBS
+R20	Measure Arg1:T70 Arg2:T33	
+R8	Meronym Arg1:T70 Arg2:T34	
+T71	Location 694 698	well
+T72	Reagent 650 653	PBS
+T73	Reagent 619 627	solution
+R21	Measure Arg1:T73 Arg2:T37	
+T74	Time 658 662	5min
+T75	Temperature 666 682	room temperature
+R22	Meronym Arg1:T38 Arg2:T73	
+R23	Setting Arg1:E8 Arg2:T74	
+R24	Setting Arg1:E8 Arg2:T75	
+T76	Location 734 738	well
+T77	Reagent 821 826	cells
+T78	Device 833 843	microscope
+T79	Reagent 875 902	blue (β-gal-positive) cells
+T80	Measure-Type 861 871	proportion
+T81	Location 914 918	well

@@ -1,0 +1,131 @@
+T1	Action 11 18	Prepare
+E1	Action:T1 Acts-on:T6
+T2	Numerical 19 21	10
+T3	Reagent 22 37	stock solutions
+T4	Modifier 38 41	per
+T5	Amount 42 49	1 liter
+T6	Reagent 50 61	Milli-Q H2O
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Setting Arg1:T4 Arg2:T2	
+R4	Measure Arg1:T6 Arg2:T5	
+T8	Amount 68 74	25.0 g
+T9	Reagent 76 81	NaNO3
+T10	Amount 83 88	2.5 g
+T11	Reagent 90 100	CaCl2*2H2O
+R6	Measure Arg1:T9 Arg2:T8	
+R7	Measure Arg1:T11 Arg2:T10	
+T12	Amount 102 107	7.5 g
+T13	Reagent 109 119	MgSO4*7H2O
+T14	Amount 121 126	7.5 g
+T15	Reagent 128 134	K2HPO4
+R8	Measure Arg1:T13 Arg2:T12	
+R9	Measure Arg1:T15 Arg2:T14	
+T16	Amount 136 142	17.5 g
+T17	Reagent 144 150	KH2PO4
+R10	Measure Arg1:T17 Arg2:T16	
+T18	Amount 152 157	2.5 g
+T19	Reagent 159 163	NaCl
+T20	Amount 165 171	50.0 g
+T21	Reagent 173 186	disodium EDTA
+R11	Measure Arg1:T19 Arg2:T18	
+R12	Measure Arg1:T21 Arg2:T20	
+T22	Amount 188 194	31.0 g
+T23	Reagent 196 199	KOH
+T24	Amount 201 207	4.98 g
+T25	Reagent 209 219	FeSO4*7H2O
+R13	Measure Arg1:T23 Arg2:T22	
+R14	Measure Arg1:T25 Arg2:T24	
+T26	Amount 225 232	1 liter
+T27	Reagent 233 246	acidified H2O
+T28	Modifier 221 224	per
+T29	Mention 248 261	acificied H2O
+R15	Coreference-Link Arg1:T29 Arg2:T27	
+T30	Amount 263 271	999.0 mL
+T31	Reagent 273 284	Milli-Q H2O
+T32	Amount 290 296	1.0 mL
+T33	Reagent 298 316	concentrated H2SO4
+R16	Measure Arg1:T31 Arg2:T30	
+R17	Measure Arg1:T33 Arg2:T32	
+R18	Meronym Arg1:T31 Arg2:T29	
+R19	Meronym Arg1:T33 Arg2:T29	
+T34	Amount 318 325	11.42 g
+T35	Reagent 327 332	H3BO3
+R3	Setting Arg1:T4 Arg2:T5	
+R20	Measure Arg1:T35 Arg2:T34	
+R21	Measure Arg1:T27 Arg2:T26	
+R22	Setting Arg1:T28 Arg2:T26	
+R23	Mod-Link Arg1:T34 Arg2:T28	
+T36	Amount 334 340	8.82 g
+T37	Reagent 342 352	ZnSO4*7H2O
+R24	Measure Arg1:T37 Arg2:T36	
+T38	Amount 354 360	1.44 g
+T39	Reagent 362 372	MnCl2*4H2O
+R25	Measure Arg1:T39 Arg2:T38	
+T40	Amount 374 380	0.71 g
+T41	Reagent 382 386	MoO3
+R26	Measure Arg1:T41 Arg2:T40	
+T42	Amount 388 394	1.57 g
+T43	Reagent 396 406	CuSO4*5H2O
+R27	Measure Arg1:T43 Arg2:T42	
+T44	Amount 412 418	0.49 g
+T45	Reagent 420 430	CoNO3*6H2O
+R28	Measure Arg1:T45 Arg2:T44	
+T46	Action 434 437	Add
+E2	Action:T46 Site:T48 Acts-on:T50 Acts-on2:T52 Acts-on3:T54 Acts-on4:T56 Acts-on5:T58
+T47	Amount 441 447	950 mL
+T48	Reagent 449 460	Milli-Q H2O
+T49	Amount 462 467	1.0 g
+T50	Reagent 469 482	bacto-peptone
+T51	Amount 484 489	5.0 g
+T52	Reagent 491 498	sucrose
+T53	Amount 500 507	10.0 mL
+T54	Reagent 511 529	stock solution 1-6
+T55	Amount 531 537	1.0 mL
+T56	Reagent 541 560	stock solutions 7-9
+T57	Amount 562 568	2.0 mL
+T58	Reagent 569 586	stock solution 10
+R44	Measure Arg1:T48 Arg2:T47	
+R45	Measure Arg1:T50 Arg2:T49	
+R46	Measure Arg1:T52 Arg2:T51	
+R47	Measure Arg1:T54 Arg2:T53	
+R48	Measure Arg1:T56 Arg2:T55	
+R49	Measure Arg1:T58 Arg2:T57	
+T59	Location 594 610	MBBM agar plates
+T60	Action 612 615	add
+E3	Action:T60 Acts-on:T62 Site:T59
+T61	Concentration 616 620	1.5%
+T62	Reagent 621 625	agar
+R50	Measure Arg1:T62 Arg2:T61	
+T63	Reagent 653 667	MBBM soft agar
+T64	Action 669 672	add
+E4	Action:T64 Acts-on:T66 Site:T63
+T65	Concentration 673 678	0.75%
+T66	Reagent 679 683	agar
+R51	Measure Arg1:T66 Arg2:T65	
+T67	Action 707 716	Autoclave
+E5	Action:T67 
+T68	Temperature 720 725	121°C
+T69	Time 730 736	20 min
+R52	Setting Arg1:E5 Arg2:T68	
+R53	Setting Arg1:E5 Arg2:T69	
+T70	Action 749 753	cool
+E6	Action:T70 Acts-on:T71
+T71	Reagent 743 748	media
+T72	Temperature 757 773	room temperature
+T73	Action 778 781	add
+E7	Action:T73 Acts-on:T74
+T74	Reagent 782 794	antibiotics:
+T75	Concentration 796 805	700 µg/mL
+T76	Concentration 827 834	10 µg/m
+T77	Reagent 807 817	Ampicillin
+T78	Reagent 837 849	Tetracycline
+R54	Measure Arg1:T77 Arg2:T75	
+R55	Measure Arg1:T78 Arg2:T76	
+R56	Or Arg1:T77 Arg2:T78	
+R57	Meronym Arg1:T77 Arg2:T74	
+R58	Setting Arg1:E6 Arg2:T72	
+T79	Action 635 646	autoclaving
+E8	Action:T79 
+T80	Action 693 704	autoclaving
+E9	Action:T80 
+T81	Reagent 0 10	MBBM Media

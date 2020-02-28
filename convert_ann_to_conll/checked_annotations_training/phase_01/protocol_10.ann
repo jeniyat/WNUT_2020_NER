@@ -1,0 +1,220 @@
+T1	Action 63 69	Vortex
+E1	Action:T1 Acts-on:T2
+T2	Reagent 70 79	AMPure XP
+T3	Reagent 83 106	RXN pureplus SPRI beads
+T5	Action 121 125	Make
+E2	Action:T5 Product:T6
+T6	Reagent 131 145	pooled library
+T7	Amount 152 158	100 μl
+R1	Measure Arg1:T6 Arg2:T7
+T8	Reagent 183 205	resuspended SPRI beads
+T9	Amount 177 182	60 μl
+R2	Measure Arg1:T8 Arg2:T9
+T10	Action 173 176	Add
+E3	Action:T10 Acts-on:T8 Site:T109
+T11	Amount 209 215	100 μl
+T13	Action 239 242	Mix
+E4	Action:T13 Using:T15 Count:T16
+T14	Modifier 243 247	well
+T15	Method 251 272	pipetting up and down
+T17	Action 292 298	Vortex
+E5	Action:T17 Acts-on:T18 Commands:E31
+T18	Reagent 299 314	AMPure XP beads
+T20	Action 329 337	Incubate
+E6	Action:T20 
+T21	Time 342 351	5 minutes
+T22	Temperature 355 371	room temperature
+R4	Setting Arg1:E6 Arg2:T21
+R5	Setting Arg1:E6 Arg2:T22
+T23	Action 381 385	spin
+E7	Action:T23 Acts-on:T24
+T24	Location 390 394	tube
+T25	Mention 405 407	it
+R6	Coreference-Link Arg1:T25 Arg2:T24
+T26	Action 399 404	place
+E8	Action:T26 Acts-on:T25 Site:T27 Product:T29 Product2:T30
+T27	Device 426 440	magnetic stand
+T29	Reagent 453 458	beads
+T30	Reagent 464 474	supernatan
+T28	Action 534 540	remove
+E9	Action:T28 Acts-on:T32
+T31	Action 545 552	discard
+E10	Action:T31 Acts-on:T32
+T32	Reagent 557 568	supernatant
+T33	Action 664 667	Add
+E11	Action:T33 Acts-on:T36 Site2:T37
+T34	Amount 668 674	200 μl
+T35	Concentration 678 681	80%
+T36	Reagent 699 706	ethanol
+T37	Location 714 718	tube
+R7	Measure Arg1:T36 Arg2:T34
+R8	Measure Arg1:T36 Arg2:T35
+T38	Device 732 746	magnetic stand
+T39	Action 748 756	Incubate
+E12	Action:T39 
+T40	Temperature 760 776	room temperature
+T41	Time 781 791	30 seconds
+R9	Setting Arg1:E12 Arg2:T40
+R10	Setting Arg1:E12 Arg2:T41
+T42	Action 812 818	remove
+E13	Action:T42 Acts-on:T44
+T43	Action 823 830	discard
+E14	Action:T43 Acts-on:T44
+T44	Reagent 835 846	supernatant
+T45	Action 848 851	Add
+E15	Action:T45 Acts-on:T48 Site2:T49
+T46	Amount 852 858	200 μl
+T47	Concentration 862 865	80%
+T48	Reagent 883 890	ethanol
+T49	Location 898 902	tube
+T50	Device 916 930	magnetic stand
+T51	Action 932 940	Incubate
+E16	Action:T51 
+T52	Temperature 944 960	room temperature
+T53	Time 965 975	30 seconds
+T54	Action 996 1002	remove
+E17	Action:T54 Acts-on:T56
+T55	Action 1007 1014	discard
+E18	Action:T55 Acts-on:T56
+T56	Reagent 1019 1030	supernatant
+R11	Measure Arg1:T48 Arg2:T47
+R12	Measure Arg1:T48 Arg2:T46
+R13	Setting Arg1:E16 Arg2:T52
+R14	Setting Arg1:E16 Arg2:T53
+T57	Action 1032 1035	Add
+E19	Action:T57 Acts-on:T60 Site2:T61
+T58	Amount 1036 1042	200 μl
+T59	Concentration 1046 1049	80%
+T60	Reagent 1067 1074	ethanol
+T61	Location 1082 1086	tube
+T62	Device 1100 1114	magnetic stand
+T63	Action 1116 1124	Incubate
+E20	Action:T63 
+T64	Temperature 1128 1144	room temperature
+T65	Time 1149 1159	30 seconds
+T66	Action 1180 1186	remove
+E21	Action:T66 Acts-on:T68
+T67	Action 1191 1198	discard
+E22	Action:T67 Acts-on:T68
+T68	Reagent 1203 1214	supernatant
+R15	Setting Arg1:E20 Arg2:T64
+R16	Setting Arg1:E20 Arg2:T65
+R17	Measure Arg1:T60 Arg2:T58
+R18	Measure Arg1:T60 Arg2:T59
+T69	Action 1216 1219	Air
+E23	Action:T69 Acts-on:T70
+T70	Reagent 1224 1233	dry beads
+T71	Time 1238 1248	10 minutes
+R19	Setting Arg1:E23 Arg2:T71
+#1	AnnotatorNotes E23	how to annotate this full sentence
+#2	AnnotatorNotes T70	This is a creation of 3 previous steps, how to indicate that.
+T72	Action 1308 1313	Elute
+E24	Action:T72 Acts-on:T73 Site:T74 Commands:E25
+T73	Reagent 1318 1328	DNA target
+T74	Reagent 1338 1343	beads
+T75	Action 1347 1353	adding
+E25	Action:T75 Acts-on:T78 Acts-on2:T81
+T76	Amount 1354 1359	30 μl
+T77	Concentration 1363 1368	10 mM
+T78	Reagent 1369 1377	Tris-HCl
+T80	Concentration 1389 1393	0.1X
+T81	Reagent 1394 1396	TE
+R20	Measure Arg1:T78 Arg2:T76
+R21	Measure Arg1:T78 Arg2:T77
+R23	Measure Arg1:T81 Arg2:T80
+T82	Action 1557 1560	Mix
+E26	Action:T82 Using:T83
+T83	Method 1569 1590	pipetting up and down
+T84	Device 1600 1612	vortex mixer
+T85	Action 1622 1626	spin
+E27	Action:T85 Acts-on:T86
+T86	Location 1631 1635	tube
+T87	Action 1640 1645	place
+E28	Action:T87 Acts-on:T88 Site:T89
+T88	Mention 1646 1648	it
+T89	Device 1656 1670	magnetic stand
+R24	Coreference-Link Arg1:T88 Arg2:T86
+T91	Action 1719 1727	transfer
+E29	Action:T91 Acts-on:T93
+T92	Amount 1728 1732	27ul
+T93	Reagent 1739 1747	PCR tube
+R25	Measure Arg1:T93 Arg2:T92
+T94	Method 1752 1765	amplification
+R27	Or Arg1:T2 Arg2:T3	
+T4	Action 110 119	resuspend
+E30	Action:T4 Commands:E1
+R28	Mod-Link Arg1:E4 Arg2:T14	
+T16	Numerical 282 284	10
+T95	Modifier 273 281	at least
+T19	Action 318 327	resuspend
+E31	Action:T19 
+T96	Modifier 373 380	Quickly
+R30	Mod-Link Arg1:E7 Arg2:T96	
+T97	Modifier 414 425	appropriate
+R31	Mod-Link Arg1:T27 Arg2:T97	
+T98	Modifier 524 533	carefully
+R32	Mod-Link Arg1:E9 Arg2:T98	
+R33	Meronym Arg1:T37 Arg2:T38	
+T99	Modifier 802 811	carefully
+R34	Mod-Link Arg1:E13 Arg2:T99	
+T100	Modifier 866 882	freshly prepared
+R35	Mod-Link Arg1:T48 Arg2:T100	
+R36	Meronym Arg1:T49 Arg2:T50	
+T101	Modifier 986 995	carefully
+R37	Mod-Link Arg1:E17 Arg2:T101	
+R38	Meronym Arg1:T61 Arg2:T62	
+T102	Modifier 1561 1565	well
+R39	Mod-Link Arg1:E26 Arg2:T102	
+R40	Or Arg1:T83 Arg2:T84	
+T103	Modifier 1614 1621	Quickly
+R41	Mod-Link Arg1:E27 Arg2:T103	
+T90	Method 0 12	Purification
+T104	Modifier 16 22	pooled
+T105	Reagent 23 35	PCR amplicon
+R22	Mod-Link Arg1:T105 Arg2:T104	
+T106	Reagent 52 62	SPRI beads
+R26	Setting Arg1:E3 Arg2:T9	
+T107	Reagent 487 495	solution
+T108	Modifier 499 504	clear
+T79	pH 1379 1385	pH 8.0
+T12	Modifier 219 225	pooled
+T109	Reagent 226 237	PCR product
+R3	Mod-Link Arg1:T109 Arg2:T12	
+R29	Measure Arg1:T109 Arg2:T11	
+T110	Modifier 146 151	up to
+R42	Mod-Link Arg1:T7 Arg2:T110	
+R43	Mod-Link Arg1:T107 Arg2:T108	
+T111	Time 512 521	5 minutes
+T112	Action 588 595	disturb
+E32	Action:T112 Acts-on:T113
+T113	Reagent 600 605	beads
+T114	Reagent 619 630	DNA targets
+T115	Action 648 655	discard
+E33	Action:T115 Acts-on:T116
+T116	Reagent 656 661	beads
+R44	Meronym Arg1:T114 Arg2:T113	
+T117	Modifier 682 698	freshly prepared
+R45	Mod-Link Arg1:T36 Arg2:T117	
+T118	Modifier 1050 1066	freshly prepared
+R46	Mod-Link Arg1:T60 Arg2:T118	
+T119	Location 1259 1263	tube
+T120	Device 1274 1288	magnetic stand
+R47	Meronym Arg1:T119 Arg2:T120	
+T121	Seal 1298 1301	lid
+T122	Modifier 1302 1306	open
+R48	Mod-Link Arg1:T121 Arg2:T122	
+R49	Measure Arg1:T81 Arg2:T79	
+R50	Or Arg1:T79 Arg2:T80	
+T123	Action 1418 1426	transfer
+E34	Action:T123 Acts-on:T124
+T124	Reagent 1431 1436	beads
+T125	Reagent 1455 1459	bead
+T126	Reagent 1513 1523	polymerase
+T127	Reagent 1547 1550	PCR
+T128	Reagent 1682 1690	solution
+T129	Modifier 1694 1699	clear
+T130	Time 1707 1716	5 minutes
+R51	Mod-Link Arg1:T128 Arg2:T129	
+R52	Setting Arg1:E29 Arg2:T92	
+T131	Modifier 1735 1738	new
+R53	Mod-Link Arg1:T93 Arg2:T131	

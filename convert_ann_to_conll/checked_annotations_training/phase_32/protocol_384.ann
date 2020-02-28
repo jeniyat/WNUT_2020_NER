@@ -1,0 +1,281 @@
+T1	Action 69 76	Collect
+E1	Action:T1 Acts-on:T39 Site:T40
+T3	Action 416 419	Add
+E2	Action:T3 Acts-on:T38 Site:T53
+T4	Action 508 511	Add
+E3	Action:T4 Acts-on:T57 Using:T59
+T5	Action 578 583	grind
+E4	Action:T5 Using:T60
+T6	Action 631 634	add
+E5	Action:T6 Acts-on:T61 Site:T63
+T7	Action 683 689	vortex
+E6	Action:T7 Acts-on:T64
+T9	Action 751 754	Add
+E8	Action:T9 Acts-on:T68
+T10	Action 776 779	mix
+E9	Action:T10 Using:T69 Acts-on:T70
+T11	Action 817 827	Centrifuge
+E10	Action:T11 
+T12	Action 869 875	remove
+E11	Action:T12 Acts-on:T75 Site:T77
+T13	Action 925 928	Add
+E12	Action:T13 Acts-on:T79 Site:T80
+T14	Action 975 981	invert
+E13	Action:T14 Count:T81 Acts-on:T80
+T15	Action 1004 1012	Incubate
+E14	Action:T15 Acts-on:T83
+T16	Action 1050 1053	Add
+E15	Action:T16 Acts-on:T87
+T17	Action 1087 1090	mix
+E16	Action:T17 
+T18	Action 1128 1138	Centrifuge
+E17	Action:T18 Acts-on:T91
+T19	Action 1177 1185	Transfer
+E18	Action:T19 Acts-on:T94 Site:T96
+T20	Action 1222 1233	precipitate
+E19	Action:T20 Acts-on:T97 Using:T99
+T21	Action 1274 1280	Invert
+E20	Action:T21 Acts-on:T100
+T22	Action 1362 1365	add
+E21	Action:T22 Acts-on:T105
+T23	Action 1404 1414	Centrifuge
+E22	Action:T23 
+T24	Action 1464 1470	Remove
+E23	Action:T24 Acts-on:T110
+T25	Action 1488 1491	Add
+E24	Action:T25 Acts-on:T113 Site:T114
+T26	Action 1571 1581	Centrifuge
+E25	Action:T26 
+T27	Action 1608 1614	Decant
+E26	Action:T27 Acts-on:T121
+T28	Action 1650 1656	Invert
+E27	Action:T28 Acts-on:T122 Site:T124
+T29	Action 1758 1761	Add
+E28	Action:T29 Acts-on:T131 Site:T132
+T30	Action 1792 1800	Incubate
+E29	Action:T30 
+T31	Action 1943 1948	Store
+E30	Action:T31 Acts-on:T137
+T32	Action 2008 2011	Add
+E31	Action:T32 Acts-on:T143 Site:T145
+T33	Action 2071 2079	incubate
+E32	Action:T33 
+T34	Action 2103 2109	Invert
+E33	Action:T34 Acts-on:T149
+T35	Action 282 290	grinding
+E34	Action:T35 Acts-on:T45 Product:T47
+T36	Action 725 729	cool
+E35	Action:T36 Acts-on:T65
+T8	Action 1618 1629	pipette off
+E7	Action:T8 Acts-on:T121
+T37	Action 1983 1988	store
+E36	Action:T37 Product:T141
+T2	Amount 420 427	10-20mg
+T38	Reagent 428 442	fungal mycelia
+T39	Reagent 77 90	fungal tissue
+T40	Reagent 96 110	liquid culture
+T41	Action 115 119	wash
+E37	Action:T41 Count:T42 Site:T44
+T42	Numerical 120 123	2-3
+T43	Modifier 133 140	sterile
+T44	Reagent 141 146	water
+R1	Mod-Link Arg1:T44 Arg2:T43	
+T45	Reagent 291 298	samples
+T46	Reagent 302 317	liquid nitrogen
+T47	Reagent 323 334	fine powder
+T48	Modifier 339 346	quickly
+T49	Action 347 350	add
+E38	Action:T49 Acts-on:T47 Site:T52
+T50	Modifier 357 368	appropriate
+T51	Amount 369 375	volume
+T52	Reagent 379 399	Genomic Lysis Buffer
+R2	Measure Arg1:T52 Arg2:T51	
+R3	Mod-Link Arg1:T51 Arg2:T50	
+R4	Mod-Link Arg1:E38 Arg2:T48	
+R5	Meronym Arg1:T45 Arg2:T46	
+R6	Measure Arg1:T38 Arg2:T2	
+T53	Location 448 468	microcentrifuge tube
+T54	Amount 480 485	500µl
+T55	Reagent 486 506	Genomic Lysis Buffer
+R7	Measure Arg1:T55 Arg2:T54	
+R8	Meronym Arg1:T55 Arg2:T53	
+T56	Amount 512 516	30µl
+T57	Reagent 517 541	Molecular Grinding Resin
+T58	Modifier 551 560	wide bore
+T59	Device 561 573	pipette tips
+T60	Device 591 613	microcentrifuge pestle
+R9	Mod-Link Arg1:T59 Arg2:T58	
+R10	Measure Arg1:T57 Arg2:T56	
+T61	Reagent 635 648	ground powder
+T62	Amount 652 657	500µl
+T63	Reagent 658 678	Genomic Lysis Buffer
+T64	Reagent 693 703	wet sample
+R11	Measure Arg1:T63 Arg2:T62	
+T65	Reagent 715 721	sample
+T66	Temperature 733 749	room temperature
+R12	Setting Arg1:E35 Arg2:T66	
+T67	Amount 755 760	200µl
+T68	Reagent 761 771	chloroform
+T69	Method 783 792	inverting
+T70	Location 797 801	tube
+T71	Numerical 802 809	several
+R13	Measure Arg1:T68 Arg2:T67	
+R14	Setting Arg1:E9 Arg2:T71	
+T72	Time 832 842	10 minutes
+T73	Speed 846 854	14,000xg
+T74	Modifier 859 868	carefully
+T75	Reagent 880 891	upper phase
+T76	Modifier 897 902	clean
+T77	Location 903 923	microcentrifuge tube
+R15	Mod-Link Arg1:T77 Arg2:T76	
+R16	Mod-Link Arg1:E11 Arg2:T74	
+R17	Setting Arg1:E10 Arg2:T72	
+R18	Setting Arg1:E10 Arg2:T73	
+T78	Amount 929 933	50µl
+T79	Reagent 934 956	DNA Stripping Solution
+T80	Reagent 964 970	sample
+T81	Numerical 982 989	several
+T82	Action 999 1002	mix
+E39	Action:T82 
+R19	Measure Arg1:T79 Arg2:T78	
+T83	Reagent 1017 1023	sample
+T84	Time 1028 1040	5-10 minutes
+T85	Temperature 1044 1048	60°C
+R20	Setting Arg1:E14 Arg2:T84	
+R21	Setting Arg1:E14 Arg2:T85	
+T86	Amount 1054 1059	100µl
+T87	Reagent 1060 1082	Precipitation Solution
+T89	Location 1108 1112	tube
+T90	Numerical 1113 1120	several
+R22	Measure Arg1:T87 Arg2:T86	
+T88	Action 1094 1103	inverting
+E40	Action:T88 Acts-on:T89 Count:T90
+T91	Reagent 1143 1149	sample
+T92	Speed 1153 1161	14,000xg
+T93	Time 1166 1175	5 minutes
+R23	Setting Arg1:E17 Arg2:T92	
+R24	Setting Arg1:E17 Arg2:T93	
+T94	Reagent 1190 1201	supernatant
+T95	Modifier 1207 1212	clean
+T96	Location 1213 1217	tube
+T97	Reagent 1238 1249	genomic DNA
+T98	Amount 1255 1260	500µl
+T99	Reagent 1261 1272	isopropanol
+R25	Measure Arg1:T99 Arg2:T98	
+R26	Mod-Link Arg1:T96 Arg2:T95	
+T100	Location 1285 1290	tubes
+T101	Numerical 1291 1293	10
+T102	Action 1303 1314	precipitate
+E41	Action:T102 Acts-on:T103
+T103	Reagent 1319 1322	DNA
+R27	Setting Arg1:E20 Arg2:T101	
+T104	Amount 1366 1369	2µl
+T105	Reagent 1370 1385	Mussel Glycogen
+R28	Measure Arg1:T105 Arg2:T104	
+T106	Speed 1418 1426	14,000xg
+T107	Time 1431 1440	5 minutes
+T108	Action 1444 1450	pellet
+E42	Action:T108 Acts-on:T109
+T109	Reagent 1451 1462	genomic DNA
+R29	Setting Arg1:E22 Arg2:T106	
+R30	Setting Arg1:E22 Arg2:T107	
+T110	Reagent 1475 1486	supernatant
+T111	Amount 1492 1497	700µl
+T112	Concentration 1498 1501	70%
+T113	Reagent 1502 1509	ethanol
+T114	Location 1517 1521	tube
+T115	Action 1526 1532	invert
+E43	Action:T115 Count:T116
+T116	Numerical 1533 1540	several
+T117	Action 1550 1554	wash
+E44	Action:T117 Acts-on:T118
+T118	Reagent 1559 1569	DNA pellet
+R31	Measure Arg1:T113 Arg2:T112	
+R32	Measure Arg1:T113 Arg2:T111	
+T119	Time 1586 1594	1 minute
+T120	Speed 1598 1606	14,000xg
+R33	Setting Arg1:E25 Arg2:T119	
+R34	Setting Arg1:E25 Arg2:T120	
+T121	Reagent 1634 1646	ethanol wash
+T122	Location 1661 1665	tube
+T123	Modifier 1671 1676	clean
+T124	Location 1677 1694	absorbent surface
+T125	Time 1699 1714	several minutes
+T126	Modifier 1724 1727	any
+T127	Modifier 1728 1734	excess
+T128	Reagent 1735 1742	ethanol
+T129	Action 1746 1757	drain away.
+E45	Action:T129 Acts-on:T128
+R35	Mod-Link Arg1:T128 Arg2:T127	
+R36	Mod-Link Arg1:T128 Arg2:T126	
+R37	Mod-Link Arg1:T124 Arg2:T123	
+R38	Setting Arg1:E27 Arg2:T125	
+T130	Amount 1762 1766	50µl
+T131	Reagent 1767 1776	TE Buffer
+T132	Reagent 1784 1790	pellet
+R39	Measure Arg1:T131 Arg2:T130	
+T133	Temperature 1804 1820	room temperature
+T134	Modifier 1825 1833	at least
+T135	Time 1834 1844	15 minutes
+T136	Action 1848 1857	rehydrate
+E46	Action:T136 
+R40	Mod-Link Arg1:T135 Arg2:T134	
+R41	Setting Arg1:E29 Arg2:T133	
+R42	Setting Arg1:E29 Arg2:T135	
+T137	Reagent 1949 1952	DNA
+T138	Temperature 1956 1959	4°C
+T139	Temperature 1992 1997	-20°C
+T140	Temperature 2001 2006	-80°C
+R43	Setting Arg1:E36 Arg2:T139	
+R44	Or Arg1:T139 Arg2:T140	
+R45	Setting Arg1:E30 Arg2:T138	
+T141	Reagent 1965 1982	long term storage
+T142	Amount 2012 2015	1µl
+T143	Reagent 2016 2037	Proteinase K solution
+T144	Amount 2048 2053	100µl
+T145	Reagent 2054 2066	Lysis Buffer
+T146	Modifier 2042 2047	every
+R46	Measure Arg1:T145 Arg2:T144	
+R47	Mod-Link Arg1:T145 Arg2:T146	
+R48	Measure Arg1:T143 Arg2:T142	
+T147	Temperature 2083 2087	60°C
+T148	Time 2092 2101	1-2 hours
+R49	Setting Arg1:E32 Arg2:T147	
+R50	Setting Arg1:E32 Arg2:T148	
+T149	Location 2114 2118	tube
+T150	Modifier 2119 2131	periodically
+T151	Modifier 2132 2136	each
+T152	Time 2137 2141	hour
+R51	Mod-Link Arg1:T152 Arg2:T151	
+R52	Mod-Link Arg1:E33 Arg2:T150	
+R53	Setting Arg1:E33 Arg2:T152	
+T153	Method 0 9	OmniPrep™
+T154	Modifier 14 26	High Quality
+T155	Reagent 27 38	Genomic DNA
+R54	Mod-Link Arg1:T155 Arg2:T154	
+T156	Method 39 49	Extraction
+T157	Reagent 55 68	Fungal Tissue
+T158	Reagent 148 162	Fungal mycelia
+T159	Action 172 180	prepared
+E47	Action:T159 Acts-on:T158 Commands:E48
+T160	Action 184 192	grinding
+E48	Action:T160 Acts-on:T161 Using:T162
+T161	Reagent 193 200	samples
+T162	Reagent 207 232	Molecular Grinding Resin™
+T163	Reagent 236 256	Genomic Lysis Buffer
+R55	Meronym Arg1:T162 Arg2:T163	
+T164	Reagent 262 280	fungal teliospores
+T165	Reagent 619 629	teliospoes
+T166	Reagent 1348 1351	DNA
+T167	Method 1352 1360	recovery
+T168	Reagent 1391 1402	DNA carrier
+R56	Or Arg1:E26 Arg2:E7	
+T169	Amount 1869 1872	1µl
+T170	Reagent 1873 1888	LongLife™ RNase
+T171	Amount 1899 1904	100µl
+T172	Reagent 1905 1914	TE Buffer
+R57	Measure Arg1:T172 Arg2:T171	
+R58	Measure Arg1:T170 Arg2:T169	
+T173	Action 1922 1927	added
+E49	Action:T173 Acts-on:T170
+R59	Setting Arg1:E36 Arg2:T140	

@@ -1,0 +1,112 @@
+T1	Action 51 55	Fill
+E1	Action:T1 Acts-on:T17 Using:T20 Using2:T22
+T2	Action 115 122	Plug in
+E2	Action:T2 Acts-on:T23
+T3	Action 137 141	heat
+E3	Action:T3 
+T4	Action 173 176	Use
+E4	Action:T4 Acts-on:T26
+T5	Action 216 219	Log
+E5	Action:T5 Measure-Type-Link:T61 Using:T62
+T6	Action 266 271	Weigh
+E6	Action:T6 Acts-on:T31
+T7	Action 326 329	Fry
+E7	Action:T7 Acts-on:T30 Site:T33
+T8	Action 374 378	Lift
+E8	Action:T8 Acts-on:T36
+T9	Action 417 421	dump
+E9	Action:T9 Site:T40
+T10	Action 444 449	drain
+E10	Action:T10 
+T11	Action 460 466	Spread
+E11	Action:T11 Acts-on:T41
+T13	Action 557 561	Turn
+E13	Action:T13 Acts-on:T12 Site:T49
+T14	Action 631 634	Put
+E14	Action:T14 Acts-on:T54 Site:T55
+T16	Action 690 695	Store
+E16	Action:T16 
+T18	Action 454 458	cool
+E18	Action:T18 
+T17	Device 56 65	Fry Daddy
+T19	Amount 71 76	900 g
+T20	Reagent 77 91	liquid soybean
+T21	Reagent 110 113	oil
+R1	Meronym Arg1:T20 Arg2:T21	
+T22	Reagent 102 108	edible
+R3	Measure Arg1:T20 Arg2:T19	
+R4	Measure Arg1:T21 Arg2:T19	
+T23	Device 123 132	Fry Daddy
+T24	Modifier 145 163	frying temperature
+T25	Temperature 165 170	180 C
+R5	Setting Arg1:T24 Arg2:T25	
+R6	Mod-Link Arg1:E3 Arg2:T24	
+T26	Device 179 201	temperature controller
+T27	Amount 303 307	40 g
+T28	Modifier 289 302	approximately
+R7	Mod-Link Arg1:T27 Arg2:T28	
+T29	Numerical 312 317	20-25
+T31	Reagent 272 277	chips
+T32	Modifier 278 287	initially
+R9	Mod-Link Arg1:E6 Arg2:T32	
+R10	Measure Arg1:T31 Arg2:T27	
+R11	Or Arg1:T27 Arg2:T29	
+T30	Reagent 330 335	chips
+T33	Location 343 349	basket
+T34	Time 363 372	2 minutes
+T35	Modifier 350 358	provided
+R8	Mod-Link Arg1:T33 Arg2:T35	
+R12	Setting Arg1:E7 Arg2:T34	
+T36	Location 383 389	basket
+T37	Action 391 396	drain
+E17	Action:T37 Acts-on:T38
+T38	Reagent 401 406	chips
+T39	Modifier 407 411	well
+R13	Mod-Link Arg1:E17 Arg2:T39	
+T40	Location 429 440	paper towel
+T41	Reagent 467 472	chips
+T42	Modifier 473 476	out
+R14	Mod-Link Arg1:E11 Arg2:T42	
+T43	Location 516 527	paper towel
+T44	Action 499 506	contact
+E19	Action:T44 Using:T43 Acts-on:T45
+T45	Mention 485 489	they
+R15	Coreference-Link Arg1:T45 Arg2:T41	
+T46	Action 546 549	dry
+E20	Action:T46 Acts-on:T48
+T47	Modifier 550 555	a bit
+R16	Mod-Link Arg1:E20 Arg2:T47	
+T48	Mention 538 542	them
+T12	Reagent 562 567	chips
+T49	Location 575 587	paper towels
+T50	Action 604 611	get rid
+E12	Action:T50 Acts-on:T53
+T51	Modifier 615 618	any
+T52	Modifier 619 625	pooled
+T53	Reagent 626 629	oil
+R17	Mod-Link Arg1:T53 Arg2:T52	
+R18	Mod-Link Arg1:T53 Arg2:T51	
+T54	Reagent 635 640	chips
+T55	Device 651 662	weigh boats
+T15	Reagent 696 701	chips
+T56	Action 702 709	covered
+E15	Action:T56 Acts-on:T15 Site:T57
+T57	Location 725 734	container
+T58	Reagent 7 12	Chips
+T59	Action 0 6	Frying
+E21	Action:T59 Acts-on:T58
+T60	Method 17 35	Frying Oil Studies
+R2	Or Arg1:T20 Arg2:T22	
+T61	Measure-Type 220 231	temperature
+T62	Device 245 253	computer
+T63	Reagent 318 323	chips
+R19	Measure Arg1:T63 Arg2:T29	
+R20	Measure Arg1:T63 Arg2:T27	
+T64	Action 529 533	Wait
+E22	Action:T64 
+T65	Action 667 673	record
+E23	Action:T65 Measure-Type-Link:T66
+T66	Measure-Type 682 688	weight
+T67	Modifier 676 681	final
+T68	Modifier 716 724	airtight
+R21	Mod-Link Arg1:T57 Arg2:T68	

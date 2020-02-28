@@ -1,0 +1,181 @@
+T1	Action 169 176	Measure
+E1	Action:T1 
+T2	Action 238 244	adjust
+E2	Action:T2 Using:T23
+T3	Action 374 381	Aliquot
+E3	Action:T3 Acts-on:T32 Site:T34
+T4	Action 422 426	keep
+E4	Action:T4 Acts-on:T34
+T5	Action 702 712	Distribute
+E5	Action:T5 Acts-on:T48 Site:T50
+T6	Action 594 602	vortexed
+E6	Action:T6 Acts-on:T44
+T7	Action 619 625	poured
+E7	Action:T7 Site:T46 Acts-on:T47
+T8	Action 508 513	added
+E8	Action:T8 Acts-on:T39 Site:T41
+T9	Action 330 336	melted
+E9	Action:T9 Using:T29
+T10	Action 76 81	grown
+E10	Action:T10 Product:T15 Site:T17
+T11	Action 977 984	spotted
+E11	Action:T11 Site:T58 Acts-on:T54
+T12	Action 1169 1176	spotted
+E12	Action:T12 Acts-on:T64 Using:T65 Site:T66
+T13	Action 1653 1661	isolated
+E13	Action:T13 Acts-on:T107 Site:T108
+T14	Action 1666 1674	purified
+E14	Action:T14 Acts-on:T107 Site:T108
+T15	Reagent 61 71	host cells
+T16	Time 82 91	overnight
+T17	Reagent 95 110	liquid cultures
+T18	Modifier 125 136	appropriate
+T19	Reagent 137 150	growth medium
+R1	Setting Arg1:E10 Arg2:T16	
+R2	Mod-Link Arg1:T19 Arg2:T18	
+R3	Meronym Arg1:T19 Arg2:T17	
+T20	Measure-Type 177 215	optical density spectrophotometrically
+T21	Generic-Measure 219 225	525 nm
+T23	Reagent 264 277	growth medium
+T22	Generic-Measure 245 258	OD to 0.3–0.5
+R4	Setting Arg1:E2 Arg2:T22	
+R5	Of-Type Arg1:T21 Arg2:T20	
+R6	Setting Arg1:E1 Arg2:T21	
+T24	Reagent 279 288	Soft agar
+T25	Concentration 290 301	0.5 to 0.6%
+T26	Reagent 302 306	agar
+T27	Reagent 310 315	media
+T28	Modifier 319 325	choice
+R7	Mod-Link Arg1:T27 Arg2:T28	
+R8	Measure Arg1:T26 Arg2:T25	
+R9	Meronym Arg1:T26 Arg2:T24	
+R10	Meronym Arg1:T27 Arg2:T26	
+T29	Device 342 352	water bath
+T30	Device 358 372	microwave oven
+R11	Or Arg1:T29 Arg2:T30	
+T31	Amount 382 385	4mL
+T32	Reagent 389 398	soft agar
+T33	Modifier 404 411	sterile
+T34	Location 412 417	tubes
+T35	Temperature 438 464	solidification temperature
+T36	Modifier 432 437	above
+R12	Mod-Link Arg1:T35 Arg2:T36	
+R14	Setting Arg1:E4 Arg2:T35	
+R15	Measure Arg1:T32 Arg2:T31	
+R16	Mod-Link Arg1:T34 Arg2:T33	
+T38	Amount 476 486	200–300 µL
+T39	Reagent 487 504	bacterial culture
+T40	Amount 521 525	4 mL
+T41	Location 526 531	tubes
+T42	Modifier 537 543	melted
+T43	Reagent 544 553	soft agar
+R17	Mod-Link Arg1:T43 Arg2:T42	
+R18	Measure Arg1:T41 Arg2:T40	
+R19	Measure Arg1:T39 Arg2:T38	
+R20	Meronym Arg1:T43 Arg2:T41	
+T44	Reagent 559 585	bacteria-soft agar mixture
+T45	Modifier 607 618	immediately
+T46	Location 634 644	agar plate
+T47	Reagent 653 657	agar
+R21	Mod-Link Arg1:E7 Arg2:T45	
+T48	Reagent 713 739	bacteria-soft agar mixture
+T49	Modifier 740 746	evenly
+T50	Location 754 759	plate
+T51	Action 770 776	placed
+E15	Action:T51 Site:T52 Acts-on:T50
+T52	Location 782 794	flat surface
+R22	Mod-Link Arg1:E5 Arg2:T49	
+T53	Action 862 872	triplicate
+E16	Action:T53 Product:T54
+T54	Reagent 873 881	aliquots
+T55	Amount 885 892	5–10 µL
+R23	Measure Arg1:T54 Arg2:T55	
+T56	Reagent 908 935	environmental water samples
+T57	Modifier 896 900	each
+R24	Mod-Link Arg1:T56 Arg2:T57	
+R25	Meronym Arg1:T54 Arg2:T56	
+T58	Location 988 991	top
+T59	Reagent 999 1008	soft agar
+R26	Meronym Arg1:T58 Arg2:T59	
+T60	Amount 1032 1039	5–10 µL
+T61	Reagent 1040 1052	phage buffer
+T62	Size 1136 1143	0.02 µm
+T64	Reagent 1153 1165	sample water
+T63	Modifier 1144 1152	filtered
+R27	Setting Arg1:T63 Arg2:T62	
+R28	Mod-Link Arg1:T64 Arg2:T63	
+T65	Method 1180 1190	triplicate
+T66	Reagent 1198 1207	soft agar
+R29	Measure Arg1:T61 Arg2:T60	
+R30	Or Arg1:T64 Arg2:T61	
+T67	Location 1213 1219	plates
+T68	Action 1224 1233	incubated
+E17	Action:T68 Acts-on:T67
+T69	Time 1238 1243	1–3 d
+R31	Setting Arg1:E17 Arg2:T69	
+T70	Reagent 0 13	Bacteriophage
+T71	Method 14 23	isolation
+T72	Action 27 35	spotting
+E18	Action:T72 Acts-on:T73
+T73	Reagent 39 56	target host cells
+T74	Generic-Measure 227 232	OD525
+R32	Coreference-Link Arg1:T74 Arg2:T21	
+T75	Reagent 159 167	organism
+T37	Reagent 686 700	host bacterium
+T76	Reagent 805 814	soft agar
+T77	Reagent 830 845	target bacteria
+T78	Modifier 850 860	solidified
+R13	Mod-Link Arg1:T77 Arg2:T78	
+T79	Reagent 947 953	phages
+T80	Modifier 964 972	isolated
+R33	Mod-Link Arg1:T79 Arg2:T80	
+T81	Reagent 1015 1031	negative control
+T82	Reagent 1060 1069	SM buffer
+T83	Concentration 1071 1077	450 mM
+T84	Reagent 1078 1082	NaCl
+T85	Concentration 1084 1089	50 mM
+T86	Reagent 1090 1095	MgSO4
+T87	Concentration 1097 1102	50 mM
+R34	Meronym Arg1:T77 Arg2:T76	
+T88	Reagent 1103 1107	Tris
+T89	Concentration 1109 1115	0.01 %
+T90	Reagent 1116 1123	Gelatin
+T91	Measure-Type 1261 1272	growth rate
+T92	Reagent 1280 1288	bacteria
+T93	Reagent 1310 1322	lytic phages
+T94	Reagent 1330 1336	sample
+T95	Location 1354 1367	clearing zone
+T96	Location 1369 1375	plaque
+T97	Reagent 1384 1396	spotted area
+T98	Reagent 1404 1408	lawn
+T99	Reagent 1412 1420	bacteria
+T100	Location 1452 1457	plate
+T101	Location 1462 1476	clearing zones
+T102	Reagent 1491 1503	spotted area
+T103	Reagent 1536 1548	lytic phages
+T106	Reagent 1619 1632	spotting zone
+T107	Reagent 1634 1640	phages
+T108	Location 1684 1690	plates
+T104	Action 1563 1571	isolated
+E19	Action:T104 Acts-on:T103
+T105	Action 1576 1584	purified
+E20	Action:T105 Acts-on:T103
+R35	Measure Arg1:T84 Arg2:T83	
+R36	Measure Arg1:T86 Arg2:T85	
+R37	Measure Arg1:T88 Arg2:T87	
+R38	Measure Arg1:T90 Arg2:T89	
+R39	Meronym Arg1:T84 Arg2:T82	
+R40	Coreference-Link Arg1:T61 Arg2:T81	
+R41	Meronym Arg1:T86 Arg2:T82	
+R42	Meronym Arg1:T88 Arg2:T82	
+R43	Meronym Arg1:T90 Arg2:T82	
+T109	pH 1125 1131	pH = 8
+R44	Measure Arg1:T90 Arg2:T109	
+R45	Meronym Arg1:T93 Arg2:T94	
+R46	Coreference-Link Arg1:T96 Arg2:T95	
+R47	Meronym Arg1:T97 Arg2:T98	
+R48	Meronym Arg1:T98 Arg2:T99	
+R49	Meronym Arg1:T99 Arg2:T100	
+R50	Meronym Arg1:T101 Arg2:T102	
+T110	Location 1602 1611	clearings
+R51	Meronym Arg1:T110 Arg2:T106	

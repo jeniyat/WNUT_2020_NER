@@ -1,0 +1,262 @@
+T1	Action 87 94	Prepare
+E1	Action:T1 Product:T3 Product2:T4
+T2	Concentration 99 103	1.5%
+T3	Reagent 104 111	agarose
+T4	Reagent 120 132	lysis buffer
+R1	Measure Arg1:T3 Arg2:T2
+T5	Action 134 142	Incubate
+E2	Action:T5 Acts-on:T6
+T6	Reagent 147 154	agarose
+T7	Temperature 158 162	80°C
+R2	Setting Arg1:E2 Arg2:T7
+T8	Action 182 190	Dispense
+E3	Action:T8 Acts-on:T10 Site:T12
+T9	Amount 191 195	5 mL
+T10	Reagent 216 228	lysis buffer
+T11	Amount 234 239	50-mL
+T12	Location 240 252	Falcon tubes
+T13	Action 275 282	Combine
+E4	Action:T13 Acts-on:T14 Acts-on2:T17 Measure-Type-Link:T144
+T14	Reagent 309 326	virus concentrate
+T15	Amount 298 304	200 µL
+T16	Concentration 338 342	1.5%
+T17	Reagent 343 350	agarose
+T18	Modifier 331 337	molten
+R7	Mod-Link Arg1:T17 Arg2:T18
+T19	Action 352 355	Mix
+E5	Action:T19 
+T20	Modifier 356 363	briefly
+R8	Mod-Link Arg1:E5 Arg2:T20
+T21	Action 365 373	Dispense
+E6	Action:T21 Acts-on:T22 Using:T23 Site:T24
+T22	Reagent 378 385	mixture
+T23	Location 409 416	pipette
+T24	Reagent 391 401	plug molds
+T25	Action 418 423	Place
+E7	Action:T25 Acts-on:T26 Site:T27
+T26	Reagent 428 438	plug molds
+T27	Device 446 453	freezer
+T28	Temperature 455 460	–20°C
+T29	Time 475 480	2 min
+R9	Setting Arg1:E7 Arg2:T28
+R10	Setting Arg1:E7 Arg2:T29
+T30	Action 489 495	Remove
+E8	Action:T30 Acts-on:T31 Site:T33
+T31	Seal 500 504	tape
+T32	Reagent 528 538	plug molds
+T33	Location 514 520	bottom
+R11	Meronym Arg1:T33 Arg2:T32
+T34	Action 543 547	push
+E9	Action:T34 Acts-on:T35 Site:T130 Site2:T38
+T35	Reagent 552 557	plugs
+T37	Amount 582 586	5 mL
+T38	Reagent 587 599	lysis buffer
+T39	Action 601 609	Incubate
+E10	Action:T39 Acts-on:T36 Site:T42
+T36	Reagent 614 635	plugs in lysis buffer
+T40	Time 636 645	overnight
+T41	Temperature 661 665	30°C
+T42	Location 653 657	dark
+R13	Setting Arg1:E10 Arg2:T40
+R14	Setting Arg1:E10 Arg2:T41
+T43	Action 681 687	decant
+E11	Action:T43 Acts-on:T44 Using:T45
+T44	Reagent 692 704	lysis buffer
+T45	Device 713 726	plastic sieve
+T46	Action 754 762	attached
+E12	Action:T46 Site:T47 Acts-on:T45
+T47	Location 770 773	top
+T48	Location 781 792	Falcon tube
+R15	Meronym Arg1:T47 Arg2:T48
+T49	Action 794 798	Wash
+E13	Action:T49 Acts-on:T50 Count:T51 Acts-on2:T53
+T50	Reagent 803 808	plugs
+T51	Numerical 809 814	three
+T52	Time 822 828	30 min
+R16	Setting Arg1:E13 Arg2:T52
+T53	Reagent 838 847	TE buffer
+T54	Generic-Measure 848 852	10:1
+T55	Temperature 856 872	room temperature
+R17	Setting Arg1:E13 Arg2:T55
+T56	Action 1113 1119	Set up
+E14	Action:T56 Acts-on:T57
+T57	Device 1124 1131	gel rig
+T58	Action 1133 1140	Prepare
+E15	Action:T58 Site:T62 Product:T60
+T59	Concentration 1143 1145	1%
+T60	Reagent 1146 1157	agarose gel
+T61	Concentration 1161 1163	1×
+T62	Reagent 1164 1174	TBE buffer
+T63	Action 1176 1180	Melt
+E16	Action:T63 Acts-on:T64
+T64	Reagent 1191 1198	agarose
+T65	Action 1224 1229	Place
+E17	Action:T65 Acts-on:T66
+T66	Reagent 1239 1246	agarose
+T67	Modifier 1234 1238	warm
+R21	Mod-Link Arg1:T66 Arg2:T67
+T68	Temperature 1250 1254	60°C
+T69	Time 1259 1265	10 min
+R22	Setting Arg1:E17 Arg2:T68
+R23	Setting Arg1:E17 Arg2:T69
+T70	Action 1273 1280	pouring
+E18	Action:T70 Acts-on:T66 Site:T71
+T71	Device 1290 1297	gel rig
+T72	Action 1323 1327	Keep
+E19	Action:T72 Acts-on:T74
+T73	Amount 1329 1333	5 mL
+T74	Reagent 1334 1341	agarose
+T75	Temperature 1345 1349	60°C
+R25	Setting Arg1:E19 Arg2:T75
+T76	Action 1408 1412	pour
+E20	Action:T76 Acts-on:T79 Site:T80
+T77	Amount 1413 1418	50 mL
+T78	Concentration 1422 1424	1×
+T79	Reagent 1425 1443	TBE running buffer
+T80	Location 1451 1454	top
+T81	Reagent 1462 1465	gel
+R28	Meronym Arg1:T80 Arg2:T81
+T82	Action 1470 1475	place
+E21	Action:T82 Acts-on:T83 Site:T84
+T83	Mention 1476 1478	it
+R29	Coreference-Link Arg1:T83 Arg2:T81
+T84	Device 1486 1498	refrigerator
+T85	Time 1512 1518	20 min
+R30	Setting Arg1:E21 Arg2:T85
+T86	Time 1522 1531	overnight
+R31	Setting Arg1:E21 Arg2:T86
+T87	Action 1533 1538	Place
+E22	Action:T87 Acts-on:T88 Site:T90
+T88	Reagent 1539 1565	molecular weight standards
+T89	Amount 1577 1582	~5 mm
+T90	Location 1587 1598	either side
+T91	Reagent 1606 1609	gel
+R33	Meronym Arg1:T90 Arg2:T91
+T92	Action 1611 1616	Place
+E23	Action:T92 Acts-on:T93 Site:T95 Using:T96
+T93	Reagent 1621 1628	samples
+T94	Reagent 1641 1648	markers
+T95	Location 1629 1636	between
+R34	Meronym Arg1:T95 Arg2:T94
+T96	Device 1665 1669	loop
+T97	Action 1671 1678	Overlay
+E24	Action:T97 Site:T98 Acts-on:T100
+T98	Location 1683 1688	wells
+T99	Modifier 1694 1709	leftover molten
+T100	Reagent 1713 1720	agarose
+R35	Mod-Link Arg1:T100 Arg2:T99
+T101	Amount 1710 1712	1%
+T102	Action 1722 1728	Remove
+E25	Action:T102 Acts-on:T103 Site:T104
+T103	Reagent 1733 1736	gel
+T104	Device 1746 1757	pouring rig
+T105	Action 1762 1768	remove
+E26	Action:T105 Acts-on:T106 Site:T107 Site2:T108
+T106	Reagent 1784 1791	agarose
+T107	Location 1801 1807	bottom
+T108	Location 1812 1817	edges
+T109	Action 1819 1826	Prepare
+E27	Action:T109 Acts-on:T111
+T110	Concentration 1831 1833	1×
+T111	Reagent 1834 1837	TBE
+T112	Action 1859 1864	place
+E28	Action:T112 Acts-on:T111
+T113	Time 1868 1872	14°C
+R38	Setting Arg1:E28 Arg2:T113
+T114	Action 1892 1897	Place
+E29	Action:T114 Acts-on:T115 Site:T116
+T115	Reagent 1902 1905	gel
+T116	Location 1915 1938	electrophoresis chamber
+T117	Action 1953 1957	pour
+E30	Action:T117 Acts-on:T119 Site:T121
+T118	Modifier 1962 1968	cooled
+T119	Reagent 1972 1990	TBE running buffer
+T120	Concentration 1969 1971	1×
+T121	Location 2000 2007	chamber
+R40	Mod-Link Arg1:T119 Arg2:T118
+T122	Action 2009 2012	Run
+E31	Action:T122 Acts-on:T123 Using:T136
+T123	Reagent 2017 2020	gel
+T124	Action 2168 2171	run
+E32	Action:T124 Count:T125 Acts-on:T126
+T125	Numerical 2172 2177	three
+T126	Reagent 2147 2158	each sample
+T127	Action 2101 2109	separate
+E33	Action:T127 Measure-Type-Link:T166
+R3	Measure Arg1:T10 Arg2:T9	
+R4	Measure Arg1:T12 Arg2:T11	
+R5	Measure Arg1:T14 Arg2:T15	
+R6	Measure Arg1:T17 Arg2:T16	
+R12	Measure Arg1:T38 Arg2:T37	
+R18	Measure Arg1:T53 Arg2:T54	
+R20	Measure Arg1:T60 Arg2:T59	
+R19	Measure Arg1:T62 Arg2:T61	
+R24	Measure Arg1:T74 Arg2:T73	
+R26	Measure Arg1:T79 Arg2:T78	
+R27	Measure Arg1:T79 Arg2:T77	
+R32	Measure Arg1:T88 Arg2:T89	
+R36	Measure Arg1:T100 Arg2:T101	
+R39	Measure Arg1:T119 Arg2:T120	
+R37	Measure Arg1:T111 Arg2:T110	
+T128	Modifier 203 215	freshly made
+R41	Mod-Link Arg1:T10 Arg2:T128	
+T129	Modifier 466 474	at least
+R42	Mod-Link Arg1:T29 Arg2:T129	
+T130	Reagent 571 576	molds
+T131	Modifier 1503 1511	at least
+R43	Mod-Link Arg1:T85 Arg2:T131	
+T132	Modifier 1657 1664	sterile
+R44	Mod-Link Arg1:T96 Arg2:T132	
+T133	Modifier 1773 1783	extraneous
+R45	Mod-Link Arg1:T106 Arg2:T133	
+T134	Modifier 1943 1952	carefully
+R46	Mod-Link Arg1:E30 Arg2:T134	
+T135	Generic-Measure 2024 2032	6 V cm–1
+T136	Device 2038 2049	pulse ramps
+T137	Time 2055 2065	20 to 40 s
+T138	Temperature 2083 2087	14°C
+T139	Time 2092 2096	22 h
+R47	Setting Arg1:T136 Arg2:T135	
+R49	Setting Arg1:E31 Arg2:T138	
+R50	Setting Arg1:E31 Arg2:T139	
+R48	Setting Arg1:T136 Arg2:T137	
+T140	Action 0 14	Fingerprinting
+E34	Action:T140 
+T141	Reagent 15 40	aquatic virus communities
+T142	Method 47 79	pulsed field gel electrophoresis
+T143	Method 81 85	PFGE
+T144	Measure-Type 289 296	volumes
+T145	Time 676 679	day
+T146	Seal 728 740	screened cap
+T147	Device 878 883	plugs
+T148	Action 891 897	stored
+E35	Action:T148 Acts-on:T147 Site:T150
+T149	Temperature 901 904	4°C
+T150	Reagent 908 910	TE
+T151	Concentration 911 916	20:50
+R51	Measure Arg1:T150 Arg2:T151	
+T152	Time 921 934	several month
+T153	Action 950 960	processing
+E36	Action:T153 
+T154	Action 989 996	running
+E37	Action:T154 Acts-on:T155
+T155	Reagent 1001 1008	samples
+T156	Method 1038 1049	degradation
+T157	Reagent 1057 1066	viral DNA
+T158	Reagent 1106 1111	bands
+R52	Setting Arg1:E35 Arg2:T149	
+R53	Setting Arg1:E35 Arg2:T152	
+T159	Modifier 1202 1222	completely dissolved
+R54	Mod-Link Arg1:T64 Arg2:T159	
+T160	Mention 1311 1313	it
+R55	Coreference-Link Arg1:T160 Arg2:T66	
+T161	Modifier 1328 1329	~
+R56	Mod-Link Arg1:T73 Arg2:T161	
+T162	Action 1367 1371	seal
+E38	Action:T162 Acts-on:T163
+T163	Location 1376 1381	wells
+T164	Reagent 1392 1399	agarose
+T165	Action 1403 1406	set
+E39	Action:T165 Acts-on:T164
+R57	Or Arg1:T85 Arg2:T86	
+T166	Measure-Type 2120 2137	viral genome size

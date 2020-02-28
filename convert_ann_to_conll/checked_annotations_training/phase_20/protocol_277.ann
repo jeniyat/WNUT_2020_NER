@@ -1,0 +1,61 @@
+T1	Action 106 112	Dilute
+E1	Action:T1 Acts-on:T8 Site:T11
+T2	Action 259 267	Incubate
+E2	Action:T2 
+T3	Action 198 201	Use
+E3	Action:T3 
+T4	Action 297 304	Prepare
+E4	Action:T4 Acts-on:T22
+T5	Action 338 345	Prepare
+E5	Action:T5 Acts-on:T24
+T6	Action 372 382	Inactivate
+E6	Action:T6 Acts-on:T25
+T7	Action 392 398	adding
+E7	Action:T7 Acts-on:T27 Acts-on2:T29
+T8	Reagent 113 127	stock solution
+T9	Generic-Measure 128 132	1:40
+T10	Concentration 136 139	10x
+T11	Reagent 140 155	reaction buffer
+T12	Generic-Measure 158 168	1,000 U/ml
+T13	Generic-Measure 171 177	1 U/ul
+T14	Generic-Measure 207 211	1:10
+T16	Amount 222 225	1μl
+T17	Amount 230 234	9 μl
+T18	Reagent 235 243	solution
+T19	Temperature 271 287	room temperature
+T20	Time 292 295	2hr
+T21	Concentration 305 307	1M
+T22	Reagent 308 336	EDTA disodium salt dihydrate
+T23	Concentration 346 348	1M
+T24	Reagent 349 370	EGTA tetrasodium salt
+T25	Reagent 383 388	DNase
+T26	Concentration 399 405	100 mM
+T27	Reagent 406 410	EDTA
+T28	Concentration 411 417	100 mM
+T29	Reagent 418 422	EGTA
+R1	Setting Arg1:E1 Arg2:T9	
+R2	Measure Arg1:T11 Arg2:T10	
+T15	Action 212 220	dilution
+E8	Action:T15 Acts-on:T18
+R3	Setting Arg1:E8 Arg2:T14	
+R4	Setting Arg1:E8 Arg2:T16	
+R5	Measure Arg1:T18 Arg2:T17	
+R6	Setting Arg1:E2 Arg2:T19	
+R7	Setting Arg1:E2 Arg2:T20	
+R8	Measure Arg1:T22 Arg2:T21	
+R9	Measure Arg1:T24 Arg2:T23	
+R10	Measure Arg1:T27 Arg2:T26	
+R11	Measure Arg1:T29 Arg2:T28	
+T30	Reagent 0 7	DNase I
+T31	Method 8 17	Treatment
+T32	Reagent 18 25	DNase I
+T33	Concentration 37 48	40,000 U/ml
+T34	Reagent 52 66	storage buffer
+T35	Temperature 68 73	-20°C
+T36	Device 74 86	freezer door
+T37	Reagent 90 104	stock solution
+R12	Measure Arg1:T34 Arg2:T33	
+T38	Reagent 180 196	working dilution
+T39	Modifier 250 257	treated
+R13	Mod-Link Arg1:T18 Arg2:T39	
+T40	Measure-Type 429 442	concentration

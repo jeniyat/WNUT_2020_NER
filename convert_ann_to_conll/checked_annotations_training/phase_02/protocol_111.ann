@@ -1,0 +1,126 @@
+T1	Action 47 56	Inoculate
+E1	Action:T1 Acts-on:T21
+T2	Action 76 80	pick
+E2	Action:T2 Acts-on:T22 Site:T24
+T4	Action 343 352	Calculate
+E4	Action:T4 Measure-Type-Link:T28 Acts-on:T27
+T5	Action 387 396	Determine
+E5	Action:T5 Measure-Type-Link:T65
+T6	Action 468 477	Calculate
+E6	Action:T6 Measure-Type-Link:T29 Acts-on:T30
+T7	Action 527 532	Pipet
+E7	Action:T7 Site:T34
+T8	Action 565 568	Add
+E8	Action:T8 Acts-on:T37 Site:T38
+T10	Action 695 701	dilute
+E10	Action:T10 Acts-on:T41 Site2:T45 Using:T43
+T11	Action 843 848	Store
+E11	Action:T11 Acts-on:T49
+T12	Action 892 897	count
+E12	Action:T12 Acts-on:T51 Site:T53
+T14	Action 1091 1096	count
+E14	Action:T14 Acts-on:T56
+T16	Action 1200 1209	Calculate
+E16	Action:T16 Acts-on:T57 Acts-on2:T58
+T18	Action 1340 1349	Calculate
+E18	Action:T18 Measure-Type-Link:T59
+T19	Action 651 657	adsorb
+E19	Action:T19 Acts-on:T9 Site:T39
+T20	Action 807 815	sampling
+E20	Action:T20 
+T13	Modifier 59 62	new
+T21	Reagent 63 70	culture
+T22	Reagent 83 89	colony
+T23	Modifier 97 100	new
+T24	Location 101 106	flask
+T25	Amount 118 123	10 ml
+T26	Reagent 127 136	MLB media
+R1	Measure Arg1:T26 Arg2:T25	
+R2	Mod-Link Arg1:T24 Arg2:T23	
+R3	Mod-Link Arg1:T21 Arg2:T13	
+R4	Meronym Arg1:T26 Arg2:T24	
+T3	Numerical 375 378	107
+T27	Reagent 379 385	phages
+T28	Measure-Type 357 363	volume
+R5	Measure Arg1:T27 Arg2:T3	
+T29	Measure-Type 482 488	volume
+T30	Reagent 492 504	host culture
+T31	Numerical 516 519	108
+T32	Reagent 520 525	cells
+R6	Measure Arg1:T32 Arg2:T31	
+T33	Amount 552 558	1.5 ml
+T34	Location 559 563	tube
+R7	Measure Arg1:T34 Arg2:T33	
+T35	Amount 533 544	this amount
+R8	Setting Arg1:E7 Arg2:T35	
+T36	Numerical 569 572	107
+T37	Reagent 573 579	phages
+T38	Location 587 591	tube
+R9	Measure Arg1:T37 Arg2:T36	
+T9	Reagent 641 647	phages
+T39	Reagent 665 675	host cells
+T40	Time 617 627	15 minutes
+R10	Setting Arg1:E19 Arg2:T40	
+T41	Reagent 706 715	infection
+T42	Generic-Measure 716 722	1:1000
+T43	Reagent 726 735	MLB media
+T44	Amount 741 747	250 ml
+T45	Location 748 753	flask
+R11	Measure Arg1:T45 Arg2:T44	
+R12	Setting Arg1:E10 Arg2:T42	
+T46	Modifier 798 806	Continue
+T47	Time 832 839	8 hours
+R13	Mod-Link Arg1:E20 Arg2:T46	
+R14	Setting Arg1:E20 Arg2:T47	
+T48	Modifier 853 861	filtered
+T49	Reagent 862 869	samples
+T50	Temperature 873 876	4°C
+R15	Mod-Link Arg1:T49 Arg2:T48	
+R16	Setting Arg1:E11 Arg2:T50	
+T51	Reagent 902 909	plaques
+T52	Modifier 913 916	all
+T53	Location 917 923	plates
+R17	Mod-Link Arg1:T53 Arg2:T52	
+T54	Modifier 1097 1100	any
+T55	Modifier 1101 1104	new
+T56	Reagent 1105 1112	plaques
+R18	Mod-Link Arg1:T56 Arg2:T55	
+R19	Mod-Link Arg1:T56 Arg2:T54	
+T15	Concentration 1210 1216	PFU/ml
+T57	Reagent 1249 1278	centrifuged (free phage only)
+T58	Reagent 1287 1320	centrifuged (total phage) samples
+T59	Measure-Type 1350 1360	burst size
+T17	Reagent 27 46	Cellulophaga phages
+T60	Action 161 169	transfer
+E3	Action:T60 
+T61	Action 275 287	plaque assay
+E9	Action:T61 Commands:E13
+T62	Concentration 305 311	PFU/ml
+T63	Reagent 319 325	lysate
+R20	Measure Arg1:T63 Arg2:T62	
+T64	Action 291 300	determine
+E13	Action:T64 
+T65	Measure-Type 401 414	concentration
+T66	Reagent 423 430	culture
+T67	Method 457 466	infection
+T68	Measure-Type 438 442	time
+T69	Device 607 612	timer
+T70	Action 596 601	start
+E15	Action:T70 Acts-on:T69
+R21	Setting Arg1:E15 Arg2:T40	
+T71	Time 683 693	15 minutes
+T72	Reagent 762 768	sample
+T73	Action 755 759	Take
+E17	Action:T73 Acts-on:T72
+T74	Modifier 769 780	immediately
+R22	Mod-Link Arg1:E17 Arg2:T74	
+T75	Method 787 795	dilution
+T76	Action 963 969	Decide
+E21	Action:T76 
+T77	Method 976 984	dilution
+T78	Reagent 1060 1075	phage-host pair
+R23	Setting Arg1:E16 Arg2:T15	
+T79	Measure-Type 9 22	growth curves
+T80	Measure-Type 187 201	growth reading
+T81	Action 1322 1327	Graph
+E22	Action:T81 

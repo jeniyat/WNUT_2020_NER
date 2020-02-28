@@ -1,0 +1,111 @@
+T1	Action 25 30	Weigh
+E1	Action:T1 Acts-on:T3 Site:T4
+T2	Amount 31 38	0.01 mg
+T3	Reagent 39 42	oil
+T4	Location 48 57	test tube
+T5	Action 62 68	record
+E2	Action:T5 Measure-Type-Link:T6
+T6	Measure-Type 75 81	weight
+T7	Action 103 109	melted
+E3	Action:T7 Acts-on:T8
+T8	Reagent 83 92	Solid fat
+T9	Action 162 169	diluted
+E4	Action:T9 Acts-on:T10 Using:T11
+T10	Reagent 117 137	Samples with high PV
+T11	Reagent 173 188	working solvent
+T12	Action 303 306	add
+E5	Action:T12 Acts-on:T14
+T13	Amount 307 311	3 mL
+T14	Reagent 312 327	working solvent
+T15	Action 332 338	vortex
+E6	Action:T15 
+T17	Action 387 394	Prepare
+E7	Action:T17 Acts-on:T18
+T18	Location 397 407	blank tube
+T19	Action 441 444	Add
+E8	Action:T19 Acts-on:T21 Site:T22
+T20	Amount 445 450	15 μl
+T21	Reagent 451 471	ammonium thiocyanate
+T22	Location 479 484	tubes
+T23	Action 490 496	vortex
+E9	Action:T23 
+T24	Time 497 504	2-4 sec
+R3	Setting Arg1:E9 Arg2:T24
+T25	Action 509 512	Add
+E10	Action:T25 Acts-on:T27 Site:T28
+T26	Amount 513 518	15 μl
+T27	Reagent 519 535	ferrous chloride
+T28	Location 543 548	tubes
+T29	Action 554 560	vortex
+E11	Action:T29 
+T30	Time 561 568	2-4 sec
+R6	Setting Arg1:E11 Arg2:T30
+T31	Action 577 580	sit
+E12	Action:T31 
+T32	Temperature 584 600	room temperature
+T33	Time 601 607	20 min
+R7	Setting Arg1:E12 Arg2:T32
+R8	Setting Arg1:E12 Arg2:T33
+T34	Action 638 642	Read
+E13	Action:T34 Measure-Type-Link:T35 Using:T36
+T35	Measure-Type 643 653	absorbance
+T36	Device 657 674	spectrophotometer
+T37	Generic-Measure 682 688	510 nm
+T16	Action 342 350	dissolve
+E14	Action:T16 
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Measure Arg1:T14 Arg2:T13	
+R4	Measure Arg1:T21 Arg2:T20	
+R5	Measure Arg1:T27 Arg2:T26	
+T39	Modifier 110 115	first
+R11	Mod-Link Arg1:E3 Arg2:T39	
+T40	Modifier 153 161	serially
+R12	Mod-Link Arg1:E4 Arg2:T40	
+T41	Modifier 291 302	Immediately
+R13	Mod-Link Arg1:E5 Arg2:T41	
+T42	Modifier 475 478	all
+R14	Mod-Link Arg1:T22 Arg2:T42	
+T43	Modifier 539 542	all
+R15	Mod-Link Arg1:T28 Arg2:T43	
+R9	Setting Arg1:T36 Arg2:T37	
+T38	Method 0 21	Peroxide Value Method
+T44	Action 203 209	record
+E15	Action:T44 
+T45	Measure-Type 210 225	dilution factor
+T46	Modifier 233 238	Up to
+T47	Amount 239 245	0.10 g
+T48	Reagent 262 269	samples
+T49	Modifier 275 283	very low
+T50	Measure-Type 284 286	PV
+R10	Mod-Link Arg1:T47 Arg2:T46	
+T51	Mention 361 363	it
+T52	Modifier 367 382	fully dissolved
+R16	Coreference-Link Arg1:T51 Arg2:T14	
+R17	Mod-Link Arg1:T51 Arg2:T52	
+T53	Reagent 409 416	solvent
+T54	Reagent 429 435	sample
+T55	Action 609 613	Keep
+E16	Action:T55 
+T56	Action 693 702	Determine
+E17	Action:T56 Measure-Type-Link:T57
+T57	Measure-Type 703 705	PV
+T58	Measure-Type 749 751	PV
+T59	Reagent 757 765	peroxide
+T60	Amount 770 772	kg
+T61	Reagent 773 779	sample
+R18	Measure Arg1:T61 Arg2:T60	
+T62	Measure-Type 817 819	As
+T63	Measure-Type 821 831	absorbance
+T64	Reagent 835 841	sample
+T65	Measure-Type 841 843	Ab
+T66	Measure-Type 845 855	absorbance
+T67	Reagent 859 864	blank
+T68	Measure-Type 864 865	m
+T69	Measure-Type 868 873	slope
+T70	Measure-Type 891 893	m0
+T71	Measure-Type 894 898	mass
+T72	Reagent 902 907	grams
+#1	AnnotatorNotes T72	u
+T73	Reagent 915 921	sample
+T74	Measure-Type 928 941	atomic weight
+T75	Reagent 945 949	iron

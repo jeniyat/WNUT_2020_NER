@@ -1,0 +1,14 @@
+Internal Genomic DNA Standard for Quantitative Metagenome Analysis
+Suspend genomic DNA in a volume of nuclease-free water to produce a stock concentration of 0.1 μg/μL.
+Incubate rehydrated DNA overnight at 4°C while rocking, and then incubate for 1 h at 65°C.
+Prepare working solution by adding 1 μL of the stock solution to 99 μL of nuclease-free water to produce a final concentration of 1 ng/μL.
+Check the DNA concentration of stocks fluorometrically using Quant-iT™ PicoGreen® dsDNA Assay Kit Genomic DNA can be stored at −20 °C.
+Just prior to sample DNA extraction, add enough standard DNA to each sample to reach ~0.1-1.0% of expected total reads.
+Following sequencing, quantify the number of genomic standard reads (steps 8 and 9).
+Using a bit score cutoff of 50, identify standard reads by BLASTn homology search aganst the internal standard genome.
+Using the results from step 8 and a bit score cutoff of 40, perform a BLASTx against the RefSeq Protein database to identify all protein encoding reads derived from the internal standard genome.
+Quantify recovered standard DNA reads and remove from dataset.
+Calculate the number of molecules of internal standard recovered from sequencing: Sr=SS/SPSr = number of molecules of internal standard genome recovered from sequencingSS = number of protein encoding internal standard reads in the sequence librarySP = number of protein encoding genes in the internal standard reference genome. 
+Calculate the community gene pool size: Pg=Ps*(Sa/Sr)Pg = total number of protein encoding genes in the samplePs = number of protein encoding sequences in the metagenome librarySa = number of molecules of internal standard genome added to the sampleSr = number of molecules of internal standard genome recovered from sequencing. 
+Calculate individual gene abundances for genes of interest: Ga=Gs*(Pg/Ps)Ga = number of molecules of any particular gene category in the sample.
+This can then be divided by the mass or volume of sample collected to calculate the gene abundance per volume or weightGs = number of genes of interest in the sequence libraryPg = total number of protein encoding genes in the samplePs = number of protein encoding sequences in the metagenome library

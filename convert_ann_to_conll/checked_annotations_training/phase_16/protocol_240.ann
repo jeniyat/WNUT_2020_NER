@@ -1,0 +1,37 @@
+T1	Action 15 18	Add
+E1	Action:T1 Acts-on:T3 Site:T5
+T2	Amount 19 25	600 uL
+T3	Reagent 34 59	inoculated liquid culture
+T4	Amount 65 69	2 mL
+T5	Location 70 84	screw top tube
+R1	Measure Arg1:T5 Arg2:T4	
+R2	Measure Arg1:T3 Arg2:T2	
+T6	Action 86 89	Add
+E2	Action:T6 Acts-on:T8 Site:T9
+T7	Amount 90 96	200 uL
+T8	Reagent 97 113	autoclaved water
+T9	Location 121 135	screw top tube
+R3	Measure Arg1:T8 Arg2:T7	
+T10	Action 137 140	Add
+E3	Action:T10 Acts-on:T12 Site:T13
+T11	Amount 141 147	200 uL
+T12	Reagent 148 156	glycerol
+T13	Location 164 177	screw top tub
+R4	Measure Arg1:T12 Arg2:T11	
+T14	Action 180 185	Screw
+E4	Action:T14 Acts-on:T15 Site:T16
+T15	Seal 190 193	top
+T16	Location 201 205	tube
+T17	Action 210 213	mix
+E5	Action:T17 Count:T19 Using:T18
+T18	Method 217 226	inversion
+T19	Numerical 227 240	several times
+T20	Action 282 287	Place
+E6	Action:T20 Acts-on:T21 Site:T23
+T21	Location 288 308	mixed screw top tube
+T22	Temperature 316 321	-80 C
+T23	Device 322 329	Freezer
+R5	Setting Arg1:T23 Arg2:T22	
+T24	Reagent 0 14	Glycerol Stock
+T25	Reagent 247 253	layers
+T26	Reagent 273 280	mixture

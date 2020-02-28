@@ -1,0 +1,154 @@
+T1	Action 33 40	Prepare
+E1	Action:T1 Acts-on:T22
+T2	Action 125 130	Place
+E2	Action:T2 Acts-on:T24 Site:T26
+T3	Action 174 182	Pre-warm
+E3	Action:T3 Acts-on:T29
+T4	Action 221 226	Place
+E4	Action:T4 Acts-on:T30 Acts-on2:T31 Site:T32
+T5	Action 335 341	dilute
+E5	Action:T5 Product:T34 Using:T36
+T6	Action 426 430	Thaw
+E6	Action:T6 Acts-on:T37 Site:T38
+T7	Action 490 493	mix
+E7	Action:T7 Acts-on:T40
+T8	Action 503 511	flicking
+E8	Action:T8 
+T9	Action 521 529	Transfer
+E9	Action:T9 Acts-on:T44 Site:T46
+T10	Action 628 631	Add
+E10	Action:T10 Acts-on:T48
+T11	Action 668 676	transfer
+E11	Action:T11 Acts-on:T50 Site:T52
+T12	Action 817 830	Electroporate
+E12	Action:T12 
+T13	Action 1005 1008	add
+E13	Action:T13 Site:T61
+T14	Action 1052 1055	mix
+E14	Action:T14 Using:T64 Count:T65
+T15	Action 1076 1084	Transfer
+E15	Action:T15 Site:T67
+T16	Action 1132 1137	Shake
+E16	Action:T16 
+T17	Action 1162 1168	rotate
+E17	Action:T17 
+T18	Action 1190 1196	Dilute
+E18	Action:T18 Acts-on:T71
+T19	Action 1227 1233	spread
+E19	Action:T19 Acts-on:T73 Site:T75
+T20	Action 1287 1295	Incubate
+E20	Action:T20 Acts-on:T77
+T21	Size 41 53	17mm x 100mm
+T22	Location 54 80	round-bottom culture tubes
+T23	Temperature 106 122	room temperature
+R1	Measure Arg1:T22 Arg2:T21	
+R2	Setting Arg1:E1 Arg2:T23	
+T24	Reagent 131 150	SOC recovery medium
+T25	Temperature 156 160	37°C
+T26	Location 161 171	water bath
+R3	Setting Arg1:E2 Arg2:T25	
+T27	Temperature 203 207	37°C
+T28	Time 212 218	1 hour
+T29	Location 183 199	selective plates
+R4	Setting Arg1:E3 Arg2:T27	
+R5	Setting Arg1:E3 Arg2:T28	
+T30	Location 227 251	electroporation cuvettes
+T31	Location 262 283	microcentrifuge tubes
+T32	Location 287 290	ice
+T33	Size 253 256	1mm
+R6	Measure Arg1:T30 Arg2:T33	
+T34	Reagent 346 359	control pUC19
+T35	Concentration 395 403	10 pg/μl
+T36	Reagent 410 423	sterile water
+R7	Measure Arg1:T34 Arg2:T35	
+T37	Reagent 431 463	NEB Turbo Electrocompetent cells
+T38	Location 467 470	ice
+T39	Time 478 484	10 min
+T40	Reagent 494 499	cells
+T41	Modifier 512 518	gently
+R8	Setting Arg1:E6 Arg2:T39	
+T42	Modifier 472 477	about
+R9	Mod-Link Arg1:T39 Arg2:T42	
+R10	Mod-Link Arg1:E8 Arg2:T41	
+T43	Amount 530 535	25 μl
+T44	Reagent 543 548	cells
+T45	Modifier 597 604	chilled
+T46	Location 605 625	microcentrifuge tube
+R11	Mod-Link Arg1:T46 Arg2:T45	
+R12	Measure Arg1:T44 Arg2:T43	
+T47	Amount 632 636	1 μl
+T48	Reagent 644 656	DNA solution
+R13	Measure Arg1:T48 Arg2:T47	
+T49	Modifier 658 667	Carefully
+T50	Reagent 681 693	cell/DNA mix
+T51	Modifier 701 708	chilled
+T52	Location 709 716	cuvette
+R14	Mod-Link Arg1:E11 Arg2:T49	
+R15	Mod-Link Arg1:T52 Arg2:T51	
+T53	Action 774 781	deposit
+E21	Action:T53 Acts-on:T54 Site:T55
+T54	Reagent 768 773	cells
+T55	Location 793 799	bottom
+T56	Location 807 814	cuvette
+R16	Meronym Arg1:T55 Arg2:T56	
+T57	Modifier 782 788	across
+R17	Mod-Link Arg1:E21 Arg2:T57	
+T58	Amount 1009 1015	975 µl
+T59	Temperature 1019 1023	37°C
+T60	Reagent 1024 1027	SOC
+R18	Measure Arg1:T60 Arg2:T58	
+R19	Setting Arg1:E13 Arg2:T59	
+T61	Location 1035 1042	cuvette
+T62	Modifier 993 1004	Immediately
+R20	Mod-Link Arg1:E13 Arg2:T62	
+T63	Modifier 1045 1051	Gently
+T64	Method 1056 1067	up and down
+T65	Numerical 1068 1073	twice
+R21	Mod-Link Arg1:E14 Arg2:T63	
+T66	Size 1092 1104	17mm x 100mm
+T67	Location 1105 1130	round-bottom culture tube
+R22	Measure Arg1:T67 Arg2:T66	
+T68	Temperature 1172 1176	37°C
+T69	Time 1181 1187	1 hour
+T70	Modifier 1138 1148	vigorously
+R23	Mod-Link Arg1:E16 Arg2:T70	
+R24	Setting Arg1:E17 Arg2:T68	
+R25	Setting Arg1:E17 Arg2:T69	
+T71	Reagent 1201 1206	cells
+T72	Amount 1234 1244	100-200 μl
+T73	Reagent 1245 1250	cells
+T74	Modifier 1258 1268	pre-warmed
+T75	Location 1269 1284	selective plate
+R26	Mod-Link Arg1:T75 Arg2:T74	
+R27	Measure Arg1:T73 Arg2:T72	
+T76	Modifier 1210 1221	appropriate
+R28	Mod-Link Arg1:E18 Arg2:T76	
+T77	Location 1296 1302	plates
+T78	Time 1303 1310	8 hours
+T79	Time 1314 1323	overnight
+T80	Temperature 1327 1331	37°C
+R29	Setting Arg1:E20 Arg2:T78	
+R30	Setting Arg1:E20 Arg2:T79	
+R31	Setting Arg1:E20 Arg2:T80	
+T81	Method 0 15	Electroporation
+T82	Reagent 298 314	positive control
+T83	Method 319 333	transformation
+T84	Concentration 363 366	1:5
+T85	Modifier 372 377	final
+T86	Measure-Type 378 391	concentration
+R32	Measure Arg1:T34 Arg2:T84	
+T87	Location 582 590	cuvettes
+T88	Reagent 737 744	bubbles
+T89	Action 725 736	introducing
+E22	Action:T89 Product:T88
+T90	Device 866 877	BTX ECM 630
+T91	Device 882 916	Bio-Rad GenePulser electroporators
+T92	Generic-Measure 918 924	2.1 kV
+T93	Generic-Measure 926 931	100 Ω
+T94	Generic-Measure 937 942	25 μF
+T95	Measure-Type 956 960	time
+T96	Modifier 973 974	~
+T97	Time 974 990	2.6 milliseconds
+R33	Mod-Link Arg1:T97 Arg2:T96	
+T98	Speed 1150 1157	250 rpm
+R34	Setting Arg1:E16 Arg2:T98	

@@ -1,0 +1,45 @@
+T1	Action 20 29	Autoclave
+E1	Action:T1 Acts-on:T6 Acts-on2:T7 Acts-on3:T8 Using:T10
+T2	Action 124 127	add
+E2	Action:T2 Acts-on:T14 Acts-on2:T17
+T3	Action 167 175	Dispense
+E3	Action:T3 Site:T20
+T4	Action 209 218	Inoculate
+E4	Action:T4 Acts-on:T22 Using:T24
+T5	Action 272 280	Incubate
+E5	Action:T5 
+T6	Reagent 30 38	BD Difco
+T7	Reagent 39 47	AC Broth
+T8	Reagent 52 59	NaCl Qs
+T9	Amount 63 66	1 L
+T10	Reagent 72 87	distilled water
+T11	Time 92 98	20 min
+R1	Setting Arg1:E1 Arg2:T9	
+R2	Setting Arg1:E1 Arg2:T11	
+T12	Amount 128 133	16 ml
+T13	Concentration 134 137	2 M
+T14	Reagent 138 143	MgSO4
+T15	Amount 148 153	10 ml
+T16	Concentration 154 157	1 M
+T17	Reagent 158 163	CaCl2
+R3	Measure Arg1:T14 Arg2:T13	
+R4	Measure Arg1:T17 Arg2:T16	
+R5	Measure Arg1:T17 Arg2:T15	
+R6	Measure Arg1:T14 Arg2:T12	
+T18	Amount 176 189	2.0 or 4.5 ml
+T19	Modifier 194 201	sterile
+T20	Location 202 206	tube
+R7	Mod-Link Arg1:T20 Arg2:T19	
+R8	Setting Arg1:E3 Arg2:T18	
+T21	Modifier 219 226	sterile
+T22	Reagent 227 230	MPB
+T23	Generic-Measure 236 258	1:5 (vol:vol) dilution
+T24	Reagent 262 269	culture
+R9	Measure Arg1:T24 Arg2:T23	
+R10	Mod-Link Arg1:T22 Arg2:T21	
+T25	Temperature 284 288	22°C
+R11	Setting Arg1:E5 Arg2:T25	
+T26	Reagent 0 19	Marine Purity Broth
+T27	Reagent 106 111	broth
+T28	Modifier 116 122	cooled
+R12	Mod-Link Arg1:T27 Arg2:T28	

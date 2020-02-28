@@ -1,0 +1,54 @@
+T1	Action 34 39	Weigh
+E1	Action:T1 Acts-on:T11
+T2	Action 58 61	Add
+E2	Action:T2 Acts-on:T14
+T3	Action 81 89	Dissolve
+E3	Action:T3 
+T4	Action 102 108	Prewet
+T5	Action 136 151	drawing through
+T6	Action 179 186	discard
+E6	Action:T6 Acts-on:T21
+T7	Action 194 203	Sterilize
+E7	Action:T7 Acts-on:T22 Using:T24
+T9	Action 265 270	Store
+E9	Action:T9 Acts-on:T26
+T10	Amount 40 47	2.383 g
+T11	Reagent 51 55	IPTG
+R1	Measure Arg1:T11 Arg2:T10	
+T12	Amount 62 67	10 ml
+T13	Modifier 68 75	sterile
+T14	Reagent 76 79	H2O
+R2	Mod-Link Arg1:T14 Arg2:T13	
+R3	Measure Arg1:T14 Arg2:T12	
+T15	Modifier 90 100	completely
+R4	Mod-Link Arg1:E3 Arg2:T15	
+T16	Size 111 117	0.2 µm
+T17	Device 118 132	syringe filter
+T18	Amount 152 159	5-10 ml
+T19	Modifier 163 170	sterile
+T21	Reagent 187 192	water
+R7	Measure Arg1:T17 Arg2:T16	
+T22	Reagent 204 220	Ampicillin Stock
+T23	Size 242 248	0.2 µm
+T24	Device 249 263	syringe filter
+R8	Measure Arg1:T24 Arg2:T23	
+T8	Modifier 233 241	prepared
+R9	Mod-Link Arg1:T24 Arg2:T8	
+T25	Amount 274 278	1 ml
+T26	Reagent 279 287	aliquots
+T27	Temperature 291 296	-20°C
+T28	Time 307 313	1 year
+T29	Modifier 301 306	up to
+R10	Mod-Link Arg1:T28 Arg2:T29	
+R11	Measure Arg1:T26 Arg2:T25	
+R12	Setting Arg1:E9 Arg2:T27	
+R13	Setting Arg1:E9 Arg2:T28	
+T30	Reagent 0 4	IPTG
+T31	Concentration 7 10	1 M
+T32	Concentration 12 17	100 x
+T33	Reagent 19 33	Stock Solution
+R14	Measure Arg1:T33 Arg2:T31	
+R15	Measure Arg1:T33 Arg2:T32	
+T34	Reagent 171 175	H2O 
+R16	Mod-Link Arg1:T34 Arg2:T19	
+R5	Measure Arg1:T34 Arg2:T18	

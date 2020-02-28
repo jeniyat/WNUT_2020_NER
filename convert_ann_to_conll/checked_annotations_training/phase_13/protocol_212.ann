@@ -1,0 +1,100 @@
+T1	Action 63 70	Prepare
+E1	Action:T1 Acts-on:T17
+T2	Action 100 124	perform surface staining
+E2	Action:T2 
+T3	Action 205 208	Fix
+E3	Action:T3 Acts-on:T19 Using:T21
+T4	Action 326 336	Centrifuge
+E4	Action:T4 
+T5	Action 363 370	discard
+E5	Action:T5 Acts-on:T27
+T6	Action 384 388	Wash
+E6	Action:T6 Count:T28 Using:T30
+T7	Action 461 470	Resuspend
+E7	Action:T7 Acts-on:T32 Site:T34
+T8	Action 541 549	incubate
+E8	Action:T8 
+T9	Action 598 607	spin down
+E9	Action:T9 Acts-on:T39
+T10	Action 618 625	discard
+E10	Action:T10 Acts-on:T40
+T11	Action 648 657	resuspend
+E11	Action:T11 Acts-on:T41 Site:T43
+T12	Action 739 742	Add
+E12	Action:T12 Acts-on:T46
+T13	Action 835 843	incubate
+E13	Action:T13 
+T14	Action 892 896	Wash
+E14	Action:T14 Count:T50 Acts-on:T51
+T15	Action 934 943	resuspend
+E15	Action:T15 Acts-on:T53
+T16	Action 981 988	analyze
+E16	Action:T16 Using:T54
+T17	Reagent 71 95	target cells of interest
+T19	Reagent 213 218	cells
+T20	Concentration 224 233	1 ml/tube
+T21	Reagent 246 276	Nuclear Factor Fixation Buffer
+T22	Temperature 281 297	room temperature
+T23	Modifier 298 309	in the dark
+T24	Time 314 324	20 minutes
+R2	Measure Arg1:T21 Arg2:T20	
+R3	Setting Arg1:E3 Arg2:T22	
+R4	Mod-Link Arg1:E3 Arg2:T23	
+R5	Setting Arg1:E3 Arg2:T24	
+T25	Speed 340 347	250 x g
+T26	Temperature 352 361	5 minutes
+T27	Reagent 371 382	supernatant
+R6	Setting Arg1:E4 Arg2:T25	
+R7	Setting Arg1:E4 Arg2:T26	
+T28	Numerical 389 393	once
+T29	Amount 399 403	1 ml
+T30	Reagent 416 454	Nuclear Factor Permeabilization Buffer
+T31	Concentration 456 458	1x
+R8	Measure Arg1:T30 Arg2:T31	
+R9	Measure Arg1:T30 Arg2:T29	
+T32	Reagent 471 476	cells
+T33	Amount 480 484	1 ml
+T34	Reagent 497 534	Nuclear Factor Permabilization Buffer
+T35	Concentration 536 538	1x
+T36	Temperature 553 569	room temperature
+T37	Modifier 570 581	in the dark
+T38	Time 586 596	20 minutes
+T39	Reagent 608 613	cells
+T40	Reagent 630 641	supernatant
+T41	Reagent 662 668	pellet
+T42	Amount 672 678	100 ul
+T43	Reagent 694 732	Nucelar Factor Permeabilization Buffer
+T44	Concentration 734 736	1x
+R10	Measure Arg1:T43 Arg2:T44	
+R11	Measure Arg1:T43 Arg2:T42	
+R12	Setting Arg1:E8 Arg2:T36	
+R13	Mod-Link Arg1:E8 Arg2:T37	
+R14	Setting Arg1:E8 Arg2:T38	
+R15	Measure Arg1:T34 Arg2:T35	
+R16	Measure Arg1:T34 Arg2:T33	
+T45	Amount 743 761	appropriate amount
+T46	Reagent 788 798	antibodies
+R17	Measure Arg1:T46 Arg2:T45	
+T47	Temperature 847 863	room temperature
+T48	Modifier 864 875	in the dark
+T49	Time 880 890	30 minutes
+R18	Setting Arg1:E13 Arg2:T47	
+R19	Mod-Link Arg1:E13 Arg2:T48	
+R20	Setting Arg1:E13 Arg2:T49	
+T50	Numerical 897 902	twice
+T51	Reagent 908 928	Cell Staining Buffer
+T52	Amount 947 953	0.5 ml
+T53	Reagent 954 974	Cell Staining Buffer
+R21	Measure Arg1:T53 Arg2:T52	
+T54	Device 994 1008	flow cytometer
+T55	Measure-Type 0 14	Nuclear Factor
+T56	Method 15 23	Fixation
+T57	Method 28 44	Permeabilization
+T58	Action 45 53	Staining
+E17	Action:T58 
+T18	Reagent 153 165	Cell Surface
+T59	Action 166 193	Immunofluorescence Staining
+E18	Action:T59 Acts-on:T18
+T60	Device 1026 1036	instrument
+T61	Modifier 765 787	flurochrome-conjugated
+R1	Mod-Link Arg1:T46 Arg2:T61	

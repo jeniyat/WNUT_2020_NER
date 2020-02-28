@@ -1,0 +1,57 @@
+T1	Action 36 41	Weigh
+E1	Action:T1 Product:T3
+T2	Amount 42 48	1.54 g
+T3	Reagent 52 72	Dithiothreitol (DTT)
+R1	Measure Arg1:T3 Arg2:T2	
+T4	Action 75 78	Add
+E2	Action:T4 Acts-on:T6
+T5	Amount 79 84	10 ml
+T6	Reagent 96 100	dH2O
+R2	Measure Arg1:T6 Arg2:T5	
+T7	Action 102 110	Dissolve
+E3	Action:T7 
+T8	Modifier 111 121	completely
+R3	Mod-Link Arg1:E3 Arg2:T8	
+T9	Action 123 129	Prewet
+E4	Action:T9 Acts-on:T11 Using:E5
+T10	Size 132 138	0.2 µm
+T11	Device 139 153	syringe filter
+R4	Measure Arg1:T11 Arg2:T10	
+T12	Action 157 172	drawing through
+E5	Action:T12 Acts-on:T14 Using:T11
+T13	Amount 173 180	5-10 ml
+T14	Reagent 192 196	H2O 
+T15	Action 200 207	discard
+E6	Action:T15 Acts-on:T16
+T16	Reagent 208 213	water
+R5	Measure Arg1:T14 Arg2:T13	
+T17	Action 215 224	Sterilize
+E7	Action:T17 Acts-on:T18 Using:T20
+T18	Reagent 225 234	DTT Stock
+T19	Size 256 262	0.2 µm
+T20	Device 263 277	syringe filter
+R6	Measure Arg1:T20 Arg2:T19	
+T21	Modifier 247 255	prepared
+R7	Mod-Link Arg1:T20 Arg2:T21	
+T22	Action 279 286	Aliquot
+E8	Action:T22 Site:T24
+T23	Size 292 296	2 ml
+T24	Location 297 302	tubes
+R8	Measure Arg1:T24 Arg2:T23	
+T25	Action 307 312	store
+E9	Action:T25 
+T26	Temperature 316 321	-20°C
+R9	Setting Arg1:E9 Arg2:T26	
+T27	Reagent 323 329	Stocks
+T28	Action 337 341	kept
+E10	Action:T28 Acts-on:T27
+T29	Time 346 352	1 year
+R10	Setting Arg1:E10 Arg2:T29	
+T30	Action 7 11	make
+E11	Action:T30 Product:T31
+T31	Reagent 17 35	DTT Stock Solution
+T32	Concentration 14 16	1M
+R11	Measure Arg1:T31 Arg2:T32	
+T33	Modifier 88 95	sterile
+R12	Mod-Link Arg1:T6 Arg2:T33	
+T34	Modifier 184 191	sterile

@@ -1,0 +1,69 @@
+T1	Action 29 36	Prepare
+E1	Action:T1 Product:T17
+T2	Action 56 60	Thaw
+E2	Action:T2 Acts-on:T19
+T3	Action 91 94	mix
+E3	Action:T3 Using:T20
+T4	Action 99 109	pulse-spin
+E4	Action:T4 Using:T20
+T5	Action 128 135	collect
+E5	Action:T5 Acts-on:T21 Site:T22
+T6	Action 172 180	Assemble
+E6	Action:T6 Acts-on:T24
+T7	Action 239 242	Mix
+E7	Action:T7 
+T8	Action 258 268	pulse-spin
+E8	Action:T8 
+T9	Action 272 280	Incubate
+E9	Action:T9 
+T10	Action 321 327	remove
+E10	Action:T10 Acts-on:T29
+T11	Action 342 345	add
+E11	Action:T11 Acts-on:T31
+T12	Action 376 379	mix
+E12	Action:T12 
+T13	Action 384 392	incubate
+E13	Action:T13 
+T15	Action 465 473	analysis
+E15	Action:T15 Acts-on:T36 Using:T35
+T16	Concentration 37 42	40 mM
+T17	Reagent 43 53	cap analog
+R1	Measure Arg1:T17 Arg2:T16	
+T18	Modifier 65 74	necessary
+T19	Reagent 75 89	kit components
+T20	Device 115 124	microfuge
+T21	Reagent 136 145	solutions
+T22	Location 153 160	bottoms
+T23	Location 164 169	tubes
+T24	Reagent 185 193	reaction
+T25	Temperature 197 213	room temperature
+T26	Modifier 243 253	thoroughly
+T27	Temperature 284 288	37°C
+T28	Time 293 300	2 hours
+T29	Reagent 328 340	template DNA
+T30	Amount 346 350	2 μl
+T31	Reagent 354 361	DNase I
+T32	Temperature 396 400	37°C
+T33	Time 405 415	15 minutes
+T34	Reagent 446 461	synthesized RNA
+T35	Method 503 522	gel electrophoresis
+T36	Reagent 477 499	transcription products
+R2	Mod-Link Arg1:T19 Arg2:T18	
+R3	Meronym Arg1:T22 Arg2:T23	
+R4	Setting Arg1:E6 Arg2:T25	
+R5	Mod-Link Arg1:E7 Arg2:T26	
+R6	Setting Arg1:E9 Arg2:T27	
+R7	Setting Arg1:E9 Arg2:T28	
+R8	Measure Arg1:T31 Arg2:T30	
+R9	Setting Arg1:E13 Arg2:T32	
+R10	Setting Arg1:E13 Arg2:T33	
+R11	Setting Arg1:E12 Arg2:T32	
+R12	Setting Arg1:E12 Arg2:T33	
+T37	Action 417 424	Proceed
+E16	Action:T37 Using:T14
+T38	Reagent 0 10	Capped RNA
+T39	Method 11 20	Synthesis
+T40	Modifier 363 373	RNase-free
+R13	Mod-Link Arg1:T31 Arg2:T40	
+T14	Method 430 442	purification
+R14	Or Arg1:E16 Arg2:E15	

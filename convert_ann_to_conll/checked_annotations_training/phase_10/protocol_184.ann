@@ -1,0 +1,118 @@
+T1	Action 16 19	Add
+E1	Action:T1 Acts-on:T18 Site:T20
+T2	Action 71 74	Add
+E2	Action:T2 Acts-on:T22 Site:T24
+T3	Action 114 117	Add
+E3	Action:T3 Acts-on:T26 Site:T27
+T4	Action 147 150	Add
+E4	Action:T4 Acts-on:T29 Site:T30
+T5	Action 179 182	Add
+E5	Action:T5 Acts-on:T32 Site:T33
+T6	Action 214 217	Add
+E6	Action:T6 Site:T36 Acts-on:T35
+T7	Action 245 248	Add
+E7	Action:T7 Acts-on:T38 Site:T39
+T8	Action 277 280	Add
+E8	Action:T8 Acts-on:T41 Site:T42
+T9	Action 335 338	add
+E9	Action:T9 Acts-on:T44 Site:T45
+T10	Action 375 379	Fill
+E10	Action:T10 Using:T47 Acts-on:T46
+T11	Action 438 443	Place
+E11	Action:T11 Acts-on:T49 Site:T50
+T12	Action 560 566	Remove
+E12	Action:T12 Acts-on:T54 Using:T55
+T13	Action 601 606	Place
+E13	Action:T13 Acts-on:T56 Site:T58
+T14	Action 717 721	pour
+E14	Action:T14 Site:T62
+T15	Action 825 832	aliquot
+E15	Action:T15 
+T17	Amount 20 25	5.0 g
+T18	Reagent 26 39	Yeast Extract
+T19	Amount 45 52	1 Liter
+T20	Location 53 69	Erlenmeyer Flask
+R1	Measure Arg1:T20 Arg2:T19	
+R2	Measure Arg1:T18 Arg2:T17	
+T21	Amount 75 79	30 g
+T22	Reagent 80 87	Glucose
+T23	Reagent 91 99	Dextrose
+R3	Or Arg1:T22 Arg2:T23	
+T24	Location 107 112	flask
+T25	Amount 118 124	0.25 g
+T26	Reagent 125 132	Adenine
+T27	Location 140 145	flask
+R4	Measure Arg1:T26 Arg2:T25	
+T28	Amount 151 157	0.25 g
+T29	Reagent 158 164	Uracil
+T30	Location 172 177	flask
+R5	Measure Arg1:T29 Arg2:T28	
+T31	Amount 183 189	0.25 g
+T32	Reagent 190 199	Histidine
+T33	Location 207 212	flask
+R6	Measure Arg1:T32 Arg2:T31	
+T34	Amount 218 222	0.25
+T35	Reagent 223 230	Leucine
+R7	Measure Arg1:T35 Arg2:T34	
+T36	Location 238 243	flask
+T37	Amount 249 255	0.25 g
+T38	Reagent 256 262	Lysine
+T39	Location 270 275	flask
+R8	Measure Arg1:T38 Arg2:T37	
+T40	Amount 281 284	1 g
+T41	Reagent 285 293	Arginine
+R9	Measure Arg1:T41 Arg2:T40	
+T42	Location 301 306	flask
+T43	Amount 339 343	20 g
+T44	Reagent 344 360	Difco Bacto Agar
+T45	Location 368 373	flask
+R10	Measure Arg1:T44 Arg2:T43	
+T46	Location 384 389	flask
+T47	Reagent 395 400	water
+T48	Amount 411 418	1 Liter
+R11	Measure Arg1:T46 Arg2:T48	
+T49	Device 446 463	magnetic stir bar
+T50	Location 473 478	flask
+T51	Action 483 488	place
+E17	Action:T51 Acts-on:T52 Site:T53
+T52	Location 493 498	flask
+T53	Device 504 520	magnetic stirrer
+T54	Device 571 579	stir bar
+T55	Device 587 599	magnetic rod
+T56	Reagent 607 620	aluminum foil
+T57	Seal 630 633	top
+T58	Location 641 646	flask
+R12	Meronym Arg1:T57 Arg2:T58	
+T59	Action 656 665	autoclave
+E18	Action:T59 Using:T60
+T60	Method 671 683	liquid cycle
+T61	Time 688 698	20 minutes
+R13	Setting Arg1:E18 Arg2:T61	
+T62	Location 743 749	plates
+T63	Mention 758 762	them
+T64	Time 779 788	overnight
+T65	Location 796 805	lab bench
+T66	Action 858 863	store
+E19	Action:T66 
+T67	Temperature 869 872	4 C
+R15	Setting Arg1:E19 Arg2:T67	
+T68	Reagent 0 15	YES Rich Medium
+T69	Modifier 322 327	solid
+T70	Reagent 328 334	medium
+R16	Mod-Link Arg1:T70 Arg2:T69	
+T71	Location 431 436	flask
+T72	Modifier 703 708	solid
+T73	Reagent 709 715	medium
+T74	Modifier 810 816	liquid
+T75	Reagent 817 823	medium
+R17	Mod-Link Arg1:T73 Arg2:T72	
+R18	Mod-Link Arg1:T75 Arg2:T74	
+T76	Action 524 532	dissolve
+E20	Action:T76 Acts-on:T77 Using:T78
+T77	Reagent 537 543	powder
+T78	Reagent 553 558	water
+T79	Action 763 766	sit
+E21	Action:T79 Acts-on:T63
+T16	Action 774 778	cool
+E16	Action:T16 Site:T65
+R14	Setting Arg1:E16 Arg2:T64	

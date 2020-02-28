@@ -1,0 +1,129 @@
+T1	Amount 33 39	100 µl
+T2	Reagent 43 49	PBCV-1
+T3	Size 55 58	1.5
+T4	Location 59 90	conical plastic centrifuge tube
+R1	Measure Arg1:T4 Arg2:T3	
+R2	Measure Arg1:T2 Arg2:T1	
+T5	Action 91 94	add
+E1	Action:T5 Acts-on:T7 Site:T4
+T6	Amount 95 101	150 µl
+T7	Reagent 105 111	phenol
+R3	Measure Arg1:T7 Arg2:T6	
+R4	Meronym Arg1:T2 Arg2:T4	
+T8	Action 113 116	Add
+E2	Action:T8 Acts-on:T9 Acts-on2:T12 Acts-on3:T15 Acts-on4:T17
+T9	Reagent 117 120	DTT
+T10	Amount 123 128	10 µl
+T11	Concentration 131 134	10%
+T12	Reagent 135 138	SDS
+T13	Amount 141 146	20 µl
+T14	Concentration 149 152	10M
+T15	Reagent 153 157	LiCl
+T16	Amount 160 165	15 µl
+T17	Reagent 171 180	Ponceau S
+T18	Amount 183 188	10 µl
+R5	Measure Arg1:T17 Arg2:T18	
+R6	Measure Arg1:T15 Arg2:T16	
+R7	Measure Arg1:T15 Arg2:T14	
+R8	Measure Arg1:T12 Arg2:T13	
+R9	Measure Arg1:T12 Arg2:T11	
+R10	Measure Arg1:T9 Arg2:T10	
+T19	Action 191 195	Heat
+E3	Action:T19 
+T20	Time 196 201	5 min
+T21	Temperature 205 209	75°C
+T22	Action 211 214	mix
+E4	Action:T22 
+R11	Setting Arg1:E3 Arg2:T20	
+R12	Setting Arg1:E3 Arg2:T21	
+T23	Action 227 240	Allow to cool
+E5	Action:T23 
+T24	Action 242 252	centrifuge
+E6	Action:T24 
+T25	Time 253 258	1 min
+T26	Speed 260 262	5K
+R13	Setting Arg1:E6 Arg2:T25	
+R14	Setting Arg1:E6 Arg2:T26	
+T27	Action 265 273	Draw off
+E7	Action:T27 Acts-on:T28 Site:T30
+T28	Reagent 274 293	lower (clear) phase
+T29	Size 299 302	1.5
+T30	Location 303 334	conical plastic centrifuge tube
+R15	Measure Arg1:T30 Arg2:T29	
+T31	Action 336 339	Add
+E8	Action:T31 Acts-on:T33 Acts-on2:T36
+T32	Amount 340 344	1 ml
+T33	Reagent 345 352	acetone
+T34	Amount 362 366	5 µl
+T35	Concentration 370 372	1%
+T36	Reagent 373 379	Ficoll
+T37	Action 381 384	mix
+E9	Action:T37 
+R16	Measure Arg1:T33 Arg2:T32	
+R17	Measure Arg1:T36 Arg2:T35	
+R18	Measure Arg1:T36 Arg2:T34	
+T38	Action 386 391	Store
+E10	Action:T38 
+T39	Time 392 398	20 min
+T40	Temperature 402 407	-20°C
+R19	Setting Arg1:E10 Arg2:T39	
+R20	Setting Arg1:E10 Arg2:T40	
+T41	Action 409 419	Centrifuge
+E11	Action:T41 
+T42	Time 420 425	1 min
+T43	Speed 427 429	6K
+R21	Setting Arg1:E11 Arg2:T42	
+R22	Setting Arg1:E11 Arg2:T43	
+T44	Action 432 439	Discard
+E12	Action:T44 Acts-on:T45
+T45	Reagent 440 451	supernatant
+T46	Action 453 458	drain
+E13	Action:T46 Acts-on:T47
+T47	Location 459 463	tube
+T48	Action 465 469	wash
+E14	Action:T48 Acts-on:T49 Count:T50 Using:T51
+T49	Reagent 470 473	ppt
+T50	Numerical 474 478	once
+T51	Reagent 484 491	acetone
+T52	Action 517 520	dry
+E15	Action:T52 
+T53	Action 522 530	Dissolve
+E16	Action:T53 Acts-on:T54 Site:T56
+T54	Reagent 531 537	pellet
+T55	Amount 542 547	50 µl
+T56	Reagent 548 563	cracking buffer
+T57	Concentration 565 567	1%
+T58	Reagent 568 571	SDS
+T59	Concentration 573 575	5%
+T60	Reagent 576 584	glycerol
+T61	Concentration 586 595	0.03125 M
+T62	Reagent 596 604	Tris-HCl
+T63	pH 606 612	pH 6.8
+T64	Reagent 614 636	bromophenol blue-trace
+R23	Measure Arg1:T58 Arg2:T57	
+R24	Measure Arg1:T60 Arg2:T59	
+R25	Measure Arg1:T62 Arg2:T61	
+R26	Measure Arg1:T62 Arg2:T63	
+R27	Meronym Arg1:T64 Arg2:T56	
+R28	Meronym Arg1:T62 Arg2:T56	
+R29	Meronym Arg1:T60 Arg2:T56	
+R30	Meronym Arg1:T58 Arg2:T56	
+R31	Measure Arg1:T56 Arg2:T55	
+T65	Reagent 0 6	Phenol
+T66	Method 7 17	extraction
+T67	Reagent 21 29	proteins
+T68	Modifier 215 225	thoroughly
+R32	Mod-Link Arg1:E4 Arg2:T68	
+T69	Modifier 122 123	~
+T70	Modifier 140 141	~
+T71	Modifier 159 160	~
+T72	Modifier 182 183	~
+R33	Mod-Link Arg1:T10 Arg2:T69	
+R34	Mod-Link Arg1:T13 Arg2:T70	
+R35	Mod-Link Arg1:T16 Arg2:T71	
+R36	Mod-Link Arg1:T18 Arg2:T72	
+T73	Reagent 493 496	ppt
+T74	Location 507 511	tube
+R37	Meronym Arg1:T73 Arg2:T74	
+T75	Modifier 541 542	~
+R38	Mod-Link Arg1:T55 Arg2:T75	

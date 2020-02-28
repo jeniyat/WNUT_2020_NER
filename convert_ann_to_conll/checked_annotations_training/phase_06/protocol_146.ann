@@ -1,0 +1,269 @@
+T1	Action 80 85	Clear
+E1	Action:T1 Acts-on:T27
+T2	Action 94 101	Removes
+E2	Action:T2 Acts-on:T28
+T4	Action 584 589	Rinse
+E4	Action:T4 Acts-on:T71 Using:T72
+T5	Action 819 827	incubate
+E5	Action:T5 Acts-on:T75
+T6	Action 1026 1031	Rinse
+E6	Action:T6 Acts-on:T79 Using:T80
+T7	Action 1052 1057	Apply
+E7	Action:T7 Acts-on:T81
+T8	Action 1123 1131	Blot off
+E8	Action:T8 Acts-on:T83
+T9	Action 1145 1150	Apply
+E9	Action:T9 Acts-on:T84
+T10	Action 1170 1176	dilute
+E10	Action:T10 Acts-on:T86
+T11	Action 1196 1204	Incubate
+E11	Action:T11 Acts-on:T87
+T12	Action 1254 1259	Rinse
+E12	Action:T12 Acts-on:T90 Using:T91
+T13	Action 1280 1285	Apply
+E13	Action:T13 Acts-on:T92
+T14	Action 1331 1336	Rinse
+E14	Action:T14 Acts-on:T95 Using:T96
+T15	Action 1357 1362	Apply
+E15	Action:T15 Acts-on:T97
+T16	Action 1405 1410	Rinse
+E16	Action:T16 Using:T100
+T17	Action 1424 1429	Apply
+E17	Action:T17 Acts-on:T101
+T18	Action 1464 1470	Dilute
+E18	Action:T18 
+T19	Action 1637 1642	Rinse
+E19	Action:T19 Acts-on:T115 Using:T116
+T20	Action 1672 1680	Submerge
+E20	Action:T20 
+T21	Action 1727 1732	Rinse
+E21	Action:T21 Using:T121
+T22	Action 1801 1809	Submerge
+E22	Action:T22 Acts-on:T124 Site:T125
+T23	Action 1849 1854	Rinse
+E23	Action:T23 Acts-on:T128
+T24	Action 1899 1904	Clear
+E24	Action:T24 Acts-on:T130
+T25	Action 1913 1922	Dehydrate
+E25	Action:T25 Acts-on:T131
+T26	Action 2104 2109	Cover
+E26	Action:T26 Acts-on:T145 Using:T146
+T27	Location 86 92	Slides
+T28	Reagent 102 110	paraffin
+T29	Action 115 123	hydrates
+E27	Action:T29 Acts-on:T30
+T30	Reagent 128 134	tissue
+T31	Time 214 224	15 minutes
+T32	Action 227 246	proceed to step (F)
+E28	Action:T32 
+T33	Location 175 181	slides
+T34	Time 262 271	5 minutes
+T35	Modifier 275 279	each
+T36	Reagent 256 262	Xylene
+T37	Numerical 284 285	3
+T38	Amount 297 302	250mL
+T39	Location 303 313	containers
+R2	Measure Arg1:T39 Arg2:T38	
+R3	Measure Arg1:T39 Arg2:T37	
+R4	Setting Arg1:T35 Arg2:T37	
+T40	Concentration 317 321	100%
+T41	Reagent 322 329	alcohol
+T42	Time 329 338	5 minutes
+T43	Modifier 342 346	each
+T44	Numerical 351 352	3
+T45	Amount 364 369	250mL
+T46	Location 370 380	containers
+R5	Measure Arg1:T46 Arg2:T45	
+R6	Measure Arg1:T46 Arg2:T44	
+R7	Setting Arg1:T43 Arg2:T44	
+R8	Measure Arg1:T41 Arg2:T40	
+T47	Concentration 384 387	95%
+T48	Reagent 388 395	alcohol
+T49	Time 395 404	3 minutes
+T50	Numerical 409 410	1
+T51	Amount 412 417	250mL
+T52	Location 418 427	container
+R9	Measure Arg1:T52 Arg2:T51	
+R10	Measure Arg1:T52 Arg2:T50	
+R11	Measure Arg1:T48 Arg2:T47	
+T53	Concentration 431 434	70%
+T54	Reagent 435 442	alcohol
+T55	Time 442 451	3 minutes
+T56	Numerical 456 457	1
+T57	Amount 459 464	250mL
+T58	Location 465 474	container
+R12	Measure Arg1:T58 Arg2:T57	
+R13	Measure Arg1:T58 Arg2:T56	
+R14	Measure Arg1:T54 Arg2:T53	
+T59	Reagent 478 483	water
+T60	Time 483 492	1 minutes
+T61	Modifier 496 500	each
+T62	Numerical 505 506	3
+T63	Amount 518 523	250mL
+T64	Location 524 534	containers
+R15	Measure Arg1:T64 Arg2:T63	
+R16	Measure Arg1:T64 Arg2:T62	
+R17	Setting Arg1:T61 Arg2:T62	
+T65	Reagent 538 542	H2O2
+T66	Concentration 544 546	3%
+T67	Time 547 558	15  minutes
+T68	Numerical 563 564	1
+T69	Amount 566 571	250mL
+T70	Location 572 581	container
+R18	Measure Arg1:T70 Arg2:T69	
+R19	Measure Arg1:T70 Arg2:T68	
+R20	Measure Arg1:T65 Arg2:T66	
+T71	Location 590 596	slides
+T72	Reagent 602 617	lab grade water
+T73	Concentration 801 804	70%
+T74	Reagent 805 816	Formic Acid
+T75	Location 832 838	slides
+T76	Time 843 853	20 minutes
+T77	Temperature 857 873	room temperature
+R21	Setting Arg1:E5 Arg2:T76	
+R22	Setting Arg1:E5 Arg2:T77	
+R23	Measure Arg1:T74 Arg2:T73	
+T78	Time 973 985	5-10 minutes
+T79	Location 1032 1038	Slides
+T80	Reagent 1047 1050	PBS
+T81	Reagent 1058 1069	serum block
+T82	Time 1083 1092	5 minutes
+R24	Setting Arg1:E7 Arg2:T82	
+T83	Reagent 1132 1143	serum block
+T84	Reagent 1151 1167	primary antibody
+T85	Concentration 1180 1187	1 mg/mL
+T86	Reagent 1191 1194	PBS
+R26	Setting Arg1:E10 Arg2:T85	
+T87	Reagent 1205 1221	primary antibody
+T88	Time 1222 1232	60 minutes
+T89	Temperature 1236 1252	room temperature
+R25	Setting Arg1:E11 Arg2:T88	
+R27	Setting Arg1:E11 Arg2:T89	
+T90	Location 1260 1266	slides
+T91	Reagent 1275 1278	PBS
+T92	Reagent 1286 1305	USA Linking reagent
+T93	Time 1308 1318	20 minutes
+T95	Location 1337 1343	slides
+T96	Reagent 1352 1355	PBS
+T97	Reagent 1363 1379	Labeling Reagent
+T98	Time 1382 1392	20 minutes
+T100	Reagent 1419 1422	PBS
+T101	Reagent 1430 1439	chromogen
+T102	Time 1442 1451	5 minutes
+T104	Modifier 1471 1511	according to manufacturer’s instructions
+R31	Mod-Link Arg1:E18 Arg2:T104	
+T105	Reagent 1512 1525	AEC Chromogen
+T106	Reagent 1532 1545	AEC chromogen
+T107	Reagent 1552 1572	AEC substrate buffer
+T108	Amount 1527 1531	20mL
+T109	Amount 1548 1551	1mL
+R32	Measure Arg1:T106 Arg2:T108	
+R33	Measure Arg1:T107 Arg2:T109	
+T110	Reagent 1574 1587	DAB Chromogen
+T111	Reagent 1595 1608	DAB chromogen
+T112	Reagent 1615 1636	DAB substrate buffer.
+T113	Amount 1589 1594	40 mL
+T114	Amount 1611 1614	1mL
+R34	Measure Arg1:T111 Arg2:T113	
+R35	Measure Arg1:T112 Arg2:T114	
+T115	Location 1643 1649	slides
+T116	Reagent 1655 1670	lab grade water
+T117	Location 1681 1687	slides
+T118	Reagent 1691 1710	Mayer’s Hematoxylin
+T119	Time 1715 1725	30 seconds
+T120	Modifier 1739 1746	running
+T121	Reagent 1747 1762	lab grade water
+T122	Time 1767 1775	1 minute
+T123	Time 1779 1799	until water is clear
+R36	Or Arg1:T122 Arg2:T123	
+R37	Mod-Link Arg1:T121 Arg2:T120	
+R38	Setting Arg1:E21 Arg2:T122	
+T124	Location 1810 1816	slides
+T125	Reagent 1820 1834	Bluing Reagent
+T126	Time 1839 1847	1 minute
+R39	Setting Arg1:E22 Arg2:T126	
+T127	Modifier 1861 1868	running
+T128	Reagent 1869 1884	lab grade water
+T129	Time 1889 1897	1 minute
+R40	Setting Arg1:E23 Arg2:T129	
+R41	Mod-Link Arg1:T128 Arg2:T127	
+T130	Location 1905 1911	slides
+T131	Reagent 1927 1933	tissue
+T132	Concentration 1935 1938	95%
+T133	Reagent 1939 1946	alcohol
+T134	Time 1947 1956	3 minutes
+T135	Numerical 1961 1962	1
+T136	Amount 1964 1969	250mL
+T137	Location 1970 1979	container
+T138	Concentration 1980 1984	100%
+T139	Reagent 1985 1992	alcohol
+T140	Time 1993 2002	5 minutes
+T141	Modifier 2006 2010	each
+T142	Numerical 2015 2016	3
+T143	Amount 2028 2033	250mL
+T144	Location 2034 2043	container
+R42	Measure Arg1:T133 Arg2:T132	
+R43	Measure Arg1:T137 Arg2:T135	
+R44	Measure Arg1:T137 Arg2:T136	
+R45	Measure Arg1:T139 Arg2:T138	
+R46	Setting Arg1:T141 Arg2:T142	
+R47	Measure Arg1:T144 Arg2:T143	
+R48	Measure Arg1:T144 Arg2:T142	
+T145	Location 2110 2120	slip slide
+T146	Reagent 2127 2172	Permanent Aqueous Mounting Medium (SIG-31010)
+T147	Method 0 20	Immunohistochemistry
+T148	Reagent 34 55	Beta Amyloid Products
+T149	Device 62 79	USA Detection Kit
+T150	Modifier 625 643	Lab grade filtered
+T151	Reagent 644 649	water
+R49	Mod-Link Arg1:T151 Arg2:T150	
+T152	Method 695 724	Reverse Osmosis De-Ionization
+T153	Method 726 730	RODI
+T154	Method 733 750	Antigen Retrieval
+T155	Method 886 903	antigen retrieval
+T156	Reagent 925 931	tissue
+T157	Reagent 949 957	sections
+T158	Reagent 159 167	sections
+T159	Action 958 964	reduce
+E32	Action:T159 Measure-Type-Link:T160
+T160	Measure-Type 965 969	time
+R50	Setting Arg1:E32 Arg2:T78	
+T161	Action 989 993	omit
+E33	Action:T161 
+T162	Reagent 997 1003	tissue
+T163	Location 1018 1023	slide
+R51	Or Arg1:E32 Arg2:E33	
+T164	Concentration 1044 1046	1X
+R52	Measure Arg1:T80 Arg2:T164	
+T165	Action 1101 1105	wash
+E34	Action:T165 
+R53	Measure Arg1:T84 Arg2:T85	
+T166	Concentration 1272 1274	1X
+R54	Measure Arg1:T91 Arg2:T166	
+T94	Method 1319 1329	incubation
+T99	Method 1393 1403	incubation
+T167	Concentration 1349 1351	1X
+R28	Measure Arg1:T96 Arg2:T167	
+T103	Method 1452 1462	incubation
+T168	Concentration 1416 1418	1X
+R29	Measure Arg1:T100 Arg2:T168	
+T169	Reagent 2045 2051	Xylene
+T170	Time 2052 2061	5 minutes
+T171	Numerical 2074 2075	3
+T172	Amount 2087 2092	250mL
+T173	Location 2093 2102	container
+R30	Measure Arg1:T173 Arg2:T172	
+R55	Measure Arg1:T173 Arg2:T171	
+T174	Reagent 2191 2209	xylene based mount
+T175	Reagent 2215 2228	AEC Chromogen
+T176	Action 2240 2248	dissolve
+E29	Action:T176 Acts-on:T177
+T177	Reagent 2253 2262	chromogen
+T178	Mention 2232 2234	it
+T179	Action 2187 2190	use
+E30	Action:T179 Acts-on:T174
+R56	Coreference-Link Arg1:T178 Arg2:T174	
+T3	Action 169 174	allow
+E3	Action:T3 Acts-on:T33
+T180	Temperature 194 209	oom temperature
+R1	Setting Arg1:E3 Arg2:T180	

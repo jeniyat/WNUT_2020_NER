@@ -1,0 +1,294 @@
+T1	Action 89 96	measure
+E1	Action:T1 Using:T31 Measure-Type-Link:T32 Acts-on:T33 Using2:T34
+T2	Action 208 217	determine
+E2	Action:T2 Using:T35 Measure-Type-Link:T36 Acts-on:T37 Using2:T38
+T3	Action 279 288	Calculate
+E3	Action:T3 Measure-Type-Link:T40 Acts-on:T41 Acts-on2:T42 Acts-on3:T43
+T4	Action 326 329	add
+E4	Action:T4 Site:T45
+T5	Action 806 812	mixing
+E5	Action:T5 Acts-on:T47 Acts-on2:T48 Acts-on3:T49 Using:T51 Measure-Type-Link:T46
+T6	Action 878 881	add
+E6	Action:T6 Acts-on:T56 Site:T57 Measure-Type-Link:T54
+T7	Action 1023 1026	add
+E7	Action:T7 Acts-on:T63
+T8	Action 1092 1095	add
+E8	Action:T8 Acts-on:T66 Site:T65
+T9	Action 1129 1135	remove
+E9	Action:T9 Acts-on:T68
+T10	Action 1483 1486	add
+E10	Action:T10 Acts-on:T69 Site:T70
+T11	Action 1558 1561	Mix
+E11	Action:T11 Acts-on:T71
+T12	Action 1580 1589	vortexing
+E12	Action:T12 
+T13	Action 1711 1716	Place
+E13	Action:T13 Acts-on:T73 Site:T74
+T14	Action 1761 1767	Repeat
+E14	Action:T14 Acts-on:T75 Using:T76
+T15	Action 1854 1861	Prepare
+E15	Action:T15 Product:T80
+T16	Action 1883 1890	Grow up
+E16	Action:T16 Acts-on:T81 Measure-Type-Link:T83
+T17	Action 2065 2071	bubble
+E17	Action:T17 Acts-on:T84 Using:T85
+T18	Action 2179 2186	Prepare
+E18	Action:T18 Product:T90
+T19	Action 2220 2223	add
+E19	Action:T19 Acts-on:T92 Site:T94
+T20	Action 2262 2267	start
+E20	Action:T20 Using:T95
+T21	Action 2329 2336	monitor
+E21	Action:T21 
+T22	Action 2502 2508	remove
+E22	Action:T22 Acts-on:T101 Acts-on2:T102
+T23	Action 2448 2458	centrifuge
+E23	Action:T23 Acts-on:T100
+T24	Action 2546 2550	Pour
+E24	Action:T24 Acts-on:T105 Site:T107
+T25	Action 2661 2668	discard
+E25	Action:T25 Acts-on:T110
+T26	Action 2704 2711	Connect
+E26	Action:T26 Acts-on:T113
+T27	Action 2733 2739	filter
+E27	Action:T27 Acts-on:T114
+T28	Action 2812 2823	Concentrate
+E28	Action:T28 Acts-on:T119 Using:T121
+T29	Action 2906 2917	concentrate
+E29	Action:T29 Acts-on:T122 Using:T125
+T30	Action 2939 2947	exchange
+E30	Action:T30 Acts-on:T123 Using:T125
+T31	Device 71 85	flow cytometry
+T32	Measure-Type 97 116	cell concentrations
+T33	Reagent 120 143	cyanobacterial cultures
+T34	Method 149 155	Step 2
+T35	Reagent 161 174	SYBR staining
+T36	Measure-Type 218 231	concentration
+T37	Reagent 253 265	viral lysate
+T38	Method 271 278	Step 1.
+T39	Modifier 235 252	your concentrated
+T40	Measure-Type 289 296	volumes
+T41	Reagent 300 305	cells
+T42	Reagent 307 312	phage
+T43	Reagent 317 322	media
+T44	Modifier 333 337	each
+T45	Location 338 362	experimental bottle/tube
+T46	Measure-Type 813 820	volumes
+T47	Reagent 847 852	media
+T48	Reagent 854 859	cells
+T49	Reagent 865 870	phage
+T50	Modifier 762 769	sterile
+T51	Method 770 779	technique
+T52	Modifier 744 751	quickly
+T53	Modifier 882 893	appropriate
+T54	Measure-Type 894 900	volume
+T55	Modifier 904 911	sterile
+T56	Reagent 912 918	medium
+T57	Location 927 954	experimental culture vessel
+T58	Modifier 961 968	sterile
+T59	Amount 969 974	250ml
+T60	Location 975 996	polycarbonate bottles
+T61	Amount 1001 1006	200ml
+T62	Reagent 1007 1015	cultures
+R7	Mod-Link Arg1:T56 Arg2:T55	
+R9	Measure Arg1:T60 Arg2:T59	
+R10	Mod-Link Arg1:T60 Arg2:T58	
+R11	Measure Arg1:T62 Arg2:T61	
+R12	Or Arg1:T57 Arg2:T60	
+T63	Reagent 1027 1032	cells
+T64	Modifier 1064 1074	uninfected
+T65	Location 1075 1090	control bottles
+T66	Reagent 1096 1102	lysate
+T67	Modifier 1117 1125	filtered
+T68	Reagent 1136 1151	phage particles
+R13	Mod-Link Arg1:T66 Arg2:T67	
+R14	Mod-Link Arg1:T65 Arg2:T64	
+T69	Reagent 1487 1492	phage
+T70	Location 1502 1520	respective bottles
+T71	Location 1562 1569	bottles
+T72	Modifier 1573 1579	gentle
+R15	Mod-Link Arg1:E12 Arg2:T72	
+T73	Location 1717 1724	bottles
+T74	Device 1728 1737	incubator
+T75	Reagent 1768 1776	sampling
+T76	Method 1780 1786	Step 5
+T77	Time 1818 1827	1-2 hours
+T78	Reagent 1835 1840	lysis
+R16	Setting Arg1:E14 Arg2:T77	
+T79	Action 1844 1852	complete
+E31	Action:T79 Acts-on:T78
+T80	Reagent 1862 1867	cells
+T81	Reagent 1921 1926	cells
+T82	Action 1933 1941	infected
+E32	Action:T82 
+T84	Reagent 2072 2084	your culture
+T85	Device 2093 2106	aquarium pump
+T86	Device 2136 2150	diffuser stone
+T87	Action 2155 2162	prevent
+E33	Action:T87 Acts-on:T88 Using2:T89
+R18	Meronym Arg1:T85 Arg2:T86	
+T88	Reagent 2163 2166	CO2
+T89	Method 2167 2177	limitation
+T90	Reagent 2187 2202	phage stockGrow
+T91	Time 2207 2218	day minus-8
+T92	Reagent 2224 2235	phage stock
+T93	Amount 2239 2241	4L
+T94	Reagent 2245 2258	mid-log cells
+T95	Method 2272 2281	infection
+T96	Time 2347 2353	a week
+T97	Action 2372 2378	clears
+E34	Action:T97 Acts-on:T98
+T98	Reagent 2364 2371	culture
+R19	Setting Arg1:E19 Arg2:T91	
+R20	Measure Arg1:T94 Arg2:T93	
+R21	Setting Arg1:E21 Arg2:T96	
+T99	Modifier 2463 2470	cleared
+T100	Reagent 2471 2478	culture
+T101	Reagent 2509 2526	large cell debris
+T102	Reagent 2531 2544	unlysed cells
+R22	Mod-Link Arg1:T100 Arg2:T99	
+T103	Speed 2480 2489	max speed
+T104	Time 2491 2497	10 min
+R23	Setting Arg1:E23 Arg2:T103	
+R24	Setting Arg1:E23 Arg2:T104	
+T105	Reagent 2551 2562	supernatant
+T106	Modifier 2598 2605	sterile
+T107	Device 2606 2629	vacuum filtration units
+T108	Size 2643 2648	0.2µm
+T109	Device 2649 2659	PES filter
+T110	Reagent 2673 2679	pellet
+T111	Reagent 2691 2702	cell debris
+R25	Mod-Link Arg1:T107 Arg2:T106	
+T112	Modifier 2587 2597	disposable
+R26	Mod-Link Arg1:T107 Arg2:T112	
+R27	Setting Arg1:T109 Arg2:T108	
+R28	Meronym Arg1:T109 Arg2:T107	
+R29	Meronym Arg1:T111 Arg2:T110	
+T113	Reagent 2715 2728	vacuum source
+T114	Reagent 2744 2750	lysate
+T115	Action 2752 2756	save
+E35	Action:T115 Acts-on:T116
+T116	Device 2757 2765	filtrate
+T117	Reagent 2782 2797	phage particles
+R30	Meronym Arg1:T117 Arg2:T116	
+T118	Modifier 2829 2838	clarified
+T119	Reagent 2839 2851	phage lysate
+T120	Measure-Type 2858 2880	VivaFlow Concentration
+T121	Reagent 2884 2896	Phage Lysate
+R32	Mod-Link Arg1:T119 Arg2:T118	
+T122	Reagent 2922 2933	phage stock
+T123	Reagent 2948 2961	buffers/media
+T124	Concentration 3045 3065	Amicon Concentration
+T125	Reagent 3069 3076	Viruses
+R33	Measure Arg1:T125 Arg2:T124	
+R34	Mod-Link Arg1:T45 Arg2:T44	
+R35	Mod-Link Arg1:T37 Arg2:T39	
+T126	Modifier 0 8	One-step
+T127	Method 9 24	Phage Infection
+T128	Reagent 28 41	Cyanobacteria
+T129	Modifier 43 54	large-scale
+R36	Mod-Link Arg1:T128 Arg2:T129	
+T130	Reagent 181 185	SYBR
+T131	Reagent 196 203	viruses
+T132	Measure-Type 435 438	MOI
+T133	Reagent 440 444	cell
+T134	Measure-Type 445 458	concentration
+T135	Reagent 483 490	culture
+T136	Measure-Type 491 497	volume
+T137	Modifier 470 482	experimental
+R37	Mod-Link Arg1:T135 Arg2:T137	
+T138	Method 503 518	gene expression
+T139	Measure-Type 542 545	MOI
+T140	Numerical 549 550	3
+R38	Of-Type Arg1:T140 Arg2:T139	
+T141	Measure-Type 563 570	density
+T142	Reagent 558 562	cell
+T143	Amount 574 580	5e7/ml
+T144	Measure-Type 586 592	volume
+T145	Amount 596 601	200ml
+T146	Reagent 611 620	replicate
+T147	Action 648 654	sample
+E36	Action:T147 Measure-Type-Link:T152
+T148	Reagent 659 662	RNA
+R39	Measure Arg1:T146 Arg2:T145	
+T149	Reagent 664 671	protein
+T150	Reagent 677 682	phage
+T151	Reagent 685 689	cell
+T152	Measure-Type 690 703	concentration
+T153	Time 712 722	12-14 hour
+R1	Setting Arg1:E36 Arg2:T153	
+T154	Reagent 1254 1269	small molecules
+T155	Action 1282 1287	added
+E37	Action:T155 Acts-on:T154
+T156	Reagent 1297 1312	phage particles
+T157	Method 1325 1335	treatments
+T158	Reagent 1369 1384	large molecules
+T159	Action 1394 1402	retained
+E38	Action:T159 Acts-on:T158 Site:T161
+T160	Reagent 1415 1430	phage particles
+T161	Location 1439 1455	Amicon reservoir
+T162	Modifier 1538 1546	one-step
+T163	Method 1547 1556	infection
+T164	Action 1591 1597	Sample
+E39	Action:T164 
+T165	Modifier 1598 1609	immediately
+T166	Time 1614 1620	time 0
+T167	Action 1632 1640	sampling
+E40	Action:T167 
+R2	Mod-Link Arg1:E39 Arg2:T165	
+R3	Setting Arg1:E39 Arg2:T166	
+T168	Action 736 743	Working
+E41	Action:T168 
+R6	Mod-Link Arg1:E41 Arg2:T52	
+T169	Reagent 1162 1170	filtrate
+T170	Device 1192 1217	Amicon centrifugal device
+T171	Action 1242 1249	control
+E42	Action:T171 Acts-on:T154
+T172	Time 1479 1481	T0
+T173	Time 63 65	T0
+T174	Reagent 1872 1881	infection
+T83	Measure-Type 1910 1917	volumes
+T175	Action 1943 1947	Plan
+E43	Action:T175 
+T176	Modifier 1948 1957	carefully
+R4	Mod-Link Arg1:E43 Arg2:T176	
+T177	Reagent 1966 1971	cells
+T178	Action 2034 2041	growing
+E44	Action:T178 Measure-Type-Link:T179
+T179	Measure-Type 2042 2049	volumes
+T180	Amount 2053 2055	1L
+T181	Modifier 2056 2063	or more
+R5	Mod-Link Arg1:T180 Arg2:T181	
+T182	Reagent 2108 2119	ambient air
+T183	Measure-Type 2289 2292	MOI
+T184	Numerical 2313 2322	0.01-0.05
+R8	Of-Type Arg1:T184 Arg2:T183	
+T185	Reagent 2398 2405	culture
+T186	Action 2380 2387	Harvest
+E45	Action:T186 
+T187	Modifier 2410 2417	cleared
+R17	Mod-Link Arg1:T185 Arg2:T187	
+T188	Reagent 2429 2434	cells
+T189	Modifier 2440 2445	lysed
+R40	Mod-Link Arg1:T188 Arg2:T189	
+T190	Reagent 2575 2580	phage
+R41	Meronym Arg1:T190 Arg2:T105	
+T191	Action 2799 2810	Concentrate
+E46	Action:T191 
+T192	Action 2984 2990	remove
+E47	Action:T192 Acts-on:T193 Acts-on2:T194 Acts-on3:T195 Site:T196
+T193	Reagent 2991 2992	P
+T194	Reagent 2994 2995	N
+T195	Reagent 3000 3015	other nutrients
+T196	Reagent 3031 3037	lysate
+T197	Modifier 3023 3030	initial
+R31	Mod-Link Arg1:T196 Arg2:T197	
+R42	Or Arg1:T193 Arg2:T194	
+R43	Or Arg1:T194 Arg2:T195	
+T198	Method 1642 1645	FCM
+T199	Reagent 1650 1654	cell
+T200	Modifier 1663 1675	Fluorescence
+T201	Modifier 1677 1696	extracellular phage
+T202	Reagent 1698 1709	RNA-protein
+R44	Mod-Link Arg1:T202 Arg2:T201	
+R45	Mod-Link Arg1:T202 Arg2:T200	

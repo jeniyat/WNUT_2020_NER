@@ -1,0 +1,43 @@
+T1	Reagent 37 43	sample
+T2	Reagent 47 52	virus
+T3	Action 56 62	placed
+E1	Action:T3 Acts-on:T1 Site:T5
+T4	Modifier 68 75	sterile
+T5	Location 76 83	surface
+T6	Location 92 96	grid
+T7	Method 98 122	plastic-coated side down
+T8	Action 124 130	placed
+E2	Action:T8 Site:T9 Using:T7 Acts-on:T6
+T9	Reagent 138 145	droplet
+T10	Time 150 159	1.5–2 min
+T11	Location 165 169	grid
+T12	Action 178 184	placed
+E3	Action:T12 Acts-on:T11 Site:T14
+T13	Time 190 199	1–1.5 min
+T14	Reagent 206 210	drop
+T15	Modifier 214 230	freshly filtered
+T16	Concentration 231 237	2% w/v
+T17	Reagent 238 252	uranyl acetate
+T18	Modifier 257 263	excess
+T19	Reagent 264 269	stain
+T20	Action 270 277	removed
+E4	Action:T20 Acts-on:T19 Using:T21
+T21	Device 283 295	filter paper
+T22	Location 315 320	grids
+T23	Action 328 336	examined
+E5	Action:T23 Acts-on:T22 Using:T25
+T24	Modifier 321 327	may be
+T25	Method 340 372	transmission electron microscopy
+R1	Meronym Arg1:T1 Arg2:T2	
+R2	Mod-Link Arg1:T5 Arg2:T4	
+R3	Setting Arg1:E2 Arg2:T10	
+R4	Setting Arg1:E3 Arg2:T13	
+R5	Measure Arg1:T17 Arg2:T16	
+R6	Mod-Link Arg1:T17 Arg2:T15	
+R7	Meronym Arg1:T14 Arg2:T17	
+R8	Mod-Link Arg1:T19 Arg2:T18	
+R9	Mod-Link Arg1:E5 Arg2:T24	
+T26	Method 0 19	Electron Microscopy
+T27	Reagent 23 34	Haloviruses
+T28	Action 303 313	air drying
+E6	Action:T28 

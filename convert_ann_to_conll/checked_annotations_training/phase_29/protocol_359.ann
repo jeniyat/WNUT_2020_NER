@@ -1,0 +1,133 @@
+T1	Action 49 56	Prepare
+E1	Action:T1 Acts-on:T17
+T2	Action 102 107	Clean
+E2	Action:T2 Acts-on:T25 Using2:T28
+T3	Action 174 180	remove
+E3	Action:T3 Acts-on:T30
+T4	Action 272 277	Place
+E4	Action:T4 Acts-on:T26 Site:T32
+T6	Action 338 342	Heat
+E6	Action:T6 Acts-on:T40
+T7	Action 398 403	Place
+E7	Action:T7 
+T8	Action 441 445	Heat
+E8	Action:T8 Acts-on:T47
+T9	Action 471 476	rinse
+E9	Action:T9 Acts-on:T47 Using:T48 Count:T49
+T10	Action 517 523	remove
+E10	Action:T10 Acts-on:T50
+T11	Action 564 567	dry
+E11	Action:T11 Acts-on:T51 Using:T52
+T12	Action 594 598	Make
+E12	Action:T12 Acts-on:T53
+T13	Action 783 791	Incubate
+E13	Action:T13 Acts-on:T56 Site:T57
+T14	Action 888 893	Rinse
+E14	Action:T14 Acts-on:T61 Count:T62 Using:T63 Using2:T64 Count2:T84
+T15	Action 1001 1004	dry
+E15	Action:T15 Acts-on:T65 Using:T66
+T16	Action 1044 1050	stored
+E16	Action:T16 Acts-on:T67
+T17	Reagent 57 66	solutions
+T18	Concentration 70 72	2%
+T19	Reagent 73 76	SDS
+T20	Concentration 78 82	0.1%
+T21	Reagent 83 86	SDS
+T22	Concentration 91 96	0.1 M
+T23	Reagent 97 100	HCl
+R1	Meronym Arg1:T19 Arg2:T17	
+R2	Measure Arg1:T19 Arg2:T18	
+R3	Measure Arg1:T21 Arg2:T20	
+R4	Meronym Arg1:T21 Arg2:T17	
+R5	Measure Arg1:T23 Arg2:T22	
+R6	Meronym Arg1:T23 Arg2:T17	
+T24	Modifier 112 123	gold-coated
+T25	Device 124 137	QCM-D sensors
+R7	Mod-Link Arg1:T25 Arg2:T24	
+T27	Concentration 151 153	2%
+T28	Reagent 154 157	SDS
+T29	Modifier 161 173	mechanically
+T30	Reagent 181 193	contaminants
+R8	Measure Arg1:T28 Arg2:T27	
+R9	Mod-Link Arg1:E3 Arg2:T29	
+T31	Device 212 217	glove
+T5	Modifier 221 224	wet
+R10	Mod-Link Arg1:T31 Arg2:T5	
+T26	Device 282 289	sensors
+T32	Location 295 300	stand
+T33	Action 305 308	put
+E5	Action:T33 Acts-on:T34 Site:T36
+T34	Mention 309 313	them
+T35	Concentration 319 323	0.1%
+T36	Reagent 324 336	SDS solution
+R11	Coreference-Link Arg1:T34 Arg2:T26	
+R12	Measure Arg1:T36 Arg2:T35	
+T37	Time 347 353	10 min
+T38	Temperature 357 362	80°C,
+T39	Action 368 373	rinse
+E17	Action:T39 Acts-on:T40 Using:T41
+T40	Device 378 385	sensors
+T41	Reagent 391 396	water
+R13	Setting Arg1:E6 Arg2:T37	
+R14	Setting Arg1:E6 Arg2:T38	
+T42	Device 408 415	sensors
+T43	Concentration 421 426	0.1 M
+T44	Reagent 427 439	HCl solution
+T45	Time 450 456	10 min
+T46	Temperature 460 465	80°C,
+T47	Device 481 488	sensors
+T48	Reagent 494 499	water
+T49	Numerical 500 513	several times
+T50	Reagent 528 540	HCl solution
+R15	Setting Arg1:E8 Arg2:T45	
+R16	Setting Arg1:E8 Arg2:T46	
+T51	Reagent 556 563	sensors
+T52	Reagent 584 592	nitrogen
+T53	Reagent 602 620	ethanolic solution
+T54	Concentration 646 651	10 mM
+T55	Reagent 655 671	mixed PEG thiols
+R17	Measure Arg1:T55 Arg2:T54	
+R18	Meronym Arg1:T55 Arg2:T53	
+T56	Device 796 809	QCM-D sensors
+T57	Reagent 817 845	ethanolic PEG thiol solution
+T58	Time 859 867	16 hours
+T59	Temperature 871 874	4°C
+T60	Modifier 878 886	darkness
+R19	Setting Arg1:E13 Arg2:T58	
+R20	Setting Arg1:E13 Arg2:T59	
+R21	Mod-Link Arg1:E13 Arg2:T60	
+T61	Device 898 905	sensors
+T62	Numerical 908 923	couple of times
+T63	Reagent 929 936	ethanol
+T64	Reagent 966 979	milli-Q water
+T65	Mention 996 1000	them
+T66	Reagent 1010 1018	nitrogen
+R22	Coreference-Link Arg1:T65 Arg2:T61	
+T67	Mention 1020 1024	They
+T68	Action 13 20	washing
+E18	Action:T68 Acts-on:T70
+T69	Action 25 34	modifying
+E19	Action:T69 Acts-on:T70
+T70	Device 35 48	QCM-D sensors
+T71	Action 252 259	scratch
+E20	Action:T71 
+T72	Device 264 270	sensor
+T73	Mention 241 243	it
+R24	Coreference-Link Arg1:T73 Arg2:T31	
+T74	Measure-Type 632 645	concentration
+T75	Reagent 673 676	PEG
+T76	Reagent 681 698	biotin-PEG thiols
+R25	Meronym Arg1:T75 Arg2:T55	
+R26	Meronym Arg1:T76 Arg2:T55	
+T77	Measure-Type 704 715	molar ratio
+T78	Generic-Measure 719 723	99:1
+R27	Of-Type Arg1:T78 Arg2:T77	
+T79	Generic-Measure 740 748	386.5 Da
+T80	Generic-Measure 773 781	788.0 Da
+T81	Measure-Type 757 770	dS-PEG-biotin
+T82	Measure-Type 731 737	dS-PEG
+T83	Modifier 850 858	at least
+R28	Mod-Link Arg1:T58 Arg2:T83	
+T84	Numerical 945 960	couple of times
+R29	Of-Type Arg1:T79 Arg2:T82	
+R30	Of-Type Arg1:T80 Arg2:T81	

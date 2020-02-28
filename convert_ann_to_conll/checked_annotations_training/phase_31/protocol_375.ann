@@ -1,0 +1,87 @@
+T1	Action 550 559	Resuspend
+E1	Action:T1 Acts-on:T44 Site:T46
+T2	Action 610 616	adjust
+E2	Action:T2 Measure-Type-Link:T49
+T3	Action 525 532	discard
+E3	Action:T3 Acts-on:T41
+T4	Action 496 500	Spin
+E4	Action:T4 Acts-on:T42
+T5	Action 445 453	diluting
+E5	Action:T5 Acts-on:T37 Using:T40
+T6	Action 367 375	Incubate
+E6	Action:T6 Acts-on:T34
+T7	Action 415 422	shaking
+E7	Action:T7 
+T8	Action 222 228	Dilute
+E8	Action:T8 Acts-on:T26 Using:T29
+T9	Action 318 327	resuspend
+E9	Action:T9 Acts-on:T30 Site:T33
+T10	Action 150 156	Pellet
+E10	Action:T10 Acts-on:T23
+T12	Action 196 204	aspirate
+E12	Action:T12 Acts-on:T24
+T13	Action 109 113	push
+E13	Action:T13 Using:T21 Acts-on:T19 Site:T20
+T14	Action 23 30	Harvest
+E14	Action:T14 Acts-on:T16
+T15	Action 48 55	prepare
+E15	Action:T15 Acts-on:T18
+T16	Reagent 31 43	mouse spleen
+T17	Numerical 58 64	single
+T18	Reagent 65 80	cell suspension
+T19	Reagent 118 124	spleen
+T20	Device 135 148	cell strainer
+T21	Location 86 92	slides
+T22	Device 98 105	syrings
+R1	Or Arg1:T21 Arg2:T22	
+T23	Reagent 161 166	cells
+T24	Reagent 209 220	supernatant
+T25	Concentration 233 236	10X
+T26	Reagent 237 264	Red Blood Cell Lysis Buffer
+T27	Concentration 268 270	1X
+T28	Modifier 298 307	deionized
+T29	Reagent 308 313	water
+T30	Reagent 332 338	pellet
+T31	Amount 342 346	5 ml
+T32	Concentration 350 352	1X
+T33	Reagent 353 365	Lysis Buffer
+T34	Location 379 382	ice
+T35	Time 387 398	4-5 minutes
+T36	Modifier 404 414	occasional
+T37	Reagent 458 470	Lysis Buffer
+T38	Amount 476 484	20-30 ml
+T39	Concentration 488 490	1X
+T40	Reagent 491 494	PBS
+T41	Reagent 537 548	supernatant
+T42	Reagent 505 510	cells
+T43	Speed 512 519	350 x g
+T44	Reagent 564 570	pellet
+T45	Modifier 578 589	appropriate
+T46	Reagent 590 596	buffer
+T47	Action 597 602	Count
+E16	Action:T47 Acts-on:T48
+T48	Reagent 603 608	cells
+T49	Measure-Type 617 624	density
+T50	Action 630 637	proceed
+E17	Action:T50 Using:T51
+T51	Method 643 667	cell staining procedures
+R2	Measure Arg1:T18 Arg2:T17	
+R3	Measure Arg1:T26 Arg2:T25	
+R4	Setting Arg1:E8 Arg2:T27	
+R5	Mod-Link Arg1:T29 Arg2:T28	
+R6	Measure Arg1:T33 Arg2:T32	
+R7	Measure Arg1:T33 Arg2:T31	
+R8	Setting Arg1:E6 Arg2:T35	
+R9	Mod-Link Arg1:E7 Arg2:T36	
+R10	Measure Arg1:T40 Arg2:T39	
+R11	Measure Arg1:T40 Arg2:T38	
+R12	Setting Arg1:E4 Arg2:T43	
+R13	Mod-Link Arg1:T46 Arg2:T45	
+T52	Action 424 428	Stop
+E18	Action:T52 Acts-on:T53
+T53	Reagent 433 441	reaction
+T54	Method 11 22	Preperation
+T55	Reagent 0 10	Splenocyte
+T56	Speed 186 193	350 x g
+T11	Method 170 184	centrifugation
+T57	Measure-Type 279 292	concentration

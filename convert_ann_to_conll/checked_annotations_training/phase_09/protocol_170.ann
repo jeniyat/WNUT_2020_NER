@@ -1,0 +1,158 @@
+T1	Action 16 20	Wash
+E1	Action:T1 Acts-on:T26
+T2	Action 44 51	prepare
+E2	Action:T2 Acts-on:T28
+T3	Action 71 74	Add
+E3	Action:T3 Acts-on:T30 Site:T32
+T4	Action 117 120	mix
+E4	Action:T4 
+T5	Action 122 132	Centrifuge
+E5	Action:T5 
+T6	Action 149 155	Remove
+E6	Action:T6 Acts-on:T37
+T7	Action 170 176	Repeat
+E7	Action:T7 Using:T38 Count:T39
+T8	Action 231 237	remove
+E8	Action:T8 Acts-on:T41 Site:T42
+T9	Action 283 286	add
+E9	Action:T9 Site:T45 Acts-on:T41
+T10	Action 309 316	Prepare
+E10	Action:T10 Acts-on:T47
+T11	Action 348 355	Prepare
+E11	Action:T11 Product:T49
+T12	Action 492 495	Add
+E12	Action:T12 Acts-on:T55 Site:T56
+T13	Action 530 538	incubate
+E13	Action:T13 
+T14	Action 540 543	Add
+E14	Action:T14 Acts-on:T58 Site:T60
+T15	Action 607 615	Incubate
+E15	Action:T15 
+T17	Action 705 709	Make
+E17	Action:T17 Product:T16
+T18	Action 848 858	Centrifuge
+E18	Action:T18 Acts-on:T73
+T19	Action 863 868	place
+E19	Action:T19 Acts-on:T73
+T20	Action 879 889	Centrifuge
+E20	Action:T20 Using:T74
+T21	Action 944 951	collect
+E21	Action:T21 Acts-on:T79 Site:T80
+T22	Action 1142 1146	Take
+E22	Action:T22 Measure-Type-Link:T97
+T23	Action 1159 1163	Take
+E23	Action:T23 Measure-Type-Link:T83
+T24	Action 992 997	place
+E24	Action:T24 Acts-on:T82
+T25	Action 25 36	concentrate
+E25	Action:T25 Acts-on:T26
+T26	Reagent 37 42	blood
+T27	Concentration 52 54	2%
+T28	Reagent 55 69	blood solution
+R1	Measure Arg1:T28 Arg2:T27	
+T29	Amount 75 79	3 mL
+T30	Reagent 80 92	rabbit blood
+T31	Amount 96 101	14 mL
+T32	Reagent 102 105	PBS
+T33	pH 106 112	pH 5.7
+R2	Measure Arg1:T32 Arg2:T33	
+R3	Measure Arg1:T32 Arg2:T31	
+R4	Measure Arg1:T30 Arg2:T29	
+T34	Time 133 139	10 min
+T35	Speed 140 144	500g
+T36	Temperature 145 147	4C
+R5	Setting Arg1:E5 Arg2:T34	
+R6	Setting Arg1:E5 Arg2:T35	
+R7	Setting Arg1:E5 Arg2:T36	
+T37	Reagent 156 167	supernatant
+T38	Method 177 182	steps
+T39	Numerical 198 199	4
+T40	Amount 238 244	200 uL
+T41	Reagent 245 250	blood
+T42	Location 260 266	bottom
+T43	Location 274 278	vial
+T44	Amount 290 296	9.8 mL
+T45	Reagent 297 300	PBS
+T46	pH 301 307	pH 5.7
+R8	Measure Arg1:T45 Arg2:T44	
+R9	Measure Arg1:T45 Arg2:T46	
+R10	Measure Arg1:T41 Arg2:T40	
+R11	Meronym Arg1:T42 Arg2:T43	
+T47	Reagent 317 346	endosomal disruptor solutions
+T48	Amount 356 362	100 uL
+T49	Reagent 363 396	solutions of endosomal disruptors
+T50	Reagent 453 460	TritonX
+T51	Concentration 466 474	15 mg/mL
+T52	Concentration 478 489	.0015 mg/mL
+T54	Concentration 400 424	different concentrations
+R12	Measure Arg1:T49 Arg2:T48	
+R13	Setting Arg1:E11 Arg2:T54	
+T55	Reagent 496 501	blood
+T56	Reagent 505 525	endosomal disruptors
+T57	Amount 544 549	50 uL
+T58	Reagent 550 564	blood solution
+T59	Amount 568 574	100 uL
+T60	Reagent 575 604	endosomal disruptor solutions
+R16	Measure Arg1:T60 Arg2:T59	
+R17	Measure Arg1:T58 Arg2:T57	
+T61	Temperature 619 622	37C
+T62	Time 627 633	30 min
+R18	Setting Arg1:E15 Arg2:T61	
+R19	Setting Arg1:E15 Arg2:T62	
+T16	Reagent 712 728	positive control
+T63	Action 746 752	adding
+E16	Action:T63 Acts-on:T65 Site:T67
+T64	Amount 753 758	50 uL
+T65	Reagent 759 773	blood solution
+T66	Amount 777 783	100 uL
+T67	Reagent 784 789	diH2O
+T68	Action 794 813	freeze-thaw cycling
+E27	Action:T68 Count:T69
+T69	Numerical 814 815	3
+T70	Action 823 829	freeze
+E28	Action:T70 Acts-on:T72
+T71	Temperature 833 837	-80C
+T72	Device 838 845	freezer
+R20	Setting Arg1:T72 Arg2:T71	
+R21	Measure Arg1:T67 Arg2:T66	
+R22	Measure Arg1:T65 Arg2:T64	
+T73	Location 872 877	plate
+T74	Device 893 912	tabletop centrifuge
+T75	Speed 916 921	2500g
+T76	Time 926 931	6 min
+R23	Setting Arg1:T74 Arg2:T75	
+R24	Setting Arg1:T74 Arg2:T76	
+T77	Modifier 934 943	Carefully
+T78	Amount 952 957	75 uL
+T79	Reagent 961 972	supernatant
+T80	Location 983 987	tube
+T81	Modifier 978 982	each
+R25	Mod-Link Arg1:T80 Arg2:T81	
+T82	Location 1001 1014	96 well plate
+R26	Measure Arg1:T79 Arg2:T78	
+R27	Mod-Link Arg1:E21 Arg2:T77	
+T83	Measure-Type 1164 1174	absorbance
+T84	Generic-Measure 1178 1184	541 nm
+R28	Of-Type Arg1:T84 Arg2:T83	
+R29	Setting Arg1:E23 Arg2:T84	
+T85	Action 0 15	Hemolysis Assay
+E29	Action:T85 
+T86	Action 225 229	wash
+E30	Action:T86 
+T53	Method 429 449	serial 10x dilutions
+T87	Device 644 649	timer
+T88	Reagent 666 674	solution
+T89	Action 675 680	added
+E26	Action:T89 Acts-on:T88
+T90	Action 682 686	Make
+E31	Action:T90 Product:T91
+T91	Reagent 687 703	positive control
+T92	Reagent 736 741	lysis
+T93	Reagent 1019 1028	Solutions
+T94	Action 1092 1102	Disrupting
+E32	Action:T94 Acts-on:T96
+T95	Modifier 1103 1109	bottom
+T96	Reagent 1110 1116	pellet
+R14	Mod-Link Arg1:T96 Arg2:T95	
+T97	Measure-Type 1147 1157	absorbance
+T98	Measure-Type 1199 1209	absorbance

@@ -1,0 +1,38 @@
+T1	Action 34 42	Incubate
+E1	Action:T1 Acts-on:T6 Using:T7
+T2	Action 124 133	assembled
+E2	Action:T2 Acts-on:T11
+T3	Action 177 186	assembled
+E3	Action:T3 Acts-on:T15
+T4	Action 188 193	Store
+E4	Action:T4 Acts-on:T16 Site:T17
+T5	Action 252 261	Transform
+E5	Action:T5 Acts-on:T19 Using:T21
+T6	Reagent 43 50	samples
+T7	Device 56 68	thermocycler
+T8	Temperature 72 76	50°C
+T9	Time 81 91	15 minutes
+T10	Time 137 147	60 minutes
+R1	Setting Arg1:E1 Arg2:T8	
+T11	Reagent 104 113	fragments
+T12	Numerical 97 98	2
+T13	Numerical 102 103	3
+R3	Measure Arg1:T11 Arg2:T12	
+R4	Or Arg1:T12 Arg2:T13	
+T14	Numerical 153 156	4-6
+T15	Reagent 157 166	fragments
+R5	Measure Arg1:T15 Arg2:T14	
+R2	Setting Arg1:E2 Arg2:T9	
+R6	Setting Arg1:E3 Arg2:T10	
+T16	Reagent 194 201	samples
+T17	Location 205 208	ice
+T18	Temperature 215 220	–20°C
+R7	Or Arg1:T17 Arg2:T18	
+T19	Reagent 262 297	NEB 5-alpha Competent E. coli cells
+T20	Amount 327 331	2 μl
+T21	Reagent 339 356	assembly reaction
+R8	Measure Arg1:T21 Arg2:T20	
+T22	Method 0 16	Gibson Assembly®
+T23	Method 236 250	transformation
+T24	Device 317 320	kit
+T25	Method 372 386	transformation

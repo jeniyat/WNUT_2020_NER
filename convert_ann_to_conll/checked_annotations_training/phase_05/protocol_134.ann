@@ -1,0 +1,125 @@
+T1	Action 65 74	Resuspend
+E1	Action:T1 Acts-on:T15
+T2	Action 89 92	add
+E2	Action:T2 Acts-on:T16
+T3	Action 111 114	Add
+E3	Action:T3 Acts-on:T17
+T4	Action 256 263	Collect
+E4	Action:T4 Acts-on:T24 Acts-on2:T25 Using:T26
+T5	Action 340 350	Re-suspend
+E5	Action:T5 Acts-on:T30 Site:T31 Site2:T32 Site3:T33
+T6	Action 423 433	Centrifuge
+E6	Action:T6 
+T7	Action 464 471	discard
+E7	Action:T7 Acts-on:T37
+T8	Action 485 492	Suspend
+E8	Action:T8 Acts-on:T42 Acts-on2:T38 Acts-on3:T39 Acts-on4:T40 Acts-on5:T41
+T9	Action 570 578	incubate
+E9	Action:T9 
+T10	Action 595 605	Centrifuge
+E10	Action:T10 
+T11	Action 636 643	Collect
+E11	Action:T11 Acts-on:T48
+T12	Action 28 34	Pellet
+E12	Action:T12 Acts-on:T14
+T13	Amount 35 40	500ml
+T14	Reagent 41 46	cells
+R1	Measure Arg1:T14 Arg2:T13	
+T15	Reagent 83 87	MBBM
+T16	Reagent 98 109	tetracyline
+T17	Reagent 121 134	purified PBCV
+T18	Action 135 143	incubate
+E13	Action:T18 Site:T20 Using:T21 Site2:T23
+T19	Time 144 149	16hrs
+T20	Location 156 180	fluorescent illumination
+T21	Method 188 215	16 hr light/8 hr dark cycle
+T22	Temperature 219 223	25°C
+T23	Device 230 244	orbital shaker
+R2	Setting Arg1:E13 Arg2:T19	
+R3	Setting Arg1:E13 Arg2:T22	
+T24	Reagent 264 269	cells
+T25	Reagent 274 279	virus
+T26	Method 283 297	centrifugation
+T27	Speed 301 310	25,000RPM
+T28	Time 324 330	17 min
+T29	Temperature 334 338	20°C
+R4	Setting Arg1:E4 Arg2:T27	
+R5	Setting Arg1:E4 Arg2:T28	
+R6	Setting Arg1:E4 Arg2:T29	
+T30	Reagent 351 356	cells
+T31	Reagent 370 373	KOH
+T32	Reagent 390 397	Na2EGTA
+T33	Reagent 404 408	LiCl
+T34	Speed 434 443	25,000RPM
+T35	Time 448 454	17 min
+T36	Temperature 458 462	20°C
+T37	Reagent 472 483	supernatant
+R7	Setting Arg1:E6 Arg2:T34	
+R8	Setting Arg1:E6 Arg2:T35	
+R9	Setting Arg1:E6 Arg2:T36	
+T38	Reagent 514 517	KOH
+T39	Reagent 524 528	MOPS
+T40	Reagent 546 550	LiCl
+T41	Reagent 562 569	Na2EGTA
+T42	Reagent 493 499	pellet
+T43	Time 579 585	50 min
+T44	Temperature 589 593	37°C
+R10	Setting Arg1:E9 Arg2:T43	
+R11	Setting Arg1:E9 Arg2:T44	
+T45	Speed 606 615	25,000RPM
+T46	Time 620 626	17 min
+T47	Temperature 630 634	20°C
+R12	Setting Arg1:E10 Arg2:T45	
+R13	Setting Arg1:E10 Arg2:T46	
+R14	Setting Arg1:E10 Arg2:T47	
+T48	Reagent 644 655	supernatant
+T49	Reagent 0 5	Lysin
+T50	Method 6 18	purification
+T51	Time 48 52	5min
+T52	Speed 55 62	5000RPM
+R15	Setting Arg1:E12 Arg2:T51	
+R16	Setting Arg1:E12 Arg2:T52	
+T53	Amount 78 82	20ml
+T54	Amount 93 97	20µl
+R17	Measure Arg1:T15 Arg2:T53	
+R18	Measure Arg1:T16 Arg2:T54	
+T55	Modifier 246 247	~
+T56	Speed 247 253	95 rpm
+R19	Mod-Link Arg1:T56 Arg2:T55	
+R20	Setting Arg1:T23 Arg2:T56	
+T57	Amount 115 120	150µl
+R21	Measure Arg1:T17 Arg2:T57	
+T58	pH 409 413	pH 7
+T59	Action 416 420	wash
+E14	Action:T59 
+T60	Concentration 375 379	50mM
+T61	Amount 360 364	20ml
+T62	Concentration 365 369	25mM
+T63	Reagent 380 384	MOPS
+T64	Concentration 386 389	2mM
+R22	Measure Arg1:T31 Arg2:T62	
+R23	Measure Arg1:T31 Arg2:T61	
+R24	Measure Arg1:T63 Arg2:T60	
+R25	Measure Arg1:T32 Arg2:T64	
+T65	Concentration 399 403	0.1M
+R26	Measure Arg1:T33 Arg2:T65	
+R27	Measure Arg1:T33 Arg2:T58	
+T66	pH 530 534	pH 7
+T67	Amount 503 508	1.5ml
+T68	Concentration 509 513	25mM
+T69	Concentration 519 523	50mM
+T70	Amount 537 541	60µl
+T71	Concentration 542 545	10M
+T72	Amount 552 556	30µl
+T73	Concentration 557 561	0.1M
+R28	Measure Arg1:T38 Arg2:T67	
+R29	Measure Arg1:T38 Arg2:T68	
+T74	Reagent 663 666	DNA
+T75	Action 657 662	avoid
+E15	Action:T75 Acts-on:T74
+R30	Measure Arg1:T39 Arg2:T69	
+R31	Measure Arg1:T39 Arg2:T66	
+R32	Measure Arg1:T40 Arg2:T70	
+R33	Measure Arg1:T40 Arg2:T71	
+R34	Measure Arg1:T41 Arg2:T72	
+R35	Measure Arg1:T41 Arg2:T73	

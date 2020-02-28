@@ -1,0 +1,194 @@
+T1	Action 61 66	Label
+E1	Action:T1 Acts-on:T3
+T2	Amount 67 76	11x1.5 ml
+T3	Location 77 82	tubes
+T4	Modifier 83 94	40-45-50-55
+R1	Mod-Link Arg1:E1 Arg2:T4	
+R2	Measure Arg1:T3 Arg2:T2	
+T5	Action 132 135	Mix
+E2	Action:T5 Acts-on:T7 Acts-on2:T11
+T6	Amount 136 140	48μl
+T7	Reagent 141 144	NEB
+R3	Measure Arg1:T7 Arg2:T6	
+T8	Generic-Measure 145 150	100bp
+T9	Device 151 157	ladder
+R4	Setting Arg1:T9 Arg2:T8	
+T10	Amount 163 169	1152μl
+T11	Reagent 170 192	Molecular Biology Wate
+R5	Measure Arg1:T11 Arg2:T10	
+T12	Action 195 200	Pipet
+E3	Action:T12 Acts-on:T14 Site:T17
+T13	Amount 201 206	100μl
+T14	Reagent 210 217	mixture
+T15	Modifier 223 227	each
+T16	Numerical 235 237	11
+T17	Location 238 243	tubes
+R6	Measure Arg1:T17 Arg2:T16	
+R7	Mod-Link Arg1:T17 Arg2:T15	
+R8	Measure Arg1:T14 Arg2:T13	
+T18	Action 245 251	Vortex
+E4	Action:T18 Acts-on:T19
+T19	Location 252 258	bottle
+T20	Reagent 262 277	AmPure XP beads
+R9	Meronym Arg1:T20 Arg2:T19	
+T21	Action 282 290	dispense
+E5	Action:T21 Acts-on:T20 Site:T23
+T22	Amount 291 296	800μl
+T23	Location 302 312	fresh tube
+R10	Measure Arg1:T20 Arg2:T22	
+T24	Location 325 333	pipettor
+T25	Action 352 357	pipet
+E6	Action:T25 Using:T24 Acts-on:T27 Site:T28 Measure-Type-Link:T26
+T26	Measure-Type 358 364	volume
+T27	Reagent 368 373	beads
+T28	Location 384 388	tube
+T29	Modifier 379 383	each
+R12	Mod-Link Arg1:T28 Arg2:T29	
+T30	Amount 396 400	40μl
+T31	Location 406 410	tube
+T32	Modifier 411 420	labled 40
+T33	Amount 422 426	45μl
+R13	Mod-Link Arg1:T31 Arg2:T32	
+T34	Location 432 436	tube
+T35	Modifier 437 445	labed 45
+R14	Mod-Link Arg1:T34 Arg2:T35	
+T36	Action 453 458	Close
+E7	Action:T36 Using:T37
+T37	Seal 459 463	lids
+T38	Action 465 471	vortex
+E8	Action:T38 Acts-on:T39
+T39	Location 472 477	tubes
+T40	Action 482 490	incubate
+E9	Action:T40 
+T41	Time 491 500	5 minutes
+T42	Temperature 504 520	room temperature
+R15	Setting Arg1:E9 Arg2:T41	
+R16	Setting Arg1:E9 Arg2:T42	
+T43	Action 522 527	Place
+E10	Action:T43 Acts-on:T44 Site:T45
+T44	Location 528 533	tubes
+T45	Location 537 545	MPC rack
+T46	Action 547 551	wait
+E11	Action:T46 Site:T47 Acts-on:T49
+T47	Location 585 596	magnet side
+T48	Location 600 605	tubes
+R17	Meronym Arg1:T47 Arg2:T48	
+T49	Reagent 566 571	beads
+T50	Time 552 561	5 minutes
+R18	Setting Arg1:E11 Arg2:T50	
+T51	Action 607 616	Pipet off
+E12	Action:T51 Acts-on:T52
+T52	Reagent 617 623	supers
+T53	Mention 636 640	them
+T54	Action 628 635	discard
+E13	Action:T54 Acts-on:T53
+R19	Coreference-Link Arg1:T53 Arg2:T52	
+T55	Action 642 646	Wash
+E14	Action:T55 Count:T57 Acts-on:T56 Using2:T61
+T56	Reagent 651 656	beads
+T57	Numerical 657 659	2x
+T58	Amount 665 670	500μl
+T59	Modifier 671 675	each
+T60	Concentration 676 679	70%
+T61	Reagent 680 687	ethanol
+T62	Time 693 702	30 second
+R21	Measure Arg1:T61 Arg2:T60	
+R22	Mod-Link Arg1:T61 Arg2:T59	
+R23	Measure Arg1:T61 Arg2:T58	
+T64	Action 715 721	Remove
+E16	Action:T64 Acts-on:T65 Site:T66
+T65	Reagent 726 732	supers
+T66	Location 738 743	tubes
+T67	Action 745 750	Place
+E17	Action:T67 Acts-on:T68 Site:T72
+T68	Location 751 756	tubes
+T69	Seal 763 767	caps
+T70	Modifier 768 772	open
+R24	Mod-Link Arg1:T69 Arg2:T70	
+R25	Meronym Arg1:T69 Arg2:T68	
+T71	Temperature 779 783	37°C
+T72	Location 784 794	heat block
+T73	Action 798 801	dry
+E18	Action:T73 Acts-on:T74
+T74	Reagent 802 807	beads
+T75	Action 809 818	evaporate
+E19	Action:T75 Acts-on:T77
+T76	Amount 819 827	residual
+T77	Reagent 828 835	ethanol
+R26	Measure Arg1:T77 Arg2:T76	
+T78	Action 838 841	Add
+E20	Action:T78 Acts-on:T80 Site:T82
+T79	Amount 842 846	10μl
+T80	Reagent 847 856	Qiagen EB
+T81	Modifier 860 864	each
+T82	Location 866 867	u
+T83	Action 871 876	close
+E21	Action:T83 Using:T84
+T84	Seal 877 881	lids
+R27	Mod-Link Arg1:T82 Arg2:T81	
+R28	Measure Arg1:T80 Arg2:T79	
+T85	Action 883 889	Vortex
+E22	Action:T85 Acts-on:T86
+T86	Reagent 893 908	resuspend beads
+T87	Action 910 915	Place
+E23	Action:T87 Acts-on:T88 Site:T89
+T88	Location 916 921	tubes
+T89	Location 932 940	MPC rack
+T91	Action 955 961	adhere
+E25	Action:T91 Acts-on:T92 Site:T93
+T92	Reagent 949 954	beads
+T93	Location 965 977	magnet sides
+T94	Location 981 986	tubes
+R29	Meronym Arg1:T93 Arg2:T94	
+T90	Action 988 997	Pipet off
+E24	Action:T90 Acts-on:T95 Site:T97
+T95	Reagent 998 1004	supers
+T96	Reagent 1024 1027	DNA
+T97	Location 1040 1045	tubes
+R30	Meronym Arg1:T96 Arg2:T95	
+T98	Action 1047 1050	Run
+E26	Action:T98 Acts-on:T99 Site:T101 Using:T105 Site2:T108
+T99	Reagent 1051 1058	samples
+T100	Concentration 1062 1064	2%
+T101	Reagent 1065 1076	agarose gel
+T102	Concentration 1078 1080	1x
+T103	Reagent 1081 1084	TAE
+T104	Amount 1092 1095	5μl
+T105	Reagent 1096 1099	DNA
+T106	Amount 1104 1107	1μl
+T107	Concentration 1108 1110	6x
+T108	Reagent 1111 1129	gel loading buffer
+R31	Measure Arg1:T105 Arg2:T104	
+R32	Measure Arg1:T108 Arg2:T106	
+R33	Measure Arg1:T108 Arg2:T107	
+R34	Measure Arg1:T103 Arg2:T102	
+R35	Measure Arg1:T101 Arg2:T100	
+R36	Meronym Arg1:T103 Arg2:T101	
+T109	Method 0 9	Titration
+T110	Reagent 13 28	AmPure XP Beads
+T111	Method 33 40	Removal
+T112	Reagent 44 53	Fragments
+T113	Modifier 54 55	<
+T114	Generic-Measure 55 60	400bp
+R37	Mod-Link Arg1:T114 Arg2:T113	
+R38	Measure Arg1:T112 Arg2:T114	
+T115	Reagent 118 123	beads
+T116	Reagent 127 130	DNA
+R11	Measure Arg1:T27 Arg2:T30	
+R39	Measure Arg1:T27 Arg2:T33	
+T63	Method 703 713	incubation
+T117	Modifier 1034 1039	fresh
+T118	Modifier 1017 1023	eluted
+R20	Mod-Link Arg1:T96 Arg2:T118	
+R40	Mod-Link Arg1:T97 Arg2:T117	
+T119	Action 1131 1141	Photograph
+E15	Action:T119 
+T120	Action 1154 1163	determine
+E27	Action:T120 Measure-Type-Link:T121
+T121	Measure-Type 1169 1174	ratio
+T122	Measure-Type 109 114	ratio
+T123	Reagent 1178 1183	beads
+T124	Reagent 1187 1190	DNA
+T125	Reagent 1224 1227	DNA
+T126	Action 1201 1208	exclude
+E28	Action:T126 Acts-on:T125

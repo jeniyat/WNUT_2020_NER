@@ -1,0 +1,153 @@
+T1	Action 58 65	Prepare
+E1	Action:T1 Acts-on:T24
+T2	Action 110 117	Prepare
+E2	Action:T2 Acts-on:T28
+T3	Action 145 152	Prepare
+E3	Action:T3 Acts-on:T26
+T4	Action 179 186	Prepare
+E4	Action:T4 Acts-on:T27
+T5	Action 213 220	Prepare
+E5	Action:T5 Acts-on:T29
+T6	Action 302 305	Mix
+E6	Action:T6 Acts-on:T33
+T7	Action 377 384	overlay
+E7	Action:T7 Acts-on:T39 Using:T35
+T8	Action 454 464	polymerize
+E8	Action:T8 Acts-on:T38
+T9	Action 466 470	Pour
+E9	Action:T9 Acts-on:T41
+T10	Action 506 509	add
+E10	Action:T10 Acts-on:T42
+T11	Action 538 544	Insert
+E11	Action:T11 Acts-on:T43
+T12	Action 561 565	form
+E12	Action:T12 Acts-on:T44
+T13	Action 603 613	polymerize
+E13	Action:T13 Acts-on:T46
+T14	Action 669 673	Boil
+E14	Action:T14 Acts-on:T48 Site:T50
+T15	Action 725 732	loading
+E15	Action:T15 Acts-on2:T48 Site:T52
+T16	Action 747 761	Electrophorese
+E16	Action:T16 Acts-on:T53
+T17	Action 931 936	Stain
+E17	Action:T17 Acts-on:T61 Using5:T62
+T18	Action 1204 1209	Stain
+E18	Action:T18 Acts-on:T79
+T19	Action 1214 1221	destain
+E19	Action:T19 Acts-on:T79
+T20	Action 1265 1268	add
+E20	Action:T20 Acts-on:T82
+T21	Action 1301 1307	absorb
+E21	Action:T21 Acts-on:T83
+T23	Concentration 66 71	30.0%
+T24	Reagent 72 97	Acrylamide stock solution
+T28	Reagent 118 138	Resolving gel buffer
+T26	Reagent 153 172	Stacking gel buffer
+T27	Reagent 187 205	Running gel buffer
+T29	Reagent 221 236	Cracking buffer
+T33	Reagent 317 328	ingredients
+T34	Reagent 349 368	ammonium persulfate
+T35	Reagent 398 403	d-H2O
+T36	Modifier 411 420	resolving
+T37	Reagent 421 430	gel buffe
+T38	Mention 447 450	gel
+T39	Reagent 389 392	gel
+T40	Modifier 475 483	stacking
+T41	Reagent 484 487	gel
+T42	Reagent 517 536	ammonium persulfate
+T43	Device 549 557	gel comb
+T44	Location 570 575	wells
+T45	Modifier 587 595	stacking
+T46	Reagent 596 599	gel
+T47	Time 618 624	60 min
+T48	Reagent 678 685	samples
+T49	Modifier 693 701	cracking
+T50	Reagent 702 708	buffer
+T51	Time 709 717	5-10 min
+T52	Reagent 742 745	gel
+T53	Reagent 766 769	gel
+T54	Measure-Type 777 782	volts
+T55	Numerical 773 776	100
+T56	Numerical 797 799	10
+T57	Measure-Type 800 809	milliamps
+T58	Action 846 849	run
+E23	Action:T58 Acts-on2:T59 Site:T60
+T59	Reagent 831 834	dye
+T60	Mention 859 862	gel
+T61	Reagent 941 945	gels
+T62	Reagent 951 971	coomassie blue stain
+T63	Amount 1007 1013	1.0 gm
+T64	Reagent 1015 1039	Coomassie Brilliant Blue
+T65	Amount 1042 1048	455 mL
+T66	Reagent 1050 1058	methanol
+T67	Amount 1060 1066	455 mL
+T69	Amount 1075 1080	90 mL
+T70	Reagent 1082 1101	glacial acetic acid
+T71	Reagent 1103 1107	Gels
+T72	Action 1112 1119	destain
+E24	Action:T72 Acts-on:T71 Using:T74 Using2:T76 Using3:T78
+T73	Amount 1142 1148	700 mL
+T74	Reagent 1150 1158	methanol
+T75	Amount 1160 1166	200 mL
+T76	Reagent 1168 1187	glacial acetic acid
+T77	Amount 1189 1196	2600 mL
+T78	Reagent 1198 1203	d-H2O
+T79	Mention 1226 1230	gels
+T80	Temperature 1234 1238	65°C
+T81	Modifier 1240 1245	Small
+T82	Reagent 1246 1264	foam rubber pieces
+T83	Reagent 1320 1329	coomassie
+R1	Measure Arg1:T24 Arg2:T23	
+R6	Or Arg1:T35 Arg2:T37	
+R7	Mod-Link Arg1:T37 Arg2:T36	
+R8	Coreference-Link Arg1:T38 Arg2:T39	
+R9	Mod-Link Arg1:T41 Arg2:T40	
+R10	Mod-Link Arg1:T46 Arg2:T45	
+R11	Setting Arg1:E13 Arg2:T47	
+R12	Mod-Link Arg1:T50 Arg2:T49	
+R13	Setting Arg1:E14 Arg2:T51	
+R14	Of-Type Arg1:T55 Arg2:T54	
+R15	Setting Arg1:E16 Arg2:T55	
+R16	Or Arg1:T55 Arg2:T56	
+R17	Coreference-Link Arg1:T60 Arg2:T53	
+R18	Measure Arg1:T64 Arg2:T63	
+R19	Measure Arg1:T66 Arg2:T65	
+T22	Reagent 1068 1073	d-H2O
+R20	Measure Arg1:T22 Arg2:T67	
+R21	Measure Arg1:T70 Arg2:T69	
+R22	Meronym Arg1:T64 Arg2:T62	
+R23	Meronym Arg1:T66 Arg2:T62	
+R24	Meronym Arg1:T22 Arg2:T62	
+R25	Meronym Arg1:T70 Arg2:T62	
+R26	Measure Arg1:T74 Arg2:T73	
+R27	Measure Arg1:T76 Arg2:T75	
+R28	Measure Arg1:T78 Arg2:T77	
+R29	Setting Arg1:E18 Arg2:T80	
+R30	Setting Arg1:E19 Arg2:T80	
+R31	Coreference-Link Arg1:T79 Arg2:T71	
+R32	Mod-Link Arg1:T82 Arg2:T81	
+T68	Amount 1308 1312	some
+R33	Measure Arg1:T83 Arg2:T68	
+T84	Reagent 0 18	Polyacrylamide Gel
+T85	Method 30 45	Electrophoresis
+T86	Reagent 49 57	Proteins
+T87	Concentration 140 142	4X
+T88	Concentration 174 176	4X
+T89	Concentration 207 210	10X
+T90	Concentration 238 240	4X
+T91	Amount 242 247	10 mL
+T92	Reagent 287 300	Resolving Gel
+T93	Concentration 408 410	1X
+R34	Measure Arg1:T28 Arg2:T87	
+R35	Measure Arg1:T26 Arg2:T88	
+R36	Measure Arg1:T27 Arg2:T89	
+R37	Measure Arg1:T29 Arg2:T90	
+R38	Measure Arg1:T29 Arg2:T91	
+R39	Measure Arg1:T37 Arg2:T93	
+T94	Modifier 370 376	Gently
+R40	Mod-Link Arg1:E7 Arg2:T94	
+T95	Reagent 883 896	Resolving Gel
+T96	Reagent 909 921	Stacking Gel
+T97	Action 1282 1292	destaining
+E22	Action:T97 

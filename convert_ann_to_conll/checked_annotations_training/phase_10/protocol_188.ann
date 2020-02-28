@@ -1,0 +1,239 @@
+T1	Action 36 41	Place
+E1	Action:T1 Acts-on:T31 Site:T32
+T2	Action 125 128	Add
+E2	Action:T2 Acts-on:T34 Site:T35 Site2:T116
+T3	Action 181 186	Place
+E3	Action:T3 Acts-on:T36 Site:T38
+T4	Action 224 228	soak
+E4	Action:T4 Acts-on:T39
+T5	Action 262 266	Lift
+E5	Action:T5 Acts-on:T42
+T6	Action 283 286	add
+E6	Action:T6 Acts-on:T45
+T7	Action 323 328	swirl
+E7	Action:T7 Acts-on:T47 Commands:E34
+T8	Action 342 347	React
+E8	Action:T8 Site:T49
+T9	Action 412 415	Add
+E9	Action:T9 Acts-on:T55
+T10	Action 441 448	replace
+E10	Action:T10 Acts-on:T56
+T11	Action 466 474	increase
+E11	Action:T11 Measure-Type-Link:T58
+T12	Action 586 590	cool
+E12	Action:T12 Acts-on:T60
+T13	Action 600 601	a
+E13	Action:T13 Acts-on:T62
+T14	Action 661 664	Dry
+E14	Action:T14 Acts-on:T63
+T15	Action 898 907	Resuspend
+E15	Action:T15 Acts-on:T65 Using:T73
+T16	Action 1015 1019	Heat
+E16	Action:T16 
+T17	Action 1056 1060	cool
+E17	Action:T17 Acts-on:T77
+T18	Action 1082 1087	uncap
+E18	Action:T18 Acts-on:T77
+T19	Action 1092 1095	dry
+E19	Action:T19 Acts-on:T77
+T20	Action 1122 1125	Add
+E20	Action:T20 Acts-on:T81
+T22	Action 1227 1236	Resuspend
+E22	Action:T22 Acts-on:T89
+T23	Action 1286 1289	Cap
+E23	Action:T23 
+T24	Action 1302 1306	heat
+E24	Action:T24 
+T25	Action 1348 1353	uncap
+E25	Action:T25 Acts-on:T98
+T26	Action 1364 1367	dry
+E26	Action:T26 
+T27	Action 1379 1382	Add
+E27	Action:T27 
+T28	Action 1412 1416	heat
+E28	Action:T28 
+T29	Action 1472 1478	Dilute
+E29	Action:T29 Acts-on:T107 Using:T110
+T30	Action 1579 1585	follow
+E30	Action:T30 Using:T111
+T31	Device 42 48	filter
+T32	Location 54 62	PFA vial
+T33	Amount 129 135	1.5 mL
+T34	Reagent 139 152	sulfuric acid
+T35	Reagent 160 167	samples
+R1	Measure Arg1:T34 Arg2:T33	
+T36	Seal 187 190	lid
+T37	Modifier 196 203	loosely
+R2	Mod-Link Arg1:E3 Arg2:T37	
+T38	Location 191 195	atop
+T39	Device 214 220	filter
+T40	Time 233 239	20 min
+T41	Temperature 243 259	room temperature
+R3	Setting Arg1:E4 Arg2:T40	
+R4	Setting Arg1:E4 Arg2:T41	
+T42	Seal 267 270	lid
+T43	Modifier 271 279	slightly
+T44	Amount 287 292	0.5mL
+T45	Reagent 296 313	hydrogen peroxide
+R5	Measure Arg1:T45 Arg2:T44	
+R6	Mod-Link Arg1:E5 Arg2:T43	
+T46	Modifier 315 321	Gently
+R7	Mod-Link Arg1:E7 Arg2:T46	
+T47	Location 329 333	vial
+T48	Time 352 358	60 min
+T49	Device 364 373	hot plate
+T50	Temperature 377 382	110˚C
+R8	Setting Arg1:E8 Arg2:T48	
+R9	Setting Arg1:E8 Arg2:T50	
+T51	Action 392 398	placed
+E31	Action:T51 Acts-on:T52
+T52	Seal 388 391	lid
+T53	Modifier 402 409	loosely
+R10	Mod-Link Arg1:E31 Arg2:T53	
+T54	Amount 424 430	0.5 mL
+T55	Reagent 431 439	peroxide
+R11	Measure Arg1:T55 Arg2:T54	
+T56	Seal 449 453	caps
+T57	Modifier 454 461	loosely
+R12	Mod-Link Arg1:E10 Arg2:T57	
+T58	Measure-Type 475 495	hotplate temperature
+T59	Temperature 499 504	200˚C
+R13	Setting Arg1:E11 Arg2:T59	
+T60	Mention 583 585	it
+T61	Amount 604 613	100-200µL
+T62	Reagent 626 634	peroxide
+R14	Measure Arg1:T62 Arg2:T61	
+T63	Reagent 670 678	contents
+T64	Temperature 682 691	235-250˚C
+R15	Setting Arg1:E14 Arg2:T64	
+T65	Reagent 908 921	dried samples
+T66	Amount 925 929	2 mL
+T67	Modifier 935 951	freshly prepared
+T68	Reagent 963 967	HNO3
+T69	Reagent 969 972	HCl
+T70	Reagent 978 980	HF
+T71	Concentration 988 990	4M
+R16	Measure Arg1:T70 Arg2:T71	
+R17	Measure Arg1:T69 Arg2:T71	
+R18	Measure Arg1:T68 Arg2:T71	
+T72	Reagent 1000 1013	milli-Q water
+T73	Reagent 952 959	mixture
+R19	Meronym Arg1:T73 Arg2:T68	
+R20	Meronym Arg1:T73 Arg2:T69	
+R21	Meronym Arg1:T73 Arg2:T70	
+R22	Meronym Arg1:T73 Arg2:T72	
+R23	Mod-Link Arg1:T73 Arg2:T67	
+R24	Measure Arg1:T73 Arg2:T66	
+T74	Time 1024 1031	4 hours
+T75	Temperature 1035 1044	100-110˚C
+R25	Setting Arg1:E16 Arg2:T74	
+R26	Setting Arg1:E16 Arg2:T75	
+T76	Temperature 1064 1080	room temperature
+R27	Setting Arg1:E17 Arg2:T76	
+T77	Location 1050 1055	vials
+T78	Temperature 1099 1108	100-110˚C
+T79	Time 1110 1119	overnight
+R28	Setting Arg1:E19 Arg2:T79	
+R29	Setting Arg1:E19 Arg2:T78	
+T80	Amount 1126 1129	2mL
+T81	Reagent 1133 1149	freshly prepared
+T82	Concentration 1150 1153	50%
+T83	Reagent 1154 1158	HNO3
+T84	Concentration 1159 1162	15%
+T85	Reagent 1163 1167	H2O2
+R30	Measure Arg1:T85 Arg2:T84	
+R31	Measure Arg1:T83 Arg2:T82	
+R32	Meronym Arg1:T81 Arg2:T83	
+R33	Meronym Arg1:T81 Arg2:T85	
+R34	Measure Arg1:T81 Arg2:T80	
+T86	Location 1181 1186	vials
+T87	Temperature 1215 1224	100-110˚C
+T88	Device 1203 1211	hotplate
+T21	Action 1190 1193	dry
+E21	Action:T21 Acts-on:T86 Site:T88
+R35	Setting Arg1:E21 Arg2:T87	
+T89	Reagent 1237 1243	sample
+T90	Amount 1247 1257	200-500 µL
+T91	Concentration 1261 1264	50%
+T92	Reagent 1265 1269	HNO3
+T93	Concentration 1270 1273	15%
+T94	Reagent 1274 1278	H2O2
+R36	Measure Arg1:T94 Arg2:T93	
+R37	Measure Arg1:T92 Arg2:T91	
+T95	Measure-Type 1279 1284	(v/v)
+R38	Meronym Arg1:T95 Arg2:T94	
+R39	Meronym Arg1:T95 Arg2:T92	
+R40	Measure Arg1:T95 Arg2:T90	
+T96	Modifier 1290 1297	loosely
+T97	Temperature 1310 1315	110˚C
+R41	Setting Arg1:E24 Arg2:T97	
+R42	Mod-Link Arg1:E23 Arg2:T96	
+T98	Seal 1354 1359	vials
+T99	Temperature 1371 1376	135˚C
+R43	Setting Arg1:E26 Arg2:T99	
+T100	Amount 1383 1389	100 µL
+T101	Reagent 1390 1407	concentrated HNO3
+R44	Measure Arg1:T101 Arg2:T100	
+T102	Temperature 1420 1425	110˚C
+R45	Setting Arg1:E28 Arg2:T102	
+T103	Action 1437 1448	redissolved
+E32	Action:T103 Using:T106
+T104	Amount 1452 1455	1mL
+T105	Concentration 1459 1464	0.1 M
+T106	Reagent 1465 1469	HNO3
+R46	Measure Arg1:T106 Arg2:T105	
+R47	Measure Arg1:T106 Arg2:T104	
+T107	Reagent 1479 1485	sample
+T108	Generic-Measure 1489 1517	5% of original concentration
+T109	Concentration 1523 1528	0.1 M
+T110	Reagent 1529 1533	HNO3
+R48	Setting Arg1:E29 Arg2:T108	
+R49	Measure Arg1:T110 Arg2:T109	
+T111	Method 1586 1598	Conway et al
+T112	Method 6 15	digestion
+T113	Reagent 19 35	marine particles
+T114	Reagent 77 88	sample side
+T115	Action 109 115	folded
+E33	Action:T115 Acts-on:T114
+T116	Reagent 172 178	blanks
+T117	Action 337 340	mix
+E34	Action:T117 
+T118	Modifier 510 521	undissolved
+T119	Reagent 522 535	filter pieces
+T120	Modifier 539 552	semi-digested
+T121	Reagent 553 569	viscous material
+R50	Mod-Link Arg1:T119 Arg2:T118	
+R51	Mod-Link Arg1:T121 Arg2:T120	
+R52	Or Arg1:T119 Arg2:T121	
+T122	Action 638 644	digest
+E35	Action:T122 Acts-on:T123
+T123	Reagent 650 658	material
+T124	Reagent 705 718	small droplet
+T125	Reagent 722 735	sulfuric acid
+T126	Location 763 767	vial
+T127	Action 768 772	cool
+E36	Action:T127 Acts-on:T126
+T128	Action 777 784	suspend
+E37	Action:T128 Acts-on:T129 Site:T131
+T129	Reagent 785 793	contents
+T130	Amount 799 812	small aliquot
+T131	Reagent 816 829	Milli-Q water
+T132	Concentration 833 835	8N
+T133	Reagent 836 847	nitric acid
+T134	Action 852 858	re-dry
+E38	Action:T134 
+T135	Temperature 862 867	235˚C
+T136	Amount 878 885	droplet
+T137	Action 889 896	removed
+E39	Action:T137 
+T138	Measure-Type 1555 1568	concentration
+T139	Action 1610 1617	prepare
+E40	Action:T139 Acts-on:T140
+T140	Reagent 1618 1625	samples
+T141	Method 1630 1647	isotopic analysis
+R53	Meronym Arg1:T124 Arg2:T125	
+R54	Measure Arg1:T131 Arg2:T130	
+R55	Measure Arg1:T133 Arg2:T132	
+R56	Setting Arg1:E38 Arg2:T135	
+R57	Setting Arg1:E39 Arg2:T136	
+T142	Measure-Type 1169 1172	v/v

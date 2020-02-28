@@ -1,0 +1,68 @@
+T1	Action 45 49	Thaw
+E1	Action:T1 Acts-on:T12
+T2	Action 79 90	resuspended
+E2	Action:T2 Acts-on:T12
+T3	Action 112 118	Set up
+E3	Action:T3 Acts-on:T14 Site:T15
+T4	Action 173 176	mix
+E4	Action:T4 Acts-on:T17
+T5	Action 193 202	pipetting
+E5	Action:T5 Using:T37
+T6	Action 219 228	microfuge
+E6	Action:T6 Acts-on:T17
+T7	Action 266 274	incubate
+E7	Action:T7 Acts-on:T38
+T8	Action 370 378	incubate
+E8	Action:T8 Acts-on:T40 Acts-on2:T39
+T9	Action 430 445	Heat inactivate
+E9	Action:T9 
+T10	Action 478 483	Chill
+E10	Action:T10 Site:T33
+T11	Action 495 504	transform
+E11	Action:T11 Acts-on:T30 Product:T32
+T12	Reagent 54 74	T4 DNA Ligase Buffer
+T13	Temperature 94 110	room temperature
+T14	Reagent 123 131	reaction
+T15	Location 137 157	microcentrifuge tube
+T16	Reagent 161 164	ice
+T17	Reagent 181 189	reaction
+T18	Modifier 229 236	briefly
+T19	Temperature 278 282	16°C
+T20	Time 283 292	overnight
+T21	Temperature 296 312	room temperature
+T22	Time 317 327	10 minutes
+T23	Temperature 382 386	16°C
+T24	Time 387 396	overnight
+T25	Temperature 400 416	room temperature
+T26	Time 421 428	2 hours
+T27	Temperature 449 461	65 degrees C
+T28	Time 466 476	10 minutes
+T29	Amount 505 511	1-5 μl
+T30	Reagent 519 527	reaction
+T31	Amount 533 538	50 μl
+T32	Reagent 539 554	competent cells
+R1	Setting Arg1:E2 Arg2:T13	
+R2	Meronym Arg1:T15 Arg2:T16	
+R3	Mod-Link Arg1:E6 Arg2:T18	
+R4	Setting Arg1:E7 Arg2:T19	
+R5	Setting Arg1:E7 Arg2:T20	
+R6	Or Arg1:T20 Arg2:T22	
+R7	Or Arg1:T19 Arg2:T21	
+R8	Setting Arg1:E8 Arg2:T23	
+R9	Setting Arg1:E8 Arg2:T24	
+R10	Or Arg1:T23 Arg2:T25	
+R11	Or Arg1:T24 Arg2:T26	
+R12	Setting Arg1:E9 Arg2:T27	
+R13	Setting Arg1:E9 Arg2:T28	
+T33	Location 487 490	ice
+R14	Measure Arg1:T30 Arg2:T29	
+R15	Measure Arg1:T32 Arg2:T31	
+T34	Method 0 8	Ligation
+T35	Reagent 23 36	T4 DNA Ligase
+T36	Modifier 166 172	Gently
+R16	Mod-Link Arg1:E4 Arg2:T36	
+T37	Method 203 214	up and down
+T38	Reagent 242 264	cohesive (sticky) ends
+T39	Reagent 333 343	blunt ends
+T40	Reagent 347 368	single base overhangs
+R17	Or Arg1:T40 Arg2:T39	

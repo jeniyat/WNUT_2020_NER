@@ -1,0 +1,240 @@
+T1	Action 184 189	Weigh
+E1	Action:T1 Acts-on:T36
+T3	Action 273 278	mince
+E3	Action:T3 Site:T38 Using:T41 Acts-on:T42
+T4	Action 314 321	Suspend
+E4	Action:T4 Acts-on:T44 Using2:T45 Site:T49
+T5	Action 427 435	Incubate
+E5	Action:T5 Site:T50
+T6	Action 524 530	Remove
+E6	Action:T6 Acts-on:T54 Using:T56
+T8	Action 565 568	add
+E8	Action:T8 Acts-on:T58
+T9	Action 633 641	Incubate
+E9	Action:T9 Site:T61
+T10	Action 665 668	Add
+E10	Action:T10 Acts-on:T63 Site:T65
+T11	Action 722 725	mix
+E11	Action:T11 Acts-on:T63
+T13	Action 797 803	Remove
+E13	Action:T13 Acts-on:T70 Using:T71
+T14	Action 835 839	Wash
+E14	Action:T14 Acts-on:T72 Using:T74
+T16	Action 969 975	Remove
+E16	Action:T16 Acts-on:T78 Using:T79
+T17	Action 1010 1013	add
+E17	Action:T17 Acts-on:T81
+T18	Action 1070 1078	Transfer
+E18	Action:T18 Acts-on:T84 Site:T85 Using:T88
+T19	Action 1169 1181	disaggregate
+E19	Action:T19 Acts-on:T89
+T20	Action 1295 1302	release
+E20	Action:T20 Using:T94 Acts-on:T96
+T21	Action 1387 1392	Stand
+E21	Action:T21 
+T22	Action 1415 1423	Transfer
+E22	Action:T22 Acts-on:T100 Site:T101
+T23	Action 1464 1469	leave
+E23	Action:T23 Acts-on:T104 Site:T105
+T24	Action 1539 1549	Centrifuge
+E24	Action:T24 Acts-on:T106
+T25	Action 1607 1615	Transfer
+E25	Action:T25 Acts-on:T111 Site:T113
+T26	Action 1647 1657	Centrifuge
+E26	Action:T26 
+T27	Action 1689 1697	Transfer
+E27	Action:T27 Acts-on:T116 Site:T118
+T28	Action 1783 1790	Suspend
+E28	Action:T28 Acts-on:T119 Site:T120
+T31	Action 1989 1995	stored
+E31	Action:T31 Acts-on:T125 Site:T126
+T29	Action 90 93	Use
+E29	Action:T29 Acts-on:T33
+T12	Action 727 736	Spin down
+E12	Action:T12 Acts-on:T66 Site:T69
+T32	Modifier 96 101	fresh
+T33	Reagent 102 115	tissue sample
+T34	Location 164 167	ice
+R1	Mod-Link Arg1:T33 Arg2:T32	
+T35	Amount 204 212	50‐100mg
+T36	Reagent 213 219	tissue
+T37	Modifier 190 203	approximately
+R3	Measure Arg1:T36 Arg2:T35	
+R4	Mod-Link Arg1:T35 Arg2:T37	
+T38	Location 239 244	plate
+T39	Modifier 226 232	cooled
+T40	Modifier 233 238	glass
+R5	Mod-Link Arg1:T38 Arg2:T40	
+R6	Mod-Link Arg1:T38 Arg2:T39	
+T41	Device 264 271	scalpel
+T42	Reagent 283 289	tissue
+T43	Modifier 295 312	very small pieces
+R7	Mod-Link Arg1:T42 Arg2:T43	
+T44	Reagent 326 332	sample
+T45	Reagent 351 371	1X SubCell Buffer‐II
+T46	Amount 338 347	8 volumes
+T47	Amount 383 392	0.25mg/ml
+T48	Reagent 393 400	trypsin
+R8	Measure Arg1:T45 Arg2:T46	
+R9	Measure Arg1:T48 Arg2:T47	
+T50	Location 439 442	ice
+T51	Time 447 456	3 minutes
+T52	Reagent 480 486	tissue
+R10	Setting Arg1:E5 Arg2:T51	
+T7	Action 466 475	spin down
+E7	Action:T7 Acts-on:T52 Site:T55
+T55	Device 512 522	centrifuge
+T53	Time 493 504	few seconds
+R11	Setting Arg1:E7 Arg2:T53	
+T54	Reagent 535 546	supernatant
+T56	Method 550 560	aspiration
+T57	Amount 569 578	8 volumes
+T58	Reagent 582 602	1X SubCell Buffer‐II
+T59	Amount 614 623	0.25mg/ml
+T60	Reagent 624 631	Trypsin
+R12	Measure Arg1:T60 Arg2:T59	
+R13	Measure Arg1:T58 Arg2:T57	
+R14	Meronym Arg1:T60 Arg2:T58	
+T61	Location 645 648	ice
+T62	Time 653 663	20 minutes
+R15	Setting Arg1:E9 Arg2:T62	
+T63	Reagent 669 681	BSA Solution
+T64	Concentration 710 717	10mg/ml
+T65	Reagent 687 706	final concentration
+R16	Measure Arg1:T65 Arg2:T64	
+T66	Reagent 741 747	tissue
+T67	Speed 751 760	1,000 x g
+T68	Time 765 777	5‐10 seconds
+T69	Device 785 795	centrifuge
+R17	Setting Arg1:E12 Arg2:T67	
+R18	Setting Arg1:E12 Arg2:T68	
+T70	Reagent 808 819	supernatant
+T71	Method 823 833	aspiration
+T72	Reagent 844 850	pellet
+T73	Amount 856 865	8 volumes
+T74	Reagent 869 889	1X SubCell Buffer‐II
+T15	Action 911 920	spin down
+E15	Action:T15 Acts-on:T75 Site:T77
+T75	Reagent 925 931	tissue
+T76	Time 938 949	few seconds
+T77	Device 957 967	centrifuge
+R19	Measure Arg1:T74 Arg2:T73	
+R20	Setting Arg1:E15 Arg2:T76	
+T78	Reagent 980 991	supernatant
+T79	Method 995 1005	aspiration
+T80	Amount 1014 1023	8 volumes
+T81	Reagent 1031 1052	1X SubCell Buffer‐ II
+R21	Measure Arg1:T81 Arg2:T80	
+T82	Modifier 890 905	without Trypsin
+R22	Mod-Link Arg1:T74 Arg2:T82	
+T83	Modifier 1053 1068	without Trypsin
+R23	Mod-Link Arg1:T81 Arg2:T83	
+T84	Reagent 1083 1093	suspension
+T85	Location 1109 1134	Dounce tissue homogenizer
+T86	Modifier 1100 1108	ice‐cold
+T87	Modifier 1147 1160	loose‐fitting
+T88	Device 1161 1167	pestle
+T89	Reagent 1186 1192	tissue
+T91	Numerical 1198 1202	5‐15
+T90	Action 1203 1210	strokes
+E32	Action:T90 Count:T91
+T92	Reagent 1224 1237	tissue sample
+T93	Modifier 1241 1263	completely homogenized
+R24	Mod-Link Arg1:T85 Arg2:T86	
+R25	Mod-Link Arg1:T88 Arg2:T87	
+R26	Mod-Link Arg1:T92 Arg2:T93	
+T94	Device 1287 1293	pestle
+T95	Modifier 1273 1286	tight‐fitting
+T96	Reagent 1307 1313	nuclei
+T97	Action 1324 1331	strokes
+E33	Action:T97 Count:T98
+T98	Numerical 1319 1323	8‐10
+R27	Mod-Link Arg1:E20 Arg2:T95	
+T30	Location 1396 1399	ice
+T99	Time 1404 1413	2 minutes
+T100	Reagent 1428 1438	homogenate
+T101	Location 1444 1459	centrifuge tube
+T102	Modifier 1470 1475	large
+T103	Size 1476 1482	chunks
+T104	Reagent 1486 1502	tissue fragments
+T105	Location 1510 1521	homogenizer
+R28	Mod-Link Arg1:T103 Arg2:T102	
+R29	Measure Arg1:T104 Arg2:T103	
+T106	Reagent 1554 1560	lysate
+T107	Speed 1564 1570	700x g
+T108	Time 1575 1584	5 minutes
+T109	Action 1588 1594	pellet
+E30	Action:T109 
+T110	Reagent 1599 1605	nuclei
+R30	Setting Arg1:E24 Arg2:T107	
+R31	Setting Arg1:E24 Arg2:T108	
+T111	Reagent 1620 1631	supernatant
+T112	Modifier 1637 1640	new
+T113	Location 1641 1645	tube
+R32	Mod-Link Arg1:T113 Arg2:T112	
+T114	Speed 1664 1672	12,000xg
+T115	Time 1677 1687	10 minutes
+R33	Setting Arg1:E26 Arg2:T114	
+R34	Setting Arg1:E26 Arg2:T115	
+T116	Reagent 1702 1713	supernatant
+T117	Modifier 1739 1742	new
+T118	Location 1743 1747	tube
+R35	Mod-Link Arg1:T118 Arg2:T117	
+T119	Reagent 1795 1815	mitochondrial pellet
+T120	Reagent 1827 1854	Mitochondria Storage Buffer
+T121	Modifier 1819 1826	working
+T122	Action 1910 1914	keep
+E34	Action:T122 Acts-on:T123 Site:T124
+T123	Reagent 1919 1929	suspension
+T124	Location 1933 1936	ice
+T125	Reagent 1971 1981	suspension
+T126	Location 1999 2002	ice
+T127	Time 2013 2021	48 hours
+T128	Modifier 2007 2012	up to
+R36	Mod-Link Arg1:T127 Arg2:T128	
+R37	Mod-Link Arg1:T120 Arg2:T121	
+T129	Method 0 25	Subcellular Fractionation
+T130	Reagent 43 68	Heart Muscle Hard Tissues
+T131	Reagent 31 39	Skeletal
+R38	Or Arg1:T131 Arg2:T130	
+T132	Device 70 88	FOCUS™ SubCell Kit
+T133	Time 133 141	one hour
+T134	Modifier 126 132	within
+T135	Action 117 125	obtained
+E35	Action:T135 Acts-on:T33
+R39	Setting Arg1:E35 Arg2:T133	
+R40	Mod-Link Arg1:T133 Arg2:T134	
+T136	Action 156 160	kept
+E36	Action:T136 Site:T34 Acts-on:T33
+T2	Action 176 182	freeze
+E2	Action:T2 
+T49	Location 410 425	centrifuge tube
+T137	Amount 406 409	2ml
+R2	Measure Arg1:T49 Arg2:T137	
+R41	Meronym Arg1:T48 Arg2:T45	
+T138	Action 1340 1345	twist
+E37	Action:T138 Acts-on:T139
+T139	Device 1350 1356	pestle
+T140	Reagent 1360 1366	nuclei
+T141	Method 1367 1375	shearing
+T142	Reagent 1753 1759	pellet
+T143	Reagent 1769 1781	mitochondria
+R42	Meronym Arg1:T143 Arg2:T142	
+T144	Modifier 1856 1869	approximately
+T145	Amount 1870 1874	50μl
+T146	Reagent 1879 1885	pellet
+T147	Modifier 1891 1892	~
+T148	Amount 1892 1897	100mg
+T149	Reagent 1898 1904	tissue
+R43	Mod-Link Arg1:T145 Arg2:T144	
+R44	Measure Arg1:T146 Arg2:T145	
+R45	Measure Arg1:T149 Arg2:T148	
+R46	Mod-Link Arg1:T148 Arg2:T147	
+T150	Action 1944 1965	downstream processing
+E38	Action:T150 
+T151	Method 2023 2033	Enrichment
+T152	Reagent 2043 2058	cell organelles
+T153	Reagent 2069 2093	mitochondria supernatant
+T154	Method 2125 2137	fractionated
+T155	Method 2157 2165	gradient
+T156	Method 2170 2198	differential centrifugations

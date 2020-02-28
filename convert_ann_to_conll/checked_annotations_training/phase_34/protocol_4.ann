@@ -1,0 +1,73 @@
+T1	Action 45 49	Thaw
+E1	Action:T1 Acts-on:T2
+T2	Reagent 54 73	T4 DNA Ligase Buffe
+T3	Action 79 90	resuspended
+E2	Action:T3 
+T4	Action 112 118	Set up
+E3	Action:T4 Acts-on:T5 Site:T6
+T5	Reagent 123 131	reaction
+T6	Location 137 157	microcentrifuge tube
+T7	Location 161 164	ice
+#1	AnnotatorNotes E3	location on location ??
+T8	Action 173 176	mix
+E4	Action:T8 Acts-on:T9
+T9	Reagent 181 189	reaction
+#2	AnnotatorNotes E4	verb can have a modifier, here "Gently" . some kind of adjective
+T10	Method 203 214	up and down
+T12	Modifier 229 236	briefly
+T11	Action 219 228	microfuge
+E5	Action:T11 
+T13	Action 266 274	incubate
+E6	Action:T13 Product:T16
+T14	Time 283 292	overnight
+T15	Time 317 327	10 minutes
+T16	Reagent 242 264	cohesive (sticky) ends
+T17	Action 370 378	incubate
+E7	Action:T17 Product:T20
+T18	Time 387 396	overnight
+T19	Time 421 428	2 hours
+T20	Reagent 333 343	blunt ends
+#3	AnnotatorNotes E6	how to deal with 'or'
+#4	AnnotatorNotes E7	how to deal with 'or' for creation as well as for description of the event
+T21	Action 430 434	Heat
+E8	Action:T21 Acts-on:T22
+T22	Reagent 435 445	inactivate
+T23	Time 466 476	10 minutes
+T24	Action 478 483	Chill
+E9	Action:T24 Site:T25
+T25	Location 487 490	ice
+T26	Action 495 504	transform
+E10	Action:T26 Acts-on:T28 Product:T30
+T27	Amount 505 511	1-5 μl
+T28	Reagent 519 527	reaction
+T29	Amount 533 538	50 μl
+T30	Reagent 539 554	competent cells
+R4	Setting Arg1:E6 Arg2:T14	
+R5	Setting Arg1:E8 Arg2:T23	
+R1	Measure Arg1:T28 Arg2:T27	
+R2	Measure Arg1:T30 Arg2:T29	
+R3	Mod-Link Arg1:E5 Arg2:T12	
+T31	Modifier 166 172	Gently
+R6	Mod-Link Arg1:E4 Arg2:T31	
+R7	Meronym Arg1:T6 Arg2:T7	
+T32	Temperature 278 282	16°C
+T33	Temperature 296 312	room temperature
+R8	Setting Arg1:E6 Arg2:T32	
+R9	Or Arg1:T32 Arg2:T33	
+R10	Or Arg1:T14 Arg2:T15	
+T34	Temperature 382 386	16°C
+T35	Temperature 400 416	room temperature
+R11	Setting Arg1:E7 Arg2:T34	
+R12	Setting Arg1:E7 Arg2:T18	
+R13	Or Arg1:T34 Arg2:T35	
+R14	Or Arg1:T18 Arg2:T19	
+T36	Temperature 449 461	65 degrees C
+R15	Setting Arg1:E8 Arg2:T36	
+T37	Temperature 94 110	room temperature
+R16	Setting Arg1:E2 Arg2:T37	
+T38	Reagent 347 368	single base overhangs
+R17	Or Arg1:T20 Arg2:T38	
+T39	Action 193 202	pipetting
+E11	Action:T39 Using:T10
+T40	Method 0 8	Ligation
+T41	Reagent 23 36	T4 DNA Ligase

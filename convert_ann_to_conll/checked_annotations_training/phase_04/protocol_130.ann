@@ -1,0 +1,125 @@
+T1	Action 28 32	Make
+E1	Action:T1 Acts-on:T18 Using:T19
+T2	Action 117 120	Add
+E2	Action:T2 Acts-on:T24 Site:T28
+T3	Action 173 176	add
+E3	Action:T3 Acts-on:T30 Acts-on2:T31 Site:T32
+T4	Action 230 238	Incubate
+E4	Action:T4 Acts-on:T33 Site:T34
+T5	Action 267 274	Prepare
+E5	Action:T5 Acts-on:T37 Using:T39
+T6	Action 293 296	use
+E6	Action:T6 Acts-on:T39
+T8	Action 345 351	Filter
+E8	Action:T8 Acts-on:T40 Site:T41 Using:T42
+T9	Action 387 392	Rinse
+E9	Action:T9 Acts-on:T43 Site:T44
+T10	Action 436 440	blot
+E10	Action:T10 Acts-on:T45
+T11	Action 466 472	Remove
+E11	Action:T11 Acts-on:T47
+T12	Action 486 491	place
+E12	Action:T12 Acts-on:T48 Site:T50
+T13	Action 526 531	Pipet
+E13	Action:T13 Acts-on:T52 Site:T54
+T14	Action 612 618	Invert
+E14	Action:T14 Site:T56
+T16	Action 693 698	Place
+E16	Action:T16 Acts-on:T59
+T17	Action 739 743	Read
+E17	Action:T17 Acts-on:T61 Using2:T65 Using:T62
+T18	Reagent 33 41	dilution
+T19	Reagent 45 55	virus prep
+T20	Modifier 59 65	0.02µm
+T21	Location 75 83	seawater
+T22	Modifier 66 74	filtered
+R1	Mod-Link Arg1:T21 Arg2:T22	
+T23	Modifier 121 128	diluted
+T24	Reagent 129 134	virus
+T25	Amount 138 142	1 ml
+R2	Mod-Link Arg1:T21 Arg2:T20	
+T26	Size 143 150	0.02 µm
+T27	Modifier 151 159	filtered
+T28	Reagent 160 168	seawater
+T29	Amount 177 181	1 µl
+T30	Reagent 182 192	SYBR green
+T31	Reagent 196 200	gold
+T32	Reagent 220 228	solution
+R3	Mod-Link Arg1:T24 Arg2:T23	
+R4	Mod-Link Arg1:T28 Arg2:T27	
+R6	Measure Arg1:T28 Arg2:T25	
+R7	Measure Arg1:T30 Arg2:T29	
+R8	Measure Arg1:T31 Arg2:T29	
+T33	Reagent 239 241	RT
+T34	Location 250 254	dark
+T35	Time 259 265	15 min
+R9	Setting Arg1:E4 Arg2:T35	
+T36	Size 275 279	25mm
+T37	Reagent 280 291	SYBR towers
+T38	Size 297 303	0.02µm
+T39	Reagent 304 312	Anodiscs
+R10	Measure Arg1:T37 Arg2:T36	
+R11	Measure Arg1:T39 Arg2:T38	
+T40	Reagent 352 358	sample
+T41	Location 364 372	membrane
+T42	Device 378 384	vacuum
+T43	Reagent 393 398	tower
+T44	Location 402 412	1L Q-water
+T45	Location 446 457	paper towel
+T46	Action 461 464	dry
+E18	Action:T46 
+T47	Reagent 473 481	membrane
+T48	Reagent 492 496	cell
+T49	Modifier 497 504	side up
+T50	Location 508 524	microscope slide
+R12	Mod-Link Arg1:T48 Arg2:T49	
+T51	Amount 532 536	32µl
+T52	Reagent 537 558	0.1% phenylenediamine
+T53	Size 589 593	22mm
+T54	Location 594 610	square coverslip
+R14	Measure Arg1:T52 Arg2:T51	
+T56	Location 634 650	microscope slide
+T55	Location 619 630	over filter
+R15	Meronym Arg1:T55 Arg2:T56	
+T15	Action 655 665	press down
+E15	Action:T15 
+T57	Reagent 676 691	mounting medium
+T58	Action 669 675	spread
+E19	Action:T58 Acts-on:T57
+T59	Device 699 704	slide
+T60	Temperature 708 713	–20°C
+R16	Setting Arg1:E16 Arg2:T60	
+T61	Device 744 750	slides
+T64	Modifier 790 798	inverted
+T65	Device 799 821	fluorescent microscope
+R17	Mod-Link Arg1:T65 Arg2:T64	
+T62	Reagent 762 775	oil immersion
+T63	Action 0 10	SYBR Green
+E20	Action:T63 
+T66	Action 14 27	Gold Staining
+E21	Action:T66 
+R18	Or Arg1:E21 Arg2:E20	
+T67	Generic-Measure 85 92	100 kDa
+T68	Reagent 335 343	membrane
+T7	Action 329 334	break
+E7	Action:T7 Acts-on:T68
+T69	Reagent 424 431	samples
+T70	Reagent 568 571	PBS
+T71	Concentration 572 575	50%
+T72	Reagent 576 584	glycerol
+R19	Measure Arg1:T72 Arg2:T71	
+R20	Or Arg1:T72 Arg2:T70	
+R13	Measure Arg1:T54 Arg2:T53	
+T73	Action 717 724	enhance
+E22	Action:T73 
+T74	Generic-Measure 725 737	fluorescence
+R21	Setting Arg1:E22 Arg2:T74	
+T75	Reagent 93 101	permeate
+R22	Measure Arg1:T75 Arg2:T67	
+R5	Measure Arg1:T28 Arg2:T26	
+R23	Or Arg1:T30 Arg2:T31	
+T76	Concentration 202 209	10,000x
+T77	Reagent 210 215	stock
+R24	Measure Arg1:T77 Arg2:T76	
+T78	Concentration 757 761	100x
+R25	Measure Arg1:T62 Arg2:T78	

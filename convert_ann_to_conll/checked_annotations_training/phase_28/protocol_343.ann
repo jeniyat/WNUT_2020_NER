@@ -1,0 +1,65 @@
+T1	Action 54 59	Rinse
+E1	Action:T1 Acts-on:T10 Using:T15 Using2:T17 Count:T16 Count2:T18
+T2	Action 194 198	Fill
+E2	Action:T2 Acts-on:T19 Using:T21
+T3	Action 354 358	fill
+E3	Action:T3 Acts-on:T29 Using:T30
+T4	Action 235 238	add
+E4	Action:T4 Acts-on:T23 Site:T26
+T5	Action 406 412	invert
+E5	Action:T5 
+T6	Action 416 419	mix
+E6	Action:T6 Acts-on:T29
+T7	Action 421 425	Save
+E7	Action:T7 Acts-on:T32 Site:T35
+T8	Action 481 484	run
+E8	Action:T8 Using:T36 Acts-on:T32
+T9	Amount 62 68	100 mL
+T10	Location 69 85	volumetric flask
+T11	Action 102 109	cleaned
+E9	Action:T11 Using:T13 Acts-on:T10
+T12	Concentration 115 118	10%
+T13	Reagent 119 145	hydrocholoric acid cabinet
+T14	pH 152 156	pH 2
+T15	Reagent 157 164	Milli-Q
+T16	Numerical 165 166	3
+T17	Reagent 177 184	Milli-Q
+T18	Numerical 185 186	3
+R1	Measure Arg1:T10 Arg2:T9	
+R2	Measure Arg1:T13 Arg2:T12	
+R3	Measure Arg1:T15 Arg2:T14	
+T19	Location 203 208	flask
+T20	Amount 209 217	part way
+T21	Reagent 223 230	Milli-Q
+T22	Amount 239 246	29.5 μl
+T23	Reagent 254 272	cobalt AA standard
+T24	Reagent 279 282	L-1
+T25	Amount 274 278	1 mg
+T26	Reagent 291 298	Milli-Q
+R5	Measure Arg1:T21 Arg2:T20	
+R6	Measure Arg1:T23 Arg2:T22	
+R7	Measure Arg1:T24 Arg2:T25	
+R8	Meronym Arg1:T24 Arg2:T23	
+T27	Modifier 344 353	Carefully
+T28	Amount 365 371	100 mL
+T29	Reagent 372 379	Milli-Q
+T30	Device 388 401	squirt bottle
+R9	Mod-Link Arg1:E3 Arg2:T27	
+R10	Measure Arg1:T29 Arg2:T28	
+T31	Amount 428 433	small
+T32	Reagent 434 441	aliquot
+T33	Amount 447 451	5 mL
+T34	Modifier 452 457	clean
+T35	Location 458 464	bottle
+T36	Device 498 504	ICP-MS
+R11	Measure Arg1:T32 Arg2:T31	
+R12	Mod-Link Arg1:T35 Arg2:T34	
+R13	Measure Arg1:T35 Arg2:T33	
+T37	Reagent 0 23	Cobalt standard reagent
+T38	Modifier 28 37	dissolved
+T39	Reagent 38 44	cobalt
+T40	Method 45 53	analyses
+R14	Mod-Link Arg1:T39 Arg2:T38	
+T41	Measure-Type 310 323	concentration
+T42	Concentration 332 342	5 nmol L-1
+T43	Modifier 304 309	final

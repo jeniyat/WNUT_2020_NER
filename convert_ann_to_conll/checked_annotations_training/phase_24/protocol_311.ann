@@ -1,0 +1,103 @@
+T1	Action 30 40	Centrifuge
+E1	Action:T1 Acts-on:T13 Using:T14
+T2	Action 163 167	thaw
+E2	Action:T2 Acts-on:T18
+T3	Action 184 191	suspend
+E3	Action:T3 Acts-on:T18 Using:T20
+T4	Action 221 231	Centrifuge
+E4	Action:T4 Acts-on:T22 Using:T23
+T5	Action 308 314	Decant
+E5	Action:T5 Acts-on:T28
+T6	Action 333 343	Centrifuge
+E6	Action:T6 Acts-on:T29 Using:T30
+T7	Action 420 426	Repeat
+E7	Action:T7 Count:T37
+T8	Action 509 516	removed
+E8	Action:T8 Acts-on:T40 Site:T38
+T9	Action 533 538	Store
+E9	Action:T9 Acts-on:T42 Site:T45
+T10	Action 586 589	Add
+E10	Action:T10 Acts-on:T48 Site:T49
+T11	Action 644 653	resuspend
+E11	Action:T11 Acts-on:T50
+T12	Action 676 682	Decant
+E12	Action:T12 Acts-on:T52
+T13	Reagent 45 60	NC64A chlorella
+T14	Device 68 86	Sorvall centrifuge
+T15	Speed 90 99	5,000 rpm
+T16	Time 101 106	5 min
+T17	Temperature 108 111	4°C
+R1	Setting Arg1:T14 Arg2:T15	
+R2	Setting Arg1:T14 Arg2:T16	
+R3	Setting Arg1:T14 Arg2:T17	
+T18	Reagent 172 179	pellets
+T19	Concentration 197 202	50 mM
+T20	Reagent 203 211	Tris-HCl
+T21	pH 213 219	pH 7.8
+R4	Measure Arg1:T20 Arg2:T19	
+R5	Measure Arg1:T20 Arg2:T21	
+T22	Reagent 236 241	cells
+T23	Device 249 267	Sorvall SS34 rotor
+T24	Device 271 281	HB-4 rotor
+T25	Speed 285 294	5,000 rpm
+T26	Time 296 301	5 min
+T27	Temperature 303 306	4°C
+R6	Or Arg1:T23 Arg2:T24	
+R7	Setting Arg1:T23 Arg2:T25	
+R8	Setting Arg1:T23 Arg2:T26	
+R9	Setting Arg1:T23 Arg2:T27	
+R10	Setting Arg1:T24 Arg2:T25	
+R11	Setting Arg1:T24 Arg2:T26	
+R12	Setting Arg1:T24 Arg2:T27	
+T28	Reagent 319 331	supernatants
+T29	Reagent 348 353	cells
+T30	Device 361 379	Sorvall SS34 rotor
+T31	Device 383 393	HB-4 rotor
+T32	Speed 397 406	5,000 rpm
+T33	Time 408 413	5 min
+T34	Temperature 415 418	4°C
+T35	Concentration 431 434	70%
+T36	Reagent 435 443	methanol
+T37	Numerical 451 454	5-6
+T38	Reagent 526 531	cells
+T39	Amount 474 488	desired amount
+T40	Reagent 492 499	pigment
+R13	Measure Arg1:T40 Arg2:T39	
+R14	Measure Arg1:T36 Arg2:T35	
+T41	Action 444 450	washes
+E13	Action:T41 Acts-on:T36
+T42	Reagent 543 561	chlorella “ghosts”
+T43	Temperature 565 568	4°C
+T44	Concentration 572 575	70%
+T45	Reagent 576 584	methanol
+R15	Measure Arg1:T45 Arg2:T44	
+R16	Setting Arg1:E9 Arg2:T43	
+T46	Amount 590 598	10-15 mL
+T47	Concentration 602 605	70%
+T48	Reagent 606 614	methanol
+T49	Reagent 622 639	chlorella pellets
+T50	Reagent 658 663	cells
+T51	Modifier 664 674	completely
+R17	Measure Arg1:T48 Arg2:T47	
+T52	Reagent 687 699	supernatants
+R18	Or Arg1:T30 Arg2:T31	
+R19	Setting Arg1:T30 Arg2:T32	
+R20	Setting Arg1:T30 Arg2:T33	
+R21	Setting Arg1:T30 Arg2:T34	
+R22	Setting Arg1:T31 Arg2:T32	
+R23	Setting Arg1:T31 Arg2:T33	
+R24	Setting Arg1:T31 Arg2:T34	
+T53	Method 0 11	Preparation
+T54	Reagent 15 29	NC64A “Ghosts”
+T55	Modifier 115 120	fresh
+T56	Reagent 121 126	cells
+R25	Mod-Link Arg1:T56 Arg2:T55	
+T57	Action 131 135	used
+E14	Action:T57 Acts-on:T56
+T58	Modifier 140 146	frozen
+T59	Reagent 147 152	cells
+T60	Action 157 161	used
+E15	Action:T60 Acts-on:T59
+R26	Mod-Link Arg1:T59 Arg2:T58	
+R27	Mod-Link Arg1:E11 Arg2:T51	
+R28	Measure Arg1:T48 Arg2:T46	

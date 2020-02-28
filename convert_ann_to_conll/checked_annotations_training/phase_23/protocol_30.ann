@@ -1,0 +1,58 @@
+T1	Action 39 44	Weigh
+E1	Action:T1 Acts-on:T3
+T2	Amount 45 51	5.73 g
+T3	Reagent 55 59	TCEP
+T4	Action 61 64	Add
+E2	Action:T4 Acts-on:T7 Site:T8
+T5	Amount 65 70	35 ml
+T6	Modifier 74 78	cold
+T7	Reagent 79 108	molecular biology grade water
+R2	Mod-Link Arg1:T7 Arg2:T6
+T8	Location 116 120	vial
+T9	Action 126 134	dissolve
+E3	Action:T9 Acts-on:T10
+T10	Reagent 139 143	TCEP
+T11	Action 216 221	Bring
+E4	Action:T11 Acts-on:T12 Using:T16
+T12	Reagent 226 234	solution
+T15	Concentration 250 254	10 N
+T16	Reagent 255 259	NaOH
+T17	Reagent 268 271	KOH
+T18	Concentration 263 267	10 N
+T19	Action 273 278	Bring
+E5	Action:T19 Acts-on:T20 Using:T22
+T20	Reagent 293 301	solution
+T21	Amount 305 310	40 ml
+T22	Reagent 340 345	water
+T23	Action 347 354	Aliquot
+E6	Action:T23 Site:T25 Measure-Type-Link:T34
+T24	Amount 360 364	1 ml
+T25	Location 376 389	freezer tubes
+T26	Action 394 399	store
+E7	Action:T26 Acts-on:T25
+T27	Temperature 403 408	-20°C
+R7	Setting Arg1:E7 Arg2:T27
+R1	Measure Arg1:T3 Arg2:T2	
+R3	Measure Arg1:T7 Arg2:T5	
+R5	Measure Arg1:T16 Arg2:T15	
+R6	Measure Arg1:T17 Arg2:T18	
+R9	Setting Arg1:E5 Arg2:T21	
+R8	Measure Arg1:T25 Arg2:T24	
+T13	pH 238 244	pH 7.0
+R4	Setting Arg1:E4 Arg2:T13	
+R10	Or Arg1:T16 Arg2:T17	
+T14	Action 7 11	Make
+E8	Action:T14 Acts-on:T29
+T28	Concentration 14 18	0.5M
+T29	Reagent 19 38	TCEP Stock Solution
+R11	Measure Arg1:T29 Arg2:T28	
+T30	Reagent 160 168	solution
+T31	Modifier 177 183	acidic
+T32	Modifier 193 204	approximate
+T33	pH 205 214	pH of 2.5
+R12	Mod-Link Arg1:T30 Arg2:T31	
+R13	Mod-Link Arg1:T33 Arg2:T32	
+R14	Measure Arg1:T30 Arg2:T33	
+T34	Measure-Type 365 372	volumes
+T35	Modifier 316 339	molecular biology grade
+R15	Mod-Link Arg1:T22 Arg2:T35	

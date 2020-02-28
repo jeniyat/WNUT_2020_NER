@@ -1,0 +1,297 @@
+T1	Action 168 172	warm
+E1	Action:T1 
+T2	Action 139 146	aliquot
+E2	Action:T2 Acts-on:T53 Site:T51
+T3	Action 182 187	Chill
+E3	Action:T3 Acts-on:T55
+T4	Action 244 251	aliquot
+E4	Action:T4 Acts-on:T60 Site:T58
+T5	Action 289 294	chill
+E5	Action:T5 
+T6	Action 305 312	Prepare
+E6	Action:T6 Product:T63 Using:T64
+T7	Action 506 514	Incubate
+E7	Action:T7 Acts-on:T65 Using:T67
+T8	Action 593 596	Fix
+E8	Action:T8 Acts-on:T71
+T9	Action 638 644	adding
+E9	Action:T9 Acts-on:T75 Site:T71
+T10	Action 699 706	pipette
+E10	Action:T10 
+T11	Action 734 742	Incubate
+E11	Action:T11 Acts-on:T80
+T12	Action 726 732	mixing
+E12	Action:T12 
+T13	Action 795 800	fixed
+E13	Action:T13 Acts-on:T80
+T14	Action 802 812	Centrifuge
+E14	Action:T14 Acts-on:T82
+T15	Action 865 871	decant
+E15	Action:T15 Acts-on:T86
+T16	Action 885 891	vortex
+E16	Action:T16 
+T17	Action 895 904	resuspend
+E17	Action:T17 Acts-on:T87
+T18	Action 918 921	Add
+E18	Action:T18 Acts-on:T89
+T19	Action 957 961	wash
+E19	Action:T19 Acts-on:T90 Site:T92
+T20	Action 1073 1083	Centrifuge
+E20	Action:T20 
+T21	Action 1133 1139	decant
+E21	Action:T21 Acts-on:T96
+T22	Action 1153 1159	Repeat
+E22	Action:T22 Count:T97
+T23	Action 1195 1202	pipette
+E23	Action:T23 Acts-on:T100
+T24	Action 1234 1243	resuspend
+E24	Action:T24 Acts-on:T102
+T25	Action 1274 1286	permeabilize
+E25	Action:T25 Acts-on:T103
+T26	Action 1296 1302	adding
+E26	Action:T26 Acts-on:T105
+T27	Action 1372 1385	permeabilized
+E27	Action:T27 Using:T178 Acts-on:T175
+T28	Action 1436 1444	Incubate
+E28	Action:T28 
+T29	Action 1513 1523	Centrifuge
+E29	Action:T29 Acts-on:T111
+T30	Action 1577 1583	decant
+E30	Action:T30 Acts-on:T115
+T31	Action 1597 1603	vortex
+E31	Action:T31 Commands:E32
+T32	Action 1607 1616	resuspend
+E32	Action:T32 Acts-on:T116
+T33	Action 1630 1633	Add
+E33	Action:T33 Acts-on:T118
+T34	Action 1669 1673	wash
+E34	Action:T34 Acts-on:T119
+T35	Action 1685 1695	centrifuge
+E35	Action:T35 Acts-on:T120
+T36	Action 1749 1755	decant
+E36	Action:T36 Acts-on:T124
+T37	Action 1769 1775	Repeat
+E37	Action:T37 
+T38	Action 1804 1813	Resuspend
+E38	Action:T38 Acts-on:T127 Site:T128
+T39	Action 1889 1897	Transfer
+E39	Action:T39 Site:T133 Acts-on:T134
+T40	Action 1946 1949	Add
+E40	Action:T40 Acts-on:T138 Site:T139
+T41	Action 1993 1999	vortex
+E41	Action:T41 Acts-on:T139
+T42	Action 2003 2006	mix
+E42	Action:T42 
+T43	Action 2012 2020	incubate
+E43	Action:T43 Site:T137
+T44	Action 2069 2072	Add
+E44	Action:T44 Acts-on:T142
+T45	Action 2103 2113	centrifuge
+E45	Action:T45 Acts-on:T143
+T46	Action 2167 2173	decant
+E46	Action:T46 Acts-on:T147
+T47	Action 2187 2193	Repeat
+E47	Action:T47 
+T48	Action 2222 2231	Resuspend
+E48	Action:T48 Acts-on:T150 Site:T153
+T49	Action 2290 2297	analyze
+E49	Action:T49 Using:T154
+T50	Size 125 132	1 x 106
+T51	Reagent 133 138	cells
+T52	Amount 147 153	0.5 mL
+T53	Reagent 157 163	buffer
+T54	Temperature 176 180	37°C
+R1	Measure Arg1:T51 Arg2:T50	
+R2	Measure Arg1:T53 Arg2:T52	
+R3	Setting Arg1:E1 Arg2:T54	
+T55	Reagent 188 210	True-Phos™ Perm Buffer
+T56	Temperature 214 219	-20°C
+R4	Setting Arg1:E3 Arg2:T56	
+T57	Numerical 230 237	1 x 106
+T58	Reagent 238 243	cells
+T59	Amount 252 258	1.0 ml
+T60	Reagent 262 284	True-Phos™ Perm Buffer
+T61	Temperature 298 303	-20°C
+R5	Measure Arg1:T58 Arg2:T57	
+R6	Measure Arg1:T60 Arg2:T59	
+R7	Setting Arg1:E5 Arg2:T61	
+T62	Numerical 315 321	single
+T63	Reagent 322 337	cell suspension
+T64	Reagent 347 365	sample of interest
+R8	Measure Arg1:T63 Arg2:T62	
+T65	Reagent 519 524	cells
+T66	Modifier 534 545	appropriate
+T67	Reagent 546 553	stimuli
+T68	Modifier 562 570	suitable
+T69	Temperature 571 582	temperature
+T70	Time 587 591	time
+R9	Mod-Link Arg1:T70 Arg2:T68	
+R10	Mod-Link Arg1:T69 Arg2:T68	
+R11	Mod-Link Arg1:T67 Arg2:T66	
+R12	Setting Arg1:E7 Arg2:T69	
+R13	Setting Arg1:E7 Arg2:T70	
+T71	Reagent 601 606	cells
+T72	Modifier 607 618	immediately
+T73	Amount 648 660	equal volume
+T74	Modifier 664 674	pre-warmed
+T75	Reagent 675 690	Fixation Buffer
+R14	Mod-Link Arg1:T75 Arg2:T74	
+R15	Measure Arg1:T75 Arg2:T73	
+R16	Mod-Link Arg1:T71 Arg2:T72	
+T76	Modifier 692 698	Gently
+R17	Mod-Link Arg1:E10 Arg2:T76	
+T77	Modifier 717 725	thorough
+R18	Mod-Link Arg1:E12 Arg2:T77	
+T78	Temperature 746 750	37°C
+T79	Time 755 765	15 minutes
+T80	Reagent 776 781	cells
+T81	Modifier 786 794	properly
+R19	Mod-Link Arg1:E13 Arg2:T81	
+R20	Setting Arg1:E11 Arg2:T78	
+R21	Setting Arg1:E11 Arg2:T79	
+T82	Reagent 813 818	cells
+T83	Speed 822 829	350 x g
+T84	Temperature 833 849	room temperature
+T85	Time 854 863	5 minutes
+T86	Reagent 872 883	supernatant
+T87	Reagent 905 916	cell pellet
+R22	Setting Arg1:E14 Arg2:T83	
+R23	Setting Arg1:E14 Arg2:T84	
+R24	Setting Arg1:E14 Arg2:T85	
+T88	Modifier 922 932	sufficient
+T89	Reagent 933 953	Cell Staining Buffer
+T90	Reagent 966 971	cells
+T91	Size 1001 1008	1 x 106
+T92	Reagent 1009 1014	cells
+R25	Measure Arg1:T92 Arg2:T91	
+R26	Mod-Link Arg1:T89 Arg2:T88	
+T93	Speed 1087 1094	350 x g
+T94	Temperature 1098 1114	room temperature
+T95	Time 1119 1128	5 minutes
+T96	Reagent 1140 1151	supernatant
+R27	Setting Arg1:E20 Arg2:T93	
+R28	Setting Arg1:E20 Arg2:T94	
+R29	Setting Arg1:E20 Arg2:T95	
+T97	Numerical 1176 1179	two
+T99	Modifier 1188 1194	Gently
+T100	Reagent 1203 1208	cells
+R30	Mod-Link Arg1:E23 Arg2:T99	
+T102	Reagent 1244 1255	cell pellet
+T103	Reagent 1287 1292	cells
+T104	Modifier 1303 1314	pre-chilled
+T105	Reagent 1315 1337	True-Phos™ Perm Buffer
+R32	Mod-Link Arg1:T105 Arg2:T104	
+T106	Temperature 1448 1453	-20°C
+T107	Time 1458 1468	60 minutes
+T108	Reagent 1479 1484	cells
+T109	Modifier 1489 1497	properly
+R34	Setting Arg1:E28 Arg2:T106	
+R35	Setting Arg1:E28 Arg2:T107	
+T110	Action 1498 1511	permeabilized
+E50	Action:T110 Acts-on:T108
+R33	Mod-Link Arg1:E50 Arg2:T109	
+T111	Reagent 1524 1529	cells
+T112	Speed 1533 1541	1000 x g
+T113	Temperature 1545 1561	room temperature
+T114	Time 1566 1575	5 minutes
+T115	Reagent 1584 1595	supernatant
+T116	Reagent 1617 1628	cell pellet
+R36	Setting Arg1:E29 Arg2:T112	
+R37	Setting Arg1:E29 Arg2:T113	
+R38	Setting Arg1:E29 Arg2:T114	
+T117	Modifier 1634 1644	sufficient
+T118	Reagent 1645 1665	Cell Staining Buffer
+T119	Reagent 1678 1683	cells
+T120	Reagent 1696 1701	cells
+T121	Speed 1705 1713	1000 x g
+T122	Temperature 1717 1733	room temperature
+T123	Time 1738 1747	5 minutes
+T124	Reagent 1756 1767	supernatant
+R39	Mod-Link Arg1:T118 Arg2:T117	
+R40	Setting Arg1:E35 Arg2:T121	
+R41	Setting Arg1:E35 Arg2:T122	
+R42	Setting Arg1:E35 Arg2:T123	
+T125	Numerical 1792 1795	two
+T127	Reagent 1818 1823	cells
+T128	Reagent 1827 1847	Cell Staining Buffer
+T130	Concentration 1870 1887	10 x 106 cells/ml
+R45	Setting Arg1:E38 Arg2:T130	
+T131	Amount 1898 1904	100 uL
+T132	Size 1929 1939	12 x 75 mm
+T133	Location 1940 1944	tube
+R44	Measure Arg1:T133 Arg2:T132	
+T129	Amount 1909 1916	1 x 106
+T134	Reagent 1917 1922	cells
+R46	Measure Arg1:T134 Arg2:T129	
+R47	Measure Arg1:T134 Arg2:T131	
+T135	Time 2025 2035	30 minutes
+T136	Temperature 2039 2055	room temperature
+T137	Location 2063 2067	dark
+T138	Reagent 1950 1970	antibody cocktail(s)
+T139	Location 1986 1991	tubes
+T140	Modifier 1974 1985	appropriate
+R48	Mod-Link Arg1:T139 Arg2:T140	
+R49	Setting Arg1:E43 Arg2:T135	
+R50	Setting Arg1:E43 Arg2:T136	
+T141	Amount 2073 2077	2 mL
+T142	Reagent 2081 2101	Cell Staining Buffer
+T143	Reagent 2114 2119	cells
+T144	Speed 2123 2131	1000 x g
+T145	Temperature 2135 2151	room temperature
+T146	Time 2156 2165	5 minutes
+T147	Reagent 2174 2185	supernatant
+R51	Setting Arg1:E45 Arg2:T144	
+R52	Setting Arg1:E45 Arg2:T145	
+R53	Setting Arg1:E45 Arg2:T146	
+R54	Measure Arg1:T142 Arg2:T141	
+T148	Numerical 2210 2213	two
+T150	Reagent 2232 2237	cells
+T151	Modifier 2241 2254	approximately
+T152	Amount 2255 2261	500 ml
+T153	Reagent 2265 2285	Cell Staining Buffer
+T154	Device 2305 2319	flow cytometer
+R55	Mod-Link Arg1:T152 Arg2:T151	
+R56	Measure Arg1:T153 Arg2:T152	
+T155	Action 0 22	Intracellular Staining
+E51	Action:T155 Using:T156
+T156	Reagent 28 50	True-Phos™ Perm Buffer
+T157	Reagent 54 70	Cell Suspensions
+R57	Meronym Arg1:T156 Arg2:T157	
+T158	Modifier 71 75	Warm
+T159	Reagent 76 91	Fixation Buffer
+R58	Mod-Link Arg1:T159 Arg2:T158	
+T160	Reagent 427 435	aliquots
+T161	Numerical 423 426	two
+T162	Action 415 422	Prepare
+E52	Action:T162 Acts-on:T160
+T163	Reagent 367 377	Human PBMC
+T164	Reagent 379 390	splenocytes
+T165	Reagent 392 402	cell lines
+T166	Reagent 437 453	Negative control
+T168	Reagent 466 482	Positive control
+T169	Action 484 491	treated
+E53	Action:T169 Acts-on:T168 Using:T170
+T170	Reagent 497 504	stimuli
+T167	Action 455 464	untreated
+E54	Action:T167 Acts-on:T166
+R59	Measure Arg1:T160 Arg2:T161	
+T171	Method 625 634	treatment
+T172	Reagent 1026 1046	Cell Staining Buffer
+T98	Action 1180 1186	washes
+E55	Action:T98 Count:T97
+T173	Action 1263 1272	vortexing
+E56	Action:T173 
+T101	Measure-Type 1224 1230	volume
+T174	Numerical 1347 1355	10 x 106
+T175	Reagent 1356 1361	cells
+R31	Measure Arg1:T175 Arg2:T174	
+T176	Amount 1391 1396	10 mL
+T177	Modifier 1400 1411	pre-chilled
+T178	Reagent 1412 1434	True-Phos™ Perm Buffer
+R60	Mod-Link Arg1:T178 Arg2:T177	
+R61	Measure Arg1:T178 Arg2:T176	
+T179	Measure-Type 1853 1866	concentration
+T149	Action 2214 2220	washes
+E57	Action:T149 Count:T148
+T126	Action 1796 1802	washes
+E58	Action:T126 Count:T125

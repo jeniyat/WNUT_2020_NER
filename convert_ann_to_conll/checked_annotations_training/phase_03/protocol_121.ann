@@ -1,0 +1,101 @@
+T4	Action 126 133	Prepare
+E4	Action:T4 Acts-on:T21 Acts-on2:T22
+T6	Action 290 297	Perform
+E6	Action:T6 Acts-on:T50 Site:T51
+T9	Action 378 381	Add
+E9	Action:T9 Acts-on:T5 Acts-on2:T8 Site:T10
+T14	Action 560 566	Filter
+E14	Action:T14 Acts-on:T30 Acts-on2:T32 Using:T34
+T15	Action 652 659	Pipette
+E15	Action:T15 Acts-on:T37 Site:T54
+T16	Action 711 716	Place
+E16	Action:T16 Acts-on:T39 Site:T40
+T17	Action 743 750	Pipette
+E17	Action:T17 Acts-on:T42 Site:T53
+T18	Action 805 810	Place
+E18	Action:T18 Acts-on:T45 Site:T46
+T19	Action 851 858	Observe
+E19	Action:T19 Acts-on:T1 Site:T47
+T20	Action 902 907	count
+E20	Action:T20 Acts-on:T48 Using:T49
+T2	Action 485 491	vortex
+E2	Action:T2 Acts-on:T52
+T3	Amount 382 388	0.1 mL
+T7	Amount 411 417	0.9 mL
+T8	Reagent 418 424	sample
+T5	Reagent 389 407	FLVP working stock
+T10	Location 430 450	microcentrifuge tube
+T11	Action 495 498	mix
+E3	Action:T11 
+T12	Action 472 480	prepared
+E5	Action:T12 Acts-on:T52
+T13	Time 512 518	30 min
+T21	Reagent 167 174	culture
+T22	Reagent 178 192	natural sample
+T24	Amount 218 233	~105 cells mL–1
+T25	Reagent 241 247	target
+T26	Reagent 537 542	FLVPs
+T27	Reagent 546 558	target cells
+T28	Action 523 533	adsorption
+E8	Action:T28 Acts-on:T26 Acts-on2:T27
+T29	Amount 572 576	1 mL
+T30	Reagent 577 583	sample
+T32	Location 598 612	Anodisc filter
+T33	Modifier 621 628	0.45-µm
+T34	Device 629 638	HA filter
+T35	Action 643 650	backing
+E10	Action:T35 Acts-on:T34
+T36	Amount 660 665	10 µL
+T37	Reagent 666 681	mounting medium
+T39	Device 721 727	filter
+T40	Location 728 741	over the drop
+T41	Amount 751 756	10 µL
+T42	Reagent 757 772	mounting medium
+T44	Size 813 823	25 × 25 mm
+T45	Seal 824 833	coverslip
+T46	Location 843 849	filter
+T1	Device 863 869	slides
+T47	Location 876 897	blue-light excitation
+T48	Reagent 912 917	cells
+T49	Device 925 941	fluorescent halo
+R1	Measure Arg1:T25 Arg2:T24	
+T23	Action 280 288	obtained
+E1	Action:T23 Acts-on:T25
+T50	Mention 302 318	subsequent steps
+T51	Location 325 338	subdued light
+R2	Measure Arg1:T5 Arg2:T3	
+R3	Measure Arg1:T8 Arg2:T7	
+T52	Location 460 465	slide
+R4	Setting Arg1:E8 Arg2:T13	
+R5	Measure Arg1:T30 Arg2:T29	
+R8	Measure Arg1:T37 Arg2:T36	
+T31	Modifier 591 597	0.2-µm
+R6	Mod-Link Arg1:T32 Arg2:T31	
+R7	Mod-Link Arg1:T34 Arg2:T33	
+R9	Measure Arg1:T42 Arg2:T41	
+R10	Measure Arg1:T45 Arg2:T44	
+T43	Location 782 789	surface
+T53	Location 797 803	filter
+R11	Meronym Arg1:T43 Arg2:T53	
+T38	Location 691 698	surface
+T54	Location 704 709	slide
+R12	Meronym Arg1:T38 Arg2:T54	
+T56	Action 12 20	Perform 
+E11	Action:T56 Using:T57
+T57	Method 20 31	preparation
+T58	Reagent 35 40	FLVPs
+T59	Modifier 57 62	Viral
+T60	Modifier 67 76	bacterial
+T61	Reagent 77 85	isolates
+R13	Mod-Link Arg1:T61 Arg2:T60	
+R14	Mod-Link Arg1:T61 Arg2:T59	
+T62	Reagent 118 124	stocks
+T55	Reagent 0 4	FLVP
+T63	Action 5 11	assays
+E7	Action:T63 Acts-on:T55
+T64	Method 87 98	propagation
+T65	Method 103 114	preparation
+T66	Numerical 136 143	10-fold
+T67	Reagent 350 355	stain
+T68	Method 144 152	dilution
+T69	Reagent 249 253	FLVP

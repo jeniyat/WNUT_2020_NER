@@ -1,0 +1,76 @@
+T1	Action 43 52	Transform
+E1	Action:T1 Acts-on:T20 Product:T21
+T2	Action 88 93	Plate
+E2	Action:T2 Site:T10
+T3	Action 126 134	Incubate
+E3	Action:T3 
+T4	Action 154 163	Resuspend
+E4	Action:T4 Acts-on:T24 Site:T13
+T5	Action 221 229	Incubate
+E5	Action:T5 
+T6	Action 267 273	Induce
+E6	Action:T6 Using:T17 Product:T33
+T7	Action 388 393	Check
+E7	Action:T7 Using:T27
+T9	Action 355 361	Induce
+E9	Action:T9 
+T10	Location 97 124	antibiotic selection plates
+T11	Temperature 148 152	37°C
+R1	Setting Arg1:E3 Arg2:T11	
+T12	Amount 183 188	10 ml
+T13	Reagent 189 219	liquid culture with antibiotic
+R2	Measure Arg1:T13 Arg2:T12	
+T14	Temperature 233 237	37°C
+T15	Amount 284 289	40 µl
+T16	Concentration 295 301	100 mM
+T17	Reagent 311 315	IPTG
+R3	Measure Arg1:T17 Arg2:T16	
+R4	Measure Arg1:T17 Arg2:T15	
+T18	Time 366 378	3 to 5 hours
+T19	Temperature 382 386	37°C
+R5	Setting Arg1:E9 Arg2:T18	
+R6	Setting Arg1:E9 Arg2:T19	
+T20	Reagent 53 71	expression plasmid
+T21	Reagent 77 86	BL21(DE3)
+T23	Time 135 144	overnight
+T24	Reagent 166 179	single colony
+T25	Measure-Type 244 249	OD600
+T26	Numerical 258 265	0.4–0.8
+T27	Reagent 419 448	Coomassie stained protein gel
+R8	Setting Arg1:E3 Arg2:T23	
+R9	Setting Arg1:E5 Arg2:T14	
+T8	Action 250 257	reaches
+E8	Action:T8 Measure-Type-Link:T25
+R10	Setting Arg1:E8 Arg2:T26	
+T30	Numerical 279 280	4
+R11	Or Arg1:T15 Arg2:T30	
+T31	Numerical 340 342	40
+T32	Concentration 346 352	400 µM
+R13	Or Arg1:T32 Arg2:T31	
+T33	Reagent 317 336	final concentration
+R12	Measure Arg1:T33 Arg2:T32	
+T34	Reagent 0 7	Protein
+T35	Method 8 18	Expression
+T36	Reagent 25 34	BL21(DE3)
+T22	Method 488 498	expression
+T37	Action 482 487	Check
+E10	Action:T37 
+T38	Method 398 408	expression
+T29	Action 466 480	activity assay
+E11	Action:T29 
+T28	Action 450 462	Western Blot
+E12	Action:T28 
+R7	Or Arg1:T27 Arg2:E12	
+R14	Or Arg1:T27 Arg2:E11	
+R15	Or Arg1:E12 Arg2:E11	
+T39	Modifier 511 516	total
+T40	Reagent 517 529	cell extract
+R16	Mod-Link Arg1:T40 Arg2:T39	
+T41	Modifier 531 538	soluble
+T42	Modifier 541 550	insoluble
+R17	Mod-Link Arg1:T40 Arg2:T41	
+R18	Mod-Link Arg1:T40 Arg2:T42	
+T43	Modifier 560 567	soluble
+T44	Reagent 568 576	fraction
+R19	Mod-Link Arg1:T44 Arg2:T43	
+R20	Meronym Arg1:T44 Arg2:T40	

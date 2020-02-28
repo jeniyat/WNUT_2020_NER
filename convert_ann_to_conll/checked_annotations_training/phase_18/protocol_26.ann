@@ -1,0 +1,154 @@
+T1	Action 83 86	Add
+E1	Action:T1 Acts-on:T2 Site:T4
+T2	Reagent 92 98	sample
+T3	Device 129 135	Amicon
+T4	Location 106 121	upper reservoir
+R1	Meronym Arg1:T4 Arg2:T3
+T5	Action 137 147	Centrifuge
+E2	Action:T5 Site:T8
+T6	Speed 151 159	1000 x g
+T7	Temperature 163 166	4ºC
+T8	Device 172 193	swinging-bucket rotor
+R2	Setting Arg1:E2 Arg2:T6
+R3	Setting Arg1:E2 Arg2:T7
+T9	Action 362 368	Remove
+E3	Action:T9 Acts-on:T10 Site:T11
+T10	Reagent 373 392	concentrated sample
+T11	Location 402 417	upper reservoir
+T12	Action 422 427	place
+E4	Action:T12 Acts-on:T13 Site:T14
+T13	Mention 428 430	it
+T14	Location 436 440	tube
+R4	Coreference-Link Arg1:T13 Arg2:T10
+T15	Action 457 463	Remove
+E5	Action:T15 Acts-on:T16 Site:T17
+T16	Location 468 483	upper reservoir
+T17	Device 493 499	Amicon
+T18	Action 508 513	Place
+E6	Action:T18 Acts-on:T79 Site:T80
+T19	Location 558 573	upper reservoir
+T20	Action 586 589	Add
+E7	Action:T20 Acts-on:T21
+T21	Reagent 597 603	liquid
+T22	Amount 626 632	1.5 ml
+T23	Action 635 641	Vortex
+E8	Action:T23 Acts-on:T24
+T24	Location 646 661	upper reservoir
+T25	Speed 706 710	1200
+T26	Time 716 719	20s
+R6	Setting Arg1:E8 Arg2:T25
+R7	Setting Arg1:E8 Arg2:T26
+T27	Action 721 727	Remove
+E9	Action:T27 Acts-on:T28 Site:T29
+T28	Reagent 732 738	liquid
+T29	Location 748 763	upper reservoir
+T30	Action 768 771	add
+E10	Action:T30 Acts-on:T31 Site:T32
+T31	Mention 772 774	it
+T32	Reagent 783 799	recovered sample
+R8	Coreference-Link Arg1:T31 Arg2:T28
+T33	Action 849 852	Add
+E11	Action:T33 Acts-on:T34 Site:T35
+T34	Reagent 858 864	sample
+T35	Location 872 887	upper reservoir
+T36	Device 895 902	Nanosep
+R9	Meronym Arg1:T35 Arg2:T36
+T37	Action 904 914	Centrifuge
+E12	Action:T37 
+T38	Speed 918 926	1000 x g
+T39	Temperature 930 933	4ºC
+R10	Setting Arg1:E12 Arg2:T38
+R11	Setting Arg1:E12 Arg2:T39
+T41	Device 1108 1116	pipettor
+T42	Action 1120 1126	remove
+E14	Action:T42 Using:T41 Acts-on:T43 Site:T44
+T43	Reagent 1131 1150	concentrated sample
+T44	Location 1160 1175	upper reservoir
+T45	Action 1180 1185	place
+E15	Action:T45 Acts-on:T46 Site:T47
+T46	Mention 1186 1188	it
+T47	Location 1194 1198	tube
+R12	Coreference-Link Arg1:T46 Arg2:T43
+T40	Action 1215 1218	Add
+E13	Action:T40 Acts-on:T48
+T48	Reagent 1226 1232	liquid
+T49	Amount 1254 1260	~10 µl
+T50	Action 1263 1268	Swirl
+E16	Action:T50 Acts-on:T51 Using:T55
+T51	Reagent 1273 1279	liquid
+T52	Action 1300 1304	stir
+E17	Action:T52 Acts-on:T53 Using:T54
+T53	Mention 1305 1307	it
+T54	Device 1322 1331	pipet tip
+T55	Device 1289 1295	filter
+T56	Action 1333 1339	Remove
+E18	Action:T56 Acts-on:T57 Site:T58
+T57	Reagent 1344 1350	liquid
+T58	Location 1360 1375	upper reservoir
+T59	Action 1380 1383	add
+E19	Action:T59 Acts-on:T60 Acts-on2:T61
+T60	Mention 1384 1386	it
+T61	Reagent 1395 1411	recovered sample
+R5	Measure Arg1:T21 Arg2:T22	
+R13	Measure Arg1:T48 Arg2:T49	
+T62	Action 1236 1241	cover
+E20	Action:T62 Acts-on:T64
+T63	Modifier 1219 1225	enough
+R14	Mod-Link Arg1:T48 Arg2:T63	
+T64	Device 1246 1252	filter
+T65	Modifier 1308 1314	gently
+R15	Mod-Link Arg1:E17 Arg2:T65	
+T66	Action 0 13	Concentrating
+E21	Action:T66 Acts-on:T67 Using:T68
+T67	Reagent 14 21	Viruses
+T68	Device 30 36	Amicon
+T69	Device 40 82	Nanosep Centrifugal Ultrafiltration Device
+R16	Or Arg1:T68 Arg2:T69	
+T70	Action 195 205	Centrifuge
+E22	Action:T70 Measure-Type-Link:T71
+T71	Measure-Type 206 210	time
+T72	Measure-Type 230 236	volume
+T73	Reagent 240 246	sample
+T74	Reagent 265 273	material
+T75	Reagent 281 287	sample
+T76	Action 298 310	centrifuging
+E23	Action:T76 
+T77	Reagent 321 327	sample
+T78	Measure-Type 354 360	volume
+T79	Seal 526 534	parafilm
+T80	Location 544 550	bottom
+R17	Meronym Arg1:T80 Arg2:T19	
+T81	Device 617 623	filter
+T82	Modifier 625 626	~
+R18	Mod-Link Arg1:T22 Arg2:T82	
+T83	Action 607 612	cover
+E24	Action:T83 Acts-on:T81
+T84	Device 663 669	filter
+T85	Seal 670 678	parafilm
+T86	Modifier 715 716	~
+R19	Mod-Link Arg1:T26 Arg2:T86	
+T87	Action 801 807	Repeat
+E25	Action:T87 
+T88	Action 828 835	recover
+E26	Action:T88 Acts-on:T90
+T89	Modifier 822 827	fully
+R20	Mod-Link Arg1:E26 Arg2:T89	
+T90	Reagent 841 847	sample
+T91	Action 935 945	Centrifuge
+E27	Action:T91 Measure-Type-Link:T92
+T92	Measure-Type 946 950	time
+T93	Measure-Type 970 976	volume
+T94	Reagent 980 986	sample
+T95	Reagent 1005 1013	material
+T96	Reagent 1021 1027	sample
+T97	Action 1038 1050	centrifuging
+E28	Action:T97 
+T98	Reagent 1061 1067	sample
+T99	Measure-Type 1094 1100	volume
+T100	Action 1413 1419	Repeat
+E29	Action:T100 
+T101	Modifier 1438 1443	fully
+T102	Action 1444 1451	recover
+E30	Action:T102 Acts-on:T103
+T103	Reagent 1457 1463	sample
+R21	Mod-Link Arg1:E30 Arg2:T101	

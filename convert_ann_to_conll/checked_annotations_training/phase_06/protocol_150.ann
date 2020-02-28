@@ -1,0 +1,150 @@
+T1	Action 35 39	Make
+E1	Action:T1 Product:T27
+T3	Action 274 277	Mix
+E3	Action:T3 
+T4	Action 303 306	sit
+E4	Action:T4 
+T5	Action 359 368	collected
+E5	Action:T5 Acts-on:T29
+T7	Action 434 441	Prepare
+E7	Action:T7 Using:T75
+T8	Action 496 500	Make
+E8	Action:T8 Acts-on:T78 Site:T76
+T9	Action 564 569	Layer
+E9	Action:T9 
+T10	Action 595 603	Displace
+E10	Action:T10 Acts-on:T79 Using:T80
+T11	Action 658 666	Displace
+E11	Action:T11 
+T12	Action 706 711	layer
+E12	Action:T12 Acts-on:T32 Site:T33
+T13	Action 727 737	Centrifuge
+E13	Action:T13 Using:T36
+T14	Action 772 776	Draw
+E14	Action:T14 Site:T81
+T15	Action 846 856	pulled out
+E15	Action:T15 Using:T37 Product:T38 Acts-on:T39
+T16	Action 902 905	Put
+E16	Action:T16 Acts-on:T83 Site:T84 Site2:T85
+T17	Action 974 980	Plunge
+E17	Action:T17 Acts-on:T41 Count:T42
+T18	Action 1006 1014	Puncture
+E18	Action:T18 
+T19	Action 1025 1033	twisting
+E19	Action:T19 
+T20	Action 1038 1045	pushing
+E20	Action:T20 Acts-on:T44 Site:T46
+T21	Action 1162 1168	sealed
+E21	Action:T21 Acts-on:T47 Using:T49
+T22	Action 1182 1189	Collect
+E22	Action:T22 Acts-on:T50 Commands:E23
+T23	Action 1209 1215	moving
+E23	Action:T23 Acts-on:T52 Using:T86 Site:T87
+T24	Action 1258 1264	Change
+E24	Action:T24 Acts-on:T88 Site:T90
+T25	Action 1347 1350	put
+E25	Action:T25 Acts-on:T91 Site:T92
+T26	Action 1387 1394	Dialyze
+E26	Action:T26 Acts-on:T96 Site:T98
+T27	Reagent 45 50	phage
+T28	Time 316 322	1 hour
+R1	Setting Arg1:E4 Arg2:T28	
+T29	Reagent 350 355	phage
+T30	Action 405 414	resuspend
+E2	Action:T30 Measure-Type-Link:T6
+T31	Modifier 701 705	Slow
+T32	Reagent 712 718	sample
+T33	Location 722 725	top
+R3	Mod-Link Arg1:E12 Arg2:T31	
+T34	Time 742 751	2.5 hours
+T35	Speed 752 755	24K
+T36	Device 763 770	SW 28.1
+R4	Setting Arg1:E13 Arg2:T34	
+R5	Setting Arg1:E13 Arg2:T35	
+T37	Device 864 871	syringe
+T38	Reagent 817 838	band between 1.4.-1.5
+T39	Device 894 900	needle
+T40	Size 876 878	20
+R6	Measure Arg1:T39 Arg2:T40	
+T41	Device 985 992	syringe
+T42	Numerical 995 1004	few times
+T43	Modifier 1018 1024	slowly
+R7	Mod-Link Arg1:E19 Arg2:T43	
+T44	Device 1050 1056	needle
+T45	Reagent 1094 1111	bluish white band
+T46	Location 1077 1089	few mm below
+R8	Meronym Arg1:T46 Arg2:T45	
+T47	Location 1136 1140	hole
+T48	Device 1152 1158	needle
+R9	Meronym Arg1:T47 Arg2:T48	
+T49	Reagent 1174 1180	grease
+T50	Reagent 1194 1198	band
+T51	Modifier 1202 1208	slowly
+T52	Device 1220 1226	needle
+T53	Reagent 0 4	CsCl
+T54	Method 5 18	Step Gradient
+T55	Action 22 28	Purify
+E6	Action:T55 Acts-on:T56
+T56	Reagent 29 34	Phage
+T57	Concentration 82 94	109-1010 /ml
+R10	Measure Arg1:T27 Arg2:T57	
+T58	Device 164 176	Beckman Ti45
+T59	Time 177 181	1 hr
+T60	Method 198 205	PEG ppt
+T61	Concentration 212 215	10%
+T62	Reagent 216 219	PEG
+R11	Measure Arg1:T62 Arg2:T61	
+T63	Generic-Measure 182 185	35K
+R12	Setting Arg1:T58 Arg2:T59	
+R13	Measure Arg1:T58 Arg2:T63	
+T64	Concentration 225 230	0.5 M
+T65	Reagent 231 235	NaCl
+R14	Measure Arg1:T65 Arg2:T64	
+T66	Generic-Measure 221 223	6K
+R15	Measure Arg1:T65 Arg2:T66	
+T67	Time 336 345	overnight
+R16	Setting Arg1:E4 Arg2:T67	
+T2	Temperature 285 289	cold
+R17	Setting Arg1:E3 Arg2:T2	
+T68	Reagent 372 375	cfg
+T69	Generic-Measure 377 379	8K
+T71	Time 384 390	20 min
+T72	Modifier 393 397	waxy
+T73	Reagent 398 404	pellet
+T6	Measure-Type 426 432	volume
+T70	Action 380 383	GSA
+E27	Action:T70 Acts-on:T73
+R2	Setting Arg1:E27 Arg2:T69	
+R18	Setting Arg1:E27 Arg2:T71	
+R19	Mod-Link Arg1:T73 Arg2:T72	
+T74	Reagent 442 446	CsCl
+T75	Method 447 460	step gradient
+T76	Location 515 547	SW 28.1 Beckman ultra clear tube
+T77	Amount 556 562	17 mls
+R20	Measure Arg1:T76 Arg2:T77	
+T78	Reagent 501 509	gradient
+T79	Mention 604 606	it
+T80	Device 637 656	long canular needle
+T81	Location 807 811	tube
+T82	Reagent 793 799	layers
+T83	Reagent 915 931	stop cork grease
+T84	Location 939 943	tube
+T85	Device 966 972	needle
+R21	Mod-Link Arg1:E23 Arg2:T51	
+T86	Method 1227 1241	back and forth
+T87	Reagent 1252 1256	band
+T88	Device 1265 1271	needle
+T89	Device 1277 1285	18 gauge
+T90	Device 1300 1317	Pierce Dialysizer
+T91	Device 1332 1338	needle
+T92	Location 1356 1360	tube
+T94	Action 1327 1331	take
+E28	Action:T94 Acts-on:T91
+T95	Mention 1383 1385	it
+T93	Action 1375 1382	dialyze
+E29	Action:T93 Acts-on:T95
+R22	Coreference-Link Arg1:T95 Arg2:T91	
+T96	Reagent 1399 1403	band
+T97	Modifier 1414 1421	high Mg
+T98	Reagent 1422 1428	buffer
+R23	Mod-Link Arg1:T98 Arg2:T97	

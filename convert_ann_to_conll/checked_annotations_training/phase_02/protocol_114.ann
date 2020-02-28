@@ -1,0 +1,225 @@
+T1	Action 79 82	Add
+E1	Action:T1 Acts-on:T39 Site:T41
+T2	Action 132 142	Centrifuge
+E2	Action:T2 
+T3	Action 231 237	Remove
+E3	Action:T3 Acts-on:T45
+T4	Action 295 301	Vortex
+E4	Action:T4 Acts-on:T48
+T5	Action 358 361	Add
+E5	Action:T5 Acts-on:T50 Site:T95
+T6	Action 540 548	incubate
+E6	Action:T6 
+T7	Action 611 616	Place
+E7	Action:T7 Site:T55 Acts-on:T53
+T8	Action 683 686	Add
+E8	Action:T8 Acts-on:T57 Site:T102
+T9	Action 744 747	mix
+E9	Action:T9 
+T11	Action 783 793	Centrifuge
+E11	Action:T11 
+T12	Action 831 839	transfer
+E12	Action:T12 Site:T61 Acts-on:T60
+T13	Action 871 874	Add
+E13	Action:T13 Acts-on:T63 Acts-on2:T65 Site:T66
+T14	Action 942 945	mix
+E14	Action:T14 
+T16	Action 999 1009	Centrifuge
+E16	Action:T16 
+T17	Action 1038 1045	Discard
+E17	Action:T17 Acts-on:T69 Using:T110
+T18	Action 1152 1155	Add
+E18	Action:T18 Acts-on:T73
+T19	Action 1220 1230	Centrifuge
+E19	Action:T19 
+T20	Action 1259 1266	Discard
+E20	Action:T20 Acts-on:T76
+T21	Action 1372 1375	Add
+E21	Action:T21 Acts-on:T79
+T22	Action 1441 1451	incubating
+E22	Action:T22 
+T23	Action 1412 1421	Rehydrate
+E23	Action:T23 Acts-on:T80
+T24	Action 1477 1485	Incubate
+E24	Action:T24 Using:T123
+T25	Action 1558 1563	Store
+E25	Action:T25 Acts-on:T36
+T26	Action 418 424	vortex
+E26	Action:T26 
+T27	Action 171 177	remove
+E27	Action:T27 Acts-on:T44
+T28	Action 314 323	resuspend
+E28	Action:T28 Acts-on:T91 Site:T93
+T29	Action 1093 1099	remove
+E29	Action:T29 Acts-on:T113
+T30	Action 1117 1135	without disturbing
+E30	Action:T30 Acts-on:T70
+T31	Action 1178 1184	invert
+E31	Action:T31 Acts-on:T114 Count:T115
+T32	Action 1203 1207	wash
+E32	Action:T32 Acts-on:T116
+T33	Action 1287 1292	drain
+E33	Action:T33 Acts-on:T117 Site:T118
+T34	Action 1348 1355	air dry
+E34	Action:T34 
+T35	Action 1394 1402	dissolve
+E35	Action:T35 Acts-on:T121
+T37	Action 1598 1603	store
+E37	Action:T37 
+T38	Amount 83 88	1‐3ml
+T39	Reagent 89 103	Amniotic fluid
+T40	Amount 109 114	1.5ml
+T41	Location 115 130	centrifuge tube
+R1	Measure Arg1:T41 Arg2:T40	
+R3	Measure Arg1:T39 Arg2:T38	
+T42	Speed 143 151	14,000xg
+T43	Time 156 165	5 seconds
+R4	Setting Arg1:E2 Arg2:T42	
+R5	Setting Arg1:E2 Arg2:T43	
+T44	Reagent 178 189	supernatant
+T45	Reagent 238 249	supernatant
+T46	Amount 258 265	10‐20µl
+T47	Reagent 266 281	residual liquid
+R6	Measure Arg1:T47 Arg2:T46	
+T48	Location 306 310	tube
+T49	Amount 362 367	400µl
+T50	Reagent 371 388	XIT™ Lysis Buffer
+R8	Measure Arg1:T50 Arg2:T49	
+T51	Temperature 552 556	37°C
+T52	Time 561 573	5‐10 minutes
+R9	Setting Arg1:E6 Arg2:T51	
+R10	Setting Arg1:E6 Arg2:T52	
+T53	Location 621 625	tube
+T54	Time 637 645	1 minute
+T55	Location 629 632	ice
+R11	Setting Arg1:E7 Arg2:T54	
+T56	Amount 687 691	90µl
+T57	Reagent 692 725	XIT™ Protein Precipitation Buffer
+R12	Measure Arg1:T57 Arg2:T56	
+T58	Speed 797 804	16,000g
+T59	Time 809 818	5 minutes
+R13	Setting Arg1:E11 Arg2:T58	
+R14	Setting Arg1:E11 Arg2:T59	
+T60	Reagent 844 855	supernatant
+T61	Location 865 869	tube
+T62	Amount 875 880	400µl
+T63	Reagent 881 892	isopropanol
+R15	Measure Arg1:T63 Arg2:T62	
+T64	Amount 897 900	5µl
+T65	Reagent 901 918	Glycogen Solution
+R16	Measure Arg1:T65 Arg2:T64	
+T66	Reagent 926 937	supernatant
+T67	Speed 1013 1022	14,000rpm
+R17	Setting Arg1:E16 Arg2:T67	
+T68	Time 1027 1036	5 minutes
+T69	Reagent 1050 1061	supernatant
+T70	Reagent 1140 1150	DNA pellet
+T71	Amount 1156 1161	200µl
+T72	Concentration 1162 1165	70%
+T73	Reagent 1166 1173	ethanol
+R18	Measure Arg1:T73 Arg2:T72	
+R19	Measure Arg1:T73 Arg2:T71	
+T74	Speed 1234 1243	14,000rpm
+T75	Time 1248 1257	5 minutes
+R20	Setting Arg1:E19 Arg2:T74	
+R21	Setting Arg1:E19 Arg2:T75	
+T76	Reagent 1271 1282	supernatant
+T77	Time 1360 1370	15 minutes
+R22	Setting Arg1:E34 Arg2:T77	
+T78	Amount 1376 1380	50µl
+T79	Reagent 1381 1390	TE buffer
+R23	Measure Arg1:T79 Arg2:T78	
+T80	Reagent 1426 1437	genomic DNA
+T81	Temperature 1455 1462	55‐65°C
+T82	Time 1467 1475	one hour
+R24	Setting Arg1:E22 Arg2:T81	
+R25	Setting Arg1:E22 Arg2:T82	
+T83	Temperature 1499 1515	room temperature
+R26	Setting Arg1:E24 Arg2:T83	
+T36	Reagent 1564 1567	DNA
+T84	Temperature 1571 1574	4°C
+R27	Setting Arg1:E25 Arg2:T84	
+T85	Temperature 1607 1610	‐20
+T86	Modifier 190 199	carefully
+T87	Action 208 218	disturbing
+E10	Action:T87 Acts-on:T88
+T88	Reagent 223 229	pellet
+R2	Mod-Link Arg1:E27 Arg2:T86	
+T89	Action 250 257	leaving
+E15	Action:T89 Acts-on:T47 Site:T90
+T90	Location 289 293	tube
+T91	Reagent 328 333	cells
+T92	Modifier 341 349	residual
+T93	Reagent 350 356	liquid
+R28	Mod-Link Arg1:T93 Arg2:T92	
+T94	Modifier 396 407	resuspended
+T95	Reagent 408 413	cells
+T96	Modifier 425 435	vigorously
+T97	Action 439 443	lyse
+E36	Action:T97 Acts-on:T98 Commands:E26
+T98	Reagent 448 453	cells
+R7	Mod-Link Arg1:E26 Arg2:T96	
+R29	Mod-Link Arg1:T95 Arg2:T94	
+T99	Action 657 661	cool
+E38	Action:T99 Acts-on:T53
+T100	Modifier 649 656	rapidly
+T101	Temperature 665 681	room temperature
+R30	Mod-Link Arg1:E38 Arg2:T100	
+R31	Setting Arg1:E38 Arg2:T101	
+T102	Reagent 733 739	sample
+T103	Location 765 769	tube
+T104	Numerical 770 775	10‐20
+T10	Action 751 760	inverting
+E39	Action:T10 Acts-on:T103 Count:T104
+T105	Modifier 820 829	Carefully
+R32	Mod-Link Arg1:E12 Arg2:T105	
+T106	Modifier 949 955	gently
+T15	Action 956 965	inverting
+E40	Action:T15 Acts-on:T107 Count:T109
+T107	Reagent 970 976	sample
+T108	Modifier 977 985	at least
+T109	Numerical 986 991	20‐25
+R33	Or Arg1:T109 Arg2:T108	
+R34	Mod-Link Arg1:E40 Arg2:T106	
+R35	Setting Arg1:E16 Arg2:T68	
+T110	Device 1072 1079	pipette
+T111	Modifier 1083 1092	carefully
+T112	Modifier 1100 1109	remaining
+T113	Reagent 1110 1116	liquid
+R36	Mod-Link Arg1:E29 Arg2:T111	
+R37	Mod-Link Arg1:T113 Arg2:T112	
+T114	Location 1189 1193	tube
+T115	Numerical 1194 1199	twice
+T116	Reagent 1212 1218	pellet
+T117	Location 1297 1301	tube
+T118	Location 1307 1312	piece
+T119	Modifier 1316 1321	clean
+T120	Device 1322 1337	absorbent paper
+R38	Mod-Link Arg1:T120 Arg2:T119	
+R39	Meronym Arg1:T118 Arg2:T120	
+T121	Reagent 1407 1410	DNA
+T122	Time 1486 1495	overnight
+R40	Setting Arg1:E24 Arg2:T122	
+T123	Method 1535 1556	genomic DNA hydration
+R41	Setting Arg1:E37 Arg2:T85	
+T125	Temperature 1614 1619	‐80°C
+R42	Or Arg1:T85 Arg2:T125	
+R43	Meronym Arg1:T47 Arg2:T90	
+T126	Reagent 587 595	solution
+T127	Modifier 599 609	homogenous
+R44	Mod-Link Arg1:T126 Arg2:T127	
+T128	Method 466 476	incubation
+T129	Reagent 502 513	cell clumps
+T130	Modifier 518 525	visible
+R45	Mod-Link Arg1:T129 Arg2:T130	
+T131	Action 532 538	mixing
+E41	Action:T131 Acts-on:T129
+T132	Modifier 861 864	new
+R46	Mod-Link Arg1:T61 Arg2:T132	
+R47	Setting Arg1:E37 Arg2:T125	
+T124	Action 1339 1344	Allow
+E42	Action:T124 Commands:E34
+T133	Method 0 35	XIT™ Genomic DNA Blood Kit Protocol
+T134	Method 40 51	Purificaton
+T136	Reagent 64 78	Amniotic Fluid
+T135	Reagent 55 58	DNA

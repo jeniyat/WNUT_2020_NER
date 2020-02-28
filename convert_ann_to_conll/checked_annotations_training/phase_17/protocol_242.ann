@@ -1,0 +1,251 @@
+T1	Action 96 99	Add
+E1	Action:T1 Acts-on:T3 Site:T5
+T2	Amount 100 104	10µl
+T3	Reagent 105 120	nucleated blood
+T4	Amount 126 131	1.5ml
+T5	Location 132 146	microfuge tube
+T6	Amount 158 163	500µl
+T7	Reagent 164 176	Lysis Buffer
+R1	Measure Arg1:T7 Arg2:T6	
+R2	Measure Arg1:T5 Arg2:T4	
+R3	Measure Arg1:T3 Arg2:T2	
+R4	Meronym Arg1:T7 Arg2:T5	
+T8	Action 178 186	Incubate
+E2	Action:T8 Acts-on:T9
+T9	Reagent 191 197	sample
+T10	Temperature 201 208	55-60°C
+T11	Time 213 223	15 minutes
+R5	Setting Arg1:E2 Arg2:T10	
+R6	Setting Arg1:E2 Arg2:T11	
+T12	Action 291 294	add
+E3	Action:T12 Acts-on:T14
+T13	Amount 295 298	1µl
+T14	Reagent 299 320	Proteinase K solution
+T15	Amount 331 336	100µl
+T16	Modifier 321 330	for every
+T17	Reagent 337 349	Lysis Buffer
+T18	Action 354 362	incubate
+E4	Action:T18 
+T19	Temperature 366 370	60°C
+T20	Time 375 384	1-2 hours
+R7	Measure Arg1:T17 Arg2:T15	
+R9	Measure Arg1:T14 Arg2:T13	
+R10	Setting Arg1:E4 Arg2:T19	
+R11	Setting Arg1:E4 Arg2:T20	
+R12	Mod-Link Arg1:T13 Arg2:T16	
+R8	Mod-Link Arg1:T17 Arg2:T16	
+T21	Action 386 392	Invert
+E5	Action:T21 Acts-on:T22
+T22	Location 397 401	tube
+T23	Modifier 402 414	periodically
+T24	Time 415 424	each hour
+R13	Mod-Link Arg1:E5 Arg2:T23	
+R14	Setting Arg1:E5 Arg2:T24	
+T25	Action 508 513	Allow
+E6	Action:T25 Acts-on:T26
+T26	Reagent 518 524	sample
+T27	Temperature 536 552	room temperature
+R15	Setting Arg1:E6 Arg2:T27	
+T28	Action 554 557	Add
+E7	Action:T28 Acts-on:T30
+T29	Amount 558 563	200µl
+T30	Reagent 564 574	chloroform
+T31	Action 579 582	mix
+E8	Action:T31 
+T32	Action 586 595	inverting
+E9	Action:T32 Acts-on:T33 Count:T34
+T33	Location 600 604	tube
+T34	Numerical 605 618	several times
+R16	Measure Arg1:T30 Arg2:T29	
+T35	Action 620 630	Centrifuge
+E10	Action:T35 
+T36	Time 635 645	10 minutes
+T37	Speed 649 657	14,000xg
+R17	Setting Arg1:E10 Arg2:T36	
+R18	Setting Arg1:E10 Arg2:T37	
+T38	Action 672 678	remove
+E11	Action:T38 Acts-on:T39 Site:T41
+T39	Reagent 683 694	upper phase
+T41	Location 706 726	microcentrifuge tube
+T42	Action 728 731	Add
+E12	Action:T42 Acts-on:T44 Site:T45
+T43	Amount 732 736	50µl
+T44	Reagent 737 759	DNA Stripping Solution
+R20	Measure Arg1:T44 Arg2:T43	
+T45	Reagent 767 773	sample
+T46	Action 778 784	invert
+E13	Action:T46 
+T47	Numerical 785 798	several times
+T48	Action 802 805	mix
+E14	Action:T48 
+R21	Setting Arg1:E13 Arg2:T47	
+T49	Action 807 815	Incubate
+E15	Action:T49 Acts-on:T50
+T50	Reagent 820 826	sample
+T51	Time 831 843	5-10 minutes
+T52	Temperature 847 851	60°C
+R22	Setting Arg1:E15 Arg2:T51	
+R23	Setting Arg1:E15 Arg2:T52	
+T53	Action 853 856	Add
+E16	Action:T53 Acts-on:T55
+T54	Amount 857 862	100µl
+T55	Reagent 863 885	Precipitation Solution
+T56	Action 890 893	mix
+E17	Action:T56 
+T57	Action 897 906	inverting
+E18	Action:T57 Acts-on:T58 Count:T59
+T58	Location 911 915	tube
+T59	Numerical 916 929	several times
+R24	Measure Arg1:T55 Arg2:T54	
+T60	Action 931 941	Centrifuge
+E19	Action:T60 Acts-on:T61
+T61	Reagent 946 952	sample
+T62	Speed 956 964	14,000xg
+T63	Time 969 978	5 minutes
+R26	Setting Arg1:E19 Arg2:T62	
+R27	Setting Arg1:E19 Arg2:T63	
+T64	Action 980 988	Transfer
+E20	Action:T64 Acts-on:T65 Site:T66
+T65	Reagent 993 1004	supernatant
+T66	Location 1010 1020	clean tube
+T40	Action 1025 1036	precipitate
+E21	Action:T40 Acts-on:T67 Using:T69
+T67	Reagent 1041 1052	genomic DNA
+T68	Amount 1058 1063	500µl
+T69	Reagent 1064 1075	isopropanol
+R19	Measure Arg1:T69 Arg2:T68	
+T70	Action 1077 1083	Invert
+E22	Action:T70 Acts-on:T71 Count:T72
+T71	Location 1088 1093	tubes
+T72	Numerical 1094 1102	10 times
+T73	Action 1106 1117	precipitate
+E23	Action:T73 Acts-on:T74
+T74	Reagent 1122 1125	DNA
+T75	Action 1165 1168	add
+E24	Action:T75 Acts-on:T77
+T76	Amount 1169 1172	2µl
+T77	Reagent 1173 1188	Mussel Glycogen
+R25	Measure Arg1:T77 Arg2:T76	
+T78	Action 1207 1217	Centrifuge
+E25	Action:T78 
+T79	Speed 1221 1229	14,000xg
+T80	Time 1234 1243	5 minutes
+T81	Action 1247 1253	pellet
+E26	Action:T81 Acts-on:T82
+T82	Reagent 1254 1265	genomic DNA
+R28	Setting Arg1:E25 Arg2:T79	
+R29	Setting Arg1:E25 Arg2:T80	
+T83	Action 1267 1273	Remove
+E27	Action:T83 Acts-on:T84
+T84	Reagent 1278 1289	supernatant
+T85	Action 1291 1294	Add
+E28	Action:T85 Acts-on:T88 Site:T89
+T86	Amount 1295 1300	700µl
+T87	Concentration 1301 1304	70%
+T88	Reagent 1305 1312	ethanol
+T89	Location 1320 1324	tube
+T90	Action 1329 1335	invert
+E29	Action:T90 Count:T91
+T91	Numerical 1336 1349	several times
+T92	Action 1353 1357	wash
+E30	Action:T92 Acts-on:T93
+T93	Reagent 1362 1372	DNA pellet
+R30	Measure Arg1:T88 Arg2:T87	
+R31	Measure Arg1:T88 Arg2:T86	
+T94	Action 1374 1384	Centrifuge
+E31	Action:T94 
+T95	Time 1389 1397	1 minute
+T96	Speed 1401 1409	14,000xg
+T97	Action 1421 1432	pipette off
+E32	Action:T97 Acts-on:T98
+T98	Reagent 1437 1449	ethanol wash
+T99	Action 1453 1459	Invert
+E33	Action:T99 Acts-on:T100 Site:T101
+T100	Location 1464 1468	tube
+T101	Location 1490 1497	surface
+T102	Time 1502 1517	several minutes
+T103	Action 1521 1526	allow
+E34	Action:T103 Acts-on:T105
+T104	Amount 1527 1537	any excess
+T105	Reagent 1538 1545	ethanol
+R32	Measure Arg1:T105 Arg2:T104	
+T106	Action 1561 1564	Add
+E35	Action:T106 Acts-on:T108 Site:T109
+T107	Amount 1565 1569	50µl
+T108	Reagent 1570 1579	TE Buffer
+T109	Reagent 1587 1593	pellet
+R33	Measure Arg1:T108 Arg2:T107	
+T110	Action 1595 1603	Incubate
+E36	Action:T110 
+T111	Temperature 1607 1623	room temperature
+T112	Time 1637 1647	15 minutes
+T113	Action 1651 1660	rehydrate
+E37	Action:T113 
+R34	Setting Arg1:E36 Arg2:T111	
+R35	Setting Arg1:E36 Arg2:T112	
+T114	Amount 1672 1675	1µl
+T115	Reagent 1676 1691	LongLife™ RNase
+T116	Amount 1702 1707	100µl
+T117	Modifier 1692 1701	for every
+R36	Measure Arg1:T115 Arg2:T114	
+R37	Mod-Link Arg1:T114 Arg2:T117	
+T118	Reagent 1708 1717	TE Buffer
+R38	Measure Arg1:T118 Arg2:T116	
+R39	Mod-Link Arg1:T118 Arg2:T117	
+T119	Action 1746 1751	Store
+E38	Action:T119 Acts-on:T120
+T120	Reagent 1752 1755	DNA
+T121	Temperature 1759 1762	4°C
+T122	Action 1786 1791	store
+E39	Action:T122 
+T123	Temperature 1795 1800	-20°C
+T124	Temperature 1804 1809	-80°C
+R40	Or Arg1:T123 Arg2:T124	
+R41	Setting Arg1:E39 Arg2:T123	
+R42	Setting Arg1:E38 Arg2:T121	
+T125	Method 0 9	OmniPrep™
+T126	Modifier 14 26	High Quality
+T127	Reagent 27 38	Genomic DNA
+T128	Method 39 49	Extraction
+T129	Modifier 55 64	Nucleated
+T130	Reagent 65 76	Blood Cells
+T131	Reagent 78 82	Bird
+T132	Reagent 84 88	Fish
+T133	Reagent 90 94	Frog
+R43	Mod-Link Arg1:T130 Arg2:T129	
+R44	Mod-Link Arg1:T127 Arg2:T126	
+T134	Action 232 236	heat
+E40	Action:T134 
+T135	Modifier 237 248	higher than
+T136	Temperature 249 253	60°C
+R45	Mod-Link Arg1:T136 Arg2:T135	
+R46	Setting Arg1:E40 Arg2:T136	
+T137	Reagent 277 280	DNA
+T138	Method 281 289	recovery
+T139	Action 441 447	digest
+E41	Action:T139 Acts-on:T141
+T140	Modifier 448 462	hard to handle
+T141	Reagent 463 470	tissues
+T142	Modifier 475 488	significantly
+T143	Action 489 496	improve
+E42	Action:T143 
+R47	Mod-Link Arg1:E42 Arg2:T142	
+R48	Mod-Link Arg1:T141 Arg2:T140	
+T144	Modifier 700 705	clean
+R49	Mod-Link Arg1:T41 Arg2:T144	
+T145	Modifier 662 671	carefully
+R50	Mod-Link Arg1:E11 Arg2:T145	
+T146	Reagent 1194 1205	DNA carrier
+T147	Reagent 1151 1154	DNA
+T148	Method 1155 1163	recovery
+R51	Setting Arg1:E31 Arg2:T95	
+R52	Setting Arg1:E31 Arg2:T96	
+T149	Action 1411 1417	Decant
+E43	Action:T149 Acts-on:T98
+R53	Or Arg1:E43 Arg2:E32	
+T150	Modifier 1474 1489	clean absorbent
+R54	Mod-Link Arg1:T101 Arg2:T150	
+T151	Modifier 1628 1636	at least
+R55	Mod-Link Arg1:T112 Arg2:T151	
+T152	Action 1725 1730	added
+E44	Action:T152 Acts-on:T118

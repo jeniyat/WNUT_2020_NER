@@ -1,0 +1,23 @@
+T1	Action 74 82	Incubate
+E1	Action:T1 
+T2	Time 95 105	30 minutes
+T3	Action 107 111	Heat
+E2	Action:T3 Acts-on:T4 Commands:E3
+T4	Reagent 112 122	inactivate
+T5	Action 126 136	incubating
+E3	Action:T5 
+T6	Time 149 159	20 minutes
+#1	AnnotatorNotes E3	discuss
+#2	AnnotatorNotes E2	discuss
+R1	Setting Arg1:E1 Arg2:T2	
+T7	Temperature 140 144	65°C
+R2	Setting Arg1:E3 Arg2:T7	
+R3	Setting Arg1:E3 Arg2:T6	
+T8	Temperature 86 90	37°C
+R4	Setting Arg1:E1 Arg2:T8	
+T9	Reagent 63 71	reaction
+T10	Action 0 20	Radioactive Labeling
+E4	Action:T10 Using:T11
+T11	Reagent 26 32	T4 PNK
+T12	Action 42 48	Set-up
+E5	Action:T12 Acts-on:T9

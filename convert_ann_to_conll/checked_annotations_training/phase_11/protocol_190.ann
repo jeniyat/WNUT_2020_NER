@@ -1,0 +1,129 @@
+T1	Action 43 49	Filter
+E1	Action:T1 Acts-on:T24 Using:T23
+T2	Action 159 162	Add
+E2	Action:T2 
+T3	Action 313 319	adding
+E3	Action:T3 Acts-on:T28
+T4	Action 369 379	incubating
+E4	Action:T4 Using:T63
+T5	Action 341 349	dividing
+E5	Action:T5 
+T6	Action 413 418	Amend
+E6	Action:T6 Acts-on:T29 Acts-on2:T65
+T7	Action 539 545	Employ
+E7	Action:T7 Using:T31
+T8	Action 647 654	Prepare
+E8	Action:T8 Product:T33 Using:T36
+T9	Action 810 816	dilute
+E9	Action:T9 Acts-on:T37
+T10	Action 879 886	Prepare
+E10	Action:T10 Product:T39 Site:T40 Acts-on:T73
+T11	Action 965 972	Prepare
+E11	Action:T11 Product:T41 Acts-on:T21 Site:T74
+T12	Action 1034 1042	Incubate
+E12	Action:T12 Acts-on:T43 Site:T75
+T13	Action 1118 1123	Score
+E13	Action:T13 Acts-on:T76
+T14	Action 1213 1222	Calculate
+E14	Action:T14 Using:T44 Measure-Type-Link:T81
+T15	Action 1301 1309	Evaluate
+E15	Action:T15 Using:T46 Measure-Type-Link:T86
+T16	Action 1437 1444	Perform
+E16	Action:T16 Using:T45
+T17	Action 123 129	remove
+E17	Action:T17 Acts-on:T25
+T18	Action 233 239	reduce
+E18	Action:T18 Measure-Type-Link:T57
+T19	Action 587 596	enumerate
+E19	Action:T19 Acts-on:T32 Using:T31
+T20	Action 859 864	place
+E20	Action:T20 Acts-on:T38 Acts-on2:T37
+T22	Modifier 72 78	0.2-µm
+T23	Device 79 85	filter
+R1	Mod-Link Arg1:T23 Arg2:T22	
+T24	Reagent 55 61	sample
+T25	Reagent 142 157	ambient viruses
+T26	Modifier 183 191	filtered
+T27	Reagent 193 198	water
+R2	Mod-Link Arg1:T27 Arg2:T26	
+T28	Reagent 320 339	virus-free seawater
+T29	Reagent 444 470	inducing agent mitomycin C
+T30	Concentration 493 500	1 µg/mL
+R3	Measure Arg1:T29 Arg2:T30	
+T31	Method 571 583	(MPN) method
+T32	Reagent 601 622	cyanophage population
+T33	Reagent 710 745	prophage induction treatment sample
+T34	Amount 657 685	one- to five-dilution series
+R4	Setting Arg1:E8 Arg2:T34	
+T35	Modifier 752 770	96-well microtiter
+T36	Location 771 777	plates
+R5	Mod-Link Arg1:T36 Arg2:T35	
+T37	Reagent 831 849	Synechococcus host
+T38	Location 873 877	well
+T39	Reagent 918 934	sterile SN media
+T40	Location 942 963	first column of wells
+T41	Reagent 979 998	replicate treatment
+T42	Modifier 973 978	three
+R6	Mod-Link Arg1:T41 Arg2:T42	
+T21	Device 1003 1017	control plates
+T43	Location 1047 1053	plates
+T44	Method 1263 1274	MPN program
+T45	Method 1512 1529	linear regression
+T46	Method 1371 1384	paired t test
+T47	Method 9 18	induction
+T48	Reagent 0 8	Prophage
+T49	Reagent 22 42	marine Synechococcus
+T50	Measure-Type 91 97	volume
+T51	Modifier 101 114	approximately
+T52	Amount 115 119	5 mL
+R7	Mod-Link Arg1:T52 Arg2:T51	
+T53	Size 175 182	0.02-µm
+T54	Modifier 163 173	virus-free
+R8	Mod-Link Arg1:T27 Arg2:T54	
+T55	Action 199 207	prepared
+E21	Action:T55 Site:T56
+T56	Reagent 222 228	sample
+T57	Measure-Type 244 250	volume
+T58	Numerical 253 259	second
+T59	Action 266 272	Return
+E22	Action:T59 Acts-on:T60
+T60	Reagent 277 286	retentate
+T61	Measure-Type 303 309	volume
+T62	Amount 355 363	aliquots
+R9	Setting Arg1:E5 Arg2:T62	
+T63	Reagent 397 411	inducing agent
+T64	Modifier 419 426	treated
+T65	Reagent 427 434	samples
+R10	Mod-Link Arg1:T65 Arg2:T64	
+T66	Measure-Type 476 489	concentration
+T67	Reagent 513 527	inducing agent
+T68	Method 550 570	most probable number
+T69	Reagent 693 706	environmental
+R11	Or Arg1:T33 Arg2:T69	
+T70	Modifier 819 830	susceptible
+R12	Mod-Link Arg1:T37 Arg2:T70	
+T71	Modifier 802 809	Freshly
+R13	Mod-Link Arg1:E9 Arg2:T71	
+T72	Concentration 850 854	1:10
+R14	Measure Arg1:T37 Arg2:T72	
+T73	Location 887 901	control plates
+T74	Location 1028 1032	site
+T75	Reagent 1079 1092	host organism
+T76	Location 1124 1129	wells
+T77	Reagent 1146 1151	virus
+T78	Reagent 1155 1160	lysis
+T79	Reagent 1168 1181	host organism
+T80	Location 1198 1202	well
+T81	Measure-Type 1223 1238	viral abundance
+T82	Location 1248 1253	plate
+T83	Reagent 1310 1319	treatment
+T84	Reagent 1324 1342	control cyanophage
+T85	Reagent 1347 1360	Synechococcus
+T86	Measure-Type 1361 1367	counts
+T87	Reagent 1393 1400	samples
+T88	Method 1407 1435	Minitab statistical software
+T89	Method 1459 1468	induction
+T90	Method 1534 1546	X2  analysis
+T91	Method 1559 1566	Minitab
+T92	Time 1105 1115	10–14 days
+R15	Setting Arg1:E12 Arg2:T92	

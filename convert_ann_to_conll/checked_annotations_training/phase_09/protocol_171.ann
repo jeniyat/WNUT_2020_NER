@@ -1,0 +1,62 @@
+T1	Action 37 43	Pellet
+E1	Action:T1 Acts-on:T11
+T2	Action 72 79	Suspend
+E2	Action:T2 Acts-on:T13
+T3	Action 107 110	Add
+E3	Action:T3 Acts-on:T16
+T4	Action 208 213	Shake
+E4	Action:T4 Acts-on:T19
+T5	Action 268 271	Add
+E5	Action:T5 Acts-on:T21
+T6	Action 307 310	Mix
+E6	Action:T6 
+T7	Action 312 322	Centrifuge
+E7	Action:T7 Acts-on:T22 Using:T23
+T8	Action 327 331	wash
+E8	Action:T8 Acts-on:T22 Using:T23
+T9	Action 360 364	Wash
+E9	Action:T9 Acts-on:T24 Count:T25
+T11	Reagent 44 49	cells
+T12	Amount 83 88	15 ml
+T13	Reagent 92 106	liquid phenol.
+R1	Measure Arg1:T13 Arg2:T12	
+T14	Amount 117 122	0.2ml
+T15	Concentration 123 125	5%
+T16	Reagent 126 148	cetylpyridium chloride
+T17	Action 173 183	facilitate
+E11	Action:T17 Using:T18
+T18	Method 184 206	chlorophyll extraction
+R2	Measure Arg1:T16 Arg2:T15	
+R3	Measure Arg1:T16 Arg2:T14	
+T19	Reagent 214 224	suspension
+T20	Amount 272 277	10 ml
+T21	Reagent 278 285	toluene
+R4	Measure Arg1:T21 Arg2:T20	
+T22	Reagent 332 338	pellet
+T23	Reagent 344 358	aqueous buffer
+T24	Reagent 365 371	pellet
+T25	Numerical 378 380	5x
+T26	Device 386 395	your nose
+T27	Action 410 417	removal
+E12	Action:T27 Acts-on:T28 Using:T26
+T28	Reagent 421 427	phenol
+T10	Reagent 0 6	Phenol
+T29	Method 7 17	extraction
+T30	Reagent 21 36	Chlorella cells
+T31	Modifier 51 52	~
+T32	Amount 52 55	1/2
+T33	Modifier 56 61	daily
+T34	Reagent 62 69	culture
+R5	Mod-Link Arg1:T32 Arg2:T31	
+R6	Mod-Link Arg1:T34 Arg2:T33	
+R7	Measure Arg1:T34 Arg2:T32	
+T35	Reagent 150 168	cationic detergent
+T36	Reagent 231 236	green
+T37	Action 246 255	extracted
+E10	Action:T37 Acts-on:T36 Site:T38
+T38	Reagent 261 266	cells
+T39	Reagent 467 483	wash supernatant
+T40	Modifier 461 466	final
+R8	Mod-Link Arg1:T39 Arg2:T40	
+T41	Reagent 517 523	phenol
+T42	Measure-Type 297 304	density

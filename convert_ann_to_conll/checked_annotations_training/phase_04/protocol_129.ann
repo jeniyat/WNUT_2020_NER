@@ -1,0 +1,275 @@
+T1	Action 434 440	Remove
+E1	Action:T1 Acts-on:T112 Site:T113 Using:T114
+T2	Action 653 658	mixed
+E2	Action:T2 Acts-on:T108 Acts-on2:T109
+T3	Action 803 809	heated
+E3	Action:T3 Acts-on:T105
+T4	Action 823 829	cooled
+E4	Action:T4 Site:T107 Acts-on:T105
+T5	Action 917 922	added
+E5	Action:T5 Site:T102 Acts-on:T103 Site2:T104
+T6	Action 1082 1093	synthesized
+E6	Action:T6 Acts-on:T99 Using:T101
+T7	Action 1176 1185	incubated
+E7	Action:T7 Acts-on:T95
+T8	Action 301 310	extracted
+E8	Action:T8 Acts-on:T115 Using:T116
+T10	Action 1393 1402	increased
+E10	Action:T10 
+T11	Action 1571 1577	heated
+E11	Action:T11 Acts-on:T87
+T12	Action 1625 1631	cooled
+E12	Action:T12 Site:T92
+T13	Action 1686 1697	synthesized
+E13	Action:T13 Acts-on:T81
+T14	Action 1822 1832	terminated
+E14	Action:T14 Acts-on:T15 Using:T78
+T16	Action 2188 2197	incubated
+E16	Action:T16 Acts-on:T71
+T17	Action 2226 2234	denature
+E17	Action:T17 Acts-on:T75
+T18	Action 2252 2260	activate
+E18	Action:T18 Acts-on:T74
+T19	Action 2308 2320	denaturation
+E19	Action:T19 Count:T68
+T20	Action 2340 2349	Annealing
+E20	Action:T20 
+T21	Action 2369 2378	Extension
+E21	Action:T21 
+T23	Action 2516 2522	purify
+E23	Action:T23 Acts-on:T59 Using:T60 Using2:T61
+T24	Action 2527 2538	concentrate
+E24	Action:T24 Acts-on:T59 Using:T60 Using2:T61
+T25	Action 2661 2667	loaded
+E25	Action:T25 Site:T55 Acts-on:T53
+T26	Action 2803 2810	excised
+E26	Action:T26 Acts-on:T29 Using:T52
+T27	Action 2815 2823	purified
+E27	Action:T27 Acts-on:T29 Using:T52
+T28	Action 2980 2987	eluting
+E28	Action:T28 Acts-on:T46 Site:T47 Using:T48
+T32	Action 3461 3468	removed
+E32	Action:T32 Acts-on:T38 Site:T39 Using:T40 Using2:T33
+T34	Action 3700 3709	recovered
+E34	Action:T34 Acts-on:T31
+T35	Action 3713 3720	eluting
+E35	Action:T35 Acts-on:T37
+T30	Method 61 85	Cesium chloride gradient
+T9	Action 102 108	purify
+E9	Action:T9 Using:T30 Acts-on:T117
+T31	Reagent 3683 3690	Viruses
+T36	Amount 3724 3733	3 × 50 µL
+T37	Location 3737 3760	0.02-filtered SM buffer
+R1	Measure Arg1:T37 Arg2:T36	
+T38	Reagent 3409 3413	CsCl
+T39	Location 3421 3456	Virus-containing gradient fractions
+T40	Method 3472 3487	buffer exchange
+T33	Device 3496 3528	centrifugal ultrafiltration unit
+T41	Modifier 3536 3567	nominal molecular weight cutoff
+T42	Generic-Measure 3571 3586	30 KD to 100 KD
+R2	Setting Arg1:T41 Arg2:T42	
+R3	Mod-Link Arg1:T33 Arg2:T41	
+T43	Modifier 3345 3353	relevant
+T44	Reagent 3354 3389	virus-containing gradient fractions
+T45	Action 3394 3403	collected
+E30	Action:T45 Acts-on:T44
+R4	Mod-Link Arg1:T44 Arg2:T43	
+T46	Reagent 2988 2991	DNA
+T47	Location 3001 3007	column
+T48	Method 3013 3025	three washes
+T49	Amount 3029 3034	10 µL
+T50	Reagent 3035 3054	nuclease-free water
+R5	Measure Arg1:T50 Arg2:T49	
+T29	Reagent 2756 2768	Bands of DNA
+T51	Modifier 2776 2798	appropriate size range
+T52	Method 2831 2867	MinElute Gel Extraction kit (Qiagen)
+R6	Mod-Link Arg1:T29 Arg2:T51	
+T53	Reagent 2644 2656	PCR products
+T54	Modifier 2635 2643	Purified
+T55	Location 2675 2689	1% agarose gel
+T56	Reagent 2701 2720	1 × SYBR safe stain
+T57	Reagent 2738 2754	0.5 × TBE buffer
+R9	Mod-Link Arg1:T53 Arg2:T54	
+R7	Meronym Arg1:T56 Arg2:T55	
+R8	Meronym Arg1:T57 Arg2:T55	
+T58	Time 2490 2511	Before gel separation
+R10	Setting Arg1:E23 Arg2:T58	
+R11	Setting Arg1:E24 Arg2:T58	
+T59	Reagent 2543 2556	PCR reactions
+T60	Device 2564 2591	MinElute PCR cleanup column
+T61	Method 2601 2633	as described by the manufacturer
+T62	Time 2420 2426	13 min
+T22	Action 2444 2454	completion
+E22	Action:T22 Using:T63
+T63	Method 2400 2415	final extension
+R12	Setting Arg1:E22 Arg2:T62	
+T64	Temperature 2382 2386	72°C
+T65	Time 2391 2396	2 min
+R13	Setting Arg1:E21 Arg2:T64	
+R14	Setting Arg1:E21 Arg2:T65	
+T66	Temperature 2353 2357	65°C
+T67	Time 2362 2367	1 min
+R15	Setting Arg1:E20 Arg2:T66	
+R16	Setting Arg1:E20 Arg2:T67	
+T68	Numerical 2295 2297	35
+T69	Temperature 2324 2328	94°C
+T70	Time 2333 2338	1 min
+R17	Setting Arg1:E19 Arg2:T69	
+R18	Setting Arg1:E19 Arg2:T70	
+T71	Reagent 2176 2184	reaction
+T72	Temperature 2201 2205	94°C
+T73	Time 2210 2216	10 min
+R19	Setting Arg1:E16 Arg2:T72	
+R20	Setting Arg1:E16 Arg2:T73	
+T74	Reagent 2265 2281	hot start enzyme
+T75	Reagent 2239 2247	template
+T76	Modifier 2220 2225	fully
+R21	Mod-Link Arg1:E17 Arg2:T76	
+T15	Reagent 1803 1818	Klenow reaction
+T77	Modifier 1840 1845	final
+T78	Reagent 1846 1856	incubation
+R22	Mod-Link Arg1:T78 Arg2:T77	
+T79	Temperature 1860 1864	75°C
+T80	Time 1869 1875	10 min
+R23	Setting Arg1:E14 Arg2:T79	
+R24	Setting Arg1:E14 Arg2:T80	
+T81	Reagent 1642 1669	complementary second strand
+T82	Temperature 1701 1705	37°C
+T83	Time 1710 1716	60 min
+R25	Setting Arg1:E13 Arg2:T82	
+R26	Setting Arg1:E13 Arg2:T83	
+T84	Temperature 1526 1530	50°C
+T85	Time 1502 1511	hour-long
+T86	Action 1512 1522	incubation
+E15	Action:T86 
+R27	Setting Arg1:E15 Arg2:T85	
+R28	Setting Arg1:E15 Arg2:T84	
+T87	Reagent 1536 1567	first strand synthesis reaction
+T88	Modifier 1578 1589	immediately
+T89	Temperature 1593 1597	94°C
+T90	Time 1602 1607	3 min
+T91	Modifier 1617 1624	rapidly
+T92	Location 1635 1638	ice
+R29	Setting Arg1:E11 Arg2:T89	
+R30	Mod-Link Arg1:T89 Arg2:T88	
+R31	Setting Arg1:E11 Arg2:T90	
+R32	Mod-Link Arg1:E12 Arg2:T91	
+T93	Temperature 1406 1410	50°C
+R33	Setting Arg1:E10 Arg2:T93	
+T94	Time 1484 1490	60 min
+R34	Setting Arg1:E10 Arg2:T94	
+T95	Reagent 1164 1172	reaction
+T96	Modifier 1186 1195	initially
+T97	Temperature 1199 1203	25°C
+T98	Time 1208 1214	10 min
+R35	Mod-Link Arg1:E7 Arg2:T96	
+R36	Setting Arg1:E7 Arg2:T97	
+R37	Setting Arg1:E7 Arg2:T98	
+T99	Reagent 1054 1078	complementary DNA strand
+T100	Amount 1099 1104	200 U
+T101	Reagent 1108 1158	Superscript III (Invitrogen) reverse transcriptase
+R38	Measure Arg1:T101 Arg2:T100	
+T102	Location 884 887	ice
+T103	Reagent 889 892	DTT
+T104	Reagent 930 938	reaction
+T105	Reagent 791 799	reaction
+T106	Temperature 813 817	65°C
+T107	Location 833 836	ice
+R39	Setting Arg1:E3 Arg2:T106	
+T108	Reagent 616 649	10 µL purified RNA viral template
+T109	Reagent 666 690	final dNTP concentration
+T110	Modifier 694 771	0.2 mM and 1 µM and 5 nM final concentrations of FR26RV-N and FR40RV-T primer
+R40	Mod-Link Arg1:T109 Arg2:T110	
+T111	Modifier 441 454	contaminating
+T112	Reagent 455 458	DNA
+T113	Reagent 464 480	RNA preparations
+R41	Mod-Link Arg1:T112 Arg2:T111	
+T114	Device 490 507	Turbo DNAfree kit
+T115	Reagent 276 292	density fraction
+T116	Device 320 345	QIAamp Viral RNA Mini kit
+T117	Reagent 109 116	viruses
+T118	Location 122 151	viral concentrate of seawater
+R42	Meronym Arg1:T117 Arg2:T118	
+T119	Method 0 12	Construction
+T120	Reagent 39 60	RNA virus assemblages
+T121	Reagent 600 604	cDNA
+T122	Method 605 614	synthesis
+T123	Method 584 595	preparation
+T124	Reagent 850 857	primers
+T125	Reagent 945 973	enzyme stabilization reagent
+T126	Reagent 984 989	RNase
+T127	Reagent 995 1005	Invitrogen
+T128	Action 1010 1017	protect
+E29	Action:T128 Acts-on:T129
+T129	Reagent 1022 1028	sample
+T130	Reagent 1034 1039	RNAse
+T131	Amount 979 983	40 U
+R43	Measure Arg1:T126 Arg2:T131	
+T132	Concentration 894 900	0.5 mM
+T133	Modifier 901 906	final
+T134	Measure-Type 907 911	conc
+T135	Reagent 1343 1347	cDNA
+T136	Method 1348 1357	synthesis
+T137	Reagent 1245 1260	primer FR26RV-N
+T138	Reagent 1289 1304	primer FR40RV-T
+T139	Reagent 1227 1241	hexamer 3′ end
+R44	Meronym Arg1:T139 Arg2:T137	
+T140	Reagent 1269 1285	poly(T)20 3′ end
+R45	Meronym Arg1:T140 Arg2:T138	
+T141	Action 1312 1320	annealed
+E31	Action:T141 Acts-on:T137 Acts-on2:T138 Site:T142
+T142	Reagent 1328 1336	template
+T143	Measure-Type 1373 1384	temperature
+T144	Measure-Type 1416 1427	temperature
+T145	Reagent 1437 1454	Superscript III’s
+T146	Generic-Measure 1455 1467	processivity
+R46	Measure Arg1:T145 Arg2:T146	
+T147	Amount 1738 1743	2.5 U
+T148	Reagent 1747 1762	Klenow Fragment
+R47	Measure Arg1:T148 Arg2:T147	
+T149	Reagent 1881 1893	PCR reaction
+T150	Amount 1903 1907	5 µL
+T151	Reagent 1911 1919	template
+R48	Measure Arg1:T151 Arg2:T150	
+R49	Meronym Arg1:T151 Arg2:T149	
+T152	Reagent 1944 1957	second strand
+T153	Method 1958 1967	synthesis
+T154	Concentration 1978 1983	40 pM
+T155	Reagent 1987 2000	FR20RV primer
+R50	Measure Arg1:T155 Arg2:T154	
+T156	Modifier 2018 2023	final
+T157	Reagent 2024 2028	dNTP
+T158	Measure-Type 2029 2042	concentration
+R51	Mod-Link Arg1:T157 Arg2:T156	
+T159	Concentration 2046 2052	0.2 mM
+R52	Measure Arg1:T157 Arg2:T159	
+T160	Numerical 2054 2055	1
+T161	Reagent 2058 2069	Gold buffer
+R53	Measure Arg1:T161 Arg2:T160	
+T162	Concentration 2071 2077	2.5 mM
+T163	Reagent 2078 2083	MgCl2
+R54	Measure Arg1:T163 Arg2:T162	
+T164	Amount 2089 2094	2.5 U
+T165	Reagent 2098 2122	Ampligold DNA polymerase
+R55	Measure Arg1:T165 Arg2:T164	
+T166	Modifier 2149 2154	final
+T167	Measure-Type 2155 2161	volume
+T168	Amount 2165 2170	50 µL
+T169	Reagent 2458 2478	complementary strand
+T170	Method 2479 2488	synthesis
+T171	Reagent 2921 2927	sample
+T172	Action 2948 2965	Sanger sequencing
+E33	Action:T172 
+T173	Reagent 3078 3091	PCRTerminator
+T174	Reagent 3093 3100	Lucigen
+T175	Method 3131 3147	cloning protocol
+T176	Modifier 3318 3330	picorna-like
+T177	Reagent 3331 3338	viruses
+R56	Mod-Link Arg1:T177 Arg2:T176	
+T178	Reagent 3219 3225	primer
+T179	Modifier 3208 3218	degenerate
+R57	Mod-Link Arg1:T178 Arg2:T179	
+T180	Method 3234 3287	transcriptionpolymerase chain reaction–based protocol
+T181	Modifier 3226 3233	reverse
+T182	Mention 576 579	kit
+R58	Coreference-Link Arg1:T182 Arg2:T114	

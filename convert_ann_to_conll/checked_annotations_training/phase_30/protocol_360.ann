@@ -1,0 +1,46 @@
+T1	Action 24 32	Incubate
+E1	Action:T1 Acts-on:T4 Site:T5
+T2	Action 204 209	store
+E2	Action:T2 Acts-on:T9 Site:T10
+T3	Action 268 277	Transform
+E3	Action:T3 Acts-on:T12 Using:T14
+T4	Reagent 33 40	samples
+T5	Device 46 58	thermocycler
+T6	Temperature 62 66	50°C
+T7	Time 71 81	15 minutes
+T8	Time 129 139	60 minutes
+T9	Reagent 210 217	samples
+T10	Location 221 224	ice
+T11	Temperature 231 236	–20°C
+R1	Setting Arg1:E1 Arg2:T6	
+R2	Setting Arg1:E1 Arg2:T7	
+R3	Or Arg1:T7 Arg2:T8	
+R4	Setting Arg1:E2 Arg2:T11	
+T12	Reagent 278 313	NEB 5-alpha Competent E. coli cells
+T13	Amount 382 386	2 μl
+T14	Reagent 394 411	assembled product
+R5	Measure Arg1:T14 Arg2:T13	
+T15	Reagent 0 8	HiFi DNA
+T16	Action 9 17	Assembly
+E5	Action:T16 Acts-on:T15
+T18	Numerical 88 89	2
+T19	Numerical 93 94	3
+T20	Reagent 95 104	fragments
+T21	Action 115 124	assembled
+E6	Action:T21 Acts-on:T20
+R7	Measure Arg1:T20 Arg2:T18	
+R8	Measure Arg1:T20 Arg2:T19	
+R9	Or Arg1:T18 Arg2:T19	
+T22	Numerical 146 149	4–6
+T23	Reagent 150 159	fragments
+R10	Measure Arg1:T23 Arg2:T22	
+T24	Action 170 179	assembled
+E7	Action:T24 Acts-on:T23
+T25	Method 192 202	incubation
+T26	Method 252 266	transformation
+T27	Device 331 342	cloning kit
+T17	Action 346 355	purchased
+E4	Action:T17 
+T28	Modifier 356 366	separately
+R6	Mod-Link Arg1:E4 Arg2:T28	
+T29	Method 427 441	transformation

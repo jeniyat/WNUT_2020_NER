@@ -1,0 +1,21 @@
+T1	Action 86 94	Incubate
+E1	Action:T1 
+T2	Action 119 123	Heat
+E2	Action:T2 Acts-on:T6
+T3	Action 138 148	incubating
+E3	Action:T3 
+T4	Temperature 98 102	37°C
+T5	Time 107 117	30 minutes
+R1	Setting Arg1:E1 Arg2:T4	
+R2	Setting Arg1:E1 Arg2:T5	
+T6	Reagent 124 134	inactivate
+T7	Temperature 152 156	65°C
+T8	Time 161 171	20 minutes
+R3	Setting Arg1:E3 Arg2:T7	
+R4	Setting Arg1:E3 Arg2:T8	
+T9	Action 0 20	Radioactive Labeling
+E4	Action:T9 Using:T10
+T10	Reagent 26 53	T4 PNK 3' phosphatase minus
+T11	Action 54 60	Set-up
+E5	Action:T11 Acts-on:T12
+T12	Reagent 75 83	reaction

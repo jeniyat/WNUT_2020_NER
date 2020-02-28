@@ -1,0 +1,233 @@
+T1	Action 50 57	Grow up
+E1	Action:T1 Acts-on:T24 Product:T27 Using:T28
+T2	Action 149 152	Add
+E2	Action:T2 Acts-on:T29 Acts-on2:T34
+T4	Action 266 276	Centrifuge
+E4	Action:T4 Using:T39
+T5	Action 338 344	Filter
+E5	Action:T5 Acts-on:T42 Using:T43
+T6	Action 394 397	Mix
+E6	Action:T6 Acts-on:T44 Using:T46
+T7	Action 463 471	Incubate
+E7	Action:T7 
+T9	Action 637 644	Discard
+E9	Action:T9 Acts-on:T8
+T10	Action 665 674	resuspend
+E10	Action:T10 Acts-on:T59 Site:T61
+T11	Action 718 721	Add
+E11	Action:T11 Acts-on:T62
+T12	Action 745 750	place
+E12	Action:T12 Acts-on3:T64 Site:T66
+T13	Action 823 829	Put on
+E13	Action:T13 Acts-on:T67 Site:T69 Using:T71
+T14	Action 897 904	Combine
+E14	Action:T14 Acts-on:T73 Site:T75
+T15	Action 1006 1013	Prepare
+E15	Action:T15 Product:T76 Site:T77
+T16	Action 1091 1094	Add
+E16	Action:T16 Acts-on:T80 Site:T81
+T17	Action 1129 1133	Spin
+E17	Action:T17 Using:T85
+T18	Action 1195 1201	Remove
+E18	Action:T18 Acts-on:T87
+T19	Action 1278 1290	Step dialyze
+E19	Action:T19 Using:T88 Acts-on:T90 Acts-on2:T91 Acts-on3:T92
+T20	Action 1517 1522	Store
+E20	Action:T20 Acts-on:T101
+T21	Action 1564 1572	Incubate
+E21	Action:T21 
+T22	Action 1606 1609	Add
+E22	Action:T22 Acts-on:T106 Site:T107
+T23	Action 1704 1712	Incubate
+E23	Action:T23 Acts-on:T108
+T24	Reagent 58 63	cells
+T25	Amount 82 86	1-2L
+R1	Measure Arg1:T24 Arg2:T25	
+T26	Numerical 97 109	~1011 - 1012
+T27	Reagent 110 115	cells
+T28	Method 122 147	'microbubbling' technique
+R2	Measure Arg1:T27 Arg2:T26	
+T29	Reagent 153 160	Rnase A
+T30	Amount 182 187	250µl
+T31	Reagent 191 199	Qiagen's
+T32	Concentration 200 208	100mg/ml
+R3	Measure Arg1:T31 Arg2:T30	
+R4	Measure Arg1:T31 Arg2:T32	
+T33	Amount 162 171	10ug ml-1
+R6	Meronym Arg1:T31 Arg2:T29	
+T34	Reagent 220 226	DNase1
+T35	Amount 250 254	50µl
+R5	Measure Arg1:T29 Arg2:T33	
+T36	Amount 228 240	0.25 SU ml-1
+R7	Measure Arg1:T34 Arg2:T36	
+T37	Reagent 258 263	stock
+R8	Measure Arg1:T37 Arg2:T35	
+R9	Meronym Arg1:T37 Arg2:T34	
+T3	Speed 277 287	12,500 rpm
+T38	Speed 289 297	23,975xg
+T39	Device 302 315	Beckman Ja-14
+T40	Time 320 330	15 minutes
+T41	Temperature 334 337	4°C
+T42	Reagent 349 360	supernatant
+T43	Location 371 392	Kim Wipe tissue paper
+R10	Setting Arg1:T39 Arg2:T38	
+R11	Setting Arg1:T39 Arg2:T3	
+R12	Setting Arg1:T39 Arg2:T40	
+R13	Setting Arg1:T39 Arg2:T41	
+T44	Reagent 401 420	polyethylene glycol
+T45	Modifier 446 452	gentle
+T46	Method 453 461	stirring
+T47	Time 472 481	overnight
+T48	Temperature 485 488	4°C
+R14	Setting Arg1:E7 Arg2:T47	
+R15	Setting Arg1:E7 Arg2:T48	
+T49	Reagent 498 519	PEG-phage precipitate
+T50	Action 523 533	centrifuge
+E3	Action:T50 Acts-on:T56 Using:T53 Product:T49
+T51	Speed 576 585	12,500rpm
+T52	Speed 587 595	23,975xg
+T53	Device 600 613	Beckman Ja-14
+T54	Time 618 628	15 minutes
+T55	Temperature 632 635	4°C
+T56	Location 537 542	tubes
+T57	Numerical 535 536	6
+R16	Measure Arg1:T56 Arg2:T57	
+R17	Setting Arg1:T53 Arg2:T51	
+R18	Setting Arg1:T53 Arg2:T52	
+R19	Setting Arg1:T53 Arg2:T54	
+R20	Setting Arg1:T53 Arg2:T55	
+T8	Reagent 645 656	supernatant
+T58	Modifier 658 664	Gently
+T59	Reagent 675 681	pellet
+T60	Amount 688 700	1/150 volume
+T61	Reagent 701 706	Pro99
+R21	Mod-Link Arg1:E10 Arg2:T58	
+R22	Measure Arg1:T61 Arg2:T60	
+T62	Reagent 725 743	resuspension media
+T63	Location 755 759	tube
+T64	Location 767 771	side
+T65	Mention 763 766	its
+T66	Location 775 792	syrofoam cut-outs
+R23	Coreference-Link Arg1:T65 Arg2:T63	
+R24	Meronym Arg1:T64 Arg2:T65	
+T67	Device 830 844	orbital shaker
+T68	Speed 846 853	150 rpm
+T69	Location 858 867	cold room
+T70	Time 872 881	overnight
+T71	Method 882 895	re-suspension
+R25	Setting Arg1:T67 Arg2:T68	
+R26	Setting Arg1:E13 Arg2:T70	
+T72	Modifier 905 916	resuspended
+T73	Reagent 917 939	PEG concentrated phage
+T74	Numerical 947 953	single
+T75	Location 954 958	tube
+R27	Measure Arg1:T75 Arg2:T74	
+R28	Mod-Link Arg1:T73 Arg2:T72	
+T76	Reagent 1016 1034	CsCl step gradient
+T77	Location 1066 1087	ultracentrifuge tubes
+T78	Generic-Measure 1036 1061	1.3, 1.4, 1.5, 1.65 bands
+R29	Measure Arg1:T76 Arg2:T78	
+T79	Modifier 1095 1107	concentrated
+T80	Reagent 1108 1120	phage sample
+T81	Location 1124 1127	top
+R30	Mod-Link Arg1:T80 Arg2:T79	
+T82	Speed 1134 1144	28,000 rpm
+T83	Time 1149 1156	4 hours
+T84	Temperature 1160 1163	4°C
+T85	Device 1167 1193	SW28 swinging bucket rotor
+R34	Setting Arg1:T85 Arg2:T84	
+R35	Setting Arg1:T85 Arg2:T83	
+R36	Setting Arg1:T85 Arg2:T82	
+T86	Modifier 1202 1210	purified
+T87	Reagent 1211 1221	phage band
+R31	Mod-Link Arg1:T87 Arg2:T86	
+T88	Device 1294 1326	Slide-A-Lyzer dialysis cassettes
+T89	Time 1374 1384	30 minutes
+T90	Reagent 1393 1399	5xNaCl
+T91	Reagent 1406 1412	3xNaCl
+T92	Reagent 1438 1449	NaCl buffer
+T93	Concentration 1500 1506	100 mM
+T94	Reagent 1507 1512	MgCl2
+T95	Concentration 1460 1466	600 mM
+T96	Reagent 1467 1471	NaCl
+T97	Concentration 1473 1479	100 mM
+T98	Reagent 1480 1487	TrisHCL
+T99	pH 1489 1497	pH = 7.5
+R32	Measure Arg1:T96 Arg2:T95	
+R33	Measure Arg1:T98 Arg2:T97	
+R37	Measure Arg1:T98 Arg2:T99	
+R38	Measure Arg1:T94 Arg2:T93	
+R39	Setting Arg1:T88 Arg2:T89	
+R40	Meronym Arg1:T96 Arg2:T92	
+R41	Meronym Arg1:T98 Arg2:T92	
+R42	Meronym Arg1:T94 Arg2:T92	
+T100	Modifier 1523 1531	dialyzed
+T101	Reagent 1532 1541	particles
+T102	Temperature 1545 1548	4°C
+R43	Mod-Link Arg1:T101 Arg2:T100	
+R44	Setting Arg1:E20 Arg2:T102	
+T103	Time 1577 1583	1 hour
+T104	Temperature 1587 1603	room temperature
+R45	Setting Arg1:E21 Arg2:T103	
+R46	Setting Arg1:E21 Arg2:T104	
+T105	Amount 1610 1614	116g
+T106	Reagent 1615 1619	NaCl
+T107	Reagent 1633 1639	lysate
+R47	Measure Arg1:T106 Arg2:T105	
+T108	Location 1716 1719	ice
+T109	Time 1720 1730	30 minutes
+R48	Setting Arg1:E23 Arg2:T109	
+T110	Measure-Type 6 12	Volume
+T111	Modifier 0 5	Large
+T112	Reagent 13 36	Marine Cyanophage Phage
+T113	Method 37 49	Purification
+T114	Measure-Type 73 80	volumes
+T115	Modifier 67 72	large
+T116	Amount 178 180	2L
+T117	Amount 242 244	2L
+T118	Action 246 249	add
+E8	Action:T118 Acts-on:T37
+R49	Coreference-Link Arg1:T38 Arg2:T3	
+T119	Generic-Measure 422 431	PEG 8,000
+T120	Amount 433 441	100g L-1
+R50	Measure Arg1:T44 Arg2:T119	
+R51	Measure Arg1:T44 Arg2:T120	
+T121	Action 490 497	Collect
+E24	Action:T121 Acts-on:T49
+T122	Amount 561 563	2L
+T123	Measure-Type 564 571	volumes
+R52	Coreference-Link Arg1:T52 Arg2:T51	
+T124	Modifier 687 688	~
+R53	Mod-Link Arg1:T60 Arg2:T124	
+T125	Amount 709 715	1-2 ml
+T126	Modifier 708 709	~
+R54	Mod-Link Arg1:T125 Arg2:T126	
+R55	Measure Arg1:T61 Arg2:T125	
+T127	Action 974 982	layering
+E25	Action:T127 Site:T128
+T128	Reagent 990 1003	CsCl gradient
+T129	Generic-Measure 1236 1251	ρ = 1.4 and 1.5
+T130	Reagent 1252 1257	bands
+T131	Reagent 1261 1274	step gradient
+R56	Measure Arg1:T130 Arg2:T129	
+T132	Generic-Measure 1343 1351	10K MWCO
+T133	Amount 1353 1363	0.5-3.0 ml
+T134	Measure-Type 1364 1370	volume
+T135	Concentration 1401 1403	3M
+T136	Concentration 1414 1418	1.8M
+T137	Numerical 1421 1424	two
+T138	Action 1425 1432	changes
+E26	Action:T138 Count:T137 Acts-on:T92
+T139	Concentration 1436 1438	1x
+R57	Measure Arg1:T92 Arg2:T139	
+R58	Measure Arg1:T90 Arg2:T135	
+R59	Measure Arg1:T91 Arg2:T136	
+T140	Amount 1624 1629	Liter
+R60	Measure Arg1:T107 Arg2:T140	
+T141	Concentration 1646 1648	2M
+T142	Reagent 1660 1668	seawater
+T143	Measure-Type 1682 1695	concentration
+T144	Modifier 1676 1681	final
+T145	Modifier 1696 1697	~
+T146	Concentration 1697 1701	2.6M
+R61	Mod-Link Arg1:T146 Arg2:T145	

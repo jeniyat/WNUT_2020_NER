@@ -1,0 +1,272 @@
+T1	Action 107 112	Place
+E1	Action:T1 Acts-on:T45 Site:T46
+T2	Action 154 158	boil
+E2	Action:T2 
+T3	Action 160 163	Add
+E3	Action:T3 Acts-on:T48
+T4	Action 189 192	Add
+E4	Action:T4 Acts-on:T51
+T5	Action 273 276	Add
+E5	Action:T5 Acts-on:T54
+T6	Action 298 304	adjust
+E6	Action:T6 
+T7	Action 397 403	Set up
+E7	Action:T7 Acts-on:T56
+T8	Action 431 434	Put
+E8	Action:T8 Acts-on:T57 Site:T162
+T9	Action 464 467	Put
+E9	Action:T9 Acts-on:T60 Site:T61
+T10	Action 506 514	maintain
+E10	Action:T10 Measure-Type-Link:T62
+T11	Action 548 556	hydrated
+E11	Action:T11 Acts-on:T64
+T12	Action 558 569	Anesthetize
+E12	Action:T12 Acts-on:T63 Using:T65
+T13	Action 598 602	Hold
+E13	Action:T13 Acts-on:T66 Using:T68
+T14	Action 650 655	Place
+E14	Action:T14 Acts-on:T70 Site:T69
+T15	Action 693 697	hold
+E15	Action:T15 Using:T72 Acts-on2:T73
+T16	Action 754 758	grap
+E16	Action:T16 Acts-on:T76 Using:T74
+T17	Action 786 790	pull
+E17	Action:T17 Acts-on:T78
+T18	Action 836 843	Squeeze
+E18	Action:T18 Acts-on:T79 Product:T81
+T19	Action 904 912	Transfer
+E19	Action:T19 Acts-on:T82 Site:T83 Site2:T84 Using:T85
+T20	Action 987 991	Wash
+E20	Action:T20 Acts-on:T86 Count:T87 Using:T89 Using2:T90
+T21	Action 1042 1050	Transfer
+E21	Action:T21 Acts-on:T91 Site:T93 Using:T92
+T22	Action 1133 1141	transfer
+E22	Action:T22 Site:T94
+T23	Action 1254 1260	Remove
+E23	Action:T23 Acts-on:T100
+T24	Action 1273 1277	Wash
+E24	Action:T24 Acts-on:T101 Count:T102 Using:T104
+T25	Action 1302 1305	Add
+E25	Action:T25 Acts-on:T105
+T26	Action 1353 1359	Remove
+E26	Action:T26 Acts-on:T108
+T27	Action 1372 1376	Wash
+E27	Action:T27 Count:T109 Using:T111
+T28	Action 1400 1403	Add
+E28	Action:T28 Acts-on:T112
+T29	Action 1411 1414	Add
+E29	Action:T29 Acts-on:T113
+T30	Action 1446 1451	cover
+E30	Action:T30 Acts-on:T114 Using:T115
+T31	Action 1535 1539	Rock
+E31	Action:T31 
+T32	Action 1589 1595	Remove
+E32	Action:T32 Acts-on:T121
+T33	Action 1608 1612	Wash
+E33	Action:T33 Count:T122 Using:T124
+T34	Action 1630 1633	Add
+E34	Action:T34 Acts-on:T125
+T35	Action 1641 1645	Rock
+E35	Action:T35 
+T36	Action 1715 1719	Wash
+E36	Action:T36 Count:T128 Using:T130
+T37	Action 1766 1774	transfer
+E37	Action:T37 Acts-on:T131 Site:T132 Using:T133
+T38	Action 1816 1822	remove
+E38	Action:T38 Acts-on:T134
+T39	Action 1882 1893	moisturized
+E39	Action:T39 Acts-on:T172
+T40	Action 1895 1898	Put
+E40	Action:T40 Acts-on:T136
+T41	Action 1933 1938	place
+E41	Action:T41 Acts-on:T137 Site:T139
+T42	Action 1977 1981	Heal
+E42	Action:T42 Acts-on:T140 Using:T142
+T43	Amount 113 118	10 ml
+T44	Concentration 122 124	1X
+T45	Reagent 125 128	PBS
+T46	Device 136 145	microwave
+R1	Measure Arg1:T45 Arg2:T44	
+R2	Measure Arg1:T45 Arg2:T43	
+T47	Amount 168 170	.4
+T48	Reagent 171 187	paraformaldehyde
+R3	Measure Arg1:T48 Arg2:T47	
+T49	Generic-Measure 193 200	4 drops
+T50	Concentration 204 206	2M
+T51	Reagent 207 211	NaCl
+R4	Measure Arg1:T51 Arg2:T50	
+R5	Measure Arg1:T51 Arg2:T49	
+T52	Generic-Measure 277 285	one drop
+T53	Amount 286 290	12ml
+T54	Reagent 291 294	HCL
+R6	Measure Arg1:T54 Arg2:T53	
+R7	Measure Arg1:T54 Arg2:T52	
+T55	pH 309 319	PH (7.5-8)
+R8	Setting Arg1:E6 Arg2:T55	
+T56	Device 408 429	dissection microscopy
+T57	Location 439 455	depression slide
+T58	Generic-Measure 468 479	three drops
+T59	Concentration 483 485	1X
+T60	Reagent 486 489	PBS
+T61	Location 497 502	slide
+T62	Measure-Type 519 521	PH
+T64	Reagent 535 547	egg chambers
+R9	Measure Arg1:T60 Arg2:T59	
+R10	Measure Arg1:T60 Arg2:T58	
+T63	Reagent 574 579	flies
+T65	Location 589 596	CO2 bed
+T66	Reagent 607 610	fly
+T67	Size 633 639	size 5
+T68	Device 640 647	tweezer
+R11	Measure Arg1:T68 Arg2:T67	
+T69	Location 666 671	slide
+T70	Mention 656 658	it
+T71	Reagent 702 705	fly
+T72	Device 683 692	left hand
+T73	Location 715 721	thorax
+R12	Meronym Arg1:T73 Arg2:T71	
+T74	Device 736 746	right hand
+T75	Modifier 747 753	gently
+T76	Location 763 766	tip
+T77	Reagent 774 781	abdomen
+R13	Meronym Arg1:T76 Arg2:T77	
+R14	Mod-Link Arg1:E16 Arg2:T75	
+T78	Mention 791 793	it
+R15	Coreference-Link Arg1:T78 Arg2:T77	
+T79	Reagent 848 855	abdomen
+T80	Modifier 856 862	gently
+T81	Reagent 873 892	pair of the ovaries
+R16	Mod-Link Arg1:E18 Arg2:T80	
+T82	Reagent 917 924	ovaries
+T83	Location 934 950	depression slide
+T84	Location 960 963	fix
+T85	Device 970 985	transfer piptte
+T86	Reagent 996 1003	ovaries
+T87	Numerical 1004 1006	3X
+T88	Concentration 1012 1014	1X
+T89	Reagent 1015 1018	PBS
+T90	Device 1025 1040	transfer piptte
+R17	Measure Arg1:T89 Arg2:T88	
+T91	Reagent 1055 1062	ovaries
+T92	Device 1088 1103	transfer piptte
+T93	Reagent 1072 1077	block
+T94	Location 1154 1163	microtube
+T95	Action 1196 1199	add
+E43	Action:T95 Acts-on:T97 Site:T94
+T96	Reagent 1184 1195	fresh block
+R18	Meronym Arg1:T96 Arg2:T94	
+T97	Reagent 1204 1220	primary antibody
+T98	Time 1221 1231	over night
+T99	Temperature 1235 1237	4C
+R19	Setting Arg1:E43 Arg2:T98	
+R20	Setting Arg1:E43 Arg2:T99	
+T100	Reagent 1265 1270	block
+T101	Reagent 1282 1289	ovaries
+T102	Numerical 1290 1292	3X
+T103	Concentration 1293 1295	1X
+T104	Reagent 1296 1299	PBS
+R21	Measure Arg1:T104 Arg2:T103	
+T105	Reagent 1306 1316	block Rock
+T106	Temperature 1320 1322	RT
+T107	Time 1327 1334	20 mins
+R22	Setting Arg1:E25 Arg2:T106	
+R23	Setting Arg1:E25 Arg2:T107	
+T108	Reagent 1364 1369	block
+T109	Numerical 1377 1380	one
+T110	Concentration 1391 1393	1X
+T111	Reagent 1394 1397	PBS
+R24	Measure Arg1:T111 Arg2:T110	
+T112	Reagent 1404 1409	block
+T113	Reagent 1415 1433	secondry antibodiy
+T114	Location 1456 1460	tube
+T115	Seal 1466 1470	foil
+T116	Action 1474 1497	prevent the interaction
+E44	Action:T116 Acts-on:T117 Using:T118
+T117	Reagent 1506 1518	2nd antibody
+T118	Reagent 1528 1533	light
+T119	Temperature 1543 1545	RT
+T120	Time 1550 1559	2-4 hours
+R25	Setting Arg1:E31 Arg2:T119	
+R26	Setting Arg1:E31 Arg2:T120	
+T121	Reagent 1600 1605	block
+T122	Numerical 1613 1615	3X
+T123	Concentration 1621 1623	1X
+T124	Reagent 1624 1627	PBS
+R27	Measure Arg1:T124 Arg2:T123	
+T125	Reagent 1634 1639	block
+T126	Time 1650 1657	30 mins
+T127	Temperature 1661 1663	RT
+R28	Setting Arg1:E35 Arg2:T126	
+R29	Setting Arg1:E35 Arg2:T127	
+T128	Numerical 1720 1723	one
+T129	Concentration 1734 1736	1X
+T130	Reagent 1737 1740	PBS
+R30	Measure Arg1:T130 Arg2:T129	
+T131	Reagent 1779 1786	ovaries
+T132	Location 1794 1807	regular slide
+T133	Location 1752 1764	glass piptte
+T134	Reagent 1835 1838	PBS
+T135	Generic-Measure 1899 1910	three drops
+T136	Reagent 1914 1928	mounting media
+R31	Measure Arg1:T136 Arg2:T135	
+T137	Seal 1943 1953	cover slip
+T138	Reagent 1968 1975	ovaries
+T139	Location 1957 1960	top
+R32	Meronym Arg1:T139 Arg2:T138	
+T140	Location 1986 1991	edges
+T141	Seal 1999 2009	cover slip
+T142	Reagent 2017 2028	nail polish
+R33	Meronym Arg1:T140 Arg2:T141	
+T143	Action 0 10	Dissecting
+E45	Action:T143 Acts-on:T145
+T144	Action 15 29	Immunostaining
+E46	Action:T144 Acts-on:T145
+T145	Reagent 30 66	Drosophila melanogaster Egg Chambers
+T146	Concentration 77 79	4%
+T147	Reagent 80 96	Paraformaldehyde
+T148	Concentration 99 101	1X
+T149	Reagent 102 105	PBS
+R34	Measure Arg1:T147 Arg2:T146	
+R35	Measure Arg1:T149 Arg2:T148	
+T150	Reagent 71 74	fix
+R36	Meronym Arg1:T147 Arg2:T150	
+R37	Meronym Arg1:T149 Arg2:T150	
+T151	Reagent 229 246	Paraphormaldehyde
+T152	Modifier 261 270	dissolved
+R38	Mod-Link Arg1:T151 Arg2:T152	
+T153	Reagent 325 330	block
+T154	Amount 332 337	10 ml
+T155	Concentration 341 343	1X
+T156	Reagent 344 347	PBS
+T157	Amount 348 355	10µl/ml
+T158	Reagent 356 375	Normal Donkey Serum
+T159	Amount 376 383	10µl/ml
+T160	Concentration 384 387	10X
+T161	Reagent 388 394	Triton
+R39	Meronym Arg1:T156 Arg2:T153	
+R40	Meronym Arg1:T158 Arg2:T153	
+R41	Meronym Arg1:T161 Arg2:T153	
+R42	Measure Arg1:T156 Arg2:T155	
+R43	Measure Arg1:T156 Arg2:T154	
+R44	Measure Arg1:T158 Arg2:T157	
+R45	Measure Arg1:T161 Arg2:T160	
+R46	Measure Arg1:T161 Arg2:T159	
+T162	Mention 459 461	it
+T163	Reagent 826 833	ovaries
+T164	Action 815 821	damage
+E47	Action:T164 Acts-on:T163
+T165	Action 1111 1119	blocking
+E48	Action:T165 Acts-on:T166
+T166	Reagent 1124 1131	ovaries
+T167	Time 1343 1350	30 mins
+T168	Action 1568 1586	secondray staining
+E49	Action:T168 
+T169	Action 1670 1677	washing
+E50	Action:T169 Acts-on:T171
+T170	Modifier 1682 1694	non-specific
+T171	Reagent 1695 1713	secondary antibody
+R47	Mod-Link Arg1:T171 Arg2:T170	
+T172	Reagent 1870 1881	egg chamber
+T173	Reagent 2036 2043	ovaries
+T174	Action 2060 2070	visualized
+E51	Action:T174 Acts-on:T173

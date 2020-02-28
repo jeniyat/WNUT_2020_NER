@@ -1,0 +1,303 @@
+T1	Action 60 63	Put
+E1	Action:T1 Acts-on:T41 Acts-on2:T42
+T2	Action 118 126	Transfer
+E2	Action:T2 Acts-on:T46 Site:T48
+T3	Action 182 189	Harvest
+E3	Action:T3 Acts-on:T49
+T4	Action 267 274	Discard
+E4	Action:T4 Acts-on:T54
+T5	Action 288 297	Resuspend
+E5	Action:T5 Acts-on:T55 Site:T57
+T6	Action 361 365	Seal
+E6	Action:T6 Using:T60
+T7	Action 380 385	place
+E7	Action:T7 Site:T61
+T8	Action 416 421	Place
+E8	Action:T8 Acts-on:T64 Acts-on2:T65
+T9	Action 468 475	Pipette
+E9	Action:T9 Count:T67
+T10	Action 329 338	pipetting
+E10	Action:T10 Count:T59
+T11	Action 517 522	place
+E11	Action:T11 
+T12	Action 536 553	continue procedur
+E12	Action:T12 
+T13	Action 597 605	let thaw
+E13	Action:T13 
+T14	Action 610 619	spin down
+E14	Action:T14 
+T15	Action 640 643	Add
+E15	Action:T15 Acts-on:T73 Acts-on2:T75
+T16	Action 694 701	Pipette
+E16	Action:T16 Count:T76
+T17	Action 738 743	Place
+E17	Action:T17 Acts-on:T83 Site:T79
+T18	Action 793 797	Mark
+E18	Action:T18 Acts-on:T85
+T19	Action 862 870	transfer
+E19	Action:T19 Acts-on:T86 Site:T91
+T20	Action 976 984	transfer
+E20	Action:T20 
+T21	Action 1012 1016	Seal
+E21	Action:T21 Acts-on:T97 Using:T98
+T22	Action 1058 1068	Centrifuge
+E22	Action:T22 
+T23	Action 1129 1139	centrifuge
+E23	Action:T23 
+T24	Action 1162 1165	Add
+E24	Action:T24 Acts-on:T103 Site:T104
+T25	Action 1200 1204	Seal
+E25	Action:T25 Acts-on:T82 Using:T84
+T26	Action 1268 1278	Centrifuge
+E26	Action:T26 
+T27	Action 1299 1305	Remove
+E27	Action:T27 Acts-on:T107
+T28	Action 1326 1329	add
+E28	Action:T28 Acts-on:T109 Site:T110
+T29	Action 1364 1374	Centrifuge
+E29	Action:T29 
+T30	Action 1601 1606	Place
+E30	Action:T30 Site:T114
+T31	Action 1688 1693	Place
+E31	Action:T31 Acts-on:T120 Site:T122
+T32	Action 1779 1784	elute
+E32	Action:T32 Acts-on:T126
+T33	Action 1794 1797	add
+E33	Action:T33 Acts-on:T128 Site:T129
+T34	Action 1876 1886	Centrifuge
+E34	Action:T34 
+T35	Action 1831 1835	seal
+E35	Action:T35 
+T36	Action 1840 1848	incubate
+E36	Action:T36 
+T37	Action 2043 2057	repeat step 16
+E37	Action:T37 Acts-on:T142
+T38	Action 2089 2096	Aliquot
+E38	Action:T38 Acts-on:T144 Site:T145
+T39	Action 2143 2147	Seal
+E39	Action:T39 Acts-on:T146 Acts-on2:T147 Using:T148
+T40	Action 2205 2210	Place
+E40	Action:T40 Acts-on:T149 Acts-on2:T152
+T41	Reagent 64 74	Buffer ATL
+T42	Reagent 79 81	AL
+T43	Temperature 85 89	56 C
+T44	Time 94 103	5 minutes
+R1	Setting Arg1:E1 Arg2:T43	
+R2	Setting Arg1:E1 Arg2:T44	
+T45	Amount 127 132	250ul
+T46	Reagent 136 149	broth culture
+T47	Amount 153 156	2ml
+T48	Location 157 166	deep well
+R3	Measure Arg1:T46 Arg2:T45	
+R4	Measure Arg1:T48 Arg2:T47	
+T49	Reagent 190 195	cells
+T50	Action 223 235	centrifuging
+E41	Action:T50 Acts-on:T51
+T51	Location 236 241	plate
+T52	Time 246 252	15 min
+T53	Speed 256 264	4063 x g
+R5	Setting Arg1:E41 Arg2:T52	
+R6	Setting Arg1:E41 Arg2:T53	
+T54	Reagent 275 286	supernatant
+T55	Reagent 298 304	pellet
+T56	Amount 308 314	200 µl
+T57	Reagent 315 325	Buffer ATL
+T58	Modifier 339 350	up and down
+T59	Numerical 351 359	15 times
+R7	Mod-Link Arg1:E10 Arg2:T58	
+R8	Measure Arg1:T57 Arg2:T56	
+T60	Seal 371 375	foil
+T61	Device 389 393	oven
+T62	Temperature 397 401	56 C
+T63	Time 406 414	one hour
+R9	Setting Arg1:E7 Arg2:T62	
+R10	Setting Arg1:E7 Arg2:T63	
+T64	Location 428 433	plate
+T65	Seal 437 441	seal
+T66	Modifier 476 487	up and down
+R11	Mod-Link Arg1:E9 Arg2:T66	
+T67	Numerical 488 496	15 times
+T68	Action 501 510	spin down
+E42	Action:T68 
+T69	Temperature 526 531	-80 C
+R12	Setting Arg1:E11 Arg2:T69	
+T70	Speed 622 627	1000g
+T71	Time 632 637	1 min
+R13	Setting Arg1:E14 Arg2:T70	
+R14	Setting Arg1:E14 Arg2:T71	
+T72	Amount 644 650	205 uL
+T73	Reagent 651 660	Buffer AL
+T74	Amount 665 671	205 uL
+T75	Reagent 672 692	molecular grade EtOH
+R15	Measure Arg1:T75 Arg2:T74	
+R16	Measure Arg1:T73 Arg2:T72	
+T76	Numerical 714 722	15 times
+T77	Action 727 736	spin down
+E43	Action:T77 
+T78	Modifier 702 713	up and down
+R17	Mod-Link Arg1:E16 Arg2:T78	
+T79	Location 764 767	top
+T80	Size 771 774	2ml
+T81	Location 775 790	deep well plate
+T83	Location 744 760	DNeasy 96 plates
+R19	Meronym Arg1:T79 Arg2:T81	
+R20	Measure Arg1:T81 Arg2:T80	
+T85	Location 802 818	DNeasy 96 plates
+T86	Reagent 875 881	lysate
+T87	Amount 897 902	600ul
+T88	Modifier 907 911	each
+T89	Reagent 912 918	sample
+T90	Modifier 934 938	each
+T91	Location 939 943	well
+T93	Location 951 967	DNeasy 96 plates
+R23	Meronym Arg1:T91 Arg2:T93	
+R24	Mod-Link Arg1:T91 Arg2:T90	
+R25	Mod-Link Arg1:T89 Arg2:T88	
+R26	Measure Arg1:T86 Arg2:T87	
+R27	Meronym Arg1:T86 Arg2:T89	
+T94	Amount 995 1001	900 µl
+T95	Modifier 1002 1010	per well
+R28	Mod-Link Arg1:T94 Arg2:T95	
+R29	Setting Arg1:E20 Arg2:T94	
+T97	Location 1022 1037	DNeasy 96 plate
+T98	Seal 1045 1056	porous film
+T99	Time 1073 1079	15 min
+T100	Speed 1083 1088	4063g
+R31	Setting Arg1:E22 Arg2:T99	
+R32	Setting Arg1:E22 Arg2:T100	
+T101	Time 1144 1160	a further 10 min
+R33	Setting Arg1:E23 Arg2:T101	
+T102	Amount 1166 1172	500 µl
+T103	Reagent 1173 1183	Buffer AW1
+T104	Reagent 1192 1198	sample
+T105	Modifier 1187 1191	each
+R34	Mod-Link Arg1:T104 Arg2:T105	
+R35	Measure Arg1:T103 Arg2:T102	
+T82	Location 1210 1225	DNeasy 96 plate
+T84	Seal 1237 1255	AirPore Tape Sheet
+T92	Modifier 1205 1209	each
+R18	Mod-Link Arg1:T82 Arg2:T92	
+T96	Time 1283 1288	5 min
+T106	Speed 1292 1297	4063g
+R21	Setting Arg1:E26 Arg2:T96	
+R22	Setting Arg1:E26 Arg2:T106	
+T107	Seal 1310 1314	tape
+T108	Amount 1330 1336	500 µl
+T109	Reagent 1337 1347	Buffer AW2
+T110	Reagent 1356 1362	sample
+T111	Modifier 1351 1355	each
+R30	Mod-Link Arg1:T110 Arg2:T111	
+R36	Measure Arg1:T109 Arg2:T108	
+T112	Time 1379 1385	15 min
+T113	Speed 1389 1394	4063g
+R37	Setting Arg1:E29 Arg2:T112	
+R38	Setting Arg1:E29 Arg2:T113	
+T114	Location 1614 1629	collection rack
+T115	Amount 1631 1634	2ml
+T116	Location 1635 1650	deep well plate
+T117	Action 1656 1660	spin
+E44	Action:T117 
+T118	Time 1667 1677	15 minutes
+T119	Speed 1681 1686	4063g
+R39	Measure Arg1:T116 Arg2:T115	
+R40	Meronym Arg1:T116 Arg2:T114	
+R41	Setting Arg1:E44 Arg2:T118	
+R42	Setting Arg1:E44 Arg2:T119	
+T120	Location 1699 1714	DNeasy 96 plate
+T121	Modifier 1715 1741	in the correct orientation
+T122	Location 1751 1755	rack
+T123	Location 1769 1774	plate
+T124	Amount 1763 1768	500ul
+R43	Measure Arg1:T123 Arg2:T124	
+R44	Mod-Link Arg1:T120 Arg2:T121	
+T125	Modifier 1694 1698	each
+R45	Mod-Link Arg1:T120 Arg2:T125	
+T126	Reagent 1789 1792	DNA
+T127	Amount 1798 1804	200 µl
+T128	Reagent 1805 1814	Buffer TE
+T129	Reagent 1823 1829	sample
+T130	Modifier 1818 1822	each
+T131	Time 1853 1861	1 minute
+T132	Temperature 1865 1874	room temp
+R47	Setting Arg1:E36 Arg2:T131	
+R48	Setting Arg1:E36 Arg2:T132	
+R49	Measure Arg1:T128 Arg2:T127	
+R50	Mod-Link Arg1:T129 Arg2:T130	
+T133	Time 1891 1896	4 min
+T134	Speed 1900 1905	4063g
+R51	Setting Arg1:E34 Arg2:T133	
+R52	Setting Arg1:E34 Arg2:T134	
+T135	Amount 1907 1913	200 µl
+T136	Reagent 1914 1923	Buffer TE
+T137	Location 1990 2005	DNeasy 96 plate
+T138	Action 1941 1946	elute
+E45	Action:T138 Using:T136 Acts-on:T139
+T139	Reagent 1964 1967	DNA
+T140	Amount 1953 1956	75%
+R53	Measure Arg1:T139 Arg2:T140	
+R54	Measure Arg1:T136 Arg2:T135	
+R55	Meronym Arg1:T139 Arg2:T137	
+T141	Amount 2063 2077	another 200 µl
+T142	Reagent 2078 2087	Buffer TE
+R56	Measure Arg1:T142 Arg2:T141	
+T143	Amount 2097 2101	20ul
+T144	Reagent 2105 2118	extracted DNA
+T145	Location 2122 2141	green 96 microplate
+R57	Measure Arg1:T144 Arg2:T143	
+T146	Location 2148 2163	DNeasy 96 plate
+T147	Location 2168 2181	96 microplate
+T148	Seal 2187 2203	non-sterile foil
+T149	Location 2211 2226	DNeasy 96 plate
+T150	Temperature 2230 2235	-80 C
+T151	Temperature 2257 2262	-20 C
+T152	Location 2240 2253	96 microplate
+R58	Setting Arg1:E40 Arg2:T150	
+R59	Setting Arg1:E40 Arg2:T151	
+T153	Reagent 0 10	DNEasy DNA
+T154	Method 11 21	Extraction
+T155	Modifier 24 44	Vibrio Gram Negative
+T156	Reagent 45 59	Broth Bacteria
+R60	Mod-Link Arg1:T156 Arg2:T155	
+T157	Modifier 168 178	autoclaved
+R61	Mod-Link Arg1:T48 Arg2:T157	
+T158	Numerical 205 212	2 x 109
+T159	Reagent 213 218	cells
+R62	Measure Arg1:T159 Arg2:T158	
+T160	Seal 445 449	foil
+T161	Temperature 590 595	-80 C
+T162	Action 580 586	placed
+E46	Action:T162 
+R63	Setting Arg1:E46 Arg2:T161	
+T163	Reagent 829 835	sample
+T164	Method 836 850	identification
+T165	Modifier 852 861	Carefully
+R64	Mod-Link Arg1:E19 Arg2:T165	
+T166	Location 1122 1127	wells
+T167	Reagent 1093 1099	lysate
+R65	Meronym Arg1:T167 Arg2:T166	
+T168	Modifier 1233 1236	new
+R66	Mod-Link Arg1:T84 Arg2:T168	
+T169	Modifier 1316 1325	Carefully
+R67	Mod-Link Arg1:E28 Arg2:T169	
+T170	Action 1403 1407	seal
+E47	Action:T170 Acts-on:T171 Site:T172
+T171	Location 1412 1417	plate
+T172	Seal 1423 1435	AirPore Tape
+T173	Method 1463 1477	centrifugation
+T174	Method 1486 1497	evaporation
+T175	Modifier 1501 1509	residual
+T176	Reagent 1510 1517	ethanol
+R68	Mod-Link Arg1:T176 Arg2:T175	
+T177	Reagent 1538 1548	Buffer AW2
+T178	Reagent 1525 1531	sample
+T179	Action 1571 1578	inhibit
+E48	Action:T179 Acts-on:T181
+T180	Modifier 1579 1589	downstream
+T181	Reagent 1590 1599	reactions
+R69	Mod-Link Arg1:T181 Arg2:T180	
+T182	Modifier 1610 1613	new
+R70	Mod-Link Arg1:T114 Arg2:T182	
+T183	Reagent 2032 2035	DNA
+T184	Location 1759 1762	VWR
+R71	Meronym Arg1:T184 Arg2:T122	
+R72	Meronym Arg1:T123 Arg2:T184	

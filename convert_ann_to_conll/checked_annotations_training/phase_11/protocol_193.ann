@@ -1,0 +1,148 @@
+T1	Action 53 58	Label
+E1	Action:T1 Acts-on:T19 Acts-on2:T20
+T2	Action 92 98	Dilute
+E2	Action:T2 Acts-on:T21 Using:T22
+T3	Action 269 274	Label
+E3	Action:T3 Acts-on:T23
+T4	Action 328 333	Label
+E4	Action:T4 Acts-on:T26
+T5	Action 411 414	Add
+E5	Action:T5 Acts-on:T28 Site:T71
+T6	Action 471 483	Reconstitute
+E6	Action:T6 Acts-on:T30
+T7	Action 542 545	Mix
+E7	Action:T7 Using:T33
+T8	Action 675 678	Add
+E8	Action:T8 Acts-on:T36 Site:T38
+T9	Action 782 785	Mix
+E9	Action:T9 Using:T39
+T10	Action 820 826	Remove
+E10	Action:T10 Acts-on:T41
+T11	Action 917 920	Mix
+E11	Action:T11 Using:T45
+T12	Action 1020 1025	Label
+E12	Action:T12 Acts-on:T47
+T13	Action 1076 1082	Dilute
+E13	Action:T13 Acts-on:T48
+T14	Action 1226 1229	Mix
+E14	Action:T14 Using:T51
+T15	Action 145 148	mix
+E15	Action:T15 Acts-on:T22
+T16	Action 862 865	add
+E16	Action:T16 Acts-on:T43 Site:T44
+T17	Action 1113 1119	adding
+E17	Action:T17 Acts-on:T50 Site:T53
+T18	Amount 61 63	1L
+T19	Location 64 70	bottle
+T20	Reagent 78 89	Wash Buffer
+T21	Reagent 102 113	Wash Buffer
+T22	Reagent 124 139	lab grade water
+T23	Location 296 302	bottle
+T24	Reagent 310 325	Reagent Diluent
+T26	Location 344 365	microcentrifuge tubes
+T25	Amount 338 343	1.5mL
+T27	Amount 415 420	990uL
+T28	Reagent 424 440	standard diluent
+R3	Measure Arg1:T28 Arg2:T27	
+T29	Amount 484 488	20ug
+T30	Location 489 493	vial
+R4	Setting Arg1:T30 Arg2:T29	
+T31	Amount 516 520	80uL
+T32	Reagent 524 540	Standard Diluent
+R5	Measure Arg1:T32 Arg2:T31	
+T33	Method 554 563	inversion
+T34	Amount 679 683	10uL
+T35	Location 693 697	vial
+T36	Reagent 701 728	reconstituted 1-40 standard
+R6	Meronym Arg1:T35 Arg2:T36	
+R7	Or Arg1:T34 Arg2:T36	
+T37	Amount 732 737	990uL
+T38	Reagent 741 757	standard diluent
+R8	Measure Arg1:T38 Arg2:T37	
+T39	Method 794 803	inversion
+T40	Amount 827 831	10uL
+T41	Location 853 857	tube
+R9	Measure Arg1:T41 Arg2:T40	
+T42	Amount 869 874	990uL
+T43	Reagent 875 891	standard diluent
+R10	Measure Arg1:T43 Arg2:T42	
+T44	Location 911 915	tube
+T45	Method 929 938	inversion
+T46	Amount 1028 1032	50mL
+T47	Location 1033 1048	centrifuge tube
+T48	Reagent 1086 1103	incubation buffer
+T49	Amount 1120 1124	10mL
+T50	Reagent 1131 1148	incubation buffer
+R12	Measure Arg1:T50 Arg2:T49	
+T51	Method 1238 1247	vortexing
+T52	Amount 1152 1156	10mL
+T53	Reagent 1160 1175	lab grade water
+R13	Measure Arg1:T53 Arg2:T52	
+T54	Amount 1184 1188	50mL
+T55	Location 1189 1193	tube
+T56	Reagent 1206 1223	Incubation Buffer
+T57	Concentration 75 77	1X
+R1	Measure Arg1:T20 Arg2:T57	
+T58	Concentration 99 101	5X
+T59	Concentration 114 117	1:5
+R16	Measure Arg1:T21 Arg2:T58	
+T60	Modifier 149 153	well
+R17	Mod-Link Arg1:E15 Arg2:T60	
+T61	Modifier 162 180	Lab grade filtered
+T62	Reagent 181 186	water
+R18	Mod-Link Arg1:T62 Arg2:T61	
+T63	Modifier 195 210	injection grade
+T64	Modifier 212 230	cell culture grade
+T65	Method 232 261	Reverse Osmosis De-Ionization
+T66	Method 262 266	RODI
+R19	Mod-Link Arg1:T62 Arg2:T63	
+R20	Mod-Link Arg1:T62 Arg2:T64	
+T67	Concentration 307 309	1X
+R21	Measure Arg1:T24 Arg2:T67	
+R2	Setting Arg1:T26 Arg2:T25	
+T68	Action 390 393	use
+E18	Action:T68 Acts-on:T70
+T69	Modifier 394 402	enclosed
+T70	Location 403 408	tubes
+R22	Mod-Link Arg1:T70 Arg2:T69	
+T71	Location 457 462	tubes
+T72	Numerical 497 501	1-40
+T73	Modifier 546 550	well
+R23	Mod-Link Arg1:E7 Arg2:T73	
+T74	Action 571 577	vortex
+E19	Action:T74 
+T75	Measure-Type 579 592	Concentration
+T76	Concentration 601 609	250ug/mL
+T77	Location 773 777	tube
+R24	Meronym Arg1:T38 Arg2:T77	
+T78	Modifier 786 790	well
+R25	Mod-Link Arg1:E9 Arg2:T78	
+T79	Action 812 818	vortex
+E20	Action:T79 
+T80	Action 947 953	vortex
+E21	Action:T80 
+T81	Measure-Type 965 978	concentration
+T82	Modifier 921 925	well
+R26	Mod-Link Arg1:E11 Arg2:T82	
+T83	Location 995 999	tube
+T84	Concentration 1011 1018	25ng/mL
+R27	Measure Arg1:T83 Arg2:T84	
+T85	Concentration 1053 1055	1X
+T86	Reagent 1056 1073	Incubation Buffer
+R11	Measure Arg1:T47 Arg2:T46	
+R28	Measure Arg1:T86 Arg2:T85	
+T87	Concentration 1107 1109	1X
+T88	Concentration 1083 1085	2X
+R29	Measure Arg1:T48 Arg2:T88	
+T89	Concentration 1128 1130	2X
+R30	Measure Arg1:T50 Arg2:T89	
+R14	Measure Arg1:T55 Arg2:T54	
+T90	Concentration 1203 1205	1X
+R15	Measure Arg1:T56 Arg2:T90	
+T91	Reagent 1262 1269	diluent
+T92	Reagent 1297 1304	samples
+T93	Modifier 1230 1234	well
+R31	Mod-Link Arg1:E14 Arg2:T93	
+T94	Mention 1249 1253	This
+T95	Device 0 24	BetaMark™ x-40 ELISA Kit
+T96	Method 26 42	Chemiluminescent

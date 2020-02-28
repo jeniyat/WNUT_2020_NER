@@ -1,0 +1,107 @@
+T1	Action 51 60	autoclave
+E1	Action:T1 Acts-on:T16
+T2	Action 77 81	melt
+E2	Action:T2 Acts-on:T18
+T3	Action 146 150	warm
+E3	Action:T3 Acts-on:T21
+T4	Action 175 180	label
+E4	Action:T4 Acts-on:T22
+T5	Action 190 194	make
+E5	Action:T5 Product:T23 Using:T24
+T6	Action 356 363	Aliquot
+E6	Action:T6 Acts-on:T25 Site:T26
+T7	Action 414 419	Pipet
+E7	Action:T7 Acts-on:T31 Site:T32
+T8	Action 467 473	Remove
+E8	Action:T8 Acts-on:T33 Site:T34
+T9	Action 512 515	add
+E9	Action:T9 Acts-on:T35 Site:T39 Using:T38
+T10	Action 563 566	Add
+E10	Action:T10 Acts-on:T41 Site:T45
+T11	Action 614 619	Swirl
+E11	Action:T11 Acts-on:T46
+T12	Action 633 639	spread
+E12	Action:T12 Acts-on:T47
+T13	Action 730 735	Count
+E13	Action:T13 Acts-on:T53
+T14	Action 739 743	pick
+E14	Action:T14 Acts-on:T53
+T15	Action 688 693	Leave
+E15	Action:T15 Acts-on:T50 Site:T51
+T16	Reagent 69 73	agar
+T17	Location 65 68	top
+R1	Meronym Arg1:T16 Arg2:T17	
+T18	Mention 82 84	it
+R2	Coreference-Link Arg1:T18 Arg2:T16	
+T19	Temperature 154 170	room temperature
+T20	Location 127 133	bottom
+T21	Location 134 145	agar plates
+R3	Meronym Arg1:T21 Arg2:T20	
+R4	Setting Arg1:E3 Arg2:T19	
+T22	Mention 181 185	them
+R5	Coreference-Link Arg1:T22 Arg2:T21	
+T23	Reagent 204 213	dilutions
+T24	Reagent 222 228	phages
+T25	Reagent 368 372	agar
+T26	Location 378 383	tubes
+T27	Action 388 393	place
+E16	Action:T27 Acts-on:T26 Site:T29
+T28	Temperature 397 401	40°C
+T29	Location 402 412	water bath
+R6	Setting Arg1:E16 Arg2:T28	
+T30	Amount 420 426	100 μl
+T31	Reagent 435 447	phage sample
+T32	Location 457 462	plate
+T33	Location 478 487	agar tube
+T34	Location 497 507	water bath
+T35	Reagent 520 524	host
+T36	Amount 539 543	1 ml
+T37	Amount 547 551	5 ml
+T38	Location 552 560	pipettor
+R7	Measure Arg1:T31 Arg2:T30	
+T39	Mention 528 530	it
+R8	Coreference-Link Arg1:T39 Arg2:T33	
+R9	Setting Arg1:T38 Arg2:T37	
+R10	Setting Arg1:T38 Arg2:T36	
+T40	Amount 567 573	3.5 ml
+T41	Reagent 591 598	mixture
+T42	Reagent 586 590	host
+T43	Reagent 581 585	agar
+R11	Meronym Arg1:T42 Arg2:T41	
+R12	Meronym Arg1:T43 Arg2:T41	
+T44	Amount 602 606	each
+T45	Location 607 612	plate
+R13	Measure Arg1:T41 Arg2:T40	
+R14	Measure Arg1:T45 Arg2:T44	
+T46	Location 624 629	plate
+T47	Reagent 644 648	agar
+T48	Action 664 670	covers
+E17	Action:T48 Acts-on:T49
+T49	Location 681 686	plate
+T50	Location 698 704	plates
+T51	Location 712 717	bench
+T52	Time 718 727	overnight
+T53	Reagent 744 751	plaques
+R15	Setting Arg1:E15 Arg2:T52	
+T54	Action 0 12	Plaque Assay
+E18	Action:T54 Acts-on:T55
+T55	Reagent 26 43	Pseudoalteromonas
+T56	Time 756 764	next day
+R16	Setting Arg1:E14 Arg2:T56	
+T57	Device 96 105	autoclave
+T58	Action 109 116	running
+E19	Action:T58 Acts-on:T57
+T59	Action 241 246	plate
+E20	Action:T59 Acts-on:T23
+T60	Action 269 274	plate
+E21	Action:T60 Acts-on:T61
+T61	Reagent 279 287	dilution
+T62	Numerical 275 278	one
+R17	Measure Arg1:T61 Arg2:T62	
+T63	Reagent 303 311	dilution
+T64	Action 332 342	calculated
+E22	Action:T64 
+T65	Modifier 346 353	optimal
+R18	Mod-Link Arg1:E22 Arg2:T65	
+R19	Or Arg1:T36 Arg2:T37	
+R20	Or Arg1:E13 Arg2:E14	

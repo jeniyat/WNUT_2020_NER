@@ -1,0 +1,80 @@
+T1	Action 47 52	Chill
+E1	Action:T1 Acts-on:T14
+T2	Action 83 86	mix
+E2	Action:T2 Acts-on:T17
+T3	Action 113 122	inverting
+E3	Action:T3 Acts-on:T16 Count:T18
+T4	Action 174 180	Dilute
+E4	Action:T4 Acts-on:T20 Site:T21
+T5	Action 331 339	Transfer
+E5	Action:T5 Site:T27 Acts-on:T24 Acts-on2:T26
+T6	Action 408 414	Set up
+E6	Action:T6 Acts-on:T28
+T7	Action 485 488	Add
+E7	Action:T7 Acts-on:T32 Site:T34
+T8	Action 528 531	mix
+E8	Action:T8 
+T9	Action 538 546	Incubate
+E9	Action:T9 
+T10	Action 582 586	Read
+E10	Action:T10 Measure-Type-Link:T38
+T11	Action 612 619	Prepare
+E11	Action:T11 
+T13	Action 156 161	SHAKE
+E13	Action:T13 Acts-on:T19
+T14	Reagent 53 57	CB-X
+T15	Temperature 62 67	-20°C
+T17	Reagent 87 102	CB-X™ Assay Dye
+T16	Location 127 133	bottle
+R1	Meronym Arg1:T17 Arg2:T16	
+T18	Numerical 134 147	several times
+T19	Location 166 172	BOTTLE
+T20	Reagent 185 211	supplied protein standards
+T21	Reagent 224 230	buffer
+T22	Reagent 239 254	protein samples
+R2	Meronym Arg1:T22 Arg2:T21	
+T23	Amount 340 344	50µl
+T24	Reagent 353 370	protein standards
+T25	Modifier 345 352	diluted
+R3	Mod-Link Arg1:T24 Arg2:T25	
+T26	Reagent 375 387	test samples
+T27	Location 395 406	assay tubes
+R4	Measure Arg1:T24 Arg2:T23	
+T28	Reagent 417 422	blank
+T29	Amount 434 438	50µl
+T30	Reagent 446 452	buffer
+R5	Meronym Arg1:T30 Arg2:T28	
+R6	Measure Arg1:T30 Arg2:T29	
+T31	Amount 489 492	1ml
+T32	Reagent 493 508	CB-X™ Assay Dye
+R7	Measure Arg1:T32 Arg2:T31	
+T33	Amount 514 518	each
+T34	Location 519 523	tube
+T35	Modifier 532 536	well
+R8	Mod-Link Arg1:E8 Arg2:T35	
+R9	Measure Arg1:T34 Arg2:T33	
+T36	Time 551 560	5 minutes
+T37	Temperature 564 580	room temperature
+R10	Setting Arg1:E9 Arg2:T36	
+R11	Setting Arg1:E9 Arg2:T37	
+T38	Measure-Type 591 601	absorbance
+T39	Generic-Measure 605 610	595nm
+R12	Setting Arg1:E10 Arg2:T39	
+T41	Measure-Type 673 694	protein concentration
+T40	Reagent 702 717	unknown samples
+R13	Setting Arg1:E1 Arg2:T15	
+T42	Reagent 0 13	CB-X™ Protein
+T43	Action 14 19	Assay
+E14	Action:T43 Acts-on:T42
+T44	Modifier 24 30	simple
+T45	Reagent 31 46	aqueous samples
+R14	Mod-Link Arg1:T45 Arg2:T44	
+T46	Numerical 283 286	5-6
+T47	Reagent 287 296	dilutions
+T48	Concentration 317 329	0.1-1.0mg/ml
+R15	Measure Arg1:T47 Arg2:T48	
+R16	Measure Arg1:T47 Arg2:T46	
+T49	Action 461 469	generate
+E15	Action:T49 Product:T50
+T50	Reagent 474 483	standards
+T12	Method 656 669	determination

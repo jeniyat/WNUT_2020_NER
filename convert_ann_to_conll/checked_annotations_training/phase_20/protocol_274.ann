@@ -1,0 +1,84 @@
+T1	Action 59 64	Rinse
+E1	Action:T1 Acts-on:T9 Using:T10
+T2	Action 128 134	remove
+E2	Action:T2 Acts-on:T11
+T3	Action 438 444	Remove
+E3	Action:T3 Acts-on:T15 Site:T16
+T4	Action 513 520	applied
+E4	Action:T4 Acts-on:T19 Using:T17
+T5	Action 582 595	pulled across
+E5	Action:T5 Acts-on2:T21 Using:T20 Using2:T22
+T6	Action 715 719	done
+E6	Action:T6 Count:T24
+T7	Action 749 755	placed
+E7	Action:T7 Acts-on:T26 Site:T29
+T8	Action 803 807	kept
+E8	Action:T8 Site:T30 Acts-on:T29
+T9	Location 69 77	location
+T10	Reagent 116 124	seawater
+T11	Reagent 139 157	transient microbes
+T12	Modifier 447 452	clean
+T13	Modifier 108 115	sterile
+R1	Mod-Link Arg1:T10 Arg2:T13	
+T14	Modifier 453 460	sterile
+T15	Device 461 465	swab
+R2	Mod-Link Arg1:T15 Arg2:T14	
+R3	Mod-Link Arg1:T15 Arg2:T12	
+T16	Location 475 483	wrapping
+T17	Device 492 502	cotton tip
+T18	Modifier 539 545	rinsed
+T19	Location 546 561	sample location
+R4	Mod-Link Arg1:T19 Arg2:T18	
+R5	Meronym Arg1:T17 Arg2:T15	
+T20	Device 567 571	swab
+T21	Location 600 615	sample location
+T22	Method 621 638	moderate pressure
+T24	Numerical 720 722	10
+T23	Action 645 649	swab
+E9	Action:T23 Using:T25
+T25	Method 663 694	pulling the swab back and forth
+T26	Reagent 734 738	swab
+T27	Modifier 763 770	labeled
+T28	Modifier 771 778	sterile
+T29	Location 779 793	screw cap tube
+T30	Location 811 814	ice
+T31	Reagent 846 851	Swabs
+T32	Action 861 866	ready
+E10	Action:T32 Using:T33 Acts-on:T31
+T33	Method 875 885	extraction
+R6	Mod-Link Arg1:T29 Arg2:T28	
+R7	Mod-Link Arg1:T29 Arg2:T27	
+T34	Reagent 0 9	Sea stars
+T35	Action 10 28	bacterial sampling
+E11	Action:T35 Acts-on:T34
+T36	Action 29 38	Collected
+E12	Action:T36 Acts-on:T37 Using:T38
+T37	Reagent 39 48	sea stars
+T38	Device 52 56	hand
+T39	Action 82 90	sampling
+E13	Action:T39 Acts-on:T40
+T40	Reagent 98 102	star
+T41	Reagent 187 192	stars
+T42	Reagent 222 244	environmental microbes
+T43	Action 253 263	sequencing
+E14	Action:T43 
+T44	Modifier 282 291	sensitive
+T45	Action 304 311	rinsing
+E15	Action:T45 
+R8	Mod-Link Arg1:E14 Arg2:T44	
+T46	Location 355 368	sampling site
+T47	Action 380 388	swabbing
+E16	Action:T47 
+T48	Size 425 436	15 by 10 cm
+T49	Modifier 411 424	approximately
+R9	Mod-Link Arg1:T48 Arg2:T49	
+R10	Measure Arg1:T46 Arg2:T48	
+T51	Mention 821 823	it
+T50	Modifier 831 837	frozen
+R11	Mod-Link Arg1:T51 Arg2:T50	
+T52	Temperature 841 845	-80°
+R12	Coreference-Link Arg1:T51 Arg2:T26	
+T53	Action 906 910	used
+E17	Action:T53 Acts-on:T54
+T54	Device 913 932	MoBio PowerSoil Kit
+T55	Reagent 871 874	DNA

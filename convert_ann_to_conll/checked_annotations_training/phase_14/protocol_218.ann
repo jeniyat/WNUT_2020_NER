@@ -1,0 +1,85 @@
+T1	Action 25 31	Set up
+E1	Action:T1 Acts-on:T14 Using:T15
+T2	Action 186 189	Mix
+E2	Action:T2 Acts-on:T16
+T3	Action 204 213	pipetting
+E3	Action:T3 Using2:T45 Acts-on:T44
+T4	Action 255 263	flicking
+E4	Action:T4 Acts-on:T19
+T5	Action 300 309	spin-down
+E5	Action:T5 Acts-on:T21
+T6	Action 360 368	Incubate
+E6	Action:T6 
+T7	Action 428 434	Adjust
+E7	Action:T7 Acts-on:T29 Using:T31
+T8	Action 608 611	Add
+E8	Action:T8 Acts-on:T32
+T9	Action 631 634	Mix
+E9	Action:T9 Acts-on:T33
+T10	Action 649 658	pipetting
+E10	Action:T10 Acts-on:T34 Using2:T55
+T11	Action 700 708	flicking
+E11	Action:T11 Acts-on:T35
+T12	Action 745 754	spin-down
+E12	Action:T12 Site:T37
+T13	Action 805 813	Incubate
+E13	Action:T13 
+T14	Reagent 46 54	reaction
+T15	Reagent 65 89	restriction endonuclease
+T16	Reagent 190 200	components
+T17	Reagent 148 154	buffer
+T18	Amount 178 183	50 µl
+R1	Measure Arg1:T14 Arg2:T18	
+T19	Location 269 282	reaction tube
+R2	Meronym Arg1:T17 Arg2:T15	
+T20	Modifier 284 289	Quick
+T21	Device 315 330	microcentrifuge
+R3	Mod-Link Arg1:E5 Arg2:T20	
+T22	Time 373 379	1 hour
+T23	Temperature 403 426	appropriate temperature
+R4	Setting Arg1:E6 Arg2:T22	
+R5	Setting Arg1:E6 Arg2:T23	
+T24	Concentration 444 457	concentration
+T25	Modifier 439 443	salt
+R6	Mod-Link Arg1:T24 Arg2:T25	
+T26	Measure-Type 115 128	concentration
+T27	Reagent 110 114	salt
+T28	Modifier 103 109	lowest
+T29	Reagent 465 473	reaction
+R10	Setting Arg1:E7 Arg2:T24	
+T30	Amount 481 495	a small volume
+T31	Reagent 501 527	concentrated salt solution
+R11	Measure Arg1:T31 Arg2:T30	
+T32	Reagent 616 629	second enzyme
+T33	Reagent 635 645	components
+T34	Reagent 663 679	reaction mixture
+T35	Location 714 727	reaction tube
+T36	Modifier 729 734	Quick
+T37	Device 760 775	microcentrifuge
+R12	Mod-Link Arg1:E12 Arg2:T36	
+T38	Time 818 824	1 hour
+T39	Temperature 848 871	appropriate temperature
+R13	Setting Arg1:E13 Arg2:T38	
+R14	Setting Arg1:E13 Arg2:T39	
+T40	Modifier 0 10	Sequential
+T41	Action 11 24	Double Digest
+E14	Action:T41 
+R15	Mod-Link Arg1:E14 Arg2:T40	
+T42	Reagent 162 170	reaction
+T43	Measure-Type 171 178	volume 
+T44	Reagent 218 234	reaction mixture
+T45	Method 235 246	up and down
+T46	Action 339 345	vortex
+E15	Action:T46 Acts-on:T47
+T47	Reagent 350 358	reaction
+T48	Reagent 387 393	enzyme
+T49	Action 532 543	approximate
+E16	Action:T49 
+T50	Modifier 582 593	restriction
+T51	Reagent 594 606	endonuclease
+R7	Mod-Link Arg1:T51 Arg2:T50	
+T52	Action 784 790	vortex
+E17	Action:T52 Acts-on:T53
+T53	Reagent 795 803	reaction
+T54	Reagent 832 838	enzyme
+T55	Method 680 691	up and down

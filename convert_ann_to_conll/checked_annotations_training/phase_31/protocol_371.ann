@@ -1,0 +1,371 @@
+T1	Action 35 41	Filter
+E1	Action:T1 Acts-on:T59 Using:T61
+T2	Action 80 84	Mark
+E2	Action:T2 Acts-on:T62 Using:T64
+T3	Action 129 135	adding
+E3	Action:T3 Acts-on:T66
+T6	Action 326 329	Add
+E6	Action:T6 Acts-on:T4 Site:T5
+T7	Action 351 356	Check
+E7	Action:T7 Acts-on:T68 Measure-Type-Link:T67
+T8	Action 375 385	Centrifuge
+E8	Action:T8 
+T9	Action 447 453	Pierce
+E9	Action:T9 Acts-on:T74
+T10	Action 486 494	Bevel up
+E10	Action:T10 
+T11	Action 500 507	collect
+E11	Action:T11 
+T13	Action 684 689	Store
+E13	Action:T13 Site:T12
+T14	Action 731 734	Add
+E14	Action:T14 Acts-on:T80
+T15	Action 755 758	mix
+E15	Action:T15 Acts-on:T80
+T16	Action 763 771	incubate
+E16	Action:T16 
+T17	Action 802 806	Spin
+E17	Action:T17 Using:T84
+T18	Action 854 862	separate
+E18	Action:T18 Acts-on:T86
+T19	Action 871 875	Save
+E19	Action:T19 
+T20	Action 880 888	transfer
+E20	Action:T20 Acts-on:T87 Site:T90
+T21	Action 919 922	Add
+E21	Action:T21 Acts-on:T92 Site:T93
+T22	Action 987 995	Incubate
+E22	Action:T22 
+T23	Action 1016 1021	Treat
+E23	Action:T23 Using:T99
+T24	Action 1060 1070	Inactivate
+E24	Action:T24 
+T25	Action 1095 1103	Transfer
+E25	Action:T25 Site:T104
+T26	Action 1165 1168	Add
+E26	Action:T26 Acts-on:T107 Acts-on2:T110
+T27	Action 1214 1217	Add
+E27	Action:T27 Acts-on:T113
+T28	Action 1247 1250	Add
+E28	Action:T28 Acts-on:T116
+T29	Action 1275 1278	Add
+E29	Action:T29 Acts-on:T118
+T30	Action 1387 1393	Pellet
+E30	Action:T30 Site:T126
+T31	Action 1435 1439	Wash
+E31	Action:T31 Acts-on:T130 Count:T131
+T32	Action 1469 1478	Resuspend
+E32	Action:T32 Acts-on:T133
+T33	Action 1529 1538	Resuspend
+E33	Action:T33 Acts-on:T136 Site:T138
+T34	Action 1560 1563	Add
+E34	Action:T34 Acts-on:T141 Acts-on2:T144
+T35	Action 1617 1620	Mix
+E35	Action:T35 
+T36	Action 1622 1630	Incubate
+E36	Action:T36 
+T37	Action 1655 1658	Add
+E37	Action:T37 Acts-on:T149
+T38	Action 1682 1685	mix
+E38	Action:T38 
+T39	Action 1698 1701	Add
+E39	Action:T39 Acts-on:T152
+T40	Action 1728 1731	Mix
+E40	Action:T40 
+T41	Action 1733 1741	Incubate
+E41	Action:T41 
+T42	Action 1762 1765	Add
+E42	Action:T42 Acts-on:T156
+T43	Action 1794 1797	mix
+E43	Action:T43 
+T44	Action 1799 1814	Microcentrifuge
+E44	Action:T44 
+T45	Action 1830 1838	Transfer
+E45	Action:T45 Acts-on:T158 Site:T160
+T46	Action 1869 1872	Add
+E46	Action:T46 Acts-on:T162 Site:T163
+T47	Action 1936 1939	mix
+E47	Action:T47 
+T48	Action 1941 1956	Microcentrifuge
+E48	Action:T48 
+T49	Action 1972 1980	Transfer
+E49	Action:T49 Acts-on:T165 Site:T167
+T50	Action 2011 2014	Add
+E50	Action:T50 Acts-on:T169 Site:T170
+T51	Action 2071 2074	mix
+E51	Action:T51 
+T52	Action 2076 2091	Microcentrifuge
+E52	Action:T52 
+T53	Action 2107 2115	Transfer
+E53	Action:T53 Acts-on:T172 Site:T174
+T54	Action 2146 2149	Add
+E54	Action:T54 Acts-on:T176 Site:T177
+T55	Action 2202 2205	Mix
+E55	Action:T55 
+T56	Action 2237 2247	Centrifuge
+E56	Action:T56 Acts-on:T182
+T57	Action 2268 2272	Wash
+E57	Action:T57 Using:T184
+T58	Action 2291 2300	Resuspend
+E58	Action:T58 Acts-on:T186
+T59	Reagent 42 58	cesium solutions
+T60	Size 64 70	0.02µm
+T61	Device 71 77	filter
+R1	Measure Arg1:T61 Arg2:T60	
+T62	Location 85 88	top
+T63	Reagent 92 112	first gradient layer
+T64	Device 118 121	pen
+T65	Modifier 136 140	next
+T66	Reagent 141 147	layers
+R2	Mod-Link Arg1:T66 Arg2:T65	
+R3	Meronym Arg1:T62 Arg2:T63	
+T4	Reagent 330 334	CsCl
+T5	Reagent 338 349	your sample
+T67	Measure-Type 357 364	balance
+T68	Location 368 373	tubes
+T69	Speed 389 399	22,000 rpm
+T70	Time 404 411	2 hours
+T71	Temperature 415 418	4°C
+T72	Modifier 420 433	approximately
+T73	Speed 434 445	60-80,000xg
+R4	Mod-Link Arg1:T73 Arg2:T72	
+R5	Setting Arg1:E8 Arg2:T69	
+R6	Setting Arg1:E8 Arg2:T70	
+R7	Setting Arg1:E8 Arg2:T71	
+R8	Setting Arg1:E8 Arg2:T73	
+T74	Location 454 458	tube
+T75	Generic-Measure 462 474	1.7/1.5 g/ml
+R9	Setting Arg1:E9 Arg2:T75	
+T76	Amount 508 515	1.5 mls
+R10	Setting Arg1:E11 Arg2:T76	
+R11	Setting Arg1:E10 Arg2:T76	
+T77	Measure-Type 475 484	interface
+R12	Of-Type Arg1:T75 Arg2:T77	
+T12	Device 693 699	fridge
+T78	Temperature 703 706	4°C
+R13	Setting Arg1:T12 Arg2:T78	
+T79	Amount 735 742	0.2 vol
+T80	Reagent 743 753	chloroform
+T81	Time 772 778	10 min
+T82	Temperature 783 799	room temperature
+R14	Setting Arg1:E16 Arg2:T81	
+R15	Setting Arg1:E16 Arg2:T82	
+R16	Measure Arg1:T80 Arg2:T79	
+T83	Speed 810 818	4000 rpm
+T84	Device 822 835	table Beckman
+T85	Time 840 850	10 minutes
+T86	Reagent 863 869	phases
+R17	Setting Arg1:E17 Arg2:T83	
+R18	Setting Arg1:E17 Arg2:T85	
+T87	Reagent 889 898	top phase
+T88	Modifier 902 905	new
+T89	Amount 906 911	15 ml
+T90	Location 912 917	tubes
+R19	Measure Arg1:T90 Arg2:T89	
+R20	Mod-Link Arg1:T90 Arg2:T88	
+T91	Amount 923 931	10-15 µl
+T92	Reagent 932 939	DNase I
+T93	Reagent 960 972	phage sample
+R21	Measure Arg1:T92 Arg2:T91	
+T94	Concentration 941 948	1 mg/ml
+T95	Reagent 952 955	H2O
+T96	Amount 974 983	1.2-1.5ml
+R22	Measure Arg1:T92 Arg2:T94	
+R23	Meronym Arg1:T95 Arg2:T92	
+R24	Measure Arg1:T93 Arg2:T96	
+T97	Time 996 1006	15 minutes
+T98	Temperature 1010 1014	37°C
+T99	Reagent 1027 1032	RNase
+T100	Time 1075 1085	15 minutes
+T101	Temperature 1089 1094	65°C.
+T102	Modifier 1104 1107	all
+T103	Modifier 1111 1114	new
+T104	Location 1115 1131	"oak ridge" tube
+T105	Amount 1169 1179	0.1 volume
+T106	Concentration 1180 1183	2 M
+T107	Reagent 1184 1191	TrisHCL
+T108	pH 1193 1199	pH 8.5
+T109	Concentration 1201 1206	0.2 M
+T110	Reagent 1207 1211	EDTA
+T111	Amount 1218 1224	100 µl
+T112	Concentration 1225 1230	0.5 M
+T113	Reagent 1231 1235	EDTA
+T114	Amount 1240 1244	10ml
+T115	Amount 1251 1259	1 volume
+T116	Reagent 1263 1272	formamide
+T117	Generic-Measure 1279 1284	10 Fl
+T118	Reagent 1285 1293	glycogen
+T119	Action 1294 1302	Incubate
+E4	Action:T119 
+T120	Temperature 1306 1322	room temperature
+T121	Time 1327 1337	30 minutes
+T122	Amount 1343 1352	2 volumes
+T123	Temperature 1356 1372	room temperature
+T124	Concentration 1373 1377	100%
+T125	Reagent 1378 1385	ethanol
+T126	Device 1397 1404	Sorvall
+T127	Speed 1406 1416	12,000 rpm
+T128	Time 1421 1431	20 minutes
+T129	Concentration 1445 1448	70%
+T130	Reagent 1449 1456	ethanol
+T131	Numerical 1458 1461	two
+T132	Amount 1484 1490	567 µl
+T133	Reagent 1491 1493	TE
+T134	Method 1512 1527	CTAB extraction
+T135	Action 1498 1506	continue
+E5	Action:T135 Using:T134
+T136	Reagent 1539 1545	pellet
+T137	Amount 1549 1555	567 µl
+T138	Reagent 1556 1558	TE
+T139	Amount 1564 1569	30 µl
+T140	Concentration 1573 1576	10%
+T141	Reagent 1577 1580	SDS
+T142	Amount 1585 1589	3 µl
+T143	Concentration 1593 1601	20 µg/ml
+T144	Reagent 1602 1614	proteinase K
+T145	Time 1631 1637	1 hour
+T146	Temperature 1641 1652	37°C - 56°C
+T147	Amount 1659 1665	100 µl
+T148	Concentration 1669 1672	5 M
+T149	Reagent 1673 1677	NaCl
+T150	Modifier 1686 1696	thoroughly
+T151	Amount 1702 1707	80 µl
+T152	Reagent 1708 1726	CTAB/NaCl solution
+T153	Time 1742 1752	10 minutes
+T154	Temperature 1756 1760	65°C
+T155	Amount 1766 1778	equal volume
+T156	Reagent 1782 1792	chloroform
+T157	Time 1819 1828	2 minutes
+T158	Reagent 1839 1850	supernatant
+T159	Modifier 1854 1862	separate
+T160	Location 1863 1867	tube
+T161	Amount 1873 1885	equal volume
+T162	Reagent 1889 1906	phenol/chloroform
+T163	Reagent 1914 1934	supernatant fraction
+T164	Time 1961 1970	2 minutes
+T165	Reagent 1981 1992	supernatant
+T166	Modifier 1996 2004	separate
+T167	Location 2005 2009	tube
+T168	Amount 2015 2027	equal volume
+T169	Reagent 2031 2041	chloroform
+T170	Reagent 2049 2069	supernatant fraction
+T171	Time 2096 2105	2 minutes
+T172	Reagent 2116 2127	supernatant
+T173	Modifier 2131 2139	separate
+T174	Location 2140 2144	tube
+T175	Amount 2150 2160	0.7 volume
+T176	Reagent 2161 2172	isopropanol
+T177	Reagent 2180 2200	supernatant fraction
+T178	Modifier 2206 2212	gently
+T179	Reagent 2219 2222	DNA
+T180	Action 2223 2235	precipitates
+E12	Action:T180 Acts-on:T179
+T181	Time 2248 2258	15 minutes
+T182	Location 2262 2266	cold
+T183	Concentration 2278 2281	70%
+T184	Reagent 2282 2289	ethanol
+T185	Amount 2304 2309	50 µl
+T186	Reagent 2310 2321	Sigma water
+R25	Setting Arg1:E22 Arg2:T97	
+R26	Setting Arg1:E22 Arg2:T98	
+R27	Setting Arg1:E24 Arg2:T100	
+R28	Setting Arg1:E24 Arg2:T101	
+R29	Mod-Link Arg1:E25 Arg2:T102	
+R30	Mod-Link Arg1:T104 Arg2:T103	
+R31	Measure Arg1:T107 Arg2:T106	
+R32	Measure Arg1:T107 Arg2:T108	
+R33	Measure Arg1:T110 Arg2:T109	
+R34	Measure Arg1:T107 Arg2:T105	
+R35	Measure Arg1:T113 Arg2:T112	
+R36	Measure Arg1:T113 Arg2:T111	
+T187	Modifier 1236 1239	per
+R37	Mod-Link Arg1:T114 Arg2:T187	
+R38	Setting Arg1:E27 Arg2:T114	
+R39	Measure Arg1:T116 Arg2:T115	
+R40	Measure Arg1:T118 Arg2:T117	
+R41	Setting Arg1:E4 Arg2:T120	
+R42	Setting Arg1:E4 Arg2:T121	
+T188	Action 1339 1342	Add
+E59	Action:T188 Acts-on:T125
+R43	Measure Arg1:T125 Arg2:T124	
+R44	Measure Arg1:T125 Arg2:T122	
+R45	Setting Arg1:T126 Arg2:T127	
+R46	Setting Arg1:T126 Arg2:T128	
+R47	Measure Arg1:T130 Arg2:T129	
+R48	Measure Arg1:T133 Arg2:T132	
+R49	Measure Arg1:T138 Arg2:T137	
+R50	Measure Arg1:T141 Arg2:T140	
+R51	Measure Arg1:T141 Arg2:T139	
+R52	Measure Arg1:T144 Arg2:T143	
+R53	Measure Arg1:T144 Arg2:T142	
+R54	Setting Arg1:E36 Arg2:T145	
+R55	Setting Arg1:E36 Arg2:T146	
+R56	Measure Arg1:T149 Arg2:T148	
+R57	Measure Arg1:T149 Arg2:T147	
+R58	Mod-Link Arg1:E38 Arg2:T150	
+R59	Measure Arg1:T152 Arg2:T151	
+R60	Setting Arg1:E41 Arg2:T153	
+R61	Setting Arg1:E41 Arg2:T154	
+R62	Measure Arg1:T156 Arg2:T155	
+R63	Setting Arg1:E44 Arg2:T157	
+R64	Mod-Link Arg1:T160 Arg2:T159	
+R65	Measure Arg1:T162 Arg2:T161	
+R66	Setting Arg1:E48 Arg2:T164	
+R67	Mod-Link Arg1:T167 Arg2:T166	
+R68	Measure Arg1:T169 Arg2:T168	
+R69	Setting Arg1:E52 Arg2:T171	
+R70	Mod-Link Arg1:T174 Arg2:T173	
+R71	Measure Arg1:T176 Arg2:T175	
+R72	Mod-Link Arg1:E55 Arg2:T178	
+R73	Setting Arg1:E56 Arg2:T181	
+R74	Measure Arg1:T184 Arg2:T183	
+R75	Measure Arg1:T186 Arg2:T185	
+T189	Method 0 15	Cesium Chloride
+T190	Reagent 29 34	Phage
+T191	Action 2322 2327	Check
+E60	Action:T191 Measure-Type-Link:T192 Using:T193
+T192	Measure-Type 2328 2331	O.D
+T193	Device 2343 2351	Nanodrop
+T194	Method 1143 1157	centrifugation
+T195	Reagent 1036 1039	RNA
+T196	Action 1049 1058	extracted
+E61	Action:T196 Acts-on:T195
+T197	Action 722 729	extract
+E62	Action:T197 
+T198	Action 576 581	Check
+E63	Action:T198 Acts-on:T199
+T199	Location 587 593	slides
+T200	Reagent 598 613	virus particles
+R76	Meronym Arg1:T200 Arg2:T199	
+T201	Action 620 623	Use
+E64	Action:T201 Acts-on:T203 Acts-on2:T205
+T202	Amount 624 629	20 µl
+T203	Reagent 635 651	[viral] fraction
+T204	Amount 656 662	500 µl
+T205	Reagent 668 682	"upper" layers
+R77	Measure Arg1:T203 Arg2:T202	
+R78	Measure Arg1:T205 Arg2:T204	
+T206	Concentration 532 540	1.5 g/ml
+T207	Generic-Measure 550 571	1.5 to 1.35 interface
+T208	Action 150 156	Set up
+E65	Action:T208 Product:T209
+T209	Reagent 157 165	gradient
+T210	Amount 191 194	1ml
+T211	Concentration 198 206	1.7 g/ml
+T212	Amount 226 229	1ml
+T213	Concentration 233 241	1.5 g/ml
+T214	Amount 261 264	1ml
+T215	Concentration 268 277	1.35 g/ml
+T216	Amount 278 283	8.5ml
+T217	Concentration 287 296	1.15 g/ml
+T218	Reagent 307 324	phage concentrate
+R79	Measure Arg1:T209 Arg2:T210	
+R80	Measure Arg1:T209 Arg2:T211	
+T219	Location 213 216	top
+R81	Measure Arg1:T219 Arg2:T212	
+R82	Measure Arg1:T219 Arg2:T213	
+T220	Location 248 251	top
+R83	Measure Arg1:T220 Arg2:T214	
+R84	Coreference-Link Arg1:T220 Arg2:T215	
+R85	Measure Arg1:T218 Arg2:T217	
+R86	Measure Arg1:T218 Arg2:T216	

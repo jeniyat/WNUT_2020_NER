@@ -1,0 +1,219 @@
+T1	Action 50 54	Make
+E1	Action:T1 Product:T28 Using:T30
+T2	Action 152 159	Prepare
+E2	Action:T2 Product:T33
+T3	Action 193 196	Add
+E3	Action:T3 Acts-on:T34 Site:T38
+T4	Action 300 305	Cover
+E4	Action:T4 Acts-on:T43 Using:T44
+T5	Action 334 340	Set up
+E5	Action:T5 Acts-on:T45
+T6	Action 390 393	Add
+E6	Action:T6 Acts-on:T51 Site:T52
+T7	Action 450 455	Place
+E7	Action:T7 Acts-on:T54 Site:T55
+T8	Action 527 536	Switch on
+E8	Action:T8 Acts-on:T57
+T9	Action 604 607	Add
+E9	Action:T9 Acts-on:T63 Site:T64
+T10	Action 667 676	Switch on
+E10	Action:T10 Acts-on:T65
+T11	Action 716 721	Apply
+E11	Action:T11 Acts-on:T70 Site:T71
+T12	Action 773 778	Apply
+E12	Action:T12 Acts-on:T72
+T13	Action 827 837	Switch off
+E13	Action:T13 Acts-on:T74
+T14	Action 853 856	add
+E14	Action:T14 Acts-on:T75 Site:T74
+T15	Action 948 954	Remove
+E15	Action:T15 Acts-on:T83
+T16	Action 997 1002	Rinse
+E16	Action:T16 Acts-on:T84 Using:T86
+T17	Action 1044 1048	Blot
+E17	Action:T17 Using:T87
+T18	Action 1075 1078	Dry
+E18	Action:T18 Acts-on:T89 Using:T90
+T19	Action 1127 1133	Remove
+E19	Action:T19 Acts-on:T93
+T20	Action 1147 1152	place
+E20	Action:T20 Acts-on:T94 Using:T95 Site:T96
+T21	Action 1252 1255	Dry
+E21	Action:T21 Acts-on:T101 Using:T102 Acts-on2:T103
+T22	Action 1321 1326	Pipet
+E22	Action:T22 Acts-on:T107 Site:T108
+T23	Action 1375 1380	Place
+E23	Action:T23 Acts-on:T110 Site:T111
+T24	Action 1424 1429	Pipet
+E24	Action:T24 Acts-on:T114 Site:T115
+T25	Action 1484 1489	place
+E25	Action:T25 Site:T117 Acts-on:T120
+T26	Action 1526 1531	Place
+E26	Action:T26 Acts-on:T121
+T27	Action 1573 1577	Read
+E27	Action:T27 Acts-on:T125 Using:T128
+T28	Reagent 55 77	dilution of virus prep
+T29	Modifier 89 97	filtered
+T30	Reagent 98 106	seawater
+T31	Concentration 130 149	E+07 particles ml-1
+T32	Measure-Type 112 125	concentration
+R2	Mod-Link Arg1:T30 Arg2:T29	
+R3	Measure Arg1:T28 Arg2:T31	
+T33	Reagent 160 190	working solutions of SYBR Gold
+T34	Reagent 205 223	SYBR working stock
+T35	Amount 197 201	2 µl
+T36	Amount 227 232	98 µl
+T37	Modifier 233 249	0.02 µm filtered
+T38	Reagent 250 252	mQ
+T39	Location 258 276	plastic Petri dish
+T40	Amount 278 285	4 drops
+T41	Numerical 289 292	one
+T42	Location 293 297	dish
+R4	Measure Arg1:T42 Arg2:T41	
+R5	Measure Arg1:T34 Arg2:T35	
+R6	Mod-Link Arg1:T38 Arg2:T37	
+R7	Measure Arg1:T38 Arg2:T36	
+R8	Meronym Arg1:T38 Arg2:T39	
+T43	Location 310 314	dish
+T44	Seal 318 331	aluminum foil
+T45	Device 345 360	filtration unit
+T46	Mention 373 375	it
+T47	Action 362 372	connecting
+E28	Action:T47 Acts-on:T46 Site:T48
+T48	Device 381 387	vacuum
+R9	Coreference-Link Arg1:T46 Arg2:T45	
+T49	Amount 396 405	few drops
+T50	Modifier 417 425	filtered
+T51	Reagent 426 428	mQ
+T52	Location 436 447	filter base
+R10	Mod-Link Arg1:T51 Arg2:T50	
+R11	Measure Arg1:T51 Arg2:T49	
+T53	Numerical 458 461	0.2
+T54	Device 462 483	nitrocellulose filter
+R12	Setting Arg1:T54 Arg2:T53	
+T55	Location 508 511	top
+T56	Reagent 519 524	water
+R13	Meronym Arg1:T55 Arg2:T56	
+T57	Device 541 547	vacuum
+T58	Action 578 582	flat
+E29	Action:T58 Acts-on:T59 Site:T60
+T59	Device 553 567	support filter
+T60	Location 590 601	filter base
+T61	Amount 610 619	few drops
+T62	Modifier 631 639	filtered
+T63	Reagent 640 642	mQ
+T64	Device 650 664	support filter
+R14	Mod-Link Arg1:T63 Arg2:T62	
+R15	Measure Arg1:T63 Arg2:T61	
+T65	Device 681 687	vacuum
+T66	Action 691 695	pull
+E30	Action:T66 Acts-on:T67
+T67	Reagent 700 705	water
+T68	Modifier 706 713	through
+R16	Mod-Link Arg1:E30 Arg2:T68	
+T69	Size 724 731	0.02 µm
+T70	Device 732 746	Anodisc filter
+T71	Device 756 770	support filter
+R17	Setting Arg1:T70 Arg2:T69	
+T72	Location 783 795	filter tower
+T73	Action 800 805	clamp
+E31	Action:T73 Acts-on:T72
+T74	Device 842 848	vacuum
+T75	Reagent 857 870	viral samples
+T76	Action 871 880	Switch on
+E32	Action:T76 Acts-on:T77
+T77	Device 885 891	vacuum
+T78	Action 896 900	wash
+E33	Action:T78 Acts-on:T79 Using:T82
+T79	Device 901 911	filter set
+T80	Amount 918 922	1 ml
+T81	Modifier 934 942	filtered
+T82	Reagent 943 945	mQ
+R18	Mod-Link Arg1:T82 Arg2:T81	
+R19	Measure Arg1:T82 Arg2:T80	
+T83	Device 959 965	filter
+T84	Location 1003 1008	tower
+T85	Amount 1012 1014	1L
+T86	Reagent 1015 1022	Q-water
+R20	Measure Arg1:T86 Arg2:T85	
+T87	Device 1054 1065	paper towel
+T88	Action 1069 1072	dry
+E34	Action:T88 
+T89	Device 1079 1094	filter membrane
+T90	Device 1098 1106	Kimwipes
+T91	Temperature 1110 1112	RT
+T92	Modifier 1113 1123	completely
+R21	Setting Arg1:E18 Arg2:T91	
+R22	Mod-Link Arg1:E18 Arg2:T92	
+T93	Device 1134 1142	membrane
+T94	Reagent 1153 1160	viruses
+T95	Method 1161 1168	side up
+T96	Reagent 1172 1189	staining solution
+T97	Location 1197 1207	Petri dish
+T98	Time 1212 1222	15 minutes
+T99	Action 1224 1229	cover
+E35	Action:T99 Acts-on:T100
+T100	Seal 1235 1248	aluminum foil
+R23	Meronym Arg1:T96 Arg2:T97	
+R24	Setting Arg1:E20 Arg2:T98	
+T101	Device 1256 1271	filter membrane
+T102	Device 1281 1289	Kimwipes
+T103	Location 1297 1301	dark
+T104	Temperature 1305 1307	RT
+T105	Modifier 1308 1318	completely
+R25	Setting Arg1:E21 Arg2:T104	
+R26	Mod-Link Arg1:E21 Arg2:T105	
+T106	Amount 1327 1332	20 µl
+T107	Reagent 1333 1350	antifade solution
+T108	Location 1356 1372	microscope slide
+R27	Measure Arg1:T107 Arg2:T106	
+T109	Modifier 1385 1392	stained
+T110	Device 1393 1408	filter membrane
+T111	Location 1412 1415	top
+R28	Mod-Link Arg1:T110 Arg2:T109	
+T112	Mention 1419 1421	it
+R29	Meronym Arg1:T111 Arg2:T112	
+T113	Amount 1430 1435	30 µl
+T114	Reagent 1436 1453	antifade solution
+T115	Location 1459 1470	cover slide
+R30	Measure Arg1:T114 Arg2:T113	
+T116	Modifier 1474 1483	Carefully
+T117	Device 1500 1506	filter
+T118	Action 1510 1515	avoid
+E36	Action:T118 Acts-on:T119
+T119	Reagent 1516 1523	bubbles
+R31	Mod-Link Arg1:E25 Arg2:T116	
+T120	Mention 1490 1492	it
+T121	Location 1532 1537	slide
+T122	Temperature 1541 1546	-20°C
+T123	Action 1550 1557	enhance
+E37	Action:T123 Measure-Type-Link:T124
+T124	Measure-Type 1558 1570	fluorescence
+R32	Setting Arg1:E26 Arg2:T122	
+T125	Location 1578 1584	slides
+T126	Reagent 1596 1619	oil immersion objective
+T128	Device 1624 1655	inverted fluorescent microscope
+R33	Setting Arg1:T128 Arg2:T126	
+T127	Reagent 0 9	SYBR Gold
+T129	Action 10 18	Staining
+E38	Action:T129 Acts-on:T127
+T130	Reagent 23 28	Viral
+T131	Method 29 40	Enumeration
+T132	Size 81 88	0.02 µm
+R34	Measure Arg1:T30 Arg2:T132	
+T133	Modifier 129 130	~
+R1	Mod-Link Arg1:T31 Arg2:T133	
+T134	Size 409 416	0.02 µm
+R35	Measure Arg1:T51 Arg2:T134	
+T135	Device 489 503	support filter
+T136	Size 623 630	0.02 µm
+R36	Measure Arg1:T63 Arg2:T136	
+T137	Device 812 818	vacuum
+T138	Device 976 982	vacuum
+T139	Reagent 1034 1041	samples
+T140	Modifier 917 918	~
+R37	Mod-Link Arg1:T80 Arg2:T140	
+T141	Size 926 933	0.02 µm
+R38	Measure Arg1:T82 Arg2:T141	
+T142	Concentration 1591 1595	100x
+R39	Measure Arg1:T126 Arg2:T142	

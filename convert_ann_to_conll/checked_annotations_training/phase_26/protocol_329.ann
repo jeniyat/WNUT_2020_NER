@@ -1,0 +1,141 @@
+T1	Action 91 100	determine
+E1	Action:T1 Acts-on:T26 Using:T25 Measure-Type-Link:T40
+T2	Action 144 153	Inoculate
+E2	Action:T2 Acts-on:T27
+T3	Action 246 254	transfer
+E3	Action:T3 Acts-on:T34 Site:T36
+T4	Action 346 355	Inoculate
+E4	Action:T4 Acts-on:T39
+T5	Action 433 437	take
+E5	Action:T5 Measure-Type-Link:T79
+T6	Action 475 490	taking readings
+E6	Action:T6 
+T7	Action 519 524	Graph
+E7	Action:T7 Measure-Type-Link:T42
+T8	Action 548 557	Determine
+E8	Action:T8 Acts-on:T43 Measure-Type-Link:T81
+T9	Action 638 647	Calculate
+E9	Action:T9 Acts-on:T45 Measure-Type-Link:T44
+T10	Action 709 718	Calculate
+E10	Action:T10 Acts-on:T50 Measure-Type-Link:T49
+T11	Action 763 766	Add
+E11	Action:T11 Acts-on:T51 Site:T52 Acts-on2:T54 Site2:T55
+T12	Action 852 857	start
+E12	Action:T12 Acts-on:T56
+T13	Action 884 890	dilute
+E13	Action:T13 Acts-on:T57 Site:T59
+T14	Action 979 982	mix
+E14	Action:T14 Acts-on:T61
+T15	Action 929 932	add
+E15	Action:T15 Acts-on:T61 Site:T63
+T16	Action 970 975	swirl
+E16	Action:T16 Acts-on:T63
+T17	Action 986 990	Take
+E17	Action:T17 Acts-on:T64
+T18	Action 1038 1046	sampling
+E18	Action:T18 
+T19	Action 1087 1092	count
+E19	Action:T19 Acts-on:T66 Site:T67
+T20	Action 1173 1178	count
+E20	Action:T20 Acts-on:T68
+T21	Action 1215 1218	add
+E21	Action:T21 Acts-on:T87
+T22	Action 1251 1256	Count
+E22	Action:T22 
+T23	Action 1282 1291	Calculate
+E23	Action:T23 Measure-Type-Link:T69 Acts-on:T72
+T24	Action 1406 1423	Graph the results
+E24	Action:T24 
+T25	Method 75 87	plaque assay
+T26	Reagent 119 125	lysate
+T27	Reagent 156 167	new culture
+T28	Action 175 179	pick
+E25	Action:T28 Acts-on:T29 Site:T31
+T29	Reagent 182 188	colony
+T30	Amount 196 202	125 ml
+T31	Location 203 208	flask
+T32	Reagent 220 229	MLB media
+R1	Meronym Arg1:T32 Arg2:T31	
+R2	Measure Arg1:T31 Arg2:T30	
+T33	Amount 255 260	10 ml
+T34	Reagent 269 276	culture
+T35	Amount 280 286	500 ml
+T36	Reagent 290 299	new media
+T37	Location 305 319	Fernbach flask
+R3	Measure Arg1:T34 Arg2:T33	
+R4	Measure Arg1:T36 Arg2:T35	
+R5	Meronym Arg1:T36 Arg2:T37	
+T38	Amount 363 369	500 ml
+T39	Reagent 370 378	cultures
+R6	Measure Arg1:T39 Arg2:T38	
+T41	Time 503 515	periodically
+R8	Setting Arg1:E6 Arg2:T41	
+T42	Measure-Type 529 536	results
+T43	Reagent 584 591	culture
+T44	Measure-Type 658 664	number
+T45	Reagent 668 673	cells
+T46	Amount 677 681	each
+T47	Amount 690 696	500 ml
+T48	Reagent 697 705	cultures
+R9	Measure Arg1:T48 Arg2:T47	
+R10	Measure Arg1:T48 Arg2:T46	
+T49	Measure-Type 719 727	how many
+T50	Reagent 728 734	phages
+T51	Reagent 767 773	phages
+T52	Location 781 799	experimental flask
+T53	Amount 807 819	equal volume
+T54	Reagent 823 826	MSM
+T55	Location 834 847	control flask
+T56	Device 863 868	timer
+R11	Measure Arg1:T54 Arg2:T53	
+T57	Reagent 895 904	infection
+T58	Concentration 905 908	1:1
+T59	Reagent 912 921	MLB media
+T60	Amount 933 939	500 ml
+T61	Reagent 940 951	fresh media
+T62	Amount 955 959	each
+T63	Location 960 965	flask
+R12	Setting Arg1:E13 Arg2:T58	
+R13	Measure Arg1:T61 Arg2:T60	
+R14	Measure Arg1:T63 Arg2:T62	
+T64	Reagent 993 999	sample
+T65	Time 1063 1070	8 hours
+R15	Setting Arg1:E18 Arg2:T65	
+T66	Reagent 1097 1104	plaques
+T67	Location 1112 1118	plates
+T68	Reagent 1183 1194	new plaques
+T69	Measure-Type 1292 1298	PFU/ml
+T70	Action 1424 1433	Calculate
+E26	Action:T70 Measure-Type-Link:T71
+T71	Measure-Type 1434 1444	burst size
+T72	Reagent 1395 1402	samples
+T73	Method 0 15	Transcriptomics
+T74	Reagent 50 69	Cellulophaga Phages
+T75	Time 236 244	next day
+R16	Setting Arg1:E3 Arg2:T75	
+T76	Amount 335 342	2800 ml
+T77	Modifier 321 334	short and fat
+R17	Mod-Link Arg1:T37 Arg2:T77	
+R18	Measure Arg1:T37 Arg2:T76	
+T40	Measure-Type 105 111	PFU/ml
+T78	Action 423 431	transfer
+E27	Action:T78 
+T79	Measure-Type 449 463	growth reading
+T80	Method 626 635	infection
+T81	Measure-Type 562 575	concentration
+T82	Measure-Type 754 757	MOI
+T83	Generic-Measure 758 759	3
+R7	Of-Type Arg1:T83 Arg2:T82	
+T84	Method 1018 1026	dilution
+T85	Time 1082 1085	day
+T86	Time 1168 1171	day
+T87	Mention 1219 1224	these
+R19	Coreference-Link Arg1:T87 Arg2:T68	
+T88	Time 1270 1279	third day
+R20	Setting Arg1:E22 Arg2:T88	
+T89	Action 1331 1342	centrifuged
+E28	Action:T89 
+T90	Action 1369 1380	centrifuged
+E29	Action:T90 
+T91	Reagent 1344 1354	free phage
+T92	Reagent 1382 1393	total phage

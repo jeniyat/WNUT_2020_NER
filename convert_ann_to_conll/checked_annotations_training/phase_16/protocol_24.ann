@@ -1,0 +1,124 @@
+T1	Action 28 32	Mush
+E1	Action:T1 Acts-on:T2 Site:T3
+T2	Reagent 37 43	banana
+T3	Location 51 65	resealable bag
+T4	Time 76 84	a minute
+R1	Setting Arg1:E1 Arg2:T4
+T5	Action 149 153	Fill
+E2	Action:T5 Site:T6 Using:T7 Using2:T8
+T6	Location 154 159	a cup
+T7	Reagent 169 178	hot water
+T8	Reagent 183 187	salt
+T9	Action 189 193	Pour
+E3	Action:T9 Acts-on:T10 Site:T11
+T10	Reagent 198 211	saltwater mix
+T11	Location 221 224	bag
+T12	Action 230 235	close
+E4	Action:T12 Acts-on:T13
+T13	Location 240 243	bag
+T14	Action 252 265	mix and slosh
+E5	Action:T14 Acts-on:T16 Acts-on2:T17
+T16	Reagent 270 279	saltwater
+T17	Reagent 284 297	mashed banana
+T18	Time 311 327	30 to 45 seconds
+R2	Setting Arg1:E5 Arg2:T18
+T15	Action 329 332	Add
+E6	Action:T15 Acts-on:T19 Site:T20 Product:T22
+T19	Reagent 333 349	dishwashing soap
+T20	Location 359 362	bag
+T21	Action 374 377	mix
+E7	Action:T21 Acts-on:T22
+T22	Reagent 382 390	contents
+T23	Action 441 446	Place
+E8	Action:T23 Acts-on:T24 Site:T25
+T24	Device 451 464	coffee filter
+T25	Location 470 485	clear glass cup
+T26	Action 545 549	Pour
+E9	Action:T26 Acts-on:T27 Using:T29
+T27	Reagent 554 562	contents
+T28	Location 570 573	bag
+R3	Meronym Arg1:T28 Arg2:T27
+T29	Device 583 589	filter
+T30	Action 660 666	Remove
+E10	Action:T30 Acts-on:T31
+T31	Device 688 701	coffee filter
+T32	Action 703 707	Tilt
+E11	Action:T32 Acts-on:T33
+T33	Location 712 717	glass
+T34	Action 729 732	add
+E12	Action:T34 Acts-on:T35 Site:T36
+T35	Reagent 733 745	cold alcohol
+T36	Location 755 759	side
+T37	Location 767 770	cup
+R4	Meronym Arg1:T36 Arg2:T37
+T38	Action 917 920	sit
+E13	Action:T38 Acts-on:T39
+T39	Reagent 897 916	two-layered mixture
+T40	Time 925 938	eight minutes
+R5	Setting Arg1:E13 Arg2:T40
+T41	Action 1040 1045	Stick
+E14	Action:T41 Acts-on:T42 Site:T43
+T42	Device 1050 1064	wooden stirrer
+T43	Location 1074 1077	cup
+T44	Action 1079 1083	Spin
+E15	Action:T44 Acts-on:T45 Using:T48
+T45	Mention 1084 1086	it
+T46	Action 1135 1141	Remove
+E16	Action:T46 Acts-on:T47
+T47	Device 1146 1153	stirrer
+T48	Method 1087 1095	in place
+T49	Modifier 245 251	Gently
+R7	Mod-Link Arg1:E5 Arg2:T49	
+T50	Modifier 367 373	gently
+R8	Mod-Link Arg1:E7 Arg2:T50	
+T51	Action 487 495	securing
+E17	Action:T51 Acts-on:T52 Site:T54
+T52	Location 500 503	top
+T53	Device 511 517	filter
+T54	Location 529 532	lip
+T55	Location 540 543	cup
+R9	Meronym Arg1:T52 Arg2:T53	
+R10	Meronym Arg1:T54 Arg2:T55	
+T56	Modifier 722 728	slowly
+R11	Mod-Link Arg1:E12 Arg2:T56	
+T57	Action 0 10	Extracting
+E18	Action:T57 Acts-on:T58 Site:T59
+T58	Reagent 11 14	DNA
+T59	Reagent 20 27	bananas
+T60	Modifier 100 124	pudding-like consistency
+R6	Mod-Link Arg1:T2 Arg2:T60	
+T61	Reagent 412 419	mixture
+T62	Modifier 434 439	foamy
+R12	Mod-Link Arg1:T61 Arg2:T62	
+T63	Mention 598 600	it
+R13	Coreference-Link Arg1:T63 Arg2:T27	
+T64	Reagent 622 628	liquid
+T65	Location 655 658	cup
+T66	Reagent 788 793	layer
+T67	Size 802 809	2.5-5cm
+T68	Size 811 816	1-2in
+R14	Coreference-Link Arg1:T67 Arg2:T68	
+T69	Reagent 834 841	alcohol
+T70	Action 825 829	Keep
+E19	Action:T70 Acts-on:T69 Acts-on2:T72
+T71	Modifier 846 855	liquefied
+T72	Reagent 856 862	banana
+R15	Mod-Link Arg1:T72 Arg2:T71	
+T73	Action 671 678	discard
+E20	Action:T73 Acts-on:T31
+T74	Modifier 683 687	used
+R16	Mod-Link Arg1:T31 Arg2:T74	
+R17	Coreference-Link Arg1:T66 Arg2:T67	
+T75	Reagent 983 988	layer
+T76	Reagent 1010 1020	DNA pieces
+T77	Action 1021 1029	clumping
+E21	Action:T77 Acts-on:T76
+T78	Modifier 1104 1110	cloudy
+T79	Reagent 1111 1116	layer
+R18	Mod-Link Arg1:T79 Arg2:T78	
+T80	Mention 1131 1133	it
+T81	Reagent 1159 1168	substance
+T82	Device 1189 1196	stirrer
+T83	Reagent 1200 1203	DNA
+R19	Meronym Arg1:T81 Arg2:T82	
+R20	Coreference-Link Arg1:T81 Arg2:T83	

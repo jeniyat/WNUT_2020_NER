@@ -1,0 +1,74 @@
+T1	Action 31 36	Login
+E1	Action:T1 Acts-on:T29 Using:T30
+T2	Action 99 105	Create
+E2	Action:T2 Product:T31
+T3	Action 135 137	Go
+E3	Action:T3 Site:T32
+T4	Action 169 175	create
+E4	Action:T4 Product:T33
+T5	Action 260 262	Go
+E5	Action:T5 Site:T34
+T6	Action 292 298	create
+E6	Action:T6 Product:T35
+T7	Action 319 323	Copy
+E7	Action:T7 Acts-on:T36 Site:T37
+T8	Action 504 507	Put
+E8	Action:T8 Acts-on:T38 Site:T39
+T9	Action 568 574	create
+E9	Action:T9 Product:T40
+T11	Action 1150 1156	create
+E11	Action:T11 Acts-on:T10
+T12	Action 1259 1265	Create
+E12	Action:T12 Using:T42 Product:T41
+T13	Action 1335 1341	Create
+E13	Action:T13 Product:T43 Site:T15
+T16	Action 1523 1529	modify
+E16	Action:T16 Acts-on:T46
+T17	Action 1554 1560	Update
+E17	Action:T17 Measure-Type-Link:T47
+T20	Action 1729 1732	run
+E20	Action:T20 Acts-on:T52
+T24	Action 2077 2080	add
+E24	Action:T24 Product:T21
+T23	Action 2101 2105	puts
+E23	Action:T23 Acts-on:T53 Site:T22
+T28	Action 2555 2561	Commit
+E28	Action:T28 Site:T26 Acts-on:T25 Using:T27
+T29	Location 44 47	hpc
+T30	Reagent 89 98	user name
+T31	Reagent 108 117	directory
+T32	Location 145 164	hpc-blast directory
+T33	Reagent 176 191	sub directories
+T34	Location 270 287	blastdb directory
+T35	Reagent 303 317	blast database
+T36	Reagent 328 339	input files
+T37	Location 350 356	iPlant
+T38	Mention 508 513	these
+T39	Location 523 540	scripts directory
+T40	Reagent 579 595	config.sh script
+T10	Reagent 1161 1177	"driver script",
+T41	Reagent 1268 1280	shell script
+T42	Reagent 1295 1319	fasta splitter perl code
+T43	Reagent 1344 1356	shell script
+T14	Action 1411 1417	Create
+E10	Action:T14 Product:T44 Site:T45
+T44	Reagent 1420 1432	shell script
+T15	Location 1378 1390	compute node
+T45	Location 1474 1486	compute node
+T46	Reagent 1534 1553	blast search script
+T47	Measure-Type 1565 1572	e-value
+T48	Generic-Measure 1579 1593	less stringent
+R1	Setting Arg1:E17 Arg2:T48	
+T51	Reagent 1701 1708	scripts
+T52	Reagent 1737 1745	pipeline
+T21	Reagent 2091 2095	step
+T22	Location 2144 2155	single file
+T53	Reagent 2117 2136	parsed blast output
+T25	Reagent 2567 2571	code
+T26	Location 2584 2608	github abe487 repository
+T27	Reagent 2619 2638	directory:hpc-blast
+T18	Time 1798 1804	<1 day
+T19	Action 1685 1689	Make
+E14	Action:T19 Acts-on:T51
+T49	Modifier 1709 1719	executable
+R2	Mod-Link Arg1:T51 Arg2:T49	

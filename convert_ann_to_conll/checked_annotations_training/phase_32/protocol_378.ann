@@ -1,0 +1,102 @@
+T1	Action 42 46	Coat
+E1	Action:T1 Acts-on:T14 Using:T55 Site:T16
+T2	Action 274 278	Wash
+E2	Action:T2 Acts-on:T23 Using:T25 Count:T24
+T3	Action 312 317	Block
+E3	Action:T3 Acts-on:T26 Using:T27
+T4	Action 381 384	Add
+E4	Action:T4 Acts-on:T31
+T5	Action 446 453	diluted
+E5	Action:T5 Using:T32 Acts-on:T31 Site:T34
+T6	Action 495 503	incubate
+E6	Action:T6 
+T7	Action 537 541	Wash
+E7	Action:T7 Acts-on:T37 Using:T38
+T8	Action 571 574	Add
+E8	Action:T8 Acts-on:T39 Site:T41
+T9	Action 677 685	incubate
+E9	Action:T9 
+T10	Action 718 722	Wash
+E10	Action:T10 Acts-on:T44 Using:T45
+T11	Action 748 751	Add
+E11	Action:T11 Acts-on:T47
+T12	Action 798 804	quench
+E12	Action:T12 Acts-on:T50
+T13	Action 832 836	Read
+E13	Action:T13 Measure-Type-Link:T51 Using:T52
+T14	Location 51 70	96-well ELISA plate
+T15	Concentration 99 104	50 mM
+T16	Reagent 105 140	sodium carbonate-bicarbonate buffer
+T17	pH 142 148	pH 9.5
+T18	Modifier 213 221	at least
+T19	Time 222 229	2 hours
+T20	Time 256 265	overnight
+T21	Temperature 269 272	4°C
+T22	Temperature 233 252	ambient temperature
+T23	Location 283 288	wells
+T24	Numerical 289 301	3 to 5 times
+T25	Reagent 307 310	PBS
+T26	Location 318 323	wells
+T27	Reagent 329 334	PBS-T
+T28	Concentration 336 347	200 μl/well
+T29	Time 353 359	1 hour
+T30	Temperature 363 379	room temperature
+T31	Reagent 389 409	anti-Neu5Gc antibody
+T32	Reagent 457 462	PBS-T
+T33	Modifier 471 482	appropriate
+T34	Location 483 490	well(s)
+T35	Time 508 515	2 hours
+T36	Temperature 519 535	room temperature
+T37	Location 542 547	wells
+T38	Reagent 563 568	PBS-T
+T39	Reagent 575 611	enzyme-conjugated secondary antibody
+T40	Modifier 663 667	each
+T41	Location 668 672	well
+T42	Time 690 696	1 hour
+T43	Temperature 700 716	room temperature
+T44	Location 723 728	wells
+T45	Reagent 740 746	PBS-T.
+T46	Modifier 729 734	again
+T47	Reagent 752 768	enzyme substrate
+T48	Location 780 785	wells
+T49	Action 789 796	develop
+E14	Action:T49 Acts-on:T48
+T50	Reagent 809 817	reaction
+T51	Measure-Type 837 847	absorbance
+T52	Device 854 872	ELISA plate reader
+T53	Modifier 880 891	appropriate
+T54	Generic-Measure 892 902	wavelength
+T55	Reagent 80 95	target molecule
+R1	Measure Arg1:T16 Arg2:T15	
+R2	Measure Arg1:T16 Arg2:T17	
+R3	Mod-Link Arg1:T19 Arg2:T18	
+R4	Setting Arg1:E1 Arg2:T19	
+R5	Setting Arg1:E1 Arg2:T22	
+R6	Or Arg1:T19 Arg2:T20	
+R7	Or Arg1:T22 Arg2:T21	
+R9	Measure Arg1:T27 Arg2:T28	
+R10	Setting Arg1:E3 Arg2:T29	
+R11	Setting Arg1:E3 Arg2:T30	
+R12	Mod-Link Arg1:T34 Arg2:T33	
+R13	Setting Arg1:E6 Arg2:T35	
+R14	Setting Arg1:E6 Arg2:T36	
+R15	Mod-Link Arg1:T41 Arg2:T40	
+R16	Setting Arg1:E9 Arg2:T42	
+R17	Setting Arg1:E9 Arg2:T43	
+R18	Mod-Link Arg1:E10 Arg2:T46	
+R19	Mod-Link Arg1:T54 Arg2:T53	
+R20	Setting Arg1:T52 Arg2:T54	
+T56	Device 0 24	Anti-Neu5Gc Antibody Kit
+T57	Modifier 150 155	up to
+T58	Concentration 156 165	1 μg/well
+R21	Mod-Link Arg1:T58 Arg2:T57	
+T59	Amount 169 175	100 μl
+T60	Reagent 176 192	carbonate buffer
+R22	Measure Arg1:T60 Arg2:T59	
+T61	Reagent 418 443	negative control antibody
+R8	Or Arg1:T31 Arg2:T61	
+T62	Reagent 613 641	donkey-anti-chicken antibody
+T63	Concentration 643 651	1:10,000
+T64	Reagent 655 658	PBS
+R23	Measure Arg1:T62 Arg2:T63	
+R24	Meronym Arg1:T62 Arg2:T64	

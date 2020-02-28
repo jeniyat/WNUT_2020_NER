@@ -1,0 +1,45 @@
+T1	Action 55 64	dissolved
+E1	Action:T1 Site:T10 Acts-on:T8
+T2	Action 113 125	supplemented
+E2	Action:T2 Using:T24
+T3	Action 148 151	Add
+E3	Action:T3 Acts-on:T13
+T4	Action 188 196	Incubate
+E4	Action:T4 
+T5	Action 221 225	Stop
+E5	Action:T5 Acts-on:T16 Commands:E7
+T6	Action 285 289	Heat
+E6	Action:T6 
+T7	Action 238 244	adding
+E7	Action:T7 Product:T17
+T8	Reagent 41 44	DNA
+T9	Concentration 68 70	1x
+T10	Reagent 71 79	NEBuffer
+T11	Reagent 83 112	T4 DNA Ligase Reaction buffer
+R1	Or Arg1:T10 Arg2:T11	
+R2	Measure Arg1:T10 Arg2:T9	
+T12	Amount 152 158	1 unit
+T13	Reagent 162 168	Klenow
+R3	Measure Arg1:T13 Arg2:T12	
+T14	Time 201 211	15 minutes
+T15	Temperature 215 219	25°C
+R4	Setting Arg1:E4 Arg2:T14	
+R5	Setting Arg1:E4 Arg2:T15	
+T17	Reagent 245 249	EDTA
+T18	Concentration 278 283	10 mM
+R6	Measure Arg1:T17 Arg2:T18	
+T19	Time 294 304	20 minutes
+T20	Temperature 308 312	75°C
+R7	Setting Arg1:E6 Arg2:T19	
+R8	Setting Arg1:E6 Arg2:T20	
+T21	Modifier 0 5	Large
+T22	Action 6 32	(Klenow) Fragment Blunting
+E8	Action:T22 
+R9	Mod-Link Arg1:E8 Arg2:T21	
+T23	Concentration 131 136	33 μM
+T24	Reagent 142 146	dNTP
+T25	Amount 173 182	microgram
+T26	Reagent 183 186	DNA
+R10	Measure Arg1:T24 Arg2:T23	
+T16	Reagent 226 234	reaction
+R11	Measure Arg1:T26 Arg2:T25	

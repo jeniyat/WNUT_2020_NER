@@ -1,0 +1,157 @@
+T1	Action 135 142	discard
+E1	Action:T1 Acts-on:T25 Site:T26
+T2	Action 178 183	place
+E2	Action:T2 Acts-on:T27 Site:T28
+T3	Action 254 261	Pipette
+E3	Action:T3 Acts-on:T30 Site:T32
+T6	Action 400 406	Remove
+E6	Action:T6 Acts-on:T4 Site:T5
+T7	Action 483 489	remove
+E7	Action:T7 Acts-on:T35 Using:T36
+T8	Action 524 529	Screw
+E8	Action:T8 Acts-on:T37 Site:T38
+T9	Action 599 605	Invert
+E9	Action:T9 Acts-on:T39
+T10	Action 734 739	slide
+E10	Action:T10 Acts-on:T41 Site:T42
+T11	Action 791 796	Place
+E11	Action:T11 Acts-on:T43 Site:T44
+T13	Action 987 991	tilt
+E13	Action:T13 Acts-on:T12
+T14	Action 1004 1010	squirt
+E14	Action:T14 Acts-on:T48
+T15	Action 1375 1381	remove
+E15	Action:T15 Acts-on:T53 Site:T57
+T16	Action 1434 1438	spin
+E16	Action:T16 Acts-on:T54
+T17	Action 1515 1522	Discard
+E17	Action:T17 Acts-on:T59
+T18	Action 1544 1551	replace
+E18	Action:T18 Using:T61 Acts-on:T59
+T19	Action 1583 1586	Add
+E19	Action:T19 Acts-on:T63
+T20	Action 1631 1635	Keep
+E20	Action:T20 Acts-on:T66
+T21	Action 1694 1698	stir
+E21	Action:T21 Acts-on:T67
+T22	Action 1268 1276	dialyzed
+E22	Action:T22 Acts-on:T52
+T23	Action 1769 1778	inverting
+E23	Action:T23 
+T24	Action 1789 1796	tapping
+E24	Action:T24 Using:T72
+T25	Reagent 147 159	preservative
+T26	Location 169 173	tube
+T27	Seal 188 200	dialysis cap
+T28	Location 218 224	beaker
+T29	Location 228 252	other suitable container
+R1	Or Arg1:T28 Arg2:T29	
+T30	Reagent 267 273	sample
+T31	Modifier 274 282	directly
+T32	Location 292 313	Tube‐O‐DIALYZER™ tube
+R2	Mod-Link Arg1:T30 Arg2:T31	
+T4	Seal 411 440	Tube‐O‐DIALYZER™ dialysis cap
+T5	Reagent 450 468	rinse water/buffer
+T33	Modifier 473 482	carefully
+T34	Modifier 490 496	excess
+T35	Reagent 497 503	liquid
+T36	Location 511 522	pipette tip
+R3	Mod-Link Arg1:T35 Arg2:T34	
+R4	Mod-Link Arg1:E7 Arg2:T33	
+T37	Seal 534 546	dialysis cap
+T38	Location 557 578	Tube‐O‐DIALYZER™ tube
+T39	Device 610 626	Tube‐O‐DIALYZER™
+T40	Device 692 708	Tube‐O‐DIALYZER™
+T41	Location 744 758	supplied float
+T42	Location 768 789	Tube‐O‐DIALYZER™ tube
+R5	Meronym Arg1:T42 Arg2:T40	
+T43	Device 801 817	Tube‐O‐DIALYZER™
+T44	Reagent 825 840	dialysis buffer
+T45	Reagent 858 875	dialysis membrane
+T46	Reagent 889 904	dialysis buffer
+T47	Action 876 884	contacts
+E4	Action:T47 Acts-on:T45 Site:T46
+T12	Location 996 1000	tube
+T48	Reagent 1011 1017	buffer
+T49	Action 1021 1027	remove
+E5	Action:T49 Acts-on:T50
+T50	Reagent 1032 1043	air bubbles
+T51	Time 1281 1286	2‐12h
+T52	Reagent 1251 1257	sample
+R6	Setting Arg1:E22 Arg2:T51	
+T53	Device 1386 1402	Tube‐O‐DIALYZER™
+T54	Device 1443 1459	Tube‐O‐DIALYZER™
+T55	Time 1487 1498	5‐6 seconds
+T56	Speed 1502 1513	500‐1,000xg
+R7	Setting Arg1:E16 Arg2:T55	
+R8	Setting Arg1:E16 Arg2:T56	
+T57	Reagent 1412 1417	float
+T58	Modifier 1422 1433	immediately
+R9	Mod-Link Arg1:E16 Arg2:T58	
+T59	Seal 1527 1539	dialysis cap
+T60	Modifier 1561 1569	supplied
+T61	Seal 1570 1581	Storage Cap
+R10	Mod-Link Arg1:T61 Arg2:T60	
+T62	Amount 1587 1592	1‐2ml
+T63	Reagent 1593 1601	DI water
+T64	Reagent 1605 1620	dialysis buffer
+T65	Action 1624 1629	rinse
+E12	Action:T65 
+R11	Measure Arg1:T63 Arg2:T62	
+R12	Or Arg1:T63 Arg2:T64	
+T66	Reagent 1640 1665	Tube‐O‐DIALYZER™ membrane
+T67	Reagent 1703 1718	dialysis buffer
+T68	Modifier 1686 1692	Gently
+R13	Mod-Link Arg1:E21 Arg2:T68	
+T69	Modifier 1782 1788	gently
+T70	Device 1801 1817	Tube‐O‐DIALYZER™
+T71	Numerical 1818 1821	1‐2
+R14	Mod-Link Arg1:E24 Arg2:T69	
+R15	Setting Arg1:E24 Arg2:T71	
+T72	Method 1835 1843	dialysis
+T73	Action 1847 1850	mix
+E25	Action:T73 Acts-on:T74
+T74	Reagent 1855 1861	sample
+T75	Device 0 15	Tube-O-Dialyzer
+T76	Device 25 33	Dialyzer
+T77	Modifier 38 43	Small
+T78	Reagent 44 51	Samples
+R16	Mod-Link Arg1:T78 Arg2:T77	
+T79	Device 53 69	Tube‐O‐DIALYZER™
+T80	Reagent 88 100	preservative
+R17	Meronym Arg1:T79 Arg2:T80	
+T81	Device 319 341	Tube‐O‐DIALYZER™ Micro
+T82	Amount 346 354	20‐250µl
+T83	Device 363 384	Tube‐O‐DIALYZER™ Medi
+T84	Amount 389 398	0.2‐2.5ml
+R18	Measure Arg1:T81 Arg2:T82	
+R19	Measure Arg1:T83 Arg2:T84	
+T85	Reagent 648 654	sample
+T86	Location 670 678	membrane
+R20	Meronym Arg1:T85 Arg2:T86	
+T87	Action 680 687	Keeping
+E26	Action:T87 Acts-on:T40
+T88	Method 1747 1755	dialysis
+T89	Modifier 1724 1733	efficient
+T90	Modifier 1738 1746	complete
+T91	Location 960 985	dialysis membrane surface
+T92	Measure-Type 1045 1058	Dialysis Time
+T93	Measure-Type 1061 1074	Dialysis time
+T94	Reagent 1104 1110	sample
+T95	Measure-Type 1112 1116	MWCO
+T96	Device 1124 1140	Tube‐O‐DIALYZER™
+T97	Reagent 1142 1148	sample
+T98	Reagent 1153 1168	dialysis buffer
+T99	Measure-Type 1169 1175	volume
+T100	Measure-Type 1180 1193	concentration
+T101	Generic-Measure 1202 1206	MWCO
+T102	Reagent 1288 1303	Dialysis buffer
+T103	Action 1319 1327	replaced
+E27	Action:T103 Acts-on:T102 Count:T105
+T104	Modifier 1328 1336	at least
+T105	Numerical 1337 1341	once
+T106	Method 1349 1357	dialysis
+R21	Mod-Link Arg1:T105 Arg2:T104	
+T107	Method 1365 1373	dialysis
+T108	Modifier 1666 1669	wet
+R22	Mod-Link Arg1:T66 Arg2:T108	

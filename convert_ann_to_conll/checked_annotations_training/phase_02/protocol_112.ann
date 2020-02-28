@@ -1,0 +1,137 @@
+T1	Action 31 34	Run
+E1	Action:T1 Acts-on:T15 Using:T17
+T2	Action 64 72	Transfer
+E2	Action:T2 Acts-on:T18 Site:T19 Using:T22
+T3	Action 134 137	Cut
+E3	Action:T3 Acts-on:T24
+T4	Action 212 215	Cut
+E4	Action:T4 Acts-on:T27
+T5	Action 596 601	Block
+E5	Action:T5 Acts-on:T29 Using:T31
+T14	Concentration 35 38	40%
+T15	Reagent 42 51	IP eluate
+T16	Concentration 55 58	10%
+T17	Reagent 59 62	gel
+R1	Measure Arg1:T17 Arg2:T16	
+R2	Measure Arg1:T15 Arg2:T14	
+T18	Reagent 73 80	protein
+T19	Reagent 84 97	PVDF membrane
+T20	Time 102 105	1hr
+T21	Temperature 109 111	RT
+T22	Location 117 125	ice pack
+T23	Generic-Measure 127 131	100V
+R3	Setting Arg1:E2 Arg2:T20	
+R4	Setting Arg1:E2 Arg2:T21	
+R5	Setting Arg1:T22 Arg2:T23	
+T24	Reagent 138 146	membrane
+T25	Modifier 147 157	just below
+T26	Generic-Measure 158 163	180kD
+R6	Mod-Link Arg1:T26 Arg2:T25	
+R7	Setting Arg1:E3 Arg2:T26	
+T27	Reagent 216 224	Membrane
+T28	Generic-Measure 228 233	~82kD
+R8	Setting Arg1:E4 Arg2:T28	
+T29	Reagent 602 610	membrane
+T30	Concentration 616 618	5%
+T31	Reagent 619 622	BSA
+T32	Reagent 624 627	IgG
+T33	Reagent 632 645	Protease-Free
+T34	Reagent 647 651	TBST
+T35	Time 656 660	2hrs
+T36	Temperature 664 666	RT
+R9	Measure Arg1:T31 Arg2:T30	
+R10	Meronym Arg1:T32 Arg2:T31	
+R11	Meronym Arg1:T33 Arg2:T31	
+R12	Or Arg1:T31 Arg2:T34	
+R13	Setting Arg1:E5 Arg2:T35	
+R14	Setting Arg1:E5 Arg2:T36	
+T6	Action 667 672	Probe
+E6	Action:T6 Acts-on:T7 Using:T8 Site:T9
+T7	Reagent 673 681	membrane
+T8	Reagent 687 721	rabbit-anti-phosphoserine antibody
+T9	Reagent 740 771	IgG-Free/Protease-Free BSA/TBST
+T10	Action 835 840	Probe
+E7	Action:T10 Site:T37
+T11	Time 841 850	overnight
+T12	Temperature 854 856	4C
+T13	Location 860 869	cold room
+T37	Location 873 885	tilting tray
+T38	Action 887 892	Rinse
+E8	Action:T38 Acts-on:T39 Count:T40 Using:T43
+T39	Reagent 893 901	membrane
+T40	Numerical 902 904	8x
+T41	Temperature 924 928	2hrs
+T42	Concentration 934 936	1x
+T43	Reagent 937 941	TBST
+T44	Action 943 948	Block
+E9	Action:T44 Acts-on:T45 Site:T47
+T45	Reagent 949 957	membrane
+T46	Concentration 961 963	5%
+T47	Reagent 964 973	milk/TBST
+T48	Time 978 981	1hr
+T49	Action 983 988	Probe
+E10	Action:T49 Using:T50
+T50	Reagent 994 1051	mouse-anti-rabbit light-chain specific secondary antibody
+T51	Generic-Measure 1055 1061	1:2000
+T52	Time 1066 1070	2hrs
+T53	Temperature 1074 1076	RT
+T54	Action 1078 1083	Rinse
+E11	Action:T54 Count:T55 Using:T56
+T55	Numerical 1084 1086	6x
+T56	Reagent 1092 1096	TBST
+T57	Time 1102 1105	1hr
+T58	Temperature 1109 1111	RT
+T59	Action 1113 1121	Activate
+E12	Action:T59 Acts-on:T60 Using:T61
+T60	Reagent 1122 1130	membrane
+T61	Reagent 1136 1144	pico ECL
+T62	Action 1146 1155	Visualize
+E13	Action:T62 Using:T63
+T63	Device 1161 1174	Amersham film
+T64	Generic-Measure 773 779	1:2000
+T65	Generic-Measure 793 799	1:1000
+R15	Setting Arg1:E6 Arg2:T64	
+R16	Or Arg1:T64 Arg2:T65	
+R17	Setting Arg1:E7 Arg2:T11	
+R18	Setting Arg1:E7 Arg2:T12	
+R19	Meronym Arg1:T37 Arg2:T13	
+R20	Setting Arg1:E8 Arg2:T41	
+R21	Measure Arg1:T43 Arg2:T42	
+R22	Measure Arg1:T47 Arg2:T46	
+R23	Setting Arg1:E9 Arg2:T48	
+R24	Setting Arg1:E10 Arg2:T51	
+R25	Setting Arg1:E10 Arg2:T52	
+R26	Setting Arg1:E10 Arg2:T53	
+R27	Setting Arg1:E11 Arg2:T57	
+R28	Setting Arg1:E11 Arg2:T58	
+T66	Reagent 0 13	PhosphoSerine
+T67	Action 14 30	Western Blotting
+E14	Action:T67 
+T68	Generic-Measure 826 832	1:2000
+T69	Modifier 317 327	GST-tagged
+T70	Reagent 328 335	protein
+R29	Mod-Link Arg1:T70 Arg2:T69	
+T71	Modifier 339 340	~
+T72	Generic-Measure 340 346	115 kD
+R30	Mod-Link Arg1:T72 Arg2:T71	
+T73	Action 348 355	Cutting
+E15	Action:T73 Acts-on:T74
+T74	Reagent 360 368	membrane
+T75	Action 428 435	running
+E16	Action:T75 Acts-on:T80 Site:T81
+T76	Location 203 209	ladder
+T77	Modifier 182 202	benchmark prestained
+R31	Mod-Link Arg1:T76 Arg2:T77	
+T78	Modifier 275 295	benchmark prestained
+T79	Location 296 302	ladder
+R32	Mod-Link Arg1:T79 Arg2:T78	
+T80	Location 438 444	ladder
+T81	Location 452 458	middle
+T82	Reagent 466 469	gel
+R33	Meronym Arg1:T81 Arg2:T82	
+T83	Action 484 487	cut
+E17	Action:T83 Acts-on:T84
+T84	Reagent 508 516	membrane
+T85	Reagent 539 542	gel
+T86	Reagent 586 594	membrane
+T87	Device 727 736	millipore

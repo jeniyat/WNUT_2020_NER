@@ -1,0 +1,273 @@
+T1	Action 68 72	Thaw
+E1	Action:T1 Acts-on:T42
+T2	Action 106 113	suspend
+E2	Action:T2 Acts-on:T42 Site:T43 Using:T44
+T3	Action 143 150	Suspend
+E3	Action:T3 Using:T48
+T4	Action 207 217	Homogenize
+E4	Action:T4 Acts-on:T49 Site:T50 Using:T53 Using2:T56
+T5	Action 350 357	Recover
+E5	Action:T5 Acts-on:T57
+T6	Action 389 393	Wash
+E6	Action:T6 Acts-on:T60 Using:T63
+T7	Action 439 446	combine
+E7	Action:T7 Acts-on:T64 Acts-on2:T60
+T8	Action 468 478	Centrifuge
+E8	Action:T8 Acts-on:T65 Site:T66
+T9	Action 548 554	Adjust
+E9	Action:T9 Acts-on:T70 Using:T72 Using2:T74
+T10	Action 644 647	Add
+E10	Action:T10 Acts-on:T75
+T11	Action 673 683	Centrifuge
+E11	Action:T11 Acts-on:T77 Site:T78
+T12	Action 751 758	Suspend
+E12	Action:T12 Acts-on:T82 Using:T83
+T13	Action 807 810	add
+E13	Action:T13 Acts-on:T87 Acts-on2:T90
+T14	Action 878 881	Mix
+E14	Action:T14 Using:T94
+T15	Action 916 926	Centrifuge
+E15	Action:T15 Acts-on:T96 Site:T97
+T16	Action 994 1000	Dilute
+E16	Action:T16 Acts-on:T101 Using:T103
+T18	Action 1082 1086	Load
+E18	Action:T18 Acts-on:T105 Site:T107
+T19	Action 1187 1192	Elute
+E19	Action:T19 Using:T112 Using2:T114 Acts-on:T111
+T20	Action 1267 1272	Assay
+E20	Action:T20 Acts-on:T115
+T21	Action 1298 1302	pool
+E21	Action:T21 Acts-on:T116
+T22	Action 1325 1331	Dilute
+E22	Action:T22 Acts-on:T117 Using:T119
+T23	Action 1418 1422	Load
+E23	Action:T23 Acts-on:T121 Site:T123
+T24	Action 1520 1525	Elute
+E24	Action:T24 Acts-on:T127 Using:T128 Using2:T130
+T25	Action 1597 1602	Assay
+E25	Action:T25 Acts-on:T131
+T26	Action 1628 1632	pool
+E26	Action:T26 Acts-on:T132
+T27	Action 1655 1661	Dilute
+E27	Action:T27 Acts-on:T133 Using:T135
+T30	Action 1756 1760	Load
+E30	Action:T30 Acts-on:T138 Site:T140
+T31	Action 1863 1868	Elute
+E31	Action:T31 Acts-on:T145 Using:T146 Using2:T149
+T32	Action 1945 1950	Assay
+E32	Action:T32 Acts-on:T151
+T33	Action 1976 1980	pool
+E33	Action:T33 Acts-on:T150
+T34	Action 2003 2014	Concentrate
+E34	Action:T34 Acts-on:T152 Using:T153 Site:T155
+T35	Action 2083 2086	Add
+E35	Action:T35 Acts-on:T157
+T36	Action 2141 2145	Save
+E36	Action:T36 
+T37	Action 2163 2171	Incubate
+E37	Action:T37 
+T38	Action 2211 2215	Save
+E38	Action:T38 Acts-on:T164
+T39	Action 2228 2232	Save
+E39	Action:T39 Acts-on:T165
+T40	Action 2250 2255	Store
+E40	Action:T40 Acts-on:T166
+T41	Modifier 77 91	virus infected
+T42	Reagent 92 101	chlorella
+T43	Location 117 127	MSK flasks
+T44	Reagent 133 142	Buffer A.
+R1	Mod-Link Arg1:T42 Arg2:T41	
+T45	Amount 156 161	20 ml
+T46	Modifier 162 171	per flask
+R2	Mod-Link Arg1:T45 Arg2:T46	
+T48	Reagent 191 205	infected cells
+R5	Measure Arg1:T48 Arg2:T45	
+T49	Reagent 222 227	cells
+T50	Device 235 261	MSK mechanical homogenizer
+T51	Amount 267 272	15 gm
+T52	Size 276 282	0.3 mm
+T53	Reagent 283 294	glass beads
+T54	Speed 298 307	4,000 rpm
+T55	Time 312 331	90 sec (2 X 45 sec)
+T56	Method 337 348	CO2 cooling
+R4	Measure Arg1:T53 Arg2:T52	
+R6	Measure Arg1:T53 Arg2:T51	
+R7	Setting Arg1:E4 Arg2:T54	
+R8	Setting Arg1:E4 Arg2:T55	
+T57	Reagent 362 372	homogenate
+T58	Action 376 381	clean
+E41	Action:T58 Acts-on:T59
+T59	Location 382 387	tubes
+T60	Reagent 398 409	glass beads
+T61	Concentration 410 412	3X
+T62	Amount 418 422	5 ml
+T63	Reagent 426 434	Buffer A
+T64	Reagent 456 466	homogenate
+R9	Measure Arg1:T60 Arg2:T61	
+R10	Measure Arg1:T63 Arg2:T62	
+T65	Reagent 483 493	homogenate
+T66	Device 501 519	Sorvall SS34 rotor
+T67	Speed 523 533	10,000 rpm
+T68	Time 535 541	20 min
+T69	Temperature 543 546	4°C
+R11	Setting Arg1:E8 Arg2:T67	
+R12	Setting Arg1:E8 Arg2:T68	
+R13	Setting Arg1:E8 Arg2:T69	
+T70	Reagent 559 581	homogenate supernatant
+T71	Concentration 585 599	70% saturation
+T72	Reagent 605 614	(NH4)2SO4
+T73	Temperature 618 621	4°C
+T74	Method 627 642	gentle stirring
+R14	Setting Arg1:E9 Arg2:T71	
+R15	Setting Arg1:E9 Arg2:T73	
+T75	Reagent 652 661	(NH4)2SO4
+T76	Modifier 662 671	gradually
+R16	Mod-Link Arg1:E10 Arg2:T76	
+T77	Reagent 688 696	material
+T78	Device 704 722	Sorvall SS34 rotor
+T79	Speed 726 736	10,000 rpm
+T80	Time 738 744	10 min
+T81	Temperature 746 749	4°C
+R17	Setting Arg1:E11 Arg2:T79	
+R18	Setting Arg1:E11 Arg2:T80	
+R19	Setting Arg1:E11 Arg2:T81	
+T82	Reagent 763 770	pellets
+T83	Reagent 776 784	Buffer A
+T84	Modifier 786 806	Per mL of suspension
+T85	Amount 812 819	0.45 mL
+T86	Concentration 823 826	4 M
+T87	Reagent 827 831	NaCl
+T88	Amount 836 843	0.45 mL
+T89	Concentration 847 850	28%
+T90	Reagent 851 859	PEG 8000
+T91	Temperature 871 875	65°C
+R20	Measure Arg1:T87 Arg2:T85	
+R21	Measure Arg1:T87 Arg2:T86	
+R22	Measure Arg1:T90 Arg2:T88	
+R23	Measure Arg1:T90 Arg2:T89	
+T92	Action 861 867	heated
+E42	Action:T92 Acts-on:T90
+R24	Setting Arg1:E42 Arg2:T91	
+R25	Mod-Link Arg1:T85 Arg2:T84	
+R26	Mod-Link Arg1:T88 Arg2:T84	
+T93	Modifier 882 888	gently
+T94	Method 892 901	inversion
+T95	Time 906 914	5-10 min
+R27	Mod-Link Arg1:E14 Arg2:T93	
+R28	Setting Arg1:E14 Arg2:T95	
+T96	Reagent 931 939	material
+T97	Device 947 965	Sorvall SS34 rotor
+T98	Speed 969 979	10,000 rpm
+T99	Time 981 987	10 min
+T100	Temperature 989 992	4°C
+R29	Setting Arg1:E15 Arg2:T98	
+R30	Setting Arg1:E15 Arg2:T99	
+R31	Setting Arg1:E15 Arg2:T100	
+T101	Reagent 1005 1016	supernatant
+T102	Amount 1022 1035	10-15 volumes
+T103	Reagent 1039 1047	Buffer B
+T104	Reagent 1062 1066	NaCl
+R32	Measure Arg1:T103 Arg2:T102	
+T105	Reagent 1091 1099	material
+T106	Time 1100 1109	overnight
+T107	Location 1117 1141	Heparin-Sepharose column
+T108	Reagent 1160 1168	Buffer B
+T109	Action 1142 1154	equilibrated
+E43	Action:T109 Acts-on:T107 Using:T108 Site:T110
+T110	Location 1176 1185	cold room
+R33	Setting Arg1:E18 Arg2:T106	
+T111	Location 1197 1221	Heparin-Sepharose column
+T112	Reagent 1227 1235	Buffer B
+T113	Concentration 1244 1251	0-2.0 M
+T114	Reagent 1252 1265	KOAc gradient
+R34	Measure Arg1:T114 Arg2:T113	
+T115	Reagent 1277 1293	column fractions
+T116	Reagent 1307 1323	active fractions
+T117	Reagent 1336 1352	pooled fractions
+T118	Amount 1358 1371	10-15 volumes
+T119	Reagent 1375 1383	Buffer B
+T120	Reagent 1398 1402	salt
+R35	Measure Arg1:T119 Arg2:T118	
+T121	Reagent 1427 1435	material
+T122	Time 1436 1445	overnight
+T123	Location 1453 1474	Blue-Sepharose column
+T124	Action 1475 1487	equilibrated
+E44	Action:T124 Acts-on:T123 Using:T125 Site:T126
+T125	Reagent 1493 1501	Buffer B
+T126	Location 1509 1518	cold room
+R36	Setting Arg1:E23 Arg2:T122	
+T127	Location 1530 1551	Blue-Sepharose column
+T128	Reagent 1557 1565	Buffer B
+T129	Concentration 1574 1581	0-2.0 M
+T130	Reagent 1582 1595	KOAc gradient
+R37	Measure Arg1:T130 Arg2:T129	
+T131	Reagent 1607 1623	column fractions
+T132	Reagent 1637 1653	active fractions
+T133	Reagent 1666 1682	pooled fractions
+T134	Amount 1688 1701	10-15 volumes
+T135	Reagent 1705 1713	Buffer B
+T136	pH 1715 1721	pH 8.5
+T137	Reagent 1736 1740	salt
+R38	Measure Arg1:T135 Arg2:T134	
+R39	Measure Arg1:T135 Arg2:T136	
+T138	Reagent 1765 1773	material
+T139	Time 1774 1783	overnight
+T140	Location 1791 1809	Q-Sepharose column
+T141	Action 1810 1822	equilibrated
+E45	Action:T141 Acts-on:T140 Using:T142 Site:T144
+T142	Reagent 1828 1836	Buffer B
+T143	pH 1838 1844	pH 8.5
+T144	Location 1852 1861	cold room
+R40	Setting Arg1:E30 Arg2:T139	
+R41	Measure Arg1:T142 Arg2:T143	
+T145	Location 1873 1891	Q-Sepharose column
+T146	Reagent 1897 1905	Buffer B
+T147	pH 1907 1913	pH 8.5
+T148	Concentration 1922 1929	0-2.0 M
+T149	Reagent 1930 1943	KOAc gradient
+R42	Measure Arg1:T149 Arg2:T148	
+R43	Measure Arg1:T146 Arg2:T147	
+T150	Reagent 1985 2001	active fractions
+T151	Reagent 1955 1971	column fractions
+T152	Reagent 2019 2032	pooled enzyme
+T153	Method 2036 2044	dialysis
+T154	Time 2045 2054	overnight
+T155	Reagent 2060 2074	storage buffer
+T156	Temperature 2078 2081	4°C
+R44	Setting Arg1:E34 Arg2:T154	
+R45	Setting Arg1:E34 Arg2:T156	
+T157	Reagent 2087 2090	BSA
+T158	Concentration 2092 2100	10 mg/mL
+T159	Concentration 2130 2139	100 µg/mL
+R46	Setting Arg1:E35 Arg2:T159	
+R47	Measure Arg1:T157 Arg2:T158	
+T160	Reagent 2150 2161	supernatant
+T161	Temperature 2175 2178	4°C
+T162	Time 2183 2192	60-90 min
+R48	Setting Arg1:E37 Arg2:T161	
+R49	Setting Arg1:E37 Arg2:T162	
+T164	Reagent 2220 2226	pellet
+T165	Reagent 2237 2248	supernatant
+T166	Reagent 2260 2266	enzyme
+T167	Temperature 2270 2275	-20°C
+R51	Setting Arg1:E40 Arg2:T167	
+T168	Reagent 0 24	Restriction Endonuclease
+T169	Method 25 37	Purification
+T170	Modifier 43 57	Virus Infected
+T171	Reagent 58 67	Chlorella
+R52	Mod-Link Arg1:T171 Arg2:T170	
+T47	Amount 176 190	1.0-1.5 X 1011
+R3	Measure Arg1:T48 Arg2:T47	
+T172	Measure-Type 1067 1080	concentration
+T173	Action 1051 1057	reduce
+E46	Action:T173 Measure-Type-Link:T172
+T17	Measure-Type 1741 1754	concentration
+T28	Action 1725 1731	reduce
+E17	Action:T28 Measure-Type-Link:T17
+T174	Measure-Type 2113 2126	concentration
+T175	Modifier 2107 2112	final
+T163	Action 2201 2209	stirring
+E28	Action:T163 
+T29	Action 1387 1393	reduce
+E29	Action:T29 Acts-on:T120
+T176	Generic-Measure 1403 1416	concentration

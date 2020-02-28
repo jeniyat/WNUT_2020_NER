@@ -1,0 +1,193 @@
+T1	Action 44 51	Prepare
+E1	Action:T1 Acts-on:T28
+T2	Action 143 150	cooling
+E2	Action:T2 Acts-on:T31
+T3	Action 174 177	add
+E3	Action:T3 Acts-on:T33
+T4	Action 249 256	prepare
+E4	Action:T4 Acts-on:T37
+T5	Action 282 285	add
+E5	Action:T5 Acts-on:T40
+T6	Action 354 361	cooling
+E6	Action:T6 Acts-on:T41
+T7	Action 384 387	add
+E7	Action:T7 Acts-on:T36
+T8	Action 335 346	autoclaving
+E8	Action:T8 Acts-on:T37
+T9	Action 431 435	Pour
+E9	Action:T9 Acts-on:T43 Site:T44
+T11	Action 499 506	prepare
+E11	Action:T11 Acts-on:T48
+T12	Action 555 572	isotopic labeling
+E12	Action:T12 Using:T50 Using2:T51
+T15	Action 810 817	isolate
+E15	Action:T15 Acts-on:T56
+T16	Action 835 844	inoculate
+E16	Action:T16 Acts-on:T59
+T17	Action 876 884	striking
+E17	Action:T17 Acts-on:T61
+T18	Action 889 898	dispersal
+E18	Action:T18 Acts-on:T61
+T19	Action 929 936	picking
+E19	Action:T19 Acts-on:T62
+T20	Action 990 998	Incubate
+E20	Action:T20 Acts-on:T38
+T21	Action 1093 1097	grow
+E21	Action:T21 Acts-on:T65
+T22	Action 1108 1115	Inspect
+E22	Action:T22 Acts-on:T68
+T23	Action 1235 1243	transfer
+E23	Action:T23 Acts-on:T73 Site:T75
+T13	Action 1365 1372	Prepare
+E13	Action:T13 Acts-on:T80 Using:T78
+T14	Action 1428 1432	pick
+E14	Action:T14 Acts-on:T79
+T24	Action 1547 1555	transfer
+E24	Action:T24 Acts-on:T83
+T25	Action 1647 1651	grow
+E25	Action:T25 Acts-on:T86
+T26	Action 1953 1959	making
+E26	Action:T26 Acts-on:T88
+T27	Action 1511 1518	produce
+E27	Action:T27 Acts-on:T82
+T28	Reagent 52 67	M9 media stocks
+T29	Amount 86 88	1L
+T30	Reagent 92 113	minimal growth medium
+T31	Reagent 169 172	mix
+T32	Modifier 158 168	autoclaved
+T33	Reagent 194 204	components
+T34	Size 208 214	0.2 µm
+T37	Reagent 257 268	solid media
+T39	Concentration 286 290	1.5%
+T40	Reagent 291 295	agar
+T41	Reagent 369 374	media
+T42	Size 392 397	0.2µm
+T43	Reagent 440 445	media
+T44	Location 449 461	Petri dishes
+T45	Reagent 490 494	agar
+T47	Amount 507 510	1 L
+T48	Reagent 518 535	5x M9 salts stock
+T49	Modifier 537 547	autoclaved
+T50	Reagent 578 593	D-glucose-1-13C
+T51	Reagent 613 634	ammonium-15N chloride
+T52	Concentration 595 598	99%
+T53	Reagent 599 607	atom 13C
+T54	Concentration 636 639	98%
+T55	Reagent 640 648	atom 15N
+T56	Reagent 823 831	bacteria
+T57	Reagent 791 797	sample
+T58	Amount 776 782	0.1 mL
+T59	Reagent 845 852	M9 agar
+T60	Location 853 859	plates
+T61	Reagent 906 914	inoculum
+T62	Reagent 951 959	colonies
+T63	Temperature 1013 1034	temperature of choice
+T64	Temperature 1101 1106	30 ºC
+T65	Reagent 1036 1044	Bacteria
+T66	Reagent 1063 1077	algal cultures
+T67	Action 1045 1053	isolated
+E30	Action:T67 Acts-on:T65 Acts-on2:T66
+T68	Location 1116 1122	plates
+T69	Time 1129 1132	24h
+T70	Action 1174 1178	pick
+E31	Action:T70 Acts-on:T71
+T71	Reagent 1150 1158	colonies
+T72	Size 1139 1149	big enough
+T73	Reagent 1253 1271	colony of bacteria
+T74	Amount 1246 1252	single
+T75	Reagent 1277 1292	M9 liquid media
+T76	Action 1320 1328	transfer
+E32	Action:T76 
+T77	Amount 1352 1362	25 - 50 mL
+T78	Reagent 1408 1423	M9 liquid media
+T79	Reagent 1446 1454	colonies
+T80	Location 1386 1391	tubes
+T81	Amount 1521 1534	large ammount
+T82	Reagent 1538 1545	biomass
+T83	Reagent 1568 1576	bacteria
+T84	Reagent 1586 1597	M9 cultures
+T85	Location 1598 1603	tubes
+T86	Reagent 1638 1646	bacteria
+T87	Time 1736 1744	3-4 days
+T88	Reagent 1972 1980	bacteria
+T89	Modifier 1960 1971	heat killed
+T90	Action 75 81	recipe
+E33	Action:T90 Acts-on:T30
+R1	Measure Arg1:T30 Arg2:T29	
+R2	Mod-Link Arg1:T31 Arg2:T32	
+T35	Device 215 221	filter
+R3	Setting Arg1:T35 Arg2:T34	
+R4	Measure Arg1:T40 Arg2:T39	
+T36	Reagent 398 429	filter sterilization components
+R5	Measure Arg1:T36 Arg2:T42	
+R6	Mod-Link Arg1:T48 Arg2:T49	
+R7	Measure Arg1:T48 Arg2:T47	
+R8	Measure Arg1:T53 Arg2:T52	
+R9	Meronym Arg1:T53 Arg2:T50	
+R10	Meronym Arg1:T55 Arg2:T51	
+R11	Measure Arg1:T55 Arg2:T54	
+R12	Measure Arg1:T57 Arg2:T58	
+R13	Meronym Arg1:T59 Arg2:T60	
+R14	Setting Arg1:E20 Arg2:T63	
+T38	Reagent 999 1007	bacteria
+R15	Setting Arg1:E21 Arg2:T64	
+R16	Setting Arg1:E22 Arg2:T69	
+R17	Measure Arg1:T71 Arg2:T72	
+R18	Measure Arg1:T73 Arg2:T74	
+T46	Measure-Type 1342 1348	volume
+R20	Measure Arg1:T46 Arg2:T77	
+R21	Measure Arg1:T82 Arg2:T81	
+T92	Amount 1556 1563	some of
+R22	Measure Arg1:T83 Arg2:T92	
+R23	Meronym Arg1:T84 Arg2:T85	
+R24	Meronym Arg1:T83 Arg2:T85	
+R26	Setting Arg1:E25 Arg2:T87	
+R27	Mod-Link Arg1:T88 Arg2:T89	
+T94	Method 0 9	Isolation
+T95	Action 14 31	isotopic labeling
+E28	Action:T95 Acts-on:T96
+T96	Reagent 35 43	bacteria
+T91	Method 222 235	sterilization
+T97	Amount 297 301	15 g
+T98	Reagent 303 307	agar
+T99	Amount 312 315	1 L
+T100	Reagent 319 324	media
+T10	Method 472 486	solidification
+T101	Reagent 650 658	Vitamins
+T102	Reagent 669 681	metals stock
+T103	Reagent 708 724	algal DY-V media
+T104	Action 729 746	Bacterial plating
+E10	Action:T104 
+T105	Measure-Type 763 769	volume
+T106	Reagent 972 988	Bacterial growth
+T107	Action 1180 1187	Picking
+E29	Action:T107 Acts-on:T109
+T108	Action 1192 1200	transfer
+E34	Action:T108 Acts-on:T109
+T109	Reagent 1204 1212	colonies
+T110	Modifier 1220 1227	sterile
+T111	Device 1228 1233	picks
+R28	Mod-Link Arg1:T111 Arg2:T110	
+T112	Modifier 1350 1351	~
+R19	Mod-Link Arg1:T77 Arg2:T112	
+T113	Modifier 1163 1170	visible
+R25	Mod-Link Arg1:T71 Arg2:T113	
+T114	Modifier 1470 1487	labeled bacterial
+T115	Reagent 1488 1495	biomass
+R29	Mod-Link Arg1:T115 Arg2:T114	
+T116	Amount 1629 1631	1L
+T93	Measure-Type 1616 1622	volume
+T117	Reagent 1658 1663	media
+T118	Modifier 1667 1684	completely cloudy
+R30	Mod-Link Arg1:T117 Arg2:T118	
+T119	Reagent 1720 1727	biomass
+T120	Action 1784 1801	isotopic labeling
+E35	Action:T120 
+T121	Reagent 1803 1811	M9 media
+T122	Generic-Measure 1843 1846	15N
+T123	Reagent 1846 1850	H4Cl
+T124	Generic-Measure 1855 1858	13C
+T125	Reagent 1859 1868	D-glucose
+T126	Reagent 1884 1887	HKB
+T127	Method 1870 1880	Production
+T128	Reagent 1912 1919	biomass

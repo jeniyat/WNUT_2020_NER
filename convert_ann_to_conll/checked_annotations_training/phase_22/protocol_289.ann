@@ -1,0 +1,187 @@
+T1	Action 26 33	Prepare
+E1	Action:T1 Product:T32 Site:T35
+T2	Action 164 169	Place
+E2	Action:T2 Acts-on:T40 Site:T43
+T3	Action 228 234	Remove
+E3	Action:T3 Using:T48
+T4	Action 263 268	Layer
+E4	Action:T4 Acts-on:T49 Site:T50 Using:T51
+T5	Action 359 364	layer
+E5	Action:T5 Acts-on:T52 Using:T54
+T6	Action 424 429	Weigh
+E6	Action:T6 Acts-on:T57
+T7	Action 449 459	Centrifuge
+E7	Action:T7 Acts-on:T59
+T8	Action 589 593	Open
+E8	Action:T8 Acts-on:T71 Site:T72
+T9	Action 576 583	labeled
+E9	Action:T9 Acts-on:T66 Acts-on2:T69
+T10	Action 611 616	Place
+E10	Action:T10 Acts-on:T67 Site:T68
+T11	Action 638 646	Puncture
+E11	Action:T11 Site:T74 Using:T77
+T12	Action 733 740	Collect
+E12	Action:T12 Acts-on:T78 Site:T79
+T13	Action 778 783	Place
+E13	Action:T13 Acts-on:T80 Site:T82
+T14	Action 831 835	Tare
+E14	Action:T14 Count:T83
+T15	Action 208 212	Tare
+E15	Action:T15 Acts-on:T44 Count:T45
+T16	Action 866 872	remove
+E16	Action:T16 Using:T85
+T18	Action 898 904	Return
+E18	Action:T18 
+T19	Action 921 927	Remove
+E19	Action:T19 
+T20	Action 943 959	take measurement
+E20	Action:T20 
+T21	Action 961 967	return
+E21	Action:T21 Acts-on:T87 Site:T88
+T22	Action 984 990	Remove
+E22	Action:T22 
+T23	Action 1010 1026	take measurement
+E23	Action:T23 
+T24	Action 1032 1038	return
+E24	Action:T24 Acts-on:T90 Site:T91
+T25	Action 1135 1143	Multiply
+E25	Action:T25 Count:T92
+T26	Action 1091 1095	take
+E26	Action:T26 Measure-Type-Link:T115 Site:T117
+T27	Action 1151 1155	Pool
+E27	Action:T27 Acts-on:T93
+T28	Action 1160 1167	extract
+E28	Action:T28 Acts-on:T93
+T29	Action 1214 1222	staining
+E29	Action:T29 Using:T95
+T30	Action 1245 1250	Count
+E30	Action:T30 Using:T96
+T31	Action 1276 1280	Pool
+E31	Action:T31 Acts-on:T97 Using:T98
+T32	Reagent 34 49	cesium chloride
+T33	Generic-Measure 63 89	p1.2, p1.4, p1.5 and p1.65
+R1	Measure Arg1:T32 Arg2:T33	
+T34	Measure-Type 50 59	densities
+R2	Of-Type Arg1:T33 Arg2:T34	
+T35	Reagent 93 101	seawater
+T37	Action 152 162	autoclaved
+E33	Action:T37 Acts-on:T35
+T38	Size 121 127	0.02μm
+T39	Size 132 137	0.2μm
+T36	Action 139 147	filtered
+E32	Action:T36 Acts-on:T35
+R3	Setting Arg1:E32 Arg2:T39	
+R4	Or Arg1:T39 Arg2:T38	
+T40	Location 170 174	tube
+T41	Modifier 178 186	prepared
+T42	Reagent 187 193	cesium
+R5	Mod-Link Arg1:T42 Arg2:T41	
+R6	Meronym Arg1:T42 Arg2:T40	
+T43	Device 197 204	balance
+T44	Device 213 220	balance
+T45	Numerical 224 225	0
+T46	Amount 235 238	1ml
+T47	Modifier 244 251	sterile
+T48	Location 252 261	pipet tip
+R7	Mod-Link Arg1:T48 Arg2:T47	
+R8	Setting Arg1:E3 Arg2:T46	
+T49	Reagent 269 273	CsCl
+T50	Location 283 289	bottom
+T51	Device 298 319	gradient fractionator
+T52	Reagent 368 374	sample
+T53	Modifier 349 358	Carefully
+R9	Mod-Link Arg1:E5 Arg2:T53	
+T54	Device 401 405	SW40
+T55	Device 417 421	SW28
+T56	Amount 377 380	5ml
+T58	Amount 407 411	15ml
+R10	Measure Arg1:T52 Arg2:T56	
+R11	Or Arg1:T56 Arg2:T58	
+R12	Or Arg1:T54 Arg2:T55	
+T57	Location 442 447	tubes
+T59	Device 466 470	SW40
+T60	Device 474 492	SW28 Beckman rotor
+R13	Or Arg1:T59 Arg2:T60	
+T61	Speed 495 504	24,000rpm
+T62	Time 509 512	4hr
+T63	Temperature 516 519	4°C
+R14	Setting Arg1:E7 Arg2:T61	
+R15	Setting Arg1:E7 Arg2:T62	
+R16	Setting Arg1:E7 Arg2:T63	
+T64	Modifier 527 534	sterile
+T65	Amount 535 540	0.5ml
+T66	Location 541 546	tubes
+T69	Location 563 568	tubes
+T70	Amount 557 562	1.5ml
+T71	Location 594 599	tubes
+T72	Location 605 609	rack
+R17	Measure Arg1:T66 Arg2:T65	
+R18	Measure Arg1:T69 Arg2:T70	
+R19	Mod-Link Arg1:T66 Arg2:T64	
+T67	Location 617 621	tube
+T68	Device 625 635	ring stand
+T73	Size 653 656	2mm
+T74	Location 666 677	bottom side
+T75	Location 685 689	tube
+T76	Modifier 698 705	sterile
+T77	Device 706 721	20 guage needle
+R20	Mod-Link Arg1:T77 Arg2:T76	
+R21	Setting Arg1:E11 Arg2:T73	
+R22	Meronym Arg1:T74 Arg2:T75	
+T78	Reagent 741 749	droplets
+T79	Location 763 767	tube
+T80	Location 784 788	tube
+T81	Reagent 794 800	sample
+T82	Device 804 819	4-place balance
+R23	Meronym Arg1:T81 Arg2:T80	
+T83	Numerical 839 840	0
+T84	Modifier 847 854	sterile
+T85	Device 855 864	pipet tip
+T86	Amount 873 878	100µl
+R24	Mod-Link Arg1:T85 Arg2:T84	
+R25	Setting Arg1:E16 Arg2:T86	
+T17	Amount 936 941	100µl
+R26	Setting Arg1:E19 Arg2:T17	
+T87	Reagent 968 974	sample
+T88	Location 978 982	tube
+T89	Amount 1003 1008	100µl
+T90	Reagent 1039 1045	sample
+T91	Location 1049 1053	tube
+R27	Setting Arg1:E22 Arg2:T89	
+T92	Numerical 1147 1149	10
+T93	Reagent 1168 1171	DNA
+T94	Amount 1223 1227	10µl
+T95	Reagent 1233 1242	SYBR gold
+R28	Measure Arg1:T95 Arg2:T94	
+T96	Device 1257 1274	fluorescent scope
+T97	Reagent 1285 1292	samples
+T98	Reagent 1298 1303	virus
+T99	Reagent 0 25	Cesium Chloride Gradients
+T100	Device 339 346	by hand
+T101	Modifier 376 377	~
+R29	Mod-Link Arg1:T56 Arg2:T101	
+T102	Modifier 406 407	~
+R30	Mod-Link Arg1:T58 Arg2:T102	
+T103	Reagent 103 105	sw
+R31	Coreference-Link Arg1:T35 Arg2:T103	
+T104	Action 434 441	balance
+E17	Action:T104 Acts-on:T57
+T105	Device 570 574	SW28
+T106	Device 548 552	SW40
+T107	Action 723 731	bevel up
+E34	Action:T107 
+T108	Action 753 757	fill
+E35	Action:T108 Acts-on:T79
+T109	Location 823 829	holder
+T110	Reagent 905 911	sample
+T112	Location 915 919	tube
+R32	Meronym Arg1:T82 Arg2:T109	
+T111	Action 880 896	Take measurement
+E36	Action:T111 
+T113	Location 1065 1070	tubes
+T114	Action 1081 1089	measured
+E37	Action:T114 Acts-on:T113
+T115	Measure-Type 1096 1103	average
+T116	Numerical 1111 1112	3
+T117	Location 1129 1133	tube
+T118	Reagent 1199 1204	virus

@@ -1,0 +1,294 @@
+T1	Action 39 48	Inoculate
+E1	Action:T1 Count:T42 Acts-on:T45 Using:T46
+T2	Action 119 126	include
+E2	Action:T2 Acts-on:T48
+T3	Action 166 171	Shake
+E3	Action:T3 
+T4	Action 202 211	Inoculate
+E4	Action:T4 Using:T54 Count:T55 Acts-on:T57
+T5	Action 311 316	Shake
+E5	Action:T5 
+T6	Action 342 345	Ice
+E6	Action:T6 Acts-on:T63
+T7	Action 379 385	Pellet
+E7	Action:T7 Acts-on:T66
+T8	Action 433 440	discard
+E8	Action:T8 Acts-on:T72
+T9	Action 455 464	Resuspend
+E9	Action:T9 Acts-on:T73 Site:T78 Using:T10
+T12	Action 588 591	Ice
+E12	Action:T12 Acts-on:T84
+T13	Action 625 631	Pellet
+E13	Action:T13 Acts-on:T87
+T14	Action 679 686	discard
+E14	Action:T14 Acts-on:T88
+T15	Action 701 710	Resuspend
+E15	Action:T15 Count:T94 Acts-on:T95 Site:T99 Product:T100
+T16	Action 775 784	resuspend
+E16	Action:T16 Acts-on:T102 Site:T100
+T17	Action 872 875	Add
+E17	Action:T17 Acts-on:T104
+T18	Action 890 903	swirl and ice
+E18	Action:T18 
+T19	Action 916 919	Add
+E19	Action:T19 Acts-on:T108
+T20	Action 939 953	swirl, and ice
+E20	Action:T20 
+T21	Action 967 970	Add
+E21	Action:T21 Acts-on:T111
+T22	Action 985 998	swirl and ice
+E22	Action:T22 
+T23	Action 1011 1018	Aliquot
+E23	Action:T23 Acts-on:T114 Site:T116
+T24	Action 1113 1120	Include
+E24	Action:T24 Acts-on:T170 Acts-on2:T171
+T25	Action 1153 1156	Add
+E25	Action:T25 Acts-on:T120 Site:T122
+T26	Action 1207 1210	ice
+E26	Action:T26 
+T27	Action 1225 1229	Heat
+E27	Action:T27 Acts-on:T125
+T28	Action 1279 1282	Ice
+E28	Action:T28 
+T29	Action 1296 1299	Add
+E29	Action:T29 Acts-on:T133 Site:T135
+T30	Action 1335 1343	incubate
+E30	Action:T30 
+T31	Action 1366 1374	Incubate
+E31	Action:T31 
+T32	Action 1401 1408	shaking
+E32	Action:T32 
+T33	Action 1422 1427	Place
+E33	Action:T33 Acts-on:T142 Site:T34
+T35	Action 1458 1466	Transfer
+E35	Action:T35 Acts-on:T144 Site:T146 Site2:T150
+T37	Action 1607 1613	pellet
+E37	Action:T37 Acts-on:T36
+T38	Action 1633 1639	remove
+E38	Action:T38 Acts-on:T155
+T39	Action 1644 1651	discard
+E39	Action:T39 Acts-on:T155
+T40	Action 1679 1684	Plate
+E40	Action:T40 Acts-on:T158 Site:T159
+T41	Action 1742 1746	grow
+E41	Action:T41 
+T42	Numerical 49 52	two
+T43	Modifier 53 61	separate
+T44	Amount 62 68	1.5mls
+T45	Reagent 72 81	LB medium
+T46	Reagent 87 112	Invitrogen (InvαF') cells
+R1	Measure Arg1:T45 Arg2:T44	
+R2	Mod-Link Arg1:E1 Arg2:T43	
+T47	Modifier 130 142	uninoculated
+T48	Location 143 164	negative control tube
+R3	Mod-Link Arg1:T48 Arg2:T47	
+T49	Speed 175 182	250 rpm
+T50	Time 183 192	overnight
+T51	Temperature 196 200	37˚C
+R4	Setting Arg1:E3 Arg2:T49	
+R5	Setting Arg1:E3 Arg2:T50	
+R6	Setting Arg1:E3 Arg2:T51	
+T52	Amount 217 222	500ul
+T54	Reagent 236 251	E. coli culture
+T53	Modifier 226 235	overnight
+R7	Mod-Link Arg1:T54 Arg2:T53	
+R8	Measure Arg1:T54 Arg2:T52	
+T55	Numerical 252 255	two
+T56	Amount 256 260	50ml
+T57	Location 261 266	tubes
+T58	Amount 283 288	25mls
+T59	Modifier 292 299	sterile
+T60	Reagent 300 309	SOB media
+R9	Mod-Link Arg1:T60 Arg2:T59	
+R10	Measure Arg1:T60 Arg2:T58	
+R11	Meronym Arg1:T60 Arg2:T57	
+R12	Measure Arg1:T57 Arg2:T56	
+T61	Speed 320 327	250 rpm
+T62	Time 332 339	4 hours
+R13	Setting Arg1:E5 Arg2:T61	
+R14	Setting Arg1:E5 Arg2:T62	
+T63	Location 350 355	tubes
+T64	Reagent 359 364	cells
+T65	Time 369 376	15 mins
+R15	Meronym Arg1:T64 Arg2:T63	
+R16	Setting Arg1:E6 Arg2:T65	
+T66	Reagent 386 391	cells
+T67	Modifier 393 399	approx
+T68	Time 400 405	5 min
+T69	Modifier 412 418	approx
+T70	Speed 419 427	3000 rpm
+R17	Mod-Link Arg1:T70 Arg2:T69	
+R18	Mod-Link Arg1:T68 Arg2:T67	
+T71	Action 406 410	spin
+E42	Action:T71 
+R19	Setting Arg1:E42 Arg2:T68	
+R20	Setting Arg1:E42 Arg2:T70	
+T72	Reagent 441 452	supernatant
+T73	Reagent 470 476	pellet
+T74	Reagent 480 485	cells
+T75	Modifier 465 469	each
+R21	Mod-Link Arg1:T73 Arg2:T75	
+R22	Meronym Arg1:T73 Arg2:T74	
+T76	Amount 489 494	8 mls
+T77	Modifier 498 502	cold
+T78	Reagent 503 506	TFB
+R23	Mod-Link Arg1:T78 Arg2:T77	
+R24	Measure Arg1:T78 Arg2:T76	
+T79	Modifier 518 524	gently
+T10	Method 510 517	washing
+T11	Action 531 538	sucking
+E10	Action:T11 Using:T80 Using2:T83
+T80	Method 539 550	up and down
+T81	Modifier 559 568	wide-bore
+T82	Amount 569 573	10ml
+T83	Location 574 585	pipette tip
+R25	Measure Arg1:T83 Arg2:T82	
+R26	Mod-Link Arg1:T83 Arg2:T81	
+T84	Location 596 601	tubes
+T85	Reagent 605 610	cells
+R27	Meronym Arg1:T85 Arg2:T84	
+T86	Time 615 622	15 mins
+R28	Setting Arg1:E12 Arg2:T86	
+T87	Reagent 632 637	cells
+T88	Reagent 687 698	supernatant
+T89	Action 652 656	spin
+E11	Action:T89 
+T90	Time 646 651	5 min
+T91	Modifier 639 645	approx
+T92	Modifier 658 664	approx
+T93	Speed 665 673	3000 rpm
+R29	Mod-Link Arg1:T93 Arg2:T92	
+R30	Mod-Link Arg1:T90 Arg2:T91	
+R31	Setting Arg1:E11 Arg2:T90	
+R32	Setting Arg1:E11 Arg2:T93	
+T94	Numerical 711 714	one
+T95	Reagent 715 721	pellet
+T96	Reagent 725 730	cells
+R33	Meronym Arg1:T95 Arg2:T96	
+T97	Amount 734 739	2 mls
+T98	Modifier 743 747	cold
+T99	Reagent 748 751	TFB
+R34	Mod-Link Arg1:T99 Arg2:T98	
+R35	Measure Arg1:T99 Arg2:T97	
+T100	Reagent 765 771	liquid
+T101	Modifier 789 795	second
+T102	Reagent 796 802	pellet
+R36	Mod-Link Arg1:T102 Arg2:T101	
+T103	Amount 876 881	105ul
+T104	Reagent 885 889	DMSO
+T105	Time 908 914	5 mins
+R37	Setting Arg1:E18 Arg2:T105	
+R38	Measure Arg1:T104 Arg2:T103	
+T106	Amount 920 924	80ul
+T107	Concentration 928 933	100mM
+T108	Reagent 934 937	DTT
+T109	Time 958 965	10 mins
+R39	Setting Arg1:E20 Arg2:T109	
+R40	Measure Arg1:T108 Arg2:T107	
+R41	Measure Arg1:T108 Arg2:T106	
+T110	Amount 971 976	105ul
+T111	Reagent 980 984	DMSO
+T112	Time 1003 1009	5 mins
+R42	Setting Arg1:E22 Arg2:T112	
+R43	Measure Arg1:T111 Arg2:T110	
+T113	Amount 1019 1024	180ul
+T114	Reagent 1028 1033	cells
+T115	Amount 1061 1064	5ml
+T116	Location 1065 1091	polypropylene growth tubes
+T117	Seal 1097 1111	loose-cap lids
+R44	Measure Arg1:T116 Arg2:T115	
+T118	Modifier 1052 1060	labelled
+T119	Modifier 1039 1050	pre-chilled
+R45	Mod-Link Arg1:T116 Arg2:T118	
+R46	Mod-Link Arg1:T116 Arg2:T119	
+R47	Measure Arg1:T114 Arg2:T113	
+R48	Meronym Arg1:T117 Arg2:T116	
+T120	Reagent 1157 1169	ligation DNA
+T121	Modifier 1173 1177	each
+T122	Reagent 1178 1184	sample
+T123	Time 1215 1222	30 mins
+R49	Setting Arg1:E26 Arg2:T123	
+R50	Mod-Link Arg1:T122 Arg2:T121	
+T124	Amount 1190 1194	10ul
+R51	Measure Arg1:T122 Arg2:T124	
+T125	Location 1230 1241	pulse tubes
+T126	Modifier 1245 1252	exactly
+T127	Temperature 1253 1257	42˚C
+T128	Modifier 1262 1269	exactly
+T129	Time 1270 1277	90 secs
+R52	Mod-Link Arg1:T129 Arg2:T128	
+R53	Mod-Link Arg1:T127 Arg2:T126	
+R54	Setting Arg1:E27 Arg2:T127	
+R55	Setting Arg1:E27 Arg2:T129	
+T130	Time 1287 1293	2 mins
+R56	Setting Arg1:E28 Arg2:T130	
+T131	Amount 1300 1305	400ul
+T132	Temperature 1309 1313	37˚C
+T133	Reagent 1314 1317	SOC
+T134	Modifier 1321 1325	each
+T135	Location 1326 1330	tube
+T136	Temperature 1347 1351	37˚C
+T137	Time 1356 1363	10 mins
+R57	Setting Arg1:E30 Arg2:T136	
+R58	Setting Arg1:E30 Arg2:T137	
+R59	Measure Arg1:T133 Arg2:T131	
+R60	Mod-Link Arg1:T135 Arg2:T134	
+R61	Setting Arg1:E29 Arg2:T132	
+T138	Modifier 1377 1384	further
+T139	Time 1385 1392	45 mins
+T140	Temperature 1396 1400	37˚C
+T141	Speed 1412 1419	225 rpm
+R62	Setting Arg1:E32 Arg2:T141	
+R63	Setting Arg1:E31 Arg2:T139	
+R64	Mod-Link Arg1:T139 Arg2:T138	
+R65	Setting Arg1:E31 Arg2:T140	
+T142	Location 1428 1433	tubes
+T143	Action 1444 1455	halt growth
+E43	Action:T143 
+T34	Location 1437 1440	ice
+T144	Reagent 1471 1476	cells
+T145	Modifier 1482 1486	each
+T146	Location 1487 1491	tube
+T147	Modifier 1497 1505	labelled
+T148	Modifier 1506 1516	individual
+T149	Amount 1517 1522	1.5ml
+T150	Location 1523 1537	microfuge tube
+R66	Measure Arg1:T150 Arg2:T149	
+R67	Mod-Link Arg1:T150 Arg2:T148	
+R68	Mod-Link Arg1:T150 Arg2:T147	
+R69	Mod-Link Arg1:T146 Arg2:T145	
+T151	Location 1549 1564	microfuge tubes
+T152	Time 1579 1584	5 sec
+T153	Action 1586 1590	spin
+E34	Action:T153 Acts-on:T151
+T36	Reagent 1618 1623	cells
+T154	Amount 1652 1657	370ul
+T155	Reagent 1665 1676	supernatant
+R70	Measure Arg1:T155 Arg2:T154	
+R71	Setting Arg1:E34 Arg2:T152	
+T156	Modifier 1594 1606	very loosely
+R72	Mod-Link Arg1:E37 Arg2:T156	
+T157	Amount 1685 1689	40ul
+T158	Reagent 1697 1710	cell solution
+T159	Location 1716 1737	LB/ Amp+/ Xgal plates
+T161	Temperature 1760 1764	37˚C
+R74	Setting Arg1:E41 Arg2:T161	
+R75	Measure Arg1:T158 Arg2:T157	
+T162	Method 0 14	Transformation
+T163	Reagent 18 38	supercompetent cells
+T164	Reagent 828 833	cells
+T165	Numerical 839 845	single
+T166	Reagent 846 853	aliquot
+T167	Amount 857 861	2mls
+T168	Modifier 862 866	cold
+T169	Reagent 867 870	TFB
+T170	Reagent 1121 1129	positive
+T171	Reagent 1134 1151	negative controls
+T172	Action 1540 1544	Give
+E36	Action:T172 Acts-on:T151
+T173	Measure-Type 1195 1201	volume
+T174	Modifier 1189 1190	~
+R76	Mod-Link Arg1:T124 Arg2:T174	
+R77	Measure Arg1:T166 Arg2:T165	
+R78	Mod-Link Arg1:T169 Arg2:T168	
+R79	Measure Arg1:T169 Arg2:T167	

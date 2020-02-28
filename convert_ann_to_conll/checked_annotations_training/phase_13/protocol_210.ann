@@ -1,0 +1,150 @@
+T1	Action 22 28	Vortex
+E1	Action:T1 Acts-on:T21
+T2	Action 95 103	Dissolve
+E2	Action:T2 Acts-on:T26 Acts-on2:T27 Site:T29
+T3	Action 179 188	resuspend
+E3	Action:T3 Acts-on:T30
+T4	Action 221 231	Centrifuge
+E4	Action:T4 Acts-on:T33
+T5	Action 285 291	remove
+E5	Action:T5 Acts-on:T35
+T6	Action 296 303	discard
+E6	Action:T6 Acts-on:T35
+T7	Action 321 330	Resuspend
+E7	Action:T7 Acts-on:T36 Site:T38
+T8	Action 369 372	Add
+E8	Action:T8 Acts-on:T40 Acts-on2:T42 Site:T43
+T9	Action 447 455	Incubate
+E9	Action:T9 
+T10	Action 523 529	Dilute
+E10	Action:T10 Acts-on:T48 Using:T49
+T11	Action 768 778	Centrifuge
+E11	Action:T11 Acts-on:T52
+T12	Action 815 821	remove
+E12	Action:T12 Acts-on:T54
+T13	Action 826 833	discard
+E13	Action:T13 Acts-on:T54
+T14	Action 851 854	Add
+E14	Action:T14 
+T15	Action 885 892	Agitate
+E15	Action:T15 Acts-on:T56
+T16	Action 1010 1020	Centrifuge
+E16	Action:T16 Acts-on:T63
+T17	Action 1047 1054	Discard
+E17	Action:T17 Acts-on:T64
+T18	Action 1068 1072	Wash
+E18	Action:T18 Count:T67 Acts-on:T66 Using:T68
+T19	Action 1112 1121	Resuspend
+E19	Action:T19 Acts-on:T71 Site:T73
+T21	Reagent 33 54	bead stock suspension
+T22	Action 58 63	yield
+E21	Action:T22 Product:T23
+T23	Reagent 66 93	homogeneous bead suspension
+T24	Amount 104 123	approximately 10 mg
+T25	Modifier 124 128	each
+R1	Mod-Link Arg1:T24 Arg2:T25	
+T26	Reagent 132 135	EDC
+T27	Reagent 140 145	S-NHS
+T28	Numerical 151 152	2
+T29	Location 153 174	microcentrifuge tubes
+T30	Reagent 192 207	deionized water
+T31	Concentration 211 219	50 mg/mL
+R2	Measure Arg1:T26 Arg2:T24	
+R3	Measure Arg1:T27 Arg2:T24	
+R4	Measure Arg1:T29 Arg2:T28	
+R5	Setting Arg1:E3 Arg2:T31	
+T32	Amount 236 242	100 μl
+T33	Reagent 243 258	bead suspension
+T34	Speed 262 272	10,000 x g
+R6	Measure Arg1:T33 Arg2:T32	
+R7	Setting Arg1:E4 Arg2:T34	
+T35	Reagent 308 319	supernatant
+T36	Reagent 335 340	beads
+T37	Amount 344 349	80 μl
+T38	Reagent 350 367	activation buffer
+R8	Measure Arg1:T38 Arg2:T37	
+T39	Amount 373 378	10 μl
+T40	Reagent 382 396	S-NHS solution
+T41	Amount 401 406	10 μl
+T42	Reagent 410 422	EDC solution
+T43	Reagent 430 445	bead suspension
+R9	Measure Arg1:T42 Arg2:T41	
+R10	Measure Arg1:T40 Arg2:T39	
+T44	Modifier 456 470	with agitation
+T45	Temperature 474 490	room temperature
+T46	Modifier 491 502	in the dark
+T47	Speed 514 521	900 rpm
+R11	Mod-Link Arg1:E9 Arg2:T44	
+R12	Mod-Link Arg1:E9 Arg2:T46	
+R13	Setting Arg1:E9 Arg2:T45	
+R14	Setting Arg1:E9 Arg2:T47	
+T48	Reagent 535 556	protein stock solutio
+T49	Reagent 563 578	coupling buffer
+T50	Concentration 601 610	0.1 mg/ml
+T51	Amount 626 632	100 μl
+R15	Setting Arg1:E10 Arg2:T50	
+R16	Setting Arg1:E10 Arg2:T51	
+T52	Reagent 783 788	beads
+T53	Speed 792 802	10,000 x g
+T54	Reagent 838 849	supernatant
+R17	Setting Arg1:E11 Arg2:T53	
+T55	Reagent 859 883	diluted protein solution
+T56	Location 897 901	tube
+T57	Reagent 907 922	activated beads
+T58	Reagent 927 943	protein solution
+T59	Time 944 953	overnight
+T60	Temperature 957 959	4C
+T61	Speed 971 978	900 rpm
+T62	Modifier 979 990	in the dark
+R18	Meronym Arg1:T57 Arg2:T56	
+R19	Meronym Arg1:T58 Arg2:T56	
+R20	Setting Arg1:E15 Arg2:T59	
+R21	Setting Arg1:E15 Arg2:T60	
+R22	Setting Arg1:E15 Arg2:T61	
+R23	Mod-Link Arg1:E15 Arg2:T62	
+T63	Reagent 1025 1030	beads
+T64	Reagent 1055 1066	supernatant
+T65	Speed 1034 1044	10,000 x g
+R24	Setting Arg1:E16 Arg2:T65	
+T66	Reagent 1077 1082	beads
+T67	Numerical 1083 1094	three times
+T68	Reagent 1100 1103	PBS
+T69	Concentration 1104 1106	1%
+T70	Reagent 1107 1110	BSA
+R25	Measure Arg1:T70 Arg2:T69	
+R26	Or Arg1:T68 Arg2:T70	
+T71	Reagent 1126 1137	bead pellet
+T72	Amount 1141 1145	1 ml
+T73	Reagent 1146 1149	PBS
+T74	Concentration 1150 1152	1%
+T75	Reagent 1153 1156	BSA
+R27	Measure Arg1:T75 Arg2:T74	
+R28	Or Arg1:T73 Arg2:T75	
+R29	Measure Arg1:T73 Arg2:T72	
+T76	Reagent 1193 1200	Luminex
+T77	Action 1205 1218	adjust amount
+E22	Action:T77 Acts-on:T78
+T78	Reagent 1222 1227	stock
+T79	Modifier 1233 1244	accordingly
+R30	Mod-Link Arg1:E22 Arg2:T79	
+T81	Modifier 275 284	Carefully
+R31	Mod-Link Arg1:E5 Arg2:T81	
+T82	Modifier 805 814	Carefully
+R32	Mod-Link Arg1:E12 Arg2:T82	
+T20	Action 1158 1186	Determine bead concentration
+E20	Action:T20 Using:T76
+T80	Reagent 0 12	Luminex Bead
+T83	Action 13 21	Coupling
+E23	Action:T83 Acts-on:T80
+T84	Action 642 650	coupling
+E24	Action:T84 Measure-Type-Link:T86
+T85	Modifier 634 641	Optimal
+T86	Measure-Type 666 679	concentration
+T87	Concentration 687 699	25-250 μg/ml
+R33	Mod-Link Arg1:E24 Arg2:T85	
+R34	Setting Arg1:E24 Arg2:T87	
+T88	Reagent 710 723	protein stock
+T89	Reagent 746 758	amine groups
+T90	Seal 1003 1007	foil
+T91	Action 992 999	wrapped
+E25	Action:T91 Site:T90

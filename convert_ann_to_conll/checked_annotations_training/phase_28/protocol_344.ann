@@ -1,0 +1,188 @@
+T1	Action 58 66	pre-cool
+E1	Action:T1 Acts-on:T33 Site:T35
+T2	Action 75 80	Rinse
+E2	Action:T2 Acts-on:T36 Using:T39 Count:T40
+T3	Action 123 129	Scrape
+E3	Action:T3 Acts-on:T41
+T4	Action 140 149	spin down
+E4	Action:T4 
+T5	Action 174 177	Add
+E5	Action:T5 Acts-on:T46 Site:T47
+T6	Action 242 248	Rotate
+E6	Action:T6 
+T7	Action 264 274	Centrifuge
+E7	Action:T7 
+T8	Action 297 301	Save
+E8	Action:T8 Acts-on:T52
+T9	Action 334 343	determine
+E9	Action:T9 Measure-Type-Link:T54 Site:T53 Using:T55
+T10	Action 378 384	Adjust
+E10	Action:T10 Acts-on:T56 Measure-Type-Link:T57
+T12	Action 518 522	Wash
+E12	Action:T12 Acts-on:T11 Site:T59 Count:T60
+T13	Action 560 569	Spin down
+E13	Action:T13 
+T14	Action 582 591	Resuspend
+E14	Action:T14 Acts-on:T64 Site:T66
+T15	Action 643 649	Remove
+E15	Action:T15 Acts-on:T69
+T16	Action 623 629	rotate
+E16	Action:T16 
+T17	Action 658 662	wash
+E17	Action:T17 Acts-on:T70 Site:T71 Count:T72
+T18	Action 698 707	Resuspend
+E18	Action:T18 Acts-on:T74 Site:T76
+T19	Action 746 750	Save
+E19	Action:T19 Acts-on:T78
+T20	Action 790 793	Add
+E20	Action:T20 Acts-on:T80 Acts-on2:T81 Site:T82
+T21	Action 829 835	Rotate
+E21	Action:T21 
+T22	Action 861 867	Pellet
+E22	Action:T22 Acts-on:T85
+T23	Action 899 906	discard
+E23	Action:T23 Acts-on:T89
+T24	Action 924 928	Wash
+E24	Action:T24 Acts-on:T90 Site:T93
+T25	Action 965 971	Repeat
+E25	Action:T25 Count:T94
+T26	Action 981 990	Resuspend
+E26	Action:T26 Acts-on:T95 Acts-on2:T98
+T27	Action 1027 1031	Boil
+E27	Action:T27 Acts-on:T99
+T28	Action 1052 1062	Centrifuge
+E28	Action:T28 
+T29	Action 1078 1082	Save
+E29	Action:T29 Acts-on:T103
+T30	Action 1099 1115	perform SDS-PAGE
+E30	Action:T30 
+T31	Action 20 24	Take
+E31	Action:T31 Acts-on:T33 Site:T34
+T32	Reagent 25 29	cell
+T33	Location 30 36	dishes
+T34	Device 44 53	incubator
+T35	Reagent 70 73	ice
+T36	Reagent 81 86	cells
+T37	Modifier 87 93	gently
+T38	Modifier 99 107	ice-cold
+T39	Reagent 108 111	PBS
+T40	Numerical 116 121	twice
+T41	Reagent 130 135	cells
+T42	Speed 152 159	500 rpm
+T43	Time 161 166	10min
+T44	Time 168 172	4 °C
+T45	Amount 178 185	500l ul
+T46	Reagent 186 201	IP lysis buffer
+T47	Reagent 210 222	cell pellets
+T48	Time 253 255	2h
+T49	Temperature 259 262	4°C
+T50	Speed 275 284	14,000rpm
+T51	Time 289 295	30 min
+T52	Reagent 302 313	supernatant
+T53	Reagent 344 351	protein
+T54	Measure-Type 352 365	concentration
+T55	Reagent 371 376	OD280
+T56	Reagent 389 396	samples
+T57	Measure-Type 404 422	same concentration
+T11	Reagent 523 528	beads
+T58	Amount 532 535	1ml
+T59	Reagent 536 548	lysis buffer
+T60	Numerical 553 558	twice
+T61	Speed 571 575	500g
+T62	Time 577 580	30s
+T63	Modifier 592 600	pelleted
+T64	Reagent 601 606	beads
+T65	Concentration 610 616	1mg/ml
+T66	Reagent 617 620	BSA
+T67	Temperature 632 634	RT
+T68	Time 636 641	10min
+T69	Reagent 650 653	BSA
+T70	Reagent 663 668	beads
+T71	Reagent 672 684	lysis buffer
+T72	Numerical 689 690	3
+T73	Modifier 708 716	pelleted
+T74	Reagent 717 722	beads
+T75	Concentration 723 726	1:1
+T76	Reagent 732 744	lysis buffer
+T77	Amount 751 755	40ul
+T78	Reagent 759 768	IP lysate
+T79	Reagent 773 779	sample
+T80	Reagent 794 804	primary Ab
+T81	Reagent 809 814	beads
+T82	Reagent 818 827	IP lysate
+T83	Temperature 837 845	4 degree
+T84	Time 850 859	overnight
+T85	Reagent 868 873	beads
+T86	Speed 876 880	500g
+T87	Time 885 890	30sec
+T88	Temperature 892 894	RT
+T89	Reagent 911 922	supernatant
+T90	Reagent 929 934	beads
+T91	Amount 938 941	1ml
+T92	Modifier 942 950	ice-cold
+T93	Reagent 951 963	lysis buffer
+T94	Numerical 972 973	3
+T95	Reagent 991 996	beads
+T96	Amount 1000 1004	30ul
+T97	Concentration 1008 1010	2×
+T98	Reagent 1011 1025	loading buffer
+T99	Reagent 1036 1041	beads
+T100	Time 1046 1050	5min
+T101	Temperature 1065 1067	RT
+T102	Time 1072 1076	1min
+T103	Reagent 1083 1094	supernatant
+R1	Meronym Arg1:T32 Arg2:T33	
+R2	Mod-Link Arg1:E2 Arg2:T37	
+R3	Mod-Link Arg1:T39 Arg2:T38	
+R4	Setting Arg1:E4 Arg2:T42	
+R5	Setting Arg1:E4 Arg2:T43	
+R6	Setting Arg1:E4 Arg2:T44	
+R7	Measure Arg1:T46 Arg2:T45	
+R8	Setting Arg1:E6 Arg2:T48	
+R9	Setting Arg1:E6 Arg2:T49	
+R10	Setting Arg1:E7 Arg2:T50	
+R11	Setting Arg1:E7 Arg2:T51	
+R12	Measure Arg1:T59 Arg2:T58	
+R13	Setting Arg1:E13 Arg2:T61	
+R14	Setting Arg1:E13 Arg2:T62	
+R15	Mod-Link Arg1:T64 Arg2:T63	
+R16	Measure Arg1:T66 Arg2:T65	
+R17	Setting Arg1:E16 Arg2:T67	
+R18	Setting Arg1:E16 Arg2:T68	
+R19	Mod-Link Arg1:T74 Arg2:T73	
+R20	Setting Arg1:E18 Arg2:T75	
+R21	Meronym Arg1:T78 Arg2:T79	
+R22	Measure Arg1:T78 Arg2:T77	
+R23	Setting Arg1:E21 Arg2:T83	
+R24	Setting Arg1:E21 Arg2:T84	
+R25	Setting Arg1:E22 Arg2:T86	
+R26	Setting Arg1:E22 Arg2:T87	
+R27	Setting Arg1:E22 Arg2:T88	
+R28	Mod-Link Arg1:T93 Arg2:T92	
+R29	Measure Arg1:T93 Arg2:T91	
+R30	Measure Arg1:T98 Arg2:T97	
+R31	Measure Arg1:T98 Arg2:T96	
+R32	Setting Arg1:E27 Arg2:T100	
+R33	Setting Arg1:E28 Arg2:T101	
+R34	Setting Arg1:E28 Arg2:T102	
+T104	Method 0 19	Immunoprecipitation
+T105	Modifier 224 228	upto
+T106	Numerical 229 233	2E+7
+T107	Reagent 234 239	cells
+R35	Measure Arg1:T107 Arg2:T106	
+R36	Mod-Link Arg1:T106 Arg2:T105	
+T108	Modifier 326 333	Roughly
+R37	Mod-Link Arg1:E9 Arg2:T108	
+T109	Action 424 433	Determine
+E11	Action:T109 Measure-Type-Link:T111
+T110	Reagent 444 449	beads
+T111	Measure-Type 434 440	amount
+T112	Reagent 458 485	Rockland True Blot IP beads
+T113	Amount 487 492	20 ul
+T114	Reagent 493 498	beads
+T115	Amount 503 508	500ul
+T116	Reagent 509 515	sample
+R38	Meronym Arg1:T114 Arg2:T116	
+R39	Coreference-Link Arg1:T114 Arg2:T112	
+R40	Measure Arg1:T114 Arg2:T113	
+R41	Measure Arg1:T116 Arg2:T115	

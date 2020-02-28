@@ -1,0 +1,155 @@
+T2	Reagent 57 63	sample
+T4	Action 80 88	staining
+E3	Action:T4 Acts-on:T2
+T1	Reagent 116 122	sample
+T6	Reagent 147 157	Cell lines
+T7	Reagent 162 173	Whole blood
+T8	Reagent 178 182	PBMC
+T9	Reagent 187 214	Cells from migration assays
+T10	Action 135 139	used
+E1	Action:T10 Product:T1 Using:T6
+R1	Or Arg1:T6 Arg2:T7	
+R2	Or Arg1:T7 Arg2:T8	
+R3	Or Arg1:T8 Arg2:T9	
+T11	Modifier 384 394	Vigorously
+T12	Action 395 401	vortex
+E4	Action:T12 Acts-on:T13
+T13	Location 406 435	Precision Count Beads™ bottle
+T14	Time 440 453	30-40 seconds
+T15	Action 473 479	mixing
+E5	Action:T15 Acts-on:T17
+T16	Action 484 492	break up
+E6	Action:T16 Acts-on:T17
+T17	Reagent 496 506	aggregates
+T18	Action 516 521	occur
+E7	Action:T18 Product:T17 Site:T19
+T19	Location 529 536	storage
+T20	Action 538 541	Add
+E8	Action:T20 Acts-on:T22 Site:T23
+T21	Amount 542 546	50μl
+T22	Reagent 550 572	Precision Count Beads™
+T23	Reagent 577 583	sample
+T24	Modifier 573 576	per
+T25	Action 677 686	pipetting
+E9	Action:T25 Acts-on:T28 Using:T29
+T26	Modifier 693 701	accurate
+T27	Amount 702 708	amount
+T28	Reagent 712 717	beads
+T29	Method 649 666	reverse pipetting
+T30	Action 719 725	Set up
+E10	Action:T30 Measure-Type-Link:T31 Acts-on:T32 Using:T33
+T31	Measure-Type 730 750	FSC and SSC channels
+T32	Reagent 759 776	cells of interest
+T33	Method 780 791	recommended
+T34	Method 795 813	previously defined
+T35	Measure-Type 833 846	FSC threshold
+T36	Generic-Measure 850 862	not too high
+R4	Or Arg1:T33 Arg2:T34	
+T37	Action 944 952	adjusted
+E11	Action:T37 Measure-Type-Link:T38
+T38	Measure-Type 930 933	SSC
+T39	Reagent 976 981	cells
+T40	Modifier 986 995	optimally
+T41	Action 996 1003	visible
+E12	Action:T41 Acts-on:T39
+R5	Mod-Link Arg1:E12 Arg2:T40	
+T42	Action 1025 1034	acquiring
+E13	Action:T42 Acts-on:T43
+T43	Reagent 1037 1043	sample
+T44	Reagent 1047 1069	Precision Count Beads™
+T45	Action 1080 1087	compare
+E14	Action:T45 Acts-on2:T43 Site:T46
+T46	Reagent 1095 1108	cells profile
+T47	Action 1110 1116	Adjust
+E15	Action:T47 Measure-Type-Link:T48 Acts-on:T49
+T48	Measure-Type 1117 1129	compensation
+T49	Reagent 1138 1145	samples
+T50	Action 1232 1238	adjust
+E16	Action:T50 Measure-Type-Link:T51
+T51	Measure-Type 1243 1250	voltage
+T52	Modifier 1254 1263	optimally
+T53	Action 1264 1270	detect
+E17	Action:T53 Acts-on:T54 Site:T57
+T54	Reagent 1275 1297	Precision Count Beads™
+T55	Modifier 1301 1309	at least
+T56	Numerical 1310 1313	one
+T57	Location 1314 1333	fluorescent channel
+T58	Action 1335 1342	Acquire
+E18	Action:T58 Acts-on:T59 Site:T60
+T59	Reagent 1343 1350	samples
+T60	Device 1356 1370	flow cytometer
+T61	Modifier 1372 1378	gently
+T62	Action 1379 1388	vortexing
+E19	Action:T62 Acts-on:T64
+T63	Modifier 1389 1394	every
+T64	Reagent 1395 1401	sample
+T65	Action 1442 1452	suspension
+E20	Action:T65 Acts-on:T67 Acts-on2:T68
+T66	Modifier 1433 1441	adequate
+T67	Reagent 1460 1464	cell
+T68	Reagent 1469 1485	bead populations
+T69	Action 1511 1520	performed
+E21	Action:T69 Using:T70 Using2:T71
+T70	Method 1487 1500	Data analysis
+T71	Method 1524 1529	usual
+T72	Action 1533 1541	identify
+E22	Action:T72 Acts-on:T74
+T73	Reagent 1546 1561	cell population
+T74	Reagent 1565 1576	of interest
+T75	Action 1647 1657	visualized
+E23	Action:T75 Acts-on:T80 Measure-Type-Link:T83
+T76	Reagent 1617 1639	Precision Count Beads™
+T77	Reagent 1609 1615	sample
+T78	Modifier 1604 1608	same
+T79	Modifier 1584 1591	ungated
+T80	Device 1592 1596	plot
+T81	Numerical 1664 1667	one
+T82	Numerical 1671 1674	two
+T83	Measure-Type 1675 1697	fluorescent parameters
+T84	Action 1709 1712	set
+E24	Action:T84 Acts-on:T85 Site:T86
+T85	Location 1704 1708	gate
+T86	Reagent 1724 1739	bead population
+R6	Mod-Link Arg1:E4 Arg2:T11	
+R7	Setting Arg1:E4 Arg2:T14	
+T87	Modifier 464 472	complete
+R8	Mod-Link Arg1:E5 Arg2:T87	
+R9	Measure Arg1:T22 Arg2:T21	
+R10	Mod-Link Arg1:T23 Arg2:T24	
+R11	Measure Arg1:T28 Arg2:T27	
+R12	Mod-Link Arg1:T27 Arg2:T26	
+R13	Meronym Arg1:T43 Arg2:T44	
+R14	Mod-Link Arg1:E17 Arg2:T52	
+R15	Or Arg1:T56 Arg2:T55	
+R16	Measure Arg1:T57 Arg2:T56	
+R17	Mod-Link Arg1:E19 Arg2:T61	
+R18	Mod-Link Arg1:T64 Arg2:T63	
+R19	Mod-Link Arg1:E20 Arg2:T66	
+R20	Mod-Link Arg1:T80 Arg2:T79	
+R21	Mod-Link Arg1:T77 Arg2:T78	
+R22	Meronym Arg1:T80 Arg2:T77	
+R23	Meronym Arg1:T80 Arg2:T76	
+R24	Or Arg1:T81 Arg2:T82	
+T88	Method 0 21	Precision Count Beads
+T89	Action 49 56	Perform
+E25	Action:T89 Using:T3
+T3	Method 64 75	preparation
+T5	Reagent 223 229	Sample
+T90	Action 230 238	handling
+E2	Action:T90 Acts-on:T5 Site:T94
+T91	Method 247 261	centrifugation
+T92	Action 263 272	decanting
+E26	Action:T92 
+T93	Action 277 289	transferring
+E27	Action:T93 
+T94	Location 308 313	tubes
+T95	Reagent 339 343	cell
+T96	Modifier 585 593	Accurate
+T97	Action 594 603	pipetting
+E28	Action:T97 
+R25	Mod-Link Arg1:E28 Arg2:T96	
+T98	Method 864 885	Precision Count Beads
+T99	Method 1156 1177	Precision Count Beads
+T100	Reagent 1745 1749	bead
+T101	Reagent 1760 1764	cell
+T102	Modifier 1190 1201	fluorescent

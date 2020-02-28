@@ -1,0 +1,32 @@
+T1	Action 44 50	Digest
+E1	Action:T1 Acts-on:T6 Using:T7 Using2:T8
+T2	Action 90 96	Digest
+E2	Action:T2 Acts-on:T9 Using:T10 Using2:T11
+T3	Action 133 139	Digest
+E3	Action:T3 Acts-on:T12 Using:T13 Using2:T14
+T4	Action 190 198	Incubate
+E4	Action:T4 Acts-on:T16
+T5	Action 262 277	Heat inactivate
+E5	Action:T5 
+T6	Reagent 51 64	Upstream Part
+T7	Reagent 70 79	EcoRI-HF™
+T8	Reagent 84 88	SpeI
+T9	Reagent 97 112	Downstream Part
+T10	Reagent 118 122	XbaI
+T11	Reagent 127 131	PstI
+T12	Reagent 144 163	Destination Plasmid
+T13	Reagent 169 178	EcoRI-HF™
+T14	Reagent 184 188	PstI
+T15	Numerical 203 208	three
+T16	Reagent 209 237	restriction digest reactions
+T17	Temperature 241 245	37°C
+T18	Time 250 260	10 minutes
+R1	Measure Arg1:T16 Arg2:T15	
+R2	Setting Arg1:E4 Arg2:T17	
+R3	Setting Arg1:E4 Arg2:T18	
+T19	Temperature 281 285	80°C
+T20	Time 290 300	20 minutes
+R4	Setting Arg1:E5 Arg2:T19	
+R5	Setting Arg1:E5 Arg2:T20	
+T21	Method 0 9	Digestion
+T22	Device 14 35	BioBrick Assembly Kit

@@ -1,0 +1,238 @@
+T1	Action 57 66	Inoculate
+E1	Action:T1 Using:T27 Site2:T26
+T2	Action 136 144	incubate
+E2	Action:T2 Using:T30 Acts-on:T26
+T3	Action 265 271	Infect
+E3	Action:T3 Acts-on:T31
+T4	Action 362 370	Incubate
+E4	Action:T4 Acts-on:T37 Using:T40
+T5	Action 479 489	Centrifuge
+E5	Action:T5 Acts-on:T32 Using:T41 Site:T43
+T6	Action 582 589	Discard
+E6	Action:T6 Acts-on:T47
+T7	Action 603 606	Add
+E7	Action:T7 Acts-on:T48 Site:T49 Measure-Type-Link:T51
+T8	Action 705 715	Centrifuge
+E8	Action:T8 Acts-on:T52 Using:T53
+T9	Action 823 830	Discard
+E9	Action:T9 Acts-on:T57
+T10	Action 849 858	Resuspend
+E10	Action:T10 Acts-on:T58 Using:T61
+T11	Action 977 982	Layer
+E11	Action:T11 Acts-on:T62 Site:T64
+T12	Action 1065 1077	equilibrated
+E12	Action:T12 Acts-on:T64 Using:T66
+T13	Action 1107 1114	made up
+E13	Action:T13 Site:T67 Acts-on:T64
+T14	Action 1186 1196	Centrifuge
+E14	Action:T14 Acts-on:T68 Using:T69
+T15	Action 1279 1285	Remove
+E15	Action:T15 Acts-on:T73 Site:T74 Using:T76
+T16	Action 1351 1359	transfer
+E16	Action:T16 Acts-on:T73 Site:T78
+T17	Action 1411 1416	Split
+E17	Action:T17 Acts-on:T80 Site:T82 Site2:T84
+T18	Action 1468 1474	dilute
+E18	Action:T18 Acts-on:T86 Using:T89
+T19	Action 1533 1543	Centrifuge
+E19	Action:T19 Acts-on:T90 Using:T91
+T20	Action 1622 1629	Discard
+E20	Action:T20 Acts-on:T95
+T21	Action 1655 1659	wash
+E21	Action:T21 Acts-on:T97
+T22	Action 1749 1754	Store
+E22	Action:T22 Acts-on:T104
+T24	Action 1788 1794	Filter
+E24	Action:T24 Using:T106
+T25	Action 1900 1909	resuspend
+E25	Action:T25 Acts-on:T109 Using:T112
+T26	Location 67 73	flasks
+T27	Reagent 79 94	Chlorella NC64A
+T28	Reagent 98 102	MBBM
+T29	Temperature 148 152	25°C
+R1	Setting Arg1:E2 Arg2:T29	
+T31	Location 276 282	flasks
+T33	Reagent 286 295	chlorella
+T34	Reagent 301 306	virus
+T35	Numerical 347 360	0.01 to 0.001
+T36	Measure-Type 312 337	multiplicity of infection
+R2	Meronym Arg1:T33 Arg2:T31	
+R3	Meronym Arg1:T34 Arg2:T31	
+R4	Setting Arg1:E3 Arg2:T36	
+R5	Of-Type Arg1:T35 Arg2:T36	
+T37	Location 375 381	flasks
+T38	Time 386 397	48-72 hours
+T39	Temperature 401 405	25°C
+T40	Method 411 439	continuous light and shaking
+T30	Method 158 186	continuous light and shaking
+T32	Reagent 494 500	lysate
+T41	Device 508 525	Sorvall GSA rotor
+T42	Amount 529 535	250 ml
+T43	Location 536 543	bottles
+T44	Speed 547 556	5,000 rpm
+T45	Time 570 575	5 min
+T46	Temperature 577 580	4°C
+R6	Measure Arg1:T43 Arg2:T42	
+R7	Setting Arg1:E5 Arg2:T44	
+R8	Setting Arg1:E5 Arg2:T45	
+R9	Setting Arg1:E5 Arg2:T46	
+T47	Reagent 594 601	pellets
+T48	Reagent 607 619	Triton X-100
+T49	Reagent 627 646	lysate supernatants
+T51	Measure-Type 659 672	concentration
+T50	Concentration 676 678	1%
+T52	Reagent 720 726	lysate
+T53	Device 734 778	Beckman Type 19 225 ml ultracentrifuge rotor
+T54	Speed 782 792	17,000 rpm
+T55	Time 807 813	50 min
+T56	Temperature 818 821	4°C
+R11	Setting Arg1:E8 Arg2:T54	
+R12	Setting Arg1:E8 Arg2:T55	
+R13	Setting Arg1:E8 Arg2:T56	
+T57	Reagent 835 847	supernatants
+T58	Reagent 863 876	virus pellets
+T59	Measure-Type 890 896	volume
+T60	Concentration 900 905	50 mM
+T61	Reagent 906 914	Tris-HCl
+R14	Measure Arg1:T61 Arg2:T60	
+R15	Measure Arg1:T61 Arg2:T59	
+T62	Reagent 987 1003	virus suspension
+T63	Concentration 1009 1022	100-400 mg/mL
+T64	Reagent 1032 1064	linear sucrose density gradients
+T65	Concentration 1083 1088	50 mM
+T66	Reagent 1089 1097	Tris-HCl
+R16	Measure Arg1:T64 Arg2:T63	
+R17	Measure Arg1:T66 Arg2:T65	
+T67	Location 1118 1142	Beckman SW28 rotor tubes
+T68	Reagent 1201 1210	gradients
+T69	Device 1216 1234	Beckman SW28 rotor
+T70	Speed 1238 1248	20,000 rpm
+T71	Time 1266 1272	20 min
+T72	Temperature 1274 1277	4°C
+R18	Setting Arg1:E14 Arg2:T70	
+R19	Setting Arg1:E14 Arg2:T71	
+R20	Setting Arg1:E14 Arg2:T72	
+T73	Reagent 1290 1301	virus bands
+T74	Reagent 1311 1320	gradients
+T75	Modifier 1326 1338	sterile bent
+T76	Device 1339 1346	needles
+R21	Mod-Link Arg1:T76 Arg2:T75	
+T77	Amount 1373 1378	30 mL
+T78	Location 1379 1409	polypropylene centrifuge tubes
+R22	Measure Arg1:T78 Arg2:T77	
+T79	Modifier 1363 1372	oak ridge
+R23	Mod-Link Arg1:T78 Arg2:T79	
+T80	Reagent 1421 1426	virus
+T81	Numerical 1432 1433	3
+T82	Reagent 1434 1443	gradients
+T83	Numerical 1452 1453	2
+T84	Location 1454 1459	tubes
+R24	Measure Arg1:T82 Arg2:T81	
+R25	Measure Arg1:T84 Arg2:T83	
+T85	Modifier 1461 1467	Slowly
+R26	Mod-Link Arg1:E18 Arg2:T85	
+T86	Reagent 1479 1484	virus
+T87	Amount 1492 1503	tube volume
+T88	Concentration 1509 1514	50 mM
+T89	Reagent 1515 1523	Tris-HCl
+R27	Measure Arg1:T89 Arg2:T88	
+R29	Setting Arg1:E18 Arg2:T87	
+T90	Location 1548 1553	tubes
+T91	Device 1557 1578	Beckman Ti 50.2 rotor
+T92	Speed 1582 1592	27,000 rpm
+T93	Time 1608 1615	3 hours
+T94	Temperature 1617 1620	4°C
+R28	Setting Arg1:E19 Arg2:T92	
+R30	Setting Arg1:E19 Arg2:T93	
+R31	Setting Arg1:E19 Arg2:T94	
+T95	Reagent 1634 1646	supernatants
+T96	Modifier 1648 1654	Gently
+T97	Reagent 1664 1670	pellet
+T98	Concentration 1692 1697	50 mM
+T99	Reagent 1698 1702	Tris
+T100	Action 1721 1725	wash
+E26	Action:T100 Acts-on:T102
+T101	Modifier 1726 1734	residual
+T102	Reagent 1735 1742	sucrose
+R32	Mod-Link Arg1:T102 Arg2:T101	
+R33	Mod-Link Arg1:E21 Arg2:T96	
+T103	Action 1675 1681	bottle
+E27	Action:T103 Using:T99
+R34	Measure Arg1:T99 Arg2:T98	
+T104	Reagent 1759 1764	virus
+T105	Temperature 1768 1771	4°C
+R35	Setting Arg1:E22 Arg2:T105	
+T106	Reagent 1825 1842	cellulose acetate
+T107	Amount 1817 1824	0.45 µm
+R36	Measure Arg1:T106 Arg2:T107	
+T108	Method 1795 1808	sterilization
+T109	Reagent 1914 1927	virus pellets
+T110	Measure-Type 1941 1947	volume
+T111	Concentration 1951 1956	50 mM
+T112	Reagent 1957 1965	Tris-HCl
+R37	Measure Arg1:T112 Arg2:T111	
+R39	Setting Arg1:E4 Arg2:T38	
+R40	Setting Arg1:E4 Arg2:T39	
+T113	pH 916 922	pH 7.8
+R41	Measure Arg1:T61 Arg2:T113	
+T114	pH 1525 1531	pH 7.8
+T115	pH 1704 1710	pH 7.8
+R42	Measure Arg1:T99 Arg2:T115	
+T116	pH 1967 1973	pH 7.8
+R43	Measure Arg1:T112 Arg2:T116	
+R44	Meronym Arg1:T28 Arg2:T27	
+T117	Reagent 107 122	Micractinium Pb
+T118	Reagent 127 130	FES
+R45	Meronym Arg1:T118 Arg2:T117	
+R46	Or Arg1:T117 Arg2:T27	
+T119	pH 1099 1105	pH 7.8
+R47	Measure Arg1:T66 Arg2:T119	
+R48	Measure Arg1:T89 Arg2:T114	
+T120	Reagent 0 15	Chlorella NC64A
+T121	Reagent 20 43	Mictractinium Pbi virus
+T122	Method 44 56	Purification
+T123	Reagent 197 202	cells
+T124	Modifier 214 230	actively growing
+T125	Reagent 231 236	phase
+T126	Concentration 244 262	1-2 X 107 cells/ml
+R49	Mod-Link Arg1:T125 Arg2:T124	
+T127	Measure-Type 339 342	moi
+T128	Reagent 470 476	lysate
+T129	Reagent 446 454	material
+T130	Speed 558 567	4,000 rcf
+R50	Coreference-Link Arg1:T130 Arg2:T44	
+T131	Modifier 653 658	final
+T132	Concentration 687 689	10
+T133	Concentration 693 696	20%
+T134	Reagent 697 702	stock
+R10	Measure Arg1:T134 Arg2:T133	
+R51	Measure Arg1:T134 Arg2:T132	
+R52	Or Arg1:T133 Arg2:T132	
+T135	Speed 794 804	43,000 rcf
+R53	Coreference-Link Arg1:T135 Arg2:T54	
+T136	Amount 938 944	1.0 mL
+T137	Modifier 924 937	approximately
+R54	Mod-Link Arg1:T136 Arg2:T137	
+T138	Amount 949 955	100 mL
+R55	Measure Arg1:T61 Arg2:T136	
+T139	Modifier 959 967	original
+T140	Reagent 968 974	lysate
+R56	Mod-Link Arg1:T140 Arg2:T139	
+R57	Measure Arg1:T140 Arg2:T138	
+T141	Concentration 1024 1030	10-40%
+R58	Coreference-Link Arg1:T141 Arg2:T63	
+T142	Action 1144 1149	layer
+E28	Action:T142 
+T143	Modifier 1150 1163	approximately
+T144	Amount 1164 1170	3-4 mL
+T145	Reagent 1175 1183	gradient
+R59	Measure Arg1:T145 Arg2:T144	
+T146	Speed 1250 1263	72,000 rcfmax
+R60	Coreference-Link Arg1:T146 Arg2:T70	
+T147	Modifier 1594 1595	~
+T148	Speed 1595 1605	44,000 rcf
+R61	Mod-Link Arg1:T148 Arg2:T147	
+T23	Action 1780 1786	freeze
+E23	Action:T23 
+T149	Reagent 1852 1878	low protein binding filter
+R62	Meronym Arg1:T106 Arg2:T149	

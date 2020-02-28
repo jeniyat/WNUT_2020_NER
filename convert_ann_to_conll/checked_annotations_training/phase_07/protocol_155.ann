@@ -1,0 +1,221 @@
+T1	Action 66 71	Bring
+E1	Action:T1 Acts-on:T29 Using:T31 Measure-Type-Link:T41
+T2	Action 221 226	Bring
+E2	Action:T2 Acts-on:T43 Measure-Type-Link:T44 Using:T46
+T3	Action 351 354	Add
+E3	Action:T3 Acts-on:T47 Site:T48
+T4	Action 446 450	form
+E4	Action:T4 Acts-on:T53
+T5	Action 470 475	Count
+E5	Action:T5 Acts-on:T55
+T6	Action 531 538	pipette
+E6	Action:T6 Acts-on:T57 Site:T59
+T7	Action 572 576	Spin
+E7	Action:T7 
+T8	Action 654 661	prepare
+E8	Action:T8 Acts-on:T65 Acts-on2:T66
+T9	Action 681 688	Prepare
+E9	Action:T9 Acts-on:T67 Using:T69
+T10	Action 734 742	pre-warm
+E10	Action:T10 Acts-on2:T67 Site:T70
+T11	Action 761 768	Prepare
+E11	Action:T11 Site:T71 Acts-on:T73
+T12	Action 773 778	label
+E12	Action:T12 Site:T71 Acts-on:T73
+T13	Action 815 824	Configure
+E13	Action:T13 Acts-on:T74 Using:T75
+T14	Action 871 882	Pipette off
+E14	Action:T14 Acts-on:T76 Site:T77 Using:T80
+T15	Action 977 986	Resuspend
+E15	Action:T15 Acts-on:T81 Site:T83 Using:T84
+T16	Action 1060 1063	Add
+E16	Action:T16 Acts-on:T86 Site:T88
+T17	Action 1119 1122	mix
+E17	Action:T17 
+T18	Action 1124 1127	Add
+E18	Action:T18 Acts-on:T91
+T19	Action 1168 1171	mix
+E19	Action:T19 
+T20	Action 1178 1181	Add
+E20	Action:T20 Acts-on:T94 Site:T95
+T21	Action 1232 1235	cap
+E21	Action:T21 Acts-on:T95
+T22	Action 1365 1371	Insert
+E22	Action:T22 Acts-on:T96 Site:T97
+T23	Action 1402 1405	zap
+E23	Action:T23 Acts-on:T96 Using:T97
+T25	Action 1526 1529	Add
+E25	Action:T25 Acts-on:T104 Site:T105
+T26	Action 1569 1576	Pipette
+E26	Action:T26 Acts-on:T107 Using:T108 Site:T110
+T27	Action 1796 1802	settle
+E27	Action:T27 Acts-on:T112
+T24	Action 1422 1425	sit
+E24	Action:T24 Acts-on:T98 Site:T99 Using:T101
+T28	Amount 72 80	100 pmol
+T29	Reagent 84 88	Cas9
+T30	Amount 110 114	5 µL
+T31	Reagent 121 132	Cas9 buffer
+T32	Amount 134 139	20 mM
+T33	Reagent 140 149	HEPES-KOH
+T34	pH 150 156	pH 7.5
+T35	Amount 158 164	150 mM
+T36	Reagent 165 168	KCl
+T37	Concentration 170 173	10%
+T38	Reagent 174 182	glycerol
+T39	Concentration 184 188	1 mM
+T40	Reagent 189 193	TCEP
+R1	Measure Arg1:T33 Arg2:T32	
+R2	Measure Arg1:T33 Arg2:T34	
+R3	Measure Arg1:T36 Arg2:T35	
+R4	Measure Arg1:T38 Arg2:T37	
+R5	Measure Arg1:T40 Arg2:T39	
+R6	Measure Arg1:T29 Arg2:T28	
+R7	Meronym Arg1:T33 Arg2:T31	
+R8	Meronym Arg1:T36 Arg2:T31	
+R9	Meronym Arg1:T38 Arg2:T31	
+R10	Meronym Arg1:T40 Arg2:T31	
+T41	Measure-Type 94 106	final volume
+T42	Amount 227 235	120 pmol
+T43	Reagent 236 241	sgRNA
+T44	Measure-Type 247 259	final volume
+T45	Amount 263 267	5 µL
+T46	Reagent 274 285	Cas9 buffer
+R11	Measure Arg1:T43 Arg2:T42	
+T47	Reagent 355 359	Cas9
+T48	Reagent 363 368	sgRNA
+T49	Modifier 369 375	slowly
+T50	Action 382 390	swirling
+E28	Action:T50 Using:T51
+T51	Device 391 402	pipette tip
+T52	Time 416 431	30s to 1 minute
+R12	Setting Arg1:E28 Arg2:T52	
+T53	Reagent 439 442	RNP
+T54	Time 455 468	10-20 minutes
+R13	Setting Arg1:E4 Arg2:T54	
+T55	Reagent 476 481	cells
+T56	Numerical 539 543	200k
+T57	Reagent 544 549	cells
+T58	Amount 557 562	15 mL
+T59	Location 563 570	conical
+R14	Measure Arg1:T59 Arg2:T58	
+R15	Measure Arg1:T57 Arg2:T56	
+T60	Speed 577 584	100 x g
+T61	Time 589 599	10 minutes
+T62	Action 603 609	pellet
+E29	Action:T62 Acts-on:T63
+T63	Reagent 610 615	cells
+T64	Modifier 616 622	softly
+R16	Mod-Link Arg1:E3 Arg2:T49	
+R17	Setting Arg1:E7 Arg2:T60	
+R18	Setting Arg1:E7 Arg2:T61	
+R19	Mod-Link Arg1:E29 Arg2:T64	
+T65	Location 662 667	plate
+T66	Location 672 679	cuvette
+T67	Location 691 704	12-well-plate
+T68	Amount 710 713	1mL
+T69	Reagent 714 719	media
+T70	Device 750 759	incubator
+R20	Measure Arg1:T69 Arg2:T68	
+T71	Location 779 784	wells
+T72	Amount 788 792	20uL
+T73	Reagent 793 813	nucleofection strips
+R21	Measure Arg1:T73 Arg2:T72	
+T74	Device 825 833	Lonza 4d
+T75	Method 840 869	recommended cell-type program
+T76	Reagent 883 888	media
+T77	Reagent 894 899	cells
+T78	Modifier 901 907	gently
+T79	Modifier 912 922	completely
+T80	Device 932 936	P200
+R22	Mod-Link Arg1:E14 Arg2:T78	
+R23	Mod-Link Arg1:E14 Arg2:T79	
+T81	Reagent 987 992	cells
+T82	Amount 996 1001	20 µL
+T83	Reagent 1005 1026	nucleofector solution
+T84	Device 1054 1058	P200
+R24	Measure Arg1:T83 Arg2:T82	
+T85	Amount 1075 1080	10 µL
+T86	Reagent 1081 1088	RNP mix
+T87	Amount 1096 1101	20 µL
+T88	Reagent 1102 1114	resuspension
+R25	Measure Arg1:T88 Arg2:T87	
+R26	Measure Arg1:T86 Arg2:T85	
+T89	Amount 1128 1131	1uL
+T90	Concentration 1135 1140	100uM
+T91	Reagent 1141 1150	donor DNA
+T92	Modifier 1172 1176	well
+R27	Mod-Link Arg1:E19 Arg2:T92	
+R28	Measure Arg1:T91 Arg2:T90	
+R29	Measure Arg1:T91 Arg2:T89	
+T93	Amount 1152 1162	100 pmoles
+R30	Measure Arg1:T91 Arg2:T93	
+T94	Reagent 1182 1201	nucleofection mixes
+T95	Location 1209 1226	multiwell cuvette
+T96	Location 1372 1379	cuvette
+T97	Device 1385 1397	nucleofector
+T98	Reagent 1413 1418	cells
+T99	Reagent 1429 1449	nucleofection strips
+T100	Time 1454 1464	10 minutes
+T101	Method 1465 1483	post-nucleofection
+R31	Setting Arg1:E24 Arg2:T100	
+T102	Amount 1530 1534	80uL
+T103	Modifier 1538 1548	pre-warmed
+T104	Reagent 1549 1554	media
+T105	Location 1563 1567	well
+T106	Modifier 1558 1562	each
+R32	Mod-Link Arg1:T105 Arg2:T106	
+R33	Mod-Link Arg1:T104 Arg2:T103	
+R34	Measure Arg1:T104 Arg2:T102	
+T107	Reagent 1577 1584	mixture
+T108	Device 1596 1600	P200
+T109	Modifier 1611 1621	pre-warmed
+T110	Location 1622 1635	12-well plate
+R35	Mod-Link Arg1:T110 Arg2:T109	
+T112	Reagent 1778 1783	cells
+T113	Time 1784 1792	24 hours
+T114	Action 1807 1814	recover
+E31	Action:T114 
+R36	Setting Arg1:E27 Arg2:T113	
+T111	Method 9 22	nucleofection
+T115	Reagent 0 8	Cas9 RNP
+T116	Reagent 27 31	cell
+T117	Device 44 65	Lonza 4D Nucleofector
+R37	Measure Arg1:T29 Arg2:T30	
+T118	Concentration 200 205	40 µM
+T119	Reagent 206 211	stock
+R38	Measure Arg1:T119 Arg2:T118	
+T120	Amount 213 219	2.5 µL
+R39	Measure Arg1:T119 Arg2:T120	
+T121	Modifier 314 321	minimum
+T122	Reagent 322 327	sgRNA
+T123	Measure-Type 328 341	concentration
+T124	Concentration 345 349	24uM
+R40	Measure Arg1:T122 Arg2:T124	
+T125	Action 484 494	Trypsinize
+E30	Action:T125 
+T126	Method 516 529	nucleofection
+T127	Reagent 634 639	cells
+T128	Action 644 652	spinning
+E32	Action:T128 Acts-on:T127
+T129	Reagent 942 948	pellet
+T130	Modifier 952 961	very soft
+R41	Mod-Link Arg1:T129 Arg2:T130	
+T131	Reagent 1036 1044	SF media
+T132	Seal 1277 1280	cap
+T133	Device 1300 1312	nucleofector
+T134	Location 1285 1292	cuvette
+T135	Reagent 1674 1679	cells
+T136	Reagent 1729 1734	media
+T137	Action 1706 1714	wash out
+E33	Action:T137 Acts-on:T136 Site:T138
+T138	Location 1749 1753	well
+T139	Modifier 1755 1770	chemistry-style
+R42	Mod-Link Arg1:E33 Arg2:T139	
+T140	Method 1843 1851	analysis
+T141	Modifier 1832 1842	downstream
+T142	Modifier 1872 1881	un-zapped
+T143	Reagent 1882 1890	controls
+R43	Mod-Link Arg1:T143 Arg2:T142	
+T144	Action 1862 1871	including
+E34	Action:T144 Acts-on:T143

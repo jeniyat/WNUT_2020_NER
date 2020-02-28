@@ -1,0 +1,97 @@
+T1	Action 20 27	Grow up
+E1	Action:T1 Acts-on:T13 Site:T14
+T2	Action 62 65	Add
+E2	Action:T2 Acts-on:T24 Site:T20
+T3	Action 135 138	Add
+E3	Action:T3 Acts-on:T22 Site:T21
+T4	Action 242 245	sit
+E4	Action:T4 Acts-on:T27
+T5	Action 285 294	Spin down
+E5	Action:T5 Acts-on:T30
+T6	Action 333 341	Pour out
+E6	Action:T6 Acts-on:T33
+T7	Action 444 452	Pour out
+E7	Action:T7 Acts-on:T41
+T8	Action 362 371	resuspend
+E8	Action:T8 Acts-on:T34 Using:T37
+T9	Action 473 482	resuspend
+E9	Action:T9 Acts-on:T42 Using:T45
+T10	Action 549 552	Add
+E10	Action:T10 Acts-on:T49 Site:T53
+T11	Action 636 639	add
+E11	Action:T11 Acts-on:T54 Site:T55
+T12	Action 667 674	observe
+E12	Action:T12 Acts-on:T57
+T13	Reagent 28 33	yeast
+T14	Reagent 37 50	liquid medium
+T15	Time 51 60	overnight
+T16	Amount 66 72	333 μL
+T17	Amount 139 145	666 μL
+T18	Amount 106 112	1.5 mL
+T19	Amount 183 189	1.5 mL
+T20	Location 113 133	microcentrifuge tube
+T21	Location 190 210	microcentrifuge tube
+T22	Reagent 168 175	Ethanol
+T23	Concentration 163 167	100%
+T24	Reagent 87 100	yeast culture
+T25	Amount 77 85	1 volume
+T26	Amount 150 158	2 volume
+T27	Reagent 220 241	yeast ethanol mixture
+T28	Temperature 249 265	room temperature
+T29	Time 270 283	30-60 minutes
+T30	Reagent 295 306	yeast cells
+T31	Time 311 319	1 minute
+T32	Speed 323 331	2500 RPM
+T33	Reagent 346 357	supernatant
+T34	Reagent 376 382	pellet
+T35	Amount 386 389	1mL
+T36	Concentration 393 396	1 x
+T37	Reagent 397 400	PBS
+T38	Action 407 417	centrifuge
+E13	Action:T38 
+T39	Time 422 430	1 minute
+T40	Speed 434 442	2500 RPM
+T41	Reagent 457 468	supernatant
+T42	Reagent 487 493	pellet
+T43	Amount 497 503	200 μL
+T44	Concentration 509 512	1 x
+T45	Reagent 513 516	PBS
+T48	Numerical 553 556	one
+T49	Reagent 557 561	drop
+T50	Reagent 569 574	yeast
+T51	Action 575 584	suspended
+E14	Action:T51 Site:T52 Acts-on:T49
+T52	Reagent 592 610	PBS / DAPI mixture
+T53	Location 618 634	microscope slide
+T54	Seal 642 651	coverslip
+T55	Location 655 658	top
+T56	Modifier 679 686	stained
+T57	Reagent 687 692	yeast
+R1	Measure Arg1:T24 Arg2:T25	
+R2	Or Arg1:T25 Arg2:T16	
+R3	Measure Arg1:T20 Arg2:T18	
+R4	Measure Arg1:T22 Arg2:T23	
+R5	Measure Arg1:T22 Arg2:T26	
+R6	Or Arg1:T26 Arg2:T17	
+R7	Measure Arg1:T21 Arg2:T19	
+R8	Setting Arg1:E4 Arg2:T28	
+R9	Setting Arg1:E4 Arg2:T29	
+R10	Setting Arg1:E5 Arg2:T31	
+R11	Setting Arg1:E5 Arg2:T32	
+R12	Measure Arg1:T37 Arg2:T36	
+R13	Measure Arg1:T37 Arg2:T35	
+R14	Setting Arg1:E13 Arg2:T39	
+R15	Setting Arg1:E13 Arg2:T40	
+R16	Measure Arg1:T45 Arg2:T44	
+T46	Generic-Measure 519 525	1:2000
+T47	Reagent 526 547	Dilution DAPI mixture
+R17	Measure Arg1:T47 Arg2:T46	
+R18	Or Arg1:T45 Arg2:T47	
+R19	Measure Arg1:T45 Arg2:T43	
+R20	Measure Arg1:T47 Arg2:T43	
+R21	Measure Arg1:T49 Arg2:T48	
+R22	Meronym Arg1:T49 Arg2:T50	
+R23	Mod-Link Arg1:T57 Arg2:T56	
+T58	Action 11 19	Staining
+E15	Action:T58 Acts-on:T59
+T59	Reagent 0 10	Yeast DAPI
