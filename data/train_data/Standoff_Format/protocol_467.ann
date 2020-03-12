@@ -1,0 +1,94 @@
+T1	Action 32 37	Place
+E1	Action:T1 Acts-on:T12 Using:T13 Site:T14
+T2	Action 86 92	Remove
+E2	Action:T2 Acts-on:T16 Site:T17
+T3	Action 116 121	rinse
+E3	Action:T3 Count:T19 Acts-on:T20 Acts-on2:T23 Count2:T59
+T4	Action 189 194	Place
+E4	Action:T4 Acts-on:T24 Using:T25 Site:T27
+T7	Action 326 332	Remove
+E7	Action:T7 Acts-on:T5 Acts-on2:T6 Site:T28
+T8	Action 368 373	rinse
+E8	Action:T8 Count:T29
+T9	Action 396 402	remove
+E9	Action:T9 Acts-on:T31
+T10	Action 505 512	ziptied
+E10	Action:T10 Acts-on:T33
+T11	Action 517 526	stickered
+E11	Action:T11 Acts-on:T33
+T12	Location 38 45	bottles
+T13	Method 46 57	upside down
+T14	Location 65 74	soap bath
+T15	Time 75 84	overnight
+R1	Setting Arg1:E1 Arg2:T15	
+T16	Location 93 100	bottles
+T17	Location 106 110	soap
+T18	Modifier 122 132	thoroughly
+T19	Numerical 133 134	7
+T20	Location 141 147	inside
+T21	Action 176 182	remove
+E12	Action:T21 Acts-on:T22
+T22	Reagent 183 187	soap
+R2	Mod-Link Arg1:E3 Arg2:T18	
+T23	Location 165 172	outside
+T24	Location 195 202	bottles
+T25	Method 203 214	upside down
+T26	Concentration 222 224	1N
+T27	Location 225 233	HCl bath
+R3	Measure Arg1:T27 Arg2:T26	
+T5	Location 333 340	bottles
+T6	Seal 345 349	caps
+T28	Location 359 363	bath
+T29	Numerical 385 386	7
+T30	Modifier 403 407	most
+T31	Reagent 415 418	HCl
+R4	Mod-Link Arg1:E9 Arg2:T30	
+T32	Modifier 374 384	thoroughly
+R5	Mod-Link Arg1:E8 Arg2:T32	
+T33	Location 489 494	crate
+T34	Modifier 484 488	Each
+R6	Mod-Link Arg1:T33 Arg2:T34	
+T35	Modifier 0 9	Efficient
+T36	Location 10 22	Large Bottle
+T37	Action 23 31	Cleaning
+E5	Action:T37 Acts-on:T36
+R7	Mod-Link Arg1:E5 Arg2:T35	
+T38	Action 235 240	Leave
+E6	Action:T38 
+T39	Time 245 253	one week
+T40	Action 263 272	inverting
+E13	Action:T40 
+T41	Location 304 312	surfaces
+T42	Modifier 317 324	exposed
+R8	Mod-Link Arg1:T41 Arg2:T42	
+R9	Setting Arg1:E6 Arg2:T39	
+T43	Action 420 423	Dry
+E14	Action:T43 
+T44	Action 425 432	sticker
+E15	Action:T44 
+T45	Action 434 444	double bag
+E16	Action:T45 
+T46	Method 449 458	placement
+T47	Location 464 469	boxes
+T48	Reagent 474 482	shipping
+T49	Numerical 540 543	two
+T50	Seal 544 551	zipties
+T51	Seal 561 564	lid
+T52	Numerical 566 569	one
+T53	Device 570 574	card
+T54	Modifier 578 583	large
+T55	Location 584 596	interior bag
+T56	Numerical 602 608	twelve
+T57	Location 609 616	bottles
+T58	Modifier 636 649	double-bagged
+T59	Numerical 155 158	few
+R10	Measure Arg1:T50 Arg2:T49	
+R11	Meronym Arg1:T50 Arg2:T33	
+R12	Measure Arg1:T53 Arg2:T52	
+R13	Meronym Arg1:T53 Arg2:T33	
+R14	Meronym Arg1:T50 Arg2:T51	
+R15	Mod-Link Arg1:T55 Arg2:T54	
+R16	Meronym Arg1:T55 Arg2:T33	
+R17	Measure Arg1:T57 Arg2:T56	
+R18	Meronym Arg1:T57 Arg2:T33	
+R19	Mod-Link Arg1:T57 Arg2:T58	

@@ -1,0 +1,94 @@
+T1	Action 71 76	Place
+E1	Action:T1 Acts-on:T11 Site:T12
+T3	Action 279 287	Transfer
+E3	Action:T3 Acts-on:T17 Site:T19 Site2:T20
+T4	Action 511 521	Centrifuge
+E4	Action:T4 
+T5	Action 556 563	balance
+E5	Action:T5 Acts-on:T25
+T6	Action 598 603	store
+E6	Action:T6 Acts-on:T26
+T7	Action 676 683	disturb
+E7	Action:T7 Acts-on:T32
+T8	Action 780 786	remove
+E8	Action:T8 Acts-on:T37
+T9	Action 754 761	filling
+E9	Action:T9 Acts-on:T36
+T10	Action 817 822	Store
+E10	Action:T10 Acts-on:T39
+T11	Location 77 89	filter plate
+T12	Location 107 129	receiver 96-well plate
+T13	Action 130 146	without touching
+E11	Action:T13 Acts-on:T14
+T14	Location 151 157	bottom
+T15	Modifier 165 172	sterile
+T16	Location 173 185	filter plate
+T2	Amount 288 294	250 µL
+T17	Reagent 298 304	sample
+T18	Modifier 310 314	each
+T19	Location 315 339	experimental bottle/tube
+T20	Location 351 356	wells
+T21	Modifier 345 350	empty
+T22	Location 364 376	filter plate
+R1	Measure Arg1:T17 Arg2:T2	
+R2	Mod-Link Arg1:T19 Arg2:T18	
+R3	Mod-Link Arg1:T20 Arg2:T21	
+T23	Speed 525 533	1000 x g
+T24	Time 538 543	3 min
+T25	Device 568 578	centrifuge
+T26	Location 612 634	filter/filtrate plates
+T27	Modifier 604 611	stacked
+T28	Temperature 638 641	4°C
+T29	Action 643 650	covered
+E2	Action:T29 Using:T30 Acts-on:T26
+T30	Seal 658 667	plate lid
+T31	Modifier 688 695	stacked
+T32	Location 696 702	plates
+T33	Action 707 712	avoid
+E12	Action:T33 Using:T34
+T34	Method 713 732	cross-contamination
+T35	Modifier 766 772	entire
+T36	Location 773 778	plate
+T37	Location 791 803	filter plate
+T38	Action 808 815	discard
+E13	Action:T38 
+T39	Location 827 841	filtrate plate
+T40	Temperature 845 848	4°C
+T41	Action 850 857	covered
+E14	Action:T41 Using:T42
+T42	Seal 865 874	plate lid
+T43	Action 879 886	wrapped
+E15	Action:T43 Acts-on:T44 Using:T45
+T44	Location 887 891	well
+T45	Seal 897 905	parafilm
+R4	Meronym Arg1:T14 Arg2:T16	
+R5	Mod-Link Arg1:T16 Arg2:T15	
+R6	Meronym Arg1:T20 Arg2:T22	
+R7	Setting Arg1:E4 Arg2:T23	
+R8	Setting Arg1:E4 Arg2:T24	
+R9	Mod-Link Arg1:T26 Arg2:T27	
+R10	Setting Arg1:E6 Arg2:T28	
+R11	Mod-Link Arg1:T32 Arg2:T31	
+R12	Mod-Link Arg1:T36 Arg2:T35	
+R13	Setting Arg1:E10 Arg2:T40	
+T46	Action 0 8	Sampling
+E16	Action:T46 Using:T49 Using2:T50
+T47	Reagent 13 32	extracellular phage
+T48	Method 33 47	quantification
+T49	Method 51 55	qPCR
+T50	Method 60 70	MPN assays
+T51	Action 187 191	Keep
+E17	Action:T51 
+T52	Reagent 206 212	sample
+T53	Reagent 227 234	samples
+T54	Location 248 253	wells
+R14	Meronym Arg1:T53 Arg2:T54	
+T55	Location 256 261	Plate
+T56	Action 414 418	fill
+E18	Action:T56 Acts-on:T57
+T57	Location 430 435	plate
+T58	Location 470 475	plate
+T59	Action 588 596	sampling
+E19	Action:T59 
+T60	Location 741 746	wells
+T61	Method 913 921	analysis

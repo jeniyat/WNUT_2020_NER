@@ -1,0 +1,116 @@
+T1	Action 38 46	Assemble
+E1	Action:T1 Acts-on:T22 Site:T20
+T2	Action 97 100	Mix
+E2	Action:T2 Acts-on:T23
+T3	Action 122 130	Transfer
+E3	Action:T3 Site:T25
+T5	Action 195 203	Assemble
+E5	Action:T5 Acts-on:T4
+T6	Action 228 231	Mix
+E6	Action:T6 Using:T27
+T7	Action 263 271	Incubate
+E7	Action:T7 
+T8	Action 307 311	Thaw
+E8	Action:T8 Acts-on:T31 Site:T33
+T9	Action 374 377	Add
+E9	Action:T9 Acts-on:T35 Site:T39 Site2:T36
+T10	Action 466 471	flick
+E10	Action:T10 Acts-on:T41 Count:T42
+T11	Action 506 512	vortex
+E11	Action:T11 
+T12	Action 514 519	Place
+E12	Action:T12 Acts-on:T44 Site:T45
+T13	Action 555 565	Heat shock
+E13	Action:T13 
+T14	Action 590 595	Place
+E14	Action:T14 Site:T49
+T15	Action 618 625	Pipette
+E15	Action:T15 Acts-on:T53 Site:T54
+T16	Action 675 683	Incubate
+E16	Action:T16 
+T17	Action 731 734	Mix
+E17	Action:T17 Acts-on:T59
+T18	Action 792 798	Spread
+E18	Action:T18 Site:T65
+T19	Action 833 841	Incubate
+E19	Action:T19 
+T20	Location 87 95	PCR tube
+T21	Modifier 75 86	thin-walled
+R1	Mod-Link Arg1:T20 Arg2:T21	
+T22	Reagent 51 69	following reagents
+T23	Reagent 101 109	reagents
+T24	Modifier 110 120	completely
+R2	Mod-Link Arg1:E2 Arg2:T24	
+T25	Device 136 148	thermocycler
+T4	Reagent 208 226	following reagents
+T26	Modifier 232 236	well
+T27	Method 240 261	pipetting up and down
+R3	Mod-Link Arg1:E6 Arg2:T26	
+T28	Temperature 275 291	room temperature
+T29	Time 296 305	5 minutes
+R4	Setting Arg1:E7 Arg2:T28	
+R5	Setting Arg1:E7 Arg2:T29	
+T30	Amount 314 319	50 μl
+T31	Reagent 320 327	aliquot
+T32	Reagent 331 365	chemically competent E. coli cells
+T33	Location 369 372	ice
+R6	Measure Arg1:T31 Arg2:T30	
+R7	Meronym Arg1:T31 Arg2:T32	
+T34	Amount 378 382	5 μl
+T35	Reagent 390 397	KLD mix
+T36	Location 434 438	tube
+T37	Modifier 442 448	thawed
+T38	Reagent 449 454	cells
+R8	Mod-Link Arg1:T38 Arg2:T37	
+R9	Measure Arg1:T35 Arg2:T34	
+T39	Location 407 426	"KLD Section" above
+R10	Meronym Arg1:T38 Arg2:T36	
+T40	Modifier 456 465	Carefully
+T41	Location 476 480	tube
+T42	Numerical 481 484	4-5
+R11	Mod-Link Arg1:E10 Arg2:T40	
+T43	Action 494 497	mix
+E4	Action:T43 
+T44	Reagent 524 531	mixture
+T45	Location 535 538	ice
+T46	Time 543 553	30 minutes
+R12	Setting Arg1:E12 Arg2:T46	
+T47	Temperature 569 573	42°C
+T48	Time 578 588	30 seconds
+R13	Setting Arg1:E13 Arg2:T47	
+R14	Setting Arg1:E13 Arg2:T48	
+T49	Location 599 602	ice
+T50	Time 607 616	5 minutes
+R15	Setting Arg1:E14 Arg2:T50	
+T51	Amount 626 632	950 μl
+T53	Reagent 653 656	SOC
+T54	Reagent 666 673	mixture
+T52	Modifier 636 652	room temperature
+R16	Mod-Link Arg1:T53 Arg2:T52	
+R17	Measure Arg1:T53 Arg2:T51	
+T55	Temperature 687 691	37°C
+T56	Time 696 706	60 minutes
+T57	Action 712 719	shaking
+E20	Action:T57 
+T58	Speed 721 728	250 rpm
+R18	Setting Arg1:E20 Arg2:T58	
+R19	Setting Arg1:E16 Arg2:T55	
+R20	Setting Arg1:E16 Arg2:T56	
+T59	Reagent 739 744	cells
+T60	Modifier 745 755	thoroughly
+T61	Action 759 767	flicking
+E21	Action:T61 Acts-on:T62
+T62	Location 772 776	tube
+T63	Action 781 790	inverting
+E22	Action:T63 
+R21	Mod-Link Arg1:E17 Arg2:T60	
+T64	Amount 799 808	50-100 μl
+T65	Location 816 831	selection plate
+R22	Setting Arg1:E18 Arg2:T64	
+T66	Time 842 851	overnight
+T67	Temperature 855 859	37°C
+R23	Setting Arg1:E19 Arg2:T66	
+R24	Setting Arg1:E19 Arg2:T67	
+T68	Method 0 29	Q5® Site-Directed Mutagenesis
+T69	Action 175 182	cycling
+E23	Action:T69 

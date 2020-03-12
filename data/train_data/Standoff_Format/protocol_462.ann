@@ -1,0 +1,261 @@
+T1	Action 27 30	Add
+E1	Action:T1 Acts-on:T39 Site:T42
+T2	Action 54 59	shake
+E2	Action:T2 Acts-on:T42
+T3	Action 68 71	Add
+E3	Action:T3 Acts-on:T44
+T4	Action 153 156	Add
+E4	Action:T4 Acts-on:T51 Site:T54
+T5	Action 226 235	resuspend
+E5	Action:T5 Acts-on:T56 Site:T58 Using:T60 Using2:T61 Count:T62
+T6	Action 302 306	Take
+E6	Action:T6 Acts-on:T64
+T7	Action 333 339	dilute
+E7	Action:T7 Acts-on:T64
+T8	Action 350 355	Count
+E8	Action:T8 
+T9	Action 394 400	dilute
+E9	Action:T9 Acts-on:T68
+T10	Action 357 361	Take
+E10	Action:T10 Acts-on:T68
+T11	Action 431 441	re-suspend
+E11	Action:T11 Using:T72 Using2:T73 Count:T74
+T12	Action 484 488	Seed
+E12	Action:T12 Acts-on:T76 Site:T77
+T13	Action 509 513	Save
+E13	Action:T13 Acts-on:T79
+T14	Action 548 556	Transfer
+E14	Action:T14 Acts-on:T81 Site:T84
+T15	Action 605 608	add
+E15	Action:T15 Acts-on:T87 Site:T88
+T16	Action 670 674	Sink
+E16	Action:T16 Acts-on:T92 Site:T93
+T17	Action 712 719	Discard
+E17	Action:T17 Acts-on:T96
+T18	Action 734 737	Add
+E18	Action:T18 Acts-on:T98 Site:T99
+T19	Action 762 765	Mix
+E19	Action:T19 Acts-on:T100
+T20	Action 777 786	inverting
+E20	Action:T20 Count:T102
+T21	Action 808 818	Distribute
+E21	Action:T21 Acts-on:T103 Site:T106
+T23	Action 898 901	Add
+E23	Action:T23 Acts-on:T109 Site:T111
+T24	Action 935 943	Transfer
+E24	Action:T24 Acts-on:T114 Site:T116
+T25	Action 980 984	Wait
+E25	Action:T25 Acts-on:T117
+T26	Action 1042 1049	Discard
+E26	Action:T26 Acts-on:T123
+T27	Action 1064 1067	Add
+E27	Action:T27 Acts-on:T125 Site:T126
+T28	Action 1098 1102	Seed
+E28	Action:T28 Acts-on:T128 Site:T130
+T29	Action 1130 1136	Change
+E29	Action:T29 Acts-on:T131
+T30	Action 1154 1158	suck
+E30	Action:T30 Acts-on:T132
+T31	Action 1172 1179	replace
+E31	Action:T31 Using:T134 Acts-on:T131
+T32	Action 1203 1207	Take
+E32	Action:T32 Acts-on:T137
+T33	Action 1257 1261	Suck
+E33	Action:T33 Acts-on:T142
+T34	Action 1285 1288	Fix
+E34	Action:T34 Using:T145 Site:T148
+T35	Action 1328 1332	Wash
+E35	Action:T35 Acts-on:T149 Using:T151
+T36	Action 1354 1358	Wash
+E36	Action:T36 Using:T155 Acts-on:T152
+T37	Action 1380 1384	Wash
+E37	Action:T37 Using:T157 Acts-on:T153
+T38	Action 1406 1411	Store
+E38	Action:T38 Acts-on:T158 Site:T159
+T39	Reagent 31 38	Trypsin
+T40	Amount 39 42	2ml
+T41	Modifier 47 53	gently
+T42	Location 60 65	plate
+R1	Mod-Link Arg1:E2 Arg2:T41	
+R2	Measure Arg1:T39 Arg2:T40	
+T43	Amount 72 75	8ml
+T44	Reagent 76 97	ES medium without LIF
+T45	Action 101 111	inactivate
+E39	Action:T45 Acts-on:T46
+T46	Reagent 112 119	trypsin
+R3	Measure Arg1:T44 Arg2:T43	
+T47	Action 120 130	Centrifuge
+E40	Action:T47 
+T48	Speed 134 140	500rpm
+T49	Time 145 150	10min
+R4	Setting Arg1:E40 Arg2:T48	
+R5	Setting Arg1:E40 Arg2:T49	
+T50	Amount 157 160	8ml
+T51	Reagent 164 173	EB medium
+T52	Modifier 177 181	each
+T53	Size 182 186	10cm
+T54	Location 187 197	petri-dish
+R6	Measure Arg1:T51 Arg2:T50	
+R7	Measure Arg1:T54 Arg2:T53	
+R8	Mod-Link Arg1:T54 Arg2:T52	
+T55	Modifier 219 225	Gently
+T56	Reagent 236 242	pellet
+T57	Amount 246 249	5ml
+T58	Reagent 250 259	EB medium
+T59	Amount 263 266	5ml
+T60	Location 267 274	pipette
+T61	Method 276 287	up and down
+T62	Numerical 292 293	5
+R9	Mod-Link Arg1:E5 Arg2:T55	
+R10	Measure Arg1:T58 Arg2:T57	
+R11	Setting Arg1:T60 Arg2:T59	
+T63	Amount 307 312	100ul
+T64	Reagent 313 328	cell suspension
+T65	Amount 345 348	1ml
+R12	Measure Arg1:T64 Arg2:T63	
+R13	Setting Arg1:E7 Arg2:T65	
+T66	Modifier 362 373	appropriate
+T67	Amount 374 380	number
+T68	Reagent 384 389	cells
+T69	Concentration 406 421	1×10^6 cells/ml
+R14	Setting Arg1:E9 Arg2:T69	
+R15	Measure Arg1:T68 Arg2:T67	
+R16	Mod-Link Arg1:T68 Arg2:T66	
+T70	Modifier 424 430	Gently
+T71	Amount 445 448	5ml
+T72	Location 449 456	pipette
+T73	Method 458 469	up and down
+T74	Numerical 474 475	4
+R17	Mod-Link Arg1:E11 Arg2:T70	
+R18	Setting Arg1:T72 Arg2:T71	
+T75	Amount 489 492	2ml
+T76	Reagent 496 501	cells
+T77	Location 502 506	dish
+R19	Measure Arg1:T76 Arg2:T75	
+T78	Amount 514 520	2×10^6
+T79	Reagent 521 526	cells
+T80	Method 531 545	RNA extraction
+R20	Measure Arg1:T79 Arg2:T78	
+T81	Reagent 557 563	medium
+T82	Reagent 575 578	Ebs
+T83	Amount 582 586	50ml
+T84	Location 587 592	tubes
+R21	Measure Arg1:T84 Arg2:T83	
+R22	Meronym Arg1:T82 Arg2:T81	
+T85	Modifier 595 604	Carefully
+T86	Amount 609 612	5ml
+T87	Reagent 613 619	medium
+T88	Location 623 629	dishes
+T89	Modifier 630 641	immediately
+R23	Mod-Link Arg1:E15 Arg2:T85	
+R24	Measure Arg1:T87 Arg2:T86	
+R25	Mod-Link Arg1:T88 Arg2:T89	
+T90	Action 646 649	put
+E41	Action:T90 Site:T91 Acts-on:T87
+T91	Device 658 667	incubator
+T92	Reagent 675 680	cells
+T93	Location 684 689	tubes
+T95	Time 705 709	5min
+R26	Setting Arg1:E16 Arg2:T95	
+T96	Reagent 720 731	supernatant
+T97	Amount 738 741	5ml
+T98	Reagent 742 748	medium
+T99	Reagent 752 759	pellets
+R27	Measure Arg1:T98 Arg2:T97	
+T100	Reagent 766 773	samples
+T101	Modifier 799 805	gently
+T102	Numerical 789 792	few
+R28	Mod-Link Arg1:E20 Arg2:T101	
+T103	Reagent 819 826	samples
+T105	Modifier 830 839	different
+T106	Location 840 846	dishes
+R29	Mod-Link Arg1:T106 Arg2:T105	
+T108	Location 872 886	chamber slides
+T22	Amount 902 907	1.5ml
+T109	Reagent 911 917	medium
+T110	Modifier 923 927	each
+T111	Location 928 932	well
+R30	Mod-Link Arg1:T111 Arg2:T110	
+R31	Measure Arg1:T109 Arg2:T22	
+T112	Amount 944 950	1 dish
+T113	Modifier 954 958	day4
+T114	Reagent 959 962	Ebs
+R32	Mod-Link Arg1:T114 Arg2:T113	
+T115	Amount 968 972	15ml
+T116	Location 973 977	tube
+R33	Measure Arg1:T116 Arg2:T115	
+R34	Measure Arg1:T114 Arg2:T112	
+T117	Reagent 989 992	Ebs
+T118	Action 993 997	sink
+E22	Action:T118 Acts-on:T117 Site:T119
+T119	Location 1005 1011	bottom
+T120	Location 1015 1019	tube
+T122	Time 1035 1039	5min
+R35	Setting Arg1:E25 Arg2:T122	
+R36	Meronym Arg1:T119 Arg2:T120	
+T123	Reagent 1050 1061	supernatant
+T124	Amount 1068 1072	10ml
+T125	Reagent 1073 1082	EB medium
+T126	Reagent 1088 1095	pellets
+R37	Measure Arg1:T125 Arg2:T124	
+T127	Amount 1103 1108	0.5ml
+T128	Reagent 1112 1114	EB
+T129	Modifier 1118 1122	each
+T130	Location 1123 1127	well
+R38	Mod-Link Arg1:T130 Arg2:T129	
+R39	Measure Arg1:T128 Arg2:T127	
+T131	Reagent 1137 1143	medium
+T132	Reagent 1159 1170	supernatant
+T133	Modifier 1185 1190	fresh
+T134	Reagent 1191 1200	EB medium
+R40	Mod-Link Arg1:T134 Arg2:T133	
+T135	Time 1144 1152	everyday
+R41	Setting Arg1:E29 Arg2:T135	
+T136	Numerical 1208 1209	2
+T137	Location 1210 1215	wells
+T138	Reagent 1225 1230	group
+T139	Time 1234 1238	day6
+T140	Time 1240 1244	day8
+T141	Time 1249 1254	day12
+R42	Measure Arg1:T137 Arg2:T136	
+T142	Reagent 1266 1272	medium
+T143	Modifier 1273 1282	carefully
+R43	Mod-Link Arg1:E33 Arg2:T143	
+T144	Concentration 1294 1296	4%
+T145	Reagent 1297 1300	PFA
+T146	Time 1305 1310	30min
+T147	Temperature 1311 1314	@RT
+T148	Location 1320 1324	hood
+R44	Measure Arg1:T145 Arg2:T144	
+R45	Setting Arg1:E34 Arg2:T146	
+R46	Setting Arg1:E34 Arg2:T147	
+T149	Reagent 1333 1335	#1
+T150	Amount 1341 1344	2ml
+T151	Reagent 1348 1351	PBS
+T152	Reagent 1359 1361	#2
+T153	Reagent 1385 1387	#3
+T154	Amount 1367 1370	2ml
+T155	Reagent 1374 1377	PBS
+T156	Amount 1393 1396	2ml
+T157	Reagent 1400 1403	PBS
+R47	Measure Arg1:T151 Arg2:T150	
+R48	Measure Arg1:T155 Arg2:T154	
+R49	Measure Arg1:T157 Arg2:T156	
+T158	Reagent 1412 1419	samples
+T159	Reagent 1423 1426	PBS
+T160	Temperature 1430 1433	4°C
+R50	Setting Arg1:E38 Arg2:T160	
+T161	Reagent 0 15	Embryoid bodies
+T162	Method 16 26	generation
+T163	Action 204 216	centrifuging
+E43	Action:T163 
+T164	Action 849 856	Prepare
+E44	Action:T164 Acts-on:T108
+T104	Modifier 857 871	gelatin coated
+T107	Location 890 894	well
+R52	Mod-Link Arg1:T108 Arg2:T104	
+T165	Numerical 888 889	2
+R51	Measure Arg1:T107 Arg2:T165	
+R53	Setting Arg1:E32 Arg2:T139	
+R54	Setting Arg1:E32 Arg2:T140	
+R55	Setting Arg1:E32 Arg2:T141	

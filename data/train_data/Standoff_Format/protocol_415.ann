@@ -1,0 +1,74 @@
+T1	Action 40 44	Take
+E1	Action:T1 Acts-on:T13
+T2	Action 91 95	spin
+E2	Action:T2 Acts-on:T15
+T3	Action 129 136	Discard
+E3	Action:T3 Acts-on:T19
+T4	Action 164 173	Resuspend
+E4	Action:T4 Acts-on:T20
+T5	Action 210 213	Add
+T6	Action 256 259	mix
+E6	Action:T6 
+T7	Action 285 293	Incubate
+E7	Action:T7 Acts-on:T29 Site:T30 Using:T33
+T8	Action 352 361	Spin down
+E8	Action:T8 Acts-on:T34
+T9	Action 401 409	Transfer
+E9	Action:T9 Acts-on:T37 Site:T38
+T10	Action 441 448	measure
+E10	Action:T10 Measure-Type-Link:T40
+T11	Action 475 478	Use
+E11	Action:T11 Acts-on:T42 Product:T43
+T12	Amount 45 49	1 ml
+T13	Reagent 50 56	sample
+T14	Reagent 65 86	cyanobacteria culture
+T15	Mention 96 98	it
+T16	Speed 107 117	14,000 rpm
+T17	Time 122 127	5 min
+R1	Setting Arg1:E2 Arg2:T16	
+R2	Setting Arg1:E2 Arg2:T17	
+R3	Coreference-Link Arg1:T15 Arg2:T13	
+R4	Measure Arg1:T13 Arg2:T12	
+R5	Meronym Arg1:T13 Arg2:T14	
+T18	Amount 137 143	0.9 ml
+T19	Reagent 151 162	supernatant
+R6	Measure Arg1:T19 Arg2:T18	
+T20	Reagent 178 184	pellet
+T21	Modifier 192 201	remaining
+T22	Amount 202 208	100 µl
+R7	Mod-Link Arg1:T22 Arg2:T21	
+R8	Setting Arg1:E4 Arg2:T22	
+T23	Amount 214 220	0.9 ml
+T24	Concentration 224 228	100%
+T25	Reagent 229 237	methanol
+T27	Modifier 260 270	thoroughly
+T28	Action 274 283	vortexing
+E12	Action:T28 
+R9	Mod-Link Arg1:E6 Arg2:T27	
+R10	Measure Arg1:T25 Arg2:T24	
+R11	Measure Arg1:T25 Arg2:T23	
+T29	Reagent 298 305	samples
+T30	Location 313 317	dark
+T31	Time 322 328	30 min
+T32	Temperature 332 336	4 °C
+T33	Device 344 350	fridge
+R12	Setting Arg1:E7 Arg2:T31	
+R13	Setting Arg1:E7 Arg2:T32	
+T34	Reagent 362 369	samples
+T35	Speed 379 389	14,000 rpm
+T36	Time 394 399	5 min
+R14	Setting Arg1:E8 Arg2:T35	
+R15	Setting Arg1:E8 Arg2:T36	
+T37	Reagent 410 421	supernatant
+T38	Device 429 436	cuvette
+T39	Generic-Measure 467 473	665 nm
+T40	Measure-Type 453 463	extinction
+R16	Setting Arg1:E10 Arg2:T39	
+T41	Concentration 479 482	90%
+T42	Reagent 483 491	methanol
+T43	Reagent 499 517	reference solution
+R17	Measure Arg1:T42 Arg2:T41	
+T44	Reagent 245 252	sample 
+T45	Reagent 0 11	Chlorophyll
+T46	Method 12 22	Extraction
+T47	Reagent 26 39	Cyanobacteria

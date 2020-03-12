@@ -1,0 +1,86 @@
+T1	Action 35 39	Take
+E1	Action:T1 Acts-on:T12 Site:T13
+T2	Action 83 86	add
+E2	Action:T2 Acts-on:T15
+T3	Action 122 127	Shake
+E3	Action:T3 
+T6	Action 361 369	dialyzed
+E6	Action:T6 Acts-on:T20 Using:T21 Using2:T24
+T7	Action 467 474	Measure
+E7	Action:T7 
+T8	Action 569 574	dried
+E8	Action:T8 Acts-on:T32 Using:T30
+T10	Amount 40 44	20 g
+T11	Reagent 45 49	soil
+T12	Reagent 53 59	manure
+R1	Or Arg1:T11 Arg2:T12	
+R2	Measure Arg1:T11 Arg2:T10	
+T13	Location 65 78	conical flask
+T14	Amount 87 93	100 mL
+T15	Reagent 97 107	extractant
+R3	Measure Arg1:T15 Arg2:T14	
+T16	Concentration 109 118	1:5 ratio
+R4	Setting Arg1:E2 Arg2:T16	
+T17	Modifier 128 132	well
+T18	Time 156 160	18 h
+T4	Action 143 151	standing
+E4	Action:T4 
+R5	Setting Arg1:E4 Arg2:T18	
+R6	Mod-Link Arg1:E3 Arg2:T17	
+T19	Device 180 206	Whatman filter paper no. 1
+T5	Action 165 171	Filter
+E5	Action:T5 Using:T19
+T20	Reagent 352 357	humus
+T21	Device 373 387	dialysis tubes
+T22	Device 391 406	parchment paper
+R7	Or Arg1:T21 Arg2:T22	
+T23	Time 437 441	24 h
+T24	Reagent 415 432	running tap water
+R8	Setting Arg1:E6 Arg2:T23	
+T25	Generic-Measure 479 485	volume
+R9	Setting Arg1:E7 Arg2:T25	
+T26	Size 540 546	100 mL
+T27	Location 547 553	beaker
+R10	Measure Arg1:T27 Arg2:T26	
+T29	Generic-Measure 493 505	known volume
+T30	Device 581 585	oven
+T31	Temperature 589 593	70°C
+T32	Location 559 565	beaker
+R12	Setting Arg1:E8 Arg2:T31	
+T9	Method 0 19	Estimation of Humus
+T33	Reagent 23 34	Soil/Manure
+T34	Reagent 254 259	humin
+T35	Reagent 268 276	filtrate
+T36	Reagent 212 227	residue portion
+T37	Device 231 243	filter paper
+R13	Meronym Arg1:T36 Arg2:T37	
+T38	Reagent 280 285	humus
+R14	Coreference-Link Arg1:T38 Arg2:T35	
+R15	Coreference-Link Arg1:T34 Arg2:T36	
+T39	Mention 287 289	It
+T40	Modifier 293 303	dark brown
+T41	pH 318 323	pH 13
+R16	Mod-Link Arg1:T39 Arg2:T40	
+R17	Measure Arg1:T39 Arg2:T41	
+T42	Action 329 336	get rid
+E9	Action:T42 Acts-on:T43
+T43	Reagent 340 346	sodium
+T44	Mention 445 447	It
+T45	Modifier 451 465	free of sodium
+R18	Mod-Link Arg1:T44 Arg2:T45	
+T46	Amount 507 512	10 mL
+T47	Action 517 522	taken
+E11	Action:T47 Site:T27
+T28	Modifier 528 539	pre-weighed
+R11	Mod-Link Arg1:T27 Arg2:T28	
+R19	Setting Arg1:E11 Arg2:T29	
+T48	Modifier 594 614	to a constant weight
+R20	Mod-Link Arg1:E8 Arg2:T48	
+T49	Generic-Measure 651 666	amount of humus
+T50	Amount 670 675	10 mL
+T51	Method 620 640	difference in weight
+T52	Action 696 706	calculated
+E10	Action:T52 Using:T53
+T53	Method 712 728	percentage basis
+T54	Modifier 677 688	Accordingly
+R21	Mod-Link Arg1:E10 Arg2:T54	

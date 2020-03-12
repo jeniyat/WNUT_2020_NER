@@ -1,0 +1,74 @@
+T1	Action 36 40	Wash
+E1	Action:T1 Acts-on:T10
+T3	Action 93 100	pouring
+E3	Action:T3 Acts-on:T12 Site:T13
+T4	Action 131 138	Let sit
+E4	Action:T4 
+T5	Action 158 163	Rinse
+E5	Action:T5 Acts-on:T15 Site:T16 Using:T17
+T6	Action 233 238	Place
+E6	Action:T6 Acts-on:T18 Site:T19
+T7	Action 323 328	Shake
+E7	Action:T7 Using:T25
+T9	Action 550 556	remove
+E9	Action:T9 Using:T8 Acts-on:T28
+T10	Reagent 41 48	embryos
+T2	Action 53 58	place
+E2	Action:T2 Site:T11
+T11	Device 64 75	wash basket
+T12	Reagent 101 107	bleach
+T13	Reagent 122 129	embryos
+T14	Time 143 156	three minutes
+R1	Setting Arg1:E4 Arg2:T14	
+T15	Reagent 164 171	embryos
+T16	Device 175 181	basket
+T17	Reagent 187 192	ddH2O
+T18	Reagent 239 246	embryos
+T19	Location 252 262	glass vial
+T20	Amount 274 277	6ml
+T21	Reagent 281 288	Heptane
+T22	Amount 293 296	6ml
+T23	Concentration 300 304	0.4%
+T24	Reagent 305 321	Paraformaldehyde
+R2	Measure Arg1:T24 Arg2:T23	
+R3	Measure Arg1:T24 Arg2:T22	
+R4	Measure Arg1:T21 Arg2:T20	
+R5	Meronym Arg1:T21 Arg2:T19	
+R6	Meronym Arg1:T24 Arg2:T19	
+T25	Device 332 347	orbital rotator
+T26	Speed 351 357	150rpm
+T27	Time 362 372	20 minutes
+R7	Setting Arg1:E7 Arg2:T26	
+R8	Setting Arg1:E7 Arg2:T27	
+T8	Device 533 546	glass pipette
+T28	Reagent 561 591	bottom (parafomaldehyde) layer
+T29	Action 77 89	Dechorionate
+E8	Action:T29 
+T30	Method 0 35	Lethal Phase - Immunohistochemistry
+T31	Modifier 108 116	directly
+R9	Mod-Link Arg1:E3 Arg2:T31	
+T32	Modifier 193 231	until bleach is completely washed away
+R10	Mod-Link Arg1:E5 Arg2:T32	
+T33	Modifier 374 389	Upon completion
+T34	Time 393 402	20 minute
+T35	Method 403 411	fixation
+T36	Action 450 458	seperate
+E10	Action:T36 Acts-on:T38 Acts-on2:T37
+T37	Reagent 431 446	parformaldehyde
+T38	Reagent 419 426	heptane
+R11	Mod-Link Arg1:T34 Arg2:T33	
+R12	Setting Arg1:E10 Arg2:T34	
+T39	Reagent 460 466	Embyos
+T40	Action 475 482	trapped
+E11	Action:T40 Acts-on:T39 Site:T41
+T41	Location 490 499	interface
+T42	Modifier 500 507	between
+T43	Reagent 516 525	solutions
+T44	Numerical 512 515	two
+R13	Measure Arg1:T43 Arg2:T44	
+R14	Mod-Link Arg1:T43 Arg2:T42	
+R15	Meronym Arg1:T41 Arg2:T43	
+T45	Action 603 614	not disrupt
+E12	Action:T45 Acts-on:T46 Site:T47
+T46	Reagent 619 626	embryos
+T47	Location 634 643	interface

@@ -1,0 +1,251 @@
+T2	Action 116 119	Mix
+E2	Action:T2 Acts-on:T1
+T3	Action 139 143	stir
+E3	Action:T3 Acts-on:T1
+T4	Action 215 219	heat
+E4	Action:T4 Acts-on:T32
+T5	Action 234 239	Store
+E5	Action:T5 Site:T34
+T6	Action 288 291	Add
+E6	Action:T6 Acts-on:T38 Site:T39
+T7	Action 482 488	Vortex
+E7	Action:T7 
+T8	Action 605 613	Incubate
+E8	Action:T8 
+T9	Action 649 652	Add
+E9	Action:T9 Acts-on:T45
+T10	Action 725 728	Mix
+E10	Action:T10 Count:T47
+T11	Action 782 788	vortex
+E11	Action:T11 
+T12	Action 812 820	Incubate
+E12	Action:T12 
+T13	Action 856 860	Spin
+E13	Action:T13 
+T14	Action 988 996	Transfer
+E14	Action:T14 Acts-on:T57 Site:T59
+T15	Action 1038 1043	Avoid
+E15	Action:T15 Acts-on:T60 Site:T61
+T16	Action 1159 1162	Add
+E16	Action:T16 Acts-on:T63
+T17	Action 1305 1308	add
+E17	Action:T17 Acts-on:T65
+T18	Action 1457 1460	Mix
+E18	Action:T18 
+T19	Action 1489 1497	Incubate
+E19	Action:T19 
+T20	Action 1544 1548	Spin
+E20	Action:T20 
+T21	Action 1590 1597	Discard
+E21	Action:T21 Acts-on:T79
+T22	Action 1615 1618	Add
+E22	Action:T22 Acts-on:T82
+T23	Action 1696 1699	Mix
+E23	Action:T23 
+T25	Action 1795 1803	Incubate
+E25	Action:T25 
+T26	Action 1836 1840	Spin
+E26	Action:T26 
+T27	Action 1879 1886	Discard
+E27	Action:T27 Acts-on:T93
+T29	Action 2102 2110	dissolve
+E29	Action:T29 Acts-on:T101 Using:T102
+T30	Action 1919 1922	dry
+E30	Action:T30 Acts-on:T95
+T28	Action 1734 1743	submerged
+E28	Action:T28 Acts-on:T84 Site:T85
+T1	Reagent 124 134	components
+T24	Temperature 147 163	room temperature
+T31	Time 192 205	30-60 minutes
+R1	Setting Arg1:E3 Arg2:T24	
+R2	Setting Arg1:E3 Arg2:T31	
+T32	Reagent 224 232	solution
+T33	Temperature 243 247	4 °C
+T34	Location 253 265	glass bottle
+T35	Action 266 275	protected
+E1	Action:T35 Site:T36
+T36	Location 281 286	light
+R3	Setting Arg1:E5 Arg2:T33	
+T37	Amount 292 301	5 volumes
+T38	Reagent 309 336	home-made Trizol substitute
+T39	Reagent 344 350	sample
+R4	Measure Arg1:T38 Arg2:T37	
+T40	Modifier 489 499	vigorously
+T41	Time 504 517	10-30 seconds
+R5	Mod-Link Arg1:E7 Arg2:T40	
+R6	Setting Arg1:E7 Arg2:T41	
+T42	Temperature 617 633	room temperature
+T43	Time 638 647	5 minutes
+R7	Setting Arg1:E8 Arg2:T42	
+R8	Setting Arg1:E8 Arg2:T43	
+T44	Amount 653 661	1 volume
+T45	Reagent 665 675	chloroform
+R9	Measure Arg1:T45 Arg2:T44	
+T46	Modifier 729 739	vigorously
+T47	Numerical 740 745	10-20
+T48	Action 755 764	inverting
+E24	Action:T48 Acts-on:T49
+T49	Location 769 773	tube
+R10	Mod-Link Arg1:E10 Arg2:T46	
+T50	Action 792 806	avoid breaking
+E31	Action:T50 Acts-on:T51
+T51	Reagent 807 810	DNA
+T52	Temperature 824 840	room temperature
+T53	Time 845 854	5 minutes
+R11	Setting Arg1:E12 Arg2:T52	
+R12	Setting Arg1:E12 Arg2:T53	
+T54	Time 865 878	10-15 minutes
+T55	Speed 883 891	12,000 g
+T56	Temperature 896 900	4 °C
+R13	Setting Arg1:E13 Arg2:T54	
+R14	Setting Arg1:E13 Arg2:T55	
+R15	Setting Arg1:E13 Arg2:T56	
+T57	Reagent 1001 1020	upper aqueous phase
+T58	Modifier 1028 1031	new
+T59	Location 1032 1036	tube
+R16	Mod-Link Arg1:T59 Arg2:T58	
+T60	Reagent 1048 1069	white DNA precipitate
+T61	Reagent 1077 1087	interphase
+T62	Amount 1163 1174	1.1 volumes
+T63	Reagent 1178 1189	isopropanol
+R17	Measure Arg1:T63 Arg2:T62	
+T64	Amount 1310 1315	10 µg
+T65	Reagent 1319 1327	glycogen
+T66	Action 1342 1355	precipitating
+E32	Action:T66 Acts-on:T67
+T67	Reagent 1356 1369	nucleic acids
+T68	Action 1374 1382	spotting
+E33	Action:T68 Acts-on:T69
+T69	Reagent 1387 1393	pellet
+R18	Measure Arg1:T65 Arg2:T64	
+T70	Modifier 1461 1465	well
+T71	Action 1469 1478	inverting
+E34	Action:T71 Acts-on:T72
+T72	Location 1483 1487	tube
+R19	Mod-Link Arg1:E18 Arg2:T70	
+T73	Time 1498 1511	30-60 minutes
+T74	Temperature 1515 1519	4 °C
+T75	Temperature 1526 1542	room temperature
+R20	Setting Arg1:E19 Arg2:T73	
+R21	Setting Arg1:E19 Arg2:T74	
+R22	Or Arg1:T74 Arg2:T75	
+T76	Time 1553 1566	30-45 minutes
+T77	Speed 1571 1579	12,000 g
+T78	Temperature 1584 1588	4 °C
+R23	Setting Arg1:E20 Arg2:T76	
+R24	Setting Arg1:E20 Arg2:T77	
+R25	Setting Arg1:E20 Arg2:T78	
+T79	Reagent 1602 1613	supernatant
+T80	Amount 1619 1627	1 volume
+T81	Concentration 1631 1634	70%
+T82	Reagent 1641 1648	ethanol
+R26	Measure Arg1:T82 Arg2:T81	
+R27	Measure Arg1:T82 Arg2:T80	
+T83	Modifier 1700 1706	gently
+R28	Mod-Link Arg1:E23 Arg2:T83	
+T84	Reagent 1724 1730	pellet
+T85	Reagent 1751 1759	solution
+T86	Action 1768 1776	sticking
+E35	Action:T86 Site:T87 Acts-on:T84
+T87	Location 1784 1793	tube wall
+T88	Time 1804 1814	10 minutes
+T89	Temperature 1818 1834	room temperature
+R29	Setting Arg1:E25 Arg2:T88	
+R30	Setting Arg1:E25 Arg2:T89	
+T90	Time 1845 1855	10 minutes
+T91	Speed 1860 1868	12,000 g
+T92	Temperature 1873 1877	4 °C
+R31	Setting Arg1:E26 Arg2:T90	
+R32	Setting Arg1:E26 Arg2:T91	
+R33	Setting Arg1:E26 Arg2:T92	
+T93	Reagent 1891 1902	supernatant
+T94	Temperature 1926 1942	room temperature
+T95	Reagent 1912 1918	pellet
+T96	Action 1977 1983	remain
+E36	Action:T96 Acts-on:T99
+T97	Concentration 1965 1968	70%
+T98	Reagent 1969 1976	ethanol
+T99	Reagent 1952 1961	no traces
+R34	Measure Arg1:T98 Arg2:T97	
+R35	Meronym Arg1:T99 Arg2:T98	
+R36	Setting Arg1:E30 Arg2:T94	
+T100	Modifier 2091 2101	Completely
+T101	Reagent 2115 2121	pellet
+T102	Reagent 2125 2141	RNase-free water
+R37	Mod-Link Arg1:E29 Arg2:T100	
+T103	Reagent 0 3	RNA
+T104	Method 4 14	extraction
+T105	Modifier 26 35	home-made
+T106	Reagent 37 54	Trizol substitute
+R38	Mod-Link Arg1:T106 Arg2:T105	
+T107	Modifier 86 95	home-made
+T108	Reagent 96 113	Trizol substitute
+R39	Mod-Link Arg1:T108 Arg2:T107	
+T109	Action 55 62	Prepare
+E37	Action:T109 Acts-on:T110
+T110	Reagent 67 77	components
+T111	Modifier 170 190	completely dissolved
+R40	Mod-Link Arg1:T1 Arg2:T111	
+T112	Amount 368 374	1.5 mL
+T113	Location 375 380	tubes
+R41	Measure Arg1:T113 Arg2:T112	
+T114	Action 357 364	working
+E38	Action:T114 Site:T113
+T115	Measure-Type 429 435	volume
+T116	Reagent 443 449	sample
+T117	Amount 453 455	30
+T118	Amount 460 466	200 µl
+R42	Measure Arg1:T116 Arg2:T117	
+R43	Measure Arg1:T116 Arg2:T118	
+T119	Measure-Type 536 545	viscosity
+T120	Reagent 550 557	protein
+T121	Reagent 562 574	nucleic acid
+T122	Measure-Type 575 588	concentration
+T123	Reagent 596 602	sample
+T124	Measure-Type 702 708	volume
+T125	Reagent 716 722	sample
+T126	Modifier 882 883	>
+R44	Mod-Link Arg1:T55 Arg2:T126	
+T127	Measure-Type 919 928	viscosity
+T128	Reagent 933 940	protein
+T129	Reagent 945 957	nucleic acid
+T130	Measure-Type 958 971	concentration
+T131	Reagent 979 985	sample
+T132	Reagent 1096 1102	sample
+T133	Measure-Type 1103 1109	volume
+T134	Amount 1114 1120	100 µl
+T135	Reagent 1126 1139	aqueous phase
+T136	Modifier 1150 1151	~
+T137	Amount 1151 1157	450 µl
+R45	Mod-Link Arg1:T137 Arg2:T136	
+R46	Measure Arg1:T135 Arg2:T137	
+R47	Measure Arg1:T132 Arg2:T134	
+T138	Measure-Type 1207 1213	volume
+T139	Reagent 1221 1234	aqueous phase
+T140	Reagent 1244 1247	RNA
+T141	Reagent 1275 1281	sample
+T142	Reagent 1292 1303	isopropanol
+R48	Meronym Arg1:T140 Arg2:T141	
+T143	Modifier 1309 1310	>
+R49	Mod-Link Arg1:T64 Arg2:T143	
+T144	Modifier 1407 1412	final
+T145	Measure-Type 1413 1426	concentration
+T146	Reagent 1430 1438	glycogen
+T147	Modifier 1442 1443	~
+T148	Concentration 1443 1455	50–150 µg/ml
+R50	Measure Arg1:T146 Arg2:T148	
+R51	Mod-Link Arg1:T148 Arg2:T147	
+T149	Modifier 1570 1571	>
+R52	Mod-Link Arg1:T77 Arg2:T149	
+T150	Measure-Type 1666 1672	volume
+T151	Reagent 1680 1693	aqueous phase
+T152	Modifier 1859 1860	>
+R53	Mod-Link Arg1:T91 Arg2:T152	
+T153	Action 1985 1991	Drying
+E39	Action:T153 Site:T154
+T154	Device 1998 2004	vacuum
+T155	Action 2035 2045	overdrying
+E40	Action:T155 
+T156	Action 2070 2078	dissolve
+E41	Action:T156 Acts-on:T157
+T157	Reagent 2083 2089	pellet

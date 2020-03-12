@@ -1,0 +1,96 @@
+T1	Action 460 468	Incubate
+E1	Action:T1 Acts-on:T2 Using:T3
+T2	Reagent 469 476	samples
+T3	Device 482 494	thermocycler
+T4	Temperature 498 502	50°C
+T5	Time 507 517	15 minutes
+T6	Time 565 575	60 minutes
+T7	Action 640 645	store
+E2	Action:T7 Acts-on:T8
+T8	Reagent 646 653	samples
+T10	Temperature 667 672	–20°C
+T11	Action 704 713	Transform
+E3	Action:T11 Acts-on:T12 Using:T15
+T12	Reagent 714 749	NEB 5-alpha Competent E. coli cells
+T13	Amount 818 822	2 μl
+T14	Modifier 830 839	assembled
+T15	Reagent 840 847	product
+T16	Method 0 36	NEBuilder HiFi DNA Assembly Reaction
+T17	Action 45 51	Set up
+E4	Action:T17 Acts-on:T19
+T18	Modifier 56 65	following
+T19	Reagent 66 74	reaction
+T20	Temperature 75 81	on ice
+R1	Mod-Link Arg1:T19 Arg2:T18	
+R2	Setting Arg1:E4 Arg2:T20	
+T21	Amount 86 90	20μl
+T22	Modifier 91 96	total
+T23	Amount 97 103	volume
+R3	Coreference-Link Arg1:T21 Arg2:T23	
+R4	Mod-Link Arg1:T21 Arg2:T22	
+R5	Setting Arg1:E4 Arg2:T21	
+T24	Modifier 107 118	Recommended
+T25	Amount 119 125	Amount
+T26	Reagent 129 138	Fragments
+T27	Modifier 139 156	Used for Assembly
+R6	Mod-Link Arg1:T26 Arg2:T27	
+R7	Measure Arg1:T26 Arg2:T25	
+R8	Setting Arg1:T24 Arg2:T25	
+T28	Method 156 177	2–3 Fragment Assembly
+T29	Method 178 199	4–6 Fragment Assembly
+T30	Reagent 201 217	Positive Control
+T31	Modifier 218 229	Recommended
+T32	Measure-Type 230 239	DNA Ratio
+T33	Measure-Type 239 252	vector:insert
+T34	Numerical 255 258	1:2
+R9	Of-Type Arg1:T34 Arg2:T32	
+R10	Of-Type Arg1:T34 Arg2:T33	
+T35	Measure-Type 258 271	vector:insert
+T36	Generic-Measure 274 277	1:1
+R11	Of-Type Arg1:T36 Arg2:T35	
+T37	Measure-Type 278 303	Total Amount of Fragments
+T38	Generic-Measure 303 322	0.03–0.2 pmols*X μl
+T39	Generic-Measure 322 341	0.2–0.5 pmols**X μl
+R12	Of-Type Arg1:T38 Arg2:T37	
+R13	Of-Type Arg1:T39 Arg2:T37	
+T40	Amount 341 346	10 μl
+T41	Reagent 346 383	NEBuilderHiFi DNA Assembly Master Mix
+T42	Amount 383 388	10 μl
+T43	Amount 388 393	10 μl
+T44	Amount 393 398	10 μl
+T45	Reagent 398 411	Deionized H2O
+T46	Amount 411 418	10-X μl
+T47	Amount 418 425	10-X μl
+T48	Modifier 426 431	Total
+T49	Measure-Type 432 438	Volume
+T50	Amount 438 443	20 μl
+T51	Amount 445 450	20 μl
+T52	Amount 452 457	20 μl
+R14	Measure Arg1:T41 Arg2:T42	
+R15	Measure Arg1:T41 Arg2:T43	
+R16	Measure Arg1:T41 Arg2:T44	
+R17	Measure Arg1:T45 Arg2:T46	
+R18	Measure Arg1:T45 Arg2:T47	
+R19	Mod-Link Arg1:T52 Arg2:T48	
+R20	Setting Arg1:E1 Arg2:T4	
+R21	Setting Arg1:E1 Arg2:T5	
+T53	Modifier 519 560	when 2 or 3 fragments are being assembled
+T54	Modifier 577 615	when 4–6 fragments are being assembled
+R23	Or Arg1:T5 Arg2:T6	
+R24	Mod-Link Arg1:T6 Arg2:T54	
+R22	Mod-Link Arg1:T5 Arg2:T53	
+T55	Modifier 618 638	Following incubation
+R25	Mod-Link Arg1:E2 Arg2:T55	
+T9	Temperature 654 660	on ice
+T56	Modifier 677 687	subsequent
+T57	Method 688 702	transformation
+R26	Setting Arg1:E2 Arg2:T9	
+R27	Or Arg1:T9 Arg2:T10	
+T58	Modifier 751 759	provided
+T59	Device 767 778	cloning kit
+R28	Mod-Link Arg1:T12 Arg2:T58	
+R29	Meronym Arg1:T12 Arg2:T59	
+R30	Mod-Link Arg1:T15 Arg2:T14	
+R31	Measure Arg1:T15 Arg2:T13	
+T60	Modifier 849 886	following the transformation protocol
+R32	Mod-Link Arg1:E3 Arg2:T60	

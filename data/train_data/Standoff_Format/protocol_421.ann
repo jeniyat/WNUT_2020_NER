@@ -1,0 +1,108 @@
+T1	Action 17 23	Number
+E1	Action:T1 Acts-on:T18
+T2	Action 28 36	annotate
+E2	Action:T2 Acts-on:T18 Site:T19
+T3	Action 122 125	add
+E3	Action:T3 Acts-on:T24 Site:T21 Site2:T26 Using:T27
+T4	Action 234 238	pick
+E4	Action:T4 Acts-on:T33 Using:T30
+T6	Action 311 316	place
+E6	Action:T6 Acts-on:T38 Site:T39
+T8	Action 432 437	place
+E8	Action:T8 Acts-on:T7 Product:T41 Site:T66
+T9	Action 550 556	attach
+E9	Action:T9 Using:T42 Acts-on:T43
+T10	Action 578 583	pipet
+E10	Action:T10 Using:T45 Count:T47
+T11	Action 633 639	Remove
+E11	Action:T11 Acts-on:T46
+T12	Action 661 666	Place
+E12	Action:T12 Acts-on:T51 Site:T50
+T13	Action 692 696	seal
+E13	Action:T13 Acts-on:T52
+T14	Action 703 708	Label
+E14	Action:T14 Acts-on:T53
+T15	Action 715 720	Place
+E15	Action:T15 Site:T54 Acts-on:T53
+T16	Action 273 280	pick up
+E16	Action:T16 Acts-on:T37 Site:T34
+T5	Numerical 50 52	95
+T17	Modifier 53 61	isolated
+T18	Reagent 62 70	colonies
+T19	Location 74 93	SPOT 0m 10ml plates
+R1	Mod-Link Arg1:T18 Arg2:T17	
+R2	Measure Arg1:T18 Arg2:T5	
+T20	Amount 98 101	2ml
+T21	Location 107 121	96 well plates
+T22	Modifier 102 106	deep
+R3	Mod-Link Arg1:T21 Arg2:T22	
+T23	Amount 126 129	1ml
+T24	Reagent 133 145	Zobell broth
+T25	Modifier 149 152	all
+T26	Location 153 158	wells
+T27	Location 165 180	8 channel pipet
+T28	Amount 206 211	200ul
+T29	Modifier 187 205	autoclaved/sterile
+T30	Location 212 222	pipet tips
+T31	Modifier 239 242	all
+T32	Numerical 243 245	95
+T33	Reagent 246 254	colonies
+R4	Measure Arg1:T33 Arg2:T32	
+R5	Mod-Link Arg1:T33 Arg2:T31	
+R6	Setting Arg1:T30 Arg2:T28	
+R7	Mod-Link Arg1:T30 Arg2:T29	
+R8	Measure Arg1:T24 Arg2:T23	
+R9	Measure Arg1:T21 Arg2:T20	
+R10	Mod-Link Arg1:T26 Arg2:T25	
+T34	Location 260 269	pipet tip
+T35	Modifier 284 290	entire
+T36	Modifier 291 299	isolated
+T37	Reagent 300 306	colony
+R11	Mod-Link Arg1:T37 Arg2:T36	
+R12	Mod-Link Arg1:T37 Arg2:T35	
+T38	Location 317 326	pipet tip
+T39	Location 332 336	well
+T7	Location 455 464	pipet tip
+T40	Modifier 442 454	final unused
+R13	Mod-Link Arg1:T7 Arg2:T40	
+T41	Reagent 470 478	Negative
+T42	Location 532 548	12 channel pipet
+T43	Location 562 565	row
+T44	Device 569 573	tips
+T45	Method 584 595	up and down
+T47	Numerical 605 606	3
+T48	Action 616 624	dislodge
+E5	Action:T48 Acts-on:T49
+T49	Reagent 625 631	colony
+R14	Meronym Arg1:T43 Arg2:T44	
+T46	Location 640 644	tips
+T50	Location 682 687	plate
+T51	Seal 667 676	pore film
+T52	Location 697 701	well
+T53	Location 709 714	plate
+T54	Device 724 730	shaker
+T55	Modifier 735 743	at least
+T56	Time 744 752	48 hours
+T57	Action 756 760	grow
+E7	Action:T57 
+R15	Mod-Link Arg1:T56 Arg2:T55	
+R16	Setting Arg1:E15 Arg2:T56	
+T58	Action 0 7	Picking
+E17	Action:T58 Acts-on:T59
+T59	Reagent 8 16	colonies
+T60	Location 229 232	box
+T61	Action 338 342	Pick
+E18	Action:T61 Acts-on:T62 Site:T64
+T62	Reagent 343 351	colonies
+T63	Numerical 352 356	1-95
+T64	Location 360 380	column 1 A through H
+T65	Location 382 402	column 2 1 through H
+R17	Measure Arg1:T62 Arg2:T63	
+T66	Location 417 424	well 96
+T67	Location 426 430	12 H
+R18	Coreference-Link Arg1:T67 Arg2:T66	
+T68	Location 490 498	96 wells
+T69	Location 504 514	pipet tips
+T70	Mention 518 522	them
+R19	Coreference-Link Arg1:T70 Arg2:T68	
+R20	Meronym Arg1:T69 Arg2:T70	

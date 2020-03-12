@@ -1,0 +1,89 @@
+T1	Action 88 95	aliquot
+E1	Action:T1 Acts-on:T12 Site:T14
+T2	Action 218 221	add
+E2	Action:T2 Acts-on:T16 Site:T17
+T4	Action 369 376	lay out
+E4	Action:T4 Acts-on:T3 Site:T48
+T5	Action 444 447	add
+E5	Action:T5 Acts-on:T23 Using:T21 Site:T52
+T6	Action 490 493	Cap
+E6	Action:T6 Acts-on:T25
+T8	Action 543 551	Incubate
+E8	Action:T8 Using:T28
+T9	Action 580 592	Flash-freeze
+E9	Action:T9 Acts-on:T29 Using:T30
+T10	Action 622 627	store
+E10	Action:T10 
+T11	Amount 96 102	900 µl
+T12	Reagent 106 114	seawater
+R1	Measure Arg1:T12 Arg2:T11	
+T13	Size 185 191	1.2 ml
+T14	Location 192 200	cryovial
+R2	Measure Arg1:T14 Arg2:T13	
+T15	Amount 222 228	100 µl
+T16	Reagent 232 238	sample
+R3	Measure Arg1:T16 Arg2:T15	
+T17	Location 244 252	cryovial
+T18	Amount 264 270	900 µl
+T19	Reagent 274 282	seawater
+R4	Measure Arg1:T19 Arg2:T18	
+T3	Seal 386 390	caps
+T20	Location 377 385	cryovial
+R5	Meronym Arg1:T3 Arg2:T20	
+T21	Device 426 440	repeator pipet
+T22	Amount 448 452	5 µl
+T23	Reagent 456 470	glutaraldehyde
+T24	Concentration 472 475	25%
+R6	Measure Arg1:T23 Arg2:T24	
+R7	Measure Arg1:T23 Arg2:T22	
+T25	Location 499 503	tube
+T26	Numerical 532 541	few times
+T27	Time 556 566	10 minutes
+T28	Method 574 578	dark
+R9	Setting Arg1:E8 Arg2:T27	
+T29	Location 593 598	tubes
+T30	Reagent 602 617	liquid nitrogen
+T31	Temperature 631 636	-80°C
+R10	Setting Arg1:E10 Arg2:T31	
+T32	Method 0 27	Sampling for Flow Cytometry
+T33	Method 29 32	FCM
+T34	Method 34 53	Advance preparation
+T35	Modifier 55 86	for each sample to be collected
+R11	Mod-Link Arg1:E1 Arg2:T35	
+T36	Modifier 116 126	artificial
+T37	Reagent 127 141	seawater salts
+T38	Modifier 145 153	complete
+T39	Reagent 154 168	sterile medium
+R12	Mod-Link Arg1:T39 Arg2:T38	
+R13	Mod-Link Arg1:T37 Arg2:T36	
+R14	Meronym Arg1:T37 Arg2:T12	
+R15	Or Arg1:T37 Arg2:T39	
+T40	Modifier 177 184	labeled
+R16	Mod-Link Arg1:T14 Arg2:T40	
+T41	Action 202 209	Collect
+E7	Action:T41 Acts-on:T42
+T42	Reagent 210 216	sample
+R17	Meronym Arg1:T19 Arg2:T17	
+T43	Action 284 288	Keep
+E11	Action:T43 Acts-on:T44
+T44	Seal 289 301	cryovial cap
+T45	Modifier 302 319	clean and sterile
+R18	Mod-Link Arg1:E11 Arg2:T45	
+T46	Action 321 333	Preserve/fix
+E12	Action:T46 Acts-on:T47
+T47	Reagent 334 340	sample
+T48	Location 342 367	In the chemical fume hood
+T49	Seal 392 402	inside cap
+T50	Modifier 403 412	facing up
+R19	Meronym Arg1:T49 Arg2:T3	
+R20	Mod-Link Arg1:T49 Arg2:T50	
+T51	Modifier 480 484	each
+T52	Seal 485 488	cap
+R21	Mod-Link Arg1:T52 Arg2:T51	
+T53	Action 508 511	mix
+E13	Action:T53 Using:T7 Count:T26 Acts-on:T25
+T54	Modifier 512 516	well
+T7	Method 520 529	inverting
+R8	Mod-Link Arg1:E13 Arg2:T54	
+T55	Modifier 637 651	until analysis
+R22	Mod-Link Arg1:E10 Arg2:T55	

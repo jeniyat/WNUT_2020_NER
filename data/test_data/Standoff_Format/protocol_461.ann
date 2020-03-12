@@ -1,0 +1,102 @@
+T1	Action 36 46	Centrifuge
+E1	Action:T1 Acts-on:T16
+T16	Reagent 47 56	anti-sera
+T17	Temperature 59 62	4ºC
+T2	Speed 64 71	14,000g
+T3	Temperature 73 78	10min
+R1	Setting Arg1:E1 Arg2:T17	
+R2	Setting Arg1:E1 Arg2:T2	
+R3	Setting Arg1:E1 Arg2:T3	
+T4	Action 91 97	Filter
+E2	Action:T4 Using:T6
+T5	Size 106 111	0.2um
+T6	Device 112 118	filter
+T7	Action 120 125	Apply
+E3	Action:T7 Acts-on:T8 Site:T11
+T8	Reagent 126 135	protein A
+T9	Reagent 139 148	protein G
+T10	Modifier 155 161	gently
+T11	Location 165 193	Bio-Rad empty gravity column
+T12	Action 195 201	Set up
+E4	Action:T12 Acts-on:T13 Site:T14
+T13	Location 206 212	column
+T14	Device 218 233	vacuum manifold
+T15	Action 235 246	Equilibrate
+E5	Action:T15 Acts-on:T18 Using:T21
+T18	Location 247 253	column
+T19	Amount 259 269	10 volumes
+T20	Modifier 273 281	ice cold
+T21	Reagent 282 296	Binding Buffer
+T22	Action 298 304	Dilute
+E6	Action:T22 Acts-on:T23 Using:T25
+T23	Reagent 305 314	anti-sera
+T24	Amount 320 329	2 volumes
+T25	Reagent 333 347	Binding Buffer
+T26	Action 371 381	go through
+E7	Action:T26 Acts-on:T28 Site:T29
+T27	Modifier 353 360	diluted
+T28	Reagent 361 370	anti-sera
+T29	Location 386 392	column
+T31	Action 405 412	Collect
+E8	Action:T31 Acts-on:T32
+T32	Reagent 413 425	flow through
+T33	Action 430 436	repeat
+E9	Action:T33 Using:T34 Count:T35
+T34	Method 437 443	step 6
+T35	Numerical 444 448	once
+T36	Action 450 454	Wash
+E10	Action:T36 Acts-on:T37 Using:T39
+T37	Location 455 461	column
+T38	Modifier 485 493	ice-cold
+T39	Reagent 494 508	Binding Buffer
+T40	Amount 467 481	10 bed volumes
+T41	Action 510 515	Elute
+E11	Action:T41 Acts-on:T42
+T42	Reagent 516 524	antibody
+T43	Amount 530 543	5 bed volumes
+T44	Temperature 547 563	room temperature
+T45	Reagent 564 579	Elution Buffer.
+T46	Action 580 587	Fill up
+E12	Action:T46 Acts-on:T48 Using:T51
+T47	Modifier 588 592	each
+T48	Location 593 608	collecting tube
+T49	Amount 614 620	200 μl
+T50	Concentration 621 623	1M
+T51	Reagent 624 632	Tris-HCl
+T52	Action 642 649	Collect
+E13	Action:T52 Acts-on:T54 Site:T56
+T53	Amount 650 653	1ml
+T54	Reagent 657 669	flow through
+T55	Modifier 673 677	each
+T56	Location 678 693	collecting tube
+T57	Action 728 742	Re-equilibrate
+E14	Action:T57 Acts-on:T58 Using:T60
+T58	Location 743 749	column
+T59	Amount 755 769	10 bed volumes
+T60	Reagent 773 787	Binding Buffer
+T61	Action 789 794	Store
+E15	Action:T61 Acts-on:T62 Site:T63
+T62	Location 795 801	Column
+T63	Device 805 817	refrigerator
+R4	Measure Arg1:T6 Arg2:T5	
+R5	Or Arg1:T8 Arg2:T9	
+R6	Mod-Link Arg1:E3 Arg2:T10	
+R7	Mod-Link Arg1:T21 Arg2:T20	
+R8	Measure Arg1:T21 Arg2:T19	
+R9	Measure Arg1:T25 Arg2:T24	
+R10	Mod-Link Arg1:T28 Arg2:T27	
+R11	Measure Arg1:T39 Arg2:T40	
+R12	Mod-Link Arg1:T39 Arg2:T38	
+R13	Measure Arg1:T45 Arg2:T43	
+R14	Mod-Link Arg1:T48 Arg2:T47	
+R15	Measure Arg1:T51 Arg2:T50	
+R16	Measure Arg1:T51 Arg2:T49	
+R17	Measure Arg1:T54 Arg2:T53	
+R18	Mod-Link Arg1:T56 Arg2:T55	
+R19	Measure Arg1:T60 Arg2:T59	
+T64	Reagent 0 8	Antibody
+T65	Method 9 21	Purification
+T30	pH 634 639	PH9.0
+T66	Action 695 699	Save
+E16	Action:T66 
+T67	Method 704 726	antibody activity test

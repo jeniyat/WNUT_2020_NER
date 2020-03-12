@@ -1,0 +1,99 @@
+T1	Action 44 48	Take
+E1	Action:T1 Acts-on:T19 Site:T20
+T2	Action 92 97	place
+E2	Action:T2 Acts-on:T19 Acts-on2:T22
+T3	Action 151 154	cut
+E3	Action:T3 Using:T23
+T4	Action 191 196	place
+E4	Action:T4 Using:T6 Site:T24
+T7	Action 305 309	Grow
+E7	Action:T7 Acts-on:T5 Site:T26
+T9	Action 418 422	Move
+E9	Action:T9 Acts-on:T8 Using:T27
+T10	Action 481 487	induce
+E10	Action:T10 Using:T29
+T11	Action 501 508	Harvest
+E11	Action:T11 Acts-on:T30
+T12	Action 522 528	adding
+E12	Action:T12 Acts-on:T32 Site:T33
+T13	Action 573 581	scraping
+E13	Action:T13 Acts-on:T34 Using:T35
+T14	Action 619 627	Aspirate
+E14	Action:T14 Acts-on:T36
+T15	Action 643 648	store
+E15	Action:T15 Acts-on:T36 Site:T39
+T17	Action 707 718	Pipette off
+E17	Action:T17 Acts-on:T16
+T18	Action 770 775	check
+E18	Action:T18 Using:T40 Measure-Type-Link:T41
+T19	Reagent 49 67	agar cubes / rains
+T20	Reagent 73 87	glycerol stock
+T21	Modifier 98 108	3-4 pieces
+T22	Location 112 123	agar plates
+T23	Method 155 166	small cubes
+T6	Method 197 212	3-4 upside down
+T24	Location 220 230	agar plate
+T5	Device 310 316	plates
+T25	Time 327 333	7 days
+T26	Location 341 345	dark
+T8	Device 423 429	plates
+T27	Method 436 458	16/8 light/dark cycles
+T28	Time 469 477	2-3 days
+T29	Method 488 499	sporulation
+R1	Setting Arg1:E9 Arg2:T28	
+T30	Reagent 509 518	sporangia
+T31	Amount 529 539	several ml
+T32	Reagent 540 554	ice cold water
+T33	Location 562 568	plates
+R2	Measure Arg1:T32 Arg2:T31	
+T34	Reagent 589 598	sporangia
+T35	Device 606 617	pipette tip
+T36	Reagent 632 638	liquid
+T37	Modifier 628 631	all
+T38	Time 663 672	3-6 hours
+T39	Location 652 658	fridge
+R3	Mod-Link Arg1:E2 Arg2:T21	
+R4	Setting Arg1:E7 Arg2:T25	
+T16	Reagent 723 735	upper layers
+T40	Device 796 805	microsope
+R5	Mod-Link Arg1:T36 Arg2:T37	
+R6	Setting Arg1:E15 Arg2:T38	
+T41	Measure-Type 776 789	spore density
+T42	Method 0 16	Spore production
+T43	Reagent 21 43	Phytophthora infestans
+T44	Location 144 149	plate
+T45	Action 130 135	using
+E5	Action:T45 Acts-on:T44
+T46	Modifier 136 143	another
+R7	Mod-Link Arg1:T44 Arg2:T46	
+T47	Modifier 168 174	approx
+T48	Size 175 185	0.5x0.5 cm
+R8	Mod-Link Arg1:T48 Arg2:T47	
+T49	Modifier 235 246	longer term
+T50	Method 247 258	cultivation
+T51	Action 259 262	use
+E6	Action:T51 Acts-on:T52
+T52	Reagent 263 272	RyeA agar
+T53	Method 278 289	sporulation
+T54	Action 290 293	use
+E8	Action:T54 Acts-on:T55
+T55	Reagent 294 303	RyeB agar
+T56	Modifier 347 379	until the plate is fully covered
+R9	Mod-Link Arg1:E7 Arg2:T56	
+T57	Modifier 380 387	Optimum
+T58	Temperature 388 399	temperature
+T59	Modifier 403 408	about
+T60	Temperature 409 416	18-20°C
+R10	Mod-Link Arg1:T60 Arg2:T59	
+R11	Mod-Link Arg1:T58 Arg2:T57	
+R12	Coreference-Link Arg1:T60 Arg2:T58	
+T61	Modifier 463 468	about
+R13	Mod-Link Arg1:T28 Arg2:T61	
+T62	Action 676 682	induce
+E16	Action:T62 
+T63	Method 683 705	hatching of the spores
+T64	Reagent 737 743	spores
+T65	Action 744 751	swim up
+E19	Action:T65 Acts-on:T64
+T66	Action 760 764	sink
+E20	Action:T66 

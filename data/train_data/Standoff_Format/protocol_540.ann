@@ -1,0 +1,78 @@
+T1	Action 56 62	Obtain
+E1	Action:T1 Acts-on:T11
+T2	Action 154 160	soaked
+E2	Action:T2 Acts-on:T12 Using:T14 Using2:T33
+T3	Action 212 219	rotated
+E3	Action:T3 Acts-on:T12
+T4	Action 334 340	rinsed
+E4	Action:T4 Using:T16 Count:T17 Acts-on:T46
+T5	Action 426 432	filled
+E5	Action:T5 Using:T19
+T6	Action 459 463	soak
+E6	Action:T6 
+T7	Action 531 537	rinsed
+E7	Action:T7 Acts-on:T23 Using:T26
+T8	Action 572 585	double-bagged
+E8	Action:T8 Acts-on:T23
+T9	Action 590 596	stored
+E9	Action:T9 Acts-on:T23
+T10	Size 63 68	60 mL
+T11	Location 69 114	narrow-mouth low density polyethylene bottles
+R1	Measure Arg1:T11 Arg2:T10	
+T12	Location 142 149	Bottles
+T13	Time 165 172	10 days
+R2	Setting Arg1:E2 Arg2:T13	
+T14	Reagent 198 206	Citranox
+T15	Time 220 246	after approximately 5 days
+R3	Setting Arg1:E3 Arg2:T15	
+T16	Reagent 357 370	Milli-Q water
+T17	Numerical 380 387	5 times
+T18	Concentration 438 441	10%
+T19	Reagent 442 445	HCl
+R4	Measure Arg1:T19 Arg2:T18	
+T20	Time 468 475	10 days
+R5	Setting Arg1:E6 Arg2:T20	
+T21	Action 488 495	rotated
+E10	Action:T21 
+T22	Time 502 508	5 days
+R6	Setting Arg1:E10 Arg2:T22	
+T23	Location 516 522	bottle
+T24	Measure-Type 554 556	pH
+T25	Numerical 557 558	2
+R7	Of-Type Arg1:T25 Arg2:T24	
+T26	Reagent 559 566	Milli-Q
+R8	Measure Arg1:T26 Arg2:T25	
+T27	Method 0 25	Bottle cleaning procedure
+T28	Modifier 30 39	dissolved
+T29	Reagent 40 46	cobalt
+T30	Method 47 55	analyses
+R9	Mod-Link Arg1:T29 Arg2:T28	
+T31	Reagent 116 120	LDPE
+R10	Meronym Arg1:T31 Arg2:T11	
+T32	Modifier 180 186	acidic
+T33	Reagent 187 196	detergent
+R11	Mod-Link Arg1:T33 Arg2:T32	
+T34	Modifier 260 263	all
+T35	Location 264 269	sides
+T36	Location 277 284	bottles
+T37	Modifier 295 311	coated with soap
+R12	Meronym Arg1:T35 Arg2:T36	
+R13	Mod-Link Arg1:T35 Arg2:T34	
+R14	Mod-Link Arg1:T35 Arg2:T37	
+T38	Action 250 259	make sure
+E11	Action:T38 Acts-on:T35
+T39	Modifier 389 414	or until all soap is gone
+R15	Or Arg1:T17 Arg2:T39	
+T40	Modifier 447 450	new
+T41	Reagent 451 454	HCl
+R16	Mod-Link Arg1:T41 Arg2:T40	
+R17	Meronym Arg1:T41 Arg2:T19	
+T42	Modifier 511 515	Each
+R18	Mod-Link Arg1:T23 Arg2:T42	
+T43	Modifier 538 548	thoroughly
+R19	Mod-Link Arg1:E7 Arg2:T43	
+T44	Modifier 597 602	empty
+R20	Mod-Link Arg1:E9 Arg2:T44	
+T45	Modifier 372 379	usually
+R21	Mod-Link Arg1:T17 Arg2:T45	
+T46	Location 317 324	bottles

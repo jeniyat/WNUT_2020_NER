@@ -1,0 +1,91 @@
+T1	Action 17 23	Pellet
+E1	Action:T1 Acts-on:T20 Site:T22
+T2	Action 85 91	Decant
+E2	Action:T2 Acts-on:T25
+T3	Action 100 103	Add
+E3	Action:T3 Acts-on:T27
+T4	Action 139 145	vortex
+E4	Action:T4 
+T5	Action 148 151	Add
+E5	Action:T5 Acts-on:T29
+T6	Action 180 186	invert
+E6	Action:T6 
+T7	Action 199 202	Add
+E7	Action:T7 Acts-on:T32
+T8	Action 240 246	invert
+E8	Action:T8 Acts-on:T33 Count:T34
+T9	Action 268 272	Bind
+E9	Action:T9 Acts-on:T35 Site:T36
+T10	Action 298 307	decanting
+E10	Action:T10 
+T11	Action 310 320	Centrifuge
+E11	Action:T11 
+T12	Action 350 354	Wash
+E12	Action:T12 Acts-on:T39 Using:T41
+T13	Action 398 408	centrifuge
+E13	Action:T13 Acts-on:T39
+T14	Action 423 430	Discard
+E14	Action:T14 Acts-on:T43
+T15	Action 449 459	centrifuge
+E15	Action:T15 
+T16	Action 475 480	Elute
+E16	Action:T16 Acts-on:T46 Using:T48
+T17	Action 531 539	incubate
+E17	Action:T17 
+T18	Action 562 572	centrifuge
+E18	Action:T18 
+T19	Action 588 595	Collect
+E19	Action:T19 Acts-on:T51 Site:T53
+T20	Reagent 24 31	culture
+T21	Amount 37 42	1.8mL
+T22	Location 43 58	centrifuge tube
+T23	Speed 62 70	8,000rpm
+T24	Time 75 83	1 minute
+R1	Measure Arg1:T22 Arg2:T21	
+R2	Setting Arg1:E1 Arg2:T23	
+R3	Setting Arg1:E1 Arg2:T24	
+T25	Reagent 92 97	Media
+T26	Amount 104 109	250uL
+T27	Reagent 113 134	Resuspension Solution
+R4	Measure Arg1:T27 Arg2:T26	
+T28	Amount 152 157	250uL
+T29	Reagent 161 175	lysis solution
+T30	Numerical 187 190	4-6
+R5	Setting Arg1:E6 Arg2:T30	
+R6	Measure Arg1:T29 Arg2:T28	
+T31	Amount 203 208	350uL
+T32	Reagent 212 235	Neutralization Solution
+T33	Location 251 255	tube
+T34	Numerical 256 259	4-6
+R7	Measure Arg1:T32 Arg2:T31	
+T35	Reagent 277 280	DNA
+T36	Location 288 294	column
+T37	Speed 324 334	13,300 rpm
+T38	Time 339 347	1 minute
+R8	Setting Arg1:E11 Arg2:T37	
+R9	Setting Arg1:E11 Arg2:T38	
+T39	Location 359 365	column
+T40	Amount 371 376	500uL
+T41	Reagent 380 393	wash solution
+T42	Time 413 421	1 minute
+R10	Measure Arg1:T41 Arg2:T40	
+R11	Setting Arg1:E13 Arg2:T42	
+T43	Reagent 435 444	flow-thru
+T44	Time 464 473	1 minute.
+R12	Setting Arg1:E15 Arg2:T44	
+T45	Modifier 485 493	purified
+T46	Reagent 494 497	DNA
+R13	Mod-Link Arg1:T46 Arg2:T45	
+T47	Amount 503 507	50uL
+T48	Reagent 511 525	Elution Buffer
+R14	Measure Arg1:T48 Arg2:T47	
+T49	Time 544 555	two minutes
+T50	Time 577 586	2 minutes
+R15	Setting Arg1:E18 Arg2:T50	
+R16	Setting Arg1:E17 Arg2:T49	
+T51	Reagent 600 609	flow-thru
+T52	Modifier 615 618	new
+T53	Location 619 634	centrifuge tube
+R17	Mod-Link Arg1:T53 Arg2:T52	
+T54	Method 8 16	Miniprep
+T55	Reagent 0 7	Plasmid

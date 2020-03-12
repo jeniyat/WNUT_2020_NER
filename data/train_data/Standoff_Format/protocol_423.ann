@@ -1,0 +1,233 @@
+T1	Action 35 38	Put
+E1	Action:T1 Acts-on:T28 Site:T29
+T2	Action 85 88	add
+E2	Action:T2 Acts-on:T30
+T3	Action 146 154	Incubate
+E3	Action:T3 
+T4	Action 185 188	Add
+E4	Action:T4 Product:T33
+T5	Action 255 263	Incubate
+E5	Action:T5 Site:T40
+T6	Action 344 352	Transfer
+E6	Action:T6 Acts-on:T46 Site:T48
+T7	Action 383 386	Add
+E7	Action:T7 Acts-on:T49
+T8	Action 436 441	shake
+E8	Action:T8 Commands:E30
+T9	Action 451 459	Incubate
+E9	Action:T9 Acts-on:T57
+T10	Action 546 550	pour
+E10	Action:T10 Acts-on:T64
+T11	Action 584 587	Set
+E11	Action:T11 Acts-on:T66 Using:T67 Site:T68
+T12	Action 664 669	Rinse
+E12	Action:T12 Acts-on:T72 Count:T74 Using:T75
+T13	Action 743 750	Collect
+E13	Action:T13 Site:T78
+T14	Action 801 806	Shake
+E14	Action:T14 Acts-on:T79
+T15	Action 848 851	Add
+E15	Action:T15 Acts-on:T85 Site:T88
+T16	Action 884 887	Mix
+E16	Action:T16 Using:T89
+T17	Action 903 909	Attach
+E17	Action:T17 Acts-on:T90 Site:T92
+T18	Action 937 941	push
+E18	Action:T18 Acts-on:T93
+T19	Action 975 979	Push
+E19	Action:T19 Acts-on:T99 Site:T100
+T20	Action 1041 1046	Place
+E20	Action:T20 Acts-on:T96 Site:T104
+T21	Action 1078 1088	Centrifuge
+E21	Action:T21 
+T22	Action 1140 1141	a
+E22	Action:T22 Acts-on:T110 Site:T113
+T23	Action 1188 1191	Add
+E23	Action:T23 Acts-on:T116
+T24	Action 1226 1232	vortex
+E24	Action:T24 
+T25	Action 1233 1243	Centrifuge
+E25	Action:T25 
+T28	Reagent 39 51	phage lysate
+T29	Location 55 80	plastic centrifuge bottle
+T30	Reagent 89 94	RNase
+T31	Time 155 161	30 min
+T32	Temperature 166 182	room temperature
+T33	Reagent 189 193	NaCl
+T34	Concentration 222 224	1M
+T35	Amount 230 236	100 ml
+T36	Action 237 240	add
+E28	Action:T36 Acts-on:T38
+T37	Amount 241 246	6.5 g
+T38	Reagent 247 251	NaCl
+R1	Measure Arg1:T38 Arg2:T37	
+R2	Setting Arg1:E28 Arg2:T35	
+T39	Time 268 274	1 hour
+R3	Measure Arg1:T33 Arg2:T34	
+T40	Location 278 281	ice
+T41	Action 282 292	Centrifuge
+E29	Action:T41 Using:T45
+T42	Time 297 303	10 min
+T43	Speed 308 316	11,000xg
+T44	Speed 318 327	8,300 rpm
+T45	Device 331 340	GSA rotor
+R4	Setting Arg1:T45 Arg2:T44	
+R5	Setting Arg1:T45 Arg2:T43	
+R6	Setting Arg1:T45 Arg2:T42	
+R7	Setting Arg1:E5 Arg2:T39	
+T46	Reagent 353 364	supernatant
+T47	Modifier 370 373	new
+T48	Location 374 380	bottle
+R8	Mod-Link Arg1:T48 Arg2:T47	
+T49	Reagent 387 395	PEG 8000
+T50	Concentration 399 405	100g/l
+T51	Amount 411 417	100 ml
+T52	Amount 422 426	10 g
+T53	Reagent 427 430	PEG
+T54	Action 445 448	mix
+E30	Action:T54 
+R9	Measure Arg1:T53 Arg2:T52	
+T55	Action 418 421	add
+E31	Action:T55 Acts-on:T53
+R10	Setting Arg1:E31 Arg2:T51	
+R11	Measure Arg1:T49 Arg2:T50	
+T56	Time 460 466	1 hour
+T57	Location 470 473	ice
+T58	Action 474 484	Centrifuge
+E32	Action:T58 Using:T62
+T59	Time 489 495	10 min
+T60	Speed 500 508	10,000xg
+T61	Speed 510 519	7,835 rpm
+T62	Device 523 532	GSA rotor
+R12	Setting Arg1:T62 Arg2:T61	
+T63	Modifier 536 545	Carefully
+T64	Reagent 559 570	supernatant
+T65	Action 574 581	discard
+E33	Action:T65 
+T66	Location 592 598	bottle
+T67	Method 599 610	upside down
+T68	Location 614 635	paper towels/Kimwipes
+T69	Action 639 644	drain
+E34	Action:T69 Acts-on:T71
+T70	Modifier 645 654	remaining
+T71	Reagent 655 661	liquid
+T72	Location 674 680	inside
+T73	Location 688 694	bottle
+T74	Numerical 695 700	twice
+T75	Reagent 706 715	SM buffer
+T76	Amount 733 739	1-2 ml
+R13	Meronym Arg1:T72 Arg2:T73	
+T77	Amount 754 758	2 ml
+R14	Measure Arg1:T75 Arg2:T76	
+T78	Location 759 780	microcentrifuge tubes
+R15	Measure Arg1:T78 Arg2:T77	
+T79	Reagent 807 812	resin
+T80	Action 816 825	resuspend
+E35	Action:T80 
+T81	Action 830 834	heat
+E36	Action:T81 Acts-on:T82
+T82	Reagent 835 837	TE
+T83	Temperature 841 845	80°C
+T84	Amount 852 856	1 ml
+T85	Reagent 857 862	resin
+T86	Modifier 866 870	each
+T87	Amount 871 875	2 ml
+T88	Location 876 880	tube
+T89	Method 891 900	inversion
+T90	Location 910 916	column
+T91	Amount 920 924	3 ml
+T92	Device 925 932	syringe
+T93	Reagent 942 948	sample
+T94	Modifier 949 956	through
+T95	Amount 957 961	1 ml
+T97	Amount 980 984	2 ml
+T98	Concentration 988 991	80%
+T99	Reagent 992 1003	isopropanol
+T100	Location 1017 1023	column
+T101	Amount 1024 1028	1 ml
+R16	Measure Arg1:T99 Arg2:T98	
+T96	Location 1047 1053	column
+T102	Modifier 1057 1065	original
+T103	Amount 1066 1070	2 ml
+T104	Location 1071 1075	tube
+T105	Time 1089 1094	2 min
+T106	Speed 1098 1106	10,000xg
+T107	Action 1110 1116	remove
+E37	Action:T107 Acts-on:T109
+T108	Modifier 1117 1123	excess
+T109	Reagent 1124 1135	isopropanol
+T110	Location 1144 1150	column
+T111	Modifier 1154 1157	new
+T112	Amount 1158 1164	1.5 ml
+T113	Location 1165 1185	microcentrifuge tube
+T114	Amount 1192 1198	100 µl
+T115	Modifier 1199 1203	warm
+T116	Reagent 1204 1206	TE
+T117	Action 1210 1215	elute
+E38	Action:T117 
+T118	Modifier 1218 1225	Briefly
+T119	Time 1248 1255	30 sec.
+T120	Speed 1259 1267	10,000xg
+T26	Method 1327 1354	Quant IT DNA quantification
+T121	Action 1358 1366	validate
+E26	Action:T121 Using:T26
+R17	Setting Arg1:E9 Arg2:T56	
+R18	Setting Arg1:T62 Arg2:T60	
+R19	Setting Arg1:T62 Arg2:T59	
+R20	Mod-Link Arg1:E10 Arg2:T63	
+R21	Mod-Link Arg1:T71 Arg2:T70	
+R22	Setting Arg1:E36 Arg2:T83	
+R23	Measure Arg1:T85 Arg2:T84	
+R24	Measure Arg1:T88 Arg2:T87	
+R25	Mod-Link Arg1:T88 Arg2:T86	
+R26	Setting Arg1:T92 Arg2:T91	
+R27	Mod-Link Arg1:E18 Arg2:T94	
+R28	Setting Arg1:E18 Arg2:T95	
+R29	Measure Arg1:T99 Arg2:T97	
+T27	Modifier 1004 1011	through
+R30	Mod-Link Arg1:E19 Arg2:T27	
+T122	Modifier 1012 1016	each
+R31	Mod-Link Arg1:T100 Arg2:T122	
+R32	Setting Arg1:E19 Arg2:T101	
+R33	Measure Arg1:T104 Arg2:T103	
+R34	Mod-Link Arg1:T104 Arg2:T102	
+R35	Setting Arg1:E21 Arg2:T105	
+R36	Setting Arg1:E21 Arg2:T106	
+R37	Mod-Link Arg1:T109 Arg2:T108	
+R38	Measure Arg1:T113 Arg2:T112	
+R39	Mod-Link Arg1:T113 Arg2:T111	
+R40	Mod-Link Arg1:T116 Arg2:T115	
+R41	Measure Arg1:T116 Arg2:T114	
+R42	Mod-Link Arg1:E24 Arg2:T118	
+R43	Setting Arg1:E25 Arg2:T119	
+R44	Setting Arg1:E25 Arg2:T120	
+T123	Method 0 9	Isolation
+T124	Reagent 13 16	DNA
+T125	Reagent 22 34	phage lysate
+T126	Amount 100 106	100 ml
+T127	Measure-Type 205 218	concentration
+T128	Modifier 199 204	final
+T129	Action 107 110	add
+E27	Action:T129 
+T130	Amount 111 116	10 µl
+T131	Amount 122 128	150 ml
+T132	Action 129 132	add
+E39	Action:T132 
+T133	Amount 133 138	15 µl
+R45	Setting Arg1:E3 Arg2:T31	
+R46	Setting Arg1:E3 Arg2:T32	
+R47	Setting Arg1:E27 Arg2:T130	
+R48	Setting Arg1:E39 Arg2:T133	
+T134	Measure-Type 723 729	volume
+T135	Amount 782 786	1 ml
+T136	Location 791 797	bottle
+T137	Action 1271 1276	Check
+E40	Action:T137 Measure-Type-Link:T138 Using:T141
+T138	Measure-Type 1277 1290	concentration
+T139	Modifier 1294 1302	isolated
+T140	Reagent 1303 1306	DNA
+T141	Device 1313 1321	NanoDrop
+T142	Action 1323 1326	Use
+E41	Action:T142 Using:T26
+T143	Device 1367 1375	NanoDrop
+R49	Mod-Link Arg1:T140 Arg2:T139	

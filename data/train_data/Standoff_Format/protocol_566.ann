@@ -1,0 +1,74 @@
+T1	Action 292 301	Autoclave
+E1	Action:T1 Acts-on:T18 Acts-on2:T19
+T2	Action 342 349	Combine
+E2	Action:T2 Acts-on:T20 Acts-on2:T21
+T3	Action 379 382	Add
+E3	Action:T3 Acts-on:T22
+T4	Action 408 411	Add
+E4	Action:T4 Acts-on:T23
+T5	Reagent 36 42	Na2SO4
+T6	Reagent 43 47	NaCl
+T7	Reagent 48 51	KCL
+T8	Reagent 52 58	NaHCO3
+T9	Reagent 59 62	KBr
+T10	Reagent 63 67	H3BO
+T12	Concentration 74 87	2.7 g/L stock
+R1	Measure Arg1:T5 Arg2:T12	
+R2	Measure Arg1:T6 Arg2:T12	
+R3	Measure Arg1:T7 Arg2:T12	
+R4	Measure Arg1:T8 Arg2:T12	
+R5	Measure Arg1:T9 Arg2:T12	
+R6	Measure Arg1:T10 Arg2:T12	
+T13	Amount 100 106	500 mL
+T14	Reagent 107 119	MilliQ water
+R8	Measure Arg1:T14 Arg2:T13	
+T15	Amount 270 276	500 mL
+T16	Reagent 277 289	MilliQ water
+R9	Measure Arg1:T16 Arg2:T15	
+T18	Reagent 302 312	Solution I
+T19	Reagent 317 328	Solution II
+T20	Reagent 350 360	Solution I
+T21	Reagent 365 377	Solution II.
+T22	Reagent 383 406	trace Metals Solutions.
+T23	Reagent 412 428	Vitamin Solution
+T24	Reagent 68 72	NaF 
+R11	Measure Arg1:T24 Arg2:T12	
+T25	Action 91 96	Bring
+E5	Action:T25 
+T26	Action 261 266	Bring
+E6	Action:T26 
+T27	Reagent 0 10	ESAW Media
+T28	Reagent 15 35	Marine Phytoplankton
+T29	Modifier 329 339	separately
+R12	Mod-Link Arg1:E1 Arg2:T29	
+T11	Reagent 120 130	MgCl2-6H2O
+T17	Reagent 131 141	CaCl2-2H2O
+T30	Reagent 142 152	SrCl2-6H2O
+T31	Reagent 153 161	Tris-HCL
+T32	pH 163 169	pH 7.8
+R7	Measure Arg1:T31 Arg2:T32	
+T33	Reagent 178 183	stock
+T34	Concentration 172 177	1.0 M
+T35	Reagent 185 192	Fe-EDTA
+R10	Measure Arg1:T33 Arg2:T34	
+R13	Meronym Arg1:T33 Arg2:T31	
+T36	Reagent 193 199	K2HPO4
+T37	Reagent 208 213	stock
+T38	Concentration 202 207	10g/L
+R14	Measure Arg1:T37 Arg2:T38	
+T39	Reagent 215 220	NaNO3
+T40	Concentration 222 228	550 mM
+T41	Reagent 229 234	stock
+T42	Reagent 236 244	Selenite
+T43	Concentration 246 251	10 μM
+T44	Reagent 252 257	stock
+R15	Measure Arg1:T41 Arg2:T40	
+R16	Measure Arg1:T44 Arg2:T43	
+R17	Meronym Arg1:T37 Arg2:T36	
+R18	Meronym Arg1:T33 Arg2:T30	
+R19	Meronym Arg1:T33 Arg2:T17	
+R20	Meronym Arg1:T33 Arg2:T11	
+R21	Meronym Arg1:T33 Arg2:T14	
+R22	Meronym Arg1:T37 Arg2:T35	
+R23	Meronym Arg1:T41 Arg2:T39	
+R24	Meronym Arg1:T44 Arg2:T42	

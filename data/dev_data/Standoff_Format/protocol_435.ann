@@ -1,0 +1,173 @@
+T1	Action 1523 1532	Calculate
+E1	Action:T1 Measure-Type-Link:T56
+T3	Action 244 252	transfer
+E3	Action:T3 Acts-on:T18 Using:T20 Site:T19
+T4	Amount 253 258	10 ml
+T5	Amount 278 284	500 ml
+T6	Amount 361 367	500 ml
+T7	Action 546 555	Determine
+E4	Action:T7 Measure-Type-Link:T21
+T10	Action 636 645	Calculate
+E7	Action:T10 Acts-on:T23 Site:T24
+T11	Amount 688 694	500 ml
+T12	Amount 930 936	500 ml
+T13	Action 881 887	dilute
+E8	Action:T13 Acts-on:T25 Site:T27
+T14	Action 983 987	Take
+E9	Action:T14 Acts-on:T8
+T15	Action 344 353	Inoculate
+E10	Action:T15 Acts-on:T78
+T16	Modifier 354 360	enough
+T8	Reagent 990 996	sample
+T9	Modifier 997 1008	immediately
+R1	Mod-Link Arg1:E9 Arg2:T9	
+T18	Reagent 267 274	culture
+T19	Location 303 317	Fernbach flask
+R2	Measure Arg1:T18 Arg2:T4	
+T20	Reagent 292 297	media
+R3	Measure Arg1:T20 Arg2:T5	
+T21	Measure-Type 560 573	concentration
+T22	Generic-Measure 650 662	total number
+T23	Reagent 666 671	cells
+R4	Measure Arg1:T23 Arg2:T22	
+T24	Location 695 703	cultures
+R5	Measure Arg1:T24 Arg2:T11	
+T25	Reagent 892 901	infection
+T26	Concentration 902 905	1:1
+T27	Location 909 918	MLB media
+R6	Setting Arg1:E8 Arg2:T26	
+T28	Reagent 943 948	media
+T29	Modifier 937 942	fresh
+R7	Mod-Link Arg1:T28 Arg2:T29	
+R8	Measure Arg1:T28 Arg2:T12	
+T30	Location 957 962	flask
+T31	Action 967 972	swirl
+E5	Action:T31 Acts-on:T30 Commands:E27
+T32	Modifier 952 956	each
+R9	Mod-Link Arg1:T30 Arg2:T32	
+T33	Action 926 929	add
+E6	Action:T33 Acts-on:T28 Site:T30
+T34	Modifier 868 879	Immediately
+R10	Mod-Link Arg1:E8 Arg2:T34	
+T35	Action 1142 1147	count
+E11	Action:T35 Acts-on:T36 Site:T37
+T36	Reagent 1152 1159	plaques
+T37	Location 1167 1173	plates
+T38	Modifier 1163 1166	all
+R11	Mod-Link Arg1:T37 Arg2:T38	
+T39	Action 1226 1231	count
+E12	Action:T39 Acts-on:T41
+T40	Modifier 1236 1239	new
+T41	Reagent 1240 1247	plaques
+R12	Mod-Link Arg1:T41 Arg2:T40	
+T42	Time 1212 1224	The next day
+T43	Time 1128 1140	The next day
+R13	Setting Arg1:E11 Arg2:T43	
+R14	Setting Arg1:E12 Arg2:T42	
+T44	Action 760 763	Add
+E13	Action:T44 Acts-on:T51 Site:T45 Measure-Type-Link:T89 Acts-on2:T90 Site2:T91
+T45	Location 778 796	experimental flask
+T46	Action 1503 1508	Graph
+E14	Action:T46 
+T48	Action 1335 1343	Continue
+E15	Action:T48 Commands:E32
+T50	Time 1369 1376	8 hours
+T51	Reagent 764 770	phages
+T52	Action 517 522	Graph
+E16	Action:T52 
+T54	Action 1379 1388	Calculate
+E17	Action:T54 Measure-Type-Link:T55
+T55	Measure-Type 1389 1395	PFU/ml
+T56	Measure-Type 1533 1543	burst size
+T47	Modifier 1428 1439	centrifuged
+T57	Reagent 1441 1451	free phage
+T58	Modifier 1462 1477	not centrifuged
+T59	Reagent 1479 1490	total phage
+T60	Reagent 1492 1499	samples
+R16	Mod-Link Arg1:T60 Arg2:T47	
+R17	Mod-Link Arg1:T60 Arg2:T58	
+R18	Meronym Arg1:T57 Arg2:T60	
+R19	Meronym Arg1:T59 Arg2:T60	
+T61	Method 0 15	Transcriptomics
+T62	Reagent 50 69	Cellulophaga Phages
+T63	Measure-Type 105 111	PFU/ml
+T64	Reagent 119 125	lysate
+T65	Action 142 151	Inoculate
+E18	Action:T65 Acts-on:T67
+T66	Modifier 154 157	new
+T67	Reagent 158 165	culture
+T68	Action 173 177	pick
+E19	Action:T68 Acts-on:T69 Site:T71
+T69	Reagent 180 186	colony
+T70	Amount 194 200	125 ml
+T71	Location 201 206	flask
+T72	Reagent 218 227	MLB media
+T73	Action 91 100	determine
+E20	Action:T73 Measure-Type-Link:T63
+R20	Mod-Link Arg1:T67 Arg2:T66	
+R21	Measure Arg1:T71 Arg2:T70	
+R22	Meronym Arg1:T72 Arg2:T71	
+T74	Modifier 319 324	short
+T75	Modifier 329 332	fat
+T76	Amount 333 340	2800 ml
+T77	Modifier 288 291	new
+R23	Mod-Link Arg1:T20 Arg2:T77	
+R24	Mod-Link Arg1:T19 Arg2:T74	
+R25	Mod-Link Arg1:T19 Arg2:T75	
+R26	Measure Arg1:T19 Arg2:T76	
+T78	Reagent 368 376	cultures
+R27	Mod-Link Arg1:T78 Arg2:T16	
+R28	Measure Arg1:T78 Arg2:T6	
+T53	Action 421 429	transfer
+E21	Action:T53 
+T79	Action 431 435	take
+E22	Action:T79 
+T80	Time 439 445	time 0
+R29	Setting Arg1:E22 Arg2:T80	
+T81	Action 473 479	taking
+E23	Action:T81 
+T82	Modifier 501 513	periodically
+R30	Mod-Link Arg1:E23 Arg2:T82	
+T83	Reagent 582 589	culture
+T84	Method 624 633	infection
+T85	Action 706 715	Calculate
+E24	Action:T85 
+T86	Reagent 725 731	phages
+T87	Action 743 746	add
+E25	Action:T87 Acts-on:T86
+T88	Measure-Type 751 756	MOI 3
+T89	Measure-Type 810 816	volume
+T90	Reagent 820 823	MSM
+T91	Location 831 844	control flask
+T92	Action 849 854	start
+E26	Action:T92 Acts-on:T93
+T93	Device 860 865	timer
+T94	Action 976 979	mix
+E27	Action:T94 
+T95	Method 1015 1023	dilution
+T96	Modifier 1034 1045	centrifuged
+T97	Action 1046 1058	plaque assay
+E28	Action:T97 
+R31	Mod-Link Arg1:E28 Arg2:T96	
+T17	Action 75 87	plaque assay
+E29	Action:T17 Commands:E20
+T2	Modifier 1072 1087	non-centrifuged
+T98	Action 1088 1100	plaque assay
+E2	Action:T98 
+R32	Mod-Link Arg1:E2 Arg2:T2	
+T99	Reagent 1114 1125	RNA samples
+T100	Time 234 242	next day
+R33	Setting Arg1:E3 Arg2:T100	
+T102	Mention 1272 1277	these
+T101	Action 1268 1271	add
+E30	Action:T101 Acts-on:T102
+R34	Coreference-Link Arg1:T102 Arg2:T41	
+T103	Mention 1206 1211	them 
+R35	Coreference-Link Arg1:T103 Arg2:T36	
+T104	Action 1304 1309	Count
+E31	Action:T104 
+T105	Time 1323 1332	third day
+R36	Setting Arg1:E31 Arg2:T105	
+T49	Action 1344 1352	sampling
+E32	Action:T49 
+R15	Setting Arg1:E32 Arg2:T50	

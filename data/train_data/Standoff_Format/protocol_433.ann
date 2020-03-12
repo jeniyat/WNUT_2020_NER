@@ -1,0 +1,139 @@
+T1	Action 51 58	Prepare
+E1	Action:T1 Acts-on:T3 Site:T4
+T2	Generic-Measure 59 63	0.5%
+T3	Reagent 64 94	Neu5Gc Assay Blocking Solution
+T4	Reagent 98 101	PBS
+R1	Measure Arg1:T3 Arg2:T2	
+T5	Action 940 944	Wash
+E2	Action:T5 Acts-on:T68
+T6	Action 1017 1023	remove
+E3	Action:T6 Acts-on:T8
+T7	Action 1040 1047	discard
+E4	Action:T7 Acts-on:T8
+T8	Reagent 1024 1035	supernatant
+T9	Modifier 1007 1016	Carefully
+T10	Modifier 1049 1055	Gently
+T11	Action 1056 1065	resuspend
+E5	Action:T11 Acts-on:T12 Site:T16
+T12	Reagent 1066 1071	cells
+T13	Amount 1075 1081	100 μl
+T14	Modifier 1089 1100	appropriate
+T15	Modifier 1101 1108	diluted
+T16	Reagent 1109 1117	antibody
+T17	Action 1137 1145	Incubate
+E6	Action:T17 Acts-on:T36 Site:T37
+T18	Action 1181 1185	Wash
+E7	Action:T18 Acts-on:T40
+T19	Action 1210 1219	resuspend
+E8	Action:T19 Acts-on:T21 Site:T32
+T20	Modifier 1203 1209	Gently
+T21	Reagent 1220 1225	cells
+T22	Amount 1229 1235	100 μl
+T23	Amount 1353 1359	400 μl
+T24	Action 1328 1337	Resuspend
+E9	Action:T24 Acts-on:T30 Site:T31
+T25	Action 1306 1310	Wash
+E10	Action:T25 Acts-on:T26
+T26	Reagent 1311 1316	cells
+T27	Action 1380 1383	Run
+E11	Action:T27 Acts-on:T28 Site:T29
+T28	Reagent 1384 1389	cells
+T29	Device 1402 1416	flow cytometer
+T30	Reagent 1338 1349	cell pellet
+T31	Location 1363 1377	diluent buffer
+T32	Reagent 1236 1272	Secondary Antibody in diluent buffer
+T33	Action 1278 1286	incubate
+E12	Action:T33 Acts-on:T21 Site:T35
+T34	Time 1291 1297	1 hour
+T35	Location 1301 1304	ice
+R2	Mod-Link Arg1:E8 Arg2:T20	
+R3	Mod-Link Arg1:E3 Arg2:T9	
+R4	Mod-Link Arg1:E5 Arg2:T10	
+R5	Measure Arg1:T16 Arg2:T13	
+R6	Mod-Link Arg1:T16 Arg2:T14	
+R7	Mod-Link Arg1:T16 Arg2:T15	
+T36	Reagent 1146 1151	cells
+T37	Location 1155 1158	ice
+T38	Time 1172 1178	1 hour
+T39	Modifier 1163 1171	at least
+R8	Mod-Link Arg1:T38 Arg2:T39	
+R9	Setting Arg1:E6 Arg2:T38	
+T40	Reagent 1186 1191	cells
+R10	Measure Arg1:T32 Arg2:T22	
+R11	Setting Arg1:E12 Arg2:T34	
+R12	Measure Arg1:T31 Arg2:T23	
+T41	Method 0 33	Anti-Neu5Gc Antibody Kit Protocol
+T42	Method 36 50	Flow Cytometry
+T43	Reagent 103 117	diluent buffer
+R13	Coreference-Link Arg1:T43 Arg2:T4	
+T44	Location 134 139	tubes
+T45	Method 161 184	flow cytometry analysis
+T46	Numerical 189 194	Three
+T47	Numerical 196 197	3
+R14	Coreference-Link Arg1:T47 Arg2:T46	
+T48	Location 199 204	tubes
+R15	Measure Arg1:T48 Arg2:T47	
+T49	Reagent 216 221	cells
+R16	Meronym Arg1:T49 Arg2:T48	
+T50	Reagent 267 276	dilutions
+T51	Action 253 256	use
+E13	Action:T51 Acts-on:T50
+T52	Reagent 280 296	primary antibody
+T53	Location 323 328	tubes
+T54	Action 241 249	choosing
+E14	Action:T54 Commands:E13
+T55	Numerical 346 351	Three
+T56	Numerical 399 404	Three
+T57	Numerical 353 354	3
+T58	Numerical 406 407	3
+R17	Coreference-Link Arg1:T57 Arg2:T55	
+R18	Coreference-Link Arg1:T58 Arg2:T56	
+T59	Location 356 361	tubes
+T60	Location 409 414	tubes
+T61	Reagent 373 395	positive control cells
+R19	Meronym Arg1:T61 Arg2:T59	
+T62	Reagent 426 448	negative control cells
+R20	Meronym Arg1:T62 Arg2:T60	
+T63	Location 463 468	tubes
+T64	Action 475 483	analyzed
+E15	Action:T64 Acts-on:T63
+T65	Reagent 502 510	antibody
+T66	Method 511 520	treatment
+T67	Action 954 960	adding
+E16	Action:T67 Acts-on:T71
+T68	Reagent 945 950	cells
+T69	Amount 961 965	1 ml
+T70	Modifier 966 970	cold
+T71	Reagent 971 974	PBS
+T72	Modifier 981 987	gently
+T73	Action 988 998	centrifuge
+E17	Action:T73 
+T74	Temperature 1002 1005	4°C
+T75	Location 900 905	tubes
+T76	Reagent 917 923	sample
+T77	Location 535 541	Tube 1
+T78	Reagent 555 560	cells
+T79	Reagent 582 590	antibody
+T80	Modifier 606 615	unstained
+T81	Reagent 616 623	control
+T82	Location 661 667	Tube 2
+T83	Reagent 681 686	cells
+T84	Reagent 700 716	Control Antibody
+T85	Location 720 726	Tube 3
+T86	Reagent 740 745	cells
+T87	Reagent 759 775	Primary Antibody
+T88	Action 836 844	optimize
+E18	Action:T88 Commands:E19
+T89	Action 848 853	using
+E19	Action:T89 Acts-on:T90
+T90	Reagent 864 873	dilutions
+T91	Reagent 877 893	primary antibody
+R21	Meronym Arg1:T78 Arg2:T77	
+R22	Mod-Link Arg1:T81 Arg2:T80	
+R23	Meronym Arg1:T83 Arg2:T82	
+R24	Meronym Arg1:T86 Arg2:T85	
+R25	Meronym Arg1:T76 Arg2:T75	
+R26	Measure Arg1:T71 Arg2:T69	
+R27	Mod-Link Arg1:T71 Arg2:T70	
+R28	Mod-Link Arg1:E17 Arg2:T72	
+R29	Setting Arg1:E17 Arg2:T74	

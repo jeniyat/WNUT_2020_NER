@@ -1,0 +1,43 @@
+T1	Action 50 53	Mix
+E1	Action:T1 Acts-on:T7
+T2	Action 94 97	Add
+E2	Action:T2 Acts-on:T9
+T3	Action 172 180	Incubate
+E3	Action:T3 
+T4	Action 226 234	Incubate
+E4	Action:T4 Site:T15
+T5	Action 257 266	Transform
+E5	Action:T5 Product:T18
+T6	Numerical 64 65	3
+T7	Reagent 66 76	components
+R1	Measure Arg1:T7 Arg2:T6	
+T8	Modifier 58 63	first
+R2	Mod-Link Arg1:T7 Arg2:T8	
+T9	Reagent 98 116	Cloning Master Mix
+T10	Concentration 118 120	2X
+T11	Amount 123 127	5 μl
+R3	Measure Arg1:T9 Arg2:T10	
+R4	Measure Arg1:T9 Arg2:T11	
+T12	Temperature 184 200	room temperature
+T13	Temperature 202 206	25°C
+T14	Time 212 224	5–15 minutes
+R5	Or Arg1:T12 Arg2:T13	
+R6	Setting Arg1:E3 Arg2:T12	
+R7	Setting Arg1:E3 Arg2:T14	
+T15	Location 238 241	ice
+T16	Time 246 255	2 minutes
+R8	Setting Arg1:E4 Arg2:T16	
+T17	Modifier 267 278	immediately
+T18	Reagent 284 313	NEB 10-beta Competent E. coli
+T19	Action 317 322	store
+E6	Action:T19 
+T20	Temperature 326 331	-20°C
+R9	Mod-Link Arg1:E5 Arg2:T17	
+R10	Setting Arg1:E6 Arg2:T20	
+T21	Method 0 8	Ligation
+T22	Device 22 41	NEB PCR Cloning Kit
+T23	Reagent 84 92	reaction
+R11	Meronym Arg1:T7 Arg2:T23	
+T24	Amount 143 149	10 μl 
+T25	Method 153 161	ligation
+R12	Or Arg1:E5 Arg2:E6	

@@ -1,0 +1,174 @@
+T1	Action 51 58	Prepare
+E1	Action:T1 Product:T29
+T2	Action 78 86	Transfer
+E2	Action:T2 Acts-on:T30 Acts-on2:T31 Site:T32
+T3	Action 126 136	Centrifuge
+E3	Action:T3 
+T4	Action 163 166	Add
+E4	Action:T4 Acts-on:T36
+T5	Action 211 221	Centrifuge
+E5	Action:T5 
+T6	Action 248 255	Discard
+E6	Action:T6 Acts-on:T39
+T7	Action 271 274	Add
+E7	Action:T7 Acts-on:T41 Acts-on2:T43
+T8	Action 344 350	Vortex
+E8	Action:T8 
+T9	Action 367 375	incubate
+E9	Action:T9 Using:T46
+T10	Action 415 425	Centrifuge
+E10	Action:T10 
+T11	Action 452 455	Add
+E11	Action:T11 Acts-on:T50
+T12	Action 494 504	Centrifuge
+E12	Action:T12 
+T13	Action 555 562	Discard
+E13	Action:T13 Acts-on:T53
+T14	Action 578 581	Add
+E14	Action:T14 Acts-on:T56
+T15	Action 649 659	Centrifuge
+E15	Action:T15 
+T16	Action 686 694	Transfer
+E16	Action:T16 Acts-on:T59 Site:T60
+T17	Action 726 729	Add
+E17	Action:T17 Acts-on:T62
+T18	Action 755 761	Vortex
+E18	Action:T18 
+T19	Action 771 779	Incubate
+E19	Action:T19 Using:T97
+T20	Action 820 823	Add
+E20	Action:T20 Acts-on:T68
+T21	Action 865 875	Centrifuge
+E21	Action:T21 
+T22	Action 902 908	Repeat
+E22	Action:T22 Count:T98
+T23	Action 925 928	Add
+E23	Action:T23 Acts-on:T73
+T24	Action 991 1001	Centrifuge
+E24	Action:T24 
+T26	Action 1065 1068	Add
+E26	Action:T26 Acts-on:T76
+T27	Action 1095 1102	Aliquot
+E27	Action:T27 
+T28	Action 1117 1123	freeze
+E28	Action:T28 
+T29	Reagent 59 76	Urea/SDS Solution
+T30	Reagent 87 100	Urea solution
+T31	Reagent 103 109	sample
+T32	Device 113 124	spin filter
+T33	Speed 140 150	14,000 x g
+T34	Time 155 161	15 min
+R1	Setting Arg1:E3 Arg2:T33	
+R2	Setting Arg1:E3 Arg2:T34	
+T35	Amount 167 172	200µL
+T36	Reagent 179 192	Urea solution
+R3	Measure Arg1:T36 Arg2:T35	
+T37	Speed 225 235	14,000 x g
+T38	Time 240 246	15 min
+R4	Setting Arg1:E5 Arg2:T37	
+R5	Setting Arg1:E5 Arg2:T38	
+T39	Reagent 256 269	flow­‐through
+T40	Amount 275 279	10µL
+T41	Reagent 280 302	iodoacetamide solution
+R6	Measure Arg1:T41 Arg2:T40	
+T42	Amount 307 311	90µL
+T43	Reagent 312 325	Urea solution
+R7	Measure Arg1:T43 Arg2:T42	
+T44	Time 355 360	1 min
+R8	Setting Arg1:E8 Arg2:T44	
+T45	Time 395 401	20 min
+T46	Method 409 413	dark
+R9	Setting Arg1:E9 Arg2:T45	
+T47	Speed 429 439	14,000 x g
+T48	Time 444 450	10 min
+R10	Setting Arg1:E10 Arg2:T47	
+R11	Setting Arg1:E10 Arg2:T48	
+T49	Amount 456 461	100µL
+T50	Reagent 462 475	Urea solution
+R12	Measure Arg1:T50 Arg2:T49	
+T51	Speed 508 518	14,000 x g
+T52	Time 523 529	15 min
+R13	Setting Arg1:E12 Arg2:T51	
+R14	Setting Arg1:E12 Arg2:T52	
+T53	Reagent 563 576	flow­‐through
+T54	Amount 582 587	100µL
+T55	Concentration 588 592	50mM
+T56	Reagent 593 622	ammonium bicarbonate solution
+R15	Measure Arg1:T56 Arg2:T55	
+R16	Measure Arg1:T56 Arg2:T54	
+T57	Speed 663 673	14,000 x g
+T58	Time 678 684	15 min
+R17	Setting Arg1:E15 Arg2:T57	
+R18	Setting Arg1:E15 Arg2:T58	
+T59	Device 695 701	filter
+T60	Location 709 724	collection tube
+T61	Amount 730 734	75µL
+T62	Reagent 735 753	digestion solution
+R19	Measure Arg1:T62 Arg2:T61	
+T63	Modifier 762 769	briefly
+R20	Mod-Link Arg1:E18 Arg2:T63	
+T64	Temperature 783 787	37°C
+T65	Time 792 804	4 – 18 hours
+R21	Setting Arg1:E19 Arg2:T64	
+R22	Setting Arg1:E19 Arg2:T65	
+T66	Amount 824 828	40µL
+T67	Concentration 829 833	50mM
+T68	Reagent 834 863	ammonium bicarbonate solution
+R23	Measure Arg1:T68 Arg2:T67	
+R24	Measure Arg1:T68 Arg2:T66	
+T69	Speed 879 889	14,000 x g
+T70	Time 894 900	10 min
+R25	Setting Arg1:E21 Arg2:T69	
+R26	Setting Arg1:E21 Arg2:T70	
+T71	Amount 929 933	50µL
+T72	Concentration 934 939	0.5 M
+T73	Reagent 940 964	sodium chloride solution
+R27	Measure Arg1:T73 Arg2:T72	
+R28	Measure Arg1:T73 Arg2:T71	
+T74	Speed 1005 1015	14,000 x g
+T75	Time 1020 1026	10 min
+R29	Setting Arg1:E24 Arg2:T74	
+R30	Setting Arg1:E24 Arg2:T75	
+T25	Amount 1069 1074	170µL
+T76	Reagent 1076 1079	H₂O
+T77	Reagent 1082 1093	formic acid
+R31	Measure Arg1:T76 Arg2:T25	
+R32	Measure Arg1:T77 Arg2:T25	
+T78	Method 0 22	FASP Kit Protocol-ORNL
+T79	Reagent 37 50	Bacteriophage
+T80	Modifier 194 196	no
+T81	Modifier 202 204	no
+T82	Reagent 205 208	SDS
+T83	Reagent 197 200	DTT
+R33	Mod-Link Arg1:T83 Arg2:T80	
+R34	Mod-Link Arg1:T82 Arg2:T81	
+T84	Modifier 173 178	fresh
+R35	Mod-Link Arg1:T36 Arg2:T84	
+T85	Modifier 327 329	no
+T86	Reagent 330 333	DTT
+T87	Reagent 338 341	SDS
+T88	Modifier 335 337	no
+R36	Mod-Link Arg1:T87 Arg2:T88	
+R37	Mod-Link Arg1:T86 Arg2:T85	
+T89	Modifier 376 390	without mixing
+R38	Mod-Link Arg1:E9 Arg2:T89	
+T90	Modifier 477 479	no
+T91	Reagent 480 483	DTT
+T92	Modifier 485 487	no
+T93	Reagent 488 491	SDS
+R39	Mod-Link Arg1:T93 Arg2:T92	
+R40	Mod-Link Arg1:T91 Arg2:T90	
+T94	Action 531 537	Repeat
+E25	Action:T94 Count:T95
+T95	Numerical 548 553	twice
+T96	Device 638 646	FASP kit
+T97	Method 806 816	NO ROCKING
+T98	Numerical 919 923	once
+T99	Device 980 988	FASP kit
+T100	Reagent 1028 1036	Filtrate
+T101	Modifier 1046 1054	digested
+T102	Reagent 1055 1063	proteins
+R41	Mod-Link Arg1:T102 Arg2:T101	
+R42	Meronym Arg1:T102 Arg2:T100	
+T103	Amount 1104 1113	150µL x 2
+R43	Setting Arg1:E27 Arg2:T103	

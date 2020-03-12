@@ -1,0 +1,459 @@
+T4	Action 215 224	Autoclave
+E4	Action:T4 Using:T53
+T5	Action 289 293	cool
+E5	Action:T5 Using:T55
+T6	Action 323 326	add
+E6	Action:T6 Product:T56 Acts-on:T59 Acts-on2:T63 Acts-on3:T62
+T7	Action 425 429	Pour
+E7	Action:T7 Site:T67
+T8	Action 476 479	set
+E8	Action:T8 
+T3	Action 543 547	make
+E3	Action:T3 Product:T9 Using:T71 Site:T69
+T10	Action 623 632	Autoclave
+E10	Action:T10 
+T11	Action 667 675	Dissolve
+E11	Action:T11 Acts-on:T76 Site:T78
+T12	Action 732 735	Add
+E12	Action:T12 Acts-on:T80 Site:T82
+T13	Action 715 731	filter sterilize
+E13	Action:T13 
+T14	Action 780 783	mix
+E14	Action:T14 
+T15	Action 785 789	Pour
+E15	Action:T15 Acts-on:T84
+T18	Action 986 993	Amplify
+E18	Action:T18 Using:T226 Using2:T228
+T19	Action 1188 1193	clean
+E19	Action:T19 Acts-on:T17 Using:T234
+T20	Action 1244 1251	Culture
+E20	Action:T20 Acts-on:T92
+T21	Action 1385 1390	Shake
+E21	Action:T21 Acts-on:T97
+T22	Action 1489 1494	Shake
+E22	Action:T22 Acts-on:T102
+T23	Action 1593 1600	Harvest
+E23	Action:T23 Acts-on:T106 Site:T109
+T24	Action 1680 1686	Remove
+E24	Action:T24 Acts-on:T112
+T25	Action 1759 1765	Remove
+E25	Action:T25 Acts-on:T119
+T26	Action 1814 1821	Aliquot
+E26	Action:T26 Acts-on:T124 Site:T125
+T27	Action 1871 1875	spin
+E27	Action:T27 Site:T128
+T28	Action 1930 1936	remove
+E28	Action:T28 Acts-on:T129
+T30	Action 2007 2014	Suspend
+E30	Action:T30 Acts-on:T130 Site:T131
+T31	Action 2057 2067	heat shock
+E31	Action:T31 
+T32	Action 2108 2112	spin
+E32	Action:T32 Acts-on:T29
+T33	Action 2156 2162	remove
+E33	Action:T33 Acts-on:T134
+T34	Action 2184 2191	suspend
+E34	Action:T34 Acts-on:T135 Site:T137
+T35	Action 2220 2228	Transfer
+E35	Action:T35 Site:T138
+T36	Action 2256 2260	spin
+E36	Action:T36 Site:T139 Acts-on:T138
+T37	Action 2341 2347	Spread
+E37	Action:T37 Acts-on:T144 Site:T147
+T38	Action 2521 2526	store
+E38	Action:T38 Acts-on:T148
+T39	Action 2598 2604	Streak
+E39	Action:T39 Acts-on:T150 Site:T153
+T40	Action 2645 2652	Analyze
+E40	Action:T40 Using:T154
+T41	Action 2824 2831	confirm
+E41	Action:T41 Acts-on:T187 Measure-Type-Link:T186 Commands:E58
+T43	Action 3274 3280	repeat
+E43	Action:T43 
+T44	Action 3304 3311	replace
+E44	Action:T44 Acts-on:T42 Using:T269
+T45	Action 3425 3431	remove
+E45	Action:T45 Acts-on:T157
+T46	Action 3452 3459	suspend
+E46	Action:T46 Acts-on:T159
+T47	Action 3477 3483	Spread
+E47	Action:T47 Site:T185
+T48	Action 3521 3529	Incubate
+E48	Action:T48 
+T49	Action 3583 3591	incubate
+E49	Action:T49 Acts-on:T163
+T50	Action 3627 3636	replicate
+E50	Action:T50 Acts-on:T168 Site:T169
+T51	Action 3664 3676	Re‐replicate
+E51	Action:T51 Acts-on:T171
+T52	Action 836 839	set
+E52	Action:T52 
+T16	Action 1782 1789	suspend
+E16	Action:T16 Acts-on:T120 Site:T122
+T1	Modifier 229 241	no more than
+T2	Time 242 252	20 minutes
+T53	Device 258 270	liquid cycle
+R1	Mod-Link Arg1:T2 Arg2:T1	
+R2	Setting Arg1:E4 Arg2:T2	
+T54	Temperature 297 300	50°
+T55	Device 306 316	water bath
+R3	Setting Arg1:T55 Arg2:T54	
+T56	Reagent 331 340	following
+T57	Action 345 348	mix
+E1	Action:T57 Acts-on:T56
+T58	Amount 351 354	5 g
+T59	Reagent 355 364	thymidine
+T60	Amount 366 372	200 mg
+T61	Amount 387 393	100 mL
+T62	Reagent 404 412	glycerol
+T63	Reagent 373 385	methotrexate
+T64	Modifier 414 424	sterilized
+R4	Mod-Link Arg1:T62 Arg2:T64	
+T65	Generic-Measure 394 403	50% (v/v)
+R5	Measure Arg1:T62 Arg2:T65	
+R6	Measure Arg1:T62 Arg2:T61	
+R7	Measure Arg1:T63 Arg2:T60	
+R8	Measure Arg1:T59 Arg2:T58	
+T66	Amount 430 436	~20 mL
+T67	Location 442 462	plastic petri dishes
+R9	Setting Arg1:E7 Arg2:T66	
+T68	Amount 521 524	2‐L
+T69	Location 525 541	Erlenmeyer flask
+T70	Amount 548 551	1 L
+T9	Reagent 555 578	Synthetic Complete agar
+T71	Method 590 621	favorite provider's formulation
+R10	Measure Arg1:T9 Arg2:T70	
+R11	Measure Arg1:T69 Arg2:T68	
+T72	Action 638 642	cool
+E2	Action:T72 Using:T74
+T73	Temperature 646 649	50°
+T74	Device 655 665	water bath
+R12	Setting Arg1:T74 Arg2:T73	
+T75	Amount 676 681	55 mg
+T76	Reagent 685 689	FUdR
+T77	Amount 695 701	1.1 mL
+T78	Reagent 705 710	ddH2O
+T79	Amount 736 740	1 mL
+T80	Reagent 744 757	FUdR solution
+T81	Modifier 761 767	cooled
+T82	Reagent 768 775	SC agar
+R13	Mod-Link Arg1:T82 Arg2:T81	
+R14	Measure Arg1:T80 Arg2:T79	
+R15	Measure Arg1:T78 Arg2:T77	
+R16	Measure Arg1:T76 Arg2:T75	
+T83	Amount 790 796	~20 mL
+T84	Location 802 822	plastic petri dishes
+R17	Measure Arg1:T84 Arg2:T83	
+T17	Reagent 1199 1210	PCR product
+T85	Amount 1289 1294	50 mL
+T86	Reagent 1298 1307	YPD media
+T87	Modifier 1320 1329	overnight
+T88	Reagent 1330 1337	culture
+T89	Reagent 1341 1352	your strain
+T90	Generic-Measure 1375 1383	0.2‐0.25
+T91	Measure-Type 1366 1371	OD600
+R18	Or Arg1:T90 Arg2:T91	
+T92	Reagent 1252 1273	your strain of choice
+T93	Action 1277 1288	inoculating
+E9	Action:T93 Acts-on:T86 Using:T88 Using2:E17
+T94	Modifier 1313 1319	enough
+T95	Action 1356 1361	bring
+E17	Action:T95 Acts-on:T88
+R19	Mod-Link Arg1:T88 Arg2:T87	
+R20	Mod-Link Arg1:T88 Arg2:T94	
+R21	Measure Arg1:T86 Arg2:T85	
+R22	Meronym Arg1:T88 Arg2:T89	
+R23	Setting Arg1:E17 Arg2:T90	
+T96	Temperature 1398 1417	optimal temperature
+T97	Reagent 1422 1433	your strain
+T98	Reagent 1437 1444	species
+R24	Setting Arg1:E21 Arg2:T96	
+R25	Or Arg1:T97 Arg2:T98	
+T99	Measure-Type 1465 1470	OD600
+T100	Generic-Measure 1479 1487	0.85‐1.0
+R26	Or Arg1:T100 Arg2:T99	
+R27	Setting Arg1:E21 Arg2:T100	
+T101	Temperature 1502 1521	optimal temperature
+T102	Reagent 1526 1537	your strain
+T103	Reagent 1541 1548	species
+T104	Measure-Type 1569 1574	OD600
+T105	Generic-Measure 1583 1591	0.85‐1.0
+R28	Or Arg1:T105 Arg2:T104	
+R29	Setting Arg1:E22 Arg2:T101	
+R30	Or Arg1:T102 Arg2:T103	
+R31	Setting Arg1:E22 Arg2:T105	
+T106	Reagent 1605 1610	cells
+T107	Action 1614 1628	centrifugation
+E53	Action:T107 Acts-on:T109
+T108	Amount 1634 1639	50‐mL
+T109	Location 1640 1652	conical vial
+T110	Speed 1656 1664	3000 RPM
+T111	Time 1669 1678	5 minutes
+R32	Measure Arg1:T109 Arg2:T108	
+R33	Setting Arg1:E53 Arg2:T110	
+R34	Setting Arg1:E53 Arg2:T111	
+T112	Reagent 1687 1698	supernatant
+T113	Action 1700 1704	wash
+E54	Action:T113 Acts-on:T115
+T114	Amount 1710 1715	25 mL
+T115	Reagent 1716 1721	water
+T116	Action 1727 1731	spin
+E55	Action:T116 
+T117	Speed 1735 1743	3000 RPM
+T118	Time 1748 1757	5 minutes
+R35	Setting Arg1:E55 Arg2:T117	
+R36	Setting Arg1:E55 Arg2:T118	
+R37	Measure Arg1:T115 Arg2:T114	
+T119	Reagent 1766 1777	supernatant
+T120	Reagent 1790 1795	cells
+T121	Amount 1799 1803	1 mL
+T122	Reagent 1807 1812	water
+R38	Measure Arg1:T122 Arg2:T121	
+T123	Amount 1822 1828	100 μL
+T124	Reagent 1829 1844	cell suspension
+T125	Location 1848 1869	microcentrifuge tubes
+T126	Time 1880 1890	30 seconds
+T127	Speed 1894 1903	max speed
+T128	Device 1909 1924	microcentrifuge
+T129	Reagent 1937 1948	supernatant
+R39	Setting Arg1:T128 Arg2:T127	
+R40	Setting Arg1:T128 Arg2:T126	
+R41	Measure Arg1:T124 Arg2:T123	
+T130	Reagent 2015 2026	cell pellet
+T131	Reagent 2030 2052	transformation mixture
+T29	Reagent 2117 2126	reactions
+T132	Time 2131 2141	30 seconds
+T133	Speed 2145 2154	max speed
+T134	Reagent 2167 2178	supernatant
+T135	Reagent 2196 2201	cells
+T136	Amount 2205 2211	600 μL
+T137	Reagent 2215 2218	YPD
+R42	Measure Arg1:T137 Arg2:T136	
+R43	Setting Arg1:E32 Arg2:T132	
+R44	Setting Arg1:E32 Arg2:T133	
+T138	Location 2232 2251	glass culture tubes
+T139	Device 2266 2279	culture wheel
+T140	Time 2284 2291	3 hours
+T141	Temperature 2299 2339	strain's or species' optimal temperature
+R45	Setting Arg1:T139 Arg2:T140	
+R46	Setting Arg1:T139 Arg2:T141	
+T142	Amount 2348 2354	200 μL
+T143	Modifier 2358 2367	recovered
+T144	Reagent 2368 2373	cells
+T145	Modifier 2377 2381	each
+T146	Numerical 2385 2390	three
+T147	Location 2391 2407	YPGly +AF plates
+R47	Setting Arg1:T145 Arg2:T146	
+R48	Mod-Link Arg1:T147 Arg2:T145	
+R49	Mod-Link Arg1:T144 Arg2:T143	
+R50	Measure Arg1:T144 Arg2:T142	
+T148	Reagent 2527 2531	agar
+T149	Temperature 2542 2561	optimal temperature
+R51	Setting Arg1:E38 Arg2:T149	
+T150	Reagent 2605 2613	colonies
+T151	Modifier 2614 2617	out
+T152	Modifier 2621 2626	fresh
+T153	Location 2627 2643	YPGly +AF plates
+R52	Mod-Link Arg1:T153 Arg2:T152	
+R53	Mod-Link Arg1:E39 Arg2:T151	
+T154	Method 2656 2687	amplifying target locus via PCR
+T155	Method 2695 2735	sequencing across the insertion junction
+R54	Or Arg1:T154 Arg2:T155	
+T156	Modifier 2809 2823	phenotypically
+T157	Reagent 3436 3447	supernatant
+T158	Amount 3463 3469	600 μL
+T159	Reagent 3470 3475	water
+T160	Amount 3484 3490	200 μL
+T161	Temperature 3533 3552	optimal temperature
+T162	Time 3557 3565	24 hours
+T163	Location 3592 3598	plates
+T164	Temperature 3602 3604	4°
+T165	Time 3609 3617	one hour
+T166	Time 3573 3581	24 hours
+T167	Modifier 3619 3626	Lightly
+T168	Location 3637 3643	plates
+T169	Location 3647 3662	SC +FUdR plates
+T170	Modifier 3680 3685	fresh
+T171	Location 3686 3697	FUdR plates
+T172	Action 3097 3108	inoculating
+E29	Action:T172 Acts-on:T173 Site:T176
+T173	Reagent 3113 3119	strain
+T174	Amount 3123 3128	50 mL
+T175	Concentration 3132 3134	2X
+T176	Reagent 3135 3155	YPA100 +4% galactose
+T177	Measure-Type 3178 3183	OD600
+T178	Numerical 3187 3195	0.2‐0.25
+T179	Action 3200 3207	culture
+E56	Action:T179 
+T180	Temperature 3215 3234	optimal temperature
+T181	Measure-Type 3244 3249	OD600
+T182	Numerical 3253 3261	0.85‐1.0
+T183	Action 3265 3272	reached
+E57	Action:T183 
+T184	Numerical 3504 3509	three
+T185	Location 3510 3519	SC plates
+T186	Measure-Type 2836 2847	sensitivity
+T187	Mention 2832 2835	its
+T188	Action 2859 2867	spotting
+E58	Action:T188 Acts-on:T189 Site:T191 Count:T192
+T189	Reagent 2875 2880	cells
+T190	Numerical 2868 2874	~1,000
+T191	Location 2886 2901	SC +FUdR plates
+T192	Numerical 2902 2916	multiple times
+R55	Mod-Link Arg1:E41 Arg2:T156	
+T193	Device 2851 2855	FUdR
+R56	Measure Arg1:T189 Arg2:T190	
+R57	Measure Arg1:T176 Arg2:T175	
+R58	Measure Arg1:T176 Arg2:T174	
+R59	Of-Type Arg1:T178 Arg2:T177	
+R60	Setting Arg1:E29 Arg2:T178	
+R61	Setting Arg1:E56 Arg2:T180	
+R62	Of-Type Arg1:T182 Arg2:T181	
+R63	Setting Arg1:E57 Arg2:T182	
+T42	Reagent 3316 3341	HERP cassette PCR product
+R64	Measure Arg1:T159 Arg2:T158	
+R65	Setting Arg1:E47 Arg2:T160	
+R66	Measure Arg1:T185 Arg2:T184	
+R67	Setting Arg1:E48 Arg2:T161	
+R68	Setting Arg1:E48 Arg2:T162	
+R69	Setting Arg1:E49 Arg2:T166	
+R70	Setting Arg1:E49 Arg2:T164	
+R71	Setting Arg1:E49 Arg2:T165	
+R72	Mod-Link Arg1:E50 Arg2:T167	
+R73	Mod-Link Arg1:T171 Arg2:T170	
+T194	Time 3711 3721	once a day
+R74	Setting Arg1:E51 Arg2:T194	
+T195	Action 3765 3771	appear
+E42	Action:T195 Product:T196
+T196	Reagent 3751 3759	Colonies
+T197	Time 3775 3783	2‐5 days
+R75	Setting Arg1:E42 Arg2:T197	
+T198	Method 0 50	HERP: Haploid Engineering and Replacement Protocol
+T199	Reagent 55 68	Saccharomyces
+T200	Action 69 72	Add
+E59	Action:T200 Acts-on:T202 Site:T204
+T201	Modifier 77 86	following
+T202	Reagent 87 97	components
+T203	Amount 103 106	2‐L
+T204	Location 107 123	Erlenmeyer flask
+T205	Action 125 128	Mix
+E60	Action:T205 
+T206	Action 132 140	dissolve
+E61	Action:T206 
+T207	Modifier 141 160	as much as possible
+T208	Reagent 162 166	agar
+T209	Reagent 171 184	sulfanilamide
+T210	Modifier 185 190	won't
+T211	Action 191 199	dissolve
+E62	Action:T211 Acts-on:T209 Acts-on2:T208
+T212	Modifier 200 212	until heated
+R76	Mod-Link Arg1:T209 Arg2:T212	
+R77	Mod-Link Arg1:T208 Arg2:T212	
+R78	Mod-Link Arg1:E62 Arg2:T210	
+R79	Mod-Link Arg1:E61 Arg2:T207	
+R80	Mod-Link Arg1:T202 Arg2:T201	
+R81	Measure Arg1:T204 Arg2:T203	
+T213	Modifier 277 287	autoclaved
+T214	Action 494 498	made
+E63	Action:T214 Product:T215
+T215	Reagent 499 514	YPGly +AF media
+T216	Action 854 858	made
+E64	Action:T216 Product:T217
+T217	Reagent 859 872	SC +FUdR agar
+T218	Action 874 880	Design
+E65	Action:T218 Acts-on:T219
+T219	Reagent 881 888	primers
+T220	Action 909 915	target
+E66	Action:T220 Acts-on:T221 Site:T223
+T221	Reagent 920 928	cassette
+T222	Modifier 937 944	desired
+T223	Location 945 950	locus
+R82	Mod-Link Arg1:T223 Arg2:T222	
+T224	Reagent 998 1011	HERP cassette
+T225	Modifier 1033 1042	targeting
+T226	Reagent 1043 1050	primers
+T227	Modifier 1057 1070	high‐fidelity
+T228	Reagent 1071 1081	polymerase
+T229	Device 1090 1125	New England Biolab's Phusion system
+R83	Mod-Link Arg1:T228 Arg2:T227	
+R84	Mod-Link Arg1:T226 Arg2:T225	
+T230	Method 1135 1143	reaction
+T231	Reagent 1157 1161	DMSO
+T232	Modifier 1171 1176	harsh
+T233	Reagent 1177 1186	chemicals
+T234	Device 1218 1224	column
+T235	Modifier 1225 1242	before proceeding
+R85	Mod-Link Arg1:E19 Arg2:T235	
+R86	Mod-Link Arg1:T233 Arg2:T232	
+T236	Action 1950 1953	Add
+E67	Action:T236 Acts-on:T237
+T237	Reagent 1968 1976	reagents
+T238	Modifier 1980 1984	each
+T239	Reagent 1985 1996	cell pellet
+T240	Modifier 1997 2005	IN ORDER
+R87	Mod-Link Arg1:E67 Arg2:T240	
+R88	Mod-Link Arg1:T239 Arg2:T238	
+T241	Method 2074 2087	heat‐shocking
+T242	Modifier 2097 2106	completed
+T243	Modifier 2409 2413	Only
+T244	Numerical 2414 2417	one
+T245	Amount 2418 2431	200 μL volume
+T246	Method 2435 2451	control reaction
+T247	Action 2474 2480	plated
+E68	Action:T247 
+T248	Modifier 2462 2467	needs
+R89	Mod-Link Arg1:E68 Arg2:T248	
+R90	Mod-Link Arg1:T245 Arg2:T243	
+T249	Modifier 2487 2490	all
+T250	Reagent 2495 2501	liquid
+T251	Modifier 2511 2519	absorbed
+R91	Mod-Link Arg1:T250 Arg2:T249	
+R92	Mod-Link Arg1:T250 Arg2:T251	
+T252	Modifier 2751 2762	molecularly
+T253	Action 2763 2772	confirmed
+E69	Action:T253 Acts-on:T255
+T254	Method 2777 2786	insertion
+T255	Reagent 2794 2807	HERP cassette
+R93	Mod-Link Arg1:E69 Arg2:T252	
+T256	Modifier 2918 2927	Sensitive
+T257	Reagent 2928 2935	strains
+T258	Action 2943 2950	exhibit
+E70	Action:T258 Acts-on:T257
+T259	Modifier 2951 2960	no growth
+T260	Modifier 2968 2979	insensitive
+T261	Reagent 2980 2987	strains
+T262	Modifier 2993 3000	rapidly
+T263	Action 3001 3005	grow
+E71	Action:T263 Acts-on:T261
+R94	Mod-Link Arg1:E71 Arg2:T262	
+R95	Mod-Link Arg1:T261 Arg2:T260	
+R96	Mod-Link Arg1:T257 Arg2:T256	
+R97	Mod-Link Arg1:E70 Arg2:T259	
+T264	Method 3017 3031	HERP insertion
+T265	Modifier 3035 3044	confirmed
+T266	Action 3058 3069	established
+E72	Action:T266 Measure-Type-Link:T267
+T267	Measure-Type 3070 3086	FUdR sensitivity
+T268	Modifier 3358 3377	desired replacement
+T269	Reagent 3378 3389	PCR product
+R98	Mod-Link Arg1:T269 Arg2:T268	
+T270	Method 3400 3410	heat shock
+T271	Modifier 3414 3423	completed
+T272	Modifier 3496 3500	each
+R99	Mod-Link Arg1:T185 Arg2:T272	
+T273	Modifier 3567 3572	After
+R100	Mod-Link Arg1:T166 Arg2:T273	
+T274	Modifier 3698 3705	no more
+R101	Mod-Link Arg1:T194 Arg2:T274	
+T275	Action 3725 3731	reduce
+E73	Action:T275 
+T276	Modifier 3732 3749	background growth
+R102	Mod-Link Arg1:E73 Arg2:T276	
+T277	Modifier 3785 3791	longer
+R103	Mod-Link Arg1:T197 Arg2:T277	
+T278	Reagent 3795 3802	glucose
+T279	Action 3806 3814	replaced
+E74	Action:T279 Acts-on:T278 Using:T280
+T280	Reagent 3818 3826	glycerol
+T281	Modifier 3792 3794	if
+R104	Mod-Link Arg1:E74 Arg2:T281	

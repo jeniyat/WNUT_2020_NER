@@ -1,0 +1,144 @@
+T1	Action 62 71	Inoculate
+E1	Action:T1 Acts-on:T23
+T2	Action 218 226	Incubate
+E2	Action:T2 
+T3	Action 246 251	Place
+E3	Action:T3 Acts-on:T32 Site:T33
+T4	Action 298 308	Centrifuge
+E4	Action:T4 Site:T34
+T5	Action 344 350	pellet
+E5	Action:T5 Acts-on:T36
+T6	Action 365 372	Discard
+E6	Action:T6 Acts-on:T37
+T7	Action 391 394	Add
+E7	Action:T7 Acts-on:T39 Site:T40
+T8	Action 434 437	Add
+E8	Action:T8 Acts-on:T42 Site:T45
+T9	Action 490 496	vortex
+E9	Action:T9 Acts-on:T45
+T10	Action 511 521	Centrifuge
+E10	Action:T10 Acts-on:T47 Site:T48
+T11	Action 564 572	separate
+E11	Action:T11 Acts-on:T50
+T12	Action 585 590	Layer
+E12	Action:T12 Acts-on:T52 Site:T54
+T13	Action 711 714	run
+E13	Action:T13 Acts-on:T73 Using:T75 Site:T74
+T14	Action 783 806	run the original vector
+E14	Action:T14 
+T15	Action 871 884	double combed
+E15	Action:T15 Acts-on:T57
+T16	Action 921 935	Electrophorese
+E16	Action:T16 Acts-on:T58 Acts-on2:T60
+T17	Action 999 1004	Stain
+E17	Action:T17 Acts-on:T62 Site:T63 Site2:T65
+T18	Action 1092 1099	Observe
+E18	Action:T18 Acts-on:T67 Using:T68
+T19	Action 1191 1199	isolated
+E19	Action:T19 Acts-on:T70
+T20	Action 1130 1140	photograph
+E20	Action:T20 Acts-on:T69
+T21	Action 1281 1288	Destain
+E21	Action:T21 Acts-on:T71 Site:T72
+T22	Amount 72 78	3.5 mL
+T23	Reagent 79 87	aliquots
+T24	Reagent 91 99	LB media
+R1	Meronym Arg1:T23 Arg2:T24	
+R2	Measure Arg1:T23 Arg2:T22	
+T25	Reagent 115 137	appropriate antibiotic
+R3	Meronym Arg1:T25 Arg2:T24	
+T26	Reagent 143 165	single colony isolates
+T27	Reagent 173 181	bacteria
+R4	Meronym Arg1:T26 Arg2:T27	
+T28	Reagent 197 204	plasmid
+R5	Meronym Arg1:T28 Arg2:T26	
+T29	Time 227 236	overnight
+T30	Temperature 240 245	37°C.
+T31	Amount 252 258	150 µL
+T32	Reagent 262 274	each culture
+T33	Location 282 296	microfuge tube
+T34	Device 316 325	microfuge
+T35	Time 330 340	30 seconds
+T36	Reagent 355 363	bacteria
+T37	Reagent 377 389	supernatants
+T38	Amount 395 400	40 µL
+T39	Reagent 404 417	agarose beads
+T40	Reagent 426 432	sample
+T41	Amount 438 443	14 µL
+T42	Reagent 447 464	phenol:chloroform
+T43	Concentration 466 470	1:1)
+T44	Amount 474 478	each
+T45	Reagent 479 485	sample
+T46	Time 501 509	5-10 sec
+T47	Reagent 526 533	samples
+T48	Device 541 550	microfuge
+T49	Time 555 560	5 min
+T50	Reagent 577 583	phases
+R6	Setting Arg1:E2 Arg2:T29	
+R7	Setting Arg1:E2 Arg2:T30	
+R8	Measure Arg1:T32 Arg2:T31	
+R9	Setting Arg1:E4 Arg2:T35	
+R10	Measure Arg1:T39 Arg2:T38	
+R11	Measure Arg1:T42 Arg2:T41	
+R12	Measure Arg1:T42 Arg2:T43	
+R13	Measure Arg1:T45 Arg2:T44	
+R14	Setting Arg1:E9 Arg2:T46	
+R15	Setting Arg1:E10 Arg2:T49	
+T51	Amount 591 596	10 µL
+T52	Reagent 612 626	aqueous phases
+T53	Concentration 634 638	1.2%
+T54	Reagent 639 661	agarose horizontal gel
+T55	Concentration 675 677	1X
+T56	Reagent 678 688	TPE buffer
+R16	Measure Arg1:T52 Arg2:T51	
+R17	Measure Arg1:T54 Arg2:T53	
+R18	Meronym Arg1:T56 Arg2:T54	
+R19	Measure Arg1:T56 Arg2:T55	
+T57	Reagent 859 863	Gels
+T58	Reagent 940 943	gel
+T59	Concentration 947 949	1X
+T60	Reagent 950 960	TPE buffer
+T61	Generic-Measure 979 997	400-450 volt-hours
+R20	Measure Arg1:T60 Arg2:T59	
+R21	Setting Arg1:E16 Arg2:T61	
+T62	Reagent 1009 1012	gel
+T63	Reagent 1018 1034	ethidium bromide
+T64	Concentration 1057 1066	0.5 µg/mL
+R22	Setting Arg1:E17 Arg2:T64	
+T65	Reagent 1070 1075	d-H2O
+T66	Time 1080 1090	30 minutes
+R23	Setting Arg1:E17 Arg2:T66	
+T67	Reagent 1104 1107	gel
+T68	Device 1113 1125	UV light box
+T69	Reagent 1145 1148	gel
+T70	Reagent 1172 1183	plasmid DNA
+T71	Reagent 1293 1296	gel
+T72	Reagent 1302 1307	d-H2O
+T73	Reagent 715 725	lambda DNA
+T74	Location 697 710	outside lanes
+T75	Reagent 740 747	HindIII
+T76	Reagent 755 759	StyI
+T77	Modifier 726 734	digested
+R24	Mod-Link Arg1:T73 Arg2:T77	
+R25	Or Arg1:T75 Arg2:T76	
+T78	Method 0 53	One Step Procedure for Screening Recombinant Plasmids
+T79	Reagent 831 838	plasmid
+T80	Modifier 839 846	without
+T81	Reagent 847 857	insert DNA
+T82	Action 810 814	show
+E22	Action:T82 Measure-Type-Link:T83 Acts-on:T79
+T83	Measure-Type 819 823	size
+R26	Mod-Link Arg1:T79 Arg2:T80	
+T84	Action 888 898	facilitate
+E23	Action:T84 
+T85	Method 899 919	running more samples
+T86	Modifier 965 978	approximately
+R27	Mod-Link Arg1:T61 Arg2:T86	
+T87	Measure-Type 1040 1053	concentration
+T88	Modifier 1154 1161	further
+T89	Method 1162 1170	analysis
+T90	Modifier 1263 1274	appropriate
+T91	Measure-Type 1275 1279	size
+T92	Reagent 1211 1218	samples
+T93	Mention 1238 1242	they
+R28	Coreference-Link Arg1:T93 Arg2:T92	

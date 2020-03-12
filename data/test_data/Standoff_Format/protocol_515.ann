@@ -1,0 +1,200 @@
+T1	Action 98 110	mix together
+E1	Action:T1 Acts-on:T26 Acts-on2:T29 Acts-on3:T34 Site:T24
+T2	Action 183 186	Add
+E2	Action:T2 Acts-on:T37 Site:T38
+T3	Action 226 230	Heat
+E3	Action:T3 Acts-on:T39
+T4	Action 261 266	Layer
+E4	Action:T4 Acts-on:T42 Using:T44 Site:T45
+T5	Action 378 381	Add
+E5	Action:T5 Acts-on:T47 Site:T108
+T6	Action 428 438	Centrifuge
+E6	Action:T6 Acts-on:T48 Using:T49
+T7	Action 499 505	Remove
+E7	Action:T7 Acts-on:T53 Using:T54 Site:T55 Site2:T109
+T9	Action 640 646	adding
+E9	Action:T9 Acts-on:T57 Site:T58
+T10	Action 717 723	mixing
+E10	Action:T10 Using:T60
+T11	Action 745 755	centrifuge
+E11	Action:T11 Using:T63
+T12	Action 822 831	pipet off
+E12	Action:T12 Acts-on:T64
+T8	Action 879 882	Add
+E8	Action:T8 Acts-on:T68 Site:T69
+T13	Action 920 926	adjust
+E13	Action:T13 Using:T70 Measure-Type-Link:T117 Acts-on:T119
+T14	Action 981 992	Precipitate
+E14	Action:T14 Acts-on:T71 Using:T74
+T15	Action 1032 1035	Mix
+E15	Action:T15 
+T16	Action 1045 1049	hold
+E16	Action:T16 
+T17	Action 1070 1080	Centrifuge
+E17	Action:T17 Acts-on:T79 Using:T80
+T18	Action 1151 1158	Discard
+E18	Action:T18 Acts-on:T84
+T19	Action 1177 1180	Dry
+E19	Action:T19 Acts-on:T85 Using:T87
+T20	Action 1258 1267	Resuspend
+E20	Action:T20 Acts-on:T88 Using:T91
+T21	Action 1327 1336	Determine
+E21	Action:T21 
+T22	Action 1364 1369	store
+E22	Action:T22 Acts-on:T94
+T23	Size 79 90	100 x 13 mm
+T24	Location 91 96	tubes
+R1	Measure Arg1:T24 Arg2:T23	
+T25	Amount 111 117	500 µL
+T26	Reagent 121 126	virus
+R2	Measure Arg1:T26 Arg2:T25	
+T27	Amount 128 133	60 µL
+T28	Concentration 137 140	10X
+T29	Reagent 141 144	TEN
+R3	Measure Arg1:T29 Arg2:T28	
+R4	Measure Arg1:T29 Arg2:T27	
+T30	Measure-Type 146 148	pH
+T31	Numerical 149 152	7.4
+R5	Of-Type Arg1:T31 Arg2:T30	
+T32	Amount 158 163	60 µL
+T33	Concentration 167 169	1%
+T34	Reagent 170 181	Na sarcosyl
+R6	Measure Arg1:T34 Arg2:T33	
+R7	Measure Arg1:T34 Arg2:T32	
+T35	Amount 187 193	600 µL
+T36	Concentration 197 200	60%
+T37	Reagent 207 211	CsCl
+T38	Location 220 224	tube
+R8	Measure Arg1:T37 Arg2:T36	
+R9	Measure Arg1:T37 Arg2:T35	
+T39	Location 235 240	tubes
+T40	Temperature 244 248	75°C
+T41	Time 253 259	15 min
+R10	Setting Arg1:E3 Arg2:T40	
+R11	Setting Arg1:E3 Arg2:T41	
+T42	Reagent 271 278	samples
+T43	Concentration 295 301	40-60%
+T44	Reagent 308 322	CsCl gradients
+R12	Measure Arg1:T44 Arg2:T43	
+T45	Location 326 342	SW60 rotor tubes
+T46	Amount 382 389	1200 µL
+T47	Reagent 397 409	heated virus
+R13	Measure Arg1:T47 Arg2:T46	
+T48	Reagent 443 452	gradients
+T49	Device 456 467	SW60 rotors
+T50	Speed 471 481	35,000 rpm
+T51	Time 483 491	18 hours
+T52	Temperature 493 497	25°C
+R14	Setting Arg1:E6 Arg2:T50	
+R15	Setting Arg1:E6 Arg2:T51	
+R16	Setting Arg1:E6 Arg2:T52	
+T53	Reagent 510 519	DNA bands
+T54	Device 546 562	wide bent needle
+T55	Location 587 598	corex tubes
+T56	Size 581 586	30 mL
+R17	Measure Arg1:T55 Arg2:T56	
+T57	Reagent 666 695	CsCl/TE-saturated isopropanol
+T58	Reagent 703 715	DNA solution
+T59	Modifier 724 730	gently
+T60	Method 734 743	inversion
+R18	Mod-Link Arg1:E10 Arg2:T59	
+T61	Time 760 765	1 min
+T62	Speed 769 778	3,000 rpm
+T63	Device 786 793	Sorvall
+T64	Reagent 842 859	isopropanol layer
+R19	Setting Arg1:E11 Arg2:T61	
+R20	Setting Arg1:E11 Arg2:T62	
+T65	Generic-Measure 650 662	equal volume
+R21	Measure Arg1:T57 Arg2:T65	
+T66	Amount 883 889	1.0 mL
+T67	Concentration 893 896	3 M
+T68	Reagent 897 902	NaOAc
+R22	Measure Arg1:T68 Arg2:T67	
+R23	Measure Arg1:T68 Arg2:T66	
+T69	Location 911 915	tube
+T70	Reagent 970 979	TE buffer
+T72	Amount 954 961	10.0 mL
+R24	Setting Arg1:E13 Arg2:T72	
+T71	Reagent 997 1001	DNAs
+T73	Concentration 1021 1025	100%
+T74	Reagent 1026 1030	EtOH
+R25	Measure Arg1:T74 Arg2:T73	
+T75	Generic-Measure 1007 1017	2X volumes
+R26	Measure Arg1:T74 Arg2:T75	
+T76	Modifier 1036 1040	well
+T77	Temperature 1053 1058	-20°C
+T78	Time 1059 1068	overnight
+R27	Mod-Link Arg1:E15 Arg2:T76	
+R28	Setting Arg1:E16 Arg2:T77	
+R29	Setting Arg1:E16 Arg2:T78	
+T79	Reagent 1085 1096	DNA samples
+T80	Device 1104 1122	Sorvall HB-4 rotor
+T81	Speed 1126 1136	10,000 rpm
+T82	Time 1138 1144	20 min
+T83	Temperature 1146 1149	4°C
+R30	Setting Arg1:E17 Arg2:T81	
+R31	Setting Arg1:E17 Arg2:T82	
+R32	Setting Arg1:E17 Arg2:T83	
+T84	Reagent 1163 1175	supernatants
+T85	Reagent 1185 1192	pellets
+T86	Time 1202 1211	10-15 min
+T87	Device 1220 1237	vacuum desiccator
+R33	Setting Arg1:E19 Arg2:T86	
+T88	Reagent 1272 1283	DNA samples
+T89	Amount 1303 1309	500 µL
+T90	Concentration 1313 1315	1X
+T91	Reagent 1316 1325	TE buffer
+T92	Concentration 967 969	1X
+R34	Measure Arg1:T70 Arg2:T92	
+R35	Measure Arg1:T91 Arg2:T90	
+R36	Measure Arg1:T91 Arg2:T89	
+T93	Generic-Measure 1341 1359	DNA concentrations
+R37	Setting Arg1:E21 Arg2:T93	
+T94	Reagent 1374 1378	DNAs
+T95	Temperature 1382 1385	4°C
+R38	Setting Arg1:E22 Arg2:T95	
+T96	Method 0 33	Isolation and Purification of DNA
+T97	Reagent 39 56	Chlorella Viruses
+T98	Modifier 57 74	For each gradient
+R39	Mod-Link Arg1:E1 Arg2:T98	
+T99	Measure-Type 202 205	w/w
+T100	Modifier 215 219	each
+R40	Mod-Link Arg1:T38 Arg2:T100	
+T101	Modifier 284 294	pre-formed
+T102	Measure-Type 303 306	w/w
+R41	Mod-Link Arg1:T44 Arg2:T101	
+T103	Modifier 354 359	final
+T104	Concentration 360 366	30-60%
+T105	Reagent 367 375	gradient
+R42	Measure Arg1:T105 Arg2:T104	
+R43	Mod-Link Arg1:T105 Arg2:T103	
+T106	Action 347 351	make
+E23	Action:T106 Acts-on:T105
+T107	Modifier 413 417	each
+T108	Reagent 418 426	gradient
+R44	Mod-Link Arg1:T108 Arg2:T107	
+T109	Reagent 529 538	gradients
+T110	Modifier 566 580	silicon-coated
+R45	Mod-Link Arg1:T55 Arg2:T110	
+T111	Action 600 607	Extract
+E24	Action:T111 Acts-on:T112 Site:T113
+T112	Reagent 612 623	Hoechst dye
+T113	Reagent 633 636	DNA
+T114	Action 797 805	separate
+E25	Action:T114 Acts-on:T115
+T115	Reagent 810 816	phases
+T116	Action 861 867	Repeat
+E26	Action:T116 
+T117	Measure-Type 931 937	volume
+T118	Modifier 941 945	each
+T119	Location 946 950	tube
+R46	Mod-Link Arg1:T119 Arg2:T118	
+T120	Modifier 906 910	each
+R47	Mod-Link Arg1:T69 Arg2:T120	
+T121	Modifier 1193 1200	briefly
+R48	Mod-Link Arg1:E19 Arg2:T121	
+T122	Action 1241 1247	remove
+E27	Action:T122 Acts-on:T123 Using:T87
+T123	Reagent 1252 1256	EtOH
+T124	Modifier 1289 1302	approximately
+R49	Mod-Link Arg1:T89 Arg2:T124	

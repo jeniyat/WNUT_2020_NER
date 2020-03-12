@@ -1,0 +1,383 @@
+T1	Action 57 60	Add
+E1	Action:T1 Acts-on:T48 Site:T176
+T2	Action 120 123	Fix
+E2	Action:T2 
+T3	Action 145 150	Setup
+E3	Action:T3 Site:T54 Acts-on:T52
+T4	Action 215 220	Place
+E4	Action:T4 Acts-on:T56 Site:T55
+T5	Action 270 275	float
+E5	Action:T5 Site:T61 Acts-on:T59
+T6	Action 340 347	turn on
+E6	Action:T6 Acts-on:T62
+T8	Action 410 418	Turn off
+E8	Action:T8 Acts-on:T66
+T9	Action 461 464	Add
+E9	Action:T9 Acts-on:T70 Acts-on2:T72
+T10	Action 508 513	float
+E10	Action:T10 Acts-on:T74 Acts-on2:T76
+T11	Action 609 613	Save
+E11	Action:T11 Acts-on:T77
+T12	Action 657 664	Turn on
+E12	Action:T12 Acts-on:T78
+T14	Action 744 749	Place
+E14	Action:T14 Acts-on:T65 Site:T81 Site2:T82
+T15	Action 786 792	Filter
+E15	Action:T15 Acts-on:T84 Using:T85
+T16	Action 853 859	filter
+E16	Action:T16 Acts-on:T90 Using:T91
+T17	Action 960 966	Remove
+E17	Action:T17 Acts-on:T92 Site:T93
+T18	Action 1024 1029	Cover
+E18	Action:T18 Using:T97 Acts-on:T98
+T19	Action 1089 1096	air-dry
+E19	Action:T19 
+T20	Action 1098 1103	Label
+E20	Action:T20 Acts-on:T100 Using:T101
+T21	Action 1266 1270	Seal
+E21	Action:T21 Acts-on:T105 Using:T106
+T22	Action 1375 1380	Store
+E22	Action:T22 
+T23	Action 1503 1508	Setup
+E23	Action:T23 Site:T114 Acts-on:T112
+T24	Action 1573 1578	Place
+E24	Action:T24 Acts-on:T116 Site:T117
+T25	Action 1622 1627	float
+E25	Action:T25 Acts-on:T119 Site:T121
+T26	Action 1692 1699	turn on
+E26	Action:T26 Acts-on:T122
+T28	Action 1762 1770	Turn off
+E28	Action:T28 Acts-on:T124
+T29	Action 1813 1816	Add
+E29	Action:T29 Acts-on:T128 Site:T129
+T30	Action 1860 1865	float
+E30	Action:T30 Acts-on:T131 Site:T133
+T31	Action 1961 1965	Save
+E31	Action:T31 Acts-on:T137
+T32	Action 2009 2016	Turn on
+E32	Action:T32 Acts-on:T138
+T34	Action 2079 2084	Leave
+E34	Action:T34 Acts-on:T33
+T35	Action 2096 2101	Place
+E35	Action:T35 Acts-on:T141 Site:T142
+T36	Action 2138 2144	Filter
+E36	Action:T36 Acts-on:T145 Using:T146
+T37	Action 2324 2328	wash
+E37	Action:T37 Acts-on:T149 Acts-on2:T150 Using:T152
+T38	Action 2376 2382	remove
+E38	Action:T38 Acts-on:T153 Using:T154
+T39	Action 2398 2404	Remove
+E39	Action:T39 Acts-on:T155 Site:T156
+T40	Action 2462 2467	Cover
+E40	Action:T40 
+T41	Action 2435 2438	put
+E41	Action:T41 Acts-on:T157 Site:T158
+T43	Action 2536 2541	Label
+E43	Action:T43 Acts-on:T162 Using:T163
+T44	Action 2571 2576	place
+E44	Action:T44 Acts-on:T164 Site:T165
+T45	Action 2704 2708	Seal
+E45	Action:T45 Acts-on:T166 Using:T167
+T46	Action 2776 2779	put
+E46	Action:T46 Acts-on:T169 Site:T170
+T47	Action 2813 2818	Store
+E47	Action:T47 
+T48	Reagent 61 73	formaldehyde
+T49	Concentration 85 106	concentration of 1-2%
+T50	Time 128 136	12-24 hr
+T51	Temperature 140 143	4°C
+R2	Setting Arg1:E2 Arg2:T50	
+R3	Setting Arg1:E2 Arg2:T51	
+T52	Device 151 174	frittered glass support
+T53	Size 176 189	25mm diameter
+R4	Measure Arg1:T52 Arg2:T53	
+T54	Location 194 213	filtration manifold
+T56	Reagent 231 244	Milli Q water
+T57	Amount 246 256	~250-500µl
+R5	Measure Arg1:T56 Arg2:T57	
+T55	Device 261 268	support
+T58	Size 276 282	0.45µm
+T59	Device 283 315	cellulose nitrate support filter
+R6	Measure Arg1:T59 Arg2:T58	
+T60	Size 317 330	25mm diameter
+R7	Measure Arg1:T59 Arg2:T60	
+T61	Location 335 338	top
+R8	Meronym Arg1:T61 Arg2:T55	
+T62	Device 348 354	vacuum
+T63	Generic-Measure 356 368	~ 5 in of Hg
+T66	Device 419 425	vacuum
+T67	Action 430 437	release
+E48	Action:T67 Site:T69
+T68	Generic-Measure 438 446	pressure
+T69	Location 452 459	chamber
+R11	Setting Arg1:E48 Arg2:T68	
+T70	Reagent 481 488	Milli Q
+T71	Generic-Measure 473 477	drop
+R12	Measure Arg1:T70 Arg2:T71	
+T72	Device 500 506	filter
+T73	Size 514 519	0.2µm
+T74	Device 520 549	polycarbonate membrane filter
+R13	Measure Arg1:T74 Arg2:T73	
+T75	Size 551 564	25mm diameter
+R14	Measure Arg1:T74 Arg2:T75	
+T76	Device 577 583	filter
+T77	Device 614 637	filter separator sheets
+T78	Device 665 671	vacuum
+T80	Generic-Measure 673 685	~ 5 in of Hg
+R16	Setting Arg1:T78 Arg2:T80	
+T7	Device 733 739	vacuum
+T65	Device 750 762	filter tower
+T81	Location 766 774	membrane
+T82	Location 779 784	clamp
+T83	Amount 793 796	1ml
+T84	Reagent 800 812	fixed sample
+R17	Measure Arg1:T84 Arg2:T83	
+T87	Generic-Measure 840 850	~5 inch Hg
+T89	Amount 860 864	2 ml
+T90	Reagent 872 884	fixed sample
+R21	Measure Arg1:T90 Arg2:T89	
+T91	Device 899 905	filter
+T92	Device 967 973	filter
+T93	Location 979 992	filter holder
+T94	Action 997 1000	put
+E7	Action:T94 Acts-on:T95 Site:T96
+T95	Mention 1001 1003	it
+R22	Coreference-Link Arg1:T95 Arg2:T92	
+T96	Reagent 1007 1015	Kimwipes
+T97	Seal 1045 1048	lid
+T98	Location 1054 1062	cryo box
+T99	Location 1068 1078	Petri dish
+R23	Or Arg1:T98 Arg2:T99	
+T100	Device 1104 1119	membrane filter
+T101	Device 1125 1131	pencil
+T102	Action 1133 1138	place
+E49	Action:T102 Acts-on:T103 Site:T104
+T103	Mention 1139 1154	membrane filter
+T104	Reagent 1163 1179	separator sheets
+R24	Coreference-Link Arg1:T103 Arg2:T100	
+T105	Location 1271 1281	Petri dish
+T106	Seal 1287 1295	parafilm
+T107	Seal 1328 1332	tape
+T108	Action 1338 1341	put
+E50	Action:T108 Acts-on:T109 Site:T110
+T109	Mention 1342 1354	Petri dishes
+T110	Location 1362 1372	Ziploc bag
+R25	Coreference-Link Arg1:T109 Arg2:T105	
+T111	Temperature 1384 1389	-20°C
+R26	Setting Arg1:E22 Arg2:T111	
+T112	Device 1509 1524	frittered glass
+T113	Size 1526 1539	47mm diameter
+T114	Location 1552 1571	filtration manifold
+R27	Setting Arg1:T112 Arg2:T113	
+T115	Amount 1604 1608	~1ml
+T116	Reagent 1589 1602	Milli Q water
+R28	Measure Arg1:T116 Arg2:T115	
+T117	Location 1613 1620	support
+T118	Size 1628 1634	0.45µm
+T119	Device 1635 1667	cellulose nitrate support filter
+T120	Size 1669 1682	47mm diameter
+R29	Setting Arg1:T119 Arg2:T118	
+R30	Setting Arg1:T119 Arg2:T120	
+T121	Location 1687 1690	top
+R31	Meronym Arg1:T121 Arg2:T117	
+T122	Device 1700 1706	vacuum
+T27	Generic-Measure 1708 1720	~ 5 in of Hg
+R33	Setting Arg1:E26 Arg2:T27	
+T124	Device 1771 1777	vacuum
+T125	Action 1782 1789	release
+E27	Action:T125 Site:T215
+T126	Generic-Measure 1790 1798	pressure
+R34	Setting Arg1:E27 Arg2:T126	
+T127	Amount 1825 1829	drop
+T128	Reagent 1833 1840	Milli Q
+R35	Measure Arg1:T128 Arg2:T127	
+T129	Location 1844 1858	support filter
+T130	Amount 1866 1871	0.2µm
+T131	Device 1872 1901	polycarbonate membrane filter
+R36	Setting Arg1:T131 Arg2:T130	
+T132	Size 1903 1916	47mm diameter
+R37	Setting Arg1:T131 Arg2:T132	
+T133	Location 1921 1935	support filter
+T134	Location 1937 1947	shiny side
+R38	Meronym Arg1:T134 Arg2:T133	
+T135	Action 1948 1954	facing
+E51	Action:T135 Acts-on:T134 Site:T136
+T136	Location 1955 1957	up
+T137	Reagent 1966 1989	filter separator sheets
+T138	Device 2017 2023	vacuum
+T139	Generic-Measure 2025 2037	~ 5 in of Hg
+R40	Setting Arg1:E32 Arg2:T139	
+T33	Device 2085 2091	vacuum
+T141	Location 2102 2114	filter tower
+T142	Location 2118 2126	membrane
+T143	Action 2131 2136	clamp
+E33	Action:T143 Acts-on:T142
+T144	Generic-Measure 2145 2163	appropriate volume
+T145	Reagent 2181 2193	fixed sample
+R42	Measure Arg1:T145 Arg2:T144	
+T146	Method 2206 2219	gentle vacuum
+T147	Generic-Measure 2221 2231	~5 inch Hg
+T149	Device 2329 2335	filter
+T150	Device 2340 2345	tower
+T151	Amount 2351 2359	20-30 ml
+T152	Reagent 2363 2374	sterile H2O
+R44	Measure Arg1:T152 Arg2:T151	
+T153	Mention 2383 2386	H2O
+R45	Coreference-Link Arg1:T153 Arg2:T152	
+T154	Device 2390 2396	vacuum
+T155	Device 2405 2411	filter
+T156	Location 2417 2430	filter holder
+T157	Mention 2439 2441	it
+T158	Reagent 2445 2453	Kimwipes
+T159	Seal 2483 2486	lid
+T160	Location 2492 2500	cryo box
+R46	Meronym Arg1:T160 Arg2:T159	
+T161	Location 2506 2516	Petri dish
+R47	Or Arg1:T159 Arg2:T161	
+T42	Action 2527 2534	air-dry
+E42	Action:T42 
+T162	Device 2542 2557	membrane filter
+T163	Device 2563 2569	pencil
+T164	Device 2577 2592	membrane filter
+T165	Reagent 2601 2617	separator sheets
+T166	Location 2709 2719	Petri dish
+T167	Seal 2725 2733	parafilm
+T168	Seal 2766 2770	tape
+T169	Location 2780 2792	Petri dishes
+T170	Location 2800 2810	Ziploc bag
+T171	Temperature 2822 2827	-20°C
+R48	Setting Arg1:E47 Arg2:T171	
+T172	Method 0 27	Treatments and Preservation
+T173	Reagent 31 47	Seawater Samples
+T174	Method 52 56	FISH
+T175	Modifier 79 84	final
+T176	Reagent 110 118	filtrate
+R49	Mod-Link Arg1:T49 Arg2:T175	
+R1	Measure Arg1:T48 Arg2:T49	
+T177	Amount 223 227	drop
+R50	Measure Arg1:T56 Arg2:T177	
+T178	Action 373 376	lay
+E52	Action:T178 Acts-on:T180
+T179	Modifier 384 408	flat with no air bubbles
+T180	Device 377 383	filter
+R51	Mod-Link Arg1:E52 Arg2:T179	
+T181	Modifier 465 472	another
+R52	Mod-Link Arg1:T71 Arg2:T181	
+T182	Action 492 499	support
+E53	Action:T182 Acts-on:T72
+T183	Modifier 569 576	support
+R53	Mod-Link Arg1:T76 Arg2:T183	
+T184	Modifier 585 590	shiny
+T185	Location 591 595	side
+T186	Modifier 596 605	facing up
+R54	Meronym Arg1:T185 Arg2:T76	
+R55	Mod-Link Arg1:T185 Arg2:T184	
+R56	Mod-Link Arg1:T185 Arg2:T186	
+T187	Method 642 649	storage
+T188	Action 690 693	lay
+E54	Action:T188 Acts-on:T189
+T189	Device 694 700	filter
+T190	Modifier 701 725	flat with no air bubbles
+R57	Mod-Link Arg1:E54 Arg2:T190	
+T13	Modifier 740 742	on
+T191	Action 727 732	Leave
+E13	Action:T191 Acts-on:T7
+R58	Mod-Link Arg1:T7 Arg2:T13	
+T193	Modifier 892 898	second
+R59	Mod-Link Arg1:T91 Arg2:T193	
+T85	Method 816 838	applying gentle vacuum
+R18	Setting Arg1:E15 Arg2:T87	
+T86	Modifier 911 918	support
+T88	Device 919 925	filter
+T192	Action 933 941	utilized
+E55	Action:T192 Using:T88 Acts-on:T195
+T194	Modifier 946 950	both
+T195	Reagent 951 958	samples
+R19	Mod-Link Arg1:T195 Arg2:T194	
+R20	Mod-Link Arg1:T88 Arg2:T86	
+T196	Action 1019 1022	dry
+E56	Action:T196 Acts-on:T96
+T197	Modifier 1155 1162	between
+R60	Mod-Link Arg1:T104 Arg2:T197	
+T198	Action 1186 1193	prevent
+E57	Action:T198 Acts-on:T199
+T199	Device 1198 1214	membrane filters
+T200	Action 1220 1228	sticking
+E58	Action:T200 Acts-on:T199 Site:T202
+T201	Modifier 1232 1242	each other
+T202	Location 1253 1263	Petri dish
+R61	Mod-Link Arg1:E58 Arg2:T201	
+T203	Action 1297 1304	prevent
+E59	Action:T203 Acts-on:T204 Using:T107
+T204	Location 1305 1309	dish
+T205	Modifier 1310 1322	from opening
+R62	Mod-Link Arg1:E59 Arg2:T205	
+T206	Modifier 1390 1406	until processing
+R63	Mod-Link Arg1:E22 Arg2:T206	
+T207	Device 1408 1415	Filters
+T208	Action 1423 1429	stored
+E60	Action:T208 Acts-on:T207
+T209	Modifier 1430 1436	frozen
+T210	Time 1441 1455	several months
+T211	Modifier 1456 1501	without apparent loss of hybridization signal
+R64	Mod-Link Arg1:T207 Arg2:T209	
+R65	Setting Arg1:E60 Arg2:T210	
+R66	Mod-Link Arg1:E60 Arg2:T211	
+T212	Modifier 1541 1548	support
+R67	Mod-Link Arg1:T112 Arg2:T212	
+T213	Amount 1581 1585	drop
+R68	Measure Arg1:T116 Arg2:T213	
+R9	Setting Arg1:T62 Arg2:T63	
+T64	Action 1725 1728	lay
+E61	Action:T64 Acts-on:T123
+T123	Device 1729 1735	filter
+T214	Modifier 1736 1760	flat with no air bubbles
+R10	Mod-Link Arg1:E61 Arg2:T214	
+T215	Location 1799 1811	from chamber
+T216	Modifier 1817 1824	another
+R32	Mod-Link Arg1:T127 Arg2:T216	
+T217	Method 1994 2001	storage
+T218	Action 2042 2045	lay
+E62	Action:T218 Acts-on:T219
+T219	Device 2046 2052	filter
+T220	Modifier 2053 2077	flat with no air bubbles
+R69	Mod-Link Arg1:E62 Arg2:T220	
+T221	Modifier 2092 2094	on
+R70	Mod-Link Arg1:T33 Arg2:T221	
+R41	Setting Arg1:E36 Arg2:T147	
+T148	Modifier 2238 2245	support
+T222	Device 2246 2252	filter
+T223	Action 2260 2268	utilized
+E63	Action:T223 Acts-on:T225 Using:T222
+T224	Modifier 2273 2280	several
+T225	Reagent 2281 2288	samples
+R43	Mod-Link Arg1:T225 Arg2:T224	
+R71	Mod-Link Arg1:T222 Arg2:T148	
+T140	Modifier 2290 2322	After complete sample filtration
+R39	Mod-Link Arg1:E37 Arg2:T140	
+T226	Action 2457 2460	dry
+E64	Action:T226 
+T227	Action 2624 2631	prevent
+E65	Action:T227 Acts-on:T228
+T228	Device 2636 2652	membrane filters
+T229	Action 2658 2666	sticking
+E66	Action:T229 Site:T231 Acts-on:T228
+T230	Modifier 2667 2680	to each other
+T231	Location 2691 2701	Petri dish
+R72	Mod-Link Arg1:E66 Arg2:T230	
+T232	Action 2735 2742	prevent
+E67	Action:T232 Acts-on:T233 Using:T168
+T233	Location 2743 2747	dish
+T234	Modifier 2748 2760	from opening
+R73	Mod-Link Arg1:E67 Arg2:T234	
+T235	Modifier 2828 2844	until processing
+R74	Mod-Link Arg1:E47 Arg2:T235	
+T236	Device 2846 2853	Filters
+T237	Action 2861 2867	stored
+E68	Action:T237 Acts-on:T236
+T238	Modifier 2868 2874	frozen
+T239	Time 2879 2893	several months
+T240	Modifier 2894 2939	without apparent loss of hybridization signal
+R75	Mod-Link Arg1:T236 Arg2:T238	
+R76	Setting Arg1:E68 Arg2:T239	
+R77	Mod-Link Arg1:E68 Arg2:T240	

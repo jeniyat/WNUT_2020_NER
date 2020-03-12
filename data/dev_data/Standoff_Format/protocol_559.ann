@@ -1,0 +1,69 @@
+T1	Action 41 47	Dilute
+E1	Action:T1 Acts-on:T3 Using:T5
+T2	Concentration 52 55	10X
+T3	Reagent 56 72	RBC Lysis Buffer
+T4	Concentration 76 100	1X working concentration
+T5	Reagent 106 122	deionized water.
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Setting Arg1:E1 Arg2:T4	
+T6	Action 123 127	Warm
+E2	Action:T6 Acts-on:T8
+T7	Concentration 132 134	1X
+T8	Reagent 135 143	solution
+T9	Temperature 147 163	room temperature
+R3	Measure Arg1:T8 Arg2:T7	
+R4	Setting Arg1:E2 Arg2:T9	
+T10	Action 178 181	Add
+E3	Action:T10 Acts-on:T13 Site:T15
+T11	Amount 182 188	2.0 ml
+T12	Concentration 192 194	1X
+T13	Reagent 195 211	RBC Lysis Buffer
+T14	Modifier 215 219	each
+T15	Location 220 224	tube
+T16	Amount 242 248	100 μl
+T17	Reagent 252 263	whole blood
+R5	Measure Arg1:T17 Arg2:T16	
+R6	Mod-Link Arg1:T15 Arg2:T14	
+R7	Meronym Arg1:T17 Arg2:T15	
+R8	Measure Arg1:T13 Arg2:T12	
+R9	Measure Arg1:T13 Arg2:T11	
+T18	Modifier 265 271	Gently
+T19	Action 272 278	vortex
+E4	Action:T19 Acts-on:T21
+T20	Modifier 279 283	each
+T21	Location 284 288	tube
+T22	Modifier 289 300	immediately
+T23	Action 307 313	adding
+E5	Action:T23 Acts-on:T24
+T24	Reagent 318 333	lysing solution
+R10	Mod-Link Arg1:E4 Arg2:T18	
+R11	Mod-Link Arg1:E4 Arg2:T22	
+R12	Mod-Link Arg1:T21 Arg2:T20	
+T25	Action 335 343	Incubate
+E6	Action:T25 Using:T28
+T26	Temperature 347 363	room temperature
+T27	Time 391 404	10-15 minutes
+T28	Method 365 385	protected from light
+R13	Setting Arg1:E6 Arg2:T26	
+R14	Setting Arg1:E6 Arg2:T27	
+T29	Action 406 416	Centrifuge
+E7	Action:T29 
+T30	Speed 417 424	350 x g
+T31	Time 429 438	5 minutes
+R15	Setting Arg1:E7 Arg2:T30	
+R16	Setting Arg1:E7 Arg2:T31	
+T32	Action 440 448	Aspirate
+E8	Action:T32 Acts-on:T33 Using:T39
+T33	Reagent 449 460	supernatant
+T34	Action 492 501	resuspend
+E9	Action:T34 Acts-on:T35 Site:T37
+T35	Reagent 506 512	pellet
+T36	Modifier 520 531	appropriate
+T37	Reagent 532 538	buffer
+T38	Reagent 546 575	BioLegendCell Staining Buffer
+R17	Mod-Link Arg1:T37 Arg2:T36	
+T39	Method 461 486	without disturbing pellet
+R18	Or Arg1:T37 Arg2:T38	
+T40	Method 0 40	Red Blood Cell Lysis Protocol: Method II
+T41	Modifier 164 176	prior to use
+R19	Mod-Link Arg1:E2 Arg2:T41	

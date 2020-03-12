@@ -1,0 +1,175 @@
+T1	Action 15 18	Add
+E1	Action:T1 
+T2	Action 125 128	Mix
+E2	Action:T2 
+T3	Action 140 149	spin down
+E3	Action:T3 
+T4	Action 169 177	Incubate
+E4	Action:T4 
+T5	Action 359 369	incubation
+E5	Action:T5 
+T6	Action 390 397	Measure
+E6	Action:T6 Acts-on:T37
+T7	Action 435 438	Add
+E7	Action:T7 
+T8	Action 678 681	Mix
+E8	Action:T8 
+T9	Action 688 691	Add
+E9	Action:T9 Acts-on:T45
+T10	Action 775 778	Mix
+E10	Action:T10 
+T11	Action 785 790	Place
+E11	Action:T11 
+T12	Action 835 839	Spin
+E12	Action:T12 Acts-on:T50
+T13	Action 892 898	decant
+E13	Action:T13 Acts-on:T52
+T14	Action 912 915	Add
+E14	Action:T14 Acts-on:T55
+T15	Action 934 937	Mix
+E15	Action:T15 
+T16	Action 939 943	Spin
+E16	Action:T16 
+T17	Action 983 990	Air dry
+E17	Action:T17 Acts-on:T58
+T18	Action 1002 1012	vacuum dry
+E18	Action:T18 Acts-on:T58
+T19	Action 1021 1030	Resuspend
+E19	Action:T19 Acts-on:T59 Using:T61
+T20	Reagent 22 41	nuclease-free water
+T21	Amount 46 59	50 µL > 47 µL
+T22	Amount 62 65	5µL
+T23	Concentration 66 69	10X
+T24	Reagent 70 78	Buffer O
+R1	Measure Arg1:T24 Arg2:T23	
+R2	Measure Arg1:T24 Arg2:T22	
+R3	Measure Arg1:T20 Arg2:T21	
+T25	Amount 80 83	1µL
+T26	Reagent 84 87	DNA
+T27	Concentration 89 96	1 µg/µL
+R4	Measure Arg1:T26 Arg2:T27	
+R5	Measure Arg1:T26 Arg2:T25	
+T28	Amount 100 104	1 µL
+T29	Reagent 105 111	NotI 1
+R6	Measure Arg1:T29 Arg2:T28	
+T30	Concentration 113 119	10U/µL
+R7	Measure Arg1:T29 Arg2:T30	
+T31	Time 156 167	few seconds
+R8	Setting Arg1:E3 Arg2:T31	
+T32	Temperature 181 185	37°C
+T33	Time 190 200	1-16 hours
+R9	Setting Arg1:E4 Arg2:T32	
+R10	Setting Arg1:E4 Arg2:T33	
+T34	Temperature 373 377	80°C
+T35	Time 382 388	20 min
+R11	Setting Arg1:E5 Arg2:T34	
+R12	Setting Arg1:E5 Arg2:T35	
+T36	Generic-Measure 402 408	volume
+T37	Reagent 416 426	DNA sample
+R14	Measure Arg1:T37 Arg2:T36	
+T38	Amount 439 450	1/10 volume
+T39	Reagent 454 468	sodium acetate
+R15	Measure Arg1:T39 Arg2:T38	
+T40	Measure-Type 470 472	pH
+T41	Numerical 473 476	5.2
+R13	Of-Type Arg1:T41 Arg2:T40	
+R16	Measure Arg1:T39 Arg2:T41	
+T42	Amount 692 708	2 to 2.5 volumes
+T43	Temperature 712 716	cold
+T44	Concentration 717 721	100%
+T45	Reagent 722 729	ethanol
+R17	Measure Arg1:T45 Arg2:T44	
+R18	Measure Arg1:T45 Arg2:T42	
+R19	Setting Arg1:E9 Arg2:T43	
+T46	Temperature 794 797	ice
+T47	Temperature 804 817	-20 degrees C
+T48	Time 822 833	>20 minutes
+R20	Setting Arg1:E11 Arg2:T46	
+R21	Or Arg1:T46 Arg2:T47	
+R22	Setting Arg1:E11 Arg2:T48	
+T49	Speed 842 855	maximum speed
+T50	Location 861 870	microfuge
+T51	Time 871 880	10-15 min
+R23	Setting Arg1:E12 Arg2:T49	
+R24	Setting Arg1:E12 Arg2:T51	
+T52	Reagent 899 910	supernatant
+T53	Amount 916 920	1 ml
+T54	Concentration 921 924	70%
+T55	Reagent 925 932	ethanol
+R25	Measure Arg1:T55 Arg2:T54	
+R26	Measure Arg1:T55 Arg2:T53	
+T56	Action 963 969	decant
+E20	Action:T56 Acts-on:T57
+T57	Reagent 970 981	supernatant
+T58	Reagent 1013 1019	pellet
+T59	Reagent 1031 1037	pellet
+T60	Generic-Measure 1045 1063	appropriate volume
+T61	Reagent 1067 1069	TE
+T62	Reagent 1073 1078	water
+R27	Or Arg1:T61 Arg2:T62	
+R28	Measure Arg1:T61 Arg2:T60	
+T63	Method 0 14	Digestion NotI
+T64	Method 42 45	qsp
+T65	Modifier 129 135	gently
+R29	Mod-Link Arg1:E2 Arg2:T65	
+T66	Method 206 224	digestion reaction
+T67	Action 232 238	scaled
+E21	Action:T67 
+T68	Modifier 239 256	either up or down
+R30	Mod-Link Arg1:E21 Arg2:T68	
+T69	Modifier 264 272	possible
+T70	Action 276 283	process
+E22	Action:T70 
+T71	Modifier 284 292	extended
+T72	Method 293 303	incubation
+T73	Action 307 313	adding
+E23	Action:T73 Acts-on:T75
+T74	Generic-Measure 314 322	0.25U/µg
+T75	Reagent 326 329	DNA
+T76	Amount 333 338	50 µL
+T77	Reagent 342 357	reaction volume
+R31	Measure Arg1:T75 Arg2:T74	
+R32	Setting Arg1:E23 Arg2:T77	
+R33	Measure Arg1:T77 Arg2:T76	
+R34	Mod-Link Arg1:E22 Arg2:T69	
+T78	Amount 427 434	> 50 µL
+R35	Measure Arg1:T37 Arg2:T78	
+T79	Reagent 542 545	DNA
+T80	Modifier 549 559	in TE only
+R36	Mod-Link Arg1:T79 Arg2:T80	
+T81	Action 526 532	assume
+E24	Action:T81 Acts-on:T79
+T84	Modifier 561 600	if DNA is in a solution containing salt
+T82	Action 602 608	adjust
+E25	Action:T82 Acts-on:T83
+T83	Reagent 609 613	salt
+T85	Modifier 614 625	accordingly
+T86	Action 629 636	achieve
+E26	Action:T86 Measure-Type-Link:T88
+T87	Modifier 641 654	correct final
+T88	Measure-Type 655 668	concentration
+T89	Amount 670 676	> 5 µL
+R37	Mod-Link Arg1:E25 Arg2:T85	
+R38	Mod-Link Arg1:E26 Arg2:T87	
+R39	Setting Arg1:E26 Arg2:T89	
+R40	Mod-Link Arg1:E25 Arg2:T84	
+T90	Modifier 682 686	well
+R41	Mod-Link Arg1:E8 Arg2:T90	
+T91	Modifier 731 761	calculated after salt addition
+R42	Or Arg1:T91 Arg2:T45	
+T92	Numerical 763 768	> 110
+T93	Modifier 770 772	2V
+T94	Modifier 779 783	well
+R43	Mod-Link Arg1:E10 Arg2:T94	
+T95	Modifier 882 891	Carefully
+R44	Mod-Link Arg1:E13 Arg2:T95	
+T96	Modifier 944 951	briefly
+R45	Mod-Link Arg1:E16 Arg2:T96	
+T97	Modifier 953 962	Carefully
+R46	Mod-Link Arg1:E20 Arg2:T97	
+T98	Modifier 994 1001	briefly
+R47	Mod-Link Arg1:E18 Arg2:T98	
+T99	Modifier 479 484	final
+T100	Measure-Type 485 498	concentration
+T101	Concentration 502 507	0.3 M
+R48	Measure Arg1:T39 Arg2:T101	

@@ -1,0 +1,155 @@
+T1	Action 31 35	Spin
+E1	Action:T1 Acts-on:T29
+T2	Action 94 102	Pour off
+E2	Action:T2 Acts-on:T32
+T3	Action 117 120	Add
+E3	Action:T3 Acts-on:T34 Acts-on2:T36
+T4	Action 164 170	Vortex
+E4	Action:T4 
+T5	Action 190 199	spin down
+E5	Action:T5 
+T6	Action 202 210	Incubate
+E6	Action:T6 
+T7	Action 232 235	Add
+E7	Action:T7 Acts-on:T41 Acts-on2:T43 Site:T45
+T8	Action 291 297	Vortex
+E8	Action:T8 
+T9	Action 317 326	spin down
+E9	Action:T9 
+T10	Action 329 337	Transfer
+E10	Action:T10 Acts-on:T48 Site:T49 Site2:T50
+T12	Action 429 436	Dispose
+E12	Action:T12 Acts-on:T53
+T13	Action 455 458	Add
+E13	Action:T13 Acts-on:T55
+T14	Action 478 482	Spin
+E14	Action:T14 
+T15	Action 511 518	Dispose
+E15	Action:T15 Acts-on:T58
+T16	Action 537 540	Add
+E16	Action:T16 Acts-on:T60
+T17	Action 568 572	Spin
+E17	Action:T17 
+T18	Action 601 606	Place
+E18	Action:T18 Acts-on:T63 Site:T65
+T19	Action 649 653	Spin
+E19	Action:T19 
+T20	Action 678 683	Place
+E20	Action:T20 Acts-on:T68 Site:T70
+T21	Action 718 721	Add
+E21	Action:T21 Acts-on:T72
+T22	Action 739 747	Incubate
+E22	Action:T22 
+T23	Action 769 773	Spin
+E23	Action:T23 
+T24	Action 803 806	Add
+E24	Action:T24 Acts-on:T79
+T25	Action 832 840	Incubate
+E25	Action:T25 
+T26	Action 861 865	Spin
+E26	Action:T26 
+T27	Action 894 901	Discard
+E27	Action:T27 Acts-on:T84
+T11	Action 396 400	Spin
+E11	Action:T11 
+T28	Amount 36 41	500ul
+T29	Reagent 45 67	bacteria broth culture
+T30	Speed 71 77	10000g
+T31	Time 82 92	10 minutes
+T32	Reagent 103 114	supernatant
+T33	Amount 121 126	200ul
+T34	Reagent 127 139	Lysis buffer
+T35	Amount 144 148	20ul
+T36	Reagent 149 161	Proteinase K
+T37	Time 175 185	15 seconds
+T38	Temperature 214 218	56 C
+T39	Time 223 229	1 hour
+T40	Amount 236 241	200ul
+T41	Reagent 242 256	Binding Buffer
+T42	Amount 261 266	200ul
+T43	Reagent 267 274	Ethanol
+T44	Modifier 278 282	each
+T45	Reagent 283 289	sample
+T46	Time 302 312	15 seconds
+T47	Amount 342 347	600ul
+T48	Reagent 351 357	sample
+T49	Location 363 374	spin column
+T50	Location 379 394	collection tube
+T51	Speed 404 414	high speed
+T52	Time 419 427	1 minute
+T53	Reagent 440 452	flow through
+T54	Amount 459 464	500ul
+T55	Reagent 465 476	Wash Buffer
+T56	Speed 486 496	high speed
+T57	Time 501 509	1 minute
+T58	Reagent 522 534	flow through
+T59	Amount 549 554	500ul
+T60	Reagent 555 566	Wash Buffer
+T61	Speed 576 586	high speed
+T62	Time 591 599	1 minute
+T63	Location 611 622	spin column
+T64	Modifier 628 631	new
+T65	Location 632 647	collection tube
+T66	Speed 657 661	high
+T67	Time 666 675	2 minutes
+T68	Location 688 699	spin column
+T69	Modifier 705 710	clean
+T70	Location 711 715	tube
+T71	Amount 722 727	100ul
+T72	Reagent 728 737	TE buffer
+T73	Temperature 751 753	RT
+T74	Time 758 767	2 minutes
+T75	Speed 777 787	high speed
+T76	Time 792 800	1 minute
+T77	Modifier 807 814	another
+T78	Amount 815 820	100ul
+T79	Reagent 821 830	TE buffer
+T80	Temperature 844 846	RT
+T81	Time 851 859	1 minute
+T82	Speed 869 879	high speed
+T83	Time 884 892	1 minute
+T84	Location 902 913	spin column
+R1	Measure Arg1:T29 Arg2:T28	
+R2	Setting Arg1:E1 Arg2:T30	
+R3	Setting Arg1:E1 Arg2:T31	
+R4	Measure Arg1:T34 Arg2:T33	
+R5	Measure Arg1:T36 Arg2:T35	
+R6	Setting Arg1:E4 Arg2:T37	
+R7	Setting Arg1:E6 Arg2:T38	
+R8	Setting Arg1:E6 Arg2:T39	
+R9	Measure Arg1:T41 Arg2:T40	
+R10	Measure Arg1:T43 Arg2:T42	
+R11	Mod-Link Arg1:T45 Arg2:T44	
+R12	Setting Arg1:E8 Arg2:T46	
+R13	Measure Arg1:T48 Arg2:T47	
+R14	Setting Arg1:E11 Arg2:T51	
+R15	Setting Arg1:E11 Arg2:T52	
+R16	Measure Arg1:T55 Arg2:T54	
+R17	Setting Arg1:E14 Arg2:T56	
+R18	Setting Arg1:E14 Arg2:T57	
+R19	Measure Arg1:T60 Arg2:T59	
+R20	Setting Arg1:E17 Arg2:T61	
+R21	Setting Arg1:E17 Arg2:T62	
+R22	Mod-Link Arg1:T65 Arg2:T64	
+R23	Setting Arg1:E19 Arg2:T66	
+R24	Setting Arg1:E19 Arg2:T67	
+R25	Mod-Link Arg1:T70 Arg2:T69	
+R26	Measure Arg1:T72 Arg2:T71	
+R27	Setting Arg1:E22 Arg2:T73	
+R28	Setting Arg1:E22 Arg2:T74	
+R29	Setting Arg1:E23 Arg2:T75	
+R30	Setting Arg1:E23 Arg2:T76	
+R31	Measure Arg1:T79 Arg2:T78	
+R32	Mod-Link Arg1:T79 Arg2:T77	
+R33	Setting Arg1:E25 Arg2:T80	
+R34	Setting Arg1:E25 Arg2:T81	
+R35	Setting Arg1:E26 Arg2:T82	
+R36	Setting Arg1:E26 Arg2:T83	
+T85	Location 0 15	DIY Spin Column
+T86	Reagent 16 19	DNA
+T87	Method 20 30	Extraction
+T88	Modifier 915 924	Extracted
+T89	Reagent 925 928	DNA
+T90	Location 935 939	tube
+R37	Mod-Link Arg1:T89 Arg2:T88	
+R38	Meronym Arg1:T89 Arg2:T90	

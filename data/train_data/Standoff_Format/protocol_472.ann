@@ -1,0 +1,111 @@
+T1	Action 29 34	Place
+E1	Action:T1 Acts-on:T21 Site:T22 Using:T24
+T2	Action 88 93	Place
+E2	Action:T2 Site:T25
+T3	Action 129 133	Fill
+E3	Action:T3 Acts-on:T27
+T8	Action 298 304	Follow
+E8	Action:T8 Measure-Type-Link:T59
+T9	Action 420 424	vent
+E9	Action:T9 Acts-on:T6
+T10	Action 429 435	remove
+E10	Action:T10 Acts-on:T6
+T11	Action 505 510	drain
+E11	Action:T11 Acts-on:T7
+T12	Action 529 535	refill
+E12	Action:T12 Using:T32
+T13	Action 573 577	Line
+E13	Action:T13 Acts-on:T33 Using:T34
+T14	Action 615 620	Slash
+E14	Action:T14 Acts-on:T37 Count:T35 Site:T36
+T15	Action 670 675	Place
+E15	Action:T15 Acts-on:T39 Site:T40
+T16	Action 692 696	Cook
+E16	Action:T16 Using:T41
+T17	Action 772 776	Vent
+E17	Action:T17 Acts-on:T44
+T18	Action 813 818	Place
+E18	Action:T18 Acts-on:T46 Site:T47
+T19	Action 840 843	put
+E19	Action:T19 Acts-on:T52
+T20	Action 904 913	Break out
+E20	Action:T20 Acts-on:T70 Acts-on2:T71 Acts-on3:T72
+T21	Reagent 35 39	food
+T22	Location 43 52	container
+T23	Location 56 60	foil
+T24	Method 64 86	directed in the recipe
+R1	Or Arg1:T22 Arg2:T23	
+T25	Location 97 102	shelf
+T26	Device 110 127	autoclave chamber
+R2	Meronym Arg1:T25 Arg2:T26	
+T27	Device 134 141	chamber
+T28	Device 147 156	autoclave
+T4	Action 160 169	sterilize
+E4	Action:T4 Using:T28
+T29	Action 174 179	close
+E21	Action:T29 
+T5	Action 185 194	autoclave
+E5	Action:T5 
+T30	Temperature 203 208	265°F
+R3	Setting Arg1:E5 Arg2:T30	
+T6	Reagent 436 440	food
+T7	Device 515 524	autoclave
+T31	Modifier 541 546	fresh
+T32	Reagent 547 552	water
+R4	Mod-Link Arg1:T32 Arg2:T31	
+T33	Location 578 592	autoclave tray
+T34	Seal 598 613	heavy-duty foil
+T35	Numerical 642 648	3 or 4
+T36	Location 658 668	both sides
+T37	Reagent 621 627	franks
+T38	Modifier 633 641	diagonal
+R5	Mod-Link Arg1:E14 Arg2:T38	
+T39	Reagent 676 682	franks
+T40	Location 686 690	tray
+T41	Method 697 719	accord to instructions
+T42	Time 761 770	4 minutes
+R6	Setting Arg1:E16 Arg2:T42	
+T43	Action 783 789	remove
+E6	Action:T43 Acts-on:T44 Acts-on2:T45
+T44	Reagent 794 802	sausages
+T46	Reagent 819 823	buns
+T47	Location 831 835	tray
+T48	Time 883 894	4-5 minutes
+T49	Action 898 902	warm
+E22	Action:T49 
+T50	Seal 861 865	door
+T51	Action 866 872	closed
+E23	Action:T51 Acts-on:T50
+T52	Mention 844 848	them
+R7	Coreference-Link Arg1:T52 Arg2:T47	
+R8	Setting Arg1:E19 Arg2:T48	
+T53	Method 0 28	Autoclave Frankfurter Fiesta
+T54	Measure-Type 210 218	Pressure
+T55	Action 249 255	Adjust
+E24	Action:T55 Commands:E25
+T56	Action 259 267	maintain
+E25	Action:T56 Measure-Type-Link:T57
+T57	Measure-Type 268 279	temperature
+T58	Temperature 288 296	260-270°
+R9	Setting Arg1:E25 Arg2:T58	
+T59	Measure-Type 309 321	cooking time
+T60	Method 333 339	recipe
+T61	Measure-Type 362 373	temperature
+T62	Temperature 382 387	265°F
+T63	Measure-Type 394 406	cooking time
+T64	Reagent 449 453	food
+T65	Mention 457 460	its
+T66	Reagent 461 468	liquids
+T67	Action 469 473	leak
+E26	Action:T67 
+T68	Reagent 483 488	water
+T69	Location 496 503	chamber
+R10	Coreference-Link Arg1:T65 Arg2:T64	
+R11	Or Arg1:T64 Arg2:T66	
+R12	Meronym Arg1:T66 Arg2:T65	
+T45	Seal 807 811	foil
+T70	Reagent 918 925	mustard
+T71	Reagent 927 937	sauerkraut
+T72	Reagent 947 956	condiment
+T73	Device 732 741	autoclave
+T74	Generic-Measure 236 247	green range

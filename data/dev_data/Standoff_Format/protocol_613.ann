@@ -1,0 +1,168 @@
+T1	Action 74 77	Use
+E1	Action:T1 Site:T15 Acts-on:T16
+T2	Action 102 103	p
+E2	Action:T2 Acts-on:T17 Acts-on2:T20
+T3	Action 298 301	Add
+E3	Action:T3 Acts-on:T23 Site:T25
+T4	Action 360 363	Add
+E4	Action:T4 Acts-on:T27 Site:T29
+T5	Action 403 411	Incubate
+E5	Action:T5 
+T6	Action 449 452	Add
+E6	Action:T6 Acts-on:T34 Site:T35
+T7	Action 493 503	Centrifuge
+E7	Action:T7 Acts-on:T37
+T8	Action 593 603	Decant off
+E8	Action:T8 Acts-on:T43
+T9	Action 675 680	pulse
+E9	Action:T9 Acts-on:T45 Using:T46
+T10	Action 714 720	remove
+E10	Action:T10 Using:T52 Acts-on:T51
+T11	Action 737 740	Add
+E11	Action:T11 Acts-on:T54 Acts-on2:T56 Site:T57
+T12	Action 1027 1035	Incubate
+E12	Action:T12 
+T13	Action 1139 1143	Plot
+E13	Action:T13 
+T14	Amount 78 81	2ml
+T15	Location 82 87	tubes
+T16	Reagent 92 97	assay
+R1	Measure Arg1:T15 Arg2:T14	
+T17	Reagent 116 133	protein standards
+T18	Modifier 109 112	set
+T19	Modifier 144 152	supplied
+T20	Reagent 153 156	BSA
+T21	Reagent 160 187	Non-Animal Protein Standard
+R2	Mod-Link Arg1:T17 Arg2:T18	
+R3	Mod-Link Arg1:T20 Arg2:T19	
+R4	Or Arg1:T20 Arg2:T21	
+T22	Amount 302 308	1-50µl
+T23	Reagent 316 331	protein samples
+T24	Amount 349 352	2ml
+T25	Location 353 358	tubes
+R5	Measure Arg1:T23 Arg2:T22	
+R6	Measure Arg1:T25 Arg2:T24	
+T26	Amount 364 369	0.5ml
+T27	Reagent 370 377	UPPA™ I
+T28	Modifier 381 385	each
+T29	Location 386 390	tube
+T30	Action 395 401	vortex
+E14	Action:T30 Acts-on:T29
+R7	Measure Arg1:T27 Arg2:T26	
+R8	Mod-Link Arg1:T29 Arg2:T28	
+T31	Time 416 427	2-3 minutes
+T32	Temperature 431 447	room temperature
+R9	Setting Arg1:E5 Arg2:T31	
+R10	Setting Arg1:E5 Arg2:T32	
+T33	Amount 453 458	0.5ml
+T34	Reagent 459 467	UPPA™ II
+T35	Location 475 480	tubes
+T36	Action 485 491	vortex
+E15	Action:T36 Acts-on:T35
+R11	Measure Arg1:T34 Arg2:T33	
+T37	Location 508 513	tubes
+T38	Speed 532 541	~10,000xg
+T39	Time 547 556	5 minutes
+T40	Action 560 566	pellet
+E16	Action:T40 Acts-on:T42
+T41	Modifier 571 583	precipitated
+T42	Reagent 584 591	protein
+R12	Mod-Link Arg1:T42 Arg2:T41	
+R13	Setting Arg1:E7 Arg2:T38	
+R14	Setting Arg1:E7 Arg2:T39	
+T43	Reagent 608 619	supernatant
+T44	Action 621 627	return
+E17	Action:T44 Acts-on:T45 Site:T46 Using:T47
+T45	Location 632 637	tubes
+T46	Device 645 655	centrifuge
+T47	Method 659 665	before
+T48	Modifier 667 674	quickly
+T49	Action 684 693	spin down
+E18	Action:T49 Acts-on:T51
+T50	Modifier 694 702	residual
+T51	Reagent 703 709	liquid
+T52	Device 728 735	pipette
+R15	Mod-Link Arg1:E9 Arg2:T48	
+R16	Mod-Link Arg1:T51 Arg2:T50	
+T53	Amount 741 746	100µl
+T54	Reagent 747 762	Copper Solution
+T55	Amount 779 784	400µl
+T56	Reagent 795 800	water
+T57	Location 808 813	tubes
+T58	Action 818 824	vortex
+E19	Action:T58 Acts-on:T57
+T59	Modifier 785 794	deionized
+R17	Mod-Link Arg1:T56 Arg2:T59	
+R18	Measure Arg1:T56 Arg2:T55	
+R19	Measure Arg1:T54 Arg2:T53	
+T60	Amount 879 882	1ml
+T61	Device 883 890	pipette
+T62	Amount 906 909	1ml
+T63	Reagent 910 920	Reagent II
+R20	Measure Arg1:T63 Arg2:T62	
+R21	Setting Arg1:T61 Arg2:T60	
+T64	Action 900 905	shoot
+E20	Action:T64 Using:T61 Acts-on:T63 Site:T68
+T65	Modifier 892 899	rapidly
+R22	Mod-Link Arg1:E20 Arg2:T65	
+T66	Modifier 921 929	directly
+R23	Mod-Link Arg1:E20 Arg2:T66	
+T67	Modifier 935 939	each
+T68	Location 940 944	tube
+R24	Mod-Link Arg1:T68 Arg2:T67	
+T69	Reagent 956 965	Reagent I
+T70	Reagent 971 979	DI Water
+R25	Meronym Arg1:T69 Arg2:T68	
+R26	Meronym Arg1:T70 Arg2:T68	
+T71	Modifier 984 995	immediately
+T73	Mention 1000 1002	it
+T72	Action 996 999	mix
+E21	Action:T72 Acts-on:T73
+T74	Action 1006 1015	inverting
+E22	Action:T74 Acts-on:T75
+T75	Location 1020 1025	tubes
+R27	Mod-Link Arg1:E21 Arg2:T71	
+R28	Coreference-Link Arg1:T73 Arg2:T68	
+T76	Temperature 1039 1055	room temperature
+T77	Time 1060 1073	15-20 minutes
+T78	Modifier 1083 1094	immediately
+T79	Action 1095 1099	read
+E23	Action:T79 Measure-Type-Link:T80 Acts-on:T82
+T80	Measure-Type 1100 1111	absorbances
+T81	Generic-Measure 1115 1120	480nm
+T82	Reagent 1129 1137	DI water
+R29	Setting Arg1:E12 Arg2:T76	
+R30	Setting Arg1:E12 Arg2:T77	
+R31	Mod-Link Arg1:E23 Arg2:T78	
+R32	Setting Arg1:E23 Arg2:T81	
+T83	Modifier 2 23	Non-Interfering™ (NI)
+T84	Method 24 37	Protein Assay
+T85	Action 38 45	Perform
+E24	Action:T85 Using:T86
+T86	Method 46 52	assays
+T87	Temperature 56 72	room temperature
+R33	Setting Arg1:E24 Arg2:T87	
+T88	Modifier 191 200	indicated
+T89	Concentration 251 257	2mg/ml
+T90	Measure-Type 260 262	µl
+T91	Reagent 272 279	Protein
+T92	Reagent 233 249	Protein Standard
+R34	Measure Arg1:T92 Arg2:T89	
+T93	Modifier 332 345	to be assayed
+R35	Mod-Link Arg1:T23 Arg2:T93	
+T94	Speed 517 530	maximum speed
+R36	Setting Arg1:E7 Arg2:T94	
+R37	Coreference-Link Arg1:T38 Arg2:T94	
+T95	Reagent 764 773	Reagent I
+R38	Meronym Arg1:T95 Arg2:T54	
+T96	Reagent 835 861	protein precipitate pellet
+T97	Action 862 871	dissolves
+E25	Action:T97 Acts-on:T96
+T98	Modifier 825 830	until
+R39	Mod-Link Arg1:E19 Arg2:T98	
+T99	Measure-Type 1144 1154	absorbance
+T100	Measure-Type 1163 1184	protein concentration
+T101	Action 1189 1198	determine
+E26	Action:T101 Measure-Type-Link:T102 Acts-on:T103
+T102	Measure-Type 1199 1221	protein concentrations
+T103	Reagent 1225 1233	unknowns

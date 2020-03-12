@@ -1,0 +1,224 @@
+T2	Action 176 182	Remove
+E2	Action:T2 Acts-on:T1
+T3	Action 375 380	Rinse
+E3	Action:T3 Acts-on:T36 Using:T38
+T4	Action 480 487	Replace
+E4	Action:T4 Acts-on:T39 Using:T40 Site:T42
+T5	Action 527 531	Take
+E5	Action:T5 Acts-on:T43 Using:T44
+T6	Action 591 596	Rinse
+E6	Action:T6 Acts-on:T47
+T7	Action 637 640	Put
+E7	Action:T7 Acts-on:T51 Site:T52
+T8	Action 715 721	Record
+E8	Action:T8 Measure-Type-Link:T53
+T9	Action 740 745	start
+E9	Action:T9 Acts-on:T54
+T10	Action 780 785	Clamp
+E10	Action:T10 Acts-on:T57
+T11	Action 870 881	Concentrate
+E11	Action:T11 Acts-on:T59
+T12	Action 944 952	Transfer
+E12	Action:T12 Acts-on:T56 Site:T64 Site2:T67
+T14	Action 1080 1088	lowering
+E14	Action:T14 
+T15	Action 1187 1192	clamp
+E15	Action:T15 Acts-on:T13
+T16	Action 1211 1222	recirculate
+E16	Action:T16 
+T17	Action 1272 1279	Leaving
+E17	Action:T17 Acts-on:T76
+T18	Action 1406 1410	Take
+E18	Action:T18 Acts-on:T84 Measure-Type-Link:T85
+T21	Action 1527 1532	Store
+E21	Action:T21 Acts-on:T117
+T22	Action 1664 1669	Rinse
+E22	Action:T22 Using:T123
+T23	Action 1702 1707	Rinse
+E23	Action:T23 Using:T126
+T24	Action 1737 1742	Rinse
+E24	Action:T24 Using:T128
+T25	Action 1767 1770	Put
+E25	Action:T25 Acts-on:T130 Site:T131
+T27	Action 1849 1860	Recirculate
+E27	Action:T27 Site:T135
+T28	Action 1925 1930	Rinse
+E28	Action:T28 Using:T137
+T29	Action 1970 1974	Stop
+E29	Action:T29 Acts-on:T138
+T30	Action 1988 1993	clamp
+E30	Action:T30 Acts-on:T140
+T31	Action 2012 2017	Store
+E31	Action:T31 
+T32	Action 2054 2059	store
+E32	Action:T32 Using:T143
+T1	Device 187 193	clamps
+T33	Action 194 197	Set
+E1	Action:T33 Acts-on:T34
+T34	Device 202 206	pump
+T35	Speed 210 223	maximum speed
+T36	Device 385 394	cartridge
+T37	Amount 406 412	250 mL
+T38	Reagent 416 428	MilliQ water
+T39	Reagent 488 500	MilliQ water
+T40	Reagent 504 510	sample
+T41	Amount 514 517	6 L
+T42	Location 518 524	bottle
+T43	Reagent 532 538	sample
+T44	Method 543 557	flow cytometry
+T45	Action 561 568	compute
+E33	Action:T45 Measure-Type-Link:T46
+T46	Measure-Type 569 589	concentration factor
+T47	Device 597 606	cartridge
+T48	Modifier 612 617	about
+T49	Amount 618 624	250 mL
+T50	Reagent 628 634	sample
+T51	Device 645 659	retentate line
+T52	Location 669 682	sample bottle
+T53	Measure-Type 722 735	sample volume
+T54	Device 746 750	pump
+T55	Speed 765 778	macimum speed
+T57	Device 790 804	retentate line
+T58	Action 808 816	increase
+E34	Action:T58 Measure-Type-Link:T102
+T59	Reagent 882 888	sample
+T60	Amount 901 907	250 mL
+T63	Modifier 965 972	smaller
+T64	Location 973 979	bottle
+T65	Amount 981 987	250 mL
+T66	Amount 1007 1012	50 mL
+T67	Location 1013 1017	tube
+T68	Location 1023 1037	conical bottom
+T69	Modifier 1064 1078	very carefully
+T70	Speed 1093 1103	pump speed
+T71	Measure-Type 1121 1127	volume
+T72	Action 1131 1138	reduced
+E36	Action:T72 Measure-Type-Link:T71
+T73	Amount 1142 1150	15-20 mL
+T74	Action 1052 1063	concentrate
+E37	Action:T74 
+T13	Location 1193 1206	filtrate tube
+T75	Modifier 1223 1229	slowly
+T76	Location 1284 1297	filtrate tube
+T77	Action 1307 1310	get
+E13	Action:T77 Acts-on:T78 Site:T79
+T78	Device 1315 1324	feed line
+T79	Reagent 1336 1342	sample
+T80	Action 1355 1363	get back
+E38	Action:T80 Acts-on:T83
+T81	Amount 1368 1380	total volume
+T82	Modifier 1384 1396	concentrated
+T83	Reagent 1397 1403	sample
+T84	Reagent 1411 1417	sample
+T19	Method 0 26	Tangential flow filtration
+T20	Method 28 31	TFF
+T87	Measure-Type 33 46	concentration
+T88	Reagent 50 63	phytoplankton
+T89	Action 64 67	Get
+E19	Action:T89 Acts-on:T90 Site:T91
+T90	Device 68 85	Vivaflow catridge
+T91	Device 93 124	storage Mount Vivaflow catridge
+T92	Device 225 234	Manometer
+T93	Generic-Measure 254 262	2.5 bars
+T94	Modifier 271 274	new
+T95	Device 275 283	cassette
+R1	Mod-Link Arg1:T95 Arg2:T94	
+T96	Device 298 307	manometer
+T97	Device 366 372	system
+T98	Device 440 449	cartridge
+T99	Action 459 465	stored
+E20	Action:T99 Acts-on:T98 Site:T100
+T100	Reagent 469 476	ethanol
+R2	Measure Arg1:T92 Arg2:T93	
+T101	Method 694 707	Recirculation
+T102	Measure-Type 817 830	filtrate flow
+T103	Device 839 848	Manometer
+T104	Generic-Measure 860 868	2.5 bars
+T105	Amount 917 920	6 L
+T106	Time 933 941	one hour
+T107	Modifier 927 932	about
+T108	Modifier 1158 1163	final
+T109	Measure-Type 1164 1170	volume
+T110	Amount 1180 1185	10 mL
+T111	Measure-Type 1244 1250	volume
+T112	Reagent 1469 1475	sample
+T113	Measure-Type 1476 1489	concnetration
+T114	Measure-Type 1503 1523	concentration factor
+T115	Action 1494 1502	estimate
+E40	Action:T115 Measure-Type-Link:T114
+T116	Modifier 1533 1545	concentrated
+T117	Reagent 1546 1552	sample
+T118	Method 1573 1587	flow cytometry
+T119	Action 1588 1595	sorting
+E41	Action:T119 
+T120	Reagent 1597 1604	culture
+T121	Time 1670 1675	1 min
+T122	Modifier 1681 1689	filtered
+T123	Reagent 1690 1699	sea water
+T124	Time 1708 1713	1 min
+T125	Modifier 1719 1728	distilled
+T126	Reagent 1729 1734	water
+T127	Amount 1748 1753	50 mL
+T128	Reagent 1754 1758	NaOH
+T129	Numerical 1775 1780	three
+T130	Location 1781 1786	tubes
+T131	Location 1818 1824	bottle
+T132	Reagent 1836 1840	NaOH
+T133	Concentration 1841 1846	0.1 M
+T134	Time 1865 1871	20 min
+T135	Device 1905 1921	cartridge filter
+T136	Amount 1936 1942	250 mL
+T137	Reagent 1946 1958	MilliQ water
+T138	Device 1979 1983	pump
+T139	Numerical 1998 2003	three
+T140	Location 2004 2009	tubes
+T141	Temperature 2021 2024	4°C
+T142	Time 2047 2052	1 day
+T143	Reagent 2065 2072	Ethanol
+T144	Concentration 2073 2076	10%
+R3	Setting Arg1:E1 Arg2:T35	
+R4	Measure Arg1:T38 Arg2:T37	
+R5	Measure Arg1:T42 Arg2:T41	
+R6	Measure Arg1:T50 Arg2:T49	
+R7	Mod-Link Arg1:T49 Arg2:T48	
+R8	Setting Arg1:E9 Arg2:T55	
+R9	Measure Arg1:T103 Arg2:T104	
+R10	Measure Arg1:T59 Arg2:T60	
+R11	Mod-Link Arg1:T106 Arg2:T107	
+T56	Reagent 953 960	sample 
+R12	Mod-Link Arg1:T64 Arg2:T63	
+R13	Measure Arg1:T64 Arg2:T65	
+R14	Measure Arg1:T67 Arg2:T66	
+R15	Mod-Link Arg1:E37 Arg2:T69	
+R16	Setting Arg1:E14 Arg2:T70	
+T61	Reagent 1114 1120	sample
+R17	Setting Arg1:E36 Arg2:T73	
+R18	Mod-Link Arg1:E16 Arg2:T75	
+R19	Mod-Link Arg1:T83 Arg2:T82	
+R20	Measure Arg1:T83 Arg2:T81	
+T85	Measure-Type 1422 1442	flow cytometry count
+T86	Action 1447 1454	compare
+E35	Action:T86 Measure-Type-Link:T113
+R21	Mod-Link Arg1:T117 Arg2:T116	
+R22	Setting Arg1:E22 Arg2:T121	
+R23	Mod-Link Arg1:T123 Arg2:T122	
+R24	Setting Arg1:E23 Arg2:T124	
+R25	Mod-Link Arg1:T126 Arg2:T125	
+T145	Concentration 1759 1764	0.1 M
+R26	Measure Arg1:T128 Arg2:T127	
+R27	Measure Arg1:T128 Arg2:T145	
+R28	Measure Arg1:T130 Arg2:T129	
+T26	Modifier 1788 1792	feed
+T146	Modifier 1794 1803	retentate
+T147	Modifier 1805 1813	filtrate
+R29	Mod-Link Arg1:T130 Arg2:T26	
+R30	Mod-Link Arg1:T130 Arg2:T146	
+R31	Mod-Link Arg1:T130 Arg2:T147	
+R32	Measure Arg1:T132 Arg2:T133	
+R33	Meronym Arg1:T132 Arg2:T131	
+R34	Setting Arg1:E27 Arg2:T134	
+R35	Measure Arg1:T137 Arg2:T136	
+R36	Measure Arg1:T140 Arg2:T139	
+R37	Setting Arg1:E31 Arg2:T141	
+R38	Setting Arg1:E32 Arg2:T142	
+R39	Measure Arg1:T143 Arg2:T144	

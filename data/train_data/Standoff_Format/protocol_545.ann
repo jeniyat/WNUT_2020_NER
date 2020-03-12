@@ -1,0 +1,162 @@
+T5	Action 648 651	Mix
+E5	Action:T5 Acts-on:T3 Acts-on2:T16
+T6	Action 701 709	Incubate
+E6	Action:T6 Acts-on:T17
+T7	Action 839 842	Mix
+E7	Action:T7 Acts-on:T25
+T8	Action 995 1003	Incubate
+E8	Action:T8 
+T9	Action 1026 1034	Incubate
+E9	Action:T9 
+T10	Action 1057 1065	Incubate
+E10	Action:T10 
+T11	Action 1088 1096	Incubate
+E11	Action:T11 
+T12	Action 1119 1127	Incubate
+E12	Action:T12 
+T13	Action 1265 1274	Transform
+E13	Action:T13 
+T14	Action 1279 1285	spread
+E14	Action:T14 Site:T37
+T1	Amount 652 655	1µl
+T2	Concentration 656 661	100µM
+T3	Reagent 662 667	stock
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Measure Arg1:T3 Arg2:T1	
+T4	Amount 678 682	20µl
+T15	Concentration 683 685	1x
+T16	Reagent 686 698	NEB buffer 2
+R3	Measure Arg1:T16 Arg2:T15	
+R4	Measure Arg1:T16 Arg2:T4	
+T17	Reagent 714 721	mixture
+T18	Temperature 734 739	95 °C
+T19	Time 744 749	5 min
+T20	Temperature 764 769	50 °C
+T21	Temperature 785 790	50 °C
+T22	Time 795 801	10 min
+T23	Temperature 811 815	4 °C
+R5	Setting Arg1:E6 Arg2:T18	
+R6	Setting Arg1:E6 Arg2:T19	
+R7	Setting Arg1:E6 Arg2:T20	
+R8	Setting Arg1:E6 Arg2:T21	
+R9	Setting Arg1:E6 Arg2:T22	
+R10	Setting Arg1:E6 Arg2:T23	
+T24	Generic-Measure 819 836	normal ramp speed
+R11	Setting Arg1:E6 Arg2:T24	
+T25	Reagent 847 867	following components
+T26	Temperature 1007 1012	37 °C
+T27	Time 1017 1023	20 min
+R12	Setting Arg1:E8 Arg2:T26	
+R13	Setting Arg1:E8 Arg2:T27	
+T28	Temperature 1038 1043	16 °C
+R14	Setting Arg1:E9 Arg2:T28	
+T29	Time 1048 1054	15 min
+R15	Setting Arg1:E9 Arg2:T29	
+T30	Temperature 1069 1074	37 °C
+T31	Time 1079 1085	10 min
+R16	Setting Arg1:E10 Arg2:T30	
+R17	Setting Arg1:E10 Arg2:T31	
+T32	Temperature 1100 1105	55 °C
+T33	Time 1110 1116	15 min
+R18	Setting Arg1:E11 Arg2:T32	
+R19	Setting Arg1:E11 Arg2:T33	
+T34	Temperature 1131 1136	80 °C
+T35	Time 1141 1147	15 min
+R20	Setting Arg1:E12 Arg2:T34	
+R21	Setting Arg1:E12 Arg2:T35	
+T36	Reagent 1291 1304	spectinomycin
+T37	Location 1315 1321	plates
+T38	Concentration 1306 1313	50µg/ml
+R22	Measure Arg1:T36 Arg2:T38	
+R23	Meronym Arg1:T36 Arg2:T37	
+T39	Method 0 49	Construction of U6-based sgRNA expression vectors
+T40	Action 50 55	Order
+E1	Action:T40 Acts-on:T43 Site:T45
+T41	Modifier 58 62	pair
+T42	Modifier 66 90	U6 vector-specific, 23nt
+T43	Reagent 91 108	targeting primers
+R24	Mod-Link Arg1:T43 Arg2:T42	
+R25	Mod-Link Arg1:T43 Arg2:T41	
+T44	Modifier 113 117	each
+T45	Reagent 118 124	target
+R26	Mod-Link Arg1:T45 Arg2:T44	
+T46	Modifier 129 133	each
+T47	Reagent 134 140	target
+T48	Action 149 154	order
+E2	Action:T48 Acts-on:T49 Site:T47 Site2:T52
+T49	Reagent 157 171	forward primer
+R27	Mod-Link Arg1:T47 Arg2:T46	
+T50	Modifier 172 179	TTCGN19
+T51	Modifier 188 190	U6
+T52	Reagent 191 207	promoter vectors
+R28	Mod-Link Arg1:T52 Arg2:T51	
+T53	Action 209 214	order
+E3	Action:T53 Acts-on:T54
+T54	Reagent 217 231	reverse primer
+T55	Modifier 232 239	AAACN19
+T56	Reagent 256 259	N19
+T57	Reagent 267 282	reverse primers
+R31	Meronym Arg1:T56 Arg2:T57	
+T58	Modifier 286 337	reverse complementary to that in the forward primer
+R32	Mod-Link Arg1:T56 Arg2:T58	
+T59	Action 343 348	order
+E4	Action:T59 
+T60	Reagent 349 356	primers
+T61	Modifier 357 413	compatible with both the pU6x-sgRNA vectors and pT7-gRNA
+T62	Action 415 418	Add
+E15	Action:T62 Acts-on:T63
+T63	Reagent 419 437	gene plasmid #4675
+T64	Action 458 463	order
+E16	Action:T64 Acts-on:T65
+T65	Reagent 464 482	degenerate primers
+T66	Modifier 483 491	WTMGGN18
+R29	Mod-Link Arg1:T54 Arg2:T55	
+R30	Mod-Link Arg1:T49 Arg2:T50	
+T67	Modifier 142 146	GN19
+R33	Mod-Link Arg1:T47 Arg2:T67	
+T68	Modifier 493 500	forward
+T69	Modifier 506 514	AMMCN18C
+T70	Modifier 516 523	reverse
+R34	Mod-Link Arg1:T65 Arg2:T66	
+R35	Mod-Link Arg1:T65 Arg2:T69	
+T71	Modifier 526 551	where M=A or C, W=A or T.
+R36	Mod-Link Arg1:E16 Arg2:T71	
+T72	Reagent 564 567	N18
+T73	Reagent 575 590	reverse primers
+T74	Modifier 594 645	reverse complementary to that in the forward primer
+R37	Meronym Arg1:T72 Arg2:T73	
+R38	Mod-Link Arg1:T72 Arg2:T74	
+T75	Modifier 668 672	each
+R39	Mod-Link Arg1:T3 Arg2:T75	
+T76	Action 751 760	ramp down
+E17	Action:T76 Measure-Type-Link:T77
+R40	Setting Arg1:E17 Arg2:T20	
+T77	Measure-Type 773 783	0.1 °C/sec
+T78	Action 802 808	chill 
+E18	Action:T78 
+R41	Setting Arg1:E18 Arg2:T23	
+T79	Action 871 877	ligate
+E19	Action:T79 Acts-on:T81 Acts-on2:T82
+T80	Modifier 882 890	annealed
+T81	Reagent 891 897	oligos
+T82	Reagent 905 914	U6 vector
+T83	Modifier 915 924	of choice
+R42	Mod-Link Arg1:T82 Arg2:T83	
+R43	Mod-Link Arg1:T81 Arg2:T80	
+T84	Reagent 926 936	pU6x-sgRNA
+T85	Reagent 1166 1174	reaction
+T86	Modifier 1178 1202	ready for transformation
+R44	Mod-Link Arg1:T85 Arg2:T86	
+T87	Action 1204 1207	use
+E20	Action:T87 Acts-on:T89
+T88	Amount 1208 1212	2 µl
+T89	Reagent 1220 1228	ligation
+T90	Action 1233 1238	plate
+E21	Action:T90 Acts-on:T92
+T91	Numerical 1239 1242	10%
+T92	Reagent 1249 1262	transformants
+R45	Measure Arg1:T92 Arg2:T91	
+R46	Measure Arg1:T89 Arg2:T88	
+T93	Modifier 1149 1157	optional
+R47	Mod-Link Arg1:E12 Arg2:T93	
+T94	Reagent 961 968	plasmid

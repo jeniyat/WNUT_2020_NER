@@ -1,0 +1,197 @@
+T1	Action 56 60	Turn
+E1	Action:T1 Acts-on:T2
+T2	Device 61 71	heat block
+T3	Action 79 86	preheat
+E2	Action:T3 
+T4	Action 121 124	add
+E3	Action:T4 Acts-on:T7 Site:T9
+T5	Amount 125 132	½ scoop
+T6	Size 140 146	1.0 mm
+T7	Reagent 147 168	zirconium oxide beads
+T8	Amount 182 188	1.5 ml
+T9	Location 189 193	tube
+#1	AnnotatorNotes T9	need a tag for a descriptor of tube. in this sentence we want to tag 'sterile'
+T10	Action 195 200	Close
+E4	Action:T10 Acts-on:T67
+T11	Action 340 346	remove
+E5	Action:T11 Acts-on:T13 Site:T16
+T13	Reagent 389 397	mycelium
+T14	Location 300 317	laminar flow hood
+T15	Location 321 338	biosafety cabinet
+T16	Location 407 425	culture tube/plate
+T17	Action 430 438	transfer
+E6	Action:T17 Site:T19
+#3	AnnotatorNotes E5	In this sentence example, we see 3 different types of 'sites'. The laminar flow hood and biosafety cabinet have a 'or' relation to each other. whereas we are removing a reagent from the  location 'culture tube/plate' so we need to have some form of next dimentional information that marks this distinction among sites                                                                        
+T18	Amount 468 474	1.5 ml
+T19	Location 475 479	tube
+T20	Action 665 668	Add
+E7	Action:T20 Acts-on:T22
+T21	Amount 669 675	100 ul
+T22	Reagent 679 696	Extraction Buffer
+T23	Action 737 746	submerged
+E8	Action:T23 Acts-on:T25 Acts-on2:T24 Using:T26
+T24	Reagent 754 760	liquid
+T25	Reagent 714 722	mycelium
+T26	Method 778 788	centrifuge
+T27	Action 801 806	close
+E9	Action:T27 Acts-on:T28
+T28	Seal 807 816	tube lids
+T29	Action 818 823	Place
+E10	Action:T29 Acts-on:T30 Site:T31
+T30	Location 824 829	tubes
+T31	Device 837 848	bead beater
+T32	Action 969 978	bead beat
+E11	Action:T32 
+T33	Time 983 991	1 minute
+T34	Action 1028 1033	grind
+E12	Action:T34 Using:T36 Acts-on:T35
+T35	Reagent 1038 1044	tissue
+T36	Device 1060 1071	blue pestle
+T37	Time 1123 1140	Briefly (<30 sec)
+T38	Action 1155 1161	remove
+E13	Action:T38 Acts-on:T40 Site:T41 Using:T39
+T39	Method 1141 1151	centrifuge
+T40	Reagent 1162 1168	liquid
+T41	Seal 1178 1181	lid
+T42	Action 1198 1210	Do not leave
+E14	Action:T42 Acts-on:T43 Site:T44
+T43	Reagent 1211 1218	samples
+T44	Reagent 1226 1243	Extraction Buffer
+T45	Time 1244 1255	>25 minutes
+T46	Action 1295 1300	Place
+E15	Action:T46 Acts-on:T47 Site:T48
+T47	Location 1301 1306	tubes
+T48	Device 1310 1320	heat block
+T49	Time 1333 1343	10 minutes
+T51	Modifier 1350 1357	briefly
+T52	Action 1389 1395	remove
+E17	Action:T52 Acts-on:T53
+T53	Reagent 1396 1408	condensation
+T54	Action 1410 1413	Add
+E16	Action:T54 Acts-on:T56
+T55	Amount 1414 1420	100 ul
+T56	Reagent 1424 1439	Dilution Buffer
+T57	Action 1454 1457	mix
+E18	Action:T57 Using:T58
+T58	Method 1444 1450	vortex
+T59	Action 1459 1464	Store
+E19	Action:T59 Acts-on:T60 Product:T61
+T60	Reagent 1469 1472	DNA
+T61	Reagent 1486 1500	short-term use
+#4	AnnotatorNotes T61	new type of tag, 'Reason'
+R1	Measure Arg1:T7 Arg2:T6	
+R2	Measure Arg1:T7 Arg2:T5	
+R3	Measure Arg1:T9 Arg2:T8	
+R5	Measure Arg1:T19 Arg2:T18	
+R6	Measure Arg1:T22 Arg2:T21	
+R8	Setting Arg1:E13 Arg2:T37	
+R9	Setting Arg1:E11 Arg2:T33	
+R10	Setting Arg1:E15 Arg2:T49	
+R7	Measure Arg1:T56 Arg2:T55	
+T63	Generic-Measure 72 74	on
+R12	Setting Arg1:T2 Arg2:T63	
+T64	Temperature 90 93	95C
+R13	Setting Arg1:E2 Arg2:T64	
+T65	Modifier 174 181	sterile
+R14	Mod-Link Arg1:T9 Arg2:T65	
+T66	Location 110 119	lab bench
+R15	Meronym Arg1:T9 Arg2:T66	
+T67	Seal 205 208	lid
+T68	Action 213 218	label
+E20	Action:T68 Acts-on:T69 Acts-on2:T70 Using:T73
+T69	Location 223 226	top
+T70	Location 231 235	side
+T71	Location 244 248	tube
+T72	Modifier 239 243	each
+R16	Meronym Arg1:T69 Arg2:T71	
+R17	Mod-Link Arg1:T71 Arg2:T72	
+R18	Meronym Arg1:T70 Arg2:T71	
+T73	Seal 258 269	sample name
+R19	Or Arg1:T15 Arg2:T14	
+T12	Modifier 349 360	small piece
+T74	Size 377 384	0.5 cm2
+R4	Mod-Link Arg1:T13 Arg2:T12	
+R20	Setting Arg1:T12 Arg2:T74	
+R21	Meronym Arg1:T16 Arg2:T15	
+T75	Modifier 446 467	corresponding labeled
+R22	Mod-Link Arg1:T19 Arg2:T75	
+T76	Modifier 726 736	completely
+R23	Mod-Link Arg1:E8 Arg2:T76	
+T77	Modifier 794 800	firmly
+R24	Mod-Link Arg1:E9 Arg2:T77	
+T78	Action 950 955	Close
+E21	Action:T78 Acts-on:T79
+T79	Seal 960 963	lid
+T80	Speed 995 1003	speed 10
+R25	Setting Arg1:E11 Arg2:T80	
+T81	Modifier 1052 1059	sterile
+R26	Mod-Link Arg1:T36 Arg2:T81	
+T82	Location 1189 1193	tube
+R27	Meronym Arg1:T41 Arg2:T82	
+R28	Setting Arg1:E14 Arg2:T45	
+T83	Temperature 1324 1328	95°C
+R29	Setting Arg1:E15 Arg2:T83	
+T50	Action 1358 1368	centrifuge
+E22	Action:T50 
+R11	Mod-Link Arg1:E22 Arg2:T51	
+T84	Temperature 1476 1481	2-8°C
+T85	Temperature 1505 1517	-20° to -80°
+T62	Reagent 1522 1539	long-term storage
+R30	Setting Arg1:E19 Arg2:T84	
+R31	Or Arg1:T61 Arg2:T62	
+R32	Or Arg1:T84 Arg2:T85	
+T86	Method 0 14	DNA extraction
+T87	Reagent 20 35	fungal mycelium
+T88	Method 42 55	Extract-n-Amp
+T89	Action 95 102	Working
+E23	Action:T89 Site:T66
+T90	Modifier 289 299	either the
+R33	Mod-Link Arg1:T14 Arg2:T90	
+R34	Mod-Link Arg1:T15 Arg2:T90	
+T91	Modifier 362 371	no bigger
+R35	Mod-Link Arg1:T74 Arg2:T91	
+T92	Action 488 496	minimize
+E24	Action:T92 Measure-Type-Link:T93 Acts-on:T94
+T93	Measure-Type 501 507	amount
+T94	Reagent 511 515	agar
+T95	Modifier 546 553	sterile
+T96	Location 554 565	environment
+R36	Mod-Link Arg1:T96 Arg2:T95	
+T97	Action 569 575	ensure
+E25	Action:T97 Acts-on:T98 Site:T96
+T98	Reagent 580 588	cultures
+T99	Modifier 593 609	not contaminated
+R37	Mod-Link Arg1:T98 Arg2:T99	
+T100	Method 619 634	remaining steps
+T101	Action 642 646	done
+E26	Action:T101 Site:T102 Using:T100
+T102	Location 654 663	lab bench
+T103	Action 698 709	making sure
+E27	Action:T103 Acts-on:T25
+T104	Device 863 883	Bullet Blender Storm
+T105	Action 853 858	using
+E28	Action:T105 Acts-on:T104
+T106	Modifier 850 852	If
+R38	Mod-Link Arg1:E28 Arg2:T106	
+T107	Seal 898 901	lid
+T108	Amount 913 919	1.5 ml
+T109	Location 920 925	tubes
+T110	Location 934 948	screwcap tubes
+R39	Measure Arg1:T109 Arg2:T108	
+T111	Modifier 926 929	not
+R40	Mod-Link Arg1:T110 Arg2:T111	
+R41	Meronym Arg1:T107 Arg2:T109	
+T112	Modifier 1006 1019	Alternatively
+T113	Modifier 1076 1094	Use ear protection
+T114	Action 1100 1105	using
+E29	Action:T114 Acts-on:T115
+T115	Device 1110 1121	bead beater
+R42	Mod-Link Arg1:E29 Arg2:T113	
+R43	Mod-Link Arg1:E12 Arg2:T112	
+T116	Modifier 1256 1262	before
+T117	Action 1263 1273	proceeding
+E30	Action:T117 
+T118	Method 1281 1293	heating step
+R44	Mod-Link Arg1:E30 Arg2:T116	
+T119	Modifier 1369 1385	after incubation
+R45	Mod-Link Arg1:E22 Arg2:T119	

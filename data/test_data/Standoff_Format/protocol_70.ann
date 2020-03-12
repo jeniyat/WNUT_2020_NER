@@ -1,0 +1,132 @@
+T1	Action 68 75	Pipette
+E1	Action:T1 Acts-on:T29 Site:T27
+T3	Action 151 156	Float
+E3	Action:T3 Acts-on:T33 Using:T38
+T4	Action 307 314	balance
+E4	Action:T4 Acts-on:T33
+T5	Action 335 339	Load
+E5	Action:T5 Acts-on:T34 Using:T35
+T6	Action 390 394	spin
+E6	Action:T6 Acts-on2:T71
+T7	Action 421 428	Recover
+E7	Action:T7 Acts-on:T30
+T8	Action 456 462	Remove
+E8	Action:T8 Acts-on:T31
+T9	Action 483 492	resuspend
+E9	Action:T9 Acts-on:T32
+T10	Action 505 512	Perform
+E10	Action:T10 Site:T42 Using:T65
+T11	Action 592 596	Thaw
+E11	Action:T11 Acts-on:T46
+T12	Action 620 623	add
+E12	Action:T12 Acts-on:T48 Site:T50
+T13	Action 671 679	incubate
+E13	Action:T13 Acts-on:T50 Site:T67
+T14	Action 704 710	Verify
+E14	Action:T14 Acts-on:T53
+T15	Action 762 771	pipetting
+E15	Action:T15 Acts-on:T54
+T16	Action 820 823	Add
+E16	Action:T16 Acts-on:T59
+T17	Action 852 859	observe
+E17	Action:T17 Acts-on:T60 Site:T61
+T18	Action 908 911	Add
+E18	Action:T18 Acts-on:T62 Using:T64
+T19	Action 962 968	respin
+E19	Action:T19 Acts-on:T64
+T20	Action 979 985	Remove
+E20	Action:T20 Acts-on:T45
+T21	Action 1006 1015	resuspend
+E21	Action:T21 Acts-on:T45
+T22	Amount 76 82	1.7 mL
+T23	Size 93 100	0.22-µm
+T25	Action 1062 1068	Repeat
+E22	Action:T25 Using:T43
+T26	Action 1086 1092	Repeat
+E23	Action:T26 Using:T44
+T2	Modifier 83 92	amplified
+T28	Modifier 101 109	filtered
+T29	Reagent 110 121	virus stock
+T30	Location 433 454	microcentrifuge tubes
+T31	Reagent 467 478	supernatant
+T32	Reagent 497 503	pellet
+T27	Location 134 149	screw cap tubes
+T33	Location 161 182	microcentrifuge tubes
+T34	Location 344 365	ultracentrifuge tubes
+T35	Device 375 385	SW40 rotor
+T36	Location 191 212	ultracentrifuge tubes
+T37	Modifier 186 190	long
+T38	Reagent 232 237	water
+T39	Speed 330 333	1 g
+R6	Setting Arg1:E4 Arg2:T39	
+T40	Speed 403 411	133,000g
+T41	Time 416 419	1 h
+T42	Location 540 553	subdued light
+T43	Method 1075 1084	10 and 11
+T44	Method 1099 1108	10 and 11
+T45	Reagent 990 1001	supernatant
+T47	Amount 624 628	1 µL
+T48	Reagent 629 634	stain
+T49	Modifier 643 655	concentrated
+T50	Location 656 666	virus tube
+T46	Reagent 601 613	SYBR Green I
+R7	Measure Arg1:T48 Arg2:T47	
+R8	Mod-Link Arg1:T50 Arg2:T49	
+R9	Mod-Link Arg1:T36 Arg2:T37	
+T52	Modifier 715 723	staining
+T53	Reagent 751 758	viruses
+T54	Reagent 784 794	suspension
+T55	Location 802 818	microscope slide
+R10	Mod-Link Arg1:T53 Arg2:T52	
+T56	Amount 772 776	1 µL
+R11	Measure Arg1:T54 Arg2:T56	
+R12	Measure Arg1:T29 Arg2:T22	
+R13	Mod-Link Arg1:T29 Arg2:T28	
+R1	Measure Arg1:T29 Arg2:T23	
+R2	Mod-Link Arg1:T29 Arg2:T2	
+T57	Amount 912 919	1.65 mL
+T58	Size 827 837	18 × 18 mm
+T59	Seal 838 847	coverslip
+R3	Measure Arg1:T59 Arg2:T58	
+T60	Location 864 869	slide
+T61	Device 880 906	epifluorescence microscope
+T62	Reagent 920 925	water
+T63	Reagent 929 944	seawater medium
+T64	Location 953 957	tube
+R4	Measure Arg1:T62 Arg2:T57	
+R14	Measure Arg1:T63 Arg2:T57	
+R15	Or Arg1:T62 Arg2:T63	
+T65	Method 517 533	subsequent steps
+R16	Setting Arg1:E6 Arg2:T40	
+R17	Setting Arg1:E6 Arg2:T41	
+T24	Amount 127 133	1.7-mL
+T66	Time 684 690	15 min
+T67	Location 698 702	dark
+R5	Setting Arg1:E13 Arg2:T66	
+T51	Action 253 263	just flush
+E2	Action:T51 Site:T68 Acts-on:T70 Commands:E3
+T68	Location 273 276	top
+T69	Location 284 305	ultracentrifuge tubes
+R18	Meronym Arg1:T68 Arg2:T69	
+T70	Mention 244 248	they
+T71	Mention 395 399	them
+R19	Coreference-Link Arg1:T71 Arg2:T34	
+R20	Meronym Arg1:T70 Arg2:T33	
+R21	Measure Arg1:T27 Arg2:T24	
+T72	Modifier 0 19	Viral and bacterial
+T73	Reagent 20 28	isolates
+R22	Mod-Link Arg1:T73 Arg2:T72	
+T74	Method 30 41	propagation
+T75	Method 46 67	preparation of stocks
+T76	Size 214 224	14 × 95 mm
+R23	Measure Arg1:T36 Arg2:T76	
+T77	Action 575 579	fade
+E24	Action:T77 Acts-on:T79
+T78	Modifier 580 590	if exposed
+R24	Mod-Link Arg1:E24 Arg2:T78	
+T79	Reagent 564 569	stain
+T80	Modifier 1036 1041	first
+T81	Method 1042 1046	wash
+T82	Reagent 1054 1059	stain
+T83	Modifier 1109 1114	again
+R25	Mod-Link Arg1:E23 Arg2:T83	

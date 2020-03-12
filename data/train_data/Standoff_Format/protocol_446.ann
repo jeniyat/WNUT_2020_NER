@@ -1,0 +1,219 @@
+T1	Action 45 53	Dissolve
+E1	Action:T1 Acts-on:T21 Site:T27 Product:T30
+T3	Action 221 228	combine
+E3	Action:T3 Acts-on:T34 Site:T35
+T6	Action 432 436	Heat
+E6	Action:T6 Acts-on:T4 Using:T5
+T7	Action 513 521	stirring
+E7	Action:T7 Acts-on:T41
+T9	Action 645 649	heat
+E9	Action:T9 Acts-on:T42
+T10	Action 675 678	Put
+E10	Action:T10 Acts-on:T45 Site:T46
+T11	Action 710 723	recrystallize
+E11	Action:T11 Acts-on:T90 Using:T48
+T12	Action 782 790	pour off
+E12	Action:T12 Acts-on:T49 Product:T51
+T13	Action 802 813	pipette off
+E13	Action:T13 Acts-on:T49 Product:T51
+T14	Action 881 885	pour
+E14	Action:T14 Acts-on:T53 Site:T56
+T16	Action 1026 1035	evaporate
+E16	Action:T16 Acts-on:T58 Site:T60
+T18	Action 1111 1118	measure
+E18	Action:T18 Acts-on2:T64 Using:T17
+T19	Action 1221 1230	Calculate
+E19	Action:T19 Acts-on:T65
+T20	Action 1262 1265	add
+E20	Action:T20 Site:T67 Product:T69
+T22	Action 1398 1403	Weigh
+E22	Action:T22 Acts-on:T76
+T23	Action 1441 1449	transfer
+E23	Action:T23 Acts-on:T79 Site:T81
+T24	Action 1606 1617	recalculate
+E24	Action:T24 Acts-on:T85
+T25	Action 1708 1711	add
+E25	Action:T25 Acts-on:T89
+T2	Action 142 151	Weigh out
+E2	Action:T2 Acts-on:T32 Site:T33
+T15	Amount 54 62	0.2232 g
+T21	Reagent 66 70	EDTA
+T26	Amount 76 82	600 mL
+T27	Reagent 86 93	Milli-Q
+T29	Generic-Measure 123 135	10-3 mol L-1
+T30	Reagent 136 140	EDTA
+R1	Measure Arg1:T30 Arg2:T29	
+R2	Measure Arg1:T27 Arg2:T26	
+R3	Measure Arg1:T21 Arg2:T15	
+T28	Modifier 152 165	approximately
+T31	Amount 166 171	1.2 g
+T32	Reagent 175 178	DMG
+T33	Location 205 215	weigh boat
+T34	Mention 229 231	it
+T35	Reagent 241 254	EDTA solution
+R4	Mod-Link Arg1:T31 Arg2:T28	
+T4	Reagent 442 450	solution
+T5	Device 456 465	microwave
+T36	Generic-Measure 469 478	50% power
+T37	Reagent 489 492	DMG
+T38	Action 502 511	dissolved
+E4	Action:T38 Acts-on:T37
+T39	Modifier 496 501	fully
+T40	Modifier 525 534	carefully
+T41	Mention 522 524	it
+T8	Time 615 625	30 minutes
+T42	Mention 650 652	it
+T43	Modifier 653 659	slowly
+T44	Modifier 664 673	carefully
+T45	Reagent 683 691	solution
+T46	Location 695 698	ice
+T47	Time 724 733	overnight
+T48	Device 739 751	refrigerator
+T49	Reagent 819 830	supernatant
+T50	Modifier 849 855	little
+T51	Reagent 856 862	liquid
+T52	Modifier 890 899	remaining
+T53	Reagent 900 908	crystals
+T54	Modifier 916 921	clean
+T55	Modifier 923 926	dry
+T56	Location 927 937	weigh boat
+T57	Modifier 1009 1018	remaining
+T58	Reagent 1019 1025	liquid
+T59	Time 1036 1045	overnight
+T60	Location 1055 1072	laminar flow hood
+T17	Location 1123 1134	weight boat
+T61	Modifier 1135 1140	again
+T62	Modifier 1151 1162	approximate
+T63	Amount 1182 1188	amount
+T64	Reagent 1192 1195	DMG
+T65	Reagent 1240 1248	methanol
+T66	Amount 1231 1239	how much
+T67	Reagent 1273 1276	DMG
+T68	Concentration 1318 1329	0.1 mol L-1
+T69	Reagent 1330 1333	DMG
+T70	Action 1339 1345	obtain
+E5	Action:T70 Acts-on:T72
+T71	Modifier 1348 1365	trace metal clean
+T72	Location 1366 1372	bottle
+T73	Modifier 1380 1391	appropriate
+T74	Size 1392 1396	size
+T75	Modifier 1408 1413	clean
+T76	Location 1414 1420	bottle
+T77	Modifier 1431 1440	carefully
+T78	Modifier 1454 1468	recrystallized
+T79	Reagent 1469 1472	DMG
+T80	Modifier 1483 1488	clean
+T81	Location 1489 1495	bottle
+T82	Action 1500 1508	re-weigh
+E8	Action:T82 
+T83	Amount 1622 1628	amount
+T84	Modifier 1632 1638	optima
+T85	Reagent 1639 1647	methanol
+T86	Concentration 1691 1702	0.1 mol L-1
+T87	Amount 1717 1723	amount
+T88	Modifier 1727 1733	optima
+T89	Reagent 1734 1742	methanol
+R5	Measure Arg1:T32 Arg2:T31	
+R6	Coreference-Link Arg1:T34 Arg2:T32	
+R7	Setting Arg1:T5 Arg2:T36	
+R8	Mod-Link Arg1:E4 Arg2:T39	
+R9	Mod-Link Arg1:E7 Arg2:T40	
+R10	Coreference-Link Arg1:T41 Arg2:T4	
+R11	Setting Arg1:E9 Arg2:T8	
+R12	Mod-Link Arg1:E9 Arg2:T43	
+R13	Mod-Link Arg1:E9 Arg2:T44	
+R14	Setting Arg1:E11 Arg2:T47	
+T90	Mention 707 709	it
+R15	Coreference-Link Arg1:T90 Arg2:T45	
+T91	Modifier 795 801	slowly
+R16	Mod-Link Arg1:E13 Arg2:T91	
+R17	Mod-Link Arg1:T51 Arg2:T50	
+R18	Mod-Link Arg1:T53 Arg2:T52	
+R19	Mod-Link Arg1:T56 Arg2:T55	
+R20	Mod-Link Arg1:T56 Arg2:T54	
+R21	Mod-Link Arg1:T58 Arg2:T57	
+R22	Setting Arg1:E16 Arg2:T59	
+R23	Mod-Link Arg1:E18 Arg2:T61	
+R25	Mod-Link Arg1:T63 Arg2:T62	
+R24	Setting Arg1:E18 Arg2:T63	
+R26	Setting Arg1:E19 Arg2:T66	
+R27	Measure Arg1:T69 Arg2:T68	
+R28	Mod-Link Arg1:T72 Arg2:T71	
+R29	Mod-Link Arg1:T74 Arg2:T73	
+R30	Measure Arg1:T72 Arg2:T74	
+R31	Mod-Link Arg1:T76 Arg2:T75	
+R32	Mod-Link Arg1:E23 Arg2:T77	
+R33	Mod-Link Arg1:T79 Arg2:T78	
+R34	Mod-Link Arg1:T81 Arg2:T80	
+R35	Setting Arg1:E24 Arg2:T83	
+R36	Mod-Link Arg1:T85 Arg2:T84	
+T92	Measure-Type 1674 1687	concentration
+R38	Mod-Link Arg1:T89 Arg2:T88	
+R39	Measure Arg1:T89 Arg2:T87	
+T93	Reagent 0 24	Dimethylglyoxime reagent
+T94	Reagent 29 35	cobalt
+T95	Method 36 44	analyses
+T96	Modifier 100 105	final
+T97	Measure-Type 106 119	concentration
+T98	Reagent 180 196	dimethylglyoxime
+R40	Coreference-Link Arg1:T98 Arg2:T32	
+T99	Reagent 349 362	EDTA solution
+T100	Action 335 339	pour
+E15	Action:T100 Acts-on:T106 Site:T99
+T101	Action 256 261	Weigh
+E17	Action:T101 Acts-on:T103 Site:T102
+T102	Location 282 292	weigh boat
+T103	Mention 262 274	what is left
+T104	Reagent 294 297	DMG
+T105	Modifier 306 312	sticky
+T106	Mention 327 329	it
+R41	Coreference-Link Arg1:T106 Arg2:T104	
+R42	Mod-Link Arg1:T104 Arg2:T105	
+T107	Action 368 374	record
+E21	Action:T107 Measure-Type-Link:T109
+T108	Modifier 379 384	final
+T109	Measure-Type 385 391	weight
+T110	Action 401 407	placed
+E26	Action:T110 Site:T111
+T111	Reagent 417 430	EDTA solution
+T112	Action 546 557	microwaving
+E27	Action:T112 
+T113	Action 573 580	prevent
+E28	Action:T113 Acts-on:T115
+T114	Action 589 596	boiling
+E29	Action:T114 
+T115	Mention 581 583	it
+R43	Coreference-Link Arg1:T115 Arg2:T4	
+T116	Mention 598 602	This
+T117	Modifier 609 614	up to
+R44	Mod-Link Arg1:T8 Arg2:T117	
+T118	Modifier 766 780	recrystallized
+T119	Mention 759 761	it
+R45	Mod-Link Arg1:T119 Arg2:T118	
+R46	Or Arg1:E13 Arg2:E12	
+T120	Action 953 960	weighed
+E30	Action:T120 Acts-on:T53
+T121	Measure-Type 975 981	weight
+T122	Action 965 970	noted
+E31	Action:T122 Measure-Type-Link:T121
+T123	Reagent 1088 1094	liquid
+T124	Modifier 1099 1109	evaporated
+R47	Mod-Link Arg1:T123 Arg2:T124	
+T125	Action 1205 1219	recrystallized
+E32	Action:T125 Acts-on:T64
+T126	Modifier 1295 1300	final
+T127	Measure-Type 1301 1314	concentration
+T128	Reagent 1522 1525	DMG
+T129	Modifier 1529 1535	easily
+T130	Action 1536 1547	transferred
+E33	Action:T130 Acts-on:T128 Acts-on2:T132
+T131	Modifier 1557 1562	clean
+T132	Location 1563 1569	bottle
+T133	Action 1578 1586	re-weigh
+E34	Action:T133 
+T134	Action 1757 1761	test
+E35	Action:T134 Acts-on:T135
+T135	Reagent 1766 1773	reagent
+R37	Measure Arg1:T85 Arg2:T86	
+R48	Mod-Link Arg1:E33 Arg2:T129	
+R49	Mod-Link Arg1:T132 Arg2:T131	

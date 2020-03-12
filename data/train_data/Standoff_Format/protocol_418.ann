@@ -1,0 +1,161 @@
+T1	Action 672 675	Mix
+E1	Action:T1 Using:T20 Count:T21
+T2	Action 625 628	Add
+E2	Action:T2 Acts-on:T16 Site:T18
+T3	Action 711 719	Incubate
+E3	Action:T3 
+T4	Action 748 751	Add
+E4	Action:T4 Acts-on:T25 Site:T27
+T5	Action 795 798	mix
+E5	Action:T5 
+T6	Action 823 831	Incubate
+E6	Action:T6 Acts-on:T29 Using:T30
+T7	Action 912 918	Remove
+E7	Action:T7 Acts-on:T32 Site:T33
+T8	Action 948 952	wash
+E8	Action:T8 Acts-on:T34 Count:T37 Using:T36
+T9	Action 993 996	Fix
+E9	Action:T9 Acts-on:T38 Site:T39 Using:T41
+T10	Action 1094 1098	Wash
+E10	Action:T10 Acts-on:T48 Count:T49 Using:T51
+T11	Action 1131 1134	Add
+E11	Action:T11 Acts-on:T53
+T12	Action 1181 1189	incubate
+E12	Action:T12 Acts-on:T56
+T13	Action 1219 1226	Observe
+E13	Action:T13 Acts-on:T59 Using:T60
+T14	Action 1258 1266	evaluate
+E14	Action:T14 Acts-on:T61
+T15	Amount 629 633	6 μl
+T16	Reagent 637 644	reagent
+T17	Amount 648 654	100 μl
+T18	Reagent 658 670	DNA solution
+R1	Measure Arg1:T18 Arg2:T17	
+R2	Measure Arg1:T16 Arg2:T15	
+T19	Modifier 676 685	carefully
+T20	Device 689 698	pipetting
+R3	Mod-Link Arg1:E1 Arg2:T19	
+T21	Numerical 700 702	15
+T22	Time 720 726	10 min
+T23	Temperature 730 746	room temperature
+R4	Setting Arg1:E3 Arg2:T22	
+R5	Setting Arg1:E3 Arg2:T23	
+T24	Amount 752 756	5 μl
+T25	Reagent 760 767	complex
+T26	Location 772 776	well
+T27	Reagent 784 789	cells
+T28	Modifier 799 809	thoroughly
+R6	Mod-Link Arg1:E5 Arg2:T28	
+R7	Measure Arg1:T25 Arg2:T24	
+R8	Meronym Arg1:T25 Arg2:T26	
+T29	Reagent 832 849	transfected cells
+T30	Device 853 866	CO2 incubator
+T31	Time 871 879	48 hours
+R9	Setting Arg1:E6 Arg2:T31	
+T32	Reagent 923 929	medium
+T33	Location 939 943	well
+T34	Reagent 957 962	cells
+T35	Amount 973 978	100μl
+T36	Reagent 983 991	well PBS
+T37	Numerical 963 967	once
+R10	Measure Arg1:T36 Arg2:T35	
+T38	Reagent 1001 1006	cells
+T39	Location 1014 1018	well
+T40	Amount 1024 1028	50μl
+T41	Reagent 1029 1037	solution
+T42	Concentration 1041 1043	4%
+T43	Reagent 1044 1056	formaldehyde
+T44	Reagent 1060 1063	PBS
+T45	Time 1068 1072	5min
+T46	Temperature 1076 1092	room temperature
+R11	Measure Arg1:T41 Arg2:T40	
+R12	Measure Arg1:T43 Arg2:T42	
+R13	Meronym Arg1:T41 Arg2:T43	
+R14	Meronym Arg1:T43 Arg2:T44	
+R15	Setting Arg1:E9 Arg2:T45	
+R16	Setting Arg1:E9 Arg2:T46	
+T47	Modifier 1099 1103	each
+T48	Location 1104 1108	well
+T49	Numerical 1109 1114	twice
+T50	Amount 1120 1125	100μl
+T51	Reagent 1126 1129	PBS
+R17	Measure Arg1:T51 Arg2:T50	
+R18	Mod-Link Arg1:T48 Arg2:T47	
+T52	Amount 1135 1139	50μl
+T53	Location 1144 1148	well
+T54	Modifier 1140 1143	per
+R19	Mod-Link Arg1:T53 Arg2:T54	
+T55	Reagent 1152 1176	substrate/stain solution
+T56	Location 1194 1199	plate
+T57	Time 1200 1209	overnight
+T58	Temperature 1213 1217	37°C
+R21	Setting Arg1:E12 Arg2:T57	
+R22	Setting Arg1:E12 Arg2:T58	
+R23	Meronym Arg1:T53 Arg2:T55	
+R20	Setting Arg1:E11 Arg2:T52	
+T59	Reagent 1231 1236	cells
+T60	Device 1243 1253	microscope
+T61	Reagent 1307 1312	cells
+T62	Method 811 821	Incubation
+T63	Method 881 890	Detection
+T64	Reagent 894 910	β-gal expression
+T65	Modifier 1285 1306	blue (β-gal-positive)
+R24	Mod-Link Arg1:T61 Arg2:T65	
+T66	Method 14 26	transfection
+T67	Reagent 30 32	H4
+T68	Reagent 51 56	Cells
+T69	Method 60 69	FuGENE HD
+T70	Location 73 87	96 well plates
+T71	Action 89 101	Cell plating
+E15	Action:T71 Acts-on:T72
+T72	Reagent 102 104	H4
+T73	Reagent 106 117	neuroglioma
+T74	Reagent 119 124	cells
+T75	Action 130 136	seeded
+E16	Action:T75 Using:T77 Acts-on:T72
+T76	Concentration 142 149	90-100%
+T77	Reagent 150 167	confluent culture
+T78	Method 183 195	transfection
+T79	Measure-Type 205 212	density
+T80	Generic-Measure 213 229	7,000 cells/well
+T81	Amount 233 238	100μl
+T82	Reagent 239 261	complete growth medium
+T83	Reagent 263 267	DMEM
+T84	Concentration 270 273	10%
+T85	Reagent 274 292	Fetal Bovine Serum
+T86	Method 299 311	transfection
+T87	Concentration 315 319	100%
+T88	Reagent 320 338	Fetal Bovine Serum
+T89	Reagent 343 365	complete growth medium
+T90	Action 370 378	replaced
+E17	Action:T90 Acts-on:T89 Using:T91
+T91	Reagent 384 402	Fetal Bovine Serum
+T92	Time 403 412	two hours
+T93	Method 420 432	transfection
+T94	Method 442 453	preparation
+T95	Numerical 459 461	20
+T96	Location 462 467	wells
+R25	Measure Arg1:T96 Arg2:T95	
+T97	Reagent 470 484	Tissue culture
+T98	Location 485 512	96-round bottom well plates
+T99	Method 535 546	preparation
+T100	Action 548 555	Prepare
+E18	Action:T100 Acts-on:T102 Site:T103
+T101	Concentration 556 565	0.02μg/μl
+T102	Reagent 566 584	pCMVβ DNA solution
+T103	Reagent 588 596	OptiMEM®
+T104	Modifier 600 617	sterile deionized
+T105	Reagent 618 623	water
+R26	Coreference-Link Arg1:T73 Arg2:T72	
+R27	Measure Arg1:T77 Arg2:T76	
+R28	Of-Type Arg1:T80 Arg2:T79	
+R29	Measure Arg1:T82 Arg2:T81	
+R30	Measure Arg1:T85 Arg2:T84	
+R31	Meronym Arg1:T83 Arg2:T82	
+R32	Meronym Arg1:T85 Arg2:T82	
+R33	Measure Arg1:T88 Arg2:T87	
+R34	Setting Arg1:E17 Arg2:T92	
+R35	Meronym Arg1:T97 Arg2:T98	
+R36	Measure Arg1:T102 Arg2:T101	
+R37	Or Arg1:T103 Arg2:T105	
+R38	Mod-Link Arg1:T105 Arg2:T104	

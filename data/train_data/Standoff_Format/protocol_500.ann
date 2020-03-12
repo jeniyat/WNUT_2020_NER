@@ -1,0 +1,186 @@
+T1	Action 48 53	Pulse
+E1	Action:T1 Acts-on:T3 Using:T4
+T2	Modifier 54 71	actively dividing
+T3	Reagent 72 77	cells
+T4	Reagent 83 87	BrdU
+R1	Mod-Link Arg1:T3 Arg2:T2	
+T5	Reagent 99 117	cell culture media
+T6	Action 135 141	adding
+E2	Action:T6 Acts-on:T8
+T7	Concentration 142 150	10-40 μM
+T8	Reagent 154 158	BrdU
+T9	Time 163 172	1-2 hours
+R2	Measure Arg1:T8 Arg2:T7	
+R3	Setting Arg1:E2 Arg2:T9	
+T10	Action 125 131	pulsed
+E3	Action:T10 Acts-on:T5 Commands:E2
+T11	Action 175 182	Harvest
+E4	Action:T11 Acts-on:T13
+T12	Action 193 203	centrifuge
+E5	Action:T12 Acts-on:T13
+T13	Reagent 183 188	cells
+T14	Time 208 217	5 minutes
+T15	Speed 221 234	1200-1500 rpm
+T16	Speed 236 247	200-300 x g
+T17	Action 250 254	Wash
+E6	Action:T17 Acts-on:T18 Using:T20
+T18	Reagent 255 260	cells
+T19	Concentration 264 266	1x
+T20	Reagent 267 270	PBS
+T21	Action 315 325	centrifuge
+E7	Action:T21 
+T22	Time 330 339	5 minutes
+T23	Speed 343 356	1200-1500 rpm
+T24	Speed 358 369	200-300 x g
+T25	Action 372 379	Discard
+E8	Action:T25 
+T26	Reagent 380 391	supernatant
+T27	Action 603 611	Dislodge
+E9	Action:T27 Acts-on:T28
+T28	Reagent 612 623	cell pellet
+T29	Action 628 631	add
+E10	Action:T29 Acts-on:T34 Site:T36 Using:T37
+T30	Amount 632 636	5 ml
+T31	Modifier 640 648	ice-cold
+T32	Temperature 650 655	-20⁰C
+T33	Concentration 657 660	70%
+T34	Reagent 661 668	Ethanol
+T35	Generic-Measure 672 681	1-2 X 107
+T36	Reagent 682 687	cells
+T37	Method 688 696	dropwise
+R4	Measure Arg1:T34 Arg2:T33	
+R5	Setting Arg1:T31 Arg2:T32	
+R6	Mod-Link Arg1:T34 Arg2:T31	
+R7	Measure Arg1:T36 Arg2:T35	
+T38	Action 721 729	Incubate
+E11	Action:T38 
+T39	Temperature 733 738	-20⁰C
+T40	Modifier 743 751	at least
+T41	Time 752 759	2 hours
+R8	Mod-Link Arg1:T41 Arg2:T40	
+R9	Setting Arg1:E11 Arg2:T39	
+R10	Setting Arg1:E11 Arg2:T41	
+T42	Action 774 780	stored
+E12	Action:T42 Acts-on:T43
+T43	Reagent 761 766	Cells
+T44	Time 785 797	several days
+T45	Modifier 767 773	may be
+R11	Mod-Link Arg1:E12 Arg2:T45	
+R12	Setting Arg1:E12 Arg2:T44	
+T46	Action 799 805	Repeat
+E13	Action:T46 Using:T47 Count:T111
+T47	Method 806 812	step 3
+T48	Action 821 829	Dislodge
+E14	Action:T48 Acts-on:T49
+T49	Reagent 830 841	cell pellet
+T50	Action 846 849	add
+E15	Action:T50 Acts-on:T53
+T51	Amount 850 854	2 ml
+T52	Concentration 858 861	2 N
+T53	Reagent 862 865	HCl
+T54	Action 870 878	incubate
+E16	Action:T54 
+T55	Time 883 893	20 minutes
+T56	Temperature 897 913	room temperature
+R13	Setting Arg1:E16 Arg2:T55	
+R14	Setting Arg1:E16 Arg2:T56	
+R15	Measure Arg1:T53 Arg2:T52	
+R16	Measure Arg1:T53 Arg2:T51	
+T57	Action 915 921	Repeat
+E17	Action:T57 Using:T58
+T58	Method 922 928	step 3
+T59	Action 930 939	Resuspend
+E18	Action:T59 Acts-on:T60 Using:T62
+T60	Reagent 940 945	cells
+T61	Concentration 951 988	concentration of 1 x 107 cells per/ml
+T62	Reagent 992 1007	staining buffer
+T63	Action 1012 1019	aliquot
+E19	Action:T63 Site:T65
+T64	Amount 1020 1026	100 μl
+T65	Location 1031 1035	tube
+R17	Measure Arg1:T62 Arg2:T61	
+R18	Measure Arg1:T65 Arg2:T64	
+T66	Action 1037 1040	Add
+E20	Action:T66 Acts-on:T67
+T67	Reagent 1041 1059	anti-BrdU antibody
+T68	Modifier 1063 1074	appropriate
+T69	Concentration 1075 1088	concentration
+T70	Action 1093 1101	incubate
+E21	Action:T70 
+T71	Time 1106 1116	20 minutes
+T72	Temperature 1120 1136	room temperature
+R19	Mod-Link Arg1:T69 Arg2:T68	
+R20	Measure Arg1:T67 Arg2:T69	
+R21	Setting Arg1:E21 Arg2:T71	
+R22	Setting Arg1:E21 Arg2:T72	
+T73	Action 1139 1143	Wash
+E22	Action:T73 Acts-on:T74 Site:T75
+T74	Reagent 1144 1149	cells
+T75	Reagent 1153 1173	Cell Staining Buffer
+T76	Action 1196 1206	centrifuge
+E23	Action:T76 
+T77	Time 1211 1220	5 minutes
+T78	Speed 1224 1237	1200-1500 rpm
+T79	Speed 1239 1250	200-300 x g
+R23	Setting Arg1:E23 Arg2:T77	
+R24	Setting Arg1:E23 Arg2:T78	
+R25	Setting Arg1:E23 Arg2:T79	
+T80	Action 1253 1258	Stain
+E24	Action:T80 Acts-on:T81
+T81	Reagent 1259 1262	DNA
+T82	Action 1266 1272	adding
+E25	Action:T82 Acts-on:T84
+T83	Amount 1273 1277	1 μg
+T84	Reagent 1288 1293	7-AAD
+T85	Reagent 1315 1319	DAPI
+R26	Or Arg1:T84 Arg2:T85	
+R27	Measure Arg1:T84 Arg2:T83	
+R28	Measure Arg1:T85 Arg2:T83	
+T86	Action 1339 1343	Wait
+E26	Action:T86 
+T87	Time 1348 1357	5 minutes
+T88	Action 1367 1376	acquiring
+E27	Action:T88 Acts-on:T89 Site:T90
+T89	Reagent 1377 1384	samples
+T90	Device 1388 1402	flow cytometer
+R29	Setting Arg1:E26 Arg2:T87	
+T91	Method 0 18	Anti-BrdU Staining
+T92	Concentration 25 28	70%
+T93	Reagent 29 36	Ethanol
+T94	Reagent 41 47	2N HCl
+T95	Modifier 89 97	in vitro
+R30	Mod-Link Arg1:E3 Arg2:T95	
+R31	Setting Arg1:E5 Arg2:T14	
+R32	Setting Arg1:E5 Arg2:T15	
+R33	Setting Arg1:E5 Arg2:T16	
+T96	Reagent 272 275	PBS
+T97	Concentration 277 292	10x Concentrate
+R34	Measure Arg1:T96 Arg2:T97	
+R35	Meronym Arg1:T96 Arg2:T20	
+R36	Measure Arg1:T20 Arg2:T19	
+R37	Setting Arg1:E7 Arg2:T22	
+R38	Setting Arg1:E7 Arg2:T23	
+R39	Setting Arg1:E7 Arg2:T24	
+T98	Modifier 403 420	combined presence
+T99	Reagent 424 432	proteins
+T100	Reagent 437 440	HCl
+T101	Method 444 460	downstream steps
+T102	Action 465 482	cause aggregation
+E28	Action:T102 Using:T100 Using2:T99
+T103	Modifier 461 464	may
+R40	Mod-Link Arg1:E28 Arg2:T103	
+R41	Mod-Link Arg1:T99 Arg2:T98	
+R42	Mod-Link Arg1:T100 Arg2:T98	
+T104	Modifier 499 517	highly recommended
+T105	Method 523 533	wash steps
+T106	Action 534 541	utilize
+E29	Action:T106 Acts-on:T107
+T107	Reagent 542 545	PBS
+T108	Modifier 546 600	without any protein additive until otherwise indicated
+R43	Mod-Link Arg1:T107 Arg2:T108	
+R44	Mod-Link Arg1:E29 Arg2:T104	
+T109	Modifier 1027 1030	per
+R45	Mod-Link Arg1:T65 Arg2:T109	
+T110	Modifier 697 719	while slowly vortexing
+R46	Mod-Link Arg1:E10 Arg2:T110	
+T111	Numerical 813 818	twice

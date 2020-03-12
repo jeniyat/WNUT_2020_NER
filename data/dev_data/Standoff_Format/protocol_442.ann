@@ -1,0 +1,122 @@
+T1	Action 15 24	Weigh out
+E1	Action:T1 Acts-on:T21 Acts-on2:T22 Acts-on3:T23 Site:T20
+T2	Action 140 145	Swirl
+E2	Action:T2 
+T3	Action 100 107	Extract
+E3	Action:T3 Acts-on:T5
+T4	Amount 108 112	7.5g
+T5	Reagent 113 117	Agar
+T6	Action 155 160	Cover
+E4	Action:T6 Acts-on:T27 Using:T28
+T7	Action 232 241	Autoclave
+E5	Action:T7 Site:T31
+T8	Action 376 381	allow
+E6	Action:T8 Acts-on:T16
+T9	Action 417 420	Add
+E7	Action:T9 Acts-on:T35 Site:T37
+T10	Action 551 555	Pour
+E8	Action:T10 Acts-on:T34 Site:T39
+T11	Amount 557 561	20mL
+T12	Action 606 611	Place
+E9	Action:T12 Acts-on:T13 Site:T40
+T13	Seal 616 620	lids
+T14	Action 697 703	Invert
+E10	Action:T14 Acts-on:T45
+T15	Action 764 769	Label
+E11	Action:T15 Acts-on:T49 Using:T50
+T16	Reagent 386 399	agar solution
+T17	Action 403 407	cool
+E12	Action:T17 
+T18	Temperature 411 415	55°C
+R1	Setting Arg1:E12 Arg2:T18	
+T19	Amount 46 48	1L
+T20	Location 49 65	Erlenmeyer flask
+T21	Reagent 70 74	NaCl
+T22	Reagent 78 86	Tryptone
+T23	Reagent 92 97	Yeast
+T24	Amount 67 69	5g
+T25	Amount 75 77	5g
+T26	Amount 87 91	2.5g
+R2	Measure Arg1:T21 Arg2:T24	
+R3	Measure Arg1:T22 Arg2:T25	
+R4	Measure Arg1:T23 Arg2:T26	
+R5	Measure Arg1:T20 Arg2:T19	
+R6	Measure Arg1:T5 Arg2:T4	
+T28	Seal 187 200	aluminum foil
+T29	Action 205 210	label
+E13	Action:T29 Using:T30
+T30	Seal 216 230	autoclave tape
+T31	Location 249 255	liquid
+T32	Time 268 278	20 minutes
+R7	Setting Arg1:E5 Arg2:T32	
+T27	Location 165 181	top of the flask
+T33	Modifier 425 443	appropriate amount
+T34	Reagent 565 572	LB agar
+T35	Reagent 455 465	antibiotic
+T36	Modifier 447 454	desired
+T37	Reagent 473 481	solution
+T38	Action 537 542	swirl
+E14	Action:T38 
+R8	Mod-Link Arg1:T35 Arg2:T36	
+R9	Mod-Link Arg1:T35 Arg2:T33	
+R10	Measure Arg1:T34 Arg2:T11	
+T39	Location 594 604	Petri dish
+T40	Location 628 634	plates
+T41	Action 639 644	allow
+E15	Action:T41 Acts-on:T44 Commands:E16
+T42	Time 662 675	30-60 minutes
+T43	Action 653 657	cool
+E16	Action:T43 
+T44	Mention 645 649	them
+R11	Setting Arg1:E15 Arg2:T42	
+T45	Location 708 714	plates
+T46	Action 719 722	let
+E17	Action:T46 Acts-on:T45
+T47	Action 723 726	sit
+E18	Action:T47 
+T48	Time 731 749	several more hours
+R12	Setting Arg1:E17 Arg2:T48	
+T49	Location 784 790	plates
+T50	Reagent 796 806	antibiotic
+T52	Action 820 825	store
+E20	Action:T52 Site:T53
+T53	Location 829 841	plastic bags
+T54	Modifier 774 780	bottom
+R13	Mod-Link Arg1:T49 Arg2:T54	
+T55	Location 8 14	Plates
+T56	Action 118 121	add
+E19	Action:T56 Acts-on:T57
+T57	Reagent 123 127	dH2O
+T58	Amount 132 137	500mL
+R14	Measure Arg1:T57 Arg2:T58	
+T59	Action 149 152	mix
+E21	Action:T59 
+T60	Device 300 311	autoclave's
+T61	Action 334 342	removing
+E22	Action:T61 Acts-on:T62 Site:T63
+T62	Reagent 347 355	solution
+T63	Device 365 374	autoclave
+T64	Amount 483 488	500μL
+T65	Concentration 508 514	1,000x
+T66	Reagent 515 531	antibiotic stock
+T67	Action 546 549	mix
+E23	Action:T67 
+T68	Modifier 556 557	~
+R15	Mod-Link Arg1:T11 Arg2:T68	
+T69	Size 577 581	10cm
+T70	Modifier 582 593	polystyrene
+R16	Measure Arg1:T39 Arg2:T69	
+R17	Mod-Link Arg1:T39 Arg2:T70	
+R18	Measure Arg1:T37 Arg2:T64	
+R19	Measure Arg1:T66 Arg2:T65	
+T71	Modifier 683 693	solidified
+R20	Mod-Link Arg1:T44 Arg2:T71	
+T72	Time 753 762	overnight
+R21	Or Arg1:T48 Arg2:T72	
+T51	Action 845 851	sealed
+E24	Action:T51 Using:T73
+T73	Seal 857 865	parafilm
+T74	Temperature 869 872	4°C
+R22	Or Arg1:E20 Arg2:E24	
+R23	Setting Arg1:E24 Arg2:T74	
+T75	Reagent 0 7	LB Agar

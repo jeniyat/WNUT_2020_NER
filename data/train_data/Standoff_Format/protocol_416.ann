@@ -1,0 +1,207 @@
+T1	Action 68 75	Prepare
+E1	Action:T1 Product:T35
+T2	Action 92 99	Prepare
+E2	Action:T2 Product:T36 Using:T37
+T3	Action 170 177	Prepare
+E3	Action:T3 Product:T41
+T4	Action 194 201	Prepare
+E4	Action:T4 Product:T42
+T5	Action 220 224	Grow
+E5	Action:T5 Acts-on:T44 Site:T46
+T6	Action 280 289	Inoculate
+E6	Action:T6 Acts-on:T49 Site:T52
+T7	Action 348 352	Grow
+E7	Action:T7 
+T8	Action 412 422	Centrifuge
+E8	Action:T8 Acts-on:T57 Using:T58
+T9	Action 485 492	Discard
+E9	Action:T9 Acts-on:T62
+T10	Action 510 519	Resuspend
+E10	Action:T10 Acts-on:T63 Using:T65
+T11	Action 565 569	Hold
+E11	Action:T11 Acts-on:T68
+T12	Action 613 618	Chill
+E12	Action:T12 Acts-on:T69 Site:T70
+T13	Action 648 658	Centrifuge
+E13	Action:T13 Acts-on:T72 Using:T73
+T14	Action 721 728	Discard
+E14	Action:T14 Acts-on:T77
+T15	Action 746 755	Resuspend
+E15	Action:T15 Acts-on:T78 Using:T80
+T16	Action 796 799	Add
+E16	Action:T16 Acts-on:T81
+T17	Action 821 824	mix
+E17	Action:T17 
+T18	Action 829 834	chill
+E18	Action:T18 Site:T84
+T19	Action 853 856	Add
+E19	Action:T19 Acts-on:T86
+T20	Action 889 890	i
+E20	Action:T20 
+T21	Action 896 901	chill
+E21	Action:T21 Site:T89
+T22	Action 921 924	Add
+E22	Action:T22 Acts-on:T92
+T23	Action 968 971	mix
+E23	Action:T23 
+T24	Action 976 981	chill
+E24	Action:T24 Site:T94
+T25	Action 1031 1036	Pipet
+E25	Action:T25 Acts-on:T97 Site:T99
+T26	Action 1090 1093	Add
+E26	Action:T26 Acts-on:T100
+T27	Action 1151 1154	mix
+E27	Action:T27 
+T28	Action 1159 1164	chill
+E28	Action:T28 Site:T101
+T29	Action 1184 1194	Heat pulse
+E29	Action:T29 Acts-on:T103
+T30	Action 1224 1227	Add
+E30	Action:T30 Acts-on:T107 Site:T108
+T31	Action 1261 1269	incubate
+E31	Action:T31 Acts-on:T109
+T32	Action 1300 1306	Spread
+E32	Action:T32 Site:T114
+T33	Action 1331 1339	Incubate
+E33	Action:T33 Acts-on:T115
+T34	Action 1375 1380	chill
+E34	Action:T34 Site:T118
+T35	Reagent 80 90	SOB medium
+T36	Reagent 104 114	SOC medium
+T37	Reagent 128 137	SOB media
+T38	Concentration 156 160	20mM
+T39	Reagent 161 168	glucose
+R1	Measure Arg1:T39 Arg2:T38	
+T40	Action 138 150	supplemented
+E35	Action:T40 Acts-on:T37 Using:T39
+T41	Reagent 182 192	TFB buffer
+T42	Reagent 206 218	DTT solution
+T43	Amount 225 229	5 mL
+T44	Reagent 237 247	host cells
+T45	Time 248 257	overnight
+T46	Reagent 261 270	SOB media
+T47	Temperature 274 278	37°C
+R2	Measure Arg1:T44 Arg2:T43	
+R3	Setting Arg1:E5 Arg2:T45	
+R4	Setting Arg1:E5 Arg2:T47	
+T48	Amount 290 295	40 mL
+T49	Reagent 299 309	SOB medium
+T50	Amount 315 321	0.8 mL
+T51	Modifier 329 338	overnight
+T52	Reagent 339 346	culture
+R5	Mod-Link Arg1:T52 Arg2:T51	
+R6	Measure Arg1:T52 Arg2:T50	
+R7	Measure Arg1:T49 Arg2:T48	
+T53	Generic-Measure 359 376	A550 of 0.45-0.55
+T54	Temperature 380 384	37°C
+T55	Time 400 409	3-4 hours
+T56	Modifier 386 399	approximately
+R8	Mod-Link Arg1:T55 Arg2:T56	
+R9	Setting Arg1:E7 Arg2:T53	
+R10	Setting Arg1:E7 Arg2:T54	
+R11	Setting Arg1:E7 Arg2:T55	
+T57	Reagent 427 432	cells
+T58	Device 440 458	Sorvall SS34 rotor
+T59	Speed 462 471	5,000 rpm
+T60	Time 473 478	5 min
+T61	Temperature 480 483	4°C
+R12	Setting Arg1:T58 Arg2:T59	
+R13	Setting Arg1:T58 Arg2:T60	
+R14	Setting Arg1:T58 Arg2:T61	
+T62	Reagent 497 508	supernatant
+T63	Reagent 524 530	pellet
+T64	Amount 536 543	12.5 mL
+T65	Reagent 551 563	TFB solution
+R15	Measure Arg1:T65 Arg2:T64	
+T66	Modifier 574 583	remaining
+T67	Amount 584 590	2.5 mL
+T68	Reagent 594 597	TFB
+R16	Measure Arg1:T68 Arg2:T67	
+R17	Mod-Link Arg1:T67 Arg2:T66	
+T69	Reagent 623 628	cells
+T70	Location 632 635	ice
+T71	Time 640 646	15 min
+R18	Setting Arg1:E12 Arg2:T71	
+T72	Reagent 663 668	cells
+T73	Device 676 694	Sorvall SS34 rotor
+T74	Speed 698 707	5,000 rpm
+T75	Time 709 714	5 min
+T76	Temperature 716 719	4°C
+R19	Setting Arg1:T73 Arg2:T74	
+R20	Setting Arg1:T73 Arg2:T75	
+R21	Setting Arg1:T73 Arg2:T76	
+T77	Reagent 733 744	supernatant
+T78	Reagent 760 766	pellet
+T79	Amount 772 778	2.4 mL
+T80	Reagent 782 794	TFB solution
+R22	Measure Arg1:T80 Arg2:T79	
+T81	Reagent 800 804	DMSO
+T82	Concentration 808 812	3.5%
+T83	Amount 814 818	84µL
+T84	Location 838 841	ice
+T85	Time 846 851	5 min
+R23	Setting Arg1:E18 Arg2:T85	
+R24	Measure Arg1:T81 Arg2:T82	
+R25	Measure Arg1:T81 Arg2:T83	
+T86	Reagent 857 869	DTT solution
+T87	Concentration 873 878	75 mM
+T88	Amount 880 885	84 µL
+T89	Location 905 908	ice
+T90	Time 913 919	10 min
+R26	Setting Arg1:E21 Arg2:T90	
+R27	Measure Arg1:T86 Arg2:T87	
+R28	Measure Arg1:T86 Arg2:T88	
+T91	Amount 928 940	equal volume
+T92	Reagent 944 948	DMSO
+T93	Amount 960 965	84 µL
+T94	Location 985 988	ice
+T95	Time 993 998	5 min
+R29	Setting Arg1:E24 Arg2:T95	
+R30	Measure Arg1:T92 Arg2:T91	
+R31	Or Arg1:T91 Arg2:T93	
+T96	Amount 1037 1042	21 µL
+T97	Reagent 1043 1058	competent cells
+T98	Modifier 1063 1073	prechilled
+T99	Location 1074 1088	microfuge tube
+R32	Mod-Link Arg1:T99 Arg2:T98	
+R33	Measure Arg1:T97 Arg2:T96	
+T100	Reagent 1098 1101	DNA
+T101	Location 1168 1171	ice
+T102	Time 1176 1182	30 min
+R34	Setting Arg1:E28 Arg2:T102	
+T103	Location 1199 1204	tubes
+T104	Temperature 1208 1212	42°C
+T105	Time 1217 1222	3 min
+R35	Setting Arg1:E29 Arg2:T104	
+R36	Setting Arg1:E29 Arg2:T105	
+T106	Amount 1228 1233	80 µL
+T107	Reagent 1237 1247	SOC medium
+T108	Location 1252 1256	tube
+T109	Location 1274 1279	tubes
+T110	Temperature 1283 1287	37°C
+T111	Time 1292 1298	60 min
+R37	Measure Arg1:T107 Arg2:T106	
+R38	Setting Arg1:E31 Arg2:T110	
+R39	Setting Arg1:E31 Arg2:T111	
+T112	Amount 1307 1313	100 µL
+T113	Modifier 1319 1323	each
+T114	Location 1324 1329	plate
+R40	Mod-Link Arg1:T114 Arg2:T113	
+R41	Setting Arg1:E32 Arg2:T112	
+T115	Location 1344 1350	plates
+T116	Temperature 1354 1358	37°C
+T117	Time 1359 1368	overnight
+R42	Setting Arg1:E33 Arg2:T116	
+R43	Setting Arg1:E33 Arg2:T117	
+T118	Location 1384 1387	ice
+T119	Time 1392 1397	2 min
+R44	Setting Arg1:E34 Arg2:T119	
+T120	Method 0 14	Transformation
+T121	Reagent 18 36	Bacterial Cultures
+T122	Reagent 43 67	Hexamine Cobalt Chloride
+T123	Reagent 1004 1009	cells
+T124	Modifier 1019 1028	competent
+R45	Mod-Link Arg1:T123 Arg2:T124	
+T125	Measure-Type 1117 1123	volume
+T126	Amount 1137 1143	1-2 µL
+T127	Location 1144 1148	tube

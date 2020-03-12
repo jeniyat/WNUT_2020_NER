@@ -1,0 +1,121 @@
+T1	Action 52 61	Prefilter
+E1	Action:T1 Acts-on:T3 Using:T4
+T2	Amount 71 74	3 L
+T3	Reagent 75 87	water sample
+T4	Device 98 116	glass fiber filter
+T5	Action 118 124	Filter
+E2	Action:T5 Acts-on:T6 Using:T9
+T6	Reagent 125 131	sample
+T7	Amount 140 146	0.2 µm
+T8	Amount 150 157	0.45 µm
+T9	Device 158 189	low protein binding PVDF filter
+T10	Action 191 199	Dispense
+E3	Action:T10 Acts-on:T11 Site:T13 Site2:T15
+T11	Reagent 204 226	filtered water samples
+T12	Amount 234 239	0.5 L
+T13	Location 254 269	culture vessels
+T14	Amount 277 280	1 L
+T15	Location 291 308	Erlenmeyer flasks
+T16	Action 310 313	Add
+E4	Action:T16 Acts-on:T17 Acts-on2:T18
+T17	Reagent 314 323	nutrients
+T18	Mention 331 345	filtered water
+T19	Action 385 389	Seed
+E5	Action:T19 Acts-on:T20 Acts-on2:T23
+T20	Mention 394 408	filtered water
+T21	Generic-Measure 414 416	1%
+T22	Generic-Measure 420 423	10%
+T23	Reagent 431 443	host culture
+T24	Action 459 466	replace
+E6	Action:T24 Acts-on:T25 Using:T26
+T25	Reagent 471 500	filtered environmental sample
+T26	Reagent 551 563	water sample
+T27	Action 565 573	Incubate
+E7	Action:T27 Acts-on:T28
+T28	Location 578 584	flasks
+T29	Action 688 694	Remove
+E8	Action:T29 Acts-on:T30
+T30	Reagent 698 705	aliquot
+T31	Reagent 713 731	enrichment culture
+T32	Action 737 743	pellet
+E9	Action:T32 Acts-on:T33 Using:T34
+T33	Reagent 744 759	remaining cells
+T34	Method 763 777	centrifugation
+T35	Time 785 795	20 minutes
+T36	Action 807 813	Filter
+E10	Action:T36 Acts-on:T37 Using:T40
+T37	Reagent 818 829	supernatant
+T38	Amount 840 847	0.22 µm
+T39	Amount 851 858	0.45 µm
+T40	Device 859 870	PVDF filter
+T41	Action 872 877	Store
+E11	Action:T41 Acts-on:T42
+T42	Reagent 882 888	lysate
+T43	Action 920 939	Verify the presence
+E12	Action:T43 Acts-on:T44 Using:T45
+T44	Reagent 943 955	lytic phages
+T45	Reagent 959 971	liquid assay
+T46	Action 994 1011	propagate/amplify
+E13	Action:T46 Acts-on:T47
+T47	Reagent 1016 1027	lytic agent
+T48	Action 1052 1060	repeated
+E14	Action:T48 Acts-on:T49 Using:T50
+T49	Reagent 1033 1048	liquid bioassay
+T50	Reagent 1071 1091	putative lytic agent
+R4	Measure Arg1:T23 Arg2:T22	
+R5	Measure Arg1:T23 Arg2:T21	
+R1	Measure Arg1:T3 Arg2:T2	
+R6	Setting Arg1:T9 Arg2:T8	
+R7	Or Arg1:T8 Arg2:T7	
+R3	Measure Arg1:T11 Arg2:T12	
+R2	Measure Arg1:T15 Arg2:T14	
+R8	Setting Arg1:T40 Arg2:T39	
+R9	Or Arg1:T39 Arg2:T38	
+R10	Setting Arg1:E9 Arg2:T35	
+T51	Modifier 62 70	at least
+R11	Mod-Link Arg1:T2 Arg2:T51	
+T52	Modifier 284 290	larger
+T53	Modifier 243 247	more
+R12	Or Arg1:T12 Arg2:T53	
+R13	Or Arg1:T14 Arg2:T52	
+T54	Action 349 363	support growth
+E15	Action:T54 Product:T55
+T55	Reagent 371 383	target cells
+T56	Modifier 506 516	virus-free
+T57	Size 518 525	0.02 µm
+T58	Modifier 526 534	filtered
+T59	Modifier 538 549	heat-killed
+R14	Setting Arg1:T58 Arg2:T57	
+R15	Mod-Link Arg1:T26 Arg2:T56	
+R16	Mod-Link Arg1:T26 Arg2:T58	
+R17	Or Arg1:T58 Arg2:T59	
+T60	Action 663 677	look for signs
+E16	Action:T60 Acts-on:T61
+T61	Reagent 681 686	lysis
+T62	Reagent 645 658	cyanobacteria
+T63	Temperature 592 603	temperature
+T64	Generic-Measure 608 624	light conditions
+T65	Modifier 625 636	appropriate
+R18	Setting Arg1:E7 Arg2:T63	
+R19	Setting Arg1:E7 Arg2:T64	
+R20	Mod-Link Arg1:T63 Arg2:T65	
+R21	Mod-Link Arg1:T64 Arg2:T65	
+R22	Measure Arg1:T62 Arg2:T64	
+R23	Meronym Arg1:T30 Arg2:T31	
+T66	Speed 799 804	6000g
+R24	Setting Arg1:E9 Arg2:T66	
+T67	Temperature 892 895	4°C
+R25	Setting Arg1:E11 Arg2:T67	
+T68	Reagent 976 988	plaque assay
+R26	Or Arg1:T45 Arg2:T68	
+T69	Method 0 24	Isolation of cyanophages
+T70	Method 28 51	liquid enrichment assay
+T71	Measure-Type 424 427	v/v
+R27	Of-Type Arg1:T22 Arg2:T71	
+R28	Of-Type Arg1:T21 Arg2:T71	
+T72	Modifier 445 457	As a control
+R29	Mod-Link Arg1:E6 Arg2:T72	
+T73	Modifier 896 918	until further analysis
+R30	Mod-Link Arg1:E11 Arg2:T73	
+T74	Modifier 1092 1110	as the test sample
+R31	Mod-Link Arg1:T50 Arg2:T74	

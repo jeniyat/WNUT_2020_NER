@@ -1,0 +1,235 @@
+T1	Action 100 104	Seed
+E1	Action:T1 Acts-on:T24
+T2	Action 346 349	mix
+E2	Action:T2 Acts-on:T31
+T3	Action 367 375	incubate
+E3	Action:T3 Acts-on:T31
+T4	Action 435 445	trypsinize
+E4	Action:T4 Acts-on:T32
+T5	Action 503 509	Remove
+E5	Action:T5 Acts-on:T41 Site:T40
+T6	Action 614 623	Resuspend
+E6	Action:T6 Acts-on:T43 Site:T45
+T7	Action 663 669	Pellet
+E7	Action:T7 
+T8	Action 695 699	Wash
+E8	Action:T8 Acts-on:T49 Count:T50 Using:T52
+T9	Action 728 737	Resuspend
+E9	Action:T9 Acts-on:T53 Acts-on2:T55
+T10	Action 784 791	Prepare
+E10	Action:T10 Acts-on:T56
+T11	Action 875 878	Add
+E11	Action:T11 Acts-on:T63 Site:T66
+T12	Action 920 928	Aspirate
+E12	Action:T12 Acts-on:T68 Site:T70
+T13	Action 979 992	Electroporate
+E13	Action:T13 Acts-on:T71
+T14	Action 1070 1078	transfer
+E14	Action:T14 Acts-on:T76 Site:T77
+T15	Action 1120 1128	Incubate
+E15	Action:T15 Acts-on:T79 Site:T83
+T16	Action 1203 1211	aspirate
+E16	Action:T16 Acts-on:T86 Site:T87
+T17	Action 1238 1241	Add
+E17	Action:T17 Acts-on:T89
+T18	Action 1331 1339	Transfer
+E18	Action:T18 Acts-on:T92 Site:T93
+T19	Action 1481 1487	Dilute
+E19	Action:T19 Acts-on:T102 Site:T104
+T20	Action 1639 1643	Wash
+E20	Action:T20 Using:T109
+T21	Action 1607 1613	Pellet
+E21	Action:T21 
+T22	Action 1671 1675	Wash
+E22	Action:T22 Using:T112
+T23	Action 1381 1386	place
+E23	Action:T23 Acts-on:T93 Site:T95
+T24	Reagent 109 114	cells
+T25	Generic-Measure 143 149	70-90%
+T26	Measure-Type 150 159	confluent
+R1	Of-Type Arg1:T25 Arg2:T26	
+T27	Modifier 160 186	on the day of transfection
+R2	Setting Arg1:E1 Arg2:T25	
+R3	Mod-Link Arg1:E1 Arg2:T27	
+T28	Modifier 339 345	Gently
+T29	Temperature 379 395	room temperature
+T30	Time 400 410	20 minutes
+R4	Setting Arg1:E3 Arg2:T29	
+R5	Setting Arg1:E3 Arg2:T30	
+T31	Reagent 354 362	reaction
+R6	Mod-Link Arg1:E2 Arg2:T28	
+T32	Reagent 450 455	cells
+T33	Modifier 412 433	During the incubation
+R7	Mod-Link Arg1:E4 Arg2:T33	
+T34	Action 473 479	remove
+E24	Action:T34 Acts-on:T36
+T35	Reagent 494 501	trypsin
+T36	Reagent 484 490	traces
+R8	Meronym Arg1:T36 Arg2:T35	
+T37	Action 457 464	washing
+E25	Action:T37 Count:T38 Acts-on:T32
+T38	Numerical 465 469	once
+T39	Modifier 531 538	sterile
+T40	Location 539 553	microfuge tube
+T41	Reagent 520 525	cells
+R9	Mod-Link Arg1:T40 Arg2:T39	
+T42	Numerical 510 519	1-2 x 106
+R10	Measure Arg1:T41 Arg2:T42	
+T43	Reagent 628 633	cells
+T44	Amount 637 642	10 ml
+T45	Reagent 646 651	media
+R11	Measure Arg1:T45 Arg2:T44	
+T46	Action 656 661	count
+E26	Action:T46 Acts-on:T43
+T47	Time 674 679	5 min
+T48	Speed 683 690	500 x g
+R12	Setting Arg1:E7 Arg2:T47	
+R13	Setting Arg1:E7 Arg2:T48	
+T49	Reagent 704 709	cells
+T50	Numerical 710 714	once
+T51	Concentration 720 722	1X
+T52	Reagent 723 726	PBS
+R14	Measure Arg1:T52 Arg2:T51	
+T53	Reagent 742 747	cells
+T54	Amount 751 756	50 µl
+T55	Reagent 760 781	Resuspension Buffer R
+R15	Measure Arg1:T55 Arg2:T54	
+T56	Location 794 807	24-well plate
+T57	Action 811 817	adding
+E27	Action:T57 Acts-on:T59 Site:T60
+T58	Amount 818 824	500 µl
+T59	Reagent 825 838	growth medium
+R16	Measure Arg1:T59 Arg2:T58	
+T60	Location 868 873	wells
+R17	Meronym Arg1:T60 Arg2:T56	
+T61	Numerical 846 864	appropriate number
+R18	Measure Arg1:T60 Arg2:T61	
+T62	Amount 879 883	5 µl
+T63	Reagent 887 892	cells
+T64	Numerical 896 900	each
+T65	Amount 901 905	7 µl
+T66	Reagent 906 918	RNP reaction
+R19	Measure Arg1:T63 Arg2:T62	
+R20	Measure Arg1:T66 Arg2:T65	
+R21	Measure Arg1:T66 Arg2:T64	
+T67	Amount 929 934	10 µl
+T68	Reagent 942 955	RNP/cells mix
+T69	Amount 963 968	10 µl
+T70	Location 969 976	Neon ti
+R22	Measure Arg1:T70 Arg2:T69	
+R23	Measure Arg1:T68 Arg2:T67	
+T71	Reagent 997 1002	cells
+T72	Generic-Measure 1035 1040	1700V
+T73	Time 1042 1047	20 ms
+T74	Generic-Measure 1049 1056	1 pulse
+R24	Setting Arg1:E13 Arg2:T72	
+R25	Setting Arg1:E13 Arg2:T73	
+R26	Setting Arg1:E13 Arg2:T74	
+T75	Modifier 1058 1069	Immediately
+T76	Reagent 1083 1088	cells
+T77	Location 1105 1118	24-well plate
+T78	Modifier 1096 1104	prepared
+R27	Mod-Link Arg1:E14 Arg2:T75	
+R28	Mod-Link Arg1:T77 Arg2:T78	
+T79	Reagent 1133 1138	cells
+T80	Modifier 1144 1154	humidified
+T81	Temperature 1155 1160	37 °C
+T82	Concentration 1162 1168	5% C02
+T83	Device 1169 1178	incubator
+T84	Time 1183 1194	48-72 hours
+R29	Setting Arg1:T83 Arg2:T82	
+R30	Setting Arg1:T83 Arg2:T81	
+R31	Mod-Link Arg1:T83 Arg2:T80	
+R32	Setting Arg1:E15 Arg2:T84	
+T85	Modifier 1196 1202	Gently
+R33	Mod-Link Arg1:E16 Arg2:T85	
+T86	Reagent 1216 1221	media
+T87	Reagent 1231 1236	cells
+T88	Amount 1242 1247	75 µl
+T89	Reagent 1251 1298	Epicentre QuickExtract™ DNA Extraction Solution
+T90	Action 1303 1315	shake/vortex
+E28	Action:T90 
+T91	Time 1320 1329	5 minutes
+R34	Measure Arg1:T89 Arg2:T88	
+R35	Setting Arg1:E28 Arg2:T91	
+T92	Reagent 1344 1352	solution
+T93	Location 1358 1367	PCR plate
+T94	Location 1371 1376	tubes
+T95	Device 1392 1404	thermocycler
+R36	Or Arg1:T93 Arg2:T94	
+T96	Temperature 1437 1441	65°C
+T97	Time 1446 1452	15 min
+T98	Temperature 1452 1456	95°C
+T99	Time 1461 1467	15 min
+T100	Temperature 1475 1478	4°C
+T101	Action 1467 1471	Hold
+E29	Action:T101 
+R41	Setting Arg1:E29 Arg2:T100	
+T102	Reagent 1492 1495	DNA
+T103	Concentration 1496 1500	1:10
+T104	Reagent 1504 1523	nuclease-free water
+R42	Setting Arg1:E19 Arg2:T103	
+T105	Time 1618 1623	5 min
+T106	Speed 1627 1634	500 x g
+R43	Setting Arg1:E21 Arg2:T105	
+R44	Setting Arg1:E21 Arg2:T106	
+T107	Amount 1649 1655	100 µl
+T108	Concentration 1656 1658	1X
+T109	Reagent 1659 1662	PBS
+R45	Measure Arg1:T109 Arg2:T108	
+R46	Measure Arg1:T109 Arg2:T107	
+T110	Amount 1681 1687	100 µl
+T111	Concentration 1688 1690	1X
+T112	Reagent 1691 1694	PBS
+R47	Measure Arg1:T112 Arg2:T111	
+R48	Measure Arg1:T112 Arg2:T110	
+T113	Action 1406 1413	running
+E30	Action:T113 Using:T114
+T114	Method 1418 1435	following program
+T115	Action 1526 1532	Follow
+E31	Action:T115 
+T116	Method 1537 1545	protocol
+T117	Device 1562 1586	EnGen Mutation Detection
+T118	Method 0 15	Electroporation
+T119	Reagent 19 27	Cas9 RNP
+T120	Reagent 29 46	ribonucleoprotein
+R37	Meronym Arg1:T120 Arg2:T119	
+T121	Modifier 53 61	adherent
+T122	Reagent 62 67	cells
+R38	Mod-Link Arg1:T122 Arg2:T121	
+T123	Device 78 99	Neon® Electroporation
+T124	Modifier 136 142	around
+R39	Mod-Link Arg1:T25 Arg2:T124	
+T125	Mention 123 127	they
+R40	Coreference-Link Arg1:T125 Arg2:T24	
+R49	Measure Arg1:T125 Arg2:T25	
+T126	Action 188 194	Set up
+E32	Action:T126 
+T127	Method 199 221	RNP formation reaction
+T128	Modifier 222 232	as follows
+R50	Mod-Link Arg1:E32 Arg2:T128	
+T129	Amount 249 253	7 µl
+T130	Reagent 262 283	Resuspension Buffer R
+T131	Amount 283 289	5.8 µl
+T132	Reagent 289 303	EnGen Cas9-NLS
+T133	Concentration 305 310	20 µM
+T134	Amount 311 317	0.6 µl
+T135	Reagent 317 322	sgRNA
+T136	Concentration 324 329	20 µM
+T137	Amount 330 336	0.6 µl
+R51	Measure Arg1:T135 Arg2:T136	
+R52	Measure Arg1:T135 Arg2:T137	
+R53	Measure Arg1:T132 Arg2:T133	
+R54	Measure Arg1:T132 Arg2:T134	
+R55	Measure Arg1:T130 Arg2:T131	
+T138	Numerical 556 559	One
+T139	Location 560 564	tube
+T140	Reagent 568 573	cells
+R56	Meronym Arg1:T140 Arg2:T139	
+T141	Modifier 584 590	enough
+T142	Numerical 595 597	10
+T143	Method 598 611	transfections
+R57	Measure Arg1:T139 Arg2:T138	
+R58	Mod-Link Arg1:T139 Arg2:T141	
+T144	Modifier 1003 1033	under the following conditions
+R59	Mod-Link Arg1:E13 Arg2:T144	

@@ -1,0 +1,297 @@
+T1	Action 81 88	Perform
+E1	Action:T1 Using:T38 Using2:T129
+T2	Action 211 218	discard
+E2	Action:T2 Acts-on:T39
+T3	Action 247 253	vortex
+E3	Action:T3 Acts-on:T40
+T4	Action 297 300	Add
+E4	Action:T4 Acts-on:T42 Site:T44
+T5	Action 373 380	pipette
+E5	Action:T5 
+T6	Action 420 430	Centrifuge
+E6	Action:T6 Acts-on:T46
+T7	Action 491 498	discard
+E7	Action:T7 Acts-on:T50
+T8	Action 527 533	vortex
+E8	Action:T8 
+T9	Action 752 758	vortex
+E9	Action:T9 
+T10	Action 716 723	discard
+E10	Action:T10 Acts-on:T60
+T11	Action 645 655	Centrifuge
+E11	Action:T11 Acts-on:T56
+T12	Action 565 568	Add
+E12	Action:T12 Acts-on:T53 Site:T55
+T13	Action 802 805	Add
+E13	Action:T13 Acts-on:T63 Site:T65
+T14	Action 882 885	Add
+E14	Action:T14 Acts-on:T67 Site:T68
+T15	Action 1004 1012	incubate
+E15	Action:T15 Using:T69
+T16	Action 1256 1262	vortex
+E16	Action:T16 
+T17	Action 1221 1228	discard
+E17	Action:T17 Acts-on:T80
+T18	Action 1150 1160	Centrifuge
+E18	Action:T18 Acts-on:T76
+T19	Action 1070 1073	Add
+E19	Action:T19 Acts-on:T73 Site:T75
+T20	Action 1306 1315	Resuspend
+E20	Action:T20 Acts-on:T82 Using:T84
+T21	Action 1375 1382	acquire
+E21	Action:T21 Acts-on:T85 Using:T86
+T22	Action 1411 1419	Incubate
+E22	Action:T22 Using:T88
+T23	Action 1471 1474	Add
+E23	Action:T23 Acts-on:T91 Site:T93
+T24	Action 1551 1561	Centrifuge
+E24	Action:T24 Acts-on:T94
+T25	Action 1708 1718	Centrifuge
+E25	Action:T25 Acts-on:T100
+T26	Action 1779 1786	discard
+E26	Action:T26 Acts-on:T104
+T27	Action 1815 1821	vortex
+E27	Action:T27 
+T28	Action 1658 1664	vortex
+E28	Action:T28 
+T29	Action 1622 1629	discard
+E29	Action:T29 Acts-on:T98
+T30	Action 1865 1868	Add
+E30	Action:T30 Acts-on:T107 Site:T109
+T31	Action 1945 1955	Centrifuge
+E31	Action:T31 Acts-on:T110
+T32	Action 2101 2104	Add
+E32	Action:T32 Acts-on:T117 Site:T119
+T33	Action 2016 2023	discard
+E33	Action:T33 Acts-on:T114
+T34	Action 2051 2057	vortex
+E34	Action:T34 
+T35	Action 2287 2293	vortex
+E35	Action:T35 
+T36	Action 2252 2259	discard
+E36	Action:T36 Acts-on:T124
+T37	Action 2181 2191	Centrifuge
+E37	Action:T37 Acts-on:T120
+T38	Method 89 110	cell surface staining
+T39	Reagent 223 234	supernatant
+T40	Reagent 258 265	samples
+T41	Amount 301 307	200 µL
+T42	Reagent 339 351	Fix solution
+R1	Measure Arg1:T42 Arg2:T41	
+T43	Concentration 336 338	1X
+R2	Measure Arg1:T42 Arg2:T43	
+T44	Location 360 364	well
+T45	Modifier 366 372	Gently
+R3	Mod-Link Arg1:E5 Arg2:T45	
+T46	Location 435 440	plate
+T47	Speed 444 455	300-400 x g
+R4	Setting Arg1:E6 Arg2:T47	
+T48	Temperature 459 475	room temperature
+R5	Setting Arg1:E6 Arg2:T48	
+T49	Time 480 489	5 minutes
+R6	Setting Arg1:E6 Arg2:T49	
+T50	Reagent 503 514	supernatant
+T51	Modifier 520 526	gently
+R7	Mod-Link Arg1:E8 Arg2:T51	
+T52	Amount 569 575	200 µL
+T53	Reagent 607 618	Perm Buffer
+T54	Concentration 604 606	1X
+R8	Measure Arg1:T53 Arg2:T54	
+R9	Measure Arg1:T53 Arg2:T52	
+T55	Location 627 631	well
+T56	Location 660 665	plate
+T57	Speed 669 680	300-400 x g
+R10	Setting Arg1:E11 Arg2:T57	
+T58	Temperature 684 700	room temperature
+R11	Setting Arg1:E11 Arg2:T58	
+T59	Time 705 714	5 minutes
+R12	Setting Arg1:E11 Arg2:T59	
+T60	Reagent 728 739	supernatant
+T61	Modifier 745 751	gently
+R13	Mod-Link Arg1:E9 Arg2:T61	
+T62	Amount 806 812	200 µL
+T63	Reagent 844 855	Perm Buffer
+T64	Concentration 841 843	1X
+R14	Measure Arg1:T63 Arg2:T64	
+R15	Measure Arg1:T63 Arg2:T62	
+T65	Location 864 868	well
+T66	Generic-Measure 890 908	appropriate amount
+T67	Reagent 912 944	fluorochrome conjugated antibody
+R16	Measure Arg1:T67 Arg2:T66	
+T68	Location 995 999	well
+T69	Method 1020 1024	dark
+T70	Temperature 1028 1044	room temperature
+R17	Setting Arg1:E15 Arg2:T70	
+T71	Time 1058 1068	30 minutes
+R18	Setting Arg1:E15 Arg2:T71	
+T72	Amount 1074 1080	200 µL
+T73	Reagent 1112 1123	Perm Buffer
+T74	Concentration 1109 1111	1X
+R19	Measure Arg1:T73 Arg2:T74	
+R20	Measure Arg1:T73 Arg2:T72	
+T75	Location 1132 1136	well
+T76	Location 1165 1170	plate
+T77	Speed 1174 1185	300-400 x g
+T78	Temperature 1189 1205	room temperature
+T79	Time 1210 1219	5 minutes
+R21	Setting Arg1:E18 Arg2:T77	
+R22	Setting Arg1:E18 Arg2:T78	
+R23	Setting Arg1:E18 Arg2:T79	
+T80	Reagent 1232 1243	supernatant
+T81	Modifier 1249 1255	gently
+R24	Mod-Link Arg1:E16 Arg2:T81	
+T82	Reagent 1319 1324	cells
+T83	Generic-Measure 1328 1346	appropriate volume
+T84	Reagent 1350 1370	cell staining buffer
+R25	Measure Arg1:T84 Arg2:T83	
+T85	Reagent 1383 1390	samples
+T86	Device 1396 1409	flowcytometer
+T87	Temperature 1423 1439	room temperature
+R26	Setting Arg1:E22 Arg2:T87	
+T88	Method 1447 1451	dark
+T89	Time 1456 1469	30-60 minutes
+R27	Setting Arg1:E22 Arg2:T89	
+T90	Amount 1475 1481	200 µL
+T91	Reagent 1513 1524	Perm Buffer
+T92	Concentration 1510 1512	1X
+R28	Measure Arg1:T91 Arg2:T92	
+R29	Measure Arg1:T91 Arg2:T90	
+T93	Location 1533 1537	well
+T94	Location 1566 1571	plate
+T95	Speed 1575 1586	300-400 x g
+R30	Setting Arg1:E24 Arg2:T95	
+T96	Temperature 1590 1606	room temperature
+T97	Time 1611 1620	5 minutes
+R31	Setting Arg1:E24 Arg2:T96	
+R32	Setting Arg1:E24 Arg2:T97	
+T98	Reagent 1634 1645	supernatant
+T99	Modifier 1651 1657	gently
+R33	Mod-Link Arg1:E28 Arg2:T99	
+T100	Location 1723 1728	plate
+T101	Speed 1732 1743	300-400 x g
+R34	Setting Arg1:E25 Arg2:T101	
+T102	Temperature 1747 1763	room temperature
+T103	Time 1768 1777	5 minutes
+R35	Setting Arg1:E25 Arg2:T102	
+R36	Setting Arg1:E25 Arg2:T103	
+T104	Reagent 1791 1802	supernatant
+T105	Modifier 1808 1814	gently
+R37	Mod-Link Arg1:E27 Arg2:T105	
+T106	Amount 1869 1875	200 µL
+T107	Reagent 1907 1918	Perm Buffer
+T108	Concentration 1904 1906	1X
+R38	Measure Arg1:T107 Arg2:T108	
+R39	Measure Arg1:T107 Arg2:T106	
+T109	Location 1927 1931	well
+T110	Location 1960 1965	plate
+T111	Speed 1969 1980	300-400 x g
+T112	Temperature 1984 2000	room temperature
+T113	Time 2005 2014	5 minutes
+R40	Setting Arg1:E31 Arg2:T111	
+R41	Setting Arg1:E31 Arg2:T112	
+R42	Setting Arg1:E31 Arg2:T113	
+T114	Reagent 2027 2038	supernatant
+T115	Modifier 2044 2050	gently
+R43	Mod-Link Arg1:E34 Arg2:T115	
+T116	Amount 2105 2111	200 µL
+T117	Reagent 2143 2154	Perm Buffer
+T118	Concentration 2140 2142	1X
+R44	Measure Arg1:T117 Arg2:T118	
+T119	Location 2163 2167	well
+R45	Measure Arg1:T117 Arg2:T116	
+T120	Location 2196 2201	plate
+T121	Speed 2205 2216	300-400 x g
+T122	Temperature 2220 2236	room temperature
+T123	Time 2241 2250	5 minutes
+R46	Setting Arg1:E37 Arg2:T121	
+R47	Setting Arg1:E37 Arg2:T122	
+R48	Setting Arg1:E37 Arg2:T123	
+T124	Reagent 2263 2274	supernatant
+T125	Modifier 2280 2286	gently
+R49	Mod-Link Arg1:E35 Arg2:T125	
+T126	Reagent 0 34	True-Nuclear™ Transcription Factor
+T127	Method 35 52	Staining Protocol
+T128	Location 57 80	96-Well, U-Bottom Plate
+T129	Method 127 188	BioLegend's Cell Surface Immunofluorescence Staining Protocol
+T130	Modifier 190 209	After the last wash
+R50	Mod-Link Arg1:E2 Arg2:T130	
+T131	Modifier 240 246	gently
+R51	Mod-Link Arg1:E3 Arg2:T131	
+T132	Action 269 279	dissociate
+E38	Action:T132 Acts-on:T133
+T133	Reagent 284 295	cell pellet
+T134	Reagent 315 335	Transcription Factor
+R52	Meronym Arg1:T42 Arg2:T134	
+T135	Modifier 355 359	each
+R53	Mod-Link Arg1:T44 Arg2:T135	
+T136	Action 537 547	dissociate
+E39	Action:T136 Acts-on:T137
+T137	Reagent 552 563	cell pellet
+T138	Action 634 638	wash
+E40	Action:T138 
+T139	Reagent 583 603	Transcription Factor
+R54	Meronym Arg1:T53 Arg2:T139	
+T140	Action 762 772	dissociate
+E41	Action:T140 Acts-on:T141
+T141	Reagent 777 788	cell pellet
+T142	Modifier 859 863	each
+R55	Mod-Link Arg1:T65 Arg2:T142	
+T143	Method 949 958	detection
+T144	Reagent 962 986	intracellular antigen(s)
+T145	Modifier 990 994	each
+R56	Mod-Link Arg1:T68 Arg2:T145	
+T146	Modifier 1049 1057	at least
+R57	Mod-Link Arg1:T71 Arg2:T146	
+T147	Reagent 1088 1108	Transcription Factor
+R58	Meronym Arg1:T73 Arg2:T147	
+T148	Modifier 1127 1131	each
+T149	Action 1139 1143	wash
+E42	Action:T149 
+R59	Mod-Link Arg1:T75 Arg2:T148	
+T150	Action 1266 1276	dissociate
+E43	Action:T150 Acts-on:T151
+T151	Reagent 1281 1292	cell pellet
+T152	Action 1540 1544	wash
+E44	Action:T152 
+T153	Modifier 1528 1532	each
+R60	Mod-Link Arg1:T93 Arg2:T153	
+T154	Reagent 1489 1509	Transcription Factor
+R61	Meronym Arg1:T91 Arg2:T154	
+T155	Action 1668 1678	dissociate
+E45	Action:T155 Acts-on:T156
+T156	Reagent 1683 1694	cell pellet
+T157	Action 1825 1835	dissociate
+E46	Action:T157 Acts-on:T158
+T158	Reagent 1840 1851	cell pellet
+T159	Action 1934 1938	wash
+E47	Action:T159 
+T160	Modifier 1922 1926	each
+R62	Mod-Link Arg1:T109 Arg2:T160	
+T161	Reagent 1883 1903	Transcription Factor
+R63	Meronym Arg1:T107 Arg2:T161	
+T162	Action 2061 2071	dissociate
+E48	Action:T162 Acts-on:T163
+T163	Reagent 2076 2087	cell pellet
+T164	Modifier 2158 2162	each
+R64	Mod-Link Arg1:T119 Arg2:T164	
+T165	Reagent 2119 2139	Transcription Factor
+R65	Meronym Arg1:T117 Arg2:T165	
+T166	Action 2297 2307	dissociate
+E49	Action:T166 Acts-on:T167
+T167	Reagent 2312 2323	cell pellet
+T168	Action 2326 2330	wash
+E50	Action:T168 
+T169	Action 2090 2094	wash
+E51	Action:T169 
+T170	Action 1854 1858	wash
+E52	Action:T170 
+T171	Action 1697 1701	wash
+E53	Action:T171 
+T172	Action 1295 1299	wash
+E54	Action:T172 
+T173	Action 871 875	wash
+E55	Action:T173 
+T174	Action 791 795	wash
+E56	Action:T174 
+T175	Reagent 820 840	Transcription Factor
+R66	Meronym Arg1:T63 Arg2:T175	

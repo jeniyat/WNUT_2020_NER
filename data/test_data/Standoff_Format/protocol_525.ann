@@ -1,0 +1,77 @@
+T1	Action 27 30	Add
+E1	Action:T1 Acts-on:T13
+T2	Action 72 79	Let sit
+E2	Action:T2 
+T3	Action 62 65	mix
+E3	Action:T3 Acts-on:T13
+T4	Action 104 113	Microfuge
+E4	Action:T4 
+T5	Action 150 156	remove
+E5	Action:T5 Acts-on:T19
+T6	Action 173 177	fill
+E6	Action:T6 Using:T23 Site:T20
+T7	Action 210 214	Spin
+E7	Action:T7 
+T8	Action 290 296	Remove
+E8	Action:T8 Acts-on:T27
+T9	Action 355 360	Leave
+E9	Action:T9 Acts-on:T28 Site:T29
+T10	Action 397 405	Dissolve
+E10	Action:T10 Using:T31
+T11	Amount 31 40	2 volumes
+T12	Temperature 44 52	ice cold
+T13	Reagent 53 60	ethanol
+R1	Setting Arg1:E1 Arg2:T12	
+R2	Measure Arg1:T13 Arg2:T11	
+T14	Modifier 66 70	well
+R3	Mod-Link Arg1:E3 Arg2:T14	
+T15	Temperature 83 86	ice
+T16	Time 87 100	15-30 minutes
+R4	Setting Arg1:E2 Arg2:T15	
+R5	Setting Arg1:E2 Arg2:T16	
+T17	Speed 117 126	max speed
+T18	Time 128 138	20 minutes
+R6	Setting Arg1:E4 Arg2:T17	
+R7	Setting Arg1:E4 Arg2:T18	
+T19	Reagent 157 168	supernatant
+T20	Location 178 182	tube
+T21	Generic-Measure 183 190	halfway
+T22	Concentration 196 199	70%
+T23	Reagent 200 207	ethanol
+R8	Measure Arg1:T20 Arg2:T21	
+R9	Measure Arg1:T23 Arg2:T22	
+T24	Speed 218 227	max speed
+T25	Time 232 241	2 minutes
+R10	Setting Arg1:E7 Arg2:T24	
+R11	Setting Arg1:E7 Arg2:T25	
+T26	Action 283 287	wash
+E11	Action:T26 
+T27	Reagent 305 312	ethanol
+T28	Location 361 365	tube
+T29	Location 374 379	bench
+T30	Time 380 392	~ 15 minutes
+R12	Setting Arg1:E9 Arg2:T30	
+T31	Reagent 409 418	TE buffer
+T33	pH 422 428	pH 7.6
+R14	Setting Arg1:E10 Arg2:T33	
+T34	Method 0 26	DNA Precipitation Protocol
+T35	Modifier 140 149	Carefully
+R15	Mod-Link Arg1:E5 Arg2:T35	
+T36	Action 243 249	Repeat
+E12	Action:T36 
+T37	Numerical 265 273	one time
+T38	Modifier 275 278	2nd
+T39	Concentration 279 282	70%
+R16	Mod-Link Arg1:E11 Arg2:T38	
+R17	Setting Arg1:E11 Arg2:T39	
+T40	Modifier 297 304	as much
+T41	Modifier 313 324	as possible
+T42	Action 325 343	without disturbing
+E13	Action:T42 Acts-on:T43
+T43	Reagent 348 354	pellet
+T44	Modifier 366 370	open
+R18	Mod-Link Arg1:T28 Arg2:T44	
+R19	Mod-Link Arg1:T27 Arg2:T40	
+R20	Mod-Link Arg1:T27 Arg2:T41	
+T45	Modifier 420 421	~
+R13	Mod-Link Arg1:T33 Arg2:T45	

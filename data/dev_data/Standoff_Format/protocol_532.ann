@@ -1,0 +1,78 @@
+T1	Action 26 33	Prepare
+E1	Action:T1 Product:T16
+T2	Action 50 55	chill
+E2	Action:T2 Acts-on:T16
+T3	Action 117 124	Prepare
+E3	Action:T3 Product:T18
+T4	Action 154 158	wash
+E4	Action:T4 Count:T19 Using:T20 Acts-on:T18
+T5	Action 172 184	centrifuging
+E5	Action:T5 Acts-on:T18
+T6	Action 209 216	Discard
+E6	Action:T6 Acts-on:T23
+T8	Action 270 273	Add
+E8	Action:T8 Acts-on:T28 Using:T29 Site:T30
+T9	Action 345 363	Continue vortexing
+E9	Action:T9 
+T10	Action 380 388	Incubate
+E10	Action:T10 
+T11	Action 334 343	vortexing
+E11	Action:T11 Acts-on:T30
+T12	Action 411 415	Wash
+E12	Action:T12 Count:T34 Using:T35 Acts-on:T36
+T13	Action 473 482	resuspend
+E13	Action:T13 Acts-on:T36
+T15	Concentration 34 37	70%
+T16	Reagent 38 45	Ethanol
+R1	Measure Arg1:T16 Arg2:T15	
+T17	Temperature 59 64	-20°C
+R2	Setting Arg1:E2 Arg2:T17	
+T18	Reagent 125 137	target cells
+T19	Numerical 159 161	2X
+T20	Reagent 167 170	PBS
+T21	Speed 188 193	350xg
+T22	Time 198 207	5 minutes
+R3	Setting Arg1:E5 Arg2:T21	
+R4	Setting Arg1:E5 Arg2:T22	
+T23	Reagent 217 228	supernatant
+T24	Reagent 244 255	cell pellet
+T25	Amount 274 278	3 ml
+T26	Temperature 279 283	cold
+T27	Concentration 284 287	70%
+T28	Reagent 288 295	ethanol
+R5	Measure Arg1:T28 Arg2:T27	
+R6	Setting Arg1:E8 Arg2:T26	
+R7	Measure Arg1:T28 Arg2:T25	
+T29	Method 296 308	drop by drop
+T30	Reagent 316 327	cell pellet
+T31	Time 368 378	30 seconds
+R8	Setting Arg1:E9 Arg2:T31	
+T32	Temperature 392 397	-20°C
+T33	Time 402 408	1 hour
+R9	Setting Arg1:E10 Arg2:T32	
+R10	Setting Arg1:E10 Arg2:T33	
+T34	Numerical 416 418	2X
+T35	Reagent 424 454	BioLegend Cell Staining Buffer
+T36	Reagent 483 488	cells
+T37	Concentration 492 514	0.5-1.0 x 107 cells/ml
+R11	Setting Arg1:E13 Arg2:T37	
+T14	Method 0 25	Ethanol Fixation Protocol
+T38	Action 71 84	Do not freeze
+E14	Action:T38 Acts-on:T39
+T39	Reagent 85 92	ethanol
+T40	Modifier 93 114	for long-term storage
+R12	Mod-Link Arg1:E14 Arg2:T40	
+T41	Modifier 138 149	of interest
+R13	Mod-Link Arg1:T18 Arg2:T41	
+T42	Action 233 239	loosen
+E15	Action:T42 Acts-on:T24 Using:T7
+T7	Method 259 268	vortexing
+T43	Action 516 519	Use
+E7	Action:T43 Acts-on:T46
+T44	Amount 520 526	100 μl
+T45	Reagent 527 551	cell suspension/staining
+T46	Location 552 556	tube
+R14	Meronym Arg1:T45 Arg2:T46	
+R15	Measure Arg1:T46 Arg2:T44	
+T47	Modifier 328 333	while
+R16	Mod-Link Arg1:E11 Arg2:T47	

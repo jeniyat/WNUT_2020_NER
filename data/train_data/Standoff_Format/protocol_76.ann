@@ -1,0 +1,250 @@
+T1	Action 56 60	Grow
+E1	Action:T1 Acts-on:T45 Site:T48
+T2	Action 113 119	Decant
+E2	Action:T2 Acts-on:T59
+T3	Action 139 143	wash
+E3	Action:T3 Acts-on:T59 Using:T58
+T4	Action 181 184	add
+E4	Action:T4 Acts-on:T56
+T6	Action 232 240	Incubate
+E6	Action:T6 
+T7	Action 277 281	Wash
+E7	Action:T7 Acts-on:T50
+T8	Action 305 309	Wash
+E8	Action:T8 Acts-on:T52
+T9	Action 444 448	Grow
+E9	Action:T9 Acts-on:T60 Site:T63
+T10	Action 502 508	Decant
+E10	Action:T10 Acts-on:T66
+T11	Action 527 531	wash
+E11	Action:T11 Acts-on:T66 Using:T65
+T14	Action 585 588	add
+E14	Action:T14 Acts-on:T13
+T15	Action 651 659	Incubate
+E15	Action:T15 
+T18	Action 923 926	Mix
+E18	Action:T18 
+T19	Action 935 944	vortexing
+E19	Action:T19 
+T20	Action 951 961	centrifuge
+E20	Action:T20 
+T22	Action 1025 1028	add
+E22	Action:T22 Acts-on:T72 Site:T70
+T26	Action 1235 1241	Decant
+E26	Action:T26 Acts-on:T24 Site:T74
+T27	Action 1305 1308	Add
+E27	Action:T27 Acts-on:T92
+T28	Action 1357 1365	incubate
+E28	Action:T28 Acts-on:T92
+T29	Action 1403 1409	Decant
+E29	Action:T29 Acts-on:T84
+T30	Action 1491 1499	Incubate
+E30	Action:T30 Site:T31
+T33	Action 1696 1704	Aspirate
+E33	Action:T33 Acts-on:T95
+T34	Action 1752 1755	add
+E34	Action:T34 Acts-on:T97
+T35	Action 1781 1789	Incubate
+E35	Action:T35 Site:T78
+T36	Action 1827 1833	Decant
+E36	Action:T36 Acts-on:T98
+T37	Action 1858 1861	add
+E37	Action:T37 Acts-on:T99
+T39	Action 1962 1970	Incubate
+E39	Action:T39 Site:T79
+T40	Action 2008 2014	Decant
+E40	Action:T40 Acts-on:T38
+T41	Action 2046 2049	add
+E41	Action:T41 Acts-on:T101
+T42	Action 2075 2083	Incubate
+E42	Action:T42 
+T43	Action 2121 2124	Add
+E43	Action:T43 Acts-on:T105 Site:T106
+T44	Action 2178 2181	top
+E44	Action:T44 Acts-on:T108
+T45	Reagent 61 66	cells
+T46	Modifier 72 79	96-well
+T47	Modifier 80 85	glass
+T48	Location 86 111	bottom cell culture plate
+T5	Amount 185 191	200 μL
+T49	Amount 287 293	200 μL
+T50	Reagent 297 303	1X PBS
+T51	Amount 315 321	200 μL
+T52	Reagent 325 331	1X PBS
+T53	Generic-Measure 244 260	room temperature
+T54	Time 265 275	10 minutes
+R1	Setting Arg1:E6 Arg2:T53	
+R2	Setting Arg1:E6 Arg2:T54	
+T55	Generic-Measure 195 199	3.7%
+T56	Reagent 200 230	Formaldehyde fixation solution
+R3	Measure Arg1:T56 Arg2:T5	
+R4	Measure Arg1:T56 Arg2:T55	
+R5	Measure Arg1:T50 Arg2:T49	
+R6	Measure Arg1:T52 Arg2:T51	
+T57	Amount 149 155	200 μL
+T58	Reagent 159 165	1X PBS
+R7	Measure Arg1:T58 Arg2:T57	
+T59	Reagent 120 133	growth medium
+T60	Reagent 449 454	cells
+T61	Generic-Measure 460 467	96-well
+T62	Modifier 468 473	glass
+T63	Location 474 499	bottom cell culture plate
+R8	Mod-Link Arg1:T63 Arg2:T62	
+R9	Measure Arg1:T63 Arg2:T61	
+R10	Mod-Link Arg1:T48 Arg2:T46	
+R11	Mod-Link Arg1:T48 Arg2:T47	
+T64	Amount 537 543	200 μL
+T65	Reagent 547 553	1X PBS
+T12	Amount 589 595	200 μL
+T13	Reagent 632 649	fixation solution
+R12	Measure Arg1:T13 Arg2:T12	
+T66	Reagent 509 521	growth media
+R13	Measure Arg1:T65 Arg2:T64	
+T67	Generic-Measure 663 679	room temperature
+T68	Time 684 694	10 minutes
+R14	Setting Arg1:E15 Arg2:T67	
+R15	Setting Arg1:E15 Arg2:T68	
+T16	Modifier 927 931	well
+R16	Mod-Link Arg1:E18 Arg2:T16	
+T17	Modifier 962 969	briefly
+R17	Mod-Link Arg1:E20 Arg2:T17	
+T21	Amount 1029 1035	1.5 μL
+T69	Amount 1063 1068	75 μL
+T70	Reagent 1072 1092	Hybridization Buffer
+T23	Action 1103 1109	vortex
+E5	Action:T23 Acts-on:T72
+T71	Action 1113 1123	centrifuge
+E12	Action:T71 Acts-on:T72
+T72	Reagent 1039 1059	probe stock solution
+R18	Measure Arg1:T72 Arg2:T21	
+R19	Measure Arg1:T70 Arg2:T69	
+T24	Reagent 1242 1251	MeOH-AcOH
+T25	Generic-Measure 1255 1258	70%
+T73	Reagent 1259 1266	ethanol
+R20	Measure Arg1:T73 Arg2:T25	
+T74	Location 1272 1303	wells containing adherent cells
+R21	Or Arg1:T24 Arg2:T73	
+T75	Temperature 1805 1810	37 °C
+T76	Time 1815 1825	30 minutes
+T77	Amount 1862 1868	200 μL
+T78	Location 1797 1801	dark
+T79	Location 1978 1982	dark
+T80	Temperature 1986 1991	37 °C
+T81	Time 1996 2006	30 minutes
+T82	Amount 1756 1762	200 μL
+T31	Location 1507 1511	dark
+T32	Temperature 1515 1520	37 °C
+T83	Time 1525 1537	4 to 16 hour
+T84	Reagent 1410 1423	Wash Buffer A
+T85	Action 1424 1427	Add
+E13	Action:T85 Acts-on:T87 Site:T89
+T86	Amount 1428 1433	75 μL
+T87	Reagent 1437 1457	Hybridization Buffer
+T88	Modifier 1458 1474	containing Probe
+T89	Location 1485 1489	well
+R22	Measure Arg1:T87 Arg2:T86	
+R23	Mod-Link Arg1:T87 Arg2:T88	
+T90	Modifier 1480 1484	each
+R24	Mod-Link Arg1:T89 Arg2:T90	
+T91	Amount 1309 1315	200 μL
+T92	Reagent 1319 1332	Wash Buffer A
+T93	Generic-Measure 1369 1385	room temperature
+T94	Time 1390 1401	2-5 minutes
+R25	Measure Arg1:T92 Arg2:T91	
+R26	Setting Arg1:E28 Arg2:T93	
+R27	Setting Arg1:E28 Arg2:T94	
+R28	Setting Arg1:E30 Arg2:T32	
+R29	Setting Arg1:E30 Arg2:T83	
+T95	Reagent 1709 1729	Hybridization Buffer
+T96	Modifier 1730 1746	containing Probe
+T97	Reagent 1766 1779	Wash Buffer A
+R30	Measure Arg1:T97 Arg2:T82	
+R31	Mod-Link Arg1:T95 Arg2:T96	
+R32	Setting Arg1:E35 Arg2:T75	
+R33	Setting Arg1:E35 Arg2:T76	
+T98	Reagent 1834 1847	Wash Buffer A
+T99	Reagent 1872 1890	DAPI nuclear stain
+R34	Measure Arg1:T99 Arg2:T77	
+R35	Setting Arg1:E39 Arg2:T80	
+R36	Setting Arg1:E39 Arg2:T81	
+T38	Reagent 2015 2035	DAPI staining buffer
+T100	Amount 2050 2056	200 μL
+T101	Reagent 2060 2073	Wash Buffer B
+T102	Temperature 2087 2103	room temperature
+T103	Time 2108 2119	2-5 minutes
+R37	Measure Arg1:T101 Arg2:T100	
+R38	Setting Arg1:E42 Arg2:T102	
+R39	Setting Arg1:E42 Arg2:T103	
+T104	Amount 2125 2130	30 μL
+T105	Reagent 2134 2161	VectaShield Mounting Medium
+T106	Location 2169 2173	well
+T107	Amount 2187 2192	30 μL
+T108	Reagent 2196 2215	Mineral Oil Proceed
+R40	Measure Arg1:T105 Arg2:T104	
+R41	Measure Arg1:T108 Arg2:T107	
+T109	Method 0 55	Stellaris® RNA FISH 96 Well Glass Bottom Plate Protocol
+T110	Action 170 173	fix
+E16	Action:T110 Acts-on:T111
+T111	Reagent 174 179	cells
+T112	Method 337 363	Alternative Fixation steps
+T113	Modifier 371 382	alternative
+T114	Method 390 407	standard fixation
+T115	Modifier 416 442	not meant to be sequential
+T116	Action 557 577	fix and permeabilize
+E17	Action:T116 Acts-on:T117
+T117	Reagent 578 583	cells
+T118	Reagent 599 619	methanol-acetic acid
+T119	Reagent 621 630	MeOH-AcOH
+R42	Meronym Arg1:T119 Arg2:T118	
+R43	Meronym Arg1:T13 Arg2:T119	
+T120	Reagent 696 701	Cells
+T121	Action 709 715	stored
+E21	Action:T121 
+T122	Temperature 719 730	+2 to +8 °C
+T123	Reagent 734 743	MeOH-AcOH
+T124	Modifier 744 749	up to
+T125	Time 750 758	48 hours
+T126	Modifier 759 765	before
+T127	Method 766 779	hybridization
+T128	Reagent 986 1006	Hybridization Buffer
+T129	Reagent 1018 1023	probe
+T130	Location 1140 1144	well
+T131	Reagent 1170 1184	probe solution
+T132	Concentration 1188 1194	250 nM
+R44	Measure Arg1:T131 Arg2:T132	
+T133	Reagent 1201 1209	solution
+T134	Method 1542 1552	Incubation
+T135	Method 1619 1629	Incubation
+T136	Time 1572 1580	16 hours
+T137	Method 1591 1615	Standard Fixation Method
+T138	Time 1649 1656	2 hours
+T139	Method 1667 1694	Alternative Fixation Method
+T140	Reagent 1892 1905	Wash Buffer A
+T141	Concentration 1920 1927	5 ng/mL
+T142	Reagent 1928 1932	DAPI
+R45	Meronym Arg1:T140 Arg2:T142	
+R46	Measure Arg1:T142 Arg2:T141	
+R47	Meronym Arg1:T128 Arg2:T129	
+T143	Reagent 1954 1960	nuclei
+T144	Action 1934 1949	to counterstain
+E23	Action:T144 Acts-on:T143
+T145	Method 2219 2226	Imaging
+T146	Reagent 806 815	MeOH-AcOH
+T147	Modifier 831 841	evaporated
+R48	Mod-Link Arg1:T146 Arg2:T147	
+T148	Action 788 791	use
+E24	Action:T148 Site:T149
+T149	Location 794 798	well
+T150	Modifier 781 787	Do not
+R49	Mod-Link Arg1:E24 Arg2:T150	
+T151	Modifier 846 852	frozen
+T152	Reagent 876 901	reconstituted probe stock
+T153	Temperature 905 921	room temperature
+T154	Action 867 871	warm
+E25	Action:T154 Acts-on:T152
+R50	Setting Arg1:E25 Arg2:T153	
+R51	Mod-Link Arg1:T152 Arg2:T151	
+T155	Action 974 981	prepare
+E31	Action:T155 Acts-on:T128
+T156	Modifier 1162 1169	working
+R52	Mod-Link Arg1:T131 Arg2:T156	

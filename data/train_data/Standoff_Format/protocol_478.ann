@@ -1,0 +1,32 @@
+T2	Action 79 82	Mix
+E2	Action:T2 Acts-on:T1
+T3	Action 97 106	pipetting
+E3	Action:T3 Acts-on:T8 Using:T9
+T4	Action 147 157	"flicking"
+E4	Action:T4 Acts-on:T10
+T5	Action 183 202	("touch") spin-down
+E5	Action:T5 Using:T12
+T6	Action 232 238	vortex
+E6	Action:T6 Acts-on:T13
+T7	Action 253 261	Incubate
+E7	Action:T7 Measure-Type-Link:T17
+T1	Reagent 83 93	components
+T8	Reagent 111 127	reaction mixture
+T9	Method 128 139	up and down
+T10	Location 162 175	reaction tube
+T11	Modifier 177 182	Quick
+T12	Location 208 223	microcentrifuge
+R1	Mod-Link Arg1:E5 Arg2:T11	
+T13	Reagent 243 251	reaction
+T14	Time 266 272	1 hour
+T15	Modifier 280 295	enzyme-specific
+T17	Measure-Type 308 319	temperature
+R4	Setting Arg1:E7 Arg2:T14	
+T18	Method 0 18	Restriction Digest
+T19	Action 19 25	Set up
+E1	Action:T19 Acts-on:T20
+T20	Reagent 40 48	reaction
+T21	Reagent 56 64	reaction
+T22	Measure-Type 65 71	volume
+T23	Amount 72 76	50ul
+R6	Measure Arg1:T21 Arg2:T23	

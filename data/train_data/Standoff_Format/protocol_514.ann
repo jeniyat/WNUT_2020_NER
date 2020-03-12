@@ -1,0 +1,173 @@
+T1	Action 60 70	Centrifuge
+E1	Action:T1 Acts-on:T18
+T2	Action 131 136	place
+E2	Action:T2 
+T3	Action 145 149	Thaw
+E3	Action:T3 Acts-on:T24
+T4	Action 227 232	Pipet
+E4	Action:T4 Acts-on:T27 Site:T28
+T5	Action 312 315	mix
+E5	Action:T5 Using:T30
+T6	Action 430 438	Incubate
+E6	Action:T6 Acts-on:T31 Site:T32
+T7	Action 474 482	Incubate
+E7	Action:T7 Site:T36
+T8	Action 551 557	Remove
+E8	Action:T8 Acts-on:T37 Site:T39
+T9	Action 589 594	place
+E9	Action:T9 Acts-on:T41
+T10	Action 608 611	Add
+E10	Action:T10 Acts-on:T44 Site:T45
+T11	Action 744 749	Place
+E11	Action:T11 Acts-on:T43 Site:T46
+T12	Action 804 810	secure
+E12	Action:T12 Using:T47 Acts-on:T43
+T13	Action 851 856	Shake
+E13	Action:T13 Acts-on:T48 Site:T52
+T14	Action 931 937	Spread
+E14	Action:T14 Acts-on:T55 Site:T54 Site2:T91
+T15	Action 1110 1116	Invert
+E15	Action:T15 Acts-on:T56
+T16	Action 1162 1168	Select
+E16	Action:T16 Acts-on:T60
+T17	Action 1182 1189	analyze
+E17	Action:T17 Using:T61 Acts-on:T60
+T18	Location 75 82	vial(s)
+T19	Reagent 98 118	ligation reaction(s)
+R1	Meronym Arg1:T19 Arg2:T18	
+T20	Modifier 119 126	briefly
+T21	Temperature 140 143	ice
+R2	Setting Arg1:E2 Arg2:T21	
+R3	Mod-Link Arg1:E1 Arg2:T20	
+T22	Temperature 154 157	ice
+T23	Size 163 168	50 μL
+T24	Location 169 173	vial
+T25	Reagent 177 192	One Shot® cells
+R4	Setting Arg1:E3 Arg2:T22	
+R5	Measure Arg1:T24 Arg2:T23	
+R6	Meronym Arg1:T24 Arg2:T25	
+T26	Amount 233 239	1–5 μL
+T27	Reagent 248 265	ligation reaction
+R7	Measure Arg1:T27 Arg2:T26	
+T28	Location 284 288	vial
+T29	Reagent 292 307	competent cells
+R8	Meronym Arg1:T28 Arg2:T29	
+T30	Method 319 333	tapping gently
+T31	Location 443 450	vial(s)
+T32	Location 454 457	ice
+T33	Time 462 472	30 minutes
+R9	Setting Arg1:E6 Arg2:T33	
+T34	Time 495 505	30 seconds
+T35	Temperature 513 517	42°C
+T36	Device 518 528	water bath
+R10	Setting Arg1:T36 Arg2:T35	
+R11	Setting Arg1:E7 Arg2:T34	
+T37	Location 558 565	vial(s)
+T38	Temperature 575 579	42°C
+T39	Device 580 584	bath
+T40	Temperature 603 606	ice
+R12	Setting Arg1:E9 Arg2:T40	
+T41	Mention 595 599	them
+R13	Coreference-Link Arg1:T41 Arg2:T37	
+R15	Setting Arg1:T39 Arg2:T38	
+T42	Amount 612 618	250 μL
+T44	Reagent 633 645	S.O.C medium
+T45	Location 654 658	vial
+R14	Measure Arg1:T44 Arg2:T42	
+T43	Location 754 761	vial(s)
+T46	Location 767 787	microcentrifuge rack
+T47	Device 816 820	tape
+T48	Location 861 868	vial(s)
+T49	Temperature 872 876	37°C
+T50	Time 889 895	1 hour
+T51	Speed 899 906	225 rpm
+T52	Device 912 929	shaking incubator
+R16	Setting Arg1:E13 Arg2:T49	
+R17	Setting Arg1:E13 Arg2:T50	
+R18	Setting Arg1:E13 Arg2:T51	
+T53	Amount 938 947	20–200 μL
+T54	Location 999 1013	LB agar plates
+T55	Reagent 958 972	transformation
+R19	Measure Arg1:T55 Arg2:T53	
+T56	Location 1121 1129	plate(s)
+T57	Action 1134 1142	incubate
+E18	Action:T57 Acts-on:T56
+T58	Temperature 1146 1150	37°C
+T59	Time 1151 1160	overnight
+R20	Setting Arg1:E18 Arg2:T58	
+R21	Setting Arg1:E18 Arg2:T59	
+T60	Reagent 1169 1177	colonies
+T61	Method 1193 1210	plasmid isolation
+T62	Method 1212 1215	PCR
+T63	Method 1220 1230	sequencing
+R22	Or Arg1:T61 Arg2:T62	
+R23	Or Arg1:T62 Arg2:T63	
+T64	Method 45 59	Transformation
+T65	Modifier 197 201	each
+T66	Method 202 225	ligation/transformation
+T67	Modifier 243 247	each
+R24	Mod-Link Arg1:T27 Arg2:T67	
+T68	Modifier 266 279	directly into
+R25	Mod-Link Arg1:T28 Arg2:T68	
+T69	Action 335 345	Do not mix
+E19	Action:T69 Using:T70
+T70	Method 349 370	pipetting up and down
+T71	Modifier 376 385	remaining
+T72	Reagent 386 405	ligation mixture(s)
+T73	Action 413 419	stored
+E20	Action:T73 Acts-on:T72
+T74	Temperature 423 428	−20°C
+R26	Mod-Link Arg1:T72 Arg2:T71	
+R27	Setting Arg1:E20 Arg2:T74	
+T75	Modifier 487 494	exactly
+R28	Mod-Link Arg1:T34 Arg2:T75	
+T76	Modifier 530 536	Do not
+T77	Action 537 540	mix
+E21	Action:T77 
+T78	Action 544 549	shake
+E22	Action:T78 
+R29	Or Arg1:E21 Arg2:E22	
+R30	Mod-Link Arg1:E21 Arg2:T76	
+R31	Mod-Link Arg1:E22 Arg2:T76	
+T79	Modifier 622 632	pre-warmed
+T80	Modifier 649 653	each
+R32	Mod-Link Arg1:T45 Arg2:T80	
+R33	Mod-Link Arg1:T44 Arg2:T79	
+T81	Reagent 660 665	S.O.C
+T82	Modifier 671 675	rich
+T83	Reagent 676 682	medium
+R34	Mod-Link Arg1:T83 Arg2:T82	
+R35	Meronym Arg1:T83 Arg2:T81	
+T85	Method 684 701	sterile technique
+T84	Action 723 742	avoid contamination
+E23	Action:T84 Using:T85
+T86	Modifier 788 799	on its side
+R36	Mod-Link Arg1:E11 Arg2:T86	
+T87	Action 824 834	avoid loss
+E24	Action:T87 Acts-on:T88
+T88	Location 842 849	vial(s)
+T89	Modifier 881 888	exactly
+R37	Mod-Link Arg1:T50 Arg2:T89	
+T90	Modifier 953 957	each
+T91	Location 973 977	vial
+R38	Mod-Link Arg1:T91 Arg2:T90	
+R39	Meronym Arg1:T55 Arg2:T91	
+T92	Modifier 981 998	separate, labeled
+R40	Mod-Link Arg1:T54 Arg2:T92	
+T93	Modifier 1019 1028	remaining
+T94	Reagent 1029 1047	transformation mix
+T95	Action 1055 1061	stored
+E25	Action:T95 Acts-on:T94
+T96	Temperature 1065 1068	4°C
+T97	Action 1073 1083	plated out
+E26	Action:T97 Acts-on:T94
+T98	Time 1088 1096	next day
+T99	Modifier 1098 1108	if desired
+R41	Setting Arg1:E26 Arg2:T98	
+R42	Mod-Link Arg1:E26 Arg2:T99	
+R43	Setting Arg1:E25 Arg2:T96	
+R44	Mod-Link Arg1:T94 Arg2:T93	
+T100	Reagent 37 44	E. coli
+T101	Modifier 10 36	TOP10 Chemically Competent
+T102	Modifier 0 9	One Shot®
+R45	Mod-Link Arg1:T100 Arg2:T101	

@@ -1,0 +1,363 @@
+T1	Action 53 57	Make
+E1	Action:T1 Acts-on:T23 Using:T93
+T2	Action 86 92	Record
+E2	Action:T2 Measure-Type-Link:T24
+T3	Action 330 336	Remove
+E3	Action:T3 Acts-on:T26 Acts-on2:T27 Site:T28
+T4	Action 467 474	Connect
+E4	Action:T4 Acts-on:T30 Site:T29
+T5	Action 511 517	Attach
+E5	Action:T5 Acts-on:T32
+T6	Action 588 593	Place
+E6	Action:T6 Acts-on:T35 Acts-on2:T36
+T7	Action 811 816	Place
+E7	Action:T7 Acts-on:T38 Site:T39
+T8	Action 1002 1007	Clamp
+E8	Action:T8 Acts-on:T40 Acts-on2:T41
+T9	Action 1042 1045	Add
+E9	Action:T9 Acts-on:T42
+T10	Action 1241 1247	remove
+E10	Action:T10 Acts-on:T50
+T11	Action 1639 1646	Prepare
+E11	Action:T11 Product:T52
+T12	Action 1786 1789	Lay
+E12	Action:T12 Acts-on:T63 Site:T69 Site2:T66
+T14	Action 1983 1986	Dry
+E14	Action:T14 
+T15	Action 2051 2056	Place
+E15	Action:T15 Acts-on:T73 Site:T76
+T16	Action 2101 2106	Place
+E16	Action:T16 Acts-on:T78 Site:T79
+T17	Action 2272 2276	View
+E17	Action:T17 Using:T85
+T18	Action 2299 2306	Examine
+E18	Action:T18 Acts-on:T88 Site:T86
+T19	Action 2370 2375	Count
+E19	Action:T19 Acts-on:T90
+T23	Reagent 58 67	dilutions
+T24	Measure-Type 93 99	volume
+T25	Concentration 341 344	10%
+T26	Reagent 345 349	SYBR
+T27	Reagent 354 370	phenylenediamine
+T28	Device 380 387	freezer
+R1	Measure Arg1:T26 Arg2:T25	
+T29	Device 498 509	vacuum pump
+T30	Location 485 490	flask
+T31	Modifier 479 484	glass
+R2	Mod-Link Arg1:T30 Arg2:T31	
+T32	Device 522 535	filter holder
+T33	Modifier 536 586	so that the grout is flat and level with the table
+R3	Mod-Link Arg1:E5 Arg2:T33	
+T34	Size 596 602	0.8 µm
+T35	Device 603 609	filter
+R4	Setting Arg1:T35 Arg2:T34	
+T36	Location 610 629	on top of the grout
+T37	Size 821 828	0.02 µm
+T38	Device 829 835	filter
+T39	Location 836 863	on top of the 0.8 µm filter
+R5	Setting Arg1:T38 Arg2:T37	
+T40	Device 1012 1018	funnel
+T41	Location 1019 1040	on top of the filters
+T42	Reagent 1050 1056	sample
+T43	Action 1061 1068	turn on
+E23	Action:T43 Acts-on:T44
+T44	Device 1073 1077	pump
+T45	Generic-Measure 1099 1105	20 kPa
+T46	Generic-Measure 1109 1115	7 mmHg
+R6	Setting Arg1:T44 Arg2:T45	
+R7	Or Arg1:T45 Arg2:T46	
+T47	Action 1220 1228	Turn off
+E24	Action:T47 Acts-on:T48
+T48	Device 1233 1239	vacuum
+T49	Size 1248 1255	0.02 µm
+T50	Device 1256 1262	filter
+R8	Setting Arg1:T50 Arg2:T49	
+T51	Amount 1649 1655	100 µL
+T52	Reagent 1656 1660	drop
+T53	Reagent 1664 1668	SYBR
+R9	Measure Arg1:T52 Arg2:T51	
+R10	Meronym Arg1:T52 Arg2:T53	
+T13	Modifier 1987 1997	completely
+R11	Mod-Link Arg1:E14 Arg2:T13	
+T54	Location 1747 1760	on the bottom
+T55	Modifier 1766 1773	plastic
+T56	Location 1774 1784	Petri dish
+R12	Mod-Link Arg1:T56 Arg2:T55	
+R13	Meronym Arg1:T54 Arg2:T56	
+T57	Amount 1686 1692	2.5 µL
+T58	Concentration 1693 1696	10%
+T59	Reagent 1697 1702	stock
+T60	Amount 1705 1712	97.5 µL
+T61	Modifier 1713 1729	0.02 µm filtered
+T62	Reagent 1730 1745	deionized water
+R14	Mod-Link Arg1:T62 Arg2:T61	
+R15	Measure Arg1:T62 Arg2:T60	
+R16	Measure Arg1:T59 Arg2:T58	
+R17	Measure Arg1:T59 Arg2:T57	
+R18	Meronym Arg1:T59 Arg2:T53	
+R19	Meronym Arg1:T62 Arg2:T53	
+T63	Device 1799 1814	Anodisc filters
+T64	Modifier 1815 1829	sample side up
+T65	Time 1877 1887	15 minutes
+T66	Location 1893 1904	dark drawer
+T67	Location 1908 1911	box
+T68	Reagent 1850 1872	SYBR staining solution
+T69	Reagent 1837 1842	drops
+R20	Meronym Arg1:T69 Arg2:T68	
+R21	Setting Arg1:E12 Arg2:T65	
+R22	Or Arg1:T66 Arg2:T67	
+R23	Mod-Link Arg1:T63 Arg2:T64	
+T70	Action 2015 2027	Do not touch
+E13	Action:T70 Acts-on:T71
+T71	Location 2032 2035	top
+T72	Device 2043 2049	filter
+R24	Meronym Arg1:T71 Arg2:T72	
+T73	Device 2061 2067	filter
+T74	Modifier 2068 2082	sample-side up
+T75	Modifier 2088 2093	glass
+T76	Location 2094 2099	slide
+R25	Mod-Link Arg1:T76 Arg2:T75	
+R26	Mod-Link Arg1:T73 Arg2:T74	
+T77	Amount 2107 2112	30 µL
+T78	Reagent 2116 2124	antifade
+T79	Location 2130 2140	cover slip
+R27	Measure Arg1:T78 Arg2:T77	
+T80	Location 2154 2158	slip
+T81	Action 2147 2153	invert
+E25	Action:T81 Acts-on:T80
+T82	Action 2163 2168	place
+E26	Action:T82 Acts-on:T80 Site:T83
+T83	Location 2172 2175	top
+T84	Device 2183 2189	filter
+R28	Meronym Arg1:T83 Arg2:T84	
+T85	Method 2282 2297	blue excitation
+T86	Device 2334 2344	microscope
+T87	Numerical 2316 2319	ten
+T88	Reagent 2320 2326	fields
+R29	Measure Arg1:T88 Arg2:T87	
+T89	Numerical 2385 2388	200
+T90	Reagent 2389 2396	viruses
+T91	Reagent 2400 2408	bacteria
+R30	Or Arg1:T90 Arg2:T91	
+R31	Measure Arg1:T90 Arg2:T89	
+T20	Method 0 8	Protocol
+T21	Measure-Type 13 24	SYBR Counts
+T22	Reagent 28 39	Cyanophages
+T92	Reagent 44 52	Bacteria
+T93	Reagent 75 84	sample(s)
+T94	Action 136 139	use
+E20	Action:T94 Acts-on:T96
+T95	Amount 140 145	20 µl
+T96	Reagent 149 161	phage stocks
+T97	Amount 165 171	200 µl
+T98	Reagent 175 180	cells
+T99	Action 181 188	diluted
+E21	Action:T99 Using:T102 Acts-on:T98
+T100	Amount 192 196	2 ml
+T101	Modifier 202 212	autoclaved
+T102	Reagent 213 221	seawater
+R32	Mod-Link Arg1:T102 Arg2:T101	
+R33	Setting Arg1:E21 Arg2:T100	
+R34	Measure Arg1:T98 Arg2:T97	
+R35	Measure Arg1:T96 Arg2:T95	
+R36	Or Arg1:T96 Arg2:T98	
+T103	Modifier 230 235	final
+T104	Location 236 242	slides
+T105	Action 243 249	appear
+E22	Action:T105 Acts-on:T104
+T106	Modifier 250 269	too sparse or dense
+T107	Measure-Type 279 285	volume
+T108	Reagent 289 295	sample
+T109	Action 308 316	adjusted
+E27	Action:T109 Measure-Type-Link:T107 Acts-on:T108
+T110	Modifier 317 328	accordingly
+R37	Mod-Link Arg1:E27 Arg2:T110	
+R38	Mod-Link Arg1:T104 Arg2:T103	
+R39	Mod-Link Arg1:E22 Arg2:T106	
+T111	Action 389 393	Keep
+E28	Action:T111 Acts-on:T112
+T112	Reagent 398 404	stocks
+T113	Modifier 405 420	away from light
+T114	Location 430 441	in a drawer
+T115	Mention 449 453	they
+T116	Action 458 465	thawing
+E29	Action:T116 Acts-on:T115
+R40	Coreference-Link Arg1:T115 Arg2:T112	
+R41	Mod-Link Arg1:E28 Arg2:T113	
+T117	Mention 641 643	it
+T118	Modifier 647 675	completely flat and centered
+T119	Action 631 640	Make sure
+E30	Action:T119 Acts-on:T117
+R42	Mod-Link Arg1:T117 Arg2:T118	
+T120	Modifier 682 707	no air bubbles underneath
+R43	Mod-Link Arg1:T117 Arg2:T120	
+T121	Action 709 720	pre-wetting
+E31	Action:T121 Acts-on:T122
+T122	Reagent 725 730	grout
+T123	Modifier 731 736	helps
+R44	Mod-Link Arg1:E31 Arg2:T123	
+T124	Device 744 750	filter
+T125	Action 758 762	used
+E32	Action:T125 Acts-on:T124
+T126	Modifier 763 784	many times so long as
+T127	Mention 785 787	it
+T128	Action 788 793	stays
+E33	Action:T128 Acts-on:T127
+T129	Modifier 794 809	intact and flat
+R45	Mod-Link Arg1:E32 Arg2:T126	
+R46	Mod-Link Arg1:T127 Arg2:T129	
+R47	Coreference-Link Arg1:T127 Arg2:T124	
+T130	Action 873 882	make sure
+E34	Action:T130 Acts-on:T131
+T131	Mention 883 885	it
+T132	Modifier 889 937	flat and centered with no air bubbles underneath
+R48	Mod-Link Arg1:T131 Arg2:T132	
+T133	Action 939 949	Turning on
+E35	Action:T133 Acts-on:T134
+T134	Device 954 960	vacuum
+T135	Time 961 978	for a brief while
+T136	Action 983 995	help achieve
+E36	Action:T136 Acts-on:T137
+T137	Mention 996 1000	this
+R49	Setting Arg1:E35 Arg2:T135	
+T138	Modifier 1118 1132	After the last
+T139	Reagent 1133 1139	liquid
+T140	Action 1140 1154	passes through
+E37	Action:T140 Acts-on:T139
+T141	Device 1159 1165	funnel
+T142	Device 1170 1175	clamp
+T143	Action 1186 1193	removed
+E38	Action:T143 Acts-on:T142 Acts-on2:T141
+T144	Device 1203 1209	vacuum
+T145	Modifier 1210 1218	still on
+R50	Mod-Link Arg1:T144 Arg2:T145	
+R51	Mod-Link Arg1:T139 Arg2:T138	
+T146	Action 1264 1274	Keep track
+E39	Action:T146 Acts-on:T147
+T147	Location 1284 1288	side
+T148	Location 1310 1313	top
+T149	Device 1296 1302	filter
+R52	Meronym Arg1:T148 Arg2:T149	
+R53	Meronym Arg1:T147 Arg2:T148	
+T150	Action 1315 1323	Blot out
+E40	Action:T150 Acts-on:T152 Site:T153 Site2:T155 Using:T156
+T151	Modifier 1324 1327	any
+T152	Reagent 1328 1336	seawater
+T153	Location 1344 1350	bottom
+T154	Modifier 1358 1369	top plastic
+T155	Location 1370 1373	rim
+T156	Device 1381 1388	kimwipe
+R54	Mod-Link Arg1:T155 Arg2:T154	
+R55	Mod-Link Arg1:T152 Arg2:T151	
+T157	Modifier 1396 1410	very important
+T158	Action 1414 1423	make sure
+E41	Action:T158 Acts-on:T159
+T159	Device 1428 1435	filters
+T160	Modifier 1440 1454	completely dry
+T161	Modifier 1455 1461	before
+T162	Action 1462 1472	continuing
+E42	Action:T162 
+R56	Mod-Link Arg1:E42 Arg2:T161	
+R57	Mod-Link Arg1:T159 Arg2:T160	
+R58	Mod-Link Arg1:E41 Arg2:T157	
+T163	Action 1495 1498	rub
+E43	Action:T163 Using:T166 Acts-on:T164
+T164	Location 1503 1507	back
+T165	Device 1515 1521	filter
+T166	Device 1529 1536	kimwipe
+T167	Action 1546 1551	stick
+E44	Action:T167 Acts-on:T168
+T168	Mention 1552 1554	it
+T169	Device 1560 1570	dessicator
+T170	Modifier 1582 1591	makeshift
+T171	Device 1592 1595	box
+T172	Modifier 1601 1605	some
+T173	Device 1606 1618	drying rocks
+R59	Mod-Link Arg1:T173 Arg2:T172	
+R60	Mod-Link Arg1:T171 Arg2:T170	
+R61	Meronym Arg1:T171 Arg2:T169	
+R62	Meronym Arg1:T173 Arg2:T171	
+T174	Time 1626 1637	few minutes
+R63	Meronym Arg1:T164 Arg2:T165	
+R64	Coreference-Link Arg1:T168 Arg2:T165	
+R65	Setting Arg1:E44 Arg2:T174	
+T175	Modifier 1670 1680	made fresh
+R66	Mod-Link Arg1:T53 Arg2:T175	
+T176	Numerical 1794 1798	0.02
+R67	Measure Arg1:T63 Arg2:T176	
+T177	Modifier 1913 1926	While waiting
+T178	Action 1952 1959	prepare
+E45	Action:T178 Acts-on:T179
+T179	Reagent 1964 1981	antifade solution
+R68	Mod-Link Arg1:E45 Arg2:T177	
+T180	Action 2191 2204	Appy pressure
+E46	Action:T180 
+T181	Action 2208 2214	ensure
+E47	Action:T181 Acts-on:T182
+T182	Reagent 2224 2232	antifade
+T183	Action 2233 2238	fills
+E48	Action:T183 Site:T185 Acts-on:T182
+T184	Modifier 2239 2259	the space underneath
+T185	Location 2264 2270	square
+R69	Mod-Link Arg1:T185 Arg2:T184	
+T186	Modifier 2307 2315	at least
+R70	Mod-Link Arg1:T87 Arg2:T186	
+T187	Modifier 2349 2356	usually
+T188	Action 2357 2364	examine
+E49	Action:T188 Count:T189
+T189	Numerical 2365 2367	20
+R71	Mod-Link Arg1:E49 Arg2:T187	
+T190	Numerical 2431 2434	400
+T191	Numerical 2419 2422	ten
+T192	Numerical 2439 2441	20
+T193	Measure-Type 2451 2461	Field size
+T194	Modifier 2469 2473	full
+T195	Action 2475 2483	counting
+E50	Action:T195 Acts-on:T197 Site:T201
+T196	Modifier 2484 2487	all
+T197	Reagent 2488 2497	particles
+T198	Modifier 2501 2504	all
+T199	Numerical 2505 2508	100
+T200	Modifier 2509 2514	small
+T201	Location 2515 2522	squares
+T202	Modifier 2527 2534	smaller
+T203	Numerical 2541 2542	5
+T204	Modifier 2543 2548	small
+T205	Location 2549 2556	squares
+T206	Measure-Type 2576 2604	virus/bacteria concentration
+T207	Modifier 2559 2571	depending on
+R72	Mod-Link Arg1:T205 Arg2:T204	
+R73	Measure Arg1:T205 Arg2:T203	
+R74	Mod-Link Arg1:T197 Arg2:T196	
+R75	Mod-Link Arg1:T201 Arg2:T200	
+R76	Mod-Link Arg1:T201 Arg2:T198	
+R77	Measure Arg1:T201 Arg2:T199	
+T208	Action 2606 2610	Find
+E51	Action:T208 Measure-Type-Link:T209
+T209	Measure-Type 2615 2655	average number of particles per quadrant
+T210	Numerical 2657 2659	25
+T211	Modifier 2660 2665	small
+T212	Location 2666 2673	squares
+R78	Mod-Link Arg1:T212 Arg2:T211	
+R79	Measure Arg1:T212 Arg2:T210	
+T213	Action 2676 2684	Multiply
+E52	Action:T213 Measure-Type-Link:T214
+T214	Measure-Type 2695 2709	scaling factor
+T215	Numerical 2713 2723	1.26 x 105
+T216	Action 2727 2730	get
+E53	Action:T216 Measure-Type-Link:T217 Site:T218
+T217	Measure-Type 2735 2760	total number of particles
+T218	Device 2768 2774	filter
+R80	Setting Arg1:E52 Arg2:T215	
+T219	Action 2776 2782	Divide
+E54	Action:T219 
+T220	Amount 2795 2801	volume
+T221	Modifier 2802 2806	used
+T222	Amount 2813 2818	20 µL
+R81	Coreference-Link Arg1:T222 Arg2:T220	
+R82	Setting Arg1:E54 Arg2:T220	
+R83	Mod-Link Arg1:T220 Arg2:T221	
+T223	Action 2823 2826	get
+E55	Action:T223 Measure-Type-Link:T225 Acts-on:T224
+T224	Reagent 2831 2836	titer
+T225	Measure-Type 2840 2856	particles per ml

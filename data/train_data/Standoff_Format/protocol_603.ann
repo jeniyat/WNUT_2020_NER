@@ -1,0 +1,52 @@
+T1	Action 148 154	Repeat
+E1	Action:T1 Using:T9 Count:T10
+T2	Action 252 258	Repeat
+E2	Action:T2 Using:T4
+T3	Action 309 316	prepare
+E3	Action:T3 Acts-on:T11 Using:T5 Using2:T12
+T4	Method 263 298	plaque purification procedure again
+T5	Reagent 350 356	lysate
+T6	Action 57 61	Make
+E4	Action:T6 Acts-on:T7
+T7	Reagent 87 93	lysate
+T8	Modifier 64 79	dilution series
+R1	Mod-Link Arg1:T7 Arg2:T8	
+T9	Method 159 188	plaque purification procedure
+T10	Numerical 189 190	2
+T11	Reagent 319 343	primary cyanophage stock
+T12	Method 389 420	method A "Liquid Amplification"
+T13	Method 424 454	method B "Plate Amplification"
+R2	Or Arg1:T12 Arg2:T13	
+T14	Method 0 32	Obtaining pure cyanophage stocks
+T15	Method 34 53	plaque purification
+T16	Action 95 101	assume
+E5	Action:T16 Acts-on:T18
+T17	Generic-Measure 102 123	104 to 105 PFU per mL
+T18	Reagent 131 144	plaque lysate
+R3	Measure Arg1:T18 Arg2:T17	
+T19	Action 205 211	ensure
+E6	Action:T19 Acts-on:T20
+T20	Reagent 221 231	cyanophage
+T21	Modifier 232 240	isolated
+T22	Modifier 244 250	clonal
+R4	Mod-Link Arg1:T20 Arg2:T21	
+R5	Mod-Link Arg1:T20 Arg2:T22	
+T23	Method 366 384	final purification
+T24	Method 465 485	liquid amplification
+T25	Method 496 515	plate amplification
+T26	Action 516 521	Titer
+E7	Action:T26 Acts-on:T27 Using:T28
+T27	Reagent 526 537	final stock
+T28	Method 542 554	plaque assay
+T29	Reagent 556 573	Cyanophage stocks
+T30	Action 574 580	stored
+E8	Action:T30 Acts-on:T29
+T31	Temperature 584 587	4°C
+T32	Modifier 588 599	in the dark
+T33	Modifier 604 610	stable
+T34	Modifier 615 623	at least
+T35	Time 624 630	a year
+R6	Mod-Link Arg1:T35 Arg2:T34	
+R7	Setting Arg1:E8 Arg2:T31	
+R8	Mod-Link Arg1:E8 Arg2:T32	
+R9	Mod-Link Arg1:T29 Arg2:T33	

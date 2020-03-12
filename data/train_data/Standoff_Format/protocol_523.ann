@@ -1,0 +1,173 @@
+T1	Action 37 44	Harvest
+E1	Action:T1 Acts-on:T17 Site:T18
+T2	Action 139 144	Tease
+E2	Action:T2 Acts-on:T19 Using:T21
+T3	Action 289 298	Resuspend
+E3	Action:T3 Acts-on:T22 Using:T23
+T4	Action 356 363	isolate
+E4	Action:T4 Acts-on:T24 Using:T86
+T5	Action 431 435	coat
+E5	Action:T5 Acts-on:T26 Using:T27
+T7	Action 498 506	Incubate
+E7	Action:T7 
+T8	Action 584 590	decant
+E8	Action:T8 Acts-on:T31 Site:T32
+T9	Action 625 629	Wash
+E9	Action:T9 Acts-on:T33 Using:T34
+T10	Action 665 669	Wash
+E10	Action:T10 Acts-on:T35 Using:T36
+T11	Action 705 709	Wash
+E11	Action:T11 Acts-on:T37 Using:T38
+T12	Action 745 752	Discard
+E12	Action:T12 Acts-on:T39
+T13	Action 761 766	Plate
+E13	Action:T13 Acts-on:T40 Site:T42
+T14	Action 802 809	Culture
+E14	Action:T14 Acts-on:T43 Using:T47
+T6	Action 1048 1051	add
+E6	Action:T6 Site:T60 Acts-on:T59
+T15	Action 1140 1144	wash
+E15	Action:T15 Acts-on:T61 Count:T62
+T16	Action 1165 1176	restimulate
+E16	Action:T16 Acts-on:T61 Using4:T63 Site:T72 Site2:T73
+T17	Reagent 45 56	lymph nodes
+T18	Reagent 133 137	mice
+T19	Reagent 145 156	lymph nodes
+T20	Size 175 180	70-µm
+T21	Device 181 200	nylon cell strainer
+R1	Measure Arg1:T21 Arg2:T20	
+T22	Reagent 299 304	cells
+T23	Reagent 308 323	complete medium
+T24	Reagent 364 373	CD4+cells
+T25	Size 436 443	12-well
+T26	Location 444 449	plate
+R2	Measure Arg1:T26 Arg2:T25	
+T27	Reagent 455 486	anti-mouse CD3ε, clone 145-2C11
+T28	Concentration 488 495	3 µg/ml
+R3	Measure Arg1:T27 Arg2:T28	
+T29	Temperature 510 514	37°C
+T30	Time 519 526	2 hours
+R4	Setting Arg1:E7 Arg2:T29	
+R5	Setting Arg1:E7 Arg2:T30	
+T31	Reagent 591 608	antibody solution
+T32	Location 618 623	plate
+T33	Location 630 635	plate
+T34	Reagent 641 652	sterile PBS
+T35	Location 670 675	plate
+T36	Reagent 681 692	sterile PBS
+T37	Location 710 715	plate
+T38	Reagent 721 732	sterile PBS
+T39	Reagent 753 759	liquid
+T40	Reagent 767 777	CD4+ cells
+T41	Concentration 781 795	1.0 x 106 /1ml
+T42	Location 796 800	well
+R6	Measure Arg1:T40 Arg2:T41	
+T43	Reagent 810 815	cells
+T44	Time 820 826	5 days
+T45	Temperature 830 834	37°C
+T46	Concentration 836 838	5%
+T47	Reagent 839 842	CO2
+R7	Measure Arg1:T47 Arg2:T46	
+R8	Setting Arg1:E14 Arg2:T44	
+R9	Setting Arg1:E14 Arg2:T45	
+T48	Reagent 863 878	anti-mouse CD28
+T49	Reagent 880 891	clone 37.51
+T50	Concentration 893 900	3 µg/mL
+R10	Measure Arg1:T49 Arg2:T50	
+T51	Reagent 903 918	anti-mouse IL-4
+T52	Reagent 920 931	clone 11B11
+T53	Concentration 933 941	10 µg/mL
+R11	Measure Arg1:T52 Arg2:T53	
+R12	Meronym Arg1:T48 Arg2:T43	
+R13	Meronym Arg1:T49 Arg2:T43	
+R14	Meronym Arg1:T51 Arg2:T43	
+R15	Meronym Arg1:T52 Arg2:T43	
+T54	Reagent 944 966	recombinant mouse IL-2
+T55	Concentration 968 975	5 ng/mL
+R16	Measure Arg1:T54 Arg2:T55	
+T56	Reagent 982 1005	recombinant mouse IL-12
+T57	Concentration 1007 1015	10 ng/ml
+R17	Measure Arg1:T56 Arg2:T57	
+R18	Meronym Arg1:T54 Arg2:T43	
+R19	Meronym Arg1:T56 Arg2:T43	
+T59	Reagent 1065 1076	fresh media
+T58	Amount 1052 1056	2 ml
+T60	Location 1057 1061	well
+R20	Measure Arg1:T59 Arg2:T58	
+T61	Reagent 1145 1150	cells
+T62	Numerical 1151 1155	once
+T63	Reagent 1180 1194	complete media
+T64	Concentration 1200 1208	50 ng/ml
+T65	Reagent 1209 1212	PMA
+R21	Measure Arg1:T65 Arg2:T64	
+T66	Concentration 1214 1221	1 μg/ml
+T67	Reagent 1222 1231	ionomycin
+R22	Measure Arg1:T67 Arg2:T66	
+T68	Amount 1236 1241	10 µl
+T69	Reagent 1242 1250	monensin
+T70	Concentration 1252 1257	1000x
+R23	Measure Arg1:T69 Arg2:T68	
+R24	Measure Arg1:T69 Arg2:T70	
+T71	Size 1265 1271	6-well
+T72	Location 1272 1277	plate
+R25	Measure Arg1:T72 Arg2:T71	
+T73	Location 1281 1290	incubator
+T74	Temperature 1294 1298	37°C
+T75	Time 1303 1310	5 hours
+R26	Meronym Arg1:T65 Arg2:T63	
+R27	Meronym Arg1:T67 Arg2:T63	
+R28	Meronym Arg1:T69 Arg2:T63	
+R29	Setting Arg1:E16 Arg2:T74	
+R30	Setting Arg1:E16 Arg2:T75	
+T76	Method 0 16	Th1 Polarization
+T77	Reagent 20 36	Mouse CD4+ Cells
+T78	Modifier 58 126	superficial cervical, mandibular, axillary, inguinal, and mesenteric
+R31	Mod-Link Arg1:T17 Arg2:T78	
+T79	Modifier 167 174	sterile
+R32	Mod-Link Arg1:T21 Arg2:T79	
+T80	Action 204 210	obtain
+E17	Action:T80 Acts-on:T81
+T81	Reagent 211 250	single-cell suspensions incomplete RPMI
+T82	Concentration 262 265	10%
+T83	Reagent 266 269	FCS
+T84	Modifier 271 279	complete
+T85	Reagent 280 286	medium
+R33	Mod-Link Arg1:T85 Arg2:T84	
+R34	Measure Arg1:T83 Arg2:T82	
+R35	Meronym Arg1:T85 Arg2:T83	
+R36	Meronym Arg1:T83 Arg2:T81	
+T86	Method 337 352	favorite method
+T87	Action 403 407	find
+E18	Action:T87 Acts-on:T89
+T88	Modifier 408 414	useful
+T89	Device 415 419	kits
+R37	Mod-Link Arg1:T89 Arg2:T88	
+T90	Time 421 429	On day 0
+R38	Setting Arg1:E5 Arg2:T90	
+T91	Modifier 529 542	Alternatively
+T92	Action 544 552	incubate
+E19	Action:T92 
+T93	Temperature 556 559	4°C
+T94	Time 560 569	overnight
+R39	Mod-Link Arg1:E19 Arg2:T91	
+R40	Setting Arg1:E19 Arg2:T93	
+R41	Setting Arg1:E19 Arg2:T94	
+T95	Modifier 572 583	Aseptically
+R42	Mod-Link Arg1:E8 Arg2:T95	
+T96	Action 654 658	wash
+E20	Action:T96 
+T97	Action 694 698	wash
+E21	Action:T97 
+T98	Action 734 738	wash
+E22	Action:T98 
+T99	Time 1018 1026	On day 3
+T100	Modifier 1028 1046	if media is yellow
+R43	Mod-Link Arg1:E6 Arg2:T100	
+R44	Setting Arg1:E6 Arg2:T99	
+T101	Modifier 1078 1094	After harvesting
+T102	Reagent 1100 1105	cells
+T103	Modifier 1110 1128	ready for staining
+R45	Mod-Link Arg1:T102 Arg2:T101	
+R46	Mod-Link Arg1:T102 Arg2:T103	
+T104	Time 1130 1138	On day 5
+R47	Setting Arg1:E15 Arg2:T104	

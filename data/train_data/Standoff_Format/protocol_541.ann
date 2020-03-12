@@ -1,0 +1,92 @@
+T1	Action 100 107	Suspend
+E1	Action:T1 Acts-on:T15 Using:T18
+T2	Action 164 168	Make
+E2	Action:T2 Product:T19
+T3	Action 188 194	adding
+E3	Action:T3 Acts-on:T21 Site:T22
+T4	Action 248 258	overlaying
+E4	Action:T4 Using:T24 Acts-on:T22
+T5	Action 296 301	float
+E5	Action:T5 Acts-on:T25 Site:T26
+T6	Action 368 378	Centrifuge
+E6	Action:T6 Acts-on:T28
+T7	Action 421 428	Observe
+E7	Action:T7 Acts-on:T31
+T8	Action 460 466	remove
+E8	Action:T8 Acts-on:T33 Site:T34
+T9	Action 497 503	Dilute
+E9	Action:T9 Acts-on:T35 Using:T37
+T10	Action 577 587	Centrifuge
+E10	Action:T10 Acts-on:T39
+T11	Action 630 637	discard
+E11	Action:T11 Acts-on:T42
+T12	Action 655 662	Suspend
+E12	Action:T12 Acts-on:T43 Using:T45
+T13	Action 740 744	keep
+E13	Action:T13 Acts-on:T47
+T14	Action 821 827	stored
+E14	Action:T14 Acts-on:T56
+T15	Reagent 112 132	mitochondrial pellet
+T16	Amount 136 141	100µl
+T17	Concentration 142 144	1X
+T18	Reagent 145 162	SubCell Buffer-II
+R1	Measure Arg1:T18 Arg2:T17	
+R2	Measure Arg1:T18 Arg2:T16	
+T19	Reagent 171 184	step gradient
+T20	Amount 195 200	200µl
+T21	Reagent 201 217	SubCell Buffer-V
+R3	Measure Arg1:T21 Arg2:T20	
+T22	Location 223 238	centrifuge tube
+T23	Amount 264 269	200µl
+T24	Reagent 270 287	SubCell Buffer-IV
+R4	Measure Arg1:T24 Arg2:T23	
+R5	Meronym Arg1:T21 Arg2:T19	
+R6	Meronym Arg1:T24 Arg2:T19	
+T25	Reagent 306 330	mitochondrial suspension
+T26	Location 338 345	surface
+T27	Reagent 353 366	step gradient
+R7	Meronym Arg1:T26 Arg2:T27	
+T28	Reagent 383 391	gradient
+T29	Speed 395 404	20,000x g
+T30	Time 409 419	20 minutes
+R8	Setting Arg1:E6 Arg2:T29	
+R9	Setting Arg1:E6 Arg2:T30	
+T31	Reagent 437 448	white bands
+T32	Numerical 433 436	two
+R10	Measure Arg1:T31 Arg2:T32	
+T33	Reagent 472 476	band
+T34	Location 491 495	tube
+T35	Reagent 508 533	mitochondrial suspensions
+T36	Concentration 555 557	1X
+T37	Reagent 558 575	SubCell Buffer-II
+R11	Measure Arg1:T37 Arg2:T36	
+T38	Generic-Measure 539 551	equal volume
+R12	Measure Arg1:T37 Arg2:T38	
+T39	Location 592 597	tubes
+T40	Speed 601 610	12,000x g
+T41	Time 615 625	15 minutes
+R13	Setting Arg1:E10 Arg2:T40	
+R14	Setting Arg1:E10 Arg2:T41	
+T42	Reagent 642 653	supernatant
+T43	Reagent 667 688	mitochondrial pellets
+T44	Amount 692 699	30-50µl
+T45	Reagent 700 735	Working Mitochondria Storage Buffer
+R15	Measure Arg1:T45 Arg2:T44	
+T46	Temperature 764 767	ice
+T47	Reagent 749 760	suspensions
+R16	Setting Arg1:E13 Arg2:T46	
+T48	Temperature 831 834	ice
+T49	Time 841 849	48 hours
+R17	Setting Arg1:E14 Arg2:T48	
+R18	Setting Arg1:E14 Arg2:T49	
+T50	Method 0 65	Fractionation of Light and Heavy Mitochondria by Gradient Cushion
+T51	Device 76 99	FOCUS™ Mitochondria Kit
+T52	Modifier 289 295	Gently
+R19	Mod-Link Arg1:E5 Arg2:T52	
+T53	Modifier 450 459	Carefully
+R20	Mod-Link Arg1:E8 Arg2:T53	
+T54	Modifier 482 490	separate
+R21	Mod-Link Arg1:T34 Arg2:T54	
+T55	Modifier 768 796	before downstream processing
+R22	Mod-Link Arg1:E13 Arg2:T55	
+T56	Reagent 802 813	suspensions

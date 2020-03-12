@@ -1,0 +1,233 @@
+T1	Action 42 49	Prepare
+E1	Action:T1 Product:T30
+T2	Action 88 95	Prepare
+E2	Action:T2 Product:T31
+T3	Action 120 127	Prepare
+E3	Action:T3 Product:T32
+T4	Action 206 212	Adsorb
+E4	Action:T4 Acts-on:T37
+T6	Action 510 518	transfer
+E6	Action:T6 Acts-on:T38 Site:T40
+T7	Action 579 585	vortex
+E7	Action:T7 Acts-on:T42
+T8	Action 602 606	pour
+E8	Action:T8 Acts-on:T46 Site:T44
+T9	Action 692 706	rock and swirl
+E9	Action:T9 Acts-on:T48
+T10	Action 720 726	spread
+E10	Action:T10 Acts-on:T28 Site:T50
+T11	Action 1587 1592	elute
+E11	Action:T11 Acts-on:T74 Site:T75 Product:T78
+T13	Action 948 952	Seal
+E13	Action:T13 Acts-on:T12 Using:T54
+T14	Action 974 978	flip
+E14	Action:T14 Acts-on:T55 Using:T56
+T16	Action 1235 1241	Choose
+E16	Action:T16 Acts-on:T15
+T17	Action 1310 1317	Harvest
+E17	Action:T17 Acts-on:T59 Using:T60
+T18	Action 1361 1366	press
+E18	Action:T18 Acts-on:T62 Site:T63 Site2:T64 Using:T66
+T19	Action 1448 1454	remove
+E19	Action:T19 Acts-on:T67
+T20	Action 1465 1473	Transfer
+E20	Action:T20 Acts-on:T68 Site:T70
+T21	Action 1501 1507	vortex
+E21	Action:T21 
+T22	Action 1532 1537	Place
+E22	Action:T22 Acts-on:T72
+T24	Action 1642 1648	Vortex
+E24	Action:T24 Acts-on:T77
+T25	Action 1653 1663	centrifuge
+E25	Action:T25 Acts-on:T77
+T26	Action 1734 1742	Transfer
+E26	Action:T26 Acts-on:T79 Site:T81
+T27	Action 1837 1843	Repeat
+E27	Action:T27 Using:T82 Product:T84
+T23	Action 62 69	Prepare
+E23	Action:T23 Product:T29
+T29	Reagent 70 86	top agar/agarose
+T30	Reagent 50 61	base plates
+T31	Reagent 96 118	target indicator cells
+T32	Reagent 132 138	sample
+T33	Method 187 204	described earlier
+T34	Action 172 183	prefiltered
+E29	Action:T34 Acts-on:T35 Using:T33
+T35	Reagent 140 161	Environmental samples
+T36	Amount 213 225	50 to 100 µL
+T37	Reagent 226 232	sample
+R1	Measure Arg1:T37 Arg2:T36	
+T5	Time 505 508	1 h
+T38	Reagent 519 538	virus: host mixture
+T39	Amount 542 548	2.5 mL
+T40	Reagent 549 558	soft agar
+R2	Measure Arg1:T40 Arg2:T39	
+R3	Setting Arg1:E6 Arg2:T5	
+T41	Modifier 560 578	Quickly and gently
+T42	Reagent 590 597	mixture
+R4	Mod-Link Arg1:E7 Arg2:T41	
+T43	Location 611 622	entire tube
+T44	Location 641 648	surface
+T45	Location 656 666	agar plate
+R5	Meronym Arg1:T44 Arg2:T45	
+T46	Reagent 623 631	contents
+R6	Meronym Arg1:T46 Arg2:T43	
+T47	Modifier 685 691	gently
+R7	Mod-Link Arg1:E9 Arg2:T47	
+T48	Location 711 716	plate
+T28	Reagent 731 738	mixture
+T49	Modifier 739 745	evenly
+T50	Location 755 768	plate surface
+R8	Mod-Link Arg1:T28 Arg2:T49	
+T51	Action 831 837	harden
+E5	Action:T51 Acts-on:T52
+T52	Location 815 827	flat surface
+T53	Time 845 848	1 h
+R9	Setting Arg1:E5 Arg2:T53	
+T12	Location 953 958	plate
+T54	Seal 964 972	parafilm
+T55	Location 979 985	plates
+T56	Method 986 997	upside down
+T15	Reagent 1244 1264	well-isolated plaque
+T57	Location 1270 1275	plate
+T58	Generic-Measure 1300 1308	100 PFUs
+R10	Measure Arg1:T15 Arg2:T58	
+R11	Meronym Arg1:T15 Arg2:T57	
+T59	Reagent 1322 1328	plaque
+T60	Device 1337 1352	Pasteur pipette
+T61	Modifier 1354 1360	gently
+T62	Device 1371 1389	tip of the pipette
+T63	Reagent 1399 1405	plaque
+T64	Reagent 1413 1424	bottom agar
+T65	Modifier 1432 1438	gentle
+T66	Method 1439 1446	suction
+T67	Reagent 1459 1463	plug
+R12	Mod-Link Arg1:E18 Arg2:T61	
+T68	Reagent 1478 1482	plug
+T69	Amount 1486 1490	1 mL
+T70	Reagent 1491 1496	media
+R13	Measure Arg1:T70 Arg2:T69	
+T71	Modifier 1508 1515	briefly
+R14	Mod-Link Arg1:E21 Arg2:T71	
+T72	Location 1542 1546	tube
+T73	Temperature 1550 1553	4°C
+T74	Reagent 1568 1583	phages particle
+T75	Reagent 1602 1606	plug
+T76	Time 1607 1616	overnight
+T78	Reagent 1627 1640	plaque lysate
+R15	Setting Arg1:E22 Arg2:T73	
+R16	Setting Arg1:E11 Arg2:T76	
+T77	Reagent 1668 1674	sample
+T79	Reagent 1747 1758	supernatant
+T80	Modifier 1764 1767	new
+T81	Location 1768 1772	tube
+R17	Mod-Link Arg1:T81 Arg2:T80	
+T82	Method 1844 1858	steps 14 to 19
+T83	Numerical 1876 1877	3
+T84	Reagent 1878 1885	plaques
+R18	Measure Arg1:T84 Arg2:T83	
+T85	Action 380 386	strain
+E12	Action:T85 Acts-on:T86
+T86	Reagent 387 390	DC2
+T87	Temperature 429 433	25°C
+T88	Generic-Measure 401 424	5–25 µmol quanta m–2s–1
+T89	Modifier 392 400	constant
+T90	Action 436 443	agitate
+E15	Action:T90 
+T91	Modifier 444 456	occasionally
+T92	Action 460 480	encourage adsorption
+E28	Action:T92 Acts-on:T93 Site:T94 Commands:E15
+T93	Reagent 484 489	phage
+T94	Reagent 493 497	host
+R19	Measure Arg1:T86 Arg2:T88	
+R20	Mod-Link Arg1:T88 Arg2:T89	
+R21	Setting Arg1:E12 Arg2:T87	
+R22	Mod-Link Arg1:E15 Arg2:T91	
+T95	Action 851 858	Prepare
+E30	Action:T95 Product:T96
+T96	Location 861 874	control plate
+T97	Reagent 891 896	cells
+T98	Action 927 934	monitor
+E31	Action:T98 Measure-Type-Link:T99 Using:T96
+T99	Measure-Type 935 946	cell growth
+R23	Meronym Arg1:T97 Arg2:T96	
+T100	Method 0 9	Isolation
+T101	Reagent 13 24	cyanophages
+T102	Device 28 41	plaque assays
+T103	Method 253 269	serial dilutions
+T104	Numerical 245 252	10-fold
+T105	Generic-Measure 281 289	3 levels
+T106	Amount 294 300	0.5 mL
+T107	Modifier 301 307	target
+T108	Reagent 308 313	cells
+T109	Modifier 324 329	usual
+T110	Method 330 350	culturing conditions
+R24	Mod-Link Arg1:T108 Arg2:T107	
+R25	Measure Arg1:T108 Arg2:T106	
+T111	Reagent 362 378	Synechococcus sp
+T112	Modifier 499 504	After
+R26	Mod-Link Arg1:T5 Arg2:T112	
+T113	Action 668 675	Working
+E32	Action:T113 
+T114	Modifier 676 683	rapidly
+R27	Mod-Link Arg1:E32 Arg2:T114	
+T115	Modifier 769 775	before
+T116	Reagent 780 784	agar
+T117	Modifier 785 794	starts to
+T118	Action 795 798	gel
+E33	Action:T118 Acts-on:T116
+R28	Mod-Link Arg1:E33 Arg2:T115	
+R29	Mod-Link Arg1:E33 Arg2:T117	
+T119	Action 800 809	Set aside
+E34	Action:T119 Site:T52
+T120	Location 903 908	plate
+T121	Method 999 1009	Incubation
+T122	Location 1013 1019	plates
+T123	Modifier 1026 1055	constant low light conditions
+T124	Generic-Measure 1057 1083	5 to 25 µmol quanta m–2s–1
+T125	Action 1090 1097	produce
+E35	Action:T125 
+T126	Modifier 1098 1104	darker
+T127	Modifier 1129 1135	easier
+T128	Method 1136 1156	detection of plaques
+R30	Mod-Link Arg1:E35 Arg2:T126	
+T129	Numerical 1167 1173	number
+T130	Reagent 1177 1197	plaque forming units
+T131	Reagent 1199 1203	PFUs
+T132	Measure-Type 1206 1217	plaque size
+T133	Measure-Type 1223 1233	morphology
+R31	Meronym Arg1:T131 Arg2:T130	
+T134	Modifier 1290 1294	less
+T135	Action 1281 1289	contains
+E36	Action:T135 Site:T57
+R32	Mod-Link Arg1:T58 Arg2:T134	
+T136	Action 1519 1524	break
+E37	Action:T136 Acts-on:T137
+T137	Mention 1525 1527	it
+R33	Coreference-Link Arg1:T137 Arg2:T68	
+T138	Speed 1680 1687	12,000g
+T139	Time 1692 1698	10 min
+T140	Action 1703 1709	pellet
+E38	Action:T140 Acts-on:T141 Acts-on2:T142
+T141	Reagent 1710 1723	cyanobacteria
+T142	Reagent 1728 1732	agar
+T143	Modifier 1774 1781	typical
+T144	Measure-Type 1782 1787	titer
+T145	Reagent 1795 1808	plaque lysate
+T146	Generic-Measure 1816 1835	104 to 105 PFU mL–1
+R34	Measure Arg1:T145 Arg2:T146	
+R35	Mod-Link Arg1:T146 Arg2:T143	
+R36	Of-Type Arg1:T146 Arg2:T144	
+T147	Action 1887 1895	Choosing
+E39	Action:T147 Acts-on:T148
+T148	Reagent 1896 1903	plaques
+T149	Modifier 1909 1918	different
+T150	Measure-Type 1919 1931	morphologies
+T151	Action 1936 1942	result
+E40	Action:T151 Acts-on:T154
+T152	Modifier 1950 1959	isolation
+T153	Modifier 1963 1972	different
+T154	Reagent 1973 1979	phages
+R37	Mod-Link Arg1:T154 Arg2:T153	
+R38	Mod-Link Arg1:T154 Arg2:T152	
+R39	Mod-Link Arg1:T148 Arg2:T149	

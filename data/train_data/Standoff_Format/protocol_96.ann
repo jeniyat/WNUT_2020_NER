@@ -1,0 +1,131 @@
+T1	Action 34 37	Run
+E1	Action:T1 Acts-on:T3 Using:T5
+T2	Concentration 38 41	40%
+T3	Reagent 45 54	IP eluate
+T4	Concentration 58 61	10%
+T5	Reagent 62 78	gel Tris-Glycine
+R1	Measure Arg1:T5 Arg2:T4	
+R2	Measure Arg1:T3 Arg2:T2	
+T6	Action 81 89	Transfer
+E2	Action:T6 Acts-on:T7 Site:T8 Using:T11
+T7	Reagent 90 97	protein
+T8	Reagent 101 114	PVDF membrane
+T9	Time 119 122	1hr
+T10	Temperature 126 128	RT
+T11	Device 134 142	ice pack
+T12	Generic-Measure 144 148	100V
+T13	Action 152 155	Cut
+E3	Action:T13 Acts-on:T14
+T14	Reagent 156 164	membrane
+T15	Action 231 234	Cut
+E4	Action:T15 Acts-on:T16
+T16	Reagent 235 243	Membrane
+T17	Generic-Measure 176 181	180kD
+T18	Generic-Measure 247 252	~82kD
+T19	Generic-Measure 358 366	~115 kD.
+R3	Setting Arg1:E3 Arg2:T17	
+R4	Setting Arg1:E4 Arg2:T18	
+T20	Action 615 620	Block
+E5	Action:T20 Acts-on:T21 Using:T23
+T21	Reagent 621 629	membrane
+T22	Concentration 635 637	5%
+T23	Reagent 638 641	BSA
+T24	Reagent 643 646	IgG
+T25	Reagent 651 664	Protease-Free
+T26	Reagent 666 670	TBST
+T27	Time 675 679	2hrs
+T28	Temperature 683 685	RT
+T29	Action 688 693	Probe
+E6	Action:T29 Acts-on:T30 Using:T31 Site:T32
+T30	Reagent 694 702	membrane
+T31	Reagent 708 738	phospho-threonine-HRP antibody
+T32	Reagent 742 750	IgG-Free
+T33	Reagent 751 768	Protease-Free BSA
+T34	Reagent 769 773	TBST
+T35	Generic-Measure 775 781	1:1000
+T36	Action 784 789	Probe
+E7	Action:T36 Site:T40
+T37	Time 790 799	overnight
+T38	Temperature 803 805	4C
+T39	Location 809 818	cold room
+T40	Device 822 834	tilting tray
+T41	Action 836 841	Rinse
+E8	Action:T41 Acts-on:T42 Acts-on2:T46
+T42	Reagent 842 850	membrane
+T43	Concentration 851 853	8x
+T44	Time 873 877	2hrs
+T45	Concentration 883 885	1x
+T46	Reagent 886 890	TBST
+T47	Action 893 901	Activate
+E9	Action:T47 Acts-on:T48 Using:T49
+T48	Reagent 902 910	membrane
+T49	Reagent 916 924	pico ECL
+R5	Setting Arg1:E2 Arg2:T9	
+R6	Setting Arg1:E2 Arg2:T10	
+R7	Setting Arg1:T11 Arg2:T12	
+R8	Measure Arg1:T23 Arg2:T22	
+R9	Meronym Arg1:T24 Arg2:T23	
+R10	Meronym Arg1:T25 Arg2:T23	
+R11	Or Arg1:T23 Arg2:T26	
+R12	Setting Arg1:E5 Arg2:T27	
+R13	Setting Arg1:E5 Arg2:T28	
+R14	Or Arg1:T32 Arg2:T33	
+R15	Or Arg1:T33 Arg2:T34	
+R16	Measure Arg1:T32 Arg2:T35	
+R17	Setting Arg1:E7 Arg2:T37	
+R18	Setting Arg1:E7 Arg2:T38	
+R19	Meronym Arg1:T40 Arg2:T39	
+R20	Measure Arg1:T42 Arg2:T43	
+R21	Setting Arg1:E8 Arg2:T44	
+R22	Measure Arg1:T46 Arg2:T45	
+T50	Method 0 33	PhosphoThreonine Western Blotting
+T51	Modifier 336 346	GST-tagged
+T52	Reagent 347 354	protein
+R23	Mod-Link Arg1:T52 Arg2:T51	
+R24	Measure Arg1:T52 Arg2:T19	
+T53	Action 367 374	Cutting
+E10	Action:T53 
+T54	Location 379 387	membrane
+T55	Action 407 418	help reduce
+E11	Action:T55 
+T56	Method 419 439	non-specific binding
+T57	Method 447 463	running a ladder
+T58	Modifier 471 477	middle
+T59	Reagent 485 488	gel
+T60	Action 494 506	help you cut
+E12	Action:T60 Acts-on:T62
+T61	Modifier 507 522	straight across
+T62	Location 527 535	membrane
+T63	Reagent 558 561	gel
+T64	Action 565 576	transferred
+E13	Action:T64 Site:T65 Acts-on:T63
+T65	Location 605 613	membrane
+T66	Modifier 577 597	at an angle relative
+R25	Mod-Link Arg1:E13 Arg2:T66	
+R26	Mod-Link Arg1:E12 Arg2:T61	
+R27	Mod-Link Arg1:T59 Arg2:T58	
+T67	Modifier 304 314	prestained
+T68	Reagent 315 321	ladder
+R28	Mod-Link Arg1:T68 Arg2:T67	
+T69	Modifier 210 220	prestained
+T70	Reagent 221 227	ladder
+T71	Modifier 294 303	benchmark
+T72	Modifier 200 209	benchmark
+R29	Mod-Link Arg1:T70 Arg2:T69	
+R30	Mod-Link Arg1:T70 Arg2:T72	
+R31	Mod-Link Arg1:T68 Arg2:T71	
+T73	Reagent 938 956	anti-pThr antibody
+T74	Modifier 960 974	HRP conjugated
+T75	Modifier 982 987	don't
+T76	Action 996 999	use
+E14	Action:T76 Acts-on:T77
+T77	Reagent 1002 1011	secondary
+R32	Mod-Link Arg1:E14 Arg2:T75	
+R33	Mod-Link Arg1:T73 Arg2:T74	
+T78	Modifier 258 262	blue
+T79	Reagent 263 267	band
+T80	Location 268 273	above
+T81	Modifier 278 282	pink
+T82	Reagent 283 287	band
+R34	Mod-Link Arg1:T79 Arg2:T78	
+R35	Mod-Link Arg1:T82 Arg2:T81	

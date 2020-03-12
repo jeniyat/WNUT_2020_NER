@@ -1,0 +1,103 @@
+T1	Action 64 69	place
+E1	Action:T1 Acts-on:T16 Site:T17
+T2	Action 127 130	Add
+E2	Action:T2 Acts-on:T20
+T3	Action 154 159	rinse
+E3	Action:T3 
+T4	Action 179 186	Discard
+E4	Action:T4 Acts-on:T22
+T5	Action 216 219	add
+E5	Action:T5 Acts-on:T24
+T6	Action 282 285	Add
+E6	Action:T6 Acts-on:T26
+T7	Action 311 316	rinse
+E7	Action:T7 
+T8	Action 333 340	Discard
+E8	Action:T8 Acts-on:T28
+T9	Action 354 357	add
+E9	Action:T9 Acts-on:T30
+T10	Action 386 391	Place
+E10	Action:T10 Acts-on:T31 Site:T32
+T11	Action 460 465	Rinse
+E11	Action:T11 Acts-on:T33 Using:T34
+T12	Action 618 623	rinse
+E12	Action:T12 Acts-on:T35 Using:T36
+T13	Action 678 682	Wash
+E13	Action:T13 Acts-on:T37 Using:T41
+T14	Action 796 801	rinse
+E14	Action:T14 Using:T42
+T15	Action 818 823	store
+E15	Action:T15 Acts-on:T44 Site:T43
+T16	Reagent 74 82	membrane
+T17	Location 97 101	tray
+T18	Amount 131 135	20ml
+T19	Concentration 136 140	100%
+T20	Reagent 141 149	methanol
+R1	Measure Arg1:T20 Arg2:T19	
+R2	Measure Arg1:T20 Arg2:T18	
+T21	Time 164 177	10‐30 seconds
+R3	Setting Arg1:E3 Arg2:T21	
+T22	Reagent 191 199	methanol
+T23	Amount 220 224	12ml
+T24	Reagent 225 246	Swift™ Membrane Stain
+R4	Measure Arg1:T24 Arg2:T23	
+T25	Amount 286 290	20ml
+T26	Reagent 291 306	deionized water
+R5	Measure Arg1:T26 Arg2:T25	
+T27	Time 321 331	30 seconds
+R6	Setting Arg1:E7 Arg2:T27	
+T28	Reagent 345 349	wash
+T29	Amount 358 362	12ml
+T30	Reagent 363 384	Swift™ Membrane Stain
+R7	Measure Arg1:T30 Arg2:T29	
+T31	Location 396 401	trays
+T32	Device 407 421	rocking shaker
+T33	Reagent 470 478	membrane
+T34	Reagent 482 490	DI water
+T35	Reagent 628 636	membrane
+T36	Reagent 640 648	DI water
+T37	Reagent 687 696	membranes
+T38	Time 701 714	30‐60 seconds
+R8	Setting Arg1:E13 Arg2:T38	
+T39	Amount 718 722	50ml
+T40	Concentration 723 725	1X
+T41	Reagent 726 740	Swift™ Destain
+R9	Measure Arg1:T41 Arg2:T40	
+R10	Measure Arg1:T41 Arg2:T39	
+T42	Reagent 805 813	DI water
+T43	Reagent 836 844	DI water
+T44	Reagent 828 832	blot
+T45	Method 0 21	Swift™ Membrane Stain
+T46	Modifier 22 31	Following
+T47	Method 32 48	protein transfer
+T48	Reagent 54 62	membrane
+T49	Modifier 88 96	suitable
+R11	Mod-Link Arg1:T17 Arg2:T49	
+T50	Reagent 110 124	PVDF Membranes
+T51	Modifier 204 215	immediately
+R12	Mod-Link Arg1:E5 Arg2:T51	
+T52	Reagent 255 279	Nitrocellulose Membranes
+T53	Reagent 423 436	Protein bands
+T54	Action 437 443	appear
+E16	Action:T54 Acts-on:T53
+T55	Time 447 458	~30 seconds
+R13	Setting Arg1:E16 Arg2:T55	
+T56	Action 494 500	remove
+E17	Action:T56 Acts-on:T57
+T57	Reagent 505 522	staining solution
+T58	Modifier 527 535	improved
+T59	Method 536 576	image capture by scanning or photography
+T60	Modifier 582 587	rapid
+T61	Action 588 599	de‐staining
+E18	Action:T61 
+T62	Reagent 607 616	membranes
+R14	Mod-Link Arg1:E18 Arg2:T60	
+T63	Action 652 658	remove
+E19	Action:T63 Acts-on:T64
+T64	Reagent 659 676	staining solution
+T65	Modifier 745 777	until the stain has been removed
+R15	Or Arg1:T38 Arg2:T65	
+T66	Modifier 779 794	Once de‐stained
+R16	Mod-Link Arg1:E14 Arg2:T66	
+T67	Modifier 845 859	until required
+R17	Mod-Link Arg1:E15 Arg2:T67	

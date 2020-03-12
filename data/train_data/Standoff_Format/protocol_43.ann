@@ -1,0 +1,82 @@
+T1	Action 54 63	Resuspend
+E1	Action:T1 Acts-on:T2 Site:T4
+T2	Reagent 68 82	nuclear pellet
+T3	Amount 86 91	300µl
+T4	Reagent 92 110	SubCell Buffer‐III
+R1	Measure Arg1:T4 Arg2:T3
+T5	Location 126 137	pipette tip
+T6	Modifier 120 125	sharp
+T7	Action 139 145	remove
+E2	Action:T7 Acts-on:T8 Using:T5
+T8	Reagent 157 161	lump
+T9	Modifier 150 156	sticky
+R2	Mod-Link Arg1:T8 Arg2:T9
+T10	Action 228 238	Centrifuge
+E3	Action:T10 Acts-on:T11
+T11	Location 243 247	tube
+T12	Speed 251 257	700x g
+T13	Time 262 271	5 minutes
+T14	Action 276 283	discard
+E4	Action:T14 Acts-on:T15
+T15	Reagent 288 299	supernatant
+R3	Setting Arg1:E3 Arg2:T12
+R4	Setting Arg1:E3 Arg2:T13
+T16	Action 412 419	Pipette
+E5	Action:T16 Acts-on:T18 Site:T20
+T17	Amount 420 425	300µl
+T18	Reagent 426 443	SubCell Buffer‐IV
+T19	Amount 449 454	1.5ml
+T20	Location 455 470	centrifuge tube
+T21	Action 472 481	Resuspend
+E6	Action:T21 Acts-on:T22 Site:T24
+T22	Reagent 486 500	nuclear pellet
+T23	Amount 504 509	100µl
+T24	Reagent 510 528	SubCell Buffer‐III
+T25	Modifier 530 539	Carefully
+T26	Action 540 547	overlay
+E7	Action:T26 Acts-on:T27 Site:T28
+T27	Reagent 552 570	nuclear suspension
+T28	Location 578 585	surface
+T29	Reagent 589 606	SubCell Buffer‐IV
+R8	Meronym Arg1:T28 Arg2:T29
+R9	Mod-Link Arg1:E7 Arg2:T25
+T30	Action 608 618	Centrifuge
+E8	Action:T30 Acts-on:T31
+T31	Location 623 627	tube
+T32	Speed 631 639	1,000x g
+T33	Time 644 654	10 minutes
+R10	Setting Arg1:E8 Arg2:T32
+R11	Setting Arg1:E8 Arg2:T33
+T34	Action 656 662	Remove
+E9	Action:T34 Acts-on:T35
+T35	Reagent 667 678	supernatant
+T36	Action 683 690	collect
+E10	Action:T36 Acts-on:T37 Site:T38
+T37	Reagent 706 720	nuclear pellet
+T38	Location 728 732	tube
+T39	Modifier 695 705	very clean
+R12	Mod-Link Arg1:T37 Arg2:T39
+R5	Measure Arg1:T18 Arg2:T17	
+R6	Measure Arg1:T20 Arg2:T19	
+R7	Measure Arg1:T24 Arg2:T23	
+R13	Mod-Link Arg1:T5 Arg2:T6	
+T40	Action 0 8	Cleaning
+E11	Action:T40 Acts-on:T41
+T41	Reagent 16 32	Nuclear Fraction
+T42	Device 34 52	FOCUS™ SubCell Kit
+T43	Reagent 174 178	lump
+T44	Modifier 194 198	dead
+T45	Reagent 199 204	cells
+T46	Modifier 214 219	lysed
+T47	Reagent 220 226	nuclei
+R14	Mod-Link Arg1:T45 Arg2:T44	
+R15	Mod-Link Arg1:T47 Arg2:T46	
+R16	Meronym Arg1:T45 Arg2:T43	
+R17	Meronym Arg1:T47 Arg2:T43	
+T48	Reagent 305 311	pellet
+T49	Reagent 323 329	nuclei
+R18	Meronym Arg1:T49 Arg2:T48	
+T50	Modifier 333 338	clean
+R19	Mod-Link Arg1:T48 Arg2:T50	
+T51	Action 376 384	cleaning
+E12	Action:T51 

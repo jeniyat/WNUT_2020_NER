@@ -1,0 +1,77 @@
+T1	Action 56 63	Prepare
+E1	Action:T1 Acts-on:T13 Acts-on2:T14 Acts-on3:T15
+T2	Action 147 150	Add
+E2	Action:T2 
+T3	Action 207 210	Add
+E3	Action:T3 Acts-on:T21
+T5	Action 234 250	Filter sterilize
+E5	Action:T5 
+T6	Action 311 317	stored
+E6	Action:T6 Acts-on:T23 Acts-on2:T4 Product:T26
+T7	Action 379 385	stored
+E7	Action:T7 Acts-on:T27 Product:T30
+T8	Action 529 537	dissolve
+E8	Action:T8 
+T9	Action 517 525	stirring
+E9	Action:T9 Acts-on:T36
+T10	Action 418 421	Add
+E10	Action:T10 Acts-on:T31 Acts-on2:T32 Acts-on3:T33 Acts-on4:T34 Site:T36
+T11	Action 539 542	Add
+E11	Action:T11 Acts-on:T37
+T12	Action 597 600	add
+E12	Action:T12 Acts-on:T41 Acts-on2:T42 Acts-on3:T43
+T13	Reagent 64 93	Trace Metal Solutions I - III
+T14	Reagent 95 123	Fe-EDTA Sodium Salt Solution
+T15	Reagent 129 145	Vitamin Solution
+T16	Reagent 151 163	constituents
+T17	Amount 167 173	750 mL
+T18	Reagent 174 186	MilliQ water
+T19	Action 197 205	dissolve
+E13	Action:T19 
+T20	Action 188 193	shake
+E14	Action:T20 
+T21	Reagent 211 223	MilliQ water
+T22	Amount 227 232	1.0 L
+R1	Setting Arg1:E3 Arg2:T22	
+T4	Reagent 252 273	Trace Metal Solutions
+T23	Reagent 278 306	Fe-EDTA Sodium Salt Solution
+T24	Temperature 321 324	4ºC
+T25	Amount 328 338	15 - 50 mL
+T26	Mention 339 347	aliquots
+R2	Coreference-Link Arg1:T26 Arg2:T23	
+R3	Coreference-Link Arg1:T26 Arg2:T4	
+R4	Measure Arg1:T26 Arg2:T25	
+R5	Setting Arg1:E6 Arg2:T24	
+T27	Reagent 359 375	Vitamin solution
+T28	Temperature 389 394	-20ºC
+T29	Amount 398 407	5 - 10 mL
+T30	Mention 408 416	aliquots
+R6	Coreference-Link Arg1:T30 Arg2:T27	
+R7	Setting Arg1:E7 Arg2:T28	
+R8	Coreference-Link Arg1:T30 Arg2:T29	
+T31	Reagent 422 437	anhydrous salts
+T32	Reagent 439 452	hydrous salts
+T33	Reagent 454 468	macronutrients
+T34	Reagent 473 482	Tris Base
+T35	Concentration 486 489	75%
+T36	Reagent 498 510	MilliQ water
+R9	Measure Arg1:T36 Arg2:T35	
+T37	Reagent 543 555	MilliQ water
+T38	Amount 559 571	final volume
+T39	Action 573 582	autoclave
+E4	Action:T39 
+R10	Setting Arg1:E11 Arg2:T38	
+T40	Amount 604 607	1mL
+T41	Reagent 615 636	Trace Metal Solutions
+T42	Reagent 638 666	Fe-EDTA Sodium Salt Solution
+T43	Reagent 672 688	Vitamin Solution
+T44	Concentration 689 709	per 1L of media made
+R11	Measure Arg1:T43 Arg2:T40	
+R12	Measure Arg1:T42 Arg2:T40	
+R13	Measure Arg1:T41 Arg2:T40	
+R14	Measure Arg1:T43 Arg2:T44	
+T45	Method 18 55	culturing Aureococcus anophagefferens
+T46	Modifier 584 595	Once cooled
+R15	Mod-Link Arg1:E12 Arg2:T46	
+T47	Modifier 490 497	desired
+R16	Mod-Link Arg1:T36 Arg2:T47	

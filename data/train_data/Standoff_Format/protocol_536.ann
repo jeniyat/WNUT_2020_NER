@@ -1,0 +1,171 @@
+T1	Action 64 70	Excise
+E1	Action:T1 Acts-on:T22 Site:T23
+T2	Action 125 129	trim
+E2	Action:T2 Acts-on:T24
+T3	Action 146 154	Transfer
+E3	Action:T3 Acts-on:T26
+T4	Action 186 191	weigh
+E4	Action:T4 Acts-on:T27
+T6	Action 238 241	Add
+E6	Action:T6 Acts-on:T28 Site:T29
+T7	Action 346 354	Incubate
+E7	Action:T7 Acts-on:T30
+T8	Action 694 700	Insert
+E8	Action:T8 Acts-on:T33 Site:T34
+T9	Action 733 737	load
+E9	Action:T9 Acts-on:T35 Site:T36
+T10	Action 762 766	Spin
+E10	Action:T10 
+T11	Action 800 807	discard
+E11	Action:T11 Acts-on:T39
+T12	Action 822 831	Re-insert
+E12	Action:T12 Acts-on:T40 Site:T41
+T13	Action 861 864	Add
+E13	Action:T13 Acts-on:T43
+T14	Action 913 917	spin
+E14	Action:T14 
+T15	Action 1046 1049	Add
+E15	Action:T15 Acts-on:T47
+T16	Action 1077 1081	spin
+E16	Action:T16 
+T17	Action 1149 1157	Transfer
+E17	Action:T17 Acts-on:T50 Site:T52
+T18	Action 1308 1315	re-spin
+E18	Action:T18 
+T19	Action 1330 1333	Add
+E19	Action:T19 Acts-on:T55 Site:T100
+T20	Action 1392 1396	Wait
+E20	Action:T20 
+T21	Action 1415 1419	spin
+E21	Action:T21 
+T22	Reagent 75 87	DNA fragment
+T23	Reagent 97 108	agarose gel
+T24	Reagent 137 144	agarose
+T25	Size 160 166	1.5 ml
+T26	Location 167 181	microfuge tube
+T27	Reagent 196 205	gel slice
+R1	Measure Arg1:T26 Arg2:T25	
+T5	Amount 242 251	4 volumes
+T28	Reagent 255 276	Gel Dissolving Buffer
+R2	Measure Arg1:T28 Arg2:T5	
+T29	Reagent 284 293	gel slice
+T30	Reagent 359 365	sample
+T31	Temperature 374 381	37–55°C
+R3	Setting Arg1:E7 Arg2:T31	
+T32	Time 455 467	5–10 minutes
+R4	Setting Arg1:E7 Arg2:T32	
+T33	Device 701 707	column
+T34	Location 713 728	collection tube
+T35	Reagent 738 744	sample
+T36	Location 754 760	column
+T37	Time 771 779	1 minute
+T38	Speed 783 793	16,000 x g
+R5	Setting Arg1:E10 Arg2:T37	
+R6	Setting Arg1:E10 Arg2:T38	
+T39	Reagent 808 820	flow-through
+T40	Device 832 838	column
+T41	Location 844 859	collection tube
+T42	Amount 865 871	200 μl
+T43	Reagent 872 887	DNA Wash Buffer
+R7	Measure Arg1:T43 Arg2:T42	
+T44	Time 922 930	1 minute
+R8	Setting Arg1:E14 Arg2:T44	
+T45	Speed 934 944	16,000 x g
+R9	Setting Arg1:E14 Arg2:T45	
+T46	Amount 1050 1056	200 μl
+T47	Reagent 1057 1072	DNA Wash Buffer
+R10	Measure Arg1:T47 Arg2:T46	
+T48	Time 1086 1094	1 minute
+T49	Speed 1098 1108	16,000 x g
+R11	Setting Arg1:E16 Arg2:T48	
+R12	Setting Arg1:E16 Arg2:T49	
+T50	Device 1158 1164	column
+T51	Size 1176 1182	1.5 ml
+T52	Location 1183 1197	microfuge tube
+R13	Measure Arg1:T52 Arg2:T51	
+T53	Time 1320 1328	1 minute
+R14	Setting Arg1:E18 Arg2:T53	
+T54	Amount 1336 1340	6 μl
+T55	Reagent 1344 1362	DNA Elution Buffer
+R15	Measure Arg1:T55 Arg2:T54	
+T56	Location 1384 1390	matrix
+T57	Time 1401 1409	1 minute
+R16	Setting Arg1:E20 Arg2:T57	
+T58	Time 1424 1432	1 minute
+T59	Speed 1436 1446	16,000 x g
+R17	Setting Arg1:E21 Arg2:T58	
+R18	Setting Arg1:E21 Arg2:T59	
+T60	Method 0 14	Quick Protocol
+T61	Device 19 50	Monarch® DNA Gel Extraction Kit
+T62	Modifier 130 136	excess
+R19	Mod-Link Arg1:T24 Arg2:T62	
+T63	Action 207 215	Minimize
+E5	Action:T63 
+T64	Modifier 216 236	exposure to UV light
+R20	Mod-Link Arg1:E5 Arg2:T64	
+T65	Amount 301 307	400 μl
+T66	Reagent 308 314	buffer
+T67	Modifier 315 318	per
+T68	Amount 319 335	100 μl or 100 mg
+T69	Reagent 336 343	agarose
+R21	Coreference-Link Arg1:T69 Arg2:T68	
+R22	Mod-Link Arg1:T68 Arg2:T67	
+R23	Measure Arg1:T66 Arg2:T65	
+T70	Modifier 383 392	typically
+T71	Temperature 393 397	50°C
+R24	Mod-Link Arg1:T71 Arg2:T70	
+R25	Or Arg1:T31 Arg2:T71	
+T72	Modifier 400 443	until the gel slice is completely dissolved
+T73	Modifier 445 454	generally
+R26	Mod-Link Arg1:T32 Arg2:T73	
+R27	Mod-Link Arg1:E7 Arg2:T72	
+T74	Modifier 366 373	between
+R28	Mod-Link Arg1:T31 Arg2:T74	
+T75	Time 474 478	time
+T76	Reagent 492 501	gel slice
+T77	Action 505 509	melt
+E22	Action:T77 Acts-on:T76
+T78	Modifier 510 629	depends on the size of the slice, the temperature used in the incubation as well as the percent agarose used in the gel
+R30	Mod-Link Arg1:T75 Arg2:T78	
+R29	Setting Arg1:E22 Arg2:T75	
+T79	Time 635 639	time
+T80	Modifier 640 657	recommended above
+T81	Action 668 672	used
+E23	Action:T81 
+T82	Modifier 673 692	just as a guideline
+R31	Mod-Link Arg1:E23 Arg2:T82	
+R32	Mod-Link Arg1:T79 Arg2:T80	
+R33	Setting Arg1:E23 Arg2:T79	
+T83	Modifier 889 907	with ethanol added
+R34	Mod-Link Arg1:T43 Arg2:T83	
+T84	Action 947 957	Discarding
+E24	Action:T84 Acts-on:T85
+T85	Reagent 958 970	flow-through
+T86	Modifier 974 982	optional
+R35	Mod-Link Arg1:E24 Arg2:T86	
+T87	Action 984 990	Repeat
+E25	Action:T87 
+T88	Action 1007 1016	Re-insert
+E26	Action:T88 Acts-on:T89 Site:T90
+T89	Location 1017 1023	column
+T90	Location 1029 1044	collection tube
+T91	Action 1111 1121	Discarding
+E27	Action:T91 Acts-on:T92
+T92	Reagent 1122 1134	flow-through
+T93	Modifier 1138 1146	optional
+R36	Mod-Link Arg1:E27 Arg2:T93	
+T94	Action 1211 1217	ensure
+E28	Action:T94 Acts-on:T95
+T95	Location 1227 1230	tip
+T96	Location 1238 1244	column
+T97	Action 1245 1271	does not come into contact
+E29	Action:T97 Acts-on:T95 Site:T98
+T98	Reagent 1281 1293	flow-through
+R37	Meronym Arg1:T95 Arg2:T96	
+T99	Modifier 1295 1306	If in doubt
+R38	Mod-Link Arg1:E18 Arg2:T99	
+T100	Location 1370 1376	center
+R39	Meronym Arg1:T100 Arg2:T56	
+T101	Action 1450 1455	elute
+E30	Action:T101 Acts-on:T102
+T102	Reagent 1460 1463	DNA

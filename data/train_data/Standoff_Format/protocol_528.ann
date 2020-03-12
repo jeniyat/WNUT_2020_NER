@@ -1,0 +1,105 @@
+T1	Action 55 59	Melt
+E1	Action:T1 Acts-on:T11 Site:T13
+T2	Action 196 201	Bring
+E2	Action:T2 Acts-on:T16
+T3	Action 231 234	Add
+E3	Action:T3 Acts-on:T20 Acts-on2:T23
+T4	Action 284 288	Pour
+E4	Action:T4 Acts-on:T24
+T5	Action 421 424	set
+E5	Action:T5 Acts-on:T25
+T6	Action 437 440	Run
+E6	Action:T6 Acts-on:T27 Using:T29
+T7	Action 464 467	Mix
+E7	Action:T7 Acts-on:T31 Acts-on2:T33
+T8	Action 507 511	heat
+E8	Action:T8 
+T9	Action 533 536	Add
+E9	Action:T9 Acts-on:T45
+T10	Amount 60 65	1.0 g
+T11	Reagent 66 73	agarose
+T12	Amount 77 82	87 ml
+T13	Reagent 86 96	DEPC water
+R1	Measure Arg1:T13 Arg2:T12	
+R2	Measure Arg1:T11 Arg2:T10	
+T14	Action 138 145	heating
+E10	Action:T14 Site:T15
+T15	Device 151 160	microwave
+T16	Reagent 206 220	melted agarose
+T17	Temperature 224 229	60 °C
+R3	Setting Arg1:E2 Arg2:T17	
+T18	Amount 235 240	10 ml
+T19	Concentration 241 244	10X
+T20	Reagent 245 256	MOPS Buffer
+R4	Measure Arg1:T20 Arg2:T19	
+R5	Measure Arg1:T20 Arg2:T18	
+T21	Amount 261 265	3 ml
+T22	Concentration 266 269	37%
+T23	Reagent 270 282	formaldehyde
+R6	Measure Arg1:T23 Arg2:T22	
+R7	Measure Arg1:T23 Arg2:T21	
+T24	Reagent 298 309	agarose gel
+T25	Reagent 414 417	gel
+T26	Time 429 435	1 hour
+R8	Setting Arg1:E5 Arg2:T26	
+T27	Reagent 441 444	gel
+T28	Concentration 448 450	1X
+T29	Reagent 451 462	MOPS Buffer
+R9	Measure Arg1:T29 Arg2:T28	
+T30	Amount 468 473	40 µl
+T31	Reagent 474 487	sample buffer
+T32	Amount 493 498	10 µl
+T33	Reagent 499 505	sample
+R10	Measure Arg1:T33 Arg2:T32	
+R11	Measure Arg1:T31 Arg2:T30	
+T34	Temperature 515 520	55 °C
+T35	Time 521 531	15 minutes
+R12	Setting Arg1:E8 Arg2:T34	
+R13	Setting Arg1:E8 Arg2:T35	
+T36	Amount 537 541	10µl
+T37	Concentration 561 564	50%
+T38	Reagent 565 573	glycerol
+T39	Concentration 574 578	1 mM
+T40	Reagent 579 583	EDTA
+T41	Concentration 584 588	0.3%
+T42	Reagent 594 610	bromophenol blue
+T43	Concentration 615 619	0.3%
+T44	Reagent 620 633	xylene cyanol
+R14	Measure Arg1:T44 Arg2:T43	
+R15	Measure Arg1:T42 Arg2:T41	
+R16	Measure Arg1:T40 Arg2:T39	
+R17	Measure Arg1:T38 Arg2:T37	
+T45	Reagent 549 558	following
+R18	Measure Arg1:T45 Arg2:T36	
+R19	Meronym Arg1:T38 Arg2:T45	
+R20	Meronym Arg1:T40 Arg2:T45	
+R21	Meronym Arg1:T42 Arg2:T45	
+R22	Meronym Arg1:T44 Arg2:T45	
+T46	Method 42 54	RNA Analysis
+T47	Action 101 111	dispersing
+E11	Action:T47 Acts-on:T48
+T48	Reagent 116 123	agarose
+T49	Modifier 124 133	uniformly
+R23	Mod-Link Arg1:E11 Arg2:T49	
+T50	Modifier 161 194	until all particles are dissolved
+R24	Mod-Link Arg1:E10 Arg2:T50	
+T51	Action 315 318	USE
+E12	Action:T51 Acts-on:T52
+T52	Device 321 330	FUME HOOD
+T53	Modifier 289 297	standard
+R25	Mod-Link Arg1:T24 Arg2:T53	
+T54	Reagent 332 344	FORMALDEHYDE
+T55	Modifier 348 356	VOLATILE
+T56	Modifier 361 366	TOXIC
+R26	Mod-Link Arg1:T54 Arg2:T55	
+R27	Mod-Link Arg1:T54 Arg2:T56	
+T57	Action 368 372	WORK
+E13	Action:T57 Site:T58
+T58	Device 378 382	HOOD
+T59	Modifier 383 406	FROM THIS POINT FORWARD
+R28	Mod-Link Arg1:E13 Arg2:T59	
+T60	Reagent 15 37	Denaturing Agarose Gel
+T61	Action 0 11	Preparation
+E14	Action:T61 Acts-on:T60
+T62	Action 408 413	Allow
+E15	Action:T62 Acts-on:T25

@@ -1,0 +1,92 @@
+T1	Action 51 58	Collect
+E1	Action:T1 Product:T19
+T2	Action 143 146	Add
+E2	Action:T2 Acts-on:T26
+T3	Action 169 176	let sit
+E3	Action:T3 
+T4	Action 189 194	Raise
+E4	Action:T4 Using:T29
+T5	Action 223 232	Spin down
+E5	Action:T5 
+T6	Action 244 250	Remove
+E6	Action:T6 Acts-on:T31
+T7	Action 261 264	Add
+E7	Action:T7 Acts-on:T33
+T8	Action 280 289	Spin down
+E8	Action:T8 
+T9	Action 297 303	Remove
+E9	Action:T9 Acts-on:T35
+T10	Action 314 317	Add
+E10	Action:T10 Acts-on:T36
+T11	Action 333 342	Spin down
+E11	Action:T11 
+T12	Action 351 357	Remove
+E12	Action:T12 Acts-on:T37 Using:T52
+T13	Action 386 389	Add
+E13	Action:T13 Acts-on:T38
+T14	Action 407 410	Add
+E14	Action:T14 Acts-on:T39
+T15	Action 470 474	Boil
+E15	Action:T15 
+T16	Action 504 509	Store
+E16	Action:T16 
+T17	Action 429 439	Homogenize
+E17	Action:T17 Using:T40 Using2:T41
+T18	Numerical 59 62	100
+T19	Reagent 63 70	embryos
+T20	Action 75 80	place
+E18	Action:T20 Site:T21 Acts-on:T19
+T21	Location 86 100	eppendorf tube
+T22	Amount 102 107	1.5ml
+T23	Amount 121 125	50ul
+T24	Reagent 129 140	embryo wash
+R1	Measure Arg1:T24 Arg2:T23	
+R2	Measure Arg1:T21 Arg2:T22	
+R3	Meronym Arg1:T24 Arg2:T21	
+R4	Measure Arg1:T19 Arg2:T18	
+T25	Amount 147 154	3 drops
+T26	Reagent 158 164	bleach
+T27	Time 181 187	3 mins
+R5	Setting Arg1:E3 Arg2:T27	
+R6	Measure Arg1:T26 Arg2:T25	
+T28	Amount 205 210	1.5ml
+T29	Reagent 217 221	dH2O
+R7	Setting Arg1:E4 Arg2:T28	
+T30	Time 237 241	1min
+R8	Setting Arg1:E5 Arg2:T30	
+T31	Reagent 251 259	solution
+T32	Amount 265 270	1.5ml
+T33	Reagent 274 278	dH2O
+T34	Time 290 294	1min
+T35	Reagent 304 312	solution
+T36	Reagent 327 331	dH2O
+T37	Reagent 358 366	solution
+T38	Reagent 401 404	PBS
+T39	Reagent 422 428	SDS SB
+T40	Device 445 451	pestle
+T41	Device 461 467	needle
+T42	Amount 411 415	50ul
+T43	Amount 390 394	50ul
+T44	Time 343 348	1 min
+T45	Amount 318 323	1.5ml
+T46	Concentration 398 400	1X
+T47	Concentration 419 421	2X
+T48	Time 479 485	5 mins
+T49	Temperature 513 526	-20 degrees C
+T50	Temperature 489 501	98 degrees C
+T51	Generic-Measure 456 460	27ga
+R9	Measure Arg1:T33 Arg2:T32	
+R10	Setting Arg1:E8 Arg2:T34	
+R11	Measure Arg1:T36 Arg2:T45	
+R12	Setting Arg1:E11 Arg2:T44	
+T52	Device 372 384	micropipette
+R13	Measure Arg1:T38 Arg2:T46	
+R14	Measure Arg1:T38 Arg2:T43	
+R15	Measure Arg1:T39 Arg2:T47	
+R16	Measure Arg1:T39 Arg2:T42	
+R17	Setting Arg1:T41 Arg2:T51	
+R18	Setting Arg1:E15 Arg2:T48	
+R19	Setting Arg1:E15 Arg2:T50	
+R20	Setting Arg1:E16 Arg2:T49	
+T53	Reagent 0 19	Western Blot Sample
+T54	Reagent 26 50	Whole Drosophila Embryos

@@ -1,0 +1,198 @@
+T1	Action 60 63	Add
+E1	Action:T1 Acts-on:T3 Site:T5
+T2	Amount 64 68	1 mL
+T3	Reagent 69 83	TRIzol Reagent
+R1	Measure Arg1:T3 Arg2:T2	
+T4	Amount 87 96	50-100 mg
+T5	Reagent 100 124	frozen Drosophila tissue
+T6	Size 130 136	1.5 mL
+T7	Location 137 157	microcentrifuge tube
+T8	Action 163 173	homogenize
+E2	Action:T8 
+T9	Device 191 218	a disposable plastic pestle
+R2	Measure Arg1:T5 Arg2:T4	
+R3	Measure Arg1:T7 Arg2:T6	
+R4	Meronym Arg1:T5 Arg2:T7	
+T10	Action 220 229	Centifuge
+E3	Action:T10 Acts-on:T11
+T11	Reagent 234 240	sample
+T12	Speed 244 254	12,000 x g
+T13	Time 259 269	10 minutes
+T14	Temperature 273 276	4˚C
+R5	Setting Arg1:E3 Arg2:T12	
+R6	Setting Arg1:E3 Arg2:T13	
+R7	Setting Arg1:E3 Arg2:T14	
+T15	Reagent 279 285	Pellet
+T16	Reagent 295 298	ECM
+T17	Reagent 300 315	polysaccharides
+T18	Reagent 321 346	high molecular weight DNA
+R8	Meronym Arg1:T16 Arg2:T15	
+R9	Meronym Arg1:T17 Arg2:T15	
+R10	Meronym Arg1:T18 Arg2:T15	
+T19	Reagent 348 359	supernatant
+T20	Reagent 373 376	RNA
+R11	Meronym Arg1:T20 Arg2:T19	
+T21	Action 446 452	Remove
+E4	Action:T21 Acts-on:T23
+T22	Action 457 464	discard
+E5	Action:T22 Acts-on:T23
+T23	Reagent 465 480	the fatty layer
+T24	Action 482 490	Transfer
+E6	Action:T24 Acts-on:T29 Site:T30
+T25	Reagent 543 549	sample
+T26	Action 530 538	Incubate
+E7	Action:T26 Acts-on:T25
+T27	Time 554 563	5 minutes
+T28	Temperature 567 583	room temperature
+T29	Reagent 495 514	cleared supernatant
+T30	Location 520 528	new tube
+R12	Setting Arg1:E7 Arg2:T27	
+R13	Setting Arg1:E7 Arg2:T28	
+T31	Action 585 588	Add
+E8	Action:T31 Acts-on:T33
+T32	Amount 589 595	0.2 mL
+T33	Reagent 599 609	chloroform
+T34	Action 615 618	cap
+E9	Action:T34 Acts-on:T35
+T35	Location 623 627	tube
+T36	Modifier 628 636	securely
+R14	Mod-Link Arg1:E9 Arg2:T36	
+R15	Measure Arg1:T33 Arg2:T32	
+T37	Action 638 643	Shake
+E10	Action:T37 Acts-on:T38
+T38	Location 648 652	tube
+T40	Modifier 664 671	by hand
+T41	Time 676 686	15 seconds
+R17	Mod-Link Arg1:E10 Arg2:T40	
+R18	Setting Arg1:E10 Arg2:T41	
+T42	Action 688 696	Incubate
+E11	Action:T42 
+T43	Time 701 712	2-3 minutes
+T44	Temperature 716 732	room temperature
+T45	Action 734 744	Centrifuge
+E12	Action:T45 Acts-on:T46
+T46	Reagent 749 755	sample
+T47	Speed 759 769	12,000 x g
+T48	Time 774 784	15 minutes
+T49	Temperature 788 791	4˚C
+R19	Setting Arg1:E12 Arg2:T47	
+R20	Setting Arg1:E12 Arg2:T48	
+R21	Setting Arg1:E12 Arg2:T49	
+T50	Action 977 983	Remove
+E13	Action:T50 Acts-on:T51
+T51	Reagent 988 1001	aqueous phase
+T52	Reagent 1009 1015	sample
+R22	Meronym Arg1:T51 Arg2:T52	
+T53	Action 1019 1026	angling
+E14	Action:T53 Acts-on:T54
+T54	Location 1031 1035	tube
+T55	Generic-Measure 1036 1042	at 45˚
+T56	Action 1047 1056	pipetting
+E15	Action:T56 Acts-on:T57
+T57	Reagent 1061 1069	solution
+R23	Setting Arg1:E14 Arg2:T55	
+T58	Action 1075 1080	Place
+E16	Action:T58 Acts-on:T59 Site:T60
+T59	Reagent 1085 1098	aqueous phase
+T60	Location 1106 1114	new tube
+T61	Action 1248 1253	saved
+E17	Action:T61 Acts-on:T62
+T62	Reagent 1189 1240	The interphase and organic phenol-chloroform phases
+T63	Time 1301 1310	overnight
+T64	Temperature 1314 1317	4˚C
+R24	Setting Arg1:E17 Arg2:T63	
+R25	Setting Arg1:E17 Arg2:T64	
+T65	Action 1450 1453	Add
+E18	Action:T65 Acts-on:T68 Site:T69
+T66	Amount 1454 1460	0.5 mL
+T67	Concentration 1464 1468	100%
+T68	Reagent 1469 1480	isopropanol
+T69	Reagent 1488 1501	aqueous phase
+R26	Measure Arg1:T68 Arg2:T67	
+R27	Measure Arg1:T68 Arg2:T66	
+T70	Action 1503 1511	Incubate
+E19	Action:T70 Acts-on:T71
+T71	Reagent 1512 1518	sample
+T72	Temperature 1522 1538	room temperature
+T73	Time 1543 1553	10 minutes
+R28	Setting Arg1:E19 Arg2:T72	
+R29	Setting Arg1:E19 Arg2:T73	
+T74	Action 1555 1565	Centrifuge
+E20	Action:T74 
+T75	Speed 1569 1579	12,000 x g
+T76	Time 1584 1594	10 minutes
+T77	Temperature 1598 1601	4˚C
+T78	Action 1710 1716	Remove
+E21	Action:T78 Acts-on:T79 Site:T80 Product:T81
+T79	Reagent 1721 1732	supernatant
+T80	Location 1742 1746	tube
+T81	Reagent 1756 1770	the RNA pellet
+T82	Action 1772 1776	Wash
+E22	Action:T82 Acts-on:T83 Using:T86
+T83	Reagent 1781 1787	pellet
+T84	Amount 1793 1797	1 mL
+T85	Concentration 1798 1801	75%
+T86	Reagent 1802 1809	ethanol
+R30	Measure Arg1:T86 Arg2:T85	
+R31	Measure Arg1:T86 Arg2:T84	
+T87	Action 1823 1829	stored
+E23	Action:T87 Acts-on:T88 Site:T90
+T88	Reagent 1812 1815	RNA
+T89	Concentration 1833 1836	75%
+T90	Reagent 1837 1844	ethanol
+T91	Time 1854 1860	1 year
+T92	Temperature 1864 1869	-20˚C
+T93	Time 1883 1889	1 week
+T94	Temperature 1893 1896	4˚C
+R32	Or Arg1:T91 Arg2:T93	
+R33	Or Arg1:T92 Arg2:T94	
+R34	Measure Arg1:T90 Arg2:T89	
+R35	Setting Arg1:E23 Arg2:T91	
+R36	Setting Arg1:E23 Arg2:T92	
+T95	Action 1906 1912	vortex
+E24	Action:T95 Acts-on:T96
+T96	Reagent 1917 1923	sample
+T98	Action 1924 1934	Centrifuge
+E25	Action:T98 Acts-on:T99
+T99	Location 1939 1943	tube
+T100	Speed 1947 1956	7,500 x g
+T101	Time 1961 1970	5 minutes
+T102	Temperature 1974 1977	4˚C
+T103	Action 1978 1985	Discard
+E26	Action:T103 Acts-on:T104
+T104	Reagent 1990 1994	wash
+R38	Setting Arg1:E25 Arg2:T100	
+R39	Setting Arg1:E25 Arg2:T101	
+R40	Setting Arg1:E25 Arg2:T102	
+T105	Action 1996 2002	Vacuum
+E27	Action:T105 Acts-on:T107
+T106	Action 2006 2013	air dry
+E28	Action:T106 Acts-on:T107
+T107	Reagent 2018 2028	RNA pellet
+T108	Time 2033 2045	5-10 minutes
+R41	Setting Arg1:E27 Arg2:T108	
+R42	Setting Arg1:E28 Arg2:T108	
+T110	Reagent 2147 2157	RNA pellet
+T111	Reagent 2161 2177	RNase-free water
+T112	Action 2181 2188	passing
+E30	Action:T112 Acts-on:T113 Count:T115 Using:T116
+T113	Reagent 2193 2201	solution
+T114	Modifier 2202 2213	up and down
+T115	Numerical 2214 2227	several times
+T116	Device 2238 2249	pipette tip
+R43	Mod-Link Arg1:E30 Arg2:T114	
+T117	Action 2251 2259	Incubate
+E31	Action:T117 Site:T118
+T118	Location 2265 2275	water bath
+T119	Location 2279 2293	heat block set
+T120	Temperature 2297 2304	55-60˚C
+T121	Time 2309 2322	10-15 minutes
+R44	Or Arg1:T118 Arg2:T119	
+R45	Setting Arg1:E31 Arg2:T120	
+R46	Setting Arg1:E31 Arg2:T121	
+T122	Action 2324 2358	Proceed to downstream applications
+E32	Action:T122 
+T123	Action 2406 2411	store
+E33	Action:T123 
+T124	Temperature 2415 2420	-70˚C
+R47	Setting Arg1:E33 Arg2:T124	

@@ -1,0 +1,73 @@
+T1	Action 20 26	Anchor
+E1	Action:T1 Acts-on:T8 Site:T9
+T2	Action 74 81	Extract
+E2	Action:T2 Acts-on:T13 Acts-on2:T15 Acts-on3:T17
+T3	Action 186 192	Insert
+E3	Action:T3 Acts-on:T11 Site:T12
+T4	Action 262 268	Insert
+E4	Action:T4 Acts-on:T19 Site:T20
+T5	Action 313 320	Replace
+E5	Action:T5 Acts-on:T22 Using:T21
+T6	Action 485 494	Synthesis
+E6	Action:T6 Acts-on:T23
+T7	Action 521 527	insert
+E7	Action:T7 Acts-on:T24 Site:T25
+T8	Reagent 31 45	siRNA sequence
+T9	Reagent 61 72	target gene
+T10	Amount 82 85	2nt
+T11	Reagent 197 215	reverse complement
+T12	Reagent 233 247	shRNA backbone
+T13	Reagent 89 97	upstream
+R1	Measure Arg1:T13 Arg2:T10	
+T14	Amount 112 115	1nt
+T15	Reagent 119 129	downstream
+R2	Measure Arg1:T15 Arg2:T14	
+T16	Amount 99 103	19nt
+T17	Reagent 104 109	siRNA
+R3	Measure Arg1:T17 Arg2:T16	
+T18	Amount 273 277	22nt
+T19	Reagent 279 290	from step 2
+R4	Measure Arg1:T19 Arg2:T18	
+T20	Reagent 297 311	shRNA backbone
+T21	Reagent 337 353	other nucleotide
+T22	Reagent 325 331	1st nt
+T23	Reagent 499 516	shRNA nucleotides
+T24	Mention 528 532	them
+R5	Coreference-Link Arg1:T24 Arg2:T23	
+T25	Reagent 538 551	pTRIPZ vector
+T26	Reagent 5 10	siRNA
+T27	Reagent 14 19	shRNA
+T28	Generic-Measure 47 51	19nt
+R6	Coreference-Link Arg1:T8 Arg2:T28	
+T29	Generic-Measure 148 152	22nt
+T30	Reagent 156 167	nucleotides
+R7	Measure Arg1:T30 Arg2:T29	
+T31	Modifier 140 147	totally
+R8	Mod-Link Arg1:T29 Arg2:T31	
+T32	Reagent 169 184	Antisense shRNA
+T33	Reagent 223 227	22nt
+R9	Meronym Arg1:T11 Arg2:T33	
+T34	Reagent 249 260	Sense shRNA
+T35	Action 355 362	replace
+E8	Action:T35 Acts-on:T36 Using:T37
+T36	Reagent 363 364	A
+T37	Reagent 370 371	G
+T38	Modifier 372 386	and vice versa
+R10	Mod-Link Arg1:E8 Arg2:T38	
+T39	Action 388 395	replace
+E9	Action:T39 Acts-on:T40 Acts-on2:T41
+T40	Reagent 396 397	C
+T41	Reagent 403 404	T
+T42	Modifier 405 419	and vice versa
+R11	Mod-Link Arg1:E9 Arg2:T42	
+T43	Reagent 431 436	shRNA
+T44	Method 437 450	designing job
+T45	Modifier 454 458	done
+T46	Mention 478 480	it
+T47	Modifier 473 477	easy
+R12	Mod-Link Arg1:T46 Arg2:T47	
+T48	Action 566 577	translocate
+E10	Action:T48 Acts-on:T49 Site:T50 Site2:T51
+T49	Reagent 582 587	shRNA
+T50	Reagent 593 606	pTRIPZ vector
+T51	Reagent 612 624	pGIPZ vector

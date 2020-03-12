@@ -1,0 +1,228 @@
+T1	Action 33 42	Resuspend
+E1	Action:T1 Acts-on:T14 Site:T15
+T2	Action 88 91	Add
+E2	Action:T2 Acts-on:T10
+T3	Action 112 115	Add
+E3	Action:T3 Acts-on:T11
+T4	Action 136 139	Add
+E4	Action:T4 Acts-on:T12
+T5	Action 164 167	Add
+E5	Action:T5 Acts-on:T13
+T6	Amount 168 173	35 μL
+T7	Amount 140 144	5 μL
+T8	Amount 116 119	5ul
+T9	Amount 92 95	5ul
+T10	Reagent 96 109	Forward oligo
+T11	Reagent 120 133	Reverse oligo
+T12	Reagent 149 161	NEB buffer 2
+T13	Reagent 174 179	ddH2O
+T14	Reagent 43 49	oligos
+T15	Reagent 53 58	ddH2O
+T16	Concentration 64 86	concentration of 20 μM
+R1	Setting Arg1:E1 Arg2:T16	
+T17	Action 1458 1467	Transform
+E6	Action:T17 Acts-on:T28 Product:T29 Using:T128
+T18	Action 1425 1433	Incubate
+E7	Action:T18 
+T19	Temperature 1437 1441	16°C
+T20	Time 1446 1456	4-20 hours
+T21	Amount 1468 1472	2 μL
+T22	Amount 1494 1499	25 μL
+T23	Action 1061 1068	Measure
+E8	Action:T23 Measure-Type-Link:T24
+T24	Measure-Type 1073 1090	DNA concentration
+T25	Action 1036 1041	Elute
+E9	Action:T25 Acts-on:T27
+T26	Amount 1045 1050	30 μL
+T27	Reagent 1054 1059	ddH2O
+R2	Measure Arg1:T27 Arg2:T26	
+T28	Reagent 1476 1488	ligation mix
+T29	Reagent 1500 1525	competent DH5 alpha cells
+R3	Measure Arg1:T29 Arg2:T22	
+R4	Measure Arg1:T28 Arg2:T21	
+R5	Setting Arg1:E7 Arg2:T19	
+R6	Setting Arg1:E7 Arg2:T20	
+T30	Action 984 990	Purify
+E10	Action:T30 Acts-on:T43 Using:T44
+T31	Action 918 925	Cut out
+E11	Action:T31 Acts-on:T46
+T32	Action 802 805	Run
+E12	Action:T32 Acts-on:T42 Site:T51
+T33	Action 616 622	Digest
+E13	Action:T33 Acts-on:T52 Using:T53 Using2:T87
+T34	Action 772 780	Incubate
+E14	Action:T34 
+T35	Action 548 554	Purify
+E15	Action:T35 Using:T54
+T36	Action 518 526	Incubate
+E16	Action:T36 
+T37	Temperature 530 534	37°C
+T38	Time 539 546	2 hours
+T39	Temperature 784 788	37°C
+T40	Time 793 800	2 hours
+T41	Modifier 806 814	digested
+T42	Reagent 815 818	DNA
+T43	Reagent 995 998	DNA
+T44	Device 1007 1034	Qiaquick gel extraction kit
+T45	Generic-Measure 930 933	7kb
+T46	Device 934 938	band
+R7	Measure Arg1:T46 Arg2:T45	
+T47	Action 943 948	place
+E17	Action:T47 Acts-on:T46 Site:T49
+T48	Modifier 954 961	sterile
+T49	Location 962 982	microcentrifuge tube
+R8	Mod-Link Arg1:T49 Arg2:T48	
+T50	Generic-Measure 822 826	0.8%
+R9	Mod-Link Arg1:T42 Arg2:T41	
+T51	Location 827 856	low melting point agarose gel
+R10	Measure Arg1:T51 Arg2:T50	
+R11	Setting Arg1:E14 Arg2:T39	
+R12	Setting Arg1:E14 Arg2:T40	
+T52	Reagent 623 629	eluate
+T53	Reagent 635 640	EcoRI
+T54	Device 560 587	Qiaquick gel extraction kit
+R13	Setting Arg1:E16 Arg2:T37	
+R14	Setting Arg1:E16 Arg2:T38	
+T55	Action 390 393	Mix
+E18	Action:T55 Acts-on:T63 Using:T65 Using2:T67
+T56	Action 331 335	cool
+E19	Action:T56 
+T57	Action 263 271	Incubate
+E20	Action:T57 Acts-on:T70 Site:T73
+T58	Action 182 190	Incubate
+E21	Action:T58 Site:T61
+T59	Time 195 204	4 minutes
+T60	Temperature 208 212	95°C
+T61	Device 218 229	PCR machine
+R15	Setting Arg1:E21 Arg2:T59	
+R16	Setting Arg1:E21 Arg2:T60	
+T62	Amount 395 399	6 μg
+T63	Reagent 400 425	pLKO.1 TRC-cloning vector
+T64	Amount 458 462	5 μL
+T65	Reagent 467 477	NEB buffer
+T66	Amount 485 489	1 μL
+T67	Reagent 490 494	AgeI
+R17	Measure Arg1:T63 Arg2:T62	
+T68	Modifier 324 330	Slowly
+T69	Temperature 339 355	room temperature
+T70	Reagent 276 282	sample
+T71	Temperature 286 290	70°C
+T72	Time 295 305	10 minutes
+T73	Device 311 322	PCR machine
+R18	Measure Arg1:T13 Arg2:T6	
+R19	Measure Arg1:T12 Arg2:T7	
+R20	Measure Arg1:T11 Arg2:T8	
+R21	Measure Arg1:T10 Arg2:T9	
+R22	Setting Arg1:E20 Arg2:T71	
+R23	Setting Arg1:E20 Arg2:T72	
+R24	Mod-Link Arg1:E19 Arg2:T68	
+R25	Setting Arg1:E19 Arg2:T69	
+R26	Measure Arg1:T65 Arg2:T64	
+R27	Measure Arg1:T67 Arg2:T66	
+T74	Method 0 7	Cloning
+T75	Location 238 244	beaker
+T76	Modifier 248 255	boiling
+T77	Reagent 256 261	water
+R28	Mod-Link Arg1:T77 Arg2:T76	
+R29	Meronym Arg1:T77 Arg2:T75	
+R30	Or Arg1:T61 Arg2:T75	
+T78	Time 356 388	over the period of several hours
+R31	Setting Arg1:E19 Arg2:T78	
+T79	Reagent 427 435	maxiprep
+T80	Reagent 439 451	miniprep DNA
+R32	Or Arg1:T79 Arg2:T80	
+R33	Meronym Arg1:T79 Arg2:T63	
+T81	Action 495 500	bring
+E22	Action:T81 Using:T83
+T82	Amount 504 509	50 μL
+T83	Reagent 510 515	ddH2O
+R34	Setting Arg1:E22 Arg2:T82	
+T84	Action 589 599	eluting in
+E23	Action:T84 Acts-on:T86
+T85	Amount 600 605	30 μL
+T86	Reagent 609 614	ddH2O
+R35	Measure Arg1:T86 Arg2:T85	
+T87	Method 644 650	mixing
+T88	Amount 652 657	30 μL
+T89	Reagent 658 683	pLKO.1 TRC-cloning vector
+R36	Measure Arg1:T89 Arg2:T88	
+T91	Modifier 684 702	digested with AgeI
+T92	Amount 708 712	5 μL
+T93	Numerical 713 716	10x
+T94	Reagent 717 727	NEB buffer
+T95	Amount 743 747	1 μL
+T96	Reagent 748 753	EcoRI
+T97	Amount 758 763	14 μL
+T98	Reagent 764 769	ddH2O
+R37	Measure Arg1:T98 Arg2:T97	
+T99	Reagent 732 737	EcoRI
+R38	Measure Arg1:T94 Arg2:T93	
+R39	Measure Arg1:T94 Arg2:T92	
+R41	Measure Arg1:T96 Arg2:T95	
+T100	Modifier 871 881	distinctly
+T101	Action 882 885	see
+E24	Action:T101 Acts-on:T103
+T102	Numerical 886 887	2
+T103	Reagent 888 893	bands
+R42	Measure Arg1:T103 Arg2:T102	
+R43	Mod-Link Arg1:E24 Arg2:T100	
+T104	Mention 895 898	one
+T105	Mention 907 910	one
+T106	Generic-Measure 911 916	1.9kb
+T107	Generic-Measure 899 902	7kb
+R44	Coreference-Link Arg1:T104 Arg2:T103	
+R45	Measure Arg1:T104 Arg2:T107	
+R46	Measure Arg1:T105 Arg2:T106	
+R47	Coreference-Link Arg1:T105 Arg2:T103	
+T108	Method 1101 1116	ligation method
+T109	Modifier 1117 1126	of choice
+T110	Modifier 1134 1142	standard
+T111	Method 1143 1154	T4 ligation
+T112	Action 1156 1159	mix
+E25	Action:T112 Acts-on:T115
+T113	Amount 1161 1165	2 μL
+T114	Modifier 1166 1174	annealed
+T115	Reagent 1175 1180	oligo
+R48	Mod-Link Arg1:T115 Arg2:T114	
+R49	Measure Arg1:T115 Arg2:T113	
+T116	Amount 1225 1230	20 ng
+T117	Modifier 1231 1239	digested
+T118	Reagent 1240 1265	pLKO.1 TRC-cloning vector
+R40	Mod-Link Arg1:T89 Arg2:T91	
+R50	Mod-Link Arg1:T118 Arg2:T117	
+R51	Measure Arg1:T118 Arg2:T116	
+T90	Amount 1333 1337	2 μL
+T119	Numerical 1338 1341	10x
+T120	Reagent 1342 1366	NEB T4 DNA ligase buffer
+T121	Amount 1372 1376	1 μL
+T122	Reagent 1377 1394	NEB T4 DNA ligase
+T123	Action 1395 1400	Bring
+E26	Action:T123 Using:T125
+T124	Amount 1407 1411	20ul
+T125	Reagent 1417 1422	ddH2O
+R52	Setting Arg1:E26 Arg2:T124	
+R53	Measure Arg1:T122 Arg2:T121	
+R54	Measure Arg1:T120 Arg2:T119	
+R55	Measure Arg1:T120 Arg2:T90	
+T126	Method 1187 1203	Annealing Oligos
+T127	Method 1276 1311	Digesting pLKO.1 TRC Cloning Vector
+T128	Method 1537 1560	manufacturer’s protocol
+T129	Action 1562 1567	Plate
+E27	Action:T129 Site:T131
+T130	Reagent 1571 1578	LB agar
+T131	Location 1579 1585	plates
+T132	Concentration 1597 1606	100 μg/mL
+T133	Reagent 1607 1617	ampicillin
+T134	Reagent 1621 1634	carbenicillin
+T135	Device 1639 1656	ampicillin analog
+R56	Or Arg1:T133 Arg2:T134	
+R57	Measure Arg1:T133 Arg2:T132	
+R58	Measure Arg1:T134 Arg2:T132	
+R59	Meronym Arg1:T133 Arg2:T131	
+R60	Meronym Arg1:T130 Arg2:T131	
+T136	Reagent 8 20	shRNA Oligos
+T137	Reagent 26 32	pLKO.1
+T138	Concentration 145 148	10x
+R61	Measure Arg1:T12 Arg2:T138	
+T139	Concentration 463 466	10x
+R62	Measure Arg1:T65 Arg2:T139	

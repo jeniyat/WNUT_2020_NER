@@ -1,0 +1,22 @@
+T1	Action 99 115	filter sterilize
+E1	Action:T1 Acts-on:T5
+T2	Action 139 144	store
+E2	Action:T2 Acts-on:T6
+T3	Action 163 169	Divide
+E3	Action:T3 Product:T9
+T4	Size 121 127	0.2 μm
+T5	Device 128 134	filter
+T6	Location 148 152	dark
+T7	Temperature 156 161	-20ºC
+R1	Setting Arg1:T5 Arg2:T4	
+R2	Setting Arg1:E2 Arg2:T7	
+T8	Modifier 175 180	small
+T9	Reagent 181 189	aliquots
+R3	Mod-Link Arg1:T9 Arg2:T8	
+T10	Reagent 0 16	Vitamin Solution
+T11	Reagent 36 56	Marine Phytoplankton
+T12	Reagent 57 84	Thiamine Vitamin B12 Biotin
+T13	Modifier 190 200	if desired
+R4	Mod-Link Arg1:E3 Arg2:T13	
+T14	Modifier 85 97	After mixing
+R5	Mod-Link Arg1:E1 Arg2:T14	

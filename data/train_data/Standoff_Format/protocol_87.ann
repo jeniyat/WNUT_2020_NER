@@ -1,0 +1,40 @@
+T1	Action 83 89	render
+E1	Action:T1 Using:T7 Acts-on:T22
+T2	Action 143 148	place
+E2	Action:T2 Acts-on:T12 Site:T14
+T3	Action 229 232	sit
+E3	Action:T3 Acts-on:T15
+T4	Action 292 297	Stain
+E4	Action:T4 Using:T18 Acts-on:T17
+T5	Action 55 59	prep
+E5	Action:T5 Acts-on:T6
+T6	Reagent 50 54	grid
+T7	Method 65 79	glow discharge
+T8	Amount 149 153	5 µl
+T9	Action 109 116	Holding
+E6	Action:T9 Acts-on:T10 Using:T11
+T10	Reagent 121 125	grid
+T11	Device 133 141	tweezers
+T12	Reagent 157 169	viral lysate
+R1	Measure Arg1:T12 Arg2:T8	
+T13	Reagent 197 201	grid
+T14	Location 185 189	side
+R2	Meronym Arg1:T14 Arg2:T13	
+T15	Reagent 222 228	sample
+T16	Time 237 247	~3 minutes
+R3	Setting Arg1:E3 Arg2:T16	
+T17	Reagent 302 309	viruses
+T18	Method 330 384	Positive and Negative Staining of Viruses on TEM Grids
+T19	Method 0 17	Adsorbing Viruses
+T20	Location 21 30	TEM Grids
+T21	Time 38 46	same day
+R4	Setting Arg1:E5 Arg2:T21	
+T22	Location 90 95	grids
+T23	Modifier 96 107	hydrophylic
+R5	Mod-Link Arg1:E1 Arg2:T23	
+T24	Modifier 179 184	shiny
+R6	Mod-Link Arg1:T14 Arg2:T24	
+T25	Reagent 261 268	viruses
+T26	Action 272 278	adsorb
+E7	Action:T26 Site:T27 Acts-on:T25
+T27	Location 286 290	grid

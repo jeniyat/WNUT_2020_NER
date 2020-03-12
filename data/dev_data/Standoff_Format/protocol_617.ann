@@ -1,0 +1,112 @@
+T1	Action 51 55	Thaw
+E1	Action:T1 Acts-on:T15 Site:T17
+T2	Action 125 128	Add
+E2	Action:T2 Acts-on:T22
+T3	Action 205 210	flick
+E3	Action:T3 Acts-on:T24
+T4	Action 267 272	Place
+E4	Action:T4 Acts-on:T30 Site:T31
+T5	Action 320 330	Heat shock
+E5	Action:T5 
+T6	Action 383 388	Place
+E6	Action:T6 Site:T38
+T7	Action 423 430	Pipette
+E7	Action:T7 Acts-on:T43 Site:T44
+T8	Action 480 485	Place
+E8	Action:T8 
+T9	Action 511 518	shaking
+E9	Action:T9 
+T10	Action 553 557	Warm
+E10	Action:T10 Acts-on:T50
+T11	Action 584 587	Mix
+E11	Action:T11 Acts-on:T52 Using:T56
+T12	Action 645 652	Perform
+E12	Action:T12 Count:T57 Using:T58 Acts-on:T59
+T13	Action 694 700	Spread
+E13	Action:T13 Acts-on:T62 Site:T63
+T14	Action 751 759	Incubate
+E14	Action:T14 Acts-on:T63
+T15	Location 58 62	tube
+T16	Reagent 66 101	NEB 5-alpha Competent E. coli cells
+T17	Location 105 108	ice
+T18	Time 113 123	10 minutes
+R1	Meronym Arg1:T16 Arg2:T15	
+R2	Setting Arg1:E1 Arg2:T18	
+T19	Amount 129 135	1-5 µl
+T20	Generic-Measure 147 158	1 pg-100 ng
+T21	Reagent 162 173	plasmid DNA
+T22	Reagent 181 193	cell mixture
+R3	Measure Arg1:T21 Arg2:T20	
+R4	Measure Arg1:T21 Arg2:T19	
+T23	Modifier 195 204	Carefully
+T24	Location 215 219	tube
+T25	Numerical 220 223	4-5
+T26	Action 233 236	mix
+E15	Action:T26 Acts-on:T27 Acts-on2:T28
+T27	Reagent 237 242	cells
+T28	Reagent 247 250	DNA
+R5	Mod-Link Arg1:E3 Arg2:T23	
+R6	Setting Arg1:E3 Arg2:T25	
+T29	Action 252 265	Do not vortex
+E16	Action:T29 
+T30	Reagent 277 284	mixture
+T31	Location 288 291	ice
+T32	Time 296 306	30 minutes
+R7	Setting Arg1:E4 Arg2:T32	
+T33	Temperature 342 346	42°C
+T34	Modifier 351 358	exactly
+T35	Time 359 369	30 seconds
+R8	Mod-Link Arg1:T35 Arg2:T34	
+R9	Setting Arg1:E5 Arg2:T33	
+T36	Modifier 334 341	exactly
+R10	Mod-Link Arg1:T33 Arg2:T36	
+R11	Setting Arg1:E5 Arg2:T35	
+T37	Action 371 381	Do not mix
+E17	Action:T37 
+T38	Location 392 395	ice
+T39	Time 400 409	5 minutes
+R12	Setting Arg1:E6 Arg2:T39	
+T40	Action 411 421	Do not mix
+E18	Action:T40 
+T41	Amount 431 437	950 µl
+T42	Temperature 441 457	room temperature
+T43	Reagent 458 461	SOC
+T44	Reagent 471 478	mixture
+R13	Measure Arg1:T43 Arg2:T41	
+R14	Setting Arg1:E7 Arg2:T42	
+T45	Temperature 489 493	37°C
+T46	Time 498 508	60 minutes
+T47	Modifier 519 529	vigorously
+T48	Action 543 551	rotating
+E19	Action:T48 
+T49	Speed 531 538	250 rpm
+R15	Mod-Link Arg1:E9 Arg2:T47	
+R16	Setting Arg1:E8 Arg2:T45	
+R17	Setting Arg1:E8 Arg2:T46	
+R18	Setting Arg1:E19 Arg2:T49	
+T50	Reagent 558 574	selection plates
+T51	Temperature 578 582	37°C
+R19	Setting Arg1:E10 Arg2:T51	
+T52	Reagent 592 597	cells
+T53	Modifier 598 608	thoroughly
+T54	Action 612 620	flicking
+E20	Action:T54 Acts-on:T55
+T55	Location 625 629	tube
+R20	Mod-Link Arg1:E11 Arg2:T53	
+T57	Numerical 653 660	several
+T58	Method 661 685	10-fold serial dilutions
+T59	Reagent 689 692	SOC
+T60	Amount 701 710	50-100 µl
+T61	Modifier 714 718	each
+T62	Reagent 719 727	dilution
+T63	Location 735 750	selection plate
+T64	Time 760 769	overnight
+T65	Temperature 773 777	37°C
+R21	Mod-Link Arg1:T62 Arg2:T61	
+R22	Measure Arg1:T62 Arg2:T60	
+R23	Setting Arg1:E14 Arg2:T64	
+R24	Setting Arg1:E14 Arg2:T65	
+T66	Method 0 39	High Efficiency Transformation Protocol
+T67	Action 308 318	Do not mix
+E22	Action:T67 
+T56	Method 634 643	inverting

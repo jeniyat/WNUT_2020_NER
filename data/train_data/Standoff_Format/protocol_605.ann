@@ -1,0 +1,118 @@
+T1	Action 113 122	collected
+E1	Action:T1 Using:T3 Acts-on2:T5 Product:T8 Site:T6
+T2	Size 131 135	25µm
+T3	Device 136 153	mesh plankton net
+T4	Amount 161 166	200mL
+T5	Reagent 167 180	cod-end piece
+T6	Location 186 191	depth
+T7	Generic-Measure 195 198	5 m
+T8	Reagent 93 109	vertical net tow
+R1	Setting Arg1:T3 Arg2:T2	
+R2	Measure Arg1:T5 Arg2:T4	
+R3	Measure Arg1:T6 Arg2:T7	
+T9	Action 232 241	estimated
+E2	Action:T9 Measure-Type-Link:T10 Using:T11 Acts-on:T14 Acts-on2:T15 Using2:T17
+T10	Measure-Type 207 228	phytoplankton biomass
+T11	Method 247 278	in vivo chlorphyll fluorescence
+T12	Modifier 282 286	dark
+T13	Modifier 287 294	adapted
+T14	Device 295 298	net
+T15	Reagent 303 322	whole water samples
+T16	Modifier 331 341	calibrated
+T17	Device 342 362	Aquaflor fluorometer
+T18	Reagent 381 409	Vertical whole water samples
+T19	Action 414 423	collected
+E3	Action:T19 Product:T18 Using:T20
+T20	Device 432 439	VanDorn
+T21	Generic-Measure 452 454	1m
+T22	Modifier 455 464	intervals
+T23	Action 469 479	integrated
+E4	Action:T23 
+T24	Generic-Measure 485 487	5m
+T25	Measure-Type 489 515	Species relative abundance
+T26	Action 519 527	assessed
+E5	Action:T26 Measure-Type-Link:T25 Using:T27 Using2:T29
+T27	Method 528 543	microscopically
+T28	Concentration 549 551	1%
+T29	Reagent 552 584	glutaraldehyde preserved samples
+T30	Action 585 595	quantified
+E6	Action:T30 Product:T29 Using:T31
+T31	Device 601 630	nanoplankton counting chamber
+T32	Reagent 724 735	Whole water
+T33	Action 739 745	passed
+E7	Action:T33 Acts-on:T32 Using:T35
+T34	Size 756 762	0.2 µm
+T35	Device 763 777	syringe filter
+T36	Action 782 788	stored
+E8	Action:T36 
+T37	Time 792 797	-20°C
+T38	Amount 814 820	50 mLs
+T39	Reagent 828 842	net tow sample
+T40	Action 847 855	filtered
+E9	Action:T40 Acts-on:T39 Using:T42
+T41	Size 864 869	1.2µm
+T42	Device 870 893	Isopore membrane filter
+T43	Action 910 919	extracted
+E10	Action:T43 Site:T44
+T44	Reagent 925 931	Trizol
+T45	Action 958 966	archived
+E11	Action:T45 
+T46	Temperature 970 975	-80°C
+T47	Amount 1002 1007	50mLs
+T48	Reagent 1015 1022	net tow
+T49	Action 1027 1035	filtered
+E12	Action:T49 Acts-on:T48 Using:T51
+T50	Size 1044 1047	2µm
+T51	Device 1048 1071	Isopore membrane filter
+T52	Action 1088 1097	extracted
+E13	Action:T52 Acts-on:T54
+T53	Concentration 1103 1106	80%
+T54	Reagent 1107 1115	Methanol
+T55	Action 1129 1137	archived
+E14	Action:T55 
+T56	Temperature 1141 1146	-80°C
+T57	Amount 1157 1162	25mLs
+T58	Reagent 1170 1177	net tow
+T59	Action 1182 1190	filtered
+E15	Action:T59 Acts-on:T58 Using:T60
+T60	Device 1199 1223	Glass Microfibre Filters
+T61	Action 1238 1246	archived
+E16	Action:T61 
+T62	Temperature 1250 1255	-80°C
+R4	Mod-Link Arg1:T14 Arg2:T13	
+R5	Mod-Link Arg1:T14 Arg2:T12	
+R6	Mod-Link Arg1:T17 Arg2:T16	
+R7	Mod-Link Arg1:T21 Arg2:T22	
+R8	Setting Arg1:E3 Arg2:T21	
+R9	Setting Arg1:E4 Arg2:T24	
+R10	Measure Arg1:T29 Arg2:T28	
+R11	Setting Arg1:T35 Arg2:T34	
+R12	Setting Arg1:E8 Arg2:T37	
+R13	Measure Arg1:T39 Arg2:T38	
+R14	Measure Arg1:T48 Arg2:T47	
+R15	Measure Arg1:T58 Arg2:T57	
+R16	Setting Arg1:T42 Arg2:T41	
+R17	Setting Arg1:T51 Arg2:T50	
+R18	Measure Arg1:T54 Arg2:T53	
+R19	Setting Arg1:E11 Arg2:T46	
+R20	Setting Arg1:E14 Arg2:T56	
+R21	Setting Arg1:E16 Arg2:T62	
+T63	Location 0 14	Monterey Wharf
+T64	Modifier 18 24	Weekly
+T65	Method 25 82	Phytoplankton Monitoring Sample Collection and Processing
+T66	Modifier 201 206	Total
+T67	Modifier 443 451	discreet
+R22	Mod-Link Arg1:T21 Arg2:T67	
+T68	Reagent 658 665	samples
+T69	Action 670 679	processed
+E17	Action:T69 Acts-on:T68
+T70	Action 684 692	archived
+E18	Action:T70 Acts-on:T68
+T71	Method 703 711	analysis
+T72	Modifier 648 657	following
+R23	Mod-Link Arg1:T68 Arg2:T72	
+T73	Reagent 713 722	Nutrients
+T74	Reagent 799 812	Nucleic Acids
+T75	Reagent 977 984	Protein
+T76	Reagent 1148 1155	Pigment
+T77	Reagent 989 1000	Amino Acids

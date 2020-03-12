@@ -1,0 +1,82 @@
+T1	Action 31 37	Dilute
+E1	Action:T1 Acts-on:T11
+T2	Action 160 163	Add
+E2	Action:T2 Site:T32 Acts-on:T31
+T3	Action 203 209	vortex
+E3	Action:T3 
+T4	Action 240 244	Spin
+E4	Action:T4 Site:T14
+T5	Action 309 315	Remove
+E5	Action:T5 Acts-on:T19 Site:T21
+T6	Action 422 428	Repeat
+E6	Action:T6 Using:T12
+T7	Action 464 470	Repeat
+E7	Action:T7 Using:T13
+T8	Action 506 513	Extract
+E8	Action:T8 Acts-on:T23 Using:T39
+T9	Action 604 611	Extract
+E9	Action:T9 Acts-on:T24 Using:T40
+T10	Action 708 719	Precipitate
+E10	Action:T10 Acts-on:T29
+T11	Reagent 43 62	nucleic acid sample
+T12	Method 433 450	phenol extraction
+T13	Method 475 492	phenol extraction
+T14	Location 250 259	microfuge
+T15	Speed 263 272	top speed
+T16	Time 277 284	1–2 min
+T17	Action 288 296	separate
+E11	Action:T17 Acts-on:T18
+T18	Reagent 301 307	phases
+R1	Setting Arg1:E4 Arg2:T15	
+R2	Setting Arg1:E4 Arg2:T16	
+T19	Reagent 320 333	aqueous phase
+T20	Modifier 339 342	new
+T21	Location 343 347	tube
+R3	Mod-Link Arg1:T21 Arg2:T20	
+T22	Modifier 349 420	being careful not to transfer any of the protein at the phase interface
+R4	Mod-Link Arg1:E5 Arg2:T22	
+T23	Reagent 518 524	sample
+T24	Reagent 616 622	sample
+T25	Action 579 585	remove
+E12	Action:T25 Acts-on:T26
+T26	Reagent 596 602	phenol
+T27	Action 683 689	remove
+E13	Action:T27 Acts-on:T28
+T28	Reagent 700 706	phenol
+T29	Reagent 724 736	nucleic acid
+T30	Amount 66 76	100–700 µL
+R5	Setting Arg1:E1 Arg2:T30	
+T31	Reagent 183 189	phenol
+T32	Location 197 201	tube
+T33	Modifier 210 220	vigorously
+T34	Action 224 227	mix
+E14	Action:T34 Acts-on:T35
+T35	Reagent 232 238	phases
+R6	Mod-Link Arg1:E3 Arg2:T33	
+T36	Amount 167 179	equal volume
+R7	Measure Arg1:T31 Arg2:T36	
+T37	Amount 533 545	equal volume
+T38	Amount 637 649	equal volume
+T39	Reagent 549 575	chloroform:isoamyl alcohol
+T40	Reagent 653 679	chloroform:isoamyl alcohol
+R8	Measure Arg1:T39 Arg2:T37	
+R9	Measure Arg1:T40 Arg2:T38	
+T41	Method 0 28	Phenol/chloroform extraction
+T42	Action 80 86	divide
+E15	Action:T42 Acts-on:T43 Site:T44
+T43	Reagent 92 99	samples
+T44	Location 105 110	tubes
+T45	Modifier 130 142	no more than
+T46	Amount 143 149	700 µL
+T47	Modifier 150 153	per
+T48	Location 154 158	tube
+R10	Mod-Link Arg1:T48 Arg2:T47	
+R11	Mod-Link Arg1:T46 Arg2:T45	
+R12	Coreference-Link Arg1:T48 Arg2:T44	
+R13	Measure Arg1:T43 Arg2:T46	
+T49	Modifier 623 628	again
+R14	Mod-Link Arg1:E9 Arg2:T49	
+T50	Modifier 590 595	trace
+T51	Modifier 694 699	trace
+R15	Mod-Link Arg1:T28 Arg2:T51	
+R16	Mod-Link Arg1:T26 Arg2:T50	

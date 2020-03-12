@@ -1,0 +1,102 @@
+T1	Action 29 38	Collected
+E1	Action:T1 Acts-on:T2
+T2	Reagent 39 48	sea stars
+T3	Modifier 49 56	by hand
+T4	Action 58 63	Rinse
+E2	Action:T4 Using:T7 Acts-on:T36
+T5	Reagent 97 101	star
+T6	Modifier 107 114	sterile
+T7	Reagent 115 123	seawater
+R1	Mod-Link Arg1:T7 Arg2:T6	
+T13	Action 437 443	Remove
+E4	Action:T13 Acts-on:T15 Site:T16
+T14	Modifier 446 451	clean
+T15	Reagent 452 464	sterile swab
+R3	Mod-Link Arg1:T15 Arg2:T14	
+T16	Seal 474 482	wrapping
+T17	Device 491 501	cotton tip
+T18	Action 512 519	applied
+E5	Action:T18 Acts-on:T17 Site:T19
+T19	Location 545 560	sample location
+T20	Device 566 570	swab
+T21	Action 581 594	pulled across
+E6	Action:T21 Acts-on:T20 Site:T22 Using:T23
+T22	Location 599 614	sample location
+T23	Method 620 637	moderate pressure
+T24	Device 733 737	swab
+T25	Action 748 754	placed
+E7	Action:T25 Acts-on:T24 Site:T28
+T26	Modifier 762 769	labeled
+T27	Modifier 770 777	sterile
+T28	Location 778 792	screw cap tube
+T29	Action 802 806	kept
+E8	Action:T29 Acts-on:T28
+T31	Action 830 836	frozen
+E9	Action:T31 Acts-on:T11
+T32	Temperature 840 844	-80°
+T33	Device 846 851	Swabs
+T34	Method 871 885	DNA extraction
+R5	Mod-Link Arg1:T28 Arg2:T27	
+R6	Mod-Link Arg1:T28 Arg2:T26	
+R8	Setting Arg1:E9 Arg2:T32	
+T36	Location 68 76	location
+T37	Action 81 89	sampling
+E10	Action:T37 Acts-on:T5 Site:T36
+T38	Action 127 133	remove
+E11	Action:T38 Acts-on:T40
+T39	Modifier 134 137	any
+T40	Reagent 138 156	transient microbes
+R9	Mod-Link Arg1:T40 Arg2:T39	
+T8	Mention 470 473	its
+R2	Coreference-Link Arg1:T8 Arg2:T15	
+R10	Meronym Arg1:T16 Arg2:T8	
+T9	Modifier 527 544	previously rinsed
+R11	Mod-Link Arg1:T19 Arg2:T9	
+T10	Temperature 807 813	on ice
+T11	Mention 820 822	it
+R4	Coreference-Link Arg1:T11 Arg2:T28	
+T12	Action 861 866	ready
+E3	Action:T12 Acts-on:T33 Using:T34
+T30	Method 0 28	Sea stars bacterial sampling
+R7	Mod-Link Arg1:E1 Arg2:T3	
+T35	Modifier 166 175	important
+T41	Reagent 186 191	stars
+T42	Modifier 199 215	constant contact
+T43	Reagent 221 243	environmental microbes
+T44	Method 252 272	sequencing technique
+T45	Modifier 276 290	very sensitive
+T46	Method 303 310	rinsing
+T47	Action 311 318	reduces
+E12	Action:T47 Using:T46
+T48	Modifier 319 324	noise
+R12	Mod-Link Arg1:E12 Arg2:T48	
+R13	Mod-Link Arg1:T41 Arg2:T42	
+T49	Modifier 330 337	healthy
+T50	Reagent 338 349	individuals
+T51	Location 354 367	sampling site
+T52	Method 379 387	swabbing
+T53	Action 388 398	will occur
+E13	Action:T53 
+T54	Modifier 410 423	approximately
+T55	Size 424 435	15 by 10 cm
+R14	Mod-Link Arg1:T55 Arg2:T54	
+R15	Mod-Link Arg1:T50 Arg2:T49	
+R16	Measure Arg1:T51 Arg2:T55	
+T56	Numerical 639 642	One
+T57	Method 644 648	swab
+T58	Action 662 669	pulling
+E14	Action:T58 Acts-on:T59
+T59	Device 674 678	swab
+T60	Modifier 679 693	back and forth
+T61	Mention 699 703	this
+T62	Action 714 718	done
+E15	Action:T62 Count:T63 Using:T61
+T63	Numerical 719 727	10 times
+R17	Coreference-Link Arg1:T61 Arg2:E14	
+R18	Mod-Link Arg1:E14 Arg2:T60	
+R19	Setting Arg1:E8 Arg2:T10	
+T64	Modifier 887 897	Previously
+T65	Action 906 910	used
+E16	Action:T65 Acts-on:T66
+T66	Device 913 932	MoBio PowerSoil Kit
+R20	Mod-Link Arg1:E16 Arg2:T64	

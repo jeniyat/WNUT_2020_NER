@@ -1,0 +1,135 @@
+T1	Action 25 32	Turn on
+E1	Action:T1 Acts-on:T24
+T2	Action 52 55	set
+E2	Action:T2 Acts-on:T24
+T3	Action 114 119	Place
+E3	Action:T3 Acts-on:T28 Acts-on2:T30
+T4	Action 154 162	Pre-warm
+E4	Action:T4 Acts-on:T31
+T5	Action 194 198	Thaw
+E5	Action:T5 Acts-on:T33 Site:T34
+T6	Action 226 229	use
+E6	Action:T6 Acts-on:T37
+T7	Action 251 256	Place
+E7	Action:T7 Acts-on:T40 Acts-on2:T41 Site:T42
+T8	Action 344 349	Flick
+E8	Action:T8 Acts-on:T44 Count:T46
+T9	Action 391 394	mix
+E9	Action:T9 
+T10	Action 399 402	add
+E10	Action:T10 Acts-on:T48
+T11	Action 440 443	Add
+E11	Action:T11 Acts-on:T51 Site:T52
+T12	Action 533 541	Transfer
+E12	Action:T12 Acts-on:T54 Site:T56
+T13	Action 584 587	tap
+E13	Action:T13 Acts-on:T57 Count:T58
+T14	Action 606 610	wipe
+E14	Action:T14 Acts-on:T59 Acts-on2:T60
+T15	Action 646 651	place
+E15	Action:T15 Site:T62
+T16	Action 686 697	press pulse
+E16	Action:T16 
+T17	Action 741 744	add
+E17	Action:T17 Acts-on:T66
+T18	Action 765 768	mix
+E18	Action:T18 Count:T68
+T19	Action 772 781	pipetting
+E19	Action:T19 Using:T67
+T20	Action 803 811	transfer
+E20	Action:T20 Site:T70
+T21	Action 837 843	Rotate
+E21	Action:T21 Site:T72
+T22	Action 876 880	Make
+E22	Action:T22 Acts-on:T75
+T23	Action 905 913	Incubate
+E23	Action:T23 
+T24	Device 33 47	electroporator
+T25	Generic-Measure 59 69	1.7-2.5 kv
+T26	Generic-Measure 93 101	200 ohms
+T27	Generic-Measure 106 111	25 µF
+R1	Setting Arg1:E2 Arg2:T25	
+R2	Setting Arg1:E2 Arg2:T26	
+R3	Setting Arg1:E2 Arg2:T27	
+T28	Reagent 120 132	recovery SOC
+T29	Temperature 136 140	37°C
+T30	Device 141 151	water bath
+R4	Setting Arg1:E3 Arg2:T29	
+T31	Location 163 183	LB-antibiotic plates
+T32	Temperature 187 191	37°C
+R5	Setting Arg1:E4 Arg2:T32	
+T33	Reagent 199 204	cells
+T34	Location 208 211	ice
+T35	Time 216 222	10 min
+T36	Modifier 230 242	freshly made
+T37	Reagent 243 248	cells
+R6	Mod-Link Arg1:T37 Arg2:T36	
+R7	Setting Arg1:E5 Arg2:T35	
+T38	Modifier 257 268	appropriate
+T39	Amount 269 275	number
+T40	Location 279 300	microcentrifuge tubes
+T41	Location 326 334	cuvettes
+T42	Location 338 341	ice
+R8	Measure Arg1:T40 Arg2:T39	
+R9	Mod-Link Arg1:T39 Arg2:T38	
+T43	Generic-Measure 305 325	1 mm-electroporation
+R10	Setting Arg1:T41 Arg2:T43	
+T44	Location 354 358	tube
+T45	Reagent 370 375	cells
+T46	Numerical 378 381	few
+T47	Amount 403 408	25 µl
+T48	Location 416 437	microcentrifuge tubes
+R11	Meronym Arg1:T45 Arg2:T44	
+R12	Measure Arg1:T48 Arg2:T47	
+T49	Amount 444 448	1 µl
+T50	Concentration 454 462	10 pg/µl
+T51	Reagent 463 475	DNA solution
+T52	Reagent 497 502	cells
+T53	Location 510 530	microcentrifuge tube
+R13	Measure Arg1:T51 Arg2:T50	
+R14	Measure Arg1:T51 Arg2:T49	
+R15	Meronym Arg1:T52 Arg2:T53	
+T54	Reagent 546 562	DNA-cell mixture
+T55	Modifier 570 574	cold
+T56	Location 575 582	cuvette
+T57	Location 591 601	countertop
+T58	Numerical 602 604	2X
+T59	Reagent 611 616	water
+T60	Location 622 630	exterior
+T61	Location 634 641	cuvette
+T62	Device 659 681	electroporation module
+T63	Modifier 729 740	Immediately
+R16	Mod-Link Arg1:T56 Arg2:T55	
+R17	Meronym Arg1:T60 Arg2:T61	
+R18	Mod-Link Arg1:E17 Arg2:T63	
+T64	Amount 745 751	975 µl
+T65	Temperature 755 759	37°C
+T66	Reagent 760 763	SOC
+T67	Method 782 793	up and down
+T68	Numerical 794 798	once
+T69	Amount 817 822	15 ml
+T70	Location 823 834	falcon tube
+R19	Measure Arg1:T70 Arg2:T69	
+R20	Measure Arg1:T66 Arg2:T64	
+R21	Setting Arg1:E17 Arg2:T65	
+T71	Temperature 851 855	37°C
+T72	Device 856 865	incubator
+T73	Time 870 873	1 h
+R22	Setting Arg1:E21 Arg2:T71	
+R23	Setting Arg1:E21 Arg2:T73	
+T74	Modifier 881 892	appropriate
+T75	Reagent 893 902	dilutions
+R24	Mod-Link Arg1:T75 Arg2:T74	
+T76	Time 914 923	overnight
+T77	Temperature 927 931	37°C
+R25	Setting Arg1:E23 Arg2:T76	
+R26	Setting Arg1:E23 Arg2:T77	
+T78	Method 0 15	Electroporation
+T79	Action 71 79	optimize
+E24	Action:T79 Acts-on:T80
+T80	Reagent 84 90	strain
+T81	Action 705 709	hold
+E25	Action:T81 Acts-on:T82
+T82	Device 714 720	button
+T83	Reagent 480 488	DI water
+R27	Meronym Arg1:T51 Arg2:T83	

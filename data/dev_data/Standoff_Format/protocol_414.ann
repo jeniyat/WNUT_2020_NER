@@ -1,0 +1,162 @@
+T1	Action 52 59	Prepare
+E1	Action:T1 Using:T2 Using2:T26 Product:T21
+T3	Action 262 266	Grow
+E3	Action:T3 Acts-on:T27 Site:T28
+T4	Action 319 327	transfer
+E4	Action:T4 Count:T31
+T5	Action 357 364	Harvest
+E5	Action:T5 Acts-on:T32 Site:T33
+T6	Action 403 410	Extract
+E6	Action:T6 Acts-on:T34 Using:T35
+T7	Action 449 457	Quantify
+E7	Action:T7 Acts-on:T36 Using:T37
+T9	Action 694 697	Mix
+E9	Action:T9 Acts-on:T46 Acts-on2:T47
+T10	Action 779 782	Mix
+E10	Action:T10 Acts-on:T54 Acts-on2:T56
+T11	Action 911 919	Dispense
+E11	Action:T11 Acts-on:T60 Site:T61
+T12	Action 980 984	plug
+E12	Action:T12 Using:T63
+T13	Action 1006 1010	Load
+E13	Action:T13 Acts-on:T64 Site:T65
+T14	Action 1040 1043	put
+E14	Action:T14 Acts-on:T66
+T15	Action 1066 1076	Centrifuge
+E15	Action:T15 Using:T68
+T16	Action 1165 1172	Collect
+E16	Action:T16 Acts-on:T72
+T17	Action 1196 1205	Calculate
+E17	Action:T17 Using:T77
+T18	Action 1290 1297	measure
+E18	Action:T18 Measure-Type-Link:T78
+T19	Action 1328 1337	Determine
+E19	Action:T19 Measure-Type-Link:T99
+T20	Action 1130 1145	ultracentrifuge
+E20	Action:T20 Using:T68
+T21	Reagent 60 65	Pro99
+T22	Reagent 67 69	SN
+T23	Reagent 71 75	SNAX
+T24	Reagent 79 90	Amp1 medium
+T2	Method 91 114	according to directions
+T25	Concentration 124 127	15N
+T26	Reagent 128 145	ammonium chloride
+R1	Measure Arg1:T26 Arg2:T25	
+T27	Reagent 267 280	cyanobacteria
+R2	Or Arg1:T21 Arg2:T22	
+R3	Or Arg1:T22 Arg2:T23	
+R4	Or Arg1:T23 Arg2:T24	
+T28	Reagent 288 294	medium
+T29	Reagent 300 314	heavy nitrogen
+T30	Modifier 328 336	at least
+T31	Numerical 337 338	3
+R5	Or Arg1:T31 Arg2:T30	
+R6	Meronym Arg1:T29 Arg2:T28	
+T32	Reagent 369 383	bacteria grown
+T33	Reagent 387 401	heavy nitrogen
+T34	Reagent 411 424	bacterial DNA
+T35	Method 431 447	standard methods
+T36	Reagent 462 465	DNA
+T37	Reagent 472 491	Quant-iT Pico Green
+T38	Modifier 497 505	at least
+T39	Amount 506 511	10 µg
+T40	Reagent 515 518	DNA
+R7	Measure Arg1:T40 Arg2:T39	
+R8	Mod-Link Arg1:T39 Arg2:T38	
+T42	Device 595 624	Beckman VTi 65 vertical rotor
+T43	Size 639 647	13x48 mm
+T44	Location 648 674	OptiSeal polyallomer tubes
+T45	Amount 676 682	4.9 ml
+R9	Measure Arg1:T44 Arg2:T43	
+R10	Measure Arg1:T44 Arg2:T45	
+T46	Reagent 702 705	DNA
+T47	Reagent 711 720	TE buffer
+T48	Concentration 722 726	10mM
+T49	Reagent 727 731	Tris
+T50	Concentration 733 736	1mM
+T51	Reagent 737 741	EDTA
+T52	pH 743 748	pH7.6
+T53	Amount 771 777	0.9 ml
+R11	Measure Arg1:T49 Arg2:T48	
+R12	Measure Arg1:T51 Arg2:T50	
+R13	Measure Arg1:T51 Arg2:T52	
+R14	Meronym Arg1:T49 Arg2:T47	
+R15	Meronym Arg1:T51 Arg2:T47	
+R16	Setting Arg1:E9 Arg2:T53	
+T54	Reagent 787 790	DNA
+T55	Amount 796 799	4ml
+T56	Reagent 803 807	CsCl
+T57	Reagent 820 822	TE
+T58	Generic-Measure 828 843	density of p1.8
+R17	Measure Arg1:T56 Arg2:T55	
+R18	Meronym Arg1:T57 Arg2:T56	
+T59	Amount 920 926	4.9 ml
+T60	Reagent 934 944	DNA sample
+T61	Reagent 948 952	CsCl
+T62	Location 962 975	OptiSeal tube
+T63	Seal 994 1004	black caps
+R19	Measure Arg1:T60 Arg2:T59	
+R20	Meronym Arg1:T61 Arg2:T62	
+T64	Location 1015 1020	tubes
+T65	Device 1030 1035	rotor
+T66	Seal 1044 1048	caps
+T67	Speed 1080 1090	44,000 rpm
+T68	Device 1111 1129	Beckman L70 or L80
+T69	Time 1150 1155	48 hr
+T70	Temperature 1159 1163	18°C
+R21	Setting Arg1:E20 Arg2:T69	
+R22	Setting Arg1:E20 Arg2:T70	
+R23	Setting Arg1:T68 Arg2:T67	
+T71	Amount 1173 1184	0.2-0.25 ml
+T72	Reagent 1185 1194	fractions
+R24	Measure Arg1:T72 Arg2:T71	
+T73	Amount 1206 1212	amount
+T74	Reagent 1216 1219	DNA
+T75	Modifier 1223 1227	each
+T76	Reagent 1228 1236	fraction
+T77	Device 1243 1262	Quant-iT Pico Green
+T78	Measure-Type 1302 1309	density
+T79	Modifier 1313 1317	each
+T80	Reagent 1318 1326	fraction
+R25	Mod-Link Arg1:T80 Arg2:T79	
+R27	Mod-Link Arg1:T76 Arg2:T75	
+T81	Action 0 17	Isotopic Labeling
+E21	Action:T81 Acts-on:T82
+T82	Reagent 21 34	Cyanobacteria
+T83	Reagent 39 42	DNA
+T84	Method 43 51	Analysis
+T85	Modifier 169 174	heavy
+T86	Reagent 175 182	isotope
+R26	Mod-Link Arg1:T86 Arg2:T85	
+T87	Numerical 184 186	15
+T88	Reagent 187 192	NH4Cl
+R28	Measure Arg1:T88 Arg2:T87	
+T41	Method 523 554	density gradient centrifugation
+T89	Action 493 496	Use
+E2	Action:T89 Acts-on:T40
+T8	Method 560 591	density gradient centrifugation
+T90	Modifier 755 760	final
+T91	Measure-Type 761 767	volume
+T92	Action 845 852	measure
+E8	Action:T92 Measure-Type-Link:T93
+T93	Measure-Type 857 864	density
+T94	Modifier 872 877	final
+T95	Reagent 878 887	solutions
+T96	Mention 889 893	they
+T97	Generic-Measure 904 908	p1.7
+R29	Mod-Link Arg1:T95 Arg2:T94	
+R30	Measure Arg1:T96 Arg2:T97	
+R31	Coreference-Link Arg1:T96 Arg2:T95	
+T98	Speed 1093 1104	184,678.5 g
+R32	Coreference-Link Arg1:T98 Arg2:T67	
+T99	Measure-Type 1342 1349	density
+T100	Reagent 1357 1366	fractions
+T101	Reagent 1372 1375	DNA
+T102	Action 1377 1381	plot
+E22	Action:T102 Measure-Type-Link:T103 Measure-Type-Link2:T106
+T103	Measure-Type 1382 1384	ng
+T104	Reagent 1388 1391	DNA
+T105	Reagent 1399 1403	CsCl
+T106	Measure-Type 1404 1411	density
+R33	Meronym Arg1:T74 Arg2:T76	
+R34	Setting Arg1:E17 Arg2:T73	

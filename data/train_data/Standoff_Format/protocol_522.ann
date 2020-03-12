@@ -1,0 +1,264 @@
+T1	Action 42 49	Collect
+E1	Action:T1 Acts-on:T31 Site:T33
+T2	Action 108 113	store
+E2	Action:T2 
+T4	Action 223 231	Transfer
+E4	Action:T4 Acts-on:T40 Site:T42
+T6	Action 345 353	Incubate
+E6	Action:T6 
+T8	Action 438 442	Spin
+E8	Action:T8 
+T9	Action 480 489	pipet out
+E9	Action:T9 Acts-on:T51
+T10	Action 535 544	Resuspend
+E10	Action:T10 Acts-on:T52 Using:T54
+T11	Action 587 590	Add
+E11	Action:T11 Acts-on:T56
+T12	Action 622 628	invert
+E12	Action:T12 Acts-on:T56
+T13	Action 640 648	incubate
+E13	Action:T13 
+T14	Action 676 680	Spin
+E14	Action:T14 Acts-on:T59
+T15	Action 738 747	pipet out
+E15	Action:T15 Acts-on:T63
+T17	Action 880 889	Resuspend
+E17	Action:T17 Acts-on:T68 Using:T70
+T18	Action 988 996	Transfer
+E18	Action:T18 Site:T72
+T19	Action 1031 1036	label
+E19	Action:T19 Acts-on:T72
+T20	Action 1044 1052	Transfer
+E20	Action:T20 Site:T74
+T21	Action 1092 1095	add
+E21	Action:T21 Acts-on:T76
+T22	Action 1132 1141	pipet mix
+E22	Action:T22 
+T23	Action 1153 1157	Keep
+E23	Action:T23 Acts-on:T78
+T25	Action 1340 1351	Equilibrate
+E25	Action:T25 Acts-on:T24 Site:T87
+T27	Action 1612 1617	Place
+E27	Action:T27 Acts-on:T26
+T29	Action 1827 1836	Wash away
+E29	Action:T29 Using:T28 Using2:T91 Acts-on:T154 Acts-on2:T155
+T30	Amount 50 53	3mL
+T31	Reagent 54 68	animal's blood
+T32	Size 72 76	5 mL
+T33	Location 77 102	EDTA anticoagulative tube
+R1	Measure Arg1:T33 Arg2:T32	
+T34	Temperature 117 121	4 °C
+R2	Setting Arg1:E2 Arg2:T34	
+R3	Measure Arg1:T31 Arg2:T30	
+T35	Reagent 128 133	blood
+T3	Action 144 151	rocking
+E3	Action:T3 Acts-on:T35
+T36	Modifier 137 143	gently
+R4	Mod-Link Arg1:E3 Arg2:T36	
+T37	Time 156 161	10min
+T38	Temperature 165 181	room temperature
+R5	Setting Arg1:E3 Arg2:T37	
+R6	Setting Arg1:E3 Arg2:T38	
+T39	Amount 232 235	3ml
+T40	Reagent 236 241	blood
+T41	Size 245 249	15ml
+T42	Location 250 264	screw cap tube
+R7	Measure Arg1:T42 Arg2:T41	
+R8	Measure Arg1:T40 Arg2:T39	
+T43	Amount 276 279	9ml
+T44	Reagent 280 298	RBC lysis solution
+R9	Measure Arg1:T44 Arg2:T43	
+T45	Action 330 339	inverting
+E30	Action:T45 Count:T46 Acts-on:T42
+T46	Numerical 340 343	10x
+R10	Meronym Arg1:T44 Arg2:T42	
+T5	Time 354 359	5 min
+T47	Temperature 363 379	room temperature
+R11	Setting Arg1:E6 Arg2:T5	
+R12	Setting Arg1:E6 Arg2:T47	
+T7	Action 395 404	inverting
+E5	Action:T7 Count:T103
+T48	Time 443 448	5 min
+T49	Speed 452 458	2000xg
+T50	Temperature 462 465	4⁰C
+R13	Setting Arg1:E8 Arg2:T48	
+R14	Setting Arg1:E8 Arg2:T49	
+R15	Setting Arg1:E8 Arg2:T50	
+T51	Reagent 490 501	supernatant
+T52	Reagent 545 556	cell pellet
+T53	Amount 560 563	3ml
+T54	Reagent 564 567	PBS
+R16	Measure Arg1:T54 Arg2:T53	
+T55	Amount 591 594	9ml
+T56	Reagent 595 608	rbc lysis sol
+R17	Measure Arg1:T56 Arg2:T55	
+T57	Time 649 654	5 min
+R18	Setting Arg1:E13 Arg2:T57	
+T58	Temperature 658 674	room temperature
+R19	Setting Arg1:E13 Arg2:T58	
+T59	Reagent 681 696	cell suspension
+T60	Time 701 706	5 min
+T61	Speed 710 716	2000xg
+T62	Temperature 720 723	4⁰C
+R20	Setting Arg1:E14 Arg2:T60	
+R21	Setting Arg1:E14 Arg2:T61	
+R22	Setting Arg1:E14 Arg2:T62	
+T63	Reagent 748 759	supernatant
+T16	Action 827 834	tilting
+E7	Action:T16 Acts-on:T64
+T64	Location 839 843	tube
+T65	Action 848 856	removing
+E16	Action:T65 Acts-on:T66 Using:T67
+T66	Reagent 857 863	liquid
+T67	Device 869 878	pipet tip
+T68	Reagent 890 901	cell pellet
+T69	Amount 905 910	580ul
+T70	Reagent 911 933	cell suspension buffer
+R23	Measure Arg1:T70 Arg2:T69	
+T71	Amount 997 1002	375ul
+T72	Location 1012 1026	microfuge tube
+R24	Setting Arg1:E18 Arg2:T71	
+T73	Amount 1053 1060	187.5ul
+R25	Setting Arg1:E20 Arg2:T73	
+T74	Location 1064 1076	another tube
+T75	Amount 1096 1103	187.5ul
+T76	Reagent 1104 1126	cell suspension buffer
+R26	Measure Arg1:T76 Arg2:T75	
+T77	Time 1149 1151	5x
+R27	Setting Arg1:E22 Arg2:T77	
+T78	Location 1163 1168	tubes
+T79	Temperature 1172 1175	ice
+R28	Setting Arg1:E23 Arg2:T79	
+T80	Concentration 1227 1229	2%
+T81	Reagent 1230 1237	agarose
+R29	Measure Arg1:T81 Arg2:T80	
+T82	Action 1255 1264	immersing
+E31	Action:T82 Site:T84 Acts-on:T81
+T83	Temperature 1268 1284	microwave-boiled
+T84	Reagent 1285 1290	water
+R30	Setting Arg1:E31 Arg2:T83	
+T85	Time 1295 1303	10-15min
+R31	Setting Arg1:E31 Arg2:T85	
+T24	Location 1357 1362	tubes
+T86	Temperature 1389 1393	43°C
+T87	Device 1394 1415	water bath/heat block
+R32	Setting Arg1:T87 Arg2:T86	
+T88	Time 1429 1445	5 min before use
+R33	Setting Arg1:E25 Arg2:T88	
+T26	Device 1618 1627	plug cast
+T89	Temperature 1631 1634	ice
+T90	Time 1648 1653	45min
+R34	Setting Arg1:E27 Arg2:T89	
+R35	Setting Arg1:E27 Arg2:T90	
+T28	Reagent 1875 1887	Proteinase K
+T91	Reagent 1892 1903	Wash Buffer
+T92	Method 0 23	Megabase DNA Extraction
+T93	Reagent 29 41	Animal Blood
+T94	Action 185 191	ensure
+E24	Action:T94 Using:T95
+T95	Method 194 221	homogenous WBC distribution
+T96	Action 124 127	Mix
+E26	Action:T96 Acts-on:T35
+T97	Amount 300 309	3 volumes
+R36	Coreference-Link Arg1:T43 Arg2:T97	
+T98	Action 316 319	mix
+E28	Action:T98 
+T99	Modifier 323 329	gently
+R37	Mod-Link Arg1:E30 Arg2:T99	
+T100	Modifier 381 387	Gently
+T101	Action 388 391	mix
+E32	Action:T101 
+R38	Mod-Link Arg1:E32 Arg2:T100	
+T102	Modifier 405 413	at least
+T103	Numerical 414 418	once
+T104	Modifier 419 436	during incubation
+R39	Mod-Link Arg1:T103 Arg2:T102	
+R40	Mod-Link Arg1:E5 Arg2:T104	
+T105	Modifier 470 479	carefully
+R41	Mod-Link Arg1:E9 Arg2:T105	
+T106	Modifier 502 533	while not disturbing the pellet
+R42	Mod-Link Arg1:E9 Arg2:T106	
+T107	Amount 569 583	1 blood volume
+R43	Coreference-Link Arg1:T53 Arg2:T107	
+T108	Amount 610 619	3 volumes
+R44	Coreference-Link Arg1:T55 Arg2:T108	
+T109	Action 632 635	mix
+E33	Action:T109 
+T110	Modifier 728 737	carefully
+R45	Mod-Link Arg1:E15 Arg2:T110	
+T111	Modifier 760 791	while not disturbing the pellet
+R46	Mod-Link Arg1:E15 Arg2:T111	
+T112	Action 793 799	Remove
+E34	Action:T112 Acts-on:T114
+T113	Modifier 804 816	last drop of
+T114	Reagent 817 823	liquid
+R47	Mod-Link Arg1:T114 Arg2:T113	
+T115	Device 935 957	Bio Rad plug lysis kit
+T116	Modifier 959 986	until homogenous suspension
+R48	Mod-Link Arg1:E17 Arg2:T116	
+T117	Numerical 1038 1041	400
+T118	Modifier 1008 1011	new
+R49	Mod-Link Arg1:T72 Arg2:T118	
+T119	Modifier 1077 1084	labeled
+T120	Numerical 1086 1089	200
+R50	Mod-Link Arg1:T74 Arg2:T119	
+R51	Setting Arg1:T119 Arg2:T120	
+T121	Modifier 1142 1148	gently
+R52	Mod-Link Arg1:E22 Arg2:T121	
+T122	Modifier 1158 1162	both
+R53	Mod-Link Arg1:T78 Arg2:T122	
+T123	Modifier 1176 1207	until ready to embed in agarose
+R54	Mod-Link Arg1:E23 Arg2:T123	
+T124	Action 1222 1226	Melt
+E35	Action:T124 Acts-on:T81
+T125	Device 1239 1250	Bio Rad kit
+T126	Modifier 1304 1338	until agarose is completely melted
+R55	Mod-Link Arg1:E31 Arg2:T126	
+T127	Modifier 1420 1428	at least
+R56	Mod-Link Arg1:T88 Arg2:T127	
+T128	Modifier 1447 1452	After
+T129	Time 1453 1458	5 min
+T130	Action 1460 1467	prepare
+E36	Action:T130 Acts-on:T131 Site:T134
+T131	Reagent 1470 1475	plugs
+T132	Numerical 1468 1469	5
+T133	Numerical 1481 1484	one
+T134	Location 1485 1489	tube
+T135	Action 1493 1503	performing
+E37	Action:T135 Using:T137
+T136	Modifier 1519 1526	rapidly
+T137	Method 1508 1518	next steps
+T138	Action 1530 1550	avoid solidification
+E38	Action:T138 Acts-on:T139
+T139	Reagent 1558 1578	cell-agarose mixture
+T140	Modifier 1579 1609	before pipeting into plug mold
+R57	Mod-Link Arg1:E38 Arg2:T140	
+R58	Mod-Link Arg1:E37 Arg2:T136	
+R59	Setting Arg1:E36 Arg2:T129	
+R60	Mod-Link Arg1:T129 Arg2:T128	
+R61	Measure Arg1:T131 Arg2:T132	
+R62	Measure Arg1:T134 Arg2:T133	
+T141	Modifier 1639 1647	at least
+R63	Mod-Link Arg1:T90 Arg2:T141	
+T142	Modifier 1657 1685	until agarose has solidified
+R64	Or Arg1:T90 Arg2:T142	
+T143	Modifier 1687 1700	Alternatively
+T144	Action 1706 1711	place
+E39	Action:T144 Acts-on:T145 Site:T147
+T145	Device 1712 1721	plug cast
+T146	Modifier 1725 1739	inverted metal
+T147	Device 1740 1759	microfuge ice block
+T148	Temperature 1760 1766	on ice
+T149	Time 1771 1776	45min
+T150	Action 1781 1786	avoid
+E40	Action:T150 Acts-on:T152 Site:T153
+T151	Modifier 1787 1804	potential contact
+T152	Reagent 1808 1815	agarose
+T153	Reagent 1821 1824	ice
+R65	Mod-Link Arg1:E40 Arg2:T151	
+R66	Mod-Link Arg1:T147 Arg2:T146	
+R67	Setting Arg1:E39 Arg2:T148	
+R68	Setting Arg1:E39 Arg2:T149	
+R69	Mod-Link Arg1:E39 Arg2:T143	
+T154	Reagent 1837 1847	hemoglobin
+T155	Reagent 1852 1869	cellular material

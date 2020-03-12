@@ -1,0 +1,200 @@
+T1	Action 38 46	Dissolve
+E1	Action:T1 Acts-on:T2
+T2	Reagent 52 56	salt
+T3	Modifier 57 67	completely
+R1	Mod-Link Arg1:E1 Arg2:T3
+T4	Action 75 81	adding
+E2	Action:T4 Acts-on:T5
+T5	Mention 86 94	next one
+R2	Coreference-Link Arg1:T5 Arg2:T2
+T6	Action 96 104	Dispense
+E3	Action:T6 Site:T9
+T7	Amount 110 116	500 ml
+T8	Modifier 117 128	acid-washed
+T9	Location 129 150	polycarbonate bottles
+R4	Mod-Link Arg1:T9 Arg2:T8
+T10	Action 152 161	Autoclave
+E4	Action:T10 
+T11	Time 162 168	30 min
+R5	Setting Arg1:E4 Arg2:T11
+T12	Action 170 172	pH
+E5	Action:T12 Acts-on:T13 Using:T16
+T13	Reagent 173 180	NaH2PO4
+T14	Numerical 184 187	7.5
+T15	Concentration 194 196	1M
+T16	Reagent 197 201	NaOH
+R6	Measure Arg1:T16 Arg2:T15
+R7	Setting Arg1:E5 Arg2:T14
+T17	Reagent 225 233	solution
+T18	Action 203 219	Filter sterilize
+E6	Action:T18 Acts-on:T17 Using:T20 Site:T22
+T20	Device 247 261	syringe filter
+T21	Amount 280 284	50ml
+T22	Location 285 301	centrifuge tubes
+T23	Modifier 305 316	acid washed
+T24	Modifier 321 328	sterile
+T25	Location 329 350	polycarbonate bottles
+R8	Mod-Link Arg1:T25 Arg2:T24
+R9	Mod-Link Arg1:T25 Arg2:T23
+T19	Size 240 246	0.2 µm
+R12	Measure Arg1:T20 Arg2:T19
+T27	Action 352 357	Store
+E7	Action:T27 
+T28	Temperature 361 364	4°C
+R13	Setting Arg1:E7 Arg2:T28
+T29	Action 366 368	pH
+E8	Action:T29 Acts-on:T30 Using:T33
+T30	Reagent 369 374	HEPES
+T31	Numerical 378 381	7.5
+T32	Concentration 388 390	1M
+T33	Reagent 391 395	NaOH
+R14	Setting Arg1:E8 Arg2:T31
+R15	Measure Arg1:T33 Arg2:T32
+T34	Action 397 413	Filter sterilize
+E9	Action:T34 Acts-on:T35 Using:T38 Site:T44
+T35	Reagent 419 427	solution
+T36	Size 434 440	0.2 µm
+T38	Device 441 455	syringe filter
+T39	Modifier 267 270	new
+T40	Modifier 272 279	sterile
+R16	Mod-Link Arg1:T22 Arg2:T40
+R17	Mod-Link Arg1:T22 Arg2:T39
+T41	Modifier 461 464	new
+T42	Modifier 466 473	sterile
+T43	Amount 474 485	15 or 50 ml
+T44	Location 486 502	centrifuge tubes
+T45	Modifier 506 517	acid washed
+T46	Modifier 522 529	sterile
+T47	Location 530 551	polycarbonate bottles
+R18	Mod-Link Arg1:T47 Arg2:T46
+R19	Mod-Link Arg1:T47 Arg2:T45
+R21	Mod-Link Arg1:T44 Arg2:T42
+R22	Mod-Link Arg1:T44 Arg2:T41
+R24	Measure Arg1:T38 Arg2:T36
+T48	Action 553 558	Store
+E10	Action:T48 
+T49	Temperature 562 565	4°C
+R25	Setting Arg1:E10 Arg2:T49
+T50	Action 567 575	Dispense
+E11	Action:T50 Acts-on:T52 Acts-on2:T54 Site:T56 Product:T58
+T51	Amount 576 580	5 ml
+T52	Reagent 584 590	NaHCO3
+T53	Amount 595 601	0.5 ml
+T54	Reagent 602 607	HEPES
+T55	Amount 612 618	500 ml
+T56	Location 619 625	bottle
+T57	Reagent 629 651	Turk's Island Salt Mix
+R26	Meronym Arg1:T57 Arg2:T56
+T58	Reagent 667 679	final medium
+T59	Action 681 690	Weigh out
+E12	Action:T59 Acts-on:T61 Using:T62
+T60	Amount 691 699	0.2175 g
+T61	Reagent 700 712	Na2EDTA·2H2O
+T62	Device 719 734	dust free paper
+T63	Action 736 744	Transfer
+E13	Action:T63 Site:T66
+T64	Modifier 748 759	acid washed
+T65	Amount 760 765	50 ml
+T66	Location 766 782	volumetric flask
+R32	Mod-Link Arg1:T66 Arg2:T64
+T67	Amount 795 800	40 ml
+T68	Reagent 801 809	MQ-water
+R34	Meronym Arg1:T68 Arg2:T66
+T69	Action 811 819	Dissolve
+E14	Action:T69 Acts-on:T70
+T70	Reagent 820 824	EDTA
+T72	Numerical 844 857	several times
+T71	Action 828 837	inverting
+E15	Action:T71 Acts-on:T73 Count:T72
+T73	Location 838 843	flask
+T74	Action 859 868	Weigh out
+E16	Action:T74 Acts-on:T76 Using:T77
+T75	Amount 869 875	0.16 g
+T76	Reagent 876 886	FeCl3·6H2O
+T77	Device 893 908	dust free paper
+T78	Action 910 918	Dissolve
+E17	Action:T78 Acts-on:T79 Site:T80
+T79	Reagent 919 932	iron chloride
+T80	Location 943 959	volumetric flask
+T81	Action 963 972	inverting
+E18	Action:T81 Count:T82
+T82	Numerical 973 986	several times
+T83	Action 1001 1004	add
+E19	Action:T83 
+T84	Modifier 988 1000	Individually
+R36	Mod-Link Arg1:E19 Arg2:T84
+T85	Action 1009 1017	dissolve
+E20	Action:T85 Acts-on:T87 Acts-on2:T88 Acts-on3:T90 Acts-on4:T91 Acts-on5:T92
+T86	Amount 1018 1023	50 µl
+T87	Reagent 1036 1041	ZnSO4
+T88	Reagent 1043 1048	CoCl2
+T89	Reagent 1050 1055	MnCl2
+T90	Reagent 1057 1064	Na2MoO4
+T91	Reagent 1066 1072	NaSeO3
+T92	Reagent 1078 1083	NiCl2
+T93	Action 1112 1118	Adjust
+E21	Action:T93 Measure-Type-Link:T95 Using:T96
+T94	Amount 1129 1134	50 ml
+T95	Measure-Type 1119 1125	volume
+T96	Reagent 1145 1153	MQ-water
+T97	Action 1155 1161	Filter
+E22	Action:T97 Using:T100 Site:T103
+T100	Device 1179 1193	syringe filter
+T101	Modifier 1199 1206	sterile
+T102	Modifier 1208 1219	acid washed
+T103	Location 1220 1229	container
+T104	Device 1233 1250	laminar flow hood
+R45	Mod-Link Arg1:T103 Arg2:T101
+R47	Mod-Link Arg1:T103 Arg2:T102
+T105	Action 1252 1257	Store
+E23	Action:T105 Acts-on:T107
+T106	Modifier 1258 1265	sterile
+T107	Reagent 1266 1271	stock
+T108	Temperature 1275 1278	4°C
+R46	Mod-Link Arg1:T107 Arg2:T106
+R48	Setting Arg1:E23 Arg2:T108
+T109	Action 1280 1288	Dispense
+E24	Action:T109 Acts-on:T111 Site:T113 Product:T115
+T110	Amount 1289 1293	5 µl
+T111	Reagent 1294 1315	Stock Trace Metal Mix
+T112	Amount 1319 1325	500 ml
+T113	Location 1326 1332	bottle
+T114	Reagent 1336 1358	Turk's Island Salt Mix
+T115	Reagent 1374 1386	final medium
+R51	Meronym Arg1:T114 Arg2:T113
+R3	Measure Arg1:T9 Arg2:T7	
+R10	Measure Arg1:T22 Arg2:T21	
+R20	Measure Arg1:T44 Arg2:T43	
+R28	Measure Arg1:T56 Arg2:T55	
+R27	Measure Arg1:T54 Arg2:T53	
+R29	Measure Arg1:T52 Arg2:T51	
+R30	Measure Arg1:T61 Arg2:T60	
+R31	Measure Arg1:T66 Arg2:T65	
+R33	Measure Arg1:T68 Arg2:T67	
+R35	Measure Arg1:T76 Arg2:T75	
+R37	Measure Arg1:T87 Arg2:T86	
+R38	Measure Arg1:T88 Arg2:T86	
+R39	Measure Arg1:T89 Arg2:T86	
+R40	Measure Arg1:T90 Arg2:T86	
+R41	Measure Arg1:T91 Arg2:T86	
+R42	Measure Arg1:T92 Arg2:T86	
+R52	Setting Arg1:E21 Arg2:T94	
+R49	Measure Arg1:T111 Arg2:T110	
+R50	Measure Arg1:T113 Arg2:T112	
+T116	Modifier 47 51	each
+R53	Mod-Link Arg1:T2 Arg2:T116	
+T26	Modifier 220 224	each
+R11	Mod-Link Arg1:T17 Arg2:T26	
+R23	Or Arg1:T22 Arg2:T25	
+T37	Modifier 414 418	each
+R43	Mod-Link Arg1:T35 Arg2:T37	
+R54	Or Arg1:T44 Arg2:T47	
+T117	Modifier 938 942	same
+R55	Mod-Link Arg1:T80 Arg2:T117	
+T98	Size 1172 1178	0.2 µm
+R44	Measure Arg1:T100 Arg2:T98	
+R56	Meronym Arg1:T103 Arg2:T104	
+T99	Reagent 0 37	Artificial Seawater Based AMP1 Medium
+T118	Action 657 666	preparing
+E25	Action:T118 Acts-on:T58
+T119	Reagent 1084 1110	Primary Trace Metal Stocks

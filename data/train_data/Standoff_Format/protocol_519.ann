@@ -1,0 +1,291 @@
+T1	Action 35 39	Grow
+E1	Action:T1 Site:T32 Product:T31
+T2	Action 385 390	place
+E2	Action:T2 Acts-on:T38 Site:T40
+T3	Action 526 532	Remove
+E3	Action:T3 Acts-on:T41 Site:T42
+T4	Action 556 566	centrifuge
+E4	Action:T4 
+T5	Action 616 622	decant
+E5	Action:T5 Acts-on:T45
+T6	Action 630 639	Resuspend
+E6	Action:T6 Acts-on:T46 Using:T49
+T7	Action 666 672	Vortex
+E7	Action:T7 Acts-on:T50
+T8	Action 692 702	incubating
+E8	Action:T8 Acts-on:T50
+T9	Action 731 741	Centrifuge
+E9	Action:T9 
+T10	Action 772 780	pour off
+E10	Action:T10 Acts-on:T57
+T11	Action 787 796	Resuspend
+E11	Action:T11 Acts-on:T58 Using:T60
+T12	Action 801 806	rinse
+E12	Action:T12 Acts-on:T58 Count:T59 Using:T60
+T13	Action 850 860	centrifuge
+E13	Action:T13 
+T14	Action 895 904	Resuspend
+E14	Action:T14 Acts-on:T64 Using:T66
+T15	Action 943 951	Sonicate
+E15	Action:T15 
+T16	Action 969 976	Prepare
+E16	Action:T16 Count:T71 Product:T73 Site:T75
+T17	Action 1030 1033	Add
+E17	Action:T17 Acts-on:T77 Site:T81
+T18	Action 1096 1101	Apply
+E18	Action:T18 Acts-on:T83 Site:T84
+T19	Action 1175 1178	add
+E19	Action:T19 Acts-on:T88 Site:T91 Using:T89
+T20	Action 1244 1248	Load
+E20	Action:T20 Acts-on:T92 Site:T93 Using:T96
+T21	Action 1380 1390	Centrifuge
+E21	Action:T21 Site:T97 Using:T100
+T22	Action 1457 1463	ecover
+E22	Action:T22 Acts-on:T102 Site:T103 Using:T104
+T23	Action 1524 1527	Add
+E23	Action:T23 Site:T105
+T24	Action 1557 1561	Wash
+E24	Action:T24 Count:T108 Using:T110
+T25	Action 1625 1628	Add
+E25	Action:T25 Acts-on:T111
+T26	Action 1637 1647	Centrifuge
+E26	Action:T26 Site:T112 Using:T116
+T27	Action 1715 1722	Discard
+E27	Action:T27 Acts-on:T117
+T28	Action 1771 1780	resuspend
+E28	Action:T28 Acts-on:T119 Using:T118 Using2:T122
+T29	Action 2016 2025	visualize
+E29	Action:T29 Using:T124
+T31	Reagent 40 54	diatom culture
+T32	Reagent 58 83	autoclaved seawater media
+T33	Action 269 275	filter
+E31	Action:T33 Acts-on:T34 Using:T37
+T34	Reagent 276 283	culture
+T35	Size 294 298	2 μm
+T36	Size 299 304	47 mM
+T37	Device 305 311	filter
+R1	Setting Arg1:T37 Arg2:T36	
+R2	Setting Arg1:T37 Arg2:T35	
+T38	Device 391 398	filters
+T39	Amount 402 407	50 ml
+T40	Reagent 411 416	media
+R3	Measure Arg1:T40 Arg2:T39	
+T41	Device 533 540	filters
+T42	Location 546 551	tubes
+T43	Speed 569 577	1200 x g
+T44	Time 582 591	5 minutes
+R4	Setting Arg1:E4 Arg2:T43	
+R5	Setting Arg1:E4 Arg2:T44	
+T45	Reagent 623 628	media
+T46	Reagent 640 646	pellet
+T47	Amount 650 654	~7ml
+T48	Concentration 655 658	10M
+T49	Reagent 659 663	NH4F
+R6	Measure Arg1:T49 Arg2:T48	
+R7	Measure Arg1:T49 Arg2:T47	
+T50	Location 703 707	tube
+T51	Temperature 711 714	ice
+T52	Time 719 729	10 minutes
+R8	Setting Arg1:E8 Arg2:T51	
+R9	Setting Arg1:E8 Arg2:T52	
+T53	Generic-Measure 673 685	periodically
+R10	Setting Arg1:E7 Arg2:T53	
+T54	Speed 743 751	1200 x g
+T55	Temperature 754 757	4°C
+T56	Time 762 767	5 min
+T57	Reagent 781 785	NH4F
+R11	Setting Arg1:E9 Arg2:T54	
+R12	Setting Arg1:E9 Arg2:T55	
+R13	Setting Arg1:E9 Arg2:T56	
+T58	Reagent 807 813	pellet
+T59	Numerical 814 816	3x
+T60	Reagent 822 838	isolation buffer
+T61	Amount 840 847	5-7 mls
+R14	Measure Arg1:T60 Arg2:T61	
+T62	Speed 862 870	1200 x g
+T63	Temperature 872 875	4°C
+R15	Setting Arg1:E13 Arg2:T62	
+R16	Setting Arg1:E13 Arg2:T63	
+T64	Reagent 905 911	pellet
+T65	Amount 915 919	1 ml
+T66	Reagent 925 941	isolation buffer
+R17	Measure Arg1:T66 Arg2:T65	
+T67	Temperature 920 924	cold
+R18	Setting Arg1:E14 Arg2:T67	
+T68	Numerical 954 956	10
+T69	Measure-Type 956 957	W
+R19	Of-Type Arg1:T68 Arg2:T69	
+R20	Setting Arg1:E15 Arg2:T68	
+T70	Time 962 966	10 s
+R21	Setting Arg1:E15 Arg2:T70	
+T71	Numerical 977 978	2
+T72	Generic-Measure 979 987	two-step
+T73	Reagent 988 1005	Percoll gradients
+T74	Size 1010 1015	15 ml
+T75	Location 1016 1027	COREX tubes
+R22	Measure Arg1:T75 Arg2:T74	
+R24	Measure Arg1:T73 Arg2:T72	
+T76	Amount 1034 1038	2 ml
+T77	Reagent 1039 1060	Bottom Layer Solution
+T78	Concentration 1062 1065	80%
+T79	Reagent 1066 1073	Percoll
+R23	Measure Arg1:T79 Arg2:T78	
+R25	Meronym Arg1:T79 Arg2:T77	
+R26	Measure Arg1:T77 Arg2:T76	
+T80	Size 1078 1083	15 ml
+T81	Location 1084 1094	corex tube
+R27	Measure Arg1:T81 Arg2:T80	
+T82	Amount 1102 1107	10 μl
+T83	Reagent 1111 1126	gel loading dye
+T84	Reagent 1131 1149	Top Layer Solution
+T85	Reagent 1155 1162	Percoll
+T86	Concentration 1151 1154	40%
+R28	Measure Arg1:T85 Arg2:T86	
+R29	Measure Arg1:T83 Arg2:T82	
+T87	Amount 1179 1183	4 ml
+T88	Reagent 1184 1193	Top Layer
+T89	Device 1227 1242	Pasteur Pipette
+T90	Concentration 1201 1204	80%
+T91	Reagent 1205 1218	Percoll layer
+R30	Measure Arg1:T91 Arg2:T90	
+R31	Measure Arg1:T88 Arg2:T87	
+R32	Meronym Arg1:T85 Arg2:T84	
+T92	Reagent 1249 1259	homogenate
+T93	Location 1318 1321	top
+T94	Generic-Measure 1330 1338	two-step
+T95	Reagent 1339 1355	Percoll gradient
+R33	Measure Arg1:T95 Arg2:T94	
+R34	Meronym Arg1:T93 Arg2:T95	
+T96	Device 1363 1378	Pasteur pipette
+T97	Device 1394 1409	swing-out rotor
+T98	Speed 1413 1421	1500 x g
+T99	Time 1426 1437	ten minutes
+T100	Method 1438 1447	brake off
+T101	Temperature 1450 1453	4°C
+R35	Setting Arg1:E21 Arg2:T98	
+R36	Setting Arg1:E21 Arg2:T99	
+R37	Setting Arg1:E21 Arg2:T101	
+T102	Reagent 1464 1483	intact chloroplasts
+T103	Location 1485 1497	bottom layer
+T104	Device 1507 1522	Pasteur Pipette
+T105	Location 1545 1555	corex tube
+T106	Modifier 1531 1538	sterile
+R38	Mod-Link Arg1:T105 Arg2:T106	
+T107	Size 1539 1544	15 ml
+R39	Measure Arg1:T105 Arg2:T107	
+T108	Numerical 1562 1567	twice
+T109	Temperature 1573 1577	cold
+T110	Reagent 1578 1594	isolation buffer
+R40	Setting Arg1:E24 Arg2:T109	
+T111	Reagent 1629 1635	buffer
+T112	Device 1653 1668	swing out rotor
+T113	Speed 1672 1680	1000 x g
+T114	Temperature 1682 1685	4°C
+T115	Time 1690 1702	five minutes
+T116	Method 1704 1712	brake on
+R41	Setting Arg1:E26 Arg2:T113	
+R42	Setting Arg1:E26 Arg2:T114	
+R43	Setting Arg1:E26 Arg2:T115	
+T117	Reagent 1723 1734	Supernatant
+T118	Device 1742 1757	soft paintbrush
+T119	Reagent 1781 1798	pelleted plastids
+T120	Generic-Measure 1804 1816	small amount
+T121	Temperature 1820 1824	cold
+R44	Setting Arg1:E28 Arg2:T121	
+T122	Reagent 1825 1841	isolation buffer
+R45	Measure Arg1:T122 Arg2:T120	
+T123	Reagent 1856 1875	preservation buffer
+R46	Or Arg1:T122 Arg2:T123	
+T124	Method 1987 2012	phase contrast microscopy
+T30	Method 0 34	Diatom Chloroplast Isolation Steps
+T125	Generic-Measure 90 93	f/2
+T126	Reagent 94 99	media
+R47	Measure Arg1:T126 Arg2:T125	
+R48	Meronym Arg1:T126 Arg2:T32	
+T127	Reagent 131 136	cells
+T129	Generic-Measure 162 188	density of ~1x106 cells/mL
+R50	Measure Arg1:T127 Arg2:T129	
+T128	Action 137 142	grown
+E30	Action:T128 Using:T131 Acts-on:T127
+T130	Generic-Measure 146 149	f/2
+T131	Reagent 150 156	medium
+R49	Measure Arg1:T131 Arg2:T130	
+T132	Method 191 203	optimization
+T133	Modifier 211 220	necessary
+T134	Reagent 225 230	cells
+T135	Action 231 240	achieving
+E32	Action:T135 Acts-on:T134 Using:T132
+T136	Modifier 243 261	lower cell density
+R51	Mod-Link Arg1:E32 Arg2:T136	
+T137	Modifier 262 268	Gently
+R52	Mod-Link Arg1:E31 Arg2:T137	
+T138	Modifier 313 325	Periodically
+T139	Method 330 340	filtration
+T140	Action 341 346	slows
+E33	Action:T140 Using:T139
+T141	Modifier 347 383	due to growing biomass on the filter
+R53	Mod-Link Arg1:E33 Arg2:T141	
+R54	Mod-Link Arg1:E2 Arg2:T138	
+T142	Modifier 417 432	used for growth
+T143	Modifier 436 442	gently
+T144	Action 443 446	was
+E34	Action:T144 Acts-on:T145 Site:T146
+T145	Reagent 447 452	cells
+T146	Device 458 464	filter
+R55	Mod-Link Arg1:E34 Arg2:T143	
+T147	Action 466 472	Repeat
+E35	Action:T147 Acts-on:T150 Acts-on2:T152
+T148	Modifier 473 478	until
+T149	Modifier 479 482	all
+T150	Reagent 483 490	culture
+T151	Modifier 494 502	filtered
+T152	Reagent 507 512	cells
+T153	Modifier 513 524	resuspended
+R56	Mod-Link Arg1:T152 Arg2:T153	
+R57	Mod-Link Arg1:T150 Arg2:T151	
+R58	Mod-Link Arg1:T152 Arg2:T149	
+R59	Mod-Link Arg1:T150 Arg2:T149	
+R60	Mod-Link Arg1:T150 Arg2:T148	
+R61	Mod-Link Arg1:T152 Arg2:T148	
+T154	Action 595 601	pellet
+E36	Action:T154 Acts-on:T155
+T155	Reagent 602 607	cells
+T156	Modifier 609 615	Gently
+R62	Mod-Link Arg1:E5 Arg2:T156	
+T157	Modifier 876 893	in between rinses
+R63	Mod-Link Arg1:E13 Arg2:T157	
+T158	Modifier 1168 1174	gently
+R64	Mod-Link Arg1:E19 Arg2:T158	
+T159	Method 1273 1297	Silica Frustrule Removal
+T160	Modifier 1299 1308	carefully
+R65	Mod-Link Arg1:E20 Arg2:T160	
+T161	Modifier 1596 1613	without added BSA
+R66	Mod-Link Arg1:T110 Arg2:T161	
+T162	Modifier 1761 1770	carefully
+R67	Mod-Link Arg1:E28 Arg2:T162	
+T163	Modifier 1846 1855	alternate
+T164	Modifier 1876 1890	of your choice
+R68	Mod-Link Arg1:T123 Arg2:T163	
+R69	Mod-Link Arg1:T123 Arg2:T164	
+T165	Modifier 1895 1899	soft
+T166	Device 1900 1910	paintbrush
+T167	Modifier 1911 1923	is specified
+R70	Mod-Link Arg1:T166 Arg2:T165	
+R71	Mod-Link Arg1:T166 Arg2:T167	
+T168	Action 1936 1950	do not disrupt
+E37	Action:T168 Using:T166 Acts-on:T170
+T169	Modifier 1955 1970	fragile exposed
+T170	Reagent 1971 1979	plastids
+R72	Mod-Link Arg1:T170 Arg2:T169	
+T171	Action 2030 2037	confirm
+E38	Action:T171 Using:T124
+T172	Modifier 2038 2048	successful
+T173	Method 2049 2082	extraction of intact chloroplasts
+T174	Method 2084 2102	Plastid enrichment
+T175	Action 2110 2118	followed
+E39	Action:T175 Using:T176 Using2:T177
+T176	Method 2122 2151	subsequent protein extraction
+T177	Method 2156 2175	gel electrophoresis
+T178	Reagent 2179 2192	SDS PAGE gels
+T179	Method 2197 2227	relative enrichment of RuBisCO
+T180	Reagent 2235 2251	plastid fraction

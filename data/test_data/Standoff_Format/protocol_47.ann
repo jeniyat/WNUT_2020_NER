@@ -1,0 +1,50 @@
+T1	Action 176 183	Prepare
+E1	Action:T1 Acts-on:T3
+T2	Concentration 184 186	2x
+T3	Reagent 187 190	TSS
+T4	Action 208 217	autoclave
+E2	Action:T4 Acts-on:T3
+T5	Action 219 222	Add
+E3	Action:T5 Acts-on:T7
+T6	Modifier 223 230	sterile
+T7	Reagent 231 235	DMSO
+R2	Mod-Link Arg1:T7 Arg2:T6
+T8	Action 255 261	Divide
+E4	Action:T8 Site:T10
+T9	Amount 265 270	10 ml
+T10	Location 271 279	aliquots
+T11	Action 284 289	store
+E5	Action:T11 
+T12	Temperature 293 297	4 °C
+R4	Setting Arg1:E5 Arg2:T12
+R1	Measure Arg1:T3 Arg2:T2	
+R3	Measure Arg1:T10 Arg2:T9	
+T13	Method 0 35	Transformation and Storage Solution
+T14	Method 37 40	TSS
+T15	Reagent 199 203	DMSO
+T16	Action 242 253	autoclaving
+E6	Action:T16 
+T17	Measure-Type 42 56	ChemicalVolume
+T18	Measure-Type 57 72	MassFinal Conc.
+T19	Generic-Measure 72 80	PEG 8000
+T20	Generic-Measure 84 94	PEG 335020
+R5	Or Arg1:T19 Arg2:T20	
+T21	Concentration 96 99	20%
+T22	Reagent 105 109	DMSO
+T23	Amount 109 114	10 ml
+T24	Concentration 114 117	10%
+T27	Amount 135 140	.03 g
+T28	Concentration 140 146	100 mM
+T29	Reagent 146 155	LB Medium
+T30	Action 155 158	add
+E7	Action:T30 
+T31	Amount 159 165	100 ml
+T32	pH 167 173	pH 6.5
+R6	Measure Arg1:T22 Arg2:T21	
+T25	Reagent 123 135	MgCl2 * H2O2
+R7	Measure Arg1:T25 Arg2:T24	
+R8	Measure Arg1:T25 Arg2:T23	
+R9	Measure Arg1:T29 Arg2:T27	
+R10	Measure Arg1:T29 Arg2:T28	
+R11	Setting Arg1:E7 Arg2:T31	
+R12	Setting Arg1:E7 Arg2:T32	

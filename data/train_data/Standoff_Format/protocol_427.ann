@@ -1,0 +1,192 @@
+T1	Action 45 55	Centrifuge
+E1	Action:T1 Acts-on:T24
+T2	Action 98 104	decant
+E2	Action:T2 Acts-on:T29
+T4	Action 133 141	Dissolve
+E4	Action:T4 Acts-on:T31 Using:T33
+T6	Action 218 228	Centrifuge
+E6	Action:T6 Acts-on:T36
+T8	Action 325 334	Resuspend
+E8	Action:T8 Acts-on:T43 Site:T46
+T9	Action 389 393	pool
+E9	Action:T9 Acts-on:T47
+T10	Action 417 423	Repeat
+E10	Action:T10 Using:T49
+T11	Action 476 485	Resuspend
+E11	Action:T11 Acts-on:T53 Site:T55
+T13	Action 597 608	Concentrate
+E13	Action:T13 Acts-on:T61 Using:T65
+T14	Action 696 703	Prepare
+E14	Action:T14 Product:T66 Using:T67
+T15	Action 828 832	pour
+E15	Action:T15 Using:T68 Using2:T69 Using3:T70 Acts-on:T71 Site:T73
+T17	Action 980 984	Mark
+E17	Action:T17 Acts-on:T76 Using:T78
+T18	Action 1051 1058	overlay
+E18	Action:T18 Acts-on:T80 Using:T81
+T19	Action 1103 1110	Overlay
+E19	Action:T19 Acts-on:T82 Site:T84
+T20	Action 1171 1178	Balance
+E20	Action:T20 Acts-on:T83
+T21	Action 1227 1231	Load
+E21	Action:T21 Acts-on:T90 Site:T91
+T22	Action 1253 1268	ultracentrifuge
+E22	Action:T22 Using:T91
+T23	Action 1397 1404	extract
+E23	Action:T23 Using:T93 Acts-on:T96 Site:T97
+T25	Action 188 199	precipitate
+E25	Action:T25 
+T5	Action 279 285	decant
+E5	Action:T5 Acts-on:T40
+T7	Action 566 578	disaggregate
+E7	Action:T7 Acts-on:T60
+T12	Action 945 950	blend
+E12	Action:T12 
+T24	Reagent 60 66	lysate
+T26	Speed 70 75	4000g
+T27	Time 80 86	30 min
+R1	Setting Arg1:E1 Arg2:T26	
+R2	Setting Arg1:E1 Arg2:T27	
+T28	Modifier 88 97	Carefully
+T29	Reagent 120 131	supernatant
+T3	Action 109 115	retain
+E3	Action:T3 Acts-on:T29
+R3	Mod-Link Arg1:E2 Arg2:T28	
+R4	Mod-Link Arg1:E3 Arg2:T28	
+T30	Concentration 142 144	8%
+T31	Reagent 145 148	PEG
+T32	Modifier 158 167	clarified
+T33	Reagent 168 174	lysate
+T34	Time 200 209	overnight
+T35	Temperature 213 216	4°C
+R5	Measure Arg1:T31 Arg2:T30	
+R6	Mod-Link Arg1:T33 Arg2:T32	
+R7	Setting Arg1:E25 Arg2:T34	
+R8	Setting Arg1:E25 Arg2:T35	
+T36	Reagent 233 245	PEG solution
+T37	Speed 249 256	10,000g
+T38	Time 261 267	20 min
+R9	Setting Arg1:E6 Arg2:T37	
+R10	Setting Arg1:E6 Arg2:T38	
+T39	Modifier 269 278	Carefully
+T40	Reagent 290 301	supernatant
+T41	Action 303 312	retaining
+E24	Action:T41 Acts-on:T42
+T42	Reagent 317 323	pellet
+R11	Mod-Link Arg1:E5 Arg2:T39	
+T43	Reagent 335 341	pellet
+T44	Amount 347 359	small volume
+T45	Modifier 363 371	residual
+T46	Reagent 372 384	PEG solution
+T47	Reagent 398 415	pelleted material
+R12	Mod-Link Arg1:T46 Arg2:T45	
+R13	Measure Arg1:T46 Arg2:T44	
+T48	Modifier 394 397	all
+R14	Mod-Link Arg1:T47 Arg2:T48	
+T49	Method 424 433	steps 5-6
+T50	Action 447 458	concentrate
+E26	Action:T50 Acts-on:T51
+T51	Reagent 459 464	virus
+T52	Amount 470 474	1 mL
+R15	Setting Arg1:E26 Arg2:T52	
+T53	Reagent 486 491	virus
+T54	Amount 495 508	10-50 volumes
+T55	Reagent 512 525	culture media
+T56	Action 529 535	dilute
+E27	Action:T56 Acts-on:T57
+T57	Reagent 536 539	PEG
+T58	Time 579 588	overnight
+T59	Temperature 592 595	4°C
+R16	Measure Arg1:T55 Arg2:T54	
+R17	Setting Arg1:E7 Arg2:T58	
+R18	Setting Arg1:E7 Arg2:T59	
+T60	Reagent 550 562	virus pellet
+T61	Reagent 609 615	sample
+T62	Amount 620 624	1 mL
+T63	Generic-Measure 635 641	30 kDa
+T64	Modifier 649 659	disposable
+T65	Device 660 694	centrifugal ultrafiltration device
+R19	Mod-Link Arg1:T65 Arg2:T64	
+R20	Setting Arg1:T65 Arg2:T63	
+R21	Setting Arg1:E13 Arg2:T62	
+T66	Reagent 704 722	OptiPrep solutions
+T67	Reagent 729 742	culture media
+T68	Method 769 792	underlayering technique
+T69	Device 798 805	syringe
+T70	Device 810 826	pipetting needle
+T71	Reagent 833 849	4-step gradients
+T72	Modifier 855 865	open-toped
+T73	Location 866 887	ultracentrifuge tubes
+R22	Mod-Link Arg1:T73 Arg2:T72	
+T74	Time 955 958	2 h
+T75	Temperature 962 978	room temperature
+R23	Setting Arg1:E12 Arg2:T74	
+R24	Setting Arg1:E12 Arg2:T75	
+T76	Location 989 992	top
+T77	Reagent 1000 1009	gradients
+T78	Device 1017 1035	fine-tipped marker
+T79	Modifier 1041 1050	carefully
+T80	Reagent 1059 1076	virus concentrate
+T81	Device 1085 1101	transfer pipette
+R25	Meronym Arg1:T76 Arg2:T77	
+R26	Mod-Link Arg1:E18 Arg2:T79	
+T82	Reagent 1111 1124	culture media
+T84	Reagent 1128 1145	balance gradients
+T85	Action 1149 1155	create
+E29	Action:T85 Acts-on:T86
+T86	Location 1156 1169	balance tubes
+T83	Location 1183 1188	tubes
+T87	Action 1192 1198	adding
+E28	Action:T87 Acts-on:T88 Site:T89
+T88	Reagent 1199 1204	media
+T89	Location 1208 1225	underweight tubes
+T90	Location 1232 1237	tubes
+T91	Device 1243 1248	rotor
+T92	Speed 1272 1297	maximum permissible speed
+R27	Setting Arg1:E22 Arg2:T92	
+T93	Method 1346 1385	fraction collection apparatus/technique
+T94	Modifier 1387 1396	carefully
+T95	Modifier 1405 1413	purified
+T96	Reagent 1414 1431	viral concentrate
+T97	Location 1442 1446	tube
+R28	Mod-Link Arg1:T96 Arg2:T95	
+R29	Mod-Link Arg1:E23 Arg2:T94	
+T98	Modifier 1437 1441	each
+R30	Mod-Link Arg1:T97 Arg2:T98	
+T16	Method 0 12	Purification
+T99	Reagent 16 23	viruses
+T100	Reagent 29 44	culture lysates
+T101	Modifier 468 469	<
+R31	Mod-Link Arg1:T52 Arg2:T101	
+T102	Modifier 619 620	~
+R32	Mod-Link Arg1:T62 Arg2:T102	
+T103	Reagent 750 757	diluent
+T104	Reagent 920 928	solution
+T105	Modifier 908 919	least dense
+R33	Mod-Link Arg1:T104 Arg2:T105	
+T106	Reagent 1451 1456	bands
+T107	Modifier 1465 1472	visible
+R34	Mod-Link Arg1:T106 Arg2:T107	
+T108	Action 1497 1508	fractionate
+E16	Action:T108 Acts-on:T109
+T109	Reagent 1513 1521	gradient
+T110	Numerical 1527 1530	4 +
+T111	Reagent 1531 1540	fractions
+T112	Modifier 1589 1605	virus-containing
+T113	Reagent 1606 1614	fraction
+T114	Action 1576 1584	identify
+E30	Action:T114 Acts-on:T113 Using:T116
+T115	Measure-Type 1304 1323	density equilibrium
+T116	Method 1622 1625	TEM
+T117	Method 1627 1635	bioassay
+T118	Method 1637 1647	absorbance
+T119	Method 1659 1680	nucleic acid analysis
+T120	Method 1682 1708	epifluorescence microscopy
+T121	Method 1712 1726	flow cytometry
+T122	Generic-Measure 1651 1657	260 nm
+R35	Mod-Link Arg1:T113 Arg2:T112	
+R36	Or Arg1:T116 Arg2:T117	
+R37	Or Arg1:T117 Arg2:T118	
+R38	Or Arg1:T118 Arg2:T119	
+R39	Or Arg1:T119 Arg2:T120	
+R40	Or Arg1:T120 Arg2:T121	

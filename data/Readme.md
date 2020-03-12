@@ -1,6 +1,6 @@
 The conll format:
 =================================================
-In `Conlll_Format` directory, there are multiple `phase_*` directories.  Each `phase_*` directory contains 10 protocols in the conll format. Each `*.txt` file contains annotations for one protocol. Each line is in the following format:
+In  protocols are represented in the Conll format. In this format each line of the is in the following format:
 
 			<word>+"\t"+<NE>
 
@@ -9,9 +9,7 @@ The end of sentence is marked with an empty line.
 The standoff format:
 =================================================
 
-In `Standoff_Format` directory, there are multiple `phase_*` directories.  Each `phase_*` directory contains 10 protocols in the standoff format.
-
-Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
+In the standoff format Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
 
 Within the document, individual annotations are connected to specific spans of text through character offsets. For example, in a document beginning "Weigh 5.73 g of TCEP." the text "Weigh" is identified by the offset range 0..5. (All offsets all indexed from 0 and include the character at the start offset but exclude the character at the end offset.)
 

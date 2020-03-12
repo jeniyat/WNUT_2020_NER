@@ -1,0 +1,142 @@
+T1	Action 49 53	Thaw
+E1	Action:T1 Acts-on:T16
+T2	Action 146 149	Mix
+E2	Action:T2 
+T3	Action 171 178	pipette
+E3	Action:T3 Acts-on:T20 Site:T21
+T4	Action 229 232	Add
+E4	Action:T4 Acts-on:T25 Site:T26
+T5	Action 309 314	flick
+E5	Action:T5 Acts-on:T27 Count:T28
+T6	Action 371 376	Place
+E6	Action:T6 Acts-on:T29
+T7	Action 424 434	Heat shock
+E7	Action:T7 
+T8	Action 487 492	Place
+E8	Action:T8 
+T9	Action 527 534	Pipette
+E9	Action:T9 Acts-on:T38 Site:T39
+T10	Action 584 589	Place
+E10	Action:T10 
+T11	Action 657 661	Warm
+E11	Action:T11 Acts-on:T43
+T14	Action 798 804	Spread
+E14	Action:T14 Acts-on:T51 Site:T52
+T15	Action 857 865	Incubate
+E15	Action:T15 
+T16	Location 56 60	tube
+T17	Reagent 64 99	NEB 5-alpha Competent E. coli cells
+R1	Meronym Arg1:T17 Arg2:T16	
+T18	Temperature 103 106	ice
+R2	Setting Arg1:E1 Arg2:T18	
+T19	Amount 179 184	50 µl
+T20	Reagent 188 193	cells
+R3	Measure Arg1:T20 Arg2:T19	
+T21	Location 201 220	transformation tube
+T22	Temperature 224 227	ice
+R4	Setting Arg1:E3 Arg2:T22	
+T23	Amount 233 239	1-5 µl
+T24	Amount 251 262	1 pg-100 ng
+T25	Reagent 266 277	plasmid DNA
+R5	Measure Arg1:T25 Arg2:T24	
+R6	Measure Arg1:T25 Arg2:T23	
+T26	Reagent 285 297	cell mixture
+T27	Location 319 323	tube
+T28	Numerical 324 333	4-5 times
+T29	Reagent 381 388	mixture
+T30	Temperature 392 395	ice
+T31	Time 400 410	30 minutes
+R7	Setting Arg1:E6 Arg2:T30	
+R8	Setting Arg1:E6 Arg2:T31	
+T32	Temperature 446 450	42°C
+T33	Time 463 473	30 seconds
+R9	Setting Arg1:E7 Arg2:T32	
+R10	Setting Arg1:E7 Arg2:T33	
+T34	Temperature 496 499	ice
+T35	Time 504 513	5 minutes
+R11	Setting Arg1:E8 Arg2:T34	
+R12	Setting Arg1:E8 Arg2:T35	
+T36	Amount 535 541	950 µl
+T37	Temperature 545 561	room temperature
+T38	Reagent 562 565	SOC
+T39	Reagent 575 582	mixture
+R13	Measure Arg1:T38 Arg2:T36	
+R14	Setting Arg1:E9 Arg2:T37	
+T40	Temperature 593 597	37°C
+T41	Time 602 612	60 minutes
+T42	Speed 635 642	250 rpm
+R15	Setting Arg1:E10 Arg2:T40	
+R16	Setting Arg1:E10 Arg2:T41	
+R17	Setting Arg1:E10 Arg2:T42	
+T43	Reagent 662 678	selection plates
+T44	Temperature 682 686	37°C
+R18	Setting Arg1:E11 Arg2:T44	
+T12	Action 716 724	flicking
+E12	Action:T12 Acts-on:T47
+T46	Action 738 747	inverting
+E16	Action:T46 Acts-on:T47
+T47	Location 729 733	tube
+T13	Action 749 756	Perform
+E13	Action:T13 Using:T45 Using2:T49
+T45	Method 773 789	serial dilutions
+T48	Concentration 765 772	10-fold
+R19	Setting Arg1:E13 Arg2:T48	
+T49	Reagent 793 796	SOC
+T50	Amount 805 814	50-100 µl
+T51	Reagent 823 831	dilution
+R20	Measure Arg1:T51 Arg2:T50	
+T52	Location 839 854	selection plate
+T53	Time 866 875	overnight
+T54	Temperature 879 883	37°C
+R21	Setting Arg1:E15 Arg2:T53	
+R22	Setting Arg1:E15 Arg2:T54	
+T55	Action 419 422	mix
+E17	Action:T55 
+T56	Action 363 369	vortex
+E18	Action:T56 
+T57	Modifier 299 308	Carefully
+T58	Action 337 340	mix
+E19	Action:T58 Acts-on:T59 Acts-on2:T60
+T59	Reagent 341 346	cells
+T60	Reagent 351 354	DNA
+T61	Modifier 0 15	High Efficiency
+T62	Method 16 39	Transformation Protocol
+T63	Modifier 107 144	until the last ice crystals disappear
+R23	Mod-Link Arg1:E1 Arg2:T63	
+T64	Modifier 150 156	gently
+T65	Modifier 161 170	carefully
+R24	Mod-Link Arg1:E2 Arg2:T64	
+R25	Mod-Link Arg1:E3 Arg2:T65	
+T66	Modifier 438 445	exactly
+T67	Modifier 455 462	exactly
+R26	Mod-Link Arg1:T33 Arg2:T67	
+R27	Mod-Link Arg1:T32 Arg2:T66	
+T68	Action 482 485	mix
+E20	Action:T68 
+T70	Action 615 622	shaking
+E22	Action:T70 
+T71	Modifier 623 633	vigorously
+R28	Mod-Link Arg1:E22 Arg2:T71	
+T72	Action 647 655	rotating
+E23	Action:T72 
+R29	Or Arg1:E22 Arg2:E23	
+T73	Action 688 691	Mix
+E24	Action:T73 Acts-on:T74
+T74	Reagent 696 701	cells
+T75	Modifier 702 712	thoroughly
+R30	Mod-Link Arg1:E24 Arg2:T75	
+T76	Modifier 818 822	each
+R31	Mod-Link Arg1:T51 Arg2:T76	
+T77	Modifier 757 764	several
+R32	Mod-Link Arg1:E13 Arg2:T77	
+T69	Action 522 525	mix
+E21	Action:T69 
+T78	Modifier 356 362	Do not
+R33	Mod-Link Arg1:E5 Arg2:T57	
+R34	Mod-Link Arg1:E18 Arg2:T78	
+T79	Modifier 412 418	Do not
+R35	Mod-Link Arg1:E17 Arg2:T79	
+T80	Modifier 475 481	Do not
+R36	Mod-Link Arg1:E20 Arg2:T80	
+T81	Modifier 515 521	Do not
+R37	Mod-Link Arg1:E21 Arg2:T81	

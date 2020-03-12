@@ -1,0 +1,215 @@
+T1	Action 39 49	Innoculate
+E1	Action:T1 Count:T25 Acts-on:T26 Site:T27 Using:T29 Site2:T31
+T2	Action 158 166	Incubate
+E2	Action:T2 
+T3	Action 205 213	Pre-warm
+E3	Action:T3 Count:T35 Acts-on:T37
+T4	Action 260 263	Add
+E4	Action:T4 Count:T40 Site:T44
+T5	Action 341 346	Shake
+E5	Action:T5 
+T6	Action 414 421	Turn on
+E6	Action:T6 Acts-on:T49
+T7	Action 437 441	cool
+E7	Action:T7 Acts-on:T50
+T8	Action 493 498	Place
+E8	Action:T8 Acts-on:T54
+T9	Action 564 569	Place
+E9	Action:T9 Acts-on:T56
+T10	Action 658 662	Pour
+E10	Action:T10 Acts-on:T60 Site:T63
+T11	Action 737 747	Centrifuge
+E11	Action:T11 
+T12	Action 774 782	Pour off
+E12	Action:T12 Acts-on:T67
+T13	Action 803 811	aspirate
+E13	Action:T13 Acts-on:T68
+T14	Action 833 836	Add
+E14	Action:T14 Acts-on:T70 Site:T71
+T15	Action 905 912	suspend
+E15	Action:T15 Acts-on:T72 Using:T73
+T16	Action 950 960	Centrifuge
+E16	Action:T16 
+T17	Action 987 995	Pour off
+E17	Action:T17 Acts-on:T76
+T18	Action 1047 1050	Add
+E18	Action:T18 Acts-on:T78 Site:T79
+T19	Action 1119 1126	suspend
+E19	Action:T19 Acts-on:T80 Using:T81
+T20	Action 1164 1172	Pour off
+E20	Action:T20 Acts-on:T82
+T21	Action 1193 1200	suspend
+E21	Action:T21 Acts-on:T83 Using:T84 Using2:T85
+T22	Action 1274 1277	add
+E22	Action:T22 Acts-on:T87 Site:T88
+T23	Action 1373 1381	transfer
+E23	Action:T23 Acts-on:T90 Site:T91
+T24	Action 1450 1458	transfer
+E24	Action:T24 Acts-on:T94 Site:T96
+T25	Numerical 50 51	1
+T26	Reagent 52 58	colony
+T27	Location 72 77	plate
+T28	Amount 125 130	10 ml
+T29	Reagent 134 137	SOB
+R1	Measure Arg1:T29 Arg2:T28	
+T30	Size 143 149	125 ml
+T31	Location 150 155	flask
+R2	Measure Arg1:T31 Arg2:T30	
+T32	Time 171 182	16-18 hours
+T33	Temperature 186 190	37°C
+T34	Speed 195 202	250 rpm
+R3	Setting Arg1:E2 Arg2:T32	
+R4	Setting Arg1:E2 Arg2:T33	
+R5	Setting Arg1:E2 Arg2:T34	
+T35	Numerical 214 215	2
+T36	Size 217 220	1 L
+T37	Location 221 227	flasks
+R6	Measure Arg1:T37 Arg2:T36	
+T38	Amount 239 245	250 ml
+T39	Reagent 254 257	SOB
+R7	Measure Arg1:T39 Arg2:T38	
+R8	Meronym Arg1:T39 Arg2:T37	
+T40	Numerical 264 267	two
+T41	Generic-Measure 268 273	drops
+T42	Reagent 281 298	overnight culture
+R9	Measure Arg1:T42 Arg2:T41	
+T43	Size 325 331	250 ml
+T44	Location 332 338	flasks
+R10	Measure Arg1:T44 Arg2:T43	
+T45	Temperature 350 354	37°C
+T46	Speed 359 366	250 rpm
+R11	Setting Arg1:E5 Arg2:T45	
+R12	Setting Arg1:E5 Arg2:T46	
+T47	Measure-Type 395 400	OD600
+T48	Numerical 404 411	0.5-0.7
+R13	Of-Type Arg1:T48 Arg2:T47	
+R14	Setting Arg1:E5 Arg2:T48	
+T49	Device 422 432	centrifuge
+T50	Device 442 447	rotor
+T51	Temperature 451 454	4°C
+R15	Setting Arg1:E7 Arg2:T51	
+T52	Amount 499 502	1 L
+T53	Concentration 506 509	10%
+T54	Reagent 510 518	glycerol
+R16	Measure Arg1:T54 Arg2:T53	
+R17	Measure Arg1:T54 Arg2:T52	
+T55	Temperature 522 525	ice
+R18	Setting Arg1:E8 Arg2:T55	
+T56	Reagent 570 578	cultures
+T57	Temperature 582 585	ice
+R19	Setting Arg1:E9 Arg2:T57	
+T58	Time 590 600	15 minutes
+R20	Setting Arg1:E9 Arg2:T58	
+T59	Amount 668 674	250 ml
+T60	Reagent 675 682	culture
+R21	Measure Arg1:T60 Arg2:T59	
+T61	Size 696 702	500 ml
+T62	Size 707 714	1000 ml
+R22	Or Arg1:T61 Arg2:T62	
+T63	Location 716 734	centrifuge bottles
+R23	Measure Arg1:T63 Arg2:T61	
+T64	Temperature 688 695	chilled
+R24	Setting Arg1:E10 Arg2:T64	
+T65	Speed 751 759	5000 rpm
+T66	Time 764 770	10 min
+R25	Setting Arg1:E11 Arg2:T65	
+R26	Setting Arg1:E11 Arg2:T66	
+T67	Reagent 787 798	supernatant
+T68	Reagent 816 830	residual broth
+T69	Amount 837 843	250 ml
+T70	Reagent 847 855	glycerol
+R27	Measure Arg1:T70 Arg2:T69	
+T71	Location 871 889	centrifuge bottles
+T72	Reagent 917 922	cells
+T73	Method 926 947	pipetting up and down
+T74	Speed 964 972	5000 rpm
+T75	Time 977 983	10 min
+R28	Setting Arg1:E16 Arg2:T74	
+R29	Setting Arg1:E16 Arg2:T75	
+T76	Reagent 1000 1011	supernatant
+T77	Amount 1051 1057	250 ml
+T78	Reagent 1061 1069	glycerol
+R30	Measure Arg1:T78 Arg2:T77	
+T79	Location 1085 1103	centrifuge bottles
+T80	Reagent 1131 1136	cells
+T81	Method 1140 1161	pipetting up and down
+T82	Reagent 1177 1188	supernatant
+T83	Reagent 1205 1210	cells
+T84	Reagent 1227 1235	glycerol
+T85	Method 1239 1260	pipetting up and down
+T86	Amount 1278 1284	100 µl
+T87	Reagent 1292 1299	culture
+R31	Measure Arg1:T87 Arg2:T86	
+T88	Location 1303 1324	microcentrifuge tubes
+T89	Temperature 1328 1331	ice
+R32	Setting Arg1:E22 Arg2:T89	
+T90	Location 1386 1391	tubes
+T91	Reagent 1395 1402	dry ice
+T92	Time 1407 1417	10 minutes
+R33	Setting Arg1:E23 Arg2:T92	
+T93	Reagent 1429 1437	cultures
+T94	Mention 1459 1463	them
+R34	Coreference-Link Arg1:T94 Arg2:T93	
+T95	Temperature 1469 1474	-80°C
+T96	Device 1475 1482	freezer
+R35	Setting Arg1:T96 Arg2:T95	
+T97	Action 0 6	Making
+E25	Action:T97 Acts-on:T100
+T98	Modifier 7 15	your own
+T99	Modifier 16 32	electrocompetent
+T100	Reagent 33 38	cells
+R36	Mod-Link Arg1:T100 Arg2:T99	
+R37	Mod-Link Arg1:T100 Arg2:T98	
+T101	Modifier 66 71	fresh
+T102	Reagent 85 91	strain
+T103	Modifier 92 119	to be made electrocompetent
+R38	Mod-Link Arg1:T102 Arg2:T103	
+R39	Mod-Link Arg1:T27 Arg2:T101	
+R40	Meronym Arg1:T102 Arg2:T27	
+T104	Modifier 246 250	each
+R41	Mod-Link Arg1:T38 Arg2:T104	
+T105	Modifier 302 306	each
+T106	Modifier 314 324	pre-warmed
+R42	Mod-Link Arg1:T44 Arg2:T106	
+R43	Mod-Link Arg1:T44 Arg2:T105	
+T107	Modifier 367 372	until
+T108	Reagent 377 385	cultures
+T109	Action 386 391	reach
+E26	Action:T109 Acts-on:T108
+R44	Mod-Link Arg1:E26 Arg2:T107	
+R45	Measure Arg1:T108 Arg2:T48	
+T110	Modifier 455 490	well in advance of harvesting cells
+R46	Mod-Link Arg1:E6 Arg2:T110	
+T111	Modifier 526 561	well in advance of harvesting cells
+R47	Mod-Link Arg1:E8 Arg2:T111	
+T112	Modifier 602 620	From this point on
+T113	Reagent 625 633	cultures
+T114	Action 642 646	kept
+E27	Action:T114 Acts-on:T113
+T115	Temperature 647 655	ice cold
+R48	Setting Arg1:E27 Arg2:T115	
+R49	Mod-Link Arg1:E27 Arg2:T112	
+T116	Modifier 663 667	each
+R50	Mod-Link Arg1:T60 Arg2:T116	
+T117	Modifier 859 863	each
+T118	Modifier 894 904	completely
+R51	Mod-Link Arg1:E15 Arg2:T118	
+R52	Mod-Link Arg1:T71 Arg2:T117	
+T119	Modifier 1019 1032	not necessary
+T120	Action 1036 1044	aspirate
+E28	Action:T120 
+R53	Mod-Link Arg1:E28 Arg2:T119	
+T121	Modifier 1073 1077	each
+T122	Modifier 1108 1118	completely
+R54	Mod-Link Arg1:E19 Arg2:T122	
+R55	Mod-Link Arg1:T79 Arg2:T121	
+T123	Modifier 1218 1226	residual
+R56	Mod-Link Arg1:T84 Arg2:T123	
+T124	Modifier 1263 1272	To freeze
+R57	Mod-Link Arg1:E22 Arg2:T124	
+T125	Modifier 1334 1371	Once you have used all of the culture
+R58	Mod-Link Arg1:E23 Arg2:T125	
+T126	Modifier 1420 1424	Once
+T127	Modifier 1442 1448	frozen
+R59	Mod-Link Arg1:T93 Arg2:T126	
+R60	Mod-Link Arg1:T93 Arg2:T127	

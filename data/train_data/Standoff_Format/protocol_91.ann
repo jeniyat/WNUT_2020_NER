@@ -1,0 +1,98 @@
+T1	Action 28 34	Dilute
+E1	Action:T1 Acts-on:T17 Site:T19
+T2	Action 58 62	Grow
+E2	Action:T2 
+T3	Action 95 99	Pour
+E3	Action:T3 Site:T23
+T4	Action 133 138	Chill
+E4	Action:T4 Acts-on:T24 Site:T25
+T5	Action 170 174	Spin
+E5	Action:T5 
+T6	Action 202 208	Decant
+E6	Action:T6 Acts-on:T30
+T7	Action 222 241	Resuspend + combine
+E7	Action:T7 Acts-on:T31 Site:T35
+T9	Action 285 289	Spin
+E9	Action:T9 
+T10	Action 317 323	Decant
+E10	Action:T10 Acts-on:T38
+T11	Action 337 346	Resuspend
+E11	Action:T11 Acts-on:T39 Site:T43
+T12	Action 417 421	Spin
+E12	Action:T12 
+T13	Action 449 455	Decant
+E13	Action:T13 Acts-on:T49
+T14	Action 469 478	Resuspend
+E14	Action:T14 Site:T53
+T15	Action 512 523	SNAP Freeze
+E15	Action:T15 Acts-on:T55 Site:T56
+T16	Amount 35 38	5mL
+T17	Reagent 39 42	O/N
+T18	Amount 48 53	500mL
+T19	Reagent 54 56	LB
+R1	Measure Arg1:T19 Arg2:T18	
+R2	Measure Arg1:T17 Arg2:T16	
+T20	Generic-Measure 66 77	OD 0.6­-0.8
+T21	Time 79 92	~1.5­-3 hours
+R3	Setting Arg1:E2 Arg2:T20	
+R4	Setting Arg1:E2 Arg2:T21	
+T22	Amount 105 112	2x250mL
+T23	Location 113 131	Centrifuge bottles
+R5	Measure Arg1:T23 Arg2:T22	
+T24	Location 139 146	bottles
+T25	Location 150 153	ice
+T26	Time 158 168	10 minutes
+R6	Setting Arg1:E4 Arg2:T26	
+T27	Speed 178 184	3000xg
+T28	Time 189 194	20min
+T29	Temperature 198 200	4C
+R7	Setting Arg1:E5 Arg2:T27	
+R8	Setting Arg1:E5 Arg2:T28	
+R9	Setting Arg1:E5 Arg2:T29	
+T30	Reagent 209 220	supernatant
+T31	Reagent 242 249	pellets
+T32	Amount 253 258	250mL
+T33	Modifier 259 270	pre­chilled
+T34	Concentration 271 274	10%
+T35	Reagent 275 283	glycerol
+R10	Measure Arg1:T35 Arg2:T34	
+R11	Mod-Link Arg1:T35 Arg2:T33	
+R12	Measure Arg1:T35 Arg2:T32	
+T8	Speed 293 299	3000xg
+T36	Time 304 309	20min
+T37	Temperature 313 315	4C
+R13	Setting Arg1:E9 Arg2:T8	
+R14	Setting Arg1:E9 Arg2:T36	
+R15	Setting Arg1:E9 Arg2:T37	
+T38	Reagent 324 335	supernatant
+T39	Reagent 347 353	pellet
+T40	Amount 357 361	20mL
+T41	Modifier 362 373	pre­chilled
+T42	Concentration 374 377	10%
+T43	Reagent 378 386	glycerol
+T44	Amount 398 402	50mL
+T45	Location 403 415	Falcon Tube)
+R16	Measure Arg1:T45 Arg2:T44	
+R17	Measure Arg1:T43 Arg2:T42	
+R18	Mod-Link Arg1:T43 Arg2:T41	
+R19	Measure Arg1:T43 Arg2:T40	
+R20	Meronym Arg1:T43 Arg2:T45	
+T46	Speed 425 431	3000xg
+T47	Time 436 441	20min
+T48	Temperature 445 447	4C
+R21	Setting Arg1:E12 Arg2:T46	
+R22	Setting Arg1:E12 Arg2:T47	
+R23	Setting Arg1:E12 Arg2:T48	
+T49	Reagent 456 467	supernatant
+T50	Amount 482 485	3mL
+T51	Modifier 486 497	pre­chilled
+T52	Concentration 498 501	10%
+T53	Reagent 502 510	glycerol
+R24	Measure Arg1:T53 Arg2:T52	
+R25	Mod-Link Arg1:T53 Arg2:T51	
+R26	Measure Arg1:T53 Arg2:T50	
+T54	Amount 527 534	25­50uL
+T55	Reagent 535 543	aliquots
+T56	Reagent 547 550	LN2
+R27	Measure Arg1:T55 Arg2:T54	
+T57	Method 0 27	BL21 Electro­competent Prep

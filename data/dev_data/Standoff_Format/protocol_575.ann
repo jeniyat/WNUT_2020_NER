@@ -1,0 +1,90 @@
+T2	Action 50 57	Collect
+E2	Action:T2 Acts-on:T8 Site:T7
+T5	Action 703 709	stored
+E5	Action:T5 Acts-on:T10
+T6	Action 631 636	fixed
+E6	Action:T6 Acts-on:T4 Using:T10
+T7	Location 84 100	desired location
+T8	Reagent 58 74	seawater samples
+T4	Reagent 604 614	Subsamples
+T9	Concentration 642 650	1% to 2%
+T10	Reagent 690 698	formalin
+T11	Temperature 713 716	4°C
+R1	Setting Arg1:E5 Arg2:T11	
+R2	Measure Arg1:T10 Arg2:T9	
+T12	Size 673 680	0.02-µm
+T13	Modifier 681 689	filtered
+R3	Mod-Link Arg1:T10 Arg2:T13	
+R4	Measure Arg1:T10 Arg2:T12	
+T1	Method 0 17	FLV tracer assays
+T3	Action 18 25	Prepare
+E1	Action:T3 Acts-on:T14
+T14	Reagent 26 30	FLVs
+T15	Method 35 48	tracer assays
+T16	Modifier 102 107	After
+T17	Action 108 119	determining
+E3	Action:T17 Measure-Type-Link:T18 Acts-on:T19 Site:T20 Measure-Type-Link2:T21 Site2:T22
+T18	Measure-Type 124 137	concentration
+T19	Reagent 145 149	FLVs
+T20	Reagent 157 168	concentrate
+T21	Measure-Type 178 210	ambient concentration of viruses
+T22	Reagent 218 226	seawater
+T23	Modifier 232 238	proper
+T24	Amount 239 245	amount
+R5	Mod-Link Arg1:T24 Arg2:T23	
+T25	Reagent 249 264	FLV concentrate
+T26	Action 275 280	added
+E4	Action:T26 Acts-on:T25 Site:T31
+T27	Modifier 281 297	at tracer levels
+T28	Numerical 299 303	<10%
+T29	Modifier 307 315	original
+T30	Measure-Type 316 343	ambient virus concentration
+T31	Reagent 350 364	sample volumes
+T32	Modifier 368 380	no less than
+T33	Amount 381 387	400 mL
+R6	Mod-Link Arg1:T33 Arg2:T32	
+R7	Measure Arg1:T31 Arg2:T33	
+R8	Mod-Link Arg1:E3 Arg2:T16	
+R9	Measure Arg1:T25 Arg2:T24	
+R10	Mod-Link Arg1:E4 Arg2:T27	
+T34	Action 389 398	Designate
+E7	Action:T34 Acts-on:T35
+T35	Reagent 401 418	control treatment
+T36	Modifier 423 427	each
+T37	Time 428 438	time point
+T38	Measure-Type 440 461	total viral abundance
+T39	Measure-Type 466 477	FLV numbers
+T40	Action 488 498	determined
+E8	Action:T40 Measure-Type-Link:T39 Measure-Type-Link2:T38 Using:T43 Site:T47
+T41	Modifier 499 511	in duplicate
+T42	Modifier 517 522	small
+T43	Reagent 523 540	volume subsamples
+T44	Amount 542 549	5–30 mL
+T45	Modifier 562 569	sterile
+T46	Size 571 583	15- or 50-mL
+T47	Location 584 602	polyethylene tubes
+R11	Measure Arg1:T47 Arg2:T46	
+R12	Mod-Link Arg1:T47 Arg2:T45	
+R13	Measure Arg1:T43 Arg2:T44	
+R14	Mod-Link Arg1:T43 Arg2:T42	
+R15	Mod-Link Arg1:E8 Arg2:T41	
+R16	Setting Arg1:E8 Arg2:T37	
+R17	Mod-Link Arg1:T37 Arg2:T36	
+T48	Modifier 652 657	final
+T49	Measure-Type 658 671	concentration
+R18	Mod-Link Arg1:T9 Arg2:T48	
+T50	Modifier 619 630	immediately
+R19	Mod-Link Arg1:E6 Arg2:T50	
+T51	Location 718 724	Slides
+T52	Action 735 743	prepared
+E9	Action:T52 
+T53	Modifier 744 753	according
+R20	Coreference-Link Arg1:E9 Arg2:T51	
+R21	Mod-Link Arg1:E9 Arg2:T53	
+T54	Measure-Type 806 834	Production and removal rates
+T55	Action 839 849	calculated
+E10	Action:T55 Measure-Type-Link:T54 Using:T56
+T56	Method 859 879	equations of Glibert
+T57	Action 914 917	see
+E11	Action:T57 
+T58	Method 918 942	guidelines for equations

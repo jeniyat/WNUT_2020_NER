@@ -1,0 +1,278 @@
+T2	Action 144 150	filter
+E2	Action:T2 Acts-on:T24 Using:T29
+T1	Action 276 279	Add
+E1	Action:T1 Acts-on:T35 Site:T36
+T4	Action 599 604	Place
+E4	Action:T4 Acts-on:T3 Site:T39
+T5	Action 745 755	Centrifuge
+E5	Action:T5 
+T7	Action 903 909	Record
+E7	Action:T7 Measure-Type-Link:T138 Site:T139
+T8	Action 954 961	Discard
+E8	Action:T8 Acts-on:T6
+T9	Action 1336 1344	Transfer
+E9	Action:T9 Acts-on:T49 Site:T50 Site2:T53
+T10	Action 1451 1457	Remove
+E10	Action:T10 Acts-on:T54 Site:T55
+T11	Action 1507 1512	cover
+E11	Action:T11 Acts-on:T56 Using:T57
+T12	Action 1557 1560	Add
+E12	Action:T12 Acts-on:T61 Site:T63
+T13	Action 1632 1638	Vortex
+E13	Action:T13 Acts-on:T64
+T14	Action 1736 1739	Add
+E14	Action:T14 Acts-on:T70 Site:T72
+T15	Action 1858 1863	Store
+E15	Action:T15 Acts-on:T74 Site:T76
+T16	Action 2025 2029	Work
+E16	Action:T16 Acts-on:T85
+T17	Action 2150 2156	adding
+E17	Action:T17 Acts-on:T93
+T18	Action 2279 2282	Mix
+E18	Action:T18 Acts-on:T95
+T19	Action 2306 2314	incubate
+E19	Action:T19 Using:T96
+T20	Action 2430 2435	clean
+E20	Action:T20 Acts-on:T98 Acts-on2:T99 Using:T100
+T21	Action 2509 2522	Ethanol-clean
+E21	Action:T21 Acts-on:T101
+T22	Action 1938 1951	Ethanol-clean
+E22	Action:T22 Acts-on:T77 Using:T83
+T23	Amount 151 164	entire volume
+T24	Reagent 168 174	lysate
+T25	Size 185 202	0.45-µm-pore-size
+T26	Reagent 203 215	PES membrane
+T27	Modifier 216 223	sterile
+T28	Modifier 224 234	disposable
+T29	Device 235 246	filter unit
+T30	Action 250 256	remove
+E23	Action:T30 Acts-on:T32
+T31	Modifier 257 262	large
+T32	Reagent 263 274	cell debris
+R1	Measure Arg1:T24 Arg2:T23	
+R2	Meronym Arg1:T26 Arg2:T29	
+R3	Mod-Link Arg1:T29 Arg2:T27	
+R4	Mod-Link Arg1:T29 Arg2:T28	
+R5	Setting Arg1:T29 Arg2:T25	
+R6	Mod-Link Arg1:T32 Arg2:T31	
+T33	Amount 280 285	20 mL
+T34	Modifier 286 294	filtered
+T35	Reagent 295 301	lysate
+R7	Mod-Link Arg1:T35 Arg2:T34	
+R8	Measure Arg1:T35 Arg2:T33	
+T36	Location 309 324	upper reservoir
+T37	Generic-Measure 330 344	100,000 Dalton
+T38	Device 363 394	Vivaspin20 ultrafiltration unit
+R9	Setting Arg1:T38 Arg2:T37	
+R10	Meronym Arg1:T36 Arg2:T38	
+T3	Location 605 609	unit
+T39	Device 634 655	swinging bucket rotor
+T40	Modifier 659 669	pre-cooled
+T41	Device 676 695	benchtop centrifuge
+T42	Speed 759 768	1,000 x g
+T43	Time 790 802	5-10 minutes
+R11	Setting Arg1:E5 Arg2:T42	
+R12	Setting Arg1:E5 Arg2:T43	
+T6	Reagent 966 974	filtrate
+T44	Action 978 988	separating
+E3	Action:T44 Acts-on:T45 Site:T46
+T45	Location 993 1008	upper reservoir
+T46	Location 1018 1024	bottom
+T47	Location 1032 1047	Vivaspin20 unit
+R13	Meronym Arg1:T46 Arg2:T47	
+T48	Modifier 1349 1361	concentrated
+T49	Reagent 1362 1374	virus sample
+T50	Location 1396 1411	upper reservoir
+T51	Modifier 1417 1424	sterile
+T52	Amount 1431 1436	50 mL
+T53	Location 1437 1449	conical tube
+R14	Measure Arg1:T53 Arg2:T52	
+R15	Mod-Link Arg1:T53 Arg2:T51	
+R16	Mod-Link Arg1:T49 Arg2:T48	
+T54	Location 1462 1477	upper reservoir
+T55	Device 1487 1502	Vivaspin20 unit
+T56	Location 1517 1523	bottom
+T57	Seal 1531 1555	double-layer of Parafilm
+T58	Amount 1561 1565	2 mL
+T59	Modifier 1569 1585	0.02-µm-filtered
+T60	Concentration 1586 1588	1X
+T61	Reagent 1589 1598	TE buffer
+T62	pH 1600 1606	pH 8.0
+T63	Location 1615 1630	upper reservoir
+R17	Measure Arg1:T61 Arg2:T60	
+R18	Mod-Link Arg1:T61 Arg2:T59	
+R19	Measure Arg1:T61 Arg2:T58	
+R20	Measure Arg1:T61 Arg2:T62	
+T64	Location 1643 1658	upper reservoir
+T65	Time 1684 1691	~20 sec
+T66	Generic-Measure 1695 1704	60% power
+T67	Action 1708 1712	wash
+E6	Action:T67 Acts-on:T68
+T68	Device 1717 1734	Vivaspin20 filter
+R21	Setting Arg1:E13 Arg2:T65	
+R22	Setting Arg1:E13 Arg2:T66	
+T69	Modifier 1744 1750	washed
+T70	Reagent 1751 1757	sample
+T71	Modifier 1765 1774	recovered
+T72	Reagent 1775 1793	viral concentrate.
+R23	Mod-Link Arg1:T70 Arg2:T69	
+R24	Mod-Link Arg1:T72 Arg2:T71	
+T73	Modifier 1864 1876	concentrated
+T74	Reagent 1877 1889	virus sample
+T75	Temperature 1893 1896	4°C
+T76	Location 1897 1917	protected from light
+R25	Mod-Link Arg1:T74 Arg2:T73	
+R26	Setting Arg1:E15 Arg2:T75	
+T77	Location 1952 1964	culture hood
+T78	Action 1980 1982	UV
+E24	Action:T78 Acts-on:T79 Acts-on2:T80 Acts-on3:T81
+T79	Location 1983 1991	pipettes
+T80	Location 1993 1997	tips
+T81	Location 2003 2012	tube rack
+T82	Time 2017 2023	10 min
+T83	Method 1968 1973	usual
+R27	Setting Arg1:E24 Arg2:T82	
+T84	Numerical 2035 2038	one
+T85	Reagent 2039 2044	virus
+T86	Action 2056 2068	transferring
+E25	Action:T86 Acts-on:T87 Site:T89
+T87	Reagent 2073 2085	master stock
+T88	Temperature 2091 2094	4°C
+T89	Location 2102 2114	culture hood
+R28	Measure Arg1:T85 Arg2:T84	
+T90	Modifier 2045 2054	at a time
+R29	Mod-Link Arg1:E16 Arg2:T90	
+R30	Setting Arg1:E25 Arg2:T88	
+T91	Action 2116 2124	Initiate
+E26	Action:T91 Acts-on:T92
+T92	Reagent 2129 2146	primary infection
+T93	Reagent 2161 2179	master virus stock
+T95	Location 2287 2301	infected flask
+T96	Method 2318 2344	standard growth conditions
+T97	Modifier 2419 2429	Thoroughly
+T98	Location 2436 2443	pipette
+T99	Device 2448 2454	gloves
+T100	Reagent 2460 2467	ethanol
+R32	Mod-Link Arg1:E20 Arg2:T97	
+T101	Location 2523 2527	hood
+T102	Action 2532 2534	UV
+E27	Action:T102 Acts-on:T103 Acts-on2:T104 Acts-on3:T105
+T103	Location 2535 2543	pipettes
+T104	Location 2545 2549	tips
+T105	Location 2555 2564	tube rack
+T106	Method 0 11	Propagation
+T107	Reagent 15 40	marine eukaryotic viruses
+T108	Reagent 42 56	Prasinoviruses
+R33	Coreference-Link Arg1:T108 Arg2:T107	
+T109	Action 58 66	Cleaning
+E28	Action:T109 Acts-on:T111
+T110	Method 71 84	Concentration
+T111	Reagent 88 94	Lysate
+T112	Modifier 105 112	primary
+T113	Reagent 113 130	infection culture
+T114	Modifier 135 142	cleared
+R34	Mod-Link Arg1:T113 Arg2:T112	
+R35	Mod-Link Arg1:T113 Arg2:T114	
+T115	Reagent 350 362	PES membrane
+T116	Measure-Type 414 418	MWCO
+T117	Measure-Type 434 451	virus capsid size
+T118	Modifier 457 464	maximum
+T119	Method 465 473	recovery
+T120	Action 474 480	select
+E29	Action:T120 Measure-Type-Link:T121
+T121	Measure-Type 483 487	MWCO
+T122	Generic-Measure 497 500	50%
+T123	Measure-Type 345 349	MWCO
+R36	Of-Type Arg1:T37 Arg2:T123	
+T124	Measure-Type 518 532	molecular size
+T125	Reagent 540 548	particle
+T126	Modifier 488 496	at least
+R37	Mod-Link Arg1:T122 Arg2:T126	
+T127	Generic-Measure 562 569	200 kDa
+T128	Modifier 591 592	~
+T129	Generic-Measure 592 597	10 nm
+R38	Mod-Link Arg1:T129 Arg2:T128	
+R39	Coreference-Link Arg1:T129 Arg2:T127	
+T130	Temperature 671 674	4°C
+R40	Setting Arg1:T41 Arg2:T130	
+R41	Mod-Link Arg1:T41 Arg2:T40	
+T131	Action 804 814	Centrifuge
+E30	Action:T131 Measure-Type-Link:T132
+T132	Measure-Type 815 819	time
+T133	Reagent 865 871	sample
+T134	Reagent 849 857	material
+R42	Meronym Arg1:T134 Arg2:T133	
+T135	Action 880 883	let
+E31	Action:T135 Acts-on:T136
+T136	Device 888 894	filter
+T137	Modifier 898 901	dry
+R43	Mod-Link Arg1:T136 Arg2:T137	
+T138	Measure-Type 914 920	volume
+T139	Location 937 952	upper reservoir
+T140	Action 1049 1055	Repeat
+E32	Action:T140 
+T141	Action 1061 1067	adding
+E33	Action:T141 Acts-on:T143 Site:T144
+T142	Modifier 1068 1076	filtered
+T143	Reagent 1077 1083	lysate
+T144	Reagent 1091 1100	retentate
+T145	Location 1108 1123	upper reservoir
+T146	Modifier 1124 1129	up to
+T147	Amount 1130 1135	20 mL
+T148	Action 1143 1158	re-centrifuging
+E34	Action:T148 Acts-on:T143
+T149	Measure-Type 1177 1183	volume
+T150	Modifier 1187 1195	filtered
+T151	Reagent 1196 1202	lysate
+T152	Action 1212 1221	processed
+E35	Action:T152 Acts-on:T151
+R44	Meronym Arg1:T144 Arg2:T145	
+R45	Mod-Link Arg1:T147 Arg2:T146	
+R46	Measure Arg1:T145 Arg2:T147	
+R47	Mod-Link Arg1:T151 Arg2:T150	
+T154	Device 1237 1253	Vivaspin20 units
+T155	Reagent 1288 1294	lysate
+T156	Measure-Type 1295 1302	volumes
+T157	Modifier 1282 1287	large
+T158	Action 1308 1314	pooled
+E37	Action:T158 Acts-on:T155
+T159	Method 1321 1334	concentration
+T153	Numerical 1229 1236	Several
+R48	Measure Arg1:T154 Arg2:T153	
+T160	Reagent 1376 1385	retentate
+R49	Coreference-Link Arg1:T160 Arg2:T49	
+T161	Amount 1425 1427	15
+R50	Or Arg1:T52 Arg2:T161	
+T162	Action 1794 1800	Repeat
+E36	Action:T162 Count:T163
+T163	Numerical 1807 1812	twice
+T164	Numerical 1833 1834	3
+T166	Reagent 1847 1856	TE buffer
+T165	Action 1835 1841	washes
+E38	Action:T165 Count:T164 Using:T166
+T167	Reagent 1919 1936	Primary Infection
+T168	Amount 2221 2225	5 mL
+T169	Reagent 2226 2231	virus
+T170	Amount 2235 2241	500 mL
+T171	Modifier 2242 2263	exponentially-growing
+T172	Reagent 2264 2276	host culture
+T173	Amount 2183 2185	1%
+R31	Measure Arg1:T93 Arg2:T173	
+T94	Reagent 2199 2206	culture
+T174	Measure-Type 2207 2213	volume
+R51	Measure Arg1:T169 Arg2:T168	
+R52	Measure Arg1:T172 Arg2:T170	
+R53	Mod-Link Arg1:T172 Arg2:T171	
+T175	Reagent 2351 2358	culture
+T176	Action 2369 2374	lysed
+E39	Action:T176 Acts-on:T175
+T177	Modifier 2382 2383	~
+T178	Time 2383 2389	5 days
+T179	Reagent 2394 2416	O. lucimarinus viruses
+R54	Mod-Link Arg1:T178 Arg2:T177	
+R55	Setting Arg1:E39 Arg2:T178	
+T180	Action 2475 2484	repeating
+E40	Action:T180 Acts-on:T182
+T181	Modifier 2489 2499	additional
+T182	Reagent 2500 2507	viruses
+R56	Mod-Link Arg1:T182 Arg2:T181	

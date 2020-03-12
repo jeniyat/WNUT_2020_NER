@@ -1,0 +1,206 @@
+T1	Action 760 770	Centrifuge
+E1	Action:T1 Acts-on:T20
+T2	Action 142 149	Discard
+E2	Action:T2 Acts-on:T47
+T3	Action 62 68	Pellet
+E3	Action:T3 Acts-on:T48 Using:T5
+T4	Amount 69 75	1–5 ml
+T5	Method 97 111	centrifugation
+T6	Speed 115 125	16,000 x g
+T7	Time 130 140	30 seconds
+T8	Action 1154 1164	Centrifuge
+E4	Action:T8 
+T9	Time 1169 1177	1 minute
+T10	Speed 1181 1191	16,000 x g
+T11	Action 1576 1580	Wait
+E5	Action:T11 
+T12	Time 1585 1593	1 minute
+T13	Action 1600 1604	spin
+E6	Action:T13 Commands:E33
+T14	Time 1609 1617	1 minute
+T15	Speed 1621 1631	16,000 x g
+R1	Setting Arg1:E6 Arg2:T14	
+R2	Setting Arg1:E5 Arg2:T12	
+R3	Setting Arg1:E6 Arg2:T15	
+T16	Action 1314 1322	Transfer
+E7	Action:T16 Acts-on:T65 Site:T63
+T17	Action 1235 1238	Add
+E8	Action:T17 Acts-on:T30
+T18	Amount 1239 1245	400 μl
+T19	Speed 781 791	16,000 x g
+T20	Reagent 771 777	lysate
+T21	Time 796 807	2–5 minutes
+T22	Amount 537 543	400 μl
+T23	Action 533 536	Add
+E9	Action:T23 Acts-on:T24
+T24	Reagent 547 576	Plasmid Neutralization Buffer
+T25	Modifier 583 589	gently
+T26	Action 590 596	invert
+E10	Action:T26 Acts-on:T50
+T27	Time 658 667	2 minutes
+T28	Temperature 637 653	room temperature
+T29	Action 1275 1285	centrifuge
+E11	Action:T29 
+T30	Reagent 1249 1270	Plasmid Wash Buffer 2
+T31	Speed 1289 1299	16,000 x g
+T32	Time 1304 1312	1 minute
+T33	Action 163 172	Resuspend
+E12	Action:T33 Acts-on:T34 Site:T36
+T34	Reagent 173 179	pellet
+T35	Amount 183 189	200 μl
+T36	Reagent 190 217	Plasmid Resuspension Buffer
+R4	Measure Arg1:T36 Arg2:T35	
+R5	Measure Arg1:T24 Arg2:T22	
+T38	Action 319 322	Add
+E14	Action:T38 Acts-on:T40
+T39	Amount 323 329	200 μl
+T40	Reagent 330 350	Plasmid Lysis Buffer
+T41	Modifier 357 363	gently
+T42	Action 364 370	invert
+E15	Action:T42 Acts-on:T49
+T43	Generic-Measure 376 385	5–6 times
+T44	Action 391 399	incubate
+E16	Action:T44 Acts-on:T49
+T45	Temperature 403 419	room temperature
+T46	Time 424 432	1 minute
+T47	Reagent 150 161	supernatant
+T37	Action 968 976	transfer
+E13	Action:T37 Acts-on:T53 Site:T101
+T48	Reagent 76 93	bacterial culture
+R6	Measure Arg1:T48 Arg2:T4	
+R7	Setting Arg1:E3 Arg2:T6	
+R8	Setting Arg1:E3 Arg2:T7	
+R9	Measure Arg1:T40 Arg2:T39	
+R10	Mod-Link Arg1:E15 Arg2:T41	
+T49	Device 371 375	tube
+R11	Setting Arg1:E15 Arg2:T43	
+R12	Setting Arg1:E16 Arg2:T45	
+R13	Setting Arg1:E16 Arg2:T46	
+R14	Mod-Link Arg1:E10 Arg2:T25	
+T50	Device 597 601	tube
+T51	Action 625 633	incubate
+E17	Action:T51 Acts-on:T50
+R15	Setting Arg1:E17 Arg2:T28	
+R16	Setting Arg1:E17 Arg2:T27	
+R17	Setting Arg1:E1 Arg2:T19	
+R18	Setting Arg1:E1 Arg2:T21	
+T52	Modifier 958 967	Carefully
+R19	Mod-Link Arg1:E13 Arg2:T52	
+T53	Reagent 977 988	supernatant
+T54	Action 1012 1022	centrifuge
+E18	Action:T54 Acts-on:T53
+T55	Speed 1026 1036	16,000 x g
+T56	Time 1041 1049	1 minute
+R20	Setting Arg1:E18 Arg2:T55	
+R21	Setting Arg1:E18 Arg2:T56	
+T57	Action 1117 1120	add
+E19	Action:T57 Acts-on:T61 Site:T62
+T58	Action 1073 1082	Re-insert
+E20	Action:T58 Acts-on:T59 Site:T62
+T59	Location 1083 1089	column
+T60	Amount 1121 1127	200 μl
+T61	Reagent 1131 1152	Plasmid Wash Buffer 1
+R22	Setting Arg1:E4 Arg2:T9	
+R23	Setting Arg1:E4 Arg2:T10	
+R24	Measure Arg1:T30 Arg2:T18	
+T62	Location 1097 1112	collection tube
+R25	Measure Arg1:T61 Arg2:T60	
+R26	Setting Arg1:E11 Arg2:T31	
+R27	Setting Arg1:E11 Arg2:T32	
+T63	Location 1348 1362	microfuge tube
+T64	Amount 1341 1347	1.5 ml
+R28	Measure Arg1:T63 Arg2:T64	
+T65	Reagent 1323 1329	column
+T66	Modifier 1335 1340	clean
+R29	Mod-Link Arg1:T63 Arg2:T66	
+T67	Action 1516 1519	Add
+E21	Action:T67 Acts-on:T69 Site:T111
+T68	Amount 1522 1527	30 μl
+T69	Reagent 1528 1546	DNA Elution Buffer
+R30	Measure Arg1:T69 Arg2:T68	
+T70	Device 19 48	Monarch® Plasmid Miniprep Kit
+T71	Action 224 230	Vortex
+E22	Action:T71 
+T72	Action 234 239	pipet
+E23	Action:T72 Commands:E24
+T73	Action 243 249	ensure
+E24	Action:T73 Acts-on:T74
+T74	Reagent 250 255	cells
+T75	Modifier 260 282	completely resuspended
+T76	Modifier 303 310	visible
+T77	Reagent 311 317	clumps
+R31	Or Arg1:E22 Arg2:E23	
+R32	Mod-Link Arg1:T74 Arg2:T75	
+R33	Mod-Link Arg1:T77 Arg2:T76	
+T78	Reagent 472 480	solution
+T79	Modifier 493 504	transparent
+T80	Modifier 509 516	viscous
+R34	Mod-Link Arg1:T78 Arg2:T79	
+R35	Mod-Link Arg1:T78 Arg2:T80	
+T81	Action 525 531	vortex
+E25	Action:T81 
+T82	Reagent 669 675	Sample
+T83	Modifier 679 690	neutralized
+T84	Modifier 705 721	uniformly yellow
+T85	Reagent 726 737	precipitate
+T86	Modifier 738 743	forms
+R36	Mod-Link Arg1:T82 Arg2:T83	
+R37	Mod-Link Arg1:T82 Arg2:T84	
+R38	Mod-Link Arg1:T85 Arg2:T86	
+T87	Action 752 758	vortex
+E26	Action:T87 
+T88	Reagent 813 820	culture
+T89	Measure-Type 821 828	volumes
+T90	Modifier 829 830	>
+T91	Amount 830 834	1 ml
+T92	Time 851 859	5 minute
+T93	Action 860 864	spin
+E27	Action:T93 Commands:E28
+T94	Action 868 874	ensure
+E28	Action:T94 Using:T96 Using2:T97
+T95	Reagent 885 888	RNA
+T96	Method 889 896	removal
+T97	Reagent 900 907	RNase A
+T98	Reagent 909 915	Pellet
+T99	Modifier 926 933	compact
+T100	Action 935 939	spin
+E29	Action:T100 Acts-on:T98
+R39	Mod-Link Arg1:T91 Arg2:T90	
+R40	Measure Arg1:T88 Arg2:T91	
+R41	Setting Arg1:E27 Arg2:T92	
+R42	Mod-Link Arg1:T98 Arg2:T99	
+T101	Location 996 1007	spin column
+T102	Action 1194 1204	Discarding
+E30	Action:T102 Acts-on:T103
+T103	Reagent 1209 1221	flow-through
+T104	Action 1376 1382	ensure
+E31	Action:T104 Acts-on:T105
+T105	Location 1392 1395	tip
+T106	Location 1403 1409	column
+T107	Reagent 1446 1458	flow-through
+R43	Meronym Arg1:T105 Arg2:T106	
+T108	Action 1483 1490	re-spin
+E32	Action:T108 Acts-on:T109
+T109	Location 1495 1501	column
+T110	Time 1506 1514	1 minute
+T111	Location 1554 1560	center
+T112	Location 1568 1574	matrix
+R44	Setting Arg1:E32 Arg2:T110	
+T113	Modifier 1520 1521	≥
+R45	Mod-Link Arg1:T68 Arg2:T113	
+R46	Meronym Arg1:T111 Arg2:T112	
+T114	Action 1635 1640	elute
+E33	Action:T114 Acts-on:T115
+T115	Reagent 1645 1648	DNA
+T116	Modifier 1650 1663	Nuclease-free
+T117	Reagent 1664 1669	water
+T118	pH 1671 1679	pH 7–8.5
+T119	Action 1701 1706	elute
+E34	Action:T119 Acts-on:T120
+T120	Reagent 1711 1714	DNA
+R47	Mod-Link Arg1:T117 Arg2:T116	
+R48	Measure Arg1:T117 Arg2:T118	
+T121	Modifier 457 466	dark pink
+R49	Mod-Link Arg1:T78 Arg2:T121	
+T122	Modifier 608 619	neutralized
+R50	Mod-Link Arg1:T50 Arg2:T122	

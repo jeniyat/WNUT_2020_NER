@@ -1,0 +1,185 @@
+T1	Action 1327 1331	Wait
+E1	Action:T1 
+T2	Time 1336 1344	1 minute
+T3	Action 1351 1355	spin
+E2	Action:T3 
+T4	Time 1360 1368	1 minute
+T5	Speed 1372 1382	16,000 x g
+T6	Action 1265 1268	Add
+E3	Action:T6 Acts-on:T8
+T7	Amount 1269 1274	≥ 6 μ
+T8	Reagent 1279 1297	DNA Elution Buffer
+T9	Modifier 1305 1311	center
+T10	Location 1319 1325	matrix
+R1	Mod-Link Arg1:T10 Arg2:T9	
+R2	Setting Arg1:E1 Arg2:T2	
+R3	Setting Arg1:E2 Arg2:T4	
+R4	Setting Arg1:E2 Arg2:T5	
+R5	Measure Arg1:T8 Arg2:T7	
+T11	Action 1084 1092	Transfer
+E4	Action:T11 Acts-on:T14 Site:T13
+T12	Amount 1111 1117	1.5 ml
+T13	Location 1118 1132	microfuge tube
+T14	Device 1093 1099	column
+R6	Measure Arg1:T13 Arg2:T12	
+T15	Action 981 984	Add
+E5	Action:T15 Acts-on:T17
+T16	Amount 985 991	200 μl
+T17	Reagent 992 1007	DNA Wash Buffer
+T18	Action 1012 1016	spin
+E6	Action:T18 
+T19	Time 1021 1029	1 minute
+T20	Speed 1033 1043	16,000 x g
+R7	Measure Arg1:T17 Arg2:T16	
+R8	Setting Arg1:E6 Arg2:T19	
+R9	Setting Arg1:E6 Arg2:T20	
+T21	Action 918 924	Repeat
+E7	Action:T21 
+T23	Action 795 798	Add
+E8	Action:T23 Acts-on:T27
+T24	Action 756 765	Re-insert
+E9	Action:T24 Acts-on:T31 Site:T25
+T25	Location 778 793	collection tube
+T26	Amount 799 805	200 μl
+T27	Reagent 806 821	DNA Wash Buffer
+T28	Action 847 851	spin
+E10	Action:T28 
+T29	Time 856 864	1 minute
+T30	Speed 868 878	16,000 x g
+R10	Setting Arg1:E10 Arg2:T29	
+R11	Setting Arg1:E10 Arg2:T30	
+R12	Measure Arg1:T27 Arg2:T26	
+T31	Device 766 772	column
+T32	Action 696 700	Spin
+E11	Action:T32 
+T33	Time 705 713	1 minute
+T34	Speed 717 727	16,000 x g
+T35	Action 734 741	discard
+E12	Action:T35 Acts-on:T90
+R13	Setting Arg1:E11 Arg2:T33	
+R14	Setting Arg1:E11 Arg2:T34	
+T37	Device 639 645	column
+T38	Location 651 666	collection tube
+T39	Action 671 675	load
+E13	Action:T39 Acts-on:T40 Site:T41
+T40	Reagent 676 682	sample
+T41	Location 688 694	column
+T36	Action 632 638	Insert
+E14	Action:T36 Acts-on:T37 Site:T38
+T42	Action 360 364	load
+E15	Action:T42 Acts-on:T43
+T43	Reagent 382 388	sample
+T44	Method 403 409	step 2
+T45	Action 390 397	proceed
+E16	Action:T45 Using:T44
+T46	Modifier 367 374	portion
+R15	Mod-Link Arg1:T43 Arg2:T46	
+T47	Action 146 149	Mix
+E17	Action:T47 Using:T52
+T48	Modifier 150 154	well
+T49	Action 70 76	Dilute
+E18	Action:T49 Acts-on:T50 Using:T51
+T50	Reagent 77 83	sample
+T51	Reagent 89 115	DNA Cleanup Binding Buffer
+R16	Mod-Link Arg1:E17 Arg2:T48	
+T52	Method 158 179	pipetting up and down
+T53	Method 183 200	flicking the tube
+R17	Or Arg1:T52 Arg2:T53	
+T55	Amount 51 55	5 μg
+T56	Action 209 215	vortex
+E19	Action:T56 
+T57	Modifier 219 225	sample
+T58	Amount 226 245	volume of 20–100 μl
+T59	Modifier 249 260	recommended
+R18	Mod-Link Arg1:T58 Arg2:T57	
+R19	Mod-Link Arg1:T58 Arg2:T59	
+T60	Modifier 266 273	smaller
+T61	Reagent 274 281	samples
+T62	Reagent 283 285	TE
+T63	Action 301 307	adjust
+E20	Action:T63 Measure-Type-Link:T64 Acts-on:T61 Using:T62
+T64	Measure-Type 312 318	volume
+R20	Mod-Link Arg1:T61 Arg2:T60	
+T65	Modifier 324 331	diluted
+T66	Reagent 332 339	samples
+T67	Amount 352 358	800 μl
+T68	Modifier 340 351	larger than
+R21	Mod-Link Arg1:T67 Arg2:T68	
+R22	Mod-Link Arg1:T66 Arg2:T65	
+R23	Measure Arg1:T66 Arg2:T67	
+T69	Action 420 426	repeat
+E21	Action:T69 
+T70	Modifier 427 439	as necessary
+R24	Mod-Link Arg1:E21 Arg2:T70	
+T71	Reagent 461 475	Binding Buffer
+T72	Measure-Type 452 457	Ratio
+T73	Reagent 491 496	dsDNA
+T74	Generic-Measure 497 503	> 2 kb
+T75	Reagent 505 513	plasmids
+T76	Reagent 515 519	gDNA
+R25	Measure Arg1:T73 Arg2:T74	
+R26	Meronym Arg1:T75 Arg2:T73	
+R27	Meronym Arg1:T76 Arg2:T73	
+T77	Generic-Measure 520 523	2:1
+T78	Generic-Measure 523 537	200 μl: 100 μl
+T79	Reagent 537 542	dsDNA
+T80	Generic-Measure 543 549	< 2 kb
+T81	Reagent 556 565	amplicons
+T82	Reagent 568 577	fragments
+R28	Measure Arg1:T79 Arg2:T80	
+R29	Meronym Arg1:T81 Arg2:T79	
+R30	Measure Arg1:T73 Arg2:T77	
+R31	Measure Arg1:T73 Arg2:T78	
+R32	Meronym Arg1:T82 Arg2:T79	
+T83	Generic-Measure 578 581	5:1
+T84	Generic-Measure 581 595	500 μl: 100 μl
+T85	Reagent 595 600	ssDNA
+T86	Reagent 602 606	cDNA
+T87	Reagent 608 611	M13
+T88	Generic-Measure 612 615	7:1
+T89	Generic-Measure 615 629	700 μl: 100 μl
+R33	Measure Arg1:T79 Arg2:T83	
+R34	Measure Arg1:T79 Arg2:T84	
+R35	Meronym Arg1:T86 Arg2:T85	
+R36	Meronym Arg1:T87 Arg2:T85	
+R37	Measure Arg1:T85 Arg2:T88	
+R38	Measure Arg1:T85 Arg2:T89	
+T90	Reagent 742 754	flow-through
+T91	Reagent 828 835	ethanol
+R39	Meronym Arg1:T91 Arg2:T27	
+T92	Action 881 891	Discarding
+E22	Action:T92 Acts-on:T93
+T93	Reagent 892 904	flow-through
+T94	Modifier 908 916	optional
+R40	Mod-Link Arg1:E22 Arg2:T94	
+T95	Action 942 951	Re-insert
+E23	Action:T95 Acts-on:T96 Site:T97
+T96	Location 952 958	column
+T97	Location 964 979	collection tube
+T98	Action 1046 1056	Discarding
+E24	Action:T98 Acts-on:T99
+T99	Reagent 1057 1069	flow-through
+T100	Modifier 1073 1081	optional
+R41	Mod-Link Arg1:E24 Arg2:T100	
+T101	Modifier 1105 1110	clean
+R42	Mod-Link Arg1:T13 Arg2:T101	
+T102	Action 1146 1152	ensure
+E25	Action:T102 Acts-on:T103
+T103	Location 1162 1165	tip
+T104	Location 1173 1179	column
+T105	Action 1180 1206	does not come into contact
+E26	Action:T105 Acts-on:T103 Site:T106
+T106	Reagent 1216 1228	flow-through
+R43	Meronym Arg1:T103 Arg2:T104	
+T107	Modifier 1230 1241	If in doubt
+T108	Action 1243 1250	re-spin
+E27	Action:T108 
+T109	Time 1255 1263	1 minute
+R44	Setting Arg1:E27 Arg2:T109	
+R45	Mod-Link Arg1:E27 Arg2:T107	
+T110	Action 1386 1391	elute
+E28	Action:T110 Acts-on:T111
+T111	Reagent 1396 1399	DNA
+T54	Modifier 0 5	Quick
+T112	Method 19 31	Monarch® PCR
+T113	Method 34 45	DNA Cleanup

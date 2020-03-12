@@ -1,0 +1,82 @@
+T1	Action 36 39	Tag
+E1	Action:T1 Acts-on:T12 Using:T13
+T2	Action 93 100	Prepare
+E2	Action:T2 Using:T28
+T3	Action 234 238	Make
+E3	Action:T3 Acts-on:T22
+T4	Action 298 301	Use
+E4	Action:T4 Acts-on:T16
+T5	Action 342 348	Inject
+E5	Action:T5 Acts-on:T19 Using:T43
+T6	Action 380 387	recover
+E6	Action:T6 Acts-on:T19
+T7	Action 432 436	Pool
+E7	Action:T7 Acts-on:T21 Site:T29
+T8	Action 480 488	incubate
+E8	Action:T8 Acts-on:T21
+T9	Action 518 523	Clone
+E9	Action:T9 Acts-on:T23 Product:T35
+T10	Action 562 570	incubate
+E10	Action:T10 Acts-on:T35
+T11	Action 686 692	screen
+E11	Action:T11 Acts-on:T27 Using:T50
+T12	Reagent 40 46	gtbp‐1
+T13	Reagent 52 56	eGFP
+T14	Reagent 60 67	mCherry
+T15	Reagent 74 90	dpy‐10 co‐CRISPR
+R1	Or Arg1:T12 Arg2:T14	
+R2	Or Arg1:T13 Arg2:T15	
+T16	Reagent 306 321	crRNA gtbp‐1 Ct
+T17	Numerical 349 354	15‐20
+T18	Modifier 355 366	young adult
+T19	Reagent 367 375	N2 worms
+R3	Mod-Link Arg1:T19 Arg2:T18	
+R4	Measure Arg1:T19 Arg2:T17	
+T20	Modifier 441 450	recovered
+T21	Reagent 451 456	worms
+R5	Mod-Link Arg1:T21 Arg2:T20	
+T22	Reagent 243 256	injection mix
+T23	Reagent 528 531	P0s
+T24	Action 638 643	check
+E12	Action:T24 Acts-on:T26
+T25	Time 602 636	When the F1s reach the adult stage
+R6	Setting Arg1:E12 Arg2:T25	
+T26	Device 648 655	Rollers
+T27	Device 697 704	Rollers
+T28	Method 105 124	repair PCR template
+T29	Location 470 475	plate
+T30	Numerical 466 469	one
+R7	Measure Arg1:T29 Arg2:T30	
+T31	Time 493 499	22‐23h
+T32	Temperature 503 508	20 °C
+R8	Setting Arg1:E8 Arg2:T31	
+R9	Setting Arg1:E8 Arg2:T32	
+T33	Temperature 574 579	20 °C
+T34	Time 584 592	4‐5 days
+R10	Setting Arg1:E10 Arg2:T33	
+R11	Setting Arg1:E10 Arg2:T34	
+T35	Reagent 546 557	OP50 plates
+T36	Modifier 535 545	individual
+R12	Mod-Link Arg1:T35 Arg2:T36	
+T37	Method 0 28	Seydoux lab Cas9 preparation
+T38	Reagent 154 165	gtbp‐1 eGFP
+T39	Method 170 185	mCherry tagging
+T40	Method 207 232	Repair template synthesis
+T41	Modifier 125 137	as indicated
+R13	Mod-Link Arg1:E2 Arg2:T41	
+T42	Modifier 257 269	as indicated
+R14	Mod-Link Arg1:E3 Arg2:T42	
+T43	Method 404 430	Worm recovery and handling
+T44	Modifier 388 400	as described
+R15	Mod-Link Arg1:E5 Arg2:T44	
+T45	Modifier 458 461	P0s
+R16	Mod-Link Arg1:T21 Arg2:T45	
+T46	Time 510 515	day 1
+R17	Setting Arg1:E8 Arg2:T46	
+T47	Time 594 599	day 2
+R18	Setting Arg1:E10 Arg2:T47	
+T48	Modifier 709 739	fluorescent protein expression
+R19	Mod-Link Arg1:E11 Arg2:T48	
+T49	Modifier 740 752	as described
+T50	Method 756 786	Screening for edit of interest
+R20	Mod-Link Arg1:E11 Arg2:T49	

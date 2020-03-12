@@ -1,0 +1,184 @@
+T1	Action 24 30	Set up
+E1	Action:T1 Product:T3 Acts-on:T7 Acts-on2:T9 Acts-on3:T10 Acts-on4:T11
+T2	Amount 54 61	50.0 µL
+T3	Reagent 72 77	assay
+T4	Modifier 68 71	per
+T5	Reagent 35 41	assays
+T6	Amount 83 87	3 µg
+T7	Reagent 91 94	DNA
+T8	Generic-Measure 99 104	2 µCi
+T9	Reagent 108 129	Adenosyl-L-Methionine
+T10	Reagent 131 144	S-Methyl (3H)
+T11	Reagent 154 173	enzyme to be tested
+R1	Measure Arg1:T9 Arg2:T8	
+R2	Measure Arg1:T7 Arg2:T6	
+R3	Mod-Link Arg1:T3 Arg2:T4	
+R4	Measure Arg1:T3 Arg2:T2	
+R5	Measure Arg1:T10 Arg2:T8	
+R6	Meronym Arg1:T3 Arg2:T5	
+T12	Action 175 183	Incubate
+E2	Action:T12 Acts-on:T13
+T13	Reagent 188 194	assays
+T14	Temperature 198 202	37°C
+T15	Time 207 214	2 hours
+R7	Setting Arg1:E2 Arg2:T14	
+R8	Setting Arg1:E2 Arg2:T15	
+T16	Action 216 219	Add
+E3	Action:T16 Acts-on:T18 Site:T20
+T17	Amount 220 225	30 µL
+T18	Reagent 237 249	proteinase K
+T19	Modifier 253 257	each
+T20	Reagent 258 263	assay
+R9	Mod-Link Arg1:T20 Arg2:T19	
+R10	Measure Arg1:T18 Arg2:T17	
+T21	Action 265 273	Incubate
+E4	Action:T21 
+T22	Temperature 277 281	65°C
+T23	Time 286 292	20 min
+R11	Setting Arg1:E4 Arg2:T22	
+R12	Setting Arg1:E4 Arg2:T23	
+T24	Action 294 297	Add
+E5	Action:T24 Acts-on:T26
+T25	Amount 298 302	4 µL
+T26	Reagent 314 333	ss salmon sperm DNA
+R13	Measure Arg1:T26 Arg2:T25	
+T27	Action 348 351	Add
+E6	Action:T27 Acts-on:T30
+T28	Amount 369 374	84 µL
+T29	Concentration 379 382	20%
+T30	Reagent 383 386	TCA
+T31	Action 391 399	incubate
+E7	Action:T31 
+T32	Temperature 403 406	4°C
+T33	Time 411 417	10 min
+T34	Action 421 432	precipitate
+E8	Action:T34 Acts-on:T35
+T35	Reagent 437 444	samples
+R14	Measure Arg1:T30 Arg2:T29	
+R15	Measure Arg1:T30 Arg2:T28	
+R16	Setting Arg1:E7 Arg2:T32	
+R17	Setting Arg1:E7 Arg2:T33	
+T36	Action 446 456	Centrifuge
+E9	Action:T36 Acts-on:T37 Using:T38
+T37	Reagent 461 467	assays
+T38	Device 475 484	microfuge
+T39	Time 489 494	5 min
+T40	Temperature 498 501	4°C
+R18	Setting Arg1:T38 Arg2:T39	
+R19	Setting Arg1:T38 Arg2:T40	
+T41	Action 503 510	Discard
+E10	Action:T41 Acts-on:T42
+T42	Reagent 515 527	supernatants
+T43	Action 529 533	Wash
+E11	Action:T43 Acts-on:T44 Count:T45 Using:T48 Site:T49
+T44	Reagent 538 545	pellets
+T45	Numerical 546 548	2X
+T46	Amount 554 560	200 µL
+T47	Concentration 564 566	5%
+T48	Reagent 567 570	TCA
+T49	Device 578 587	microfuge
+T50	Time 592 597	5 min
+T51	Temperature 601 604	4°C
+R20	Setting Arg1:T49 Arg2:T50	
+R21	Setting Arg1:T49 Arg2:T51	
+R22	Measure Arg1:T48 Arg2:T47	
+R23	Measure Arg1:T48 Arg2:T46	
+T53	Reagent 620 627	pellets
+T52	Action 606 615	Resuspend
+E12	Action:T52 Acts-on:T53
+T54	Amount 633 639	500 µL
+T55	Concentration 648 654	500 mM
+T56	Reagent 655 659	NaOH
+R24	Measure Arg1:T56 Arg2:T55	
+T57	Modifier 640 644	each
+R26	Measure Arg1:T56 Arg2:T54	
+R25	Mod-Link Arg1:T53 Arg2:T57	
+T58	Action 661 669	Incubate
+E13	Action:T58 Acts-on:T59
+T59	Reagent 674 680	assays
+T60	Temperature 684 688	65°C
+T61	Time 693 699	20 min
+R27	Setting Arg1:E13 Arg2:T60	
+R28	Setting Arg1:E13 Arg2:T61	
+T62	Action 701 712	Precipitate
+E14	Action:T62 Acts-on:T63 Using:T66
+T63	Reagent 717 724	samples
+T64	Amount 730 736	500 µL
+T65	Concentration 740 743	20%
+T66	Reagent 744 747	TCA
+T67	Time 752 758	10 min
+T68	Temperature 762 765	4°C
+R29	Measure Arg1:T66 Arg2:T65	
+R30	Measure Arg1:T66 Arg2:T64	
+R31	Setting Arg1:E14 Arg2:T67	
+R32	Setting Arg1:E14 Arg2:T68	
+T69	Action 767 777	Centrifuge
+E15	Action:T69 Acts-on:T70 Using:T71
+T70	Reagent 782 789	samples
+T71	Device 797 806	microfuge
+T72	Time 811 816	5 min
+T73	Temperature 820 823	4°C
+R33	Setting Arg1:T71 Arg2:T72	
+R34	Setting Arg1:T71 Arg2:T73	
+T74	Action 825 829	Wash
+E16	Action:T74 Acts-on:T75 Count:T76 Using:T79 Site:T80
+T75	Reagent 834 841	pellets
+T76	Numerical 842 844	2X
+T77	Amount 850 856	200 µL
+T78	Concentration 860 862	5%
+T79	Reagent 863 866	TCA
+T80	Device 874 883	microfuge
+T81	Time 888 893	5 min
+T82	Temperature 897 900	4°C
+R35	Measure Arg1:T79 Arg2:T78	
+R36	Measure Arg1:T79 Arg2:T77	
+R37	Setting Arg1:T80 Arg2:T81	
+R38	Setting Arg1:T80 Arg2:T82	
+T83	Action 902 911	Resuspend
+E17	Action:T83 Acts-on:T84 Using:T87
+T84	Reagent 916 922	pellet
+T85	Amount 928 934	500 µL
+T86	Concentration 938 940	5%
+T87	Reagent 941 944	TCA
+R39	Measure Arg1:T87 Arg2:T86	
+R40	Measure Arg1:T87 Arg2:T85	
+T88	Action 946 954	Incubate
+E18	Action:T88 Acts-on:T89
+T89	Reagent 958 971	boiling water
+T90	Time 976 982	30 min
+R41	Setting Arg1:E18 Arg2:T90	
+T91	Action 984 990	loosen
+E19	Action:T91 Acts-on:T92
+T92	Seal 995 999	caps
+T93	Action 1003 1011	puncture
+E20	Action:T93 Acts-on:T94
+T94	Seal 1016 1020	caps
+T95	Location 1028 1033	tubes
+R42	Meronym Arg1:T94 Arg2:T95	
+R43	Meronym Arg1:T92 Arg2:T95	
+T96	Action 1036 1046	Centrifuge
+E21	Action:T96 Acts-on:T97 Using:T98
+T97	Reagent 1051 1058	samples
+T98	Device 1066 1075	microfuge
+T99	Time 1080 1085	5 min
+T100	Temperature 1089 1092	4°C
+T101	Action 1096 1102	remove
+E22	Action:T101 Acts-on:T102
+T102	Reagent 1107 1125	insoluble material
+R44	Setting Arg1:T98 Arg2:T99	
+R45	Setting Arg1:T98 Arg2:T100	
+T103	Action 1127 1132	Count
+E23	Action:T103 Acts-on:T104 Using:T106
+T104	Reagent 1137 1149	supernatants
+T105	Amount 1153 1158	10 mL
+T106	Reagent 1162 1194	triton-toluene counting solution
+R46	Measure Arg1:T106 Arg2:T105	
+T107	Method 0 23	Methyltransferase Assay
+T108	Modifier 62 67	total
+R47	Mod-Link Arg1:T2 Arg2:T108	
+T109	Amount 355 367	equal volume
+R48	Coreference-Link Arg1:T28 Arg2:T109	
+T110	Amount 304 309	20 µg
+R49	Coreference-Link Arg1:T25 Arg2:T110	
+T111	Amount 227 232	60 µg
+R50	Coreference-Link Arg1:T17 Arg2:T111	

@@ -1,0 +1,164 @@
+T1	Action 23 32	Inoculate
+E1	Action:T1 Acts-on:T3 Using:T7
+T2	Modifier 33 38	small
+T3	Reagent 51 59	cultures
+T4	Amount 40 49	2 or 3 ml
+R1	Setting Arg1:T2 Arg2:T4	
+R2	Mod-Link Arg1:T3 Arg2:T2	
+T5	Reagent 68 95	donor and recipient strains
+R3	Meronym Arg1:T3 Arg2:T5	
+T6	Modifier 102 113	appropriate
+T7	Reagent 114 125	antibiotics
+T8	Reagent 130 144	lysogeny broth
+R4	Mod-Link Arg1:T7 Arg2:T6	
+R5	Meronym Arg1:T7 Arg2:T8	
+T9	Action 223 227	Take
+E2	Action:T9 Acts-on:T11
+T10	Amount 228 232	1 ml
+T11	Reagent 236 263	donor and recipient culture
+T12	Action 268 278	centrifuge
+E3	Action:T12 
+T13	Speed 282 292	10,000 rcf
+T14	Time 297 306	2 minutes
+T15	Action 310 316	pellet
+E4	Action:T15 Acts-on:T16
+T16	Reagent 321 329	bacteria
+R6	Setting Arg1:E3 Arg2:T13	
+R7	Setting Arg1:E3 Arg2:T14	
+R8	Measure Arg1:T11 Arg2:T10	
+T17	Action 331 339	Aspirate
+E5	Action:T17 Acts-on:T19
+T18	Action 344 351	discard
+E6	Action:T18 Acts-on:T19
+T19	Reagent 356 367	supernatant
+T20	Action 372 381	resuspend
+E7	Action:T20 Acts-on:T21 Site:T23
+T21	Reagent 386 402	bacterial pellet
+T22	Modifier 406 411	fresh
+T23	Reagent 412 434	LB with no antibiotics
+R9	Mod-Link Arg1:T23 Arg2:T22	
+T24	Action 494 499	place
+E8	Action:T24 Acts-on:T27 Site:T28
+T25	Modifier 500 510	sterilised
+T26	Size 511 517	0.2 um
+T27	Device 518 535	pore size filters
+T28	Location 542 554	L-agar plate
+R10	Setting Arg1:T27 Arg2:T26	
+R11	Mod-Link Arg1:T27 Arg2:T25	
+T29	Action 576 579	Use
+E9	Action:T29 Using:T30
+T30	Method 580 597	aseptic technique
+T31	Action 714 721	Pipette
+E10	Action:T31 Acts-on:T34 Site:T36
+T32	Amount 722 727	10 ul
+T33	Modifier 735 746	resuspended
+T34	Reagent 747 774	donor and recipient strains
+R12	Mod-Link Arg1:T34 Arg2:T33	
+T35	Action 806 813	sitting
+E11	Action:T35 Site:T38
+T36	Location 782 792	same place
+T37	Device 798 804	filter
+T38	Location 821 831	agar plate
+R13	Measure Arg1:T34 Arg2:T32	
+R14	Meronym Arg1:T36 Arg2:T37	
+T39	Action 886 894	Incubate
+E12	Action:T39 Acts-on:T40
+T40	Location 899 904	plate
+T41	Modifier 905 916	upside down
+T42	Temperature 944 962	37 degrees Celsius
+R15	Mod-Link Arg1:E12 Arg2:T41	
+R16	Setting Arg1:E12 Arg2:T42	
+T43	Action 995 999	take
+E13	Action:T43 Acts-on:T44 Site:T45
+T44	Location 1004 1009	plate
+T45	Device 1021 1030	incubator
+T46	Action 1057 1061	pick
+E14	Action:T46 Acts-on:T49 Site:T50 Using:T51
+T47	Method 1038 1055	aseptic technique
+T48	Modifier 1062 1066	each
+T49	Device 1067 1073	filter
+T50	Location 1082 1087	plate
+T51	Device 1094 1101	forceps
+T52	Action 1106 1111	place
+E15	Action:T52 Acts-on:T53 Site:T55
+T53	Mention 1112 1114	it
+T54	Amount 1120 1126	1.5 ml
+T55	Location 1127 1131	tube
+T56	Amount 1143 1147	1 ml
+T57	Modifier 1151 1158	sterile
+T58	Reagent 1159 1162	PBS
+R17	Mod-Link Arg1:T58 Arg2:T57	
+R18	Measure Arg1:T58 Arg2:T56	
+R19	Measure Arg1:T55 Arg2:T54	
+R20	Coreference-Link Arg1:T53 Arg2:T49	
+R21	Mod-Link Arg1:T49 Arg2:T48	
+R22	Meronym Arg1:T58 Arg2:T55	
+T59	Action 1164 1170	Vortex
+E16	Action:T59 Acts-on:T60
+T60	Location 1175 1180	tubes
+T61	Action 1184 1188	free
+E17	Action:T61 Acts-on:T62 Site:T63
+T62	Reagent 1193 1201	bacteria
+T63	Device 1211 1217	filter
+T64	Action 1219 1225	Remove
+E18	Action:T64 Acts-on:T66 Site:T67 Using:T68
+T66	Device 1242 1249	filters
+T67	Location 1259 1264	tubes
+T68	Method 1271 1288	aseptic technique
+T65	Action 1230 1237	discard
+E19	Action:T65 Acts-on:T66 Site:T67 Using:T68
+T69	Action 1290 1295	Plate
+E20	Action:T69 Acts-on:T71 Site:T72
+T70	Amount 1296 1311	desired volumes
+T71	Reagent 1319 1339	bacterial suspension
+T72	Reagent 1343 1364	selective agar medium
+T73	Action 1369 1377	incubate
+E21	Action:T73 
+T74	Time 1378 1389	over night.
+R23	Setting Arg1:E21 Arg2:T74	
+R24	Measure Arg1:T71 Arg2:T70	
+T75	Method 0 22	Conjugation on filters
+T76	Action 151 153	Do
+E22	Action:T76 
+T77	Time 159 174	late in the day
+R25	Setting Arg1:E22 Arg2:T77	
+T78	Time 180 221	day before you want to do the conjugation
+R26	Setting Arg1:E22 Arg2:T78	
+T79	Reagent 146 148	LB
+R27	Meronym Arg1:T79 Arg2:T8	
+T80	Time 436 492	First thing in the morning on the day of the conjugation
+R28	Setting Arg1:E8 Arg2:T80	
+T81	Modifier 555 562	without
+T82	Reagent 563 574	antibiotics
+R29	Mod-Link Arg1:T82 Arg2:T81	
+R30	Meronym Arg1:T82 Arg2:T28	
+T83	Numerical 613 616	one
+T84	Device 617 623	filter
+T85	Modifier 628 632	each
+T86	Method 633 644	conjugation
+T87	Action 652 663	setting up,
+E23	Action:T87 Using:T86
+T88	Numerical 669 672	one
+T89	Modifier 677 681	each
+T90	Reagent 682 688	strain
+T91	Modifier 689 699	on its own
+T92	Modifier 700 712	as a control
+R31	Mod-Link Arg1:T90 Arg2:T91	
+R32	Mod-Link Arg1:T88 Arg2:T92	
+R33	Mod-Link Arg1:T90 Arg2:T89	
+R34	Measure Arg1:T84 Arg2:T83	
+T93	Action 833 835	Do
+E24	Action:T93 Acts-on:T96
+T94	Modifier 836 844	the same
+T95	Modifier 849 853	each
+T96	Reagent 854 860	strain
+T97	Modifier 861 884	on its own as a control
+R35	Mod-Link Arg1:T96 Arg2:T95	
+R36	Mod-Link Arg1:T96 Arg2:T97	
+R37	Mod-Link Arg1:E24 Arg2:T94	
+T98	Location 918 929	agar suface
+T99	Modifier 930 939	facing up
+R38	Meronym Arg1:T98 Arg2:T40	
+R39	Mod-Link Arg1:T98 Arg2:T99	
+T100	Time 964 993	Near the end of your work day
+R40	Setting Arg1:E13 Arg2:T100	

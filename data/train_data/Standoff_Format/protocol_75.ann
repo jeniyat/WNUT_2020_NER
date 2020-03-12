@@ -1,0 +1,253 @@
+T1	Action 50 53	Add
+E1	Action:T1 Acts-on:T43 Site:T116
+T3	Action 229 235	Ensure
+E3	Action:T3 Acts-on:T2 Site:T46
+T4	Action 310 317	connect
+E4	Action:T4 Acts-on:T46 Using:T47
+T5	Action 350 357	Connect
+E5	Action:T5 Acts-on:T82 Using:T83
+T6	Action 432 436	Hold
+E6	Action:T6 Acts-on:T80 Using:T111
+T7	Action 529 533	Hold
+E7	Action:T7 Acts-on:T49 Using:T73
+T8	Action 603 607	push
+E8	Action:T8 Acts-on:T117 Site:T118
+T9	Action 712 720	Incubate
+E9	Action:T9 Acts-on:T79 Site:T72
+T11	Action 851 855	cool
+E11	Action:T11 
+T10	Action 865 871	Remove
+E10	Action:T10 Acts-on:T119
+T12	Action 887 894	holding
+E12	Action:T12 Acts-on:T120 Using:T122 Site:T123
+T15	Action 1078 1084	Detach
+E15	Action:T15 Acts-on:T52
+T16	Action 1109 1117	Transfer
+E16	Action:T16 Acts-on:T77 Using:T53
+T17	Action 1157 1162	Chill
+E17	Action:T17 Site:T54
+T18	Action 1187 1190	Add
+E18	Action:T18 Acts-on:T86
+T19	Action 1270 1276	vortex
+E19	Action:T19 Acts-on:T86
+T20	Action 1287 1293	Pellet
+E20	Action:T20 Acts-on:T90 Using:T87
+T21	Action 1346 1354	Transfer
+E21	Action:T21 Acts-on:T57 Using:T59
+T23	Action 1511 1519	Transfer
+E23	Action:T23 Acts-on:T61
+T24	Action 1564 1567	add
+E24	Action:T24 Acts-on:T93
+T25	Action 1596 1602	vortex
+E25	Action:T25 Acts-on:T93
+T26	Action 1612 1615	Add
+E26	Action:T26 Acts-on:T94
+T27	Action 1644 1650	vortex
+E27	Action:T27 Acts-on:T94
+T28	Action 1660 1663	Add
+E28	Action:T28 Acts-on:T96
+T29	Action 1701 1704	Mix
+E29	Action:T29 Acts-on:T99 Using2:T100
+T30	Action 1708 1717	inverting
+E30	Action:T30 
+T31	Action 1742 1752	Centrifuge
+E31	Action:T31 Acts-on:T64
+T32	Action 1791 1797	Decant
+E32	Action:T32 Acts-on:T62
+T33	Action 1801 1809	aspirate
+E33	Action:T33 Acts-on:T62
+T34	Action 1827 1831	Wash
+E34	Action:T34 Acts-on:T101 Using:T102 Acts-on2:T104
+T35	Action 1860 1866	adding
+E35	Action:T35 
+T36	Action 1880 1892	centrifuging
+E36	Action:T36 Acts-on:T105
+T37	Action 1908 1917	decanting
+E37	Action:T37 Acts-on:T105
+T38	Action 1947 1954	Air-dry
+E38	Action:T38 Acts-on:T107
+T39	Action 1972 1980	dissolve
+E39	Action:T39 Acts-on:T107 Site:T109
+T42	Amount 54 58	1 mL
+T43	Reagent 59 77	T + C lysis buffer
+T44	Concentration 89 98	100 µg/ml
+T2	Reagent 258 261	air
+T45	Modifier 250 257	minimal
+T46	Location 269 303	injection syringe-adapter assembly
+T47	Device 328 334	outlet
+T48	Modifier 360 366	second
+T49	Device 538 544	filter
+T50	Modifier 545 553	securely
+T51	Modifier 856 863	briefly
+T52	Device 1089 1107	aspiration syringe
+T53	Device 1135 1155	microcentrifuge tube
+T54	Location 1166 1169	ice
+T55	Time 1174 1185	2–3 minutes
+T56	Time 1281 1285	10 s
+T57	Reagent 1359 1370	supernatant
+T58	Modifier 1407 1414	sterile
+T59	Device 1415 1435	microcentrifuge tube
+T22	Amount 1526 1532	800 µl
+T60	Modifier 1520 1525	up to
+T61	Reagent 1540 1546	sample
+T62	Reagent 1814 1825	supernatant
+T63	Speed 1767 1775	≥10,000g
+T64	Reagent 1757 1763	sample
+T65	Time 1780 1789	15–45 min
+T66	Amount 1616 1620	1 µl
+T67	Time 1897 1902	1 min
+T68	Amount 1984 1989	10 µL
+T69	Modifier 2009 2016	sterile
+T41	Action 814 819	Allow
+E2	Action:T41 Acts-on:T78
+T70	Temperature 774 780	15 min
+T71	Temperature 784 788	65°C
+T72	Location 794 812	hybridization oven
+T73	Device 561 578	injection syringe
+T74	Modifier 583 589	gently
+T75	Modifier 595 601	firmly
+T76	Modifier 1603 1610	briefly
+R1	Setting Arg1:E17 Arg2:T55	
+T77	Reagent 1122 1129	extract
+R2	Mod-Link Arg1:E7 Arg2:T50	
+R3	Mod-Link Arg1:E8 Arg2:T74	
+R4	Mod-Link Arg1:E8 Arg2:T75	
+T78	Device 824 847	syringe-filter assembly
+T79	Device 725 733	assembly
+T80	Device 441 464	filter-syringe assembly
+T81	Modifier 465 475	vertically
+T82	Device 367 385	low-volume syringe
+T83	Device 393 405	filter inlet
+R5	Mod-Link Arg1:T2 Arg2:T45	
+T84	Device 342 348	filter
+R6	Meronym Arg1:T84 Arg2:T47	
+T85	Generic-Measure 1191 1199	one-half
+T86	Reagent 1200 1243	volume of MPC protein precipitation reagent
+R7	Measure Arg1:T86 Arg2:T85	
+R8	Setting Arg1:E19 Arg2:T56	
+T87	Method 1308 1322	centrifugation
+T88	Speed 1326 1333	10,000g
+T89	Time 1338 1344	10 min
+T90	Reagent 1298 1304	debris
+R9	Setting Arg1:E20 Arg2:T88	
+R10	Setting Arg1:E20 Arg2:T89	
+R11	Mod-Link Arg1:T59 Arg2:T58	
+R12	Setting Arg1:T60 Arg2:T22	
+R13	Measure Arg1:T61 Arg2:T22	
+T91	Device 1552 1562	fresh tube
+T92	Amount 1568 1572	1 µl
+T93	Reagent 1573 1590	polyacryl carrier
+R14	Measure Arg1:T93 Arg2:T92	
+R15	Mod-Link Arg1:E25 Arg2:T76	
+T94	Reagent 1621 1638	polyacryl carrier
+R16	Measure Arg1:T94 Arg2:T66	
+T95	Modifier 1651 1658	briefly
+R17	Mod-Link Arg1:E27 Arg2:T95	
+T96	Reagent 1688 1699	isopropanol
+T97	Generic-Measure 1683 1687	100%
+T98	Modifier 1667 1679	equal volume
+R18	Mod-Link Arg1:T96 Arg2:T98	
+R19	Measure Arg1:T96 Arg2:T97	
+T99	Device 1722 1726	tube
+T100	Method 1727 1740	several times
+R20	Setting Arg1:E31 Arg2:T63	
+R21	Setting Arg1:E31 Arg2:T65	
+T101	Reagent 1836 1842	pellet
+T102	Method 1843 1848	twice
+T103	Generic-Measure 1867 1870	70%
+T104	Reagent 1871 1878	ethanol
+T105	Reagent 1938 1945	ethanol
+T106	Modifier 1850 1859	each time
+R22	Mod-Link Arg1:E34 Arg2:T106	
+R23	Measure Arg1:T104 Arg2:T103	
+R24	Setting Arg1:E36 Arg2:T67	
+T107	Reagent 1959 1965	pellet
+T108	Modifier 1993 2007	0.02- filtered
+T109	Reagent 2017 2031	0.5× TE buffer
+T110	Temperature 2042 2046	50°C
+R25	Measure Arg1:T109 Arg2:T68	
+R26	Mod-Link Arg1:T109 Arg2:T108	
+R27	Mod-Link Arg1:T109 Arg2:T69	
+T40	Modifier 2032 2038	heated
+R28	Setting Arg1:T40 Arg2:T110	
+R29	Mod-Link Arg1:T109 Arg2:T40	
+T111	Device 485 501	injector syringe
+T112	Action 502 509	pushing
+E22	Action:T112 Using:T113 Using2:T111
+T113	Method 510 527	upward from below
+R30	Mod-Link Arg1:E6 Arg2:T81	
+R31	Measure Arg1:T43 Arg2:T42	
+T114	Reagent 99 111	proteinase K
+T115	Modifier 118 127	ow-volume
+T116	Location 137 144	syringe
+R33	Mod-Link Arg1:T116 Arg2:T115	
+R34	Measure Arg1:T114 Arg2:T44	
+R32	Meronym Arg1:T114 Arg2:T43	
+R35	Mod-Link Arg1:T82 Arg2:T48	
+T117	Reagent 608 625	extraction buffer
+T118	Location 635 649	filter housing
+R36	Setting Arg1:E9 Arg2:T70	
+R37	Setting Arg1:E9 Arg2:T71	
+R38	Mod-Link Arg1:E11 Arg2:T51	
+T119	Reagent 876 883	extract
+T120	Device 899 915	syringe assembly
+T121	Modifier 916 926	vertically
+T122	Device 936 954	aspiration syringe
+T123	Location 955 965	underneath
+R39	Mod-Link Arg1:E12 Arg2:T121	
+T13	Method 0 24	Extracting nucleic acids
+T14	Reagent 30 37	viruses
+T124	Device 43 49	filter
+T125	Device 173 203	female–female Luer-Lok adapter
+T126	Location 209 226	injection syringe
+T127	Modifier 159 165	fitted
+R40	Mod-Link Arg1:T116 Arg2:T127	
+T128	Location 411 429	aspiration syringe
+T129	Reagent 656 662	liquid
+T130	Modifier 663 674	just begins
+T131	Action 678 684	appear
+E13	Action:T131 Site:T132 Acts-on:T129
+T132	Location 692 710	aspiration syringe
+R41	Mod-Link Arg1:E13 Arg2:T130	
+T133	Device 735 741	filter
+T134	Numerical 747 750	two
+T135	Location 751 759	syringes
+T136	Modifier 760 768	attached
+R42	Measure Arg1:T135 Arg2:T134	
+R43	Mod-Link Arg1:T135 Arg2:T136	
+T137	Device 975 981	filter
+T138	Modifier 982 993	upside down
+R44	Mod-Link Arg1:T137 Arg2:T138	
+T139	Modifier 999 1005	gently
+T140	Action 1006 1013	pulling
+E14	Action:T140 Acts-on:T141
+T141	Location 1021 1028	plunger
+T142	Action 1032 1036	pull
+E40	Action:T142 Acts-on:T143 Site:T145
+T143	Reagent 1041 1048	extract
+T145	Location 1049 1076	into the aspiration syringe
+R45	Mod-Link Arg1:E14 Arg2:T139	
+T144	Modifier 1245 1253	supplied
+T146	Device 1261 1264	kit
+T147	Modifier 1372 1400	containing the nucleic acids
+R46	Mod-Link Arg1:T57 Arg2:T147	
+T148	Modifier 1440 1452	very careful
+T149	Action 1456 1461	avoid
+E41	Action:T149 Acts-on:T150
+T150	Reagent 1466 1472	pellet
+T151	Modifier 1474 1508	containing the SDS-protein complex
+R47	Mod-Link Arg1:T150 Arg2:T151	
+R48	Mod-Link Arg1:E41 Arg2:T148	
+T152	Action 1922 1932	aspirating
+E42	Action:T152 
+R49	Or Arg1:E37 Arg2:E42	
+T153	Modifier 2048 2059	If required
+T154	Reagent 2061 2071	DNA or RNA
+T155	Action 2079 2098	selectively removed
+E43	Action:T155 Acts-on:T154 Site:T156 Using:T157 Using2:T158
+T156	Reagent 2108 2138	total nucleic acid precipitate
+T157	Method 2142 2161	enzymatic digestion
+T158	Reagent 2167 2172	DNase
+T159	Reagent 2176 2181	RNase
+R50	Mod-Link Arg1:E43 Arg2:T153	
+R51	Or Arg1:T158 Arg2:T159	

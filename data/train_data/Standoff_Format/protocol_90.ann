@@ -1,0 +1,159 @@
+T1	Action 27 32	Grind
+E1	Action:T1 Acts-on:T23 Site:T25
+T2	Action 99 102	add
+E2	Action:T2 Site:T27 Acts-on:T30 Acts-on2:T32 Acts-on3:T34
+T3	Action 185 193	Incubate
+E3	Action:T3 
+T4	Action 223 227	Cool
+E4	Action:T4 
+T5	Action 242 245	Add
+E5	Action:T5 Acts-on:T39
+T6	Action 300 303	Mix
+E6	Action:T6 Acts-on:T41
+T7	Action 339 349	Centrifuge
+E7	Action:T7 
+T8	Action 378 386	Transfer
+E8	Action:T8 Acts-on:T45 Site:T47
+T9	Action 414 417	Use
+E9	Action:T9 Acts-on:T49
+T10	Action 467 470	Add
+E10	Action:T10 Acts-on:T51
+T11	Action 494 502	incubate
+E11	Action:T11 
+T12	Action 537 540	Add
+E12	Action:T12 Acts-on:T57
+T14	Action 647 657	Centrifuge
+E14	Action:T14 
+T15	Action 688 694	Remove
+E15	Action:T15 Acts-on:T66
+T16	Action 708 711	Add
+E16	Action:T16 Acts-on:T69
+T17	Action 730 740	Centrifuge
+E17	Action:T17 
+T18	Action 771 777	Remove
+E18	Action:T18 Acts-on:T72
+T19	Action 791 797	Repeat
+E19	Action:T19 
+T20	Action 804 807	Dry
+E20	Action:T20 Acts-on:T74 Using:T78
+T21	Action 865 873	Dissolve
+E21	Action:T21 Acts-on:T75 Site:T80
+T13	Action 606 617	precepitate
+E13	Action:T13 Acts-on:T60
+T22	Modifier 33 39	frozen
+T23	Reagent 40 54	plant material
+T24	Amount 56 61	100mg
+T25	Reagent 66 81	liquid Nitrogen
+R1	Measure Arg1:T23 Arg2:T24	
+R2	Mod-Link Arg1:T23 Arg2:T22	
+T26	Amount 88 92	2 ml
+T27	Location 93 97	tube
+T28	Amount 103 109	800 uL
+T29	Concentration 113 117	1,5x
+T30	Reagent 118 122	CTAB
+T31	Amount 127 131	1 ul
+T32	Reagent 135 155	Beta-mercaptoethanol
+T33	Modifier 163 169	ground
+T34	Reagent 170 183	leaf material
+R3	Mod-Link Arg1:T34 Arg2:T33	
+R4	Measure Arg1:T27 Arg2:T26	
+R5	Measure Arg1:T30 Arg2:T29	
+R6	Measure Arg1:T30 Arg2:T28	
+R7	Measure Arg1:T32 Arg2:T31	
+T35	Time 194 200	1 hour
+T36	Temperature 204 217	60-65 degrees
+R8	Setting Arg1:E3 Arg2:T35	
+R9	Setting Arg1:E3 Arg2:T36	
+T37	Temperature 231 240	Room Temp
+R10	Setting Arg1:E4 Arg2:T37	
+T38	Amount 246 254	1 volume
+T39	Reagent 258 283	Chloroform/Isoamylalkohol
+T40	Generic-Measure 285 289	24:1
+R11	Measure Arg1:T39 Arg2:T40	
+R12	Measure Arg1:T39 Arg2:T38	
+T41	Device 307 322	overhead shaker
+T42	Time 327 337	10 minutes
+R13	Setting Arg1:E6 Arg2:T42	
+T43	Speed 353 361	3000 rmp
+T44	Time 366 376	25 minutes
+R14	Setting Arg1:E7 Arg2:T43	
+R15	Setting Arg1:E7 Arg2:T44	
+T45	Reagent 387 398	supernatant
+T46	Modifier 404 407	new
+T47	Location 408 412	tube
+R16	Mod-Link Arg1:T47 Arg2:T46	
+T48	Modifier 418 422	wide
+T49	Device 423 435	pipette tips
+R17	Mod-Link Arg1:T49 Arg2:T48	
+T50	Amount 471 476	10 uL
+T51	Reagent 477 482	RNAse
+T52	Concentration 484 492	10 mg/ml
+R18	Measure Arg1:T51 Arg2:T50	
+R19	Measure Arg1:T51 Arg2:T52	
+T53	Temperature 506 516	37 degrees
+T54	Time 525 535	30 minutes
+R20	Setting Arg1:E11 Arg2:T53	
+R21	Setting Arg1:E11 Arg2:T54	
+T55	Amount 541 551	one volume
+T56	Concentration 552 556	100%
+T57	Reagent 557 567	Isoponanol
+R22	Measure Arg1:T57 Arg2:T56	
+R23	Measure Arg1:T57 Arg2:T55	
+T58	Action 569 580	pre-chilled
+E22	Action:T58 Product:T57
+T59	Temperature 584 587	-20
+R24	Setting Arg1:E22 Arg2:T59	
+T60	Reagent 596 602	sample
+T61	Time 628 638	20 minutes
+T62	Modifier 622 627	up to
+T63	Temperature 642 645	-20
+R25	Mod-Link Arg1:T61 Arg2:T62	
+R26	Setting Arg1:E13 Arg2:T61	
+R27	Setting Arg1:E13 Arg2:T63	
+T64	Speed 661 671	full speed
+T65	Time 676 686	10 minutes
+R28	Setting Arg1:E14 Arg2:T64	
+R29	Setting Arg1:E14 Arg2:T65	
+T66	Reagent 695 706	supernatant
+T67	Amount 712 716	1 ml
+T68	Concentration 717 720	70%
+T69	Reagent 721 728	Ethanol
+R30	Measure Arg1:T69 Arg2:T68	
+R31	Measure Arg1:T69 Arg2:T67	
+T70	Speed 744 754	full speed
+T71	Time 759 769	10 minutes
+R32	Setting Arg1:E17 Arg2:T70	
+R33	Setting Arg1:E17 Arg2:T71	
+T72	Reagent 778 789	Supernatant
+T73	Numerical 798 802	once
+R34	Setting Arg1:E19 Arg2:T73	
+T74	Reagent 808 814	pellet
+T76	Modifier 825 831	approx
+T77	Time 832 842	20 minutes
+T78	Device 846 863	vacuum centrifuge
+R35	Mod-Link Arg1:T77 Arg2:T76	
+R36	Setting Arg1:T78 Arg2:T77	
+T75	Reagent 874 880	pallet
+T79	Concentration 884 886	1x
+T80	Reagent 887 889	TE
+T81	Concentration 891 896	10 mM
+T82	Reagent 897 901	Tris
+T83	pH 903 906	pH8
+T84	Concentration 908 912	1 mM
+T85	Reagent 913 917	EDTA
+R37	Measure Arg1:T85 Arg2:T84	
+R38	Measure Arg1:T82 Arg2:T81	
+R39	Measure Arg1:T80 Arg2:T79	
+R40	Meronym Arg1:T82 Arg2:T80	
+R41	Meronym Arg1:T85 Arg2:T80	
+T86	Method 0 14	DNA extraction
+T87	Reagent 20 26	plants
+T88	Action 437 440	cut
+E23	Action:T88 Acts-on:T89
+T89	Location 441 446	point
+T90	Device 450 454	tips
+T91	Modifier 455 464	if needed
+R42	Mod-Link Arg1:E23 Arg2:T91	
+R43	Meronym Arg1:T89 Arg2:T90	
+T92	Modifier 815 821	in air
+R44	Mod-Link Arg1:E20 Arg2:T92	

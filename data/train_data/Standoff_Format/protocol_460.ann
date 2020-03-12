@@ -1,0 +1,114 @@
+T1	Action 67 74	Prepare
+E1	Action:T1 Acts-on:T17 Site:T19
+T2	Action 140 148	Dispense
+E2	Action:T2 Acts-on:T21 Site:T22
+T3	Action 262 265	add
+E3	Action:T3 Acts-on:T27
+T4	Action 288 292	Seal
+E4	Action:T4 Acts-on:T28
+T5	Action 300 308	Incubate
+E5	Action:T5 
+T6	Action 359 365	decant
+E6	Action:T6 Acts-on:T34 Site:T35
+T7	Action 406 410	Wash
+E7	Action:T7 Acts-on:T36 Count:T37 Using:T39
+T8	Action 465 472	Prepare
+E8	Action:T8 Acts-on:T41
+T9	Action 518 527	Resuspend
+E9	Action:T9 Acts-on:T42 Site:T44
+T10	Action 587 594	Aliquot
+E10	Action:T10 Acts-on:T47 Site:T48
+T11	Action 641 646	Cover
+E11	Action:T11 Using:T49
+T16	Concentration 77 84	5 µg/ml
+T17	Reagent 85 106	solution of anti-CD3ε
+T18	Modifier 127 134	sterile
+T19	Reagent 135 138	PBS
+R1	Mod-Link Arg1:T19 Arg2:T18	
+R2	Measure Arg1:T17 Arg2:T16	
+T20	Amount 149 154	50 µl
+T21	Reagent 162 179	antibody solution
+T22	Location 188 197	microwell
+T23	Modifier 183 187	each
+T24	Location 205 224	96-well assay plate
+R3	Measure Arg1:T21 Arg2:T20	
+R4	Mod-Link Arg1:T22 Arg2:T23	
+R5	Meronym Arg1:T22 Arg2:T24	
+T25	Amount 266 271	50 µl
+T26	Modifier 275 282	sterile
+T27	Reagent 283 286	PBS
+R6	Mod-Link Arg1:T27 Arg2:T26	
+R7	Measure Arg1:T27 Arg2:T25	
+T28	Location 293 298	plate
+T29	Temperature 312 316	37°C
+T30	Time 321 328	2 hours
+T31	Temperature 332 335	4°C
+T32	Time 336 345	overnight
+R8	Setting Arg1:E5 Arg2:T29	
+R9	Or Arg1:T29 Arg2:T31	
+R10	Setting Arg1:E5 Arg2:T30	
+R11	Or Arg1:T30 Arg2:T32	
+T33	Modifier 347 358	Aseptically
+T34	Reagent 366 383	antibody solution
+T35	Location 389 404	microwell plate
+R12	Mod-Link Arg1:E6 Arg2:T33	
+T36	Location 411 427	plate microwells
+T37	Numerical 428 429	3
+T38	Modifier 441 448	sterile
+T39	Reagent 449 452	PBS
+R13	Mod-Link Arg1:T39 Arg2:T38	
+T40	Numerical 473 479	single
+T41	Reagent 480 516	cell suspension of cells of interest
+R14	Measure Arg1:T41 Arg2:T40	
+T42	Reagent 528 533	cells
+T43	Modifier 537 549	supplemented
+T44	Reagent 550 569	cell culture medium
+T45	Generic-Measure 573 585	1-2 x 106/ml
+R15	Mod-Link Arg1:T44 Arg2:T43	
+R16	Setting Arg1:E9 Arg2:T45	
+T46	Amount 595 601	200 µl
+T47	Reagent 602 617	cell suspension
+T48	Location 623 639	plate microwells
+R17	Measure Arg1:T47 Arg2:T46	
+T49	Seal 652 655	lid
+T50	Temperature 669 673	37°C
+T51	Concentration 677 679	5%
+T52	Reagent 680 683	CO2
+T12	Action 657 665	Incubate
+E12	Action:T12 Site:T52
+T13	Generic-Measure 688 701	100% humidity
+T14	Time 706 712	3 days
+R18	Setting Arg1:E12 Arg2:T50	
+R19	Measure Arg1:T52 Arg2:T51	
+R20	Setting Arg1:E12 Arg2:T13	
+R21	Setting Arg1:E12 Arg2:T14	
+T15	Action 714 718	Wash
+E13	Action:T15 Acts-on:T53 Count:T54 Using:T56
+T53	Location 719 735	plate microwells
+T54	Numerical 736 737	3
+T55	Modifier 749 756	sterile
+T56	Reagent 757 760	PBS
+R22	Mod-Link Arg1:T56 Arg2:T55	
+T57	Action 773 777	Wash
+E14	Action:T57 Acts-on:T58 Count:T59 Using:T61
+T58	Location 778 794	plate microwells
+T59	Numerical 795 796	3
+T60	Modifier 808 815	sterile
+T61	Reagent 816 819	PBS
+R23	Mod-Link Arg1:T61 Arg2:T60	
+T62	Action 832 839	Discard
+E15	Action:T62 Acts-on:T63
+T63	Reagent 840 846	liquid
+T64	Action 762 766	wash
+E16	Action:T64 
+T65	Reagent 821 825	wash
+T66	Action 454 458	wash
+E17	Action:T66 
+T67	Modifier 234 246	unstimulated
+T68	Location 247 260	control wells
+R24	Mod-Link Arg1:T68 Arg2:T67	
+T69	Reagent 0 12	Mouse T Cell
+T70	Method 13 23	Activation
+T71	Modifier 29 38	anti-CD3ε
+T72	Reagent 39 49	Antibodies
+R25	Mod-Link Arg1:T72 Arg2:T71	

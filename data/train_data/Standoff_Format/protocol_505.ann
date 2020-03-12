@@ -1,0 +1,29 @@
+T1	Action 44 47	Add
+E1	Action:T1 Acts-on:T5 Site:T11
+T2	Action 106 109	Add
+E2	Action:T2 Acts-on:T7
+T3	Action 124 127	Add
+E3	Action:T3 Acts-on:T10
+T4	Amount 48 55	57.318g
+T5	Reagent 56 79	Guanidine Hydrochloride
+T6	Amount 110 114	50ml
+T7	Reagent 115 121	MilliQ
+T8	Amount 128 132	50ml
+T9	Concentration 133 137	7.5M
+T10	Reagent 138 154	Ammonium Acetate
+T11	Location 86 103	autoclaved bottle
+R1	Measure Arg1:T5 Arg2:T4	
+R2	Measure Arg1:T7 Arg2:T6	
+R3	Measure Arg1:T10 Arg2:T9	
+R4	Measure Arg1:T10 Arg2:T8	
+T12	Reagent 0 14	Binding Buffer
+T13	Concentration 16 18	3M
+T14	Reagent 19 24	GuHCl
+T15	Concentration 26 31	3.75M
+T16	Reagent 32 37	NH4Ac
+T17	pH 38 42	pH 6
+R5	Measure Arg1:T16 Arg2:T17	
+R6	Measure Arg1:T16 Arg2:T15	
+R7	Measure Arg1:T14 Arg2:T13	
+R8	Meronym Arg1:T14 Arg2:T12	
+R9	Meronym Arg1:T16 Arg2:T12	

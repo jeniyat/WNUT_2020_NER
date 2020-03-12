@@ -1,0 +1,230 @@
+T1	Action 50 56	Obtain
+E1	Action:T1 Acts-on:T2
+T2	Reagent 65 71	tissue
+T3	Action 123 130	prepare
+E2	Action:T3 Product:T4 Using:T5
+T4	Reagent 133 155	single cell suspension
+T5	Reagent 159 179	Cell Staining Buffer
+T6	Action 209 212	Add
+E3	Action:T6 Acts-on:T7
+T7	Reagent 213 233	Cell Staining Buffer
+T8	Amount 240 246	~15 ml
+T9	Action 251 261	centrifuge
+E4	Action:T9 Product:T13
+T10	Speed 265 272	350 x g
+R1	Measure Arg1:T7 Arg2:T8	
+R2	Setting Arg1:E4 Arg2:T10	
+T11	Time 277 286	5 minutes
+R3	Setting Arg1:E4 Arg2:T11	
+T12	Action 288 295	discard
+E5	Action:T12 Acts-on:T13
+T13	Reagent 296 307	supernatant
+T14	Action 337 343	dilute
+E6	Action:T14 Acts-on:T17
+T15	Concentration 344 347	10X
+T16	Concentration 413 415	1X
+T17	Reagent 348 381	Red Blood Cell (RBC) Lysis Buffer
+T18	Reagent 443 451	DI water
+T19	Action 456 465	resuspend
+E7	Action:T19 Acts-on:T20 Using:T23
+T20	Reagent 466 472	pellet
+T21	Amount 476 480	3 ml
+T22	Concentration 481 483	1X
+T23	Reagent 484 500	RBC Lysis Buffer
+T24	Action 502 510	Incubate
+E8	Action:T24 
+T25	Temperature 511 517	on ice
+T26	Time 522 531	5 minutes
+T27	Action 533 548	Stop cell lysis
+E9	Action:T27 
+T29	Amount 559 564	10 ml
+T30	Reagent 565 585	Cell Staining Buffer
+T31	Location 593 597	tube
+T32	Action 599 609	Centrifuge
+E10	Action:T32 Product:T36
+T33	Time 614 623	5 minutes
+T34	Speed 627 634	350 x g
+T35	Action 639 646	discard
+E11	Action:T35 Acts-on:T36
+T36	Reagent 647 658	supernatant
+T37	Action 660 663	Add
+E12	Action:T37 Acts-on:T38
+T38	Reagent 664 684	Cell Staining Buffer
+T39	Amount 691 697	~15 ml
+T40	Action 702 712	centrifuge
+E13	Action:T40 Product:T44
+T41	Speed 716 723	350 x g
+T42	Time 728 737	5 minutes
+T43	Action 739 746	discard
+E14	Action:T43 Acts-on:T44
+T44	Reagent 747 758	supernatant
+T45	Action 760 765	Count
+E15	Action:T45 Acts-on:T47
+T46	Modifier 766 772	viable
+T47	Reagent 773 778	cells
+T48	Action 783 792	resuspend
+E16	Action:T48 Using:T49 Acts-on:T47
+T49	Reagent 796 816	Cell Staining Buffer
+T50	Concentration 820 838	5-10 x 106 cells/m
+T51	Action 844 854	distribute
+E17	Action:T51 Acts-on:T54 Site:T57
+T52	Amount 855 861	100 μl
+T53	Location 862 866	tube
+T54	Reagent 870 885	cell suspension
+T55	Concentration 887 908	5-10 x 105 cells/tube
+T56	Size 915 925	12 x 75 mm
+T57	Location 926 939	plastic tubes
+T58	Action 941 944	Add
+E18	Action:T58 Acts-on:T62
+T59	Modifier 945 981	appropriately conjugated fluorescent
+T60	Modifier 983 995	biotinylated
+T61	Modifier 1000 1016	purified primary
+T62	Reagent 1017 1027	antibodies
+T63	Concentration 1031 1067	predetermined optimum concentrations
+T64	Action 1128 1136	incubate
+E19	Action:T64 
+T65	Temperature 1137 1143	on ice
+T66	Time 1148 1161	15-20 minutes
+T68	Action 1175 1179	Wash
+E20	Action:T68 Using:T71 Using2:T70
+T69	Amount 1194 1198	2 ml
+T70	Reagent 1202 1222	Cell Staining Buffer
+T71	Method 1226 1240	centrifugation
+T72	Speed 1244 1251	350 x g
+T73	Time 1256 1265	5 minutes
+T74	Action 1274 1278	Wash
+E21	Action:T74 Using:T77 Using2:T76
+T75	Amount 1293 1297	2 ml
+T76	Reagent 1301 1321	Cell Staining Buffer
+T77	Method 1325 1339	centrifugation
+T78	Speed 1343 1350	350 x g
+T79	Time 1355 1364	5 minutes
+T80	Modifier 1384 1400	purified primary
+T81	Reagent 1401 1409	antibody
+T82	Action 1411 1420	resuspend
+E22	Action:T82 Acts-on:T83 Using2:T81 Site:T85
+T83	Reagent 1421 1427	pellet
+T84	Modifier 1431 1439	residual
+T85	Reagent 1440 1446	buffer
+T86	Action 1451 1454	add
+E23	Action:T86 Acts-on:T88
+T87	Concentration 1485 1499	concentrations
+T88	Reagent 1503 1573	anti-species immunoglobulin fluorochrome conjugated secondary antibody
+T89	Action 1604 1612	incubate
+E24	Action:T89 
+T90	Temperature 1613 1619	on ice
+T92	Time 1636 1649	15-20 minutes
+T93	Action 1651 1655	Wash
+E25	Action:T93 Using:T95 Using2:T96
+T94	Amount 1670 1674	2 ml
+T95	Reagent 1678 1698	Cell Staining Buffer
+T96	Method 1702 1716	centrifugation
+T97	Speed 1720 1727	350 x g
+T98	Time 1732 1741	5 minutes
+T99	Action 1750 1754	Wash
+E26	Action:T99 Using:T101 Using2:T102
+T100	Amount 1769 1773	2 ml
+T101	Reagent 1777 1797	Cell Staining Buffer
+T102	Method 1801 1815	centrifugation
+T103	Speed 1819 1826	350 x g
+T104	Time 1831 1840	5 minutes
+T105	Action 1849 1858	Resuspend
+E27	Action:T105 Acts-on:T106 Using:T108
+T106	Reagent 1859 1870	cell pellet
+T107	Amount 1874 1880	0.5 ml
+T108	Reagent 1884 1904	Cell Staining Buffer
+T109	Action 1909 1912	add
+E28	Action:T109 Acts-on:T111 Acts-on2:T106
+T110	Amount 1913 1941	5 μl (0.25 μg)/million cells
+T111	Reagent 1945 1978	7-AAD Viability Staining Solution
+T112	Action 2030 2038	Incubate
+E29	Action:T112 
+T113	Modifier 2018 2022	dead
+T114	Action 2010 2017	exclude
+E30	Action:T114 Acts-on:T115
+T115	Reagent 2023 2028	cells
+T116	Temperature 2039 2045	on ice
+T117	Time 2050 2061	3-5 minutes
+T119	Action 2075 2082	Analyze
+E31	Action:T119 Using:T120
+T120	Device 2090 2104	Flow Cytometer
+R4	Measure Arg1:T17 Arg2:T15	
+R6	Measure Arg1:T23 Arg2:T22	
+R7	Measure Arg1:T23 Arg2:T21	
+R8	Setting Arg1:E8 Arg2:T25	
+R9	Setting Arg1:E8 Arg2:T26	
+R10	Measure Arg1:T30 Arg2:T29	
+R11	Setting Arg1:E10 Arg2:T33	
+R12	Setting Arg1:E10 Arg2:T34	
+R13	Measure Arg1:T38 Arg2:T39	
+R14	Setting Arg1:E13 Arg2:T41	
+R15	Setting Arg1:E13 Arg2:T42	
+R16	Mod-Link Arg1:T47 Arg2:T46	
+R17	Measure Arg1:T49 Arg2:T50	
+R18	Measure Arg1:T54 Arg2:T52	
+R19	Measure Arg1:T57 Arg2:T56	
+R20	Mod-Link Arg1:T62 Arg2:T59	
+R23	Measure Arg1:T62 Arg2:T63	
+R24	Or Arg1:T59 Arg2:T60	
+R25	Or Arg1:T60 Arg2:T61	
+R27	Setting Arg1:E19 Arg2:T66	
+R29	Measure Arg1:T70 Arg2:T69	
+R30	Setting Arg1:E20 Arg2:T72	
+R31	Setting Arg1:E20 Arg2:T73	
+R32	Measure Arg1:T76 Arg2:T75	
+R33	Setting Arg1:E21 Arg2:T78	
+R34	Setting Arg1:E21 Arg2:T79	
+R35	Mod-Link Arg1:T81 Arg2:T80	
+R36	Mod-Link Arg1:T85 Arg2:T84	
+R37	Measure Arg1:T88 Arg2:T87	
+R40	Setting Arg1:E24 Arg2:T92	
+R41	Measure Arg1:T95 Arg2:T94	
+R42	Setting Arg1:E25 Arg2:T97	
+R43	Setting Arg1:E25 Arg2:T98	
+R44	Measure Arg1:T101 Arg2:T100	
+R45	Setting Arg1:E26 Arg2:T103	
+R46	Setting Arg1:E26 Arg2:T104	
+R47	Measure Arg1:T108 Arg2:T107	
+R48	Measure Arg1:T111 Arg2:T110	
+R49	Mod-Link Arg1:T115 Arg2:T113	
+R51	Setting Arg1:E29 Arg2:T117	
+T28	Action 552 558	adding
+E32	Action:T28 Acts-on:T30 Site:T31
+T121	Modifier 685 690	up to
+R5	Mod-Link Arg1:T39 Arg2:T121	
+R53	Measure Arg1:T54 Arg2:T55	
+T67	Modifier 1162 1173	in the dark
+T122	Modifier 1185 1193	at least
+R22	Mod-Link Arg1:T69 Arg2:T122	
+T123	Modifier 1284 1292	at least
+R26	Mod-Link Arg1:T75 Arg2:T123	
+T124	Modifier 1455 1476	previously determined
+T125	Modifier 1477 1484	optimum
+R28	Mod-Link Arg1:T87 Arg2:T125	
+R54	Mod-Link Arg1:T87 Arg2:T124	
+T91	Modifier 1620 1631	in the dark
+T126	Modifier 1661 1669	at least
+R39	Mod-Link Arg1:T94 Arg2:T126	
+T127	Modifier 1760 1768	at least
+R55	Mod-Link Arg1:T100 Arg2:T127	
+T118	Modifier 2062 2073	in the dark
+T128	Method 0 49	Cell Surface Immunofluorescence Staining Protocol
+T129	Modifier 57 64	desired
+R52	Mod-Link Arg1:T2 Arg2:T129	
+T130	Reagent 78 84	spleen
+T131	Reagent 86 96	lymph node
+T132	Reagent 98 104	thymus
+T133	Reagent 106 117	bone marrow
+T134	Modifier 309 321	If necessary
+T135	Reagent 328 334	spleen
+T136	Measure-Type 416 437	working concentration
+T137	Reagent 1074 1087	anti-CD3-FITC
+T138	Reagent 1089 1104	anti-CD4-Biotin
+T139	Reagent 1110 1122	anti-CD8-APC
+R21	Setting Arg1:E19 Arg2:T65	
+R56	Mod-Link Arg1:E19 Arg2:T67	
+T140	Time 1580 1598	FITC anti-mouse Ig
+R38	Setting Arg1:E24 Arg2:T90	
+R57	Mod-Link Arg1:E24 Arg2:T91	
+R50	Setting Arg1:E29 Arg2:T116	
+R58	Mod-Link Arg1:E29 Arg2:T118	

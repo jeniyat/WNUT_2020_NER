@@ -1,0 +1,63 @@
+T1	Action 57 60	Add
+E1	Action:T1 Acts-on:T14
+T2	Action 140 143	Add
+E2	Action:T2 Acts-on:T21
+T3	Action 173 176	Mix
+E3	Action:T3 
+T4	Action 181 187	freeze
+E4	Action:T4 
+T5	Action 206 210	Spin
+E5	Action:T5 Site:T25
+T6	Action 284 290	Decant
+E6	Action:T6 Acts-on:T28
+T7	Action 333 336	Dry
+E7	Action:T7 Acts-on:T29
+T8	Action 349 352	Add
+E8	Action:T8 Acts-on:T31
+T9	Action 409 418	resuspend
+E9	Action:T9 
+T10	Action 396 405	spin down
+E10	Action:T10 
+T11	Action 385 391	Vortex
+E11	Action:T11 
+T12	Amount 61 72	1/10 volume
+T13	Concentration 76 78	3M
+T14	Reagent 79 93	sodium acetate
+T15	pH 95 101	pH 5.2
+T16	Amount 105 115	1/2 volume
+T17	Concentration 119 121	5M
+T18	Reagent 122 138	ammonium acetate
+T19	Amount 144 155	2-3 volumes
+T20	Concentration 159 163	100%
+T21	Reagent 164 171	Ethanol
+T22	Time 188 197	overnight
+T23	Temperature 201 204	-20
+T24	Speed 214 224	full speed
+T25	Device 230 254	standard microcentrifuge
+T26	Temperature 258 267	4 degrees
+T27	Time 272 282	30 minutes
+T28	Reagent 320 331	supernatant
+T29	Reagent 341 347	pellet
+T30	Amount 358 374	desired quantity
+T31	Reagent 378 383	water
+R1	Measure Arg1:T14 Arg2:T13	
+R2	Measure Arg1:T14 Arg2:T12	
+R3	Measure Arg1:T14 Arg2:T15	
+R4	Or Arg1:T14 Arg2:T18	
+R5	Measure Arg1:T18 Arg2:T17	
+R6	Measure Arg1:T18 Arg2:T16	
+R7	Measure Arg1:T21 Arg2:T20	
+R8	Measure Arg1:T21 Arg2:T19	
+R9	Setting Arg1:E4 Arg2:T22	
+R10	Setting Arg1:E4 Arg2:T23	
+R11	Setting Arg1:E5 Arg2:T24	
+R12	Setting Arg1:E5 Arg2:T26	
+R13	Setting Arg1:E5 Arg2:T27	
+R14	Measure Arg1:T31 Arg2:T30	
+T32	Method 0 38	Ethanol precipitation of nucleic acids
+T33	Location 40 55	Eppendorf tubes
+T34	Modifier 295 304	carefully
+T35	Action 305 314	pipet off
+E12	Action:T35 
+R15	Mod-Link Arg1:E12 Arg2:T34	
+R16	Or Arg1:E6 Arg2:E12	

@@ -1,0 +1,33 @@
+T1	Action 45 50	Weigh
+E1	Action:T1 Acts-on:T7
+T2	Action 69 72	Add
+E2	Action:T2 Acts-on:T9
+T3	Action 88 94	Vortex
+E3	Action:T3 
+T4	Action 120 124	Wrap
+E4	Action:T4 Using:T12
+T5	Action 137 142	store
+E5	Action:T5 
+T6	Amount 51 56	30 mg
+T7	Reagent 60 66	X-Gluc
+T8	Amount 73 79	1.5 mL
+T9	Reagent 83 86	DMF
+T10	Action 98 106	dissolve
+E6	Action:T10 
+T11	Modifier 107 117	completely
+T12	Seal 128 132	foil
+T14	Temperature 158 163	-20°C
+T15	Action 179 183	kept
+E7	Action:T15 Acts-on:T16
+T16	Reagent 165 171	Stocks
+T18	Time 188 194	1 year
+R1	Measure Arg1:T7 Arg2:T6	
+R2	Measure Arg1:T9 Arg2:T8	
+R3	Mod-Link Arg1:E6 Arg2:T11	
+R4	Setting Arg1:E5 Arg2:T14	
+R6	Setting Arg1:E7 Arg2:T18	
+T19	Action 7 11	make
+E8	Action:T19 Product:T21
+T20	Concentration 14 22	20 mg/mL
+T21	Reagent 23 44	X-Gluc Stock Solution
+R5	Measure Arg1:T21 Arg2:T20	

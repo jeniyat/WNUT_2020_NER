@@ -1,0 +1,105 @@
+T1	Action 61 64	Let
+E1	Action:T1 Acts-on:T7
+T2	Time 83 88	1 day
+T3	Reagent 33 38	wings
+T4	Action 28 32	Clip
+E2	Action:T4 Acts-on:T3 Using:T6
+T5	Generic-Measure 42 46	half
+T6	Reagent 54 59	flies
+R1	Measure Arg1:T6 Arg2:T5	
+T7	Reagent 65 70	flies
+T8	Action 71 78	recover
+E3	Action:T8 
+R2	Setting Arg1:E1 Arg2:T2	
+T9	Action 117 120	Put
+E4	Action:T9 Acts-on:T10 Site:T11
+T10	Reagent 125 130	flies
+T11	Location 138 144	T-maze
+T12	Action 165 168	let
+E5	Action:T12 Acts-on:T13 Site:T30
+T13	Mention 169 173	them
+T14	Action 174 179	adapt
+E6	Action:T14 
+T15	Time 227 237	10 minutes
+T16	Action 239 243	Move
+E7	Action:T16 Acts-on:T20 Site:T21
+T17	Action 350 354	Move
+E8	Action:T17 Acts-on:T27 Site:T29
+T18	Action 649 653	Wait
+E9	Action:T18 Acts-on:T39
+T19	Action 782 793	Anesthetize
+E10	Action:T19 Acts-on:T32 Using:T33
+T20	Reagent 248 253	flies
+T21	Location 263 271	elevator
+T22	Action 309 312	let
+E11	Action:T22 Acts-on:T23
+T23	Mention 313 317	them
+T24	Action 318 322	stay
+E12	Action:T24 Site:T25
+T25	Location 323 328	there
+T26	Time 340 348	1 minute
+T27	Reagent 359 364	flies
+T28	Modifier 372 378	bottom
+T29	Location 382 388	T-maze
+R3	Mod-Link Arg1:T29 Arg2:T28	
+R4	Coreference-Link Arg1:T13 Arg2:T10	
+T30	Device 198 205	machine
+T32	Reagent 798 803	flies
+T33	Reagent 809 812	CO2
+T34	Action 817 822	count
+E13	Action:T34 Acts-on:T35 Site:T37
+T35	Mention 823 827	them
+T36	Modifier 828 833	under
+T37	Location 838 854	magnifying glass
+T38	Time 658 668	30 seconds
+T39	Reagent 677 682	flies
+T40	Action 711 715	lock
+E14	Action:T40 Acts-on:T41 Site:T42
+T41	Mention 716 720	them
+T42	Location 728 733	tubes
+R5	Setting Arg1:E5 Arg2:T15	
+R6	Coreference-Link Arg1:T23 Arg2:T20	
+R7	Setting Arg1:E11 Arg2:T26	
+R8	Setting Arg1:E9 Arg2:T38	
+R9	Coreference-Link Arg1:T41 Arg2:T39	
+R10	Coreference-Link Arg1:T35 Arg2:T32	
+R11	Mod-Link Arg1:T37 Arg2:T36	
+T43	Method 0 17	T-maze phototaxis
+T44	Device 23 27	LEDs
+T45	Temperature 93 97	25°C
+T46	Modifier 99 105	faster
+T47	Method 106 114	recovery
+R12	Setting Arg1:E3 Arg2:T45	
+T48	Location 146 159	entrance tube
+R13	Meronym Arg1:T48 Arg2:T11	
+T31	Location 277 288	mobile part
+T49	Location 296 302	T-maze
+R14	Meronym Arg1:T31 Arg2:T49	
+T50	Device 406 414	elevator
+T51	Action 390 401	taking down
+E15	Action:T51 Acts-on:T50
+T52	Numerical 463 466	two
+T53	Location 477 482	tubes
+R15	Measure Arg1:T53 Arg2:T52	
+T54	Numerical 484 487	one
+T55	Modifier 491 506	completely dark
+R16	Mod-Link Arg1:T54 Arg2:T55	
+T56	Numerical 522 525	one
+T57	Device 532 535	LED
+T58	Location 543 549	bottom
+R17	Meronym Arg1:T57 Arg2:T58	
+T59	Modifier 562 573	transparent
+R18	Mod-Link Arg1:T56 Arg2:T59	
+T60	Device 605 609	LEDs
+T61	Modifier 611 616	White
+T62	Modifier 623 629	Yellow
+T63	Modifier 636 641	Green
+T64	Device 617 621	LEDs
+T65	Device 630 634	LEDs
+T66	Device 642 646	LEDs
+R19	Mod-Link Arg1:T64 Arg2:T61	
+R20	Mod-Link Arg1:T65 Arg2:T62	
+R21	Mod-Link Arg1:T66 Arg2:T63	
+T67	Action 757 766	taking up
+E16	Action:T67 Acts-on:T68
+T68	Device 771 779	elevator

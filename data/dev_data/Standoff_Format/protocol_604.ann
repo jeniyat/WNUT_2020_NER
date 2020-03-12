@@ -1,0 +1,39 @@
+T1	Action 49 52	Add
+E1	Action:T1 Acts-on:T11 Site:T13
+T2	Action 104 107	Add
+E2	Action:T2 Acts-on:T15
+T3	Action 124 127	Add
+E3	Action:T3 Acts-on:T7
+T4	Action 139 145	Adjust
+E4	Action:T4 Using:T16 Measure-Type-Link:T24
+T5	Amount 128 132	2.5g
+T6	Amount 162 167	250ml
+T7	Reagent 133 136	SDS
+T8	Amount 108 111	1ml
+T9	Amount 53 58	2.5ml
+T10	Generic-Measure 59 61	1M
+T11	Reagent 62 70	Tris-HCl
+T12	pH 74 77	7.5
+T13	Location 84 101	autoclaved bottle
+R1	Measure Arg1:T11 Arg2:T10	
+R2	Measure Arg1:T11 Arg2:T9	
+R3	Measure Arg1:T11 Arg2:T12	
+T14	Generic-Measure 112 116	0.5M
+T15	Reagent 117 121	EDTA
+R4	Measure Arg1:T15 Arg2:T14	
+R5	Measure Arg1:T15 Arg2:T8	
+R6	Measure Arg1:T7 Arg2:T5	
+R7	Setting Arg1:E4 Arg2:T6	
+T16	Device 173 179	MilliQ
+T17	Reagent 0 12	Lysis Buffer
+T18	Concentration 14 18	10mM
+T19	Reagent 19 27	Tris-HCl
+T20	Concentration 29 32	2mM
+T21	Reagent 33 37	EDTA
+T22	Concentration 39 41	1%
+T23	Reagent 42 45	SDS
+R8	Measure Arg1:T23 Arg2:T22	
+R9	Measure Arg1:T21 Arg2:T20	
+R10	Measure Arg1:T19 Arg2:T18	
+T24	Measure-Type 152 158	volume
+T25	Modifier 146 151	total

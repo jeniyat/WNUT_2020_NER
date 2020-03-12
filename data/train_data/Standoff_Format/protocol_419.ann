@@ -1,0 +1,67 @@
+T1	Action 22 27	Slice
+E1	Action:T1 Acts-on:T11
+T2	Action 46 57	squeeze out
+E2	Action:T2 Acts-on:T12
+T3	Action 70 77	Measure
+E3	Action:T3 Site:T15
+T4	Action 110 117	Discard
+E4	Action:T4 Acts-on:T16
+T5	Action 126 133	Combine
+E5	Action:T5 Site:T41
+T6	Action 215 218	Mix
+E6	Action:T6 Using:T26
+T7	Action 246 250	Salt
+E7	Action:T7 Acts-on:T27
+T8	Action 348 352	Fill
+E8	Action:T8 Acts-on:T35 Using:T36
+T9	Action 400 405	Drink
+E9	Action:T9 
+T10	Action 410 415	enjoy
+E10	Action:T10 
+T11	Reagent 28 33	limes
+T12	Reagent 62 67	juice
+T13	Amount 78 85	1 liter
+T14	Modifier 89 98	graduated
+T15	Location 99 107	cylinder
+T16	Reagent 118 123	rinds
+T17	Amount 137 144	4 liter
+T18	Amount 157 163	1 part
+T19	Reagent 164 174	lime juice
+T20	Amount 176 182	1 part
+T21	Reagent 183 193	triple sec
+T22	Amount 195 204	1.5 parts
+T23	Reagent 205 212	tequila
+T24	Modifier 219 223	well
+T25	Modifier 229 236	sterile
+T26	Location 237 244	pipette
+T27	Location 251 261	glass rims
+T28	Action 265 272	turning
+E11	Action:T28 Using:T29 Acts-on:T27
+T29	Method 273 284	upside down
+T30	Action 289 296	placing
+E12	Action:T30 Site:T31 Acts-on:T27 Site2:T33
+T31	Location 302 307	plate
+T32	Reagent 311 321	lime juice
+T33	Location 333 338	plate
+T34	Reagent 342 346	salt
+T35	Location 353 360	glasses
+T36	Reagent 366 369	ice
+T37	Action 370 374	Pour
+E13	Action:T37 Acts-on:T38 Site:T39
+T38	Reagent 375 384	margarita
+T39	Location 390 397	glasses
+T40	Reagent 11 21	Margaritas
+R1	Setting Arg1:E3 Arg2:T13	
+R2	Mod-Link Arg1:T15 Arg2:T14	
+T41	Location 145 155	receptacle
+R3	Measure Arg1:T41 Arg2:T17	
+R4	Measure Arg1:T19 Arg2:T18	
+R5	Measure Arg1:T21 Arg2:T20	
+R6	Measure Arg1:T23 Arg2:T22	
+R7	Meronym Arg1:T19 Arg2:T41	
+R8	Meronym Arg1:T21 Arg2:T41	
+R9	Meronym Arg1:T23 Arg2:T41	
+R10	Mod-Link Arg1:E6 Arg2:T24	
+R11	Mod-Link Arg1:T26 Arg2:T25	
+R12	Meronym Arg1:T32 Arg2:T31	
+R13	Meronym Arg1:T34 Arg2:T33	

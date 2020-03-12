@@ -1,0 +1,41 @@
+T1	Action 54 58	Load
+E1	Action:T1 
+T2	Action 94 98	Read
+E2	Action:T2 
+T3	Action 377 383	Format
+E3	Action:T3 
+T4	Action 396 403	Look at
+E4	Action:T4 Acts-on:T19
+T5	Action 417 421	Plot
+E5	Action:T5 
+T6	Action 119 125	format
+E6	Action:T6 
+T7	Method 84 92	analysis
+T8	Action 140 147	matches
+E7	Action:T8 Acts-on:T9
+T9	Reagent 152 159	samples
+T10	Action 167 179	working with
+E8	Action:T10 Acts-on:T9
+T11	Method 0 38	Script R8: Plotting Bacterial Taxonomy
+T12	Method 44 53	MetaPhlan
+T13	Action 197 201	look
+E9	Action:T13 Acts-on:T16
+T14	Modifier 207 214	certain
+T15	Measure-Type 215 221	number
+T16	Reagent 225 229	taxa
+R1	Mod-Link Arg1:E9 Arg2:T14	
+T17	Modifier 247 272	more visually informative
+T18	Numerical 408 410	10
+T19	Reagent 411 415	taxa
+T20	Modifier 404 407	top
+R2	Mod-Link Arg1:T18 Arg2:T20	
+R3	Measure Arg1:T19 Arg2:T18	
+T21	Action 294 298	read
+E10	Action:T21 
+T22	Method 306 315	MetaPhlAn
+T23	Action 353 359	format
+E11	Action:T23 
+T24	Method 367 375	plotting
+T25	Modifier 285 290	ready
+R4	Mod-Link Arg1:E10 Arg2:T25	
+T26	Modifier 316 322	merged

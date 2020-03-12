@@ -1,0 +1,22 @@
+T1	Action 30 38	Clean-up
+E1	Action:T1 Acts-on:T5 Site:T6
+T2	Action 83 89	Set-up
+E2	Action:T2 Product:T7
+T3	Action 140 148	Incubate
+E3	Action:T3 Acts-on:T10
+T4	Modifier 43 52	amplified
+T5	Reagent 53 56	DNA
+T6	Reagent 66 80	PCR components
+R1	Mod-Link Arg1:T5 Arg2:T4	
+T7	Reagent 94 102	reaction
+T8	Action 106 112	adding
+E4	Action:T8 Acts-on:T9
+T9	Reagent 117 137	following components
+T10	Reagent 153 161	reaction
+T11	Temperature 165 170	72 °C
+T12	Time 175 185	20 minutes
+R2	Setting Arg1:E3 Arg2:T11	
+R3	Setting Arg1:E3 Arg2:T12	
+T13	Action 0 9	A-Tailing
+E5	Action:T13 Using:T14
+T14	Reagent 15 29	Taq Polymerase

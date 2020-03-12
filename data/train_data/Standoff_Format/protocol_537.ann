@@ -1,0 +1,264 @@
+T1	Action 52 56	Pull
+E1	Action:T1 Acts-on:T33 Site:T7
+T2	Action 94 98	grow
+E2	Action:T2 Site:T35
+T3	Action 124 131	Perform
+E3	Action:T3 Using:T36 Site:T38
+T4	Action 222 227	Store
+E4	Action:T4 Acts-on:T39
+T5	Action 256 262	Absorb
+E5	Action:T5 Acts-on:T41 Site:T42
+T6	Action 293 298	Place
+E6	Action:T6 Acts-on:T44 Acts-on2:T46 Site:T47
+T8	Action 463 466	Add
+E8	Action:T8 Acts-on:T53 Site:T54
+T9	Action 521 525	Seal
+E9	Action:T9 Acts-on:T55 Using:T56
+T10	Action 554 562	incubate
+E10	Action:T10 Using:T57
+T11	Action 832 842	filter out
+E11	Action:T11 Acts-on:T65 Using:T67 Site:T69
+T12	Action 898 902	Spin
+E12	Action:T12 
+T13	Action 940 948	Transfer
+E13	Action:T13 Acts-on:T71 Site:T72
+T14	Action 990 995	Store
+E14	Action:T14 
+T16	Action 1090 1097	Prepare
+E16	Action:T16 Product:T75 Product2:T80
+T17	Action 1139 1145	Absorb
+E17	Action:T17 Acts-on:T81 Site:T82 Site2:T86
+T18	Action 1276 1279	Mix
+E18	Action:T18 Acts-on:T90 Site:T92
+T19	Action 1332 1341	Pour over
+E19	Action:T19 Site:T93
+T20	Action 1360 1368	Incubate
+E20	Action:T20 
+T21	Action 1373 1381	look for
+E21	Action:T21 Acts-on:T94
+T22	Action 1401 1405	Pick
+E22	Action:T22 Acts-on:T95
+T23	Action 1454 1460	record
+E23	Action:T23 
+T24	Action 1489 1494	Store
+E24	Action:T24 Acts-on:T99
+T25	Action 1710 1714	Take
+E25	Action:T25 Acts-on:T107
+T26	Action 1783 1789	absorb
+E26	Action:T26 Site:T109 Acts-on:T107
+T27	Action 1830 1833	Add
+E27	Action:T27 Site:T112
+T28	Action 1852 1856	grow
+E28	Action:T28 Using:T113
+T29	Action 1872 1882	Centrifuge
+E29	Action:T29 Product:T114
+T30	Action 1897 1903	filter
+E30	Action:T30 Acts-on:T115 Using:T117
+T31	Action 1934 1944	SYBR stain
+E31	Action:T31 Acts-on:T119
+T32	Action 2013 2019	Purify
+E32	Action:T32 Acts-on:T120 Using:T121
+T33	Reagent 57 77	Roseobacter cultures
+T34	Amount 102 106	5 ml
+T35	Reagent 107 121	broth cultures
+R1	Measure Arg1:T35 Arg2:T34	
+T36	Method 132 147	virus screening
+T37	Size 159 166	96 well
+T38	Location 167 219	flat-bottom tissue culture treated microtiter plates
+R2	Measure Arg1:T38 Arg2:T37	
+T39	Reagent 228 246	seawater filtrates
+T40	Temperature 250 253	4°C
+R3	Setting Arg1:E4 Arg2:T40	
+T41	Reagent 267 274	viruses
+T42	Reagent 282 290	bacteria
+T43	Amount 299 304	15 µl
+T44	Reagent 308 323	log phase cells
+R4	Measure Arg1:T44 Arg2:T43	
+T45	Amount 328 333	15 µl
+T46	Reagent 337 354	seawater filtrate
+R5	Measure Arg1:T46 Arg2:T45	
+T47	Location 379 384	wells
+T48	Location 398 403	plate
+R6	Meronym Arg1:T47 Arg2:T48	
+T49	Reagent 416 423	viruses
+T50	Time 454 460	1 hour
+T51	Reagent 441 449	bacteria
+T52	Amount 467 473	200 µl
+T53	Reagent 474 486	growth media
+R7	Measure Arg1:T53 Arg2:T52	
+T54	Location 513 518	wells
+T55	Location 530 535	plate
+T56	Reagent 541 549	parafilm
+T57	Method 568 575	shaking
+T58	Action 678 690	transferring
+E33	Action:T58 Acts-on:T61 Site:T63
+T59	Size 390 397	96 well
+R8	Measure Arg1:T48 Arg2:T59	
+T60	Size 704 711	96 well
+T61	Location 712 717	plate
+R9	Measure Arg1:T61 Arg2:T60	
+T62	Size 729 736	96-well
+T63	Location 737 742	plate
+R10	Measure Arg1:T63 Arg2:T62	
+T64	Reagent 760 772	liquid media
+R11	Meronym Arg1:T64 Arg2:T63	
+T65	Reagent 843 848	cells
+T66	Size 854 859	0.2um
+T67	Device 860 870	filtration
+R12	Measure Arg1:T67 Arg2:T66	
+T68	Size 876 881	1.5ml
+T69	Location 882 897	microfuge tubes
+R13	Measure Arg1:T69 Arg2:T68	
+T70	Time 907 913	5 mins
+R14	Setting Arg1:E12 Arg2:T70	
+T71	Reagent 949 960	supernatant
+T72	Location 964 974	fresh tube
+T73	Speed 918 921	max
+R15	Setting Arg1:E12 Arg2:T73	
+T74	Temperature 999 1002	4°C
+R16	Setting Arg1:E14 Arg2:T74	
+T15	Action 1046 1053	growing
+E15	Action:T15 Acts-on:T77 Acts-on2:T78 Site:T79
+T77	Reagent 1054 1059	cells
+T78	Reagent 1065 1070	virus
+T79	Location 1074 1085	solid media
+T75	Reagent 1098 1114	solid agar media
+T76	Concentration 1119 1123	0.5%
+T80	Reagent 1124 1136	overlay agar
+R17	Measure Arg1:T80 Arg2:T76	
+T81	Reagent 1146 1151	virus
+T82	Reagent 1155 1160	cells
+T83	Amount 1188 1193	25 µl
+T84	Reagent 1194 1199	virus
+R18	Measure Arg1:T84 Arg2:T83	
+T85	Size 1205 1212	96 well
+T86	Location 1213 1218	plate
+R19	Measure Arg1:T86 Arg2:T85	
+T87	Amount 1235 1241	200 µl
+T88	Reagent 1242 1265	log-phase host bacteria
+T89	Temperature 1270 1273	1hr
+R20	Measure Arg1:T88 Arg2:T87	
+R21	Setting Arg1:E17 Arg2:T89	
+R22	Meronym Arg1:T84 Arg2:T81	
+R23	Meronym Arg1:T88 Arg2:T82	
+T90	Reagent 1284 1304	virus-absorbed cells
+T91	Amount 1312 1316	5 ml
+T92	Reagent 1317 1329	overlay agar
+R24	Measure Arg1:T92 Arg2:T91	
+T93	Reagent 1346 1357	solid media
+T94	Reagent 1382 1388	plaque
+T95	Reagent 1406 1421	representatives
+T96	Reagent 1429 1441	plaque types
+R25	Meronym Arg1:T95 Arg2:T96	
+T97	Generic-Measure 1461 1471	appearance
+T98	Reagent 1479 1486	plaques
+R26	Setting Arg1:E23 Arg2:T97	
+R27	Measure Arg1:T98 Arg2:T97	
+T99	Reagent 1499 1504	broth
+T100	Reagent 1523 1533	agar plugs
+R28	Meronym Arg1:T100 Arg2:T99	
+T101	Temperature 1537 1540	4°C
+R29	Setting Arg1:E24 Arg2:T101	
+T102	Action 1563 1573	to diffuse
+E34	Action:T102 Acts-on:T103 Site:T105 Site2:T104
+T103	Reagent 1555 1562	viruses
+T104	Reagent 1599 1604	broth
+T105	Reagent 1585 1589	agar
+T106	Amount 1715 1720	25 µl
+T107	Reagent 1728 1749	plaque-purified virus
+R30	Measure Arg1:T107 Arg2:T106	
+T108	Amount 1793 1799	200 µl
+T109	Reagent 1800 1818	log-phase bacteria
+T110	Time 1823 1827	1 hr
+R31	Measure Arg1:T109 Arg2:T108	
+R32	Setting Arg1:E26 Arg2:T110	
+T111	Amount 1837 1841	5 ml
+T112	Reagent 1842 1847	broth
+R33	Measure Arg1:T112 Arg2:T111	
+T113	Method 1862 1869	shaking
+T114	Reagent 1887 1892	cells
+T115	Reagent 1904 1911	culture
+T116	Size 1920 1926	0.2 µm
+T117	Device 1927 1933	filter
+R34	Measure Arg1:T117 Arg2:T116	
+T118	Reagent 1962 1970	filtrate
+T119	Reagent 1947 1954	portion
+R35	Meronym Arg1:T119 Arg2:T118	
+T120	Reagent 2020 2023	DNA
+T121	Method 2034 2063	Promega Wizard Lambda DNA kit
+T122	Method 0 21	Roseobacter Screening
+T123	Reagent 25 39	Surface Waters
+T124	Reagent 44 51	Viruses
+T7	Location 78 89	from freeze
+T125	Modifier 151 158	sterile
+R36	Mod-Link Arg1:T38 Arg2:T125	
+T126	Reagent 367 372	virus
+R37	Meronym Arg1:T126 Arg2:T46	
+T127	Action 427 433	absorb
+E7	Action:T127 Acts-on:T49 Site:T51
+R38	Setting Arg1:E7 Arg2:T50	
+T128	Numerical 488 499	1/2 or 1/10
+T129	Reagent 500 504	YTSS
+R39	Measure Arg1:T129 Arg2:T128	
+R40	Meronym Arg1:T129 Arg2:T53	
+T130	Action 578 582	Look
+E35	Action:T130 Acts-on:T132
+T131	Modifier 587 595	infected
+T132	Location 596 601	wells
+T133	Modifier 607 655	show lysis with respect to uninoculated controls
+R41	Mod-Link Arg1:T132 Arg2:T131	
+R42	Mod-Link Arg1:T132 Arg2:T133	
+T134	Action 656 662	Enrich
+E36	Action:T134 
+T135	Modifier 663 674	for viruses
+R43	Mod-Link Arg1:E36 Arg2:T135	
+T136	Modifier 696 703	initial
+R44	Mod-Link Arg1:T61 Arg2:T136	
+T137	Modifier 721 728	another
+R45	Mod-Link Arg1:T63 Arg2:T137	
+T138	Action 775 783	frogging
+E37	Action:T138 Site:T140
+T139	Modifier 790 793	new
+T140	Location 794 799	wells
+R46	Mod-Link Arg1:T140 Arg2:T139	
+T141	Modifier 804 830	Once enriched sufficiently
+R47	Mod-Link Arg1:E11 Arg2:T141	
+T142	Action 925 931	pellet
+E38	Action:T142 
+T143	Reagent 932 937	cells
+R48	Coreference-Link Arg1:E38 Arg2:T143	
+T144	Method 979 986	storage
+T145	Action 1006 1019	Plaque-purify
+E39	Action:T145 Acts-on:T146
+T146	Location 1020 1025	wells
+T147	Modifier 1026 1042	containing virus
+R49	Mod-Link Arg1:T146 Arg2:T147	
+T148	Modifier 1167 1186	as a starting point
+R50	Mod-Link Arg1:T83 Arg2:T148	
+T149	Method 1219 1230	enrichments
+T150	Reagent 1616 1623	viruses
+T151	Modifier 1628 1643	plaque-purified
+T152	Action 1656 1665	scaled-up
+E40	Action:T152 Site:T154 Acts-on:T163
+T153	Amount 1669 1673	5 ml
+T154	Reagent 1674 1688	broth cultures
+T155	Method 1693 1709	DNA purification
+R51	Mod-Link Arg1:T150 Arg2:T151	
+R52	Measure Arg1:T154 Arg2:T153	
+T156	Reagent 1751 1760	agar plug
+T157	Amount 1764 1771	~100 µl
+T158	Reagent 1772 1777	broth
+R53	Measure Arg1:T158 Arg2:T157	
+R54	Meronym Arg1:T156 Arg2:T158	
+T159	Action 1974 1983	determine
+E41	Action:T159 Measure-Type-Link:T160 Acts-on:T161
+T160	Measure-Type 1984 1992	how much
+T161	Reagent 1993 1998	virus
+T162	Modifier 2002 2009	present
+R55	Mod-Link Arg1:T161 Arg2:T162	
+T163	Mention 1644 1648	they
+R56	Coreference-Link Arg1:T163 Arg2:T150	
+T164	Modifier 1442 1449	present
+R57	Mod-Link Arg1:T96 Arg2:T164	
+T165	Modifier 1425 1428	all
+R58	Mod-Link Arg1:T96 Arg2:T165	

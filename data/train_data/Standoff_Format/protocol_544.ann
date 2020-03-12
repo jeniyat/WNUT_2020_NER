@@ -1,0 +1,86 @@
+T1	Action 29 35	Dilute
+E1	Action:T1 Acts-on:T10
+T2	Action 78 84	divide
+E2	Action:T2 Acts-on:T12 Site:T13
+T3	Action 158 161	Add
+E3	Action:T3 Acts-on:T15 Site:T16
+T4	Action 201 207	vortex
+E4	Action:T4 
+T5	Action 238 242	Spin
+E5	Action:T5 Using:T18
+T6	Action 307 313	Remove
+E6	Action:T6 Acts-on:T21 Site:T22
+T7	Action 504 511	Extract
+E7	Action:T7 Acts-on:T27 Using:T29
+T8	Action 602 609	Extract
+E8	Action:T8 Acts-on:T30
+T9	Action 706 717	Precipitate
+E9	Action:T9 Acts-on:T33
+T10	Reagent 41 60	nucleic acid sample
+T11	Amount 64 74	100–700 µL
+R1	Setting Arg1:E1 Arg2:T11	
+T12	Reagent 90 97	samples
+T13	Location 103 108	tubes
+T14	Amount 165 177	equal volume
+T15	Reagent 181 187	phenol
+R2	Measure Arg1:T15 Arg2:T14	
+T16	Location 195 199	tube
+T17	Modifier 208 218	vigorously
+R3	Mod-Link Arg1:E4 Arg2:T17	
+T18	Device 248 257	microfuge
+T19	Speed 261 270	top speed
+R4	Setting Arg1:E5 Arg2:T19	
+T20	Time 275 282	1–2 min
+R5	Setting Arg1:E5 Arg2:T20	
+T21	Reagent 318 331	aqueous phase
+T22	Location 337 345	new tube
+T23	Action 438 448	extraction
+E10	Action:T23 Acts-on:T24
+T24	Reagent 431 437	phenol
+T25	Action 480 490	extraction
+E11	Action:T25 Acts-on:T26
+T26	Reagent 473 479	phenol
+T27	Reagent 516 522	sample
+T28	Amount 531 543	equal volume
+T29	Reagent 547 573	chloroform:isoamyl alcohol
+R6	Measure Arg1:T29 Arg2:T28	
+T30	Reagent 614 620	sample
+T31	Amount 635 647	equal volume
+T32	Reagent 651 677	chloroform:isoamyl alcohol
+R7	Measure Arg1:T32 Arg2:T31	
+T33	Reagent 722 734	nucleic acid
+T34	Method 0 28	Phenol/chloroform extraction
+T35	Modifier 128 140	no more than
+T36	Amount 141 147	700 µL
+T37	Modifier 148 151	per
+T38	Location 152 156	tube
+R8	Mod-Link Arg1:T38 Arg2:T37	
+R9	Measure Arg1:T12 Arg2:T36	
+R10	Mod-Link Arg1:T36 Arg2:T35	
+R11	Meronym Arg1:T12 Arg2:T38	
+T39	Action 222 225	mix
+E12	Action:T39 Acts-on:T40
+T40	Reagent 230 236	phases
+T41	Action 286 294	separate
+E13	Action:T41 Acts-on:T42
+T42	Reagent 299 305	phases
+T43	Modifier 347 367	being careful not to
+T44	Action 368 376	transfer
+E14	Action:T44 Acts-on:T46 Site:T47
+R12	Mod-Link Arg1:E14 Arg2:T43	
+T45	Modifier 377 380	any
+T46	Reagent 388 395	protein
+T47	Location 403 418	phase interface
+R13	Mod-Link Arg1:T46 Arg2:T45	
+T48	Action 577 583	remove
+E15	Action:T48 Acts-on:T50
+T49	Modifier 584 587	any
+T50	Reagent 588 600	trace phenol
+T51	Reagent 692 704	trace phenol
+T52	Modifier 688 691	any
+T53	Action 681 687	remove
+E16	Action:T53 Acts-on:T51
+R14	Mod-Link Arg1:T50 Arg2:T49	
+R15	Mod-Link Arg1:T51 Arg2:T52	
+T54	Modifier 621 626	again
+R16	Mod-Link Arg1:E8 Arg2:T54	

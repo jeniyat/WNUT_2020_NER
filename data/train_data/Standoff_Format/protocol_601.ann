@@ -1,0 +1,65 @@
+T1	Action 294 303	Autoclave
+E1	Action:T1 Acts-on:T7 Acts-on2:T8
+T2	Action 344 351	Combine
+E2	Action:T2 Acts-on:T4 Acts-on2:T5
+T3	Action 381 384	Add
+E3	Action:T3 Acts-on:T15
+T4	Reagent 352 362	Solution I
+T5	Reagent 367 378	Solution II
+T6	Modifier 331 341	separately
+T7	Reagent 304 314	Solution I
+T8	Reagent 319 330	Solution II
+T9	Amount 272 278	500 mL
+T10	Amount 102 108	500 mL
+T11	Action 93 101	Bring to
+E4	Action:T11 Acts-on:T13
+T12	Action 263 271	Bring to
+E5	Action:T12 Acts-on:T14
+T13	Reagent 109 121	MilliQ water
+T14	Reagent 279 291	MilliQ water
+R1	Measure Arg1:T13 Arg2:T10	
+R2	Measure Arg1:T14 Arg2:T9	
+R3	Mod-Link Arg1:E1 Arg2:T6	
+T15	Reagent 385 407	trace Metals Solutions
+T16	Reagent 412 428	Vitamin Solution
+T17	Action 408 411	Add
+E6	Action:T17 Acts-on:T16
+T18	Reagent 15 35	Marine Phytoplankton
+T19	Reagent 38 44	Na2SO4
+T20	Reagent 45 49	NaCl
+T21	Reagent 50 53	KCL
+T22	Reagent 54 60	NaHCO3
+T23	Reagent 61 64	KBr
+T24	Reagent 65 69	H3BO
+T25	Reagent 70 74	NaF 
+T26	Concentration 76 83	2.7 g/L
+T27	Modifier 84 89	stock
+R4	Measure Arg1:T25 Arg2:T26	
+R5	Mod-Link Arg1:T25 Arg2:T27	
+T28	Reagent 122 132	MgCl2-6H2O
+T29	Reagent 0 10	ESAW Media
+T30	Reagent 133 143	CaCl2-2H2O
+T31	Reagent 144 154	SrCl2-6H2O
+T32	Reagent 155 163	Tris-HCL
+T33	pH 165 171	pH 7.8
+R6	Measure Arg1:T32 Arg2:T33	
+T34	Concentration 174 179	1.0 M
+T35	Modifier 180 185	stock
+R7	Measure Arg1:T32 Arg2:T34	
+R8	Mod-Link Arg1:T32 Arg2:T35	
+T36	Reagent 187 194	Fe-EDTA
+T37	Reagent 195 202	K2HPO4 
+T38	Concentration 204 209	10g/L
+T39	Modifier 210 215	stock
+T40	Reagent 217 223	NaNO3 
+T41	Concentration 224 230	550 mM
+T42	Modifier 231 236	stock
+T43	Reagent 238 246	Selenite
+T44	Concentration 248 253	10 μM
+T45	Modifier 254 259	stock
+R9	Measure Arg1:T40 Arg2:T41	
+R10	Mod-Link Arg1:T40 Arg2:T42	
+R11	Measure Arg1:T43 Arg2:T44	
+R12	Mod-Link Arg1:T43 Arg2:T45	
+R13	Measure Arg1:T37 Arg2:T38	
+R14	Mod-Link Arg1:T37 Arg2:T39	

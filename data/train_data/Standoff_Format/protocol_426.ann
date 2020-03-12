@@ -1,0 +1,99 @@
+T1	Action 71 75	Wash
+E1	Action:T1 Acts-on:T24 Using:T25
+T2	Action 115 122	dissect
+E2	Action:T2 Acts-on:T26 Using:T27
+T3	Action 168 175	Prepare
+E3	Action:T3 Acts-on:T28
+T4	Action 198 201	Fix
+E4	Action:T4 Acts-on:T29
+T5	Action 272 280	Post fix
+E5	Action:T5 Acts-on:T36 Site:T35
+T6	Action 330 339	Dehydrate
+E6	Action:T6 Acts-on:T41 Measure-Type-Link:T42
+T7	Action 394 402	Transfer
+E7	Action:T7 Site:T21
+T8	Action 420 428	Transfer
+E8	Action:T8 Site:T20
+T9	Action 446 454	Transfer
+E9	Action:T9 Site:T22
+T10	Action 472 480	Transfer
+E10	Action:T10 Site:T23
+T11	Action 498 506	Transfer
+E11	Action:T11 Site:T43
+T12	Action 544 552	Transfer
+E12	Action:T12 Site:T46
+T13	Action 590 598	Transfer
+E13	Action:T13 Site:T47
+T14	Action 617 625	Transfer
+E14	Action:T14 Site:T49
+T15	Action 668 672	take
+E15	Action:T15 Acts-on:T51 Site:T52
+T16	Action 716 721	Mount
+T17	Action 749 755	attach
+E17	Action:T17 Acts-on:T55 Using:T56
+T18	Action 788 792	Take
+E18	Action:T18 Acts-on:T57 Site:T58
+T19	Modifier 76 83	quickly
+T20	Reagent 432 439	acetone
+T21	Reagent 406 413	acetone
+T22	Reagent 458 465	acetone
+T23	Reagent 484 491	acetone
+T24	Reagent 88 97	specimens
+T25	Reagent 101 110	tap water
+T26	Reagent 123 131	tadpoles
+T27	Method 142 166	Wassersug (1976: p. 4-5)
+R1	Mod-Link Arg1:E1 Arg2:T19	
+T28	Reagent 180 195	fixing solution
+T29	Reagent 206 217	dissections
+T30	Concentration 221 223	4%
+T31	Reagent 224 238	Glutaraldehyde
+T32	Action 239 246	diluted
+E19	Action:T32 Using:T33 Acts-on:T31
+T33	Reagent 254 269	fixing solution
+R2	Measure Arg1:T31 Arg2:T30	
+T34	Concentration 300 302	1%
+T35	Reagent 303 328	Osmium tetroxide solution
+T36	Reagent 285 296	dissections
+R3	Measure Arg1:T35 Arg2:T34	
+T37	Concentration 414 417	50%
+T38	Concentration 440 443	70%
+T39	Concentration 466 469	90%
+T40	Concentration 492 495	95%
+R4	Measure Arg1:T21 Arg2:T37	
+R5	Measure Arg1:T20 Arg2:T38	
+R6	Measure Arg1:T22 Arg2:T39	
+R7	Measure Arg1:T23 Arg2:T40	
+T41	Reagent 366 374	acetones
+T42	Measure-Type 346 362	ascending series
+T43	Reagent 530 537	acetone
+T44	Concentration 538 541	95%
+T45	Concentration 584 587	95%
+T46	Reagent 576 583	acetone
+T47	Reagent 602 609	acetone
+T48	Concentration 610 614	100%
+R8	Measure Arg1:T43 Arg2:T44	
+R9	Measure Arg1:T46 Arg2:T45	
+R10	Measure Arg1:T47 Arg2:T48	
+T49	Reagent 649 656	acetone
+T50	Concentration 657 661	100%
+R11	Measure Arg1:T49 Arg2:T50	
+T51	Reagent 678 687	specimens
+T52	Device 693 713	Critical Point Dryer
+T53	Reagent 726 735	specimens
+T55	Mention 756 760	them
+T56	Seal 768 785	double-sided tape
+T57	Reagent 797 806	specimens
+T58	Device 814 832	High Vaccum Coater
+T59	Method 0 26	Buccopharyngeal morphology
+T60	Reagent 30 38	tadpoles
+T61	Device 42 70	Scanning Electron Microscope
+T62	Concentration 388 391	30%
+R13	Measure Arg1:T41 Arg2:T62	
+T63	Reagent 518 526	solution
+T64	Reagent 564 572	solution
+T65	Reagent 637 645	solution
+T66	Action 853 860	analyze
+E20	Action:T66 Acts-on:T68
+T67	Location 739 745	stubs 
+T68	Mention 861 865	them
+R14	Coreference-Link Arg1:T68 Arg2:T57	

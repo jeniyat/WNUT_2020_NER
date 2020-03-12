@@ -1,0 +1,81 @@
+T1	Action 44 51	Prepare
+E1	Action:T1 Acts-on:T11
+T2	Action 67 77	Post-stain
+E2	Action:T2 Using:T12
+T3	Action 121 128	prepare
+E3	Action:T3 Product:T13 Acts-on:T16 Acts-on2:T18
+T4	Action 185 192	Prepare
+E4	Action:T4 Product:T20 Acts-on:T22
+T5	Action 287 290	Add
+E5	Action:T5 Acts-on:T23 Site:T25
+T6	Action 328 332	rock
+E6	Action:T6 Acts-on:T42
+T7	Action 366 369	Run
+E7	Action:T7 
+T8	Action 425 435	Post-stain
+E8	Action:T8 Acts-on:T28 Site:T29
+T10	Concentration 52 56	0.7%
+T11	Reagent 57 64	agarose
+R1	Measure Arg1:T11 Arg2:T10	
+T12	Reagent 83 92	SYBR Gold
+T13	Reagent 129 136	samples
+T14	Amount 138 141	1µl
+T15	Concentration 145 148	10x
+T16	Reagent 149 163	loading buffer
+T17	Amount 168 172	10µl
+T18	Reagent 176 182	sample
+R2	Measure Arg1:T18 Arg2:T17	
+R3	Measure Arg1:T16 Arg2:T15	
+R4	Measure Arg1:T16 Arg2:T14	
+T19	Modifier 197 208	appropriate
+T20	Reagent 209 218	dilutions
+T21	Modifier 226 237	appropriate
+T22	Reagent 238 244	marker
+R5	Mod-Link Arg1:T22 Arg2:T21	
+R6	Mod-Link Arg1:T20 Arg2:T19	
+T23	Reagent 291 305	running buffer
+T25	Reagent 309 318	cover gel
+T24	Modifier 321 327	Gently
+R7	Mod-Link Arg1:E6 Arg2:T24	
+T26	Generic-Measure 373 376	50V
+T27	Time 383 392	2-4 hours
+R8	Setting Arg1:E7 Arg2:T26	
+R9	Setting Arg1:E7 Arg2:T27	
+T28	Reagent 440 443	gel
+T29	Reagent 447 463	SYBR Gold ‘bath’
+T30	Amount 465 469	20ul
+T31	Reagent 470 474	SYBR
+T32	Amount 476 481	200ml
+T33	Reagent 482 485	TAE
+T34	Time 490 500	30 minutes
+R10	Measure Arg1:T33 Arg2:T32	
+R11	Measure Arg1:T31 Arg2:T30	
+R12	Meronym Arg1:T31 Arg2:T29	
+R13	Meronym Arg1:T33 Arg2:T29	
+R14	Setting Arg1:E8 Arg2:T34	
+T9	Action 0 8	Checking
+E9	Action:T9 Measure-Type-Link:T36 Using:T37
+T35	Reagent 9 12	DNA
+T36	Measure-Type 13 26	Concentration
+T37	Reagent 32 43	Agarose Gel
+T38	Reagent 105 108	gel
+T39	Action 112 119	cooling
+E10	Action:T39 Acts-on:T38
+T40	Amount 255 259	10ng
+T41	Reagent 263 283	HINDIII [lambda] DNA
+R15	Measure Arg1:T41 Arg2:T40	
+T42	Device 337 341	comb
+T43	Action 349 356	pulling
+E11	Action:T43 Acts-on:T44
+T44	Mention 357 359	it
+R16	Coreference-Link Arg1:T44 Arg2:T42	
+T45	Action 503 510	Compare
+E12	Action:T45 Measure-Type-Link:T47 Using:T48
+T46	Reagent 511 514	gel
+T47	Measure-Type 515 529	quantification
+T48	Device 553 561	Nanodrop
+T49	Modifier 588 593	clean
+T50	Reagent 599 602	DNA
+T51	Action 603 607	prep
+E13	Action:T51 Acts-on:T50
+R17	Mod-Link Arg1:E13 Arg2:T49	

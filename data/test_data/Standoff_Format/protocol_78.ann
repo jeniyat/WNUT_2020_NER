@@ -1,0 +1,151 @@
+T1	Action 33 36	Mix
+E1	Action:T1 Acts-on:T20
+T3	Action 105 108	Mix
+E3	Action:T3 Acts-on:T23 Using:T24
+T4	Action 256 264	Separate
+E4	Action:T4 Acts-on:T17 Site:T27 Using:T28 Using2:T29
+T5	Action 341 347	Repeat
+E5	Action:T5 Using:T18
+T6	Action 551 556	Check
+E6	Action:T6 Acts-on:T2
+T7	Action 591 597	mixing
+E7	Action:T7 Acts-on:T30 Acts-on2:T33
+T10	Action 856 862	Repeat
+E10	Action:T10 Using:T19
+T14	Action 1227 1230	Use
+E14	Action:T14 Acts-on:T11
+T15	Action 1260 1267	discard
+E15	Action:T15 Acts-on:T11
+T16	Amount 37 42	25 ml
+T17	Reagent 269 287	deionized material
+T18	Method 352 372	deionization process
+T19	Method 867 887	deionization process
+T11	Reagent 1236 1243	aliquot
+T12	Modifier 1231 1235	each
+R1	Mod-Link Arg1:T11 Arg2:T12	
+T13	Generic-Measure 46 49	40%
+T20	Reagent 50 57	glyoxal
+T23	Reagent 113 121	solution
+T24	Device 125 141	magnetic stirrer
+T25	Time 146 156	30 minutes
+T26	Temperature 160 176	room temperature
+T27	Reagent 297 302	resin
+T29	Method 329 339	filtration
+T28	Method 306 315	decanting
+R2	Setting Arg1:E3 Arg2:T25	
+R3	Setting Arg1:E3 Arg2:T26	
+R4	Measure Arg1:T20 Arg2:T13	
+R5	Measure Arg1:T20 Arg2:T16	
+T22	Amount 598 604	200 μl
+T30	Reagent 608 615	glyoxal
+T31	Amount 621 625	2 μl
+T32	Concentration 631 639	10 mg/ml
+T33	Reagent 640 656	aqueous solution
+T34	Reagent 660 677	bromocresol green
+T2	Reagent 561 587	pH of the glyoxal solution
+R6	Measure Arg1:T30 Arg2:T22	
+R7	Measure Arg1:T33 Arg2:T31	
+R8	Measure Arg1:T33 Arg2:T32	
+R9	Meronym Arg1:T33 Arg2:T34	
+T8	Action 1108 1114	stored
+E2	Action:T8 Acts-on:T9 Site:T37 Site2:T39
+T9	Reagent 1083 1100	Deionized glyoxal
+T21	Time 1115 1127	indefinitely
+T35	Temperature 1131 1137	-20 °C
+T36	Temperature 1142 1148	-80 °C
+T37	Reagent 1156 1164	nitrogen
+T38	Modifier 1168 1182	tightly sealed
+T39	Location 1183 1197	small aliquots
+T40	Location 1204 1225	microcentrifuge tubes
+R10	Setting Arg1:E2 Arg2:T21	
+R11	Setting Arg1:E2 Arg2:T35	
+R12	Or Arg1:T35 Arg2:T36	
+R13	Mod-Link Arg1:T39 Arg2:T38	
+R14	Or Arg1:T39 Arg2:T40	
+T41	Action 64 73	deionized
+E8	Action:T41 Using:T43
+T42	Amount 79 84	2.5 g
+T43	Reagent 94 103	bed resin
+T44	Modifier 88 93	mixed
+R15	Mod-Link Arg1:T43 Arg2:T44	
+R16	Measure Arg1:T43 Arg2:T42	
+T45	Method 0 11	Preparation
+T46	Modifier 15 24	deionized
+T47	Reagent 25 32	glyoxal
+R17	Mod-Link Arg1:T47 Arg2:T46	
+T48	Modifier 206 224	from blue to amber
+T50	Reagent 182 187	resin
+T51	Modifier 188 193	color
+T52	Action 199 205	change
+E9	Action:T52 Acts-on:T50
+R18	Mod-Link Arg1:E9 Arg2:T48	
+R19	Mod-Link Arg1:T50 Arg2:T51	
+T49	Mention 231 234	its
+R20	Coreference-Link Arg1:T49 Arg2:T50	
+T53	Modifier 235 254	capacity is reached
+R21	Mod-Link Arg1:T49 Arg2:T53	
+T54	Modifier 320 327	sterile
+T55	Modifier 401 406	color
+T56	Reagent 414 419	resin
+T57	Action 420 435	does not change
+E11	Action:T57 Acts-on:T56
+T58	Modifier 436 443	anymore
+R22	Mod-Link Arg1:E11 Arg2:T58	
+R23	Mod-Link Arg1:T56 Arg2:T55	
+T60	Modifier 445 463	Approximately half
+T61	Reagent 471 486	resin particles
+R24	Mod-Link Arg1:T61 Arg2:T60	
+T59	Action 487 493	remain
+E12	Action:T59 Acts-on:T61
+T62	Modifier 494 498	blue
+T63	Mention 503 507	half
+T64	Action 508 514	become
+E13	Action:T64 Acts-on:T63
+T65	Modifier 515 520	amber
+T66	Modifier 521 526	after
+T67	Time 529 538	30-minute
+T68	Method 539 549	incubation
+R25	Mod-Link Arg1:T67 Arg2:T66	
+R26	Mod-Link Arg1:E13 Arg2:T65	
+R28	Coreference-Link Arg1:T63 Arg2:T61	
+R27	Mod-Link Arg1:E12 Arg2:T62	
+T69	Action 682 691	observing
+E16	Action:T69 
+T70	Method 696 708	color change
+T71	Reagent 710 727	Bromocresol green
+T72	Modifier 731 737	yellow
+T73	pH 741 748	pH <4.8
+T74	Modifier 753 763	blue-green
+T75	pH 767 774	pH >5.2
+T76	Modifier 776 789	Alternatively
+T77	Action 791 794	use
+E17	Action:T77 Acts-on:T78
+T78	Device 795 814	pH indicator strips
+T79	Modifier 815 825	instead of
+T80	Reagent 828 854	bromocresol green solution
+R29	Mod-Link Arg1:T80 Arg2:T79	
+R30	Mod-Link Arg1:E17 Arg2:T76	
+T81	Modifier 906 911	until
+T82	Measure-Type 916 918	pH
+T83	Reagent 926 933	glyoxal
+T84	Numerical 937 941	>5.5
+R31	Of-Type Arg1:T84 Arg2:T82	
+R32	Measure Arg1:T83 Arg2:T84	
+T85	Modifier 943 948	Final
+T86	Method 949 962	resin removal
+T87	Modifier 988 1003	small pore-size
+T88	Device 1004 1010	filter
+T89	Size 1017 1029	0.22-0.45 µm
+T90	Modifier 1031 1047	gamma sterilized
+R33	Mod-Link Arg1:T88 Arg2:T87	
+R34	Measure Arg1:T88 Arg2:T89	
+R35	Mod-Link Arg1:T88 Arg2:T90	
+T91	Action 1052 1057	avoid
+E18	Action:T91 Acts-on:T93 Using:T92
+T92	Method 1058 1068	carry-over
+T93	Reagent 1076 1081	resin
+T94	Action 973 977	done
+E19	Action:T94 
+R36	Mod-Link Arg1:E19 Arg2:T85	
+T95	Modifier 1244 1253	only once
+R37	Mod-Link Arg1:E14 Arg2:T95	

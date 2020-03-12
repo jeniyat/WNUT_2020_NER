@@ -1,0 +1,96 @@
+T1	Action 27 31	Thaw
+E1	Action:T1 Acts-on:T14 Site:T15
+T2	Action 145 148	Add
+E2	Action:T2 Acts-on:T18 Site:T13
+T3	Action 186 189	Mix
+E3	Action:T3 Using:T27 Acts-on:T28
+T4	Action 294 299	Place
+E4	Action:T4 Acts-on:T25 Site:T26
+T5	Action 347 357	Heat shock
+E5	Action:T5 
+T6	Action 394 397	Add
+E6	Action:T6 Acts-on:T30 Site:T31
+T7	Action 444 449	Place
+E7	Action:T7 Acts-on:T32
+T8	Action 479 484	Shake
+E8	Action:T8 
+T9	Action 517 521	Warm
+E9	Action:T9 Acts-on:T43
+T10	Action 548 554	Spread
+E10	Action:T10 Acts-on:T38 Acts-on2:T39 Site:T40
+T11	Action 616 624	Incubate
+E11	Action:T11 
+T12	Amount 149 154	50 µl
+T13	Reagent 181 184	DNA
+T14	Reagent 32 47	competent cells
+T15	Location 51 54	ice
+T16	Action 55 60	Chill
+E12	Action:T16 Acts-on:T14 Site:T47
+T17	Modifier 61 74	approximately
+T18	Reagent 158 173	competent cells
+T19	Modifier 190 196	gently
+T20	Amount 398 404	950 µl
+T21	Modifier 408 424	room temperature
+T22	Temperature 361 365	42°C
+T23	Time 370 380	30 seconds
+T24	Time 323 333	30 minutes
+T25	Reagent 304 311	mixture
+T26	Location 315 318	ice
+T27	Method 200 233	pipetting up and down or flicking
+T28	Device 238 242	tube
+T29	Modifier 243 252	4–5 times
+T30	Reagent 425 430	media
+T31	Location 438 442	tube
+T32	Device 450 454	tube
+T33	Temperature 458 462	37°C
+T34	Time 467 477	60 minutes
+T35	Modifier 485 495	vigorously
+R1	Mod-Link Arg1:E8 Arg2:T35	
+T36	Temperature 542 546	37°C
+T37	Amount 555 564	50–100 µl
+T38	Reagent 572 577	cells
+T39	Reagent 582 598	ligation mixture
+T40	Location 608 614	plates
+T41	Modifier 625 634	overnight
+R2	Mod-Link Arg1:E11 Arg2:T41	
+T42	Temperature 638 642	37°C
+R3	Setting Arg1:E11 Arg2:T42	
+R4	Measure Arg1:T38 Arg2:T37	
+R5	Measure Arg1:T39 Arg2:T37	
+T43	Device 522 538	selection plates
+R6	Setting Arg1:E9 Arg2:T36	
+R7	Setting Arg1:E7 Arg2:T33	
+R8	Setting Arg1:E7 Arg2:T34	
+R9	Mod-Link Arg1:T30 Arg2:T21	
+R10	Measure Arg1:T30 Arg2:T20	
+R11	Setting Arg1:E5 Arg2:T22	
+R12	Setting Arg1:E5 Arg2:T23	
+R13	Setting Arg1:E4 Arg2:T24	
+R14	Mod-Link Arg1:E3 Arg2:T19	
+R15	Mod-Link Arg1:E3 Arg2:T29	
+R16	Measure Arg1:T18 Arg2:T12	
+R17	Mod-Link Arg1:E12 Arg2:T17	
+T44	Amount 75 79	5 ng
+T45	Reagent 94 110	ligation mixture
+T46	Amount 116 122	1.5 ml
+T47	Location 123 143	microcentrifuge tube
+R18	Measure Arg1:T45 Arg2:T44	
+R19	Measure Arg1:T47 Arg2:T46	
+T48	Method 0 23	Transformation Protocol
+T49	Amount 81 85	2 μl
+R20	Coreference-Link Arg1:T49 Arg2:T44	
+T50	Action 256 259	mix
+E13	Action:T50 Acts-on:T51 Acts-on2:T52
+T51	Reagent 264 269	cells
+T52	Reagent 274 277	DNA
+T53	Action 382 392	Do not mix
+E14	Action:T53 
+T54	Action 335 345	Do not mix
+E15	Action:T54 
+T55	Action 279 292	Do not vortex
+E16	Action:T55 
+T56	Speed 497 504	250 rpm
+R21	Setting Arg1:E8 Arg2:T56	
+T57	Action 509 515	rotate
+E17	Action:T57 
+R22	Or Arg1:E8 Arg2:E17	

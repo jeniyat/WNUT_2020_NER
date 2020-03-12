@@ -1,0 +1,130 @@
+T1	Action 68 77	Pre-chill
+E1	Action:T1 Acts-on:T20 Site:T21
+T2	Action 114 122	Pre-heat
+E2	Action:T2 Acts-on:T23
+T3	Action 151 155	Thaw
+E3	Action:T3 Acts-on:T25 Site:T26
+T4	Action 200 203	mix
+E4	Action:T4 Acts-on:T25
+T5	Action 237 244	Aliquot
+E5	Action:T5 Acts-on:T28 Site:T31
+T6	Action 292 297	Swirl
+E6	Action:T6 Acts-on:T32
+T7	Action 315 323	incubate
+E7	Action:T7 Site:T34 Acts-on:T32
+T8	Action 346 354	swirling
+E8	Action:T8 Acts-on:T32
+T9	Action 380 383	Add
+E9	Action:T9 Acts-on:T40
+T10	Action 429 434	Swirl
+E10	Action:T10 
+T11	Action 447 455	incubate
+E11	Action:T11 Acts-on:T44
+T12	Action 480 484	Heat
+E12	Action:T12 Acts-on:T46
+T13	Action 572 580	Incubate
+E13	Action:T13 Acts-on:T50 Site:T51
+T14	Action 610 613	Add
+E14	Action:T14 Acts-on:T55 Site:T57
+T15	Action 652 660	Incubate
+E15	Action:T15 
+T16	Action 710 715	Plate
+E16	Action:T16 Acts-on:T64 Site:T66
+T17	Action 807 815	Incubate
+E17	Action:T17 Acts-on:T68
+T18	Amount 78 82	14mL
+T19	Modifier 83 90	sterile
+T20	Location 91 104	culture tubes
+T21	Location 108 111	ice
+T22	Amount 123 128	0.9mL
+T23	Reagent 132 140	LB broth
+T24	Temperature 144 148	42°C
+T25	Reagent 156 187	XL-10 Gold Ultracompetent cells
+T26	Location 191 194	ice
+T27	Modifier 204 210	gently
+R1	Mod-Link Arg1:E4 Arg2:T27	
+R2	Mod-Link Arg1:T20 Arg2:T19	
+R3	Measure Arg1:T20 Arg2:T18	
+R4	Measure Arg1:T23 Arg2:T22	
+R5	Setting Arg1:E2 Arg2:T24	
+T28	Reagent 245 250	cells
+T29	Modifier 256 267	pre-chilled
+T30	Modifier 268 275	sterile
+T31	Location 276 289	culture tubes
+R6	Mod-Link Arg1:T31 Arg2:T30	
+R7	Mod-Link Arg1:T31 Arg2:T29	
+T32	Location 298 302	tube
+T33	Modifier 303 309	gently
+T34	Location 327 330	ice
+T35	Time 335 345	10 minutes
+T36	Modifier 355 361	gently
+T37	Modifier 362 367	every
+T38	Time 368 377	2 minutes
+R8	Mod-Link Arg1:E6 Arg2:T33	
+R9	Setting Arg1:E7 Arg2:T35	
+R10	Mod-Link Arg1:E8 Arg2:T36	
+R11	Mod-Link Arg1:T38 Arg2:T37	
+R12	Setting Arg1:E8 Arg2:T38	
+T39	Amount 384 392	0.1-50ng
+T40	Reagent 396 399	DNA
+T41	Amount 403 406	2uL
+T42	Reagent 410 426	ligation product
+R13	Measure Arg1:T42 Arg2:T41	
+R14	Measure Arg1:T40 Arg2:T39	
+R15	Or Arg1:T40 Arg2:T42	
+T43	Modifier 435 441	gently
+T44	Location 459 462	ice
+T45	Time 467 477	30 minutes
+R16	Mod-Link Arg1:E10 Arg2:T43	
+R17	Setting Arg1:E11 Arg2:T45	
+T46	Location 485 495	pulse tube
+T47	Temperature 499 503	42°C
+T48	Modifier 508 515	exactly
+T49	Time 516 526	30 seconds
+R18	Mod-Link Arg1:T49 Arg2:T48	
+R19	Setting Arg1:E12 Arg2:T47	
+R20	Setting Arg1:E12 Arg2:T49	
+T50	Reagent 581 586	cells
+T51	Location 590 593	ice
+T52	Time 598 607	2 minutes
+R21	Setting Arg1:E13 Arg2:T52	
+T53	Amount 614 619	0.9mL
+T54	Modifier 623 633	pre-heated
+T55	Reagent 634 636	LB
+T56	Modifier 640 644	each
+T57	Location 645 649	tube
+R22	Mod-Link Arg1:T55 Arg2:T54	
+R23	Measure Arg1:T55 Arg2:T53	
+R24	Mod-Link Arg1:T57 Arg2:T56	
+T58	Temperature 664 668	37°C
+T59	Time 673 679	1 hour
+T61	Speed 696 707	225-250 rpm
+T60	Action 685 692	shaking
+E18	Action:T60 
+R25	Setting Arg1:E15 Arg2:T58	
+R26	Setting Arg1:E15 Arg2:T59	
+R27	Setting Arg1:E18 Arg2:T61	
+T62	Amount 729 734	200uL
+T63	Modifier 716 728	no more than
+T64	Reagent 738 760	transformation mixture
+T65	Modifier 761 764	per
+T66	Location 765 778	LB-agar plate
+T67	Reagent 784 804	antibiotic selection
+R28	Meronym Arg1:T67 Arg2:T66	
+R29	Measure Arg1:T64 Arg2:T62	
+R30	Mod-Link Arg1:T62 Arg2:T63	
+R31	Mod-Link Arg1:T66 Arg2:T65	
+T68	Location 816 822	plates
+T69	Temperature 826 830	37°C
+T70	Time 831 840	overnight
+R32	Setting Arg1:E17 Arg2:T69	
+R33	Setting Arg1:E17 Arg2:T70	
+T71	Action 0 9	Transform
+E19	Action:T71 Acts-on:T72
+T72	Reagent 10 54	Stratagene's XL-10 Gold Ultracompetent cells
+T73	Measure-Type 532 540	duration
+T74	Action 548 558	heat pulse
+E20	Action:T74 Measure-Type-Link:T73
+T75	Modifier 56 66	simplified
+T76	Modifier 228 234	thawed
+R34	Mod-Link Arg1:T25 Arg2:T76	

@@ -1,0 +1,205 @@
+T1	Action 33 36	Add
+E1	Action:T1 Site:T34 Acts-on:T30 Acts-on2:T32
+T2	Action 130 135	place
+E2	Action:T2 Acts-on:T35 Site:T38
+T3	Action 196 199	Add
+E3	Action:T3 Acts-on:T41 Site:T42
+T4	Action 232 237	place
+E4	Action:T4 Acts-on:T44 Site:T45
+T5	Action 268 271	Run
+E5	Action:T5 
+T6	Action 300 310	Centrifuge
+E6	Action:T6 
+T7	Action 349 356	Discard
+E7	Action:T7 Acts-on:T51
+T8	Action 451 459	Transfer
+E8	Action:T8 Acts-on:T55 Site:T58
+T9	Action 519 527	Incubate
+E9	Action:T9 
+T10	Action 563 566	Add
+E10	Action:T10 Acts-on:T63 Acts-on2:T64
+T11	Action 599 602	Mix
+E11	Action:T11 
+T13	Action 678 688	Centrifuge
+E13	Action:T13 
+T14	Action 727 735	Transfer
+E14	Action:T14 Acts-on:T75 Site:T79
+T15	Action 817 820	Add
+E15	Action:T15 Acts-on:T81
+T16	Action 865 868	mix
+E16	Action:T16 
+T17	Action 883 891	Incubate
+E17	Action:T17 
+T18	Action 930 940	Centrifuge
+E18	Action:T18 
+T19	Action 979 986	Discard
+E19	Action:T19 Acts-on:T89
+T20	Action 1001 1004	Add
+E20	Action:T20 Acts-on:T92 Site:T94
+T21	Action 1060 1066	Vortex
+E21	Action:T21 
+T22	Action 1082 1092	centrifuge
+E22	Action:T22 
+T23	Action 1124 1131	Discard
+E23	Action:T23 Acts-on:T99
+T25	Action 1209 1212	Add
+E25	Action:T25 Acts-on:T105 Site:T107
+T26	Action 1261 1266	Place
+E26	Action:T26 Acts-on:T108 Site:T109
+T27	Action 1318 1324	Vortex
+E27	Action:T27 
+T28	Action 1340 1346	repeat
+E28	Action:T28 Using:T113
+T29	Action 670 676	VORTEX
+E29	Action:T29 
+T12	Amount 37 44	1000 µL
+T30	Reagent 48 54	Trizol
+T31	Amount 59 68	50-100 mg
+T32	Reagent 72 87	parsite tissues
+T33	Amount 93 97	2 mL
+T34	Location 98 112	eppendorf tube
+T35	Reagent 140 156	parasite tissues
+T36	Modifier 180 188	labelled
+T37	Modifier 168 178	respective
+T38	Location 189 193	tube
+R1	Mod-Link Arg1:T38 Arg2:T36	
+R2	Mod-Link Arg1:T38 Arg2:T37	
+R3	Measure Arg1:T30 Arg2:T12	
+T39	Modifier 55 58	per
+R4	Measure Arg1:T32 Arg2:T31	
+R5	Mod-Link Arg1:T32 Arg2:T39	
+T40	Numerical 200 201	1
+T41	Reagent 202 212	metal bead
+T42	Location 223 227	tube
+T43	Modifier 218 222	each
+R6	Mod-Link Arg1:T42 Arg2:T43	
+R7	Measure Arg1:T41 Arg2:T40	
+T44	Location 242 247	tubes
+T45	Device 255 266	TissueLyzer
+T46	Generic-Measure 278 283	30 Hz
+T47	Time 288 297	3 minutes
+R8	Setting Arg1:E5 Arg2:T46	
+R9	Setting Arg1:E5 Arg2:T47	
+T48	Speed 314 324	12,000 x g
+T49	Time 329 339	10 minutes
+T50	Temperature 343 346	4°C
+R10	Setting Arg1:E6 Arg2:T48	
+R11	Setting Arg1:E6 Arg2:T49	
+R12	Setting Arg1:E6 Arg2:T50	
+T51	Reagent 357 366	top layer
+T52	Reagent 370 376	liquid
+T53	Action 377 383	formed
+E12	Action:T53 Site:T54 Product:T51
+T54	Location 391 400	eppendorf
+R13	Meronym Arg1:T51 Arg2:T52	
+T55	Reagent 460 471	supernatant
+T56	Modifier 479 482	new
+T57	Modifier 487 495	labelled
+T58	Location 496 510	eppendorf tube
+T59	Amount 512 516	2 mL
+R14	Measure Arg1:T58 Arg2:T59	
+R15	Mod-Link Arg1:T58 Arg2:T57	
+R16	Mod-Link Arg1:T58 Arg2:T56	
+T60	Temperature 531 547	room temperature
+T61	Time 552 561	5 minutes
+R17	Setting Arg1:E9 Arg2:T60	
+R18	Setting Arg1:E9 Arg2:T61	
+T62	Amount 567 573	200 µL
+T63	Reagent 577 587	chloroform
+T64	Location 592 596	tube
+T65	Modifier 588 591	per
+R19	Mod-Link Arg1:T64 Arg2:T65	
+R20	Measure Arg1:T63 Arg2:T62	
+T66	Modifier 603 613	vigorously
+T67	Action 617 626	inverting
+E30	Action:T67 Acts-on:T68 Using:T69
+T68	Location 631 636	tubes
+T69	Method 637 648	up and down
+T70	Time 653 661	1 minute
+R21	Mod-Link Arg1:E11 Arg2:T66	
+R22	Setting Arg1:E30 Arg2:T70	
+T71	Speed 692 702	12,000 x g
+T72	Time 707 717	15 minutes
+T73	Temperature 721 724	4°C
+R23	Setting Arg1:E13 Arg2:T71	
+R24	Setting Arg1:E13 Arg2:T72	
+R25	Setting Arg1:E13 Arg2:T73	
+T74	Modifier 741 751	precaution
+T75	Reagent 756 769	aqueous phase
+T76	Reagent 771 782	supernatant
+T77	Modifier 791 794	new
+T78	Amount 795 799	2 mL
+T79	Location 800 814	eppendorf tube
+R26	Measure Arg1:T79 Arg2:T78	
+R27	Mod-Link Arg1:T79 Arg2:T77	
+R28	Or Arg1:T75 Arg2:T76	
+R29	Mod-Link Arg1:E14 Arg2:T74	
+T80	Amount 821 827	500 µL
+T81	Reagent 831 853	RNAse free isopropanol
+T82	Concentration 855 859	100%
+T83	Modifier 869 879	thoroughly
+R30	Mod-Link Arg1:E16 Arg2:T83	
+R31	Measure Arg1:T81 Arg2:T80	
+R32	Measure Arg1:T81 Arg2:T82	
+T84	Time 896 906	15 minutes
+T85	Temperature 910 926	room temperature
+R33	Setting Arg1:E17 Arg2:T84	
+R34	Setting Arg1:E17 Arg2:T85	
+T86	Speed 944 954	12,000 x g
+T87	Time 959 969	10 minutes
+T88	Temperature 973 976	4°C
+R35	Setting Arg1:E18 Arg2:T86	
+R36	Setting Arg1:E18 Arg2:T87	
+R37	Setting Arg1:E18 Arg2:T88	
+T89	Reagent 987 998	supernatant
+T90	Amount 1005 1012	1000 µL
+T91	Concentration 1016 1019	75%
+T92	Reagent 1020 1027	ethanol
+T93	Modifier 1049 1052	per
+T94	Location 1053 1057	tube
+R38	Mod-Link Arg1:T94 Arg2:T93	
+R39	Measure Arg1:T92 Arg2:T91	
+R40	Measure Arg1:T92 Arg2:T90	
+T95	Modifier 1067 1077	thoroughly
+T96	Speed 1096 1101	7500g
+T97	Time 1106 1115	5 minutes
+T98	Temperature 1119 1122	4°C
+R41	Mod-Link Arg1:E21 Arg2:T95	
+R42	Setting Arg1:E22 Arg2:T96	
+R43	Setting Arg1:E22 Arg2:T97	
+R44	Setting Arg1:E22 Arg2:T98	
+T99	Reagent 1132 1143	supernatant
+T100	Location 1156 1161	tubes
+T101	Action 1162 1169	dry out
+E31	Action:T101 Acts-on:T100
+T24	Time 1194 1206	5-10 minutes
+T102	Action 1183 1189	opened
+E24	Action:T102 Acts-on:T103 Site:T100
+T103	Seal 1179 1182	cap
+R45	Setting Arg1:E24 Arg2:T24	
+T104	Amount 1213 1221	20-50 µL
+T105	Reagent 1225 1243	DEPC treated water
+T106	Modifier 1249 1253	each
+T107	Location 1254 1258	tube
+R46	Mod-Link Arg1:T107 Arg2:T106	
+R47	Measure Arg1:T105 Arg2:T104	
+T108	Location 1271 1276	tubes
+T109	Device 1286 1295	incubator
+T110	Temperature 1297 1301	65°C
+T111	Time 1307 1315	1 minute
+R48	Setting Arg1:T109 Arg2:T110	
+R49	Setting Arg1:T109 Arg2:T111	
+T112	Modifier 1325 1335	thoroughly
+T113	Method 1347 1354	step 19
+R50	Mod-Link Arg1:E27 Arg2:T112	
+T114	Reagent 1361 1364	RNA
+T115	Modifier 1368 1378	completely
+T116	Action 1379 1388	dissolved
+E32	Action:T116 Acts-on:T114
+R51	Mod-Link Arg1:E32 Arg2:T115	
+T117	Reagent 0 3	RNA
+T118	Method 4 23	extraction protocol
+T119	Method 411 425	centrifugation
+T120	Reagent 436 447	fatty acids
+R52	Meronym Arg1:T120 Arg2:T52	
+T121	Temperature 1042 1047	-20°C

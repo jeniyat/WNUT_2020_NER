@@ -1,0 +1,49 @@
+T1	Action 50 53	Mix
+E1	Action:T1 Acts-on:T8 Site:T7
+T2	Action 327 337	inactivate
+E2	Action:T2 Acts-on:T17
+T4	Action 166 175	incubated
+E4	Action:T4 Acts-on:T20
+T5	Action 269 278	incubated
+E5	Action:T5 Acts-on:T21
+T6	Modifier 84 91	sterile
+T7	Location 92 106	microfuge tube
+T8	Reagent 68 78	components
+T9	Modifier 58 67	following
+R1	Mod-Link Arg1:T8 Arg2:T9	
+R2	Mod-Link Arg1:T7 Arg2:T6	
+T10	Temperature 179 195	room temperature
+T11	Time 200 210	15 minutes
+T12	Temperature 282 298	room temperature
+T13	Time 303 313	30 minutes
+T14	Temperature 384 388	70°C
+T15	Time 393 403	10 minutes
+R3	Setting Arg1:E4 Arg2:T10	
+R4	Setting Arg1:E4 Arg2:T11	
+R5	Setting Arg1:E5 Arg2:T12	
+R6	Setting Arg1:E5 Arg2:T13	
+T16	Action 373 380	heating
+E6	Action:T16 Acts-on:T17
+R7	Setting Arg1:E6 Arg2:T14	
+R8	Setting Arg1:E6 Arg2:T15	
+T17	Reagent 338 344	enzyme
+T18	Modifier 315 326	Immediately
+R9	Mod-Link Arg1:E2 Arg2:T18	
+T19	Modifier 345 369	in the blunting reaction
+R10	Mod-Link Arg1:T17 Arg2:T19	
+T20	Reagent 130 161	restriction enzyme digested DNA
+T21	Reagent 227 248	sheared/nebulized DNA
+T22	Reagent 252 264	PCR products
+R11	Or Arg1:T21 Arg2:T22	
+T3	Method 0 17	Blunting Protocol
+T23	Device 22 41	NEB PCR Cloning Kit
+T24	Method 109 118	Reactions
+T25	Method 212 221	Reactions
+T26	Action 405 412	Proceed
+E3	Action:T26 Using:T29
+T27	Modifier 413 421	directly
+T28	Method 429 442	ligation step
+T29	Device 453 471	Quick Ligation Kit
+T30	Reagent 488 510	standard T4 DNA Ligase
+R12	Or Arg1:T30 Arg2:T29	
+R13	Mod-Link Arg1:E3 Arg2:T27	

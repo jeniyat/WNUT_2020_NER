@@ -1,0 +1,102 @@
+T1	Action 24 30	Create
+E1	Action:T1 Acts-on:T12
+T2	Action 71 74	Mix
+E2	Action:T2 
+T3	Action 79 87	incubate
+E3	Action:T3 
+T4	Action 185 189	Spin
+E4	Action:T4 Using:T56
+T5	Action 260 268	transfer
+E5	Action:T5 Acts-on:T28 Site:T31 Using:T30
+T6	Action 327 330	Add
+E6	Action:T6 Acts-on:T34
+T7	Action 382 386	Spin
+E7	Action:T7 Using:T52
+T8	Action 454 462	Transfer
+E8	Action:T8 Acts-on:T40
+T9	Action 496 499	Add
+E9	Action:T9 Acts-on:T43
+T10	Action 542 546	Spin
+E10	Action:T10 Using:T54
+T11	Action 614 622	Transfer
+E11	Action:T11 Acts-on:T48
+T12	Reagent 31 38	mixture
+T13	Reagent 42 46	CsCl
+T14	Reagent 48 60	Proteinase K
+T15	Reagent 66 69	SDS
+R1	Meronym Arg1:T13 Arg2:T12	
+R2	Meronym Arg1:T14 Arg2:T12	
+R3	Meronym Arg1:T15 Arg2:T12	
+T16	Time 88 94	1 hour
+T17	Temperature 98 102	56°C
+R4	Setting Arg1:E3 Arg2:T16	
+R5	Setting Arg1:E3 Arg2:T17	
+T18	Action 104 108	Cool
+E12	Action:T18 
+T19	Temperature 112 128	room temperature
+R6	Setting Arg1:E12 Arg2:T19	
+T20	Numerical 170 183	several times
+T21	Action 163 169	invert
+E13	Action:T21 Count:T20
+T22	Action 129 132	Add
+E14	Action:T22 Acts-on:T23
+T23	Reagent 152 158	phenol
+T24	Amount 136 148	equal volume
+R7	Measure Arg1:T23 Arg2:T24	
+T25	Speed 190 195	3000g
+T26	Time 221 230	5 minutes
+T27	Temperature 232 248	room temperature
+R8	Setting Arg1:E4 Arg2:T25	
+R9	Setting Arg1:E4 Arg2:T26	
+R10	Setting Arg1:E4 Arg2:T27	
+T28	Reagent 273 284	supernatant
+T29	Modifier 250 259	Carefully
+R11	Mod-Link Arg1:E5 Arg2:T29	
+T30	Device 292 309	wide-bore pipette
+T31	Location 321 325	tube
+T32	Modifier 315 320	fresh
+R12	Mod-Link Arg1:T31 Arg2:T32	
+T33	Amount 334 346	equal volume
+T34	Reagent 350 366	phenol:choroform
+T35	Concentration 368 371	1:1
+R13	Measure Arg1:T34 Arg2:T35	
+R14	Measure Arg1:T34 Arg2:T33	
+T36	Action 374 380	invert
+E15	Action:T36 
+T37	Speed 394 399	3000g
+T38	Time 425 434	5 minutes
+T39	Temperature 436 452	room temperature
+R15	Setting Arg1:E7 Arg2:T37	
+R16	Setting Arg1:E7 Arg2:T38	
+R17	Setting Arg1:E7 Arg2:T39	
+T40	Reagent 467 478	supernatant
+T41	Modifier 480 494	as done before
+R18	Mod-Link Arg1:E8 Arg2:T41	
+T42	Amount 503 515	equal volume
+T43	Reagent 519 529	chloroform
+T44	Action 534 540	invert
+E16	Action:T44 
+R19	Measure Arg1:T43 Arg2:T42	
+T45	Speed 554 559	3000g
+T46	Time 585 594	5 minutes
+T47	Temperature 596 612	room temperature
+R20	Setting Arg1:E10 Arg2:T45	
+R21	Setting Arg1:E10 Arg2:T46	
+R22	Setting Arg1:E10 Arg2:T47	
+T48	Reagent 627 638	supernatant
+T49	Modifier 640 654	as done before
+R23	Mod-Link Arg1:E11 Arg2:T49	
+T50	Method 0 23	DNA Extraction Protocol
+T51	Speed 401 409	6000 rpm
+T52	Device 413 422	microfuge
+R24	Setting Arg1:T52 Arg2:T51	
+T53	Speed 561 569	6000 rpm
+T54	Device 573 582	microfuge
+R25	Setting Arg1:T54 Arg2:T53	
+T55	Speed 197 205	6000 rpm
+T56	Device 209 218	microfuge
+R26	Setting Arg1:T56 Arg2:T55	
+T57	Modifier 387 392	again
+T58	Modifier 547 552	again
+R27	Mod-Link Arg1:E7 Arg2:T57	
+R28	Mod-Link Arg1:E10 Arg2:T58	

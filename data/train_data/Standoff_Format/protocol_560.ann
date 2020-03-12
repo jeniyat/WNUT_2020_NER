@@ -1,0 +1,72 @@
+T1	Action 90 97	Prepare
+E1	Action:T1 Product:T2 Using:T3 Using2:T4
+T2	Reagent 102 121	repair PCR template
+T3	Method 122 182	as indicated in Reagents for gtbp‐1 eGFP and mCherry tagging
+T4	Method 204 229	Repair template synthesis
+T5	Action 231 235	Make
+E2	Action:T5 Product:T6 Using:T7
+T6	Reagent 240 253	injection mix
+T7	Method 254 294	as indicated in injection mixes, part I.
+T8	Action 295 298	Use
+E3	Action:T8 Acts-on:T9
+T9	Reagent 303 315	crRNA gtbp‐1
+T10	Action 339 345	Inject
+E4	Action:T10 Acts-on:T12
+T11	Numerical 346 351	15‐20
+T12	Reagent 352 372	young adult N2 worms
+T13	Action 377 384	recover
+E5	Action:T13 Using:T14
+T14	Method 385 427	as described in Worm recovery and handling
+R1	Measure Arg1:T12 Arg2:T11	
+T15	Action 429 433	Pool
+E6	Action:T15 Acts-on:T16 Site:T18
+T16	Reagent 438 453	recovered worms
+T17	Numerical 463 466	one
+T18	Location 467 472	plate
+T19	Action 477 485	incubate
+E7	Action:T19 Acts-on:T18
+T20	Time 490 496	22‐23h
+T21	Temperature 500 505	20 °C
+R2	Measure Arg1:T18 Arg2:T17	
+R3	Setting Arg1:E7 Arg2:T20	
+R4	Setting Arg1:E7 Arg2:T21	
+T22	Action 515 520	Clone
+E8	Action:T22 Acts-on:T23 Site:T26
+T23	Reagent 525 528	P0s
+T24	Mention 455 458	P0s
+R5	Coreference-Link Arg1:T24 Arg2:T16	
+T25	Modifier 532 542	individual
+T26	Location 543 554	OP50 plates
+T27	Action 559 567	incubate
+E9	Action:T27 Acts-on:T26
+T28	Temperature 571 576	20 °C
+T29	Time 581 589	4‐5 days
+R6	Mod-Link Arg1:T26 Arg2:T25	
+R7	Setting Arg1:E9 Arg2:T28	
+R8	Setting Arg1:E9 Arg2:T29	
+T30	Method 0 33	Seydoux lab Cas9 preparation test
+T31	Action 35 38	Tag
+E10	Action:T31 Acts-on:T32 Using:T33 Using2:T35
+T32	Reagent 39 45	gtbp‐1
+T33	Reagent 51 55	eGFP
+T34	Reagent 59 66	mCherry
+T35	Reagent 73 89	dpy‐10 co‐CRISPR
+R9	Or Arg1:T33 Arg2:T34	
+T36	Time 507 512	day 1
+R10	Setting Arg1:E7 Arg2:T36	
+T37	Time 591 596	day 2
+R11	Setting Arg1:E9 Arg2:T37	
+T38	Reagent 608 611	F1s
+T39	Action 612 617	reach
+E11	Action:T39 Acts-on:T38
+T40	Modifier 622 633	adult stage
+T41	Action 635 640	check
+E12	Action:T41 Acts-on:T42
+T42	Reagent 645 652	Rollers
+R12	Mod-Link Arg1:T38 Arg2:T40	
+T43	Reagent 666 680	jackpot broods
+T44	Action 683 689	screen
+E13	Action:T44 Site:T43 Acts-on:T45 Measure-Type-Link:T46 Using:T47
+T45	Reagent 694 701	Rollers
+T46	Measure-Type 706 736	fluorescent protein expression
+T47	Method 737 783	as described in Screening for edit of interest

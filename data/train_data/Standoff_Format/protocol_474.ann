@@ -1,0 +1,353 @@
+T1	Action 43 54	Equilibrate
+E1	Action:T1 Acts-on:T42
+T2	Action 81 90	Pipet mix
+E2	Action:T2 Count:T45 Using:T47
+T3	Action 114 121	Prepare
+E3	Action:T3 Product:T48 Acts-on:T50 Site:T53
+T4	Action 334 337	Mix
+E4	Action:T4 Count:T54 Using:T55
+T5	Action 396 406	Pulse spin
+E5	Action:T5 
+T6	Action 413 421	Incubate
+E6	Action:T6 Using:T59
+T7	Action 529 536	Prepare
+E7	Action:T7 Product:T63
+T8	Action 642 645	Add
+E8	Action:T8 Acts-on:T65
+T9	Action 671 674	Mix
+E9	Action:T9 Count:T66 Using:T67
+T10	Action 734 744	Pulse spin
+E10	Action:T10 
+T11	Action 751 759	Incubate
+E11	Action:T11 Using:T71
+T12	Action 816 823	Prepare
+E12	Action:T12 Acts-on:T75
+T13	Action 941 944	Mix
+E13	Action:T13 Count:T76 Using:T77
+T14	Action 1004 1014	Pulse spin
+E14	Action:T14 
+T15	Action 1021 1029	Incubate
+E15	Action:T15 Acts-on:T81
+T16	Action 1086 1091	Place
+E16	Action:T16 Acts-on:T85 Site:T86
+T17	Action 1113 1116	Add
+E17	Action:T17 Acts-on:T88
+T18	Action 1136 1139	Mix
+E18	Action:T18 
+T19	Action 1187 1197	Pulse spin
+E19	Action:T19 
+T20	Action 1204 1207	Add
+E20	Action:T20 Acts-on:T95
+T21	Action 1238 1249	Equilibrate
+E21	Action:T21 Acts-on:T96
+T22	Action 1295 1302	Prepare
+E22	Action:T22 Acts-on:T98
+T23	Action 1396 1403	Aliquot
+E23	Action:T23 Acts-on:T100 Site:T102
+T24	Action 1461 1469	Transfer
+E24	Action:T24 Acts-on:T103 Site:T104 Using:T105
+T25	Action 1509 1519	Pulse spin
+E25	Action:T25 
+T26	Action 1534 1537	mix
+E26	Action:T26 Acts-on:T108 Count:T109 Using:T111
+T27	Action 1582 1592	Pulse spin
+E27	Action:T27 
+T28	Action 1600 1605	Place
+E28	Action:T28 Acts-on:T114
+T29	Action 1674 1685	Equilibrate
+E29	Action:T29 Acts-on:T119
+T30	Action 1724 1727	mix
+E30	Action:T30 Acts-on:T123 Count:T124 Using:T126
+T31	Action 1767 1777	Pulse spin
+E31	Action:T31 
+T32	Action 1785 1791	Remove
+E32	Action:T32 Acts-on:T130 Site:T131 Site2:T132 Site3:T133 Site4:T134
+T33	Action 1868 1871	Add
+E33	Action:T33 Acts-on:T137
+T34	Action 1897 1905	Sonicate
+E34	Action:T34 Using:T139
+T35	Action 1934 1937	Add
+E35	Action:T35 Acts-on:T141
+T36	Action 1963 1969	Vortex
+E36	Action:T36 
+T37	Action 1981 1991	Pulse spin
+E37	Action:T37 
+T38	Action 1999 2007	Incubate
+E38	Action:T38 
+T39	Action 2037 2047	Quantitate
+E39	Action:T39 Using:T147
+T40	Action 2112 2116	Load
+E40	Action:T40 Acts-on:T148 Site:T149
+T41	Action 2143 2164	start data collection
+E41	Action:T41 Using:T151
+T42	Reagent 55 58	DNA
+T43	Time 60 66	30 min
+T44	Temperature 70 79	room temp
+T45	Numerical 91 93	3x
+T46	Modifier 99 103	wide
+T47	Device 104 112	bore tip
+R1	Mod-Link Arg1:T47 Arg2:T46	
+T48	Reagent 122 140	nicking master mix
+T49	Amount 155 158	1μL
+T50	Reagent 159 180	buffer + DNA + enzyme
+T51	Amount 184 189	200μL
+T52	Modifier 190 199	thin-wall
+T53	Location 200 208	PCR tube
+R2	Mod-Link Arg1:T53 Arg2:T52	
+R3	Measure Arg1:T53 Arg2:T51	
+R4	Measure Arg1:T50 Arg2:T49	
+T54	Numerical 338 340	4x
+T56	Amount 375 378	8μL
+T57	Speed 382 394	lowest speed
+T55	Location 346 367	Xplorer Plus Pipettor
+R5	Setting Arg1:T55 Arg2:T56	
+R6	Setting Arg1:E4 Arg2:T57	
+T58	Time 407 411	2sec
+R7	Setting Arg1:E5 Arg2:T58	
+T59	Device 427 441	thermal cycler
+T60	Time 446 451	2 hrs
+T61	Temperature 455 459	37°C
+T62	Seal 465 475	heated-lid
+R8	Setting Arg1:E6 Arg2:T60	
+R9	Setting Arg1:E6 Arg2:T61	
+R10	Meronym Arg1:T62 Arg2:T59	
+T63	Reagent 541 560	Labeling Master Mix
+T64	Amount 646 649	5μL
+T65	Reagent 650 669	Labeling Master Mix
+R11	Measure Arg1:T65 Arg2:T64	
+T66	Numerical 675 677	4x
+T67	Location 683 704	Xplorer Plus Pipettor
+T68	Amount 712 716	13μL
+T69	Speed 720 732	lowest speed
+R12	Setting Arg1:T67 Arg2:T68	
+R13	Setting Arg1:E9 Arg2:T69	
+T70	Time 745 749	2sec
+R14	Setting Arg1:E10 Arg2:T70	
+T71	Device 765 779	thermal cycler
+T72	Time 784 790	60 min
+T73	Temperature 794 798	72°C
+T74	Seal 804 814	heated-lid
+R15	Setting Arg1:E11 Arg2:T72	
+R16	Setting Arg1:E11 Arg2:T73	
+R17	Meronym Arg1:T74 Arg2:T71	
+T75	Reagent 828 845	Repair Master Mix
+T76	Numerical 945 947	4x
+T77	Location 953 974	Xplorer Plus Pipettor
+T78	Amount 982 986	18μL
+T79	Speed 990 1002	lowest speed
+R18	Setting Arg1:T77 Arg2:T78	
+R19	Setting Arg1:E13 Arg2:T79	
+T80	Time 1015 1019	2sec
+T81	Device 1035 1049	thermal cycler
+T82	Time 1054 1060	30 min
+T83	Temperature 1064 1068	37°C
+T84	Seal 1074 1084	heated-lid
+R20	Setting Arg1:E15 Arg2:T82	
+R21	Setting Arg1:E15 Arg2:T83	
+R22	Meronym Arg1:T84 Arg2:T81	
+T85	Reagent 1092 1104	NLR reaction
+T86	Location 1108 1111	ice
+T87	Amount 1117 1120	1μL
+T88	Reagent 1121 1134	Stop Solution
+R23	Measure Arg1:T88 Arg2:T87	
+T89	Modifier 1143 1149	gently
+T90	Action 1150 1158	stirring
+E42	Action:T90 Using:T92
+T91	Numerical 1159 1160	5
+T92	Device 1176 1185	pipet tip
+R24	Setting Arg1:E42 Arg2:T91	
+R25	Mod-Link Arg1:E42 Arg2:T89	
+T93	Time 1198 1202	2sec
+R26	Setting Arg1:E19 Arg2:T93	
+T94	Amount 1208 1211	5μl
+T95	Reagent 1219 1236	Repair Master Mix
+R27	Measure Arg1:T95 Arg2:T94	
+T96	Reagent 1250 1280	Staining Master Mix components
+T97	Temperature 1284 1293	room temp
+R28	Setting Arg1:E21 Arg2:T97	
+T98	Reagent 1307 1327	Staining Master Mix.
+T99	Amount 1404 1408	40μL
+T100	Reagent 1416 1435	Staining Master Mix
+T101	Amount 1443 1448	0.6mL
+T102	Location 1449 1459	amber tube
+R29	Measure Arg1:T102 Arg2:T101	
+R30	Measure Arg1:T100 Arg2:T99	
+T103	Reagent 1470 1473	NLR
+T104	Reagent 1477 1489	Staining Mix
+T105	Device 1495 1508	standard tip.
+T106	Time 1520 1526	2 sec.
+R31	Setting Arg1:E25 Arg2:T106	
+T107	Modifier 1527 1533	Gently
+T108	Reagent 1538 1546	NLRS DNA
+T109	Numerical 1547 1549	5x
+T110	Modifier 1555 1559	wide
+T111	Device 1560 1568	bore tip
+T112	Amount 1576 1580	50μL
+R32	Setting Arg1:T111 Arg2:T112	
+R33	Mod-Link Arg1:T111 Arg2:T110	
+R34	Mod-Link Arg1:E26 Arg2:T107	
+T113	Time 1593 1598	2 sec
+R35	Setting Arg1:E27 Arg2:T113	
+T114	Reagent 1606 1624	staining reactions
+T115	Temperature 1628 1631	4°C
+T116	Time 1632 1641	overnight
+T117	Modifier 1652 1659	uniform
+T118	Reagent 1660 1672	DNA staining
+R36	Mod-Link Arg1:T118 Arg2:T117	
+R37	Setting Arg1:E28 Arg2:T115	
+R38	Setting Arg1:E28 Arg2:T116	
+T119	Reagent 1686 1690	NLRS
+T120	Temperature 1694 1703	room temp
+T121	Time 1708 1715	~30 min
+R39	Setting Arg1:E29 Arg2:T120	
+R40	Setting Arg1:E29 Arg2:T121	
+T122	Modifier 1717 1723	Gently
+T123	Reagent 1728 1731	DNA
+T124	Numerical 1732 1734	3x
+T125	Modifier 1740 1744	wide
+T126	Device 1745 1753	bore tip
+T127	Amount 1761 1765	50μL
+R41	Mod-Link Arg1:T126 Arg2:T125	
+R42	Mod-Link Arg1:E30 Arg2:T122	
+R43	Setting Arg1:T126 Arg2:T127	
+T128	Time 1778 1783	2 sec
+R44	Setting Arg1:E31 Arg2:T128	
+T129	Amount 1792 1795	2μL
+T130	Reagent 1796 1804	aliquots
+T131	Location 1814 1817	Top
+T132	Location 1819 1825	Middle
+T133	Location 1830 1836	Bottom
+T134	Location 1849 1866	Qubit Assay tubes
+R45	Measure Arg1:T130 Arg2:T129	
+T135	Modifier 1840 1848	separate
+R46	Mod-Link Arg1:T134 Arg2:T135	
+T136	Amount 1872 1876	18uL
+T137	Reagent 1880 1895	Qubit HS Buffer
+R47	Measure Arg1:T137 Arg2:T136	
+T138	Time 1906 1912	10 min
+T139	Device 1918 1932	bath sonicator
+R48	Setting Arg1:E34 Arg2:T138	
+T140	Amount 1938 1943	180μL
+T141	Reagent 1944 1962	Qubit reagent mix.
+R49	Measure Arg1:T141 Arg2:T140	
+T142	Time 1970 1979	5 seconds
+R50	Setting Arg1:E36 Arg2:T142	
+T143	Time 1992 1997	2 sec
+R51	Setting Arg1:E37 Arg2:T143	
+T144	Modifier 2008 2016	at least
+T145	Time 2017 2022	2 min
+T146	Temperature 2026 2035	room temp
+R52	Mod-Link Arg1:T145 Arg2:T144	
+R53	Setting Arg1:E38 Arg2:T145	
+R54	Setting Arg1:E38 Arg2:T146	
+T147	Device 2053 2074	Qubit 2.0 Fluorimeter
+T148	Reagent 2117 2123	sample
+T149	Location 2129 2138	Irys chip
+T150	Generic-Measure 2172 2180	30-cycle
+R55	Setting Arg1:E41 Arg2:T150	
+T151	Device 2188 2199	irys system
+T152	Reagent 0 13	Irys NLRS DNA
+T153	Action 14 22	labeling
+E43	Action:T153 Acts-on:T152
+T154	Method 27 42	Data collection
+T155	Modifier 59 60	~
+R56	Mod-Link Arg1:T43 Arg2:T155	
+T156	Numerical 141 144	One
+T157	Amount 145 149	10μL
+T158	Reagent 150 153	rxn
+R57	Measure Arg1:T158 Arg2:T157	
+R58	Measure Arg1:T158 Arg2:T156	
+R59	Setting Arg1:E1 Arg2:T43	
+R60	Setting Arg1:E1 Arg2:T44	
+T159	Reagent 210 221	Blood BspQI
+T160	Amount 223 227	5-7u
+T161	Reagent 229 233	BNG3
+T162	Reagent 234 249	Cell line BspQI
+T163	Amount 251 255	3-5u
+T164	Reagent 257 261	BNG3
+T165	Reagent 262 273	Other BspQI
+T166	Amount 275 280	5-10u
+T167	Reagent 282 286	BNG3
+T168	Reagent 287 292	BbvCI
+T169	Amount 294 298	4-8u
+T170	Reagent 300 304	BNG2
+T171	Reagent 305 308	Q+C
+T172	Amount 310 313	3/2
+T173	Amount 315 318	6/4
+T174	Amount 320 324	9/6u
+T175	Reagent 326 330	BNG2
+T176	Action 508 515	protect
+E44	Action:T176 
+R61	Measure Arg1:T161 Arg2:T160	
+R62	Measure Arg1:T164 Arg2:T163	
+R63	Measure Arg1:T167 Arg2:T166	
+R64	Measure Arg1:T170 Arg2:T169	
+R65	Measure Arg1:T175 Arg2:T174	
+R66	Measure Arg1:T175 Arg2:T173	
+R67	Measure Arg1:T175 Arg2:T172	
+T177	Reagent 562 569	reagent
+T178	Concentration 575 578	10x
+T179	Reagent 579 594	labeling buffer
+R68	Measure Arg1:T179 Arg2:T178	
+T180	Amount 594 599	1.5μL
+R69	Measure Arg1:T179 Arg2:T180	
+T181	Concentration 599 602	10x
+T182	Reagent 604 615	abeling mix
+R70	Measure Arg1:T182 Arg2:T181	
+T183	Amount 615 620	1.5μL
+T184	Reagent 620 623	Taq
+T185	Amount 624 629	5u/μL
+T186	Amount 629 632	1μL
+T187	Reagent 632 635	H20
+T188	Amount 635 638	1μL
+R71	Measure Arg1:T187 Arg2:T188	
+R72	Measure Arg1:T182 Arg2:T183	
+R73	Measure Arg1:T184 Arg2:T185	
+T189	Reagent 847 854	reagent
+T190	Concentration 860 863	10x
+T191	Reagent 864 874	Thermo Pol
+T192	Amount 874 879	0.5μL
+T193	Concentration 879 882	50x
+T194	Reagent 883 893	Repair Mix
+T195	Amount 893 898	0.4μL
+T196	Concentration 898 902	50mM
+T197	Reagent 903 906	NAD
+T198	Amount 907 912	0.4μL
+T199	Reagent 912 926	Taq DNA ligase
+T200	Amount 926 929	1μL
+T201	Reagent 929 932	H20
+T202	Amount 932 937	2.7μL
+R74	Measure Arg1:T191 Arg2:T190	
+R75	Measure Arg1:T191 Arg2:T192	
+R76	Measure Arg1:T194 Arg2:T193	
+R77	Measure Arg1:T194 Arg2:T195	
+R78	Measure Arg1:T197 Arg2:T196	
+R79	Measure Arg1:T199 Arg2:T198	
+R80	Measure Arg1:T201 Arg2:T202	
+R81	Setting Arg1:E14 Arg2:T80	
+T203	Measure-Type 2102 2104	CV
+T204	Modifier 2105 2106	<
+T205	Generic-Measure 2107 2110	25%
+R82	Mod-Link Arg1:T205 Arg2:T204	
+R83	Of-Type Arg1:T205 Arg2:T203	
+T206	Reagent 2076 2084	NLRS DNA
+T207	Measure-Type 2085 2089	conc
+T208	Concentration 2091 2100	3-10ng/μL
+R84	Measure Arg1:T206 Arg2:T208	
+T209	Reagent 1328 1335	reagent
+T210	Concentration 1341 1343	4x
+T211	Reagent 1344 1355	flow buffer
+T212	Amount 1355 1359	15μL
+T213	Concentration 1359 1361	1M
+T214	Reagent 1362 1365	DTT
+T215	Amount 1365 1369	12μL
+T216	Reagent 1369 1378	DNA stain
+T217	Amount 1378 1383	1.5μL
+T218	Reagent 1383 1386	H2O
+T219	Amount 1386 1392	11.5μL
+R85	Measure Arg1:T211 Arg2:T210	
+R86	Measure Arg1:T211 Arg2:T212	
+R87	Measure Arg1:T214 Arg2:T213	
+R88	Measure Arg1:T214 Arg2:T215	
+R89	Measure Arg1:T216 Arg2:T217	
+R90	Measure Arg1:T218 Arg2:T219	

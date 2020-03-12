@@ -1,0 +1,285 @@
+T1	Action 131 137	Dilute
+E1	Action:T1 Acts-on:T5 Using:T2
+T2	Reagent 191 212	tissue culture medium
+T3	Modifier 171 178	sterile
+T4	Modifier 179 190	appropriate
+R1	Mod-Link Arg1:T2 Arg2:T4
+R2	Mod-Link Arg1:T2 Arg2:T3
+T5	Reagent 150 161	whole blood
+T6	Modifier 138 149	heparinized
+R3	Mod-Link Arg1:T5 Arg2:T6
+T7	Generic-Measure 162 165	1:1
+R4	Setting Arg1:E1 Arg2:T7
+T8	Method 229 258	in vitro cellular stimulation
+T9	Action 295 304	performed
+E2	Action:T9 Acts-on:T11 Using:T8
+T10	Reagent 269 276	antigen
+T11	Reagent 280 287	mitogen
+T12	Action 388 396	addition
+E3	Action:T12 Acts-on:T13 Acts-on2:T152
+T13	Reagent 449 460	brefeldin A
+T14	Reagent 492 500	monensin
+T15	Action 322 327	stain
+E4	Action:T15 Acts-on:T16
+T16	Reagent 328 351	intracellular cytokines
+T17	Reagent 355 365	chemokines
+T18	Action 591 598	aliquot
+E5	Action:T18 Acts-on:T20 Site:T21
+T19	Amount 599 605	200 μl
+T20	Reagent 613 640	whole blood cell suspension
+T21	Location 657 670	plastic tubes
+T22	Size 651 656	75 mm
+T24	Action 675 683	incubate
+E6	Action:T24 Acts-on:T27 Acts-on2:T21
+T25	Time 688 697	4-6 hours
+T26	Concentration 701 703	5%
+T27	Reagent 704 707	CO2
+T28	Temperature 711 715	37°C
+R8	Setting Arg1:E6 Arg2:T25
+R10	Setting Arg1:E6 Arg2:T28
+T29	Action 717 720	Add
+E7	Action:T29 Acts-on:T32
+T30	Amount 721 725	2 ml
+T31	Concentration 729 731	1X
+T32	Reagent 732 759	Red Blood Cell Lysis Buffer
+T33	Action 782 790	incubate
+E8	Action:T33 
+T34	Time 795 807	5-10 minutes
+T35	Temperature 811 827	room temperature
+R13	Setting Arg1:E8 Arg2:T34
+R14	Setting Arg1:E8 Arg2:T35
+T36	Action 829 839	Centrifuge
+E9	Action:T36 
+T37	Speed 843 850	350 x g
+T38	Time 855 864	5 minutes
+T39	Action 869 876	discard
+E10	Action:T39 Acts-on:T40
+T40	Reagent 881 892	supernatant
+R15	Setting Arg1:E9 Arg2:T37
+R16	Setting Arg1:E9 Arg2:T38
+T41	Action 894 898	Wash
+E11	Action:T41 Acts-on:T42 Using:T44
+T42	Reagent 899 904	cells
+T43	Concentration 905 907	1X
+T44	Reagent 913 933	Cell Staining Buffer
+T45	Action 998 1005	perform
+E12	Action:T45 Using:T46 Using2:T140
+T46	Method 1006 1035	cell surface antigen staining
+T47	Action 1120 1123	fix
+E13	Action:T47 Acts-on:T48 Site:T49
+T48	Reagent 1124 1129	cells
+T49	Reagent 1145 1160	Fixation Buffer
+T50	Modifier 1189 1200	in the dark
+T51	Time 1205 1215	20 minutes
+T52	Temperature 1219 1235	room temperature
+T53	Action 1237 1247	Centrifuge
+E14	Action:T53 
+T54	Speed 1251 1258	350 x g
+T55	Time 1263 1272	5 minutes
+R20	Setting Arg1:E14 Arg2:T54
+R21	Setting Arg1:E14 Arg2:T55
+T56	Action 1274 1281	discard
+E15	Action:T56 Acts-on:T57
+T57	Reagent 1282 1293	supernatant
+T58	Action 1375 1379	wash
+E16	Action:T58 Acts-on:T59 Using:T61
+T59	Reagent 1380 1385	cells
+T60	Concentration 1386 1388	1x
+T61	Reagent 1394 1413	Cell StainingBuffer
+R22	Measure Arg1:T59 Arg2:T60
+T62	Action 1443 1452	Resuspend
+E17	Action:T62 Acts-on:T63 Site:T64
+T63	Reagent 1453 1458	cells
+T64	Reagent 1462 1482	Cell Staining Buffer
+T65	Action 1487 1492	store
+E18	Action:T65 Acts-on:T66 Product:T75
+T66	Reagent 1493 1498	cells
+T67	Temperature 1502 1505	4°C
+T68	Concentration 1525 1528	90%
+R23	Setting Arg1:E18 Arg2:T67
+T69	Reagent 1529 1532	FCS
+T70	Concentration 1533 1536	10%
+T71	Reagent 1537 1541	DMSO
+T72	Temperature 1557 1562	-80°C
+T73	Action 1546 1553	storage
+E19	Action:T73 Acts-on3:T66 Product:T74 Site:T71 Site2:T69
+R24	Setting Arg1:E19 Arg2:T72
+T74	Reagent 1564 1573	long term
+T75	Reagent 1507 1517	short term
+T76	Action 1626 1632	Dilute
+E20	Action:T76 Acts-on:T78
+T77	Concentration 1633 1636	10X
+T78	Reagent 1637 1676	Intracellular Staining Perm Wash Buffer
+T79	Concentration 1698 1700	1X
+T80	Reagent 1704 1712	DI water
+T81	Action 1714 1723	Resuspend
+E21	Action:T81 Acts-on:T83 Site:T82
+T83	Reagent 1724 1735	fixed cells
+T82	Reagent 1739 1778	Intracellular Staining Perm Wash Buffer
+T84	Action 1783 1793	centrifuge
+E22	Action:T84 
+T85	Speed 1797 1804	350 x g
+T86	Time 1809 1821	5-10 minutes
+R28	Setting Arg1:E22 Arg2:T85
+R29	Setting Arg1:E22 Arg2:T86
+T87	Action 1830 1839	Resuspend
+E23	Action:T87 Acts-on:T88 Site:T89
+T88	Reagent 1840 1851	fixed cells
+T89	Reagent 1855 1894	Intracellular Staining Perm Wash Buffer
+T90	Action 1899 1909	centrifuge
+E24	Action:T90 
+T91	Speed 1913 1920	350 x g
+T92	Time 1925 1937	5-10 minutes
+T93	Action 1946 1955	Resuspend
+E25	Action:T93 Acts-on:T94 Site:T95
+T94	Reagent 1956 1967	fixed cells
+T95	Reagent 1971 2010	Intracellular Staining Perm Wash Buffer
+T96	Action 2015 2025	centrifuge
+E26	Action:T96 
+T97	Speed 2029 2036	350 x g
+T98	Time 2041 2053	5-10 minutes
+T99	Action 2062 2071	Resuspend
+E27	Action:T99 Acts-on:T100 Site:T101
+T100	Reagent 2072 2097	fixed/permeabilized cells
+T101	Reagent 2110 2149	Intracellular Staining Perm Wash Buffer
+T102	Modifier 2101 2109	residual
+R30	Mod-Link Arg1:T101 Arg2:T102
+T103	Action 2154 2157	add
+E28	Action:T103 Acts-on:T142
+T104	Modifier 2160 2173	predetermined
+T105	Modifier 2174 2181	optimum
+T107	Reagent 2249 2262	PE anti-IFN-γ
+T110	Time 2303 2313	20 minutes
+T111	Modifier 2314 2325	in the dark
+T112	Temperature 2329 2345	room temperature
+R31	Setting Arg1:E24 Arg2:T91
+R32	Setting Arg1:E24 Arg2:T92
+R33	Setting Arg1:E26 Arg2:T97
+R34	Setting Arg1:E26 Arg2:T98
+T113	Action 2347 2351	Wash
+E29	Action:T113 Acts-on:T115
+T114	Amount 2357 2361	2 ml
+T115	Reagent 2365 2404	Intracellular Staining Perm Wash Buffer
+T116	Action 2452 2456	Wash
+E30	Action:T116 Acts-on:T118
+T117	Amount 2462 2466	2 ml
+T118	Reagent 2470 2509	Intracellular Staining Perm Wash Buffer
+T119	Speed 2527 2534	350 x g
+T120	Time 2539 2548	5 minutes
+T121	Speed 2422 2429	350 x g
+T122	Time 2434 2443	5 minutes
+T123	Action 2408 2418	centrifuge
+E31	Action:T123 
+R36	Setting Arg1:E31 Arg2:T121
+R37	Setting Arg1:E31 Arg2:T122
+T124	Action 2513 2523	centrifuge
+E32	Action:T124 
+R39	Setting Arg1:E32 Arg2:T119
+R40	Setting Arg1:E32 Arg2:T120
+T125	Action 2753 2762	Resuspend
+E33	Action:T125 Acts-on:T126 Site:T130
+T126	Reagent 2797 2802	cells
+T127	Modifier 2763 2768	fixed
+T128	Modifier 2773 2788	intracellularly
+R41	Mod-Link Arg1:T126 Arg2:T128
+R42	Mod-Link Arg1:T126 Arg2:T127
+T129	Amount 2806 2812	0.5 ml
+T130	Reagent 2813 2833	Cell Staining Buffer
+T131	Action 2838 2845	analyze
+E34	Action:T131 Measure-Type-Link:T132
+T132	Measure-Type 2851 2872	appropriate controls.
+T133	Action 2873 2876	Set
+E35	Action:T133 Measure-Type-Link:T134 Measure-Type-Link2:T135 Using:T136
+T134	Measure-Type 2877 2888	PMT voltage
+T135	Measure-Type 2893 2905	compensation
+T136	Device 2912 2942	cell surface staining controls
+T137	Action 2944 2947	Set
+E36	Action:T137 Measure-Type-Link:T138 Using:T139
+T138	Measure-Type 2948 2964	quadrant markers
+T139	Device 2974 2991	blocking controls
+R9	Measure Arg1:T20 Arg2:T19	
+R7	Measure Arg1:T27 Arg2:T26	
+R11	Measure Arg1:T32 Arg2:T31	
+R12	Measure Arg1:T32 Arg2:T30	
+R17	Measure Arg1:T44 Arg2:T43	
+R18	Measure Arg1:T69 Arg2:T68	
+R19	Measure Arg1:T71 Arg2:T70	
+R25	Measure Arg1:T78 Arg2:T77	
+R26	Measure Arg1:T80 Arg2:T79	
+R27	Measure Arg1:T115 Arg2:T114	
+R35	Measure Arg1:T118 Arg2:T117	
+R38	Measure Arg1:T130 Arg2:T129	
+R43	Or Arg1:T11 Arg2:T10	
+R44	Or Arg1:T16 Arg2:T17	
+T140	Method 1052 1113	BioLegend’s Cell Surface Immunofluorescence Staining Protocol
+T141	Generic-Measure 1133 1144	0.5 ml/tube
+R5	Measure Arg1:T49 Arg2:T141	
+T142	Reagent 2199 2230	fluorophore-conjugated antibody
+T143	Modifier 2231 2242	of interest
+T106	Concentration 2182 2195	concentration
+R45	Mod-Link Arg1:T106 Arg2:T105	
+R46	Mod-Link Arg1:T106 Arg2:T104	
+R47	Measure Arg1:T142 Arg2:T106	
+R48	Mod-Link Arg1:T142 Arg2:T143	
+T108	Modifier 2789 2796	labeled
+R49	Mod-Link Arg1:T126 Arg2:T108	
+T109	Method 0 52	Activation and Intracellular Staining of Whole Blood
+T144	Method 62 71	Detection
+T145	Reagent 75 98	Intracellular Cytokines
+T146	Modifier 103 108	Other
+T147	Reagent 109 130	Intracellular Targets
+R50	Mod-Link Arg1:T147 Arg2:T146	
+T148	Modifier 214 227	At this stage
+T149	Reagent 372 377	IFN-γ
+T150	Reagent 381 385	IL-4
+T151	Modifier 403 412	efficient
+T152	Reagent 413 440	protein transport inhibitor
+R51	Mod-Link Arg1:T152 Arg2:T151	
+T153	Modifier 532 540	critical
+T154	Modifier 542 547	After
+T155	Action 548 556	addition
+E37	Action:T155 Acts-on:T156
+T156	Reagent 562 589	suitable cellular activator
+R52	Mod-Link Arg1:E37 Arg2:T154	
+T23	Numerical 646 648	12
+R6	Measure Arg1:T21 Arg2:T22	
+R53	Measure Arg1:T21 Arg2:T23	
+T157	Action 938 946	staining
+E38	Action:T157 Acts-on:T158
+T158	Reagent 947 969	intracellular antigens
+T159	Reagent 976 981	IFN-γ
+T160	Reagent 985 989	IL-4
+R54	Or Arg1:T159 Arg2:T160	
+R55	Or Arg1:T150 Arg2:T149	
+T161	Action 1298 1301	put
+E39	Action:T161 
+T162	Method 1306 1316	experiment
+T163	Modifier 1318 1325	on hold
+T164	Modifier 1345 1351	future
+T165	Method 1352 1373	staining and analysis
+R56	Mod-Link Arg1:E39 Arg2:T163	
+T166	Modifier 1579 1584	fixed
+T167	Reagent 1585 1590	cells
+T168	Modifier 1591 1623	without surface antigen staining
+R57	Mod-Link Arg1:T167 Arg2:T166	
+R58	Mod-Link Arg1:T167 Arg2:T168	
+T169	Modifier 2270 2281	appropriate
+T170	Reagent 2282 2298	negative control
+R59	Mod-Link Arg1:T170 Arg2:T169	
+T171	Reagent 2560 2590	primary intracellular antibody
+T172	Modifier 2594 2606	biotinylated
+T173	Action 2632 2639	perform
+E40	Action:T173 Using:T174 Using2:T176 Acts-on:T171 Site:T177
+T174	Method 2640 2686	fluorophore conjugatedStreptavidin incubations
+T175	Modifier 2691 2701	subsequent
+T176	Method 2702 2708	washes
+T177	Reagent 2712 2751	Intracellular Staining Perm Wash Buffer
+R60	Mod-Link Arg1:T171 Arg2:T172	
+T178	Device 2993 3009	isotype controls
+T179	Modifier 3014 3023	unstained
+T180	Reagent 3024 3029	cells
+R61	Mod-Link Arg1:T180 Arg2:T179	
+R62	Or Arg1:T139 Arg2:T178	
+R63	Or Arg1:T139 Arg2:T180	
+T181	Modifier 2619 2628	necessary
+R64	Mod-Link Arg1:E40 Arg2:T181	

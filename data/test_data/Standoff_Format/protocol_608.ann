@@ -1,0 +1,84 @@
+T1	Action 50 57	Collect
+E1	Action:T1 Acts-on:T3 Site:T4
+T2	Action 389 398	Designate
+E2	Action:T2 Using:T5
+T3	Reagent 58 66	seawater
+T4	Location 84 100	desired location
+T5	Method 401 418	control treatment
+T6	Method 0 17	FLV tracer assays
+T7	Action 18 25	Prepare
+E3	Action:T7 Acts-on:T8
+T8	Reagent 26 30	FLVs
+T9	Method 35 48	tracer assays
+T10	Action 108 119	determining
+E4	Action:T10 Measure-Type-Link:T11 Acts-on:T12 Site:T13 Measure-Type-Link2:T14 Acts-on2:T15 Site2:T16
+T11	Measure-Type 124 137	concentration
+T12	Reagent 145 149	FLVs
+T13	Reagent 157 168	concentrate
+T14	Measure-Type 178 199	ambient concentration
+T15	Reagent 203 210	viruses
+T16	Reagent 218 226	seawater
+T17	Modifier 232 238	proper
+T18	Measure-Type 239 245	amount
+T19	Reagent 249 264	FLV concentrate
+T20	Action 275 280	added
+E5	Action:T20 Acts-on:T19 Measure-Type-Link:T18 Site:T25
+T21	Modifier 284 297	tracer levels
+T22	Numerical 299 303	<10%
+T23	Modifier 307 315	original
+T24	Measure-Type 316 343	ambient virus concentration
+R1	Mod-Link Arg1:E5 Arg2:T21	
+R2	Mod-Link Arg1:T19 Arg2:T17	
+R3	Mod-Link Arg1:T22 Arg2:T23	
+T25	Reagent 350 364	sample volumes
+T26	Modifier 368 380	no less than
+T27	Amount 381 387	400 mL
+R4	Mod-Link Arg1:T27 Arg2:T26	
+R5	Measure Arg1:T25 Arg2:T27	
+T28	Modifier 423 427	each
+T29	Time 428 438	time point
+T30	Action 488 498	determined
+E6	Action:T30 Measure-Type-Link:T32 Measure-Type-Link2:T31 Acts-on:T35
+T31	Measure-Type 440 461	total viral abundance
+T32	Measure-Type 466 477	FLV numbers
+T33	Modifier 502 511	duplicate
+T34	Modifier 517 529	small volume
+T35	Reagent 530 540	subsamples
+R6	Mod-Link Arg1:T35 Arg2:T34	
+T36	Amount 542 549	5–30 mL
+T37	Modifier 562 569	sterile
+T38	Amount 571 583	15- or 50-mL
+T39	Modifier 584 596	polyethylene
+T40	Location 597 602	tubes
+R7	Mod-Link Arg1:T40 Arg2:T39	
+R8	Mod-Link Arg1:T40 Arg2:T37	
+R9	Measure Arg1:T40 Arg2:T38	
+T41	Action 551 561	taken into
+E7	Action:T41 Acts-on:T35 Site:T40
+R10	Measure Arg1:T35 Arg2:T36	
+R11	Mod-Link Arg1:E6 Arg2:T33	
+R12	Setting Arg1:E6 Arg2:T29	
+R13	Mod-Link Arg1:T29 Arg2:T28	
+T42	Reagent 604 614	Subsamples
+T43	Modifier 619 630	immediately
+T44	Action 631 636	fixed
+E8	Action:T44 Acts-on:T42 Using:T49
+T45	Concentration 642 650	1% to 2%
+T46	Measure-Type 652 671	final concentration
+T47	Concentration 673 680	0.02-µm
+T48	Modifier 681 689	filtered
+T49	Reagent 690 698	formalin
+T50	Action 703 709	stored
+E9	Action:T50 
+T51	Temperature 713 716	4°C
+R14	Setting Arg1:E9 Arg2:T51	
+R15	Mod-Link Arg1:T49 Arg2:T48	
+R16	Measure Arg1:T49 Arg2:T47	
+R17	Measure Arg1:T49 Arg2:T45	
+R18	Mod-Link Arg1:E8 Arg2:T43	
+T52	Location 718 724	Slides
+T53	Action 735 743	prepared
+E10	Action:T53 Acts-on:T52
+T54	Measure-Type 806 834	Production and removal rates
+T55	Action 839 849	calculated
+E11	Action:T55 Measure-Type-Link:T54

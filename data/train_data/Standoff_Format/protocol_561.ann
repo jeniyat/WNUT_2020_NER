@@ -1,0 +1,57 @@
+T1	Modifier 31 37	Gently
+T2	Action 38 42	load
+E1	Action:T2 Acts-on:T3 Site:T4
+T3	Reagent 43 71	plant protoplast suspensions
+T4	Device 77 103	hamilton gas-tight syringe
+R1	Mod-Link Arg1:E1 Arg2:T1	
+T5	Action 105 109	Load
+E2	Action:T5 Acts-on:T8 Site:T9
+T6	Generic-Measure 110 114	2.5%
+T7	Measure-Type 115 118	wt%
+R2	Of-Type Arg1:T6 Arg2:T7	
+T8	Reagent 119 147	Pico-Surf(TM) 1in Novec 7500
+T9	Device 153 179	hamilton gas-tight syringe
+R3	Measure Arg1:T8 Arg2:T6	
+T10	Action 181 186	Place
+E3	Action:T10 Acts-on:T11 Site:T12
+T11	Device 191 210	microfluidic device
+T12	Location 218 223	stage
+T13	Device 227 259	bright-field inverted microscope
+R4	Meronym Arg1:T12 Arg2:T13	
+T14	Action 301 308	Connect
+E4	Action:T14 Acts-on:T15 Site:T17 Using:T19
+T15	Device 313 321	syringes
+T16	Modifier 329 342	corresponding
+T17	Location 343 349	inlets
+T18	Device 357 374	microfluidic chip
+T19	Method 379 395	PTFE microtubing
+R5	Mod-Link Arg1:T17 Arg2:T16	
+R6	Meronym Arg1:T17 Arg2:T18	
+T20	Action 397 401	Load
+E5	Action:T20 Site:T21
+T21	Device 407 447	Harvard Apparatus, PHD 2000 syringe pump
+T22	Action 452 457	start
+E6	Action:T22 Using:T23
+T23	Method 458 466	infusing
+T24	Action 574 579	Image
+E7	Action:T24 Acts-on:T25 Using:T26 Measure-Type-Link:T36 Measure-Type-Link2:T37
+T25	Reagent 584 613	plant protoplasts in droplets
+T26	Device 619 646	Andor iXon Ultra 897 camera
+T27	Method 0 30	Plant Protoplast Encapsulation
+T28	Action 266 274	connects
+E8	Action:T28 Acts-on:T13 Acts-on2:T30
+T29	Modifier 282 292	high-speed
+T30	Device 293 299	camera
+R7	Mod-Link Arg1:T30 Arg2:T29	
+T31	Action 468 474	Record
+E9	Action:T31 Using:T33 Using2:T35
+T32	Method 479 499	encapsulation videos
+T33	Device 509 520	fast camera
+T34	Device 522 537	PHANTOM MIROEX4
+R8	Coreference-Link Arg1:T34 Arg2:T33	
+T35	Method 549 572	manufacturer's software
+T36	Measure-Type 651 663	fluorescence
+T37	Measure-Type 668 687	bright field images
+T38	Action 689 699	controlled
+E10	Action:T38 Using:T39
+T39	Device 709 725	Labview software

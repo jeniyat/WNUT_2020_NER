@@ -1,0 +1,288 @@
+T1	Action 82 86	Grow
+E1	Action:T1 Acts-on:T2 Product:T9
+T2	Reagent 91 105	diatom culture
+T3	Concentration 126 140	8.0E6 cells/ml
+T4	Reagent 145 170	Phaeodactylum tricornutum
+T5	Reagent 180 189	F/2 media
+T6	Concentration 193 207	5.0 E7 cell/ml
+T7	Reagent 222 227	BG-11
+T8	Action 171 176	grown
+E2	Action:T8 Product:T9 Site:T5 Acts-on:T4
+T9	Reagent 109 122	mid-log phase
+T10	Action 213 218	grown
+E3	Action:T10 Product:T9 Acts-on:T7
+#1	AnnotatorNotes E1	This sentence with more details in brackets is tough to annotate.
+T11	Action 341 345	Grow
+E4	Action:T11 Acts-on:T13 Site:T18
+T12	Amount 346 350	1 mL
+T13	Reagent 354 369	E. coli culture
+T14	Reagent 390 407	mobillity plasmid
+T15	Reagent 409 416	Pta-MOB
+T16	Reagent 422 437	carrier plasmid
+T17	Time 439 448	overnight
+T18	Reagent 464 478	LB+antibiotics
+T20	Action 517 521	grow
+E5	Action:T20 Acts-on:T21 Site:T23
+T21	Mention 522 526	them
+T22	Speed 538 545	270 rpm
+T23	Device 551 568	shaking incubator
+#2	AnnotatorNotes E4	complex sentence
+T24	Reagent 610 627	overnight culture
+T25	Action 631 640	inoculate
+E6	Action:T25 Acts-on2:T27 Using:T24 Product:T126
+T26	Amount 641 646	50 mL
+T27	Reagent 656 669	LB+antibiotic
+T19	Generic-Measure 671 684	1:50 dilution
+T28	Action 718 722	Grow
+E7	Action:T28 
+T29	Generic-Measure 729 747	OD600 of 0.8 - 1.0
+T30	Speed 759 766	270 rpm
+T34	Time 815 824	3-4 hours
+T35	Reagent 829 844	E. coli culture
+T36	Action 857 864	measure
+E8	Action:T36 Acts-on:T37 Site:T38
+T37	Reagent 869 913	Phaeodactylum tricornutum cell concentration
+T38	Device 921 928	FlowCam
+T39	Device 932 946	haemocytometer
+T40	Action 1060 1070	centrifuge
+E9	Action:T40 Acts-on:T42 Product:T127 Acts-on2:T129
+T41	Amount 1071 1076	50 mL
+T42	Reagent 1080 1095	E. coli culture
+T44	Amount 964 979	required volume
+T45	Amount 998 1003	2.5E8
+T46	Reagent 1004 1009	cells
+T47	Speed 1149 1157	4000 x g
+T48	Time 1162 1172	10 minutes
+T49	Action 1181 1190	Resuspend
+E10	Action:T49 Acts-on:T50 Site:T52
+T50	Reagent 1191 1205	E. coli pellet
+T51	Amount 1209 1215	500 μL
+T52	Reagent 1219 1229	SOC medium
+T53	Action 1230 1239	Resuspend
+E11	Action:T53 Acts-on:T54 Site:T56
+T54	Reagent 1240 1260	P. tricornutum pelle
+T55	Amount 1265 1271	500 μL
+T56	Reagent 1275 1284	L1 medium
+T58	Reagent 1296 1302	diatom
+T59	Reagent 1307 1323	E. coli cultures
+T60	Amount 1431 1437	1.5 mL
+T61	Location 1438 1442	tube
+T62	Action 1443 1446	mix
+E13	Action:T62 Acts-on:T64 Acts-on2:T66 Site:T61
+T63	Amount 1447 1453	200 μl
+T64	Reagent 1457 1470	E. coli cells
+T65	Amount 1476 1482	200 μl
+T66	Reagent 1486 1517	Phaeodactylum tricornutum cells
+T67	Amount 1544 1550	1.5 mL
+T68	Location 1551 1555	tube
+T69	Action 1556 1559	mix
+E14	Action:T69 Site:T68 Acts-on:T71 Acts-on2:T73 Product:T75
+T70	Amount 1560 1566	200 μl
+T71	Reagent 1570 1580	SOC medium
+T72	Amount 1586 1592	200 μl
+T73	Reagent 1596 1627	Phaeodactylum tricornutum cells
+T74	Action 1635 1643	Incubate
+E15	Action:T74 Acts-on:T76
+T75	Reagent 1519 1535	Negative control
+T76	Location 1658 1681	negative control plates
+T77	Location 1697 1715	conjugation plates
+#3	AnnotatorNotes T77	location can be created by action verb
+T78	Action 1717 1723	Spread
+E16	Action:T78 Acts-on:T79 Site:T81
+T79	Reagent 1728 1735	mixture
+T80	Amount 1737 1743	400 μL
+T81	Location 1748 1766	Conjugation Plates
+T82	Action 1805 1813	Incubate
+E17	Action:T82 Acts-on:T83 Site:T85
+T83	Location 1814 1820	plates
+T84	Time 1825 1835	90 minutes
+T85	Location 1851 1855	dark
+T86	Action 1857 1861	Move
+E18	Action:T86 Acts-on:T87 Site:T88
+T87	Location 1862 1868	plates
+T88	Device 1872 1887	light incubator
+T90	Time 1928 1934	2 days
+T91	Action 1936 1943	Collect
+E19	Action:T91 Product:T92
+T92	Reagent 1944 1949	cells
+T93	Action 1953 1959	adding
+E20	Action:T93 Acts-on:T95
+T94	Amount 1960 1964	1 mL
+T95	Reagent 1968 1977	L1 medium
+T97	Device 1985 1997	cell scraper
+T99	Reagent 2023 2029	medium
+T98	Reagent 2013 2018	cells
+T100	Action 2001 2012	concentrate
+E22	Action:T100 Acts-on:T98 Acts-on2:T99 Site:T101 Using:T97
+T101	Location 2033 2041	one side
+#4	AnnotatorNotes T101	Instead of tagging the phrase, brake this into 2 tags. location name, and descriptor of the location
+T102	Action 2056 2064	Transfer
+E23	Action:T102 Acts-on:T103 Site:T105 Using:T106 Using2:T107
+T103	Reagent 2065 2082	resuspended cells
+T104	Amount 2088 2094	1.5 ml
+T105	Location 2095 2115	microcentrifuge tube
+T106	Device 2123 2136	P1000 pipette
+T107	Device 2141 2152	filter tips
+T108	Action 2154 2160	Spread
+E24	Action:T108 Acts-on:T110 Site:T111
+T109	Amount 2161 2167	200 μl
+T110	Reagent 2175 2190	cell suspension
+T111	Location 2196 2211	Selection Plate
+T112	Action 2213 2221	Incubate
+E25	Action:T112 Product:T114
+T114	Reagent 2265 2273	colonies
+T115	Action 2473 2482	selection
+E26	Action:T115 Using:T117 Site:T116
+T116	Reagent 2498 2526	liquid BG-11 Selection media
+T117	Reagent 2533 2537	eGFP
+T118	Action 2556 2562	sorted
+E27	Action:T118 Using:T119
+T119	Reagent 2569 2573	FACS
+R22	Setting Arg1:E17 Arg2:T84
+R23	Setting Arg1:E18 Arg2:T90
+T121	Temperature 749 753	37°C
+R24	Setting Arg1:E7 Arg2:T121
+R25	Setting Arg1:E7 Arg2:T30
+R21	Setting Arg1:E4 Arg2:T17	
+R27	Measure Arg1:T13 Arg2:T12	
+T122	Temperature 530 534	37°C
+R2	Measure Arg1:T27 Arg2:T26	
+R3	Measure Arg1:T27 Arg2:T19	
+R4	Measure Arg1:T46 Arg2:T45	
+R6	Measure Arg1:T42 Arg2:T41	
+R7	Measure Arg1:T52 Arg2:T51	
+R8	Measure Arg1:T56 Arg2:T55	
+R9	Measure Arg1:T61 Arg2:T60	
+R10	Measure Arg1:T64 Arg2:T63	
+R11	Measure Arg1:T66 Arg2:T65	
+R12	Measure Arg1:T68 Arg2:T67	
+R13	Measure Arg1:T71 Arg2:T70	
+R14	Measure Arg1:T73 Arg2:T72	
+R15	Measure Arg1:T79 Arg2:T80	
+R16	Measure Arg1:T95 Arg2:T94	
+R17	Measure Arg1:T105 Arg2:T104	
+R18	Measure Arg1:T110 Arg2:T109	
+R5	Measure Arg1:T9 Arg2:T3	
+R19	Or Arg1:T3 Arg2:T6	
+R1	Or Arg1:T14 Arg2:T15	
+T31	Time 450 459	16-20 hrs
+R20	Or Arg1:T17 Arg2:T31	
+R26	Meronym Arg1:T14 Arg2:T13	
+R28	Meronym Arg1:T16 Arg2:T13	
+R29	Setting Arg1:E5 Arg2:T122	
+R30	Setting Arg1:E5 Arg2:T22	
+T32	Modifier 650 655	fresh
+R31	Mod-Link Arg1:T27 Arg2:T32	
+R32	Setting Arg1:E7 Arg2:T29	
+T33	Action 848 855	growing
+E28	Action:T33 Acts-on:T35
+R33	Setting Arg1:E28 Arg2:T34	
+R34	Or Arg1:T38 Arg2:T39	
+T89	Action 950 959	calculate
+E29	Action:T89 
+R35	Setting Arg1:E29 Arg2:T44	
+T113	Action 990 997	collect
+E30	Action:T113 Acts-on:T46 Product:T123
+T120	Modifier 1014 1018	each
+T123	Reagent 1019 1033	transformation
+R36	Mod-Link Arg1:T123 Arg2:T120	
+T124	Modifier 690 694	each
+T125	Modifier 695 702	planned
+T126	Reagent 703 717	transformation
+R37	Mod-Link Arg1:T126 Arg2:T125	
+R38	Mod-Link Arg1:T126 Arg2:T124	
+T127	Reagent 1044 1058	transformation
+T128	Modifier 1039 1043	each
+R39	Mod-Link Arg1:T127 Arg2:T128	
+T129	Reagent 1113 1138	Phaeodactylum tricornutum
+T130	Modifier 1104 1112	required
+R42	Setting Arg1:E9 Arg2:T47	
+R43	Setting Arg1:E9 Arg2:T48	
+T131	Temperature 1176 1179	4°C
+R44	Setting Arg1:E9 Arg2:T131	
+T57	Action 1334 1345	centrifuged
+E12	Action:T57 Acts-on:T58 Acts-on2:T59
+T132	Modifier 1360 1364	same
+T133	Time 1365 1369	time
+R45	Mod-Link Arg1:T133 Arg2:T132	
+R46	Setting Arg1:E12 Arg2:T133	
+T134	Action 1373 1381	minimize
+E31	Action:T134 
+T135	Time 1386 1400	amount of time
+R47	Setting Arg1:E31 Arg2:T135	
+T136	Temperature 1839 1843	30°C
+R48	Setting Arg1:E17 Arg2:T136	
+T137	Temperature 1889 1893	18°C
+T138	Generic-Measure 1898 1922	100 μmol photons m-2 s-1
+R49	Setting Arg1:T88 Arg2:T137	
+R50	Setting Arg1:T88 Arg2:T138	
+T96	Location 2049 2054	plate
+R51	Meronym Arg1:T101 Arg2:T96	
+T139	Temperature 2225 2229	18°C
+T140	Generic-Measure 2234 2258	100 μmol photons m-2 s-1
+R52	Setting Arg1:E25 Arg2:T139	
+R53	Setting Arg1:E25 Arg2:T140	
+T141	Modifier 2459 2472	Alternatively
+R54	Mod-Link Arg1:E26 Arg2:T141	
+T43	Method 0 25	Full Contact Microbiology
+T142	Method 33 80	Diatom Transformation via Bacterial Conjugation
+T143	Action 238 250	investigated
+E21	Action:T143 Measure-Type-Link:T144
+T144	Measure-Type 251 276	transformation efficiency
+T145	Modifier 277 304	throughout the growth curve
+R40	Mod-Link Arg1:E21 Arg2:T145	
+T146	Modifier 484 488	each
+T147	Modifier 489 496	planned
+T148	Method 497 511	transformation
+T149	Time 572 600	On the day of transformation
+R41	Coreference-Link Arg1:E6 Arg2:T149	
+T150	Time 793 802	3-4 hours
+R55	Setting Arg1:E7 Arg2:T150	
+T151	Measure-Type 1139 1146	volume 
+R56	Mod-Link Arg1:T129 Arg2:T130	
+T152	Mention 1401 1405	they
+T153	Action 1406 1412	spend 
+E32	Action:T153 Acts-on:T152
+T154	Modifier 1412 1424	concentrated
+R57	Mod-Link Arg1:T152 Arg2:T154	
+R58	Coreference-Link Arg1:T152 Arg2:T58	
+R59	Coreference-Link Arg1:T152 Arg2:T59	
+R60	Coreference-Link Arg1:T152 Arg2:T58	
+R61	Coreference-Link Arg1:T152 Arg2:T59	
+T155	Action 1648 1653	treat
+E33	Action:T155 Acts-on:T76
+T156	Modifier 1682 1693	identically
+R62	Mod-Link Arg1:E33 Arg2:T156	
+R63	Mod-Link Arg1:E15 Arg2:T156	
+T157	Numerical 1769 1773	0.5x
+T158	Reagent 1774 1779	BG-11
+T159	Concentration 1785 1787	5%
+T160	Concentration 1795 1797	1%
+T161	Reagent 1798 1802	agar
+T162	Reagent 1788 1790	LB
+R64	Measure Arg1:T162 Arg2:T159	
+R65	Measure Arg1:T161 Arg2:T160	
+R66	Measure Arg1:T158 Arg2:T157	
+T163	Modifier 2282 2297	After a minimum
+T164	Time 2301 2310	8-12 days
+T165	Modifier 2312 2326	untransformed 
+T166	Reagent 2326 2357	Phaeodactylum tricornutum cells
+T167	Action 2358 2365	die off
+E34	Action:T167 Acts-on:T166
+R67	Setting Arg1:E34 Arg2:T164	
+R68	Mod-Link Arg1:T164 Arg2:T163	
+R69	Mod-Link Arg1:T166 Arg2:T165	
+T168	Modifier 2383 2394	transformed
+T169	Reagent 2395 2400	cells
+T170	Reagent 2371 2379	colonies
+T171	Action 2401 2416	begin to appear
+E35	Action:T171 Acts-on:T169
+R70	Mod-Link Arg1:T169 Arg2:T168	
+R71	Meronym Arg1:T169 Arg2:T170	
+T172	Time 2448 2457	3-4 weeks
+T173	Modifier 2575 2589	un-transformed
+T175	Method 2616 2624	protocol
+T176	Action 2629 2637	modified
+E36	Action:T176 
+T177	Method 2647 2665	original procedure
+T178	Reagent 2593 2597	eGFP

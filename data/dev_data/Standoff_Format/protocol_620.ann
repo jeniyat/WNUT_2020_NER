@@ -1,0 +1,724 @@
+T1	Action 59 64	Grind
+E1	Action:T1 Acts-on:T45
+T2	Action 69 78	sterilise
+E2	Action:T2 Acts-on:T45
+T3	Action 126 133	Prepare
+E3	Action:T3 Acts-on:T48 Acts-on2:T47
+T6	Action 493 496	Add
+E6	Action:T6 Acts-on:T4 Site:T5
+T7	Action 644 647	Add
+E7	Action:T7 Acts-on:T54 Site:T56
+T9	Action 785 791	Filter
+E9	Action:T9 Acts-on:T61
+T10	Action 813 818	Place
+E10	Action:T10 Acts-on:T63 Site:T65
+T11	Action 867 871	Pour
+E11	Action:T11 Using:T66 Acts-on:T67 Site:T71
+T12	Action 944 948	pour
+E12	Action:T12 Site:T73
+T13	Action 1044 1049	Rinse
+E13	Action:T13 Acts-on:T76 Acts-on2:T77 Using:T79
+T14	Action 1168 1175	Aliquot
+E14	Action:T14 Acts-on:T80 Site:T82
+T15	Action 1274 1278	spin
+E15	Action:T15 Acts-on:T82
+T16	Action 1308 1315	Discard
+E16	Action:T16 Acts-on:T91
+T17	Action 1336 1345	resuspend
+E17	Action:T17 Acts-on:T92 Site:T94 Using:T97
+T18	Action 1416 1421	Plate
+E18	Action:T18 Acts-on:T100 Site:T102
+T19	Action 1492 1495	Use
+E19	Action:T19 Using:T103
+T22	Action 1693 1697	Grow
+E22	Action:T22 
+T23	Action 1907 1910	Mix
+E23	Action:T23 Acts-on:T105 Acts-on2:T106
+T24	Action 1955 1958	add
+E24	Action:T24 Acts-on:T108 Site:T111 Product:T106
+T25	Action 2049 2062	Electroporate
+E25	Action:T25 Using:T115
+T26	Action 2136 2139	add
+E26	Action:T26 Acts-on:T119
+T27	Action 2207 2213	Streak
+E27	Action:T27 Site:T127
+T28	Action 2347 2351	Grow
+E28	Action:T28 Using:T131
+T29	Action 2788 2792	pick
+E29	Action:T29 Acts-on:T133 Site:T134
+T30	Action 2821 2830	inoculate
+E30	Action:T30 Acts-on:T136 Site:T138
+T31	Action 2949 2957	Incubate
+E31	Action:T31 
+T32	Action 3119 3129	Centrifuge
+E32	Action:T32 Acts-on:T143
+T33	Action 3206 3213	discard
+E33	Action:T33 Acts-on:T145
+T34	Action 3234 3244	re-suspend
+E34	Action:T34 Site:T148
+T35	Action 3307 3310	Add
+E35	Action:T35 Acts-on:T151 Measure-Type-Link:T153
+T36	Action 3409 3414	Shake
+E36	Action:T36 Site:T157
+T37	Action 3518 3524	Scrape
+E37	Action:T37 Acts-on:T160 Site:T161 Using:T162
+T38	Action 3594 3600	gather
+E38	Action:T38 Acts-on:T158
+T39	Action 3666 3669	Use
+E39	Action:T39 Acts-on:T168
+T40	Action 3797 3800	Add
+E40	Action:T40 Site:T171 Acts-on:T174 Acts-on2:T177 Measure-Type-Link:T179
+T41	Action 3927 3930	add
+E41	Action:T41 Acts-on:T184 Site:T181
+T42	Action 4133 4136	Add
+E42	Action:T42 Acts-on:T191 Site:T195 Measure-Type-Link:T196
+T43	Action 4327 4334	collect
+E43	Action:T43 Product:T193
+T44	Action 4429 4434	Rinse
+E44	Action:T44 Acts-on:T208
+T45	Reagent 83 94	spore heads
+T46	Generic-Measure 155 163	3 x 50mL
+T47	Location 164 176	falcon tubes
+R1	Measure Arg1:T47 Arg2:T46	
+T48	Location 134 149	eppendorf tubes
+T49	Numerical 304 307	two
+T50	Reagent 308 317	sporangia
+T51	Modifier 318 321	per
+T52	Action 322 336	transformation
+E45	Action:T52 Count:T49 Using:T50
+R2	Mod-Link Arg1:E45 Arg2:T51	
+T4	Reagent 501 513	spores heads
+T5	Location 520 534	eppendorf tube
+T53	Amount 648 653	0.5ml
+T54	Reagent 654 669	Milton solution
+T55	Modifier 673 677	each
+T56	Location 678 692	eppendorf tube
+R3	Mod-Link Arg1:T56 Arg2:T55	
+R4	Measure Arg1:T54 Arg2:T53	
+T57	Device 700 714	plastic pestle
+T8	Action 718 723	crush
+E4	Action:T8 Acts-on:T58 Using:T57
+T58	Reagent 728 737	sporangia
+T59	Action 742 748	vortex
+E5	Action:T59 Acts-on:T60
+T60	Mention 749 753	them
+R5	Coreference-Link Arg1:T60 Arg2:T58	
+T61	Reagent 800 811	spore heads
+T62	Size 823 828	70 μm
+T63	Device 829 842	cell strainer
+T64	Amount 848 853	50 ml
+T65	Location 854 865	falcon tube
+R6	Measure Arg1:T65 Arg2:T64	
+R7	Setting Arg1:T63 Arg2:T62	
+T66	Device 881 887	filter
+T67	Reagent 892 900	solution
+T68	Modifier 792 799	crushed
+R8	Mod-Link Arg1:T61 Arg2:T68	
+T69	Modifier 906 912	ground
+T70	Reagent 913 922	sporangia
+R9	Mod-Link Arg1:T70 Arg2:T69	
+T71	Location 932 942	eppendfors
+T72	Amount 953 959	0.5 ml
+T73	Location 970 979	eppendorf
+T74	Modifier 965 969	each
+R10	Mod-Link Arg1:T73 Arg2:T74	
+R11	Setting Arg1:E12 Arg2:T72	
+R12	Meronym Arg1:T70 Arg2:T67	
+T75	Modifier 928 931	all
+R13	Mod-Link Arg1:T71 Arg2:T75	
+T76	Location 1054 1066	Eppendorf(s)
+T77	Device 1071 1079	strainer
+T78	Amount 1085 1091	0.5 ml
+T79	Reagent 1095 1110	Milton solution
+R14	Measure Arg1:T79 Arg2:T78	
+T80	Reagent 1180 1188	solution
+T81	Reagent 1194 1200	spores
+T82	Location 1204 1219	eppendorf tubes
+T83	Amount 1221 1224	0.5
+T84	Amount 1228 1231	1ml
+T85	Location 1236 1240	tube
+T86	Modifier 1232 1235	per
+T87	Action 1252 1255	sit
+E8	Action:T87 Acts-on:T82
+T88	Time 1260 1269	5 minutes
+T89	Time 1283 1294	6-7 minutes
+T90	Speed 1298 1306	13000rpm
+R15	Meronym Arg1:T80 Arg2:T81	
+R16	Mod-Link Arg1:T85 Arg2:T86	
+R17	Measure Arg1:T80 Arg2:T83	
+R18	Or Arg1:T83 Arg2:T84	
+R19	Setting Arg1:E8 Arg2:T88	
+R20	Setting Arg1:E15 Arg2:T89	
+R21	Setting Arg1:E15 Arg2:T90	
+T91	Reagent 1320 1331	supernatant
+T92	Reagent 1350 1356	spores
+T93	Modifier 1360 1364	each
+T94	Location 1365 1369	tube
+T95	Amount 1375 1381	150 μl
+T96	Modifier 1385 1392	sterile
+T97	Reagent 1393 1398	water
+R22	Mod-Link Arg1:T97 Arg2:T96	
+R23	Measure Arg1:T97 Arg2:T95	
+R24	Mod-Link Arg1:T94 Arg2:T93	
+T98	Amount 1426 1432	150 μl
+T99	Modifier 1436 1448	re-suspended
+T100	Reagent 1449 1455	spores
+T101	Generic-Measure 1461 1467	1/2 GB
+T102	Location 1468 1473	plate
+R25	Measure Arg1:T102 Arg2:T101	
+R26	Mod-Link Arg1:T100 Arg2:T99	
+R27	Measure Arg1:T100 Arg2:T98	
+T103	Device 1499 1516	L-shaped spreader
+T20	Time 1755 1763	5-6 days
+T21	Temperature 1767 1772	21 ºC
+R28	Setting Arg1:E22 Arg2:T20	
+R29	Setting Arg1:E22 Arg2:T21	
+T104	Modifier 1698 1709	upside down
+R30	Mod-Link Arg1:E22 Arg2:T104	
+T105	Reagent 1911 1914	DNA
+T106	Reagent 1919 1923	Agro
+T107	Amount 1959 1966	20-50ng
+T108	Reagent 1970 1977	plasmid
+T109	Amount 1981 1986	50 μL
+T110	Modifier 1990 1996	thawed
+T111	Reagent 1997 2033	electrocompetent Agrobacterium cells
+T113	Location 2040 2046	on ice
+R31	Mod-Link Arg1:T111 Arg2:T110	
+R32	Measure Arg1:T111 Arg2:T109	
+R33	Measure Arg1:T108 Arg2:T107	
+R34	Meronym Arg1:T111 Arg2:T113	
+T112	Modifier 2068 2075	chilled
+T114	Size 2076 2080	2 mm
+T115	Device 2081 2088	cuvette
+T116	Generic-Measure 2096 2108	2.5 kV pulse
+R35	Setting Arg1:T115 Arg2:T114	
+R36	Mod-Link Arg1:T115 Arg2:T112	
+R37	Setting Arg1:E25 Arg2:T116	
+T117	Modifier 2124 2135	Immediately
+T118	Amount 2140 2143	1mL
+T119	Reagent 2147 2150	SOC
+T120	Reagent 2155 2157	LB
+T121	Action 2163 2171	incubate
+E20	Action:T121 Product:T125
+T122	Time 2172 2176	1-2h
+T123	Temperature 2180 2185	28 ºC
+T124	Speed 2186 2193	150 rpm
+R38	Setting Arg1:E20 Arg2:T122	
+R39	Setting Arg1:E20 Arg2:T123	
+R40	Setting Arg1:E20 Arg2:T124	
+R41	Measure Arg1:T119 Arg2:T118	
+R42	Or Arg1:T119 Arg2:T120	
+R43	Mod-Link Arg1:E26 Arg2:T117	
+T125	Reagent 2118 2122	Agro
+T126	Amount 2214 2221	20-50μL
+T127	Reagent 2225 2248	LB plates + antibiotics
+R44	Setting Arg1:E27 Arg2:T126	
+T128	Time 2356 2362	3 days
+T129	Temperature 2366 2371	28 ºC
+T130	Temperature 2375 2380	30 ºC
+T131	Device 2382 2391	incubator
+R45	Setting Arg1:E28 Arg2:T128	
+R46	Setting Arg1:E28 Arg2:T129	
+R47	Or Arg1:T129 Arg2:T130	
+T132	Numerical 2795 2801	single
+T133	Reagent 2802 2808	colony
+R48	Measure Arg1:T133 Arg2:T132	
+T134	Location 2814 2819	plate
+T135	Amount 2831 2835	5 ml
+T136	Reagent 2836 2858	LB media + antibiotics
+T137	Amount 2913 2918	15 ml
+T138	Location 2919 2930	falcon tube
+T139	Temperature 2961 2966	28 ºC
+T140	Speed 2969 2976	150 rpm
+T141	Action 3010 3014	grow
+E21	Action:T141 
+T142	Time 3019 3028	1.5 days.
+R49	Measure Arg1:T136 Arg2:T135	
+R50	Measure Arg1:T138 Arg2:T137	
+R51	Setting Arg1:E31 Arg2:T139	
+R52	Setting Arg1:E31 Arg2:T140	
+R53	Setting Arg1:E21 Arg2:T142	
+T143	Reagent 3134 3163	agrobacterium culture(s) 10''
+T144	Speed 3167 3172	3000g
+R54	Setting Arg1:E32 Arg2:T144	
+T145	Reagent 3218 3229	supernatant
+T146	Amount 3248 3252	3 ml
+T147	Generic-Measure 3256 3262	1/2 GB
+T148	Reagent 3263 3272	media sup
+T149	Concentration 3284 3290	100 μM
+T150	Reagent 3291 3305	Acetosyringone
+R55	Measure Arg1:T150 Arg2:T149	
+R56	Measure Arg1:T148 Arg2:T147	
+R57	Measure Arg1:T148 Arg2:T146	
+R58	Meronym Arg1:T150 Arg2:T148	
+T151	Reagent 3311 3325	acetosyringone
+T152	Amount 3354 3360	100 μM
+T153	Measure-Type 3331 3350	final concentration
+R59	Setting Arg1:E35 Arg2:T152	
+T154	Time 3419 3422	6 h
+T155	Temperature 3426 3431	28 ºC
+T156	Speed 3435 3442	150 rpm
+T157	Location 3450 3454	dark
+R60	Setting Arg1:E36 Arg2:T154	
+R61	Setting Arg1:E36 Arg2:T155	
+R62	Setting Arg1:E36 Arg2:T156	
+T159	Modifier 3529 3539	6 days old
+T160	Reagent 3540 3550	sporelings
+T161	Location 3560 3565	plate
+T162	Device 3575 3592	L shaped spreader
+R63	Mod-Link Arg1:T160 Arg2:T159	
+T158	Reagent 3605 3615	sporelings
+T163	Action 3620 3624	move
+E46	Action:T163 Acts-on:T164 Site:T166
+T164	Mention 3625 3629	them
+T165	Amount 3637 3647	100-250 ml
+T166	Location 3648 3664	autoclaved flask
+R64	Measure Arg1:T166 Arg2:T165	
+R65	Coreference-Link Arg1:T164 Arg2:T158	
+T167	Numerical 3670 3673	one
+T168	Location 3674 3679	plate
+T169	Location 3684 3689	flask
+R66	Measure Arg1:T168 Arg2:T167	
+T170	Modifier 3804 3808	each
+T171	Location 3809 3814	flask
+T172	Amount 3815 3820	25 ml
+T173	Generic-Measure 3824 3830	1/2 GB
+T174	Reagent 3831 3840	media sup
+T175	Amount 3845 3850	25 ul
+T176	Concentration 3854 3859	100mM
+T177	Reagent 3860 3874	Acetosyringone
+T178	Concentration 3905 3910	100μM
+T179	Measure-Type 3882 3901	final concentration
+R67	Mod-Link Arg1:T171 Arg2:T170	
+R68	Measure Arg1:T174 Arg2:T173	
+R69	Measure Arg1:T174 Arg2:T172	
+R70	Measure Arg1:T177 Arg2:T176	
+R71	Measure Arg1:T177 Arg2:T175	
+R72	Setting Arg1:E40 Arg2:T178	
+T180	Modifier 3915 3919	each
+T181	Location 3920 3925	flask
+T182	Amount 3931 3934	1ml
+T183	Modifier 3942 3952	appropiate
+T184	Reagent 3953 3974	Agrobacterium culture
+R73	Mod-Link Arg1:T184 Arg2:T183	
+R74	Measure Arg1:T184 Arg2:T182	
+R75	Mod-Link Arg1:T181 Arg2:T180	
+T185	Action 3996 4008	Co-cultivate
+E47	Action:T185 Site:T187
+T186	Time 4013 4019	2 days
+T187	Location 4053 4059	shaker
+T188	Location 4067 4086	tissue culture room
+T189	Temperature 4088 4093	21 ºC
+T190	Generic-Measure 4098 4108	150-200 uE
+R76	Setting Arg1:E47 Arg2:T186	
+R77	Meronym Arg1:T187 Arg2:T188	
+R78	Setting Arg1:E47 Arg2:T189	
+R79	Setting Arg1:E47 Arg2:T190	
+T191	Reagent 4137 4147	cefotaxime
+T192	Concentration 4148 4156	100mg/ml
+T194	Modifier 4175 4182	sterile
+T195	Reagent 4183 4188	water
+T196	Measure-Type 4195 4214	final concentration
+T197	Concentration 4218 4226	100ug/ml
+T198	Amount 4228 4238	150-200 ml
+T199	Modifier 4250 4253	per
+T200	Location 4254 4259	flask
+R81	Mod-Link Arg1:T195 Arg2:T194	
+R82	Setting Arg1:E42 Arg2:T197	
+R83	Mod-Link Arg1:T200 Arg2:T199	
+R80	Measure Arg1:T191 Arg2:T192	
+R84	Measure Arg1:T191 Arg2:T198	
+R85	Meronym Arg1:T195 Arg2:T200	
+T193	Reagent 4339 4349	sporelings
+T201	Action 4354 4361	pouring
+E48	Action:T201 Acts-on:T202 Site:T204 Product:T193
+T202	Reagent 4366 4380	flask contents
+T203	Size 4386 4391	70 μm
+T204	Device 4392 4405	cell strainer
+T205	Action 4406 4412	placed
+E49	Action:T205 Acts-on:T204 Site:T207
+T206	Amount 4418 4420	1L
+T207	Location 4421 4427	bottle
+R86	Measure Arg1:T207 Arg2:T206	
+R87	Setting Arg1:T204 Arg2:T203	
+T208	Reagent 4439 4448	sporeling
+T209	Action 4452 4459	pouring
+E50	Action:T209 Acts-on2:T212 Site:T210
+T210	Mention 4465 4469	them
+T211	Amount 4470 4479	150-200ml
+T212	Reagent 4483 4518	water + cefo 100 Sporelings plating
+R88	Measure Arg1:T212 Arg2:T211	
+R89	Coreference-Link Arg1:T210 Arg2:T208	
+T213	Method 0 37	Agrobacterium mediated transformation
+T214	Reagent 41 58	Marchantia spores
+T215	Action 97 106	Get ready
+E51	Action:T215 Site:T216
+T216	Location 115 124	flow hood
+T218	Reagent 185 198	sterile water
+T217	Reagent 207 222	Milton solution
+T219	Reagent 226 239	Milton tablet
+T220	Reagent 248 261	sterile water
+T221	Amount 243 247	25ml
+T222	Numerical 224 225	1
+R90	Measure Arg1:T219 Arg2:T222	
+R91	Measure Arg1:T220 Arg2:T221	
+T223	Modifier 279 285	washed
+T224	Reagent 286 298	spores heads
+R92	Mod-Link Arg1:T224 Arg2:T223	
+T225	Action 300 303	Use
+E52	Action:T225 Acts-on:T50
+T226	Action 338 343	Check
+E53	Action:T226 Acts-on:T227 Site:T229
+T227	Reagent 354 363	sporangia
+T228	Numerical 344 350	number
+R93	Measure Arg1:T227 Arg2:T228	
+T229	Reagent 371 381	spore head
+T230	Numerical 422 423	1
+T231	Reagent 424 433	sporangia
+T232	Numerical 437 440	one
+T233	Reagent 441 451	spore head
+T234	Numerical 457 458	5
+T235	Reagent 459 468	sporangia
+T236	Modifier 472 479	another
+T237	Reagent 480 490	spore head
+R94	Mod-Link Arg1:T237 Arg2:T236	
+R95	Measure Arg1:T233 Arg2:T232	
+R96	Measure Arg1:T231 Arg2:T230	
+T238	Modifier 391 399	variable
+R97	Mod-Link Arg1:T227 Arg2:T238	
+R98	Measure Arg1:T235 Arg2:T234	
+T239	Mention 383 387	this
+R99	Coreference-Link Arg1:T239 Arg2:T228	
+T240	Modifier 549 554	final
+T241	Numerical 555 561	number
+T242	Reagent 565 576	spore heads
+T243	Modifier 577 583	needed
+T244	Action 601 607	divide
+E54	Action:T244 Acts-on:T245 Site:T247
+T245	Mention 608 612	them
+T246	Modifier 618 625	several
+T247	Location 626 642	eppendorfs tubes
+R100	Mod-Link Arg1:T247 Arg2:T246	
+R101	Coreference-Link Arg1:T245 Arg2:T242	
+R102	Mod-Link Arg1:T242 Arg2:T243	
+R103	Measure Arg1:T242 Arg2:T241	
+R104	Mod-Link Arg1:T241 Arg2:T240	
+T248	Modifier 754 783	until completely re-suspended
+R105	Mod-Link Arg1:E5 Arg2:T248	
+T249	Reagent 985 993	solution
+T250	Modifier 994 1005	with spores
+T251	Action 1011 1016	flush
+E55	Action:T251 Acts-on:T249 Using:T252
+T252	Device 1029 1042	cell strainer
+R106	Mod-Link Arg1:T249 Arg2:T250	
+T253	Modifier 1115 1119	each
+T254	Numerical 1120 1123	two
+T255	Reagent 1124 1133	sporangia
+T256	Amount 1144 1148	3 ml
+T257	Reagent 1153 1165	12 sporangia
+R107	Measure Arg1:T255 Arg2:T254	
+R108	Mod-Link Arg1:T254 Arg2:T253	
+T258	Mention 1247 1251	them
+R109	Coreference-Link Arg1:T258 Arg2:T80	
+T259	Action 1402 1407	Plate
+E56	Action:T259 Acts-on:T260
+T260	Reagent 1408 1414	spores
+T261	Modifier 1475 1477	no
+T262	Reagent 1478 1489	antibiotics
+R110	Mod-Link Arg1:T262 Arg2:T261	
+T263	Amount 1521 1527	0.5 ml
+T264	Reagent 1528 1536	aliquots
+R111	Measure Arg1:T264 Arg2:T263	
+T265	Reagent 1559 1568	sporangia
+T266	Numerical 1557 1558	2
+T267	Action 1571 1574	use
+E57	Action:T267 Acts-on:T269
+T268	Numerical 1575 1578	one
+T269	Location 1579 1584	plate
+T270	Modifier 1585 1588	per
+T271	Action 1589 1603	transformation
+E58	Action:T271 Using:T269
+R112	Measure Arg1:T269 Arg2:T268	
+R113	Mod-Link Arg1:E58 Arg2:T270	
+T272	Action 1677 1691	transformation
+E59	Action:T272 Using:T274
+T273	Modifier 1673 1676	per
+T274	Location 1667 1672	plate
+T275	Modifier 1660 1664	half
+T276	Action 1656 1659	use
+E60	Action:T276 Acts-on:T274
+R114	Mod-Link Arg1:T274 Arg2:T275	
+R115	Mod-Link Arg1:E59 Arg2:T273	
+T277	Reagent 1644 1653	sporangia
+T278	Numerical 1642 1643	4
+R116	Measure Arg1:T277 Arg2:T278	
+R117	Measure Arg1:T265 Arg2:T266	
+T279	Modifier 1929 1933	each
+T280	Method 1934 1953	agro transformation
+T281	Amount 1608 1612	1 ml
+T282	Reagent 1613 1621	aliquots
+R118	Measure Arg1:T282 Arg2:T281	
+T283	Reagent 1711 1719	rhizoids
+T284	Action 1725 1729	grow
+E61	Action:T284 Acts-on:T283 Site:T286
+T285	Modifier 1730 1739	away from
+T286	Location 1744 1749	media
+R119	Mod-Link Arg1:E61 Arg2:T285	
+T287	Amount 1776 1781	150μE
+T288	Reagent 1782 1792	Sporelings
+T289	Modifier 1794 1804	germinated
+T290	Reagent 1805 1811	spores
+T291	Modifier 1818 1833	red fluoresence
+T292	Method 1839 1867	chlorophyll autofluorescence
+T293	Modifier 1868 1873	after
+T294	Time 1874 1882	~ 3 days
+R120	Mod-Link Arg1:T294 Arg2:T293	
+R121	Mod-Link Arg1:T290 Arg2:T289	
+R122	Mod-Link Arg1:T290 Arg2:T291	
+R123	Measure Arg1:T288 Arg2:T287	
+T295	Method 1885 1904	Agro transformation
+T296	Action 2110 2117	Recover
+E62	Action:T296 Acts-on:T125
+T297	Action 2195 2200	Plate
+E63	Action:T297 Acts-on:T298
+T298	Reagent 2201 2205	Agro
+T299	Reagent 2283 2297	pGreen plasmid
+T300	Reagent 2250 2256	Kan 50
+T301	Reagent 2258 2263	Tet 5
+T302	Reagent 2269 2275	GV2260
+T303	Modifier 2300 2304	Each
+T304	Method 2305 2324	Agro transformation
+T305	Modifier 2330 2339	different
+T306	Location 2340 2345	plate
+R124	Mod-Link Arg1:T306 Arg2:T305	
+T307	Modifier 2394 2402	Optional
+T308	Reagent 2403 2414	Agro colony
+T309	Method 2415 2418	PCR
+T310	Modifier 2420 2423	all
+T311	Reagent 2424 2446	agrobacterium colonies
+T312	Reagent 2450 2452	LB
+T313	Reagent 2455 2466	antibiotics
+T314	Location 2467 2473	plates
+T315	Modifier 2484 2492	positive
+R125	Mod-Link Arg1:T314 Arg2:T310	
+R126	Meronym Arg1:T311 Arg2:T314	
+R127	Meronym Arg1:T312 Arg2:T314	
+R128	Meronym Arg1:T313 Arg2:T314	
+T316	Method 2536 2551	transformations
+T317	Modifier 2562 2568	useful
+T318	Action 2572 2589	do a quick screen
+E64	Action:T318 
+T319	Action 2593 2598	check
+E65	Action:T319 Site:T320
+T320	Location 2639 2644	plate
+T321	Modifier 2612 2615	any
+T322	Method 2616 2631	false positives
+R129	Mod-Link Arg1:E64 Arg2:T317	
+R130	Mod-Link Arg1:T314 Arg2:T315	
+T323	Action 2660 2662	do
+E66	Action:T323 Using:T324 Acts-on:T325
+T324	Method 2665 2675	colony PCR
+T325	Reagent 2679 2692	Agro colonies
+T326	Reagent 2860 2866	Kan 50
+T327	Reagent 2868 2873	Tet 5
+T328	Reagent 2878 2884	GV2260
+T329	Reagent 2892 2906	pGreen plasmid
+T330	Modifier 2932 2941	unskirted
+T331	Location 2942 2946	tube
+R131	Mod-Link Arg1:T331 Arg2:T330	
+R132	Coreference-Link Arg1:T331 Arg2:T138	
+T332	Action 2694 2698	Grow
+E67	Action:T332 Acts-on:T333
+T333	Reagent 2699 2711	Agro culture
+T334	Size 2716 2722	~ 15''
+T335	Action 2725 2731	set up
+E68	Action:T335 
+T336	Time 2732 2757	sometime in the afternoon
+R133	Setting Arg1:E68 Arg2:T336	
+T337	Modifier 2763 2767	each
+T338	Method 2768 2787	Agro transformation
+T339	Action 2978 2982	wrap
+E69	Action:T339 Acts-on:T340 Using:T341
+T340	Location 2987 2992	tubes
+T341	Seal 2996 3000	foil
+T342	Method 3031 3045	Agro induction
+T343	Reagent 3051 3065	Acetosyringone
+T344	Size 3068 3072	~20'
+T345	Time 3079 3082	6 h
+T346	Method 3083 3092	induction
+T347	Action 3095 3101	set up
+E70	Action:T347 
+T348	Time 3109 3116	morning
+R134	Setting Arg1:E70 Arg2:T348	
+T349	Modifier 3178 3182	each
+T350	Reagent 3183 3204	agrobacterium culture
+R135	Mod-Link Arg1:T350 Arg2:T349	
+T351	Amount 3366 3369	3ml
+T352	Reagent 3370 3375	media
+T353	Action 3376 3379	add
+E71	Action:T353 Acts-on:T356
+T354	Amount 3380 3384	3 μl
+T355	Concentration 3385 3391	100 mM
+T356	Reagent 3392 3406	stock solution
+R136	Measure Arg1:T356 Arg2:T355	
+R137	Measure Arg1:T352 Arg2:T351	
+R138	Measure Arg1:T356 Arg2:T354	
+T357	Action 3456 3460	wrap
+E72	Action:T357 Using:T359 Acts-on:T358
+T358	Location 3465 3470	tubes
+T359	Seal 3474 3478	foil
+T360	Method 3481 3500	Agro co-Cultivation
+T361	Reagent 3506 3516	sporelings
+T362	Method 3691 3705	transformation
+T363	Action 3714 3720	plated
+E73	Action:T363 Acts-on:T365 Site:T367
+T364	Numerical 3721 3722	2
+T365	Reagent 3723 3732	sporangia
+T366	Modifier 3733 3736	per
+T367	Location 3737 3742	plate
+T368	Modifier 3747 3751	half
+T369	Location 3754 3759	plate
+T370	Action 3767 3773	plated
+E74	Action:T370 Site:T372 Site2:T371
+T371	Reagent 3776 3785	sporangia
+T372	Location 3790 3795	plate
+T373	Modifier 3786 3789	per
+T374	Numerical 3774 3775	4
+R139	Mod-Link Arg1:T372 Arg2:T373	
+R140	Mod-Link Arg1:T369 Arg2:T368	
+R141	Mod-Link Arg1:T367 Arg2:T366	
+R142	Measure Arg1:T365 Arg2:T364	
+R143	Measure Arg1:T371 Arg2:T374	
+T375	Modifier 4021 4029	at least
+T376	Time 4030 4034	36 h
+T377	Time 4038 4046	1.5 days
+R144	Or Arg1:T377 Arg2:T376	
+R146	Mod-Link Arg1:T376 Arg2:T375	
+T378	Reagent 4110 4131	Sporelings Collection
+T379	Reagent 4157 4171	stock solution
+T380	Method 4263 4277	co-cultivation
+T381	Action 3976 3983	induced
+E75	Action:T381 Acts-on:T184
+T382	Time 3984 3987	6 h
+T383	Modifier 3988 3993	prior
+R145	Mod-Link Arg1:T382 Arg2:T383	
+R147	Setting Arg1:E75 Arg2:T382	
+T384	Modifier 4243 4249	needed
+R148	Mod-Link Arg1:T198 Arg2:T384	
+T385	Modifier 4283 4287	each
+T386	Modifier 4288 4302	co-cultivation
+T387	Location 4303 4308	flask
+T388	Method 4310 4324	transformation
+R149	Mod-Link Arg1:T387 Arg2:T386	
+R150	Mod-Link Arg1:T387 Arg2:T385	
+T389	Modifier 4524 4528	each
+T390	Modifier 4529 4543	co-cultivation
+T391	Location 4544 4549	flask
+T392	Method 4551 4565	transformation
+T393	Device 4587 4590	tip
+T394	Modifier 4577 4581	help
+R151	Mod-Link Arg1:T393 Arg2:T394	
+T395	Amount 4597 4603	few ml
+T396	Reagent 4607 4612	water
+T397	Reagent 4615 4619	cefo
+R152	Measure Arg1:T396 Arg2:T395	
+T398	Action 4620 4626	remove
+E76	Action:T398 Acts-on:T399 Site:T400 Using:T393 Using2:T397 Using3:T396
+T399	Reagent 4631 4641	sporelings
+T400	Device 4651 4664	cell strainer
+T401	Action 4669 4675	spread
+E77	Action:T401 Acts-on:T402 Site:T405
+T402	Mention 4676 4680	them
+T403	Modifier 4684 4692	at least
+T404	Numerical 4693 4694	3
+T405	Location 4695 4701	plates
+T406	Numerical 4703 4706	1/2
+T407	Location 4707 4716	GB plates
+T408	Modifier 4717 4733	with antibiotics
+T409	Modifier 4755 4766	well spread
+T410	Mention 4746 4750	they
+T411	Action 4736 4745	make sure
+E78	Action:T411 Acts-on:T410
+T412	Modifier 4772 4789	better the spread
+T413	Action 4828 4832	grow
+E79	Action:T413 Acts-on:T414
+T414	Reagent 4805 4822	transgenic plants
+T415	Modifier 4794 4800	better
+R153	Mod-Link Arg1:E79 Arg2:T412	
+R154	Mod-Link Arg1:T414 Arg2:T415	
+R155	Mod-Link Arg1:T410 Arg2:T409	
+R156	Coreference-Link Arg1:T410 Arg2:T399	
+R157	Coreference-Link Arg1:T402 Arg2:T399	
+R158	Measure Arg1:T405 Arg2:T404	
+R159	Mod-Link Arg1:T404 Arg2:T403	
+R160	Measure Arg1:T407 Arg2:T406	
+R161	Mod-Link Arg1:T407 Arg2:T408	
+R162	Mod-Link Arg1:T391 Arg2:T390	
+R163	Mod-Link Arg1:T391 Arg2:T389	
+T416	Action 4837 4846	Screening
+E80	Action:T416 Acts-on:T417
+T417	Reagent 4851 4864	transformants
+T418	Modifier 4866 4874	Positive
+T419	Reagent 4875 4888	transformants
+T420	Action 4889 4893	grow
+E81	Action:T420 Acts-on:T419
+T421	Modifier 4900 4915	non-trasnformed
+T422	Reagent 4916 4926	sporelings
+T423	Action 4927 4930	die
+E82	Action:T423 Acts-on:T422
+R164	Mod-Link Arg1:T422 Arg2:T421	
+R165	Mod-Link Arg1:T419 Arg2:T418	
+T424	Modifier 4932 4940	Positive
+T425	Reagent 4941 4954	transformants
+T426	Action 4955 4961	become
+E83	Action:T426 Acts-on:T425
+T427	Modifier 4962 4969	evident
+R166	Mod-Link Arg1:T425 Arg2:T427	
+R167	Mod-Link Arg1:T425 Arg2:T424	
+T428	Time 4981 4987	1 week
+T429	Modifier 4988 5001	after plating
+R168	Mod-Link Arg1:T428 Arg2:T429	
+R169	Setting Arg1:E83 Arg2:T428	
+T430	Modifier 5003 5011	Positive
+T431	Reagent 5012 5025	transformants
+T432	Reagent 5045 5051	marker
+T433	Reagent 5059 5064	T-DNA
+T434	Modifier 5033 5044	fluorescent
+R170	Mod-Link Arg1:T432 Arg2:T434	
+R171	Mod-Link Arg1:T431 Arg2:T430	
+R172	Meronym Arg1:T432 Arg2:T433	
+T435	Action 5069 5089	start to be screened
+E84	Action:T435 Using:T436 Acts-on:T431
+T436	Device 5100 5110	microscope
+T437	Modifier 5111 5122	after about
+T438	Time 5123 5129	5 days
+R173	Mod-Link Arg1:T438 Arg2:T437	
+R174	Setting Arg1:E84 Arg2:T438	
+T439	Modifier 5134 5142	positive
+T440	Reagent 5143 5156	transformants
+T441	Action 5162 5167	grown
+E85	Action:T441 Acts-on:T440
+T442	Modifier 5174 5179	about
+T443	Time 5180 5205	a week and a half onwards
+R175	Mod-Link Arg1:T443 Arg2:T442	
+R176	Mod-Link Arg1:T440 Arg2:T439	
+T444	Mention 5207 5211	they
+R177	Coreference-Link Arg1:T444 Arg2:T440	
+T445	Action 5222 5233	transferred
+E86	Action:T445 Site:T448 Acts-on:T444
+T446	Modifier 5237 5240	new
+T447	Numerical 5241 5244	1/2
+T448	Location 5245 5254	GB plates
+T449	Reagent 5260 5271	antibiotics
+T450	Action 5285 5289	grow
+E87	Action:T450 Acts-on:T454
+T451	Modifier 5290 5296	faster
+T452	Action 5301 5305	make
+E88	Action:T452 Acts-on:T453 Acts-on2:T454
+T453	Reagent 5306 5312	gemmae
+R178	Mod-Link Arg1:E87 Arg2:T451	
+R179	Measure Arg1:T448 Arg2:T447	
+R180	Mod-Link Arg1:T448 Arg2:T446	
+R181	Meronym Arg1:T449 Arg2:T448	
+T454	Mention 5276 5280	they
+R182	Coreference-Link Arg1:T454 Arg2:T440	

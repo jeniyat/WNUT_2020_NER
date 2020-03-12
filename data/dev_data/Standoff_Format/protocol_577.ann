@@ -1,0 +1,488 @@
+T1	Action 298 304	Vortex
+E1	Action:T1 
+T2	Action 438 441	Add
+E2	Action:T2 Acts-on:T51
+T3	Action 499 504	Place
+E3	Action:T3 Acts-on:T50 Site:T55
+T4	Action 548 554	Vortex
+E4	Action:T4 
+T5	Action 639 647	transfer
+E5	Action:T5 Acts-on:T57 Site:T60
+T6	Action 726 734	transfer
+E6	Action:T6 Acts-on:T64 Site:T67 Using:T63
+T7	Action 784 791	Squeeze
+E7	Action:T7 Acts-on:T69 Using:T82 Site:T72
+T8	Action 1091 1099	Transfer
+E8	Action:T8 Acts-on:T91 Site:T92
+T9	Action 1143 1153	Centrifuge
+E9	Action:T9 
+T10	Action 1186 1194	Transfer
+E10	Action:T10 Acts-on:T93 Site:T80
+T11	Action 1505 1508	Add
+E11	Action:T11 Site:T95 Acts-on:T96
+T12	Action 1600 1603	Add
+E12	Action:T12 Acts-on:T99 Site:T122
+T13	Action 1695 1703	Transfer
+E13	Action:T13 Acts-on:T124 Site:T125
+T14	Action 1780 1790	Centrifuge
+E14	Action:T14 
+T15	Action 1823 1830	Discard
+E15	Action:T15 Acts-on:T128
+T16	Action 1849 1852	Add
+E16	Action:T16 Acts-on:T130 Site:T131
+T17	Action 1896 1906	Centrifuge
+E17	Action:T17 
+T18	Action 1939 1946	Discard
+E18	Action:T18 Acts-on:T134
+T19	Action 2043 2046	add
+E19	Action:T19 Acts-on:T136 Site:T138
+T20	Action 2091 2094	mix
+E20	Action:T20 Acts-on:T139
+T21	Action 2108 2118	centrifuge
+E21	Action:T21 Acts-on:T139
+T22	Action 2128 2131	Add
+E22	Action:T22 Acts-on:T74 Site:T142
+T23	Action 2181 2189	Incubate
+E23	Action:T23 
+T24	Action 2233 2236	add
+E24	Action:T24 Acts-on:T146 Site:T147
+T25	Action 2280 2290	Centrifuge
+E25	Action:T25 
+T26	Action 2323 2330	Discard
+E26	Action:T26 Acts-on:T150
+T27	Action 2349 2352	Add
+E27	Action:T27 Acts-on:T152 Site:T153
+T28	Action 2396 2406	Centrifuge
+E28	Action:T28 
+T29	Action 2439 2446	Discard
+E29	Action:T29 Acts-on:T156
+T30	Action 2519 2529	Centrifuge
+E30	Action:T30 
+T31	Action 2472 2475	add
+E31	Action:T31 Acts-on:T158 Site:T159
+T32	Action 2561 2568	Discard
+E32	Action:T32 Acts-on:T162
+T33	Action 2756 2761	Place
+E33	Action:T33 Acts-on:T163 Site:T166
+T34	Action 2845 2855	Centrifuge
+E34	Action:T34 
+T35	Action 2933 2941	Pre-heat
+E35	Action:T35 Acts-on:T178
+T36	Action 3083 3091	Transfer
+E36	Action:T36 Acts-on:T181 Site:T179
+T37	Action 3246 3249	Add
+E37	Action:T37 Acts-on:T175 Site:T176
+T38	Action 3296 3306	Centrifuge
+E38	Action:T38 
+T39	Action 3339 3346	Discard
+E39	Action:T39 Acts-on:T102
+T40	Action 3371 3374	add
+E40	Action:T40 Acts-on:T104 Site:T105
+T41	Action 3414 3424	Centrifuge
+E41	Action:T41 
+T42	Action 3454 3461	Discard
+E42	Action:T42 Acts-on:T108
+T43	Action 3531 3534	add
+E43	Action:T43 Acts-on:T115 Site:T116
+T44	Action 3628 3638	Centrifuge
+E44	Action:T44 
+T46	Time 309 318	5 minutes
+R1	Setting Arg1:E1 Arg2:T46	
+T47	Device 360 366	filter
+T48	Reagent 378 389	RLT+ buffer
+T49	Time 390 404	the whole time
+T51	Reagent 453 464	RLT+ buffer
+T52	Action 466 470	heat
+E46	Action:T52 Acts-on:T51
+T53	Time 475 486	2-3 minutes
+T54	Temperature 490 493	65C
+R2	Setting Arg1:E46 Arg2:T53	
+R3	Setting Arg1:E46 Arg2:T54	
+T50	Location 505 509	tube
+T55	Device 513 525	Tissue lyser
+T58	Time 570 577	minutes
+T57	Reagent 648 661	liquid lysate
+T59	Modifier 665 668	new
+T60	Location 669 673	tube
+R4	Mod-Link Arg1:T60 Arg2:T59	
+T61	Modifier 578 599	Once thoroughly lysed
+R5	Mod-Link Arg1:E5 Arg2:T61	
+T62	Modifier 709 716	sterile
+T63	Device 717 724	forceps
+T64	Device 739 745	filter
+T65	Modifier 746 755	carefully
+T66	Amount 763 766	5mL
+T67	Location 775 782	syringe
+R6	Mod-Link Arg1:T63 Arg2:T62	
+R7	Mod-Link Arg1:E6 Arg2:T65	
+T56	Modifier 767 774	sterile
+R8	Mod-Link Arg1:T67 Arg2:T56	
+R9	Measure Arg1:T67 Arg2:T66	
+T68	Action 367 374	remains
+E47	Action:T68 Site:T48 Acts-on:T47
+R10	Setting Arg1:E47 Arg2:T49	
+T69	Reagent 803 809	lysate
+T70	Modifier 796 802	excess
+R11	Mod-Link Arg1:T69 Arg2:T70	
+T71	Modifier 851 854	new
+T72	Location 855 859	tube
+T73	Reagent 863 869	lysate
+R12	Meronym Arg1:T73 Arg2:T72	
+R13	Mod-Link Arg1:T72 Arg2:T71	
+T74	Reagent 2132 2142	DNaseI mix
+T75	Amount 2144 2148	80µl
+T76	Modifier 2150 2158	directly
+T77	Time 1158 1168	30 seconds
+T78	Speed 1172 1184	> 10,000 rpm
+R14	Setting Arg1:E9 Arg2:T77	
+R15	Setting Arg1:E9 Arg2:T78	
+T79	Modifier 1226 1229	new
+T80	Location 1230 1234	tube
+T82	Device 834 841	syringe
+T83	Action 71 75	Take
+E48	Action:T83 Acts-on:T85 Site:T87
+T84	Modifier 76 82	frozen
+T85	Location 83 88	tubes
+T86	Temperature 100 104	-80C
+T87	Device 105 112	freezer
+T88	Action 114 118	keep
+E49	Action:T88 Acts-on:T85 Site:T89
+T89	Location 119 125	on ice
+R16	Mod-Link Arg1:T85 Arg2:T84	
+R17	Setting Arg1:T87 Arg2:T86	
+T90	Device 815 821	filter
+R18	Meronym Arg1:T69 Arg2:T90	
+T91	Reagent 1104 1110	lysate
+T92	Location 1118 1141	AllPrep DNA spin column
+T93	Reagent 1209 1217	filtrate
+R19	Mod-Link Arg1:T80 Arg2:T79	
+T81	Action 1581 1598	Do not centrifuge
+E50	Action:T81 
+T94	Action 1676 1693	Do not centrifuge
+E51	Action:T94 
+T95	Reagent 1537 1561	RNA flow-through product
+T96	Reagent 1525 1529	EtOH
+T97	Concentration 1521 1524	70%
+R21	Measure Arg1:T96 Arg2:T97	
+T100	Time 3311 3321	15 seconds
+T101	Speed 3325 3337	> 10,000 rpm
+R22	Setting Arg1:E38 Arg2:T100	
+R23	Setting Arg1:E38 Arg2:T101	
+T102	Reagent 3351 3363	flow-through
+T103	Amount 3375 3380	500µl
+T104	Reagent 3384 3394	Buffer AW2
+T105	Location 3402 3412	DNA column
+R24	Measure Arg1:T104 Arg2:T103	
+T106	Time 3429 3438	2 minutes
+T107	Speed 3442 3452	full speed
+R25	Setting Arg1:E41 Arg2:T106	
+R26	Setting Arg1:E41 Arg2:T107	
+T108	Reagent 3466 3478	flow-through
+T109	Time 3643 3651	1 minute
+T110	Speed 3655 3667	> 10,000 rpm
+R27	Setting Arg1:E44 Arg2:T109	
+R28	Setting Arg1:E44 Arg2:T110	
+T111	Action 3480 3485	Place
+E52	Action:T111 Acts-on:T118 Site:T113
+T112	Amount 3508 3513	1.5ml
+T113	Location 3514 3529	collection tube
+T114	Amount 3535 3543	50-100µl
+T115	Reagent 3547 3556	Buffer EB
+T116	Location 3564 3570	column
+T117	Modifier 3504 3507	new
+R29	Mod-Link Arg1:T113 Arg2:T117	
+R30	Measure Arg1:T113 Arg2:T112	
+T118	Location 3486 3496	DNA column
+R31	Measure Arg1:T115 Arg2:T114	
+T45	Action 1563 1566	mix
+E45	Action:T45 Acts-on:T95
+T119	Action 1570 1579	pipetting
+E53	Action:T119 
+T120	Action 1658 1661	mix
+E54	Action:T120 Acts-on:T122
+T121	Action 1665 1674	pipetting
+E55	Action:T121 
+T122	Reagent 1632 1656	RNA flow-through product
+T98	Concentration 1616 1619	70%
+T99	Reagent 1620 1624	EtOH
+R20	Measure Arg1:T99 Arg2:T98	
+T123	Amount 1710 1715	700µl
+T124	Reagent 1719 1725	sample
+T125	Location 1760 1778	RNeasy spin column
+R32	Measure Arg1:T124 Arg2:T123	
+T126	Time 1795 1805	30 seconds
+T127	Speed 1809 1821	> 10,000 rpm
+R33	Setting Arg1:E14 Arg2:T126	
+R34	Setting Arg1:E14 Arg2:T127	
+T128	Reagent 1835 1847	flow-through
+T129	Amount 1853 1858	350µl
+T130	Reagent 1862 1872	Buffer RW1
+T131	Location 1876 1894	RNeasy spin column
+R35	Measure Arg1:T130 Arg2:T129	
+T132	Time 1911 1921	15 seconds
+T133	Speed 1925 1937	> 10,000 rpm
+R36	Setting Arg1:E17 Arg2:T132	
+R37	Setting Arg1:E17 Arg2:T133	
+T134	Reagent 1951 1963	flow-through
+T135	Amount 2047 2051	10µl
+T136	Reagent 2055 2067	DNaseI stock
+T137	Amount 2071 2075	70µl
+T138	Reagent 2079 2089	Buffer RDD
+T139	Reagent 2095 2103	solution
+T140	Modifier 2119 2126	briefly
+R38	Mod-Link Arg1:E21 Arg2:T140	
+R39	Measure Arg1:T138 Arg2:T137	
+R40	Measure Arg1:T136 Arg2:T135	
+T141	Modifier 2027 2042	For each sample
+R41	Mod-Link Arg1:E19 Arg2:T141	
+R42	Mod-Link Arg1:E20 Arg2:T141	
+R43	Mod-Link Arg1:E21 Arg2:T141	
+T142	Location 2162 2179	RNase spin column
+R44	Measure Arg1:T74 Arg2:T75	
+R45	Mod-Link Arg1:E22 Arg2:T76	
+T143	Temperature 2193 2209	room temperature
+T144	Time 2214 2224	15 minutes
+R46	Setting Arg1:E23 Arg2:T143	
+R47	Setting Arg1:E23 Arg2:T144	
+T145	Amount 2237 2242	350µl
+T146	Reagent 2246 2256	Buffer RW1
+T147	Location 2260 2278	RNeasy spin column
+R48	Measure Arg1:T146 Arg2:T145	
+T148	Time 2295 2305	15 seconds
+T149	Speed 2309 2321	> 10,000 rpm
+R49	Setting Arg1:E25 Arg2:T148	
+R50	Setting Arg1:E25 Arg2:T149	
+T150	Reagent 2335 2347	flow-through
+T151	Amount 2353 2358	500µl
+T152	Reagent 2362 2372	Buffer RPE
+T153	Location 2376 2394	RNeasy spin column
+T154	Time 2411 2421	15 seconds
+T155	Speed 2425 2437	> 10,000 rpm
+R51	Measure Arg1:T152 Arg2:T151	
+R52	Setting Arg1:E28 Arg2:T154	
+R53	Setting Arg1:E28 Arg2:T155	
+T156	Reagent 2451 2463	flow-through
+T157	Amount 2476 2481	500µl
+T158	Reagent 2485 2495	Buffer RPE
+T159	Location 2499 2517	RNeasy spin column
+R54	Measure Arg1:T158 Arg2:T157	
+T160	Time 2534 2543	2 minutes
+T161	Speed 2547 2559	> 10,000 rpm
+R55	Setting Arg1:E30 Arg2:T160	
+R56	Setting Arg1:E30 Arg2:T161	
+T162	Reagent 2573 2585	flow-through
+T163	Location 2762 2780	RNeasy spin column
+T164	Modifier 2788 2791	new
+T165	Amount 2792 2797	1.5ml
+T166	Location 2798 2813	collection tube
+R57	Measure Arg1:T166 Arg2:T165	
+R58	Mod-Link Arg1:T166 Arg2:T164	
+T167	Action 2815 2818	add
+E56	Action:T167 Acts-on:T169
+T168	Amount 2819 2826	30-50µl
+T169	Reagent 2827 2843	RNase-free water
+R59	Measure Arg1:T169 Arg2:T168	
+T170	Time 2860 2868	1 minute
+T171	Speed 2872 2884	> 10,000 rpm
+T172	Action 2888 2893	elute
+E57	Action:T172 Acts-on:T173
+T173	Reagent 2898 2901	RNA
+R60	Setting Arg1:E34 Arg2:T170	
+R61	Setting Arg1:E34 Arg2:T171	
+T174	Amount 3250 3255	500µl
+T175	Reagent 3256 3266	Buffer AW1
+T176	Location 3270 3294	All Prep DNA spin column
+R62	Measure Arg1:T175 Arg2:T174	
+T177	Modifier 2959 2993	ahead of addition to RNeasy column
+R63	Mod-Link Arg1:E35 Arg2:T177	
+T178	Reagent 2942 2958	RNase-free water
+T179	Location 3117 3130	RNeasy column
+T180	Action 3135 3148	re-centrifuge
+E58	Action:T180 Acts-on:T181
+T181	Reagent 3099 3102	RNA
+T182	Modifier 3092 3098	eluted
+R64	Mod-Link Arg1:T181 Arg2:T182	
+T183	Action 3152 3160	increase
+E59	Action:T183 Measure-Type-Link:T184
+T184	Measure-Type 3161 3174	concentration
+T185	Reagent 3002 3018	RNase free water
+T186	Location 3026 3039	RNeasy column
+T187	Action 3019 3022	sit
+E60	Action:T187 Acts-on:T185 Site:T186
+T188	Modifier 3044 3077	1-2 minutes before centrifugation
+R65	Mod-Link Arg1:E60 Arg2:T188	
+T189	Action 3576 3579	sit
+E61	Action:T189 Site:T192
+T190	Temperature 3583 3599	room temperature
+T191	Time 3618 3626	1 minute
+T192	Location 3607 3613	column
+R66	Setting Arg1:E61 Arg2:T190	
+R67	Setting Arg1:E61 Arg2:T191	
+T193	Reagent 0 3	RNA
+T194	Modifier 9 17	optional
+T195	Reagent 18 21	DNA
+T196	Method 23 33	extraction
+R68	Mod-Link Arg1:T195 Arg2:T194	
+T197	Modifier 39 52	environmental
+T198	Reagent 53 60	samples
+T199	Device 62 69	filters
+R69	Mod-Link Arg1:T198 Arg2:T197	
+R70	Meronym Arg1:T199 Arg2:T198	
+T200	Device 133 140	filtere
+T201	Modifier 127 132	While
+T202	Action 145 152	thawing
+E62	Action:T202 Acts-on:T200
+R71	Mod-Link Arg1:E62 Arg2:T201	
+T203	Action 154 157	add
+E63	Action:T203 Acts-on:T206 Site:T208
+T204	Modifier 158 174	RNase/DNase-free
+T205	Size 175 180	0.5mm
+T206	Reagent 181 193	Silica beads
+T207	Modifier 197 208	each sample
+T208	Location 209 213	tube
+R72	Mod-Link Arg1:T208 Arg2:T207	
+R73	Measure Arg1:T206 Arg2:T205	
+R74	Mod-Link Arg1:T206 Arg2:T204	
+T209	Action 419 427	increase
+E64	Action:T209 Measure-Type-Link:T210
+T210	Measure-Type 428 433	yield
+T211	Method 530 542	bead beating
+T212	Modifier 559 569	additional
+R75	Setting Arg1:E4 Arg2:T58	
+R76	Mod-Link Arg1:T58 Arg2:T212	
+T213	Action 628 636	appeared
+E65	Action:T213 
+T214	Modifier 606 618	foam/bubbles
+R77	Mod-Link Arg1:E65 Arg2:T214	
+T215	Action 675 693	avoid transferring
+E66	Action:T215 Acts-on:T216
+T216	Device 694 700	filter
+T217	Modifier 871 874	New
+T218	Location 875 879	tube
+T219	Modifier 884 888	each
+T220	Reagent 889 895	sample
+T221	Modifier 903 907	only
+T222	Action 908 915	contain
+E67	Action:T222 Acts-on:T223
+T223	Reagent 916 922	lysate
+R78	Mod-Link Arg1:E67 Arg2:T221	
+R79	Mod-Link Arg1:T218 Arg2:T217	
+R80	Mod-Link Arg1:T220 Arg2:T219	
+R81	Meronym Arg1:T223 Arg2:T220	
+T224	Modifier 927 935	Optional
+T225	Action 947 950	run
+E68	Action:T225 Acts-on:T226 Using:T227
+T226	Reagent 956 962	lysate
+T227	Device 973 984	Qiashredder
+T228	Modifier 989 999	additional
+T229	Method 1000 1005	lysis
+T230	Action 1009 1014	Start
+E69	Action:T230 
+T231	Method 1020 1037	Qiagen extraction
+T232	Device 1060 1087	Qiagen DNA/RNA All prep kit
+T233	Location 1262 1272	DNA column
+T234	Action 1284 1290	stored
+E70	Action:T234 Acts-on:T233 Site:T235
+T235	Location 1298 1304	fridge
+T236	Modifier 1305 1310	until
+T237	Method 1311 1325	DNA extraction
+T238	Temperature 1327 1329	4C
+R82	Mod-Link Arg1:E70 Arg2:T236	
+R83	Setting Arg1:E70 Arg2:T238	
+T239	Method 1338 1352	multiple spins
+T240	Modifier 1371 1379	required
+T241	Reagent 1360 1366	lysate
+T242	Action 1381 1389	continue
+E71	Action:T242 Acts-on:T244
+T243	Modifier 1395 1404	until all
+T244	Reagent 1405 1411	lysate
+R84	Mod-Link Arg1:T244 Arg2:T243	
+T245	Action 1421 1435	passed through
+E72	Action:T245 Acts-on:T244 Site:T246
+T246	Location 1440 1450	DNA column
+T248	Reagent 1459 1471	flow-through
+T249	Action 1481 1489	obtained
+E74	Action:T249 Acts-on:T251 Acts-on2:T248
+T250	Modifier 1495 1498	new
+T251	Location 1499 1503	tube
+R85	Mod-Link Arg1:T251 Arg2:T250	
+T247	Modifier 1455 1458	all
+R86	Mod-Link Arg1:T248 Arg2:T247	
+T252	Amount 1509 1517	1 volume
+R87	Measure Arg1:T96 Arg2:T252	
+T253	Amount 1604 1612	1 volume
+R88	Measure Arg1:T99 Arg2:T253	
+T254	Modifier 1727 1752	including any precipitate
+R89	Mod-Link Arg1:T124 Arg2:T254	
+T255	Action 1965 1969	Make
+E73	Action:T255 Acts-on:T256 Acts-on2:T257
+T256	Reagent 1973 1980	DNase I
+T257	Reagent 1985 2005	Buffer RDD stock mix
+T258	Method 2010 2025	DNase digestion
+T259	Action 2597 2602	place
+E75	Action:T259 Acts-on:T260 Site:T263
+T260	Location 2603 2621	RNeasy spin column
+T261	Modifier 2629 2632	new
+T262	Amount 2633 2636	2mL
+T263	Location 2637 2652	collection tube
+T264	Action 2657 2667	centrifuge
+E76	Action:T264 
+T265	Speed 2671 2681	full speed
+T266	Time 2686 2694	1 minute
+T267	Action 2707 2716	eliminate
+E77	Action:T267 Acts-on:T270
+T268	Modifier 2717 2729	any possible
+T269	Method 2730 2740	carry over
+T270	Reagent 2744 2754	Buffer RPE
+R90	Mod-Link Arg1:E77 Arg2:T268	
+R91	Setting Arg1:E76 Arg2:T265	
+R92	Setting Arg1:E76 Arg2:T266	
+R93	Mod-Link Arg1:T263 Arg2:T261	
+R94	Measure Arg1:T263 Arg2:T262	
+T271	Action 2914 2922	increase
+E78	Action:T271 Measure-Type-Link:T272
+T272	Measure-Type 2923 2928	yield
+T273	Reagent 3176 3187	Genomic DNA
+T274	Method 3188 3200	purification
+T275	Action 3201 3205	Grab
+E79	Action:T275 Acts-on:T276 Site:T277
+T276	Location 3210 3226	DNA spin columns
+T277	Location 3227 3244	out of the fridge
+T278	Action 3680 3688	increase
+E80	Action:T278 Measure-Type-Link:T279
+T279	Measure-Type 3689 3694	yield
+T280	Action 3699 3707	Pre-heat
+E81	Action:T280 Acts-on:T281
+T281	Reagent 3708 3723	EB buffer water
+T282	Modifier 3724 3755	ahead of addition to DNA column
+R95	Mod-Link Arg1:E81 Arg2:T282	
+T283	Action 3760 3768	Transfer
+E82	Action:T283 Acts-on:T285 Site:T286
+T284	Modifier 3769 3775	eluted
+T285	Reagent 3776 3779	DNA
+T286	Location 3794 3807	RNeasy column
+T287	Action 3812 3825	re-centrifuge
+E83	Action:T287 
+T288	Action 3829 3837	increase
+E84	Action:T288 Measure-Type-Link:T289
+T289	Measure-Type 3838 3851	concentration
+R96	Mod-Link Arg1:T285 Arg2:T284	
+T290	Action 3853 3855	QC
+E85	Action:T290 Measure-Type-Link:T293 Measure-Type-Link2:T295 Acts-on:T291 Using:T292 Using2:T294
+T291	Reagent 3861 3880	DNA and RNA product
+T292	Device 3892 3909	Qubit fluorometer
+T293	Measure-Type 3911 3924	concentration
+T294	Device 3930 3949	Agilent Bioanalyzer
+T295	Measure-Type 3951 3958	quality
+T296	Device 3972 3977	Qubit
+T297	Action 3978 3982	load
+E86	Action:T297 Site:T296 Acts-on:T299 Site2:T301
+T298	Amount 3983 3986	2µl
+T299	Reagent 3990 3997	product
+T300	Amount 4005 4010	198µl
+T301	Reagent 4014 4033	buffer/dye solution
+T302	Modifier 4038 4042	each
+T303	Reagent 4043 4049	sample
+R97	Mod-Link Arg1:T303 Arg2:T302	
+R98	Measure Arg1:T301 Arg2:T300	
+R99	Measure Arg1:T299 Arg2:T298	

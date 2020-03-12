@@ -1,0 +1,110 @@
+T1	Action 482 485	mix
+E1	Action:T1 Acts-on:T25
+T2	Action 500 507	Collect
+E2	Action:T2 Acts-on:T58 Site:T59 Using:T61
+T3	Action 578 585	overlay
+E3	Action:T3 Acts-on:T63 Using:T64
+T4	Action 659 667	Transfer
+E4	Action:T4 Acts-on:T26 Site:T27
+T5	Amount 101 106	25 µl
+T6	Reagent 107 115	Reaction
+R1	Measure Arg1:T6 Arg2:T5	
+T7	Amount 115 120	50 µl
+T8	Reagent 121 129	Reaction
+R2	Measure Arg1:T8 Arg2:T7	
+T9	Reagent 151 169	Q5 Reaction Buffer
+T10	Concentration 148 150	5X
+R3	Measure Arg1:T9 Arg2:T10	
+T11	Amount 169 172	5 µ
+T12	Amount 173 178	10 µl
+T13	Concentration 178 180	1X
+T14	Concentration 180 185	10 mM
+T15	Reagent 186 190	dNTP
+T16	Amount 191 196	0.5 µ
+T17	Amount 197 201	1 µl
+T18	Concentration 201 207	200 µM
+T19	Concentration 207 212	10 µM
+T20	Reagent 213 227	Forward Primer
+T21	Amount 227 234	1.25 µl
+T22	Amount 234 240	2.5 µl
+T23	Concentration 240 246	0.5 µM
+T24	Concentration 246 251	10 µM
+T25	Reagent 490 498	reaction
+T26	Device 668 677	PCR tubes
+T27	Device 683 694	PCR machine
+T28	Method 705 718	thermocycling
+T29	Method 0 3	PCR
+T30	Reagent 10 52	Q5® Hot Start High-Fidelity DNA Polymerase
+T31	Action 61 67	Set up
+E5	Action:T31 
+T32	Method 72 90	following reaction
+T33	Modifier 129 134	Final
+T34	Measure-Type 135 148	Concentration
+T35	Reagent 252 266	Reverse Primer
+T36	Amount 266 273	1.25 µl
+T37	Amount 273 279	2.5 µl
+T38	Concentration 279 285	0.5 µM
+T39	Reagent 285 297	Template DNA
+T40	Modifier 297 305	variable
+T41	Modifier 305 313	variable
+T42	Amount 313 323	< 1,000 ng
+T43	Reagent 323 364	Q5 Hot Start High-Fidelity DNA Polymerase
+T44	Amount 364 371	0.25 µl
+T45	Amount 371 377	0.5 µl
+T46	Concentration 377 386	0.02 U/µl
+T47	Numerical 386 388	5X
+T48	Reagent 389 408	Q5 High GC Enhancer
+T49	Modifier 410 418	optional
+T50	Amount 420 424	5 µl
+T51	Amount 426 431	10 µl
+T52	Numerical 433 435	1X
+T53	Reagent 436 455	Nuclease-Free Water
+T54	Amount 455 463	to 25 µl
+T55	Amount 463 471	to 50 µl
+R4	Measure Arg1:T53 Arg2:T54	
+R5	Measure Arg1:T53 Arg2:T55	
+R6	Mod-Link Arg1:T48 Arg2:T49	
+R7	Measure Arg1:T48 Arg2:T50	
+R8	Measure Arg1:T48 Arg2:T51	
+R9	Measure Arg1:T48 Arg2:T52	
+R10	Measure Arg1:T9 Arg2:T11	
+R11	Measure Arg1:T9 Arg2:T12	
+R12	Measure Arg1:T9 Arg2:T13	
+R13	Measure Arg1:T15 Arg2:T14	
+R14	Measure Arg1:T15 Arg2:T16	
+R15	Measure Arg1:T15 Arg2:T17	
+R16	Measure Arg1:T15 Arg2:T18	
+R17	Measure Arg1:T20 Arg2:T19	
+R18	Measure Arg1:T20 Arg2:T21	
+R19	Measure Arg1:T20 Arg2:T22	
+R20	Measure Arg1:T20 Arg2:T23	
+R21	Measure Arg1:T35 Arg2:T24	
+R22	Measure Arg1:T35 Arg2:T36	
+R23	Measure Arg1:T35 Arg2:T37	
+R24	Measure Arg1:T35 Arg2:T38	
+R25	Mod-Link Arg1:T39 Arg2:T40	
+R26	Measure Arg1:T39 Arg2:T42	
+R27	Measure Arg1:T43 Arg2:T44	
+R28	Measure Arg1:T43 Arg2:T45	
+R29	Measure Arg1:T43 Arg2:T46	
+R30	Measure Arg1:T48 Arg2:T47	
+T56	Modifier 475 481	Gently
+R31	Mod-Link Arg1:E1 Arg2:T56	
+T57	Modifier 508 511	all
+T58	Reagent 512 518	liquid
+T59	Location 526 532	bottom
+T60	Location 540 544	tube
+T61	Method 550 560	quick spin
+T62	Modifier 561 573	if necessary
+R32	Mod-Link Arg1:T58 Arg2:T57	
+R33	Meronym Arg1:T59 Arg2:T60	
+R34	Mod-Link Arg1:E2 Arg2:T62	
+T63	Reagent 590 596	sample
+T64	Reagent 602 613	mineral oil
+T65	Device 625 636	PCR machine
+T66	Modifier 637 657	without a heated lid
+R35	Mod-Link Arg1:T65 Arg2:T66	
+T67	Modifier 614 622	if using
+R36	Mod-Link Arg1:E3 Arg2:T67	
+T68	Action 699 704	begin
+E6	Action:T68 

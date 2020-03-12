@@ -1,0 +1,390 @@
+T1	Action 196 207	Concentrate
+E1	Action:T1 Using:T58
+T2	Action 279 287	Transfer
+E2	Action:T2 Acts-on:T59 Site:T60
+T3	Action 326 331	Store
+E3	Action:T3 Acts-on:T61 Site:T62
+T4	Action 372 382	Centrifuge
+E4	Action:T4 Acts-on:T63 Site:T192
+T5	Action 459 464	Empty
+E5	Action:T5 Acts-on:T66 Using:T67
+T6	Action 533 538	Empty
+E6	Action:T6 
+T7	Action 543 549	refill
+E7	Action:T7 
+T10	Action 714 720	Remove
+E10	Action:T10 Acts-on:T78 Site:T80
+T11	Action 753 760	replace
+E11	Action:T11 Acts-on:T8
+T12	Action 771 775	spin
+E12	Action:T12 Acts-on:T9
+T14	Action 984 988	Make
+E14	Action:T14 Product:T81
+T15	Action 1132 1140	Assemble
+E15	Action:T15 Acts-on:T88 Using:T89
+T16	Action 1178 1182	pour
+E16	Action:T16 Acts-on:T90
+T18	Action 1214 1218	fill
+E18	Action:T18 Acts-on:T17 Using:T93
+T19	Action 1267 1274	Turn on
+E19	Action:T19 Acts-on:T94
+T20	Action 1297 1300	set
+E20	Action:T20 Using:T94
+T21	Action 1339 1345	remove
+E21	Action:T21 Acts-on:T96 Acts-on2:T97
+T22	Action 1374 1379	slide
+E22	Action:T22 Acts-on:T99 Using:T100
+T23	Action 1427 1432	Place
+E23	Action:T23 Acts-on:T101 Site:T104
+T24	Action 1576 1584	Transfer
+E24	Action:T24 Acts-on:T105 Site:T106
+T26	Action 1629 1634	Place
+E26	Action:T26 Acts-on:T108 Site:T111
+T27	Action 2052 2055	add
+E27	Action:T27 Acts-on:T118 Site:T119
+T28	Action 2140 2144	spin
+E28	Action:T28 
+T29	Action 2188 2194	Repeat
+E29	Action:T29 Using:T121
+T30	Action 2204 2210	Repeat
+E30	Action:T30 Using:T122
+T31	Action 2230 2233	add
+E31	Action:T31 Acts-on:T125 Site:T126
+T32	Action 2320 2326	Invert
+E32	Action:T32 Acts-on:T129
+T33	Action 2363 2367	spin
+E33	Action:T33 
+T34	Action 2338 2346	place in
+E34	Action:T34 Acts-on2:T129 Site:T131
+T35	Action 2406 2411	Place
+E35	Action:T35 Acts-on:T134 Using:T136
+T36	Action 2482 2488	Remove
+E36	Action:T36 Acts-on:T140
+T37	Action 2499 2504	place
+E37	Action:T37 Site:T142
+T38	Action 2539 2547	Transfer
+E38	Action:T38 Site:T144
+T39	Action 2565 2569	spin
+E39	Action:T39 
+T40	Action 2623 2630	Prepare
+E40	Action:T40 Product:T150
+T41	Action 2736 2739	Add
+E41	Action:T41 Acts-on:T158 Site:T159
+T42	Action 2780 2783	Mix
+E42	Action:T42 
+T43	Action 2880 2884	Turn
+E43	Action:T43 Acts-on:T166
+T44	Action 2907 2911	Load
+E44	Action:T44 Acts-on:T167
+T45	Action 2921 2925	Turn
+E45	Action:T45 Acts-on:T168
+T46	Action 2957 2962	Close
+E46	Action:T46 Using:T173
+T47	Action 3019 3022	Set
+E47	Action:T47 Measure-Type-Link:T174
+T48	Action 3038 3041	Set
+E48	Action:T48 Measure-Type-Link:T176
+T49	Action 3069 3072	Set
+E49	Action:T49 Measure-Type-Link:T178
+T50	Action 3099 3102	Set
+E50	Action:T50 Measure-Type-Link:T180
+T52	Action 3150 3155	check
+E52	Action:T52 
+T53	Action 505 511	repeat
+E53	Action:T53 Using:T68
+T54	Action 1565 1574	let chill
+E54	Action:T54 
+T25	Action 1675 1679	spin
+E25	Action:T25 Using:T114
+T56	Amount 215 225	150-200 ml
+T57	Generic-Measure 232 237	30 kD
+T58	Device 238 271	MWC Spiral Cartridge Concentrator
+R1	Setting Arg1:T58 Arg2:T57	
+R2	Setting Arg1:E1 Arg2:T56	
+T59	Reagent 292 305	SCC retentate
+T60	Device 309 323	Centriprep 30’
+T61	Reagent 332 354	balance of concentrate
+T62	Device 358 370	refrigerator
+T63	Reagent 386 398	IEC-HN SE II
+T64	Speed 402 412	full speed
+T65	Time 417 427	15 minutes
+R3	Setting Arg1:E4 Arg2:T64	
+R4	Setting Arg1:E4 Arg2:T65	
+T66	Location 465 482	central reservoir
+T67	Method 483 500	without refilling
+T68	Method 512 531	centrifugation step
+T69	Action 584 592	maximize
+E56	Action:T69 Acts-on:T70
+T70	Location 593 608	filtration area
+T71	Device 612 623	Centripreps
+T72	Device 628 641	balance rotor
+R5	Meronym Arg1:T70 Arg2:T71	
+R6	Meronym Arg1:T70 Arg2:T72	
+T8	Seal 761 765	caps
+T9	Device 776 793	retentate chamber
+T74	Modifier 794 801	briefly
+T75	Action 805 812	recover
+E8	Action:T75 Acts-on:T76 Site:T77
+T76	Reagent 813 821	droplets
+T77	Location 827 832	sides
+R7	Mod-Link Arg1:E12 Arg2:T74	
+T78	Reagent 721 735	central insert
+T79	Numerical 741 742	2
+T80	Location 746 751	units
+R8	Measure Arg1:T80 Arg2:T79	
+T13	Concentration 991 993	1%
+T81	Reagent 994 1005	agarose gel
+T82	Amount 1019 1022	1 g
+T83	Reagent 1023 1054	Bio-Rad Molecular Grade Agarose
+T84	Amount 1060 1064	99ml
+T85	Concentration 1065 1069	0.5x
+T86	Reagent 1070 1073	TBE
+R9	Measure Arg1:T81 Arg2:T13	
+R10	Measure Arg1:T83 Arg2:T82	
+T87	Action 1009 1018	combining
+E9	Action:T87 Acts-on:T83 Acts-on2:T86
+R11	Measure Arg1:T86 Arg2:T85	
+R12	Measure Arg1:T86 Arg2:T84	
+T88	Reagent 1141 1145	mold
+T89	Location 1151 1164	backing plate
+T90	Reagent 1186 1192	liquid
+T17	Location 1219 1242	electrophoresis chamber
+T91	Amount 1248 1256	2 liters
+T92	Concentration 1257 1261	0.5x
+T93	Reagent 1262 1265	TBE
+R13	Measure Arg1:T93 Arg2:T92	
+R14	Measure Arg1:T93 Arg2:T91	
+T94	Device 1275 1291	pump and chiller
+T95	Temperature 1316 1320	14°C
+R15	Setting Arg1:E20 Arg2:T95	
+T96	Location 1346 1350	comb
+T97	Location 1355 1360	sides
+T98	Reagent 1364 1368	mold
+T99	Location 1380 1393	backing plate
+T100	Reagent 1400 1403	gel
+R16	Meronym Arg1:T96 Arg2:T98	
+R17	Meronym Arg1:T97 Arg2:T98	
+T101	Reagent 1433 1436	gel
+T102	Location 1442 1455	backing plate
+T103	Location 1473 1496	electrophoresis chamber
+T104	Location 1461 1469	receiver
+R18	Meronym Arg1:T101 Arg2:T102	
+R19	Meronym Arg1:T104 Arg2:T103	
+T105	Reagent 1585 1593	aliquots
+T106	Device 1599 1608	Microcons
+T107	Generic-Measure 1610 1626	30 or 100 kD MWC
+R20	Setting Arg1:T106 Arg2:T107	
+T108	Reagent 1640 1647	aliquot
+T109	Modifier 1635 1639	each
+T110	Modifier 1653 1661	separate
+T111	Device 1662 1670	Microcon
+R21	Mod-Link Arg1:T111 Arg2:T110	
+R22	Mod-Link Arg1:T108 Arg2:T109	
+T112	Speed 1683 1691	1000 x g
+T113	Time 1696 1706	20 minutes
+T114	Device 1726 1745	Eppendorf Microfuge
+T115	Speed 1714 1722	4000 RPM
+R23	Setting Arg1:E25 Arg2:T112	
+R24	Setting Arg1:E25 Arg2:T113	
+R25	Setting Arg1:T114 Arg2:T115	
+T116	Amount 2056 2061	50 μl
+T117	Generic-Measure 2062 2066	1:10
+T118	Reagent 2067 2069	TE
+T119	Location 2078 2082	tube
+T120	Modifier 2073 2077	each
+R26	Mod-Link Arg1:T119 Arg2:T120	
+R27	Measure Arg1:T118 Arg2:T117	
+R28	Measure Arg1:T118 Arg2:T116	
+T121	Method 2195 2202	step 22
+T122	Method 2211 2218	step 22
+T123	Amount 2234 2239	20 μl
+T124	Concentration 2240 2244	0.5x
+T125	Reagent 2245 2248	TBE
+T126	Location 2252 2260	membrane
+T127	Action 2264 2269	elute
+E13	Action:T127 Acts-on:T128
+T128	Reagent 2270 2277	viruses
+R29	Measure Arg1:T125 Arg2:T124	
+R30	Measure Arg1:T125 Arg2:T123	
+T129	Reagent 2327 2336	cartridge
+T130	Modifier 2347 2352	fresh
+T131	Location 2353 2357	tube
+T132	Time 2372 2381	5 minutes
+T133	Speed 2385 2393	1000 x g
+R31	Mod-Link Arg1:T131 Arg2:T130	
+R32	Setting Arg1:E33 Arg2:T132	
+R33	Setting Arg1:E33 Arg2:T133	
+T134	Location 2412 2417	tubes
+T135	Temperature 2450 2454	60°C
+T136	Device 2455 2465	water bath
+T137	Time 2470 2480	10 minutes
+T138	Modifier 2429 2438	recovered
+T139	Reagent 2439 2446	viruses
+R34	Mod-Link Arg1:T139 Arg2:T138	
+R35	Meronym Arg1:T139 Arg2:T134	
+R36	Setting Arg1:T136 Arg2:T135	
+R37	Setting Arg1:T136 Arg2:T137	
+T140	Location 2489 2494	tubes
+T141	Modifier 2505 2516	immediately
+T142	Location 2520 2523	ice
+T143	Time 2528 2537	2 minutes
+R38	Mod-Link Arg1:E37 Arg2:T141	
+R39	Setting Arg1:E37 Arg2:T143	
+T144	Device 2551 2560	microfuge
+T145	Modifier 2570 2577	briefly
+T146	Action 2581 2588	recover
+E17	Action:T146 Acts-on:T147 Site:T148
+T147	Reagent 2589 2601	condensation
+T148	Location 2607 2612	walls
+T149	Location 2616 2621	tubes
+R40	Mod-Link Arg1:E39 Arg2:T145	
+R41	Meronym Arg1:T148 Arg2:T149	
+T150	Reagent 2631 2655	molecular weight markers
+T151	Action 2659 2668	combining
+E57	Action:T151 Acts-on:T153 Site:T155
+T152	Amount 2669 2679	100-200 ng
+T153	Reagent 2683 2695	marker stock
+T154	Concentration 2699 2703	0.5x
+T155	Reagent 2704 2707	TBE
+R42	Measure Arg1:T153 Arg2:T152	
+T156	Amount 2729 2734	20 μl
+R43	Measure Arg1:T150 Arg2:T156	
+R44	Measure Arg1:T155 Arg2:T154	
+T157	Amount 2740 2745	10 μl
+T158	Reagent 2746 2765	PFGE loading buffer
+T159	Location 2774 2778	tube
+T160	Modifier 2769 2773	each
+R45	Mod-Link Arg1:T159 Arg2:T160	
+R46	Measure Arg1:T158 Arg2:T157	
+T161	Modifier 2787 2801	simultaneously
+T162	Action 2802 2811	inverting
+E58	Action:T162 Count:T163 Using:T165
+T163	Numerical 2812 2819	several
+T164	Modifier 2826 2832	slowly
+T165	Method 2840 2878	rolling between index finger and thumb
+R47	Mod-Link Arg1:E58 Arg2:T161	
+R48	Mod-Link Arg1:E58 Arg2:T164	
+T166	Device 2885 2901	chiller and pump
+T55	Generic-Measure 2902 2905	off
+R49	Setting Arg1:T166 Arg2:T55	
+T167	Reagent 2912 2919	samples
+T168	Device 2926 2930	pump
+T169	Generic-Measure 2931 2933	on
+T170	Action 2940 2944	turn
+E55	Action:T170 Acts-on:T171
+T171	Device 2945 2952	chiller
+T172	Generic-Measure 2953 2955	on
+R50	Setting Arg1:T168 Arg2:T169	
+R51	Setting Arg1:T171 Arg2:T172	
+T173	Seal 2963 2966	lid
+T174	Measure-Type 3023 3030	voltage
+T175	Generic-Measure 3034 3036	6V
+R52	Of-Type Arg1:T175 Arg2:T174	
+R53	Setting Arg1:E47 Arg2:T175	
+T176	Measure-Type 3042 3061	initial switch time
+T177	Generic-Measure 3065 3067	1s
+R54	Of-Type Arg1:T177 Arg2:T176	
+R55	Setting Arg1:E48 Arg2:T177	
+T178	Measure-Type 3073 3090	final switch time
+T179	Generic-Measure 3094 3097	10s
+R56	Of-Type Arg1:T179 Arg2:T178	
+R57	Setting Arg1:E49 Arg2:T179	
+T180	Measure-Type 3103 3111	run time
+T181	Generic-Measure 3115 3118	18h
+R58	Of-Type Arg1:T181 Arg2:T180	
+R59	Setting Arg1:E50 Arg2:T181	
+T51	Time 3138 3148	10 minutes
+R60	Setting Arg1:E52 Arg2:T51	
+T182	Measure-Type 3169 3187	actual temperature
+T183	Generic-Measure 3207 3218	14 and 16°C
+R61	Or Arg1:T183 Arg2:T182	
+R62	Setting Arg1:E52 Arg2:T183	
+T184	Method 13 45	Pulsed Field Gel Electrophoresis
+T185	Amount 48 59	15-20 liter
+T186	Reagent 60 83	natural seawater sample
+T187	Location 104 126	glass fiber pre-filter
+T188	Size 146 153	0.22 μm
+T189	Measure-Type 154 163	pore size
+T190	Location 164 172	membrane
+R63	Measure Arg1:T186 Arg2:T185	
+T191	Action 87 101	passed through
+E51	Action:T191 Acts-on:T186 Site:T187
+R64	Measure Arg1:T190 Arg2:T188	
+T192	Device 432 444	refrigerator
+T73	Measure-Type 558 565	volumes
+T193	Action 655 659	spin
+E59	Action:T193 
+T194	Action 664 669	empty
+E60	Action:T194 
+T195	Reagent 684 689	water
+T196	Action 690 696	enters
+E61	Action:T196 Acts-on:T195 Site:T197
+T197	Location 697 712	central chamber
+T198	Action 834 841	Combine
+E62	Action:T198 
+T199	Reagent 842 851	retentate
+T200	Numerical 857 858	2
+T201	Device 876 891	Centriprep unit
+T202	Modifier 896 902	gentle
+T203	Action 903 912	pipetting
+E63	Action:T203 
+T204	Numerical 872 875	one
+T205	Action 933 941	combined
+E64	Action:T205 
+T206	Action 946 950	spun
+E65	Action:T206 
+T207	Measure-Type 962 968	volume
+T208	Modifier 956 961	final
+T209	Amount 976 982	500 μl
+T210	Device 3229 3234	timer
+T211	Action 3120 3124	Push
+E66	Action:T211 
+T212	Action 2971 2976	check
+E67	Action:T212 Acts-on:T213
+T213	Device 2977 2988	connections
+T214	Modifier 2713 2718	final
+T215	Measure-Type 2719 2725	volume
+T216	Action 2397 2404	recover
+E68	Action:T216 
+T217	Action 2304 2309	touch
+E69	Action:T217 Acts-on:T218
+T218	Location 2310 2318	membrane
+T219	Reagent 2025 2032	samples
+T220	Modifier 2043 2050	reduced
+R65	Mod-Link Arg1:T219 Arg2:T220	
+T221	Action 2103 2108	touch
+E70	Action:T221 Acts-on:T222 Using:T223
+T222	Location 2109 2117	membrane
+T223	Location 2123 2134	pipette tip
+T224	Measure-Type 2161 2167	volume
+T225	Modifier 1113 1121	unmelted
+T226	Reagent 1122 1130	material
+T227	Action 1079 1086	heating
+E71	Action:T227 Acts-on:T81
+R66	Mod-Link Arg1:T226 Arg2:T225	
+T228	Action 1194 1201	Let set
+E72	Action:T228 
+T229	Reagent 1327 1330	gel
+T230	Modifier 1334 1337	set
+R67	Mod-Link Arg1:T229 Arg2:T230	
+T231	Location 1421 1425	mold
+T232	Action 1517 1525	dislodge
+E73	Action:T232 Acts-on:T233 Site:T234
+T233	Reagent 1526 1529	gel
+T234	Location 1535 1540	plate
+T235	Location 1547 1552	wells
+T236	Modifier 1755 1762	dryness
+T237	Location 1776 1793	Microcon membrane
+T238	Modifier 1797 1800	dry
+T239	Reagent 1827 1833	liquid
+R68	Mod-Link Arg1:T237 Arg2:T238	
+T240	Measure-Type 1881 1887	volume
+T241	Measure-Type 1897 1903	volume
+T242	Modifier 1889 1896	smaller
+T243	Reagent 1904 1912	aliquots
+T244	Action 1920 1927	removed
+E74	Action:T244 Acts-on:T243
+T245	Action 1932 1938	stored
+E75	Action:T245 Acts-on:T243 Site:T246
+T246	Device 1946 1958	refrigerator
+T247	Measure-Type 2008 2014	volume

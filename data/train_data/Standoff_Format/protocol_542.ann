@@ -1,0 +1,107 @@
+T1	Action 56 67	Precipitate
+E1	Action:T1 Acts-on:T16 Using:T17
+T2	Action 115 120	store
+E2	Action:T2 Acts-on:T18
+T3	Action 142 151	Resuspend
+E3	Action:T3 Acts-on:T20 Using:T21
+T4	Action 303 308	Treat
+E4	Action:T4 Acts-on:T23 Using:T24
+T5	Action 390 400	Inactivate
+E5	Action:T5 Acts-on:T27 Acts-on2:T28 Acts-on3:T29
+T6	Action 434 445	Concentrate
+E6	Action:T6 Acts-on:T30 Using:T31
+T7	Action 637 643	Remove
+E7	Action:T7 Acts-on:T34 Site:T35
+T8	Action 678 683	Rinse
+E8	Action:T8 Acts-on:T36 Using:T38 Using2:T39
+T9	Action 792 801	Pool with
+E9	Action:T9 Site:T40
+T10	Action 849 854	layer
+E10	Action:T10 Site:T41 Acts-on:T42
+T11	Action 892 899	isolate
+E11	Action:T11 Acts-on:T43 Using:T44
+T13	Action 1129 1136	Extract
+E13	Action:T13 Acts-on:T46 Using:T47 Using2:T48
+T14	Action 1181 1190	Calculate
+E14	Action:T14 Measure-Type-Link:T50 Acts-on:T49 Using:T51 Using2:T69
+T15	Amount 68 73	0.2µm
+T16	Reagent 74 91	filtered seawater
+R1	Measure Arg1:T16 Arg2:T15	
+T17	Reagent 97 110	iron chloride
+T18	Device 125 132	filters
+T19	Temperature 136 139	4°C
+R2	Setting Arg1:E2 Arg2:T19	
+T20	Reagent 156 174	precipitated virus
+T21	Reagent 209 215	buffer
+T22	Reagent 200 207	Oxalate
+R3	Or Arg1:T21 Arg2:T22	
+T23	Reagent 313 342	resuspended virus preparation
+T24	Reagent 348 355	DNase I
+T25	Time 360 367	2 hours
+T26	Temperature 371 387	room temperature
+R4	Setting Arg1:E4 Arg2:T25	
+R5	Setting Arg1:E4 Arg2:T26	
+T27	Reagent 405 411	enzyme
+T28	Reagent 417 421	EDTA
+T29	Reagent 426 430	EGTA
+T30	Reagent 450 479	resuspended virus preparation
+T31	Device 486 511	centrifugal concentrators
+T32	Amount 520 526	3-5 ml
+R6	Setting Arg1:E6 Arg2:T32	
+T33	Amount 573 579	1-2 ml
+R7	Or Arg1:T32 Arg2:T33	
+T34	Reagent 648 659	concentrate
+T35	Location 671 675	tube
+T36	Reagent 688 696	membrane
+T37	Amount 716 724	0.5-1 ml
+T38	Reagent 725 744	resuspension buffer
+R8	Measure Arg1:T38 Arg2:T37	
+T39	Method 748 769	pipetting up and down
+T40	Reagent 806 825	concentrated sample
+T41	Reagent 865 887	premade CsCl gradients
+T42	Mention 855 859	this
+T43	Reagent 904 918	virus fraction
+T44	Method 936 984	protocol Cesium Chloride Purification of Viruses
+T45	Method 1004 1071	Cesium Chloride DNA Extraction of Viruses using Wizard Prep Columns
+R9	Or Arg1:T44 Arg2:T45	
+T12	Method 1096 1127	Wizard Prep purification of DNA
+R10	Or Arg1:T45 Arg2:T12	
+T46	Reagent 1141 1144	DNA
+T47	Location 1151 1170	Wizard Prep columns
+T48	Reagent 1175 1180	resin
+T49	Reagent 1205 1208	DNA
+T50	Measure-Type 1195 1201	amount
+T51	Method 1225 1260	Quant-iT dsDNA Pico Green assay kit
+T52	Reagent 178 195	Mg-EDTA-Ascorbate
+R11	Meronym Arg1:T21 Arg2:T52	
+T53	Modifier 221 229	prior to
+T54	Method 230 244	DNA extraction
+T55	Method 255 299	Ferric Chloride Resuspension Buffer protocol
+R12	Mod-Link Arg1:E3 Arg2:T53	
+T56	Modifier 527 532	total
+T57	Measure-Type 533 539	volume
+T58	Modifier 540 566	if performing CsCl cleanup
+T59	Modifier 593 633	if proceeding directly to DNA extraction
+R13	Mod-Link Arg1:T32 Arg2:T58	
+R14	Mod-Link Arg1:T33 Arg2:T59	
+T60	Modifier 580 585	total
+T61	Measure-Type 586 592	volume
+T62	Modifier 770 788	along the membrane
+R15	Mod-Link Arg1:E8 Arg2:T62	
+T63	Modifier 705 715	additional
+R16	Mod-Link Arg1:T37 Arg2:T63	
+T64	Modifier 665 670	fresh
+R17	Mod-Link Arg1:T35 Arg2:T64	
+T65	Modifier 989 1002	alternatively
+T66	Action 1076 1083	proceed
+E12	Action:T66 Using:T12
+T67	Modifier 1084 1092	directly
+R18	Mod-Link Arg1:E12 Arg2:T67	
+T68	Modifier 1209 1218	recovered
+R19	Mod-Link Arg1:T49 Arg2:T68	
+T69	Method 1271 1296	manufacturer’s directions
+T70	Method 0 11	Preparation
+T71	Reagent 15 24	Virus DNA
+T72	Reagent 30 38	Seawater
+T73	Method 43 55	Metagenomics
+R20	Meronym Arg1:T71 Arg2:T72	

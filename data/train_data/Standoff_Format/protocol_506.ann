@@ -1,0 +1,137 @@
+T1	Action 79 87	prepared
+E1	Action:T1 Acts-on:T13
+T2	Action 134 140	stored
+E2	Action:T2 Acts-on:T13
+T3	Action 151 154	Add
+E3	Action:T3 Acts-on:T17 Site:T19 Product:T21
+T4	Action 323 331	Dissolve
+E4	Action:T4 Site:T29 Acts-on:T45
+T5	Action 500 504	Boil
+E5	Action:T5 Acts-on:T46 Site:T47
+T6	Action 551 560	Autoclave
+E6	Action:T6 
+T7	Action 580 588	let cool
+E7	Action:T7 
+T8	Action 601 605	Pour
+E8	Action:T8 Acts-on:T51 Site:T54
+T9	Action 674 685	to solidify
+E9	Action:T9 Acts-on:T55
+T10	Action 772 776	take
+E10	Action:T10 Using:T57 Acts-on:T59
+T11	Action 867 873	streak
+E11	Action:T11 Acts-on:T59 Site:T62 Using:T80
+T12	Action 938 946	Incubate
+E12	Action:T12 Acts-on:T63 Using:T66
+T13	Reagent 46 71	ampicillin stock solution
+T14	Concentration 93 119	concentration of 100 mg/mL
+T15	Temperature 144 149	-20⁰C
+R2	Setting Arg1:E2 Arg2:T15	
+T16	Amount 155 158	1 g
+T17	Reagent 172 182	ampicillin
+T18	Amount 186 191	10 mL
+T19	Reagent 195 199	dH2O
+R3	Measure Arg1:T19 Arg2:T18	
+R4	Measure Arg1:T17 Arg2:T16	
+T20	Action 200 209	Sterilize
+E13	Action:T20 Acts-on:T21 Using:T23
+T21	Reagent 214 222	solution
+T22	Size 231 238	0.22 μm
+T23	Device 239 245	filter
+R5	Setting Arg1:T23 Arg2:T22	
+T24	Action 245 250	Store
+E14	Action:T24 Acts-on:T25 Site:T27
+T25	Reagent 251 259	solution
+T26	Temperature 285 290	-20⁰C
+R6	Setting Arg1:E14 Arg2:T26	
+T27	Reagent 273 281	aliquots
+T28	Amount 349 355	500 mL
+T29	Reagent 356 360	dH2O
+R7	Measure Arg1:T29 Arg2:T28	
+T30	Amount 362 364	5g
+T31	Reagent 365 373	tryptone
+T32	Amount 373 378	2.5 g
+T33	Reagent 379 392	yeast extract
+T34	Amount 392 397	5.0 g
+T35	Reagent 398 402	NaCl
+T36	Amount 402 407	7.5 g
+T37	Reagent 408 412	agar
+T38	Amount 412 417	25 mg
+T39	Reagent 418 428	ampicillin
+T40	Amount 430 434	20 g
+T41	Reagent 435 459	pre-mixed LB agar powder
+T42	Reagent 464 480	LB agar capsules
+T43	Amount 481 486	25 mg
+T44	Reagent 487 497	ampicillin
+R8	Measure Arg1:T44 Arg2:T43	
+R9	Measure Arg1:T41 Arg2:T40	
+R10	Or Arg1:T41 Arg2:T42	
+R11	Measure Arg1:T39 Arg2:T38	
+R12	Measure Arg1:T37 Arg2:T36	
+R13	Measure Arg1:T35 Arg2:T34	
+R14	Measure Arg1:T33 Arg2:T32	
+R15	Measure Arg1:T31 Arg2:T30	
+T45	Reagent 336 345	following
+T46	Reagent 505 513	solution
+T47	Device 517 535	stirring hot plate
+T48	Time 540 549	1 – 2 min
+R22	Setting Arg1:E5 Arg2:T48	
+T49	Time 565 575	20 minutes
+T50	Temperature 592 599	50-60⁰C
+R23	Setting Arg1:E6 Arg2:T49	
+R24	Setting Arg1:E7 Arg2:T50	
+T52	Amount 620 625	10 mL
+T53	Temperature 629 635	molten
+T51	Reagent 636 643	LB agar
+R25	Measure Arg1:T51 Arg2:T52	
+T54	Location 654 659	plate
+R26	Setting Arg1:E8 Arg2:T53	
+T55	Location 667 673	plates
+T56	Time 698 704	20 min
+T57	Device 758 770	sterile loop
+T58	Generic-Measure 779 785	sample
+T59	Reagent 789 828	suspected ampicillin resistant bacteria
+R28	Measure Arg1:T59 Arg2:T58	
+T60	Reagent 836 842	colony
+T61	Reagent 846 862	broth suspension
+R29	Meronym Arg1:T60 Arg2:T59	
+R30	Or Arg1:T60 Arg2:T61	
+T62	Location 916 936	LB-ampicillin plates
+T63	Reagent 947 953	plates
+T64	Time 963 972	overnight
+T65	Temperature 986 990	37⁰C
+T66	Method 954 962	inverted
+R31	Setting Arg1:E12 Arg2:T64	
+R32	Setting Arg1:E12 Arg2:T65	
+T67	Method 0 9	Selection
+T68	Modifier 13 33	Ampicillin Resistant
+T69	Reagent 34 42	Bacteria
+R33	Mod-Link Arg1:T69 Arg2:T68	
+R1	Measure Arg1:T13 Arg2:T14	
+T70	Modifier 263 272	different
+R16	Mod-Link Arg1:T27 Arg2:T70	
+R17	Meronym Arg1:T27 Arg2:T25	
+T71	Method 291 321	LB-ampicillin agar preparation
+T72	Amount 160 167	1000 mg
+R18	Coreference-Link Arg1:T16 Arg2:T72	
+T73	Modifier 606 619	approximately
+R19	Mod-Link Arg1:T52 Arg2:T73	
+T74	Modifier 649 653	each
+R20	Mod-Link Arg1:T54 Arg2:T74	
+T75	Modifier 690 696	approx
+T76	Method 706 715	Selection
+T77	Modifier 719 739	ampicillin resistant
+T78	Reagent 740 748	bacteria
+R21	Mod-Link Arg1:T78 Arg2:T77	
+T79	Modifier 874 887	for isolation
+T80	Method 889 911	using preferred method
+R27	Mod-Link Arg1:E11 Arg2:T79	
+T81	Time 974 980	24 hrs
+R34	Or Arg1:T64 Arg2:T81	
+T82	Modifier 996 1005	resulting
+T83	Reagent 1006 1014	colonies
+T84	Action 1022 1031	represent
+E15	Action:T84 Acts-on:T86 Using:T83
+T85	Modifier 1032 1052	ampicillin resistant
+T86	Reagent 1053 1061	isolates
+R35	Mod-Link Arg1:T86 Arg2:T85	
+R36	Mod-Link Arg1:T83 Arg2:T82	

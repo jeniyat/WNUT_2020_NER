@@ -1,0 +1,174 @@
+T1	Action 16 25	Wipe down
+E1	Action:T1 Acts-on:T2 Using:T3
+T2	Location 26 31	bench
+T3	Reagent 37 46	RNase zap
+T4	Action 60 66	Dilute
+E2	Action:T4 Acts-on:T5
+T5	Reagent 67 86	oligo-dT30VN primer
+T7	Amount 97 101	37µL
+T8	Concentration 105 110	100µM
+T9	Mention 111 117	primer
+T10	Amount 121 125	63µL
+T11	Reagent 129 146	nuclease free H20
+R1	Measure Arg1:T11 Arg2:T10	
+R2	Measure Arg1:T9 Arg2:T8	
+R3	Measure Arg1:T9 Arg2:T7	
+R4	Coreference-Link Arg1:T9 Arg2:T5	
+T6	Action 90 96	adding
+E3	Action:T6 Acts-on:T9 Site:T11
+T12	Action 383 391	Incubate
+E4	Action:T12 
+T13	Temperature 395 398	72º
+T14	Time 403 405	3m
+T15	Action 407 413	return
+E5	Action:T15 Site:T16
+T16	Location 417 420	ice
+R5	Setting Arg1:E4 Arg2:T13	
+R6	Setting Arg1:E4 Arg2:T14	
+T17	Action 423 427	Take
+E6	Action:T17 Acts-on:T20
+T18	Amount 428 433	4.3µL
+T19	Modifier 437 447	hybridized
+T20	Reagent 448 460	oligo-dT+RNA
+T21	Action 465 468	put
+E7	Action:T21 Site:T22
+T22	Location 472 483	strip tubes
+R7	Mod-Link Arg1:T20 Arg2:T19	
+R8	Measure Arg1:T20 Arg2:T18	
+T23	Action 787 790	Add
+E8	Action:T23 Acts-on:T25
+T24	Amount 791 795	15µL
+T25	Reagent 796 810	PCR preamp mix
+T26	Amount 814 818	10µL
+T27	Temperature 819 821	RT
+R9	Measure Arg1:T25 Arg2:T24	
+R10	Setting Arg1:E8 Arg2:T26	
+R11	Setting Arg1:E8 Arg2:T27	
+T28	Action 993 1002	Resuspend
+E9	Action:T28 Using:T30
+T29	Amount 1006 1012	15.5µL
+T30	Reagent 1013 1015	EB
+T31	Action 1022 1029	measure
+E10	Action:T31 Measure-Type-Link:T32 Using:T33
+T32	Measure-Type 1030 1044	concentrations
+T33	Device 1051 1056	qubit
+R12	Measure Arg1:T30 Arg2:T29	
+T34	Method 0 9	SMARTseq2
+T35	Reagent 10 15	day 1
+T36	Action 149 156	Prepare
+E11	Action:T36 Acts-on:T37
+T37	Reagent 157 163	RT mix
+T38	Reagent 201 218	Nuclease Free H20
+T39	Numerical 221 225	0.29
+T40	Reagent 227 236	FS Buffer
+T41	Numerical 236 238	5x
+T42	Numerical 238 239	2
+R13	Measure Arg1:T40 Arg2:T41	
+R14	Measure Arg1:T40 Arg2:T42	
+R15	Measure Arg1:T38 Arg2:T39	
+T43	Numerical 240 242	1x
+T44	Reagent 242 249	Betaine
+T45	Concentration 249 251	5M
+T46	Numerical 251 252	2
+R16	Measure Arg1:T44 Arg2:T45	
+R17	Measure Arg1:T44 Arg2:T43	
+T47	Concentration 253 255	1M
+T48	Reagent 255 260	MgCl2
+T49	Concentration 260 262	1M
+T50	Numerical 262 266	0.06
+T51	Concentration 267 270	6mM
+T52	Reagent 270 273	TSO
+T53	Concentration 273 278	100µM
+T54	Numerical 278 281	0.1
+T55	Concentration 282 285	1µM
+T56	Reagent 285 288	DTT
+T57	Concentration 288 293	100mM
+T58	Numerical 293 296	0.5
+T59	Concentration 297 300	5mM
+T60	Reagent 300 314	Superscript II
+T61	Concentration 314 321	200U/µL
+T62	Numerical 321 324	0.5
+T63	Generic-Measure 325 329	100U
+T64	Reagent 329 338	RNase OUT
+T65	Concentration 338 344	40U/µL
+T66	Generic-Measure 346 349	10U
+R18	Measure Arg1:T48 Arg2:T47	
+R19	Measure Arg1:T48 Arg2:T49	
+R20	Measure Arg1:T48 Arg2:T50	
+R22	Measure Arg1:T52 Arg2:T53	
+R21	Measure Arg1:T48 Arg2:T51	
+R23	Measure Arg1:T52 Arg2:T54	
+R24	Measure Arg1:T52 Arg2:T55	
+R25	Measure Arg1:T56 Arg2:T57	
+R26	Measure Arg1:T56 Arg2:T58	
+R27	Measure Arg1:T56 Arg2:T59	
+R28	Measure Arg1:T60 Arg2:T61	
+R29	Measure Arg1:T60 Arg2:T62	
+R30	Measure Arg1:T60 Arg2:T63	
+R31	Measure Arg1:T64 Arg2:T65	
+R32	Measure Arg1:T64 Arg2:T66	
+T67	Action 485 488	Add
+E12	Action:T67 Acts-on:T69
+T68	Amount 489 494	5.7µL
+T69	Reagent 495 497	RT
+T70	Action 498 501	mix
+E13	Action:T70 Acts-on:T71 Using:T72
+T71	Reagent 502 504	RT
+T72	Method 509 567	CycleGroupTempTime1xA4290m10xB502m B422m1xC7015mholdD4hold
+R33	Measure Arg1:T69 Arg2:T68	
+T73	Action 568 574	Dilute
+E14	Action:T73 Acts-on:T74
+T74	Reagent 575 588	ISPCR primers
+T75	Concentration 589 594	1:100
+R34	Setting Arg1:E14 Arg2:T75	
+T76	Action 597 604	Prepare
+E15	Action:T76 Acts-on:T78
+T78	Reagent 605 619	PCR preamp mix
+T77	Amount 673 677	10µL
+T79	Reagent 684 703	KAPA HiFi Hot Start
+T80	Concentration 703 705	2x
+T81	Numerical 705 710	12.5 
+T82	Numerical 710 712	1x
+T83	Reagent 713 725	SPCR primers
+T84	Concentration 725 728	1µM
+T85	Amount 728 733	2.5µL
+T86	Concentration 734 739	0.1µM
+T87	Modifier 765 770	Final
+T88	Amount 771 782	Volume 25µL
+R35	Mod-Link Arg1:T88 Arg2:T87	
+R36	Measure Arg1:T79 Arg2:T80	
+R37	Measure Arg1:T79 Arg2:T81	
+T89	Reagent 654 670	First Strand Rxn
+R38	Measure Arg1:T89 Arg2:T77	
+R39	Measure Arg1:T79 Arg2:T82	
+R40	Measure Arg1:T83 Arg2:T84	
+R41	Measure Arg1:T83 Arg2:T85	
+R42	Measure Arg1:T83 Arg2:T86	
+T90	Method 824 834	Preamp PCR
+T91	Numerical 834 836	15
+T92	Modifier 887 893	enough
+T93	Action 904 907	try
+E16	Action:T93 Count:T94
+T94	Numerical 908 910	13
+T95	Method 911 925	Ampure Cleanup
+R43	Mod-Link Arg1:E16 Arg2:T92	
+T96	Modifier 851 873	current recommendation
+R44	Mod-Link Arg1:T91 Arg2:T96	
+T97	Action 927 930	Use
+E17	Action:T97 Acts-on:T99
+T98	Amount 931 942	0.6 volumes
+T99	Reagent 946 951	beads
+R45	Measure Arg1:T99 Arg2:T98	
+T100	Amount 956 960	15µL
+T101	Reagent 964 969	beads
+T102	Amount 978 982	25µL
+T103	Reagent 983 991	reaction
+R46	Measure Arg1:T103 Arg2:T102	
+R47	Measure Arg1:T101 Arg2:T100	
+R48	Meronym Arg1:T101 Arg2:T103	
+T104	Modifier 191 196	Final
+T105	Measure-Type 197 201	Conc
+T106	Reagent 164 176	ReagentStock
+T107	Measure-Type 177 184	ConcAmt
+T108	Concentration 185 191	1Amt/N
+R49	Measure Arg1:T106 Arg2:T108	

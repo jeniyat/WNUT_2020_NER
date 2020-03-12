@@ -1,0 +1,139 @@
+T1	Action 29 34	Place
+E1	Action:T1 Acts-on:T2 Site:T3
+T2	Reagent 35 39	food
+T3	Location 43 52	container
+T4	Location 56 60	foil
+T5	Action 88 93	Place
+E2	Action:T5 Site:T6
+T6	Location 97 102	shelf
+T7	Device 110 127	autoclave chamber
+T8	Device 147 156	autoclave
+T11	Action 174 179	close
+E4	Action:T11 Acts-on:T8
+T12	Action 181 184	Let
+E5	Action:T12 Acts-on:T13
+T13	Device 185 194	autoclave
+T14	Temperature 203 208	265°F
+R3	Setting Arg1:E5 Arg2:T14	
+T15	Action 249 267	Adjust to maintain
+E6	Action:T15 Measure-Type-Link:T16
+T16	Measure-Type 268 279	temperature
+T17	Temperature 288 296	260-270°
+R4	Setting Arg1:E6 Arg2:T17	
+T18	Action 298 304	Follow
+E7	Action:T18 Measure-Type-Link:T23 Using:T65
+T19	Measure-Type 362 373	temperature
+T20	Action 374 381	reaches
+E8	Action:T20 Measure-Type-Link:T19
+T21	Temperature 382 387	265°F
+R5	Setting Arg1:E8 Arg2:T21	
+T22	Action 420 424	vent
+E9	Action:T22 Acts-on:T24
+T24	Reagent 436 440	food
+T26	Reagent 461 468	liquids
+T25	Reagent 449 453	food
+T27	Mention 457 460	its
+T28	Reagent 483 488	water
+T29	Location 496 503	chamber
+T30	Action 505 510	drain
+E11	Action:T30 Acts-on:T31
+T31	Device 515 524	autoclave
+T32	Action 529 535	refill
+E12	Action:T32 Acts-on:T31 Using:T33
+T33	Reagent 547 552	water
+T34	Modifier 541 546	fresh
+R9	Mod-Link Arg1:T33 Arg2:T34	
+T35	Action 573 577	Line
+E13	Action:T35 Acts-on:T36 Using:T37
+T36	Location 578 592	autoclave tray
+T37	Reagent 598 613	heavy-duty foil
+T38	Action 615 620	Slash
+E14	Action:T38 Acts-on:T39 Count:T41 Site:T42
+T39	Reagent 621 627	franks
+T40	Modifier 628 641	on a diagonal
+T41	Numerical 642 643	3
+R10	Mod-Link Arg1:E14 Arg2:T40	
+T43	Action 670 675	Place
+E15	Action:T43 Acts-on:T44 Site:T45
+T44	Reagent 676 682	franks
+T45	Location 686 690	tray
+T46	Action 692 696	Cook
+E16	Action:T46 Using:T69
+T47	Time 761 770	4 minutes
+R17	Setting Arg1:E16 Arg2:T47	
+T48	Action 772 776	Vent
+E17	Action:T48 
+T49	Action 783 789	remove
+E18	Action:T49 Acts-on:T50 Acts-on2:T51
+T50	Reagent 794 802	sausages
+T51	Location 807 811	foil
+T52	Action 813 818	Place
+E19	Action:T52 Acts-on:T53 Site:T54
+T53	Reagent 819 823	buns
+T54	Location 831 835	tray
+T55	Action 840 843	put
+E20	Action:T55 Acts-on:T56 Site:T84
+T56	Mention 844 848	them
+R19	Coreference-Link Arg1:T56 Arg2:T53	
+T58	Time 883 894	4-5 minutes
+R21	Setting Arg1:E20 Arg2:T58	
+T59	Action 904 913	Break out
+E21	Action:T59 Acts-on:T60 Acts-on2:T61 Acts-on3:T62
+T60	Reagent 918 925	mustard
+T61	Reagent 927 937	sauerkraut
+T62	Reagent 947 956	condiment
+T63	Action 129 133	Fill
+E22	Action:T63 Acts-on:T64
+T64	Device 134 141	chamber
+R1	Or Arg1:T3 Arg2:T4	
+R6	Coreference-Link Arg1:T27 Arg2:T25	
+R8	Meronym Arg1:T6 Arg2:T7	
+T9	Action 160 169	sterilize
+E10	Action:T9 Using:T8
+T10	Action 341 350	beginning
+E3	Action:T10 
+T23	Measure-Type 309 321	cooking time
+T65	Method 329 339	the recipe
+T66	Action 429 435	remove
+E23	Action:T66 Acts-on:T24
+R2	Meronym Arg1:T26 Arg2:T27	
+R7	Or Arg1:T25 Arg2:T26	
+T67	Action 469 473	leak
+E24	Action:T67 Acts-on:T25 Site:T28
+R12	Meronym Arg1:T28 Arg2:T29	
+T68	Numerical 647 648	4
+R13	Or Arg1:T41 Arg2:T68	
+T42	Location 658 668	both sides
+T69	Method 707 719	instructions
+T57	Location 861 865	door
+T70	Action 866 872	closed
+E25	Action:T70 Acts-on:T57
+T71	Modifier 877 882	about
+R11	Mod-Link Arg1:T58 Arg2:T71	
+T72	Action 898 902	warm
+E26	Action:T72 Acts-on:T53
+T73	Method 0 28	Autoclave Frankfurter Fiesta
+T74	Modifier 61 72	as directed
+R14	Mod-Link Arg1:E1 Arg2:T74	
+T75	Measure-Type 210 218	Pressure
+T76	Action 224 228	show
+E27	Action:T76 Measure-Type-Link:T75
+T77	Modifier 236 247	green range
+R15	Mod-Link Arg1:E27 Arg2:T77	
+T78	Modifier 280 287	between
+R16	Mod-Link Arg1:T17 Arg2:T78	
+T79	Modifier 351 361	as soon as
+R18	Mod-Link Arg1:E3 Arg2:T79	
+R20	Setting Arg1:E3 Arg2:T21	
+T80	Time 394 406	cooking time
+T81	Modifier 410 418	complete
+R22	Setting Arg1:E9 Arg2:T80	
+R23	Mod-Link Arg1:T80 Arg2:T81	
+T82	Modifier 445 448	any
+R24	Mod-Link Arg1:T25 Arg2:T82	
+T83	Modifier 553 571	before using again
+R25	Mod-Link Arg1:E12 Arg2:T83	
+T84	Location 849 851	in
+R26	Meronym Arg1:T57 Arg2:T84	
+T85	Modifier 943 946	any
+R27	Mod-Link Arg1:T62 Arg2:T85	

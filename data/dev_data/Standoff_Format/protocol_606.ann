@@ -1,0 +1,125 @@
+T2	Action 268 275	Prepare
+E2	Action:T2 Acts-on:T22
+T3	Action 606 609	Add
+E3	Action:T3 Acts-on:T32
+T4	Action 659 669	Centrifuge
+E4	Action:T4 
+T5	Action 644 650	vortex
+E5	Action:T5 Acts-on:T32
+T6	Action 710 716	remove
+E6	Action:T6 Acts-on:T30
+T7	Action 776 779	Add
+E7	Action:T7 Acts-on:T25 Acts-on2:T24 Site:T26
+T8	Action 871 877	vortex
+E8	Action:T8 Acts-on:T26
+T9	Action 910 916	Invert
+E9	Action:T9 Acts-on:T20 Count:T21
+T11	Action 958 961	add
+E11	Action:T11 Acts-on:T19 Site:T18
+T12	Action 998 1004	vortex
+E12	Action:T12 Acts-on:T18
+T13	Action 1014 1022	Incubate
+E13	Action:T13 
+T14	Action 1058 1062	Read
+E14	Action:T14 Acts-on:T41 Using:T40 Using2:T77
+T15	Action 1153 1161	transfer
+E15	Action:T15 Acts-on:T43 Site:T44
+T16	Amount 780 784	50µl
+T17	Modifier 1005 1012	briefly
+T18	Location 989 993	tube
+T19	Reagent 966 981	CB-X™ Assay Dye
+T20	Reagent 921 936	CB-X™ Assay Dye
+T21	Numerical 937 946	2-3 times
+T22	Device 278 303	standard calibration plot
+T23	Amount 819 823	50µl
+T24	Reagent 824 854	CB-X™ Solubilization Buffer-II
+T25	Reagent 785 814	CB-X™ Solubilization Buffer-I
+T26	Device 862 866	tube
+T27	Speed 673 681	16,000xg
+T28	Time 686 695	5 minutes
+T29	Modifier 700 709	carefully
+T30	Reagent 725 736	supernatant
+T31	Amount 610 613	1ml
+T32	Reagent 614 639	pre-chilled (-20°C) CB-X™
+T33	Action 210 218	Transfer
+E16	Action:T33 Acts-on:T35 Site:T37
+T34	Amount 219 223	50µl
+T35	Reagent 224 240	protein standard
+T36	Amount 244 249	1.5ml
+T37	Location 250 266	centrifuge tubes
+R1	Measure Arg1:T35 Arg2:T34	
+R2	Measure Arg1:T37 Arg2:T36	
+R3	Measure Arg1:T32 Arg2:T31	
+R4	Setting Arg1:E4 Arg2:T27	
+R5	Setting Arg1:E4 Arg2:T28	
+R6	Mod-Link Arg1:E6 Arg2:T29	
+R7	Measure Arg1:T25 Arg2:T16	
+R8	Measure Arg1:T24 Arg2:T23	
+T1	Amount 962 965	1ml
+R9	Measure Arg1:T19 Arg2:T1	
+R10	Mod-Link Arg1:E12 Arg2:T17	
+T10	Time 1027 1036	5 minutes
+T38	Temperature 1040 1056	room temperature
+R11	Setting Arg1:E13 Arg2:T10	
+R12	Setting Arg1:E13 Arg2:T38	
+T39	Amount 1162 1167	200µl
+T40	Device 1126 1149	1cm path length cuvette
+T41	Device 1067 1077	absorbance
+T42	Generic-Measure 1081 1086	595nm
+R13	Setting Arg1:T41 Arg2:T42	
+T43	Reagent 1168 1182	assay solution
+T44	Location 1188 1203	microtiter well
+R14	Measure Arg1:T43 Arg2:T39	
+T45	Method 0 43	Generating CB-X™ Tables and standard curves
+T46	Method 61 79	Assay Optimization
+T47	Action 82 89	Prepare
+E1	Action:T47 Acts-on:T49 Site:T50
+T48	Modifier 90 99	duplicate
+T49	Reagent 100 109	standards
+T50	Reagent 128 134	buffer
+T51	Modifier 110 119	of choice
+T52	Modifier 135 144	of choice
+T53	Modifier 152 161	following
+T54	Measure-Type 162 176	concentrations
+T55	Concentration 178 209	0, 0.2, 0.4, 0.6, 0.8, 1.0µg/µl
+R15	Mod-Link Arg1:T50 Arg2:T52	
+R16	Mod-Link Arg1:T49 Arg2:T51	
+R17	Mod-Link Arg1:E1 Arg2:T48	
+T56	Action 312 325	determination
+E10	Action:T56 Measure-Type-Link:T57 Acts-on:T58
+T57	Measure-Type 329 350	protein concentration
+T58	Reagent 366 373	samples
+T59	Modifier 358 365	unknown
+R18	Mod-Link Arg1:T58 Arg2:T59	
+T60	Action 375 378	Use
+E17	Action:T60 
+T61	Method 383 396	line equation
+T62	Action 400 408	generate
+E18	Action:T62 
+T63	Modifier 469 475	future
+T64	Method 476 495	protein estimations
+T65	Action 502 511	performed
+E19	Action:T65 Using:T64
+T66	Action 512 525	without using
+E20	Action:T66 Acts-on:T67
+T67	Reagent 526 543	protein standards
+T68	Action 561 570	carry out
+E21	Action:T68 Using:T70
+T69	Modifier 571 584	rapid, single
+T70	Method 585 604	protein estimations
+R19	Mod-Link Arg1:E21 Arg2:T69	
+R20	Mod-Link Arg1:E19 Arg2:T63	
+T71	Action 654 657	mix
+E22	Action:T71 
+T72	Action 737 755	without disturbing
+E23	Action:T72 
+T73	Reagent 760 774	protein pellet
+R21	Coreference-Link Arg1:E23 Arg2:T73	
+T74	Action 881 889	dissolve
+E24	Action:T74 
+T75	Reagent 894 908	protein pellet
+R22	Coreference-Link Arg1:E24 Arg2:T75	
+T76	Action 950 953	mix
+E25	Action:T76 
+T77	Reagent 1095 1110	deionized water
+T78	Reagent 48 60	CB-X Protein

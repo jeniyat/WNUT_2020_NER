@@ -1,0 +1,93 @@
+T1	Action 24 28	Thaw
+E1	Action:T1 Acts-on:T13 Site:T14
+T2	Action 54 59	Chill
+E2	Action:T2 Acts-on:T16 Site:T18
+T3	Action 144 147	Add
+E3	Action:T3 Acts-on:T20 Site:T21
+T4	Action 185 188	Mix
+E4	Action:T4 Using:T22 Acts-on:T23
+T5	Action 293 298	Place
+E5	Action:T5 Acts-on:T24 Site:T25
+T6	Action 346 356	Heat shock
+E6	Action:T6 
+T7	Action 393 396	Add
+E7	Action:T7 Acts-on:T31 Site:T32
+T8	Action 443 448	Place
+E8	Action:T8 Acts-on:T33
+T9	Action 478 483	Shake
+E9	Action:T9 
+T10	Action 516 520	Warm
+E10	Action:T10 Acts-on:T38
+T11	Action 547 553	Spread
+E11	Action:T11 Site:T55 Acts-on:T41
+T12	Action 615 623	Incubate
+E12	Action:T12 
+T13	Reagent 39 44	cells
+T14	Location 48 51	ice
+T15	Amount 80 84	2 μl
+T16	Reagent 93 109	ligation mixture
+R1	Measure Arg1:T16 Arg2:T15	
+T17	Modifier 115 121	1.5 ml
+T18	Device 122 142	microcentrifuge tube
+T19	Amount 148 153	50 µl
+T20	Reagent 157 172	competent cells
+R2	Measure Arg1:T20 Arg2:T19	
+T21	Reagent 180 183	DNA
+T22	Method 199 220	pipetting up and down
+T23	Reagent 263 276	cells and DNA
+T24	Reagent 303 310	mixture
+T25	Location 314 317	ice
+T26	Time 322 332	30 minutes
+R3	Setting Arg1:E5 Arg2:T26	
+T27	Temperature 360 364	42°C
+T28	Time 369 379	30 seconds
+T29	Amount 397 403	950 µl
+T30	Temperature 407 423	room temperature
+T31	Reagent 424 429	media
+R4	Measure Arg1:T31 Arg2:T29	
+R5	Setting Arg1:E7 Arg2:T30	
+T32	Location 437 441	tube
+T33	Device 449 453	tube
+T34	Temperature 457 461	37°C
+T35	Time 466 476	60 minutes
+R6	Setting Arg1:E8 Arg2:T35	
+R7	Setting Arg1:E8 Arg2:T34	
+T36	Speed 496 503	250 rpm
+T37	Action 508 514	rotate
+E13	Action:T37 
+R8	Setting Arg1:E13 Arg2:T36	
+R9	Setting Arg1:E9 Arg2:T36	
+T38	Device 531 537	plates
+T39	Temperature 541 545	37°C
+R10	Setting Arg1:E10 Arg2:T39	
+T40	Amount 554 563	50–100 µl
+T41	Reagent 571 597	cells and ligation mixture
+T42	Temperature 637 641	37°C
+R11	Setting Arg1:E12 Arg2:T42	
+T43	Method 0 23	Transformation Protocol
+T44	Modifier 29 38	competent
+R12	Mod-Link Arg1:T13 Arg2:T44	
+T45	Modifier 60 73	approximately
+T46	Amount 74 78	5 ng
+R13	Coreference-Link Arg1:T15 Arg2:T46	
+R14	Mod-Link Arg1:T46 Arg2:T45	
+R15	Mod-Link Arg1:T18 Arg2:T17	
+T47	Action 224 232	flicking
+E14	Action:T47 Count:T48 Acts-on:T50
+T48	Numerical 242 251	4–5 times
+T49	Action 255 258	mix
+E15	Action:T49 Acts-on:T23
+T50	Location 237 241	tube
+R16	Or Arg1:E4 Arg2:E14	
+T51	Action 278 291	Do not vortex
+E16	Action:T51 
+T52	Action 334 344	Do not mix
+E17	Action:T52 
+T53	Action 381 391	Do not mix
+E18	Action:T53 
+T54	Modifier 484 494	vigorously
+R17	Mod-Link Arg1:E9 Arg2:T54	
+T55	Location 598 613	onto the plates
+R18	Measure Arg1:T41 Arg2:T40	
+R19	Setting Arg1:E6 Arg2:T27	
+R20	Setting Arg1:E6 Arg2:T28	

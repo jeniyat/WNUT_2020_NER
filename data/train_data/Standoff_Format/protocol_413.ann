@@ -1,0 +1,179 @@
+T1	Action 46 51	Label
+E1	Action:T1 Acts-on:T31 Site:T32
+T2	Action 77 84	Harvest
+E2	Action:T2 Acts-on:T34
+T3	Action 103 108	place
+E3	Action:T3 Site:T35
+T4	Action 122 126	Fill
+E4	Action:T4 Acts-on:T37
+T5	Action 164 169	Grind
+E5	Action:T5 Acts-on:T38 Using:T39
+T6	Action 190 193	Add
+E6	Action:T6 Acts-on:T41 Site:T42
+T7	Action 233 236	Add
+E7	Action:T7 Acts-on:T45
+T8	Action 256 259	Mix
+E8	Action:T8 
+T9	Action 274 282	Incubate
+E9	Action:T9 Acts-on:T47
+T10	Action 316 319	Add
+E10	Action:T10 Acts-on:T52
+T11	Action 336 339	Mix
+E11	Action:T11 
+T12	Action 391 396	place
+E12	Action:T12 Site:T56
+T13	Action 415 425	Centrifuge
+E13	Action:T13 
+T14	Action 456 461	Label
+E14	Action:T14 Acts-on:T60
+T15	Action 477 481	Pass
+E15	Action:T15 Acts-on:T62 Using:T63 Site:T64
+T16	Action 557 560	Add
+E16	Action:T16 Acts-on:T66
+T17	Action 584 587	Mix
+E17	Action:T17 Acts-on:T69 Using:T71
+T18	Action 626 630	Spin
+E18	Action:T18 
+T19	Action 670 678	pour off
+E19	Action:T19 
+T21	Action 806 809	Add
+E21	Action:T21 Acts-on:T82
+T22	Action 836 841	flick
+E22	Action:T22 Acts-on:T83
+T23	Action 890 894	Spin
+E23	Action:T23 
+T24	Action 906 914	Pour off
+E24	Action:T24 Acts-on:T85
+T27	Action 1074 1083	Resuspend
+E27	Action:T27 Acts-on:T25 Site:T93
+T28	Action 683 690	discard
+E28	Action:T28 Acts-on:T73
+T29	Action 734 740	remove
+E29	Action:T29 Acts-on:T77 Using:T79
+T30	Numerical 52 55	one
+T31	Location 56 60	tube
+T32	Reagent 65 75	each	plant
+R1	Measure Arg1:T31 Arg2:T30	
+T33	Numerical 85 88	2-3
+T34	Reagent 89 98	seedlings
+T35	Device 114 120	mortar
+R2	Measure Arg1:T34 Arg2:T33	
+T36	Amount 138 143	50 ml
+T37	Reagent 147 162	liquid nitrogen
+R3	Measure Arg1:T37 Arg2:T36	
+T38	Reagent 170 176	tissue
+T39	Device 182 188	pestle
+T40	Amount 194 198	1 ml
+T41	Reagent 202 219	extraction buffer
+T42	Location 227 231	tube
+R4	Measure Arg1:T41 Arg2:T40	
+T43	Amount 237 243	120 µl
+T44	Concentration 247 250	10%
+T45	Reagent 251 254	SDS
+R5	Measure Arg1:T45 Arg2:T44	
+R6	Measure Arg1:T45 Arg2:T43	
+T46	Action 263 272	inverting
+E30	Action:T46 
+T47	Location 283 287	tube
+T48	Temperature 294 299	65 ˚C
+T49	Time 304 314	20 minutes
+R7	Setting Arg1:E9 Arg2:T48	
+R8	Setting Arg1:E9 Arg2:T49	
+T50	Amount 320 326	300 µl
+T51	Concentration 327 329	5M
+T52	Reagent 330 334	KOAc
+R9	Measure Arg1:T52 Arg2:T51	
+R10	Measure Arg1:T52 Arg2:T50	
+T53	Modifier 340 344	well
+T54	Action 348 357	inverting
+E31	Action:T54 
+T55	Numerical 358 365	several
+T56	Location 400 403	ice
+T57	Time 404 413	5 minutes
+R11	Setting Arg1:E12 Arg2:T57	
+R12	Mod-Link Arg1:E11 Arg2:T53	
+R13	Setting Arg1:E31 Arg2:T55	
+T58	Time 430 439	5 minutes
+T59	Speed 444 454	12,000	rpm
+R14	Setting Arg1:E13 Arg2:T58	
+R15	Setting Arg1:E13 Arg2:T59	
+T60	Location 471 475	tube
+T61	Amount 482 488	700 µl
+T62	Reagent 496 507	supernatant
+T63	Device 518 534	miracloth funnel
+T64	Location 544 555	second tube
+R16	Measure Arg1:T62 Arg2:T61	
+T65	Amount 561 567	600 µl
+T66	Reagent 571 582	isopropanol
+R17	Measure Arg1:T66 Arg2:T65	
+T67	Time 635 644	5 minutes
+T68	Speed 648 658	14,000 rpm
+R18	Setting Arg1:E18 Arg2:T67	
+R19	Setting Arg1:E18 Arg2:T68	
+T69	Reagent 592 600	contents
+T70	Modifier 601 611	thoroughly
+R20	Mod-Link Arg1:E17 Arg2:T70	
+T71	Method 615 624	inverting
+T72	Modifier 660 669	Carefully
+R21	Mod-Link Arg1:E19 Arg2:T72	
+T73	Reagent 695 706	supernatant
+T74	Amount 725 730	20 µl
+T75	Modifier 745 754	remaining
+T76	Amount 755 760	drops
+T77	Reagent 764 770	liquid
+T78	Reagent 794 804	DNA pellet
+R22	Measure Arg1:T77 Arg2:T76	
+R23	Mod-Link Arg1:T76 Arg2:T75	
+T79	Device 714 721	P20 set
+R24	Setting Arg1:T79 Arg2:T74	
+T20	Action 771 789	without disturbing
+E20	Action:T20 Acts-on:T78
+T80	Amount 810 816	500 µl
+T81	Concentration 820 823	70%
+T82	Reagent 824 831	ethanol
+T83	Location 846 850	tube
+R25	Measure Arg1:T82 Arg2:T81	
+R26	Measure Arg1:T82 Arg2:T80	
+T84	Time 895 904	5 minutes
+T85	Reagent 919 926	ethanol
+T86	Location 934 937	P20
+T87	Amount 945 950	20 µl
+T88	Action 954 960	remove
+E32	Action:T88 Using:T86 Acts-on:T90
+T89	Modifier 965 974	remaining
+T90	Reagent 975 980	drops
+T91	Action 981 999	without disturbing
+E33	Action:T91 Acts-on:T92
+T92	Reagent 1004 1010	pellet
+R27	Mod-Link Arg1:T90 Arg2:T89	
+R28	Setting Arg1:T86 Arg2:T87	
+T25	Reagent 1088 1091	DNA
+T26	Amount 1095 1100	50 µl
+T93	Reagent 1101 1103	TE
+T94	Action 1108 1116	incubate
+E25	Action:T94 Using:T97
+T95	Temperature 1120 1136	room temperature
+T96	Time 1141 1150	5 minutes
+T97	Method 1155 1176	complete resuspension
+R29	Measure Arg1:T93 Arg2:T26	
+R30	Setting Arg1:E25 Arg2:T95	
+R31	Setting Arg1:E25 Arg2:T96	
+T98	Reagent 0 3	DNA
+T99	Method 4 14	Extraction
+T100	Location 19 37	college laboratory
+T101	Reagent 861 867	pellet
+T102	Location 882 888	bottom
+T103	Reagent 1178 1185	Samples
+T104	Modifier 1196 1202	frozen
+R32	Mod-Link Arg1:T103 Arg2:T104	
+T105	Action 1012 1017	Leave
+E26	Action:T105 
+T106	Location 1022 1026	tube
+T107	Location 1039 1044	bench
+T108	Action 1048 1055	air dry
+E34	Action:T108 
+T109	Time 1060 1072	5-10 minutes
+T110	Modifier 443 444	>
+R33	Mod-Link Arg1:T59 Arg2:T110	
+T111	Modifier 464 470	second
+R34	Mod-Link Arg1:T60 Arg2:T111	
