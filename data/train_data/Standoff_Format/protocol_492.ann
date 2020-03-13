@@ -1,0 +1,39 @@
+T1	Action 114 117	Add
+E1	Action:T1 Acts-on:T13 Site:T14 Using:T15
+T2	Action 237 241	pass
+E2	Action:T2 Acts-on:T3 Site:T16
+T3	Reagent 246 259	EPPS solution
+T4	Amount 118 124	173 mL
+T5	Amount 52 56	22 g
+T6	Action 42 51	Weigh out
+E3	Action:T6 Acts-on:T7 Site:T9
+T7	Reagent 60 64	EPPS
+T8	Amount 81 87	200 mL
+T9	Location 106 112	bottle
+T10	Modifier 88 105	trace metal clean
+R1	Mod-Link Arg1:T9 Arg2:T10	
+T13	Reagent 128 135	Milli-Q
+T14	Location 143 149	bottle
+T15	Method 169 187	analytical balance
+R4	Measure Arg1:T13 Arg2:T4	
+R5	Measure Arg1:T7 Arg2:T5	
+R6	Measure Arg1:T9 Arg2:T8	
+T16	Location 337 343	bottle
+T17	Modifier 319 336	trace metal clean
+R7	Mod-Link Arg1:T16 Arg2:T17	
+T20	Reagent 0 4	EPPS
+T21	Modifier 16 25	dissolved
+T22	Reagent 26 32	cobalt
+T23	Method 33 41	analyses
+R10	Mod-Link Arg1:T22 Arg2:T21	
+T24	Modifier 65 73	directly
+R11	Mod-Link Arg1:E3 Arg2:T24	
+T25	Measure-Type 153 160	weight 
+T26	Reagent 203 207	EPPS
+T27	Modifier 211 226	fully dissolved
+T28	Action 189 198	Make sure
+E4	Action:T28 Acts-on:T26
+R12	Mod-Link Arg1:T26 Arg2:T27	
+T29	Location 271 282	HPLC column
+T30	Reagent 295 311	Chelex-100 resin
+R13	Meronym Arg1:T30 Arg2:T29	

@@ -1,0 +1,303 @@
+T1	Action 35 41	Infect
+E1	Action:T1 Acts-on:T43 Using:T45
+T2	Action 115 123	Incubate
+E2	Action:T2 Acts-on:T47 Using:T3
+T4	Action 196 206	Centrifuge
+E4	Action:T4 Acts-on:T51 Site:T52
+T5	Action 292 295	Add
+E5	Action:T5 Acts-on:T57 Site:T60 Measure-Type-Link:T61
+T6	Action 384 394	Centrifuge
+E6	Action:T6 Acts-on:T62 Using:T63
+T7	Action 480 489	Resuspend
+E7	Action:T7 Acts-on:T67 Site:T70 Site2:T73
+T8	Action 560 568	Transfer
+E8	Action:T8 Acts-on:T76 Site:T78
+T9	Action 638 641	Add
+E9	Action:T9 Acts-on:T80
+T10	Action 662 665	mix
+E10	Action:T10 Acts-on:T80
+T11	Action 667 670	Add
+E11	Action:T11 Acts-on:T83 Site:T85
+T12	Action 720 723	mix
+E12	Action:T12 
+T13	Action 725 728	Add
+E13	Action:T13 Acts-on:T87 Acts-on2:T89 Site:T91
+T14	Action 820 830	Centrifuge
+E14	Action:T14 Using:T92
+T15	Action 883 889	Remove
+E15	Action:T15 Acts-on:T96 Site:T98
+T16	Action 931 934	Add
+E16	Action:T16 Acts-on:T100 Site:T101
+T17	Action 988 994	Remove
+E17	Action:T17 Acts-on:T103 Site:T105
+T18	Action 1087 1090	Add
+E18	Action:T18 Acts-on:T111 Site:T113
+T19	Action 1124 1135	Precipitate
+E19	Action:T19 Acts-on:T114 Using:T118
+T20	Action 1199 1209	Centrifuge
+E20	Action:T20 Acts-on:T120 Using:T121
+T21	Action 1278 1282	Wash
+E21	Action:T21 Acts-on:T126 Using:T130 Site:T131
+T22	Action 1362 1371	Resuspend
+E22	Action:T22 Acts-on:T134 Using:T138
+T23	Action 1423 1428	Store
+E23	Action:T23 Acts-on:T139
+T24	Action 1446 1449	Add
+E24	Action:T24 Acts-on:T142 Acts-on2:T145
+T25	Action 1505 1508	mix
+E25	Action:T25 
+T26	Action 1510 1513	Dry
+E26	Action:T26 Acts-on:T146 Site:T149
+T27	Action 1574 1580	remove
+E27	Action:T27 Acts-on:T150
+T28	Action 1591 1595	Save
+E28	Action:T28 Acts-on:T151
+T29	Action 1614 1621	Discard
+E29	Action:T29 Acts-on:T152
+T30	Action 1640 1648	Incubate
+E30	Action:T30 
+T31	Action 1681 1689	Incubate
+E31	Action:T31 Acts-on:T155
+T32	Action 1725 1728	Mix
+E32	Action:T32 Using:T158
+T33	Action 1743 1753	Centrifuge
+E33	Action:T33 Using:T161
+T34	Action 1789 1792	Mix
+E34	Action:T34 Using:T162
+T35	Action 1807 1812	Place
+E35	Action:T35 Acts-on:T163 Site:T165
+T36	Action 1862 1865	Mix
+E36	Action:T36 
+T37	Action 1875 1879	hold
+E37	Action:T37 
+T38	Action 1900 1907	Discard
+E38	Action:T38 Acts-on:T169
+T39	Action 1973 1983	centrifuge
+E39	Action:T39 Using:T170
+T40	Action 2020 2026	Remove
+E40	Action:T40 Acts-on:T173 Site:T175
+T41	Action 2060 2067	Discard
+E41	Action:T41 Acts-on:T176
+T42	Modifier 42 53	appropriate
+T43	Reagent 54 58	host
+T44	Modifier 64 71	desired
+T45	Reagent 72 91	Chlorovirus species
+T46	Generic-Measure 95 113	moi of ~0.001-0.01
+R1	Mod-Link Arg1:T43 Arg2:T42	
+R2	Mod-Link Arg1:T45 Arg2:T44	
+R3	Setting Arg1:E1 Arg2:T46	
+T47	Reagent 128 135	samples
+T48	Temperature 139 143	25°C
+T49	Time 148 159	24-72 hours
+T3	Method 166 194	continuous light and shaking
+R4	Setting Arg1:E2 Arg2:T48	
+R5	Setting Arg1:E2 Arg2:T49	
+T50	Amount 207 212	30 mL
+T51	Reagent 220 227	lysates
+T52	Device 235 253	Sorvall SS34 rotor
+T53	Speed 257 266	5,000 rpm
+T54	Time 280 285	5 min
+T55	Temperature 287 290	4°C
+R6	Measure Arg1:T51 Arg2:T50	
+R7	Setting Arg1:E4 Arg2:T53	
+R8	Setting Arg1:E4 Arg2:T54	
+R9	Setting Arg1:E4 Arg2:T55	
+T56	Concentration 296 299	10%
+T57	Reagent 300 305	NP-40
+T58	Reagent 310 322	Triton X-100
+T60	Reagent 331 350	lysate supernatants
+T59	Concentration 380 382	1%
+T61	Measure-Type 363 376	concentration
+R10	Measure Arg1:T57 Arg2:T56	
+R11	Or Arg1:T57 Arg2:T58	
+R12	Setting Arg1:E5 Arg2:T59	
+T62	Reagent 399 407	material
+T63	Device 413 434	Beckman Ti 50.2 rotor
+T64	Speed 438 448	15,000 rpm
+T65	Time 467 473	75 min
+T66	Temperature 475 478	4°C
+R13	Setting Arg1:E6 Arg2:T64	
+R14	Setting Arg1:E6 Arg2:T65	
+R15	Setting Arg1:E6 Arg2:T66	
+T67	Reagent 494 507	virus pellets
+T68	Amount 513 519	1.0 mL
+T69	Concentration 523 528	50 mM
+T70	Reagent 529 537	Tris-HCl
+T71	pH 539 545	pH 7.5
+T72	Concentration 547 552	10 mM
+T73	Reagent 553 558	MgCl2
+R16	Measure Arg1:T73 Arg2:T72	
+R17	Measure Arg1:T70 Arg2:T69	
+R18	Measure Arg1:T70 Arg2:T71	
+R19	Measure Arg1:T70 Arg2:T68	
+T74	Amount 569 575	500 µL
+T75	Modifier 583 594	resuspended
+T76	Reagent 595 600	virus
+T77	Amount 604 610	1.5 ml
+T78	Location 611 636	screw-cap microfuge tubes
+R20	Measure Arg1:T78 Arg2:T77	
+R21	Mod-Link Arg1:T76 Arg2:T75	
+R22	Measure Arg1:T76 Arg2:T74	
+T79	Amount 642 646	9 µL
+T80	Reagent 650 657	DNAse I
+R23	Measure Arg1:T80 Arg2:T79	
+T81	Amount 671 677	6.0 µL
+T82	Concentration 681 687	500 mM
+T83	Reagent 688 692	EDTA
+T84	pH 694 700	pH 8.0
+T85	Reagent 708 715	samples
+R24	Measure Arg1:T83 Arg2:T82	
+R25	Measure Arg1:T83 Arg2:T81	
+R26	Measure Arg1:T83 Arg2:T84	
+T86	Amount 729 735	300 µL
+T87	Reagent 739 762	buffer-saturated phenol
+T88	Amount 767 773	300 µL
+T89	Reagent 777 798	CHCl3:Isoamyl alcohol
+T90	Generic-Measure 800 804	24:1
+T91	Location 813 818	tubes
+R27	Measure Arg1:T89 Arg2:T90	
+R28	Measure Arg1:T89 Arg2:T88	
+R29	Measure Arg1:T87 Arg2:T86	
+T92	Device 838 847	microfuge
+T93	Speed 851 864	maximum speed
+T94	Time 869 874	5 min
+T95	Temperature 878 881	4°C
+R30	Setting Arg1:E14 Arg2:T93	
+R31	Setting Arg1:E14 Arg2:T94	
+R32	Setting Arg1:E14 Arg2:T95	
+T96	Reagent 894 914	upper aqueous layers
+T97	Modifier 918 923	clean
+T98	Location 924 929	tubes
+R33	Mod-Link Arg1:T98 Arg2:T97	
+T99	Amount 935 941	600 µL
+T100	Reagent 945 966	CHCl3:Isoamyl alcohol
+T101	Location 981 986	tubes
+T102	Concentration 968 972	24:1
+R34	Measure Arg1:T100 Arg2:T102	
+R35	Measure Arg1:T100 Arg2:T99	
+T103	Reagent 999 1019	upper aqueous layers
+T104	Modifier 1023 1028	clean
+T105	Location 1029 1034	tubes
+T106	Action 1039 1045	repeat
+E3	Action:T106 Using:T107 Count:T108
+T107	Method 1050 1082	CHCl3:Isoamyl alcohol extraction
+T108	Numerical 1083 1085	1X
+R36	Mod-Link Arg1:T105 Arg2:T104	
+T109	Amount 1091 1096	66 µL
+T110	Concentration 1100 1103	3 M
+T111	Reagent 1104 1109	NaOAc
+T112	Modifier 1113 1117	each
+T113	Location 1118 1122	tube
+R37	Mod-Link Arg1:T113 Arg2:T112	
+R38	Measure Arg1:T111 Arg2:T110	
+R39	Measure Arg1:T111 Arg2:T109	
+T114	Reagent 1140 1144	DNAs
+T115	Amount 1150 1160	2X volumes
+T116	Amount 1176 1183	1350 µL
+T117	Concentration 1188 1192	100%
+T118	Reagent 1193 1197	EtOH
+R40	Measure Arg1:T118 Arg2:T117	
+T119	Modifier 1162 1175	approximately
+R42	Mod-Link Arg1:T116 Arg2:T119	
+R41	Measure Arg1:T118 Arg2:T116	
+R43	Coreference-Link Arg1:T115 Arg2:T116	
+R44	Measure Arg1:T118 Arg2:T115	
+T120	Location 1214 1219	tubes
+T121	Device 1227 1236	microfuge
+T122	Time 1241 1250	10-15 min
+T123	Temperature 1254 1257	4°C
+T124	Action 1261 1267	pellet
+E42	Action:T124 Acts-on:T125
+T125	Reagent 1272 1276	DNAs
+R45	Setting Arg1:E20 Arg2:T122	
+R46	Setting Arg1:E20 Arg2:T123	
+T126	Reagent 1287 1298	DNA pellets
+T127	Concentration 1299 1301	1X
+T128	Amount 1307 1314	1000 µL
+T129	Concentration 1318 1321	70%
+T130	Reagent 1322 1326	EtOH
+T131	Device 1334 1343	microfuge
+T132	Time 1348 1353	5 min
+T133	Temperature 1357 1360	4°C
+R47	Measure Arg1:T130 Arg2:T129	
+R48	Measure Arg1:T130 Arg2:T128	
+R49	Measure Arg1:T126 Arg2:T127	
+R50	Setting Arg1:E21 Arg2:T132	
+R51	Setting Arg1:E21 Arg2:T133	
+T134	Reagent 1376 1380	DNAs
+T135	Modifier 1386 1399	approximately
+T136	Amount 1400 1405	60 µL
+T137	Concentration 1409 1411	1X
+T138	Reagent 1412 1421	TE buffer
+R52	Measure Arg1:T138 Arg2:T137	
+R53	Measure Arg1:T138 Arg2:T136	
+R54	Mod-Link Arg1:T136 Arg2:T135	
+T139	Reagent 1433 1437	DNAs
+T140	Temperature 1441 1444	4°C
+R55	Setting Arg1:E23 Arg2:T140	
+T141	Amount 1450 1455	57 µL
+T142	Reagent 1459 1471	proteinase K
+T143	Amount 1476 1481	29 µL
+T144	Concentration 1485 1488	10%
+T145	Reagent 1489 1500	Na sarcosyl
+R56	Measure Arg1:T145 Arg2:T144	
+R57	Measure Arg1:T145 Arg2:T143	
+R58	Measure Arg1:T142 Arg2:T141	
+T146	Reagent 1518 1525	pellets
+T147	Modifier 1526 1533	briefly
+T148	Time 1535 1544	10-15 min
+T149	Device 1553 1570	vacuum desiccator
+T150	Reagent 1585 1589	EtOH
+R59	Setting Arg1:T147 Arg2:T148	
+R60	Mod-Link Arg1:T146 Arg2:T147	
+T151	Reagent 1600 1612	supernatants
+T152	Reagent 1626 1638	supernatants
+T153	Temperature 1652 1668	room temperature
+T154	Time 1673 1680	60 min.
+R61	Setting Arg1:E30 Arg2:T153	
+R62	Setting Arg1:E30 Arg2:T154	
+T155	Reagent 1694 1701	samples
+T156	Temperature 1705 1712	60-65°C
+T157	Time 1717 1723	60 min
+R63	Setting Arg1:E31 Arg2:T156	
+R64	Setting Arg1:E31 Arg2:T157	
+T158	Method 1732 1741	inversion
+T159	Time 1758 1763	5 min
+T160	Temperature 1767 1770	4°C
+T161	Device 1778 1787	microfuge
+R65	Setting Arg1:E33 Arg2:T159	
+R66	Setting Arg1:E33 Arg2:T160	
+T162	Method 1796 1805	inversion
+T163	Reagent 1822 1832	extraction
+T164	Amount 1838 1844	2.0 mL
+T165	Location 1845 1860	microfuge tubes
+R67	Measure Arg1:T165 Arg2:T164	
+T166	Modifier 1866 1870	well
+T167	Temperature 1883 1888	-20°C
+T168	Time 1889 1898	overnight
+R68	Setting Arg1:E37 Arg2:T167	
+R69	Setting Arg1:E37 Arg2:T168	
+R70	Mod-Link Arg1:E36 Arg2:T166	
+T169	Reagent 1912 1924	supernatants
+T170	Device 1991 2000	microfuge
+T171	Time 2005 2011	15 min
+T172	Temperature 2015 2018	4°C
+R71	Setting Arg1:E39 Arg2:T171	
+R72	Setting Arg1:E39 Arg2:T172	
+T173	Reagent 2031 2043	supernatants
+T174	Modifier 2047 2052	clean
+T175	Location 2053 2058	tubes
+R73	Mod-Link Arg1:T175 Arg2:T174	
+T176	Location 2072 2079	pellets
+T177	Reagent 0 15	Chlorovirus DNA
+T178	Method 16 24	Miniprep
+T179	Speed 268 277	3,000 rcf
+R74	Coreference-Link Arg1:T179 Arg2:T53	
+T180	Modifier 357 362	final
+T181	Modifier 450 451	~
+T182	Speed 451 464	27,000 rcfmax
+R75	Mod-Link Arg1:T182 Arg2:T181	
+R76	Coreference-Link Arg1:T182 Arg2:T64	
+T183	Reagent 1933 1936	DNA
+T184	Reagent 1953 1961	solution
+T185	Time 1962 1971	overnight

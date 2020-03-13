@@ -1,0 +1,95 @@
+T1	Action 61 65	Cool
+E1	Action:T1 Acts-on:T14
+T2	Action 104 107	Add
+E2	Action:T2 Acts-on:T16
+T3	Amount 108 113	10 µl
+T4	Action 213 216	Add
+E3	Action:T4 Acts-on:T12
+T5	Amount 217 222	10 µl
+T6	Action 288 291	Add
+E4	Action:T6 Acts-on:T11
+T7	Action 368 372	Pour
+E5	Action:T7 Acts-on:T18
+T8	Action 460 466	Spread
+E6	Action:T8 Acts-on:T10
+T9	Modifier 467 478	transformed
+T10	Reagent 479 494	competent cells
+T11	Reagent 302 312	antibiotic
+T12	Reagent 223 227	IPTG
+T13	Modifier 66 76	autoclaved
+T14	Reagent 77 94	growth media agar
+T15	Temperature 98 102	50°C
+R1	Mod-Link Arg1:T14 Arg2:T13	
+R2	Setting Arg1:E1 Arg2:T15	
+T16	Reagent 114 128	X-Gal Solution
+R3	Measure Arg1:T16 Arg2:T3	
+T17	Modifier 292 301	screening
+R4	Mod-Link Arg1:T11 Arg2:T17	
+T18	Location 373 379	plates
+R5	Mod-Link Arg1:T10 Arg2:T9	
+R6	Measure Arg1:T12 Arg2:T5	
+T19	Action 0 20	Blue/White Screening
+E7	Action:T19 Acts-on:T20
+T20	Location 24 60	Bacterial Colonies X-Gal/IPTG Plates
+T21	Concentration 130 138	20 mg/ml
+T22	Amount 144 148	1 mL
+T23	Reagent 152 157	Media
+T24	Amount 161 165	2 µl
+T25	Reagent 166 180	X-Gal Solution
+T26	Concentration 182 191	100 mg/ml
+T27	Amount 197 201	1 mL
+T28	Reagent 205 210	Media
+T29	Concentration 229 234	100mM
+T30	Amount 240 244	1 mL
+T31	Reagent 248 253	Media
+T32	Modifier 260 265	final
+T33	Measure-Type 266 279	concentration
+T34	Concentration 283 286	1mM
+T35	Reagent 324 334	Ampicillin
+T36	Reagent 336 345	Kanamycin
+T37	Reagent 347 360	Carbenicillin
+T38	Temperature 401 417	room temperature
+T39	Modifier 427 435	at least
+T40	Time 436 446	30 minutes
+T41	Location 513 540	Blue/White Selection plates
+T42	Modifier 555 561	stable
+T43	Time 571 577	1 week
+T44	Action 581 587	stored
+E8	Action:T44 Acts-on:T41 Site:T47
+T45	Temperature 591 594	4°C
+T46	Modifier 598 603	clear
+T47	Location 604 611	sleeves
+T48	Action 624 630	stored
+E9	Action:T48 Site:T50
+T49	Modifier 649 653	dark
+T50	Location 654 660	sleeve
+T51	Temperature 665 668	4°C
+T52	Modifier 673 678	up to
+T53	Time 679 686	1 month
+R7	Measure Arg1:T16 Arg2:T21	
+R8	Measure Arg1:T23 Arg2:T22	
+R9	Measure Arg1:T25 Arg2:T24	
+R10	Measure Arg1:T25 Arg2:T26	
+R11	Measure Arg1:T28 Arg2:T27	
+R12	Or Arg1:T16 Arg2:T25	
+R13	Measure Arg1:T12 Arg2:T29	
+R14	Measure Arg1:T31 Arg2:T30	
+R15	Measure Arg1:T12 Arg2:T34	
+R16	Coreference-Link Arg1:T35 Arg2:T11	
+R17	Coreference-Link Arg1:T36 Arg2:T11	
+R18	Coreference-Link Arg1:T37 Arg2:T11	
+R19	Or Arg1:T35 Arg2:T36	
+R20	Or Arg1:T36 Arg2:T37	
+T54	Action 393 397	cool
+E10	Action:T54 Acts-on:T18
+R21	Setting Arg1:E10 Arg2:T38	
+R22	Mod-Link Arg1:T40 Arg2:T39	
+R23	Setting Arg1:E10 Arg2:T40	
+R24	Mod-Link Arg1:T41 Arg2:T42	
+R25	Setting Arg1:E8 Arg2:T45	
+R26	Mod-Link Arg1:T47 Arg2:T46	
+R27	Mod-Link Arg1:T50 Arg2:T49	
+R28	Setting Arg1:E9 Arg2:T51	
+R29	Setting Arg1:E8 Arg2:T43	
+R30	Mod-Link Arg1:T53 Arg2:T52	
+R31	Setting Arg1:E9 Arg2:T53	

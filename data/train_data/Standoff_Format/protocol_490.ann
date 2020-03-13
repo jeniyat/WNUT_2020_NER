@@ -1,0 +1,216 @@
+T1	Action 96 99	Add
+E1	Action:T1 Acts-on:T35 Site:T36
+T2	Action 158 168	centrifuge
+E2	Action:T2 
+T3	Action 197 202	Drain
+T4	Action 321 324	add
+E4	Action:T4 Acts-on:T45 Site:T46
+T5	Action 494 497	Add
+E5	Action:T5 Acts-on:T50 Site:T51
+T6	Action 533 536	mix
+E6	Action:T6 
+T7	Action 603 606	Add
+E7	Action:T7 Acts-on:T55 Site:T56
+T8	Action 587 590	sit
+E8	Action:T8 
+T9	Action 666 669	Add
+E9	Action:T9 Acts-on:T58 Site:T59
+T10	Action 711 714	mix
+E10	Action:T10 
+T11	Action 725 734	inverting
+E11	Action:T11 Acts-on:T61 Count:T62
+T12	Action 763 767	keep
+E12	Action:T12 
+T13	Action 852 858	vortex
+E13	Action:T13 
+T14	Action 860 863	Add
+E14	Action:T14 Acts-on:T66
+T15	Action 891 894	mix
+E15	Action:T15 
+T16	Action 903 911	Incubate
+E16	Action:T16 
+T20	Action 1150 1160	Centrifuge
+E20	Action:T20 
+T21	Action 1190 1198	Transfer
+E21	Action:T21 Acts-on:T70 Site:T71
+T22	Action 1251 1261	Centrifuge
+E22	Action:T22 
+T23	Action 1292 1299	Discard
+E23	Action:T23 Acts-on:T74 Site:T75
+T24	Action 1330 1333	Add
+E24	Action:T24 Acts-on:T77 Site:T78
+T25	Action 1376 1386	centrifuge
+E25	Action:T25 
+T26	Action 1450 1457	Discard
+E26	Action:T26 Acts-on:T81 Site:T82
+T27	Action 1499 1509	Centrifuge
+E27	Action:T27 
+T28	Action 1551 1557	remove
+E28	Action:T28 Acts-on:T88
+T29	Action 1587 1595	Transfer
+E29	Action:T29 Acts-on:T89 Site:T92
+T30	Action 1651 1654	Add
+E30	Action:T30 Acts-on:T94 Site:T95
+T31	Action 1717 1725	incubate
+E31	Action:T31 
+T32	Action 1761 1766	Store
+E32	Action:T32 Acts-on:T100
+T33	Action 1789 1799	Centrifuge
+E33	Action:T33 
+T34	Amount 100 106	1.5 mL
+T35	Reagent 110 127	overnight culture
+T36	Location 133 153	microcentrifuge tube
+T37	Speed 172 181	12,000rpm
+T38	Time 186 195	2 minutes
+R1	Setting Arg1:E2 Arg2:T37	
+R2	Setting Arg1:E2 Arg2:T38	
+R3	Measure Arg1:T35 Arg2:T34	
+T39	Modifier 207 216	clarified
+T41	Modifier 229 239	completely
+T42	Reagent 257 268	cell pellet
+T43	Modifier 327 334	further
+T44	Amount 335 341	1.5 mL
+T45	Reagent 345 362	overnight culture
+T46	Location 370 390	microcentrifuge tube
+T47	Modifier 406 414	previous
+T48	Reagent 415 421	pellet
+R6	Mod-Link Arg1:T48 Arg2:T47	
+R7	Measure Arg1:T45 Arg2:T44	
+R8	Mod-Link Arg1:T45 Arg2:T43	
+R9	Meronym Arg1:T48 Arg2:T46	
+T49	Amount 498 503	100uL
+T50	Reagent 507 517	Solution 1
+T51	Reagent 525 531	pellet
+T52	Modifier 537 541	well
+T53	Time 595 601	1 min.
+R10	Setting Arg1:E8 Arg2:T53	
+R11	Mod-Link Arg1:E6 Arg2:T52	
+R12	Measure Arg1:T50 Arg2:T49	
+T54	Amount 607 610	1μL
+T55	Reagent 614 624	VisualLyse
+T56	Reagent 632 640	solution
+R13	Measure Arg1:T55 Arg2:T54	
+T57	Amount 670 675	200µl
+T58	Reagent 679 690	Solution II
+T59	Reagent 698 705	mixture
+T60	Modifier 715 721	gently
+T61	Location 739 743	tube
+T62	Numerical 744 747	4-6
+T63	Temperature 771 787	room temperature
+T64	Time 792 800	1 minute
+R14	Setting Arg1:E12 Arg2:T63	
+R15	Setting Arg1:E12 Arg2:T64	
+R16	Mod-Link Arg1:E10 Arg2:T60	
+R17	Measure Arg1:T58 Arg2:T57	
+T65	Amount 864 869	350µl
+T66	Reagent 873 885	Solution III
+T67	Modifier 895 901	gently
+R18	Mod-Link Arg1:E15 Arg2:T67	
+R19	Measure Arg1:T66 Arg2:T65	
+T68	Temperature 915 931	room temperature
+T69	Time 936 944	1 minute
+R20	Setting Arg1:E16 Arg2:T68	
+R21	Setting Arg1:E16 Arg2:T69	
+T17	Speed 1164 1173	12,000rpm
+T18	Time 1178 1187	5 minutes
+R22	Setting Arg1:E20 Arg2:T17	
+R23	Setting Arg1:E20 Arg2:T18	
+T19	Modifier 1203 1208	above
+T70	Reagent 1209 1220	supernatant
+T71	Location 1237 1249	EZ-10 column
+R24	Mod-Link Arg1:T70 Arg2:T19	
+T72	Speed 1265 1274	10,000rpm
+T73	Time 1279 1288	2 minutes
+R25	Setting Arg1:E22 Arg2:T72	
+R26	Setting Arg1:E22 Arg2:T73	
+T74	Reagent 1304 1316	flow-through
+T75	Location 1324 1328	tube
+T76	Amount 1334 1339	750µl
+T77	Reagent 1343 1356	Wash Solution
+T78	Location 1364 1370	column
+T79	Speed 1390 1399	10,000rpm
+T80	Time 1404 1413	2 minutes
+R27	Setting Arg1:E25 Arg2:T79	
+R28	Setting Arg1:E25 Arg2:T80	
+R29	Measure Arg1:T77 Arg2:T76	
+T81	Reagent 1462 1474	flow-through
+T82	Location 1482 1497	collection tube
+T83	Speed 1513 1522	10,000rpm
+T84	Modifier 1530 1540	additional
+T85	Time 1541 1547	minute
+R30	Mod-Link Arg1:T85 Arg2:T84	
+T87	Modifier 1562 1570	residual
+T88	Reagent 1571 1584	Wash Solution
+R31	Mod-Link Arg1:T88 Arg2:T87	
+R33	Setting Arg1:E27 Arg2:T83	
+R34	Setting Arg1:E27 Arg2:T85	
+T89	Location 1600 1606	column
+T90	Modifier 1612 1617	clean
+T91	Amount 1618 1623	1.5ml
+T92	Location 1624 1638	microfuge tube
+R35	Measure Arg1:T92 Arg2:T91	
+R36	Mod-Link Arg1:T92 Arg2:T90	
+T93	Amount 1655 1659	50µl
+T94	Reagent 1663 1677	Elution Buffer
+T95	Location 1687 1698	center part
+T96	Location 1706 1712	column
+T97	Temperature 1729 1745	room temperature
+T98	Time 1750 1759	2 minutes
+R37	Setting Arg1:E31 Arg2:T97	
+R38	Setting Arg1:E31 Arg2:T98	
+R39	Measure Arg1:T94 Arg2:T93	
+R40	Meronym Arg1:T95 Arg2:T96	
+T99	Modifier 1767 1775	purified
+T100	Reagent 1776 1779	DNA
+T101	Temperature 1783 1788	-20ºC
+T102	Speed 1803 1813	10,000 rpm
+T103	Time 1818 1827	2 minutes
+R41	Setting Arg1:E33 Arg2:T102	
+R42	Setting Arg1:E33 Arg2:T103	
+R43	Mod-Link Arg1:T100 Arg2:T99	
+R44	Setting Arg1:E32 Arg2:T101	
+T104	Method 0 29	Plasmid DNA miniprep protocol
+T105	Device 34 77	EZ-10 Spin Column Plasmid DNA minipreps kit
+T40	Numerical 87 89	50
+T106	Method 90 95	preps
+T107	Reagent 217 229	supernatant 
+R4	Mod-Link Arg1:T107 Arg2:T39	
+R5	Mod-Link Arg1:T3 Arg2:T41	
+T108	Method 309 320	replication
+T109	Reagent 301 308	plasmid
+T110	Action 426 432	repeat
+E3	Action:T110 
+T111	Modifier 441 451	maximum of
+T112	Amount 452 456	5 mL
+T113	Time 460 469	overnight
+T114	Reagent 470 477	culture
+R45	Mod-Link Arg1:T112 Arg2:T111	
+R46	Measure Arg1:T114 Arg2:T112	
+T115	Action 543 551	ensuring
+E17	Action:T115 Acts-on:T116
+T116	Reagent 560 566	clumps
+T117	Action 805 812	prevent
+E18	Action:T117 Using:T118
+T118	Method 813 826	contamination
+T119	Reagent 832 843	genomic DNA
+T120	Modifier 948 960	fluffy white
+T121	Reagent 961 969	material
+T122	Reagent 980 986	lysate
+T123	Modifier 1006 1013	viscous
+R47	Mod-Link Arg1:T121 Arg2:T120	
+R48	Mod-Link Arg1:T122 Arg2:T123	
+T124	Reagent 1018 1028	VisualLyse
+T125	Action 1038 1043	added
+E19	Action:T125 Acts-on:T124
+T126	Reagent 1059 1069	suspension
+T127	Action 1080 1085	mixed
+E34	Action:T127 Acts-on:T126
+T128	Modifier 1106 1110	blue
+T129	Reagent 1124 1130	lysate
+T130	Modifier 1139 1148	colorless
+T131	Action 1416 1422	Repeat
+E35	Action:T131 Commands:E36
+T132	Action 1423 1427	wash
+E36	Action:T132 
+R49	Mod-Link Arg1:T126 Arg2:T128	
+R50	Mod-Link Arg1:T129 Arg2:T130	
