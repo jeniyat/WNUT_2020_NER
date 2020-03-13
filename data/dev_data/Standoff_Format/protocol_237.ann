@@ -8,11 +8,11 @@ T5	Action 95 102	collect
 E3	Action:T5 Product:T6
 T6	Reagent 107 117	cell pelle
 T7	Action 120 124	Lyse
-E4	Action:T7 Acts-on:T8 Using:T10
+E4	Action:T7 Acts-on:T8 Using:T10 Site:T11
 T8	Reagent 129 140	cell pellet
 T9	Amount 146 152	100 µl
 T10	Reagent 156 168	lysis buffer
-T11	Temperature 169 175	on ice
+T11	Location 172 175	ice
 T12	Time 180 186	30 min
 T13	Action 207 211	lyse
 E5	Action:T13 Using:T15
@@ -20,13 +20,12 @@ T14	Amount 217 223	100 µl
 T15	Reagent 226 238	lysis buffer
 R1	Measure Arg1:T15 Arg2:T14	
 R2	Measure Arg1:T10 Arg2:T9	
-R3	Setting Arg1:E4 Arg2:T11	
 R4	Setting Arg1:E4 Arg2:T12	
 T16	Action 241 251	Centrifuge
 E6	Action:T16 
 T17	Speed 255 265	14,000 rpm
 T18	Speed 267 277	16,000 x g
-R5	Or Arg1:T17 Arg2:T18	
+R5	Coreference-Link Arg1:T17 Arg2:T18	
 T19	Time 283 293	10 minutes
 T20	Temperature 297 300	4°C
 R6	Setting Arg1:E6 Arg2:T17	
@@ -35,7 +34,7 @@ R8	Setting Arg1:E6 Arg2:T20
 T21	Action 302 310	Transfer
 E7	Action:T21 Acts-on:T22 Site:T23
 T22	Reagent 315 326	supernatant
-T23	Location 332 340	new tube
+T23	Location 336 340	tube
 T24	Action 345 352	discard
 E8	Action:T24 Acts-on:T25
 T25	Reagent 357 363	pellet
@@ -65,12 +64,12 @@ T38	Action 489 504	Microcentrifuge
 E13	Action:T38 
 T39	Time 509 518	5 minutes
 R15	Setting Arg1:E13 Arg2:T39	
-T40	Amount 525 536	up to 40 µl
+T40	Amount 531 536	40 µl
 T41	Action 520 524	Load
 E14	Action:T41 Acts-on:T42 Site:T43
 T42	Reagent 540 546	sample
-T43	Reagent 555 559	well
-T44	Size 565 577	1.5 mm thick
+T43	Location 555 559	well
+T44	Size 565 571	1.5 mm
 T45	Reagent 578 581	gel
 R16	Measure Arg1:T45 Arg2:T44	
 T46	Modifier 550 554	each
@@ -79,18 +78,12 @@ R18	Measure Arg1:T42 Arg2:T40
 R19	Meronym Arg1:T45 Arg2:T43	
 T47	Action 583 586	Set
 E15	Action:T47 
-T48	Generic-Measure 587 609	gel running conditions
-T49	Modifier 610 654	according to the manufacturer’s instructions
-R20	Setting Arg1:E15 Arg2:T48	
-R21	Mod-Link Arg1:E15 Arg2:T49	
 T50	Action 656 664	Transfer
 E16	Action:T50 Acts-on:T51 Site:T52
 T51	Reagent 669 677	proteins
 T52	Reagent 681 696	anitrocellulose
 T53	Reagent 700 713	PVDF membrane
 T54	Generic-Measure 719 742	variable power settings
-T55	Modifier 743 787	according to the manufacturer’s instructions
-R22	Mod-Link Arg1:E16 Arg2:T55	
 R23	Or Arg1:T52 Arg2:T53	
 R24	Setting Arg1:E16 Arg2:T54	
 T56	Action 789 795	Remove
@@ -113,19 +106,15 @@ T66	Time 948 954	1 hour
 T67	Temperature 958 974	room temperature
 T68	Time 979 988	overnight
 T69	Temperature 992 995	4°C
-T70	Modifier 996 1010	with agitation
 R28	Setting Arg1:E19 Arg2:T66	
 R29	Or Arg1:T66 Arg2:T68	
 R30	Or Arg1:T67 Arg2:T69	
 R31	Setting Arg1:E19 Arg2:T67	
-R32	Mod-Link Arg1:E19 Arg2:T70	
 T71	Action 1012 1018	Dilute
 E20	Action:T71 Product:T72 Using:T75
 T72	Reagent 1023 1044	Direct-Blot™ antibody
-T73	Concentration 1052 1086	recommended concentration/dilution
-R33	Measure Arg1:T72 Arg2:T73	
 T74	Concentration 1090 1092	5%
-T75	Reagent 1093 1114	nonfat dry milk/TBS-T
+T75	Reagent 1104 1108	milk
 T76	Concentration 1131 1144	1:1000-1:2000
 R34	Measure Arg1:T75 Arg2:T74	
 T77	Action 1156 1161	Place
@@ -159,7 +148,6 @@ T97	Concentration 1428 1432	0.1%
 T98	Reagent 1433 1441	Tween-20
 R44	Measure Arg1:T98 Arg2:T97	
 R46	Meronym Arg1:T96 Arg2:T95	
-R47	Meronym Arg1:T98 Arg2:T95	
 T99	Time 1465 1474	5 minutes
 T100	Reagent 1480 1491	Wash Buffer
 T101	Reagent 1493 1496	TBS
@@ -170,16 +158,16 @@ E26	Action:T104 Acts-on:T105 Using:T108
 T105	Reagent 1544 1552	membrane
 T106	Modifier 1554 1569	protein side up
 T107	Amount 1576 1581	10 ml
-T108	Reagent 1585 1627	ECL (enhanced chemiluminescence substrate)
+T108	Reagent 1585 1588	ECL
 T109	Time 1632 1643	1-2 minutes
 R48	Measure Arg1:T108 Arg2:T107	
 R49	Mod-Link Arg1:T105 Arg2:T106	
 R50	Setting Arg1:E26 Arg2:T109	
 T110	Action 1688 1697	Drain off
 E27	Action:T110 Acts-on:T112
-T111	Amount 1702 1708	excess
+T111	Modifier 1702 1708	excess
 T112	Reagent 1709 1726	detection reagent
-R51	Measure Arg1:T112 Arg2:T111	
+R51	Mod-Link Arg1:T112 Arg2:T111	
 T113	Action 1728 1735	wrap up
 E28	Action:T113 Acts-on:T114
 T114	Reagent 1740 1745	blots
@@ -198,3 +186,45 @@ E31	Action:T122 Using:T123
 T123	Reagent 1868 1878	x-ray film
 T124	Time 1904 1927	5 seconds to 60 minutes
 R53	Mod-Link Arg1:T119 Arg2:T120	
+T86	Method 0 29	Direct-Blot™ Western Blotting
+T92	Amount 192 199	1 X 106
+T93	Reagent 200 205	cells
+R43	Measure Arg1:T93 Arg2:T92	
+T125	Modifier 332 335	new
+R45	Mod-Link Arg1:T23 Arg2:T125	
+T126	Modifier 525 530	up to
+R3	Mod-Link Arg1:T40 Arg2:T126	
+T48	Reagent 587 590	gel
+T49	Method 1001 1010	agitation
+T55	Reagent 1145 1153	dilution
+R20	Measure Arg1:T55 Arg2:T76	
+T70	Reagent 1109 1114	TBS-T
+T127	Modifier 1093 1103	nonfat dry
+R21	Mod-Link Arg1:T75 Arg2:T127	
+T73	Measure-Type 1064 1077	concentration
+T128	Measure-Type 1078 1086	dilution
+T129	Action 1295 1299	Wash
+E23	Action:T129 Using:T88
+R22	Setting Arg1:E23 Arg2:T87	
+T130	Action 1365 1369	wash
+E24	Action:T130 
+T131	Action 1445 1449	wash
+E25	Action:T131 
+T132	Action 1375 1379	Wash
+E32	Action:T132 Using:T95
+T133	Action 1455 1459	Wash
+E33	Action:T133 Using:T100
+R32	Setting Arg1:E32 Arg2:T94	
+R33	Setting Arg1:E33 Arg2:T99	
+R54	Meronym Arg1:T101 Arg2:T100	
+R56	Measure Arg1:T103 Arg2:T102	
+R47	Meronym Arg1:T98 Arg2:T96	
+R55	Meronym Arg1:T103 Arg2:T101	
+T134	Reagent 1590 1626	enhanced chemiluminescence substrate
+R57	Coreference-Link Arg1:T134 Arg2:T108	
+T135	Action 1525 1529	wash
+E34	Action:T135 
+T136	Modifier 1649 1654	final
+T137	Measure-Type 1655 1661	volume
+T138	Amount 1674 1686	0.125 ml/cm2
+T139	Method 1880 1889	Exposures

@@ -10,11 +10,11 @@ E11	Action:T11 Acts-on:T109 Site:T113
 T12	Action 872 875	Add
 E12	Action:T12 Acts-on:T116 Product:T117
 T13	Action 955 958	Mix
-E13	Action:T13 Using:T120
+E13	Action:T13 Commands:E75
 T14	Action 978 984	Invert
 E14	Action:T14 Acts-on:T121
 T15	Action 1075 1083	Transfer
-E15	Action:T15 Acts-on:T131 Site:T132
+E15	Action:T15 Acts-on:T131 Site:T132 Using:T384
 T16	Action 1183 1193	Centrifuge
 E16	Action:T16 
 T17	Action 1244 1251	Discard
@@ -31,8 +31,6 @@ T22	Action 1595 1602	Discard
 E22	Action:T22 Acts-on:T149 Site:T150
 T23	Action 1645 1651	Insert
 E23	Action:T23 Acts-on:T151 Site:T153
-T24	Action 1781 1789	addition
-E24	Action:T24 Acts-on:T159
 T25	Action 1815 1818	Add
 E25	Action:T25 Acts-on:T155 Site:T157
 T26	Action 1877 1887	Centrifuge
@@ -100,8 +98,6 @@ T63	Action 4489 4495	freeze
 E63	Action:T63 
 T65	Action 4705 4713	Incubate
 E65	Action:T65 Acts-on:T255 Acts-on2:T256
-T66	Action 4798 4810	dissociation
-E66	Action:T66 Acts-on:T260 Commands:E65
 T68	Action 4906 4912	Remove
 E68	Action:T68 Acts-on:T265 Commands:E69
 T69	Action 4932 4939	pipette
@@ -120,7 +116,7 @@ E76	Action:T76 Acts-on:T75 Using:T299
 T77	Action 5726 5733	Prepare
 E77	Action:T77 Product:T306
 T78	Action 5770 5782	Reconstitute
-E78	Action:T78 Acts-on:T307 Using:E79
+E78	Action:T78 Acts-on:T307
 T79	Action 5829 5839	dissolving
 E79	Action:T79 Acts-on:T309 Site:T312
 T80	Action 5925 5930	store
@@ -145,8 +141,6 @@ T95	Action 7782 7789	Discard
 E95	Action:T95 Acts-on:T349 Acts-on2:T350
 T96	Action 7832 7838	Insert
 E96	Action:T96 Acts-on:T351 Site:T353
-T97	Action 7966 7974	addition
-E97	Action:T97 Acts-on:T355
 T29	Action 215 220	shake
 E29	Action:T29 Acts-on:T104 Using:T106
 T43	Amount 32 38	200 μL
@@ -164,7 +158,7 @@ T5	Reagent 516 522	sample
 T6	Speed 526 536	12,000 x g
 T7	Time 541 551	15 minutes
 T108	Temperature 555 558	4°C
-T9	Amount 787 794	~600 μL
+T9	Amount 788 794	600 μL
 T10	Modifier 802 811	colorless
 T109	Reagent 813 824	upper phase
 T110	Reagent 840 843	RNA
@@ -177,7 +171,6 @@ T116	Reagent 899 906	ethanol
 T117	Reagent 925 932	ethanol
 T118	Concentration 950 953	35%
 T119	Modifier 959 963	well
-T120	Method 967 976	vortexing
 T121	Location 989 993	tube
 T122	Action 997 1005	disperse
 E5	Action:T122 Acts-on:T125 Commands:E14
@@ -330,7 +323,6 @@ T258	Time 4770 4779	5 minutes
 T259	Modifier 4789 4797	complete
 T260	Reagent 4814 4837	nucleoprotein complexes
 T261	Reagent 4839 4845	Sample
-T262	Action 4849 4855	stable
 T264	Temperature 4869 4885	room temperature
 T265	Reagent 4917 4923	Lysate
 T266	Reagent 4940 4950	TRIZOL mix
@@ -361,7 +353,6 @@ T290	Amount 5301 5306	100uL
 T291	Reagent 5307 5320	tissue slurry
 T293	Reagent 5328 5345	chunk of skeleton
 T294	Reagent 5347 5357	Chloroform
-T295	Generic-Measure 5364 5377	200 uL/sample
 T296	Concentration 5399 5406	96–100%
 T297	Reagent 5407 5414	ethanol
 T298	Amount 5421 5425	60ml
@@ -375,7 +366,6 @@ R6	Measure Arg1:T287 Arg2:T289
 T304	Modifier 5297 5300	per
 R7	Mod-Link Arg1:T291 Arg2:T304	
 R9	Or Arg1:T291 Arg2:T293	
-R10	Measure Arg1:T294 Arg2:T295	
 R11	Measure Arg1:T297 Arg2:T296	
 R12	Measure Arg1:T297 Arg2:T298	
 R13	Measure Arg1:T302 Arg2:T301	
@@ -507,8 +497,6 @@ R98	Meronym Arg1:T250 Arg2:T245
 R99	Setting Arg1:E63 Arg2:T251	
 R100	Setting Arg1:E65 Arg2:T257	
 R101	Setting Arg1:E65 Arg2:T258	
-R102	Mod-Link Arg1:E66 Arg2:T259	
-T64	Method 4892 4904	bead beating
 T67	Method 4972 4986	ORTom's method
 R104	Or Arg1:E69 Arg2:T67	
 R105	Meronym Arg1:T271 Arg2:T269	
@@ -556,3 +544,311 @@ R127	Mod-Link Arg1:T353 Arg2:T352
 R128	Measure Arg1:T355 Arg2:T354	
 T356	Reagent 39 50	chloroform 
 R129	Measure Arg1:T356 Arg2:T43	
+T83	Reagent 0 16	Coral TRIZOL RNA
+T86	Method 17 27	Extraction
+T242	Reagent 171 176	DNAse
+T263	Action 205 214	vortexing
+E1	Action:T263 
+T278	Action 265 274	Vortexing
+E52	Action:T278 
+T292	Action 279 287	increase
+E59	Action:T292 
+T308	Reagent 288 291	DNA
+T357	Method 292 305	contamination
+T358	Reagent 314 324	RNA sample
+T359	Action 332 341	vortexing
+E64	Action:T359 
+T360	Reagent 405 408	DNA
+T361	Action 412 419	perform
+E67	Action:T361 Using:T365
+T363	Reagent 450 453	RNA
+T364	Method 454 466	purification
+T362	Reagent 422 427	DNase
+T365	Method 428 437	digestion
+T366	Method 487 499	purification
+T367	Method 572 586	centrifugation
+T368	Reagent 592 599	mixture
+T369	Reagent 628 651	phenol–chloroform phase
+T371	Reagent 656 666	interphase
+T372	Modifier 674 689	colorless upper
+T370	Modifier 617 627	lower, red
+T373	Reagent 690 703	aqueous phase
+T374	Reagent 723 726	RNA
+R8	Mod-Link Arg1:T369 Arg2:T370	
+R18	Mod-Link Arg1:T373 Arg2:T372	
+R23	Meronym Arg1:T374 Arg2:T373	
+R25	Meronym Arg1:T369 Arg2:T368	
+R103	Meronym Arg1:T371 Arg2:T368	
+R108	Meronym Arg1:T373 Arg2:T368	
+T375	Measure-Type 732 738	volume
+T376	Reagent 746 765	aqueous upper phase
+T377	Modifier 769 770	~
+T378	Amount 770 776	600 μL
+R109	Mod-Link Arg1:T378 Arg2:T377	
+T379	Modifier 787 788	~
+R130	Mod-Link Arg1:T9 Arg2:T379	
+T380	Measure-Type 933 946	concentration
+T381	Action 910 916	obtain
+E72	Action:T381 Measure-Type-Link:T380
+T120	Action 967 976	vortexing
+E75	Action:T120 
+T382	Action 1066 1073	BINDING
+E83	Action:T382 
+T383	Modifier 1084 1089	up to
+R131	Mod-Link Arg1:T130 Arg2:T383	
+T384	Location 1165 1180	Collection Tube
+T385	Reagent 1408 1414	sample
+T386	Action 1419 1433	passed through
+E84	Action:T386 Acts-on:T385 Site:T387
+T387	Location 1438 1449	spin column
+T388	Reagent 1454 1457	RNA
+T389	Action 1458 1463	bound
+E85	Action:T389 Acts-on:T388
+T390	Location 1471 1482	silica frit
+T391	Method 1708 1723	DNAse treatment
+T392	Numerical 2494 2495	3
+T393	Method 2496 2515	sequential elutions
+T394	Amount 2521 2527	100 μL
+T395	Location 2769 2782	recovery tube
+T396	Modifier 2796 2804	purified
+T397	Reagent 2805 2814	total RNA
+R132	Mod-Link Arg1:T397 Arg2:T396	
+R133	Meronym Arg1:T397 Arg2:T395	
+T398	Action 2947 2957	performing
+E88	Action:T398 Using:T401
+T399	Modifier 2878 2887	long-term
+T400	Method 2888 2895	storage
+T401	Method 2958 2977	sequential elutions
+T402	Action 3019 3029	Pre-Select
+E90	Action:T402 Acts-on:T403
+T403	Reagent 3030 3037	Nubbins
+T404	Reagent 3042 3045	RNA
+T405	Method 3046 3054	analysis
+T406	Reagent 3290 3305	working samples
+T407	Mention 3270 3275	These
+R134	Coreference-Link Arg1:T407 Arg2:T406	
+T408	Measure-Type 3342 3355	sample number
+T409	Action 3335 3341	Noting
+E100	Action:T409 Measure-Type-Link:T408
+T410	Action 3360 3369	recording
+E101	Action:T410 Measure-Type-Link:T412
+T411	Location 3370 3373	bag
+T412	Measure-Type 3374 3379	label
+T413	Action 3381 3387	select
+E102	Action:T413 Acts-on:T416 Site:T417
+T414	Numerical 3388 3391	one
+T415	Modifier 3392 3403	whirlpacked
+T416	Reagent 3404 3410	sample
+T417	Device 3420 3426	cooler
+T418	Action 3428 3435	Unwhirl
+E103	Action:T418 Acts-on:T419
+T419	Mention 3436 3438	it
+T420	Action 3453 3457	warm
+E104	Action:T420 Acts-on:T421 Using:T422
+T421	Location 3458 3465	plastic
+T422	Device 3476 3480	hand
+T423	Action 3484 3487	cut
+E105	Action:T423 Acts-on:T424
+T424	Location 3492 3501	whirlpack
+R135	Mod-Link Arg1:T416 Arg2:T415	
+R136	Measure Arg1:T416 Arg2:T414	
+R137	Or Arg1:E104 Arg2:E105	
+T425	Reagent 4196 4202	sample
+T426	Measure-Type 4203 4209	volume
+T427	Amount 4228 4231	10%
+T428	Measure-Type 4239 4245	volume
+T429	Reagent 4249 4264	TRIzol® Reagent
+T430	Method 4274 4288	homogenization
+T431	Reagent 4327 4333	tissue
+T432	Reagent 4345 4351	sample
+T433	Reagent 4363 4369	nubbin
+T434	Action 4373 4380	covered
+E106	Action:T434 Acts-on:T433
+T435	Reagent 4384 4390	Trizol
+R138	Measure Arg1:T425 Arg2:T427	
+T436	Method 4549 4572	RNA Extraction Fragment
+T66	Method 4798 4810	dissociation
+T437	Action 4578 4582	Lyse
+E66	Action:T437 Acts-on:T438
+T438	Reagent 4587 4593	Tissue
+T439	Modifier 4595 4606	Immediately
+T440	Action 4607 4616	Bead beat
+E107	Action:T440 Using:T442
+T441	Time 4621 4625	45s 
+T442	Device 4630 4638	FastPrep
+T443	Speed 4642 4651	max speed
+T444	Device 4659 4667	FastPrep
+T445	Action 4673 4677	cool
+E108	Action:T445 
+T446	Time 4678 4690	5-10 minutes
+R102	Mod-Link Arg1:E107 Arg2:T439	
+R139	Setting Arg1:E107 Arg2:T441	
+R140	Setting Arg1:T442 Arg2:T443	
+T262	Reagent 4859 4866	TRIzol 
+R141	Meronym Arg1:T261 Arg2:T262	
+T64	Action 4892 4904	bead beating
+E109	Action:T64 Acts-on:T261
+R142	Setting Arg1:E109 Arg2:T264	
+T447	Amount 5109 5112	5ml
+T448	Location 5103 5108	tube 
+R143	Mod-Link Arg1:T448 Arg2:T277	
+R144	Mod-Link Arg1:T448 Arg2:T276	
+T449	Location 5113 5123	spin tubes
+R145	Coreference-Link Arg1:T449 Arg2:T447	
+T450	Device 5280 5283	Kit
+R146	Meronym Arg1:T287 Arg2:T450	
+T451	Amount 5386 5389	1ml
+T452	Reagent 5390 5396	TRIZOL
+R148	Measure Arg1:T452 Arg2:T451	
+T453	Action 5429 5436	make up
+E110	Action:T453 Product:T454
+T454	Reagent 5437 5451	Wash Buffer II
+T455	Numerical 5456 5458	50
+T456	Reagent 5459 5466	samples
+T457	Method 5485 5490	lysis
+R149	Measure Arg1:T456 Arg2:T455	
+T458	Location 5547 5550	box
+T459	Reagent 5558 5572	Wash Buffer II
+T460	Reagent 5596 5603	ethanol
+T461	Action 5537 5542	Check
+E111	Action:T461 Acts-on:T458
+T462	Action 5608 5613	added
+E112	Action:T462 Acts-on:T460
+T463	Concentration 5670 5673	70%
+T464	Reagent 5674 5681	ethanol
+T465	Modifier 5686 5696	RNase-free
+T466	Reagent 5697 5702	water
+T467	Amount 5710 5716	600 uL
+T468	Reagent 5717 5723	sample
+T469	Amount 5364 5370	200 uL
+T295	Reagent 5371 5377	sample
+R10	Measure Arg1:T295 Arg2:T469	
+R147	Or Arg1:T451 Arg2:T469	
+R150	Measure Arg1:T464 Arg2:T463	
+R151	Mod-Link Arg1:T466 Arg2:T465	
+R152	Measure Arg1:T468 Arg2:T467	
+T470	Modifier 5905 5915	short-term
+T471	Method 5916 5923	storage
+T472	Amount 6332 6336	80uL
+T473	Reagent 6337 6343	sample
+R153	Measure Arg1:T473 Arg2:T472	
+T474	Concentration 6283 6288	3U/uL
+T475	Modifier 5977 5986	long-term
+T476	Method 5987 5994	storage
+T477	Action 6062 6077	repeat freezing
+E113	Action:T477 
+T478	Action 6082 6089	thawing
+E114	Action:T478 
+T479	Modifier 6091 6098	Thawed 
+R154	Mod-Link Arg1:T84 Arg2:T479	
+T480	Modifier 6146 6151	up to
+T481	Time 6152 6161	six weeks
+R155	Mod-Link Arg1:T481 Arg2:T480	
+T482	Device 6345 6359	Prep Equipment
+T483	Method 7895 7910	DNAse treatment
+T97	Method 7966 7974	addition
+T484	Action 8012 8023	eliminating
+E97	Action:T484 
+T24	Method 1781 1789	addition
+R156	Setting Arg1:E87 Arg2:T481	
+T485	Action 6163 6170	Pre-Mix
+E24	Action:T485 
+T486	Amount 6171 6175	80uL
+T487	Reagent 6176 6182	sample
+T488	Method 6183 6198	DNAse Treatment
+T489	Method 6206 6217	Extractions
+R157	Setting Arg1:E24 Arg2:T486	
+R158	Measure Arg1:T487 Arg2:T486	
+T490	Device 6370 6385	Microcentrifuge
+T491	Action 6397 6409	centrifuging
+E115	Action:T491 Using:T490
+T492	Speed 6413 6422	12,000 ×g
+T493	Temperature 6426 6431	4degC
+T494	Location 6433 6451	Bead Beating Tubes
+R159	Setting Arg1:E115 Arg2:T492	
+R160	Setting Arg1:E115 Arg2:T493	
+T495	Method 6456 6471	RNA Extractions
+T496	Location 6507 6525	Bead Beating Tubes
+T497	Method 6530 6545	RNA Extractions
+T498	Location 6581 6601	DNA Extraction Tubes
+T499	Reagent 6607 6613	buffer
+T500	Amount 6635 6641	1.5 mL
+T501	Modifier 6642 6652	RNase-free
+T502	Location 6653 6674	microcentrifuge tubes
+T503	Modifier 6676 6686	RNase-free
+T504	Location 6687 6699	pipette tips
+T505	Numerical 6701 6704	Two
+T506	Modifier 6705 6709	full
+T507	Location 6710 6720	ln2 dewars
+T508	Device 6722 6728	Cooler
+T509	Reagent 6732 6739	Dry Ice
+T510	Device 6739 6747	Scissors
+T511	Numerical 6749 6752	Two
+T512	Modifier 6753 6762	Styrofoam
+T513	Device 6763 6770	coolers
+T514	Seal 6776 6780	lids
+T515	Action 6787 6794	working
+E116	Action:T515 Acts-on:T516
+T516	Reagent 6800 6807	nubbins
+T517	Reagent 6815 6818	LN2
+T518	Reagent 6835 6841	nubbin
+T519	Measure-Type 6842 6846	code
+T520	Measure-Type 6848 6856	datetime
+T521	Location 6858 6861	bag
+T522	Measure-Type 6862 6867	label
+T523	Measure-Type 6869 6891	3 caliper measurements
+T524	Reagent 6893 6899	slurry
+T525	Measure-Type 6900 6906	volume
+T526	Device 6908 6917	Tin snips
+T527	Device 6921 6932	other snips
+T528	Reagent 6934 6939	Flame
+T529	Location 6944 6979	rough ethanol Calipers Storage cups
+T530	Device 6991 6997	cooler
+T531	Seal 6999 7003	Foil
+T532	Device 7023 7036	Freezer boxes
+T533	Reagent 7041 7044	DNA
+T534	Location 7049 7058	DNA tubes
+T535	Device 7060 7066	Needle
+T536	Action 7071 7088	flame sterilizing
+E117	Action:T536 Using:T535
+T537	Device 7090 7109	heavy gauge syringe
+T538	Device 7110 7133	Agilent Bioanalyzer RNA
+T539	Device 7138 7151	DNA 1000 Kits
+T540	Device 7151 7156	QuBit
+T541	Device 7161 7186	Qubit RNA Broad Range Kit
+T542	Location 7192 7197	tubes
+T543	Device 7200 7221	Microplate centrifuge
+T544	Device 7222 7239	Magnetic stand-96
+T545	Reagent 7245 7250	beads
+T546	Modifier 7254 7259	spare
+T547	Device 7259 7287	High-Speed Microplate Shaker
+T548	Location 7313 7319	plates
+T549	Numerical 7330 7331	2
+T550	Location 7332 7350	MIDI plate inserts
+T551	Device 7355 7370	heating systems
+T552	Device 7395 7406	PCR machine
+T553	Device 7418 7449	Illumina TruTemp Heating System
+T554	Device 7453 7489	ScieGene Hybex Microsample Incubator
+T555	Device 7507 7518	PCR Machine
+T556	Device 7522 7531	incubator
+R161	Or Arg1:T553 Arg2:T554	
+R162	Or Arg1:T554 Arg2:T555	
+R163	Or Arg1:T555 Arg2:T556	
+R164	Measure Arg1:T550 Arg2:T549	
+R165	Meronym Arg1:T550 Arg2:T551	
+R166	Or Arg1:T551 Arg2:T552	
+R167	Meronym Arg1:T545 Arg2:T544	
+R168	Mod-Link Arg1:T547 Arg2:T546	
+R169	Meronym Arg1:T542 Arg2:T541	
+R170	Or Arg1:T526 Arg2:T527	
+R171	Or Arg1:T494 Arg2:T496	
+R172	Meronym Arg1:T499 Arg2:T498	
+R173	Measure Arg1:T502 Arg2:T500	
+R174	Mod-Link Arg1:T502 Arg2:T501	
+R175	Mod-Link Arg1:T504 Arg2:T503	
+R176	Mod-Link Arg1:T507 Arg2:T506	
+R177	Measure Arg1:T507 Arg2:T505	
+R178	Meronym Arg1:T509 Arg2:T508	
+R179	Measure Arg1:T513 Arg2:T511	
+R180	Mod-Link Arg1:T513 Arg2:T512	
+R181	Meronym Arg1:T514 Arg2:T513	

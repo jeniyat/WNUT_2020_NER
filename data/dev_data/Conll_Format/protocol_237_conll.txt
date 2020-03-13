@@ -1,6 +1,6 @@
-Direct-Blot™	O
-Western	O
-Blotting	O
+Direct-Blot™	B-Method
+Western	I-Method
+Blotting	I-Method
 Protocol	O
 
 Place	B-Action
@@ -28,17 +28,17 @@ with	O
 of	O
 lysis	B-Reagent
 buffer	I-Reagent
-on	B-Temperature
-ice	I-Temperature
+on	O
+ice	B-Location
 for	O
 30	B-Time
 min	I-Time
 (	O
 For	O
-1	O
-X	O
-106	O
-cells	O
+1	B-Amount
+X	I-Amount
+106	I-Amount
+cells	B-Reagent
 ,	O
 lyse	B-Action
 with	O
@@ -70,8 +70,8 @@ the	O
 supernatant	B-Reagent
 to	O
 a	O
-new	B-Location
-tube	I-Location
+new	B-Modifier
+tube	B-Location
 and	O
 discard	B-Action
 the	O
@@ -116,33 +116,33 @@ minutes	I-Time
 .	O
 
 Load	B-Action
-up	B-Amount
-to	I-Amount
-40	I-Amount
+up	B-Modifier
+to	I-Modifier
+40	B-Amount
 µl	I-Amount
 of	O
 sample	B-Reagent
 to	O
 each	B-Modifier
-well	B-Reagent
+well	B-Location
 of	O
 a	O
 1.5	B-Size
 mm	I-Size
-thick	I-Size
+thick	O
 gel	B-Reagent
 .	O
 
 Set	B-Action
-gel	B-Generic-Measure
-running	I-Generic-Measure
-conditions	I-Generic-Measure
-according	B-Modifier
-to	I-Modifier
-the	I-Modifier
-manufacturer	I-Modifier
-’s	I-Modifier
-instructions	I-Modifier
+gel	B-Reagent
+running	O
+conditions	O
+according	O
+to	O
+the	O
+manufacturer	O
+’s	O
+instructions	O
 .	O
 
 Transfer	B-Action
@@ -157,12 +157,12 @@ with	O
 variable	B-Generic-Measure
 power	I-Generic-Measure
 settings	I-Generic-Measure
-according	B-Modifier
-to	I-Modifier
-the	I-Modifier
-manufacturer	I-Modifier
-’s	I-Modifier
-instructions	I-Modifier
+according	O
+to	O
+the	O
+manufacturer	O
+’s	O
+instructions	O
 .	O
 
 Remove	B-Action
@@ -200,8 +200,8 @@ or	O
 overnight	B-Time
 at	O
 4°C	B-Temperature
-with	B-Modifier
-agitation	I-Modifier
+with	O
+agitation	B-Method
 .	O
 
 Dilute	B-Action
@@ -210,13 +210,13 @@ Direct-Blot™	B-Reagent
 antibody	I-Reagent
 to	O
 the	O
-recommended	B-Concentration
-concentration/dilution	I-Concentration
+recommended	O
+concentration/dilution	B-Measure-Type
 in	O
 5%	B-Concentration
-nonfat	B-Reagent
-dry	I-Reagent
-milk/TBS-T	I-Reagent
+nonfat	B-Modifier
+dry	I-Modifier
+milk/TBS-T	B-Reagent
 **	O
 (	O
 usually	O
@@ -225,7 +225,7 @@ a	O
 1:1000	B-Concentration
 -	I-Concentration
 1:2000	I-Concentration
-dilution	O
+dilution	B-Reagent
 )	O
 .	O
 
@@ -254,7 +254,7 @@ with	B-Modifier
 agitation	I-Modifier
 .	O
 
-Wash	O
+Wash	B-Action
 for	O
 5	O
 minutes	B-Time
@@ -270,10 +270,10 @@ Tween-20	I-Concentration
 .	O
 
 [	O
-wash	O
+wash	B-Action
 1/3	O
 ]	O
-Wash	O
+Wash	B-Action
 for	O
 5	O
 minutes	B-Time
@@ -289,10 +289,10 @@ Tween-20	I-Concentration
 .	O
 
 [	O
-wash	O
+wash	B-Action
 2/3	O
 ]	O
-Wash	O
+Wash	B-Action
 for	O
 5	O
 minutes	B-Time
@@ -308,7 +308,7 @@ Tween-20	I-Concentration
 .	O
 
 [	O
-wash	O
+wash	B-Action
 3/3	O
 ]	O
 Incubate	B-Action
@@ -323,29 +323,29 @@ with	O
 ml	I-Amount
 of	O
 ECL	B-Reagent
-(	I-Reagent
-enhanced	I-Reagent
+(	O
+enhanced	B-Reagent
 chemiluminescence	I-Reagent
 substrate	I-Reagent
-)	I-Reagent
+)	O
 for	O
 1-2	B-Time
 minutes	I-Time
 .	O
 
 The	O
-final	O
-volume	O
+final	B-Modifier
+volume	B-Measure-Type
 required	O
 is	O
-0.125	O
-ml/cm2	O
+0.125	B-Amount
+ml/cm2	I-Amount
 .	O
 
 Drain	B-Action
 off	I-Action
 the	O
-excess	B-Amount
+excess	B-Modifier
 detection	B-Reagent
 reagent	I-Reagent
 ,	O
@@ -384,7 +384,7 @@ x-ray	B-Reagent
 film	I-Reagent
 .	O
 
-Exposures	O
+Exposures	B-Method
 can	O
 vary	O
 from	O

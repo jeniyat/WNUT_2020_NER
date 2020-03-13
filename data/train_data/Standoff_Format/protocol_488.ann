@@ -1,0 +1,109 @@
+T1	Action 61 65	Cool
+E1	Action:T1 Acts-on:T9
+T2	Action 104 107	Add
+E2	Action:T2 Acts-on:T12 Site:T15
+T3	Action 213 216	Add
+E3	Action:T3 Acts-on:T20 Site:T25
+T4	Action 288 291	Add
+E4	Action:T4 Acts-on:T28
+T5	Action 368 372	Pour
+E5	Action:T5 Acts-on:T29
+T7	Action 460 466	Spread
+E7	Action:T7 Acts-on:T36 Using:T37
+T8	Modifier 66 76	autoclaved
+T9	Reagent 77 94	growth media agar
+T10	Temperature 98 102	50°C
+R1	Mod-Link Arg1:T9 Arg2:T8	
+R2	Setting Arg1:E1 Arg2:T10	
+T11	Amount 108 113	10 µl
+T12	Reagent 114 128	X-Gal Solution
+T13	Concentration 130 138	20 mg/ml
+T14	Amount 144 148	1 mL
+T15	Reagent 152 157	Media
+T16	Amount 161 165	2 µl
+T17	Reagent 166 180	X-Gal Solution
+T18	Concentration 182 191	100 mg/ml
+R3	Measure Arg1:T12 Arg2:T11	
+R4	Measure Arg1:T12 Arg2:T13	
+R5	Measure Arg1:T15 Arg2:T14	
+T21	Modifier 140 143	per
+R6	Mod-Link Arg1:T15 Arg2:T21	
+R7	Measure Arg1:T17 Arg2:T16	
+R8	Measure Arg1:T17 Arg2:T18	
+R9	Or Arg1:T12 Arg2:T17	
+T19	Amount 217 222	10 µl
+T20	Reagent 223 227	IPTG
+T22	Concentration 229 234	100mM
+T23	Modifier 236 239	per
+T24	Amount 240 244	1 mL
+T25	Reagent 248 253	Media
+T26	Concentration 283 286	1mM
+R10	Measure Arg1:T20 Arg2:T19	
+R11	Measure Arg1:T20 Arg2:T22	
+R12	Measure Arg1:T25 Arg2:T24	
+R13	Mod-Link Arg1:T25 Arg2:T23	
+R14	Setting Arg1:E3 Arg2:T26	
+T27	Modifier 292 301	screening
+T28	Reagent 302 322	antibiotic of choice
+T30	Reagent 324 334	Ampicillin
+T31	Reagent 336 345	Kanamycin
+T32	Reagent 347 360	Carbenicillin
+R15	Meronym Arg1:T30 Arg2:T28	
+R16	Meronym Arg1:T31 Arg2:T28	
+R17	Meronym Arg1:T32 Arg2:T28	
+R18	Mod-Link Arg1:T28 Arg2:T27	
+T29	Location 373 379	plates
+T6	Action 393 397	cool
+E6	Action:T6 Acts-on:T29
+T33	Temperature 401 417	room temperature
+R19	Setting Arg1:E6 Arg2:T33	
+T34	Time 436 446	30 minutes
+R20	Setting Arg1:E6 Arg2:T34	
+T35	Modifier 467 478	transformed
+T36	Reagent 479 494	competent cells
+R21	Mod-Link Arg1:T36 Arg2:T35	
+T37	Method 495 505	as desired
+T38	Method 11 20	Screening
+T39	Modifier 193 196	per
+T40	Amount 197 201	1 mL
+T41	Reagent 205 210	Media
+R22	Measure Arg1:T41 Arg2:T40	
+R23	Mod-Link Arg1:T40 Arg2:T39	
+T42	Modifier 260 265	final
+T43	Modifier 427 435	at least
+R25	Mod-Link Arg1:T34 Arg2:T43	
+T44	Modifier 448 458	before use
+R26	Mod-Link Arg1:E6 Arg2:T44	
+T45	Modifier 513 523	Blue/White
+T46	Location 524 540	Selection plates
+T47	Modifier 545 561	generally stable
+T48	Time 566 577	only 1 week
+T49	Action 581 587	stored
+E8	Action:T49 Acts-on:T52
+T50	Temperature 591 594	4°C
+T51	Modifier 598 603	clear
+T52	Location 604 611	sleeves
+T53	Action 624 630	stored
+E9	Action:T53 
+T54	Modifier 634 642	the dark
+T55	Modifier 649 653	dark
+T56	Location 654 660	sleeve
+R27	Mod-Link Arg1:T56 Arg2:T55	
+R28	Or Arg1:T54 Arg2:T56	
+R29	Mod-Link Arg1:E9 Arg2:T54	
+T57	Temperature 665 668	4°C
+T58	Time 673 686	up to 1 month
+R30	Setting Arg1:E9 Arg2:T58	
+R31	Setting Arg1:E9 Arg2:T57	
+R32	Mod-Link Arg1:T52 Arg2:T51	
+R33	Setting Arg1:E8 Arg2:T50	
+R34	Mod-Link Arg1:T46 Arg2:T45	
+R35	Mod-Link Arg1:T46 Arg2:T47	
+R36	Setting Arg1:T47 Arg2:T48	
+R37	Or Arg1:E8 Arg2:E9	
+T59	Modifier 0 10	Blue/White
+T60	Reagent 24 42	Bacterial Colonies
+T61	Reagent 43 48	X-Gal
+T62	Reagent 49 60	IPTG Plates
+R38	Or Arg1:T61 Arg2:T62	
+T63	Measure-Type 266 279	concentration

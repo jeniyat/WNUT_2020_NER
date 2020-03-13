@@ -1,0 +1,447 @@
+T1	Action 56 61	Label
+E1	Action:T1 Acts-on:T35 Using:T37
+T2	Action 100 107	prepare
+E2	Action:T2 Product:T36
+T3	Action 371 375	Thaw
+E3	Action:T3 Acts-on:T38 Acts-on2:T39
+T4	Action 489 492	Add
+E4	Action:T4 Acts-on:T42 Site:T43
+T5	Action 606 609	mix
+E5	Action:T5 
+T6	Action 625 630	Store
+E6	Action:T6 Acts-on:T45
+T7	Action 687 700	do not freeze
+E7	Action:T7 
+T8	Action 845 849	Thaw
+E8	Action:T8 Acts-on:T56 Site:T57
+T9	Action 881 887	dilute
+E9	Action:T9 Using:T60
+T10	Action 1040 1044	Thaw
+E10	Action:T10 Acts-on:T121
+T11	Action 1155 1167	Reconstitute
+E11	Action:T11 Acts-on:T62 Using:T65
+T12	Action 1320 1323	add
+E12	Action:T12 Acts-on:T73 Site:T74
+T13	Action 1351 1357	vortex
+E13	Action:T13 
+T14	Action 1359 1362	Add
+E14	Action:T14 Acts-on:T78
+T15	Action 1409 1415	vortex
+E15	Action:T15 
+T16	Action 1435 1438	Add
+E16	Action:T16 Acts-on:T80 Site:T84 Product:T87
+T17	Action 1544 1551	Prepare
+E17	Action:T17 Product:T85 Using:T131
+T18	Action 1682 1689	Prepare
+E18	Action:T18 Acts-on:T132 Using:T135
+T19	Action 1848 1851	Add
+E19	Action:T19 Acts-on:T141
+T20	Action 1919 1926	Perform
+E20	Action:T20 
+T21	Action 1957 1962	Blank
+E21	Action:T21 Acts-on:T146 Using:T148
+T22	Action 2002 2006	Read
+E22	Action:T22 Acts-on:T149
+T23	Action 2118 2129	Equilibrate
+E23	Action:T23 Acts-on:T155
+T24	Action 2190 2197	Aliquot
+E24	Action:T24 Acts-on:T159 Site:T162
+T25	Action 2482 2489	aliquot
+E25	Action:T25 Acts-on:T174 Site:T177
+T26	Action 2645 2648	add
+E26	Action:T26 Acts-on:T182 Acts-on2:T185 Site:T187
+T27	Action 2797 2800	Add
+E27	Action:T27 Acts-on:T193 Site:T194 Site2:T196 Using:T197
+T28	Action 3009 3016	prepare
+E28	Action:T28 Acts-on:T205 Site:T204
+T29	Action 3353 3361	initiate
+E29	Action:T29 Using:T241
+T30	Action 3451 3455	read
+E30	Action:T30 Acts-on:T247
+T31	Action 3604 3610	Dilute
+E31	Action:T31 Acts-on:T259 Using:T267
+T32	Action 3683 3686	Mix
+E32	Action:T32 Acts-on:T261 Using:T268
+T33	Numerical 62 63	8
+T34	Modifier 64 69	clean
+T35	Location 70 86	glass test tubes
+T36	Reagent 112 121	standards
+R1	Mod-Link Arg1:T35 Arg2:T34	
+R2	Measure Arg1:T35 Arg2:T33	
+T37	Reagent 92 95	A-H
+T38	Reagent 376 410	SAM Methyltransferase Assay Buffer
+T39	Reagent 415 467	SAM Methyltransferase Assay Buffer Additive solution
+T40	Temperature 471 487	room temperature
+R3	Setting Arg1:E3 Arg2:T40	
+T41	Amount 497 510	entire volume
+T42	Reagent 514 557	SAM Methyltransferase Assay Buffer Additive
+T43	Reagent 567 601	SAM Methyltransferase Assay Buffer
+T44	Modifier 613 623	thoroughly
+R4	Measure Arg1:T42 Arg2:T41	
+R5	Mod-Link Arg1:E5 Arg2:T44	
+T45	Reagent 631 665	SAM Methyltransferase Assay Buffer
+T46	Temperature 669 685	room temperature
+T47	Action 707 715	addition
+E33	Action:T47 Acts-on:T48
+T48	Reagent 719 727	Additive
+R6	Setting Arg1:E6 Arg2:T46	
+T49	Amount 787 792	200µl
+T50	Concentration 798 801	1mM
+T51	Reagent 802 810	solution
+T52	Reagent 814 834	adenosylhomocysteine
+R7	Meronym Arg1:T51 Arg2:T52	
+R8	Measure Arg1:T51 Arg2:T50	
+R9	Measure Arg1:T51 Arg2:T49	
+T53	Action 778 786	contains
+E34	Action:T53 Site:T54 Acts-on:T51 Product:T55
+T54	Location 773 777	vial
+T55	Reagent 747 767	Adenosylhomocysteine
+T56	Location 854 858	vial
+T57	Location 862 865	ice
+T58	Amount 888 892	10µl
+T59	Amount 898 902	90µl
+T60	Reagent 906 954	SAM Methyltransferase Assay Buffer with Additive
+R10	Measure Arg1:T60 Arg2:T59	
+R11	Setting Arg1:E9 Arg2:T58	
+T61	Temperature 1045 1051	on ice
+T62	Reagent 1172 1180	contents
+T63	Location 1187 1191	vial
+T64	Amount 1197 1202	100µl
+T65	Reagent 1203 1220	HCl Assay Reagent
+T66	Concentration 1222 1226	20mM
+T67	Action 1231 1236	yield
+E35	Action:T67 Acts-on:T69
+T68	Concentration 1237 1242	6.9mM
+T69	Reagent 1243 1246	SAM
+R12	Measure Arg1:T69 Arg2:T68	
+R13	Measure Arg1:T65 Arg2:T64	
+R14	Meronym Arg1:T62 Arg2:T63	
+T70	Amount 1324 1329	100µl
+T71	Action 1297 1303	making
+E36	Action:T71 Acts-on:T72
+T72	Reagent 1308 1318	Master Mix
+T73	Reagent 1330 1334	DMSO
+T74	Location 1342 1346	vial
+R15	Measure Arg1:T73 Arg2:T70	
+T75	Amount 1363 1368	400µl
+T76	Modifier 1388 1398	ultra pure
+T77	Reagent 1399 1404	water
+R16	Mod-Link Arg1:T77 Arg2:T76	
+T78	Reagent 1369 1384	proteomic grade
+R17	Measure Arg1:T78 Arg2:T75	
+R18	Measure Arg1:T77 Arg2:T75	
+R19	Or Arg1:T78 Arg2:T77	
+T79	Amount 1439 1442	4ml
+T80	Reagent 1443 1459	Resorufin Buffer
+T81	Concentration 1461 1464	10X
+T82	Amount 1469 1473	36ml
+T83	Modifier 1474 1484	ultra pure
+T84	Reagent 1485 1490	water
+T86	Concentration 1503 1505	1X
+T87	Reagent 1506 1522	Resorufin Buffer
+R20	Measure Arg1:T80 Arg2:T79	
+R21	Measure Arg1:T80 Arg2:T81	
+R22	Mod-Link Arg1:T84 Arg2:T83	
+R23	Measure Arg1:T84 Arg2:T82	
+R24	Measure Arg1:T87 Arg2:T86	
+T85	Reagent 1557 1568	test sample
+T88	Modifier 1585 1593	purified
+T89	Modifier 1594 1607	SAM dependent
+T90	Reagent 1608 1625	methyltransferase
+R25	Mod-Link Arg1:T90 Arg2:T89	
+R26	Mod-Link Arg1:T90 Arg2:T88	
+R27	Meronym Arg1:T90 Arg2:T85	
+T91	Amount 1852 1857	115µl
+T92	Method 12 39	SAM Methyltransferase Assay
+T93	Method 40 54	Standard Assay
+T94	Modifier 146 153	diluted
+T95	Reagent 154 163	standards
+T96	Modifier 168 174	stable
+T97	Time 179 186	4 hours
+T98	Temperature 190 206	room temperature
+R28	Mod-Link Arg1:T95 Arg2:T96	
+R29	Mod-Link Arg1:T95 Arg2:T94	
+T99	Location 208 212	Tube
+T100	Concentration 212 216	10µM
+T101	Reagent 217 232	Resorufin Stock
+T102	Numerical 237 239	1X
+T103	Reagent 240 256	Resorufin Buffer
+T104	Modifier 261 266	Final
+T105	Measure-Type 267 280	Concentration
+T106	Measure-Type 282 284	µM
+T107	Measure-Type 258 260	µl
+T108	Measure-Type 234 236	µl
+T109	Numerical 285 365	A1258751.25B2507502.5C3756253.75D5005005E6253756.25F7502507.5G8751258.75H1000010
+T110	Reagent 836 842	AdoHcy
+R30	Meronym Arg1:T110 Arg2:T52	
+T111	Reagent 729 745	Positive Control
+T112	Modifier 867 879	Prior to use
+R31	Mod-Link Arg1:E9 Arg2:T112	
+T113	Reagent 956 976	SAMfluoro Enzyme Mix
+T114	Amount 990 995	300µl
+T115	Location 996 1001	vials
+R32	Measure Arg1:T115 Arg2:T114	
+R33	Meronym Arg1:T113 Arg2:T115	
+T116	Location 1008 1012	vial
+T117	Modifier 1003 1007	Each
+T118	Modifier 1016 1038	suitable for 36 assays
+R34	Mod-Link Arg1:T116 Arg2:T117	
+R35	Mod-Link Arg1:T116 Arg2:T118	
+R36	Setting Arg1:E10 Arg2:T61	
+T119	Modifier 1052 1060	only the
+T120	Numerical 1061 1067	number
+T121	Location 1071 1076	vials
+T122	Modifier 1077 1103	you require for your assay
+R37	Mod-Link Arg1:T121 Arg2:T122	
+R38	Measure Arg1:T121 Arg2:T120	
+R39	Mod-Link Arg1:T120 Arg2:T119	
+T123	Reagent 1105 1125	S-Adenosylmethionine
+T124	Reagent 1127 1130	SAM
+R40	Meronym Arg1:T124 Arg2:T123	
+T125	Modifier 1133 1153	supplied lyophilized
+R41	Mod-Link Arg1:T123 Arg2:T125	
+T126	Reagent 1248 1274	SAMfluoro Fluorometric Mix
+T127	Modifier 1276 1293	Immediately prior
+R42	Mod-Link Arg1:E36 Arg2:T127	
+T128	Reagent 1417 1433	Resorufin Buffer
+T129	Method 1524 1542	Sample Preparation
+T130	Modifier 1626 1639	to be assayed
+T131	Method 1654 1680	your own standard protocol
+R43	Mod-Link Arg1:T90 Arg2:T130	
+T132	Reagent 1694 1712	specific substrate
+T133	Reagent 1721 1738	methyltransferase
+T134	Modifier 1739 1752	to be assayed
+T135	Reagent 1763 1797	SAM Methyltransferase Assay Buffer
+T136	Reagent 1805 1830	buffer of your own choice
+R44	Or Arg1:T135 Arg2:T136	
+R45	Mod-Link Arg1:T133 Arg2:T134	
+T137	Method 1832 1846	Standard Assay
+T138	Modifier 1927 1939	in duplicate
+R46	Mod-Link Arg1:E20 Arg2:T138	
+T139	Method 1941 1955	Standard Assay
+T140	Modifier 1861 1865	each
+T141	Reagent 1866 1874	standard
+T142	Modifier 1875 1878	per
+T143	Location 1879 1883	well
+T144	Modifier 1889 1911	fluorescent compatible
+T145	Location 1912 1917	plate
+R47	Mod-Link Arg1:T145 Arg2:T144	
+R48	Mod-Link Arg1:T143 Arg2:T142	
+R49	Mod-Link Arg1:T141 Arg2:T140	
+R50	Measure Arg1:T141 Arg2:T91	
+R51	Meronym Arg1:T143 Arg2:T145	
+T146	Location 1967 1972	plate
+T147	Numerical 1981 1983	1X
+T148	Reagent 1984 2000	Resorufin Buffer
+R52	Measure Arg1:T148 Arg2:T147	
+R53	Measure Arg1:T103 Arg2:T102	
+R54	Measure Arg1:T101 Arg2:T100	
+T149	Location 2011 2016	plate
+T150	Time 2017 2032	after 5 minutes
+T151	Measure-Type 2042 2063	excitation wavelength
+T152	Generic-Measure 2067 2076	530-540nm
+R55	Of-Type Arg1:T152 Arg2:T151	
+R56	Setting Arg1:E22 Arg2:T150	
+T153	Measure-Type 2084 2103	emission wavelength
+T154	Generic-Measure 2107 2116	585-595nm
+R57	Of-Type Arg1:T154 Arg2:T153	
+R58	Setting Arg1:E22 Arg2:T152	
+R59	Setting Arg1:E22 Arg2:T154	
+T155	Reagent 2134 2179	SAM Methyltransferase Assay Buffer + Additive
+T156	Temperature 2183 2187	37 °
+R60	Setting Arg1:E23 Arg2:T156	
+T157	Modifier 2200 2205	total
+T158	Amount 2206 2219	volume of 5μl
+T159	Reagent 2228 2257	SAM methyltransferase samples
+T160	Modifier 2261 2269	at least
+T161	Numerical 2270 2273	two
+T162	Location 2274 2279	wells
+T163	Location 2285 2298	96 well plate
+R61	Meronym Arg1:T162 Arg2:T163	
+R62	Measure Arg1:T162 Arg2:T161	
+R63	Mod-Link Arg1:T161 Arg2:T160	
+R64	Measure Arg1:T159 Arg2:T158	
+R65	Mod-Link Arg1:T158 Arg2:T157	
+T164	Reagent 2308 2342	SAM Methyltransferase Assay Buffer
+T165	Concentration 2346 2350	0.1M
+T166	Reagent 2351 2355	Tris
+T167	pH 2357 2362	pH8.0
+T168	Reagent 2368 2375	diluent
+R66	Or Arg1:T164 Arg2:T166	
+R67	Measure Arg1:T166 Arg2:T165	
+R68	Measure Arg1:T166 Arg2:T167	
+R69	Meronym Arg1:T168 Arg2:T166	
+T169	Action 2390 2400	performing
+E37	Action:T169 Using:T170
+T170	Method 2405 2427	reactions and controls
+T171	Modifier 2431 2449	at least duplicate
+R70	Mod-Link Arg1:E37 Arg2:T171	
+T172	Modifier 2454 2480	For the background control
+T173	Amount 2490 2493	5μl
+T174	Reagent 2494 2528	SAM Methyltransferase Assay Buffer
+T175	Modifier 2534 2538	each
+T176	Modifier 2539 2557	background control
+T177	Location 2558 2562	well
+R71	Mod-Link Arg1:T177 Arg2:T176	
+R72	Mod-Link Arg1:T177 Arg2:T175	
+T178	Action 2577 2587	performing
+E38	Action:T178 Using:T179
+T179	Method 2592 2601	reactions
+T180	Modifier 2602 2614	in duplicate
+R73	Mod-Link Arg1:E38 Arg2:T180	
+R74	Mod-Link Arg1:E25 Arg2:T172	
+R75	Measure Arg1:T174 Arg2:T173	
+T181	Modifier 2619 2643	For the positive control
+T182	Reagent 2653 2669	Positive Control
+T183	Amount 2649 2652	5μl
+T184	Amount 2674 2678	10μl
+T185	Reagent 2679 2713	SAM Methyltransferase Assay Buffer
+T186	Modifier 2717 2738	each positive control
+T187	Location 2739 2743	well
+R76	Mod-Link Arg1:T187 Arg2:T186	
+R77	Measure Arg1:T185 Arg2:T184	
+R78	Measure Arg1:T182 Arg2:T183	
+R79	Mod-Link Arg1:E26 Arg2:T181	
+T188	Action 2758 2768	performing
+E39	Action:T188 Using:T189
+T189	Method 2773 2782	reactions
+T190	Modifier 2783 2795	in duplicate
+R80	Mod-Link Arg1:E39 Arg2:T190	
+T191	Amount 2801 2805	10µl
+T192	Modifier 2810 2821	appropriate
+T193	Reagent 2822 2840	acceptor substrate
+T194	Reagent 2848 2854	sample
+T195	Modifier 2859 2877	background control
+T196	Location 2878 2883	wells
+T197	Reagent 2891 2925	SAM Methyltransferase Assay Buffer
+T198	Concentration 2929 2933	0.1M
+T199	Reagent 2934 2938	Tris
+T200	pH 2940 2945	pH8.0
+T201	Reagent 2951 2958	diluent
+R81	Measure Arg1:T199 Arg2:T198	
+R82	Measure Arg1:T199 Arg2:T200	
+R83	Or Arg1:T197 Arg2:T199	
+R84	Meronym Arg1:T201 Arg2:T199	
+R85	Mod-Link Arg1:T193 Arg2:T192	
+R86	Measure Arg1:T193 Arg2:T191	
+R87	Mod-Link Arg1:T196 Arg2:T195	
+T202	Modifier 2960 2984	Immediately prior to use
+T203	Modifier 2994 3002	suitable
+T204	Location 3003 3007	tube
+T205	Reagent 3021 3059	SAM Methyltransferase Assay Master Mix
+R88	Mod-Link Arg1:T204 Arg2:T203	
+R89	Mod-Link Arg1:E28 Arg2:T202	
+T206	Numerical 3097 3099	36
+T207	Location 3100 3105	wells
+T208	Numerical 3105 3107	72
+T209	Location 3108 3113	wells
+T210	Numerical 3113 3116	100
+T211	Location 3117 3122	wells
+R90	Measure Arg1:T211 Arg2:T210	
+R91	Measure Arg1:T209 Arg2:T208	
+R92	Measure Arg1:T207 Arg2:T206	
+T212	Reagent 3122 3167	SAM Methyltransferase Assay Buffer + Additive
+T213	Amount 3167 3170	3ml
+T214	Amount 3170 3173	6ml
+T215	Amount 3173 3176	9ml
+T216	Reagent 3176 3196	SAMfluoro Enzyme Mix
+T217	Numerical 3196 3197	1
+T218	Location 3198 3202	vial
+T219	Amount 3204 3209	300µl
+T220	Numerical 3209 3210	2
+T221	Location 3211 3215	vial
+T222	Amount 3217 3222	600µl
+T223	Numerical 3222 3223	3
+T224	Location 3224 3228	vial
+T225	Amount 3230 3235	900µl
+T226	Reagent 3235 3261	SAMfluoro Fluorometric Mix
+T227	Amount 3261 3266	200µl
+T228	Amount 3266 3271	400µl
+T229	Amount 3271 3276	600µl
+T230	Reagent 3276 3296	S-Adenosylmethionine
+T231	Numerical 3296 3297	1
+T232	Location 3298 3302	vial
+T233	Amount 3304 3309	100µl
+T234	Numerical 3309 3310	2
+T235	Location 3311 3316	vials
+T236	Amount 3318 3323	200µl
+T237	Numerical 3323 3324	3
+T238	Location 3325 3330	vials
+T239	Amount 3332 3337	300µl
+R93	Measure Arg1:T212 Arg2:T213	
+R94	Measure Arg1:T212 Arg2:T214	
+R95	Measure Arg1:T212 Arg2:T215	
+R96	Meronym Arg1:T216 Arg2:T218	
+R97	Meronym Arg1:T216 Arg2:T221	
+R98	Meronym Arg1:T216 Arg2:T224	
+R99	Measure Arg1:T218 Arg2:T219	
+R100	Measure Arg1:T218 Arg2:T217	
+R101	Measure Arg1:T221 Arg2:T220	
+R102	Measure Arg1:T221 Arg2:T222	
+R103	Measure Arg1:T224 Arg2:T223	
+R104	Measure Arg1:T224 Arg2:T225	
+R105	Measure Arg1:T226 Arg2:T227	
+R106	Measure Arg1:T226 Arg2:T228	
+R107	Measure Arg1:T226 Arg2:T229	
+R108	Meronym Arg1:T230 Arg2:T232	
+R109	Measure Arg1:T232 Arg2:T231	
+R110	Measure Arg1:T232 Arg2:T233	
+R111	Meronym Arg1:T230 Arg2:T235	
+R112	Measure Arg1:T235 Arg2:T234	
+R113	Measure Arg1:T235 Arg2:T236	
+R114	Meronym Arg1:T230 Arg2:T238	
+R115	Measure Arg1:T238 Arg2:T237	
+R116	Measure Arg1:T238 Arg2:T239	
+T240	Modifier 3341 3352	Immediately
+T241	Method 3366 3374	reaction
+T242	Action 3378 3384	adding
+E40	Action:T242 Acts-on:T244 Site:T245
+T243	Amount 3385 3390	100μl
+T244	Reagent 3391 3423	SAM Methyltransferase Master Mix
+T245	Location 3431 3436	wells
+R117	Mod-Link Arg1:E29 Arg2:T240	
+R118	Measure Arg1:T244 Arg2:T243	
+T246	Modifier 3438 3449	Immediately
+T247	Location 3460 3465	plate
+T248	Temperature 3469 3473	37°C
+T249	Modifier 3474 3479	every
+T250	Time 3480 3486	minute
+T251	Time 3491 3501	30 minutes
+R119	Mod-Link Arg1:T250 Arg2:T249	
+T252	Measure-Type 3511 3532	excitation wavelength
+T253	Generic-Measure 3536 3545	530-540nm
+T254	Measure-Type 3553 3572	emission wavelength
+T255	Generic-Measure 3576 3586	585- 595nm
+R120	Of-Type Arg1:T255 Arg2:T254	
+R121	Of-Type Arg1:T253 Arg2:T252	
+R122	Mod-Link Arg1:E30 Arg2:T246	
+R123	Setting Arg1:E30 Arg2:T248	
+R124	Setting Arg1:E30 Arg2:T250	
+R125	Setting Arg1:E30 Arg2:T251	
+R126	Setting Arg1:E30 Arg2:T253	
+R127	Setting Arg1:E30 Arg2:T255	
+T256	Method 3588 3602	Standard Assay
+T257	Method 3667 3681	Standard Assay
+T258	Amount 3611 3615	25µl
+T259	Reagent 3616 3634	resorufin standard
+T260	Modifier 3701 3708	diluted
+T261	Reagent 3709 3717	standard
+T262	Amount 3687 3692	500µl
+T263	Amount 3640 3645	475µl
+T264	Amount 3723 3728	4.5ml
+T265	Numerical 3646 3648	1X
+T266	Numerical 3729 3731	1X
+T267	Reagent 3649 3665	Resorufin Buffer
+T268	Reagent 3732 3741	Resorufin
+T269	Action 3745 3750	yield
+E41	Action:T269 Acts-on:T270
+T270	Reagent 3753 3767	stock solution
+T271	Concentration 3771 3775	10µM
+R128	Measure Arg1:T270 Arg2:T271	
+R129	Measure Arg1:T267 Arg2:T265	
+R130	Measure Arg1:T267 Arg2:T263	
+R131	Measure Arg1:T259 Arg2:T258	
+R132	Mod-Link Arg1:T261 Arg2:T260	
+R133	Measure Arg1:T261 Arg2:T262	
+R134	Measure Arg1:T268 Arg2:T266	
+R135	Measure Arg1:T268 Arg2:T264	

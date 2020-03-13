@@ -1,0 +1,112 @@
+T1	Modifier 617 624	Quickly
+T2	Action 625 633	transfer
+E1	Action:T2 Acts-on:T3 Site:T10
+T3	Device 634 643	PCR tubes
+T4	Modifier 432 438	Gently
+T5	Action 439 442	mix
+E2	Action:T5 Acts-on:T6
+T6	Device 447 455	reaction
+T7	Action 456 463	Collect
+E3	Action:T7 Acts-on:T9 Site:T14
+T8	Modifier 464 467	all
+T9	Reagent 468 474	liquid
+R1	Mod-Link Arg1:E1 Arg2:T1	
+R2	Mod-Link Arg1:E2 Arg2:T4	
+R3	Mod-Link Arg1:T9 Arg2:T8	
+T10	Device 649 661	thermocycler
+T13	Temperature 705 709	94°C
+R4	Setting Arg1:T10 Arg2:T13	
+T14	Location 482 488	bottom
+T16	Action 534 541	overlay
+E6	Action:T16 Acts-on:T17 Using:T18 Using2:T63
+T17	Reagent 546 552	sample
+T18	Reagent 558 569	mineral oil
+T11	Method 0 12	PCR Protocol
+T19	Reagent 17 39	OneTaq® DNA Polymerase
+T20	Reagent 69 77	reaction
+T21	Action 48 54	Set up
+E4	Action:T21 Acts-on:T20 Site:T22
+T22	Location 81 84	ice
+T23	Action 86 95	Component
+E7	Action:T23 Acts-on:T25
+T24	Amount 95 100	25 μl
+T25	Reagent 101 109	reaction
+T26	Amount 109 114	50 μl
+T27	Reagent 115 123	reaction
+T28	Modifier 123 128	Final
+T29	Measure-Type 129 142	Concentration
+T30	Concentration 142 144	5X
+T31	Reagent 145 176	OneTaq Standard Reaction Buffer
+T32	Amount 177 181	5 µl
+T33	Amount 181 186	10 μl
+T34	Concentration 186 188	1X
+T35	Concentration 188 193	10 mM
+T36	Reagent 194 199	dNTPs
+T37	Amount 208 214	0.5 µl
+T38	Amount 214 218	1 μl
+T39	Concentration 218 224	200 µM
+T40	Concentration 224 229	10 µM
+T41	Reagent 230 244	Forward Primer
+T42	Amount 244 250	0.5 µl
+T43	Amount 250 254	1 μl
+T44	Concentration 254 260	0.2 µM
+T45	Concentration 260 265	10 µM
+T46	Reagent 266 280	Reverse Primer
+T47	Amount 280 286	0.5 µl
+T48	Amount 286 290	1 μl
+T49	Concentration 290 296	0.2 µM
+T50	Reagent 296 318	OneTaq  DNA Polymerase
+T51	Amount 318 326	0.125 µl
+T52	Amount 326 333	0.25 µl
+T53	Generic-Measure 333 343	1.25 units
+T54	Amount 344 349	50 µl
+T55	Method 350 353	PCR
+T56	Reagent 355 367	Template DNA
+T57	Modifier 383 384	<
+T58	Amount 385 393	1,000 ng
+T59	Modifier 393 406	Nuclease-free
+T60	Reagent 407 412	water
+T61	Amount 415 420	25 µl
+T62	Amount 423 428	50 µl
+T63	Device 582 593	PCR machine
+T64	Speed 611 614	lid
+T65	Modifier 604 610	heated
+R5	Mod-Link Arg1:T64 Arg2:T65	
+T66	Modifier 662 671	preheated
+R6	Mod-Link Arg1:T10 Arg2:T66	
+T67	Temperature 679 703	denaturation temperature
+R7	Coreference-Link Arg1:T13 Arg2:T67	
+T12	Method 721 734	thermocycling
+T68	Action 715 720	begin
+E5	Action:T68 Using:T12
+R8	Measure Arg1:T25 Arg2:T24	
+R9	Measure Arg1:T27 Arg2:T26	
+R10	Mod-Link Arg1:T58 Arg2:T57	
+R11	Mod-Link Arg1:T60 Arg2:T59	
+R12	Measure Arg1:T60 Arg2:T61	
+R13	Measure Arg1:T60 Arg2:T62	
+R14	Measure Arg1:T56 Arg2:T58	
+R15	Measure Arg1:T27 Arg2:T30	
+R16	Measure Arg1:T31 Arg2:T32	
+R17	Measure Arg1:T31 Arg2:T33	
+R18	Measure Arg1:T31 Arg2:T34	
+R19	Measure Arg1:T31 Arg2:T35	
+R20	Measure Arg1:T36 Arg2:T37	
+R21	Measure Arg1:T36 Arg2:T38	
+R22	Measure Arg1:T36 Arg2:T39	
+R23	Measure Arg1:T36 Arg2:T40	
+R24	Measure Arg1:T41 Arg2:T42	
+R25	Measure Arg1:T41 Arg2:T43	
+R26	Measure Arg1:T41 Arg2:T44	
+R27	Measure Arg1:T41 Arg2:T45	
+R28	Measure Arg1:T46 Arg2:T47	
+R29	Measure Arg1:T46 Arg2:T48	
+R30	Measure Arg1:T46 Arg2:T49	
+R31	Measure Arg1:T50 Arg2:T51	
+R32	Measure Arg1:T50 Arg2:T52	
+T15	Modifier 506 511	quick
+T69	Action 512 516	spin
+E8	Action:T69 Acts-on:T70
+R33	Mod-Link Arg1:E8 Arg2:T15	
+T70	Location 496 500	tube
+R34	Meronym Arg1:T14 Arg2:T70	
