@@ -1,4 +1,5 @@
-####How to Run Linear CRF:
+How to Run Linear CRF:
+======
 
 
 ```
@@ -18,7 +19,8 @@ Output will also create following two files:
 2) `performance.tex`: store the performance in latex format.
 
 
-####Optional arguments for Feature Ablation
+Optional arguments for Feature Ablation
+======
 
 The following arguments can be passed to the crf_ner.py for feature ablation
 ```
