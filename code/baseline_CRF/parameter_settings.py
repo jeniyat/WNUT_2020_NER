@@ -11,16 +11,16 @@ parameters = OrderedDict()
 
 
 parser.add_argument(
-    "-train_data", default="/Users/jeniya/Desktop/Wet_Lab_Ann/WNUT_2020/data/train_data/Standoff_Format/",
+    "-train_data", default="../../data/train_data/Standoff_Format/",
     help="Standoff_Format training files"
 )
 parser.add_argument(
-    "-test_data", default="/Users/jeniya/Desktop/Wet_Lab_Ann/WNUT_2020/data/test_data/Standoff_Format/",
+    "-test_data", default="../../data/test_data/Standoff_Format/",
     help="Standoff_Format test files"
 )
 
 parser.add_argument(
-    "-dev_data", default="/Users/jeniya/Desktop/Wet_Lab_Ann/WNUT_2020/data/dev_data/Standoff_Format/",
+    "-dev_data", default="../../data/dev_data/Standoff_Format/",
     help="Standoff_Format dev files"
 )
 

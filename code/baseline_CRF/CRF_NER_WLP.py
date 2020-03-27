@@ -253,12 +253,11 @@ if __name__ == '__main__':
 	to_latex=parameters["print_latex_format"]
 
 
-	evalutation.evaluate(parameters["test_data"],  parameters["standoff_output_folder"], perf_file, to_latex)
+	evalutation.evaluate(input_gold_folder=parameters["test_data"],  input_pred_folder=parameters["standoff_output_folder"],pref_file= perf_file, to_latex=to_latex)
 
 	shutil.rmtree('Conll_Format_Data/')
 
-	if os.path.exists(perf_file):
-		os.remove(perf_file)
+	
 
 	
 

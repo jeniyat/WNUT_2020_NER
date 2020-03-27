@@ -137,7 +137,7 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 
 
 
-def evaluate(input_gold_folder, input_pred_folder, pref_file, to_latex):
+def evaluate(input_gold_folder=None, input_pred_folder=None, to_latex=None, pref_file=None, ):
 	conll_folder_gold = "Conll_Format_Data/gold/"
 	conll_file_gold = 'Conll_Format_Data/gold.txt'
 
