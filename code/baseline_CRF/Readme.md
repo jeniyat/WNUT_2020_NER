@@ -37,7 +37,7 @@ The following arguments can be passed to the crf_ner.py for feature ablation
   -include_context INCLUDE_CONTEXT
                         context feature inclusion (0 to disable)
   -include_gazetteer INCLUDE_GAZETTEER
-                        gazetteer feature inclusion (0 to disable)
+                        gazetteer feature inclusion (0 to disable) [gazetters used in this model can be found in the  'gazetters/' folder]
 ```
 
 Example: Exclude String Features:  `python crf_ner.py -include_camel_case 0 -include_word_features 0`
