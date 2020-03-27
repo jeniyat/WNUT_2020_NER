@@ -19,8 +19,7 @@ fine	B-Device
 forcepts	I-Device
 ,	O
 or	O
-.	B-Size
-22	I-Size
+.22	B-Size
 gauge	B-Device
 needle	I-Device
 .	O
@@ -51,12 +50,12 @@ hood	B-Location
 and	O
 dispose	B-Action
 in	O
-"	B-Location
+``	B-Location
 Aldehyde	I-Location
 Waste	I-Location
-"	I-Location
+''	I-Location
 container	I-Location
-.	O
+.	B-Action
 
 Dehydrate	B-Action
 through	O
@@ -78,7 +77,8 @@ RT	B-Temperature
 Solution	B-Reagent
 1	I-Reagent
 :	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -92,7 +92,8 @@ continued	O
 Solution	B-Reagent
 2	I-Reagent
 :	O
-85%	B-Concentration
+85	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -106,7 +107,8 @@ continued	O
 Solution	B-Reagent
 3	I-Reagent
 :	O
-90%	B-Concentration
+90	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -120,7 +122,8 @@ continued	O
 Solution	B-Reagent
 4	I-Reagent
 :	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -139,7 +142,8 @@ continued	O
 Solution	B-Reagent
 4	I-Reagent
 :	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -158,7 +162,8 @@ continued	O
 Solution	B-Reagent
 4	I-Reagent
 :	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -177,14 +182,16 @@ continued	O
 Solution	B-Reagent
 4	I-Reagent
 :	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
 .	O
 
 Replace	B-Action
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 with	O
 500ul	B-Amount
@@ -198,12 +205,12 @@ Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"	B-Location
+``	B-Location
 Aldehyde	I-Location
 Waste	I-Location
-"	I-Location
+''	I-Location
 container	I-Location
-.	O
+.	B-Action
 
 Repeat	B-Action
 Step	O
@@ -226,12 +233,12 @@ Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"	O
-Aldehyde	B-Reagent
+``	B-Reagent
+Aldehyde	I-Reagent
 Waste	I-Reagent
-"	O
-container	B-Location
-.	O
+''	B-Location
+container	I-Location
+.	B-Action
 
 Repeat	B-Action
 Step	O
@@ -254,12 +261,12 @@ Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"	O
-Aldehyde	B-Reagent
+``	B-Reagent
+Aldehyde	I-Reagent
 Waste	I-Reagent
-"	O
-container	B-Location
-.	O
+''	B-Location
+container	I-Location
+.	B-Action
 
 Repeat	B-Action
 Step	O
@@ -282,14 +289,14 @@ Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"	B-Location
+``	B-Location
 Aldehyde	I-Location
 Waste	I-Location
-"	I-Location
+''	I-Location
 container	I-Location
 Paraffin	B-Reagent
 Infiltration	B-Method
-.	O
+.	B-Action
 
 Transfer	B-Action
 pupae	B-Reagent
@@ -316,8 +323,7 @@ tube	B-Location
 .	O
 
 Add	B-Action
-~	B-Modifier
-20	B-Numerical
+~20	B-Modifier
 paraffin	B-Reagent
 chips	I-Reagent
 (	O
@@ -678,7 +684,8 @@ samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 (	I-Reagent
 container	B-Location
@@ -694,7 +701,8 @@ samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 (	I-Reagent
 container	B-Location
@@ -710,7 +718,8 @@ samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-95%	B-Concentration
+95	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 for	O
 3	B-Time
@@ -722,7 +731,8 @@ samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 for	O
 3	B-Time
@@ -798,11 +808,12 @@ sec	I-Time
 .	O
 
 Dehydration	B-Method
-:D	B-Action
-ip	I-Action
+:	O
+Dip	B-Action
 slides	I-Action
 into	B-Location
-70%	B-Concentration
+70	O
+%	B-Concentration
 Ethanol	I-Concentration
 3	B-Reagent
 times	B-Numerical
@@ -811,7 +822,8 @@ times	B-Numerical
 Dip	B-Action
 slides	B-Location
 into	I-Location
-95%	B-Concentration
+95	O
+%	B-Concentration
 Ethanol	I-Concentration
 (	B-Reagent
 container	B-Location
@@ -824,7 +836,8 @@ times	B-Numerical
 Submerge	B-Action
 slides	B-Location
 into	I-Location
-95%	B-Concentration
+95	O
+%	B-Concentration
 Ethanol	I-Concentration
 (	B-Reagent
 container	B-Location
@@ -838,7 +851,8 @@ mins	B-Time
 Submerge	B-Action
 slides	B-Location
 into	I-Location
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	I-Concentration
 (	B-Reagent
 container	B-Location
@@ -852,7 +866,8 @@ mins	B-Time
 Submerge	B-Action
 slides	B-Location
 into	I-Location
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	I-Concentration
 (	B-Reagent
 container	B-Location

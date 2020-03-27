@@ -48,13 +48,20 @@ below	O
 :	O
 
 Tube	B-Location
-#123456Protein	I-Location
+#	I-Location
+123456Protein	I-Location
 Standard	B-Reagent
 [	O
 2mg/ml	B-Concentration
 ]	O
-(µl)048122025Protein	B-Measure-Type
-(µg)0816244050	B-Amount
+(	O
+µl	B-Measure-Type
+)	O
+048122025Protein	B-Reagent
+(	O
+µg	B-Amount
+)	O
+0816244050	O
 .	O
 
 Add	B-Action
@@ -72,8 +79,7 @@ tubes	B-Location
 .	O
 
 Add	B-Action
-0.5	B-Amount
-ml	I-Amount
+0.5ml	B-Amount
 UPPA™	B-Reagent
 I	I-Reagent
 to	O
@@ -84,8 +90,7 @@ vortex	B-Action
 .	O
 
 Add	B-Action
-0.5	B-Reagent
-ml	I-Reagent
+0.5ml	B-Reagent
 UPPA™	I-Reagent
 II	I-Reagent
 to	O
@@ -109,9 +114,7 @@ the	O
 titer	B-Location
 plate	I-Location
 at	O
-~	B-Speed
-5,000	I-Speed
-xg	I-Speed
+~5,000xg	B-Speed
 for	O
 7	B-Time
 minutes	I-Time

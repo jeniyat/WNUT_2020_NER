@@ -1,7 +1,9 @@
 Transformation	B-Method
 Protocol	O
 for	O
-BL21(DE3	B-Reagent
+BL21	B-Reagent
+(	I-Reagent
+DE3	I-Reagent
 )	I-Reagent
 Competent	I-Reagent
 Cells	I-Reagent
@@ -13,11 +15,12 @@ Thaw	B-Action
 a	O
 tube	B-Device
 of	O
-BL21(DE3	B-Reagent
+BL21	B-Reagent
+(	I-Reagent
+DE3	I-Reagent
 )	I-Reagent
 Competent	I-Reagent
-E	I-Reagent
-.	I-Reagent
+E.	I-Reagent
 coli	I-Reagent
 cells	I-Reagent
 on	I-Reagent
@@ -48,15 +51,11 @@ ice	I-Location
 .	O
 
 Add	B-Action
-1	B-Amount
-–	I-Amount
-5	I-Amount
+1–5	B-Amount
 µl	I-Amount
 containing	O
 1	B-Amount
-pg	I-Amount
-–	I-Amount
-100	I-Amount
+pg–100	I-Amount
 ng	I-Amount
 of	O
 plasmid	B-Reagent
@@ -71,9 +70,7 @@ Carefully	B-Modifier
 flick	B-Action
 the	O
 tube	B-Device
-4	B-Numerical
-–	I-Numerical
-5	I-Numerical
+4–5	B-Numerical
 times	O
 to	O
 mix	B-Action
@@ -190,9 +187,7 @@ SOC	B-Reagent
 .	O
 
 Spread	B-Action
-50	B-Amount
-–	I-Amount
-100	I-Amount
+50–100	B-Amount
 µl	I-Amount
 of	O
 each	O

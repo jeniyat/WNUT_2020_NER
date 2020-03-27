@@ -50,9 +50,9 @@ Add	B-Action
 750	B-Amount
 µl	I-Amount
 (	O
-1.5	B-Amount
-mL	I-Amount
-)*	O
+1.5mL	B-Amount
+)	O
+*	O
 Lysis/Binding	B-Reagent
 buffer	I-Reagent
 ,	O
@@ -71,7 +71,8 @@ Add	B-Action
 (	O
 150	B-Amount
 µl	I-Amount
-)*	O
+)	O
+*	O
 miRNA	B-Reagent
 Homogenate	I-Reagent
 Additive	I-Reagent
@@ -193,7 +194,8 @@ Add	B-Action
 volumes	B-Measure-Type
 of	O
 RT	B-Temperature
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 the	O
@@ -343,9 +345,8 @@ filter	B-Device
 .	O
 
 Wait	B-Action
-~	B-Modifier
-1	B-Time
-minute	I-Time
+~1	B-Modifier
+minute	B-Time
 .	O
 
 Spin	B-Action
@@ -381,9 +382,8 @@ DNase	B-Reagent
 I	I-Reagent
 buffer	I-Reagent
 (	O
-~	B-Modifier
-10	B-Amount
-µl	I-Amount
+~10	B-Modifier
+µl	B-Amount
 )	O
 and	O
 2	B-Amount
@@ -488,8 +488,7 @@ tube	B-Location
 ,	O
 store	B-Action
 in	O
-–	B-Temperature
-70	I-Temperature
+–70	B-Temperature
 ºC	I-Temperature
 .	O
 
@@ -516,9 +515,8 @@ Nonsticky	B-Modifier
 RNase-free	I-Modifier
 tube	B-Location
 (	O
-~	B-Modifier
-200	B-Amount
-µl	I-Amount
+~200	B-Modifier
+µl	B-Amount
 total	O
 )	O
 .	O
@@ -539,7 +537,8 @@ pipeting	B-Action
 Add	B-Action
 500	B-Amount
 µl	I-Amount
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 ,	O
 mix	B-Action
@@ -658,7 +657,8 @@ Add	B-Action
 500	B-Amount
 µl	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 the	O
@@ -826,9 +826,7 @@ kit	I-Device
 quantitative	B-Measure-Type
 range	I-Measure-Type
 =	O
-0.05	B-Concentration
--	I-Concentration
-5.0	I-Concentration
+0.05-5.0	B-Concentration
 ng	I-Concentration
 /	I-Concentration
 µl	I-Concentration
@@ -853,9 +851,8 @@ distribution	I-Measure-Type
 less	O
 accurate	O
 ,	O
-~	B-Modifier
-1	B-Time
-hr	I-Time
+~1	B-Modifier
+hr	B-Time
 processing	B-Measure-Type
 time	I-Measure-Type
 .	O
@@ -904,7 +901,8 @@ purification	I-Device
 kit	I-Device
 (	I-Device
 Qiagen	I-Device
-)**	I-Device
+)	I-Device
+**	O
 with	O
 elution	B-Method
 in	O
@@ -939,7 +937,8 @@ conc	B-Measure-Type
 >	B-Modifier
 100	B-Concentration
 ng/µl	I-Concentration
-))	O
+)	O
+)	O
 .	O
 
 Prepare	B-Action
@@ -955,8 +954,7 @@ a	O
 standard	O
 20	B-Amount
 µl	I-Amount
-reaction	B-Reagent
-*	O
+reaction*	B-Reagent
 :	O
 PCR	B-Reagent
 amplicons	I-Reagent
@@ -967,27 +965,34 @@ B1	O
 ,	O
 suggest	O
 250-500	B-Amount
-ng)*1µl	I-Amount
+ng	I-Amount
+)	O
+*1µl	B-Amount
 ;	O
 ATP	B-Reagent
 ,	O
 (	O
 75	B-Concentration
-mM)2	I-Concentration
-µl	B-Amount
+mM	I-Concentration
+)	O
+2	B-Amount
+µl	I-Amount
 ;	I-Amount
 GTP	B-Reagent
 ,	I-Reagent
 (	O
 75	B-Concentration
-mM)2	I-Concentration
+mM	I-Concentration
+)	I-Concentration
+2	O
 µl	B-Amount
 ;	I-Amount
 CTP	I-Amount
 ,	B-Reagent
 (	I-Reagent
 75	O
-mM)	B-Concentration
+mM	B-Concentration
+)	I-Concentration
 1.5	I-Concentration
 µl	B-Amount
 ;	I-Amount
@@ -995,7 +1000,8 @@ UTP	I-Amount
 ,	B-Reagent
 (	I-Reagent
 75	I-Reagent
-mM)	B-Concentration
+mM	B-Concentration
+)	I-Concentration
 1.5	I-Concentration
 µl	B-Amount
 ;	I-Amount
@@ -1006,7 +1012,8 @@ Biotin-11-CTP	I-Amount
 mM	O
 ,	B-Concentration
 Roche	I-Concentration
-04739205001)	O
+04739205001	O
+)	O
 3.75	O
 µl	B-Amount
 ;	I-Amount
@@ -1017,7 +1024,8 @@ Biotin-16-UTP	I-Amount
 mM	I-Reagent
 ,	O
 Roche	B-Concentration
-11388908910)	O
+11388908910	O
+)	O
 3.75	O
 µl	O
 ;	B-Amount
@@ -1179,8 +1187,7 @@ transfer	B-Action
 400	B-Amount
 µl	I-Amount
 of	O
-beads	B-Reagent
-*	O
+beads*	B-Reagent
 to	O
 a	O
 1.5	B-Amount
@@ -1199,9 +1206,8 @@ separation	I-Location
 rack	I-Location
 (	O
 takes	O
-~	B-Modifier
-2	B-Time
-min	I-Time
+~2	B-Modifier
+min	B-Time
 )	O
 ,	O
 pipet	B-Action
@@ -1216,8 +1222,7 @@ in	O
 equal	O
 volume	B-Measure-Type
 of	O
-0.1	B-Concentration
-N	I-Concentration
+0.1N	B-Concentration
 NaOH	B-Reagent
 (	O
 deactivates	B-Action
@@ -1250,7 +1255,8 @@ quickly	B-Modifier
 .	O
 
 Wash	O
-#2	O
+#	O
+2	O
 :	O
 Repeat	O
 wash	B-Action
@@ -1280,7 +1286,8 @@ complete	O
 .	O
 
 Wash	O
-#3	O
+#	O
+3	O
 :	O
 Repeat	O
 wash	B-Action
@@ -1400,7 +1407,8 @@ to	O
 100	B-Amount
 µl	I-Amount
 using	O
-20%	B-Concentration
+20	B-Concentration
+%	I-Concentration
 formamide	B-Reagent
 in	O
 1X	B-Concentration
@@ -1954,8 +1962,7 @@ purify	B-Action
 the	O
 cDNA	B-Reagent
 with	O
-1.8	B-Generic-Measure
-X	I-Generic-Measure
+1.8X	B-Generic-Measure
 purification	B-Measure-Type
 .	O
 
@@ -1974,7 +1981,8 @@ Prepare	B-Action
 400	B-Amount
 µl	I-Amount
 fresh	B-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 at	O
 room	B-Temperature
@@ -2063,7 +2071,8 @@ tube	B-Location
 
 Ethanol	B-Reagent
 Wash	B-Action
-#1	O
+#	O
+1	O
 :	O
 With	O
 tubes	B-Location
@@ -2073,7 +2082,8 @@ stand	B-Location
 add	B-Action
 200	B-Amount
 µl	I-Amount
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	O
@@ -2086,7 +2096,8 @@ beads	B-Reagent
 
 Ethanol	B-Reagent
 Wash	B-Action
-#1	O
+#	O
+1	O
 :	O
 Incubate	B-Action
 for	O
@@ -2102,7 +2113,8 @@ supernatant	B-Reagent
 
 Ethanol	B-Reagent
 Wash	B-Action
-#2	O
+#	O
+2	O
 :	O
 With	O
 tubes	B-Location
@@ -2112,7 +2124,8 @@ stand	B-Location
 add	B-Action
 200	B-Amount
 µl	I-Amount
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	O
@@ -2125,7 +2138,8 @@ beads	B-Reagent
 
 Ethanol	B-Reagent
 Wash	B-Action
-#2	O
+#	O
+2	O
 :	O
 Incubate	B-Action
 for	O
@@ -2298,8 +2312,8 @@ Volume	B-Measure-Type
 
 Perform	B-Action
 PCR	B-Method
-:D	B-Action
-enature	I-Action
+:	O
+Denature	B-Action
 ds	B-Reagent
 DNA	I-Reagent
 at	O
@@ -2400,7 +2414,8 @@ Prepare	B-Action
 400	B-Amount
 µl	I-Amount
 fresh	B-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 at	O
 room	B-Temperature
@@ -2490,7 +2505,8 @@ tube	B-Location
 
 Ethanol	B-Reagent
 Wash	B-Action
-#1	O
+#	O
+1	O
 :	O
 With	O
 tubes	B-Location
@@ -2500,7 +2516,8 @@ stand	B-Location
 add	B-Action
 200	B-Amount
 µl	I-Amount
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	O
@@ -2513,7 +2530,8 @@ beads	B-Reagent
 
 Ethanol	B-Reagent
 Wash	B-Action
-#1	O
+#	O
+1	O
 :	O
 Incubate	B-Action
 for	O
@@ -2529,7 +2547,8 @@ supernatant	B-Reagent
 
 Ethanol	B-Reagent
 Wash	B-Action
-#2	O
+#	O
+2	O
 :	O
 With	O
 tubes	B-Location
@@ -2539,7 +2558,8 @@ stand	B-Location
 add	B-Action
 200	B-Amount
 µl	I-Amount
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	O
@@ -2552,7 +2572,8 @@ beads	B-Reagent
 
 Ethanol	B-Reagent
 Wash	B-Action
-#2	O
+#	O
+2	O
 :	O
 Incubate	B-Action
 for	O

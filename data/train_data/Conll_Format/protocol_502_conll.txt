@@ -71,7 +71,8 @@ Pico	I-Reagent
 Green	I-Reagent
 (	O
 Invitrogen	O
-#P7589	O
+#	O
+P7589	O
 )	O
 .	O
 
@@ -127,8 +128,7 @@ Tris	B-Reagent
 1mM	B-Concentration
 EDTA	B-Reagent
 ,	O
-pH	B-pH
-7.6	I-pH
+pH7.6	B-pH
 )	O
 to	O
 a	O
@@ -153,8 +153,7 @@ to	O
 a	O
 density	B-Measure-Type
 of	O
-p	B-Generic-Measure
-1.8	I-Generic-Measure
+p1.8	B-Generic-Measure
 .	O
 
 Dispense	B-Action
@@ -182,10 +181,8 @@ Centrifuge	B-Action
 at	O
 44,000	B-Speed
 rpm	I-Speed
-(=	O
-184,678	B-Speed
-.	I-Speed
-5	I-Speed
+(	O
+=184,678.5	B-Speed
 g	I-Speed
 )	O
 in	O
@@ -203,9 +200,7 @@ at	O
 .	O
 
 Collect	B-Action
-0.2	B-Amount
--	I-Amount
-0.25	I-Amount
+0.2-0.25	B-Amount
 ml	I-Amount
 fractions	B-Reagent
 and	O
@@ -253,8 +248,7 @@ cells	I-Reagent
 .	O
 
 Thaw	B-Action
-10,000	B-Concentration
-x	I-Concentration
+10,000x	B-Concentration
 stock	B-Reagent
 of	I-Reagent
 SYBR	I-Reagent
@@ -290,8 +284,7 @@ and	O
 then	O
 filter	B-Action
 through	O
-0.02	B-Amount
-µm	I-Amount
+0.02µm	B-Amount
 filter	B-Device
 .	O
 
@@ -484,10 +477,10 @@ min	I-Time
 .	O
 
 Prepare	B-Action
-0.02	B-Amount
-µm	I-Amount
+0.02µm	B-Amount
 filtered	B-Modifier
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 bovine	B-Reagent
 serum	I-Reagent
 albumin	I-Reagent
@@ -545,10 +538,10 @@ flow-through	B-Reagent
 
 Add	B-Action
 500µl	B-Amount
-0.02	B-Modifier
-µm	I-Modifier
+0.02µm	B-Modifier
 filtered	I-Modifier
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 BSA	B-Reagent
 ,	O
 let	B-Action
@@ -581,8 +574,7 @@ flow-through	B-Reagent
 Wash	B-Action
 with	O
 500µl	B-Amount
-0.02	B-Modifier
-µm	I-Modifier
+0.02µm	B-Modifier
 filtered	I-Modifier
 MTN	B-Reagent
 buffer	I-Reagent
@@ -633,8 +625,7 @@ or	O
 SYBR-Blank	B-Reagent
 with	O
 500µl	B-Amount
-0.02	B-Modifier
-µm	I-Modifier
+0.02µm	B-Modifier
 filtered	I-Modifier
 MTN	B-Reagent
 buffer	I-Reagent
@@ -645,12 +636,15 @@ spin	I-Action
 as	O
 in	O
 step	B-Method
-#36	I-Method
+#	I-Method
+36	I-Method
 .	O
 
 Repeat	B-Action
-#37	B-Method
-&38	I-Method
+#	B-Method
+37	I-Method
+&	I-Method
+38	I-Method
 for	O
 a	O
 total	O
@@ -696,8 +690,7 @@ ice	B-Location
 
 Add	B-Action
 50µl	B-Amount
-0.02	B-Modifier
-µm	I-Modifier
+0.02µm	B-Modifier
 filtered	I-Modifier
 buffer	B-Reagent
 to	O
@@ -819,8 +812,7 @@ side	B-Modifier
 scatter	I-Modifier
 Examine	B-Action
 the	O
-0.02	B-Size
-µm	I-Size
+0.02µm	B-Size
 filtered	B-Modifier
 MTN	B-Reagent
 buffer	I-Reagent
@@ -985,16 +977,16 @@ density	I-Method
 ultracentrifugation	I-Method
 (	O
 See	O
-"	O
-Cesium	B-Method
+``	B-Method
+Cesium	I-Method
 Chloride	I-Method
 Virus	I-Method
 Purification	I-Method
 and	I-Method
 Dialysis	I-Method
-"	O
+''	O
 )	O
-.	O
+.	B-Modifier
 
 Light	B-Modifier
 DNA	B-Reagent

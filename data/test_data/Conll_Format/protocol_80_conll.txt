@@ -78,10 +78,8 @@ on	O
 ice	B-Location
 :	O
 RNA	B-Reagent
-Sample	I-Reagent
-,	I-Reagent
-6μL	B-Amount
-;	I-Amount
+Sample,6μL	I-Reagent
+;	B-Amount
 Mix	B-Reagent
 A300	I-Reagent
 2μL	I-Reagent
@@ -135,8 +133,7 @@ B300	I-Reagent
 Mix	B-Reagent
 C300	I-Reagent
 ,	I-Reagent
-6.5	B-Amount
-μL	I-Amount
+6.5μL	B-Amount
 ;	I-Amount
 
 Vortex	B-Action
@@ -171,7 +168,8 @@ suspended	B-Action
 .	O
 
 Prepare	B-Action
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 rinse	B-Method
@@ -185,7 +183,9 @@ of	O
 TPB	B-Reagent
 with	O
 each	B-Modifier
-3’-adapter	B-Reagent
+3	B-Reagent
+’	I-Reagent
+-adapter	I-Reagent
 ligated	I-Reagent
 sample	I-Reagent
 from	O
@@ -211,15 +211,16 @@ minutes	I-Time
 the	O
 following	B-Reagent
 :	O
-3’-adapter	B-Reagent
+3	B-Reagent
+’	I-Reagent
+-adapter	I-Reagent
 ligated	I-Reagent
 sample	I-Reagent
 from	O
 Step	O
 6	O
 ,	O
-16.5	B-Amount
-μL	I-Amount
+16.5μL	B-Amount
 ;	O
 TailorMag	B-Reagent
 Purification	I-Reagent
@@ -276,7 +277,8 @@ with	O
 150	B-Amount
 μL	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 without	B-Action
 disrupting	I-Action
@@ -424,7 +426,9 @@ Ligated	I-Reagent
 RNA	I-Reagent
 from	O
 Step	O
-16(contains	O
+16	O
+(	O
+contains	O
 TPB	B-Reagent
 )	O
 ,	O
@@ -485,7 +489,9 @@ strand	I-Reagent
 cDNA	I-Reagent
 from	I-Reagent
 Step	O
-19(contains	O
+19	O
+(	O
+contains	O
 TPB	O
 )	O
 ,	O
@@ -499,8 +505,7 @@ PCR	I-Amount
 Primer	B-Reagent
 1μL	I-Reagent
 Index	B-Amount
-Primer	B-Reagent
-*	I-Reagent
+Primer*	B-Reagent
 ,	O
 1μL	B-Amount
 ;	I-Amount
@@ -725,7 +730,8 @@ the	O
 middle	B-Location
 of	O
 the	O
-8%	B-Concentration
+8	B-Concentration
+%	I-Concentration
 PAGE	B-Reagent
 gel	I-Reagent
 .	O
@@ -803,14 +809,14 @@ Prepare	B-Action
 TE	B-Reagent
 buffer	I-Reagent
 with	O
-0.1%	B-Concentration
+0.1	B-Concentration
+%	I-Concentration
 Tween-20	B-Reagent
 :	O
 TE	B-Reagent
 buffer	I-Reagent
 ,	O
-9,990	B-Amount
-μL	I-Amount
+9,990μL	B-Amount
 ;	O
 Tween-20	B-Reagent
 10μL	B-Amount
@@ -831,7 +837,8 @@ according	O
 to	O
 the	O
 manufacturer	B-Method
-’s	I-Method
+’	I-Method
+s	I-Method
 instructions	I-Method
 .	O
 
@@ -867,7 +874,8 @@ according	I-Reagent
 to	O
 the	O
 manufacturer	B-Method
-’s	I-Method
+’	I-Method
+s	I-Method
 instructions	I-Method
 and	I-Method
 observe	B-Action
@@ -889,8 +897,7 @@ tube	I-Location
 into	O
 a	O
 sterile	B-Modifier
-1.5	B-Amount
-mL	I-Amount
+1.5mL	B-Amount
 microcentrifuge	B-Location
 tube	I-Location
 .	O
@@ -1012,7 +1019,8 @@ of	O
 TE	B-Reagent
 buffer	I-Reagent
 with	O
-0.1%	B-Concentration
+0.1	B-Concentration
+%	I-Concentration
 Tween-20	B-Reagent
 to	O
 the	O
@@ -1040,8 +1048,7 @@ maximum	B-Speed
 speed	I-Speed
 (	O
 approximately	B-Modifier
-13,000	B-Speed
-x	I-Speed
+13,000x	B-Speed
 G	I-Speed
 )	O
 for	O
@@ -1103,8 +1110,7 @@ maximum	B-Speed
 speed	I-Speed
 (	O
 approximately	B-Modifier
-13,000	B-Speed
-x	I-Speed
+13,000x	B-Speed
 G	I-Speed
 )	O
 for	O
@@ -1129,8 +1135,7 @@ mix	I-Reagent
 to	O
 a	O
 fresh	B-Modifier
-1.5	B-Amount
-ml	I-Amount
+1.5ml	B-Amount
 tube	B-Location
 .	O
 

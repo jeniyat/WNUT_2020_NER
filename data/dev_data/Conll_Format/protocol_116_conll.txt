@@ -101,8 +101,7 @@ a	O
 µL	I-Amount
 drop	O
 of	O
-0.02	B-Size
--µm	I-Size
+0.02-µm	B-Size
 filtered	B-Modifier
 dH2O	B-Reagent
 on	O
@@ -187,7 +186,8 @@ tube	I-Location
 
 Dilute	B-Action
 the	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 (	O
 wt/vol	O
 )	O
@@ -255,7 +255,8 @@ aqueous	B-Modifier
 NaCl	B-Reagent
 solution	I-Reagent
 (	O
-0.3%	B-Concentration
+0.3	B-Concentration
+%	I-Concentration
 wt/vol	I-Concentration
 )	O
 in	O
@@ -295,8 +296,7 @@ kPa	B-Generic-Measure
 
 Place	B-Action
 a	O
-0.45	B-Size
--µm	I-Size
+0.45-µm	B-Size
 nitrocellulose	B-Device
 backing	I-Device
 filter	I-Device
@@ -320,8 +320,7 @@ Carefully	B-Modifier
 pick	B-Action
 up	I-Action
 a	O
-0.02	B-Size
--µm	I-Size
+0.02-µm	B-Size
 Anodisc	B-Device
 filter	I-Device
 by	O
@@ -377,12 +376,11 @@ collected	B-Modifier
 fix	B-Action
 it	B-Mention
 with	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 glutaraldehyde	B-Reagent
 for	O
-15	B-Time
-–	I-Time
-30	I-Time
+15–30	B-Time
 min	I-Time
 at	O
 4°C	B-Temperature
@@ -404,8 +402,7 @@ fixing	B-Action
 mL	I-Amount
 of	O
 the	O
-0.02	B-Size
--µm	I-Size
+0.02-µm	B-Size
 filtered	B-Modifier
 water	B-Reagent
 that	O
@@ -439,8 +436,7 @@ to	O
 7	B-Generic-Measure
 psu	I-Generic-Measure
 with	O
-0.02	B-Size
--µm	I-Size
+0.02-µm	B-Size
 filtered	B-Modifier
 dH2O	B-Reagent
 before	O
@@ -522,15 +518,10 @@ have	O
 viral	B-Reagent
 abundances	I-Reagent
 of	O
-~	B-Modifier
-107	B-Amount
-mL	I-Amount
-–	I-Amount
-1	I-Amount
+~107	B-Modifier
+mL–1	B-Amount
 ,	O
-0.8	B-Amount
-–	I-Amount
-1.0	I-Amount
+0.8–1.0	B-Amount
 mL	I-Amount
 sample	B-Reagent
 is	O
@@ -595,8 +586,7 @@ Rinse	B-Action
 the	O
 towers	B-Device
 with	O
-0.02	B-Size
--µm	I-Size
+0.02-µm	B-Size
 filtered	B-Modifier
 dH2O	B-Reagent
 followed	O
@@ -779,8 +769,7 @@ with	O
 1	B-Amount
 mL	I-Amount
 of	O
-0.02	B-Size
--µm	I-Size
+0.02-µm	B-Size
 filtered	B-Modifier
 dH2O	B-Reagent
 .	O
@@ -826,9 +815,7 @@ opaque	I-Action
 .	O
 
 Place	B-Action
-12	B-Amount
-–	I-Amount
-15	I-Amount
+12–15	B-Amount
 µL	I-Amount
 antifade	B-Reagent
 solution	I-Reagent
@@ -847,8 +834,7 @@ top	B-Location
 .	O
 
 Add	B-Action
-~	B-Amount
-20	I-Amount
+~20	B-Amount
 µL	I-Amount
 antifade	B-Reagent
 on	O
@@ -864,9 +850,7 @@ coverslip	B-Seal
 .	O
 
 Place	B-Action
-12	B-Amount
-–	I-Amount
-15	I-Amount
+12–15	B-Amount
 µL	I-Amount
 spectrophotometric-grade	B-Reagent
 glycerol	I-Reagent
@@ -885,8 +869,7 @@ top	B-Location
 .	O
 
 Add	B-Action
-~	B-Amount
-20	I-Amount
+~20	B-Amount
 µL	I-Amount
 glycerol	B-Reagent
 on	O
@@ -929,8 +912,7 @@ or	O
 stored	B-Action
 frozen	B-Modifier
 at	O
-–	B-Temperature
-20°C	I-Temperature
+–20°C	B-Temperature
 for	O
 at	B-Modifier
 least	I-Modifier
@@ -1040,9 +1022,7 @@ so	O
 that	O
 there	O
 are	O
-10	B-Numerical
-–	I-Numerical
-100	I-Numerical
+10–100	B-Numerical
 stained	B-Modifier
 viruses	B-Reagent
 in	O
@@ -1128,9 +1108,7 @@ The	O
 abundance	O
 of	O
 viruses	O
-mL	O
-–	O
-1	O
+mL–1	O
 (	O
 Vt	O
 )	O
@@ -1172,7 +1150,8 @@ area	O
 of	O
 the	O
 filter	O
-(µm2	O
+(	O
+µm2	O
 )	O
 (	O
 see	O
@@ -1186,7 +1165,8 @@ area	O
 of	O
 each	O
 field	O
-(µm2	O
+(	O
+µm2	O
 )	O
 ,	O
 and	O
@@ -1213,7 +1193,8 @@ the	O
 size	O
 of	O
 the	O
-95%	O
+95	O
+%	O
 confidence	O
 intervals	O
 on	O
@@ -1231,7 +1212,8 @@ Poisson	O
 distribution	O
 ,	O
 the	O
-95%	O
+95	O
+%	O
 confidence	O
 intervals	O
 can	O
@@ -1244,7 +1226,8 @@ equations	O
 (	O
 Suttle	O
 1993	O
-):	O
+)	O
+:	O
 
 
 

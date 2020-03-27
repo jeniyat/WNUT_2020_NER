@@ -1,7 +1,9 @@
 Protein	B-Reagent
 Expression	B-Method
 Using	O
-BL21(DE3	B-Reagent
+BL21	B-Reagent
+(	I-Reagent
+DE3	I-Reagent
 )	I-Reagent
 (	O
 C2527	O
@@ -11,7 +13,9 @@ Transform	B-Action
 expression	B-Reagent
 plasmid	I-Reagent
 into	O
-BL21(DE3	B-Reagent
+BL21	B-Reagent
+(	I-Reagent
+DE3	I-Reagent
 )	I-Reagent
 .	O
 
@@ -47,10 +51,8 @@ at	O
 until	O
 OD600	B-Measure-Type
 reaches	B-Action
-0.4	I-Action
-–	B-Numerical
-0.8	I-Numerical
-.	I-Numerical
+0.4–0.8	I-Action
+.	B-Numerical
 
 Induce	B-Action
 with	O

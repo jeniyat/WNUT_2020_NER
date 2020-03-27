@@ -10,6 +10,21 @@ parameters = OrderedDict()
 
 
 
+parser.add_argument(
+    "-train_data", default="/Users/jeniya/Desktop/Wet_Lab_Ann/WNUT_2020/data/train_data/Standoff_Format/",
+    help="Standoff_Format training files"
+)
+parser.add_argument(
+    "-test_data", default="/Users/jeniya/Desktop/Wet_Lab_Ann/WNUT_2020/data/test_data/Standoff_Format/",
+    help="Standoff_Format test files"
+)
+
+parser.add_argument(
+    "-dev_data", default="/Users/jeniya/Desktop/Wet_Lab_Ann/WNUT_2020/data/dev_data/Standoff_Format/",
+    help="Standoff_Format dev files"
+)
+
+
 
 parser.add_argument(
     "-perf_file", default="performance.tex",
@@ -52,12 +67,19 @@ parser.add_argument(
 
 
 parser.add_argument(
-    "-print_latex_format", default="0",
+    "-print_latex_format", default="1",
     help="if print in latex format (1 to enable)"
 ) 
 
 
 opts = parser.parse_args()
+
+
+
+parameters["train_data"]=opts.train_data
+parameters["test_data"]=opts.test_data
+parameters["dev_data"]=opts.dev_data
+
 
 parameters["perf_file"]=opts.perf_file
 parameters["pred_file"]=opts.pred_file

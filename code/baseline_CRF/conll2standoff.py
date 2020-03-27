@@ -14,7 +14,7 @@ import sys
 import utils
 
 
-INPUT_ENCODING = "Latin-1"
+INPUT_ENCODING = "UTF-8"
 OUTPUT_ENCODING = "UTF-8"
 
 
@@ -57,16 +57,16 @@ def output(infn, output_directory, sentences):
             output_directory,
             os.path.basename(infn))
         opfile_name = outfn.replace("_conll.txt","")
-        # print(opfcile_name)
-        txtout = codecs.open(opfile_name + '.txt', 'wt')
-        soout = codecs.open(opfile_name + '.ann', 'wt')
+        
+        txtout = codecs.open(opfile_name + '.txt', 'w')
+        soout = codecs.open(opfile_name + '.ann', 'w')
 
     offset, idnum = 0, 1
 
     doctext = ""
 
     for si, sentence in enumerate(sentences):
-
+        # print(sentences)
         prev_token = None
         curr_start, curr_type = None, None
         quote_count = 0
@@ -112,6 +112,8 @@ def output(infn, output_directory, sentences):
 
 
 def process(fn,  output_directory ):
+    # print(fn)
+
     docnum = 1
     sentences = []
 
@@ -121,6 +123,9 @@ def process(fn,  output_directory ):
         current = []
 
         lines = f.readlines()
+        # print(lines)
+        if len(lines)==0:
+            print(fn, "is empty")
 
         for ln, l in enumerate(lines):
             l = l.strip()
@@ -171,6 +176,7 @@ def process(fn,  output_directory ):
         # process leftovers, if any
         if len(current) > 0:
             sentences.append(current)
+        # print(sentences)
         if len(sentences) > 0:
             output(fn, output_directory,  sentences)
 
@@ -182,15 +188,12 @@ if __name__ == "__main__":
     list_of_test_files = utils.Read_Files_in_Input_Folder(conll_format_test_files)
     standoff_output_directory = "Standoff_Outputs/"
     utils.make_dir_if_not_exists(standoff_output_directory)
-
     for file_name in list_of_test_files:
         file_values = file_name.split("/")
-        phase_name= file_values[-2]
+        
         protocol_name = file_values[-1]
 
-        output_directory= standoff_output_directory+phase_name+"/"
-        utils.make_dir_if_not_exists(output_directory)
-
+        output_directory= standoff_output_directory
 
 
         process(file_name, output_directory)

@@ -68,7 +68,8 @@ acid	I-Reagent
 L-azidohomoalanine	I-Reagent
 ,	I-Reagent
 AHA	I-Reagent
-):	I-Reagent
+)	I-Reagent
+:	O
 Dissolve	B-Action
 in	O
 nano-pure	B-Reagent
@@ -100,9 +101,7 @@ Prepare	B-Action
 stock	B-Reagent
 solutions	I-Reagent
 of	O
-1	B-Concentration
-–	I-Concentration
-100	I-Concentration
+1–100	B-Concentration
 mM	I-Concentration
 .	O
 
@@ -113,7 +112,8 @@ acid	I-Reagent
 L-homopropargylglycine	I-Reagent
 ,	I-Reagent
 HPG	I-Reagent
-):	I-Reagent
+)	I-Reagent
+:	O
 Dissolve	B-Action
 in	O
 nano-pure	B-Reagent
@@ -145,9 +145,7 @@ Prepare	B-Action
 stock	B-Reagent
 solutions	I-Reagent
 of	O
-1	B-Concentration
-–	I-Concentration
-100	I-Concentration
+1–100	B-Concentration
 mM	I-Concentration
 .	O
 
@@ -170,7 +168,8 @@ by	O
 )	O
 fixation	B-Method
 in	O
-3%	B-Concentration
+3	B-Concentration
+%	I-Concentration
 formaldehyde	B-Reagent
 (	I-Reagent
 PFA	I-Reagent
@@ -225,7 +224,8 @@ and	O
 resuspend	B-Action
 cells	B-Reagent
 in	O
-3%	B-Concentration
+3	B-Concentration
+%	I-Concentration
 PFA	B-Reagent
 in	I-Reagent
 PBS	I-Reagent
@@ -244,7 +244,8 @@ a	O
 final	B-Modifier
 concentration	B-Measure-Type
 of	O
-3%	B-Concentration
+3	B-Concentration
+%	I-Concentration
 PFA	B-Reagent
 .	O
 
@@ -383,7 +384,8 @@ contain	O
 80	B-Concentration
 ,	O
 and	O
-96%	B-Concentration
+96	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 .	O
 
@@ -399,8 +401,7 @@ sample	B-Reagent
 via	O
 centrifugation	B-Method
 (	O
-16,100	B-Speed
-g	I-Speed
+16,100g	B-Speed
 or	O
 max	B-Speed
 .	O
@@ -417,7 +418,8 @@ resuspend	B-Action
 in	O
 250	B-Amount
 μL	I-Amount
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 .	O
 
@@ -436,7 +438,8 @@ RT	B-Temperature
 Add	B-Action
 1.5	B-Amount
 mL	I-Amount
-96%	B-Concentration
+96	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 ,	O
 mix	B-Action
@@ -503,23 +506,20 @@ dye	B-Reagent
 premix	I-Reagent
 by	O
 mixing	B-Action
-1.25	B-Amount
-μL	I-Amount
+1.25μL	B-Amount
 of	O
 20	B-Concentration
 mM	I-Concentration
 CuSO4	B-Reagent
 solution	I-Reagent
 with	O
-2.50	B-Amount
-μL	I-Amount
+2.50μL	B-Amount
 of	O
 50	B-Concentration
 mM	I-Concentration
 THPTA	B-Reagent
 and	O
-0.30	B-Amount
-μL	I-Amount
+0.30μL	B-Amount
 of	O
 alkyne	B-Reagent
 dye	I-Reagent
@@ -542,7 +542,11 @@ We	O
 recommend	O
 to	O
 perform	B-Action
-Cu(I)-catalyzed	I-Action
+Cu	I-Action
+(	I-Action
+I	I-Action
+)	I-Action
+-catalyzed	I-Action
 click	I-Action
 chemistry	I-Action
 at	O
@@ -733,7 +737,8 @@ for	O
 3	B-Time
 min	I-Time
 in	O
-50%	B-Concentration
+50	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 at	O
 RT	B-Temperature
@@ -805,7 +810,8 @@ then	O
 one	B-Numerical
 time	I-Numerical
 in	O
-50%	B-Concentration
+50	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 (	O
 RT	B-Temperature
@@ -824,8 +830,7 @@ for	O
 5	B-Time
 min	I-Time
 at	O
-16,100	B-Speed
-g	I-Speed
+16,100g	B-Speed
 (	O
 or	O
 highest	B-Speed

@@ -92,7 +92,8 @@ in	O
 ml	I-Amount
 RPMI	B-Reagent
 +	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCS	B-Reagent
 .	O
 
@@ -111,8 +112,7 @@ Turks	B-Reagent
 .	O
 
 (	O
-1.5	B-Amount
-ml	I-Amount
+1.5ml	B-Amount
 Acetic	B-Reagent
 acid	I-Reagent
 ,	O
@@ -190,7 +190,8 @@ o/n	O
 at	O
 37C	B-Temperature
 ,	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 CO2	B-Reagent
 .	O
 
@@ -287,7 +288,9 @@ bacteriaPBS	B-Reagent
 for	O
 the	O
 washesGentamicin	B-Reagent
-+RPMI+10%FCSTitron	I-Reagent
++RPMI+10	I-Reagent
+%	B-Concentration
+FCSTitron	B-Reagent
 and	O
 PBS	B-Reagent
 for	O
@@ -361,17 +364,18 @@ it	B-Mention
 with	O
 RPMI	B-Reagent
 and	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCSPer	B-Reagent
-well	O
-:	O
-6-well	B-Location
+well:6-well	B-Location
 plate	I-Location
 :	O
 3	B-Amount
 ml	I-Amount
 RPMI	B-Reagent
-+10%FCS	B-Concentration
++10	B-Concentration
+%	I-Concentration
+FCS	B-Reagent
 and	O
 60ul	B-Amount
 bacteria24-well	B-Reagent
@@ -388,11 +392,15 @@ well	B-Location
 plate	I-Location
 :	O
 100ul	B-Amount
-RPMI+10%FCS	B-Reagent
+RPMI+10	B-Reagent
+%	B-Concentration
+FCS	B-Reagent
 and	O
 2ul	B-Amount
-bacteria(10	B-Reagent
-μL	B-Amount
+bacteria	B-Reagent
+(	O
+10	B-Amount
+μL	I-Amount
 corresponds	O
 approximately	O
 to	O
@@ -498,7 +506,8 @@ min	I-Time
 at	O
 37C	B-Temperature
 ,	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 CO2	B-Reagent
 .	O
 
@@ -594,7 +603,8 @@ ml	I-Amount
 plate	I-Location
 )	O
 RPMI	B-Reagent
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCS	B-Reagent
 without	B-Modifier
 phenol	I-Modifier
@@ -717,11 +727,9 @@ at	O
 250g	B-Speed
 for	O
 4min	B-Time
-*	O
-keep	B-Action
+*keep	B-Action
 on	B-Temperature
-ice	I-Temperature
-*	O
+ice*	I-Temperature
 .	O
 
 Take	B-Action
@@ -758,8 +766,9 @@ cells	B-Reagent
 with	O
 100ul	B-Amount
 of	O
-PBS-1%	B-Reagent
-Titron	I-Reagent
+PBS-1	B-Reagent
+%	B-Concentration
+Titron	B-Reagent
 X-100	B-Concentration
 (	O
 prepared	B-Action
@@ -787,9 +796,9 @@ for	O
 10^-1	B-Amount
 and	O
 10^-2	B-Amount
-#CFUs	B-Reagent
-/50μl	B-Amount
-x	I-Amount
+#	O
+CFUs/50μl	B-Reagent
+x	B-Amount
 100	I-Amount
 for	O
 LDH	B-Reagent
@@ -814,7 +823,8 @@ hour	I-Time
 at	O
 37C	B-Temperature
 ,	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 CO2	B-Reagent
 .	O
 
@@ -868,7 +878,8 @@ ml	I-Amount
 plate	I-Location
 )	O
 RPMI	B-Reagent
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCS	B-Reagent
 (	O
 preheated	B-Action
@@ -978,8 +989,10 @@ with	O
 500	B-Amount
 μL	I-Amount
 PBS-	B-Reagent
-1%Triton	B-Concentration
-X-100	I-Concentration
+1	B-Concentration
+%	I-Concentration
+Triton	B-Reagent
+X-100	B-Concentration
 and	O
 transfer	B-Action
 the	O
@@ -1036,8 +1049,8 @@ the	O
 dilution	B-Method
 .	O
 
-#CFUs	B-Reagent
-/100μl	B-Amount
+#	O
+CFUs/100μl	B-Reagent
 x	O
 500	B-Numerical
 x	O

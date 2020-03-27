@@ -79,8 +79,10 @@ add	B-Action
 µl	B-Amount
 of	I-Amount
 Solution	B-Reagent
-C1(This	I-Reagent
-solution	I-Reagent
+C1	I-Reagent
+(	I-Reagent
+This	O
+solution	B-Reagent
 contains	I-Reagent
 SDS	I-Reagent
 needed	I-Reagent
@@ -107,7 +109,9 @@ setting	O
 6	B-Numerical
 for	O
 30	B-Time
-s(Modified	I-Time
+s	I-Time
+(	O
+Modified	B-Modifier
 from	O
 MoBio	B-Method
 protocol	O
@@ -281,8 +285,10 @@ at	O
 4°C	B-Temperature
 for	O
 5	B-Time
-minutes(Solution	I-Time
-C2	B-Reagent
+minutes	I-Time
+(	O
+Solution	B-Reagent
+C2	I-Reagent
 is	O
 an	O
 inhibitor	B-Reagent
@@ -323,7 +329,9 @@ pre-labeled	I-Modifier
 2	I-Modifier
 ml	B-Amount
 collection	I-Amount
-tube(the	B-Location
+tube	B-Location
+(	I-Location
+the	O
 pellet	B-Reagent
 does	I-Reagent
 not	O
@@ -348,8 +356,10 @@ at	O
 4°C	B-Temperature
 for	O
 5	B-Time
-minutes(Solution	I-Time
-C3	B-Reagent
+minutes	I-Time
+(	O
+Solution	B-Reagent
+C3	I-Reagent
 is	O
 an	O
 inhibitor	B-Reagent
@@ -427,7 +437,9 @@ pre-labeled	B-Modifier
 2	B-Amount
 ml	I-Amount
 collection	B-Location
-tube(Pellet	I-Location
+tube	I-Location
+(	O
+Pellet	B-Reagent
 does	O
 not	O
 contain	O
@@ -684,7 +696,9 @@ C5	I-Reagent
 onto	O
 the	O
 filter	B-Device
-!!!	O
+!	O
+!	O
+!	O
 
 Add	B-Action
 100	B-Amount
@@ -1360,8 +1374,7 @@ the	O
 plate	B-Location
 .	O
 
-**	O
-Note	O
+**Note	O
 :	O
 DNA	B-Reagent
 amount	O
@@ -1535,7 +1548,8 @@ them	B-Mention
 out	O
 on	O
 a	O
-1.5%	B-Concentration
+1.5	B-Concentration
+%	I-Concentration
 Agarose	B-Reagent
 gel	I-Reagent
 and	O
@@ -1741,8 +1755,7 @@ plates	I-Location
 
 Following	O
 the	O
-manufacture	O
-'s	O
+manufacture's	O
 protocol	O
 .	O
 
@@ -2249,9 +2262,8 @@ a	O
 0.8	B-Generic-Measure
 ratio	I-Generic-Measure
 (	O
-~	B-Modifier
-0.8	B-Concentration
-X	I-Concentration
+~0.8	B-Modifier
+X	B-Concentration
 )	O
 to	O
 pooled	B-Modifier
@@ -2318,7 +2330,8 @@ Add	B-Action
 900	B-Amount
 µL	I-Amount
 of	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 the	O
@@ -2506,16 +2519,16 @@ corals	I-Reagent
 .	I-Reagent
 
 Run	B-Action
-~	B-Modifier
-75	B-Amount
-µL	I-Amount
+~75	B-Modifier
+µL	B-Amount
 of	O
 the	O
 pooled	B-Modifier
 library	B-Reagent
 on	O
 a	O
-2%	B-Concentration
+2	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
 for	O

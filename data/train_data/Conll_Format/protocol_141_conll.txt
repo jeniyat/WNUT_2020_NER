@@ -33,8 +33,7 @@ split	O
 ,	O
 take	B-Action
 a	O
-'	B-Modifier
-time	I-Modifier
+'time	B-Modifier
 0	I-Modifier
 '	I-Modifier
 growth	B-Generic-Measure
@@ -109,7 +108,8 @@ cells	B-Reagent
 with	O
 5	B-Amount
 µl	I-Amount
-25%	B-Concentration
+25	B-Concentration
+%	I-Concentration
 glutaraldehyde	B-Reagent
 .	O
 
@@ -253,8 +253,7 @@ or	O
 however	O
 much	O
 to	O
-q	O
-.	O
+q.	O
 to	O
 400	B-Amount
 ml	I-Amount
@@ -272,11 +271,11 @@ snap	B-Location
 cap	I-Location
 tube	I-Location
 the	B-Device
-"	I-Device
+``	I-Device
 Infection	I-Device
 Tube	I-Device
-"	I-Device
-.	O
+''	O
+.	B-Action
 
 Label	B-Action
 230	B-Numerical
@@ -348,13 +347,14 @@ ids	O
 Label	B-Action
 2	B-Numerical
 plates	B-Location
-"	O
+``	O
 Host	O
-(-)	O
-"	O
-Label	B-Action
-1.5	B-Amount
-µl	I-Amount
+(	O
+-	O
+)	O
+''	B-Action
+Label	I-Action
+1.5µl	B-Amount
 centrifuge	B-Location
 tubes	I-Location
 with	O
@@ -367,7 +367,7 @@ table	O
 1	O
 guidelines	O
 )	O
-.	O
+.	B-Action
 
 Add	B-Action
 900µl	B-Amount
@@ -448,8 +448,7 @@ for	O
 108	B-Numerical
 cells	B-Reagent
 (	O
-q	O
-.	O
+q.	O
 to	O
 2ml	B-Amount
 with	O
@@ -469,18 +468,17 @@ snap	B-Location
 cap	I-Location
 tube	I-Location
 labeled	B-Modifier
-"	I-Modifier
+``	I-Modifier
 Infection	I-Modifier
 Tube	I-Modifier
-"	I-Modifier
-.	O
+''	O
+.	B-Action
 
 Add	B-Action
 107	B-Numerical
 phages	B-Reagent
 (	O
-q	O
-.	O
+q.	O
 to	O
 2ml	B-Amount
 with	O
@@ -586,8 +584,7 @@ to	O
 the	O
 syringe	B-Location
 and	O
-0.2	B-Size
-µm	I-Size
+0.2µm	B-Size
 syringe	I-Size
 filter	B-Seal
 the	I-Seal
@@ -671,8 +668,7 @@ the	B-Location
 flask	I-Location
 into	O
 a	O
-1.5	B-Amount
-ml	I-Amount
+1.5ml	B-Amount
 centrifuge	B-Location
 tube	I-Location
 using	O

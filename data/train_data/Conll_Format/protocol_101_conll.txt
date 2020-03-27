@@ -108,7 +108,8 @@ scripts	B-Location
 directory	I-Location
 .	O
 
-config.sh:	O
+config.sh	O
+:	O
 Now	O
 we	O
 need	O
@@ -183,8 +184,7 @@ the	O
 scripts	O
 in	O
 the	O
-'	O
-scripts	O
+'scripts	O
 '	O
 directory	O
 .	O
@@ -234,16 +234,18 @@ modify	O
 it	O
 .	O
 
-blast-pipeline.sh:Now	O
+blast-pipeline.sh	O
+:	O
+Now	O
 we	O
 will	O
 create	B-Action
 the	O
-"	B-Reagent
+``	B-Reagent
 driver	I-Reagent
 script	I-Reagent
-"	I-Reagent
-,	I-Reagent
+''	I-Reagent
+,	O
 the	O
 script	O
 that	O
@@ -274,7 +276,8 @@ perl	I-Reagent
 code	I-Reagent
 .	O
 
-run-blast.sh:	O
+run-blast.sh	O
+:	O
 Create	B-Action
 a	O
 shell	B-Reagent
@@ -288,7 +291,9 @@ compute	B-Location
 node	I-Location
 .	O
 
-run-parse-blast.sh:Create	B-Action
+run-parse-blast.sh	O
+:	O
+Create	B-Action
 a	O
 shell	B-Reagent
 script	I-Reagent
@@ -308,22 +313,19 @@ the	O
 cluster	O
 .	O
 
-04-blast-search.pl:	O
+04-blast-search.pl	O
+:	O
 modify	B-Action
 the	O
 blast	B-Reagent
 search	I-Reagent
-script	I-Reagent
-.	O
-Update	B-Action
+script.Update	I-Reagent
 the	O
 e-value	B-Measure-Type
 to	O
 be	O
 less	B-Generic-Measure
-stringent	I-Generic-Measure
-.	O
-Modify	O
+stringent.Modify	I-Generic-Measure
 the	O
 Perl	O
 script	O
@@ -347,9 +349,7 @@ and	O
 then	O
 run	B-Action
 the	O
-pipeline	B-Reagent
-.	O
-If	O
+pipeline.If	B-Reagent
 you	O
 do	O
 n't	O
@@ -399,9 +399,7 @@ check	O
 for	O
 std-errors	O
 and	O
-std-out	O
-.	O
-Note	O
+std-out.Note	O
 you	O
 can	O
 check	O
@@ -415,9 +413,7 @@ too	O
 
 Now	O
 you	O
-try	O
-.	O
-See	O
+try.See	O
 if	O
 you	O
 can	O
@@ -447,9 +443,7 @@ of	O
 the	O
 original	O
 fasta	O
-files	O
-.	O
-Note	O
+files.Note	O
 that	O
 you	O
 can	O
@@ -481,9 +475,7 @@ Otherwise	O
 these	O
 will	O
 run	O
-again	O
-.	O
-Also	O
+again.Also	O
 ,	O
 before	O
 you	O
@@ -498,9 +490,7 @@ the	O
 blast	O
 parsing	O
 is	O
-complete	O
-.	O
-Can	O
+complete.Can	O
 this	O
 run	O
 on	O

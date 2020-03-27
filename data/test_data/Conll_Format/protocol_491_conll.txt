@@ -13,10 +13,7 @@ species	I-Reagent
 at	O
 moi	B-Generic-Measure
 of	I-Generic-Measure
-~	I-Generic-Measure
-0.001	I-Generic-Measure
--	I-Generic-Measure
-0.01	I-Generic-Measure
+~0.001-0.01	I-Generic-Measure
 .	O
 
 Incubate	B-Action
@@ -61,7 +58,8 @@ min	I-Time
 .	O
 
 Add	B-Action
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 NP-40	B-Reagent
 (	O
 or	O
@@ -77,7 +75,8 @@ a	O
 final	B-Modifier
 concentration	B-Measure-Type
 of	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 .	O
 
 Centrifuge	B-Action
@@ -93,9 +92,8 @@ at	O
 15,000	B-Speed
 rpm	I-Speed
 (	O
-~	B-Modifier
-27,000	B-Speed
-rcfmax	I-Speed
+~27,000	B-Modifier
+rcfmax	B-Speed
 )	O
 ,	O
 75	B-Time
@@ -271,7 +269,8 @@ approximately	B-Modifier
 µL	I-Amount
 )	O
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 .	O
 
@@ -301,7 +300,8 @@ with	O
 1000	B-Amount
 µL	I-Amount
 of	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 in	O
 the	O
@@ -343,7 +343,8 @@ and	O
 29	B-Amount
 µL	I-Amount
 of	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 Na	B-Reagent
 sarcosyl	I-Reagent
 and	O
@@ -446,8 +447,9 @@ supernatants	B-Reagent
 If	O
 the	O
 DNA	B-Reagent
-does	O
-n’t	O
+doesn	O
+’	O
+t	O
 go	O
 into	O
 solution	B-Reagent

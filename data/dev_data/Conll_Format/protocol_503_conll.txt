@@ -83,7 +83,9 @@ Water_	B-Reagent
 2	B-Amount
 –	I-Amount
 4	I-Amount
-μg)5	I-Amount
+μg	I-Amount
+)	O
+5	B-Amount
 μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 Buffer	I-Reagent
@@ -213,7 +215,8 @@ tube	B-Location
 .	O
 
 Wash	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 :	O
 With	B-Modifier
 tube	I-Modifier
@@ -227,7 +230,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -254,7 +258,8 @@ pipette	B-Device
 .	O
 
 Wash	B-Method
-#2	I-Method
+#	I-Method
+2	I-Method
 :	O
 With	B-Modifier
 tube	I-Modifier
@@ -268,7 +273,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -433,7 +439,9 @@ follows	I-Modifier
 DNA	B-Reagent
 (	I-Reagent
 Step	O
-18)5	O
+18	O
+)	O
+5	O
 μLNEXTflex™	B-Amount
 mtDNA	B-Reagent
 Buffer	I-Reagent
@@ -512,7 +520,8 @@ Prepare	B-Action
 pre-stained	B-Reagent
 SYBR	I-Reagent
 Gold	I-Reagent
-2%	B-Concentration
+2	B-Concentration
+%	I-Concentration
 or	O
 Ethidium	B-Reagent
 Bromide	I-Reagent
@@ -703,7 +712,8 @@ Intensity	I-Measure-Type
 Duty	I-Method
 cycle	I-Method
 –	O
-10%	B-Measure-Type
+10	B-Measure-Type
+%	I-Measure-Type
 Cycles	I-Measure-Type
 per	I-Measure-Type
 burst	I-Measure-Type
@@ -833,26 +843,27 @@ Plate	I-Location
 (	B-Reagent
 from	O
 section	O
-"	O
+``	O
 Fragmentation	O
 of	O
 mtDNA	O
-"	O
-)7	O
-μLNEXTflex™	B-Amount
+''	O
+)	B-Amount
+7	I-Amount
+μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 End	I-Reagent
 Repair	I-Reagent
 Buffer	I-Reagent
 Mix3	I-Reagent
-μLNEXTflex™	I-Reagent
-mtDNA	I-Reagent
+μLNEXTflex™	B-Amount
+mtDNA	B-Reagent
 End	I-Reagent
 Repair	I-Reagent
 Enzyme	I-Reagent
 Mix50	I-Reagent
-μLTOTAL	I-Reagent
-.	B-Amount
+μLTOTAL	B-Amount
+.	I-Amount
 
 Mix	B-Action
 well	B-Modifier
@@ -949,7 +960,8 @@ wells	B-Location
 .	O
 
 Wash	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -963,7 +975,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -990,7 +1003,8 @@ pipette	B-Device
 .	O
 
 Wash	B-Method
-#2	I-Method
+#	I-Method
+2	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1004,7 +1018,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1151,16 +1166,15 @@ DNA	B-Reagent
 (	I-Reagent
 from	O
 section	O
-"	O
+``	O
 Clean-Up	O
-"	O
-)	O
-4.5	B-Amount
+''	O
+)	B-Amount
+4.5	I-Amount
 μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 Adenylation	I-Reagent
-Mix	I-Reagent
-20.5	I-Reagent
+Mix20.5	I-Reagent
 μLTOTAL	B-Amount
 .	I-Amount
 
@@ -1216,14 +1230,14 @@ DNA	I-Reagent
 from	O
 the	O
 above	O
-section)	O
+section	O
+)	O
 27.5	B-Amount
 μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 Ligation	I-Reagent
-Mix	I-Reagent
-2.0	B-Amount
-μLNEXTflex™	I-Amount
+Mix2.0	I-Reagent
+μLNEXTflex™	B-Amount
 mtDNA	B-Reagent
 Adapter	I-Reagent
 or	O
@@ -1331,7 +1345,8 @@ wells	I-Location
 .	O
 
 Wash	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1345,7 +1360,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1370,7 +1386,8 @@ pipette	B-Device
 .	O
 
 Wash	B-Method
-#2	I-Method
+#	I-Method
+2	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1384,7 +1401,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1578,7 +1596,8 @@ wells	I-Location
 .	I-Location
 
 Wash	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1592,7 +1611,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1617,7 +1637,8 @@ pipette	B-Device
 .	O
 
 Wash	B-Method
-#2	I-Method
+#	I-Method
+2	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1631,7 +1652,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1775,20 +1797,21 @@ Product	I-Reagent
 (	I-Reagent
 from	O
 section	O
-"	O
+``	O
 Clean-Up	O
 2	O
-"	O
-)12	B-Amount
+''	O
+)	B-Amount
+12	I-Amount
 μLNEXTflex™	I-Amount
 PCR	B-Reagent
 Master	I-Reagent
 Mix2	I-Reagent
-μLNEXTflex™	I-Reagent
-Primer	I-Reagent
+μLNEXTflex™	B-Amount
+Primer	B-Reagent
 Mix50	I-Reagent
-μLTOTAL	I-Reagent
-.	B-Amount
+μLTOTAL	B-Amount
+.	I-Amount
 
 Mix	B-Action
 well	B-Modifier
@@ -1874,7 +1897,8 @@ wells	B-Location
 .	O
 
 Wash	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1888,7 +1912,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1913,7 +1938,8 @@ pipette	B-Device
 .	O
 
 Wash	B-Method
-#2	I-Method
+#	I-Method
+2	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -1927,7 +1953,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -2119,7 +2146,8 @@ wells	I-Location
 .	O
 
 Wash	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -2133,7 +2161,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -2158,7 +2187,8 @@ pipette	B-Device
 .	O
 
 Wash	B-Method
-#2	I-Method
+#	I-Method
+2	I-Method
 :	O
 With	B-Modifier
 plate	I-Modifier
@@ -2172,7 +2202,8 @@ add	B-Action
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier

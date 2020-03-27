@@ -11,13 +11,13 @@ Label	B-Action
 (	O
 2	O
 )	O
-1.5	B-Amount
-mL	I-Amount
+1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
 intermediate	B-Method
-#1	I-Method
+#	I-Method
+1	I-Method
 &	I-Method
 2	I-Method
 .	O
@@ -35,7 +35,8 @@ diluent	I-Reagent
 to	O
 intermediate	B-Location
 tubes	I-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 &	I-Location
 2	I-Location
 .	O
@@ -61,9 +62,7 @@ inversion	B-Method
 ,	O
 do	B-Action
 not	I-Action
-vortex	I-Action
-.	O
-Concentration	B-Measure-Type
+vortex.Concentration	I-Action
 will	O
 be	O
 250ug/mL	B-Concentration
@@ -88,7 +87,8 @@ appropriate	B-Modifier
 sections	I-Modifier
 below	O
 (	O
-e.g.	O
+e.g	O
+.	O
 sections	O
 2	O
 ,	O
@@ -143,7 +143,8 @@ diluent	I-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 .	O
 
 Mix	B-Action
@@ -160,7 +161,8 @@ Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 tube	I-Location
 and	O
 add	B-Action
@@ -171,7 +173,8 @@ standard	B-Reagent
 diluent	I-Reagent
 in	O
 intermediate	B-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 tube	I-Location
 .	O
 
@@ -191,7 +194,8 @@ standard	B-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 will	O
 be	O
 25ng/mL	B-Amount
@@ -228,8 +232,7 @@ to	O
 of	O
 lab	B-Reagent
 grade	I-Reagent
-water	I-Reagent
-*	O
+water*	I-Reagent
 in	O
 the	O
 50mL	B-Amount
@@ -242,8 +245,7 @@ Buffer	I-Method
 ”	O
 .	O
 
-*	O
-Note	O
+*Note	O
 :	O
 Lab	B-Modifier
 grade	I-Modifier
@@ -329,13 +331,12 @@ Label	B-Action
 (	O
 8	O
 )	O
-1.5	B-Amount
-mL	I-Amount
+1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
-#1	B-Method
--8	I-Method
+#	B-Method
+1-8	I-Method
 (	O
 use	B-Action
 enclosed	B-Modifier
@@ -365,14 +366,15 @@ standard	B-Location
 curve	I-Location
 tubes	I-Location
 (	O
-#2	O
--8	O
+#	O
+2-8	O
 )	O
 and	O
 490uL	B-Amount
 to	O
 tube	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 (	O
 standard	O
 curve	O
@@ -385,7 +387,8 @@ Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	B-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 and	O
 add	B-Action
 to	O
@@ -395,7 +398,8 @@ incubation	B-Reagent
 buffer	I-Reagent
 in	O
 tube	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 (	O
 this	O
 will	O
@@ -446,8 +450,8 @@ incubation	B-Reagent
 buffer	I-Reagent
 in	O
 tubes	B-Location
-#2	I-Location
--7	I-Location
+#	I-Location
+2-7	I-Location
 .	O
 
 Mix	B-Action
@@ -591,11 +595,7 @@ starting	I-Modifier
 dilution	B-Reagent
 would	O
 be	O
-1:5	B-Concentration
--	I-Concentration
-1:10	I-Concentration
-.	O
-Due	O
+1:5-1:10.Due	B-Concentration
 to	O
 the	O
 format	B-Modifier
@@ -617,13 +617,13 @@ a	O
 15mL	B-Amount
 tube	B-Location
 as	O
-"	O
-Diluted	B-Method
+``	B-Method
+Diluted	I-Method
 HRP	I-Method
 Detection	I-Method
 Antibody	I-Method
-"	O
-.	O
+''	O
+.	B-Action
 
 Add	B-Action
 6mL	B-Amount
@@ -635,13 +635,13 @@ to	O
 the	O
 tube	B-Location
 labeled	B-Action
-"	O
-Diluted	B-Method
+``	B-Method
+Diluted	I-Method
 HRP	I-Method
 Detection	I-Method
 Antibody	I-Method
-"	O
-.	O
+''	O
+.	B-Action
 
 Add	B-Action
 6uL	B-Amount
@@ -745,7 +745,8 @@ blank	B-Modifier
 sample	B-Reagent
 (	O
 Std	O
-#8	O
+#	O
+8	O
 )	O
 .	O
 

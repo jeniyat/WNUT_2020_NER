@@ -3,19 +3,22 @@ Shot®	I-Modifier
 TOP10	I-Modifier
 Chemically	I-Modifier
 Competent	I-Modifier
-E	B-Reagent
-.	I-Reagent
+E.	B-Reagent
 coli	I-Reagent
 Transformation	B-Method
 
 Centrifuge	B-Action
 the	O
-vial(s	B-Location
+vial	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 containing	O
 the	O
 ligation	B-Reagent
-reaction(s	I-Reagent
+reaction	I-Reagent
+(	I-Reagent
+s	I-Reagent
 )	I-Reagent
 briefly	B-Modifier
 and	O
@@ -43,9 +46,7 @@ ligation/transformation	B-Method
 .	O
 
 Pipet	B-Action
-1	B-Amount
-–	I-Amount
-5	I-Amount
+1–5	B-Amount
 μL	I-Amount
 of	O
 each	B-Modifier
@@ -78,7 +79,9 @@ down	I-Method
 The	O
 remaining	B-Modifier
 ligation	B-Reagent
-mixture(s	I-Reagent
+mixture	I-Reagent
+(	I-Reagent
+s	I-Reagent
 )	I-Reagent
 can	O
 be	O
@@ -89,7 +92,9 @@ at	O
 
 Incubate	B-Action
 the	O
-vial(s	B-Location
+vial	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 on	O
 ice	B-Location
@@ -118,7 +123,9 @@ shake	B-Action
 .	O
 
 Remove	B-Action
-vial(s	B-Location
+vial	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 from	O
 the	O
@@ -143,11 +150,7 @@ each	B-Modifier
 vial	B-Location
 .	O
 
-S	B-Reagent
-.	I-Reagent
-O	I-Reagent
-.	I-Reagent
-C	I-Reagent
+S.O.C	B-Reagent
 is	O
 a	O
 rich	B-Modifier
@@ -165,7 +168,9 @@ contamination	I-Action
 
 Place	B-Action
 the	O
-vial(s	B-Location
+vial	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 in	O
 a	O
@@ -183,13 +188,17 @@ avoid	B-Action
 loss	I-Action
 of	O
 the	O
-vial(s	B-Location
+vial	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 .	O
 
 Shake	B-Action
 the	O
-vial(s	B-Location
+vial	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 at	O
 37°C	B-Temperature
@@ -207,9 +216,7 @@ incubator	I-Device
 .	O
 
 Spread	B-Action
-20	B-Amount
-–	I-Amount
-200	I-Amount
+20–200	B-Amount
 μL	I-Amount
 from	O
 each	B-Modifier
@@ -246,7 +253,9 @@ desired	I-Modifier
 
 Invert	B-Action
 the	O
-plate(s	B-Location
+plate	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 and	O
 incubate	B-Action

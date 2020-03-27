@@ -48,9 +48,7 @@ at	O
 until	O
 OD600	B-Measure-Type
 reaches	O
-0.3	B-Generic-Measure
--	I-Generic-Measure
-0.4	I-Generic-Measure
+0.3-0.4	B-Generic-Measure
 .	O
 
 Centrifuge	B-Action
@@ -85,8 +83,7 @@ as	I-Reagent
 described	O
 in	O
 the	O
-'	O
-Before	O
+'Before	O
 start	O
 '	O
 section	O
@@ -124,15 +121,13 @@ medium	I-Reagent
 Mix	B-Action
 200	B-Amount
 µL	I-Amount
-T	B-Reagent
-.	I-Reagent
+T.	B-Reagent
 pseudonana	I-Reagent
 cells	I-Reagent
 and	O
 200	B-Amount
 µL	I-Amount
-E	B-Reagent
-.	I-Reagent
+E.	B-Reagent
 coli	I-Reagent
 cells	I-Reagent
 in	O
@@ -154,11 +149,13 @@ times	I-Numerical
 Plate	B-Action
 on	O
 1/2xL1	B-Generic-Measure
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agar	B-Location
 plates	I-Location
 w/	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 LB	B-Reagent
 .	O
 
@@ -213,9 +210,8 @@ spreader	I-Device
 Expect	O
 to	O
 recover	B-Action
-~	B-Modifier
-500	B-Amount
-µL	I-Amount
+~500	B-Modifier
+µL	B-Amount
 co-culture	B-Reagent
 suspension	I-Reagent
 after	O
@@ -232,7 +228,8 @@ suspension	B-Reagent
 on	O
 pre-dried	B-Modifier
 1/2xL1	B-Generic-Measure
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agar	B-Location
 plates	I-Location
 w/	O
@@ -251,9 +248,8 @@ until	O
 colonies	B-Reagent
 appear	O
 -	O
-~	B-Modifier
-2	B-Time
-weeks	I-Time
+~2	B-Modifier
+weeks	B-Time
 .	O
 
 Here	O
@@ -314,8 +310,7 @@ a	O
 toothpick	B-Location
 and	O
 inoculate	B-Action
-~	B-Amount
-0.5	I-Amount
+~0.5	B-Amount
 mL	I-Amount
 L1	B-Reagent
 medium	I-Reagent
@@ -357,8 +352,7 @@ donor	B-Reagent
 DNA	I-Reagent
 by	O
 amplifying	B-Action
-E	O
-.	B-Reagent
+E.	B-Reagent
 coli-specific	I-Reagent
 genes	I-Reagent
 .	I-Reagent
@@ -380,8 +374,7 @@ sure	O
 you	O
 always	O
 run	B-Action
-E	O
-.	B-Reagent
+E.	B-Reagent
 coli	I-Reagent
 EPI300	I-Reagent
 posititve	I-Reagent
@@ -498,8 +491,7 @@ al	O
 
 -	O
 Transform	B-Action
-E	B-Reagent
-.	I-Reagent
+E.	B-Reagent
 coli	I-Reagent
 with	O
 diatom-derived	B-Modifier

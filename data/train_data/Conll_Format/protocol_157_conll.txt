@@ -22,7 +22,8 @@ sample	I-Reagent
 
 Prepare	B-Action
 a	O
-12%	B-Concentration
+12	B-Concentration
+%	I-Concentration
 polyacrylamide/urea	B-Reagent
 gel	I-Reagent
 
@@ -46,14 +47,10 @@ guide	O
 ,	O
 we	O
 use	O
-1.0	B-Size
-mm	I-Size
+1.0mm	B-Size
 for	O
 <	B-Modifier
-20µg	B-Amount
-,	O
-1.5	B-Size
-mm	I-Size
+20µg,1.5mm	B-Amount
 for	O
 >	B-Modifier
 20µg	B-Amount
@@ -74,8 +71,7 @@ and/or	I-Reagent
 33bp	I-Reagent
 oligos	I-Reagent
 (	O
-~	B-Modifier
-10,000	B-Numerical
+~10,000	B-Modifier
 counts	O
 per	O
 oligo	B-Reagent
@@ -92,7 +88,9 @@ application	O
 
 Load	B-Action
 the	O
-sample(s	B-Reagent
+sample	B-Reagent
+(	I-Reagent
+s	I-Reagent
 )	I-Reagent
 and	O
 run	B-Action
@@ -102,8 +100,7 @@ at	O
 constant	B-Modifier
 10W	B-Generic-Measure
 for	O
-1-	B-Time
-1.5	I-Time
+1-1.5	B-Time
 hrs	I-Time
 (	O
 until	O
@@ -185,8 +182,7 @@ sensitivity	I-Measure-Type
 Add	B-Action
 420µL	B-Amount
 of	O
-0.4	B-Concentration
-M	I-Concentration
+0.4M	B-Concentration
 NaCl	B-Reagent
 .	O
 
@@ -236,7 +232,8 @@ add	B-Action
 2.5	B-Amount
 volumes	I-Amount
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 Spin	B-Action
 at	O
@@ -369,11 +366,13 @@ add	B-Action
 2.5	B-Numerical
 volumes	B-Measure-Type
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 and	O
 then	O
@@ -390,7 +389,8 @@ for	O
 minutes	I-Time
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 and	O
 then	O
@@ -472,10 +472,10 @@ product	I-Reagent
 
 Prepare	B-Action
 a	O
-1.0	B-Size
-mm	I-Size
+1.0mm	B-Size
 ,	O
-12%	B-Concentration
+12	B-Concentration
+%	I-Concentration
 polyacrylamide/urea	B-Reagent
 gel	I-Reagent
 .	O
@@ -506,7 +506,9 @@ minute	I-Time
 
 Load	B-Action
 the	O
-sample(s	B-Reagent
+sample	B-Reagent
+(	I-Reagent
+s	I-Reagent
 )	I-Reagent
 and	O
 run	B-Action
@@ -516,8 +518,7 @@ at	O
 constant	B-Modifier
 10W	B-Generic-Measure
 for	O
-1.5	B-Time
--2	I-Time
+1.5-2	B-Time
 hrs	I-Time
 (	O
 until	O
@@ -572,8 +573,11 @@ including	O
 the	O
 ligated	B-Modifier
 radiolabeled	I-Modifier
-oligo(s	B-Reagent
-))	I-Reagent
+oligo	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
+)	O
 into	O
 a	O
 microcentrifuge	B-Location
@@ -614,8 +618,7 @@ marker	O
 Add	B-Action
 420µL	B-Amount
 of	O
-0.4	B-Concentration
-M	I-Concentration
+0.4M	B-Concentration
 NaCl	B-Reagent
 .	O
 
@@ -689,7 +692,8 @@ add	B-Action
 2.5	B-Amount
 volumes	I-Amount
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 .	O
 
@@ -711,7 +715,8 @@ minutes	I-Time
 
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 and	O
 then	O
@@ -784,7 +789,8 @@ minutes	I-Time
 .	O
 
 Section	O
-V:	O
+V	O
+:	O
 Gel	B-Reagent
 purification	B-Method
 of	O
@@ -800,17 +806,16 @@ product	I-Reagent
 
 Prepare	B-Action
 a	O
-1.0	B-Size
-mm	I-Size
+1.0mm	B-Size
 ,	O
-12%	B-Concentration
+12	B-Concentration
+%	I-Concentration
 polyacrylamide/urea	B-Reagent
 gel	I-Reagent
 .	O
 
 Load	B-Action
-2.5	B-Amount
-ng	I-Amount
+2.5ng	B-Amount
 of	O
 32P-labeled	B-Reagent
 Decade	I-Reagent
@@ -859,7 +864,9 @@ Figure	O
 
 Load	B-Action
 the	O
-sample(s	B-Reagent
+sample	B-Reagent
+(	I-Reagent
+s	I-Reagent
 )	I-Reagent
 and	O
 run	B-Action
@@ -912,8 +919,11 @@ including	O
 the	O
 ligated	B-Modifier
 radiolabeled	I-Modifier
-oligo(s	B-Reagent
-))	I-Reagent
+oligo	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
+)	O
 into	O
 a	O
 microcentrifuge	B-Location
@@ -933,8 +943,7 @@ speed	I-Speed
 Add	B-Action
 420µL	B-Amount
 of	O
-0.4	B-Concentration
-M	I-Concentration
+0.4M	B-Concentration
 NaCl	B-Reagent
 .	O
 
@@ -990,7 +999,8 @@ add	B-Action
 2.5	B-Amount
 volumes	I-Amount
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 .	O
 
@@ -1029,8 +1039,7 @@ and	O
 resuspend	B-Action
 pellet	B-Reagent
 in	O
-6.3	B-Amount
-µL	I-Amount
+6.3µL	B-Amount
 DEPC-MilliQ	B-Reagent
 H20	I-Reagent
 .	O
@@ -1085,8 +1094,7 @@ minutes	I-Time
 .	O
 
 Add	B-Action
-8.4	B-Amount
-µL	I-Amount
+8.4µL	B-Amount
 Reverse	B-Reagent
 Transcriptase	I-Reagent
 (	I-Reagent
@@ -1120,13 +1128,15 @@ RT	I-Reagent
 (	O
 Invitrogen	B-Reagent
 )	O
-(+RT	B-Generic-Measure
+(	O
++RT	B-Generic-Measure
 )	O
 or	O
 1µL	B-Amount
 DEPC-MilliQ	B-Reagent
 H20	I-Reagent
-(-RT	B-Generic-Measure
+(	O
+-RT	B-Generic-Measure
 control	I-Generic-Measure
 )	O
 .	O
@@ -1183,8 +1193,7 @@ cDNA	B-Reagent
 
 Using	O
 a	O
-1.8	B-Generic-Measure
-X	I-Generic-Measure
+1.8X	B-Generic-Measure
 ratio	I-Generic-Measure
 ,	O
 clean	B-Action
@@ -1195,7 +1204,8 @@ products	I-Reagent
 following	O
 the	O
 manufacture	O
-’s	O
+’	O
+s	O
 instructions	O
 .	O
 

@@ -8,9 +8,8 @@ collection	I-Method
 
 Equilibrate	B-Action
 DNA	B-Reagent
-~	B-Modifier
-30	B-Time
-min	I-Time
+~30	B-Modifier
+min	B-Time
 at	O
 room	B-Temperature
 temp	I-Temperature
@@ -51,22 +50,30 @@ BspQI	I-Reagent
 :	O
 5-7u	B-Amount
 (	O
-BNG3)Cell	B-Reagent
+BNG3	B-Reagent
+)	O
+Cell	B-Reagent
 line	I-Reagent
 BspQI	I-Reagent
 :	O
 3-5u	B-Amount
 (	O
-BNG3)Other	B-Reagent
+BNG3	B-Reagent
+)	O
+Other	B-Reagent
 BspQI	I-Reagent
 :	O
 5-10u	B-Amount
 (	O
-BNG3)BbvCI	B-Reagent
+BNG3	B-Reagent
+)	O
+BbvCI	B-Reagent
 :	O
 4-8u	B-Amount
 (	O
-BNG2)Q+C	B-Reagent
+BNG2	B-Reagent
+)	O
+Q+C	B-Reagent
 :	O
 3/2	B-Amount
 ,	O
@@ -133,14 +140,10 @@ Mix	I-Reagent
 
 reagentamount10x	B-Reagent
 labeling	I-Reagent
-buffer	I-Reagent
-1.5	B-Amount
-μL10x	I-Amount
-labeling	B-Reagent
-mix	I-Reagent
-1.5	B-Amount
-μLTaq	I-Amount
-5u/μL1μLH201μL	I-Amount
+buffer1.5μL10x	I-Reagent
+labeling	I-Reagent
+mix1.5μLTaq	I-Reagent
+5u/μL1μLH201μL	B-Amount
 .	O
 
 Add	B-Action
@@ -192,20 +195,12 @@ Mix	I-Reagent
 
 reagentamount10x	B-Reagent
 Thermo	I-Reagent
-Pol	I-Reagent
-0.5	B-Amount
-μL50x	I-Amount
-Repair	B-Reagent
-Mix	I-Reagent
-0.4	B-Amount
-μL50mM	I-Amount
-NAD+	B-Reagent
-0.4	B-Amount
-μLTaq	I-Amount
-DNA	B-Reagent
-ligase1μLH	I-Reagent
-202.7	I-Reagent
-μL	B-Amount
+Pol0.5μL50x	I-Reagent
+Repair	I-Reagent
+Mix0.4μL50mM	I-Reagent
+NAD+0.4μLTaq	I-Reagent
+DNA	I-Reagent
+ligase1μLH202.7μL	I-Reagent
 .	O
 
 Mix	B-Action
@@ -301,11 +296,7 @@ reagentamount4x	B-Reagent
 flow	I-Reagent
 buffer15μL1M	I-Reagent
 DTT12μLDNA	I-Reagent
-stain	I-Reagent
-1.5	B-Amount
-μLH2O	I-Amount
-11.5	I-Amount
-μL	I-Amount
+stain1.5μLH2O11.5μL	I-Reagent
 .	O
 
 Aliquot	B-Action
@@ -317,8 +308,7 @@ Master	I-Reagent
 Mix	I-Reagent
 into	O
 a	O
-0.6	B-Amount
-mL	I-Amount
+0.6mL	B-Amount
 amber	B-Location
 tube	I-Location
 .	O
@@ -378,8 +368,7 @@ to	O
 room	B-Temperature
 temp	I-Temperature
 for	O
-~	B-Time
-30	I-Time
+~30	B-Time
 min	I-Time
 .	O
 
@@ -480,7 +469,8 @@ conc	B-Measure-Type
 
 CV	B-Measure-Type
 <	B-Modifier
-25%	B-Generic-Measure
+25	B-Generic-Measure
+%	I-Generic-Measure
 .	O
 
 Load	B-Action

@@ -8,8 +8,7 @@ Filter	B-Action
 cesium	B-Reagent
 solutions	I-Reagent
 with	O
-0.02	B-Size
-µm	I-Size
+0.02µm	B-Size
 filter	B-Device
 .	O
 
@@ -36,7 +35,8 @@ from	O
 top	O
 to	O
 bottom	O
-):	O
+)	O
+:	O
 1ml	B-Amount
 of	I-Amount
 1.7	B-Concentration
@@ -59,9 +59,8 @@ layer	O
 of	B-Amount
 1.35	I-Amount
 g/ml	B-Concentration
-8.5	I-Concentration
-ml	B-Amount
-of	I-Amount
+8.5ml	I-Concentration
+of	B-Amount
 1.15	I-Amount
 g/ml	B-Concentration
 -	I-Concentration
@@ -95,17 +94,13 @@ at	O
 4°C	B-Temperature
 ,	O
 approximately	B-Modifier
-60-	B-Speed
-80,000	I-Speed
-xg	I-Speed
+60-80,000xg	B-Speed
 .	O
 
 Pierce	B-Action
 tube	B-Location
 at	O
-1.7	B-Generic-Measure
-/	I-Generic-Measure
-1.5	I-Generic-Measure
+1.7/1.5	B-Generic-Measure
 g/ml	I-Generic-Measure
 interface	B-Measure-Type
 .	O
@@ -153,11 +148,11 @@ and	O
 500	B-Amount
 µl	I-Amount
 from	O
-"	B-Reagent
+``	B-Reagent
 upper	I-Reagent
-"	I-Reagent
+''	I-Reagent
 layers	I-Reagent
-.	O
+.	B-Action
 
 Store	B-Action
 in	O
@@ -228,10 +223,7 @@ to	O
 phage	B-Reagent
 sample	I-Reagent
 (	O
-1.2	B-Amount
--	I-Amount
-1.5	I-Amount
-ml	I-Amount
+1.2-1.5ml	B-Amount
 )	O
 .	O
 
@@ -265,16 +257,16 @@ Transfer	B-Action
 all	B-Modifier
 to	O
 new	B-Modifier
-"	B-Location
+``	B-Location
 oak	I-Location
 ridge	I-Location
-"	I-Location
+''	I-Location
 tube	I-Location
 for	O
-faster	O
-centrifugation	B-Method
+faster	B-Method
+centrifugation	I-Method
 later	O
-.	O
+.	B-Action
 
 Add	B-Action
 0.1	B-Amount
@@ -285,8 +277,8 @@ TrisHCL	B-Reagent
 (	O
 pH	B-pH
 8.5	I-pH
-)/	O
-0.2	B-Concentration
+)	O
+/0.2	B-Concentration
 M	I-Concentration
 EDTA	B-Reagent
 .	O
@@ -327,7 +319,8 @@ volumes	I-Amount
 of	O
 room	B-Temperature
 temperature	I-Temperature
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 .	O
 
@@ -345,7 +338,8 @@ minutes	I-Time
 
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 ,	O
 two	B-Numerical
@@ -376,7 +370,8 @@ Add	B-Action
 30	B-Amount
 µl	I-Amount
 of	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 SDS	B-Reagent
 and	O
 3	B-Amount
@@ -529,7 +524,8 @@ cold	B-Location
 
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 .	O
 
@@ -540,7 +536,8 @@ in	O
 Sigma	B-Reagent
 water	I-Reagent
 Check	B-Action
-O.D.	B-Measure-Type
+O.D	B-Measure-Type
+.	O
 using	O
 the	O
 Nanodrop	B-Device

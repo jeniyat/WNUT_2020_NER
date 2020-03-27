@@ -11,13 +11,13 @@ Label	B-Action
 (	O
 2	B-Numerical
 )	O
-1.5	B-Amount
-mL	I-Amount
+1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
 intermediate	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 &	I-Location
 2	I-Location
 .	O
@@ -36,7 +36,8 @@ diluent	I-Reagent
 to	O
 intermediate	B-Location
 tubes	I-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 &	I-Location
 2	I-Location
 .	O
@@ -140,7 +141,8 @@ diluent	I-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 .	O
 
 Mixwell	B-Action
@@ -156,7 +158,8 @@ Remove	B-Action
 10ml	B-Amount
 from	O
 intermediate	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 tube	I-Location
 and	O
 add	B-Action
@@ -167,7 +170,8 @@ standard	B-Reagent
 diluent	I-Reagent
 in	O
 intermediate	B-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 tube	I-Location
 .	O
 
@@ -189,7 +193,8 @@ standard	B-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 will	O
 be	O
 25ng/mL	B-Concentration
@@ -226,8 +231,7 @@ to	O
 of	O
 lab	B-Reagent
 grade	I-Reagent
-water	I-Reagent
-*	O
+water*	I-Reagent
 in	O
 the	O
 50mL	B-Amount
@@ -240,8 +244,7 @@ Buffer	I-Modifier
 ”	I-Modifier
 .	I-Modifier
 
-*	O
-Note	O
+*Note	O
 :	O
 Lab	B-Reagent
 grade	I-Reagent
@@ -327,13 +330,12 @@ Label	B-Action
 (	O
 8	B-Numerical
 )	O
-1.5	B-Amount
-mL	I-Amount
+1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
-#1	B-Location
--8	I-Location
+#	B-Location
+1-8	I-Location
 (	O
 use	O
 enclosed	B-Modifier
@@ -363,14 +365,15 @@ standard	B-Location
 curve	I-Location
 tubes	I-Location
 (	I-Location
-#2	I-Location
--8	I-Location
+#	I-Location
+2-8	I-Location
 )	I-Location
 and	O
 490mL	B-Amount
 to	O
 tube	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 (	O
 standard	O
 curve	O
@@ -383,7 +386,8 @@ Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	B-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 and	O
 add	B-Action
 to	O
@@ -393,7 +397,8 @@ incubation	B-Reagent
 buffer	I-Reagent
 in	O
 tube	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 (	O
 this	O
 will	O
@@ -444,8 +449,8 @@ of	O
 incubationbuffer	B-Reagent
 in	O
 tubes	B-Location
-#2	I-Location
--7	I-Location
+#	I-Location
+2-7	I-Location
 .	I-Location
 
 Mix	B-Action
@@ -588,9 +593,7 @@ starting	I-Modifier
 dilution	B-Method
 would	O
 be	O
-1:5	B-Numerical
--	I-Numerical
-1:10	I-Numerical
+1:5-1:10	B-Numerical
 .	O
 
 Due	O
@@ -748,7 +751,8 @@ blank	I-Reagent
 sample	I-Reagent
 (	O
 Std	B-Reagent
-#8	I-Reagent
+#	I-Reagent
+8	I-Reagent
 )	O
 .	O
 
@@ -886,8 +890,7 @@ use	O
 i	O
 .	O
 Add	B-Action
-5.5	B-Amount
-mL	I-Amount
+5.5mL	B-Amount
 of	O
 substrate	B-Reagent
 A	I-Reagent
@@ -901,8 +904,7 @@ tube	I-Location
 ii	O
 .	O
 Add	B-Action
-5.5	B-Amount
-mL	I-Amount
+5.5mL	B-Amount
 of	O
 substrate	B-Reagent
 B	I-Reagent
@@ -1055,7 +1057,9 @@ manufacturers	I-Modifier
 please	O
 consult	B-Action
 your	O
-owner’smanual	B-Method
+owner	B-Method
+’	I-Method
+smanual	I-Method
 prior	B-Modifier
 to	I-Modifier
 performing	I-Modifier

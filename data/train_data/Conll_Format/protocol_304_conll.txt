@@ -80,8 +80,8 @@ biomass	B-Measure-Type
 is	O
 to	O
 assume	O
-~	B-Modifier
-10%	B-Numerical
+~10	B-Modifier
+%	B-Numerical
 recovery	B-Method
 of	O
 cells	B-Reagent
@@ -147,9 +147,8 @@ cycle	O
 light	B-Measure-Type
 irradiance	I-Measure-Type
 of	O
-~	B-Modifier
-100	B-Generic-Measure
-µE	I-Generic-Measure
+~100	B-Modifier
+µE	B-Generic-Measure
 m-2	I-Generic-Measure
 s-1	I-Generic-Measure
 .	O
@@ -177,18 +176,17 @@ Day12345678910	O
 Initial	O
 density	B-Measure-Type
 (	B-Generic-Measure
-mL-1)3x107Skip	I-Generic-Measure
-1.5	I-Generic-Measure
-x1071x1079x1068x1061x1079x1061x	I-Generic-Measure
-1071.4	I-Generic-Measure
-x107	I-Generic-Measure
+mL-1	I-Generic-Measure
+)	I-Generic-Measure
+3x107Skip1.5x1071x1079x1068x1061x1079x1061x1071.4x107	I-Generic-Measure
 .	O
 
 Growth	B-Measure-Type
 Rate	I-Measure-Type
 (	O
-d-1)NA	B-Generic-Measure
-0.5270.6280.5580.3840.7200.6390.5540.261	I-Generic-Measure
+d-1	B-Generic-Measure
+)	I-Generic-Measure
+NA0.5270.6280.5580.3840.7200.6390.5540.261	I-Generic-Measure
 .	I-Generic-Measure
 
 Dilution/	B-Action
@@ -198,21 +196,23 @@ TransferTransDilDilTransDilDilDilNA	I-Action
 Final	O
 density	B-Measure-Type
 (	B-Generic-Measure
-mL-1)5x1065x1065x1065x1065x1065x1065x1061x107	I-Generic-Measure
+mL-1	I-Generic-Measure
+)	I-Generic-Measure
+5x1065x1065x1065x1065x1065x1065x1061x107	I-Generic-Measure
 .	O
 
 Volume	B-Measure-Type
 (	B-Amount
-mL)30x386x3172x380x9125x9257x9401x9401x	I-Amount
-93.6	I-Amount
+mL	I-Amount
+)	I-Amount
+30x386x3172x380x9125x9257x9401x9401x93.6	I-Amount
 L	I-Amount
 (	O
 use	O
 !	O
 )	O
-~	B-Modifier
-7	B-Generic-Measure
-generations	I-Generic-Measure
+~7	B-Modifier
+generations	B-Generic-Measure
 of	O
 growth	O
 prior	O
@@ -383,8 +383,7 @@ ramp	O
 up	O
 )	O
 ,	O
-*	O
-strain	B-Reagent
+*strain	B-Reagent
 specificTemp	B-Measure-Type
 =	O
 +20/+25°C	B-Temperature
@@ -471,9 +470,7 @@ bottle	B-Location
 .	O
 
 Repeat	O
-2-8	O
-.	O
-Resuspend	B-Action
+2-8.Resuspend	B-Action
 cells	B-Reagent
 with	O
 a	O
@@ -484,8 +481,8 @@ deplete	I-Reagent
 medium	I-Reagent
 that	O
 is	O
-~	B-Modifier
-5%	B-Amount
+~5	B-Modifier
+%	B-Amount
 of	O
 the	O
 initial	O
@@ -701,10 +698,12 @@ tube	I-Location
 Add	B-Action
 10	B-Amount
 µL	I-Amount
-25%	B-Concentration
+25	B-Concentration
+%	I-Concentration
 glutaraldehyde	B-Reagent
 (	O
-0.25%	B-Concentration
+0.25	B-Concentration
+%	I-Concentration
 final	O
 conc	B-Measure-Type
 )	O
@@ -823,8 +822,7 @@ fiber	I-Device
 filter	I-Device
 .	O
 
-*	O
-Use	B-Action
+*Use	B-Action
 ethanol-cleaned	B-Modifier
 forceps	B-Device
 in	O
@@ -945,10 +943,12 @@ add	B-Action
 100	B-Amount
 µL	I-Amount
 of	O
-37%	B-Concentration
+37	B-Concentration
+%	I-Concentration
 formaldehyde	B-Reagent
 (	O
-3.7%	B-Concentration
+3.7	B-Concentration
+%	I-Concentration
 final	O
 conc	O
 )	O

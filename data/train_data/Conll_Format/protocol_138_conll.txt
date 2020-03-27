@@ -23,9 +23,7 @@ at	I-Action
 room	B-Temperature
 temperature	I-Temperature
 for	I-Temperature
-2	O
-–	B-Time
-3	I-Time
+2–3	B-Time
 minutes	I-Time
 .	I-Time
 
@@ -124,9 +122,7 @@ a	O
 lower	B-Modifier
 ,	I-Modifier
 red	I-Modifier
-phenol	B-Reagent
-–	I-Reagent
-chloroform	I-Reagent
+phenol–chloroform	B-Reagent
 phase	I-Reagent
 ,	O
 an	O
@@ -152,15 +148,13 @@ aqueous	B-Reagent
 upper	I-Reagent
 phase	I-Reagent
 is	O
-~	B-Modifier
-600	B-Amount
-μL	I-Amount
+~600	B-Modifier
+μL	B-Amount
 .	O
 
 Transfer	B-Action
-~	B-Modifier
-600	B-Amount
-μL	I-Amount
+~600	B-Modifier
+μL	B-Amount
 of	O
 the	O
 colorless	B-Modifier
@@ -182,7 +176,8 @@ an	O
 equal	B-Amount
 volume	I-Amount
 of	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 obtain	B-Action
@@ -191,7 +186,8 @@ final	O
 ethanol	B-Reagent
 concentration	B-Measure-Type
 of	O
-35%	B-Concentration
+35	B-Concentration
+%	I-Concentration
 .	O
 
 Mix	B-Action
@@ -258,9 +254,7 @@ temperature	I-Temperature
 
 Discard	B-Action
 the	O
-flow	B-Reagent
-–	I-Reagent
-through	I-Reagent
+flow–through	B-Reagent
 and	O
 reinsert	B-Action
 the	O
@@ -305,8 +299,7 @@ frit	I-Location
 .	O
 
 Add	B-Action
-350	B-Amount
-*	I-Amount
+350*	B-Amount
 μL	I-Amount
 Wash	I-Amount
 Buffer	B-Reagent
@@ -350,8 +343,7 @@ Collection	B-Location
 Tube	I-Location
 .	O
 
-*	O
-Without	O
+*Without	O
 DNAse	B-Method
 treatment	I-Method
 in	O
@@ -506,9 +498,7 @@ Tube	I-Location
 
 Add	B-Action
 30	B-Generic-Measure
-μL	I-Generic-Measure
-–	I-Generic-Measure
-3	I-Generic-Measure
+μL–3	I-Generic-Measure
 ×	I-Generic-Measure
 100	I-Generic-Measure
 μL	I-Generic-Measure
@@ -552,8 +542,7 @@ for	O
 2	B-Time
 minutes	I-Time
 at	O
-≥	B-Speed
-12,000	I-Speed
+≥12,000	B-Speed
 ×	I-Speed
 g	I-Speed
 at	O
@@ -600,8 +589,7 @@ the	O
 purified	B-Modifier
 RNA	B-Reagent
 at	O
-–	B-Temperature
-80°C	I-Temperature
+–80°C	B-Temperature
 .	O
 
 Note	O
@@ -677,8 +665,7 @@ These	B-Mention
 will	O
 be	O
 your	O
-'	O
-working	B-Reagent
+'working	B-Reagent
 samples	I-Reagent
 '	O
 .	O
@@ -822,8 +809,7 @@ here	O
 Fracture	B-Action
 piece	O
 in	O
-'	O
-two	B-Reagent
+'two	B-Reagent
 '	I-Reagent
 and	O
 allocate	B-Action
@@ -863,7 +849,8 @@ volume	B-Measure-Type
 should	O
 not	O
 exceed	O
-10%	B-Amount
+10	B-Amount
+%	I-Amount
 of	O
 the	O
 volume	B-Measure-Type
@@ -885,8 +872,7 @@ tissue	B-Reagent
 to	O
 be	O
 the	O
-'	O
-sample	B-Reagent
+'sample	B-Reagent
 '	O
 so	O
 if	O
@@ -1106,9 +1092,8 @@ per	I-Reagent
 TRIZOL	B-Amount
 )	B-Reagent
 ,	I-Reagent
-96	I-Reagent
-–	I-Reagent
-100%	B-Concentration
+96–100	I-Reagent
+%	B-Concentration
 ethanol	I-Concentration
 ,	B-Reagent
 need	I-Reagent
@@ -1130,9 +1115,8 @@ lysis	O
 add	B-Method
 60	I-Method
 mL	I-Method
-96	B-Action
-–	I-Action
-100%	B-Amount
+96–100	B-Action
+%	B-Amount
 ethanol	B-Concentration
 to	B-Reagent
 Wash	I-Reagent
@@ -1167,7 +1151,8 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 .	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 (	O
 in	O
@@ -1210,9 +1195,7 @@ included	I-Reagent
 .	O
 
 For	O
-shor	B-Modifier
-t-t	I-Modifier
-erm	I-Modifier
+short-term	B-Modifier
 storage	B-Method
 ,	O
 store	B-Action
@@ -1335,14 +1318,17 @@ Extractions	I-Method
 BioSpec	O
 Zirconia	O
 Beads	O
-11079107ZX)DNA	B-Location
+11079107ZX	O
+)	O
+DNA	B-Location
 Extraction	I-Location
 Tubes	I-Location
 with	I-Location
 buffer	B-Reagent
 (	I-Reagent
 MoBio	I-Reagent
-12888-100-PBT)	O
+12888-100-PBT	O
+)	O
 1.5	O
 mL	B-Amount
 RNase-free	I-Amount
@@ -1438,7 +1424,9 @@ sterilizing	I-Action
 (	O
 heavy	B-Device
 gauge	I-Device
-syringe)Agilent	I-Device
+syringe	I-Device
+)	O
+Agilent	B-Device
 Bioanalyzer	I-Device
 RNA	I-Device
 and	O
@@ -1542,8 +1530,7 @@ minutes	I-Time
 .	O
 
 Add	B-Action
-350	B-Amount
-*	I-Amount
+350*	B-Amount
 μL	I-Amount
 Wash	I-Amount
 Buffer	B-Reagent
@@ -1587,8 +1574,7 @@ Collection	B-Location
 Tube	I-Location
 .	O
 
-*	O
-Without	O
+*Without	O
 DNAse	B-Method
 treatment	I-Method
 in	O

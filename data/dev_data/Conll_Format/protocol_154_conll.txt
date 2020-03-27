@@ -47,13 +47,10 @@ mixing	B-Action
 buffer	B-Reagent
 A+B+C	I-Reagent
 (	O
-2.5	B-Concentration
-:	I-Concentration
-2.5	I-Concentration
-:	I-Concentration
-1	I-Concentration
+2.5:2.5:1	B-Concentration
 +	O
-0.1%	B-Concentration
+0.1	B-Concentration
+%	I-Concentration
 PVP	B-Reagent
 final	B-Modifier
 )	O
@@ -187,8 +184,7 @@ mins	I-Time
 Transfer	B-Action
 supernatant	B-Reagent
 (	O
-~	B-Modifier
-400ul	B-Amount
+~400ul	B-Modifier
 )	O
 to	O
 fresh	B-Modifier
@@ -229,7 +225,8 @@ wash	B-Action
 with	O
 1mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 ,	O
 invert	B-Action
@@ -260,7 +257,8 @@ wash	B-Action
 with	O
 1mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 ,	O
 invert	B-Action
@@ -333,9 +331,7 @@ vortex	B-Action
 as	O
 it	B-Mention
 shears	B-Action
-DNA	B-Reagent
-.	O
-Store	B-Action
+DNA.Store	B-Reagent
 at	O
 -20oC	B-Temperature
 .	O

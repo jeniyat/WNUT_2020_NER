@@ -4,8 +4,7 @@ Extraction	B-Method
 Protocol	O
 from	O
 25mm	B-Size
-0.2	I-Size
-µm	I-Size
+0.2µm	I-Size
 filters	B-Device
 
 Prepare	B-Action
@@ -71,8 +70,8 @@ Incubate	B-Action
 37°C	B-Temperature
 for	O
 30	B-Time
-min	I-Time
-.,	O
+min.	I-Time
+,	O
 rotating	B-Modifier
 end	I-Modifier
 over	I-Modifier
@@ -117,7 +116,8 @@ mg/ml	I-Concentration
 Add	B-Action
 29.9	B-Amount
 µl	I-Amount
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 SDS	B-Reagent
 to	O
 a	O
@@ -125,7 +125,8 @@ final	B-Modifier
 conc	B-Measure-Type
 .	O
 of	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 .	O
 
 Incubate	B-Action
@@ -180,8 +181,8 @@ Add	B-Action
 µl	I-Amount
 Buffer	B-Reagent
 AL	I-Reagent
-(=	O
-Buffer	B-Reagent
+(	O
+=Buffer	B-Reagent
 AL/E	I-Reagent
 without	B-Modifier
 the	I-Modifier
@@ -210,7 +211,8 @@ mins	I-Time
 Add	B-Action
 300	B-Amount
 µl	I-Amount
-96-100%	B-Concentration
+96-100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 .	O
 
@@ -402,12 +404,12 @@ top	B-Location
 of	O
 rack	B-Location
 of	O
-"	B-Location
+``	B-Location
 elution	I-Location
 microtubes	I-Location
 RS	I-Location
-"	I-Location
-.	I-Location
+''	I-Location
+.	B-Action
 
 Add	B-Action
 200	B-Amount
@@ -451,7 +453,9 @@ total	O
 yield	O
 up	O
 to	O
-25%)	B-Generic-Measure
+25	B-Generic-Measure
+%	I-Generic-Measure
+)	O
 or	O
 if	O
 you	O
@@ -491,7 +495,9 @@ total	O
 yield	O
 approx	O
 .	O
-15%)	B-Generic-Measure
+15	B-Generic-Measure
+%	I-Generic-Measure
+)	O
 .	O
 
 Can	O
@@ -568,9 +574,8 @@ Hg	I-Generic-Measure
 until	O
 dry	O
 (	O
-~	B-Modifier
-20-30	B-Time
-min	I-Time
+~20-30	B-Modifier
+min	B-Time
 .	O
 )	O
 

@@ -11,7 +11,8 @@ autoclaved	B-Reagent
 seawater	I-Reagent
 media	I-Reagent
 (	O
-e.g.	O
+e.g	O
+.	O
 f/2	B-Generic-Measure
 media	B-Reagent
 )	O
@@ -31,8 +32,7 @@ to	O
 a	O
 density	B-Generic-Measure
 of	I-Generic-Measure
-~	I-Generic-Measure
-1x106	I-Generic-Measure
+~1x106	I-Generic-Measure
 cells/mL	I-Generic-Measure
 -	O
 optimization	B-Method
@@ -45,7 +45,9 @@ achieving	B-Action
 a	O
 lower	B-Modifier
 cell	I-Modifier
-density]Gently	I-Modifier
+density	I-Modifier
+]	O
+Gently	B-Modifier
 filter	B-Action
 culture	B-Reagent
 through	O
@@ -125,8 +127,7 @@ media	B-Reagent
 Resuspend	B-Action
 pellet	B-Reagent
 in	O
-~	B-Amount
-7ml	I-Amount
+~7ml	B-Amount
 10M	B-Concentration
 NH4F	B-Reagent
 .	O
@@ -144,7 +145,8 @@ minutes	I-Time
 .	O
 
 Centrifuge	B-Action
-@1200	B-Speed
+@	O
+1200	B-Speed
 x	I-Speed
 g	I-Speed
 @	O
@@ -172,11 +174,12 @@ mls	I-Amount
 )	O
 ,	O
 centrifuge	B-Action
-@1200	B-Speed
+@	O
+1200	B-Speed
 x	I-Speed
 g	I-Speed
-@4	B-Temperature
-°C	I-Temperature
+@	O
+4°C	B-Temperature
 in	B-Modifier
 between	I-Modifier
 rinses	I-Modifier
@@ -221,7 +224,8 @@ Bottom	B-Reagent
 Layer	I-Reagent
 Solution	I-Reagent
 (	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 Percoll	B-Reagent
 )	O
 to	O
@@ -243,7 +247,8 @@ Top	B-Reagent
 Layer	I-Reagent
 Solution	I-Reagent
 (	O
-40%	B-Concentration
+40	B-Concentration
+%	I-Concentration
 Percoll	B-Reagent
 )	O
 and	O
@@ -255,7 +260,8 @@ Top	B-Reagent
 Layer	I-Reagent
 to	O
 the	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 Percoll	B-Reagent
 layer	I-Reagent
 using	O
@@ -303,11 +309,10 @@ minutes	I-Time
 brake	B-Method
 off	I-Method
 (	O
-@4	B-Temperature
-°C	I-Temperature
+@	O
+4°C	B-Temperature
 )	O
-.	O
-R	O
+.R	O
 
 ecover	B-Action
 intact	B-Reagent
@@ -360,8 +365,8 @@ at	O
 1000	B-Speed
 x	I-Speed
 g	I-Speed
-@4	B-Temperature
-°C	I-Temperature
+@	O
+4°C	B-Temperature
 for	O
 five	B-Time
 minutes	I-Time

@@ -12,7 +12,9 @@ cells	I-Reagent
 overnight	B-Time
 with	O
 pSP64	B-Reagent
-poly(A	I-Reagent
+poly	I-Reagent
+(	I-Reagent
+A	I-Reagent
 )	I-Reagent
 plasmid	I-Reagent
 containing	O
@@ -48,9 +50,10 @@ EcoRI	B-Reagent
 compatible	I-Reagent
 buffer	I-Reagent
 with	O
-~	B-Modifier
-3ug	B-Amount
-pSP64-NSERT-poly(A	B-Reagent
+~3ug	B-Modifier
+pSP64-NSERT-poly	B-Reagent
+(	I-Reagent
+A	I-Reagent
 )	I-Reagent
 and	O
 5ul	B-Amount
@@ -76,13 +79,13 @@ below	O
 
 Pour	B-Action
 a	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
 and	O
 run	B-Action
-~	B-Modifier
-100ng	B-Amount
+~100ng	B-Modifier
 of	O
 digest	B-Reagent
 and	I-Reagent
@@ -151,13 +154,12 @@ optimized	O
 buffer4ul	B-Concentration
 20ulDTT	B-Amount
 (	B-Reagent
-100mM)2ul	I-Reagent
+100mM	I-Reagent
+)	B-Concentration
+2ul	I-Concentration
 10ulRecombinant	B-Amount
-RNasin	B-Reagent
-0.75	I-Reagent
-ul	B-Amount
-3.75	I-Amount
-ul10mM	I-Amount
+RNasin0.75ul	B-Reagent
+3.75ul10mM	B-Amount
 rATP1ul	B-Concentration
 5ul10mM	B-Reagent
 rUTP1ul	B-Amount
@@ -167,7 +169,9 @@ rCTP1ul	B-Amount
 rGTP1ul	B-Amount
 5ul4tUTP	B-Reagent
 (	B-Amount
-10mM)2ul	I-Amount
+10mM	I-Amount
+)	B-Reagent
+2ul	I-Reagent
 10ulSP6	B-Concentration
 RNA	B-Amount
 Polymerase1ul	I-Amount
@@ -178,8 +182,7 @@ Make	B-Action
 new	B-Modifier
 tubes	B-Location
 of	O
-6.25	B-Amount
-ul	I-Amount
+6.25ul	B-Amount
 of	O
 linarized	B-Reagent
 plasmid	I-Reagent
@@ -199,8 +202,7 @@ the	O
 provided	B-Reagent
 standard	I-Reagent
 with	O
-5.25	B-Amount
-ul	I-Amount
+5.25ul	B-Amount
 of	O
 water	B-Reagent
 .	O
@@ -217,8 +219,7 @@ ng/ul	I-Concentration
 .	O
 
 Add	B-Action
-13.75	B-Amount
-ul	I-Amount
+13.75ul	B-Amount
 of	O
 SP6	B-Reagent
 reaction	I-Reagent
@@ -308,9 +309,9 @@ all	O
 .	O
 
 Add	B-Action
-~	B-Modifier
-500ul	B-Amount
-80%	B-Concentration
+~500ul	B-Modifier
+80	B-Concentration
+%	I-Concentration
 etOH	B-Reagent
 onto	O
 beads	B-Reagent
@@ -318,9 +319,8 @@ beads	B-Reagent
 
 Let	O
 sit	B-Action
-~	B-Modifier
-30	B-Time
-seconds	I-Time
+~30	B-Modifier
+seconds	B-Time
 ,	O
 then	O
 aspirate	B-Action
@@ -328,9 +328,9 @@ off	O
 .	O
 
 Add	B-Action
-~	B-Modifier
-500ul	B-Amount
-80%	B-Concentration
+~500ul	B-Modifier
+80	B-Concentration
+%	I-Concentration
 etOH	B-Reagent
 onto	O
 beads	B-Reagent
@@ -338,9 +338,8 @@ beads	B-Reagent
 
 Let	O
 sit	B-Action
-~	B-Modifier
-30	B-Time
-seconds	I-Time
+~30	B-Modifier
+seconds	B-Time
 ,	O
 then	O
 aspirate	B-Action
@@ -390,10 +389,10 @@ H_2O	I-Reagent
 .	O
 
 Run	B-Action
-~	B-Modifier
-3ul	B-Amount
+~3ul	B-Modifier
 on	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 TAE	I-Reagent
 gel	I-Reagent
@@ -429,8 +428,7 @@ qubit	B-Device
 dilute	B-Action
 .	O
 
-0.1	B-Concentration
-ng/ul	I-Concentration
+0.1ng/ul	B-Concentration
 is	O
 a	O
 good	O
@@ -459,8 +457,7 @@ success	O
 with	O
 1ng	B-Amount
 for	O
-~	B-Modifier
-5e7	B-Numerical
+~5e7	B-Modifier
 cells	B-Reagent
 (	O
 for	O

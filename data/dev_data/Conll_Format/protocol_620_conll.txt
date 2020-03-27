@@ -138,8 +138,7 @@ tubes	I-Location
 .	O
 
 Add	B-Action
-0.5	B-Amount
-ml	I-Amount
+0.5ml	B-Amount
 Milton	B-Reagent
 solution	I-Reagent
 to	O
@@ -220,7 +219,9 @@ strainer	I-Device
 
 Rinse	B-Action
 the	O
-Eppendorf(s	B-Location
+Eppendorf	B-Location
+(	I-Location
+s	I-Location
 )	I-Location
 and	O
 strainer	B-Device
@@ -664,8 +665,7 @@ with	O
 Acetosyringone	B-Reagent
 :	O
 (	O
-~	B-Size
-20	I-Size
+~20	B-Size
 ''	I-Size
 plus	O
 6	B-Time
@@ -677,11 +677,14 @@ up	I-Action
 in	O
 the	O
 morning	B-Time
-):	O
+)	O
+:	O
 Centrifuge	B-Action
 the	O
 agrobacterium	B-Reagent
-culture(s	I-Reagent
+culture	I-Reagent
+(	I-Reagent
+s	I-Reagent
 )	I-Reagent
 10	I-Reagent
 ''	I-Reagent

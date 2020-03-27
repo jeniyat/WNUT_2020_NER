@@ -53,8 +53,7 @@ mm	I-Size
 flow	I-Size
 cell	B-Location
 )	I-Location
-.	O
-Use	O
+.Use	O
 a	O
 kimwipe	B-Location
 or	I-Location
@@ -69,9 +68,7 @@ portion	I-Location
 of	I-Location
 the	O
 flow	B-Location
-cell	I-Location
-.	I-Location
-Insert	I-Location
+cell.Insert	I-Location
 glass	B-Action
 portion	B-Location
 of	I-Location
@@ -82,9 +79,7 @@ into	I-Location
 the	O
 flow	B-Location
 cell	I-Location
-holder	I-Location
-.	I-Location
-Secure	I-Location
+holder.Secure	I-Location
 flow	B-Action
 cell	B-Location
 by	I-Location
@@ -179,9 +174,7 @@ use	B-Action
 the	O
 corresponding	O
 10X	B-Generic-Measure
-collimator	B-Device
-.	O
-Use	B-Action
+collimator.Use	B-Device
 a	O
 kimwipe	B-Location
 or	O
@@ -194,9 +187,7 @@ the	O
 objective	B-Device
 lens	I-Device
 and	O
-collimnator	B-Device
-.	O
-Install	B-Action
+collimnator.Install	B-Device
 flow	B-Location
 cell	I-Location
 holder	I-Location
@@ -232,10 +223,8 @@ secure	B-Action
 it	B-Mention
 to	O
 the	O
-mount	B-Location
-.	O
-Insert	B-Action
-tubing	B-Location
+mount.Insert	B-Location
+tubing	I-Location
 on	O
 top	B-Seal
 of	O
@@ -293,18 +282,14 @@ showing	O
 up	O
 in	O
 your	O
-sample	B-Reagent
-.	O
-1	O
+sample.1	B-Reagent
 .	O
 
 Load	B-Action
 the	O
 funnel	B-Device
 with	O
-ddH2O	B-Reagent
-.	O
-2	O
+ddH2O.2	B-Reagent
 .	O
 
 On	O
@@ -315,9 +300,11 @@ bar	O
 ,	O
 click	B-Action
 Setup	O
-->	O
+-	O
+>	O
 Pump	O
-->	O
+-	O
+>	O
 Flush	O
 3	O
 .	O
@@ -325,9 +312,7 @@ Flush	O
 Set	B-Action
 to	O
 4-5	B-Generic-Measure
-cycles	I-Generic-Measure
-.	O
-4	O
+cycles.4	I-Generic-Measure
 .	O
 
 Click	O
@@ -348,9 +333,7 @@ container	B-Location
 
 Usually	O
 about	O
-0.2	B-Amount
--	I-Amount
-0.5	I-Amount
+0.2-0.5	B-Amount
 mL	I-Amount
 of	O
 homogenized	B-Reagent
@@ -445,15 +428,17 @@ bar	O
 ,	O
 click	B-Action
 Setup	O
-->	O
+-	O
+>	O
 Pump	O
-->	O
+-	O
+>	O
 Prime	O
-->	O
+-	O
+>	O
 Aspirate	B-Action
-0.500	I-Action
-mL	B-Amount
-from	I-Amount
+0.500mL	I-Action
+from	B-Amount
 Flow	O
 Cell	B-Location
 4	I-Location
@@ -535,9 +520,7 @@ syringe	B-Device
 ,	O
 dilution	B-Measure-Type
 ,	O
-etc	O
-.	O
-Fluidics	O
+etc.Fluidics	O
 tab	O
 -	O
 Adjust	B-Action
@@ -570,9 +553,9 @@ the	O
 efficiency	B-Measure-Type
 is	I-Measure-Type
 near	O
-25%	O
-.	B-Generic-Measure
-Flow	I-Generic-Measure
+25	O
+%	B-Generic-Measure
+.Flow	I-Generic-Measure
 cell	B-Location
 tab	I-Location
 -	O
@@ -659,8 +642,7 @@ and	O
 Focus	O
 below	O
 )	O
-.	O
-Reports	O
+.Reports	O
 tab	O
 -	O
 Check	B-Action
@@ -698,9 +680,7 @@ default	O
 upon	O
 starting	O
 a	O
-run	O
-.	O
-You	O
+run.You	O
 can	O
 save	O
 these	O
@@ -734,9 +714,7 @@ view	O
 of	O
 the	O
 flow	B-Location
-cell	I-Location
-.	O
-2	O
+cell.2	I-Location
 .	O
 
 Use	O
@@ -750,9 +728,7 @@ to	O
 center	B-Action
 the	O
 flow	B-Reagent
-cell	I-Reagent
-.	I-Reagent
-3	O
+cell.3	I-Reagent
 .	O
 
 Use	O
@@ -775,9 +751,7 @@ Sample1	B-Reagent
 .	O
 
 Click	B-Action
-Autoimage	B-Method
-.	I-Method
-2	I-Method
+Autoimage.2	B-Method
 .	I-Method
 
 A	O
@@ -808,7 +782,8 @@ stop	B-Action
 the	O
 run	O
 (	O
-e.g.	O
+e.g	O
+.	O
 #	B-Measure-Type
 of	I-Measure-Type
 events	I-Measure-Type
@@ -820,8 +795,7 @@ time	B-Measure-Type
 or	O
 leave	B-Action
 the	O
-'	O
-Stop	O
+'Stop	O
 when	O
 user	O
 terminates	O
@@ -831,9 +805,7 @@ button	B-Method
 checked	B-Action
 and	O
 manually	B-Method
-stop	I-Method
-.	O
-3	O
+stop.3	I-Method
 .	O
 
 A	O
@@ -894,9 +866,7 @@ the	O
 sample	B-Reagent
 run	B-Action
 will	O
-begin	O
-.	O
-4	O
+begin.4	O
 .	O
 
 The	O
@@ -947,9 +917,7 @@ on	O
 the	O
 Visual	O
 Spreadsheet	O
-page	O
-.	O
-Select	B-Action
+page.Select	B-Action
 your	I-Action
 data	B-Reagent
 (	I-Reagent
@@ -973,16 +941,15 @@ View	B-Method
 to	I-Method
 evaluate	I-Method
 the	O
-images	O
-.	O
-Adjust	O
+images.Adjust	O
 for	B-Action
 any	I-Action
 dilution	O
 used	B-Reagent
 in	I-Reagent
 Context	O
-->	B-Method
+-	B-Method
+>	I-Method
 Fluidics	I-Method
 and	I-Method
 checking	I-Method
@@ -1068,18 +1035,14 @@ showing	O
 up	O
 in	O
 your	O
-sample	B-Reagent
-.	I-Reagent
-1	O
+sample.1	B-Reagent
 .	O
 
 Load	B-Action
 the	O
 funnel	B-Device
 with	O
-ddH2O	B-Reagent
-.	O
-2	O
+ddH2O.2	B-Reagent
 .	O
 
 On	O
@@ -1090,9 +1053,11 @@ bar	O
 ,	O
 click	B-Action
 Setup	O
-->	O
+-	O
+>	O
 Pump	O
-->	O
+-	O
+>	O
 Flush	O
 3	O
 .	O
@@ -1100,9 +1065,7 @@ Flush	O
 Set	B-Action
 to	O
 4-5	B-Numerical
-cycles	I-Numerical
-.	O
-4	O
+cycles.4	I-Numerical
 .	O
 
 Click	B-Action
@@ -1134,8 +1097,7 @@ are	O
 already	O
 saved	O
 )	O
-.	O
-To	O
+.To	O
 shut	O
 down	O
 continue	O
@@ -1191,9 +1153,7 @@ from	O
 the	O
 flow	B-Location
 cell	I-Location
-holder	I-Location
-.	O
-4	O
+holder.4	I-Location
 .	O
 
 Put	B-Action
@@ -1204,9 +1164,7 @@ back	O
 in	O
 its	O
 protective	B-Location
-tube	I-Location
-.	O
-5	O
+tube.5	I-Location
 .	O
 
 Close	B-Action
