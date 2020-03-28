@@ -15,9 +15,10 @@ evalutation.evaluate(input_gold_folder= <path to standoff format gold data>,
 
 ```
 
-Example : `evalutation.evaluate(input_gold_folder="../../data/test_data/Standoff_Format/",  
-								input_pred_folder="Standoff_Outputs/", 
-								pref_file= "performance.tex", 
-								to_latex=True)`
+Example : 
+`evalutation.evaluate(input_gold_folder="../../data/test_data/Standoff_Format/",
+input_pred_folder="Standoff_Outputs/", 
+pref_file= "performance.tex",
+to_latex=True)`
 
 
