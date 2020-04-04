@@ -11,7 +11,7 @@ Wet Lab Protocol (WLP) dataset annotations were created in brat and provided in 
 
 ## Baselines
 
-We have provided a feature based Linear CRF tagger for the [Named Entity Recognition Task](./code/baseline_CRF/).
+We have provided a feature based [Linear CRF tagger](./code/baseline_CRF/) for the Named Entity Recognition Task.
 
 
 ## Evaluation
