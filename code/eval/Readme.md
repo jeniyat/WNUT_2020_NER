@@ -52,7 +52,7 @@ python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_
 The default value of this parameter is `0`. The above command will also save the latex formated table in `performance.tex` file. You can change the location of this file with the `-perf_file` parameter.
 
 
-### Importing evalution from another script:
+### Importi evalution function inside another script:
 
 The evalutaion funciton can also be called from other python scripts using the same parameters. Below is the sample code:
 
