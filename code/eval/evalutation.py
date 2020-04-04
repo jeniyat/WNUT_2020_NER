@@ -3,6 +3,8 @@ import eval_utils
 import conlleval_py
 import os
 
+import shutil
+
 def read_sentence(ip_file):
 	sentences=[]
 	current_sentence = []
@@ -148,6 +150,10 @@ def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pr
     
 
 	compare_prediction(conll_file_gold, conll_file_pred, pref_file, to_latex)
+
+	shutil.rmtree('Conll_Format_Data/')
+
+
 
 	
 
