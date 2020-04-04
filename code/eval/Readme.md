@@ -1,13 +1,15 @@
 ## EVALUATION  
 
-The following script can be used for evaluation of the the Named Entity Recgozizer:
+The following script can be used for evaluation of the the Named Entity Recgonizer:
   
       ./eval/evalutation.py 
 
-The participants are required to produce entity sequence for each sentence and submit the predictions as [StandOff format](../../data/Readme.md##-The-standoff-format:) .
+The participants are required to produce entity sequence for each sentence and submit the predictions as [StandOff format](../../data/Readme.md##-The-standoff-format:).
 
 
-The evaluation script takes `<location of StandOff format gold data>` and `<location of StandOff format predicted data>` as input, and then output the detailed perfromance of the NER tagger. For example the below is the detailed performance of the Libnear CRF NER.
+The evaluation script takes `<location of StandOff format gold data>` and `<location of StandOff format predicted data>` as input, and then outputs the detailed perfromance of the NER tagger. 
+
+For example, below is the detailed performance of the Linear CRF NER.
 
 ```
 processed 41354 tokens with 15968 phrases; found: 15519 phrases; correct: 11749.
@@ -36,26 +38,29 @@ accuracy:  82.18%; precision:  75.71%; recall:  73.58%; FB1:  74.63
 
 ### How to Run Evaluation:
 
-To run the evalutaion script we need to provide it the `<location of StandOff format gold data>` in `-gold_data` parameter and the `<location of StandOff format predicted data>` in the `-pred_data` parameter:
+To run the evalutaion script, you need to provide it with-
+
+1) The `<location of StandOff format gold data>` in `-gold_data` parameter, and 
+2) The `<location of StandOff format predicted data>` in the `-pred_data` parameter
 
 ```
 python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_data "../baseline_CRF/Standoff_Outputs/"
 ```
 
-### Print performance as Latex table:
+### Print performance as LaTex table:
 
-The evalutation script also provides the functionality to view the performance as a latex table (by using the `-to_latex` parameter):
+The evalutation script also provides the functionality to view the performance as a LaTex table (by using the `-to_latex` parameter):
 
 ```
 python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_data "../baseline_CRF/Standoff_Outputs/" -to_latex 1
 ```
 
-The default value of `-to_latex` is `0`. The latex table will be printed to `stdout` and also saved the latex formated table in `performance.tex` file. You can change the location of this file with the `-perf_file` parameter.
+The default value of `-to_latex` is `0`. The latex table will be printed to `stdout` and saved in `performance.tex` file. You can change the location of this file with the `-perf_file` parameter.
 
 
-### Importi evalution function inside another script:
+### Import evalution function inside another script:
 
-The evalutaion funciton can also be called from other python scripts using the same parameters. Below is the sample code:
+The evalutaion funciton can also be called from other python scripts using the same parameters. Below is a sample code:
 
 ```
 
