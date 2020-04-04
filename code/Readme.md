@@ -2,15 +2,16 @@
 
 
 The following script contains the baseline Feature Based CRF model:
-
+```
       ./crf_ner_wlp.py
 
+```
 
-and the predicted outputs (as Standoff Format) of this model on the test data will be stored at:
-
+The predicted outputs (as Standoff Format) of this model on the test data will be stored at:
+```
       ./Standoff_Outputs/
-
-To run and get the prediction on the test data we need to proved the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter:
+```
+To run and get the prediction on the test data, we need to provide the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter:
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"
