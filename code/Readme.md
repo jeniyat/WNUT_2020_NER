@@ -50,7 +50,7 @@ Example: Exclude Gazetteer Features:  `python crf_ner.py -include_gazetteer 0`
 
 ## Optional arguments for Latex format performane presentation
 
-The performnace of the model can be viewed as LaTex table by using the  `-to_latex` parameter as below:
+The performnace of the model can be viewed as LaTex table using the  `-to_latex` parameter as below:
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"  `-to_latex` 1
