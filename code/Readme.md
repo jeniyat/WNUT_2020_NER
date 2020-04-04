@@ -11,7 +11,7 @@ The predicted outputs (as Standoff Format) of this model on the test data will b
 ```
       ./Standoff_Outputs/
 ```
-To run and get the prediction on the test data, we need to provide the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter as below:
+To run and get the prediction on the test data, you need to provide the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter as below:
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"
