@@ -1,4 +1,4 @@
-# Baseline Linear CRF:
+## Baseline Linear CRF:
 
 
 The following script contains the baseline Feature Based CRF model:
@@ -11,7 +11,11 @@ The predicted outputs (as Standoff Format) of this model on the test data will b
 ```
       ./Standoff_Outputs/
 ```
-To run and get the prediction on the test data, you need to provide the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter as below:
+To run and get the prediction on the test data, you need to provide the script with the following:
+
+1) The `<location of StandOff format gold data>` in `-gold_data` parameter, and 
+2) The `<location of StandOff format predicted data>` in the `-pred_data` parameter
+
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"
@@ -23,7 +27,7 @@ The above command will output the peformance of the CRF model on the test data i
 
 
 
-## Optional arguments for Feature Ablation
+### Optional arguments for Feature Ablation
 
 
 The following arguments can be passed to the crf_ner_wlp.py for feature ablation:
@@ -48,7 +52,7 @@ Example: Exclude Gazetteer Features:  `python crf_ner.py -include_gazetteer 0`
 
 
 
-## Optional arguments for Latex format performane presentation
+### Optional arguments for Latex format performane presentation
 
 The performnace of the model can be viewed as LaTex table using the  `-to_latex` parameter as below:
 

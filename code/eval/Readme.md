@@ -1,4 +1,4 @@
-## EVALUATION  
+## Evaluation 
 
 The following script can be used for evaluation of the the Named Entity Recgonizer:
   
@@ -36,7 +36,7 @@ accuracy:  82.18%; precision:  75.71%; recall:  73.58%; FB1:  74.63
     
 
 
-### How to Run Evaluation:
+### How to run evaluation:
 
 To run the evalutaion script, you need to provide it with-
 
