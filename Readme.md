@@ -6,10 +6,13 @@ WNUT 2020 coduct shared task on the wet lab protocol data. All of the protocols 
 
 
 ## Data
-Wet Lab Protocol(WLP) dataset annotations were created in brat and are stored in both StandOff and CoNLL format in the  [data directory](./data/Readme.md).
+Wet Lab Protocol(WLP) dataset annotations were created in brat and are stored in both StandOff and CoNLL format in the [data directory](./data/Readme.md).
 
 
 ## Baselines
+
+We provided a feature based Linear CRF tagger for the [Named Entity Recognition Task](./code/baseline_CRF/).
+
 
 ## Evaluation
 
