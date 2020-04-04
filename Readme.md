@@ -1,7 +1,7 @@
-# WNUT 2020: Named Entity Extraction from wet lab protocols
+# WNUT 2020: Named Entity Extraction 
 
 
-WNUT 2020 coduct shared task on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocols dump is also available in json format their [github repository](https://github.com/protocolsio/protocols). For this shared task we provide the annotation of 622 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
+WNUT 2020 shared task is designed on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocols dump is also available in json format their [github repository](https://github.com/protocolsio/protocols). For this shared task we provide the annotation of 622 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
 
 
 
