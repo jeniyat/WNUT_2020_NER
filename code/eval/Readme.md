@@ -44,13 +44,13 @@ python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_
 
 ### Print performance as Latex table:
 
-The evalutation script also provide the functionality to view the performance as a latex table (by using the `-to_latex` parameter):
+The evalutation script also provides the functionality to view the performance as a latex table (by using the `-to_latex` parameter):
 
 ```
 python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_data "../baseline_CRF/Standoff_Outputs/" -to_latex 1
 ```
 
-The default value of this parameter is `0`. The above command will also save the latex formated table in `performance.tex` file. You can change the location of this file with the `-perf_file` parameter.
+The default value of `-to_latex` is `0`. The latex table will be printed to `stdout` and also saved the latex formated table in `performance.tex` file. You can change the location of this file with the `-perf_file` parameter.
 
 
 ### Importi evalution function inside another script:
