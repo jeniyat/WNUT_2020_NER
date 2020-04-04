@@ -1,9 +1,9 @@
 Baseline Linear CRF:
 ======
 
-There are scripts for two baselines:
+The following script contains the baseline Feature Based CRF model:
 
-./scripts/baseline_random.py
+      ./scripts/baseline_random.py
 ./scripts/baseline_logisticregression.py
 and their outputs on the test data, plus outputs from two state-of-the-art systems:
 
