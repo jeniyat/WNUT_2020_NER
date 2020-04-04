@@ -1,6 +1,19 @@
-
 Baseline Linear CRF:
 ======
+
+There are scripts for two baselines:
+
+./scripts/baseline_random.py
+./scripts/baseline_logisticregression.py
+and their outputs on the test data, plus outputs from two state-of-the-art systems:
+
+./systemoutputs/PIT2015_BASELINE_01_random.output
+./systemoutputs/PIT2015_BASELINE_02_LG.output
+./systemoutputs/PIT2015_BASELINE_03_WTMF.output
+./systemoutputs/PIT2015_BASELINE_04_MultiP.output
+(1) The logistic regression (LG) model using simple lexical overlap features:
+
+
 
 
 ```
