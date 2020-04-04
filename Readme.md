@@ -12,3 +12,5 @@ Wet Lab Protocol(WLP) dataset annotations were created in brat and are stored in
 ## Baselines
 
 ## Evaluation
+
+The participants are required to produce prediction as [StandOff format](../../data/Readme.md##-The-standoff-format:) which will be compared with the gold data using the [evalution script](./code/eval/Readme.md).
