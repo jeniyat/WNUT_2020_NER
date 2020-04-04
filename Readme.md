@@ -8,6 +8,9 @@ WNUT 2020 shared task is designed on the wet lab protocol data. All of the proto
 ## Data
 Wet Lab Protocol (WLP) dataset annotations were created in brat and provided in both StandOff and CoNLL format in the [data directory](./data/Readme.md).
 
+1) The [train_data](./data/train_data/) contains 370 protocls with 8436 senteces
+2) The [dev_data](./data/dev_data/) has 123 protocls  with 2861 senteces
+3) The [test_data](./data/test_data/) has 123 protocls  with 2813 senteces
 
 ## Baselines
 
