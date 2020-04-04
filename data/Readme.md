@@ -93,3 +93,13 @@ Binary relations have a unique ID and are defined by their type (e.g. Measure, M
 The format is similar to that applied for events, with the exception that the annotation does not identify a specific piece of text expressing the relation ("trigger"): the ID is separated by a TAB character, and the relation type and arguments by SPACE.
 
 
+# Setup a BRAT server:
+
+
+To set up a brat server with WLP data follow these steps: 
+
+1. Setting up a brat server by following the instructions from [brat official page](http://brat.nlplab.org/installation.html)
+2. Once your installation is ready, Place the `data` directory under "data" directory of your brat installation.
+3. make sure it has the right permissions using chmod: `chmod -R g+rwx data`.
+4. You can now access this dataset on your brat installation, through one of the [supported web browsers](http://brat.nlplab.org/supported-browsers.html).
+
