@@ -11,7 +11,7 @@ The predicted outputs (as Standoff Format) of this model on the test data will b
 ```
       ./Standoff_Outputs/
 ```
-To run and get the prediction on the test data, we need to provide the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter:
+To run and get the prediction on the test data, we need to provide the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter as below:
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"
@@ -50,13 +50,13 @@ Example: Exclude Gazetteer Features:  `python crf_ner.py -include_gazetteer 0`
 
 ## Optional arguments for Latex format performane presentation
 
-The perfomnace of the model can be viewed as latex table by using the  `-to_latex` parameter as below:
+The performnace of the model can be viewed as LaTex table by using the  `-to_latex` parameter as below:
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"  `-to_latex` 1
 ```
 
-The default value of `-to_latex` is `0`. The latex table will be printed to `stdout` and also saved the latex formated table in `performance.tex` file. You can change the location of the preformance file with the `-perf_file` parameter as below:
+The default value of `-to_latex` is `0`. The LaTex table will be printed to `stdout` and saved in `performance.tex` file. You can change the location of the performance file with the `-perf_file` parameter as below:
 
 ```
 python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"  `-to_latex` 1 -perf_file "performance_crf.tex"
