@@ -4,7 +4,7 @@ The following script can be used for evaluation of the the Named Entity Recgoziz
   
       ./eval/evalutation.py 
 
-The participants are required to produce entity sequence for each sentence and submit the predictions as [standoff format](../data/Readme.md## The standoff format:) .
+The participants are required to produce entity sequence for each sentence and submit the predictions as [standoff format](../data/Readme.md##-The-standoff-format:) .
 
 The evaluation script takes the gold and predicted entities as input and then evaluate the predicted entity with respect to the gold entities.
 
