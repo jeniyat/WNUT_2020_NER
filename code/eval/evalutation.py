@@ -1,4 +1,4 @@
-from parameter_settings import parameters
+from parameter_settings_eval import parameters
 import eval_utils
 import conlleval_py
 import os

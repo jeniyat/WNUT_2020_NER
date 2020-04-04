@@ -1,13 +1,13 @@
-The conll format:
-=================================================
+# The conll format:
+
 In  protocols are represented in the Conll format. In this format each line of the is in the following format:
 
 			<word>+"\t"+<NE>
 
 The end of sentence is marked with an empty line.
 
-The standoff format:
-=================================================
+# The standoff format:
+
 
 In the standoff format Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
 
