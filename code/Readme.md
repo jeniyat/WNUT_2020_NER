@@ -1,51 +1,34 @@
-Baseline Linear CRF:
-======
+# Baseline Linear CRF:
+
 
 The following script contains the baseline Feature Based CRF model:
 
-      ./scripts/baseline_random.py
-./scripts/baseline_logisticregression.py
-and their outputs on the test data, plus outputs from two state-of-the-art systems:
-
-./systemoutputs/PIT2015_BASELINE_01_random.output
-./systemoutputs/PIT2015_BASELINE_02_LG.output
-./systemoutputs/PIT2015_BASELINE_03_WTMF.output
-./systemoutputs/PIT2015_BASELINE_04_MultiP.output
-(1) The logistic regression (LG) model using simple lexical overlap features:
+      ./crf_ner_wlp.py
 
 
+and the predicted outputs (as Standoff Format) of this model on the test data will be stored at:
 
+      ./Standoff_Outputs/
+
+To run and get the prediction on the test data we need to proved the script with `<location of StandOff format train data>` in `-train_data` parameter and the `<location of StandOff format test data>` in the `-test_data` parameter:
 
 ```
-python crf_ner_wlp.py
-
-```
-Output: Will Output the peformance of the CRF model on the test data in latex format in in stdout.
-
+python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"
 ```
 
+
+
+The above command will output the peformance of the CRF model on the test data in `stdout` and save the model predictions on the test data at `/Standoff_Outputs/` in [standOff format](../../data/Readme.md##-The-standoff-format:).
+
+
+
+## Optional arguments for Feature Ablation
+
+
+The following arguments can be passed to the crf_ner_wlp.py for feature ablation:
+
 ```
 
-Output will also create following two files:
-
-1) `Standoff_Outputs/`: to store the prediction of them model.
-
-2) `performance.tex`: store the performance in latex format.
-
-
-Optional arguments for Feature Ablation
-======
-
-The following arguments can be passed to the crf_ner.py for feature ablation
-```
-  -h, --help            show this help message and exit
-  --train_data TRAIN          Train set location (default is "../../data/train_data/Standoff_Format/")
-  --dev_data DEV              Dev set location  (default is "../../data/dev_data/Standoff_Format/")
-  --test_data TEST            Test set location  (default is "../../data/test_data/Standoff_Format/")
-
-  
-  -perf_file PERF_FILE  Output file to store the final latex table (default is "performance.tex")
-  
   -include_word_features INCLUDE_WORD_FEATURES
                         string feature inclusion (0 to disable)
   -include_context INCLUDE_CONTEXT
@@ -63,6 +46,20 @@ Example: Exclude Context Features:  `python crf_ner.py -include_context 0 -inclu
 Example: Exclude Gazetteer Features:  `python crf_ner.py -include_gazetteer 0`
 
 
+
+## Optional arguments for Latex format performane presentation
+
+The perfomnace of the model can be viewed as latex table by using the  `-to_latex` parameter as below:
+
+```
+python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"  `-to_latex` 1
+```
+
+The default value of `-to_latex` is `0`. The latex table will be printed to `stdout` and also saved the latex formated table in `performance.tex` file. You can change the location of the preformance file with the `-perf_file` parameter as below:
+
+```
+python crf_ner_wlp.py  -train_data "../../data/train_data/Standoff_Format/" -test_data "../../data/test_data/Standoff_Format/"  `-to_latex` 1 -perf_file "performance_crf.tex"
+```
 
 
 

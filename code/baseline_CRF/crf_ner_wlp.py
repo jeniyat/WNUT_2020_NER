@@ -1,4 +1,3 @@
-
 import sklearn_crfsuite
 from sklearn_crfsuite import scorers
 from sklearn_crfsuite import metrics
@@ -30,12 +29,15 @@ import shutil
 
 import utils
 
+import Feature_Extractor
+
+from parameter_settings import parameters_crf as parameters
+import conll2standoff
+
 sys.path.insert(1, '../eval/')
 
 import evalutation
-import Feature_Extractor
-from parameter_settings import parameters
-import conll2standoff
+
 
 class Linear_CRF:
 	"""docstring for CRF_Tagger"""
@@ -255,7 +257,7 @@ if __name__ == '__main__':
 
 	evalutation.evaluate(input_gold_folder=parameters["test_data"],  input_pred_folder=parameters["standoff_output_folder"],pref_file= perf_file, to_latex=to_latex)
 
-	shutil.rmtree('Conll_Format_Data/')
+	if os.path.isdir('Conll_Format_Data/'): shutil.rmtree('Conll_Format_Data/')
 
 	
 

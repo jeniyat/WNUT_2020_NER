@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 
 
 
-parameters = OrderedDict()
+parameters_crf = OrderedDict()
 
 
 
@@ -67,7 +67,7 @@ parser.add_argument(
 
 
 parser.add_argument(
-    "-print_latex_format", default="1",
+    "-to_latex", default="0",
     help="if print in latex format (1 to enable)"
 ) 
 
@@ -76,43 +76,43 @@ opts = parser.parse_args()
 
 
 
-parameters["train_data"]=opts.train_data
-parameters["test_data"]=opts.test_data
-parameters["dev_data"]=opts.dev_data
+parameters_crf["train_data"]=opts.train_data
+parameters_crf["test_data"]=opts.test_data
+parameters_crf["dev_data"]=opts.dev_data
 
 
-parameters["perf_file"]=opts.perf_file
-parameters["pred_file"]=opts.pred_file
+parameters_crf["perf_file"]=opts.perf_file
+parameters_crf["pred_file"]=opts.pred_file
 
 
 
 
 if opts.include_gazetteer=="0":
-    parameters["include_gazetteer"]=False
+    parameters_crf["include_gazetteer"]=False
 else:
-    parameters["include_gazetteer"]=True
+    parameters_crf["include_gazetteer"]=True
 
 if opts.include_word_features=="0":
-    parameters["include_word_features"]=False
+    parameters_crf["include_word_features"]=False
 else:
-    parameters["include_word_features"]=True
+    parameters_crf["include_word_features"]=True
 
 if opts.include_context=="0":
-    parameters["include_context"]=False
+    parameters_crf["include_context"]=False
 else:
-    parameters["include_context"]=True
+    parameters_crf["include_context"]=True
 
-if opts.print_latex_format=="0":
-    parameters["print_latex_format"]=False
+if opts.to_latex=="0":
+    parameters_crf["print_latex_format"]=False
 else:
-    parameters["print_latex_format"]=True
+    parameters_crf["print_latex_format"]=True
 
 
 
-parameters["context_window_len"]=int(opts.context_window_len)
+parameters_crf["context_window_len"]=int(opts.context_window_len)
 
-parameters["conll_output_folder"]="Conll_Outputs/"
-parameters["standoff_output_folder"]="Standoff_Outputs/"
+parameters_crf["conll_output_folder"]="Conll_Outputs/"
+parameters_crf["standoff_output_folder"]="Standoff_Outputs/"
 
 
 

@@ -1,9 +1,11 @@
-from parameter_settings_eval import parameters
 import eval_utils
 import conlleval_py
 import os
 
 import shutil
+from collections import OrderedDict
+import argparse
+
 
 def read_sentence(ip_file):
 	sentences=[]
@@ -80,10 +82,10 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 	gold_sentences = read_sentence(conll_file_gold)
 	pred_sentences = read_sentence(conll_file_pred)
 
-	
+	pred_file= "prediction.txt"
 	
 
-	fout=open(parameters["pred_file"],"w")
+	fout=open(pred_file,"w")
 
 	list_of_matched_tuples = []
 	list_of_matched_indices = []
@@ -101,7 +103,7 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 			list_of_matched_tuples.append((gold_sent_index, pred_sent_index))
 			# print((gold_sent_index, pred_sent_index))
 
-	fout=open(parameters["pred_file"],"w")
+	fout=open(pred_file,"w")
 
 	for (gold_sent_index, pred_sent_index) in list_of_matched_tuples:
 		gold_sent_info =  gold_sentences[gold_sent_index]
@@ -121,12 +123,12 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 	fout.write("\n\n")
 	fout.close()
 
-	eval_result = conlleval_py.evaluate_conll_file(inputFile=parameters["pred_file"])
+	eval_result = conlleval_py.evaluate_conll_file(inputFile=pred_file)
 
 	if to_latex:
 		print_result(eval_result, perf_file)
 
-	os.remove(parameters["pred_file"])
+	os.remove(pred_file)
 
 
 
@@ -159,15 +161,60 @@ def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pr
 
 
 if __name__ == '__main__':
+	parser = argparse.ArgumentParser()
+
+	parameters_eval = OrderedDict()
+
+
+
+
+	parser.add_argument(
+	    "-gold_data", default="../../data/test_data/Standoff_Format/",
+	    help="Standoff_Format gold labeled files"
+	)
+
+	parser.add_argument(
+	    "-pred_data", default="../baseline_CRF/Standoff_Outputs/",
+	    help="Standoff_Format prediction files"
+	)
+
 	
-	input_gold_folder = parameters["gold_data"]
+
+	parser.add_argument(
+	    "-perf_file", default="performance.tex",
+	    help="Output file to store the final latex table"
+	)
+
+	parser.add_argument(
+	    "-to_latex", default="0",
+	    help="if print in latex format (1 to enable, 0 to disable)"
+	) 
 
 
-	input_pred_folder = parameters["pred_data"]
+	opts = parser.parse_args()
 
-	print_latex_format=parameters["print_latex_format"]
 
-	perf_file = parameters["perf_file"]
+
+	parameters_eval["gold_data"]=opts.gold_data
+	parameters_eval["pred_data"]=opts.pred_data
+	parameters_eval["perf_file"]=opts.perf_file
+	
+
+	if opts.to_latex=="0":
+	    parameters_eval["print_latex_format"]=False
+	else:
+	    parameters_eval["print_latex_format"]=True
+	
+	input_gold_folder = parameters_eval["gold_data"]
+
+
+
+
+	input_pred_folder = parameters_eval["pred_data"]
+
+	print_latex_format=parameters_eval["print_latex_format"]
+
+	perf_file = parameters_eval["perf_file"]
 
 
 
