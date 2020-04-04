@@ -7,7 +7,7 @@ The following script can be used for evaluation of the the Named Entity Recgoziz
 The participants are required to produce entity sequence for each sentence and submit the predictions as [StandOff format](../../data/Readme.md##-The-standoff-format:) .
 
 
-The evaluation script takes `location of StandOff format gold data)` and `location of StandOff format predicted data)` as input, and then output the detailed perfromance of the NER tagger like below:
+The evaluation script takes `<location of StandOff format gold data>` and `<location of StandOff format predicted data>` as input, and then output the detailed perfromance of the NER tagger. For example the below is the detailed performance of the Libnear CRF NER.
 
 ```
 processed 41354 tokens with 15968 phrases; found: 15519 phrases; correct: 11749.
