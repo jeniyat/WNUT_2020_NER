@@ -1,12 +1,12 @@
 # WNUT 2020: Named Entity Extraction 
 
 
-WNUT 2020 shared task is designed on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available in json format their [github repository](https://github.com/protocolsio/protocols). For this shared task we provide the annotation of 622 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
+WNUT 2020 shared task is designed on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 622 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
 
 
 
 ## Data
-Wet Lab Protocol(WLP) dataset annotations were created in brat and are stored in both StandOff and CoNLL format in the [data directory](./data/Readme.md).
+Wet Lab Protocol (WLP) dataset annotations were created in brat and provided in both StandOff and CoNLL format in the [data directory](./data/Readme.md).
 
 
 ## Baselines
@@ -16,7 +16,7 @@ We provided a feature based Linear CRF tagger for the [Named Entity Recognition 
 
 ## Evaluation
 
-The participants are required to produce prediction as [StandOff format](../../data/Readme.md##-The-standoff-format:) which will be compared with the gold data using the [evalution script](./code/eval/).
+The participants are required to produce predictions on the protocols as [StandOff format](../../data/Readme.md##-The-standoff-format:), which will be compared with the gold data using the [evalution script](./code/eval/).
 
 
 ## RELEVANT PAPERS 
