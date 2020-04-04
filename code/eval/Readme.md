@@ -36,12 +36,13 @@ accuracy:  82.18%; precision:  75.71%; recall:  73.58%; FB1:  74.63
 
 ### How to Run Evaluation:
 
+To run the evalutaion script we need to provide it the `<location of StandOff format gold data>` in `-gold_data` parameter and the `<location of StandOff format predicted data>` in the `-pred_data` parameter:
 
 ```
 python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_data "../baseline_CRF/Standoff_Outputs/"
 ```
 
-### Evaluation to Latex:
+### Print performance as Latex table:
 
 The evalutation script also provide the functionality to view the performance as a latex table (by using the `-to_latex` parameter):
 
