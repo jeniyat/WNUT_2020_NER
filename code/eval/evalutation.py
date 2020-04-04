@@ -137,7 +137,7 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 
 
 
-def evaluate(input_gold_folder=None, input_pred_folder=None, to_latex=None, pref_file=None, ):
+def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pred_folder="../baseline_CRF/Standoff_Outputs/", to_latex=False, pref_file=None):
 	conll_folder_gold = "Conll_Format_Data/gold/"
 	conll_file_gold = 'Conll_Format_Data/gold.txt'
 
@@ -155,20 +155,18 @@ def evaluate(input_gold_folder=None, input_pred_folder=None, to_latex=None, pref
 if __name__ == '__main__':
 	
 	input_gold_folder = parameters["gold_data"]
-	conll_folder_gold = "Conll_Format_Data/gold/"
-	conll_file_gold = 'Conll_Format_Data/gold.txt'
 
 
 	input_pred_folder = parameters["pred_data"]
-	
 
-	conll_folder_pred = "Conll_Format_Data/pred/"
-	conll_file_pred = 'Conll_Format_Data/pred.txt'
-	perf_file = parameters['perf_file']
-	to_latex=parameters["print_latex_format"]
+	print_latex_format=parameters["print_latex_format"]
 
+	perf_file = parameters["perf_file"]
+
+
+
+	evaluate(input_gold_folder, input_pred_folder, print_latex_format, perf_file)
 	
-	compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex)
 
 
 
