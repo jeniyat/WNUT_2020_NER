@@ -1,7 +1,8 @@
 ## Baseline Linear CRF:
 
 
-The following script contains the baseline Feature Based CRF model:
+We provided a simple Liner CRF model built using lexical and gazetter features. The following script contains the baseline Feature Based CRF model:
+
 ```
       ./crf_ner_wlp.py
 
