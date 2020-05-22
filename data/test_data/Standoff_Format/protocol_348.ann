@@ -1,76 +1,51 @@
-T1	Action 198 201	Add
-E1	Action:T1 Acts-on:T13
-T2	Action 224 235	Concentrate
-E2	Action:T2 Acts-on:T15
-T3	Action 267 273	Repeat
-E3	Action:T3 Using:T16 Count:T17
-T4	Action 299 306	Recover
-E4	Action:T4 Acts-on:T18
-T5	Action 330 335	Rinse
-E5	Action:T5 Acts-on:T19 Site:T20
-T6	Action 366 372	adding
-E6	Action:T6 Acts-on:T22
-T7	Action 414 421	Recover
-E7	Action:T7 Acts-on:T21
-T8	Action 436 440	pool
-E8	Action:T8 Acts-on:T21 Acts-on2:T25
-T9	Action 518 521	add
-E9	Action:T9 Acts-on:T26
-T10	Action 575 579	Heat
-E10	Action:T10 Acts-on:T28
-T11	Action 656 663	release
-E11	Action:T11 Acts-on:T31
-T12	Amount 202 208	100 µL
-T13	Reagent 209 211	TE
-T14	Reagent 216 221	TEGED
-R1	Or Arg1:T13 Arg2:T14	
-R2	Measure Arg1:T13 Arg2:T12	
-T15	Reagent 240 246	sample
-T16	Method 274 287	steps 2 and 3
-T17	Numerical 288 292	once
-T18	Reagent 311 328	final concentrate
-T19	Reagent 340 348	membrane
-T20	Device 356 362	device
-T22	Reagent 391 393	TE
-T23	Reagent 397 402	TEGED
-T24	Amount 404 411	5–10 µL
-R4	Or Arg1:T22 Arg2:T23	
-R3	Measure Arg1:T22 Arg2:T24	
-R5	Measure Arg1:T23 Arg2:T24	
-T21	Reagent 426 431	rinse
-T25	Reagent 450 461	concentrate
-T26	Reagent 522 542	SDS-EDTA loading dye
-T27	Concentration 571 573	1×
-R6	Measure Arg1:T26 Arg2:T27	
-T28	Reagent 584 600	recovered sample
-T29	Temperature 637 641	60°C
-T30	Time 646 652	10 min
-T31	Reagent 668 680	nucleic acid
-R7	Setting Arg1:E10 Arg2:T29	
-R8	Setting Arg1:E10 Arg2:T30	
-T32	Action 0 7	Release
-E12	Action:T32 Acts-on:T33 Using:T34 Using2:T35
-T33	Reagent 11 24	nucleic acids
-T34	Reagent 36 44	chelator
-T35	Reagent 50 59	detergent
-T36	Action 60 71	Concentrate
-E13	Action:T36 Acts-on:T37
-T37	Reagent 76 83	viruses
-T39	Device 107 141	centrifugal ultrafiltration device
-T40	Speed 145 150	1000g
-T41	Measure-Type 170 176	volume
-T42	Amount 182 187	10 µL
-T43	Modifier 164 169	small
-T44	Amount 260 265	10 µL
-R9	Measure Arg1:T15 Arg2:T44	
-T45	Measure-Type 381 387	volume
-T46	Method 487 502	electrophoresis
-T47	Reagent 510 516	sample
-T48	Measure-Type 554 567	concentration
-T49	Modifier 548 553	final
-T50	Reagent 618 632	loading buffer
-T38	Action 87 99	centrifuging
-E14	Action:T38 Acts-on:T37 Site:T39
-R10	Setting Arg1:E14 Arg2:T40	
-T51	Action 476 486	conducting
-E15	Action:T51 Using:T46
+T1	Action 0 7	Release
+T2	Reagent 11 24	nucleic acids
+T3	Reagent 36 44	chelator
+T4	Reagent 50 59	detergent
+T5	Action 60 71	Concentrate
+T6	Reagent 76 83	viruses
+T7	Action 87 99	centrifuging
+T8	Device 107 141	centrifugal ultrafiltration device
+T9	Speed 145 150	1000g
+T10	Modifier 164 169	small
+T11	Measure-Type 170 176	volume
+T12	Amount 182 187	10 µL
+T13	Action 198 201	Add
+T14	Amount 202 208	100 µL
+T15	Reagent 209 211	TE
+T16	Reagent 216 221	TEGED
+T17	Action 224 235	Concentrate
+T18	Reagent 240 246	sample
+T19	Amount 260 265	10 µL
+T20	Action 267 273	Repeat
+T21	Method 274 287	steps 2 and 3
+T22	Numerical 288 292	once
+T23	Action 299 306	Recover
+T24	Reagent 311 328	final concentrate
+T25	Action 330 335	Rinse
+T26	Reagent 340 348	membrane
+T27	Device 356 362	device
+T28	Action 366 372	adding
+T29	Measure-Type 381 387	volume
+T30	Reagent 391 393	TE
+T31	Reagent 397 402	TEGED
+T32	Amount 404 411	5–10 µL
+T33	Action 414 421	Recover
+T34	Reagent 426 431	rinse
+T35	Action 436 440	pool
+T36	Reagent 450 461	concentrate
+T37	Action 477 487	conducting
+T38	Method 488 503	electrophoresis
+T39	Reagent 511 517	sample
+T40	Action 519 522	add
+T41	Reagent 523 543	SDS-EDTA loading dye
+T42	Modifier 549 554	final
+T43	Measure-Type 555 568	concentration
+T44	Concentration 572 574	1×
+T45	Action 576 580	Heat
+T46	Reagent 585 601	recovered sample
+T47	Reagent 619 633	loading buffer
+T48	Temperature 638 642	60°C
+T49	Time 647 653	10 min
+T50	Action 657 664	release
+T51	Reagent 669 681	nucleic acid

@@ -129,17 +129,12 @@ class Linear_CRF:
 
 	
 	def Convert_Pred_to_CoNLL(self, conll_output_folder, protocol_name):
+
 		
-		
-
-		fcc = utils.Fix_Char_Code()
-
-
-		conll_file_name_temp = conll_output_folder+protocol_name+"__.temp"
 		conll_file_name = conll_output_folder+protocol_name
 
 
-		fout=open(conll_file_name_temp,"w")
+		fout=open(conll_file_name,"w")
 		for i in range(len(self.list_of_test_sentence_features)):
 			sent=self.list_of_test_sentence_features[i]
 			list_of_words=[]
@@ -163,11 +158,6 @@ class Linear_CRF:
 			fout.write("\n")
 		fout.write("\n\n\n")
 		fout.close()
-
-		fcc.Read_File(conll_file_name_temp, conll_file_name)
-		if os.path.exists(conll_file_name_temp):
-			os.remove(conll_file_name_temp)
-
 
 	
 		
@@ -258,6 +248,12 @@ if __name__ == '__main__':
 	evalutation.evaluate(input_gold_folder=parameters["test_data"],  input_pred_folder=parameters["standoff_output_folder"],pref_file= perf_file, to_latex=to_latex)
 
 	if os.path.isdir('Conll_Format_Data/'): shutil.rmtree('Conll_Format_Data/')
+
+	list_of_text_ops = os.listdir( parameters["standoff_output_folder"] )
+	for file in list_of_text_ops:
+		if file.endswith(".txt"):
+			os.remove( os.path.join( parameters["standoff_output_folder"], file ) )
+
 
 	
 

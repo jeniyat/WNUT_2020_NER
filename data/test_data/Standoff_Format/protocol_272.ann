@@ -1,50 +1,32 @@
-T1	Action 48 54	Set up
-E1	Action:T1 Using:T11 Product:T10
-T2	Action 124 127	Mix
-E2	Action:T2 Acts-on:T13
-T3	Action 142 151	pipetting
-E3	Action:T3 Acts-on:T14 Using:T15
-T5	Action 238 247	spin-down
-E5	Action:T5 Using:T17
-T6	Action 277 283	vortex
-E6	Action:T6 Acts-on:T19
-T7	Action 298 306	Incubate
-E7	Action:T7 
-T8	Action 366 369	Add
-E8	Action:T8 Acts-on:T23
-T9	Action 389 397	Incubate
-E9	Action:T9 
-T10	Reagent 69 77	reaction
-T11	Reagent 83 92	Enzyme #1
-T12	Amount 116 121	50 µl
-R1	Measure Arg1:T11 Arg2:T12	
-T13	Reagent 128 138	components
-T14	Reagent 156 172	reaction mixture
-T15	Method 173 184	up and down
-T4	Action 193 201	flicking
-E4	Action:T4 Acts-on:T16
-T16	Location 207 220	reaction tube
-T17	Device 253 268	microcentrifuge
-T18	Modifier 222 227	Quick
-R2	Mod-Link Arg1:E5 Arg2:T18	
-T19	Reagent 288 296	reaction
-T20	Time 311 317	1 hour
-T21	Temperature 353 364	temperature
-T22	Modifier 325 352	enzyme-specific appropriate
-R3	Mod-Link Arg1:T21 Arg2:T22	
-R4	Setting Arg1:E7 Arg2:T20	
-R5	Setting Arg1:E7 Arg2:T21	
-T23	Reagent 374 387	second enzyme
-T24	Time 402 408	1 hour
-T25	Modifier 416 443	enzyme-specific appropriate
-T26	Temperature 444 455	temperature
-R6	Setting Arg1:E9 Arg2:T24	
-R7	Mod-Link Arg1:T26 Arg2:T25	
-R8	Setting Arg1:E9 Arg2:T26	
-T27	Modifier 0 17	Multi-temperature
-T28	Action 18 31	Double Digest
-E10	Action:T28 Acts-on:T29
-R9	Mod-Link Arg1:E10 Arg2:T27	
-T29	Reagent 33 46	single buffer
-T30	Reagent 100 108	reaction
-T31	Measure-Type 109 116	volume 
+T1	Modifier 0 17	Multi-temperature
+T2	Action 18 31	Double Digest
+T3	Reagent 33 46	single buffer
+T4	Action 48 54	Set up
+T5	Reagent 69 77	reaction
+T6	Reagent 83 93	Enzyme # 1
+T7	Reagent 101 109	reaction
+T8	Measure-Type 110 119	volume 50
+T9	Amount 120 124	µl).
+T10	Action 125 128	Mix
+T11	Reagent 129 139	components
+T12	Action 143 152	pipetting
+T13	Reagent 157 173	reaction mixture
+T14	Method 174 185	up and down
+T15	Action 193 204	`` flicking
+T16	Location 208 225	the reaction tube
+T17	Modifier 225 226	.
+T18	Modifier 227 232	Quick
+T19	Action 245 256	) spin-down
+T20	Device 260 277	a microcentrifuge
+T21	Action 286 292	vortex
+T22	Reagent 297 305	reaction
+T23	Action 307 315	Incubate
+T24	Time 320 326	1 hour
+T25	Modifier 334 361	enzyme-specific appropriate
+T26	Temperature 362 373	temperature
+T27	Action 375 378	Add
+T28	Reagent 383 396	second enzyme
+T29	Action 398 406	Incubate
+T30	Time 411 417	1 hour
+T31	Modifier 425 452	enzyme-specific appropriate
+T32	Temperature 453 464	temperature

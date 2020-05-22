@@ -3,7 +3,7 @@
 """
 Author: Jeniya Tabassum <jeniya.tabassum@gmail.com>
 
-This evalutaion script is adapted from: https://github.com/sighsmile/conlleval 
+This evaluation script is adapted from: https://github.com/sighsmile/conlleval 
 
 # JT:208-09 added the evaluate_conll_file to take input in the f
 
@@ -11,19 +11,19 @@ This script applies to IOB2 or IOBES tagging scheme.
 If you are using a different scheme, please convert to IOB2 or IOBES.
 
 IOB2:
-- B = begin, 
-- I = inside but not the first, 
+- B = begin,
+- I = inside but not the first,
 - O = outside
 
-e.g. 
+e.g.
 John   lives in New   York  City  .
 B-PER  O     O  B-LOC I-LOC I-LOC O
 
 IOBES:
-- B = begin, 
-- E = end, 
-- S = singleton, 
-- I = inside but not the first or the last, 
+- B = begin,
+- E = end,
+- S = singleton,
+- I = inside but not the first or the last,
 - O = outside
 
 e.g.
@@ -262,7 +262,7 @@ def evaluate(correctChunk, foundGuessed, foundCorrect, correctTags, tokenCounter
 
     # print overall performance, and performance per chunk type
     eval_result={}
-    
+
     # compute overall precision, recall and FB1 (default values are 0.0)
     precision, recall, FB1 = calcMetrics(correctChunkSum, foundGuessedSum, foundCorrectSum)
     result={}
@@ -275,7 +275,7 @@ def evaluate(correctChunk, foundGuessed, foundCorrect, correctTags, tokenCounter
     eval_result["by_category"]={}
 
 
-    
+
     # print overall performance
     print("processed %i tokens with %i phrases; " % (tokenCounter, foundCorrectSum), end='')
     print("found: %i phrases; correct: %i.\n" % (foundGuessedSum, correctChunkSum), end='')
@@ -287,7 +287,7 @@ def evaluate(correctChunk, foundGuessed, foundCorrect, correctTags, tokenCounter
     for i in sortedTypes:
         if i in checked_types: continue
         checked_types.add(i)
-        
+
         precision, recall, FB1 = calcMetrics(correctChunk[i], foundGuessed[i], foundCorrect[i])
         print("%17s: " %i , end='')
         print("precision: %6.2f%%; recall: %6.2f%%; FB1: %6.2f" %
@@ -295,7 +295,7 @@ def evaluate(correctChunk, foundGuessed, foundCorrect, correctTags, tokenCounter
         print(" foundGuessed:  %d" % foundGuessed[i])
 
         result={}
-        
+
         result["P"]=round(precision,2)
         result["R"]=round(recall,2)
         result["F1"]=round(FB1,2)

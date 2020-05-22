@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import eval_utils
 import conlleval_py
 import os
@@ -16,45 +17,21 @@ def read_sentence(ip_file):
 
 		if line=="" and len(current_sentence)>0:
 			sentences.append(current_sentence)
-			
+
 			current_sentence=[]
 			continue
 		line_values = line.split()
-		
+
 		if len(line_values)==2:
 			current_sentence.append(line_values)
-			
+
 
 	return sentences
 
 
-
-def get_line(sentence_info):
-	sentence = ""
-	for word_info in sentence_info:
-		sentence+= word_info[0]+" "
-
-	sentence=sentence.strip()
-	return sentence
-
-
-def find_pred_sent_index(gold_sent, pred_sentences, list_of_matched_indices):
-
-	for pred_sent_index in range(len(pred_sentences)):
-		if pred_sent_index in list_of_matched_indices:
-			continue
-
-		pred_sent_info=pred_sentences[pred_sent_index]
-		pred_sent = get_line(pred_sent_info)
-		if pred_sent==gold_sent:
-			return pred_sent_index
-
-
-		
-
 def print_result(eval_result, perf_file):
 
-	
+
 
 	result={}
 	result["header"]=["", "Precision", "Recall", "F1"]
@@ -64,7 +41,7 @@ def print_result(eval_result, perf_file):
 
 	by_category_result = eval_result['by_category']
 
-	for entity in sorted(by_category_result): 
+	for entity in sorted(by_category_result):
 		l = [entity, by_category_result[entity]["P"], by_category_result[entity]["R"], by_category_result[entity]["F1"]]
 		result["rows"].append(l)
 
@@ -78,36 +55,20 @@ def print_result(eval_result, perf_file):
 
 
 def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
-	
+
 	gold_sentences = read_sentence(conll_file_gold)
 	pred_sentences = read_sentence(conll_file_pred)
 
 	pred_file= "prediction.txt"
+
+
 	
 
 	fout=open(pred_file,"w")
 
-	list_of_matched_tuples = []
-	list_of_matched_indices = []
-
-
 	for gold_sent_index in range(len(gold_sentences)):
-
-		gold_sent_info = gold_sentences[gold_sent_index]
-		gold_sent = get_line(gold_sent_info)
-
-		pred_sent_index = find_pred_sent_index(gold_sent, pred_sentences, list_of_matched_indices)
-		if pred_sent_index:
-			list_of_matched_indices.append(pred_sent_index)
-
-			list_of_matched_tuples.append((gold_sent_index, pred_sent_index))
-			# print((gold_sent_index, pred_sent_index))
-
-	fout=open(pred_file,"w")
-
-	for (gold_sent_index, pred_sent_index) in list_of_matched_tuples:
 		gold_sent_info =  gold_sentences[gold_sent_index]
-		pred_sent_info = pred_sentences[pred_sent_index]
+		pred_sent_info = pred_sentences[gold_sent_index]
 
 		for word_index in range(len(gold_sent_info)):
 			gold_word_info = gold_sent_info[word_index]
@@ -149,7 +110,7 @@ def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pr
 	conll_file_pred = 'Conll_Format_Data/pred.txt'
 
 	eval_utils.preprocess_data_to_merge(input_gold_folder, conll_folder_gold, conll_file_gold,input_pred_folder, conll_folder_pred, conll_file_pred)
-    
+
 
 	compare_prediction(conll_file_gold, conll_file_pred, pref_file, to_latex)
 
@@ -157,7 +118,7 @@ def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pr
 
 
 
-	
+
 
 
 if __name__ == '__main__':
@@ -178,7 +139,7 @@ if __name__ == '__main__':
 	    help="Standoff_Format prediction files"
 	)
 
-	
+
 
 	parser.add_argument(
 	    "-perf_file", default="performance.tex",
@@ -188,7 +149,7 @@ if __name__ == '__main__':
 	parser.add_argument(
 	    "-to_latex", default="0",
 	    help="if print in latex format (1 to enable, 0 to disable)"
-	) 
+	)
 
 
 	opts = parser.parse_args()
@@ -198,13 +159,13 @@ if __name__ == '__main__':
 	parameters_eval["gold_data"]=opts.gold_data
 	parameters_eval["pred_data"]=opts.pred_data
 	parameters_eval["perf_file"]=opts.perf_file
-	
+
 
 	if opts.to_latex=="0":
 	    parameters_eval["print_latex_format"]=False
 	else:
 	    parameters_eval["print_latex_format"]=True
-	
+
 	input_gold_folder = parameters_eval["gold_data"]
 
 
@@ -219,10 +180,3 @@ if __name__ == '__main__':
 
 
 	evaluate(input_gold_folder, input_pred_folder, print_latex_format, perf_file)
-	
-
-
-
-
-
-

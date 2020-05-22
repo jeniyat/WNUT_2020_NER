@@ -1,213 +1,130 @@
-T1	Action 29 32	Mix
-E1	Action:T1 Acts-on:T25 Acts-on2:T26
-T2	Action 88 91	Mix
-E2	Action:T2 Acts-on:T29 Acts-on2:T30
-T3	Action 212 220	Incubate
-E3	Action:T3 Acts-on:T37
-T4	Action 250 253	Add
-E4	Action:T4 Acts-on:T41
-T5	Action 342 347	Shake
-E5	Action:T5 Using:T47 Acts-on:T46
-T6	Action 373 381	Transfer
-E6	Action:T6 Acts-on:T49 Site:T50
-T7	Action 433 443	centrifuge
-E7	Action:T7 
-T8	Action 418 425	balance
-E8	Action:T8 Acts-on:T54
-T9	Action 477 485	Transfer
-E9	Action:T9 Acts-on:T55 Using:T56 Site:T58
-T10	Action 590 593	Put
-E10	Action:T10 Acts-on:T59 Site:T60
-T11	Action 637 647	Centrifuge
-E11	Action:T11 Acts-on:T61
-T12	Action 762 768	stored
-E12	Action:T12 Acts-on:T67
-T13	Action 833 836	add
-E13	Action:T13 Acts-on:T71
-T14	Action 887 894	Collect
-E14	Action:T14 Acts-on:T73
-T15	Action 929 932	dry
-E15	Action:T15 Site:T76 Acts-on:T77
-T16	Action 951 959	Pour off
-E16	Action:T16 Acts-on:T78 Site:T79
-T17	Action 994 997	Put
-E17	Action:T17 Acts-on:T80 Site:T88
-T18	Action 1075 1087	Let it stand
-E18	Action:T18 
-T19	Action 1103 1108	Press
-E19	Action:T19 Acts-on:T90 Site:T92
-T20	Action 1186 1192	Invert
-E20	Action:T20 Acts-on:T96 Site:T97
-T21	Action 1236 1239	dry
-E21	Action:T21 
-T22	Action 1275 1283	Dissolve
-E22	Action:T22 Acts-on:T102 Site:T104
-T23	Action 1302 1310	Estimate
-E23	Action:T23 Measure-Type-Link:T105 Using:T106
-T24	Action 1392 1399	overlay
-E24	Action:T24 Acts-on:T111 Using:T114
-T25	Reagent 33 48	Lysing Solution
-T26	Reagent 56 74	Sodium Perchlorate
-T27	Generic-Measure 83 86	2:1
-R1	Setting Arg1:E1 Arg2:T27	
-T28	Modifier 96 104	combined
-T29	Reagent 105 141	Lysing Solution & sodium Perchlorate
-T30	Reagent 147 157	virus prep
-T31	Amount 159 166	18.5 ml
-T32	Reagent 167 172	LS+SP
-T33	Amount 178 182	10ml
-T34	Reagent 183 193	virus prep
-T35	Generic-Measure 197 208	10¹¹ PFU/ml
-T36	Modifier 195 196	~
-R2	Mod-Link Arg1:T29 Arg2:T28	
-R3	Measure Arg1:T32 Arg2:T31	
-R4	Measure Arg1:T34 Arg2:T33	
-R5	Measure Arg1:T34 Arg2:T35	
-R6	Mod-Link Arg1:T35 Arg2:T36	
-R7	Or Arg1:T29 Arg2:T32	
-R8	Or Arg1:T30 Arg2:T34	
-T37	Reagent 225 231	lysate
-T38	Temperature 235 239	55ºC
-T39	Time 244 248	1hrs
-R9	Setting Arg1:E3 Arg2:T38	
-R10	Setting Arg1:E3 Arg2:T39	
-T40	Amount 254 258	30ml
-T41	Reagent 262 268	phenol
-T42	Reagent 273 283	chloroform
-T43	Reagent 286 301	isoamyl alcohol
-T44	Generic-Measure 303 307	25:1
-T45	Generic-Measure 337 340	1:1
-R11	Measure Arg1:T41 Arg2:T40	
-R12	Meronym Arg1:T42 Arg2:T41	
-R13	Meronym Arg1:T43 Arg2:T41	
-R14	Measure Arg1:T42 Arg2:T44	
-R15	Measure Arg1:T43 Arg2:T44	
-R16	Setting Arg1:E4 Arg2:T45	
-T46	Mention 348 352	them
-T47	Device 356 361	hands
-T48	Time 366 371	5mins
-R17	Setting Arg1:E5 Arg2:T48	
-T49	Reagent 386 392	liquid
-T50	Location 400 416	centrifuge tubes
-T51	Time 448 455	15 mins
-T52	Speed 459 468	14000 rpm
-T53	Temperature 472 475	4ºC
-T54	Mention 426 430	them
-R18	Coreference-Link Arg1:T54 Arg2:T50	
-R19	Setting Arg1:E7 Arg2:T51	
-R20	Setting Arg1:E7 Arg2:T52	
-R21	Setting Arg1:E7 Arg2:T53	
-T55	Reagent 490 510	aqueous (upper) part
-T56	Device 516 523	pipette
-T57	Modifier 531 536	clean
-T58	Location 537 553	centrifuge tubes
-R22	Mod-Link Arg1:T58 Arg2:T57	
-T59	Location 598 610	bottom layer
-T60	Location 620 635	waste container
-T61	Location 648 653	tubes
-T62	Speed 663 673	14,000 rpm
-T63	Time 678 684	15 min
-R23	Setting Arg1:E11 Arg2:T62	
-R24	Setting Arg1:E11 Arg2:T63	
-T64	Modifier 654 659	again
-R25	Mod-Link Arg1:E11 Arg2:T64	
-T65	Time 769 778	overnight
-T66	Temperature 782 786	4 ºC
-T67	Reagent 741 754	Aqueous layer
-R26	Setting Arg1:E12 Arg2:T65	
-R27	Setting Arg1:E12 Arg2:T66	
-T68	Amount 837 847	0.1 volume
-T69	Concentration 851 853	3M
-T70	Concentration 858 860	5M
-T71	Reagent 862 876	Sodium Acetate
-T72	pH 878 884	pH 6.0
-T73	Reagent 895 898	DNA
-T74	Action 902 910	swirling
-E25	Action:T74 Acts-on:T75
-T75	Device 911 920	glass rod
-R28	Or Arg1:T70 Arg2:T69	
-R29	Measure Arg1:T71 Arg2:T70	
-R30	Measure Arg1:T71 Arg2:T72	
-R31	Measure Arg1:T71 Arg2:T68	
-T76	Device 940 949	glass rod
-T77	Mention 926 928	it
-T78	Reagent 960 967	alcohol
-T79	Location 977 992	waste container
-T80	Reagent 998 1001	DNA
-T81	Action 1031 1034	add
-E26	Action:T81 Acts-on:T85
-T82	Amount 1035 1045	10 to 20ml
-T83	Modifier 1049 1053	cold
-T84	Concentration 1054 1057	76%
-T85	Reagent 1058 1065	Ethanol
-T86	Temperature 1067 1072	-20ºC
-T87	Device 1009 1012	rod
-T88	Location 1022 1028	beaker
-R32	Meronym Arg1:T80 Arg2:T87	
-R33	Measure Arg1:T85 Arg2:T84	
-R34	Mod-Link Arg1:T85 Arg2:T83	
-R35	Measure Arg1:T85 Arg2:T82	
-R36	Or Arg1:T85 Arg2:T86	
-T89	Time 1092 1101	10-20 min
-R37	Setting Arg1:E18 Arg2:T89	
-T90	Device 1113 1122	glass rod
-T91	Reagent 1128 1131	DNA
-T92	Location 1144 1148	wall
-T93	Location 1152 1158	beaker
-T94	Action 1162 1169	get rid
-E27	Action:T94 Acts-on:T95
-T95	Reagent 1177 1184	ethanol
-T96	Device 1197 1209	stirring rod
-T97	Location 1217 1231	test tube rack
-T98	Time 1244 1249	5 min
-R38	Meronym Arg1:T91 Arg2:T90	
-R39	Meronym Arg1:T92 Arg2:T93	
-R40	Setting Arg1:E21 Arg2:T98	
-T99	Action 1251 1254	Use
-E28	Action:T99 Acts-on:T101
-T100	Amount 1255 1259	15ml
-T101	Location 1260 1273	plastic tubes
-R41	Measure Arg1:T101 Arg2:T100	
-T102	Reagent 1284 1287	DNA
-T103	Amount 1291 1294	4ml
-T104	Reagent 1298 1300	TE
-R42	Measure Arg1:T104 Arg2:T103	
-T105	Measure-Type 1311 1328	DNA concentration
-T106	Device 1335 1352	spectrophotometer
-T107	Reagent 1357 1360	gel
-T108	Action 1364 1370	ensure
-E29	Action:T108 Measure-Type-Link:T109 Using:T107
-T109	Measure-Type 1371 1383	DNA quantity
-T110	Modifier 1385 1391	Gently
-T111	Reagent 1404 1417	aqueous layer
-T112	Amount 1423 1432	2 volumes
-T113	Concentration 1436 1440	95 %
-T114	Reagent 1444 1451	ethanol
-R43	Measure Arg1:T114 Arg2:T113	
-R44	Measure Arg1:T114 Arg2:T112	
-R45	Mod-Link Arg1:E24 Arg2:T110	
-T115	Method 0 10	Extraction
-T116	Reagent 14 17	DNA
-T117	Reagent 23 28	Virus
-T118	Reagent 50 52	LS
-T119	Reagent 76 78	SP
-R46	Meronym Arg1:T119 Arg2:T26	
-R47	Meronym Arg1:T118 Arg2:T25	
-T120	Measure-Type 317 327	proportion
-R48	Of-Type Arg1:T45 Arg2:T120	
-T121	Reagent 575 582	protein
-T122	Modifier 583 588	in it
-R49	Mod-Link Arg1:T121 Arg2:T122	
-T123	Modifier 693 697	easy
-T124	Action 701 704	get
-E30	Action:T124 Acts-on:T126
-T125	Modifier 705 709	pure
-T126	Reagent 710 716	liquid
-T127	Modifier 717 739	without protein debris
-R50	Mod-Link Arg1:T126 Arg2:T125	
-R51	Mod-Link Arg1:T126 Arg2:T127	
-R52	Mod-Link Arg1:E30 Arg2:T123	
-T128	Action 788 796	Estimate
-E31	Action:T128 Acts-on:T130 Measure-Type-Link:T129
-T129	Measure-Type 801 807	volume
-T130	Reagent 815 828	aqueous layer
+T1	Method 0 10	Extraction
+T2	Reagent 14 17	DNA
+T3	Reagent 23 28	Virus
+T4	Action 29 32	Mix
+T5	Reagent 33 48	Lysing Solution
+T6	Reagent 50 52	LS
+T7	Reagent 56 74	Sodium Perchlorate
+T8	Reagent 76 78	SP
+T9	Generic-Measure 83 86	2:1
+T10	Action 88 91	Mix
+T11	Modifier 96 104	combined
+T12	Reagent 105 141	Lysing Solution & sodium Perchlorate
+T13	Reagent 147 157	virus prep
+T14	Amount 158 166	:18.5 ml
+T15	Reagent 167 172	LS+SP
+T16	Amount 178 182	10ml
+T17	Reagent 183 193	virus prep
+T18	Modifier 195 196	~
+T19	Generic-Measure 197 208	10¹¹ PFU/ml
+T20	Action 211 219	Incubate
+T21	Reagent 224 230	lysate
+T22	Temperature 234 238	55ºC
+T23	Time 243 247	1hrs
+T24	Action 249 252	Add
+T25	Amount 253 257	30ml
+T26	Reagent 261 267	phenol
+T27	Reagent 272 282	chloroform
+T28	Reagent 285 300	isoamyl alcohol
+T29	Generic-Measure 302 306	25:1
+T30	Measure-Type 317 327	proportion
+T31	Generic-Measure 337 340	1:1
+T32	Action 342 347	Shake
+T33	Mention 348 352	them
+T34	Device 356 361	hands
+T35	Time 366 371	5mins
+T36	Action 373 381	Transfer
+T37	Reagent 386 392	liquid
+T38	Location 400 416	centrifuge tubes
+T39	Action 418 425	balance
+T40	Mention 426 430	them
+T41	Action 433 443	centrifuge
+T42	Time 448 455	15 mins
+T43	Speed 459 468	14000 rpm
+T44	Temperature 472 475	4ºC
+T45	Action 477 485	Transfer
+T46	Reagent 490 510	aqueous (upper) part
+T47	Device 516 523	pipette
+T48	Modifier 531 536	clean
+T49	Location 537 553	centrifuge tubes
+T50	Reagent 577 584	protein
+T51	Modifier 585 590	in it
+T52	Action 592 595	Put
+T53	Location 600 612	bottom layer
+T54	Location 622 637	waste container
+T55	Action 639 649	Centrifuge
+T56	Location 650 655	tubes
+T57	Modifier 656 661	again
+T58	Speed 665 675	14,000 rpm
+T59	Time 680 686	15 min
+T60	Modifier 695 699	easy
+T61	Action 703 706	get
+T62	Modifier 707 711	pure
+T63	Reagent 712 718	liquid
+T64	Modifier 719 741	without protein debris
+T65	Reagent 743 756	Aqueous layer
+T66	Action 764 770	stored
+T67	Time 771 780	overnight
+T68	Temperature 784 788	4 ºC
+T69	Action 790 798	Estimate
+T70	Measure-Type 803 809	volume
+T71	Reagent 817 830	aqueous layer
+T72	Action 835 838	add
+T73	Amount 839 849	0.1 volume
+T74	Concentration 853 855	3M
+T75	Concentration 860 862	5M
+T76	Reagent 864 878	Sodium Acetate
+T77	pH 880 886	pH 6.0
+T78	Action 889 896	Collect
+T79	Reagent 897 900	DNA
+T80	Action 904 912	swirling
+T81	Device 913 922	glass rod
+T82	Mention 928 930	it
+T83	Action 931 934	dry
+T84	Device 942 951	glass rod
+T85	Action 953 961	Pour off
+T86	Reagent 962 969	alcohol
+T87	Location 979 994	waste container
+T88	Action 996 999	Put
+T89	Reagent 1000 1003	DNA
+T90	Device 1011 1014	rod
+T91	Location 1024 1030	beaker
+T92	Action 1033 1036	add
+T93	Amount 1037 1047	10 to 20ml
+T94	Modifier 1051 1055	cold
+T95	Concentration 1056 1060	76 %
+T96	Reagent 1061 1068	Ethanol
+T97	Temperature 1070 1075	-20ºC
+T98	Action 1078 1090	Let it stand
+T99	Time 1095 1104	10-20 min
+T100	Action 1106 1111	Press
+T101	Device 1116 1125	glass rod
+T102	Reagent 1131 1134	DNA
+T103	Location 1147 1151	wall
+T104	Location 1155 1161	beaker
+T105	Action 1165 1172	get rid
+T106	Reagent 1180 1187	ethanol
+T107	Action 1189 1195	Invert
+T108	Device 1200 1212	stirring rod
+T109	Location 1220 1234	test tube rack
+T110	Action 1239 1242	dry
+T111	Time 1247 1252	5 min
+T112	Action 1254 1257	Use
+T113	Amount 1258 1262	15ml
+T114	Location 1263 1276	plastic tubes
+T115	Action 1278 1286	Dissolve
+T116	Reagent 1287 1290	DNA
+T117	Amount 1294 1297	4ml
+T118	Reagent 1301 1303	TE
+T119	Action 1305 1313	Estimate
+T120	Measure-Type 1314 1331	DNA concentration
+T121	Device 1338 1355	spectrophotometer
+T122	Reagent 1359 1362	gel
+T123	Action 1366 1372	ensure
+T124	Measure-Type 1373 1385	DNA quantity
+T125	Modifier 1387 1393	Gently
+T126	Action 1394 1401	overlay
+T127	Reagent 1406 1419	aqueous layer
+T128	Amount 1425 1434	2 volumes
+T129	Concentration 1438 1442	95 %
+T130	Reagent 1446 1453	ethanol

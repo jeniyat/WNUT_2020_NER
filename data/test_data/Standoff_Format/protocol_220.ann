@@ -1,587 +1,361 @@
-T1	Action 61 64	Fix
-E1	Action:T1 Acts-on:T2 Using:T5
-T2	Reagent 65 89	freshly dissected tissue
-T3	Size 92 95	3mm
-T4	Concentration 108 111	10%
-T5	Reagent 112 120	formalin
-T6	Reagent 124 139	other fixatives
-T7	Time 144 151	24-48 h
-T8	Temperature 155 171	room temperature
-R1	Measure Arg1:T2 Arg2:T3	
-R2	Measure Arg1:T5 Arg2:T4	
-R3	Or Arg1:T5 Arg2:T6	
-R4	Setting Arg1:E1 Arg2:T7	
-R5	Setting Arg1:E1 Arg2:T8	
-T9	Action 173 178	Rinse
-E2	Action:T9 Acts-on:T10 Using:T11
-T10	Reagent 183 189	tissue
-T11	Reagent 195 212	running tap water
-T12	Time 217 220	1 h
-T13	Action 222 231	Dehydrate
-E3	Action:T13 Acts-on:T14 Using:T16
-T14	Reagent 236 242	tissue
-T15	Concentration 251 254	70%
-T16	Reagent 255 262	alcohol
-T17	Time 264 270	45 min
-R6	Measure Arg1:T16 Arg2:T15	
-R7	Setting Arg1:E3 Arg2:T17	
-T18	Action 272 277	Clear
-E4	Action:T18 Acts-on:T19 Using:T20
-T19	Reagent 282 288	tissue
-T20	Reagent 309 315	xylene
-T21	Time 317 320	1 h
-T22	Action 329 334	Clear
-E5	Action:T22 Acts-on:T23 Using:T24
-T23	Reagent 339 345	tissue
-T24	Reagent 366 372	xylene
-T25	Time 374 377	1 h
-R8	Setting Arg1:E4 Arg2:T21	
-R9	Setting Arg1:E5 Arg2:T25	
-T26	Action 386 393	Immerse
-E6	Action:T26 Acts-on:T27 Using:T28
-T27	Reagent 398 404	tissue
-T28	Reagent 420 428	paraffin
-T29	Time 430 433	1 h
-T30	Time 486 489	1 h
-T31	Time 542 545	1 h
-T32	Reagent 476 484	paraffin
-T33	Reagent 532 540	paraffin
+T1	Method 0 20	Immunohistochemistry
+T2	Modifier 34 51	Paraffin-Embedded
+T3	Reagent 52 60	Sections
+T4	Action 61 64	Fix
+T5	Reagent 65 89	freshly dissected tissue
+T6	Modifier 91 92	<
+T7	Size 93 96	3mm
+T8	Concentration 109 113	10 %
+T9	Reagent 114 122	formalin
+T10	Reagent 126 141	other fixatives
+T11	Time 146 156	24-48 h at
+T12	Temperature 157 174	room temperature.
+T13	Action 175 180	Rinse
+T14	Reagent 185 191	tissue
+T15	Reagent 197 214	running tap water
+T16	Time 219 223	1 h.
+T17	Action 224 233	Dehydrate
+T18	Reagent 238 244	tissue
+T19	Concentration 253 257	70 %
+T20	Reagent 258 265	alcohol
+T21	Time 267 273	45 min
+T22	Action 275 280	Clear
+T23	Reagent 285 291	tissue
+T24	Reagent 312 318	xylene
+T25	Time 320 324	1 h.
+T26	Action 331 336	Clear
+T27	Reagent 341 347	tissue
+T28	Reagent 368 374	xylene
+T29	Time 376 380	1 h.
+T30	Action 387 394	Immerse
+T31	Reagent 399 405	tissue
+T32	Reagent 421 429	paraffin
+T33	Time 431 435	1 h.
 T34	Action 442 449	Immerse
-E7	Action:T34 Acts-on:T36 Using:T32
-T35	Action 498 505	Immerse
-E8	Action:T35 Acts-on:T37 Using:T33
-T36	Reagent 454 460	tissue
-T37	Reagent 510 516	tissue
-R10	Setting Arg1:E8 Arg2:T31	
-R11	Setting Arg1:E7 Arg2:T30	
-R12	Setting Arg1:E6 Arg2:T29	
-T38	Action 554 559	Embed
-E9	Action:T38 Acts-on:T39 Site:T40
-T39	Reagent 564 570	tissue
-T40	Reagent 576 590	paraffin block
-T41	Action 592 599	Section
-E10	Action:T41 Acts-on:T42 Site:T43
-T42	Reagent 604 634	paraffin-embedded tissue block
-T43	Location 660 669	microtome
-T45	Action 674 679	float
-E11	Action:T45 Site:T47
-T46	Temperature 685 689	40°C
-T47	Location 690 700	water bath
-T48	Reagent 712 727	distilled water
-R14	Setting Arg1:E11 Arg2:T46	
-R15	Meronym Arg1:T48 Arg2:T47	
-T49	Action 729 737	Transfer
-E12	Action:T49 Acts-on:T50 Site:T51
-T50	Reagent 742 750	sections
-T51	Location 756 768	glass slides
-T52	Modifier 769 802	suitable for immunohistochemistry
-R16	Mod-Link Arg1:T51 Arg2:T52	
-T53	Action 827 832	Allow
-E13	Action:T53 Acts-on:T56
-T54	Time 851 860	overnight
-T55	Action 865 870	store
-E14	Action:T55 Acts-on:T57
-T56	Location 837 843	slides
-T57	Location 871 877	slides
-T58	Temperature 881 897	room temperature
-R17	Setting Arg1:E13 Arg2:T54	
-R18	Setting Arg1:E14 Arg2:T58	
-T59	Time 898 917	until ready for use
-R19	Setting Arg1:E14 Arg2:T59	
-T60	Action 919 932	Deparaffinize
-E15	Action:T60 Acts-on:T63 Using:T67
-T61	Action 977 990	Deparaffinize
-E16	Action:T61 Acts-on:T64 Using:T68
-T62	Action 1035 1044	Drain off
-E17	Action:T62 Acts-on:T65 Site:T66
-T63	Location 933 939	slides
-T64	Location 991 997	slides
-T65	Reagent 1049 1064	blocking buffer
-T66	Location 1074 1080	slides
-T67	Reagent 955 961	xylene
-T68	Reagent 1013 1019	xylene
-T69	Time 963 968	5 min
-T70	Time 1021 1026	5 min
-T71	Action 1082 1090	Transfer
-E18	Action:T71 Acts-on:T72 Site:T74
-T72	Reagent 1091 1097	slides
-T73	Concentration 1101 1105	100%
-T74	Reagent 1106 1113	alcohol
-T75	Time 1121 1129	3-minute
-T76	Time 1184 1192	3-minute
-T77	Reagent 1169 1176	alcohol
-T78	Concentration 1164 1168	100%
-T79	Reagent 1154 1160	slides
-T80	Action 1145 1153	Transfer
-E19	Action:T80 Acts-on:T79 Site:T77
-R20	Measure Arg1:T74 Arg2:T73	
-R21	Setting Arg1:E18 Arg2:T75	
-R22	Measure Arg1:T77 Arg2:T78	
-R23	Setting Arg1:E19 Arg2:T76	
-T82	Action 1248 1258	incubating
-E21	Action:T82 Acts-on:T83 Site:T85
-T83	Reagent 1259 1267	sections
-T84	Concentration 1271 1273	3%
-T85	Reagent 1274 1287	H2O2 solution
-T86	Reagent 1291 1299	methanol
-T87	Temperature 1303 1319	room temperature
-T88	Time 1324 1330	10 min
-R24	Measure Arg1:T85 Arg2:T84	
-R26	Setting Arg1:E21 Arg2:T87	
-R27	Setting Arg1:E21 Arg2:T88	
-T81	Action 1372 1378	Change
-E20	Action:T81 
-T89	Action 1426 1432	Change
-E22	Action:T89 
-T90	Action 1382 1389	rinsing
-E23	Action:T90 Using:T94
-T91	Action 1436 1443	rinsing
-E24	Action:T91 Using:T95
-T92	Amount 1393 1399	300 ml
-T93	Amount 1447 1453	300 ml
-T94	Reagent 1403 1406	PBS
-T95	Reagent 1457 1460	PBS
-T96	Time 1412 1417	5 min
-T97	Time 1466 1471	5 min
-R28	Measure Arg1:T94 Arg2:T92	
-R29	Measure Arg1:T95 Arg2:T93	
-R30	Setting Arg1:E23 Arg2:T96	
-R31	Setting Arg1:E24 Arg2:T97	
-T98	Action 1491 1498	Perform
-E25	Action:T98 Using:T348
-T99	Action 1619 1626	Arrange
-E26	Action:T99 Acts-on:T100 Site:T101
-T100	Location 1631 1637	slides
-T101	Location 1643 1661	staining container
-T102	Action 1663 1667	Pour
-E27	Action:T102 Acts-on:T105 Site:T107
-T103	Amount 1668 1674	300 ml
-T104	Concentration 1678 1683	10 mM
-T105	Reagent 1684 1698	citrate buffer
-T106	pH 1700 1706	pH 6.0
-T107	Location 1716 1734	staining container
-T108	Action 1739 1747	incubate
-E28	Action:T108 Acts-on:T109
-T109	Mention 1748 1750	it
-R32	Coreference-Link Arg1:T109 Arg2:T105	
-R33	Measure Arg1:T105 Arg2:T104	
-R34	Measure Arg1:T105 Arg2:T103	
-R35	Measure Arg1:T105 Arg2:T106	
-T110	Temperature 1754 1762	95-100°C
-T111	Time 1767 1773	10 min
-R36	Setting Arg1:E28 Arg2:T110	
-R37	Setting Arg1:E28 Arg2:T111	
-T112	Action 1830 1836	Remove
-E29	Action:T112 Acts-on:T113
-T113	Location 1841 1859	staining container
-T114	Temperature 1863 1879	room temperature
-T115	Action 1884 1889	allow
-E30	Action:T115 Acts-on:T116
-T116	Reagent 1894 1900	slides
-T117	Time 1913 1919	20 min
-R38	Setting Arg1:E30 Arg2:T117	
-R39	Setting Arg1:E29 Arg2:T114	
-T118	Action 1921 1927	Change
-E31	Action:T118 
-T119	Action 1978 1984	Change
-E32	Action:T119 
-T120	Action 1931 1938	rinsing
-E33	Action:T120 Acts-on:T122 Using:T126
-T121	Action 1988 1995	rinsing
-E34	Action:T121 Acts-on:T123 Using:T127
-T122	Location 1939 1945	slides
-T123	Location 1996 2002	slides
-T124	Amount 1949 1955	300 ml
-T125	Amount 2006 2012	300 ml
-T126	Reagent 1956 1959	PBS
-T127	Reagent 2013 2016	PBS
-T128	Time 1964 1969	5 min
-T129	Time 2021 2026	5 min
-R40	Measure Arg1:T126 Arg2:T124	
-R41	Measure Arg1:T127 Arg2:T125	
-R42	Setting Arg1:E33 Arg2:T128	
-R43	Setting Arg1:E34 Arg2:T129	
-T130	Action 2046 2049	Add
-E35	Action:T130 Acts-on:T132 Site:T136
-T131	Amount 2050 2056	100 µl
-T132	Reagent 2057 2072	blocking buffer
-T133	Concentration 2079 2082	10%
-T134	Reagent 2083 2101	fetal bovine serum
-T135	Reagent 2105 2108	PBS
-R44	Measure Arg1:T134 Arg2:T133	
-R45	Measure Arg1:T132 Arg2:T131	
-T136	Location 2119 2127	sections
-T137	Location 2135 2141	slides
-T138	Action 2146 2154	incubate
-E36	Action:T138 Site:T139
-T139	Location 2160 2178	humidified chamber
-T140	Temperature 2182 2198	room temperature
-T141	Time 2203 2205	1h
-R48	Meronym Arg1:T136 Arg2:T137	
-R49	Setting Arg1:E36 Arg2:T140	
-R50	Setting Arg1:E36 Arg2:T141	
-T142	Action 2207 2212	Apply
-E37	Action:T142 Acts-on:T145 Site:T150
-T143	Amount 2213 2219	100 µl
-T144	Concentration 2220 2241	appropriately diluted
-T145	Reagent 2242 2258	primary antibody
-T146	Reagent 2263 2287	antibody dilution buffer
-T147	Concentration 2294 2298	0.5%
-T148	Reagent 2299 2319	bovine serum albumin
-T149	Reagent 2323 2326	PBS
-R51	Measure Arg1:T148 Arg2:T147	
-R25	Meronym Arg1:T86 Arg2:T85	
-R52	Meronym Arg1:T146 Arg2:T145	
-R53	Meronym Arg1:T149 Arg2:T148	
-R54	Meronym Arg1:T148 Arg2:T146	
-R46	Meronym Arg1:T135 Arg2:T134	
-R47	Meronym Arg1:T134 Arg2:T132	
-R55	Measure Arg1:T145 Arg2:T144	
-R56	Measure Arg1:T145 Arg2:T143	
-T150	Reagent 2335 2343	sections
-T151	Location 2351 2357	slides
-T152	Action 2362 2370	incubate
-E38	Action:T152 Site:T153
-T153	Location 2376 2394	humidified chamber
-T154	Temperature 2398 2414	room temperature
-T155	Time 2419 2422	1 h
-R57	Setting Arg1:E38 Arg2:T154	
-R58	Setting Arg1:E38 Arg2:T155	
-R59	Meronym Arg1:T150 Arg2:T151	
-T156	Action 2425 2431	Change
-E39	Action:T156 
-T157	Action 2486 2492	Change
-E40	Action:T157 
-T158	Action 2435 2442	washing
-E41	Action:T158 Acts-on:T160 Site:T164
-T159	Action 2496 2503	washing
-E42	Action:T159 Acts-on:T161 Site:T165
-T160	Location 2447 2453	slides
-T161	Location 2508 2514	slides
-T162	Amount 2457 2463	300 ml
-T163	Amount 2518 2524	300 ml
-T164	Reagent 2464 2467	PBS
-T165	Reagent 2525 2528	PBS
-T166	Time 2472 2477	5 min
-T167	Time 2533 2538	5 min
-R60	Measure Arg1:T164 Arg2:T162	
-R61	Measure Arg1:T165 Arg2:T163	
-R62	Setting Arg1:E41 Arg2:T166	
-R63	Setting Arg1:E42 Arg2:T167	
-T168	Action 2547 2552	Apply
-E43	Action:T168 Acts-on:T171 Site:T173
-T169	Amount 2553 2559	100 µl
-T170	Concentration 2560 2581	appropriately diluted
-T171	Reagent 2582 2613	biotinylated secondary antibody
-T172	Reagent 2625 2649	antibody dilution buffer
-T173	Reagent 2658 2666	sections
-T174	Location 2674 2680	slides
-T175	Action 2685 2693	incubate
-E44	Action:T175 Site:T176
-T176	Location 2699 2717	humidified chamber
-T177	Temperature 2721 2737	room temperature
-T178	Time 2742 2748	30 min
-R64	Measure Arg1:T171 Arg2:T170	
-R65	Measure Arg1:T171 Arg2:T169	
-R66	Meronym Arg1:T172 Arg2:T171	
-R67	Setting Arg1:E44 Arg2:T177	
-R68	Setting Arg1:E44 Arg2:T178	
-R69	Meronym Arg1:T173 Arg2:T174	
-T179	Action 2750 2756	Change
-E45	Action:T179 
-T180	Action 2807 2813	Change
-E46	Action:T180 
-T181	Action 2760 2767	washing
-E47	Action:T181 Acts-on:T183 Using:T187
-T182	Action 2817 2824	washing
-E48	Action:T182 Acts-on:T184 Using:T188
-T183	Location 2768 2774	slides
-T184	Location 2825 2831	slides
-T185	Amount 2778 2784	300 ml
-T186	Amount 2835 2841	300 ml
-T187	Reagent 2785 2788	PBS
-T188	Reagent 2842 2845	PBS
-T189	Time 2793 2798	5 min
-T190	Time 2850 2855	5 min
-R70	Measure Arg1:T187 Arg2:T185	
-R71	Measure Arg1:T188 Arg2:T186	
-R72	Setting Arg1:E47 Arg2:T189	
-R73	Setting Arg1:E48 Arg2:T190	
-T191	Action 2864 2869	Apply
-E49	Action:T191 Acts-on:T194 Using:T195 Site:T196
-T192	Amount 2870 2876	100 µl
-T193	Concentration 2877 2898	appropriately diluted
-T194	Reagent 2899 2917	Sav-HRP conjugates
-T195	Reagent 2929 2953	antibody dilution buffer
-T196	Reagent 2962 2970	sections
-T197	Location 2978 2984	slides
-T198	Action 2989 2997	incubate
-E50	Action:T198 Site:T199
-T199	Location 3003 3021	humidified chamber
-T200	Temperature 3025 3041	room temperature
-T201	Time 3046 3052	30 min
-T202	Action 3054 3079	keep protected from light
-E51	Action:T202 
-R74	Setting Arg1:E50 Arg2:T200	
-R75	Setting Arg1:E50 Arg2:T201	
-R76	Measure Arg1:T194 Arg2:T193	
-R77	Measure Arg1:T194 Arg2:T192	
-R78	Meronym Arg1:T196 Arg2:T197	
-T203	Action 3082 3088	Change
-E52	Action:T203 
-T204	Action 3139 3145	Change
-E53	Action:T204 
-T205	Action 3092 3099	washing
-E54	Action:T205 Acts-on:T207 Using:T211
-T206	Action 3149 3156	washing
-E55	Action:T206 Acts-on:T208 Using:T212
-T207	Location 3100 3106	slides
-T208	Location 3157 3163	slides
-T209	Amount 3110 3116	300 ml
-T210	Amount 3167 3173	300 ml
-T211	Reagent 3117 3120	PBS
-T212	Reagent 3174 3177	PBS
-T213	Time 3125 3130	5 min
-T214	Time 3182 3187	5 min
-R79	Measure Arg1:T211 Arg2:T209	
-R80	Measure Arg1:T212 Arg2:T210	
-R81	Setting Arg1:E54 Arg2:T213	
-R82	Setting Arg1:E55 Arg2:T214	
-T215	Action 3196 3201	Apply
-E56	Action:T215 Acts-on:T217 Site:T218
-T216	Amount 3202 3208	100 µl
-T217	Reagent 3209 3231	DAB substrate solution
-T219	Concentration 3263 3268	0.05%
-T220	Concentration 3275 3281	0.015%
-T221	Reagent 3290 3293	PBS
-T222	Reagent 3282 3286	H2O2
-T223	Reagent 3269 3272	DAB
-R83	Measure Arg1:T223 Arg2:T219	
-R84	Measure Arg1:T222 Arg2:T220	
-R85	Meronym Arg1:T223 Arg2:T217	
-R86	Meronym Arg1:T222 Arg2:T217	
-R87	Meronym Arg1:T221 Arg2:T222	
-T218	Reagent 3302 3310	sections
-T224	Location 3318 3324	slides
-T225	Action 3328 3344	reveal the color
-E57	Action:T225 Acts-on:T226
-T226	Reagent 3348 3365	antibody staining
-R88	Measure Arg1:T217 Arg2:T216	
-R89	Meronym Arg1:T218 Arg2:T224	
-T227	Action 3367 3373	Allow 
-E58	Action:T227 Using:T360
-T228	Time 3401 3406	5 min
-R90	Setting Arg1:E58 Arg2:T228	
-T229	Action 3453 3459	Change
-E59	Action:T229 
-T230	Action 3510 3516	Change
-E60	Action:T230 
-T231	Action 3567 3573	Change
-E61	Action:T231 
-T232	Action 3520 3527	washing
-E62	Action:T232 Acts-on:T236 Using:T242
-T233	Action 3463 3470	washing
-E63	Action:T233 Acts-on:T235 Using:T241
-T234	Action 3577 3584	washing
-E64	Action:T234 Acts-on:T237 Using:T243
-T235	Location 3471 3477	slides
-T236	Location 3528 3534	slides
-T237	Location 3585 3591	slides
-T238	Amount 3481 3487	300 ml
-T239	Amount 3538 3544	300 ml
-T240	Amount 3595 3601	300 ml
-T241	Reagent 3488 3491	PBS
-T242	Reagent 3545 3548	PBS
-T243	Reagent 3602 3605	PBS
-T244	Time 3496 3501	2 min
-T245	Time 3553 3558	2 min
-T246	Time 3610 3615	2 min
-R91	Measure Arg1:T241 Arg2:T238	
-R92	Measure Arg1:T242 Arg2:T239	
-R93	Measure Arg1:T243 Arg2:T240	
-R94	Setting Arg1:E63 Arg2:T244	
-R95	Setting Arg1:E62 Arg2:T245	
-R96	Setting Arg1:E64 Arg2:T246	
-T247	Action 3635 3647	Counterstain
-E65	Action:T247 Acts-on:T248
-T248	Location 3648 3654	slides
-T249	Action 3658 3667	immersing
-E66	Action:T249 Acts-on:T250 Site:T251
-T250	Location 3668 3673	sides
-T251	Reagent 3677 3688	Hematoxylin
-T252	Reagent 3695 3713	Gill’s Hematoxylin
-T253	Time 3719 3726	1-2 min
-R97	Meronym Arg1:T252 Arg2:T251	
-R98	Setting Arg1:E66 Arg2:T253	
-T254	Action 3728 3733	Rinse
-E67	Action:T254 Acts-on:T255 Using:T256
-T255	Location 3738 3744	slides
-T256	Reagent 3748 3765	running tap water
-T257	Time 3772 3778	15 min
-R99	Setting Arg1:E67 Arg2:T257	
-T258	Action 3780 3789	Dehydrate
-E68	Action:T258 Acts-on:T266 Using:T262
-T259	Action 3859 3868	Dehydrate
-E69	Action:T259 Acts-on:T267 Using:T263
-T260	Concentration 3828 3831	95%
-T261	Concentration 3907 3910	95%
-T262	Reagent 3832 3839	alcohol
-T263	Reagent 3911 3918	alcohol
-T264	Time 3845 3850	5 min
-T265	Time 3924 3929	5 min
-T266	Reagent 3794 3807	tissue slides
-T267	Reagent 3873 3886	tissue slides
-R100	Measure Arg1:T262 Arg2:T260	
-R101	Measure Arg1:T263 Arg2:T261	
-R102	Setting Arg1:E68 Arg2:T264	
-R103	Setting Arg1:E69 Arg2:T265	
-T268	Action 3938 3943	Clear
-E70	Action:T268 Acts-on:T271 Using:T274
-T269	Action 4046 4051	Clear
-E71	Action:T269 Acts-on:T272 Using:T275
-T270	Action 4154 4159	Clear
-E72	Action:T270 Acts-on:T273 Using:T276
-T271	Reagent 3948 3961	tissue slides
-T272	Reagent 4056 4069	tissue slides
-T273	Reagent 4164 4177	tissue slides
-T274	Reagent 3977 3983	xylene
-T275	Reagent 4085 4091	xylene
-T276	Reagent 4193 4199	xylene
-T277	Action 3988 3997	coverslip
-E73	Action:T277 Using:T280
-T278	Action 4096 4105	coverslip
-E74	Action:T278 Using:T281
-T279	Action 4204 4213	coverslip
-E75	Action:T279 Using:T282
-T280	Reagent 4004 4021	mounting solution
-T281	Reagent 4112 4129	mounting solution
-T282	Reagent 4220 4237	mounting solution
-T283	Reagent 4028 4036	Permount
-T284	Reagent 4136 4144	Permount
-T285	Reagent 4244 4252	Permount
-R104	Meronym Arg1:T283 Arg2:T280	
-R105	Meronym Arg1:T284 Arg2:T281	
-R106	Meronym Arg1:T285 Arg2:T282	
-T286	Action 4261 4278	Observe the color
-E76	Action:T286 Acts-on:T287 Site:T362
-T287	Reagent 4286 4303	antibody staining
-T288	Reagent 4311 4326	tissue sections
-R107	Meronym Arg1:T287 Arg2:T288	
-T289	Action 4345 4354	Dehydrate
-E77	Action:T289 Acts-on:T294 Using:T304
-T290	Action 4395 4404	Dehydrate
-E78	Action:T290 Acts-on:T295 Using:T305
-T291	Action 4445 4454	Dehydrate
-E79	Action:T291 Acts-on:T296 Using:T306
-T292	Action 4512 4521	Dehydrate
-E80	Action:T292 Acts-on:T297 Using:T307
-T293	Action 4579 4588	Dehydrate
-E81	Action:T293 Acts-on:T298 Using:T308
-T294	Reagent 4359 4365	tissue
-T295	Reagent 4409 4415	tissue
-T296	Reagent 4459 4465	tissue
-T297	Reagent 4526 4532	tissue
-T298	Reagent 4593 4599	tissue
-T299	Concentration 4374 4377	80%
-T300	Concentration 4424 4427	95%
-T301	Concentration 4486 4490	100%
-T302	Concentration 4553 4557	100%
-T303	Concentration 4620 4624	100%
-T304	Reagent 4378 4385	alcohol
-T305	Reagent 4428 4435	alcohol
-T306	Reagent 4491 4498	alcohol
-T307	Reagent 4558 4565	alcohol
-T308	Reagent 4625 4632	alcohol
-T309	Time 4387 4393	45 min
-T310	Time 4437 4443	45 min
-T311	Time 4500 4503	1 h
-T312	Time 4567 4570	1 h
-T313	Time 4634 4637	1 h
-R108	Measure Arg1:T304 Arg2:T299	
-R109	Measure Arg1:T305 Arg2:T300	
-R110	Measure Arg1:T306 Arg2:T301	
-R111	Measure Arg1:T307 Arg2:T302	
-R112	Measure Arg1:T308 Arg2:T303	
-R113	Setting Arg1:E77 Arg2:T309	
-R114	Setting Arg1:E79 Arg2:T311	
-R115	Setting Arg1:E78 Arg2:T310	
-R116	Setting Arg1:E80 Arg2:T312	
-R117	Setting Arg1:E81 Arg2:T313	
-T314	Action 4646 4654	Transfer
-E82	Action:T314 Using:T324
-T315	Action 4686 4694	Transfer
-E83	Action:T315 Using:T325
-T316	Action 4726 4734	Transfer
-E84	Action:T316 Using:T326
-T317	Action 4766 4775	Dehydrate
-E85	Action:T317 Acts-on:T319 Using:T329
-T318	Action 4846 4855	Dehydrate
-E86	Action:T318 Using:T330 Acts-on:T320
-T319	Reagent 4780 4793	tissue slides
-T320	Reagent 4860 4873	tissue slides
-T321	Concentration 4663 4666	95%
-T322	Concentration 4703 4706	70%
-T323	Concentration 4743 4746	50%
-T324	Reagent 4667 4674	alcohol
-T325	Reagent 4707 4714	alcohol
-T326	Reagent 4747 4754	alcohol
-T327	Concentration 4814 4818	100%
-T328	Concentration 4894 4898	100%
-T329	Reagent 4819 4826	alcohol
-T330	Reagent 4899 4906	alcohol
-T331	Time 4679 4684	3 min
-T332	Time 4719 4724	3 min
-T333	Time 4759 4764	3 min
-T334	Time 4832 4837	5 min
-T335	Time 4912 4917	5 min
-R118	Measure Arg1:T324 Arg2:T321	
-R119	Measure Arg1:T325 Arg2:T322	
-R120	Measure Arg1:T326 Arg2:T323	
-R121	Measure Arg1:T329 Arg2:T327	
-R122	Measure Arg1:T330 Arg2:T328	
-R123	Setting Arg1:E86 Arg2:T335	
-R124	Setting Arg1:E85 Arg2:T334	
-R125	Setting Arg1:E84 Arg2:T333	
-R126	Setting Arg1:E83 Arg2:T332	
-R127	Setting Arg1:E82 Arg2:T331	
-T336	Method 0 20	Immunohistochemistry
-T337	Modifier 34 51	Paraffin-Embedded
-T338	Reagent 52 60	Sections
-R128	Mod-Link Arg1:T338 Arg2:T337	
-T339	Modifier 91 92	<
-R129	Mod-Link Arg1:T3 Arg2:T339	
-R130	Setting Arg1:E2 Arg2:T12	
-T44	Size 638 644	5-8 µm
-R13	Measure Arg1:T42 Arg2:T44	
-T340	Location 809 824	Superfrost Plus
-T341	Action 1208 1213	Block
-E87	Action:T341 Acts-on:T343
-T342	Modifier 1214 1224	endogenous
-T343	Reagent 1225 1244	peroxidase activity
-R131	Mod-Link Arg1:T343 Arg2:T342	
-T344	Action 1334 1339	block
-E88	Action:T344 Acts-on:T346
-T345	Modifier 1340 1350	endogenous
-T346	Reagent 1351 1370	peroxidase activity
-R132	Mod-Link Arg1:T346 Arg2:T345	
-T347	Reagent 1499 1506	antigen
-T348	Method 1507 1516	retrieval
-T349	Action 1520 1526	unmask
-E89	Action:T349 Acts-on:T351
-T350	Modifier 1531 1540	antigenic
-T351	Reagent 1541 1548	epitope
-R133	Mod-Link Arg1:T351 Arg2:T350	
-T352	Reagent 1573 1580	antigen
-T353	Method 1581 1590	retrieval
-T354	Reagent 1596 1610	citrate buffer
-T355	Method 1783 1793	incubation
-T356	Measure-Type 1794 1798	time
-T357	Action 1809 1819	determined
-E90	Action:T357 
-T358	Modifier 3399 3400	<
-R134	Mod-Link Arg1:T228 Arg2:T358	
-T360	Method 3377 3394	color development
-T361	Measure-Type 3425 3440	color intensity
-T359	Modifier 3770 3771	>
-R135	Mod-Link Arg1:T257 Arg2:T359	
-T362	Device 4333 4343	microscopy
+T35	Reagent 454 460	tissue
+T36	Reagent 476 484	paraffin
+T37	Time 486 490	1 h.
+T38	Action 497 504	Immerse
+T39	Reagent 509 515	tissue
+T40	Reagent 531 539	paraffin
+T41	Time 541 545	1 h.
+T42	Action 552 557	Embed
+T43	Reagent 562 568	tissue
+T44	Reagent 574 588	paraffin block
+T45	Action 590 597	Section
+T46	Reagent 602 632	paraffin-embedded tissue block
+T47	Size 636 642	5-8 µm
+T48	Location 658 667	microtome
+T49	Action 672 680	float in
+T50	Temperature 683 693	40°C water
+T51	Location 694 709	bath containing
+T52	Reagent 710 726	distilled water.
+T53	Action 727 735	Transfer
+T54	Reagent 740 748	sections
+T55	Location 754 766	glass slides
+T56	Modifier 767 800	suitable for immunohistochemistry
+T57	Location 807 823	Superfrost Plus)
+T58	Action 825 830	Allow
+T59	Location 835 841	slides
+T60	Time 849 858	overnight
+T61	Action 863 868	store
+T62	Location 869 875	slides
+T63	Temperature 879 895	room temperature
+T64	Time 896 916	until ready for use.
+T65	Action 917 930	Deparaffinize
+T66	Location 931 937	slides
+T67	Reagent 953 959	xylene
+T68	Time 961 966	5 min
+T69	Action 974 987	Deparaffinize
+T70	Location 988 994	slides
+T71	Reagent 1010 1016	xylene
+T72	Time 1018 1023	5 min
+T73	Action 1031 1040	Drain off
+T74	Reagent 1045 1060	blocking buffer
+T75	Location 1070 1076	slides
+T76	Action 1078 1086	Transfer
+T77	Reagent 1087 1093	slides
+T78	Concentration 1097 1102	100 %
+T79	Reagent 1103 1110	alcohol
+T80	Time 1118 1126	3-minute
+T81	Action 1141 1149	Transfer
+T82	Reagent 1150 1156	slides
+T83	Concentration 1160 1165	100 %
+T84	Reagent 1166 1173	alcohol
+T85	Time 1181 1189	3-minute
+T86	Action 1204 1209	Block
+T87	Modifier 1210 1220	endogenous
+T88	Reagent 1221 1240	peroxidase activity
+T89	Action 1244 1254	incubating
+T90	Reagent 1255 1263	sections
+T91	Concentration 1267 1270	3 %
+T92	Reagent 1271 1284	H2O2 solution
+T93	Reagent 1288 1296	methanol
+T94	Temperature 1300 1316	room temperature
+T95	Time 1321 1327	10 min
+T96	Action 1331 1336	block
+T97	Modifier 1337 1347	endogenous
+T98	Reagent 1348 1367	peroxidase activity
+T99	Action 1369 1375	Change
+T100	Action 1379 1386	rinsing
+T101	Amount 1390 1396	300 ml
+T102	Reagent 1400 1403	PBS
+T103	Time 1409 1414	5 min
+T104	Action 1422 1428	Change
+T105	Action 1432 1439	rinsing
+T106	Amount 1443 1449	300 ml
+T107	Reagent 1453 1456	PBS
+T108	Time 1462 1467	5 min
+T109	Action 1486 1493	Perform
+T110	Reagent 1494 1501	antigen
+T111	Method 1502 1511	retrieval
+T112	Action 1515 1521	unmask
+T113	Modifier 1526 1535	antigenic
+T114	Reagent 1536 1543	epitope
+T115	Reagent 1568 1575	antigen
+T116	Method 1576 1585	retrieval
+T117	Reagent 1591 1605	citrate buffer
+T118	Action 1614 1621	Arrange
+T119	Location 1626 1632	slides
+T120	Location 1638 1656	staining container
+T121	Action 1658 1662	Pour
+T122	Amount 1663 1669	300 ml
+T123	Concentration 1673 1678	10 mM
+T124	Reagent 1679 1693	citrate buffer
+T125	pH 1695 1701	pH 6.0
+T126	Location 1711 1729	staining container
+T127	Action 1734 1742	incubate
+T128	Mention 1743 1745	it
+T129	Temperature 1749 1757	95-100°C
+T130	Time 1762 1768	10 min
+T131	Method 1778 1788	incubation
+T132	Measure-Type 1789 1793	time
+T133	Action 1804 1814	determined
+T134	Action 1825 1831	Remove
+T135	Location 1836 1854	staining container
+T136	Temperature 1858 1874	room temperature
+T137	Action 1879 1884	allow
+T138	Reagent 1889 1895	slides
+T139	Time 1908 1914	20 min
+T140	Action 1916 1922	Change
+T141	Action 1926 1933	rinsing
+T142	Location 1934 1940	slides
+T143	Amount 1944 1950	300 ml
+T144	Reagent 1951 1954	PBS
+T145	Time 1959 1964	5 min
+T146	Action 1972 1978	Change
+T147	Action 1982 1989	rinsing
+T148	Location 1990 1996	slides
+T149	Amount 2000 2006	300 ml
+T150	Reagent 2007 2010	PBS
+T151	Time 2015 2020	5 min
+T152	Action 2039 2042	Add
+T153	Amount 2043 2049	100 µl
+T154	Reagent 2050 2065	blocking buffer
+T155	Concentration 2072 2076	10 %
+T156	Reagent 2077 2095	fetal bovine serum
+T157	Reagent 2099 2102	PBS
+T158	Location 2113 2121	sections
+T159	Location 2129 2135	slides
+T160	Action 2140 2148	incubate
+T161	Location 2154 2172	humidified chamber
+T162	Temperature 2176 2192	room temperature
+T163	Time 2197 2199	1h
+T164	Action 2201 2206	Apply
+T165	Amount 2207 2213	100 µl
+T166	Concentration 2214 2235	appropriately diluted
+T167	Reagent 2236 2252	primary antibody
+T168	Reagent 2257 2281	antibody dilution buffer
+T169	Concentration 2288 2293	0.5 %
+T170	Reagent 2294 2314	bovine serum albumin
+T171	Reagent 2318 2321	PBS
+T172	Reagent 2330 2338	sections
+T173	Location 2346 2352	slides
+T174	Action 2357 2365	incubate
+T175	Location 2371 2389	humidified chamber
+T176	Temperature 2393 2409	room temperature
+T177	Time 2414 2417	1 h
+T178	Action 2419 2425	Change
+T179	Action 2429 2436	washing
+T180	Location 2441 2447	slides
+T181	Amount 2451 2457	300 ml
+T182	Reagent 2458 2461	PBS
+T183	Time 2466 2471	5 min
+T184	Action 2479 2485	Change
+T185	Action 2489 2496	washing
+T186	Location 2501 2507	slides
+T187	Amount 2511 2517	300 ml
+T188	Reagent 2518 2521	PBS
+T189	Time 2526 2531	5 min
+T190	Action 2539 2544	Apply
+T191	Amount 2545 2551	100 µl
+T192	Concentration 2552 2573	appropriately diluted
+T193	Reagent 2574 2605	biotinylated secondary antibody
+T194	Reagent 2617 2641	antibody dilution buffer
+T195	Reagent 2650 2658	sections
+T196	Location 2666 2672	slides
+T197	Action 2677 2685	incubate
+T198	Location 2691 2709	humidified chamber
+T199	Temperature 2713 2729	room temperature
+T200	Time 2734 2740	30 min
+T201	Action 2742 2748	Change
+T202	Action 2752 2759	washing
+T203	Location 2760 2766	slides
+T204	Amount 2770 2776	300 ml
+T205	Reagent 2777 2780	PBS
+T206	Time 2785 2790	5 min
+T207	Action 2798 2804	Change
+T208	Action 2808 2815	washing
+T209	Location 2816 2822	slides
+T210	Amount 2826 2832	300 ml
+T211	Reagent 2833 2836	PBS
+T212	Time 2841 2846	5 min
+T213	Action 2854 2859	Apply
+T214	Amount 2860 2866	100 µl
+T215	Concentration 2867 2888	appropriately diluted
+T216	Reagent 2889 2907	Sav-HRP conjugates
+T217	Reagent 2919 2943	antibody dilution buffer
+T218	Reagent 2952 2960	sections
+T219	Location 2968 2974	slides
+T220	Action 2979 2987	incubate
+T221	Location 2993 3011	humidified chamber
+T222	Temperature 3015 3031	room temperature
+T223	Time 3036 3042	30 min
+T224	Action 3044 3069	keep protected from light
+T225	Action 3072 3078	Change
+T226	Action 3082 3089	washing
+T227	Location 3090 3096	slides
+T228	Amount 3100 3106	300 ml
+T229	Reagent 3107 3110	PBS
+T230	Time 3115 3120	5 min
+T231	Action 3128 3134	Change
+T232	Action 3138 3145	washing
+T233	Location 3146 3152	slides
+T234	Amount 3156 3162	300 ml
+T235	Reagent 3163 3166	PBS
+T236	Time 3171 3176	5 min
+T237	Action 3184 3189	Apply
+T238	Amount 3190 3196	100 µl
+T239	Reagent 3197 3219	DAB substrate solution
+T240	Concentration 3252 3258	0.05 %
+T241	Reagent 3259 3262	DAB
+T242	Concentration 3265 3272	0.015 %
+T243	Reagent 3273 3285	H2O2 in PBS)
+T244	Reagent 3293 3304	sections on
+T245	Location 3309 3318	slides to
+T246	Action 3319 3338	reveal the color of
+T247	Reagent 3339 3357	antibody staining.
+T248	Action 3358 3367	Allow the
+T249	Method 3368 3389	color development for
+T250	Modifier 3392 3393	5
+T251	Time 3394 3403	min until
+T252	Measure-Type 3416 3434	color intensity is
+T253	Action 3444 3450	Change
+T254	Action 3454 3461	washing
+T255	Location 3462 3468	slides
+T256	Amount 3472 3478	300 ml
+T257	Reagent 3479 3482	PBS
+T258	Time 3487 3492	2 min
+T259	Action 3500 3506	Change
+T260	Action 3510 3517	washing
+T261	Location 3518 3524	slides
+T262	Amount 3528 3534	300 ml
+T263	Reagent 3535 3538	PBS
+T264	Time 3543 3548	2 min
+T265	Action 3556 3562	Change
+T266	Action 3566 3573	washing
+T267	Location 3574 3580	slides
+T268	Amount 3584 3590	300 ml
+T269	Reagent 3591 3594	PBS
+T270	Time 3599 3604	2 min
+T271	Action 3623 3635	Counterstain
+T272	Location 3636 3642	slides
+T273	Action 3646 3655	immersing
+T274	Location 3656 3661	sides
+T275	Reagent 3665 3676	Hematoxylin
+T276	Reagent 3683 3703	Gill ’ s Hematoxylin
+T277	Time 3709 3716	1-2 min
+T278	Action 3718 3723	Rinse
+T279	Location 3728 3734	slides
+T280	Reagent 3738 3755	running tap water
+T281	Modifier 3760 3761	>
+T282	Time 3762 3768	15 min
+T283	Action 3770 3779	Dehydrate
+T284	Reagent 3784 3797	tissue slides
+T285	Concentration 3818 3822	95 %
+T286	Reagent 3823 3830	alcohol
+T287	Time 3836 3841	5 min
+T288	Action 3849 3858	Dehydrate
+T289	Reagent 3863 3876	tissue slides
+T290	Concentration 3897 3901	95 %
+T291	Reagent 3902 3909	alcohol
+T292	Time 3915 3920	5 min
+T293	Action 3928 3933	Clear
+T294	Reagent 3938 3951	tissue slides
+T295	Reagent 3967 3973	xylene
+T296	Action 3978 3987	coverslip
+T297	Reagent 3994 4011	mounting solution
+T298	Reagent 4018 4026	Permount
+T299	Action 4035 4040	Clear
+T300	Reagent 4045 4058	tissue slides
+T301	Reagent 4074 4080	xylene
+T302	Action 4085 4094	coverslip
+T303	Reagent 4101 4118	mounting solution
+T304	Reagent 4125 4133	Permount
+T305	Action 4142 4147	Clear
+T306	Reagent 4152 4165	tissue slides
+T307	Reagent 4181 4187	xylene
+T308	Action 4192 4201	coverslip
+T309	Reagent 4208 4225	mounting solution
+T310	Reagent 4232 4240	Permount
+T311	Action 4249 4266	Observe the color
+T312	Reagent 4274 4291	antibody staining
+T313	Reagent 4299 4314	tissue sections
+T314	Device 4321 4331	microscopy
+T315	Action 4333 4342	Dehydrate
+T316	Reagent 4347 4353	tissue
+T317	Concentration 4362 4366	80 %
+T318	Reagent 4367 4374	alcohol
+T319	Time 4376 4382	45 min
+T320	Action 4384 4393	Dehydrate
+T321	Reagent 4398 4404	tissue
+T322	Concentration 4413 4417	95 %
+T323	Reagent 4418 4425	alcohol
+T324	Time 4427 4433	45 min
+T325	Action 4435 4444	Dehydrate
+T326	Reagent 4449 4455	tissue
+T327	Concentration 4476 4481	100 %
+T328	Reagent 4482 4489	alcohol
+T329	Time 4491 4495	1 h.
+T330	Action 4502 4511	Dehydrate
+T331	Reagent 4516 4522	tissue
+T332	Concentration 4543 4548	100 %
+T333	Reagent 4549 4556	alcohol
+T334	Time 4558 4562	1 h.
+T335	Action 4569 4578	Dehydrate
+T336	Reagent 4583 4589	tissue
+T337	Concentration 4610 4615	100 %
+T338	Reagent 4616 4623	alcohol
+T339	Time 4625 4629	1 h.
+T340	Action 4636 4644	Transfer
+T341	Concentration 4653 4657	95 %
+T342	Reagent 4658 4665	alcohol
+T343	Time 4670 4675	3 min
+T344	Action 4677 4685	Transfer
+T345	Concentration 4694 4698	70 %
+T346	Reagent 4699 4706	alcohol
+T347	Time 4711 4716	3 min
+T348	Action 4718 4726	Transfer
+T349	Concentration 4735 4739	50 %
+T350	Reagent 4740 4747	alcohol
+T351	Time 4752 4757	3 min
+T352	Action 4759 4768	Dehydrate
+T353	Reagent 4773 4786	tissue slides
+T354	Concentration 4807 4812	100 %
+T355	Reagent 4813 4820	alcohol
+T356	Time 4826 4831	5 min
+T357	Action 4839 4848	Dehydrate
+T358	Reagent 4853 4866	tissue slides
+T359	Concentration 4887 4892	100 %
+T360	Reagent 4893 4900	alcohol
+T361	Time 4906 4911	5 min

@@ -1,44 +1,27 @@
-T1	Action 35 44	Resuspend
-E1	Action:T1 Acts-on:T3 Using:T5 Product:T6
-T2	Amount 45 50	10 µg
-T3	Reagent 51 54	RNA
-T4	Concentration 58 60	1X
-T5	Reagent 61 84	DNase I Reaction Buffer
-T6	Reagent 90 102	final volume
-T7	Amount 106 112	100 µl
-T8	Action 115 118	Add
-E2	Action:T8 Acts-on:T10
-T9	Generic-Measure 119 126	2 units
-T10	Reagent 130 137	DNase I
-T11	Modifier 142 152	thoroughly
-T12	Action 155 163	Incubate
-E3	Action:T12 
-T13	Temperature 167 171	37°C
-T14	Time 176 186	10 minutes
-T15	Action 188 191	Add
-E4	Action:T15 Acts-on:T18
-T16	Amount 192 196	1 µl
-T17	Concentration 200 205	0.5 M
-T18	Reagent 206 210	EDTA
-T19	Action 247 251	Heat
-E5	Action:T19 Acts-on:T20
-T20	Reagent 252 262	inactivate
-T21	Temperature 266 270	75°C
-T22	Time 275 285	10 minutes
-T23	Concentration 240 244	5 mM
-R1	Measure Arg1:T18 Arg2:T17	
-R3	Measure Arg1:T3 Arg2:T2	
-R4	Measure Arg1:T5 Arg2:T4	
-R5	Measure Arg1:T6 Arg2:T7	
-R6	Measure Arg1:T10 Arg2:T9	
-T25	Action 138 141	Mix
-E6	Action:T25 
-R7	Mod-Link Arg1:E6 Arg2:T11	
-R8	Setting Arg1:E3 Arg2:T13	
-R9	Setting Arg1:E3 Arg2:T14	
-R10	Measure Arg1:T18 Arg2:T16	
-R11	Setting Arg1:E5 Arg2:T21	
-R12	Setting Arg1:E5 Arg2:T22	
-T26	Reagent 10 26	DNase I Reaction
-T24	Modifier 217 222	final
-T27	Measure-Type 223 236	concentration
+T1	Reagent 10 26	DNase I Reaction
+T2	Action 35 44	Resuspend
+T3	Amount 45 50	10 µg
+T4	Reagent 51 54	RNA
+T5	Concentration 58 60	1X
+T6	Reagent 61 84	DNase I Reaction Buffer
+T7	Reagent 90 102	final volume
+T8	Amount 106 112	100 µl
+T9	Action 114 117	Add
+T10	Generic-Measure 118 125	2 units
+T11	Reagent 129 136	DNase I
+T12	Action 137 140	Mix
+T13	Modifier 141 151	thoroughly
+T14	Action 153 161	Incubate
+T15	Temperature 165 169	37°C
+T16	Time 174 184	10 minutes
+T17	Action 186 189	Add
+T18	Amount 190 194	1 µl
+T19	Concentration 198 203	0.5 M
+T20	Reagent 204 208	EDTA
+T21	Modifier 215 220	final
+T22	Measure-Type 221 234	concentration
+T23	Concentration 238 242	5 mM
+T24	Action 245 249	Heat
+T25	Reagent 250 260	inactivate
+T26	Temperature 264 268	75°C
+T27	Time 273 283	10 minutes

@@ -1,285 +1,175 @@
-T1	Action 484 492	Incubate
-E1	Action:T1 Using:T2
-T3	Action 584 594	Centrifuge
-E3	Action:T3 Acts-on:T61 Using:T62
-T4	Action 658 664	Decant
-E4	Action:T4 Acts-on:T66 Site:T68
-T5	Action 700 710	Centrifuge
-E5	Action:T5 Acts-on:T69 Using:T70
-T6	Action 780 786	Decant
-E6	Action:T6 Acts-on:T74 Site:T76
-T7	Action 820 823	Add
-E7	Action:T7 Acts-on:T77 Measure-Type-Link:T79
-T8	Action 860 865	Place
-E8	Action:T8 
-T9	Action 874 877	Add
-E9	Action:T9 Acts-on:T82 Site:T84 Site2:T86 Site3:T88
-T10	Action 962 968	Adjust
-E10	Action:T10 Using:T91
-T11	Action 994 999	Cover
-E11	Action:T11 
-T12	Action 1004 1012	incubate
-E12	Action:T12 
-T13	Action 1031 1041	Centrifuge
-E13	Action:T13 Acts-on:T94 Using:T95
-T14	Action 1108 1114	Decant
-E14	Action:T14 Acts-on:T99 Site:T101
-T15	Action 1148 1155	Discard
-E15	Action:T15 Acts-on:T102
-T16	Action 1169 1172	Add
-E16	Action:T16 Acts-on:T104
-T17	Action 1211 1217	Adjust
-E17	Action:T17 Using:T107
-T18	Action 1243 1248	Cover
-E18	Action:T18 
-T19	Action 1253 1261	incubate
-E19	Action:T19 
-T20	Action 1280 1290	Centrifuge
-E20	Action:T20 Acts-on:T110 Using:T111
-T21	Action 1357 1369	Aspirate off
-E21	Action:T21 Acts-on:T115
-T22	Action 1387 1391	Save
-E22	Action:T22 Acts-on:T116
-T23	Action 1404 1413	Resuspend
-E23	Action:T23 Acts-on:T117 Using:T120 Using2:T123 Using3:T125 Using4:T127
-T24	Action 1499 1509	Centrifuge
-E24	Action:T24 Acts-on:T128 Using:T129
-T25	Action 1577 1581	Save
-E25	Action:T25 Acts-on:T133
-T26	Action 1599 1606	Dialyze
-E26	Action:T26 Acts-on:T134 Using:T138 Using2:T141 Using3:T143 Using4:T145
-T27	Action 1719 1725	Change
-E27	Action:T27 Acts-on:T146
-T28	Action 1758 1764	Remove
-E28	Action:T28 Acts-on:T149 Site:T150
-T29	Action 1797 1807	Centrifuge
-E29	Action:T29 Acts-on:T151 Using:T152
-T30	Action 1875 1882	Aliquot
-E30	Action:T30 Acts-on:T156 Site:T157
-T31	Action 1924 1929	store
-E31	Action:T31 Acts-on:T157
-T32	Action 1991 1995	Save
-E32	Action:T32 Acts-on:T160
-T33	Action 1940 1945	Assay
-E33	Action:T33 Acts-on:T159
-T34	Action 218 225	Discard
-E34	Action:T34 Acts-on:T35
-T35	Reagent 230 242	supernatants
-T36	Action 199 206	harvest
-E35	Action:T36 Acts-on:T37 Site:T38
-T37	Reagent 211 216	cells
-T38	Location 180 195	sterile bottles
-T39	Action 28 38	Centrifuge
-E36	Action:T39 Acts-on:T40 Using:T42
-T40	Reagent 43 58	NC64A chlorella
-T41	Concentration 101 123	1.0-2.0 X 107 cells/mL
-R1	Measure Arg1:T40 Arg2:T41	
-T42	Device 132 149	Sorvall GSA rotor
-T43	Speed 153 162	7,000 rpm
-T44	Time 164 169	5 min
-T45	Temperature 171 174	4°C
-R2	Setting Arg1:E36 Arg2:T43	
-R3	Setting Arg1:E36 Arg2:T44	
-R4	Setting Arg1:E36 Arg2:T45	
-T46	Action 244 253	Resuspend
-E37	Action:T46 Acts-on:T47 Using:T48
-T47	Reagent 258 263	cells
-T48	Reagent 269 280	sterile BBM
-T49	Action 282 288	Adjust
-E38	Action:T49 Using:T51 Measure-Type-Link:T52
-T50	Amount 309 315	500 mL
-T51	Reagent 321 332	sterile BBM
-T52	Measure-Type 293 305	final volume
-R5	Setting Arg1:E38 Arg2:T50	
-T53	Action 334 337	Add
-E39	Action:T53 Acts-on:T55
-T54	Modifier 338 355	filter-sterilized
-T55	Reagent 356 368	tetracycline
-T57	Measure-Type 443 446	moi
-T58	Numerical 478 482	0.01
-R6	Of-Type Arg1:T58 Arg2:T57	
-T59	Reagent 430 436	PBCV-1
-R7	Measure Arg1:T59 Arg2:T58	
-R8	Mod-Link Arg1:T55 Arg2:T54	
-T56	Time 493 502	overnight
-T60	Temperature 506 510	25°C
-R9	Setting Arg1:E1 Arg2:T56	
-R10	Setting Arg1:E1 Arg2:T60	
-T2	Method 516 544	continuous light and shaking
-T61	Reagent 599 605	lysate
-T62	Device 613 630	Sorvall GSA rotor
-T63	Speed 634 643	3,500 rpm
-T64	Time 645 651	10 min
-T65	Temperature 653 656	5°C
-R11	Setting Arg1:E3 Arg2:T63	
-R12	Setting Arg1:E3 Arg2:T64	
-R13	Setting Arg1:E3 Arg2:T65	
-T66	Reagent 669 681	supernatants
-T67	Modifier 685 690	clean
-T68	Location 691 698	bottles
-R14	Mod-Link Arg1:T68 Arg2:T67	
-T69	Reagent 715 726	supernatant
-T70	Device 734 751	Sorvall GSA rotor
-T71	Speed 755 765	10,000 rpm
-T72	Time 767 773	60 min
-T73	Temperature 775 778	5°C
-T74	Reagent 791 802	supernatant
-T75	Modifier 806 811	clean
-T76	Location 812 818	flasks
-R15	Setting Arg1:E5 Arg2:T71	
-R16	Setting Arg1:E5 Arg2:T72	
-R17	Setting Arg1:E5 Arg2:T73	
-R18	Mod-Link Arg1:T76 Arg2:T75	
-T77	Reagent 824 829	d-H2O
-T78	Amount 851 858	1000 mL
-T79	Measure-Type 835 847	final volume
-R19	Setting Arg1:E7 Arg2:T78	
-T80	Temperature 869 872	4°C
-R20	Setting Arg1:E8 Arg2:T80	
-T81	Temperature 882 885	4°C
-T82	Reagent 887 891	2-ME
-T83	Concentration 895 899	2 mM
-T84	Reagent 900 904	EDTA
-T85	Concentration 908 912	5 mM
-T86	Reagent 913 917	NaN3
-T87	Concentration 921 933	200 mg/liter
-T88	Reagent 934 943	(NH4)2SO4
-T89	Generic-Measure 947 961	40% saturation
-T90	pH 973 982	pH to 7.0
-T91	Reagent 988 992	NaOH
-R21	Setting Arg1:E9 Arg2:T81	
-R22	Measure Arg1:T84 Arg2:T83	
-R23	Measure Arg1:T86 Arg2:T85	
-R24	Measure Arg1:T88 Arg2:T87	
-R25	Setting Arg1:E9 Arg2:T89	
-R26	Setting Arg1:E10 Arg2:T90	
-T92	Temperature 1016 1019	4°C
-T93	Time 1020 1029	overnight
-R27	Setting Arg1:E11 Arg2:T92	
-R28	Setting Arg1:E12 Arg2:T93	
-R29	Setting Arg1:E12 Arg2:T92	
-R30	Setting Arg1:E11 Arg2:T93	
-T94	Reagent 1046 1054	material
-T95	Device 1062 1079	Sorvall GSA rotor
-T96	Speed 1083 1093	10,000 rpm
-T97	Time 1095 1101	60 min
-T98	Temperature 1103 1106	5°C
-R31	Setting Arg1:E13 Arg2:T96	
-R32	Setting Arg1:E13 Arg2:T97	
-R33	Setting Arg1:E13 Arg2:T98	
-T99	Reagent 1119 1130	supernatant
-T100	Modifier 1134 1139	clean
-T101	Location 1140 1146	flasks
-R34	Mod-Link Arg1:T101 Arg2:T100	
-T102	Reagent 1160 1167	pellets
-T103	Temperature 1177 1180	4°C
-T104	Reagent 1182 1191	(NH4)2SO4
-T105	Generic-Measure 1195 1209	65% saturation
-R35	Setting Arg1:E16 Arg2:T103	
-R36	Setting Arg1:E16 Arg2:T105	
-T106	pH 1222 1231	pH to 7.0
-T107	Reagent 1237 1241	NaOH
-R37	Setting Arg1:E17 Arg2:T106	
-T108	Temperature 1265 1268	4°C
-T109	Time 1269 1278	overnight
-R38	Setting Arg1:E18 Arg2:T108	
-R39	Setting Arg1:E19 Arg2:T108	
-R40	Setting Arg1:E19 Arg2:T109	
-R41	Setting Arg1:E18 Arg2:T109	
-T110	Reagent 1295 1303	material
-T111	Device 1311 1328	Sorvall GSA rotor
-T112	Speed 1332 1342	10,000 rpm
-T113	Time 1344 1350	10 min
-T114	Temperature 1352 1355	5°C
-R42	Setting Arg1:E20 Arg2:T112	
-R43	Setting Arg1:E20 Arg2:T113	
-R44	Setting Arg1:E20 Arg2:T114	
-T115	Reagent 1374 1385	supernatant
-T116	Reagent 1396 1402	pellet
-T117	Reagent 1418 1424	pellet
-T118	Amount 1430 1437	10.0 mL
-T119	Concentration 1441 1446	10 mM
-T120	Reagent 1447 1455	Tris-HCl
-T121	pH 1457 1463	pH 8.0
-T122	Concentration 1465 1469	1 mM
-T123	Reagent 1470 1474	EDTA
-T124	Concentration 1476 1480	2 mM
-T125	Reagent 1481 1485	2-ME
-T126	Amount 1488 1492	2 mg
-T127	Reagent 1493 1497	NaN3
-R45	Measure Arg1:T120 Arg2:T119	
-R46	Measure Arg1:T120 Arg2:T118	
-R47	Measure Arg1:T120 Arg2:T121	
-R48	Measure Arg1:T123 Arg2:T122	
-R49	Measure Arg1:T125 Arg2:T124	
-R50	Measure Arg1:T127 Arg2:T126	
-T128	Reagent 1514 1522	material
-T129	Device 1530 1548	Sorvall SS34 rotor
-T130	Speed 1552 1562	15,000 rpm
-T131	Time 1564 1570	60 min
-T132	Temperature 1572 1575	5°C
-R51	Setting Arg1:E24 Arg2:T130	
-R52	Setting Arg1:E24 Arg2:T131	
-R53	Setting Arg1:E24 Arg2:T132	
-T133	Reagent 1586 1597	supernatant
-T134	Reagent 1611 1622	supernatant
-T135	Time 1627 1638	48-72 hours
-T136	Temperature 1642 1645	4°C
-T137	Concentration 1654 1659	10 mM
-T138	Reagent 1660 1668	Tris-HCl
-T139	pH 1670 1676	pH 8.0
-T140	Concentration 1678 1682	1 mM
-T141	Reagent 1683 1687	EDTA
-T142	Concentration 1689 1693	2 mM
-T143	Reagent 1694 1698	2-ME
-T144	Concentration 1700 1712	200 mg/liter
-T145	Reagent 1713 1717	NaN3
-R54	Setting Arg1:E26 Arg2:T135	
-R55	Setting Arg1:E26 Arg2:T136	
-R56	Measure Arg1:T138 Arg2:T137	
-R57	Measure Arg1:T138 Arg2:T139	
-R58	Measure Arg1:T141 Arg2:T140	
-R59	Measure Arg1:T143 Arg2:T142	
-R60	Measure Arg1:T145 Arg2:T144	
-T146	Reagent 1730 1736	buffer
-T147	Time 1748 1756	24 hours
-R61	Setting Arg1:E27 Arg2:T147	
-T148	Modifier 1742 1747	every
-R62	Mod-Link Arg1:T147 Arg2:T148	
-T149	Reagent 1769 1777	material
-T150	Device 1787 1795	dialysis
-T151	Reagent 1812 1820	material
-T152	Device 1828 1846	Sorvall SS34 rotor
-T153	Speed 1850 1860	13,000 rpm
-T154	Time 1862 1868	60 min
-T155	Temperature 1870 1873	5°C
-R63	Setting Arg1:E29 Arg2:T153	
-R64	Setting Arg1:E29 Arg2:T154	
-R65	Setting Arg1:E29 Arg2:T155	
-T156	Reagent 1887 1898	supernatant
-T157	Location 1904 1919	microfuge tubes
-T158	Temperature 1933 1938	-20°C
-R66	Setting Arg1:E31 Arg2:T158	
-T159	Reagent 1950 1970	supernatant fraction
-T160	Reagent 2000 2011	supernatant
-T161	Method 0 11	Preparation
-T162	Reagent 15 27	PBCV-1 Lysin
-T163	Modifier 64 80	actively growing
-T164	Reagent 81 86	cells
-R67	Mod-Link Arg1:T164 Arg2:T163	
-T165	Modifier 87 100	approximately
-R68	Mod-Link Arg1:T41 Arg2:T165	
-T166	Amount 370 377	12.5 mg
-R69	Measure Arg1:T55 Arg2:T166	
-T167	Reagent 378 386	Ml stock
-T168	Action 388 391	add
-E2	Action:T168 Acts-on:T171
-T169	Amount 392 398	0.1 mL
-T170	Amount 403 408	50 mL
-T171	Reagent 412 424	BBM solution
-R70	Measure Arg1:T171 Arg2:T170	
-T172	Measure-Type 448 473	multiplicity of infection
-T173	Reagent 551 559	material
-T174	Reagent 575 581	lysate
-R71	Coreference-Link Arg1:T174 Arg2:T173	
-T175	Reagent 1975 1989	lysin activity
+T1	Method 0 11	Preparation
+T2	Reagent 15 27	PBCV-1 Lysin
+T3	Action 28 38	Centrifuge
+T4	Reagent 43 58	NC64A chlorella
+T5	Modifier 64 80	actively growing
+T6	Reagent 81 86	cells
+T7	Modifier 87 100	approximately
+T8	Concentration 101 123	1.0-2.0 X 107 cells/mL
+T9	Device 132 149	Sorvall GSA rotor
+T10	Speed 153 162	7,000 rpm
+T11	Time 164 169	5 min
+T12	Temperature 171 174	4°C
+T13	Location 180 195	sterile bottles
+T14	Action 199 206	harvest
+T15	Reagent 211 216	cells
+T16	Action 218 225	Discard
+T17	Reagent 230 242	supernatants
+T18	Action 244 253	Resuspend
+T19	Reagent 258 263	cells
+T20	Reagent 269 280	sterile BBM
+T21	Action 282 288	Adjust
+T22	Measure-Type 293 305	final volume
+T23	Amount 309 315	500 mL
+T24	Reagent 321 332	sterile BBM
+T25	Action 334 337	Add
+T26	Modifier 338 355	filter-sterilized
+T27	Reagent 356 368	tetracycline
+T28	Amount 370 380	12.5 mg/Ml
+T29	Reagent 381 386	stock
+T30	Action 388 391	add
+T31	Amount 392 398	0.1 mL
+T32	Amount 403 408	50 mL
+T33	Reagent 412 424	BBM solution
+T34	Reagent 430 436	PBCV-1
+T35	Measure-Type 443 446	moi
+T36	Measure-Type 448 473	multiplicity of infection
+T37	Numerical 478 482	0.01
+T38	Action 484 492	Incubate
+T39	Time 493 502	overnight
+T40	Temperature 506 510	25°C
+T41	Method 516 544	continuous light and shaking
+T42	Reagent 551 559	material
+T43	Reagent 576 582	lysate
+T44	Action 586 596	Centrifuge
+T45	Reagent 601 607	lysate
+T46	Device 615 632	Sorvall GSA rotor
+T47	Speed 636 645	3,500 rpm
+T48	Time 647 653	10 min
+T49	Temperature 655 658	5°C
+T50	Action 660 666	Decant
+T51	Reagent 671 683	supernatants
+T52	Modifier 687 692	clean
+T53	Location 693 700	bottles
+T54	Action 702 712	Centrifuge
+T55	Reagent 717 728	supernatant
+T56	Device 736 753	Sorvall GSA rotor
+T57	Speed 757 767	10,000 rpm
+T58	Time 769 775	60 min
+T59	Temperature 777 780	5°C
+T60	Action 782 788	Decant
+T61	Reagent 793 804	supernatant
+T62	Modifier 808 813	clean
+T63	Location 814 820	flasks
+T64	Action 822 825	Add
+T65	Reagent 826 831	d-H2O
+T66	Measure-Type 837 849	final volume
+T67	Amount 853 860	1000 mL
+T68	Action 862 867	Place
+T69	Temperature 871 874	4°C
+T70	Action 876 879	Add
+T71	Temperature 884 887	4°C
+T72	Reagent 890 894	2-ME
+T73	Concentration 898 902	2 mM
+T74	Reagent 903 907	EDTA
+T75	Concentration 911 915	5 mM
+T76	Reagent 916 920	NaN3
+T77	Concentration 924 936	200 mg/liter
+T78	Reagent 937 947	(NH4) 2SO4
+T79	Generic-Measure 951 966	40 % saturation
+T80	Action 967 973	Adjust
+T81	pH 978 987	pH to 7.0
+T82	Reagent 993 997	NaOH
+T83	Action 999 1004	Cover
+T84	Action 1009 1017	incubate
+T85	Temperature 1021 1024	4°C
+T86	Time 1025 1034	overnight
+T87	Action 1036 1046	Centrifuge
+T88	Reagent 1051 1059	material
+T89	Device 1067 1084	Sorvall GSA rotor
+T90	Speed 1088 1098	10,000 rpm
+T91	Time 1100 1106	60 min
+T92	Temperature 1108 1111	5°C
+T93	Action 1113 1119	Decant
+T94	Reagent 1124 1135	supernatant
+T95	Modifier 1139 1144	clean
+T96	Location 1145 1151	flasks
+T97	Action 1153 1160	Discard
+T98	Reagent 1165 1172	pellets
+T99	Action 1174 1177	Add
+T100	Temperature 1182 1185	4°C
+T101	Reagent 1187 1197	(NH4) 2SO4
+T102	Generic-Measure 1201 1216	65 % saturation
+T103	Action 1218 1224	Adjust
+T104	pH 1229 1238	pH to 7.0
+T105	Reagent 1244 1248	NaOH
+T106	Action 1250 1255	Cover
+T107	Action 1260 1268	incubate
+T108	Temperature 1272 1275	4°C
+T109	Time 1276 1285	overnight
+T110	Action 1287 1297	Centrifuge
+T111	Reagent 1302 1310	material
+T112	Device 1318 1335	Sorvall GSA rotor
+T113	Speed 1339 1349	10,000 rpm
+T114	Time 1351 1357	10 min
+T115	Temperature 1359 1362	5°C
+T116	Action 1364 1376	Aspirate off
+T117	Reagent 1381 1392	supernatant
+T118	Action 1394 1398	Save
+T119	Reagent 1403 1409	pellet
+T120	Action 1411 1420	Resuspend
+T121	Reagent 1425 1431	pellet
+T122	Amount 1437 1444	10.0 mL
+T123	Concentration 1448 1453	10 mM
+T124	Reagent 1454 1462	Tris-HCl
+T125	pH 1464 1470	pH 8.0
+T126	Concentration 1472 1476	1 mM
+T127	Reagent 1477 1481	EDTA
+T128	Concentration 1483 1487	2 mM
+T129	Reagent 1488 1492	2-ME
+T130	Amount 1495 1499	2 mg
+T131	Reagent 1500 1504	NaN3
+T132	Action 1506 1516	Centrifuge
+T133	Reagent 1521 1529	material
+T134	Device 1537 1555	Sorvall SS34 rotor
+T135	Speed 1559 1569	15,000 rpm
+T136	Time 1571 1577	60 min
+T137	Temperature 1579 1582	5°C
+T138	Action 1584 1588	Save
+T139	Reagent 1593 1604	supernatant
+T140	Action 1606 1613	Dialyze
+T141	Reagent 1618 1629	supernatant
+T142	Time 1634 1645	48-72 hours
+T143	Temperature 1649 1652	4°C
+T144	Concentration 1661 1666	10 mM
+T145	Reagent 1667 1675	Tris-HCl
+T146	pH 1677 1683	pH 8.0
+T147	Concentration 1685 1689	1 mM
+T148	Reagent 1690 1694	EDTA
+T149	Concentration 1696 1700	2 mM
+T150	Reagent 1701 1705	2-ME
+T151	Concentration 1707 1719	200 mg/liter
+T152	Reagent 1720 1724	NaN3
+T153	Action 1726 1732	Change
+T154	Reagent 1737 1743	buffer
+T155	Modifier 1749 1754	every
+T156	Time 1755 1763	24 hours
+T157	Action 1765 1771	Remove
+T158	Reagent 1776 1784	material
+T159	Device 1794 1802	dialysis
+T160	Action 1804 1814	Centrifuge
+T161	Reagent 1819 1827	material
+T162	Device 1835 1853	Sorvall SS34 rotor
+T163	Speed 1857 1867	13,000 rpm
+T164	Time 1869 1875	60 min
+T165	Temperature 1877 1880	5°C
+T166	Action 1882 1889	Aliquot
+T167	Reagent 1894 1905	supernatant
+T168	Location 1911 1926	microfuge tubes
+T169	Action 1931 1936	store
+T170	Temperature 1940 1945	-20°C
+T171	Action 1947 1952	Assay
+T172	Reagent 1957 1977	supernatant fraction
+T173	Reagent 1982 1996	lysin activity
+T174	Action 1998 2002	Save
+T175	Reagent 2007 2018	supernatant

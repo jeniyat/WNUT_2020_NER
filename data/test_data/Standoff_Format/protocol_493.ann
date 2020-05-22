@@ -1,92 +1,58 @@
-T1	Action 789 796	Collect
-E1	Action:T1 Acts-on:T41 Using:T42
-T2	Action 717 724	Discard
-E2	Action:T2 Acts-on:T13
-T3	Action 481 488	Collect
-E3	Action:T3 Acts-on:T37 Using:T38
-T4	Action 441 449	Incubate
-E4	Action:T4 
-T5	Action 351 358	Discard
-E5	Action:T5 Acts-on:T35
-T6	Action 214 229	Ultracentrifuge
-E6	Action:T6 Acts-on:T19 Site:T20
-T7	Speed 267 276	100,000 g
-T8	Time 281 287	10 min
-T9	Time 454 460	30 min
-T10	Action 473 479	mixing
-E7	Action:T10 
-T11	Amount 401 405	1 mL
-T12	Modifier 466 472	gentle
-T13	Reagent 725 736	supernatant
-T14	Action 741 750	resuspend
-E8	Action:T14 Acts-on:T15 Site:T39 Using:T16
-T15	Reagent 751 758	pellets
-T16	Method 780 786	step 2
-T18	Method 432 438	step 2
-T19	Reagent 234 244	suspension
-T20	Device 248 263	Beckman MLA 130
-T21	Action 119 129	Homogenize
-E9	Action:T21 Acts-on:T22 Using:T23
-T22	Reagent 130 137	tissues
-T23	Device 147 171	IKA Ultra Turbax blender
-T24	Speed 192 201	25,000rpm
-T25	Time 207 211	30 s
-T26	Action 47 51	Thaw
-E10	Action:T26 Acts-on:T28 Site:T30
-T27	Amount 52 60	20–50 mg
-T28	Reagent 64 70	tissue
-T29	Amount 93 97	1 mL
-T30	Location 106 117	salt buffer
-T31	Modifier 101 105	high
-T32	Location 409 425	carbonate buffer
-T33	Reagent 390 397	pellets
-T34	Action 379 389	homogenize
-E11	Action:T34 Acts-on:T33 Site:T32 Using:T18
-T35	Reagent 363 374	supernatant
-T36	Modifier 493 504	non-soluble
-T37	Reagent 505 513	material
-T38	Method 517 531	centrifugation
-T39	Location 762 773	wash buffer
-T40	Modifier 801 806	crude
-T41	Reagent 807 816	membranes
-T42	Method 820 834	centrifugation
-R1	Measure Arg1:T28 Arg2:T27	
-R2	Setting Arg1:E9 Arg2:T24	
-R3	Setting Arg1:E9 Arg2:T25	
-T17	Reagent 79 89	dish cells
-R4	Or Arg1:T28 Arg2:T17	
-T43	Amount 74 78	15CM
-R5	Measure Arg1:T17 Arg2:T43	
-R6	Mod-Link Arg1:T30 Arg2:T31	
-R7	Measure Arg1:T30 Arg2:T29	
-R8	Setting Arg1:E6 Arg2:T7	
-R9	Setting Arg1:E6 Arg2:T8	
-R10	Measure Arg1:T32 Arg2:T11	
-R11	Setting Arg1:E4 Arg2:T9	
-R12	Mod-Link Arg1:E7 Arg2:T12	
-R13	Mod-Link Arg1:T37 Arg2:T36	
-R14	Mod-Link Arg1:T41 Arg2:T40	
-T44	Reagent 0 22	Crude Membrane protein
-T45	Method 23 33	extraction
-T46	Reagent 39 46	tissues
-T47	Speed 175 188	maximum speed
-T48	Modifier 191 192	∼
-R15	Mod-Link Arg1:T24 Arg2:T48	
-R16	Coreference-Link Arg1:T24 Arg2:T47	
-T49	Location 293 298	tubes
-T50	Modifier 309 317	balanced
-T51	Modifier 334 343	less than
-T52	Amount 344 349	50 mg
-R17	Mod-Link Arg1:T52 Arg2:T51	
-R18	Mod-Link Arg1:T49 Arg2:T50	
-R19	Measure Arg1:T49 Arg2:T52	
-T53	Location 564 590	integral membrane proteins
-T54	Modifier 598 606	purified
-T55	Location 607 616	membranes
-T56	Amount 633 639	30–40%
-T57	Reagent 643 668	total identified proteins
-R20	Measure Arg1:T57 Arg2:T56	
-R21	Mod-Link Arg1:T55 Arg2:T54	
-T58	Action 687 695	repeated
-E12	Action:T58 Count:T59
-T59	Numerical 696 708	two to three
+T1	Reagent 0 22	Crude Membrane protein
+T2	Method 23 33	extraction
+T3	Reagent 39 46	tissues
+T4	Action 47 51	Thaw
+T5	Amount 52 60	20–50 mg
+T6	Reagent 64 70	tissue
+T7	Amount 74 78	15CM
+T8	Reagent 79 89	dish cells
+T9	Amount 93 97	1 mL
+T10	Modifier 101 105	high
+T11	Location 106 117	salt buffer
+T12	Action 119 129	Homogenize
+T13	Reagent 130 137	tissues
+T14	Device 147 171	IKA Ultra Turbax blender
+T15	Speed 175 188	maximum speed
+T16	Modifier 190 200	∼25,000rpm
+T17	Time 206 210	30 s
+T18	Action 212 227	Ultracentrifuge
+T19	Reagent 232 242	suspension
+T20	Device 246 261	Beckman MLA 130
+T21	Speed 265 274	100,000 g
+T22	Time 279 285	10 min
+T23	Location 291 296	tubes
+T24	Modifier 307 315	balanced
+T25	Modifier 332 341	less than
+T26	Amount 342 347	50 mg
+T27	Action 349 356	Discard
+T28	Reagent 361 372	supernatant
+T29	Action 377 387	homogenize
+T30	Reagent 388 395	pellets
+T31	Amount 399 403	1 mL
+T32	Location 407 423	carbonate buffer
+T33	Method 430 436	step 2
+T34	Action 438 446	Incubate
+T35	Time 451 457	30 min
+T36	Modifier 463 469	gentle
+T37	Action 470 476	mixing
+T38	Action 478 485	Collect
+T39	Modifier 490 501	non-soluble
+T40	Reagent 502 510	material
+T41	Method 514 528	centrifugation
+T42	Location 561 587	integral membrane proteins
+T43	Modifier 595 603	purified
+T44	Location 604 613	membranes
+T45	Amount 630 637	30–40 %
+T46	Reagent 641 666	total identified proteins
+T47	Action 685 693	repeated
+T48	Numerical 694 706	two to three
+T49	Action 715 722	Discard
+T50	Reagent 723 734	supernatant
+T51	Action 739 748	resuspend
+T52	Reagent 749 756	pellets
+T53	Location 760 771	wash buffer
+T54	Method 778 784	step 2
+T55	Action 786 793	Collect
+T56	Modifier 798 803	crude
+T57	Reagent 804 813	membranes
+T58	Method 817 831	centrifugation
