@@ -1,119 +1,75 @@
-T1	Action 29 33	Soak
-E1	Action:T1 Acts-on:T18 Site:T20
-T2	Action 90 95	rinse
-E2	Action:T2 Count:T22 Using:T23 Acts-on:T18
-T3	Action 131 142	Equilibrate
-E3	Action:T3 Acts-on:T24 Site:T26
-T4	Action 227 232	Place
-E4	Action:T4 Acts-on:T28 Site:T29
-T5	Action 289 294	place
-E5	Action:T5 Acts-on:T30 Site:T31
-T6	Action 347 350	Add
-E6	Action:T6 Acts-on:T32 Site:T33
-T7	Action 402 406	soak
-E7	Action:T7 Acts-on:T35
-T8	Action 505 510	place
-E8	Action:T8 Acts-on:T36 Site:T37
-T9	Action 565 571	ensure
-E9	Action:T9 
-T10	Action 599 607	Incubate
-E10	Action:T10 
-T11	Action 701 706	Place
-E11	Action:T11 Acts-on:T41 Site:T44
-T12	Action 816 821	Place
-E12	Action:T12 Acts-on:T46 Site:T48
-T13	Action 913 919	Remove
-E13	Action:T13 Acts-on:T50
-T14	Action 939 946	rolling
-E14	Action:T14 Site:T53 Acts-on:T51 Acts-on2:T52
-T15	Action 995 1000	Slide
-E15	Action:T15 Acts-on:T55 Site:T56
-T16	Action 1107 1110	Put
-E16	Action:T16 Acts-on:T60 Site:T61
-T17	Action 1211 1214	run
-E17	Action:T17 
-T18	Reagent 38 51	PVDF membrane
-T19	Concentration 55 59	100%
-T20	Reagent 60 68	methanol
-T21	Time 73 84	1‐2 minutes
-T22	Numerical 96 105	2‐3 times
-T23	Reagent 111 126	deionized water
-R1	Measure Arg1:T20 Arg2:T19	
-R2	Setting Arg1:E1 Arg2:T21	
-T24	Reagent 143 147	PVDF
-T25	Reagent 151 174	nitrocellulose membrane
-T26	Reagent 178 207	diluted SWIFT™ Western Buffer
-T27	Time 212 224	5‐10 minutes
-R3	Or Arg1:T24 Arg2:T25	
-R4	Setting Arg1:E3 Arg2:T27	
-T28	Location 237 266	supplied SWIFT™ Template Card
-T29	Location 272 284	flat surface
-T30	Location 297 324	SWIFT™ Western Transfer Pad
-T31	Location 332 345	Template Card
-T32	Reagent 351 380	diluted SWIFT™ Western Buffer
-T33	Location 384 387	top
-T34	Location 395 398	pad
-T35	Mention 407 409	it
-R5	Meronym Arg1:T33 Arg2:T34	
-R6	Coreference-Link Arg1:T35 Arg2:T34	
-T36	Reagent 515 518	gel
-T37	Location 522 525	top
-T38	Location 533 560	SWIFT™ Western Transfer Pad
-R7	Meronym Arg1:T37 Arg2:T38	
-T39	Time 612 621	5 minutes
-T40	Temperature 625 641	room temperature
-R8	Setting Arg1:E10 Arg2:T39	
-R9	Setting Arg1:E10 Arg2:T40	
-T41	Reagent 711 728	blotting membrane
-T42	Action 729 741	equilibrated
-E18	Action:T42 Site:T43 Acts-on:T41
-T43	Reagent 745 774	diluted SWIFT™ Western Buffer
-T44	Location 778 781	top
-T45	Reagent 789 792	gel
-R10	Meronym Arg1:T44 Arg2:T45	
-T46	Location 830 835	piece
-T47	Location 839 866	SWIFT™ Western Transfer Pad
-R11	Meronym Arg1:T46 Arg2:T47	
-T48	Location 870 873	top
-T49	Reagent 881 889	membrane
-R12	Meronym Arg1:T48 Arg2:T49	
-T50	Reagent 924 935	air bubbles
-T51	Location 949 953	tube
-T52	Location 957 964	pipette
-T53	Location 974 977	top
-T54	Reagent 985 993	sandwich
-R13	Meronym Arg1:T53 Arg2:T54	
-T55	Reagent 1005 1018	blot sandwich
-T56	Location 1026 1043	transfer cassette
-T57	Location 1055 1065	fiber pads
-T58	Action 1066 1072	soaked
-E19	Action:T58 Site:T59 Acts-on:T57
-T59	Reagent 1076 1105	diluted SWIFT™ Western Buffer
-R14	Meronym Arg1:T57 Arg2:T56	
-T60	Location 1115 1142	assembled transfer cassette
-T61	Location 1148 1171	Western transfer module
-T62	Reagent 1177 1206	diluted SWIFT™ Western Buffer
-T63	Time 1222 1235	30‐60 minutes
-T64	Generic-Measure 1239 1259	200mA fixed current.
-R15	Meronym Arg1:T62 Arg2:T61	
-R16	Setting Arg1:E17 Arg2:T63	
-R17	Setting Arg1:E17 Arg2:T64	
-T65	Location 0 28	SWIFT™ Western Transfer Pads
-T66	Action 419 422	Use
-E20	Action:T66 
-T67	Amount 423 426	2ml
-T68	Size 440 451	8.5 x 7.5cm
-T69	Amount 456 459	5ml
-T70	Size 473 483	15 x 9.5cm
-T71	Measure-Type 484 488	size
-T72	Location 489 493	pads
-R18	Setting Arg1:E20 Arg2:T67	
-R19	Setting Arg1:E20 Arg2:T69	
-R20	Measure Arg1:T72 Arg2:T70	
-R21	Measure Arg1:T72 Arg2:T68	
-R22	Or Arg1:T68 Arg2:T70	
-R23	Or Arg1:T69 Arg2:T67	
-T73	Method 647 657	incubation
-T74	Reagent 672 679	protein
-T75	Measure-Type 680 699	transfer efficiency
-R24	Or Arg1:T51 Arg2:T52	
+T1	Location 0 28	SWIFT™ Western Transfer Pads
+T2	Action 29 33	Soak
+T3	Reagent 38 51	PVDF membrane
+T4	Concentration 55 60	100 %
+T5	Reagent 61 69	methanol
+T6	Time 74 85	1‐2 minutes
+T7	Action 91 96	rinse
+T8	Numerical 97 106	2‐3 times
+T9	Reagent 112 127	deionized water
+T10	Action 129 140	Equilibrate
+T11	Reagent 141 145	PVDF
+T12	Reagent 149 172	nitrocellulose membrane
+T13	Reagent 176 205	diluted SWIFT™ Western Buffer
+T14	Time 210 222	5‐10 minutes
+T15	Action 224 229	Place
+T16	Location 234 263	supplied SWIFT™ Template Card
+T17	Location 269 281	flat surface
+T18	Action 286 291	place
+T19	Location 294 321	SWIFT™ Western Transfer Pad
+T20	Location 329 342	Template Card
+T21	Action 344 347	Add
+T22	Reagent 348 377	diluted SWIFT™ Western Buffer
+T23	Location 381 384	top
+T24	Location 392 395	pad
+T25	Action 399 403	soak
+T26	Mention 404 406	it
+T27	Action 416 419	Use
+T28	Amount 420 423	2ml
+T29	Size 437 448	8.5 x 7.5cm
+T30	Amount 453 456	5ml
+T31	Size 473 485	x 9.5cm size
+T32	Measure-Type 486 490	pads
+T33	Location 490 491	.
+T34	Action 502 507	place
+T35	Reagent 512 515	gel
+T36	Location 519 522	top
+T37	Location 530 557	SWIFT™ Western Transfer Pad
+T38	Action 562 568	ensure
+T39	Action 596 604	Incubate
+T40	Time 609 618	5 minutes
+T41	Temperature 622 638	room temperature
+T42	Method 644 654	incubation
+T43	Reagent 669 676	protein
+T44	Measure-Type 677 696	transfer efficiency
+T45	Action 698 703	Place
+T46	Reagent 708 725	blotting membrane
+T47	Action 726 738	equilibrated
+T48	Reagent 742 771	diluted SWIFT™ Western Buffer
+T49	Location 775 778	top
+T50	Reagent 786 789	gel
+T51	Action 813 818	Place
+T52	Location 827 832	piece
+T53	Location 836 863	SWIFT™ Western Transfer Pad
+T54	Location 867 870	top
+T55	Reagent 878 886	membrane
+T56	Action 910 916	Remove
+T57	Reagent 921 932	air bubbles
+T58	Action 936 943	rolling
+T59	Location 946 950	tube
+T60	Location 954 961	pipette
+T61	Location 971 974	top
+T62	Reagent 982 990	sandwich
+T63	Action 992 997	Slide
+T64	Reagent 1002 1015	blot sandwich
+T65	Location 1023 1040	transfer cassette
+T66	Location 1052 1062	fiber pads
+T67	Action 1063 1069	soaked
+T68	Reagent 1073 1102	diluted SWIFT™ Western Buffer
+T69	Action 1104 1107	Put
+T70	Location 1112 1139	assembled transfer cassette
+T71	Location 1145 1168	Western transfer module
+T72	Reagent 1174 1203	diluted SWIFT™ Western Buffer
+T73	Action 1208 1211	run
+T74	Time 1219 1232	30‐60 minutes
+T75	Generic-Measure 1236 1256	200mA fixed current.

@@ -1,163 +1,107 @@
-T1	Action 38 45	Harvest
-E1	Action:T1 Product:T4 Acts-on:T20
-T2	Action 140 145	Tease
-E2	Action:T2 Acts-on:T21 Using:T24 Product:T25
-T3	Action 290 299	Resuspend
-E3	Action:T3 Acts-on:T28 Site:T29
-T6	Action 432 436	coat
-E6	Action:T6 
-T7	Action 520 528	Incubate
-E7	Action:T7 
-T8	Action 566 574	incubate
-E8	Action:T8 
-T9	Action 606 612	decant
-E9	Action:T9 Acts-on:T40 Site:T41
-T10	Action 647 651	Wash
-E10	Action:T10 Acts-on:T42 Using:T48
-T11	Action 687 691	Wash
-E11	Action:T11 Acts-on:T43 Using:T49
-T12	Action 727 731	Wash
-E12	Action:T12 Acts-on:T44 Using:T50
-T13	Action 767 774	Discard
-E13	Action:T13 Acts-on:T51
-T14	Action 783 788	Plate
-E14	Action:T14 Acts-on:T52
-T15	Action 824 831	Culture
-E15	Action:T15 Acts-on:T54
-T16	Action 1092 1095	add
-E16	Action:T16 Acts-on:T71 Acts-on2:T72
-T17	Action 1202 1206	wash
-E17	Action:T17 Acts-on:T73
-T18	Action 1227 1238	restimulate
-E18	Action:T18 Site:T75 Acts-on:T73 Using:T77 Using2:T79 Using3:T80
-T19	Action 357 364	isolate
-E19	Action:T19 Acts-on:T31 Using:T30
+T1	Method 0 17	Th17 Polarization
+T2	Reagent 21 37	Mouse CD4+ Cells
+T3	Action 38 45	Harvest
 T4	Reagent 46 57	lymph nodes
-T20	Reagent 134 138	mice
-T21	Reagent 146 157	lymph nodes
-T22	Modifier 168 175	sterile
-T23	Size 176 181	70-µm
-T24	Device 182 201	nylon cell strainer
-T25	Reagent 212 251	single-cell suspensions incomplete RPMI
-T26	Concentration 263 266	10%
-T27	Reagent 267 270	FCS
-R1	Measure Arg1:T27 Arg2:T26	
-R2	Meronym Arg1:T27 Arg2:T25	
-R3	Setting Arg1:T24 Arg2:T23	
-R4	Mod-Link Arg1:T24 Arg2:T22	
-T28	Reagent 300 305	cells
-T29	Reagent 309 324	complete medium
-T30	Method 333 353	your favorite method
-T31	Reagent 365 376	CD4+ cells.
-T5	Size 437 447	60 × 15 mm
-T32	Location 451 471	plastic petri dishes
-T33	Reagent 477 508	anti-mouse CD3ε, clone 145-2C11
-T34	Concentration 510 518	5 µg/ml)
-T35	Temperature 532 536	37°C
-T36	Time 541 548	2 hours
-T37	Temperature 578 581	4°C
-T38	Time 582 591	overnight
-T39	Modifier 594 605	Aseptically
-T40	Reagent 613 630	antibody solution
-T41	Location 640 645	plate
-T42	Location 652 657	plate
-T43	Location 692 697	plate
-T44	Location 732 737	plate
-T45	Modifier 663 670	sterile
-T46	Modifier 703 710	sterile
-T47	Modifier 743 750	sterile
-T48	Reagent 671 674	PBS
-T49	Reagent 711 714	PBS
-T50	Reagent 751 754	PBS
-T51	Reagent 775 781	liquid
-T52	Reagent 789 799	CD4+ cells
-T53	Generic-Measure 803 822	1.0 x 106 /1ml/well
-T54	Reagent 832 837	cells
-T55	Time 842 848	4 days
-T56	Reagent 868 896	anti-mouse CD28, clone 37.51
-T57	Concentration 898 905	5 µg/mL
-T58	Reagent 908 930	recombinant mouse IL-6
-T59	Concentration 932 940	50 ng/mL
-T60	Reagent 943 967	recombinant human TGF-β1
-T61	Concentration 969 976	1 ng/mL
-T62	Reagent 979 1002	recombinant mouse IL-23
-T63	Concentration 1004 1011	5 ng/ml
-T64	Reagent 1014 1029	anti-mouse IL-4
-T65	Concentration 1031 1039	10 µg/mL
-T66	Reagent 1046 1062	anti-mouse IFN-γ
-T67	Concentration 1064 1072	10 µg/mL
-T68	Modifier 1085 1091	slowly
-T69	Amount 1096 1100	5 ml
-T70	Modifier 1104 1109	fresh
-T71	Reagent 1110 1115	media
-T72	Reagent 1153 1173	antibodies/cytokines
-R5	Mod-Link Arg1:T71 Arg2:T70	
-R6	Mod-Link Arg1:E16 Arg2:T68	
-T73	Reagent 1207 1212	cells
-T74	Numerical 1213 1217	once
-T75	Reagent 1242 1257	complete medium
-T76	Concentration 1263 1272	500 ng/ml
-T77	Reagent 1273 1276	PMA
-T78	Concentration 1281 1290	500 ng/mL
-T79	Reagent 1291 1300	ionomycin
-T80	Reagent 1321 1332	Brefeldin A
-T81	Time 1393 1404	4 - 5 hours
-R7	Setting Arg1:E17 Arg2:T74	
-R8	Measure Arg1:T77 Arg2:T76	
-R9	Measure Arg1:T79 Arg2:T78	
-R10	Setting Arg1:E18 Arg2:T81	
-T82	Method 0 17	Th17 Polarization
-T83	Reagent 21 37	Mouse CD4+ Cells
-T84	Reagent 59 79	superficial cervical
-T85	Reagent 81 91	mandibular
-T86	Reagent 93 101	axillary
-T87	Reagent 103 111	inguinal
-T88	Reagent 117 127	mesenteric
-R11	Meronym Arg1:T4 Arg2:T20	
-T89	Reagent 281 287	medium
-T90	Modifier 272 280	complete
-R12	Mod-Link Arg1:T89 Arg2:T90	
-T91	Action 377 385	Checkout
-E4	Action:T91 
-T92	Device 416 420	kits
-T93	Time 425 430	day 0
-R13	Setting Arg1:E6 Arg2:T93	
-R14	Setting Arg1:E7 Arg2:T35	
-R15	Setting Arg1:E7 Arg2:T36	
-R16	Setting Arg1:E8 Arg2:T37	
-R17	Setting Arg1:E8 Arg2:T38	
-R18	Mod-Link Arg1:E9 Arg2:T39	
-R19	Mod-Link Arg1:T48 Arg2:T45	
-T94	Action 676 680	wash
-E5	Action:T94 
-T95	Action 716 720	wash
-E20	Action:T95 
-T96	Action 756 760	wash
-E21	Action:T96 
-R20	Mod-Link Arg1:T49 Arg2:T46	
-R21	Mod-Link Arg1:T50 Arg2:T47	
-R22	Setting Arg1:E14 Arg2:T53	
-T97	Action 1412 1422	harvesting
-E22	Action:T97 
-T98	Reagent 1428 1433	cells
-T99	Action 1448 1456	staining
-E23	Action:T99 Acts-on:T98
-T100	Reagent 1379 1387	monensin
-T101	Action 1375 1378	use
-E24	Action:T101 Acts-on:T100
-T102	Method 1363 1373	production
-T103	Reagent 1357 1362	IL-21
-R23	Setting Arg1:E15 Arg2:T55	
-R24	Measure Arg1:T56 Arg2:T57	
-R25	Measure Arg1:T58 Arg2:T59	
-R26	Measure Arg1:T60 Arg2:T61	
-R27	Measure Arg1:T62 Arg2:T63	
-R28	Measure Arg1:T64 Arg2:T65	
-R29	Measure Arg1:T66 Arg2:T67	
-T104	Time 1078 1083	day 3
-T105	Time 1195 1200	day 4
-R30	Setting Arg1:E16 Arg2:T104	
-T106	Measure-Type 1136 1149	concentration
-R31	Measure Arg1:T71 Arg2:T69	
-T107	Time 1185 1190	day 0
-R32	Setting Arg1:E16 Arg2:T107	
+T5	Reagent 59 79	superficial cervical
+T6	Reagent 81 91	mandibular
+T7	Reagent 93 101	axillary
+T8	Reagent 103 111	inguinal
+T9	Reagent 117 127	mesenteric
+T10	Reagent 134 138	mice
+T11	Action 140 145	Tease
+T12	Reagent 146 157	lymph nodes
+T13	Modifier 168 175	sterile
+T14	Size 176 181	70-µm
+T15	Device 182 201	nylon cell strainer
+T16	Reagent 212 251	single-cell suspensions incomplete RPMI
+T17	Concentration 263 267	10 %
+T18	Reagent 268 271	FCS
+T19	Modifier 273 281	complete
+T20	Reagent 282 288	medium
+T21	Action 291 300	Resuspend
+T22	Reagent 301 306	cells
+T23	Reagent 310 325	complete medium
+T24	Method 334 354	your favorite method
+T25	Action 358 365	isolate
+T26	Reagent 366 377	CD4+ cells.
+T27	Action 378 386	Checkout
+T28	Device 417 421	kits
+T29	Time 426 431	day 0
+T30	Action 433 437	coat
+T31	Size 438 448	60 × 15 mm
+T32	Location 452 472	plastic petri dishes
+T33	Reagent 478 509	anti-mouse CD3ε, clone 145-2C11
+T34	Concentration 511 519	5 µg/ml)
+T35	Action 521 529	Incubate
+T36	Temperature 533 541	37°C for
+T37	Time 544 550	hours.
+T38	Action 567 575	incubate
+T39	Temperature 579 582	4°C
+T40	Time 583 592	overnight
+T41	Modifier 595 606	Aseptically
+T42	Action 607 613	decant
+T43	Reagent 614 631	antibody solution
+T44	Location 641 646	plate
+T45	Action 648 652	Wash
+T46	Location 653 658	plate
+T47	Modifier 664 671	sterile
+T48	Reagent 672 675	PBS
+T49	Action 677 681	wash
+T50	Action 688 692	Wash
+T51	Location 693 698	plate
+T52	Modifier 704 711	sterile
+T53	Reagent 712 715	PBS
+T54	Action 717 721	wash
+T55	Action 728 732	Wash
+T56	Location 733 738	plate
+T57	Modifier 744 751	sterile
+T58	Reagent 752 755	PBS
+T59	Action 757 761	wash
+T60	Action 768 775	Discard
+T61	Reagent 776 782	liquid
+T62	Action 784 789	Plate
+T63	Reagent 790 800	CD4+ cells
+T64	Generic-Measure 804 823	1.0 x 106 /1ml/well
+T65	Action 825 832	Culture
+T66	Reagent 833 838	cells
+T67	Time 843 849	4 days
+T68	Reagent 869 897	anti-mouse CD28, clone 37.51
+T69	Concentration 899 906	5 µg/mL
+T70	Reagent 909 931	recombinant mouse IL-6
+T71	Concentration 933 941	50 ng/mL
+T72	Reagent 944 968	recombinant human TGF-β1
+T73	Concentration 970 977	1 ng/mL
+T74	Reagent 980 1003	recombinant mouse IL-23
+T75	Concentration 1005 1012	5 ng/ml
+T76	Reagent 1015 1030	anti-mouse IL-4
+T77	Concentration 1032 1040	10 µg/mL
+T78	Reagent 1047 1063	anti-mouse IFN-γ
+T79	Concentration 1065 1073	10 µg/mL
+T80	Time 1079 1084	day 3
+T81	Modifier 1086 1092	slowly
+T82	Action 1093 1096	add
+T83	Amount 1097 1101	5 ml
+T84	Modifier 1105 1110	fresh
+T85	Reagent 1111 1116	media
+T86	Measure-Type 1137 1150	concentration
+T87	Reagent 1154 1174	antibodies/cytokines
+T88	Time 1186 1191	day 0
+T89	Time 1196 1201	day 4
+T90	Action 1203 1207	wash
+T91	Reagent 1208 1213	cells
+T92	Numerical 1214 1218	once
+T93	Action 1228 1239	restimulate
+T94	Reagent 1243 1258	complete medium
+T95	Concentration 1264 1273	500 ng/ml
+T96	Reagent 1274 1277	PMA
+T97	Concentration 1282 1291	500 ng/mL
+T98	Reagent 1292 1301	ionomycin
+T99	Reagent 1322 1333	Brefeldin A
+T100	Reagent 1358 1363	IL-21
+T101	Method 1364 1374	production
+T102	Action 1376 1379	use
+T103	Reagent 1380 1388	monensin
+T104	Time 1394 1405	4 - 5 hours
+T105	Action 1413 1423	harvesting
+T106	Reagent 1429 1434	cells
+T107	Action 1449 1457	staining

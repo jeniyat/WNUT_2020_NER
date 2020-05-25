@@ -1,52 +1,30 @@
-T1	Action 48 53	Weigh
-E1	Action:T1 Acts-on:T10
-T2	Action 87 90	Add
-E2	Action:T2 Acts-on:T13
-T3	Action 113 120	Disolve
-E3	Action:T3 
-T4	Action 133 139	Prewet
-E4	Action:T4 Acts-on:T16
-T5	Action 167 174	drawing
-E5	Action:T5 Acts-on:T19 Using:T16
-T6	Action 210 217	discard
-E6	Action:T6 Acts-on:T20
-T7	Action 225 234	Sterilize
-E7	Action:T7 Acts-on:T21 Using:T24
-T8	Action 308 312	kept
-E8	Action:T8 Acts-on:T25
-T9	Amount 54 59	0.5 g
-T10	Reagent 63 84	Kanamycin Monosulfate
-T11	Amount 91 96	10 ml
-T12	Modifier 100 107	sterile
-T13	Reagent 108 111	H2O
-T14	Modifier 121 131	completely
-T15	Size 142 148	0.2 µm
-T16	Device 149 163	syringe filter
-T17	Amount 183 190	5-10 ml
-T18	Modifier 194 201	sterile
-T19	Reagent 202 205	H2O
-T20	Mention 218 223	water
-R1	Coreference-Link Arg1:T20 Arg2:T19	
-T21	Reagent 235 250	Kanamycin Stock
-T22	Modifier 263 271	prepared
-T23	Size 272 278	0.2 µm
-T24	Device 279 293	syringe filter
-T25	Reagent 295 300	Stock
-T26	Temperature 316 321	-20°C
-T27	Time 326 332	1 year
-R2	Measure Arg1:T10 Arg2:T9	
-R3	Mod-Link Arg1:T13 Arg2:T12	
-R4	Measure Arg1:T13 Arg2:T11	
-R5	Mod-Link Arg1:E3 Arg2:T14	
-R6	Setting Arg1:T16 Arg2:T15	
-R7	Mod-Link Arg1:T19 Arg2:T18	
-R8	Measure Arg1:T19 Arg2:T17	
-R9	Setting Arg1:T24 Arg2:T23	
-R10	Mod-Link Arg1:T24 Arg2:T22	
-R11	Setting Arg1:E8 Arg2:T26	
-R12	Setting Arg1:E8 Arg2:T27	
-T28	Action 7 11	make
-E9	Action:T28 Product:T30
-T29	Concentration 14 22	50 mg/ml
-T30	Reagent 23 47	Kanamycin Stock Solution
-R13	Measure Arg1:T30 Arg2:T29	
+T1	Action 7 11	make
+T2	Concentration 14 22	50 mg/ml
+T3	Reagent 23 47	Kanamycin Stock Solution
+T4	Action 48 53	Weigh
+T5	Amount 54 59	0.5 g
+T6	Reagent 63 84	Kanamycin Monosulfate
+T7	Action 86 89	Add
+T8	Amount 90 95	10 ml
+T9	Modifier 99 106	sterile
+T10	Reagent 107 110	H2O
+T11	Action 112 119	Disolve
+T12	Modifier 120 130	completely
+T13	Action 132 138	Prewet
+T14	Size 141 147	0.2 µm
+T15	Device 148 162	syringe filter
+T16	Action 166 173	drawing
+T17	Amount 182 189	5-10 ml
+T18	Modifier 193 200	sterile
+T19	Reagent 201 204	H2O
+T20	Action 209 222	discard water
+T21	Mention 222 223	.
+T22	Action 224 233	Sterilize
+T23	Reagent 234 249	Kanamycin Stock
+T24	Modifier 262 270	prepared
+T25	Size 271 277	0.2 µm
+T26	Device 278 292	syringe filter
+T27	Reagent 294 299	Stock
+T28	Action 307 311	kept
+T29	Temperature 315 320	-20°C
+T30	Time 325 331	1 year

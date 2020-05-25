@@ -1,88 +1,62 @@
-T1	Action 97 103	Remove
-E1	Action:T1 Acts-on:T30
-T2	Action 262 269	removed
-E2	Action:T2 Acts-on:T12 Acts-on2:T13
-T3	Action 412 418	Remove
-E3	Action:T3 Acts-on:T15 Site:T16
-T5	Action 512 518	Repeat
-E5	Action:T5 
-T6	Action 585 591	Remove
-E6	Action:T6 Acts-on:T23 Site:T24
-T7	Action 129 137	increase
-E7	Action:T7 Measure-Type-Link:T8
-T8	Measure-Type 138 159	average quality score
-T9	Reagent 163 168	reads
-T10	Generic-Measure 175 177	28
-T11	Reagent 214 220	5' end
-T12	Reagent 232 249	Illumina adapters
-T13	Reagent 254 261	primers
+T1	Modifier 0 5	Basic
+T2	Method 6 39	Illumina Sequence Quality Control
+T3	Action 40 46	Assess
+T4	Modifier 47 50	raw
+T5	Reagent 51 66	FASTQ sequences
+T6	Method 85 95	FastQCGoal
+T7	Action 97 103	Remove
+T8	Modifier 104 115	low quality
+T9	Reagent 116 125	sequences
+T10	Action 129 137	increase
+T11	Measure-Type 138 159	average quality score
+T12	Reagent 163 168	reads
+T13	Generic-Measure 175 177	28
 T14	Reagent 190 208	sequencing centers
-T15	Reagent 419 445	Illumina adaptor sequences
-T16	Reagent 451 470	3' end of sequences
-T18	Generic-Measure 502 510	0 length
-T20	Action 548 554	Assess
-E8	Action:T20 Measure-Type-Link:T21 Using:T22
-T21	Measure-Type 555 571	Cutadapt results
-T22	Method 577 583	FastQC
-T23	Reagent 604 614	base pairs
-T24	Reagent 620 629	sequences
-T4	Method 6 23	Illumina Sequence
-T25	Action 40 46	Assess
-E4	Action:T25 Acts-on:T27 Using:T28
-T26	Modifier 47 50	raw
-T27	Reagent 51 66	FASTQ sequences
-T28	Method 85 95	FastQCGoal
-T29	Modifier 104 115	low quality
-T30	Reagent 116 125	sequences
-T31	Method 288 297	inclusion
-T32	Reagent 305 328	3' end Illumina adapter
-T33	Reagent 332 345	DNA fragments
-T34	Measure-Type 351 357	length
-T35	Modifier 358 367	less than
-T36	Measure-Type 372 392	number of the cycles
-T37	Device 401 410	sequencer
-T38	Action 484 493	preserve 
-E9	Action:T38 Acts-on:T17
-T19	Modifier 592 603	low quality
-R1	Mod-Link Arg1:T23 Arg2:T19	
-T39	Reagent 650 656	3' end
-T40	Measure-Type 666 680	sliding window
-T41	Generic-Measure 684 689	10 bp
-T42	Action 700 704	trim
-E10	Action:T42 Acts-on:T43
-T43	Reagent 709 723	trailing bases
-T44	Measure-Type 739 752	quality score
-T45	Generic-Measure 765 767	28
-T46	Action 783 791	maintain
-E11	Action:T46 Acts-on:T47
-T47	Reagent 805 834	paired-end Illumina sequences
-T17	Reagent 493 498	reads
-T48	Reagent 840 845	reads
-T49	Action 854 859	input
-E12	Action:T49 Acts-on:T48
-T50	Modifier 860 874	simultaneously
-T51	Measure-Type 889 908	number of sequences
-T52	Action 909 918	submitted
-E13	Action:T52 Measure-Type-Link:T51
-T53	Reagent 929 938	read pair
-T54	Measure-Type 958 964	length
-T55	Reagent 972 980	sequence
-T56	Measure-Type 994 1008	quality scores
-T57	Method 1015 1021	FastQC
-T58	Action 982 988	Assess
-E14	Action:T58 Measure-Type-Link:T56 Using:T57
-T59	Action 1023 1030	Utilize
-E15	Action:T59 Using:T60
-T60	Method 1031 1042	Trimmomatic
-T61	Generic-Measure 1094 1102	first bp
-R2	Mod-Link Arg1:T27 Arg2:T26	
-R3	Mod-Link Arg1:T30 Arg2:T29	
-R4	Of-Type Arg1:T10 Arg2:T8	
-R5	Measure Arg1:T9 Arg2:T10	
-R6	Meronym Arg1:T32 Arg2:T33	
-R7	Setting Arg1:E9 Arg2:T18	
-R8	Of-Type Arg1:T41 Arg2:T40	
-R9	Of-Type Arg1:T45 Arg2:T44	
-R10	Mod-Link Arg1:E12 Arg2:T50	
-T62	Modifier 0 5	Basic
-T63	Method 24 39	Quality Control
+T15	Reagent 214 221	5 ' end
+T16	Reagent 233 250	Illumina adapters
+T17	Reagent 255 262	primers
+T18	Action 263 270	removed
+T19	Method 289 298	inclusion
+T20	Reagent 306 330	3 ' end Illumina adapter
+T21	Reagent 334 347	DNA fragments
+T22	Measure-Type 353 364	length less
+T23	Modifier 365 373	than the
+T24	Measure-Type 374 398	number of the cycles for
+T25	Device 403 413	sequencer.
+T26	Action 414 420	Remove
+T27	Reagent 421 447	Illumina adaptor sequences
+T28	Reagent 453 473	3 ' end of sequences
+T29	Action 487 501	preserve reads
+T30	Reagent 502 504	of
+T31	Generic-Measure 507 514	length.
+T32	Action 515 521	Repeat
+T33	Action 551 557	Assess
+T34	Measure-Type 558 574	Cutadapt results
+T35	Method 580 586	FastQC
+T36	Action 588 594	Remove
+T37	Modifier 595 606	low quality
+T38	Reagent 607 617	base pairs
+T39	Reagent 623 632	sequences
+T40	Reagent 653 660	3 ' end
+T41	Measure-Type 670 684	sliding window
+T42	Generic-Measure 688 693	10 bp
+T43	Action 704 708	trim
+T44	Reagent 713 727	trailing bases
+T45	Measure-Type 743 756	quality score
+T46	Generic-Measure 769 771	28
+T47	Action 788 796	maintain
+T48	Reagent 810 839	paired-end Illumina sequences
+T49	Reagent 845 850	reads
+T50	Action 859 864	input
+T51	Modifier 865 879	simultaneously
+T52	Measure-Type 894 913	number of sequences
+T53	Action 914 923	submitted
+T54	Reagent 934 943	read pair
+T55	Measure-Type 963 969	length
+T56	Reagent 977 985	sequence
+T57	Action 987 993	Assess
+T58	Measure-Type 999 1013	quality scores
+T59	Method 1020 1026	FastQC
+T60	Action 1028 1035	Utilize
+T61	Method 1036 1047	Trimmomatic
+T62	Generic-Measure 1099 1107	first bp

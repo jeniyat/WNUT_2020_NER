@@ -1,245 +1,173 @@
-T1	Action 103 110	Prepare
-E1	Action:T1 Acts-on:T28 Using:T29
-T8	Action 1058 1061	Add
-E8	Action:T8 Acts-on:T2 Site:T4
-T9	Action 1147 1150	Add
-E9	Action:T9 Acts-on:T6 Site:T5
-T11	Action 1539 1544	Track
-E11	Action:T11 Acts-on:T7 Site:T30 Acts-on2:T33
-T16	Action 2119 2125	stored
-E16	Action:T16 Acts-on:T12 Site:T14
-T20	Action 2402 2409	collect
-E20	Action:T20 Acts-on:T18
-T21	Action 2429 2432	fix
-E21	Action:T21 Acts-on:T18 Acts-on2:T19
-T27	Modifier 111 119	modified
-T28	Reagent 120 130	DY-V media
-T29	Device 136 154	labeled substrates
-R1	Mod-Link Arg1:T28 Arg2:T27	
-T2	Reagent 1074 1082	bacteria
-T3	Modifier 1062 1073	heat-killed
-R2	Mod-Link Arg1:T2 Arg2:T3	
-T4	Location 1096 1101	media
-T5	Reagent 1170 1187	mixotrophic algae
-T6	Reagent 1154 1162	inoculum
-T7	Reagent 1549 1554	algae
-T10	Modifier 1555 1561	growth
-R3	Mod-Link Arg1:T7 Arg2:T10	
-T30	Location 1570 1580	microscopy
-T31	Modifier 1625 1632	decline
-T32	Modifier 1636 1647	heat-killed
-T33	Reagent 1648 1656	bacteria
-R4	Mod-Link Arg1:T33 Arg2:T32	
-R5	Mod-Link Arg1:T33 Arg2:T31	
-T12	Device 2104 2111	filters
-T13	Modifier 2129 2134	glass
-T14	Location 2135 2140	vials
-T15	Temperature 2144 2160	room temperature
-R6	Setting Arg1:E16 Arg2:T15	
-R7	Mod-Link Arg1:T14 Arg2:T13	
-T17	Amount 2410 2414	2 mL
-T18	Reagent 2418 2424	sample
-R8	Measure Arg1:T18 Arg2:T17	
-T19	Reagent 2438 2464	2X EM-grade glutaraldehyde
-T22	Method 0 17	Isotopic labeling
-T23	Reagent 21 49	freshwater mixotrophic algae
-T24	Modifier 56 82	isotopic labeled inorganic
-T25	Reagent 83 91	nitrogen
-T26	Reagent 96 102	carbon
-R9	Mod-Link Arg1:T25 Arg2:T24	
-T34	Reagent 157 162	Media
-T35	Reagent 172 189	Ochromonas growth
-T36	Modifier 196 204	modified
-T37	Reagent 216 226	DY-V media
-T38	Modifier 247 249	No
-T39	Reagent 250 253	MES
-T40	Action 258 262	used
-E2	Action:T40 Acts-on:T39
-T41	Reagent 297 303	carbon
-T42	Reagent 305 316	bicarbonate
-T43	Modifier 321 332	heat-killed
-T44	Reagent 333 342	bacteria 
-T45	Reagent 366 372	carbon
-T46	Reagent 386 391	media
-T47	Reagent 397 404	Na2SiO3
-T48	Modifier 394 396	No
-R10	Mod-Link Arg1:T47 Arg2:T48	
-T49	Reagent 415 425	Ochromonas
-T50	Modifier 431 439	not need
-T51	Reagent 440 446	silica
-R11	Mod-Link Arg1:T51 Arg2:T50	
-R12	Mod-Link Arg1:T39 Arg2:T38	
-T52	Reagent 459 467	ammonium
-T53	Reagent 452 458	NaNO3 
-T54	Modifier 449 451	No
-T55	Modifier 472 483	heat-killed
-T56	Reagent 484 492	bacteria
-T57	Reagent 518 526	nitrogen
-T58	Reagent 548 566	Sodium bicarbonate
-T59	Modifier 578 583	final
-T60	Measure-Type 584 597	concentration
-T61	Concentration 601 606	95 µM
-T62	Action 567 572	added
-E3	Action:T62 Acts-on:T58 Measure-Type-Link:T60
-R13	Coreference-Link Arg1:E3 Arg2:T61	
-T63	Reagent 608 619	Bicarbonate
-T64	Modifier 637 643	before
-T65	Method 644 658	algal inoculum
-T66	Concentration 662 668	0.2 µm
-T67	Method 669 679	filtration
-T68	Reagent 685 699	stock solution
-T70	Action 701 717	do not autoclave
-E4	Action:T70 
-T69	Action 732 738	ensure
-E5	Action:T69 Acts-on:T72
-T71	Method 739 756	isotopic labeling
-T72	Reagent 764 781	mixotrophic algae
-T73	Numerical 783 786	50%
-T74	Reagent 794 811	ammonium chloride
-T75	Modifier 812 817	added
-R14	Measure Arg1:T74 Arg2:T73	
-R15	Mod-Link Arg1:T74 Arg2:T75	
-T76	Reagent 834 855	ammonium-15N chloride
-T77	Numerical 857 860	98%
-T78	Reagent 861 869	atom 15N
-T79	Reagent 879 890	bicarbonate
-T80	Modifier 891 896	added
-T81	Reagent 913 928	13C-bicarbonate
-R16	Meronym Arg1:T81 Arg2:T79	
-R17	Meronym Arg1:T76 Arg2:T74	
-R18	Mod-Link Arg1:T79 Arg2:T80	
-T82	Reagent 1084 1087	HKB
-T83	Reagent 1103 1106	HKB
-R19	Meronym Arg1:T82 Arg2:T2	
-R20	Meronym Arg1:T83 Arg2:T2	
-T84	Action 1112 1120	obtained
-E6	Action:T84 Acts-on:T83
-T85	Method 1136 1144	protocol
-T86	Modifier 1121 1130	following
-T87	Measure-Type 1189 1195	volume
-T88	Reagent 1199 1207	inoculum
-T89	Modifier 1218 1221	low
-T90	Action 1228 1233	avoid
-E7	Action:T90 
-T91	Method 1234 1242	dilution
-T92	Method 1250 1292	isotopic label and carry over of nutrients
-R21	Mod-Link Arg1:T88 Arg2:T89	
-T93	Numerical 1342 1348	~5x103
-T94	Reagent 1349 1359	Ochromonas
-T95	Measure-Type 1360 1364	mL-1
-T96	Numerical 1369 1375	~5x107
-T97	Reagent 1376 1379	HKB
-T98	Measure-Type 1380 1384	mL-1
-T99	Modifier 1388 1396	starting
-T100	Concentration 1397 1411	concentrations
-T101	Reagent 1420 1428	cultures
-R22	Mod-Link Arg1:T100 Arg2:T99	
-R23	Measure Arg1:T97 Arg2:T96	
-R24	Measure Arg1:T94 Arg2:T93	
-T102	Method 1430 1448	Mixotrophic growth
-T103	Reagent 1456 1462	algae 
-T104	Reagent 1470 1475	algae
-T105	Action 1476 1481	grow 
-E10	Action:T105 Acts-on:T104
-T106	Action 1487 1500	incorporates 
-E12	Action:T106 
-T107	Measure-Type 953 971	degree of labeling
-T108	Action 989 997	achieved
-E13	Action:T108 Measure-Type-Link:T107
-T109	Modifier 1582 1586	live
-T110	Reagent 1587 1594	samples
-T111	Modifier 1602 1607	fixed
-T112	Reagent 1608 1615	samples
-R25	Mod-Link Arg1:T112 Arg2:T111	
-R26	Mod-Link Arg1:T110 Arg2:T109	
-T113	Modifier 1323 1331	commonly
-T114	Action 1332 1336	used
-E14	Action:T114 
-R27	Mod-Link Arg1:E14 Arg2:T113	
-T115	Modifier 1658 1663	fixed
-T116	Reagent 1664 1671	samples
-T117	Action 1676 1684	staining
-E15	Action:T117 Using:T118
-T118	Reagent 1690 1694	DAPI
-T119	Action 1698 1704	assess
-E17	Action:T119 Measure-Type-Link:T120 Using:T121
-T120	Measure-Type 1705 1723	HKB concentrations
-T121	Method 1732 1758	epifluorescence microscopy
-R28	Mod-Link Arg1:T116 Arg2:T115	
-T122	Method 1760 1811	Sampling for assessment of algal isotopic signature
-T123	Reagent 1812 1822	Ochromonas
-T124	Action 1827 1842	allowed to grow
-E18	Action:T124 Acts-on:T123
-T125	Time 1847 1862	2-3 generations
-R29	Setting Arg1:E18 Arg2:T125	
-T126	Method 1870 1901	sampling for isotopic signature
-T127	Numerical 1903 1906	Two
-T128	Reagent 1915 1922	samples
-T129	Action 1960 1966	filter
-E19	Action:T129 
-T130	Amount 1967 1975	30-50 mL
-T131	Reagent 1983 1991	cultures
-T132	Modifier 1997 2022	pre-combusted glass fiber
-T133	Reagent 2023 2030	filters
-R30	Mod-Link Arg1:T133 Arg2:T132	
-T134	Action 2035 2038	dry
-E22	Action:T134 
-T135	Temperature 2042 2047	60 ºC
-T136	Time 2048 2058	over night
-T137	Action 1930 1939	collected
-E23	Action:T137 Acts-on:T128 Count:T127
-R31	Setting Arg1:E22 Arg2:T136	
-R32	Setting Arg1:E22 Arg2:T135	
-T138	Action 2062 2066	stop
-E24	Action:T138 
-T139	Method 2071 2090	biological activity
-T140	Modifier 2067 2070	all
-R33	Mod-Link Arg1:E24 Arg2:T140	
-T141	Modifier 2092 2102	Afterwards
-R34	Mod-Link Arg1:E16 Arg2:T141	
-T142	Modifier 2162 2169	Further
-T143	Method 2170 2180	processing
-T144	Reagent 2188 2194	sample
-T145	Method 2207 2225	acidification step
-T146	Reagent 2231 2234	HCl
-T147	Action 2238 2244	remove
-E25	Action:T147 Acts-on:T148 Using:T146 Using2:T145
-T148	Reagent 2245 2261	inorganic carbon
-T149	Measure-Type 2270 2300	C- and N- isotopic composition
-T150	Action 2319 2330	determined 
-E26	Action:T150 Measure-Type-Link:T149 Using:T151
-T151	Device 2336 2365	isotope rato mas spectrometer
-T152	Device 2367 2371	IRMS
-R35	Meronym Arg1:T152 Arg2:T151	
-T153	Measure-Type 2374 2400	Cell-specific measurements
-T154	Reagent 2466 2472	Sample
-T155	Action 2480 2486	stored
-E27	Action:T155 Acts-on:T154 Site:T156
-T156	Location 2494 2500	fridge
-T157	Temperature 2504 2508	4 ºC
-R36	Setting Arg1:E27 Arg2:T157	
-T158	Modifier 2510 2517	Further
-T160	Reagent 2536 2542	sample
-T161	Method 2556 2580	deposition of cells onto
-T162	Location 2581 2595	sylicon wafers
-T163	Action 2597 2601	wash
-E29	Action:T163 Using:T164
-T164	Reagent 2607 2615	MQ-water
-T165	Action 2620 2624	drye
-E30	Action:T165 
-T166	Action 2626 2629	map
-E31	Action:T166 Acts-on:T167 Site:T168 Using:T169
-T167	Reagent 2630 2635	cells
-T168	Device 2643 2649	waffer
-T169	Method 2656 2666	microscopy
-T170	Method 2671 2679	analysis
-T171	Modifier 2683 2689	single
-T172	Reagent 2690 2695	cells
-T173	Device 2704 2733	Cameca NanoSIMS 50 instrument
-T174	Action 2784 2788	done
-E32	Action:T174 Acts-on:T175
-T175	Device 2768 2775	machine
-T159	Method 2518 2528	processing
-R37	Mod-Link Arg1:T172 Arg2:T171	
-T176	Method 2748 2760	manipulation
-T177	Modifier 2741 2747	actual
+T1	Method 0 17	Isotopic labeling
+T2	Reagent 21 49	freshwater mixotrophic algae
+T3	Modifier 56 82	isotopic labeled inorganic
+T4	Reagent 83 91	nitrogen
+T5	Reagent 96 102	carbon
+T6	Action 103 110	Prepare
+T7	Modifier 111 119	modified
+T8	Reagent 120 130	DY-V media
+T9	Device 136 154	labeled substrates
+T10	Reagent 156 161	Media
+T11	Reagent 171 188	Ochromonas growth
+T12	Modifier 195 203	modified
+T13	Reagent 215 225	DY-V media
+T14	Modifier 248 250	No
+T15	Reagent 251 254	MES
+T16	Action 259 263	used
+T17	Reagent 298 304	carbon
+T18	Reagent 306 317	bicarbonate
+T19	Modifier 322 333	heat-killed
+T20	Reagent 334 346	bacteria are
+T21	Reagent 367 378	carbon used
+T22	Reagent 387 393	media)
+T23	Modifier 395 397	No
+T24	Reagent 398 405	Na2SiO3
+T25	Reagent 416 426	Ochromonas
+T26	Modifier 432 440	not need
+T27	Reagent 441 447	silica
+T28	Modifier 450 452	No
+T29	Reagent 453 472	NaNO3 (ammonium and
+T30	Modifier 473 493	heat-killed bacteria
+T31	Reagent 494 498	were
+T32	Reagent 519 532	nitrogen used
+T33	Reagent 549 567	Sodium bicarbonate
+T34	Action 568 573	added
+T35	Modifier 579 584	final
+T36	Measure-Type 585 598	concentration
+T37	Concentration 602 607	95 µM
+T38	Reagent 609 620	Bicarbonate
+T39	Modifier 638 644	before
+T40	Method 645 659	algal inoculum
+T41	Concentration 663 669	0.2 µm
+T42	Method 670 680	filtration
+T43	Reagent 686 700	stock solution
+T44	Action 702 718	do not autoclave
+T45	Action 733 739	ensure
+T46	Method 740 757	isotopic labeling
+T47	Reagent 765 782	mixotrophic algae
+T48	Numerical 784 788	50 %
+T49	Reagent 796 813	ammonium chloride
+T50	Modifier 814 819	added
+T51	Reagent 836 859	ammonium-15N chloride (
+T52	Numerical 859 868	98 % atom
+T53	Reagent 869 877	15N) and
+T54	Reagent 882 899	bicarbonate added
+T55	Modifier 900 906	to the
+T56	Reagent 916 932	13C-bicarbonate.
+T57	Measure-Type 957 975	degree of labeling
+T58	Action 993 1001	achieved
+T59	Action 1062 1065	Add
+T60	Modifier 1066 1077	heat-killed
+T61	Reagent 1078 1086	bacteria
+T62	Reagent 1088 1091	HKB
+T63	Location 1100 1105	media
+T64	Reagent 1107 1110	HKB
+T65	Action 1116 1124	obtained
+T66	Modifier 1125 1134	following
+T67	Method 1140 1148	protocol
+T68	Action 1151 1154	Add
+T69	Reagent 1158 1166	inoculum
+T70	Reagent 1174 1191	mixotrophic algae
+T71	Measure-Type 1193 1199	volume
+T72	Reagent 1203 1211	inoculum
+T73	Modifier 1222 1225	low
+T74	Action 1232 1237	avoid
+T75	Method 1238 1246	dilution
+T76	Method 1254 1296	isotopic label and carry over of nutrients
+T77	Modifier 1328 1336	commonly
+T78	Action 1337 1341	used
+T79	Numerical 1347 1353	~5x103
+T80	Reagent 1354 1364	Ochromonas
+T81	Measure-Type 1365 1369	mL-1
+T82	Numerical 1374 1380	~5x107
+T83	Reagent 1381 1384	HKB
+T84	Measure-Type 1385 1389	mL-1
+T85	Modifier 1393 1401	starting
+T86	Concentration 1402 1416	concentrations
+T87	Reagent 1425 1433	cultures
+T88	Method 1435 1453	Mixotrophic growth
+T89	Reagent 1461 1470	algae Let
+T90	Reagent 1475 1485	algae grow
+T91	Action 1486 1488	so
+T92	Action 1492 1508	incorporates the
+T93	Action 1544 1549	Track
+T94	Reagent 1554 1559	algae
+T95	Modifier 1560 1566	growth
+T96	Location 1575 1585	microscopy
+T97	Modifier 1587 1591	live
+T98	Reagent 1592 1599	samples
+T99	Modifier 1607 1612	fixed
+T100	Reagent 1613 1620	samples
+T101	Modifier 1630 1637	decline
+T102	Modifier 1641 1652	heat-killed
+T103	Reagent 1653 1661	bacteria
+T104	Modifier 1663 1668	fixed
+T105	Reagent 1669 1676	samples
+T106	Action 1681 1689	staining
+T107	Reagent 1695 1699	DAPI
+T108	Action 1703 1709	assess
+T109	Measure-Type 1710 1728	HKB concentrations
+T110	Method 1737 1763	epifluorescence microscopy
+T111	Method 1765 1816	Sampling for assessment of algal isotopic signature
+T112	Reagent 1817 1831	Ochromonas was
+T113	Action 1832 1851	allowed to grow for
+T114	Time 1852 1874	2-3 generations before
+T115	Method 1875 1907	sampling for isotopic signature.
+T116	Numerical 1908 1911	Two
+T117	Reagent 1920 1927	samples
+T118	Action 1935 1944	collected
+T119	Action 1967 1979	filter 30-50
+T120	Amount 1980 1985	mL of
+T121	Reagent 1990 2003	cultures onto
+T122	Modifier 2004 2037	pre-combusted glass fiber filters
+T123	Reagent 2038 2041	and
+T124	Action 2042 2048	dry at
+T125	Temperature 2052 2059	ºC over
+T126	Time 2060 2068	night to
+T127	Action 2069 2077	stop all
+T128	Modifier 2078 2088	biological
+T129	Method 2089 2098	activity.
+T130	Modifier 2099 2109	Afterwards
+T131	Device 2111 2118	filters
+T132	Action 2126 2132	stored
+T133	Modifier 2136 2141	glass
+T134	Location 2142 2147	vials
+T135	Temperature 2151 2167	room temperature
+T136	Modifier 2169 2176	Further
+T137	Method 2177 2187	processing
+T138	Reagent 2195 2201	sample
+T139	Method 2214 2232	acidification step
+T140	Reagent 2238 2241	HCl
+T141	Action 2245 2251	remove
+T142	Reagent 2252 2268	inorganic carbon
+T143	Measure-Type 2277 2307	C- and N- isotopic composition
+T144	Action 2326 2339	determined by
+T145	Device 2343 2379	isotope rato mas spectrometer (IRMS)
+T146	Measure-Type 2381 2407	Cell-specific measurements
+T147	Action 2410 2417	collect
+T148	Amount 2418 2422	2 mL
+T149	Reagent 2426 2432	sample
+T150	Action 2437 2440	fix
+T151	Reagent 2446 2472	2X EM-grade glutaraldehyde
+T152	Reagent 2474 2480	Sample
+T153	Action 2488 2494	stored
+T154	Location 2502 2508	fridge
+T155	Temperature 2512 2516	4 ºC
+T156	Modifier 2518 2525	Further
+T157	Method 2526 2536	processing
+T158	Reagent 2544 2550	sample
+T159	Method 2564 2596	deposition of cells onto sylicon
+T160	Location 2597 2604	wafers,
+T161	Action 2605 2614	wash with
+T162	Reagent 2615 2627	MQ-water and
+T163	Action 2628 2644	drye ; map cells
+T164	Reagent 2645 2647	on
+T165	Device 2652 2664	waffer using
+T166	Method 2665 2691	microscopy and analysis of
+T167	Modifier 2692 2704	single cells
+T168	Reagent 2705 2710	using
+T169	Device 2713 2744	Cameca NanoSIMS 50 instrument (
+T170	Modifier 2751 2770	actual manipulation
+T171	Method 2771 2773	of
+T172	Device 2778 2790	machine will
+T173	Action 2794 2801	done by

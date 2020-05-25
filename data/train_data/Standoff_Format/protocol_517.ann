@@ -1,188 +1,99 @@
-T1	Action 57 65	Assemble
-E1	Action:T1 Acts-on:T18 Site:T19
-T2	Action 316 319	Mix
-E2	Action:T2 Acts-on:T25
-T3	Action 341 349	Transfer
-E3	Action:T3 Site:T26
-T6	Action 753 756	Mix
-E6	Action:T6 Using:T53
-T7	Action 788 796	Incubate
-E7	Action:T7 
-T8	Action 832 835	Add
-E8	Action:T8 Acts-on:T64 Site:T66
-T9	Action 935 940	flick
-E9	Action:T9 Acts-on:T67 Count:T68
-T10	Action 983 988	Place
-E10	Action:T10 Acts-on:T70
-T11	Action 1024 1034	Heat shock
-E11	Action:T11 
-T12	Action 1059 1064	Place
-E12	Action:T12 
-T13	Action 1087 1094	Pipette
-E13	Action:T13 Acts-on:T78 Site:T79
-T14	Action 1144 1152	Incubate
-E14	Action:T14 Using:T81
-T16	Action 1261 1267	Spread
-E16	Action:T16 Site:T86
-T17	Action 1313 1321	Incubate
-E17	Action:T17 
-T18	Reagent 70 88	following reagents
-T19	Location 94 114	thin-walled PCR tube
-T20	Reagent 136 176	Q5 Hot Start High-Fidelity 2X Master Mix
-T21	Amount 176 183	12.5 μl
-T22	Reagent 191 205	Forward Primer
-T23	Amount 205 212	1.25 μl
-T24	Concentration 212 218	0.5 μM
-T27	Reagent 224 238	Reverse Primer
-T28	Amount 238 245	1.25 μl
-T29	Concentration 245 251	0.5 μM
-T30	Reagent 251 263	Template DNA
-T31	Amount 276 280	1 μl
-T32	Reagent 287 306	Nuclease-free water
-T33	Amount 306 312	9.0 μl
-R1	Measure Arg1:T32 Arg2:T33	
-R2	Measure Arg1:T20 Arg2:T21	
-R3	Measure Arg1:T30 Arg2:T31	
-R4	Measure Arg1:T27 Arg2:T28	
-R5	Measure Arg1:T27 Arg2:T29	
-R6	Measure Arg1:T22 Arg2:T23	
-R7	Measure Arg1:T22 Arg2:T24	
-T25	Reagent 320 328	reagents
-T26	Device 355 367	thermocycler
-T34	Method 384 412	following cycling conditions
-T4	Temperature 489 493	98°C
-T35	Time 493 503	30 seconds
-T36	Numerical 503 512	25 Cycles
-T37	Temperature 512 516	98°C
-T38	Time 516 526	10 seconds
-T39	Temperature 526 534	50–72°C*
-T40	Time 534 547	10–30 seconds
-T41	Temperature 547 551	72°C
-T42	Time 551 567	20–30 seconds/kb
-T43	Temperature 582 586	72°C
-T44	Time 586 595	2 minutes
-T45	Time 595 599	Hold
-T46	Temperature 599 605	4–10°C
-T47	Action 469 489	Initial Denaturation
-E4	Action:T47 
-R13	Setting Arg1:E4 Arg2:T4	
-R14	Setting Arg1:E4 Arg2:T35	
-R15	Setting Arg1:E4 Arg2:T36	
-T48	Action 567 582	Final Extension
-E18	Action:T48 
-R16	Setting Arg1:E18 Arg2:T43	
-R17	Setting Arg1:E18 Arg2:T44	
-T5	Reagent 631 639	reagents
-T49	Amount 670 674	1 μl
-T51	Amount 697 701	5 μl
-T50	Reagent 678 697	KLD Reaction Buffer
-T52	Concentration 675 677	2X
-T54	Reagent 707 721	KLD Enzyme Mix
-T55	Amount 721 725	1 μl
-T56	Concentration 725 727	1X
-T57	Reagent 727 746	Nuclease-free Water
-T58	Reagent 659 670	PCR Product
-R18	Measure Arg1:T58 Arg2:T49	
-R19	Measure Arg1:T50 Arg2:T52	
-R20	Measure Arg1:T50 Arg2:T51	
-T59	Amount 746 750	3 μl
-R21	Measure Arg1:T57 Arg2:T59	
-R22	Measure Arg1:T54 Arg2:T55	
-R23	Measure Arg1:T54 Arg2:T56	
-T53	Method 765 786	pipetting up and down
-T60	Modifier 757 761	well
-R24	Mod-Link Arg1:E6 Arg2:T60	
-T61	Temperature 800 816	room temperature
-T62	Time 821 830	5 minutes
-R25	Setting Arg1:E7 Arg2:T61	
-R26	Setting Arg1:E7 Arg2:T62	
-T63	Amount 836 840	5 μl
-T64	Reagent 848 855	KLD mix
-R27	Measure Arg1:T64 Arg2:T63	
-T65	Amount 888 893	50 μl
-T66	Reagent 897 923	chemically-competent cells
-R28	Measure Arg1:T66 Arg2:T65	
-T67	Location 945 949	tube
-T68	Numerical 950 959	4-5 times
-T69	Temperature 1004 1007	ice
-T70	Reagent 993 1000	mixture
-R29	Setting Arg1:E10 Arg2:T69	
-T71	Time 1012 1022	30 minutes
-R30	Setting Arg1:E10 Arg2:T71	
-T72	Temperature 1038 1042	42°C
-T73	Time 1047 1057	30 seconds
-R31	Setting Arg1:E11 Arg2:T72	
-R32	Setting Arg1:E11 Arg2:T73	
-T74	Temperature 1068 1071	ice
-T75	Time 1076 1085	5 minutes
-R33	Setting Arg1:E12 Arg2:T74	
-R34	Setting Arg1:E12 Arg2:T75	
-T76	Amount 1095 1101	950 μl
-T78	Reagent 1122 1125	SOC
-T79	Reagent 1135 1142	mixture
-R35	Measure Arg1:T78 Arg2:T76	
-T77	Temperature 1156 1160	37°C
-T80	Time 1165 1175	60 minutes
-T81	Method 1181 1188	shaking
-T82	Speed 1190 1197	250 rpm
-R36	Setting Arg1:E14 Arg2:T77	
-R37	Setting Arg1:E14 Arg2:T80	
-R38	Setting Arg1:E14 Arg2:T82	
-T15	Action 1228 1236	flicking
-E5	Action:T15 Acts-on:T85
-T84	Action 1250 1259	inverting
-E15	Action:T84 Acts-on:T85
-T85	Location 1241 1245	tube
-T83	Amount 1268 1277	40–100 μl
-T86	Location 1295 1310	selection plate
-T87	Reagent 1208 1213	cells
-T88	Time 1322 1331	overnight
-T89	Temperature 1335 1339	37°C
-R40	Setting Arg1:E17 Arg2:T88	
-R41	Setting Arg1:E17 Arg2:T89	
-T90	Amount 116 121	25 μl
-T91	Reagent 122 125	RXN
-T92	Modifier 125 130	FINAL
-T93	Measure-Type 131 135	CONC
-T94	Method 0 48	Q5® Site-Directed Mutagenesis Kit Quick Protocol
-T95	Numerical 183 185	1X
-T96	Concentration 185 190	10 μM
-T97	Concentration 218 223	10 μM
-T98	Concentration 265 275	1–25 ng/μl
-T99	Amount 280 287	1-25 ng
-R8	Measure Arg1:T32 Arg2:T99	
-T100	Method 414 452	Thermocycling Conditions for a Routine
-T101	Modifier 329 339	completely
-R9	Mod-Link Arg1:E2 Arg2:T101	
-R10	Measure Arg1:T22 Arg2:T96	
-R11	Measure Arg1:T22 Arg2:T95	
-R12	Measure Arg1:T27 Arg2:T97	
-R42	Measure Arg1:T30 Arg2:T98	
-R43	Measure Arg1:T91 Arg2:T90	
-T102	Action 372 379	perform
-E19	Action:T102 Using:T34
-T103	Action 608 616	Assemble
-E20	Action:T103 Acts-on:T5
-T104	Modifier 621 630	following
-R44	Mod-Link Arg1:T5 Arg2:T104	
-T105	Measure-Type 642 648	VOLUME
-T106	Modifier 648 653	FINAL
-T107	Measure-Type 654 658	CONC
-T108	Numerical 701 703	1X
-T109	Numerical 703 706	10X
-R45	Measure Arg1:T54 Arg2:T109	
-R46	Measure Arg1:T54 Arg2:T108	
-T110	Modifier 925 934	Carefully
-T111	Action 963 966	mix
-E21	Action:T111 
-R47	Mod-Link Arg1:E9 Arg2:T110	
-T112	Action 968 981	Do not vortex
-E22	Action:T112 
-T113	Temperature 1105 1121	room temperature
-R48	Setting Arg1:E13 Arg2:T113	
-T114	Action 1200 1203	Mix
-E23	Action:T114 Acts-on:T87
-T115	Modifier 1214 1224	thoroughly
-R49	Mod-Link Arg1:E23 Arg2:T115	
-T116	Modifier 1283 1294	appropriate
-R39	Mod-Link Arg1:T86 Arg2:T116	
+T1	Method 0 48	Q5® Site-Directed Mutagenesis Kit Quick Protocol
+T2	Action 57 65	Assemble
+T3	Reagent 70 88	following reagents
+T4	Location 94 114	thin-walled PCR tube
+T5	Amount 116 121	25 μl
+T6	Reagent 122 130	RXNFINAL
+T7	Measure-Type 131 138	CONC.Q5
+T8	Reagent 139 180	Hot Start High-Fidelity 2X Master Mix12.5
+T9	Amount 181 187	μl1X10
+T10	Concentration 188 190	μM
+T11	Reagent 191 209	Forward Primer1.25
+T12	Amount 210 215	μl0.5
+T13	Concentration 216 223	μM10 μM
+T14	Reagent 224 242	Reverse Primer1.25
+T15	Amount 243 248	μl0.5
+T16	Concentration 249 259	μMTemplate
+T17	Reagent 260 263	DNA
+T18	Concentration 265 275	1–25 ng/μl
+T19	Amount 277 301	1 μl1-25 ngNuclease-free
+T20	Reagent 302 310	water9.0
+T21	Amount 311 313	μl
+T22	Action 315 318	Mix
+T23	Reagent 319 327	reagents
+T24	Modifier 328 338	completely
+T25	Action 340 348	Transfer
+T26	Device 354 366	thermocycler
+T27	Action 371 378	perform
+T28	Method 383 411	following cycling conditions
+T29	Method 414 452	Thermocycling Conditions for a Routine
+T30	Action 459 497	STEPTEMPTIMEInitial Denaturation98°C30
+T31	Time 498 507	seconds25
+T32	Numerical 508 520	Cycles98°C10
+T33	Time 521 574	seconds50–72°C*10–30 seconds72°C20–30 seconds/kbFinal
+T34	Action 575 589	Extension72°C2
+T35	Time 590 607	minutesHold4–10°C
+T36	Action 609 617	Assemble
+T37	Modifier 622 631	following
+T38	Reagent 632 640	reagents
+T39	Measure-Type 643 663	VOLUMEFINAL CONC.PCR
+T40	Reagent 664 672	Product1
+T41	Amount 673 675	μl
+T42	Concentration 676 682	2X KLD
+T43	Reagent 683 699	Reaction Buffer5
+T44	Amount 700 707	μl1X10X
+T45	Numerical 708 711	KLD
+T46	Reagent 712 723	Enzyme Mix1
+T47	Amount 724 741	μl1XNuclease-free
+T48	Reagent 742 748	Water3
+T49	Amount 749 752	μl.
+T50	Action 753 756	Mix
+T51	Modifier 757 761	well
+T52	Method 765 786	pipetting up and down
+T53	Action 788 796	Incubate
+T54	Temperature 800 816	room temperature
+T55	Time 821 830	5 minutes
+T56	Action 832 835	Add
+T57	Amount 836 840	5 μl
+T58	Reagent 848 855	KLD mix
+T59	Amount 889 897	to 50 μl
+T60	Reagent 901 927	chemically-competent cells
+T61	Modifier 929 938	Carefully
+T62	Action 939 944	flick
+T63	Location 949 953	tube
+T64	Numerical 954 963	4-5 times
+T65	Action 967 970	mix
+T66	Action 972 985	Do not vortex
+T67	Action 987 992	Place
+T68	Reagent 997 1004	mixture
+T69	Temperature 1008 1011	ice
+T70	Time 1016 1026	30 minutes
+T71	Action 1028 1038	Heat shock
+T72	Temperature 1042 1046	42°C
+T73	Time 1051 1061	30 seconds
+T74	Action 1063 1068	Place
+T75	Temperature 1072 1075	ice
+T76	Time 1080 1089	5 minutes
+T77	Action 1091 1098	Pipette
+T78	Amount 1099 1105	950 μl
+T79	Temperature 1109 1125	room temperature
+T80	Reagent 1126 1129	SOC
+T81	Reagent 1139 1146	mixture
+T82	Action 1148 1156	Incubate
+T83	Temperature 1160 1164	37°C
+T84	Time 1169 1179	60 minutes
+T85	Method 1185 1192	shaking
+T86	Speed 1194 1201	250 rpm
+T87	Action 1204 1207	Mix
+T88	Reagent 1212 1217	cells
+T89	Modifier 1218 1228	thoroughly
+T90	Action 1232 1240	flicking
+T91	Location 1245 1249	tube
+T92	Action 1254 1263	inverting
+T93	Action 1265 1271	Spread
+T94	Amount 1272 1281	40–100 μl
+T95	Modifier 1287 1298	appropriate
+T96	Location 1299 1314	selection plate
+T97	Action 1316 1324	Incubate
+T98	Time 1325 1334	overnight
+T99	Temperature 1338 1342	37°C

@@ -1,51 +1,35 @@
-T1	Action 40 44	load
-E1	Action:T1 
-T2	Action 107 111	Load
-E2	Action:T2 Acts-on:T12 Site:T14
-T3	Action 183 188	Place
-E3	Action:T3 Acts-on:T15 Using:T16
-T4	Action 303 310	Connect
-E4	Action:T4 Acts-on:T17 Acts-on2:T22 Using:T24
-T5	Action 399 403	Load
-E5	Action:T5 Site:T25
-T6	Action 470 476	Record
-E6	Action:T6 Acts-on:T19 Using:T20 Using2:T28
-T7	Action 576 581	Image
-E7	Action:T7 Acts-on:T18 Using:T29 Using2:T21
-T8	Modifier 33 39	Gently
-T9	Reagent 45 73	plant protoplast suspensions
-T10	Location 79 105	hamilton gas-tight syringe
-T11	Generic-Measure 112 116	2.5%
-T13	Generic-Measure 117 120	wt%
-T14	Location 155 181	hamilton gas-tight syringe
-T12	Reagent 121 149	Pico-Surf(TM) 1in Novec 7500
-R1	Measure Arg1:T12 Arg2:T11	
-R2	Measure Arg1:T12 Arg2:T13	
-T15	Device 193 212	microfluidic device
-T16	Method 220 261	stage of bright-field inverted microscope
-T17	Device 315 323	syringes
-T18	Reagent 586 603	plant protoplasts
-T19	Device 481 501	encapsulation videos
-T20	Device 511 522	fast camera
-T21	Device 621 648	Andor iXon Ultra 897 camera
-T22	Device 359 376	microfluidic chip
-T23	Modifier 331 351	corresponding inlets
-R3	Mod-Link Arg1:T22 Arg2:T23	
-T24	Method 381 397	PTFE microtubing
-T25	Device 428 449	PHD 2000 syringe pump
-T26	Modifier 409 426	Harvard Apparatus
-R4	Mod-Link Arg1:T25 Arg2:T26	
-T27	Action 454 468	start infusing
-E8	Action:T27 Site:T25
-T28	Device 551 574	manufacturer's software
-T29	Method 604 615	in droplets
-T30	Method 0 30	Plant Protoplast Encapsulation
-T31	Modifier 284 294	high-speed
-T32	Device 295 301	camera
-R5	Mod-Link Arg1:T32 Arg2:T31	
-T33	Action 268 276	connects
-E9	Action:T33 Acts-on:T32
-T34	Action 691 701	controlled
-E10	Action:T34 Using:T35 Measure-Type-Link:T36
-T35	Method 711 727	Labview software
-T36	Measure-Type 653 665	fluorescence
+T1	Method 0 30	Plant Protoplast Encapsulation
+T2	Modifier 32 38	Gently
+T3	Action 39 43	load
+T4	Reagent 44 72	plant protoplast suspensions
+T5	Location 78 104	hamilton gas-tight syringe
+T6	Action 106 110	Load
+T7	Generic-Measure 111 121	2.5 % wt %
+T8	Reagent 122 151	Pico-Surf (TM) 1in Novec 7500
+T9	Location 157 183	hamilton gas-tight syringe
+T10	Action 185 190	Place
+T11	Device 195 214	microfluidic device
+T12	Method 222 263	stage of bright-field inverted microscope
+T13	Action 270 278	connects
+T14	Modifier 286 296	high-speed
+T15	Device 297 303	camera
+T16	Action 305 312	Connect
+T17	Device 317 325	syringes
+T18	Modifier 333 353	corresponding inlets
+T19	Device 361 378	microfluidic chip
+T20	Method 383 399	PTFE microtubing
+T21	Action 401 405	Load
+T22	Modifier 411 429	Harvard Apparatus,
+T23	Device 430 455	PHD 2000 syringe pump and
+T24	Action 456 471	start infusing.
+T25	Action 472 478	Record
+T26	Device 483 503	encapsulation videos
+T27	Device 513 524	fast camera
+T28	Device 553 577	manufacturer 's software
+T29	Action 579 584	Image
+T30	Reagent 589 606	plant protoplasts
+T31	Method 607 618	in droplets
+T32	Device 624 655	Andor iXon Ultra 897 camera for
+T33	Measure-Type 656 672	fluorescence and
+T34	Action 694 709	controlled with
+T35	Method 714 731	Labview software.

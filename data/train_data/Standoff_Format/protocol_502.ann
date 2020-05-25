@@ -1,639 +1,385 @@
-T1	Action 118 125	Prepare
-E1	Action:T1 Using:T3 Using2:T5 Product:T2
-T2	Reagent 126 137	SNAX medium
-T3	Method 151 162	directions6
-T4	Concentration 172 175	15N
-T5	Reagent 176 193	ammonium chloride
-R1	Measure Arg1:T5 Arg2:T4	
-T6	Action 233 237	Grow
-E2	Action:T6 Site:T8 Acts-on:T7
-T7	Reagent 238 251	cyanobacteria
-T8	Reagent 259 265	medium
-T9	Reagent 271 285	heavy nitrogen
-T10	Action 290 298	transfer
-E3	Action:T10 Count:T12
-T11	Modifier 299 307	at least
-T12	Numerical 308 309	3
-R2	Meronym Arg1:T9 Arg2:T8	
-R3	Or Arg1:T12 Arg2:T11	
-T13	Action 329 336	Extract
-E4	Action:T13 Acts-on:T14 Site:T15 Using:T16
-T14	Reagent 337 340	DNA
-T15	Reagent 346 379	bacterial grown in heavy nitrogen
-T16	Method 386 402	standard methods
-T17	Action 405 413	Quantify
-E5	Action:T17 Acts-on:T18 Using:T19
-T18	Reagent 418 421	DNA
-T19	Reagent 428 447	Quant-iT Pico Green
-T20	Amount 483 488	10 µg
-T21	Reagent 492 495	DNA
-T22	Action 470 473	Use
-E6	Action:T22 Acts-on:T21 Using:T23
-T23	Method 500 531	density gradient centrifugation
-R4	Measure Arg1:T21 Arg2:T20	
-T24	Modifier 474 482	at least
-R5	Mod-Link Arg1:T20 Arg2:T24	
-T25	Device 573 602	Beckman VTi 65 vertical rotor
-T26	Size 617 625	13x48 mm
-T27	Location 626 652	OptiSeal polyallomer tubes
-T28	Amount 654 660	4.9 ml
-R6	Measure Arg1:T27 Arg2:T26	
-R7	Measure Arg1:T27 Arg2:T28	
-T29	Action 607 611	used
-E7	Action:T29 Acts-on:T25 Using:T30
-R8	Meronym Arg1:T27 Arg2:T25	
-T30	Method 538 569	density gradient centrifugation
-T31	Action 673 676	Mix
-E8	Action:T31 Acts-on:T32 Using:T33
-T32	Reagent 681 684	DNA
-T33	Reagent 690 699	TE buffer
-T34	Concentration 701 705	10mM
-T35	Reagent 706 710	Tris
-T36	Concentration 712 715	1mM
-T37	Reagent 716 720	EDTA
-T38	pH 722 727	pH7.6
-T39	Amount 740 756	volume of 0.9 ml
-R9	Measure Arg1:T35 Arg2:T34	
-R10	Measure Arg1:T37 Arg2:T36	
-R11	Measure Arg1:T37 Arg2:T38	
-R12	Meronym Arg1:T35 Arg2:T33	
-R13	Meronym Arg1:T37 Arg2:T33	
-R14	Setting Arg1:E8 Arg2:T39	
-T40	Action 759 762	Mix
-E9	Action:T40 Acts-on:T41 Using:T43
-T41	Reagent 767 770	DNA
-T42	Amount 776 779	4ml
-T43	Reagent 783 787	CsCl
-T44	Reagent 800 802	TE
-T45	Generic-Measure 819 823	p1.8
-T46	Measure-Type 808 815	density
-T47	Action 788 796	prepared
-E10	Action:T47 Using:T44 Product:T43
-R15	Measure Arg1:T43 Arg2:T42	
-R16	Setting Arg1:E9 Arg2:T45	
-R17	Of-Type Arg1:T45 Arg2:T46	
-T48	Action 826 834	Dispense
-E11	Action:T48 Acts-on:T50 Site:T51 Site2:T52
-T49	Amount 835 841	4.9 ml
-T50	Reagent 849 859	DNA sample
-T51	Reagent 863 867	CsCl
-T52	Location 877 890	OptiSeal tube
-T53	Action 895 899	plug
-E12	Action:T53 Using:T54
-T54	Seal 909 919	black caps
-R18	Measure Arg1:T50 Arg2:T49	
-T55	Action 922 932	Centrifuge
-E13	Action:T55 Using:T57
-T56	Speed 936 946	44,000 rpm
-T57	Device 967 978	Beckman L70
-T58	Device 982 1001	L80 ultracentrifuge
-T59	Time 1006 1011	48 hr
-T60	Temperature 1015 1019	18°C
-R19	Setting Arg1:E13 Arg2:T56	
-R20	Or Arg1:T57 Arg2:T58	
-R21	Setting Arg1:E13 Arg2:T59	
-R22	Setting Arg1:E13 Arg2:T60	
-T61	Action 1024 1031	Collect
-E14	Action:T61 Acts-on:T63
-T62	Amount 1032 1043	0.2-0.25 ml
-T63	Reagent 1044 1053	fractions
-T64	Action 1058 1065	measure
-E15	Action:T64 Measure-Type-Link:T65 Acts-on:T63
-T65	Measure-Type 1070 1077	density
-R23	Measure Arg1:T63 Arg2:T62	
-T66	Action 1088 1097	Calculate
-E16	Action:T66 Acts-on:T68 Site:T74 Using:T69
-T67	Amount 1098 1104	amount
-T68	Reagent 1108 1111	DNA
-T69	Reagent 1135 1154	Quant-iT Pico Green
-T70	Action 1181 1190	determine
-E17	Action:T70 Measure-Type-Link:T71 Acts-on:T72
-T71	Measure-Type 1195 1202	density
-T72	Reagent 1210 1219	fractions
-T73	Reagent 1225 1228	DNA
-R24	Meronym Arg1:T72 Arg2:T73	
-R25	Measure Arg1:T68 Arg2:T67	
-T74	Reagent 1120 1128	fraction
-T75	Modifier 1115 1119	each
-R26	Mod-Link Arg1:T74 Arg2:T75	
-T76	Action 1231 1239	Estimate
-E18	Action:T76 Measure-Type-Link:T77 Acts-on:T78
-T77	Measure-Type 1244 1249	ratio
-T78	Reagent 1253 1275	isotopic labeled cells
-T79	Action 1278 1282	Thaw
-E19	Action:T79 Acts-on:T81 Site:T82
-T80	Concentration 1283 1290	10,000x
-T81	Reagent 1291 1309	stock of SYBR Gold
-T82	Location 1317 1321	dark
-T83	Action 1326 1332	vortex
-E20	Action:T83 
-T84	Modifier 1333 1343	vigorously
-R27	Mod-Link Arg1:E20 Arg2:T84	
-R28	Measure Arg1:T81 Arg2:T80	
-T86	Time 1361 1367	10 min
-T87	Speed 1371 1379	3000 x g
-T85	Action 1346 1356	Centrifuge
-E21	Action:T85 
-R29	Setting Arg1:E21 Arg2:T86	
-R30	Setting Arg1:E21 Arg2:T87	
-T88	Action 1382 1388	Dilute
-E22	Action:T88 Using:T90
-T89	Generic-Measure 1389 1394	1:100
-T90	Reagent 1410 1419	TE buffer
-T91	Action 1429 1435	filter
-E23	Action:T91 Using:T93
-T92	Amount 1444 1450	0.02µm
-T93	Device 1451 1457	filter
-R31	Setting Arg1:T93 Arg2:T92	
-R32	Setting Arg1:E22 Arg2:T89	
-T94	Action 1460 1467	Aliquot
-E24	Action:T94 
-T95	Amount 1473 1484	50 or 100µl
-T96	Action 1497 1502	store
-E25	Action:T96 
-T97	Modifier 1503 1509	frozen
-T98	Temperature 1513 1518	-20°C
-R33	Setting Arg1:E24 Arg2:T95	
-R34	Mod-Link Arg1:E25 Arg2:T97	
-R35	Setting Arg1:E25 Arg2:T98	
-T99	Action 1521 1525	Thaw
-E26	Action:T99 Acts-on:T101 Site:T102 Count:T103
-T100	Concentration 1535 1539	100X
-T101	Reagent 1540 1549	SYBR Gold
-T102	Location 1554 1558	dark
-T103	Numerical 1560 1563	one
-R36	Measure Arg1:T101 Arg2:T100	
-T104	Modifier 1526 1534	prepared
-R37	Mod-Link Arg1:T101 Arg2:T104	
-T105	Action 1576 1582	Vortex
-E27	Action:T105 Acts-on:T107
-T106	Modifier 1583 1589	thawed
-T107	Reagent 1590 1599	SYBR Gold
-T108	Modifier 1600 1610	vigorously
-R38	Mod-Link Arg1:T107 Arg2:T106	
-R39	Mod-Link Arg1:E27 Arg2:T108	
-T109	Action 1673 1680	dialyze
-E28	Action:T109 Acts-on:T111
-T110	Modifier 1684 1692	modified
-T111	Reagent 1693 1703	MTN buffer
-R40	Mod-Link Arg1:T111 Arg2:T110	
-T112	Action 1707 1712	Stain
-E29	Action:T112 Acts-on:T113
-T113	Reagent 1717 1724	viruses
-T114	Action 1728 1734	adding
-E30	Action:T114 Acts-on:T116 Site:T117 Product:T120
-T115	Modifier 1735 1743	prepared
-T116	Reagent 1744 1753	SYBR Gold
-T117	Reagent 1761 1777	viral suspension
-T118	Concentration 1789 1814	concentration of 5 to 10x
-T119	Modifier 1821 1833	concentrated
-T120	Reagent 1834 1845	viral stock
-T121	Concentration 1881 1883	1x
-T122	Reagent 1906 1917	viral stock
-R41	Mod-Link Arg1:T116 Arg2:T115	
-R43	Mod-Link Arg1:T120 Arg2:T119	
-R42	Measure Arg1:T120 Arg2:T118	
-R44	Measure Arg1:T122 Arg2:T121	
-R45	Or Arg1:T120 Arg2:T122	
-T123	Action 1928 1935	Prepare
-E31	Action:T123 Product:T124
-T124	Reagent 1938 1957	blank without virus
-T125	Reagent 1988 1997	SYBR Gold
-T126	Modifier 1981 1987	excess
-T127	Action 1961 1967	assess
-E32	Action:T127 Acts-on:T125
-T128	Modifier 1968 1976	how well
-T129	Method 2001 2012	washed away
-R46	Mod-Link Arg1:E32 Arg2:T128	
-R47	Mod-Link Arg1:T125 Arg2:T126	
-T130	Action 2016 2022	Vortex
-E33	Action:T130 Acts-on:T131
-T131	Reagent 2027 2033	sample
-T132	Time 2038 2044	10 sec
-T133	Action 2056 2059	mix
-E34	Action:T133 Acts-on:T134 Acts-on2:T135
-T134	Reagent 2064 2067	dye
-T135	Reagent 2072 2079	viruses
-R48	Setting Arg1:E33 Arg2:T132	
-T136	Generic-Measure 2048 2052	high
-R49	Setting Arg1:E33 Arg2:T136	
-T137	Action 2082 2090	Incubate
-E35	Action:T137 Acts-on:T139
-T138	Time 2091 2097	10 min
-T139	Location 2105 2109	dark
-T140	Temperature 2113 2129	room temperature
-R50	Setting Arg1:E35 Arg2:T138	
-R51	Setting Arg1:E35 Arg2:T140	
-T141	Action 2132 2136	Heat
-E36	Action:T141 Using:T144
-T142	Temperature 2140 2144	46°C
-T143	Time 2149 2159	15 minutes
-T144	Device 2167 2185	hybridization oven
-T145	Action 2204 2213	inverting
-E37	Action:T145 Acts-on:T146
-T146	Location 2214 2219	tubes
-T147	Time 2226 2235	5 minutes
-T148	Reagent 2260 2266	sample
-T149	Location 2274 2278	dark
-R52	Setting Arg1:E36 Arg2:T142	
-R53	Setting Arg1:E36 Arg2:T143	
-R54	Setting Arg1:E37 Arg2:T147	
-T150	Seal 2243 2247	foil
-T151	Action 2251 2255	keep
-E38	Action:T151 Using:T150 Acts-on:T148 Site:T149
-T152	Action 2281 2290	Cool down
-E39	Action:T152 Acts-on:T153 Site:T154
-T153	Reagent 2295 2301	sample
-T154	Location 2309 2313	dark
-T155	Temperature 2317 2333	room temperature
-T156	Time 2338 2344	10 min
-R55	Setting Arg1:E39 Arg2:T155	
-R56	Setting Arg1:E39 Arg2:T156	
-T157	Action 2347 2354	Prepare
-E40	Action:T157 Acts-on:T161 Site:T162
-T158	Amount 2355 2361	0.02µm
-T159	Modifier 2362 2370	filtered
-T160	Concentration 2371 2373	1%
-T161	Reagent 2374 2394	bovine serum albumin
-T162	Reagent 2423 2448	phosphate buffered saline
-R57	Measure Arg1:T161 Arg2:T160	
-R58	Mod-Link Arg1:T161 Arg2:T159	
-R59	Measure Arg1:T161 Arg2:T158	
-T163	Action 2457 2461	Wash
-E41	Action:T163 Acts-on:T165
-T164	Modifier 2462 2469	Nanosep
-T165	Location 2470 2479	10k tubes
-T166	Action 2483 2489	adding
-E42	Action:T166 Acts-on:T168
-T167	Amount 2490 2495	500µl
-T168	Reagent 2496 2506	MTN buffer
-T169	Time 2518 2524	10 min
-R60	Measure Arg1:T168 Arg2:T167	
-T170	Action 2512 2517	stand
-E43	Action:T170 
-R61	Setting Arg1:E43 Arg2:T169	
-R62	Mod-Link Arg1:T165 Arg2:T164	
-T171	Action 2527 2531	Spin
-E44	Action:T171 
-T172	Modifier 2538 2544	almost
-T173	Speed 2550 2559	5,000 x g
-T174	Time 2561 2567	10 min
-R63	Setting Arg1:E44 Arg2:T173	
-R64	Setting Arg1:E44 Arg2:T174	
-T175	Action 2571 2578	Discard
-E45	Action:T175 Acts-on:T176
-T176	Reagent 2583 2595	flow-through
-T177	Action 2599 2602	Add
-E46	Action:T177 Acts-on:T181
-T178	Amount 2603 2608	500µl
-T180	Concentration 2625 2627	1%
-T181	Reagent 2628 2631	BSA
-R65	Measure Arg1:T181 Arg2:T180	
-T179	Modifier 2609 2624	0.02µm filtered
-R66	Mod-Link Arg1:T181 Arg2:T179	
-R67	Measure Arg1:T181 Arg2:T178	
-T182	Time 2643 2646	1hr
-T183	Temperature 2650 2666	room temperature
-T184	Action 2633 2642	let stand
-E47	Action:T184 
-R68	Setting Arg1:E47 Arg2:T182	
-R69	Setting Arg1:E47 Arg2:T183	
-T185	Action 2670 2674	Spin
-E48	Action:T185 
-T186	Speed 2693 2702	5,000 x g
-T187	Time 2704 2713	15-30 min
-R70	Setting Arg1:E48 Arg2:T186	
-R71	Setting Arg1:E48 Arg2:T187	
-T188	Action 2718 2725	Discard
-E49	Action:T188 Acts-on:T189
-T189	Reagent 2730 2742	flow-through
-T190	Action 2745 2749	Wash
-E50	Action:T190 Using:T193
-T191	Amount 2755 2760	500µl
-T192	Modifier 2761 2776	0.02µm filtered
-T193	Reagent 2777 2787	MTN buffer
-R72	Mod-Link Arg1:T193 Arg2:T192	
-R73	Measure Arg1:T193 Arg2:T191	
-T194	Action 2790 2801	Concentrate
-E51	Action:T194 Acts-on:T196 Acts-on2:T198 Site:T200
-T195	Amount 2806 2811	500µl
-T196	Reagent 2831 2849	virus preparations
-T197	Modifier 2812 2830	stained and cooled
-T198	Reagent 2858 2868	SYBR-Blank
-T199	Modifier 2876 2887	pre-treated
-T200	Device 2888 2903	Nanosep devices
-T201	Speed 2910 2919	3,000 x g
-T202	Time 2924 2933	15-30 min
-T203	Temperature 2938 2942	10°C
-T204	Amount 2953 2958	<50µl
-R74	Mod-Link Arg1:T196 Arg2:T197	
-R75	Measure Arg1:T196 Arg2:T195	
-R76	Mod-Link Arg1:T200 Arg2:T199	
-R77	Setting Arg1:E51 Arg2:T204	
-T205	Action 2968 2972	Wash
-E52	Action:T205 Acts-on:T208 Using:T212
-T206	Amount 2977 2991	reduced volume
-T207	Modifier 2995 3002	stained
-T208	Reagent 3003 3008	virus
-T209	Reagent 3012 3022	SYBR-Blank
-T210	Amount 3028 3033	500µl
-T211	Modifier 3034 3049	0.02µm filtered
-T212	Reagent 3050 3060	MTN buffer
-R78	Mod-Link Arg1:T212 Arg2:T211	
-R79	Measure Arg1:T212 Arg2:T210	
-R80	Mod-Link Arg1:T208 Arg2:T207	
-R81	Measure Arg1:T208 Arg2:T206	
-R82	Or Arg1:T208 Arg2:T209	
-T213	Action 3064 3070	Repeat
-E53	Action:T213 Using:T215
-T214	Action 3071 3075	spin
-E54	Action:T214 
-T215	Method 3082 3090	step #36
-T216	Action 3093 3099	Repeat
-E55	Action:T216 Using:T217
-T217	Method 3100 3106	#37&38
-T218	Numerical 3122 3123	6
-T219	Action 3124 3130	washes
-E56	Action:T219 Count:T218
-T220	Action 3145 3157	bring volume
-E57	Action:T220 
-T221	Amount 3161 3166	<50µl
-T222	Modifier 3167 3176	each time
-R83	Mod-Link Arg1:E57 Arg2:T222	
-R84	Setting Arg1:E57 Arg2:T221	
-T223	Action 3179 3187	Transfer
-E58	Action:T223 Acts-on:T226 Acts-on2:T227 Site:T228 Site2:T230
-T224	Amount 3192 3196	50µl
-T225	Modifier 3200 3206	washed
-T226	Reagent 3207 3214	viruses
-T227	Reagent 3219 3229	SYBR-Blank
-T228	Device 3239 3246	Nanosep
-T229	Modifier 3252 3257	fresh
-T230	Location 3258 3274	collection tubes
-R85	Mod-Link Arg1:T230 Arg2:T229	
-R86	Mod-Link Arg1:T226 Arg2:T225	
-R87	Measure Arg1:T226 Arg2:T224	
-T231	Action 3277 3281	Keep
-E59	Action:T231 Acts-on:T232 Site:T233
-T232	Location 3286 3302	collection tubes
-T233	Location 3306 3309	ice
-T234	Action 3312 3315	Add
-E60	Action:T234 Acts-on:T237 Site:T239
-T235	Amount 3316 3320	50µl
-T236	Modifier 3321 3336	0.02µm filtered
-T237	Reagent 3337 3343	buffer
-T238	Modifier 3347 3351	each
-T239	Device 3352 3359	Nanosep
-T240	Action 3364 3372	sonicate
-E61	Action:T240 
-T241	Time 3377 3382	3 min
-T242	Generic-Measure 3405 3408	50W
-T243	Generic-Measure 3412 3418	42 kHz
-R88	Setting Arg1:E61 Arg2:T241	
-R89	Setting Arg1:E61 Arg2:T242	
-R90	Setting Arg1:E61 Arg2:T243	
-R91	Mod-Link Arg1:T239 Arg2:T238	
-R92	Mod-Link Arg1:T237 Arg2:T236	
-R93	Measure Arg1:T237 Arg2:T235	
-T244	Action 3421 3426	Pipet
-E62	Action:T244 Using:T245 Acts-on:T246
-T245	Method 3427 3438	up and down
-T246	Device 3446 3452	filter
-T247	Modifier 3453 3462	carefully
-T248	Action 3476 3484	puncture
-E63	Action:T248 Acts-on:T250
-T249	Modifier 3469 3475	not to
-T250	Reagent 3489 3497	membrane
-T251	Action 3502 3505	add
-E64	Action:T251 Site:T254 Acts-on:T250
-T252	Modifier 3513 3524	appropriate
-T253	Modifier 3525 3532	stained
-T254	Reagent 3533 3538	virus
-T255	Location 3542 3553	blank tubes
-T256	Action 3558 3567	transport
-E65	Action:T256 Acts-on:T257 Site:T260
-T257	Location 3572 3588	collection tubes
-T258	Modifier 3592 3598	washed
-T259	Reagent 3599 3606	viruses
-T260	Location 3610 3613	ice
-R94	Mod-Link Arg1:T259 Arg2:T258	
-R95	Mod-Link Arg1:T254 Arg2:T253	
-R96	Mod-Link Arg1:T254 Arg2:T252	
-R97	Mod-Link Arg1:E63 Arg2:T249	
-R98	Mod-Link Arg1:E62 Arg2:T247	
-R99	Or Arg1:T254 Arg2:T255	
-R100	Meronym Arg1:T259 Arg2:T257	
-T261	Action 3616 3621	Count
-E66	Action:T261 Acts-on:T262 Acts-on2:T264
-T262	Reagent 3626 3636	host cells
-T263	Modifier 3645 3657	SYBR-stained
-T264	Reagent 3658 3665	viruses
-R101	Mod-Link Arg1:T264 Arg2:T263	
-T265	Action 3669 3678	determine
-E67	Action:T265 Acts-on:T267
-T266	Amount 3683 3689	amount
-R102	Setting Arg1:E67 Arg2:T266	
-T267	Mention 3693 3697	each
-R103	Coreference-Link Arg1:T267 Arg2:T262	
-R104	Coreference-Link Arg1:T267 Arg2:T264	
-T268	Action 3701 3704	add
-E68	Action:T268 Acts-on:T267
-T269	Amount 3720 3724	2 ml
-T270	Reagent 3728 3733	cells
-T271	Concentration 3737 3749	106 cells/ml
-R105	Measure Arg1:T270 Arg2:T269	
-T272	Modifier 3711 3719	at least
-R106	Mod-Link Arg1:T269 Arg2:T272	
-T273	Action 3751 3754	mix
-E69	Action:T273 Acts-on:T270 Acts-on2:T276
-T274	Modifier 3760 3771	appropriate
-T275	Concentration 3772 3785	concentration
-T276	Reagent 3789 3804	virus particles
-T277	Action 3809 3817	incubate
-E70	Action:T277 
-T278	Time 3822 3835	10-20 minutes
-T279	Action 3839 3854	start detecting
-E71	Action:T279 Measure-Type-Link:T280
-T280	Measure-Type 3855 3864	VT signal
-R107	Measure Arg1:T270 Arg2:T271	
-R108	Measure Arg1:T276 Arg2:T275	
-R109	Mod-Link Arg1:T276 Arg2:T274	
-R110	Setting Arg1:E70 Arg2:T278	
-T281	Action 4339 4342	Mix
-E72	Action:T281 Acts-on:T282 Acts-on2:T283
-T282	Reagent 4347 4357	host cells
-T283	Reagent 4367 4377	SYBR-Blank
-T284	Time 4383 4389	10 min
-T285	Action 4394 4397	mix
-E73	Action:T285 Site:T286
-T286	Location 4402 4406	tube
-T287	Modifier 4407 4413	gently
-R111	Setting Arg1:E72 Arg2:T284	
-R112	Mod-Link Arg1:E73 Arg2:T287	
-T288	Action 4416 4419	Mix
-E74	Action:T288 Acts-on:T289 Acts-on2:T291
-T289	Reagent 4424 4434	host cells
-T290	Modifier 4444 4462	stained and washed
-T291	Reagent 4463 4468	virus
-T292	Modifier 4476 4487	appropriate
-T293	Generic-Measure 4488 4491	VBR
-T294	Action 4496 4503	examine
-E75	Action:T294 
-T295	Modifier 4510 4521	appropriate
-T296	Time 4522 4538	incubation times
-R113	Mod-Link Arg1:T296 Arg2:T295	
-R114	Setting Arg1:E75 Arg2:T296	
-R115	Mod-Link Arg1:T293 Arg2:T292	
-R116	Mod-Link Arg1:T291 Arg2:T290	
-R117	Setting Arg1:E74 Arg2:T293	
-T297	Action 4541 4545	Sort
-E76	Action:T297 Acts-on:T300
-T298	Action 4550 4557	collect
-E77	Action:T298 Acts-on:T300
-T299	Modifier 4562 4574	viral-tagged
-T300	Reagent 4575 4580	cells
-T301	Generic-Measure 4595 4617	increased fluorescence
-R118	Mod-Link Arg1:T300 Arg2:T299	
-R119	Setting Arg1:E77 Arg2:T301	
-R120	Setting Arg1:E76 Arg2:T301	
-T302	Modifier 36 62	uncultivated environmental
-T303	Reagent 63 76	Synechococcus
-T304	Method 83 117	flow cytometry-based viral tagging
-T305	Method 0 30	Obtaining targeted metagenomes
-T306	Reagent 217 230	heavy isotope
-R121	Meronym Arg1:T306 Arg2:T5	
-T307	Action 205 212	provide
-E78	Action:T307 Acts-on:T306 Using:T5
-T308	Modifier 316 326	before use
-R122	Mod-Link Arg1:E3 Arg2:T308	
-T309	Modifier 734 739	final
-R123	Mod-Link Arg1:T39 Arg2:T309	
-T310	Speed 949 960	184,678.5 g
-R124	Coreference-Link Arg1:T310 Arg2:T56	
-T311	Modifier 1081 1085	each
-R125	Mod-Link Arg1:T63 Arg2:T311	
-T312	Action 1156 1163	perform
-E79	Action:T312 
-T313	Modifier 1164 1176	in duplicate
-R126	Mod-Link Arg1:E79 Arg2:T313	
-T314	Numerical 1399 1403	100x
-R127	Setting Arg1:E22 Arg2:T314	
-T315	Modifier 1569 1573	only
-R128	Mod-Link Arg1:T103 Arg2:T315	
-T316	Modifier 1611 1623	before using
-T317	Action 1627 1632	stain
-E80	Action:T317 Acts-on:T318
-T318	Reagent 1633 1640	viruses
-R129	Mod-Link Arg1:E27 Arg2:T316	
-T319	Modifier 1643 1671	If using CsCl-purified virus
-R130	Mod-Link Arg1:E28 Arg2:T319	
-T320	Modifier 1783 1788	final
-R131	Mod-Link Arg1:T118 Arg2:T320	
-T321	Modifier 1847 1871	equal to or greater than
-T322	Numerical 1872 1876	E+09
-R132	Mod-Link Arg1:T322 Arg2:T321	
-R133	Measure Arg1:T120 Arg2:T322	
-T323	Modifier 1888 1905	less concentrated
-T324	Numerical 1919 1924	<E+09
-R134	Mod-Link Arg1:T122 Arg2:T323	
-R135	Measure Arg1:T122 Arg2:T324	
-T325	Modifier 2187 2190	not
-T326	Device 2191 2201	heat block
-R136	Mod-Link Arg1:T326 Arg2:T325	
-T327	Modifier 2220 2225	every
-R137	Mod-Link Arg1:T147 Arg2:T327	
-T328	Reagent 2396 2399	BSA
-T329	Concentration 2410 2418	10 mg/ml
-R138	Measure Arg1:T328 Arg2:T329	
-R139	Meronym Arg1:T328 Arg2:T161	
-T330	Reagent 2450 2453	PBS
-R140	Meronym Arg1:T330 Arg2:T162	
-T331	Modifier 2675 2691	until almost dry
-R141	Mod-Link Arg1:E48 Arg2:T331	
-T332	Action 3867 3874	Prepare
-E81	Action:T332 Acts-on:T333
-T333	Device 3879 3893	flow cytometer
-T334	Modifier 3894 3901	for use
-T335	Action 3906 3913	trigger
-E82	Action:T335 Acts-on:T333
-T336	Modifier 3914 3930	on forward angle
-T337	Modifier 3934 3946	side scatter
-T338	Action 3947 3954	Examine
-E83	Action:T338 Acts-on:T341
-T339	Size 3959 3965	0.02µm
-T340	Modifier 3966 3974	filtered
-T341	Reagent 3975 3985	MTN buffer
-R142	Mod-Link Arg1:T339 Arg2:T340	
-R143	Mod-Link Arg1:T341 Arg2:T340	
-T342	Action 3990 3993	set
-E84	Action:T342 Measure-Type-Link:T343
-T343	Measure-Type 3994 4002	voltages
-T344	Method 4011 4029	noise is minimized
-R144	Mod-Link Arg1:E82 Arg2:T336	
-R145	Mod-Link Arg1:E82 Arg2:T337	
-R146	Mod-Link Arg1:E81 Arg2:T334	
-T345	Action 4031 4038	Examine
-E85	Action:T345 Acts-on:T346
-T346	Reagent 4043 4053	host cells
-T347	Modifier 4054 4059	alone
-T348	Action 4063 4066	set
-E86	Action:T348 Measure-Type-Link:T349
-T349	Measure-Type 4067 4075	voltages
-T350	Action 4079 4088	determine
-E87	Action:T350 Measure-Type-Link:T352
-T351	Modifier 4089 4095	proper
-T352	Measure-Type 4096 4109	concentration
-T353	Action 4124 4133	determine
-E88	Action:T353 Measure-Type-Link:T357 Acts-on:T354
-T354	Mention 4140 4144	they
-T355	Generic-Measure 4172 4177	520nm
-T356	Measure-Type 4181 4188	scatter
-T357	Measure-Type 4149 4168	located on the plot
-R147	Mod-Link Arg1:E87 Arg2:T351	
-R148	Mod-Link Arg1:T346 Arg2:T347	
-T358	Action 4191 4194	Use
-E89	Action:T358 Acts-on:T359
-T359	Reagent 4195 4244	fluorescent polystyrene FLOW CheckTM microspheres
-T360	Modifier 4246 4251	final
-T361	Concentration 4252 4272	concentration is 1:1
-T362	Reagent 4276 4286	host cells
-R149	Mod-Link Arg1:T361 Arg2:T360	
-R150	Measure Arg1:T359 Arg2:T361	
-T363	Action 4316 4324	counting
-E90	Action:T363 Using:T365
-T364	Action 4329 4336	sorting
-E91	Action:T364 Acts-on:T365
-T365	Device 4294 4311	internal standard
-R151	Meronym Arg1:T359 Arg2:T365	
-T366	Action 4620 4627	Trigger
-E92	Action:T366 
-T367	Modifier 4628 4646	on forward scatter
-T368	Modifier 4650 4654	only
-T369	Action 4655 4661	detect
-E93	Action:T369 Acts-on:T371
-T370	Modifier 4662 4672	cell-sized
-T371	Reagent 4673 4682	particles
-R152	Mod-Link Arg1:T371 Arg2:T370	
-R153	Mod-Link Arg1:E93 Arg2:T368	
-R154	Mod-Link Arg1:E92 Arg2:T367	
-T372	Modifier 4685 4704	Sorted viral-tagged
-T373	Reagent 4705 4710	cells
-T374	Method 4731 4745	DNA extraction
-T375	Method 4750 4760	separation
-T376	Modifier 4764 4783	15N-labeled “heavy”
-T377	Reagent 4784 4792	host DNA
-T378	Modifier 4798 4817	non-labeled “light”
-T379	Reagent 4818 4827	viral DNA
-T380	Method 4831 4863	CsCl density ultracentrifugation
-T381	Method 4870 4917	Cesium Chloride Virus Purification and Dialysis
-R155	Mod-Link Arg1:T373 Arg2:T372	
-R156	Mod-Link Arg1:T377 Arg2:T376	
-R157	Mod-Link Arg1:T379 Arg2:T378	
-T382	Modifier 4922 4927	Light
-T383	Reagent 4928 4931	DNA
-T384	Action 4939 4955	linker amplified
-E94	Action:T384 Acts-on:T383 Using:T386 Using2:T387
-T385	Method 4961 4971	sequencing
-T386	Reagent 4975 4993	454 Roche Titanium
-T387	Reagent 4998 5017	Illumina HiSeq 2000
-R158	Mod-Link Arg1:T383 Arg2:T382	
+T1	Method 0 30	Obtaining targeted metagenomes
+T2	Modifier 36 62	uncultivated environmental
+T3	Reagent 63 76	Synechococcus
+T4	Method 83 117	flow cytometry-based viral tagging
+T5	Action 118 125	Prepare
+T6	Reagent 126 137	SNAX medium
+T7	Method 151 162	directions6
+T8	Concentration 172 175	15N
+T9	Reagent 176 193	ammonium chloride
+T10	Action 205 212	provide
+T11	Reagent 217 230	heavy isotope
+T12	Action 232 236	Grow
+T13	Reagent 237 250	cyanobacteria
+T14	Reagent 258 264	medium
+T15	Reagent 270 288	heavy nitrogen and
+T16	Action 289 300	transfer at
+T17	Modifier 301 308	least 3
+T18	Numerical 309 314	times
+T19	Modifier 315 326	before use.
+T20	Action 327 334	Extract
+T21	Reagent 335 338	DNA
+T22	Reagent 344 377	bacterial grown in heavy nitrogen
+T23	Method 384 400	standard methods
+T24	Action 402 410	Quantify
+T25	Reagent 415 418	DNA
+T26	Reagent 425 444	Quant-iT Pico Green
+T27	Action 467 470	Use
+T28	Modifier 471 479	at least
+T29	Amount 480 485	10 µg
+T30	Reagent 489 492	DNA
+T31	Method 497 528	density gradient centrifugation
+T32	Method 534 565	density gradient centrifugation
+T33	Device 569 598	Beckman VTi 65 vertical rotor
+T34	Action 603 607	used
+T35	Size 613 621	13x48 mm
+T36	Location 622 648	OptiSeal polyallomer tubes
+T37	Amount 650 656	4.9 ml
+T38	Action 668 671	Mix
+T39	Reagent 676 679	DNA
+T40	Reagent 685 694	TE buffer
+T41	Concentration 696 700	10mM
+T42	Reagent 701 705	Tris
+T43	Concentration 707 710	1mM
+T44	Reagent 711 715	EDTA
+T45	pH 717 722	pH7.6
+T46	Modifier 729 741	final volume
+T47	Amount 742 752	of 0.9 ml.
+T48	Action 753 756	Mix
+T49	Reagent 761 764	DNA
+T50	Amount 770 773	4ml
+T51	Reagent 777 781	CsCl
+T52	Action 782 790	prepared
+T53	Reagent 794 796	TE
+T54	Measure-Type 802 809	density
+T55	Generic-Measure 813 817	p1.8
+T56	Action 819 827	Dispense
+T57	Amount 828 834	4.9 ml
+T58	Reagent 842 852	DNA sample
+T59	Reagent 856 860	CsCl
+T60	Location 870 883	OptiSeal tube
+T61	Action 888 892	plug
+T62	Seal 902 912	black caps
+T63	Action 914 924	Centrifuge
+T64	Speed 928 938	44,000 rpm
+T65	Speed 940 952	=184,678.5 g
+T66	Device 959 970	Beckman L70
+T67	Device 974 993	L80 ultracentrifuge
+T68	Time 998 1003	48 hr
+T69	Temperature 1007 1011	18°C
+T70	Action 1013 1020	Collect
+T71	Amount 1021 1032	0.2-0.25 ml
+T72	Reagent 1033 1042	fractions
+T73	Action 1047 1054	measure
+T74	Measure-Type 1059 1066	density
+T75	Modifier 1070 1074	each
+T76	Action 1076 1085	Calculate
+T77	Amount 1086 1092	amount
+T78	Reagent 1096 1099	DNA
+T79	Modifier 1103 1107	each
+T80	Reagent 1108 1116	fraction
+T81	Reagent 1123 1142	Quant-iT Pico Green
+T82	Action 1144 1151	perform
+T83	Modifier 1152 1164	in duplicate
+T84	Action 1169 1178	determine
+T85	Measure-Type 1183 1190	density
+T86	Reagent 1198 1207	fractions
+T87	Reagent 1213 1216	DNA
+T88	Action 1218 1226	Estimate
+T89	Measure-Type 1231 1236	ratio
+T90	Reagent 1240 1262	isotopic labeled cells
+T91	Action 1264 1268	Thaw
+T92	Concentration 1269 1276	10,000x
+T93	Reagent 1277 1295	stock of SYBR Gold
+T94	Location 1303 1307	dark
+T95	Action 1312 1318	vortex
+T96	Modifier 1319 1329	vigorously
+T97	Action 1331 1341	Centrifuge
+T98	Time 1346 1352	10 min
+T99	Speed 1356 1364	3000 x g
+T100	Action 1366 1372	Dilute
+T101	Generic-Measure 1373 1378	1:100
+T102	Numerical 1383 1387	100x
+T103	Reagent 1394 1403	TE buffer
+T104	Action 1413 1419	filter
+T105	Amount 1428 1434	0.02µm
+T106	Device 1435 1441	filter
+T107	Action 1443 1450	Aliquot
+T108	Amount 1456 1467	50 or 100µl
+T109	Action 1480 1485	store
+T110	Modifier 1486 1492	frozen
+T111	Temperature 1496 1501	-20°C
+T112	Action 1503 1507	Thaw
+T113	Modifier 1508 1516	prepared
+T114	Concentration 1517 1521	100X
+T115	Reagent 1522 1531	SYBR Gold
+T116	Location 1536 1540	dark
+T117	Numerical 1542 1545	one
+T118	Modifier 1551 1555	only
+T119	Action 1557 1563	Vortex
+T120	Modifier 1564 1570	thawed
+T121	Reagent 1571 1580	SYBR Gold
+T122	Modifier 1581 1604	vigorously before using
+T123	Action 1608 1613	stain
+T124	Reagent 1614 1621	viruses
+T125	Modifier 1623 1651	If using CsCl-purified virus
+T126	Action 1653 1660	dialyze
+T127	Modifier 1664 1672	modified
+T128	Reagent 1673 1683	MTN buffer
+T129	Action 1685 1690	Stain
+T130	Reagent 1695 1702	viruses
+T131	Action 1706 1712	adding
+T132	Modifier 1713 1721	prepared
+T133	Reagent 1722 1731	SYBR Gold
+T134	Reagent 1739 1755	viral suspension
+T135	Modifier 1761 1766	final
+T136	Concentration 1767 1792	concentration of 5 to 10x
+T137	Modifier 1799 1811	concentrated
+T138	Reagent 1812 1823	viral stock
+T139	Modifier 1825 1849	equal to or greater than
+T140	Numerical 1850 1854	E+09
+T141	Concentration 1859 1861	1x
+T142	Modifier 1866 1883	less concentrated
+T143	Reagent 1884 1895	viral stock
+T144	Numerical 1897 1903	< E+09
+T145	Action 1906 1913	Prepare
+T146	Reagent 1916 1935	blank without virus
+T147	Action 1939 1945	assess
+T148	Modifier 1946 1954	how well
+T149	Modifier 1959 1965	excess
+T150	Reagent 1966 1975	SYBR Gold
+T151	Method 1979 1990	washed away
+T152	Action 1992 1998	Vortex
+T153	Reagent 2003 2009	sample
+T154	Time 2014 2020	10 sec
+T155	Generic-Measure 2024 2028	high
+T156	Action 2032 2035	mix
+T157	Reagent 2040 2043	dye
+T158	Reagent 2048 2055	viruses
+T159	Action 2057 2065	Incubate
+T160	Time 2066 2072	10 min
+T161	Location 2080 2084	dark
+T162	Temperature 2088 2104	room temperature
+T163	Action 2106 2110	Heat
+T164	Temperature 2114 2118	46°C
+T165	Time 2123 2133	15 minutes
+T166	Device 2141 2159	hybridization oven
+T167	Modifier 2161 2164	not
+T168	Device 2165 2175	heat block
+T169	Action 2178 2187	inverting
+T170	Location 2188 2193	tubes
+T171	Modifier 2194 2199	every
+T172	Time 2200 2209	5 minutes
+T173	Seal 2217 2221	foil
+T174	Action 2225 2229	keep
+T175	Reagent 2234 2240	sample
+T176	Location 2248 2252	dark
+T177	Action 2254 2263	Cool down
+T178	Reagent 2268 2274	sample
+T179	Location 2282 2286	dark
+T180	Temperature 2290 2306	room temperature
+T181	Time 2311 2317	10 min
+T182	Action 2319 2326	Prepare
+T183	Amount 2327 2333	0.02µm
+T184	Modifier 2334 2342	filtered
+T185	Concentration 2343 2346	1 %
+T186	Reagent 2347 2367	bovine serum albumin
+T187	Reagent 2369 2372	BSA
+T188	Concentration 2384 2392	10 mg/ml
+T189	Reagent 2397 2422	phosphate buffered saline
+T190	Reagent 2424 2427	PBS
+T191	Action 2430 2434	Wash
+T192	Modifier 2435 2442	Nanosep
+T193	Location 2443 2452	10k tubes
+T194	Action 2456 2462	adding
+T195	Amount 2463 2468	500µl
+T196	Reagent 2469 2479	MTN buffer
+T197	Action 2485 2490	stand
+T198	Time 2491 2497	10 min
+T199	Action 2499 2503	Spin
+T200	Modifier 2510 2516	almost
+T201	Speed 2522 2531	5,000 x g
+T202	Time 2533 2539	10 min
+T203	Action 2542 2549	Discard
+T204	Reagent 2554 2566	flow-through
+T205	Action 2568 2571	Add
+T206	Amount 2572 2577	500µl
+T207	Modifier 2578 2593	0.02µm filtered
+T208	Concentration 2594 2597	1 %
+T209	Reagent 2598 2601	BSA
+T210	Action 2603 2612	let stand
+T211	Time 2613 2616	1hr
+T212	Temperature 2620 2636	room temperature
+T213	Action 2638 2642	Spin
+T214	Modifier 2643 2659	until almost dry
+T215	Speed 2661 2670	5,000 x g
+T216	Time 2672 2681	15-30 min
+T217	Action 2684 2691	Discard
+T218	Reagent 2696 2708	flow-through
+T219	Action 2710 2714	Wash
+T220	Amount 2720 2725	500µl
+T221	Modifier 2726 2741	0.02µm filtered
+T222	Reagent 2742 2752	MTN buffer
+T223	Action 2754 2765	Concentrate
+T224	Amount 2770 2775	500µl
+T225	Modifier 2776 2794	stained and cooled
+T226	Reagent 2795 2813	virus preparations
+T227	Reagent 2822 2832	SYBR-Blank
+T228	Modifier 2840 2851	pre-treated
+T229	Device 2852 2867	Nanosep devices
+T230	Speed 2874 2883	3,000 x g
+T231	Time 2888 2897	15-30 min
+T232	Temperature 2902 2906	10°C
+T233	Amount 2917 2923	< 50µl
+T234	Action 2932 2936	Wash
+T235	Amount 2941 2955	reduced volume
+T236	Modifier 2959 2966	stained
+T237	Reagent 2967 2972	virus
+T238	Reagent 2976 2986	SYBR-Blank
+T239	Amount 2992 2997	500µl
+T240	Modifier 2998 3013	0.02µm filtered
+T241	Reagent 3014 3024	MTN buffer
+T242	Action 3026 3037	Repeat spin
+T243	Method 3044 3053	step # 36
+T244	Action 3055 3061	Repeat
+T245	Method 3062 3071	# 37 & 38
+T246	Numerical 3087 3088	6
+T247	Action 3089 3095	washes
+T248	Action 3110 3122	bring volume
+T249	Amount 3126 3132	< 50µl
+T250	Modifier 3133 3142	each time
+T251	Action 3144 3152	Transfer
+T252	Amount 3157 3161	50µl
+T253	Modifier 3165 3171	washed
+T254	Reagent 3172 3179	viruses
+T255	Reagent 3184 3194	SYBR-Blank
+T256	Device 3204 3211	Nanosep
+T257	Modifier 3217 3222	fresh
+T258	Location 3223 3239	collection tubes
+T259	Action 3241 3245	Keep
+T260	Location 3250 3266	collection tubes
+T261	Location 3270 3273	ice
+T262	Action 3275 3278	Add
+T263	Amount 3279 3283	50µl
+T264	Modifier 3284 3299	0.02µm filtered
+T265	Reagent 3300 3306	buffer
+T266	Modifier 3310 3314	each
+T267	Device 3315 3322	Nanosep
+T268	Action 3327 3335	sonicate
+T269	Time 3340 3345	3 min
+T270	Generic-Measure 3368 3371	50W
+T271	Generic-Measure 3375 3381	42 kHz
+T272	Action 3383 3388	Pipet
+T273	Method 3389 3400	up and down
+T274	Device 3408 3414	filter
+T275	Modifier 3415 3424	carefully
+T276	Modifier 3431 3437	not to
+T277	Action 3438 3446	puncture
+T278	Reagent 3451 3459	membrane
+T279	Action 3464 3467	add
+T280	Modifier 3475 3494	appropriate stained
+T281	Reagent 3495 3500	virus
+T282	Location 3504 3515	blank tubes
+T283	Action 3520 3529	transport
+T284	Location 3534 3550	collection tubes
+T285	Modifier 3554 3560	washed
+T286	Reagent 3561 3568	viruses
+T287	Location 3572 3575	ice
+T288	Action 3577 3582	Count
+T289	Reagent 3587 3597	host cells
+T290	Modifier 3606 3618	SYBR-stained
+T291	Reagent 3619 3626	viruses
+T292	Action 3630 3639	determine
+T293	Amount 3644 3650	amount
+T294	Mention 3654 3658	each
+T295	Action 3662 3665	add
+T296	Modifier 3671 3679	at least
+T297	Amount 3680 3684	2 ml
+T298	Reagent 3688 3693	cells
+T299	Concentration 3697 3709	106 cells/ml
+T300	Action 3711 3714	mix
+T301	Modifier 3720 3731	appropriate
+T302	Concentration 3732 3745	concentration
+T303	Reagent 3749 3764	virus particles
+T304	Action 3769 3777	incubate
+T305	Time 3782 3795	10-20 minutes
+T306	Action 3799 3814	start detecting
+T307	Measure-Type 3815 3824	VT signal
+T308	Action 3826 3833	Prepare
+T309	Device 3838 3852	flow cytometer
+T310	Modifier 3853 3860	for use
+T311	Action 3865 3872	trigger
+T312	Modifier 3873 3889	on forward angle
+T313	Modifier 3893 3905	side scatter
+T314	Action 3906 3913	Examine
+T315	Size 3918 3924	0.02µm
+T316	Modifier 3925 3933	filtered
+T317	Reagent 3934 3944	MTN buffer
+T318	Action 3949 3952	set
+T319	Measure-Type 3953 3961	voltages
+T320	Method 3970 3988	noise is minimized
+T321	Action 3990 3997	Examine
+T322	Reagent 4002 4012	host cells
+T323	Modifier 4013 4018	alone
+T324	Action 4022 4025	set
+T325	Measure-Type 4026 4034	voltages
+T326	Action 4038 4047	determine
+T327	Modifier 4048 4054	proper
+T328	Measure-Type 4055 4068	concentration
+T329	Action 4083 4092	determine
+T330	Mention 4099 4103	they
+T331	Measure-Type 4108 4127	located on the plot
+T332	Generic-Measure 4131 4136	520nm
+T333	Measure-Type 4140 4147	scatter
+T334	Action 4149 4152	Use
+T335	Reagent 4153 4202	fluorescent polystyrene FLOW CheckTM microspheres
+T336	Modifier 4204 4209	final
+T337	Concentration 4210 4230	concentration is 1:1
+T338	Reagent 4234 4244	host cells
+T339	Device 4252 4269	internal standard
+T340	Action 4274 4282	counting
+T341	Action 4287 4294	sorting
+T342	Action 4296 4299	Mix
+T343	Reagent 4304 4314	host cells
+T344	Reagent 4324 4334	SYBR-Blank
+T345	Time 4340 4346	10 min
+T346	Action 4351 4354	mix
+T347	Location 4359 4363	tube
+T348	Modifier 4364 4370	gently
+T349	Action 4372 4375	Mix
+T350	Reagent 4380 4390	host cells
+T351	Modifier 4400 4418	stained and washed
+T352	Reagent 4419 4424	virus
+T353	Modifier 4432 4443	appropriate
+T354	Generic-Measure 4444 4447	VBR
+T355	Action 4452 4459	examine
+T356	Modifier 4466 4477	appropriate
+T357	Time 4478 4494	incubation times
+T358	Action 4496 4500	Sort
+T359	Action 4505 4512	collect
+T360	Modifier 4517 4529	viral-tagged
+T361	Reagent 4530 4535	cells
+T362	Generic-Measure 4550 4572	increased fluorescence
+T363	Action 4574 4581	Trigger
+T364	Modifier 4582 4600	on forward scatter
+T365	Modifier 4604 4608	only
+T366	Action 4609 4615	detect
+T367	Modifier 4616 4626	cell-sized
+T368	Reagent 4627 4636	particles
+T369	Modifier 4638 4657	Sorted viral-tagged
+T370	Reagent 4658 4663	cells
+T371	Method 4684 4698	DNA extraction
+T372	Method 4703 4713	separation
+T373	Modifier 4717 4738	15N-labeled “ heavy ”
+T374	Reagent 4739 4747	host DNA
+T375	Modifier 4753 4774	non-labeled “ light ”
+T376	Reagent 4775 4784	viral DNA
+T377	Method 4788 4820	CsCl density ultracentrifugation
+T378	Method 4826 4876	`` Cesium Chloride Virus Purification and Dialysis
+T379	Modifier 4880 4881	.
+T380	Modifier 4882 4887	Light
+T381	Reagent 4888 4891	DNA
+T382	Action 4899 4916	linker amplified8
+T383	Method 4921 4931	sequencing
+T384	Reagent 4935 4953	454 Roche Titanium
+T385	Reagent 4958 4977	Illumina HiSeq 2000

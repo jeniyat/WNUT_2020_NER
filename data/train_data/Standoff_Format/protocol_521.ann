@@ -1,384 +1,228 @@
-T1	Action 35 42	Prepare
-E1	Action:T1 Product:T42
-T2	Action 225 231	Vortex
-E2	Action:T2 
-T3	Action 342 348	Dilute
-E3	Action:T3 Acts-on:T53 Using:T55
-T4	Action 502 511	Calculate
-E4	Action:T4 Acts-on:T66
-T5	Action 558 565	prepare
-E5	Action:T5 Product:T67
-T6	Action 717 724	Prepare
-E6	Action:T6 Product:T73
-T7	Action 738 744	dilute
-E7	Action:T7 Acts-on:T75 Using:T76
-T8	Action 806 812	Dilute
-E8	Action:T8 Acts-on:T77 Using:T81
-T9	Action 901 908	Prepare
-E9	Action:T9 Site:T83
-T10	Action 924 930	Dilute
-E10	Action:T10 Acts-on:T84
-T11	Action 1122 1125	Add
-E11	Action:T11 Acts-on:T98 Site:T99
-T12	Action 1171 1175	Seal
-E12	Action:T12 Acts-on:T100
-T13	Action 1189 1197	incubate
-E13	Action:T13 
-T14	Action 1251 1258	Discard
-E14	Action:T14 Acts-on:T103
-T15	Action 1284 1288	wash
-E15	Action:T15 Acts-on:T104 Using:T107 Site:T108
-T17	Action 1534 1537	add
-E17	Action:T17 Acts-on:T115 Site:T116
-T18	Action 1580 1584	Seal
-E18	Action:T18 Acts-on:T117
-T19	Action 1599 1607	incubate
-E19	Action:T19 Acts-on:T117
-T20	Action 1654 1661	Prepare
-E20	Action:T20 Count:T120 Using:T122 Product:T121 Using2:T124 Acts-on:T208
-T21	Action 1739 1746	Prepare
-E21	Action:T21 Product:T125
-T22	Action 1770 1774	keep
-E22	Action:T22 Acts-on:T127
-T23	Action 1869 1875	dilute
-E23	Action:T23 Acts-on:T131 Using:T129 Using2:T214
-T24	Action 2083 2086	Mix
-E24	Action:T24 
-T25	Action 2099 2106	Discard
-E25	Action:T25 Acts-on:T134 Site:T135
-T26	Action 2146 2150	blot
-E26	Action:T26 Acts-on:T136
-T27	Action 2172 2179	Pipette
-E27	Action:T27 Acts-on:T139 Acts-on2:T140 Site:T142 Using:T219
-T28	Action 2394 2398	Seal
-E28	Action:T28 Acts-on:T143
-T29	Action 2414 2422	incubate
-E29	Action:T29 
-T30	Action 2443 2450	Discard
-E30	Action:T30 Acts-on:T146 Site:T147
-T31	Action 2481 2485	wash
-E31	Action:T31 Count:T148 Acts-on:T150 Site:T151
-T32	Action 2530 2533	Add
-E32	Action:T32 Acts-on:T153
-T33	Action 2576 2580	Seal
-E33	Action:T33 Acts-on:T154
-T34	Action 2596 2604	incubate
-E34	Action:T34 
-T35	Action 2625 2632	Discard
-E35	Action:T35 Acts-on:T157 Site:T158
-T36	Action 2663 2667	wash
-E36	Action:T36 Count:T159 Using:T161 Site:T162
-T37	Action 2712 2715	Add
-E37	Action:T37 Acts-on:T164
-T38	Action 2745 2753	Incubate
-E38	Action:T38 Using:T167 Site:T168
-T39	Action 2844 2847	Add
-E39	Action:T39 Acts-on:T171 Site:T172
-T40	Action 2887 2891	read
-E40	Action:T40 Using:T175
-T42	Reagent 47 65	substrate solution
-T43	Amount 103 110	10.34ml
-T44	Reagent 111 119	DI water
-T45	Amount 119 124	1.2ml
-T46	Reagent 128 144	Substrate Buffer
-T47	Concentration 145 148	10X
-T48	Amount 160 165	240μl
-T49	Reagent 169 188	ABTS stock solution
-T50	Amount 188 193	120μl
-T51	Reagent 197 223	Hydrogen peroxide solution
-R1	Measure Arg1:T51 Arg2:T50	
-R2	Measure Arg1:T49 Arg2:T48	
-R3	Measure Arg1:T46 Arg2:T45	
-R4	Measure Arg1:T49 Arg2:T47	
-R5	Measure Arg1:T44 Arg2:T43	
-T52	Concentration 353 355	5X
-T53	Reagent 356 370	Coating Buffer
-T54	Concentration 374 376	1X
-R10	Measure Arg1:T53 Arg2:T52	
-R11	Setting Arg1:E3 Arg2:T54	
-T55	Reagent 382 390	DI water
-T56	Action 391 398	Prepare
-E42	Action:T56 Site:T58 Product:T57
-T57	Reagent 399 420	Streptavidin solution
-T58	Location 433 438	plate
-T59	Reagent 449 470	Streptavidin solution
-T60	Amount 441 445	24μl
-R12	Measure Arg1:T59 Arg2:T60	
-T61	Amount 472 481	11.976 ml
-T62	Concentration 482 484	1X
-T63	Reagent 485 499	Coating Buffer
-R13	Measure Arg1:T63 Arg2:T62	
-R14	Measure Arg1:T63 Arg2:T61	
-T64	Generic-Measure 516 522	amount
-T65	Concentration 526 528	1X
-T66	Reagent 529 544	Dilution Buffer
-R17	Measure Arg1:T66 Arg2:T65	
-R18	Setting Arg1:E4 Arg2:T64	
-T67	Reagent 570 578	solution
-T68	Concentration 595 598	10X
-T69	Reagent 599 618	concentrated buffer
-R19	Measure Arg1:T69 Arg2:T68	
-T70	Action 582 590	diluting
-E43	Action:T70 Count:T71 Acts-on:T69 Using:T72
-T71	Numerical 619 627	10 times
-T72	Reagent 631 639	DI water
-T73	Reagent 725 736	Wash Buffer
-T74	Concentration 749 752	20X
-T75	Reagent 753 764	wash buffer
-R20	Measure Arg1:T75 Arg2:T74	
-T76	Reagent 770 778	DI water
-T77	Reagent 826 849	HRP-conjugated antibody
-T78	Generic-Measure 813 825	concentrated
-R21	Measure Arg1:T77 Arg2:T78	
-T79	Concentration 853 861	0.3μg/ml
-R22	Setting Arg1:E8 Arg2:T79	
-T80	Concentration 865 867	1X
-T81	Reagent 868 883	Dilution Buffer
-R23	Measure Arg1:T81 Arg2:T80	
-T82	Amount 908 912	12ml
-T83	Location 917 922	plate
-T84	Reagent 935 965	Flex-T™ ELISA Positive Control
-T85	Concentration 979 984	2.7μM
-T86	Reagent 985 993	solution
-R24	Measure Arg1:T86 Arg2:T85	
-R25	Setting Arg1:E10 Arg2:T85	
-T87	Amount 996 999	5μl
-T88	Reagent 1003 1033	Flex-T™ ELISA Positive Control
-T89	Concentration 1037 1045	0.2mg/ml
-R26	Measure Arg1:T88 Arg2:T87	
-R27	Measure Arg1:T88 Arg2:T89	
-T90	Amount 1047 1052	2.9μl
-T91	Concentration 1056 1058	1X
-T92	Reagent 1059 1074	Dilution Buffer
-R29	Measure Arg1:T92 Arg2:T91	
-R30	Measure Arg1:T92 Arg2:T90	
-T93	Action 1075 1079	Coat
-E44	Action:T93 Acts-on:T94 Using:T96
-T94	Location 1084 1089	wells
-T95	Location 1097 1102	plate
-T96	Reagent 1108 1120	Streptavidin
-R32	Meronym Arg1:T94 Arg2:T95	
-T97	Amount 1126 1131	100μl
-T98	Reagent 1135 1156	Streptavidin solution
-T99	Location 1164 1169	wells
-R33	Measure Arg1:T98 Arg2:T97	
-T100	Location 1179 1184	plate
-T101	Time 1198 1207	overnight
-R34	Setting Arg1:E13 Arg2:T101	
-T102	Temperature 1223 1239	room temperature
-R35	Setting Arg1:E13 Arg2:T102	
-T103	Reagent 1263 1279	coating solution
-T104	Location 1293 1298	plate
-T105	Numerical 1299 1306	3 times
-R36	Setting Arg1:E15 Arg2:T105	
-T106	Amount 1321 1326	300μl
-T107	Reagent 1327 1338	Wash Buffer
-R37	Measure Arg1:T107 Arg2:T106	
-T108	Location 1343 1347	well
-T16	Action 1383 1390	tapping
-E16	Action:T16 Acts-on:T111 Using:T112 Site:T113
-T110	Modifier 1376 1382	firmly
-R38	Mod-Link Arg1:E16 Arg2:T110	
-T111	Location 1391 1396	plate
-T112	Method 1397 1408	upside down
-T113	Reagent 1412 1427	absorbent paper
-T109	Amount 1538 1543	300μl
-T114	Concentration 1547 1549	1X
-T115	Reagent 1550 1565	Dilution Buffer
-T116	Location 1573 1578	wells
-R39	Measure Arg1:T115 Arg2:T114	
-R40	Measure Arg1:T115 Arg2:T109	
-T117	Location 1589 1594	plate
-T118	Time 1612 1622	30 minutes
-T119	Temperature 1626 1642	room temperature
-R41	Setting Arg1:E19 Arg2:T118	
-R42	Setting Arg1:E19 Arg2:T119	
-T120	Numerical 1662 1667	three
-T121	Reagent 1685 1696	HLA control
-T122	Method 1700 1715	serial dilution
-T123	Concentration 1719 1721	1X
-T124	Reagent 1722 1737	Dilution Buffer
-R43	Measure Arg1:T124 Arg2:T123	
-T125	Reagent 1751 1759	controls
-T126	Temperature 1783 1794	melting ice
-R44	Setting Arg1:E22 Arg2:T126	
-T127	Mention 1775 1779	them
-R45	Coreference-Link Arg1:T127 Arg2:T125	
-T128	Concentration 1937 1939	1X
-T129	Reagent 1940 1955	Dilution Buffer
-T130	Generic-Measure 1878 1891	small aliquot
-T131	Reagent 1899 1924	exchange reaction mixture
-T132	Numerical 1925 1933	300-fold
-R46	Setting Arg1:E23 Arg2:T132	
-R47	Measure Arg1:T131 Arg2:T130	
-R48	Measure Arg1:T129 Arg2:T128	
-T133	Modifier 2087 2097	thoroughly
-R49	Mod-Link Arg1:E24 Arg2:T133	
-T134	Reagent 2111 2126	Dilution Buffer
-T135	Location 2136 2141	plate
-T136	Reagent 2155 2170	residual buffer
-T137	Amount 2180 2185	100μl
-T138	Concentration 2189 2191	1X
-T139	Reagent 2192 2207	Dilution Buffer
-R50	Measure Arg1:T139 Arg2:T138	
-R51	Measure Arg1:T139 Arg2:T137	
-T140	Reagent 2217 2239	diluted ELISA controls
-T141	Reagent 2287 2322	exchange reaction mixture dilutions
-R52	Or Arg1:T140 Arg2:T141	
-T142	Location 2345 2350	wells
-T143	Location 2403 2409	plates
-T144	Time 2427 2433	1 hour
-T145	Temperature 2437 2441	37°C
-R53	Setting Arg1:E29 Arg2:T144	
-R54	Setting Arg1:E29 Arg2:T145	
-T146	Reagent 2455 2461	liquid
-T147	Location 2471 2476	wells
-T148	Numerical 2486 2493	3 times
-T149	Amount 2499 2504	300μl
-T150	Reagent 2508 2519	wash buffer
-T151	Location 2524 2528	well
-R55	Measure Arg1:T150 Arg2:T149	
-T152	Amount 2534 2539	100μl
-T153	Reagent 2543 2574	diluted HRP-conjugated antibody
-R56	Measure Arg1:T153 Arg2:T152	
-T154	Location 2585 2591	plates
-T155	Time 2609 2615	1 hour
-T156	Temperature 2619 2623	37°C
-R57	Setting Arg1:E34 Arg2:T155	
-R58	Setting Arg1:E34 Arg2:T156	
-T157	Reagent 2637 2643	liquid
-T158	Location 2653 2658	wells
-T159	Numerical 2668 2675	3 times
-T160	Amount 2681 2686	300μl
-T161	Reagent 2690 2701	wash buffer
-T162	Location 2706 2710	well
-R59	Measure Arg1:T161 Arg2:T160	
-T163	Amount 2716 2721	100μl
-T164	Reagent 2725 2743	substrate solution
-R60	Measure Arg1:T164 Arg2:T163	
-T165	Time 2758 2767	8 minutes
-T166	Temperature 2771 2787	room temperature
-T167	Method 2805 2809	dark
-T168	Device 2815 2827	plate shaker
-T169	Speed 2831 2842	400-500 rpm
-T170	Amount 2848 2852	50μl
-T171	Reagent 2856 2869	Stop Solution
-R63	Measure Arg1:T171 Arg2:T170	
-T172	Location 2877 2882	wells
-T173	Numerical 2895 2898	414
-T174	Measure-Type 2898 2900	nm
-R65	Of-Type Arg1:T173 Arg2:T174	
-T175	Device 2907 2919	ELISA reader
-R66	Setting Arg1:E40 Arg2:T173	
-R61	Setting Arg1:E38 Arg2:T165	
-R62	Setting Arg1:E38 Arg2:T166	
-R64	Setting Arg1:E38 Arg2:T169	
-T41	Modifier 66 79	approximately
-T176	Time 80 101	10 minutes before use
-R6	Mod-Link Arg1:T176 Arg2:T41	
-R7	Setting Arg1:E1 Arg2:T176	
-T177	Method 0 34	Flex-T™ HLA Class I ELISA Protocol
-T178	Action 235 238	mix
-E41	Action:T178 
-T179	Modifier 239 243	well
-R8	Mod-Link Arg1:E41 Arg2:T179	
-T180	Measure-Type 149 160	concentrate
-T181	Reagent 249 267	substrate solution
-T182	Temperature 281 297	room temperature
-T183	Temperature 299 307	18-25°C)
-T184	Modifier 308 340	for optimal reproducible results
-R9	Mod-Link Arg1:T181 Arg2:T184	
-R67	Coreference-Link Arg1:T183 Arg2:T182	
-T185	Action 424 428	coat
-E45	Action:T185 Acts-on:T58
-T186	Modifier 545 553	required
-R15	Mod-Link Arg1:T64 Arg2:T186	
-T187	Modifier 640 650	before use
-R16	Mod-Link Arg1:E43 Arg2:T187	
-T188	Modifier 780 788	at least
-T189	Amount 789 794	300ml
-T190	Modifier 795 798	per
-T191	Location 799 804	plate
-R68	Mod-Link Arg1:T191 Arg2:T190	
-R69	Mod-Link Arg1:T189 Arg2:T188	
-R70	Measure Arg1:T76 Arg2:T189	
-R71	Meronym Arg1:T76 Arg2:T191	
-T192	Modifier 884 899	just before use
-R72	Mod-Link Arg1:E8 Arg2:T192	
-T193	Action 969 976	prepare
-E46	Action:T193 Acts-on:T86
-T194	Temperature 1241 1248	18-25°C
-R73	Coreference-Link Arg1:T194 Arg2:T102	
-T195	Action 1352 1356	blot
-E47	Action:T195 Acts-on:T196
-T196	Reagent 1357 1372	residual buffer
-T197	Modifier 1429 1432	All
-T198	Modifier 1433 1443	subsequent
-T199	Method 1444 1450	washes
-T200	Action 1460 1469	performed
-E48	Action:T200 Using:T199
-T201	Modifier 1470 1479	similarly
-R74	Mod-Link Arg1:E48 Arg2:T198	
-R75	Mod-Link Arg1:E48 Arg2:T201	
-T202	Action 1484 1489	block
-E49	Action:T202 Using:T203
-T203	Method 1490 1510	non-specific binding
-T204	Action 1515 1521	reduce
-E50	Action:T204 
-T205	Modifier 1522 1532	background
-R76	Mod-Link Arg1:E50 Arg2:T205	
-T206	Modifier 1569 1572	all
-R77	Mod-Link Arg1:T116 Arg2:T206	
-T207	Temperature 1644 1651	18-25°C
-R78	Coreference-Link Arg1:T207 Arg2:T119	
-T208	Reagent 1668 1677	dilutions
-T209	Modifier 1795 1806	until usage
-T210	Modifier 1760 1765	fresh
-R79	Mod-Link Arg1:T125 Arg2:T210	
-R80	Mod-Link Arg1:E21 Arg2:T209	
-T211	Action 1811 1819	evaluate
-E51	Action:T211 Using:T213
-T212	Modifier 1824 1831	outcome
-T213	Method 1835 1867	UV-mediated HLA peptide exchange
-R81	Mod-Link Arg1:E51 Arg2:T212	
-T214	Method 1970 2080	peptide exchange step in Protocol for fluorescent Flex-T™ generation and antigen specific CD8+ T cell staining
-T215	Modifier 2250 2258	positive
-T216	Modifier 2209 2214	blank
-R82	Mod-Link Arg1:T139 Arg2:T216	
-R83	Mod-Link Arg1:T140 Arg2:T215	
-T217	Modifier 2333 2344	appropriate
-R84	Mod-Link Arg1:T142 Arg2:T217	
-T218	Modifier 2352 2376	recommended in duplicate
-T219	Method 2378 2391	see plate map
-R85	Mod-Link Arg1:E27 Arg2:T218	
-T220	Temperature 2789 2796	18-25°C
-R86	Coreference-Link Arg1:T166 Arg2:T220	
-T221	Modifier 2920 2926	within
-T222	Time 2927 2937	30 minutes
-R87	Mod-Link Arg1:T222 Arg2:T221	
-R88	Setting Arg1:E40 Arg2:T222	
-T224	Numerical 656 658	1X
-T225	Reagent 659 674	Dilution Buffer
-T226	Action 682 688	stored
-E52	Action:T226 Acts-on:T225
-T227	Modifier 693 698	up to
-T228	Time 699 706	oneweek
-T229	Temperature 710 715	2-8°C
-R89	Measure Arg1:T225 Arg2:T224	
-R90	Setting Arg1:E52 Arg2:T228	
-R91	Mod-Link Arg1:T228 Arg2:T227	
-R92	Setting Arg1:E52 Arg2:T229	
-T230	Time 1209 1218	16-18 hrs
-R28	Coreference-Link Arg1:T101 Arg2:T230	
-T231	Modifier 1312 1320	at least
-R31	Mod-Link Arg1:T106 Arg2:T231	
-T232	Modifier 2241 2243	H,
-T233	Modifier 2244 2245	M
-T234	Modifier 2247 2248	L
-T235	Modifier 2260 2268	negative
-T236	Modifier 2274 2281	UV only
-R93	Mod-Link Arg1:T140 Arg2:T232	
-R94	Mod-Link Arg1:T140 Arg2:T233	
-R95	Mod-Link Arg1:T140 Arg2:T234	
-R96	Mod-Link Arg1:T140 Arg2:T235	
-R97	Mod-Link Arg1:T140 Arg2:T236	
+T1	Method 0 34	Flex-T™ HLA Class I ELISA Protocol
+T2	Action 35 42	Prepare
+T3	Reagent 47 65	substrate solution
+T4	Modifier 66 79	approximately
+T5	Time 80 101	10 minutes before use
+T6	Amount 104 111	10.34ml
+T7	Reagent 112 125	DI water1.2ml
+T8	Reagent 129 145	Substrate Buffer
+T9	Concentration 146 149	10X
+T10	Measure-Type 150 166	concentrate240μl
+T11	Reagent 170 194	ABTS stock solution120μl
+T12	Reagent 198 224	Hydrogen peroxide solution
+T13	Action 226 232	Vortex
+T14	Action 236 239	mix
+T15	Modifier 240 244	well
+T16	Reagent 250 268	substrate solution
+T17	Temperature 282 298	room temperature
+T18	Temperature 300 308	18-25°C)
+T19	Modifier 309 341	for optimal reproducible results
+T20	Action 343 349	Dilute
+T21	Concentration 354 356	5X
+T22	Reagent 357 371	Coating Buffer
+T23	Concentration 375 377	1X
+T24	Reagent 383 391	DI water
+T25	Action 392 399	Prepare
+T26	Reagent 400 421	Streptavidin solution
+T27	Action 425 429	coat
+T28	Location 434 439	plate
+T29	Amount 442 447	-24μl
+T30	Reagent 451 472	Streptavidin solution
+T31	Amount 473 483	-11.976 ml
+T32	Concentration 484 486	1X
+T33	Reagent 487 501	Coating Buffer
+T34	Action 503 512	Calculate
+T35	Generic-Measure 517 523	amount
+T36	Concentration 527 529	1X
+T37	Reagent 530 545	Dilution Buffer
+T38	Modifier 546 554	required
+T39	Action 559 566	prepare
+T40	Reagent 571 579	solution
+T41	Action 583 591	diluting
+T42	Concentration 596 599	10X
+T43	Reagent 600 619	concentrated buffer
+T44	Numerical 620 628	10 times
+T45	Reagent 632 640	DI water
+T46	Modifier 641 651	before use
+T47	Numerical 657 659	1X
+T48	Reagent 660 675	Dilution Buffer
+T49	Action 683 689	stored
+T50	Modifier 694 699	up to
+T51	Time 700 707	oneweek
+T52	Temperature 711 716	2-8°C
+T53	Action 718 725	Prepare
+T54	Reagent 726 737	Wash Buffer
+T55	Action 740 746	dilute
+T56	Concentration 751 754	20X
+T57	Reagent 755 766	wash buffer
+T58	Reagent 772 780	DI water
+T59	Modifier 782 790	at least
+T60	Amount 791 796	300ml
+T61	Modifier 797 800	per
+T62	Location 801 806	plate
+T63	Action 808 814	Dilute
+T64	Generic-Measure 815 827	concentrated
+T65	Reagent 828 851	HRP-conjugated antibody
+T66	Concentration 855 863	0.3μg/ml
+T67	Concentration 867 869	1X
+T68	Reagent 870 885	Dilution Buffer
+T69	Modifier 886 901	just before use
+T70	Action 903 914	Prepare12ml
+T71	Location 919 924	plate
+T72	Action 926 932	Dilute
+T73	Reagent 937 967	Flex-T™ ELISA Positive Control
+T74	Action 971 978	prepare
+T75	Concentration 981 986	2.7μM
+T76	Reagent 987 995	solution
+T77	Amount 998 1002	-5μl
+T78	Reagent 1006 1036	Flex-T™ ELISA Positive Control
+T79	Concentration 1040 1048	0.2mg/ml
+T80	Amount 1049 1055	-2.9μl
+T81	Concentration 1059 1061	1X
+T82	Reagent 1062 1077	Dilution Buffer
+T83	Action 1078 1082	Coat
+T84	Location 1087 1092	wells
+T85	Location 1100 1105	plate
+T86	Reagent 1111 1123	Streptavidin
+T87	Action 1125 1128	Add
+T88	Amount 1129 1134	100μl
+T89	Reagent 1138 1159	Streptavidin solution
+T90	Location 1167 1172	wells
+T91	Action 1174 1178	Seal
+T92	Location 1179 1187	theplate
+T93	Action 1192 1200	incubate
+T94	Time 1201 1210	overnight
+T95	Time 1212 1221	16-18 hrs
+T96	Temperature 1226 1242	room temperature
+T97	Temperature 1244 1251	18-25°C
+T98	Action 1254 1261	Discard
+T99	Reagent 1266 1282	coating solution
+T100	Action 1287 1291	wash
+T101	Location 1296 1301	plate
+T102	Numerical 1302 1309	3 times
+T103	Modifier 1315 1323	at least
+T104	Amount 1324 1329	300μl
+T105	Reagent 1330 1341	Wash Buffer
+T106	Location 1346 1350	well
+T107	Action 1355 1359	blot
+T108	Reagent 1360 1375	residual buffer
+T109	Modifier 1379 1385	firmly
+T110	Action 1386 1393	tapping
+T111	Location 1394 1399	plate
+T112	Method 1400 1411	upside down
+T113	Reagent 1415 1430	absorbent paper
+T114	Modifier 1432 1446	All subsequent
+T115	Method 1447 1459	washesshould
+T116	Action 1463 1472	performed
+T117	Modifier 1473 1482	similarly
+T118	Action 1487 1492	block
+T119	Method 1493 1513	non-specific binding
+T120	Action 1518 1524	reduce
+T121	Modifier 1525 1535	background
+T122	Action 1537 1540	add
+T123	Amount 1541 1546	300μl
+T124	Concentration 1550 1552	1X
+T125	Reagent 1553 1568	Dilution Buffer
+T126	Modifier 1572 1575	all
+T127	Location 1576 1581	wells
+T128	Action 1583 1587	Seal
+T129	Location 1592 1597	plate
+T130	Action 1602 1610	incubate
+T131	Time 1615 1625	30 minutes
+T132	Temperature 1629 1645	room temperature
+T133	Temperature 1647 1654	18-25°C
+T134	Action 1657 1664	Prepare
+T135	Numerical 1665 1670	three
+T136	Reagent 1671 1680	dilutions
+T137	Reagent 1688 1699	HLA control
+T138	Method 1703 1718	serial dilution
+T139	Concentration 1722 1724	1X
+T140	Reagent 1725 1740	Dilution Buffer
+T141	Action 1742 1749	Prepare
+T142	Reagent 1754 1762	controls
+T143	Modifier 1763 1768	fresh
+T144	Action 1773 1777	keep
+T145	Mention 1778 1782	them
+T146	Temperature 1786 1797	melting ice
+T147	Modifier 1798 1809	until usage
+T148	Action 1814 1822	evaluate
+T149	Modifier 1827 1834	outcome
+T150	Method 1838 1870	UV-mediated HLA peptide exchange
+T151	Action 1872 1878	dilute
+T152	Generic-Measure 1881 1894	small aliquot
+T153	Reagent 1902 1927	exchange reaction mixture
+T154	Numerical 1928 1936	300-fold
+T155	Concentration 1940 1942	1X
+T156	Reagent 1943 1958	Dilution Buffer
+T157	Method 1973 2083	peptide exchange step in Protocol for fluorescent Flex-T™ generation and antigen specific CD8+ T cell staining
+T158	Action 2086 2089	Mix
+T159	Modifier 2090 2100	thoroughly
+T160	Action 2102 2109	Discard
+T161	Reagent 2114 2129	Dilution Buffer
+T162	Location 2139 2144	plate
+T163	Action 2149 2153	blot
+T164	Reagent 2158 2173	residual buffer
+T165	Action 2175 2182	Pipette
+T166	Amount 2183 2188	100μl
+T167	Concentration 2192 2194	1X
+T168	Reagent 2195 2210	Dilution Buffer
+T169	Modifier 2212 2217	blank
+T170	Reagent 2220 2242	diluted ELISA controls
+T171	Modifier 2244 2248	H, M
+T172	Modifier 2250 2251	L
+T173	Modifier 2253 2261	positive
+T174	Modifier 2263 2271	negative
+T175	Modifier 2277 2284	UV only
+T176	Reagent 2290 2325	exchange reaction mixture dilutions
+T177	Modifier 2336 2347	appropriate
+T178	Location 2348 2353	wells
+T179	Modifier 2355 2379	recommended in duplicate
+T180	Method 2381 2394	see plate map
+T181	Action 2397 2401	Seal
+T182	Location 2406 2412	plates
+T183	Action 2417 2425	incubate
+T184	Time 2430 2436	1 hour
+T185	Temperature 2440 2444	37°C
+T186	Action 2446 2453	Discard
+T187	Reagent 2458 2464	liquid
+T188	Location 2474 2479	wells
+T189	Action 2484 2488	wash
+T190	Numerical 2489 2496	3 times
+T191	Amount 2502 2507	300μl
+T192	Reagent 2511 2522	wash buffer
+T193	Location 2527 2531	well
+T194	Action 2533 2536	Add
+T195	Amount 2537 2542	100μl
+T196	Reagent 2546 2577	diluted HRP-conjugated antibody
+T197	Action 2579 2583	Seal
+T198	Location 2588 2594	plates
+T199	Action 2599 2607	incubate
+T200	Time 2612 2618	1 hour
+T201	Temperature 2622 2626	37°C
+T202	Action 2628 2635	Discard
+T203	Reagent 2640 2646	liquid
+T204	Location 2656 2661	wells
+T205	Action 2666 2670	wash
+T206	Numerical 2671 2678	3 times
+T207	Amount 2684 2689	300μl
+T208	Reagent 2693 2704	wash buffer
+T209	Location 2709 2713	well
+T210	Action 2715 2718	Add
+T211	Amount 2719 2724	100μl
+T212	Reagent 2728 2746	substrate solution
+T213	Action 2748 2756	Incubate
+T214	Time 2761 2770	8 minutes
+T215	Temperature 2774 2790	room temperature
+T216	Temperature 2792 2799	18-25°C
+T217	Method 2808 2812	dark
+T218	Device 2818 2830	plate shaker
+T219	Speed 2834 2845	400-500 rpm
+T220	Action 2847 2850	Add
+T221	Amount 2851 2855	50μl
+T222	Reagent 2859 2872	Stop Solution
+T223	Location 2880 2885	wells
+T224	Action 2890 2894	read
+T225	Numerical 2898 2903	414nm
+T226	Device 2910 2922	ELISA reader
+T227	Modifier 2923 2929	within
+T228	Time 2930 2940	30 minutes

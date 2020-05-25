@@ -1,254 +1,167 @@
-T1	Action 98 105	dissect
-E1	Action:T1 Acts-on:T48
-T3	Action 158 165	keeping
-E3	Action:T3 Acts-on:T50 Site:T51
-T4	Action 193 199	freeze
-E4	Action:T4 Acts-on:T53
-T5	Action 223 228	store
-E5	Action:T5 
-T6	Action 262 265	add
-E6	Action:T6 Acts-on:T59 Site:T58
-T7	Action 384 394	Homogenize
-E7	Action:T7 Acts-on:T63 Using:T64
-T8	Action 473 481	Incubate
-E8	Action:T8 Acts-on:T65
-T9	Action 517 525	sediment
-E9	Action:T9 Acts-on:T68
-T10	Action 603 610	prepare
-E10	Action:T10 Product:T69
-T11	Action 632 637	Place
-E11	Action:T11 Acts-on:T70 Site:T71
-T12	Action 692 697	store
-E12	Action:T12 Acts-on:T71
-T13	Action 721 726	Rinse
-E13	Action:T13 Acts-on:T74 Using:T75
-T14	Action 784 792	transfer
-E14	Action:T14 Using:T76 Acts-on:T77 Site:T78
-T16	Action 887 892	Place
-E16	Action:T16 Acts-on:T15 Site:T79
-T17	Action 924 934	centrifuge
-E17	Action:T17 
-T18	Action 964 970	pellet
-E18	Action:T18 Acts-on:T82
-T19	Action 983 989	Vortex
-E19	Action:T19 Acts-on:T83
-T20	Action 1021 1024	add
-E20	Action:T20 Acts-on:T85
-T21	Action 1045 1048	Add
-E21	Action:T21 Acts-on:T87
-T22	Action 1075 1078	mix
-E22	Action:T22 Using:T89
-T23	Action 1100 1108	Incubate
-E23	Action:T23 Using:T24
-T25	Action 1161 1167	vortex
-E25	Action:T25 
-T26	Action 1198 1208	centrifuge
-E26	Action:T26 Acts-on:T91
-T27	Action 1244 1251	Replace
-E27	Action:T27 Acts-on:T94 Using:T95
-T28	Action 1290 1297	discard
-E28	Action:T28 Acts-on:T96
-T29	Action 1359 1364	Place
-E29	Action:T29 Acts-on:T97 Site:T98
-T30	Action 1428 1438	centrifuge
-E30	Action:T30 
-T31	Action 1512 1518	Remove
-E31	Action:T31 Acts-on:T104 Site:T106 Using:T107
-T32	Action 1630 1637	dialyze
-E32	Action:T32 Acts-on:T110
-T33	Action 1728 1733	swirl
-E33	Action:T33 Acts-on:T114
-T34	Action 1742 1745	mix
-E34	Action:T34 Acts-on:T115
-T35	Action 1820 1832	concentrated
-E35	Action:T35 Acts-on:T116 Site:T117 Using:T118
-T36	Action 1967 1974	prepare
-E36	Action:T36 Product:T120 Using:T121
-T37	Action 2020 2026	invert
-E37	Action:T37 Acts-on:T122 Site:T124
-T38	Action 2146 2156	centrifuge
-E38	Action:T38 Acts-on:T125
-T39	Action 2190 2197	Replace
-E39	Action:T39 Acts-on:T128 Using:T129
-T40	Action 2274 2277	Add
-E40	Action:T40 Acts-on:T131 Site:T132
-T41	Action 2326 2330	rock
-E41	Action:T41 Acts-on:T134
-T42	Action 2334 2337	tap
-E42	Action:T42 
-T43	Action 2350 2358	dislodge
-E43	Action:T43 Acts-on:T135
-T44	Action 2381 2388	discard
-E44	Action:T44 Acts-on:T137
-T45	Action 2409 2415	invert
-E45	Action:T45 Acts-on:T138 Site:T139
-T46	Action 2445 2451	remove
-E46	Action:T46 Acts-on:T141
-T47	Modifier 90 97	rapidly
-T48	Reagent 106 112	tissue
-R1	Mod-Link Arg1:E1 Arg2:T47	
-T49	Modifier 145 156	immediately
-T50	Reagent 166 173	samples
-T51	Location 177 180	ice
-T52	Modifier 184 192	promptly
-R3	Mod-Link Arg1:E4 Arg2:T52	
-T53	Reagent 203 218	liquid nitrogen
-T54	Temperature 232 237	-70°C
-R4	Setting Arg1:E5 Arg2:T54	
-T55	Location 257 260	ice
-T56	Amount 266 272	1-25mg
-T59	Reagent 273 293	ground frozen tissue
-T60	Modifier 297 302	fresh
-T57	Reagent 303 315	diced tissue
-R5	Mod-Link Arg1:T57 Arg2:T60	
-T58	Location 321 341	microcentrifuge tube
-T61	Amount 353 358	500µl
-T62	Reagent 359 382	Nuclei Isolation Buffer
-R6	Measure Arg1:T59 Arg2:T56	
-R7	Or Arg1:T59 Arg2:T57	
-R8	Measure Arg1:T62 Arg2:T61	
-R9	Meronym Arg1:T62 Arg2:T58	
-T63	Reagent 399 405	sample
-T64	Device 413 429	microfuge pestle
-T65	Reagent 486 492	sample
-T66	Temperature 496 499	4°C
-T67	Time 504 513	>1 minute
-T68	Reagent 526 548	large tissue fragments
-R10	Setting Arg1:E8 Arg2:T66	
-R11	Setting Arg1:E8 Arg2:T67	
-T69	Reagent 615 630	Tube-ODIALYZER™
-T70	Seal 642 662	Tube-O-DIALYZER™ cap
-T71	Location 668 674	beaker
-T72	Reagent 678 687	TE buffer
-T73	Temperature 701 704	4°C
-R12	Meronym Arg1:T72 Arg2:T71	
-R13	Setting Arg1:E12 Arg2:T73	
-T74	Location 731 752	Tube-O-DIALYZER™ tube
-T75	Reagent 758 767	TE buffer
-T76	Location 776 783	pipette
-T77	Reagent 797 808	supernatant
-T78	Location 816 832	Tube-O-DIALYZER™
-T15	Seal 904 907	cap
-T79	Location 915 919	tube
-T80	Speed 938 946	16,000xg
-T81	Time 951 960	5 minutes
-T82	Reagent 975 981	nuclei
-R14	Setting Arg1:E17 Arg2:T80	
-R15	Setting Arg1:E17 Arg2:T81	
-T83	Reagent 994 1016	LongLife™ Proteinase K
-T84	Amount 1025 1029	10µl
-T85	Reagent 1037 1043	nuclei
-R16	Measure Arg1:T85 Arg2:T84	
-T86	Amount 1049 1053	70µl
-T87	Reagent 1054 1070	Digestion Buffer
-T89	Method 1084 1098	gentle rocking
-T88	Temperature 1112 1116	55°C
-T90	Time 1121 1130	2-4 hours
-T24	Method 1136 1152	periodic rocking
-R17	Setting Arg1:E23 Arg2:T88	
-R18	Setting Arg1:E23 Arg2:T90	
-T91	Location 1213 1217	tube
-T92	Time 1222 1232	20 seconds
-T93	Speed 1236 1242	1,000g
-R19	Setting Arg1:E26 Arg2:T92	
-R20	Setting Arg1:E26 Arg2:T93	
-T94	Seal 1256 1259	cap
-T95	Seal 1269 1281	dialysis cap
-T96	Seal 1302 1313	storage cap
-T97	Location 1369 1385	Tube-O-DIALYZER™
-T98	Location 1408 1423	centrifuge tube
-T99	Speed 1442 1448	1000xg
-T100	Time 1453 1463	30 seconds
-T101	Action 1467 1472	bring
-E15	Action:T101 Acts-on:T102 Site:T103
-T102	Reagent 1477 1483	sample
-T103	Location 1493 1510	dialysis membrane
-R21	Setting Arg1:E30 Arg2:T99	
-R22	Setting Arg1:E30 Arg2:T100	
-T104	Location 1523 1539	Tube-O-DIALYZER™
-T105	Amount 1549 1553	50ml
-T106	Location 1554 1558	tube
-T107	Device 1564 1571	forceps
-T108	Amount 1641 1646	500ml
-T109	Concentration 1647 1649	1X
-T110	Reagent 1650 1659	TE buffer
-T111	Temperature 1663 1679	room temperature
-T112	Time 1684 1695	18-24 hours
-R23	Measure Arg1:T106 Arg2:T105	
-R24	Measure Arg1:T110 Arg2:T109	
-R25	Measure Arg1:T110 Arg2:T108	
-R26	Setting Arg1:E32 Arg2:T111	
-R27	Setting Arg1:E32 Arg2:T112	
-T113	Modifier 1721 1727	Gently
-T114	Location 1734 1738	tube
-T115	Reagent 1746 1754	contents
-R28	Mod-Link Arg1:E33 Arg2:T113	
-T116	Reagent 1801 1812	genomic DNA
-T117	Location 1840 1856	Tube-O-DIALYZER™
-T118	Reagent 1870 1899	Tube-O-DIALYZER™ Concentrator
-T119	Reagent 1920 1941	Concentrator Solution
-R29	Or Arg1:T118 Arg2:T119	
-T120	Reagent 1979 1991	Concentrator
-T121	Method 1995 2015	per the instructions
-T122	Location 2031 2047	Tube-O-DIALYZER™
-T123	Reagent 2064 2067	DNA
-R30	Meronym Arg1:T123 Arg2:T122	
-T124	Reagent 2075 2083	solution
-T125	Location 2161 2165	tube
-T126	Speed 2169 2175	1000xg
-T127	Time 2180 2188	1 minute
-R31	Setting Arg1:E38 Arg2:T126	
-R32	Setting Arg1:E38 Arg2:T127	
-T128	Seal 2202 2214	dialysis cap
-T129	Seal 2224 2234	normal cap
-T130	Amount 2278 2282	70µl
-T131	Reagent 2283 2300	Suspension Buffer
-T132	Reagent 2308 2314	nuclei
-T133	Modifier 2319 2325	gently
-T134	Location 2342 2346	tube
-T135	Reagent 2363 2369	nuclei
-R33	Measure Arg1:T131 Arg2:T130	
-R34	Mod-Link Arg1:E41 Arg2:T133	
-T136	Modifier 2371 2380	Carefully
-R35	Mod-Link Arg1:E44 Arg2:T136	
-T137	Reagent 2393 2404	supernatant
-T138	Location 2420 2424	tube
-T139	Location 2430 2441	paper towel
-T140	Modifier 2452 2458	excess
-T141	Reagent 2459 2470	supernatant
-R36	Mod-Link Arg1:T141 Arg2:T140	
-T142	Method 0 9	MegaLong™
-T143	Method 23 32	Isolation
-T144	Modifier 36 37	>
-T145	Generic-Measure 37 42	100kb
-T146	Reagent 43 54	Genomic DNA
-T147	Reagent 56 69	Tissue Sample
-R37	Coreference-Link Arg1:T147 Arg2:T146	
-T148	Reagent 130 133	DNA
-T2	Method 134 144	extraction
-T149	Reagent 438 459	homogenous suspension
-T150	Action 557 568	sedimenting
-E2	Action:T150 Acts-on:T151
-T151	Reagent 573 579	nuclei
-T152	Method 592 602	incubation
-T153	Modifier 847 854	settled
-T154	Reagent 855 870	cellular debris
-R2	Mod-Link Arg1:T154 Arg2:T153	
-R38	Measure Arg1:T87 Arg2:T86	
-T155	Method 1175 1184	digestion
-T156	Method 1343 1350	storage
-T157	Reagent 1354 1357	DNA
-T158	Amount 1403 1407	50ml
-R39	Measure Arg1:T98 Arg2:T158	
-T159	Location 1587 1601	inverted slide
-T160	Location 1620 1625	float
-R40	Meronym Arg1:T159 Arg2:T160	
-T161	Numerical 1701 1704	2-3
-T162	Action 1705 1719	buffer changes
-E24	Action:T162 Count:T161
-T163	Action 1763 1776	buffer change
-E47	Action:T163 
-T164	Method 1788 1796	dialysis
-T165	Measure-Type 2088 2101	concentration
-T166	Measure-Type 2131 2144	concentration
-T167	Reagent 2240 2251	genomic DNA
+T1	Method 0 9	MegaLong™
+T2	Method 23 32	Isolation
+T3	Modifier 36 37	>
+T4	Generic-Measure 38 43	100kb
+T5	Reagent 44 55	Genomic DNA
+T6	Reagent 57 70	Tissue Sample
+T7	Modifier 91 98	rapidly
+T8	Action 99 106	dissect
+T9	Reagent 107 113	tissue
+T10	Reagent 131 134	DNA
+T11	Method 135 145	extraction
+T12	Modifier 146 157	immediately
+T13	Action 159 166	keeping
+T14	Reagent 167 174	samples
+T15	Location 178 181	ice
+T16	Modifier 185 193	promptly
+T17	Action 194 200	freeze
+T18	Reagent 204 219	liquid nitrogen
+T19	Action 224 229	store
+T20	Temperature 233 238	-70°C
+T21	Location 258 261	ice
+T22	Action 263 266	add
+T23	Amount 267 273	1-25mg
+T24	Reagent 274 294	ground frozen tissue
+T25	Modifier 298 303	fresh
+T26	Reagent 304 316	diced tissue
+T27	Location 322 342	microcentrifuge tube
+T28	Amount 354 359	500µl
+T29	Reagent 360 383	Nuclei Isolation Buffer
+T30	Action 385 395	Homogenize
+T31	Reagent 400 406	sample
+T32	Device 414 430	microfuge pestle
+T33	Reagent 439 460	homogenous suspension
+T34	Action 474 482	Incubate
+T35	Reagent 487 493	sample
+T36	Temperature 497 500	4°C
+T37	Time 505 515	> 1 minute
+T38	Action 519 527	sediment
+T39	Reagent 528 550	large tissue fragments
+T40	Action 559 570	sedimenting
+T41	Reagent 575 581	nuclei
+T42	Method 594 604	incubation
+T43	Action 605 612	prepare
+T44	Reagent 617 632	Tube-ODIALYZER™
+T45	Action 634 639	Place
+T46	Seal 644 664	Tube-O-DIALYZER™ cap
+T47	Location 670 676	beaker
+T48	Reagent 680 689	TE buffer
+T49	Action 694 699	store
+T50	Temperature 703 706	4°C
+T51	Action 723 728	Rinse
+T52	Location 733 754	Tube-O-DIALYZER™ tube
+T53	Reagent 760 769	TE buffer
+T54	Location 778 785	pipette
+T55	Action 786 794	transfer
+T56	Reagent 799 810	supernatant
+T57	Location 818 834	Tube-O-DIALYZER™
+T58	Modifier 849 856	settled
+T59	Reagent 857 872	cellular debris
+T60	Action 889 894	Place
+T61	Seal 906 909	cap
+T62	Location 917 921	tube
+T63	Action 926 936	centrifuge
+T64	Speed 940 948	16,000xg
+T65	Time 953 962	5 minutes
+T66	Action 966 972	pellet
+T67	Reagent 977 983	nuclei
+T68	Action 985 991	Vortex
+T69	Reagent 996 1018	LongLife™ Proteinase K
+T70	Action 1023 1026	add
+T71	Amount 1027 1031	10µl
+T72	Reagent 1039 1045	nuclei
+T73	Action 1047 1050	Add
+T74	Amount 1051 1055	70µl
+T75	Reagent 1056 1072	Digestion Buffer
+T76	Action 1077 1080	mix
+T77	Method 1086 1100	gentle rocking
+T78	Action 1102 1110	Incubate
+T79	Temperature 1114 1118	55°C
+T80	Time 1123 1132	2-4 hours
+T81	Method 1138 1154	periodic rocking
+T82	Action 1163 1169	vortex
+T83	Method 1177 1186	digestion
+T84	Action 1200 1210	centrifuge
+T85	Location 1215 1219	tube
+T86	Time 1224 1234	20 seconds
+T87	Speed 1238 1244	1,000g
+T88	Action 1246 1253	Replace
+T89	Seal 1258 1261	cap
+T90	Seal 1271 1283	dialysis cap
+T91	Action 1292 1299	discard
+T92	Seal 1304 1315	storage cap
+T93	Method 1345 1352	storage
+T94	Reagent 1356 1359	DNA
+T95	Action 1361 1366	Place
+T96	Location 1371 1387	Tube-O-DIALYZER™
+T97	Amount 1405 1409	50ml
+T98	Location 1410 1425	centrifuge tube
+T99	Action 1430 1440	centrifuge
+T100	Speed 1444 1450	1000xg
+T101	Time 1455 1465	30 seconds
+T102	Action 1469 1474	bring
+T103	Reagent 1479 1485	sample
+T104	Location 1495 1512	dialysis membrane
+T105	Action 1514 1520	Remove
+T106	Location 1525 1541	Tube-O-DIALYZER™
+T107	Amount 1551 1555	50ml
+T108	Location 1556 1560	tube
+T109	Device 1566 1573	forceps
+T110	Location 1589 1603	inverted slide
+T111	Location 1622 1627	float
+T112	Action 1632 1639	dialyze
+T113	Amount 1643 1648	500ml
+T114	Concentration 1649 1651	1X
+T115	Reagent 1652 1661	TE buffer
+T116	Temperature 1665 1681	room temperature
+T117	Time 1686 1697	18-24 hours
+T118	Numerical 1703 1706	2-3
+T119	Action 1707 1721	buffer changes
+T120	Modifier 1723 1729	Gently
+T121	Action 1730 1735	swirl
+T122	Location 1736 1740	tube
+T123	Action 1744 1747	mix
+T124	Reagent 1748 1756	contents
+T125	Action 1765 1778	buffer change
+T126	Method 1790 1798	dialysis
+T127	Reagent 1803 1814	genomic DNA
+T128	Action 1822 1834	concentrated
+T129	Location 1842 1858	Tube-O-DIALYZER™
+T130	Reagent 1872 1901	Tube-O-DIALYZER™ Concentrator
+T131	Reagent 1922 1943	Concentrator Solution
+T132	Action 1969 1976	prepare
+T133	Reagent 1981 1993	Concentrator
+T134	Method 1997 2017	per the instructions
+T135	Action 2022 2028	invert
+T136	Location 2033 2049	Tube-O-DIALYZER™
+T137	Reagent 2066 2069	DNA
+T138	Reagent 2077 2085	solution
+T139	Measure-Type 2090 2103	concentration
+T140	Measure-Type 2133 2146	concentration
+T141	Action 2148 2158	centrifuge
+T142	Location 2163 2167	tube
+T143	Speed 2171 2177	1000xg
+T144	Time 2182 2190	1 minute
+T145	Action 2192 2199	Replace
+T146	Seal 2204 2216	dialysis cap
+T147	Seal 2226 2236	normal cap
+T148	Reagent 2242 2253	genomic DNA
+T149	Action 2276 2279	Add
+T150	Amount 2280 2284	70µl
+T151	Reagent 2285 2302	Suspension Buffer
+T152	Reagent 2310 2316	nuclei
+T153	Modifier 2321 2327	gently
+T154	Action 2328 2332	rock
+T155	Action 2336 2339	tap
+T156	Location 2344 2348	tube
+T157	Action 2352 2360	dislodge
+T158	Reagent 2365 2371	nuclei
+T159	Modifier 2373 2382	Carefully
+T160	Action 2383 2390	discard
+T161	Reagent 2395 2406	supernatant
+T162	Action 2411 2417	invert
+T163	Location 2422 2426	tube
+T164	Location 2432 2443	paper towel
+T165	Action 2447 2453	remove
+T166	Modifier 2454 2460	excess
+T167	Reagent 2461 2472	supernatant

@@ -1,212 +1,131 @@
-T1	Action 79 84	Pulse
-E1	Action:T1 Acts-on:T24 Using:T25
-T2	Action 206 213	Harvest
-E2	Action:T2 Acts-on:T26
-T3	Action 224 234	centrifuge
-E3	Action:T3 
-T4	Action 280 284	Wash
-E4	Action:T4 Acts-on:T29 Using:T30
-T5	Action 337 347	centrifuge
-E5	Action:T5 
-T6	Action 394 401	Discard
-E6	Action:T6 Acts-on:T33
-T7	Action 416 423	Aliquot
-E7	Action:T7 Acts-on:T35 Site:T37
-T8	Action 479 484	Stain
-E8	Action:T8 Acts-on:T38 Using:T39
-T10	Action 669 681	centrifuging
-E10	Action:T10 
-T11	Action 728 735	Discard
-E11	Action:T11 Acts-on:T45
-T13	Action 763 769	adding
-E13	Action:T13 Acts-on:T48
-T12	Action 616 622	adding
-E12	Action:T12 Acts-on:T41 Site:T42
-T9	Action 840 844	Wash
-E9	Action:T9 Acts-on:T51 Count:T60 Using:T112
-T14	Action 972 978	adding
-E14	Action:T14 Acts-on:T54 Site:T55
-T15	Action 1051 1055	Wash
-E15	Action:T15 Acts-on:T58 Count:T59 Using:T121
-T16	Action 1090 1095	Treat
-E16	Action:T16 Acts-on:T61 Using:T63 Site:T67
-T17	Action 1214 1222	incubate
-E17	Action:T17 
-T18	Action 1243 1247	Wash
-E18	Action:T18 Acts-on:T70 Count:T71 Using:T124
-T19	Action 1282 1285	Add
-E19	Action:T19 Acts-on:T73 Site:T74
-T20	Action 1334 1337	add
-E20	Action:T20 Acts-on:T76 Site:T77
-T21	Action 1404 1412	Incubate
-E21	Action:T21 Using:T80
-T23	Action 1488 1494	adding
-E23	Action:T23 Acts-on:T82
-T22	Action 1561 1565	Wait
-E22	Action:T22 
-T24	Reagent 85 108	actively dividing cells
-T25	Reagent 114 118	BrdU
-T26	Reagent 214 219	cells
-T27	Time 239 248	5 minutes
-T28	Speed 252 265	1200-1500 rpm
-R1	Setting Arg1:E3 Arg2:T27	
-R2	Setting Arg1:E3 Arg2:T28	
-T29	Reagent 285 290	cells
-T30	Reagent 294 314	Cell Staining Buffer
-T31	Time 352 361	5 minutes
-R3	Setting Arg1:E5 Arg2:T31	
-T32	Speed 365 378	1200-1500 rpm
-R4	Setting Arg1:E5 Arg2:T32	
-T33	Reagent 402 413	supernatant
-T34	Amount 424 440	5 x 105- 1 x 106
-T35	Reagent 441 446	cells
-R5	Measure Arg1:T35 Arg2:T34	
-T36	Size 456 461	75 mm
-T37	Location 462 466	tube
-R6	Measure Arg1:T37 Arg2:T36	
-T38	Reagent 485 490	cells
-T39	Method 539 588	Cell Surface Immunofluorescence Staining Protocol
-T40	Amount 623 627	1 ml
-T41	Reagent 631 651	Cell Staining Buffer
-R7	Measure Arg1:T41 Arg2:T40	
-T42	Location 660 664	tube
-T43	Time 686 695	5 minutes
-T44	Speed 699 712	1200-1500 rpm
-R8	Setting Arg1:E10 Arg2:T43	
-R9	Setting Arg1:E10 Arg2:T44	
-T45	Reagent 736 747	supernatant
-T46	Amount 770 776	100 μl
-T47	Concentration 780 782	4%
-T48	Reagent 783 799	paraformaldehyde
-R10	Measure Arg1:T48 Arg2:T47	
-R11	Measure Arg1:T48 Arg2:T46	
-T49	Temperature 803 819	room temperature
-T50	Time 824 837	20-30 minutes
-R12	Setting Arg1:E13 Arg2:T49	
-R13	Setting Arg1:E13 Arg2:T50	
-T51	Reagent 845 850	cells
-T52	Amount 979 985	500 μl
-T53	Concentration 989 993	0.5%
-T54	Reagent 994 1006	Triton-X 100
-R14	Measure Arg1:T54 Arg2:T53	
-R15	Measure Arg1:T54 Arg2:T52	
-T55	Reagent 1010 1013	PBS
-T56	Time 1018 1028	15 minutes
-T57	Temperature 1032 1048	room temperature
-R16	Setting Arg1:E14 Arg2:T56	
-R17	Setting Arg1:E14 Arg2:T57	
-T58	Reagent 1056 1061	cells
-T59	Numerical 1082 1087	twice
-T60	Numerical 871 876	twice
-T61	Reagent 1096 1101	cells
-T62	Amount 1107 1112	20 μg
-T63	Reagent 1116 1121	DNAse
-R18	Measure Arg1:T63 Arg2:T62	
-T64	Reagent 1165 1169	DPBS
-T65	Reagent 1175 1182	calcium
-T66	Reagent 1187 1196	magnesium
-R19	Meronym Arg1:T65 Arg2:T64	
-R20	Meronym Arg1:T66 Arg2:T64	
-T67	Location 1205 1209	tube
-T68	Temperature 1226 1230	37⁰C
-T69	Time 1235 1241	1 hour
-R21	Setting Arg1:E17 Arg2:T68	
-R22	Setting Arg1:E17 Arg2:T69	
-R23	Meronym Arg1:T64 Arg2:T63	
-T70	Reagent 1248 1253	cells
-T71	Numerical 1274 1279	twice
-T72	Amount 1286 1291	50 μl
-T73	Reagent 1295 1315	Cell Staining Buffer
-R24	Measure Arg1:T73 Arg2:T72	
-T74	Location 1324 1328	tube
-T75	Generic-Measure 1342 1367	recommended concentration
-T76	Reagent 1371 1389	anti-BrdU antibody
-R25	Measure Arg1:T76 Arg2:T75	
-T77	Location 1398 1402	tube
-T78	Time 1417 1427	20 minutes
-T79	Temperature 1431 1447	room temperature
-R26	Setting Arg1:E21 Arg2:T78	
-R27	Setting Arg1:E21 Arg2:T79	
-T80	Method 1455 1459	dark
-T81	Amount 1495 1499	1 μg
-T82	Reagent 1510 1515	7-AAD
-R28	Measure Arg1:T82 Arg2:T81	
-T83	Reagent 1537 1541	DAPI
-R29	Or Arg1:T82 Arg2:T83	
-T84	Time 1570 1579	5 minutes
-R30	Setting Arg1:E22 Arg2:T84	
-T85	Action 1589 1598	acquiring
-E24	Action:T85 Acts-on:T86 Using:T87
-T86	Reagent 1599 1606	samples
-T87	Device 1610 1624	flow cytometer
-T88	Method 0 28	Anti-BrdU Staining Protocols
-T89	Reagent 35 40	DNAse
-T90	Modifier 46 69	Surface and Fluorescent
-T91	Reagent 70 78	Proteins
-R31	Mod-Link Arg1:T91 Arg2:T90	
-T92	Modifier 120 128	in vitro
-T93	Reagent 130 148	cell culture media
-T94	Action 156 162	pulsed
-E25	Action:T94 Acts-on:T93
-T95	Action 166 172	adding
-E26	Action:T95 Acts-on:T98
-T98	Reagent 185 189	BrdU
-T99	Time 194 203	1-2 hours
-T96	Concentration 173 181	10-40 μM
-R32	Measure Arg1:T98 Arg2:T96	
-R33	Setting Arg1:E26 Arg2:T99	
-R34	Mod-Link Arg1:T93 Arg2:T92	
-T97	Speed 267 278	200-300 x g
-R35	Coreference-Link Arg1:T28 Arg2:T97	
-T100	Speed 380 391	200-300 x g
-R36	Coreference-Link Arg1:T32 Arg2:T100	
-T101	Numerical 451 453	12
-R37	Measure Arg1:T37 Arg2:T101	
-T102	Modifier 469 477	Optional
-T103	Reagent 495 511	surface antigens
-T104	Modifier 512 523	if required
-R38	Meronym Arg1:T103 Arg2:T38	
-R39	Mod-Link Arg1:E8 Arg2:T104	
-T105	Action 602 606	Wash
-E27	Action:T105 Acts-on:T106
-T106	Reagent 607 612	cells
-T107	Speed 714 725	200-300 x g
-R40	Coreference-Link Arg1:T107 Arg2:T44	
-T108	Modifier 655 659	each
-R41	Mod-Link Arg1:T42 Arg2:T108	
-T109	Action 750 753	Fix
-E28	Action:T109 Acts-on:T110
-T110	Reagent 754 759	cells
-T112	Method 864 870	step 6
-T111	Modifier 879 887	Optional
-T113	Action 902 908	stored
-E29	Action:T113 Site:T115 Acts-on:T114
-T114	Reagent 889 894	Cells
-T115	Reagent 912 923	FACS buffer
-T116	Temperature 927 930	4⁰C
-T117	Modifier 931 940	for up to
-T118	Time 941 947	72 hrs
-R42	Mod-Link Arg1:T118 Arg2:T117	
-R43	Setting Arg1:E29 Arg2:T116	
-R44	Setting Arg1:E29 Arg2:T118	
-T119	Action 950 962	Permeabilize
-E30	Action:T119 Acts-on:T120
-T120	Reagent 963 968	cells
-T121	Method 1075 1081	step 6
-T122	Action 1154 1161	diluted
-E31	Action:T122 Acts-on:T63 Using:T64
-T123	Modifier 1200 1204	each
-R45	Mod-Link Arg1:T67 Arg2:T123	
-T124	Method 1267 1273	step 6
-T125	Modifier 1319 1323	each
-R46	Mod-Link Arg1:T74 Arg2:T125	
-T126	Modifier 1393 1397	each
-R47	Mod-Link Arg1:T77 Arg2:T126	
-T127	Method 1467 1473	step 6
-T128	Action 1460 1466	Repeat
-E32	Action:T128 Using:T127
-T129	Action 1475 1480	Stain
-E33	Action:T129 Acts-on:T130
-T130	Reagent 1481 1484	DNA
-T131	Modifier 1580 1588	prior to
-R48	Mod-Link Arg1:E22 Arg2:T131	
+T1	Method 0 28	Anti-BrdU Staining Protocols
+T2	Reagent 35 40	DNAse
+T3	Modifier 46 69	Surface and Fluorescent
+T4	Reagent 70 78	Proteins
+T5	Action 79 84	Pulse
+T6	Reagent 85 108	actively dividing cells
+T7	Reagent 114 118	BrdU
+T8	Modifier 120 128	in vitro
+T9	Reagent 130 148	cell culture media
+T10	Action 156 162	pulsed
+T11	Action 166 172	adding
+T12	Concentration 173 181	10-40 μM
+T13	Reagent 185 189	BrdU
+T14	Time 194 203	1-2 hours
+T15	Action 206 213	Harvest
+T16	Reagent 214 219	cells
+T17	Action 224 234	centrifuge
+T18	Time 239 248	5 minutes
+T19	Speed 252 265	1200-1500 rpm
+T20	Speed 267 278	200-300 x g
+T21	Action 280 284	Wash
+T22	Reagent 285 290	cells
+T23	Reagent 294 314	Cell Staining Buffer
+T24	Action 337 347	centrifuge
+T25	Time 352 361	5 minutes
+T26	Speed 365 378	1200-1500 rpm
+T27	Speed 380 391	200-300 x g
+T28	Action 394 401	Discard
+T29	Reagent 402 413	supernatant
+T30	Action 415 422	Aliquot
+T31	Amount 423 439	5 x 105- 1 x 106
+T32	Reagent 440 445	cells
+T33	Numerical 450 452	12
+T34	Size 455 460	75 mm
+T35	Location 461 465	tube
+T36	Modifier 467 475	Optional
+T37	Action 478 483	Stain
+T38	Reagent 484 489	cells
+T39	Reagent 494 510	surface antigens
+T40	Modifier 511 522	if required
+T41	Method 538 587	Cell Surface Immunofluorescence Staining Protocol
+T42	Action 600 604	Wash
+T43	Reagent 605 610	cells
+T44	Action 614 620	adding
+T45	Amount 621 625	1 ml
+T46	Reagent 629 649	Cell Staining Buffer
+T47	Modifier 653 657	each
+T48	Location 658 662	tube
+T49	Action 667 679	centrifuging
+T50	Time 684 693	5 minutes
+T51	Speed 697 710	1200-1500 rpm
+T52	Speed 712 723	200-300 x g
+T53	Action 726 733	Discard
+T54	Reagent 734 745	supernatant
+T55	Action 747 750	Fix
+T56	Reagent 751 756	cells
+T57	Action 760 766	adding
+T58	Amount 767 773	100 μl
+T59	Concentration 777 780	4 %
+T60	Reagent 781 797	paraformaldehyde
+T61	Temperature 801 817	room temperature
+T62	Time 822 835	20-30 minutes
+T63	Action 837 841	Wash
+T64	Reagent 842 847	cells
+T65	Method 861 867	step 6
+T66	Numerical 868 873	twice
+T67	Modifier 876 884	Optional
+T68	Reagent 887 892	Cells
+T69	Action 900 906	stored
+T70	Reagent 910 921	FACS buffer
+T71	Temperature 925 928	4⁰C
+T72	Modifier 929 938	for up to
+T73	Time 939 945	72 hrs
+T74	Action 948 960	Permeabilize
+T75	Reagent 961 966	cells
+T76	Action 970 976	adding
+T77	Amount 977 983	500 μl
+T78	Concentration 987 992	0.5 %
+T79	Reagent 993 1005	Triton-X 100
+T80	Reagent 1009 1012	PBS
+T81	Time 1017 1027	15 minutes
+T82	Temperature 1031 1047	room temperature
+T83	Action 1049 1053	Wash
+T84	Reagent 1054 1059	cells
+T85	Method 1073 1079	step 6
+T86	Numerical 1080 1085	twice
+T87	Action 1087 1092	Treat
+T88	Reagent 1093 1098	cells
+T89	Amount 1104 1109	20 μg
+T90	Reagent 1113 1118	DNAse
+T91	Action 1151 1158	diluted
+T92	Reagent 1162 1166	DPBS
+T93	Reagent 1172 1179	calcium
+T94	Reagent 1184 1193	magnesium
+T95	Modifier 1197 1201	each
+T96	Location 1202 1206	tube
+T97	Action 1211 1219	incubate
+T98	Temperature 1223 1227	37⁰C
+T99	Time 1232 1238	1 hour
+T100	Action 1240 1244	Wash
+T101	Reagent 1245 1250	cells
+T102	Method 1264 1270	step 6
+T103	Numerical 1271 1276	twice
+T104	Action 1278 1281	Add
+T105	Amount 1282 1287	50 μl
+T106	Reagent 1291 1311	Cell Staining Buffer
+T107	Modifier 1315 1319	each
+T108	Location 1320 1324	tube
+T109	Action 1330 1333	add
+T110	Generic-Measure 1338 1363	recommended concentration
+T111	Reagent 1367 1385	anti-BrdU antibody
+T112	Modifier 1389 1393	each
+T113	Location 1394 1398	tube
+T114	Action 1400 1408	Incubate
+T115	Time 1413 1423	20 minutes
+T116	Temperature 1427 1443	room temperature
+T117	Method 1451 1455	dark
+T118	Action 1456 1462	Repeat
+T119	Method 1463 1469	step 6
+T120	Action 1471 1476	Stain
+T121	Reagent 1477 1480	DNA
+T122	Action 1484 1490	adding
+T123	Amount 1491 1495	1 μg
+T124	Reagent 1506 1511	7-AAD
+T125	Reagent 1533 1537	DAPI
+T126	Action 1557 1561	Wait
+T127	Time 1566 1575	5 minutes
+T128	Modifier 1576 1584	prior to
+T129	Action 1585 1594	acquiring
+T130	Reagent 1595 1602	samples
+T131	Device 1606 1620	flow cytometer

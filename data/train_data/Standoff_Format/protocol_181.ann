@@ -1,248 +1,154 @@
-T1	Action 76 84	purified
-E1	Action:T1 Acts-on:T33 Using:T34
-T2	Action 155 160	Order
-E2	Action:T2 Acts-on:T35
-T3	Action 212 224	Reconstitute
-E3	Action:T3 Acts-on:T39
-T4	Action 259 262	add
-E4	Action:T4 Acts-on:T44 Site:T39
-T5	Action 322 327	Order
-E5	Action:T5 Acts-on:T46
-T6	Action 413 417	spin
-E6	Action:T6 Acts-on:T47
-T7	Action 429 441	Reconstitute
-E7	Action:T7 Acts-on:T49
-T8	Action 472 475	add
-E8	Action:T8 Acts-on:T52 Site:T49
-T9	Action 613 620	ordered
-E9	Action:T9 Acts-on:T56
-T10	Action 710 722	Reconstitute
-E10	Action:T10 Acts-on:T57
-T11	Action 872 875	Add
-E11	Action:T11 Site:T61 Acts-on:T59
-T12	Action 979 984	Place
-E12	Action:T12 Acts-on:T63 Site:T65
-T13	Action 1030 1034	spin
-E13	Action:T13 
-T14	Action 1057 1065	Incubate
-E14	Action:T14 
-T15	Action 1099 1103	load
-E15	Action:T15 Acts-on:T71
-T17	Action 1152 1158	Inject
-E17	Action:T17 Acts-on:T73 Using:T75
-T16	Action 1233 1236	Add
-E16	Action:T16 Acts-on:T77
-T20	Action 1415 1418	Add
-E20	Action:T20 Acts-on:T19
-T21	Action 1442 1445	Add
-E21	Action:T21 Acts-on:T80
-T22	Action 1471 1474	Add
-E22	Action:T22 Acts-on:T83
-T23	Action 1500 1503	Add
-E23	Action:T23 Acts-on:T86
-T24	Action 1529 1532	Add
-E24	Action:T24 Acts-on:T91
-T25	Action 1558 1561	Add
-E25	Action:T25 Acts-on:T90
-T26	Action 1575 1584	Clone out
-E26	Action:T26 Acts-on:T94 Site:T95
-T27	Action 1637 1640	Use
-E27	Action:T27 Acts-on:T98
-T29	Action 1858 1866	Transfer
-E29	Action:T29 Acts-on:T28 Site:T100
-T30	Action 1915 1922	Examine
-E30	Action:T30 Acts-on:T101
-T31	Action 1975 1984	Determine
-E31	Action:T31 Count:T103 Acts-on:T107
-T32	Action 2096 2101	Clone
-E32	Action:T32 Acts-on:T108
-T33	Reagent 59 68	Cas9::NLS
-T34	Reagent 90 97	E. coli
-T35	Reagent 161 169	tracrRNA
-T36	Action 196 200	spin
-E33	Action:T36 Acts-on:T38
-T37	Modifier 188 195	briefly
-T38	Location 205 210	tubes
-R1	Mod-Link Arg1:E33 Arg2:T37	
-T39	Reagent 225 233	tracrRNA
-T40	Concentration 237 243	4μg/μl
-R2	Setting Arg1:E3 Arg2:T40	
-T41	Amount 263 269	29.8μl
-T42	Measure-Type 278 280	pH
-T43	Numerical 281 284	7.5
-R3	Of-Type Arg1:T43 Arg2:T42	
-T44	Reagent 273 277	Tris
-R4	Measure Arg1:T44 Arg2:T41	
-R5	Measure Arg1:T44 Arg2:T43	
-T45	Amount 292 297	5nmol
-R6	Measure Arg1:T39 Arg2:T45	
-T46	Reagent 347 352	crRNA
-T47	Location 422 427	tubes
-T48	Modifier 405 412	briefly
-R7	Mod-Link Arg1:E6 Arg2:T48	
-T49	Reagent 442 447	crRNA
-T50	Concentration 451 457	8μg/μl
-T51	Amount 476 482	33.8μl
-T52	Reagent 486 490	Tris
-T53	Measure-Type 491 493	pH
-T54	Numerical 494 497	7.5
-T55	Concentration 505 511	20nmol
-R8	Measure Arg1:T49 Arg2:T55	
-R9	Measure Arg1:T49 Arg2:T50	
-R10	Measure Arg1:T52 Arg2:T51	
-R11	Of-Type Arg1:T54 Arg2:T53	
-R12	Measure Arg1:T52 Arg2:T54	
-T56	Reagent 526 558	single‐stranded oligonucleotides
-T57	Reagent 723 728	ssODN
-T58	Concentration 732 738	1μg/μl
-R13	Setting Arg1:E10 Arg2:T58	
-T59	Reagent 898 911	injection mix
-T60	Amount 917 922	0.5ml
-T61	Location 923 927	tube
-R14	Measure Arg1:T61 Arg2:T60	
-T62	Amount 989 994	0.5ml
-T63	Location 995 999	tube
-R15	Measure Arg1:T63 Arg2:T62	
-T64	Amount 1005 1010	1.5ml
-T65	Location 1011 1025	eppendorf tube
-R16	Measure Arg1:T65 Arg2:T64	
-T66	Time 1039 1043	2min
-T67	Speed 1047 1055	13000rpm
-R17	Setting Arg1:E13 Arg2:T66	
-R18	Setting Arg1:E13 Arg2:T67	
-T68	Temperature 1069 1073	37°C
-T69	Time 1078 1086	10‐15min
-R19	Setting Arg1:E14 Arg2:T68	
-R20	Setting Arg1:E14 Arg2:T69	
-T70	Modifier 1087 1098	Immediately
-R21	Mod-Link Arg1:E15 Arg2:T70	
-T71	Device 1108 1125	injection needles
-T73	Reagent 1172 1198	young adult hermaphrodites
-T74	Generic-Measure 1207 1210	few
-T75	Reagent 1211 1218	embryos
-R22	Measure Arg1:T75 Arg2:T74	
-T76	Concentration 1237 1239	1X
-T77	Reagent 1240 1242	M9
-R23	Measure Arg1:T77 Arg2:T76	
-T18	Concentration 1419 1421	1X
-T19	Reagent 1422 1424	M9
-T78	Amount 1425 1428	5μl
-R24	Measure Arg1:T19 Arg2:T18	
-R25	Measure Arg1:T19 Arg2:T78	
-T79	Concentration 1446 1448	1X
-T80	Reagent 1449 1451	M9
-T81	Amount 1453 1457	10μl
-R26	Measure Arg1:T80 Arg2:T79	
-R27	Measure Arg1:T80 Arg2:T81	
-T82	Concentration 1475 1477	1X
-T83	Reagent 1478 1480	M9
-T84	Amount 1482 1486	10μl
-R28	Measure Arg1:T83 Arg2:T82	
-R29	Measure Arg1:T83 Arg2:T84	
-T85	Concentration 1504 1506	1X
-T86	Reagent 1507 1509	M9
-T87	Amount 1511 1515	20μl
-R30	Measure Arg1:T86 Arg2:T85	
-R31	Measure Arg1:T86 Arg2:T87	
-T88	Concentration 1533 1535	1X
-T89	Concentration 1562 1564	1X
-T90	Reagent 1565 1567	M9
-T91	Reagent 1536 1538	M9
-T92	Amount 1540 1544	20μl
-R32	Measure Arg1:T91 Arg2:T88	
-R33	Measure Arg1:T91 Arg2:T92	
-R34	Measure Arg1:T90 Arg2:T89	
-T93	Amount 1569 1573	40μl
-R35	Measure Arg1:T90 Arg2:T93	
-T94	Reagent 1589 1592	P0s
-T95	Location 1598 1609	NNGM plates
-T96	Temperature 1630 1634	20°C
-R36	Setting Arg1:E26 Arg2:T96	
-T97	Modifier 1641 1646	fresh
-T98	Location 1647 1658	NNGM plates
-R37	Mod-Link Arg1:T98 Arg2:T97	
-T99	Reagent 1680 1693	OP50 bacteria
-R38	Meronym Arg1:T99 Arg2:T98	
-T28	Reagent 1871 1874	P0s
-T100	Location 1878 1890	second plate
-T101	Reagent 1927 1930	F1s
-T102	Time 1943 1951	4‐5 days
-R39	Setting Arg1:E30 Arg2:T102	
-T103	Numerical 1989 1995	number
-T104	Action 2021 2027	select
-E18	Action:T104 Acts-on:T106 Count:T105
-T105	Numerical 2032 2033	3
-T106	Reagent 2034 2037	P0s
-T107	Reagent 1999 2009	Roller F1s
-T108	Reagent 2110 2120	Roller F1s
-T109	Concentration 588 591	4nM
-T110	Size 568 573	200nt
-R40	Measure Arg1:T56 Arg2:T110	
-R41	Measure Arg1:T56 Arg2:T109	
-T111	Method 0 34	Direct delivery CRISPR-HDR editing
-T112	Reagent 48 58	C. elegans
-T113	Reagent 377 382	crRNA
-T114	Modifier 333 346	gene specific
-R42	Mod-Link Arg1:T46 Arg2:T114	
-T115	Concentration 459 469	0.6nmol/μl
-R43	Coreference-Link Arg1:T115 Arg2:T50	
-T116	Reagent 626 629	IDT
-T117	Modifier 656 657	<
-T118	Modifier 818 819	<
-T119	Size 819 824	100nt
-T120	Size 657 662	100nt
-R44	Mod-Link Arg1:T120 Arg2:T117	
-R45	Mod-Link Arg1:T119 Arg2:T118	
-T121	Generic-Measure 699 708	100bp-2kb
-T122	Generic-Measure 861 870	100bp-2kb
-T123	Action 929 932	add
-E19	Action:T123 Acts-on:T124
-T124	Reagent 933 937	Cas9
-T72	Method 1141 1150	injection
-T125	Amount 1244 1247	5μl
-T126	Time 1249 1260	30min to 1h
-T127	Method 1267 1276	injection
-T128	Action 1278 1285	recover
-E28	Action:T128 Acts-on:T130
-T129	Modifier 1290 1298	injected
-T130	Reagent 1299 1313	hermaphrodites
-R46	Mod-Link Arg1:T130 Arg2:T129	
-T131	Time 1338 1345	5‐10min
-T132	Action 1347 1350	add
-E34	Action:T132 
-R47	Setting Arg1:E34 Arg2:T131	
-T133	Amount 1352 1355	5μl
-T134	Amount 1358 1361	5μl
-T135	Amount 1364 1368	10μl
-T136	Amount 1370 1374	10μl
-T137	Amount 1376 1380	20μl
-T138	Amount 1382 1386	20μl
-T139	Amount 1388 1392	40μl
-T140	Concentration 1396 1398	1X
-T141	Reagent 1399 1401	M9
-R48	Measure Arg1:T141 Arg2:T140	
-R49	Measure Arg1:T141 Arg2:T139	
-T142	Reagent 1793 1804	mineral oil
-T143	Location 1812 1825	injection pad
-T144	Reagent 1779 1782	P0s
-T145	Reagent 1613 1615	P0
-T146	Numerical 1611 1612	1
-T147	Location 1620 1625	plate
-R50	Measure Arg1:T145 Arg2:T146	
-R51	Meronym Arg1:T145 Arg2:T147	
-T148	Action 1764 1769	avoid
-E35	Action:T148 Acts-on:T144 Site:T142
-R52	Meronym Arg1:T142 Arg2:T143	
-T149	Reagent 1838 1841	oil
-T150	Mention 1852 1856	them
-R53	Meronym Arg1:T150 Arg2:T144	
-T151	Numerical 1898 1899	1
-T152	Reagent 1900 1902	P0
-T153	Location 1907 1912	plate
-R54	Measure Arg1:T152 Arg2:T151	
-R55	Meronym Arg1:T152 Arg2:T153	
-T154	Reagent 1970 1973	P0s
-T155	Action 1958 1965	cloning
-E36	Action:T155 Acts-on:T154
-T156	Reagent 2014 2016	P0
-T157	Method 2220 2250	Screening-Strain establishment
+T1	Method 0 34	Direct delivery CRISPR-HDR editing
+T2	Reagent 48 58	C. elegans
+T3	Reagent 59 70	Cas9 : :NLS
+T4	Action 78 86	purified
+T5	Reagent 92 99	E. coli
+T6	Action 157 162	Order
+T7	Reagent 163 171	tracrRNA
+T8	Modifier 190 197	briefly
+T9	Action 198 202	spin
+T10	Location 207 212	tubes
+T11	Action 214 226	Reconstitute
+T12	Reagent 227 235	tracrRNA
+T13	Concentration 239 245	4μg/μl
+T14	Action 262 265	add
+T15	Amount 266 272	29.8μl
+T16	Reagent 276 280	Tris
+T17	Measure-Type 281 283	pH
+T18	Numerical 284 287	7.5
+T19	Amount 295 300	5nmol
+T20	Action 325 330	Order
+T21	Modifier 336 349	gene specific
+T22	Reagent 350 355	crRNA
+T23	Reagent 380 385	crRNA
+T24	Modifier 408 415	briefly
+T25	Action 416 420	spin
+T26	Location 425 430	tubes
+T27	Action 432 444	Reconstitute
+T28	Reagent 445 450	crRNA
+T29	Concentration 454 460	8μg/μl
+T30	Concentration 462 472	0.6nmol/μl
+T31	Action 476 479	add
+T32	Amount 480 486	33.8μl
+T33	Reagent 490 494	Tris
+T34	Measure-Type 495 497	pH
+T35	Numerical 498 501	7.5
+T36	Concentration 509 515	20nmol
+T37	Reagent 530 562	single‐stranded oligonucleotides
+T38	Size 572 577	200nt
+T39	Concentration 592 595	4nM
+T40	Action 617 624	ordered
+T41	Reagent 630 633	IDT
+T42	Modifier 660 661	<
+T43	Size 662 667	100nt
+T44	Generic-Measure 705 714	100bp-2kb
+T45	Action 716 728	Reconstitute
+T46	Reagent 729 734	ssODN
+T47	Concentration 738 744	1μg/μl
+T48	Modifier 824 825	<
+T49	Size 826 831	100nt
+T50	Generic-Measure 869 878	100bp-2kb
+T51	Action 880 883	Add
+T52	Reagent 906 919	injection mix
+T53	Amount 925 930	0.5ml
+T54	Location 931 935	tube
+T55	Action 937 940	add
+T56	Reagent 941 945	Cas9
+T57	Action 991 998	] Place
+T58	Amount 999 1008	the 0.5ml
+T59	Location 1009 1013	tube
+T60	Amount 1017 1024	a 1.5ml
+T61	Location 1025 1039	eppendorf tube
+T62	Action 1040 1048	and spin
+T63	Time 1049 1057	for 2min
+T64	Speed 1058 1069	at 13000rpm
+T65	Action 1069 1070	.
+T66	Action 1071 1079	Incubate
+T67	Temperature 1083 1087	37°C
+T68	Time 1092 1100	10‐15min
+T69	Modifier 1101 1112	Immediately
+T70	Action 1113 1117	load
+T71	Device 1122 1139	injection needles
+T72	Method 1155 1164	injection
+T73	Action 1166 1172	Inject
+T74	Reagent 1186 1212	young adult hermaphrodites
+T75	Generic-Measure 1221 1224	few
+T76	Reagent 1225 1232	embryos
+T77	Action 1247 1250	Add
+T78	Concentration 1251 1256	1X M9
+T79	Reagent 1256 1257	.
+T80	Amount 1258 1261	5μl
+T81	Time 1263 1274	30min to 1h
+T82	Method 1281 1290	injection
+T83	Action 1292 1299	recover
+T84	Modifier 1304 1312	injected
+T85	Reagent 1313 1327	hermaphrodites
+T86	Time 1353 1360	5‐10min
+T87	Action 1362 1365	add
+T88	Amount 1368 1371	5μl
+T89	Amount 1374 1377	5μl
+T90	Amount 1380 1408	10μl /10μl /20μl /20μl/ 40μl
+T91	Concentration 1412 1414	1X
+T92	Reagent 1415 1417	M9
+T93	Action 1432 1435	Add
+T94	Concentration 1436 1441	1X M9
+T95	Reagent 1442 1445	5μl
+T96	Amount 1445 1446	.
+T97	Action 1460 1463	Add
+T98	Concentration 1464 1469	1X M9
+T99	Reagent 1470 1471	:
+T100	Amount 1472 1477	10μl.
+T101	Action 1491 1494	Add
+T102	Concentration 1495 1500	1X M9
+T103	Reagent 1501 1502	:
+T104	Amount 1503 1508	10μl.
+T105	Action 1522 1525	Add
+T106	Concentration 1526 1531	1X M9
+T107	Reagent 1532 1533	:
+T108	Amount 1534 1539	20μl.
+T109	Action 1553 1556	Add
+T110	Concentration 1557 1562	1X M9
+T111	Reagent 1563 1564	:
+T112	Amount 1565 1570	20μl.
+T113	Action 1584 1587	Add
+T114	Concentration 1588 1593	1X M9
+T115	Reagent 1594 1595	:
+T116	Amount 1596 1601	40μl.
+T117	Action 1602 1611	Clone out
+T118	Reagent 1616 1619	P0s
+T119	Location 1625 1636	NNGM plates
+T120	Numerical 1638 1639	1
+T121	Reagent 1640 1642	P0
+T122	Location 1647 1652	plate
+T123	Temperature 1657 1661	20°C
+T124	Action 1664 1667	Use
+T125	Modifier 1668 1673	fresh
+T126	Location 1674 1685	NNGM plates
+T127	Reagent 1707 1720	OP50 bacteria
+T128	Action 1791 1796	avoid
+T129	Reagent 1806 1809	P0s
+T130	Reagent 1820 1831	mineral oil
+T131	Location 1839 1852	injection pad
+T132	Reagent 1865 1868	oil
+T133	Mention 1879 1883	them
+T134	Action 1885 1893	Transfer
+T135	Reagent 1898 1901	P0s
+T136	Location 1905 1917	second plate
+T137	Numerical 1925 1926	1
+T138	Reagent 1927 1929	P0
+T139	Location 1934 1939	plate
+T140	Action 1942 1949	Examine
+T141	Reagent 1954 1957	F1s
+T142	Time 1970 1978	4‐5 days
+T143	Action 1985 1992	cloning
+T144	Reagent 1997 2000	P0s
+T145	Action 2002 2011	Determine
+T146	Numerical 2016 2022	number
+T147	Reagent 2026 2036	Roller F1s
+T148	Reagent 2041 2043	P0
+T149	Action 2048 2054	select
+T150	Numerical 2059 2060	3
+T151	Reagent 2061 2064	P0s
+T152	Action 2125 2130	Clone
+T153	Reagent 2139 2149	Roller F1s
+T154	Method 2250 2281	-Screening-Strain establishment

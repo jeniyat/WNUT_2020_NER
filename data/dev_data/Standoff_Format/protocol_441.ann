@@ -1,157 +1,108 @@
-T1	Temperature 1296 1301	-20°C
-T2	Action 1287 1292	Store
-E1	Action:T2 
-R1	Setting Arg1:E1 Arg2:T1	
-T3	Action 1255 1259	Seal
-E2	Action:T3 Acts-on:T12 Using:T11
-T4	Action 1156 1161	Place
-E3	Action:T4 Acts-on:T45 Site:T46
-T5	Action 1102 1107	Store
-E4	Action:T5 Acts-on:T55 Site:T56
-T6	Action 1083 1088	Allow
-E5	Action:T6 Using:T14
-T7	Action 974 977	Put
-E6	Action:T7 Acts-on:T59 Site:T60
-T8	Action 947 953	Remove
-E7	Action:T8 Acts-on:T15 Using:T16
-T9	Action 911 915	wash
-E8	Action:T9 Using:T50
-T10	Action 825 831	Filter
-E9	Action:T10 Acts-on:T25 Site:T27
-T11	Seal 1276 1284	parafilm
-T12	Device 1260 1270	Petri dish
-T13	Modifier 1108 1112	each
-T14	Method 1089 1099	air-drying
-T15	Reagent 954 957	H2O
-T16	Method 961 971	filtration
-T17	Action 755 761	Filter
-E10	Action:T17 Acts-on:T53 Using:T54
-T18	Action 219 224	Place
-E11	Action:T18 Acts-on:T36 Acts-on2:T37 Site:T38
-T19	Action 418 424	Filter
-E12	Action:T19 Acts-on:T62 Using:T34
-T20	Action 506 511	Place
-E13	Action:T20 Acts-on:T29 Acts-on2:T30 Site:T31
-T21	Action 169 172	use
-E14	Action:T21 Acts-on:T41
-T22	Action 31 34	Add
-E15	Action:T22 Acts-on:T43 Site:T44
-T23	Amount 832 836	2 ml
-T24	Modifier 844 849	fixed
-T25	Reagent 850 856	sample
-T26	Modifier 862 868	second
-T27	Location 869 875	filter
-T28	Modifier 514 523	moistened
-T29	Device 524 538	support filter
-T30	Device 620 635	membrane filter
-T31	Location 736 752	filtration tower
-T32	Modifier 428 439	appropriate
-T33	Amount 440 446	volume
-T34	Method 470 492	applying gentle vacuum
-T35	Modifier 227 236	moistened
-T36	Device 237 251	support filter
-T37	Device 313 328	membrane filter
-T38	Location 399 415	filtration tower
-T39	Temperature 214 217	4°C
-T40	Time 199 210	12-24 hours
-T41	Reagent 173 185	Formaldehyde
-T42	Modifier 35 51	freshly prepared
-T43	Reagent 52 64	PFA fixative
-T44	Reagent 107 119	water sample
-T45	Device 1162 1177	membrane filter
-T46	Location 1186 1202	separator sheets
-T47	Modifier 1178 1185	between
-T48	Amount 762 766	1 ml
-T49	Amount 921 929	10-20 ml
-T50	Reagent 941 944	H2O
-T51	Modifier 933 940	sterile
-T52	Modifier 774 779	fixed
-T53	Reagent 780 786	sample
-T54	Method 790 812	applying gentle vacuum
-T55	Device 1113 1119	filter
-T56	Location 1143 1153	Petri dish
-T57	Modifier 1134 1142	labelled
-T58	Modifier 1125 1133	separate
-T59	Device 978 993	membrane filter
-T60	Location 997 1011	blotting paper
-R2	Mod-Link Arg1:T43 Arg2:T42	
-T61	Action 191 194	fix
-E16	Action:T61 
-R3	Setting Arg1:E16 Arg2:T40	
-R4	Setting Arg1:E16 Arg2:T39	
-R5	Mod-Link Arg1:T36 Arg2:T35	
-R6	Mod-Link Arg1:T33 Arg2:T32	
-T62	Reagent 460 466	sample
-T63	Modifier 454 459	fixed
-R7	Mod-Link Arg1:T62 Arg2:T63	
-R8	Measure Arg1:T62 Arg2:T33	
-R9	Mod-Link Arg1:T29 Arg2:T28	
-R10	Measure Arg1:T53 Arg2:T48	
-R11	Mod-Link Arg1:T53 Arg2:T52	
-R12	Mod-Link Arg1:T25 Arg2:T24	
-R13	Measure Arg1:T25 Arg2:T23	
-R14	Mod-Link Arg1:T27 Arg2:T26	
-R15	Measure Arg1:T50 Arg2:T49	
-R16	Mod-Link Arg1:T50 Arg2:T51	
-T64	Action 1027 1032	cover
-E17	Action:T64 Acts-on:T59
-R17	Mod-Link Arg1:T55 Arg2:T13	
-R18	Mod-Link Arg1:T56 Arg2:T57	
-R19	Mod-Link Arg1:T56 Arg2:T58	
-R20	Mod-Link Arg1:T46 Arg2:T47	
-T65	Method 0 8	Fixation
-T66	Reagent 12 30	Planktonic Samples
-T67	Action 71 77	Fixing
-E18	Action:T67 Acts-on:T68 Using:T69
-T68	Reagent 78 83	Cells
-T69	Method 89 101	PFA Protocol
-T70	Measure-Type 131 144	concentration
-T71	Modifier 125 130	final
-T72	Concentration 148 152	1-2%
-T73	Size 253 260	0.45 μm
-T74	Measure-Type 261 270	pore size
-T75	Reagent 272 289	cellulose nitrate
-T76	Size 291 296	47 mm
-T77	Measure-Type 297 305	diameter
-T78	Size 330 336	0.2 μm
-T79	Measure-Type 337 346	pore size
-T80	Modifier 348 353	white
-T81	Reagent 354 367	polycarbonate
-T82	Reagent 369 373	GTTP
-T83	Size 376 381	47 mm
-T84	Measure-Type 382 390	diameter
-R21	Mod-Link Arg1:T81 Arg2:T80	
-R22	Coreference-Link Arg1:T82 Arg2:T81	
-T85	Modifier 494 495	~
-T86	Size 496 502	5 inch
-R23	Mod-Link Arg1:T86 Arg2:T85	
-T87	Size 540 547	0.45 μm
-T88	Measure-Type 548 557	pore size
-T89	Reagent 559 576	cellulose nitrate
-T90	Size 578 583	25 mm
-T91	Size 637 643	0.2 μm
-T92	Measure-Type 644 653	pore size
-T93	Modifier 655 660	white
-T94	Reagent 661 674	polycarbonate
-T95	Reagent 676 680	GTTP
-R24	Coreference-Link Arg1:T95 Arg2:T94	
-R25	Mod-Link Arg1:T94 Arg2:T93	
-T96	Size 683 688	25 mm
-T97	Device 699 708	Millipore
-T98	Measure-Type 689 697	diameter
-T99	Modifier 814 815	~
-T100	Size 815 821	5 inch
-T101	Reagent 892 898	sample
-T102	Method 899 909	filtration
-T103	Seal 1048 1051	lid
-T104	Location 1057 1065	cryo box
-T105	Action 1016 1022	drying
-E19	Action:T105 Acts-on:T59
-T106	Location 1071 1081	Petri dish
-R26	Or Arg1:T104 Arg2:T106	
-R27	Meronym Arg1:T103 Arg2:T104	
-R28	Meronym Arg1:T103 Arg2:T106	
-T107	Reagent 1212 1216	GTTP
-T108	Location 1217 1233	membrane filters
-T109	Action 1308 1318	processing
-E20	Action:T109 
+T1	Method 0 8	Fixation
+T2	Reagent 12 30	Planktonic Samples
+T3	Action 31 34	Add
+T4	Modifier 35 51	freshly prepared
+T5	Reagent 52 64	PFA fixative
+T6	Action 70 77	'Fixing
+T7	Reagent 78 83	Cells
+T8	Method 89 101	PFA Protocol
+T9	Reagent 108 120	water sample
+T10	Modifier 126 131	final
+T11	Measure-Type 132 145	concentration
+T12	Concentration 149 154	1-2 %
+T13	Action 170 173	use
+T14	Reagent 174 186	Formaldehyde
+T15	Action 192 195	fix
+T16	Time 200 211	12-24 hours
+T17	Temperature 215 218	4°C
+T18	Action 220 225	Place
+T19	Modifier 228 237	moistened
+T20	Device 238 252	support filter
+T21	Size 254 261	0.45 μm
+T22	Measure-Type 262 271	pore size
+T23	Reagent 273 290	cellulose nitrate
+T24	Size 292 297	47 mm
+T25	Measure-Type 298 306	diameter
+T26	Device 314 329	membrane filter
+T27	Size 331 337	0.2 μm
+T28	Measure-Type 338 347	pore size
+T29	Modifier 349 354	white
+T30	Reagent 355 368	polycarbonate
+T31	Reagent 370 374	GTTP
+T32	Size 377 382	47 mm
+T33	Measure-Type 383 391	diameter
+T34	Location 400 416	filtration tower
+T35	Action 418 424	Filter
+T36	Modifier 428 439	appropriate
+T37	Amount 440 446	volume
+T38	Modifier 454 459	fixed
+T39	Reagent 460 466	sample
+T40	Method 470 492	applying gentle vacuum
+T41	Modifier 494 495	~
+T42	Size 496 502	5 inch
+T43	Action 505 510	Place
+T44	Modifier 513 522	moistened
+T45	Device 523 537	support filter
+T46	Size 539 546	0.45 μm
+T47	Measure-Type 547 556	pore size
+T48	Reagent 558 575	cellulose nitrate
+T49	Size 577 582	25 mm
+T50	Device 620 635	membrane filter
+T51	Size 637 643	0.2 μm
+T52	Measure-Type 644 653	pore size
+T53	Modifier 655 660	white
+T54	Reagent 661 674	polycarbonate
+T55	Reagent 676 680	GTTP
+T56	Size 683 688	25 mm
+T57	Measure-Type 689 697	diameter
+T58	Device 700 709	Millipore
+T59	Location 737 753	filtration tower
+T60	Action 755 761	Filter
+T61	Amount 762 766	1 ml
+T62	Modifier 774 779	fixed
+T63	Reagent 780 786	sample
+T64	Method 790 812	applying gentle vacuum
+T65	Modifier 814 816	~5
+T66	Size 817 821	inch
+T67	Action 824 830	Filter
+T68	Amount 831 835	2 ml
+T69	Modifier 843 848	fixed
+T70	Reagent 849 855	sample
+T71	Modifier 861 867	second
+T72	Location 868 874	filter
+T73	Reagent 891 897	sample
+T74	Method 898 908	filtration
+T75	Action 910 914	wash
+T76	Amount 920 928	10-20 ml
+T77	Modifier 932 939	sterile
+T78	Reagent 940 943	H2O
+T79	Action 945 951	Remove
+T80	Reagent 952 955	H2O
+T81	Method 959 969	filtration
+T82	Action 971 974	Put
+T83	Device 975 990	membrane filter
+T84	Location 994 1008	blotting paper
+T85	Action 1013 1019	drying
+T86	Action 1024 1029	cover
+T87	Seal 1045 1048	lid
+T88	Location 1054 1062	cryo box
+T89	Location 1068 1078	Petri dish
+T90	Action 1080 1085	Allow
+T91	Method 1086 1096	air-drying
+T92	Action 1098 1103	Store
+T93	Modifier 1104 1108	each
+T94	Device 1109 1115	filter
+T95	Modifier 1121 1138	separate labelled
+T96	Location 1139 1149	Petri dish
+T97	Action 1151 1156	Place
+T98	Device 1157 1172	membrane filter
+T99	Modifier 1173 1180	between
+T100	Location 1181 1197	separator sheets
+T101	Reagent 1207 1211	GTTP
+T102	Location 1212 1228	membrane filters
+T103	Action 1249 1253	Seal
+T104	Device 1254 1264	Petri dish
+T105	Seal 1270 1278	parafilm
+T106	Action 1280 1285	Store
+T107	Temperature 1289 1294	-20°C
+T108	Action 1301 1311	processing
