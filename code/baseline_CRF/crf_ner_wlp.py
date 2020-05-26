@@ -36,7 +36,7 @@ import conll2standoff
 
 sys.path.insert(1, '../eval/')
 
-import evalutation
+import evaluation
 
 
 class Linear_CRF:
@@ -245,7 +245,7 @@ if __name__ == '__main__':
 	to_latex=parameters["print_latex_format"]
 
 
-	evalutation.evaluate(input_gold_folder=parameters["test_data"],  input_pred_folder=parameters["standoff_output_folder"],pref_file= perf_file, to_latex=to_latex)
+	evaluation.evaluate(input_gold_folder=parameters["test_data"],  input_pred_folder=parameters["standoff_output_folder"],pref_file= perf_file, to_latex=to_latex)
 
 	if os.path.isdir('Conll_Format_Data/'): shutil.rmtree('Conll_Format_Data/')
 
