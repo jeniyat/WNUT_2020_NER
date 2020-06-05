@@ -1,103 +1,179 @@
-T1	Method 0 18	Silver Development
-T2	Reagent 29 41	silver stain
-T3	Size 47 53	0.75mm
-T4	Reagent 54 73	polyacrylamide gels
-T5	Action 74 81	Agitate
-T6	Reagent 82 85	gel
-T7	Numerical 86 91	twice
-T8	Concentration 97 101	50 %
-T9	Reagent 102 106	MeOH
-T10	Concentration 108 112	10 %
-T11	Reagent 113 124	acetic acid
-T12	Time 139 145	15 min
-T13	Action 150 155	Rinse
-T14	Time 157 162	1 min
-T15	Amount 169 175	200 ml
-T16	Reagent 176 178	DW
-T17	Action 180 187	Agitate
-T18	Concentration 191 195	10 %
-T19	Reagent 196 200	EtOH
-T20	Concentration 202 205	5 %
-T21	Reagent 206 225	glacial acetic acid
-T22	Time 240 245	6 min
-T23	Action 247 254	Agitate
-T24	Modifier 258 267	distilled
-T25	Reagent 268 273	water
-T26	Action 275 282	Agitate
-T27	Numerical 283 288	twice
-T28	Time 290 295	9 min
-T29	Modifier 296 300	each
-T30	Concentration 307 313	500 ml
-T31	Reagent 314 316	DW
-T32	Action 318 325	Agitate
-T33	Amount 329 335	500 ml
-T34	Concentration 339 346	20 mg/L
-T35	Reagent 347 354	Na2S2O4
-T36	Reagent 356 368	hydrosulfite
-T37	Reagent 371 381	dithionite
-T38	Action 385 389	make
-T39	Modifier 390 395	fresh
-T40	Modifier 400 409	distilled
-T41	Modifier 411 420	deionized
-T42	Reagent 421 426	water
-T43	Reagent 428 431	DDW
-T44	Time 437 441	9min
-T45	Method 443 456	sensitization
-T46	Action 459 467	Pour off
-T47	Reagent 468 476	solution
-T48	Action 478 485	Agitate
-T49	Time 490 495	9 min
-T50	Action 497 502	Rinse
-T51	Time 503 509	30 sec
-T52	Reagent 515 518	DDW
-T53	Action 522 528	remove
-T54	Modifier 529 535	excess
-T55	Reagent 536 541	AgNO3
-T56	Action 543 546	Add
-T57	Amount 547 553	200 ml
-T58	Reagent 554 569	image developer
-T59	Amount 571 574	1ml
-T60	Concentration 575 579	37 %
-T61	Reagent 580 592	formaldehyde
-T62	Modifier 593 596	per
-T63	Amount 597 602	liter
-T64	Concentration 606 609	3 %
-T65	Reagent 610 626	sodium carbonate
-T66	Action 628 633	mixed
-T67	Amount 639 645	200 ml
-T68	Concentration 646 651	10g/L
-T69	Reagent 652 670	sodium thiosulfate
-T70	Action 672 680	Pour off
-T71	Reagent 681 690	developer
-T72	Action 692 695	Add
-T73	Amount 696 701	80 ml
-T74	Reagent 705 718	stop solution
-T75	Amount 720 724	50 g
-T76	Reagent 725 729	tris
-T77	Amount 731 736	25 ml
-T78	Reagent 737 751	glacial acetic
-T79	Modifier 752 755	per
-T80	Amount 756 761	liter
-T81	Modifier 765 774	distilled
-T82	Reagent 775 780	water
-T83	Action 783 788	Store
-T84	Reagent 789 792	gel
-T85	Concentration 796 800	10 %
-T86	Reagent 801 809	glycerol
-T87	Reagent 815 827	bacteriostat
-T88	Concentration 829 835	0.02 %
-T89	Reagent 836 840	NaN3
-T90	Action 851 858	rinsing
-T91	Action 860 867	add 200
-T92	Amount 868 871	ml,
-T93	Concentration 872 883	0.1 % AgNO3
-T94	Reagent 884 885	(
-T95	Amount 885 892	200 mg)
-T96	Reagent 896 900	DDW.
-T97	Action 901 904	Add
-T98	Amount 905 911	150 ml
-T99	Concentration 912 916	37 %
-T100	Reagent 917 929	formaldehyde
-T101	Action 931 938	Agitate
-T102	Generic-Measure 942 968	desired staining intensity
-T103	Time 970 980	3 to 6 min
+T1	Action 74 81	Agitate
+E1	Action:T1 Acts-on:T2 Using:T5 Using2:T7
+T2	Reagent 82 85	gel
+T3	Numerical 86 91	twice
+T4	Concentration 97 100	50%
+T5	Reagent 101 105	MeOH
+T6	Concentration 107 110	10%
+T7	Reagent 111 122	acetic acid
+T8	Time 137 143	15 min
+T9	Action 148 153	Rinse
+E2	Action:T9 Using:T12
+T10	Time 155 160	1 min
+T11	Amount 167 173	200 ml
+T12	Reagent 174 176	DW
+T13	Action 178 185	Agitate
+E3	Action:T13 Using:T15 Using2:T17
+T14	Concentration 189 192	10%
+T15	Reagent 193 197	EtOH
+T16	Concentration 199 201	5%
+T17	Reagent 202 221	glacial acetic acid
+T18	Time 236 241	6 min
+T19	Action 243 250	Agitate
+E4	Action:T19 Using:T21
+T20	Modifier 254 263	distilled
+T21	Reagent 264 269	water
+T22	Action 271 278	Agitate
+E5	Action:T22 Using:T27
+T23	Numerical 279 284	twice
+T24	Time 286 291	9 min
+T25	Modifier 292 296	each
+T26	Concentration 303 309	500 ml
+T27	Reagent 310 312	DW
+T28	Action 314 321	Agitate
+E6	Action:T28 Using:T31 Acts-on:T34
+T29	Amount 325 331	500 ml
+T30	Concentration 335 342	20 mg/L
+T31	Reagent 343 350	Na2S2O4
+T32	Modifier 394 403	distilled
+T33	Modifier 405 414	deionized
+T34	Reagent 415 420	water
+T35	Time 431 435	9min
+T36	Action 453 461	Pour off
+E7	Action:T36 Acts-on:T37
+T37	Reagent 462 470	solution
+T38	Action 472 479	Agitate
+E8	Action:T38 
+T39	Time 484 489	9 min
+T40	Action 491 496	Rinse
+E9	Action:T40 Using:T42
+T41	Time 497 503	30 sec
+T42	Reagent 509 512	DDW
+T43	Action 516 522	remove
+E10	Action:T43 Acts-on:T45
+T44	Modifier 523 529	excess
+T45	Reagent 530 535	AgNO3
+T46	Action 537 540	Add
+E11	Action:T46 Acts-on:T48 Acts-on2:T57
+T47	Amount 541 547	200 ml
+T48	Reagent 548 563	image developer
+T49	Amount 565 568	1ml
+T50	Concentration 569 572	37%
+T51	Reagent 573 585	formaldehyde
+T52	Concentration 599 601	3%
+T53	Reagent 602 618	sodium carbonate
+T55	Amount 631 637	200 ml
+T56	Concentration 638 643	10g/L
+T57	Reagent 644 662	sodium thiosulfate
+T58	Action 664 672	Pour off
+E13	Action:T58 Acts-on:T59
+T59	Reagent 673 682	developer
+T60	Action 684 687	Add
+E14	Action:T60 Acts-on:T62
+T61	Amount 688 693	80 ml
+T62	Reagent 697 710	stop solution
+T63	Amount 712 716	50 g
+T64	Reagent 717 721	tris
+T65	Amount 723 728	25 ml
+T66	Reagent 729 743	glacial acetic
+T67	Modifier 757 766	distilled
+T68	Reagent 767 772	water
+T69	Action 775 780	Store
+E15	Action:T69 Acts-on:T70 Site:T72
+T70	Reagent 781 784	gel
+T71	Concentration 788 791	10%
+T72	Reagent 792 800	glycerol
+T73	Reagent 806 818	bacteriostat
+T74	Concentration 820 825	0.02%
+T75	Reagent 826 830	NaN3
+T76	Action 851 854	add
+E16	Action:T76 Acts-on:T79
+T77	Amount 855 861	200 ml
+T78	Concentration 863 867	0.1%
+T79	Reagent 868 873	AgNO3
+T80	Amount 875 881	200 mg
+T81	Reagent 886 889	DDW
+T82	Action 891 894	Add
+E17	Action:T82 Acts-on:T85
+T83	Amount 895 901	150 ml
+T84	Concentration 902 905	37%
+T85	Reagent 906 918	formaldehyde
+T86	Action 920 927	Agitate
+E18	Action:T86 
+T87	Generic-Measure 931 957	desired staining intensity
+T88	Time 959 969	3 to 6 min
+R1	Setting Arg1:E1 Arg2:T3	
+R2	Measure Arg1:T5 Arg2:T4	
+R3	Measure Arg1:T7 Arg2:T6	
+R4	Setting Arg1:E1 Arg2:T8	
+R5	Setting Arg1:E2 Arg2:T10	
+R6	Measure Arg1:T12 Arg2:T11	
+R7	Setting Arg1:E3 Arg2:T18	
+R8	Measure Arg1:T15 Arg2:T14	
+R9	Measure Arg1:T17 Arg2:T16	
+R10	Mod-Link Arg1:T21 Arg2:T20	
+R11	Setting Arg1:E5 Arg2:T23	
+R12	Mod-Link Arg1:T24 Arg2:T25	
+R13	Setting Arg1:E5 Arg2:T24	
+R14	Measure Arg1:T27 Arg2:T26	
+R15	Measure Arg1:T31 Arg2:T30	
+R16	Measure Arg1:T31 Arg2:T29	
+R17	Mod-Link Arg1:T34 Arg2:T33	
+R18	Mod-Link Arg1:T34 Arg2:T32	
+R19	Setting Arg1:E6 Arg2:T35	
+R20	Setting Arg1:E8 Arg2:T39	
+R21	Setting Arg1:E9 Arg2:T41	
+R22	Mod-Link Arg1:T45 Arg2:T44	
+R23	Measure Arg1:T48 Arg2:T47	
+R24	Measure Arg1:T51 Arg2:T50	
+R25	Measure Arg1:T51 Arg2:T49	
+R26	Measure Arg1:T53 Arg2:T52	
+R27	Measure Arg1:T57 Arg2:T56	
+R28	Measure Arg1:T57 Arg2:T55	
+R29	Measure Arg1:T62 Arg2:T61	
+R30	Measure Arg1:T64 Arg2:T63	
+R31	Measure Arg1:T66 Arg2:T65	
+R32	Mod-Link Arg1:T68 Arg2:T67	
+R33	Measure Arg1:T72 Arg2:T71	
+R34	Measure Arg1:T75 Arg2:T74	
+R35	Measure Arg1:T79 Arg2:T78	
+R36	Measure Arg1:T79 Arg2:T77	
+R38	Measure Arg1:T85 Arg2:T84	
+R39	Measure Arg1:T85 Arg2:T83	
+R40	Meronym Arg1:T75 Arg2:T73	
+R41	Meronym Arg1:T73 Arg2:T72	
+R37	Measure Arg1:T79 Arg2:T80	
+R42	Meronym Arg1:T79 Arg2:T81	
+R43	Setting Arg1:E18 Arg2:T87	
+R44	Or Arg1:T87 Arg2:T88	
+T89	Modifier 586 589	per
+T90	Amount 590 595	liter
+R45	Mod-Link Arg1:T90 Arg2:T89	
+R46	Measure Arg1:T53 Arg2:T90	
+R47	Meronym Arg1:T51 Arg2:T48	
+R48	Meronym Arg1:T53 Arg2:T48	
+T54	Modifier 744 747	per
+T91	Amount 748 753	liter
+R49	Measure Arg1:T68 Arg2:T91	
+R50	Mod-Link Arg1:T91 Arg2:T54	
+R51	Meronym Arg1:T64 Arg2:T62	
+R52	Meronym Arg1:T66 Arg2:T62	
+R53	Meronym Arg1:T68 Arg2:T62	
+T92	Method 0 18	Silver Development
+T93	Reagent 29 41	silver stain
+T94	Size 47 53	0.75mm
+T95	Reagent 54 73	polyacrylamide gels
+R54	Measure Arg1:T95 Arg2:T94	
+T96	Reagent 352 364	hydrosulfite
+T97	Reagent 366 376	dithionite
+T98	Action 379 383	make
+E12	Action:T98 Acts-on:T96
+T99	Modifier 384 389	fresh
+R55	Mod-Link Arg1:E12 Arg2:T99	
+T100	Method 437 450	sensitization
+T101	Reagent 422 425	DDW
+R56	Coreference-Link Arg1:T101 Arg2:T34	
+T102	Action 620 625	mixed
+E19	Action:T102 Using:T57
+T103	Action 842 849	rinsing
+E20	Action:T103 

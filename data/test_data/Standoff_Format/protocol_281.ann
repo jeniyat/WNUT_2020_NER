@@ -1,101 +1,158 @@
-T1	Method 0 10	Generation
-T2	Reagent 14 27	DNA fragments
-T3	Reagent 31 36	DNase
-T4	Method 37 46	digestion
-T5	Amount 52 57	50 µL
-T6	Reagent 58 66	reaction
-T7	Measure-Type 67 73	volume
-T8	Action 75 84	resuspend
-T9	Amount 85 89	8 µg
-T10	Reagent 90 93	DNA
-T11	Concentration 97 102	50 mM
-T12	Reagent 103 111	Tris·HCl
-T13	pH 113 119	pH 7.6
-T14	Concentration 122 127	10 mM
-T15	Reagent 128 133	MnCl2
-T16	Amount 135 146	100 µg mL–1
-T17	Reagent 147 167	bovine serum albumin
-T18	Amount 173 185	0.01 SU mL–1
-T19	Reagent 186 193	DNase I
-T20	Action 195 201	Remove
-T21	Amount 202 206	5 µL
-T22	Reagent 207 215	aliquots
-T23	Action 217 223	adding
-T24	Amount 227 232	45 µL
-T25	Reagent 233 242	TE buffer
-T26	pH 244 250	pH 7.6
-T27	Time 252 253	0
-T28	Time 255 258	0.5
-T29	Time 260 261	1
-T30	Time 263 264	2
-T31	Time 266 267	5
-T32	Time 269 271	10
-T33	Time 273 275	15
-T34	Time 281 287	30 min
-T35	Method 294 302	addition
-T36	Reagent 310 327	digestion mixture
-T37	Modifier 329 340	Immediately
-T38	Action 341 349	transfer
-T39	Location 355 359	tube
-T40	Amount 371 376	25 µL
-T41	Modifier 377 390	Tris-buffered
-T42	pH 392 398	pH 7.0
-T43	Reagent 400 406	phenol
-T44	Action 408 415	Perform
-T45	Reagent 418 439	phenol : chloroform (
-T46	Concentration 439 443	1:1)
-T47	Method 444 455	extraction.
-T48	Action 456 463	Perform
-T49	Reagent 466 476	chloroform
-T50	Method 477 487	extraction
-T51	Action 489 496	Perform
-T52	Reagent 499 509	chloroform
-T53	Method 510 520	extraction
-T54	Modifier 521 530	once more
-T55	Action 532 543	Precipitate
-T56	Modifier 548 558	fragmented
-T57	Reagent 559 562	DNA
-T58	Action 564 568	Wash
-T59	Concentration 574 578	70 %
-T60	Reagent 579 586	ethanol
-T61	Action 588 591	Dry
-T62	Action 593 602	Resuspend
-T63	Modifier 603 613	fragmented
-T64	Reagent 614 617	DNA
-T65	Amount 621 626	23 µL
-T66	Reagent 630 646	Blunt-ending Mix
-T67	Concentration 648 654	100 µM
-T68	Reagent 655 660	dNTPs
-T69	Concentration 662 665	1 ×
-T70	Reagent 666 683	T4 DNA Pol Buffer
-T71	Action 686 690	Heat
-T72	Temperature 694 698	65°C
-T73	Time 703 709	30 min
-T74	Action 713 722	resuspend
-T75	Reagent 723 726	DNA
-T76	Action 731 741	inactivate
-T77	Modifier 742 745	any
-T78	Reagent 746 753	DNase I
-T79	Action 777 781	Cool
-T80	Temperature 785 801	room temperature
-T81	Action 803 806	Add
-T82	Amount 807 812	2.5 U
-T83	Reagent 813 828	Klenow fragment
-T84	Amount 833 836	5 U
-T85	Reagent 837 854	T4 DNA polymerase
-T86	Action 856 864	Incubate
-T87	Reagent 869 877	reaction
-T88	Temperature 881 885	37°C
-T89	Time 890 893	1 h
-T90	Modifier 899 909	fragmented
-T91	Modifier 914 925	blunt-ended
-T92	Reagent 926 935	virus DNA
-T93	Action 943 946	run
-T94	Concentration 952 955	1 %
-T95	Reagent 956 967	agarose gel
-T96	Action 977 985	excising
-T97	Reagent 986 995	fragments
-T98	Generic-Measure 1003 1015	1000–4000 bp
-T99	Reagent 1030 1042	standard gel
-T100	Method 1043 1053	extraction
-T101	Action 1072 1090	downstream cloning
+T1	Action 195 201	Remove
+E1	Action:T1 Acts-on:T19
+T3	Action 341 349	transfer
+E3	Action:T3 Site:T22
+T4	Action 408 415	Perform
+E4	Action:T4 Using:T27
+T5	Action 454 461	Perform
+E5	Action:T5 Using:T28
+T6	Action 487 494	Perform
+E6	Action:T6 Using:T29
+T7	Action 530 541	Precipitate
+E7	Action:T7 Acts-on:T32
+T8	Action 562 566	Wash
+E8	Action:T8 Acts-on:T34
+T9	Action 585 588	Dry
+E9	Action:T9 
+T10	Action 590 599	Resuspend
+E10	Action:T10 Acts-on:T36 Site:T38
+T11	Action 683 687	Heat
+E11	Action:T11 
+T12	Action 710 719	resuspend
+E12	Action:T12 Acts-on:T45
+T13	Action 774 778	Cool
+E13	Action:T13 
+T14	Action 800 803	Add
+E14	Action:T14 Acts-on:T50 Acts-on2:T51
+T15	Action 853 861	Incubate
+E15	Action:T15 Acts-on:T53
+T16	Action 728 738	inactivate
+E16	Action:T16 Acts-on:T46
+T17	Action 940 943	run
+E17	Action:T17 Acts-on2:T57 Using:T59
+T18	Amount 202 206	5 µL
+T19	Reagent 207 215	aliquots
+T20	Reagent 310 327	digestion mixture
+R1	Measure Arg1:T19 Arg2:T18	
+T21	Modifier 329 340	Immediately
+R2	Mod-Link Arg1:E3 Arg2:T21	
+T22	Location 355 359	tube
+T23	Amount 371 376	25 µL
+T24	Modifier 377 390	Tris-buffered
+T25	pH 392 398	pH 7.0
+T26	Reagent 400 406	phenol
+R3	Mod-Link Arg1:T26 Arg2:T24	
+R4	Measure Arg1:T26 Arg2:T25	
+R5	Measure Arg1:T26 Arg2:T23	
+R6	Meronym Arg1:T26 Arg2:T22	
+T27	Method 442 452	extraction
+T28	Method 475 485	extraction
+T29	Method 508 518	extraction
+T30	Modifier 519 528	once more
+R7	Mod-Link Arg1:E6 Arg2:T30	
+T31	Modifier 546 556	fragmented
+T32	Reagent 557 560	DNA
+R8	Mod-Link Arg1:T32 Arg2:T31	
+T33	Concentration 572 575	70%
+T34	Reagent 576 583	ethanol
+R9	Measure Arg1:T34 Arg2:T33	
+T35	Modifier 600 610	fragmented
+T36	Reagent 611 614	DNA
+T37	Amount 618 623	23 µL
+T38	Reagent 627 643	Blunt-ending Mix
+T39	Concentration 645 651	100 µM
+T40	Reagent 652 657	dNTPs
+T41	Concentration 659 662	1 ×
+T42	Reagent 663 680	T4 DNA Pol Buffer
+R10	Measure Arg1:T42 Arg2:T41	
+R11	Measure Arg1:T40 Arg2:T39	
+R12	Measure Arg1:T38 Arg2:T37	
+R13	Meronym Arg1:T40 Arg2:T38	
+R14	Meronym Arg1:T42 Arg2:T38	
+R15	Mod-Link Arg1:T36 Arg2:T35	
+T43	Temperature 691 695	65°C
+T44	Time 700 706	30 min
+T45	Reagent 720 723	DNA
+T46	Reagent 743 750	DNase I
+T47	Modifier 739 742	any
+R16	Mod-Link Arg1:T46 Arg2:T47	
+R17	Setting Arg1:E11 Arg2:T43	
+R18	Setting Arg1:E11 Arg2:T44	
+T48	Temperature 782 798	room temperature
+R19	Setting Arg1:E13 Arg2:T48	
+T49	Amount 804 809	2.5 U
+T50	Reagent 810 825	Klenow fragment
+T51	Reagent 834 851	T4 DNA polymerase
+T52	Amount 830 833	5 U
+R20	Measure Arg1:T51 Arg2:T52	
+R21	Measure Arg1:T50 Arg2:T49	
+T53	Reagent 866 874	reaction
+T54	Temperature 878 882	37°C
+T55	Time 887 890	1 h
+R22	Setting Arg1:E15 Arg2:T54	
+R23	Setting Arg1:E15 Arg2:T55	
+T56	Modifier 911 922	blunt-ended
+T57	Reagent 923 932	virus DNA
+T58	Concentration 949 951	1%
+T59	Reagent 952 963	agarose gel
+R24	Mod-Link Arg1:T57 Arg2:T56	
+R25	Measure Arg1:T59 Arg2:T58	
+T60	Method 0 10	Generation
+T61	Reagent 14 27	DNA fragments
+T62	Reagent 31 36	DNase
+T63	Method 37 46	digestion
+T64	Amount 52 57	50 µL
+T65	Reagent 58 66	reaction
+T66	Measure-Type 67 73	volume
+R26	Measure Arg1:T65 Arg2:T64	
+T67	Action 75 84	resuspend
+E18	Action:T67 Acts-on:T69 Site:T71
+T68	Amount 85 89	8 µg
+T69	Reagent 90 93	DNA
+T70	Concentration 97 102	50 mM
+T71	Reagent 103 111	Tris·HCl
+T72	pH 113 119	pH 7.6
+T73	Concentration 122 127	10 mM
+T74	Reagent 128 133	MnCl2
+T75	Amount 135 146	100 µg mL–1
+T77	Reagent 147 167	bovine serum albumin
+T78	Amount 173 185	0.01 SU mL–1
+T79	Reagent 186 193	DNase I
+R27	Measure Arg1:T69 Arg2:T68	
+R28	Measure Arg1:T71 Arg2:T70	
+R29	Measure Arg1:T71 Arg2:T72	
+R30	Measure Arg1:T74 Arg2:T73	
+R31	Measure Arg1:T77 Arg2:T75	
+R32	Measure Arg1:T79 Arg2:T78	
+T76	Action 217 223	adding
+E19	Action:T76 Site:T81
+T80	Amount 227 232	45 µL
+T81	Reagent 233 242	TE buffer
+T82	pH 244 250	pH 7.6
+R33	Measure Arg1:T81 Arg2:T80	
+R34	Measure Arg1:T81 Arg2:T82	
+T83	Time 252 253	0
+T84	Time 255 258	0.5
+T85	Time 260 261	1
+T86	Time 263 264	2
+T87	Time 266 267	5
+T88	Time 269 271	10
+T89	Time 273 275	15
+T90	Time 281 287	30 min
+T2	Method 294 302	addition
+T91	Reagent 418 435	phenol:chloroform
+T92	Concentration 437 440	1:1
+R35	Measure Arg1:T91 Arg2:T92	
+T93	Reagent 464 474	chloroform
+T94	Reagent 497 507	chloroform
+T95	Modifier 896 906	fragmented
+R36	Mod-Link Arg1:T57 Arg2:T95	
+T96	Action 973 981	excising
+E2	Action:T96 Acts-on:T97
+T97	Reagent 982 991	fragments
+T98	Generic-Measure 999 1011	1000–4000 bp
+T99	Reagent 1026 1038	standard gel
+T100	Method 1039 1049	extraction
+T101	Action 1068 1086	downstream cloning
+E20	Action:T101 
+R37	Measure Arg1:T97 Arg2:T98	

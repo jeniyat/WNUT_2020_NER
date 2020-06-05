@@ -1,54 +1,86 @@
-T1	Method 0 19	Estimation of Humus
-T2	Reagent 23 34	Soil/Manure
-T3	Action 35 39	Take
-T4	Amount 40 44	20 g
-T5	Reagent 45 49	soil
-T6	Reagent 53 59	manure
-T7	Location 65 78	conical flask
-T8	Action 83 86	add
-T9	Amount 87 93	100 mL
-T10	Reagent 97 107	extractant
-T11	Concentration 109 118	1:5 ratio
-T12	Action 121 126	Shake
-T13	Modifier 127 131	well
-T14	Action 142 150	standing
-T15	Time 155 159	18 h
-T16	Action 161 167	Filter
-T17	Device 176 202	Whatman filter paper no. 1
-T18	Reagent 208 223	residue portion
-T19	Device 227 239	filter paper
-T20	Reagent 250 255	humin
-T21	Reagent 264 272	filtrate
-T22	Reagent 276 281	humus
-T23	Mention 283 285	It
-T24	Modifier 289 299	dark brown
-T25	pH 314 319	pH 13
-T26	Action 325 332	get rid
-T27	Reagent 336 342	sodium
-T28	Reagent 348 353	humus
-T29	Action 357 365	dialyzed
-T30	Device 369 383	dialysis tubes
-T31	Device 387 402	parchment paper
-T32	Reagent 411 428	running tap water
-T33	Time 433 437	24 h
-T34	Mention 439 441	It
-T35	Modifier 445 459	free of sodium
-T36	Action 461 468	Measure
-T37	Generic-Measure 473 479	volume
-T38	Generic-Measure 487 499	known volume
-T39	Amount 501 506	10 mL
-T40	Action 511 516	taken
-T41	Modifier 522 533	pre-weighed
-T42	Size 534 540	100 mL
-T43	Location 541 547	beaker
-T44	Location 553 559	beaker
-T45	Action 563 568	dried
-T46	Device 575 579	oven
-T47	Temperature 583 587	70°C
-T48	Modifier 588 608	to a constant weight
-T49	Method 614 634	difference in weight
-T50	Generic-Measure 645 660	amount of humus
-T51	Amount 664 669	10 mL
-T52	Modifier 671 682	Accordingly
-T53	Action 690 700	calculated
-T54	Method 706 722	percentage basis
+T1	Action 35 39	Take
+E1	Action:T1 Acts-on:T12 Site:T13
+T2	Action 83 86	add
+E2	Action:T2 Acts-on:T15
+T3	Action 122 127	Shake
+E3	Action:T3 
+T6	Action 361 369	dialyzed
+E6	Action:T6 Acts-on:T20 Using:T21 Using2:T24
+T7	Action 467 474	Measure
+E7	Action:T7 
+T8	Action 569 574	dried
+E8	Action:T8 Acts-on:T32 Using:T30
+T10	Amount 40 44	20 g
+T11	Reagent 45 49	soil
+T12	Reagent 53 59	manure
+R1	Or Arg1:T11 Arg2:T12	
+R2	Measure Arg1:T11 Arg2:T10	
+T13	Location 65 78	conical flask
+T14	Amount 87 93	100 mL
+T15	Reagent 97 107	extractant
+R3	Measure Arg1:T15 Arg2:T14	
+T16	Concentration 109 118	1:5 ratio
+R4	Setting Arg1:E2 Arg2:T16	
+T17	Modifier 128 132	well
+T18	Time 156 160	18 h
+T4	Action 143 151	standing
+E4	Action:T4 
+R5	Setting Arg1:E4 Arg2:T18	
+R6	Mod-Link Arg1:E3 Arg2:T17	
+T19	Device 180 206	Whatman filter paper no. 1
+T5	Action 165 171	Filter
+E5	Action:T5 Using:T19
+T20	Reagent 352 357	humus
+T21	Device 373 387	dialysis tubes
+T22	Device 391 406	parchment paper
+R7	Or Arg1:T21 Arg2:T22	
+T23	Time 437 441	24 h
+T24	Reagent 415 432	running tap water
+R8	Setting Arg1:E6 Arg2:T23	
+T25	Generic-Measure 479 485	volume
+R9	Setting Arg1:E7 Arg2:T25	
+T26	Size 540 546	100 mL
+T27	Location 547 553	beaker
+R10	Measure Arg1:T27 Arg2:T26	
+T29	Generic-Measure 493 505	known volume
+T30	Device 581 585	oven
+T31	Temperature 589 593	70°C
+T32	Location 559 565	beaker
+R12	Setting Arg1:E8 Arg2:T31	
+T9	Method 0 19	Estimation of Humus
+T33	Reagent 23 34	Soil/Manure
+T34	Reagent 254 259	humin
+T35	Reagent 268 276	filtrate
+T36	Reagent 212 227	residue portion
+T37	Device 231 243	filter paper
+R13	Meronym Arg1:T36 Arg2:T37	
+T38	Reagent 280 285	humus
+R14	Coreference-Link Arg1:T38 Arg2:T35	
+R15	Coreference-Link Arg1:T34 Arg2:T36	
+T39	Mention 287 289	It
+T40	Modifier 293 303	dark brown
+T41	pH 318 323	pH 13
+R16	Mod-Link Arg1:T39 Arg2:T40	
+R17	Measure Arg1:T39 Arg2:T41	
+T42	Action 329 336	get rid
+E9	Action:T42 Acts-on:T43
+T43	Reagent 340 346	sodium
+T44	Mention 445 447	It
+T45	Modifier 451 465	free of sodium
+R18	Mod-Link Arg1:T44 Arg2:T45	
+T46	Amount 507 512	10 mL
+T47	Action 517 522	taken
+E11	Action:T47 Site:T27
+T28	Modifier 528 539	pre-weighed
+R11	Mod-Link Arg1:T27 Arg2:T28	
+R19	Setting Arg1:E11 Arg2:T29	
+T48	Modifier 594 614	to a constant weight
+R20	Mod-Link Arg1:E8 Arg2:T48	
+T49	Generic-Measure 651 666	amount of humus
+T50	Amount 670 675	10 mL
+T51	Method 620 640	difference in weight
+T52	Action 696 706	calculated
+E10	Action:T52 Using:T53
+T53	Method 712 728	percentage basis
+T54	Modifier 677 688	Accordingly
+R21	Mod-Link Arg1:E10 Arg2:T54	

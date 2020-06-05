@@ -4,7 +4,8 @@ DNA	I-Reagent
 labeling	B-Action
 and	O
 Data	B-Method
-collection	I-Method
+collection
+	I-Method
 
 Equilibrate	B-Action
 DNA	B-Reagent
@@ -12,8 +13,8 @@ DNA	B-Reagent
 min	B-Time
 at	O
 room	B-Temperature
-temp	I-Temperature
-.	O
+temp.
+	I-Temperature
 
 Pipet	B-Action
 mix	I-Action
@@ -21,69 +22,45 @@ mix	I-Action
 with	O
 wide	B-Modifier
 bore	B-Device
-tip	I-Device
-.	O
+tip.
+	I-Device
 
 Prepare	B-Action
 nicking	B-Reagent
 master	I-Reagent
-mix	I-Reagent
-One	B-Numerical
-10μL	I-Numerical
-rxn	B-Amount
-:	B-Reagent
+mix One	I-Reagent
+10μL	B-Amount
+rxn:	B-Reagent
 1μL	B-Amount
-buffer	I-Amount
-+	B-Reagent
+buffer	B-Reagent
++	I-Reagent
 DNA	I-Reagent
 +	I-Reagent
 enzyme	I-Reagent
-in	I-Reagent
+in	O
 200μL	B-Amount
-thin-wall	I-Amount
-PCR	B-Modifier
-tube	B-Location
-.	I-Location
+thin-wall	B-Modifier
+PCR	B-Location
+tube.
+	I-Location
 
 Blood	B-Reagent
-BspQI	I-Reagent
-:	O
+BspQI:	I-Reagent
 5-7u	B-Amount
-(	O
-BNG3	B-Reagent
-)	O
-Cell	B-Reagent
+(BNG3)Cell	B-Reagent
 line	I-Reagent
-BspQI	I-Reagent
-:	O
+BspQI:	I-Reagent
 3-5u	B-Amount
-(	O
-BNG3	B-Reagent
-)	O
-Other	B-Reagent
-BspQI	I-Reagent
-:	O
+(BNG3)Other	B-Reagent
+BspQI:	I-Reagent
 5-10u	B-Amount
-(	O
-BNG3	B-Reagent
-)	O
-BbvCI	B-Reagent
-:	O
+(BNG3)BbvCI:	B-Reagent
 4-8u	B-Amount
-(	O
-BNG2	B-Reagent
-)	O
-Q+C	B-Reagent
-:	O
-3/2	B-Amount
-,	O
-6/4	B-Amount
-,	O
-9/6u	B-Amount
-(	O
-BNG2	B-Reagent
-)	O
-.	O
+(BNG2)Q+C:	B-Reagent
+3/2,	B-Amount
+6/4,	I-Amount
+9/6u	I-Amount
+(BNG2).	B-Reagent
 
 Mix	B-Action
 4x	B-Numerical
@@ -96,13 +73,13 @@ to	O
 8μL	B-Amount
 at	O
 lowest	B-Speed
-speed	I-Speed
-.	O
+speed.
+	I-Speed
 
 Pulse	B-Action
 spin	I-Action
-2sec	B-Time
-.	O
+2sec.
+	B-Time
 
 Incubate	B-Action
 in	O
@@ -115,43 +92,38 @@ hrs	I-Time
 at	O
 37°C	B-Temperature
 with	O
-heated-lid	B-Seal
-.	O
-(	O
-For	O
+heated-lid.	B-Seal
+(For	O
 the	O
 rest	O
 of	O
 the	O
-protocol	O
-,	O
+protocol,	O
 protect	B-Action
 from	O
-light	O
-)	O
-.	O
+light).
+	O
 
 Prepare	B-Action
 the	O
 Labeling	B-Reagent
 Master	I-Reagent
-Mix	I-Reagent
-.	O
+Mix.
+	I-Reagent
 
 reagentamount10x	B-Reagent
 labeling	I-Reagent
 buffer1.5μL10x	I-Reagent
 labeling	I-Reagent
 mix1.5μLTaq	I-Reagent
-5u/μL1μLH201μL	B-Amount
-.	O
+5u/μL1μLH201μL. 	B-Amount
 
 Add	B-Action
 5μL	B-Amount
 Labeling	B-Reagent
 Master	I-Reagent
-Mix	I-Reagent
-.	O
+Mix.
+	I-Reagent
 
 Mix	B-Action
 4x	B-Numerical
@@ -164,13 +136,13 @@ to	O
 13μL	B-Amount
 at	O
 lowest	B-Speed
-speed	I-Speed
-.	O
+speed.
+	I-Speed
 
 Pulse	B-Action
 spin	I-Action
-2sec	B-Time
-.	O
+2sec.
+	B-Time
 
 Incubate	B-Action
 in	O
@@ -183,15 +155,15 @@ min	I-Time
 at	O
 72°C	B-Temperature
 with	O
-heated-lid	B-Seal
-.	O
+heated-lid.
+	B-Seal
 
 Prepare	B-Action
 the	O
 Repair	B-Reagent
 Master	I-Reagent
-Mix	I-Reagent
-.	O
+Mix.
+	I-Reagent
 
 reagentamount10x	B-Reagent
 Thermo	I-Reagent
@@ -200,8 +172,7 @@ Repair	I-Reagent
 Mix0.4μL50mM	I-Reagent
 NAD+0.4μLTaq	I-Reagent
 DNA	I-Reagent
-ligase1μLH202.7μL	I-Reagent
-.	O
+ligase1μLH202.7μL. 	I-Reagent
 
 Mix	B-Action
 4x	B-Numerical
@@ -214,13 +185,13 @@ to	O
 18μL	B-Amount
 at	O
 lowest	B-Speed
-speed	I-Speed
-.	O
+speed.
+	I-Speed
 
 Pulse	B-Action
 spin	I-Action
-2sec	B-Time
-.	O
+2sec.
+	B-Time
 
 Incubate	B-Action
 in	O
@@ -233,21 +204,21 @@ min	I-Time
 at	O
 37°C	B-Temperature
 with	O
-heated-lid	B-Seal
-.	O
+heated-lid.
+	B-Seal
 
 Place	B-Action
 NLR	B-Reagent
 reaction	I-Reagent
 on	O
-ice	B-Location
-.	O
+ice.
+	B-Location
 
 Add	B-Action
 1μL	B-Amount
 Stop	B-Reagent
-Solution	I-Reagent
-.	O
+Solution.
+	I-Reagent
 
 Mix	B-Action
 by	O
@@ -258,13 +229,13 @@ times	O
 with	O
 the	O
 pipet	B-Device
-tip	I-Device
-.	O
+tip.
+	I-Device
 
 Pulse	B-Action
 spin	I-Action
-2sec	B-Time
-.	O
+2sec.
+	B-Time
 
 Add	B-Action
 5μl	B-Amount
@@ -272,8 +243,8 @@ of	O
 the	O
 Repair	B-Reagent
 Master	I-Reagent
-Mix	I-Reagent
-.	O
+Mix.
+	I-Reagent
 
 Equilibrate	B-Action
 Staining	B-Reagent
@@ -282,22 +253,21 @@ Mix	I-Reagent
 components	I-Reagent
 to	O
 room	B-Temperature
-temp	I-Temperature
-.	O
+temp.
+	I-Temperature
 
 Prepare	B-Action
 the	O
 Staining	B-Reagent
 Master	I-Reagent
-Mix	I-Reagent
-.	I-Reagent
+Mix.
+	I-Reagent
 
 reagentamount4x	B-Reagent
 flow	I-Reagent
 buffer15μL1M	I-Reagent
 DTT12μLDNA	I-Reagent
-stain1.5μLH2O11.5μL	I-Reagent
-.	O
+stain1.5μLH2O11.5μL. 	I-Reagent
 
 Aliquot	B-Action
 40μL	B-Amount
@@ -310,8 +280,8 @@ into	O
 a	O
 0.6mL	B-Amount
 amber	B-Location
-tube	I-Location
-.	O
+tube.
+	I-Location
 
 Transfer	B-Action
 NLR	B-Reagent
@@ -320,14 +290,14 @@ Staining	B-Reagent
 Mix	I-Reagent
 with	O
 standard	B-Device
-tip	I-Device
-.	I-Device
+tip.
+	I-Device
 
 Pulse	B-Action
 spin	I-Action
 2	B-Time
-sec	I-Time
-.	I-Time
+sec.
+	I-Time
 
 Gently	B-Modifier
 mix	B-Action
@@ -340,14 +310,14 @@ bore	B-Device
 tip	I-Device
 set	O
 to	O
-50μL	B-Amount
-.	O
+50μL.
+	B-Amount
 
 Pulse	B-Action
 spin	I-Action
 2	B-Time
-sec	I-Time
-.	O
+sec.
+	I-Time
 
 Place	B-Action
 staining	B-Reagent
@@ -359,8 +329,8 @@ to	O
 ensure	O
 uniform	B-Modifier
 DNA	B-Reagent
-staining	I-Reagent
-.	O
+staining.
+	I-Reagent
 
 Equilibrate	B-Action
 NLRS	B-Reagent
@@ -369,8 +339,8 @@ room	B-Temperature
 temp	I-Temperature
 for	O
 ~30	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 Gently	B-Modifier
 mix	B-Action
@@ -382,39 +352,38 @@ bore	B-Device
 tip	I-Device
 set	O
 to	O
-50μL	B-Amount
-.	O
+50μL.
+	B-Amount
 
 Pulse	B-Action
 spin	I-Action
 2	B-Time
-sec	I-Time
-.	O
+sec.
+	I-Time
 
 Remove	B-Action
 2μL	B-Amount
 aliquots	B-Reagent
 from	O
 the	O
-Top	B-Location
-,	O
-Middle	B-Location
+Top,	B-Location
+Middle	I-Location
 and	O
 Bottom	B-Location
 to	O
 separate	B-Modifier
 Qubit	B-Location
 Assay	I-Location
-tubes	I-Location
-.	O
+tubes.
+	I-Location
 
 Add	B-Action
 18uL	B-Amount
 of	O
 Qubit	B-Reagent
 HS	I-Reagent
-Buffer	I-Reagent
-.	O
+Buffer.
+	I-Reagent
 
 Sonicate	B-Action
 10	B-Time
@@ -422,26 +391,26 @@ min	I-Time
 in	O
 a	O
 bath	B-Device
-sonicator	I-Device
-.	O
+sonicator.
+	I-Device
 
 Add	B-Action
 180μL	B-Amount
 Qubit	B-Reagent
 reagent	I-Reagent
-mix	I-Reagent
-.	I-Reagent
+mix.
+	I-Reagent
 
 Vortex	B-Action
 5	B-Time
-seconds	I-Time
-.	O
+seconds.
+	I-Time
 
 Pulse	B-Action
 spin	I-Action
 2	B-Time
-sec	I-Time
-.	O
+sec.
+	I-Time
 
 Incubate	B-Action
 at	B-Modifier
@@ -450,28 +419,26 @@ least	I-Modifier
 min	I-Time
 at	O
 room	B-Temperature
-temp	I-Temperature
-.	O
+temp.
+	I-Temperature
 
 Quantitate	B-Action
 with	O
 Qubit	B-Device
 2.0	I-Device
-Fluorimeter	I-Device
-.	O
+Fluorimeter.
+	I-Device
 
 NLRS	B-Reagent
 DNA	I-Reagent
-conc	B-Measure-Type
-:	O
-3-10ng/μL	B-Concentration
-.	O
+conc:	B-Measure-Type
+3-10ng/μL.
+	B-Concentration
 
 CV	B-Measure-Type
 <	B-Modifier
-25	B-Generic-Measure
-%	I-Generic-Measure
-.	O
+25%.
+	B-Generic-Measure
 
 Load	B-Action
 sample	B-Reagent
@@ -488,7 +455,8 @@ a	O
 run	O
 on	O
 irys	B-Device
-system	I-Device
+system
+	I-Device
 
 
 

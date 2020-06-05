@@ -1,100 +1,122 @@
-T1	Method 0 14	Transformation
-T2	Reagent 18 36	Bacterial Cultures
-T3	Method 47 73	Calcium Chloride Procedure
-T4	Action 74 78	Grow
-T5	Amount 79 83	5 mL
-T6	Reagent 91 101	host cells
-T7	Time 102 111	overnight
-T8	Reagent 115 122	L broth
-T9	Temperature 126 130	37°C
-T10	Action 132 141	Inoculate
-T11	Amount 142 148	100 mL
-T12	Reagent 152 159	L broth
-T13	Amount 165 169	1 mL
-T14	Modifier 177 186	overnight
-T15	Reagent 187 194	culture
-T16	Action 196 200	Grow
-T17	Reagent 205 210	cells
-T18	Action 216 223	shaking
-T19	Temperature 227 231	37°C
-T20	Measure-Type 237 244	density
-T21	Modifier 248 261	approximately
-T22	Generic-Measure 262 278	5 X 107 cells/ml
-T23	Action 280 285	Chill
-T24	Reagent 290 297	culture
-T25	Location 301 304	ice
-T26	Time 309 315	10 min
-T27	Action 317 327	Centrifuge
-T28	Reagent 332 347	cell suspension
-T29	Device 355 373	Sorvall SS34 rotor
-T30	Speed 377 383	4,000g
-T31	Time 385 390	5 min
-T32	Temperature 392 395	4°C
-T33	Action 397 404	Discard
-T34	Reagent 409 420	supernatant
-T35	Action 422 431	Resuspend
-T36	Reagent 436 441	cells
-T37	Measure-Type 464 470	volume
-T38	Modifier 479 487	ice cold
-T39	Modifier 489 496	sterile
-T40	Reagent 497 505	solution
-T41	Concentration 509 514	10 mM
-T42	Reagent 515 523	Tris-HCl
-T43	pH 525 531	pH 8.0
-T44	Concentration 533 538	50 mM
-T45	Reagent 539 544	CaCl2
-T46	Action 546 551	Place
-T47	Reagent 556 571	cell suspension
-T48	Location 578 586	ice bath
-T49	Time 591 597	15 min
-T50	Action 599 606	Discard
-T51	Reagent 611 622	supernatant
-T52	Action 624 633	Resuspend
-T53	Reagent 638 643	cells
-T54	Measure-Type 670 676	volume
-T55	Modifier 685 693	ice cold
-T56	Modifier 695 702	sterile
-T57	Reagent 703 711	solution
-T58	Concentration 715 720	10 mM
-T59	Reagent 721 729	Tris-HCl
-T60	pH 731 737	pH 8.0
-T61	Concentration 739 744	50 mM
-T62	Reagent 745 750	CaCl2
-T63	Action 752 760	Dispense
-T64	Amount 761 767	0.2 mL
-T65	Reagent 768 776	aliquots
-T66	Modifier 782 792	prechilled
-T67	Location 793 808	microfuge tubes
-T68	Action 810 815	Store
-T69	Reagent 820 825	cells
-T70	Temperature 829 832	4°C
-T71	Time 837 848	12-24 hours
-T72	Action 850 853	Add
-T73	Reagent 858 861	DNA
-T74	Measure-Type 876 882	volume
-T75	Amount 896 908	1-2 µL/plate
-T76	Action 911 914	Mix
-T77	Action 919 924	store
-T78	Location 928 931	ice
-T79	Time 936 942	30 min
-T80	Action 944 952	Transfer
-T81	Reagent 957 965	mixtures
-T82	Temperature 969 973	42°C
-T83	Time 978 983	2 min
-T84	Action 985 988	Add
-T85	Amount 989 995	1.0 mL
-T86	Reagent 999 1006	L broth
-T87	Modifier 1010 1014	each
-T88	Location 1015 1019	tube
-T89	Action 1024 1032	incubate
-T90	Temperature 1036 1040	37°C
-T91	Time 1045 1051	30 min
-T92	Reagent 1053 1075	tetracycline selection
-T93	Time 1080 1086	60 min
-T94	Reagent 1088 1098	ampicillin
-T95	Reagent 1102 1121	kanamycin selection
-T96	Action 1131 1138	shaking
-T97	Action 1140 1146	Spread
+T1	Action 74 78	Grow
+E1	Action:T1 Acts-on:T26 Site:T28
+T2	Action 132 141	Inoculate
+E2	Action:T2 Acts-on:T31 Using:T34
+T3	Action 196 200	Grow
+E3	Action:T3 Acts-on:T35 Measure-Type-Link:T38
+T4	Action 216 223	shaking
+E4	Action:T4 
+T5	Action 280 285	Chill
+E5	Action:T5 Acts-on:T40 Site:T41
+T6	Action 317 327	Centrifuge
+E6	Action:T6 Acts-on:T43 Using:T44
+T7	Action 397 404	Discard
+E7	Action:T7 Acts-on:T48
+T8	Action 422 431	Resuspend
+E8	Action:T8 Acts-on:T49 Using:T54
+T9	Action 546 551	Place
+E9	Action:T9 Acts-on:T60 Site:T61
+T10	Action 599 606	Discard
+E10	Action:T10 Acts-on:T63
+T11	Action 624 633	Resuspend
+E11	Action:T11 Acts-on:T64 Using:T69
+T12	Action 752 760	Dispense
+E12	Action:T12 Acts-on:T76 Site:T78
+T13	Action 810 815	Store
+E13	Action:T13 Acts-on:T79
+T14	Action 850 853	Add
+E14	Action:T14 Acts-on:T82 Site:T85
+T15	Action 919 924	store
+E15	Action:T15 Site:T86
+T16	Action 911 914	Mix
+E16	Action:T16 Site:T86
+T17	Action 944 952	Transfer
+E17	Action:T17 Acts-on:T88
+T18	Action 985 988	Add
+E18	Action:T18 Acts-on:T92 Site:T94
+T19	Action 1140 1146	Spread
+E19	Action:T19 Acts-on:T101 Site:T102 Using:T103
+T20	Action 1024 1032	incubate
+E20	Action:T20 
+T21	Action 1288 1293	Leave
+E21	Action:T21 Acts-on:T105
+T22	Action 1411 1417	Invert
+E22	Action:T22 Acts-on:T112
+T23	Action 1433 1441	incubate
+E23	Action:T23 
+T24	Action 1490 1500	Centrifuge
+E24	Action:T24 Acts-on:T117 Using:T118
+T25	Amount 79 83	5 mL
+T26	Reagent 91 101	host cells
+T27	Time 102 111	overnight
+T28	Reagent 115 122	L broth
+T29	Temperature 126 130	37°C
+T30	Amount 142 148	100 mL
+T31	Reagent 152 159	L broth
+T32	Amount 165 169	1 mL
+T33	Modifier 177 186	overnight
+T34	Reagent 187 194	culture
+T35	Reagent 205 210	cells
+T36	Temperature 227 231	37°C
+T37	Generic-Measure 262 278	5 X 107 cells/ml
+T38	Measure-Type 237 244	density
+T39	Modifier 248 261	approximately
+T40	Reagent 290 297	culture
+T41	Location 301 304	ice
+T42	Time 309 315	10 min
+T43	Reagent 332 347	cell suspension
+T44	Device 355 373	Sorvall SS34 rotor
+T45	Speed 377 383	4,000g
+T46	Time 385 390	5 min
+T47	Temperature 392 395	4°C
+T48	Reagent 409 420	supernatant
+T49	Reagent 436 441	cells
+T50	Measure-Type 464 470	volume
+T51	Modifier 479 482	ice
+T52	Modifier 483 487	cold
+T53	Modifier 489 496	sterile
+T54	Reagent 497 505	solution
+T55	Concentration 509 514	10 mM
+T56	Reagent 515 523	Tris-HCl
+T57	pH 525 531	pH 8.0
+T58	Concentration 533 538	50 mM
+T59	Reagent 539 544	CaCl2
+T60	Reagent 556 571	cell suspension
+T61	Location 578 586	ice bath
+T62	Time 591 597	15 min
+T63	Reagent 611 622	supernatant
+T64	Reagent 638 643	cells
+T66	Modifier 685 688	ice
+T67	Modifier 689 693	cold
+T68	Modifier 695 702	sterile
+T69	Reagent 703 711	solution
+T70	Concentration 715 720	10 mM
+T71	Reagent 721 729	Tris-HCl
+T72	pH 731 737	pH 8.0
+T73	Concentration 739 744	50 mM
+T74	Reagent 745 750	CaCl2
+T75	Amount 761 767	0.2 mL
+T76	Reagent 768 776	aliquots
+T77	Modifier 782 792	prechilled
+T78	Location 793 808	microfuge tubes
+T79	Reagent 820 825	cells
+T80	Temperature 829 832	4°C
+T81	Time 837 848	12-24 hours
+T82	Reagent 858 861	DNA
+T84	Amount 896 902	1-2 µL
+T85	Location 903 908	plate
+T86	Location 928 931	ice
+T87	Time 936 942	30 min
+T88	Reagent 957 965	mixtures
+T89	Temperature 969 973	42°C
+T90	Time 978 983	2 min
+T91	Amount 989 995	1.0 mL
+T92	Reagent 999 1006	L broth
+T93	Modifier 1010 1014	each
+T94	Location 1015 1019	tube
+T95	Temperature 1036 1040	37°C
+T96	Time 1045 1051	30 min
+T97	Time 1080 1086	60 min
 T98	Modifier 1150 1161	appropriate
 T99	Amount 1162 1168	volume
 T100	Amount 1178 1188	100-200 µL
@@ -102,24 +124,88 @@ T101	Reagent 1193 1198	cells
 T102	Reagent 1204 1219	selective media
 T103	Method 1240 1259	spread plate method
 T104	Method 1267 1286	agar overlay method
-T105	Action 1288 1293	Leave
-T106	Location 1298 1304	plates
-T107	Temperature 1308 1324	room temperature
-T108	Reagent 1335 1347	agar overlay
-T109	Action 1352 1362	solidified
-T110	Reagent 1370 1376	liquid
-T111	Action 1386 1394	absorbed
-T112	Location 1404 1409	plate
-T113	Action 1411 1417	Invert
-T114	Location 1422 1428	plates
-T115	Action 1433 1441	incubate
-T116	Temperature 1445 1449	37°C
-T117	Reagent 1451 1459	Colonies
-T118	Action 1467 1473	appear
-T119	Time 1477 1488	12-16 hours
-T120	Action 1490 1500	Centrifuge
-T121	Reagent 1505 1515	suspension
-T122	Device 1523 1541	Sorvall SS34 rotor
-T123	Speed 1545 1551	4,000g
-T124	Time 1553 1558	5 min
-T125	Temperature 1560 1563	4°C
+T105	Location 1298 1304	plates
+T106	Temperature 1308 1324	room temperature
+T107	Reagent 1335 1347	agar overlay
+T108	Action 1352 1362	solidified
+E25	Action:T108 Acts-on:T107
+T109	Action 1386 1394	absorbed
+E26	Action:T109 Acts-on:T111 Site:T110
+T110	Location 1404 1409	plate
+T111	Reagent 1370 1376	liquid
+T112	Location 1422 1428	plates
+T113	Temperature 1445 1449	37°C
+T114	Time 1477 1488	12-16 hours
+T115	Action 1467 1473	appear
+E27	Action:T115 Acts-on:T116
+T116	Reagent 1451 1459	Colonies
+T117	Reagent 1505 1515	suspension
+T118	Device 1523 1541	Sorvall SS34 rotor
+T119	Speed 1545 1551	4,000g
+T120	Time 1553 1558	5 min
+T121	Temperature 1560 1563	4°C
+R1	Measure Arg1:T26 Arg2:T25	
+R2	Setting Arg1:E1 Arg2:T27	
+R3	Setting Arg1:E1 Arg2:T29	
+R4	Measure Arg1:T31 Arg2:T30	
+R5	Mod-Link Arg1:T34 Arg2:T33	
+R6	Measure Arg1:T34 Arg2:T32	
+R7	Setting Arg1:E4 Arg2:T36	
+R8	Mod-Link Arg1:T37 Arg2:T39	
+R9	Setting Arg1:E3 Arg2:T37	
+R10	Setting Arg1:E5 Arg2:T42	
+R11	Setting Arg1:E6 Arg2:T45	
+R12	Setting Arg1:E6 Arg2:T46	
+R13	Setting Arg1:E6 Arg2:T47	
+R14	Mod-Link Arg1:T54 Arg2:T53	
+R15	Mod-Link Arg1:T54 Arg2:T52	
+R16	Mod-Link Arg1:T54 Arg2:T51	
+R18	Measure Arg1:T56 Arg2:T55	
+R19	Measure Arg1:T56 Arg2:T57	
+R20	Measure Arg1:T59 Arg2:T58	
+R21	Meronym Arg1:T56 Arg2:T54	
+R22	Meronym Arg1:T59 Arg2:T54	
+R23	Setting Arg1:E9 Arg2:T62	
+R24	Mod-Link Arg1:T69 Arg2:T68	
+R25	Mod-Link Arg1:T69 Arg2:T67	
+R26	Mod-Link Arg1:T69 Arg2:T66	
+R28	Measure Arg1:T71 Arg2:T70	
+R29	Measure Arg1:T71 Arg2:T72	
+R30	Measure Arg1:T74 Arg2:T73	
+R31	Meronym Arg1:T71 Arg2:T69	
+R32	Meronym Arg1:T74 Arg2:T69	
+R33	Measure Arg1:T76 Arg2:T75	
+R34	Mod-Link Arg1:T78 Arg2:T77	
+R35	Setting Arg1:E13 Arg2:T80	
+R36	Setting Arg1:E13 Arg2:T81	
+R37	Measure Arg1:T85 Arg2:T84	
+R39	Setting Arg1:E15 Arg2:T87	
+R40	Setting Arg1:E16 Arg2:T87	
+R41	Setting Arg1:E17 Arg2:T89	
+R42	Setting Arg1:E17 Arg2:T90	
+R43	Measure Arg1:T92 Arg2:T91	
+R44	Mod-Link Arg1:T94 Arg2:T93	
+R45	Setting Arg1:E20 Arg2:T95	
+R46	Setting Arg1:E20 Arg2:T96	
+R47	Or Arg1:T96 Arg2:T97	
+R48	Measure Arg1:T101 Arg2:T99	
+R49	Or Arg1:T99 Arg2:T100	
+R50	Mod-Link Arg1:T99 Arg2:T98	
+R51	Or Arg1:T103 Arg2:T104	
+R52	Setting Arg1:E21 Arg2:T106	
+R53	Setting Arg1:E23 Arg2:T113	
+R54	Setting Arg1:E27 Arg2:T114	
+R55	Setting Arg1:E24 Arg2:T119	
+R56	Setting Arg1:E24 Arg2:T120	
+R57	Setting Arg1:E24 Arg2:T121	
+T122	Method 0 14	Transformation
+T123	Reagent 18 36	Bacterial Cultures
+T124	Method 47 73	Calcium Chloride Procedure
+T125	Measure-Type 670 676	volume
+T65	Measure-Type 876 882	volume
+T83	Reagent 1053 1075	tetracycline selection
+T126	Reagent 1088 1098	ampicillin
+T127	Reagent 1102 1121	kanamycin selection
+R17	Or Arg1:T127 Arg2:T126	
+T128	Action 1131 1138	shaking
+E28	Action:T128 

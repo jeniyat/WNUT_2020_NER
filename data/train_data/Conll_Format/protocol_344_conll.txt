@@ -1,4 +1,5 @@
-Immunoprecipitation	B-Method
+Immunoprecipitation
+	B-Method
 
 Take	B-Action
 cell	B-Reagent
@@ -9,8 +10,8 @@ incubator	B-Device
 and	O
 pre-cool	B-Action
 on	O
-ice	B-Reagent
-.	O
+ice.
+	B-Reagent
 
 Rinse	B-Action
 cells	B-Reagent
@@ -19,8 +20,8 @@ with	O
 ice-cold	B-Modifier
 PBS	B-Reagent
 for	O
-twice	B-Numerical
-.	O
+twice.
+	B-Numerical
 
 Scrape	B-Action
 cells	B-Reagent
@@ -29,13 +30,11 @@ spin	B-Action
 down	I-Action
 @	O
 500	B-Speed
-rpm	I-Speed
-,	O
-10min	B-Time
-,	O
-4	B-Time
-°C	I-Time
-.	O
+rpm,	I-Speed
+10min,	B-Time
+4	I-Time
+°C.
+	I-Time
 
 Add	B-Action
 500l	B-Amount
@@ -47,41 +46,37 @@ to	O
 each	O
 cell	B-Reagent
 pellets	I-Reagent
-(	O
-upto	B-Modifier
+(upto	B-Modifier
 2E+7	B-Numerical
-cells	B-Reagent
-)	O
-.	O
+cells).
+	B-Reagent
 
 Rotate	B-Action
 for	O
 2h	B-Time
 at	O
-4°C	B-Temperature
-.	O
+4°C.
+	B-Temperature
 
 Centrifuge	B-Action
 14,000rpm	B-Speed
 for	O
 30	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 Save	B-Action
-supernatant	B-Reagent
-.	O
+supernatant.
+	B-Reagent
 
-(	O
-Optional	O
-)	O
+(Optional)	O
 Roughly	B-Modifier
 determine	B-Action
 protein	B-Reagent
 concentration	B-Measure-Type
 with	O
-OD280	B-Reagent
-.	O
+OD280.
+	B-Reagent
 
 Adjust	B-Action
 all	O
@@ -89,29 +84,26 @@ samples	B-Reagent
 to	O
 the	O
 same	B-Measure-Type
-concentration	I-Measure-Type
-.	O
+concentration.
+	I-Measure-Type
 
 Determine	B-Action
 amount	B-Measure-Type
 of	O
 beads	B-Reagent
 needed	O
-(	O
-Rockland	B-Reagent
+(Rockland	B-Reagent
 True	I-Reagent
 Blot	I-Reagent
 IP	I-Reagent
-beads	I-Reagent
-;	O
+beads;	I-Reagent
 20	B-Amount
 ul	I-Amount
 beads	B-Reagent
 per	O
 500ul	B-Amount
-sample	B-Reagent
-)	O
-.	O
+sample).
+	B-Reagent
 
 Wash	B-Action
 beads	B-Reagent
@@ -120,16 +112,14 @@ in	O
 lysis	B-Reagent
 buffer	I-Reagent
 for	O
-twice	B-Numerical
-.	O
+twice.
+	B-Numerical
 
 Spin	B-Action
 down	I-Action
-@	O
-500g	B-Speed
-,	O
-30s	B-Time
-.	O
+@500g,	B-Speed
+30s.
+	B-Time
 
 Resuspend	B-Action
 pelleted	B-Modifier
@@ -140,10 +130,9 @@ BSA	B-Reagent
 ,	O
 rotate	B-Action
 @	O
-RT	B-Temperature
-,	O
-10min	B-Time
-.	O
+RT,	B-Temperature
+10min.
+	B-Time
 
 Remove	B-Action
 BSA	B-Reagent
@@ -155,8 +144,8 @@ lysis	B-Reagent
 buffer	I-Reagent
 for	O
 3	B-Numerical
-times	O
-.	O
+times.
+	O
 
 Resuspend	B-Action
 pelleted	B-Modifier
@@ -164,8 +153,8 @@ beads	B-Reagent
 1:1	B-Concentration
 with	O
 lysis	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.
+	I-Reagent
 
 Save	B-Action
 40ul	B-Amount
@@ -175,8 +164,8 @@ lysate	I-Reagent
 per	O
 sample	B-Reagent
 as	O
-input	O
-.	O
+input.
+	O
 
 Add	B-Action
 primary	B-Reagent
@@ -185,16 +174,15 @@ and	O
 beads	B-Reagent
 to	O
 IP	B-Reagent
-lysate	I-Reagent
-.	O
+lysate.
+	I-Reagent
 
 Rotate	B-Action
-@	O
-4	B-Temperature
+@4	B-Temperature
 degree	I-Temperature
 for	O
-overnight	B-Time
-.	O
+overnight.
+	B-Time
 
 Pellet	B-Action
 beads	B-Reagent
@@ -202,13 +190,12 @@ beads	B-Reagent
 500g	B-Speed
 for	O
 30sec	B-Time
-@	O
-RT	B-Temperature
+@RT	B-Temperature
 and	O
 discard	B-Action
 the	O
-supernatant	B-Reagent
-.	O
+supernatant.
+	B-Reagent
 
 Wash	B-Action
 beads	B-Reagent
@@ -216,13 +203,13 @@ in	O
 1ml	B-Amount
 ice-cold	B-Modifier
 lysis	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.
+	I-Reagent
 
 Repeat	B-Action
 3	B-Numerical
-times	O
-.	O
+times.
+	O
 
 Resuspend	B-Action
 beads	B-Reagent
@@ -231,29 +218,29 @@ in	O
 of	O
 2×	B-Concentration
 loading	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.
+	I-Reagent
 
 Boil	B-Action
 the	O
 beads	B-Reagent
 for	O
-5min	B-Time
-.	O
+5min.
+	B-Time
 
 Centrifuge	B-Action
 @	O
 RT	B-Temperature
 for	O
-1min	B-Time
-.	O
+1min.
+	B-Time
 
 Save	B-Action
 supernatant	B-Reagent
 and	O
 perform	B-Action
-SDS-PAGE	I-Action
-.	O
+SDS-PAGE.
+	I-Action
 
 
 

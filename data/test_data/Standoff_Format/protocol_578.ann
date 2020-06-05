@@ -1,106 +1,172 @@
-T1	Method 0 29	Filtering for Cell Collection
-T2	Device 30 34	Pump
-T3	Device 37 80	Steel filter tank → A/E filter → Durapore →
-T4	Modifier 84 96	rinsed cubie
-T5	Location 97 108	container (
-T6	Mention 112 119	one the
-T7	Reagent 120 130	sample was
-T8	Modifier 131 134	in)
-T9	Action 136 141	Clamp
-T10	Location 146 151	tubes
-T11	Location 155 164	manifolds
-T12	Location 169 181	filter tanks
-T13	Device 193 207	bleeder valves
-T14	Modifier 212 218	on top
-T15	Action 220 227	Turn on
-T16	Device 228 232	pump
-T17	Action 242 247	bleed
-T18	Device 248 251	A/E
-T19	Device 257 265	Durapore
-T20	Device 274 277	A/E
-T21	Action 285 289	Keep
-T22	Location 290 313	cubie container on ice-
-T23	Reagent 314 319	water
-T24	Action 328 332	used
-T25	Measure-Type 337 356	viral concentration
-T26	Action 358 363	Place
-T27	Location 364 376	“ out ” tube
-T28	Device 382 390	Durapore
-T29	Location 398 410	filter flask
-T30	Modifier 411 458	that is attached to the vacuum side of the pump
-T31	Action 460 464	Wait
-T32	Modifier 465 470	until
-T33	Reagent 471 476	water
-T34	Action 477 489	stops moving
-T35	Location 490 508	towards the vacuum
-T36	Modifier 513 517	only
-T37	Reagent 518 525	bubbles
-T38	Action 530 544	coming through
-T39	Action 546 550	Open
-T40	Seal 551 572	steel filter tank lid
-T41	Modifier 577 583	slowly
-T42	Action 584 588	open
-T43	Device 589 601	tank bleeder
-T44	Location 602 607	valve
-T45	Action 611 623	depressurize
-T46	Modifier 625 631	SLOWLY
-T47	Measure-Type 639 647	pressure
-T48	Action 652 659	dropped
-T49	Modifier 660 673	significantly
-T50	Action 674 681	push in
-T51	Seal 682 696	steel tank lid
-T52	Action 698 703	allow
-T53	Time 706 722	few more minutes
-T54	Reagent 727 732	water
-T55	Action 736 749	drain through
-T56	Action 751 761	Disconnect
-T57	Device 762 767	clamp
-T58	Location 773 784	bottom side
-T59	Device 788 798	A/E filter
-T60	Action 800 806	remove
-T61	Location 807 811	tube
-T62	Location 817 829	“ out ” side
-T63	Device 833 836	A/E
-T64	Action 838 843	Place
-T65	Device 844 852	Durapore
-T66	Location 856 861	knees
-T67	Action 866 871	swirl
-T68	Modifier 872 918	gently so all water goes into the filter flask
-T69	Reagent 925 930	water
-T70	Modifier 931 937	is out
-T71	Action 939 943	open
-T72	Device 944 952	manifold
-T73	Modifier 953 959	slowly
-T74	Action 961 968	fold up
-T75	Device 969 975	filter
-T76	Action 980 985	place
-T77	Device 989 998	whirlpack
-T78	Action 1000 1006	Remove
-T79	Device 1007 1015	Durapore
-T80	Location 1016 1028	“ out ” tube
-T81	Location 1034 1046	filter flask
-T82	Action 1048 1053	place
-T83	Device 1054 1057	A/E
-T84	Location 1058 1070	“ out ” tube
-T85	Location 1076 1088	filter flask
-T86	Action 1090 1095	Place
-T87	Device 1096 1099	A/E
-T88	Location 1103 1108	knees
-T89	Reagent 1114 1119	water
-T90	Action 1120 1125	drain
-T91	Location 1139 1151	filter flask
-T92	Modifier 1152 1161	as before
-T93	Action 1163 1167	Open
-T94	Location 1168 1176	manifold
-T95	Modifier 1177 1183	slowly
-T96	Action 1185 1193	peel off
-T97	Location 1194 1198	ring
-T98	Device 1202 1208	filter
-T99	Action 1210 1217	discard
-T100	Action 1219 1223	fold
-T101	Device 1224 1230	filter
-T102	Action 1235 1240	place
-T103	Location 1244 1253	whirlpack
-T104	Action 1263 1271	turn off
-T105	Device 1272 1276	pump
-T106	Modifier 1277 1280	now
+T1	Action 138 143	Clamp
+E1	Action:T1 Acts-on:T13 Site:T17 Site2:T18
+T2	Action 292 296	Keep
+E2	Action:T2 Acts-on:T14 Site:T15
+T3	Action 368 373	Place
+E3	Action:T3 Acts-on:T16 Site:T27
+T5	Action 559 563	Open
+E5	Action:T5 Acts-on:T4
+T6	Action 597 601	open
+E6	Action:T6 Acts-on:T30
+T7	Action 767 777	Disconnect
+E7	Action:T7 Acts-on:T20 Site:T21
+T8	Action 816 822	remove
+E8	Action:T8 Acts-on:T23 Site:T24
+T9	Action 854 859	Place
+E9	Action:T9 Acts-on:T32 Site:T33
+T10	Action 1018 1024	Remove
+E10	Action:T10 Acts-on:T38 Site:T39
+T11	Action 1107 1112	Place
+E11	Action:T11 Acts-on:T44 Site:T45
+T12	Action 1181 1185	Open
+E12	Action:T12 Acts-on:T50
+T13	Location 148 153	tubes
+T14	Location 297 312	cubie container
+T15	Location 313 319	on ice
+T16	Location 374 384	“out” tube
+T17	Location 157 166	manifolds
+T18	Location 171 183	filter tanks
+T4	Seal 564 585	steel filter tank lid
+T19	Modifier 590 596	slowly
+R1	Mod-Link Arg1:E6 Arg2:T19	
+T20	Device 778 783	clamp
+T21	Location 789 800	bottom side
+T22	Device 804 814	A/E filter
+R2	Meronym Arg1:T21 Arg2:T22	
+T23	Location 823 827	tube
+T24	Location 833 843	“out” side
+T25	Device 847 850	A/E
+R3	Meronym Arg1:T24 Arg2:T25	
+T26	Device 390 398	Durapore
+T27	Location 406 418	filter flask
+T28	Modifier 419 466	that is attached to the vacuum side of the pump
+R4	Mod-Link Arg1:T27 Arg2:T28	
+R5	Meronym Arg1:T16 Arg2:T26	
+T29	Device 602 614	tank bleeder
+T30	Location 615 620	valve
+R6	Meronym Arg1:T30 Arg2:T29	
+T31	Action 624 636	depressurize
+E4	Action:T31 
+T32	Device 860 868	Durapore
+T33	Location 872 877	knees
+R7	Meronym Arg1:T33 Arg2:T32	
+T34	Action 882 887	swirl
+E13	Action:T34 Acts-on:T32
+T35	Modifier 888 894	gently
+T36	Modifier 895 934	so all water goes into the filter flask
+R8	Mod-Link Arg1:E13 Arg2:T35	
+R9	Mod-Link Arg1:E13 Arg2:T36	
+T37	Device 1025 1033	Durapore
+T38	Location 1034 1044	“out” tube
+R10	Meronym Arg1:T38 Arg2:T37	
+T39	Location 1050 1062	filter flask
+T40	Action 1064 1069	place
+E14	Action:T40 Acts-on:T42 Site:T43
+T41	Device 1070 1073	A/E
+T42	Location 1074 1084	“out” tube
+R11	Meronym Arg1:T42 Arg2:T41	
+T43	Location 1090 1102	filter flask
+T44	Device 1113 1116	A/E
+T45	Location 1120 1125	knees
+R12	Meronym Arg1:T45 Arg2:T44	
+T46	Action 1137 1142	drain
+E15	Action:T46 Acts-on:T47 Site:T48
+T47	Reagent 1131 1136	water
+T48	Location 1156 1168	filter flask
+T49	Modifier 1169 1178	as before
+R13	Mod-Link Arg1:E15 Arg2:T49	
+T50	Location 1186 1194	manifold
+T51	Modifier 1195 1201	slowly
+R14	Mod-Link Arg1:E12 Arg2:T51	
+T52	Action 1203 1211	peel off
+E16	Action:T52 Acts-on:T53
+T53	Location 1212 1216	ring
+T54	Device 1220 1226	filter
+T55	Action 1228 1235	discard
+E17	Action:T55 Acts-on:T53
+R15	Meronym Arg1:T53 Arg2:T54	
+T56	Action 1237 1241	fold
+E18	Action:T56 Acts-on:T57
+T57	Device 1242 1248	filter
+T58	Action 1253 1258	place
+E19	Action:T58 Site:T59 Acts-on:T57
+T59	Location 1262 1271	whirlpack
+T60	Method 0 29	Filtering for Cell Collection
+T62	Device 37 54	Steel filter tank
+T63	Device 57 67	A/E filter
+T64	Device 70 78	Durapore
+T65	Modifier 81 90	DI rinsed
+T66	Location 91 106	cubie container
+T67	Mention 112 115	one
+T68	Reagent 120 126	sample
+T69	Modifier 127 133	was in
+R16	Mod-Link Arg1:T68 Arg2:T69	
+R17	Coreference-Link Arg1:T67 Arg2:T66	
+R18	Mod-Link Arg1:T66 Arg2:T65	
+T70	Device 197 211	bleeder valves
+T71	Modifier 216 222	on top
+R19	Mod-Link Arg1:T70 Arg2:T71	
+T72	Action 225 232	Turn on
+E21	Action:T72 Acts-on:T73
+T73	Device 233 237	pump
+T61	Device 30 34	Pump
+T74	Action 247 252	bleed
+E20	Action:T74 Acts-on:T75 Acts-on2:T76 Acts-on3:T77
+T75	Device 253 256	A/E
+T76	Device 262 270	Durapore
+T77	Device 279 282	A/E
+T78	Reagent 321 326	water
+T79	Action 335 339	used
+E22	Action:T79 Measure-Type-Link:T80 Using:T78
+T80	Measure-Type 344 363	viral concentration
+T81	Action 470 474	Wait
+E23	Action:T81 Acts-on:T83
+T82	Modifier 475 480	until
+T83	Reagent 481 486	water
+T84	Action 487 499	stops moving
+E24	Action:T84 Site:T85 Acts-on:T83
+T85	Location 500 518	towards the vacuum
+T86	Modifier 523 527	only
+T87	Reagent 528 535	bubbles
+T88	Action 540 554	coming through
+E25	Action:T88 Acts-on:T87
+R20	Mod-Link Arg1:T87 Arg2:T86	
+R21	Mod-Link Arg1:T83 Arg2:T82	
+R22	Mod-Link Arg1:E23 Arg2:T82	
+T89	Measure-Type 653 661	pressure
+T90	Action 666 673	dropped
+E26	Action:T90 Measure-Type-Link:T89
+T91	Modifier 674 687	significantly
+T92	Action 688 695	push in
+E27	Action:T92 Acts-on:T93
+T93	Seal 696 710	steel tank lid
+R23	Mod-Link Arg1:E26 Arg2:T91	
+T94	Action 712 717	allow
+E28	Action:T94 
+T95	Time 720 736	few more minutes
+R24	Setting Arg1:E28 Arg2:T95	
+T97	Action 750 763	drain through
+E30	Action:T97 Acts-on:T96
+T96	Reagent 741 746	water
+R25	Setting Arg1:E30 Arg2:T95	
+T98	Reagent 942 947	water
+T99	Modifier 948 954	is out
+T100	Action 956 960	open
+E29	Action:T100 Acts-on:T101
+T101	Device 961 969	manifold
+T102	Modifier 970 976	slowly
+T103	Action 978 985	fold up
+E31	Action:T103 Acts-on:T104
+T104	Device 986 992	filter
+T105	Action 997 1002	place
+E32	Action:T105 Acts-on:T106
+T106	Device 1006 1015	whirlpack
+R26	Mod-Link Arg1:E29 Arg2:T102	
+R27	Mod-Link Arg1:T98 Arg2:T99	
+T107	Action 1282 1290	turn off
+E33	Action:T107 Acts-on:T108
+T108	Device 1291 1295	pump
+T109	Modifier 1296 1299	now
+R28	Mod-Link Arg1:E33 Arg2:T109	
+T110	Modifier 638 644	SLOWLY
+R29	Mod-Link Arg1:E4 Arg2:T110	

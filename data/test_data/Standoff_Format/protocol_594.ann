@@ -1,123 +1,211 @@
-T1	Action 0 9	Screening
-T2	Reagent 10 28	Recombinant Clones
-T3	Method 32 35	PCR
-T4	Action 37 45	Transfer
-T5	Reagent 50 68	transformed clones
-T6	Reagent 74 86	stock LB-Amp
-T7	Modifier 90 114	other appropriate plated
-T8	Reagent 115 120	media
-T9	Action 122 126	Grow
-T10	Time 131 136	24 hr
-T11	Temperature 140 144	37°C
-T12	Action 146 153	Prepare
-T13	Reagent 154 181	forward and reverse primers
-T14	Reagent 190 196	vector
-T15	Method 206 220	transformation
-T16	Concentration 224 233	100 ng/μl
-T17	Reagent 237 242	DDH2O
-T18	Modifier 272 283	recommended
-T19	Reagent 284 291	primers
-T20	Action 295 298	use
-T21	Reagent 304 316	pUC18 vector
-T22	Action 318 323	Label
-T23	Modifier 324 335	thin-walled
-T24	Device 336 341	tubes
-T25	Action 343 350	Prepare
-T26	Amount 351 355	1 ml
-T27	Reagent 359 369	Master Mix
-T28	Reagent 372 414	ABI Reagents PGC Scientific Reagents Final
-T29	Modifier 415 428	Concentration
-T30	Measure-Type 429 437	DDH2O690
-T31	Reagent 441 451	DDH2O833.5
-T32	Amount 452 454	µl
-T33	Reagent 455 465	-- -- -10x
-T34	Amount 466 472	Buffer
-T35	Numerical 479 485	µl 10x
-T36	Reagent 486 503	Buffer w/MgCl2100
-T37	Numerical 504 506	µl
-T38	Reagent 507 520	1x BufferdNTP
-T39	Amount 521 529	mix80 µl
-T40	Numerical 530 534	dNTP
-T41	Reagent 535 550	mix20 µl 200 µM
-T42	Amount 551 559	each25mM
-T43	Reagent 560 567	MgCl280
-T44	Amount 568 580	µl 2mMPrimer
-T45	Modifier 581 584	F20
-T46	Concentration 585 594	µl Primer
-T47	Amount 595 601	F20 µl
-T48	Concentration 607 615	µMPrimer
-T49	Reagent 616 619	R20
-T50	Amount 620 629	µl Primer
-T51	Reagent 630 636	R20 µl
-T52	Amount 637 641	0.33
-T53	Concentration 642 652	µMAmpliTaq
-T54	Reagent 653 659	Gold10
-T55	Amount 660 666	µl Taq
-T56	Reagent 667 680	Polymerase6.5
-T57	Concentration 681 689	µl 1U/20
-T58	Reagent 690 697	µl rxn.
-T59	Action 698 704	Vortex
-T60	Action 709 713	spin
-T61	Reagent 714 724	Master Mix
-T62	Action 729 737	dispense
-T63	Amount 738 743	20 μl
-T64	Modifier 748 759	thin-walled
-T65	Device 760 764	tube
-T66	Action 766 769	Cap
-T67	Modifier 770 773	all
-T68	Device 774 779	tubes
-T69	Action 781 784	Set
-T70	Amount 787 792	10 μl
-T71	Device 793 801	pipetter
-T72	Amount 805 809	1 μl
-T73	Action 811 816	Place
-T74	Device 817 834	tranformant plate
-T75	Location 838 846	template
-T76	Action 851 856	touch
-T77	Device 861 872	pipette tip
-T78	Modifier 880 891	appropriate
-T79	Reagent 892 898	colony
-T80	Action 900 907	Pipette
-T81	Method 908 919	up and down
-T82	Modifier 927 938	appropriate
-T83	Location 939 947	PCR tube
-T84	Action 949 955	Re-cap
-T85	Device 956 960	tube
-T86	Action 962 968	change
-T87	Seal 969 972	tip
-T88	Action 977 983	repeat
-T89	Method 984 1000	steps 9-10 until
-T90	Modifier 1001 1030	all colonies have been added.
-T91	Action 1031 1038	Perform
-T92	Method 1039 1042	PCR
-T93	Method 1053 1077	thermal cycling protocol
-T94	Temperature 1080 1085	95°C5
-T95	Time 1086 1094	minutes1
-T96	Method 1095 1114	cycle95°C55°C70°C30
-T97	Time 1115 1145	seconds30 seconds30 seconds*35
-T98	Method 1146 1157	cycles70°C7
-T99	Time 1158 1166	minutes1
-T100	Method 1167 1198	cycle4-10°C Hold cycle*increase
-T101	Action 1199 1201	to
-T102	Time 1204 1213	minute if
-T103	Modifier 1224 1236	great than 1
-T104	Generic-Measure 1237 1240	Kb.
-T105	Action 1241 1247	Remove
-T106	Device 1248 1253	tubes
-T107	Modifier 1257 1260	end
-T108	Method 1264 1279	thermal cycling
-T109	Action 1281 1284	Add
-T110	Amount 1285 1289	2 μl
-T111	Reagent 1290 1312	10x gel loading buffer
-T112	Modifier 1316 1320	each
-T113	Device 1321 1325	tube
-T114	Action 1327 1331	Spin
-T115	Action 1335 1340	bring
-T116	Reagent 1341 1349	contents
-T117	Location 1353 1359	bottom
-T118	Location 1363 1367	tube
-T119	Action 1372 1376	load
-T120	Amount 1377 1382	10 μl
-T121	Modifier 1388 1392	lane
-T122	Reagent 1398 1413	1 % agarose gel
-T123	Reagent 1417 1432	0.5x TBE buffer
+T1	Action 38 46	Transfer
+E1	Action:T1 Acts-on:T20 Site:T21
+T2	Action 123 127	Grow
+E2	Action:T2 
+T3	Action 147 154	Prepare
+E3	Action:T3 Acts-on:T40 Site:T39 Using:T71
+T4	Action 319 324	Label
+E4	Action:T4 Acts-on:T23
+T5	Action 344 351	Prepare
+E5	Action:T5 Acts-on:T37
+T6	Action 707 713	Vortex
+E6	Action:T6 Acts-on:T31
+T7	Action 718 722	spin
+E7	Action:T7 Acts-on:T31
+T8	Action 775 778	Cap
+E8	Action:T8 Acts-on:T41
+T9	Action 790 793	Set
+E9	Action:T9 Acts-on:T25
+T10	Action 820 825	Place
+E10	Action:T10 Acts-on:T46 Site:T47
+T11	Action 860 865	touch
+E11	Action:T11 Acts-on:T48 Site:T50
+T12	Action 909 916	Pipette
+E12	Action:T12 Using:T43 Site:T44
+T13	Action 986 992	repeat
+E13	Action:T13 Using:T55
+T14	Action 1040 1047	Perform
+E14	Action:T14 Using:T57 Using2:T58
+T15	Action 1251 1257	Remove
+E15	Action:T15 Acts-on:T59
+T16	Action 1291 1294	Add
+E16	Action:T16 Acts-on:T28 Using:T29
+T18	Time 132 137	24 hr
+T19	Temperature 141 145	37°C
+T20	Reagent 51 69	transformed clones
+T21	Reagent 75 87	stock LB-Amp
+R1	Setting Arg1:E2 Arg2:T18	
+R2	Setting Arg1:E2 Arg2:T19	
+T22	Modifier 325 336	thin-walled
+T23	Device 337 342	tubes
+R3	Mod-Link Arg1:T23 Arg2:T22	
+T24	Amount 796 801	10 μl
+T25	Device 802 810	pipetter
+T26	Amount 814 818	1 μl
+R4	Measure Arg1:T25 Arg2:T24	
+T27	Amount 1295 1299	2 μl
+T28	Reagent 1300 1322	10x gel loading buffer
+T29	Device 1331 1335	tube
+T30	Modifier 1326 1330	each
+T31	Reagent 723 733	Master Mix
+T32	Action 738 746	dispense
+E18	Action:T32 Acts-on:T31 Using:T35
+T33	Amount 747 752	20 μl
+T34	Modifier 757 768	thin-walled
+T35	Device 769 773	tube
+R5	Setting Arg1:E18 Arg2:T33	
+R6	Mod-Link Arg1:T35 Arg2:T34	
+T36	Amount 352 356	1 ml
+T37	Reagent 360 370	Master Mix
+R7	Measure Arg1:T37 Arg2:T36	
+T38	Concentration 225 234	100 ng/μl
+T39	Reagent 238 243	DDH2O
+T40	Reagent 155 182	forward and reverse primers
+R8	Setting Arg1:E3 Arg2:T38	
+T41	Device 783 788	tubes
+T42	Modifier 779 782	all
+R9	Mod-Link Arg1:T41 Arg2:T42	
+R11	Mod-Link Arg1:T29 Arg2:T30	
+T17	Action 1382 1386	load
+E17	Action:T17 Site:T61
+T43	Method 917 928	up and down
+T44	Location 948 956	PCR tube
+T45	Modifier 936 947	appropriate
+R12	Mod-Link Arg1:T44 Arg2:T45	
+T46	Device 826 843	tranformant plate
+T47	Location 847 855	template
+T48	Device 870 881	pipette tip
+T49	Modifier 889 900	appropriate
+T50	Reagent 901 907	colony
+T51	Action 958 964	Re-cap
+E19	Action:T51 Acts-on:T52
+T52	Device 965 969	tube
+T53	Seal 978 981	tip
+T54	Action 971 977	change
+E20	Action:T54 Acts-on:T53
+T55	Method 993 1003	steps 9-10
+T56	Modifier 1004 1038	until all colonies have been added
+R13	Mod-Link Arg1:E13 Arg2:T56	
+T57	Method 1062 1086	thermal cycling protocol
+T58	Method 1048 1051	PCR
+T59	Device 1258 1263	tubes
+T60	Amount 1387 1392	10 μl
+T61	Reagent 1408 1422	1% agarose gel
+T62	Reagent 1426 1441	0.5x TBE buffer
+T63	Modifier 1398 1402	lane
+T64	Action 1337 1341	Spin
+E21	Action:T64 
+R14	Setting Arg1:E17 Arg2:T60	
+R10	Measure Arg1:T28 Arg2:T27	
+R15	Mod-Link Arg1:T61 Arg2:T63	
+R16	Meronym Arg1:T61 Arg2:T62	
+T65	Method 32 35	PCR
+T66	Action 0 9	Screening
+E22	Action:T66 Acts-on:T67 Using:T65
+T67	Reagent 10 28	Recombinant Clones
+T68	Modifier 91 115	other appropriate plated
+T69	Reagent 116 121	media
+R17	Mod-Link Arg1:T69 Arg2:T68	
+R18	Or Arg1:T21 Arg2:T69	
+T70	Method 207 221	transformation
+T71	Reagent 191 197	vector
+T72	Modifier 273 284	recommended
+T73	Reagent 285 292	primers
+T74	Action 296 299	use
+E23	Action:T74 Acts-on:T73
+T75	Reagent 305 317	pUC18 vector
+R19	Mod-Link Arg1:T73 Arg2:T72	
+T76	Modifier 411 416	Final
+T77	Measure-Type 417 430	Concentration
+T78	Reagent 437 442	DDH2O
+T79	Amount 442 448	690 µl
+T80	Reagent 449 454	DDH2O
+T81	Amount 454 462	833.5 µl
+T82	Numerical 468 471	10x
+T83	Reagent 472 481	Buffer II
+T84	Amount 481 488	100 µl 
+T85	Numerical 488 491	10x
+T86	Reagent 492 506	Buffer w/MgCl2
+T87	Amount 506 512	100 µl
+T88	Numerical 513 515	1x
+T89	Reagent 516 530	BufferdNTP mix
+T90	Amount 530 535	80 µl
+T91	Reagent 536 544	dNTP mix
+T92	Amount 544 550	20 µl 
+T93	Concentration 550 556	200 µM
+T94	Modifier 557 561	each
+T95	Concentration 561 565	25mM
+T96	Reagent 566 571	MgCl2
+T97	Amount 571 576	80 µl
+T98	Concentration 580 583	2mM
+T99	Reagent 583 591	Primer F
+T100	Amount 591 596	20 µl
+T101	Reagent 597 605	Primer F
+T102	Amount 605 610	20 µl
+T103	Concentration 611 618	0.33 µM
+T104	Reagent 618 626	Primer R
+T105	Amount 626 631	20 µl
+T106	Reagent 632 640	Primer R
+T107	Amount 640 645	20 µl
+T108	Concentration 646 653	0.33 µM
+T109	Reagent 653 666	AmpliTaq Gold
+T110	Amount 666 672	10 µl 
+T111	Reagent 672 686	Taq Polymerase
+T112	Amount 686 692	6.5 µl
+T113	Generic-Measure 693 705	1U/20 µl rxn
+R20	Measure Arg1:T111 Arg2:T113	
+R21	Measure Arg1:T111 Arg2:T112	
+R22	Measure Arg1:T78 Arg2:T79	
+R23	Measure Arg1:T80 Arg2:T81	
+R24	Measure Arg1:T83 Arg2:T82	
+R25	Measure Arg1:T83 Arg2:T84	
+R26	Measure Arg1:T86 Arg2:T85	
+R27	Measure Arg1:T86 Arg2:T87	
+R28	Measure Arg1:T89 Arg2:T88	
+R29	Measure Arg1:T89 Arg2:T90	
+R30	Measure Arg1:T91 Arg2:T92	
+R31	Measure Arg1:T91 Arg2:T93	
+R32	Mod-Link Arg1:T91 Arg2:T94	
+R33	Measure Arg1:T96 Arg2:T95	
+R34	Measure Arg1:T96 Arg2:T97	
+R35	Measure Arg1:T99 Arg2:T98	
+R36	Measure Arg1:T99 Arg2:T100	
+R37	Measure Arg1:T101 Arg2:T102	
+R38	Measure Arg1:T104 Arg2:T103	
+R39	Measure Arg1:T104 Arg2:T105	
+R40	Measure Arg1:T106 Arg2:T107	
+R41	Measure Arg1:T109 Arg2:T108	
+R42	Measure Arg1:T109 Arg2:T110	
+R43	Mod-Link Arg1:T50 Arg2:T49	
+T114	Temperature 1088 1092	95°C
+T115	Time 1092 1100	5 minute
+T116	Temperature 1108 1112	95°C
+T117	Temperature 1112 1116	55°C
+T118	Temperature 1116 1120	70°C
+T119	Time 1120 1130	30 seconds
+T120	Time 1130 1140	30 seconds
+T121	Time 1140 1150	30 seconds
+T122	Temperature 1160 1164	70°C
+T123	Time 1164 1173	7 minutes
+T124	Temperature 1180 1186	4-10°C
+T125	Time 1210 1218	1 minute
+T126	Generic-Measure 1243 1247	1 Kb
+T127	Modifier 1232 1242	great than
+R44	Mod-Link Arg1:T126 Arg2:T127	
+T128	Action 1198 1206	increase
+E24	Action:T128 
+R45	Setting Arg1:E24 Arg2:T125	
+T129	Method 1101 1108	1 cycle
+T130	Method 1151 1160	35 cycles
+T131	Method 1173 1180	1 cycle
+T132	Method 1187 1197	Hold cycle
+T133	Modifier 1267 1270	end
+T134	Method 1274 1289	thermal cycling
+T135	Action 1345 1350	bring
+E25	Action:T135 Acts-on:T136 Acts-on2:T137
+T136	Reagent 1351 1359	contents
+T137	Location 1363 1369	bottom
+T138	Location 1373 1377	tube
+R46	Meronym Arg1:T137 Arg2:T138	
+T139	Reagent 372 385	ABI Reagents 
+T140	Reagent 386 409	PGC Scientific Reagents

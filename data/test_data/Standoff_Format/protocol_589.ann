@@ -1,26 +1,42 @@
-T1	Numerical 0 3	10x
-T2	Reagent 4 36	Tris-Glycine PAGE Running Buffer
-T3	Action 37 41	Fill
-T4	Amount 42 44	1L
-T5	Location 45 57	pyrex bottle
-T6	Amount 63 68	700mL
-T7	Reagent 69 73	dH20
-T8	Action 74 77	Add
-T9	Amount 78 83	30.2g
-T10	Reagent 84 93	Tris base
-T11	Action 95 98	Add
-T12	Amount 99 105	144.2g
-T13	Reagent 106 125	glycine pH solution
-T14	pH 129 133	8.80
-T15	Modifier 134 139	after
-T16	Method 140 150	disolution
-T17	Reagent 154 158	tris
-T18	Reagent 163 170	glycine
-T19	Action 172 175	Add
-T20	Generic-Measure 176 179	10g
-T21	Reagent 180 183	SDS
-T22	Concentration 185 188	1 %
-T23	Modifier 189 194	final
-T24	Action 197 201	Fill
-T25	Amount 205 207	1L
-T26	Reagent 213 217	dH20
+T1	Action 96 99	Add
+E1	Action:T1 Acts-on:T5
+T2	Action 174 177	Add
+E2	Action:T2 Acts-on:T10
+T3	Action 199 203	Fill
+E3	Action:T3 Using:T7
+T4	Amount 100 106	144.2g
+T5	Reagent 107 126	glycine pH solution
+T6	Amount 207 209	1L
+T7	Reagent 215 219	dH20
+R1	Setting Arg1:E3 Arg2:T6	
+R2	Measure Arg1:T5 Arg2:T4	
+T8	Modifier 135 140	after
+T9	Generic-Measure 178 181	10g
+T10	Reagent 182 185	SDS
+T11	Concentration 187 189	1%
+R4	Measure Arg1:T10 Arg2:T11	
+R5	Measure Arg1:T10 Arg2:T9	
+T12	Numerical 0 3	10x
+T13	Reagent 4 36	Tris-Glycine PAGE Running Buffer
+R6	Measure Arg1:T13 Arg2:T12	
+T14	Action 37 41	Fill
+E4	Action:T14 Acts-on:T16 Using:T18
+T15	Amount 42 44	1L
+T16	Location 45 57	pyrex bottle
+T17	Amount 63 68	700mL
+T18	Reagent 69 73	dH20
+T19	Action 74 77	Add
+E5	Action:T19 Acts-on:T21
+T20	Amount 78 83	30.2g
+T21	Reagent 84 93	Tris base
+R7	Measure Arg1:T21 Arg2:T20	
+R8	Measure Arg1:T16 Arg2:T15	
+R9	Measure Arg1:T18 Arg2:T17	
+T22	pH 130 134	8.80
+R10	Measure Arg1:T5 Arg2:T22	
+T23	Modifier 190 195	final
+R11	Mod-Link Arg1:T11 Arg2:T23	
+T24	Method 141 151	disolution
+T25	Reagent 155 159	tris
+T26	Reagent 164 171	glycine
+R3	Mod-Link Arg1:E1 Arg2:T8	

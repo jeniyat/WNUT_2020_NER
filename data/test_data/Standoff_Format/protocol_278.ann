@@ -1,115 +1,185 @@
-T1	Reagent 0 8	Charcoal
-T2	Method 9 18	treatment
-T3	Reagent 22 30	seawater
-T4	Action 34 40	remove
-T5	Reagent 41 49	organics
-T6	Reagent 56 64	vitamins
-T7	Action 67 74	Collect
-T8	Reagent 75 83	seawater
-T9	Reagent 88 94	medium
-T10	Action 96 102	filter
-T11	Size 113 127	0.22 μm filter
-T12	Device 128 130	to
-T13	Action 131 143	remove cells
-T14	Reagent 144 158	and particles.
-T15	Action 159 168	Autoclave
-T16	Action 172 181	microwave
-T17	Modifier 186 194	filtered
-T18	Reagent 195 200	water
-T19	Action 204 212	sterilze
-T20	Reagent 220 225	water
-T21	Action 229 233	cool
-T22	Action 241 249	treating
-T23	Reagent 255 263	charcoal
-T24	Action 265 269	Pour
-T25	Modifier 274 283	sterilzed
-T26	Reagent 284 289	water
-T27	Modifier 297 307	designated
-T28	Location 308 313	flask
-T29	Device 319 327	stir bar
-T30	Modifier 345 353	at least
-T31	Amount 354 356	1L
-T32	Reagent 360 366	liquid
-T33	Action 368 372	Wash
-T34	Modifier 373 382	activated
-T35	Reagent 383 391	charcoal
-T36	Action 393 396	Add
-T37	Amount 397 401	2.5g
-T38	Reagent 402 406	NaCl
-T39	Amount 410 415	500mL
-T40	Reagent 419 432	Milli Q water
-T41	Modifier 440 456	designated clean
-T42	Location 457 462	flask
-T43	Method 467 483	charcoal washing
-T44	Reagent 489 497	charcoal
-T45	Location 533 538	flask
-T46	Action 543 550	washing
-T47	Method 562 571	treatment
-T48	Action 580 583	Add
-T49	Amount 584 587	10g
-T50	Modifier 591 600	activated
-T51	Reagent 601 609	charcoal
-T52	Reagent 617 631	NaCl2 solution
-T53	Action 633 636	Add
-T54	Device 637 645	stir bar
-T55	Action 647 651	Stir
-T56	Modifier 656 664	at least
-T57	Time 665 670	10min
-T58	Action 672 679	Recover
+T1	Action 67 74	Collect
+E1	Action:T1 Acts-on:T20 Product:T21
+T2	Action 159 168	Autoclave
+E2	Action:T2 Acts-on:T29
+T3	Action 172 181	microwave
+E3	Action:T3 Acts-on:T29
+T4	Action 229 233	cool
+E4	Action:T4 Acts-on:T31
+T5	Action 265 269	Pour
+E5	Action:T5 Acts-on:T35 Site:T37 Using:T38
+T6	Action 368 372	Wash
+E6	Action:T6 Acts-on:T43
+T7	Action 393 396	Add
+E7	Action:T7 Acts-on:T45 Acts-on2:T47 Site:T50 Using:T51
+T8	Action 580 583	Add
+E8	Action:T8 Acts-on:T54 Site:T55
+T9	Action 633 636	Add
+E9	Action:T9 Acts-on:T56
+T10	Action 647 651	Stir
+E10	Action:T10 
+T11	Action 672 679	Recover
+E11	Action:T11 Acts-on:T59 Using:T60 Site:T61 Using2:T62
+T13	Action 933 941	swirling
+E13	Action:T13 Acts-on:T73 Site:T74
+T14	Action 984 991	pouring
+E14	Action:T14 Acts-on:T79 Site:T75
+T15	Action 1072 1076	Stir
+E15	Action:T15 Acts-on:T81 Acts-on2:T83 Using:T86
+T16	Action 1161 1167	Remove
+E16	Action:T16 Acts-on:T87 Site:T88
+T17	Action 1198 1207	filtering
+E17	Action:T17 Acts-on:T89 Using:T91
+T18	Action 1282 1290	removing
+E18	Action:T18 Acts-on:T94 Acts-on2:T97
+T19	Action 1420 1423	add
+E19	Action:T19 Using:T98 Acts-on:T101 Site:T102 Product:T104
+T20	Reagent 75 83	seawater
+T21	Reagent 88 94	medium
+T22	Action 96 102	filter
+E20	Action:T22 Using:T24 Acts-on:T20
+T23	Size 113 120	0.22 μm
+T24	Device 121 127	filter
+R1	Measure Arg1:T24 Arg2:T23	
+T25	Action 131 137	remove
+E21	Action:T25 Acts-on:T26
+T26	Reagent 138 143	cells
+T27	Reagent 148 157	particles
+T28	Modifier 186 194	filtered
+T29	Reagent 195 200	water
+R2	Mod-Link Arg1:T29 Arg2:T28	
+T30	Action 204 212	sterilze
+E22	Action:T30 Product:T29
+T31	Reagent 220 225	water
+T32	Action 241 249	treating
+E23	Action:T32 Using:T33 Acts-on:T31
+T33	Reagent 255 263	charcoal
+T34	Modifier 274 283	sterilzed
+T35	Reagent 284 289	water
+T36	Modifier 297 307	designated
+T37	Location 308 313	flask
+T38	Device 319 327	stir bar
+T39	Modifier 345 353	at least
+T40	Amount 354 356	1L
+T41	Reagent 360 366	liquid
+R3	Measure Arg1:T41 Arg2:T40	
+R4	Mod-Link Arg1:T40 Arg2:T39	
+R5	Mod-Link Arg1:T35 Arg2:T34	
+R6	Mod-Link Arg1:T37 Arg2:T36	
+R7	Meronym Arg1:T41 Arg2:T37	
+T42	Modifier 373 382	activated
+T43	Reagent 383 391	charcoal
+R8	Mod-Link Arg1:T43 Arg2:T42	
+T44	Amount 397 401	2.5g
+T45	Reagent 402 406	NaCl
+T46	Amount 410 415	500mL
+T47	Reagent 419 432	Milli Q water
+T48	Modifier 440 450	designated
+T49	Modifier 451 456	clean
+T50	Location 457 462	flask
+R9	Measure Arg1:T45 Arg2:T44	
+R10	Measure Arg1:T47 Arg2:T46	
+R11	Mod-Link Arg1:T50 Arg2:T49	
+R12	Mod-Link Arg1:T50 Arg2:T48	
+T51	Method 467 483	charcoal washing
+T52	Amount 584 587	10g
+T53	Modifier 591 600	activated
+T54	Reagent 601 609	charcoal
+T55	Reagent 617 631	NaCl2 solution
+R13	Mod-Link Arg1:T54 Arg2:T53	
+R14	Measure Arg1:T54 Arg2:T52	
+T56	Device 637 645	stir bar
+T57	Modifier 656 664	at least
+T58	Time 665 670	10min
+R15	Mod-Link Arg1:T58 Arg2:T57	
+R16	Setting Arg1:E10 Arg2:T58	
 T59	Reagent 684 692	charcoal
 T60	Method 696 706	filtration
 T61	Location 714 739	glass fiber (GF/F) filter
-T62	Modifier 748 758	designated
-T63	Device 759 769	filter rig
+T62	Device 759 769	filter rig
+T63	Modifier 748 758	designated
+R17	Mod-Link Arg1:T62 Arg2:T63	
 T64	Device 777 785	scoopula
 T65	Action 789 792	add
+E24	Action:T65 Acts-on:T67 Site:T69 Using:T64
 T66	Modifier 793 799	washed
 T67	Reagent 800 808	charcoal
 T68	Modifier 816 826	sterilized
 T69	Reagent 827 835	seawater
-T70	Action 868 871	rip
-T71	Device 876 887	GF/F filter
-T72	Action 889 895	Obtain
-T73	Modifier 900 909	remaining
-T74	Reagent 910 918	charcoal
-T75	Device 926 929	rig
-T76	Action 933 941	swirling
-T77	Modifier 942 951	sterilzed
-T78	Reagent 952 957	water
-T79	Device 965 979	filtration rig
-T80	Action 984 991	pouring
-T81	Mention 992 996	that
-T82	Location 1011 1021	flask with
-T83	Modifier 1026 1044	sterilzed seawater
-T84	Reagent 1045 1046	(
-T85	Modifier 1054 1069	washed charcoal
-T86	Reagent 1069 1070	)
-T87	Action 1072 1076	Stir
-T88	Modifier 1081 1087	washed
-T89	Reagent 1088 1096	charcoal
-T90	Modifier 1102 1111	sterilzed
-T91	Reagent 1112 1120	seawater
-T92	Modifier 1125 1133	at least
-T93	Time 1134 1139	30min
-T94	Location 1149 1159	stir plate
-T95	Action 1161 1167	Remove
-T96	Reagent 1168 1176	charcoal
-T97	Reagent 1186 1194	seawater
-T98	Action 1198 1207	filtering
-T99	Reagent 1212 1219	mixture
-T100	Modifier 1228 1238	disposable
-T101	Device 1239 1253	filtration rig
-T102	Size 1261 1274	0.2 μm filter
-T103	Device 1274 1275	.
-T104	Action 1282 1290	removing
-T105	Reagent 1295 1303	charcoal
-T106	Modifier 1308 1323	any larger than
-T107	Size 1324 1340	0.2 μm particles
-T108	Reagent 1340 1346	, work
-T109	Location 1352 1402	sterile environment (laminar flow hood recommended
-T110	Modifier 1408 1423	aseptically add
-T111	Action 1424 1431	desired
-T112	Modifier 1432 1440	nutrient
-T113	Reagent 1441 1456	requirements to
-T114	Reagent 1462 1473	seawater to
-T115	Reagent 1488 1495	medium.
+R18	Mod-Link Arg1:T69 Arg2:T68	
+R19	Mod-Link Arg1:T67 Arg2:T66	
+T12	Action 889 895	Obtain
+E12	Action:T12 Product:T71 Site:T78
+T70	Modifier 900 909	remaining
+T71	Reagent 910 918	charcoal
+R20	Mod-Link Arg1:T71 Arg2:T70	
+T72	Modifier 942 951	sterilzed
+T73	Reagent 952 957	water
+T74	Device 965 979	filtration rig
+T75	Location 1011 1016	flask
+T76	Modifier 1026 1035	sterilzed
+T77	Reagent 1036 1044	seawater
+R21	Mod-Link Arg1:T77 Arg2:T76	
+T78	Device 926 929	rig
+R22	Mod-Link Arg1:T73 Arg2:T72	
+T79	Mention 992 996	that
+R23	Coreference-Link Arg1:T79 Arg2:T73	
+R24	Meronym Arg1:T77 Arg2:T75	
+T80	Modifier 1081 1087	washed
+T81	Reagent 1088 1096	charcoal
+T82	Modifier 1102 1111	sterilzed
+T83	Reagent 1112 1120	seawater
+T84	Modifier 1125 1133	at least
+T85	Time 1134 1139	30min
+T86	Location 1149 1159	stir plate
+R25	Mod-Link Arg1:T81 Arg2:T80	
+R26	Mod-Link Arg1:T83 Arg2:T82	
+R27	Mod-Link Arg1:T85 Arg2:T84	
+R28	Setting Arg1:E15 Arg2:T85	
+T87	Reagent 1168 1176	charcoal
+T88	Reagent 1186 1194	seawater
+T89	Reagent 1212 1219	mixture
+T90	Modifier 1228 1238	disposable
+T91	Device 1239 1253	filtration rig
+T92	Size 1261 1267	0.2 μm
+T93	Device 1268 1274	filter
+R29	Setting Arg1:T93 Arg2:T92	
+R30	Meronym Arg1:T93 Arg2:T91	
+R31	Mod-Link Arg1:T91 Arg2:T90	
+T94	Reagent 1295 1303	charcoal
+T95	Modifier 1312 1323	larger than
+T96	Size 1324 1330	0.2 μm
+T97	Reagent 1331 1340	particles
+R32	Mod-Link Arg1:T96 Arg2:T95	
+R33	Measure Arg1:T97 Arg2:T96	
+T98	Location 1352 1371	sterile environment
+T99	Modifier 1408 1419	aseptically
+R34	Mod-Link Arg1:E19 Arg2:T99	
+T100	Modifier 1424 1431	desired
+T101	Reagent 1432 1453	nutrient requirements
+T102	Reagent 1462 1470	seawater
+R35	Mod-Link Arg1:T101 Arg2:T100	
+T103	Modifier 1308 1311	any
+R36	Mod-Link Arg1:T97 Arg2:T103	
+T104	Reagent 1488 1494	medium
+T105	Reagent 0 8	Charcoal
+T106	Method 9 18	treatment
+T107	Reagent 22 30	seawater
+T109	Reagent 41 49	organics
+T110	Reagent 56 64	vitamins
+T108	Action 34 40	remove
+E25	Action:T108 Acts-on:T109 Acts-on2:T110
+T111	Reagent 489 497	charcoal
+T112	Location 533 538	flask
+T113	Action 543 550	washing
+E26	Action:T113 
+T114	Method 562 571	treatment
+T115	Action 868 871	rip
+E27	Action:T115 Acts-on:T116
+T116	Device 876 887	GF/F filter
+T117	Modifier 1054 1060	washed
+T118	Reagent 1061 1069	charcoal
+R37	Mod-Link Arg1:T118 Arg2:T117	
+T119	Location 1373 1390	laminar flow hood
+R38	Coreference-Link Arg1:T119 Arg2:T98	
+R39	Or Arg1:E3 Arg2:E2	

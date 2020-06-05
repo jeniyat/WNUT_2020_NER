@@ -6,7 +6,8 @@ using	O
 Epitope	B-Reagent
 Tag	I-Reagent
 Affinity	I-Reagent
-Matrices	I-Reagent
+Matrices
+	I-Reagent
 
 Combine	B-Action
 affinity	B-Reagent
@@ -21,15 +22,15 @@ tube	I-Location
 at	O
 a	O
 1:5	B-Concentration
-dilution	I-Concentration
-.	O
+dilution.
+	I-Concentration
 
 Add	B-Action
 tagged	B-Reagent
 protein	I-Reagent
 to	O
-mixture	B-Reagent
-.	O
+mixture.
+	B-Reagent
 
 Gently	B-Action
 rock	I-Action
@@ -38,8 +39,8 @@ for	O
 one	B-Time
 hour	I-Time
 at	O
-4°C	B-Temperature
-.	O
+4°C.
+	B-Temperature
 
 Centrifuge	B-Action
 mixture	B-Reagent
@@ -49,15 +50,15 @@ for	O
 20	B-Time
 seconds	I-Time
 at	O
-4°C	B-Temperature
-.	O
+4°C.
+	B-Temperature
 
 Remove	B-Action
 supernatant	B-Reagent
 without	O
 disturbing	B-Action
-beads	B-Reagent
-.	O
+beads.
+	B-Reagent
 
 Add	B-Action
 anequal	O
@@ -71,16 +72,16 @@ the	O
 beads	B-Reagent
 and	O
 re-suspend	B-Action
-matrix	B-Reagent
-.	O
+matrix.
+	B-Reagent
 
 Gently	B-Modifier
 rock	B-Action
 aliquots	B-Reagent
 for	O
 20	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 at	O
 4°C.Keep	B-Temperature
@@ -98,15 +99,15 @@ use	O
 in	O
 Western	B-Method
 blot	I-Method
-analysis	I-Method
-.	O
+analysis.
+	I-Method
 
 Repeat	B-Action
 step	O
 2	O
 four	B-Numerical
-times	I-Numerical
-.	O
+times.
+	I-Numerical
 
 Elute	B-Action
 the	O
@@ -125,46 +126,36 @@ in	O
 50	B-Concentration
 mm	I-Concentration
 Tris	B-Reagent
-HCl	I-Reagent
-(	O
-pH	B-pH
-7.5	I-pH
-)	O
-,	O
+HCl(pH	I-Reagent
+7.5),	B-pH
 50	B-Concentration
 mM	I-Concentration
-NaCl	B-Reagent
-,	O
+NaCl,	B-Reagent
 1	B-Concentration
 mM	I-Concentration
 EDTA	B-Reagent
-(	O
-pH	B-pH
-8.0	I-pH
-)	O
-.	O
+(pH	B-pH
+8.0).
+	I-pH
 
 Resuspend	B-Action
-beads	B-Reagent
-,	O
-incubate	B-Action
-,	O
-centrifuge	B-Action
+beads,	B-Reagent
+incubate,	B-Action
+centrifuge	I-Action
 and	O
 withdrawsupernatant	B-Action
 as	B-Modifier
 in	I-Modifier
 step	I-Modifier
-2	I-Modifier
-,	O
+2,	I-Modifier
 repeating	B-Action
 for	O
 a	O
 total	O
 of	O
 four	B-Numerical
-elutions	B-Method
-.	O
+elutions.
+	B-Method
 
 Recover	B-Action
 as	O
@@ -175,14 +166,13 @@ eluate	B-Reagent
 as	O
 possibleat	O
 each	O
-stage	O
-.	O
+stage.
+	O
 
 For	O
 each	O
 elution	B-Reagent
-sample	I-Reagent
-,	O
+sample,	I-Reagent
 prepare	B-Action
 at	O
 1:1	B-Concentration
@@ -191,15 +181,15 @@ with	O
 reducing	B-Reagent
 gel	I-Reagent
 loading	I-Reagent
-buffer	I-Reagent
-.	O
+buffer.
+	I-Reagent
 
 Boil	B-Action
 tubes	B-Reagent
 for	O
 3	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 Analyze	B-Action
 the	O
@@ -207,8 +197,8 @@ supernatant	B-Reagent
 samples	I-Reagent
 by	O
 Western	B-Method
-blot	I-Method
-.	O
+blot.
+	I-Method
 
 
 

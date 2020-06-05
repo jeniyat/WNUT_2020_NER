@@ -5,7 +5,8 @@ spotting	B-Action
 on	O
 target	B-Modifier
 host	B-Reagent
-cells	I-Reagent
+cells
+	I-Reagent
 
 The	O
 host	B-Reagent
@@ -23,8 +24,8 @@ growth	B-Reagent
 medium	I-Reagent
 for	O
 the	O
-organism	B-Reagent
-.	O
+organism.
+	B-Reagent
 
 Measure	B-Action
 optical	B-Measure-Type
@@ -33,9 +34,7 @@ spectrophotometrically	B-Method
 at	O
 525	B-Generic-Measure
 nm	I-Generic-Measure
-(	O
-OD525	B-Generic-Measure
-)	O
+(OD525)	I-Generic-Measure
 and	O
 adjust	B-Action
 OD	B-Measure-Type
@@ -43,22 +42,19 @@ to	O
 0.3–0.5	B-Numerical
 with	O
 growth	B-Reagent
-medium	I-Reagent
-.	O
+medium.
+	I-Reagent
 
 Soft	B-Reagent
 agar	I-Reagent
-(	O
-0.5	B-Concentration
+(0.5	B-Concentration
 to	O
-0.6	B-Concentration
-%	I-Concentration
+0.6%	B-Concentration
 agar	B-Reagent
 in	O
 media	B-Reagent
 of	B-Modifier
-choice	I-Modifier
-)	O
+choice)	I-Modifier
 is	O
 melted	B-Action
 in	O
@@ -68,8 +64,8 @@ bath	I-Device
 or	O
 a	O
 microwave	B-Device
-oven	I-Device
-.	O
+oven.
+	I-Device
 
 Aliquot	B-Action
 4mL	B-Amount
@@ -86,8 +82,8 @@ above	I-Modifier
 solidification	B-Temperature
 temperature	I-Temperature
 until	B-Modifier
-use	I-Modifier
-.	O
+use.
+	I-Modifier
 
 200–300	B-Amount
 µL	I-Amount
@@ -103,8 +99,8 @@ tubes	B-Location
 with	O
 melted	B-Modifier
 soft	B-Reagent
-agar	I-Reagent
-.	O
+agar.
+	I-Reagent
 
 The	O
 bacteria-soft	B-Reagent
@@ -129,26 +125,24 @@ growth	I-Modifier
 of	I-Modifier
 the	I-Modifier
 host	I-Modifier
-bacterium	I-Modifier
-.	O
+bacterium.
+	I-Modifier
 
-Distribute	B-Action
-bacteria-soft	B-Reagent
-agar	I-Reagent
+Distribute bacteria-soft	B-Action
+agar	B-Reagent
 mixture	I-Reagent
-evenly	I-Reagent
-on	B-Modifier
+evenly	B-Modifier
+on	O
 the	O
-plate	B-Location
-,	I-Location
+plate,	B-Location
 which	O
 is	O
 placed	B-Action
-on	I-Action
+on	O
 a	O
 flat	B-Location
-surface	I-Location
-.	I-Location
+surface.
+	I-Location
 
 When	O
 the	O
@@ -159,9 +153,8 @@ the	O
 target	B-Reagent
 bacteria	I-Reagent
 has	O
-solidified	B-Action
-,	O
-triplicate	B-Action
+solidified,	B-Action
+triplicate	I-Action
 aliquots	B-Reagent
 of	O
 5–10	B-Amount
@@ -186,8 +179,8 @@ top	B-Location
 of	O
 the	O
 soft	B-Reagent
-agar	I-Reagent
-.	O
+agar.
+	I-Reagent
 
 As	O
 a	O
@@ -197,32 +190,24 @@ control	I-Modifier
 µL	I-Amount
 phage	B-Reagent
 buffer	I-Reagent
-(	O
-e.g.	O
-,	O
+(e.g.,	O
 SM	B-Reagent
-buffer	I-Reagent
-:	O
+buffer:	I-Reagent
 450	B-Concentration
 mM	I-Concentration
-NaCl	B-Reagent
-,	O
+NaCl,	B-Reagent
 50	B-Concentration
 mM	I-Concentration
-MgSO4	B-Reagent
-,	O
+MgSO4,	B-Reagent
 50	B-Concentration
 mM	I-Concentration
-Tris	B-Reagent
-,	O
+Tris,	B-Reagent
 0.01	B-Concentration
 %	I-Concentration
-Gelatin	B-Reagent
-,	O
+Gelatin,	B-Reagent
 pH	B-pH
 =	I-pH
-8	I-pH
-)	O
+8)	I-pH
 or	O
 0.02	B-Amount
 µm	I-Amount
@@ -236,8 +221,8 @@ triplicate	B-Location
 on	O
 the	O
 soft	B-Reagent
-agar	I-Reagent
-.	O
+agar.
+	I-Reagent
 
 The	O
 plates	B-Location
@@ -253,8 +238,7 @@ growth	B-Measure-Type
 rate	I-Measure-Type
 of	O
 the	O
-bacteria	B-Reagent
-,	O
+bacteria,	B-Reagent
 and	O
 the	O
 presence	B-Measure-Type
@@ -270,9 +254,7 @@ as	O
 a	O
 clearing	B-Location
 zone	I-Location
-(	O
-plaque	B-Reagent
-)	O
+(plaque)	B-Reagent
 in	O
 the	O
 spotted	B-Modifier
@@ -288,8 +270,8 @@ over	I-Modifier
 time	I-Modifier
 on	I-Modifier
 the	I-Modifier
-plate	I-Modifier
-.	O
+plate.
+	I-Modifier
 
 If	B-Modifier
 clearing	I-Modifier
@@ -298,23 +280,21 @@ appear	I-Modifier
 in	I-Modifier
 the	I-Modifier
 spotted	I-Modifier
-area	I-Modifier
-,	O
+area,	I-Modifier
 this	O
 indicates	B-Action
 the	O
 presence	B-Measure-Type
 of	O
 lytic	B-Reagent
-phages	I-Reagent
-,	O
+phages,	I-Reagent
 which	O
 can	O
 be	O
 isolated	B-Action
 and	O
-purified	B-Action
-.	O
+purified.
+	B-Action
 
 Once	B-Modifier
 detected	I-Modifier
@@ -323,8 +303,7 @@ clearings	I-Modifier
 in	I-Modifier
 the	I-Modifier
 spotting	I-Modifier
-zone	I-Modifier
-,	O
+zone,	I-Modifier
 phages	B-Reagent
 are	O
 further	B-Modifier
@@ -333,8 +312,8 @@ and	O
 purified	B-Action
 from	O
 the	O
-plates	B-Location
-.	O
+plates.
+	B-Location
 
 
 

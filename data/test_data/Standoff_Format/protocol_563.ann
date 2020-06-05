@@ -1,52 +1,84 @@
-T1	Method 0 21	Plaque Assay Protocol
-T2	Reagent 26 43	Pseudoalteromonas
-T3	Modifier 44 49	First
-T4	Action 51 60	autoclave
-T5	Reagent 65 73	top agar
-T6	Action 77 81	melt
-T7	Mention 82 84	it
-T8	Modifier 86 91	While
-T9	Device 96 105	autoclave
-T10	Action 109 116	running
-T11	Location 131 137	plates
-T12	Action 138 142	warm
-T13	Temperature 146 162	room temperature
-T14	Action 167 172	label
-T15	Mention 173 177	them
-T16	Action 181 185	Make
-T17	Reagent 195 204	dilutions
-T18	Reagent 208 219	your phages
-T19	Action 224 237	plan to plate
-T20	Action 239 246	Aliquot
-T21	Reagent 251 255	agar
-T22	Location 261 266	tubes
-T23	Action 271 276	place
-T24	Temperature 280 284	40°C
-T25	Device 285 295	water bath
-T26	Action 297 302	Pipet
-T27	Amount 303 309	100 μl
-T28	Reagent 313 330	your phage sample
-T29	Location 340 345	plate
-T30	Action 347 353	Remove
-T31	Location 358 367	agar tube
-T32	Device 377 387	water bath
-T33	Action 392 395	add
-T34	Reagent 400 404	host
-T35	Mention 408 410	it
-T36	Action 412 415	Add
-T37	Amount 416 422	3.5 ml
-T38	Reagent 430 447	agar/host mixture
-T39	Action 449 454	Swirl
-T40	Modifier 455 459	each
-T41	Location 460 465	plate
-T42	Action 469 475	spread
-T43	Reagent 480 484	agar
-T44	Method 485 494	as you go
-T45	Action 496 501	Leave
-T46	Location 506 512	plates
-T47	Location 520 525	bench
-T48	Time 526 535	overnight
-T49	Action 537 542	Count
-T50	Action 546 550	pick
-T51	Reagent 551 558	plaques
-T52	Time 563 571	next day
+T1	Action 51 60	autoclave
+E1	Action:T1 Acts-on:T2
+T2	Reagent 65 73	top agar
+T3	Action 77 81	melt
+E2	Action:T3 Acts-on:T4
+T4	Mention 82 84	it
+R1	Coreference-Link Arg1:T4 Arg2:T2	
+T5	Action 139 143	warm
+E3	Action:T5 Acts-on:T6
+T6	Location 132 138	plates
+T7	Temperature 147 163	room temperature
+T8	Action 168 173	label
+E4	Action:T8 Acts-on:T9
+T9	Mention 174 178	them
+R2	Setting Arg1:E3 Arg2:T7	
+R3	Coreference-Link Arg1:T9 Arg2:T6	
+T11	Reagent 210 221	your phages
+T13	Action 242 249	Aliquot
+E6	Action:T13 Acts-on:T14 Site:T15
+T14	Reagent 254 258	agar
+T15	Location 264 269	tubes
+T16	Action 274 279	place
+E7	Action:T16 Site:T18 Acts-on:T15
+T17	Temperature 283 287	40°C
+T18	Device 288 298	water bath
+R4	Setting Arg1:E7 Arg2:T17	
+T19	Action 303 308	Pipet
+E8	Action:T19 Acts-on:T21 Site:T22
+T20	Amount 309 315	100 μl
+T21	Reagent 319 336	your phage sample
+T22	Location 346 351	plate
+R5	Measure Arg1:T21 Arg2:T20	
+T23	Action 356 362	Remove
+E9	Action:T23 Acts-on:T24 Site:T25
+T24	Location 367 376	agar tube
+T25	Device 386 396	water bath
+T26	Action 401 404	add
+E10	Action:T26 Acts-on:T27 Site:T28
+T27	Reagent 409 413	host
+T28	Mention 417 419	it
+R6	Coreference-Link Arg1:T28 Arg2:T24	
+T29	Action 424 427	Add
+E11	Action:T29 Acts-on:T31
+T30	Amount 428 434	3.5 ml
+T31	Reagent 442 459	agar/host mixture
+R7	Measure Arg1:T31 Arg2:T30	
+T32	Action 462 467	Swirl
+E12	Action:T32 Acts-on:T34
+T33	Modifier 468 472	each
+T34	Location 473 478	plate
+T35	Action 482 488	spread
+E13	Action:T35 Acts-on:T36 Using:T37
+T36	Reagent 493 497	agar
+T37	Method 498 507	as you go
+R8	Mod-Link Arg1:T34 Arg2:T33	
+T38	Action 510 515	Leave
+E14	Action:T38 Acts-on:T39 Site:T40
+T39	Location 520 526	plates
+T40	Location 534 539	bench
+T41	Time 540 549	overnight
+R9	Setting Arg1:E14 Arg2:T41	
+T42	Action 552 557	Count
+E15	Action:T42 Acts-on:T44
+T43	Action 561 565	pick
+E16	Action:T43 Acts-on:T44
+T44	Reagent 566 573	plaques
+T45	Time 578 586	next day
+R10	Setting Arg1:E15 Arg2:T45	
+R11	Setting Arg1:E16 Arg2:T45	
+T46	Method 0 21	Plaque Assay Protocol
+T47	Reagent 26 43	Pseudoalteromonas
+T48	Modifier 87 92	While
+T49	Device 97 106	autoclave
+T50	Action 110 117	running
+E17	Action:T50 Acts-on:T49
+T51	Modifier 44 49	First
+R12	Mod-Link Arg1:E1 Arg2:T51	
+R13	Mod-Link Arg1:E17 Arg2:T48	
+T52	Action 183 187	Make
+E18	Action:T52 Acts-on:T10
+T10	Reagent 197 206	dilutions
+R14	Meronym Arg1:T11 Arg2:T10	
+T12	Action 226 239	plan to plate
+E5	Action:T12 Acts-on:T10

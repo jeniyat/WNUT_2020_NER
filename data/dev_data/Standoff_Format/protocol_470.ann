@@ -1,13 +1,21 @@
-T1	Modifier 0 15	Non-radioactive
-T2	Method 16 31	phosphorylation
-T3	Reagent 37 65	T4 PNK 3 ' phosphatase minus
-T4	Action 66 72	Set up
-T5	Reagent 87 95	reaction
-T6	Action 97 105	Incubate
-T7	Temperature 109 113	37°C
-T8	Time 118 128	30 minutes
-T9	Action 130 134	Heat
-T10	Reagent 135 145	inactivate
-T11	Action 149 159	incubating
-T12	Temperature 163 167	65°C
-T13	Time 172 182	20 minutes
+T1	Action 65 71	Set up
+E1	Action:T1 Product:T5
+T2	Action 96 104	Incubate
+E2	Action:T2 
+T3	Action 129 133	Heat
+E3	Action:T3 Acts-on:T8
+T4	Action 148 158	incubating
+E4	Action:T4 
+T5	Reagent 86 94	reaction
+T6	Temperature 108 112	37°C
+T7	Time 117 127	30 minutes
+R1	Setting Arg1:E2 Arg2:T6	
+R2	Setting Arg1:E2 Arg2:T7	
+T8	Reagent 134 144	inactivate
+T9	Temperature 162 166	65°C
+T10	Time 171 181	20 minutes
+R3	Setting Arg1:E4 Arg2:T9	
+R4	Setting Arg1:E4 Arg2:T10	
+T11	Modifier 0 15	Non-radioactive
+T12	Method 16 31	phosphorylation
+T13	Reagent 37 64	T4 PNK 3' phosphatase minus

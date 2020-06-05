@@ -1,92 +1,151 @@
-T1	Method 0 10	Adsorption
-T2	Reagent 14 19	phage
-T3	Reagent 23 36	cyanobacteria
-T4	Action 62 82	perform plaque assay
-T5	Action 88 95	Plating
-T6	Reagent 96 101	cells
-T7	Modifier 103 112	aliquoted
-T8	Modifier 118 127	set aside
-T9	Location 132 145	Bottom plates
-T10	Modifier 146 153	labeled
-T11	Numerical 155 159	24 +
-T12	Location 160 166	plates
-T13	Reagent 172 180	Top agar
-T14	Modifier 181 190	aliquoted
-T15	Measure-Type 195 206	temperature
-T16	Modifier 207 219	equilibrated
-T17	Location 224 244	Dilution tubes—these
-T18	Amount 253 259	1.5 mL
-T19	Reagent 260 265	media
-T20	Modifier 267 274	labeled
-T21	Action 279 283	kept
-T22	Location 287 290	ice
-T23	Reagent 295 311	Cyanophage stock
-T24	Action 312 319	diluted
-T25	Amount 325 331	1–5 mL
-T26	Reagent 332 337	media
-T27	Action 338 344	Set up
-T28	Action 356 362	record
-T29	Measure-Type 363 368	times
-T30	Action 399 405	Set up
-T31	Reagent 406 425	adsorption cultures
-T32	Amount 433 439	250 mL
-T33	Location 440 471	polycarbonate Erlenmeyer flasks
-T34	Seal 477 486	screw cap
-T35	Action 489 493	Fill
-T36	Location 494 499	flask
-T37	Amount 505 511	100 mL
-T38	Reagent 512 522	host cells
-T39	Action 524 527	Add
-T40	Reagent 528 544	cyanophage stock
-T41	Measure-Type 554 559	titer
-T42	Reagent 563 567	host
-T43	Generic-Measure 574 589	MOI of ca. 0.01
-T44	Modifier 594 601	quickly
-T45	Action 602 605	mix
-T46	Action 609 617	disperse
-T47	Reagent 622 627	virus
-T48	Modifier 629 640	Immediately
-T49	Action 641 647	remove
-T50	Reagent 650 659	subsample
-T51	Action 664 670	dilute
-T52	Concentration 671 675	100×
-T53	Time 680 689	time zero
-T54	Action 692 700	Transfer
-T55	Amount 701 706	15 µL
-T56	Location 712 716	tube
-T57	Amount 728 734	1.5 mL
-T58	Modifier 738 746	ice cold
-T59	Reagent 747 752	media
-T60	Action 754 760	Vortex
-T61	Action 764 767	mix
-T62	Action 769 775	Pellet
-T63	Reagent 776 780	host
-T64	Time 785 790	5 min
-T65	Speed 798 805	16,000g
-T66	Temperature 810 813	4°C
-T67	Action 816 820	note
-T68	Measure-Type 825 829	time
-T69	Modifier 831 840	Carefully
-T70	Action 841 847	remove
-T71	Amount 850 863	small aliquot
-T72	Amount 865 870	50 µL
-T73	Reagent 879 890	supernatant
-T74	Modifier 896 899	new
-T75	Location 900 904	tube
-T76	Action 909 918	keep cold
-T77	Action 923 935	plaque assay
-T78	Action 938 942	note
-T79	Measure-Type 943 947	time
-T80	Action 949 954	Place
-T81	Reagent 955 974	adsorption cultures
-T82	Measure-Type 1015 1019	temp
-T83	Action 1022 1028	Repeat
-T84	Reagent 1029 1037	sampling
-T85	Time 1041 1047	15 min
-T86	Time 1062 1072	1 to 1.5 h
-T87	Action 1073 1082	Determine
-T88	Measure-Type 1087 1100	concentration
-T89	Reagent 1104 1111	viruses
-T90	Reagent 1129 1140	supernatant
-T91	Measure-Type 1150 1160	time point
-T92	Action 1164 1176	plaque assay
+T2	Action 398 404	Set up
+E2	Action:T2 Acts-on:T1 Site:T16
+T3	Action 488 492	Fill
+E3	Action:T3 Acts-on2:T20 Site:T18
+T4	Action 523 526	Add
+E4	Action:T4 Acts-on:T21 Site:T22
+T5	Action 601 604	mix
+E5	Action:T5 
+T6	Action 640 646	remove
+E6	Action:T6 Acts-on:T28
+T7	Action 690 698	Transfer
+E7	Action:T7 Site:T33
+T8	Action 752 758	Vortex
+E8	Action:T8 
+T9	Action 767 773	Pellet
+E9	Action:T9 Acts-on:T38
+T10	Action 838 844	remove
+E10	Action:T10 Acts-on:T43 Site:T45
+T11	Action 906 915	keep cold
+E11	Action:T11 
+T12	Action 945 950	Place
+E12	Action:T12 Acts-on:T46
+T13	Action 1018 1024	Repeat
+E13	Action:T13 Acts-on:T47
+T1	Reagent 405 424	adsorption cultures
+T15	Amount 432 438	250 mL
+T16	Location 439 470	polycarbonate Erlenmeyer flasks
+T17	Seal 476 485	screw cap
+R1	Measure Arg1:T16 Arg2:T15	
+R2	Meronym Arg1:T17 Arg2:T16	
+T18	Location 493 498	flask
+T19	Amount 504 510	100 mL
+T20	Reagent 511 521	host cells
+R3	Measure Arg1:T20 Arg2:T19	
+T21	Reagent 527 543	cyanophage stock
+T22	Reagent 562 566	host
+T23	Generic-Measure 573 588	MOI of ca. 0.01
+T24	Modifier 593 600	quickly
+T25	Action 608 616	disperse
+E1	Action:T25 Acts-on:T26
+T26	Reagent 621 626	virus
+R4	Mod-Link Arg1:E5 Arg2:T24	
+R5	Setting Arg1:E4 Arg2:T23	
+T27	Modifier 628 639	Immediately
+T28	Reagent 649 658	subsample
+T29	Action 663 669	dilute
+E15	Action:T29 
+T30	Concentration 670 674	100×
+T31	Time 679 688	time zero
+R6	Setting Arg1:E15 Arg2:T30	
+R7	Setting Arg1:E15 Arg2:T31	
+R8	Mod-Link Arg1:E6 Arg2:T27	
+T32	Amount 699 704	15 µL
+T33	Location 710 714	tube
+T34	Amount 726 732	1.5 mL
+T35	Modifier 736 744	ice cold
+T36	Reagent 745 750	media
+R9	Mod-Link Arg1:T36 Arg2:T35	
+R10	Measure Arg1:T36 Arg2:T34	
+R12	Setting Arg1:E7 Arg2:T32	
+R11	Meronym Arg1:T36 Arg2:T33	
+T37	Action 762 765	mix
+E16	Action:T37 
+T38	Reagent 774 778	host
+T39	Time 783 788	5 min
+R13	Setting Arg1:E9 Arg2:T39	
+T40	Modifier 828 837	Carefully
+T41	Amount 847 860	small aliquot
+T42	Amount 862 867	50 µL
+T43	Reagent 876 887	supernatant
+T44	Modifier 893 896	new
+T45	Location 897 901	tube
+R14	Mod-Link Arg1:E10 Arg2:T40	
+R15	Measure Arg1:T43 Arg2:T42	
+R16	Coreference-Link Arg1:T42 Arg2:T41	
+R17	Mod-Link Arg1:T45 Arg2:T44	
+T46	Reagent 951 970	adsorption cultures
+T47	Reagent 1025 1033	sampling
+T49	Time 1058 1068	1 to 1.5 h
+T48	Time 1037 1043	15 min
+R18	Setting Arg1:E13 Arg2:T48	
+R19	Setting Arg1:E13 Arg2:T49	
+T14	Method 0 10	Adsorption
+T50	Reagent 14 19	phage
+T51	Reagent 23 36	cyanobacteria
+T52	Action 62 69	perform
+E14	Action:T52 Commands:E17
+T53	Action 70 82	plaque assay
+E17	Action:T53 
+T54	Action 87 94	Plating
+E18	Action:T54 Acts-on:T55
+T55	Reagent 95 100	cells
+T56	Modifier 102 111	aliquoted
+T57	Modifier 117 126	set aside
+R20	Mod-Link Arg1:T55 Arg2:T56	
+R21	Mod-Link Arg1:T55 Arg2:T57	
+T58	Location 131 144	Bottom plates
+T59	Modifier 145 152	labeled
+R22	Mod-Link Arg1:T58 Arg2:T59	
+T60	Reagent 171 179	Top agar
+T61	Numerical 154 158	24 +
+T62	Location 159 165	plates
+R23	Measure Arg1:T62 Arg2:T61	
+T63	Modifier 180 189	aliquoted
+T64	Measure-Type 194 205	temperature
+T65	Modifier 206 218	equilibrated
+R24	Mod-Link Arg1:T60 Arg2:T63	
+T66	Location 223 237	Dilution tubes
+T67	Amount 252 258	1.5 mL
+T68	Reagent 259 264	media
+T69	Modifier 266 273	labeled
+T70	Action 278 282	kept
+E19	Action:T70 Acts-on:T68 Site:T71
+T71	Location 286 289	ice
+R25	Mod-Link Arg1:T68 Arg2:T69	
+R26	Meronym Arg1:T68 Arg2:T66	
+R27	Measure Arg1:T68 Arg2:T67	
+T72	Reagent 294 310	Cyanophage stock
+T73	Action 311 318	diluted
+E20	Action:T73 Acts-on:T72 Site:T75
+T74	Amount 324 330	1–5 mL
+T75	Reagent 331 336	media
+T76	Action 337 343	Set up
+E21	Action:T76 
+T77	Action 355 361	record
+E22	Action:T77 Measure-Type-Link:T78
+T78	Measure-Type 362 367	times
+R28	Measure Arg1:T75 Arg2:T74	
+T79	Measure-Type 553 558	titer
+T80	Speed 796 803	16,000g
+T81	Temperature 808 811	4°C
+T82	Measure-Type 822 826	time
+T83	Action 813 817	note
+E23	Action:T83 Measure-Type-Link:T82
+T84	Action 920 932	plaque assay
+E24	Action:T84 
+T85	Action 934 938	note
+E25	Action:T85 Measure-Type-Link:T86
+T86	Measure-Type 939 943	time
+R29	Setting Arg1:E9 Arg2:T80	
+R30	Setting Arg1:E9 Arg2:T81	
+T87	Action 1069 1078	Determine
+E26	Action:T87 Measure-Type-Link:T88
+T88	Measure-Type 1083 1096	concentration
+T89	Reagent 1100 1107	viruses
+T90	Reagent 1125 1136	supernatant
+T91	Measure-Type 1146 1156	time point
+T92	Action 1160 1172	plaque assay
+E27	Action:T92 
+R31	Meronym Arg1:T89 Arg2:T90	
+T93	Measure-Type 1011 1015	temp

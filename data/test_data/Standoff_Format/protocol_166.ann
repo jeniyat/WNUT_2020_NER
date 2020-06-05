@@ -1,74 +1,124 @@
-T1	Action 0 9	Purifying
-T2	Reagent 10 17	Viruses
-T3	Location 24 39	Sucrose Cushion
-T4	Action 40 47	Prepare
-T5	Reagent 48 55	sucrose
-T6	Modifier 57 80	Molecular Biology Grade
-T7	Concentration 95 118	38 % (weight to volume)
-T8	Reagent 122 131	SM buffer
-T9	Concentration 133 138	100mM
-T10	Reagent 139 143	NaCl
-T11	Concentration 145 148	8mM
-T12	Reagent 149 154	MgSO4
-T13	Concentration 156 160	50mM
-T14	Reagent 161 169	TrisJHCl
-T15	pH 171 177	pH 7.5
-T16	Modifier 193 198	0.2μm
-T17	Action 199 207	filtered
-T18	Action 209 214	Rinse
-T19	Location 215 225	SW40 tubes
-T20	Reagent 231 240	SM buffer
-T21	Reagent 244 257	sterile water
-T22	Action 259 264	Place
-T23	Amount 269 274	9.5ml
-T24	Modifier 275 290	DNase I-treated
-T25	Reagent 291 297	sample
-T26	Modifier 307 313	rinsed
-T27	Location 314 334	ultracentrifuge tube
-T28	Modifier 344 347	3cc
-T29	Device 348 355	syringe
-T30	Device 360 367	cannula
-T31	Action 376 381	layer
-T32	Amount 386 392	2.5 ml
-T33	Concentration 396 400	38 %
-T34	Reagent 401 408	sucrose
-T35	Location 409 425	under the sample
-T36	Action 450 456	mixing
-T37	Reagent 460 466	sample
-T38	Reagent 471 478	sucrose
-T39	Action 480 490	Centrifuge
-T40	Modifier 494 503	~175,000g
-T41	Time 508 515	3.25 hr
-T42	Time 519 523	18°C
-T43	Device 533 549	sterile transfer
-T44	Device 553 570	serological pipet
-T45	Action 572 580	pull off
-T46	Amount 585 591	9.5 ml
-T47	Reagent 592 598	sample
-T48	Action 606 614	Pull off
-T49	Reagent 619 628	interface
-T50	Amount 633 639	2.5 ml
-T51	Reagent 640 647	sucrose
-T52	Action 670 677	disturb
-T53	Action 681 692	suction off
-T54	Modifier 697 705	pelleted
-T55	Reagent 706 712	sample
-T56	Location 720 726	bottom
-T57	Action 728 732	Keep
-T58	Reagent 738 751	sucrose layer
-T59	Reagent 758 763	virus
-T60	Reagent 780 787	pellets
-T61	Action 803 810	Air dry
-T62	Reagent 815 822	pellets
-T63	Device 828 837	fume hood
-T64	Time 842 851	15-20 min
-T65	Action 853 856	Add
-T66	Reagent 859 872	mixture of TE
-T67	Concentration 884 888	0.1M
-T68	Reagent 894 903	EDTA/EGTA
-T69	Action 907 916	resuspend
-T70	Reagent 921 928	pellets
-T71	Amount 930 936	500 μl
-T72	Action 954 974	Perform virus counts
-T73	Action 984 991	extract
-T74	Reagent 992 995	DNA
+T1	Action 40 47	Prepare
+E1	Action:T1 Acts-on:T13 Site:T14
+T2	Action 208 213	Rinse
+E2	Action:T2 Acts-on:T26 Using:T27
+T3	Action 258 263	Place
+E3	Action:T3 Acts-on:T31 Site:T33
+T4	Action 376 381	layer
+E4	Action:T4 Using:T36 Using2:T35 Acts-on:T39 Site:T40
+T5	Action 479 489	Centrifuge
+E5	Action:T5 
+T6	Action 803 810	Air dry
+E6	Action:T6 Acts-on:T51 Site:T52
+T7	Action 571 579	pull off
+E7	Action:T7 Acts-on:T47 Using:T45
+T8	Action 605 613	Pull off
+E8	Action:T8 Acts-on:T48 Acts-on2:T50
+T9	Action 853 854	A
+E9	Action:T9 Acts-on:T57
+T10	Action 907 916	resuspend
+E10	Action:T10 Acts-on:T58
+T11	Action 985 992	extract
+E11	Action:T11 Acts-on:T60
+T12	Action 955 975	Perform virus counts
+E12	Action:T12 
+T13	Reagent 48 55	sucrose
+T14	Reagent 121 130	SM buffer
+T15	Action 198 206	filtered
+E13	Action:T15 Acts-on:T14
+T16	Modifier 192 197	0.2μm
+T17	Reagent 138 142	NaCl
+T18	Reagent 148 153	MgSO4
+T19	Reagent 160 168	TrisJHCl
+T20	pH 170 176	pH 7.5
+T21	Concentration 132 137	100mM
+T22	Concentration 144 147	8mM
+T23	Concentration 155 159	50mM
+T24	Concentration 95 117	38% (weight to volume)
+T25	Modifier 57 80	Molecular Biology Grade
+T26	Location 214 224	SW40 tubes
+T27	Reagent 230 239	SM buffer
+T28	Reagent 243 256	sterile water
+T29	Amount 268 273	9.5ml
+T30	Modifier 274 289	DNase I-treated
+T31	Reagent 290 296	sample
+T32	Modifier 306 312	rinsed
+T33	Location 313 333	ultracentrifuge tube
+T34	Modifier 343 346	3cc
+T35	Device 347 354	syringe
+T36	Device 359 366	cannula
+T37	Amount 386 392	2.5 ml
+T38	Concentration 396 399	38%
+T39	Reagent 400 407	sucrose
+T40	Location 408 424	under the sample
+T41	Speed 494 502	175,000g
+T42	Time 507 514	3.25 hr
+T43	Time 518 522	18°C
+T44	Device 532 548	sterile transfer
+T45	Device 552 569	serological pipet
+T46	Amount 584 590	9.5 ml
+T47	Reagent 591 597	sample
+T48	Reagent 618 627	interface
+T49	Amount 632 638	2.5 ml
+T50	Reagent 639 646	sucrose
+T51	Reagent 815 822	pellets
+T52	Device 828 837	fume hood
+T53	Time 842 851	15-20 min
+T54	Reagent 894 898	EDTA
+T55	Reagent 899 903	EGTA
+T56	Concentration 884 888	0.1M
+T57	Reagent 859 872	mixture of TE
+T58	Reagent 921 928	pellets
+T59	Amount 930 936	500 μl
+T60	Reagent 993 996	DNA
+R1	Mod-Link Arg1:T13 Arg2:T25	
+R2	Measure Arg1:T13 Arg2:T24	
+R3	Measure Arg1:T17 Arg2:T21	
+R4	Measure Arg1:T18 Arg2:T22	
+R5	Measure Arg1:T19 Arg2:T23	
+R6	Measure Arg1:T14 Arg2:T20	
+R7	Meronym Arg1:T19 Arg2:T14	
+R8	Meronym Arg1:T18 Arg2:T14	
+R9	Meronym Arg1:T17 Arg2:T14	
+R10	Mod-Link Arg1:E13 Arg2:T16	
+R11	Or Arg1:T27 Arg2:T28	
+R12	Mod-Link Arg1:T31 Arg2:T30	
+R13	Measure Arg1:T31 Arg2:T29	
+R14	Mod-Link Arg1:T33 Arg2:T32	
+R15	Mod-Link Arg1:T35 Arg2:T34	
+R16	Measure Arg1:T39 Arg2:T38	
+R17	Measure Arg1:T39 Arg2:T37	
+R18	Setting Arg1:E5 Arg2:T41	
+R19	Setting Arg1:E5 Arg2:T42	
+R20	Setting Arg1:E5 Arg2:T43	
+R21	Or Arg1:T45 Arg2:T44	
+R22	Measure Arg1:T50 Arg2:T49	
+R23	Setting Arg1:E6 Arg2:T53	
+R24	Measure Arg1:T54 Arg2:T56	
+R25	Measure Arg1:T55 Arg2:T56	
+R26	Meronym Arg1:T54 Arg2:T57	
+R27	Meronym Arg1:T55 Arg2:T57	
+R28	Measure Arg1:T57 Arg2:T59	
+T61	Action 0 9	Purifying
+E14	Action:T61 Acts-on:T62 Site:T63
+T62	Reagent 10 17	Viruses
+T63	Location 24 39	Sucrose Cushion
+T64	Action 449 455	mixing
+E15	Action:T64 Acts-on:T65 Acts-on2:T66
+T65	Reagent 459 465	sample
+T66	Reagent 470 477	sucrose
+T67	Modifier 493 494	~
+R29	Mod-Link Arg1:T41 Arg2:T67	
+T68	Action 669 676	disturb
+E16	Action:T68 Acts-on:T71 Site:T72
+T69	Action 680 691	suction off
+E17	Action:T69 Acts-on:T71 Site:T72
+T70	Modifier 696 704	pelleted
+T71	Reagent 705 711	sample
+T72	Location 719 725	bottom
+R30	Mod-Link Arg1:T71 Arg2:T70	
+T73	Action 727 731	Keep
+E18	Action:T73 Acts-on:T74
+T74	Reagent 738 751	sucrose layer
+T75	Reagent 758 763	virus
+T76	Reagent 780 787	pellets

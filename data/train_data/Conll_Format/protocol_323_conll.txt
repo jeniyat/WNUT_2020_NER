@@ -1,25 +1,20 @@
-SPOT	B-Reagent
-DNA	I-Reagent
-Extraction	I-Reagent
-from	B-Method
-142mm	B-Size
-Durapore	I-Size
-0.22µm	B-Device
-Filters	B-Size
+SPOT DNA Extraction from 142mm	B-Reagent
+Durapore 0.22µm	B-Device
+Filters
+	I-Device
 
 Prepare	B-Action
 a	O
 boiling	B-Reagent
 water	I-Reagent
-bath	I-Reagent
-;	O
+bath;	I-Reagent
 this	O
 MUST	O
 be	O
 a	O
 rolling	B-Modifier
-boil	I-Modifier
-.	O
+boil.
+	I-Modifier
 
 Place	B-Action
 50ml	B-Amount
@@ -30,8 +25,8 @@ with	O
 filter	B-Device
 on	O
 dry	B-Reagent
-ice	I-Reagent
-.	O
+ice.
+	I-Reagent
 
 Using	O
 the	O
@@ -46,8 +41,7 @@ falcon	I-Location
 tube	I-Location
 as	O
 a	O
-pestle	B-Device
-,	O
+pestle,	B-Device
 vigorously	B-Modifier
 crush	B-Action
 the	O
@@ -71,8 +65,8 @@ is	O
 BELOW	O
 the	O
 10ml	B-Amount
-line	O
-.	O
+line.
+	O
 
 Add	B-Action
 9mls	B-Amount
@@ -84,25 +78,24 @@ to	O
 the	O
 crushed	B-Modifier
 filter	B-Reagent
-pieces	I-Reagent
-.	O
+pieces.
+	I-Reagent
 
 Vortex	B-Action
 for	O
 10	B-Time
-seconds	I-Time
-.	O
+seconds.
+	I-Time
 
 Add	B-Action
 1ml	B-Amount
 of	O
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 SDS	B-Reagent
 drop‐wise	B-Method
 while	O
-swirling	B-Action
-.	O
+swirling.
+	B-Action
 
 Spin	B-Action
 briefly	B-Modifier
@@ -118,34 +111,29 @@ up	O
 to	O
 4000	B-Speed
 rpm	I-Speed
-(	O
-3220xg	B-Speed
-)	O
+(3220xg)	I-Speed
 and	O
 immediately	B-Modifier
-stopping	B-Action
-.	O
+stopping.
+	B-Action
 
 Place	B-Action
 in	O
-rolling	B-Modifier
-,	O
-boiling	B-Modifier
+rolling,	B-Modifier
+boiling	I-Modifier
 water	B-Reagent
 bath	I-Reagent
 for	O
 2	B-Time
-minutes	I-Time
-.	O
+minutes.
+	I-Time
 
 Spin	B-Action
 at	O
 4000	B-Speed
 rpm	I-Speed
-(	O
-Eppendorf	B-Device
-5810R	I-Device
-)	O
+(Eppendorf	B-Device
+5810R)	I-Device
 for	O
 10	B-Time
 minutes	I-Time
@@ -155,8 +143,8 @@ to	O
 separate	B-Action
 filter	B-Device
 and	O
-debris	B-Reagent
-.	O
+debris.
+	B-Reagent
 
 Add	B-Action
 3mls	B-Amount
@@ -170,14 +158,12 @@ Ridge	I-Location
 tube	I-Location
 for	O
 each	O
-filter	B-Device
-.	O
+filter.
+	B-Device
 
 Pour	B-Action
 supernatant	B-Reagent
-(	O
-only	O
-)	O
+(only)	O
 from	O
 50ml	B-Amount
 falcon	B-Location
@@ -186,11 +172,9 @@ into	O
 Oak	B-Location
 Ridge	I-Location
 tube	I-Location
-(	O
-38ml	B-Amount
-capacity	O
-)	O
-.	O
+(38ml	B-Amount
+capacity).
+	O
 
 Use	O
 1ml	B-Amount
@@ -203,10 +187,9 @@ supernatant	B-Reagent
 to	O
 Oak	B-Location
 Ridge	I-Location
-tube	I-Location
-:	O
-~0.5‐1ml	B-Modifier
-.	O
+tube:	I-Location
+~0.5‐1ml.
+	B-Modifier
 
 Remove	B-Action
 any	O
@@ -229,36 +212,31 @@ filter	B-Reagent
 pieces	I-Reagent
 up	O
 the	O
-sides	B-Location
-.	O
+sides.
+	B-Location
 
 Add	B-Action
 28mls	B-Amount
 of	O
 200	B-Generic-Measure
 proof	I-Generic-Measure
-(	O
-100	B-Concentration
-%	I-Concentration
-)	O
+(100%)	B-Concentration
 EtOH	B-Reagent
-(	O
-molecular	B-Modifier
-grade	I-Modifier
-)	O
-.	O
+(molecular	B-Modifier
+grade).
+	I-Modifier
 
 Invert	B-Action
 to	O
 mix	B-Action
-thoroughly	B-Modifier
-.	O
+thoroughly.
+	B-Modifier
 
 Store	B-Action
 at	O
 ‐20°C	B-Temperature
-overnight	B-Time
-.	O
+overnight.
+	B-Time
 
 Pellet	B-Action
 DNA	B-Reagent
@@ -278,15 +256,13 @@ max	B-Speed
 speed	I-Speed
 of	O
 13,000RPM	B-Speed
-(	O
-27,900xg	B-Speed
-)	O
+(27,900xg)	I-Speed
 for	O
 at	B-Modifier
 least	I-Modifier
 2	B-Time
-hours	I-Time
-.	O
+hours.
+	I-Time
 
 Gently	B-Modifier
 pour	B-Action
@@ -303,44 +279,42 @@ for	O
 at	B-Modifier
 least	I-Modifier
 2	B-Time
-hours	I-Time
-.	O
+hours.
+	I-Time
 
 Resuspend	B-Action
 in	O
 500ul	B-Amount
 1X	B-Concentration
 TE	B-Reagent
-(	O
-pH	B-Generic-Measure
-8.0	I-Generic-Measure
-)	O
+(pH	B-Generic-Measure
+8.0)	I-Generic-Measure
 for	O
 2	B-Time
 hours	I-Time
 at	O
-37ºC	B-Temperature
-.	O
+37ºC.
+	B-Temperature
 
 Transfer	B-Action
 to	O
 2ml	B-Size
 non‐LoBind	B-Location
-tube	I-Location
-.	O
+tube.
+	I-Location
 
 Add	B-Action
 500µl	B-Amount
-phenol	B-Reagent
-.	O
+phenol.
+	B-Reagent
 
 Mix	B-Action
 5	B-Numerical
 times	O
 by	O
 gentle	B-Modifier
-inversion	B-Method
-.	O
+inversion.
+	B-Method
 
 Spin	B-Action
 2	B-Time
@@ -348,35 +322,26 @@ min	I-Time
 at	O
 12000	B-Speed
 rpm	I-Speed
-(	O
-13,000xg	O
-)	O
+(13,000xg)	O
 to	O
 separate	B-Action
 organic	B-Reagent
 and	O
 inorganic	B-Reagent
 phases	O
-(	O
-Beckman	O
-,	O
-beige	O
-)	O
-.	O
+(Beckman,	O
+beige).	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 bottom	B-Location
-(	O
-phenol	B-Reagent
-)	O
-layer	O
-.	O
+(phenol)	B-Reagent
+layer.
+	O
 
-LEAVE	B-Action
-INTERFACE	I-Action
-.	O
+LEAVE INTERFACE.
+	B-Action
 
 Add	B-Action
 300µl	B-Amount
@@ -384,25 +349,21 @@ phenol	B-Reagent
 and	O
 300µl	B-Amount
 SEVAG	B-Reagent
-(	O
-CHCl3	B-Reagent
-:	I-Reagent
-IsoamylOH	I-Reagent
+(CHCl3:IsoamylOH	I-Reagent
 24:1	B-Concentration
-v/v	O
-)	O
+v/v)	O
 to	O
 aqueous	B-Reagent
-phase	I-Reagent
-.	O
+phase.
+	I-Reagent
 
 Mix	B-Action
 by	O
 gentle	B-Modifier
 inversion	B-Method
 5	B-Numerical
-times	O
-.	O
+times.
+	O
 
 Spin	B-Action
 2	B-Time
@@ -410,39 +371,33 @@ min	I-Time
 at	O
 12000	B-Speed
 rpm	I-Speed
-(	O
-13,000xg	B-Speed
-)	O
-.	O
+(13,000xg).
+	I-Speed
 
 Remove	B-Action
 and	O
 discard	B-Action
 bottom	B-Reagent
-layer	I-Reagent
-.	O
+layer.
+	I-Reagent
 
 LEAVE	B-Action
-INTERFACE	I-Action
-.	O
+INTERFACE.
+	I-Action
 
 Add	B-Action
 500µl	B-Amount
 SEVAG	B-Reagent
-(	O
-CHCl3	B-Reagent
-:	I-Reagent
-IsoamylOH	I-Reagent
+(CHCl3:IsoamylOH	I-Reagent
 24:1	B-Concentration
-v/v	O
-)	O
-.	O
+v/v).
+	O
 
 Mix	B-Action
 by	O
 gentle	B-Modifier
-inversion	B-Method
-.	O
+inversion.
+	B-Method
 
 Spin	B-Action
 2	B-Time
@@ -450,96 +405,76 @@ min	I-Time
 at	O
 12000	B-Speed
 rpm	I-Speed
-(	O
-13,000xg	B-Speed
-)	O
-.	O
+(13,000xg).
+	I-Speed
 
 Remove	B-Action
 TOP	B-Reagent
 layer	I-Reagent
-(	O
-YOUR	B-Reagent
-DNA	I-Reagent
-)	O
+(YOUR	I-Reagent
+DNA)	I-Reagent
 and	O
 transfer	B-Action
 to	O
 new	O
 2ml	B-Amount
 non‐LoBind	B-Location
-tube	I-Location
-.	O
+tube.
+	I-Location
 
-LEAVE	B-Action
-INTERFACE	I-Action
-BEHIND	O
-.	O
+LEAVE INTERFACE BEHIND.
+	B-Action
 
-This	O
-top	B-Reagent
-layer	I-Reagent
-is	I-Reagent
-your	I-Reagent
-DNA	O
-!	O
-!	O
-!	B-Reagent
+This top layer is your DNA!!!
+	B-Reagent
 
 Add	B-Action
 125µl	B-Amount
 10.5M	B-Concentration
-NH4OAC	B-Reagent
-.	O
+NH4OAC.
+	B-Reagent
 
 Mix	B-Action
 by	O
 inversion	B-Method
 5‐10	B-Numerical
-times	O
-.	O
+times.
+	O
 
 *	O
 Add	B-Action
 1375	B-Amount
 µl	I-Amount
 ice‐cold	B-Modifier
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 EtOH	B-Reagent
-(	O
-200	B-Generic-Measure
-proof	I-Generic-Measure
-,	O
+(200	B-Generic-Measure
+proof,	I-Generic-Measure
 molecular	B-Modifier
-grade	I-Modifier
-)	O
-.	O
+grade).
+	I-Modifier
 
 *	O
 Mix	B-Action
 by	O
 inversion	B-Method
 5‐10	B-Numerical
-times	O
-.	O
+times.
+	O
 
 Precipitate	B-Action
 overnight	B-Time
 at	O
-‐20ºC	B-Temperature
-.	O
+‐20ºC.
+	B-Temperature
 
 Spin	B-Action
 at	O
 max	B-Speed
 speed	I-Speed
-(	O
-approximately	B-Modifier
-13,750RPM	B-Speed
-,	O
-12,535xg	B-Speed
-)	O
+(approximately	B-Modifier
+13,750RPM,	B-Speed
+12,535xg)	I-Speed
 in	O
 Beckman	B-Device
 Microfuge	I-Device
@@ -549,10 +484,8 @@ horizontal	B-Device
 rotor	I-Device
 at	O
 4ºC	B-Temperature
-(	O
-cold	B-Location
-room	I-Location
-)	O
+(cold	B-Location
+room)	I-Location
 for	O
 30	B-Time
 minutes	I-Time
@@ -564,8 +497,8 @@ in	O
 the	O
 center/bottom	B-Location
 of	O
-tube	B-Location
-.	O
+tube.
+	B-Location
 
 To	O
 pellet	B-Action
@@ -573,8 +506,7 @@ the	O
 rest	O
 of	O
 the	O
-DNA	B-Reagent
-,	O
+DNA,	B-Reagent
 spin	B-Action
 the	O
 same	O
@@ -587,22 +519,19 @@ minutes	I-Time
 at	O
 14,000	B-Speed
 rpm	I-Speed
-(	O
-20,800xg	B-Speed
-)	O
+(20,800xg)	I-Speed
 at	O
 4ºC	B-Temperature
-(	O
-Eppendorf	B-Device
-5810R	I-Device
-)	O
-.	O
+(Eppendorf	B-Device
+5810R)	I-Device
+.
+	O
 
 Gently	B-Modifier
 pour	B-Action
 off	I-Action
-supernatant	B-Reagent
-.	O
+supernatant.
+	B-Reagent
 
 Dry	B-Action
 pellet	B-Reagent
@@ -615,8 +544,8 @@ by	O
 leaving	B-Action
 open	O
 and	O
-upside‐down	O
-.	O
+upside‐down.
+	O
 
 Resuspend	B-Action
 5m	B-Reagent
@@ -629,10 +558,8 @@ of	O
 1X	B-Concentration
 TE	B-Reagent
 and	O
-150m	B-Reagent
-,	O
-500m	B-Reagent
-,	O
+150m,	B-Reagent
+500m,	I-Reagent
 and	O
 890m	B-Reagent
 samples	I-Reagent
@@ -644,8 +571,8 @@ for	O
 2	B-Time
 hours	I-Time
 at	O
-37ºC	B-Temperature
-.	O
+37ºC.
+	B-Temperature
 
 Transfer	B-Action
 all	O
@@ -656,8 +583,8 @@ to	O
 Eppendorf	B-Location
 LoBind	I-Location
 DNA	I-Location
-tube	I-Location
-.	O
+tube.
+	I-Location
 
 Aliquot	B-Action
 10µl	B-Amount
@@ -672,21 +599,18 @@ LoBind	I-Location
 DNA	I-Location
 tube	I-Location
 for	O
-archiving	B-Action
-.	O
+archiving.
+	B-Action
 
 After	O
-re‐suspension	B-Method
-,	O
+re‐suspension,	B-Method
 immediately	B-Modifier
 quantify	B-Action
 using	O
 PICO	B-Reagent
 Green	I-Reagent
-(	O
-Invitrogen	B-Reagent
-)	O
-.	O
+(Invitrogen).
+	I-Reagent
 
 Prepare	B-Action
 2ng/µl	B-Concentration
@@ -701,18 +625,17 @@ more	I-Modifier
 than	I-Modifier
 1µl	B-Amount
 of	O
-extract	B-Reagent
-.	O
+extract.
+	B-Reagent
 
 Store	B-Action
-dilution	B-Reagent
-,	O
-extract	B-Action
-,	O
+dilution,	B-Reagent
+extract,	B-Action
 and	O
 archive	B-Action
 at	O
-‐80ºC	B-Temperature
+‐80ºC
+	B-Temperature
 
 
 

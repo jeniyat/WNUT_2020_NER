@@ -1,7 +1,8 @@
 Conjugation	B-Method
 of	O
 Thalassiosira	B-Reagent
-pseudonana	I-Reagent
+pseudonana
+	I-Reagent
 
 Pick	B-Action
 bacterial	B-Reagent
@@ -15,12 +16,12 @@ inoculate	B-Action
 10	B-Amount
 mL	I-Amount
 LB	B-Reagent
-medium	I-Reagent
-.	O
+medium.
+	I-Reagent
 
 Grow	B-Action
-overnight	B-Time
-.	O
+overnight.
+	B-Time
 
 Measure	B-Action
 OD600	B-Measure-Type
@@ -31,16 +32,14 @@ a	O
 mL	I-Amount
 LB	B-Method
 subculture	I-Method
-(	O
-recommended	O
+(recommended	O
 starting	O
 OD600	B-Measure-Type
 either	O
 0.05	B-Numerical
 or	O
-0.1	B-Numerical
-)	O
-.	O
+0.1).
+	B-Numerical
 
 Grow	B-Action
 at	O
@@ -48,20 +47,18 @@ at	O
 until	O
 OD600	B-Measure-Type
 reaches	O
-0.3-0.4	B-Generic-Measure
-.	O
+0.3-0.4.
+	B-Generic-Measure
 
 Centrifuge	B-Action
 at	O
 4,000	B-Speed
-rpm	I-Speed
-,	O
-10oC	B-Temperature
-,	O
+rpm,	I-Speed
+10oC,	B-Temperature
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 Decant	B-Action
 supernatant	B-Reagent
@@ -70,24 +67,21 @@ resuspend	B-Action
 in	O
 800	B-Amount
 µL	I-Amount
-SOC	B-Reagent
-.	O
+SOC.
+	B-Reagent
 
-Tp	B-Reagent
-was	I-Reagent
+Tp was	B-Reagent
 cultured	B-Action
-in	I-Action
-L1	O
-medium	B-Reagent
-as	I-Reagent
-described	O
+in	O
+L1	B-Reagent
+medium	I-Reagent
+as described	O
 in	O
 the	O
 'Before	O
-start	O
-'	O
-section	O
-.	O
+start'	O
+section.
+	O
 
 Spin	B-Action
 down	I-Action
@@ -97,14 +91,12 @@ x	I-Size
 cells	B-Reagent
 at	O
 4000	B-Speed
-rpm	I-Speed
-,	O
-10oC	B-Temperature
-,	O
+rpm,	I-Speed
+10oC,	B-Temperature
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 Decant	B-Action
 supernatant	B-Reagent
@@ -115,8 +107,8 @@ in	O
 1	B-Amount
 mL	I-Amount
 L1	B-Reagent
-medium	I-Reagent
-.	O
+medium.
+	I-Reagent
 
 Mix	B-Action
 200	B-Amount
@@ -134,8 +126,8 @@ in	O
 a	O
 1.5	B-Amount
 mL	I-Amount
-tube	B-Location
-.	O
+tube.
+	B-Location
 
 Pipette	B-Action
 up	B-Method
@@ -143,21 +135,19 @@ and	I-Method
 down	I-Method
 a	O
 few	B-Numerical
-times	I-Numerical
-.	O
+times.
+	I-Numerical
 
 Plate	B-Action
 on	O
 1/2xL1	B-Generic-Measure
-1	B-Concentration
-%	I-Concentration
+1%	B-Concentration
 agar	B-Location
 plates	I-Location
 w/	O
-5	B-Concentration
-%	I-Concentration
-LB	B-Reagent
-.	O
+5%	B-Concentration
+LB.
+	B-Reagent
 
 Incubate	B-Action
 in	O
@@ -166,30 +156,29 @@ at	O
 30oC	B-Temperature
 for	O
 90	B-Time
-minutes	I-Time
-.	O
+minutes.
+	I-Time
 
 Move	B-Action
 plates	B-Location
 to	O
 your	O
 standard	O
-Tp	B-Reagent
-growth	I-Reagent
+Tp growth	B-Reagent
 conditions	O
 -	O
 in	O
 my	O
 case	O
 18oC	B-Temperature
-and	I-Temperature
+and	O
 constant	O
 light	O
 -	O
 for	O
-4	O
-hours	B-Time
-.	I-Time
+4	B-Time
+hours.
+	I-Time
 
 Add	B-Action
 1	B-Amount
@@ -204,8 +193,8 @@ cell	B-Device
 scraper	I-Device
 or	O
 L	B-Device
-spreader	I-Device
-.	O
+spreader.
+	I-Device
 
 Expect	O
 to	O
@@ -215,8 +204,8 @@ recover	B-Action
 co-culture	B-Reagent
 suspension	I-Reagent
 after	O
-scraping	B-Action
-.	O
+scraping.
+	B-Action
 
 Plate	B-Action
 200	B-Amount
@@ -228,15 +217,14 @@ suspension	B-Reagent
 on	O
 pre-dried	B-Modifier
 1/2xL1	B-Generic-Measure
-1	B-Concentration
-%	I-Concentration
+1%	B-Concentration
 agar	B-Location
 plates	I-Location
 w/	O
 100	B-Concentration
 µg/mL	I-Concentration
-nourseothricin	B-Reagent
-.	O
+nourseothricin.
+	B-Reagent
 
 Leave	B-Action
 at	O
@@ -249,8 +237,8 @@ colonies	B-Reagent
 appear	O
 -	O
 ~2	B-Modifier
-weeks	B-Time
-.	O
+weeks.
+	B-Time
 
 Here	O
 are	O
@@ -269,14 +257,14 @@ heterologous	B-Reagent
 gene	I-Reagent
 in	O
 resulting	O
-colonies	B-Reagent
-:	O
+colonies:
+	B-Reagent
 
 Growth	B-Action
 under	O
 selection	B-Measure-Type
-pressure	I-Measure-Type
-.	O
+pressure.
+	I-Measure-Type
 
 Make	B-Action
 sure	I-Action
@@ -293,10 +281,8 @@ with	O
 100	B-Concentration
 µg/mL	I-Concentration
 nourseothricin	B-Reagent
-(	O
-Nou100	B-Reagent
-)	O
-.	O
+(Nou100).
+	I-Reagent
 
 Pick	B-Action
 colonies	B-Reagent
@@ -313,8 +299,8 @@ inoculate	B-Action
 ~0.5	B-Amount
 mL	I-Amount
 L1	B-Reagent
-medium	I-Reagent
-.	O
+medium.
+	I-Reagent
 
 Once	O
 you	O
@@ -323,8 +309,8 @@ growth	B-Reagent
 subculture	I-Reagent
 in	O
 larger	O
-volume	B-Measure-Type
-.	O
+volume.
+	B-Measure-Type
 
 PCR-	B-Method
 Use	B-Action
@@ -340,8 +326,8 @@ to	O
 amplify	B-Action
 your	O
 expression	B-Reagent
-cassette	I-Reagent
-.	O
+cassette.
+	I-Reagent
 
 -	O
 Confirm	B-Action
@@ -351,35 +337,28 @@ of	O
 donor	B-Reagent
 DNA	I-Reagent
 by	O
-amplifying	B-Action
-E.	B-Reagent
-coli-specific	I-Reagent
-genes	I-Reagent
-.	I-Reagent
+amplifying E.	B-Action
+coli-specific	B-Reagent
+genes.
+	I-Reagent
 
-NOTE	O
-:	O
-I	O
+NOTE:I	O
 used	O
 primers	B-Reagent
 to	O
 amplify	B-Action
-the	O
-corC	B-Reagent
-gene	I-Reagent
-.	I-Reagent
+the corC gene.
+	B-Reagent
 
 Make	O
 sure	O
 you	O
 always	O
-run	B-Action
-E.	B-Reagent
-coli	I-Reagent
-EPI300	I-Reagent
-posititve	I-Reagent
-control	I-Reagent
-.	I-Reagent
+run E.	B-Action
+coli	B-Reagent
+EPI300 posititve	I-Reagent
+control.
+	I-Reagent
 
 -	O
 Confirm	B-Action
@@ -398,11 +377,10 @@ on	O
 LB	B-Reagent
 plates	B-Location
 w/o	O
-antibiotics	B-Reagent
-.	O
+antibiotics.
+	B-Reagent
 
-NOTE	O
-:	O
+NOTE:	O
 Any	O
 remaining	O
 donors	B-Reagent
@@ -416,8 +394,8 @@ after	O
 a	O
 few	O
 liquid	B-Reagent
-subcultures	I-Reagent
-.	O
+subcultures.
+	I-Reagent
 
 You	O
 can	O
@@ -428,8 +406,8 @@ on	O
 fresh	B-Modifier
 1/2xL1	B-Generic-Measure
 Nou100	B-Reagent
-plates	B-Location
-.	O
+plates.
+	B-Location
 
 RT-PCR-	O
 Purify	B-Action
@@ -438,8 +416,7 @@ RNA	B-Reagent
 from	O
 Nou100	B-Reagent
 diatom	I-Reagent
-culture	I-Reagent
-,	O
+culture,	I-Reagent
 convert	B-Action
 it	O
 to	O
@@ -454,8 +431,8 @@ PCR	B-Method
 with	O
 heterologous	B-Modifier
 gene-specific	B-Reagent
-primers	I-Reagent
-.	O
+primers.
+	I-Reagent
 
 -	O
 An	O
@@ -468,8 +445,8 @@ controls	B-Reagent
 can	O
 be	O
 found	O
-here	O
-.	O
+here.
+	O
 
 Episome	B-Method
 recovery-	I-Method
@@ -482,21 +459,17 @@ described	O
 by	O
 Karas	O
 et	O
-al	O
-.	O
-(	O
-2015	O
-)	O
-.	O
+al.	O
+(2015).
+	O
 
 -	O
 Transform	B-Action
 E.	B-Reagent
-coli	I-Reagent
-with	O
+coli with	I-Reagent
 diatom-derived	B-Modifier
-DNA	I-Modifier
-.	B-Reagent
+DNA.
+	B-Reagent
 
 -	O
 Select	B-Action
@@ -505,25 +478,21 @@ LB	B-Reagent
 agar	I-Reagent
 plates	B-Location
 with	O
-50	B-Concentration
-µg/mL	I-Concentration
-kanamycin	I-Concentration
-.	B-Reagent
+50 µg/mL	B-Concentration
+kanamycin.
+	B-Reagent
 
 -	O
-Miniprep	B-Action
-,	O
-digest	B-Action
+Miniprep,	B-Action
+digest	I-Action
 and	O
 analyze	B-Action
 on	O
 a	O
-gel	B-Location
-.	O
+gel.
+	B-Location
 
-NOTE	O
-:	O
-You	O
+NOTE:You	O
 will	O
 learn	O
 more	O
@@ -535,41 +504,36 @@ your	O
 episome	B-Reagent
 from	O
 this	O
-analysis	B-Method
-.	O
+analysis.
+	B-Method
 
 Western	B-Method
-blot	I-Method
+blot
+	I-Method
 
 Protein-specific	B-Action
 assays-	I-Action
 enzymatic	I-Action
-assay	I-Action
-,	O
-microscopy	B-Method
-etc	I-Method
-.	O
+assay, microscopy	I-Action
+etc.
+	O
 
-I	O
-'ve	O
+I've	O
 had	O
 success	O
 with	O
-1	O
-,	O
+1,	O
 2	O
 and	O
-3	O
-;	O
+3;	O
 tried	O
-4	O
-,	O
+4,	O
 5	O
 and	O
 6	O
 without	O
-success	O
-.	O
+success.
+	O
 
 
 

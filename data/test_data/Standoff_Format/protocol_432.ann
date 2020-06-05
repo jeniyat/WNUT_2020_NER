@@ -1,56 +1,95 @@
-T1	Reagent 0 5	Ki-67
-T2	Action 6 14	Staining
-T3	Action 24 31	Prepare
-T4	Generic-Measure 32 36	70 %
-T5	Reagent 37 44	ethanol
-T6	Action 49 54	chill
-T7	Temperature 58 63	-20°C
-T8	Action 65 72	Prepare
-T9	Reagent 73 97	target cells of interest
-T10	Action 102 106	wash
-T11	Reagent 107 109	2X
-T12	Reagent 115 118	PBS
-T13	Action 122 132	centrifuge
-T14	Speed 136 141	350xg
-T15	Time 146 155	5 minutes
-T16	Action 157 164	Discard
-T17	Reagent 165 176	supernatant
-T18	Action 181 187	loosen
-T19	Reagent 192 203	cell pellet
-T20	Action 207 216	vortexing
-T21	Action 218 221	Add
-T22	Amount 222 226	3 ml
-T23	Modifier 227 231	cold
-T24	Generic-Measure 232 236	70 %
-T25	Reagent 237 244	ethanol
-T26	Method 245 257	drop by drop
-T27	Location 265 276	cell pellet
-T28	Action 283 292	vortexing
-T29	Action 294 312	Continue vortexing
-T30	Time 317 327	30 seconds
-T31	Action 337 345	incubate
-T32	Temperature 349 354	-20°C
-T33	Time 359 365	1 hour
-T34	Action 367 371	Wash
-T35	Reagent 372 374	3X
-T36	Reagent 380 414	BioLegend ’ s Cell Staining Buffer
-T37	Action 442 451	resuspend
-T38	Reagent 456 461	cells
-T39	Measure-Type 469 482	concentration
-T40	Concentration 486 501	0.5-10 x 106/ml
-T41	Action 503 506	Mix
-T42	Amount 507 513	100 µl
-T43	Reagent 514 529	cell suspension
-T44	Modifier 535 565	proper fluorochrome-conjugated
-T45	Reagent 566 580	Ki-67 antibody
-T46	Action 585 593	incubate
-T47	Temperature 597 613	room temperature
-T48	Location 621 625	dark
-T49	Time 630 640	30 minutes
-T50	Action 642 646	Wash
-T51	Reagent 647 649	2X
-T52	Reagent 655 689	BioLegend ’ s Cell Staining Buffer
-T53	Action 717 726	resuspend
-T54	Amount 730 736	0.5 ml
-T55	Reagent 737 757	cell staining buffer
-T56	Method 762 786	flow cytometric analysis
+T1	Action 156 163	Discard
+E1	Action:T1 Acts-on:T2
+T2	Reagent 164 175	supernatant
+T3	Action 180 186	loosen
+E2	Action:T3 Acts-on:T5
+T5	Reagent 191 202	cell pellet
+T6	Action 64 71	Prepare
+E3	Action:T6 Acts-on:T27
+T7	Action 24 31	Prepare
+E4	Action:T7 Acts-on:T32
+T8	Generic-Measure 32 35	70%
+T9	Action 638 642	Wash
+E5	Action:T9 Acts-on:T23 Using:T49
+T10	Action 499 502	Mix
+E6	Action:T10 Acts-on:T22 Using:T44
+T11	Amount 503 509	100 µl
+T12	Action 365 369	Wash
+E7	Action:T12 Acts-on:T20 Using:T21
+T13	Action 292 300	Continue
+E8	Action:T13 Commands:E20
+T15	Action 217 220	Add
+E9	Action:T15 Acts-on:T37 Using:T38 Site:T39
+T16	Time 315 325	30 seconds
+T17	Action 335 343	incubate
+E10	Action:T17 
+T18	Temperature 347 352	-20°C
+T19	Time 357 363	1 hour
+T20	Reagent 370 372	3X
+T21	Reagent 378 410	BioLegend’s Cell Staining Buffer
+T22	Reagent 510 525	cell suspension
+R1	Measure Arg1:T22 Arg2:T11	
+T23	Reagent 643 645	2X
+T24	Amount 221 225	3 ml
+T25	Time 145 154	5 minutes
+T26	Speed 135 140	350xg
+T27	Reagent 72 96	target cells of interest
+T28	Action 101 105	wash
+E11	Action:T28 Acts-on:T29 Using:T30 Commands:E12
+T29	Reagent 106 108	2X
+T30	Reagent 114 117	PBS
+T31	Action 121 131	centrifuge
+E12	Action:T31 
+T33	Action 48 53	chill
+E14	Action:T33 Acts-on:T32
+T34	Temperature 57 62	-20°C
+T32	Reagent 36 43	ethanol
+R2	Measure Arg1:T32 Arg2:T8	
+R3	Setting Arg1:E14 Arg2:T34	
+R4	Setting Arg1:E12 Arg2:T26	
+R5	Setting Arg1:E12 Arg2:T25	
+T35	Modifier 226 230	cold
+T36	Generic-Measure 231 234	70%
+T37	Reagent 235 242	ethanol
+R6	Measure Arg1:T37 Arg2:T24	
+R7	Mod-Link Arg1:T37 Arg2:T35	
+R8	Measure Arg1:T37 Arg2:T36	
+T38	Method 243 255	drop by drop
+T39	Location 263 274	cell pellet
+R10	Setting Arg1:E10 Arg2:T18	
+R11	Setting Arg1:E10 Arg2:T19	
+T40	Action 438 447	resuspend
+E13	Action:T40 Acts-on:T41
+T41	Reagent 452 457	cells
+T42	Concentration 482 497	0.5-10 x 106/ml
+R12	Setting Arg1:E13 Arg2:T42	
+T43	Modifier 531 537	proper
+T44	Reagent 562 576	Ki-67 antibody
+T45	Action 581 589	incubate
+E15	Action:T45 Site:T47 Acts-on:T22
+T46	Temperature 593 609	room temperature
+T47	Location 617 621	dark
+T48	Time 626 636	30 minutes
+R13	Mod-Link Arg1:T44 Arg2:T43	
+R14	Setting Arg1:E15 Arg2:T46	
+R15	Setting Arg1:E15 Arg2:T48	
+T49	Reagent 651 683	BioLegend’s Cell Staining Buffer
+T50	Action 711 720	resuspend
+E16	Action:T50 Acts-on:T23 Site:T52
+T51	Amount 724 730	0.5 ml
+T52	Reagent 731 751	cell staining buffer
+R16	Measure Arg1:T52 Arg2:T51	
+T53	Action 6 14	Staining
+E17	Action:T53 Acts-on:T58
+T54	Action 281 290	vortexing
+E18	Action:T54 
+T4	Action 206 215	vortexing
+E19	Action:T4 
+T14	Action 301 310	vortexing
+E20	Action:T14 
+R17	Setting Arg1:E20 Arg2:T16	
+T55	Measure-Type 465 478	concentration
+T56	Modifier 538 561	fluorochrome-conjugated
+R9	Mod-Link Arg1:T44 Arg2:T56	
+T57	Method 756 780	flow cytometric analysis
+T58	Reagent 0 5	Ki-67

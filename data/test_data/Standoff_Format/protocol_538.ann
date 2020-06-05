@@ -1,48 +1,104 @@
-T1	Reagent 2 14	Hygromycin B
-T2	Reagent 17 42	Puromycin Dihydrochloride
-T3	Action 44 51	Examine
-T4	Measure-Type 52 61	viability
-T5	Modifier 62 67	every
-T6	Time 68 74	2 days
-T7	Action 76 83	Culture
-T8	Time 88 95	14 days
-T9	Action 97 104	Replace
-T10	Reagent 109 114	media
-T11	Reagent 126 136	antibiotic
-T12	Time 137 149	every 3 days
-T13	Modifier 159 165	lowest
-T14	Measure-Type 166 179	concentration
-T15	Reagent 188 198	antibiotic
-T16	Action 204 218	begins to give
-T17	Method 219 237	massive cell death
-T18	Time 238 247	in 3 days
-T19	Action 252 257	kills
-T20	Modifier 258 261	all
-T21	Reagent 266 271	cells
-T22	Time 272 288	within two weeks
-T23	Modifier 318 325	usually
-T24	Concentration 326 335	400 mg/ml
-T25	Reagent 336 340	G418
-T26	Reagent 345 355	HeLa cells
-T27	Concentration 360 369	200 mg/ml
-T28	Reagent 370 380	hygromycin
-T29	Reagent 385 394	CHO cells
-T30	Reagent 399 414	mammalian cells
-T31	Modifier 419 432	optimal level
-T32	Reagent 436 445	puromycin
-T33	Modifier 449 465	typically around
-T34	Concentration 466 473	1 mg/ml
-T35	Reagent 475 485	HeLa cells
-T36	Modifier 490 506	often selectable
-T37	Concentration 512 521	500 mg/ml
-T38	Reagent 522 526	G418
-T39	Concentration 528 537	500 mg/ml
-T40	Reagent 538 548	hygromycin
-T41	Concentration 553 562	2.5 mg/ml
-T42	Reagent 563 572	puromycin
-T43	Reagent 578 591	SHSY-5Y cells
-T44	Modifier 596 612	often selectable
-T45	Concentration 618 627	600 mg/ml
-T46	Reagent 628 632	G418
-T47	Concentration 636 644	200mg/ml
-T48	Reagent 645 655	hygromycin
+T1	Action 69 74	Split
+E1	Action:T1 Acts-on:T7 Site:T10 Site2:T12
+T2	Action 142 150	Transfer
+E2	Action:T2 Acts-on:T14 Site:T16
+T4	Action 322 329	Culture
+E4	Action:T4 
+T5	Action 343 350	Replace
+E5	Action:T5 Acts-on:T19
+T7	Reagent 75 106	non-transduced, confluent cells
+T8	Amount 114 119	10 ml
+T9	Concentration 107 110	1:5
+T10	Reagent 120 124	DMEM
+R1	Measure Arg1:T10 Arg2:T8	
+T11	Concentration 127 130	10%
+T12	Reagent 131 140	FBS media
+R3	Measure Arg1:T12 Arg2:T11	
+R2	Setting Arg1:E1 Arg2:T9	
+T13	Amount 151 157	0.5 mL
+T14	Reagent 158 173	cell suspension
+R4	Measure Arg1:T14 Arg2:T13	
+T15	Size 179 186	24-well
+T16	Location 187 192	plate
+R5	Measure Arg1:T16 Arg2:T15	
+T17	Amount 204 210	500 µl
+T18	Reagent 215 227	media + drug
+R6	Measure Arg1:T18 Arg2:T17	
+R7	Meronym Arg1:T18 Arg2:T16	
+T3	Time 334 341	14 days
+R8	Setting Arg1:E4 Arg2:T3	
+T19	Reagent 355 360	media
+T20	Reagent 372 382	antibiotic
+R9	Meronym Arg1:T20 Arg2:T19	
+T21	Time 383 395	every 3 days
+R10	Setting Arg1:E5 Arg2:T21	
+T6	Method 0 33	Developing a Titration Kill Curve
+T22	Reagent 35 39	G418
+T23	Reagent 41 53	Hygromycin B
+T24	Reagent 58 67	Puromycin
+T25	Reagent 232 244	G418 Sulfate
+T26	Reagent 247 259	Hygromycin B
+T27	Reagent 262 287	Puromycin Dihydrochloride
+T28	Action 290 297	Examine
+E3	Action:T28 Measure-Type-Link:T29
+T29	Measure-Type 298 307	viability
+T30	Modifier 308 313	every
+T31	Time 314 320	2 days
+R11	Mod-Link Arg1:T31 Arg2:T30	
+R12	Setting Arg1:E3 Arg2:T31	
+T32	Modifier 405 411	lowest
+T33	Measure-Type 412 425	concentration
+T34	Reagent 434 444	antibiotic
+T35	Action 450 464	begins to give
+E6	Action:T35 Using:T36 Using2:T34
+T36	Method 465 483	massive cell death
+T37	Time 484 493	in 3 days
+T38	Action 498 503	kills
+E7	Action:T38 Acts-on:T40
+T39	Modifier 504 507	all
+T40	Reagent 512 517	cells
+T41	Time 518 534	within two weeks
+R13	Setting Arg1:E7 Arg2:T41	
+R14	Mod-Link Arg1:T40 Arg2:T39	
+R15	Setting Arg1:E6 Arg2:T37	
+R16	Mod-Link Arg1:T34 Arg2:T32	
+T42	Modifier 564 571	usually
+T43	Concentration 572 581	400 mg/ml
+T44	Reagent 582 586	G418
+T45	Reagent 591 601	HeLa cells
+T46	Concentration 606 615	200 mg/ml
+T47	Reagent 616 626	hygromycin
+T48	Reagent 631 640	CHO cells
+R17	Measure Arg1:T47 Arg2:T46	
+R18	Measure Arg1:T44 Arg2:T43	
+R19	Mod-Link Arg1:T44 Arg2:T42	
+R20	Mod-Link Arg1:T47 Arg2:T42	
+T49	Reagent 645 660	mammalian cells
+T50	Modifier 665 678	optimal level
+T51	Reagent 682 691	puromycin
+T52	Modifier 695 711	typically around
+T53	Concentration 712 719	1 mg/ml
+R21	Measure Arg1:T51 Arg2:T53	
+R22	Mod-Link Arg1:T53 Arg2:T52	
+R23	Mod-Link Arg1:T53 Arg2:T50	
+T54	Reagent 721 731	HeLa cells
+T55	Modifier 736 752	often selectable
+R24	Mod-Link Arg1:T54 Arg2:T55	
+T56	Concentration 758 767	500 mg/ml
+T57	Reagent 768 772	G418
+T58	Concentration 774 783	500 mg/ml
+T59	Reagent 784 794	hygromycin
+T60	Concentration 799 808	2.5 mg/ml
+T61	Reagent 809 818	puromycin
+T62	Reagent 824 837	SHSY-5Y cells
+T63	Modifier 842 858	often selectable
+T64	Concentration 864 873	600 mg/ml
+T65	Reagent 874 878	G418
+T66	Concentration 882 890	200mg/ml
+T67	Reagent 891 901	hygromycin
+R25	Measure Arg1:T67 Arg2:T66	
+R26	Measure Arg1:T65 Arg2:T64	
+R27	Mod-Link Arg1:T62 Arg2:T63	
+R28	Measure Arg1:T61 Arg2:T60	
+R29	Measure Arg1:T59 Arg2:T58	
+R30	Measure Arg1:T57 Arg2:T56	

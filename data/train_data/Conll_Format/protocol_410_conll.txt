@@ -1,20 +1,19 @@
 MPN	B-Measure-Type
-(	O
-Most	B-Measure-Type
+(Most	I-Measure-Type
 Probable	I-Measure-Type
-Number	I-Measure-Type
-)	O
+Number)	I-Measure-Type
 assay	B-Action
 for	O
 infectivity	B-Measure-Type
 of	O
 algal	B-Reagent
-viruses	I-Reagent
+viruses
+	I-Reagent
 
 Virus	B-Reagent
 Dilution	B-Method
-Series	O
-.	O
+Series.
+	O
 
 Label	B-Action
 a	O
@@ -28,8 +27,8 @@ tubes	I-Location
 from	O
 10-1	B-Method
 to	I-Method
-10-10	I-Method
-.	O
+10-10.
+	I-Method
 
 Aliquot	B-Action
 1.8	B-Amount
@@ -38,8 +37,8 @@ culture	B-Reagent
 media	I-Reagent
 to	O
 each	B-Modifier
-tube	B-Location
-.	O
+tube.
+	B-Location
 
 Dilute	B-Action
 200	B-Amount
@@ -48,15 +47,13 @@ virus	B-Reagent
 sample	I-Reagent
 into	O
 the	O
-“	B-Location
-10-1	I-Location
-”	I-Location
+“10-1”	B-Location
 tube	I-Location
 and	O
 vortex	B-Action
 to	O
-mix	B-Action
-.	O
+mix.
+	B-Action
 
 Use	B-Action
 a	O
@@ -69,28 +66,24 @@ transfer	B-Action
 µL	I-Amount
 from	O
 the	O
-“	B-Location
-10-1	I-Location
-”	I-Location
+“10-1”	B-Location
 tube	I-Location
 to	O
 the	O
-“	B-Location
-10-2	I-Location
-”	I-Location
+“10-2”	B-Location
 tube	I-Location
 and	O
 vortex	B-Action
 to	O
-mix	B-Action
-.	O
+mix.
+	B-Action
 
 Repeat	B-Action
 serial	B-Method
 dilution	I-Method
 to	O
-10-10	O
-.	O
+10-10.
+	O
 
 Transfer	B-Action
 500	B-Amount
@@ -103,38 +96,31 @@ sterile	B-Modifier
 1.2	B-Amount
 mL	I-Amount
 cryovial	B-Reagent
-(	O
-to	O
+(to	O
 preserve	B-Action
 for	O
 FCM	B-Measure-Type
-counts	I-Measure-Type
-)	O
-.	O
+counts).
+	I-Measure-Type
 
 In	O
 the	O
 chemical	B-Location
-hood	I-Location
-,	O
+hood,	I-Location
 add	B-Action
 5	B-Amount
 µL	I-Amount
-25	B-Concentration
-%	I-Concentration
+25%	B-Concentration
 glutaraldehyde	B-Reagent
-(	O
-0.25	B-Concentration
-%	I-Concentration
+(0.25%	B-Concentration
 final	B-Modifier
-concentration	B-Measure-Type
-)	O
+concentration)	B-Measure-Type
 and	O
 gently	B-Modifier
 vortex	B-Action
 to	O
-mix	B-Action
-.	O
+mix.
+	B-Action
 
 Aliquot	B-Action
 250	B-Amount
@@ -147,8 +133,8 @@ and	O
 snap	B-Action
 cryovials	B-Location
 into	O
-cryocanes	B-Location
-.	O
+cryocanes.
+	B-Location
 
 Incubate	B-Action
 at	O
@@ -158,8 +144,8 @@ for	O
 minutes	I-Time
 in	O
 the	O
-dark	B-Location
-.	O
+dark.
+	B-Location
 
 Flash	B-Action
 freeze	I-Action
@@ -171,12 +157,12 @@ store	B-Action
 at	O
 -80°C	B-Temperature
 until	O
-analysis	B-Method
-.	O
+analysis.
+	B-Method
 
 Plate	O
-Setup	O
-.	O
+Setup.
+	O
 
 Pour	B-Action
 remaining	B-Modifier
@@ -186,8 +172,8 @@ into	O
 a	O
 sterile	B-Modifier
 sample	B-Location
-reservoir	I-Location
-.	O
+reservoir.
+	I-Location
 
 Use	B-Action
 a	O
@@ -204,15 +190,11 @@ wells	B-Location
 in	O
 Column	B-Location
 9	I-Location
-(	O
-“	O
-Control	O
-”	O
-)	O
+(“Control”)	O
 on	O
 all	O
-plates	B-Location
-.	O
+plates.
+	B-Location
 
 Discard	B-Action
 unused	B-Reagent
@@ -223,8 +205,8 @@ sample	B-Location
 reservoir	I-Location
 with	O
 host	B-Reagent
-culture	I-Reagent
-.	O
+culture.
+	I-Reagent
 
 Add	B-Action
 150	B-Amount
@@ -239,26 +221,24 @@ Columns	B-Location
 1-9	I-Location
 on	O
 all	B-Modifier
-plates	B-Location
-.	O
+plates.
+	B-Location
 
 Discard	B-Action
 remaining	B-Modifier
-culture	B-Reagent
-.	O
+culture.
+	B-Reagent
 
 Pour	B-Action
-“	B-Reagent
-10-10	I-Reagent
-”	I-Reagent
+“10-10”	B-Reagent
 viral	I-Reagent
 dilution	I-Reagent
 into	O
 new	B-Modifier
 sterile	I-Modifier
 sample	B-Location
-reservoir	I-Location
-.	O
+reservoir.
+	I-Location
 
 Use	B-Action
 a	O
@@ -280,8 +260,8 @@ Column	B-Location
 on	O
 all	B-Modifier
 replicate	B-Location
-plates	I-Location
-.	O
+plates.
+	I-Location
 
 Discard	B-Action
 remaining	B-Modifier
@@ -290,17 +270,15 @@ virus	B-Reagent
 sample	I-Reagent
 and	O
 pour	B-Action
-“	B-Reagent
-10-9	I-Reagent
-”	I-Reagent
+“10-9”	B-Reagent
 viral	I-Reagent
 dilution	I-Reagent
 into	O
 the	O
 same	B-Modifier
 sample	B-Location
-reservoir	I-Location
-.	O
+reservoir.
+	I-Location
 
 Use	B-Action
 the	O
@@ -322,8 +300,8 @@ Column	B-Location
 7	I-Location
 on	O
 all	B-Modifier
-plates	B-Location
-.	O
+plates.
+	B-Location
 
 Repeat	B-Action
 additions	I-Action
@@ -337,17 +315,15 @@ dilute	O
 to	O
 most	O
 concentrated	O
-(	O
-moving	O
+(moving	O
 from	O
 right	O
 to	O
 left	O
 across	O
 the	O
-microplates	B-Location
-)	O
-.	O
+microplates).
+	B-Location
 
 After	O
 final	B-Modifier
@@ -357,8 +333,7 @@ sample	I-Reagent
 is	O
 added	B-Action
 to	O
-plates	B-Location
-,	O
+plates,	B-Location
 measure	B-Action
 optical	B-Measure-Type
 density	I-Measure-Type
@@ -367,37 +342,32 @@ T0	B-Location
 in	O
 plate	B-Device
 reader	I-Device
-(	O
-as	O
+(as	O
 described	O
-below	O
-)	O
+below)	O
 and	O
 incubate	B-Action
-(	O
-unstacked	O
+(unstacked	O
 to	O
 prevent	O
-shading	O
-)	O
+shading)	O
 at	O
 standard	B-Method
 growth	I-Method
 conditions	I-Method
 for	O
 ~2	B-Modifier
-weeks	B-Time
-,	O
+weeks,	B-Time
 measuring	B-Action
 growth	B-Measure-Type
 every	O
 few	B-Time
-days	I-Time
-.	O
+days.
+	I-Time
 
 Data	O
-Collection	O
-.	O
+Collection.
+	O
 
 Turn	B-Action
 on	I-Action
@@ -407,8 +377,8 @@ Devices	I-Device
 SpectraMax	I-Device
 340PC	I-Device
 plate	I-Device
-reader	I-Device
-.	O
+reader.
+	I-Device
 
 Log	B-Action
 into	I-Action
@@ -421,24 +391,20 @@ the	O
 SoftMax	B-Method
 Pro	I-Method
 6	I-Method
-software	I-Method
-.	O
+software.
+	I-Method
 
 Open	B-Action
 or	O
 create	B-Action
 a	O
 new	B-Modifier
-“	B-Method
-Basic	I-Method
-Endpoint	I-Method
-”	I-Method
+“Basic	B-Method
+Endpoint”	I-Method
 protocol	I-Method
 file	I-Method
-(	I-Method
-.spr	I-Method
-)	I-Method
-.	O
+(.spr).
+	I-Method
 
 Rename	B-Action
 the	O
@@ -451,52 +417,41 @@ plate	B-Location
 with	O
 the	O
 following	O
-settings	O
-:	O
-Read	O
-Type	O
-:	O
+settings:Read	O
+Type:	O
 Endpoint	B-Measure-Type
-Wavelength	I-Measure-Type
-:	O
+Wavelength:	I-Measure-Type
 750	B-Generic-Measure
 nm	I-Generic-Measure
 Plate	B-Measure-Type
-Type	I-Measure-Type
-:	O
+Type:	I-Measure-Type
 96-well	B-Location
 standard	I-Location
 clear	I-Location
 bottom	I-Location
 Read	O
-Area	O
-:	O
+Area:	O
 All	O
 Path	O
-check	O
-:	O
+check:	O
 Calibration	B-Method
 on	O
-Shake	B-Action
-:	O
+Shake:	B-Action
 Once	B-Numerical
 for	O
 3	B-Time
-sec	I-Time
-.	O
+sec.
+	I-Time
 
 More	O
-settings	O
-:	O
+settings:	O
 Column	B-Location
-priority	O
-.	O
+priority.
+	O
 
 Add	B-Action
-“	O
-New	O
-plates	B-Location
-”	O
+“New	O
+plates”	B-Location
 as	O
 needed	O
 so	O
@@ -510,8 +465,7 @@ plate	I-Location
 in	O
 your	O
 assay	B-Action
-(	O
-settings	O
+(settings	O
 will	O
 copy	O
 to	O
@@ -521,19 +475,15 @@ plates	B-Location
 within	O
 the	O
 same	O
-experiment	O
-)	O
-.	O
+experiment).
+	O
 
 If	O
 the	O
 SpectraMax	B-Device
-doesn	O
-’	O
-t	O
+doesn’t	O
 automatically	O
-connect	O
-,	O
+connect,	O
 click	B-Action
 on	I-Action
 the	O
@@ -550,8 +500,8 @@ select	B-Action
 it	B-Mention
 from	O
 the	O
-menu	O
-.	O
+menu.
+	O
 
 Select	B-Action
 the	O
@@ -561,8 +511,7 @@ be	O
 read	O
 in	O
 the	O
-software	B-Method
-,	O
+software,	B-Method
 and	O
 place	B-Action
 the	O
@@ -573,16 +522,14 @@ the	O
 plate	B-Location
 reader	I-Location
 drawer	I-Location
-(	O
-with	O
+(with	O
 Column	B-Location
 1	I-Location
 closest	O
 to	O
 the	O
-instrument	B-Device
-)	O
-.	O
+instrument).
+	B-Device
 
 Remove	B-Action
 the	O
@@ -590,45 +537,38 @@ plate	B-Seal
 lid	I-Seal
 and	O
 select	O
-“	O
-Read	O
-”	O
+“Read”	O
 to	O
 read	B-Action
 the	O
-plate	B-Location
-.	O
+plate.
+	B-Location
 
 Read	B-Action
 each	O
 plate	B-Location
-individually	B-Modifier
-,	O
+individually,	B-Modifier
 and	O
 copy	O
 the	O
 data	O
-(	O
-must	O
+(must	O
 right-click	O
 to	O
 do	O
-this	O
-)	O
+this)	O
 into	O
 an	O
 Excel	O
-spreadsheet	O
-.	O
+spreadsheet.
+	O
 
 Create	B-Action
 a	O
 new	O
 data	O
 file	O
-(	O
-.sda	O
-)	O
+(.sda)	O
 from	O
 the	O
 same	O
@@ -637,22 +577,20 @@ protocol	I-Method
 for	O
 each	O
 time	B-Time
-point	I-Time
-.	O
+point.
+	I-Time
 
 Visually	B-Modifier
 inspect	B-Action
 plates	B-Location
 and	O
 record	B-Action
-observations	O
-.	O
+observations.
+	O
 
 The	O
-“	O
-Dilution	B-Measure-Type
-Factor	I-Measure-Type
-”	O
+“Dilution	B-Measure-Type
+Factor”	I-Measure-Type
 is	O
 the	O
 dilution	B-Measure-Type
@@ -664,13 +602,11 @@ the	O
 wells	B-Location
 of	O
 that	O
-column	B-Location
-.	O
+column.
+	B-Location
 
 The	O
-“	O
-Volume	B-Measure-Type
-”	O
+“Volume”	B-Measure-Type
 is	O
 the	O
 volume	B-Measure-Type
@@ -683,12 +619,11 @@ each	O
 well	B-Location
 in	O
 that	O
-column	B-Location
-.	O
+column.
+	B-Location
 
 Dilution	B-Measure-Type
-Factor	I-Measure-Type
-:	O
+Factor:	I-Measure-Type
 Use	O
 results	O
 from	O
@@ -712,9 +647,7 @@ concentrated	O
 of	O
 the	O
 dilutions	B-Reagent
-(	O
-i.e.	O
-,	O
+(i.e.,	O
 24	B-Numerical
 of	I-Numerical
 24	I-Numerical
@@ -723,8 +656,7 @@ were	O
 positive	O
 for	O
 viral	O
-activity	O
-)	O
+activity)	O
 and	O
 all	O
 host	B-Location
@@ -738,9 +670,7 @@ dilute	O
 of	O
 the	O
 dilutions	B-Reagent
-(	O
-i.e.	O
-,	O
+(i.e.,	O
 0	B-Numerical
 of	I-Numerical
 24	I-Numerical
@@ -749,9 +679,7 @@ were	O
 positive	O
 for	O
 viral	O
-activity	O
-)	O
-.	O
+activity).	O
 
 
 

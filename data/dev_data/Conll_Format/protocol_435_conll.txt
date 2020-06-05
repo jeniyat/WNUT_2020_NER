@@ -5,7 +5,8 @@ Growth	O
 Curves	O
 for	O
 Cellulophaga	B-Reagent
-Phages	I-Reagent
+Phages
+	I-Reagent
 
 Do	O
 a	O
@@ -25,10 +26,8 @@ use	O
 Inoculate	B-Action
 a	O
 new	B-Modifier
-culture	B-Reagent
-;	O
-i.e.	O
-,	O
+culture;	B-Reagent
+i.e.,	O
 pick	B-Action
 a	O
 colony	B-Reagent
@@ -39,13 +38,11 @@ ml	I-Amount
 flask	B-Location
 containing	O
 MLB	B-Reagent
-media	I-Reagent
-.	O
+media.	I-Reagent
 
 The	O
 next	B-Time
-day	I-Time
-,	O
+day,	I-Time
 transfer	B-Action
 10	B-Amount
 ml	I-Amount
@@ -62,14 +59,11 @@ in	O
 a	O
 Fernbach	B-Location
 flask	I-Location
-(	O
-short	B-Modifier
+(short	B-Modifier
 and	O
 fat	B-Modifier
 2800	B-Amount
-ml	I-Amount
-)	O
-.	O
+ml).	I-Amount
 
 Inoculate	B-Action
 enough	B-Modifier
@@ -78,22 +72,18 @@ ml	I-Amount
 cultures	B-Reagent
 for	O
 your	O
-experiment	O
-.	O
+experiment.	O
 
 Immediately	O
 after	O
 the	O
-transfer	B-Action
-,	O
-take	B-Action
+transfer,	B-Action
+take	I-Action
 a	O
 'time	B-Time
-0	I-Time
-'	O
+0'	I-Time
 growth	O
-reading	O
-.	O
+reading.	O
 
 Continue	O
 taking	B-Action
@@ -101,16 +91,15 @@ readings	O
 in	O
 this	O
 way	O
-periodically	B-Modifier
-.	O
+periodically. 	B-Modifier
 
 Graph	B-Action
 the	O
 results	O
 as	O
 you	O
-go	O
-!	O
+go!
+	O
 
 Determine	B-Action
 the	O
@@ -126,8 +115,7 @@ want	O
 to	O
 start	O
 the	O
-infection	B-Method
-.	O
+infection.	B-Method
 
 Calculate	B-Action
 the	O
@@ -141,8 +129,8 @@ of	O
 your	O
 500	B-Amount
 ml	I-Amount
-cultures	B-Location
-.	O
+cultures. 
+	B-Location
 
 Calculate	B-Action
 how	O
@@ -153,8 +141,7 @@ should	O
 add	B-Action
 for	O
 MOI	B-Measure-Type
-3	I-Measure-Type
-.	O
+3. 	I-Measure-Type
 
 Add	B-Action
 phages	B-Reagent
@@ -175,21 +162,17 @@ flask	I-Location
 and	O
 start	B-Action
 your	O
-timer	B-Device
-.	O
+timer.	B-Device
 
-Immediately	B-Modifier
-,	O
+Immediately,	B-Modifier
 dilute	B-Action
 the	O
 infection	B-Reagent
 1:1	B-Concentration
 in	O
 MLB	B-Location
-media	I-Location
-;	O
-i.e.	O
-,	O
+media;	I-Location
+i.e.,	O
 add	B-Action
 500	B-Amount
 ml	I-Amount
@@ -201,8 +184,7 @@ flask	B-Location
 and	O
 swirl	B-Action
 to	O
-mix	B-Action
-.	O
+mix. 	B-Action
 
 Take	B-Action
 a	O
@@ -214,26 +196,22 @@ Steps	O
 for	O
 centrifuged	B-Modifier
 plaque	B-Action
-assay	I-Action
-:	O
+assay: 	I-Action
 
 Steps	O
 for	O
 non-centrifuged	B-Modifier
 plaque	B-Action
-assay	I-Action
-:	O
+assay: 	I-Action
 
 Steps	O
 for	O
 RNA	B-Reagent
-samples	I-Reagent
-:	O
+samples:	I-Reagent
 
 The	B-Time
 next	I-Time
-day	I-Time
-,	O
+day,	I-Time
 count	B-Action
 the	O
 plaques	B-Reagent
@@ -246,34 +224,30 @@ a	O
 countable	O
 number	O
 of	O
-them	B-Mention
-The	I-Mention
-next	B-Time
-day	I-Time
-,	I-Time
+them 	B-Mention
+The	B-Time
+next	I-Time
+day,	I-Time
 count	B-Action
-any	I-Action
+any	O
 new	B-Modifier
-plaques	I-Modifier
-that	B-Reagent
+plaques	B-Reagent
+that	O
 have	O
-appeared	O
-;	O
+appeared;	O
 add	B-Action
-these	I-Action
-to	B-Mention
+these	B-Mention
+to	O
 your	O
 original	O
-count	O
-.	O
+count. 	O
 
 Count	B-Action
 again	O
 on	O
 the	O
 third	B-Time
-day	I-Time
-.	O
+day.	I-Time
 
 Continue	B-Action
 sampling	I-Action
@@ -282,8 +256,7 @@ this	O
 way	O
 for	O
 8	B-Time
-hours	I-Time
-.	O
+hours.	I-Time
 
 Calculate	B-Action
 PFU/ml	B-Measure-Type
@@ -295,30 +268,24 @@ for	O
 both	O
 the	O
 centrifuged	B-Modifier
-(	O
-free	B-Reagent
+(free	B-Reagent
 phage	I-Reagent
-only	O
-)	O
+only)	O
 and	O
 not	B-Modifier
 centrifuged	I-Modifier
-(	O
-total	B-Reagent
-phage	I-Reagent
-)	O
-samples	B-Reagent
-.	O
+(total	B-Reagent
+phage)	I-Reagent
+samples. 	I-Reagent
 
 Graph	B-Action
 the	O
-results	O
-.	O
+results.	O
 
 Calculate	B-Action
 burst	B-Measure-Type
-size	I-Measure-Type
-.	O
+size.
+	I-Measure-Type
 
 
 

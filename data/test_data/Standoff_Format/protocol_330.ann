@@ -1,114 +1,182 @@
-T1	Measure-Type 0 20	Most Probable Number
-T2	Measure-Type 22 25	MPN
-T3	Reagent 37 48	Cyanophages
-T4	Action 49 54	Label
-T5	Location 59 85	dilution preparation plate
-T6	Action 115 120	Label
-T7	Reagent 125 131	sample
-T8	Location 132 138	plates
-T9	Reagent 160 165	phage
-T10	Amount 241 250	8x1500 µL
-T11	Location 251 273	multi-channel pipettor
-T12	Action 275 278	put
-T13	Amount 279 285	270 µL
-T14	Reagent 289 294	Pro99
-T15	Reagent 298 307	SN medium
-T16	Amount 311 314	all
-T17	Location 315 320	wells
-T18	Location 324 338	dilution plate
-T19	Amount 348 354	100 µL
-T20	Location 355 363	pipettor
-T21	Action 365 373	dispense
-T22	Amount 374 379	30 µL
-T23	Reagent 383 395	virus sample
-T24	Location 401 406	row H
-T25	Location 414 428	dilution plate
-T26	Action 430 436	Repeat
-T27	Reagent 458 471	virus samples
-T28	Amount 481 490	12x300 µL
-T29	Location 491 513	multi-channel pipettor
-T30	Size 521 526	30 µL
-T31	Numerical 532 534	12
-T32	Location 535 539	tips
-T33	Action 540 548	attached
-T34	Action 550 557	pipette
-T35	Location 558 563	row H
-T36	Action 579 582	mix
-T37	Reagent 587 595	dilution
-T38	Action 597 604	Replace
-T39	Location 609 613	tips
-T40	Action 618 625	pipette
-T41	Mention 626 631	30 µL
-T42	Location 637 642	row H
-T43	Location 648 653	row A
-T44	Location 659 667	10-2 row
-T45	Action 670 689	Pipette up and down
-T46	Numerical 690 703	several times
-T47	Action 707 710	mix
-T48	Action 712 719	Replace
-T49	Location 724 728	tips
-T50	Action 733 741	transfer
-T51	Mention 742 747	30 µL
-T52	Location 753 758	row B
-T53	Location 760 768	10-3 row
-T54	Action 771 777	Repeat
-T55	Method 783 789	mixing
-T56	Method 791 805	replacing tips
-T57	Method 810 822	transferring
-T58	Numerical 823 824	4
-T59	Location 853 858	row F
-T60	Location 860 868	10-7 row
-T61	Amount 879 888	12x300 µL
-T62	Location 889 911	multi-channel pipettor
-T63	Size 919 924	30 µL
-T64	Numerical 930 931	8
-T65	Location 932 936	tips
-T66	Action 937 945	attached
-T67	Action 947 952	pipet
-T68	Amount 953 958	30 µL
-T69	Reagent 959 969	host cells
-T70	Location 979 996	appropriate wells
-T71	Location 1004 1016	sample plate
-T72	Action 1018 1023	Reset
-T73	Location 1028 1036	pipettor
-T74	Action 1040 1048	dispense
-T75	Amount 1049 1054	20 µL
-T76	Action 1056 1062	put on
-T77	Amount 1063 1064	8
-T78	Modifier 1065 1070	fresh
-T79	Device 1071 1075	tips
-T80	Action 1080 1088	transfer
-T81	Amount 1089 1094	20 µL
-T82	Location 1104 1124	virus dilution plate
-T83	Location 1137 1157	corresponding column
-T84	Location 1165 1182	sample test plate
-T85	Action 1184 1187	Put
-T86	Seal 1192 1196	lids
-T87	Location 1204 1222	sample test plates
-T88	Action 1227 1232	place
-T89	Device 1236 1245	incubator
-T90	Modifier 1252 1263	appropriate
-T91	Generic-Measure 1264 1269	light
-T92	Temperature 1274 1285	temperature
-T93	Reagent 1306 1310	host
-T94	Reagent 1324 1329	virus
-T95	Action 1330 1336	adsorb
-T96	Reagent 1344 1348	host
-T97	Time 1353 1357	1 hr
-T98	Amount 1369 1378	8x1500 µL
-T99	Location 1379 1401	multi-channel pipettor
-T100	Amount 1414 1422	6x200 µL
-T101	Action 1424 1427	add
-T102	Amount 1428 1434	200 µL
-T103	Reagent 1438 1443	Pro99
-T104	Reagent 1447 1456	SN medium
-T105	Amount 1460 1463	all
-T106	Location 1464 1469	wells
-T107	Amount 1473 1476	all
-T108	Location 1477 1490	sample plates
-T109	Action 1492 1496	Seal
-T110	Location 1502 1507	plate
-T111	Seal 1513 1521	parafilm
-T112	Action 1526 1532	return
-T113	Location 1533 1539	plates
-T114	Device 1547 1556	incubator
+T1	Action 49 54	Label
+E1	Action:T1 Acts-on:T25
+T2	Action 117 122	Label
+E2	Action:T2 Acts-on:T26
+T3	Action 279 282	put
+E3	Action:T3 Acts-on:T29 Site:T32 Using:T35
+T4	Action 370 378	dispense
+E4	Action:T4 Acts-on:T39 Using:T37 Site:T41
+T5	Action 437 443	Repeat
+E5	Action:T5 Site:T42
+T6	Action 558 565	pipette
+E6	Action:T6 Acts-on:T49 Site:T44
+T7	Action 587 590	mix
+E7	Action:T7 Acts-on:T50
+T8	Action 606 613	Replace
+E8	Action:T8 Acts-on:T51
+T9	Action 680 699	Pipette up and down
+E9	Action:T9 
+T10	Action 723 730	Replace
+E10	Action:T10 Acts-on:T58
+T11	Action 783 789	Repeat
+E11	Action:T11 Using:T12 Using2:T13 Using3:T18
+T14	Action 962 967	pipet
+E14	Action:T14 Acts-on:T70 Site:T71
+T15	Action 1035 1040	Reset
+E15	Action:T15 Acts-on:T73
+T16	Action 1073 1079	put on
+E16	Action:T16 Acts-on:T77 Site:T73
+T17	Action 1097 1105	transfer
+E17	Action:T17 Site:T80
+T19	Action 1203 1206	Put
+E19	Action:T19 Site:T83 Acts-on:T82
+T20	Action 1246 1251	place
+E20	Action:T20 Site:T84 Acts-on:T83
+T21	Action 1444 1447	add
+E21	Action:T21 Using:T92 Acts-on:T95 Site:T98
+T22	Action 1514 1518	Seal
+E22	Action:T22 Using:T102 Acts-on:T101
+T23	Action 1548 1554	return
+E23	Action:T23 Acts-on:T103 Site:T104
+T24	Action 1349 1355	adsorb
+E24	Action:T24 Acts-on:T88 Site:T89
+T25	Location 59 85	dilution preparation plate
+T26	Location 134 140	plates
+T27	Reagent 127 133	sample
+R1	Meronym Arg1:T27 Arg2:T26	
+T28	Amount 283 289	270 µL
+T29	Reagent 293 298	Pro99
+T30	Reagent 302 311	SN medium
+T31	Amount 315 318	all
+T32	Location 319 324	wells
+T33	Location 328 342	dilution plate
+T34	Amount 245 254	8x1500 µL
+T35	Location 255 277	multi-channel pipettor
+R2	Meronym Arg1:T29 Arg2:T30	
+R3	Measure Arg1:T29 Arg2:T28	
+R4	Measure Arg1:T30 Arg2:T28	
+R5	Measure Arg1:T32 Arg2:T31	
+R6	Meronym Arg1:T32 Arg2:T33	
+R7	Setting Arg1:T35 Arg2:T34	
+T36	Amount 353 359	100 µL
+T37	Location 360 368	pipettor
+T38	Amount 379 384	30 µL
+T39	Reagent 388 400	virus sample
+T40	Location 419 433	dilution plate
+T41	Location 406 411	row H
+R8	Meronym Arg1:T41 Arg2:T40	
+R9	Measure Arg1:T39 Arg2:T38	
+R10	Setting Arg1:T37 Arg2:T36	
+T42	Reagent 465 478	virus samples
+T43	Amount 489 498	12x300 µL
+T44	Location 499 521	multi-channel pipettor
+T45	Size 529 534	30 µL
+T46	Numerical 540 542	12
+T47	Location 543 547	tips
+T48	Action 548 556	attached
+E25	Action:T48 Acts-on:T47 Acts-on2:T44
+R12	Setting Arg1:T44 Arg2:T45	
+R13	Setting Arg1:T44 Arg2:T43	
+T49	Location 566 571	row H
+T50	Reagent 595 603	dilution
+T51	Location 618 622	tips
+T52	Action 627 634	pipette
+E26	Action:T52 Acts-on2:T56 Site2:T55
+T54	Location 646 651	row H
+T55	Location 657 662	row A
+T56	Mention 635 640	30 µL
+R14	Meronym Arg1:T56 Arg2:T54	
+T53	Action 717 720	mix
+E27	Action:T53 
+T57	Numerical 700 713	several times
+R15	Setting Arg1:E9 Arg2:T57	
+T58	Location 735 739	tips
+T59	Action 744 752	transfer
+E28	Action:T59 Acts-on:T60 Site:T61
+T60	Mention 753 758	30 µL
+T61	Location 764 769	row B
+T63	Numerical 835 836	4
+T12	Method 795 801	mixing
+T13	Method 803 817	replacing tips
+T18	Method 822 834	transferring
+R16	Setting Arg1:E11 Arg2:T63	
+T62	Amount 894 903	12x300 µL
+T64	Location 904 926	multi-channel pipettor
+T65	Size 934 939	30 µL
+T66	Numerical 945 946	8
+T67	Location 947 951	tips
+T68	Action 952 960	attached
+E12	Action:T68 Acts-on:T67 Site:T64
+R17	Setting Arg1:T67 Arg2:T66	
+R18	Setting Arg1:T64 Arg2:T62	
+R19	Setting Arg1:T64 Arg2:T65	
+T69	Amount 968 973	30 µL
+T70	Reagent 974 984	host cells
+T71	Location 994 1011	appropriate wells
+R20	Measure Arg1:T70 Arg2:T69	
+T72	Location 1019 1031	sample plate
+R21	Meronym Arg1:T71 Arg2:T72	
+T73	Location 1045 1053	pipettor
+T74	Amount 1066 1071	20 µL
+R22	Setting Arg1:T73 Arg2:T74	
+T75	Amount 1080 1081	8
+T76	Modifier 1082 1087	fresh
+T77	Device 1088 1092	tips
+R23	Mod-Link Arg1:T77 Arg2:T76	
+R24	Setting Arg1:T77 Arg2:T75	
+T78	Amount 1106 1111	20 µL
+T79	Location 1121 1141	virus dilution plate
+T80	Location 1154 1174	corresponding column
+T81	Location 1182 1199	sample test plate
+R25	Meronym Arg1:T80 Arg2:T81	
+T82	Seal 1211 1215	lids
+T83	Location 1223 1241	sample test plates
+T84	Device 1255 1264	incubator
+T85	Temperature 1293 1304	temperature
+T86	Modifier 1271 1282	appropriate
+R27	Mod-Link Arg1:T85 Arg2:T86	
+R28	Setting Arg1:E20 Arg2:T85	
+T87	Generic-Measure 1283 1288	light
+R29	Mod-Link Arg1:T87 Arg2:T86	
+R30	Setting Arg1:E20 Arg2:T87	
+T88	Reagent 1343 1348	virus
+T89	Reagent 1363 1367	host
+T90	Time 1372 1376	1 hr
+R31	Setting Arg1:E24 Arg2:T90	
+T91	Amount 1389 1398	8x1500 µL
+T92	Location 1399 1421	multi-channel pipettor
+T93	Amount 1434 1442	6x200 µL
+R32	Setting Arg1:T92 Arg2:T91	
+R33	Setting Arg1:T92 Arg2:T93	
+T94	Amount 1448 1454	200 µL
+T95	Reagent 1458 1463	Pro99
+T96	Reagent 1467 1476	SN medium
+T97	Amount 1480 1483	all
+T98	Location 1484 1489	wells
+T99	Location 1497 1510	sample plates
+T100	Amount 1493 1496	all
+R34	Meronym Arg1:T98 Arg2:T99	
+R35	Measure Arg1:T99 Arg2:T100	
+R36	Measure Arg1:T98 Arg2:T97	
+R37	Meronym Arg1:T95 Arg2:T96	
+R38	Measure Arg1:T95 Arg2:T94	
+R39	Measure Arg1:T96 Arg2:T94	
+T101	Location 1524 1529	plate
+T102	Seal 1535 1543	parafilm
+T103	Location 1555 1561	plates
+T104	Device 1569 1578	incubator
+T105	Measure-Type 0 20	Most Probable Number
+T106	Measure-Type 22 25	MPN
+T107	Reagent 37 48	Cyanophages
+T108	Reagent 162 167	phage
+R11	Measure Arg1:T47 Arg2:T46	
+T109	Location 668 676	10-2 row
+T110	Location 771 779	10-3 row
+T111	Location 865 870	row F
+T112	Location 872 880	10-7 row
+R40	Coreference-Link Arg1:T112 Arg2:T111	
+R26	Setting Arg1:E17 Arg2:T78	
+T113	Reagent 1325 1329	host
+T114	Action 1057 1065	dispense
+E13	Action:T114 
+R41	Setting Arg1:E13 Arg2:T74	

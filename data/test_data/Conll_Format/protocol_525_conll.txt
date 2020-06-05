@@ -1,6 +1,7 @@
 DNA	B-Method
 Precipitation	I-Method
-Protocol	I-Method
+Protocol
+	I-Method
 
 Add	B-Action
 2	B-Amount
@@ -8,28 +9,26 @@ volumes	I-Amount
 of	O
 ice	B-Temperature
 cold	I-Temperature
-ethanol	B-Reagent
-,	O
+ethanol,	B-Reagent
 mix	B-Action
-well	B-Modifier
-.	O
+well.
+	B-Modifier
 
 Let	B-Action
 sit	I-Action
 on	O
 ice	B-Temperature
 15-30	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
+	O
 
 Microfuge	B-Action
 at	O
 max	B-Speed
-speed	I-Speed
-,	O
+speed,	I-Speed
 20	B-Time
-minutes	I-Time
-.	O
+minutes.
+	I-Time
 
 Carefully	B-Modifier
 remove	B-Action
@@ -39,10 +38,8 @@ fill	B-Action
 tube	B-Location
 halfway	B-Generic-Measure
 with	O
-70	B-Concentration
-%	I-Concentration
-ethanol	B-Reagent
-.	O
+70%	B-Concentration
+ethanol.	B-Reagent
 
 Spin	B-Action
 at	O
@@ -50,8 +47,8 @@ max	B-Speed
 speed	I-Speed
 for	O
 2	B-Time
-minutes	I-Time
-.	O
+minutes.
+	I-Time
 
 Repeat	B-Action
 the	O
@@ -59,13 +56,10 @@ above	O
 step	O
 one	B-Numerical
 time	I-Numerical
-(	O
-2nd	B-Modifier
-70	B-Concentration
-%	I-Concentration
-wash	B-Action
-)	O
-.	O
+(2nd	B-Modifier
+70%	B-Concentration
+wash).
+	B-Action
 
 Remove	B-Action
 as	B-Modifier
@@ -84,19 +78,17 @@ on	O
 bench	B-Location
 ~	B-Time
 15	I-Time
-minutes	I-Time
-.	O
+minutes. 	I-Time
+	O
 
 Dissolve	B-Action
 in	O
 TE	B-Reagent
 buffer	I-Reagent
-(	O
-~	B-Modifier
+(~	B-Modifier
 pH	B-pH
-7.6	I-pH
-)	O
-.	O
+7.6).
+	I-pH
 
 
 

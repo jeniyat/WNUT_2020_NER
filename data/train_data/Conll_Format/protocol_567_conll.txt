@@ -6,16 +6,15 @@ Start	I-Reagent
 High-Fidelity	I-Reagent
 DNA	I-Reagent
 Polymerase	I-Reagent
-(	O
-M0493	O
-)	O
+(M0493)
+	O
 
 Set	B-Action
 up	I-Action
 the	O
 following	B-Method
-reaction	I-Method
-:	O
+reaction:
+	I-Method
 
 Component25	B-Amount
 µl	I-Amount
@@ -23,30 +22,28 @@ Reaction50	B-Reagent
 µl	B-Amount
 ReactionFinal	B-Reagent
 Concentration5X	B-Measure-Type
-Q5	B-Reagent
-Reaction	I-Reagent
+Q5 Reaction	B-Reagent
 Buffer5	I-Reagent
 µl10	B-Amount
 µl1X10	I-Amount
 mM	B-Concentration
-dNTPs0.5	I-Concentration
+dNTPs0.5	B-Reagent
 µl1	B-Amount
 µl200	I-Amount
 µM10	B-Concentration
 µM	I-Concentration
-Forward	I-Concentration
-Primer1.25	B-Reagent
+Forward	B-Reagent
+Primer1.25	I-Reagent
 µl2.5	B-Amount
 µl0.5	I-Amount
 µM10	B-Concentration
 µM	I-Concentration
-Reverse	I-Concentration
-Primer1.25	B-Reagent
+Reverse	B-Reagent
+Primer1.25	I-Reagent
 µl2.5	B-Amount
 µl0.5	I-Amount
 µMTemplate	B-Concentration
-DNAvariablevariable	B-Reagent
-<	B-Modifier
+DNAvariablevariable<	B-Reagent
 1,000	B-Amount
 ngQ5	I-Amount
 Hot	B-Reagent
@@ -57,37 +54,24 @@ Polymerase0.25	I-Reagent
 µl0.5	B-Amount
 µl0.02	I-Amount
 U/µl5X	B-Concentration
-Q5	B-Numerical
-High	B-Reagent
+Q5	B-Reagent
+High	I-Reagent
 GC	I-Reagent
 Enhancer	I-Reagent
-(	I-Reagent
-optional	B-Modifier
-)	I-Modifier
-(	O
-5	O
-µl	B-Amount
-)	I-Amount
-(	O
-10	B-Amount
-µl	I-Amount
-)	I-Amount
-(	O
-1X	B-Numerical
-)	I-Numerical
-Nuclease-Free	B-Reagent
-Waterto	I-Reagent
+(optional)(5	B-Modifier
+µl)(10	B-Amount
+µl)(1X)Nuclease-Free	I-Amount
+Waterto	B-Reagent
 25	B-Amount
 µlto	I-Amount
 50	I-Amount
-µl	I-Amount
-.	I-Amount
+µl. 	I-Amount
 
 Gently	B-Modifier
 mix	B-Action
 the	O
-reaction	B-Reagent
-.	O
+reaction.
+	B-Reagent
 
 Collect	B-Action
 all	B-Modifier
@@ -119,8 +103,8 @@ machine	I-Device
 without	B-Modifier
 a	I-Modifier
 heated	I-Modifier
-lid	I-Modifier
-.	O
+lid.
+	I-Modifier
 
 Transfer	B-Action
 PCR	B-Device
@@ -131,8 +115,8 @@ PCR	B-Device
 machine	I-Device
 and	O
 begin	B-Action
-thermocycling	B-Method
-.	O
+thermocycling.
+	B-Method
 
 
 

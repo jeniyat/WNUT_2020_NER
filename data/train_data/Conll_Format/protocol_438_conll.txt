@@ -1,6 +1,7 @@
 Peroxide	B-Method
 Value	I-Method
-Method	I-Method
+Method
+	I-Method
 
 Weigh	B-Action
 0.01	B-Amount
@@ -12,16 +13,16 @@ tube	I-Location
 and	O
 record	B-Action
 exact	B-Modifier
-weight	B-Measure-Type
-.	O
+weight.
+	B-Measure-Type
 
 Solid	B-Modifier
 fat	B-Reagent
 should	O
 be	O
 melted	B-Action
-first	O
-.	O
+first.
+	O
 
 Samples	B-Reagent
 with	O
@@ -35,8 +36,8 @@ serially	B-Modifier
 diluted	B-Action
 in	O
 working	B-Reagent
-solvent	I-Reagent
-.	O
+solvent.
+	I-Reagent
 
 Make	O
 sure	O
@@ -45,8 +46,8 @@ record	B-Action
 dilution	B-Measure-Type
 factor	I-Measure-Type
 if	O
-so	O
-.	O
+so.
+	O
 
 Up	B-Modifier
 to	I-Modifier
@@ -60,8 +61,8 @@ samples	B-Reagent
 with	O
 very	O
 low	O
-PV	B-Measure-Type
-.	O
+PV.
+	B-Measure-Type
 
 Immediately	B-Modifier
 add	B-Action
@@ -77,21 +78,19 @@ sure	O
 it	B-Mention
 is	O
 fully	B-Modifier
-dissolved	I-Modifier
-.	O
+dissolved.
+	I-Modifier
 
 Prepare	B-Action
 a	O
 blank	B-Modifier
 tube	B-Location
-(	O
-solvent	B-Reagent
+(solvent	B-Reagent
 in	O
 place	O
 of	O
-sample	B-Reagent
-)	O
-.	O
+sample).
+	B-Reagent
 
 Add	B-Action
 15	B-Amount
@@ -100,13 +99,12 @@ ammonium	B-Reagent
 thiocyanate	I-Reagent
 to	O
 all	B-Modifier
-tubes	B-Location
-,	O
+tubes,	B-Location
 and	O
 vortex	B-Action
 2-4	B-Time
-sec	I-Time
-.	O
+sec.
+	I-Time
 
 Add	B-Action
 15	B-Amount
@@ -115,13 +113,12 @@ ferrous	B-Reagent
 chloride	I-Reagent
 to	O
 all	B-Modifier
-tubes	B-Location
-,	O
+tubes,	B-Location
 and	O
 vortex	B-Action
 2-4	B-Time
-sec	I-Time
-.	O
+sec.
+	I-Time
 
 Let	B-Action
 sit	I-Action
@@ -129,15 +126,15 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 20	B-Time
-min	I-Time
-.	O
+min.
+	I-Time
 
 Keep	B-Action
 out	I-Action
 of	O
 bright	O
-light	O
-.	O
+light.
+	O
 
 Read	B-Action
 absorbance	B-Device
@@ -146,64 +143,57 @@ spectrophotometer	B-Device
 set	B-Action
 to	O
 510	B-Size
-nm	I-Size
-.	O
+nm.
+	I-Size
 
 Determine	B-Action
 PV	B-Measure-Type
 using	O
 the	O
 following	O
-calculations	O
-:	O
+calculations:	O
 
-a.	O
-PV	B-Measure-Type
-(	I-Measure-Type
-meq	B-Reagent
+a. PV	B-Measure-Type
+(meq	B-Reagent
 peroxide	I-Reagent
-per	I-Reagent
-kg	O
-sample	B-Amount
-)	B-Reagent
+per	O
+kg	B-Amount
+sample)	B-Reagent
 =	O
-(	O
-As	O
+(As	O
 –	O
-Ab	O
-)	O
+Ab)	O
 x	O
 m	O
-/	O
-(	O
-55.84	O
+/ 	O
+(55.84	O
 x	O
 m0	O
 x	O
-2	O
-)	O
+2)	O
 As=	O
 absorbance	B-Measure-Type
-of	I-Measure-Type
+of	O
 sampleAb=	B-Reagent
 absorbance	B-Measure-Type
-of	I-Measure-Type
+of	O
 blankm	B-Reagent
-=	I-Reagent
+=	O
 slope	O
 of	O
 standard	O
 curvem0=mass	B-Measure-Type
-in	I-Measure-Type
+in	O
 grams	B-Amount
-of	I-Amount
+of	O
 the	O
 sample55.84	B-Reagent
 =	O
 atomic	B-Measure-Type
 weight	I-Measure-Type
-of	I-Measure-Type
-iron	B-Reagent
+of	O
+iron
+	B-Reagent
 
 
 

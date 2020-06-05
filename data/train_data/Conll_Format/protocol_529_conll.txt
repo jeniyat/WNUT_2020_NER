@@ -2,7 +2,8 @@ Making	B-Action
 your	B-Modifier
 own	I-Modifier
 electrocompetent	I-Modifier
-cells	B-Reagent
+cells
+	B-Reagent
 
 Innoculate	B-Action
 1	B-Numerical
@@ -27,23 +28,19 @@ in	O
 a	O
 125	B-Size
 ml	I-Size
-flask	B-Location
-.	O
+flask.	B-Location
 
 Incubate	B-Action
 for	O
 16-18	B-Time
 hours	I-Time
 at	O
-37°C	B-Temperature
-and	O
+37°C and	B-Temperature
 250	B-Speed
-rpm	I-Speed
-.	I-Speed
+rpm.	I-Speed
 
 Pre-warm	B-Action
-2	B-Numerical
-,	O
+2,	B-Numerical
 1	B-Size
 L	I-Size
 flasks	B-Location
@@ -52,8 +49,7 @@ containing	O
 ml	I-Amount
 each	B-Modifier
 of	O
-SOB	B-Reagent
-.	O
+SOB.	B-Reagent
 
 Add	B-Action
 two	B-Numerical
@@ -69,8 +65,7 @@ the	O
 pre-warmed	B-Modifier
 250	B-Size
 ml	I-Size
-flasks	B-Location
-.	O
+flasks.	B-Location
 
 Shake	B-Action
 at	O
@@ -85,8 +80,7 @@ reach	B-Action
 an	O
 OD600	B-Measure-Type
 of	O
-0.5-0.7	B-Numerical
-.	O
+0.5-0.7.	B-Numerical
 
 Turn	B-Action
 on	I-Action
@@ -101,15 +95,13 @@ in	I-Modifier
 advance	I-Modifier
 of	I-Modifier
 harvesting	I-Modifier
-cells	I-Modifier
-.	O
+cells.	I-Modifier
 
 Place	B-Action
 1	B-Amount
 L	I-Amount
 of	O
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 glycerol	B-Reagent
 on	O
 ice	B-Temperature
@@ -118,8 +110,7 @@ in	I-Modifier
 advance	I-Modifier
 of	I-Modifier
 harvesting	I-Modifier
-cells	I-Modifier
-.	O
+cells.	I-Modifier
 
 Place	B-Action
 cultures	B-Reagent
@@ -127,8 +118,8 @@ on	O
 ice	B-Temperature
 for	O
 15	B-Time
-minutes	I-Time
-.	O
+minutes.
+	I-Time
 
 From	B-Modifier
 this	I-Modifier
@@ -140,8 +131,7 @@ must	O
 be	O
 kept	B-Action
 ice	B-Temperature
-cold	I-Temperature
-.	O
+cold.	I-Temperature
 
 Pour	B-Action
 each	B-Modifier
@@ -152,14 +142,11 @@ into	O
 chilled	B-Temperature
 500	B-Size
 ml	I-Size
-(	O
-or	O
+(or	O
 1000	B-Size
-ml	I-Size
-)	O
+ml)	I-Size
 centrifuge	B-Location
-bottles	I-Location
-.	O
+bottles.	I-Location
 
 Centrifuge	B-Action
 at	O
@@ -167,8 +154,7 @@ at	O
 rpm	I-Speed
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Pour	B-Action
 off	I-Action
@@ -178,8 +164,7 @@ and	O
 aspirate	B-Action
 any	O
 residual	B-Reagent
-broth	I-Reagent
-.	O
+broth.	I-Reagent
 
 Add	B-Action
 250	B-Amount
@@ -201,8 +186,7 @@ by	O
 pipetting	B-Method
 up	I-Method
 and	I-Method
-down	I-Method
-.	O
+down.	I-Method
 
 Centrifuge	B-Action
 at	O
@@ -210,44 +194,38 @@ at	O
 rpm	I-Speed
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Pour	B-Action
 off	I-Action
 the	O
-supernatant	B-Reagent
-,	O
+supernatant,	B-Reagent
 it	O
 is	O
 not	B-Modifier
 necessary	I-Modifier
 to	O
-aspirate	B-Action
-.	O
+aspirate.	B-Action
 
-Add	B-Action
-250	B-Amount
-ml	I-Amount
-of	I-Amount
+Add 250	B-Action
+ml of	B-Amount
 glycerol	B-Reagent
-to	I-Reagent
+to	O
 each	B-Modifier
-of	I-Modifier
+of	O
 the	O
 centrifuge	B-Location
 bottles	I-Location
-and	I-Location
+and	O
 completely	B-Modifier
-suspend	I-Modifier
-the	B-Action
+suspend	B-Action
+the	O
 cells	B-Reagent
-by	I-Reagent
+by	O
 pipetting	B-Method
 up	I-Method
 and	I-Method
-down	I-Method
-.	I-Method
+down.	I-Method
 
 Pour	B-Action
 off	I-Action
@@ -265,24 +243,20 @@ by	O
 pipetting	B-Method
 up	I-Method
 and	I-Method
-down	I-Method
-.	O
+down.	I-Method
 
 To	B-Modifier
-freeze	I-Modifier
-,	O
+freeze,	I-Modifier
 add	B-Action
-100	B-Amount
-µl	I-Amount
-of	I-Amount
+100 µl	B-Amount
+of	O
 the	O
 culture	B-Reagent
-to	I-Reagent
+to	O
 microcentrifuge	B-Location
 tubes	I-Location
-on	I-Location
-ice	B-Temperature
-.	I-Temperature
+on	O
+ice.	B-Temperature
 
 Once	B-Modifier
 you	I-Modifier
@@ -291,8 +265,7 @@ used	I-Modifier
 all	I-Modifier
 of	I-Modifier
 the	I-Modifier
-culture	I-Modifier
-,	O
+culture,	I-Modifier
 transfer	B-Action
 the	O
 tubes	B-Location
@@ -301,21 +274,20 @@ dry	B-Reagent
 ice	I-Reagent
 for	O
 10	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Once	B-Modifier
 the	O
 cultures	B-Reagent
 are	O
-frozen	B-Modifier
-,	O
+frozen,	B-Modifier
 transfer	B-Action
 them	B-Mention
 to	O
 a	O
 -80°C	B-Temperature
-freezer	B-Device
+freezer
+	B-Device
 
 
 

@@ -1,5 +1,4 @@
-SMARTseq2	B-Method
-.	O
+SMARTseq2.	B-Method
 
 day	B-Time
 1	I-Time
@@ -25,8 +24,7 @@ to	O
 of	O
 nuclease	B-Reagent
 free	I-Reagent
-H20	I-Reagent
-.	O
+H20.	I-Reagent
 
 Prepare	B-Action
 RT	B-Reagent
@@ -35,45 +33,21 @@ mixReagentStock	B-Reagent
 ConcAmt/1Amt/NFinal	B-Measure-Type
 ConcNuclease	I-Measure-Type
 Free	B-Reagent
-H20	I-Reagent
---	O
--0.29	B-Numerical
-FS	O
-Buffer5x2	B-Reagent
-1xBetaine5M2	B-Numerical
-1MMgCl21M0.06	B-Concentration
-6mMTSO100µM0.1	B-Numerical
-1µMDTT100mM0.5	B-Concentration
-5mMSuperscript	I-Concentration
-II200U/µL0.5	B-Reagent
-100URNase	B-Concentration
-OUT40U/µL	I-Concentration
-10USample	B-Reagent
---	B-Concentration
---	I-Concentration
---	O
---	O
---	O
-(	O
-4.3	O
-)	O
---	O
---	O
---	O
---	O
--	O
-.	O
+H20---0.29  FS	I-Reagent
+Buffer5x2 1xBetaine5M2 1MMgCl21M0.06 6mMTSO100µM0.1 1µMDTT100mM0.5 5mMSuperscript	I-Reagent
+II200U/µL0.5 100URNase	I-Reagent
+OUT40U/µL  10USample----------	I-Reagent
+(4.3)---------.
+	O
 
 Incubate	B-Action
 at	O
 72º	B-Temperature
 for	O
-3m	B-Time
-,	O
+3m,	B-Time
 return	B-Action
 to	O
-ice	B-Location
-.	O
+ice.	B-Location
 
 Take	B-Action
 4.3µL	B-Amount
@@ -84,59 +58,31 @@ and	O
 put	B-Action
 in	O
 strip	B-Location
-tubes	I-Location
-.	O
+tubes.
+	I-Location
 
 Add	B-Action
 5.7µL	B-Amount
 RT	B-Reagent
 mix	I-Reagent
 RTNum	I-Reagent
-CycleGroupTempTime1xA4290m10xB502m	I-Reagent
-B422m1xC7015mholdD4hold	I-Reagent
-Dilute	I-Reagent
-ISPCR	B-Action
-primers	B-Reagent
-1:100	I-Reagent
-Prepare	B-Generic-Measure
-PCR	B-Action
-preamp	B-Reagent
-mixComponentStockAmt/1Amt/NFinal	I-Reagent
-Conc	B-Measure-Type
-(	I-Measure-Type
-First	O
+CycleGroupTempTime1xA4290m10xB502m B422m1xC7015mholdD4hold	I-Reagent
+Dilute	B-Action
+ISPCR	B-Reagent
+primers	I-Reagent
+1:100	B-Generic-Measure
+Prepare	B-Action
+PCR	B-Reagent
+preamp	I-Reagent
+mixComponentStockAmt/1Amt/NFinal	B-Action
+Conc(First	B-Measure-Type
 Strand	B-Reagent
-Rxn	I-Reagent
-)	I-Reagent
---	O
-10µL	B-Amount
---	I-Amount
---	O
---	O
--KAPA	B-Reagent
+Rxn)--10µL-------KAPA	I-Reagent
 HiFi	I-Reagent
 Hot	I-Reagent
-Start2x12.5	I-Reagent
-1xISPCR	B-Numerical
-primers1µM2.5µL	B-Reagent
-0.1µM	B-Amount
---	B-Concentration
---	I-Concentration
---	O
---	O
---	O
---	O
---	O
---	O
---	O
---	O
---	O
---	O
---	O
-Final	B-Modifier
-Volume	I-Modifier
-25µL	B-Amount
-.	I-Amount
+Start2x12.5 1xISPCR	I-Reagent
+primers1µM2.5µL 0.1µM--------------------------Final	I-Reagent
+Volume 25µL.  	O
 
 Add	B-Action
 15µL	B-Amount
@@ -145,8 +91,7 @@ preamp	I-Reagent
 mix	I-Reagent
 to	O
 10µL	B-Amount
-RT	B-Reagent
-.	O
+RT.	B-Reagent
 
 Preamp	B-Method
 PCR15	I-Method
@@ -154,27 +99,23 @@ cycles	B-Modifier
 is	O
 the	O
 current	B-Modifier
-recommendation	I-Modifier
-,	O
+recommendation,	I-Modifier
 but	O
-there	O
-'s	O
+there's	O
 enough	B-Modifier
 that	O
-I	O
-'ll	O
+I'll	O
 try	B-Action
 13	B-Numerical
 Ampure	B-Method
-Cleanup	I-Method
-.	O
+Cleanup.
+	I-Method
 
 Use	B-Action
 0.6	B-Numerical
 volumes	B-Measure-Type
 of	O
-beads	B-Device
-,	O
+beads,	B-Device
 so	O
 15µL	B-Amount
 of	O
@@ -182,20 +123,19 @@ beads	B-Reagent
 for	O
 the	O
 25µL	B-Amount
-reaction	B-Method
-.	O
+reaction.
+	B-Method
 
 Resuspend	B-Action
 in	O
 15.5µL	B-Amount
-EB	B-Reagent
-,	O
+EB,	B-Reagent
 then	O
 measure	B-Action
 concentrations	B-Measure-Type
 using	O
-qubit	B-Method
-.	O
+qubit.
+	B-Method
 
 
 

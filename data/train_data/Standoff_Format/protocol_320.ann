@@ -1,64 +1,99 @@
-T1	Reagent 11 18	Protein
-T2	Action 19 28	Desalting
-T3	Action 29 40	Equilibrate
-T4	Location 45 51	column
-T5	Reagent 61 77	buffer of choice
-T6	Action 81 89	applying
-T7	Modifier 90 98	at least
-T8	Amount 99 115	5 column volumes
-T9	Reagent 119 125	buffer
-T10	Numerical 140 143	1-2
-T11	Location 144 150	column
-T12	Measure-Type 151 158	volumes
-T13	Action 160 170	Centrifuge
-T14	Location 175 181	column
-T15	Speed 185 191	1,000g
-T16	Time 196 205	2 minutes
-T17	Action 209 215	remove
-T18	Reagent 220 226	buffer
-T19	Method 238 249	application
-T20	Action 251 256	Place
-T21	Location 261 267	column
-T22	Modifier 273 276	new
-T23	Location 277 292	collection tube
-T24	Action 297 303	remove
-T25	Seal 308 311	cap
-T26	Modifier 313 319	Slowly
-T27	Action 321 326	apply
-T28	Reagent 331 347	protein solution
-T29	Location 355 361	center
-T30	Reagent 369 383	SpinOUT™ resin
-T31	Action 385 395	Centrifuge
-T32	Location 400 406	column
-T33	Speed 410 416	1,000g
-T34	Measure-Type 435 440	times
-T35	Action 463 470	collect
-T36	Modifier 475 483	desalted
-T37	Reagent 484 500	protein solution
-T38	Action 502 509	Discard
-T39	Location 514 520	column
-T40	Action 522 526	Mark
-T41	Location 527 535	one side
-T42	Location 543 549	column
-T43	Method 568 583	centrifugations
-T44	Method 619 633	centrifugation
-T45	Action 635 642	Prepare
-T46	Location 647 662	SpinOUT™ column
-T47	Action 666 678	centrifuging
-T48	Location 683 699	SpinOUT™ columns
-T49	Speed 703 709	1,000g
-T50	Time 714 722	1 minute
-T51	Action 726 733	compact
-T52	Reagent 738 743	resin
-T53	Action 745 751	Remove
-T54	Seal 756 759	top
-T55	Seal 769 780	bottom caps
-T56	Action 782 787	Place
-T57	Modifier 796 807	appropriate
-T58	Location 808 823	collection tube
-T59	Action 825 835	Centrifuge
-T60	Location 840 846	column
-T61	Speed 850 856	1,000g
-T62	Time 861 870	2 minutes
-T63	Action 874 880	remove
-T64	Reagent 885 899	storage buffer
+T1	Action 28 39	Equilibrate
+E1	Action:T1 Acts-on:T19 Using:T20
+T2	Action 80 88	applying
+E2	Action:T2 Acts-on:T23
+T3	Action 159 169	Centrifuge
+E3	Action:T3 Acts-on:T24
+T4	Action 208 214	remove
+E4	Action:T4 Acts-on:T27
+T5	Action 250 255	Place
+E5	Action:T5 Acts-on:T28 Site:T30
+T6	Action 296 302	remove
+E6	Action:T6 Acts-on:T31
+T7	Action 320 325	apply
+E7	Action:T7 Acts-on:T32 Site:T33
+T8	Action 384 394	Centrifuge
+E8	Action:T8 Acts-on:T35
+T9	Action 462 469	collect
+E9	Action:T9 Acts-on:T38
+T10	Action 501 508	Discard
+E10	Action:T10 Acts-on:T39
+T11	Action 521 525	Mark
+E11	Action:T11 Acts-on:T40
+T12	Action 634 641	Prepare
+E12	Action:T12 Acts-on:T42
+T13	Action 665 677	centrifuging
+E13	Action:T13 Acts-on:T43
+T14	Action 725 732	compact
+E14	Action:T14 Acts-on:T46
+T15	Action 744 750	Remove
+E15	Action:T15 Acts-on:T47 Acts-on2:T48
+T16	Action 781 786	Place
+E16	Action:T16 Site:T50
+T17	Action 824 834	Centrifuge
+E17	Action:T17 Acts-on:T51
+T18	Action 873 879	remove
+E18	Action:T18 Acts-on:T54
+T19	Location 44 50	column
+T20	Reagent 60 76	buffer of choice
+T21	Modifier 89 97	at least
+T22	Amount 98 114	5 column volumes
+T23	Reagent 118 124	buffer
+R1	Measure Arg1:T23 Arg2:T22	
+R2	Mod-Link Arg1:T22 Arg2:T21	
+T24	Location 174 180	column
+T25	Speed 184 190	1,000g
+T26	Time 195 204	2 minutes
+T27	Reagent 219 225	buffer
+T28	Location 260 266	column
+T29	Modifier 272 275	new
+T30	Location 276 291	collection tube
+T31	Seal 307 310	cap
+T32	Reagent 330 346	protein solution
+T33	Location 354 360	center
+T34	Reagent 368 382	SpinOUT™ resin
+T35	Location 399 405	column
+T36	Speed 409 415	1,000g
+T37	Modifier 474 482	desalted
+T38	Reagent 483 499	protein solution
+T39	Location 513 519	column
+T40	Location 526 534	one side
+T41	Location 542 548	column
+T42	Location 646 661	SpinOUT™ column
+T43	Location 682 698	SpinOUT™ columns
+T44	Speed 702 708	1,000g
+T45	Time 713 721	1 minute
+T46	Reagent 737 742	resin
+T47	Seal 755 758	top
+T48	Seal 768 779	bottom caps
+T49	Modifier 795 806	appropriate
+T50	Location 807 822	collection tube
+T51	Location 839 845	column
+T52	Speed 849 855	1,000g
+T53	Time 860 869	2 minutes
+T54	Reagent 884 898	storage buffer
+R3	Setting Arg1:E3 Arg2:T25	
+R4	Setting Arg1:E3 Arg2:T26	
+R5	Mod-Link Arg1:T30 Arg2:T29	
+T55	Modifier 312 318	Slowly
+R6	Mod-Link Arg1:E7 Arg2:T55	
+R7	Meronym Arg1:T33 Arg2:T34	
+R8	Setting Arg1:E8 Arg2:T36	
+R9	Mod-Link Arg1:T38 Arg2:T37	
+R10	Meronym Arg1:T40 Arg2:T41	
+R11	Setting Arg1:E13 Arg2:T44	
+R12	Setting Arg1:E13 Arg2:T45	
+R13	Mod-Link Arg1:T50 Arg2:T49	
+R14	Setting Arg1:E17 Arg2:T52	
+R15	Setting Arg1:E17 Arg2:T53	
+T56	Reagent 10 17	Protein
+T57	Action 18 27	Desalting
+E19	Action:T57 Acts-on:T56
+T58	Numerical 139 142	1-2
+T59	Location 143 149	column
+T60	Measure-Type 150 157	volumes
+R16	Measure Arg1:T59 Arg2:T58	
+T61	Method 237 248	application
+T62	Measure-Type 434 439	times
+T63	Method 567 582	centrifugations
+T64	Method 618 632	centrifugation

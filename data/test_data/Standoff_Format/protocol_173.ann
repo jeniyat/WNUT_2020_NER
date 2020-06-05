@@ -1,115 +1,180 @@
-T1	Method 0 16	Re-amplification
-T2	Reagent 20 27	CRISPRa
-T3	Reagent 32 39	CRISPRi
-T4	Action 50 56	Dilute
-T5	Modifier 57 61	each
-T6	Reagent 62 73	sub-library
-T7	Concentration 77 85	50 ng/ul
-T8	Reagent 89 94	water
-T9	Action 98 114	EB Electroporate
-T10	Reagent 119 126	library
-T11	Action 128 137	Pre-chill
-T12	Size 138 144	0.1 cm
-T13	Location 145 153	cuvettes
-T14	Reagent 155 166	megaX cells
-T15	Concentration 168 172	10 %
-T16	Reagent 173 181	glycerol
-T17	Location 185 188	ice
-T18	Reagent 226 249	sub-library plasmid DNA
-T19	Modifier 254 269	MegaX competent
-T20	Reagent 270 275	cells
-T21	Action 277 280	mix
-T22	Modifier 281 287	gently
-T23	Action 292 300	incubate
-T24	Location 304 307	ice
-T25	Time 312 318	30 min
-T26	Action 320 323	Add
-T27	Modifier 324 335	pre-chilled
-T28	Concentration 336 340	10 %
-T29	Reagent 341 349	glycerol
-T30	Reagent 357 374	MageX-library mix
-T31	Modifier 381 386	final
-T32	Amount 387 392	75 ul
-T33	Action 394 402	transfer
-T34	Reagent 407 410	mix
-T35	Modifier 416 426	prechilled
-T36	Size 427 433	0.1 cm
-T37	Location 434 441	cuvette
-T38	Action 443 456	Electroporate
-T39	Generic-Measure 460 466	2.0 kV
-T40	Generic-Measure 468 476	200 ohms
-T41	Generic-Measure 478 483	25 uF
-T42	Device 485 511	Gene Pulser Xcell, Bio-rad
-T43	Action 514 522	Transfer
-T44	Reagent 523 528	cells
-T45	Location 534 546	culture tube
-T46	Action 548 551	Use
-T47	Amount 552 556	1 ml
-T48	Device 557 565	pipettes
-T49	Device 570 586	gel loading tips
-T50	Action 588 592	Wash
-T51	Reagent 593 598	cells
-T52	Modifier 603 609	gently
-T53	Amount 615 621	300 ul
-T54	Reagent 622 627	S.O.C
-T55	Numerical 629 634	twice
-T56	Amount 642 648	600 ul
-T57	Action 651 659	Incubate
-T58	Temperature 663 667	37oC
-T59	Speed 669 676	250 rpm
-T60	Time 678 687	1.5 hour.
-T61	Action 688 693	Plate
-T62	Reagent 698 713	transformations
-T63	Action 715 720	Plate
-T64	Numerical 728 731	one
-T65	Modifier 732 737	large
-T66	Reagent 738 750	square plate
-T67	Modifier 751 754	per
-T68	Reagent 755 766	sub-library
-T69	Action 768 771	use
-T70	Modifier 772 782	autoclaved
-T71	Reagent 783 788	beads
-T72	Action 790 798	Incubate
-T73	Temperature 802 806	37oC
-T74	Time 811 819	18 hours
-T75	Action 821 828	Collect
-T76	Modifier 829 832	all
-T77	Reagent 833 841	colonies
-T78	Reagent 847 849	LB
-T79	Action 854 856	do
-T80	Numerical 857 860	one
-T81	Method 861 869	maxiprep
-T82	Modifier 870 873	per
-T83	Location 874 879	plate
-T84	Action 881 886	elute
-T85	Amount 890 896	500 ul
-T86	Reagent 897 899	EB
-T87	Measure-Type 911 924	concentration
-T88	Concentration 934 943	2~3 ug/ul
-T89	Reagent 961 968	library
-T90	Action 978 981	PCR
-T91	Reagent 986 998	sgRNA region
-T92	Reagent 1018 1025	primers
-T93	Reagent 1036 1046	3 ’ primer
-T94	Numerical 1053 1054	2
-T95	Reagent 1065 1076	5 ’ primers
-T96	Reagent 1081 1088	CRISPRa
-T97	Reagent 1092 1099	CRISPRi
-T98	Reagent 1102 1109	CRISPRi
-T99	Reagent 1168 1176	oCRISPRi
-T100	Reagent 1291 1299	oCRISPRi
-T101	Action 1411 1415	Pool
-T102	Reagent 1416 1429	sub-libraries
-T103	Modifier 1430 1444	proportionally
-T104	Reagent 1469 1475	sgRNAs
-T105	Reagent 1489 1515	CRISPRa or CRISPRi library
-T106	Action 1517 1524	measure
-T107	Measure-Type 1529 1549	pooled concentration
-T108	Action 1554 1560	dilute
-T109	Concentration 1567 1576	400 ng/ul
-T110	Reagent 1581 1584	PCR
-T111	Action 1585 1588	Run
-T112	Numerical 1589 1590	3
-T113	Location 1591 1596	tubes
-T114	Amount 1600 1606	100 ul
-T115	Reagent 1607 1620	PCR reactions
+T1	Action 50 56	Dilute
+E1	Action:T1 Acts-on:T26 Site:T28
+T2	Action 128 137	Pre-chill
+E2	Action:T2 Acts-on:T32 Acts-on2:T33 Acts-on3:T35 Site:T36
+T4	Action 276 279	mix
+E4	Action:T4 
+T5	Action 291 299	incubate
+E5	Action:T5 Site:T38
+T6	Action 321 324	Add
+E6	Action:T6 Acts-on:T42 Site:T43
+T7	Action 394 402	transfer
+E7	Action:T7 Acts-on:T3 Site:T48
+T8	Action 443 456	Electroporate
+E8	Action:T8 Using:T52
+T9	Action 516 524	Transfer
+E9	Action:T9 Acts-on:T53 Site:T54
+T10	Action 552 555	Use
+E10	Action:T10 Using:T56 Using2:T57
+T11	Action 592 596	Wash
+E11	Action:T11 Acts-on:T58 Using:T61 Count:T62
+T12	Action 655 663	Incubate
+E12	Action:T12 
+T13	Action 692 697	Plate
+E13	Action:T13 Acts-on:T66
+T14	Action 719 724	Plate
+E14	Action:T14 Site:T69 Acts-on:T71
+T15	Action 772 775	use
+E15	Action:T15 Acts-on:T73
+T16	Action 794 802	Incubate
+E16	Action:T16 
+T17	Action 825 832	Collect
+E17	Action:T17 Acts-on:T76
+T18	Action 858 860	do
+E18	Action:T18 Using:T80 Acts-on:T82
+T19	Action 885 890	elute
+E19	Action:T19 Site:T84
+T20	Action 981 984	PCR
+E20	Action:T20 Acts-on:T105 Using:T106
+T21	Action 1411 1415	Pool
+E21	Action:T21 Acts-on:T86 Product:T88
+T22	Action 1517 1524	measure
+E22	Action:T22 Measure-Type-Link:T89
+T23	Action 1554 1560	dilute
+E23	Action:T23 Product:T91
+T24	Action 1585 1588	Run
+E24	Action:T24 Acts-on:T93 Count:T92
+T25	Modifier 57 61	each
+T26	Reagent 62 73	sub-library
+T27	Concentration 77 85	50 ng/ul
+T28	Reagent 89 94	water
+T29	Action 98 114	EB Electroporate
+E25	Action:T29 Acts-on:T30
+T30	Reagent 119 126	library
+R1	Mod-Link Arg1:T26 Arg2:T25	
+R2	Setting Arg1:E1 Arg2:T27	
+T31	Size 138 144	0.1 cm
+T32	Location 145 153	cuvettes
+T33	Reagent 155 166	megaX cells
+T34	Concentration 168 171	10%
+T35	Reagent 172 180	glycerol
+T36	Location 184 187	ice
+R3	Measure Arg1:T35 Arg2:T34	
+R4	Measure Arg1:T32 Arg2:T31	
+T37	Modifier 280 286	gently
+T38	Location 303 306	ice
+T39	Time 311 317	30 min
+T40	Modifier 325 336	pre-chilled
+T41	Concentration 337 340	10%
+T42	Reagent 341 349	glycerol
+T43	Reagent 357 374	MageX-library mix
+T44	Modifier 381 386	final
+T45	Amount 387 392	75 ul
+T46	Modifier 416 426	prechilled
+T47	Size 427 433	0.1 cm
+T48	Location 434 441	cuvette
+R5	Mod-Link Arg1:E4 Arg2:T37	
+R6	Setting Arg1:E5 Arg2:T39	
+R7	Measure Arg1:T42 Arg2:T41	
+R8	Mod-Link Arg1:T42 Arg2:T40	
+R9	Mod-Link Arg1:T45 Arg2:T44	
+R10	Setting Arg1:E6 Arg2:T45	
+T3	Reagent 407 410	mix
+R11	Measure Arg1:T48 Arg2:T47	
+R12	Mod-Link Arg1:T48 Arg2:T46	
+T49	Generic-Measure 460 466	2.0 kV
+T50	Generic-Measure 468 476	200 ohms
+T51	Generic-Measure 478 483	25 uF
+T52	Device 485 511	Gene Pulser Xcell, Bio-rad
+R13	Setting Arg1:T52 Arg2:T51	
+R14	Setting Arg1:T52 Arg2:T50	
+R15	Setting Arg1:T52 Arg2:T49	
+T53	Reagent 525 530	cells
+T54	Location 536 548	culture tube
+T55	Amount 556 560	1 ml
+T56	Device 561 569	pipettes
+T57	Device 574 590	gel loading tips
+R16	Setting Arg1:T56 Arg2:T55	
+T58	Reagent 597 602	cells
+T59	Modifier 607 613	gently
+T60	Amount 619 625	300 ul
+T61	Reagent 626 631	S.O.C
+T62	Numerical 633 638	twice
+R17	Measure Arg1:T61 Arg2:T60	
+R18	Mod-Link Arg1:E11 Arg2:T59	
+T63	Temperature 667 671	37oC
+T64	Speed 673 680	250 rpm
+T65	Time 682 691	1.5 hour.
+R19	Setting Arg1:E12 Arg2:T63	
+R20	Setting Arg1:E12 Arg2:T64	
+R21	Setting Arg1:E12 Arg2:T65	
+T66	Reagent 702 717	transformations
+T67	Numerical 732 735	one
+T68	Modifier 736 741	large
+T69	Reagent 742 754	square plate
+T70	Modifier 755 758	per
+T71	Reagent 759 770	sub-library
+T72	Modifier 776 786	autoclaved
+T73	Reagent 787 792	beads
+R22	Mod-Link Arg1:T73 Arg2:T72	
+R23	Mod-Link Arg1:T69 Arg2:T68	
+R24	Measure Arg1:T69 Arg2:T67	
+R25	Mod-Link Arg1:T71 Arg2:T70	
+T74	Temperature 806 810	37oC
+T75	Time 815 823	18 hours
+R26	Setting Arg1:E16 Arg2:T74	
+R27	Setting Arg1:E16 Arg2:T75	
+T76	Reagent 837 845	colonies
+T77	Reagent 851 853	LB
+T78	Modifier 833 836	all
+R28	Mod-Link Arg1:T76 Arg2:T78	
+R29	Meronym Arg1:T77 Arg2:T76	
+T79	Numerical 861 864	one
+T80	Method 865 873	maxiprep
+T81	Modifier 874 877	per
+T82	Location 878 883	plate
+T83	Amount 894 900	500 ul
+T84	Reagent 901 903	EB
+T85	Concentration 937 946	2~3 ug/ul
+R30	Or Arg1:T80 Arg2:T79	
+R31	Mod-Link Arg1:T82 Arg2:T81	
+R32	Measure Arg1:T84 Arg2:T83	
+R33	Setting Arg1:E19 Arg2:T85	
+T86	Reagent 1416 1429	sub-libraries
+T87	Modifier 1430 1444	proportionally
+R34	Mod-Link Arg1:E21 Arg2:T87	
+T88	Reagent 1489 1515	CRISPRa or CRISPRi library
+T89	Measure-Type 1529 1549	pooled concentration
+T90	Concentration 1567 1576	400 ng/ul
+T91	Reagent 1581 1584	PCR
+R35	Measure Arg1:T91 Arg2:T90	
+T92	Numerical 1589 1590	3
+T93	Location 1591 1596	tubes
+T94	Amount 1600 1606	100 ul
+T95	Reagent 1607 1620	PCR reactions
+R36	Measure Arg1:T95 Arg2:T94	
+R37	Measure Arg1:T93 Arg2:T92	
+R38	Meronym Arg1:T95 Arg2:T93	
+T96	Method 0 16	Re-amplification
+T97	Reagent 20 27	CRISPRa
+T98	Reagent 32 39	CRISPRi
+T99	Reagent 225 248	sub-library plasmid DNA
+T100	Modifier 253 268	MegaX competent
+T101	Reagent 269 274	cells
+R39	Mod-Link Arg1:T101 Arg2:T100	
+T102	Amount 646 652	600 ul
+R40	Measure Arg1:T61 Arg2:T102	
+T103	Measure-Type 914 927	concentration
+T104	Reagent 964 971	library
+T105	Reagent 989 1001	sgRNA region
+T106	Reagent 1021 1028	primers
+T107	Reagent 1039 1048	3’ primer
+T108	Numerical 1055 1056	2
+T109	Reagent 1067 1077	5’ primers
+T110	Reagent 1082 1089	CRISPRa
+T111	Reagent 1093 1100	CRISPRi
+R41	Or Arg1:T110 Arg2:T111	
+T112	Reagent 1103 1110	CRISPRi
+T113	Reagent 1168 1176	oCRISPRi
+T114	Reagent 1291 1299	oCRISPRi
+T115	Reagent 1469 1475	sgRNAs

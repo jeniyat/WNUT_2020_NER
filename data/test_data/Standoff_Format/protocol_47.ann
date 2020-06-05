@@ -1,30 +1,50 @@
-T1	Method 0 35	Transformation and Storage Solution
-T2	Method 37 40	TSS
-T3	Measure-Type 42 75	ChemicalVolume/MassFinal Conc.PEG
-T4	Generic-Measure 76 80	8000
-T5	Generic-Measure 84 94	PEG 335020
-T6	Concentration 95 100	g20 %
-T7	Reagent 107 113	DMSO10
-T8	Amount 114 118	ml10
-T9	Concentration 119 122	% (
-T10	Reagent 127 142	MgCl2 * H2O2.03
-T11	Amount 143 147	g100
-T12	Concentration 148 152	mMLB
-T13	Reagent 153 162	Mediumadd
-T14	Action 163 166	100
-T15	Amount 167 173	ml (pH
-T16	pH 174 179	6.5).
-T17	Action 180 187	Prepare
-T18	Concentration 188 190	2x
-T19	Reagent 191 194	TSS
-T20	Reagent 203 207	DMSO
-T21	Action 212 221	autoclave
-T22	Action 223 226	Add
-T23	Modifier 227 234	sterile
-T24	Reagent 235 239	DMSO
-T25	Action 246 257	autoclaving
-T26	Action 259 265	Divide
-T27	Amount 269 274	10 ml
-T28	Location 275 283	aliquots
-T29	Action 288 293	store
-T30	Temperature 297 301	4 °C
+T1	Action 176 183	Prepare
+E1	Action:T1 Acts-on:T3
+T2	Concentration 184 186	2x
+T3	Reagent 187 190	TSS
+T4	Action 208 217	autoclave
+E2	Action:T4 Acts-on:T3
+T5	Action 219 222	Add
+E3	Action:T5 Acts-on:T7
+T6	Modifier 223 230	sterile
+T7	Reagent 231 235	DMSO
+R2	Mod-Link Arg1:T7 Arg2:T6
+T8	Action 255 261	Divide
+E4	Action:T8 Site:T10
+T9	Amount 265 270	10 ml
+T10	Location 271 279	aliquots
+T11	Action 284 289	store
+E5	Action:T11 
+T12	Temperature 293 297	4 °C
+R4	Setting Arg1:E5 Arg2:T12
+R1	Measure Arg1:T3 Arg2:T2	
+R3	Measure Arg1:T10 Arg2:T9	
+T13	Method 0 35	Transformation and Storage Solution
+T14	Method 37 40	TSS
+T15	Reagent 199 203	DMSO
+T16	Action 242 253	autoclaving
+E6	Action:T16 
+T17	Measure-Type 42 56	ChemicalVolume
+T18	Measure-Type 57 72	MassFinal Conc.
+T19	Generic-Measure 72 80	PEG 8000
+T20	Generic-Measure 84 94	PEG 335020
+R5	Or Arg1:T19 Arg2:T20	
+T21	Concentration 96 99	20%
+T22	Reagent 105 109	DMSO
+T23	Amount 109 114	10 ml
+T24	Concentration 114 117	10%
+T27	Amount 135 140	.03 g
+T28	Concentration 140 146	100 mM
+T29	Reagent 146 155	LB Medium
+T30	Action 155 158	add
+E7	Action:T30 
+T31	Amount 159 165	100 ml
+T32	pH 167 173	pH 6.5
+R6	Measure Arg1:T22 Arg2:T21	
+T25	Reagent 123 135	MgCl2 * H2O2
+R7	Measure Arg1:T25 Arg2:T24	
+R8	Measure Arg1:T25 Arg2:T23	
+R9	Measure Arg1:T29 Arg2:T27	
+R10	Measure Arg1:T29 Arg2:T28	
+R11	Setting Arg1:E7 Arg2:T31	
+R12	Setting Arg1:E7 Arg2:T32	

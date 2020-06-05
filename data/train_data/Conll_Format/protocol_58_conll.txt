@@ -7,7 +7,8 @@ lines	I-Method
 using	O
 Lonza	B-Device
 4D	I-Device
-Nucleofector	I-Device
+Nucleofector
+	I-Device
 
 Bring	B-Action
 100	B-Amount
@@ -24,35 +25,28 @@ of	O
 using	O
 Cas9	B-Reagent
 buffer	I-Reagent
-(	O
-20	B-Concentration
+(20	B-Concentration
 mM	I-Concentration
 HEPES-KOH	B-Reagent
 pH	B-pH
-7.5	I-pH
-,	O
+7.5,	I-pH
 150	B-Concentration
 mM	I-Concentration
-KCl	B-Reagent
-,	O
-10	B-Concentration
-%	I-Concentration
-glycerol	B-Reagent
-,	O
+KCl,	B-Reagent
+10%	B-Concentration
+glycerol,	B-Reagent
 1	B-Concentration
 mM	I-Concentration
-TCEP	B-Reagent
-)	O
-.	O
+TCEP).
+	B-Reagent
 
 For	O
 40	B-Concentration
 µM	I-Concentration
-stock	B-Reagent
-:	O
+stock:	B-Reagent
 2.5	B-Amount
-µL	I-Amount
-.	O
+µL.
+	I-Amount
 
 Bring	B-Action
 120	B-Amount
@@ -67,8 +61,8 @@ of	O
 µL	I-Amount
 using	O
 Cas9	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.
+	I-Reagent
 
 This	O
 means	O
@@ -80,8 +74,8 @@ minimum	B-Modifier
 sgRNA	B-Measure-Type
 concentration	I-Measure-Type
 of	O
-24uM	B-Concentration
-.	O
+24uM.
+	B-Concentration
 
 Add	B-Action
 Cas9	B-Reagent
@@ -91,15 +85,14 @@ slowly	B-Modifier
 while	O
 swirling	B-Action
 pipette	B-Device
-tip	I-Device
-,	O
+tip,	I-Device
 should	O
 take	O
 30s	B-Time
 to	I-Time
 1	I-Time
-minute	I-Time
-.	O
+minute.
+	I-Time
 
 Allow	O
 RNP	B-Reagent
@@ -107,25 +100,21 @@ to	O
 form	B-Action
 for	O
 10-20	B-Time
-minutes	I-Time
-.	O
+minutes.
+	I-Time
 
 Count	B-Action
-cells	B-Reagent
-.	O
+cells.
+	B-Reagent
 
-(	O
-Trypsinize	B-Action
+(Trypsinize	B-Action
 as	B-Modifier
-needed	I-Modifier
-.	O
-)	O
-.	O
+needed.).
+	I-Modifier
 
 For	O
 each	B-Modifier
-nucleofection	B-Method
-,	O
+nucleofection,	B-Method
 pipette	B-Action
 200k	B-Numerical
 cells	B-Reagent
@@ -133,8 +122,8 @@ into	O
 a	O
 15	B-Amount
 mL	I-Amount
-conical	B-Location
-.	O
+conical.
+	B-Location
 
 Spin	B-Action
 100	B-Speed
@@ -146,20 +135,19 @@ minutes	I-Time
 to	O
 pellet	B-Action
 cells	B-Reagent
-softly	B-Modifier
-.	O
+softly.
+	B-Modifier
 
 While	B-Modifier
 the	O
 cells	B-Reagent
 are	O
-spinning	B-Action
-,	O
-prepare	B-Action
+spinning,	B-Action
+prepare	I-Action
 plate	B-Location
 and	O
-cuvette	B-Location
-.	O
+cuvette.
+	B-Location
 
 Prepare	B-Action
 a	O
@@ -168,14 +156,13 @@ with	O
 1mL	B-Amount
 media	B-Reagent
 per	O
-well	B-Location
-,	O
+well,	B-Location
 and	O
 pre-warm	B-Action
 in	O
 the	O
-incubator	B-Device
-.	O
+incubator.
+	B-Device
 
 Prepare	B-Action
 and	I-Action
@@ -184,8 +171,8 @@ wells	B-Location
 on	O
 20uL	B-Amount
 nucleofection	B-Location
-strips	I-Location
-.	O
+strips.
+	I-Location
 
 Configure	B-Action
 Lonza	B-Device
@@ -193,23 +180,21 @@ Lonza	B-Device
 using	O
 recommended	B-Method
 cell-type	I-Method
-program	I-Method
-.	O
+program.
+	I-Method
 
 Pipette	B-Action
 off	I-Action
 media	B-Reagent
 from	O
-cells	B-Reagent
-,	O
+cells,	B-Reagent
 gently	B-Modifier
 but	O
-completely	B-Modifier
-,	O
+completely,	B-Modifier
 using	O
 a	O
-P200	B-Device
-.	O
+P200.
+	B-Device
 
 The	O
 pellet	B-Reagent
@@ -218,8 +203,8 @@ very	B-Modifier
 soft	I-Modifier
 so	O
 be	B-Action
-careful	I-Action
-.	O
+careful.
+	I-Action
 
 Resuspend	B-Action
 cells	B-Reagent
@@ -229,15 +214,13 @@ in	O
 of	O
 nucleofector	B-Reagent
 solution	I-Reagent
-(	O
-usually	B-Modifier
+(usually	B-Modifier
 SF	B-Reagent
-media	I-Reagent
-)	O
+media)	I-Reagent
 using	O
 a	O
-P200	B-Device
-.	O
+P200.
+	B-Device
 
 Add	B-Action
 the	O
@@ -252,8 +235,8 @@ the	O
 µL	I-Amount
 resuspension	B-Reagent
 and	O
-mix	B-Action
-.	O
+mix.
+	B-Action
 
 Add	B-Action
 1uL	B-Amount
@@ -261,14 +244,12 @@ of	O
 100uM	B-Concentration
 donor	B-Reagent
 DNA	I-Reagent
-(	O
-100	B-Amount
-pmoles	I-Amount
-)	O
+(100	B-Amount
+pmoles)	I-Amount
 and	O
 mix	B-Action
-well	B-Modifier
-.	O
+well.
+	B-Modifier
 
 Add	B-Action
 nucleofection	B-Reagent
@@ -276,11 +257,10 @@ mixes	I-Reagent
 to	O
 the	O
 multiwell	B-Location
-cuvette	I-Location
-,	O
+cuvette,	I-Location
 and	O
-cap	B-Action
-.	O
+cap.
+	B-Action
 
 Pay	B-Action
 attention	I-Action
@@ -294,26 +274,23 @@ and	O
 cuvette	B-Location
 in	O
 the	O
-nucleofector	B-Device
-,	O
+nucleofector,	B-Device
 which	O
 is	O
 noted	B-Action
 in	O
 the	O
-manufacturer	B-Method
-’	I-Method
-s	I-Method
-instructions	I-Method
-.	O
+manufacturer’s	B-Method
+instructions.
+	I-Method
 
 Insert	B-Action
 cuvette	B-Location
 into	O
 nucleofector	B-Device
 and	O
-zap	B-Action
-.	O
+zap.
+	B-Action
 
 Allow	O
 cells	B-Reagent
@@ -325,16 +302,16 @@ strips	I-Location
 for	O
 10	B-Time
 minutes	I-Time
-post-nucleofection	B-Modifier
-.	O
+post-nucleofection.
+	B-Modifier
 
 This	B-Mention
 is	O
 supposed	O
 to	O
 increase	B-Action
-efficiency	B-Measure-Type
-.	O
+efficiency.
+	B-Measure-Type
 
 Add	B-Action
 80uL	B-Amount
@@ -343,8 +320,8 @@ pre-warmed	B-Modifier
 media	B-Reagent
 to	O
 each	B-Modifier
-well	B-Location
-.	O
+well.
+	B-Location
 
 Pipette	B-Action
 mixture	B-Reagent
@@ -356,8 +333,8 @@ into	O
 your	O
 pre-warmed	B-Modifier
 12-well	B-Location
-plate	I-Location
-.	O
+plate.
+	I-Location
 
 This	B-Mention
 should	O
@@ -366,13 +343,11 @@ the	O
 vast	B-Modifier
 majority	I-Modifier
 of	O
-cells	B-Reagent
-,	O
+cells,	B-Reagent
 but	O
 if	O
 you	O
-wish	O
-,	O
+wish,	O
 you	O
 may	O
 wash	B-Action
@@ -384,10 +359,9 @@ media	B-Reagent
 from	O
 the	O
 same	B-Modifier
-well	B-Location
-,	O
-chemistry-style	B-Modifier
-.	O
+well,	B-Location
+chemistry-style.
+	B-Modifier
 
 Allow	O
 cells	B-Reagent
@@ -400,8 +374,8 @@ recover	I-Action
 before	O
 attempted	B-Modifier
 downstream	B-Method
-analysis	I-Method
-.	O
+analysis.
+	I-Method
 
 Consider	B-Action
 including	I-Action
@@ -409,8 +383,8 @@ un-zapped	B-Modifier
 controls	B-Reagent
 to	O
 test	B-Action
-viability	B-Measure-Type
-.	O
+viability.
+	B-Measure-Type
 
 
 
