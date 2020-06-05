@@ -1,7 +1,7 @@
 # WNUT 2020: Named Entity Extraction 
 
 
-WNUT 2020 shared task is designed on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 622 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
+WNUT 2020 shared task is designed on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 615 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
 
 
 
@@ -10,7 +10,7 @@ WNUT 2020 shared task is designed on the wet lab protocol data. All of the proto
 Wet Lab Protocol (WLP) dataset annotations were created in brat and provided in both StandOff and CoNLL format in the [data directory](./data/Readme.md). The data is divided in 3 sub-directories as below:
 
 1) [train_data](./data/train_data/): 370 protocols with 8436 sentences
-2) [dev_data](./data/dev_data/): 123 protocols  with 2861 sentences
+2) [dev_data](./data/dev_data/): 122 protocols  with 2838 sentences
 3) [test_data](./data/test_data/): 123 protocols  with 2813 sentences
 
 ## Baselines
