@@ -2,8 +2,6 @@
 from collections import Counter
 import json
 
-import ftfy
-
 import sys, os, shutil
 import re
 from glob import glob
@@ -16,7 +14,7 @@ sys.path.insert(1, '../scripts/convert_conll_to_standoff/')
 import anntoconll_wlp
 import conll2standoff
 
-import filecmp
+
 
 def save_perf_in_tex(table_dict,op_file, caption="", ):
     fout = open(op_file,'w')

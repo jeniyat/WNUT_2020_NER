@@ -1,7 +1,6 @@
 from collections import Counter
 import json
 
-import ftfy
 
 import sys, os
 import re
