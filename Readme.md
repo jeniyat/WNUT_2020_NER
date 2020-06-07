@@ -9,14 +9,14 @@ WNUT 2020 shared task is designed on the wet lab protocol data. All of the proto
 
 Wet Lab Protocol (WLP) dataset is consists of 615 protocols selected from the 623 protocols of [Kulkarni et al. (2018)](https://cocoxu.github.io/publications/NAACL_2018_wet_lab_protocols.pdf). It excludes the following 8 duplicated protocols: 
 
--- protocol 45 (duplicate of protocol 441)
--- protocol 459 (duplicate of protocol 310)
--- protocol 464 (duplicate of protocol 46)
--- protocol 480 (duplicate of protocol 473)
--- protocol 482 (duplicate of protocol 474)
--- protocol 483 (duplicate of protocol 475)
--- protocol 484 (duplicate of protocol 476)
--- protocol 621 (duplicate of protocol 570)
+- protocol 45 (duplicate of protocol 441)
+- protocol 459 (duplicate of protocol 310)
+- protocol 464 (duplicate of protocol 46)
+- protocol 480 (duplicate of protocol 473)
+- protocol 482 (duplicate of protocol 474)
+- protocol 483 (duplicate of protocol 475)
+- protocol 484 (duplicate of protocol 476)
+- protocol 621 (duplicate of protocol 570)
 
 The remaining 615 uniqe protocols are re-annoated in brat with 3 annotators. The annotators added the missing entity-relations and also corrected the incosistencies. The updated dataset is provided in the [data directory](./data/Readme.md) in both StandOff and CoNLL format. The data is divided in 3 sub-directories as below:
 
