@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from collections import Counter
-import json
 
 import sys, os, shutil
 import re

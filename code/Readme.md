@@ -10,3 +10,22 @@ We provided the NER evalutation scipt in the [eval directory](./eval/Readme.md).
 
 We provided utility scripts to covert the StandOff format file to CoNLL format and vice versa in the [scripts directory](./scripts/Readme.md). 
 
+# Requirements:
+
+All the codes are written in python 3. The following python modules are required by the scripts provided in this code-base.
+
+
+```
+codecs
+os
+re
+sys
+json
+glob
+nltk
+io
+shutil
+argparse
+sklearn-crfsuite
+
+```

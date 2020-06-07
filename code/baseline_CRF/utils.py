@@ -1,5 +1,5 @@
 from collections import Counter
-import json
+
 
 
 import sys, os
@@ -50,78 +50,6 @@ def preprocess_data(input_standoff_folder_train, output_conll_folder_train, outp
 
 
 
-
-
-class Sort_Entity_by_Count:
-    """docstring for Sort_Entity_by_Count"""
-    def __init__(self, train_file,output_file):
-        l = self.Read_File(train_file)
-        #
-        self.list_of_train_sentence_words=l[0]
-        self.list_of_train_sentence_labels=l[1]
-
-        train_label_counter = Counter(x for xs in self.list_of_train_sentence_labels for x in xs)
-        train_result=self.get_label_counter(train_label_counter)
-
-
-        list_keys= [x[0] for x in train_result["label_phrase_counter"].most_common()]
-        with open(output_file, 'w') as outfile:
-            json.dump(list_keys, outfile)
-
-
-
-    def get_label_counter(self, label_counter):
-        label_phrase_counter=Counter()
-        label_word_counter=Counter()
-
-        word_count=0
-        entities_count=0
-
-        for c in label_counter:
-            split_c=c.split("-",1)
-            type_c=split_c[0]
-            if type_c=="O":
-                word_count+=label_counter[c]
-                continue
-            entity_name=split_c[1]
-            #print(entity_name, split_c, type_c)
-            if type_c=="B":
-                label_phrase_counter[entity_name]+=label_counter[c]
-                label_word_counter[entity_name]+=label_counter[c]
-                word_count+=label_counter[c]
-                entities_count+=label_counter[c]
-            elif type_c=="I":
-                label_word_counter[entity_name]+=label_counter[c]
-
-        result={}
-        result["label_phrase_counter"]=label_phrase_counter
-        result["word_count"]=word_count
-        result["entity_count"]=entities_count
-        result["label_word_counter"]=label_word_counter
-        return result
-
-
-    def Read_File(self, ip_file):
-        list_of_sentence_words_in_file=[]
-        list_of_sentence_labels_in_file=[]
-        current_sent_words=[]
-        current_sent_labels=[]
-
-        for line in open(ip_file):
-            line=line.strip()
-            if line=="":
-                list_of_sentence_words_in_file.append(current_sent_words)
-                list_of_sentence_labels_in_file.append(current_sent_labels)
-                current_sent_words=[]
-                current_sent_labels=[]
-                continue
-
-
-            (word, gold_label)= line.split("\t")
-            current_sent_words.append(word)
-            current_sent_labels.append(gold_label)
-
-        return (list_of_sentence_words_in_file, list_of_sentence_labels_in_file)
 
 
 

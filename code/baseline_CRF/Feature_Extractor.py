@@ -1,7 +1,6 @@
 import sys, os
 import re
 from collections import Counter
-import json
 from itertools import chain
 import nltk
 
