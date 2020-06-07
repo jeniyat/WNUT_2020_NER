@@ -1,6 +1,6 @@
 # The baseline NER:
 
-We provided a simple Liner CRF model in the [baseline_CRF directory](./code/Readme.md). It utilized simple gazetters and hand-crafted feature to predict the entities from the test data.
+We provided a simple Liner CRF model in the [baseline_CRF directory](./baseline_CRF/Readme.md). It utilized simple gazetters and hand-crafted feature to predict the entities from the test data.
 
 # The evaluation system:
 
