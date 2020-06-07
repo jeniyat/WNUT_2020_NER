@@ -7,7 +7,7 @@ WNUT 2020 shared task is designed on the wet lab protocol data. All of the proto
 
 ## Data
 
-Wet Lab Protocol (WLP) dataset annotations were created in brat and provided in both StandOff and CoNLL format in the [data directory](./data/Readme.md). The data is divided in 3 sub-directories as below:
+Wet Lab Protocol (WLP) dataset is reuses the 623 protocols from [Kulkarni et al.](https://cocoxu.github.io/publications/NAACL_2018_wet_lab_protocols.pdf). We removed 8 duplicate protocols from the collection and re annotated all the 615 uniqe protocols in brat. The re-annotation task added the missing entity-relations and also corrected the incosistencies. The updated dataset is provided in the [data directory](./data/Readme.md) in both StandOff and CoNLL format. The data is divided in 3 sub-directories as below:
 
 1) [train_data](./data/train_data/): 370 protocols with 8436 sentences
 2) [dev_data](./data/dev_data/): 122 protocols  with 2838 sentences
