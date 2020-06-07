@@ -7,7 +7,7 @@ WNUT 2020 shared task is designed on the wet lab protocol data. All of the proto
 
 ## Data
 
-Our Wet Lab Protocol (WLP) dataset is consists of 615 protocols selected from the 623 protocols of [Kulkarni et al. (2018)](https://cocoxu.github.io/publications/NAACL_2018_wet_lab_protocols.pdf). It excludes the following 8 duplicated protocols: 
+Our Wet Lab Protocol (WLP) dataset consists of 615 protocols selected from the 623 protocols of [Kulkarni et al. (2018)](https://cocoxu.github.io/publications/NAACL_2018_wet_lab_protocols.pdf). It excludes the following 8 duplicated protocols: 
 
 - protocol 45 (duplicate of protocol 441)
 - protocol 459 (duplicate of protocol 310)
