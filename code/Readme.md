@@ -16,16 +16,15 @@ All the codes are written in python 3. The following python modules are required
 
 
 ```
-codecs
-os
-re
-sys
-json
-glob
+sklearn-crfsuite
 nltk
+codecs
 io
+re
+os
+sys
+glob
 shutil
 argparse
-sklearn-crfsuite
 
 ```
