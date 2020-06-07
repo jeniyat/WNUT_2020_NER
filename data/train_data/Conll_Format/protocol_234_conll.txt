@@ -4,13 +4,15 @@ Staining	B-Action
 for	O
 Viral	B-Method
 Enumeration	I-Method
-(Case	O
-2)
-	O
+(	O
+Case	O
+2	O
+)	O
 
 Prepare	B-Action
 buffer	B-Reagent
-glutaraldehyde:	I-Reagent
+glutaraldehyde	I-Reagent
+:	O
 Make	B-Action
 dilution	B-Reagent
 of	O
@@ -32,7 +34,8 @@ Fix	B-Action
 viral	B-Reagent
 sample	I-Reagent
 with	O
-20%	B-Concentration
+20	B-Concentration
+%	I-Concentration
 buffered	B-Reagent
 glut	I-Reagent
 to	O
@@ -40,22 +43,25 @@ a	O
 final	O
 concentration	B-Measure-Type
 of	O
-0.5%.	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
+.	O
 
 Incubate	B-Action
 at	O
 4°C	B-Temperature
 for	O
 30	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Prepare	B-Action
 working	B-Reagent
 solutions	I-Reagent
 of	O
 SYBR	B-Reagent
-Gold.	I-Reagent
+Gold	I-Reagent
+.	O
 
 Add	B-Action
 2	B-Amount
@@ -75,30 +81,35 @@ in	O
 a	O
 plastic	B-Location
 Petri	I-Location
-dish,	I-Location
+dish	I-Location
+,	O
 4	B-Amount
 drops	I-Amount
 in	O
 one	B-Numerical
-dish.	B-Location
+dish	B-Location
+.	O
 
 Cover	B-Action
 the	O
 dish	B-Location
 by	O
 aluminum	B-Seal
-foil. 	I-Seal
+foil	I-Seal
+.	O
 
 Set	B-Action
 up	I-Action
 the	O
 filtration	B-Device
-unit,	I-Device
+unit	I-Device
+,	O
 connecting	B-Action
 it	B-Mention
 to	O
 a	O
-vacuum. 	B-Device
+vacuum	B-Device
+.	O
 
 Add	B-Action
 a	O
@@ -112,26 +123,31 @@ mQ	I-Reagent
 on	O
 the	O
 filter	B-Location
-base.	I-Location
+base	I-Location
+.	O
 
 Place	B-Action
 a	O
 0.2	B-Location
 nitrocellulose	I-Location
 filter	I-Location
-(the	I-Location
+(	I-Location
+the	I-Location
 support	I-Location
-filter)	I-Location
+filter	I-Location
+)	I-Location
 on	O
 top	B-Location
 of	O
 the	O
-water. 	B-Reagent
+water	B-Reagent
+.	O
 
 Switch	B-Action
 on	I-Action
 the	O
-vacuum,	B-Device
+vacuum	B-Device
+,	O
 the	O
 support	B-Device
 filter	I-Device
@@ -141,7 +157,8 @@ flat	O
 on	O
 the	O
 filter	B-Location
-base.	I-Location
+base	I-Location
+.	O
 
 Add	B-Action
 a	B-Amount
@@ -155,7 +172,8 @@ mQ	I-Reagent
 on	O
 the	O
 support	B-Location
-filter.	I-Location
+filter	I-Location
+.	O
 
 Switch	B-Action
 on	I-Action
@@ -165,7 +183,8 @@ to	O
 pull	B-Action
 the	O
 water	B-Reagent
-through. 	O
+through	O
+.	O
 
 Apply	B-Action
 a	O
@@ -176,7 +195,8 @@ filter	I-Reagent
 over	O
 the	O
 support	B-Location
-filter. 	I-Location
+filter	I-Location
+.	O
 
 Apply	B-Action
 the	O
@@ -187,7 +207,8 @@ clamp	B-Device
 while	B-Modifier
 vacuum	I-Modifier
 is	I-Modifier
-on.	I-Modifier
+on	I-Modifier
+.	O
 
 Switch	B-Action
 off	I-Action
@@ -196,7 +217,8 @@ vacuum	B-Device
 and	O
 add	B-Action
 viral	B-Reagent
-samples.	I-Reagent
+samples	I-Reagent
+.	O
 
 Switch	B-Action
 on	I-Action
@@ -213,7 +235,8 @@ of	O
 0.02	B-Reagent
 µm	I-Reagent
 filtered	I-Reagent
-mQ.	I-Reagent
+mQ	I-Reagent
+.	O
 
 Remove	B-Action
 the	O
@@ -223,7 +246,8 @@ the	I-Modifier
 vacuum	I-Modifier
 is	I-Modifier
 still	I-Modifier
-on.	I-Modifier
+on	I-Modifier
+.	O
 
 Rinse	B-Action
 tower	B-Location
@@ -232,14 +256,16 @@ in	O
 Q-water	B-Reagent
 in	O
 between	O
-samples.	B-Reagent
+samples	B-Reagent
+.	O
 
 Blot	B-Action
 onto	O
 paper	B-Location
 towel	I-Location
 to	O
-dry. 	B-Action
+dry	B-Action
+.	O
 
 Dry	B-Action
 filter	B-Reagent
@@ -248,7 +274,8 @@ on	O
 Kimwipes	B-Location
 at	O
 RT	B-Temperature
-completely.	B-Modifier
+completely	B-Modifier
+.	O
 
 Remove	B-Action
 membrane	B-Reagent
@@ -267,10 +294,13 @@ dish	I-Location
 for	O
 15	B-Time
 minutes	I-Time
-(cover	B-Action
+(	O
+cover	B-Action
 with	O
 aluminum	B-Seal
-foil).	I-Seal
+foil	I-Seal
+)	O
+.	O
 
 Dry	B-Action
 filter	B-Reagent
@@ -279,9 +309,12 @@ again	O
 on	O
 Kimwipes	B-Location
 in	B-Modifier
-the dark at	I-Modifier
-RT	B-Temperature
-completely.	B-Modifier
+the	I-Modifier
+dark	I-Modifier
+at	I-Modifier
+RT	O
+completely	B-Temperature
+.	B-Modifier
 
 Pipet	B-Action
 20	B-Amount
@@ -291,7 +324,8 @@ solution	I-Reagent
 on	O
 a	O
 microscope	B-Location
-slide. 	I-Location
+slide	I-Location
+.	O
 
 Place	B-Action
 the	O
@@ -301,7 +335,8 @@ membrane	I-Reagent
 on	O
 top	B-Location
 of	O
-it. 	B-Mention
+it	B-Mention
+.	O
 
 Pipet	B-Action
 30	B-Amount
@@ -311,7 +346,8 @@ solution	I-Reagent
 on	O
 a	O
 cover	B-Location
-slide. 	I-Location
+slide	I-Location
+.	O
 
 Carefully	B-Modifier
 place	B-Action
@@ -321,7 +357,8 @@ the	O
 filter	B-Location
 to	O
 avoid	B-Action
-bubbles. 	B-Reagent
+bubbles	B-Reagent
+.	O
 
 Place	B-Action
 slide	B-Location
@@ -329,7 +366,8 @@ at	O
 -20°C	B-Temperature
 to	O
 enhance	B-Action
-fluorescence. 	B-Reagent
+fluorescence	B-Reagent
+.	O
 
 Read	B-Action
 slides	B-Location
@@ -341,8 +379,7 @@ objective	I-Reagent
 and	O
 inverted	B-Device
 fluorescent	I-Device
-microscope
-	I-Device
+microscope	I-Device
 
 
 

@@ -4,8 +4,7 @@ cyanophages	I-Method
 by	I-Method
 liquid	I-Method
 enrichment	I-Method
-assay
-	I-Method
+assay	I-Method
 
 Prefilter	B-Action
 at	B-Modifier
@@ -18,44 +17,50 @@ through	O
 a	O
 glass	B-Modifier
 fiber	I-Modifier
-filter.
-	B-Device
+filter	B-Device
+.	O
 
 Filter	B-Action
 sample	B-Reagent
-through 0.2	B-Size
+through	O
+0.2	B-Size
 µm	I-Size
-or	O
-0.45	B-Size
+or	I-Size
+0.45	I-Size
 µm	I-Size
-low	B-Modifier
-protein	I-Modifier
+low	I-Size
+protein	B-Modifier
 binding	I-Modifier
-PVDF	B-Device
-filter.
-	I-Device
+PVDF	I-Modifier
+filter	B-Device
+.	I-Device
 
 Dispense	B-Action
 the	O
 filtered	B-Modifier
 water	B-Reagent
 samples	I-Reagent
-(e.g.,	O
+(	O
+e.g.	O
+,	O
 0.5	B-Amount
 L	I-Amount
 or	B-Modifier
-more)	I-Modifier
+more	I-Modifier
+)	O
 into	O
 culture	B-Location
-vessels,	I-Location
-e.g.,	O
+vessels	I-Location
+,	O
+e.g.	O
+,	O
 1	B-Amount
 L	I-Amount
 or	B-Modifier
 larger	I-Modifier
 Erlenmeyer	B-Location
-flasks.
-	I-Location
+flasks	I-Location
+.	O
 
 Add	B-Action
 nutrients	B-Reagent
@@ -69,26 +74,29 @@ growth	I-Action
 of	O
 the	O
 target	B-Reagent
-cells.
-	I-Reagent
+cells	I-Reagent
+.	O
 
 Seed	B-Action
 the	O
 filtered	B-Modifier
 water	B-Reagent
 with	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 to	I-Concentration
-10%	I-Concentration
+10	I-Concentration
+%	I-Concentration
 v/v	I-Concentration
 of	O
 host	B-Reagent
-culture.
-	I-Reagent
+culture	I-Reagent
+.	O
 
 As	B-Modifier
 a	I-Modifier
-control,	I-Modifier
+control	I-Modifier
+,	O
 replace	B-Action
 the	O
 filtered	B-Modifier
@@ -96,14 +104,16 @@ environmental	I-Modifier
 sample	B-Reagent
 with	O
 virus-free	B-Modifier
-(0.02	B-Concentration
+(	O
+0.02	B-Concentration
 µm	I-Concentration
 filtered	B-Modifier
 or	I-Modifier
-heat-killed)	I-Modifier
+heat-killed	I-Modifier
+)	O
 water	B-Reagent
-sample.
-	I-Reagent
+sample	I-Reagent
+.	O
 
 Incubate	B-Action
 the	O
@@ -123,8 +133,8 @@ look	B-Action
 for	O
 signs	B-Method
 of	I-Method
-lysis.
-	I-Method
+lysis	I-Method
+.	O
 
 Remove	B-Action
 an	O
@@ -132,19 +142,23 @@ aliquot	B-Reagent
 of	O
 the	O
 enrichment	B-Reagent
-culture,	I-Reagent
+culture	I-Reagent
+,	O
 and	O
 pellet	B-Action
 remaining	B-Modifier
 cells	B-Reagent
 by	O
 centrifugation	B-Method
-(e.g.,	O
+(	O
+e.g.	O
+,	O
 20	B-Time
 minutes	I-Time
 at	O
-6000g).
-	B-Speed
+6000g	B-Speed
+)	O
+.	O
 
 Filter	B-Action
 the	O
@@ -157,8 +171,8 @@ or	O
 0.45	B-Size
 µm	I-Size
 PVDF	B-Device
-filter.
-	I-Device
+filter	I-Device
+.	O
 
 Store	B-Action
 the	O
@@ -167,8 +181,8 @@ at	O
 4°C	B-Temperature
 until	B-Modifier
 further	I-Modifier
-analysis.
-	I-Modifier
+analysis	I-Modifier
+.	O
 
 Verify	B-Action
 the	O
@@ -179,16 +193,19 @@ phages	I-Reagent
 by	O
 liquid	B-Method
 assay	I-Method
-(or	O
+(	O
+or	O
 plaque	B-Method
-assay).
-	I-Method
+assay	I-Method
+)	O
+.	O
 
 To	O
 propagate/amplify	B-Action
 the	O
 lytic	B-Reagent
-agent,	I-Reagent
+agent	I-Reagent
+,	O
 the	O
 liquid	B-Method
 bioassay	I-Method
@@ -202,8 +219,8 @@ agent	I-Reagent
 as	O
 the	O
 test	B-Reagent
-sample.
-	I-Reagent
+sample	I-Reagent
+.	O
 
 
 

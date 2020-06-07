@@ -1,13 +1,17 @@
 LB	B-Location
 agar	I-Location
-plate,	I-Location
-1.5%
-	B-Concentration
+plate	I-Location
+,	O
+1.5	B-Concentration
+%	I-Concentration
 
 Pour	B-Action
-1.5%	B-Concentration
+1.5	B-Concentration
+%	I-Concentration
 w/v	I-Concentration
-(7.5g/500mL)	I-Concentration
+(	I-Concentration
+7.5g/500mL	I-Concentration
+)	I-Concentration
 bacteriological	B-Reagent
 grade	I-Reagent
 agar	I-Reagent
@@ -22,7 +26,8 @@ holding	O
 at	B-Modifier
 least	I-Modifier
 500mL	B-Amount
-q.s.	O
+q.s	O
+.	O
 to	O
 500mL	B-Amount
 using	O
@@ -38,7 +43,8 @@ particulates	B-Reagent
 are	O
 no	O
 longer	O
-visible.	B-Modifier
+visible	B-Modifier
+.	O
 
 Loosely	B-Modifier
 cap	B-Action
@@ -52,18 +58,23 @@ minimum	O
 of	O
 30	B-Time
 minutes	I-Time
-(increase	O
+(	O
+increase	O
 to	O
 45	B-Time
 minutes	I-Time
 if	O
 making	O
-1L)	B-Amount
+1L	B-Amount
+)	O
 using	O
 slow	B-Method
 exhaust	I-Method
-(liquid)	I-Method
-cycle.	I-Method
+(	I-Method
+liquid	I-Method
+)	I-Method
+cycle	I-Method
+.	O
 
 Remove	B-Action
 from	O
@@ -88,11 +99,16 @@ gloves	I-Device
 or	O
 bare	B-Device
 handed	I-Device
-(about	O
-40-60C).
-	B-Temperature
+(	O
+about	O
+40-60C	B-Temperature
+)	O
+.	O
 
-[Optional]:	O
+[	O
+Optional	O
+]	O
+:	O
 Cool	B-Action
 in	O
 55C	B-Temperature
@@ -108,8 +124,8 @@ too	O
 much	O
 prior	O
 to	O
-pouring.
-	B-Action
+pouring	B-Action
+.	O
 
 Add	B-Action
 antibiotic	B-Reagent
@@ -121,7 +137,8 @@ cooled	B-Modifier
 down	I-Modifier
 and	O
 mix	B-Action
-well.	B-Modifier
+well	B-Modifier
+.	O
 
 Carefully	B-Modifier
 pour	B-Action
@@ -134,9 +151,12 @@ into	O
 10cm	B-Size
 Petri	B-Location
 dishes	I-Location
-(about	O
+(	O
+about	O
 20-25	B-Numerical
-plates).	B-Location
+plates	B-Location
+)	O
+.	O
 
 Let	O
 agar	B-Reagent
@@ -148,10 +168,11 @@ on	O
 top	B-Location
 and	O
 inverting	B-Action
-plate.
-	B-Location
+plate	B-Location
+.	O
 
-Alternatively,	O
+Alternatively	O
+,	O
 place	B-Action
 lid	B-Seal
 open	B-Modifier
@@ -166,8 +187,8 @@ evaporation	B-Method
 as	O
 the	O
 agar	B-Reagent
-cools.
-	O
+cools	O
+.	O
 
 Wrap	B-Action
 plates	B-Location
@@ -185,8 +206,8 @@ prevent	B-Action
 plates	B-Location
 from	O
 drying	O
-out.
-	O
+out	O
+.	O
 
 Wrap	B-Action
 in	O
@@ -197,17 +218,20 @@ prevent	B-Action
 degradation	B-Method
 of	O
 light-sensitive	B-Reagent
-antibiotics,	I-Reagent
-e.g.	O
-ampicillin.
-	B-Reagent
+antibiotics	I-Reagent
+,	O
+e.g	O
+.	O
+ampicillin	B-Reagent
+.	O
 
 Store	B-Action
 plates	B-Location
 at	O
-4C,	B-Temperature
-inverted.
-	B-Modifier
+4C	B-Temperature
+,	O
+inverted	B-Modifier
+.	O
 
 
 

@@ -1,8 +1,7 @@
 Diatom	B-Method
 Chloroplast	I-Method
 Isolation	I-Method
-Steps
-	I-Method
+Steps	I-Method
 
 Grow	B-Action
 diatom	B-Reagent
@@ -11,12 +10,16 @@ in	O
 autoclaved	B-Reagent
 seawater	I-Reagent
 media	I-Reagent
-(e.g.	O
+(	O
+e.g	O
+.	O
 f/2	B-Generic-Measure
-media).
-	B-Reagent
+media	B-Reagent
+)	O
+.	O
 
-[Protocol	O
+[	O
+Protocol	O
 was	O
 developed	O
 with	O
@@ -42,7 +45,9 @@ achieving	B-Action
 a	O
 lower	B-Modifier
 cell	I-Modifier
-density]Gently	I-Modifier
+density	I-Modifier
+]	O
+Gently	B-Modifier
 filter	B-Action
 culture	B-Reagent
 through	O
@@ -51,10 +56,11 @@ a	O
 μm	I-Size
 47	I-Size
 mM	I-Size
-filter.
-	B-Device
+filter	B-Device
+.	O
 
-Periodically,	B-Modifier
+Periodically	B-Modifier
+,	O
 as	O
 filtration	B-Method
 slows	B-Action
@@ -64,7 +70,8 @@ growing	I-Modifier
 biomass	I-Modifier
 on	I-Modifier
 the	I-Modifier
-filter,	I-Modifier
+filter	I-Modifier
+,	O
 place	B-Action
 filters	B-Device
 in	O
@@ -80,8 +87,8 @@ gently	B-Modifier
 was	B-Action
 cells	B-Reagent
 from	O
-filter.
-	B-Device
+filter	B-Device
+.	O
 
 Repeat	B-Action
 until	B-Modifier
@@ -91,8 +98,8 @@ is	O
 filtered	B-Modifier
 and	O
 cells	B-Reagent
-resuspended.
-	B-Modifier
+resuspended	B-Modifier
+.	O
 
 Remove	B-Action
 filters	B-Device
@@ -109,20 +116,21 @@ for	O
 minutes	I-Time
 to	O
 pellet	B-Action
-cells.
-	B-Reagent
+cells	B-Reagent
+.	O
 
 Gently	B-Modifier
 decant	B-Action
-media.
-	B-Reagent
+media	B-Reagent
+.	O
 
 Resuspend	B-Action
 pellet	B-Reagent
 in	O
 ~7ml	B-Amount
 10M	B-Concentration
-NH4F.	B-Reagent
+NH4F	B-Reagent
+.	O
 
 Vortex	B-Action
 periodically	B-Generic-Measure
@@ -133,11 +141,12 @@ on	O
 ice	B-Temperature
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Centrifuge	B-Action
-@1200	B-Speed
+@	O
+1200	B-Speed
 x	I-Speed
 g	I-Speed
 @	O
@@ -148,8 +157,8 @@ min	I-Time
 and	O
 pour	B-Action
 off	I-Action
-NH4F.
-	B-Reagent
+NH4F	B-Reagent
+.	O
 
 Resuspend	B-Action
 and	O
@@ -159,17 +168,22 @@ pellet	B-Reagent
 with	O
 isolation	B-Reagent
 buffer	I-Reagent
-(5-7	B-Amount
-mls),	I-Amount
+(	O
+5-7	B-Amount
+mls	I-Amount
+)	O
+,	O
 centrifuge	B-Action
-@1200	B-Speed
+@	O
+1200	B-Speed
 x	I-Speed
 g	I-Speed
-@4°C	B-Temperature
+@	O
+4°C	B-Temperature
 in	B-Modifier
 between	I-Modifier
-rinses.
-	I-Modifier
+rinses	I-Modifier
+.	O
 
 Resuspend	B-Action
 pellet	B-Reagent
@@ -178,27 +192,30 @@ in	O
 ml	I-Amount
 cold	B-Temperature
 isolation	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Sonicate	B-Action
 @	O
 10W	B-Numerical
 for	O
 10	B-Time
-s.	I-Time
+s	I-Time
+.	O
 
 Prepare	B-Action
 2	B-Numerical
 two-step	B-Generic-Measure
 Percoll	B-Reagent
 gradients	I-Reagent
-(in	O
+(	O
+in	O
 15	B-Size
 ml	I-Size
 COREX	B-Location
-tubes).
-	I-Location
+tubes	I-Location
+)	O
+.	O
 
 Add	B-Action
 2	B-Amount
@@ -206,14 +223,17 @@ ml	I-Amount
 Bottom	B-Reagent
 Layer	I-Reagent
 Solution	I-Reagent
-(80%	B-Concentration
-Percoll)	B-Reagent
+(	O
+80	B-Concentration
+%	I-Concentration
+Percoll	B-Reagent
+)	O
 to	O
 15	B-Size
 ml	I-Size
 corex	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Apply	B-Action
 10	B-Amount
@@ -226,8 +246,11 @@ the	O
 Top	B-Reagent
 Layer	I-Reagent
 Solution	I-Reagent
-(40%	B-Concentration
-Percoll)	B-Reagent
+(	O
+40	B-Concentration
+%	I-Concentration
+Percoll	B-Reagent
+)	O
 and	O
 gently	B-Modifier
 add	B-Action
@@ -237,23 +260,26 @@ Top	B-Reagent
 Layer	I-Reagent
 to	O
 the	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 Percoll	B-Reagent
 layer	I-Reagent
 using	O
 a	O
 Pasteur	B-Device
-Pipette.
-	I-Device
+Pipette	I-Device
+.	O
 
 Load	B-Action
 homogenate	B-Reagent
 from	O
 step	O
 9	O
-(Silica	B-Method
+(	O
+Silica	B-Method
 Frustrule	I-Method
-Removal)	I-Method
+Removal	I-Method
+)	O
 carefully	B-Modifier
 onto	O
 the	O
@@ -266,8 +292,8 @@ gradient	I-Reagent
 with	O
 a	O
 Pasteur	B-Device
-pipette.
-	I-Device
+pipette	I-Device
+.	O
 
 Centrifuge	B-Action
 in	O
@@ -282,19 +308,24 @@ ten	B-Time
 minutes	I-Time
 brake	B-Method
 off	I-Method
-(@4°C).R
-	B-Temperature
+(	O
+@	O
+4°C	B-Temperature
+)	O
+.R	O
 
 ecover	B-Action
 intact	B-Reagent
 chloroplasts	I-Reagent
-(bottom	B-Location
-layer)	I-Location
+(	O
+bottom	B-Location
+layer	I-Location
+)	O
 using	O
 a	O
 Pasteur	B-Device
-Pipette.
-	I-Device
+Pipette	I-Device
+.	O
 
 Add	B-Action
 to	O
@@ -302,8 +333,8 @@ sterile	B-Modifier
 15	B-Size
 ml	I-Size
 corex	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Wash	B-Action
 twice	B-Numerical
@@ -311,16 +342,18 @@ with	O
 cold	B-Temperature
 isolation	B-Reagent
 buffer	I-Reagent
-(without	B-Modifier
+(	O
+without	B-Modifier
 added	I-Modifier
-BSA)	I-Modifier
+BSA	I-Modifier
+)	O
 as	O
-below:
-	O
+below	O
+:	O
 
 Add	B-Action
-buffer.
-	B-Reagent
+buffer	B-Reagent
+.	O
 
 Centrifuge	B-Action
 in	O
@@ -332,17 +365,20 @@ at	O
 1000	B-Speed
 x	I-Speed
 g	I-Speed
-@4°C	B-Temperature
+@	O
+4°C	B-Temperature
 for	O
 five	B-Time
 minutes	I-Time
-(brake	B-Method
-on).
-	I-Method
+(	O
+brake	B-Method
+on	I-Method
+)	O
+.	O
 
 Discard	B-Action
-Supernatant.
-	B-Reagent
+Supernatant	B-Reagent
+.	O
 
 Use	O
 a	O
@@ -361,15 +397,19 @@ of	O
 cold	B-Temperature
 isolation	B-Reagent
 buffer	I-Reagent
-(or	O
+(	O
+or	O
 alternate	B-Modifier
 preservation	B-Reagent
 buffer	I-Reagent
 of	B-Modifier
 your	I-Modifier
-choice).	I-Modifier
+choice	I-Modifier
+)	O
+.	O
 
-[soft	B-Modifier
+[	O
+soft	B-Modifier
 paintbrush	B-Device
 is	B-Modifier
 specified	I-Modifier
@@ -382,7 +422,9 @@ disrupt	I-Action
 the	O
 fragile	B-Modifier
 exposed	I-Modifier
-plastids].	B-Reagent
+plastids	B-Reagent
+]	O
+.	O
 
 Use	O
 phase	B-Method
@@ -396,8 +438,8 @@ successful	B-Modifier
 extraction	B-Method
 of	I-Method
 intact	I-Method
-chloroplasts.
-	I-Method
+chloroplasts	I-Method
+.	O
 
 Plastid	B-Method
 enrichment	I-Method
@@ -423,8 +465,8 @@ RuBisCO	I-Method
 in	O
 the	O
 plastid	B-Reagent
-fraction.
-	I-Reagent
+fraction	I-Reagent
+.	O
 
 
 

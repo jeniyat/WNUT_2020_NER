@@ -3,8 +3,7 @@ Embedding	B-Action
 of	O
 Drosophila	B-Reagent
 Pupal	I-Reagent
-Tissues
-	I-Reagent
+Tissues	I-Reagent
 
 Puncture	B-Action
 posterior	B-Reagent
@@ -14,14 +13,16 @@ staged	I-Reagent
 pupa	I-Reagent
 with	O
 dissecting	B-Device
-scissors,	I-Device
-fine	I-Device
-forcepts,	I-Device
+scissors	I-Device
+,	O
+fine	B-Device
+forcepts	I-Device
+,	O
 or	O
 .22	B-Size
 gauge	B-Device
-needle.
-	I-Device
+needle	I-Device
+.	O
 
 Place	B-Action
 into	O
@@ -38,7 +39,8 @@ overnight	B-Time
 at	O
 4	B-Temperature
 degrees	I-Temperature
-Celsius.	I-Temperature
+Celsius	I-Temperature
+.	O
 
 Remove	B-Action
 FAAG	B-Reagent
@@ -48,10 +50,12 @@ hood	B-Location
 and	O
 dispose	B-Action
 in	O
-"Aldehyde	B-Location
-Waste"	I-Location
-container.
-	I-Location
+``	B-Location
+Aldehyde	I-Location
+Waste	I-Location
+''	I-Location
+container	I-Location
+.	B-Action
 
 Dehydrate	B-Action
 through	O
@@ -60,19 +64,21 @@ series	I-Reagent
 and	O
 clear	B-Action
 in	O
-Xylenes.
-	B-Reagent
+Xylenes	B-Reagent
+.	O
 
 Rotate	B-Action
 in	O
 nutator	B-Device
 at	O
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Solution	B-Reagent
-1:	I-Reagent
-80%	B-Concentration
+1	I-Reagent
+:	O
+80	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -80,12 +86,14 @@ Dehydrate	B-Action
 through	O
 ethanol	B-Reagent
 series	O
-continued.
-	O
+continued	O
+.	O
 
 Solution	B-Reagent
-2:	I-Reagent
-85%	B-Concentration
+2	I-Reagent
+:	O
+85	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -93,12 +101,14 @@ Dehydrate	B-Action
 through	O
 ethanol	B-Reagent
 series	O
-continued.
-	O
+continued	O
+.	O
 
 Solution	B-Reagent
-3:	I-Reagent
-90%	B-Concentration
+3	I-Reagent
+:	O
+90	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
 ul	I-Amount
@@ -106,31 +116,38 @@ Dehydrate	B-Action
 through	O
 ethanol	B-Reagent
 series	O
-continued.
-	O
+continued	O
+.	O
 
 Solution	B-Reagent
-4:	I-Reagent
-100%	B-Concentration
+4	I-Reagent
+:	O
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
-ul.	I-Amount
+ul	I-Amount
+.	O
 
 Repeat	B-Action
 Step	O
-5 Dehydrate	B-Action
-through	O
+5	O
+Dehydrate	B-Action
+through	I-Action
 ethanol	B-Reagent
-series	O
-continued.
-	O
+series	I-Reagent
+continued	O
+.	O
 
 Solution	B-Reagent
-4:	I-Reagent
-100%	B-Concentration
+4	I-Reagent
+:	O
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
-ul.	I-Amount
+ul	I-Amount
+.	O
 
 Repeat	B-Action
 Step	O
@@ -139,54 +156,66 @@ Dehydrate	B-Action
 through	O
 ethanol	B-Reagent
 series	O
-continued.
-	O
+continued	O
+.	O
 
 Solution	B-Reagent
-4:	I-Reagent
-100%	B-Concentration
+4	I-Reagent
+:	O
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
-ul.	I-Amount
+ul	I-Amount
+.	O
 
 Repeat	B-Action
 Step	O
-5 Dehydrate	B-Action
-through	O
+5	O
+Dehydrate	B-Action
+through	I-Action
 ethanol	B-Reagent
-series	O
-continued.
-	O
+series	I-Reagent
+continued	O
+.	O
 
 Solution	B-Reagent
-4:	I-Reagent
-100%	B-Concentration
+4	I-Reagent
+:	O
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 500	B-Amount
-ul.	I-Amount
+ul	I-Amount
+.	O
 
 Replace	B-Action
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 with	O
 500ul	B-Amount
 Xylenes	B-Reagent
 for	O
 thirty	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"Aldehyde	B-Location
-Waste"	I-Location
-container.	I-Location
+``	B-Location
+Aldehyde	I-Location
+Waste	I-Location
+''	I-Location
+container	I-Location
+.	B-Action
 
 Repeat	B-Action
 Step	O
-9:	O
+9	O
+:	O
 Remove	B-Action
 Xylenes	B-Reagent
 and	O
@@ -197,20 +226,24 @@ new	B-Modifier
 Xylenes	B-Reagent
 for	O
 thirty	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"Aldehyde	B-Reagent
-Waste"	I-Reagent
-container.	B-Location
+``	B-Reagent
+Aldehyde	I-Reagent
+Waste	I-Reagent
+''	B-Location
+container	I-Location
+.	B-Action
 
 Repeat	B-Action
 Step	O
-9:	O
+9	O
+:	O
 Remove	B-Action
 Xylenes	B-Reagent
 and	O
@@ -221,20 +254,24 @@ new	B-Modifier
 Xylenes	B-Reagent
 for	O
 thirty	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"Aldehyde	B-Reagent
-Waste"	I-Reagent
-container.	B-Location
+``	B-Reagent
+Aldehyde	I-Reagent
+Waste	I-Reagent
+''	B-Location
+container	I-Location
+.	B-Action
 
 Repeat	B-Action
 Step	O
-9:	O
+9	O
+:	O
 Remove	B-Action
 Xylenes	B-Reagent
 and	O
@@ -245,19 +282,21 @@ new	B-Modifier
 Xylenes	B-Reagent
 for	O
 thirty	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Dispose	B-Action
 of	O
 Xylenes	B-Reagent
 in	O
-"Aldehyde	B-Location
-Waste"	I-Location
+``	B-Location
+Aldehyde	I-Location
+Waste	I-Location
+''	I-Location
 container	I-Location
 Paraffin	B-Reagent
-Infiltration.
-	B-Method
+Infiltration	B-Method
+.	B-Action
 
 Transfer	B-Action
 pupae	B-Reagent
@@ -271,8 +310,8 @@ of	O
 Xylenes	B-Reagent
 using	O
 designated	B-Modifier
-paintbrush.
-	B-Device
+paintbrush	B-Device
+.	O
 
 Mark	B-Action
 the	O
@@ -280,34 +319,40 @@ level	O
 of	O
 Xylenes	B-Reagent
 on	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 ~20	B-Modifier
 paraffin	B-Reagent
 chips	I-Reagent
-(paraplast	I-Reagent
-xtra)	I-Reagent
+(	O
+paraplast	B-Reagent
+xtra	I-Reagent
+)	O
 and	O
 melt	B-Action
 in	O
 42	B-Temperature
 degree	I-Temperature
 Celsius	I-Temperature
-incubator.
-	B-Device
+incubator	B-Device
+.	O
 
-(Volume	B-Measure-Type
+(	O
+Volume	B-Measure-Type
 should	O
-double) Leave	B-Action
-overnight.
-	B-Time
+double	O
+)	O
+Leave	B-Action
+overnight	I-Action
+.	B-Time
 
 In	O
 500	B-Amount
 ml	I-Amount
-beaker,	B-Location
+beaker	B-Location
+,	O
 add	B-Action
 melted	B-Modifier
 paraffin	B-Reagent
@@ -319,8 +364,8 @@ degrees	I-Temperature
 celsius	I-Temperature
 for	O
 use	O
-tomorrow.
-	B-Time
+tomorrow	B-Time
+.	O
 
 Remove	B-Action
 Xylenes/Wax	B-Reagent
@@ -329,8 +374,8 @@ place	B-Action
 onto	O
 wax	B-Location
 waste	I-Location
-tray.
-	I-Location
+tray	I-Location
+.	O
 
 Add	B-Action
 a	O
@@ -346,15 +391,16 @@ Celsius	I-Temperature
 to	O
 dilute	B-Action
 residual	B-Modifier
-Xylene,	B-Reagent
+Xylene	B-Reagent
+,	O
 remove	B-Action
 and	O
 place	B-Action
 onto	O
 wax	B-Location
 waste	I-Location
-tray.
-	I-Location
+tray	I-Location
+.	O
 
 Add	B-Action
 melted	B-Modifier
@@ -365,24 +411,25 @@ paraffin	B-Reagent
 incubate	B-Action
 for	O
 1-2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Remove	B-Action
 paraffin	B-Reagent
 and	O
 replace	B-Action
 with	O
-fresh melted	B-Modifier
-56	B-Temperature
-degree	I-Temperature
+fresh	O
+melted	B-Modifier
+56	I-Modifier
+degree	B-Temperature
 Celsius	I-Temperature
-paraffin	B-Reagent
-incubate	B-Action
-for	O
+paraffin	I-Temperature
+incubate	B-Reagent
+for	B-Action
 1-2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	I-Time
 
 Remove	B-Action
 paraffin	B-Reagent
@@ -403,12 +450,12 @@ top	B-Location
 of	O
 the	O
 glass	B-Location
-vial.
-	I-Location
+vial	I-Location
+.	O
 
 Incubate	B-Action
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Make	B-Action
 mold	B-Reagent
@@ -427,8 +474,8 @@ tape	B-Action
 ends	B-Location
 to	O
 prevent	O
-leaks.
-	O
+leaks	O
+.	O
 
 Pre-heat	B-Action
 hot	B-Location
@@ -442,14 +489,15 @@ cover	B-Action
 completely	B-Modifier
 with	O
 tin	B-Seal
-foil.
-	I-Seal
+foil	I-Seal
+.	O
 
 When	O
 hot	B-Location
 block	I-Location
 reaches	O
-temp,	B-Measure-Type
+temp	B-Measure-Type
+,	O
 swirl	B-Action
 pupae	B-Reagent
 in	O
@@ -467,8 +515,8 @@ on	O
 top	B-Location
 of	O
 hot	B-Location
-block.
-	I-Location
+block	I-Location
+.	O
 
 Orient	B-Action
 the	O
@@ -477,8 +525,8 @@ quickly	B-Modifier
 before	O
 the	O
 wax	B-Reagent
-hardens.
-	B-Action
+hardens	B-Action
+.	O
 
 Fill	B-Action
 the	O
@@ -488,8 +536,8 @@ the	O
 boat	B-Location
 with	O
 melted	B-Modifier
-paraffin.
-	B-Reagent
+paraffin	B-Reagent
+.	O
 
 Let	O
 sit	B-Action
@@ -499,8 +547,8 @@ minutes	I-Time
 to	O
 begin	O
 to	O
-solidify.
-	B-Action
+solidify	B-Action
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
@@ -513,8 +561,8 @@ coll	B-Action
 overnight	B-Time
 at	O
 room	B-Temperature
-temp.
-	I-Temperature
+temp	I-Temperature
+.	O
 
 Cut	B-Action
 wax	B-Reagent
@@ -528,8 +576,8 @@ sectioning	B-Action
 using	O
 a	O
 razor	B-Device
-blade.
-	I-Device
+blade	I-Device
+.	O
 
 Mount	B-Action
 blocks	B-Reagent
@@ -541,8 +589,8 @@ paraffin	B-Reagent
 with	O
 heated	B-Modifier
 flat	B-Device
-spatula.
-	I-Device
+spatula	I-Device
+.	O
 
 Cection	B-Action
 blocks	B-Reagent
@@ -565,8 +613,8 @@ warmer	I-Device
 at	O
 42	B-Temperature
 degrees	I-Temperature
-Celsius.
-	I-Temperature
+Celsius	I-Temperature
+.	O
 
 Allow	O
 the	O
@@ -578,8 +626,8 @@ slide	B-Device
 warmer	I-Device
 for	O
 2-5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Remove	B-Action
 water	B-Reagent
@@ -587,8 +635,8 @@ by	O
 wicking	B-Action
 with	O
 a	O
-kimwipe.
-	B-Device
+kimwipe	B-Device
+.	O
 
 Bake	B-Action
 slides	B-Location
@@ -598,8 +646,8 @@ degree	I-Temperature
 Celsius	I-Temperature
 slide	B-Device
 warmer	I-Device
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Hydrate	B-Action
 samples	B-Reagent
@@ -607,11 +655,14 @@ by	O
 placing	B-Action
 in	O
 Xylenes	B-Reagent
-(container	B-Location
-1)	I-Location
+(	O
+container	B-Location
+1	I-Location
+)	O
 for	O
 3	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Hydrate	B-Action
 samples	B-Reagent
@@ -619,57 +670,74 @@ by	O
 placing	B-Action
 in	O
 Xylenes	B-Reagent
-(container	B-Location
-2)	I-Location
+(	O
+container	B-Location
+2	I-Location
+)	O
 for	O
 3	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Hydrate	B-Action
 samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-100%	B-Concentration
-Ethanol (container	B-Reagent
-1)	B-Location
+100	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+(	I-Reagent
+container	B-Location
+1	I-Location
+)	I-Location
 for	O
-3	B-Time
-minutes.	I-Time
+3	O
+minutes	B-Time
+.	I-Time
 
 Hydrate	B-Action
 samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-100%	B-Concentration
-Ethanol (container	B-Reagent
-2)	B-Location
+100	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+(	I-Reagent
+container	B-Location
+2	I-Location
+)	I-Location
 for	O
-3	B-Time
-minutes.	I-Time
+3	O
+minutes	B-Time
+.	I-Time
 
 Hydrate	B-Action
 samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-95%	B-Concentration
+95	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Hydrate	B-Action
 samples	B-Reagent
 by	O
 placing	B-Action
 in	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Rinse	B-Action
 under	O
@@ -678,19 +746,20 @@ tap	I-Reagent
 water	I-Reagent
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	I-Time
 
 Stain	B-Action
 SamplesSubmerge	B-Reagent
 slides	B-Location
 in	O
-Weigert's	B-Reagent
+Weigert	B-Reagent
+'s	I-Reagent
 Hematoxylin	I-Reagent
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Rinse	B-Action
 under	O
@@ -699,8 +768,8 @@ tap	I-Reagent
 water	I-Reagent
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Submerge	B-Action
 in	O
@@ -708,8 +777,8 @@ Pollak	B-Reagent
 Trichrome	I-Reagent
 for	O
 7	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Rinse	B-Action
 in	O
@@ -725,8 +794,8 @@ the	O
 bulk	B-Reagent
 of	I-Reagent
 the	I-Reagent
-stain.
-	I-Reagent
+stain	I-Reagent
+.	O
 
 Submerge	B-Action
 in	O
@@ -735,71 +804,105 @@ distilled	I-Modifier
 water	B-Reagent
 for	O
 10	B-Time
-sec.
-	I-Time
+sec	I-Time
+.	O
 
-Dehydration:Dip slides	B-Method
-into	O
-70%	B-Concentration
-Ethanol	B-Reagent
-3	B-Numerical
-times.	O
+Dehydration	B-Method
+:	O
+Dip	B-Action
+slides	I-Action
+into	B-Location
+70	O
+%	B-Concentration
+Ethanol	I-Concentration
+3	B-Reagent
+times	B-Numerical
+.	O
 
-Dip slides	B-Action
-into	O
-95%	B-Concentration
-Ethanol	B-Reagent
-(container	B-Location
-1)	I-Location
-3	B-Numerical
-times.	O
+Dip	B-Action
+slides	B-Location
+into	I-Location
+95	O
+%	B-Concentration
+Ethanol	I-Concentration
+(	B-Reagent
+container	B-Location
+1	I-Location
+)	I-Location
+3	O
+times	B-Numerical
+.	O
 
-Submerge slides	B-Action
-into	O
-95%	B-Concentration
-Ethanol	B-Reagent
-(container	B-Location
-2) for	I-Location
-3	B-Time
-mins.
-	I-Time
+Submerge	B-Action
+slides	B-Location
+into	I-Location
+95	O
+%	B-Concentration
+Ethanol	I-Concentration
+(	B-Reagent
+container	B-Location
+2	I-Location
+)	I-Location
+for	O
+3	O
+mins	B-Time
+.	I-Time
 
-Submerge slides	B-Action
-into	O
-100%	B-Concentration
-Ethanol	B-Reagent
-(container	B-Location
-1) for	I-Location
-3	B-Time
-mins.
-	I-Time
+Submerge	B-Action
+slides	B-Location
+into	I-Location
+100	B-Concentration
+%	I-Concentration
+Ethanol	I-Concentration
+(	B-Reagent
+container	B-Location
+1	I-Location
+)	I-Location
+for	O
+3	O
+mins	B-Time
+.	I-Time
 
-Submerge slides	B-Action
-into	O
-100%	B-Concentration
-Ethanol	B-Reagent
-(container	B-Location
-2) for	I-Location
-3	B-Time
-mins.
-	I-Time
+Submerge	B-Action
+slides	B-Location
+into	I-Location
+100	B-Concentration
+%	I-Concentration
+Ethanol	I-Concentration
+(	B-Reagent
+container	B-Location
+2	I-Location
+)	I-Location
+for	O
+3	O
+mins	B-Time
+.	I-Time
 
-Submerge slides	B-Action
-into	O
+Submerge	B-Action
+slides	B-Location
+into	I-Location
 Xylenes	B-Reagent
-(container	B-Location
-1) for	I-Location
-3	B-Time
-mins.
-	I-Time
+(	I-Reagent
+container	B-Location
+1	I-Location
+)	I-Location
+for	O
+3	O
+mins	B-Time
+.	I-Time
 
-Submerge slides	B-Action
-into	O
-Xylenes (container	B-Reagent
-2) for	B-Location
-3	B-Time
-mins.
-	I-Time
+Submerge	B-Action
+slides	B-Location
+into	I-Location
+Xylenes	B-Reagent
+(	I-Reagent
+container	I-Reagent
+2	B-Location
+)	I-Location
+for	I-Location
+3	O
+mins	B-Time
+.	I-Time
 
 Remove	B-Action
 slides	B-Location
@@ -818,19 +921,21 @@ Use	B-Action
 78ul	B-Amount
 of	O
 Permount	B-Reagent
-(for	O
+(	O
+for	O
 large	B-Modifier
-coverslip)	B-Location
+coverslip	B-Location
+)	O
 and	O
 apply	B-Action
-coverslip.
-	B-Seal
+coverslip	B-Seal
+.	O
 
 Let	O
 slides	B-Location
 harden	B-Action
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 
 

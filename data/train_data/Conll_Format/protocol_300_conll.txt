@@ -1,8 +1,7 @@
 Transformation	B-Method
 of	O
 supercompetent	B-Reagent
-cells
-	I-Reagent
+cells	I-Reagent
 
 Inoculate	B-Action
 two	B-Numerical
@@ -13,9 +12,12 @@ LB	B-Reagent
 medium	I-Reagent
 with	O
 Invitrogen	B-Reagent
-(InvαF')	I-Reagent
-cells.
-	I-Reagent
+(	I-Reagent
+InvαF	I-Reagent
+'	I-Reagent
+)	I-Reagent
+cells	I-Reagent
+.	O
 
 Also	O
 include	B-Action
@@ -23,8 +25,8 @@ an	O
 uninoculated	B-Modifier
 negative	B-Location
 control	I-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Shake	B-Action
 at	O
@@ -32,8 +34,8 @@ at	O
 rpm	I-Speed
 overnight	B-Time
 at	O
-37˚C.
-	B-Temperature
+37˚C	B-Temperature
+.	O
 
 Inoculate	B-Action
 with	O
@@ -52,8 +54,8 @@ containing	O
 of	O
 sterile	B-Modifier
 SOB	B-Reagent
-media.
-	I-Reagent
+media	I-Reagent
+.	O
 
 Shake	B-Action
 at	O
@@ -61,7 +63,8 @@ at	O
 rpm	I-Speed
 for	O
 4	B-Time
-hours.	I-Time
+hours	I-Time
+.	O
 
 Ice	B-Action
 the	O
@@ -70,45 +73,54 @@ of	O
 cells	B-Reagent
 for	O
 15	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 Pellet	B-Action
 cells	B-Reagent
-(approx	B-Modifier
+(	O
+approx	B-Modifier
 5	B-Time
 min	I-Time
-spin,	B-Action
+spin	B-Action
+,	O
 approx	B-Modifier
 3000	B-Speed
-rpm)	I-Speed
+rpm	I-Speed
+)	O
 and	O
 discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
-each pellet	B-Modifier
-of	O
-cells	B-Reagent
-in	O
-8	B-Amount
-mls	I-Amount
-of	O
+each	B-Modifier
+pellet	B-Reagent
+of	I-Reagent
+cells	I-Reagent
+in	I-Reagent
+8	O
+mls	B-Amount
+of	I-Amount
 cold	B-Modifier
-TFB	B-Reagent
-by	O
+TFB	I-Modifier
+by	B-Reagent
 washing	B-Method
-gently,	B-Modifier
+gently	I-Method
+,	B-Modifier
 then	O
 sucking	B-Action
-up	B-Method
-and	I-Method
-down,	I-Method
+up	I-Action
+and	B-Method
+down	I-Method
+,	I-Method
 with	O
 a	O
 wide-bore	B-Modifier
-10ml	B-Amount
-pipette	B-Location
-tip.	I-Location
+10ml	I-Modifier
+pipette	B-Amount
+tip	B-Location
+.	I-Location
 
 Ice	B-Action
 the	O
@@ -117,20 +129,25 @@ of	O
 cells	B-Reagent
 for	O
 15	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 Pellet	B-Action
 cells	B-Reagent
-(approx	B-Modifier
+(	O
+approx	B-Modifier
 5	B-Time
 min	I-Time
-spin,	B-Action
+spin	B-Action
+,	O
 approx	B-Modifier
 3000	B-Speed
-rpm)	I-Speed
+rpm	I-Speed
+)	O
 and	O
 discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
 one	B-Numerical
@@ -151,8 +168,8 @@ to	O
 resuspend	B-Action
 the	O
 second	B-Modifier
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 You	O
 should	O
@@ -167,8 +184,8 @@ aliquot	B-Reagent
 of	O
 2mls	B-Amount
 cold	B-Modifier
-TFB.
-	B-Reagent
+TFB	B-Reagent
+.	O
 
 Add	B-Action
 105ul	B-Amount
@@ -179,21 +196,23 @@ and	I-Action
 ice	I-Action
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 80ul	B-Amount
 of	O
 100mM	B-Concentration
-DTT,	B-Reagent
-swirl,	B-Action
+DTT	B-Reagent
+,	O
+swirl	B-Action
+,	I-Action
 and	I-Action
 ice	I-Action
 for	O
 10	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 105ul	B-Amount
@@ -204,31 +223,32 @@ and	I-Action
 ice	I-Action
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Aliquot	B-Action
 180ul	B-Amount
 of	O
 cells	B-Reagent
 into	O
-pre-chilled,	B-Modifier
-labelled	I-Modifier
+pre-chilled	B-Modifier
+,	O
+labelled	B-Modifier
 5ml	B-Amount
 polypropylene	B-Location
 growth	I-Location
 tubes	I-Location
 with	O
 loose-cap	B-Seal
-lids.
-	I-Seal
+lids	I-Seal
+.	O
 
 Include	B-Action
 positive	B-Reagent
 and	O
 negative	B-Reagent
-controls.
-	I-Reagent
+controls	I-Reagent
+.	O
 
 Add	B-Action
 ligation	B-Reagent
@@ -236,14 +256,17 @@ DNA	I-Reagent
 to	O
 each	B-Modifier
 sample	B-Reagent
-(in	O
+(	O
+in	O
 ~10ul	B-Modifier
-volume)	B-Measure-Type
+volume	B-Measure-Type
+)	O
 and	O
 ice	B-Action
 for	O
 30	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 Heat	B-Action
 pulse	B-Location
@@ -254,13 +277,14 @@ exactly	B-Modifier
 for	O
 exactly	B-Modifier
 90	B-Time
-secs.
-	I-Time
+secs	I-Time
+.	O
 
 Ice	B-Action
 for	O
 2	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 400ul	B-Amount
@@ -276,7 +300,8 @@ at	O
 37˚C	B-Temperature
 for	O
 10	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 Incubate	B-Action
 a	O
@@ -288,14 +313,17 @@ at	O
 shaking	B-Action
 at	O
 225	B-Speed
-rpm.	I-Speed
+rpm	I-Speed
+.	O
 
 Place	B-Action
 tubes	B-Location
 in	O
 ice	B-Location
 to	O
-halt growth.	B-Action
+halt	B-Action
+growth	I-Action
+.	I-Action
 
 Transfer	B-Action
 the	O
@@ -309,7 +337,8 @@ labelled	B-Modifier
 individual	I-Modifier
 1.5ml	B-Amount
 microfuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Give	B-Action
 the	O
@@ -318,8 +347,10 @@ tubes	I-Location
 a	O
 very	O
 short	O
-(5	B-Time
-sec)	I-Time
+(	O
+5	B-Time
+sec	I-Time
+)	O
 spin	B-Action
 to	O
 very	B-Modifier
@@ -335,7 +366,8 @@ discard	B-Action
 370ul	B-Amount
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Plate	B-Action
 40ul	B-Amount
@@ -348,9 +380,11 @@ LB/	B-Location
 Amp+/	I-Location
 Xgal	I-Location
 plates	I-Location
-and grow overnight at	B-Action
-37˚C
-	B-Temperature
+and	O
+grow	B-Action
+overnight	I-Action
+at	O
+37˚C	O
 
 
 

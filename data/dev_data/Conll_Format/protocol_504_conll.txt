@@ -5,8 +5,7 @@ of	O
 Seawater	B-Reagent
 Samples	I-Reagent
 for	O
-FISH
-	B-Method
+FISH	B-Method
 
 Add	B-Action
 formaldehyde	B-Reagent
@@ -15,29 +14,32 @@ a	O
 final	B-Modifier
 concentration	B-Concentration
 of	I-Concentration
-1-2%	I-Concentration
+1-2	I-Concentration
+%	I-Concentration
 to	O
-filtrate.
-	B-Reagent
+filtrate	B-Reagent
+.	O
 
 Fix	B-Action
 for	O
 12-24	B-Time
 hr	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Setup	B-Action
 frittered	B-Device
 glass	I-Device
 support	I-Device
-(25mm	B-Size
-diameter)	I-Size
+(	O
+25mm	B-Size
+diameter	I-Size
+)	O
 in	O
 filtration	B-Location
-manifold.
-	I-Location
+manifold	I-Location
+.	O
 
 Place	B-Action
 a	O
@@ -46,27 +48,35 @@ of	O
 Milli	B-Reagent
 Q	I-Reagent
 water	I-Reagent
-(~250-500µl)	B-Amount
+(	O
+~250-500µl	B-Amount
+)	O
 on	O
-support,	B-Device
+support	B-Device
+,	O
 float	B-Action
 0.45µm	B-Size
 cellulose	B-Device
 nitrate	I-Device
 support	I-Device
 filter	I-Device
-(25mm	B-Size
-diameter)	I-Size
+(	O
+25mm	B-Size
+diameter	I-Size
+)	O
 on	O
-top,	B-Location
+top	B-Location
+,	O
 turn	B-Action
 on	I-Action
 vacuum	B-Device
-(~	B-Generic-Measure
+(	O
+~	B-Generic-Measure
 5	I-Generic-Measure
 in	I-Generic-Measure
 of	I-Generic-Measure
-Hg)	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
 to	O
 lay	B-Action
 filter	B-Device
@@ -74,8 +84,8 @@ flat	B-Modifier
 with	I-Modifier
 no	I-Modifier
 air	I-Modifier
-bubbles.
-	I-Modifier
+bubbles	I-Modifier
+.	O
 
 Turn	B-Action
 off	I-Action
@@ -84,8 +94,8 @@ and	O
 release	B-Action
 pressure	B-Generic-Measure
 from	O
-chamber.
-	B-Location
+chamber	B-Location
+.	O
 
 Add	B-Action
 another	B-Modifier
@@ -95,22 +105,28 @@ Milli	B-Reagent
 Q	I-Reagent
 to	O
 support	B-Action
-filter,	B-Device
+filter	B-Device
+,	O
 float	B-Action
 0.2µm	B-Size
 polycarbonate	B-Device
 membrane	I-Device
 filter	I-Device
-(25mm	B-Size
-diameter)	I-Size
+(	O
+25mm	B-Size
+diameter	I-Size
+)	O
 on	O
 support	B-Modifier
 filter	B-Device
-(shiny	B-Modifier
+(	O
+shiny	B-Modifier
 side	B-Location
 facing	B-Modifier
-up!).
-	I-Modifier
+up	I-Modifier
+!	O
+)	O
+.	O
 
 Save	B-Action
 filter	B-Device
@@ -118,17 +134,19 @@ separator	I-Device
 sheets	I-Device
 for	O
 storage	B-Method
-later.
-	O
+later	O
+.	O
 
 Turn	B-Action
 on	I-Action
 vacuum	B-Device
-(~	B-Generic-Measure
+(	O
+~	B-Generic-Measure
 5	I-Generic-Measure
 in	I-Generic-Measure
 of	I-Generic-Measure
-Hg)	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
 to	O
 lay	B-Action
 filter	B-Device
@@ -136,13 +154,13 @@ flat	B-Modifier
 with	I-Modifier
 no	I-Modifier
 air	I-Modifier
-bubbles.
-	I-Modifier
+bubbles	I-Modifier
+.	O
 
 Leave	B-Action
 vacuum	B-Device
-on.
-	B-Modifier
+on	B-Modifier
+.	O
 
 Place	B-Action
 filter	B-Device
@@ -150,8 +168,8 @@ tower	I-Device
 on	O
 membrane	B-Location
 and	O
-clamp.
-	B-Location
+clamp	B-Location
+.	O
 
 Filter	B-Action
 1ml	B-Amount
@@ -162,9 +180,12 @@ by	O
 applying	B-Method
 gentle	I-Method
 vacuum	I-Method
-(~5	B-Generic-Measure
+(	O
+~5	B-Generic-Measure
 inch	I-Generic-Measure
-Hg);	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
+;	O
 filter	B-Action
 2	B-Amount
 ml	I-Amount
@@ -175,8 +196,8 @@ sample	I-Reagent
 onto	O
 a	O
 second	B-Modifier
-filter.
-	B-Device
+filter	B-Device
+.	O
 
 The	O
 support	B-Modifier
@@ -186,8 +207,8 @@ be	O
 utilized	B-Action
 for	O
 both	B-Modifier
-samples.
-	B-Reagent
+samples	B-Reagent
+.	O
 
 Remove	B-Action
 filter	B-Device
@@ -200,11 +221,13 @@ it	B-Mention
 on	O
 Kimwipes	B-Reagent
 to	O
-dry.
-	B-Action
+dry	B-Action
+.	O
 
-Cover,	B-Action
-e.g.	O
+Cover	B-Action
+,	O
+e.g	O
+.	O
 with	O
 the	O
 lid	B-Seal
@@ -215,26 +238,28 @@ box	I-Location
 or	O
 a	O
 Petri	B-Location
-dish.
-	I-Location
+dish	I-Location
+.	O
 
 Allow	O
 to	O
-air-dry.
-	B-Action
+air-dry	B-Action
+.	O
 
 Label	B-Action
 membrane	B-Device
 filter	I-Device
 with	O
-pencil;	B-Device
+pencil	B-Device
+;	O
 place	B-Action
 membrane	B-Mention
 filter	I-Mention
 between	B-Modifier
 separator	B-Reagent
 sheets	I-Reagent
-(will	O
+(	O
+will	O
 prevent	B-Action
 the	O
 membrane	B-Device
@@ -248,20 +273,23 @@ or	O
 to	O
 the	O
 Petri	B-Location
-dish).
-	I-Location
+dish	I-Location
+)	O
+.	O
 
 Seal	B-Action
 Petri	B-Location
 dish	I-Location
 with	O
-parafilm,	B-Seal
+parafilm	B-Seal
+,	O
 prevent	B-Action
 dish	B-Location
 from	B-Modifier
 opening	I-Modifier
 with	O
-tape,	B-Seal
+tape	B-Seal
+,	O
 and	O
 put	B-Action
 Petri	B-Mention
@@ -269,14 +297,15 @@ dishes	I-Mention
 into	O
 a	O
 Ziploc	B-Location
-bag.	I-Location
+bag	I-Location
+.	O
 
 Store	B-Action
 at	O
 -20°C	B-Temperature
 until	B-Modifier
-processing.
-	I-Modifier
+processing	I-Modifier
+.	O
 
 Filters	B-Device
 can	O
@@ -291,19 +320,21 @@ apparent	I-Modifier
 loss	I-Modifier
 of	I-Modifier
 hybridization	I-Modifier
-signal.
-	I-Modifier
+signal	I-Modifier
+.	O
 
 Setup	B-Action
 frittered	B-Device
 glass	I-Device
-(47mm	B-Size
-diameter)	I-Size
+(	O
+47mm	B-Size
+diameter	I-Size
+)	O
 support	B-Modifier
 in	O
 filtration	B-Location
-manifold.
-	I-Location
+manifold	I-Location
+.	O
 
 Place	B-Action
 a	O
@@ -312,27 +343,35 @@ of	O
 Milli	B-Reagent
 Q	I-Reagent
 water	I-Reagent
-(~1ml)	B-Amount
+(	O
+~1ml	B-Amount
+)	O
 on	O
-support,	B-Location
+support	B-Location
+,	O
 float	B-Action
 0.45µm	B-Size
 cellulose	B-Device
 nitrate	I-Device
 support	I-Device
 filter	I-Device
-(47mm	B-Size
-diameter)	I-Size
+(	O
+47mm	B-Size
+diameter	I-Size
+)	O
 on	O
-top,	B-Location
+top	B-Location
+,	O
 turn	B-Action
 on	I-Action
 vacuum	B-Device
-(~	B-Generic-Measure
+(	O
+~	B-Generic-Measure
 5	I-Generic-Measure
 in	I-Generic-Measure
 of	I-Generic-Measure
-Hg)	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
 to	O
 lay	B-Action
 filter	B-Device
@@ -340,8 +379,8 @@ flat	B-Modifier
 with	I-Modifier
 no	I-Modifier
 air	I-Modifier
-bubbles.
-	I-Modifier
+bubbles	I-Modifier
+.	O
 
 Turn	B-Action
 off	I-Action
@@ -350,8 +389,8 @@ and	O
 release	B-Action
 pressure	B-Generic-Measure
 from	B-Location
-chamber.
-	I-Location
+chamber	I-Location
+.	O
 
 Add	B-Action
 another	B-Modifier
@@ -361,22 +400,28 @@ Milli	B-Reagent
 Q	I-Reagent
 to	O
 support	B-Location
-filter,	I-Location
+filter	I-Location
+,	O
 float	B-Action
 0.2µm	B-Amount
 polycarbonate	B-Device
 membrane	I-Device
 filter	I-Device
-(47mm	B-Size
-diameter)	I-Size
+(	O
+47mm	B-Size
+diameter	I-Size
+)	O
 on	O
 support	B-Location
 filter	I-Location
-(shiny	I-Location
+(	O
+shiny	B-Location
 side	I-Location
 facing	B-Action
-up!).
-	B-Location
+up	B-Location
+!	O
+)	O
+.	O
 
 Save	B-Action
 filter	B-Reagent
@@ -384,17 +429,19 @@ separator	I-Reagent
 sheets	I-Reagent
 for	O
 storage	B-Method
-later.
-	O
+later	O
+.	O
 
 Turn	B-Action
 on	I-Action
 vacuum	B-Device
-(~	B-Generic-Measure
+(	O
+~	B-Generic-Measure
 5	I-Generic-Measure
 in	I-Generic-Measure
 of	I-Generic-Measure
-Hg)	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
 to	O
 lay	B-Action
 filter	B-Device
@@ -402,13 +449,13 @@ flat	B-Modifier
 with	I-Modifier
 no	I-Modifier
 air	I-Modifier
-bubbles.
-	I-Modifier
+bubbles	I-Modifier
+.	O
 
 Leave	B-Action
 vacuum	B-Device
-on.
-	B-Modifier
+on	B-Modifier
+.	O
 
 Place	B-Action
 filter	B-Location
@@ -416,15 +463,17 @@ tower	I-Location
 on	O
 membrane	B-Location
 and	O
-clamp.
-	B-Action
+clamp	B-Action
+.	O
 
 Filter	B-Action
 appropriate	B-Generic-Measure
 volume	I-Generic-Measure
-(see	O
+(	O
+see	O
 Table	O
-I)	O
+I	O
+)	O
 of	O
 fixed	B-Reagent
 sample	I-Reagent
@@ -432,10 +481,12 @@ by	O
 applying	O
 gentle	B-Method
 vacuum	I-Method
-(~5	B-Generic-Measure
+(	O
+~5	B-Generic-Measure
 inch	I-Generic-Measure
-Hg).
-	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
+.	O
 
 The	O
 support	B-Modifier
@@ -445,13 +496,14 @@ be	O
 utilized	B-Action
 for	O
 several	B-Modifier
-samples.
-	B-Reagent
+samples	B-Reagent
+.	O
 
 After	B-Modifier
 complete	I-Modifier
 sample	I-Modifier
-filtration,	I-Modifier
+filtration	I-Modifier
+,	O
 wash	B-Action
 filter	B-Device
 and	O
@@ -461,12 +513,13 @@ with	O
 ml	I-Amount
 of	O
 sterile	B-Reagent
-H2O;	I-Reagent
+H2O	I-Reagent
+;	O
 remove	B-Action
 H2O	B-Mention
 by	O
-vacuum.
-	B-Device
+vacuum	B-Device
+.	O
 
 Remove	B-Action
 filter	B-Device
@@ -479,12 +532,13 @@ it	B-Mention
 on	O
 Kimwipes	B-Reagent
 to	O
-dry.
-	B-Action
+dry	B-Action
+.	O
 
-Cover,	B-Action
-e.g.
-	O
+Cover	B-Action
+,	O
+e.g	O
+.	O
 
 with	O
 the	O
@@ -496,26 +550,28 @@ box	I-Location
 or	O
 a	O
 Petri	B-Location
-dish.
-	I-Location
+dish	I-Location
+.	O
 
 Allow	O
 to	O
-air-dry.
-	B-Action
+air-dry	B-Action
+.	O
 
 Label	B-Action
 membrane	B-Device
 filter	I-Device
 with	O
-pencil;	B-Device
+pencil	B-Device
+;	O
 place	B-Action
 membrane	B-Device
 filter	I-Device
 between	O
 separator	B-Reagent
 sheets	I-Reagent
-(will	O
+(	O
+will	O
 prevent	B-Action
 the	O
 membrane	B-Device
@@ -529,20 +585,23 @@ or	O
 to	O
 the	O
 Petri	B-Location
-dish).
-	I-Location
+dish	I-Location
+)	O
+.	O
 
 Seal	B-Action
 Petri	B-Location
 dish	I-Location
 with	O
-parafilm,	B-Seal
+parafilm	B-Seal
+,	O
 prevent	B-Action
 dish	B-Location
 from	B-Modifier
 opening	I-Modifier
 with	O
-tape,	B-Seal
+tape	B-Seal
+,	O
 and	O
 put	B-Action
 Petri	B-Location
@@ -550,14 +609,15 @@ dishes	I-Location
 into	O
 a	O
 Ziploc	B-Location
-bag.	I-Location
+bag	I-Location
+.	O
 
 Store	B-Action
 at	O
 -20°C	B-Temperature
 until	B-Modifier
-processing.
-	I-Modifier
+processing	I-Modifier
+.	O
 
 Filters	B-Device
 can	O
@@ -572,8 +632,8 @@ apparent	I-Modifier
 loss	I-Modifier
 of	I-Modifier
 hybridization	I-Modifier
-signal.
-	I-Modifier
+signal	I-Modifier
+.	O
 
 
 

@@ -1,253 +1,160 @@
-T1	Action 27 30	Add
-E1	Action:T1 Acts-on:T3 Site:T5
-T2	Amount 39 42	2ml
+T1	Method 0 26	Embryoid bodies generation
+T2	Action 27 30	Add
 T3	Reagent 31 38	Trypsin
-T4	Action 54 59	shake
-E2	Action:T4 Acts-on:T5
-T5	Location 60 65	plate
-R1	Measure Arg1:T3 Arg2:T2	
-T6	Action 67 70	Add
-E3	Action:T6 Acts-on:T8
-T7	Amount 71 74	8ml
-T8	Reagent 75 96	ES medium without LIF
-R2	Measure Arg1:T8 Arg2:T7	
-T9	Reagent 111 118	trypsin
-T10	Action 100 110	inactivate
-E4	Action:T10 Acts-on:T9
-T11	Action 120 130	Centrifuge
-E5	Action:T11 
-T12	Speed 134 140	500rpm
-T13	Time 145 150	10min
-R3	Setting Arg1:E5 Arg2:T12	
-R4	Setting Arg1:E5 Arg2:T13	
-T14	Action 152 155	Add
-E6	Action:T14 Acts-on:T16 Site:T18
-T15	Amount 156 159	8ml
-T16	Reagent 163 172	EB medium
-T17	Size 181 185	10cm
-T18	Location 186 196	petri-dish
-R5	Measure Arg1:T18 Arg2:T17	
-R6	Measure Arg1:T16 Arg2:T15	
-T19	Action 224 233	resuspend
-E7	Action:T19 Acts-on:T20 Using:T22 Count:T25 Using2:T24 Using3:T138
-T20	Reagent 234 240	pellet
-T21	Amount 244 247	5ml
-T22	Reagent 248 257	EB medium
-T23	Amount 261 264	5ml
-T24	Device 265 272	pipette
-T25	Numerical 290 297	5 times
-R7	Measure Arg1:T22 Arg2:T21	
-T26	Action 299 303	Take
-E8	Action:T26 Acts-on:T28
-T27	Amount 304 309	100ul
-T28	Reagent 310 325	cell suspension
-T29	Action 330 336	dilute
-E9	Action:T29 Acts-on:T28
-T30	Amount 342 345	1ml
-R9	Measure Arg1:T28 Arg2:T27	
-R10	Setting Arg1:E9 Arg2:T30	
-T31	Action 354 358	Take
-E10	Action:T31 Count:T32 Acts-on:T33
-T32	Numerical 359 377	appropriate number
-T33	Reagent 381 386	cells
-T34	Action 391 397	dilute
-E11	Action:T34 Acts-on:T33
-T35	Concentration 403 418	1×10^6 cells/ml
-R11	Setting Arg1:E11 Arg2:T35	
-T36	Action 427 437	re-suspend
-E12	Action:T36 Using:T38 Count:T39 Using2:T140
-T37	Size 441 444	5ml
-T38	Device 445 452	pipette
-T39	Numerical 470 477	4 times
-T40	Action 479 483	Seed
-E13	Action:T40 Acts-on:T42 Site:T43
-T41	Amount 484 487	2ml
-T42	Reagent 491 496	cells
-T43	Location 497 501	dish
-T44	Action 503 507	Save
-E14	Action:T44 Acts-on:T46 Using:T47
-T45	Amount 508 514	2×10^6
-T46	Reagent 515 520	cells
-T47	Method 525 539	RNA extraction
-T48	Action 541 549	Transfer
-E15	Action:T48 Acts-on:T49 Site:T51
-T49	Reagent 550 571	medium containing Ebs
-T50	Size 575 579	50ml
-T51	Location 580 585	tubes
-T52	Action 597 600	add
-E16	Action:T52 Acts-on:T54 Site:T55
-T53	Amount 601 604	5ml
-T54	Reagent 605 611	medium
-T55	Location 615 621	dishes
-T56	Action 638 649	put back in
-E17	Action:T56 Acts-on:T55 Site:T57
-T57	Device 650 659	incubator
-T58	Action 661 665	Sink
-E18	Action:T58 Acts-on:T59 Site:T60 Using:T61
-T59	Reagent 666 671	cells
-T60	Location 675 680	tubes
-T61	Method 681 691	by gravity
-T62	Time 696 700	5min
-T63	Action 702 709	Discard
-E19	Action:T63 Acts-on:T64
-T64	Reagent 710 721	supernatant
-T65	Action 723 726	Add
-E20	Action:T65 Acts-on:T67 Site:T68
-T66	Amount 727 730	5ml
-T67	Reagent 731 737	medium
-T68	Reagent 741 748	pellets
-T69	Reagent 754 761	samples
-T70	Action 750 753	Mix
-E21	Action:T70 Acts-on:T69 Using:T71 Count:T72
-T71	Method 762 774	by inverting
-T72	Numerical 775 786	a few times
-T73	Action 795 805	Distribute
-E22	Action:T73 Acts-on:T74 Site:T75
-T74	Reagent 806 813	samples
-T75	Location 827 833	dishes
-T76	Action 835 842	Prepare
-E23	Action:T76 Acts-on:T77
-T77	Reagent 843 872	gelatin coated chamber slides
-T78	Action 883 886	Add
-E24	Action:T78 Acts-on:T80 Site:T81
-T79	Amount 887 892	1.5ml
-T80	Reagent 896 902	medium
-T81	Location 913 917	well
-T82	Action 919 927	Transfer
-E25	Action:T82 Acts-on:T85 Site:T87
-T83	Amount 928 934	1 dish
-T84	Modifier 938 942	day4
-T85	Reagent 943 946	Ebs
-T86	Size 952 956	15ml
-T87	Location 957 961	tube
-T88	Reagent 972 975	Ebs
-T89	Location 998 1002	tube
-T90	Method 1003 1013	by gravity
-T91	Time 1018 1022	5min
-T92	Action 976 980	sink
-E26	Action:T92 Acts-on:T88 Using:T90 Site:T145
-T93	Action 1024 1031	Discard
-E27	Action:T93 Acts-on:T94
-T94	Reagent 1032 1043	supernatant
-T95	Action 1045 1048	Add
-E28	Action:T95 Acts-on:T97 Site:T98
-T96	Amount 1049 1053	10ml
-T97	Reagent 1054 1063	EB medium
-T98	Reagent 1069 1076	pellets
-T99	Action 1078 1082	Seed
-E29	Action:T99 Using:T101 Site:T102
-T100	Amount 1083 1088	0.5ml
-T101	Reagent 1092 1094	EB
-T102	Location 1103 1107	well
-T103	Action 1109 1115	Change
-E30	Action:T103 Acts-on:T104
-T104	Reagent 1116 1122	medium
-T105	Action 1133 1137	suck
-E31	Action:T105 Acts-on:T106
-T106	Reagent 1138 1149	supernatant
-T107	Action 1151 1158	replace
-E32	Action:T107 Acts-on2:T106 Using:T108
-T108	Reagent 1170 1179	EB medium
-T109	Modifier 1164 1169	fresh
-T110	Action 1181 1185	Take
-E33	Action:T110 Count:T111 Acts-on:T112
-T111	Numerical 1186 1187	2
-T112	Location 1188 1193	wells
-T113	Action 1234 1238	Suck
-E34	Action:T113 Acts-on:T114
-T114	Reagent 1243 1249	medium
-T115	Action 1261 1264	Fix
-E35	Action:T115 Using:T117
-T116	Concentration 1270 1272	4%
-T117	Reagent 1273 1276	PFA
-T118	Time 1281 1286	30min
-T119	Temperature 1288 1290	RT
-T121	Action 1303 1307	Wash
-E36	Action:T121 Using:T123 Acts-on:T159
-T122	Amount 1316 1319	2ml
-T123	Reagent 1323 1326	PBS
-T124	Action 1328 1332	Wash
-E37	Action:T124 Using:T126 Acts-on:T160
-T125	Amount 1341 1344	2ml
-T126	Reagent 1348 1351	PBS
-T127	Action 1353 1357	Wash
-E38	Action:T127 Using:T129 Acts-on:T161
-T128	Amount 1366 1369	2ml
-T129	Reagent 1373 1376	PBS
-T130	Action 1378 1383	Store
-E39	Action:T130 Acts-on:T131 Site:T132
-T131	Reagent 1384 1391	samples
-T132	Reagent 1395 1398	PBS
-T133	Temperature 1402 1405	4°C
-R12	Measure Arg1:T38 Arg2:T37	
-R13	Measure Arg1:T42 Arg2:T41	
-R14	Measure Arg1:T46 Arg2:T45	
-R15	Measure Arg1:T51 Arg2:T50	
-R16	Measure Arg1:T54 Arg2:T53	
-R17	Setting Arg1:E18 Arg2:T62	
-R18	Measure Arg1:T67 Arg2:T66	
-R19	Measure Arg1:T80 Arg2:T79	
-R20	Mod-Link Arg1:T85 Arg2:T84	
-R21	Measure Arg1:T85 Arg2:T83	
-R22	Measure Arg1:T87 Arg2:T86	
-R23	Setting Arg1:E26 Arg2:T91	
-R24	Measure Arg1:T97 Arg2:T96	
-R25	Measure Arg1:T101 Arg2:T100	
-R26	Mod-Link Arg1:T108 Arg2:T109	
-R27	Measure Arg1:T117 Arg2:T116	
-R28	Setting Arg1:E35 Arg2:T118	
-R29	Setting Arg1:E35 Arg2:T119	
-R30	Measure Arg1:T123 Arg2:T122	
-R31	Measure Arg1:T126 Arg2:T125	
-R32	Measure Arg1:T129 Arg2:T128	
-R33	Setting Arg1:E39 Arg2:T133	
-T134	Modifier 47 53	gently
-R34	Mod-Link Arg1:E2 Arg2:T134	
-T135	Modifier 176 180	each
-R35	Mod-Link Arg1:T18 Arg2:T135	
-T136	Method 203 215	centrifuging
-T137	Modifier 217 223	Gently
-R36	Mod-Link Arg1:E7 Arg2:T137	
-T138	Method 274 285	up and down
-R8	Setting Arg1:T24 Arg2:T23	
-T139	Modifier 420 426	Gently
-R37	Mod-Link Arg1:E12 Arg2:T139	
-T140	Method 454 465	up and down
-T141	Modifier 587 596	Carefully
-R38	Mod-Link Arg1:E16 Arg2:T141	
-T142	Modifier 622 633	immediately
-R39	Mod-Link Arg1:E16 Arg2:T142	
-T143	Modifier 817 826	different
-R40	Mod-Link Arg1:T75 Arg2:T143	
-T144	Modifier 908 912	each
-R41	Mod-Link Arg1:T81 Arg2:T144	
-T145	Location 988 994	bottom
-R42	Meronym Arg1:T145 Arg2:T89	
-T146	Modifier 1098 1102	each
-R43	Mod-Link Arg1:T102 Arg2:T146	
-T147	Modifier 1250 1259	carefully
-R44	Mod-Link Arg1:E34 Arg2:T147	
-T120	Method 0 26	Embryoid bodies generation
-T148	Action 347 352	Count
-E40	Action:T148 
-T149	Modifier 787 793	gently
-R45	Mod-Link Arg1:E21 Arg2:T149	
-T150	Modifier 874 880	2 well
-R46	Mod-Link Arg1:T77 Arg2:T150	
-T151	Action 963 967	Wait
-E41	Action:T151 Acts-on:T88
-T152	Modifier 1123 1131	everyday
-R47	Mod-Link Arg1:E30 Arg2:T152	
-T153	Modifier 1198 1202	each
-T154	Reagent 1203 1208	group
-T155	Time 1212 1216	day6
-T156	Time 1218 1222	day8
-T157	Time 1227 1232	day12
-R48	Mod-Link Arg1:T154 Arg2:T153	
-R49	Setting Arg1:E33 Arg2:T155	
-R50	Setting Arg1:E33 Arg2:T156	
-R51	Setting Arg1:E33 Arg2:T157	
-T158	Location 1293 1300	in hood
-T159	Reagent 1308 1310	#1
-T160	Reagent 1333 1335	#2
-T161	Reagent 1358 1360	#3
+T4	Amount 39 42	2ml
+T5	Modifier 47 53	gently
+T6	Action 54 59	shake
+T7	Location 60 65	plate
+T8	Action 67 70	Add
+T9	Amount 71 74	8ml
+T10	Reagent 75 96	ES medium without LIF
+T11	Action 100 110	inactivate
+T12	Reagent 111 118	trypsin
+T13	Action 120 130	Centrifuge
+T14	Speed 134 144	500rpm for
+T15	Time 145 151	10min.
+T16	Action 152 155	Add
+T17	Amount 156 159	8ml
+T18	Reagent 163 172	EB medium
+T19	Modifier 176 180	each
+T20	Size 181 185	10cm
+T21	Location 186 196	petri-dish
+T22	Method 203 215	centrifuging
+T23	Modifier 217 223	Gently
+T24	Action 224 233	resuspend
+T25	Reagent 234 240	pellet
+T26	Amount 244 247	5ml
+T27	Reagent 248 257	EB medium
+T28	Amount 261 264	5ml
+T29	Device 265 272	pipette
+T30	Method 274 285	up and down
+T31	Numerical 290 297	5 times
+T32	Action 299 303	Take
+T33	Amount 304 309	100ul
+T34	Reagent 310 325	cell suspension
+T35	Action 330 336	dilute
+T36	Amount 342 345	1ml
+T37	Action 347 352	Count
+T38	Action 354 358	Take
+T39	Numerical 359 377	appropriate number
+T40	Reagent 381 386	cells
+T41	Action 391 397	dilute
+T42	Concentration 403 418	1×10^6 cells/ml
+T43	Modifier 420 426	Gently
+T44	Action 427 437	re-suspend
+T45	Size 441 444	5ml
+T46	Device 445 452	pipette
+T47	Method 454 465	up and down
+T48	Numerical 470 477	4 times
+T49	Action 479 483	Seed
+T50	Amount 484 487	2ml
+T51	Reagent 491 501	cells/dish
+T52	Action 503 507	Save
+T53	Amount 508 514	2×10^6
+T54	Reagent 515 520	cells
+T55	Method 525 539	RNA extraction
+T56	Action 541 549	Transfer
+T57	Reagent 550 571	medium containing Ebs
+T58	Size 575 579	50ml
+T59	Location 580 585	tubes
+T60	Modifier 587 596	Carefully
+T61	Action 597 600	add
+T62	Amount 601 604	5ml
+T63	Reagent 605 611	medium
+T64	Location 615 621	dishes
+T65	Modifier 622 633	immediately
+T66	Action 638 649	put back in
+T67	Device 650 659	incubator
+T68	Action 661 665	Sink
+T69	Reagent 666 671	cells
+T70	Location 675 680	tubes
+T71	Method 681 691	by gravity
+T72	Time 696 700	5min
+T73	Action 702 709	Discard
+T74	Reagent 710 721	supernatant
+T75	Action 723 726	Add
+T76	Amount 727 730	5ml
+T77	Reagent 731 737	medium
+T78	Reagent 741 748	pellets
+T79	Action 750 753	Mix
+T80	Reagent 754 761	samples
+T81	Method 762 774	by inverting
+T82	Numerical 775 786	a few times
+T83	Modifier 787 793	gently
+T84	Action 795 805	Distribute
+T85	Reagent 806 813	samples
+T86	Modifier 817 826	different
+T87	Location 827 833	dishes
+T88	Action 835 842	Prepare
+T89	Reagent 843 872	gelatin coated chamber slides
+T90	Modifier 874 880	2 well
+T91	Action 883 886	Add
+T92	Amount 887 892	1.5ml
+T93	Reagent 896 902	medium
+T94	Modifier 908 912	each
+T95	Location 913 917	well
+T96	Action 919 927	Transfer
+T97	Amount 928 934	1 dish
+T98	Modifier 938 942	day4
+T99	Reagent 943 946	Ebs
+T100	Size 952 956	15ml
+T101	Location 957 961	tube
+T102	Action 963 967	Wait
+T103	Reagent 972 975	Ebs
+T104	Action 976 980	sink
+T105	Location 988 994	bottom
+T106	Location 998 1002	tube
+T107	Method 1003 1013	by gravity
+T108	Time 1018 1022	5min
+T109	Action 1024 1031	Discard
+T110	Reagent 1032 1043	supernatant
+T111	Action 1045 1048	Add
+T112	Amount 1049 1053	10ml
+T113	Reagent 1054 1063	EB medium
+T114	Reagent 1069 1076	pellets
+T115	Action 1078 1082	Seed
+T116	Amount 1083 1088	0.5ml
+T117	Reagent 1092 1094	EB
+T118	Modifier 1098 1102	each
+T119	Location 1103 1107	well
+T120	Action 1109 1115	Change
+T121	Reagent 1116 1122	medium
+T122	Modifier 1123 1131	everyday
+T123	Action 1134 1138	suck
+T124	Reagent 1139 1150	supernatant
+T125	Action 1152 1159	replace
+T126	Modifier 1165 1170	fresh
+T127	Reagent 1171 1180	EB medium
+T128	Action 1182 1186	Take
+T129	Numerical 1187 1188	2
+T130	Location 1189 1194	wells
+T131	Modifier 1199 1203	each
+T132	Reagent 1204 1209	group
+T133	Time 1213 1217	day6
+T134	Time 1219 1223	day8
+T135	Time 1228 1233	day12
+T136	Action 1235 1239	Suck
+T137	Reagent 1244 1250	medium
+T138	Modifier 1251 1260	carefully
+T139	Action 1262 1265	Fix
+T140	Concentration 1271 1274	4 %
+T141	Reagent 1275 1278	PFA
+T142	Time 1283 1288	30min
+T143	Temperature 1291 1293	RT
+T144	Location 1296 1303	in hood
+T145	Action 1306 1310	Wash
+T146	Reagent 1311 1314	# 1
+T147	Amount 1320 1323	2ml
+T148	Reagent 1327 1330	PBS
+T149	Action 1332 1336	Wash
+T150	Reagent 1337 1340	# 2
+T151	Amount 1346 1349	2ml
+T152	Reagent 1353 1356	PBS
+T153	Action 1358 1362	Wash
+T154	Reagent 1363 1366	# 3
+T155	Amount 1372 1375	2ml
+T156	Reagent 1379 1382	PBS
+T157	Action 1384 1389	Store
+T158	Reagent 1390 1397	samples
+T159	Reagent 1401 1404	PBS
+T160	Temperature 1408 1411	4°C

@@ -9,15 +9,15 @@ using	O
 flow	B-Method
 cytometry-based	I-Method
 viral	I-Method
-tagging
-	I-Method
+tagging	I-Method
 
 Prepare	B-Action
 SNAX	B-Reagent
 medium	I-Reagent
 according	O
 to	O
-directions6,	B-Method
+directions6	B-Method
+,	O
 but	O
 use	O
 15N	B-Concentration
@@ -28,7 +28,8 @@ will	O
 provide	B-Action
 the	O
 heavy	B-Reagent
-isotope.	I-Reagent
+isotope	I-Reagent
+.	O
 
 Grow	B-Action
 cyanobacteria	B-Reagent
@@ -36,15 +37,17 @@ in	O
 the	O
 medium	B-Reagent
 with	O
-heavy nitrogen	B-Reagent
-and	O
+heavy	B-Reagent
+nitrogen	I-Reagent
+and	I-Reagent
 transfer	B-Action
-at	B-Modifier
-least	I-Modifier
-3	B-Numerical
-times	O
+at	I-Action
+least	B-Modifier
+3	I-Modifier
+times	B-Numerical
 before	B-Modifier
-use.	I-Modifier
+use	I-Modifier
+.	I-Modifier
 
 Extract	B-Action
 DNA	B-Reagent
@@ -56,7 +59,8 @@ heavy	I-Reagent
 nitrogen	I-Reagent
 using	O
 standard	B-Method
-methods.	I-Method
+methods	I-Method
+.	O
 
 Quantify	B-Action
 the	O
@@ -65,8 +69,12 @@ using	O
 Quant-iT	B-Reagent
 Pico	I-Reagent
 Green	I-Reagent
-(Invitrogen	O
-#P7589).	O
+(	O
+Invitrogen	O
+#	O
+P7589	O
+)	O
+.	O
 
 Use	B-Action
 at	B-Modifier
@@ -78,12 +86,14 @@ DNA	B-Reagent
 for	O
 density	B-Method
 gradient	I-Method
-centrifugation.	I-Method
+centrifugation	I-Method
+.	O
 
 For	O
 density	B-Method
 gradient	I-Method
-centrifugation,	I-Method
+centrifugation	I-Method
+,	O
 a	O
 Beckman	B-Device
 VTi	I-Device
@@ -98,9 +108,12 @@ mm	I-Size
 OptiSeal	B-Location
 polyallomer	I-Location
 tubes	I-Location
-(4.9	B-Amount
+(	O
+4.9	B-Amount
 ml	I-Amount
-capacity).	O
+capacity	O
+)	O
+.	O
 
 Mix	B-Action
 the	O
@@ -108,16 +121,23 @@ DNA	B-Reagent
 with	O
 TE	B-Reagent
 buffer	I-Reagent
-(10mM	B-Concentration
-Tris,	B-Reagent
+(	O
+10mM	B-Concentration
+Tris	B-Reagent
+,	O
 1mM	B-Concentration
-EDTA,	B-Reagent
-pH7.6) to	B-pH
+EDTA	B-Reagent
+,	O
+pH7.6	B-pH
+)	O
+to	O
 a	O
 final	B-Modifier
-volume	B-Amount
-of 0.9	I-Amount
-ml.	I-Amount
+volume	I-Modifier
+of	B-Amount
+0.9	I-Amount
+ml	I-Amount
+.	I-Amount
 
 Mix	B-Action
 the	O
@@ -133,7 +153,8 @@ to	O
 a	O
 density	B-Measure-Type
 of	O
-p1.8.	B-Generic-Measure
+p1.8	B-Generic-Measure
+.	O
 
 Dispense	B-Action
 4.9	B-Amount
@@ -153,14 +174,17 @@ plug	B-Action
 with	O
 the	O
 black	B-Seal
-caps.	I-Seal
+caps	I-Seal
+.	O
 
 Centrifuge	B-Action
 at	O
 44,000	B-Speed
 rpm	I-Speed
-(=184,678.5	I-Speed
-g)	I-Speed
+(	O
+=184,678.5	B-Speed
+g	I-Speed
+)	O
 in	O
 a	O
 Beckman	B-Device
@@ -172,7 +196,8 @@ for	O
 48	B-Time
 hr	I-Time
 at	O
-18°C.	B-Temperature
+18°C	B-Temperature
+.	O
 
 Collect	B-Action
 0.2-0.25	B-Amount
@@ -183,7 +208,8 @@ measure	B-Action
 the	O
 density	B-Measure-Type
 of	O
-each.	B-Modifier
+each	B-Modifier
+.	O
 
 Calculate	B-Action
 amount	B-Amount
@@ -196,9 +222,11 @@ using	O
 Quant-iT	B-Reagent
 Pico	I-Reagent
 Green	I-Reagent
-(perform	B-Action
+(	O
+perform	B-Action
 in	B-Modifier
-duplicate)	I-Modifier
+duplicate	I-Modifier
+)	O
 to	O
 determine	B-Action
 the	O
@@ -207,7 +235,8 @@ of	O
 the	O
 fractions	B-Reagent
 with	O
-DNA.	B-Reagent
+DNA	B-Reagent
+.	O
 
 Estimate	B-Action
 the	O
@@ -215,7 +244,8 @@ ratio	B-Measure-Type
 of	O
 isotopic	B-Reagent
 labeled	I-Reagent
-cells.	I-Reagent
+cells	I-Reagent
+.	O
 
 Thaw	B-Action
 10,000x	B-Concentration
@@ -228,7 +258,8 @@ the	O
 dark	B-Location
 and	O
 vortex	B-Action
-vigorously.	B-Modifier
+vigorously	B-Modifier
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -237,12 +268,15 @@ min	I-Time
 at	O
 3000	B-Speed
 x	I-Speed
-g.	I-Speed
+g	I-Speed
+.	O
 
 Dilute	B-Action
 1:100	B-Generic-Measure
-(to	O
-100x)	B-Numerical
+(	O
+to	O
+100x	B-Numerical
+)	O
 with	O
 TE	B-Reagent
 buffer	I-Reagent
@@ -251,7 +285,8 @@ then	O
 filter	B-Action
 through	O
 0.02µm	B-Amount
-filter.	B-Device
+filter	B-Device
+.	O
 
 Aliquot	B-Action
 into	O
@@ -263,7 +298,8 @@ and	O
 store	B-Action
 frozen	B-Modifier
 at	O
--20°C.	B-Temperature
+-20°C	B-Temperature
+.	O
 
 Thaw	B-Action
 prepared	B-Modifier
@@ -271,10 +307,12 @@ prepared	B-Modifier
 SYBR	B-Reagent
 Gold	I-Reagent
 the	O
-dark,	B-Location
+dark	B-Location
+,	O
 one	B-Numerical
 time	O
-only.	B-Modifier
+only	B-Modifier
+.	O
 
 Vortex	B-Action
 thawed	B-Modifier
@@ -285,17 +323,20 @@ before	I-Modifier
 using	I-Modifier
 to	O
 stain	B-Action
-viruses.	B-Reagent
+viruses	B-Reagent
+.	O
 
 If	B-Modifier
 using	I-Modifier
 CsCl-purified	I-Modifier
-virus,	I-Modifier
+virus	I-Modifier
+,	O
 dialyze	B-Action
 in	O
 modified	B-Modifier
 MTN	B-Reagent
-buffer. 	I-Reagent
+buffer	I-Reagent
+.	O
 
 Stain	B-Action
 the	O
@@ -322,12 +363,14 @@ a	O
 concentrated	B-Modifier
 viral	B-Reagent
 stock	I-Reagent
-(equal	B-Modifier
+(	O
+equal	B-Modifier
 to	I-Modifier
 or	I-Modifier
 greater	I-Modifier
 than	I-Modifier
-E+09)	B-Numerical
+E+09	B-Numerical
+)	O
 or	O
 1x	B-Concentration
 for	O
@@ -335,7 +378,11 @@ less	B-Modifier
 concentrated	I-Modifier
 viral	B-Reagent
 stock	I-Reagent
-(<E+09).	B-Numerical
+(	O
+<	B-Numerical
+E+09	I-Numerical
+)	O
+.	O
 
 Prepare	B-Action
 a	O
@@ -352,7 +399,8 @@ SYBR	B-Reagent
 Gold	I-Reagent
 is	O
 washed	B-Method
-away. 	I-Method
+away	I-Method
+.	O
 
 Vortex	B-Action
 the	O
@@ -367,7 +415,8 @@ mix	B-Action
 the	O
 dye	B-Reagent
 and	O
-viruses.	B-Reagent
+viruses	B-Reagent
+.	O
 
 Incubate	B-Action
 10	B-Time
@@ -377,7 +426,8 @@ the	O
 dark	B-Location
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Heat	B-Action
 at	O
@@ -388,14 +438,18 @@ minutes	I-Time
 inside	O
 hybridization	B-Device
 oven	I-Device
-(not	B-Modifier
+(	O
+not	B-Modifier
 heat	B-Device
-block),	I-Device
+block	I-Device
+)	O
+,	O
 inverting	B-Action
 tubes	B-Location
 every	B-Modifier
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 using	O
 foil	B-Seal
 to	O
@@ -404,7 +458,8 @@ the	O
 sample	B-Reagent
 in	O
 the	O
-dark.	B-Location
+dark	B-Location
+.	O
 
 Cool	B-Action
 down	I-Action
@@ -418,25 +473,33 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Prepare	B-Action
 0.02µm	B-Amount
 filtered	B-Modifier
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 bovine	B-Reagent
 serum	I-Reagent
 albumin	I-Reagent
-(BSA;	I-Reagent
+(	O
+BSA	B-Reagent
+;	O
 equal	O
 to	O
 10	B-Concentration
-mg/ml)	I-Concentration
+mg/ml	I-Concentration
+)	O
 in	O
 phosphate	B-Reagent
 buffered	I-Reagent
 saline	I-Reagent
-(PBS).	I-Reagent
+(	O
+PBS	B-Reagent
+)	O
+.	O
 
 Wash	B-Action
 Nanosep	B-Modifier
@@ -446,52 +509,67 @@ by	O
 adding	B-Action
 500µl	B-Amount
 MTN	B-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 let	O
 stand	B-Action
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Spin	B-Action
 until	O
 almost	B-Modifier
 dry	O
-(5,000	B-Speed
+(	O
+5,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 10	B-Time
-min).	I-Time
+min	I-Time
+)	O
+.	O
 
 Discard	B-Action
 the	O
-flow-through. 	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Add	B-Action
 500µl	B-Amount
 0.02µm	B-Modifier
 filtered	I-Modifier
-1%	B-Concentration
-BSA,	B-Reagent
+1	B-Concentration
+%	I-Concentration
+BSA	B-Reagent
+,	O
 let	B-Action
 stand	I-Action
 1hr	B-Time
 at	O
 room	B-Temperature
-temperature. 	I-Temperature
+temperature	I-Temperature
+.	O
 
 Spin	B-Action
 until	B-Modifier
 almost	I-Modifier
 dry	I-Modifier
-(5,000	B-Speed
+(	O
+5,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 15-30	B-Time
-min). 	I-Time
+min	I-Time
+)	O
+.	O
 
 Discard	B-Action
 the	O
-flow-through.	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Wash	B-Action
 with	O
@@ -499,7 +577,8 @@ with	O
 0.02µm	B-Modifier
 filtered	I-Modifier
 MTN	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Concentrate	B-Action
 the	O
@@ -523,14 +602,17 @@ x	I-Speed
 g	I-Speed
 for	O
 15-30	B-Time
-min,	I-Time
+min	I-Time
+,	O
 at	O
 10°C	B-Temperature
 to	O
 get	O
 to	O
-<50µl	B-Amount
-volume.	O
+<	B-Amount
+50µl	I-Amount
+volume	O
+.	O
 
 Wash	B-Action
 the	O
@@ -546,17 +628,23 @@ with	O
 0.02µm	B-Modifier
 filtered	I-Modifier
 MTN	B-Reagent
-buffer. 	I-Reagent
+buffer	I-Reagent
+.	O
 
 Repeat	B-Action
 spin	I-Action
 as	O
 in	O
 step	B-Method
-#36.	I-Method
+#	I-Method
+36	I-Method
+.	O
 
 Repeat	B-Action
-#37&38	B-Method
+#	B-Method
+37	I-Method
+&	I-Method
+38	I-Method
 for	O
 a	O
 total	O
@@ -569,9 +657,11 @@ to	O
 bring	B-Action
 volume	I-Action
 to	O
-<50µl	B-Amount
+<	B-Amount
+50µl	I-Amount
 each	B-Modifier
-time.	I-Modifier
+time	I-Modifier
+.	O
 
 Transfer	B-Action
 the	O
@@ -587,14 +677,16 @@ Nanosep	B-Device
 into	O
 fresh	B-Modifier
 collection	B-Location
-tubes.	I-Location
+tubes	I-Location
+.	O
 
 Keep	B-Action
 the	O
 collection	B-Location
 tubes	I-Location
 on	O
-ice.	B-Location
+ice	B-Location
+.	O
 
 Add	B-Action
 50µl	B-Amount
@@ -616,7 +708,8 @@ of	O
 50W	B-Generic-Measure
 at	O
 42	B-Generic-Measure
-kHz.	I-Generic-Measure
+kHz	I-Generic-Measure
+.	O
 
 Pipet	B-Action
 up	B-Method
@@ -652,7 +745,8 @@ of	O
 washed	B-Modifier
 viruses	B-Reagent
 on	O
-ice.	B-Location
+ice	B-Location
+.	O
 
 Count	B-Action
 the	O
@@ -669,7 +763,8 @@ amount	B-Amount
 of	O
 each	B-Mention
 to	O
-add.	B-Action
+add	B-Action
+.	O
 
 Use	O
 at	B-Modifier
@@ -680,7 +775,8 @@ of	O
 cells	B-Reagent
 at	O
 106	B-Concentration
-cells/ml,	I-Concentration
+cells/ml	I-Concentration
+,	O
 mix	B-Action
 with	O
 appropriate	B-Modifier
@@ -697,7 +793,8 @@ to	O
 start	B-Action
 detecting	I-Action
 VT	B-Measure-Type
-signal.	I-Measure-Type
+signal	I-Measure-Type
+.	O
 
 Prepare	B-Action
 the	O
@@ -726,8 +823,8 @@ so	O
 that	O
 noise	B-Method
 is	I-Method
-minimized.
-	I-Method
+minimized	I-Method
+.	O
 
 Examine	B-Action
 the	O
@@ -756,7 +853,8 @@ plot	I-Measure-Type
 of	O
 520nm	B-Generic-Measure
 vs	O
-scatter.	B-Measure-Type
+scatter	B-Measure-Type
+.	O
 
 Use	B-Action
 fluorescent	B-Reagent
@@ -764,13 +862,15 @@ polystyrene	I-Reagent
 FLOW	I-Reagent
 CheckTM	I-Reagent
 microspheres	I-Reagent
-(final	B-Modifier
+(	O
+final	B-Modifier
 concentration	B-Concentration
 is	I-Concentration
 1:1	I-Concentration
 to	O
 host	B-Reagent
-cells)	I-Reagent
+cells	I-Reagent
+)	O
 as	O
 an	O
 internal	B-Device
@@ -778,7 +878,8 @@ standard	I-Device
 for	O
 counting	B-Action
 and	O
-sorting.	B-Action
+sorting	B-Action
+.	O
 
 Mix	B-Action
 the	O
@@ -786,7 +887,8 @@ host	B-Reagent
 cells	I-Reagent
 with	O
 the	O
-SYBR-Blank,	B-Reagent
+SYBR-Blank	B-Reagent
+,	O
 for	O
 10	B-Time
 min	I-Time
@@ -794,7 +896,8 @@ and	O
 mix	B-Action
 the	O
 tube	B-Location
-gently.	B-Modifier
+gently	B-Modifier
+.	O
 
 Mix	B-Action
 the	O
@@ -815,19 +918,22 @@ examine	B-Action
 after	O
 appropriate	B-Modifier
 incubation	B-Time
-times.	I-Time
+times	I-Time
+.	O
 
 Sort	B-Action
 and	O
 collect	B-Action
 the	O
 viral-tagged	B-Modifier
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 which	O
 are	O
 of	O
 increased	B-Generic-Measure
-fluorescence.	I-Generic-Measure
+fluorescence	I-Generic-Measure
+.	O
 
 Trigger	B-Action
 on	B-Modifier
@@ -837,8 +943,8 @@ to	O
 only	B-Modifier
 detect	B-Action
 cell-sized	B-Modifier
-particles. 
-	B-Reagent
+particles	B-Reagent
+.	O
 
 Sorted	B-Modifier
 viral-tagged	I-Modifier
@@ -853,25 +959,34 @@ and	O
 separation	B-Method
 of	O
 15N-labeled	B-Modifier
-“heavy”	I-Modifier
+“	I-Modifier
+heavy	I-Modifier
+”	I-Modifier
 host	B-Reagent
 DNA	I-Reagent
 from	O
 non-labeled	B-Modifier
-“light”	I-Modifier
+“	I-Modifier
+light	I-Modifier
+”	I-Modifier
 viral	B-Reagent
 DNA	I-Reagent
 by	O
 CsCl	B-Method
 density	I-Method
 ultracentrifugation	I-Method
-(See	O
-"Cesium	B-Method
+(	O
+See	O
+``	B-Method
+Cesium	I-Method
 Chloride	I-Method
 Virus	I-Method
 Purification	I-Method
 and	I-Method
-Dialysis").	I-Method
+Dialysis	I-Method
+''	O
+)	O
+.	B-Modifier
 
 Light	B-Modifier
 DNA	B-Reagent
@@ -888,8 +1003,7 @@ Titanium	I-Reagent
 and	O
 Illumina	B-Reagent
 HiSeq	I-Reagent
-2000
-	I-Reagent
+2000	I-Reagent
 
 
 

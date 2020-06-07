@@ -2,45 +2,52 @@ Building	O
 an	O
 HPC	O
 blast	O
-pipeline
-	O
+pipeline	O
 
 Login	B-Action
 to	O
 the	O
 hpc	B-Location
-(at	O
+(	O
+at	O
 the	O
 University	O
 of	O
-Arizona)	O
-with your user	B-Reagent
+Arizona	O
+)	O
+with	O
+your	O
+user	B-Reagent
 name	I-Reagent
-Create	B-Action
-a	O
-directory	B-Reagent
-for	O
+Create	I-Reagent
+a	B-Action
+directory	I-Action
+for	B-Reagent
 the	O
 pipeline	O
-Go	B-Action
-to	O
+Go	O
+to	B-Action
 the	O
 hpc-blast	B-Location
 directory	I-Location
-and	O
+and	I-Location
 create	B-Action
-sub	B-Reagent
-directories	I-Reagent
-to	O
+sub	I-Action
+directories	B-Reagent
+to	I-Reagent
 hold	O
-std-err,	O
-std-out,	O
-data,	O
-blastdb,	O
+std-err	O
+,	O
+std-out	O
+,	O
+data	O
+,	O
+blastdb	O
+,	O
 blast-results	O
 and	O
-scripts.
-	O
+scripts	O
+.	O
 
 Go	B-Action
 to	O
@@ -51,8 +58,8 @@ and	O
 create	B-Action
 the	O
 blast	B-Reagent
-database.
-	I-Reagent
+database	I-Reagent
+.	O
 
 Copy	B-Action
 the	O
@@ -60,8 +67,8 @@ input	B-Reagent
 files	I-Reagent
 over	O
 from	O
-iPlant.
-	B-Location
+iPlant	B-Location
+.	O
 
 We	O
 will	O
@@ -73,33 +80,36 @@ transcriptomes	O
 we	O
 discussed	O
 last	O
-week.
-	O
+week	O
+.	O
 
 You	O
 will	O
 use	O
 two	O
 of	O
-the Perl	O
+the	O
+Perl	O
 scripts	O
 from	O
 the	O
-homework in	O
+homework	O
+in	O
 the	O
 hpc	O
-pipeline.
-	O
+pipeline	O
+.	O
 
 Put	B-Action
 these	B-Mention
 into	O
 the	O
 scripts	B-Location
-directory.
-	I-Location
+directory	I-Location
+.	O
 
-config.sh:	O
+config.sh	O
+:	O
 Now	O
 we	O
 need	O
@@ -107,8 +117,8 @@ to	O
 create	B-Action
 the	O
 config.sh	B-Reagent
-script.
-	I-Reagent
+script	I-Reagent
+.	O
 
 This	O
 script	O
@@ -129,8 +139,8 @@ to	O
 modify	O
 for	O
 running	O
-blast.
-	O
+blast	O
+.	O
 
 The	O
 idea	O
@@ -155,8 +165,8 @@ run	O
 their	O
 particular	O
 blast	O
-job.
-	O
+job	O
+.	O
 
 The	O
 user	O
@@ -174,11 +184,13 @@ the	O
 scripts	O
 in	O
 the	O
-'scripts'	O
-directory.
-	O
+'scripts	O
+'	O
+directory	O
+.	O
 
-Instead,	O
+Instead	O
+,	O
 we	O
 will	O
 capture	O
@@ -186,8 +198,8 @@ all	O
 of	O
 these	O
 variable	O
-here.
-	O
+here	O
+.	O
 
 *	O
 note	O
@@ -200,13 +212,16 @@ in	O
 the	O
 hpc-blast	O
 directory	O
-(in	O
+(	O
+in	O
 the	O
 first	O
 part	O
 of	O
 the	O
-pipeline),	O
+pipeline	O
+)	O
+,	O
 where	O
 it	O
 is	O
@@ -216,16 +231,21 @@ the	O
 user	O
 to	O
 modify	O
-it.
-	O
+it	O
+.	O
 
-blast-pipeline.sh:Now	O
+blast-pipeline.sh	O
+:	O
+Now	O
 we	O
 will	O
 create	B-Action
 the	O
-"driver	B-Reagent
-script",	I-Reagent
+``	B-Reagent
+driver	I-Reagent
+script	I-Reagent
+''	I-Reagent
+,	O
 the	O
 script	O
 that	O
@@ -237,11 +257,11 @@ each	O
 part	O
 of	O
 the	O
-pipeline.
-	O
+pipeline	O
+.	O
 
-run-fasta-splitter.sh.
-	O
+run-fasta-splitter.sh	O
+.	O
 
 Create	B-Action
 a	O
@@ -253,10 +273,11 @@ the	O
 fasta	B-Reagent
 splitter	I-Reagent
 perl	I-Reagent
-code.
-	I-Reagent
+code	I-Reagent
+.	O
 
-run-blast.sh:	O
+run-blast.sh	O
+:	O
 Create	B-Action
 a	O
 shell	B-Reagent
@@ -267,10 +288,12 @@ blast	O
 on	O
 a	O
 compute	B-Location
-node.
-	I-Location
+node	I-Location
+.	O
 
-run-parse-blast.sh:Create	B-Action
+run-parse-blast.sh	O
+:	O
+Create	B-Action
 a	O
 shell	B-Reagent
 script	I-Reagent
@@ -287,10 +310,11 @@ compute	B-Location
 node	I-Location
 on	O
 the	O
-cluster.
-	O
+cluster	O
+.	O
 
-04-blast-search.pl:	O
+04-blast-search.pl	O
+:	O
 modify	B-Action
 the	O
 blast	B-Reagent
@@ -305,14 +329,15 @@ stringent.Modify	I-Generic-Measure
 the	O
 Perl	O
 script	O
-04-blast-search.pl to	O
+04-blast-search.pl	O
+to	O
 include	O
 additional	O
 information	O
 about	O
 the	O
-hit.
-	O
+hit	O
+.	O
 
 Make	B-Action
 all	O
@@ -326,19 +351,22 @@ run	B-Action
 the	O
 pipeline.If	B-Reagent
 you	O
-don't	O
+do	O
+n't	O
 get	O
 any	O
-errors,	O
+errors	O
+,	O
 the	O
 pipeline	O
 will	O
 take	O
-<1	B-Time
+<	B-Time
+1	I-Time
 day	I-Time
 to	O
-run.
-	O
+run	O
+.	O
 
 Check	O
 to	O
@@ -354,15 +382,19 @@ pipeline	O
 is	O
 finished	O
 running	O
-(and	O
+(	O
+and	O
 you	O
-don't	O
+do	O
+n't	O
 see	O
 the	O
 jobs	O
 listed	O
 under	O
-qstat),	O
+qstat	O
+)	O
+,	O
 check	O
 for	O
 std-errors	O
@@ -376,8 +408,8 @@ the	O
 pipeline	O
 is	O
 running	O
-too.
-	O
+too	O
+.	O
 
 Now	O
 you	O
@@ -430,24 +462,28 @@ run	O
 in	O
 the	O
 steps	O
-above,	O
+above	O
+,	O
 to	O
 test	O
 your	O
-code.
-	O
+code	O
+.	O
 
-Otherwise,	O
+Otherwise	O
+,	O
 these	O
 will	O
 run	O
-again.Also,	O
+again.Also	O
+,	O
 before	O
 you	O
 run	O
 this	O
 final	O
-step,	O
+step	O
+,	O
 make	O
 sure	O
 the	O
@@ -460,7 +496,8 @@ run	O
 on	O
 the	O
 head	O
-node,	O
+node	O
+,	O
 or	O
 should	O
 we	O
@@ -469,7 +506,9 @@ this	O
 on	O
 a	O
 compute	O
-node?The	O
+node	O
+?	O
+The	O
 complete	O
 pipeline	O
 can	O
@@ -477,8 +516,8 @@ be	O
 found	O
 in	O
 github	O
-here.
-	O
+here	O
+.	O
 
 Commit	B-Action
 your	O
@@ -491,8 +530,9 @@ abe487	I-Location
 repository	I-Location
 using	O
 the	O
-directory:hpc-blast
-	B-Reagent
+directory	B-Reagent
+:	I-Reagent
+hpc-blast	I-Reagent
 
 
 

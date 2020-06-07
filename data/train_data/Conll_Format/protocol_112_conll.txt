@@ -1,17 +1,18 @@
 PhosphoSerine	B-Reagent
 Western	B-Action
-Blotting
-	I-Action
+Blotting	I-Action
 
 Run	B-Action
-40%	B-Concentration
+40	B-Concentration
+%	I-Concentration
 of	O
 IP	B-Reagent
 eluate	I-Reagent
 on	O
-10%	B-Concentration
-gel.
-	B-Reagent
+10	B-Concentration
+%	I-Concentration
+gel	B-Reagent
+.	O
 
 Transfer	B-Action
 protein	B-Reagent
@@ -25,28 +26,33 @@ RT	B-Temperature
 with	O
 ice	B-Location
 pack	I-Location
-(100V).
-	B-Generic-Measure
+(	O
+100V	B-Generic-Measure
+)	O
+.	O
 
 Cut	B-Action
 membrane	B-Reagent
 just	B-Modifier
 below	I-Modifier
 180kD	B-Generic-Measure
-(top	O
+(	O
+top	O
 MW	O
 marker	O
 on	O
 benchmark	B-Modifier
 prestained	I-Modifier
-ladder).
-	B-Location
+ladder	B-Location
+)	O
+.	O
 
 Cut	B-Action
 Membrane	B-Reagent
 at	O
 ~82kD	B-Generic-Measure
-(the	O
+(	O
+the	O
 blue	O
 band	O
 above	O
@@ -56,17 +62,19 @@ band	O
 using	O
 benchmark	B-Modifier
 prestained	I-Modifier
-ladder).
-	B-Location
+ladder	B-Location
+)	O
+.	O
 
-**Note,	O
+**Note	O
+,	O
 the	O
 GST-tagged	B-Modifier
 protein	B-Reagent
 is	O
 ~115	B-Modifier
-kD.
-	B-Generic-Measure
+kD	B-Generic-Measure
+.	O
 
 Cutting	B-Action
 the	O
@@ -78,10 +86,11 @@ will	O
 help	O
 reduce	O
 non-specific	O
-binding.
-	O
+binding	O
+.	O
 
-Also,	O
+Also	O
+,	O
 running	B-Action
 a	O
 ladder	B-Location
@@ -113,22 +122,25 @@ angle	O
 relative	O
 to	O
 the	O
-membrane.
-	B-Reagent
+membrane	B-Reagent
+.	O
 
 Block	B-Action
 membrane	B-Reagent
 with	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 BSA	B-Reagent
-(IgG	I-Reagent
+(	O
+IgG	B-Reagent
 and	O
-Protease-Free)/TBST	B-Reagent
+Protease-Free	B-Reagent
+)	O
+/TBST	B-Reagent
 for	O
 2hrs	B-Time
 at	O
-RT
-	B-Temperature
+RT	B-Temperature
 
 Probe	B-Action
 membrane	B-Reagent
@@ -140,7 +152,9 @@ millipore	B-Device
 in	O
 IgG-Free/Protease-Free	B-Reagent
 BSA/TBST	I-Reagent
-(1:2000,	B-Generic-Measure
+(	O
+1:2000	B-Generic-Measure
+,	O
 you	O
 can	O
 try	O
@@ -151,8 +165,9 @@ is	O
 not	O
 great	O
 at	O
-1:2000).
-	B-Generic-Measure
+1:2000	B-Generic-Measure
+)	O
+.	O
 
 Probe	B-Action
 overnight	B-Time
@@ -163,8 +178,8 @@ cold	B-Location
 room	I-Location
 on	O
 tilting	B-Location
-tray.
-	I-Location
+tray	I-Location
+.	O
 
 Rinse	B-Action
 membrane	B-Reagent
@@ -181,7 +196,8 @@ TBST	B-Reagent
 Block	B-Action
 membrane	B-Reagent
 in	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 milk/TBST	B-Reagent
 for	O
 1hr	B-Time
@@ -198,8 +214,8 @@ at	O
 for	O
 2hrs	B-Time
 at	O
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Rinse	B-Action
 6x	B-Numerical
@@ -208,21 +224,20 @@ TBST	B-Reagent
 over	O
 1hr	B-Time
 at	O
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Activate	B-Action
 membrane	B-Reagent
 with	O
 pico	B-Reagent
-ECL.
-	I-Reagent
+ECL	I-Reagent
+.	O
 
 Visualize	B-Action
 with	O
 Amersham	B-Device
-film
-	I-Device
+film	I-Device
 
 
 

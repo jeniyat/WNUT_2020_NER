@@ -1,6 +1,5 @@
 Mouse	B-Reagent
-BMDM
-	I-Reagent
+BMDM	I-Reagent
 
 Put	B-Action
 2	B-Amount
@@ -11,14 +10,17 @@ well	B-Location
 in	O
 6-wells	B-Location
 plate	I-Location
-(1	B-Numerical
+(	O
+1	B-Numerical
 well	B-Location
 per	O
 2	B-Numerical
 marrows	B-Reagent
 or	O
 per	O
-animal).	B-Reagent
+animal	B-Reagent
+)	O
+.	O
 
 Clean	B-Action
 femur	B-Reagent
@@ -40,13 +42,16 @@ free	I-Reagent
 media	I-Reagent
 or	O
 PBS	B-Reagent
-(the	O
+(	O
+the	O
 most	O
 important	O
 part	O
 is	O
 the	O
-middle).	O
+middle	O
+)	O
+.	O
 
 Cut	B-Action
 off	I-Action
@@ -58,8 +63,8 @@ femur	B-Reagent
 to	O
 expose	B-Action
 the	O
-marrow.
-	B-Reagent
+marrow	B-Reagent
+.	O
 
 Fill	B-Action
 syringe	B-Device
@@ -68,7 +73,8 @@ with	O
 the	O
 2ml	B-Amount
 of	O
-media,	B-Reagent
+media	B-Reagent
+,	O
 insert	B-Action
 into	O
 marrow	B-Reagent
@@ -84,12 +90,14 @@ the	O
 bone	B-Reagent
 is	O
 clean	B-Action
-(goes	O
+(	O
+goes	O
 from	O
 pink	B-Modifier
 to	O
-white).
-	B-Modifier
+white	B-Modifier
+)	O
+.	O
 
 Pass	B-Action
 the	O
@@ -99,11 +107,15 @@ the	O
 syringe	B-Device
 1-2	B-Numerical
 times	O
-(Start	O
+(	O
+Start	O
 with	O
-20G,	B-Generic-Measure
+20G	B-Generic-Measure
+,	O
 then	O
-26G).	B-Generic-Measure
+26G	B-Generic-Measure
+)	O
+.	O
 
 Transfer	B-Action
 the	O
@@ -112,17 +124,20 @@ to	O
 a	O
 50	B-Amount
 ml	I-Amount
-tube.	B-Location
+tube	B-Location
+.	O
 
 Prepare	B-Action
 RBC	B-Reagent
 lysis	I-Reagent
 solution	I-Reagent
-(proportions	O
+(	O
+proportions	O
 in	O
 cell	B-Location
 culture	I-Location
-cabinet)	I-Location
+cabinet	I-Location
+)	O
 –	O
 Or	O
 purchase	O
@@ -132,16 +147,16 @@ Sigma	O
 Add	B-Action
 5ml	B-Amount
 per	O
-marrow.
-	B-Reagent
+marrow	B-Reagent
+.	O
 
 Place	B-Action
 on	O
 ice	B-Location
 for	O
 10min	B-Time
-excatly.
-	B-Modifier
+excatly	B-Modifier
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -149,13 +164,18 @@ for	O
 at	O
 4°C	B-Temperature
 400g	B-Speed
-(~RCF,	B-Modifier
+(	O
+~RCF	B-Modifier
+,	O
 or	O
 1200	B-Speed
-rpm).	I-Speed
+rpm	I-Speed
+)	O
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 5ml	B-Amount
@@ -165,26 +185,33 @@ and	O
 of	O
 RPMI	B-Reagent
 Medium	I-Reagent
-(total	O
+(	O
+total	O
 volume	B-Measure-Type
 is	O
 15	B-Amount
-ml)	I-Amount
+ml	I-Amount
+)	O
 –	O
 Do	O
 not	O
 let	O
 cells	B-Reagent
-dry,	B-Modifier
+dry	B-Modifier
+,	O
 add	B-Action
 medium	B-Reagent
-immediately.(Or	B-Modifier
+immediately	B-Modifier
+.	O
+(	O
+Or	O
 9ml	B-Amount
 RMPI	B-Reagent
 medium	I-Reagent
 and	O
 3ml	B-Amount
-CSF)	B-Reagent
+CSF	B-Reagent
+)	O
 
 Transfer	B-Action
 the	O
@@ -200,13 +227,17 @@ polystyrene	B-Location
 tissue	I-Location
 culture	I-Location
 petris	I-Location
-(PrimariaTM,	O
+(	O
+PrimariaTM	O
+,	O
 Becton	O
 Dickinson	O
-Labware)	O
+Labware	O
+)	O
 for	O
 24	B-Time
-hrs.	I-Time
+hrs	I-Time
+.	O
 
 Transfer	B-Action
 non-adherent	B-Reagent
@@ -222,10 +253,12 @@ or	O
 non	B-Location
 adherent	I-Location
 flasks	I-Location
-(Green	O
+(	O
+Green	O
 -	O
-Fisher).
-	O
+Fisher	O
+)	O
+.	O
 
 Cultures	B-Reagent
 are	O
@@ -234,8 +267,11 @@ for	O
 6	B-Time
 days	I-Time
 with	O
-15%	B-Concentration
-(v/v)	I-Concentration
+15	B-Concentration
+%	I-Concentration
+(	I-Concentration
+v/v	I-Concentration
+)	I-Concentration
 L-929	B-Reagent
 cell-conditioned	I-Reagent
 medium	I-Reagent
@@ -243,21 +279,26 @@ as	O
 a	O
 source	O
 of	O
-M-CSF.
-	B-Reagent
+M-CSF	B-Reagent
+.	O
 
 Add	B-Action
 fresh	B-Modifier
 CSF	B-Reagent
 every	B-Modifier
 3	B-Time
-days.(15%	I-Time
+days	I-Time
+.	O
+(	O
+15	B-Concentration
+%	I-Concentration
 of	O
 15ml	B-Amount
 –	O
-(about	O
-3ml)
-	B-Amount
+(	O
+about	O
+3ml	B-Amount
+)	O
 
 The	O
 batch	O
@@ -268,29 +309,35 @@ and	O
 Rabi	O
 ais	O
 at	O
-30%	B-Concentration
+30	B-Concentration
+%	I-Concentration
 ,	O
 so	O
 use	O
-5ml.
-	B-Amount
+5ml	B-Amount
+.	O
 
 After	B-Action
 6	B-Time
-days,	I-Time
+days	I-Time
+,	O
 collect	B-Action
 the	O
 cell	B-Reagent
 with	O
 a	O
 policeman	B-Device
-(cell	I-Device
+(	O
+cell	B-Device
 scraper	I-Device
 25	B-Size
-cm,	I-Size
+cm	I-Size
+,	I-Size
 Sarstedt	O
-#83,1830).
-	O
+#	O
+83,1830	O
+)	O
+.	O
 
 Centrifuged	B-Action
 for	O
@@ -307,29 +354,32 @@ in	O
 2ml	B-Amount
 of	O
 RPMI	B-Reagent
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FBS	B-Reagent
 without	O
 Pen/Strep	B-Reagent
 Phenol	I-Reagent
 free	O
 for	O
-LDH.
-	B-Reagent
+LDH	B-Reagent
+.	O
 
 Flush	B-Action
 media	B-Reagent
 through	O
-25,	B-Generic-Measure
-27,	I-Generic-Measure
+25	B-Generic-Measure
+,	I-Generic-Measure
+27	I-Generic-Measure
+,	I-Generic-Measure
 and	I-Generic-Measure
 30	I-Generic-Measure
 G	I-Generic-Measure
 needles	B-Device
 to	O
 separate	B-Action
-aggregates.
-	B-Reagent
+aggregates	B-Reagent
+.	O
 
 Count	B-Action
 cells	B-Reagent
@@ -340,42 +390,48 @@ of	O
 1	B-Concentration
 x	I-Concentration
 106	I-Concentration
-cells/ml.
-	I-Concentration
+cells/ml	I-Concentration
+.	O
 
 To	O
 count	B-Action
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 dilute	B-Action
 1/5	B-Generic-Measure
 in	O
-Turks.
-	B-Location
+Turks	B-Location
+.	O
 
 Aliquot	B-Action
 500	B-Amount
 µL	I-Amount
-(5x105	B-Generic-Measure
-cellules)	B-Reagent
+(	O
+5x105	B-Generic-Measure
+cellules	B-Reagent
+)	O
 per	O
 well	B-Location
 in	O
 24-wells	B-Location
-plate,	I-Location
+plate	I-Location
+,	O
 100ul	B-Amount
 for	O
 96	B-Location
 well	I-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Incubate	B-Action
-o/n,	O
-5%	B-Concentration
+o/n	O
+,	O
+5	B-Concentration
+%	I-Concentration
 CO2	B-Reagent
 before	O
-infection.
-	B-Method
+infection	B-Method
+.	O
 
 
 

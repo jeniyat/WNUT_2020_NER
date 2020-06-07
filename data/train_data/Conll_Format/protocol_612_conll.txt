@@ -3,26 +3,29 @@ for	I-Method
 Cell	I-Method
 Collection	I-Method
 Pump	I-Method
-→ Steel	B-Device
+→	O
+Steel	B-Device
 filter	I-Device
 tank	I-Device
-→	O
-A/E	B-Device
+→	I-Device
+A/E	I-Device
 filter	I-Device
-→	O
-Durapore	B-Device
-→	O
-DI	B-Modifier
-rinsed	I-Modifier
-cubie	B-Location
-container	I-Location
-(the	O
-one	B-Mention
+→	I-Device
+Durapore	I-Device
+→	I-Device
+DI	O
+rinsed	B-Modifier
+cubie	I-Modifier
+container	B-Location
+(	I-Location
 the	O
+one	B-Mention
+the	I-Mention
 sample	B-Reagent
-was	B-Modifier
-in).	I-Modifier
-	O
+was	I-Reagent
+in	B-Modifier
+)	I-Modifier
+.	O
 
 Clamp	B-Action
 all	B-Modifier
@@ -31,8 +34,8 @@ to	O
 manifolds	B-Location
 and	O
 filter	B-Location
-tanks.	I-Location
-	O
+tanks	I-Location
+.	O
 
 Make	B-Action
 sure	I-Action
@@ -40,7 +43,8 @@ bleeder	B-Device
 valves	I-Device
 are	B-Location
 on	I-Location
-top.	I-Location
+top	I-Location
+.	O
 
 Turn	B-Action
 on	I-Action
@@ -54,7 +58,8 @@ Durapore	B-Device
 and	O
 the	O
 A/E	B-Device
-again. 	O
+again	O
+.	O
 
 Keep	B-Action
 cubie	B-Location
@@ -67,10 +72,13 @@ be	O
 used	B-Action
 for	O
 viral	B-Measure-Type
-concentration.	I-Measure-Type
+concentration	I-Measure-Type
+.	O
 
 Place	B-Action
-“out”	B-Location
+“	B-Location
+out	I-Location
+”	I-Location
 tube	I-Location
 from	O
 Durapore	B-Device
@@ -87,7 +95,8 @@ vacuum	B-Location
 side	I-Location
 of	O
 the	O
-pump. 	B-Device
+pump	B-Device
+.	O
 
 Wait	B-Action
 until	O
@@ -102,8 +111,8 @@ only	B-Modifier
 bubbles	O
 are	O
 coming	B-Action
-through. 	I-Action
-	O
+through	I-Action
+.	O
 
 Open	B-Action
 steel	B-Seal
@@ -118,7 +127,10 @@ bleeder	I-Device
 valve	I-Device
 to	O
 depressurize	B-Method
-(SLOWLY).	B-Modifier
+(	O
+SLOWLY	B-Modifier
+)	O
+.	O
 
 When	O
 pressure	B-Measure-Type
@@ -129,7 +141,8 @@ push	B-Action
 in	I-Action
 steel	B-Seal
 tank	I-Seal
-lid,	I-Seal
+lid	I-Seal
+,	O
 allow	O
 a	O
 few	B-Time
@@ -139,8 +152,8 @@ for	O
 water	B-Reagent
 to	O
 drain	B-Action
-through.	I-Action
-	O
+through	I-Action
+.	O
 
 Disconnect	B-Action
 clamp	B-Device
@@ -149,15 +162,18 @@ bottom	B-Location
 side	I-Location
 of	O
 A/E	B-Device
-filter,	I-Device
+filter	I-Device
+,	O
 remove	B-Action
 tube	B-Location
 from	O
-“out”	B-Location
+“	B-Location
+out	I-Location
+”	I-Location
 side	I-Location
 of	O
-A/E.	B-Device
-	O
+A/E	B-Device
+.	O
 
 Place	B-Action
 Durapore	B-Device
@@ -173,43 +189,53 @@ goes	B-Action
 into	O
 the	O
 filter	B-Location
-flask.	I-Location
+flask	I-Location
+.	O
 
 Once	O
 water	B-Reagent
 is	O
-out,	B-Modifier
+out	B-Modifier
+,	O
 open	B-Action
 manifold	B-Device
-slowly,	B-Modifier
+slowly	B-Modifier
+,	O
 fold	B-Action
 up	I-Action
 filter	B-Device
 and	O
 place	B-Action
 in	O
-whirlpack.	B-Location
+whirlpack	B-Location
+.	O
 
 Remove	B-Action
 Durapore	B-Location
-“out”	I-Location
+“	I-Location
+out	I-Location
+”	I-Location
 tube	I-Location
 from	O
 filter	B-Location
-flask,	I-Location
+flask	I-Location
+,	O
 place	B-Action
 A/E	B-Location
-“out”	I-Location
+“	I-Location
+out	I-Location
+”	I-Location
 tube	I-Location
 onto	O
 filter	B-Location
-flask. 	I-Location
-	O
+flask	I-Location
+.	O
 
 Place	B-Action
 A/E	B-Device
 on	O
-knees,	B-Location
+knees	B-Location
+,	O
 let	O
 water	B-Reagent
 drain	B-Action
@@ -219,31 +245,36 @@ the	O
 filter	B-Location
 flask	I-Location
 as	O
-before.	B-Method
+before	B-Method
+.	O
 
 Open	B-Action
 manifold	B-Device
-slowly,	B-Modifier
+slowly	B-Modifier
+,	O
 peel	B-Action
 off	I-Action
 ring	B-Location
 of	O
-filter,	B-Device
-discard,	B-Action
+filter	B-Device
+,	O
+discard	B-Action
+,	O
 fold	B-Device
 filter	I-Device
 and	O
 place	B-Action
 in	O
-whirlpack.	B-Location
+whirlpack	B-Location
+.	O
 
 Okay	B-Modifier
 to	O
 turn	B-Action
 off	I-Action
 pump	B-Device
-now.
-	O
+now	O
+.	O
 
 
 

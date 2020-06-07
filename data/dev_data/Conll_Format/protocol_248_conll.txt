@@ -1,8 +1,7 @@
 Qiagen	B-Reagent
 MinElute	I-Reagent
 Gel	I-Reagent
-Extraction
-	B-Method
+Extraction	B-Method
 
 Excise	B-Action
 the	O
@@ -14,10 +13,11 @@ agarose	B-Reagent
 gel	I-Reagent
 with	O
 a	O
-clean,	B-Modifier
+clean	B-Modifier
+,	I-Modifier
 sharp	I-Modifier
-scalpel.
-	B-Device
+scalpel	B-Device
+.	O
 
 Weigh	B-Action
 the	O
@@ -26,8 +26,8 @@ slice	I-Reagent
 in	O
 a	O
 colorless	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 3	B-Amount
@@ -38,23 +38,28 @@ to	O
 1	B-Amount
 volume	I-Amount
 gel	B-Reagent
-(100	B-Amount
+(	O
+100	B-Amount
 mg	I-Amount
 ~	O
 100	B-Amount
-μl).
-	I-Amount
+μl	I-Amount
+)	O
+.	O
 
 For	O
->2%	B-Concentration
+>	B-Concentration
+2	I-Concentration
+%	I-Concentration
 agarose	B-Reagent
-gels,	I-Reagent
+gels	I-Reagent
+,	O
 add	B-Action
 6	B-Amount
 volumes	I-Amount
 Buffer	B-Reagent
-QG.
-	I-Reagent
+QG	I-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -62,15 +67,17 @@ at	O
 for	O
 10	B-Time
 min	I-Time
-(or	O
+(	O
+or	O
 until	O
 the	O
 gel	B-Reagent
 slice	I-Reagent
 has	O
 completely	O
-dissolved).
-	B-Modifier
+dissolved	B-Modifier
+)	O
+.	O
 
 Vortex	B-Action
 the	O
@@ -81,8 +88,8 @@ min	I-Time
 to	O
 help	O
 dissolve	B-Action
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 After	O
 the	O
@@ -90,7 +97,8 @@ gel	B-Reagent
 slice	I-Reagent
 has	O
 dissolved	B-Modifier
-completely,	O
+completely	O
+,	O
 check	B-Action
 that	I-Action
 the	I-Action
@@ -100,14 +108,16 @@ the	O
 mixture	B-Reagent
 is	O
 yellow	B-Modifier
-(similar	O
+(	O
+similar	O
 to	O
 Buffer	B-Reagent
 QG	I-Reagent
 without	O
 dissolved	B-Modifier
-agarose).
-	B-Reagent
+agarose	B-Reagent
+)	O
+.	O
 
 If	O
 the	O
@@ -118,19 +128,22 @@ mixture	B-Reagent
 is	O
 orange	B-Modifier
 or	O
-violet,	B-Modifier
+violet	B-Modifier
+,	O
 add	B-Action
 10	B-Amount
 μl	I-Amount
 3	B-Concentration
 M	I-Concentration
 sodium	B-Reagent
-acetate,	I-Reagent
+acetate	I-Reagent
+,	O
 pH	B-pH
-5.0,	I-pH
+5.0	I-pH
+,	O
 and	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 The	O
 color	O
@@ -139,8 +152,8 @@ the	O
 mixture	B-Reagent
 will	O
 turn	O
-yellow.
-	B-Modifier
+yellow	B-Modifier
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -152,8 +165,8 @@ to	O
 the	O
 sample	B-Reagent
 and	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Place	B-Action
 a	O
@@ -166,12 +179,13 @@ provided	O
 2	B-Amount
 ml	I-Amount
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 To	O
 bind	B-Action
-DNA,	B-Reagent
+DNA	B-Reagent
+,	O
 apply	B-Action
 the	O
 sample	B-Reagent
@@ -183,8 +197,8 @@ and	O
 centrifuge	B-Action
 for	O
 1	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Discard	B-Action
 flow-through	B-Reagent
@@ -197,21 +211,23 @@ back	O
 into	O
 the	O
 same	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 For	O
 sample	B-Reagent
 volumes	B-Measure-Type
 of	O
->800	B-Modifier
-μl,	B-Amount
+>	B-Modifier
+800	B-Amount
+μl	I-Amount
+,	O
 load	B-Action
 and	O
 spin/apply	B-Action
 vacuum	I-Action
-again.
-	O
+again	O
+.	O
 
 If	O
 the	O
@@ -221,12 +237,15 @@ subsequently	O
 be	O
 used	O
 for	O
-sequencing,	B-Action
+sequencing	B-Action
+,	O
 in	O
 vitro	B-Method
-transcription,	I-Method
+transcription	I-Method
+,	O
 or	O
-microinjection,	B-Method
+microinjection	B-Method
+,	O
 add	B-Action
 0.5	B-Amount
 ml	I-Amount
@@ -240,8 +259,8 @@ and	O
 centrifuge	B-Action
 for	O
 1	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Discard	B-Action
 flow-through	B-Reagent
@@ -254,12 +273,13 @@ back	O
 into	O
 the	O
 same	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 To	O
-wash,	B-Action
-add	I-Action
+wash	B-Action
+,	O
+add	B-Action
 0.75	B-Amount
 ml	I-Amount
 Buffer	B-Reagent
@@ -271,10 +291,11 @@ and	O
 centrifuge	B-Action
 for	O
 1	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
-Note:	O
+Note	O
+:	O
 If	O
 the	O
 DNA	B-Reagent
@@ -284,10 +305,15 @@ used	O
 for	O
 salt-sensitive	O
 applications	O
-(e.g.,	O
-sequencing,	B-Action
+(	O
+e.g.	O
+,	O
+sequencing	B-Action
+,	O
 blunt-ended	B-Method
-ligation),	I-Method
+ligation	I-Method
+)	O
+,	O
 let	O
 the	O
 column	B-Reagent
@@ -298,8 +324,8 @@ after	O
 addition	B-Method
 of	O
 Buffer	B-Reagent
-PE.
-	I-Reagent
+PE	I-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -321,14 +347,16 @@ at	O
 17,900	B-Speed
 x	I-Speed
 g	I-Speed
-(13,000	I-Speed
-rpm)	I-Speed
+(	O
+13,000	B-Speed
+rpm	I-Speed
+)	O
 to	O
 remove	B-Action
 residual	B-Reagent
 wash	I-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Place	B-Action
 QIAquick	B-Location
@@ -339,23 +367,27 @@ clean	B-Modifier
 1.5	B-Amount
 ml	I-Amount
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 To	O
 elute	B-Action
-DNA,	B-Reagent
+DNA	B-Reagent
+,	O
 add	B-Action
 10	B-Amount
 µl	I-Amount
 of	O
 Buffer	B-Reagent
 EB	I-Reagent
-(10	B-Concentration
+(	O
+10	B-Concentration
 mM	I-Concentration
-Tris·Cl,	B-Reagent
+Tris·Cl	B-Reagent
+,	O
 pH	B-pH
-8.5)	I-pH
+8.5	I-pH
+)	O
 or	O
 water	B-Reagent
 to	O
@@ -363,23 +395,26 @@ the	O
 center	B-Location
 of	O
 the	O
-membrane,	B-Location
+membrane	B-Location
+,	O
 let	O
 the	O
 column	B-Location
 stand	B-Action
 for	O
 1	B-Time
-min,	I-Time
+min	I-Time
+,	O
 and	O
 then	O
 centrifuge	B-Action
 for	O
 1	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
-IMPORTANT:	O
+IMPORTANT	O
+:	O
 Ensure	B-Action
 that	O
 the	O
@@ -399,8 +434,8 @@ complete	B-Modifier
 elution	B-Method
 of	O
 bound	B-Modifier
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 The	O
 average	O
@@ -419,8 +454,8 @@ efficiency	I-Measure-Type
 is	O
 dependent	O
 on	O
-pH.
-	B-pH
+pH	B-pH
+.	O
 
 The	O
 maximum	O
@@ -432,12 +467,13 @@ between	O
 pH	B-pH
 7.0	I-pH
 and	I-pH
-8.5.
-	I-pH
+8.5	I-pH
+.	O
 
 When	O
 using	O
-water,	B-Reagent
+water	B-Reagent
+,	O
 make	O
 sure	O
 that	O
@@ -447,7 +483,8 @@ value	O
 is	O
 within	O
 this	O
-range,	O
+range	O
+,	O
 and	O
 store	B-Action
 DNA	B-Reagent
@@ -463,8 +500,8 @@ absence	O
 of	O
 a	O
 buffering	B-Reagent
-agent.
-	I-Reagent
+agent	I-Reagent
+.	O
 
 The	O
 purified	B-Reagent
@@ -476,14 +513,19 @@ eluted	B-Action
 in	O
 TE	B-Reagent
 buffer	I-Reagent
-(10	B-Concentration
+(	O
+10	B-Concentration
 mM	I-Concentration
-Tris·Cl,	B-Reagent
+Tris·Cl	B-Reagent
+,	O
 1	B-Concentration
 mM	I-Concentration
-EDTA,	B-Reagent
+EDTA	B-Reagent
+,	O
 pH	B-pH
-8.0),	I-pH
+8.0	I-pH
+)	O
+,	O
 but	O
 the	O
 EDTA	B-Reagent
@@ -491,8 +533,8 @@ may	O
 inhibit	O
 subsequent	O
 enzymatic	B-Reagent
-reactions.
-	I-Reagent
+reactions	I-Reagent
+.	O
 
 If	O
 the	O
@@ -504,7 +546,8 @@ be	O
 analyzed	B-Action
 on	O
 a	O
-gel,	B-Reagent
+gel	B-Reagent
+,	O
 add	B-Action
 1	B-Amount
 volume	I-Amount
@@ -516,8 +559,8 @@ to	O
 volumes	I-Amount
 of	O
 purified	B-Reagent
-DNA.
-	I-Reagent
+DNA	I-Reagent
+.	O
 
 Mix	B-Action
 the	O
@@ -530,8 +573,8 @@ down	I-Action
 before	O
 loading	B-Action
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Loading	B-Reagent
 dye	I-Reagent
@@ -539,13 +582,17 @@ contains	O
 3	B-Reagent
 marker	I-Reagent
 dyes	I-Reagent
-(bromophenol	I-Reagent
-blue,	I-Reagent
-xylene	I-Reagent
-cyanol,	I-Reagent
+(	O
+bromophenol	B-Reagent
+blue	I-Reagent
+,	O
+xylene	B-Reagent
+cyanol	I-Reagent
+,	O
 and	O
 orange	B-Reagent
-G)	I-Reagent
+G	I-Reagent
+)	O
 that	O
 facilitate	O
 estimation	B-Method
@@ -559,15 +606,17 @@ of	O
 agarose	B-Reagent
 gel	I-Reagent
 run	O
-time.
-	B-Measure-Type
+time	B-Measure-Type
+.	O
 
 Refer	O
 to	O
 Table	O
 3	O
-(page	O
-15)	O
+(	O
+page	O
+15	O
+)	O
 to	O
 identify	B-Action
 the	O
@@ -581,8 +630,8 @@ agarose	B-Reagent
 gel	I-Reagent
 percentage	B-Measure-Type
 and	O
-type.
-	B-Measure-Type
+type	B-Measure-Type
+.	O
 
 
 

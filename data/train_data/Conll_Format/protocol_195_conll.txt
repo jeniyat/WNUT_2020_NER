@@ -1,8 +1,7 @@
 Quick	B-Modifier
 Fungal	I-Modifier
 DNA	B-Reagent
-Extraction
-	B-Method
+Extraction	B-Method
 
 Inoculate	B-Action
 fungal	B-Reagent
@@ -23,8 +22,8 @@ at	O
 RT	B-Temperature
 for	O
 3-4	B-Time
-days.
-	I-Time
+days	I-Time
+.	O
 
 Freeze	B-Action
 culture	B-Location
@@ -33,7 +32,8 @@ in	O
 LN2Freeze	B-Reagent
 dry	B-Action
 over	B-Time
-night.	I-Time
+night	I-Time
+.	O
 
 Add	B-Action
 50	B-Amount
@@ -58,7 +58,8 @@ for	O
 mins	I-Time
 at	O
 50	B-Generic-Measure
-Hz.	I-Generic-Measure
+Hz	I-Generic-Measure
+.	O
 
 Add	B-Action
 500	B-Amount
@@ -67,8 +68,8 @@ lysis	B-Reagent
 buffer	I-Reagent
 to	O
 pulverised	B-Modifier
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 Vortex	B-Action
 to	O
@@ -79,54 +80,64 @@ to	O
 ˚C	I-Temperature
 for	O
 5	B-Time
-mins,	I-Time
+mins	I-Time
+,	O
 shaking	B-Action
 at	O
 1200	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 Add	B-Action
 0.5	B-Amount
 vol	I-Amount
-(250	I-Amount
-µL) 3	I-Amount
+(	I-Amount
+250	I-Amount
+µL	I-Amount
+)	I-Amount
+3	O
 M	B-Concentration
-Potassium	B-Reagent
-Acetate to	I-Reagent
+Potassium	I-Concentration
+Acetate	B-Reagent
+to	I-Reagent
 lysis	I-Reagent
-mix.
-	I-Reagent
+mix	I-Reagent
+.	I-Reagent
 
 Vortex	B-Action
 to	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Centrifuge	B-Action
-at 12	B-Speed
+at	O
+12	B-Speed
 K	I-Speed
 rpm	I-Speed
-for	O
-a minimum	B-Modifier
+for	I-Speed
+a	O
+minimum	B-Modifier
 of	I-Modifier
-15	B-Time
-minutes	I-Time
-@	O
-4˚C.
-	B-Temperature
+15	I-Modifier
+minutes	B-Time
+@	I-Time
+4˚C	I-Time
+.	B-Temperature
 
 Transfer	B-Action
 supernatant	B-Reagent
-(~	B-Modifier
+(	O
+~	B-Modifier
 650	B-Amount
-µL)	I-Amount
+µL	I-Amount
+)	O
 to	O
 fresh	B-Modifier
 1.5	B-Amount
 mL	I-Amount
-microcentrifuge tube.
-	B-Location
+microcentrifuge	B-Location
+tube	I-Location
+.	I-Location
 
 Add	B-Action
 1	B-Amount
@@ -137,15 +148,19 @@ Isopropanol	B-Reagent
 ~	B-Modifier
 700	B-Amount
 µL	I-Amount
-) to	O
-the supernatant,	O
-mix	B-Action
-well,	O
+)	O
+to	O
+the	O
+supernatant	O
+,	O
+mix	O
+well	B-Action
+,	O
 incubate	B-Action
--20˚C	B-Temperature
-for	O
-1hr.
-	B-Time
+-20˚C	I-Action
+for	B-Temperature
+1hr	O
+.	B-Time
 
 Centrifuge	B-Action
 at	O
@@ -159,15 +174,15 @@ of	I-Modifier
 15	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Decant	B-Action
 gently	B-Modifier
 or	O
 aspirate	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 To	O
 the	O
@@ -175,12 +190,13 @@ pellet	B-Reagent
 add	B-Action
 500	B-Amount
 µL	I-Amount
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 stored	B-Action
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -194,28 +210,31 @@ of	I-Modifier
 3	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 wash	O
 step	O
-with 500	B-Amount
+with	O
+500	B-Amount
 µL	I-Amount
-of	O
-cold 70%	B-Concentration
-ethanol.
-	B-Reagent
+of	I-Amount
+cold	O
+70	O
+%	B-Concentration
+ethanol	I-Concentration
+.	B-Reagent
 
 Spin	B-Action
 and	O
 discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Dry	B-Action
 pellet	B-Reagent
@@ -225,8 +244,8 @@ at	O
 45˚C	B-Temperature
 for	O
 5-10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Re-suspend	B-Action
 pellet	B-Reagent
@@ -237,17 +256,20 @@ water	I-Reagent
 or	O
 TE	B-Reagent
 buffer	I-Reagent
-(10	B-Concentration
+(	O
+10	B-Concentration
 mM	I-Concentration
 Tris	B-Reagent
 pH	B-pH
-8.0,	I-pH
+8.0	I-pH
+,	O
 1	B-Concentration
 mM	I-Concentration
 EDTA	B-Reagent
 pH	B-pH
-8.0).
-	I-pH
+8.0	I-pH
+)	O
+.	O
 
 Add	B-Action
 50	B-Amount
@@ -256,8 +278,7 @@ Add	B-Action
 Sodium	B-Reagent
 Acetate	I-Reagent
 pH	B-pH
-5.5
-	I-pH
+5.5	I-pH
 
 
 

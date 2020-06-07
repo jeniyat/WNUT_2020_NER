@@ -1,7 +1,6 @@
 Lowry	B-Reagent
 Protein	I-Reagent
-Assay
-	B-Action
+Assay	B-Action
 
 Set	B-Action
 up	I-Action
@@ -9,12 +8,17 @@ a	O
 standard	B-Reagent
 curve	I-Reagent
 of	O
-0,	B-Amount
-10,	I-Amount
-25,	I-Amount
-50,	I-Amount
-100,	I-Amount
-150	I-Amount
+0	B-Amount
+,	O
+10	B-Amount
+,	O
+25	B-Amount
+,	O
+50	B-Amount
+,	O
+100	B-Amount
+,	O
+150	B-Amount
 and	O
 200	B-Amount
 µg	I-Amount
@@ -23,28 +27,35 @@ BSA	B-Reagent
 in	O
 10-15	B-Amount
 ml	I-Amount
-tubes,	B-Location
+tubes	B-Location
+,	O
 1.0	B-Amount
 mL	I-Amount
 volume	B-Measure-Type
 per	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 Set	B-Action
 up	I-Action
 tubes	B-Location
-(10-15	B-Amount
-mL)	I-Amount
+(	O
+10-15	B-Amount
+mL	I-Amount
+)	O
 of	O
 the	O
 unknown	B-Reagent
 protein	I-Reagent
-sample(s)	I-Reagent
+sample	I-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
 to	O
 determine	B-Action
 their	B-Mention
-concentration,	B-Measure-Type
+concentration	B-Measure-Type
+,	O
 the	O
 final	O
 volume	B-Measure-Type
@@ -54,21 +65,24 @@ is	O
 to	O
 be	O
 1.0	B-Amount
-mL.
-	I-Amount
+mL	I-Amount
+.	O
 
 Add	B-Action
 5.0	B-Amount
 mL	I-Amount
 of	O
 reagent	B-Reagent
-“C”	I-Reagent
+“	I-Reagent
+C	I-Reagent
+”	I-Reagent
 to	O
 each	B-Modifier
-tube,	B-Location
+tube	B-Location
+,	O
 mix	B-Action
-immediately.
-	B-Modifier
+immediately	B-Modifier
+.	O
 
 Let	O
 the	O
@@ -79,21 +93,24 @@ for	O
 min	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 0.5	B-Amount
 mL	I-Amount
 of	O
 reagent	B-Reagent
-“D”	I-Reagent
+“	I-Reagent
+D	I-Reagent
+”	I-Reagent
 to	O
 each	B-Modifier
-tube,	B-Location
+tube	B-Location
+,	O
 mix	B-Action
-immediately.
-	B-Modifier
+immediately	B-Modifier
+.	O
 
 Let	O
 the	O
@@ -104,26 +121,30 @@ for	O
 min	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Read	B-Action
 absorbance	I-Action
 at	O
 600	B-Generic-Measure
-nm.
-	I-Generic-Measure
+nm	I-Generic-Measure
+.	O
 
 Record	B-Action
-values,	I-Action
-plot	I-Action
+values	I-Action
+,	O
+plot	B-Action
 standard	I-Action
 curve	I-Action
 and	O
 determine	B-Action
 sample	B-Reagent
-concentration(s).
-	B-Measure-Type
+concentration	B-Measure-Type
+(	I-Measure-Type
+s	I-Measure-Type
+)	I-Measure-Type
+.	O
 
 
 

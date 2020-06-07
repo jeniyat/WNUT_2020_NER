@@ -2,8 +2,7 @@ Artificial	B-Modifier
 Seawater	I-Modifier
 Based	I-Modifier
 AMP1	B-Reagent
-Medium
-	I-Reagent
+Medium	I-Reagent
 
 Dissolve	B-Action
 each	B-Modifier
@@ -13,7 +12,8 @@ before	O
 adding	B-Action
 the	O
 next	B-Modifier
-one.	B-Mention
+one	B-Mention
+.	O
 
 Dispense	B-Action
 into	O
@@ -21,18 +21,21 @@ into	O
 ml	I-Amount
 acid-washed	B-Modifier
 polycarbonate	B-Location
-bottles. 	I-Location
+bottles	I-Location
+.	O
 
 Autoclave	B-Action
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 pH	B-Action
 NaH2PO4	B-Reagent
 to	O
 7.5	B-pH
 using	O
 1M	B-Concentration
-NaOH.	B-Reagent
+NaOH	B-Reagent
+.	O
 
 Filter	B-Action
 sterilize	I-Action
@@ -44,8 +47,9 @@ using	O
 syringe	B-Device
 filter	I-Device
 into	O
-new,	B-Modifier
-sterile	I-Modifier
+new	B-Modifier
+,	O
+sterile	B-Modifier
 50ml	B-Amount
 centrifuge	B-Location
 tubes	I-Location
@@ -55,7 +59,8 @@ washed	I-Modifier
 and	O
 sterile	B-Modifier
 polycarbonate	B-Location
-bottles.	I-Location
+bottles	I-Location
+.	O
 
 Store	B-Action
 at	O
@@ -66,7 +71,8 @@ to	O
 7.5	B-pH
 using	O
 1M	B-Concentration
-NaOH. 	B-Reagent
+NaOH	B-Reagent
+.	O
 
 Filter	B-Action
 sterilize	I-Action
@@ -78,8 +84,9 @@ using	O
 syringe	B-Device
 filter	I-Device
 into	O
-new,	B-Modifier
-sterile	I-Modifier
+new	B-Modifier
+,	O
+sterile	B-Modifier
 15	B-Amount
 or	I-Amount
 50	I-Amount
@@ -92,11 +99,13 @@ washed	I-Modifier
 and	O
 sterile	B-Modifier
 polycarbonate	B-Location
-bottles.	I-Location
+bottles	I-Location
+.	O
 
 Store	B-Action
 at	O
-4°C.	B-Temperature
+4°C	B-Temperature
+.	O
 
 Dispense	B-Action
 5	B-Amount
@@ -112,14 +121,16 @@ per	B-Modifier
 ml	I-Amount
 bottle	B-Location
 of	O
-Turk's	B-Reagent
+Turk	B-Reagent
+'s	I-Reagent
 Island	I-Reagent
 Salt	I-Reagent
 Mix	I-Reagent
 when	O
 preparing	B-Action
 final	B-Reagent
-medium.	I-Reagent
+medium	I-Reagent
+.	O
 
 Weigh	B-Action
 out	I-Action
@@ -129,7 +140,8 @@ Na2EDTA·2H2O	B-Reagent
 using	O
 dust	B-Modifier
 free	I-Modifier
-paper.	B-Device
+paper	B-Device
+.	O
 
 Transfer	B-Action
 to	O
@@ -143,7 +155,8 @@ filled	O
 with	O
 40	B-Amount
 ml	I-Amount
-MQ-water.	B-Reagent
+MQ-water	B-Reagent
+.	O
 
 Dissolve	B-Action
 EDTA	B-Reagent
@@ -151,7 +164,8 @@ by	O
 inverting	B-Action
 flask	B-Location
 several	B-Numerical
-times.	O
+times	O
+.	O
 
 Weigh	B-Action
 out	I-Action
@@ -161,7 +175,8 @@ FeCl3·6H2O	B-Reagent
 using	O
 dust	B-Modifier
 free	I-Modifier
-paper.	B-Device
+paper	B-Device
+.	O
 
 Dissolve	B-Action
 iron	B-Reagent
@@ -173,7 +188,8 @@ flask	I-Location
 by	O
 inverting	B-Action
 several	B-Numerical
-times.	O
+times	O
+.	O
 
 Individually	O
 add	B-Action
@@ -184,17 +200,23 @@ dissolve	B-Action
 each	O
 of	O
 the	O
-ZnSO4,	B-Reagent
-CoCl2,	I-Reagent
-MnCl2,	I-Reagent
-Na2MoO4,	I-Reagent
-NaSeO3,	I-Reagent
+ZnSO4	B-Reagent
+,	O
+CoCl2	B-Reagent
+,	O
+MnCl2	B-Reagent
+,	O
+Na2MoO4	B-Reagent
+,	O
+NaSeO3	B-Reagent
+,	O
 and	O
 NiCl2	B-Reagent
 Primary	I-Reagent
 Trace	I-Reagent
 Metal	I-Reagent
-Stocks.	I-Reagent
+Stocks	I-Reagent
+.	O
 
 Adjust	B-Action
 volume	B-Measure-Type
@@ -203,7 +225,8 @@ to	O
 ml	I-Amount
 mark	O
 with	O
-MQ-water.	B-Reagent
+MQ-water	B-Reagent
+.	I-Reagent
 
 Filter	B-Action
 through	O
@@ -213,20 +236,23 @@ a	O
 syringe	B-Device
 filter	I-Device
 into	O
-sterile,	B-Modifier
-acid	I-Modifier
+sterile	B-Modifier
+,	O
+acid	B-Modifier
 washed	I-Modifier
 container	B-Location
 in	O
 laminar	B-Location
 flow	I-Location
-hood.	I-Location
+hood	I-Location
+.	O
 
 Store	B-Action
 sterile	B-Modifier
 stock	B-Reagent
 at	O
-4°C.	B-Temperature
+4°C	B-Temperature
+.	O
 
 Dispense	B-Action
 5	B-Amount
@@ -240,15 +266,16 @@ to	O
 ml	I-Amount
 bottle	B-Location
 of	O
-Turk's	B-Reagent
+Turk	B-Reagent
+'s	I-Reagent
 Island	I-Reagent
 Salt	I-Reagent
 Mix	I-Reagent
 when	O
 preparing	B-Action
 final	B-Reagent
-medium.
-	I-Reagent
+medium	I-Reagent
+.	O
 
 
 

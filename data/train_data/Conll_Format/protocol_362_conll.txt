@@ -3,13 +3,12 @@ algal	B-Reagent
 viruses	I-Reagent
 by	O
 flow	B-Method
-cytometry
-	I-Method
+cytometry	I-Method
 
 FCM	B-Reagent
 Sample	I-Reagent
-Collection.
-	B-Method
+Collection	B-Method
+.	O
 
 Fix	B-Action
 samples	B-Reagent
@@ -18,14 +17,17 @@ virus	I-Reagent
 and	O
 TE	B-Reagent
 buffer	I-Reagent
-(i.e.,	O
+(	O
+i.e.	O
+,	O
 for	O
 background	O
-noise)	O
+noise	O
+)	O
 as	O
 described	O
-below.
-	O
+below	O
+.	O
 
 Transfer	B-Action
 600	B-Amount
@@ -39,23 +41,27 @@ sterile	B-Modifier
 1.2	B-Amount
 mL	I-Amount
 cryovial	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 6	B-Amount
 µL	I-Amount
-25%	B-Concentration
+25	B-Concentration
+%	I-Concentration
 glutaraldehyde	B-Reagent
-(0.25%	B-Concentration
+(	O
+0.25	B-Concentration
+%	I-Concentration
 final	O
-concentration)	B-Measure-Type
+concentration	B-Measure-Type
+)	O
 and	O
 gently	B-Modifier
 vortex	B-Action
 to	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Aliquot	B-Action
 200	B-Amount
@@ -64,10 +70,13 @@ to	O
 two	B-Numerical
 additional	B-Modifier
 cryovials	B-Location
-(i.e.,	O
+(	O
+i.e.	O
+,	O
 triplicate	B-Reagent
-samples).
-	I-Reagent
+samples	I-Reagent
+)	O
+.	O
 
 Transfer	B-Action
 3	B-Amount
@@ -83,13 +92,14 @@ triplicate	B-Action
 sterile	B-Modifier
 1.2	B-Amount
 mL	I-Amount
-cryovials.
-	B-Location
+cryovials	B-Location
+.	O
 
 Add	B-Action
 10	B-Amount
 µL	I-Amount
-25%	B-Concentration
+25	B-Concentration
+%	I-Concentration
 glut	B-Reagent
 to	O
 each	B-Modifier
@@ -98,8 +108,8 @@ and	O
 gently	B-Modifier
 vortex	B-Action
 to	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Snap	B-Action
 cryovials	B-Location
@@ -114,22 +124,22 @@ for	O
 minutes	I-Time
 in	O
 the	O
-dark.
-	O
+dark	O
+.	O
 
 Flash	B-Action
 freeze	I-Action
 in	O
 liquid	B-Reagent
-nitrogen.
-	I-Reagent
+nitrogen	I-Reagent
+.	O
 
 Store	B-Action
 at	O
 -80°C	B-Temperature
 until	O
-analysis.
-	B-Method
+analysis	B-Method
+.	O
 
 Virus	B-Method
 Dilution	I-Method
@@ -144,15 +154,15 @@ for	O
 viruses	B-Reagent
 immediately	B-Modifier
 after	O
-thawing.
-	B-Action
+thawing	B-Action
+.	O
 
 Store	B-Action
 thawed	B-Modifier
 sample	B-Reagent
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 An	O
 aliquot	B-Action
@@ -169,8 +179,8 @@ diluted	B-Modifier
 virus	B-Reagent
 sample	I-Reagent
 is	O
-incubating.
-	B-Action
+incubating	B-Action
+.	O
 
 Dilute	B-Action
 sample	B-Reagent
@@ -183,14 +193,16 @@ according	O
 to	O
 the	O
 Dilution	B-Method
-Table.
-	O
+Table	O
+.	O
 
-NOTE:	O
+NOTE	O
+:	O
 For	O
 a	O
 new	B-Modifier
-sample,	B-Reagent
+sample	B-Reagent
+,	O
 prepare	B-Action
 multiple	B-Numerical
 dilutions	B-Reagent
@@ -202,8 +214,8 @@ the	O
 most	O
 appropriate	O
 dilution	B-Measure-Type
-factor.
-	I-Measure-Type
+factor	I-Measure-Type
+.	O
 
 Stagger	B-Action
 these	O
@@ -220,8 +232,8 @@ and	O
 back-flushing	B-Action
 between	O
 dilution	O
-tests.
-	O
+tests	O
+.	O
 
 Prepare	B-Action
 a	O
@@ -243,7 +255,8 @@ I	I-Reagent
 nucleic	I-Reagent
 acid	I-Reagent
 stain	I-Reagent
-(this	B-Mention
+(	O
+this	B-Mention
 can	O
 be	O
 pre-aliquoted	B-Modifier
@@ -254,8 +267,9 @@ the	O
 dark	O
 at	O
 room	B-Temperature
-temperature).
-	I-Temperature
+temperature	I-Temperature
+)	O
+.	O
 
 Add	B-Action
 497.5	B-Amount
@@ -268,20 +282,22 @@ to	O
 the	O
 staining	B-Location
 tube	I-Location
-(0.5X	B-Concentration
+(	O
+0.5X	B-Concentration
 SYBR	B-Reagent
 Green	I-Reagent
 I	I-Reagent
 final	O
-conc)	B-Measure-Type
+conc	B-Measure-Type
+)	O
 and	O
 mix	B-Action
 by	O
 pipetting	B-Method
 and	O
 gentle	B-Modifier
-vortexing.
-	B-Action
+vortexing	B-Action
+.	O
 
 Incubate	B-Action
 the	O
@@ -295,11 +311,12 @@ the	O
 dark	O
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 After	O
-incubation,	O
+incubation	O
+,	O
 transfer	B-Action
 480	B-Amount
 µL	I-Amount
@@ -313,8 +330,8 @@ a	O
 mL	I-Amount
 round	B-Location
 bottom	I-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 10	B-Amount
@@ -331,61 +348,72 @@ to	O
 the	O
 5	B-Amount
 mL	I-Amount
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Run	B-Action
 immediately	B-Modifier
 on	O
 HIGH	O
 voltage	O
-settings:	O
+settings	O
+:	O
 Trigger	B-Generic-Measure
 =	I-Generic-Measure
-520,	I-Generic-Measure
-TFSC	I-Generic-Measure
-=	I-Generic-Measure
-40,	I-Generic-Measure
-PFSC	I-Generic-Measure
-=	I-Generic-Measure
-27,	I-Generic-Measure
-SSC	I-Generic-Measure
-=	I-Generic-Measure
-40,	I-Generic-Measure
 520	I-Generic-Measure
+,	O
+TFSC	B-Generic-Measure
 =	I-Generic-Measure
-40,	I-Generic-Measure
-572	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+PFSC	B-Generic-Measure
 =	I-Generic-Measure
-40,	I-Generic-Measure
-692	I-Generic-Measure
+27	I-Generic-Measure
+,	O
+SSC	B-Generic-Measure
 =	I-Generic-Measure
-40.
-	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+520	B-Generic-Measure
+=	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+572	B-Generic-Measure
+=	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+692	B-Generic-Measure
+=	I-Generic-Measure
+40	I-Generic-Measure
+.	O
 
 Load	B-Action
 sample	B-Reagent
 for	O
 2	B-Time
-min,	I-Time
+min	I-Time
+,	O
 run	B-Action
 for	O
 2-4	B-Time
 min	I-Time
-(depending	O
+(	O
+depending	O
 on	O
-concentration),	B-Measure-Type
+concentration	B-Measure-Type
+)	O
+,	O
 and	O
 back-flush	B-Action
 for	O
 2	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Host	B-Reagent
 Cell	I-Reagent
-Counts.
-	O
+Counts	O
+.	O
 
 Run	B-Action
 an	O
@@ -403,8 +431,8 @@ diluted	B-Modifier
 virus	B-Reagent
 sample	I-Reagent
 is	O
-incubating.
-	B-Action
+incubating	B-Action
+.	O
 
 Prepare	B-Action
 a	O
@@ -423,15 +451,16 @@ and	O
 µL	I-Amount
 4°	B-Reagent
 YG	I-Reagent
-beads.
-	I-Reagent
+beads	I-Reagent
+.	O
 
 Depending	O
 on	O
 the	O
 host	B-Reagent
 cell	I-Reagent
-concentration,	B-Measure-Type
+concentration	B-Measure-Type
+,	O
 add	B-Action
 50	B-Amount
 or	O
@@ -442,8 +471,8 @@ to	O
 the	O
 5	B-Amount
 mL	I-Amount
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Bring	O
 volume	B-Reagent
@@ -463,55 +492,67 @@ to	O
 the	O
 5	B-Amount
 mL	I-Amount
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Run	B-Action
 immediately	B-Modifier
 on	O
 LOW	O
 voltage	O
-settings:	O
+settings	O
+:	O
 Trigger	B-Generic-Measure
 =	I-Generic-Measure
-TFSC,	I-Generic-Measure
 TFSC	I-Generic-Measure
+,	O
+TFSC	B-Generic-Measure
 =	I-Generic-Measure
-27,	I-Generic-Measure
-PFSC	I-Generic-Measure
+27	I-Generic-Measure
+,	O
+PFSC	B-Generic-Measure
 =	I-Generic-Measure
-19,	I-Generic-Measure
-SSC	I-Generic-Measure
+19	I-Generic-Measure
+,	O
+SSC	B-Generic-Measure
 =	I-Generic-Measure
-40,	I-Generic-Measure
-520	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+520	B-Generic-Measure
 =	I-Generic-Measure
-40,	I-Generic-Measure
-572	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+572	B-Generic-Measure
 =	I-Generic-Measure
-40,	I-Generic-Measure
-692	I-Generic-Measure
+40	I-Generic-Measure
+,	O
+692	B-Generic-Measure
 =	I-Generic-Measure
-40.
-	I-Generic-Measure
+40	I-Generic-Measure
+.	O
 
 Load	B-Action
 sample	B-Reagent
 for	O
 2	B-Time
-min,	I-Time
+min	I-Time
+,	O
 run	B-Action
 for	O
 2-4	B-Time
 min	I-Time
-(depending	O
+(	O
+depending	O
 on	O
-concentration),	B-Measure-Type
+concentration	B-Measure-Type
+)	O
+,	O
 and	O
 back-flush	B-Action
 for	O
 2	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 
 

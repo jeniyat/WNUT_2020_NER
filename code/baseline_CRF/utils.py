@@ -44,11 +44,10 @@ def make_dir_if_not_exists(dir_name):
 
 
 def preprocess_data(input_standoff_folder_train, output_conll_folder_train, output_conll_file_train,
-    input_standoff_folder_test, output_conll_folder_test, output_conll_file_test,
-    input_standoff_folder_dev, output_conll_folder_dev, output_conll_file_dev):
+    input_standoff_folder_test, output_conll_folder_test, output_conll_file_test):
     anntoconll_wlp.convert_standoff_conll_single_file(input_standoff_folder_train, output_conll_folder_train, output_conll_file_train)
     anntoconll_wlp.convert_standoff_conll_single_file(input_standoff_folder_test, output_conll_folder_test, output_conll_file_test)
-    anntoconll_wlp.convert_standoff_conll_single_file(input_standoff_folder_dev, output_conll_folder_dev, output_conll_file_dev)
+    
 
 
 

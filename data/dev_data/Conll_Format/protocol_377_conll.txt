@@ -1,20 +1,23 @@
 Capped	B-Reagent
 RNA	I-Reagent
 Synthesis	B-Method
-(E2050)
-	O
+(	O
+E2050	O
+)	O
 
 Prepare	B-Action
 40	B-Concentration
 mM	I-Concentration
 cap	B-Reagent
-analog.	I-Reagent
+analog	I-Reagent
+.	O
 
 Thaw	B-Action
 the	O
 necessary	B-Modifier
 kit	B-Reagent
-components,	I-Reagent
+components	I-Reagent
+,	O
 mix	B-Action
 and	O
 pulse-spin	B-Action
@@ -28,7 +31,8 @@ to	O
 the	O
 bottoms	B-Location
 of	O
-tubes.	B-Location
+tubes	B-Location
+.	O
 
 Assemble	B-Action
 the	O
@@ -39,41 +43,50 @@ temperature	I-Temperature
 in	O
 the	O
 following	O
-order.	O
+order	O
+.	O
 
 Mix	B-Action
 thoroughly	B-Modifier
 and	O
-pulse-spin.	B-Action
+pulse-spin	B-Action
+.	O
 
 Incubate	B-Action
 at	O
 37°C	B-Temperature
 for	O
 2	B-Time
-hours.	I-Time
+hours	I-Time
+.	O
 
 Optional	O
-step: To	O
+step	O
+:	O
+To	O
 remove	B-Action
-template	B-Reagent
-DNA,	I-Reagent
+template	I-Action
+DNA	B-Reagent
+,	I-Reagent
 add	B-Action
-2	B-Amount
-μl	I-Amount
-of	O
+2	I-Action
+μl	B-Amount
+of	I-Amount
 DNase	B-Reagent
 I	I-Reagent
-(RNase-free),	B-Modifier
+(	I-Reagent
+RNase-free	B-Modifier
+)	I-Modifier
+,	O
 mix	B-Action
-and	O
-incubate	B-Action
-at	O
+and	I-Action
+incubate	I-Action
+at	I-Action
 37°C	B-Temperature
-for	O
-15	B-Time
-minutes.
-	I-Time
+for	I-Temperature
+15	O
+minutes	B-Time
+.	I-Time
 
 Proceed	B-Action
 with	O
@@ -88,8 +101,7 @@ transcription	B-Reagent
 products	I-Reagent
 by	O
 gel	B-Method
-electrophoresis
-	I-Method
+electrophoresis	I-Method
 
 
 

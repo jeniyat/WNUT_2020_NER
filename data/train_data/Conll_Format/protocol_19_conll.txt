@@ -1,6 +1,5 @@
 Gel	B-Reagent
-Electrophoresis
-	B-Method
+Electrophoresis	B-Method
 
 Pour	B-Action
 100	B-Amount
@@ -12,8 +11,8 @@ Buffer	I-Reagent
 into	O
 an	O
 Erlenmeyer	B-Location
-Flask.
-	I-Location
+Flask	I-Location
+.	O
 
 Weigh	B-Action
 out	I-Action
@@ -26,8 +25,8 @@ it	B-Mention
 to	O
 the	O
 Erlenmeyer	B-Location
-Flask.
-	I-Location
+Flask	I-Location
+.	O
 
 Place	B-Action
 Erlenmeyer	B-Location
@@ -50,10 +49,11 @@ and	O
 agarose	B-Reagent
 is	O
 completely	B-Modifier
-dissolved,	B-Action
+dissolved	B-Action
+,	O
 occasionally	B-Modifier
-stirring.
-	B-Action
+stirring	B-Action
+.	O
 
 Remove	B-Action
 Erlenmeyer	B-Location
@@ -77,8 +77,8 @@ can	O
 comfortably	O
 pick	B-Action
 it	B-Mention
-up.
-	O
+up	O
+.	O
 
 Place	B-Action
 gel	B-Location
@@ -87,8 +87,8 @@ on	O
 clamp	B-Location
 and	O
 clamp	B-Action
-securely.
-	B-Modifier
+securely	B-Modifier
+.	O
 
 Add	B-Action
 well	B-Location
@@ -105,8 +105,8 @@ to	O
 ensure	B-Action
 it	B-Mention
 is	O
-balanced.
-	B-Modifier
+balanced	B-Modifier
+.	O
 
 Pour	B-Action
 contents	B-Reagent
@@ -124,10 +124,12 @@ it	B-Mention
 sit	B-Action
 for	O
 10	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 or	O
-until solid.
-	B-Modifier
+until	O
+solid	B-Modifier
+.	I-Modifier
 
 Remove	B-Action
 the	O
@@ -146,7 +148,8 @@ the	O
 tray	B-Location
 from	O
 the	O
-clamp,	B-Location
+clamp	B-Location
+,	O
 but	O
 ensure	O
 the	O
@@ -154,8 +157,8 @@ gel	B-Reagent
 remains	O
 in	O
 the	O
-tray.
-	B-Location
+tray	B-Location
+.	O
 
 Place	B-Action
 gel	B-Location
@@ -171,8 +174,8 @@ closer	O
 to	O
 the	O
 negative/black	B-Location
-end.
-	I-Location
+end	I-Location
+.	O
 
 Pour	B-Action
 additional	B-Modifier
@@ -198,23 +201,24 @@ the	O
 top	B-Location
 of	O
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Pipette	B-Action
-5 uL	B-Amount
-of	O
+5	B-Amount
+uL	I-Amount
+of	I-Amount
 the	O
 1kb	B-Generic-Measure
-DNA	B-Reagent
-Ladder	I-Reagent
-with	O
-Loading	B-Reagent
+DNA	I-Generic-Measure
+Ladder	B-Reagent
+with	I-Reagent
+Loading	I-Reagent
 Dye	I-Reagent
-into	O
+into	I-Reagent
 a	O
-well.
-	B-Location
+well	B-Location
+.	I-Location
 
 Typically	O
 this	B-Mention
@@ -227,29 +231,31 @@ the	O
 wells	B-Location
 near	O
 an	O
-edge.
-	B-Location
+edge	B-Location
+.	O
 
 Pipette	B-Action
 your	B-Reagent
-DNA,	I-Reagent
+DNA	I-Reagent
+,	O
 approximately	B-Modifier
 20	B-Amount
-uL,	I-Amount
+uL	I-Amount
+,	O
 with	O
 Loading	B-Reagent
 Dye	I-Reagent
 mixture	I-Reagent
 into	O
 another	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Repeat	B-Action
 for	O
 each	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 Place	B-Action
 lid	B-Seal
@@ -259,8 +265,8 @@ and	O
 plug	B-Action
 cables	B-Seal
 into	O
-amplifier.
-	B-Device
+amplifier	B-Device
+.	O
 
 Set	B-Action
 amplifier	B-Device
@@ -276,16 +282,17 @@ V.	I-Generic-Measure
 Let	O
 run	B-Action
 for	O
-45 minutes	B-Time
-or	O
+45	B-Time
+minutes	I-Time
+or	I-Time
 until	O
 the	O
 loading	B-Reagent
 dye	I-Reagent
-has	O
+has	I-Reagent
 sufficiently	B-Modifier
-moved.
-	B-Action
+moved	I-Modifier
+.	B-Action
 
 Remove	B-Action
 gel	B-Reagent
@@ -296,8 +303,8 @@ after	O
 draining	B-Action
 excess	B-Reagent
 TAE	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Place	B-Action
 gel	B-Reagent
@@ -305,9 +312,11 @@ into	O
 a	O
 bin	B-Location
 with	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 Ethidium	B-Reagent
-Bromide,	I-Reagent
+Bromide	I-Reagent
+,	O
 ensuring	B-Action
 the	O
 solution	B-Reagent
@@ -317,8 +326,8 @@ come	O
 into	O
 contact	O
 with	O
-skin.
-	B-Location
+skin	B-Location
+.	O
 
 Clean	B-Action
 all	O
@@ -331,37 +340,43 @@ in	O
 contact	B-Action
 with	O
 ethidium	B-Reagent
-bromide,	I-Reagent
+bromide	I-Reagent
+,	O
 place	B-Action
 gloves	O
 in	O
 a	O
 bin	B-Location
 labelled	I-Location
-"Ethidium	I-Location
-Bromide",	I-Location
-and	O
-wash	B-Action
+``	I-Location
+Ethidium	I-Location
+Bromide	I-Location
+''	O
+,	O
+and	B-Action
+wash	I-Action
 hands	O
 repeatedly	O
-afterwards.
-	O
+afterwards	O
+.	O
 
 Let	O
 gel	B-Reagent
 sit	B-Action
 for	O
 15	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Carefully	B-Modifier
 removing	B-Action
 the	O
-gel,	B-Reagent
+gel	B-Reagent
+,	O
 to	O
 avoid	O
-splashes,	O
+splashes	O
+,	O
 place	B-Action
 on	O
 top	B-Location
@@ -372,8 +387,8 @@ light	I-Location
 source	I-Location
 with	I-Location
 a	I-Location
-camera.
-	I-Location
+camera	I-Location
+.	O
 
 In	O
 as	O
@@ -382,7 +397,8 @@ a	O
 time	O
 as	O
 is	O
-possible,	O
+possible	O
+,	O
 turn	B-Action
 on	I-Action
 the	O
@@ -394,17 +410,18 @@ a	O
 photograph	B-Device
 of	O
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Remove	B-Action
 band	B-Location
 if	O
 purifying	B-Action
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
-Otherwise,	O
+Otherwise	O
+,	O
 carefully	B-Modifier
 dispose	B-Action
 of	O
@@ -414,9 +431,11 @@ into	O
 a	O
 wastebin	B-Location
 labelled	O
-"Ethidium	B-Reagent
-Bromide".
-	I-Reagent
+``	B-Reagent
+Ethidium	I-Reagent
+Bromide	I-Reagent
+''	O
+.	O
 
 
 

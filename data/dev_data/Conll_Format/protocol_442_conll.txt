@@ -1,7 +1,6 @@
 LB	B-Reagent
 Agar	I-Reagent
-Plates
-	B-Location
+Plates	B-Location
 
 Weigh	B-Action
 out	I-Action
@@ -11,25 +10,31 @@ into	O
 a	O
 1L	B-Amount
 Erlenmeyer	B-Location
-flask:	I-Location
+flask	I-Location
+:	O
 5g	B-Amount
 NaCl	B-Reagent
 5g	B-Amount
 Tryptone	B-Reagent
 2.5g	B-Amount
-Yeast.	B-Reagent
+Yeast	B-Reagent
+.	O
 
 Extract	B-Action
 7.5g	B-Amount
 Agar	B-Reagent
 add	B-Action
-(dH2O)	B-Reagent
+(	O
+dH2O	B-Reagent
+)	O
 to	O
-500mL.	B-Amount
+500mL	B-Amount
+.	O
 
 Swirl	B-Action
 to	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Cover	B-Action
 the	O
@@ -44,8 +49,8 @@ and	O
 label	B-Action
 with	O
 autoclave	B-Seal
-tape.
-	I-Seal
+tape	I-Seal
+.	O
 
 Autoclave	B-Action
 on	O
@@ -59,9 +64,10 @@ or	O
 according	O
 to	O
 your	O
-autoclave's	B-Device
-specifications.
-	O
+autoclave	B-Device
+'s	I-Device
+specifications	O
+.	O
 
 After	O
 removing	B-Action
@@ -69,7 +75,8 @@ the	O
 solution	B-Reagent
 from	O
 the	O
-autoclave,	B-Device
+autoclave	B-Device
+,	O
 allow	B-Action
 the	O
 agar	B-Reagent
@@ -77,8 +84,8 @@ solution	I-Reagent
 to	O
 cool	B-Action
 to	O
-55°C.
-	B-Temperature
+55°C	B-Temperature
+.	O
 
 Add	B-Action
 the	O
@@ -90,7 +97,8 @@ antibiotic	B-Reagent
 to	O
 the	O
 solution	B-Reagent
-(500μL	B-Amount
+(	O
+500μL	B-Amount
 if	O
 you	O
 are	O
@@ -98,12 +106,13 @@ using	O
 a	O
 1,000x	B-Concentration
 antibiotic	B-Reagent
-stock)	I-Reagent
+stock	I-Reagent
+)	O
 and	O
 swirl	B-Action
 to	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Pour	B-Action
 ~20mL	B-Modifier
@@ -114,8 +123,8 @@ per	O
 10cm	B-Size
 polystyrene	B-Modifier
 Petri	B-Location
-dish.
-	I-Location
+dish	I-Location
+.	O
 
 Place	B-Action
 the	O
@@ -131,8 +140,11 @@ cool	B-Action
 for	O
 30-60	B-Time
 minutes	I-Time
-(until	O
-solidified).	B-Modifier
+(	O
+until	O
+solidified	B-Modifier
+)	O
+.	O
 
 Invert	B-Action
 the	O
@@ -145,8 +157,8 @@ several	B-Time
 more	I-Time
 hours	I-Time
 or	O
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Label	B-Action
 the	O
@@ -167,8 +179,8 @@ sealed	B-Action
 with	O
 parafilm	B-Seal
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 
 

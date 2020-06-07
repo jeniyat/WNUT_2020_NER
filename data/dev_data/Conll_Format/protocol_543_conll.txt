@@ -7,8 +7,7 @@ with	O
 Surface	B-Modifier
 and	I-Modifier
 Fluorescent	I-Modifier
-Proteins
-	B-Reagent
+Proteins	B-Reagent
 
 Pulse	B-Action
 actively	B-Reagent
@@ -16,8 +15,10 @@ dividing	I-Reagent
 cells	I-Reagent
 with	O
 BrdU	B-Reagent
-(in	B-Modifier
-vitro,	I-Modifier
+(	O
+in	B-Modifier
+vitro	I-Modifier
+,	O
 cell	B-Reagent
 culture	I-Reagent
 media	I-Reagent
@@ -32,8 +33,9 @@ of	O
 BrdU	B-Reagent
 for	O
 1-2	B-Time
-hours).
-	I-Time
+hours	I-Time
+)	O
+.	O
 
 Harvest	B-Action
 cells	B-Reagent
@@ -45,18 +47,24 @@ minutes	I-Time
 at	O
 1200-1500	B-Speed
 rpm	I-Speed
-(200-300	I-Speed
+(	O
+200-300	B-Speed
 x	I-Speed
-g)	I-Speed
+g	I-Speed
+)	O
 Wash	B-Action
 cells	B-Reagent
 in	O
 Cell	B-Reagent
 Staining	I-Reagent
 Buffer	I-Reagent
-(Cat.	O
-No.	O
-420201)	O
+(	O
+Cat	O
+.	O
+No	O
+.	O
+420201	O
+)	O
 and	O
 centrifuge	B-Action
 for	O
@@ -65,13 +73,16 @@ minutes	I-Time
 at	O
 1200-1500	B-Speed
 rpm	I-Speed
-(200-300	I-Speed
+(	O
+200-300	B-Speed
 x	I-Speed
-g).
-	I-Speed
+g	I-Speed
+)	O
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Aliquot	B-Action
 5	B-Amount
@@ -86,16 +97,19 @@ per	O
 x	O
 75	B-Size
 mm	I-Size
-tube.	B-Location
+tube	B-Location
+.	O
 
-Optional:	B-Modifier
+Optional	B-Modifier
+:	O
 Stain	B-Action
 cells	B-Reagent
 for	O
 surface	B-Reagent
 antigens	I-Reagent
 if	B-Modifier
-required,	I-Modifier
+required	I-Modifier
+,	O
 utilizing	O
 the	O
 Cell	B-Method
@@ -103,8 +117,11 @@ Surface	I-Method
 Immunofluorescence	I-Method
 Staining	I-Method
 Protocol	I-Method
-(see	O
-link).	O
+(	O
+see	O
+link	O
+)	O
+.	O
 
 Wash	B-Action
 cells	B-Reagent
@@ -127,13 +144,16 @@ minutes	I-Time
 at	O
 1200-1500	B-Speed
 rpm	I-Speed
-(200-300	I-Speed
+(	O
+200-300	B-Speed
 x	I-Speed
-g).
-	I-Speed
+g	I-Speed
+)	O
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Fix	B-Action
 cells	B-Reagent
@@ -142,14 +162,16 @@ adding	B-Action
 100	B-Amount
 μl	I-Amount
 of	O
-4%	B-Concentration
+4	B-Concentration
+%	I-Concentration
 paraformaldehyde	B-Reagent
 at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
 20-30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Wash	B-Action
 cells	B-Reagent
@@ -157,10 +179,12 @@ by	O
 repeating	O
 step	B-Method
 6	I-Method
-twice.
-	B-Numerical
+twice	B-Numerical
+.	O
 
-(Optional:	B-Modifier
+(	O
+Optional	B-Modifier
+:	O
 Cells	B-Reagent
 can	O
 be	O
@@ -174,8 +198,9 @@ for	B-Modifier
 up	I-Modifier
 to	I-Modifier
 72	B-Time
-hrs).
-	I-Time
+hrs	I-Time
+)	O
+.	O
 
 Permeabilize	B-Action
 cells	B-Reagent
@@ -184,7 +209,8 @@ adding	B-Action
 500	B-Amount
 μl	I-Amount
 of	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 Triton-X	B-Reagent
 100	I-Reagent
 in	O
@@ -194,7 +220,8 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Wash	B-Action
 cells	B-Reagent
@@ -202,7 +229,8 @@ by	O
 repeating	O
 step	B-Method
 6	I-Method
-twice.	B-Numerical
+twice	B-Numerical
+.	O
 
 Treat	B-Action
 cells	B-Reagent
@@ -211,10 +239,15 @@ with	O
 μg	I-Amount
 of	O
 DNAse	B-Reagent
-(Cat.	O
-No.	O
-D4513,	O
-Sigma-Aldrich)	O
+(	O
+Cat	O
+.	O
+No	O
+.	O
+D4513	O
+,	O
+Sigma-Aldrich	O
+)	O
 diluted	B-Action
 in	O
 DPBS	B-Reagent
@@ -231,8 +264,8 @@ at	O
 37⁰C	B-Temperature
 for	O
 1	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Wash	B-Action
 cells	B-Reagent
@@ -240,7 +273,8 @@ by	O
 repeating	O
 step	B-Method
 6	I-Method
-twice.	B-Numerical
+twice	B-Numerical
+.	O
 
 Add	B-Action
 50	B-Amount
@@ -262,8 +296,8 @@ anti-BrdU	B-Reagent
 antibody	I-Reagent
 to	O
 each	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Incubate	B-Action
 for	O
@@ -277,8 +311,8 @@ the	O
 dark	B-Method
 Repeat	B-Action
 step	B-Method
-6.
-	I-Method
+6	I-Method
+.	O
 
 Stain	B-Action
 DNA	B-Reagent
@@ -289,15 +323,23 @@ adding	B-Action
 of	O
 either	O
 7-AAD	B-Reagent
-(Cat.	O
-No.	O
-420403)	O
+(	O
+Cat	O
+.	O
+No	O
+.	O
+420403	O
+)	O
 or	O
 DAPI	B-Reagent
-(Cat.	O
-No.	O
-422801).
-	O
+(	O
+Cat	O
+.	O
+No	O
+.	O
+422801	O
+)	O
+.	O
 
 Wait	B-Action
 for	O
@@ -309,8 +351,8 @@ acquiring	B-Action
 samples	B-Reagent
 on	O
 flow	B-Device
-cytometer.
-	I-Device
+cytometer	I-Device
+.	O
 
 
 

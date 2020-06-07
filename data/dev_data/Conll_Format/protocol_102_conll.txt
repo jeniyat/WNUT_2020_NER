@@ -1,8 +1,7 @@
 FlowCam	B-Device
 Standard	B-Method
 Operating	I-Method
-Procedure
-	O
+Procedure	O
 
 Turn	B-Action
 on	I-Action
@@ -20,8 +19,8 @@ turn	B-Action
 on	I-Action
 computer	B-Device
 and	O
-machine.
-	B-Device
+machine	B-Device
+.	O
 
 Instal	B-Action
 flow	B-Location
@@ -37,60 +36,66 @@ cell	I-Location
 tubing	I-Location
 based	O
 on	O
-application.
-	O
+application	O
+.	O
 
-(In	O
+(	O
+In	O
 general	O
 we	O
 use	O
-the 100	B-Size
+the	O
+100	B-Size
 um	I-Size
 x	I-Size
 1	I-Size
 mm	I-Size
-flow	B-Location
-cell).Use	I-Location
+flow	I-Size
+cell	B-Location
+)	I-Location
+.Use	O
 a	O
 kimwipe	B-Location
-or	O
-lens	B-Location
+or	I-Location
+lens	I-Location
 paper	I-Location
-to	O
+to	I-Location
 gently	O
-clean the	B-Action
+clean	B-Action
+the	I-Action
 glass	B-Location
 portion	I-Location
-of	O
+of	I-Location
 the	O
 flow	B-Location
 cell.Insert	I-Location
-glass	I-Location
-portion	I-Location
-of	O
+glass	B-Action
+portion	B-Location
+of	I-Location
 the	O
 flow	B-Location
 cell	I-Location
-into	O
-the flow	B-Location
+into	I-Location
+the	O
+flow	B-Location
 cell	I-Location
 holder.Secure	I-Location
-flow	I-Location
-cell	I-Location
-by	O
-gently	B-Modifier
-screwing	B-Action
-the	O
-male	B-Device
-threaded	I-Device
+flow	B-Action
+cell	B-Location
+by	I-Location
+gently	I-Location
+screwing	B-Modifier
+the	B-Action
+male	O
+threaded	B-Device
 holder	I-Device
-until	O
+until	I-Device
 the	O
-flow	B-Location
-cell	I-Location
-is	O
-stationary.
-	B-Modifier
+flow	O
+cell	B-Location
+is	I-Location
+stationary	I-Location
+.	B-Modifier
 
 Be	O
 careful	O
@@ -107,11 +112,12 @@ breaking	B-Action
 the	O
 fragile	B-Modifier
 flow	B-Location
-cell.
-	I-Location
+cell	I-Location
+.	O
 
-Note:	O
- Since	O
+Note	O
+:	O
+Since	O
 there	O
 are	O
 multiple	O
@@ -119,19 +125,19 @@ projects	O
 using	O
 the	O
 FlowCam	B-Device
-be	O
+be	I-Device
 sure	O
 to	O
 select	B-Action
-the	O
+the	I-Action
 flow	B-Location
 cell	I-Location
-labeled	B-Modifier
-for	O
+labeled	I-Location
+for	B-Modifier
 each	O
 specific	O
-project.
-	O
+project	O
+.	O
 
 Instal	B-Action
 the	O
@@ -152,16 +158,18 @@ are	O
 compatible	O
 with	O
 each	O
-other.
-	O
+other	O
+.	O
 
 For	O
-example,	O
+example	O
+,	O
 when	O
 using	B-Action
 the	O
 10X	B-Generic-Measure
-lens,	B-Device
+lens	B-Device
+,	O
 use	B-Action
 the	O
 corresponding	O
@@ -183,9 +191,11 @@ collimnator.Install	B-Device
 flow	B-Location
 cell	I-Location
 holder	I-Location
-(screw	O
+(	O
+screw	O
 pointing	O
-up)	O
+up	O
+)	O
 into	O
 the	O
 flow	B-Location
@@ -199,8 +209,8 @@ middle	B-Location
 of	O
 the	O
 camera	B-Device
-apparatus.
-	I-Device
+apparatus	I-Device
+.	O
 
 Tighten	B-Action
 screw	B-Device
@@ -225,8 +235,8 @@ the	O
 bottom	B-Seal
 of	O
 sample	B-Location
-funnel.
-	I-Location
+funnel	I-Location
+.	O
 
 Insert	B-Action
 bottom	B-Location
@@ -234,8 +244,8 @@ tubing	I-Location
 into	O
 tip	B-Seal
 of	O
-syringe.
-	B-Device
+syringe	B-Device
+.	O
 
 Insert	B-Action
 syringe-out	B-Location
@@ -245,8 +255,8 @@ small	B-Location
 beaker	I-Location
 for	O
 collecting	B-Action
-waste.
-	B-Reagent
+waste	B-Reagent
+.	O
 
 Flush	B-Action
 Flow	B-Location
@@ -272,74 +282,86 @@ showing	O
 up	O
 in	O
 your	O
-sample.1.
-	B-Reagent
+sample.1	B-Reagent
+.	O
 
 Load	B-Action
 the	O
 funnel	B-Device
 with	O
-ddH2O.2.
-	B-Reagent
+ddH2O.2	B-Reagent
+.	O
 
 On	O
 the	O
 top	O
 menu	O
-bar,	O
-click Setup ->	B-Action
-Pump ->	O
-Flush  3.
-	O
+bar	O
+,	O
+click	B-Action
+Setup	O
+-	O
+>	O
+Pump	O
+-	O
+>	O
+Flush	O
+3	O
+.	O
 
 Set	B-Action
 to	O
 4-5	B-Generic-Measure
-cycles.4.
-	I-Generic-Measure
+cycles.4	I-Generic-Measure
+.	O
 
 Click	O
 Start	O
 Load	B-Action
-Sample1.
-	B-Reagent
+Sample1	B-Reagent
+.	O
 
 Use	O
 pipet	B-Location
 to	O
-draw sample	B-Action
-from	O
+draw	B-Action
+sample	B-Reagent
+from	I-Reagent
 your	O
-container.
-	B-Location
+container	B-Location
+.	I-Location
 
 Usually	O
 about	O
 0.2-0.5	B-Amount
-mL of	I-Amount
+mL	I-Amount
+of	O
 homogenized	B-Reagent
 sample	I-Reagent
-is	O
-sufficient.
-	O
+is	I-Reagent
+sufficient	O
+.	O
 
 For	O
 dense	B-Modifier
-cultures,	B-Reagent
+cultures	B-Reagent
+,	O
 a	O
 dilution	B-Method
 may	O
 be	O
 appropiate	O
-(Be	O
+(	O
+Be	O
 sure	O
 to	O
 note	O
 this	O
 in	O
 your	O
-files).
-	O
+files	O
+)	O
+.	O
 
 Sieving	B-Action
 is	O
@@ -352,11 +374,11 @@ might	O
 have	O
 detritus	B-Reagent
 or	O
-zooplankton.
-	B-Reagent
+zooplankton	B-Reagent
+.	O
 
-2.
-	O
+2	O
+.	O
 
 Lower	B-Action
 tip	B-Location
@@ -367,8 +389,8 @@ bottom	B-Seal
 of	O
 P1000	B-Location
 sample	I-Location
-funnel.
-	I-Location
+funnel	I-Location
+.	O
 
 Forcibly	B-Modifier
 squeeze	B-Action
@@ -384,33 +406,43 @@ one	B-Numerical
 liquid	B-Reagent
 mass	I-Reagent
 and	O
-doesn't	O
+does	O
+n't	O
 stick	O
 to	O
 the	O
 walls	B-Location
 of	O
 the	O
-funnel.
-	B-Device
+funnel	B-Device
+.	O
 
-3.
-	O
+3	O
+.	O
 
 On	O
 the	O
 top	O
 menu	O
-bar,	O
-click Setup ->	B-Action
-Pump -> Prime	O
-->	O
+bar	O
+,	O
+click	B-Action
+Setup	O
+-	O
+>	O
+Pump	O
+-	O
+>	O
+Prime	O
+-	O
+>	O
 Aspirate	B-Action
-0.500mL	B-Amount
-from	O
-Flow	B-Location
-Cell   4.
-	I-Location
+0.500mL	I-Action
+from	B-Amount
+Flow	O
+Cell	B-Location
+4	I-Location
+.	I-Location
 
 Click	B-Action
 Stop	B-Method
@@ -425,9 +457,11 @@ the	O
 flow	B-Location
 cell	I-Location
 Run	O
-Context Click	B-Action
-on Context.
-	B-Method
+Context	O
+Click	B-Action
+on	I-Action
+Context	B-Method
+.	I-Method
 
 A	O
 window	O
@@ -436,90 +470,113 @@ several	O
 tabs	O
 will	O
 pop	O
-up.
-	O
+up	O
+.	O
 
 Notes	O
 Tab	O
 -	O
 any	O
 relevant	O
-metadata.
-	O
+metadata	O
+.	O
 
 There	O
 is	O
 a	O
 file	O
 on	O
-the Desktop that	O
+the	O
+Desktop	O
+that	O
 can	O
 be	O
 pasted	O
 and	O
 modified	O
 as	O
-needed.
-	O
+needed	O
+.	O
 
 This	O
 file	O
 includes	O
 lines	O
 for	O
-date,	B-Measure-Type
-experiment,	I-Measure-Type
-strain,	I-Measure-Type
-species,	I-Measure-Type
-magnification,	I-Measure-Type
+date	B-Measure-Type
+,	O
+experiment	B-Measure-Type
+,	O
+strain	B-Measure-Type
+,	O
+species	B-Measure-Type
+,	O
+magnification	B-Measure-Type
+,	O
 flow	B-Location
-cell,	I-Location
-syringe,	B-Device
-dilution,	B-Measure-Type
+cell	I-Location
+,	O
+syringe	B-Device
+,	O
+dilution	B-Measure-Type
+,	O
 etc.Fluidics	O
 tab	O
 -	O
 Adjust	B-Action
 here	O
-the sample	B-Reagent
-volume	B-Measure-Type
-(usually	O
-1	B-Amount
-mL),	I-Amount
+the	O
+sample	B-Reagent
+volume	I-Reagent
+(	B-Measure-Type
+usually	O
+1	O
+mL	B-Amount
+)	I-Amount
+,	O
 relative	O
 to	O
-the stop	O
+the	O
+stop	O
 rule	O
-(see	O
-below).
-	O
+(	O
+see	O
+below	O
+)	O
+.	O
 
-Also,	O
+Also	O
+,	O
 make	O
 sure	O
-the efficiency is	B-Measure-Type
+the	O
+efficiency	B-Measure-Type
+is	I-Measure-Type
 near	O
-25%.Flow	B-Generic-Measure
+25	O
+%	B-Generic-Measure
+.Flow	I-Generic-Measure
 cell	B-Location
-tab	O
+tab	I-Location
 -	O
 Adjust	B-Action
-the	O
+the	I-Action
 tube	B-Measure-Type
 length	I-Measure-Type
-below	O
+below	I-Measure-Type
 the	O
 flow	B-Location
-cell.
-	I-Location
+cell	I-Location
+.	I-Location
 
 By	O
 default	O
 it	O
 is	O
-at 0	B-Size
-cm.
-	I-Size
+at	O
+0	O
+cm	B-Size
+.	I-Size
 
 Our	O
 flow	B-Location
@@ -532,11 +589,12 @@ have	O
 cm	I-Size
 tubing	B-Location
 above	O
-and 20	B-Size
+and	O
+20	B-Size
 cm	I-Size
-tubing	B-Location
-below.
-	O
+tubing	I-Size
+below	B-Location
+.	O
 
 Stop	O
 tab	O
@@ -546,20 +604,23 @@ rule	O
 for	O
 terminating	B-Action
 the	O
-run.
-	O
+run	O
+.	O
 
 Usually	O
-after 100	B-Amount
+after	O
+100	B-Amount
 uL	I-Amount
-(0.1	I-Amount
-mL)	I-Amount
+(	I-Amount
+0.1	I-Amount
+mL	I-Amount
+)	I-Amount
 of	O
 sample	B-Reagent
-has	O
+has	I-Reagent
 been	O
-imaged.
-	B-Action
+imaged	B-Action
+.	I-Action
 
 This	O
 works	O
@@ -574,21 +635,26 @@ a	O
 short	B-Modifier
 priming	B-Action
 step	O
-(see	O
+(	O
+see	O
 Setup	O
 and	O
 Focus	O
-below).Reports	O
+below	O
+)	O
+.Reports	O
 tab	O
 -	O
 Check	B-Action
-the export	O
+the	O
+export	O
 data	O
-and export	B-Action
-summary	O
+and	O
+export	B-Action
+summary	I-Action
 data	O
-checkboxes.
-	O
+checkboxes	O
+.	O
 
 This	O
 saves	B-Action
@@ -597,10 +663,12 @@ measurements	B-Measure-Type
 of	O
 all	O
 captured	B-Modifier
-particles.
-	B-Reagent
+particles	B-Reagent
+.	O
 
-The list file	O
+The	O
+list	O
+file	O
 with	O
 collages	O
 of	O
@@ -621,16 +689,17 @@ and	O
 load	O
 them	O
 as	O
-needed.
-	O
+needed	O
+.	O
 
 Setup	O
 and	O
-Focus1.
-	O
+Focus1	O
+.	O
 
-Click Setup/Focus.
-	B-Action
+Click	B-Action
+Setup/Focus	B-Method
+.	I-Method
 
 A	O
 window	O
@@ -645,8 +714,8 @@ view	O
 of	O
 the	O
 flow	B-Location
-cell.2.
-	I-Location
+cell.2	I-Location
+.	O
 
 Use	O
 the	O
@@ -657,9 +726,10 @@ adjustment	O
 knobs	B-Device
 to	O
 center	B-Action
-the flow	B-Reagent
-cell.3.
-	I-Reagent
+the	O
+flow	B-Reagent
+cell.3	I-Reagent
+.	O
 
 Use	O
 the	O
@@ -673,27 +743,32 @@ bring	B-Action
 the	O
 sample	B-Reagent
 into	O
-focus.
-	O
+focus	O
+.	O
 
 Run	B-Action
-Sample1.
-	B-Reagent
+Sample1	B-Reagent
+.	O
 
-Click Autoimage.2.
-	B-Action
+Click	B-Action
+Autoimage.2	B-Method
+.	I-Method
 
 A	O
 pop-up	O
 with	O
-your Notes	O
-and Stop	O
+your	O
+Notes	O
+and	O
+Stop	O
 rule	O
-(Context)	O
+(	O
+Context	O
+)	O
 will	O
 show	O
-up.
-	O
+up	O
+.	O
 
 You	O
 can	O
@@ -706,26 +781,32 @@ automatically	O
 stop	B-Action
 the	O
 run	O
-(e.g.	O
+(	O
+e.g	O
+.	O
 #	B-Measure-Type
 of	I-Measure-Type
-events,	I-Measure-Type
-volume	I-Measure-Type
+events	I-Measure-Type
+,	O
+volume	B-Measure-Type
 or	O
-time)	B-Measure-Type
+time	B-Measure-Type
+)	O
 or	O
 leave	B-Action
 the	O
 'Stop	O
 when	O
 user	O
-terminates...'	O
+terminates	O
+...	O
+'	O
 button	B-Method
 checked	B-Action
 and	O
 manually	B-Method
-stop.3.
-	I-Method
+stop.3	I-Method
+.	O
 
 A	O
 window	O
@@ -739,8 +820,8 @@ run	O
 will	O
 pop	O
 up	O
-next.
-	O
+next	O
+.	O
 
 Make	B-Action
 an	O
@@ -753,31 +834,40 @@ info	O
 in	O
 the	O
 title	O
-(date,	B-Measure-Type
-strain	I-Measure-Type
-info,	I-Measure-Type
-magnification,	I-Measure-Type
-flow	I-Measure-Type
+(	O
+date	B-Measure-Type
+,	O
+strain	B-Measure-Type
+info	I-Measure-Type
+,	O
+magnification	B-Measure-Type
+,	O
+flow	B-Measure-Type
 cell	I-Measure-Type
-size,	I-Measure-Type
-dilution,	I-Measure-Type
-etc.)	O
+size	I-Measure-Type
+,	O
+dilution	B-Measure-Type
+,	O
+etc	O
+.	O
+)	O
 and	O
 click	B-Action
-save.
-	B-Method
+save	B-Method
+.	O
 
 Once	O
 folder	O
 has	O
 been	O
-named,	O
+named	O
+,	O
 the	O
 sample	B-Reagent
 run	B-Action
 will	O
-begin.4.
-	O
+begin.4	O
+.	O
 
 The	O
 sample	B-Reagent
@@ -785,32 +875,37 @@ will	O
 run	B-Action
 until	O
 the	O
-criteria of	O
+criteria	O
+of	O
 the	O
 set	O
 Stop	O
-Conditions are	O
+Conditions	O
+are	O
 reached	O
 or	O
 the	O
 user	O
 terminates	B-Action
-the	O
+the	I-Action
 run	O
 by	O
 pressing	B-Action
-the Autoimage button	B-Method
-which	O
+the	I-Action
+Autoimage	B-Method
+button	I-Method
+which	I-Method
 will	O
 now	O
 display	O
 a	O
 red	O
 stop	O
-symbol.
-	O
+symbol	O
+.	O
 
-Data The	O
+Data	O
+The	O
 data	O
 will	O
 be	O
@@ -823,37 +918,46 @@ the	O
 Visual	O
 Spreadsheet	O
 page.Select	B-Action
-your	O
+your	I-Action
 data	B-Reagent
-(either	O
+(	I-Reagent
+either	O
 by	O
 clicking	B-Action
 on	I-Action
-the	O
+the	I-Action
 desired	O
-filter or	B-Device
-highlighting portions	B-Action
+filter	B-Device
+or	I-Device
+highlighting	B-Action
+portions	I-Action
 of	O
 the	O
-graphs and	B-Measure-Type
-selecting Open	B-Action
-View to	B-Method
-evaluate	O
+graphs	B-Measure-Type
+and	I-Measure-Type
+selecting	B-Action
+Open	I-Action
+View	B-Method
+to	I-Method
+evaluate	I-Method
 the	O
-images.Adjust	B-Action
-for	O
-any	O
-dilution	B-Reagent
-used	O
-in Context	B-Method
-->	I-Method
+images.Adjust	O
+for	B-Action
+any	I-Action
+dilution	O
+used	B-Reagent
+in	I-Reagent
+Context	O
+-	B-Method
+>	I-Method
 Fluidics	I-Method
-and	O
-checking	B-Action
-the Sample	B-Method
-Dilution	I-Method
-box.
-	I-Method
+and	I-Method
+checking	I-Method
+the	B-Action
+Sample	I-Action
+Dilution	B-Method
+box	I-Method
+.	I-Method
 
 Enter	B-Action
 in	I-Action
@@ -863,23 +967,26 @@ of	O
 the	O
 dilution	B-Reagent
 used	O
-(volume	B-Measure-Type
+(	O
+volume	B-Measure-Type
 of	O
 sample	B-Reagent
 /	O
 total	O
-volume)	B-Measure-Type
- Particles	I-Measure-Type
+volume	B-Measure-Type
+)	O
+Particles	B-Measure-Type
 /	I-Measure-Type
 mL	I-Measure-Type
-is	O
+is	I-Measure-Type
 the	O
 cell	B-Measure-Type
-count Make	I-Measure-Type
+count	I-Measure-Type
+Make	I-Measure-Type
 sure	O
 the	O
 Efficiency	B-Measure-Type
-is	O
+is	I-Measure-Type
 within	O
 the	O
 range	O
@@ -887,20 +994,22 @@ of	O
 the	O
 flow	B-Location
 cell	I-Location
-being	O
-used.
-	O
+being	I-Location
+used	O
+.	O
 
-Note: Be	O
+Note	O
+:	O
+Be	O
 sure	O
 to	O
 flush	B-Action
-the	O
+the	I-Action
 flow	B-Reagent
 cell	I-Reagent
-between	O
-samples.
-	B-Action
+between	I-Reagent
+samples	B-Action
+.	I-Action
 
 Flush	B-Action
 Flow	B-Reagent
@@ -912,44 +1021,52 @@ the	O
 flow	B-Location
 cell	I-Location
 between	O
-samples to	B-Action
+samples	B-Action
+to	I-Action
 prevent	I-Action
-any	O
+any	I-Action
 previous	O
 cellular	B-Reagent
 material	I-Reagent
-or	O
-debris	B-Reagent
-from	O
+or	I-Reagent
+debris	I-Reagent
+from	I-Reagent
 showing	O
 up	O
 in	O
 your	O
-sample.1.
-	B-Reagent
+sample.1	B-Reagent
+.	O
 
 Load	B-Action
 the	O
 funnel	B-Device
 with	O
-ddH2O.2.
-	B-Reagent
+ddH2O.2	B-Reagent
+.	O
 
 On	O
 the	O
 top	O
 menu	O
-bar,	O
-click Setup ->	B-Action
-Pump ->	O
-Flush  3.
-	O
+bar	O
+,	O
+click	B-Action
+Setup	O
+-	O
+>	O
+Pump	O
+-	O
+>	O
+Flush	O
+3	O
+.	O
 
 Set	B-Action
 to	O
 4-5	B-Numerical
-cycles.4.
-	I-Numerical
+cycles.4	I-Numerical
+.	O
 
 Click	B-Action
 Start	O
@@ -957,16 +1074,18 @@ Continue	O
 running	O
 or	O
 Shut	O
-down To	O
+down	O
+To	O
 continue	O
 running	B-Action
-samples	B-Reagent
-repeat	O
+samples	I-Action
+repeat	B-Reagent
 steps	O
 5	O
 -	O
 10	O
-(skip	O
+(	O
+skip	O
 steps	O
 6	O
 &	O
@@ -975,17 +1094,20 @@ as	O
 the	O
 settings	O
 are	O
-already saved).To	O
+already	O
+saved	O
+)	O
+.To	O
 shut	O
 down	O
 continue	O
 to	O
 step	O
-12.
-	O
+12	O
+.	O
 
-Dissasembly1.
-	B-Action
+Dissasembly1	B-Action
+.	O
 
 Remove	B-Action
 the	O
@@ -997,11 +1119,11 @@ tip	I-Device
 and	O
 the	O
 sample	B-Device
-funnel.
-	I-Device
+funnel	I-Device
+.	O
 
-2.
-	O
+2	O
+.	O
 
 Loosen	B-Action
 the	O
@@ -1010,17 +1132,18 @@ cell	I-Device
 holder	I-Device
 screw	I-Device
 and	O
-remove the	B-Action
+remove	B-Action
+the	O
 flow	B-Location
 cell	I-Location
 holder	I-Location
-and	O
-flow	B-Location
-cell.
-	I-Location
+and	I-Location
+flow	I-Location
+cell	I-Location
+.	I-Location
 
-3.
-	O
+3	O
+.	O
 
 Remove	B-Action
 the	O
@@ -1030,8 +1153,8 @@ from	O
 the	O
 flow	B-Location
 cell	I-Location
-holder.4.
-	I-Location
+holder.4	I-Location
+.	O
 
 Put	B-Action
 the	O
@@ -1041,8 +1164,8 @@ back	O
 in	O
 its	O
 protective	B-Location
-tube.5.
-	I-Location
+tube.5	I-Location
+.	O
 
 Close	B-Action
 the	O
@@ -1050,8 +1173,8 @@ program	B-Device
 and	O
 shut	B-Action
 down	I-Action
-computer.
-	B-Device
+computer	B-Device
+.	O
 
 
 

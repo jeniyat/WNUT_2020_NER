@@ -3,8 +3,7 @@ of	O
 viruses	B-Reagent
 from	O
 culture	B-Reagent
-lysates
-	I-Reagent
+lysates	I-Reagent
 
 Centrifuge	B-Action
 the	O
@@ -13,21 +12,24 @@ at	O
 4000g	B-Speed
 for	O
 30	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Carefully	B-Modifier
 decant	B-Action
 and	O
 retain	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Dissolve	B-Action
-8%	B-Concentration
+8	B-Concentration
+%	I-Concentration
 PEG	B-Reagent
-(w/v)	O
+(	O
+w/v	O
+)	O
 in	O
 clarified	B-Modifier
 lysate	B-Reagent
@@ -37,8 +39,8 @@ to	O
 precipitate	B-Action
 overnight	B-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -48,17 +50,18 @@ at	O
 10,000g	B-Speed
 for	O
 20	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Carefully	B-Modifier
 decant	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 retaining	B-Action
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Resuspend	B-Action
 pellet	B-Reagent
@@ -74,8 +77,8 @@ and	O
 pool	B-Action
 all	B-Modifier
 pelleted	B-Reagent
-material.
-	I-Reagent
+material	I-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -88,8 +91,8 @@ virus	B-Reagent
 to	O
 <	B-Modifier
 1	B-Amount
-mL.
-	I-Amount
+mL	I-Amount
+.	O
 
 Resuspend	B-Action
 virus	B-Reagent
@@ -110,8 +113,8 @@ to	O
 disaggregate	B-Action
 overnight	B-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Concentrate	B-Action
 sample	B-Reagent
@@ -126,8 +129,8 @@ cutoff	O
 disposable	B-Modifier
 centrifugal	B-Device
 ultrafiltration	I-Device
-device.
-	I-Device
+device	I-Device
+.	O
 
 Prepare	B-Action
 OptiPrep	B-Reagent
@@ -137,8 +140,8 @@ culture	B-Reagent
 media	I-Reagent
 as	O
 the	O
-diluent.
-	B-Reagent
+diluent	B-Reagent
+.	O
 
 Using	O
 the	O
@@ -148,22 +151,24 @@ with	O
 syringe	B-Device
 and	O
 pipetting	B-Device
-needle,	I-Device
+needle	I-Device
+,	O
 pour	B-Action
 4-step	B-Reagent
 gradients	I-Reagent
 into	O
 open-toped	B-Modifier
 ultracentrifuge	B-Location
-tubes,	I-Location
+tubes	I-Location
+,	O
 beginning	O
 with	O
 the	O
 least	B-Modifier
 dense	I-Modifier
 solution	B-Reagent
-first.
-	O
+first	O
+.	O
 
 Allow	O
 to	O
@@ -173,8 +178,8 @@ for	O
 h	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Mark	B-Action
 the	O
@@ -185,7 +190,8 @@ gradients	B-Reagent
 with	O
 a	O
 fine-tipped	B-Device
-marker,	I-Device
+marker	I-Device
+,	O
 and	O
 carefully	B-Modifier
 overlay	B-Action
@@ -194,8 +200,8 @@ concentrate	I-Reagent
 using	O
 a	O
 transfer	B-Device
-pipette.
-	I-Device
+pipette	I-Device
+.	O
 
 Overlay	B-Action
 culture	B-Reagent
@@ -206,8 +212,8 @@ gradients	I-Reagent
 to	O
 create	B-Action
 balance	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Balance	B-Action
 the	O
@@ -217,8 +223,8 @@ adding	B-Action
 media	B-Reagent
 to	O
 underweight	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Load	B-Action
 tubes	B-Location
@@ -234,14 +240,15 @@ until	O
 density	B-Measure-Type
 equilibrium	I-Measure-Type
 is	O
-reached.
-	O
+reached	O
+.	O
 
 Using	O
 any	O
 fraction	B-Method
 collection	I-Method
-apparatus/technique,	I-Method
+apparatus/technique	I-Method
+,	O
 carefully	B-Modifier
 extract	B-Action
 purified	B-Modifier
@@ -249,14 +256,15 @@ viral	B-Reagent
 concentrate	I-Reagent
 from	O
 each	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 If	O
 bands	B-Reagent
 are	O
 not	O
-visible,	B-Modifier
+visible	B-Modifier
+,	O
 a	O
 starting	O
 point	O
@@ -268,7 +276,8 @@ gradient	B-Reagent
 into	O
 4	B-Numerical
 +	I-Numerical
-fractions,	B-Reagent
+fractions	B-Reagent
+,	O
 and	O
 use	O
 a	O
@@ -280,22 +289,29 @@ identify	B-Action
 the	O
 virus-containing	B-Modifier
 fraction	B-Reagent
-(i.e.,	O
-TEM,	B-Method
-bioassay,	I-Method
-absorbance	I-Method
+(	O
+i.e.	O
+,	O
+TEM	B-Method
+,	O
+bioassay	B-Method
+,	O
+absorbance	B-Method
 at	O
 260	B-Generic-Measure
-nm,	I-Generic-Measure
+nm	I-Generic-Measure
+,	O
 nucleic	B-Method
 acid	I-Method
-analysis,	I-Method
-epifluorescence	I-Method
+analysis	I-Method
+,	O
+epifluorescence	B-Method
 microscopy	I-Method
 or	O
 flow	B-Method
-cytometry).
-	I-Method
+cytometry	I-Method
+)	O
+.	O
 
 
 

@@ -4,20 +4,22 @@ Kit	I-Method
 Protocol	I-Method
 -	O
 Flow	B-Method
-Cytometry
-	I-Method
+Cytometry	I-Method
 
 Prepare	B-Action
-0.5%	B-Generic-Measure
+0.5	B-Generic-Measure
+%	I-Generic-Measure
 Neu5Gc	B-Reagent
 Assay	I-Reagent
 Blocking	I-Reagent
 Solution	I-Reagent
 in	O
 PBS	B-Reagent
-(diluent	I-Reagent
-buffer).
-	I-Reagent
+(	O
+diluent	B-Reagent
+buffer	I-Reagent
+)	O
+.	O
 
 The	O
 following	O
@@ -29,19 +31,21 @@ up	O
 for	O
 flow	B-Method
 cytometry	I-Method
-analysis: 
-	I-Method
+analysis	I-Method
+:	O
 
 *	O
 Three	B-Numerical
-(3)	I-Numerical
+(	O
+3	B-Numerical
+)	O
 tubes	B-Location
 containing	O
 cells	B-Reagent
 to	O
 be	O
-examined.
-	O
+examined	O
+.	O
 
 If	O
 choosing	B-Action
@@ -51,37 +55,44 @@ different	O
 dilutions	B-Reagent
 of	O
 primary	B-Reagent
-antibody,	I-Reagent
+antibody	I-Reagent
+,	O
 as	O
 noted	O
 in	O
 step	O
-3,	O
+3	O
+,	O
 more	O
 tubes	B-Location
 may	O
 be	O
-needed.
-	O
+needed	O
+.	O
 
 *	O
 Three	B-Numerical
-(3)	I-Numerical
+(	O
+3	B-Numerical
+)	O
 tubes	B-Location
 containing	O
 positive	B-Reagent
 control	I-Reagent
-cells.
-	I-Reagent
+cells	I-Reagent
+.	O
 
 *	O
 Three	B-Numerical
-(3)	I-Numerical
+(	O
+3	B-Numerical
+)	O
 tubes	B-Location
 containing	O
 negative	B-Reagent
 control	I-Reagent
-cells.	I-Reagent
+cells	I-Reagent
+.	O
 
 Each	O
 set	O
@@ -96,8 +107,8 @@ an	O
 antibody	B-Reagent
 treatment	B-Method
 as	O
-follows:
-	O
+follows	O
+:	O
 
 *	O
 Tube	B-Location
@@ -109,18 +120,21 @@ that	O
 will	O
 receive	O
 no	O
-antibody,	B-Reagent
+antibody	B-Reagent
+,	O
 to	O
 be	O
 used	O
 as	O
 unstained	B-Modifier
 control	B-Reagent
-(optional	O
+(	O
+optional	O
 but	O
 highly	O
-recommended).
-	O
+recommended	O
+)	O
+.	O
 
 *	O
 Tube	B-Location
@@ -131,8 +145,8 @@ cells	B-Reagent
 that	O
 receive	O
 Control	B-Reagent
-Antibody.
-	I-Reagent
+Antibody	I-Reagent
+.	O
 
 *	O
 Tube	B-Location
@@ -143,11 +157,12 @@ cells	B-Reagent
 that	O
 receive	O
 Primary	B-Reagent
-Antibody.
-	I-Reagent
+Antibody	I-Reagent
+.	O
 
 -	O
-Note:	O
+Note	O
+:	O
 if	O
 this	O
 is	O
@@ -156,7 +171,8 @@ first	O
 time	O
 running	O
 this	O
-experiment,	O
+experiment	O
+,	O
 optimize	B-Action
 by	O
 using	B-Action
@@ -164,8 +180,8 @@ different	O
 dilutions	B-Reagent
 of	O
 primary	B-Reagent
-antibody.
-	I-Reagent
+antibody	I-Reagent
+.	O
 
 More	O
 tubes	B-Location
@@ -173,8 +189,8 @@ containing	O
 sample	B-Reagent
 will	O
 be	O
-needed.
-	O
+needed	O
+.	O
 
 Wash	B-Action
 cells	B-Reagent
@@ -183,20 +199,21 @@ adding	B-Action
 1	B-Amount
 ml	I-Amount
 cold	B-Modifier
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 then	O
 gently	B-Modifier
 centrifuge	B-Action
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
 supernatant	B-Reagent
 and	O
-discard.
-	B-Action
+discard	B-Action
+.	O
 
 Gently	B-Modifier
 resuspend	B-Action
@@ -211,8 +228,8 @@ diluted	I-Modifier
 antibody	B-Reagent
 as	O
 outlined	O
-above.
-	O
+above	O
+.	O
 
 Incubate	B-Action
 cells	B-Reagent
@@ -222,12 +239,14 @@ for	O
 at	B-Modifier
 least	I-Modifier
 1	B-Time
-hour.	I-Time
+hour	I-Time
+.	O
 
 Wash	B-Action
 cells	B-Reagent
 as	O
-above.	O
+above	O
+.	O
 
 Gently	B-Modifier
 resuspend	B-Action
@@ -239,21 +258,22 @@ Secondary	B-Reagent
 Antibody	I-Reagent
 in	I-Reagent
 diluent	I-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 and	O
 incubate	B-Action
 for	O
 1	B-Time
 hour	I-Time
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Wash	B-Action
 cells	B-Reagent
 as	O
-before.
-	O
+before	O
+.	O
 
 Resuspend	B-Action
 cell	B-Reagent
@@ -263,15 +283,16 @@ in	O
 μl	I-Amount
 of	O
 diluent	B-Location
-buffer.	I-Location
+buffer	I-Location
+.	O
 
 Run	B-Action
 cells	B-Reagent
 through	O
 the	O
 flow	B-Device
-cytometer.
-	I-Device
+cytometer	I-Device
+.	O
 
 
 

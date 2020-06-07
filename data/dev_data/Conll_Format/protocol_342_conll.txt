@@ -5,29 +5,34 @@ XZ-6E	B-Modifier
 Virus	I-Modifier
 Infected	I-Modifier
 NC64A	B-Reagent
-Chlorella
-	I-Reagent
+Chlorella	I-Reagent
 
 Prepare	B-Action
 Buffer	B-Reagent
-A:	I-Reagent
+A	I-Reagent
+:	O
 
 Prepare	B-Action
 Buffer	B-Reagent
-B:	I-Reagent
+B	I-Reagent
+:	O
 
 Prepare	B-Action
 Buffer	B-Reagent
-C:	I-Reagent
+C	I-Reagent
+:	O
 
 Prepare	B-Action
 Storage	B-Reagent
-Buffer:	I-Reagent
+Buffer	I-Reagent
+:	O
 
-Prepare 1X	B-Action
-CviRI	B-Reagent
-Assay	I-Reagent
-Buffer:	I-Reagent
+Prepare	B-Action
+1X	B-Concentration
+CviRI	I-Concentration
+Assay	B-Reagent
+Buffer	I-Reagent
+:	I-Reagent
 
 Thaw	B-Action
 the	O
@@ -44,8 +49,8 @@ MSK	B-Location
 flasks	I-Location
 with	O
 Buffer	B-Reagent
-A.
-	I-Reagent
+A	I-Reagent
+.	I-Reagent
 
 Suspend	B-Action
 with	O
@@ -58,8 +63,8 @@ per	O
 X	I-Amount
 1011	I-Amount
 infected	B-Reagent
-cells.
-	I-Reagent
+cells	I-Reagent
+.	O
 
 Homogenize	B-Action
 the	O
@@ -83,44 +88,53 @@ rpm	I-Speed
 for	O
 90	B-Time
 sec	I-Time
-(2	I-Time
+(	O
+2	B-Time
 X	I-Time
 45	I-Time
-sec)	I-Time
+sec	I-Time
+)	O
 with	O
 CO2	B-Method
-cooling.
-	I-Method
+cooling	I-Method
+.	O
 
 Recover	B-Action
 the	O
 homogenate	B-Reagent
 to	O
 clean	B-Action
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Adjust	B-Action
 the	O
 homogenate	B-Reagent
 supernatant	I-Reagent
 to	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 saturation	I-Concentration
 with	O
-(NH4)2SO4	B-Reagent
+(	B-Reagent
+NH4	I-Reagent
+)	I-Reagent
+2SO4	I-Reagent
 at	O
 4°C	B-Temperature
 with	O
 gentle	B-Modifier
-stirring.
-	B-Action
+stirring	B-Action
+.	O
 
 Add	B-Action
 the	O
-(NH4)2SO4	B-Reagent
-gradually.
-	B-Modifier
+(	B-Reagent
+NH4	I-Reagent
+)	I-Reagent
+2SO4	I-Reagent
+gradually	B-Modifier
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -132,19 +146,21 @@ SS34	I-Device
 rotor	I-Device
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
-min,	I-Time
-4°C.
-	B-Temperature
+min	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Suspend	B-Action
 the	O
 pellets	B-Reagent
 with	O
 Buffer	B-Reagent
-A.
-	I-Reagent
+A	I-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -156,11 +172,13 @@ SS34	I-Device
 rotor	I-Device
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
-min,	I-Time
-4°C.
-	B-Temperature
+min	I-Time
+,	O
+4°C	B-Temperature
+.	I-Temperature
 
 Dilute	B-Action
 the	O
@@ -175,8 +193,8 @@ to	O
 reduce	B-Action
 the	O
 NaCl	B-Reagent
-concentration.
-	B-Measure-Type
+concentration	B-Measure-Type
+.	O
 
 Elute	B-Action
 the	O
@@ -190,16 +208,18 @@ a	O
 0.2-1.2	B-Concentration
 M	I-Concentration
 NaCl	B-Reagent
-gradient.
-	I-Reagent
+gradient	I-Reagent
+.	O
 
 Elute	B-Action
 the	O
 Blue-Sepharose	B-Location
 column	I-Location
-(or	O
+(	O
+or	O
 Affi-Gel-Blue	B-Location
-column)	I-Location
+column	I-Location
+)	O
 with	O
 Buffer	B-Reagent
 B	I-Reagent
@@ -208,8 +228,8 @@ a	O
 0.2-2.0	B-Concentration
 M	I-Concentration
 KOAc	B-Reagent
-gradient.
-	I-Reagent
+gradient	I-Reagent
+.	O
 
 Dilute	B-Action
 the	O
@@ -225,8 +245,8 @@ to	O
 reduce	B-Action
 the	O
 salt	B-Reagent
-concentration.
-	B-Measure-Type
+concentration	B-Measure-Type
+.	O
 
 Elute	B-Action
 the	O
@@ -240,8 +260,8 @@ a	O
 0-1.0	B-Concentration
 M	I-Concentration
 KHPO4	B-Reagent
-gradient.
-	I-Reagent
+gradient	I-Reagent
+.	O
 
 Dilute	B-Action
 the	O
@@ -252,8 +272,8 @@ with	O
 volumes	I-Amount
 of	O
 Buffer	B-Reagent
-B.
-	I-Reagent
+B	I-Reagent
+.	O
 
 Concentrate	B-Action
 the	O
@@ -266,8 +286,8 @@ into	O
 storage	B-Reagent
 buffer	I-Reagent
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Wash	B-Action
 the	O
@@ -284,8 +304,8 @@ and	O
 combine	B-Action
 with	O
 the	O
-homogenate.
-	B-Reagent
+homogenate	B-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -298,14 +318,15 @@ rotor	I-Device
 at	O
 10,000	B-Speed
 rpm,20	I-Speed
-min,	B-Time
-4°C.
-	B-Temperature
+min	B-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Save	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -314,19 +335,20 @@ for	O
 60-90	B-Time
 min	I-Time
 without	B-Action
-stirring.
-	I-Action
+stirring	I-Action
+.	O
 
 Save	B-Action
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Per	O
 mL	B-Amount
 of	O
 suspension	B-Reagent
-add:	B-Action
+add	B-Action
+:	O
 0.45	B-Amount
 mL	I-Amount
 of	O
@@ -337,13 +359,16 @@ and	O
 0.45	B-Amount
 mL	I-Amount
 of	O
-28%	B-Concentration
+28	B-Concentration
+%	I-Concentration
 PEG	B-Reagent
 8000	I-Reagent
-(heated	B-Action
+(	O
+heated	B-Action
 to	O
-65°C).
-	B-Temperature
+65°C	B-Temperature
+)	I-Temperature
+.	O
 
 Mix	B-Action
 gently	B-Modifier
@@ -351,13 +376,13 @@ by	O
 inversion	B-Action
 for	O
 5-10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Save	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Load	B-Action
 the	O
@@ -374,8 +399,8 @@ B	I-Reagent
 in	O
 the	O
 cold	B-Location
-room.
-	I-Location
+room	I-Location
+.	I-Location
 
 Assay	B-Action
 the	O
@@ -385,8 +410,8 @@ and	O
 pool	B-Action
 the	O
 active	B-Reagent
-fractions.
-	I-Reagent
+fractions	I-Reagent
+.	O
 
 Dilute	B-Action
 the	O
@@ -402,8 +427,8 @@ to	O
 reduce	B-Action
 the	O
 salt	B-Reagent
-concentration.
-	B-Measure-Type
+concentration	B-Measure-Type
+.	O
 
 Load	B-Action
 the	O
@@ -413,10 +438,12 @@ onto	O
 a	O
 Blue-Sepharose	B-Location
 column	I-Location
-(or	O
+(	O
+or	O
 an	O
 Affi-Gel-Blue	O
-column)	O
+column	O
+)	O
 equilibrated	B-Action
 with	O
 Buffer	B-Reagent
@@ -424,8 +451,8 @@ B	I-Reagent
 in	O
 the	O
 cold	B-Location
-room.
-	I-Location
+room	I-Location
+.	O
 
 Assay	B-Action
 the	O
@@ -435,8 +462,8 @@ and	O
 pool	B-Action
 the	O
 active	B-Reagent
-fractions.
-	I-Reagent
+fractions	I-Reagent
+.	O
 
 Load	B-Action
 the	O
@@ -453,8 +480,8 @@ C	I-Reagent
 in	O
 the	O
 cold	B-Location
-room.
-	I-Location
+room	I-Location
+.	O
 
 Assay	B-Action
 the	O
@@ -464,8 +491,8 @@ and	O
 pool	B-Action
 the	O
 active	B-Reagent
-fractions.
-	I-Reagent
+fractions	I-Reagent
+.	O
 
 Load	B-Action
 the	O
@@ -479,7 +506,8 @@ column	I-Location
 equilibrated	B-Action
 with	O
 Buffer	B-Reagent
-B.	I-Reagent
+B	I-Reagent
+.	O
 
 Elute	B-Action
 the	O
@@ -490,42 +518,46 @@ B	I-Reagent
 containing	O
 2.0	B-Concentration
 M	I-Concentration
-NaCl.
-	B-Reagent
+NaCl	B-Reagent
+.	O
 
 Collect	B-Action
 small	B-Size
 fractions	B-Reagent
-(approximately	B-Modifier
+(	O
+approximately	B-Modifier
 35	B-Numerical
 drops	B-Reagent
 per	O
-fraction).
-	B-Reagent
+fraction	B-Reagent
+)	O
+.	O
 
 Assay	B-Action
 the	O
 column	B-Reagent
 fractions	I-Reagent
-(only	O
+(	O
+only	O
 about	O
 the	O
 first	O
 10-15	B-Numerical
-fractions)	B-Reagent
+fractions	B-Reagent
+)	O
 and	O
 pool	B-Action
 the	O
 active	B-Reagent
-fractions.
-	I-Reagent
+fractions	I-Reagent
+.	O
 
 Store	B-Action
 the	O
 enzyme	B-Reagent
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 
 

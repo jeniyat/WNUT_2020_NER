@@ -7,6 +7,10 @@ import shutil
 from collections import OrderedDict
 import argparse
 
+import sys
+sys.path.insert(1, '../scripts/convert_conll_to_standoff/')
+import anntoconll_wlp
+
 
 def read_sentence(ip_file):
 	sentences=[]
@@ -103,19 +107,40 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 
 
 def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pred_folder="../baseline_CRF/Standoff_Outputs/", to_latex=False, pref_file=None):
-	conll_folder_gold = "Conll_Format_Data/gold/"
-	conll_file_gold = 'Conll_Format_Data/gold.txt'
+	pred_file_type = eval_utils.find_prediction_file_format(input_pred_folder)
+	ip_file_type = eval_utils.find_prediction_file_format(input_gold_folder) 
 
-	conll_folder_pred = "Conll_Format_Data/pred/"
-	conll_file_pred = 'Conll_Format_Data/pred.txt'
+	if pred_file_type == "Standoff":
+		conll_pred_folder = "Conll_OP/"
+		eval_utils.make_dir_if_not_exists(conll_pred_folder)
+		anntoconll_wlp.covert_standoff_to_conll(input_pred_folder, conll_pred_folder)
+		input_pred_folder=conll_pred_folder
 
-	eval_utils.preprocess_data_to_merge(input_gold_folder, conll_folder_gold, conll_file_gold,input_pred_folder, conll_folder_pred, conll_file_pred)
+
+	if ip_file_type == "Standoff":
+		conll_ip_folder = "Conll_IP/"
+		eval_utils.make_dir_if_not_exists(conll_ip_folder)
+		anntoconll_wlp.covert_standoff_to_conll(input_gold_folder, conll_ip_folder)
+		input_gold_folder=conll_ip_folder
 
 
-	compare_prediction(conll_file_gold, conll_file_pred, pref_file, to_latex)
+	
 
-	shutil.rmtree('Conll_Format_Data/')
+	combined_pred_file  = eval_utils.combine_and_merge_gold_pred(input_gold_folder, input_pred_folder)
 
+	eval_result = conlleval_py.evaluate_conll_file(inputFile=combined_pred_file)
+
+	if to_latex:
+		print_result(eval_result, perf_file)
+
+	os.remove(combined_pred_file)
+
+	
+	if pred_file_type=="Standoff":
+		shutil.rmtree(conll_pred_folder)
+
+	if ip_file_type=="Standoff":
+		shutil.rmtree(conll_ip_folder)
 
 
 
@@ -129,10 +154,22 @@ if __name__ == '__main__':
 
 
 
+	# parser.add_argument(
+	#     "-gold_data", default="../../data/test_data/Conll_Format/",
+	#     help="Standoff_Format gold labeled files"
+	# )
+
+
 	parser.add_argument(
 	    "-gold_data", default="../../data/test_data/Standoff_Format/",
 	    help="Standoff_Format gold labeled files"
 	)
+
+	# parser.add_argument(
+	#     "-pred_data", default="../baseline_CRF/Conll_Outputs/",
+	#     help="Standoff_Format prediction files"
+	# )
+
 
 	parser.add_argument(
 	    "-pred_data", default="../baseline_CRF/Standoff_Outputs/",
@@ -180,3 +217,6 @@ if __name__ == '__main__':
 
 
 	evaluate(input_gold_folder, input_pred_folder, print_latex_format, perf_file)
+
+
+

@@ -1,6 +1,5 @@
 Immunoprecipitation	B-Method
-Protocol
-	O
+Protocol	O
 
 Collect	B-Action
 cells	B-Reagent
@@ -13,8 +12,8 @@ for	O
 5	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Wash	B-Action
 protein	B-Reagent
@@ -31,18 +30,20 @@ in	O
 a	O
 microcentrifuge	B-Location
 tube	I-Location
-(two	B-Time
+(	O
+two	B-Time
 minutes	I-Time
 at	O
 5,000	B-Speed
-rpm).
-	I-Speed
+rpm	I-Speed
+)	O
+.	O
 
 Aspirate	B-Action
 and	O
 discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
@@ -50,8 +51,10 @@ beads	B-Reagent
 with	O
 celllysis	B-Reagent
 buffer	I-Reagent
-(1/3).
-	O
+(	O
+1/3	O
+)	O
+.	O
 
 Wash	B-Action
 the	O
@@ -59,8 +62,10 @@ beads	B-Reagent
 with	O
 celllysis	B-Reagent
 buffer	I-Reagent
-(2/3).
-	O
+(	O
+2/3	O
+)	O
+.	O
 
 Wash	B-Action
 the	O
@@ -68,8 +73,10 @@ beads	B-Reagent
 with	O
 celllysis	B-Reagent
 buffer	I-Reagent
-(3/3).
-	O
+(	O
+3/3	O
+)	O
+.	O
 
 Adjust	B-Action
 antibody	B-Measure-Type
@@ -94,8 +101,8 @@ agarose	B-Reagent
 beads	I-Reagent
 for	O
 each	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 Place	B-Action
 the	O
@@ -112,8 +119,8 @@ at	O
 4°C	B-Temperature
 for	O
 one	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Spin	B-Action
 down	I-Action
@@ -136,8 +143,8 @@ times	O
 with	O
 cell	B-Reagent
 lysis	I-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Discard	B-Action
 the	O
@@ -155,15 +162,16 @@ to	O
 the	O
 cells	B-Reagent
 and	O
-vortex,	B-Action
+vortex	B-Action
+,	O
 then	O
 incubate	B-Action
 for	O
 30	B-Time
 minutes	I-Time
 on	O
-ice.
-	B-Reagent
+ice	B-Reagent
+.	O
 
 Freeze	B-Action
 and	O
@@ -192,8 +200,8 @@ the	O
 proteins	B-Reagent
 from	O
 the	O
-cells.
-	B-Reagent
+cells	B-Reagent
+.	O
 
 Spin	B-Action
 lysates	B-Reagent
@@ -210,8 +218,8 @@ minutes	I-Time
 and	O
 keep	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Adjust	B-Action
 the	O
@@ -225,8 +233,8 @@ to	O
 mg/ml	I-Concentration
 with	O
 lysis	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Mix	B-Action
 100-500	B-Amount
@@ -247,8 +255,8 @@ at	O
 for	O
 about	O
 two	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Collect	B-Action
 the	O
@@ -260,20 +268,23 @@ in	O
 a	O
 microcentrifuge	B-Device
 tube	I-Device
-(two	B-Time
+(	O
+two	B-Time
 minutes	I-Time
 at	O
 5,000	B-Speed
-rpm,	I-Speed
-4°C).
-	B-Temperature
+rpm	I-Speed
+,	O
+4°C	B-Temperature
+)	I-Temperature
+.	O
 
 Aspirate	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
@@ -283,8 +294,10 @@ ice-cold	B-Modifier
 cell	B-Reagent
 lysis	I-Reagent
 buffer	I-Reagent
-(1/3).
-	O
+(	O
+1/3	O
+)	O
+.	O
 
 Wash	B-Action
 the	O
@@ -294,8 +307,10 @@ ice-cold	B-Modifier
 cell	B-Reagent
 lysis	I-Reagent
 buffer	I-Reagent
-(2/3).
-	O
+(	O
+2/3	O
+)	O
+.	O
 
 Wash	B-Action
 the	O
@@ -305,14 +320,17 @@ ice-cold	B-Modifier
 cell	B-Reagent
 lysis	I-Reagent
 buffer	I-Reagent
-(3/3).
-	O
+(	O
+3/3	O
+)	O
+.	O
 
 After	O
 the	O
 final	O
-wash,	B-Action
-remove	I-Action
+wash	B-Action
+,	O
+remove	B-Action
 the	O
 supernatant	B-Reagent
 and	O
@@ -323,8 +341,8 @@ of	O
 2X	B-Concentration
 SDS	B-Reagent
 sample	I-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	I-Reagent
 
 Load	B-Action
 30	B-Amount
@@ -339,25 +357,31 @@ a	O
 1.5	B-Size
 mm	I-Size
 thick	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Run	B-Action
 the	O
 gel	B-Reagent
 according	O
-tomanufacturer’s	B-Method
+tomanufacturer	B-Method
+’	I-Method
+s	I-Method
 recommendations	I-Method
 and	O
 continue	O
 with	O
 immunoblotting	B-Action
 using	O
-BioLegend’s	B-Method
+BioLegend	B-Method
+’	I-Method
+s	I-Method
 Western	I-Method
 Blotting	I-Method
 protocol	I-Method
-(alternately,	O
+(	O
+alternately	O
+,	O
 radiolabeled	B-Modifier
 proteins	B-Reagent
 prepared	B-Action
@@ -371,23 +395,24 @@ directly	B-Modifier
 visualize	B-Action
 the	O
 immunoprecipitated	B-Modifier
-protein).
-	B-Reagent
+protein	B-Reagent
+)	O
+.	O
 
 Boil	B-Action
 for	O
 5	B-Time
 minutes	I-Time
 at	O
-95°C.
-	B-Temperature
+95°C	B-Temperature
+.	O
 
 Carefully	B-Modifier
 pipette	B-Action
 off	I-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Spin	B-Action
 down	I-Action
@@ -404,8 +429,8 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 
 

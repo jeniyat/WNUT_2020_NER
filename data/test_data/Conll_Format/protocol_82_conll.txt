@@ -2,20 +2,23 @@ Extraction	B-Method
 of	O
 DNA	B-Reagent
 from	O
-Virus
-	B-Reagent
+Virus	B-Reagent
 
 Mix	B-Action
 Lysing	B-Reagent
 Solution	I-Reagent
-(LS)	I-Reagent
+(	O
+LS	B-Reagent
+)	O
 &	O
 Sodium	B-Reagent
 Perchlorate	I-Reagent
-(SP)	I-Reagent
+(	O
+SP	B-Reagent
+)	O
 in	O
-2:1.
-	B-Generic-Measure
+2:1	B-Generic-Measure
+.	O
 
 Mix	B-Action
 the	O
@@ -35,11 +38,12 @@ with	O
 10ml	B-Amount
 virus	B-Reagent
 prep	I-Reagent
-(~	B-Modifier
+(	O
+~	B-Modifier
 10¹¹	B-Generic-Measure
 PFU/ml	I-Generic-Measure
-).
-	O
+)	O
+.	O
 
 Incubate	B-Action
 the	O
@@ -47,8 +51,8 @@ lysate	B-Reagent
 at	O
 55ºC	B-Temperature
 for	O
-1hrs.
-	B-Time
+1hrs	B-Time
+.	O
 
 Add	B-Action
 30ml	B-Amount
@@ -60,22 +64,25 @@ chloroform	B-Reagent
 :	O
 isoamyl	B-Reagent
 alcohol	I-Reagent
-(25:1)]	B-Generic-Measure
+(	O
+25:1	B-Generic-Measure
+)	O
+]	O
 in	O
 the	O
 proportion	B-Measure-Type
 equal	O
 to	O
-1:1.
-	B-Generic-Measure
+1:1	B-Generic-Measure
+.	O
 
 Shake	B-Action
 them	B-Mention
 by	O
 hands	B-Device
 for	O
-5mins.
-	B-Time
+5mins	B-Time
+.	O
 
 Transfer	B-Action
 the	O
@@ -83,7 +90,8 @@ liquid	B-Reagent
 to	O
 the	O
 centrifuge	B-Location
-tubes,	I-Location
+tubes	I-Location
+,	O
 balance	B-Action
 them	B-Mention
 &	O
@@ -95,13 +103,15 @@ at	O
 14000	B-Speed
 rpm	I-Speed
 at	O
-4ºC.
-	B-Temperature
+4ºC	B-Temperature
+.	O
 
 Transfer	B-Action
 the	O
 aqueous	B-Reagent
-(upper)	I-Reagent
+(	I-Reagent
+upper	I-Reagent
+)	I-Reagent
 part	I-Reagent
 with	O
 pipette	B-Device
@@ -109,16 +119,18 @@ to	O
 the	O
 clean	B-Modifier
 centrifuge	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
-Don’t	O
+Don	O
+’	O
+t	O
 worry	O
 getting	O
 protein	B-Reagent
 in	B-Modifier
-it.
-	I-Modifier
+it	I-Modifier
+.	O
 
 Put	B-Action
 the	O
@@ -127,8 +139,8 @@ layer	I-Location
 into	O
 the	O
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Centrifuge	B-Action
 tubes	B-Location
@@ -138,8 +150,8 @@ at	O
 rpm	I-Speed
 for	O
 15	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Now	O
 it	O
@@ -150,8 +162,8 @@ pure	B-Modifier
 liquid	B-Reagent
 without	B-Modifier
 protein	I-Modifier
-debris.
-	I-Modifier
+debris	I-Modifier
+.	O
 
 Aqueous	B-Reagent
 layer	I-Reagent
@@ -161,8 +173,8 @@ stored	B-Action
 overnight	B-Time
 at	O
 4	B-Temperature
-ºC.
-	I-Temperature
+ºC	I-Temperature
+.	O
 
 Estimate	B-Action
 the	O
@@ -177,21 +189,25 @@ add	B-Action
 volume	I-Amount
 of	O
 3M	B-Concentration
-(or	O
-5M)	B-Concentration
+(	O
+or	O
+5M	B-Concentration
+)	O
 Sodium	B-Reagent
 Acetate	I-Reagent
-(pH	B-pH
-6.0).
-	I-pH
+(	O
+pH	B-pH
+6.0	I-pH
+)	O
+.	O
 
 Collect	B-Action
 DNA	B-Reagent
 by	O
 swirling	B-Action
 glass	B-Device
-rod.
-	I-Device
+rod	I-Device
+.	O
 
 Let	O
 it	B-Mention
@@ -199,8 +215,8 @@ dry	B-Action
 on	O
 the	O
 glass	B-Device
-rod.
-	I-Device
+rod	I-Device
+.	O
 
 Pour	B-Action
 off	I-Action
@@ -208,8 +224,8 @@ alcohol	B-Reagent
 into	O
 the	O
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Put	B-Action
 DNA	B-Reagent
@@ -226,18 +242,21 @@ to	I-Amount
 20ml	I-Amount
 of	O
 cold	B-Modifier
-76%	B-Concentration
+76	B-Concentration
+%	I-Concentration
 Ethanol	B-Reagent
-(-20ºC).
-	B-Temperature
+(	O
+-20ºC	B-Temperature
+)	O
+.	O
 
 Let	B-Action
 it	I-Action
 stand	I-Action
 for	O
 10-20	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Press	B-Action
 the	O
@@ -255,8 +274,8 @@ get	B-Action
 rid	I-Action
 of	O
 the	O
-ethanol.
-	B-Reagent
+ethanol	B-Reagent
+.	O
 
 Invert	B-Action
 the	O
@@ -271,36 +290,35 @@ and	O
 dry	B-Action
 for	O
 5	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Use	B-Action
 15ml	B-Amount
 plastic	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Dissolve	B-Action
 DNA	B-Reagent
 in	O
 4ml	B-Amount
 of	O
-TE.
-	B-Reagent
+TE	B-Reagent
+.	O
 
 Estimate	B-Action
 DNA	B-Measure-Type
 concentration	I-Measure-Type
 using	O
 spectrophotometer	B-Device
-	O
 or	O
 gel	B-Reagent
 to	O
 ensure	B-Action
 DNA	B-Measure-Type
-quantity.
-	I-Measure-Type
+quantity	I-Measure-Type
+.	O
 
 Gently	B-Modifier
 overlay	B-Action
@@ -314,8 +332,8 @@ of	O
 95	B-Concentration
 %	I-Concentration
 of	O
-ethanol.
-	B-Reagent
+ethanol	B-Reagent
+.	O
 
 
 

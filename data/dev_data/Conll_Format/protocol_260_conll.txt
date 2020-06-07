@@ -2,21 +2,21 @@ DNA/RNA	B-Reagent
 Extractions	B-Method
 from	O
 Sterivex	B-Device
-Filters
-	I-Device
+Filters	I-Device
 
 Thaw	B-Action
 sterivex	B-Device
 filters	I-Device
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Add	B-Action
 40µL	B-Amount
 lysozyme	B-Reagent
 solution	I-Reagent
-(add	B-Action
+(	O
+add	B-Action
 2	B-Amount
 mg	I-Amount
 lysozyme	B-Reagent
@@ -24,10 +24,11 @@ to	O
 40	B-Amount
 µl	I-Amount
 Lysis	B-Reagent
-Buffer)	I-Reagent
+Buffer	I-Reagent
+)	O
 to	O
-filter.
-	B-Device
+filter	B-Device
+.	O
 
 Incubate	B-Action
 at	O
@@ -36,27 +37,30 @@ while	O
 rotating	B-Action
 for	O
 45	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 100µL	B-Amount
 Proteinase	B-Reagent
 K	I-Reagent
 solution	I-Reagent
-(1mg	B-Amount
+(	O
+1mg	B-Amount
 Proteinase	B-Reagent
 K	I-Reagent
 in	O
 100	B-Amount
 µl	I-Amount
 Lysis	B-Reagent
-Buffer)	I-Reagent
+Buffer	I-Reagent
+)	O
 and	O
 100µL	B-Amount
-20%	B-Concentration
-SDS.
-	B-Reagent
+20	B-Concentration
+%	I-Concentration
+SDS	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -65,8 +69,8 @@ while	O
 rotating	B-Action
 for	O
 2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Transfer	B-Action
 lysate	B-Reagent
@@ -81,8 +85,8 @@ a	O
 sterile	B-Modifier
 3	B-Amount
 mL	I-Amount
-syringe.
-	B-Device
+syringe	B-Device
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -97,29 +101,36 @@ at	O
 55°C	B-Temperature
 for	O
 15	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Pool	B-Action
 with	O
 above	B-Modifier
-lysate.
-	B-Reagent
+lysate	B-Reagent
+.	O
 
 Add	B-Action
 3	B-Amount
 mL	I-Amount
-Phenol:Chloroform:IAA	B-Reagent
-(25:24:1;	B-Generic-Measure
+Phenol	B-Reagent
+:	I-Reagent
+Chloroform	I-Reagent
+:	I-Reagent
+IAA	I-Reagent
+(	O
+25:24:1	B-Generic-Measure
+;	O
 pH	B-pH
-8.0).
-	I-pH
+8.0	I-pH
+)	O
+.	O
 
 Vortex	B-Action
 for	O
 10	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Spin	B-Action
 for	O
@@ -127,9 +138,11 @@ for	O
 minutes	I-Time
 at	O
 2500g	B-Speed
-(speed	I-Speed
-8).
-	I-Speed
+(	O
+speed	B-Speed
+8	I-Speed
+)	O
+.	O
 
 Carefully	B-Modifier
 transfer	B-Action
@@ -141,19 +154,23 @@ new	B-Modifier
 15	B-Amount
 mL	I-Amount
 conical	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 3	B-Amount
 mL	I-Amount
-Chloroform:IAA	B-Reagent
-(24:1)	B-Generic-Measure
+Chloroform	B-Reagent
+:	I-Reagent
+IAA	I-Reagent
+(	O
+24:1	B-Generic-Measure
+)	O
 Vortex	B-Action
 for	O
 10	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Spin	B-Action
 for	O
@@ -161,9 +178,11 @@ for	O
 minutes	I-Time
 at	O
 2500g	B-Speed
-(speed	I-Speed
-8).
-	I-Speed
+(	O
+speed	B-Speed
+8	I-Speed
+)	O
+.	O
 
 Carefully	B-Modifier
 transfer	B-Action
@@ -172,8 +191,8 @@ phase	I-Reagent
 to	O
 a	O
 centricon	B-Device
-100.
-	I-Device
+100	I-Device
+.	O
 
 All	O
 of	O
@@ -186,18 +205,20 @@ transferred	B-Action
 to	O
 an	O
 epi	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Spin	B-Action
 Centricon	B-Device
 at	O
 1000xg	B-Speed
-(speed4)	I-Speed
+(	O
+speed4	B-Speed
+)	O
 for	O
 20	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 remaining	O
@@ -206,8 +227,8 @@ from	O
 epi	B-Location
 tube	I-Location
 to	O
-centricon.
-	B-Device
+centricon	B-Device
+.	O
 
 Spin	B-Action
 until	O
@@ -221,8 +242,8 @@ phase	I-Reagent
 is	B-Action
 left	I-Action
 in	O
-Centricon.
-	B-Device
+Centricon	B-Device
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -231,8 +252,8 @@ TE	B-Reagent
 Buffer	I-Reagent
 Repeat	B-Action
 step	B-Method
-20.
-	I-Method
+20	I-Method
+.	O
 
 Spin	B-Action
 until	O
@@ -244,8 +265,8 @@ only	O
 µL	I-Amount
 left	B-Action
 in	O
-Centricon.
-	B-Device
+Centricon	B-Device
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
@@ -253,8 +274,8 @@ liquid	B-Reagent
 without	B-Action
 damaging	I-Action
 the	O
-membrane.
-	B-Reagent
+membrane	B-Reagent
+.	O
 
 Wash	B-Action
 membrane	B-Reagent
@@ -271,8 +292,8 @@ in	O
 the	O
 same	B-Modifier
 epi	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Note	O
 the	O
@@ -281,8 +302,8 @@ volume	B-Measure-Type
 in	O
 the	O
 epi	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 
 

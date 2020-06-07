@@ -3,61 +3,72 @@ mediated	I-Method
 transformation	I-Method
 of	I-Method
 Marchantia	I-Method
-spores
-	I-Method
+spores	I-Method
 
 Grind	B-Action
 and	O
 sterilise	B-Action
 the	O
 spore	B-Reagent
-heads: Get	I-Reagent
-ready:	B-Action
+heads	I-Reagent
+:	O
+Get	B-Action
+ready	I-Action
+:	I-Action
 At	O
 the	O
 flow	B-Device
-hood.
-	I-Device
+hood	I-Device
+.	I-Device
 
 Prepare	B-Action
 eppendorf	B-Location
-tubes,	I-Location
+tubes	I-Location
+,	O
 and	O
 3	B-Numerical
 x	I-Numerical
 50mL	B-Size
 falcon	B-Location
-tubes:	I-Location
-1)	O
+tubes	I-Location
+:	O
+1	O
+)	O
 for	O
 sterile	B-Modifier
-water,	B-Reagent
-2)	O
+water	B-Reagent
+,	O
+2	O
+)	O
 for	O
 Milton	B-Reagent
 solution	I-Reagent
-(1	B-Numerical
+(	O
+1	B-Numerical
 Milton	B-Reagent
 tablet	I-Reagent
 in	O
 25ml	B-Amount
 sterile	B-Modifier
-water),	B-Reagent
+water	B-Reagent
+)	O
+,	O
 and	O
-3)	O
+3	O
+)	O
 for	O
 the	O
 washed	B-Modifier
 spores	B-Reagent
-heads.
-	I-Reagent
+heads	I-Reagent
+.	O
 
 Use	B-Action
 two	B-Numerical
 sporangia	B-Reagent
 per	B-Modifier
-transformation.
-	B-Method
+transformation	B-Method
+.	O
 
 Check	B-Action
 number	B-Measure-Type
@@ -67,9 +78,11 @@ in	O
 the	O
 spore	B-Reagent
 head	I-Reagent
-(this	B-Mention
+(	O
+this	B-Mention
 is	O
-variable,	B-Modifier
+variable	B-Modifier
+,	O
 ex	O
 there	O
 may	O
@@ -80,15 +93,17 @@ sporangia	B-Reagent
 in	O
 one	B-Numerical
 spore	B-Reagent
-head,	I-Reagent
+head	I-Reagent
+,	O
 and	O
 5	B-Numerical
 sporangia	B-Reagent
 in	O
 another	O
 spore	B-Reagent
-head).
-	I-Reagent
+head	I-Reagent
+)	O
+.	O
 
 Add	B-Action
 the	O
@@ -97,8 +112,8 @@ heads	I-Reagent
 to	O
 an	O
 eppendorf	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Depending	O
 on	O
@@ -107,7 +122,8 @@ number	B-Numerical
 of	O
 spore	B-Reagent
 heads	I-Reagent
-needed,	B-Modifier
+needed	B-Modifier
+,	O
 you	O
 may	O
 need	O
@@ -117,8 +133,8 @@ them	B-Mention
 into	O
 several	B-Modifier
 eppendorfs	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Add	B-Action
 0.5ml	B-Amount
@@ -127,8 +143,8 @@ solution	I-Reagent
 to	O
 each	B-Modifier
 eppendorf	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Use	O
 a	O
@@ -143,13 +159,14 @@ vortex	B-Action
 them	B-Mention
 until	O
 completely	B-Modifier
-re-suspended.
-	I-Modifier
+re-suspended	I-Modifier
+.	O
 
 Filter	B-Action
 crushed	B-Modifier
 spore	B-Reagent
-heads:	I-Reagent
+heads	I-Reagent
+:	O
 Place	B-Action
 the	O
 70	B-Size
@@ -161,8 +178,8 @@ a	O
 50	B-Amount
 ml	I-Amount
 falcon	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Pour	B-Action
 onto	O
@@ -175,15 +192,16 @@ ground	B-Reagent
 sporangia	I-Reagent
 from	O
 all	B-Modifier
-eppendorfs,	B-Location
+eppendorfs	B-Location
+,	O
 pour	B-Action
 the	O
 0.5	B-Amount
 ml	I-Amount
 from	O
 each	B-Modifier
-eppendorf.
-	B-Location
+eppendorf	B-Location
+.	O
 
 The	O
 solution	B-Reagent
@@ -194,12 +212,15 @@ flush	B-Action
 through	O
 the	O
 cell	B-Device
-strainer.
-	I-Device
+strainer	I-Device
+.	O
 
 Rinse	B-Action
 the	O
-Eppendorf(s)	B-Device
+Eppendorf	B-Device
+(	I-Device
+s	I-Device
+)	I-Device
 and	O
 strainer	B-Device
 with	O
@@ -213,13 +234,16 @@ each	B-Modifier
 two	B-Numerical
 sporangia	B-Reagent
 used	B-Modifier
-(ex.	O
+(	O
+ex	O
+.	O
 3	B-Amount
 ml	I-Amount
 for	O
 12	B-Numerical
-sporangia).
-	B-Reagent
+sporangia	B-Reagent
+)	O
+.	O
 
 Aliquot	B-Action
 the	O
@@ -229,11 +253,14 @@ spores	B-Reagent
 in	O
 eppendorf	B-Location
 tubes	I-Location
-(0.5	B-Amount
+(	O
+0.5	B-Amount
 or	I-Amount
 1ml	I-Amount
 per	B-Modifier
-tube),	B-Location
+tube	B-Location
+)	O
+,	O
 let	O
 them	B-Mention
 sit	B-Action
@@ -246,8 +273,8 @@ for	O
 6-7	B-Time
 minutes	I-Time
 at	O
-13000rpm.
-	B-Speed
+13000rpm	B-Speed
+.	O
 
 Discard	B-Action
 the	O
@@ -264,74 +291,87 @@ with	O
 μl	I-Amount
 of	O
 sterile	B-Modifier
-water. 	B-Reagent
+water	B-Reagent
+.	O
 
 Plate	B-Action
-spores: Plate	B-Reagent
-the	O
+spores	B-Reagent
+:	O
+Plate	B-Action
+the	I-Action
 150	B-Amount
 μl	I-Amount
-of	O
+of	I-Amount
 re-suspended	B-Modifier
-spores	B-Reagent
-on	O
+spores	I-Modifier
+on	B-Reagent
 a	O
 1/2	B-Location
 GB	I-Location
 plate	I-Location
-(no	B-Modifier
-antibiotics).
-	B-Reagent
+(	I-Location
+no	B-Modifier
+antibiotics	I-Modifier
+)	B-Reagent
+.	O
 
 Use	B-Action
 an	O
 L-shaped	B-Device
-spreader.
-	I-Device
+spreader	I-Device
+.	O
 
 If	O
 0.5	B-Amount
 ml	I-Amount
 aliquots	B-Reagent
 made	O
-(equivalent	B-Modifier
+(	O
+equivalent	B-Modifier
 to	I-Modifier
 2	B-Numerical
-sporangia),	B-Reagent
+sporangia	B-Reagent
+)	O
+,	O
 use	B-Action
 one	B-Numerical
 plate	B-Location
 per	B-Modifier
-transformation.
-	I-Modifier
+transformation	I-Modifier
+.	O
 
 If	O
 1	B-Amount
 ml	I-Amount
 aliquots	B-Reagent
 made	O
-(equivalent	B-Modifier
+(	O
+equivalent	B-Modifier
 to	O
 4	B-Numerical
-sporangia),	B-Reagent
+sporangia	B-Reagent
+)	O
+,	O
 use	B-Action
 half	B-Modifier
 a	O
 plate	B-Location
 per	B-Modifier
-transformation.
-	I-Modifier
+transformation	I-Modifier
+.	O
 
 Grow	B-Action
 upside	B-Modifier
 down	I-Modifier
-(rhizoids	B-Reagent
+(	O
+rhizoids	B-Reagent
 will	O
 grow	B-Action
 away	I-Action
 from	O
 the	O
-media)	B-Reagent
+media	B-Reagent
+)	O
 for	O
 5-6	B-Time
 days	I-Time
@@ -341,8 +381,10 @@ at	O
 CL	O
 150μE	B-Generic-Measure
 Sporelings	B-Reagent
-(germinated	B-Modifier
-spores)	B-Reagent
+(	O
+germinated	B-Modifier
+spores	B-Reagent
+)	O
 have	O
 red	B-Modifier
 fluoresence	I-Modifier
@@ -352,33 +394,40 @@ autofluorescence	I-Method
 after	B-Modifier
 ~	B-Time
 3	I-Time
-days.	I-Time
+days	I-Time
+.	O
 
 Agro	B-Method
-transformation: Mix	I-Method
-DNA	B-Reagent
-and	O
-Agro:	B-Reagent
+transformation	I-Method
+:	O
+Mix	B-Action
+DNA	I-Action
+and	B-Reagent
+Agro	I-Reagent
+:	I-Reagent
 For	O
 each	B-Modifier
-agro	B-Method
-transformation,	I-Method
+agro	I-Modifier
+transformation	B-Method
+,	I-Method
 add	B-Action
-20-50ng	B-Amount
-of	O
+20-50ng	I-Action
+of	B-Amount
 plasmid	B-Reagent
-to	O
-50	B-Amount
-μL	I-Amount
-of	O
+to	I-Reagent
+50	O
+μL	B-Amount
+of	I-Amount
 thawed	B-Modifier
 electrocompetent	I-Modifier
-Agrobacterium	B-Reagent
-cells	I-Reagent
-(kept	B-Modifier
+Agrobacterium	I-Modifier
+cells	B-Reagent
+(	I-Reagent
+kept	B-Modifier
 on	I-Modifier
-ice).
-	I-Modifier
+ice	I-Modifier
+)	I-Modifier
+.	O
 
 Electroporate	B-Action
 in	O
@@ -391,18 +440,21 @@ with	O
 a	O
 2.5	B-Generic-Measure
 kV	I-Generic-Measure
-pulse.
-	B-Method
+pulse	B-Method
+.	O
 
 Recover	B-Action
-Agro:	B-Reagent
+Agro	B-Reagent
+:	O
 Immediately	B-Modifier
 add	B-Action
 1mL	B-Amount
 of	O
 SOC	B-Reagent
-(or	O
-LB)	B-Reagent
+(	O
+or	O
+LB	B-Reagent
+)	O
 and	O
 incubate	B-Action
 1-2h	B-Time
@@ -410,11 +462,12 @@ at	O
 28	B-Temperature
 ºC	I-Temperature
 150	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 Plate	B-Action
-Agro:	B-Reagent
+Agro	B-Reagent
+:	O
 Streak	B-Action
 20-50μL	B-Amount
 on	O
@@ -422,17 +475,21 @@ LB	B-Reagent
 plates	I-Reagent
 +	I-Reagent
 antibiotics	I-Reagent
-(Kan	I-Reagent
-50,	I-Reagent
-Tet	I-Reagent
-5,	I-Reagent
+(	O
+Kan	B-Reagent
+50	I-Reagent
+,	O
+Tet	B-Reagent
+5	I-Reagent
+,	O
 for	O
 GV2260	B-Reagent
 with	O
 a	O
 pGreen	B-Reagent
-plasmid).
-	I-Reagent
+plasmid	I-Reagent
+)	O
+.	O
 
 Each	B-Modifier
 Agro	B-Method
@@ -440,8 +497,8 @@ transformation	I-Method
 in	O
 a	O
 different	B-Modifier
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 Grow	B-Action
 for	O
@@ -452,13 +509,16 @@ at	O
 ºC	I-Temperature
 or	O
 30	B-Temperature
-ºC,	I-Temperature
-incubator.	B-Device
+ºC	I-Temperature
+,	O
+incubator	B-Device
+.	O
 
 Optional	B-Modifier
 Agro	B-Reagent
 colony	I-Reagent
-PCR:	B-Method
+PCR	B-Method
+:	O
 all	B-Modifier
 agrobacterium	B-Reagent
 colonies	I-Reagent
@@ -469,7 +529,8 @@ antibiotics	I-Reagent
 plates	B-Location
 should	O
 be	O
-positive,	B-Modifier
+positive	B-Modifier
+,	O
 however	O
 if	O
 there	O
@@ -498,34 +559,39 @@ false	I-Modifier
 positives	I-Modifier
 on	O
 the	O
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 In	B-Modifier
 that	I-Modifier
-case,	I-Modifier
+case	I-Modifier
+,	O
 do	B-Action
 a	O
 colony	B-Method
 PCR	I-Method
 of	O
 Agro	B-Reagent
-colonies.
-	I-Reagent
+colonies	I-Reagent
+.	O
 
 Grow	B-Action
 Agro	B-Reagent
-culture:  	I-Reagent
-(~	B-Size
-15''	I-Size
-–	O
-set	B-Action
-up	I-Action
-sometime	B-Time
-in	I-Time
+culture	I-Reagent
+:	O
+(	O
+~	O
+15	B-Size
+''	I-Size
+–	I-Size
+set	O
+up	B-Action
+sometime	I-Action
+in	B-Time
 the	I-Time
-afternoon).
-	I-Time
+afternoon	I-Time
+)	I-Time
+.	I-Time
 
 For	B-Modifier
 each	I-Modifier
@@ -536,7 +602,8 @@ a	O
 single	B-Modifier
 colony	B-Reagent
 from	O
-plate,	B-Location
+plate	B-Location
+,	O
 inoculate	B-Action
 5	B-Amount
 ml	I-Amount
@@ -544,25 +611,30 @@ LB	B-Reagent
 media	I-Reagent
 +	I-Reagent
 antibiotics	I-Reagent
-(Kan	I-Reagent
-50,	I-Reagent
-Tet	I-Reagent
+(	O
+Kan	B-Reagent
+50	I-Reagent
+,	O
+Tet	B-Reagent
 5	I-Reagent
 for	O
 GV2260	B-Reagent
 with	O
 a	O
 pGreen	B-Reagent
-plasmid)	I-Reagent
+plasmid	I-Reagent
+)	O
 in	O
 a	O
 15	B-Amount
 ml	I-Amount
 falcon	B-Location
 tube	I-Location
-(unskirted	B-Modifier
-tube).
-	B-Location
+(	O
+unskirted	B-Modifier
+tube	B-Location
+)	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -571,23 +643,29 @@ at	O
 -	O
 150	B-Speed
 rpm	I-Speed
-(wrap	B-Action
+(	O
+wrap	B-Action
 the	O
 tubes	B-Location
 in	O
-foil)	B-Seal
+foil	B-Seal
+)	O
 and	O
 let	O
 grow	B-Action
 for	O
 1.5	B-Time
-days. 	I-Time
+days	I-Time
+.	O
 
 Agro	B-Method
 induction	I-Method
 with	O
-Acetosyringone:	B-Reagent
-(~20''	B-Size
+Acetosyringone	B-Reagent
+:	O
+(	O
+~20	B-Size
+''	I-Size
 plus	O
 6	B-Time
 h	I-Time
@@ -597,20 +675,27 @@ set	B-Action
 up	I-Action
 in	B-Time
 the	I-Time
-morning):	I-Time
+morning	I-Time
+)	O
+:	O
 Centrifuge	B-Action
 the	O
 agrobacterium	B-Reagent
-culture(s)	I-Reagent
-10''	B-Time
+culture	I-Reagent
+(	O
+s	O
+)	O
+10	B-Time
+''	I-Time
 at	O
-3000g.
-	B-Speed
+3000g	B-Speed
+.	O
 
 For	B-Modifier
 each	I-Modifier
 agrobacterium	B-Reagent
-culture,	I-Reagent
+culture	I-Reagent
+,	O
 discard	B-Action
 the	O
 supernatant	B-Reagent
@@ -627,8 +712,8 @@ sup	I-Reagent
 containing	O
 100	B-Concentration
 μM	I-Concentration
-Acetosyringone.
-	B-Reagent
+Acetosyringone	B-Reagent
+.	O
 
 Add	B-Action
 acetosyringone	B-Reagent
@@ -639,7 +724,8 @@ concentration	B-Measure-Type
 of	O
 100	B-Concentration
 μM	I-Concentration
-(for	O
+(	O
+for	O
 3ml	B-Amount
 media	B-Reagent
 add	O
@@ -648,8 +734,9 @@ add	O
 100	B-Concentration
 mM	I-Concentration
 stock	B-Reagent
-solution).
-	I-Reagent
+solution	I-Reagent
+)	O
+.	O
 
 Shake	B-Action
 for	O
@@ -664,18 +751,20 @@ rpm	I-Speed
 in	B-Modifier
 the	I-Modifier
 dark	I-Modifier
-(wrap	B-Action
+(	O
+wrap	B-Action
 the	O
 tubes	B-Location
 in	O
-foil).
-	B-Seal
+foil	B-Seal
+)	O
+.	O
 
 Agro	B-Method
 co-Cultivation	I-Method
 with	O
-sporelings.
-	B-Reagent
+sporelings	B-Reagent
+.	O
 
 Scrape	B-Action
 the	O
@@ -690,7 +779,8 @@ using	O
 an	O
 L	B-Device
 shaped	I-Device
-spreader,	I-Device
+spreader	I-Device
+,	O
 gather	B-Action
 the	O
 sporelings	B-Reagent
@@ -702,22 +792,25 @@ a	O
 100-250	B-Amount
 ml	I-Amount
 autoclaved	B-Modifier
-flask.
-	B-Location
+flask	B-Location
+.	O
 
 Use	B-Action
 one	B-Numerical
 plate	B-Location
 per	B-Modifier
 flask	B-Location
-(transformation)	B-Method
+(	O
+transformation	B-Method
+)	O
 if	O
 you	O
 plated	B-Action
 2	B-Numerical
 sporangia	B-Reagent
 per	B-Modifier
-plate,	B-Location
+plate	B-Location
+,	O
 or	O
 half	B-Modifier
 a	O
@@ -728,8 +821,8 @@ plated	B-Action
 4	B-Numerical
 sporangia	B-Reagent
 per	B-Modifier
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 Add	B-Action
 to	O
@@ -747,18 +840,20 @@ and	O
 ul	I-Amount
 of	O
 100mM	B-Concentration
-Acetosyringone,	B-Reagent
+Acetosyringone	B-Reagent
+,	O
 for	O
 a	O
 final	B-Modifier
 concentration	B-Measure-Type
 of	O
-100μM.
-	B-Concentration
+100μM	B-Concentration
+.	O
 
 To	O
 each	B-Modifier
-flask,	B-Location
+flask	B-Location
+,	O
 add	B-Action
 1ml	B-Amount
 of	O
@@ -766,23 +861,27 @@ the	O
 appropiate	B-Modifier
 Agrobacterium	B-Reagent
 culture	I-Reagent
-(induced	B-Action
+(	O
+induced	B-Action
 6	B-Time
 h	I-Time
-prior).
-	B-Modifier
+prior	B-Modifier
+)	O
+.	O
 
 Co-cultivate	B-Action
 for	O
 2	B-Time
 days	I-Time
-(at	B-Modifier
+(	O
+at	B-Modifier
 least	I-Modifier
 36	B-Time
 h	I-Time
 or	O
 1.5	B-Time
-days)	I-Time
+days	I-Time
+)	O
 on	O
 a	O
 shaker	B-Device
@@ -791,14 +890,17 @@ the	O
 tissue	B-Location
 culture	I-Location
 room	I-Location
-(21	B-Temperature
-ºC,	I-Temperature
+(	O
+21	B-Temperature
+ºC	I-Temperature
+,	O
 CL	O
 150-200	B-Generic-Measure
-uE)	I-Generic-Measure
+uE	I-Generic-Measure
+)	O
 Sporelings	B-Reagent
-Collection.
-	I-Reagent
+Collection	I-Reagent
+.	O
 
 Add	B-Action
 cefotaxime	B-Reagent
@@ -813,7 +915,8 @@ a	O
 final	B-Modifier
 concentration	B-Measure-Type
 of	O
-100ug/ml,	B-Concentration
+100ug/ml	B-Concentration
+,	O
 150-200	B-Amount
 ml	I-Amount
 are	O
@@ -821,34 +924,37 @@ needed	B-Modifier
 per	I-Modifier
 flask	B-Location
 of	O
-co-cultivation.
-	B-Method
+co-cultivation	B-Method
+.	O
 
 For	O
 each	B-Modifier
 co-cultivation	B-Location
 flask	I-Location
-(transformation),	B-Method
+(	O
+transformation	B-Method
+)	O
+,	O
 collect	B-Action
 the	O
-sporelings 	B-Reagent
+sporelings	B-Reagent
 by	O
 pouring	B-Action
-the	O
+the	I-Action
 flask	B-Reagent
 contents	I-Reagent
-in	O
+in	I-Reagent
 a	O
-70	B-Size
-μm	I-Size
-cell	B-Device
-strainer	I-Device
-placed	B-Location
-on	I-Location
+70	O
+μm	B-Size
+cell	I-Size
+strainer	B-Device
+placed	I-Device
+on	B-Location
 a	I-Location
-1L	B-Amount
-bottle.
-	B-Location
+1L	I-Location
+bottle	B-Amount
+.	B-Location
 
 Rinse	B-Action
 the	O
@@ -864,14 +970,17 @@ water	B-Reagent
 cefo	I-Reagent
 100	B-Numerical
 Sporelings	B-Method
-plating.
-	I-Method
+plating	I-Method
+.	O
 
 For	O
 each	B-Modifier
 co-cultivation	B-Location
 flask	I-Location
-(transformation),	B-Method
+(	O
+transformation	B-Method
+)	O
+,	O
 with	O
 the	O
 help	B-Modifier
@@ -901,17 +1010,21 @@ at	B-Modifier
 least	I-Modifier
 3	B-Numerical
 plates	B-Location
-(1/2	B-Numerical
+(	O
+1/2	B-Numerical
 GB	B-Reagent
 plates	B-Location
 with	O
-antibiotics),	B-Reagent
+antibiotics	B-Reagent
+)	O
+,	O
 make	B-Action
 sure	I-Action
 they	B-Mention
 are	O
 well	B-Modifier
-spread,	I-Modifier
+spread	I-Modifier
+,	O
 the	O
 better	B-Modifier
 the	O
@@ -922,18 +1035,21 @@ the	O
 transgenic	B-Reagent
 plants	I-Reagent
 will	O
-grow.  	B-Action
+grow	B-Action
+.	O
 
 Screening	B-Action
 for	O
-transformants: Positive	B-Reagent
-transformants	I-Reagent
-grow	B-Action
-while	O
+transformants	B-Reagent
+:	O
+Positive	B-Modifier
+transformants	I-Modifier
+grow	B-Reagent
+while	B-Action
 non-trasnformed	B-Modifier
-sporelings	B-Reagent
-die.
-	B-Action
+sporelings	I-Modifier
+die	B-Reagent
+.	B-Action
 
 Positive	B-Modifier
 transformants	B-Reagent
@@ -944,8 +1060,8 @@ about	B-Modifier
 1	B-Time
 week	I-Time
 after	I-Time
-plating.
-	I-Time
+plating	I-Time
+.	O
 
 Positive	B-Modifier
 transformants	B-Reagent
@@ -967,14 +1083,15 @@ microscope	B-Device
 after	B-Modifier
 about	B-Time
 5	I-Time
-days.
-	I-Time
+days	I-Time
+.	O
 
 Once	O
 positive	B-Modifier
 transformants	B-Reagent
 have	O
-grown,	B-Action
+grown	B-Action
+,	O
 from	O
 about	B-Modifier
 a	B-Reagent
@@ -982,7 +1099,8 @@ week	I-Reagent
 and	I-Reagent
 a	I-Reagent
 half	I-Reagent
-onwards,	I-Reagent
+onwards	I-Reagent
+,	O
 they	B-Mention
 should	O
 be	O
@@ -993,7 +1111,8 @@ new	B-Modifier
 GB	B-Reagent
 plates	B-Location
 with	O
-antibiotics,	B-Reagent
+antibiotics	B-Reagent
+,	O
 so	O
 they	B-Mention
 can	O
@@ -1001,8 +1120,7 @@ grow	B-Action
 faster	B-Modifier
 and	O
 make	B-Action
-gemmae
-	B-Reagent
+gemmae	B-Reagent
 
 
 

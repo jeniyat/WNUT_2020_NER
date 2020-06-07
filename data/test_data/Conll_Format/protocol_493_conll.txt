@@ -3,8 +3,7 @@ Membrane	I-Reagent
 protein	I-Reagent
 extraction	B-Method
 from	O
-tissues
-	B-Reagent
+tissues	B-Reagent
 
 Thaw	B-Action
 20–50	B-Amount
@@ -21,8 +20,8 @@ mL	I-Amount
 of	O
 high	B-Modifier
 salt	B-Location
-buffer.
-	I-Location
+buffer	I-Location
+.	O
 
 Homogenize	B-Action
 tissues	B-Reagent
@@ -36,10 +35,12 @@ at	O
 maximum	B-Speed
 speed	I-Speed
 (	O
-∼25,000rpm)	B-Modifier
+∼25,000rpm	B-Modifier
+)	O
 for	O
 30	B-Time
-s.	I-Time
+s	I-Time
+.	O
 
 Ultracentrifuge	B-Action
 the	O
@@ -53,8 +54,8 @@ at	O
 g	I-Speed
 for	O
 10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 The	O
 tubes	B-Location
@@ -67,8 +68,8 @@ difference	O
 less	B-Modifier
 than	I-Modifier
 50	B-Amount
-mg.
-	I-Amount
+mg	I-Amount
+.	O
 
 Discard	B-Action
 the	O
@@ -86,8 +87,7 @@ as	O
 in	O
 step	B-Method
 2	I-Method
-.
-	O
+.	O
 
 Incubate	B-Action
 for	O
@@ -95,8 +95,8 @@ for	O
 min	I-Time
 with	O
 gentle	B-Modifier
-mixing.
-	B-Action
+mixing	B-Action
+.	O
 
 Collect	B-Action
 the	O
@@ -108,7 +108,8 @@ as	O
 in	O
 step	O
 3	O
-(If	O
+(	O
+If	O
 the	O
 content	O
 of	O
@@ -123,11 +124,13 @@ is	O
 not	O
 at	O
 least	O
-30–40%	B-Amount
+30–40	B-Amount
+%	I-Amount
 of	O
 total	B-Reagent
 identified	I-Reagent
-proteins,	I-Reagent
+proteins	I-Reagent
+,	O
 steps	O
 4–6	O
 can	O
@@ -136,8 +139,9 @@ repeated	B-Action
 two	B-Numerical
 to	I-Numerical
 three	I-Numerical
-times).
-	O
+times	O
+)	O
+.	O
 
 Discard	B-Action
 supernatant	B-Reagent
@@ -151,8 +155,7 @@ as	O
 in	O
 step	B-Method
 2	I-Method
-.
-	O
+.	O
 
 Collect	B-Action
 the	O
@@ -164,8 +167,7 @@ as	O
 in	O
 step	O
 3	O
-.
-	O
+.	O
 
 
 

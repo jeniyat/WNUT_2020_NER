@@ -3,8 +3,7 @@ HLA	I-Method
 Class	I-Method
 I	I-Method
 ELISA	I-Method
-Protocol
-	I-Method
+Protocol	I-Method
 
 Prepare	B-Action
 the	O
@@ -14,8 +13,8 @@ approximately	B-Modifier
 10	B-Time
 minutes	I-Time
 before	I-Time
-use:
-	I-Time
+use	I-Time
+:	O
 
 10.34ml	B-Amount
 DI	B-Reagent
@@ -32,14 +31,14 @@ solution120μl	I-Reagent
 of	O
 Hydrogen	B-Reagent
 peroxide	I-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Vortex	B-Action
 to	O
 mix	B-Action
-well.
-	B-Modifier
+well	B-Modifier
+.	O
 
 The	O
 substrate	B-Reagent
@@ -49,12 +48,14 @@ be	O
 at	O
 room	B-Temperature
 temperature	I-Temperature
-(18-25°C)	I-Temperature
+(	O
+18-25°C	B-Temperature
+)	I-Temperature
 for	B-Modifier
 optimal	I-Modifier
 reproducible	I-Modifier
-results.
-	I-Modifier
+results	I-Modifier
+.	O
 
 Dilute	B-Action
 the	O
@@ -72,20 +73,20 @@ solution	I-Reagent
 to	O
 coat	B-Action
 the	O
-plate:
-	B-Location
+plate	B-Location
+:	O
 
 -24μl	B-Amount
 of	O
 Streptavidin	B-Reagent
-solution
-	I-Reagent
+solution	I-Reagent
 
 -11.976	B-Amount
 ml	I-Amount
 1X	B-Concentration
 Coating	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Calculate	B-Action
 the	O
@@ -111,8 +112,8 @@ in	O
 DI	B-Reagent
 water	I-Reagent
 before	B-Modifier
-use.
-	I-Modifier
+use	I-Modifier
+.	O
 
 The	O
 1X	B-Numerical
@@ -126,12 +127,13 @@ up	B-Modifier
 to	I-Modifier
 oneweek	B-Time
 at	O
-2-8°C.
-	B-Temperature
+2-8°C	B-Temperature
+.	O
 
 Prepare	B-Action
 Wash	B-Reagent
-Buffer;	I-Reagent
+Buffer	I-Reagent
+;	O
 dilute	B-Action
 the	O
 20X	B-Concentration
@@ -139,13 +141,14 @@ wash	B-Reagent
 buffer	I-Reagent
 with	O
 DI	B-Reagent
-water,	I-Reagent
+water	I-Reagent
+,	O
 at	B-Modifier
 least	I-Modifier
 300ml	B-Amount
 per	B-Modifier
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 Dilute	B-Action
 concentrated	B-Generic-Measure
@@ -159,13 +162,13 @@ Dilution	B-Reagent
 Buffer	I-Reagent
 just	B-Modifier
 before	I-Modifier
-use.
-	I-Modifier
+use	I-Modifier
+.	O
 
 Prepare12ml	B-Action
 per	O
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 Dilute	B-Action
 the	O
@@ -177,8 +180,8 @@ to	O
 prepare	B-Action
 a	O
 2.7μM	B-Concentration
-solution:
-	B-Reagent
+solution	B-Reagent
+:	O
 
 -5μl	B-Amount
 of	O
@@ -187,8 +190,7 @@ ELISA	I-Reagent
 Positive	I-Reagent
 Control	I-Reagent
 at	O
-0.2mg/ml
-	B-Concentration
+0.2mg/ml	B-Concentration
 
 -2.9μl	B-Amount
 of	O
@@ -202,8 +204,8 @@ of	O
 the	O
 plate	B-Location
 with	O
-Streptavidin.
-	B-Reagent
+Streptavidin	B-Reagent
+.	O
 
 Add	B-Action
 100μl	B-Amount
@@ -212,21 +214,25 @@ Streptavidin	B-Reagent
 solution	I-Reagent
 to	O
 all	O
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Seal	B-Action
 theplate	B-Location
 and	O
 incubate	B-Action
 overnight	B-Time
-(16-18	I-Time
-hrs)	I-Time
+(	O
+16-18	B-Time
+hrs	I-Time
+)	O
 at	O
 room	B-Temperature
 temperature	I-Temperature
-(18-25°C).
-	I-Temperature
+(	O
+18-25°C	B-Temperature
+)	O
+.	O
 
 Discard	B-Action
 the	O
@@ -258,16 +264,16 @@ upside	B-Method
 down	I-Method
 on	O
 absorbent	B-Reagent
-paper.
-	I-Reagent
+paper	I-Reagent
+.	O
 
 All	B-Modifier
 subsequent	I-Modifier
 washesshould	B-Method
 be	O
 performed	B-Action
-similarly.
-	B-Modifier
+similarly	B-Modifier
+.	O
 
 To	O
 block	B-Action
@@ -275,7 +281,8 @@ non-specific	B-Method
 binding	I-Method
 and	O
 reduce	B-Action
-background,	B-Modifier
+background	B-Modifier
+,	O
 add	B-Action
 300μl	B-Amount
 of	O
@@ -284,8 +291,8 @@ Dilution	B-Reagent
 Buffer	I-Reagent
 to	O
 all	B-Modifier
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Seal	B-Action
 the	O
@@ -298,8 +305,10 @@ minutes	I-Time
 at	O
 room	B-Temperature
 temperature	I-Temperature
-(18-25°C).
-	I-Temperature
+(	O
+18-25°C	B-Temperature
+)	O
+.	O
 
 Prepare	B-Action
 three	B-Numerical
@@ -314,8 +323,8 @@ dilution	I-Method
 in	O
 1X	B-Concentration
 Dilution	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Prepare	B-Action
 the	O
@@ -328,8 +337,8 @@ on	O
 melting	B-Temperature
 ice	I-Temperature
 until	B-Modifier
-usage.
-	I-Modifier
+usage	I-Modifier
+.	O
 
 To	O
 evaluate	B-Action
@@ -339,7 +348,8 @@ of	O
 UV-mediated	B-Method
 HLA	I-Method
 peptide	I-Method
-exchange,	I-Method
+exchange	I-Method
+,	O
 dilute	B-Action
 a	O
 small	B-Generic-Measure
@@ -354,7 +364,8 @@ in	O
 1X	B-Concentration
 Dilution	B-Reagent
 Buffer	I-Reagent
-(refer	O
+(	O
+refer	O
 to	O
 the	O
 peptide	B-Method
@@ -372,12 +383,13 @@ specific	I-Method
 CD8+	I-Method
 T	I-Method
 cell	I-Method
-staining).
-	I-Method
+staining	I-Method
+)	O
+.	O
 
 Mix	B-Action
-thoroughly.
-	B-Modifier
+thoroughly	B-Modifier
+.	O
 
 Discard	B-Action
 the	O
@@ -390,8 +402,8 @@ and	O
 blot	B-Action
 the	O
 residual	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Pipette	B-Action
 100μl	B-Amount
@@ -399,34 +411,49 @@ of	O
 1X	B-Concentration
 Dilution	B-Reagent
 Buffer	I-Reagent
-(blank),	B-Modifier
+(	O
+blank	B-Modifier
+)	O
+,	O
 diluted	B-Reagent
 ELISA	I-Reagent
 controls	I-Reagent
-(H,	B-Modifier
-M,	I-Modifier
-L,	I-Modifier
-positive,	I-Modifier
-negative,	I-Modifier
+(	O
+H	B-Modifier
+,	I-Modifier
+M	I-Modifier
+,	O
+L	B-Modifier
+,	O
+positive	B-Modifier
+,	O
+negative	B-Modifier
+,	O
 and	O
 UV	B-Modifier
-only),	I-Modifier
+only	I-Modifier
+)	O
+,	O
 or	O
 exchange	B-Reagent
 reaction	I-Reagent
 mixture	I-Reagent
-dilutions,	I-Reagent
+dilutions	I-Reagent
+,	O
 into	O
 the	O
 appropriate	B-Modifier
 wells	B-Location
-(recommended	B-Modifier
+(	O
+recommended	B-Modifier
 in	I-Modifier
-duplicate,	I-Modifier
+duplicate	I-Modifier
+,	O
 see	B-Method
 plate	I-Method
-map).
-	I-Method
+map	I-Method
+)	O
+.	O
 
 Seal	B-Action
 the	O
@@ -437,8 +464,8 @@ for	O
 1	B-Time
 hour	I-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Discard	B-Action
 the	O
@@ -456,16 +483,16 @@ of	O
 wash	B-Reagent
 buffer	I-Reagent
 per	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Add	B-Action
 100μl	B-Amount
 of	O
 diluted	B-Reagent
 HRP-conjugated	I-Reagent
-antibody.
-	I-Reagent
+antibody	I-Reagent
+.	O
 
 Seal	B-Action
 the	O
@@ -476,8 +503,8 @@ for	O
 1	B-Time
 hour	I-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Discard	B-Action
 the	O
@@ -495,15 +522,15 @@ of	O
 wash	B-Reagent
 buffer	I-Reagent
 per	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Add	B-Action
 100μl	B-Amount
 of	O
 substrate	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Incubate	B-Action
 for	O
@@ -512,7 +539,9 @@ minutes	I-Time
 at	O
 room	B-Temperature
 temperature	I-Temperature
-(18-25°C)	I-Temperature
+(	O
+18-25°C	B-Temperature
+)	O
 in	O
 the	O
 dark	B-Method
@@ -522,8 +551,8 @@ plate	B-Device
 shaker	I-Device
 at	O
 400-500	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 Add	B-Action
 50μl	B-Amount
@@ -543,19 +572,20 @@ ELISA	B-Device
 reader	I-Device
 within	B-Modifier
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 View	O
 BioLegend	O
 website	O
 for	O
 Representative	O
-Data,	O
+Data	O
+,	O
 and	O
 Appendix	O
-1.
-	O
+1	O
+.	O
 
 
 

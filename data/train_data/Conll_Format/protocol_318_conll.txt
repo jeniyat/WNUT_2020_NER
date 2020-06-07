@@ -2,8 +2,7 @@ DNA	B-Reagent
 Extraction	B-Method
 from	O
 sorted	B-Reagent
-cells
-	I-Reagent
+cells	I-Reagent
 
 Prepare	B-Action
 2x	B-Concentration
@@ -22,14 +21,14 @@ its	B-Mention
 final	O
 concentration	B-Measure-Type
 is	O
-1x.
-	B-Concentration
+1x	B-Concentration
+.	O
 
 Filter-sterilize	B-Action
 through	O
 0.2	B-Generic-Measure
-μm.
-	I-Generic-Measure
+μm	I-Generic-Measure
+.	O
 
 Prepare	B-Action
 2x	B-Concentration
@@ -39,7 +38,10 @@ with	O
 Lysozyme	B-Reagent
 &	I-Reagent
 RNase	I-Reagent
-(1):	O
+(	O
+1	O
+)	O
+:	O
 right	O
 before	O
 use	O
@@ -50,16 +52,18 @@ ml	I-Amount
 aliquot	B-Reagent
 of	O
 lysis	B-Reagent
-buffer:	I-Reagent
+buffer	I-Reagent
+:	O
 
 Shake	B-Action
 to	O
 dissolve	B-Action
-thoroughly,	B-Modifier
+thoroughly	B-Modifier
+,	O
 then	O
 filter-sterilize	B-Action
-again.
-	B-Modifier
+again	B-Modifier
+.	O
 
 Dilute	B-Action
 the	O
@@ -69,15 +73,16 @@ buffer	I-Reagent
 1:1	B-Generic-Measure
 with	O
 MQ	B-Reagent
-water.
-	I-Reagent
+water	I-Reagent
+.	O
 
 Weigh	B-Action
 out	I-Action
 minimum	B-Modifier
 amount	B-Amount
 of	O
-ProtK,	B-Reagent
+ProtK	B-Reagent
+,	O
 then	O
 add	B-Action
 the	O
@@ -85,13 +90,13 @@ appropriate	B-Modifier
 amount	B-Amount
 of	O
 lysis	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Filter	B-Action
 sterilize	I-Action
-again.
-	B-Modifier
+again	B-Modifier
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -109,8 +114,8 @@ to	O
 volume	I-Amount
 of	O
 sorted	B-Modifier
-cells.
-	B-Reagent
+cells	B-Reagent
+.	O
 
 Note	O
 down	O
@@ -118,35 +123,43 @@ volumes	B-Measure-Type
 and	O
 resulting	O
 volume	B-Amount
-V1.
-	I-Amount
+V1	I-Amount
+.	O
 
 Incubate	B-Action
 at	O
 37°C	B-Temperature
 for	O
 30	B-Time
-min,	I-Time
+min	I-Time
+,	O
 rotating	B-Method
 end-over-end	I-Method
 at	I-Method
 angle	I-Method
-(OR:	O
+(	O
+OR	O
+:	O
 in	O
 the	O
 shaking	B-Device
 incubator	I-Device
 @	O
 100	B-Speed
-rpm,	I-Speed
-vertical),	O
+rpm	I-Speed
+,	O
+vertical	O
+)	O
+,	O
 for	O
 optimal	B-Modifier
 mixing	B-Action
 with	O
 minimal	O
-frothing;	O
-alternatively,	O
+frothing	O
+;	O
+alternatively	O
+,	O
 shake	B-Action
 vertically	B-Modifier
 @	O
@@ -161,8 +174,8 @@ invert	B-Action
 times	O
 every	B-Modifier
 10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 V1*0.07	B-Amount
@@ -171,85 +184,101 @@ of	O
 ProtK	B-Reagent
 lysis	I-Reagent
 buffer	I-Reagent
-(2)	O
+(	O
+2	O
+)	O
 to	O
 a	O
 final	O
 concentration	B-Measure-Type
 of	O
 0.65	B-Concentration
-mg/ml.
-	I-Concentration
+mg/ml	I-Concentration
+.	I-Concentration
 
 Note	O
 down	O
-volumes,	B-Measure-Type
+volumes	B-Measure-Type
+,	O
 including	O
 resulting	O
 volume	B-Amount
-V2.
-	I-Amount
+V2	I-Amount
+.	O
 
 Add	B-Action
 V2/9	B-Amount
 μl	I-Amount
 of	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 SDS	B-Reagent
 to	O
 a	O
 final	O
 concentration	B-Measure-Type
 of	O
-1%.
-	B-Concentration
+1	B-Concentration
+%	I-Concentration
+.	O
 
 Note	O
 down	O
-volumes.
-	B-Measure-Type
+volumes	B-Measure-Type
+.	O
 
 Incubate	B-Action
 at	O
 55°C	B-Temperature
 for	O
 2	B-Time
-hours,	I-Time
+hours	I-Time
+,	O
 rotating	B-Method
 end-over-end	I-Method
 at	I-Method
 angle	I-Method
-(OR:	O
+(	O
+OR	O
+:	O
 in	O
 the	O
 shaking	B-Device
 incubator	I-Device
 @	O
 100	B-Speed
-rpm,	I-Speed
-vertical;	B-Modifier
+rpm	I-Speed
+,	O
+vertical	B-Modifier
+;	O
 invert	B-Action
 every	B-Modifier
 20	B-Time
 min	I-Time
 10	B-Numerical
-times).	O
+times	O
+)	O
+.	O
 
 Add	B-Action
 600	B-Amount
 μl	I-Amount
 buffer	B-Reagent
 AL	I-Reagent
-(=	O
+(	O
+=	O
 buffer	B-Reagent
 without	O
 the	O
-EtOH).	B-Reagent
+EtOH	B-Reagent
+)	O
+.	O
 
 Mix	B-Action
 thoroughly	B-Modifier
 by	O
-vortexing.	B-Method
+vortexing	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -257,131 +286,155 @@ at	O
 for	O
 10	B-Time
 min	I-Time
-(for	O
+(	O
+for	O
 heat	B-Device
 block	I-Device
 use	O
 1.5	B-Amount
 ml	I-Amount
-tubes!)
-	B-Location
+tubes	B-Location
+!	O
+)	O
 
 Add	B-Action
 600	B-Amount
 μl	I-Amount
 of	O
-96-100%	B-Concentration
+96-100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 Mix	B-Action
 by	O
 vortexing	B-Action
-vigorously.	B-Modifier
+vigorously	B-Modifier
+.	O
 
 Check	B-Action
 pH	B-Measure-Type
 of	O
-lysate,	B-Reagent
+lysate	B-Reagent
+,	O
 must	O
 be	O
-<7	B-Modifier
+<	B-Modifier
+7	B-pH
 to	O
 get	O
-max.	O
+max	O
+.	O
 binding	O
-efficiency.	O
+efficiency	O
+.	O
 
 Pipette	B-Action
-max.	B-Modifier
+max	B-Modifier
+.	I-Modifier
 possible	I-Modifier
 volume	B-Amount
 onto	O
 spin	B-Location
-columns.	I-Location
+columns	I-Location
+.	O
 
 Spin	B-Action
 3	B-Time
 min	I-Time
 at	O
-8000xg;	B-Speed
+8000xg	B-Speed
+;	O
 discard	B-Action
-flow-through.	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Pipette	B-Action
 additional	B-Modifier
 lysate	B-Reagent
 onto	O
 spin	B-Location
-columns.	I-Location
+columns	I-Location
+.	O
 
 Spin	B-Action
 1	B-Time
 min	I-Time
 at	O
-8000xg;	B-Speed
+8000xg	B-Speed
+;	O
 discard	B-Action
 flow-through	B-Reagent
 and	O
 collection	B-Location
-tube,	I-Location
+tube	I-Location
+,	O
 transfer	B-Action
 column	B-Location
 to	O
 new	B-Modifier
 collection	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 500	B-Amount
 μl	I-Amount
 of	O
 buffer	B-Reagent
-	O
 
 AW1	O
 Spin	B-Action
 2	B-Time
 min	I-Time
 at	O
-8000xg;	B-Speed
+8000xg	B-Speed
+;	O
 discard	B-Action
-flow-through.	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Add	B-Action
 500	B-Amount
 μl	I-Amount
 of	O
-buffer.	B-Reagent
+buffer	B-Reagent
+.	O
 
 AW2	O
 Spin	B-Action
 3	B-Time
 min	I-Time
 at	O
-8000xg;	B-Speed
+8000xg	B-Speed
+;	O
 discard	B-Action
 flow-through	B-Reagent
 and	O
 collection	B-Location
-tube,	I-Location
+tube	I-Location
+,	O
 To	O
 dry	B-Action
-columns,	B-Location
+columns	B-Location
+,	O
 spin	B-Action
 at	O
 8000xg	B-Speed
 for	O
 3	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Discard	B-Action
 potential	B-Modifier
-flow-through;	B-Reagent
+flow-through	B-Reagent
+;	O
 transfer	B-Action
 column	B-Location
 to	O
 new	B-Modifier
 collection	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -391,15 +444,16 @@ pre-heated	B-Modifier
 buffer	B-Reagent
 AE	I-Reagent
 or	O
-water.	B-Reagent
+water	B-Reagent
+.	O
 
 Incubate	B-Action
 1	B-Time
 min	I-Time
 at	O
 room	B-Temperature
-temp.
-	I-Temperature
+temp	I-Temperature
+.	O
 
 Spin	B-Action
 at	O
@@ -408,14 +462,15 @@ for	O
 2	B-Time
 min	I-Time
 to	O
-elute.	B-Action
+elute	B-Action
+.	O
 
 Repeat	B-Action
 with	O
 second	B-Modifier
 200	B-Amount
-μl.
-	I-Amount
+μl	I-Amount
+.	O
 
 Transfer	B-Action
 eluted	B-Modifier
@@ -425,14 +480,16 @@ the	O
 Amicon	B-Device
 Ultra	I-Device
 30	I-Device
-K.	I-Device
+K	I-Device
+.	O
 
 Centrifuge	B-Action
 at	O
 10,000xg	B-Speed
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Rinse	B-Action
 DNA	B-Reagent
@@ -440,20 +497,23 @@ with	O
 500	B-Amount
 μl	I-Amount
 PCR	B-Reagent
-water.	I-Reagent
+water	I-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
 10,000xg	B-Speed
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 20	B-Amount
 μl	I-Amount
 dilute	B-Modifier
-TE,	B-Reagent
+TE	B-Reagent
+,	O
 pipette	B-Action
 up	B-Method
 and	I-Method
@@ -466,7 +526,8 @@ to	O
 clean	B-Modifier
 tube	B-Location
 for	O
-storage.	O
+storage	O
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -475,13 +536,16 @@ for	O
 3	B-Time
 min	I-Time
 upside	B-Method
-down,	I-Method
+down	I-Method
+,	O
 in	O
 fresh	B-Modifier
 tube	B-Location
 to	O
 retrieve	B-Action
-(Optional:	O
+(	O
+Optional	O
+:	O
 repeat	B-Action
 with	O
 another	O
@@ -490,8 +554,8 @@ another	O
 to	O
 ensure	O
 all	O
-retrieved)
-	O
+retrieved	O
+)	O
 
 
 

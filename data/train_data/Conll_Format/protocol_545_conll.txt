@@ -3,15 +3,15 @@ of	I-Method
 U6-based	I-Method
 sgRNA	I-Method
 expression	I-Method
-vectors
-	I-Method
+vectors	I-Method
 
 Order	B-Action
 a	O
 pair	B-Modifier
 of	O
 U6	B-Modifier
-vector-specific,	I-Modifier
+vector-specific	I-Modifier
+,	I-Modifier
 23nt	I-Modifier
 targeting	B-Reagent
 primers	I-Reagent
@@ -21,7 +21,10 @@ target	B-Reagent
 For	O
 each	B-Modifier
 target	B-Reagent
-(GN19),	B-Modifier
+(	O
+GN19	B-Modifier
+)	O
+,	O
 order	B-Action
 a	O
 forward	B-Reagent
@@ -31,12 +34,14 @@ for	O
 the	O
 U6	B-Modifier
 promoter	B-Reagent
-vectors;	I-Reagent
+vectors	I-Reagent
+;	O
 order	B-Action
 a	O
 reverse	B-Reagent
 primer	I-Reagent
-AAACN19.	B-Modifier
+AAACN19	B-Modifier
+.	O
 
 Note	O
 that	O
@@ -54,7 +59,8 @@ that	I-Modifier
 in	I-Modifier
 the	I-Modifier
 forward	I-Modifier
-primer.	I-Modifier
+primer	I-Modifier
+.	O
 
 To	O
 order	B-Action
@@ -67,31 +73,46 @@ pU6x-sgRNA	I-Modifier
 vectors	I-Modifier
 and	I-Modifier
 pT7-gRNA	I-Modifier
-(Add	B-Action
+(	O
+Add	B-Action
 gene	B-Reagent
 plasmid	I-Reagent
-#4675;	I-Reagent
-(JAO	O
+#	I-Reagent
+4675	I-Reagent
+;	O
+(	O
+JAO	O
 et	O
 al	O
-2013)),	O
+2013	O
+)	O
+)	O
+,	O
 order	B-Action
 degenerate	B-Reagent
 primers	I-Reagent
 WTMGGN18	B-Modifier
-(forward)	I-Modifier
+(	O
+forward	B-Modifier
+)	O
 and	O
 AMMCN18C	B-Modifier
-(reverse),	I-Modifier
-where	I-Modifier
+(	O
+reverse	B-Modifier
+)	O
+,	O
+where	B-Modifier
 M=A	I-Modifier
 or	I-Modifier
-C,	I-Modifier
+C	I-Modifier
+,	I-Modifier
 W=A	I-Modifier
 or	I-Modifier
-T.	I-Modifier
+T	I-Modifier
+.	I-Modifier
 
-Again,	O
+Again	O
+,	O
 the	O
 N18	B-Reagent
 in	O
@@ -106,48 +127,58 @@ that	I-Modifier
 in	I-Modifier
 the	I-Modifier
 forward	I-Modifier
-primer.	I-Modifier
+primer	I-Modifier
+.	O
 
-Mix 1µl	B-Action
-100µM	B-Concentration
-stock	B-Reagent
-each	B-Modifier
-in	O
+Mix	B-Action
+1µl	B-Amount
+100µM	I-Amount
+stock	B-Concentration
+each	B-Reagent
+in	B-Modifier
 a	O
 20µl	B-Amount
-1x	B-Concentration
-NEB	B-Reagent
-buffer	I-Reagent
-2.	I-Reagent
+1x	I-Amount
+NEB	B-Concentration
+buffer	B-Reagent
+2	I-Reagent
+.	I-Reagent
 
 Incubate	B-Action
 the	O
 mixture	B-Reagent
 as	O
-follows:	O
+follows	O
+:	O
 95	B-Temperature
 °C	I-Temperature
 for	O
 5	B-Time
-min,	I-Time
-ramp down	B-Action
-to	O
-50	B-Temperature
-°C at	I-Temperature
-0.1	B-Measure-Type
-°C/sec,	I-Measure-Type
-50	B-Temperature
-°C	I-Temperature
-for	O
-10	B-Time
 min	I-Time
-chill to	B-Action
-4	B-Temperature
-°C	I-Temperature
-at	O
-normal	B-Generic-Measure
-ramp	I-Generic-Measure
-speed.	I-Generic-Measure
+,	O
+ramp	B-Action
+down	I-Action
+to	I-Action
+50	O
+°C	B-Temperature
+at	I-Temperature
+0.1	O
+°C/sec	B-Measure-Type
+,	I-Measure-Type
+50	I-Measure-Type
+°C	B-Temperature
+for	I-Temperature
+10	O
+min	B-Time
+chill	I-Time
+to	B-Action
+4	I-Action
+°C	O
+at	B-Temperature
+normal	I-Temperature
+ramp	B-Generic-Measure
+speed	I-Generic-Measure
+.	I-Generic-Measure
 
 Mix	B-Action
 the	O
@@ -164,15 +195,23 @@ U6	B-Reagent
 vector	I-Reagent
 of	B-Modifier
 choice	I-Modifier
-(pU6x-sgRNA	B-Reagent
-#1-#5,	O
+(	O
+pU6x-sgRNA	B-Reagent
+#	O
+1-	O
+#	O
+5	O
+,	O
 see	O
 diagrams	O
 and	O
 plasmid	B-Reagent
 list	O
 in	O
-the Guidelines).	O
+the	O
+Guidelines	O
+)	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -180,20 +219,26 @@ at	O
 °C	I-Temperature
 for	O
 20	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Incubate	B-Action
 at	O
 16	B-Temperature
-°C for	I-Temperature
-15	B-Time
-min.	I-Time
+°C	I-Temperature
+for	O
+15	O
+min	B-Time
+.	I-Time
 
 Incubate	B-Action
-at 37 °C	B-Temperature
-for	O
-10	B-Time
-min.	I-Time
+at	O
+37	B-Temperature
+°C	I-Temperature
+for	I-Temperature
+10	O
+min	B-Time
+.	I-Time
 
 Incubate	B-Action
 at	O
@@ -201,16 +246,20 @@ at	O
 °C	I-Temperature
 for	O
 15	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Incubate	B-Action
-at 80	B-Temperature
+at	O
+80	B-Temperature
 °C	I-Temperature
-for	O
-15	B-Time
-min	I-Time
-(optional).	B-Modifier
-	O
+for	I-Temperature
+15	O
+min	B-Time
+(	I-Time
+optional	B-Modifier
+)	I-Modifier
+.	O
 
 The	O
 reaction	B-Reagent
@@ -218,7 +267,8 @@ is	O
 ready	B-Modifier
 for	I-Modifier
 transformation	I-Modifier
-(use	B-Action
+(	O
+use	B-Action
 2	B-Amount
 µl	I-Amount
 of	O
@@ -226,19 +276,23 @@ the	O
 ligation	B-Reagent
 and	O
 plate	B-Action
-10%	B-Numerical
+10	B-Numerical
+%	I-Numerical
 ofthe	O
-transformants).
-	B-Reagent
+transformants	B-Reagent
+)	O
+.	O
 
 Transform	B-Action
 and	O
 spread	B-Action
 onto	O
 spectinomycin	B-Reagent
-(50µg/ml)	B-Concentration
-plates.
-	B-Location
+(	O
+50µg/ml	B-Concentration
+)	O
+plates	B-Location
+.	O
 
 
 

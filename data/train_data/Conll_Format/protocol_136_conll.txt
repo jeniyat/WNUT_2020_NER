@@ -4,8 +4,7 @@ Precipitation	B-Method
 of	O
 Viruses	B-Reagent
 from	O
-Seawater
-	B-Reagent
+Seawater	B-Reagent
 
 Assemble	B-Action
 two	B-Numerical
@@ -25,12 +24,14 @@ with	O
 a	O
 pressure	B-Device
 gauge	I-Device
-(maximum	B-Modifier
+(	O
+maximum	B-Modifier
 pressure	B-Measure-Type
 =	O
 15	B-Generic-Measure
-psi).
-	I-Generic-Measure
+psi	I-Generic-Measure
+)	O
+.	O
 
 Pre-filter	B-Action
 20L	B-Amount
@@ -41,8 +42,8 @@ a	O
 150mm	B-Size
 Whatman	B-Device
 GF/A	I-Device
-filter.
-	I-Device
+filter	I-Device
+.	O
 
 Filter	B-Action
 again	B-Modifier
@@ -51,20 +52,23 @@ remove	B-Action
 bacteria	B-Reagent
 using	O
 a	O
-0.22um,	B-Size
+0.22um	B-Size
+,	I-Size
 142mm	I-Size
 Millipore	B-Device
 Express	I-Device
 Plus	I-Device
-filter.
-	I-Device
+filter	I-Device
+.	O
 
 Treat	B-Action
 the	O
 virus	B-Reagent
 fraction	I-Reagent
-(0.22μm	B-Amount
-filtrate)	B-Reagent
+(	O
+0.22μm	B-Amount
+filtrate	B-Reagent
+)	O
 with	O
 FeCl3	B-Reagent
 to	O
@@ -83,15 +87,15 @@ to	O
 each	B-Modifier
 20L	B-Amount
 of	O
-filtrate.
-	B-Reagent
+filtrate	B-Reagent
+.	O
 
 Shake	B-Action
 vigorously	B-Modifier
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Add	B-Action
 an	O
@@ -107,7 +111,8 @@ each	B-Modifier
 20L	B-Amount
 of	O
 filtrate	B-Reagent
-(for	O
+(	O
+for	O
 a	O
 total	O
 of	O
@@ -117,15 +122,16 @@ Stock	I-Reagent
 Solution	I-Reagent
 per	O
 20L	B-Amount
-filtrate).
-	B-Reagent
+filtrate	B-Reagent
+)	O
+.	O
 
 Shake	B-Action
 vigorously	B-Modifier
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Let	O
 the	O
@@ -138,8 +144,8 @@ for	O
 hour	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Filter	B-Action
 the	O
@@ -148,18 +154,24 @@ treated	I-Modifier
 filtrate	B-Reagent
 using	O
 a	O
-1.0μm,	B-Size
-142mm,	I-Size
+1.0μm	B-Size
+,	I-Size
+142mm	I-Size
+,	O
 polycarbonate	B-Device
-(PC)	I-Device
+(	I-Device
+PC	I-Device
+)	I-Device
 membrane	I-Device
 filter	I-Device
 on	O
 top	O
 of	O
 a	O
-0.8μm,	B-Size
-142mm,	I-Size
+0.8μm	B-Size
+,	I-Size
+142mm	I-Size
+,	O
 support	B-Device
 filter	I-Device
 and	O
@@ -175,12 +187,14 @@ with	O
 a	O
 pressure	B-Device
 gauge	I-Device
-(maximum	B-Modifier
+(	O
+maximum	B-Modifier
 pressure	B-Measure-Type
 =	O
 15	B-Generic-Measure
-psi).
-	I-Generic-Measure
+psi	I-Generic-Measure
+)	O
+.	O
 
 Place	B-Action
 all	B-Modifier
@@ -212,7 +226,8 @@ edge	B-Location
 of	O
 the	O
 tube	B-Location
-(having	O
+(	O
+having	O
 precipitate	B-Reagent
 facing	O
 out	O
@@ -220,27 +235,31 @@ aids	O
 in	O
 dissolving	B-Action
 the	O
-precipitate).
-	B-Reagent
+precipitate	B-Reagent
+)	O
+.	O
 
 Discard	B-Action
 the	O
 Supor	B-Device
 support	I-Device
-filter.
-	I-Device
+filter	I-Device
+.	O
 
 Prepare	B-Action
 fresh	B-Modifier
 0.1M	B-Concentration
-EDTA;	B-Reagent
+EDTA	B-Reagent
+;	O
 0.2M	B-Concentration
-MgCl2;	B-Reagent
+MgCl2	B-Reagent
+;	O
 0.2M	B-Concentration
 Ascorbate	B-Reagent
-Buffer,	I-Reagent
-pH6.5.
-	B-pH
+Buffer	I-Reagent
+,	O
+pH6.5	B-pH
+.	O
 
 Add	B-Action
 1ml	B-Amount
@@ -248,7 +267,8 @@ buffer	B-Reagent
 for	O
 each	O
 1mg	B-Amount
-Fe,	B-Reagent
+Fe	B-Reagent
+,	O
 which	O
 is	O
 20ml	B-Amount
@@ -260,19 +280,21 @@ the	O
 20L	B-Amount
 seawater	B-Reagent
 precipitate	I-Reagent
-(10ml	B-Amount
+(	O
+10ml	B-Amount
 of	O
 a	O
 2X	B-Concentration
 concentrated	B-Modifier
-buffer).
-	B-Reagent
+buffer	B-Reagent
+)	O
+.	O
 
 Shake	B-Action
 the	O
 tube	B-Location
-vigorously.
-	B-Modifier
+vigorously	B-Modifier
+.	O
 
 Place	B-Action
 tubes	B-Location
@@ -283,8 +305,8 @@ and	O
 rotate	B-Action
 at	O
 4°C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Leave	B-Action
 stored	B-Location
@@ -299,14 +321,15 @@ further	B-Modifier
 purify	B-Action
 the	O
 viral	B-Reagent
-fraction.
-	I-Reagent
+fraction	I-Reagent
+.	I-Reagent
 
 To	O
 collect	B-Action
 the	O
 resuspended	B-Modifier
-precipitate,	B-Reagent
+precipitate	B-Reagent
+,	O
 open	B-Action
 the	O
 tube	B-Location
@@ -316,15 +339,17 @@ liquid	B-Reagent
 into	O
 a	O
 fresh	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Using	O
 a	O
 sterile	B-Device
-pipet,	I-Device
-applicator	I-Device
-stick,	I-Device
+pipet	I-Device
+,	O
+applicator	B-Device
+stick	I-Device
+,	O
 or	O
 bleached	B-Device
 and	I-Device
@@ -348,25 +373,27 @@ in	O
 the	O
 lid	B-Seal
 when	O
-secured.
-	O
+secured	O
+.	O
 
 Centrifuge	B-Action
 at	O
 low	B-Speed
 speed	I-Speed
-(less	B-Modifier
+(	O
+less	B-Modifier
 than	I-Modifier
 1000	B-Speed
-rpm)	I-Speed
+rpm	I-Speed
+)	O
 for	O
 3-5	B-Time
 minutes	I-Time
 to	O
 recover	B-Action
 more	B-Modifier
-buffer.
-	B-Reagent
+buffer	B-Reagent
+.	O
 
 If	O
 the	O
@@ -374,23 +401,26 @@ filter	B-Device
 has	O
 precipitate	B-Reagent
 on	O
-it,	O
+it	O
+,	O
 add	B-Action
 more	B-Modifier
-buffer,	B-Reagent
+buffer	B-Reagent
+,	O
 incubate	B-Action
 again	B-Modifier
 for	O
 a	B-Time
 couple	I-Time
-hours,	I-Time
+hours	I-Time
+,	O
 and	O
 collect	B-Action
 liquid	B-Reagent
 as	O
 stated	O
-above.
-	O
+above	O
+.	O
 
 
 

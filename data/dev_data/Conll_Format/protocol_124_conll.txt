@@ -5,15 +5,15 @@ for	O
 feeding	B-Action
 axenic	B-Modifier
 phagotrophic	I-Modifier
-protists
-	B-Reagent
+protists	B-Reagent
 
 Obtaining	B-Action
 a	O
 clonal	B-Reagent
 bacteria	I-Reagent
 strain	I-Reagent
-(Skip	O
+(	O
+Skip	O
 to	O
 step	O
 2	O
@@ -21,18 +21,23 @@ if	O
 one	O
 is	O
 already	O
-available)Prepare	B-Action
-1.5.%	B-Concentration
+available	O
+)	O
+Prepare	B-Action
+1.5.	B-Concentration
+%	I-Concentration
 agar	B-Reagent
 plates	I-Reagent
 with	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 yeast	B-Reagent
 extract	I-Reagent
 and	O
-0.5%	B-Concentration
-trypton.
-	B-Reagent
+0.5	B-Concentration
+%	I-Concentration
+trypton	B-Reagent
+.	O
 
 Use	B-Action
 the	O
@@ -44,7 +49,8 @@ culture	I-Reagent
 in	O
 growing	O
 in	O
-i.e.	O
+i.e	O
+.	O
 0.5	B-Amount
 g	I-Amount
 yeast	B-Reagent
@@ -62,29 +68,34 @@ ml	I-Amount
 of	O
 MiliQ	B-Reagent
 water	I-Reagent
-(MQ)/Filtered	I-Reagent
+(	I-Reagent
+MQ	I-Reagent
+)	I-Reagent
+/Filtered	I-Reagent
 sea	I-Reagent
 water	I-Reagent
-(FSW).
-	I-Reagent
+(	I-Reagent
+FSW	I-Reagent
+)	I-Reagent
+.	O
 
 Heat	B-Action
 to	O
-dissolve.
-	B-Action
+dissolve	B-Action
+.	O
 
 Autoclave	B-Action
 to	O
-sterilize.
-	B-Action
+sterilize	B-Action
+.	O
 
 Pour	B-Action
 into	O
 medium	B-Modifier
 sized	I-Modifier
 petri	B-Location
-dishes.
-	I-Location
+dishes	I-Location
+.	O
 
 When	O
 the	O
@@ -93,7 +104,8 @@ plates	I-Location
 are	O
 cooled	O
 and	O
-set,	O
+set	O
+,	O
 streak	B-Action
 some	O
 liquid	B-Reagent
@@ -107,8 +119,8 @@ protist	B-Reagent
 on	O
 the	O
 agar	B-Location
-plates.
-	I-Location
+plates	I-Location
+.	O
 
 Incubate	B-Action
 the	O
@@ -121,13 +133,13 @@ conditions	O
 of	O
 the	O
 protist	B-Reagent
-culture
-	I-Reagent
+culture	I-Reagent
 
 When	O
 bacteria	B-Reagent
 colonies	I-Reagent
-form,	O
+form	O
+,	O
 use	O
 a	O
 flame	B-Modifier
@@ -148,15 +160,19 @@ into	O
 a	O
 nutrient	B-Reagent
 broth	I-Reagent
-(0.5%	B-Concentration
+(	O
+0.5	B-Concentration
+%	I-Concentration
 yeast	B-Reagent
 extract	I-Reagent
 +	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 trypton	B-Reagent
 in	O
-MQ/FSW).
-	B-Reagent
+MQ/FSW	B-Reagent
+)	O
+.	O
 
 Let	O
 the	O
@@ -166,8 +182,8 @@ in	O
 the	O
 same	O
 incubating	O
-conditions.
-	O
+conditions	O
+.	O
 
 Grow	B-Action
 a	O
@@ -175,8 +191,8 @@ large	B-Amount
 amount	I-Amount
 of	O
 the	O
-bacteria.
-	B-Reagent
+bacteria	B-Reagent
+.	O
 
 Prepare	B-Action
 1	B-Amount
@@ -185,7 +201,8 @@ of	O
 bacteria	B-Reagent
 nutrient	I-Reagent
 broth	I-Reagent
-(Or	O
+(	O
+Or	O
 however	O
 much	O
 depending	O
@@ -196,11 +213,15 @@ bacteria	O
 you	O
 want	O
 to	O
-grow)0.5%	B-Concentration
+grow	O
+)	O
+0.5	B-Concentration
+%	I-Concentration
 yeast	B-Reagent
 extract	I-Reagent
 +	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 trypton	B-Reagent
 in	O
 MQ	B-Reagent
@@ -209,8 +230,8 @@ FSW	B-Reagent
 and	O
 autoclave	B-Action
 to	O
-sterilize.
-	B-Action
+sterilize	B-Action
+.	O
 
 Transfer	B-Action
 0.1	B-Amount
@@ -221,8 +242,8 @@ bacteria	B-Reagent
 culture	I-Reagent
 into	O
 the	O
-broth.
-	B-Reagent
+broth	B-Reagent
+.	O
 
 Let	O
 the	O
@@ -230,8 +251,8 @@ bacteria	B-Reagent
 grow	B-Action
 for	O
 ~4	B-Time
-days.
-	I-Time
+days	I-Time
+.	O
 
 Heat-killing	B-Action
 the	O
@@ -245,8 +266,8 @@ entirely	B-Modifier
 with	O
 the	O
 bacteria	B-Reagent
-culture.
-	I-Reagent
+culture	I-Reagent
+.	O
 
 Place	B-Action
 in	O
@@ -262,8 +283,8 @@ Centrifuge	B-Action
 and	O
 wash	B-Action
 the	O
-bacteria.
-	B-Reagent
+bacteria	B-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -275,12 +296,12 @@ k	I-Speed
 g	I-Speed
 for	O
 20	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 ~25	B-Amount
@@ -288,23 +309,25 @@ ml	I-Amount
 of	O
 sterilized	B-Modifier
 MQ/FSW	B-Reagent
-(depending	O
+(	O
+depending	O
 on	O
 the	O
 salinity	B-Generic-Measure
 of	O
 your	O
-culture)	B-Reagent
+culture	B-Reagent
+)	O
 in	O
 the	O
-bottle.
-	B-Location
+bottle	B-Location
+.	O
 
 Vortex/shake	B-Action
 to	O
 resuspend	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Add	B-Action
 MQ/FSW	B-Reagent
@@ -322,8 +345,8 @@ k	I-Speed
 g	I-Speed
 for	O
 20	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Repeat	B-Action
 this	B-Method
@@ -335,20 +358,21 @@ washed	B-Action
 the	O
 bacteria	B-Reagent
 3	B-Numerical
-times.
-	O
+times	O
+.	O
 
 After	O
 washing	B-Action
 for	O
 the	O
 last	O
-time,	O
+time	O
+,	O
 centrifuge	B-Action
 and	O
 decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 as	O
@@ -360,8 +384,8 @@ and	O
 vortex/shake	B-Action
 to	O
 resuspend	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 You	O
 may	O
@@ -374,16 +398,16 @@ if	O
 a	O
 sonicator	B-Device
 is	O
-available.
-	O
+available	O
+.	O
 
 Test	B-Action
 the	O
 sterility	B-Measure-Type
 of	O
 the	O
-bacteria.
-	B-Reagent
+bacteria	B-Reagent
+.	O
 
 Test	B-Action
 the	O
@@ -404,14 +428,16 @@ in	O
 5	B-Amount
 ml	I-Amount
 of	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 yeast	B-Reagent
 extract	I-Reagent
 +	O
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 trypton	B-Reagent
-broth.
-	I-Reagent
+broth	I-Reagent
+.	O
 
 Make	O
 sure	O
@@ -442,8 +468,8 @@ if	O
 there	O
 was	O
 bacterial	B-Reagent
-growth.
-	I-Reagent
+growth	I-Reagent
+.	O
 
 Incubate	B-Action
 the	O
@@ -451,8 +477,8 @@ sterility	B-Reagent
 test	I-Reagent
 for	O
 several	B-Time
-day.
-	I-Time
+day	I-Time
+.	O
 
 The	O
 bacteria	B-Reagent
@@ -468,8 +494,8 @@ the	O
 test	O
 after	O
 5	B-Time
-days.
-	I-Time
+days	I-Time
+.	O
 
 
 

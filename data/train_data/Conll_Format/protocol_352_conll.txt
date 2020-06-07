@@ -1,20 +1,23 @@
 One-step	B-Modifier
 growth	B-Reagent
 experiments	I-Reagent
-(cyanophages)
-	I-Reagent
+(	O
+cyanophages	B-Reagent
+)	O
 
 Set	B-Action
 up	I-Action
 triplicate	B-Location
 adsorption	I-Location
 tubes	I-Location
-(AT)	I-Location
+(	O
+AT	B-Location
+)	O
 in	O
 1.5	B-Amount
 mL	I-Amount
-microtubes.
-	B-Location
+microtubes	B-Location
+.	O
 
 Add	B-Action
 phages	B-Reagent
@@ -29,19 +32,22 @@ host	I-Reagent
 in	O
 exponential	B-Modifier
 growth	I-Modifier
-(cell	B-Reagent
+(	O
+cell	B-Reagent
 concentration	B-Measure-Type
 determined	O
 by	O
-microscopy;	B-Method
-Cyanoinput)	I-Method
+microscopy	B-Method
+;	O
+Cyanoinput	B-Method
+)	O
 at	O
 an	O
 MOI	B-Measure-Type
 of	O
 approximately	O
-0.02.
-	B-Numerical
+0.02	B-Numerical
+.	O
 
 Allow	O
 the	O
@@ -63,47 +69,59 @@ illumination	B-Method
 of	O
 25µmol	B-Generic-Measure
 quanta	I-Generic-Measure
-m–2s–1.
-	I-Generic-Measure
+m–2s–1	I-Generic-Measure
+.	O
 
 Set	B-Action
 up	I-Action
 control	B-Location
 tubes	I-Location
-(CT)	I-Location
+(	O
+CT	B-Location
+)	O
 as	O
-above,	O
-except:	O
+above	O
+,	O
+except	O
+:	O
 
 a.	O
 positive	B-Reagent
-controls:	I-Reagent
+controls	I-Reagent
+:	O
 replace	B-Action
 host	B-Reagent
 cells	I-Reagent
 with	O
 media	B-Reagent
-(this	O
+(	O
+this	O
 gives	O
 input	O
 phage	O
-numbers).
-	O
+numbers	O
+)	O
+.	O
 
 b.	O
 negative	B-Reagent
-controls:	I-Reagent
+controls	I-Reagent
+:	O
 omit	B-Action
 virus	B-Reagent
 After	O
 60	B-Time
-min,	I-Time
+min	I-Time
+,	O
 remove	B-Action
 unadsorbed	B-Modifier
 phages	B-Reagent
-(T	O
+(	O
+T	O
 =	O
-0).	O
+0	O
+)	O
+.	O
 
 Prepare	B-Action
 nine	B-Amount
@@ -115,7 +133,8 @@ containing	O
 mL	I-Amount
 algal	B-Reagent
 growth	I-Reagent
-media.	I-Reagent
+media	I-Reagent
+.	O
 
 Add	B-Action
 100	B-Amount
@@ -124,9 +143,11 @@ from	O
 AT	B-Reagent
 to	O
 FGT	B-Reagent
-(10–2	B-Generic-Measure
-dilution).
-	B-Method
+(	O
+10–2	B-Generic-Measure
+dilution	B-Method
+)	O
+.	O
 
 Mix	B-Action
 and	O
@@ -137,8 +158,8 @@ sample	B-Reagent
 for	O
 T	B-Generic-Measure
 =	I-Generic-Measure
-0.
-	I-Generic-Measure
+0	I-Generic-Measure
+.	O
 
 Perform	B-Action
 plaque	I-Action
@@ -149,8 +170,10 @@ determine	B-Action
 total	B-Measure-Type
 infective	I-Measure-Type
 centers	I-Measure-Type
-(TICT=0).
-	O
+(	O
+TICT=0	O
+)	O
+.	O
 
 Add	B-Action
 100	B-Amount
@@ -159,9 +182,11 @@ from	O
 FGT	B-Reagent
 to	O
 SGT	B-Reagent
-(10–4	B-Generic-Measure
-dilution).
-	B-Method
+(	O
+10–4	B-Generic-Measure
+dilution	B-Method
+)	O
+.	O
 
 Incubate	B-Action
 FGT	B-Reagent
@@ -172,8 +197,8 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 and	O
-ca.
-	O
+ca	O
+.	O
 
 25	B-Generic-Measure
 µmol	I-Generic-Measure
@@ -188,31 +213,41 @@ every	B-Time
 h	I-Time
 from	O
 FGT	B-Reagent
-(at	O
-3,	B-Time
-6,	I-Time
-9,	I-Time
-12,	I-Time
+(	O
+at	O
+3	B-Time
+,	I-Time
+6	I-Time
+,	I-Time
+9	I-Time
+,	I-Time
+12	I-Time
+,	I-Time
 16	I-Time
-h)	I-Time
+h	I-Time
+)	O
 and	O
 SGT	B-Reagent
-(from	O
+(	O
+from	O
 12	B-Time
 h	I-Time
-onwards)	O
+onwards	O
+)	O
 for	O
-ca.	O
+ca	O
+.	O
 30	B-Time
-h.	I-Time
+h	I-Time
+.	O
 
 Determine	B-Action
 the	O
 TIC	B-Measure-Type
 via	O
 plaque	B-Method
-assay.
-	I-Method
+assay	I-Method
+.	O
 
 Add	B-Action
 100	B-Amount
@@ -221,20 +256,26 @@ from	O
 positive	B-Location
 control	I-Location
 tube	I-Location
-(CT)	I-Location
+(	O
+CT	B-Location
+)	O
 to	O
 FGT-control	B-Location
-(10–2	B-Generic-Measure
-dilution).
-	B-Method
+(	O
+10–2	B-Generic-Measure
+dilution	B-Method
+)	O
+.	O
 
 Determine	B-Action
 the	O
 total	B-Measure-Type
 phage	I-Measure-Type
 input	I-Measure-Type
-(Phageinput).
-	I-Measure-Type
+(	O
+Phageinput	B-Measure-Type
+)	O
+.	O
 
 
 

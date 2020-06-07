@@ -7,9 +7,9 @@ for	O
 long	B-Method
 read	I-Method
 sequencing	I-Method
-e.g.	O
-PacBio
-	B-Method
+e.g	O
+.	O
+PacBio	B-Method
 
 Make	B-Action
 lysis	B-Reagent
@@ -18,17 +18,21 @@ by	O
 mixing	B-Action
 buffer	B-Reagent
 A+B+C	I-Reagent
-(2.5:2.5:1	B-Generic-Measure
+(	O
+2.5:2.5:1	B-Generic-Measure
 +	O
-0.1%PVP	B-Concentration
-final)	B-Reagent
+0.1	B-Concentration
+%	I-Concentration
+PVP	B-Reagent
+final	I-Reagent
+)	O
 and	O
 briefly	B-Modifier
 heat	B-Action
 to	O
 64	B-Temperature
-°C.
-	I-Temperature
+°C	I-Temperature
+.	O
 
 Let	O
 cool	B-Action
@@ -51,18 +55,20 @@ lysis	B-Reagent
 buffer	I-Reagent
 as	O
 starting	B-Modifier
-volume.
-	B-Measure-Type
+volume	B-Measure-Type
+.	O
 
 add	B-Action
 10uL	B-Amount
-(10kU)	B-Generic-Measure
+(	O
+10kU	B-Generic-Measure
+)	O
 RNAse	B-Reagent
 T1	I-Reagent
 to	O
 lysis	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Grind	B-Action
 tissue/spores	B-Reagent
@@ -73,7 +79,8 @@ in	O
 a	O
 mortar	B-Device
 with	O
-sand,	B-Reagent
+sand	B-Reagent
+,	O
 use	O
 1g	B-Amount
 of	O
@@ -82,8 +89,8 @@ per	O
 100mg	B-Amount
 of	O
 starting	B-Mention
-material.
-	I-Mention
+material	I-Mention
+.	O
 
 Grind	B-Action
 for	O
@@ -102,8 +109,8 @@ each	B-Modifier
 15	B-Time
 sec	I-Time
 grinding	B-Method
-burst.
-	I-Method
+burst	I-Method
+.	O
 
 Transfer	B-Action
 powder	B-Reagent
@@ -114,12 +121,13 @@ containing	O
 lysis	B-Reagent
 buffer	I-Reagent
 and	O
-RNAse,	B-Reagent
+RNAse	B-Reagent
+,	O
 mix	B-Action
 well	B-Modifier
 by	O
-vortexing.
-	B-Method
+vortexing	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -132,13 +140,14 @@ by	O
 inversion	B-Method
 every	B-Modifier
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 200uL	B-Amount
 Proteinase	B-Reagent
-K,	I-Reagent
+K	I-Reagent
+,	O
 incubate	B-Action
 at	O
 RT	B-Temperature
@@ -150,36 +159,40 @@ by	O
 inversion	B-Method
 every	B-Modifier
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Cool	B-Action
 on	O
 ice	B-Location
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 3.5	B-Amount
 mL	I-Amount
-(0.2	I-Amount
-vol)	I-Amount
+(	O
+0.2	B-Amount
+vol	I-Amount
+)	O
 of	O
 KAc	B-Reagent
-5M,	B-Concentration
+5M	B-Concentration
+,	O
 mix	B-Action
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 incubate	B-Action
 on	O
 ice	B-Location
 for	O
 max	B-Modifier
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -188,8 +201,8 @@ and	O
 5000g	B-Speed
 for	O
 12	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
@@ -199,16 +212,20 @@ Falcon	B-Location
 tube	I-Location
 containing	O
 17.5ml	B-Amount
-(1vol)	I-Amount
-(P/C/I)	B-Reagent
+(	O
+1vol	B-Amount
+)	O
+(	O
+P/C/I	B-Reagent
+)	O
 and	O
 mix	B-Action
 by	O
 inversion	B-Method
 for	O
 2	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -218,25 +235,29 @@ and	O
 4000g	O
 for	O
 10	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
-(might	B-Modifier
+(	O
+might	B-Modifier
 be	I-Modifier
 milky	I-Modifier
 but	O
 do	O
 not	O
-worry)	O
+worry	O
+)	O
 to	O
 fresh	B-Modifier
 Falcon	B-Location
 tube	I-Location
 containing	O
 17.5ml	B-Amount
-(1vol)	I-Amount
+(	O
+1vol	B-Amount
+)	O
 P/C/I	B-Reagent
 and	O
 mix	B-Action
@@ -244,8 +265,8 @@ by	O
 inversion	B-Method
 for	O
 2	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -255,12 +276,14 @@ and	O
 4000g	B-Speed
 for	O
 10	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
-(~17mL)	B-Amount
+(	O
+~17mL	B-Amount
+)	O
 to	O
 fresh	B-Modifier
 Falcon	B-Location
@@ -269,43 +292,47 @@ and	O
 add	B-Action
 5uL	B-Amount
 RNAse	B-Reagent
-T1.
-	I-Reagent
+T1	I-Reagent
+.	O
 
 Incubate	B-Action
 for	O
 20-30mins	B-Time
 at	O
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Add	B-Action
 1.8mL	B-Amount
-(~0.1vol)	I-Amount
+(	O
+~0.1vol	B-Amount
+)	O
 NaAc	B-Reagent
 and	O
 mix	B-Action
 by	O
-inversion.
-	B-Method
+inversion	B-Method
+.	O
 
 Add	B-Action
 18mL	B-Amount
-(~1vol)	I-Amount
+(	O
+~1vol	B-Amount
+)	O
 RT	B-Temperature
 isopropanol	B-Reagent
 and	O
 mix	B-Action
 by	O
-inversion.
-	B-Method
+inversion	B-Method
+.	O
 
 Incubate	B-Action
 at	O
 RT	B-Temperature
 for	O
-5-10mins.
-	B-Time
+5-10mins	B-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -315,8 +342,8 @@ and	O
 10000g	B-Speed
 for	O
 30	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Carefully	B-Modifier
 pipette	B-Action
@@ -326,8 +353,9 @@ till	O
 about	O
 1-2	B-Amount
 mL	I-Amount
-left,	B-Reagent
-DNA	I-Reagent
+left	B-Reagent
+,	O
+DNA	B-Reagent
 will	O
 form	B-Action
 a	O
@@ -341,8 +369,8 @@ the	O
 bottom	B-Location
 of	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Use	O
 1mL	B-Amount
@@ -358,8 +386,8 @@ into	O
 fresh	B-Modifier
 1.7mL	B-Amount
 eppendorf	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 If	O
 the	O
@@ -371,7 +399,8 @@ transfer	O
 add	B-Action
 1.5mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 to	O
 the	O
@@ -382,8 +411,8 @@ spin	B-Action
 for	O
 5min	B-Time
 at	O
-4000g.
-	B-Speed
+4000g	B-Speed
+.	O
 
 Remove	B-Action
 1mL	B-Amount
@@ -399,8 +428,8 @@ to	O
 same	B-Modifier
 1.7mL	B-Amount
 eppendorf	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Spin	B-Action
 in	O
@@ -411,8 +440,8 @@ for	O
 5	B-Time
 mins	I-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 supernatant	B-Reagent
@@ -423,15 +452,17 @@ wash	B-Action
 with	O
 1.5mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
-Ethanol,	B-Reagent
+70	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+,	O
 invert	B-Action
 several	B-Numerical
 times	O
 to	O
 dislodge	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Spin	B-Action
 in	O
@@ -442,8 +473,8 @@ for	O
 5	B-Time
 mins	I-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 supernatant	B-Reagent
@@ -454,15 +485,17 @@ wash	B-Action
 with	O
 1.5mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
-Ethanol,	B-Reagent
+70	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+,	O
 invert	B-Action
 several	B-Numerical
 times	O
 to	O
 dislodge	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Spin	B-Action
 in	O
@@ -473,14 +506,14 @@ for	O
 5	B-Time
 mins	I-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 supernatant	B-Reagent
 with	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Spin	B-Action
 in	O
@@ -491,22 +524,22 @@ for	O
 1	B-Time
 min	I-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 remaining	B-Modifier
 ethanol	B-Reagent
 with	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Air-dry	B-Action
 pellet	B-Reagent
 for	O
 7	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 200uL	B-Amount
@@ -519,8 +552,8 @@ at	O
 RT	B-Temperature
 for	O
 3	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Flick	B-Action
 tube	B-Location
@@ -532,26 +565,26 @@ add	B-Action
 200uL	B-Amount
 of	O
 TE	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 DO	O
-NOT!
-	B-Modifier
+NOT	B-Modifier
+!	O
 
 vortex	B-Action
 as	O
 it	O
 shears	B-Action
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 leave	B-Action
 at	O
 RT	B-Temperature
 over	B-Time
-night.
-	I-Time
+night	I-Time
+.	O
 
 Next	B-Time
 day	I-Time
@@ -569,8 +602,8 @@ at	O
 °C	I-Temperature
 with	O
 1400rpm	B-Speed
-shaking.
-	B-Action
+shaking	B-Action
+.	O
 
 Measure	B-Action
 dsDNA	B-Reagent
@@ -582,8 +615,8 @@ and	O
 measure	B-Action
 absorbance	B-Measure-Type
 with	O
-Nanodrop.
-	B-Device
+Nanodrop	B-Device
+.	O
 
 At	O
 this	O
@@ -608,7 +641,8 @@ quality	B-Measure-Type
 by	O
 runing	B-Action
 a	O
-0.8%	B-Concentration
+0.8	B-Concentration
+%	I-Concentration
 TBE	B-Reagent
 agarose	I-Reagent
 gel	I-Reagent
@@ -620,8 +654,8 @@ a	O
 lamda-Hind-III	B-Reagent
 ladder	I-Reagent
 as	O
-control.
-	B-Modifier
+control	B-Modifier
+.	O
 
 If	O
 you	O
@@ -633,8 +667,8 @@ Gel	I-Device
 Electrophoresis	I-Device
 around	O
 even	O
-better.
-	O
+better	O
+.	O
 
 Use	O
 AMPure	B-Reagent
@@ -646,19 +680,21 @@ up	I-Action
 at	O
 beads	B-Reagent
 0.45	B-Generic-Measure
-(Vol/Vol)	I-Generic-Measure
+(	I-Generic-Measure
+Vol/Vol	I-Generic-Measure
+)	I-Generic-Measure
 following	O
 the	O
 PacBio	B-Method
-protocol.
-	I-Method
+protocol	I-Method
+.	O
 
 Elute	B-Action
 in	O
 10mM	B-Concentration
 Tris	B-Reagent
-pH8.
-	I-Reagent
+pH8	I-Reagent
+.	O
 
 Measure	B-Action
 dsDNA	B-Reagent
@@ -670,8 +706,8 @@ and	O
 measure	B-Action
 absorbance	B-Measure-Type
 with	O
-Nanodrop.
-	B-Device
+Nanodrop	B-Device
+.	O
 
 At	O
 this	O
@@ -681,31 +717,37 @@ to	I-Measure-Type
 Nanodrop	I-Measure-Type
 ratios	I-Measure-Type
 were	O
-0.64,	B-Generic-Measure
+0.64	B-Generic-Measure
+,	I-Generic-Measure
 260/280	I-Generic-Measure
 1.87	I-Generic-Measure
 and	I-Generic-Measure
 260/230	I-Generic-Measure
-1.37.
-	I-Generic-Measure
+1.37	I-Generic-Measure
+.	O
 
 Samples	B-Reagent
 were	O
 submitted	B-Action
 to	O
 Ramaciotti	O
-(http://www.ramaciotti.unsw.edu.au/)	O
+(	O
+http	O
+:	O
+//www.ramaciotti.unsw.edu.au/	O
+)	O
 sequencing	O
 centre	O
 in	O
-Sydney.
-	O
+Sydney	O
+.	O
 
 Excellent	O
 personel	O
 performed	O
 quality	B-Method
-control,	I-Method
+control	I-Method
+,	O
 prepared	B-Action
 15-20kb	B-Generic-Measure
 libraries	O
@@ -717,16 +759,16 @@ SMRT	I-Method
 cells	I-Method
 with	O
 P6	O
-chemistry.
-	O
+chemistry	O
+.	O
 
 Some	O
 summary	O
 statistics	O
 are	O
 shown	O
-below.
-	O
+below	O
+.	O
 
 
 

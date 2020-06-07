@@ -1,14 +1,13 @@
 FLV	B-Method
 tracer	I-Method
-assays
-	I-Method
+assays	I-Method
 
 Prepare	B-Action
 FLVs	B-Reagent
 for	O
 tracer	B-Method
-assays.
-	I-Method
+assays	I-Method
+.	O
 
 Collect	B-Action
 seawater	B-Reagent
@@ -16,8 +15,8 @@ samples	I-Reagent
 from	O
 the	O
 desired	B-Location
-location.
-	I-Location
+location	I-Location
+.	O
 
 After	B-Modifier
 determining	B-Action
@@ -28,7 +27,8 @@ the	O
 FLVs	B-Reagent
 in	O
 the	O
-concentrate,	B-Reagent
+concentrate	B-Reagent
+,	O
 and	O
 the	O
 ambient	B-Measure-Type
@@ -37,7 +37,8 @@ of	I-Measure-Type
 viruses	I-Measure-Type
 in	O
 the	O
-seawater,	B-Reagent
+seawater	B-Reagent
+,	O
 the	O
 proper	B-Modifier
 amount	B-Amount
@@ -50,12 +51,16 @@ added	B-Action
 at	B-Modifier
 tracer	I-Modifier
 levels	I-Modifier
-(<10%	B-Numerical
+(	O
+<	B-Numerical
+10	I-Numerical
+%	I-Numerical
 of	O
 original	B-Modifier
 ambient	B-Measure-Type
 virus	I-Measure-Type
-concentration)	I-Measure-Type
+concentration	I-Measure-Type
+)	O
 into	O
 sample	B-Reagent
 volumes	I-Reagent
@@ -64,19 +69,20 @@ no	B-Modifier
 less	I-Modifier
 than	I-Modifier
 400	B-Amount
-mL.
-	I-Amount
+mL	I-Amount
+.	O
 
 Designate	B-Action
 a	O
 control	B-Reagent
-treatment.
-	I-Reagent
+treatment	I-Reagent
+.	O
 
 At	O
 each	B-Modifier
 time	B-Time
-point,	I-Time
+point	I-Time
+,	O
 total	B-Measure-Type
 viral	I-Measure-Type
 abundance	I-Measure-Type
@@ -92,36 +98,43 @@ from	O
 small	B-Modifier
 volume	B-Reagent
 subsamples	I-Reagent
-(5–30	B-Amount
-mL)	I-Amount
+(	O
+5–30	B-Amount
+mL	I-Amount
+)	O
 taken	O
 into	O
-sterile,	B-Modifier
+sterile	B-Modifier
+,	O
 15-	B-Size
 or	I-Size
 50-mL	I-Size
 polyethylene	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Subsamples	B-Reagent
 are	O
 immediately	B-Modifier
 fixed	B-Action
 with	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 to	I-Concentration
-2%	I-Concentration
-(final	B-Modifier
-concentration)	B-Measure-Type
+2	I-Concentration
+%	I-Concentration
+(	O
+final	B-Modifier
+concentration	B-Measure-Type
+)	O
 0.02-µm	B-Size
 filtered	B-Modifier
 formalin	B-Reagent
 and	O
 stored	B-Action
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Slides	B-Location
 should	O
@@ -132,13 +145,18 @@ to	O
 Noble	O
 and	O
 Fuhrman	O
-(1998)	O
+(	O
+1998	O
+)	O
 or	O
 Patel	O
 et	O
-al.	O
-(2007).
-	O
+al	O
+.	O
+(	O
+2007	O
+)	O
+.	O
 
 Production	B-Measure-Type
 and	I-Measure-Type
@@ -152,16 +170,23 @@ equations	B-Method
 of	I-Method
 Glibert	I-Method
 et	O
-al.	O
-(1982)	O
+al	O
+.	O
+(	O
+1982	O
+)	O
 and	O
 Fuhrman	O
-(1987)	O
-(see	B-Action
+(	O
+1987	O
+)	O
+(	O
+see	B-Action
 guidelines	B-Method
 for	I-Method
-equations).
-	I-Method
+equations	I-Method
+)	O
+.	O
 
 
 

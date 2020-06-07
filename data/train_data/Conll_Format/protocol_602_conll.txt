@@ -3,7 +3,10 @@ HiFi	I-Method
 DNA	I-Method
 Assembly	I-Method
 Reaction	I-Method
-(E2621).	O
+(	O
+E2621	O
+)	O
+.	O
 
 Set	B-Action
 up	I-Action
@@ -12,35 +15,44 @@ following	O
 reaction	B-Method
 on	B-Temperature
 ice	I-Temperature
-(to	O
+(	O
+to	O
 20μl	B-Amount
 total	I-Amount
-volume): Recommended	I-Amount
-Amount	O
+volume	I-Amount
+)	O
+:	O
+Recommended	B-Modifier
+Amount	I-Modifier
 of	O
 Fragments	B-Reagent
-Used	O
+Used	I-Reagent
 for	O
 Assembly2–3	B-Method
-Fragment	I-Method
-Assembly*4–6	I-Method
-Fragment	I-Method
-Assembly**Positive	I-Method
+Fragment	B-Numerical
+Assembly*4–6	B-Method
+Fragment	B-Numerical
+Assembly**Positive	B-Method
 Control✝Recommended	B-Reagent
-DNA	B-Measure-Type
-Ratiovector:insert	I-Measure-Type
-=	O
-1:2vector:insert	B-Generic-Measure
-=	O
-1:1 Total	B-Generic-Measure
-Amount	O
+DNA	B-Modifier
+Ratiovector	B-Measure-Type
+:	I-Measure-Type
+insert	I-Measure-Type
+=	I-Measure-Type
+1:2vector	B-Generic-Measure
+:	B-Measure-Type
+insert	I-Measure-Type
+=	I-Measure-Type
+1:1	B-Generic-Measure
+Total	I-Generic-Measure
+Amount	B-Modifier
 of	O
 Fragments0.03–0.2	B-Reagent
 pmols*X	B-Concentration
 μl0.2–0.5	I-Concentration
 pmols**X	I-Concentration
-μl10	B-Amount
-μlNEBuilderHiFi	I-Amount
+μl10	O
+μlNEBuilderHiFi	B-Amount
 DNA	B-Reagent
 Assembly	I-Reagent
 Master	I-Reagent
@@ -54,7 +66,8 @@ H2O10-X	B-Reagent
 Volume20	B-Measure-Type
 μl✝✝20	B-Amount
 μl✝✝20	I-Amount
-μl.	I-Amount
+μl	I-Amount
+.	I-Amount
 
 Incubate	B-Action
 samples	B-Reagent
@@ -66,27 +79,32 @@ at	O
 for	O
 15	B-Time
 minutes	I-Time
-(when	O
+(	O
+when	O
 2	B-Numerical
 or	I-Numerical
 3	I-Numerical
 fragments	B-Reagent
 are	O
 being	B-Action
-assembled)	I-Action
+assembled	I-Action
+)	O
 or	O
 60	B-Time
 minutes	I-Time
-(when	O
+(	O
+when	O
 4–6	B-Numerical
 fragments	B-Reagent
 are	O
 being	B-Action
-assembled).
-	I-Action
+assembled	I-Action
+)	O
+.	O
 
 Following	B-Modifier
-incubation,	I-Modifier
+incubation	I-Modifier
+,	O
 store	B-Action
 samples	B-Reagent
 on	B-Temperature
@@ -96,35 +114,41 @@ at	O
 –20°C	B-Temperature
 for	O
 subsequent	B-Modifier
-transformation.
-	B-Method
+transformation	B-Method
+.	O
 
 Transform	B-Action
 NEB	B-Reagent
 5-alpha	I-Reagent
-Competent E.	I-Reagent
-coli cells	I-Reagent
-(provided	O
+Competent	I-Reagent
+E.	I-Reagent
+coli	I-Reagent
+cells	I-Reagent
+(	I-Reagent
+provided	I-Reagent
 in	O
 the	O
 cloning	B-Device
 kit	I-Device
-or	O
+or	I-Device
 purchased	O
 separately	O
 from	O
-NEB)	O
+NEB	O
+)	O
 with	O
-2	B-Amount
-μl	I-Amount
-of	O
+2	O
+μl	O
+of	B-Amount
 the	O
 assembled	B-Reagent
-product,	I-Reagent
-following	B-Action
-the transformation	B-Method
-protocol.
-	I-Method
+product	I-Reagent
+,	I-Reagent
+following	I-Reagent
+the	B-Action
+transformation	B-Method
+protocol	I-Method
+.	I-Method
 
 
 

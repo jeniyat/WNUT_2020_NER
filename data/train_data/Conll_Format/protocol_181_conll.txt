@@ -5,42 +5,49 @@ editing	I-Method
 protocol	O
 for	O
 C.	B-Reagent
-elegans
-	I-Reagent
+elegans	I-Reagent
 
-Cas9::NLS	B-Reagent
+Cas9	B-Reagent
+:	I-Reagent
+:NLS	I-Reagent
 can	O
 be	O
 purified	B-Action
 from	O
 E.	B-Reagent
 coli	I-Reagent
-(see	O
+(	O
+see	O
 our	O
-protocol)	O
+protocol	O
+)	O
 or	O
 purchased	O
 from	O
 commercial	O
-sources.
-	O
+sources	O
+.	O
 
 Order	B-Action
 tracrRNA	B-Reagent
 and	O
 upon	O
-receipt,	O
+receipt	O
+,	O
 briefly	B-Modifier
 spin	B-Action
 the	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Reconstitute	B-Action
 tracrRNA	B-Reagent
 at	O
 4μg/μl	B-Concentration
-(0.17nmol/μl):	O
+(	O
+0.17nmol/μl	O
+)	O
+:	O
 add	B-Action
 29.8μl	B-Amount
 of	O
@@ -51,35 +58,43 @@ to	O
 the	O
 5nmol	B-Amount
 provided	O
-(U‐002000‐05).
-	O
+(	O
+U‐002000‐05	O
+)	O
+.	O
 
 Order	B-Action
 your	O
 gene	B-Modifier
 specific	I-Modifier
 crRNA	B-Reagent
-(see	O
+(	O
+see	O
 the	O
 guidelines	O
 for	O
 crRNA	B-Reagent
-notes).
-	O
+notes	O
+)	O
+.	O
 
 Upon	O
-receipt,	O
+receipt	O
+,	O
 briefly	B-Modifier
 spin	B-Action
 the	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Reconstitute	B-Action
 crRNA	B-Reagent
 at	O
 8μg/μl	B-Concentration
-(0.6nmol/μl):	I-Concentration
+(	O
+0.6nmol/μl	B-Concentration
+)	O
+:	O
 add	B-Action
 33.8μl	B-Amount
 of	O
@@ -89,38 +104,47 @@ pH	B-Measure-Type
 to	O
 the	O
 20nmol	B-Concentration
-provided.
-	O
+provided	O
+.	O
 
 Use	O
 single‐stranded	B-Reagent
 oligonucleotides	I-Reagent
-(ssODNs,	O
+(	O
+ssODNs	O
+,	O
 200nt	B-Size
 maximum	O
-size,	O
+size	O
+,	O
 4nM	B-Concentration
-ultramer,	O
+ultramer	O
+,	O
 salt	O
-free)	O
+free	O
+)	O
 ordered	B-Action
 from	O
-IDT.
-	B-Reagent
+IDT	B-Reagent
+.	O
 
-(this	O
+(	O
+this	O
 is	O
 for	O
 small	O
 edits	O
-<100nt;	B-Modifier
+<	B-Modifier
+100nt	B-Size
+;	O
 see	O
 the	O
 guidelines	O
 for	O
 large	O
 edits	O
-100bp-2kb)	B-Generic-Measure
+100bp-2kb	B-Generic-Measure
+)	O
 Reconstitute	B-Action
 ssODN	B-Reagent
 at	O
@@ -132,22 +156,26 @@ amount	O
 provided	O
 by	O
 the	O
-manufacturer.
-	O
+manufacturer	O
+.	O
 
-(this	O
+(	O
+this	O
 is	O
 for	O
 small	O
 edits	O
-<100nt;	B-Modifier
+<	B-Modifier
+100nt	B-Size
+;	O
 see	O
 the	O
 guidelines	O
 for	O
 large	O
 edits	O
-100bp-2kb)	B-Generic-Measure
+100bp-2kb	B-Generic-Measure
+)	O
 Add	B-Action
 each	O
 component	O
@@ -159,33 +187,39 @@ in	O
 a	O
 0.5ml	B-Amount
 tube	B-Location
-(add	B-Action
+(	O
+add	B-Action
 Cas9	B-Reagent
-last).
-	O
+last	O
+)	O
+.	O
 
-[this	O
+[	O
+this	O
 if	O
 for	O
-"one	O
+``	O
+one	O
 locus	O
-editing"]	O
-Place	B-Action
-the	O
-0.5ml	B-Amount
+editing	O
+''	O
+]	B-Action
+Place	I-Action
+the	B-Amount
+0.5ml	I-Amount
 tube	B-Location
 in	O
-a	O
-1.5ml	B-Amount
+a	B-Amount
+1.5ml	I-Amount
 eppendorf	B-Location
 tube	I-Location
-and	O
-spin	B-Action
-for	O
-2min	B-Time
-at	O
-13000rpm.
-	B-Speed
+and	B-Action
+spin	I-Action
+for	B-Time
+2min	I-Time
+at	B-Speed
+13000rpm	I-Speed
+.	B-Action
 
 Incubate	B-Action
 at	O
@@ -200,8 +234,8 @@ needles	I-Device
 and	O
 process	O
 to	O
-injection.
-	B-Method
+injection	B-Method
+.	O
 
 Inject	B-Action
 both	O
@@ -210,36 +244,46 @@ of	O
 young	B-Reagent
 adult	I-Reagent
 hermaphrodites	I-Reagent
-(with	O
+(	O
+with	O
 a	O
 few	B-Generic-Measure
-embryos).
-	B-Reagent
+embryos	B-Reagent
+)	O
+.	O
 
 Recovery	O
-A.
-	O
+A	O
+.	O
 
-Add 1X	B-Action
-M9.
-	B-Reagent
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+.	B-Reagent
 
 5μl	B-Amount
-(30min	B-Time
+(	O
+30min	B-Time
 to	I-Time
 1h	I-Time
 after	O
-injection,	B-Method
+injection	B-Method
+,	O
 recover	B-Action
 the	O
 injected	B-Modifier
 hermaphrodites	B-Reagent
-(P0s)	O
+(	O
+P0s	O
+)	O
 as	O
-follows:	O
+follows	O
+:	O
 Every	O
-5‐10min,	B-Time
-add:	B-Action
+5‐10min	B-Time
+,	O
+add	B-Action
+:	O
 5μl	B-Amount
 /	O
 5μl	B-Amount
@@ -251,50 +295,67 @@ add:	B-Action
 40μl	I-Amount
 of	O
 1X	B-Concentration
-M9)
-	B-Reagent
-
-Recovery	O
-B:	O
-Add 1X	B-Action
 M9	B-Reagent
-5μl.
-	B-Amount
+)	O
 
 Recovery	O
-C:	O
-Add 1X	B-Action
-M9:	B-Reagent
-10μl.
-	B-Amount
+B	O
+:	O
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+5μl	B-Reagent
+.	B-Amount
 
 Recovery	O
-D:	O
-Add 1X	B-Action
-M9:	B-Reagent
-10μl.
-	B-Amount
+C	O
+:	O
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+:	B-Reagent
+10μl	B-Amount
+.	I-Amount
 
 Recovery	O
-E:	O
-Add 1X	B-Action
-M9:	B-Reagent
-20μl.
-	B-Amount
+D	O
+:	O
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+:	B-Reagent
+10μl	B-Amount
+.	I-Amount
 
 Recovery	O
-F:	O
-Add 1X	B-Action
-M9:	B-Reagent
-20μl.
-	B-Amount
+E	O
+:	O
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+:	B-Reagent
+20μl	B-Amount
+.	I-Amount
 
 Recovery	O
-G:	O
-Add 1X	B-Action
-M9:	B-Reagent
-40μl.
-	B-Amount
+F	O
+:	O
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+:	B-Reagent
+20μl	B-Amount
+.	I-Amount
+
+Recovery	O
+G	O
+:	O
+Add	B-Action
+1X	B-Concentration
+M9	I-Concentration
+:	B-Reagent
+40μl	B-Amount
+.	I-Amount
 
 Clone	B-Action
 out	I-Action
@@ -303,13 +364,16 @@ P0s	B-Reagent
 onto	O
 NNGM	B-Location
 plates	I-Location
-(1	B-Numerical
+(	O
+1	B-Numerical
 P0	B-Reagent
 per	O
-plate,	B-Location
+plate	B-Location
+,	O
 at	O
-20°C).
-	B-Temperature
+20°C	B-Temperature
+)	O
+.	O
 
 Use	B-Action
 fresh	B-Modifier
@@ -329,8 +393,8 @@ to	O
 facilitate	O
 screening	O
 for	O
-Rollers.
-	O
+Rollers	O
+.	O
 
 It	O
 is	O
@@ -353,8 +417,8 @@ the	O
 oil	B-Reagent
 will	O
 kill	O
-them.
-	B-Mention
+them	B-Mention
+.	O
 
 Transfer	B-Action
 the	O
@@ -362,12 +426,14 @@ P0s	B-Reagent
 to	O
 second	B-Location
 plate	I-Location
-(again	O
+(	O
+again	O
 1	B-Numerical
 P0	B-Reagent
 per	O
-plate).
-	B-Location
+plate	B-Location
+)	O
+.	O
 
 Examine	B-Action
 the	O
@@ -379,8 +445,8 @@ days	I-Time
 after	O
 cloning	B-Action
 the	O
-P0s.
-	B-Reagent
+P0s	B-Reagent
+.	O
 
 Determine	B-Action
 the	O
@@ -398,22 +464,25 @@ P0s	B-Reagent
 giving	O
 the	O
 most	O
-Rollers.
-	O
+Rollers	O
+.	O
 
 These	O
 are	O
 your	O
-“jackpot	O
-broods”.
-	O
+“	O
+jackpot	O
+broods	O
+”	O
+.	O
 
 Clone	B-Action
 all	O
 the	O
 Roller	B-Reagent
 F1s	I-Reagent
-(from	O
+(	O
+from	O
 the	O
 jackpot	O
 broods	O
@@ -427,20 +496,22 @@ do	O
 not	O
 have	O
 that	O
-many).
-	O
+many	O
+)	O
+.	O
 
 See	O
 the	O
 guidelines	O
-for:-Screening-Strain	B-Method
+for	O
+:	O
+-Screening-Strain	B-Method
 establishment	I-Method
 -Special	O
 applications	O
 of	O
 this	O
-protocol
-	O
+protocol	O
 
 
 

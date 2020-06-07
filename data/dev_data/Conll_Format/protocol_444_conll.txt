@@ -3,23 +3,24 @@ gDNA	B-Reagent
 extraction	B-Method
 from	O
 coral	B-Reagent
-samples
-	I-Reagent
+samples	I-Reagent
 
 Acquire	B-Action
 sample	B-Reagent
-material.
-	I-Reagent
+material	I-Reagent
+.	O
 
 Small	O
 amounts	O
 of	O
 coral	B-Reagent
-tissue,	I-Reagent
+tissue	I-Reagent
+,	O
 with	O
 or	O
 without	O
-skeleton,	B-Reagent
+skeleton	B-Reagent
+,	O
 may	O
 be	O
 obtained	O
@@ -27,29 +28,32 @@ by	O
 clipping	B-Action
 off	I-Action
 branch	B-Reagent
-tips,	I-Reagent
+tips	I-Reagent
+,	O
 scraping	B-Action
 with	O
 a	O
 razor	B-Device
-blade,	I-Device
-etc.
-	O
+blade	I-Device
+,	O
+etc	O
+.	O
 
 Add	B-Action
 sample	B-Reagent
 to	O
 500	B-Amount
 µL	I-Amount
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 SDS	B-Reagent
 in	O
 DNAB	B-Reagent
 in	O
 a	O
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Be	O
 sure	O
@@ -60,8 +64,8 @@ fully	B-Modifier
 immersed	I-Modifier
 in	O
 the	O
-buffer.
-	B-Reagent
+buffer	B-Reagent
+.	O
 
 Incubate	B-Action
 sample	B-Reagent
@@ -69,8 +73,8 @@ for	O
 60-90	B-Time
 minutes	I-Time
 at	O
-65°C.
-	B-Temperature
+65°C	B-Temperature
+.	O
 
 Sample	B-Reagent
 is	O
@@ -80,18 +84,21 @@ for	O
 storage	O
 at	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 and	O
 can	O
 be	O
 treated	O
 as	O
 an	O
-"archive"	O
+``	O
+archive	O
+''	O
 for	O
 future	O
-use.
-	O
+use	O
+.	O
 
 These	O
 archives	O
@@ -103,39 +110,44 @@ multiple	O
 attempts	O
 at	O
 DNA	B-Reagent
-extraction.
-	B-Method
+extraction	B-Method
+.	O
 
 Add	B-Action
 25	B-Amount
 µL	I-Amount
 Proteinase	B-Reagent
 K	I-Reagent
-(10	B-Concentration
-mg/mL)	I-Concentration
-to sample	B-Reagent
+(	O
+10	B-Concentration
+mg/mL	I-Concentration
+)	O
+to	O
+sample	B-Reagent
 archive	I-Reagent
-and	O
+and	I-Reagent
 vortex	B-Action
-well.
-	B-Modifier
+well	I-Action
+.	B-Modifier
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-37°C,	B-Temperature
+37°C	B-Temperature
+,	O
 for	O
 6-7	B-Time
 hours	I-Time
 at	O
-45°C,	B-Temperature
+45°C	B-Temperature
+,	O
 or	O
 for	O
 2-3	B-Time
 hours	I-Time
 at	O
-55°C.
-	B-Temperature
+55°C	B-Temperature
+.	O
 
 Prepare	B-Action
 a	O
@@ -151,26 +163,31 @@ samples	B-Reagent
 you	O
 intend	O
 to	O
-process,	B-Action
+process	B-Action
+,	O
 and	O
 add	B-Action
 100	B-Amount
 µL	I-Amount
 of	O
-each sample	B-Reagent
+each	O
+sample	B-Reagent
 archive	I-Reagent
-(in	O
-1%	B-Concentration
-SDS	B-Reagent
+(	I-Reagent
 in	O
-DNAB)	B-Reagent
+1	O
+%	B-Concentration
+SDS	I-Concentration
+in	B-Reagent
+DNAB	I-Reagent
+)	I-Reagent
 to	O
 the	O
 new	B-Modifier
-set	O
+set	I-Modifier
 of	O
-tubes.
-	B-Location
+tubes	B-Location
+.	I-Location
 
 Return	B-Action
 the	O
@@ -180,25 +197,29 @@ the	O
 sample	B-Reagent
 archive	I-Reagent
 to	O
-storage.
-	B-Location
+storage	B-Location
+.	O
 
 Defrost	B-Action
 CTAB	B-Reagent
 mix	I-Reagent
-(stored	B-Action
+(	O
+stored	B-Action
 at	O
--20°C)	B-Temperature
+-20°C	B-Temperature
+)	O
 and	O
 add	B-Action
 twice	B-Amount
 volume	I-Amount
-(200	I-Amount
-µL)	I-Amount
+(	O
+200	B-Amount
+µL	I-Amount
+)	O
 to	O
 each	B-Modifier
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 Vortex	B-Action
 and	O
@@ -207,32 +228,39 @@ at	O
 65°C	B-Temperature
 for	O
 30-60	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Allow	O
 samples	B-Reagent
 to	O
-cool.
-	B-Action
+cool	B-Action
+.	O
 
 In	O
 fume	B-Device
-hood,	I-Device
+hood	I-Device
+,	O
 add	B-Action
 equal	B-Amount
 volume	I-Amount
-(300	I-Amount
-µL)	I-Amount
+(	O
+300	B-Amount
+µL	I-Amount
+)	O
 of	O
-chloroform.
-	B-Reagent
+chloroform	B-Reagent
+.	O
 
 Be	O
 sure	O
 to	O
-‘charge’	B-Action
-(i.e.,	O
+‘	O
+charge	B-Action
+’	O
+(	O
+i.e.	O
+,	O
 fill	B-Action
 and	O
 empty	B-Action
@@ -243,27 +271,30 @@ chloroform	B-Reagent
 2	B-Numerical
 to	I-Numerical
 3	I-Numerical
-times)	O
+times	O
+)	O
 the	O
 pipette	B-Location
 tip	I-Location
 before	O
 first	O
-use,	O
+use	O
+,	O
 or	O
 your	O
 tip	B-Location
 will	O
 leak	O
-chloroform.
-	B-Reagent
+chloroform	B-Reagent
+.	O
 
 Vortex	B-Action
 sample	B-Reagent
 and	O
 invert	B-Action
 several	B-Numerical
-times,	O
+times	O
+,	O
 but	O
 be	O
 careful	O
@@ -278,8 +309,8 @@ will	O
 erase	B-Action
 your	O
 sample	O
-labels!
-	O
+labels	O
+!	O
 
 Put	B-Action
 in	O
@@ -289,17 +320,19 @@ rotating	B-Device
 platform	I-Device
 for	O
 2-3	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	I-Time
 
 Centrifuge	B-Action
 at	O
 10,000g	B-Speed
-(RCF)	O
+(	O
+RCF	O
+)	O
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Align	B-Action
 tubes	B-Location
@@ -311,12 +344,13 @@ hinges	B-Device
 are	O
 on	O
 the	O
-outside.
-	O
+outside	O
+.	O
 
 While	O
-spinning,	B-Action
-prepare	I-Action
+spinning	B-Action
+,	O
+prepare	B-Action
 a	O
 new	B-Modifier
 set	O
@@ -324,8 +358,8 @@ of	O
 labeled	B-Modifier
 1.5	B-Amount
 mL	I-Amount
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Remove	B-Action
 samples	B-Reagent
@@ -341,8 +375,8 @@ top	O
 µL	B-Amount
 into	O
 new	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Dispose	B-Action
 the	O
@@ -353,20 +387,27 @@ contents	B-Reagent
 into	O
 appropriate	B-Modifier
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Add	B-Action
 twice	B-Amount
 volume	I-Amount
-(500	I-Amount
-µL)	I-Amount
+(	O
+500	B-Amount
+µL	I-Amount
+)	O
 of	O
-100%	B-Concentration
-(200-proof)	B-Generic-Measure
+100	B-Concentration
+%	I-Concentration
+(	O
+200-proof	B-Generic-Measure
+)	O
 ethanol	B-Reagent
-(EtOH).
-	I-Reagent
+(	O
+EtOH	B-Reagent
+)	O
+.	O
 
 Ensure	O
 caps	B-Location
@@ -380,7 +421,8 @@ in	O
 their	O
 rack	B-Location
 several	B-Numerical
-times,	O
+times	O
+,	O
 together	O
 with	O
 a	O
@@ -393,8 +435,8 @@ sure	O
 samples	B-Reagent
 are	O
 well	B-Modifier
-mixed.
-	B-Action
+mixed	B-Action
+.	O
 
 Put	B-Action
 samples	B-Reagent
@@ -408,14 +450,15 @@ hours	I-Time
 to	O
 promote	B-Action
 DNA	B-Method
-precipitation.
-	I-Method
+precipitation	I-Method
+.	O
 
 If	O
 the	O
 EtOH	B-Reagent
 is	O
-pre-chilled,	O
+pre-chilled	O
+,	O
 you	O
 can	O
 leave	B-Action
@@ -428,14 +471,15 @@ for	O
 only	B-Modifier
 a	O
 1/2	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Put	B-Action
 samples	B-Reagent
 in	O
 centrifuge	B-Device
-(ensuring	B-Action
+(	O
+ensuring	B-Action
 that	O
 the	O
 hinges	B-Location
@@ -445,7 +489,8 @@ tubes	B-Location
 are	O
 on	O
 the	O
-outside)	B-Location
+outside	B-Location
+)	O
 and	O
 spin	B-Action
 for	O
@@ -453,8 +498,10 @@ for	O
 minutes	I-Time
 at	O
 10,000g	B-Speed
-(RCF).
-	O
+(	O
+RCF	O
+)	O
+.	O
 
 Remove	B-Action
 samples	B-Reagent
@@ -472,8 +519,8 @@ tubes	B-Location
 into	O
 a	O
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 The	O
 DNA	B-Reagent
@@ -486,19 +533,21 @@ the	O
 inside	B-Location
 of	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Put	B-Action
-tubes,	B-Location
+tubes	B-Location
+,	O
 with	O
 their	O
 caps	B-Seal
-open,	B-Action
+open	B-Action
+,	O
 in	O
 the	O
-Vacufuge/Speedvac.
-	B-Device
+Vacufuge/Speedvac	B-Device
+.	O
 
 Be	O
 careful	O
@@ -508,22 +557,24 @@ the	O
 tubes	B-Location
 in	O
 and	O
-don’t	B-Action
+don	B-Action
+’	I-Action
+t	I-Action
 touch	I-Action
 the	O
 inside	B-Location
 of	O
 the	O
-caps.
-	B-Seal
+caps	B-Seal
+.	O
 
 Speedvac	B-Action
 at	O
 45°C	B-Temperature
 for	O
 30-60	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Remove	B-Action
 samples	B-Reagent
@@ -537,55 +588,64 @@ of	O
 0.3	B-Concentration
 M	I-Concentration
 NaOAc	B-Reagent
-(do	O
+(	O
+do	O
 not	O
 use	B-Action
 the	O
 stock	O
 3	B-Concentration
 M	I-Concentration
-solution!).
-	B-Reagent
+solution	B-Reagent
+!	O
+)	O
+.	O
 
 Vortex	B-Action
 sample	B-Reagent
 well	B-Modifier
 to	O
 dissolve	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 When	O
 the	O
 pellet	B-Reagent
 is	O
 dissolved	B-Modifier
-the sample	B-Reagent
-will	O
+the	O
+sample	B-Reagent
+will	I-Reagent
 appear	O
-“syrupy”	B-Modifier
+“	O
+syrupy	B-Modifier
+”	I-Modifier
 and	O
 will	O
 not	O
 bounce	B-Action
-around	O
+around	I-Action
 as	O
 droplets	B-Reagent
-inside	O
+inside	I-Reagent
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	I-Location
 
 Once	O
 the	O
 pellet	B-Reagent
 is	O
-dissolved,	B-Modifier
+dissolved	B-Modifier
+,	O
 add	B-Action
 200uL	B-Amount
 of	O
-100%	B-Concentration
-Ethanol,	B-Reagent
+100	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+,	O
 vortex	B-Action
 and	O
 invert	B-Action
@@ -598,13 +658,14 @@ freezer	B-Device
 for	O
 at	B-Modifier
 least	I-Modifier
-2hrs.
-	B-Time
+2hrs	B-Time
+.	O
 
 Remove	B-Action
 samples	B-Reagent
 from	O
-freezer,	B-Device
+freezer	B-Device
+,	O
 and	O
 centrifuge	B-Action
 for	O
@@ -612,33 +673,41 @@ for	O
 minutes	I-Time
 at	O
 10,000g	B-Speed
-(RCF).
-	O
+(	O
+RCF	O
+)	O
+.	O
 
 Decant	B-Action
 supernatant	B-Reagent
 into	O
 appropriate	B-Modifier
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Add	B-Action
 100	B-Amount
 µL	I-Amount
 of	O
-70%	B-Concentration
-Ethanol,	B-Reagent
+70	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+,	O
 and	O
 vortex	B-Action
 thoroughly	B-Modifier
-(this	O
+(	O
+this	O
 is	O
 the	O
-“Ethanol	B-Reagent
-Wash”	B-Action
-step).
-	O
+“	O
+Ethanol	B-Reagent
+Wash	B-Action
+”	O
+step	O
+)	O
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -646,7 +715,10 @@ for	O
 minutes	I-Time
 at	O
 10,000g	B-Speed
-(RCF),	O
+(	O
+RCF	O
+)	O
+,	O
 and	O
 again	B-Modifier
 decant	B-Action
@@ -654,8 +726,8 @@ supernatant	B-Reagent
 into	O
 appropriate	B-Modifier
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Put	B-Action
 samples	B-Reagent
@@ -664,7 +736,8 @@ Vacufuge	B-Device
 with	O
 the	O
 caps	B-Seal
-open,	B-Action
+open	B-Action
+,	O
 and	O
 speedvac	B-Action
 at	O
@@ -676,8 +749,8 @@ to	O
 thoroughly	B-Modifier
 dry	B-Action
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Take	B-Action
 samples	B-Reagent
@@ -689,8 +762,8 @@ add	B-Action
 50-100	B-Amount
 µL	I-Amount
 TE	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Vortex	B-Action
 briefly	B-Modifier
@@ -701,23 +774,23 @@ store	B-Action
 at	O
 -20°C	B-Temperature
 in	O
-freezer.
-	B-Device
+freezer	B-Device
+.	O
 
 Sample	B-Reagent
 is	O
 now	O
 ready	B-Action
 for	O
-PCR.
-	B-Method
+PCR	B-Method
+.	O
 
 Store	B-Action
 DNA	B-Reagent
 samples	I-Reagent
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 
 

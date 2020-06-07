@@ -3,8 +3,7 @@ spike-in	B-Modifier
 transcripts	B-Reagent
 for	O
 mRNA	B-Reagent
-normalization
-	B-Method
+normalization	B-Method
 
 Grow	B-Action
 DH5alpha	B-Reagent
@@ -13,26 +12,31 @@ cells	I-Reagent
 overnight	B-Time
 with	O
 pSP64	B-Reagent
-poly(A)	I-Reagent
+poly	I-Reagent
+(	I-Reagent
+A	I-Reagent
+)	I-Reagent
 plasmid	I-Reagent
 containing	O
 inserted	B-Modifier
 spike-in	I-Modifier
-sequence.
-	B-Reagent
+sequence	B-Reagent
+.	O
 
 Miniprep	B-Reagent
-plasmids,	I-Reagent
-quantify.
-	B-Action
+plasmids	I-Reagent
+,	O
+quantify	B-Action
+.	O
 
-You'll	O
+You	O
+'ll	O
 need	O
 a	O
 lot	O
 of	O
-plasmid.
-	B-Reagent
+plasmid	B-Reagent
+.	O
 
 Set	B-Action
 up	I-Action
@@ -47,18 +51,22 @@ compatible	I-Reagent
 buffer	I-Reagent
 with	O
 ~3ug	B-Modifier
-pSP64-NSERT-poly(A)	B-Reagent
+pSP64-NSERT-poly	B-Reagent
+(	I-Reagent
+A	I-Reagent
+)	I-Reagent
 and	O
 5ul	B-Amount
-EcoRI.
-	B-Reagent
+EcoRI	B-Reagent
+.	O
 
 Incubate	B-Action
 2	B-Time
 hours	I-Time
-each,	O
-37C.
-	B-Temperature
+each	O
+,	O
+37C	B-Temperature
+.	O
 
 Save	B-Action
 some	O
@@ -66,12 +74,13 @@ plasmid	B-Reagent
 for	O
 the	O
 gel	B-Reagent
-below.
-	O
+below	O
+.	O
 
 Pour	B-Action
 a	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
 and	O
@@ -81,18 +90,20 @@ of	O
 digest	B-Reagent
 and	I-Reagent
 undigested	I-Reagent
-plasmid,	I-Reagent
+plasmid	I-Reagent
+,	O
 to	O
 check	B-Method
 for	I-Method
-cutting.
-	I-Method
+cutting	I-Method
+.	O
 
 Assuming	O
 you	O
 observe	O
 complete	O
-digestion,	B-Method
+digestion	B-Method
+,	O
 clean	B-Action
 up	I-Action
 reactions	B-Reagent
@@ -100,7 +111,8 @@ using	O
 PCR	B-Reagent
 clean	I-Reagent
 up	I-Reagent
-kit,	I-Reagent
+kit	I-Reagent
+,	O
 pooling	B-Action
 repeats	B-Reagent
 of	I-Reagent
@@ -110,8 +122,8 @@ plasmid	I-Reagent
 digest	I-Reagent
 at	O
 this	O
-stage.
-	O
+stage	O
+.	O
 
 Quantify	B-Action
 using	O
@@ -121,32 +133,50 @@ have	O
 an	O
 idea	O
 for	O
-concentration.
-	B-Measure-Type
+concentration	B-Measure-Type
+.	O
 
 Set	B-Action
 up	I-Action
 SP6	B-Reagent
 reaction	I-Reagent
 master	I-Reagent
-mix,	I-Reagent
+mix	I-Reagent
+,	O
 from	O
 the	O
 kit	B-Reagent
-reagents: 1x5xTxn	I-Reagent
+reagents	I-Reagent
+:	O
+1x5xTxn	O
 optimized	O
-5x	B-Concentration
-buffer4ul 20ulDTT	B-Reagent
-(100mM)2ul 10ulRecombinant	B-Concentration
-RNasin0.75ul 3.75ul10mM	B-Reagent
-rATP1ul 5ul10mM	I-Reagent
-rUTP1ul 5ul10mM	I-Reagent
-rCTP1ul 5ul10mM	I-Reagent
-rGTP1ul 5ul4tUTP	I-Reagent
-(10mM)2ul 10ulSP6	B-Concentration
-RNA	B-Reagent
-Polymerase1ul 5ul.
-	I-Reagent
+5x	O
+buffer4ul	B-Concentration
+20ulDTT	B-Amount
+(	B-Reagent
+100mM	I-Reagent
+)	B-Concentration
+2ul	I-Concentration
+10ulRecombinant	B-Amount
+RNasin0.75ul	B-Reagent
+3.75ul10mM	B-Amount
+rATP1ul	B-Concentration
+5ul10mM	B-Reagent
+rUTP1ul	B-Amount
+5ul10mM	B-Reagent
+rCTP1ul	B-Amount
+5ul10mM	B-Reagent
+rGTP1ul	B-Amount
+5ul4tUTP	B-Reagent
+(	B-Amount
+10mM	I-Amount
+)	B-Reagent
+2ul	I-Reagent
+10ulSP6	B-Concentration
+RNA	B-Amount
+Polymerase1ul	I-Amount
+5ul	B-Reagent
+.	I-Reagent
 
 Make	B-Action
 new	B-Modifier
@@ -156,14 +186,15 @@ of	O
 of	O
 linarized	B-Reagent
 plasmid	I-Reagent
-DNA.
-	I-Reagent
+DNA	I-Reagent
+.	O
 
 For	O
 a	O
 kit	B-Reagent
 positive	I-Reagent
-control,	I-Reagent
+control	I-Reagent
+,	O
 dilute	B-Action
 1ul	B-Amount
 of	O
@@ -173,8 +204,8 @@ standard	I-Reagent
 with	O
 5.25ul	B-Amount
 of	O
-water.
-	B-Reagent
+water	B-Reagent
+.	O
 
 Concentrations	B-Measure-Type
 should	O
@@ -184,8 +215,8 @@ the	O
 range	O
 of	O
 100-200	B-Concentration
-ng/ul.
-	I-Concentration
+ng/ul	I-Concentration
+.	O
 
 Add	B-Action
 13.75ul	B-Amount
@@ -199,16 +230,16 @@ each	B-Modifier
 tube	B-Location
 of	O
 linearized	B-Reagent
-DNA.
-	I-Reagent
+DNA	I-Reagent
+.	O
 
 Incubate	B-Action
 1-2hr	B-Time
 in	O
 30/37C	B-Temperature
 water	B-Device
-bath.
-	I-Device
+bath	I-Device
+.	O
 
 Remove	B-Action
 2ul	B-Amount
@@ -217,29 +248,31 @@ PCR	B-Location
 tubes	I-Location
 for	O
 later	B-Reagent
-gel.
-	I-Reagent
+gel	I-Reagent
+.	O
 
 To	O
 the	O
-rest,	O
+rest	O
+,	O
 add	B-Action
 1ul	B-Amount
 of	O
 RQ1	B-Reagent
 RNase-Free	I-Reagent
-DNase.
-	I-Reagent
+DNase	I-Reagent
+.	O
 
 Incubate	B-Action
 15min	B-Time
 at	O
-37C.
-	B-Temperature
+37C	B-Temperature
+.	O
 
 To	O
 each	B-Reagent
-reaction,	I-Reagent
+reaction	I-Reagent
+,	O
 add	B-Action
 40ul	B-Amount
 Ampure	B-Reagent
@@ -249,15 +282,15 @@ and	O
 mix	B-Action
 well	B-Modifier
 with	O
-pipette.
-	B-Location
+pipette	B-Location
+.	O
 
 Let	O
 sit	B-Action
 RT	B-Temperature
 for	O
-5min.
-	B-Time
+5min	B-Time
+.	O
 
 Collected	B-Action
 beads	B-Reagent
@@ -266,47 +299,52 @@ side	B-Location
 in	O
 a	O
 magnetic	B-Location
-rack.
-	I-Location
+rack	I-Location
+.	O
 
 Aspirated	B-Modifier
-supernatant,	B-Reagent
-all.
-	O
+supernatant	B-Reagent
+,	O
+all	O
+.	O
 
 Add	B-Action
 ~500ul	B-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 etOH	B-Reagent
 onto	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Let	O
 sit	B-Action
 ~30	B-Modifier
-seconds,	B-Time
+seconds	B-Time
+,	O
 then	O
 aspirate	B-Action
-off.
-	O
+off	O
+.	O
 
 Add	B-Action
 ~500ul	B-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 etOH	B-Reagent
 onto	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Let	O
 sit	B-Action
 ~30	B-Modifier
-seconds,	B-Time
+seconds	B-Time
+,	O
 then	O
 aspirate	B-Action
-off.
-	O
+off	O
+.	O
 
 Make	O
 sure	O
@@ -316,12 +354,13 @@ everything	O
 out	O
 of	O
 the	O
-bottom,	B-Location
-small	I-Location
+bottom	B-Location
+,	O
+small	B-Location
 tip	I-Location
 may	O
-help.
-	O
+help	O
+.	O
 
 Let	O
 beads	B-Reagent
@@ -335,23 +374,25 @@ kimwipe	B-Device
 over	O
 the	O
 open	O
-tubes,	O
+tubes	O
+,	O
 10min	B-Time
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Resuspend	B-Action
 beads	B-Reagent
 in	O
 20ul	B-Amount
 hyclone	B-Reagent
-H_2O.
-	I-Reagent
+H_2O	I-Reagent
+.	O
 
 Run	B-Action
 ~3ul	B-Modifier
 on	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 TAE	I-Reagent
 gel	I-Reagent
@@ -364,47 +405,53 @@ with	O
 the	O
 NEB	B-Reagent
 1kb	I-Reagent
-ladder.
-	I-Reagent
+ladder	I-Reagent
+.	O
 
 Visualize	B-Action
 with	O
 your	O
 favorite	B-Reagent
 dye	I-Reagent
-(we	O
+(	O
+we	O
 use	O
 sybrsafe	B-Reagent
-now).
-	O
+now	O
+)	O
+.	O
 
 Quantify	B-Action
 on	O
-qubit,	B-Device
-dilute.
-	B-Action
+qubit	B-Device
+,	O
+dilute	B-Action
+.	O
 
 0.1ng/ul	B-Concentration
 is	O
 a	O
 good	O
 working	B-Reagent
-mix.
-	I-Reagent
+mix	I-Reagent
+.	O
 
 Benjy	O
 suggests	O
 using	O
 4ng	B-Amount
 spikein	B-Reagent
-(each)	O
+(	O
+each	O
+)	O
 :	O
 100ug	B-Amount
 total	O
-RNA.
-	B-Reagent
+RNA	B-Reagent
+.	O
 
-Darach's	O
+Darach	O
+'s	O
 had	O
 success	O
 with	O
@@ -412,10 +459,12 @@ with	O
 for	O
 ~5e7	B-Modifier
 cells	B-Reagent
-(for	O
+(	O
+for	O
 qPCR	B-Method
-normalization).
-	I-Method
+normalization	I-Method
+)	O
+.	O
 
 
 

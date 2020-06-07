@@ -1,21 +1,23 @@
 A	O
 Non-Interfering™	B-Modifier
-(NI)	I-Modifier
+(	I-Modifier
+NI	I-Modifier
+)	I-Modifier
 Protein	B-Method
 Assay	I-Method
 Perform	B-Action
 assays	B-Method
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Use	B-Action
 2ml	B-Amount
 tubes	B-Location
 for	O
-assay.
-	B-Reagent
+assay	B-Reagent
+.	O
 
 Prepare	B-Action
 a	O
@@ -36,12 +38,24 @@ indicated	B-Modifier
 in	O
 the	O
 table	O
-below: Tube	O
-#123456Protein	B-Reagent
+below	O
+:	O
+Tube	O
+#	O
+123456Protein	B-Reagent
 Standard	I-Reagent
-[2mg/ml]	B-Concentration
-(µl)048122025Protein	B-Measure-Type
-(µg)0816244050. 	O
+[	I-Reagent
+2mg/ml	B-Concentration
+]	I-Concentration
+(	O
+µl	B-Measure-Type
+)	I-Measure-Type
+048122025Protein	B-Reagent
+(	I-Reagent
+µg	O
+)	O
+0816244050	O
+.	O
 
 Add	B-Action
 1-50µl	B-Amount
@@ -54,8 +68,8 @@ be	I-Modifier
 assayed	I-Modifier
 to	O
 2ml	B-Amount
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Add	B-Action
 0.5ml	B-Amount
@@ -65,8 +79,8 @@ to	O
 each	B-Modifier
 tube	B-Location
 and	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Incubate	B-Action
 for	O
@@ -74,8 +88,8 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 0.5ml	B-Amount
@@ -85,8 +99,8 @@ to	O
 the	O
 tubes	B-Location
 and	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -94,7 +108,9 @@ tubes	B-Location
 at	O
 maximum	B-Speed
 speed	I-Speed
-(~10,000xg)	I-Speed
+(	O
+~10,000xg	B-Speed
+)	O
 for	O
 5	B-Time
 minutes	I-Time
@@ -102,13 +118,14 @@ to	O
 pellet	B-Action
 the	O
 precipitated	B-Modifier
-protein.
-	B-Reagent
+protein	B-Reagent
+.	O
 
 Decant	B-Action
 off	I-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 return	B-Action
 the	O
 tubes	B-Location
@@ -116,7 +133,8 @@ to	O
 the	O
 centrifuge	B-Device
 as	O
-before,	B-Method
+before	B-Method
+,	O
 quickly	B-Modifier
 pulse	B-Action
 to	O
@@ -128,15 +146,17 @@ and	O
 remove	B-Action
 with	O
 a	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Add	B-Action
 100µl	B-Amount
 Copper	B-Reagent
 Solution	I-Reagent
-(Reagent	I-Reagent
-I)	I-Reagent
+(	O
+Reagent	B-Reagent
+I	I-Reagent
+)	O
 and	O
 400µl	B-Amount
 deionized	B-Modifier
@@ -151,12 +171,13 @@ the	O
 protein	B-Reagent
 precipitate	I-Reagent
 pellet	I-Reagent
-dissolves.
-	B-Action
+dissolves	B-Action
+.	O
 
 Using	O
 1ml	B-Amount
-pipette,	B-Device
+pipette	B-Device
+,	O
 rapidly	B-Modifier
 shoot	B-Action
 1ml	B-Amount
@@ -179,8 +200,8 @@ it	B-Mention
 by	O
 inverting	B-Action
 the	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Incubate	B-Action
 at	O
@@ -198,8 +219,8 @@ at	O
 480nm	B-Generic-Measure
 against	O
 DI	B-Reagent
-water.
-	I-Reagent
+water	I-Reagent
+.	O
 
 Plot	B-Action
 absorbance	B-Measure-Type
@@ -211,8 +232,8 @@ determine	B-Action
 protein	B-Measure-Type
 concentrations	I-Measure-Type
 of	O
-unknowns.
-	B-Reagent
+unknowns	B-Reagent
+.	O
 
 
 

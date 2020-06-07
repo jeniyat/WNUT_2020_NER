@@ -6,8 +6,7 @@ amplicon	I-Method
 libraries	O
 using	O
 SPRI	B-Reagent
-beads
-	I-Reagent
+beads	I-Reagent
 
 Vortex	B-Action
 AMPure	B-Reagent
@@ -18,8 +17,8 @@ pureplus	I-Reagent
 SPRI	I-Reagent
 beads	I-Reagent
 to	O
-resuspend.
-	B-Action
+resuspend	B-Action
+.	O
 
 Make	B-Action
 your	O
@@ -27,23 +26,26 @@ pooled	B-Reagent
 library	I-Reagent
 up	B-Modifier
 to	I-Modifier
-100 μl	B-Amount
-if	O
-necessary.
-	O
+100	B-Amount
+μl	I-Amount
+if	I-Amount
+necessary	O
+.	O
 
 Add	B-Action
 60	B-Amount
 μl	I-Amount
 resuspended	B-Reagent
-SPRI beads	I-Reagent
-to	O
-100 μl	B-Amount
-of	O
+SPRI	I-Reagent
+beads	I-Reagent
+to	I-Reagent
+100	B-Amount
+μl	I-Amount
+of	I-Amount
 pooled	B-Modifier
-PCR	B-Reagent
-product.
-	I-Reagent
+PCR	I-Modifier
+product	B-Reagent
+.	I-Reagent
 
 Mix	B-Action
 well	B-Modifier
@@ -55,16 +57,16 @@ down	I-Method
 at	B-Modifier
 least	I-Modifier
 10	B-Numerical
-times.
-	I-Numerical
+times	I-Numerical
+.	O
 
 Vortex	B-Action
 AMPure	B-Reagent
 XP	I-Reagent
 beads	I-Reagent
 to	O
-resuspend.
-	B-Action
+resuspend	B-Action
+.	O
 
 Incubate	B-Action
 for	O
@@ -72,8 +74,8 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Quickly	B-Modifier
 spin	B-Action
@@ -91,24 +93,27 @@ to	O
 separate	O
 beads	B-Reagent
 from	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 After	O
 the	O
 solution	B-Reagent
 is	O
 clear	B-Modifier
-(about	O
+(	O
+about	O
 5	B-Time
-minutes),	I-Time
+minutes	I-Time
+)	O
+,	O
 carefully	B-Modifier
 remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Be	O
 careful	O
@@ -121,18 +126,22 @@ that	O
 contain	O
 DNA	B-Reagent
 targets	I-Reagent
-(Caution:	O
+(	O
+Caution	O
+:	O
 do	O
 not	O
 discard	B-Action
-beads).
-	B-Reagent
+beads	B-Reagent
+)	O
+.	O
 
 Add	B-Action
 200	B-Amount
 μl	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 freshly	B-Modifier
 prepared	I-Modifier
 ethanol	B-Reagent
@@ -143,8 +152,8 @@ while	O
 in	O
 the	O
 magnetic	B-Device
-stand.
-	I-Device
+stand	I-Device
+.	O
 
 Incubate	B-Action
 at	O
@@ -152,7 +161,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds,	I-Time
+seconds	I-Time
+,	O
 and	O
 then	O
 carefully	B-Modifier
@@ -160,14 +170,15 @@ remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
 μl	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 freshly	B-Modifier
 prepared	I-Modifier
 ethanol	B-Reagent
@@ -178,8 +189,8 @@ while	O
 in	O
 the	O
 magnetic	B-Device
-stand.
-	I-Device
+stand	I-Device
+.	O
 
 Incubate	B-Action
 at	O
@@ -187,7 +198,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds,	I-Time
+seconds	I-Time
+,	O
 and	O
 then	O
 carefully	B-Modifier
@@ -195,14 +207,15 @@ remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
 μl	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 freshly	B-Modifier
 prepared	I-Modifier
 ethanol	B-Reagent
@@ -213,8 +226,8 @@ while	O
 in	O
 the	O
 magnetic	B-Device
-stand.
-	I-Device
+stand	I-Device
+.	O
 
 Incubate	B-Action
 at	O
@@ -222,7 +235,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds,	I-Time
+seconds	I-Time
+,	O
 and	O
 then	O
 carefully	O
@@ -230,8 +244,8 @@ remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Air	B-Action
 the	O
@@ -251,8 +265,8 @@ stand	I-Device
 with	O
 the	O
 lid	B-Seal
-open.
-	B-Modifier
+open	B-Modifier
+.	O
 
 Elute	B-Action
 the	O
@@ -268,20 +282,22 @@ adding	B-Action
 of	O
 10	B-Concentration
 mM	I-Concentration
-Tris-HCl,	B-Reagent
+Tris-HCl	B-Reagent
+,	O
 pH	B-pH
 8.0	I-pH
 or	O
 0.1X	B-Concentration
-TE.Note:	B-Reagent
+TE.Note	B-Reagent
+:	O
 Be	O
 sure	O
 not	O
 to	O
 transfer	B-Action
 any	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Trace	O
 amounts	O
@@ -302,8 +318,8 @@ in	O
 the	O
 subsequent	O
 PCR	B-Reagent
-step.
-	O
+step	O
+.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -311,13 +327,14 @@ by	O
 pipetting	B-Method
 up	I-Method
 and	I-Method
-down,	I-Method
+down	I-Method
+,	O
 or	O
 on	O
 a	O
 vortex	B-Device
-mixer.
-	I-Device
+mixer	I-Device
+.	O
 
 Quickly	B-Modifier
 spin	B-Action
@@ -329,17 +346,20 @@ it	B-Mention
 on	O
 the	O
 magnetic	B-Device
-stand.
-	I-Device
+stand	I-Device
+.	O
 
 After	O
 the	O
 solution	B-Reagent
 is	O
 clear	B-Modifier
-(about	O
+(	O
+about	O
 5	B-Time
-minutes),	I-Time
+minutes	I-Time
+)	O
+,	O
 transfer	B-Action
 27ul	B-Amount
 a	O
@@ -347,8 +367,8 @@ new	B-Modifier
 PCR	B-Reagent
 tube	I-Reagent
 for	O
-amplification.
-	B-Method
+amplification	B-Method
+.	O
 
 
 

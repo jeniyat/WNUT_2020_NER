@@ -1,92 +1,59 @@
-T1	Action 87 94	Suspend
-E1	Action:T1 Acts-on:T2 Site:T5
-T2	Reagent 99 119	mitochondrial pellet
-T3	Amount 123 128	100µl
-T4	Concentration 129 131	1X
-T5	Reagent 132 149	SubCell Buffer‐II
-R1	Measure Arg1:T5 Arg2:T4	
-R2	Measure Arg1:T5 Arg2:T3	
-T6	Action 151 155	Make
-E2	Action:T6 Product:T7
-T7	Reagent 158 171	step gradient
-T8	Action 175 181	adding
-E3	Action:T8 Acts-on:T10 Site:T12
-T9	Amount 182 187	200µl
-T10	Reagent 188 204	SubCell Buffer‐V
-T12	Location 210 225	centrifuge tube
-T13	Action 235 245	overlaying
-E5	Action:T13 Using:T15
-T14	Amount 251 256	200µl
-T15	Reagent 257 274	SubCell Buffer‐IV
-R3	Measure Arg1:T15 Arg2:T14	
-R4	Measure Arg1:T10 Arg2:T9	
-T11	Action 283 288	float
-E4	Action:T11 Acts-on:T16 Site:T17
-T16	Reagent 293 317	mitochondrial suspension
-T17	Location 325 332	surface
-T18	Reagent 340 353	step gradient
-R5	Meronym Arg1:T17 Arg2:T18	
-T19	Action 355 365	Centrifuge
-E6	Action:T19 Acts-on:T20
-T20	Reagent 370 378	gradient
-T21	Concentration 382 391	20,000x g
-T22	Time 396 406	20 minutes
-R6	Setting Arg1:E6 Arg2:T21	
-R7	Setting Arg1:E6 Arg2:T22	
-T23	Action 408 415	Observe
-E7	Action:T23 Acts-on:T25
-T24	Numerical 420 423	two
-T25	Reagent 424 435	white bands
-R8	Measure Arg1:T25 Arg2:T24	
-T26	Action 447 453	remove
-E8	Action:T26 Acts-on:T27 Site:T28
-T27	Reagent 459 463	band
-T28	Location 469 482	separate tube
-T29	Action 484 490	Dilute
-E9	Action:T29 Acts-on:T30 Using:T33
-T30	Reagent 495 520	mitochondrial suspensions
-T31	Amount 526 538	equal volume
-T32	Concentration 542 544	1X
-T33	Reagent 545 562	SubCell Buffer‐II
-R9	Measure Arg1:T33 Arg2:T32	
-R10	Measure Arg1:T33 Arg2:T31	
-T34	Action 564 574	Centrifuge
-E10	Action:T34 Acts-on:T35
-T35	Location 579 584	tubes
-T36	Concentration 588 597	12,000x g
-T37	Time 602 612	15 minutes
-T38	Action 617 624	discard
-E11	Action:T38 Acts-on:T39
-T39	Reagent 629 640	supernatant
-R11	Setting Arg1:E10 Arg2:T36	
-R12	Setting Arg1:E10 Arg2:T37	
-T40	Action 642 649	Suspend
-E12	Action:T40 Acts-on:T41 Using:T43
-T41	Reagent 654 675	mitochondrial pellets
-T42	Amount 681 688	30‐50µl
-T43	Reagent 689 724	Working Mitochondria Storage Buffer
-T44	Action 729 733	keep
-E13	Action:T44 Acts-on:T45 Site:T46
-T45	Reagent 738 749	suspensions
-T46	Location 750 756	on ice
-R13	Measure Arg1:T43 Arg2:T42	
-T47	Reagent 791 802	suspensions
-T48	Action 810 816	stored
-E14	Action:T48 Acts-on:T47 Site:T49
-T49	Location 817 823	on ice
-T50	Time 830 838	48 hours
-R14	Setting Arg1:E14 Arg2:T50	
-T51	Method 0 13	Fractionation
-T52	Reagent 17 22	Light
-T53	Reagent 27 45	Heavy Mitochondria
-T54	Device 49 65	Gradient Cushion
-T55	Device 67 85	FOCUS™ SubCell Kit
-R15	Meronym Arg1:T54 Arg2:T55	
-T56	Modifier 276 282	Gently
-R16	Mod-Link Arg1:E4 Arg2:T56	
-T57	Modifier 437 446	Carefully
-R17	Mod-Link Arg1:E8 Arg2:T57	
-T58	Action 775 785	processing
-E15	Action:T58 
-T59	Modifier 824 829	up to
-R18	Mod-Link Arg1:T50 Arg2:T59	
+T1	Method 0 13	Fractionation
+T2	Reagent 17 22	Light
+T3	Reagent 27 45	Heavy Mitochondria
+T4	Device 49 65	Gradient Cushion
+T5	Device 67 85	FOCUS™ SubCell Kit
+T6	Action 87 94	Suspend
+T7	Reagent 99 119	mitochondrial pellet
+T8	Amount 123 128	100µl
+T9	Concentration 129 131	1X
+T10	Reagent 132 149	SubCell Buffer‐II
+T11	Action 151 155	Make
+T12	Reagent 158 171	step gradient
+T13	Action 175 181	adding
+T14	Amount 182 187	200µl
+T15	Reagent 188 204	SubCell Buffer‐V
+T16	Location 210 225	centrifuge tube
+T17	Action 235 245	overlaying
+T18	Amount 251 256	200µl
+T19	Reagent 257 274	SubCell Buffer‐IV
+T20	Modifier 276 282	Gently
+T21	Action 283 288	float
+T22	Reagent 293 317	mitochondrial suspension
+T23	Location 325 332	surface
+T24	Reagent 340 353	step gradient
+T25	Action 355 365	Centrifuge
+T26	Reagent 370 378	gradient
+T27	Concentration 382 391	20,000x g
+T28	Time 396 406	20 minutes
+T29	Action 408 415	Observe
+T30	Numerical 420 423	two
+T31	Reagent 424 435	white bands
+T32	Modifier 437 446	Carefully
+T33	Action 447 453	remove
+T34	Reagent 459 463	band
+T35	Location 469 482	separate tube
+T36	Action 484 490	Dilute
+T37	Reagent 495 520	mitochondrial suspensions
+T38	Amount 526 538	equal volume
+T39	Concentration 542 544	1X
+T40	Reagent 545 562	SubCell Buffer‐II
+T41	Action 564 574	Centrifuge
+T42	Location 579 584	tubes
+T43	Concentration 588 597	12,000x g
+T44	Time 602 612	15 minutes
+T45	Action 617 624	discard
+T46	Reagent 629 640	supernatant
+T47	Action 642 649	Suspend
+T48	Reagent 654 675	mitochondrial pellets
+T49	Amount 681 688	30‐50µl
+T50	Reagent 689 724	Working Mitochondria Storage Buffer
+T51	Action 729 733	keep
+T52	Reagent 738 749	suspensions
+T53	Location 750 756	on ice
+T54	Action 775 785	processing
+T55	Reagent 791 802	suspensions
+T56	Action 810 816	stored
+T57	Location 817 823	on ice
+T58	Modifier 824 829	up to
+T59	Time 830 838	48 hours

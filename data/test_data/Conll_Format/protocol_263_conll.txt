@@ -1,14 +1,14 @@
 Preparation	B-Method
 of	O
 PBCV-1	B-Reagent
-Lysin
-	I-Reagent
+Lysin	I-Reagent
 
 Centrifuge	B-Action
 the	O
 NC64A	B-Reagent
 chlorella	I-Reagent
-(use	O
+(	O
+use	O
 actively	B-Modifier
 growing	I-Modifier
 cells	B-Reagent
@@ -16,7 +16,8 @@ approximately	B-Modifier
 1.0-2.0	B-Concentration
 X	I-Concentration
 107	I-Concentration
-cells/mL)	I-Concentration
+cells/mL	I-Concentration
+)	O
 in	O
 the	O
 Sorvall	B-Device
@@ -24,11 +25,13 @@ GSA	I-Device
 rotor	I-Device
 at	O
 7,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 5	B-Time
-min,	I-Time
-4°C.
-	B-Temperature
+min	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Use	O
 sterile	B-Location
@@ -36,21 +39,21 @@ bottles	I-Location
 to	O
 harvest	B-Action
 the	O
-cells.
-	B-Reagent
+cells	B-Reagent
+.	O
 
 Discard	B-Action
 the	O
-supernatants.
-	B-Reagent
+supernatants	B-Reagent
+.	O
 
 Resuspend	B-Action
 the	O
 cells	B-Reagent
 with	O
 sterile	B-Reagent
-BBM.
-	I-Reagent
+BBM	I-Reagent
+.	O
 
 Adjust	B-Action
 the	O
@@ -61,15 +64,17 @@ to	O
 mL	I-Amount
 with	O
 sterile	B-Reagent
-BBM.
-	I-Reagent
+BBM	I-Reagent
+.	O
 
 Add	B-Action
 filter-sterilized	B-Modifier
 tetracycline	B-Reagent
-(12.5	B-Amount
+(	O
+12.5	B-Amount
 mg/Ml	I-Amount
-stock,	B-Reagent
+stock	B-Reagent
+,	O
 add	B-Action
 0.1	B-Amount
 mL	I-Amount
@@ -78,18 +83,21 @@ per	O
 mL	I-Amount
 of	O
 BBM	B-Reagent
-solution)	I-Reagent
+solution	I-Reagent
+)	O
 and	O
 PBCV-1	B-Reagent
 at	O
 an	O
 moi	B-Measure-Type
-(multiplicity	I-Measure-Type
+(	O
+multiplicity	B-Measure-Type
 of	I-Measure-Type
-infection)	I-Measure-Type
+infection	I-Measure-Type
+)	O
 of	O
-0.01.
-	B-Numerical
+0.01	B-Numerical
+.	O
 
 Incubate	B-Action
 overnight	B-Time
@@ -99,16 +107,18 @@ with	O
 continuous	B-Method
 light	I-Method
 and	I-Method
-shaking.
-	I-Method
+shaking	I-Method
+.	O
 
 This	O
 material	B-Reagent
 is	O
 now	O
 termed	O
-“lysate”.
-	B-Reagent
+“	O
+lysate	B-Reagent
+”	O
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -120,19 +130,21 @@ GSA	I-Device
 rotor	I-Device
 at	O
 3,500	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
-min,	I-Time
-5°C.
-	B-Temperature
+min	I-Time
+,	O
+5°C	B-Temperature
+.	O
 
 Decant	B-Action
 the	O
 supernatants	B-Reagent
 to	O
 clean	B-Modifier
-bottles.
-	B-Location
+bottles	B-Location
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -144,19 +156,21 @@ GSA	I-Device
 rotor	I-Device
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 60	B-Time
-min,	I-Time
-5°C.
-	B-Temperature
+min	I-Time
+,	O
+5°C	B-Temperature
+.	O
 
 Decant	B-Action
 the	O
 supernatant	B-Reagent
 to	O
 clean	B-Modifier
-flasks.
-	B-Location
+flasks	B-Location
+.	O
 
 Add	B-Action
 d-H2O	B-Reagent
@@ -166,17 +180,19 @@ final	B-Measure-Type
 volume	I-Measure-Type
 of	O
 1000	B-Amount
-mL.
-	I-Amount
+mL	I-Amount
+.	O
 
 Place	B-Action
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
-Add,	B-Action
+Add	B-Action
+,	O
 at	O
-4°C:	B-Temperature
+4°C	B-Temperature
+:	O
 2-ME	B-Reagent
 to	O
 2	B-Concentration
@@ -189,9 +205,13 @@ NaN3	B-Reagent
 to	O
 200	B-Concentration
 mg/liter	I-Concentration
-(NH4)2SO4	B-Reagent
+(	B-Reagent
+NH4	I-Reagent
+)	I-Reagent
+2SO4	I-Reagent
 to	O
-40%	B-Generic-Measure
+40	B-Generic-Measure
+%	I-Generic-Measure
 saturation	I-Generic-Measure
 Adjust	B-Action
 the	O
@@ -199,16 +219,16 @@ pH	B-pH
 to	I-pH
 7.0	I-pH
 with	O
-NaOH.
-	B-Reagent
+NaOH	B-Reagent
+.	O
 
 Cover	B-Action
 and	O
 incubate	B-Action
 at	O
 4°C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -220,33 +240,41 @@ GSA	I-Device
 rotor	I-Device
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 60	B-Time
-min,	I-Time
-5°C.
-	B-Temperature
+min	I-Time
+,	O
+5°C	B-Temperature
+.	O
 
 Decant	B-Action
 the	O
 supernatant	B-Reagent
 to	O
 clean	B-Modifier
-flasks.
-	B-Location
+flasks	B-Location
+.	O
 
 Discard	B-Action
 the	O
-pellets.
-	B-Reagent
+pellets	B-Reagent
+.	O
 
-Add,	B-Action
+Add	B-Action
+,	O
 at	O
-4°C,	B-Temperature
-(NH4)2SO4	B-Reagent
+4°C	B-Temperature
+,	O
+(	B-Reagent
+NH4	I-Reagent
+)	I-Reagent
+2SO4	I-Reagent
 to	O
-65%	B-Generic-Measure
-saturation.
-	I-Generic-Measure
+65	B-Generic-Measure
+%	I-Generic-Measure
+saturation	I-Generic-Measure
+.	O
 
 Adjust	B-Action
 the	O
@@ -254,16 +282,16 @@ pH	B-pH
 to	I-pH
 7.0	I-pH
 with	O
-NaOH.
-	B-Reagent
+NaOH	B-Reagent
+.	O
 
 Cover	B-Action
 and	O
 incubate	B-Action
 at	O
 4°C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -275,22 +303,24 @@ GSA	I-Device
 rotor	I-Device
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
-min,	I-Time
-5°C.
-	B-Temperature
+min	I-Time
+,	O
+5°C	B-Temperature
+.	O
 
 Aspirate	B-Action
 off	I-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Save	B-Action
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Resuspend	B-Action
 the	O
@@ -301,20 +331,23 @@ mL	I-Amount
 of	O
 10	B-Concentration
 mM	I-Concentration
-Tris-HCl,	B-Reagent
+Tris-HCl	B-Reagent
+,	O
 pH	B-pH
-8.0,	I-pH
+8.0	I-pH
+,	O
 1	B-Concentration
 mM	I-Concentration
-EDTA,	B-Reagent
+EDTA	B-Reagent
+,	O
 2	B-Concentration
 mM	I-Concentration
 2-ME	B-Reagent
 +	O
 2	B-Amount
 mg	I-Amount
-NaN3.
-	B-Reagent
+NaN3	B-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -326,16 +359,18 @@ SS34	I-Device
 rotor	I-Device
 at	O
 15,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 60	B-Time
-min,	I-Time
-5°C.
-	B-Temperature
+min	I-Time
+,	O
+5°C	B-Temperature
+.	O
 
 Save	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Dialyze	B-Action
 the	O
@@ -348,19 +383,23 @@ at	O
 against	O
 10	B-Concentration
 mM	I-Concentration
-Tris-HCl,	B-Reagent
+Tris-HCl	B-Reagent
+,	O
 pH	B-pH
-8.0,	I-pH
+8.0	I-pH
+,	O
 1	B-Concentration
 mM	I-Concentration
-EDTA,	B-Reagent
+EDTA	B-Reagent
+,	O
 2	B-Concentration
 mM	I-Concentration
-2-ME,	B-Reagent
+2-ME	B-Reagent
+,	O
 200	B-Concentration
 mg/liter	I-Concentration
-NaN3.
-	B-Reagent
+NaN3	B-Reagent
+.	O
 
 Change	B-Action
 the	O
@@ -368,16 +407,16 @@ buffer	B-Reagent
 once	O
 every	B-Modifier
 24	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Remove	B-Action
 the	O
 material	B-Reagent
 from	O
 the	O
-dialysis.
-	B-Device
+dialysis	B-Device
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -389,11 +428,13 @@ SS34	I-Device
 rotor	I-Device
 at	O
 13,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 60	B-Time
-min,	I-Time
-5°C.
-	B-Temperature
+min	I-Time
+,	O
+5°C	B-Temperature
+.	O
 
 Aliquot	B-Action
 the	O
@@ -404,8 +445,8 @@ tubes	I-Location
 and	O
 store	B-Action
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 Assay	B-Action
 the	O
@@ -413,13 +454,13 @@ supernatant	B-Reagent
 fraction	I-Reagent
 for	O
 lysin	B-Reagent
-activity.
-	I-Reagent
+activity	I-Reagent
+.	O
 
 Save	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 
 

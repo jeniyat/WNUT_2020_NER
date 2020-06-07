@@ -1,24 +1,26 @@
 DNA	B-Method
 extraction	I-Method
 from	O
-plants
-	B-Reagent
+plants	B-Reagent
 
 Grind	B-Action
 frozen	B-Modifier
 plant	B-Reagent
 material	I-Reagent
-(100mg)	B-Amount
+(	O
+100mg	B-Amount
+)	O
 in	O
 liquid	B-Reagent
-Nitrogen.
-	I-Reagent
+Nitrogen	I-Reagent
+.	O
 
 In	O
 a	O
 2	B-Amount
 ml	I-Amount
-tube,	B-Location
+tube	B-Location
+,	O
 add	B-Action
 800	B-Amount
 uL	I-Amount
@@ -34,8 +36,8 @@ to	O
 the	O
 ground	B-Modifier
 leaf	B-Reagent
-material.
-	I-Reagent
+material	I-Reagent
+.	O
 
 Incubate	B-Action
 1	B-Time
@@ -43,23 +45,27 @@ hour	I-Time
 at	O
 60-65	B-Temperature
 degrees	I-Temperature
-(C).
-	O
+(	O
+C	O
+)	O
+.	O
 
 Cool	B-Action
 at	O
 Room	B-Temperature
-Temp.
-	I-Temperature
+Temp	I-Temperature
+.	O
 
 Add	B-Action
 1	B-Amount
 volume	I-Amount
 of	O
 Chloroform/Isoamylalkohol	B-Reagent
-(24:1)	B-Generic-Measure
-mixture.
-	O
+(	O
+24:1	B-Generic-Measure
+)	O
+mixture	O
+.	O
 
 Mix	B-Action
 on	O
@@ -67,8 +73,8 @@ overhead	B-Device
 shaker	I-Device
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -76,54 +82,63 @@ at	O
 rmp	I-Speed
 for	O
 25	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Use	B-Action
 wide	B-Modifier
 pipette	B-Device
 tips	I-Device
-(cut	B-Action
+(	O
+cut	B-Action
 point	B-Location
 of	O
 tips	B-Device
 if	B-Modifier
-needed).
-	I-Modifier
+needed	I-Modifier
+)	O
+.	O
 
 Add	B-Action
 10	B-Amount
 uL	I-Amount
 RNAse	B-Reagent
-(10	B-Concentration
-mg/ml)	I-Concentration
+(	O
+10	B-Concentration
+mg/ml	I-Concentration
+)	O
 incubate	B-Action
 at	O
 37	B-Temperature
 degrees	I-Temperature
-(C)	O
+(	O
+C	O
+)	O
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 one	B-Amount
 volume	I-Amount
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 Isoponanol	B-Reagent
-(pre-chilled	B-Action
+(	O
+pre-chilled	B-Action
 at	O
--20).
-	B-Temperature
+-20	B-Temperature
+)	O
+.	O
 
 Allow	O
 sample	B-Reagent
@@ -135,8 +150,8 @@ to	I-Modifier
 20	B-Time
 minutes	I-Time
 at	O
--20.
-	B-Temperature
+-20	B-Temperature
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -144,19 +159,20 @@ full	B-Speed
 speed	I-Speed
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Remove	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 1	B-Amount
 ml	I-Amount
-70%	B-Concentration
-Ethanol.
-	B-Reagent
+70	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -164,16 +180,16 @@ full	B-Speed
 speed	I-Speed
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Remove	B-Action
-Supernatant.
-	B-Reagent
+Supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
-once.
-	B-Numerical
+once	B-Numerical
+.	O
 
 Dry	B-Action
 pellet	B-Reagent
@@ -185,22 +201,25 @@ approx	B-Modifier
 minutes	I-Time
 in	O
 vacuum	B-Device
-centrifuge.
-	I-Device
+centrifuge	I-Device
+.	O
 
 Dissolve	B-Action
 pallet	B-Reagent
 in	O
 1x	B-Concentration
 TE	B-Reagent
-(10	B-Concentration
+(	O
+10	B-Concentration
 mM	I-Concentration
-Tris,	B-Reagent
-pH8,	B-pH
+Tris	B-Reagent
+,	O
+pH8	B-pH
+,	O
 1	B-Concentration
 mM	I-Concentration
-EDTA)
-	B-Reagent
+EDTA	B-Reagent
+)	O
 
 
 

@@ -2,19 +2,19 @@ Detecting	B-Action
 Fungal	B-Reagent
 Infections	I-Reagent
 in	O
-Almonds
-	B-Reagent
+Almonds	B-Reagent
 
 Manually	B-Modifier
-select almond	B-Action
-kernel	B-Reagent
+select	B-Action
+almond	B-Reagent
+kernel	I-Reagent
 samples	I-Reagent
-that	O
+that	I-Reagent
 are	O
 pasteurized	B-Modifier
-and	O
-shelled.
-	B-Modifier
+and	I-Modifier
+shelled	I-Modifier
+.	I-Modifier
 
 As	O
 mentioned	O
@@ -22,7 +22,9 @@ in	O
 the	O
 'Before	O
 Start	O
-Instructions',	O
+Instructions	O
+'	O
+,	O
 the	O
 almond	B-Reagent
 kernels	I-Reagent
@@ -32,8 +34,8 @@ collected	B-Action
 from	O
 multiple	B-Numerical
 harvest	B-Reagent
-cycles.
-	I-Reagent
+cycles	I-Reagent
+.	O
 
 These	O
 particular	O
@@ -46,8 +48,8 @@ the	O
 and	O
 2013	O
 almond	B-Reagent
-seasons.
-	O
+seasons	O
+.	O
 
 The	O
 samples	B-Reagent
@@ -65,8 +67,8 @@ physical	O
 damage	O
 or	O
 any	O
-marks.
-	O
+marks	O
+.	O
 
 Record	B-Action
 weight	B-Measure-Type
@@ -74,15 +76,16 @@ and	I-Measure-Type
 size	I-Measure-Type
 of	O
 almond	B-Reagent
-kernels.	I-Reagent
+kernels	I-Reagent
+.	O
 
 Separate	B-Action
 the	O
 samples	B-Reagent
 into	O
 two	O
-groups.
-	O
+groups	O
+.	O
 
 Out	O
 of	O
@@ -106,23 +109,26 @@ that	O
 commonly	O
 affect	B-Action
 almond	B-Reagent
-crops.
-	I-Reagent
+crops	I-Reagent
+.	O
 
 230	B-Numerical
 will	O
 be	O
 infected	B-Action
-with A.	B-Reagent
-flavus and	I-Reagent
+with	O
+A.	B-Reagent
+flavus	I-Reagent
+and	I-Reagent
 another	O
-230	B-Numerical
-will	O
+230	O
+will	B-Numerical
 be	O
 infected	B-Action
-with A.	B-Reagent
-parasiticus.
-	I-Reagent
+with	I-Action
+A.	O
+parasiticus	B-Reagent
+.	I-Reagent
 
 The	O
 remaining	O
@@ -137,8 +143,8 @@ serve	O
 as	O
 a	O
 control	B-Reagent
-group.
-	I-Reagent
+group	I-Reagent
+.	O
 
 Obtain	B-Action
 A.	B-Reagent
@@ -148,8 +154,9 @@ A.	B-Reagent
 parasiticus	I-Reagent
 isolates	I-Reagent
 to	O
-infect almonds.
-	B-Action
+infect	B-Action
+almonds	I-Action
+.	B-Reagent
 
 These	O
 two	B-Numerical
@@ -169,12 +176,13 @@ the	O
 surface	B-Location
 of	O
 almond	B-Reagent
-kernels.
-	I-Reagent
+kernels	I-Reagent
+.	O
 
 Prior	O
 to	O
-inoculation,	B-Method
+inoculation	B-Method
+,	O
 take	B-Action
 the	O
 fungi	B-Reagent
@@ -183,15 +191,17 @@ and	O
 grow	B-Action
 them	B-Mention
 in	O
-culture.
-	B-Reagent
+culture	B-Reagent
+.	O
 
 Use	B-Action
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 reconstituted	B-Modifier
 tomato	B-Reagent
 juice	I-Reagent
-agar,	I-Reagent
+agar	I-Reagent
+,	O
 in	O
 this	O
 case	O
@@ -200,7 +210,8 @@ will	O
 be	O
 V8	B-Reagent
 juice	I-Reagent
-agar,	I-Reagent
+agar	I-Reagent
+,	O
 and	O
 grow	B-Action
 each	O
@@ -210,20 +221,23 @@ for	O
 days	I-Time
 at	O
 a	O
-temperature of	B-Measure-Type
-31 °C	B-Temperature
-in	O
+temperature	B-Measure-Type
+of	I-Measure-Type
+31	O
+°C	B-Temperature
+in	I-Temperature
 a	O
-dark	B-Location
-environment.
-	I-Location
+dark	O
+environment	B-Location
+.	I-Location
 
 Once	O
 fungal	B-Reagent
 isolates	I-Reagent
 have	O
 been	O
-grown,	B-Action
+grown	B-Action
+,	O
 conidia	B-Reagent
 is	O
 collected	B-Action
@@ -237,8 +251,9 @@ is	O
 deposited	B-Action
 in	O
 sterile	B-Modifier
-deionized water.
-	B-Reagent
+deionized	B-Reagent
+water	I-Reagent
+.	I-Reagent
 
 A	O
 haemocytometer	B-Device
@@ -260,12 +275,13 @@ be	O
 diluted	B-Action
 to	O
 a	O
-concentration of	B-Measure-Type
+concentration	B-Measure-Type
+of	I-Measure-Type
 105	B-Concentration
 spores	I-Concentration
 per	I-Concentration
-ml-1.
-	I-Concentration
+ml-1	I-Concentration
+.	I-Concentration
 
 Create	B-Action
 incision	B-Location
@@ -277,9 +293,11 @@ of	O
 almond	B-Reagent
 kernels	I-Reagent
 using	O
-a B-D® 16G1	O
-PrecisionGlide®Needle.
-	B-Device
+a	O
+B-D®	O
+16G1	O
+PrecisionGlide®Needle	B-Device
+.	I-Device
 
 This	O
 incision	B-Location
@@ -296,8 +314,8 @@ in	O
 water	B-Reagent
 would	O
 be	O
-placed.
-	B-Action
+placed	B-Action
+.	O
 
 After	O
 making	B-Action
@@ -308,7 +326,8 @@ the	O
 surface	B-Location
 of	O
 the	O
-almond,	B-Reagent
+almond	B-Reagent
+,	O
 the	O
 kernels	B-Reagent
 will	O
@@ -318,7 +337,8 @@ by	O
 submerging	B-Action
 them	B-Mention
 in	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 bleach	B-Reagent
 solution	I-Reagent
 for	O
@@ -326,8 +346,8 @@ a	O
 period	O
 of	O
 7	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 The	O
 kernels	B-Reagent
@@ -354,8 +374,8 @@ Dichloran	B-Reagent
 solution	I-Reagent
 for	O
 2	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Remove	B-Action
 moisture	B-Reagent
@@ -381,29 +401,34 @@ of	O
 10	B-Time
 to	I-Time
 15	I-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Inoculate	B-Action
 each	O
-almond with 5 μl	B-Reagent
-of	O
-the	O
+almond	B-Reagent
+with	I-Reagent
+5	O
+μl	B-Amount
+of	I-Amount
+the	I-Amount
 fungi	B-Reagent
 solution.As	I-Reagent
 mentioned	O
-earlier,	O
+earlier	O
+,	O
 almonds	B-Reagent
-will	O
+will	I-Reagent
 be	O
 in	O
-two	B-Numerical
-separate	O
-groups:	O
+two	O
+separate	B-Numerical
+groups	O
+:	O
 infected	B-Modifier
-and	O
-control.
-	B-Modifier
+and	I-Modifier
+control	I-Modifier
+.	I-Modifier
 
 The	O
 infected	B-Modifier
@@ -417,16 +442,17 @@ A.	B-Reagent
 flavus	I-Reagent
 or	O
 A.	B-Reagent
-parasiticus.
-	I-Reagent
+parasiticus	I-Reagent
+.	O
 
 Once	O
 the	O
 almonds	B-Reagent
 have	O
 been	O
-inoculated,	B-Action
-add	I-Action
+inoculated	B-Action
+,	O
+add	B-Action
 deionized	B-Reagent
 water	I-Reagent
 to	O
@@ -453,15 +479,16 @@ of	O
 in	O
 a	O
 dark	B-Location
-place.
-	I-Location
+place	I-Location
+.	O
 
 Once	O
 the	O
 incubation	B-Method
 period	O
 is	O
-over,	O
+over	O
+,	O
 wash	B-Action
 almonds	B-Reagent
 with	O
@@ -476,8 +503,8 @@ fungi	B-Reagent
 spores	I-Reagent
 from	O
 the	O
-surface.
-	B-Location
+surface	B-Location
+.	O
 
 Place	B-Action
 almond	B-Reagent
@@ -491,8 +518,8 @@ a	O
 period	O
 of	O
 12	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Once	O
 the	O
@@ -507,8 +534,8 @@ a	O
 constant	O
 temperature	B-Measure-Type
 of	O
-2.6°C.
-	B-Temperature
+2.6°C	B-Temperature
+.	O
 
 Take	B-Action
 almond	B-Reagent
@@ -517,7 +544,8 @@ put	B-Action
 it	B-Mention
 under	O
 the	O
-spectrophotometer,	B-Device
+spectrophotometer	B-Device
+,	O
 then	O
 place	B-Action
 black	B-Device
@@ -528,8 +556,8 @@ the	O
 space	B-Location
 between	O
 these	O
-two.
-	B-Numerical
+two	B-Numerical
+.	O
 
 Scan	B-Action
 the	O
@@ -540,7 +568,8 @@ almond	B-Reagent
 kernel	I-Reagent
 using	O
 the	O
-spectrophotometer,	B-Device
+spectrophotometer	B-Device
+,	O
 for	O
 each	O
 individual	O
@@ -556,13 +585,17 @@ across	O
 a	O
 wavelength	B-Measure-Type
 range	I-Measure-Type
-of 400 nm	B-Generic-Measure
+of	O
+400	B-Generic-Measure
+nm	I-Generic-Measure
 to	I-Generic-Measure
-2500 nm,	I-Generic-Measure
-in	O
-2-nm	B-Generic-Measure
-increments.
-	O
+2500	I-Generic-Measure
+nm	I-Generic-Measure
+,	I-Generic-Measure
+in	I-Generic-Measure
+2-nm	O
+increments	B-Generic-Measure
+.	O
 
 Use	B-Action
 statistical	B-Device
@@ -578,8 +611,8 @@ all	O
 three	B-Numerical
 groupings	O
 of	O
-almonds.
-	B-Reagent
+almonds	B-Reagent
+.	O
 
 
 

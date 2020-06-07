@@ -6,8 +6,7 @@ Perm	I-Reagent
 Buffer	I-Reagent
 in	O
 Whole	B-Reagent
-Blood
-	I-Reagent
+Blood	I-Reagent
 
 Warm	B-Action
 1	B-Concentration
@@ -15,11 +14,15 @@ X	I-Concentration
 RBC	B-Reagent
 Lysis/Fixation	I-Reagent
 Solution	I-Reagent
-(Cat#	O
-422401,	O
+(	O
+Cat	O
+#	O
+422401	O
+,	O
 10X	B-Concentration
-solution).
-	B-Reagent
+solution	B-Reagent
+)	O
+.	O
 
 For	O
 each	O
@@ -27,7 +30,8 @@ each	O
 mL	I-Amount
 of	O
 whole	B-Reagent
-blood,	I-Reagent
+blood	I-Reagent
+,	O
 aliquot	B-Action
 2	B-Amount
 mL	I-Amount
@@ -46,16 +50,16 @@ tube	I-Location
 and	O
 warm	B-Action
 to	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	I-Temperature
 
 Chill	B-Action
 True-Phos™	B-Reagent
 Perm	I-Reagent
 Buffer	I-Reagent
 to	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 For	O
 each	O
@@ -63,7 +67,8 @@ each	O
 mL	I-Amount
 of	O
 whole	B-Reagent
-blood,	I-Reagent
+blood	I-Reagent
+,	O
 aliquot	B-Action
 1.0	B-Amount
 mL	I-Amount
@@ -74,8 +79,8 @@ Buffer	I-Reagent
 and	O
 chill	B-Action
 to	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 Aliquot	B-Action
 0.1	B-Amount
@@ -83,7 +88,9 @@ mL	I-Amount
 of	O
 whole	B-Reagent
 blood	I-Reagent
-(heparin)	O
+(	O
+heparin	O
+)	O
 into	O
 a	O
 50	B-Amount
@@ -92,16 +99,21 @@ conical	B-Location
 tube	I-Location
 for	O
 each	O
-test Tips: -	O
+test	O
+Tips	O
+:	O
+-	O
 22	O
 tests	O
-(or	O
-2.2	B-Amount
-mL	I-Amount
-of	O
+(	O
+or	O
+2.2	O
+mL	B-Amount
+of	I-Amount
 whole	B-Reagent
-blood)	I-Reagent
-are	O
+blood	I-Reagent
+)	I-Reagent
+are	I-Reagent
 the	O
 maximum	O
 number	O
@@ -111,29 +123,33 @@ that	O
 can	O
 be	O
 processed	B-Action
-in	O
+in	I-Action
 a	O
-50	B-Amount
-mL	I-Amount
-conical,	B-Location
-due	O
+50	O
+mL	B-Amount
+conical	I-Amount
+,	B-Location
+due	I-Location
 to	O
 volume	B-Measure-Type
-constraints.
-	O
+constraints	I-Measure-Type
+.	O
 
 -Prepare	B-Action
 two	B-Numerical
-aliquots:	B-Reagent
-Negative	I-Reagent
-control:	I-Reagent
-untreated,	B-Modifier
+aliquots	B-Reagent
+:	O
+Negative	B-Reagent
+control	I-Reagent
+:	O
+untreated	B-Modifier
+,	O
 Positive	B-Reagent
-control:	I-Reagent
+control	I-Reagent
+:	O
 treated	B-Modifier
 with	I-Modifier
-stimuli 
-	I-Modifier
+stimuli	I-Modifier
 
 -Incubate	B-Action
 the	O
@@ -141,14 +157,15 @@ cells	B-Reagent
 with	O
 the	O
 appropriate	B-Reagent
-stimuli,	I-Reagent
+stimuli	I-Reagent
+,	O
 at	O
 the	O
 suitable	B-Temperature
 temperature	I-Temperature
 and	O
-time.
-	B-Time
+time	B-Time
+.	O
 
 Fix	B-Action
 the	O
@@ -162,15 +179,16 @@ pre-warmed	B-Modifier
 X	I-Concentration
 RBC	B-Reagent
 Lysis/Fixation	I-Reagent
-Solution.
-	I-Reagent
+Solution	I-Reagent
+.	O
 
 Gently	B-Modifier
 pipette	B-Action
 to	O
 ensure	O
 thorough	B-Modifier
-mixing.	B-Action
+mixing	B-Action
+.	O
 
 Incubate	B-Action
 at	O
@@ -183,7 +201,8 @@ ensure	O
 cells	B-Reagent
 are	O
 properly	O
-fixed.	B-Action
+fixed	B-Action
+.	O
 
 Centrifuge	B-Action
 cells	B-Reagent
@@ -196,14 +215,17 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 decant	B-Action
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 vortex	B-Action
 to	O
 resuspend	B-Action
 cell	B-Reagent
-pellet.	I-Reagent
+pellet	I-Reagent
+.	O
 
 Add	B-Action
 sufficient	B-Amount
@@ -214,7 +236,8 @@ to	O
 wash	B-Action
 the	O
 cells	B-Reagent
-(approximately	B-Modifier
+(	O
+approximately	B-Modifier
 2	B-Amount
 ml	I-Amount
 for	O
@@ -222,13 +245,19 @@ each	O
 1	B-Numerical
 x	I-Numerical
 106	I-Numerical
-cells,	B-Reagent
-BioLegend	I-Reagent
+cells	B-Reagent
+,	O
+BioLegend	B-Reagent
 Cell	I-Reagent
 Staining	I-Reagent
 Buffer	I-Reagent
-recommended,	O
-Cat#420201),	O
+recommended	O
+,	O
+Cat	O
+#	O
+420201	O
+)	O
+,	O
 centrifuge	B-Action
 at	O
 350	B-Speed
@@ -239,19 +268,22 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 and	O
 decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
-Repeat,	B-Action
+Repeat	B-Action
+,	O
 for	O
 a	O
 total	O
 of	O
 two	B-Numerical
-washes.	B-Action
+washes	B-Action
+.	O
 
 Gently	B-Modifier
 pipette	B-Action
@@ -262,27 +294,31 @@ volume	I-Reagent
 to	O
 resuspend	B-Action
 cell	B-Reagent
-pellet.	I-Reagent
+pellet	I-Reagent
+.	O
 
 While	O
-vortexing,	B-Action
-permeabilize	I-Action
+vortexing	B-Action
+,	O
+permeabilize	B-Action
 cells	B-Reagent
 by	O
 adding	B-Action
 pre-chilled	B-Modifier
 True-Phos™	B-Reagent
 Perm	I-Reagent
-Buffer. 
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
-Example:	O
+Example	O
+:	O
 for	O
 1	B-Amount
 mL	I-Amount
 of	O
 whole	B-Reagent
-blood,	I-Reagent
+blood	I-Reagent
+,	O
 permeabilize	B-Action
 with	O
 10	B-Amount
@@ -291,7 +327,8 @@ of	O
 pre-chilled	B-Modifier
 True-Phos™	B-Reagent
 Perm	I-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -304,7 +341,8 @@ ensure	O
 cells	B-Reagent
 are	O
 properly	O
-permeabilized.	B-Action
+permeabilized	B-Action
+.	O
 
 Centrifuge	B-Action
 cells	B-Reagent
@@ -317,14 +355,17 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 decant	B-Action
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 vortex	B-Action
 to	O
 resuspend	B-Action
 cell	B-Reagent
-pellet.	I-Reagent
+pellet	I-Reagent
+.	O
 
 Add	B-Action
 sufficient	B-Amount
@@ -334,7 +375,8 @@ Buffer	I-Reagent
 to	O
 wash	B-Action
 the	O
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 centrifuge	B-Action
 cells	B-Reagent
 at	O
@@ -346,18 +388,21 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
-Repeat,	B-Action
+Repeat	B-Action
+,	O
 for	O
 a	O
 total	O
 of	O
 two	B-Numerical
-washes.	B-Action
+washes	B-Action
+.	O
 
 Resuspend	B-Action
 the	O
@@ -375,10 +420,11 @@ the	O
 starting	O
 volume	B-Measure-Type
 of	O
-blood. 
-	B-Reagent
+blood	B-Reagent
+.	O
 
-Example:	O
+Example	O
+:	O
 if	O
 starting	O
 volume	B-Measure-Type
@@ -387,7 +433,8 @@ whole	B-Reagent
 blood	I-Reagent
 was	O
 1	B-Amount
-mL,	I-Amount
+mL	I-Amount
+,	O
 resuspend	B-Action
 cell	B-Reagent
 pellet	I-Reagent
@@ -397,7 +444,8 @@ mL	I-Amount
 of	O
 Cell	B-Reagent
 Staining	I-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Transfer	B-Action
 100	B-Reagent
@@ -408,17 +456,23 @@ a	O
 x	I-Size
 75	I-Size
 mm	I-Size
-tube.	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 antibody	B-Reagent
-cocktail(s)	I-Reagent
+cocktail	I-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
 to	O
 appropriate	B-Location
-tubes,	I-Location
+tubes	I-Location
+,	O
 vortex	B-Action
 to	O
-mix,	B-Action
+mix	B-Action
+,	O
 and	O
 incubate	B-Action
 for	O
@@ -429,7 +483,8 @@ room	B-Temperature
 temperature	I-Temperature
 in	O
 the	O
-dark.	O
+dark	O
+.	O
 
 Add	B-Action
 2	B-Amount
@@ -437,7 +492,8 @@ mL	I-Amount
 of	O
 Cell	B-Reagent
 Staining	I-Reagent
-Buffer,	I-Reagent
+Buffer	I-Reagent
+,	O
 centrifuge	B-Action
 cells	B-Reagent
 at	O
@@ -449,18 +505,21 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
-Repeat,	B-Action
+Repeat	B-Action
+,	O
 for	O
 a	O
 total	O
 of	O
 two	B-Numerical
-washes.	B-Action
+washes	B-Action
+.	O
 
 Resuspend	B-Action
 cells	B-Reagent
@@ -477,8 +536,7 @@ analyze	B-Action
 with	O
 a	O
 flow	B-Device
-cytometer
-	I-Device
+cytometer	I-Device
 
 
 

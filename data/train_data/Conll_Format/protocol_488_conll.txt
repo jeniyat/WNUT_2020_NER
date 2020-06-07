@@ -4,8 +4,7 @@ of	O
 Bacterial	B-Reagent
 Colonies	I-Reagent
 X-Gal/IPTG	I-Reagent
-Plates
-	I-Reagent
+Plates	I-Reagent
 
 Cool	B-Action
 autoclaved	B-Modifier
@@ -13,39 +12,48 @@ growth	B-Reagent
 media	I-Reagent
 agar	I-Reagent
 to	O
-50°C.
-	B-Temperature
+50°C	B-Temperature
+.	O
 
 Add	B-Action
 10	B-Amount
 µl	I-Amount
 X-Gal	B-Reagent
 Solution	I-Reagent
-(20	B-Concentration
-mg/ml)	I-Concentration
+(	O
+20	B-Concentration
+mg/ml	I-Concentration
+)	O
 per	B-Modifier
 1	B-Amount
 mL	I-Amount
 of	O
-Media(or	B-Reagent
+Media	B-Reagent
+(	O
+or	O
 2	B-Amount
 µl	I-Amount
 X-Gal	B-Reagent
 Solution	I-Reagent
-(100	B-Concentration
-mg/ml)	I-Concentration
+(	O
+100	B-Concentration
+mg/ml	I-Concentration
+)	O
 per	B-Modifier
 1	B-Amount
 mL	I-Amount
 of	O
-Media).
-	B-Reagent
+Media	B-Reagent
+)	O
+.	O
 
 Add	B-Action
 10	B-Amount
 µl	I-Amount
 IPTG	B-Reagent
-(100mM)	B-Concentration
+(	O
+100mM	B-Concentration
+)	O
 per	B-Modifier
 1	B-Amount
 mL	I-Amount
@@ -56,19 +64,24 @@ a	O
 final	B-Modifier
 concentration	B-Measure-Type
 of	O
-1mM.
-	B-Concentration
+1mM	B-Concentration
+.	O
 
 Add	B-Action
 screening	B-Modifier
 antibiotic	B-Reagent
 of	I-Reagent
 choice	I-Reagent
-(Ampicillin,	I-Reagent
-Kanamycin,	I-Reagent
-Carbenicillin,	I-Reagent
-etc).
-	O
+(	O
+Ampicillin	B-Reagent
+,	O
+Kanamycin	B-Reagent
+,	O
+Carbenicillin	B-Reagent
+,	O
+etc	O
+)	O
+.	O
 
 Pour	B-Action
 plates	B-Location
@@ -79,24 +92,27 @@ cool	B-Action
 to	O
 room	B-Temperature
 temperature	I-Temperature
-(usually	O
+(	O
+usually	O
 at	B-Modifier
 least	I-Modifier
 30	B-Time
-minutes)	I-Time
+minutes	I-Time
+)	O
 before	B-Modifier
-use.
-	I-Modifier
+use	I-Modifier
+.	O
 
 Spread	B-Action
 transformed	B-Modifier
 competent	B-Reagent
 cells	I-Reagent
 as	B-Method
-desired.
-	I-Method
+desired	I-Method
+.	O
 
-Note:	O
+Note	O
+:	O
 Blue/White	B-Modifier
 Selection	B-Location
 plates	I-Location
@@ -113,25 +129,29 @@ at	O
 4°C	B-Temperature
 in	O
 clear	B-Modifier
-sleeves,	B-Location
+sleeves	B-Location
+,	O
 but	O
 may	O
-be stored	B-Action
-in	O
+be	O
+stored	B-Action
+in	I-Action
 the	B-Modifier
 dark	I-Modifier
-(or	O
+(	I-Modifier
+or	O
 a	O
 dark	B-Modifier
-sleeve)	B-Location
+sleeve	I-Modifier
+)	B-Location
 at	O
 4°C	B-Temperature
-for	O
-up	B-Time
-to	I-Time
+for	I-Temperature
+up	O
+to	B-Time
 1	I-Time
-month.
-	I-Time
+month	I-Time
+.	I-Time
 
 
 

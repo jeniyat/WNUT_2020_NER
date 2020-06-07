@@ -3,8 +3,7 @@ of	O
 DNA	B-Reagent
 from	O
 phage	B-Reagent
-lysate
-	I-Reagent
+lysate	I-Reagent
 
 Put	B-Action
 phage	B-Reagent
@@ -12,30 +11,37 @@ lysate	I-Reagent
 in	O
 plastic	B-Location
 centrifuge	I-Location
-bottle and	I-Location
+bottle	I-Location
+and	O
 add	B-Action
-RNase	B-Reagent
-(for	O
+RNase	I-Action
+(	B-Reagent
+for	O
 100	B-Amount
 ml	I-Amount
-add	B-Action
-10	B-Amount
-µl,	I-Amount
+add	I-Amount
+10	B-Action
+µl	B-Amount
+,	I-Amount
 for	O
 150	B-Amount
 ml	I-Amount
-add	B-Action
-15	B-Amount
-µl,	I-Amount
-etc.)
-	O
+add	I-Amount
+15	B-Action
+µl	B-Amount
+,	I-Amount
+etc	O
+.	O
+)	O
 
 Incubate	B-Action
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 NaCl	B-Reagent
@@ -45,13 +51,16 @@ final	B-Modifier
 concentration	B-Measure-Type
 of	O
 1M	B-Concentration
-(for	O
+(	O
+for	O
 100	B-Amount
 ml	I-Amount
 add	B-Action
 6.5	B-Amount
 g	I-Amount
-NaCl).	B-Reagent
+NaCl	B-Reagent
+)	O
+.	O
 
 Incubate	B-Action
 for	O
@@ -62,38 +71,46 @@ ice	B-Location
 Centrifuge	B-Action
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 at	O
 11,000xg	B-Speed
-(8,300	I-Speed
+(	O
+8,300	B-Speed
 rpm	I-Speed
 on	O
 GSA	B-Device
-rotor).	I-Device
+rotor	I-Device
+)	O
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-bottle.	B-Location
+bottle	B-Location
+.	O
 
 Add	B-Action
 PEG	B-Reagent
 8000	I-Reagent
 at	O
 100g/l	B-Concentration
-(for	O
+(	O
+for	O
 100	B-Amount
 ml	I-Amount
 add	B-Action
 10	B-Amount
 g	I-Amount
-PEG)	B-Reagent
+PEG	B-Reagent
+)	O
 and	O
 shake	B-Action
 to	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Incubate	B-Action
 1	B-Time
@@ -103,14 +120,18 @@ ice	B-Location
 Centrifuge	B-Action
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 at	O
 10,000xg	B-Speed
-(7,835	I-Speed
+(	O
+7,835	B-Speed
 rpm	I-Speed
 on	O
 GSA	B-Device
-rotor).	I-Device
+rotor	I-Device
+)	O
+.	O
 
 Carefully	B-Modifier
 pour	B-Action
@@ -118,8 +139,8 @@ out	O
 the	O
 supernatant	B-Reagent
 to	O
-discard. 
-	B-Action
+discard	B-Action
+.	O
 
 Set	B-Action
 the	O
@@ -132,7 +153,8 @@ towels/Kimwipes	I-Location
 to	O
 drain	B-Action
 remaining	B-Modifier
-liquid.	B-Reagent
+liquid	B-Reagent
+.	O
 
 Rinse	B-Action
 the	O
@@ -144,11 +166,14 @@ twice	B-Numerical
 with	O
 SM	B-Reagent
 buffer	I-Reagent
-(total	O
+(	O
+total	O
 volume	B-Measure-Type
 of	O
 1-2	B-Amount
-ml).	I-Amount
+ml	I-Amount
+)	O
+.	O
 
 Collect	B-Action
 in	O
@@ -156,10 +181,13 @@ in	O
 ml	I-Amount
 microcentrifuge	B-Location
 tubes	I-Location
-(1	B-Amount
+(	O
+1	B-Amount
 ml	I-Amount
 per	O
-bottle).	B-Location
+bottle	B-Location
+)	O
+.	O
 
 Shake	B-Action
 resin	B-Reagent
@@ -169,7 +197,8 @@ and	O
 heat	B-Action
 TE	B-Reagent
 to	O
-80°C.	B-Temperature
+80°C	B-Temperature
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -179,11 +208,13 @@ to	O
 each	B-Modifier
 2	B-Amount
 ml	I-Amount
-tube. 	B-Location
+tube	B-Location
+.	O
 
 Mix	B-Action
 by	O
-inversion.	B-Method
+inversion	B-Method
+.	O
 
 Attach	B-Action
 column	B-Location
@@ -199,13 +230,15 @@ through	B-Modifier
 ml	I-Amount
 at	O
 a	O
-time. 	O
+time	O
+.	O
 
 Push	B-Action
 2	B-Amount
 ml	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 isopropanol	B-Reagent
 through	B-Modifier
 each	I-Modifier
@@ -214,7 +247,8 @@ column	B-Location
 ml	I-Amount
 at	O
 a	O
-time.	O
+time	O
+.	O
 
 Place	B-Action
 column	B-Location
@@ -222,7 +256,8 @@ in	O
 original	B-Modifier
 2	B-Amount
 ml	I-Amount
-tube.	B-Location
+tube	B-Location
+.	O
 
 Centrifuge	B-Action
 2	B-Time
@@ -232,7 +267,8 @@ at	O
 to	O
 remove	B-Action
 excess	B-Modifier
-isopropanol.	B-Reagent
+isopropanol	B-Reagent
+.	O
 
 Place	B-Action
 column	B-Location
@@ -241,7 +277,8 @@ new	B-Modifier
 1.5	B-Amount
 ml	I-Amount
 microcentrifuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 100	B-Amount
@@ -249,16 +286,19 @@ Add	B-Action
 warm	B-Modifier
 TE	B-Reagent
 to	O
-elute.	B-Action
+elute	B-Action
+.	O
 
 Briefly	B-Modifier
 vortex	B-Action
 Centrifuge	I-Action
 for	O
 30	B-Time
-sec.	I-Time
+sec	I-Time
+.	I-Time
 at	O
-10,000xg. 	B-Speed
+10,000xg	B-Speed
+.	O
 
 Check	B-Action
 concentration	B-Measure-Type
@@ -266,8 +306,8 @@ of	O
 isolated	B-Modifier
 DNA	B-Reagent
 using	O
-NanoDrop.
-	B-Device
+NanoDrop	B-Device
+.	O
 
 Use	B-Action
 Quant	B-Method
@@ -277,8 +317,7 @@ quantification	I-Method
 to	O
 validate	B-Action
 NanoDrop	B-Device
-readings
-	O
+readings	O
 
 
 

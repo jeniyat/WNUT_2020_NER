@@ -3,23 +3,22 @@ Isolation	B-Method
 from	O
 Viral-infected	B-Modifier
 Chlorella	B-Reagent
-NC64A
-	I-Reagent
+NC64A	I-Reagent
 
 Grow	B-Action
 NC64A	B-Reagent
 to	O
 mid-log	O
-phase.
-	O
+phase	O
+.	O
 
 Concentrate	B-Action
 to	O
 1	B-Concentration
 x	I-Concentration
 108	I-Concentration
-cells/ml.
-	I-Concentration
+cells/ml	I-Concentration
+.	O
 
 Use	B-Action
 30	B-Amount
@@ -29,15 +28,17 @@ cells	I-Reagent
 per	I-Reagent
 time	I-Reagent
 point	I-Reagent
-(3	B-Numerical
+(	O
+3	B-Numerical
 x	I-Numerical
 109	I-Numerical
 cells~91	B-Reagent
 mg	B-Amount
 cells	B-Reagent
 wet	B-Modifier
-weight).
-	B-Generic-Measure
+weight	B-Generic-Measure
+)	O
+.	O
 
 Infect	B-Action
 with	O
@@ -46,8 +47,8 @@ at	O
 m.o.i.=5	B-Measure-Type
 for	O
 appropriate	O
-time.
-	B-Measure-Type
+time	B-Measure-Type
+.	O
 
 Harvest	B-Action
 infected	B-Reagent
@@ -56,11 +57,13 @@ by	O
 centrifugation	B-Method
 at	O
 5000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 5	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Discard	B-Action
 supernatant	B-Reagent
@@ -70,8 +73,8 @@ freeze	I-Action
 pellet	B-Reagent
 in	O
 liquid	B-Reagent
-nitrogen.
-	I-Reagent
+nitrogen	I-Reagent
+.	O
 
 Store	B-Action
 at	O
@@ -82,8 +85,9 @@ to	O
 proceed	O
 to	O
 step	O
-#8.
-	O
+#	O
+8	O
+.	O
 
 Take	B-Action
 1	B-Numerical
@@ -96,14 +100,18 @@ freezer	B-Device
 at	O
 a	O
 time	O
-(keep	B-Action
+(	O
+keep	B-Action
 on	O
-ice),	B-Location
+ice	B-Location
+)	O
+,	O
 break	B-Action
 pellets	B-Reagent
 loose	O
 with	O
-spatula,	B-Device
+spatula	B-Device
+,	O
 and	O
 add	B-Action
 1	B-Amount
@@ -112,8 +120,8 @@ TRIZOL	B-Reagent
 reagent	I-Reagent
 to	O
 each	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Work	B-Action
 as	O
@@ -123,8 +131,8 @@ possible	O
 to	O
 prevent	B-Action
 RNA	B-Reagent
-degradation.
-	B-Method
+degradation	B-Method
+.	O
 
 Break	B-Action
 pellets	B-Reagent
@@ -132,15 +140,18 @@ up	O
 with	O
 spatula	B-Device
 and	O
-vortexing.
-	B-Method
+vortexing	B-Method
+.	O
 
 Pipet	B-Action
 into	O
 2	B-Amount
 ml	I-Amount
 microcentrifuge	B-Location
-tube(s)	I-Location
+tube	I-Location
+(	I-Location
+s	I-Location
+)	I-Location
 containing	O
 250	B-Amount
 mg	I-Amount
@@ -149,8 +160,8 @@ of	O
 mm	I-Size
 baked	B-Modifier
 glass	B-Reagent
-beads.
-	I-Reagent
+beads	I-Reagent
+.	O
 
 Immediately	B-Modifier
 vortex	B-Action
@@ -158,24 +169,26 @@ at	O
 highest	B-Speed
 speed	I-Speed
 5	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Place	B-Action
 at	O
 -80°C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Repeat	O
 steps	O
-#8-12	O
+#	O
+8-12	O
 for	O
 the	O
 remaining	O
-samples.
-	B-Reagent
+samples	B-Reagent
+.	O
 
 Thaw	B-Action
 samples	B-Reagent
@@ -183,39 +196,43 @@ and	O
 vortex	B-Action
 another	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 250	B-Amount
 µl	I-Amount
 chloroform	B-Reagent
 to	O
-samples,	B-Reagent
+samples	B-Reagent
+,	O
 then	O
 vortex	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Let	O
 stand	B-Action
 at	O
 room	B-Temperature
-temp.	I-Temperature
+temp	I-Temperature
+.	O
 3	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Centrifuge	B-Action
 samples	B-Reagent
 at	O
 12,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 15	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Withdraw	B-Action
 the	O
@@ -228,55 +245,61 @@ deliver	B-Action
 to	O
 fresh	B-Modifier
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 500	B-Amount
 µl	I-Amount
-isopropanol.
-	B-Reagent
+isopropanol	B-Reagent
+.	O
 
 Let	O
 stand	B-Action
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 at	O
 room	B-Temperature
-temp.
-	I-Temperature
+temp	I-Temperature
+.	O
 
 Centrifuge	B-Action
 at	O
 12,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 10	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 pellet	B-Reagent
 with	O
-75%	B-Concentration
+75	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 with	O
-vortexing.
-	B-Action
+vortexing	B-Action
+.	O
 
 Centrifuge	B-Action
 12,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	I-Speed
 5	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Dry	B-Action
 pellets	B-Reagent
@@ -284,14 +307,14 @@ in	O
 vacuum	B-Device
 dessicator	I-Device
 5-10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 DO	O
 NOT	O
 DRY	B-Action
-COMPLETELY.
-	B-Modifier
+COMPLETELY	B-Modifier
+.	O
 
 DNAse	B-Action
 each	O
@@ -303,90 +326,105 @@ pellet	B-Reagent
 in	O
 250	B-Amount
 µl	I-Amount
-dd-H20.
-	B-Reagent
+dd-H20	B-Reagent
+.	O
 
 Add	B-Action
 250	B-Amount
 µl	I-Amount
 of	O
 2X	B-Concentration
-MOPS,	B-Reagent
+MOPS	B-Reagent
+,	O
 20mM	B-Concentration
 MgCl2	B-Reagent
-(2X),	B-Concentration
+(	O
+2X	B-Concentration
+)	O
+,	O
 and	O
 100-200	B-Amount
 U	O
 RNAse-free	B-Reagent
 DNAse	I-Reagent
-I.	I-Reagent
+I	I-Reagent
+.	O
 
 Incubate	B-Action
 1-2	B-Time
 h	I-Time
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Extract	B-Action
 with	O
 equal	O
 volume	B-Measure-Type
 of	O
-phenol:chloroform	B-Reagent
-(500	B-Amount
-µl).
-	I-Amount
+phenol	B-Reagent
+:	I-Reagent
+chloroform	I-Reagent
+(	O
+500	B-Amount
+µl	I-Amount
+)	O
+.	O
 
 Centrifuge	B-Action
 at	O
 12,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 5	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Withdraw	B-Action
 aqueous	B-Reagent
-phase,	I-Reagent
+phase	I-Reagent
+,	O
 add	B-Action
 NaOAc	B-Reagent
 to	O
 0.3	B-Concentration
-M.	I-Concentration
-	O
-	O
+M	I-Concentration
+.	O
 
 Add	B-Action
 1	B-Amount
 ml	I-Amount
-isopropanol.
-	B-Reagent
+isopropanol	B-Reagent
+.	O
 
 Let	O
 stand	B-Action
 10	B-Time
-min.,	I-Time
+min.	I-Time
+,	O
 room	B-Temperature
-temp.
-	I-Temperature
+temp	I-Temperature
+.	O
 
 Centrifuge	B-Action
 up	B-Modifier
-to 12,000	I-Modifier
+to	I-Modifier
+12,000	I-Modifier
 x	B-Speed
-g,	I-Speed
-10	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+g	I-Speed
+,	I-Speed
+10	O
+min.	B-Time
+,	O
+4°C	B-Temperature
+.	I-Temperature
 
 Discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 pellet	B-Reagent
@@ -395,17 +433,19 @@ with	O
 %	I-Concentration
 EtOH	B-Reagent
 with	O
-vortexing.
-	B-Action
+vortexing	B-Action
+.	O
 
 Centrifuge	B-Action
 12,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 5	B-Time
-min.,	I-Time
-4°C.
-	B-Temperature
+min.	I-Time
+,	O
+4°C	B-Temperature
+.	O
 
 Dry	B-Action
 pellets	B-Reagent
@@ -413,22 +453,22 @@ in	O
 vacuum	B-Device
 dessicator	I-Device
 5-10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Do	O
 not	O
 dry	B-Action
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Resuspend	B-Action
 pellets	B-Reagent
 in	O
 40-50	B-Amount
 µl	I-Amount
-water.
-	B-Reagent
+water	B-Reagent
+.	O
 
 
 

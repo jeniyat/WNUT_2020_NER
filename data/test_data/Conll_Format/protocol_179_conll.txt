@@ -3,8 +3,7 @@ RNA	I-Method
 FISH	I-Method
 Protocol	O
 for	O
-Brain
-	B-Reagent
+Brain	B-Reagent
 
 Thaw	B-Action
 the	O
@@ -13,15 +12,16 @@ tissue	I-Reagent
 section	O
 to	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 Immerse	B-Action
 the	O
 slide	B-Location
 in	O
 cold	B-Modifier
-4%	B-Concentration
+4	B-Concentration
+%	I-Concentration
 E.M.	B-Reagent
 grade	I-Reagent
 paraformaldehyde	I-Reagent
@@ -30,8 +30,8 @@ in	O
 PBS	B-Reagent
 for	O
 15	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	I-Time
 
 Wash	B-Action
 with	O
@@ -39,8 +39,8 @@ with	O
 PBS	B-Reagent
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Wash	B-Action
 twice	B-Numerical
@@ -49,16 +49,16 @@ with	O
 PBS	B-Reagent
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Dip	B-Action
 the	O
 slide	B-Location
 in	O
 nuclease-free	B-Reagent
-water.
-	I-Reagent
+water	I-Reagent
+.	O
 
 Dip	B-Action
 the	O
@@ -66,8 +66,8 @@ slide	B-Location
 in	O
 1X	B-Concentration
 TEA	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Immerse	B-Action
 the	O
@@ -81,8 +81,10 @@ Anhydride	I-Reagent
 for	O
 10	B-Time
 minutes	I-Time
-(Stirring!)
-	O
+(	O
+Stirring	O
+!	O
+)	O
 
 ***	O
 Immerse	B-Action
@@ -93,41 +95,44 @@ in	O
 SSC	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 the	O
 slide	B-Location
 in	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 the	O
 slide	B-Location
 in	O
-95%	B-Concentration
+95	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 the	O
 slide	B-Location
 in	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 the	O
@@ -136,30 +141,32 @@ in	O
 Chloroform	B-Reagent
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 3Immerse	B-Action
 the	O
 slide	B-Location
 in	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 the	O
 slide	B-Location
 in	O
-95%	B-Concentration
+95	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Let	O
 air	B-Action
@@ -167,18 +174,21 @@ dry	I-Action
 for	O
 90+	B-Time
 minutes	I-Time
-(but	O
+(	O
+but	O
 no	B-Modifier
 longer	I-Modifier
 than	I-Modifier
 4	B-Time
-hours).
-	I-Time
+hours	I-Time
+)	O
+.	O
 
 If	O
 frozen	B-Modifier
 before	O
-using,	O
+using	O
+,	O
 warm	B-Action
 the	O
 reconstituted	B-Modifier
@@ -186,23 +196,25 @@ probe	B-Reagent
 solution	I-Reagent
 to	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-vortexing,	B-Method
+vortexing	B-Method
+,	O
 then	O
 centrifuge	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 To	O
 prepare	B-Action
 the	O
 hybridization	B-Reagent
-solution,	I-Reagent
+solution	I-Reagent
+,	O
 add	B-Action
 4.0	B-Amount
 μL	I-Amount
@@ -215,13 +227,14 @@ to	O
 μL	I-Amount
 of	O
 hybridization	B-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 and	O
 then	O
 vortex	B-Action
 and	O
-centrifuge.
-	B-Action
+centrifuge	B-Action
+.	O
 
 This	B-Mention
 creates	O
@@ -231,8 +244,8 @@ probe	B-Reagent
 solution	I-Reagent
 of	O
 250	B-Concentration
-nM.
-	I-Concentration
+nM	I-Concentration
+.	O
 
 This	O
 solution	B-Reagent
@@ -241,18 +254,20 @@ be	O
 used	O
 on	O
 step	O
-18.
-	O
+18	O
+.	O
 
 Assemble	B-Action
 a	O
 humidified	B-Device
-chamber:	I-Device
+chamber	I-Device
+:	O
 150	B-Size
 mm	I-Size
 tissue	B-Location
 culture	I-Location
-plate;	I-Location
+plate	I-Location
+;	O
 a	O
 single	B-Numerical
 water-saturated	B-Location
@@ -263,8 +278,8 @@ alongside	B-Modifier
 the	O
 inner	B-Location
 chamber	I-Location
-edge.
-	I-Location
+edge	I-Location
+.	O
 
 This	O
 chamber	B-Location
@@ -279,8 +294,8 @@ solution	I-Reagent
 from	O
 the	O
 tissue	B-Reagent
-section.
-	I-Reagent
+section	I-Reagent
+.	O
 
 After	O
 slide	B-Location
@@ -288,7 +303,8 @@ has	O
 dried	B-Action
 for	O
 90+	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 dispense	B-Action
 200	B-Amount
 μL	I-Amount
@@ -303,8 +319,8 @@ tissue	B-Reagent
 sections	I-Reagent
 of	O
 the	O
-slide.
-	B-Location
+slide	B-Location
+.	O
 
 Carefully	B-Modifier
 place	B-Action
@@ -334,8 +350,8 @@ distribution	B-Action
 of	O
 the	O
 hybridization	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Place	B-Action
 the	O
@@ -343,19 +359,21 @@ slide	B-Location
 in	O
 the	O
 humidified	B-Device
-chamber,	I-Device
+chamber	I-Device
+,	O
 cover	B-Action
 with	O
 the	O
 tissue	B-Seal
 culture	I-Seal
-lid,	I-Seal
+lid	I-Seal
+,	O
 and	O
 seal	B-Action
 chamber	B-Device
 with	O
-parafilm.
-	B-Seal
+parafilm	B-Seal
+.	O
 
 Incubate	B-Action
 in	O
@@ -369,15 +387,17 @@ at	B-Modifier
 least	I-Modifier
 4	B-Time
 hours	I-Time
-(incubation	B-Method
+(	O
+incubation	B-Method
 can	O
 be	O
 continued	O
 up	B-Modifier
 to	I-Modifier
 16	B-Time
-hours).
-	I-Time
+hours	I-Time
+)	O
+.	O
 
 Immerse	B-Action
 the	O
@@ -385,7 +405,8 @@ slide	B-Location
 in	O
 wash	B-Reagent
 buffer	I-Reagent
-A,	I-Reagent
+A	I-Reagent
+,	O
 and	O
 allow	B-Action
 the	O
@@ -396,8 +417,8 @@ slide	B-Action
 off	I-Action
 the	O
 tissue	B-Reagent
-section.
-	I-Reagent
+section	I-Reagent
+.	O
 
 Gentle	B-Modifier
 agitation	B-Method
@@ -406,8 +427,8 @@ required	O
 to	O
 remove	B-Action
 the	O
-coverglass.
-	B-Location
+coverglass	B-Location
+.	O
 
 Incubate	B-Action
 in	O
@@ -418,31 +439,34 @@ at	O
 °C	I-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Decant	B-Action
 wash	B-Reagent
 buffer	I-Reagent
-A,	I-Reagent
+A	I-Reagent
+,	O
 and	O
 then	O
 add	B-Action
 DAPI	B-Reagent
 nuclear	I-Reagent
 stain	I-Reagent
-(wash	I-Reagent
+(	O
+wash	B-Reagent
 buffer	I-Reagent
 consisting	O
 of	O
 5	B-Concentration
 ng/mL	I-Concentration
-DAPI)	B-Reagent
+DAPI	B-Reagent
+)	O
 to	O
 counterstain	B-Action
 the	O
-nuclei.
-	B-Reagent
+nuclei	B-Reagent
+.	O
 
 Incubate	B-Action
 in	O
@@ -453,13 +477,14 @@ at	O
 °C	I-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Decant	B-Action
 DAPI	B-Reagent
 staining	I-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 and	O
 then	O
 immerse	B-Action
@@ -470,55 +495,60 @@ Buffer	I-Reagent
 B	I-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 slide	B-Location
 in	O
-50%	B-Concentration
+50	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 slide	B-Location
 in	O
-85%	B-Concentration
+85	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Immerse	B-Action
 slide	B-Location
 in	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Let	O
 air	B-Action
 dry	I-Action
 for	O
 5-10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 a	O
 drop	B-Amount
 or	O
 two	B-Amount
-(approximately	B-Modifier
+(	O
+approximately	B-Modifier
 50-100	B-Amount
-μL)	I-Amount
+μL	I-Amount
+)	O
 of	O
 Prolong	B-Reagent
 Gold	I-Reagent
@@ -527,8 +557,8 @@ Mountant	I-Reagent
 onto	O
 the	O
 tissue	B-Reagent
-sections.
-	I-Reagent
+sections	I-Reagent
+.	O
 
 Cover	B-Action
 with	O
@@ -538,7 +568,8 @@ clean	B-Modifier
 x	I-Size
 60	I-Size
 mm	I-Size
-coverglass,	B-Seal
+coverglass	B-Seal
+,	O
 allowing	O
 the	O
 antifade	B-Reagent
@@ -548,22 +579,24 @@ evenly	B-Modifier
 across	O
 the	O
 tissue	B-Reagent
-sections.
-	I-Reagent
+sections	I-Reagent
+.	O
 
 Allow	O
 Prolong	B-Reagent
 Gold	I-Reagent
 to	O
 cure	B-Action
-overnight,	B-Time
+overnight	B-Time
+,	O
 in	O
 the	O
-dark,	B-Location
+dark	B-Location
+,	O
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Seal	B-Action
 the	O
@@ -572,20 +605,21 @@ perimeter	I-Location
 with	O
 clear	B-Modifier
 nail	B-Reagent
-polish,	I-Reagent
+polish	I-Reagent
+,	O
 and	O
 allow	O
 to	O
 dry	B-Action
 in	O
 the	O
-dark.
-	B-Location
+dark	B-Location
+.	O
 
 Proceed	B-Action
 to	O
-imaging.
-	B-Action
+imaging	B-Action
+.	O
 
 
 

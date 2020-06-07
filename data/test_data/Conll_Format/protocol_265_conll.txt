@@ -4,7 +4,11 @@ CRISPRa	B-Reagent
 and	O
 CRISPRi	B-Reagent
 libraries	I-Reagent
-(v1.0)Reference:	O
+(	O
+v1.0	O
+)	O
+Reference	O
+:	O
 Genome-Scale	B-Method
 CRISPR-Mediated	I-Method
 Control	I-Method
@@ -12,8 +16,7 @@ of	I-Method
 Gene	I-Method
 Repression	I-Method
 and	O
-A
-	O
+A	O
 
 Dilute	B-Action
 each	O
@@ -32,14 +35,17 @@ a	O
 Pre-chill	B-Action
 01	B-Size
 cm	I-Size
-cuvettes,	B-Location
+cuvettes	B-Location
+,	O
 megaX	B-Reagent
-cells,	I-Reagent
-10%	B-Concentration
+cells	I-Reagent
+,	O
+10	B-Concentration
+%	I-Concentration
 glycerol	B-Reagent
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Follow	B-Action
 the	O
@@ -55,7 +61,8 @@ DNA	I-Reagent
 and	O
 MegaX	B-Reagent
 competent	I-Reagent
-cells,	I-Reagent
+cells	I-Reagent
+,	O
 mix	B-Action
 gently	B-Modifier
 and	O
@@ -64,12 +71,13 @@ on	O
 ice	B-Location
 for	O
 30	B-Time
-min.	
-	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 pre-chilled	B-Modifier
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 glycerol	B-Reagent
 to	O
 the	O
@@ -79,7 +87,8 @@ for	O
 a	O
 final	B-Modifier
 75	B-Amount
-ul,	I-Amount
+ul	I-Amount
+,	O
 transfer	B-Action
 the	O
 mix	B-Reagent
@@ -88,30 +97,35 @@ a	O
 prechilled	B-Modifier
 01	B-Size
 cm	I-Size
-cuvette.	
-	B-Location
+cuvette	B-Location
+.	O
 
 Electroporate	B-Action
 at	O
 20	B-Generic-Measure
-kV,	I-Generic-Measure
-200	I-Generic-Measure
-ohms,	I-Generic-Measure
-25	I-Generic-Measure
+kV	I-Generic-Measure
+,	O
+200	B-Generic-Measure
+ohms	I-Generic-Measure
+,	O
+25	B-Generic-Measure
 uF	I-Generic-Measure
-(Gene	B-Device
+(	O
+Gene	B-Device
 Pulser	I-Device
-Xcell,	I-Device
-Bio-rad).	
-	O
+Xcell	I-Device
+,	O
+Bio-rad	O
+)	O
+.	O
 
 Transfer	B-Action
 cells	B-Reagent
 to	O
 a	O
 culture	B-Location
-tube.	
-	I-Location
+tube	I-Location
+.	O
 
 Use	B-Action
 1	B-Amount
@@ -120,8 +134,8 @@ pipettes	B-Location
 and	O
 gel	B-Location
 loading	I-Location
-tips.	
-	I-Location
+tips	I-Location
+.	O
 
 Wash	B-Action
 cells	B-Reagent
@@ -132,22 +146,28 @@ with	O
 ul	I-Amount
 SOC	B-Reagent
 twice	B-Numerical
-(total	O
+(	O
+total	O
 600	B-Amount
-ul).		
-	I-Amount
+ul	I-Amount
+)	O
+.	O
 
 Incubate	B-Action
 at	O
-37oC,	B-Temperature
+37oC	B-Temperature
+,	O
 250	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 15	B-Time
-hour.	I-Time
+hour	I-Time
+.	O
 
 Plate	B-Action
 the	O
-transformations.	B-Reagent
+transformations	B-Reagent
+.	O
 
 Plate	B-Action
 all	O
@@ -157,18 +177,20 @@ large	B-Modifier
 square	B-Location
 plate	I-Location
 per	O
-sub-library,	B-Reagent
+sub-library	B-Reagent
+,	O
 use	O
 autoclaved	B-Modifier
-beads.	
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 37oC	B-Temperature
 for	O
 18	B-Time
-hours.	I-Time
+hours	I-Time
+.	O
 
 Collect	B-Action
 all	O
@@ -180,24 +202,28 @@ do	O
 one	B-Numerical
 maxiprep	B-Method
 per	O
-plate,	B-Location
+plate	B-Location
+,	O
 elute	B-Action
 in	O
 500	B-Amount
 ul	I-Amount
-EB;	B-Reagent
+EB	B-Reagent
+;	O
 an	O
 ideal	O
 concentration	B-Measure-Type
 is	O
 about	O
 2~3	B-Concentration
-ug/ul.	I-Concentration
+ug/ul	I-Concentration
+.	O
 
 To	O
 sequence	B-Action
 the	O
-library,	B-Reagent
+library	B-Reagent
+,	O
 you	O
 can	O
 PCR	B-Method
@@ -207,24 +233,28 @@ region	I-Reagent
 with	O
 the	O
 following	O
-primers.	B-Reagent
+primers	B-Reagent
+.	O
 
 Pool	B-Action
 sub-libraries	B-Reagent
 proportionally	B-Modifier
-(based	O
+(	O
+based	O
 on	O
 the	O
 number	O
 of	O
-sgRNAs)	B-Reagent
+sgRNAs	B-Reagent
+)	O
 to	O
 have	O
 the	O
 CRISPRa	B-Reagent
 or	O
 CRISPRi	B-Reagent
-library,	I-Reagent
+library	I-Reagent
+,	O
 measure	B-Action
 the	O
 pooled	B-Modifier
@@ -236,8 +266,8 @@ to	O
 400	B-Concentration
 ng/ul	I-Concentration
 for	O
-PCR.	
-	B-Method
+PCR	B-Method
+.	O
 
 Run	B-Action
 3	B-Numerical
@@ -247,8 +277,8 @@ of	O
 ul	I-Amount
 PCR	B-Reagent
 reactions	I-Reagent
-library.
-	I-Reagent
+library	I-Reagent
+.	O
 
 
 

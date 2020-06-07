@@ -5,9 +5,11 @@ Monarch®	B-Device
 Plasmid	I-Device
 Miniprep	I-Device
 Kit	I-Device
-(NEB	O
-#T1010)
-	O
+(	O
+NEB	O
+#	O
+T1010	O
+)	O
 
 Pellet	B-Action
 1–5	B-Amount
@@ -22,12 +24,12 @@ x	I-Speed
 g	I-Speed
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
 pellet	B-Reagent
@@ -37,8 +39,10 @@ in	O
 Plasmid	B-Reagent
 Resuspension	I-Reagent
 Buffer	I-Reagent
-(B1).
-	O
+(	O
+B1	O
+)	O
+.	O
 
 Vortex	B-Action
 or	O
@@ -48,16 +52,16 @@ ensure	O
 cells	B-Reagent
 are	O
 completely	B-Modifier
-resuspended.
-	I-Modifier
+resuspended	I-Modifier
+.	O
 
 There	O
 should	O
 be	O
 no	O
 visible	B-Modifier
-clumps.
-	B-Reagent
+clumps	B-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -65,12 +69,16 @@ Add	B-Action
 Plasmid	B-Reagent
 Lysis	I-Reagent
 Buffer	I-Reagent
-(B2),	O
+(	O
+B2	O
+)	O
+,	O
 gently	B-Modifier
 invert	B-Action
 tube	B-Location
 5–6	B-Numerical
-times,	O
+times	O
+,	O
 and	O
 incubate	B-Action
 at	O
@@ -78,28 +86,29 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Color	O
 should	O
 change	O
 to	O
 dark	O
-pink,	O
+pink	O
+,	O
 and	O
 solution	B-Reagent
 will	O
 become	O
 transparent	B-Modifier
 and	O
-viscous.
-	B-Modifier
+viscous	B-Modifier
+.	O
 
 Do	O
 not	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Add	B-Action
 400	B-Amount
@@ -108,12 +117,16 @@ of	O
 Plasmid	B-Reagent
 Neutralization	I-Reagent
 Buffer	I-Reagent
-(B3),	O
+(	O
+B3	O
+)	O
+,	O
 gently	B-Modifier
 invert	B-Action
 tube	B-Location
 until	O
-neutralized,	O
+neutralized	O
+,	O
 and	O
 incubate	B-Action
 at	O
@@ -121,8 +134,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Sample	B-Reagent
 is	O
@@ -134,13 +147,13 @@ uniformly	B-Modifier
 yellow	I-Modifier
 and	O
 precipitate	B-Reagent
-forms.
-	B-Action
+forms	B-Action
+.	O
 
 Do	O
 not	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Centrifuge	B-Action
 lysate	B-Reagent
@@ -150,14 +163,16 @@ x	I-Speed
 g	I-Speed
 for	O
 2–5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 For	O
 culture	B-Reagent
 volumes	B-Measure-Type
->1	B-Modifier
-ml,	B-Amount
+>	B-Modifier
+1	B-Amount
+ml	I-Amount
+,	O
 we	O
 recommend	O
 a	O
@@ -171,18 +186,19 @@ RNA	B-Reagent
 removal	B-Method
 by	O
 RNase	B-Reagent
-A.
-	I-Reagent
+A	I-Reagent
+.	O
 
 Pellet	B-Reagent
 should	O
 be	O
-compact;	B-Modifier
+compact	B-Modifier
+;	O
 spin	B-Action
 longer	O
 if	O
-needed.
-	O
+needed	O
+.	O
 
 Carefully	B-Modifier
 transfer	B-Action
@@ -199,12 +215,12 @@ x	I-Speed
 g	I-Speed
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Discard	B-Action
-flow-through.
-	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Re-insert	B-Action
 column	B-Location
@@ -220,8 +236,8 @@ of	O
 Plasmid	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
-1.
-	O
+1	O
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -230,12 +246,13 @@ minute	I-Time
 at	O
 16,000	B-Speed
 x	I-Speed
-g. Discarding	I-Speed
-the	O
+g.	I-Speed
+Discarding	B-Action
+the	I-Action
 flow-through	B-Reagent
-is	O
-optional.
-	O
+is	I-Reagent
+optional	O
+.	O
 
 Add	B-Action
 400	B-Amount
@@ -253,18 +270,19 @@ x	I-Speed
 g	I-Speed
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Transfer	B-Action
 column	B-Location
 to	O
 a	O
 clean	B-Modifier
-1.5 ml	B-Amount
-microfuge	B-Location
-tube.
-	I-Location
+1.5	B-Amount
+ml	I-Amount
+microfuge	I-Amount
+tube	B-Location
+.	I-Location
 
 Use	O
 care	O
@@ -283,21 +301,22 @@ into	O
 contact	O
 with	O
 the	O
-flow-through.
-	B-Reagent
+flow-through	B-Reagent
+.	O
 
 If	O
 there	O
 is	O
 any	O
-doubt,	O
+doubt	O
+,	O
 re-spin	B-Action
 the	O
 column	B-Location
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Add	B-Action
 ≥	B-Modifier
@@ -311,13 +330,14 @@ the	O
 center	B-Location
 of	O
 the	O
-matrix.
-	B-Location
+matrix	B-Location
+.	O
 
 Wait	B-Action
 for	O
 1	B-Time
-minute,	I-Time
+minute	I-Time
+,	O
 then	O
 spin	B-Action
 for	O
@@ -330,13 +350,15 @@ g	I-Speed
 to	O
 elute	B-Action
 the	O
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 Nuclease-free	B-Reagent
 water	I-Reagent
-(pH	B-pH
-7–8.5)	I-pH
+(	O
+pH	B-pH
+7–8.5	I-pH
+)	O
 can	O
 also	O
 be	O
@@ -344,8 +366,8 @@ used	O
 to	O
 elute	B-Action
 the	O
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 
 

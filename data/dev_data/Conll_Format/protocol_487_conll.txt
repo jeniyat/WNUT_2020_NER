@@ -2,23 +2,31 @@ BetaMark™	B-Device
 x-42	I-Device
 ELISA	I-Device
 Kit	I-Device
-(Colorimetric)	B-Modifier
-Protocol
-	B-Method
+(	O
+Colorimetric	B-Modifier
+)	O
+Protocol	B-Method
 
 Label	B-Action
-(2)	B-Numerical
+(	O
+2	B-Numerical
+)	O
 1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
 intermediate	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 &	I-Location
-2.	I-Location
-(use	O
+2	I-Location
+.	O
+(	O
+use	O
 enclosed	B-Modifier
-tubes).	B-Location
+tubes	B-Location
+)	O
+.	O
 
 Add	B-Action
 990uL	B-Amount
@@ -28,10 +36,11 @@ diluent	I-Reagent
 to	O
 intermediate	B-Location
 tubes	I-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 &	I-Location
-2.
-	I-Location
+2	I-Location
+.	O
 
 Reconstitute	B-Action
 one	B-Numerical
@@ -44,61 +53,67 @@ with	O
 80uL	B-Amount
 of	O
 Standard	B-Reagent
-Diluent.
-	I-Reagent
+Diluent	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-inversion.
-	B-Method
+inversion	B-Method
+.	O
 
 Do	B-Action
 not	I-Action
-vortex.
-	I-Action
+vortex	I-Action
+.	I-Action
 
 Concentration	B-Concentration
 will	I-Concentration
 be	I-Concentration
-250ug/mL.
-	I-Concentration
+250ug/mL	I-Concentration
+.	O
 
 Incubate	B-Action
 30	B-Time
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
-Note:	O
+Note	O
+:	O
 During	B-Modifier
 30	I-Modifier
 minute	I-Modifier
-incubation;	I-Modifier
+incubation	I-Modifier
+;	O
 proceed	B-Action
 thru	O
 the	O
 next	B-Method
 3	I-Method
-sections.	I-Method
+sections	I-Method
+.	O
 
 After	B-Modifier
 30	B-Time
 minutes	I-Time
-incubation,	B-Method
+incubation	B-Method
+,	O
 mix	B-Action
 well	B-Modifier
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 do	B-Action
 not	I-Action
-vortex.
-	I-Action
+vortex	I-Action
+.	O
 
 Once	B-Modifier
-reconstituted,	I-Modifier
+reconstituted	I-Modifier
+,	O
 standard	B-Reagent
 must	O
 be	O
@@ -106,8 +121,8 @@ used	B-Action
 within	B-Time
 the	I-Time
 same	I-Time
-day.
-	I-Time
+day	I-Time
+.	O
 
 Add	B-Action
 10uL	B-Amount
@@ -126,22 +141,25 @@ diluent	I-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#1.
-	I-Location
+#	I-Location
+1	I-Location
+.	O
 
 Mixwell	B-Action
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 do	B-Action
 not	I-Action
-vortex.
-	I-Action
+vortex	I-Action
+.	O
 
 Remove	B-Action
 10ml	B-Amount
 from	O
 intermediate	B-Location
-#1	I-Location
+#	I-Location
+1	I-Location
 tube	I-Location
 and	O
 add	B-Action
@@ -152,18 +170,20 @@ standard	B-Reagent
 diluent	I-Reagent
 in	O
 intermediate	B-Location
-#2	I-Location
-tube.
-	I-Location
+#	I-Location
+2	I-Location
+tube	I-Location
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 do	B-Action
 not	I-Action
-vortex.
-	I-Action
+vortex	I-Action
+.	O
 
 The	O
 final	B-Modifier
@@ -173,11 +193,12 @@ standard	B-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 will	O
 be	O
-25ng/mL.
-	B-Concentration
+25ng/mL	B-Concentration
+.	O
 
 Label	B-Action
 a	O
@@ -185,9 +206,12 @@ a	O
 centrifuge	B-Location
 tube	I-Location
 as	O
-“1X	B-Location
+“	B-Location
+1X	I-Location
 Incubation	I-Location
-Buffer”.	I-Location
+Buffer	I-Location
+”	I-Location
+.	O
 
 Dilute	B-Action
 2X	B-Concentration
@@ -213,12 +237,15 @@ the	O
 50mL	B-Amount
 tube	B-Location
 labeled	B-Modifier
-“1X	I-Modifier
+“	I-Modifier
+1X	I-Modifier
 Incubation	I-Modifier
-Buffer”.
-	I-Modifier
+Buffer	I-Modifier
+”	I-Modifier
+.	I-Modifier
 
-*Note:	O
+*Note	O
+:	O
 Lab	B-Reagent
 grade	I-Reagent
 filtered	I-Reagent
@@ -226,21 +253,25 @@ water	I-Reagent
 such	O
 as	O
 injection	B-Modifier
-grade,	I-Modifier
-cell	I-Modifier
+grade	I-Modifier
+,	O
+cell	B-Modifier
 culture	I-Modifier
-grade,	I-Modifier
+grade	I-Modifier
+,	O
 Reverse	B-Method
 Osmosis	I-Method
 De-Ionization	I-Method
-(RODI).
-	I-Method
+(	O
+RODI	B-Method
+)	O
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-vortexing.
-	B-Action
+vortexing	B-Action
+.	O
 
 This	O
 will	O
@@ -251,17 +282,19 @@ the	O
 standard	B-Method
 curve	I-Method
 and	I-Method
-samples.
-	I-Method
+samples	I-Method
+.	O
 
 Label	B-Action
 a	O
 1L	B-Amount
 container	B-Location
-“1X	I-Location
+“	I-Location
+1X	I-Location
 Wash	I-Location
-buffer”.
-	I-Location
+buffer	I-Location
+”	I-Location
+.	O
 
 Dilute	B-Action
 5X	B-Concentration
@@ -270,8 +303,8 @@ buffer	I-Reagent
 to	O
 1X	B-Concentration
 for	O
-use.
-	O
+use	O
+.	O
 
 Mix	B-Action
 125mL	B-Amount
@@ -290,20 +323,25 @@ a	O
 total	B-Measure-Type
 volume	I-Measure-Type
 of	O
-625mL.
-	B-Amount
+625mL	B-Amount
+.	O
 
 Label	B-Action
-(8)	B-Numerical
+(	O
+8	B-Numerical
+)	O
 1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
-#1-8	B-Location
-(use	O
+#	B-Location
+1-8	I-Location
+(	O
+use	O
 enclosed	B-Modifier
-tubes).
-	B-Location
+tubes	B-Location
+)	O
+.	O
 
 Aliquot	B-Action
 240uL	B-Amount
@@ -312,11 +350,13 @@ the	O
 1X	B-Concentration
 incubation	B-Reagent
 buffer	I-Reagent
-(made	B-Modifier
+(	O
+made	B-Modifier
 previously	I-Modifier
 in	O
 step	O
-II)	O
+II	O
+)	O
 to	O
 each	B-Modifier
 of	O
@@ -324,23 +364,30 @@ the	O
 standard	B-Location
 curve	I-Location
 tubes	I-Location
-(#2-8)	I-Location
+(	I-Location
+#	I-Location
+2-8	I-Location
+)	I-Location
 and	O
 490mL	B-Amount
 to	O
 tube	B-Location
-#1	I-Location
-(standard	O
+#	I-Location
+1	I-Location
+(	O
+standard	O
 curve	O
 top	B-Location
-point).
-	I-Location
+point	I-Location
+)	O
+.	O
 
 Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	B-Location
-#2	I-Location
+#	I-Location
+2	I-Location
 and	O
 add	B-Action
 to	O
@@ -350,8 +397,10 @@ incubation	B-Reagent
 buffer	I-Reagent
 in	O
 tube	B-Location
-#1	I-Location
-(this	O
+#	I-Location
+1	I-Location
+(	O
+this	O
 will	O
 be	O
 the	O
@@ -360,22 +409,25 @@ point	I-Location
 of	O
 the	O
 standard	O
-curve,	O
+curve	O
+,	O
 final	B-Modifier
 concentration	B-Measure-Type
 will	O
 be	O
-250pg/mL).
-	B-Concentration
+250pg/mL	B-Concentration
+)	O
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 do	B-Action
 not	I-Action
-vortex.
-	I-Action
+vortex	I-Action
+.	O
 
 Continue	B-Action
 making	I-Action
@@ -397,8 +449,9 @@ of	O
 incubationbuffer	B-Reagent
 in	O
 tubes	B-Location
-#2-7.
-	I-Location
+#	I-Location
+2-7	I-Location
+.	I-Location
 
 Mix	B-Action
 well	B-Modifier
@@ -406,8 +459,8 @@ by	O
 inversion	B-Method
 between	B-Modifier
 each	I-Modifier
-dilution.
-	I-Modifier
+dilution	I-Modifier
+.	O
 
 Dilute	B-Action
 samples	B-Reagent
@@ -417,17 +470,18 @@ incubation	B-Reagent
 buffer	I-Reagent
 to	O
 2X	B-Concentration
-concentration.
-	I-Concentration
+concentration	I-Concentration
+.	O
 
 Mix	B-Action
 well	B-Reagent
 by	O
-inversion.
-	B-Method
+inversion	B-Method
+.	O
 
 For	O
-example,	O
+example	O
+,	O
 if	O
 the	O
 final	B-Modifier
@@ -435,7 +489,8 @@ sample	B-Reagent
 dilution	I-Reagent
 should	O
 be	O
-1:10,	B-Concentration
+1:10	B-Concentration
+,	O
 dilute	B-Action
 the	O
 sample	B-Reagent
@@ -443,8 +498,8 @@ sample	B-Reagent
 in	O
 1X	B-Concentration
 incubation	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 The	O
 sample	B-Reagent
@@ -462,18 +517,19 @@ final	B-Modifier
 dilution	B-Measure-Type
 factor	I-Measure-Type
 of	O
-1:10.
-	B-Numerical
+1:10	B-Numerical
+.	O
 
 Run	B-Action
 samples	B-Reagent
 in	O
 duplicate	B-Method
 or	I-Method
-triplicate.
-	I-Method
+triplicate	I-Method
+.	O
 
-Note:	O
+Note	O
+:	O
 All	B-Modifier
 sample	I-Modifier
 matrices	I-Modifier
@@ -482,8 +538,8 @@ perform	B-Action
 differently	B-Modifier
 in	O
 the	O
-kit.
-	B-Device
+kit	B-Device
+.	O
 
 It	O
 is	O
@@ -497,8 +553,8 @@ dilutionfor	B-Reagent
 your	B-Modifier
 particular	I-Modifier
 sample	I-Modifier
-type.
-	I-Modifier
+type	I-Modifier
+.	O
 
 It	O
 is	O
@@ -523,46 +579,51 @@ range	I-Modifier
 of	I-Modifier
 the	I-Modifier
 standard	I-Modifier
-curve.
-	I-Modifier
+curve	I-Modifier
+.	O
 
 For	O
 most	B-Modifier
 sample	O
-types,	O
+types	O
+,	O
 a	O
 good	B-Modifier
 starting	I-Modifier
 dilution	B-Method
 would	O
 be	O
-1:5-1:10.
-	B-Numerical
+1:5-1:10	B-Numerical
+.	O
 
 Due	O
 tothe	O
 format	B-Modifier
 of	O
 the	O
-assay,	B-Method
+assay	B-Method
+,	O
 samples	B-Reagent
 are	O
 not	B-Modifier
 able	I-Modifier
 to	I-Modifier
 run	I-Modifier
-neat.
-	I-Modifier
+neat	I-Modifier
+.	O
 
 Label	B-Action
 a	O
 15mL	B-Amount
 tube	B-Location
 as	O
-“Diluted	B-Location
+“	B-Location
+Diluted	I-Location
 HRP	I-Location
 Detection	I-Location
-Antibody”.	I-Location
+Antibody	I-Location
+”	I-Location
+.	O
 
 Add	B-Action
 6mL	B-Amount
@@ -574,10 +635,13 @@ to	O
 the	O
 tube	B-Location
 labeled	B-Modifier
-“Diluted	I-Modifier
+“	I-Modifier
+Diluted	I-Modifier
 HRP	I-Modifier
 Detection	I-Modifier
-Antibody”.	I-Modifier
+Antibody	I-Modifier
+”	I-Modifier
+.	O
 
 Add	B-Action
 6uL	B-Amount
@@ -589,14 +653,15 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-vortexing.	B-Action
+vortexing	B-Action
+.	O
 
 Remove	B-Action
 plate	B-Location
 from	O
 foil	B-Location
-pouch.
-	I-Location
+pouch	I-Location
+.	O
 
 Remove	B-Action
 extra	B-Modifier
@@ -612,8 +677,8 @@ pouch	I-Location
 at	O
 2-8°C	B-Temperature
 until	B-Modifier
-use.
-	I-Modifier
+use	I-Modifier
+.	O
 
 Add	B-Action
 300uL	B-Amount
@@ -622,10 +687,11 @@ well	B-Location
 of	O
 1X	B-Concentration
 Wash	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
-Note:	O
+Note	O
+:	O
 Use	O
 of	O
 automated	B-Device
@@ -633,7 +699,8 @@ plate	I-Device
 washer	I-Device
 is	O
 highly	B-Modifier
-recommended.	I-Modifier
+recommended	I-Modifier
+.	O
 
 Dump	B-Action
 out	I-Action
@@ -644,8 +711,8 @@ pat	B-Action
 dry	I-Action
 on	O
 paper	B-Location
-towels.
-	I-Location
+towels	I-Location
+.	O
 
 Add	B-Action
 50uL	B-Amount
@@ -658,8 +725,8 @@ plate	B-Location
 in	O
 duplicate	B-Method
 or	I-Method
-triplicate.
-	I-Method
+triplicate	I-Method
+.	O
 
 Follow	B-Action
 the	O
@@ -669,10 +736,11 @@ outlined	O
 in	O
 Table	O
 3	O
-below.
-	O
+below	O
+.	O
 
-Note:	O
+Note	O
+:	O
 Wells	B-Location
 E1-E3	I-Location
 contain	B-Action
@@ -681,8 +749,12 @@ zero	B-Reagent
 or	I-Reagent
 blank	I-Reagent
 sample	I-Reagent
-(Std	I-Reagent
-#8).	I-Reagent
+(	O
+Std	B-Reagent
+#	I-Reagent
+8	I-Reagent
+)	O
+.	O
 
 Add	B-Action
 50uL	B-Amount
@@ -695,8 +767,8 @@ plate	B-Location
 in	O
 duplicate	B-Method
 or	I-Method
-triplicate.
-	I-Method
+triplicate	I-Method
+.	O
 
 Add	B-Action
 50uL	B-Amount
@@ -709,15 +781,15 @@ detection	I-Reagent
 antibody	I-Reagent
 to	O
 all	B-Modifier
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Cover	B-Action
 plate	B-Location
 with	O
 plate	B-Seal
-sealer.
-	I-Seal
+sealer	I-Seal
+.	O
 
 Mix	B-Action
 the	O
@@ -729,16 +801,17 @@ plate	B-Device
 shaker	I-Device
 for	O
 one	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-2-8°C.
-	B-Temperature
+2-8°C	B-Temperature
+.	O
 
-NOTE:	O
+NOTE	O
+:	O
 Once	B-Modifier
 diluted	I-Modifier
 with	O
@@ -747,7 +820,8 @@ of	O
 diluted	B-Modifier
 HRP	B-Reagent
 detection	I-Reagent
-antibody,	I-Reagent
+antibody	I-Reagent
+,	O
 the	O
 final	B-Modifier
 standard	I-Modifier
@@ -757,8 +831,8 @@ will	O
 beoutlined	O
 in	O
 Table	O
-4.
-	O
+4	O
+.	O
 
 Please	O
 use	B-Action
@@ -768,8 +842,8 @@ to	O
 generate	B-Action
 your	O
 standard	B-Method
-curve.
-	I-Method
+curve	I-Method
+.	O
 
 Remove	B-Action
 plate	B-Location
@@ -780,8 +854,8 @@ dump	B-Action
 contents	B-Reagent
 if	B-Modifier
 washing	I-Modifier
-manually.
-	I-Modifier
+manually	I-Modifier
+.	O
 
 Wash	B-Action
 plate	B-Location
@@ -793,10 +867,11 @@ adding	B-Action
 wash	B-Reagent
 buffer	I-Reagent
 per	B-Modifier
-well.
-	B-Location
+well	B-Location
+.	O
 
-Note:	O
+Note	O
+:	O
 Use	O
 of	O
 automated	B-Device
@@ -809,10 +884,11 @@ Mix	B-Action
 chemiluminescent	B-Modifier
 substrates	B-Reagent
 for	O
-use: 
-	O
+use	O
+:	O
 
-i.	O
+i	O
+.	O
 Add	B-Action
 5.5mL	B-Amount
 of	O
@@ -822,10 +898,11 @@ to	O
 a	O
 50mL	B-Amount
 centrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
-ii.	O
+ii	O
+.	O
 Add	B-Action
 5.5mL	B-Amount
 of	O
@@ -836,8 +913,8 @@ the	O
 same	B-Modifier
 50mL	B-Amount
 centrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -846,7 +923,8 @@ vortexing	B-Action
 3	B-Numerical
 X	O
 2	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Add	B-Action
 100uL	B-Amount
@@ -854,10 +932,11 @@ of	O
 mixed	B-Reagent
 substrate	I-Reagent
 per	B-Modifier
-well.
-	B-Location
+well	B-Location
+.	O
 
-Notes:	O
+Notes	O
+:	O
 We	O
 recommend	O
 pouring	B-Action
@@ -871,8 +950,8 @@ a	O
 multi-channel	B-Device
 pipette	I-Device
 to	O
-dispense.
-	B-Action
+dispense	B-Action
+.	O
 
 If	B-Modifier
 reading	I-Modifier
@@ -884,7 +963,8 @@ one	B-Numerical
 plate	B-Location
 at	B-Modifier
 a	I-Modifier
-time,	I-Modifier
+time	I-Modifier
+,	O
 do	B-Action
 not	I-Action
 add	I-Action
@@ -895,8 +975,8 @@ plates	B-Location
 at	B-Modifier
 the	I-Modifier
 same	I-Modifier
-time.
-	I-Modifier
+time	I-Modifier
+.	O
 
 Add	B-Action
 substrate	B-Reagent
@@ -905,8 +985,8 @@ each	B-Modifier
 plate	B-Location
 immediately	B-Modifier
 before	I-Modifier
-reading.
-	I-Modifier
+reading	I-Modifier
+.	O
 
 Shake	B-Action
 plate	B-Location
@@ -925,13 +1005,13 @@ the	O
 luminometer	B-Device
 for	O
 15	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Read	B-Action
 plate	B-Location
-immediately.
-	B-Modifier
+immediately	B-Modifier
+.	O
 
 Plates	B-Location
 must	B-Modifier
@@ -942,10 +1022,11 @@ within	B-Time
 minutes	I-Time
 of	O
 adding	B-Action
-substrate.
-	B-Reagent
+substrate	B-Reagent
+.	O
 
-Notes:	O
+Notes	O
+:	O
 The	O
 recommended	B-Modifier
 luminometer	B-Method
@@ -961,8 +1042,8 @@ level	O
 for	O
 1	B-Numerical
 secondper	I-Numerical
-well.
-	B-Location
+well	B-Location
+.	O
 
 These	O
 settings	O
@@ -971,17 +1052,20 @@ vary	B-Action
 between	B-Modifier
 plate	I-Modifier
 reader	I-Modifier
-manufacturers,	I-Modifier
+manufacturers	I-Modifier
+,	O
 please	O
 consult	B-Action
 your	O
-owner’smanual	B-Method
+owner	B-Method
+’	I-Method
+smanual	I-Method
 prior	B-Modifier
 to	I-Modifier
 performing	I-Modifier
 this	I-Modifier
-assay.
-	I-Modifier
+assay	I-Modifier
+.	O
 
 See	O
 Biolegend.com	O
@@ -994,8 +1078,7 @@ for	I-Method
 BetaMark™	I-Method
 Beta	I-Method
 Amyloid	I-Method
-ELISA
-	I-Method
+ELISA	I-Method
 
 
 

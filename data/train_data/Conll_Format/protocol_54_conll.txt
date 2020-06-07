@@ -9,8 +9,7 @@ From	O
 Ethanol-	B-Modifier
 or	I-Modifier
 Formalin-Fixed	I-Modifier
-Tissue
-	B-Reagent
+Tissue	B-Reagent
 
 Blot	B-Action
 excess	B-Modifier
@@ -20,8 +19,8 @@ tissue	B-Reagent
 with	O
 clean	B-Modifier
 absorbent	B-Device
-paper.
-	I-Device
+paper	I-Device
+.	O
 
 Add	B-Action
 5-10mg	B-Amount
@@ -49,8 +48,8 @@ at	O
 55-65°C	B-Temperature
 to	O
 soften	B-Action
-tissue.
-	B-Reagent
+tissue	B-Reagent
+.	O
 
 Homogenize	B-Action
 the	O
@@ -64,11 +63,12 @@ a	I-Modifier
 homogenous	I-Modifier
 suspension	I-Modifier
 is	I-Modifier
-acquired,	I-Modifier
-approximately	I-Modifier
+acquired	I-Modifier
+,	O
+approximately	B-Modifier
 30-60	B-Numerical
-strokes.
-	B-Measure-Type
+strokes	B-Measure-Type
+.	O
 
 Incubate	B-Action
 the	O
@@ -77,22 +77,24 @@ at	O
 55-60°C	B-Temperature
 for	O
 15-60	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Do	B-Action
 not	I-Action
 heat	I-Action
 higher	B-Modifier
 than	I-Modifier
-60°C.
-	B-Temperature
+60°C	B-Temperature
+.	O
 
-OPTIONAL:	B-Modifier
+OPTIONAL	B-Modifier
+:	O
 For	O
 maximum	B-Modifier
 DNA	B-Measure-Type
-recovery,	I-Measure-Type
+recovery	I-Measure-Type
+,	O
 add	B-Action
 1µl	B-Amount
 Proteinase	B-Reagent
@@ -109,16 +111,16 @@ at	O
 60°C	B-Temperature
 for	O
 1-2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Invert	B-Action
 the	O
 tube	B-Location
 periodically	B-Modifier
 each	I-Modifier
-hour.
-	B-Time
+hour	B-Time
+.	O
 
 This	B-Method
 step	I-Method
@@ -132,8 +134,8 @@ and	O
 significantly	B-Modifier
 improve	B-Action
 the	O
-yield.
-	B-Measure-Type
+yield	B-Measure-Type
+.	O
 
 Allow	O
 the	O
@@ -142,8 +144,8 @@ to	O
 cool	B-Action
 to	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 200µl	B-Amount
@@ -155,8 +157,8 @@ inverting	B-Action
 the	O
 tube	B-Location
 several	B-Numerical
-times.
-	O
+times	O
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -174,8 +176,8 @@ to	O
 a	O
 clean	B-Modifier
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 50µl	B-Amount
@@ -190,8 +192,8 @@ invert	B-Action
 several	B-Numerical
 times	O
 to	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Incubate	B-Action
 the	O
@@ -200,8 +202,8 @@ for	O
 5-10	B-Time
 minutes	I-Time
 at	O
-60°C.
-	B-Temperature
+60°C	B-Temperature
+.	O
 
 Add	B-Action
 100µl	B-Amount
@@ -214,8 +216,8 @@ inverting	B-Action
 the	O
 tube	B-Location
 several	B-Numerical
-times.
-	O
+times	O
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -224,8 +226,8 @@ at	O
 14,000xg	B-Speed
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	I-Time
 
 Transfer	B-Action
 the	O
@@ -241,8 +243,8 @@ genomic	B-Reagent
 DNA	I-Reagent
 with	O
 500µl	B-Amount
-isopropanol.
-	B-Reagent
+isopropanol	B-Reagent
+.	O
 
 Invert	B-Action
 the	O
@@ -252,14 +254,16 @@ times	O
 to	O
 precipitate	B-Action
 the	O
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
-OPTIONAL:	B-Modifier
+OPTIONAL	B-Modifier
+:	O
 For	O
 increased	B-Modifier
 DNA	B-Reagent
-recovery,	O
+recovery	O
+,	O
 add	B-Action
 2µl	B-Amount
 Mussel	B-Reagent
@@ -267,8 +271,8 @@ Glycogen	I-Reagent
 as	O
 a	O
 DNA	B-Reagent
-carrier.
-	I-Reagent
+carrier	I-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -279,17 +283,18 @@ minutes	I-Time
 to	O
 pellet	B-Action
 genomic	B-Reagent
-DNA.
-	I-Reagent
+DNA	I-Reagent
+.	O
 
 Remove	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 700µl	B-Amount
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 the	O
@@ -302,16 +307,16 @@ to	O
 wash	B-Action
 the	O
 DNA	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Centrifuge	B-Action
 for	O
 1	B-Time
 minute	I-Time
 at	O
-14,000xg.
-	B-Speed
+14,000xg	B-Speed
+.	O
 
 Decant	B-Action
 or	O
@@ -338,8 +343,8 @@ excess	B-Modifier
 ethanol	B-Reagent
 to	O
 drain	B-Action
-away.
-	I-Action
+away	I-Action
+.	O
 
 Add	B-Action
 50µl	B-Amount
@@ -347,8 +352,8 @@ TE	B-Reagent
 Buffer	I-Reagent
 to	O
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -360,10 +365,11 @@ least	I-Modifier
 15	B-Time
 minutes	I-Time
 to	O
-rehydrate.
-	B-Action
+rehydrate	B-Action
+.	O
 
-OPTIONAL:	B-Modifier
+OPTIONAL	B-Modifier
+:	O
 1µl	B-Amount
 LongLife™	B-Reagent
 RNase	I-Reagent
@@ -377,13 +383,14 @@ be	O
 added	B-Action
 at	B-Modifier
 this	I-Modifier
-stage.
-	I-Modifier
+stage	I-Modifier
+.	O
 
 Store	B-Action
 DNA	B-Reagent
 at	O
-4°C,	B-Temperature
+4°C	B-Temperature
+,	O
 for	O
 long	B-Modifier
 term	I-Modifier
@@ -392,8 +399,8 @@ store	B-Action
 at	O
 -20°C	B-Temperature
 or	O
--80°C.
-	B-Temperature
+-80°C	B-Temperature
+.	O
 
 
 

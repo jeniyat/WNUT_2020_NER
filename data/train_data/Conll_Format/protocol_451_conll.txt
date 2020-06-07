@@ -1,14 +1,13 @@
 Gambierdiscus	B-Reagent
 Whole	I-Reagent
 Cell	I-Reagent
-Hybridization
-	B-Method
+Hybridization	B-Method
 
 Prepare	B-Action
 Prehybridization/	B-Reagent
 Hybridization	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 The	O
 Promega	B-Device
@@ -17,8 +16,8 @@ manifold	I-Device
 has	O
 a	O
 14-sample	B-Generic-Measure
-capacity.
-	I-Generic-Measure
+capacity	I-Generic-Measure
+.	O
 
 The	O
 following	O
@@ -27,8 +26,8 @@ prepares	B-Action
 buffer	B-Reagent
 for	O
 15	B-Numerical
-samples.
-	B-Reagent
+samples	B-Reagent
+.	O
 
 In	O
 a	O
@@ -37,9 +36,12 @@ mL	I-Amount
 centrifuge	B-Location
 tube	I-Location
 labeled	B-Action
-“prehybridization”	B-Method
+“	O
+prehybridization	B-Method
+”	I-Method
 buffer	I-Method
-add:	B-Action
+add	B-Action
+:	O
 20.4	B-Amount
 mL	I-Amount
 Milli-Q	B-Reagent
@@ -50,7 +52,8 @@ mL	I-Amount
 SET	B-Reagent
 300	B-Amount
 μL	I-Amount
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 IGEPAL	B-Reagent
 CA-630	I-Reagent
 300	B-Amount
@@ -59,50 +62,60 @@ Poly	B-Reagent
 A	I-Reagent
 10	B-Concentration
 mg/mL	I-Concentration
-(3-10	O
+(	O
+3-10	O
 freezer	B-Device
 in	O
 Styrofoam	B-Location
-box)	I-Location
+box	I-Location
+)	O
 3.0	B-Amount
 mL	I-Amount
 Formamide*	B-Reagent
-(in	O
+(	O
+in	O
 flammable	B-Modifier
 refrigerator/freezer	B-Device
 in	O
-3-30).	O
+3-30	O
+)	O
+.	O
 
 Prepare	B-Action
 hybridization	B-Reagent
-buffer:	I-Reagent
-Probe	I-Reagent
+buffer	I-Reagent
+:	O
+Probe	B-Reagent
 working	I-Reagent
 stock	I-Reagent
 concentration	B-Measure-Type
 =	O
 200	B-Concentration
-ng/μL.
-	I-Concentration
+ng/μL	I-Concentration
+.	O
 
 For	O
 each	O
-sample,	B-Reagent
+sample	B-Reagent
+,	O
 use	B-Action
 1	B-Amount
 mL	I-Amount
 buffer	B-Reagent
 +	O
-10 μL	B-Amount
-working	B-Reagent
-stock	I-Reagent
-probe.
-	I-Reagent
+10	B-Amount
+μL	I-Amount
+working	I-Amount
+stock	B-Reagent
+probe	I-Reagent
+.	I-Reagent
 
-Thus,	O
+Thus	O
+,	O
 for	O
 14	B-Numerical
-samples,	B-Reagent
+samples	B-Reagent
+,	O
 transfer	B-Action
 14	B-Amount
 mL	I-Amount
@@ -113,16 +126,21 @@ a	O
 mL	I-Amount
 tube	B-Location
 labeled	O
-“hybridization	B-Method
+“	O
+hybridization	B-Method
 buffer	I-Method
 and	O
 add	B-Action
-140 µL	B-Amount
-probe	B-Reagent
-(14	B-Generic-Measure
+140	B-Amount
+µL	I-Amount
+probe	I-Amount
+(	B-Reagent
+14	B-Generic-Measure
 x	I-Generic-Measure
-10 μL).
-	I-Generic-Measure
+10	I-Generic-Measure
+μL	I-Generic-Measure
+)	I-Generic-Measure
+.	I-Generic-Measure
 
 Prepare	B-Action
 0.2X	B-Concentration
@@ -131,10 +149,13 @@ Wash	I-Reagent
 For	O
 15	B-Numerical
 samples	B-Reagent
-(1	B-Amount
+(	O
+1	B-Amount
 mL	I-Amount
 per	O
-sample):	B-Reagent
+sample	B-Reagent
+)	O
+:	O
 120	B-Amount
 μL	I-Amount
 25X	B-Concentration
@@ -146,19 +167,27 @@ water	I-Reagent
 20ul	B-Amount
 of	O
 Calcifluor	B-Reagent
-(3-30	O
-fridge).	B-Device
+(	O
+3-30	O
+fridge	B-Device
+)	O
+.	O
 
 Place	B-Action
 Whatman	B-Device
 Cyclopore	I-Device
 filter	I-Device
-(5	B-Size
-μm,	I-Size
-25	I-Size
-mm),	I-Size
+(	O
+5	B-Size
+μm	I-Size
+,	O
+25	B-Size
+mm	I-Size
+)	O
+,	O
 shiny-side	B-Method
-up,	I-Method
+up	I-Method
+,	O
 on	O
 the	O
 filter	B-Location
@@ -168,28 +197,33 @@ with	O
 minimal	B-Modifier
 vacuum	B-Device
 applied	B-Action
-(2.5”	B-Generic-Measure
+(	O
+2.5	B-Generic-Measure
+”	I-Generic-Measure
 Hg	I-Generic-Measure
 =	O
 65	B-Generic-Measure
 mm	I-Generic-Measure
-Hg).
-	I-Generic-Measure
+Hg	I-Generic-Measure
+)	O
+.	O
 
 With	O
 continued	O
-vacuum,	B-Device
+vacuum	B-Device
+,	O
 wet	B-Action
 filter	B-Device
 with	O
-Milli-Q,	B-Reagent
+Milli-Q	B-Reagent
+,	O
 add	B-Action
 the	O
 o-ring	B-Location
 and	O
 the	O
-chimney.
-	B-Location
+chimney	B-Location
+.	O
 
 Tighten	B-Action
 by	O
@@ -199,14 +233,14 @@ base	B-Location
 of	O
 the	O
 filter	B-Location
-chimney!
-	I-Location
+chimney	I-Location
+!	O
 
 Discard	B-Action
 blue	B-Device
 backing	I-Device
-filter.
-	I-Device
+filter	I-Device
+.	O
 
 Label	B-Action
 the	O
@@ -215,21 +249,25 @@ with	O
 the	O
 appropriate	B-Modifier
 sample	B-Reagent
-information.
-	O
+information	O
+.	O
 
-Include:	O
+Include	O
+:	O
 Site	O
 ID	O
 and	O
-number,	O
+number	O
+,	O
 Sampling	B-Method
-Month and	O
+Month	O
+and	O
 Hybridization	B-Method
-Date.
-	O
+Date	I-Method
+.	O
 
-(Use	B-Action
+(	O
+Use	B-Action
 a	O
 sticky	B-Device
 label	I-Device
@@ -241,16 +279,19 @@ placed	B-Action
 onto	O
 a	O
 microscope	B-Location
-slide).
-	I-Location
+slide	I-Location
+)	O
+.	O
 
 Mix	B-Action
 sample	B-Reagent
 well	B-Modifier
-(inverting	B-Action
+(	O
+inverting	B-Action
 tube	B-Location
 ~6	B-Modifier
-times)	O
+times	O
+)	O
 and	O
 remove	B-Action
 an	O
@@ -262,33 +303,39 @@ place	B-Action
 onto	O
 the	O
 membrane	B-Reagent
-(record	B-Action
+(	O
+record	B-Action
 volume	B-Measure-Type
 to	O
 sample	B-Reagent
-used).
-	O
+used	O
+)	O
+.	O
 
 Filter	B-Action
 each	B-Modifier
 tower	B-Location
 to	O
 near	B-Modifier
-dryness.
-	I-Modifier
+dryness	I-Modifier
+.	O
 
 EMPTY	B-Action
 CONTENTS	B-Reagent
 OF	O
 FILTRATION	B-Device
 MANIFOLD	I-Device
-(THE	O
-“PIG”)	O
+(	O
+THE	O
+“	O
+PIG	O
+”	O
+)	O
 INTO	O
 METHANOL	B-Location
 WASTE	I-Location
-CARBOY!
-	I-Location
+CARBOY	I-Location
+!	O
 
 Add	B-Action
 1	B-Amount
@@ -297,8 +344,8 @@ prehybridization	B-Reagent
 buffer	I-Reagent
 to	O
 each	B-Modifier
-tower.
-	B-Location
+tower	B-Location
+.	O
 
 Prehybridize	B-Action
 the	O
@@ -308,16 +355,16 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Filter	B-Action
 each	B-Modifier
 sample	B-Reagent
 to	O
 near	B-Modifier
-dryness.
-	I-Modifier
+dryness	I-Modifier
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -327,8 +374,8 @@ buffer	I-Reagent
 containing	O
 the	O
 oligonucleotide	B-Reagent
-probe.
-	I-Reagent
+probe	I-Reagent
+.	O
 
 Cap	B-Action
 the	O
@@ -352,8 +399,8 @@ towel	I-Device
 to	O
 help	O
 minimize	B-Action
-evaporation.
-	B-Method
+evaporation	B-Method
+.	O
 
 Fold	B-Action
 over	I-Action
@@ -365,8 +412,8 @@ it	B-Mention
 with	O
 a	O
 binder	B-Device
-clip.
-	I-Device
+clip	I-Device
+.	O
 
 Place	B-Action
 the	O
@@ -390,33 +437,40 @@ hybridize	B-Action
 for	O
 an	O
 hour	B-Time
-at the	O
-probe's	B-Temperature
+at	O
+the	O
+probe	B-Temperature
+'s	I-Temperature
 hybridization	I-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 After	O
-incubation,	B-Method
+incubation	B-Method
+,	O
 filter	B-Action
 each	B-Modifier
 sample	B-Reagent
 to	O
 near	O
-dryness.
-	O
+dryness	O
+.	O
 
 Add	B-Action
 1.0	B-Amount
 mL	I-Amount
 0.2X	B-Concentration
 SET	B-Reagent
-(50˚C)	B-Temperature
+(	O
+50˚C	B-Temperature
+)	O
 to	O
 each	B-Modifier
 sample	B-Reagent
-(wash	B-Action
-step)	O
+(	O
+wash	B-Action
+step	O
+)	O
 and	O
 incubate	B-Action
 for	O
@@ -424,34 +478,38 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Filter	B-Action
 each	B-Modifier
 sample	B-Reagent
 to	O
 near	B-Modifier
-dryness.
-	I-Modifier
+dryness	I-Modifier
+.	O
 
 While	O
 the	O
 vacuum	B-Device
 is	O
-on,	O
+on	O
+,	O
 remove	B-Action
 the	O
 chimney	B-Location
-(loosen	B-Action
+(	O
+loosen	B-Action
 by	O
 only	O
 turning	B-Action
 base	O
 of	O
 filter	B-Device
-chimney!).
-	I-Device
+chimney	I-Device
+!	O
+)	O
+.	O
 
 Remove	B-Action
 the	O
@@ -469,7 +527,8 @@ microscope	B-Location
 slide	I-Location
 using	O
 forceps	B-Device
-(minimize	B-Action
+(	O
+minimize	B-Action
 the	O
 amount	O
 of	O
@@ -481,8 +540,9 @@ forceps	B-Device
 come	O
 into	O
 contact	O
-with).
-	O
+with	O
+)	O
+.	O
 
 Add	B-Action
 25-30	B-Amount
@@ -500,24 +560,24 @@ mount	B-Action
 with	O
 a	O
 cover	B-Device
-slip.
-	I-Device
+slip	I-Device
+.	O
 
 Add	B-Action
 the	O
 label	B-Location
 to	O
 the	O
-slide.
-	B-Location
+slide	B-Location
+.	O
 
 Store	B-Action
 prepared	B-Modifier
 slides	B-Location
 cold	B-Modifier
 and	O
-dark.
-	O
+dark	O
+.	O
 
 View	B-Action
 filters	B-Device
@@ -529,8 +589,8 @@ with	O
 the	O
 appropriate	B-Modifier
 filter	B-Device
-set.
-	I-Device
+set	I-Device
+.	O
 
 Counts	B-Action
 should	O
@@ -540,21 +600,25 @@ within	O
 1-2	B-Time
 days	I-Time
 of	O
-staining.
-	B-Action
+staining	B-Action
+.	O
 
 EMPTY	B-Action
 CONTENTS	B-Reagent
 OF	O
 FILTRATION	B-Device
 MANIFOLD	I-Device
-(THE	O
-“PIG”)	O
+(	O
+THE	O
+“	O
+PIG	O
+”	O
+)	O
 INTO	O
 FORMALIN	B-Location
 WASTE	I-Location
-CARBOY!
-	I-Location
+CARBOY	I-Location
+!	O
 
 
 

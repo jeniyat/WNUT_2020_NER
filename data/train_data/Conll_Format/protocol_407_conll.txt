@@ -8,28 +8,30 @@ nutrients	I-Reagent
 from	O
 phage	B-Reagent
 infection	I-Reagent
-experiments
-	O
+experiments	O
 
 At	O
 each	O
 time	B-Time
-point,	I-Time
+point	I-Time
+,	O
 collect	B-Action
 10ml	B-Amount
 from	O
-each experimental	B-Location
+each	O
+experimental	B-Location
 bottle/tube	I-Location
-into	O
+into	I-Location
 a	O
 15ml	B-Amount
-conical	B-Location
-tube,	I-Location
+conical	I-Amount
+tube	B-Location
+,	I-Location
 using	O
 a	O
 serological	B-Location
-pipet.
-	I-Location
+pipet	I-Location
+.	I-Location
 
 Collect	B-Action
 one	B-Numerical
@@ -42,8 +44,8 @@ one	B-Numerical
 10ml	B-Amount
 sample	B-Reagent
 for	O
-protein.
-	B-Reagent
+protein	B-Reagent
+.	O
 
 Spin	B-Action
 tubes	B-Location
@@ -53,15 +55,17 @@ minutes	I-Time
 at	O
 4700	B-Speed
 rpm	I-Speed
-(4816	I-Speed
+(	O
+4816	B-Speed
 x	I-Speed
-g)	I-Speed
+g	I-Speed
+)	O
 in	O
 a	O
 swinging	B-Device
 bucket	I-Device
-rotor.
-	I-Device
+rotor	I-Device
+.	O
 
 If	O
 you	O
@@ -71,7 +75,9 @@ collect	B-Action
 the	O
 cell-free	B-Modifier
 fraction	B-Reagent
-(e.g.	O
+(	O
+e.g	O
+.	O
 for	O
 analyzing	B-Action
 dissolved	B-Modifier
@@ -81,16 +87,19 @@ organic	B-Modifier
 nutrients	B-Reagent
 or	O
 phage	B-Reagent
-particles):	I-Reagent
+particles	I-Reagent
+)	O
+:	O
 decant	B-Action
 supernatants	B-Reagent
 into	O
 labeled	B-Modifier
-sterile 50	I-Modifier
-ml	B-Amount
-conical	B-Location
-tubes.
-	I-Location
+sterile	I-Modifier
+50	B-Amount
+ml	I-Amount
+conical	I-Amount
+tubes	B-Location
+.	I-Location
 
 We	O
 pool	B-Action
@@ -105,8 +114,8 @@ in	O
 a	O
 20ml	B-Amount
 combined	B-Reagent
-supernatant.
-	I-Reagent
+supernatant	I-Reagent
+.	O
 
 If	O
 you	O
@@ -117,13 +126,14 @@ to	O
 collect	B-Action
 the	O
 cell-free	B-Modifier
-fraction:	B-Reagent
+fraction	B-Reagent
+:	O
 decant	B-Action
 supernatant	B-Reagent
 into	O
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Flash-freeze	B-Action
 cell	B-Reagent
@@ -134,15 +144,17 @@ ml	I-Amount
 tubes	B-Location
 using	O
 liquid	B-Reagent
-nitrogen; store	I-Reagent
-pellets	I-Reagent
-in	O
+nitrogen	I-Reagent
+;	O
+store	B-Action
+pellets	I-Action
+in	B-Reagent
 -80°C	B-Temperature
-freezer	B-Device
-until	O
+freezer	I-Temperature
+until	B-Device
 later	O
-analysis.
-	B-Method
+analysis	B-Method
+.	I-Method
 
 If	O
 you	O
@@ -151,10 +163,11 @@ not	O
 collecting	B-Action
 the	O
 cell-free	B-Modifier
-fraction,	B-Reagent
+fraction	B-Reagent
+,	O
 stop	O
-here.
-	O
+here	O
+.	O
 
 If	O
 you	O
@@ -162,12 +175,13 @@ are	O
 collecting	B-Action
 the	O
 cell-free	B-Modifier
-fraction,	B-Reagent
+fraction	B-Reagent
+,	O
 go	O
 to	O
 Step	O
-5.
-	O
+5	O
+.	O
 
 Remove	B-Action
 the	O
@@ -176,8 +190,8 @@ from	O
 a	O
 20ml	B-Amount
 clean	B-Modifier
-syringe.
-	B-Device
+syringe	B-Device
+.	O
 
 Attach	B-Action
 a	O
@@ -187,57 +201,63 @@ syringe	B-Device
 filter	I-Device
 to	O
 the	O
-syringe.
-	B-Device
+syringe	B-Device
+.	O
 
-Pour your	B-Action
+Pour	B-Action
+your	O
 20ml	B-Amount
-combined	B-Reagent
-supernatant	I-Reagent
-into	O
+combined	I-Amount
+supernatant	B-Reagent
+into	I-Reagent
 the	O
 barrel	B-Location
-of	O
+of	I-Location
 the	O
-syringe.
-	B-Device
+syringe	B-Device
+.	I-Device
 
 Replace	B-Action
 plunger	B-Device
 on	O
 the	O
 syringe	B-Device
-and filter	B-Action
-your	O
-20ml supernatant	B-Amount
-into	O
-appropriate tubes	B-Location
-for	O
+and	O
+filter	B-Action
+your	I-Action
+20ml	B-Amount
+supernatant	I-Amount
+into	B-Reagent
+appropriate	O
+tubes	B-Location
+for	I-Location
 your	O
 downstream	B-Reagent
 nutrient/phage	I-Reagent
-analysis	B-Method
-(we	O
+analysis	I-Reagent
+(	B-Method
+we	I-Method
 use	O
 a	O
-15ml	B-Amount
-conical	B-Location
-tube	I-Location
-plus	O
+15ml	O
+conical	B-Amount
+tube	B-Location
+plus	I-Location
 a	O
-5ml	B-Amount
-snap-cap	B-Modifier
-Eppendorf	B-Location
-tube).
-	I-Location
+5ml	O
+snap-cap	B-Amount
+Eppendorf	B-Modifier
+tube	B-Location
+)	I-Location
+.	I-Location
 
 Repeat	B-Action
 step	B-Method
 5	I-Method
 for	O
 each	B-Modifier
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 You	O
 can	O
@@ -250,8 +270,8 @@ replicates	O
 of	O
 the	O
 same	O
-condition/treatment.
-	O
+condition/treatment	O
+.	O
 
 Store	B-Action
 0.2µm	B-Size
@@ -260,21 +280,24 @@ samples	I-Reagent
 in	O
 -20ºC	B-Temperature
 until	O
-analysis.
-	B-Method
+analysis	B-Method
+.	O
 
-(if	O
+(	O
+if	O
 analyzing	B-Action
 phage	B-Reagent
 particles	I-Reagent
 in	O
 the	O
-filtrate,	B-Reagent
+filtrate	B-Reagent
+,	O
 store	B-Action
 at	O
 4ºC	B-Temperature
-instead.)
-	O
+instead	O
+.	O
+)	O
 
 
 

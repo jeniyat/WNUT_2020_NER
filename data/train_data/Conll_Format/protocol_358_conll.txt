@@ -3,23 +3,29 @@ fluorescence	B-Measure-Type
 during	O
 cyanobacterial	B-Reagent
 physiology/lysis	I-Reagent
-experiments
-	O
+experiments	O
 
 Advance	O
-Preparation:	B-Method
-Aliquot 180	B-Action
-µl	B-Amount
-seawater	B-Reagent
-medium	I-Reagent
-(e.g.	O
-ASW) into	B-Reagent
-each well	B-Location
-of	O
-a	O
-96-well	B-Location
-plate.
-	I-Location
+Preparation	B-Method
+:	O
+Aliquot	B-Action
+180	B-Amount
+µl	I-Amount
+seawater	I-Amount
+medium	B-Reagent
+(	I-Reagent
+e.g	O
+.	O
+ASW	B-Reagent
+)	I-Reagent
+into	O
+each	B-Location
+well	I-Location
+of	I-Location
+a	I-Location
+96-well	I-Location
+plate	I-Location
+.	I-Location
 
 Keep	B-Action
 a	I-Action
@@ -28,14 +34,17 @@ of	I-Action
 your	I-Action
 plate	I-Action
 layout	I-Action
-(which	O
+(	O
+which	O
 samples	O
 in	O
 which	O
-wells).
-	O
+wells	O
+)	O
+.	O
 
-Plate-Setup:	B-Location
+Plate-Setup	B-Location
+:	O
 Add	B-Action
 20	B-Amount
 µl	I-Amount
@@ -47,51 +56,58 @@ ASW	B-Reagent
 for	O
 a	O
 10X	B-Concentration
-dilution.
-	O
+dilution	O
+.	O
 
 Mix	B-Action
 well	B-Modifier
 with	O
 a	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
-Read fluorescence	B-Action
-using	O
+Read	B-Action
+fluorescence	B-Measure-Type
+using	I-Measure-Type
 the	O
 Tecan	B-Device
 Infinite	I-Device
 Pro	I-Device
 200M	I-Device
 plate	I-Device
-reader.
-	I-Device
+reader	I-Device
+.	I-Device
 
 Set	B-Action
 up	I-Action
 a	O
 program	B-Device
-using the	O
+using	O
+the	O
 following	O
-wavelengths:	B-Measure-Type
+wavelengths	B-Measure-Type
+:	I-Measure-Type
 excitation	O
 440	B-Generic-Measure
-nm,	I-Generic-Measure
+nm	I-Generic-Measure
+,	I-Generic-Measure
 emission	O
 680	B-Generic-Measure
 nm	I-Generic-Measure
-for	O
+for	I-Generic-Measure
 chlorophyll	B-Reagent
-a;	I-Reagent
- excitation	O
-544	B-Generic-Measure
-nm,	I-Generic-Measure
-emission 577	I-Generic-Measure
-nm	I-Generic-Measure
-for	O
-phycoerythrin.
-	B-Reagent
+a	I-Reagent
+;	I-Reagent
+excitation	O
+544	O
+nm	B-Generic-Measure
+,	I-Generic-Measure
+emission	I-Generic-Measure
+577	O
+nm	B-Generic-Measure
+for	I-Generic-Measure
+phycoerythrin	B-Reagent
+.	I-Reagent
 
 Plot	B-Action
 fluorescence	B-Measure-Type
@@ -106,8 +122,9 @@ of	O
 cell	B-Measure-Type
 growth	I-Measure-Type
 and/or	O
-phage infection.
-	B-Measure-Type
+phage	B-Measure-Type
+infection	I-Measure-Type
+.	I-Measure-Type
 
 
 

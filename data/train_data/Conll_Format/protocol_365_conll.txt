@@ -6,8 +6,7 @@ C.	B-Reagent
 elegans	I-Reagent
 genome	I-Reagent
 using	O
-CRISPR/Cas9
-	B-Reagent
+CRISPR/Cas9	B-Reagent
 
 Design	B-Action
 the	O
@@ -16,10 +15,12 @@ and	O
 order	B-Action
 the	O
 primers	B-Reagent
-(see	O
+(	O
+see	O
 the	O
-guidelines).
-	O
+guidelines	O
+)	O
+.	O
 
 Clone	B-Action
 the	O
@@ -30,13 +31,16 @@ using	O
 Q5	B-Reagent
 mutagenesis	I-Reagent
 kit	I-Reagent
-(NEB).
-	O
+(	O
+NEB	O
+)	O
+.	O
 
 Mix	B-Action
 together	O
 the	O
-following:	O
+following	O
+:	O
 Prepare	B-Action
 a	O
 negative	B-Reagent
@@ -45,34 +49,36 @@ mix	I-Reagent
 without	O
 the	O
 Forward	B-Reagent
-primer.
-	I-Reagent
+primer	I-Reagent
+.	O
 
 Digest	B-Action
 away	I-Action
 pDD162	B-Reagent
-for 5min	B-Time
-at	O
-RT	B-Temperature
-with:	O
+for	O
+5min	B-Time
+at	I-Time
+RT	O
+with	B-Temperature
+:	O
 1ul	B-Amount
-of	O
-Q5	B-Reagent
-PCR	I-Reagent
-5ul	B-Amount
-of	O
+of	I-Amount
+Q5	O
+PCR	B-Reagent
+5ul	I-Reagent
+of	B-Amount
 KLD	B-Reagent
 2X	I-Reagent
 buffer	I-Reagent
-1ul	B-Amount
-of	O
+1ul	I-Reagent
+of	B-Amount
 KLD	B-Reagent
 10X	I-Reagent
 enzyme	I-Reagent
-3ul	B-Amount
-of	O
-H2O.
-	B-Reagent
+3ul	I-Reagent
+of	B-Amount
+H2O	B-Reagent
+.	I-Reagent
 
 Add	B-Action
 5ul	B-Amount
@@ -85,14 +91,16 @@ to	O
 of	O
 kit‐provided	B-Modifier
 competent	B-Reagent
-cells.	I-Reagent
+cells	I-Reagent
+.	O
 
 Heat	B-Action
 shock	I-Action
 at	O
 42°C	B-Temperature
 for	O
-30s.	B-Time
+30s	B-Time
+.	O
 
 Add	B-Action
 950ul	B-Amount
@@ -104,15 +112,15 @@ shake	B-Action
 for	O
 1h	B-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Plate	B-Action
 25ul	B-Amount
 on	O
 Carb	B-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -126,13 +134,15 @@ and	O
 also	O
 plate	B-Action
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 One	B-Amount
 half	I-Amount
-(or	O
-more)	B-Amount
+(	O
+or	O
+more	B-Amount
+)	O
 of	O
 the	O
 colonies	B-Reagent
@@ -140,8 +150,8 @@ will	O
 have	O
 the	O
 correct	O
-insertion.
-	B-Method
+insertion	B-Method
+.	O
 
 Pick	B-Action
 6	B-Numerical
@@ -153,21 +163,25 @@ in	O
 2ml	B-Amount
 of	O
 bacterial	B-Reagent
-culture.
-	I-Reagent
+culture	I-Reagent
+.	O
 
 Miniprep	B-Action
-(Qiagen	B-Reagent
-kit,	I-Reagent
+(	O
+Qiagen	B-Reagent
+kit	I-Reagent
+,	O
 include	O
 the	O
 PB	B-Reagent
-wash,	I-Reagent
+wash	I-Reagent
+,	O
 elute	B-Action
 in	O
 50ul	B-Amount
 of	O
-H2O)	B-Reagent
+H2O	B-Reagent
+)	O
 and	O
 send	B-Action
 to	O
@@ -179,8 +193,8 @@ sequencing	I-Reagent
 primer	I-Reagent
 in	O
 the	O
-guidelines.
-	B-Method
+guidelines	B-Method
+.	O
 
 Design	B-Action
 and	O
@@ -192,8 +206,8 @@ as	O
 described	O
 in	O
 the	O
-guidelines.
-	B-Method
+guidelines	B-Method
+.	O
 
 Reconstitute	B-Action
 oligo	B-Reagent
@@ -206,17 +220,19 @@ amount	B-Amount
 provided	B-Action
 by	O
 the	O
-manufacturer.
-	B-Method
+manufacturer	B-Method
+.	O
 
 Amplify	B-Action
 the	O
 GFP	B-Reagent
 plasmid	I-Reagent
 pCM1.53	I-Reagent
-(available	O
+(	O
+available	O
 at	O
-Addgene)	O
+Addgene	O
+)	O
 with	O
 primers	B-Reagent
 containing	O
@@ -224,17 +240,23 @@ the	O
 desired	B-Modifier
 flanking	B-Reagent
 regions	I-Reagent
-(~30‐60	B-Modifier
-bp),	B-Generic-Measure
+(	O
+~30‐60	B-Modifier
+bp	B-Generic-Measure
+)	O
+,	O
 mutations	B-Reagent
 in	O
 the	O
 sgRNA	B-Reagent
-site(s)	O
+site	O
+(	O
+s	O
+)	O
 and	O
 GFP	B-Reagent
-sequence.
-	I-Reagent
+sequence	I-Reagent
+.	O
 
 PCRs	B-Action
 are	O
@@ -245,15 +267,20 @@ taq	I-Reagent
 2X	I-Reagent
 Master	I-Reagent
 Mix	I-Reagent
-(NEB),	O
+(	O
+NEB	O
+)	O
+,	O
 45s	B-Time
 elongation	B-Measure-Type
-step,	I-Measure-Type
+step	I-Measure-Type
+,	O
 30	B-Numerical
-cycles,	B-Measure-Type
+cycles	B-Measure-Type
+,	O
 50ul	B-Amount
-reaction.
-	B-Reagent
+reaction	B-Reagent
+.	O
 
 Annealing	B-Action
 step	O
@@ -265,8 +292,8 @@ gradient	B-Reagent
 from	O
 60°C	B-Temperature
 to	I-Temperature
-72°C.
-	I-Temperature
+72°C	I-Temperature
+.	O
 
 Run	B-Action
 PCR	B-Reagent
@@ -277,14 +304,17 @@ gel	I-Reagent
 to	O
 confirm	O
 the	O
-amplification.	O
+amplification	O
+.	O
 
 Pool	B-Action
 positive	B-Reagent
 PCRs	I-Reagent
-(typically	O
+(	O
+typically	O
 three	B-Numerical
-reactions)	B-Reagent
+reactions	B-Reagent
+)	O
 and	O
 purify	B-Action
 using	O
@@ -293,13 +323,16 @@ minelute	B-Device
 PCR	I-Device
 purification	I-Device
 kit	I-Device
-(Qiagen,	O
+(	O
+Qiagen	O
+,	O
 elution	B-Reagent
 with	O
 10ul	B-Amount
 of	O
-H2O).
-	B-Reagent
+H2O	B-Reagent
+)	O
+.	O
 
 Pool	B-Action
 the	O
@@ -316,18 +349,21 @@ column	I-Location
 and	O
 measure	B-Action
 the	O
-concentration.
-	B-Measure-Type
+concentration	B-Measure-Type
+.	O
 
 The	O
 DNA	B-Reagent
 concentration	B-Measure-Type
 should	O
 be	O
->500ng/ul	B-Modifier
-(at	O
+>	B-Modifier
+500ng/ul	B-Concentration
+(	O
+at	O
 this	O
-concentration,	B-Measure-Type
+concentration	B-Measure-Type
+,	O
 the	O
 amount	O
 of	O
@@ -340,11 +376,13 @@ mixture	B-Reagent
 will	O
 be	O
 low	O
-enough to	O
+enough	O
+to	O
 avoid	B-Action
-any	O
-toxicity).
-	B-Measure-Type
+any	I-Action
+toxicity	B-Measure-Type
+)	I-Measure-Type
+.	O
 
 We	O
 use	O
@@ -352,7 +390,8 @@ pRF4	B-Reagent
 roller	I-Reagent
 plasmid	I-Reagent
 at	O
-120ng/ul,	B-Concentration
+120ng/ul	B-Concentration
+,	O
 but	O
 you	O
 can	O
@@ -362,21 +401,22 @@ marker	O
 that	O
 you	O
 find	O
-convenient.
-	O
+convenient	O
+.	O
 
 Miniprep	B-Action
 from	O
 3ml	B-Amount
 of	O
 bacterial	B-Reagent
-culture,	I-Reagent
+culture	I-Reagent
+,	O
 as	O
 for	O
 the	O
 Cas9/sgRNA	B-Reagent
-plasmid.
-	I-Reagent
+plasmid	I-Reagent
+.	O
 
 Do	O
 not	O
@@ -387,8 +427,8 @@ for	O
 more	O
 than	O
 16	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Add	B-Action
 H2O	B-Reagent
@@ -401,8 +441,8 @@ for	O
 15min	B-Time
 on	O
 tabletop	B-Device
-centrifuge.
-	I-Device
+centrifuge	I-Device
+.	O
 
 Load	B-Action
 injection	B-Device
@@ -410,8 +450,8 @@ needles	I-Device
 with	O
 the	O
 injection	B-Reagent
-mix.
-	I-Reagent
+mix	I-Reagent
+.	O
 
 Bleach	B-Action
 a	O
@@ -420,35 +460,41 @@ plate	B-Location
 of	O
 worms	B-Reagent
 
-WashA:	B-Action
-wash	I-Action
+WashA	B-Action
+:	O
+wash	B-Action
 with	O
-M9.
-	B-Reagent
+M9	B-Reagent
+.	O
 
-WashB:	B-Action
-wash	I-Action
+WashB	B-Action
+:	O
+wash	B-Action
 with	O
-M9.
-	B-Reagent
+M9	B-Reagent
+.	O
 
 Plate	B-Action
 embryos	B-Reagent
-(less	B-Modifier
+(	O
+less	B-Modifier
 than	I-Modifier
-2000)	B-Numerical
+2000	B-Numerical
+)	O
 on	O
 NA22	B-Location
 large	I-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
-(NOT	O
+(	O
+NOT	O
 completely	B-Modifier
 covered	B-Action
 with	O
 NA22	B-Reagent
-bacteria)	I-Reagent
+bacteria	I-Reagent
+)	O
 Incubate	B-Action
 multiple	B-Numerical
 plates	B-Location
@@ -465,17 +511,19 @@ one	B-Numerical
 with	O
 young	B-Reagent
 adults	I-Reagent
-(few	B-Numerical
+(	O
+few	B-Numerical
 embryos	B-Reagent
 /one	B-Numerical
 embryo	B-Reagent
-row)	O
+row	O
+)	O
 on	O
 the	O
 day	O
 of	O
-injection.
-	B-Method
+injection	B-Method
+.	O
 
 Pick	B-Action
 hermaphrodites	B-Reagent
@@ -497,98 +545,133 @@ and	O
 place	B-Action
 on	O
 injection	B-Location
-pad.
-	I-Location
+pad	I-Location
+.	O
 
 Inject	B-Action
 30‐40	B-Numerical
-worms.
-	B-Reagent
+worms	B-Reagent
+.	O
 
 AddingM9	B-Action
-#1: add	I-Action
-5ul	B-Amount
-of	O
-M9	B-Reagent
-(Start	O
+#	O
+1	O
+:	O
+add	B-Action
+5ul	I-Action
+of	B-Amount
+M9	O
+(	B-Reagent
+Start	O
 adding	B-Action
-M9	B-Reagent
-every	B-Modifier
-5-10	B-Time
-minutes,	I-Time
+M9	I-Action
+every	B-Reagent
+5-10	B-Modifier
+minutes	B-Time
+,	I-Time
 about	O
-1h	B-Time
-after	O
+1h	O
+after	B-Time
 the	O
 worms	B-Reagent
-have	O
+have	I-Reagent
 been	O
 put	B-Action
-in	O
+in	I-Action
 recovery	B-Reagent
-buffer).
-	I-Reagent
+buffer	I-Reagent
+)	I-Reagent
+.	O
 
 AddingM9	B-Action
-#2: add	I-Action
-5ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+2	O
+:	O
+add	B-Action
+5ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#3: add	I-Action
-5ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+3	O
+:	O
+add	B-Action
+5ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#4: add	I-Action
-10ul	B-Amount
-of	O
-M9.	B-Reagent
+#	O
+4	O
+:	O
+add	B-Action
+10ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#5: add	I-Action
-10ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+5	O
+:	O
+add	B-Action
+10ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#6: add	I-Action
-15ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+6	O
+:	O
+add	B-Action
+15ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#7: add	I-Action
-15ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+7	O
+:	O
+add	B-Action
+15ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#8: add	I-Action
-15ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+8	O
+:	O
+add	B-Action
+15ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#9: add	I-Action
-20ul	B-Amount
-of	O
-M9.
-	B-Reagent
+#	O
+9	O
+:	O
+add	B-Action
+20ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 AddingM9	B-Action
-#10: add	I-Action
-20ul	B-Amount
-of	O
-M9.	B-Reagent
+#	O
+10	O
+:	O
+add	B-Action
+20ul	I-Action
+of	B-Amount
+M9	O
+.	B-Reagent
 
 Put	B-Action
 a	O
@@ -601,16 +684,18 @@ on	O
 a	O
 new	B-Modifier
 OP50	B-Location
-plate,	I-Location
-outside	I-Location
+plate	I-Location
+,	O
+outside	B-Location
 the	O
 bacteria	B-Reagent
-layer.
-	I-Reagent
+layer	I-Reagent
+.	O
 
 With	O
 a	O
-pick,	B-Device
+pick	B-Device
+,	O
 transfer	B-Action
 5	B-Numerical
 to	I-Numerical
@@ -635,8 +720,8 @@ M9	B-Reagent
 drop	I-Reagent
 towards	O
 the	O
-food.
-	B-Reagent
+food	B-Reagent
+.	O
 
 Repeat	B-Action
 until	O
@@ -644,8 +729,8 @@ all	B-Modifier
 the	O
 worms	B-Reagent
 are	O
-transferred.
-	B-Action
+transferred	B-Action
+.	O
 
 Even	O
 if	O
@@ -658,7 +743,8 @@ this	O
 or	O
 the	O
 next	O
-step,	O
+step	O
+,	O
 they	B-Mention
 are	O
 worth	O
@@ -668,8 +754,8 @@ they	O
 may	O
 yield	O
 edited	O
-progeny.
-	O
+progeny	O
+.	O
 
 Leave	B-Action
 the	O
@@ -688,17 +774,21 @@ then	O
 transfer	B-Action
 each	B-Modifier
 worm	B-Reagent
-(P0)	O
+(	O
+P0	O
+)	O
 to	O
 a	O
 new	B-Modifier
 OP50	B-Location
 plate	I-Location
-(1	O
+(	O
+1	O
 P0	O
 per	O
-plate).
-	B-Location
+plate	B-Location
+)	O
+.	O
 
 Allow	O
 the	O
@@ -712,8 +802,8 @@ for	O
 1	B-Time
 or	I-Time
 2	I-Time
-days.
-	I-Time
+days	I-Time
+.	O
 
 Transfer	B-Action
 the	O
@@ -727,16 +817,16 @@ the	O
 first	B-Time
 and	O
 second	B-Time
-day.
-	I-Time
+day	I-Time
+.	O
 
 Let	O
 the	O
 F1s	B-Reagent
 grow	B-Action
 at	O
-20°C.
-	B-Temperature
+20°C	B-Temperature
+.	O
 
 When	O
 all	O
@@ -748,17 +838,21 @@ the	O
 young	O
 adult	O
 stage	O
-(4	B-Time
+(	O
+4	B-Time
 days	I-Time
 at	O
-20°C),	B-Temperature
+20°C	B-Temperature
+)	O
+,	O
 check	B-Action
 for	O
-rollers.
-	B-Reagent
+rollers	B-Reagent
+.	O
 
 GFP	B-Reagent
-fusions:	I-Reagent
+fusions	I-Reagent
+:	O
 if	O
 you	O
 know	O
@@ -766,7 +860,8 @@ what	O
 you	O
 are	O
 looking	O
-for,	O
+for	O
+,	O
 it	O
 is	O
 possible	O
@@ -779,14 +874,17 @@ expression	I-Measure-Type
 in	O
 the	O
 F1	B-Reagent
-(or	I-Reagent
-F2)	I-Reagent
-animals.
-	I-Reagent
+(	I-Reagent
+or	I-Reagent
+F2	I-Reagent
+)	I-Reagent
+animals	I-Reagent
+.	O
 
 PCR	B-Action
-screening:	I-Action
-Transfer	I-Action
+screening	I-Action
+:	O
+Transfer	B-Action
 the	O
 F1	B-Reagent
 rollers	I-Reagent
@@ -798,31 +896,36 @@ siblings	I-Reagent
 to	O
 new	B-Modifier
 plates	B-Location
-(2	B-Numerical
+(	O
+2	B-Numerical
 to	I-Numerical
 8	I-Numerical
 F1s	B-Reagent
 per	O
-plate).
-	B-Location
+plate	B-Location
+)	O
+.	O
 
 PCR	B-Action
-Screening: Let	I-Action
+Screening	I-Action
+:	O
+Let	O
 the	O
-F1	B-Reagent
-lay	B-Action
-eggs	B-Reagent
-for	O
+F1	O
+lay	B-Reagent
+eggs	B-Action
+for	B-Reagent
 24h	B-Time
-at	O
-20°C.
-	B-Temperature
+at	I-Time
+20°C	B-Temperature
+.	I-Temperature
 
 Lyse	B-Action
 the	O
 F1s	B-Reagent
 for	O
-PCR:	B-Method
+PCR	B-Method
+:	O
 In	O
 each	O
 10	B-Amount
@@ -830,13 +933,14 @@ uL	I-Amount
 tube	B-Location
 of	O
 lysis	B-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 put	B-Action
 2	B-Numerical
 to	I-Numerical
 8	I-Numerical
-F1s.
-	B-Reagent
+F1s	B-Reagent
+.	O
 
 We	O
 recommend	O
@@ -848,8 +952,8 @@ assay	I-Action
 before	O
 starting	O
 the	O
-injections.
-	B-Method
+injections	B-Method
+.	O
 
 See	O
 the	O
@@ -857,8 +961,8 @@ guidelines	O
 for	O
 PCR	B-Action
 Screening	I-Action
-details.
-	O
+details	O
+.	O
 
 Clone	B-Action
 the	O
@@ -866,8 +970,8 @@ F2/3s	B-Reagent
 from	O
 positive	B-Modifier
 F1	B-Location
-plates.
-	I-Location
+plates	I-Location
+.	O
 
 It	O
 is	O
@@ -888,8 +992,8 @@ avoid	O
 accidental	B-Modifier
 transfer	B-Action
 of	O
-siblings.
-	B-Reagent
+siblings	B-Reagent
+.	O
 
 If	O
 2	B-Numerical
@@ -897,11 +1001,12 @@ F1s	B-Reagent
 were	O
 pooled	B-Action
 per	O
-plate,	B-Location
+plate	B-Location
+,	O
 clone	B-Action
 16	B-Numerical
-F2s.
-	B-Reagent
+F2s	B-Reagent
+.	O
 
 If	O
 8	B-Numerical
@@ -909,7 +1014,8 @@ F1s	B-Reagent
 were	O
 pooled	B-Action
 per	O
-plate,	B-Location
+plate	B-Location
+,	O
 chunk	B-Action
 the	O
 starved	B-Modifier
@@ -921,8 +1027,8 @@ clone	B-Action
 24	B-Numerical
 to	I-Numerical
 32	I-Numerical
-F2/F3s.
-	B-Reagent
+F2/F3s	B-Reagent
+.	O
 
 Lyse	B-Action
 and	O
@@ -935,32 +1041,35 @@ methods	I-Method
 as	O
 for	O
 the	O
-F1s.
-	B-Reagent
+F1s	B-Reagent
+.	O
 
-EXCEPT:	O
+EXCEPT	O
+:	O
 When	O
 looking	O
 for	O
 homozygous	B-Reagent
 GFP	I-Reagent
-worms,	I-Reagent
+worms	I-Reagent
+,	O
 use	B-Action
 primers	B-Reagent
 that	O
 flank	O
 the	O
 GFP	B-Reagent
-fusion.
-	I-Reagent
+fusion	I-Reagent
+.	O
 
 Use	O
 the	O
 PCR	B-Reagent
 product	I-Reagent
 for	O
-sequencing:	B-Action
-Clean	I-Action
+sequencing	B-Action
+:	O
+Clean	B-Action
 25ul	B-Amount
 of	O
 the	O
@@ -969,13 +1078,14 @@ reaction	I-Reagent
 using	O
 Qiagen	B-Reagent
 Minelute	I-Reagent
-kit,	I-Reagent
+kit	I-Reagent
+,	O
 elute	B-Action
 with	O
 10ul	B-Amount
 of	O
-H2O.
-	B-Reagent
+H2O	B-Reagent
+.	O
 
 Use	O
 7ul	B-Amount
@@ -994,8 +1104,8 @@ the	O
 PCR	B-Reagent
 product	I-Reagent
 for	O
-sequencing.
-	B-Action
+sequencing	B-Action
+.	O
 
 Once	O
 a	O
@@ -1003,7 +1113,8 @@ homozygous	B-Location
 F2/3	I-Location
 plate	I-Location
 is	O
-identified,	B-Action
+identified	B-Action
+,	O
 it	O
 is	O
 recommended	O
@@ -1027,13 +1138,13 @@ the	O
 line	O
 is	O
 truly	O
-homozygous.
-	O
+homozygous	O
+.	O
 
 Freeze	B-Action
 the	O
-worms.
-	B-Reagent
+worms	B-Reagent
+.	O
 
 We	O
 recommend	O
@@ -1043,7 +1154,8 @@ least	I-Modifier
 two	B-Numerical
 independent	B-Modifier
 lines	B-Reagent
-(derived	O
+(	O
+derived	O
 from	O
 different	O
 P0s	B-Reagent
@@ -1051,13 +1163,14 @@ if	O
 possible	O
 or	O
 different	O
-F1s)	B-Reagent
+F1s	B-Reagent
+)	O
 for	O
 each	O
 type	O
 of	O
-edit.
-	O
+edit	O
+.	O
 
 
 

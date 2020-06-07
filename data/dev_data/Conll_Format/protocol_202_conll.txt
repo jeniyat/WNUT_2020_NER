@@ -1,12 +1,11 @@
 BMDM	B-Reagent
 Salmonella	I-Reagent
-Replication
-	B-Method
+Replication	B-Method
 
 The	O
 day	O
-before.
-	O
+before	O
+.	O
 
 Inoculate	B-Action
 5	B-Amount
@@ -18,8 +17,8 @@ with	O
 colony	I-Amount
 of	O
 Salmonella	B-Reagent
-Typhimurium.
-	I-Reagent
+Typhimurium	I-Reagent
+.	O
 
 Incubate	B-Action
 on	O
@@ -27,16 +26,16 @@ the	O
 wheel	B-Location
 at	O
 37C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Collect	B-Action
 BMDM	B-Reagent
 using	O
 a	O
 cell	B-Device
-scraper.
-	I-Device
+scraper	I-Device
+.	O
 
 Transfer	B-Action
 the	O
@@ -48,23 +47,23 @@ dish	I-Location
 to	O
 a	O
 50-ml	B-Amount
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Centrifuge	B-Action
 10	B-Time
 min	I-Time
 at	O
 1200	B-Speed
-RPM.
-	I-Speed
+RPM	I-Speed
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Re-suspend	B-Action
 the	O
@@ -74,7 +73,8 @@ using	O
 syringe	B-Location
 and	O
 needle	B-Device
-(start	O
+(	O
+start	O
 with	O
 a	O
 21	B-Size
@@ -92,9 +92,10 @@ in	O
 ml	I-Amount
 RPMI	B-Reagent
 +	O
-10%	B-Concentration
-FCS.
-	B-Reagent
+10	B-Concentration
+%	I-Concentration
+FCS	B-Reagent
+.	O
 
 Count	B-Action
 BMDM	B-Reagent
@@ -107,20 +108,23 @@ a	O
 1/5	B-Concentration
 dilution	B-Reagent
 with	O
-Turks.
-	B-Reagent
+Turks	B-Reagent
+.	O
 
-(1.5ml	B-Amount
+(	O
+1.5ml	B-Amount
 Acetic	B-Reagent
-acid,	I-Reagent
+acid	I-Reagent
+,	O
 48.5	B-Amount
 ddH2O	I-Amount
 and	O
 Gentacin	B-Reagent
 Violet	I-Reagent
 –	O
-trace).
-	O
+trace	O
+)	O
+.	O
 
 Adjust	B-Action
 with	O
@@ -140,66 +144,75 @@ of	O
 1x10^6	B-Concentration
 cells	I-Concentration
 per	I-Concentration
-ml.
-	I-Concentration
+ml	I-Concentration
+.	O
 
 Aliquot	B-Action
 500	B-Amount
 μL	I-Amount
-(5x10^5	I-Amount
-cells)	I-Amount
+(	I-Amount
+5x10^5	I-Amount
+cells	I-Amount
+)	I-Amount
 per	O
 well	B-Location
 for	O
 a	O
 24-well	B-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Aliquot	B-Action
 3	B-Amount
 mL	I-Amount
-(3x10^6	I-Amount
-cells)	I-Amount
+(	I-Amount
+3x10^6	I-Amount
+cells	I-Amount
+)	I-Amount
 per	O
 well	B-Location
 for	O
 a	O
 6-well	B-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 And	O
 100ul	B-Amount
 for	O
 96	B-Location
 well	I-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Incubate	B-Action
 o/n	O
 at	O
-37C,	B-Temperature
-5%	B-Concentration
-CO2.
-	B-Reagent
+37C	B-Temperature
+,	O
+5	B-Concentration
+%	I-Concentration
+CO2	B-Reagent
+.	O
 
 For	O
-LDH,	B-Reagent
+LDH	B-Reagent
+,	O
 all	O
 the	O
 samples	B-Reagent
 are	O
 in	O
-triplicate.
-	O
+triplicate	O
+.	O
 
 The	O
 day	O
 of	O
 the	O
-experiment:Inoculate	B-Action
+experiment	O
+:	O
+Inoculate	B-Action
 50	B-Amount
 ml	I-Amount
 of	O
@@ -212,8 +225,8 @@ the	B-Reagent
 overnight	I-Reagent
 culture	I-Reagent
 of	I-Reagent
-Salmonella.
-	I-Reagent
+Salmonella	I-Reagent
+.	O
 
 Grow	B-Action
 at	O
@@ -227,12 +240,14 @@ at	O
 600nm	B-Generic-Measure
 reaches	O
 0.9	B-Generic-Measure
-(it	O
+(	O
+it	O
 takes	O
 between	O
 90-120	B-Time
-min).
-	I-Time
+min	I-Time
+)	O
+.	O
 
 Place	B-Action
 the	O
@@ -247,12 +262,13 @@ OD	I-Action
 to	O
 0.9	B-Generic-Measure
 if	B-Modifier
-needed.
-	I-Modifier
+needed	I-Modifier
+.	O
 
 In	O
 the	O
-meantime,	O
+meantime	O
+,	O
 prepare	B-Action
 all	B-Reagent
 the	I-Reagent
@@ -272,7 +288,9 @@ bacteriaPBS	B-Reagent
 for	O
 the	O
 washesGentamicin	B-Reagent
-+RPMI+10%FCSTitron	I-Reagent
++RPMI+10	I-Reagent
+%	B-Concentration
+FCSTitron	B-Reagent
 and	O
 PBS	B-Reagent
 for	O
@@ -283,10 +301,12 @@ tubes	B-Location
 of	O
 1	B-Amount
 ml	I-Amount
-(5	I-Amount
+(	I-Amount
+5	I-Amount
 x	I-Amount
 10^8	I-Amount
-bact)	I-Amount
+bact	I-Amount
+)	I-Amount
 of	O
 the	O
 bacterial	B-Reagent
@@ -303,8 +323,8 @@ PBS	B-Reagent
 or	O
 RPMI	B-Reagent
 without	B-Modifier
-FCS.
-	I-Modifier
+FCS	I-Modifier
+.	O
 
 Use	B-Action
 Eppendorf	B-Location
@@ -319,8 +339,8 @@ room	I-Location
 min	I-Time
 at	O
 13000	B-Speed
-RPM.
-	I-Speed
+RPM	I-Speed
+.	O
 
 Verify	B-Action
 that	O
@@ -330,8 +350,8 @@ are	O
 healthy	B-Modifier
 under	O
 the	O
-microscope.
-	B-Device
+microscope	B-Device
+.	O
 
 Remove	B-Action
 the	O
@@ -344,18 +364,23 @@ it	B-Mention
 with	O
 RPMI	B-Reagent
 and	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCSPer	B-Reagent
 well:6-well	B-Location
-plate:	I-Location
+plate	I-Location
+:	O
 3	B-Amount
 ml	I-Amount
 RPMI	B-Reagent
-+10%FCS	B-Concentration
++10	B-Concentration
+%	I-Concentration
+FCS	B-Reagent
 and	O
 60ul	B-Amount
 bacteria24-well	B-Reagent
-plate:	B-Location
+plate	B-Location
+:	I-Location
 500	B-Amount
 μL	I-Amount
 RPMI	B-Reagent
@@ -364,28 +389,36 @@ and	O
 10ul	B-Amount
 bacteria96	B-Reagent
 well	B-Location
-plate:	I-Location
+plate	I-Location
+:	O
 100ul	B-Amount
-RPMI+10%FCS	B-Reagent
+RPMI+10	B-Reagent
+%	B-Concentration
+FCS	B-Reagent
 and	O
 2ul	B-Amount
-bacteria(10	B-Reagent
-μL	B-Amount
+bacteria	B-Reagent
+(	O
+10	B-Amount
+μL	I-Amount
 corresponds	O
 approximately	O
 to	O
 5x10^6	B-Amount
-bacteria;	I-Amount
+bacteria	I-Amount
+;	O
 MOI	B-Measure-Type
 of	O
 10	B-Concentration
-bacteria/cell).
-	I-Concentration
+bacteria/cell	I-Concentration
+)	O
+.	O
 
 For	O
 a	O
 6-well	B-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 20	B-Amount
 ml	I-Amount
@@ -397,13 +430,14 @@ medium	I-Reagent
 μl	I-Amount
 of	O
 washed	B-Reagent
-bacteria.
-	I-Reagent
+bacteria	I-Reagent
+.	O
 
 For	O
 a	O
 24-well	B-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 15	B-Amount
 ml	I-Amount
@@ -415,14 +449,15 @@ medium	I-Reagent
 μl	I-Amount
 of	O
 washed	B-Reagent
-bacteria.
-	I-Reagent
+bacteria	I-Reagent
+.	O
 
 For	O
 a	O
 96	B-Location
 well	I-Location
-place,	I-Location
+place	I-Location
+,	O
 prepare	B-Action
 10ml	B-Amount
 of	O
@@ -432,12 +467,13 @@ and	O
 200ul	B-Amount
 of	O
 washed	B-Reagent
-bacteria.
-	I-Reagent
+bacteria	I-Reagent
+.	O
 
 But	O
 for	O
-LDH,	B-Reagent
+LDH	B-Reagent
+,	O
 you	O
 only	O
 need	O
@@ -447,13 +483,14 @@ enough	O
 for	O
 the	O
 Salmonella	B-Reagent
-wells,	B-Location
+wells	B-Location
+,	O
 not	O
 for	O
 all	O
 96	B-Numerical
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -467,41 +504,52 @@ Incubate	B-Action
 45	B-Time
 min	I-Time
 at	O
-37C,	B-Temperature
-5%	B-Concentration
-CO2.
-	B-Reagent
+37C	B-Temperature
+,	O
+5	B-Concentration
+%	I-Concentration
+CO2	B-Reagent
+.	O
 
 During	O
 the	O
 incubation	B-Method
-time,	B-Measure-Type
+time	B-Measure-Type
+,	O
 plate	B-Action
 the	O
 infectious	B-Reagent
 dose	I-Reagent
 10^-3	B-Amount
-(100	I-Amount
-μl),	I-Amount
-10^-4	I-Amount
-(100	I-Amount
-μl)	I-Amount
+(	I-Amount
+100	I-Amount
+μl	I-Amount
+)	I-Amount
+,	O
+10^-4	B-Amount
+(	I-Amount
+100	I-Amount
+μl	I-Amount
+)	I-Amount
 and	O
 10^-5	B-Amount
-(100	I-Amount
-μl).
-	I-Amount
+(	I-Amount
+100	I-Amount
+μl	I-Amount
+)	I-Amount
+.	O
 
 After	O
 the	O
 incubation	B-Method
-period,	O
+period	O
+,	O
 remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
@@ -509,13 +557,18 @@ cells	B-Reagent
 twice	B-Numerical
 with	O
 PBS	B-Reagent
-(preheated	B-Action
+(	O
+preheated	B-Action
 at	O
-37C)	B-Temperature
-(prepared	B-Action
+37C	B-Temperature
+)	O
+(	O
+prepared	B-Action
 before	B-Modifier
-hand)	I-Modifier
-using:	O
+hand	I-Modifier
+)	O
+using	O
+:	O
 500	B-Amount
 μl	I-Amount
 for	O
@@ -526,52 +579,61 @@ and	O
 ml	I-Amount
 for	O
 6-well	B-Location
-plate.	I-Location
+plate	I-Location
+.	O
 100ul	B-Amount
 for	O
 96	B-Location
 well	I-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Add	B-Action
 500	B-Amount
 μL	I-Amount
-(24-well	B-Location
-plate)	I-Location
+(	O
+24-well	B-Location
+plate	I-Location
+)	O
 or	O
 2	B-Amount
 ml	I-Amount
-(6-well	B-Location
-plate)	I-Location
+(	O
+6-well	B-Location
+plate	I-Location
+)	O
 RPMI	B-Reagent
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCS	B-Reagent
 without	B-Modifier
 phenol	I-Modifier
 for	O
 LDH	B-Reagent
-(preheated	B-Action
+(	O
+preheated	B-Action
 at	O
-37C)	B-Temperature
+37C	B-Temperature
+)	O
 containing	O
 100	B-Concentration
 μg/ml	I-Concentration
-gentamicin.
-	B-Reagent
+gentamicin	B-Reagent
+.	O
 
 Add	B-Action
 an	O
 extra	B-Reagent
 triplicate	I-Reagent
 for	O
-medium.
-	B-Reagent
+medium	B-Reagent
+.	O
 
 For	O
 a	B-Location
 24-well	I-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 15	B-Amount
 ml	I-Amount
@@ -584,13 +646,14 @@ medium	I-Reagent
 of	O
 gentamicin	B-Reagent
 10	B-Concentration
-mg/ml.
-	I-Concentration
+mg/ml	I-Concentration
+.	O
 
 For	O
 a	B-Location
 6-well	I-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 20	B-Amount
 ml	I-Amount
@@ -604,14 +667,15 @@ of	O
 of	O
 gentamicin	B-Reagent
 10	B-Concentration
-mg/ml.
-	I-Concentration
+mg/ml	I-Concentration
+.	O
 
 For	O
 a	B-Location
 96	I-Location
 well	I-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 15ml	B-Amount
 of	O
@@ -622,8 +686,8 @@ medium	I-Reagent
 of	O
 gentamicin	B-Reagent
 at	O
-10mg/ml.
-	B-Concentration
+10mg/ml	B-Concentration
+.	O
 
 This	O
 corresponds	O
@@ -631,8 +695,8 @@ to	O
 time	O
 0	O
 for	O
-LDH.
-	B-Reagent
+LDH	B-Reagent
+.	O
 
 Start	B-Action
 timer	I-Action
@@ -649,13 +713,14 @@ time	I-Time
 point	I-Time
 for	O
 max	O
-rel.
-	O
+rel	O
+.	O
 
 For	O
 all	O
 time	B-Measure-Type
-points:	O
+points	O
+:	O
 spin	B-Action
 plate	B-Location
 at	O
@@ -664,7 +729,8 @@ for	O
 4min	B-Time
 *keep	B-Action
 on	B-Temperature
-ice*.	I-Temperature
+ice*	I-Temperature
+.	O
 
 Take	B-Action
 50ul	B-Amount
@@ -676,35 +742,40 @@ into	O
 special	B-Location
 LDH	I-Location
 plates	I-Location
-(can	O
+(	O
+can	O
 use	O
-multichanel)	O
+multichanel	O
+)	O
 and	O
 keep	B-Action
 on	B-Temperature
-ice.
-	I-Temperature
+ice	I-Temperature
+.	O
 
 Take	B-Action
 50ul	B-Amount
 for	O
 ELISA	B-Reagent
 cytokine	I-Reagent
-expression.
-	B-Method
+expression	B-Method
+.	O
 
 Lyse	B-Action
 cells	B-Reagent
 with	O
 100ul	B-Amount
 of	O
-PBS-1%	B-Reagent
-Titron	I-Reagent
+PBS-1	B-Reagent
+%	B-Concentration
+Titron	B-Reagent
 X-100	B-Concentration
-(prepared	B-Action
+(	O
+prepared	B-Action
 in	O
-advance).
-	O
+advance	O
+)	O
+.	O
 
 Tranfer	B-Action
 100ul	B-Amount
@@ -714,8 +785,8 @@ push	B-Location
 cap	I-Location
 tubes	I-Location
 for	O
-plating.
-	B-Action
+plating	B-Action
+.	O
 
 Dilute	B-Action
 50ul	B-Amount
@@ -724,8 +795,10 @@ in	O
 for	O
 10^-1	B-Amount
 and	O
-10^-2#CFUs/50μl	B-Amount
-x	I-Amount
+10^-2	B-Amount
+#	O
+CFUs/50μl	B-Reagent
+x	B-Amount
 100	I-Amount
 for	O
 LDH	B-Reagent
@@ -734,33 +807,38 @@ dilution	B-Method
 =	O
 CFUs	B-Reagent
 per	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Continue	B-Action
 on	I-Action
 for	O
 Non	O
 LDH	B-Reagent
-experiment:	O
+experiment	O
+:	O
 Incubate	B-Action
 1	B-Time
 hour	I-Time
 at	O
-37C,	B-Temperature
-5%	B-Concentration
-CO2.	B-Reagent
+37C	B-Temperature
+,	O
+5	B-Concentration
+%	I-Concentration
+CO2	B-Reagent
+.	O
 
 After	O
 the	O
 incubation	B-Method
-period,	O
+period	O
+,	O
 remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
@@ -768,9 +846,11 @@ cells	B-Reagent
 twice	B-Numerical
 with	O
 PBS	B-Reagent
-(preheated	B-Action
+(	O
+preheated	B-Action
 at	O
-37C)	B-Temperature
+37C	B-Temperature
+)	O
 using	O
 500	B-Amount
 μl	I-Amount
@@ -780,35 +860,43 @@ plate	I-Location
 ml	B-Amount
 for	O
 6-well	B-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Add	B-Action
 500	B-Amount
 μL	I-Amount
-(24-well	B-Location
-plate)	I-Location
+(	O
+24-well	B-Location
+plate	I-Location
+)	O
 or	O
 2	B-Amount
 ml	I-Amount
-(6-well	B-Location
-plate)	I-Location
+(	O
+6-well	B-Location
+plate	I-Location
+)	O
 RPMI	B-Reagent
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCS	B-Reagent
-(preheated	B-Action
+(	O
+preheated	B-Action
 at	O
-37C)	B-Temperature
+37C	B-Temperature
+)	O
 containing	O
 10	B-Concentration
 μg/ml	I-Concentration
-gentamicin.
-	B-Reagent
+gentamicin	B-Reagent
+.	O
 
 For	O
 a	O
 24-well	B-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 15	B-Amount
 ml	I-Amount
@@ -820,13 +908,14 @@ medium	I-Reagent
 μl	I-Amount
 of	O
 gentamicin10	B-Reagent
-mg/ml.
-	B-Concentration
+mg/ml	B-Concentration
+.	O
 
 For	O
 a	O
 6-well	B-Location
-plate,	I-Location
+plate	I-Location
+,	O
 prepare	B-Action
 20	B-Amount
 ml	I-Amount
@@ -840,18 +929,22 @@ of	O
 of	O
 gentamicin	B-Reagent
 10	B-Concentration
-mg/ml.
-	I-Concentration
+mg/ml	I-Concentration
+.	O
 
 Pursue	B-Action
 the	O
 incubation	B-Method
-(1,	B-Time
-2,	I-Time
+(	O
+1	B-Time
+,	I-Time
+2	I-Time
+,	I-Time
 and	I-Time
 4	I-Time
-h).
-	I-Time
+h	I-Time
+)	O
+.	O
 
 Time	O
 0	O
@@ -866,13 +959,14 @@ the	O
 RPMI	B-Reagent
 containing	O
 10μg/ml	B-Concentration
-gentamicin.
-	B-Reagent
+gentamicin	B-Reagent
+.	O
 
 At	O
 each	O
 time	B-Measure-Type
-point,	O
+point	O
+,	O
 collect	B-Action
 the	O
 supernatants	B-Reagent
@@ -885,8 +979,8 @@ and	O
 freeze	B-Action
 them	B-Mention
 at	O
--80C.
-	B-Temperature
+-80C	B-Temperature
+.	O
 
 Lyse	B-Action
 the	O
@@ -895,8 +989,10 @@ with	O
 500	B-Amount
 μL	I-Amount
 PBS-	B-Reagent
-1%Triton	B-Concentration
-X-100	I-Concentration
+1	B-Concentration
+%	I-Concentration
+Triton	B-Reagent
+X-100	B-Concentration
 and	O
 transfer	B-Action
 the	O
@@ -905,16 +1001,18 @@ to	O
 4-ml	B-Amount
 push	B-Location
 cap	I-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Dilute	B-Action
 the	O
 lysate	B-Reagent
-(10-1	B-Concentration
+(	O
+10-1	B-Concentration
 to	I-Concentration
-10-3).
-	I-Concentration
+10-3	I-Concentration
+)	O
+.	O
 
 Spread	B-Action
 100	B-Amount
@@ -930,12 +1028,13 @@ Petri	I-Location
 dishes	I-Location
 and	O
 incubate	B-Action
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 The	O
 day	O
-after:	O
+after	O
+:	O
 Count	B-Action
 the	O
 CFUs	B-Reagent
@@ -947,10 +1046,11 @@ volume	B-Measure-Type
 plated	B-Action
 and	O
 the	O
-dilution.
-	B-Method
+dilution	B-Method
+.	O
 
-#CFUs/100μl	B-Reagent
+#	O
+CFUs/100μl	B-Reagent
 x	O
 500	B-Numerical
 x	O
@@ -958,8 +1058,7 @@ dilution	B-Method
 =	O
 CFUs	B-Reagent
 per	O
-well
-	B-Location
+well	B-Location
 
 
 

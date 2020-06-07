@@ -6,8 +6,9 @@ using	O
 T7	B-Reagent
 Endonuclease	I-Reagent
 I	I-Reagent
-(M0302)
-	O
+(	O
+M0302	O
+)	O
 
 Set	B-Action
 up	I-Action
@@ -24,8 +25,8 @@ genomic	B-Reagent
 DNA	I-Reagent
 as	O
 a	O
-template.
-	O
+template	O
+.	O
 
 For	O
 each	O
@@ -35,16 +36,21 @@ up	I-Action
 3	B-Numerical
 PCR	B-Reagent
 reactions	I-Reagent
-(positive,	I-Reagent
-negative,	I-Reagent
-no-template	I-Reagent
-control).	I-Reagent
+(	O
+positive	B-Reagent
+,	O
+negative	B-Reagent
+,	O
+no-template	B-Reagent
+control	I-Reagent
+)	O
+.	O
 
 Gently	B-Modifier
 mix	B-Action
 the	O
-reaction.
-	B-Reagent
+reaction	B-Reagent
+.	O
 
 Collect	B-Action
 all	O
@@ -60,8 +66,8 @@ a	O
 quick	B-Modifier
 spin	B-Action
 if	O
-necessary.
-	O
+necessary	O
+.	O
 
 Transfer	B-Action
 PCR	B-Reagent
@@ -72,8 +78,8 @@ PCR	B-Device
 machine	I-Device
 and	O
 begin	O
-thermocycling.
-	B-Action
+thermocycling	B-Action
+.	O
 
 Analyze	B-Action
 a	O
@@ -90,8 +96,8 @@ verify	B-Action
 size	B-Measure-Type
 and	O
 appropriate	O
-amplification.
-	B-Method
+amplification	B-Method
+.	O
 
 Purify	B-Action
 the	O
@@ -106,9 +112,11 @@ XP	I-Reagent
 beads	I-Reagent
 following	O
 the	O
-manufacturer’s	O
-recommendations.
-	O
+manufacturer	O
+’	O
+s	O
+recommendations	O
+.	O
 
 Elute	B-Action
 PCR	B-Reagent
@@ -117,11 +125,12 @@ in	O
 30	B-Amount
 µl	I-Amount
 of	O
-water,	B-Reagent
+water	B-Reagent
+,	O
 recovering	B-Action
 25	B-Amount
-µl.
-	I-Amount
+µl	I-Amount
+.	O
 
 Measure	B-Action
 the	O
@@ -130,13 +139,14 @@ of	O
 the	O
 purified	B-Modifier
 PCR	B-Reagent
-products.
-	I-Reagent
+products	I-Reagent
+.	O
 
 Assemble	B-Action
 reactions	B-Reagent
 as	O
-follows:	O
+follows	O
+:	O
 Anneal	B-Action
 the	O
 PCR	B-Reagent
@@ -144,29 +154,36 @@ products	I-Reagent
 in	O
 a	O
 thermocycler	B-Device
-(see	O
+(	O
+see	O
 guidelines	O
 for	O
-conditions).	O
+conditions	O
+)	O
+.	O
 
 Add	B-Action
 1	B-Amount
-µl of	I-Amount
+µl	I-Amount
+of	O
 the	O
-T7	B-Reagent
-Endonuclease	I-Reagent
+T7	O
+Endonuclease	B-Reagent
 I	I-Reagent
-to	O
+to	I-Reagent
 the	O
 annealed	B-Modifier
-PCR	B-Reagent
-products.	I-Reagent
+PCR	I-Modifier
+products	B-Reagent
+.	I-Reagent
 
 Incubate	B-Action
-at 37°C	B-Temperature
-for	O
-15	B-Time
-minutes.	I-Time
+at	O
+37°C	B-Temperature
+for	I-Temperature
+15	O
+minutes	B-Time
+.	I-Time
 
 Stop	B-Action
 the	O
@@ -178,8 +195,8 @@ adding	B-Action
 of	O
 0.25	B-Concentration
 M	I-Concentration
-EDTA.
-	B-Reagent
+EDTA	B-Reagent
+.	O
 
 Purify	B-Action
 the	O
@@ -194,9 +211,11 @@ beads	I-Reagent
 according	O
 to	O
 the	O
-manufacturer’s	O
-suggestion.
-	O
+manufacturer	O
+’	O
+s	O
+suggestion	O
+.	O
 
 Elute	B-Action
 the	O
@@ -206,11 +225,12 @@ in	O
 20	B-Amount
 µl	I-Amount
 of	O
-water,	B-Reagent
+water	B-Reagent
+,	O
 recovering	B-Action
 15	B-Mention
-µl.
-	I-Mention
+µl	I-Mention
+.	O
 
 Analyze	B-Action
 the	O
@@ -225,8 +245,11 @@ of	O
 nuclease-specific	B-Reagent
 cleavage	I-Reagent
 products	I-Reagent
-(fraction	O
-cleaved).	O
+(	O
+fraction	O
+cleaved	O
+)	O
+.	O
 
 Calculate	B-Action
 the	O
@@ -236,18 +259,24 @@ modification	I-Measure-Type
 using	O
 the	O
 following	O
-formula: %	B-Method
+formula	B-Method
+:	O
+%	O
 gene	B-Measure-Type
 modification	I-Measure-Type
-=	O
+=	I-Measure-Type
 100	O
 x	O
-(1	O
+(	O
+1	O
 –	O
-(1-	O
+(	O
+1-	O
 fraction	O
-cleaved)1/2)
-	O
+cleaved	O
+)	O
+1/2	O
+)	O
 
 
 

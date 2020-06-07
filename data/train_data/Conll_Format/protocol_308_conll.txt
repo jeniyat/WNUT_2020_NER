@@ -5,8 +5,7 @@ construction	B-Method
 for	O
 Illumina	B-Reagent
 GA	I-Reagent
-II
-	I-Reagent
+II	I-Reagent
 
 Fragment	B-Action
 400ng	B-Amount
@@ -20,7 +19,10 @@ using	O
 RNA	B-Reagent
 fragmentation	I-Reagent
 buffer	I-Reagent
-(Ambion).	O
+(	O
+Ambion	O
+)	O
+.	O
 
 Purify	B-Action
 using	O
@@ -32,12 +34,15 @@ with	O
 0.35μl	B-Amount
 of	O
 GlycoBlue	B-Reagent
-(Ambion).
-	O
+(	O
+Ambion	O
+)	O
+.	O
 
 Dephosphorylate	B-Action
 the	O
-3’	B-Reagent
+3	B-Reagent
+’	I-Reagent
 end	I-Reagent
 the	I-Reagent
 RNA	I-Reagent
@@ -48,17 +53,20 @@ Antarctic	B-Reagent
 Phosphatase	I-Reagent
 Buffer	I-Reagent
 and	O
-0.5 μl	B-Amount
-Antarctic	B-Reagent
-Phosphatase	I-Reagent
-(NEB)	O
+0.5	B-Amount
+μl	I-Amount
+Antarctic	I-Amount
+Phosphatase	B-Reagent
+(	I-Reagent
+NEB	O
+)	O
 at	O
-37	B-Temperature
-°C	I-Temperature
-for	O
-20	B-Time
-minutes.
-	I-Time
+37	O
+°C	B-Temperature
+for	I-Temperature
+20	O
+minutes	B-Time
+.	I-Time
 
 Heat	B-Action
 inactivate	B-Reagent
@@ -66,12 +74,13 @@ at	O
 75°C	B-Temperature
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Phosphorylate	B-Action
 the	O
-5’	B-Reagent
+5	B-Reagent
+’	I-Reagent
 end	I-Reagent
 of	I-Reagent
 RNA	I-Reagent
@@ -83,22 +92,26 @@ T4	B-Reagent
 DNA	I-Reagent
 ligase	I-Reagent
 buffer	I-Reagent
-(it	O
+(	O
+it	O
 has	O
 1mM	B-Concentration
 ATP	B-Reagent
-final)	I-Reagent
+final	I-Reagent
+)	O
 and	O
 T4	B-Reagent
 PNK	I-Reagent
-(NEB)	O
+(	O
+NEB	O
+)	O
 at	O
 37	B-Temperature
 °C	I-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Purify	B-Action
 the	O
@@ -116,66 +129,92 @@ with	O
 2μl	B-Amount
 of	O
 GlycoBlue	B-Reagent
-(Ambion).
-	O
+(	O
+Ambion	O
+)	O
+.	O
 
 Ligate	B-Action
-the RNA	B-Reagent
+the	O
+RNA	B-Reagent
 samples	I-Reagent
-at	O
-37	B-Temperature
-°C	I-Temperature
-for	O
+at	I-Reagent
+37	O
+°C	B-Temperature
+for	I-Temperature
 one	B-Time
 hour	I-Time
-to	O
-3’	B-Reagent
+to	I-Time
+3	O
+’	B-Reagent
 linker	I-Reagent
-(5’‐/5rApp/CTG	I-Reagent
+(	I-Reagent
+5	I-Reagent
+’	I-Reagent
+‐/5rApp/CTG	I-Reagent
 TAG	I-Reagent
 GCA	I-Reagent
 CCA	I-Reagent
 TCA	I-Reagent
-AT/3ddC/‐3’)	I-Reagent
-(synthesized	O
+AT/3ddC/‐3	I-Reagent
+’	I-Reagent
+)	I-Reagent
+(	I-Reagent
+synthesized	O
 by	O
-IDT)	O
-using:	O
-T4	B-Reagent
-RNA	I-Reagent
+IDT	O
+)	O
+using	O
+:	O
+T4	O
+RNA	B-Reagent
 ligase	I-Reagent
 1	I-Reagent
-(NEB),	O
-5X	B-Concentration
-ATP‐free	B-Modifier
-T4	B-Reagent
-RNA	I-Reagent
+(	I-Reagent
+NEB	O
+)	O
+,	O
+5X	O
+ATP‐free	B-Concentration
+T4	B-Modifier
+RNA	B-Reagent
 ligase	I-Reagent
 buffer	I-Reagent
-(16.5	B-Concentration
+(	I-Reagent
+16.5	B-Concentration
 mM	I-Concentration
-DTT,	B-Reagent
-41.5%	B-Concentration
-glycerol,	B-Reagent
+DTT	I-Concentration
+,	B-Reagent
+41.5	B-Concentration
+%	I-Concentration
+glycerol	I-Concentration
+,	B-Reagent
 250	B-Concentration
 mM	I-Concentration
-HEPES‐KOH,	B-Reagent
-pH8.3,	B-pH
-50	B-Concentration
-mM	I-Concentration
-MgCl2,	B-Reagent
-50 μg/ml	B-Concentration
-acetylated	B-Reagent
-BSA),	I-Reagent
+HEPES‐KOH	I-Concentration
+,	B-Reagent
+pH8.3	B-pH
+,	I-pH
+50	O
+mM	B-Concentration
+MgCl2	I-Concentration
+,	B-Reagent
+50	O
+μg/ml	B-Concentration
+acetylated	I-Concentration
+BSA	B-Reagent
+)	I-Reagent
+,	I-Reagent
 and	O
-10%	B-Concentration
-DMSO	B-Reagent
-.
-	O
+10	O
+%	B-Concentration
+DMSO	I-Concentration
+.	B-Reagent
 
 Purify	B-Action
 the	O
-RNAs in	B-Reagent
+RNAs	B-Reagent
+in	O
 the	O
 reactions	O
 using	O
@@ -184,60 +223,71 @@ acetate	I-Method
 and	I-Method
 ethanol	I-Method
 precipitation	I-Method
-with	O
+with	I-Method
 2μl	B-Amount
-of	O
+of	I-Amount
 GlycoBlue	B-Reagent
-(Ambion).
-	O
+(	I-Reagent
+Ambion	O
+)	O
+.	O
 
 Run	B-Action
 the	O
 RNA	B-Reagent
 samples	I-Reagent
 on	O
-6%	B-Concentration
+6	B-Concentration
+%	I-Concentration
 TBE‐Urea	B-Reagent
 PAGE	I-Reagent
 Gel	I-Reagent
-(Invitrogen).
-	O
+(	O
+Invitrogen	O
+)	O
+.	O
 
-Cut 100‐200nt	B-Action
-bands	B-Reagent
-and	O
+Cut	B-Action
+100‐200nt	B-Generic-Measure
+bands	I-Generic-Measure
+and	B-Reagent
 elute	B-Action
-overnight	B-Time
-with	O
+overnight	I-Action
+with	B-Time
 400μl	B-Amount
-stop	B-Reagent
-solution	I-Reagent
-(1M	B-Concentration
-ammonium	B-Reagent
-acetate	I-Reagent
-and	O
+stop	I-Amount
+solution	B-Reagent
+(	I-Reagent
+1M	B-Concentration
+ammonium	I-Concentration
+acetate	B-Reagent
+and	I-Reagent
 10mM	B-Concentration
-EDTA)	B-Reagent
+EDTA	I-Concentration
+)	B-Reagent
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	I-Temperature
 
 Purify	B-Action
-the RNAs	B-Reagent
-in	O
+the	O
+RNAs	B-Reagent
+in	I-Reagent
 the	O
 supernatant	B-Reagent
-using	O
+using	I-Reagent
 regular	B-Modifier
-ethanol	B-Method
-precipitation	I-Method
+ethanol	I-Modifier
+precipitation	B-Method
 method	I-Method
-with	O
+with	I-Method
 2μl	B-Amount
-of	O
+of	I-Amount
 GlycoBlue	B-Reagent
-(Ambion).
-	O
+(	I-Reagent
+Ambion	O
+)	O
+.	O
 
 Ligate	B-Action
 the	O
@@ -247,30 +297,41 @@ at	O
 37°C	B-Temperature
 for	O
 1	B-Time
-hour to	I-Time
-5’	B-Reagent
+hour	I-Time
+to	O
+5	O
+’	B-Reagent
 linker	I-Reagent
-(with	O
+(	I-Reagent
+with	O
 bar	O
-code)	O
-using:	O
-T4	B-Reagent
-RNA	I-Reagent
+code	O
+)	O
+using	O
+:	O
+T4	O
+RNA	B-Reagent
 ligase	I-Reagent
 1	I-Reagent
-(NEB),	O
+(	I-Reagent
+NEB	O
+)	O
+,	O
 10x	B-Concentration
-T4	B-Reagent
-RNA	I-Reagent
+T4	I-Concentration
+RNA	B-Reagent
 ligase	I-Reagent
 1	I-Reagent
 buffer	I-Reagent
-(NEB),	O
+(	I-Reagent
+NEB	O
+)	O
+,	O
 and	O
-10%	B-Concentration
-DMSO	B-Reagent
-.
-	O
+10	O
+%	B-Concentration
+DMSO	I-Concentration
+.	B-Reagent
 
 Purify	B-Action
 the	O
@@ -288,8 +349,8 @@ as	O
 described	O
 in	O
 steps	O
-8-11.
-	O
+8-11	O
+.	O
 
 Reverse	B-Action
 transcribe	I-Action
@@ -301,11 +362,15 @@ samples	I-Reagent
 using	O
 SuperScript	B-Device
 III	I-Device
-(Invitrogen)	O
+(	O
+Invitrogen	O
+)	O
 following	O
-manufacture’s	O
-protocol.
-	O
+manufacture	O
+’	O
+s	O
+protocol	O
+.	O
 
 The	O
 primer	B-Reagent
@@ -315,13 +380,16 @@ for	O
 reverse	B-Method
 transcription	I-Method
 is	O
-5’‐ATT	B-Reagent
+5	B-Reagent
+’	I-Reagent
+‐ATT	I-Reagent
 GAT	I-Reagent
 GGT	I-Reagent
 GCC	I-Reagent
 TAC	I-Reagent
-AG‐3’.
-	I-Reagent
+AG‐3	I-Reagent
+’	I-Reagent
+.	O
 
 Amplify	B-Action
 the	O
@@ -329,38 +397,46 @@ cDNA	B-Reagent
 samples	I-Reagent
 using	O
 Taq	B-Reagent
-(NEB)	O
+(	O
+NEB	O
+)	O
 following	O
-manufacture’s	O
-protocol.
-	O
+manufacture	O
+’	O
+s	O
+protocol	O
+.	O
 
 Purify	B-Action
 the	O
 PCR	B-Reagent
 products	I-Reagent
-(200‐300nt)	B-Generic-Measure
+(	O
+200‐300nt	B-Generic-Measure
+)	O
 using	O
 Qiagen	B-Device
 PCR	I-Device
 purification	I-Device
-kit.
-	I-Device
+kit	I-Device
+.	O
 
 Dilute	B-Action
-the purified	B-Modifier
-PCR	B-Reagent
-samples	I-Reagent
-to	O
+the	O
+purified	B-Modifier
+PCR	I-Modifier
+samples	B-Reagent
+to	I-Reagent
 10nM	B-Concentration
-and	O
-sequence using	B-Action
+and	I-Concentration
+sequence	B-Action
+using	I-Action
 Illumina	B-Device
 GA	I-Device
 II	I-Device
 sequencing	I-Device
-system.
-	I-Device
+system	I-Device
+.	I-Device
 
 
 

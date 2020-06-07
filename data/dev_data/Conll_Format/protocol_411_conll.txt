@@ -7,16 +7,17 @@ streptavidin	B-Reagent
 binding	I-Reagent
 using	O
 QCM-D	B-Action
-sensing
-	I-Action
+sensing	I-Action
 
 Prepare	B-Action
 a	O
 Hepes	B-Reagent
 Buffered	I-Reagent
 Saline	I-Reagent
-(HBS)	I-Reagent
-solution	I-Reagent
+(	O
+HBS	B-Reagent
+)	O
+solution	B-Reagent
 containing	O
 150	B-Concentration
 mM	I-Concentration
@@ -24,31 +25,33 @@ NaCl	B-Reagent
 and	O
 10	B-Concentration
 mM	I-Concentration
-Hepes.
-	B-Reagent
+Hepes	B-Reagent
+.	O
 
 Then	O
 prepare	B-Action
 a	O
 solution	B-Reagent
-of 25	B-Concentration
+of	O
+25	B-Concentration
 µg/ml	I-Concentration
-streptavidin	B-Reagent
-in	O
-HBS.
-	B-Reagent
+streptavidin	I-Concentration
+in	B-Reagent
+HBS	I-Reagent
+.	I-Reagent
 
 Using	O
 QCM-D	B-Action
-sensing,	I-Action
-make	I-Action
+sensing	I-Action
+,	O
+make	B-Action
 a	I-Action
 baseline	I-Action
 of	O
 the	O
 HBS	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Expose	B-Action
 the	O
@@ -59,7 +62,9 @@ non-diluted	B-Modifier
 Fetal	B-Reagent
 Bovine	I-Reagent
 Serum	I-Reagent
-(FBS)	I-Reagent
+(	O
+FBS	B-Reagent
+)	O
 for	O
 30-60	B-Time
 min	I-Time
@@ -73,17 +78,19 @@ measure	B-Action
 the	O
 amount	B-Amount
 of	O
-adsorbed FBS relative	B-Modifier
+adsorbed	B-Modifier
+FBS	I-Modifier
+relative	B-Reagent
 to	O
 the	O
-HBS	B-Reagent
-baseline	I-Reagent
-obtained	O
+HBS	O
+baseline	B-Reagent
+obtained	I-Reagent
 in	O
 the	O
 previous	O
-step.
-	O
+step	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -91,23 +98,27 @@ sensors	B-Device
 with	O
 the	O
 HBS	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Flow	B-Action
 the	O
 streptavidin	B-Reagent
 solution	I-Reagent
 over	O
-the modified	B-Modifier
-sensors	B-Device
-(100-500	B-Generic-Measure
-µl/min),	I-Generic-Measure
+the	O
+modified	B-Modifier
+sensors	I-Modifier
+(	B-Device
+100-500	B-Generic-Measure
+µl/min	I-Generic-Measure
+)	I-Generic-Measure
+,	O
 until	O
 they	O
 are	O
-saturated.
-	B-Modifier
+saturated	B-Modifier
+.	I-Modifier
 
 Rinse	B-Action
 the	O
@@ -115,8 +126,8 @@ sensors	B-Device
 with	O
 the	O
 HBS	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 
 

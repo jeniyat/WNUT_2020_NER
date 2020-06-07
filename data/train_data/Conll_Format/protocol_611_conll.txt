@@ -6,14 +6,17 @@ Start	I-Reagent
 High-Fidelity	I-Reagent
 DNA	I-Reagent
 Polymerase	I-Reagent
-(M0493).	O
+(	O
+M0493	O
+)	O
+.	O
 
 Set	B-Action
 up	I-Action
 the	O
 following	B-Modifier
-reaction:
-	B-Method
+reaction	B-Method
+:	O
 
 Component25	B-Amount
 µl	I-Amount
@@ -21,28 +24,30 @@ Reaction50	I-Amount
 µl	I-Amount
 ReactionFinal	O
 Concentration5X	B-Numerical
-Q5 Reaction	B-Reagent
+Q5	B-Reagent
+Reaction	I-Reagent
 Buffer5	I-Reagent
 µl10	B-Amount
 µl1X10	I-Amount
 mM	B-Concentration
-dNTPs0.5	B-Reagent
+dNTPs0.5	I-Concentration
 µl1	B-Amount
 µl200	I-Amount
 µM10	B-Concentration
 µM	I-Concentration
-Forward	B-Reagent
-Primer1.25	I-Reagent
+Forward	I-Concentration
+Primer1.25	B-Reagent
 µl2.5	B-Amount
 µl0.5	I-Amount
 µM10	B-Concentration
 µM	I-Concentration
-Reverse	B-Reagent
-Primer1.25	I-Reagent
+Reverse	I-Concentration
+Primer1.25	B-Reagent
 µl2.5	B-Amount
 µl0.5	I-Amount
 µMTemplate	B-Concentration
-DNAvariablevariable<	B-Reagent
+DNAvariablevariable	B-Reagent
+<	O
 1,000	B-Amount
 ngQ5	I-Amount
 Hot	B-Reagent
@@ -53,24 +58,37 @@ Polymerase0.25	I-Reagent
 µl0.5	B-Amount
 µl0.02	I-Amount
 U/µl5X	B-Generic-Measure
-Q5	B-Reagent
-High	I-Reagent
+Q5	B-Numerical
+High	B-Reagent
 GC	I-Reagent
 Enhancer	I-Reagent
-(optional)(5	B-Modifier
-µl)(10	B-Amount
-µl)(1X)Nuclease-Free	I-Amount
-Waterto	B-Reagent
-25	B-Amount
-µlto	I-Amount
+(	I-Reagent
+optional	B-Modifier
+)	I-Modifier
+(	O
+5	O
+µl	B-Amount
+)	I-Amount
+(	O
+10	B-Amount
+µl	I-Amount
+)	I-Amount
+(	O
+1X	B-Numerical
+)	I-Numerical
+Nuclease-Free	B-Reagent
+Waterto	I-Reagent
+25	O
+µlto	B-Amount
 50	I-Amount
-µl. 	I-Amount
+µl	I-Amount
+.	I-Amount
 
 Gently	B-Modifier
 mix	B-Action
 the	O
-reaction.
-	B-Reagent
+reaction	B-Reagent
+.	O
 
 Collect	B-Action
 all	B-Modifier
@@ -102,8 +120,8 @@ machine	I-Device
 without	O
 a	O
 heated	B-Modifier
-lid.
-	B-Seal
+lid	B-Seal
+.	O
 
 Transfer	B-Action
 PCR	B-Location
@@ -114,8 +132,8 @@ PCR	B-Device
 machine	I-Device
 and	O
 begin	B-Action
-thermocycling.
-	B-Method
+thermocycling	B-Method
+.	O
 
 
 

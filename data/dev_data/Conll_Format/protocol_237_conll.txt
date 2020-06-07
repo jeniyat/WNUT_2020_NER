@@ -1,8 +1,7 @@
 Direct-Blot™	B-Method
 Western	I-Method
 Blotting	I-Method
-Protocol
-	O
+Protocol	O
 
 Place	B-Action
 cells	B-Reagent
@@ -16,8 +15,8 @@ to	O
 collect	B-Action
 the	O
 cell	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Lyse	B-Action
 the	O
@@ -34,32 +33,37 @@ ice	B-Location
 for	O
 30	B-Time
 min	I-Time
-(For	O
+(	O
+For	O
 1	B-Amount
 X	I-Amount
 106	I-Amount
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 lyse	B-Action
 with	O
 100	B-Amount
 µlof	I-Amount
 lysis	B-Reagent
-buffer).
-	I-Reagent
+buffer	I-Reagent
+)	O
+.	O
 
 Centrifuge	B-Action
 at	O
 14,000	B-Speed
 rpm	I-Speed
-(16,000	I-Speed
+(	O
+16,000	B-Speed
 x	I-Speed
-g)	I-Speed
+g	I-Speed
+)	O
 for	O
 10	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Transfer	B-Action
 the	O
@@ -71,8 +75,8 @@ tube	B-Location
 and	O
 discard	B-Action
 the	O
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Remove	B-Action
 20	B-Amount
@@ -87,14 +91,14 @@ with	O
 of	O
 2x	B-Concentration
 sample	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Boil	B-Action
 for	O
 5	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Cool	B-Action
 at	O
@@ -102,14 +106,14 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Microcentrifuge	B-Action
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Load	B-Action
 up	B-Modifier
@@ -126,8 +130,8 @@ a	O
 1.5	B-Size
 mm	I-Size
 thick	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Set	B-Action
 gel	B-Reagent
@@ -136,9 +140,11 @@ conditions	O
 according	O
 to	O
 the	O
-manufacturer’s	O
-instructions.
-	O
+manufacturer	O
+’	O
+s	O
+instructions	O
+.	O
 
 Transfer	B-Action
 the	O
@@ -155,9 +161,11 @@ settings	I-Generic-Measure
 according	O
 to	O
 the	O
-manufacturer’s	O
-instructions.
-	O
+manufacturer	O
+’	O
+s	O
+instructions	O
+.	O
 
 Remove	B-Action
 the	O
@@ -175,7 +183,8 @@ blocking	B-Reagent
 buffer	I-Reagent
 consisting	O
 of	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 nonfat	B-Reagent
 dry	I-Reagent
 milk/TBS-T.	I-Reagent
@@ -187,14 +196,15 @@ for	O
 hour	I-Time
 at	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 or	O
 overnight	B-Time
 at	O
 4°C	B-Temperature
 with	O
-agitation.
-	B-Method
+agitation	B-Method
+.	O
 
 Dilute	B-Action
 the	O
@@ -205,16 +215,19 @@ the	O
 recommended	O
 concentration/dilution	B-Measure-Type
 in	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 nonfat	B-Modifier
 dry	I-Modifier
 milk/TBS-T**	B-Reagent
-(usually	O
+(	O
+usually	O
 at	O
 a	O
 1:1000-1:2000	B-Concentration
-dilution).
-	B-Reagent
+dilution	B-Reagent
+)	O
+.	O
 
 Place	B-Action
 the	O
@@ -231,77 +244,97 @@ for	O
 hours	I-Time
 at	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 or	O
 overnight	B-Time
 at	O
 4°C	B-Temperature
 with	B-Modifier
-agitation.
-	I-Modifier
+agitation	I-Modifier
+.	O
 
-Wash 	B-Action
+Wash	B-Action
 for	O
-5	B-Time
-minutes	I-Time
-with	O
+5	O
+minutes	B-Time
+with	I-Time
 Wash	B-Reagent
 Buffer	I-Reagent
-(TBS	I-Reagent
-containing	O
-0.1%	B-Concentration
-Tween-20).
-	B-Reagent
+(	I-Reagent
+TBS	I-Reagent
+containing	I-Reagent
+0.1	B-Concentration
+%	I-Concentration
+Tween-20	I-Concentration
+)	B-Reagent
+.	O
 
-[wash	B-Action
-1/3]	O
-Wash 	B-Action
+[	O
+wash	B-Action
+1/3	O
+]	O
+Wash	B-Action
 for	O
-5	B-Time
-minutes	I-Time
-with	O
+5	O
+minutes	B-Time
+with	I-Time
 Wash	B-Reagent
 Buffer	I-Reagent
-(TBS	I-Reagent
-containing	O
-0.1%	B-Concentration
-Tween-20).
-	B-Reagent
+(	I-Reagent
+TBS	I-Reagent
+containing	I-Reagent
+0.1	B-Concentration
+%	I-Concentration
+Tween-20	I-Concentration
+)	B-Reagent
+.	O
 
-[wash	B-Action
-2/3]	O
-Wash 	B-Action
+[	O
+wash	B-Action
+2/3	O
+]	O
+Wash	B-Action
 for	O
-5	B-Time
-minutes	I-Time
-with	O
+5	O
+minutes	B-Time
+with	I-Time
 Wash	B-Reagent
 Buffer	I-Reagent
-(TBS	I-Reagent
-containing	O
-0.1%	B-Concentration
-Tween-20).
-	B-Reagent
+(	I-Reagent
+TBS	I-Reagent
+containing	I-Reagent
+0.1	B-Concentration
+%	I-Concentration
+Tween-20	I-Concentration
+)	B-Reagent
+.	O
 
-[wash	B-Action
-3/3]	O
+[	O
+wash	B-Action
+3/3	O
+]	O
 Incubate	B-Action
 membrane	B-Reagent
-(protein	B-Modifier
+(	O
+protein	B-Modifier
 side	I-Modifier
-up)	I-Modifier
+up	I-Modifier
+)	O
 with	O
 10	B-Amount
 ml	I-Amount
 of	O
 ECL	B-Reagent
-(enhanced	I-Reagent
+(	O
+enhanced	B-Reagent
 chemiluminescence	I-Reagent
-substrate)	I-Reagent
+substrate	I-Reagent
+)	O
 for	O
 1-2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 The	O
 final	B-Modifier
@@ -309,35 +342,39 @@ volume	B-Measure-Type
 required	O
 is	O
 0.125	B-Amount
-ml/cm2.
-	I-Amount
+ml/cm2	I-Amount
+.	O
 
 Drain	B-Action
 off	I-Action
 the	O
 excess	B-Modifier
 detection	B-Reagent
-reagent,	I-Reagent
+reagent	I-Reagent
+,	O
 wrap	B-Action
 up	I-Action
 the	O
-blots,	B-Reagent
+blots	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 smooth	B-Action
 out	I-Action
 any	O
 air	B-Reagent
-bubbles.
-	I-Reagent
+bubbles	I-Reagent
+.	O
 
 Place	B-Action
 the	O
 wrapped	B-Reagent
-blots,	I-Reagent
+blots	I-Reagent
+,	O
 protein	B-Modifier
 side	I-Modifier
-up,	I-Modifier
+up	I-Modifier
+,	O
 in	O
 an	O
 X-ray	B-Location
@@ -347,8 +384,8 @@ and	O
 expose	B-Action
 to	O
 x-ray	B-Reagent
-film.
-	I-Reagent
+film	I-Reagent
+.	O
 
 Exposures	B-Method
 can	O
@@ -358,8 +395,8 @@ from	O
 seconds	I-Time
 to	I-Time
 60	I-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 
 

@@ -631,7 +631,17 @@ def convert_standoff_conll_single_file(input_standoff_folder, output_conll_folde
     merge_files(output_conll_folder, output_file)
 
 if __name__ == "__main__":
-    covert_standoff_to_conll()
+    input_folder_main = "../../../data/test_data/Standoff_Format/"
+    output_folder = "../../../data/test_data/Conll_Format/"
+    covert_standoff_to_conll(input_folder_main, output_folder)
+
+    input_folder_main = "../../../data/dev_data/Standoff_Format/"
+    output_folder = "../../../data/dev_data/Conll_Format/"
+    covert_standoff_to_conll(input_folder_main, output_folder)
+
+    input_folder_main = "../../../data/train_data/Standoff_Format/"
+    output_folder = "../../../data/train_data/Conll_Format/"
+    covert_standoff_to_conll(input_folder_main, output_folder)
 
 
 

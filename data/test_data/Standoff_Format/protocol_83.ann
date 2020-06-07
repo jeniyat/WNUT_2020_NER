@@ -1,153 +1,105 @@
-T1	Action 139 155	gravity filtered
-E1	Action:T1 Acts-on:T16 Using:T19 Site:T21 Product:T15
-T2	Action 324 338	passed through
-E2	Action:T2 Acts-on:T22 Site:T23 Product:T26
-T4	Action 485 490	added
-E4	Action:T4 Acts-on:T27 Acts-on2:T3 Site:T29 Product:T31
-T6	Action 683 688	added
-E6	Action:T6 Acts-on:T5 Using:T32
-T7	Action 776 782	rinsed
-E7	Action:T7 Acts-on:T34 Site:T33 Count:T37
-T8	Action 805 811	filled
-E8	Action:T8 Acts-on:T34 Using:T39
-T9	Action 937 943	filled
-E9	Action:T9 Acts-on:T40
-T10	Action 1057 1063	placed
-E10	Action:T10 Acts-on:T46
-T11	Action 1218 1223	taken
-E11	Action:T11 Acts-on:T51 Site:T53 Site2:T56
-T12	Action 1389 1399	determined
-E12	Action:T12 Measure-Type-Link:T58 Measure-Type-Link2:T57 Using:T59 Using2:T92
-T13	Action 1493 1503	calculated
-E13	Action:T13 Measure-Type-Link:T60 Site:T61 Using:T62
-T14	Action 1648 1658	calculated
-E14	Action:T14 Measure-Type-Link:T63
-T15	Reagent 101 120	grazer-free diluent
-T16	Reagent 121 135	whole seawater
-T17	Modifier 164 175	acid-washed
-T18	Size 176 187	0.2–0.45 µm
-T19	Device 188 195	filters
-T20	Modifier 250 255	clean
-T21	Location 256 262	carboy
-R1	Setting Arg1:T19 Arg2:T18	
-R2	Mod-Link Arg1:T19 Arg2:T17	
-R3	Mod-Link Arg1:T21 Arg2:T20	
-T22	Reagent 301 320	grazer-free diluent
-T23	Device 341 374	tangential flow filtration system
-T24	Numerical 380 390	kilodalton
-T25	Measure-Type 397 406	pore size
-T26	Reagent 421 439	virus-free diluent
-R4	Setting Arg1:E2 Arg2:T24	
-R5	Of-Type Arg1:T24 Arg2:T25	
-T3	Reagent 445 456	grazer-free
-T27	Reagent 461 480	virus-free diluents
-T28	Size 494 498	10-L
-T29	Location 499 520	polycarbonate bottles
-T30	Concentration 528 547	correct proportions
-T31	Reagent 562 589	parallel t0 dilution series
-R6	Measure Arg1:T29 Arg2:T28	
-R7	Measure Arg1:T27 Arg2:T30	
-R8	Measure Arg1:T3 Arg2:T30	
-T5	Reagent 638 667	mesoplankton-free whole water
-T32	Method 692 701	siphoning
-T33	Location 722 732	t0 bottles
-T34	Location 749 770	polycarbonate bottles
-T35	Size 745 748	1-L
-T36	Modifier 734 744	triplicate
-T37	Numerical 783 788	twice
-T38	Modifier 798 804	gently
-T39	Method 815 824	siphoning
-R9	Measure Arg1:T34 Arg2:T35	
-R10	Mod-Link Arg1:T34 Arg2:T36	
-R11	Mod-Link Arg1:E8 Arg2:T38	
-T40	Location 925 932	bottles
-T41	Action 958 972	avoid trapping
-E3	Action:T41 Acts-on:T42 Site:T43
-T42	Reagent 973 984	air bubbles
-T43	Location 985 991	inside
-T44	Modifier 944 954	completely
-R12	Mod-Link Arg1:E9 Arg2:T44	
-T45	Modifier 1064 1072	randomly
-R13	Mod-Link Arg1:E10 Arg2:T45	
-T46	Location 1032 1052	experimental bottles
-T47	Action 1107 1120	determination
-E5	Action:T47 Measure-Type-Link:T48 Measure-Type-Link2:T49 Measure-Type-Link3:T50
-T48	Measure-Type 1124 1149	phytoplankton composition
-T49	Measure-Type 1154 1163	abundance
-T50	Measure-Type 1168 1183	virus abundance
-T51	Reagent 1185 1206	triplicate subsamples
-T52	Size 1233 1237	10 L
-T53	Location 1238 1257	t0 dilution bottles
-T54	Amount 1266 1277	0.2–0.45-µm
-T55	Generic-Measure 1282 1285	kDa
-T56	Reagent 1286 1294	diluents
-R14	Measure Arg1:T53 Arg2:T52	
-R15	Measure Arg1:T56 Arg2:T55	
-R16	Measure Arg1:T56 Arg2:T54	
-T57	Measure-Type 1325 1350	phytoplankton composition
-T58	Measure-Type 1355 1364	abundance
-T59	Method 1429 1443	flow cytometry
-T60	Measure-Type 1453 1479	phytoplankton growth rates
-T61	Location 1514 1533	experimental bottle
-T62	Method 1603 1619	µ = ln(Pt/Po)/t.
-T63	Measure-Type 1631 1644	dilution rate
-T64	Method 0 10	Estimation
-T65	Modifier 14 27	viral-induced
-T66	Measure-Type 28 51	phytoplankton mortality
-T67	Method 62 86	modified dilution method
-T68	Device 203 241	PALL Acropak™ Supor® membrane capsules
-T69	Action 90 96	create
-E15	Action:T69 Acts-on:T15
-T70	Modifier 264 269	After
-T71	Method 270 288	gravity filtration
-T72	Modifier 289 293	half
-R17	Mod-Link Arg1:T22 Arg2:T72	
-T73	Concentration 597 600	20%
-T74	Concentration 602 605	40%
-T75	Concentration 607 610	70%
-T76	Concentration 616 620	100%
-T77	Reagent 621 632	whole water
-R18	Measure Arg1:T77 Arg2:T76	
-R19	Measure Arg1:T77 Arg2:T75	
-R20	Measure Arg1:T77 Arg2:T74	
-R21	Measure Arg1:T77 Arg2:T73	
-T78	Modifier 676 682	gently
-R22	Mod-Link Arg1:E6 Arg2:T78	
-T79	Modifier 708 712	each
-R23	Mod-Link Arg1:T33 Arg2:T79	
-T81	Reagent 861 868	grazers
-T82	Reagent 870 877	viruses
-T83	Reagent 883 896	phytoplankton
-T84	Modifier 838 853	physical damage
-T80	Action 829 837	minimize
-E16	Action:T80 Acts-on:T81 Acts-on2:T82 Acts-on3:T83
-R24	Mod-Link Arg1:E16 Arg2:T84	
-T85	Modifier 992 1004	upon closure
-R25	Mod-Link Arg1:E3 Arg2:T85	
-T86	Modifier 1006 1019	After filling
-T87	Modifier 1021 1031	triplicate
-R26	Mod-Link Arg1:T46 Arg2:T87	
-T88	Amount 1208 1212	5 mL
-R27	Measure Arg1:T51 Arg2:T88	
-T89	Modifier 1296 1303	Initial
-T90	Modifier 1313 1318	final
-T91	Modifier 1379 1388	typically
-R28	Mod-Link Arg1:E12 Arg2:T91	
-T92	Method 1403 1422	analysis of samples
-T93	Modifier 1444 1452	Apparent
-T94	Modifier 1509 1513	each
-R29	Mod-Link Arg1:T61 Arg2:T94	
-T95	Modifier 1541 1548	changes
-T96	Measure-Type 1552 1561	abundance
-T97	Method 1573 1583	incubation
-T98	Measure-Type 1678 1701	phytoplankton abundance
-T99	Modifier 1705 1709	each
-T100	Location 1710 1716	bottle
-R30	Mod-Link Arg1:T100 Arg2:T99	
-T101	Measure-Type 1724 1742	averaged abundance
-T102	Numerical 1776 1779	3–6
-T103	Location 1780 1787	bottles
-R31	Measure Arg1:T103 Arg2:T102	
-T104	Modifier 1624 1630	actual
-T105	Numerical 1763 1767	100%
-T106	Measure-Type 1768 1774	counts
+T1	Method 0 10	Estimation
+T2	Modifier 14 27	viral-induced
+T3	Measure-Type 28 51	phytoplankton mortality
+T4	Method 62 86	modified dilution method
+T5	Action 90 96	create
+T6	Reagent 101 135	grazer-free diluent whole seawater
+T7	Action 139 155	gravity filtered
+T8	Modifier 164 175	acid-washed
+T9	Size 176 187	0.2–0.45 µm
+T10	Device 188 195	filters
+T11	Device 203 241	PALL Acropak™ Supor® membrane capsules
+T12	Modifier 250 255	clean
+T13	Location 256 262	carboy
+T14	Modifier 264 269	After
+T15	Method 270 288	gravity filtration
+T16	Modifier 289 293	half
+T17	Reagent 301 320	grazer-free diluent
+T18	Action 324 338	passed through
+T19	Device 341 374	tangential flow filtration system
+T20	Numerical 380 390	kilodalton
+T21	Measure-Type 397 406	pore size
+T22	Reagent 421 439	virus-free diluent
+T23	Reagent 445 456	grazer-free
+T24	Reagent 461 480	virus-free diluents
+T25	Action 485 490	added
+T26	Size 494 498	10-L
+T27	Location 499 520	polycarbonate bottles
+T28	Concentration 528 547	correct proportions
+T29	Reagent 562 589	parallel t0 dilution series
+T30	Concentration 597 601	20 %
+T31	Concentration 603 607	40 %
+T32	Concentration 609 613	70 %
+T33	Concentration 619 624	100 %
+T34	Reagent 625 636	whole water
+T35	Reagent 642 671	mesoplankton-free whole water
+T36	Modifier 680 686	gently
+T37	Action 687 692	added
+T38	Method 696 705	siphoning
+T39	Modifier 712 716	each
+T40	Location 726 736	t0 bottles
+T41	Modifier 738 748	triplicate
+T42	Size 749 752	1-L
+T43	Location 753 774	polycarbonate bottles
+T44	Action 780 786	rinsed
+T45	Numerical 787 792	twice
+T46	Modifier 802 808	gently
+T47	Action 809 815	filled
+T48	Method 819 828	siphoning
+T49	Action 833 841	minimize
+T50	Modifier 842 857	physical damage
+T51	Reagent 865 872	grazers
+T52	Reagent 874 881	viruses
+T53	Reagent 887 900	phytoplankton
+T54	Location 929 936	bottles
+T55	Action 941 947	filled
+T56	Modifier 948 958	completely
+T57	Action 962 976	avoid trapping
+T58	Reagent 977 988	air bubbles
+T59	Location 989 995	inside
+T60	Modifier 996 1008	upon closure
+T61	Modifier 1010 1023	After filling
+T62	Modifier 1025 1035	triplicate
+T63	Location 1036 1056	experimental bottles
+T64	Action 1061 1067	placed
+T65	Modifier 1068 1076	randomly
+T66	Action 1111 1124	determination
+T67	Measure-Type 1128 1153	phytoplankton composition
+T68	Measure-Type 1158 1167	abundance
+T69	Measure-Type 1172 1187	virus abundance
+T70	Reagent 1189 1210	triplicate subsamples
+T71	Amount 1212 1216	5 mL
+T72	Action 1222 1227	taken
+T73	Size 1237 1241	10 L
+T74	Location 1242 1261	t0 dilution bottles
+T75	Amount 1270 1281	0.2–0.45-µm
+T76	Generic-Measure 1286 1289	kDa
+T77	Reagent 1290 1298	diluents
+T78	Modifier 1300 1307	Initial
+T79	Modifier 1317 1322	final
+T80	Measure-Type 1329 1354	phytoplankton composition
+T81	Measure-Type 1359 1368	abundance
+T82	Modifier 1383 1392	typically
+T83	Action 1393 1403	determined
+T84	Method 1407 1426	analysis of samples
+T85	Method 1433 1447	flow cytometry
+T86	Modifier 1448 1456	Apparent
+T87	Measure-Type 1457 1483	phytoplankton growth rates
+T88	Action 1497 1507	calculated
+T89	Modifier 1513 1517	each
+T90	Location 1518 1537	experimental bottle
+T91	Modifier 1545 1552	changes
+T92	Measure-Type 1556 1565	abundance
+T93	Method 1577 1587	incubation
+T94	Method 1609 1627	µ = ln (Pt/Po) /t.
+T95	Modifier 1632 1638	actual
+T96	Measure-Type 1639 1652	dilution rate
+T97	Action 1656 1666	calculated
+T98	Measure-Type 1686 1709	phytoplankton abundance
+T99	Modifier 1713 1717	each
+T100	Location 1718 1724	bottle
+T101	Measure-Type 1732 1750	averaged abundance
+T102	Numerical 1771 1776	100 %
+T103	Measure-Type 1777 1783	counts
+T104	Numerical 1785 1788	3–6
+T105	Location 1789 1796	bottles

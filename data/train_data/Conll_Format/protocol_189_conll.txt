@@ -5,8 +5,7 @@ from	O
 Low	B-Modifier
 Melting	I-Modifier
 Point	I-Modifier
-Agarose
-	B-Reagent
+Agarose	B-Reagent
 
 Low	B-Modifier
 melting	I-Modifier
@@ -24,13 +23,14 @@ up	I-Action
 in	O
 the	O
 cold	B-Temperature
-room,	I-Temperature
+room	I-Temperature
+,	O
 but	O
 electrophoresed	B-Action
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 The	O
 gels	B-Reagent
@@ -52,8 +52,8 @@ DNA	B-Reagent
 bands	I-Reagent
 from	O
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Cut	B-Action
 out	I-Action
@@ -66,8 +66,8 @@ gel	B-Reagent
 with	O
 new	B-Modifier
 razor	B-Device
-blades.
-	I-Device
+blades	I-Device
+.	O
 
 Use	B-Action
 a	O
@@ -76,8 +76,8 @@ razor	B-Device
 blade	I-Device
 for	O
 each	O
-band.
-	B-Reagent
+band	B-Reagent
+.	O
 
 Place	B-Action
 the	O
@@ -87,7 +87,8 @@ into	O
 sterile	B-Location
 capped	I-Location
 tubes	I-Location
-(the	O
+(	O
+the	O
 size	B-Measure-Type
 of	O
 the	O
@@ -99,8 +100,9 @@ volume	B-Measure-Type
 of	O
 the	O
 agarose	B-Reagent
-involved).
-	O
+involved	O
+)	O
+.	O
 
 Add	B-Action
 1X	B-Concentration
@@ -111,12 +113,14 @@ the	O
 tubes	B-Location
 of	O
 agarose	O
-(as	O
+(	O
+as	O
 small	O
 a	O
 volume	B-Measure-Type
 as	O
-possible,	O
+possible	O
+,	O
 usually	O
 about	O
 5X	B-Numerical
@@ -125,15 +129,16 @@ volume	B-Measure-Type
 of	O
 the	O
 gel	B-Reagent
-pieces).
-	I-Reagent
+pieces	I-Reagent
+)	O
+.	O
 
 Transfer	B-Action
 the	O
 tubes	B-Location
 to	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Add	B-Action
 an	O
@@ -141,8 +146,8 @@ equal	B-Measure-Type
 volume	I-Measure-Type
 of	O
 buffer-saturated	B-Reagent
-phenol.
-	I-Reagent
+phenol	I-Reagent
+.	O
 
 The	O
 phenol	B-Reagent
@@ -151,8 +156,8 @@ have	O
 been	O
 warmed	B-Action
 to	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -163,13 +168,14 @@ temperature	I-Temperature
 to	O
 separate	B-Action
 the	O
-phases.
-	B-Reagent
+phases	B-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
 min	I-Time
 in	O
@@ -180,8 +186,8 @@ or	O
 min	I-Time
 in	O
 the	O
-microfuge.
-	B-Device
+microfuge	B-Device
+.	O
 
 Transfer	B-Action
 the	O
@@ -190,21 +196,27 @@ aqueous	I-Reagent
 layers	I-Reagent
 to	O
 clean	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Add	B-Action
 an	O
 equal	B-Measure-Type
 volume	I-Measure-Type
 of	O
-phenol:CHCl3:Isoamyl	B-Reagent
+phenol	B-Reagent
+:	I-Reagent
+CHCl3	I-Reagent
+:	I-Reagent
+Isoamyl	I-Reagent
 alcohol	I-Reagent
-(25:24:1)	B-Concentration
+(	O
+25:24:1	B-Concentration
+)	O
 to	O
 the	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -212,7 +224,8 @@ and	O
 centrifuge	B-Action
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
 min	I-Time
 in	O
@@ -223,8 +236,8 @@ or	O
 min	I-Time
 in	O
 the	O
-microfuge.
-	B-Device
+microfuge	B-Device
+.	O
 
 Re-extract	B-Action
 the	O
@@ -232,15 +245,19 @@ aqueous	B-Reagent
 layer	I-Reagent
 2X	B-Numerical
 with	O
-CHCl3:Isoamyl	B-Reagent
+CHCl3	B-Reagent
+:	I-Reagent
+Isoamyl	I-Reagent
 alcohol	I-Reagent
-(24:1)	B-Concentration
+(	O
+24:1	B-Concentration
+)	O
 in	O
 the	O
 centrifuge	B-Device
 as	O
-before.
-	O
+before	O
+.	O
 
 Add	B-Action
 3	B-Concentration
@@ -262,12 +279,13 @@ with	O
 2X	B-Numerical
 volumes	B-Measure-Type
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 at	O
 -20°C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -275,8 +293,8 @@ tubes	B-Location
 to	O
 pellet	B-Action
 the	O
-DNAs.
-	B-Reagent
+DNAs	B-Reagent
+.	O
 
 Centrifuge	B-Action
 in	O
@@ -284,9 +302,11 @@ the	O
 Sorvall	B-Device
 at	O
 10,000	B-Speed
-rpm,	I-Speed
+rpm	I-Speed
+,	O
 10	B-Time
-min,	I-Time
+min	I-Time
+,	O
 4°C	B-Temperature
 or	O
 10-15	B-Time
@@ -295,14 +315,16 @@ at	O
 4°C	B-Temperature
 in	O
 the	O
-microfuge.	B-Device
+microfuge	B-Device
+.	O
 
 Wash	B-Action
 the	O
 DNAs	B-Reagent
 1X	B-Numerical
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 in	O
 the	O
@@ -319,13 +341,15 @@ the	O
 vacuum	B-Device
 desiccator	I-Device
 briefly	B-Modifier
-(10-15	B-Time
-min)	I-Time
+(	O
+10-15	B-Time
+min	I-Time
+)	O
 to	O
 remove	B-Action
 the	O
-EtOH.
-	B-Reagent
+EtOH	B-Reagent
+.	O
 
 Resuspend	B-Action
 the	O
@@ -337,8 +361,8 @@ volume	I-Generic-Measure
 of	O
 1X	B-Concentration
 TE	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Heat	B-Action
 the	O
@@ -347,12 +371,12 @@ at	O
 65°C	B-Temperature
 for	O
 10-15	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Mix	B-Action
-well.
-	B-Modifier
+well	B-Modifier
+.	O
 
 
 

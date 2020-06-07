@@ -1,37 +1,37 @@
-## Evaluation 
+## Evaluting model performance:
 
-The following script can be used for evaluation of the the Named Entity Recgonizer:
+The following script should be used to evaluate the pefromnace of the model predictions:
   
-      ./eval/evalutation.py 
+      ./evalutation.py 
 
-The participants are required to produce entity sequence for each sentence and submit the predictions as [StandOff format](../../data/Readme.md##-The-standoff-format:).
+The participants are required to produce entity sequence for each sentence and submit the predictions as either [StandOff format](../../data/Readme.md##-The-standoff-format:) or [CoNLL format](../../data/Readme.md##-The-conll-format:).
 
 
-The evaluation script takes `<location of StandOff format gold data>` and `<location of StandOff format predicted data>` as input, and then outputs the detailed perfromance of the NER tagger. 
+The evaluation script takes `<location of gold data>` and `<location of predicted data>` as input, and then outputs the detailed perfromance of the NER tagger. 
 
-For example, below is the detailed performance of the Linear CRF NER.
+For example, below is the detailed performance of the provided Linear CRF NER.
 
 ```
-pprocessed 42517 tokens with 16326 phrases; found: 15885 phrases; correct: 11899.
-accuracy:  81.78%; precision:  74.91%; recall:  72.88%; FB1:  73.88
-           Action: precision:  83.97%; recall:  83.97%; FB1:  83.97 foundGuessed:  4135
-           Amount: precision:  85.38%; recall:  83.36%; FB1:  84.36 foundGuessed:  1156
-    Concentration: precision:  79.00%; recall:  79.29%; FB1:  79.14 foundGuessed:  538
-           Device: precision:  60.74%; recall:  56.08%; FB1:  58.31 foundGuessed:  433
-  Generic-Measure: precision:  35.92%; recall:  26.24%; FB1:  30.33 foundGuessed:  103
-         Location: precision:  67.69%; recall:  68.15%; FB1:  67.92 foundGuessed:  1334
-     Measure-Type: precision:  50.21%; recall:  45.02%; FB1:  47.47 foundGuessed:  243
-          Mention: precision:  65.38%; recall:  60.71%; FB1:  62.96 foundGuessed:  52
-           Method: precision:  48.28%; recall:  36.57%; FB1:  41.62 foundGuessed:  437
-         Modifier: precision:  56.11%; recall:  50.59%; FB1:  53.21 foundGuessed:  1449
-        Numerical: precision:  55.88%; recall:  57.58%; FB1:  56.72 foundGuessed:  238
-          Reagent: precision:  73.96%; recall:  74.92%; FB1:  74.43 foundGuessed:  4051
-             Seal: precision:  63.64%; recall:  65.62%; FB1:  64.62 foundGuessed:  66
-             Size: precision:  65.85%; recall:  48.21%; FB1:  55.67 foundGuessed:  82
+processed 42517 tokens with 16326 phrases; found: 15857 phrases; correct: 11971.
+accuracy:  82.01%; precision:  75.49%; recall:  73.32%; FB1:  74.39
+           Action: precision:  84.56%; recall:  84.23%; FB1:  84.40 foundGuessed:  4119
+           Amount: precision:  85.21%; recall:  83.19%; FB1:  84.19 foundGuessed:  1156
+    Concentration: precision:  77.70%; recall:  79.29%; FB1:  78.49 foundGuessed:  547
+           Device: precision:  61.25%; recall:  56.29%; FB1:  58.67 foundGuessed:  431
+  Generic-Measure: precision:  36.00%; recall:  25.53%; FB1:  29.88 foundGuessed:  100
+         Location: precision:  68.83%; recall:  69.51%; FB1:  69.17 foundGuessed:  1338
+     Measure-Type: precision:  51.64%; recall:  46.49%; FB1:  48.93 foundGuessed:  244
+          Mention: precision:  59.65%; recall:  60.71%; FB1:  60.18 foundGuessed:  57
+           Method: precision:  50.69%; recall:  38.30%; FB1:  43.63 foundGuessed:  436
+         Modifier: precision:  56.82%; recall:  51.34%; FB1:  53.94 foundGuessed:  1452
+        Numerical: precision:  56.36%; recall:  57.58%; FB1:  56.96 foundGuessed:  236
+          Reagent: precision:  74.75%; recall:  75.22%; FB1:  74.98 foundGuessed:  4024
+             Seal: precision:  68.25%; recall:  67.19%; FB1:  67.72 foundGuessed:  63
+             Size: precision:  66.67%; recall:  50.00%; FB1:  57.14 foundGuessed:  84
             Speed: precision:  84.21%; recall:  86.75%; FB1:  85.46 foundGuessed:  171
-      Temperature: precision:  94.19%; recall:  89.18%; FB1:  91.62 foundGuessed:  499
-             Time: precision:  89.11%; recall:  87.15%; FB1:  88.12 foundGuessed:  845
-               pH: precision:  75.47%; recall:  64.52%; FB1:  69.57 foundGuessed:  53
+      Temperature: precision:  93.85%; recall:  89.75%; FB1:  91.76 foundGuessed:  504
+             Time: precision:  89.69%; recall:  87.62%; FB1:  88.64 foundGuessed:  844
+               pH: precision:  72.55%; recall:  59.68%; FB1:  65.49 foundGuessed:  51
 ``` 
     
 
@@ -43,12 +43,17 @@ To run the evalutaion script, you need to provide it with-
 1) The `<location of StandOff format gold data>` in `-gold_data` parameter, and 
 2) The `<location of StandOff format predicted data>` in the `-pred_data` parameter
 
-The folder containing StandOff format predicted data only needs to contain the `.ann` files.
-
+The gold data and the prediction data must be formated as the StandOff format or the CoNLL fomrat.
 
 ```
-python evalutation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_data "../baseline_CRF/Standoff_Outputs/"
+python evaluation.py  -gold_data "../../data/test_data/Standoff_Format/" -pred_data "../baseline_CRF/Standoff_Outputs/"
 ```
+or
+
+```
+python evaluation.py  -gold_data "../../data/test_data/Conll_Format/" -pred_data "../baseline_CRF/Conll_Outputs/"
+```
+
 
 ### Print performance as LaTex table:
 

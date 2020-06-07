@@ -4,8 +4,7 @@ Protocol	O
 with	O
 Methanol	B-Modifier
 Fixed	I-Modifier
-Cells
-	B-Reagent
+Cells	B-Reagent
 
 Grow	B-Action
 cultured	B-Modifier
@@ -35,8 +34,8 @@ least	I-Modifier
 30	B-Time
 minutes	I-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 At	O
 thetime	O
@@ -45,17 +44,18 @@ fixation	B-Method
 cells	B-Reagent
 should	O
 be	O
-~50%	B-Modifier
-confluent.
-	I-Modifier
+~50	B-Modifier
+%	B-Numerical
+confluent	B-Modifier
+.	O
 
 Rinse	B-Action
 cells	B-Reagent
 briefly	B-Modifier
 in	O
 1X	B-Concentration
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 Fix	B-Action
 cells	B-Reagent
@@ -63,38 +63,41 @@ by	O
 incubation	B-Method
 with	O
 cold	B-Modifier
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 methanol	B-Reagent
 for	O
 5‐15	B-Time
 minutes	I-Time
 at	O
-‐20°C.
-	B-Temperature
+‐20°C	B-Temperature
+.	O
 
 Rinse	B-Action
 three	B-Numerical
 times	O
 in	O
 1X	B-Concentration
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 5	B-Time
 minutes	I-Time
-each.
-	O
+each	O
+.	O
 
 Block	B-Action
 samples	B-Reagent
 in	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 FBS/PBS	B-Reagent
 for	O
 1	B-Time
 hour	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Dilute	B-Action
 the	O
@@ -105,15 +108,17 @@ the	O
 recommended	B-Modifier
 concentration/dilution	B-Measure-Type
 in	O
-5%	B-Concentration
-FBS/PBS.
-	B-Reagent
+5	B-Concentration
+%	I-Concentration
+FBS/PBS	B-Reagent
+.	O
 
 For	O
 8	B-Location
 well	I-Location
 chamber	I-Location
-slides,	I-Location
+slides	I-Location
+,	O
 add	B-Action
 200μl	B-Amount
 per	O
@@ -128,21 +133,23 @@ temperature	I-Temperature
 or	O
 overnight	B-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Rinse	B-Action
 three	B-Numerical
 times	O
 in	O
 1X	B-Concentration
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 5	B-Time
 minutes	I-Time
-each.
-	O
+each	O
+.	O
 
-NOTE:	O
+NOTE	O
+:	O
 If	O
 using	O
 primary	B-Reagent
@@ -150,19 +157,21 @@ antibodies	I-Reagent
 directly	B-Modifier
 conjugated	B-Action
 with	O
-fluorophores,	B-Reagent
+fluorophores	B-Reagent
+,	O
 skip	B-Action
 to	O
 step	O
-7.
-	O
+7	O
+.	O
 
 Prepare	B-Action
 fluorophore‐conjugated	B-Modifier
 secondary	B-Reagent
 antibody	I-Reagent
 in	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 FBS/PBS	B-Reagent
 according	O
 to	O
@@ -176,12 +185,14 @@ add	B-Action
 200μl	B-Amount
 per	O
 well	B-Location
-(8	B-Numerical
-wells)	B-Location
+(	O
+8	B-Numerical
+wells	B-Location
+)	O
 to	O
 thechamber	B-Location
-slides.
-	I-Location
+slides	I-Location
+.	O
 
 Incubate	B-Action
 the	O
@@ -194,26 +205,27 @@ room	B-Temperature
 temperature	I-Temperature
 in	O
 the	O
-dark.
-	O
+dark	O
+.	O
 
 Rinse	B-Action
 three	B-Numerical
 times	O
 in	O
 1X	B-Concentration
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 5	B-Time
 minutes	I-Time
-each.
-	O
+each	O
+.	O
 
 Coverslip	B-Action
 with	O
 anti‐fade	B-Seal
 mounting	I-Seal
-medium.
-	I-Seal
+medium	I-Seal
+.	O
 
 Seal	B-Action
 the	O
@@ -231,8 +243,8 @@ of	O
 the	O
 coverslip	B-Seal
 while	O
-imaging.
-	B-Action
+imaging	B-Action
+.	O
 
 One	B-Numerical
 sealant	B-Reagent
@@ -245,19 +257,22 @@ a	O
 ratio	O
 mixture	B-Reagent
 of	O
-vasoline,	B-Reagent
-lanolin	I-Reagent
+vasoline	B-Reagent
+,	O
+lanolin	B-Reagent
 and	O
-paraffin.
-	B-Reagent
+paraffin	B-Reagent
+.	O
 
 Chamber	B-Location
 slides	I-Location
 and	O
 coverslips	B-Location
 Fixation	B-Reagent
-solution:	I-Reagent
-100%	B-Concentration
+solution	I-Reagent
+:	O
+100	B-Concentration
+%	I-Concentration
 methanol	B-Reagent
 stored	B-Action
 at	O
@@ -268,18 +283,20 @@ least	I-Modifier
 two	B-Time
 hours	I-Time
 before	O
-use.
-	O
+use	O
+.	O
 
 Antibody	B-Reagent
 dilution	I-Reagent
-solution:	I-Reagent
-5%	B-Concentration
+solution	I-Reagent
+:	O
+5	B-Concentration
+%	I-Concentration
 FBS	B-Reagent
 in	O
 1X	B-Concentration
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 
 

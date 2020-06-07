@@ -1,14 +1,14 @@
 SpinSmart	B-Method
 Plasmid	I-Method
 Purification	I-Method
-Protocol:	O
+Protocol	O
+:	O
 High-copy	B-Modifier
 plasmid	B-Reagent
 DNA	I-Reagent
 from	O
 E.	B-Reagent
-coli
-	I-Reagent
+coli	I-Reagent
 
 Start	B-Action
 with	O
@@ -17,7 +17,8 @@ ml	I-Amount
 E.	B-Reagent
 coli	I-Reagent
 LB	I-Reagent
-culture*,	I-Reagent
+culture*	I-Reagent
+,	O
 pellet	B-Action
 cells	B-Reagent
 in	O
@@ -29,8 +30,8 @@ sec	I-Time
 at	O
 11,000	B-Speed
 x	I-Speed
-g.
-	I-Speed
+g	I-Speed
+.	O
 
 Discard	B-Action
 the	O
@@ -43,16 +44,16 @@ of	O
 the	O
 liquid	B-Mention
 as	O
-possible.
-	O
+possible	O
+.	O
 
 Add	B-Action
 250	B-Amount
 µl	I-Amount
 PB1	B-Reagent
 Resuspension	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Vortex	B-Action
 or	O
@@ -65,24 +66,24 @@ resuspend	B-Action
 the	O
 cell	B-Reagent
 pellet	I-Reagent
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 No	O
 cell	B-Reagent
 clumps	I-Reagent
 should	O
 be	O
-visible.
-	B-Modifier
+visible	B-Modifier
+.	O
 
 Add	B-Action
 250	B-Amount
 µl	I-Amount
 PB2	B-Reagent
 Lysis	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Invert	B-Action
 the	O
@@ -91,13 +92,14 @@ tube	B-Location
 times	O
 to	O
 mix	B-Action
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Do	O
 not	O
-vortex!.
-	B-Action
+vortex	B-Action
+!	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -112,16 +114,16 @@ or	O
 until	O
 lysate	B-Reagent
 appears	O
-clear.
-	B-Modifier
+clear	B-Modifier
+.	O
 
 Add	B-Action
 300	B-Amount
 µl	I-Amount
 PB3	B-Reagent
 Neutralization	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Invert	B-Action
 the	O
@@ -130,13 +132,14 @@ tube	B-Location
 times	O
 to	O
 mix	B-Action
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Do	O
 not	O
-vortex!.
-	B-Action
+vortex	B-Action
+!	O
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -148,8 +151,8 @@ x	I-Speed
 g	I-Speed
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 If	O
 precipitate	B-Reagent
@@ -159,7 +162,8 @@ completely	B-Modifier
 clear	I-Modifier
 from	O
 the	O
-lysate,	B-Reagent
+lysate	B-Reagent
+,	O
 centrifuge	B-Action
 again	O
 for	O
@@ -171,8 +175,8 @@ x	I-Speed
 g	I-Speed
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Place	B-Action
 a	O
@@ -184,8 +188,10 @@ in	O
 a	O
 Collection	B-Location
 Tube	I-Location
-(2	B-Amount
-ml)	I-Amount
+(	O
+2	B-Amount
+ml	I-Amount
+)	O
 and	O
 load	B-Action
 a	O
@@ -195,15 +201,21 @@ of	O
 µl	I-Amount
 of	O
 the	O
-supernatant (from	B-Reagent
+supernatant	B-Reagent
+(	O
+from	O
 the	O
-"Lysate	B-Reagent
-Clarification"	B-Method
+``	O
+Lysate	B-Reagent
+Clarification	B-Method
+''	O
 section	O
-above) onto	O
+above	O
+)	O
+onto	O
 the	O
-column.
-	B-Location
+column	B-Location
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -226,20 +238,25 @@ into	O
 the	O
 Collection	B-Location
 Tube	I-Location
-(2	B-Amount
-ml).
-	I-Amount
+(	O
+2	B-Amount
+ml	I-Amount
+)	O
+.	O
 
-Optional: For	O
+Optional	O
+:	O
+For	O
 host	O
 strains	B-Reagent
-containing	O
+containing	I-Reagent
 high	O
 levels	O
 of	O
 nucleases	B-Reagent
-(e.g.
-	O
+(	I-Reagent
+e.g	O
+.	O
 
 HB101	B-Reagent
 or	O
@@ -247,7 +264,9 @@ strains	B-Reagent
 of	O
 the	O
 JM	B-Reagent
-series),	I-Reagent
+series	I-Reagent
+)	O
+,	O
 perform	B-Action
 a	O
 wash	B-Method
@@ -260,8 +279,8 @@ Wash	I-Reagent
 Buffer	I-Reagent
 pre-warmed	B-Action
 to	O
-50°C.
-	B-Temperature
+50°C	B-Temperature
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -275,8 +294,8 @@ before	O
 proceeding	B-Action
 with	O
 Buffer	B-Reagent
-PB5.
-	I-Reagent
+PB5	I-Reagent
+.	O
 
 Add	B-Action
 600	B-Amount
@@ -284,13 +303,15 @@ Add	B-Action
 PB5	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
-(make	O
+(	O
+make	O
 sure	O
 EtOH	B-Reagent
 has	O
 been	O
-added).
-	B-Action
+added	B-Action
+)	O
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -314,9 +335,11 @@ the	O
 empty	B-Modifier
 Collection	B-Location
 Tube	I-Location
-(2	B-Amount
-ml).
-	I-Amount
+(	O
+2	B-Amount
+ml	I-Amount
+)	O
+.	O
 
 Centrifuge	B-Action
 for	O
@@ -331,9 +354,11 @@ discard	B-Action
 the	O
 Collection	B-Location
 Tube	I-Location
-(2	B-Amount
-ml).
-	I-Amount
+(	O
+2	B-Amount
+ml	I-Amount
+)	O
+.	O
 
 Place	B-Action
 the	O
@@ -347,24 +372,27 @@ a	O
 ml	I-Size
 microcentrifuge	B-Location
 tube	I-Location
-(not	O
-provided)	O
+(	O
+not	O
+provided	O
+)	O
 and	O
 add	B-Action
 50	B-Amount
 µl	I-Amount
 PB6	B-Reagent
 Elution	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Incubate	B-Action
 for	O
 1	B-Time
 min	I-Time
-at room	B-Temperature
-temperature.
-	I-Temperature
+at	O
+room	B-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 Centrifuge	B-Action
 for	O
@@ -373,8 +401,8 @@ min	I-Time
 at	O
 11,000	B-Speed
 x	I-Speed
-g.
-	I-Speed
+g	I-Speed
+.	O
 
 
 

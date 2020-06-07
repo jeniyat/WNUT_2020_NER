@@ -1,170 +1,107 @@
-T1	Action 56 60	fill
-E1	Action:T1 Acts-on2:T24 Using:T27
-T2	Action 99 103	fill
-E2	Action:T2 Acts-on:T28
-T3	Action 156 159	Add
-E3	Action:T3 Acts-on:T33 Using:T35
-T4	Action 255 260	place
-E4	Action:T4 Acts-on:T38 Site:T39
-T5	Action 217 221	open
-E5	Action:T5 Acts-on:T36
-T6	Action 289 294	Screw
-E6	Action:T6 Acts-on:T40
-T7	Action 324 330	loosen
-E7	Action:T7 
-T8	Action 344 349	place
-E8	Action:T8 Site:T45
-T24	Location 43 55	culture tube
-T25	Modifier 38 42	each
-T26	Generic-Measure 61 72	half way up
-T27	Reagent 78 89	horse serum
-T28	Reagent 112 116	RPMI
-T29	Action 119 126	leaving
-E24	Action:T29 Acts-on:T31
-T30	Size 133 137	2 cm
-T31	Location 151 154	top
-R1	Measure Arg1:T31 Arg2:T30	
-T32	Amount 160 165	500µl
-T33	Reagent 169 180	penicillium
-T34	Modifier 196 201	blunt
-T35	Device 202 209	forceps
-T36	Location 226 229	top
-T37	Location 233 250	dialysis membrane
-T38	Reagent 265 269	worm
-T39	Location 279 287	membrane
-T40	Location 299 302	top
-T41	Location 313 317	tube
-T42	Modifier 331 339	slightly
-T43	Modifier 359 366	shaking
-T44	Temperature 367 371	40°C
-T45	Device 372 382	water bath
-T9	Action 618 624	Remove
-E9	Action:T9 Acts-on:T16 Site:T17
-T10	Action 750 754	Fill
-E10	Action:T10 Acts-on:T23 Using:T48
-T11	Action 905 912	Collect
-E11	Action:T11 Acts-on:T49 Using:T50
-T12	Action 1026 1030	Fill
-E12	Action:T12 Acts-on:T54 Using:T57 Acts-on2:T59
-T13	Action 1114 1119	Label
-E13	Action:T13 Acts-on:T61 Using:T62
-T14	Action 1166 1170	Wrap
-E14	Action:T14 Acts-on:T64 Using:T66
-T15	Action 1274 1279	Place
-E15	Action:T15 Acts-on:T72 Site:T74
-T16	Location 629 646	dialysis membrane
-T17	Location 656 668	culture tube
-T18	Action 673 676	cut
-E16	Action:T18 Acts-on:T19
-T19	Mention 677 679	it
-T20	Action 709 718	flush out
-E17	Action:T20 Site:T21 Using:T22
-T21	Location 726 736	petri dish
-T22	Reagent 743 748	ddH20
-T23	Location 759 769	petri dish
-T46	Modifier 773 778	about
-T47	Generic-Measure 779 785	¼ full
-T48	Reagent 789 794	ddH20
-T49	Reagent 917 926	egg layer
-T50	Device 934 947	glass pipette
-T51	Action 952 960	transfer
-E18	Action:T51 Site:T53
-T52	Modifier 964 969	fresh
-T53	Location 970 982	petri dishes
-T54	Location 1039 1045	plates
-T55	Modifier 1046 1051	up to
-T56	Generic-Measure 1058 1067	half full
-T57	Reagent 1073 1078	ddH20
-T58	Modifier 1093 1101	original
-T59	Location 1102 1112	petri dish
-T60	Modifier 1120 1124	each
-T61	Location 1125 1130	plate
-T62	Method 1139 1165	identification number/name
-T63	Modifier 1171 1175	each
-T64	Location 1176 1181	plate
-T65	Modifier 1182 1194	individually
-T66	Seal 1198 1202	foil
-T67	Action 1207 1212	label
-E19	Action:T67 Acts-on:T68 Using:T70
-T68	Location 1217 1224	outside
-T70	Method 1239 1253	identification
-T71	Modifier 1284 1291	wrapped
-T72	Location 1292 1298	plates
-T73	Temperature 1306 1310	20°C
-T74	Device 1311 1320	incubator
-T75	Action 1325 1330	leave
-E20	Action:T75 Site:T76
-T76	Mention 1334 1339	there
-T77	Modifier 1344 1352	at least
-T78	Time 1353 1360	21 days
-T79	Action 1368 1376	checking
-E21	Action:T79 
-R2	Mod-Link Arg1:T72 Arg2:T71	
-R3	Mod-Link Arg1:T24 Arg2:T25	
-R4	Measure Arg1:T27 Arg2:T26	
-R5	Measure Arg1:T33 Arg2:T32	
-R6	Mod-Link Arg1:T35 Arg2:T34	
-T81	Modifier 210 216	gently
-R7	Mod-Link Arg1:E5 Arg2:T81	
-R8	Meronym Arg1:T36 Arg2:T37	
-R9	Meronym Arg1:T40 Arg2:T41	
-R10	Mod-Link Arg1:E7 Arg2:T42	
-R11	Setting Arg1:T45 Arg2:T44	
-R12	Mod-Link Arg1:T45 Arg2:T43	
-R13	Coreference-Link Arg1:T19 Arg2:T16	
-R14	Mod-Link Arg1:T47 Arg2:T46	
-R15	Measure Arg1:T48 Arg2:T47	
-R17	Mod-Link Arg1:T53 Arg2:T52	
-T82	Modifier 1031 1034	all
-R16	Mod-Link Arg1:T54 Arg2:T82	
-R18	Mod-Link Arg1:T56 Arg2:T55	
-R19	Measure Arg1:T57 Arg2:T56	
-R20	Mod-Link Arg1:T59 Arg2:T58	
-R21	Mod-Link Arg1:T61 Arg2:T60	
-R22	Mod-Link Arg1:T64 Arg2:T63	
-R23	Mod-Link Arg1:T64 Arg2:T65	
-R25	Setting Arg1:T74 Arg2:T73	
-R26	Coreference-Link Arg1:T76 Arg2:T74	
-R27	Setting Arg1:E20 Arg2:T78	
-R28	Mod-Link Arg1:T78 Arg2:T77	
-T83	Reagent 0 23	Schistocephalus solidus
-T84	Action 24 33	culturing
-E22	Action:T84 Acts-on:T83
-T85	Action 384 389	Check
-E23	Action:T85 Acts-on:T86
-T86	Reagent 394 399	worms
-T87	Reagent 415 420	worms
-T88	Reagent 439 443	eggs
-T89	Time 450 455	day 5
-T90	Action 466 475	collected
-E25	Action:T90 
-T91	Time 482 487	day 6
-T92	Action 434 438	shed
-E26	Action:T92 Acts-on:T88
-R29	Setting Arg1:E25 Arg2:T91	
-T93	Action 497 504	collect
-E27	Action:T93 Acts-on:T94
-T94	Reagent 505 509	eggs
-T95	Time 513 518	day 7
-T96	Reagent 528 533	worms
-R30	Setting Arg1:E27 Arg2:T95	
-R31	Setting Arg1:E26 Arg2:T89	
-T97	Reagent 576 580	eggs
-T98	Action 602 609	collect
-E28	Action:T98 Acts-on:T97
-T99	Modifier 610 617	cleanly
-R32	Mod-Link Arg1:E28 Arg2:T99	
-T100	Reagent 703 707	eggs
-T101	Modifier 695 702	visible
-R33	Mod-Link Arg1:T100 Arg2:T101	
-T102	Device 805 822	stereo microscope
-T103	Action 846 850	tilt
-E29	Action:T103 Acts-on:T104 Site:T102
-T104	Location 855 860	plate
-T105	Reagent 869 873	eggs
-T106	Location 896 903	surface
-R34	Meronym Arg1:T105 Arg2:T106	
-T107	Modifier 985 990	up to
-T108	Numerical 991 992	4
-T109	Reagent 1020 1024	eggs
-R35	Mod-Link Arg1:T108 Arg2:T107	
+T1	Reagent 0 23	Schistocephalus solidus
+T2	Action 24 33	culturing
+T3	Modifier 38 42	each
+T4	Location 43 55	culture tube
+T5	Action 56 60	fill
+T6	Generic-Measure 61 72	half way up
+T7	Reagent 78 89	horse serum
+T8	Action 99 103	fill
+T9	Reagent 112 116	RPMI
+T10	Action 119 126	leaving
+T11	Size 133 137	2 cm
+T12	Location 151 154	top
+T13	Action 156 159	Add
+T14	Amount 160 165	500µl
+T15	Reagent 169 180	penicillium
+T16	Modifier 196 201	blunt
+T17	Device 202 209	forceps
+T18	Modifier 210 216	gently
+T19	Action 217 221	open
+T20	Location 226 229	top
+T21	Location 233 250	dialysis membrane
+T22	Action 255 260	place
+T23	Reagent 265 269	worm
+T24	Location 279 287	membrane
+T25	Action 289 294	Screw
+T26	Location 299 302	top
+T27	Location 313 317	tube
+T28	Action 324 330	loosen
+T29	Modifier 331 339	slightly
+T30	Action 344 349	place
+T31	Modifier 359 366	shaking
+T32	Temperature 367 371	40°C
+T33	Device 372 382	water bath
+T34	Action 383 388	Check
+T35	Reagent 393 398	worms
+T36	Reagent 414 419	worms
+T37	Action 433 437	shed
+T38	Reagent 438 442	eggs
+T39	Time 449 454	day 5
+T40	Action 465 474	collected
+T41	Time 481 486	day 6
+T42	Action 496 503	collect
+T43	Reagent 504 508	eggs
+T44	Time 512 517	day 7
+T45	Reagent 527 532	worms
+T46	Reagent 575 579	eggs
+T47	Action 601 608	collect
+T48	Modifier 609 616	cleanly
+T49	Action 617 623	Remove
+T50	Location 628 645	dialysis membrane
+T51	Location 655 667	culture tube
+T52	Action 672 675	cut
+T53	Mention 676 678	it
+T54	Modifier 694 701	visible
+T55	Reagent 702 706	eggs
+T56	Action 708 717	flush out
+T57	Location 725 735	petri dish
+T58	Reagent 742 747	ddH20
+T59	Action 749 753	Fill
+T60	Location 758 768	petri dish
+T61	Modifier 772 777	about
+T62	Generic-Measure 778 784	¼ full
+T63	Reagent 788 793	ddH20
+T64	Device 804 821	stereo microscope
+T65	Action 845 849	tilt
+T66	Location 854 859	plate
+T67	Reagent 868 872	eggs
+T68	Location 895 902	surface
+T69	Action 904 911	Collect
+T70	Reagent 916 925	egg layer
+T71	Device 933 946	glass pipette
+T72	Action 951 959	transfer
+T73	Modifier 963 968	fresh
+T74	Location 969 981	petri dishes
+T75	Modifier 984 989	up to
+T76	Numerical 990 991	4
+T77	Reagent 1019 1023	eggs
+T78	Action 1025 1029	Fill
+T79	Modifier 1030 1033	all
+T80	Location 1038 1044	plates
+T81	Modifier 1045 1050	up to
+T82	Generic-Measure 1057 1066	half full
+T83	Reagent 1072 1077	ddH20
+T84	Modifier 1092 1100	original
+T85	Location 1101 1111	petri dish
+T86	Action 1113 1118	Label
+T87	Modifier 1119 1123	each
+T88	Location 1124 1129	plate
+T89	Method 1138 1164	identification number/name
+T90	Action 1165 1169	Wrap
+T91	Modifier 1170 1174	each
+T92	Location 1175 1180	plate
+T93	Modifier 1181 1193	individually
+T94	Seal 1197 1201	foil
+T95	Action 1206 1211	label
+T96	Location 1216 1223	outside
+T97	Method 1238 1252	identification
+T98	Action 1273 1278	Place
+T99	Modifier 1283 1290	wrapped
+T100	Location 1291 1297	plates
+T101	Temperature 1305 1309	20°C
+T102	Device 1310 1319	incubator
+T103	Action 1324 1329	leave
+T104	Mention 1333 1338	there
+T105	Modifier 1343 1351	at least
+T106	Time 1352 1359	21 days
+T107	Action 1367 1375	checking

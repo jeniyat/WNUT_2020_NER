@@ -1,306 +1,185 @@
-T1	Action 50 54	Grow
-E1	Action:T1 Acts-on:T48
-T2	Action 79 90	Concentrate
-E2	Action:T2 
-T3	Action 112 115	Use
-E3	Action:T3 Acts-on:T51
-T4	Action 196 202	Infect
-E4	Action:T4 Acts-on:T52
-T5	Action 248 255	Harvest
-E5	Action:T5 Acts-on:T53 Using:T36
-T6	Action 315 322	Discard
-E6	Action:T6 Acts-on:T57
-T7	Action 339 351	flash freeze
-E7	Action:T7 Acts-on:T58 Using:T59
-T8	Action 379 384	Store
-E8	Action:T8 
-T9	Action 429 433	Take
-E9	Action:T9 Acts-on:T62 Site:T156
-T10	Action 491 496	break
-E10	Action:T10 Using:T64 Acts-on:T63
-T11	Action 529 532	add
-E11	Action:T11 Acts-on:T66 Site:T159
-T12	Action 623 628	Break
-E12	Action:T12 Using:T68 Using2:T69 Acts-on:T67
-T13	Action 668 673	Pipet
-E13	Action:T13 Site:T71
-T15	Action 810 815	Place
-E15	Action:T15 
-T16	Action 882 886	Thaw
-E16	Action:T16 Acts-on:T81
-T17	Action 925 928	Add
-E17	Action:T17 Acts-on:T84 Site:T167
-T18	Action 1011 1021	Centrifuge
-E18	Action:T18 Acts-on:T170
-T19	Action 1150 1153	Add
-E19	Action:T19 Acts-on:T93
-T20	Action 1206 1216	Centrifuge
-E20	Action:T20 
-T21	Action 1246 1253	Discard
-E21	Action:T21 Acts-on:T99
-T22	Action 1267 1271	Wash
-E22	Action:T22 Acts-on:T100
-T23	Action 1309 1319	Centrifuge
-E23	Action:T23 
-T24	Action 1345 1348	Dry
-E24	Action:T24 Acts-on:T106 Site:T107
-T25	Action 1475 1478	Add
-E25	Action:T25 Acts-on:T113
-T26	Action 1550 1558	Incubate
-E26	Action:T26 Site:T119
-T27	Action 1573 1580	Extract
-E27	Action:T27 Acts-on:T120
-T28	Action 1630 1640	Centrifuge
-E28	Action:T28 
-T29	Action 1716 1719	Add
-E29	Action:T29 Acts-on:T128
-T30	Action 1768 1778	Centrifuge
-E30	Action:T30 
-T31	Action 1811 1818	Discard
-E31	Action:T31 
-T32	Action 1832 1836	Wash
-E32	Action:T32 Acts-on:T135
-T33	Action 1875 1885	Centrifuge
-E33	Action:T33 
-T34	Action 1911 1914	Dry
-E34	Action:T34 Acts-on:T141 Using:T142
-T35	Action 1977 1986	Resuspend
-E35	Action:T35 Site:T145 Acts-on:T143
-T37	Action 598 605	prevent
-E37	Action:T37 
-T38	Action 984 989	stand
-E38	Action:T38 
-T39	Action 1059 1067	Withdraw
-E39	Action:T39 Acts-on:T90
-T40	Action 1111 1118	deliver
-E40	Action:T40 Site:T91
-T41	Action 1178 1183	stand
-E41	Action:T41 
-T43	Action 1432 1444	resuspending
-E43	Action:T43 Acts-on:T109
-T44	Action 1669 1677	Withdraw
-E44	Action:T44 Acts-on:T179
-T45	Action 1693 1696	add
-E45	Action:T45 Acts-on:T125
-T46	Action 1742 1747	stand
-E46	Action:T46 
-T47	Action 1961 1964	dry
-E47	Action:T47 
-T48	Reagent 55 60	NC64A
-T49	Concentration 94 110	1 x 108 cells/ml
-R1	Setting Arg1:E2 Arg2:T49	
-T50	Amount 116 121	30 ml
-T51	Reagent 122 155	concentrated cells per time point
-R2	Measure Arg1:T51 Arg2:T50	
-T52	Reagent 208 213	virus
-T53	Reagent 256 270	infected cells
-T54	Speed 292 300	5000 rpm
-T55	Time 302 307	5 min
-T56	Temperature 310 313	4°C
-T57	Reagent 323 334	supernatant
-T58	Reagent 352 358	pellet
-T59	Reagent 362 377	liquid nitrogen
-T60	Temperature 388 393	-80°C
-R6	Setting Arg1:E8 Arg2:T60	
-T61	Numerical 434 440	1 to 2
-T62	Reagent 441 448	samples
-R7	Measure Arg1:T62 Arg2:T61	
-T63	Reagent 497 504	pellets
-T64	Device 516 523	spatula
-T65	Amount 533 537	1 ml
-T66	Reagent 538 552	TRIZOL reagent
-R8	Measure Arg1:T66 Arg2:T65	
-T67	Reagent 629 636	pellets
-T68	Device 645 652	spatula
-T69	Method 657 666	vortexing
-T71	Location 684 707	microcentrifuge tube(s)
-T72	Amount 719 725	250 mg
-T73	Modifier 742 747	baked
-T74	Reagent 748 759	glass beads
-R10	Mod-Link Arg1:T74 Arg2:T73	
-R11	Measure Arg1:T74 Arg2:T72	
-T14	Action 773 779	vortex
-E14	Action:T14 
-T75	Speed 783 796	highest speed
-T76	Time 797 802	5 min
-T77	Temperature 805 808	4°C
-R12	Setting Arg1:E14 Arg2:T75	
-R13	Setting Arg1:E14 Arg2:T76	
-R14	Setting Arg1:E14 Arg2:T77	
-T78	Temperature 819 824	-80°C
-R15	Setting Arg1:E15 Arg2:T78	
-T79	Time 825 834	overnight
-R16	Setting Arg1:E15 Arg2:T79	
-T80	Time 914 923	5 minutes
-T81	Reagent 887 894	samples
-T82	Action 899 905	vortex
-E48	Action:T82 
-R17	Setting Arg1:E48 Arg2:T80	
-T83	Amount 929 935	250 µl
-T84	Reagent 936 946	chloroform
-R18	Measure Arg1:T84 Arg2:T83	
-T85	Temperature 993 1002	room temp
-T86	Time 1004 1009	3 min
-R19	Setting Arg1:E38 Arg2:T85	
-R20	Setting Arg1:E38 Arg2:T86	
-T87	Speed 1033 1043	12,000 x g
-T88	Time 1045 1051	15 min
-T89	Temperature 1054 1057	4°C
-R21	Setting Arg1:E18 Arg2:T87	
-R22	Setting Arg1:E18 Arg2:T88	
-R23	Setting Arg1:E18 Arg2:T89	
-T90	Reagent 1072 1106	RNA-containing aqueous upper phase
-T91	Location 1128 1148	microcentrifuge tube
-T92	Amount 1154 1160	500 µl
-T93	Reagent 1161 1172	isopropanol
-R24	Measure Arg1:T93 Arg2:T92	
-T94	Time 1184 1190	10 min
-T95	Temperature 1195 1204	room temp
-R25	Setting Arg1:E41 Arg2:T95	
-R26	Setting Arg1:E41 Arg2:T94	
-T96	Speed 1220 1230	12,000 x g
-T97	Time 1232 1238	10 min
-T98	Temperature 1241 1244	4°C
-R27	Setting Arg1:E20 Arg2:T96	
-R28	Setting Arg1:E20 Arg2:T97	
-R29	Setting Arg1:E20 Arg2:T98	
-T99	Reagent 1254 1265	supernatant
-T100	Reagent 1272 1278	pellet
-T101	Concentration 1284 1287	75%
-T102	Reagent 1288 1292	EtOH
-R30	Measure Arg1:T102 Arg2:T101	
-T103	Speed 1320 1331	12,000 x g,
-T104	Time 1332 1337	5 min
-T105	Temperature 1340 1343	4°C
-R31	Setting Arg1:E23 Arg2:T103	
-R32	Setting Arg1:E23 Arg2:T104	
-R33	Setting Arg1:E23 Arg2:T105	
-T106	Reagent 1349 1356	pellets
-T107	Device 1360 1377	vacuum dessicator
-T108	Time 1378 1386	5-10 min
-T109	Reagent 1450 1455	pelle
-T110	Amount 1460 1466	250 µl
-T111	Reagent 1467 1473	dd-H20
-R34	Measure Arg1:T111 Arg2:T110	
-T112	Amount 1479 1485	250 µl
-T113	Reagent 1492 1496	MOPS
-T114	Concentration 1498 1502	20mM
-T115	Reagent 1503 1508	MgCl2
-R35	Measure Arg1:T115 Arg2:T114	
-R36	Measure Arg1:T113 Arg2:T112	
-T116	Reagent 1529 1547	RNAse-free DNAse I
-T117	Amount 1519 1526	100-200
-R37	Measure Arg1:T116 Arg2:T117	
-T118	Time 1559 1564	1-2 h
-T119	Location 1568 1571	ice
-T120	Reagent 1602 1619	phenol:chloroform
-T121	Amount 1621 1627	500 µl
-R38	Measure Arg1:T120 Arg2:T121	
-T122	Speed 1644 1654	12,000 x g
-T123	Time 1656 1661	5 min
-T124	Temperature 1664 1667	4°C
-R39	Setting Arg1:E28 Arg2:T122	
-R40	Setting Arg1:E28 Arg2:T123	
-R41	Setting Arg1:E28 Arg2:T124	
-T125	Reagent 1697 1702	NaOAc
-T126	Concentration 1706 1711	0.3 M
-R42	Measure Arg1:T125 Arg2:T126	
-T127	Amount 1720 1724	1 ml
-T128	Reagent 1725 1736	isopropanol
-R43	Measure Arg1:T128 Arg2:T127	
-T129	Time 1748 1754	10 min
-T130	Temperature 1757 1766	room temp
-R44	Setting Arg1:E46 Arg2:T129	
-R45	Setting Arg1:E46 Arg2:T130	
-T131	Speed 1785 1795	12,000 x g
-T132	Time 1797 1803	10 min
-T133	Temperature 1806 1809	4°C
-T134	Reagent 1819 1830	supernatant
-T135	Reagent 1837 1843	pellet
-T136	Concentration 1849 1853	75 %
-T137	Reagent 1854 1858	EtOH
-R46	Measure Arg1:T137 Arg2:T136	
-T138	Speed 1886 1896	12,000 x g
-R47	Setting Arg1:E33 Arg2:T138	
-T139	Time 1898 1903	5 min
-T140	Temperature 1906 1909	4°C
-R48	Setting Arg1:E33 Arg2:T139	
-R49	Setting Arg1:E33 Arg2:T140	
-T141	Reagent 1915 1922	pellets
-T142	Device 1926 1943	vacuum dessicator
-T143	Reagent 1987 1994	pellets
-T144	Amount 1998 2006	40-50 µl
-T145	Reagent 2007 2012	water
-R50	Measure Arg1:T145 Arg2:T144	
-T146	Reagent 0 3	RNA
-T147	Method 4 13	Isolation
-T148	Modifier 19 33	Viral-infected
-T149	Reagent 34 49	Chlorella NC64A
-R51	Mod-Link Arg1:T149 Arg2:T148	
-T150	Numerical 157 164	3 x 109
-T151	Reagent 165 170	cells
-R52	Measure Arg1:T151 Arg2:T150	
-T152	Modifier 170 171	~
-T153	Amount 171 176	91 mg
-R53	Mod-Link Arg1:T153 Arg2:T152	
-T154	Reagent 177 182	cells
-T155	Measure-Type 242 246	time
-T36	Method 274 288	centrifugation
-T156	Device 458 465	freezer
-T157	Location 485 488	ice
-T158	Action 477 481	keep
-E36	Action:T158 Acts-on:T62 Site:T157
-T159	Location 561 565	tube
-T160	Action 567 571	Work
-E49	Action:T160 
-T161	Modifier 575 582	quickly
-R3	Mod-Link Arg1:E49 Arg2:T161	
-T162	Reagent 606 609	RNA
-T163	Method 610 621	degradation
-T70	Amount 679 683	2 ml
-R4	Measure Arg1:T71 Arg2:T70	
-T164	Size 729 741	0.25-0.30 mm
-R5	Measure Arg1:T74 Arg2:T164	
-T165	Modifier 761 772	Immediately
-R9	Mod-Link Arg1:E14 Arg2:T165	
-T166	Reagent 873 880	samples
-T167	Reagent 950 957	samples
-T168	Action 964 970	vortex
-E50	Action:T168 
-T169	Modifier 971 978	briefly
-R54	Mod-Link Arg1:E50 Arg2:T169	
-T170	Reagent 1022 1029	samples
-T171	Modifier 1122 1127	fresh
-R55	Mod-Link Arg1:T91 Arg2:T171	
-T172	Action 1298 1307	vortexing
-E51	Action:T172 
-T42	Action 1395 1398	DRY
-E42	Action:T42 
-T173	Modifier 1399 1409	COMPLETELY
-R56	Mod-Link Arg1:E42 Arg2:T173	
-T175	Reagent 1422 1428	sample
-T174	Action 1411 1416	DNAse
-E52	Action:T174 Acts-on:T175
-T176	Concentration 1489 1491	2X
-R57	Measure Arg1:T113 Arg2:T176	
-T177	Concentration 1510 1512	2X
-R58	Measure Arg1:T115 Arg2:T177	
-R59	Setting Arg1:E26 Arg2:T118	
-T178	Measure-Type 1592 1598	volume
-T179	Reagent 1678 1691	aqueous phase
-T180	Modifier 1779 1785	up to 
-R60	Mod-Link Arg1:T131 Arg2:T180	
-R61	Setting Arg1:E30 Arg2:T131	
-R62	Setting Arg1:E30 Arg2:T132	
-R63	Setting Arg1:E30 Arg2:T133	
-T181	Action 1864 1873	vortexing
-E53	Action:T181 
-T182	Time 1944 1952	5-10 min
-R64	Setting Arg1:E34 Arg2:T182	
-T183	Modifier 1965 1975	completely
-R65	Mod-Link Arg1:E47 Arg2:T183	
-T184	Generic-Measure 187 193	weight
-T185	Modifier 183 186	wet
-R66	Mod-Link Arg1:T184 Arg2:T185	
-T186	Measure-Type 217 223	m.o.i.
-T187	Numerical 223 225	=5
+T1	Reagent 0 3	RNA
+T2	Method 4 13	Isolation
+T3	Modifier 19 33	Viral-infected
+T4	Reagent 34 49	Chlorella NC64A
+T5	Action 50 54	Grow
+T6	Reagent 55 60	NC64A
+T7	Action 79 90	Concentrate
+T8	Concentration 94 110	1 x 108 cells/ml
+T9	Action 112 115	Use
+T10	Amount 116 121	30 ml
+T11	Reagent 122 155	concentrated cells per time point
+T12	Numerical 157 164	3 x 109
+T13	Reagent 165 173	cells~91
+T14	Amount 174 176	mg
+T15	Reagent 177 182	cells
+T16	Modifier 183 186	wet
+T17	Generic-Measure 187 193	weight
+T18	Action 196 202	Infect
+T19	Reagent 208 213	virus
+T20	Measure-Type 217 225	m.o.i.=5
+T21	Measure-Type 242 246	time
+T22	Action 248 255	Harvest
+T23	Reagent 256 270	infected cells
+T24	Method 274 288	centrifugation
+T25	Speed 292 300	5000 rpm
+T26	Time 302 308	5 min.
+T27	Temperature 310 313	4°C
+T28	Action 315 322	Discard
+T29	Reagent 323 334	supernatant
+T30	Action 339 351	flash freeze
+T31	Reagent 352 358	pellet
+T32	Reagent 362 377	liquid nitrogen
+T33	Action 379 384	Store
+T34	Temperature 388 393	-80°C
+T35	Action 430 434	Take
+T36	Numerical 435 441	1 to 2
+T37	Reagent 442 449	samples
+T38	Device 459 466	freezer
+T39	Action 478 482	keep
+T40	Location 486 489	ice
+T41	Action 492 497	break
+T42	Reagent 498 505	pellets
+T43	Device 517 524	spatula
+T44	Action 530 533	add
+T45	Amount 534 538	1 ml
+T46	Reagent 539 553	TRIZOL reagent
+T47	Location 562 566	tube
+T48	Action 568 572	Work
+T49	Modifier 576 583	quickly
+T50	Action 599 606	prevent
+T51	Reagent 607 610	RNA
+T52	Method 611 622	degradation
+T53	Action 624 629	Break
+T54	Reagent 630 637	pellets
+T55	Device 646 653	spatula
+T56	Method 658 667	vortexing
+T57	Action 669 674	Pipet
+T58	Amount 680 684	2 ml
+T59	Location 685 709	microcentrifuge tube (s)
+T60	Amount 721 727	250 mg
+T61	Size 731 743	0.25-0.30 mm
+T62	Modifier 744 749	baked
+T63	Reagent 750 761	glass beads
+T64	Modifier 763 774	Immediately
+T65	Action 775 781	vortex
+T66	Speed 785 798	highest speed
+T67	Time 799 805	5 min.
+T68	Temperature 807 810	4°C
+T69	Action 812 817	Place
+T70	Temperature 821 826	-80°C
+T71	Time 827 836	overnight
+T72	Reagent 876 883	samples
+T73	Action 885 889	Thaw
+T74	Reagent 890 897	samples
+T75	Action 902 908	vortex
+T76	Time 917 926	5 minutes
+T77	Action 928 931	Add
+T78	Amount 932 938	250 µl
+T79	Reagent 939 949	chloroform
+T80	Reagent 953 960	samples
+T81	Action 967 973	vortex
+T82	Modifier 974 981	briefly
+T83	Action 987 992	stand
+T84	Temperature 996 1005	room temp
+T85	Time 1007 1012	3 min
+T86	Action 1014 1024	Centrifuge
+T87	Reagent 1025 1032	samples
+T88	Speed 1036 1046	12,000 x g
+T89	Time 1048 1055	15 min.
+T90	Temperature 1057 1060	4°C
+T91	Action 1062 1070	Withdraw
+T92	Reagent 1075 1109	RNA-containing aqueous upper phase
+T93	Action 1114 1121	deliver
+T94	Modifier 1125 1130	fresh
+T95	Location 1131 1151	microcentrifuge tube
+T96	Action 1153 1156	Add
+T97	Amount 1157 1163	500 µl
+T98	Reagent 1164 1175	isopropanol
+T99	Action 1181 1186	stand
+T100	Time 1187 1193	10 min
+T101	Temperature 1198 1207	room temp
+T102	Action 1209 1219	Centrifuge
+T103	Speed 1223 1233	12,000 x g
+T104	Time 1235 1242	10 min.
+T105	Temperature 1244 1247	4°C
+T106	Action 1249 1256	Discard
+T107	Reagent 1257 1268	supernatant
+T108	Action 1270 1274	Wash
+T109	Reagent 1275 1281	pellet
+T110	Concentration 1287 1291	75 %
+T111	Reagent 1292 1296	EtOH
+T112	Action 1302 1311	vortexing
+T113	Action 1313 1323	Centrifuge
+T114	Speed 1324 1335	12,000 x g,
+T115	Time 1336 1342	5 min.
+T116	Temperature 1344 1347	4°C
+T117	Action 1349 1352	Dry
+T118	Reagent 1353 1360	pellets
+T119	Device 1364 1381	vacuum dessicator
+T120	Time 1382 1390	5-10 min
+T121	Action 1399 1402	DRY
+T122	Modifier 1403 1413	COMPLETELY
+T123	Action 1415 1420	DNAse
+T124	Reagent 1426 1432	sample
+T125	Action 1436 1448	resuspending
+T126	Reagent 1454 1460	pellet
+T127	Amount 1464 1470	250 µl
+T128	Reagent 1471 1477	dd-H20
+T129	Action 1479 1482	Add
+T130	Amount 1483 1489	250 µl
+T131	Concentration 1493 1495	2X
+T132	Reagent 1496 1500	MOPS
+T133	Concentration 1502 1506	20mM
+T134	Reagent 1507 1512	MgCl2
+T135	Concentration 1514 1516	2X
+T136	Amount 1523 1530	100-200
+T137	Reagent 1533 1551	RNAse-free DNAse I
+T138	Action 1553 1561	Incubate
+T139	Time 1562 1567	1-2 h
+T140	Location 1571 1574	ice
+T141	Action 1576 1583	Extract
+T142	Measure-Type 1595 1601	volume
+T143	Reagent 1605 1624	phenol : chloroform
+T144	Amount 1626 1632	500 µl
+T145	Action 1635 1645	Centrifuge
+T146	Speed 1649 1659	12,000 x g
+T147	Time 1661 1667	5 min.
+T148	Temperature 1669 1672	4°C
+T149	Action 1674 1682	Withdraw
+T150	Reagent 1683 1696	aqueous phase
+T151	Action 1698 1701	add
+T152	Reagent 1702 1707	NaOAc
+T153	Concentration 1711 1716	0.3 M
+T154	Action 1718 1721	Add
+T155	Amount 1722 1726	1 ml
+T156	Reagent 1727 1738	isopropanol
+T157	Action 1744 1749	stand
+T158	Time 1750 1757	10 min.
+T159	Temperature 1759 1768	room temp
+T160	Action 1770 1780	Centrifuge
+T161	Modifier 1781 1793	up to 12,000
+T162	Speed 1794 1798	x g,
+T163	Time 1802 1806	min.
+T164	Temperature 1808 1812	4°C.
+T165	Action 1813 1820	Discard
+T166	Reagent 1821 1832	supernatant
+T167	Action 1834 1838	Wash
+T168	Reagent 1839 1845	pellet
+T169	Concentration 1851 1855	75 %
+T170	Reagent 1856 1860	EtOH
+T171	Action 1866 1875	vortexing
+T172	Action 1877 1887	Centrifuge
+T173	Speed 1888 1898	12,000 x g
+T174	Time 1900 1906	5 min.
+T175	Temperature 1908 1911	4°C
+T176	Action 1913 1916	Dry
+T177	Reagent 1917 1924	pellets
+T178	Device 1928 1945	vacuum dessicator
+T179	Time 1946 1954	5-10 min
+T180	Action 1963 1966	dry
+T181	Modifier 1967 1977	completely
+T182	Action 1979 1988	Resuspend
+T183	Reagent 1989 1996	pellets
+T184	Amount 2000 2008	40-50 µl
+T185	Reagent 2009 2014	water

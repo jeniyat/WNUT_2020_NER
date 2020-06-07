@@ -38,6 +38,9 @@ sys.path.insert(1, '../eval/')
 
 import evaluation
 
+sys.path.insert(1, '../scripts/convert_conll_to_standoff/')
+import anntoconll_wlp
+
 
 class Linear_CRF:
 	"""docstring for CRF_Tagger"""
@@ -169,10 +172,12 @@ if __name__ == '__main__':
 
 	#----------------preprocessing data-------------------
 	
-	
+	conll_folder = "Conll_Format_Data/"
+	utils.make_dir_if_not_exists(conll_folder)
 
 	input_standoff_folder_train = parameters["train_data"]
 	conll_folder_train = "Conll_Format_Data/train/"
+	utils.make_dir_if_not_exists(conll_folder_train)
 	conll_file_train = 'Conll_Format_Data/train_conll.txt'
 
 	
@@ -180,26 +185,18 @@ if __name__ == '__main__':
 
 	input_standoff_folder_test = parameters["test_data"]
 	conll_folder_test = "Conll_Format_Data/test/"
+	utils.make_dir_if_not_exists(conll_folder_test)
 	conll_file_test = 'Conll_Format_Data/test_conll.txt'
 
 	
 
 
-	input_standoff_folder_dev = parameters["dev_data"]
-	conll_folder_dev = "Conll_Format_Data/dev/"
-	conll_file_dev = 'Conll_Format_Data/dev_conll.txt'
-
+	
 	
 	utils.preprocess_data(input_standoff_folder_train, conll_folder_train, conll_file_train,
-	input_standoff_folder_test, conll_folder_test, conll_file_test,
-	input_standoff_folder_dev, conll_folder_dev, conll_file_dev)
+	input_standoff_folder_test, conll_folder_test, conll_file_test)
 
-	sorted_entity_list_file_name="sorted_entity_list_by_count.json"
-
-	utils.Sort_Entity_by_Count(conll_file_train,sorted_entity_list_file_name)
-
-	with open(sorted_entity_list_file_name) as f:
-		sorted_entity_list = json.load(f)
+	
 
 	lin_crf=Linear_CRF()
 	
@@ -217,7 +214,6 @@ if __name__ == '__main__':
 		
 		phase_name= file_values[-2]
 		protocol_name = file_values[-1]
-		# # print(phase_name, protocol_name)
 		lin_crf.Read_Test_Data(file_name)
 		lin_crf.Make_Prediction()
 		lin_crf.Convert_Pred_to_CoNLL(parameters["conll_output_folder"],  protocol_name)
@@ -233,26 +229,21 @@ if __name__ == '__main__':
 		protocol_name = file_values[-1]
 		conll2standoff.process(file_name, standoff_output_directory)
 
-
-	#------------removing temporary folders--------------------
-	shutil.rmtree(parameters["conll_output_folder"])
-
-	shutil.rmtree('Conll_Format_Data/')
-	os.remove(sorted_entity_list_file_name)
+	anntoconll_wlp.covert_standoff_to_conll(parameters["standoff_output_folder"], parameters["conll_output_folder"])
 
 
-	perf_file = parameters['perf_file']
-	to_latex=parameters["print_latex_format"]
+	print("Predictions stored as StandOff format in : ", parameters["standoff_output_folder"])
+	print("Predictions stored as CoNLL format in : ", parameters["conll_output_folder"])
+
+	shutil.rmtree(conll_folder)
 
 
-	evaluation.evaluate(input_gold_folder=parameters["test_data"],  input_pred_folder=parameters["standoff_output_folder"],pref_file= perf_file, to_latex=to_latex)
 
-	if os.path.isdir('Conll_Format_Data/'): shutil.rmtree('Conll_Format_Data/')
 
-	list_of_text_ops = os.listdir( parameters["standoff_output_folder"] )
-	for file in list_of_text_ops:
-		if file.endswith(".txt"):
-			os.remove( os.path.join( parameters["standoff_output_folder"], file ) )
+	
+
+	
+	
 
 
 	

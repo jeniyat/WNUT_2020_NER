@@ -1,38 +1,24 @@
-T1	Action 33 39	Set up
-E1	Action:T1 Acts-on:T8
-T2	Action 94 97	Mix
-E2	Action:T2 Acts-on:T9
-T3	Action 112 121	pipetting
-E3	Action:T3 Acts-on:T10 Using:T21
-T4	Action 163 171	flicking
-E4	Action:T4 Acts-on:T11
-T5	Action 208 217	spin-down
-E5	Action:T5 Site:T12
-T6	Action 268 276	Incubate
-E6	Action:T6 
-T7	Action 247 253	vortex
-E7	Action:T7 Acts-on:T14
-T8	Reagent 54 62	reaction
-T9	Reagent 98 108	components
+T1	Measure-Type 0 18	Single-temperature
+T2	Action 19 32	Double Digest
+T3	Action 33 39	Set up
+T4	Reagent 54 62	reaction
+T5	Measure-Type 70 88	reaction volume 50
+T6	Amount 89 93	µl).
+T7	Action 94 97	Mix
+T8	Reagent 98 108	components
+T9	Action 112 121	pipetting
 T10	Reagent 126 142	reaction mixture
-T11	Location 186 190	tube
-R1	Meronym Arg1:T10 Arg2:T11	
-R2	Meronym Arg1:T9 Arg2:T10	
-T12	Device 223 238	microcentrifuge
-T13	Modifier 192 197	Quick
-R3	Mod-Link Arg1:E5 Arg2:T13	
-T14	Reagent 258 266	reaction
-T15	Time 281 287	1 hour
-T16	Measure-Type 323 334	temperature
-R4	Setting Arg1:E6 Arg2:T15	
-R5	Setting Arg1:E6 Arg2:T16	
-T17	Measure-Type 7 18	temperature
-T18	Action 19 32	Double Digest
-E8	Action:T18 
-T19	Measure-Type 70 86	reaction volume 
-T20	Amount 86 91	50 µl
-T21	Method 143 154	up and down
-R6	Or Arg1:E3 Arg2:E4	
-T22	Action 200 205	touch
-E9	Action:T22 
-T23	Modifier 295 322	enzyme-specific appropriate
+T11	Method 143 154	up and down
+T12	Action 162 173	`` flicking
+T13	Location 181 194	reaction tube
+T14	Modifier 194 195	.
+T15	Modifier 196 201	Quick
+T16	Action 203 211	`` touch
+T17	Action 214 225	) spin-down
+T18	Device 229 246	a microcentrifuge
+T19	Action 255 261	vortex
+T20	Reagent 266 274	reaction
+T21	Action 276 284	Incubate
+T22	Time 289 295	1 hour
+T23	Modifier 303 330	enzyme-specific appropriate
+T24	Measure-Type 331 342	temperature

@@ -2,8 +2,7 @@ Basic	B-Modifier
 Illumina	B-Method
 Sequence	I-Method
 Quality	I-Method
-Control
-	I-Method
+Control	I-Method
 
 Assess	B-Action
 raw	B-Modifier
@@ -12,8 +11,8 @@ sequences	I-Reagent
 using	O
 the	O
 program	O
-FastQCGoal.
-	B-Method
+FastQCGoal	B-Method
+.	O
 
 Remove	B-Action
 low	B-Modifier
@@ -31,9 +30,11 @@ above	O
 For	O
 current	O
 sequencing	B-Reagent
-centers,	I-Reagent
+centers	I-Reagent
+,	O
 the	O
-5'	B-Reagent
+5	B-Reagent
+'	I-Reagent
 end	I-Reagent
 of	O
 has	O
@@ -42,8 +43,8 @@ Illumina	B-Reagent
 adapters	I-Reagent
 and	O
 primers	B-Reagent
-removed.
-	B-Action
+removed	B-Action
+.	O
 
 But	O
 there	O
@@ -52,32 +53,35 @@ be	O
 inclusion	B-Method
 of	O
 the	O
-3'	B-Reagent
+3	B-Reagent
+'	I-Reagent
 end	I-Reagent
 Illumina	I-Reagent
 adapter	I-Reagent
 in	O
 DNA	B-Reagent
-fragments with	I-Reagent
+fragments	I-Reagent
+with	O
 length	B-Measure-Type
-less	B-Modifier
-than	I-Modifier
-the	O
+less	I-Measure-Type
+than	B-Modifier
+the	I-Modifier
 number	B-Measure-Type
 of	I-Measure-Type
 the	I-Measure-Type
 cycles	I-Measure-Type
-for	O
+for	I-Measure-Type
 the	O
-sequencer.
-	B-Device
+sequencer	B-Device
+.	I-Device
 
 Remove	B-Action
 Illumina	B-Reagent
 adaptor	I-Reagent
 sequences	I-Reagent
 from	O
-3'	B-Reagent
+3	B-Reagent
+'	I-Reagent
 end	I-Reagent
 of	I-Reagent
 sequences	I-Reagent
@@ -85,11 +89,12 @@ sequences	I-Reagent
 be	O
 sure	O
 to	O
-preserve reads	B-Action
-of	O
-0	B-Generic-Measure
-length.
-	I-Generic-Measure
+preserve	B-Action
+reads	I-Action
+of	B-Reagent
+0	O
+length	B-Generic-Measure
+.	I-Generic-Measure
 
 Repeat	B-Action
 step	O
@@ -97,15 +102,15 @@ for	O
 all	O
 raw	O
 read	O
-files.
-	O
+files	O
+.	O
 
 Assess	B-Action
 Cutadapt	B-Measure-Type
 results	I-Measure-Type
 with	O
-FastQC.
-	B-Method
+FastQC	B-Method
+.	O
 
 Remove	B-Action
 low	B-Modifier
@@ -113,12 +118,15 @@ quality	I-Modifier
 base	B-Reagent
 pairs	I-Reagent
 from	O
-sequences,	B-Reagent
+sequences	B-Reagent
+,	O
 generally	O
 from	O
 the	O
-3'	B-Reagent
-end,	I-Reagent
+3	B-Reagent
+'	I-Reagent
+end	I-Reagent
+,	O
 using	O
 a	O
 sliding	B-Measure-Type
@@ -139,10 +147,11 @@ quality	B-Measure-Type
 score	I-Measure-Type
 drops	O
 below	O
-28.
-	B-Generic-Measure
+28	B-Generic-Measure
+.	O
 
-Important:	O
+Important	O
+:	O
 To	O
 maintain	B-Action
 the	O
@@ -167,23 +176,24 @@ submitted	B-Action
 from	O
 each	O
 read	B-Reagent
-pair,	I-Reagent
+pair	I-Reagent
+,	O
 regardless	O
 of	O
 the	O
 length	B-Measure-Type
 of	O
 the	O
-sequence.
-	B-Reagent
+sequence	B-Reagent
+.	O
 
 Assess	B-Action
 file	O
 quality	B-Measure-Type
 scores	I-Measure-Type
 using	O
-FastQC.
-	B-Method
+FastQC	B-Method
+.	O
 
 Utilize	B-Action
 Trimmomatic	B-Method
@@ -199,9 +209,10 @@ quality	O
 in	O
 the	O
 first	B-Generic-Measure
-bp,	I-Generic-Measure
-etc.
-	O
+bp	I-Generic-Measure
+,	O
+etc	O
+.	O
 
 
 

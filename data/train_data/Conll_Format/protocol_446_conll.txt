@@ -2,8 +2,7 @@ Dimethylglyoxime	B-Reagent
 reagent	I-Reagent
 for	O
 cobalt	B-Reagent
-analyses
-	B-Method
+analyses	B-Method
 
 Dissolve	B-Action
 0.2232	B-Amount
@@ -20,9 +19,11 @@ a	O
 final	B-Modifier
 concentration	B-Measure-Type
 of	O
-10-3 mol	B-Generic-Measure
-L-1 EDTA.
-	I-Generic-Measure
+10-3	B-Generic-Measure
+mol	I-Generic-Measure
+L-1	I-Generic-Measure
+EDTA	I-Generic-Measure
+.	B-Reagent
 
 Weigh	B-Action
 out	I-Action
@@ -31,18 +32,22 @@ approximately	B-Modifier
 g	I-Amount
 of	O
 DMG	B-Reagent
-(dimethylglyoxime) onto	I-Reagent
+(	O
+dimethylglyoxime	B-Reagent
+)	O
+onto	O
 a	O
 weigh	B-Location
-boat,	I-Location
+boat	I-Location
+,	I-Location
 and	O
 combine	B-Action
-it	B-Mention
-into	O
+it	I-Action
+into	B-Mention
 the	O
 EDTA	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	I-Reagent
 
 Weigh	B-Action
 what	B-Mention
@@ -52,7 +57,8 @@ on	O
 the	O
 weigh	B-Location
 boat	I-Location
-(DMG	B-Reagent
+(	O
+DMG	B-Reagent
 is	O
 very	O
 sticky	B-Modifier
@@ -66,7 +72,8 @@ pour	B-Action
 into	O
 the	O
 EDTA	B-Reagent
-solution)	I-Reagent
+solution	I-Reagent
+)	O
 and	O
 record	B-Action
 the	O
@@ -78,8 +85,8 @@ placed	B-Action
 into	O
 the	O
 EDTA	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Heat	B-Action
 this	O
@@ -88,35 +95,39 @@ in	O
 a	O
 microwave	B-Device
 at	O
-50%	B-Generic-Measure
+50	B-Generic-Measure
+%	I-Generic-Measure
 power	I-Generic-Measure
 until	O
 the	O
 DMG	B-Reagent
 is	O
 fully	B-Modifier
-dissolved,	B-Action
-stirring	I-Action
+dissolved	B-Action
+,	O
+stirring	B-Action
 it	B-Mention
 carefully	B-Modifier
 in	O
 between	O
-microwaving,	B-Action
+microwaving	B-Action
+,	O
 and	O
 trying	O
 to	O
 prevent	B-Action
 it	B-Mention
 from	O
-boiling.
-	B-Action
+boiling	B-Action
+.	O
 
 This	B-Mention
 takes	O
 up	B-Modifier
 to	I-Modifier
 30	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 so	O
 be	O
 patient	O
@@ -125,8 +136,8 @@ heat	B-Action
 it	B-Mention
 slowly	B-Modifier
 and	O
-carefully.
-	B-Modifier
+carefully	B-Modifier
+.	O
 
 Put	B-Action
 the	O
@@ -140,19 +151,22 @@ recrystallize	B-Action
 overnight	B-Time
 in	O
 a	O
-refrigerator.
-	B-Device
+refrigerator	B-Device
+.	O
 
 After	O
 it	B-Mention
 has	O
-recrystallized,	B-Modifier
+recrystallized	B-Modifier
+,	O
 pour	B-Action
 off	I-Action
-(or	O
+(	O
+or	O
 slowly	B-Modifier
 pipette	B-Action
-off)	I-Action
+off	I-Action
+)	O
 the	O
 supernatant	B-Reagent
 until	O
@@ -162,8 +176,8 @@ as	O
 little	B-Modifier
 liquid	B-Reagent
 as	O
-possible.
-	O
+possible	O
+.	O
 
 Then	O
 pour	B-Action
@@ -172,11 +186,13 @@ remaining	B-Modifier
 crystals	B-Reagent
 into	O
 a	O
-clean,	B-Modifier
-dry	I-Modifier
+clean	B-Modifier
+,	O
+dry	B-Modifier
 weigh	B-Location
 boat	I-Location
-(that	O
+(	O
+that	O
 you	O
 have	O
 weighed	B-Action
@@ -186,7 +202,8 @@ the	O
 weight	B-Measure-Type
 for	O
 later	O
-use)	O
+use	O
+)	O
 and	O
 let	O
 the	O
@@ -198,15 +215,16 @@ inside	O
 a	O
 laminar	B-Location
 flow	I-Location
-hood.
-	I-Location
+hood	I-Location
+.	O
 
 After	O
 all	O
 the	O
 liquid	B-Reagent
 has	O
-evaporated,	B-Modifier
+evaporated	B-Modifier
+,	O
 measure	B-Action
 the	O
 weight	B-Location
@@ -224,8 +242,8 @@ of	O
 DMG	B-Reagent
 you	O
 have	O
-recrystallized.
-	B-Action
+recrystallized	B-Action
+.	O
 
 Calculate	B-Action
 how	B-Amount
@@ -248,24 +266,27 @@ concentration	B-Measure-Type
 of	O
 0.1	B-Concentration
 mol	I-Concentration
-L-1 DMG,	I-Concentration
+L-1	I-Concentration
+DMG	B-Reagent
+,	I-Reagent
 and	O
 obtain	B-Action
-a	O
+a	I-Action
 trace	B-Modifier
 metal	I-Modifier
 clean	I-Modifier
-bottle	B-Location
-of	O
+bottle	I-Modifier
+of	B-Location
 the	O
 appropriate	B-Modifier
-size.
-	B-Size
+size	I-Modifier
+.	B-Size
 
 Weigh	B-Action
 the	O
 clean	B-Modifier
-bottle,	B-Location
+bottle	B-Location
+,	O
 and	O
 then	O
 carefully	B-Modifier
@@ -279,7 +300,8 @@ clean	B-Modifier
 bottle	B-Location
 and	O
 re-weigh	B-Action
-(not	O
+(	O
+not	O
 all	O
 the	O
 DMG	B-Reagent
@@ -289,13 +311,15 @@ transferred	B-Action
 into	O
 the	O
 clean	B-Modifier
-bottle,	B-Location
+bottle	B-Location
+,	O
 so	O
 the	O
 re-weigh	B-Action
 is	O
-necessary).
-	O
+necessary	O
+)	O
+.	O
 
 Now	O
 recalculate	B-Action
@@ -313,15 +337,16 @@ concentration	B-Measure-Type
 of	O
 0.1	B-Concentration
 mol	I-Concentration
-L-1,	I-Concentration
+L-1	I-Concentration
+,	O
 and	O
 add	B-Action
 that	O
 amount	B-Amount
 of	O
 optima	B-Modifier
-methanol.
-	B-Reagent
+methanol	B-Reagent
+.	O
 
 Make	O
 sure	O
@@ -330,8 +355,8 @@ test	B-Action
 the	O
 reagent	B-Reagent
 before	O
-use.
-	O
+use	O
+.	O
 
 
 

@@ -2,71 +2,86 @@ Sampling	B-Method
 for	I-Method
 Flow	I-Method
 Cytometry	I-Method
-(FCM)
-	I-Method
+(	O
+FCM	B-Method
+)	O
 
 Advance	B-Method
-preparation: for	I-Method
-each	B-Modifier
+preparation	I-Method
+:	O
+for	B-Modifier
+each	I-Modifier
 sample	I-Modifier
 to	I-Modifier
 be	I-Modifier
-collected, aliquot	I-Modifier
-900	B-Amount
-µl	I-Amount
-of	O
+collected	I-Modifier
+,	I-Modifier
+aliquot	B-Action
+900	I-Action
+µl	B-Amount
+of	I-Amount
 seawater	B-Reagent
-(artificial	B-Modifier
-seawater	B-Reagent
-salts	I-Reagent
-or	O
+(	I-Reagent
+artificial	I-Reagent
+seawater	B-Modifier
+salts	B-Reagent
+or	I-Reagent
 complete	B-Modifier
-sterile	B-Reagent
-medium) into	I-Reagent
+sterile	I-Modifier
+medium	B-Reagent
+)	I-Reagent
+into	I-Reagent
 a	O
 labeled	B-Modifier
-1.2	B-Size
-ml	I-Size
-cryovial.
-	B-Location
+1.2	I-Modifier
+ml	B-Size
+cryovial	I-Size
+.	B-Location
 
 Collect	B-Action
-sample:	B-Reagent
-add 100	B-Action
-µl	B-Amount
-of	O
 sample	B-Reagent
-into cryovial	B-Location
-containing	O
-900	B-Amount
+:	O
+add	B-Action
+100	B-Amount
 µl	I-Amount
-of	O
-seawater.
-	B-Reagent
+of	I-Amount
+sample	B-Reagent
+into	I-Reagent
+cryovial	B-Location
+containing	I-Location
+900	O
+µl	B-Amount
+of	I-Amount
+seawater	B-Reagent
+.	I-Reagent
 
 Keep	B-Action
 cryovial	B-Seal
 cap	I-Seal
 clean	B-Modifier
 and	I-Modifier
-sterile.
-	I-Modifier
+sterile	I-Modifier
+.	O
 
 Preserve/fix	B-Action
-sample:	B-Reagent
+sample	B-Reagent
+:	O
 In	B-Location
 the	I-Location
 chemical	I-Location
 fume	I-Location
-hood,	I-Location
+hood	I-Location
+,	O
 lay	B-Action
 out	I-Action
 cryovial	B-Location
 caps	B-Seal
-(inside	I-Seal
+(	O
+inside	B-Seal
 cap	I-Seal
 facing	B-Modifier
-up)	I-Modifier
+up	I-Modifier
+)	O
 and	O
 use	O
 the	O
@@ -78,23 +93,27 @@ add	B-Action
 µl	I-Amount
 of	O
 glutaraldehyde	B-Reagent
-(25%)	B-Concentration
+(	O
+25	B-Concentration
+%	I-Concentration
+)	O
 to	O
 each	B-Modifier
-cap.
-	B-Seal
+cap	B-Seal
+.	O
 
 Cap	B-Action
-each tube	B-Location
-and	O
+each	O
+tube	B-Location
+and	I-Location
 mix	B-Action
-well	B-Modifier
-by	O
+well	I-Action
+by	B-Modifier
 inverting	B-Method
-a	O
+a	I-Method
 few	B-Numerical
-times.
-	I-Numerical
+times	I-Numerical
+.	I-Numerical
 
 Incubate	B-Action
 for	O
@@ -102,8 +121,8 @@ for	O
 minutes	I-Time
 in	O
 the	O
-dark.
-	B-Method
+dark	B-Method
+.	O
 
 Flash-freeze	B-Action
 tubes	B-Location
@@ -115,8 +134,8 @@ store	B-Action
 at	O
 -80°C	B-Temperature
 until	B-Modifier
-analysis.
-	I-Modifier
+analysis	I-Modifier
+.	O
 
 
 

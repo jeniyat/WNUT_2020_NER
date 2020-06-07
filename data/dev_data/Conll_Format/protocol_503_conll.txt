@@ -2,8 +2,7 @@ NEXTflex™	B-Method
 mtDNA-Seq	I-Method
 for	O
 blood	B-Reagent
-samples
-	I-Reagent
+samples	I-Reagent
 
 Briefly	B-Modifier
 spin	B-Action
@@ -22,8 +21,8 @@ cap	B-Location
 or	O
 side	B-Location
 of	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Keep	B-Action
 on	O
@@ -34,8 +33,8 @@ each	O
 tube	B-Location
 prior	B-Modifier
 to	I-Modifier
-use.
-	I-Modifier
+use	I-Modifier
+.	O
 
 Allow	B-Action
 Agencourt	B-Reagent
@@ -57,12 +56,13 @@ appears	I-Modifier
 homogenous	I-Modifier
 before	I-Modifier
 every	I-Modifier
-use.
-	I-Modifier
+use	I-Modifier
+.	O
 
 For	B-Modifier
 each	I-Modifier
-sample,	I-Modifier
+sample	I-Modifier
+,	O
 combine	B-Action
 the	O
 following	B-Modifier
@@ -72,15 +72,20 @@ ice	B-Temperature
 in	O
 nuclease-free	B-Location
 microcentrifuge	I-Location
-tubes:_	I-Location
+tubes	I-Location
+:	O
+_	O
 
 μLNuclease-free	B-Amount
 Water_	B-Reagent
 μLgDNA	B-Amount
-(2	I-Amount
+(	O
+2	B-Amount
 –	I-Amount
 4	I-Amount
-μg)5	I-Amount
+μg	I-Amount
+)	O
+5	B-Amount
 μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 Buffer	I-Reagent
@@ -95,14 +100,14 @@ Mix	I-Reagent
 Nuclear	B-Reagent
 DNA	I-Reagent
 Digest	I-Reagent
-Mix50 μLTOTAL
-	I-Reagent
+Mix50	I-Reagent
+μLTOTAL	B-Amount
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 in	O
@@ -113,8 +118,8 @@ for	O
 48	B-Time
 hours	I-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Incubate	B-Action
 the	O
@@ -123,8 +128,8 @@ at	O
 70°C	B-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Spin	B-Action
 the	O
@@ -137,8 +142,8 @@ collect	B-Action
 contents	B-Reagent
 of	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 50	B-Amount
@@ -154,8 +159,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -163,8 +168,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 the	O
@@ -184,8 +189,8 @@ until	B-Modifier
 the	I-Modifier
 supernatant	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Remove	B-Action
 and	O
@@ -197,8 +202,8 @@ care	O
 not	B-Action
 to	I-Action
 disturb	I-Action
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Some	B-Modifier
 liquid	B-Reagent
@@ -206,23 +211,27 @@ may	O
 remain	B-Action
 in	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Wash	B-Method
-#1:	I-Method
+#	I-Method
+1	I-Method
+:	O
 With	B-Modifier
 tube	I-Modifier
 on	I-Modifier
-rack,	I-Modifier
-gently	I-Modifier
+rack	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -237,30 +246,35 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Wash	B-Method
-#2:	I-Method
+#	I-Method
+2	I-Method
+:	O
 With	B-Modifier
 tube	I-Modifier
 on	I-Modifier
-rack,	I-Modifier
-gently	I-Modifier
+rack	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -275,23 +289,24 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Ensure	B-Action
 all	B-Modifier
 ethanol	B-Reagent
 has	O
 been	O
-removed.
-	B-Modifier
+removed	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -308,15 +323,15 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Do	B-Action
 not	I-Action
 overdry	I-Action
 the	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Resuspend	B-Action
 dried	B-Reagent
@@ -325,14 +340,14 @@ with	O
 36	B-Amount
 μL	I-Amount
 Nuclease-free	B-Reagent
-Water.
-	I-Reagent
+Water	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Ensure	B-Action
 beads	B-Reagent
@@ -345,8 +360,8 @@ the	O
 side	B-Location
 of	O
 the	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Incubate	B-Action
 resuspended	B-Reagent
@@ -356,8 +371,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 tube	B-Location
@@ -372,8 +387,8 @@ until	B-Modifier
 the	I-Modifier
 sample	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Gently	B-Modifier
 transfer	B-Action
@@ -386,8 +401,8 @@ to	O
 a	O
 fresh	B-Location
 microcentrifuge	I-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 To	O
 ensure	B-Action
@@ -396,7 +411,8 @@ removal	I-Modifier
 of	I-Modifier
 nuclear	I-Modifier
 DNA	I-Modifier
-contamination,	I-Modifier
+contamination	I-Modifier
+,	O
 repeat	B-Action
 the	O
 digestion	B-Method
@@ -407,46 +423,54 @@ eluted	B-Reagent
 material	I-Reagent
 from	O
 Step	O
-18.
-	O
+18	O
+.	O
 
 Set	B-Action
 up	I-Action
 the	O
 reaction	B-Reagent
 as	B-Modifier
-follows.
-	I-Modifier
+follows	I-Modifier
+.	O
 
-35 μLEluted	B-Amount
+35	B-Amount
+μLEluted	I-Amount
 DNA	B-Reagent
-(Step	O
-18)5 μLNEXTflex™	B-Amount
+(	I-Reagent
+Step	O
+18	O
+)	O
+5	O
+μLNEXTflex™	B-Amount
 mtDNA	B-Reagent
 Buffer	I-Reagent
 Mix	I-Reagent
-15μLNEXTflex™	B-Amount
-mtDNA	B-Reagent
+15μLNEXTflex™	I-Reagent
+mtDNA	I-Reagent
 Buffer	I-Reagent
 Mix	I-Reagent
-25 μLNEXTflex™	B-Amount
+25	I-Reagent
+μLNEXTflex™	B-Amount
 Nuclear	B-Reagent
 DNA	I-Reagent
 Digest	I-Reagent
-Mix50 μLTOTAL.	I-Reagent
+Mix50	I-Reagent
+μLTOTAL	I-Reagent
+.	B-Amount
 
 Incubate	B-Action
 for	O
 24	B-Time
 hours	I-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Repeat	B-Action
 steps	O
-6-18.
-	O
+6-18	O
+.	O
 
 For	B-Modifier
 each	I-Modifier
@@ -467,13 +491,14 @@ on	O
 ice	B-Temperature
 as	B-Modifier
 described	I-Modifier
-below:	I-Modifier
+below	I-Modifier
+:	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Apply	B-Action
 adhesive	B-Seal
@@ -488,28 +513,30 @@ for	O
 the	O
 following	B-Method
 PCR	I-Method
-cycles:	I-Method
+cycles	I-Method
+:	O
 
 Prepare	B-Action
 pre-stained	B-Reagent
 SYBR	I-Reagent
 Gold	I-Reagent
-2%	B-Concentration
+2	B-Concentration
+%	I-Concentration
 or	O
 Ethidium	B-Reagent
 Bromide	I-Reagent
 TAE	I-Reagent
 agarose	I-Reagent
-gel.
-	I-Reagent
+gel	I-Reagent
+.	O
 
 Mix	B-Action
 and	O
 pour	B-Action
 into	O
 gel	B-Location
-tray.
-	I-Location
+tray	I-Location
+.	O
 
 Load	B-Action
 3	B-Amount
@@ -531,8 +558,8 @@ and	O
 μL	I-Amount
 of	O
 Nuclease-free	B-Reagent
-Water.
-	I-Reagent
+Water	I-Reagent
+.	O
 
 Load	B-Action
 the	O
@@ -549,8 +576,8 @@ MW	B-Size
 100	I-Size
 bp	I-Size
 Ready-to-Load	B-Reagent
-Ladder.
-	I-Reagent
+Ladder	I-Reagent
+.	O
 
 Run	B-Action
 the	O
@@ -563,14 +590,15 @@ at	O
 100-120V	B-Numerical
 for	O
 60-120	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 or	O
 until	B-Modifier
 bands	I-Modifier
 have	I-Modifier
 adequately	I-Modifier
-resolved.
-	I-Modifier
+resolved	I-Modifier
+.	O
 
 Visualize	B-Action
 the	O
@@ -581,8 +609,8 @@ transilluminator	I-Device
 or	O
 gel	B-Device
 documentation	I-Device
-instrument.
-	I-Device
+instrument	I-Device
+.	O
 
 Check	B-Action
 for	O
@@ -595,10 +623,12 @@ band	I-Measure-Type
 and	O
 absence/significant	B-Measure-Type
 reduction	I-Measure-Type
-(compared	B-Modifier
+(	O
+compared	B-Modifier
 to	I-Modifier
 the	I-Modifier
-control)	I-Modifier
+control	I-Modifier
+)	O
 of	O
 nuclear	B-Reagent
 DNA	I-Reagent
@@ -609,11 +639,14 @@ with	O
 the	O
 subsequent	B-Method
 steps	I-Method
-(Fig.	O
+(	O
+Fig	O
+.	O
 2	O
 in	O
-Guidelines).
-	O
+Guidelines	O
+)	O
+.	O
 
 Adjust	B-Action
 mtDNA	B-Reagent
@@ -624,8 +657,8 @@ to	O
 μL	I-Amount
 with	O
 Nuclease-free	B-Reagent
-Water.
-	I-Reagent
+Water	I-Reagent
+.	O
 
 Set	B-Action
 pipette	B-Device
@@ -636,8 +669,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Transfer	B-Action
 the	O
@@ -645,21 +678,24 @@ sample	B-Reagent
 to	O
 a	O
 Covaris	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Follow	B-Action
-manufacturer's	B-Method
-instructions.
-	I-Method
+manufacturer	B-Method
+'s	I-Method
+instructions	I-Method
+.	O
 
 For	O
-example,	O
+example	O
+,	O
 using	O
 the	O
 Covaris	B-Device
 S2	I-Device
-system,	I-Device
+system	I-Device
+,	O
 the	B-Modifier
 following	I-Modifier
 parameters	I-Modifier
@@ -676,7 +712,8 @@ Intensity	I-Measure-Type
 Duty	I-Method
 cycle	I-Method
 –	O
-10%	B-Measure-Type
+10	B-Measure-Type
+%	I-Measure-Type
 Cycles	I-Measure-Type
 per	I-Measure-Type
 burst	I-Measure-Type
@@ -685,7 +722,8 @@ burst	I-Measure-Type
 Time	B-Time
 –	I-Time
 180	I-Time
-s.	I-Time
+s	I-Time
+.	O
 
 Transfer	B-Action
 your	O
@@ -699,15 +737,17 @@ a	O
 15	B-Size
 mL	I-Size
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Option	B-Method
-1:	I-Method
+1	I-Method
+:	O
 SpeedVac	B-Device
 -	O
 following	B-Modifier
-sonication,	I-Modifier
+sonication	I-Modifier
+,	O
 spin	B-Action
 down	I-Action
 sample	B-Reagent
@@ -728,8 +768,8 @@ sample	B-Reagent
 to	O
 ≤	B-Amount
 40	I-Amount
-μL.
-	I-Amount
+μL	I-Amount
+.	I-Amount
 
 Do	B-Modifier
 not	I-Modifier
@@ -737,12 +777,13 @@ let	O
 the	O
 sample	B-Reagent
 drydown	B-Action
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Option	B-Method
-2:	I-Method
-Bead	I-Method
+2	I-Method
+:	O
+Bead	B-Method
 Cleanup	I-Method
 –	O
 Alternatively	B-Modifier
@@ -757,12 +798,14 @@ can	O
 be	O
 done	B-Action
 as	O
-follows:	O
+follows	O
+:	O
 
 After	B-Modifier
 concentrating	I-Modifier
 the	I-Modifier
-sample,	I-Modifier
+sample	I-Modifier
+,	O
 Qubit®	B-Reagent
 dsDNA	I-Reagent
 reagents	I-Reagent
@@ -773,12 +816,13 @@ to	O
 quantify	B-Action
 the	O
 DNA	B-Generic-Measure
-concentration.
-	I-Generic-Measure
+concentration	I-Generic-Measure
+.	O
 
 For	B-Modifier
 each	I-Modifier
-sample,	I-Modifier
+sample	I-Modifier
+,	O
 combine	B-Action
 the	O
 following	B-Modifier
@@ -791,30 +835,41 @@ nuclease-free	B-Location
 96	I-Location
 well	I-Location
 PCR	I-Location
-Plate:	I-Location
+Plate	I-Location
+:	O
 
-40 μLmtDNA	B-Amount
-(from	O
+40	B-Amount
+μLmtDNA	I-Amount
+(	B-Reagent
+from	O
 section	O
-"Fragmentation	O
+``	O
+Fragmentation	O
 of	O
-mtDNA")7 μLNEXTflex™	B-Amount
+mtDNA	O
+''	O
+)	B-Amount
+7	I-Amount
+μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 End	I-Reagent
 Repair	I-Reagent
 Buffer	I-Reagent
-Mix3 μLNEXTflex™	I-Reagent
-mtDNA	I-Reagent
+Mix3	I-Reagent
+μLNEXTflex™	B-Amount
+mtDNA	B-Reagent
 End	I-Reagent
 Repair	I-Reagent
 Enzyme	I-Reagent
-Mix50 μLTOTAL.	I-Reagent
+Mix50	I-Reagent
+μLTOTAL	B-Amount
+.	I-Amount
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Apply	B-Action
 adhesive	B-Seal
@@ -830,8 +885,8 @@ for	O
 30	B-Time
 minutes	I-Time
 at	O
-22°C.
-	B-Temperature
+22°C	B-Temperature
+.	O
 
 Add	B-Action
 80	B-Amount
@@ -847,8 +902,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 sample	B-Reagent
@@ -857,8 +912,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 the	O
@@ -880,8 +935,8 @@ until	B-Modifier
 the	I-Modifier
 supernatant	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Remove	B-Action
 and	O
@@ -893,31 +948,35 @@ care	O
 not	B-Action
 to	I-Action
 disturb	I-Action
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Some	B-Modifier
 liquid	B-Reagent
 may	O
 remain	B-Action
 in	O
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Wash	B-Method
-#1:	I-Method
+#	I-Method
+1	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -932,30 +991,35 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Wash	B-Method
-#2:	I-Method
+#	I-Method
+2	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -970,23 +1034,24 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Ensure	B-Action
 all	B-Modifier
 ethanol	B-Reagent
 has	O
 been	O
-removed.
-	B-Modifier
+removed	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -1003,16 +1068,17 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
-Note:	O
+Note	O
+:	O
 Do	B-Action
 not	I-Action
 overdry	I-Action
 the	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Resuspend	B-Action
 dried	B-Reagent
@@ -1021,14 +1087,14 @@ with	O
 17	B-Amount
 μL	I-Amount
 Resuspension	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Ensurebeads	B-Action
 are	O
@@ -1040,8 +1106,8 @@ the	O
 side	B-Location
 of	O
 the	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Incubate	B-Action
 resuspended	B-Reagent
@@ -1051,8 +1117,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 plate	B-Location
@@ -1067,8 +1133,8 @@ until	B-Modifier
 the	I-Modifier
 sample	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Gently	B-Modifier
 transfer	B-Action
@@ -1080,8 +1146,8 @@ sample	I-Reagent
 to	O
 a	O
 new	B-Modifier
-well.
-	B-Location
+well	B-Location
+.	O
 
 Combine	B-Action
 the	B-Modifier
@@ -1091,23 +1157,32 @@ the	O
 96	B-Size
 well	I-Size
 PCR	B-Location
-Plate:
-	I-Location
+Plate	I-Location
+:	O
 
-16 μLEnd-Repaired	B-Amount
+16	B-Amount
+μLEnd-Repaired	I-Amount
 DNA	B-Reagent
-(from	O
+(	I-Reagent
+from	O
 section	O
-"Clean-Up")4.5 μLNEXTflex™	B-Amount
+``	O
+Clean-Up	O
+''	O
+)	B-Amount
+4.5	I-Amount
+μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 Adenylation	I-Reagent
-Mix20.5 μLTOTAL.	I-Reagent
+Mix20.5	I-Reagent
+μLTOTAL	B-Amount
+.	I-Amount
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Apply	B-Action
 adhesive	B-Seal
@@ -1123,34 +1198,41 @@ for	O
 30	B-Time
 minutes	I-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 For	B-Modifier
 each	I-Modifier
-sample,	I-Modifier
+sample	I-Modifier
+,	O
 combine	B-Action
 the	O
 following	B-Modifier
 reagents	B-Reagent
-(in	B-Modifier
+(	O
+in	B-Modifier
 this	I-Modifier
-order)	I-Modifier
+order	I-Modifier
+)	O
 in	O
 the	O
 96-well	B-Size
 PCR	B-Location
-Plate:
-	I-Location
+Plate	I-Location
+:	O
 
 20.5	B-Amount
-μL3’	I-Amount
-Adenylated	B-Reagent
+μL3	I-Amount
+’	B-Reagent
+Adenylated	I-Reagent
 DNA	I-Reagent
-(from	O
+(	O
+from	O
 the	O
 above	O
-section)27.5	B-Amount
+section	O
+)	O
+27.5	B-Amount
 μLNEXTflex™	I-Amount
 mtDNA	B-Reagent
 Ligation	I-Reagent
@@ -1162,13 +1244,14 @@ or	O
 NEXTflex™	B-Reagent
 ChIP	I-Reagent
 Barcode50	I-Reagent
-μLTOTAL.	B-Amount
+μLTOTAL	B-Amount
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Apply	B-Action
 adhesive	B-Seal
@@ -1184,8 +1267,8 @@ for	O
 15	B-Time
 minutes	I-Time
 at	O
-22°C.
-	B-Temperature
+22°C	B-Temperature
+.	O
 
 Add	B-Action
 40	B-Amount
@@ -1201,8 +1284,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -1210,8 +1293,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 the	O
@@ -1233,8 +1316,8 @@ until	B-Modifier
 the	I-Modifier
 supernatant	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Set	B-Action
 pipette	B-Device
@@ -1250,31 +1333,35 @@ taking	O
 care	O
 not	B-Action
 to	I-Action
-disturbbeads.
-	I-Action
+disturbbeads	I-Action
+.	O
 
 Some	B-Modifier
 liquid	B-Reagent
 may	O
 remain	B-Action
 in	B-Location
-wells.
-	I-Location
+wells	I-Location
+.	O
 
 Wash	B-Method
-#1:	I-Method
+#	I-Method
+1	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1287,30 +1374,35 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Wash	B-Method
-#2:	I-Method
+#	I-Method
+2	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1323,23 +1415,24 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Ensure	B-Action
 all	B-Modifier
 ethanol	B-Reagent
 has	O
 been	O
-removed.
-	B-Modifier
+removed	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -1356,8 +1449,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Resuspend	B-Action
 dried	B-Reagent
@@ -1366,8 +1459,8 @@ with	O
 52	B-Amount
 μL	I-Amount
 Resuspension	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -1385,8 +1478,8 @@ the	O
 side	B-Location
 of	O
 the	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Incubate	B-Action
 resuspended	B-Reagent
@@ -1396,8 +1489,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 plate	B-Location
@@ -1412,8 +1505,8 @@ until	B-Modifier
 the	I-Modifier
 sample	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Gently	B-Modifier
 transfer	B-Action
@@ -1424,8 +1517,8 @@ clear	B-Reagent
 sample	I-Reagent
 to	O
 new	B-Modifier
-well.
-	B-Location
+well	B-Location
+.	O
 
 Add	B-Action
 40	B-Amount
@@ -1441,8 +1534,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -1450,8 +1543,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 the	O
@@ -1473,8 +1566,8 @@ oruntil	B-Modifier
 the	I-Modifier
 supernatant	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Set	B-Action
 pipette	B-Device
@@ -1491,31 +1584,35 @@ care	O
 not	B-Action
 to	I-Action
 disturb	I-Action
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Some	B-Modifier
 liquid	B-Reagent
 may	O
 remain	B-Action
 in	B-Location
-wells.
-	I-Location
+wells	I-Location
+.	I-Location
 
 Wash	B-Method
-#1:	I-Method
+#	I-Method
+1	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1528,30 +1625,35 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Wash	B-Method
-#2:	I-Method
+#	I-Method
+2	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1564,23 +1666,24 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Ensure	B-Action
 all	B-Modifier
 ethanol	B-Reagent
 has	O
 been	O
-removed.
-	B-Modifier
+removed	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -1596,8 +1699,9 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
-3 minutes.
-	B-Time
+3	B-Time
+minutes	I-Time
+.	I-Time
 
 Resuspend	B-Action
 dried	B-Reagent
@@ -1606,12 +1710,14 @@ with	O
 38	B-Amount
 μL	I-Amount
 Resuspension	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.	B-Method
+pipetting	B-Method
+.	O
 
 Ensure	B-Action
 beads	B-Reagent
@@ -1624,8 +1730,8 @@ the	O
 side	B-Location
 of	O
 the	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Incubate	B-Action
 resuspended	B-Reagent
@@ -1635,8 +1741,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 plate	B-Location
@@ -1651,8 +1757,8 @@ until	B-Modifier
 the	I-Modifier
 sample	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Gently	B-Modifier
 transfer	B-Action
@@ -1663,12 +1769,13 @@ clear	B-Reagent
 sample	I-Reagent
 to	O
 new	B-Location
-well.
-	I-Location
+well	I-Location
+.	O
 
 For	B-Modifier
 each	I-Modifier
-sample,	I-Modifier
+sample	I-Modifier
+,	O
 combine	B-Action
 the	O
 following	B-Modifier
@@ -1680,30 +1787,41 @@ the	O
 96	B-Size
 well	I-Size
 PCR	B-Location
-plate:
-	I-Location
+plate	I-Location
+:	O
 
-36 μLPurified	B-Amount
+36	B-Amount
+μLPurified	I-Amount
 Ligation	B-Reagent
 Product	I-Reagent
-(from	O
+(	I-Reagent
+from	O
 section	O
-"Clean-Up	O
-2")12 μLNEXTflex™	B-Amount
+``	O
+Clean-Up	O
+2	O
+''	O
+)	B-Amount
+12	I-Amount
+μLNEXTflex™	I-Amount
 PCR	B-Reagent
 Master	I-Reagent
-Mix2 μLNEXTflex™	I-Reagent
-Primer	I-Reagent
-Mix50 μLTOTAL.	I-Reagent
+Mix2	I-Reagent
+μLNEXTflex™	B-Amount
+Primer	B-Reagent
+Mix50	I-Reagent
+μLTOTAL	B-Amount
+.	I-Amount
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 PCR	B-Method
-Cycles:	I-Method
+Cycles	I-Method
+:	O
 Add	B-Action
 40	B-Amount
 μL	I-Amount
@@ -1718,8 +1836,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -1727,8 +1845,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 the	O
@@ -1750,8 +1868,8 @@ until	B-Modifier
 the	I-Modifier
 supernatant	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Set	B-Action
 pipette	B-Device
@@ -1767,31 +1885,35 @@ taking	O
 care	O
 not	B-Action
 to	I-Action
-disturbbeads.
-	I-Action
+disturbbeads	I-Action
+.	O
 
 Some	B-Modifier
 liquid	B-Reagent
 may	O
 remain	B-Action
 in	O
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Wash	B-Method
-#1:	I-Method
+#	I-Method
+1	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1804,30 +1926,35 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Wash	B-Method
-#2:	I-Method
+#	I-Method
+2	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -1840,23 +1967,24 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Ensure	B-Action
 all	B-Modifier
 ethanol	B-Reagent
 has	O
 been	O
-removed.
-	B-Modifier
+removed	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -1873,8 +2001,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Resuspend	B-Action
 dried	B-Reagent
@@ -1883,8 +2011,8 @@ with	O
 52	B-Amount
 μL	I-Amount
 Resuspension	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -1901,8 +2029,8 @@ the	O
 side	B-Location
 of	O
 the	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Incubate	B-Action
 resuspended	B-Reagent
@@ -1912,8 +2040,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 plate	B-Location
@@ -1928,8 +2056,8 @@ until	B-Modifier
 the	I-Modifier
 sample	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Gently	B-Modifier
 transfer	B-Action
@@ -1940,8 +2068,8 @@ clear	B-Reagent
 sample	I-Reagent
 to	O
 new	B-Modifier
-well.
-	B-Location
+well	B-Location
+.	O
 
 Add	B-Action
 40	B-Amount
@@ -1957,8 +2085,8 @@ and	O
 mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -1966,8 +2094,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 the	O
@@ -1989,8 +2117,8 @@ until	B-Modifier
 the	I-Modifier
 supernatant	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Set	B-Action
 pipette	B-Device
@@ -2006,31 +2134,35 @@ taking	O
 care	O
 not	O
 to	O
-disturbbeads.
-	B-Reagent
+disturbbeads	B-Reagent
+.	O
 
 Some	B-Modifier
 liquid	B-Reagent
 may	O
 remain	B-Action
 in	B-Location
-wells.
-	I-Location
+wells	I-Location
+.	O
 
 Wash	B-Method
-#1:	I-Method
+#	I-Method
+1	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -2043,30 +2175,35 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Wash	B-Method
-#2:	I-Method
+#	I-Method
+2	I-Method
+:	O
 With	B-Modifier
 plate	I-Modifier
 on	I-Modifier
-stand,	I-Modifier
-gently	I-Modifier
+stand	I-Modifier
+,	O
+gently	B-Modifier
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 each	B-Modifier
@@ -2079,23 +2216,24 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-Carefully,	B-Modifier
+Carefully	B-Modifier
+,	O
 remove	B-Action
 ethanol	B-Reagent
 by	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Ensure	B-Action
 all	B-Modifier
 ethanol	B-Reagent
 has	O
 been	O
-removed.
-	B-Modifier
+removed	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -2112,8 +2250,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Resuspend	B-Action
 dried	B-Reagent
@@ -2122,14 +2260,14 @@ with	O
 16	B-Amount
 μL	I-Amount
 Resuspension	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Ensure	B-Action
 beads	B-Reagent
@@ -2142,8 +2280,8 @@ the	O
 side	B-Location
 of	O
 the	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Incubate	B-Action
 resuspended	B-Reagent
@@ -2153,8 +2291,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 plate	B-Location
@@ -2169,8 +2307,8 @@ until	B-Modifier
 the	I-Modifier
 sample	I-Modifier
 appears	I-Modifier
-clear.
-	I-Modifier
+clear	I-Modifier
+.	O
 
 Gently	B-Modifier
 transfer	B-Action
@@ -2188,8 +2326,8 @@ new	B-Modifier
 96	B-Size
 well	I-Size
 PCR	B-Location
-Plate.
-	I-Location
+Plate	I-Location
+.	O
 
 qPCR	B-Method
 is	O
@@ -2202,8 +2340,8 @@ templates	I-Reagent
 for	O
 optimal	B-Modifier
 cluster	I-Modifier
-density.
-	I-Modifier
+density	I-Modifier
+.	O
 
 
 

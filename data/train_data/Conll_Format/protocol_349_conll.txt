@@ -10,8 +10,7 @@ mm	I-Size
 Anodisc	B-Location
 0.02	B-Size
 μm	I-Size
-filters
-	B-Location
+filters	B-Location
 
 Cut	B-Action
 a	O
@@ -21,8 +20,12 @@ syringe	B-Device
 as	O
 a	O
 filter	B-Device
-funnel:(Fig	I-Device
-1)	O
+funnel	I-Device
+:	O
+(	O
+Fig	O
+1	O
+)	O
 Take	B-Action
 a	O
 gasket	B-Location
@@ -32,9 +35,12 @@ mm	I-Size
 MILLIPORE	B-Location
 filter	I-Location
 holder	I-Location
-(FISHER,	O
-SX0001300).
-	O
+(	O
+FISHER	O
+,	O
+SX0001300	O
+)	O
+.	O
 
 Fig	O
 2	O
@@ -44,8 +50,8 @@ clamp	B-Location
 for	O
 25	B-Size
 filter	B-Location
-funnel.
-	I-Location
+funnel	I-Location
+.	O
 
 Make	B-Action
 dilution	B-Reagent
@@ -62,8 +68,8 @@ concentration	B-Measure-Type
 of	O
 ~E+07	B-Modifier
 particles	B-Concentration
-ml-1.
-	I-Concentration
+ml-1	I-Concentration
+.	O
 
 Thaw	B-Action
 the	O
@@ -88,8 +94,8 @@ because	O
 SYBR-Gold	B-Reagent
 is	O
 in	O
-DMSO.
-	B-Reagent
+DMSO	B-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -97,8 +103,8 @@ at	O
 rpm	B-Speed
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Dilute	B-Action
 SYBR-Gold	B-Reagent
@@ -110,14 +116,16 @@ TE	B-Reagent
 buffer	I-Reagent
 to	O
 100x	B-Concentration
-(10	B-Amount
+(	O
+10	B-Amount
 µl	I-Amount
 in	O
 990	B-Amount
 µl	I-Amount
 TE	B-Reagent
-buffer).
-	I-Reagent
+buffer	I-Reagent
+)	O
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -138,28 +146,29 @@ in	O
 a	O
 plastic	B-Location
 Petri	I-Location
-dish.
-	I-Location
+dish	I-Location
+.	O
 
 Cover	B-Action
 the	O
 dish	B-Location
 by	O
 aluminum	B-Seal
-foil.
-	I-Seal
+foil	I-Seal
+.	O
 
 Set	B-Action
 up	I-Action
 the	O
 filtration	B-Location
-unit,	I-Location
+unit	I-Location
+,	O
 connecting	B-Action
 it	O
 to	O
 a	O
-vacuum.
-	B-Device
+vacuum	B-Device
+.	O
 
 Add	B-Action
 a	O
@@ -182,22 +191,25 @@ mm	I-Size
 0.2	B-Numerical
 nitrocellulose	B-Location
 filter	I-Location
-(the	O
+(	O
+the	O
 support	B-Location
-filter)	I-Location
+filter	I-Location
+)	O
 on	O
 top	B-Location
 of	O
 the	O
-water.
-	B-Reagent
+water	B-Reagent
+.	O
 
 Fig	O
 3	O
 Switch	B-Action
 on	I-Action
 the	O
-vacuum,	B-Device
+vacuum	B-Device
+,	O
 the	O
 support	B-Location
 filter	I-Location
@@ -207,8 +219,8 @@ flat	O
 on	O
 the	O
 filter	B-Location
-base.
-	I-Location
+base	I-Location
+.	O
 
 Place	B-Action
 a	O
@@ -220,8 +232,8 @@ on	O
 the	O
 wet	B-Modifier
 nitrocellulose	B-Location
-filter.
-	I-Location
+filter	I-Location
+.	O
 
 Fig	O
 4	O
@@ -233,8 +245,8 @@ the	O
 13	B-Size
 mm	I-Size
 Anodisc	B-Location
-filter.
-	I-Location
+filter	I-Location
+.	O
 
 Fig	O
 5	O
@@ -250,8 +262,8 @@ gasket	B-Location
 and	O
 apply	B-Action
 the	O
-clamp.
-	B-Device
+clamp	B-Device
+.	O
 
 Fig	O
 6	O
@@ -263,8 +275,9 @@ and	O
 add	B-Action
 samples	B-Reagent
 for	O
-filtration,	B-Action
-leave	I-Action
+filtration	B-Action
+,	O
+leave	B-Action
 the	O
 vacuum	B-Device
 on	O
@@ -275,8 +288,8 @@ minutes	I-Time
 after	O
 sample	B-Reagent
 drained	B-Modifier
-completely.
-	I-Modifier
+completely	I-Modifier
+.	O
 
 Leave	B-Action
 the	O
@@ -289,8 +302,8 @@ minutes	I-Time
 after	O
 sample	B-Reagent
 drained	B-Action
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Take	B-Action
 away	I-Action
@@ -303,8 +316,8 @@ funnel	I-Location
 while	O
 vacuum	B-Device
 is	O
-on.
-	O
+on	O
+.	O
 
 Carefully	B-Modifier
 push	B-Action
@@ -326,8 +339,8 @@ on	O
 to	O
 remove	B-Action
 the	O
-filter.
-	B-Location
+filter	B-Location
+.	O
 
 Fig	O
 7	O
@@ -341,8 +354,8 @@ the	O
 dark	B-Location
 at	O
 RT	B-Temperature
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Remove	B-Action
 membrane	B-Location
@@ -359,15 +372,16 @@ Petri	B-Location
 dish	I-Location
 for	O
 15	B-Time
-min,	I-Time
+min	I-Time
+,	O
 cover	B-Action
 the	O
 Petri	B-Location
 dish	I-Location
 by	O
 aluminum	B-Seal
-foil.
-	I-Seal
+foil	I-Seal
+.	O
 
 Cover	B-Action
 the	O
@@ -375,8 +389,8 @@ Petri	B-Location
 dish	I-Location
 by	O
 aluminum	B-Seal
-foil.
-	I-Seal
+foil	I-Seal
+.	O
 
 Dry	B-Action
 filter	B-Location
@@ -389,8 +403,8 @@ the	O
 dark	B-Location
 at	O
 RT	B-Temperature
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Pipet	B-Action
 10	B-Amount
@@ -410,8 +424,8 @@ membrane	I-Location
 on	O
 top	B-Location
 of	O
-it.
-	O
+it	O
+.	O
 
 Pipet	B-Action
 10	B-Amount
@@ -430,8 +444,8 @@ the	O
 filter	B-Location
 to	O
 avoid	B-Action
-bubbles.
-	I-Action
+bubbles	I-Action
+.	O
 
 Pipet	B-Action
 10	B-Amount
@@ -450,8 +464,8 @@ the	O
 filter	B-Location
 to	O
 avoid	B-Action
-bubbles.
-	I-Action
+bubbles	I-Action
+.	O
 
 Place	B-Action
 slide	B-Location
@@ -459,8 +473,8 @@ at	O
 –20°C	B-Temperature
 to	O
 enhance	B-Action
-fluorescence.
-	B-Measure-Type
+fluorescence	B-Measure-Type
+.	O
 
 Read	B-Action
 slides	B-Location
@@ -472,8 +486,8 @@ objective	I-Reagent
 and	O
 inverted	B-Device
 fluorescent	I-Device
-microscope.
-	I-Device
+microscope	I-Device
+.	O
 
 
 

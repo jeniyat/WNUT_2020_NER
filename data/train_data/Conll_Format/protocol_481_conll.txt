@@ -1,6 +1,5 @@
 Electroporation	B-Method
-Protocol
-	O
+Protocol	O
 
 Turn	B-Action
 on	I-Action
@@ -10,14 +9,18 @@ set	B-Action
 to	O
 1.7-2.5	B-Generic-Measure
 kv	I-Generic-Measure
-(optimize	B-Action
+(	O
+optimize	B-Action
 for	O
-strain),	B-Reagent
+strain	B-Reagent
+)	O
+,	O
 200	B-Generic-Measure
 ohms	I-Generic-Measure
 and	O
 25	B-Generic-Measure
-µF.	I-Generic-Measure
+µF	I-Generic-Measure
+.	O
 
 Place	B-Action
 recovery	B-Reagent
@@ -25,13 +28,15 @@ SOC	I-Reagent
 in	O
 37°C	B-Temperature
 water	B-Device
-bath.	I-Device
+bath	I-Device
+.	O
 
 Pre-warm	B-Action
 LB-antibiotic	B-Location
 plates	I-Location
 at	O
-37°C.	B-Temperature
+37°C	B-Temperature
+.	O
 
 Thaw	B-Action
 cells	B-Reagent
@@ -44,7 +49,8 @@ or	O
 use	B-Action
 freshly	B-Modifier
 made	I-Modifier
-cells.	B-Reagent
+cells	B-Reagent
+.	O
 
 Place	B-Action
 appropriate	B-Modifier
@@ -57,7 +63,8 @@ and	O
 mm-electroporation	I-Generic-Measure
 cuvettes	B-Location
 on	O
-ice.	B-Location
+ice	B-Location
+.	O
 
 Flick	B-Action
 the	O
@@ -76,7 +83,8 @@ add	B-Action
 to	O
 the	O
 microcentrifuge	B-Location
-tubes.	I-Location
+tubes	I-Location
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -87,16 +95,19 @@ a	O
 pg/µl	I-Concentration
 DNA	B-Reagent
 solution	I-Reagent
-(in	O
+(	O
+in	O
 DI	B-Reagent
-water)	I-Reagent
+water	I-Reagent
+)	O
 to	O
 the	O
 cells	B-Reagent
 in	O
 the	O
 microcentrifuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Transfer	B-Action
 the	O
@@ -105,11 +116,13 @@ mixture	I-Reagent
 to	O
 the	O
 cold	B-Modifier
-cuvette,	B-Location
+cuvette	B-Location
+,	O
 tap	B-Action
 on	O
 countertop	B-Location
-2X,	B-Numerical
+2X	B-Numerical
+,	O
 wipe	B-Action
 water	B-Reagent
 from	O
@@ -125,11 +138,16 @@ module	I-Device
 and	O
 press	B-Action
 pulse	I-Action
-(don’t	O
+(	O
+don	O
+’	O
+t	O
 hold	B-Action
 the	O
 button	B-Device
-down).	O
+down	O
+)	O
+.	O
 
 Immediately	B-Modifier
 add	B-Action
@@ -137,7 +155,8 @@ add	B-Action
 µl	I-Amount
 of	O
 37°C	B-Temperature
-SOC,	B-Reagent
+SOC	B-Reagent
+,	O
 mix	B-Action
 by	O
 pipetting	B-Action
@@ -151,7 +170,8 @@ to	O
 a	O
 15	B-Amount
 ml-falcon	I-Amount
-tube.	B-Location
+tube	B-Location
+.	O
 
 Rotate	B-Action
 in	O
@@ -160,17 +180,19 @@ the	O
 incubator	B-Device
 for	O
 1	B-Time
-h.	I-Time
+h	I-Time
+.	O
 
 Make	B-Action
 appropriate	B-Modifier
-dilutions.	B-Reagent
+dilutions	B-Reagent
+.	O
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 
 

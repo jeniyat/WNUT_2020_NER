@@ -1,22 +1,28 @@
 Antibody	B-Reagent
 Purification	B-Method
-(small	O
-scale)
-	O
+(	O
+small	O
+scale	O
+)	O
 
 Centrifuge	B-Action
 anti-sera	B-Reagent
 @	O
-4ºC,	B-Temperature
-14,000g,	B-Speed
-10min.
-	B-Temperature
+4ºC	B-Temperature
+,	O
+14,000g	B-Speed
+,	O
+10min	B-Temperature
+.	O
 
-(Optional) Filter	B-Action
-through	O
+(	O
+Optional	O
+)	O
+Filter	B-Action
+through	I-Action
 0.2um	B-Size
-filter.
-	B-Device
+filter	I-Size
+.	B-Device
 
 Apply	B-Action
 protein	B-Reagent
@@ -30,8 +36,8 @@ to	O
 Bio-Rad	B-Location
 empty	I-Location
 gravity	I-Location
-column.
-	I-Location
+column	I-Location
+.	O
 
 Set	B-Action
 up	I-Action
@@ -40,8 +46,8 @@ column	B-Location
 on	O
 a	O
 vacuum	B-Device
-manifold.
-	I-Device
+manifold	I-Device
+.	O
 
 Equilibrate	B-Action
 column	B-Location
@@ -52,8 +58,8 @@ of	O
 ice	B-Modifier
 cold	I-Modifier
 Binding	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Dilute	B-Action
 anti-sera	B-Reagent
@@ -62,8 +68,8 @@ with	O
 volumes	I-Amount
 of	O
 Binding	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Let	O
 diluted	B-Modifier
@@ -73,8 +79,8 @@ through	I-Action
 the	O
 column	B-Location
 by	O
-gravity.
-	O
+gravity	O
+.	O
 
 Collect	B-Action
 flow	B-Reagent
@@ -83,8 +89,8 @@ and	O
 repeat	B-Action
 step	B-Method
 6	I-Method
-once.
-	B-Numerical
+once	B-Numerical
+.	O
 
 Wash	B-Action
 column	B-Location
@@ -95,8 +101,8 @@ volumes	I-Amount
 of	O
 ice-cold	B-Modifier
 Binding	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Elute	B-Action
 antibody	B-Reagent
@@ -108,8 +114,8 @@ of	O
 room	B-Temperature
 temperature	I-Temperature
 Elution	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	I-Reagent
 
 Fill	B-Action
 up	I-Action
@@ -117,11 +123,14 @@ each	B-Modifier
 collecting	B-Location
 tube	I-Location
 with	O
-200 μl	B-Amount
-1M	B-Concentration
-Tris-HCl	B-Reagent
-(PH9.0).
-	B-pH
+200	B-Amount
+μl	I-Amount
+1M	I-Amount
+Tris-HCl	B-Concentration
+(	B-Reagent
+PH9.0	B-pH
+)	I-pH
+.	O
 
 Collect	B-Action
 1ml	B-Amount
@@ -131,15 +140,15 @@ through	I-Reagent
 in	O
 each	B-Modifier
 collecting	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Save	B-Action
 for	O
 antibody	B-Method
 activity	I-Method
-test.
-	I-Method
+test	I-Method
+.	O
 
 Re-equilibrate	B-Action
 column	B-Location
@@ -149,8 +158,8 @@ bed	I-Amount
 volumes	I-Amount
 of	O
 Binding	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Store	B-Action
 Column	B-Location
@@ -158,8 +167,8 @@ at	O
 refrigerator	B-Device
 for	O
 later	O
-use.
-	O
+use	O
+.	O
 
 
 

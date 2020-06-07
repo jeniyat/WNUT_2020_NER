@@ -1,196 +1,121 @@
-T1	Action 26 30	Pour
-E1	Action:T1 Acts-on:T33
-T3	Action 88 92	Melt
-E3	Action:T3 Acts-on:T2
-T4	Action 116 120	hold
-E4	Action:T4 Acts-on:T2 Site:T32
-T5	Action 145 153	Dispense
-E5	Action:T5 Acts-on:T37 Using:T40
-T6	Action 207 211	hold
-E6	Action:T6 Acts-on:T37
-T7	Action 221 232	Concentrate
-E7	Action:T7 Site:T65 Acts-on:T58
-T8	Action 330 339	resuspend
-E8	Action:T8 Acts-on:T69 Using:T71
-T9	Action 371 382	Concentrate
-E9	Action:T9 
-T10	Action 433 440	Make up
-E10	Action:T10 Acts-on:T62 Using:T61 Site:T73 Using2:T75
-T11	Action 533 539	Dilute
-E11	Action:T11 Acts-on:T30
-T12	Action 576 581	Label
-E12	Action:T12 Acts-on:T25
-T13	Action 594 600	Remove
-E13	Action:T13 Acts-on:T27 Site:T29 Site2:T15
-T14	Action 697 700	add
-E14	Action:T14 Acts-on:T43 Acts-on2:T45 Site:T59
-T16	Action 871 874	Mix
-E16	Action:T16 Acts-on:T17 Site:T48
-T18	Action 941 945	pour
-E18	Action:T18 Acts-on:T17 Site:T48
-T19	Action 987 991	Tilt
-E19	Action:T19 Acts-on:T49
-T21	Action 1096 1104	solidify
-E21	Action:T21 
-T20	Action 1109 1114	stick
-E20	Action:T20 Acts-on:T78 Using:T51
-T22	Action 1154 1160	Invert
-E22	Action:T22 Acts-on:T79 Using:T80
-T23	Action 1191 1199	Incubate
-E23	Action:T23 Acts-on:T82 Site:T84
-T24	Action 1240 1245	Stack
-E24	Action:T24 Acts-on:T85
-T25	Device 586 592	plates
-T26	Size 601 612	13 x 100 mm
-T27	Device 613 618	tubes
-T28	Reagent 627 631	agar
-T29	Location 641 651	water bath
-T15	Location 657 671	test tube rack
-T30	Reagent 544 549	virus
-T2	Reagent 107 111	agar
-T31	Temperature 128 132	50°C
-T32	Location 133 143	water bath
-T33	Device 35 41	plates
-T34	Time 53 68	day of titering
-T35	Time 76 86	day before
-R1	Or Arg1:T34 Arg2:T35	
-R2	Setting Arg1:E1 Arg2:T34	
-R3	Setting Arg1:E4 Arg2:T31	
-T36	Amount 154 160	2.5 ml
-T37	Reagent 169 173	agar
-T38	Modifier 177 184	sterile
-T39	Size 185 196	13 x 100 mm
-T40	Device 197 202	tubes
-T41	Temperature 215 219	50°C
-R4	Measure Arg1:T37 Arg2:T36	
-R5	Setting Arg1:E6 Arg2:T41	
-R6	Measure Arg1:T40 Arg2:T39	
-R7	Mod-Link Arg1:T40 Arg2:T38	
-T42	Amount 701 707	0.3 ml
-T43	Reagent 728 737	chlorella
-T44	Amount 742 748	0.1 ml
-T45	Reagent 756 769	diluted virus
-T46	Modifier 875 882	briefly
-T48	Location 980 985	plate
-T49	Location 996 1001	plate
-T50	Modifier 1002 1008	gently
-R8	Mod-Link Arg1:E19 Arg2:T50	
-T51	Reagent 1088 1092	agar
-T52	Modifier 1084 1087	top
-T53	Action 1074 1079	Allow
-E2	Action:T53 Acts-on:T51
-R9	Mod-Link Arg1:T51 Arg2:T52	
-T54	Modifier 164 168	soft
-R10	Mod-Link Arg1:T37 Arg2:T54	
-T55	Modifier 715 727	concentrated
+T1	Method 0 25	PBCV-1 Virus Plaque Assay
+T2	Action 26 30	Pour
+T3	Device 35 41	plates
+T4	Time 53 68	day of titering
+T5	Time 76 86	day before
+T6	Action 88 92	Melt
+T7	Modifier 97 106	MBBM soft
+T8	Reagent 107 111	agar
+T9	Action 116 120	hold
+T10	Temperature 128 132	50°C
+T11	Location 133 143	water bath
+T12	Action 145 153	Dispense
+T13	Amount 154 160	2.5 ml
+T14	Modifier 164 168	soft
+T15	Reagent 169 173	agar
+T16	Modifier 177 184	sterile
+T17	Size 185 196	13 x 100 mm
+T18	Device 197 202	tubes
+T19	Action 207 211	hold
+T20	Temperature 215 219	50°C
+T21	Action 221 232	Concentrate
+T22	Reagent 237 252	NC64A chlorella
+T23	Concentration 256 274	4.0 X 108 cells/ml
+T24	Device 282 300	Sorvall centrifuge
+T25	Speed 304 313	5,000 rpm
+T26	Time 315 320	5 min
+T27	Temperature 322 325	4°C
+T28	Action 330 339	resuspend
+T29	Reagent 344 351	pellets
+T30	Modifier 357 362	fresh
+T31	Reagent 363 369	medium
+T32	Action 371 382	Concentrate
+T33	Modifier 383 389	enough
+T34	Amount 398 404	0.3 ml
+T35	Action 412 416	used
+T36	Modifier 421 425	each
+T37	Location 426 431	plate
+T38	Action 433 440	Make up
+T39	Device 441 456	dilution blanks
+T40	Reagent 465 470	virus
+T41	Modifier 478 485	sterile
+T42	Size 486 497	13 x 100 mm
+T43	Location 498 503	tubes
+T44	Amount 509 514	50 mM
+T45	Reagent 515 523	Tris-HCl
+T46	pH 525 531	pH 7.8
+T47	Action 533 539	Dilute
+T48	Reagent 544 549	virus
+T49	Numerical 553 557	1/10
+T50	Method 558 574	serial dilutions
+T51	Action 576 581	Label
+T52	Device 586 592	plates
+T53	Action 594 600	Remove
+T54	Size 601 612	13 x 100 mm
+T55	Device 613 618	tubes
 T56	Modifier 622 626	soft
-R11	Mod-Link Arg1:T28 Arg2:T56	
-R12	Mod-Link Arg1:T43 Arg2:T55	
-R13	Measure Arg1:T43 Arg2:T42	
-R14	Measure Arg1:T45 Arg2:T44	
-T57	Modifier 97 106	MBBM soft
-R15	Mod-Link Arg1:T2 Arg2:T57	
-T60	Modifier 383 389	enough
-T64	Concentration 256 274	4.0 X 108 cells/ml
-T65	Device 282 300	Sorvall centrifuge
-T66	Speed 304 313	5,000 rpm
-T67	Time 315 320	5 min
-T68	Temperature 322 325	4°C
-T69	Reagent 344 351	pellets
-T70	Modifier 357 362	fresh
-T71	Reagent 363 369	medium
-R16	Mod-Link Arg1:T71 Arg2:T70	
-R18	Setting Arg1:E7 Arg2:T64	
-R19	Setting Arg1:E7 Arg2:T66	
-R20	Setting Arg1:E7 Arg2:T67	
-R21	Setting Arg1:E7 Arg2:T68	
-R22	Mod-Link Arg1:E9 Arg2:T60	
-T61	Reagent 465 470	virus
-T62	Device 441 456	dilution blanks
-T63	Size 486 497	13 x 100 mm
-T72	Modifier 478 485	sterile
-T73	Location 498 503	tubes
-T74	Amount 509 514	50 mM
-T75	Reagent 515 523	Tris-HCl
-T76	pH 525 531	pH 7.8
-R23	Measure Arg1:T73 Arg2:T63	
-R24	Measure Arg1:T75 Arg2:T74	
-R25	Measure Arg1:T75 Arg2:T76	
-R26	Measure Arg1:T27 Arg2:T26	
-R27	Meronym Arg1:T28 Arg2:T27	
-R28	Mod-Link Arg1:E16 Arg2:T46	
-T17	Reagent 950 970	contents of the tube
-T77	Modifier 1122 1128	bottom
-T78	Reagent 1129 1133	agar
-R30	Mod-Link Arg1:T78 Arg2:T77	
-T79	Location 1165 1171	plates
-T80	Seal 1181 1184	lid
-T81	Modifier 1185 1189	down
-R31	Mod-Link Arg1:T80 Arg2:T81	
-T82	Location 1204 1210	plates
-T83	Temperature 1214 1218	25°C
-T84	Location 1222 1238	continuous light
-R32	Setting Arg1:E23 Arg2:T83	
-T85	Location 1250 1256	plates
-T58	Reagent 237 252	NC64A chlorella
-T59	Location 691 695	tube
-T86	Modifier 686 690	each
-R17	Mod-Link Arg1:T59 Arg2:T86	
-T87	Method 0 25	PBCV-1 Virus Plaque Assay
-T88	Numerical 553 557	1/10
-T89	Method 558 574	serial dilutions
-T90	Modifier 672 681	as needed
-R33	Mod-Link Arg1:E13 Arg2:T90	
-T91	Action 776 784	titering
-E15	Action:T91 Acts-on:T92
-T92	Reagent 789 800	NY-2A virus
-T93	Action 802 805	use
-E17	Action:T93 Acts-on:T96
-T94	Amount 806 820	0.05 to 0.1 ml
-T95	Modifier 828 840	concentrated
-T96	Reagent 841 850	chlorella
-T97	Amount 862 868	0.3 ml
-R34	Mod-Link Arg1:T96 Arg2:T95	
-R35	Measure Arg1:T96 Arg2:T94	
-T98	Action 887 894	rolling
-E25	Action:T98 Acts-on:T99 Using:T100
-T99	Location 899 904	tubes
-T100	Method 905 935	between the palms of the hands
-T47	Modifier 1009 1014	until
-T101	Modifier 1019 1025	entire
-T102	Location 1026 1033	surface
-T103	Location 1041 1046	plate
-T104	Action 1050 1057	covered
-E26	Action:T104 Acts-on:T106 Acts-on2:T102
-T105	Modifier 1063 1067	soft
-T106	Reagent 1068 1072	agar
-R29	Mod-Link Arg1:T106 Arg2:T105	
-R36	Mod-Link Arg1:T102 Arg2:T101	
-R37	Mod-Link Arg1:E19 Arg2:T47	
-R38	Meronym Arg1:T102 Arg2:T103	
-T107	Modifier 1135 1140	maybe
-T108	Time 1141 1151	20 minutes
-R39	Mod-Link Arg1:T108 Arg2:T107	
-T109	Reagent 1339 1346	Plaques
-T110	Modifier 1355 1369	ready to count
-T111	Modifier 1370 1375	after
-T112	Time 1376 1384	3-4 days
-T113	Method 1385 1395	incubation
-R40	Mod-Link Arg1:T112 Arg2:T111	
-R41	Mod-Link Arg1:T109 Arg2:T110	
-T114	Reagent 1279 1285	plaque
-T115	Size 1286 1290	size
-T116	Action 1296 1304	increase
-E27	Action:T116 
-T117	Location 1312 1318	plates
-T118	Modifier 1262 1270	two deep
-R42	Mod-Link Arg1:E24 Arg2:T118	
-T119	Modifier 1323 1337	stacked deeper
-R43	Mod-Link Arg1:E27 Arg2:T119	
-T120	Amount 398 404	0.3 ml
-T121	Modifier 421 425	each
-T122	Location 426 431	plate
-R44	Mod-Link Arg1:T122 Arg2:T121	
-T123	Action 412 416	used
-E28	Action:T123 Site:T122
-R45	Setting Arg1:E28 Arg2:T120	
+T57	Reagent 627 631	agar
+T58	Location 641 651	water bath
+T59	Location 657 671	test tube rack
+T60	Modifier 672 681	as needed
+T61	Modifier 686 690	each
+T62	Location 691 695	tube
+T63	Action 697 700	add
+T64	Amount 701 707	0.3 ml
+T65	Modifier 715 727	concentrated
+T66	Reagent 728 737	chlorella
+T67	Amount 742 748	0.1 ml
+T68	Reagent 756 769	diluted virus
+T69	Action 776 784	titering
+T70	Reagent 789 800	NY-2A virus
+T71	Action 802 805	use
+T72	Amount 806 820	0.05 to 0.1 ml
+T73	Modifier 828 840	concentrated
+T74	Reagent 841 850	chlorella
+T75	Amount 862 868	0.3 ml
+T76	Action 871 874	Mix
+T77	Modifier 875 882	briefly
+T78	Action 887 894	rolling
+T79	Location 899 904	tubes
+T80	Method 905 935	between the palms of the hands
+T81	Action 941 945	pour
+T82	Reagent 950 970	contents of the tube
+T83	Location 980 985	plate
+T84	Action 987 991	Tilt
+T85	Location 996 1001	plate
+T86	Modifier 1002 1014	gently until
+T87	Modifier 1019 1025	entire
+T88	Location 1026 1033	surface
+T89	Location 1041 1046	plate
+T90	Action 1050 1057	covered
+T91	Modifier 1063 1067	soft
+T92	Reagent 1068 1072	agar
+T93	Action 1074 1079	Allow
+T94	Modifier 1084 1087	top
+T95	Reagent 1088 1092	agar
+T96	Action 1096 1104	solidify
+T97	Action 1109 1114	stick
+T98	Modifier 1122 1128	bottom
+T99	Reagent 1129 1133	agar
+T100	Modifier 1135 1140	maybe
+T101	Time 1141 1151	20 minutes
+T102	Action 1154 1160	Invert
+T103	Location 1165 1171	plates
+T104	Seal 1181 1184	lid
+T105	Modifier 1185 1189	down
+T106	Action 1191 1199	Incubate
+T107	Location 1204 1210	plates
+T108	Temperature 1214 1218	25°C
+T109	Location 1222 1238	continuous light
+T110	Action 1240 1245	Stack
+T111	Location 1250 1256	plates
+T112	Modifier 1262 1270	two deep
+T113	Reagent 1279 1285	plaque
+T114	Size 1286 1290	size
+T115	Action 1296 1304	increase
+T116	Location 1312 1318	plates
+T117	Modifier 1323 1337	stacked deeper
+T118	Reagent 1339 1346	Plaques
+T119	Modifier 1355 1375	ready to count after
+T120	Time 1376 1384	3-4 days
+T121	Method 1385 1395	incubation

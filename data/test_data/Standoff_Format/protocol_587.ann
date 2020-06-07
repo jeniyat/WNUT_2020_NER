@@ -1,265 +1,166 @@
-T1	Action 96 100	grow
-E1	Action:T1 Acts-on:T24 Site:T28
-T2	Action 126 133	Perform
-E2	Action:T2 Using:T25 Site:T29
-T3	Action 224 229	Store
-E3	Action:T3 Acts-on:T30
-T4	Action 258 264	Absorb
-E4	Action:T4 Acts-on:T32
-T5	Action 295 300	Place
-E5	Action:T5 Acts-on:T35 Acts-on2:T37 Site:T39
-T7	Action 465 468	Add
-E7	Action:T7 Acts-on:T45 Site:T46
-T8	Action 523 527	Seal
-E8	Action:T8 Acts-on:T47 Using:T49
-T10	Action 835 845	filter out
-E10	Action:T10 Acts-on:T59 Site:T63
-T11	Action 943 951	Transfer
-E11	Action:T11 Acts-on:T69 Site:T71
-T12	Action 993 998	Store
-E12	Action:T12 
-T13	Action 1009 1022	Plaque-purify
-E13	Action:T13 Acts-on:T73
-T14	Action 1093 1100	Prepare
-E14	Action:T14 Product:T81 Product2:T83
-T15	Action 1142 1148	Absorb
-E15	Action:T15 Acts-on:T84 Using:T87 Using2:T90
-T16	Action 1279 1282	Mix
-E16	Action:T16 Acts-on:T93 Site:T95
-T17	Action 1335 1339	Pour
-E17	Action:T17 Site:T96
-T18	Action 1363 1371	Incubate
-E18	Action:T18 
-T19	Action 1492 1497	Store
-E19	Action:T19 Acts-on:T97
-T20	Action 1715 1719	Take
-E20	Action:T20 Acts-on:T106
-T21	Action 1835 1838	Add
-E21	Action:T21 Site:T115
-T22	Action 1877 1891	Centrifuge out
-E22	Action:T22 Acts-on:T118
-T23	Action 2018 2024	Purify
-E23	Action:T23 Acts-on:T127 Using:T128
-T24	Reagent 59 79	Roseobacter cultures
-T27	Amount 104 108	5 ml
-T28	Reagent 109 123	broth cultures
-R1	Measure Arg1:T28 Arg2:T27	
-T25	Method 134 149	virus screening
-T26	Modifier 153 160	sterile
-T29	Location 161 221	96 well flat-bottom tissue culture treated microtiter plates
-R2	Mod-Link Arg1:T29 Arg2:T26	
-T30	Reagent 230 248	seawater filtrates
-T31	Temperature 252 255	4°C
-R3	Setting Arg1:E3 Arg2:T31	
-T32	Reagent 269 276	viruses
-T33	Modifier 277 292	to the bacteria
-R4	Mod-Link Arg1:E4 Arg2:T33	
-T34	Amount 301 306	15 µl
-T35	Reagent 310 325	log phase cells
-T36	Amount 330 335	15 µl
-T37	Reagent 339 356	seawater filtrate
-T38	Reagent 369 374	virus
-R5	Meronym Arg1:T38 Arg2:T37	
-T39	Location 381 386	wells
-T40	Location 392 405	96 well plate
-R6	Meronym Arg1:T39 Arg2:T40	
-R7	Measure Arg1:T35 Arg2:T34	
-R8	Measure Arg1:T37 Arg2:T36	
-T6	Time 456 462	1 hour
-T41	Action 429 435	absorb
-E6	Action:T41 Acts-on:T42 Acts-on2:T43
-T42	Reagent 418 425	viruses
-T43	Reagent 443 451	bacteria
-R10	Setting Arg1:E6 Arg2:T6	
-T44	Amount 469 475	200 µl
-T45	Reagent 476 488	growth media
-R11	Measure Arg1:T45 Arg2:T44	
-T46	Location 515 520	wells
-T47	Location 532 537	plate
-T48	Action 556 564	incubate
-E24	Action:T48 Acts-on:T47
-T49	Seal 543 551	parafilm
-T50	Action 570 577	shaking
-E25	Action:T50 
-T9	Action 660 678	Enrich for viruses
-E9	Action:T9 
-T51	Location 708 721	96 well plate
-T52	Location 733 746	96-well plate
-T53	Modifier 725 732	another
-T54	Modifier 700 707	initial
-R12	Mod-Link Arg1:T51 Arg2:T54	
-R13	Mod-Link Arg1:T52 Arg2:T53	
-T55	Reagent 764 776	liquid media
-T56	Modifier 758 763	fresh
-R14	Mod-Link Arg1:T55 Arg2:T56	
-R15	Meronym Arg1:T55 Arg2:T52	
-T57	Action 682 694	transferring
-E26	Action:T57 Site:T51 Site2:T52
-T58	Modifier 807 833	Once enriched sufficiently
-R16	Mod-Link Arg1:E10 Arg2:T58	
-T59	Reagent 846 851	cells
-T60	Size 857 862	0.2um
-T61	Action 863 873	filtration
-E27	Action:T61 
-T62	Amount 879 884	1.5ml
-T63	Location 885 900	microfuge tubes
-R17	Measure Arg1:T63 Arg2:T62	
-T64	Action 901 905	Spin
-E28	Action:T64 Acts-on:T63
-T65	Time 910 916	5 mins
-T66	Speed 921 924	max
-T67	Action 928 934	pellet
-E29	Action:T67 Acts-on:T68
-T68	Reagent 935 940	cells
-R18	Setting Arg1:E28 Arg2:T65	
-R19	Setting Arg1:E28 Arg2:T66	
-R20	Setting Arg1:E27 Arg2:T60	
-T69	Reagent 952 963	supernatant
-T70	Modifier 967 972	fresh
-T71	Location 973 977	tube
-R21	Mod-Link Arg1:T71 Arg2:T70	
-T72	Temperature 1002 1005	4°C
-R22	Setting Arg1:E12 Arg2:T72	
-T73	Location 1023 1028	wells
-T74	Reagent 1040 1045	virus
-T75	Action 1049 1056	growing
-E30	Action:T75 Acts-on:T76 Acts-on2:T77 Site:T79
-T76	Reagent 1057 1062	cells
-T77	Reagent 1068 1073	virus
-T78	Modifier 1077 1082	solid
-T79	Reagent 1083 1088	media
-R23	Mod-Link Arg1:T79 Arg2:T78	
-R24	Meronym Arg1:T74 Arg2:T73	
-T80	Modifier 1101 1106	solid
-T81	Reagent 1107 1117	agar media
-T82	Concentration 1122 1126	0.5%
-T83	Reagent 1127 1139	overlay agar
-R25	Mod-Link Arg1:T81 Arg2:T80	
-R26	Measure Arg1:T83 Arg2:T82	
-T84	Reagent 1149 1154	virus
-T85	Modifier 1155 1163	to cells
-R27	Mod-Link Arg1:E15 Arg2:T85	
-T86	Amount 1191 1196	25 µl
-T87	Reagent 1197 1202	virus
-T88	Location 1208 1221	96 well plate
-T89	Amount 1238 1244	200 µl
-T90	Reagent 1245 1268	log-phase host bacteria
-T91	Time 1273 1276	1hr
-R28	Setting Arg1:E15 Arg2:T91	
-R29	Measure Arg1:T87 Arg2:T86	
-R30	Measure Arg1:T90 Arg2:T89	
-T92	Modifier 1287 1301	virus-absorbed
-T93	Reagent 1302 1307	cells
-R31	Mod-Link Arg1:T93 Arg2:T92	
-R32	Meronym Arg1:T87 Arg2:T88	
-T94	Amount 1315 1319	5 ml
-T95	Reagent 1320 1332	overlay agar
-R33	Measure Arg1:T95 Arg2:T94	
-T96	Location 1340 1360	over the solid media
-T97	Reagent 1502 1507	broth
-T98	Reagent 1526 1536	agar plugs
-T99	Temperature 1540 1543	4°C
-R34	Meronym Arg1:T98 Arg2:T97	
-R35	Setting Arg1:E19 Arg2:T99	
-T100	Action 1569 1580	diffuse out
-E31	Action:T100 Acts-on:T103 Site:T101 Site2:T102
-T101	Reagent 1588 1592	agar
-T102	Reagent 1602 1607	broth
-T103	Reagent 1558 1565	viruses
-T104	Amount 1720 1725	25 µl
-T105	Modifier 1733 1748	plaque-purified
-T106	Reagent 1749 1754	virus
-R36	Mod-Link Arg1:T106 Arg2:T105	
-R37	Measure Arg1:T106 Arg2:T104	
-T107	Reagent 1756 1765	agar plug
-T108	Amount 1770 1776	100 µl
-T109	Reagent 1777 1782	broth
-R38	Measure Arg1:T109 Arg2:T108	
-R39	Meronym Arg1:T107 Arg2:T106	
-R40	Meronym Arg1:T109 Arg2:T106	
-T110	Action 1788 1794	absorb
-E32	Action:T110 Site:T112 Acts-on:T106
-T111	Amount 1798 1804	200 µl
-T112	Reagent 1805 1823	log-phase bacteria
-T113	Time 1828 1832	1 hr
-R41	Measure Arg1:T112 Arg2:T111	
-R42	Setting Arg1:E32 Arg2:T113	
-T114	Amount 1842 1846	5 ml
-T115	Reagent 1847 1852	broth
-T116	Action 1857 1861	grow
-E33	Action:T116 
-T117	Action 1867 1874	shaking
-E34	Action:T117 
-R43	Measure Arg1:T115 Arg2:T114	
-T118	Reagent 1892 1897	cells
-T119	Action 1902 1908	filter
-E35	Action:T119 Acts-on:T120 Using:T124
-T120	Reagent 1909 1916	culture
-T121	Size 1925 1931	0.2 µm
-T122	Action 1944 1949	stain
-E36	Action:T122 Using:T123 Acts-on:T126
-T123	Reagent 1939 1943	SYBR
-T124	Device 1932 1938	filter
-R44	Measure Arg1:T124 Arg2:T121	
-T125	Reagent 1967 1975	filtrate
-T126	Reagent 1952 1959	portion
-R45	Meronym Arg1:T126 Arg2:T125	
-T127	Reagent 2025 2028	DNA
-T128	Device 2039 2068	Promega Wizard Lambda DNA kit
-T129	Method 0 21	Roseobacter Screening
-T130	Reagent 25 39	Surface Waters
-T131	Reagent 46 53	Viruses
-T132	Action 54 58	Pull
-E37	Action:T132 Acts-on:T24
-T133	Modifier 80 91	from freeze
-R46	Mod-Link Arg1:E37 Arg2:T133	
-T134	Numerical 490 501	1/2 or 1/10
-T135	Reagent 502 506	YTSS
-R9	Measure Arg1:T135 Arg2:T134	
-R47	Meronym Arg1:T135 Arg2:T45	
-T136	Action 580 584	Look
-E38	Action:T136 Acts-on:T138
-T137	Modifier 589 597	infected
-T138	Location 598 603	wells
-T139	Action 609 613	show
-E39	Action:T139 Acts-on:T138
-T140	Method 614 619	lysis
-T141	Modifier 636 648	uninoculated
-T142	Reagent 649 657	controls
-R48	Mod-Link Arg1:T142 Arg2:T141	
-R49	Mod-Link Arg1:T138 Arg2:T137	
-T143	Method 779 787	frogging
-T144	Modifier 794 797	new
-T145	Location 798 803	wells
-R50	Mod-Link Arg1:T145 Arg2:T144	
-T146	Method 982 989	storage
-T147	Method 1222 1233	enrichments
-T148	Action 1376 1380	look
-E40	Action:T148 
-T149	Method 1385 1401	plaque formation
-T150	Action 1404 1408	Pick
-E41	Action:T150 Acts-on:T151
-T151	Reagent 1409 1424	representatives
-T152	Modifier 1425 1452	of all plaque types present
-T153	Action 1457 1463	record
-E42	Action:T153 Measure-Type-Link:T154 Acts-on:T155
-T154	Measure-Type 1464 1474	appearance
-T155	Reagent 1482 1489	plaques
-R51	Mod-Link Arg1:E41 Arg2:T152	
-T156	Reagent 1619 1626	viruses
-T157	Modifier 1631 1646	plaque-purified
-T158	Action 1659 1668	scaled-up
-E43	Action:T158 Acts-on:T160
-T159	Amount 1672 1676	5 ml
-T160	Reagent 1677 1691	broth cultures
-T161	Method 1696 1712	DNA purification
-R52	Measure Arg1:T160 Arg2:T159	
-R53	Mod-Link Arg1:T156 Arg2:T157	
-T162	Modifier 1610 1614	Once
-R54	Mod-Link Arg1:T156 Arg2:T162	
-T163	Action 1979 1988	determine
-E44	Action:T163 Measure-Type-Link:T166 Acts-on:T164
-T164	Reagent 1998 2003	virus
-T165	Modifier 2007 2014	present
-T166	Measure-Type 1989 1997	how much
-R55	Mod-Link Arg1:T164 Arg2:T165	
+T1	Method 0 21	Roseobacter Screening
+T2	Reagent 25 39	Surface Waters
+T3	Reagent 45 52	Viruses
+T4	Action 53 57	Pull
+T5	Reagent 58 78	Roseobacter cultures
+T6	Modifier 79 90	from freeze
+T7	Action 95 99	grow
+T8	Amount 103 107	5 ml
+T9	Reagent 108 122	broth cultures
+T10	Action 124 131	Perform
+T11	Method 132 147	virus screening
+T12	Modifier 151 158	sterile
+T13	Location 159 219	96 well flat-bottom tissue culture treated microtiter plates
+T14	Action 221 226	Store
+T15	Reagent 227 245	seawater filtrates
+T16	Temperature 249 252	4°C
+T17	Action 254 260	Absorb
+T18	Reagent 265 272	viruses
+T19	Modifier 273 288	to the bacteria
+T20	Action 290 295	Place
+T21	Amount 296 301	15 µl
+T22	Reagent 305 320	log phase cells
+T23	Amount 325 330	15 µl
+T24	Reagent 334 351	seawater filtrate
+T25	Reagent 364 369	virus
+T26	Location 376 381	wells
+T27	Location 387 400	96 well plate
+T28	Reagent 412 419	viruses
+T29	Action 423 429	absorb
+T30	Reagent 437 445	bacteria
+T31	Time 450 456	1 hour
+T32	Action 458 461	Add
+T33	Amount 462 468	200 µl
+T34	Reagent 469 481	growth media
+T35	Numerical 483 494	1/2 or 1/10
+T36	Reagent 495 499	YTSS
+T37	Location 508 513	wells
+T38	Action 515 519	Seal
+T39	Location 524 529	plate
+T40	Seal 535 543	parafilm
+T41	Action 548 556	incubate
+T42	Action 562 569	shaking
+T43	Action 571 575	Look
+T44	Modifier 580 588	infected
+T45	Location 589 594	wells
+T46	Action 600 604	show
+T47	Method 605 610	lysis
+T48	Modifier 627 639	uninoculated
+T49	Reagent 640 648	controls
+T50	Action 650 668	Enrich for viruses
+T51	Action 672 684	transferring
+T52	Modifier 690 697	initial
+T53	Location 698 711	96 well plate
+T54	Modifier 715 722	another
+T55	Location 723 736	96-well plate
+T56	Modifier 748 753	fresh
+T57	Reagent 754 766	liquid media
+T58	Method 770 778	frogging
+T59	Modifier 786 789	new
+T60	Location 790 795	wells
+T61	Modifier 798 824	Once enriched sufficiently
+T62	Action 826 836	filter out
+T63	Reagent 837 842	cells
+T64	Size 848 853	0.2um
+T65	Action 854 864	filtration
+T66	Amount 870 875	1.5ml
+T67	Location 876 891	microfuge tubes
+T68	Action 892 896	Spin
+T69	Time 901 907	5 mins
+T70	Speed 912 915	max
+T71	Action 919 925	pellet
+T72	Reagent 926 931	cells
+T73	Action 933 941	Transfer
+T74	Reagent 942 953	supernatant
+T75	Modifier 957 962	fresh
+T76	Location 963 967	tube
+T77	Method 972 979	storage
+T78	Action 981 986	Store
+T79	Temperature 990 993	4°C
+T80	Action 995 1008	Plaque-purify
+T81	Location 1009 1014	wells
+T82	Reagent 1026 1031	virus
+T83	Action 1035 1042	growing
+T84	Reagent 1043 1048	cells
+T85	Reagent 1054 1059	virus
+T86	Modifier 1063 1068	solid
+T87	Reagent 1069 1074	media
+T88	Action 1076 1083	Prepare
+T89	Modifier 1084 1089	solid
+T90	Reagent 1090 1100	agar media
+T91	Concentration 1105 1110	0.5 %
+T92	Reagent 1111 1123	overlay agar
+T93	Action 1125 1131	Absorb
+T94	Reagent 1132 1137	virus
+T95	Modifier 1138 1146	to cells
+T96	Amount 1174 1179	25 µl
+T97	Reagent 1180 1185	virus
+T98	Location 1191 1204	96 well plate
+T99	Method 1205 1216	enrichments
+T100	Amount 1221 1227	200 µl
+T101	Reagent 1228 1251	log-phase host bacteria
+T102	Time 1256 1259	1hr
+T103	Action 1261 1264	Mix
+T104	Modifier 1269 1283	virus-absorbed
+T105	Reagent 1284 1289	cells
+T106	Amount 1297 1301	5 ml
+T107	Reagent 1302 1314	overlay agar
+T108	Action 1316 1320	Pour
+T109	Location 1321 1341	over the solid media
+T110	Action 1343 1351	Incubate
+T111	Action 1356 1360	look
+T112	Method 1365 1381	plaque formation
+T113	Action 1383 1387	Pick
+T114	Reagent 1388 1403	representatives
+T115	Modifier 1404 1431	of all plaque types present
+T116	Action 1436 1442	record
+T117	Measure-Type 1443 1453	appearance
+T118	Reagent 1461 1468	plaques
+T119	Action 1470 1475	Store
+T120	Reagent 1480 1485	broth
+T121	Reagent 1504 1514	agar plugs
+T122	Temperature 1518 1521	4°C
+T123	Reagent 1536 1543	viruses
+T124	Action 1547 1558	diffuse out
+T125	Reagent 1566 1570	agar
+T126	Reagent 1580 1585	broth
+T127	Modifier 1587 1591	Once
+T128	Reagent 1596 1603	viruses
+T129	Modifier 1608 1623	plaque-purified
+T130	Action 1636 1645	scaled-up
+T131	Amount 1649 1653	5 ml
+T132	Reagent 1654 1668	broth cultures
+T133	Method 1673 1689	DNA purification
+T134	Action 1691 1695	Take
+T135	Amount 1696 1701	25 µl
+T136	Modifier 1709 1724	plaque-purified
+T137	Reagent 1725 1730	virus
+T138	Reagent 1732 1741	agar plug
+T139	Amount 1745 1752	~100 µl
+T140	Reagent 1753 1758	broth
+T141	Action 1764 1770	absorb
+T142	Amount 1774 1780	200 µl
+T143	Reagent 1781 1799	log-phase bacteria
+T144	Time 1804 1808	1 hr
+T145	Action 1810 1813	Add
+T146	Amount 1817 1821	5 ml
+T147	Reagent 1822 1827	broth
+T148	Action 1832 1836	grow
+T149	Action 1842 1849	shaking
+T150	Action 1851 1865	Centrifuge out
+T151	Reagent 1866 1871	cells
+T152	Action 1876 1882	filter
+T153	Reagent 1883 1890	culture
+T154	Size 1899 1905	0.2 µm
+T155	Device 1906 1912	filter
+T156	Reagent 1913 1917	SYBR
+T157	Action 1918 1923	stain
+T158	Reagent 1926 1933	portion
+T159	Reagent 1941 1949	filtrate
+T160	Action 1953 1962	determine
+T161	Measure-Type 1963 1971	how much
+T162	Reagent 1972 1977	virus
+T163	Modifier 1981 1988	present
+T164	Action 1990 1996	Purify
+T165	Reagent 1997 2000	DNA
+T166	Device 2011 2040	Promega Wizard Lambda DNA kit

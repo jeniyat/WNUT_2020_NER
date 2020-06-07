@@ -5,8 +5,7 @@ Cell	I-Reagent
 Transfection	B-Method
 by	O
 FuGENE	B-Reagent
-HD
-	I-Reagent
+HD	I-Reagent
 
 STO	B-Reagent
 cells	I-Reagent
@@ -19,20 +18,22 @@ transfection	B-Method
 with	O
 the	O
 density	B-Measure-Type
-15,000 cells	B-Reagent
-per	O
+15,000	B-Reagent
+cells	I-Reagent
+per	I-Reagent
 well	B-Location
-in	O
+in	I-Location
 100	B-Amount
 μl	I-Amount
-complete	B-Reagent
-growth	I-Reagent
+complete	I-Amount
+growth	B-Reagent
 medium	I-Reagent
-DMEM+10%	I-Reagent
-Fetal	I-Reagent
-Bovine	I-Reagent
-Serum.
-	I-Reagent
+DMEM+10	I-Reagent
+%	B-Concentration
+Fetal	I-Concentration
+Bovine	B-Reagent
+Serum	I-Reagent
+.	I-Reagent
 
 Prepare	B-Action
 0.02μg/μl	B-Concentration
@@ -41,8 +42,8 @@ plasmid	I-Reagent
 DNA	I-Reagent
 solution	I-Reagent
 in	O
-OptiMEM®.
-	B-Reagent
+OptiMEM®	B-Reagent
+.	O
 
 Add	B-Action
 6μl	B-Amount
@@ -54,24 +55,26 @@ to	O
 of	O
 OptiMEM®	B-Reagent
 /DNA	I-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Mix	B-Action
 carefully	B-Modifier
 by	O
 pipetting	B-Action
-(10-15	B-Numerical
-times).
-	O
+(	O
+10-15	B-Numerical
+times	O
+)	O
+.	O
 
 Incubate	B-Action
 5	B-Time
 min	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 5μl	B-Amount
@@ -80,11 +83,12 @@ per	O
 well	B-Location
 to	O
 the	O
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 and	O
 mix	B-Action
-thoroughly.
-	B-Modifier
+thoroughly	B-Modifier
+.	O
 
 Place	B-Action
 the	O
@@ -94,8 +98,8 @@ CO2	B-Device
 incubator	I-Device
 for	O
 26-28	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Remove	B-Action
 the	O
@@ -112,8 +116,8 @@ with	O
 100μl	B-Amount
 per	O
 well	B-Location
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 Fix	B-Action
 the	O
@@ -125,7 +129,8 @@ with	O
 50μl	B-Amount
 solution	B-Reagent
 of	O
-4%	B-Concentration
+4	B-Concentration
+%	I-Concentration
 formaldehyde	B-Reagent
 in	O
 PBS	B-Reagent
@@ -133,18 +138,20 @@ for	O
 5min	B-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Wash	B-Action
 each	O
 well	B-Location
 with	O
 100μl	B-Amount
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
-(1/2)	O
+(	O
+1/2	O
+)	O
 Add	B-Action
 50μl	B-Amount
 per	O
@@ -158,8 +165,8 @@ the	O
 plate	B-Location
 overnight	B-Time
 at	O
-37°C.
-	B-Temperature
+37°C	B-Temperature
+.	O
 
 Observe	B-Action
 the	O
@@ -172,20 +179,23 @@ the	O
 proportion	B-Measure-Type
 of	O
 blue	B-Reagent
-(β-gal-positive)	I-Reagent
-cells.
-	I-Reagent
+(	I-Reagent
+β-gal-positive	I-Reagent
+)	I-Reagent
+cells	I-Reagent
+.	O
 
 Wash	B-Action
 each	O
 well	B-Location
 with	O
 100μl	B-Amount
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
-(2/2)
-	O
+(	O
+2/2	O
+)	O
 
 
 

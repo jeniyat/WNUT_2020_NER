@@ -8,8 +8,7 @@ for	I-Method
 CB-X	I-Method
 Protein	I-Method
 Assay	I-Method
-Optimization
-	I-Method
+Optimization	I-Method
 
 Prepare	B-Action
 duplicate	B-Modifier
@@ -24,13 +23,20 @@ choice	I-Reagent
 at	O
 the	O
 following	B-Modifier
-concentrations:	B-Measure-Type
-0,	B-Concentration
-0.2,	I-Concentration
-0.4,	I-Concentration
-0.6,	I-Concentration
-0.8,	I-Concentration
-1.0µg/µl.	I-Concentration
+concentrations	B-Measure-Type
+:	O
+0	B-Concentration
+,	I-Concentration
+0.2	I-Concentration
+,	I-Concentration
+0.4	I-Concentration
+,	I-Concentration
+0.6	I-Concentration
+,	I-Concentration
+0.8	I-Concentration
+,	I-Concentration
+1.0µg/µl	I-Concentration
+.	O
 
 Transfer	B-Action
 50µl	B-Amount
@@ -39,8 +45,8 @@ standard	I-Reagent
 to	O
 1.5ml	B-Amount
 centrifuge	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
 Prepare	B-Action
 a	O
@@ -56,8 +62,8 @@ concentration	I-Measure-Type
 of	O
 the	O
 unknown	B-Reagent
-samples.
-	I-Reagent
+samples	I-Reagent
+.	O
 
 Use	B-Action
 the	O
@@ -68,8 +74,8 @@ generate	B-Action
 your	O
 own	O
 CB-X™	B-Method
-Tables.
-	I-Method
+Tables	I-Method
+.	O
 
 This	O
 CB-X™	B-Method
@@ -87,28 +93,32 @@ performed	B-Action
 without	B-Modifier
 using	I-Modifier
 protein	I-Modifier
-standards,	I-Modifier
+standards	I-Modifier
+,	O
 allowing	O
 you	O
 to	O
 carry	B-Action
 out	I-Action
-rapid,	B-Modifier
-single	I-Modifier
+rapid	B-Modifier
+,	O
+single	B-Modifier
 protein	B-Method
-estimations.
-	I-Method
+estimations	I-Method
+.	O
 
 Add	B-Action
 1ml	B-Amount
 pre-chilled	B-Modifier
-(-20°C)	O
+(	O
+-20°C	O
+)	O
 CB-X™	B-Reagent
 and	O
 vortex	B-Action
 to	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -126,8 +136,8 @@ without	B-Modifier
 disturbing	I-Modifier
 the	I-Modifier
 protein	I-Modifier
-pellet.
-	I-Modifier
+pellet	I-Modifier
+.	O
 
 Add	B-Action
 50µl	B-Amount
@@ -148,8 +158,8 @@ to	O
 dissolve	B-Action
 the	O
 protein	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Invert	B-Action
 the	O
@@ -171,8 +181,8 @@ the	O
 tube	B-Location
 and	O
 vortex	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Incubate	B-Action
 for	O
@@ -180,8 +190,8 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Read	B-Action
 the	O
@@ -206,8 +216,8 @@ solution	I-Reagent
 to	O
 a	O
 microtiter	B-Location
-well.
-	I-Location
+well	I-Location
+.	O
 
 
 

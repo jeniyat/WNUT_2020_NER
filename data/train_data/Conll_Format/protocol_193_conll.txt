@@ -2,19 +2,22 @@ BetaMark™	B-Device
 x-40	I-Device
 ELISA	I-Device
 Kit	I-Device
-(Chemiluminescent)	B-Method
-Protocol
-	O
+(	O
+Chemiluminescent	B-Method
+)	O
+Protocol	O
 
 Label	B-Action
 a	O
 1L	B-Amount
 bottle	B-Location
 as	O
-“1X	B-Concentration
+“	O
+1X	B-Concentration
 Wash	B-Reagent
-Buffer”.
-	I-Reagent
+Buffer	I-Reagent
+”	O
+.	O
 
 Dilute	B-Action
 5X	B-Concentration
@@ -27,10 +30,11 @@ grade	I-Reagent
 water*	I-Reagent
 and	O
 mix	B-Action
-well.
-	B-Modifier
+well	B-Modifier
+.	O
 
-*Note:	O
+*Note	O
+:	O
 Lab	B-Modifier
 grade	I-Modifier
 filtered	I-Modifier
@@ -38,14 +42,19 @@ water	B-Reagent
 such	O
 as	O
 injection	B-Modifier
-grade,	I-Modifier
-cell	I-Modifier
+grade	I-Modifier
+,	O
+cell	B-Modifier
 culture	I-Modifier
-grade,	I-Modifier
+grade	I-Modifier
+,	O
 Reverse	B-Method
 Osmosis	I-Method
-De-Ionization(RODI).
-	I-Method
+De-Ionization	I-Method
+(	O
+RODI	B-Method
+)	O
+.	O
 
 Label	B-Action
 an	O
@@ -53,25 +62,32 @@ appropriate	O
 sized	O
 bottle	B-Location
 as	O
-“1X	B-Concentration
+“	O
+1X	B-Concentration
 Reagent	B-Reagent
-Diluent”.
-	I-Reagent
+Diluent	I-Reagent
+”	O
+.	O
 
 Label	B-Action
-(2)	O
+(	O
+2	O
+)	O
 1.5mL	B-Amount
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
 intermediate	O
-#1	O
+#	O
+1	O
 &	O
 2	O
-(use	B-Action
+(	O
+use	B-Action
 enclosed	B-Modifier
-tubes).
-	B-Location
+tubes	B-Location
+)	O
+.	O
 
 Add	B-Action
 990uL	B-Amount
@@ -81,10 +97,11 @@ diluent	I-Reagent
 to	O
 intermediate	O
 tubes	B-Location
-#1	O
+#	O
+1	O
 &	O
-2.
-	O
+2	O
+.	O
 
 Reconstitute	B-Action
 20ug	B-Amount
@@ -96,25 +113,27 @@ with	O
 80uL	B-Amount
 of	O
 Standard	B-Reagent
-Diluent.
-	I-Reagent
+Diluent	I-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 donot	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Concentration	B-Measure-Type
 will	O
 be	O
-250ug/mL.
-	B-Concentration
+250ug/mL	B-Concentration
+.	O
 
 *Once	O
-reconstituted,	O
+reconstituted	O
+,	O
 standard	O
 must	O
 be	O
@@ -122,8 +141,8 @@ used	O
 within	O
 the	O
 same	O
-day.
-	O
+day	O
+.	O
 
 Add	B-Action
 10uL	B-Amount
@@ -141,23 +160,26 @@ standard	B-Reagent
 diluent	I-Reagent
 in	O
 intermediatetube	B-Location
-#1.
-	O
+#	O
+1	O
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 do	O
 not	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	O
-#1	O
+#	O
+1	O
 tube	B-Location
 and	O
 add	B-Action
@@ -167,18 +189,20 @@ standard	B-Reagent
 diluent	I-Reagent
 in	O
 intermediate	O
-#2	O
-tube.
-	B-Location
+#	O
+2	O
+tube	B-Location
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 do	O
 not	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 The	O
 final	O
@@ -186,11 +210,12 @@ concentration	B-Measure-Type
 of	O
 intermediate	O
 tube	B-Location
-#2	O
+#	O
+2	O
 will	O
 be	O
-25ng/mL.
-	B-Concentration
+25ng/mL	B-Concentration
+.	O
 
 Label	B-Action
 a	O
@@ -198,10 +223,12 @@ a	O
 centrifuge	B-Location
 tube	I-Location
 as	O
-“1X	B-Concentration
+“	O
+1X	B-Concentration
 Incubation	B-Reagent
-Buffer”.
-	I-Reagent
+Buffer	I-Reagent
+”	O
+.	O
 
 Dilute	B-Action
 2X	B-Concentration
@@ -227,16 +254,18 @@ the	O
 50mL	B-Amount
 tube	B-Location
 labeled	O
-“1X	B-Concentration
+“	O
+1X	B-Concentration
 Incubation	B-Reagent
-Buffer”.
-	I-Reagent
+Buffer	I-Reagent
+”	O
+.	O
 
 Mix	B-Action
 well	B-Modifier
 by	O
-vortexing.
-	B-Method
+vortexing	B-Method
+.	O
 
 This	B-Mention
 will	O
@@ -247,8 +276,8 @@ the	O
 standard	O
 curve	O
 and	O
-samples.
-	B-Reagent
+samples	B-Reagent
+.	O
 
 
 

@@ -10,18 +10,19 @@ Gel-Free	I-Modifier
 miRNA	B-Device
 Sample	I-Device
 Preparation	I-Device
-Kit
-	I-Device
+Kit	I-Device
 
-3’	B-Reagent
+3	B-Reagent
+’	I-Reagent
 Adapter	I-Reagent
-Ligation Thaw	I-Reagent
+Ligation	I-Reagent
+Thaw	I-Reagent
 Mix	I-Reagent
 C400	I-Reagent
-from	O
+from	I-Reagent
 -20°C	B-Temperature
-storage.
-	B-Location
+storage	I-Temperature
+.	B-Location
 
 Allow	B-Action
 it	B-Mention
@@ -37,8 +38,8 @@ of	O
 30	B-Time
 minutes	I-Time
 before	O
-use.
-	O
+use	O
+.	O
 
 Pre-heat	B-Action
 the	O
@@ -54,8 +55,8 @@ cycler	I-Device
 to	O
 25°C	B-Temperature
 if	O
-available.
-	O
+available	O
+.	O
 
 Denature	B-Action
 the	O
@@ -74,13 +75,18 @@ sterile	B-Modifier
 PCR	B-Location
 tube	I-Location
 on	O
-ice: RNA	B-Location
-Sample,	B-Reagent
-6μL;	B-Amount
+ice	B-Location
+:	O
+RNA	B-Reagent
+Sample	I-Reagent
+,	I-Reagent
+6μL	B-Amount
+;	I-Amount
 Mix	B-Reagent
-A400,	I-Reagent
-2μL. 
-	B-Amount
+A400	I-Reagent
+,	I-Reagent
+2μL	B-Amount
+.	I-Amount
 
 Vortex	B-Action
 mix	B-Reagent
@@ -98,42 +104,51 @@ place	B-Action
 the	O
 tube	B-Location
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Set	B-Action
 up	I-Action
 the	O
 following	O
-3’	B-Reagent
+3	B-Reagent
+’	I-Reagent
 Adapter	I-Reagent
 Ligation	I-Reagent
 reaction	I-Reagent
 on	O
-ice:	B-Location
+ice	B-Location
+:	O
 Denatured	B-Modifier
 RNA	B-Reagent
 mix	I-Reagent
 from	O
 Step	O
-4,	O
-8μL;	B-Amount
+4	O
+,	O
+8μL	B-Amount
+;	O
 Mix	B-Reagent
-B400,	I-Reagent
-2μL;	B-Amount
+B400	I-Reagent
+,	O
+2μL	B-Amount
+;	O
 Mix	B-Reagent
-C400,	I-Reagent
-6.5μL.	B-Amount
+C400	I-Reagent
+,	O
+6.5μL	B-Amount
+.	O
 
-Note:	O
+Note	O
+:	O
 Mix	B-Reagent
 C400	I-Reagent
 is	O
 a	O
 highly	B-Modifier
 viscous	I-Modifier
-reagent.
-	B-Reagent
+reagent	B-Reagent
+.	O
 
 Handle	O
 with	O
@@ -153,48 +168,52 @@ is	O
 dispensed	B-Action
 for	O
 each	O
-reaction.
-	B-Reagent
+reaction	B-Reagent
+.	O
 
 Vortex	B-Action
 mix	B-Reagent
 thoroughly	B-Modifier
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 at	O
 25°C	B-Temperature
 for	O
 1	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Ligation	B-Reagent
 Product	I-Reagent
 Clean	O
-Up Vortex	B-Action
-the	O
+Up	O
+Vortex	B-Action
+the	I-Action
 TailorMag	B-Reagent
 Purification	I-Reagent
 Beads	I-Reagent
-(TPB)	I-Reagent
+(	I-Reagent
+TPB	I-Reagent
+)	I-Reagent
 until	O
 they	B-Mention
-are	O
+are	I-Mention
 evenly	B-Modifier
-suspended.
-	I-Modifier
+suspended	I-Modifier
+.	I-Modifier
 
 Prepare	B-Action
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 rinse	O
-step.
-	O
+step	O
+.	O
 
 Add	B-Action
 30	B-Amount
@@ -203,13 +222,15 @@ of	O
 TPB	B-Reagent
 with	O
 each	O
-3’-adapter	B-Reagent
+3	B-Reagent
+’	I-Reagent
+-adapter	I-Reagent
 ligated	I-Reagent
 sample	I-Reagent
 from	O
 Step	O
-6.
-	O
+6	O
+.	O
 
 Votex	B-Action
 mix	B-Reagent
@@ -221,24 +242,25 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 15	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
-Note: 	O
+Note	O
+:	O
 Do	O
 NOT	O
 perform	B-Action
-strong	B-Modifier
-centrifugation	B-Method
-because	O
-it	B-Mention
-will	O
+strong	I-Action
+centrifugation	B-Modifier
+because	B-Method
+it	O
+will	B-Mention
 separate	B-Action
-TPB	B-Reagent
-from	O
+TPB	I-Action
+from	B-Reagent
 the	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	I-Reagent
 
 Place	B-Action
 the	O
@@ -253,13 +275,14 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 or	O
 until	O
 solution	B-Reagent
 clears	B-Modifier
-up.
-	I-Modifier
+up	I-Modifier
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
@@ -269,22 +292,23 @@ discard	B-Action
 μL	I-Amount
 of	O
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
-Note: 	O
+Note	O
+:	O
 Sample	B-Reagent
 recovery	I-Reagent
-may	O
+may	I-Reagent
 be	O
 affected	O
 if	O
 the	O
 TPB	B-Reagent
 pellet	I-Reagent
-is	O
-disrupted.
-	B-Modifier
+is	I-Reagent
+disrupted	B-Modifier
+.	I-Modifier
 
 Keep	B-Action
 sample	B-Location
@@ -292,8 +316,8 @@ tube	I-Location
 on	O
 the	O
 magnetic	B-Location
-stand.
-	I-Location
+stand	I-Location
+.	O
 
 Gently	B-Modifier
 rinse	B-Action
@@ -304,49 +328,53 @@ with	O
 150	B-Amount
 μL	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 without	O
 disrupting	B-Action
 the	O
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Discard	B-Action
 the	O
 rinse	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
-Tip: 	O
+Tip	O
+:	O
 Point	B-Action
-pipette	B-Location
-tip	I-Location
-towards	O
+pipette	I-Action
+tip	B-Location
+towards	I-Location
 opposite	O
 direction	O
 as	O
 the	O
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	I-Reagent
 
 Gently	B-Modifier
 pipette	B-Action
 the	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 up	B-Method
 and	I-Method
 down	I-Method
-once,	B-Numerical
+once	B-Numerical
+,	O
 then	O
 discard	B-Action
 the	O
 rinse	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Air	B-Action
 dry	I-Action
@@ -354,24 +382,25 @@ sample	B-Location
 tube	I-Location
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
-Note: 	O
+Note	O
+:	O
 TailorMag	B-Reagent
 Purification	I-Reagent
 Beads	I-Reagent
-are	O
+are	I-Reagent
 dried	B-Modifier
-within	O
-5	B-Time
-to	I-Time
+within	I-Modifier
+5	O
+to	B-Time
 15	I-Time
 minutes	I-Time
-at	O
+at	I-Time
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 Proceed	B-Action
 to	O
@@ -387,11 +416,15 @@ pellet	I-Reagent
 turns	O
 form	O
 glossy/shiny	B-Modifier
-(wet)	I-Modifier
+(	I-Modifier
+wet	I-Modifier
+)	I-Modifier
 to	O
 matte	B-Modifier
-(dry).
-	I-Modifier
+(	I-Modifier
+dry	I-Modifier
+)	I-Modifier
+.	O
 
 Sample	B-Reagent
 recovery	B-Method
@@ -404,8 +437,8 @@ are	O
 over-dried	B-Modifier
 and	O
 appear	O
-powdery.
-	B-Modifier
+powdery	B-Modifier
+.	O
 
 Remove	B-Action
 sample	B-Location
@@ -413,8 +446,8 @@ tube	I-Location
 from	O
 the	O
 magnetic	B-Location
-stand.
-	I-Location
+stand	I-Location
+.	O
 
 Add	B-Action
 7	B-Amount
@@ -427,16 +460,16 @@ to	O
 the	O
 dried	B-Modifier
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Vortex	B-Action
 to	O
 resuspend	B-Action
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 sample	B-Reagent
@@ -446,23 +479,25 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
-Note: 	O
+Note	O
+:	O
 Presence	O
 of	O
 TPB	B-Reagent
-does	O
+does	I-Reagent
 not	O
 interfere	O
 with	O
 the	O
 enzymatic	B-Reagent
-reaction.
-	I-Reagent
+reaction	I-Reagent
+.	I-Reagent
 
-Note: 	O
+Note	O
+:	O
 To	O
 minimize	O
 the	O
@@ -470,28 +505,29 @@ presence	O
 of	O
 the	O
 artifact	B-Reagent
-products,	I-Reagent
+products	I-Reagent
+,	I-Reagent
 add	B-Action
-Mix	B-Reagent
-D400	I-Reagent
-and	O
-Mix	B-Reagent
+Mix	I-Action
+D400	B-Reagent
+and	I-Reagent
+Mix	I-Reagent
 E400	I-Reagent
-to	O
+to	I-Reagent
 the	O
 sample	B-Reagent
-in	O
+in	I-Reagent
 consecutive	O
-steps.
-	O
+steps	O
+.	O
 
 Vortex	B-Action
 mix	B-Reagent
 thoroughly	B-Modifier
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 at	O
@@ -505,38 +541,40 @@ place	B-Action
 the	O
 tube	B-Location
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 cDNA	B-Reagent
-Synthesis Pre-heat	B-Method
-the	O
+Synthesis	B-Method
+Pre-heat	I-Method
+the	B-Action
 thermal	B-Device
 cycler	I-Device
-to	O
-50°C.
-	B-Temperature
+to	I-Device
+50°C	B-Temperature
+.	I-Temperature
 
-Note: 	O
+Note	O
+:	O
 Presence	O
 of	O
 TPB	B-Reagent
-does	O
+does	I-Reagent
 not	O
 interfere	O
 with	O
 the	O
 enzymatic	B-Reagent
-reaction.
-	I-Reagent
+reaction	I-Reagent
+.	I-Reagent
 
 Vortex	B-Action
 mix	B-Reagent
 thoroughly	B-Modifier
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 at	O
@@ -550,28 +588,32 @@ place	B-Action
 the	O
 tube	B-Location
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Safe	O
 Stopping	O
-Point: First	B-Reagent
+Point	O
+:	O
+First	B-Reagent
 strand	I-Reagent
 cDNA	I-Reagent
-could	O
+could	I-Reagent
 be	O
 stored	B-Action
-at	O
+at	I-Action
 -20°C	B-Temperature
-for	O
-up	B-Modifier
-to	I-Modifier
-seven	B-Time
-days.
-	I-Time
+for	I-Temperature
+up	O
+to	B-Modifier
+seven	I-Modifier
+days	B-Time
+.	I-Time
 
 PCR	B-Method
-Amplification Note:	I-Method
+Amplification	I-Method
+Note	O
+:	O
 This	O
 protocol	O
 has	O
@@ -580,17 +622,17 @@ optimized	O
 using	O
 900	B-Amount
 ng	I-Amount
-of	O
+of	I-Amount
 purified	B-Modifier
 high	I-Modifier
 quality	I-Modifier
-human	B-Reagent
-kidney	I-Reagent
-total	O
-RNA	B-Reagent
-as	O
-input.
-	O
+human	I-Modifier
+kidney	B-Reagent
+total	I-Reagent
+RNA	I-Reagent
+as	I-Reagent
+input	O
+.	O
 
 Because	O
 miRNA	B-Reagent
@@ -601,7 +643,8 @@ different	O
 tissue	B-Reagent
 types	I-Reagent
 and	O
-species,	B-Reagent
+species	B-Reagent
+,	O
 the	O
 use	O
 of	O
@@ -615,29 +658,30 @@ species	B-Reagent
 may	O
 require	O
 additional	O
-optimization.
-	O
+optimization	O
+.	O
 
-Note: 	O
+Note	O
+:	O
 Presence	O
 of	O
 TPB	B-Reagent
-does	O
+does	I-Reagent
 not	O
 interfere	O
 with	O
 the	O
 enzymatic	B-Reagent
-reaction.
-	I-Reagent
+reaction	I-Reagent
+.	I-Reagent
 
 Vortex	B-Action
 mix	B-Reagent
 thoroughly	B-Modifier
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Amplify	B-Action
 the	O
@@ -651,47 +695,56 @@ the	O
 following	O
 PCR	B-Method
 cycling	I-Method
-conditions: 95°C	B-Temperature
-for	O
-10	B-Time
-minutes;	I-Time
-15	B-Generic-Measure
-cycles	I-Generic-Measure
-of:95°C	B-Temperature
-for	O
-5	B-Time
-seconds;	I-Time
+conditions	O
+:	O
+95°C	B-Temperature
+for	I-Temperature
+10	O
+minutes	B-Time
+;	I-Time
+15	O
+cycles	B-Generic-Measure
+of:95°C	I-Generic-Measure
+for	B-Temperature
+5	O
+seconds	B-Time
+;	I-Time
 60°C	B-Temperature
-for	O
-15	B-Time
-seconds;	I-Time
+for	I-Temperature
+15	O
+seconds	B-Time
+;	I-Time
 72°C	B-Temperature
-for	O
-1	B-Time
-minute;	I-Time
+for	I-Temperature
+1	O
+minute	B-Time
+;	I-Time
 72°C	B-Temperature
-for	O
-5	B-Time
-minutes.
-	I-Time
+for	I-Temperature
+5	O
+minutes	B-Time
+.	I-Time
 
 Hold	B-Action
 at	O
-4°C Safe	B-Temperature
+4°C	B-Temperature
+Safe	O
 Stopping	O
-Point: PCR	B-Reagent
+Point	O
+:	O
+PCR	B-Reagent
 products	I-Reagent
-could	O
+could	I-Reagent
 be	O
 stored	B-Action
-at	O
+at	I-Action
 -20°C	B-Temperature
-for	O
-up	B-Modifier
-to	I-Modifier
-seven	B-Time
-days.
-	I-Time
+for	I-Temperature
+up	O
+to	B-Modifier
+seven	I-Modifier
+days	B-Time
+.	I-Time
 
 PCR	B-Measure-Type
 yield	I-Measure-Type
@@ -721,8 +774,8 @@ and	O
 μL	I-Amount
 of	O
 nuclease-free	B-Reagent
-water.
-	I-Reagent
+water	I-Reagent
+.	O
 
 A	O
 typical	O
@@ -734,11 +787,14 @@ peak	O
 at	O
 approximately	B-Modifier
 140bp	B-Generic-Measure
-(Figure	O
-2).
-	O
+(	O
+Figure	O
+2	O
+)	O
+.	O
 
-Note: 	O
+Note	O
+:	O
 See	O
 Appendix	O
 A	O
@@ -753,28 +809,30 @@ High	I-Method
 Sensitivity	I-Method
 DNA	I-Method
 assay	I-Method
-profile	O
+profile	I-Method
 of	O
 the	O
 PCR	B-Reagent
-products.
-	I-Reagent
+products	I-Reagent
+.	I-Reagent
 
-Note: 	O
+Note	O
+:	O
 The	O
 BioAnalyzer	B-Method
 High	I-Method
 Sensitivity	I-Method
 DNA	I-Method
 assay	I-Method
-has	O
+has	I-Method
 a	O
-10%	B-Generic-Measure
+10	O
+%	B-Generic-Measure
 deviation	I-Generic-Measure
-on	O
+on	I-Generic-Measure
 sizing	B-Measure-Type
-accuracy.
-	I-Measure-Type
+accuracy	I-Measure-Type
+.	I-Measure-Type
 
 The	O
 TailorMix	B-Modifier
@@ -799,12 +857,14 @@ Human	B-Reagent
 kidney	I-Reagent
 total	O
 RNA	B-Reagent
-(Figure	O
+(	O
+Figure	O
 3	O
 and	O
 Figure	O
-4).
-	O
+4	O
+)	O
+.	O
 
 However	O
 miRNA	B-Reagent
@@ -812,7 +872,8 @@ populations	I-Reagent
 vary	O
 among	O
 different	O
-samples,	B-Reagent
+samples	B-Reagent
+,	O
 the	O
 use	O
 of	O
@@ -828,8 +889,8 @@ cause	O
 variations	O
 in	O
 PCR	B-Reagent
-profiles.
-	I-Reagent
+profiles	I-Reagent
+.	O
 
 Gel-free	B-Modifier
 size	B-Method
@@ -853,8 +914,8 @@ the	O
 120bp	B-Generic-Measure
 artifact	B-Measure-Type
 product	I-Measure-Type
-peak.
-	I-Measure-Type
+peak	I-Measure-Type
+.	O
 
 It	O
 is	O
@@ -869,10 +930,12 @@ for	O
 low	O
 yield	O
 libraries	B-Reagent
-(weak	B-Modifier
+(	O
+weak	B-Modifier
 140bp	B-Generic-Measure
 library	B-Reagent
-product)	I-Reagent
+product	I-Reagent
+)	O
 and	O
 libraries	B-Reagent
 that	O
@@ -882,8 +945,8 @@ strong	B-Modifier
 120bp	B-Generic-Measure
 artifact	B-Measure-Type
 product	I-Measure-Type
-peak.
-	I-Measure-Type
+peak	I-Measure-Type
+.	O
 
 See	O
 Table	O
@@ -892,24 +955,27 @@ in	O
 the	O
 Appendix	O
 for	O
-examples.
-	O
+examples	O
+.	O
 
 Gel-Free	B-Modifier
 Library	B-Reagent
-Purification Note:	B-Method
+Purification	B-Method
+Note	O
+:	O
 Sample	B-Reagent
-volume	B-Measure-Type
-may	O
+volume	I-Reagent
+may	B-Measure-Type
 change	O
 after	O
-PCR.
-	B-Method
+PCR	B-Method
+.	I-Method
 
 To	O
 ensure	B-Action
 purification	B-Measure-Type
-efficiency,	I-Measure-Type
+efficiency	I-Measure-Type
+,	O
 bring	B-Action
 sample	B-Reagent
 volume	B-Measure-Type
@@ -923,29 +989,32 @@ Gel-Free	B-Modifier
 Purification	B-Method
 steps	O
 if	O
-necessary.
-	O
+necessary	O
+.	O
 
 Vortex	B-Action
 the	O
 TailorMag	B-Reagent
 Purification	I-Reagent
 Beads	I-Reagent
-(TPB)	I-Reagent
+(	O
+TPB	B-Reagent
+)	O
 until	O
 they	B-Mention
 are	O
 evenly	B-Modifier
-resuspended.
-	I-Modifier
+resuspended	I-Modifier
+.	O
 
 Prepare	B-Action
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 for	O
 rinse	B-Action
-step.
-	O
+step	O
+.	O
 
 Add	B-Action
 TPB	B-Reagent
@@ -960,16 +1029,16 @@ according	O
 to	O
 the	O
 following	O
-table.
-	O
+table	O
+.	O
 
 Votex	B-Action
 mix	B-Reagent
 thoroughly	B-Modifier
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 at	O
@@ -977,24 +1046,25 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
-Note: 	O
+Note	O
+:	O
 Do	O
 NOT	O
 perform	B-Action
-strong	B-Modifier
-centrifugation	B-Method
-because	O
-it	B-Mention
-will	O
+strong	I-Action
+centrifugation	B-Modifier
+because	B-Method
+it	O
+will	B-Mention
 separate	B-Action
-TPB	B-Reagent
-from	O
+TPB	I-Action
+from	B-Reagent
 the	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	I-Reagent
 
 Place	B-Action
 the	O
@@ -1011,19 +1081,20 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 or	O
 until	O
 solution	B-Reagent
 clears	B-Modifier
-up.
-	O
+up	O
+.	O
 
 DO	O
 NOT	O
 DISCARD	B-Action
-SUPERNATANT.
-	B-Reagent
+SUPERNATANT	B-Reagent
+.	O
 
 Keep	B-Action
 sample	B-Location
@@ -1031,8 +1102,8 @@ tube	I-Location
 on	O
 the	O
 magnetic	B-Location
-stand.
-	I-Location
+stand	I-Location
+.	O
 
 Transfer	B-Action
 55	B-Amount
@@ -1044,17 +1115,18 @@ supernatant	B-Reagent
 to	O
 fresh	B-Modifier
 sample	B-Location
-tubes.
-	I-Location
+tubes	I-Location
+.	O
 
-Note:	O
+Note	O
+:	O
 Do	O
 not	O
 disrupt	B-Action
 the	O
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Contamination	B-Method
 of	O
@@ -1068,8 +1140,8 @@ may	O
 affect	O
 final	O
 library	B-Measure-Type
-quality.
-	I-Measure-Type
+quality	I-Measure-Type
+.	O
 
 Add	B-Action
 TPB	B-Reagent
@@ -1078,16 +1150,16 @@ clear	B-Modifier
 supernatant	B-Reagent
 from	O
 Step	O
-27.
-	O
+27	O
+.	O
 
 Vortex	B-Action
 mix	B-Reagent
 thoroughly	B-Modifier
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 at	O
@@ -1095,24 +1167,25 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
-Note: 	O
+Note	O
+:	O
 Do	O
 NOT	O
 perform	B-Action
-strong	B-Modifier
-centrifugation	B-Method
-because	O
-it	B-Mention
-will	O
+strong	I-Action
+centrifugation	B-Modifier
+because	B-Method
+it	O
+will	B-Mention
 separate	B-Action
-TPB	B-Reagent
-from	O
+TPB	I-Action
+from	B-Reagent
 the	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	I-Reagent
 
 Place	B-Action
 the	O
@@ -1127,13 +1200,14 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 or	O
 until	O
 solution	B-Reagent
 clears	B-Modifier
-up.
-	O
+up	O
+.	O
 
 Remove	B-Action
 and	O
@@ -1142,22 +1216,23 @@ discard	B-Action
 μL	I-Amount
 of	O
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
-Note: 	O
+Note	O
+:	O
 Sample	B-Reagent
-recovery	B-Method
-may	O
+recovery	I-Reagent
+may	B-Method
 be	O
 affected	O
 if	O
 the	O
 TPB	B-Reagent
 pellet	I-Reagent
-is	O
-disrupted.
-	B-Modifier
+is	I-Reagent
+disrupted	B-Modifier
+.	I-Modifier
 
 Keep	B-Action
 sample	B-Location
@@ -1165,8 +1240,8 @@ tube	I-Location
 on	O
 the	O
 magnetic	B-Location
-stand.
-	I-Location
+stand	I-Location
+.	O
 
 Gently	B-Modifier
 rinse	B-Action
@@ -1177,49 +1252,53 @@ with	O
 150	B-Amount
 μL	I-Amount
 of	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 without	O
 disrupting	B-Action
 the	O
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Discard	B-Action
 the	O
 rinse	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
-Tip: 	O
+Tip	O
+:	O
 Point	B-Action
-pipette	B-Location
-tip	I-Location
-towards	O
+pipette	I-Action
+tip	B-Location
+towards	I-Location
 opposite	O
 direction	O
 as	O
 the	O
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	I-Reagent
 
 Gently	B-Modifier
 pipette	B-Action
 the	O
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 up	B-Method
 and	I-Method
 down	I-Method
-once,	O
+once	O
+,	O
 then	O
 discard	B-Action
 the	O
 rinse	B-Reagent
-solution.
-	I-Reagent
+solution	I-Reagent
+.	O
 
 Air	B-Action
 dry	I-Action
@@ -1227,24 +1306,25 @@ sample	B-Location
 tube	I-Location
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
-Note: 	O
+Note	O
+:	O
 TailorMag	B-Reagent
 Purification	I-Reagent
 Beads	I-Reagent
-are	O
+are	I-Reagent
 dried	B-Action
-within	O
-5	B-Time
-to	I-Time
+within	I-Action
+5	O
+to	B-Time
 15	I-Time
 minutes	I-Time
-at	O
+at	I-Time
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 Proceed	B-Action
 to	O
@@ -1260,11 +1340,15 @@ pellet	I-Reagent
 turns	O
 form	O
 glossy/shiny	B-Modifier
-(wet)	I-Modifier
+(	I-Modifier
+wet	I-Modifier
+)	I-Modifier
 to	O
 matte	B-Modifier
-(dry).
-	I-Modifier
+(	I-Modifier
+dry	I-Modifier
+)	I-Modifier
+.	O
 
 Sample	B-Reagent
 recovery	B-Method
@@ -1277,8 +1361,8 @@ are	O
 over-dried	B-Modifier
 and	O
 appear	O
-powdery.
-	B-Modifier
+powdery	B-Modifier
+.	O
 
 Remove	B-Action
 sample	B-Location
@@ -1286,8 +1370,8 @@ tube	I-Location
 from	O
 the	O
 magnetic	B-Location
-stand.
-	I-Location
+stand	I-Location
+.	O
 
 Add	B-Action
 27	B-Amount
@@ -1299,16 +1383,16 @@ to	O
 the	O
 dried	B-Modifier
 TPB	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Vortex	B-Action
 to	O
 resuspend	B-Action
 and	O
 pulse	B-Action
-spin.
-	I-Action
+spin	I-Action
+.	O
 
 Incubate	B-Action
 resuspension	B-Reagent
@@ -1317,29 +1401,30 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Library	B-Reagent
-Validation Use	B-Method
+Validation	B-Method
+Use	I-Method
 of	O
 an	O
 Agilent	B-Device
 Technologies	I-Device
 2100	I-Device
 Bioanalyzer	I-Device
-is	O
+is	I-Device
 recommended	O
 as	O
 a	O
 quality	B-Method
 control	I-Method
 analysis	I-Method
-of	O
+of	I-Method
 your	O
 sample	B-Reagent
-library.
-	I-Reagent
+library	I-Reagent
+.	I-Reagent
 
 Use	B-Action
 1	B-Amount
@@ -1359,39 +1444,44 @@ chip	I-Device
 to	O
 check	B-Action
 the	O
-size,	B-Measure-Type
-purity	I-Measure-Type
+size	B-Measure-Type
+,	O
+purity	B-Measure-Type
 and	O
 concentration	B-Measure-Type
 of	O
 the	O
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
-Note: 	O
+Note	O
+:	O
 The	O
 BioAnalyzer	B-Method
 High	I-Method
 Sensitivity	I-Method
 DNA	I-Method
 assay	I-Method
-has	O
+has	I-Method
 a	O
-10%	B-Generic-Measure
-deviation	O
+10	O
+%	B-Generic-Measure
+deviation	I-Generic-Measure
 on	O
 sizing	B-Measure-Type
-accuracy.
-	I-Measure-Type
+accuracy	I-Measure-Type
+.	I-Measure-Type
 
-Note:	O
+Note	O
+:	O
 If	O
 high	O
 percentage	O
 of	O
 120bp	B-Generic-Measure
 peak	B-Measure-Type
-remains,	O
+remains	O
+,	O
 use	O
 PAGE	B-Reagent
 size	I-Reagent
@@ -1403,8 +1493,8 @@ the	O
 140bp	B-Generic-Measure
 micro	B-Reagent
 RNA	I-Reagent
-library.
-	I-Reagent
+library	I-Reagent
+.	O
 
 See	O
 Table	O
@@ -1413,8 +1503,8 @@ in	O
 the	O
 Appendix	O
 for	O
-references.
-	O
+references	O
+.	O
 
 Figure	O
 3	O
@@ -1432,8 +1522,7 @@ High	I-Method
 Sensitivity	I-Method
 DNA	I-Method
 assay	I-Method
-profiles
-	O
+profiles	O
 
 
 

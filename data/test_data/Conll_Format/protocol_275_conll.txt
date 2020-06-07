@@ -2,8 +2,7 @@ Immunohistochemistry	B-Method
 Protocol	O
 for	O
 Frozen	B-Modifier
-Sections
-	B-Reagent
+Sections	B-Reagent
 
 Fix	B-Action
 the	O
@@ -12,8 +11,8 @@ sections	I-Location
 with	O
 a	O
 suitable	B-Modifier
-fixative.
-	B-Reagent
+fixative	B-Reagent
+.	O
 
 One	O
 of	O
@@ -34,11 +33,13 @@ slides	B-Location
 in	O
 pre-cooled	B-Modifier
 acetone	B-Reagent
-(-20°C)	B-Temperature
+(	O
+-20°C	B-Temperature
+)	O
 for	O
 10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 a	O
@@ -46,17 +47,20 @@ freshly	B-Modifier
 dissected	I-Modifier
 tissue	B-Reagent
 block	I-Reagent
-(<5	B-Modifier
-mm	B-Size
-thick)	O
+(	O
+<	B-Modifier
+5	B-Size
+mm	I-Size
+thick	O
+)	O
 on	O
 to	O
 a	O
 pre-labeled	B-Modifier
 tissue	B-Location
 base	I-Location
-mold.
-	I-Location
+mold	I-Location
+.	O
 
 Cover	B-Action
 the	O
@@ -66,9 +70,12 @@ block	I-Reagent
 with	O
 cryo-embedding	B-Reagent
 media	I-Reagent
-(e.g.	O
-OCT).
-	B-Reagent
+(	O
+e.g	O
+.	O
+OCT	B-Reagent
+)	O
+.	O
 
 Slowly	B-Modifier
 place	B-Action
@@ -96,8 +103,8 @@ ensure	O
 tissue	B-Reagent
 is	O
 frozen	B-Action
-completely.
-	B-Modifier
+completely	B-Modifier
+.	O
 
 Store	B-Action
 the	O
@@ -109,8 +116,8 @@ at	O
 until	O
 ready	O
 for	O
-sectioning.
-	B-Action
+sectioning	B-Action
+.	O
 
 Transfer	B-Action
 the	O
@@ -121,8 +128,11 @@ to	O
 a	O
 cryotome	B-Device
 cryostat	I-Device
-(e.g.	O
--20°C)	B-Temperature
+(	O
+e.g	O
+.	O
+-20°C	B-Temperature
+)	O
 prior	O
 to	O
 sectioning	B-Action
@@ -143,8 +153,8 @@ temperature	B-Measure-Type
 of	O
 the	O
 cryotome	B-Device
-cryostat.
-	I-Device
+cryostat	I-Device
+.	O
 
 Section	B-Action
 the	O
@@ -155,13 +165,15 @@ into	O
 a	O
 desired	B-Modifier
 thickness	B-Measure-Type
-(typically	O
+(	O
+typically	O
 5-10	B-Size
-µm)	I-Size
+µm	I-Size
+)	O
 using	O
 the	O
-cryotome.
-	B-Device
+cryotome	B-Device
+.	O
 
 Place	B-Action
 the	O
@@ -173,9 +185,12 @@ slides	I-Location
 suitable	O
 for	O
 immunohistochemistry	B-Method
-(e.g.	O
-Superfrost).
-	B-Location
+(	O
+e.g	O
+.	O
+Superfrost	B-Location
+)	O
+.	O
 
 Dry	B-Action
 the	O
@@ -184,8 +199,8 @@ sections	I-Reagent
 overnight	B-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Sections	B-Reagent
 can	O
@@ -200,8 +215,8 @@ at	O
 -80°C	B-Temperature
 for	O
 later	O
-use.
-	O
+use	O
+.	O
 
 Pour	B-Action
 off	I-Action
@@ -217,11 +232,13 @@ the	O
 tissue	B-Reagent
 sections	I-Reagent
 for	O
-≥ 20 min	B-Modifier
-at	O
+≥	B-Modifier
+20	B-Time
+min	I-Time
+at	I-Time
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 Rinse	B-Action
 the	O
@@ -235,7 +252,9 @@ mM	I-Concentration
 phosphate	B-Reagent
 buffered	I-Reagent
 saline	I-Reagent
-(PBS)	O
+(	O
+PBS	O
+)	O
 at	O
 a	O
 neutral	B-pH
@@ -243,8 +262,10 @@ pH	I-pH
 for	O
 5	B-Time
 min	I-Time
-(1/2).
-	O
+(	O
+1/2	O
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -258,7 +279,9 @@ mM	I-Concentration
 phosphate	B-Reagent
 buffered	I-Reagent
 saline	I-Reagent
-(PBS)	O
+(	O
+PBS	O
+)	O
 at	O
 a	O
 neutral	B-pH
@@ -266,14 +289,17 @@ pH	I-pH
 for	O
 5	B-Time
 min	I-Time
-(2/2).
-	O
+(	O
+2/2	O
+)	O
+.	O
 
 Incubate	B-Action
 the	O
 slides	B-Location
 in	O
-0.3%	B-Concentration
+0.3	B-Concentration
+%	I-Concentration
 H2O2	B-Reagent
 solution	I-Reagent
 in	O
@@ -288,8 +314,8 @@ to	O
 block	B-Action
 endogenous	B-Reagent
 peroxidase	I-Reagent
-activity.
-	I-Reagent
+activity	I-Reagent
+.	O
 
 Rinse	B-Action
 the	O
@@ -301,8 +327,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(1/2).
-	O
+(	O
+1/2	O
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -314,22 +342,30 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(2/2).
-	O
+(	O
+2/2	O
+)	O
+.	O
 
-(optional)	O
+(	O
+optional	O
+)	O
 Add	B-Action
 100	B-Amount
 µl	I-Amount
 blocking	B-Reagent
 buffer	I-Reagent
-(e.g.	O
-10%	B-Concentration
+(	O
+e.g	O
+.	O
+10	B-Concentration
+%	I-Concentration
 fetal	B-Reagent
 bovine	I-Reagent
 serum	I-Reagent
 in	O
-PBS)	B-Reagent
+PBS	B-Reagent
+)	O
 onto	O
 the	O
 sections	B-Reagent
@@ -346,8 +382,8 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
-1h.
-	B-Time
+1h	B-Time
+.	O
 
 Drain	B-Action
 off	I-Action
@@ -356,8 +392,8 @@ blocking	B-Reagent
 buffer	I-Reagent
 from	O
 the	O
-slides.
-	B-Location
+slides	B-Location
+.	O
 
 Apply	B-Action
 100	B-Amount
@@ -367,16 +403,22 @@ appropriately	B-Modifier
 diluted	I-Modifier
 primary	B-Reagent
 antibody	I-Reagent
-(in	O
+(	O
+in	O
 antibody	B-Reagent
 dilution	I-Reagent
-buffer,e.g.	I-Reagent
-0.5%	B-Concentration
+buffer	I-Reagent
+,	O
+e.g	O
+.	O
+0.5	B-Concentration
+%	I-Concentration
 bovine	B-Reagent
 serum	I-Reagent
 albumin	I-Reagent
 in	O
-PBS)	B-Reagent
+PBS	B-Reagent
+)	O
 to	O
 the	O
 sections	B-Reagent
@@ -398,8 +440,8 @@ temperature	I-Temperature
 or	O
 overnight	B-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Rinse	B-Action
 the	O
@@ -411,8 +453,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(1/2).
-	O
+(	O
+1/2	O
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -424,8 +468,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(2/2).
-	O
+(	O
+2/2	O
+)	O
+.	O
 
 Apply	B-Action
 100	B-Amount
@@ -436,10 +482,12 @@ diluted	I-Modifier
 biotinylated	I-Modifier
 secondary	B-Reagent
 antibody	I-Reagent
-(using	B-Action
+(	O
+using	B-Action
 the	O
 antibodydilution	B-Reagent
-buffer)	I-Reagent
+buffer	I-Reagent
+)	O
 to	O
 the	O
 sections	B-Reagent
@@ -456,8 +504,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Rinse	B-Action
 the	O
@@ -469,8 +517,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(1/2).
-	O
+(	O
+1/2	O
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -482,8 +532,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(2/2).
-	O
+(	O
+2/2	O
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -491,10 +543,14 @@ slides	B-Location
 in	O
 300	B-Amount
 ml	I-Amount
-PBS for 5	B-Reagent
+PBS	B-Reagent
+for	O
+5	O
 min	B-Time
-(1/2).
-	O
+(	I-Time
+1/2	I-Time
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -502,10 +558,14 @@ slides	B-Location
 in	O
 300	B-Amount
 ml	I-Amount
-PBS for 5	B-Reagent
+PBS	B-Reagent
+for	O
+5	O
 min	B-Time
-(2/2).
-	O
+(	I-Time
+2/2	I-Time
+)	O
+.	O
 
 Apply	B-Action
 100	B-Amount
@@ -513,17 +573,23 @@ Apply	B-Action
 DAB	B-Reagent
 substrate	I-Reagent
 solution	I-Reagent
-(freshly	B-Modifier
+(	O
+freshly	B-Modifier
 made	B-Action
 just	O
 before	O
-use:	O
-0.05%	B-Concentration
+use	O
+:	O
+0.05	B-Concentration
+%	I-Concentration
 DAB	B-Reagent
 -	O
-0.015%H2O2	B-Concentration
+0.015	B-Concentration
+%	I-Concentration
+H2O2	B-Reagent
 in	O
-PBS)	B-Reagent
+PBS	B-Reagent
+)	O
 to	O
 the	O
 sections	B-Reagent
@@ -537,24 +603,25 @@ color	O
 of	O
 the	O
 antibody	B-Reagent
-staining.
-	I-Reagent
+staining	I-Reagent
+.	O
 
 Allow	O
 the	O
 color	B-Action
 development	I-Action
 for	O
-≤ 5	B-Modifier
+≤	B-Modifier
+5	O
 min	B-Time
-until	O
+until	I-Time
 the	O
 desired	B-Modifier
-color	B-Measure-Type
-intensity	I-Measure-Type
-is	O
-reached.
-	O
+color	I-Modifier
+intensity	B-Measure-Type
+is	I-Measure-Type
+reached	O
+.	O
 
 Wash	B-Action
 slides	B-Location
@@ -564,8 +631,11 @@ ml	I-Amount
 PBS	B-Reagent
 for	O
 5	B-Time
-min (1/2).
-	I-Time
+min	I-Time
+(	O
+1/2	O
+)	O
+.	O
 
 Wash	B-Action
 slides	B-Location
@@ -575,10 +645,15 @@ ml	I-Amount
 PBS	B-Reagent
 for	O
 5	B-Time
-min (2/2).
-	I-Time
+min	I-Time
+(	O
+2/2	O
+)	O
+.	O
 
-(optional)	O
+(	O
+optional	O
+)	O
 Counterstain	B-Action
 slides	B-Location
 by	O
@@ -586,13 +661,18 @@ immersing	B-Action
 sides	B-Location
 in	O
 Hematoxylin	B-Reagent
-(e.g.	O
-Gill’s	B-Reagent
-Hematoxylin)	I-Reagent
+(	O
+e.g	O
+.	O
+Gill	B-Reagent
+’	I-Reagent
+s	I-Reagent
+Hematoxylin	I-Reagent
+)	O
 for	O
 1-2	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Rinse	B-Action
 the	O
@@ -602,53 +682,66 @@ running	B-Modifier
 tap	B-Reagent
 water	I-Reagent
 for	O
-≥ 15	B-Modifier
-min.
-	B-Time
+≥	B-Modifier
+15	B-Time
+min	I-Time
+.	I-Time
 
 Dehydrate	B-Action
 the	O
 tissue	B-Location
 slides	I-Location
 with	O
- 95%	B-Concentration
-alcohol	B-Reagent
-change	I-Reagent
-(1/4).
-	O
+95	B-Concentration
+%	I-Concentration
+alcohol	I-Concentration
+change	B-Reagent
+(	I-Reagent
+1/4	O
+)	O
+.	O
 
 Dehydrate	B-Action
 the	O
 tissue	B-Location
 slides	I-Location
 with	O
-95%	B-Concentration
+95	B-Concentration
+%	I-Concentration
 alcohol	B-Reagent
 change	I-Reagent
-(2/4).
-	O
+(	O
+2/4	O
+)	O
+.	O
 
 Dehydrate	B-Action
 the	O
 tissue	B-Location
 slides	I-Location
 with	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 alcohol	B-Reagent
 change	I-Reagent
-(3/4).
-	O
+(	O
+3/4	O
+)	O
+.	O
 
 Dehydrate	B-Action
 the	O
 tissue	B-Location
 slides	I-Location
 with	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 alcohol	B-Reagent
 change	I-Reagent
-(4/4).
-	O
+(	O
+4/4	O
+)	O
+.	O
 
 Add	B-Action
 100	B-Amount
@@ -656,11 +749,13 @@ Add	B-Action
 pre-diluted	B-Modifier
 Sav-HRP	B-Reagent
 conjugates	I-Reagent
-(using	B-Action
+(	O
+using	B-Action
 the	O
 antibody	B-Reagent
 dilution	I-Reagent
-buffer)	I-Reagent
+buffer	I-Reagent
+)	O
 to	O
 the	O
 sections	B-Reagent
@@ -679,11 +774,13 @@ temperature	I-Temperature
 for	O
 30	B-Time
 min	I-Time
-(keep	O
+(	O
+keep	O
 protected	O
 from	O
-light).
-	O
+light	O
+)	O
+.	O
 
 Clear	B-Action
 the	O
@@ -699,11 +796,16 @@ coverslip	B-Action
 using	O
 mounting	B-Reagent
 solution	I-Reagent
-(e.g.	O
-Permount).
-	B-Reagent
+(	O
+e.g	O
+.	O
+Permount	B-Reagent
+)	O
+.	O
 
-[1/3]	O
+[	O
+1/3	O
+]	O
 Clear	B-Action
 the	O
 tissue	B-Location
@@ -718,11 +820,16 @@ coverslip	B-Action
 using	O
 mounting	B-Reagent
 solution	I-Reagent
-(e.g.	O
-Permount).
-	B-Reagent
+(	O
+e.g	O
+.	O
+Permount	B-Reagent
+)	O
+.	O
 
-[2/3]	O
+[	O
+2/3	O
+]	O
 Clear	B-Action
 the	O
 tissue	B-Location
@@ -737,11 +844,16 @@ coverslip	B-Action
 using	O
 mounting	B-Reagent
 solution	I-Reagent
-(e.g.	O
-Permount).
-	B-Reagent
+(	O
+e.g	O
+.	O
+Permount	B-Reagent
+)	O
+.	O
 
-[3/3]	O
+[	O
+3/3	O
+]	O
 Observe	B-Action
 the	O
 color	O
@@ -754,8 +866,8 @@ the	O
 tissue	B-Reagent
 sections	I-Reagent
 under	O
-microscopy.
-	B-Device
+microscopy	B-Device
+.	O
 
 
 

@@ -12,12 +12,12 @@ the	O
 diversity	B-Measure-Type
 of	O
 picorna-like	B-Modifier
-viruses
-	B-Reagent
+viruses	B-Reagent
 
 Whole	B-Reagent
 seawater	I-Reagent
-(if	O
+(	O
+if	O
 intracellular	B-Modifier
 viruses	B-Reagent
 are	O
@@ -26,23 +26,28 @@ be	O
 included	O
 in	O
 the	O
-analysis)	B-Method
+analysis	B-Method
+)	O
 or	O
 0.22-filtered	B-Numerical
 seawater	B-Reagent
-(if	O
+(	O
+if	O
 only	O
 the	O
 free	O
 virus	B-Reagent
 community	I-Reagent
 is	O
-targeted)	O
+targeted	O
+)	O
 is	O
 gently	B-Modifier
 filtered	B-Action
-(7	B-Generic-Measure
-mmHg)	I-Generic-Measure
+(	O
+7	B-Generic-Measure
+mmHg	I-Generic-Measure
+)	O
 through	O
 a	O
 0.02	B-Size
@@ -50,9 +55,12 @@ a	O
 aluminum	B-Reagent
 oxide	I-Reagent
 filter	I-Reagent
-(Anotop,	O
-Whatman).
-	O
+(	O
+Anotop	O
+,	O
+Whatman	O
+)	O
+.	O
 
 Filtration	B-Method
 should	O
@@ -65,8 +73,8 @@ dramatically	O
 or	O
 drops	O
 to	O
-zero.
-	O
+zero	O
+.	O
 
 Use	B-Action
 pumped	B-Reagent
@@ -78,11 +86,12 @@ much	O
 residual	B-Reagent
 sample	I-Reagent
 as	O
-possible.
-	O
+possible	O
+.	O
 
 Once	O
-dry,	O
+dry	O
+,	O
 seal	B-Action
 the	O
 filter	B-Location
@@ -90,29 +99,29 @@ inlets	I-Location
 and	I-Location
 outlets	I-Location
 with	O
-parafilm.
-	B-Seal
+parafilm	B-Seal
+.	O
 
 Label	B-Action
 the	O
-filter.
-	B-Location
+filter	B-Location
+.	O
 
 Flash-freeze	B-Action
 the	O
 filter	B-Location
 in	O
 liquid	B-Reagent
-nitrogen.
-	I-Reagent
+nitrogen	I-Reagent
+.	O
 
 Store	B-Action
 it	B-Mention
 at	O
 –80°C	B-Temperature
 until	O
-extraction.
-	B-Method
+extraction	B-Method
+.	O
 
 Total	B-Reagent
 nucleic	I-Reagent
@@ -133,9 +142,12 @@ and	I-Device
 RNA	I-Device
 Purification	I-Device
 kit	I-Device
-(Epicenter,	O
-Biotechnologies).
-	O
+(	O
+Epicenter	O
+,	O
+Biotechnologies	O
+)	O
+.	O
 
 Remove	B-Action
 contaminating	B-Reagent
@@ -148,8 +160,10 @@ the	O
 Turbo	B-Device
 DNA-free	I-Device
 kit	I-Device
-(Applied	I-Device
-Biosystems)	I-Device
+(	I-Device
+Applied	I-Device
+Biosystems	I-Device
+)	I-Device
 as	O
 described	O
 in	O
@@ -158,8 +172,8 @@ protocol	O
 provided	O
 with	O
 the	O
-kit.
-	O
+kit	O
+.	O
 
 Each	B-Modifier
 cDNA	B-Reagent
@@ -172,12 +186,14 @@ extracted	B-Reagent
 Turbo	I-Reagent
 DNA-free–treated	I-Reagent
 RNA	I-Reagent
-template,	I-Reagent
+template	I-Reagent
+,	O
 0.2	B-Concentration
 mM	I-Concentration
 of	O
 each	B-Modifier
-dNTP,	B-Reagent
+dNTP	B-Reagent
+,	O
 and	O
 100	B-Amount
 ng	I-Amount
@@ -190,8 +206,8 @@ total	O
 volume	B-Measure-Type
 of	O
 13	B-Amount
-µL.
-	I-Amount
+µL	I-Amount
+.	O
 
 Denaturation	B-Method
 and	O
@@ -218,18 +234,22 @@ then	O
 cooling	B-Action
 it	B-Mention
 on	B-Location
-ice.
-	I-Location
+ice	I-Location
+.	O
 
 While	O
 still	O
 on	O
-ice,	B-Location
+ice	B-Location
+,	O
 DTT	B-Reagent
-(0.5	B-Concentration
+(	O
+0.5	B-Concentration
 mM	I-Concentration
 final	O
-conc.)	O
+conc	O
+.	O
+)	O
 is	O
 added	B-Action
 to	O
@@ -245,15 +265,17 @@ with	O
 U	I-Amount
 RNase	B-Reagent
 OUT	I-Reagent
-(Invitrogen)	I-Reagent
+(	I-Reagent
+Invitrogen	I-Reagent
+)	I-Reagent
 to	O
 protect	B-Action
 the	O
 sample	B-Reagent
 from	O
 RNAse	B-Reagent
-activity.
-	I-Reagent
+activity	I-Reagent
+.	O
 
 The	O
 complementary	B-Reagent
@@ -266,10 +288,12 @@ with	O
 U	I-Amount
 Superscript	B-Reagent
 III	I-Reagent
-(Invitrogen)	I-Reagent
+(	I-Reagent
+Invitrogen	I-Reagent
+)	I-Reagent
 Reverse	I-Reagent
-Transcriptase.
-	I-Reagent
+Transcriptase	I-Reagent
+.	O
 
 The	O
 final	O
@@ -278,8 +302,8 @@ volume	O
 should	O
 be	O
 20	O
-µL.
-	O
+µL	O
+.	O
 
 The	O
 reaction	B-Reagent
@@ -306,8 +330,8 @@ template	B-Reagent
 while	O
 cDNA	B-Reagent
 synthesis	B-Method
-commences.
-	O
+commences	O
+.	O
 
 The	O
 temperature	B-Measure-Type
@@ -315,20 +339,24 @@ is	O
 then	O
 increased	B-Action
 to	O
-50°C,	B-Temperature
+50°C	B-Temperature
+,	O
 the	O
 temperature	B-Measure-Type
 at	O
 which	O
 Superscript	B-Reagent
-III’s	I-Reagent
+III	I-Reagent
+’	O
+s	O
 processivity	B-Measure-Type
 is	O
-highest,	O
+highest	O
+,	O
 for	O
 60	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 The	O
 activity	O
@@ -345,21 +373,26 @@ at	O
 85°C	B-Temperature
 for	O
 5	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 After	O
 cDNA	B-Reagent
-synthesis,	B-Method
+synthesis	B-Method
+,	O
 add	B-Action
 1	B-Amount
 µL	I-Amount
-(2	I-Amount
-U)	I-Amount
+(	I-Amount
+2	I-Amount
+U	I-Amount
+)	I-Amount
 of	O
 RNase	B-Reagent
 H	I-Reagent
-(Invitrogen)	I-Reagent
+(	I-Reagent
+Invitrogen	I-Reagent
+)	I-Reagent
 to	O
 the	O
 reaction	B-Reagent
@@ -377,9 +410,11 @@ RNA	B-Reagent
 template	I-Reagent
 from	O
 the	O
-cDNA:RNA	B-Reagent
-molecule.
-	I-Reagent
+cDNA	B-Reagent
+:	I-Reagent
+RNA	I-Reagent
+molecule	I-Reagent
+.	O
 
 PCR	B-Method
 can	O
@@ -387,10 +422,14 @@ be	O
 performed	B-Action
 with	O
 the	O
-RdRp,	B-Reagent
-Mpl.sc1,	I-Reagent
-Mpl.sc2,	I-Reagent
-Mplsc3,	I-Reagent
+RdRp	B-Reagent
+,	I-Reagent
+Mpl.sc1	I-Reagent
+,	I-Reagent
+Mpl.sc2	I-Reagent
+,	I-Reagent
+Mplsc3	I-Reagent
+,	I-Reagent
 and	I-Reagent
 Mpl.cdh	I-Reagent
 primer	I-Reagent
@@ -406,8 +445,8 @@ synthesized	B-Action
 in	O
 the	O
 previous	O
-step.
-	O
+step	O
+.	O
 
 In	O
 a	O
@@ -415,7 +454,8 @@ a	O
 mL	I-Amount
 nuclease-free	B-Location
 PCR	I-Location
-tube,	I-Location
+tube	I-Location
+,	O
 add	B-Action
 reaction	B-Reagent
 components	I-Reagent
@@ -427,20 +467,24 @@ of	O
 1×	B-Concentration
 Platinum	B-Reagent
 Taq	I-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 3	B-Concentration
 mM	I-Concentration
-MgCl2,	B-Reagent
+MgCl2	B-Reagent
+,	O
 0.2	B-Concentration
 mM	I-Concentration
 of	O
 each	B-Modifier
-dNTP,	B-Reagent
+dNTP	B-Reagent
+,	O
 1	B-Concentration
 µM	I-Concentration
 of	O
 each	B-Modifier
-primer,	B-Reagent
+primer	B-Reagent
+,	O
 and	O
 1	B-Amount
 unit	I-Amount
@@ -449,8 +493,10 @@ Platinum	B-Reagent
 Taq	I-Reagent
 DNA	I-Reagent
 polymerase	I-Reagent
-(Invitrogen).
-	I-Reagent
+(	I-Reagent
+Invitrogen	I-Reagent
+)	I-Reagent
+.	O
 
 Incubate	B-Action
 the	O
@@ -460,12 +506,14 @@ the	O
 following	O
 thermal	O
 cycling	O
-conditions:	O
+conditions	O
+:	O
 94°C	B-Temperature
 for	O
 75	B-Time
 s	I-Time
-(this	O
+(	O
+this	O
 is	O
 necessary	O
 to	O
@@ -478,7 +526,9 @@ complete	O
 initial	O
 denaturation	B-Method
 of	O
-template),	B-Reagent
+template	B-Reagent
+)	O
+,	O
 followed	O
 by	O
 35	B-Generic-Measure
@@ -489,24 +539,29 @@ at	O
 94°C	B-Temperature
 for	O
 45	B-Time
-s,	I-Time
+s	I-Time
+,	O
 annealing	B-Action
 at	O
 a	O
 primer-specific	B-Temperature
 temperature	I-Temperature
-(Table	O
-1)	O
+(	O
+Table	O
+1	O
+)	O
 for	O
 45	B-Time
-s,	I-Time
+s	I-Time
+,	O
 and	O
 extension	B-Method
 at	O
 72°C	B-Temperature
 for	O
 45	B-Time
-s.	I-Time
+s	I-Time
+.	O
 
 Complete	O
 the	O
@@ -523,12 +578,13 @@ min	I-Time
 15	I-Time
 s	I-Time
 at	O
-72°C.
-	B-Temperature
+72°C	B-Temperature
+.	O
 
 Before	O
 gel	B-Reagent
-separation,	B-Method
+separation	B-Method
+,	O
 we	O
 purify	B-Action
 and	O
@@ -542,13 +598,15 @@ MinElute	B-Device
 PCR	I-Device
 cleanup	I-Device
 column	I-Device
-(Qiagen)	I-Device
+(	I-Device
+Qiagen	I-Device
+)	I-Device
 as	O
 described	O
 by	O
 the	O
-manufacturer.
-	O
+manufacturer	O
+.	O
 
 Purified	B-Reagent
 PCR	I-Reagent
@@ -557,7 +615,8 @@ are	O
 loaded	B-Action
 onto	O
 a	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
 containing	O
@@ -565,12 +624,14 @@ containing	O
 SYBR	I-Reagent
 safe	I-Reagent
 stain	I-Reagent
-(Invitrogen)	I-Reagent
+(	I-Reagent
+Invitrogen	I-Reagent
+)	I-Reagent
 and	O
 0.5×	B-Concentration
 TBE	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Bands	B-Reagent
 of	I-Reagent
@@ -579,9 +640,11 @@ of	O
 the	O
 appropriate	O
 size	O
-(approximately	B-Modifier
+(	O
+approximately	B-Modifier
 500	B-Size
-bp)	I-Size
+bp	I-Size
+)	O
 are	O
 excised	B-Action
 and	O
@@ -592,13 +655,17 @@ MinElute	B-Device
 Gel	I-Device
 Extraction	I-Device
 kit	I-Device
-(Qiagen)	I-Device
+(	I-Device
+Qiagen	I-Device
+)	I-Device
 according	O
 to	O
 the	O
-manufacturer’s	O
-instructions.
-	O
+manufacturer	O
+’	O
+s	O
+instructions	O
+.	O
 
 We	O
 recommend	O
@@ -621,13 +688,14 @@ for	O
 the	O
 end	B-Reagent
 repair	I-Reagent
-reaction.
-	I-Reagent
+reaction	I-Reagent
+.	O
 
 In	O
 preparation	B-Method
 for	O
-ligation,	B-Method
+ligation	B-Method
+,	O
 PCR	B-Reagent
 products	I-Reagent
 are	O
@@ -640,13 +708,15 @@ PCRTerminator	B-Device
 End	I-Device
 Repair	I-Device
 kit	I-Device
-(Lucigen)	I-Device
+(	I-Device
+Lucigen	I-Device
+)	O
 as	O
 described	O
 by	O
 the	O
-manufacturer.
-	O
+manufacturer	O
+.	O
 
 After	O
 a	O
@@ -667,8 +737,10 @@ MinElute	B-Device
 Reaction	I-Device
 Cleanup	I-Device
 column	I-Device
-(Qiagen).
-	I-Device
+(	I-Device
+Qiagen	I-Device
+)	I-Device
+.	O
 
 The	O
 eluted	B-Reagent
@@ -681,12 +753,14 @@ into	O
 the	O
 pSMART-HCKan	B-Reagent
 vector	I-Reagent
-(Lucigen)	I-Reagent
+(	I-Reagent
+Lucigen	I-Reagent
+)	I-Reagent
 according	O
 to	O
 the	O
-manufacturer.
-	O
+manufacturer	O
+.	O
 
 After	O
 terminating	B-Action
@@ -699,7 +773,8 @@ for	O
 15	B-Time
 min	I-Time
 at	O
-70°C,	B-Temperature
+70°C	B-Temperature
+,	O
 2	B-Amount
 µL	I-Amount
 of	O
@@ -713,17 +788,20 @@ Ecloni	B-Reagent
 10G	I-Reagent
 Supreme	I-Reagent
 cells	I-Reagent
-(Lucigen)	I-Reagent
+(	I-Reagent
+Lucigen	I-Reagent
+)	I-Reagent
 via	O
-electroporation.
-	B-Method
+electroporation	B-Method
+.	O
 
 Before	O
 initiating	B-Action
 a	O
 large-scale	B-Modifier
 sequencing	B-Action
-effort,	O
+effort	O
+,	O
 we	O
 recommend	O
 screening	B-Action
@@ -742,16 +820,18 @@ primers	B-Reagent
 SL1	I-Reagent
 and	I-Reagent
 SR2	I-Reagent
-(Table	O
-1)	O
+(	O
+Table	O
+1	O
+)	O
 to	O
 assess	B-Action
 the	I-Action
 quality	I-Action
 of	O
 the	O
-library.
-	B-Reagent
+library	B-Reagent
+.	O
 
 Colony	B-Reagent
 PCR	I-Reagent
@@ -772,8 +852,8 @@ size	I-Modifier
 range	I-Modifier
 purified	B-Action
 and	O
-sequenced.
-	B-Action
+sequenced	B-Action
+.	O
 
 
 

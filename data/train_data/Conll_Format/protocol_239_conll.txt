@@ -7,25 +7,27 @@ for	O
 Removal	B-Method
 of	O
 Fragments	B-Reagent
-<400bp
-	B-Modifier
+<	B-Modifier
+400bp	B-Generic-Measure
 
 Label	B-Action
 11x1.5	B-Amount
 ml	I-Amount
 tubes	B-Location
 40-45-50-55	B-Modifier
-etc.
-	O
+etc	O
+.	O
 
 to	O
 90	O
-(=	O
+(	O
+=	O
 ratio	B-Measure-Type
 of	O
 beads	B-Reagent
 to	O
-DNA)	B-Reagent
+DNA	B-Reagent
+)	O
 Mix	B-Action
 48μl	B-Amount
 NEB	B-Reagent
@@ -35,8 +37,8 @@ with	O
 1152μl	B-Amount
 Molecular	B-Reagent
 Biology	I-Reagent
-Water.
-	I-Reagent
+Water	I-Reagent
+.	O
 
 Pipet	B-Action
 100μl	B-Amount
@@ -47,8 +49,8 @@ each	B-Modifier
 of	O
 the	O
 11	B-Numerical
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Vortex	B-Action
 bottle	B-Location
@@ -61,8 +63,8 @@ dispense	B-Action
 800μl	B-Amount
 into	O
 fresh	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Using	O
 same	O
@@ -70,7 +72,9 @@ pipettor	B-Location
 used	O
 for	O
 step	O
-#3,	O
+#	O
+3	O
+,	O
 pipet	B-Action
 volume	B-Measure-Type
 of	O
@@ -78,22 +82,28 @@ beads	B-Reagent
 into	O
 each	B-Modifier
 tube	B-Location
-(i.e.,	O
+(	O
+i.e.	O
+,	O
 40μl	B-Amount
 into	O
 tube	B-Location
 labled	B-Modifier
-40,	I-Modifier
+40	I-Modifier
+,	O
 45μl	B-Amount
 into	O
 tube	B-Location
 labed	B-Modifier
-45,	I-Modifier
-etc.)
-	O
+45	I-Modifier
+,	O
+etc	O
+.	O
+)	O
 
 Close	B-Action
-lids,	B-Seal
+lids	B-Seal
+,	O
 vortex	B-Action
 tubes	B-Location
 and	O
@@ -102,14 +112,15 @@ incubate	B-Action
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Place	B-Action
 tubes	B-Location
 in	O
 MPC	B-Location
-rack;	I-Location
+rack	I-Location
+;	O
 wait	B-Action
 5	B-Time
 minutes	I-Time
@@ -121,16 +132,16 @@ to	O
 magnet	B-Location
 side	I-Location
 of	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Pipet	B-Action
 off	I-Action
 supers	B-Reagent
 and	O
 discard	B-Action
-them.
-	B-Mention
+them	B-Mention
+.	O
 
 Wash	B-Action
 the	O
@@ -139,26 +150,29 @@ beads	B-Reagent
 with	O
 500μl	B-Amount
 each	B-Modifier
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 with	O
 30	B-Time
 second	I-Time
-incubation.
-	B-Method
+incubation	B-Method
+.	O
 
 Remove	B-Action
 all	O
 supers	B-Reagent
 from	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Place	B-Action
 tubes	B-Location
-(with	O
+(	O
+with	O
 caps	B-Seal
-open)	B-Modifier
+open	B-Modifier
+)	O
 into	O
 37°C	B-Temperature
 heat	B-Location
@@ -166,10 +180,12 @@ block	I-Location
 to	O
 dry	B-Action
 beads	B-Reagent
-(evaporate	B-Action
+(	O
+evaporate	B-Action
 residual	B-Amount
-ethanol).
-	B-Reagent
+ethanol	B-Reagent
+)	O
+.	O
 
 Add	B-Action
 10μl	B-Amount
@@ -177,16 +193,17 @@ Qiagen	B-Reagent
 EB	I-Reagent
 to	O
 each	B-Modifier
-tube,	B-Location
+tube	B-Location
+,	O
 close	B-Action
-lids.
-	B-Seal
+lids	B-Seal
+.	O
 
 Vortex	B-Action
 to	O
 resuspend	B-Reagent
-beads.
-	I-Reagent
+beads	I-Reagent
+.	O
 
 Place	B-Action
 tubes	B-Location
@@ -202,28 +219,33 @@ to	O
 magnet	B-Location
 sides	I-Location
 of	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Pipet	B-Action
 off	I-Action
 supers	B-Reagent
-(containing	O
+(	O
+containing	O
 eluted	B-Modifier
-DNA)	B-Reagent
+DNA	B-Reagent
+)	O
 into	O
 fresh	B-Modifier
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Run	B-Action
 samples	B-Reagent
 in	O
-2%	B-Concentration
+2	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
-(1x	B-Concentration
-TAE)	B-Reagent
+(	O
+1x	B-Concentration
+TAE	B-Reagent
+)	O
 using	O
 5μl	B-Amount
 DNA	B-Reagent
@@ -232,8 +254,8 @@ and	O
 6x	B-Concentration
 gel	B-Reagent
 loading	I-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Photograph	B-Action
 results	O
@@ -252,8 +274,8 @@ exclude	B-Action
 lower	O
 range	O
 of	O
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 
 

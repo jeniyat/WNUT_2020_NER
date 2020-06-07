@@ -4,12 +4,13 @@ DNA	B-Reagent
 extraction	B-Method
 from	O
 Fungi_small	B-Reagent
-scale
-	O
+scale	O
 
 Collect	B-Action
 tissue/spores	B-Reagent
-(10-20mg)	B-Amount
+(	O
+10-20mg	B-Amount
+)	O
 in	O
 a	O
 2ml	B-Amount
@@ -18,8 +19,8 @@ tube	I-Location
 with	O
 one	B-Numerical
 metal	B-Device
-bead.
-	I-Device
+bead	I-Device
+.	O
 
 lyse	B-Action
 tissue/spores	B-Reagent
@@ -29,14 +30,14 @@ nitrogen	I-Reagent
 in	O
 a	O
 precooled	B-Modifier
-tissuelycer.
-	B-Device
+tissuelycer	B-Device
+.	O
 
 using	B-Action
 50Hz	B-Generic-Measure
 for	O
-1min.
-	B-Time
+1min	B-Time
+.	O
 
 Make	O
 lysis	B-Reagent
@@ -45,23 +46,28 @@ by	O
 mixing	B-Action
 buffer	B-Reagent
 A+B+C	I-Reagent
-(2.5:2.5:1	B-Concentration
+(	O
+2.5:2.5:1	B-Concentration
 +	O
-0.1%PVP	B-Concentration
-final)	B-Modifier
+0.1	B-Concentration
+%	I-Concentration
+PVP	B-Reagent
+final	B-Modifier
+)	O
 and	O
 briefly	B-Modifier
 heat	B-Action
 to	O
 64	B-Temperature
-°C.
-	I-Temperature
+°C	I-Temperature
+.	O
 
 Let	O
 cool	B-Action
 to	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 add	B-Action
 RNAse	B-Reagent
 T1	I-Reagent
@@ -73,11 +79,12 @@ to	O
 1:1750	B-Concentration
 of	O
 RNAse	B-Reagent
-T1:	I-Reagent
-lysis	I-Reagent
+T1	I-Reagent
+:	O
+lysis	B-Reagent
 buffer	I-Reagent
-ratio.
-	O
+ratio	O
+.	O
 
 Add	B-Action
 500ul	B-Amount
@@ -85,10 +92,12 @@ lysis	B-Reagent
 buffer	I-Reagent
 into	O
 the	O
-powder,	B-Reagent
+powder	B-Reagent
+,	O
 briefly	B-Modifier
-vortex,	B-Action
-incubate	I-Action
+vortex	B-Action
+,	O
+incubate	B-Action
 at	O
 64oC	B-Temperature
 for	O
@@ -99,28 +108,32 @@ on	O
 ice	B-Location
 for	O
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Add	B-Action
 100	B-Amount
 ul	I-Amount
-(0.2	B-Numerical
-vol)	B-Measure-Type
+(	O
+0.2	B-Numerical
+vol	B-Measure-Type
+)	O
 of	O
 KAc	B-Reagent
-5M,	B-Concentration
+5M	B-Concentration
+,	O
 mix	B-Action
 by	O
-inversion,	B-Method
+inversion	B-Method
+,	O
 incubate	B-Action
 on	O
 ice	B-Location
 for	O
 max	B-Modifier
 5	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -130,8 +143,8 @@ max	B-Speed
 speed	I-Speed
 for	O
 10	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
@@ -141,16 +154,20 @@ eppendorf	B-Location
 tube	I-Location
 containing	O
 500ul	B-Amount
-(1vol)	B-Numerical
-(P/C/I)	B-Reagent
+(	O
+1vol	B-Numerical
+)	O
+(	O
+P/C/I	B-Reagent
+)	O
 and	O
 mix	B-Action
 by	O
 inversion	B-Method
 for	O
 2	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -161,12 +178,14 @@ max	B-Speed
 speed	I-Speed
 for	O
 10	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
-(~400ul)	B-Modifier
+(	O
+~400ul	B-Modifier
+)	O
 to	O
 fresh	B-Modifier
 eppendorf	B-Location
@@ -174,15 +193,15 @@ tube	I-Location
 containing	O
 500ul	B-Amount
 RT	B-Modifier
-isopropanol.
-	B-Reagent
+isopropanol	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 RT	B-Temperature
 for	O
-5-10mins.
-	B-Time
+5-10mins	B-Time
+.	O
 
 Spin	B-Action
 at	O
@@ -193,8 +212,8 @@ max	B-Speed
 speed	I-Speed
 for	O
 30	B-Time
-mins.
-	I-Time
+mins	I-Time
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
@@ -206,15 +225,17 @@ wash	B-Action
 with	O
 1mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
-Ethanol,	B-Reagent
+70	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+,	O
 invert	B-Action
 several	B-Numerical
 times	O
 to	O
 dislodge	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Spin	B-Action
 in	O
@@ -224,8 +245,8 @@ centrifuge	I-Device
 for	O
 5mins	B-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 supernatant	B-Reagent
@@ -236,15 +257,17 @@ wash	B-Action
 with	O
 1mL	B-Amount
 fresh	B-Modifier
-70%	B-Concentration
-Ethanol,	B-Reagent
+70	B-Concentration
+%	I-Concentration
+Ethanol	B-Reagent
+,	O
 invert	B-Action
 several	B-Numerical
 times	O
 to	O
 dislodge	B-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Spin	B-Action
 in	O
@@ -254,14 +277,14 @@ centrifuge	I-Device
 for	O
 5mins	B-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 supernatant	B-Reagent
 with	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Spin	B-Action
 in	O
@@ -271,22 +294,22 @@ centrifuge	I-Device
 for	O
 1min	B-Time
 at	O
-13000g.
-	B-Speed
+13000g	B-Speed
+.	O
 
 Remove	B-Action
 the	O
 remaining	B-Modifier
 ethanol	B-Reagent
 with	O
-pipette.
-	B-Device
+pipette	B-Device
+.	O
 
 Air-dry	B-Action
 pellet	B-Reagent
 for	O
-7mins.
-	B-Time
+7mins	B-Time
+.	O
 
 Add	B-Action
 50ul	B-Amount
@@ -299,8 +322,8 @@ the	O
 tube	B-Location
 slightly	B-Modifier
 for	O
-mixing.
-	B-Action
+mixing	B-Action
+.	O
 
 DO	O
 NOT	O
@@ -310,8 +333,8 @@ it	B-Mention
 shears	B-Action
 DNA.Store	B-Reagent
 at	O
--20oC.
-	B-Temperature
+-20oC	B-Temperature
+.	O
 
 
 

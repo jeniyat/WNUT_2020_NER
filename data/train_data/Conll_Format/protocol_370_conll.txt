@@ -3,8 +3,7 @@ Filtration	I-Method
 of	O
 SPOT	B-Reagent
 0m	I-Reagent
-Water
-	I-Reagent
+Water	I-Reagent
 
 Soak	B-Action
 all	B-Modifier
@@ -12,14 +11,16 @@ small	I-Modifier
 rig	B-Reagent
 components	I-Reagent
 in	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 acid	B-Reagent
 for	O
 a	O
 minimum	B-Modifier
 of	O
 30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Rinse	B-Action
 all	B-Modifier
@@ -27,18 +28,20 @@ components	B-Reagent
 thoroughly	B-Modifier
 using	O
 MilliQ	B-Reagent
-(hold	B-Action
+(	O
+hold	B-Action
 disks	B-Location
 on	O
-edges).
-	B-Location
+edges	B-Location
+)	O
+.	O
 
 Place	B-Action
 on	O
 rig	B-Location
 once	O
-rinsed.
-	B-Action
+rinsed	B-Action
+.	O
 
 Rinse	B-Action
 red	B-Modifier
@@ -49,8 +52,8 @@ plastic	I-Modifier
 Erlenmeyer	B-Location
 flask	I-Location
 with	O
-MilliQ.
-	B-Reagent
+MilliQ	B-Reagent
+.	O
 
 Assemble	B-Action
 pump	B-Device
@@ -63,8 +66,8 @@ and	O
 large	B-Modifier
 plastic	I-Modifier
 Erlenmeyer	B-Location
-flask.
-	I-Location
+flask	I-Location
+.	O
 
 Attach	B-Action
 tube	B-Location
@@ -74,19 +77,21 @@ side	I-Location
 of	O
 pump	B-Device
 for	O
-vacuum.
-	B-Device
+vacuum	B-Device
+.	O
 
 Right	B-Device
 knob	I-Device
 on	O
 pump	B-Device
 controls	B-Action
-vacuum,	B-Device
+vacuum	B-Device
+,	O
 loosen	O
 all	O
 the	O
-way.	O
+way	O
+.	O
 
 Remove	B-Action
 filter	B-Location
@@ -97,7 +102,8 @@ place	B-Action
 upside	B-Modifier
 down	I-Modifier
 on	O
-bench.	B-Location
+bench	B-Location
+.	O
 
 Remove	B-Action
 micropore	B-Device
@@ -108,8 +114,8 @@ and	O
 rinse	B-Action
 well	B-Modifier
 with	O
-MilliQ.
-	B-Reagent
+MilliQ	B-Reagent
+.	O
 
 Hold	B-Action
 in	O
@@ -119,23 +125,27 @@ sterile	I-Modifier
 Falcon	B-Location
 tube	I-Location
 during	O
-use.	O
+use	O
+.	O
 
 Using	O
 micropore	B-Device
 forceps	I-Device
-remove 0.8μm	B-Action
-backing disk	B-Device
-from	O
+remove	B-Action
+0.8μm	B-Size
+backing	I-Size
+disk	B-Device
+from	I-Device
 between	B-Location
-blue	B-Device
-disks	I-Device
-and	O
+blue	I-Location
+disks	B-Device
+and	I-Device
 place	B-Action
-on	O
+on	I-Action
 each	B-Modifier
-rig	B-Device
-filter.	I-Device
+rig	I-Modifier
+filter	B-Device
+.	I-Device
 
 Again	O
 using	O
@@ -158,8 +168,8 @@ top	B-Location
 of	O
 each	B-Modifier
 0.8μm	B-Size
-disk.
-	B-Device
+disk	B-Device
+.	O
 
 Make	B-Action
 sure	I-Action
@@ -172,8 +182,8 @@ not	O
 have	O
 holes	O
 or	O
-rips.
-	O
+rips	O
+.	O
 
 Place	B-Action
 top	B-Location
@@ -185,8 +195,8 @@ each	B-Modifier
 filter	B-Device
 and	O
 twist	B-Action
-on.
-	O
+on	O
+.	O
 
 Open	B-Action
 each	B-Modifier
@@ -198,8 +208,8 @@ orange	B-Device
 knob	I-Device
 to	O
 verticle	B-Method
-position.
-	I-Method
+position	I-Method
+.	O
 
 Using	O
 a	O
@@ -219,8 +229,8 @@ and	O
 pipet	B-Action
 directly	B-Modifier
 onto	O
-disks.
-	B-Device
+disks	B-Device
+.	O
 
 There	O
 should	O
@@ -233,14 +243,18 @@ and	O
 1	B-Numerical
 each	O
 of	O
-20ml,	B-Amount
-30ml,	I-Amount
-40ml,	I-Amount
-50ml,	I-Amount
-60ml	I-Amount
+20ml	B-Amount
+,	O
+30ml	B-Amount
+,	O
+40ml	B-Amount
+,	O
+50ml	B-Amount
+,	O
+60ml	B-Amount
 and	O
-100ml.
-	B-Amount
+100ml	B-Amount
+.	O
 
 Once	O
 desired	O
@@ -255,11 +269,12 @@ filter	B-Device
 and	O
 knobs	B-Device
 are	O
-vertical,	B-Modifier
+vertical	B-Modifier
+,	O
 turn	B-Action
 on	I-Action
-pump.
-	B-Device
+pump	B-Device
+.	O
 
 Adujst	B-Action
 top	B-Device
@@ -279,8 +294,8 @@ guage	O
 is	O
 slightly	O
 above	O
-0.
-	O
+0	O
+.	O
 
 Allow	O
 vacuum	B-Device
@@ -295,8 +310,8 @@ has	O
 passed	O
 through	O
 the	O
-filters.
-	B-Device
+filters	B-Device
+.	O
 
 Once	O
 all	O
@@ -305,7 +320,8 @@ has	O
 passed	O
 through	O
 a	O
-filter,	B-Device
+filter	B-Device
+,	O
 turn	B-Action
 orange	B-Device
 knob	I-Device
@@ -313,8 +329,8 @@ closed	O
 to	O
 the	O
 horizontal	B-Method
-position.
-	I-Method
+position	I-Method
+.	O
 
 Once	O
 all	O
@@ -325,11 +341,12 @@ and	O
 all	O
 knobs	B-Device
 are	O
-horizontal,	B-Modifier
+horizontal	B-Modifier
+,	O
 turn	B-Action
 off	I-Action
-pump.
-	B-Device
+pump	B-Device
+.	O
 
 Twist	B-Action
 off	I-Action
@@ -343,8 +360,8 @@ place	B-Action
 upside	B-Method
 down	I-Method
 on	O
-bench.
-	B-Location
+bench	B-Location
+.	O
 
 Using	O
 the	O
@@ -365,8 +382,8 @@ a	O
 labeled	B-Modifier
 TCBS	B-Location
 Agar	I-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Use	O
 a	O
@@ -379,8 +396,8 @@ place	B-Action
 filter	B-Device
 flat	B-Modifier
 on	O
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 Repeat	B-Action
 Step	B-Method
@@ -391,7 +408,8 @@ all	O
 filters	B-Device
 onto	O
 separate	B-Modifier
-plates.	B-Location
+plates	B-Location
+.	O
 
 Repeat	B-Action
 Steps	B-Method
@@ -400,8 +418,8 @@ for	O
 remaining	O
 volumes	B-Measure-Type
 of	O
-water.
-	B-Reagent
+water	B-Reagent
+.	O
 
 The	O
 0.8μm	B-Size
@@ -411,7 +429,8 @@ may	O
 remain	B-Action
 on	O
 the	O
-filters,	B-Device
+filters	B-Device
+,	O
 only	O
 new	B-Modifier
 0.2μm	B-Size
@@ -420,8 +439,8 @@ disks	I-Device
 are	O
 needed	O
 each	O
-time.
-	O
+time	O
+.	O
 
 Leave	B-Action
 plates	B-Location
@@ -437,8 +456,8 @@ for	O
 at	B-Modifier
 least	I-Modifier
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Then	O
 place	B-Action
@@ -452,8 +471,8 @@ for	O
 at	B-Modifier
 least	I-Modifier
 24	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 
 

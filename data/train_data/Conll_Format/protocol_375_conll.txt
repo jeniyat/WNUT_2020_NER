@@ -1,6 +1,5 @@
 Splenocyte	B-Reagent
-Preperation
-	B-Method
+Preperation	B-Method
 
 Harvest	B-Action
 mouse	B-Reagent
@@ -10,8 +9,8 @@ prepare	B-Action
 a	O
 single	B-Numerical
 cell	B-Reagent
-suspension.
-	I-Reagent
+suspension	I-Reagent
+.	O
 
 Use	O
 slides	B-Location
@@ -25,21 +24,24 @@ spleen	B-Reagent
 through	O
 a	O
 cell	B-Device
-strainer.
-	I-Device
+strainer	I-Device
+.	O
 
 Pellet	B-Action
 the	O
 cells	B-Reagent
 by	O
 centrifugation	B-Method
-(350	B-Speed
+(	O
+350	B-Speed
 x	I-Speed
-g);	I-Speed
+g	I-Speed
+)	O
+;	O
 aspirate	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Dilute	B-Action
 the	O
@@ -66,8 +68,8 @@ ml	I-Amount
 of	O
 1X	B-Concentration
 Lysis	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Incubate	B-Action
 on	O
@@ -77,8 +79,8 @@ for	O
 minutes	I-Time
 with	O
 occasional	B-Modifier
-shaking.
-	B-Action
+shaking	B-Action
+.	O
 
 Stop	B-Action
 the	O
@@ -93,20 +95,22 @@ with	O
 ml	I-Amount
 of	O
 1X	B-Concentration
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 Spin	B-Action
 the	O
 cells	B-Reagent
-(350	B-Speed
+(	O
+350	B-Speed
 x	I-Speed
-g)	I-Speed
+g	I-Speed
+)	O
 and	O
 discard	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
 the	O
@@ -116,16 +120,18 @@ the	O
 appropriate	B-Modifier
 buffer	B-Reagent
 Count	B-Action
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 adjust	B-Action
-density,	B-Measure-Type
+density	B-Measure-Type
+,	O
 and	O
 proceed	B-Action
 with	O
 cell	B-Method
 staining	I-Method
-procedures.
-	I-Method
+procedures	I-Method
+.	O
 
 
 

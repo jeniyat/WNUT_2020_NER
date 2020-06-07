@@ -4,19 +4,21 @@ Library	I-Reagent
 Generation	B-Method
 for	O
 Reef	B-Reagent
-Corals
-	I-Reagent
+Corals	I-Reagent
 
 Add	B-Action
 coral	B-Reagent
 samples	I-Reagent
-(<	B-Modifier
+(	O
+<	B-Modifier
 1	B-Size
-cm2 biopsies)	I-Size
+cm2	I-Size
+biopsies	I-Size
+)	B-Reagent
 to	O
 PowerBead	B-Location
-Tubes.
-	I-Location
+Tubes	I-Location
+.	I-Location
 
 The	O
 PowerBead	B-Location
@@ -33,14 +35,16 @@ the	O
 DNA	B-Reagent
 from	O
 the	O
-tissues and	B-Reagent
+tissues	B-Reagent
+and	O
 break	B-Action
 apart	I-Action
-cell	B-Reagent
-walls.
-	I-Reagent
+cell	I-Action
+walls	B-Reagent
+.	I-Reagent
 
-Furthermore,	O
+Furthermore	O
+,	O
 the	O
 bead	B-Location
 tubes	I-Location
@@ -53,40 +57,49 @@ protecting	O
 the	O
 DNA	B-Reagent
 from	O
-degradation.
-	B-Method
+degradation	B-Method
+.	O
 
 Make	O
 sure	O
 C1	B-Reagent
 solution	I-Reagent
 is	O
-dissolved (heat	B-Action
-solution	B-Reagent
-if	O
+dissolved	B-Action
+(	O
+heat	B-Action
+solution	I-Action
+if	B-Reagent
 not	O
-dissolved),	B-Modifier
+dissolved	B-Modifier
+)	I-Modifier
+,	O
 add	B-Action
-60	B-Amount
-µl	I-Amount
-of	O
+60	I-Action
+µl	B-Amount
+of	I-Amount
 Solution	B-Reagent
-C1(This	I-Reagent
-solution	I-Reagent
-contains	O
-SDS	B-Reagent
-needed	O
+C1	I-Reagent
+(	I-Reagent
+This	O
+solution	B-Reagent
+contains	I-Reagent
+SDS	I-Reagent
+needed	I-Reagent
 for	O
 cell	B-Reagent
-lysis).	B-Method
+lysis	I-Reagent
+)	B-Method
+.	O
 
-Secure PowerSoil	B-Action
-tubes	B-Location
-in	O
+Secure	B-Action
+PowerSoil	B-Location
+tubes	I-Location
+in	I-Location
 FastPrep	B-Device
 Bead	I-Device
-Beater.
-	I-Device
+Beater	I-Device
+.	I-Device
 
 Beat	B-Action
 bead	B-Location
@@ -96,10 +109,13 @@ setting	O
 6	B-Numerical
 for	O
 30	B-Time
-s(Modified	I-Time
+s	I-Time
+(	O
+Modified	B-Modifier
 from	O
 MoBio	B-Method
-protocol,	O
+protocol	O
+,	O
 helps	O
 to	O
 facilitate	B-Action
@@ -107,35 +123,48 @@ bead	I-Action
 beating	I-Action
 and	O
 lysis	B-Reagent
-tissues).	I-Reagent
+tissues	I-Reagent
+)	O
+.	O
 
 DNA	B-Reagent
-EXTRACTION (modified	B-Method
-from	O
+EXTRACTION	B-Method
+(	I-Method
+modified	B-Modifier
+from	I-Modifier
 the	O
-MoBio PowerSoil	B-Device
-Kit).
-	I-Device
+MoBio	B-Device
+PowerSoil	I-Device
+Kit	I-Device
+)	I-Device
+.	I-Device
 
 For	O
 each	O
 sample	B-Reagent
 label	B-Action
-(1)	O
+(	O
+1	O
+)	O
 BeadBeating	B-Location
-tube,	I-Location
-(4)	O
+tube	I-Location
+,	O
+(	O
+4	O
+)	O
 2	B-Amount
 mL	I-Amount
 collection	B-Location
 tubes	I-Location
 and	O
-(1)	O
-Spin.
-	B-Action
+(	O
+1	O
+)	O
+Spin	B-Action
+.	O
 
-Filter.
-	B-Action
+Filter	B-Action
+.	O
 
 Extract	B-Action
 up	B-Modifier
@@ -143,24 +172,28 @@ to	I-Modifier
 24	B-Numerical
 samples	B-Reagent
 at	B-Modifier
-once,	I-Modifier
+once	I-Modifier
+,	O
 randomize	B-Action
 the	O
 samples	B-Reagent
 extracted	B-Modifier
 across	O
-the experiment	O
-design.
-	O
+the	O
+experiment	O
+design	O
+.	O
 
-Finally,	B-Modifier
-extract sample	B-Action
-blanks	B-Reagent
-to	O
+Finally	B-Modifier
+,	O
+extract	B-Action
+sample	B-Reagent
+blanks	I-Reagent
+to	I-Reagent
 test	B-Action
-for	O
-contamination.
-	B-Method
+for	I-Action
+contamination	B-Method
+.	I-Method
 
 Secure	B-Action
 PowerBead	B-Location
@@ -168,33 +201,37 @@ tubes	I-Location
 to	O
 MoBio	B-Device
 Vortex	I-Device
-Adaptor,	I-Device
+Adaptor	I-Device
+,	O
 vortex	B-Action
 at	O
 max	B-Speed
 speed	I-Speed
 for	O
 10	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Centrifuge	B-Action
 tubes	B-Location
 at	O
 10,000	B-Speed
 g	I-Speed
-(no	O
+(	O
+no	O
 more	O
 or	O
 tubes	B-Location
 may	O
-break)	O
+break	O
+)	O
 for	O
 30	B-Time
 seconds	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Make	O
 sure	O
@@ -204,27 +241,31 @@ spin	B-Action
 freely	B-Modifier
 in	O
 the	O
-centrifuge.
-	B-Device
+centrifuge	B-Device
+.	O
 
 Transfer	B-Action
-supernatant to	B-Reagent
+supernatant	B-Reagent
+to	O
 a	O
 clean	B-Modifier
 pre-labeled	I-Modifier
-2	B-Amount
-mL	I-Amount
-collection	B-Location
-tube	I-Location
-(expect	O
+2	I-Modifier
+mL	B-Amount
+collection	I-Amount
+tube	B-Location
+(	I-Location
+expect	O
 bewteen	B-Modifier
-400	B-Amount
-µL	I-Amount
+400	I-Modifier
+µL	B-Amount
 and	I-Amount
 500	I-Amount
 µL	I-Amount
-of	O
-supernatant).	B-Reagent
+of	I-Amount
+supernatant	B-Reagent
+)	I-Reagent
+.	O
 
 Add	B-Action
 250	B-Amount
@@ -236,22 +277,25 @@ and	O
 vortex	B-Action
 for	O
 5	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Incubate	B-Action
 at	O
 4°C	B-Temperature
 for	O
 5	B-Time
-minutes(Solution	I-Time
-C2	B-Reagent
+minutes	I-Time
+(	O
+Solution	B-Reagent
+C2	I-Reagent
 is	O
 an	O
 inhibitor	B-Reagent
 removal	I-Reagent
-reagent).
-	I-Reagent
+reagent	I-Reagent
+)	O
+.	O
 
 Centrifuge	B-Action
 tubes	B-Location
@@ -263,30 +307,38 @@ for	O
 minute	I-Time
 at	O
 10,000	B-Speed
-g.	I-Speed
+g	I-Speed
+.	I-Speed
 
 Avoiding	B-Action
 the	O
-pellet,	B-Reagent
-transfer up	B-Action
-to	B-Modifier
-600	B-Amount
-µL	I-Amount
-of	O
-supernatant	B-Reagent
-to	O
-a	O
-clean,	B-Modifier
-pre-labeled	I-Modifier
-2	B-Amount
-ml	I-Amount
-collection	B-Location
-tube(the	I-Location
 pellet	B-Reagent
-does	O
+,	O
+transfer	B-Action
+up	B-Modifier
+to	I-Modifier
+600	I-Modifier
+µL	B-Amount
+of	I-Amount
+supernatant	B-Reagent
+to	I-Reagent
+a	O
+clean	B-Modifier
+,	I-Modifier
+pre-labeled	I-Modifier
+2	I-Modifier
+ml	B-Amount
+collection	I-Amount
+tube	B-Location
+(	I-Location
+the	O
+pellet	B-Reagent
+does	I-Reagent
 not	O
 contain	O
-DNA).	B-Reagent
+DNA	B-Reagent
+)	I-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -296,22 +348,25 @@ solution	B-Reagent
 C3	I-Reagent
 and	O
 vortex	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Incubate	B-Action
 at	O
 4°C	B-Temperature
 for	O
 5	B-Time
-minutes(Solution	I-Time
-C3	B-Reagent
+minutes	I-Time
+(	O
+Solution	B-Reagent
+C3	I-Reagent
 is	O
 an	O
 inhibitor	B-Reagent
 removal	I-Reagent
-reagent).
-	I-Reagent
+reagent	I-Reagent
+)	O
+.	O
 
 Centrigue	B-Action
 the	O
@@ -324,11 +379,13 @@ for	O
 minute	I-Time
 at	O
 10,000	B-Speed
-g.	I-Speed
+g	I-Speed
+.	O
 
 Avoiding	B-Action
 the	O
-pellet,	B-Reagent
+pellet	B-Reagent
+,	O
 transfer	B-Action
 up	B-Modifier
 to	I-Modifier
@@ -338,19 +395,22 @@ of	O
 supernatant	B-Reagent
 to	O
 a	O
-clean,	B-Modifier
-pre-labled	I-Modifier
+clean	B-Modifier
+,	O
+pre-labled	B-Modifier
 2	B-Amount
 ml	I-Amount
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
-(Pellet	B-Reagent
+(	O
+Pellet	B-Reagent
 does	O
 not	O
 contain	O
-DNA)	B-Reagent
+DNA	B-Reagent
+)	O
 Centrifuge	B-Action
 tubes	B-Location
 at	O
@@ -358,9 +418,11 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 1	B-Time
-minute at	I-Time
+minute	I-Time
+at	O
 10,000	B-Speed
-g.	I-Speed
+g	I-Speed
+.	I-Speed
 
 Transfer	B-Action
 750	B-Amount
@@ -369,23 +431,29 @@ of	O
 supernatant	B-Location
 to	O
 a	O
-clean,	B-Modifier
-pre-labeled	I-Modifier
+clean	B-Modifier
+,	O
+pre-labeled	B-Modifier
 2	B-Amount
 ml	I-Amount
 collection	B-Location
-tube(Pellet	I-Location
+tube	I-Location
+(	O
+Pellet	B-Reagent
 does	O
 not	O
 contain	O
-DNA).	B-Reagent
+DNA	B-Reagent
+)	O
+.	O
 
 Shake	B-Action
 to	O
 mix	B-Action
 the	O
 Solution	B-Reagent
-C4,	I-Reagent
+C4	I-Reagent
+,	O
 add	B-Action
 1.2	B-Amount
 mL	I-Amount
@@ -398,10 +466,11 @@ and	O
 vortex	B-Action
 for	O
 5	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
-(C4	B-Reagent
+(	O
+C4	B-Reagent
 is	O
 a	O
 high	B-Modifier
@@ -416,7 +485,8 @@ DNA	B-Reagent
 to	O
 the	O
 spin	B-Device
-filter)	I-Device
+filter	I-Device
+)	O
 
 Load	B-Action
 approximately	B-Modifier
@@ -424,23 +494,25 @@ approximately	B-Modifier
 µL	I-Amount
 of	O
 the	O
-supernatant and	B-Reagent
-solution	I-Reagent
-onto	O
-a	O
-spin filter	B-Device
+supernatant	B-Reagent
 and	O
+solution	B-Reagent
+onto	I-Reagent
+a	O
+spin	B-Device
+filter	I-Device
+and	I-Device
 centrifuge	B-Action
-at	O
+at	I-Action
 10,000	B-Speed
 g	I-Speed
-for	O
-1	B-Time
-minute	I-Time
-at	O
+for	I-Speed
+1	O
+minute	B-Time
+at	I-Time
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	I-Temperature
 
 Discard	B-Action
 flow	B-Reagent
@@ -456,36 +528,39 @@ supernatant	B-Reagent
 to	O
 the	O
 spin	B-Device
-filter,	I-Device
+filter	I-Device
+,	O
 centrifuge	B-Action
 at	O
 10,000	B-Speed
 g	I-Speed
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
-Load remaining	B-Action
-supernatant	B-Reagent
-on	O
+Load	B-Action
+remaining	B-Modifier
+supernatant	I-Modifier
+on	B-Reagent
 to	O
 the	O
 spin	B-Device
 filter	I-Device
-and	O
+and	I-Device
 centrifuge	B-Action
-at	O
+at	I-Action
 10,000	B-Speed
 g	I-Speed
-for	O
-1	B-Time
-minute,	I-Time
+for	I-Speed
+1	O
+minute	B-Time
+,	I-Time
 discard	B-Action
-the	O
+the	I-Action
 flow	B-Reagent
-through.
-	I-Reagent
+through	I-Reagent
+.	I-Reagent
 
 The	O
 DNA	B-Reagent
@@ -499,15 +574,16 @@ spin	B-Device
 filter	I-Device
 and	O
 the	O
-contaminants should	B-Reagent
+contaminants	B-Reagent
+should	I-Reagent
 be	O
 passed	B-Action
 through	I-Action
-the	O
+the	I-Action
 filter	B-Device
-and	O
-discarded.
-	B-Action
+and	I-Device
+discarded	B-Action
+.	I-Action
 
 Add	B-Action
 500	B-Amount
@@ -525,7 +601,8 @@ for	O
 seconds	I-Time
 at	O
 10,000	B-Speed
-g.	I-Speed
+g	I-Speed
+.	I-Speed
 
 Discard	B-Action
 the	O
@@ -536,9 +613,11 @@ an	O
 appropriate	B-Modifier
 waste	B-Location
 container	I-Location
-(for	O
-ethanol).
-	B-Reagent
+(	O
+for	O
+ethanol	B-Reagent
+)	O
+.	O
 
 This	B-Mention
 is	O
@@ -554,8 +633,8 @@ is	O
 bound	B-Action
 to	O
 the	O
-membrane.
-	B-Location
+membrane	B-Location
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -570,26 +649,29 @@ for	O
 minute	I-Time
 at	O
 10,000	B-Speed
-g. 
-	I-Speed
+g	I-Speed
+.	I-Speed
 
 This	O
 spin	B-Action
 removes	O
 residual	B-Modifier
 Solution	B-Reagent
-C5,	I-Reagent
+C5	I-Reagent
+,	O
 which	O
 is	O
-important because	O
+important	O
+because	O
 ethanol	B-Reagent
-can	O
+can	I-Reagent
 inhibit	B-Action
-PCR	B-Method
-and	O
+PCR	I-Action
+and	B-Method
 other	O
 downstream	O
-applications.	O
+applications	O
+.	O
 
 Carefully	B-Modifier
 place	B-Action
@@ -603,8 +685,8 @@ clean	I-Modifier
 2	B-Amount
 ml	I-Amount
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Do	O
 not	O
@@ -613,8 +695,10 @@ Solution	B-Reagent
 C5	I-Reagent
 onto	O
 the	O
-filter!!!
-	B-Device
+filter	B-Device
+!	O
+!	O
+!	O
 
 Add	B-Action
 100	B-Amount
@@ -638,8 +722,8 @@ for	O
 seconds	I-Time
 at	O
 10,000	B-Speed
-g. 
-	I-Speed
+g	I-Speed
+.	O
 
 Solution	B-Reagent
 C6	I-Reagent
@@ -657,10 +741,11 @@ from	O
 the	O
 spin	B-Location
 filter	I-Location
-membrane.
-	I-Location
+membrane	I-Location
+.	O
 
-Therefore,	O
+Therefore	O
+,	O
 after	O
 the	O
 spin	B-Action
@@ -674,8 +759,8 @@ in	O
 the	O
 2	B-Amount
 ml	I-Amount
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 You	O
 can	O
@@ -687,7 +772,8 @@ using	O
 water	B-Reagent
 or	O
 TE	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Discard	B-Action
 the	O
@@ -700,51 +786,55 @@ at	O
 -20°C	B-Temperature
 until	O
 further	O
-processing.
-	B-Action
+processing	B-Action
+.	O
 
 When	O
 ready	O
 proceed	B-Action
 to	O
 next	O
-step.
-	O
+step	O
+.	O
 
 This	O
 is	O
 a	O
-potential stopping	O
-point in	O
+potential	O
+stopping	O
+point	O
+in	O
 the	O
-protocol.
-	O
+protocol	O
+.	O
 
-PCR AMPLIFICATION	B-Method
-for	O
-generation	B-Method
-of	O
+PCR	B-Method
+AMPLIFICATION	I-Method
+for	I-Method
+generation	I-Method
+of	I-Method
 16s	B-Reagent
-libraries.
-	I-Reagent
+libraries	I-Reagent
+.	I-Reagent
 
 This	O
 protocol	O
-assumes 96	B-Numerical
+assumes	O
+96	B-Numerical
 or	I-Numerical
 more	I-Numerical
-samples	B-Reagent
-are	O
+samples	I-Numerical
+are	B-Reagent
 being	O
 processed	B-Action
-at	O
+at	I-Action
 the	O
 same	O
 time	O
 using	O
 PCR	B-Location
-plates.
-	I-Location
+plates	I-Location
+.	I-Location
 
 Adjust	B-Action
 accordingly	O
@@ -753,8 +843,8 @@ this	O
 is	O
 not	O
 the	O
-case.
-	O
+case	O
+.	O
 
 Array	B-Action
 extracted	B-Modifier
@@ -766,14 +856,16 @@ plates	I-Location
 according	O
 to	O
 a	O
-detailed plate	B-Modifier
-map	B-Method
-design.
-	I-Method
+detailed	B-Modifier
+plate	B-Method
+map	I-Method
+design	I-Method
+.	I-Method
 
-The plate	B-Device
+The	O
+plate	B-Device
 map	I-Device
-should	O
+should	I-Device
 indicate	O
 the	O
 sample	O
@@ -781,8 +873,8 @@ ID	O
 and	O
 barcodes	O
 being	O
-used.
-	O
+used	O
+.	O
 
 This	O
 is	O
@@ -792,29 +884,33 @@ it	O
 is	O
 needed	O
 to	O
-bioinformatically determine	B-Modifier
-which	O
+bioinformatically	B-Modifier
+determine	I-Modifier
+which	B-Action
 sequences	B-Reagent
-belongs	O
+belongs	I-Reagent
 to	O
 which	O
 samples	B-Reagent
-after	O
+after	I-Reagent
 receiving	O
 data	O
 from	O
 the	O
-facility.
-	O
+facility	O
+.	O
 
 Make	O
 sure	O
 to	O
 randomize	B-Action
-the DNA	B-Reagent
+the	O
+DNA	B-Reagent
 samples	I-Reagent
-across the plates.
-	B-Location
+across	I-Reagent
+the	O
+plates	B-Location
+.	I-Location
 
 Note	O
 this	O
@@ -830,29 +926,30 @@ and	O
 the	O
 reverse	O
 barcodes	O
-SA701-SA712.
-	O
+SA701-SA712	O
+.	O
 
 Store	B-Action
 DNA	B-Location
 template	I-Location
 plates	I-Location
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
-Reconstitute primers	B-Action
-to	O
+Reconstitute	B-Action
+primers	B-Reagent
+to	I-Reagent
 100	B-Concentration
 µM	I-Concentration
-in	O
+in	I-Concentration
 original	B-Modifier
-primer	B-Location
-tubes	I-Location
-in	O
+primer	I-Modifier
+tubes	B-Location
+in	I-Location
 Hyclone	B-Reagent
-water.
-	I-Reagent
+water	I-Reagent
+.	I-Reagent
 
 After	O
 allowing	O
@@ -861,11 +958,12 @@ to	O
 sit	B-Action
 overnight	B-Time
 at	O
-4°C,	B-Temperature
+4°C	B-Temperature
+,	O
 store	B-Action
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
 Dilute	B-Action
 a	O
@@ -887,8 +985,8 @@ a	O
 2	B-Amount
 mL	I-Amount
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Make	O
 sure	O
@@ -900,47 +998,51 @@ to	O
 array	B-Action
 across	O
 primer	B-Location
-plates.
-	I-Location
+plates	I-Location
+.	O
 
-Depending how	O
+Depending	O
+how	O
 many	O
 samples	B-Reagent
-are	O
+are	I-Reagent
 going	O
 to	O
 be	O
-multiplex,	B-Action
+multiplex	B-Action
+,	I-Action
 you	O
 may	O
 need	O
 to	O
 make	B-Action
-several	B-Numerical
-plates.
-	B-Location
+several	I-Action
+plates	B-Numerical
+.	B-Location
 
 It	O
 is	O
-important each	B-Modifier
-primer	B-Reagent
-combo	I-Reagent
-is	O
+important	O
+each	B-Modifier
+primer	I-Modifier
+combo	B-Reagent
+is	I-Reagent
 only	O
 used	B-Action
-once	B-Numerical
-across	O
+once	I-Action
+across	B-Numerical
 the	O
 entire	O
-study,	O
+study	O
+,	O
 therefore	O
 primer	B-Location
 plates	I-Location
-should	O
+should	I-Location
 be	O
 designed	B-Action
-carefully.
-	B-Modifier
+carefully	I-Action
+.	B-Modifier
 
 The	O
 forward	O
@@ -951,12 +1053,16 @@ arrayed	B-Action
 across	O
 the	O
 ROWS	B-Location
-(i.e.,	O
-A-H)	O
+(	O
+i.e.	O
+,	O
+A-H	O
+)	O
 of	O
 the	O
 primer	B-Location
-plates,	I-Location
+plates	I-Location
+,	O
 while	O
 the	O
 reverse	O
@@ -967,13 +1073,16 @@ arrayed	B-Action
 across	O
 the	O
 COLUMNS	B-Location
-(i.e.,	O
-1-12)	O
+(	O
+i.e.	O
+,	O
+1-12	O
+)	O
 of	O
 the	O
 primer	B-Location
-plates.
-	I-Location
+plates	I-Location
+.	O
 
 Using	B-Action
 the	O
@@ -986,7 +1095,8 @@ to	O
 avoid	O
 cross-contaminating	B-Action
 PCR	B-Reagent
-primers,	I-Reagent
+primers	I-Reagent
+,	O
 array	B-Action
 20	B-Amount
 µL	I-Amount
@@ -1004,18 +1114,22 @@ plate	I-Location
 based	O
 on	O
 a	O
-detailed primer	B-Modifier
-map	B-Device
-that	O
-corresponds to	O
-the	O
-DNA	B-Device
-template	I-Device
+detailed	B-Modifier
+primer	B-Device
 map	I-Device
-(see	O
+that	I-Device
+corresponds	O
+to	O
+the	O
+DNA	O
+template	B-Device
+map	I-Device
+(	I-Device
+see	I-Device
 example	O
-above).
-	O
+above	O
+)	O
+.	O
 
 After	O
 adding	B-Action
@@ -1023,7 +1137,8 @@ the	O
 forward	B-Reagent
 and	O
 reverse	B-Reagent
-primers,	I-Reagent
+primers	I-Reagent
+,	O
 mix	B-Action
 the	O
 contents	B-Reagent
@@ -1033,8 +1148,8 @@ well	B-Location
 using	O
 a	O
 pipet	B-Location
-tip.
-	I-Location
+tip	I-Location
+.	O
 
 The	O
 primer	B-Location
@@ -1043,10 +1158,11 @@ should	O
 be	O
 stored	B-Action
 at	O
--20°C.
-	B-Temperature
+-20°C	B-Temperature
+.	O
 
-Warning:	O
+Warning	O
+:	O
 it	O
 is	O
 essential	O
@@ -1055,8 +1171,8 @@ avoid	O
 contaminating	B-Action
 the	O
 primer	B-Reagent
-stocks.
-	I-Reagent
+stocks	I-Reagent
+.	O
 
 Make	O
 sure	O
@@ -1070,21 +1186,25 @@ arraying	B-Action
 and	O
 mixing	B-Action
 the	O
-primers.
-	B-Reagent
+primers	B-Reagent
+.	O
 
-PCR Amplifications.
-	B-Method
+PCR	B-Method
+Amplifications	I-Method
+.	I-Method
 
 Defrost	B-Action
 PCR	B-Reagent
 reagents	I-Reagent
-(NEB	I-Reagent
+(	O
+NEB	B-Reagent
 Q5	I-Reagent
 HiFidelity	I-Reagent
 Master	I-Reagent
-Mix),	I-Reagent
-primers	I-Reagent
+Mix	I-Reagent
+)	O
+,	O
+primers	B-Reagent
 and	O
 DNA	B-Reagent
 samples	I-Reagent
@@ -1092,11 +1212,14 @@ and	O
 label	B-Action
 PCR	B-Location
 plate	I-Location
-(e.g.,	O
+(	O
+e.g.	O
+,	O
 PCR	B-Location
 plate	I-Location
-I).
-	I-Location
+I	I-Location
+)	O
+.	O
 
 To	O
 minimize	B-Action
@@ -1104,12 +1227,14 @@ basis	O
 introduced	O
 during	O
 PCR	B-Reagent
-reactions,	I-Reagent
+reactions	I-Reagent
+,	O
 run	B-Action
 PCR	B-Reagent
 reactions	I-Reagent
 in	O
-triplicate,	O
+triplicate	O
+,	O
 so	O
 for	O
 each	O
@@ -1121,55 +1246,61 @@ plates	B-Location
 using	O
 the	O
 same	O
-chemistry.
-	O
+chemistry	O
+.	O
 
 If	O
-able,	O
+able	O
+,	O
 run	B-Action
 PCR	B-Location
 plates	I-Location
 at	O
 the	O
 same	O
-time.
-	O
+time	O
+.	O
 
 In	O
-a 2	B-Amount
-ml	I-Amount
-collection	B-Location
-tubes,	I-Location
+a	O
+2	O
+ml	B-Amount
+collection	I-Amount
+tubes	B-Location
+,	I-Location
 mix	B-Action
-together	O
+together	I-Action
 12.5	B-Amount
 µL	I-Amount
-of	O
+of	I-Amount
 the	O
-NEB Q5 HiFidelity	B-Reagent
+NEB	B-Reagent
+Q5	I-Reagent
+HiFidelity	I-Reagent
 Master	I-Reagent
 Mix	I-Reagent
-and	O
-8.5	B-Amount
-µL	I-Amount
-of	O
-HyClone	B-Reagent
-water	I-Reagent
-for	O
+and	I-Reagent
+8.5	O
+µL	B-Amount
+of	I-Amount
+HyClone	I-Amount
+water	B-Reagent
+for	I-Reagent
 each	O
-25	B-Amount
-µl	I-Amount
-PCR	B-Reagent
-reaction.
-	I-Reagent
+25	O
+µl	O
+PCR	B-Amount
+reaction	B-Reagent
+.	I-Reagent
 
-Vortex.
-	B-Action
+Vortex	B-Action
+.	O
 
 Using	O
 a	O
 multi-channel	B-Location
-pipet,	I-Location
+pipet	I-Location
+,	O
 array	B-Action
 1.5	B-Amount
 µl	I-Amount
@@ -1189,7 +1320,8 @@ map	I-Device
 Using	O
 a	O
 multi-channel	B-Location
-pipet,	I-Location
+pipet	I-Location
+,	O
 array	B-Action
 21	B-Amount
 µl	I-Amount
@@ -1203,28 +1335,31 @@ well	B-Location
 of	O
 the	O
 PCR	B-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Using	O
 a	O
 multi-channel	B-Location
-pipett,	I-Location
+pipett	I-Location
+,	O
 array	B-Action
 2.5	B-Amount
 µl	I-Amount
 of	O
 each	O
-sample DNA	B-Reagent
-into	O
+sample	B-Reagent
+DNA	I-Reagent
+into	I-Reagent
 the	O
 PCR	B-Location
 plate	I-Location
-according	O
+according	I-Location
 to	O
 the	O
 plate	B-Device
-map.
-	I-Device
+map	I-Device
+.	I-Device
 
 Make	B-Action
 sure	I-Action
@@ -1236,15 +1371,17 @@ one	B-Numerical
 well	B-Location
 of	O
 the	O
-plate.
-	B-Location
+plate	B-Location
+.	O
 
-**Note:	O
+**Note	O
+:	O
 DNA	B-Reagent
 amount	O
 can	O
 be	O
-altered,	O
+altered	O
+,	O
 but	O
 you	O
 will	O
@@ -1278,8 +1415,8 @@ is	O
 25	B-Amount
 µl	I-Amount
 in	O
-volume.
-	B-Measure-Type
+volume	B-Measure-Type
+.	O
 
 Seal	B-Action
 PCR	B-Location
@@ -1295,8 +1432,8 @@ PCR	B-Location
 plate	I-Location
 to	O
 mix	B-Action
-contents.
-	B-Reagent
+contents	B-Reagent
+.	O
 
 Spin	B-Action
 PCR	B-Location
@@ -1310,75 +1447,94 @@ the	O
 bottom	B-Location
 of	O
 each	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Plate	B-Action
 PCR	B-Location
 plate	I-Location
 into	O
-thrermocycler.
-	B-Device
+thrermocycler	B-Device
+.	O
 
 Set	B-Action
 up	I-Action
 and	O
 run	B-Action
 following	O
-protocol:
-	O
+protocol	O
+:	O
 
 Select	B-Action
-Hot.
-	O
+Hot	O
+.	O
 
 Start	B-Action
 for	O
 Taq	B-Reagent
 at	O
-98°C.
-	B-Temperature
+98°C	B-Temperature
+.	O
 
 Step	O
-1:	O
+1	O
+:	O
 (	O
 initial	B-Modifier
-denaturation)	B-Method
-98°C,	B-Temperature
+denaturation	B-Method
+)	O
+98°C	B-Temperature
+,	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Step	O
-2:	O
+2	O
+:	O
 30	B-Generic-Measure
 Cycles	I-Generic-Measure
 of	O
-(denaturation)	B-Method
+(	O
+denaturation	B-Method
+)	O
 98°C	B-Temperature
 10	B-Time
-seconds, (primer	I-Time
-annealing)	B-Action
+seconds	I-Time
+,	O
+(	O
+primer	B-Action
+annealing	I-Action
+)	I-Action
 55°C	B-Temperature
-30	B-Time
-seconds, (extentsion)	I-Time
-72°C	B-Temperature
-30	B-Time
-seconds.
-	I-Time
+30	I-Temperature
+seconds	B-Time
+,	I-Time
+(	O
+extentsion	B-Method
+)	I-Method
+72°C	I-Method
+30	B-Temperature
+seconds	B-Time
+.	I-Time
 
 Step	O
-3:	O
-(extension)	B-Method
+3	O
+:	O
+(	O
+extension	B-Method
+)	O
 72°C	B-Temperature
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Step	O
-4:	O
+4	O
+:	O
 4°C	B-Temperature
-Hold.	B-Action
+Hold	B-Action
+.	O
 
 Check	B-Action
 random	O
@@ -1392,7 +1548,8 @@ them	B-Mention
 out	O
 on	O
 a	O
-1.5%	B-Concentration
+1.5	B-Concentration
+%	I-Concentration
 Agarose	B-Reagent
 gel	I-Reagent
 and	O
@@ -1407,39 +1564,43 @@ to	O
 check	B-Action
 for	O
 PCR	B-Reagent
-bands.
-	I-Reagent
+bands	I-Reagent
+.	O
 
 Store	B-Action
 PCR	B-Reagent
 products	I-Reagent
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
-Briefly, to	B-Modifier
+Briefly	B-Modifier
+,	O
+to	O
 make	B-Action
-a	O
+a	I-Action
 1.5	B-Concentration
 %	I-Concentration
-agarose	B-Reagent
-gel,	I-Reagent
-dissolve 1.5	B-Action
+agarose	I-Concentration
+gel	B-Reagent
+,	I-Reagent
+dissolve	B-Action
+1.5	I-Action
 g	B-Amount
-of	O
+of	I-Amount
 aragose	B-Reagent
-in	O
-100	B-Amount
-ml	I-Amount
-of	O
-TBE	B-Reagent
-buffer	I-Reagent
-by	O
+in	I-Reagent
+100	O
+ml	B-Amount
+of	I-Amount
+TBE	O
+buffer	B-Reagent
+by	I-Reagent
 heating	B-Action
-solution	B-Reagent
-in	O
-microwave.
-	B-Device
+solution	I-Action
+in	B-Reagent
+microwave	B-Device
+.	I-Device
 
 Add	B-Action
 10	B-Amount
@@ -1455,14 +1616,15 @@ into	O
 gel	B-Location
 tray	I-Location
 with	O
-comb.
-	B-Device
+comb	B-Device
+.	O
 
 On	O
 a	O
 piece	B-Seal
 of	O
-parafilm,	B-Seal
+parafilm	B-Seal
+,	O
 mix	B-Action
 2	B-Amount
 µl	I-Amount
@@ -1475,14 +1637,14 @@ with	O
 µl	I-Amount
 of	O
 PCR	B-Reagent
-product.
-	I-Reagent
+product	I-Reagent
+.	O
 
 Load	B-Action
 mixture	B-Reagent
 onto	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Load	B-Action
 5-10	B-Amount
@@ -1496,8 +1658,8 @@ onto	O
 gel	B-Reagent
 alongside	O
 PCR	B-Reagent
-products.
-	I-Reagent
+products	I-Reagent
+.	O
 
 Run	B-Action
 gel	B-Reagent
@@ -1506,8 +1668,8 @@ at	O
 V	I-Generic-Measure
 for	O
 30-40	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Visualize	B-Action
 using	O
@@ -1520,19 +1682,22 @@ check	B-Action
 for	O
 PCR	B-Reagent
 bands	I-Reagent
-between 300	B-Modifier
-and	B-Generic-Measure
-400 bp.
-	I-Generic-Measure
+between	B-Modifier
+300	B-Generic-Measure
+and	I-Generic-Measure
+400	I-Generic-Measure
+bp	I-Generic-Measure
+.	I-Generic-Measure
 
 This	O
 is	O
 a	O
-potential stopping	O
+potential	O
+stopping	O
 point	O
 in	O
-protocol.
-	O
+protocol	O
+.	O
 
 After	O
 all	O
@@ -1548,10 +1713,11 @@ forward	I-Action
 to	O
 cleaning	B-Action
 and	O
-normalizing your	B-Action
+normalizing	B-Action
+your	I-Action
 PCR	B-Reagent
-libraries.
-	I-Reagent
+libraries	I-Reagent
+.	I-Reagent
 
 If	O
 you	O
@@ -1560,7 +1726,8 @@ your	O
 PCR	B-Reagent
 libraries	I-Reagent
 in	O
-triplicate,	O
+triplicate	O
+,	O
 pool	B-Action
 replicate	B-Reagent
 sample	I-Reagent
@@ -1570,32 +1737,39 @@ products	I-Reagent
 PCR	B-Method
 PURIFICATION	I-Method
 AND	O
-NORMALIZATION.
-	B-Method
+NORMALIZATION	B-Method
+.	O
 
 Using	B-Action
 Charm	B-Device
-Biotech,	I-Device
+Biotech	I-Device
+,	O
 Just-a-Plate	B-Location
 96	I-Location
 PCR	I-Location
-purification and	I-Location
+purification	I-Location
+and	I-Location
 normalization	I-Location
-plates.
-	I-Location
+plates	I-Location
+.	I-Location
 
 Following	O
 the	O
-manufacture's protocol.
-	O
+manufacture's	O
+protocol	O
+.	O
 
 Before	O
-starting,	O
+starting	O
+,	O
 to	O
 prepare	B-Action
 washing	B-Reagent
 buffer	I-Reagent
-(WB2),	I-Reagent
+(	O
+WB2	B-Reagent
+)	O
+,	O
 add	B-Action
 19.2	B-Amount
 ml	I-Amount
@@ -1605,14 +1779,14 @@ of	O
 Ethanol	B-Reagent
 and	O
 mix	B-Action
-well.
-	B-Modifier
+well	B-Modifier
+.	O
 
 Store	B-Action
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Make	B-Action
 sure	I-Action
@@ -1623,31 +1797,35 @@ of	O
 pipet	B-Location
 tips	I-Location
 on	O
-hand,	O
+hand	O
+,	O
 kimwipes	B-Location
 or	O
-absorbent paper,	B-Location
+absorbent	B-Location
+paper	I-Location
+,	I-Location
 multichannel	I-Location
 pipet	I-Location
-and	O
+and	I-Location
 sterile	B-Modifier
-multichannel	B-Location
-liquid	I-Location
-well.
-	I-Location
+multichannel	I-Modifier
+liquid	B-Location
+well	I-Location
+.	I-Location
 
 Bind	B-Action
 PCR	B-Reagent
 products	I-Reagent
 to	O
 plate	B-Location
-wells.
-	I-Location
+wells	I-Location
+.	O
 
 Using	O
 a	O
 multichannel	B-Location
-pipet,	I-Location
+pipet	I-Location
+,	O
 transfer	B-Action
 20	B-Amount
 µl	I-Amount
@@ -1662,14 +1840,15 @@ and	O
 place	B-Action
 into	O
 corresponding	O
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Mix	B-Action
 binding	B-Reagent
 buffer	I-Reagent
 in	O
-bottle,	B-Location
+bottle	B-Location
+,	O
 using	O
 a	O
 multichannel	B-Location
@@ -1683,8 +1862,8 @@ binding	B-Reagent
 buffer	I-Reagent
 into	O
 each	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Mix	B-Action
 with	O
@@ -1696,16 +1875,17 @@ up	B-Method
 and	I-Method
 down	I-Method
 5-6	B-Numerical
-times.
-	O
+times	O
+.	O
 
 Use	B-Action
-separate pipet	B-Location
+separate	O
+pipet	B-Location
 tip	I-Location
-for	O
+for	I-Location
 each	O
-well.
-	B-Location
+well	B-Location
+.	I-Location
 
 Seal	B-Action
 the	O
@@ -1717,35 +1897,36 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30-60	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Remove	B-Action
 the	O
 plate	B-Seal
-cover.
-	I-Seal
+cover	I-Seal
+.	O
 
-Aspirate the	B-Action
+Aspirate	B-Action
+the	O
 liquid	B-Reagent
-from	O
+from	I-Reagent
 the	O
 plate	B-Location
-by	O
+by	I-Location
 quickly	B-Modifier
-flipping	B-Action
-the	O
+flipping	I-Modifier
+the	B-Action
 plate	B-Location
-upside	O
+upside	I-Location
 down	O
 over	O
 a	O
 waster	B-Location
 container	I-Location
-and	O
+and	I-Location
 shaking	B-Action
-vigorously.
-	B-Modifier
+vigorously	I-Action
+.	B-Modifier
 
 Then	O
 flip	B-Action
@@ -1756,8 +1937,11 @@ a	O
 clean	B-Modifier
 absorbent	B-Location
 paper	I-Location
-(i.e.,	O
-kimwipe)	B-Location
+(	O
+i.e.	O
+,	O
+kimwipe	B-Location
+)	O
 and	O
 tap	B-Action
 three	B-Numerical
@@ -1766,15 +1950,15 @@ four	B-Numerical
 times	O
 to	O
 remove	B-Action
-liquid.
-	B-Reagent
+liquid	B-Reagent
+.	O
 
 Move	B-Action
 onto	I-Action
 the	O
 washing	B-Action
-step.
-	O
+step	O
+.	O
 
 Your	O
 PCR	B-Reagent
@@ -1789,12 +1973,13 @@ walls	B-Location
 of	O
 the	O
 normalization	B-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Wash	B-Action
 PCR	B-Reagent
-Products.
-	I-Reagent
+Products	I-Reagent
+.	O
 
 Add	B-Action
 50	B-Amount
@@ -1804,8 +1989,8 @@ wash	B-Reagent
 buffer	I-Reagent
 to	O
 each	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Mix	B-Action
 solution	B-Reagent
@@ -1815,8 +2000,8 @@ up	B-Method
 and	I-Method
 down	I-Method
 1-2	B-Numerical
-times.
-	O
+times	O
+.	O
 
 incubate	B-Action
 plate	B-Location
@@ -1825,23 +2010,24 @@ for	O
 seconds	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
-Aspirate wash	B-Action
-buffer	B-Reagent
-from	O
+Aspirate	B-Action
+wash	B-Reagent
+buffer	I-Reagent
+from	I-Reagent
 the	O
 binding	B-Location
 plate	I-Location
-as	O
+as	I-Location
 done	O
 above	O
 for	O
 the	O
 binding	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	I-Reagent
 
 Repeat	B-Action
 these	O
@@ -1852,8 +2038,8 @@ a	O
 total	O
 of	O
 two	B-Numerical
-washes.
-	B-Action
+washes	B-Action
+.	O
 
 Air	B-Action
 dry	I-Action
@@ -1868,19 +2054,22 @@ at	O
 65°C	B-Temperature
 until	O
 dry	B-Modifier
-(2-4	B-Time
-minutes).
-	I-Time
+(	O
+2-4	B-Time
+minutes	I-Time
+)	O
+.	O
 
 Proceed	B-Action
 to	O
 elution	B-Method
-step.	O
+step	O
+.	O
 
 Eluting	B-Action
 PCR	B-Reagent
-Products.
-	I-Reagent
+Products	I-Reagent
+.	O
 
 Add	B-Action
 20-40	B-Amount
@@ -1889,7 +2078,8 @@ of	O
 an	O
 elution	B-Reagent
 buffer	I-Reagent
-(such	O
+(	O
+such	O
 as	O
 the	O
 PowerSoil	B-Reagent
@@ -1900,7 +2090,8 @@ C6	I-Reagent
 used	O
 during	O
 DNA	B-Reagent
-extraction)	B-Method
+extraction	B-Method
+)	O
 into	O
 each	O
 well	B-Location
@@ -1910,8 +2101,8 @@ plate	B-Location
 using	O
 a	O
 multichannel	B-Location
-pipet.
-	I-Location
+pipet	I-Location
+.	O
 
 Seal	B-Action
 plate	B-Location
@@ -1924,8 +2115,8 @@ and	O
 cortex	B-Action
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -1939,8 +2130,8 @@ the	O
 bottom	B-Location
 of	O
 the	O
-wells.
-	B-Location
+wells	B-Location
+.	O
 
 Store	B-Action
 cleaned	B-Modifier
@@ -1952,21 +2143,24 @@ at	O
 for	O
 short	B-Modifier
 term	I-Modifier
-storage or	B-Method
+storage	B-Method
+or	I-Method
 -20°C	B-Temperature
-for	O
+for	I-Temperature
 longer	B-Modifier
-storage.
-	B-Method
+storage	I-Modifier
+.	B-Method
 
 This	O
 is	O
 a	O
-potential stopping	O
-point.
-	O
+potential	O
+stopping	O
+point	O
+.	O
 
-OPTIONAL:	O
+OPTIONAL	O
+:	O
 Quantify	B-Action
 cleaned	B-Modifier
 and	O
@@ -1979,15 +2173,17 @@ AccuClear	B-Device
 dsDNA	I-Device
 quantification	I-Device
 kit	I-Device
-manufacture instructions.
-	O
+manufacture	O
+instructions	O
+.	O
 
 Pool	B-Action
 PCR	B-Reagent
 ProductsUsing	I-Reagent
 a	O
 multichannel	B-Location
-pipet,	I-Location
+pipet	I-Location
+,	O
 pool	B-Action
 PCR	B-Reagent
 products	I-Reagent
@@ -2004,8 +2200,8 @@ to	O
 a	O
 sterile	B-Modifier
 multichannel	B-Location
-well.
-	I-Location
+well	I-Location
+.	O
 
 Transfer	B-Action
 pooled	B-Modifier
@@ -2014,8 +2210,8 @@ to	O
 a	O
 2	B-Amount
 mL	I-Amount
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Purify	B-Action
 pooled	B-Modifier
@@ -2024,8 +2220,9 @@ using	O
 AMPure	B-Reagent
 XP	I-Reagent
 PCR	I-Reagent
-purification beads.
-	I-Reagent
+purification	I-Reagent
+beads	I-Reagent
+.	I-Reagent
 
 This	O
 step	O
@@ -2038,7 +2235,8 @@ primer	B-Reagent
 dimers	I-Reagent
 from	O
 pooled	B-Modifier
-library.	B-Reagent
+library	B-Reagent
+.	O
 
 Make	B-Action
 sure	I-Action
@@ -2046,14 +2244,16 @@ beads	B-Reagent
 are	O
 at	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 shake	B-Action
 beads	B-Reagent
 to	O
 re-suspend	B-Action
 any	O
 settled	B-Modifier
-particles.	B-Reagent
+particles	B-Reagent
+.	O
 
 Add	B-Action
 beads	B-Reagent
@@ -2061,15 +2261,18 @@ at	O
 a	O
 0.8	B-Generic-Measure
 ratio	I-Generic-Measure
-(~0.8	B-Modifier
-X)	B-Concentration
+(	O
+~0.8	B-Modifier
+X	B-Concentration
+)	O
 to	O
 pooled	B-Modifier
-library.
-	B-Reagent
+library	B-Reagent
+.	O
 
 For	O
-instance,	O
+instance	O
+,	O
 add	B-Action
 500	B-Amount
 µL	I-Amount
@@ -2081,29 +2284,34 @@ to	O
 µL	I-Amount
 of	O
 the	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
-room temperature	B-Temperature
-for	O
-5	B-Time
-minutes.	I-Time
+room	B-Temperature
+temperature	I-Temperature
+for	I-Temperature
+5	O
+minutes	B-Time
+.	I-Time
 
 Place	B-Action
-tube on	B-Location
+tube	B-Location
+on	I-Location
 magnetic	I-Location
 stand	I-Location
-for	O
-2	B-Time
-minutes,	I-Time
+for	I-Location
+2	O
+minutes	B-Time
+,	I-Time
 wait	B-Action
-until	O
+until	I-Action
 the	O
 solution	B-Reagent
-is	O
-clear.	B-Modifier
+is	I-Reagent
+clear	B-Modifier
+.	I-Modifier
 
 Aspirate	B-Action
 the	O
@@ -2115,18 +2323,20 @@ to	O
 not	O
 scrape	B-Action
 the	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Add	B-Action
 900	B-Amount
 µL	I-Amount
 of	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
 to	O
 the	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Incubate	B-Action
 at	O
@@ -2134,11 +2344,13 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Aspirate	B-Action
 the	O
-ethanol.	B-Reagent
+ethanol	B-Reagent
+.	O
 
 Preform	B-Action
 a	O
@@ -2147,8 +2359,9 @@ ethanol	B-Reagent
 wash	B-Action
 by	O
 repeating	B-Action
-steps 47-49.
-	O
+steps	O
+47-49	O
+.	O
 
 Dry	B-Action
 at	O
@@ -2163,14 +2376,16 @@ ethanol	B-Reagent
 is	O
 no	O
 longer	O
-visible.	B-Modifier
+visible	B-Modifier
+.	O
 
 Remove	B-Action
 tube	B-Location
 from	O
 the	O
 magnet	B-Location
-holder.	I-Location
+holder	I-Location
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -2184,20 +2399,21 @@ the	O
 DNA	B-Reagent
 from	O
 the	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 If	O
 a	O
 higher	B-Modifier
 concentration	B-Measure-Type
 is	O
-desired,	O
+desired	O
+,	O
 add	B-Action
 less	O
 TE	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Pipet	B-Action
 buffer	B-Reagent
@@ -2207,8 +2423,9 @@ down	I-Method
 ten	B-Numerical
 times	O
 to	O
-thoroughly mix.
-	B-Modifier
+thoroughly	B-Modifier
+mix	B-Action
+.	I-Action
 
 Place	B-Action
 tube	B-Location
@@ -2216,7 +2433,8 @@ on	O
 magnet	B-Device
 for	O
 1	B-Time
-minute.	I-Time
+minute	I-Time
+.	O
 
 Transfer	B-Action
 eluent	B-Reagent
@@ -2233,25 +2451,26 @@ facility	I-Location
 for	O
 QC	B-Measure-Type
 and	O
-analysis.
-	B-Method
+analysis	B-Method
+.	O
 
 Size	B-Action
 select	I-Action
 PCR	B-Reagent
-library.
-	I-Reagent
+library	I-Reagent
+.	O
 
 Using	B-Action
 the	O
 QIAquick	B-Device
 gel	I-Device
 extraction	I-Device
-kit,	I-Device
+kit	I-Device
+,	O
 cat	O
 #	O
-28704.
-	O
+28704	O
+.	O
 
 If	O
 the	O
@@ -2262,7 +2481,8 @@ the	O
 sequencing	B-Location
 facility	I-Location
 indicates	O
-there have	O
+there	O
+have	O
 multiple	O
 peaks	O
 not	O
@@ -2271,7 +2491,8 @@ to	O
 the	O
 target	B-Reagent
 amplicon	I-Reagent
-sequence,	I-Reagent
+sequence	I-Reagent
+,	I-Reagent
 it	O
 may	O
 be	O
@@ -2279,21 +2500,23 @@ necessary	O
 to	O
 size	B-Action
 select	I-Action
-the	O
-library.
-	B-Reagent
+the	I-Action
+library	B-Reagent
+.	I-Reagent
 
 This	O
 is	O
 often	O
 the	O
 case	O
-with obtaining 16s	B-Action
+with	O
+obtaining	B-Action
+16s	I-Action
 amplicon	B-Reagent
 sequences	I-Reagent
-from	O
-corals.
-	B-Reagent
+from	I-Reagent
+corals	I-Reagent
+.	I-Reagent
 
 Run	B-Action
 ~75	B-Modifier
@@ -2304,62 +2527,66 @@ pooled	B-Modifier
 library	B-Reagent
 on	O
 a	O
-2%	B-Concentration
+2	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
 for	O
 appoximately	B-Modifier
 1	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Make	O
 sure	O
 to	O
 include	B-Action
 a	O
-ladder.
-	B-Reagent
+ladder	B-Reagent
+.	O
 
 Excise	B-Action
 the	O
 target	B-Reagent
-amplicon band	I-Reagent
-from	O
-gel	B-Reagent
-with	O
+amplicon	I-Reagent
+band	I-Reagent
+from	I-Reagent
+gel	I-Reagent
+with	I-Reagent
 a	O
 razor	B-Device
 blade	I-Device
-and	O
+and	I-Device
 place	B-Action
-into	O
+into	I-Action
 a	O
 clean	B-Modifier
-15	B-Amount
-mL	I-Amount
-tube.
-	B-Location
+15	I-Modifier
+mL	B-Amount
+tube	I-Amount
+.	B-Location
 
 See	B-Action
 figure	O
 for	O
-comparison of	O
+comparison	O
+of	O
 gel	B-Reagent
-to	O
+to	I-Reagent
 determine	B-Action
-if	O
+if	I-Action
 there	O
 are	O
-multiple amplicons	B-Numerical
-in	O
-library.
-	B-Reagent
+multiple	B-Numerical
+amplicons	I-Numerical
+in	B-Reagent
+library	I-Reagent
+.	I-Reagent
 
 Obtain	B-Action
 gel	B-Measure-Type
-weight.
-	I-Measure-Type
+weight	I-Measure-Type
+.	O
 
 1	B-Amount
 g	I-Amount
@@ -2371,8 +2598,8 @@ to	O
 1	B-Amount
 mL	I-Amount
 in	O
-volume.
-	B-Measure-Type
+volume	B-Measure-Type
+.	O
 
 Add	B-Action
 3	B-Numerical
@@ -2384,8 +2611,8 @@ for	O
 1	B-Numerical
 volumn	B-Measure-Type
 of	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -2399,8 +2626,8 @@ the	O
 gel	B-Reagent
 is	O
 fully	B-Modifier
-dissolved.
-	I-Modifier
+dissolved	I-Modifier
+.	O
 
 Mix	B-Action
 by	O
@@ -2412,28 +2639,30 @@ to	O
 help	O
 dissolve	B-Action
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 After	O
 the	O
 gel	B-Reagent
 has	O
-dissolved,	B-Modifier
+dissolved	B-Modifier
+,	O
 check	B-Action
 the	O
 color	B-Modifier
 of	O
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 If	O
 it	B-Mention
 is	O
 orange	B-Modifier
 or	O
-violet,	B-Modifier
+violet	B-Modifier
+,	O
 at	O
 10	B-Amount
 µL	I-Amount
@@ -2444,8 +2673,8 @@ M	I-Concentration
 sodium	B-Reagent
 acetate	I-Reagent
 and	O
-mix.
-	B-Action
+mix	B-Action
+.	O
 
 Add	B-Action
 1	B-Numerical
@@ -2457,7 +2686,8 @@ to	O
 the	O
 sample	B-Reagent
 and	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Place	B-Action
 spin	B-Location
@@ -2468,13 +2698,14 @@ provided	O
 2	B-Amount
 mL	I-Amount
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 To	O
 bind	B-Action
 the	O
-DNA,	B-Reagent
+DNA	B-Reagent
+,	O
 apply	B-Action
 the	O
 sample	B-Reagent
@@ -2488,53 +2719,56 @@ for	O
 min	I-Time
 at	O
 10,000	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 Discard	B-Action
 the	O
 flow	B-Reagent
-through.
-	I-Reagent
+through	I-Reagent
+.	O
 
 The	O
 volume	B-Measure-Type
 of	O
 the	O
-collection tube	B-Location
-only	O
+collection	B-Location
+tube	I-Location
+only	I-Location
 holds	O
-~	B-Modifier
-800	B-Amount
-µL,	I-Amount
+~	O
+800	B-Modifier
+µL	B-Amount
+,	I-Amount
 so	O
 if	O
 the	O
 sample	B-Reagent
-is	O
+is	I-Reagent
 more	B-Modifier
 then	I-Modifier
-800	B-Amount
-µL	I-Amount
-spin	B-Action
-the	O
+800	I-Modifier
+µL	B-Amount
+spin	I-Amount
+the	B-Action
 sample	B-Reagent
-through	O
+through	I-Reagent
 the	O
 volumn	B-Measure-Type
-in	O
+in	I-Measure-Type
 800	B-Amount
 µL	I-Amount
-batches to	B-Reagent
+batches	I-Amount
+to	B-Reagent
 bind	B-Action
-all	O
+all	I-Action
 of	O
 the	O
-DNA	B-Reagent
-to	O
+DNA	O
+to	B-Reagent
 the	O
-column.
-	B-Location
+column	B-Location
+.	I-Location
 
 Add	B-Action
 0.5	B-Amount
@@ -2552,13 +2786,14 @@ for	O
 min	I-Time
 at	O
 10,000	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 To	O
 wash	B-Action
 the	O
-sample,	B-Reagent
+sample	B-Reagent
+,	O
 add	B-Action
 0.75	B-Amount
 mL	I-Amount
@@ -2575,14 +2810,14 @@ for	O
 min	I-Time
 at	O
 10,000	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 Discard	B-Action
 the	O
 flow	B-Reagent
-through.
-	I-Reagent
+through	I-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -2593,15 +2828,16 @@ additional	I-Time
 minute	I-Time
 at	O
 13,000	B-Speed
-rpm to	I-Speed
+rpm	I-Speed
+to	O
 ensure	B-Action
-there	O
+there	I-Action
 is	O
 no	O
 residual	B-Modifier
-Buffer	B-Reagent
-PE.
-	I-Reagent
+Buffer	I-Modifier
+PE	B-Reagent
+.	I-Reagent
 
 Place	B-Action
 the	O
@@ -2612,13 +2848,14 @@ new	B-Modifier
 2	B-Amount
 mL	I-Amount
 micro-centrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 To	O
 elute	B-Action
 the	O
-DNA,	B-Reagent
+DNA	B-Reagent
+,	O
 add	B-Action
 25	B-Amount
 µL	I-Amount
@@ -2639,8 +2876,8 @@ for	O
 min	I-Time
 at	O
 13,000	B-Speed
-rpm.
-	I-Speed
+rpm	I-Speed
+.	O
 
 Submit	B-Action
 the	O
@@ -2648,8 +2885,8 @@ library	B-Reagent
 to	O
 the	O
 sequencing	B-Location
-facility.
-	I-Location
+facility	I-Location
+.	O
 
 
 

@@ -8,14 +8,13 @@ using	O
 isotopic	B-Modifier
 labeled	I-Modifier
 heat-killed	I-Modifier
-bacteria
-	B-Reagent
+bacteria	B-Reagent
 
 Prepare	B-Action
 modified	B-Modifier
 DY-V	B-Reagent
-media.   
-	I-Reagent
+media	I-Reagent
+.	O
 
 Media	B-Reagent
 used	O
@@ -28,14 +27,17 @@ modified	O
 version	O
 of	O
 DY-V	B-Reagent
-media.
-	I-Reagent
+media	I-Reagent
+.	O
 
 Modifications	O
-were:No	O
+were	O
+:	O
+No	O
 MES	B-Reagent
 was	O
-used,	B-Action
+used	B-Action
+,	O
 as	O
 it	B-Mention
 can	O
@@ -46,48 +48,56 @@ a	O
 source	O
 of	O
 carbon	B-Reagent
-(bicarbonate	I-Reagent
+(	O
+bicarbonate	B-Reagent
 and	O
 heat-killed	B-Modifier
-bacteria are	B-Reagent
+bacteria	B-Reagent
+are	I-Reagent
 the	O
 only	O
 sources	O
 of	O
 carbon	B-Reagent
-used	O
+used	I-Reagent
 in	O
 this	O
-media).
-	B-Reagent
+media	B-Reagent
+)	I-Reagent
+.	O
 
 No	O
 Na2SiO3	B-Reagent
 was	O
 used	B-Action
-(Ochromonas	B-Reagent
+(	O
+Ochromonas	B-Reagent
 does	O
 not	O
 need	O
-silica).
-	B-Reagent
+silica	B-Reagent
+)	O
+.	O
 
 No	O
-NaNO3 (ammonium	B-Reagent
-and	O
+NaNO3	B-Reagent
+(	I-Reagent
+ammonium	I-Reagent
+and	I-Reagent
 heat-killed	B-Modifier
-bacteria	B-Reagent
-were	O
+bacteria	I-Modifier
+were	B-Reagent
 the	O
 only	O
 sources	O
 of	O
 nitrogen	B-Reagent
-used	O
+used	I-Reagent
 in	O
 this	O
-media).
-	B-Reagent
+media	B-Reagent
+)	I-Reagent
+.	O
 
 Sodium	B-Reagent
 bicarbonate	I-Reagent
@@ -98,8 +108,8 @@ final	B-Modifier
 concentration	B-Measure-Type
 of	O
 95	B-Concentration
-µM.
-	I-Concentration
+µM	I-Concentration
+.	O
 
 Bicarbonate	B-Reagent
 addition	B-Method
@@ -116,17 +126,19 @@ of	O
 a	O
 stock	B-Reagent
 solution	I-Reagent
-(do	O
+(	O
+do	O
 not	O
-autoclave).
-	B-Action
+autoclave	B-Action
+)	O
+.	O
 
 Media	B-Reagent
 inoculation	B-Method
 with	O
 labeled	B-Modifier
-HKB. 
-	B-Reagent
+HKB	B-Reagent
+.	O
 
 Add	B-Action
 15N	B-Modifier
@@ -134,11 +146,14 @@ Add	B-Action
 labeled	I-Modifier
 heat-killed	I-Modifier
 bacteria	B-Reagent
-(HKB)	I-Reagent
+(	O
+HKB	B-Reagent
+)	O
 to	O
 the	O
 media	B-Reagent
-(isolation	B-Method
+(	O
+isolation	B-Method
 and	O
 labeling	B-Action
 of	O
@@ -147,8 +162,9 @@ was	O
 done	O
 following	O
 this	O
-protocol).
-	O
+protocol	O
+)	O
+.	O
 
 Add	B-Action
 an	O
@@ -157,7 +173,8 @@ of	O
 the	O
 mixotrophic	B-Reagent
 algae	I-Reagent
-(volume	B-Measure-Type
+(	O
+volume	B-Measure-Type
 of	O
 inoculum	B-Reagent
 should	O
@@ -175,13 +192,16 @@ and	O
 carry	B-Action
 over	I-Action
 of	O
-nutrients).
-	B-Reagent
+nutrients	B-Reagent
+)	O
+.	O
 
-NOTE:	O
+NOTE	O
+:	O
 as	O
 an	O
-example,	O
+example	O
+,	O
 values	O
 commonly	O
 used	O
@@ -198,28 +218,30 @@ starting	O
 concentrations	B-Measure-Type
 for	O
 the	O
-cultures.
-	B-Reagent
+cultures	B-Reagent
+.	O
 
 Mixotrophic	B-Reagent
 growth	I-Reagent
 of	O
 the	O
-algae. 
-	B-Reagent
+algae	B-Reagent
+.	O
 
 Let	O
 the	O
 algae	B-Reagent
-grow so	O
-it	B-Mention
-incorporates the	B-Action
+grow	O
+so	O
+it	O
+incorporates	B-Mention
+the	B-Action
 isotopic	B-Reagent
 signature	I-Reagent
-in	O
-its	B-Mention
-biomass.
-	B-Reagent
+in	I-Reagent
+its	O
+biomass	B-Mention
+.	B-Reagent
 
 Track	B-Action
 the	O
@@ -227,18 +249,21 @@ algae	B-Reagent
 growth	I-Reagent
 through	O
 microscopy	B-Method
-(live	B-Reagent
+(	O
+live	B-Reagent
 samples	I-Reagent
 and/or	O
 fixed	B-Reagent
-samples)	I-Reagent
+samples	I-Reagent
+)	O
 and	O
 the	O
 decline	B-Action
 of	O
 heat-killed	B-Modifier
 bacteria	B-Reagent
-(fixed	I-Reagent
+(	O
+fixed	B-Reagent
 samples	I-Reagent
 and	O
 staining	B-Action
@@ -250,8 +275,8 @@ HKB	B-Reagent
 concentrations	B-Measure-Type
 through	O
 epifluorescence	B-Method
-microscopy.
-	I-Method
+microscopy	I-Method
+.	O
 
 Sampling	B-Action
 for	O
@@ -259,19 +284,21 @@ assessment	B-Method
 of	O
 algal	B-Reagent
 isotopic	I-Reagent
-signature Ochromonas	I-Reagent
-was	O
+signature	I-Reagent
+Ochromonas	I-Reagent
+was	I-Reagent
 allowed	O
 to	O
 grow	B-Action
-for 2-3	B-Time
+for	I-Action
+2-3	B-Time
 generations	I-Time
-before	O
+before	I-Time
 sampling	B-Action
-for	O
+for	I-Action
 isotopic	B-Reagent
-signature.
-	I-Reagent
+signature	I-Reagent
+.	I-Reagent
 
 Two	B-Numerical
 kind	O
@@ -279,34 +306,38 @@ of	O
 samples	B-Reagent
 can	O
 be	O
-collected: Bulk	B-Action
-measurements:	O
+collected	B-Action
+:	O
+Bulk	O
+measurements	O
+:	O
 filter	B-Action
-30-50	B-Amount
-mL	I-Amount
-of	O
+30-50	I-Action
+mL	B-Amount
+of	I-Amount
 the	O
 cultures	B-Reagent
-onto	O
+onto	I-Reagent
 pre-combusted	B-Modifier
-glass	B-Location
-fiber	I-Location
+glass	I-Modifier
+fiber	B-Location
 filters	I-Location
-and	O
+and	I-Location
 dry	B-Action
-at	O
-60	B-Temperature
-ºC	I-Temperature
-over	B-Time
-night	I-Time
-to	O
+at	I-Action
+60	O
+ºC	B-Temperature
+over	I-Temperature
+night	B-Time
+to	I-Time
 stop	B-Action
-all	O
+all	I-Action
 biological	B-Reagent
-activity.
-	I-Reagent
+activity	I-Reagent
+.	I-Reagent
 
-Afterwards,	O
+Afterwards	O
+,	O
 filters	B-Device
 can	O
 be	O
@@ -316,8 +347,8 @@ glass	B-Location
 vials	I-Location
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Further	O
 processing	B-Action
@@ -345,17 +376,21 @@ of	O
 the	O
 sample	B-Reagent
 was	O
-determined by	B-Action
+determined	B-Action
+by	I-Action
 an	O
 isotope	B-Device
 rato	I-Device
 mas	I-Device
 spectrometer	I-Device
-(IRMS).
-	I-Device
+(	I-Device
+IRMS	I-Device
+)	I-Device
+.	O
 
 Cell-specific	O
-measurements:	O
+measurements	O
+:	O
 collect	B-Action
 2	B-Amount
 mL	I-Amount
@@ -366,8 +401,8 @@ fix	B-Action
 with	O
 2X	B-Concentration
 EM-grade	B-Modifier
-glutaraldehyde.
-	B-Reagent
+glutaraldehyde	B-Reagent
+.	O
 
 Sample	B-Reagent
 can	O
@@ -378,45 +413,51 @@ the	O
 fridge	B-Device
 at	O
 4	B-Temperature
-ºC.
-	I-Temperature
+ºC	I-Temperature
+.	O
 
 Further	O
 processing	B-Action
 of	O
 the	O
 sample	B-Reagent
-involves the	O
+involves	O
+the	O
 deposition	B-Method
-of	O
+of	I-Method
 cells	B-Reagent
-onto	O
+onto	I-Reagent
 sylicon	B-Location
-wafers,	I-Location
+wafers	I-Location
+,	I-Location
 washwith	B-Action
 MQ-water	B-Reagent
-and	O
-drye;	B-Action
+and	I-Reagent
+drye	B-Action
+;	I-Action
 map	I-Action
-cells	B-Reagent
-on	O
+cells	I-Action
+on	B-Reagent
 the	O
 waffer	B-Location
-using	O
+using	I-Location
 microscopy	B-Method
-and	O
-analysis	B-Method
-of	O
+and	I-Method
+analysis	I-Method
+of	I-Method
 single	B-Numerical
-cells	B-Reagent
-using	O
+cells	I-Numerical
+using	B-Reagent
 a	O
 Cameca	B-Device
 NanoSIMS	I-Device
 50	I-Device
-instrument.	O
+instrument	I-Device
+.	O
 
-(NOTE:	O
+(	O
+NOTE	O
+:	O
 actual	O
 manipulation	B-Method
 of	O
@@ -428,8 +469,9 @@ done	O
 by	O
 an	O
 expert	O
-user).
-	O
+user	O
+)	O
+.	O
 
 
 

@@ -1,7 +1,6 @@
 Immunofluorescence	B-Method
 Microscopy	I-Method
-Protocol
-	O
+Protocol	O
 
 Grow	B-Action
 cultured	B-Reagent
@@ -12,7 +11,8 @@ slips	I-Location
 or	O
 chamber	B-Location
 slides	I-Location
-overnight,	B-Time
+overnight	B-Time
+,	O
 or	O
 add	B-Action
 appropriate	B-Modifier
@@ -31,7 +31,8 @@ least	I-Modifier
 30	B-Time
 min	I-Time
 at	O
-37°C,	B-Temperature
+37°C	B-Temperature
+,	O
 at	O
 the	O
 time	O
@@ -40,24 +41,27 @@ fixation	B-Reagent
 cells	I-Reagent
 should	O
 be	O
-~50%	B-Modifier
-confluent.
-	B-Generic-Measure
+~50	B-Modifier
+%	B-Generic-Measure
+confluent	I-Generic-Measure
+.	O
 
 Rinse	B-Action
 cells	B-Reagent
 briefly	B-Modifier
 in	O
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 Fix	B-Action
 cells	B-Reagent
 by	O
 incubation	B-Method
 with	O
-4%	B-Concentration
-Paraformaldehyde,	B-Reagent
+4	B-Concentration
+%	I-Concentration
+Paraformaldehyde	B-Reagent
+,	O
 in	O
 PBS	B-Reagent
 for	O
@@ -65,8 +69,8 @@ for	O
 min	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Rinse	B-Action
 in	O
@@ -74,8 +78,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(1/3).
-	O
+(	O
+1/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
@@ -83,8 +89,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(2/3).
-	O
+(	O
+2/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
@@ -92,11 +100,14 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(3/3).
-	O
+(	O
+3/3	O
+)	O
+.	O
 
 Add	B-Action
-0.5%	B-Concentration
+0.5	B-Concentration
+%	I-Concentration
 Triton	B-Reagent
 X-100	I-Reagent
 in	O
@@ -110,16 +121,8 @@ for	O
 three	B-Time
 to	I-Time
 five	I-Time
-min.
-	I-Time
-
-Rinse	B-Action
-in	O
-PBS	B-Reagent
-for	O
-5	B-Time
-min (1/3).
-	I-Time
+min	I-Time
+.	O
 
 Rinse	B-Action
 in	O
@@ -127,8 +130,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(2/3).
-	O
+(	O
+1/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
@@ -136,13 +141,27 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(3/3).
-	O
+(	O
+2/3	O
+)	O
+.	O
+
+Rinse	B-Action
+in	O
+PBS	B-Reagent
+for	O
+5	B-Time
+min	I-Time
+(	O
+3/3	O
+)	O
+.	O
 
 Block	B-Action
 samples	B-Reagent
 in	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 FBS	B-Reagent
 in	O
 PBS	B-Reagent
@@ -151,8 +170,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 one	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Dilute	B-Action
 the	O
@@ -163,17 +182,20 @@ the	O
 recommended	B-Modifier
 concentration/dilution	B-Concentration
 in	O
-5%	B-Concentration
-FBS/PBS.
-	B-Reagent
+5	B-Concentration
+%	I-Concentration
+FBS/PBS	B-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
 µl	I-Amount
 per	B-Modifier
 well	B-Location
-(8	B-Numerical
-wells)	B-Location
+(	O
+8	B-Numerical
+wells	B-Location
+)	O
 to	O
 the	O
 chamber	B-Location
@@ -190,8 +212,8 @@ temperature	I-Temperature
 or	O
 overnight	B-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Rinse	B-Action
 in	O
@@ -199,8 +221,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(1/3).
-	O
+(	O
+1/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
@@ -208,8 +232,10 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(2/3).
-	O
+(	O
+2/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
@@ -217,15 +243,18 @@ PBS	B-Reagent
 for	O
 5	B-Time
 min	I-Time
-(3/3).
-	O
+(	O
+3/3	O
+)	O
+.	O
 
 Prepare	B-Action
 fluorochrome-conjugated	B-Modifier
 secondary	B-Reagent
 antibody	I-Reagent
 in	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 FBS/PBS	B-Reagent
 according	O
 to	O
@@ -234,71 +263,86 @@ recommended	O
 manufacturer	O
 specification	O
 data	O
-sheet,	O
+sheet	O
+,	O
 and	O
 add	B-Action
 200	B-Amount
 µl	I-Amount
 per	B-Modifier
 well	B-Location
-(8	B-Numerical
-wells)	B-Location
+(	O
+8	B-Numerical
+wells	B-Location
+)	O
 to	O
 the	O
 chamber	B-Location
-slides.
-	I-Location
+slides	I-Location
+.	O
 
 Incubate	B-Action
 the	O
 samples	B-Reagent
 for	O
 1	B-Time
-h,	I-Time
+h	I-Time
+,	O
 at	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 in	O
 the	O
-dark.
-	B-Location
+dark	B-Location
+.	O
 
 Rinse	B-Action
 in	O
 PBS	B-Reagent
 for	O
 5	B-Time
-min (1/3).
-	I-Time
+min	I-Time
+(	O
+1/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
 PBS	B-Reagent
 for	O
 5	B-Time
-min (2/3).
-	I-Time
+min	I-Time
+(	O
+2/3	O
+)	O
+.	O
 
 Rinse	B-Action
 in	O
 PBS	B-Reagent
 for	O
 5	B-Time
-min (3/3).
-	I-Time
+min	I-Time
+(	O
+3/3	O
+)	O
+.	O
 
 Coverslip	B-Action
 with	O
 anti-fade	B-Modifier
 mounting	B-Reagent
-medium.
-	I-Reagent
+medium	I-Reagent
+.	O
 
 Seal	B-Action
 slides	B-Location
 with	O
 nail	B-Seal
-polish.	I-Seal
+polish	I-Seal
+.	O
 
 
 

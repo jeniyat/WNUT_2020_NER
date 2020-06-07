@@ -3,8 +3,7 @@ for	O
 Pulsed	B-Method
 Field	I-Method
 Gel	I-Method
-Electrophoresis
-	I-Method
+Electrophoresis	I-Method
 
 A	O
 15-20	B-Amount
@@ -19,21 +18,28 @@ a	O
 glass	B-Location
 fiber	I-Location
 pre-filter	I-Location
-(Gelman	O
-A/E)	O
+(	O
+Gelman	O
+A/E	O
+)	O
 and	O
 a	O
-0.22 μm	B-Size
-pore	B-Measure-Type
-size	I-Measure-Type
-membrane	B-Location
-(Durapore,	O
-Millipore).
-	O
+0.22	B-Size
+μm	I-Size
+pore	I-Size
+size	B-Measure-Type
+membrane	I-Measure-Type
+(	B-Location
+Durapore	O
+,	O
+Millipore	O
+)	O
+.	O
 
 Concentrate	B-Action
 to	O
-ca.	O
+ca	O
+.	O
 150-200	B-Amount
 ml	I-Amount
 using	O
@@ -43,8 +49,10 @@ MWC	B-Device
 Spiral	I-Device
 Cartridge	I-Device
 Concentrator	I-Device
-(SCC).
-	O
+(	O
+SCC	O
+)	O
+.	O
 
 Transfer	B-Action
 the	O
@@ -52,16 +60,18 @@ SCC	B-Reagent
 retentate	I-Reagent
 to	O
 Centriprep	B-Device
-30’s.
-	I-Device
+30	I-Device
+’	I-Device
+s	O
+.	O
 
 Store	B-Action
 balance	B-Reagent
 of	I-Reagent
 concentrate	I-Reagent
 in	O
-refrigerator.
-	B-Device
+refrigerator	B-Device
+.	O
 
 Centrifuge	B-Action
 in	O
@@ -74,11 +84,13 @@ speed	I-Speed
 for	O
 15	B-Time
 minutes	I-Time
-(in	O
+(	O
+in	O
 refrigerator	B-Device
 if	O
-possible).
-	O
+possible	O
+)	O
+.	O
 
 Empty	B-Action
 central	B-Location
@@ -88,8 +100,8 @@ refilling	I-Method
 and	O
 repeat	B-Action
 centrifugation	B-Method
-step.
-	I-Method
+step	I-Method
+.	O
 
 Empty	B-Action
 and	O
@@ -107,8 +119,8 @@ of	O
 Centripreps	B-Device
 and	O
 balance	B-Device
-rotor.
-	I-Device
+rotor	I-Device
+.	O
 
 Continue	O
 to	O
@@ -121,8 +133,8 @@ more	O
 water	B-Reagent
 enters	B-Action
 central	B-Location
-chamber.
-	I-Location
+chamber	I-Location
+.	O
 
 Remove	B-Action
 central	B-Reagent
@@ -130,9 +142,11 @@ insert	I-Reagent
 from	O
 2	B-Numerical
 of	O
-units,	B-Location
+units	B-Location
+,	O
 replace	B-Action
-caps,	B-Seal
+caps	B-Seal
+,	O
 and	O
 spin	B-Action
 retentate	B-Device
@@ -142,22 +156,24 @@ to	O
 recover	B-Action
 droplets	B-Reagent
 from	O
-sides.
-	B-Location
+sides	B-Location
+.	O
 
 Combine	B-Action
 retentate	B-Reagent
 into	O
-2,	B-Numerical
+2	B-Numerical
+,	O
 and	O
 finally	O
 one	B-Numerical
 Centriprep	B-Device
-unit,	I-Device
+unit	I-Device
+,	O
 by	O
 gentle	B-Modifier
-pipetting.
-	B-Action
+pipetting	B-Action
+.	O
 
 When	O
 all	O
@@ -165,19 +181,22 @@ have	O
 been	O
 combined	B-Action
 and	O
-spun,	B-Action
+spun	B-Action
+,	O
 the	O
 final	B-Modifier
 volume	B-Measure-Type
 is	O
-ca.	O
+ca	O
+.	O
 500	B-Amount
-μl.
-	I-Amount
+μl	I-Amount
+.	O
 
 Make	B-Action
 a	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 agarose	B-Reagent
 gel	I-Reagent
 by	O
@@ -191,7 +210,8 @@ Agarose	I-Reagent
 with	O
 99ml	B-Amount
 0.5x	B-Concentration
-TBE,	B-Reagent
+TBE	B-Reagent
+,	O
 and	O
 heating	B-Action
 until	O
@@ -199,8 +219,8 @@ completely	O
 clear	O
 of	O
 unmelted	B-Modifier
-material.
-	B-Reagent
+material	B-Reagent
+.	O
 
 Assemble	B-Action
 mold	B-Reagent
@@ -212,14 +232,15 @@ place	O
 and	O
 pour	B-Action
 in	O
-liquid.
-	B-Reagent
+liquid	B-Reagent
+.	O
 
 Let	B-Action
-set.
-	I-Action
+set	I-Action
+.	O
 
-Meanwhile,	O
+Meanwhile	O
+,	O
 fill	B-Action
 electrophoresis	B-Location
 chamber	I-Location
@@ -227,42 +248,47 @@ with	O
 2	B-Amount
 liters	I-Amount
 0.5x	B-Concentration
-TBE.
-	B-Reagent
+TBE	B-Reagent
+.	O
 
 Turn	B-Action
 on	I-Action
 pump	B-Device
 and	I-Device
-chiller,	I-Device
+chiller	I-Device
+,	O
 and	O
 set	B-Action
 temperature	O
 to	O
-14°C.
-	B-Temperature
+14°C	B-Temperature
+.	O
 
 When	O
 gel	B-Reagent
 is	O
-set,	B-Modifier
+set	B-Modifier
+,	O
 remove	B-Action
 comb	B-Location
 and	O
 sides	B-Location
 of	O
-mold,	B-Reagent
+mold	B-Reagent
+,	O
 and	O
 slide	B-Action
 backing	B-Location
-plate,	I-Location
+plate	I-Location
+,	O
 with	O
 gel	B-Reagent
-attached,	O
+attached	O
+,	O
 out	O
 of	O
-mold.
-	B-Location
+mold	B-Location
+.	O
 
 Place	B-Action
 gel	B-Reagent
@@ -273,7 +299,8 @@ into	O
 receiver	B-Location
 in	O
 electrophoresis	B-Location
-chamber,	I-Location
+chamber	I-Location
+,	O
 taking	O
 care	O
 not	O
@@ -281,26 +308,29 @@ to	O
 dislodge	B-Action
 gel	B-Reagent
 from	O
-plate,	B-Location
+plate	B-Location
+,	O
 with	O
 wells	B-Location
 in	O
 rear	O
 and	O
 let	B-Action
-chill.
-	I-Action
+chill	I-Action
+.	O
 
 Transfer	B-Action
 aliquots	B-Reagent
 into	O
 Microcons	B-Device
-(30	B-Generic-Measure
+(	O
+30	B-Generic-Measure
 or	I-Generic-Measure
 100	I-Generic-Measure
 kD	I-Generic-Measure
-MWC).
-	I-Generic-Measure
+MWC	I-Generic-Measure
+)	O
+.	O
 
 Place	B-Action
 each	B-Modifier
@@ -318,21 +348,26 @@ g	I-Speed
 for	O
 20	B-Time
 minutes	I-Time
-(about	O
+(	O
+about	O
 4000	B-Speed
 RPM	I-Speed
 in	O
 Eppendorf	B-Device
-Microfuge)	I-Device
+Microfuge	I-Device
+)	O
 to	O
-near dryness	B-Modifier
-(most	O
+near	O
+dryness	B-Modifier
+(	I-Modifier
+most	O
 of	O
 the	O
 Microcon	B-Location
 membrane	I-Location
-is	O
-dry,	B-Modifier
+is	I-Location
+dry	B-Modifier
+,	I-Modifier
 and	O
 only	O
 a	O
@@ -340,17 +375,19 @@ small	O
 ring	O
 of	O
 liquid	B-Reagent
-remains	O
+remains	I-Reagent
 around	O
-edge).
-	O
+edge	O
+)	O
+.	O
 
 As	O
 they	O
 reach	O
 the	O
 proper	O
-volume,	B-Measure-Type
+volume	B-Measure-Type
+,	O
 smaller	B-Modifier
 volume	B-Measure-Type
 aliquots	B-Reagent
@@ -366,19 +403,21 @@ until	O
 the	O
 larger	O
 have	O
-been reduced	O
+been	O
+reduced	O
 to	O
 the	O
 proper	O
-volume.
-	B-Measure-Type
+volume	B-Measure-Type
+.	I-Measure-Type
 
 When	O
 all	O
 samples	B-Reagent
 have	O
 been	O
-reduced,	B-Modifier
+reduced	B-Modifier
+,	O
 add	B-Action
 50	B-Amount
 μl	I-Amount
@@ -386,7 +425,8 @@ add	B-Action
 TE	B-Reagent
 to	O
 each	B-Modifier
-tube,	B-Location
+tube	B-Location
+,	O
 taking	O
 care	O
 not	O
@@ -395,27 +435,29 @@ touch	B-Action
 membrane	B-Location
 with	O
 pipette	B-Location
-tip,	I-Location
+tip	I-Location
+,	O
 and	O
-spin again	B-Action
+spin	B-Action
+again	O
 to	O
 reduce	O
 volume	B-Measure-Type
-as	O
+as	I-Measure-Type
 described	O
-above.
-	O
-
-Repeat	B-Action
-step	B-Method
-22.
-	I-Method
+above	O
+.	O
 
 Repeat	B-Action
 step	B-Method
 22	I-Method
-again.
-	O
+.	O
+
+Repeat	B-Action
+step	B-Method
+22	I-Method
+again	O
+.	O
 
 Now	O
 add	B-Action
@@ -427,22 +469,25 @@ to	O
 membrane	B-Location
 to	O
 elute	B-Action
-viruses,	B-Reagent
+viruses	B-Reagent
+,	O
 again	O
 taking	O
 care	O
 not	O
 to	O
 touch	B-Action
-membrane.
-	B-Location
+membrane	B-Location
+.	O
 
 Invert	B-Action
-cartridge,	B-Reagent
+cartridge	B-Reagent
+,	O
 place	B-Action
 in	I-Action
 fresh	B-Modifier
-tube,	B-Location
+tube	B-Location
+,	O
 and	O
 spin	B-Action
 for	O
@@ -453,8 +498,8 @@ at	O
 x	I-Speed
 g	I-Speed
 to	O
-recover.
-	B-Action
+recover	B-Action
+.	O
 
 Place	B-Action
 tubes	B-Location
@@ -467,8 +512,8 @@ water	B-Device
 bath	I-Device
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Remove	B-Action
 tubes	B-Location
@@ -479,8 +524,8 @@ on	O
 ice	B-Location
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Transfer	B-Action
 to	O
@@ -494,8 +539,8 @@ condensation	B-Reagent
 from	O
 walls	B-Location
 of	O
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Prepare	B-Action
 molecular	B-Reagent
@@ -517,8 +562,8 @@ final	B-Modifier
 volume	B-Measure-Type
 of	O
 20	B-Amount
-μl.
-	I-Amount
+μl	I-Amount
+.	O
 
 Add	B-Action
 10	B-Amount
@@ -528,8 +573,8 @@ loading	I-Reagent
 buffer	I-Reagent
 to	O
 each	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Mix	B-Action
 by	O
@@ -537,35 +582,37 @@ simultaneously	B-Modifier
 inverting	B-Action
 several	B-Numerical
 times	O
-slowly,	B-Modifier
+slowly	B-Modifier
+,	O
 while	O
 rolling	B-Method
 between	I-Method
 index	I-Method
 finger	I-Method
 and	I-Method
-thumb.
-	I-Method
+thumb	I-Method
+.	O
 
 Turn	B-Action
 chiller	B-Device
 and	I-Device
 pump	I-Device
-off.
-	B-Generic-Measure
+off	B-Generic-Measure
+.	O
 
 Load	B-Action
-samples.
-	B-Reagent
+samples	B-Reagent
+.	O
 
 Turn	B-Action
 pump	B-Device
-on,	B-Generic-Measure
+on	B-Generic-Measure
+,	O
 then	O
 turn	B-Action
 chiller	B-Device
-on.
-	B-Generic-Measure
+on	B-Generic-Measure
+.	O
 
 Close	B-Action
 lid	B-Seal
@@ -578,45 +625,46 @@ sure	O
 all	O
 is	O
 in	O
-order.
-	O
+order	O
+.	O
 
 Set	B-Action
 voltage	B-Measure-Type
 to	O
-6V.
-	B-Generic-Measure
+6V	B-Generic-Measure
+.	O
 
 Set	B-Action
 initial	B-Measure-Type
 switch	I-Measure-Type
 time	I-Measure-Type
 to	O
-1s.
-	B-Generic-Measure
+1s	B-Generic-Measure
+.	O
 
 Set	B-Action
 final	B-Measure-Type
 switch	I-Measure-Type
 time	I-Measure-Type
 to	O
-10s.
-	B-Generic-Measure
+10s	B-Generic-Measure
+.	O
 
 Set	B-Action
 run	B-Measure-Type
 time	I-Measure-Type
 to	O
-18h.
-	B-Generic-Measure
+18h	B-Generic-Measure
+.	O
 
 Push	B-Action
-start.
-	O
+start	O
+.	O
 
 After	O
 10	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 check	B-Action
 to	O
 make	O
@@ -628,14 +676,15 @@ holding	O
 between	O
 14	B-Generic-Measure
 and	I-Generic-Measure
-16°C,	I-Generic-Measure
+16°C	I-Generic-Measure
+,	O
 and	O
 that	O
 timer	B-Device
 is	O
 running	O
-down.
-	O
+down	O
+.	O
 
 
 

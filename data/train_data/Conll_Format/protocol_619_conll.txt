@@ -3,7 +3,8 @@ Tetramer	I-Method
 and	I-Method
 Cell	I-Method
 Staining	I-Method
-Protocol.	I-Method
+Protocol	I-Method
+.	O
 
 Bring	B-Action
 all	B-Modifier
@@ -14,8 +15,8 @@ by	O
 putting	B-Action
 them	B-Mention
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Dilute	B-Action
 10mM	B-Concentration
@@ -36,41 +37,47 @@ stock	I-Reagent
 solution	I-Reagent
 with	O
 120μl	B-Amount
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 and	O
 keep	B-Action
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Add	B-Action
 20μl	B-Amount
 diluted	B-Reagent
 peptide	I-Reagent
-(400μM)	B-Concentration
+(	O
+400μM	B-Concentration
+)	O
 and	O
 20μl	B-Amount
 conditional	B-Reagent
 Flex-T™	I-Reagent
 monomer	I-Reagent
-(200μg/mL)	B-Concentration
+(	O
+200μg/mL	B-Concentration
+)	O
 into	O
 96-well	B-Location
 U-bottom	I-Location
-plate.
-	I-Location
+plate	I-Location
+.	O
 
 Mix	B-Action
 by	O
 pipetting	B-Method
 up	I-Method
 and	I-Method
-down.
-	I-Method
+down	I-Method
+.	O
 
 Seal	B-Action
 the	O
-plate;	B-Location
+plate	B-Location
+;	O
 centrifuge	B-Action
 at	O
 3300xg	B-Speed
@@ -83,12 +90,13 @@ to	O
 collect	B-Action
 the	O
 liquid	B-Reagent
-down.
-	B-Location
+down	B-Location
+.	O
 
 Remove	B-Action
 the	O
-seal;	B-Seal
+seal	B-Seal
+;	O
 put	B-Action
 the	O
 plate	B-Location
@@ -102,7 +110,8 @@ light	I-Device
 for	O
 30	B-Time
 minutes	I-Time
-(the	O
+(	O
+the	O
 distance	B-Measure-Type
 of	O
 the	O
@@ -113,12 +122,14 @@ samples	B-Reagent
 should	O
 be	O
 2-5	B-Generic-Measure
-cm).
-	I-Generic-Measure
+cm	I-Generic-Measure
+)	O
+.	O
 
 Seal	B-Action
 the	O
-plate;	B-Location
+plate	B-Location
+;	O
 incubate	B-Action
 for	O
 30	B-Time
@@ -127,8 +138,8 @@ at	O
 37°C	B-Temperature
 in	O
 the	O
-dark.
-	B-Location
+dark	B-Location
+.	O
 
 To	O
 evaluate	B-Action
@@ -148,8 +159,8 @@ I	I-Reagent
 ELISA	I-Reagent
 to	O
 evaluatepeptide	B-Action
-exchange.
-	B-Method
+exchange	B-Method
+.	O
 
 Transfer	B-Action
 30μl	B-Amount
@@ -159,18 +170,20 @@ monomer	I-Reagent
 into	O
 a	O
 new	B-Modifier
-plate,	B-Location
+plate	B-Location
+,	O
 then	O
 add	B-Action
 3.3μl	B-Amount
 of	O
 conjugated	B-Reagent
-streptavidin,	I-Reagent
+streptavidin	I-Reagent
+,	O
 mix	B-Action
 by	O
 pipetting	B-Method
-up-and-down.
-	I-Method
+up-and-down	I-Method
+.	O
 
 Incubate	B-Action
 on	O
@@ -180,25 +193,26 @@ the	O
 dark	B-Location
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 This	O
 is	O
 enoughfor	B-Modifier
 about	I-Modifier
 15	B-Numerical
-tests.
-	B-Method
+tests	B-Method
+.	O
 
-Note:	O
+Note	O
+:	O
 BioLegend	B-Reagent
 fluorophore-conjugated	I-Reagent
 streptavidin	I-Reagent
 products	I-Reagent
 are	O
-recommended.
-	B-Modifier
+recommended	B-Modifier
+.	O
 
 For	O
 30μl	B-Amount
@@ -214,20 +228,32 @@ use	B-Action
 of	O
 BioLegend	B-Reagent
 PE-streptavidin	I-Reagent
-(Cat#405203)	O
+(	O
+Cat	O
+#	O
+405203	O
+)	O
 or	O
 APC-	B-Reagent
 streptavidin	I-Reagent
-(Cat#405207).
-	O
+(	O
+Cat	O
+#	O
+405207	O
+)	O
+.	O
 
 For	O
 BV421-streptavidin	B-Reagent
 conjugate	I-Reagent
-(Cat#405225)	O
+(	O
+Cat	O
+#	O
+405225	O
+)	O
 use	B-Action
-1.3μl.
-	B-Amount
+1.3μl	B-Amount
+.	O
 
 For	O
 optimal	B-Modifier
@@ -239,18 +265,21 @@ streptavidin	I-Reagent
 products	I-Reagent
 ensure	B-Action
 that	O
-themonomer:streptavidin	B-Reagent
+themonomer	B-Reagent
+:	I-Reagent
+streptavidin	I-Reagent
 conjugate	I-Reagent
 has	O
 a	O
 6:1	B-Concentration
 molar	I-Concentration
-ratio.
-	I-Concentration
+ratio	I-Concentration
+.	O
 
 During	B-Modifier
 the	I-Modifier
-incubation,	I-Modifier
+incubation	I-Modifier
+,	O
 prepare	B-Action
 blocking	B-Reagent
 solution	I-Reagent
@@ -261,20 +290,25 @@ adding	B-Action
 D-Biotin	B-Reagent
 and	O
 6μl	B-Amount
-10%	B-Concentration
-(w/v)	B-Measure-Type
+10	B-Concentration
+%	I-Concentration
+(	O
+w/v	B-Measure-Type
+)	O
 NaN3	B-Reagent
 to	O
 192.4μl	B-Amount
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 mix	B-Action
 by	O
-vortexing.
-	B-Method
+vortexing	B-Method
+.	O
 
 After	B-Modifier
 the	I-Modifier
-incubation,	I-Modifier
+incubation	I-Modifier
+,	O
 add	B-Action
 2.4μl	B-Amount
 of	O
@@ -286,8 +320,8 @@ upand-down	I-Method
 to	O
 stop	B-Action
 the	O
-reaction.
-	B-Reagent
+reaction	B-Reagent
+.	O
 
 Seal	B-Action
 the	O
@@ -299,7 +333,8 @@ at	O
 -	I-Temperature
 8°C	I-Temperature
 overnight	B-Time
-(or	O
+(	O
+or	O
 on	O
 ice	B-Location
 for	O
@@ -307,10 +342,12 @@ for	O
 minutes	I-Time
 in	O
 the	O
-dark).
-	B-Location
+dark	B-Location
+)	O
+.	O
 
-Note:	O
+Note	O
+:	O
 We	O
 recommend	O
 Flex-T™	B-Reagent
@@ -323,8 +360,8 @@ different	B-Modifier
 streptavidin	B-Reagent
 conjugates	I-Reagent
 inseparate	B-Method
-reactions.
-	I-Method
+reactions	I-Method
+.	O
 
 This	O
 allows	O
@@ -335,11 +372,12 @@ with	O
 the	O
 same	B-Modifier
 tetramer	B-Reagent
-allele,	I-Reagent
+allele	I-Reagent
+,	O
 ensuring	B-Action
 thehighest	B-Modifier
-specificity.
-	B-Measure-Type
+specificity	B-Measure-Type
+.	O
 
 Prepare	B-Action
 cells	B-Reagent
@@ -348,7 +386,8 @@ interest	I-Reagent
 Prior	B-Modifier
 to	O
 perform	O
-staining,	B-Method
+staining	B-Method
+,	O
 centrifuge	B-Action
 the	O
 plate	B-Location
@@ -358,16 +397,16 @@ for	O
 5	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Keep	B-Action
 on	O
 ice	B-Location
 in	O
 the	O
-dark.
-	B-Location
+dark	B-Location
+.	O
 
 Add	B-Action
 2	B-Generic-Measure
@@ -384,8 +423,8 @@ or	O
 x	I-Size
 75	I-Size
 mm	I-Size
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Adjust	B-Action
 volume	B-Measure-Type
@@ -393,8 +432,8 @@ to	O
 200μl	B-Amount
 with	O
 CellStaining	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Add	B-Action
 2μl	B-Amount
@@ -408,7 +447,8 @@ in	O
 Steps	B-Method
 7	I-Method
 -	I-Method
-9,	I-Method
+9	I-Method
+,	O
 mix	B-Action
 and	O
 incubate	B-Action
@@ -419,14 +459,15 @@ the	O
 dark	B-Location
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 If	O
 co-staining	B-Action
 with	O
 surface	B-Reagent
-antibodies,	I-Reagent
+antibodies	I-Reagent
+,	O
 prepare	B-Action
 the	O
 antibody	B-Reagent
@@ -438,8 +479,8 @@ staining	B-Concentration
 concentration	I-Concentration
 of	O
 each	B-Modifier
-reagent.
-	B-Reagent
+reagent	B-Reagent
+.	O
 
 Incubate	B-Action
 for	O
@@ -449,8 +490,8 @@ on	O
 ice	B-Location
 in	O
 the	O
-dark.
-	B-Location
+dark	B-Location
+.	O
 
 Wash	B-Action
 the	O
@@ -459,15 +500,15 @@ with	O
 Staining	B-Reagent
 Buffer	I-Reagent
 two	B-Numerical
-times.
-	I-Numerical
+times	I-Numerical
+.	O
 
 Resuspend	B-Action
 cells	B-Reagent
 with	O
 Staining	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Acquire	B-Action
 the	O
@@ -481,10 +522,11 @@ appropriate	B-Modifier
 settings	B-Generic-Measure
 within	O
 2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
-Note:	O
+Note	O
+:	O
 A	O
 titration	B-Method
 of	O
@@ -494,8 +536,8 @@ is	O
 recommended	B-Modifier
 for	O
 optimal	B-Modifier
-performance.
-	O
+performance	O
+.	O
 
 
 

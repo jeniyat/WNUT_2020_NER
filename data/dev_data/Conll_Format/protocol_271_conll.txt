@@ -2,33 +2,35 @@ Zymoclean™	B-Device
 Gel	I-Device
 DNA	I-Device
 Recovery	I-Device
-Kit
-	I-Device
+Kit	I-Device
 
 Excise	B-Action
 the	O
 DNA	B-Reagent
-fragment from	I-Reagent
+fragment	I-Reagent
+from	O
 the	O
 agarose	B-Reagent
 gel	I-Reagent
-using	O
+using	I-Reagent
 a	O
 razor	B-Device
-blade,	I-Device
+blade	I-Device
+,	I-Device
 scalpel	I-Device
-or	O
-other	B-Device
+or	I-Device
+other	I-Device
 device	I-Device
-and	O
+and	I-Device
 transfer	B-Action
-it	O
+it	I-Action
 into	O
 a	O
-15	B-Amount
-ml	I-Amount
-microcentrifuge	B-Location
-tube.	I-Location
+15	O
+ml	B-Amount
+microcentrifuge	I-Amount
+tube	B-Location
+.	I-Location
 
 Add	B-Action
 3	B-Numerical
@@ -43,23 +45,24 @@ agarose	B-Reagent
 excised	B-Action
 from	O
 the	O
-gel.
-	B-Reagent
+gel	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
-37-55 °C	B-Temperature
-for	O
+37-55	B-Temperature
+°C	I-Temperature
+for	I-Temperature
 5-10	B-Time
 minutes	I-Time
-until	O
+until	I-Time
 the	O
 gel	B-Reagent
 slice	I-Reagent
-is	O
+is	I-Reagent
 completely	O
-dissolved.
-	B-Modifier
+dissolved	B-Modifier
+.	I-Modifier
 
 Transfer	B-Action
 the	O
@@ -73,47 +76,24 @@ Column	I-Location
 in	O
 a	O
 Collection	B-Location
-Tube.
-	I-Location
+Tube	I-Location
+.	O
 
 Centrifuge	B-Action
 for	O
 30-60	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Discard	B-Action
 the	O
-flow-through.
-	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Wash	B-Action
-#1:Add	I-Action
-200	B-Amount
-µl	I-Amount
-of	O
-DNA	B-Reagent
-Wash	I-Reagent
-Buffer	I-Reagent
-to	O
-the	O
-column.
-	B-Location
-
-Wash	B-Action
-#1:Centrifuge	I-Action
-for	O
-30	B-Time
-seconds.
-	I-Time
-
-Discard	B-Action
-the	O
-flow-through.
-	B-Reagent
-
-Wash	B-Action
-#2:	O
+#	O
+1	O
+:	O
 Add	B-Action
 200	B-Amount
 µl	I-Amount
@@ -123,20 +103,54 @@ Wash	I-Reagent
 Buffer	I-Reagent
 to	O
 the	O
-column.
-	B-Location
+column	B-Location
+.	O
 
 Wash	B-Action
-#2:Centrifuge	I-Action
+#	O
+1	O
+:	O
+Centrifuge	B-Action
 for	O
 30	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Discard	B-Action
 the	O
-flow-through.
-	B-Reagent
+flow-through	B-Reagent
+.	O
+
+Wash	B-Action
+#	O
+2	O
+:	O
+Add	B-Action
+200	B-Amount
+µl	I-Amount
+of	O
+DNA	B-Reagent
+Wash	I-Reagent
+Buffer	I-Reagent
+to	O
+the	O
+column	B-Location
+.	O
+
+Wash	B-Action
+#	O
+2	O
+:	O
+Centrifuge	B-Action
+for	O
+30	B-Time
+seconds	I-Time
+.	O
+
+Discard	B-Action
+the	O
+flow-through	B-Reagent
+.	O
 
 Add	B-Action
 ≥	B-Modifier
@@ -144,13 +158,15 @@ Add	B-Action
 µl	I-Amount
 DNA	B-Reagent
 Elution	I-Reagent
-Buffer or	I-Reagent
-water directly	I-Reagent
-to	O
+Buffer	I-Reagent
+or	O
+water	B-Reagent
+directly	I-Reagent
+to	B-Modifier
 the	O
 column	B-Location
-matrix.
-	I-Location
+matrix	I-Location
+.	I-Location
 
 Place	B-Action
 column	B-Location
@@ -166,8 +182,8 @@ for	O
 seconds	I-Time
 to	O
 elute	B-Action
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 
 

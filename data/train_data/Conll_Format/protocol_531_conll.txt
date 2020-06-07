@@ -1,30 +1,38 @@
 Digestion	B-Method
-NotI
-	I-Method
+NotI	I-Method
 
-Add:	B-Action
+Add	B-Action
+:	O
 -	O
 nuclease-free	B-Reagent
 water	I-Reagent
 qsp	B-Method
 50	B-Amount
 µL	I-Amount
-> 47 µL	I-Amount
--	O
-5µL	B-Amount
-10X	B-Concentration
-Buffer	B-Reagent
-O-	I-Reagent
-1µL	B-Amount
-DNA	B-Reagent
-(1	B-Concentration
-µg/µL)	I-Concentration
--	O
-1	B-Amount
+>	I-Amount
+47	I-Amount
 µL	I-Amount
-NotI	B-Reagent
-1 (10U/µL)	I-Reagent
-*.	O
+-	I-Amount
+5µL	I-Amount
+10X	I-Amount
+Buffer	B-Concentration
+O-	B-Reagent
+1µL	I-Reagent
+DNA	B-Amount
+(	B-Reagent
+1	I-Reagent
+µg/µL	B-Concentration
+)	I-Concentration
+-	I-Concentration
+1	O
+µL	O
+NotI	B-Amount
+1	B-Reagent
+(	I-Reagent
+10U/µL	I-Reagent
+)	B-Concentration
+*	I-Concentration
+.	I-Concentration
 
 Mix	B-Action
 gently	B-Modifier
@@ -34,16 +42,16 @@ down	I-Action
 for	O
 a	O
 few	B-Time
-seconds.
-	I-Time
+seconds	I-Time
+.	O
 
 Incubate	B-Action
 at	O
 37°C	B-Temperature
 for	O
 1-16	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 The	O
 digestion	B-Method
@@ -54,9 +62,11 @@ scaled	B-Action
 either	B-Modifier
 up	I-Modifier
 or	I-Modifier
-down.	I-Modifier
+down	I-Modifier
+.	O
 
-It's	O
+It	O
+'s	O
 possible	B-Modifier
 to	O
 process	B-Action
@@ -72,16 +82,16 @@ in	O
 µL	I-Amount
 of	O
 reaction	B-Reagent
-volume.
-	I-Reagent
+volume	I-Reagent
+.	O
 
 incubation	B-Action
 at	O
 80°C	B-Temperature
 for	O
 20	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Measure	B-Action
 the	O
@@ -92,22 +102,25 @@ DNA	B-Reagent
 sample	I-Reagent
 >	B-Amount
 50	I-Amount
-µL
-	I-Amount
+µL	I-Amount
 
 Add	B-Action
 1/10	B-Amount
 volume	I-Amount
 of	O
 sodium	B-Reagent
-acetate,	I-Reagent
+acetate	I-Reagent
+,	O
 pH	B-Measure-Type
-5.2,	B-Numerical
-(final	B-Modifier
+5.2	B-Numerical
+,	O
+(	O
+final	B-Modifier
 concentration	B-Measure-Type
 of	O
 0.3	B-Concentration
-M)	I-Concentration
+M	I-Concentration
+)	O
 
 -	O
 These	O
@@ -119,15 +132,17 @@ DNA	B-Reagent
 is	O
 in	B-Modifier
 TE	I-Modifier
-only;	I-Modifier
-if	I-Modifier
+only	I-Modifier
+;	O
+if	B-Modifier
 DNA	I-Modifier
 is	I-Modifier
 in	I-Modifier
 a	I-Modifier
 solution	I-Modifier
 containing	I-Modifier
-salt,	I-Modifier
+salt	I-Modifier
+,	O
 adjust	B-Action
 salt	B-Reagent
 accordingly	B-Modifier
@@ -136,15 +151,16 @@ achieve	B-Action
 the	O
 correct	B-Modifier
 final	I-Modifier
-concentration.	B-Measure-Type
+concentration	B-Measure-Type
+.	O
 >	B-Amount
 5	I-Amount
-µL.
-	I-Amount
+µL	I-Amount
+.	O
 
 Mix	B-Action
-well.
-	B-Modifier
+well	B-Modifier
+.	O
 
 Add	B-Action
 2	B-Amount
@@ -153,19 +169,26 @@ to	I-Amount
 volumes	I-Amount
 of	O
 cold	B-Temperature
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 ethanol	B-Reagent
-(calculated	B-Modifier
+(	O
+calculated	B-Modifier
 after	I-Modifier
 salt	I-Modifier
-addition).>	I-Modifier
-110	B-Numerical
-(2V).
-	B-Modifier
+addition	I-Modifier
+)	O
+.	O
+>	B-Numerical
+110	I-Numerical
+(	O
+2V	B-Modifier
+)	O
+.	O
 
 Mix	B-Action
-well.
-	B-Modifier
+well	B-Modifier
+.	O
 
 Place	B-Action
 on	O
@@ -176,9 +199,10 @@ at	O
 degrees	I-Temperature
 C	I-Temperature
 for	O
->20	B-Time
-minutes.
-	I-Time
+>	B-Time
+20	I-Time
+minutes	I-Time
+.	O
 
 Spin	B-Action
 a	O
@@ -188,32 +212,33 @@ in	O
 a	O
 microfuge	B-Location
 10-15	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Carefully	B-Modifier
 decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 1	B-Amount
 ml	I-Amount
-70%	B-Concentration
-ethanol.
-	B-Reagent
+70	B-Concentration
+%	I-Concentration
+ethanol	B-Reagent
+.	O
 
-Mix.
-	B-Action
+Mix	B-Action
+.	O
 
 Spin	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Carefully	B-Modifier
 decant	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Air	B-Action
 dry	I-Action
@@ -221,8 +246,8 @@ or	O
 briefly	B-Modifier
 vacuum	B-Action
 dry	I-Action
-pellet.
-	B-Reagent
+pellet	B-Reagent
+.	O
 
 Resuspend	B-Action
 pellet	B-Reagent
@@ -233,8 +258,8 @@ volume	I-Generic-Measure
 of	O
 TE	B-Reagent
 or	O
-water.
-	B-Reagent
+water	B-Reagent
+.	O
 
 
 

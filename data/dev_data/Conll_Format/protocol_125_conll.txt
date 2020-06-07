@@ -2,23 +2,22 @@ Whole	B-Modifier
 protein	B-Reagent
 extraction	B-Method
 from	O
-tissues
-	B-Reagent
+tissues	B-Reagent
 
 Pre-cool	B-Action
 lysis	B-Reagent
 buffer	I-Reagent
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Add	B-Action
 protease	B-Reagent
 inhibitors	I-Reagent
 just	O
 before	O
-using.
-	O
+using	O
+.	O
 
 Add	B-Action
 10	B-Reagent
@@ -27,13 +26,15 @@ lysis	I-Reagent
 buffer	I-Reagent
 to	O
 tissues	B-Location
-(1ml	B-Amount
+(	O
+1ml	B-Amount
 lysis	B-Reagent
 buffer	I-Reagent
 /	O
 100mg	B-Amount
-tissue).
-	B-Reagent
+tissue	B-Reagent
+)	O
+.	O
 
 Homogenize	B-Action
 tissues	B-Reagent
@@ -46,16 +47,18 @@ time	O
 /	O
 rest	O
 time	O
-20s,	B-Time
+20s	B-Time
+,	O
 repeat	B-Action
 5	B-Numerical
-times)	O
+times	O
+)	O
 until	O
 no	O
 visible	B-Modifier
 tissue	B-Reagent
-blocks.
-	I-Reagent
+blocks	I-Reagent
+.	O
 
 Mix	B-Action
 samples	B-Reagent
@@ -65,39 +68,43 @@ rotating	B-Device
 mixer	I-Device
 at	O
 4	B-Temperature
-°C for	I-Temperature
-2h.
-	B-Time
+°C	I-Temperature
+for	I-Temperature
+2h	O
+.	B-Time
 
 Spin	B-Action
 @	O
-16,000g,	B-Speed
-10min,	B-Time
-4°C.
-	B-Temperature
+16,000g	B-Speed
+,	O
+10min	B-Time
+,	O
+4°C	B-Temperature
+.	O
 
 If	O
-necessary,	O
+necessary	O
+,	O
 centrifuge	B-Action
-again.
-	O
+again	O
+.	O
 
 Save	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Determine	B-Action
 protein	B-Reagent
-conc.
-	I-Reagent
+conc	I-Reagent
+.	O
 
 Make	B-Action
 aliquots	B-Reagent
 and	O
 store	B-Action
 in	O
--80°C.
-	B-Temperature
+-80°C	B-Temperature
+.	O
 
 
 

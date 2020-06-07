@@ -1,11 +1,12 @@
 Picking	B-Action
-colonies
-	B-Reagent
+colonies	B-Reagent
 
 Number	B-Action
 and	O
 annotate	B-Action
-(color/size)	O
+(	O
+color/size	O
+)	O
 95	B-Numerical
 isolated	B-Modifier
 colonies	B-Reagent
@@ -13,8 +14,8 @@ on	O
 SPOT	B-Location
 0m	I-Location
 10ml	I-Location
-plates.
-	I-Location
+plates	I-Location
+.	O
 
 In	O
 2ml	B-Amount
@@ -39,13 +40,15 @@ autoclaved/sterile	B-Modifier
 200ul	B-Amount
 pipet	B-Location
 tips	I-Location
-(full	O
-box)	B-Location
+(	O
+full	O
+box	B-Location
+)	O
 pick	B-Action
 all	B-Modifier
 95	B-Numerical
-colonies.
-	B-Reagent
+colonies	B-Reagent
+.	O
 
 Use	O
 pipet	B-Location
@@ -62,8 +65,8 @@ place	B-Action
 pipet	B-Location
 tip	I-Location
 into	O
-well.
-	B-Location
+well	B-Location
+.	O
 
 Pick	B-Action
 colonies	B-Reagent
@@ -73,22 +76,25 @@ column	B-Location
 1	I-Location
 A	I-Location
 through	I-Location
-H,	I-Location
-column	I-Location
+H	I-Location
+,	O
+column	B-Location
 2	I-Location
 1	I-Location
 through	I-Location
 H	I-Location
 and	O
 so	O
-on.
-	O
+on	O
+.	O
 
 In	O
 well	B-Location
 96	I-Location
-(12	I-Location
-H)	I-Location
+(	O
+12	B-Location
+H	I-Location
+)	O
 place	B-Action
 the	O
 final	B-Modifier
@@ -97,8 +103,8 @@ pipet	B-Location
 tip	I-Location
 as	O
 a	O
-Negative.
-	B-Reagent
+Negative	B-Reagent
+.	O
 
 After	O
 all	O
@@ -108,12 +114,14 @@ have	O
 pipet	B-Location
 tips	I-Location
 in	O
-them,	B-Mention
+them	B-Mention
+,	O
 using	O
 a	O
 12	B-Location
 channel	I-Location
-pipet,	I-Location
+pipet	I-Location
+,	O
 attach	B-Action
 each	O
 row	B-Location
@@ -130,15 +138,15 @@ least	O
 times	O
 to	O
 dislodge	B-Action
-colony.
-	B-Reagent
+colony	B-Reagent
+.	O
 
 Remove	B-Action
 tips	B-Location
 after	O
 each	O
-row.
-	O
+row	O
+.	O
 
 Place	B-Action
 pore	B-Seal
@@ -147,8 +155,8 @@ over	O
 plate	B-Location
 and	O
 seal	B-Action
-well.
-	B-Location
+well	B-Location
+.	O
 
 Label	B-Action
 plate	B-Location
@@ -161,8 +169,7 @@ least	I-Modifier
 48	B-Time
 hours	I-Time
 to	O
-grow
-	B-Action
+grow	B-Action
 
 
 

@@ -10,10 +10,12 @@ Plasmid	I-Device
 DNA	I-Device
 minipreps	I-Device
 kit	I-Device
-(BS413),	O
+(	O
+BS413	O
+)	O
+,	O
 50	B-Numerical
-preps
-	B-Method
+preps	B-Method
 
 Add	B-Action
 1.5	B-Amount
@@ -24,27 +26,30 @@ culture	I-Reagent
 to	O
 a	O
 microcentrifuge	B-Location
-tube and	I-Location
+tube	I-Location
+and	O
 centrifuge	B-Action
-at	O
+at	I-Action
 12,000rpm	B-Speed
-for	O
-2	B-Time
-minutes.
-	I-Time
+for	I-Speed
+2	O
+minutes	B-Time
+.	I-Time
 
 Drain	B-Action
 the	O
 clarified	B-Modifier
-supernatant completely	B-Reagent
-leaving	O
+supernatant	B-Reagent
+completely	I-Reagent
+leaving	B-Modifier
 only	O
 the	O
 cell	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	I-Reagent
 
-Optional:	O
+Optional	O
+:	O
 Depending	O
 on	O
 ease	O
@@ -80,8 +85,8 @@ overnight	B-Time
 culture	B-Reagent
 has	O
 been	O
-added.
-	O
+added	O
+.	O
 
 Add	B-Action
 100uL	B-Amount
@@ -90,9 +95,11 @@ Solution	B-Reagent
 1	I-Reagent
 to	O
 the	O
-pellet,	B-Reagent
+pellet	B-Reagent
+,	O
 mix	B-Action
-well,	B-Modifier
+well	B-Modifier
+,	O
 ensuring	B-Action
 that	O
 no	O
@@ -104,7 +111,8 @@ let	O
 sit	B-Action
 for	O
 1	B-Time
-min.	I-Time
+min	I-Time
+.	I-Time
 
 Add	B-Action
 1μL	B-Amount
@@ -116,7 +124,10 @@ solution	B-Reagent
 from	O
 step	O
 2	O
-(optional).	O
+(	O
+optional	O
+)	O
+.	O
 
 Add	B-Action
 200µl	B-Amount
@@ -125,7 +136,8 @@ Solution	B-Reagent
 II	I-Reagent
 to	O
 the	O
-mixture,	B-Reagent
+mixture	B-Reagent
+,	O
 and	O
 mix	B-Action
 gently	B-Modifier
@@ -143,29 +155,31 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 To	O
 prevent	B-Action
 contamination	B-Method
 from	O
 genomic	B-Reagent
-DNA,	I-Reagent
+DNA	I-Reagent
+,	O
 do	O
 not	O
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Add	B-Action
 350µl	B-Amount
 of	O
 Solution	B-Reagent
-III,	I-Reagent
+III	I-Reagent
+,	O
 and	O
 mix	B-Action
-gently.
-	B-Modifier
+gently	B-Modifier
+.	O
 
 Incubate	B-Action
 at	O
@@ -173,8 +187,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 A	O
 fluffy	B-Modifier
@@ -186,8 +200,8 @@ lysate	B-Reagent
 should	O
 become	O
 less	O
-viscous.
-	B-Modifier
+viscous	B-Modifier
+.	O
 
 If	O
 VisualLyse	B-Reagent
@@ -196,7 +210,8 @@ been	O
 added	B-Action
 in	O
 step	O
-3,	O
+3	O
+,	O
 the	O
 suspension	B-Reagent
 should	O
@@ -212,42 +227,46 @@ gone	O
 and	O
 lysate	B-Reagent
 becomes	O
-colorless.
-	B-Modifier
+colorless	B-Modifier
+.	O
 
 Centrifuge	B-Action
 at	O
 12,000rpm	B-Speed
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Transfer	B-Action
 the	O
 above	B-Modifier
 supernatant	B-Reagent
-(step	O
-6)	O
+(	O
+step	O
+6	O
+)	O
 to	O
 the	O
 EZ-10	B-Location
-column.
-	I-Location
+column	I-Location
+.	O
 
 Centrifuge	B-Action
 at	O
 10,000rpm	B-Speed
 for	O
 2	B-Time
-minutes. 	I-Time
+minutes	I-Time
+.	O
 
 Discard	B-Action
 the	O
 flow-through	B-Reagent
 in	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 750µl	B-Amount
@@ -256,21 +275,24 @@ Wash	B-Reagent
 Solution	I-Reagent
 to	O
 the	O
-column,	B-Location
+column	B-Location
+,	O
 and	O
 centrifuge	B-Action
 at	O
 10,000rpm	B-Speed
 for	O
 2	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Repeat	B-Action
 wash	I-Action
 procedure	O
 in	O
 step	O
-8.	O
+8	O
+.	O
 
 Discard	B-Action
 the	O
@@ -278,8 +300,8 @@ flow-through	B-Reagent
 in	O
 the	O
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -293,7 +315,8 @@ remove	B-Action
 any	O
 residual	B-Modifier
 Wash	B-Reagent
-Solution.	I-Reagent
+Solution	I-Reagent
+.	O
 
 Transfer	B-Action
 the	O
@@ -304,8 +327,10 @@ clean	B-Modifier
 1.5ml	B-Amount
 microfuge	B-Location
 tube	I-Location
-(BT620-NS).
-	O
+(	O
+BT620-NS	O
+)	O
+.	O
 
 Add	B-Action
 50µl	B-Amount
@@ -326,8 +351,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Store	B-Action
 purified	B-Modifier
@@ -340,8 +365,7 @@ at	O
 rpm	I-Speed
 for	O
 2	B-Time
-minutes
-	I-Time
+minutes	I-Time
 
 
 

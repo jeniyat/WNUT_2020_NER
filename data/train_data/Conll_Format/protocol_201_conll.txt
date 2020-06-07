@@ -2,15 +2,17 @@ Staining	B-Action
 protocol	O
 for	O
 unicellular	B-Reagent
-protists:	I-Reagent
-Mitotracker	I-Reagent
+protists	I-Reagent
+:	O
+Mitotracker	B-Reagent
 and	O
-Dapi
-	B-Reagent
+Dapi	B-Reagent
 
-2%	B-Concentration
+2	B-Concentration
+%	I-Concentration
 PFA	B-Reagent
-Fixation:	B-Method
+Fixation	B-Method
+:	O
 Add	B-Action
 PFA	B-Reagent
 drop	B-Modifier
@@ -19,15 +21,18 @@ drop	I-Modifier
 and	O
 mixing	B-Action
 carefully	B-Modifier
-into 1mL	B-Amount
-cells	B-Reagent
-for	O
+into	O
+1mL	B-Amount
+cells	I-Amount
+for	B-Reagent
 a	O
 final	B-Modifier
-concentration	B-Measure-Type
-of	O
-2%PFA.
-	B-Concentration
+concentration	I-Modifier
+of	B-Measure-Type
+2	O
+%	B-Concentration
+PFA	I-Concentration
+.	B-Reagent
 
 Incubate	B-Action
 cells	B-Reagent
@@ -36,50 +41,60 @@ for	O
 min	I-Time
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Centrifuge	B-Action
 at	O
 1000g	B-Speed
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Wash	B-Action
 cells	B-Reagent
 with	O
 1XPBS	B-Concentration
-(1/2).	O
+(	O
+1/2	O
+)	O
+.	O
 
 Resuspend	B-Action
 cells	B-Reagent
 with	O
 1mL	B-Amount
-1xPBS.	B-Concentration
+1xPBS	B-Concentration
+.	O
 
 Add	B-Action
 1mM	B-Concentration
 mitotracker	B-Reagent
-dye.
-	I-Reagent
+dye	I-Reagent
+.	O
 
 Room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 protect	B-Action
 from	I-Action
-light. 	I-Action
+light	I-Action
+.	O
 
 Add	B-Action
 1/1000	B-Concentration
 DAPI	B-Reagent
-dye.
-	I-Reagent
+dye	I-Reagent
+.	O
 
 Room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 protect	B-Action
 from	I-Action
-light.	I-Action
+light	I-Action
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -90,7 +105,8 @@ minutes	I-Time
 and	O
 resuspend	B-Action
 with	O
-1xPBS. 	B-Concentration
+1xPBS	B-Concentration
+.	O
 
 Mount	B-Action
 your	O
@@ -98,49 +114,60 @@ slide	B-Location
 and	O
 ready	B-Action
 for	O
-observation!
-	O
+observation	O
+!	O
 
 Wash	B-Action
 cells	B-Reagent
 with	O
 1XPBS	B-Concentration
-(2/2).	O
+(	O
+2/2	O
+)	O
+.	O
 
 Incubate	B-Action
 for	O
 10	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 protect	B-Action
 from	I-Action
-light.	I-Action
+light	I-Action
+.	O
 
 Incubate	B-Action
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 protect	B-Action
 from	I-Action
-light.	I-Action
+light	I-Action
+.	O
 
 Wash	B-Action
 with	O
 1xPBS	B-Concentration
-(1/2).	O
+(	O
+1/2	O
+)	O
+.	O
 
 Wash	B-Action
 with	O
 1xPBS	B-Concentration
-(2/2)
-	O
+(	O
+2/2	O
+)	O
 
 
 

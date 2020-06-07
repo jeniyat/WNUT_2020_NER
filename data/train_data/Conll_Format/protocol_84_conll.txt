@@ -5,8 +5,7 @@ Sample	I-Method
 DNA	I-Method
 From	O
 Iron-Chloride	B-Reagent
-Precipitates
-	I-Reagent
+Precipitates	I-Reagent
 
 Locate	B-Action
 samples	B-Reagent
@@ -18,10 +17,12 @@ and	O
 number	B-Numerical
 of	O
 filters	B-Device
-(or	O
-portions)	O
-used.
-	B-Modifier
+(	O
+or	O
+portions	O
+)	O
+used	B-Modifier
+.	O
 
 Turn	B-Action
 the	O
@@ -44,12 +45,13 @@ foil	I-Device
 squares	I-Device
 as	O
 work	B-Location
-surface,	I-Location
+surface	I-Location
+,	O
 discarding	B-Action
 after	O
 each	O
-filter.
-	B-Action
+filter	B-Action
+.	O
 
 Remove	B-Action
 filter	B-Device
@@ -77,8 +79,8 @@ forceps	B-Device
 and	O
 sterile	B-Modifier
 applicator	B-Device
-sticks.
-	I-Device
+sticks	I-Device
+.	O
 
 Keep	B-Action
 filters	B-Device
@@ -88,16 +90,16 @@ refrigerated	B-Action
 until	B-Modifier
 ready	I-Modifier
 to	O
-suspend.
-	B-Action
+suspend	B-Action
+.	O
 
 Prepare	B-Action
 1x	B-Concentration
 or	O
 2x	B-Concentration
 resuspension	B-Reagent
-buffer.
-	I-Reagent
+buffer	I-Reagent
+.	O
 
 Prepare	B-Action
 20mL	B-Amount
@@ -110,8 +112,8 @@ filter	B-Device
 from	O
 20L	B-Amount
 of	O
-seawater.
-	B-Reagent
+seawater	B-Reagent
+.	O
 
 Add	B-Action
 resuspension	B-Reagent
@@ -129,8 +131,8 @@ of	O
 them	B-Mention
 in	O
 aluminum	B-Seal
-foil.
-	I-Seal
+foil	I-Seal
+.	O
 
 Put	B-Action
 foil	B-Seal
@@ -138,25 +140,29 @@ pack	I-Seal
 of	O
 tubes	B-Location
 on	O
-rotator,	B-Device
+rotator	B-Device
+,	O
 in	O
 cold	B-Location
-room,	I-Location
+room	I-Location
+,	O
 using	O
 rubber	B-Device
 bands	I-Device
 to	O
-secure,	B-Action
+secure	B-Action
+,	O
 and	O
 rotate	B-Action
 slowly	B-Modifier
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 To	O
 recover	B-Action
 resuspended	B-Modifier
-viruses,	B-Reagent
+viruses	B-Reagent
+,	O
 remove	B-Action
 the	O
 liquid	B-Reagent
@@ -175,10 +181,11 @@ fresh	B-Modifier
 15mL	B-Amount
 or	O
 50mL	B-Amount
-sterile,	B-Modifier
-labeled	I-Modifier
-tube.
-	B-Location
+sterile	B-Modifier
+,	O
+labeled	B-Modifier
+tube	B-Location
+.	O
 
 Using	O
 bleached	B-Modifier
@@ -188,7 +195,8 @@ forceps	B-Device
 or	O
 sterile	B-Modifier
 applicator	B-Device
-sticks,	I-Device
+sticks	I-Device
+,	O
 pull	B-Action
 edge	B-Location
 of	O
@@ -203,20 +211,22 @@ and	O
 secure	B-Action
 with	O
 the	O
-lid.
-	B-Seal
+lid	B-Seal
+.	O
 
 Centrifuge	B-Action
-1000rpm,	B-Speed
-5min,	B-Time
+1000rpm	B-Speed
+,	O
+5min	B-Time
+,	O
 18°C	B-Temperature
 to	O
 recover	B-Action
 liquid	B-Reagent
 left	B-Modifier
 on	O
-filter.
-	B-Device
+filter	B-Device
+.	O
 
 Remove	B-Action
 liquid	B-Reagent
@@ -234,21 +244,21 @@ of	O
 precipitate	B-Reagent
 clinging	B-Action
 to	O
-it.
-	B-Mention
+it	B-Mention
+.	O
 
 Rotate	B-Action
 for	O
 several	B-Time
 more	I-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Repeat	B-Action
 removal	I-Action
 of	O
-liquid.
-	B-Reagent
+liquid	B-Reagent
+.	O
 
 Dilute	B-Action
 stock	B-Reagent
@@ -258,11 +268,13 @@ in	O
 10x	B-Concentration
 DNase	B-Reagent
 buffer	I-Reagent
-(concentration	B-Measure-Type
+(	O
+concentration	B-Measure-Type
 =	O
 400	B-Concentration
-U/mL).
-	I-Concentration
+U/mL	I-Concentration
+)	O
+.	O
 
 Add	B-Action
 1/10th	B-Amount
@@ -274,7 +286,8 @@ to	O
 each	B-Modifier
 sample	B-Location
 Parafilm	I-Location
-tubes,	I-Location
+tubes	I-Location
+,	O
 wrap	B-Action
 them	B-Mention
 in	O
@@ -287,8 +300,8 @@ tube	B-Device
 rotator	I-Device
 with	O
 rubber	B-Device
-bands.
-	I-Device
+bands	I-Device
+.	O
 
 Incubate	B-Action
 by	O
@@ -299,8 +312,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Inactivate	B-Action
 DNase	B-Reagent
@@ -313,8 +326,8 @@ to	O
 0.1M	B-Concentration
 final	B-Reagent
 concentration	I-Reagent
-each.
-	O
+each	O
+.	O
 
 Mix	B-Action
 by	O
@@ -322,8 +335,8 @@ inverting	B-Action
 the	O
 tube	B-Location
 several	B-Numerical
-times.
-	O
+times	O
+.	O
 
 Add	B-Action
 the	O
@@ -341,8 +354,8 @@ Amicon	B-Device
 Ultra	I-Device
 100kDA	I-Device
 centrifugal	I-Device
-concentrators.
-	I-Device
+concentrators	I-Device
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -363,8 +376,8 @@ at	O
 less	B-Modifier
 than	I-Modifier
 2mL	B-Amount
-each.
-	B-Modifier
+each	B-Modifier
+.	O
 
 Put	B-Action
 1mL	B-Amount
@@ -374,24 +387,24 @@ on	O
 one	B-Numerical
 Wizard	B-Device
 Prep	I-Device
-column.
-	I-Device
+column	I-Device
+.	O
 
 Thoroughly	B-Modifier
 resuspend	B-Action
 resin	B-Reagent
 by	O
 shaking	B-Action
-vigorously.
-	B-Modifier
+vigorously	B-Modifier
+.	O
 
 Mix	B-Action
 1mL	B-Amount
 per	B-Modifier
 0.5-1.0mL	B-Amount
 of	O
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 Add	B-Action
 each	B-Modifier
@@ -408,8 +421,8 @@ attached	O
 to	O
 a	O
 Wizard	B-Location
-column.
-	I-Location
+column	I-Location
+.	O
 
 Push	B-Action
 through	I-Action
@@ -417,37 +430,38 @@ into	O
 a	O
 5mL	B-Amount
 snap-cap	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Save	B-Action
 this	O
 tube	B-Location
 until	B-Modifier
 DNA	B-Method
-quantification.
-	I-Method
+quantification	I-Method
+.	O
 
 Remove	B-Action
 syringe	B-Device
 from	O
 column	B-Location
 Remove	B-Action
-plunger.
-	B-Device
+plunger	B-Device
+.	O
 
 Reattach	B-Action
 syringe	B-Location
 barrel	I-Location
 to	O
-column.
-	B-Location
+column	B-Location
+.	O
 
 Wash	B-Action
 columns	B-Location
 with	O
 2mL	B-Amount
-80%	B-Concentration
+80	B-Concentration
+%	I-Concentration
 isopropanol	B-Reagent
 pushing	B-Action
 through	I-Action
@@ -458,8 +472,8 @@ barrel	I-Location
 into	O
 a	O
 waste	B-Location
-container.
-	I-Location
+container	I-Location
+.	O
 
 Put	B-Action
 columns	B-Location
@@ -478,12 +492,12 @@ minutes	I-Time
 to	O
 remove	B-Action
 residual	B-Modifier
-alcohol.
-	B-Reagent
+alcohol	B-Reagent
+.	O
 
 Discard	B-Action
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Place	B-Action
 column	B-Location
@@ -499,23 +513,27 @@ on	O
 50-100µL	B-Amount
 of	O
 TE	B-Reagent
-(0.02µm	B-Size
+(	O
+0.02µm	B-Size
 filtered	B-Modifier
 and	O
 heated	B-Modifier
 to	O
-80°C).
-	B-Temperature
+80°C	B-Temperature
+)	I-Temperature
+.	O
 
 Vortex	B-Action
 gently	B-Modifier
-(1400rpm)	B-Speed
+(	O
+1400rpm	B-Speed
+)	O
 and	O
 let	B-Action
 sit	I-Action
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -523,8 +541,8 @@ at	O
 g	I-Speed
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Transfer	B-Action
 extracted	B-Modifier
@@ -533,18 +551,20 @@ to	O
 Lo-bind	B-Reagent
 DNA	I-Reagent
 0.5mL	B-Amount
-tubes.
-	B-Location
+tubes	B-Location
+.	O
 
 Repeat	B-Action
 elution	B-Method
 above	O
-(steps	O
-33-36)	O
+(	O
+steps	O
+33-36	O
+)	O
 one	B-Numerical
 more	O
-time.
-	O
+time	O
+.	O
 
 Use	B-Action
 1-2µL	B-Amount
@@ -573,8 +593,10 @@ Pico	I-Reagent
 Green	I-Reagent
 assay	I-Reagent
 kit	I-Reagent
-(Invitrogen).
-	O
+(	O
+Invitrogen	O
+)	O
+.	O
 
 Use	B-Action
 the	O
@@ -587,22 +609,24 @@ ng/µL	B-Concentration
 DNA	B-Reagent
 for	O
 each	B-Modifier
-sample.
-	B-Reagent
+sample	B-Reagent
+.	O
 
 Store	B-Action
 in	O
 -80°C	B-Temperature
 ultra-low	B-Modifier
-freezer.
-	B-Device
+freezer	B-Device
+.	O
 
 Label	B-Action
 tubes	B-Location
 with	O
-date,	B-Measure-Type
-station,	I-Measure-Type
-depth	I-Measure-Type
+date	B-Measure-Type
+,	O
+station	B-Measure-Type
+,	O
+depth	B-Measure-Type
 and	O
 concentration	B-Measure-Type
 and	O
@@ -610,8 +634,7 @@ store	B-Action
 in	O
 -80°C	B-Temperature
 ultra-low	B-Modifier
-freezer
-	B-Device
+freezer	B-Device
 
 
 

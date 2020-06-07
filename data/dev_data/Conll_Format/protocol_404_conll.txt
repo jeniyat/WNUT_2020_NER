@@ -3,22 +3,27 @@ Polarization	I-Method
 of	O
 Mouse	B-Reagent
 CD4+	I-Reagent
-Cells
-	I-Reagent
+Cells	I-Reagent
 
 Harvest	B-Action
 lymph	B-Reagent
 nodes	I-Reagent
-(superficial	I-Reagent
-cervical,	I-Reagent
-mandibular,	I-Reagent
-axillary,	I-Reagent
-inguinal,	I-Reagent
+(	O
+superficial	B-Reagent
+cervical	I-Reagent
+,	O
+mandibular	B-Reagent
+,	O
+axillary	B-Reagent
+,	O
+inguinal	B-Reagent
+,	O
 and	O
-mesenteric)	B-Reagent
+mesenteric	B-Reagent
+)	O
 from	O
-mice.
-	B-Reagent
+mice	B-Reagent
+.	O
 
 Tease	B-Action
 lymph	B-Reagent
@@ -37,11 +42,14 @@ suspensions	I-Reagent
 in	O
 IMDM	B-Reagent
 containing	O
-10%	B-Concentration
+10	B-Concentration
+%	I-Concentration
 FCS	B-Reagent
-(complete	O
-medium).
-	B-Reagent
+(	O
+complete	O
+medium	B-Reagent
+)	O
+.	O
 
 Resuspend	B-Action
 cells	B-Reagent
@@ -56,8 +64,8 @@ method	I-Method
 to	O
 isolate	B-Action
 CD4+	B-Reagent
-cells.
-	I-Reagent
+cells	I-Reagent
+.	O
 
 Check	O
 out	O
@@ -65,12 +73,13 @@ Biocompare.com	O
 to	O
 find	B-Action
 useful	B-Modifier
-kits.
-	B-Device
+kits	B-Device
+.	O
 
 On	O
 day	B-Time
-0,	I-Time
+0	I-Time
+,	O
 coat	B-Action
 60	B-Size
 ×	I-Size
@@ -82,12 +91,15 @@ petri	I-Location
 dishes	I-Location
 with	O
 anti-mouse	B-Reagent
-CD3ε,	I-Reagent
+CD3ε	I-Reagent
+,	I-Reagent
 clone	I-Reagent
 145-2C11	I-Reagent
-(5	B-Concentration
-μg/ml).
-	I-Concentration
+(	O
+5	B-Concentration
+μg/ml	I-Concentration
+)	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -97,8 +109,8 @@ for	O
 hours	I-Time
 or	O
 4˚C	B-Temperature
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Aseptically	B-Modifier
 decant	B-Action
@@ -106,8 +118,8 @@ antibody	B-Reagent
 solution	I-Reagent
 from	O
 the	O
-plate.
-	B-Location
+plate	B-Location
+.	O
 
 Wash	B-Action
 plate	B-Location
@@ -115,12 +127,12 @@ plate	B-Location
 times	O
 with	O
 sterile	B-Modifier
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 Discard	B-Action
-liquid.
-	B-Reagent
+liquid	B-Reagent
+.	O
 
 Plate	B-Action
 CD4+	B-Reagent
@@ -128,8 +140,8 @@ cells	I-Reagent
 at	O
 10	B-Generic-Measure
 x106/5	I-Generic-Measure
-ml/dish.
-	I-Generic-Measure
+ml/dish	I-Generic-Measure
+.	O
 
 Culture	B-Action
 cells	B-Reagent
@@ -141,37 +153,55 @@ the	O
 presence	O
 of	O
 anti-mouse	B-Reagent
-CD28,	I-Reagent
+CD28	I-Reagent
+,	I-Reagent
 clone	I-Reagent
 37.51	I-Reagent
-(5	B-Concentration
-μg/mL),	I-Concentration
+(	O
+5	B-Concentration
+μg/mL	I-Concentration
+)	O
+,	O
 recombinant	B-Reagent
 human	I-Reagent
 TGF-β1	I-Reagent
-(10	B-Concentration
-ng/mL),	I-Concentration
+(	O
+10	B-Concentration
+ng/mL	I-Concentration
+)	O
+,	O
 recombinant	B-Reagent
 mouse	I-Reagent
-IL-4(10	I-Reagent
-ng/mL),	B-Concentration
+IL-4	I-Reagent
+(	O
+10	B-Concentration
+ng/mL	I-Concentration
+)	O
+,	O
 recombinant	B-Reagent
 mouse	I-Reagent
 IL-2	I-Reagent
-(20	B-Concentration
-ng/ml),	I-Concentration
+(	O
+20	B-Concentration
+ng/ml	I-Concentration
+)	O
+,	O
 and	O
 anti-mouse	B-Reagent
-IFN-γ,	I-Reagent
+IFN-γ	I-Reagent
+,	I-Reagent
 clone	I-Reagent
 XMG1.2	I-Reagent
-(10	B-Concentration
-μg/mL).
-	I-Concentration
+(	O
+10	B-Concentration
+μg/mL	I-Concentration
+)	O
+.	O
 
 On	O
 day	B-Time
-3,	I-Time
+3	I-Time
+,	O
 wash	B-Action
 cells	B-Reagent
 once	B-Numerical
@@ -188,7 +218,8 @@ PMA	B-Reagent
 and	O
 500	B-Concentration
 ng/mL	I-Concentration
-ionomycin,	B-Reagent
+ionomycin	B-Reagent
+,	O
 in	O
 the	O
 presence	O
@@ -196,18 +227,18 @@ of	O
 monensin	B-Reagent
 for	O
 6	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 After	O
-harvesting,	B-Action
+harvesting	B-Action
+,	O
 the	O
 cells	B-Reagent
 are	O
 ready	O
 for	O
-staining..
-	B-Action
+staining..	B-Action
 
 
 

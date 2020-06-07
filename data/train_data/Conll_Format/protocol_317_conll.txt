@@ -1,7 +1,6 @@
 Gel	B-Reagent
 DNA	I-Reagent
-Recovery
-	B-Method
+Recovery	B-Method
 
 Excise	B-Action
 up	B-Modifier
@@ -18,9 +17,10 @@ using	O
 a	O
 clean	B-Modifier
 scalpel	B-Device
-or razor	I-Device
-blade.
-	I-Device
+or	O
+razor	B-Device
+blade	I-Device
+.	I-Device
 
 Cut	B-Action
 as	B-Generic-Measure
@@ -34,32 +34,33 @@ to	O
 minimize	B-Action
 the	O
 gel	B-Reagent
-volume.
-	I-Reagent
+volume	I-Reagent
+.	O
 
-Place the	B-Action
+Place	B-Action
+the	O
 gel	B-Reagent
 slice	I-Reagent
-into	O
+into	I-Reagent
 a	O
 1.5	B-Amount
 mL	I-Amount
-tube.
-	B-Location
+tube	I-Amount
+.	B-Location
 
 Add	B-Action
 200	B-Amount
 µL	I-Amount
 of	O
 Extraction	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Mix	B-Action
 thoroughly	B-Modifier
 by	O
-pippeting.
-	B-Action
+pippeting	B-Action
+.	O
 
 Incubate	B-Action
 the	O
@@ -75,9 +76,10 @@ until	O
 the	O
 gel	B-Reagent
 slice	I-Reagent
-is completely	B-Modifier
-dissolved.
-	B-Action
+is	O
+completely	B-Modifier
+dissolved	I-Modifier
+.	B-Action
 
 Mix	B-Action
 the	O
@@ -89,9 +91,10 @@ few	B-Time
 minutes	I-Time
 to	O
 facilitate	B-Action
-the melting	B-Method
-process.
-	I-Method
+the	O
+melting	B-Method
+process	I-Method
+.	I-Method
 
 Ensure	B-Action
 that	O
@@ -99,19 +102,23 @@ the	O
 gel	B-Reagent
 is	O
 completely	B-Modifier
-dissolved.	I-Modifier
+dissolved	I-Modifier
+.	O
 
 Add	B-Action
 200	B-Amount
 µL	I-Amount
 of	O
 ethanol	B-Reagent
-(96-100%)	B-Concentration
+(	O
+96-100	B-Concentration
+%	I-Concentration
+)	O
 and	O
 mix	B-Action
 by	O
-pipetting.
-	B-Method
+pipetting	B-Method
+.	O
 
 Transfer	B-Action
 the	O
@@ -124,23 +131,27 @@ Micro	I-Location
 Column	I-Location
 preassembled	B-Action
 with	O
-a collection	B-Location
-tube.
-	I-Location
+a	O
+collection	B-Location
+tube	I-Location
+.	I-Location
 
 Centrifuge	B-Action
 the	O
 column	B-Location
 for	O
 1	B-Time
-minute at	I-Time
+minute	I-Time
+at	O
 14,000	B-Speed
 ×	I-Speed
-g.	I-Speed
+g	I-Speed
+.	I-Speed
 
 Discard	B-Action
-the flow-through.
-	B-Reagent
+the	O
+flow-through	B-Reagent
+.	I-Reagent
 
 Place	B-Action
 the	O
@@ -152,8 +163,8 @@ back	O
 into	O
 the	O
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -161,24 +172,31 @@ Add	B-Action
 of	O
 Prewash	B-Reagent
 Buffer	I-Reagent
-(supplemented	B-Action
+(	O
+supplemented	B-Action
 with	O
-ethanol,	B-Reagent
+ethanol	B-Reagent
+,	O
 see	O
 p.	O
-3)	O
+3	O
+)	O
 to	O
 the	O
-DNA Purification	B-Location
+DNA	B-Location
+Purification	I-Location
 Micro	I-Location
 Column	I-Location
-and	O
+and	I-Location
 centrifuge	B-Action
-for	O
-1	B-Time
-minute at 14,000	I-Time
-×	B-Speed
-g.	I-Speed
+for	I-Action
+1	O
+minute	B-Time
+at	I-Time
+14,000	B-Speed
+×	I-Speed
+g	I-Speed
+.	I-Speed
 
 Discard	B-Action
 the	O
@@ -190,9 +208,10 @@ purification	B-Location
 column	I-Location
 back	O
 into	O
-the collection	B-Location
-tube.
-	I-Location
+the	O
+collection	B-Location
+tube	I-Location
+.	I-Location
 
 Add	B-Action
 700	B-Amount
@@ -200,40 +219,46 @@ Add	B-Action
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
-(supplemented	B-Action
+(	O
+supplemented	B-Action
 with	O
-ethanol,	B-Reagent
+ethanol	B-Reagent
+,	O
 see	O
 p.	O
-3)	O
+3	O
+)	O
 to	O
 the	O
-DNA Purification	B-Location
+DNA	B-Location
+Purification	I-Location
 Micro	I-Location
 Column	I-Location
-and	O
+and	I-Location
 centrifuge	B-Action
-for	O
-1	B-Time
-minute at	I-Time
+for	I-Action
+1	O
+minute	B-Time
+at	I-Time
 14,000	B-Speed
 ×	I-Speed
-g.
-	I-Speed
+g	I-Speed
+.	I-Speed
 
-Discard the	B-Action
-flow-through	B-Reagent
-and	O
-place	B-Action
+Discard	B-Action
 the	O
+flow-through	B-Reagent
+and	I-Reagent
+place	B-Action
+the	I-Action
 purification	B-Location
 column	I-Location
-back	O
+back	I-Location
 into	O
 the	O
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	I-Location
 
 Repeat	B-Action
 step	B-Method
@@ -247,19 +272,20 @@ Micro	I-Location
 Column	I-Location
 for	O
 an	O
-additional 1	B-Time
-minute	I-Time
-at	O
+additional	O
+1	O
+minute	B-Time
+at	I-Time
 14,000	B-Speed
 ×	I-Speed
 g	I-Speed
-to	O
+to	I-Speed
 completely	B-Modifier
-remove	B-Action
-residual	B-Modifier
-Wash	B-Reagent
-Buffer.
-	I-Reagent
+remove	I-Modifier
+residual	B-Action
+Wash	B-Modifier
+Buffer	B-Reagent
+.	I-Reagent
 
 Transfer	B-Action
 the	O
@@ -284,20 +310,21 @@ the	O
 DNA	B-Location
 Purification	I-Location
 Micro	I-Location
-Column.
-	I-Location
+Column	I-Location
+.	O
 
 Centrifuge	B-Action
 for	O
-1 minute	B-Time
-at	O
+1	B-Time
+minute	I-Time
+at	I-Time
 14,000	B-Speed
 ×	I-Speed
 g	I-Speed
-to	O
+to	I-Speed
 elute	B-Action
-DNA.
-	B-Reagent
+DNA	I-Action
+.	B-Reagent
 
 
 

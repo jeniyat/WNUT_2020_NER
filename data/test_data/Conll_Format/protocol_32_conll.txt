@@ -3,8 +3,7 @@ using	O
 Protein	B-Reagent
 A/G	I-Reagent
 Magnetic	I-Reagent
-Beads
-	I-Reagent
+Beads	I-Reagent
 
 Rinse	B-Action
 a	O
@@ -16,8 +15,8 @@ of	O
 confluent	B-Reagent
 cells	I-Reagent
 with	O
-PBS.
-	B-Reagent
+PBS	B-Reagent
+.	O
 
 Lyse	B-Action
 the	O
@@ -27,8 +26,8 @@ with	O
 ml	I-Amount
 cold	B-Modifier
 Immunoprecipitation	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Maintain	O
 constant	O
@@ -37,35 +36,36 @@ for	O
 30	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Scrape	B-Action
 the	O
 cells	B-Reagent
 from	O
 the	O
-dish.
-	B-Location
+dish	B-Location
+.	O
 
 Sonicate	B-Action
 on	O
 ice	B-Location
 for	O
 5	B-Time
-seconds;	I-Time
+seconds	I-Time
+;	O
 repeat	O
 4	B-Numerical
-times.
-	O
+times	O
+.	O
 
 Centrifuge	B-Action
 for	O
 5	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Assay	B-Action
 for	O
@@ -80,15 +80,16 @@ approximately	B-Modifier
 mg/ml	I-Concentration
 with	O
 Immunoprecipitation	B-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 In	O
 a	O
 1.5	B-Amount
 ml	I-Amount
 microcentrifuge	B-Location
-tube,	I-Location
+tube	I-Location
+,	O
 add	B-Action
 25	B-Amount
 μl	I-Amount
@@ -102,20 +103,20 @@ to	O
 of	O
 crude	B-Reagent
 cell	I-Reagent
-extract.
-	I-Reagent
+extract	I-Reagent
+.	O
 
 Gently	B-Modifier
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Incubate	B-Action
 at	O
 4°C	B-Temperature
 for	O
 1	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Apply	B-Action
 magnetic	B-Method
@@ -131,8 +132,8 @@ the	O
 side	B-Location
 of	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Pipette	B-Action
 supernatant	B-Reagent
@@ -146,8 +147,8 @@ tube	I-Location
 and	O
 discard	B-Action
 the	O
-beads.
-	B-Reagent
+beads	B-Reagent
+.	O
 
 Add	B-Action
 1-5	B-Amount
@@ -157,19 +158,19 @@ antibody	B-Reagent
 to	O
 crude	B-Reagent
 cell	I-Reagent
-lysate.
-	I-Reagent
+lysate	I-Reagent
+.	O
 
-Vortex.
-	B-Action
+Vortex	B-Action
+.	O
 
 Incubate	B-Action
 at	O
 4°C	B-Temperature
 for	O
 1	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Add	B-Action
 25	B-Amount
@@ -179,12 +180,12 @@ Protein	B-Reagent
 A/G	I-Reagent
 Magnetic	I-Reagent
 Beads	I-Reagent
-suspension.
-	I-Reagent
+suspension	I-Reagent
+.	O
 
 Gently	B-Modifier
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
 Incubate	B-Action
 with	O
@@ -193,8 +194,8 @@ for	O
 1	B-Time
 hour	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Apply	B-Action
 magnetic	B-Method
@@ -207,18 +208,21 @@ the	O
 side	B-Location
 of	O
 the	O
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Carefully	B-Modifier
 pipette	B-Action
 to	O
 remove	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
-(wash	B-Action
-#1)	O
+(	O
+wash	B-Action
+#	O
+1	O
+)	O
 Wash	B-Action
 with	O
 500	B-Amount
@@ -228,11 +232,14 @@ Immunoprecipitation	B-Reagent
 Buffer	I-Reagent
 by	O
 gentle	B-Modifier
-vortex.
-	B-Action
+vortex	B-Action
+.	O
 
-(wash	B-Action
-#1)	O
+(	O
+wash	B-Action
+#	O
+1	O
+)	O
 Apply	B-Action
 magnetic	B-Method
 field	I-Method
@@ -240,23 +247,31 @@ then	O
 remove	B-Action
 supernatant	B-Reagent
 and	O
-discard.
-	B-Action
+discard	B-Action
+.	O
 
-(wash	B-Action
-#2)	O
+(	O
+wash	B-Action
+#	O
+2	O
+)	O
 Wash	B-Action
-with 500	B-Amount
-μl of	I-Amount
+with	O
+500	B-Amount
+μl	I-Amount
+of	I-Amount
 Immunoprecipitation	B-Reagent
 Buffer	I-Reagent
-by	O
+by	I-Reagent
 gentle	B-Modifier
-vortex.
-	B-Action
+vortex	I-Modifier
+.	B-Action
 
-(wash	B-Action
-#2)	O
+(	O
+wash	B-Action
+#	O
+2	O
+)	O
 Apply	B-Action
 magnetic	B-Method
 field	I-Method
@@ -264,23 +279,31 @@ then	O
 remove	B-Action
 supernatant	B-Reagent
 and	O
-discard.
-	B-Action
+discard	B-Action
+.	O
 
-(wash	B-Action
-#3)	O
+(	O
+wash	B-Action
+#	O
+3	O
+)	O
 Wash	B-Action
-with 500	B-Amount
-μl of	I-Amount
+with	O
+500	B-Amount
+μl	I-Amount
+of	I-Amount
 Immunoprecipitation	B-Reagent
 Buffer	I-Reagent
-by	O
+by	I-Reagent
 gentle	B-Modifier
-vortex.
-	B-Action
+vortex	I-Modifier
+.	B-Action
 
-(wash	B-Action
-#3)	O
+(	O
+wash	B-Action
+#	O
+3	O
+)	O
 Apply	B-Action
 magnetic	B-Method
 field	I-Method
@@ -288,8 +311,8 @@ then	O
 remove	B-Action
 supernatant	B-Reagent
 and	O
-discard.
-	B-Action
+discard	B-Action
+.	O
 
 Resuspend	B-Action
 bead	B-Reagent
@@ -302,8 +325,8 @@ of	O
 SDS	B-Reagent
 Sample	I-Reagent
 Loading	I-Reagent
-Buffer.
-	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Incubate	B-Action
 sample	B-Reagent
@@ -311,8 +334,8 @@ at	O
 70°C	B-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Apply	B-Action
 magnetic	B-Method
@@ -326,8 +349,8 @@ on	O
 SDS-PAGE	B-Reagent
 gel	I-Reagent
 and	O
-electrophorese.
-	B-Action
+electrophorese	B-Action
+.	O
 
 
 

@@ -4,8 +4,7 @@ of	O
 Foxp3	B-Reagent
 in	O
 Frozen	B-Reagent
-Sections
-	I-Reagent
+Sections	I-Reagent
 
 Thaw	B-Action
 frozen	B-Modifier
@@ -19,11 +18,14 @@ avoid	O
 damage	O
 by	O
 frozen	O
-watercrystals.	B-Reagent
-(Approximately	B-Modifier
+watercrystals	B-Reagent
+.	O
+(	O
+Approximately	B-Modifier
 1	B-Time
-hour.)
-	I-Time
+hour	I-Time
+.	O
+)	O
 
 Fix	B-Action
 for	O
@@ -31,8 +33,12 @@ for	O
 minutes	I-Time
 in	O
 acetone	B-Reagent
-(-20°C)	B-Temperature
-(note:	O
+(	O
+-20°C	B-Temperature
+)	O
+(	O
+note	O
+:	O
 do	O
 not	O
 use	B-Action
@@ -40,8 +46,9 @@ more	B-Modifier
 often	I-Modifier
 than	I-Modifier
 5	B-Numerical
-times).
-	O
+times	O
+)	O
+.	O
 
 Dry	B-Action
 for	O
@@ -49,19 +56,22 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 Incubate	B-Action
 sections	B-Reagent
 in	O
 TBS-T	B-Reagent
-(50	B-Amount
+(	O
+50	B-Amount
 mM	I-Amount
-Tris,	B-Reagent
+Tris	B-Reagent
+,	O
 150	B-Amount
 mM	I-Amount
-NaCl,	B-Reagent
+NaCl	B-Reagent
+,	O
 adjust	B-Action
 pH	B-Measure-Type
 with	O
@@ -69,15 +79,18 @@ HCl	B-Reagent
 to	O
 7.6	B-pH
 with	O
-0.05%	B-Concentration
+0.05	B-Concentration
+%	I-Concentration
 Tween	B-Reagent
-20)	I-Reagent
+20	I-Reagent
+)	O
 for	O
 15	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
-Pretreatment:	O
+Pretreatment	O
+:	O
 Perform	B-Action
 antigen	B-Method
 retrieval	I-Method
@@ -85,8 +98,8 @@ or	O
 enzyme	B-Method
 digestion	I-Method
 if	O
-needed.
-	O
+needed	O
+.	O
 
 Wash	B-Action
 twice	B-Numerical
@@ -96,7 +109,9 @@ minutes	I-Time
 each	B-Modifier
 with	O
 TBS-T	B-Reagent
-(Optional:	O
+(	O
+Optional	O
+:	O
 staining	B-Method
 of	I-Method
 surface	I-Method
@@ -105,15 +120,19 @@ can	O
 be	O
 performed	B-Action
 before	O
-“Cleaning”	O
-step)
-	O
+“	O
+Cleaning	O
+”	O
+step	O
+)	O
 
-Cleaning:	O
+Cleaning	O
+:	O
 Incubate	B-Action
 sections	B-Reagent
 with	O
-1%	B-Concentration
+1	B-Concentration
+%	I-Concentration
 Triton	B-Reagent
 X-100	I-Reagent
 diluted	B-Action
@@ -124,8 +143,8 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
 This	O
 step	O
@@ -135,30 +154,36 @@ to	O
 reduce	O
 background	B-Action
 staining	I-Action
-(longer	O
+(	O
+longer	O
 incubationmay	B-Method
 be	O
 more	O
-effective,	O
+effective	O
+,	O
 especially	O
 for	O
 sections	B-Reagent
 thicker	B-Modifier
 than	I-Modifier
 10	B-Size
-μm).
-	I-Size
+μm	I-Size
+)	O
+.	O
 
 Normal	B-Reagent
 Serum	I-Reagent
-Blocking:	B-Action
+Blocking	B-Action
+:	O
 Without	O
-washing,	B-Action
-incubate	I-Action
+washing	B-Action
+,	O
+incubate	B-Action
 sections	B-Reagent
 directly	B-Modifier
 with	O
-5%	B-Concentration
+5	B-Concentration
+%	I-Concentration
 normal	B-Reagent
 mouse/rat/rabbit	I-Reagent
 serum	I-Reagent
@@ -169,10 +194,11 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
-Note:	O
+Note	O
+:	O
 Normal	B-Reagent
 serum	I-Reagent
 should	O
@@ -186,8 +212,8 @@ the	O
 secondary	B-Modifier
 antibody	B-Reagent
 is	O
-raised.
-	O
+raised	O
+.	O
 
 Wash	B-Action
 three	B-Numerical
@@ -197,16 +223,18 @@ for	O
 minutes	I-Time
 each	B-Modifier
 with	O
-TBS-T.
-	B-Reagent
+TBS-T	B-Reagent
+.	O
 
 Endogenous	B-Reagent
 Peroxidase	I-Reagent
-Blocking:	B-Action
-Incubate	I-Action
+Blocking	B-Action
+:	O
+Incubate	B-Action
 sections	B-Reagent
 with	O
-3%	B-Concentration
+3	B-Concentration
+%	I-Concentration
 H2O2	B-Reagent
 in	O
 TBS	B-Reagent
@@ -216,17 +244,21 @@ minutes	I-Time
 to	O
 block	B-Action
 endogenous	B-Reagent
-peroxidise.	I-Reagent
-(Recommended	O
+peroxidise	I-Reagent
+.	O
+(	O
+Recommended	O
 for	O
 liver	B-Reagent
-sections,	I-Reagent
+sections	I-Reagent
+,	O
 but	O
 optional	O
 for	O
 other	O
-tissues.)
-	B-Reagent
+tissues	B-Reagent
+.	O
+)	O
 
 Wash	B-Action
 3	B-Numerical
@@ -236,11 +268,12 @@ for	O
 minutes	I-Time
 each	B-Modifier
 with	O
-TBS-T.
-	B-Reagent
+TBS-T	B-Reagent
+.	O
 
 Primary	B-Modifier
-Antibody:	B-Reagent
+Antibody	B-Reagent
+:	O
 Incubate	B-Action
 sections	B-Reagent
 with	O
@@ -249,27 +282,34 @@ antibody	I-Reagent
 at	O
 its	O
 optimaldilution	B-Concentration
-(Mouse	B-Reagent
+(	O
+Mouse	B-Reagent
 Foxp3-Alexa	I-Reagent
 Fluor®	I-Reagent
-647,	O
+647	O
+,	O
 clone	O
-MF-14,	O
+MF-14	O
+,	O
 cat	O
 #	O
-126408)	O
+126408	O
+)	O
 in	O
-“antibodydilution	B-Reagent
-buffer“	I-Reagent
+“	O
+antibodydilution	B-Reagent
+buffer	I-Reagent
+“	O
 for	O
 30-60	B-Time
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.
-	I-Temperature
+temperature	I-Temperature
+.	O
 
-Note:	O
+Note	O
+:	O
 Using	B-Action
 a	O
 purifiedunconjugated	B-Modifier
@@ -284,8 +324,8 @@ improve	O
 staining	B-Action
 due	O
 tosignal	O
-amplifcation.
-	B-Method
+amplifcation	B-Method
+.	O
 
 Wash	B-Action
 twice	B-Numerical
@@ -293,8 +333,8 @@ for	O
 2	B-Time
 minutes	I-Time
 with	O
-TBS-T.
-	B-Reagent
+TBS-T	B-Reagent
+.	O
 
 Counterstain	B-Action
 twice	B-Numerical
@@ -310,16 +350,16 @@ for	O
 2	B-Time
 minutes	I-Time
 with	O
-TBS-T.
-	B-Reagent
+TBS-T	B-Reagent
+.	O
 
 Coverslip	B-Action
 with	O
 Mowiol	B-Reagent
 or	O
 mounting	B-Reagent
-medium.
-	I-Reagent
+medium	I-Reagent
+.	O
 
 
 

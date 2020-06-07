@@ -4,14 +4,14 @@ Kit	I-Device
 Protocol	O
 -	O
 Western	B-Action
-blot
-	I-Action
+blot	I-Action
 
 Prepare	B-Action
 two	B-Numerical
 identical	B-Modifier
 SDS-PAGE	B-Reagent
-gels.	I-Reagent
+gels	I-Reagent
+.	O
 
 Load	B-Action
 and	O
@@ -19,43 +19,52 @@ run	B-Action
 samples	B-Reagent
 in	O
 loading	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Recommended	O
 loading	B-Action
 of	O
-gel: 
-	B-Reagent
+gel	B-Reagent
+:	O
 
 Lane	B-Location
-1:	I-Location
+1	I-Location
+:	O
 Molecular	B-Reagent
 Weight	I-Reagent
-Marker.
-	I-Reagent
+Marker	I-Reagent
+.	O
 
 Lanes	B-Location
-2,	I-Location
-8,	I-Location
-10:	I-Location
-Blank.
-	O
+2	I-Location
+,	I-Location
+8	I-Location
+,	I-Location
+10	I-Location
+:	O
+Blank	O
+.	O
 
 Lanes	B-Location
-3-6:	I-Location
-Samples.
-	B-Reagent
+3-6	I-Location
+:	O
+Samples	B-Reagent
+.	O
 
 Lane	B-Location
-7:	I-Location
+7	I-Location
+:	O
 Positive	B-Reagent
-Control.
-	I-Reagent
+Control	I-Reagent
+.	O
 
 Lane	B-Location
-9:	I-Location
+9	I-Location
+:	O
 Negative	B-Reagent
-Control.	I-Reagent
+Control	I-Reagent
+.	O
 
 Confirm	B-Action
 the	O
@@ -72,7 +81,8 @@ proteins	B-Reagent
 to	O
 membrane	B-Location
 of	O
-choice.	O
+choice	O
+.	O
 
 Confirm	B-Action
 protein	B-Reagent
@@ -83,7 +93,8 @@ or	O
 other	O
 method	B-Method
 of	I-Method
-choice.	I-Method
+choice	I-Method
+.	O
 
 Block	B-Action
 each	B-Amount
@@ -99,18 +110,21 @@ diluted	B-Modifier
 Neu5Gc	B-Reagent
 Assay	I-Reagent
 Blocking	I-Reagent
-Solution,	I-Reagent
+Solution	I-Reagent
+,	O
 gently	B-Modifier
 rocking	B-Action
 at	O
-4°C. 	B-Temperature
+4°C	B-Temperature
+.	O
 
 Incubate	B-Action
 first	B-Reagent
 blot	I-Reagent
 in	O
 Primary	B-Reagent
-Antibody,	I-Reagent
+Antibody	I-Reagent
+,	O
 and	O
 one	O
 blot	B-Reagent
@@ -128,41 +142,8 @@ at	O
 4°C	B-Temperature
 with	O
 gentle	B-Modifier
-rocking.	B-Action
-
-Wash	B-Action
-blot	B-Reagent
-with	O
-50	B-Amount
-ml	I-Amount
-TBS-T	B-Reagent
-for	O
-5	B-Time
-min	I-Time
-at	O
-25°C,	B-Temperature
-gently	B-Modifier
 rocking	B-Action
-5	B-Numerical
-times.
-	O
-
-Incubate	B-Action
-blots	B-Reagent
-with	O
-optimal	B-Concentration
-dilution	I-Concentration
-of	O
-enzyme-conjugated	B-Reagent
-secondary	I-Reagent
-antibody	I-Reagent
-of	O
-choice	O
-at	O
-25°C	B-Temperature
-for	O
-1	B-Time
-hour.	I-Time
+.	O
 
 Wash	B-Action
 blot	B-Reagent
@@ -179,8 +160,44 @@ at	O
 gently	B-Modifier
 rocking	B-Action
 5	B-Numerical
-times.
-	O
+times	O
+.	O
+
+Incubate	B-Action
+blots	B-Reagent
+with	O
+optimal	B-Concentration
+dilution	I-Concentration
+of	O
+enzyme-conjugated	B-Reagent
+secondary	I-Reagent
+antibody	I-Reagent
+of	O
+choice	O
+at	O
+25°C	B-Temperature
+for	O
+1	B-Time
+hour	I-Time
+.	O
+
+Wash	B-Action
+blot	B-Reagent
+with	O
+50	B-Amount
+ml	I-Amount
+TBS-T	B-Reagent
+for	O
+5	B-Time
+min	I-Time
+at	O
+25°C	B-Temperature
+,	O
+gently	B-Modifier
+rocking	B-Action
+5	B-Numerical
+times	O
+.	O
 
 Develop	B-Action
 each	B-Amount
@@ -188,8 +205,7 @@ blot	B-Reagent
 with	O
 the	O
 appropriate	B-Reagent
-substrate
-	I-Reagent
+substrate	I-Reagent
 
 
 

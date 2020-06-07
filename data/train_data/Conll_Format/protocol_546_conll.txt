@@ -6,9 +6,11 @@ DNA	I-Device
 Gel	I-Device
 Extraction	I-Device
 Kit	I-Device
-(NEB	O
-#T1020)
-	O
+(	O
+NEB	O
+#	O
+T1020	O
+)	O
 
 Excise	B-Action
 the	O
@@ -17,14 +19,15 @@ fragment	I-Reagent
 from	O
 the	O
 agarose	B-Reagent
-gel,	I-Reagent
+gel	I-Reagent
+,	O
 taking	O
 care	O
 to	O
 trim	B-Action
 excess	B-Modifier
-agarose.
-	B-Reagent
+agarose	B-Reagent
+.	O
 
 Transfer	B-Action
 to	O
@@ -37,15 +40,15 @@ and	O
 weigh	B-Action
 the	O
 gel	B-Reagent
-slice.
-	I-Reagent
+slice	I-Reagent
+.	O
 
 Minimize	B-Action
 exposure	B-Modifier
 to	I-Modifier
 UV	I-Modifier
-light.
-	I-Modifier
+light	I-Modifier
+.	O
 
 Add	B-Action
 4	B-Amount
@@ -58,7 +61,9 @@ to	O
 the	O
 gel	B-Reagent
 slice	I-Reagent
-(e.g.,	O
+(	O
+e.g.	O
+,	O
 400	B-Amount
 μl	I-Amount
 buffer	B-Reagent
@@ -68,16 +73,20 @@ per	B-Modifier
 or	O
 100	B-Amount
 mg	I-Amount
-agarose).
-	B-Reagent
+agarose	B-Reagent
+)	O
+.	O
 
 Incubate	B-Action
 the	O
 sample	B-Reagent
 between	B-Modifier
 37–55°C	B-Temperature
-(typically	B-Modifier
-50°C),	B-Temperature
+(	O
+typically	B-Modifier
+50°C	B-Temperature
+)	O
+,	O
 until	B-Modifier
 the	I-Modifier
 gel	I-Modifier
@@ -85,10 +94,12 @@ slice	I-Modifier
 is	I-Modifier
 completely	I-Modifier
 dissolved	I-Modifier
-(generally	I-Modifier
+(	O
+generally	B-Modifier
 5–10	B-Time
-minutes).
-	I-Time
+minutes	I-Time
+)	O
+.	O
 
 The	O
 time	B-Time
@@ -105,7 +116,8 @@ the	I-Modifier
 size	I-Modifier
 of	I-Modifier
 the	I-Modifier
-slice,	I-Modifier
+slice	I-Modifier
+,	I-Modifier
 the	I-Modifier
 temperature	I-Modifier
 used	I-Modifier
@@ -121,8 +133,8 @@ agarose	I-Modifier
 used	I-Modifier
 in	I-Modifier
 the	I-Modifier
-gel.
-	I-Modifier
+gel	I-Modifier
+.	O
 
 The	O
 time	B-Time
@@ -134,8 +146,8 @@ used	B-Action
 just	B-Modifier
 as	I-Modifier
 a	I-Modifier
-guideline.
-	I-Modifier
+guideline	I-Modifier
+.	O
 
 Insert	B-Action
 column	B-Location
@@ -147,8 +159,8 @@ load	B-Action
 sample	B-Reagent
 onto	O
 the	O
-column.
-	B-Location
+column	B-Location
+.	O
 
 Spin	B-Action
 for	O
@@ -157,18 +169,19 @@ minute	I-Time
 at	O
 16,000	B-Speed
 x	I-Speed
-g,	I-Speed
+g	I-Speed
+,	O
 then	O
 discard	B-Action
-flow-through.
-	B-Reagent
+flow-through	B-Reagent
+.	O
 
 Re-insert	B-Action
 column	B-Location
 into	O
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -176,36 +189,41 @@ Add	B-Action
 DNA	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
-(with	O
+(	O
+with	O
 ethanol	B-Reagent
-added) and	O
+added	O
+)	O
+and	O
 spin	B-Action
-for	O
-1	B-Time
-minute	I-Time
-at	O
+for	I-Action
+1	O
+minute	B-Time
+at	I-Time
 16,000	B-Speed
 x	I-Speed
-g. 
-	I-Speed
+g	I-Speed
+.	I-Speed
 
 Discarding	B-Action
 flow-through	B-Reagent
 is	O
-optional.
-	B-Modifier
+optional	B-Modifier
+.	O
 
 Repeat	B-Action
 Step	O
 5	O
-(Step	O
-5:	O
+(	O
+Step	O
+5	O
+:	O
 Re-insert	B-Action
 column	B-Location
 into	O
 collection	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -221,14 +239,15 @@ minute	I-Time
 at	O
 16,000	B-Speed
 x	I-Speed
-g. 
-	I-Speed
+g	I-Speed
+.	O
 
 Discarding	B-Action
 flow-through	B-Reagent
 is	O
-optional).
-	B-Modifier
+optional	B-Modifier
+)	O
+.	O
 
 Transfer	B-Action
 column	B-Location
@@ -238,36 +257,38 @@ clean	O
 1.5	B-Size
 ml	I-Size
 microfuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Use	B-Modifier
 care	I-Modifier
 to	O
 ensure	B-Action
-that the	O
+that	O
+the	O
 tip	B-Location
-of	O
+of	I-Location
 the	O
 column	B-Location
-does	B-Action
-not	I-Action
+does	I-Location
+not	B-Action
 come	I-Action
 into	I-Action
 contact	I-Action
-with	O
+with	I-Action
 the	O
-flow-through.
-	B-Reagent
+flow-through	B-Reagent
+.	I-Reagent
 
 If	B-Modifier
 in	I-Modifier
-doubt,	I-Modifier
+doubt	I-Modifier
+,	O
 re-spin	B-Action
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Add	B-Action
 ≥	B-Amount
@@ -282,13 +303,14 @@ the	O
 center	B-Location
 of	O
 the	O
-matrix.
-	B-Location
+matrix	B-Location
+.	O
 
 Wait	B-Action
 for	O
 1	B-Time
-minute,	I-Time
+minute	I-Time
+,	O
 and	O
 spin	B-Action
 for	O
@@ -301,8 +323,8 @@ g	I-Speed
 to	O
 elute	B-Action
 the	O
-DNA.
-	B-Reagent
+DNA	B-Reagent
+.	O
 
 
 

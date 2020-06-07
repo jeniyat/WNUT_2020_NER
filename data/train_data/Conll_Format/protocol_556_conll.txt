@@ -4,10 +4,10 @@ Factor	I-Reagent
 Staining	B-Method
 Protocol	I-Method
 for	O
-96-Well,	B-Location
+96-Well	B-Location
+,	I-Location
 U-Bottom	I-Location
-Plate
-	I-Location
+Plate	I-Location
 
 Perform	B-Action
 cell	B-Reagent
@@ -16,21 +16,24 @@ staining	B-Action
 as	O
 described	B-Method
 in	I-Method
-BioLegend's	I-Method
+BioLegend	I-Method
+'s	I-Method
 Cell	I-Method
 Surface	I-Method
 Immunofluorescence	I-Method
 Staining	I-Method
-Protocol.
-	I-Method
+Protocol	I-Method
+.	O
 
 After	B-Modifier
 the	I-Modifier
 last	I-Modifier
-wash,	I-Modifier
+wash	I-Modifier
+,	O
 discard	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -40,8 +43,8 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -55,8 +58,8 @@ Fix	I-Reagent
 solution	I-Reagent
 to	O
 each	B-Modifier
-well.
-	B-Location
+well	B-Location
+.	O
 
 Gently	B-Modifier
 pipette	B-Action
@@ -65,8 +68,8 @@ ensure	B-Action
 cells	B-Reagent
 are	O
 fully	B-Modifier
-resuspended.
-	B-Action
+resuspended	B-Action
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -80,10 +83,12 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -91,8 +96,8 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.
-	I-Reagent
+pellet	I-Reagent
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -106,9 +111,12 @@ Perm	I-Reagent
 Buffer	I-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
-(wash	B-Action
-1/3)	O
+well	B-Location
+.	O
+(	O
+wash	B-Action
+1/3	O
+)	O
 
 Centrifuge	B-Action
 the	O
@@ -122,10 +130,12 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -133,9 +143,12 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
-(wash	B-Action
-1/3)	O
+pellet	I-Reagent
+.	O
+(	O
+wash	B-Action
+1/3	O
+)	O
 
 Add	B-Action
 200	B-Amount
@@ -149,9 +162,12 @@ Perm	I-Reagent
 Buffer	I-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
-(wash	B-Action
-2/3)	O
+well	B-Location
+.	O
+(	O
+wash	B-Action
+2/3	O
+)	O
 
 Add	B-Action
 the	O
@@ -165,7 +181,10 @@ for	O
 detection	B-Action
 of	O
 intracellular	B-Reagent
-antigen(s)	I-Reagent
+antigen	I-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
 to	O
 each	B-Modifier
 well	B-Location
@@ -181,8 +200,8 @@ for	O
 at	B-Modifier
 least	I-Modifier
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -196,9 +215,12 @@ Perm	I-Reagent
 Buffer	I-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
-(wash	B-Action
-1/3)	O
+well	B-Location
+.	O
+(	O
+wash	B-Action
+1/3	O
+)	O
 
 Centrifuge	B-Action
 the	O
@@ -212,9 +234,11 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
-thesupernatant,	B-Reagent
+thesupernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -222,9 +246,12 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
-(wash	B-Action
-1/3)	O
+pellet	I-Reagent
+.	I-Reagent
+(	O
+wash	B-Action
+1/3	O
+)	O
 
 Resuspend	B-Action
 in	O
@@ -241,8 +268,8 @@ acquire	B-Action
 samples	B-Reagent
 on	O
 a	O
-flowcytometer.
-	B-Device
+flowcytometer	B-Device
+.	O
 
 Incubate	B-Action
 at	O
@@ -253,8 +280,8 @@ the	O
 dark	B-Location
 for	O
 30-60	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -268,9 +295,12 @@ Perm	I-Reagent
 Buffer	I-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
-(wash	B-Action
-3/3)	O
+well	B-Location
+.	O
+(	O
+wash	B-Action
+3/3	O
+)	O
 
 Centrifuge	B-Action
 the	O
@@ -284,10 +314,12 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -295,9 +327,12 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
-(wash	B-Action
-2/3)	O
+pellet	I-Reagent
+.	O
+(	O
+wash	B-Action
+2/3	O
+)	O
 
 Centrifuge	B-Action
 the	O
@@ -311,10 +346,12 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -322,9 +359,12 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
-(wash	B-Action
-3/3)	O
+pellet	I-Reagent
+.	O
+(	O
+wash	B-Action
+3/3	O
+)	O
 
 Add	B-Action
 200	B-Amount
@@ -338,9 +378,12 @@ Perm	I-Reagent
 Buffer	I-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
-(wash	B-Action
-2/3)	O
+well	B-Location
+.	O
+(	O
+wash	B-Action
+2/3	O
+)	O
 
 Centrifuge	B-Action
 the	O
@@ -354,9 +397,11 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
-thesupernatant,	B-Reagent
+thesupernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -364,9 +409,12 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
-(wash	B-Action
-2/3)	O
+pellet	I-Reagent
+.	O
+(	O
+wash	B-Action
+2/3	O
+)	O
 
 Add	B-Action
 200	B-Amount
@@ -380,9 +428,12 @@ Perm	I-Reagent
 Buffer	I-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
-(wash	B-Action
-3/3)	O
+well	B-Location
+.	O
+(	O
+wash	B-Action
+3/3	O
+)	O
 
 Centrifuge	B-Action
 the	O
@@ -396,9 +447,11 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 discard	B-Action
-thesupernatant,	B-Reagent
+thesupernatant	B-Reagent
+,	O
 and	O
 gently	B-Modifier
 vortex	B-Action
@@ -406,10 +459,12 @@ to	O
 dissociate	B-Action
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
-(wash	B-Action
-3/3)
-	O
+pellet	I-Reagent
+.	O
+(	O
+wash	B-Action
+3/3	O
+)	O
 
 
 

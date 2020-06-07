@@ -5,11 +5,11 @@ cloning	B-Action
 protocol	O
 using	O
 Random	B-Modifier
-Adapters
-	B-Reagent
+Adapters	B-Reagent
 
 Section	O
-I:	O
+I	O
+:	O
 Size	B-Method
 selection	I-Method
 and	O
@@ -17,17 +17,18 @@ Gel	B-Reagent
 purification	B-Method
 of	O
 RNA	B-Reagent
-sample.
-	I-Reagent
+sample	I-Reagent
+.	O
 
 Prepare	B-Action
 a	O
-12%	B-Concentration
+12	B-Concentration
+%	I-Concentration
 polyacrylamide/urea	B-Reagent
-gel
-	I-Reagent
+gel	I-Reagent
 
-(thickness	B-Measure-Type
+(	O
+thickness	B-Measure-Type
 will	O
 depend	O
 on	O
@@ -37,48 +38,60 @@ of	O
 total	B-Modifier
 RNA	B-Reagent
 being	O
-run.
-	O
+run	O
+.	O
 
 As	O
 a	O
-guide,	O
+guide	O
+,	O
 we	O
 use	O
 1.0mm	B-Size
 for	O
-<20µg,1.5mm	B-Modifier
+<	B-Modifier
+20µg,1.5mm	B-Amount
 for	O
->20µg).
-	B-Modifier
+>	B-Modifier
+20µg	B-Amount
+)	O
+.	O
 
 Spike	B-Action
 RNA	B-Reagent
 samples	I-Reagent
 with	O
 32P-labeled	B-Modifier
-19,	B-Reagent
-24,	I-Reagent
+19	B-Reagent
+,	I-Reagent
+24	I-Reagent
+,	I-Reagent
 28	I-Reagent
 and/or	I-Reagent
 33bp	I-Reagent
 oligos	I-Reagent
-(~10,000	B-Modifier
+(	O
+~10,000	B-Modifier
 counts	O
 per	O
-oligo,	B-Reagent
+oligo	B-Reagent
+,	O
 per	O
-minute)	B-Time
+minute	B-Time
+)	O
 –	O
 depending	O
 on	O
 the	O
-application.
-	O
+application	O
+.	O
 
 Load	B-Action
 the	O
-sample(s)	B-Reagent
+sample	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
 and	O
 run	B-Action
 the	O
@@ -89,7 +102,8 @@ constant	B-Modifier
 for	O
 1-1.5	B-Time
 hrs	I-Time
-(until	O
+(	O
+until	O
 the	O
 first	O
 dye	B-Reagent
@@ -99,8 +113,9 @@ the	O
 middle	B-Location
 of	O
 the	O
-gel).
-	B-Reagent
+gel	B-Reagent
+)	O
+.	O
 
 Add	B-Action
 an	O
@@ -111,23 +126,26 @@ Gel	B-Reagent
 Loading	I-Reagent
 Buffer	I-Reagent
 II	I-Reagent
-(1X),	B-Concentration
+(	O
+1X	B-Concentration
+)	O
+,	O
 heat	B-Action
 samples	B-Reagent
 at	O
 95C	B-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Chill	B-Action
 on	O
 ice	B-Location
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Carefully	B-Modifier
 grind	B-Action
@@ -137,8 +155,8 @@ by	O
 hand	B-Device
 using	O
 a	O
-pestle.
-	B-Device
+pestle	B-Device
+.	O
 
 Expose	B-Action
 a	O
@@ -149,7 +167,8 @@ gel	B-Reagent
 for	O
 10-15	B-Time
 minutes	I-Time
-(time	O
+(	O
+time	O
 will	O
 vary	O
 depending	O
@@ -158,13 +177,14 @@ radioactivity	B-Measure-Type
 intensity	I-Measure-Type
 and	O
 imager	B-Measure-Type
-sensitivity)	I-Measure-Type
+sensitivity	I-Measure-Type
+)	O
 Add	B-Action
 420µL	B-Amount
 of	O
 0.4M	B-Concentration
-NaCl.
-	B-Reagent
+NaCl	B-Reagent
+.	O
 
 Spin	B-Action
 briefly	B-Modifier
@@ -173,8 +193,8 @@ a	O
 centrifuge	B-Device
 at	O
 maximum	B-Speed
-speed.
-	I-Speed
+speed	I-Speed
+.	O
 
 Flash	B-Action
 freeze	I-Action
@@ -189,8 +209,8 @@ of	O
 EtOH	B-Reagent
 and	O
 dry	B-Reagent
-ice.
-	I-Reagent
+ice	I-Reagent
+.	O
 
 Transfer	B-Action
 eluant	B-Reagent
@@ -198,40 +218,44 @@ to	O
 a	O
 fresh	B-Modifier
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 20µg	B-Amount
-GlycoBlue,	B-Reagent
-mix,	B-Action
+GlycoBlue	B-Reagent
+,	O
+mix	B-Action
+,	O
 and	O
 add	B-Action
 2.5	B-Amount
 volumes	I-Amount
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 Spin	B-Action
 at	O
 4C	B-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Incubate	B-Action
 at	O
 -20C	B-Temperature
 for	O
 3-6+	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Air	B-Action
 dry	I-Action
 for	O
-<5	B-Time
+<	B-Time
+5	I-Time
 min	I-Time
 and	O
 resuspend	B-Action
@@ -240,7 +264,8 @@ in	O
 13µL	B-Amount
 DEPC-MilliQ	B-Reagent
 H20	I-Reagent
-Here,	O
+Here	O
+,	O
 one	O
 can	O
 insert	B-Action
@@ -251,23 +276,29 @@ into	O
 a	O
 dialyzer	B-Location
 tube	I-Location
-(Novagen,	B-Device
+(	O
+Novagen	B-Device
+,	I-Device
 D-Tube	I-Device
 Dialyzer	I-Device
-Midi,	I-Device
+Midi	I-Device
+,	I-Device
 MWCO	I-Device
 3.5	B-Generic-Measure
 kDA	I-Generic-Measure
 –	O
-Cat.	O
-No.	O
-71506-3)	O
+Cat	O
+.	O
+No	O
+.	O
+71506-3	O
+)	O
 along	O
 with	O
 450ul	B-Amount
 of	O
-water.
-	B-Reagent
+water	B-Reagent
+.	O
 
 Reverse	B-Action
 the	O
@@ -285,8 +316,8 @@ off	O
 the	O
 dialysis	B-Location
 tubing	I-Location
-wall.
-	I-Location
+wall	I-Location
+.	O
 
 Position	B-Action
 the	O
@@ -294,10 +325,12 @@ dialyzer	B-Device
 into	O
 a	O
 gel	B-Location
-box,	I-Location
+box	I-Location
+,	O
 submerged	B-Action
 in	O
-1xTAE,	B-Reagent
+1xTAE	B-Reagent
+,	O
 such	O
 that	O
 the	O
@@ -309,8 +342,8 @@ current	O
 running	B-Action
 perpendicularly	B-Modifier
 through	O
-it.
-	B-Mention
+it	B-Mention
+.	O
 
 Pull	B-Action
 out	I-Action
@@ -322,7 +355,8 @@ into	O
 a	O
 fresh	B-Modifier
 microcentrifuge	B-Location
-tube,	I-Location
+tube	I-Location
+,	O
 mix	B-Action
 in	O
 20µg	B-Amount
@@ -332,18 +366,20 @@ add	B-Action
 2.5	B-Numerical
 volumes	B-Measure-Type
 of	O
-100%	B-Concentration
+100	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 and	O
 then	O
 remove	B-Action
 ALL	B-Modifier
-EtOH.
-	B-Reagent
+EtOH	B-Reagent
+.	O
 
 Spin	B-Action
 at	O
@@ -353,7 +389,8 @@ for	O
 minutes	I-Time
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 and	O
 then	O
@@ -363,23 +400,24 @@ EtOH	B-Reagent
 Air	B-Action
 dry	I-Action
 for	O
-<5	B-Modifier
-min	B-Time
+<	B-Modifier
+5	B-Time
+min	I-Time
 and	O
 resuspend	B-Action
 pellet	B-Reagent
 in	O
 13µL	B-Amount
 DEPC-MilliQ	B-Reagent
-H20.
-	I-Reagent
+H20	I-Reagent
+.	O
 
 Run	B-Action
 at	O
 100V	B-Generic-Measure
 for	O
-18mins.
-	B-Time
+18mins	B-Time
+.	O
 
 Set	B-Action
 up	I-Action
@@ -391,50 +429,56 @@ described	O
 in	O
 the	O
 cited	O
-publication.
-	O
+publication	O
+.	O
 
 Incubate	B-Action
 at	O
 37C	B-Temperature
 for	O
 4	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Add	B-Action
 20µl	B-Amount
 Gel	B-Reagent
 Loading	I-Reagent
 Buffer	I-Reagent
-II.
-	I-Reagent
+II	I-Reagent
+.	O
 
 Section	O
-II:	O
-3’	B-Reagent
+II	O
+:	O
+3	B-Reagent
+’	I-Reagent
 linker	I-Reagent
-ligation.
-	B-Method
+ligation	B-Method
+.	O
 
 Section	O
-III:	O
+III	O
+:	O
 Gel	B-Reagent
 purification	B-Method
 of	O
-3’	B-Reagent
+3	B-Reagent
+’	I-Reagent
 ligated	I-Reagent
 RNA	I-Reagent
-product.
-	I-Reagent
+product	I-Reagent
+.	O
 
 Prepare	B-Action
 a	O
-1.0mm,	B-Size
-12%	B-Concentration
+1.0mm	B-Size
+,	O
+12	B-Concentration
+%	I-Concentration
 polyacrylamide/urea	B-Reagent
-gel.
-	I-Reagent
+gel	I-Reagent
+.	O
 
 Heat	B-Action
 inactivate	B-Reagent
@@ -442,8 +486,8 @@ at	O
 95C	B-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Heat	B-Action
 samples	B-Reagent
@@ -451,18 +495,21 @@ at	O
 95C	B-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Chill	B-Action
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Load	B-Action
 the	O
-sample(s)	B-Reagent
+sample	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
 and	O
 run	B-Action
 the	O
@@ -473,7 +520,8 @@ constant	B-Modifier
 for	O
 1.5-2	B-Time
 hrs	I-Time
-(until	O
+(	O
+until	O
 the	O
 first	O
 dye	B-Reagent
@@ -483,8 +531,9 @@ the	O
 bottom	B-Location
 of	O
 the	O
-gel).
-	B-Reagent
+gel	B-Reagent
+)	O
+.	O
 
 Expose	B-Action
 a	O
@@ -496,12 +545,16 @@ gel	B-Reagent
 for	O
 30-45	B-Time
 minutes	I-Time
-(time	B-Measure-Type
+(	O
+time	B-Measure-Type
 will	O
-vary)	O
-(Figure	O
-2).
-	O
+vary	O
+)	O
+(	O
+Figure	O
+2	O
+)	O
+.	O
 
 Excise	B-Action
 the	O
@@ -515,16 +568,21 @@ size	I-Size
 of	O
 small	B-Reagent
 RNA	I-Reagent
-(including	O
+(	O
+including	O
 the	O
 ligated	B-Modifier
 radiolabeled	I-Modifier
-oligo(s))	B-Reagent
+oligo	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
+)	O
 into	O
 a	O
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Spin	B-Action
 briefly	B-Modifier
@@ -533,8 +591,8 @@ a	O
 centrifuge	B-Device
 at	O
 maximum	B-Speed
-speed.
-	I-Speed
+speed	I-Speed
+.	O
 
 Carefully	B-Modifier
 grind	B-Action
@@ -542,8 +600,8 @@ gel	B-Reagent
 slices	I-Reagent
 using	O
 a	O
-pestle.
-	B-Device
+pestle	B-Device
+.	O
 
 Load	B-Action
 5ng	B-Amount
@@ -554,15 +612,15 @@ Marker	I-Reagent
 as	O
 a	O
 size	O
-marker.
-	O
+marker	O
+.	O
 
 Add	B-Action
 420µL	B-Amount
 of	O
 0.4M	B-Concentration
-NaCl.
-	B-Reagent
+NaCl	B-Reagent
+.	O
 
 Quickly	B-Modifier
 freeze	B-Action
@@ -577,22 +635,26 @@ of	O
 EtOH	B-Reagent
 and	O
 dry	B-Reagent
-ice.
-	I-Reagent
+ice	I-Reagent
+.	O
 
 Incubate	B-Action
 overnight	B-Time
 at	O
 room	B-Temperature
 temperature	I-Temperature
-(RT)	I-Temperature
+(	O
+RT	B-Temperature
+)	O
 with	O
 agitation	B-Method
-(secured	O
+(	O
+secured	O
 on	O
 a	O
-vortex).
-	B-Method
+vortex	B-Method
+)	O
+.	O
 
 Spin	B-Action
 gel	B-Reagent
@@ -608,77 +670,84 @@ for	O
 1	B-Time
 minute	I-Time
 at	O
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Transfer	B-Action
 eluant	B-Reagent
 to	O
 a	O
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 20µg	B-Amount
-GlycoBlue,	B-Reagent
-mix,	B-Action
+GlycoBlue	B-Reagent
+,	O
+mix	B-Action
+,	O
 and	O
 add	B-Action
 2.5	B-Amount
 volumes	I-Amount
 of	O
-100%	B-Concentration
-EtOH.
-	B-Reagent
+100	B-Concentration
+%	I-Concentration
+EtOH	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 -20C	B-Temperature
 for	O
 3-6+	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Spin	B-Action
 at	O
 4C	B-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Wash	B-Action
 with	O
-70%	B-Concentration
+70	B-Concentration
+%	I-Concentration
 EtOH	B-Reagent
 and	O
 then	O
 remove	B-Action
 ALL	B-Modifier
-EtOH.
-	B-Reagent
+EtOH	B-Reagent
+.	O
 
 Air	B-Action
 dry	I-Action
 for	O
-<5	B-Modifier
-min	B-Time
+<	B-Modifier
+5	B-Time
+min	I-Time
 and	O
 resuspend	B-Action
 pellet	B-Reagent
 in	O
 13µL	B-Amount
 DEPC-MilliQ	B-Reagent
-H20.
-	I-Reagent
+H20	I-Reagent
+.	O
 
 Section	O
-IV:	O
-5’	B-Reagent
+IV	O
+:	O
+5	B-Reagent
+’	I-Reagent
 linker	I-Reagent
-ligation.
-	B-Method
+ligation	B-Method
+.	O
 
 Set	B-Action
 up	I-Action
@@ -691,24 +760,24 @@ as	O
 described	O
 in	O
 the	O
-publication.
-	B-Method
+publication	B-Method
+.	O
 
 Incubate	B-Action
 at	O
 37C	B-Temperature
 for	O
 2	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Add	B-Action
 20µl	B-Amount
 Gel	B-Reagent
 Loading	I-Reagent
 Buffer	I-Reagent
-II.
-	I-Reagent
+II	I-Reagent
+.	O
 
 Heat	B-Action
 inactivate	B-Reagent
@@ -716,29 +785,34 @@ at	O
 95C	B-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Section	O
-V:	O
+V	O
+:	O
 Gel	B-Reagent
 purification	B-Method
 of	O
-5’	B-Reagent
+5	B-Reagent
+’	I-Reagent
 and	I-Reagent
-3’	I-Reagent
+3	I-Reagent
+’	I-Reagent
 ligated	I-Reagent
 RNA	I-Reagent
-product.
-	I-Reagent
+product	I-Reagent
+.	O
 
 Prepare	B-Action
 a	O
-1.0mm,	B-Size
-12%	B-Concentration
+1.0mm	B-Size
+,	O
+12	B-Concentration
+%	I-Concentration
 polyacrylamide/urea	B-Reagent
-gel.
-	I-Reagent
+gel	I-Reagent
+.	O
 
 Load	B-Action
 2.5ng	B-Amount
@@ -749,8 +823,8 @@ Marker	I-Reagent
 as	O
 a	O
 size	O
-marker.
-	O
+marker	O
+.	O
 
 Heat	B-Action
 samples	B-Reagent
@@ -758,14 +832,14 @@ at	O
 95C	B-Temperature
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Chill	B-Action
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Expose	B-Action
 a	O
@@ -777,16 +851,23 @@ gel	B-Reagent
 for	O
 1+	B-Time
 hours	I-Time
-(time	B-Measure-Type
+(	O
+time	B-Measure-Type
 will	O
-vary)	O
-(Figure	O
-3).
-	O
+vary	O
+)	O
+(	O
+Figure	O
+3	O
+)	O
+.	O
 
 Load	B-Action
 the	O
-sample(s)	B-Reagent
+sample	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
 and	O
 run	B-Action
 the	O
@@ -797,7 +878,8 @@ constant	B-Modifier
 for	O
 2+	B-Time
 hrs	I-Time
-(until	O
+(	O
+until	O
 first	O
 dye	B-Reagent
 front	O
@@ -806,8 +888,9 @@ the	O
 bottom	B-Location
 of	O
 the	O
-gel).
-	B-Reagent
+gel	B-Reagent
+)	O
+.	O
 
 Spin	B-Action
 briefly	B-Modifier
@@ -816,8 +899,8 @@ a	O
 centrifuge	B-Device
 at	O
 maximum	B-Speed
-speed.
-	I-Speed
+speed	I-Speed
+.	O
 
 Excise	B-Action
 the	O
@@ -831,16 +914,21 @@ size	I-Size
 of	O
 small	B-Reagent
 RNAs	I-Reagent
-(including	O
+(	O
+including	O
 the	O
 ligated	B-Modifier
 radiolabeled	I-Modifier
-oligo(s))	B-Reagent
+oligo	B-Reagent
+(	I-Reagent
+s	I-Reagent
+)	I-Reagent
+)	O
 into	O
 a	O
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Spin	B-Action
 briefly	B-Modifier
@@ -849,15 +937,15 @@ a	O
 centrifuge	B-Device
 at	O
 maximum	B-Speed
-speed.
-	I-Speed
+speed	I-Speed
+.	O
 
 Add	B-Action
 420µL	B-Amount
 of	O
 0.4M	B-Concentration
-NaCl.
-	B-Reagent
+NaCl	B-Reagent
+.	O
 
 Quickly	B-Modifier
 freeze	B-Action
@@ -872,8 +960,8 @@ of	O
 EtOH	B-Reagent
 and	O
 dry	B-Reagent
-ice.
-	I-Reagent
+ice	I-Reagent
+.	O
 
 Spin	B-Action
 gel	B-Reagent
@@ -889,45 +977,48 @@ for	O
 1	B-Time
 minute	I-Time
 at	O
-RT.
-	B-Temperature
+RT	B-Temperature
+.	O
 
 Transfer	B-Action
 eluant	B-Reagent
 to	O
 a	O
 microcentrifuge	B-Location
-tube.
-	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 20µg	B-Amount
-GlycoBlue,	B-Reagent
-mix,	B-Action
+GlycoBlue	B-Reagent
+,	O
+mix	B-Action
+,	O
 and	O
 add	B-Action
 2.5	B-Amount
 volumes	I-Amount
 of	O
-100%	B-Concentration
-EtOH.
-	B-Reagent
+100	B-Concentration
+%	I-Concentration
+EtOH	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 -20oC	B-Temperature
 for	O
 3-6+	B-Time
-hours.
-	I-Time
+hours	I-Time
+.	O
 
 Spin	B-Action
 at	O
 4C	B-Temperature
 for	O
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Carefully	B-Modifier
 grind	B-Action
@@ -935,86 +1026,98 @@ gel	B-Reagent
 slices	I-Reagent
 using	O
 a	O
-pestle.
-	B-Device
+pestle	B-Device
+.	O
 
 Air	B-Action
 dry	I-Action
 for	O
-<5	B-Modifier
-min	B-Time
+<	B-Modifier
+5	B-Time
+min	I-Time
 and	O
 resuspend	B-Action
 pellet	B-Reagent
 in	O
 6.3µL	B-Amount
 DEPC-MilliQ	B-Reagent
-H20.
-	I-Reagent
+H20	I-Reagent
+.	O
 
 Section	O
-VI:	O
+VI	O
+:	O
 Reverse	B-Method
-transcription.
-	I-Method
+transcription	I-Method
+.	O
 
 Incubate	B-Action
 at	O
 72C	B-Temperature
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Incubate	B-Action
 overnight	B-Time
 at	O
 room	B-Temperature
 temperature	I-Temperature
-(RT)	I-Temperature
+(	O
+RT	B-Temperature
+)	O
 with	O
 agitation	B-Method
-(secured	O
+(	O
+secured	O
 on	O
 a	O
-vortex).
-	B-Method
+vortex	B-Method
+)	O
+.	O
 
 Centrifuge	B-Action
 at	O
 RT	B-Temperature
 for	O
 1	B-Time
-minute.
-	I-Time
+minute	I-Time
+.	O
 
 Cool	B-Action
 on	O
 ice	B-Location
 for	O
 2	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 8.4µL	B-Amount
 Reverse	B-Reagent
 Transcriptase	I-Reagent
-(RT)	I-Reagent
+(	I-Reagent
+RT	I-Reagent
+)	I-Reagent
 Mix	I-Reagent
-(see	O
+(	O
+see	O
 publication	O
 for	O
-details).
-	O
+details	O
+)	O
+.	O
 
 Split	B-Action
 into	O
 two	B-Numerical
 tubes	B-Location
-(9µL	B-Amount
-each).
-	O
+(	O
+9µL	B-Amount
+each	O
+)	O
+.	O
 
 Add	B-Action
 either	O
@@ -1022,41 +1125,48 @@ either	O
 Superscript	B-Reagent
 III	I-Reagent
 RT	I-Reagent
-(Invitrogen)	I-Reagent
-(+RT)	B-Generic-Measure
+(	O
+Invitrogen	B-Reagent
+)	O
+(	O
++RT	B-Generic-Measure
+)	O
 or	O
 1µL	B-Amount
 DEPC-MilliQ	B-Reagent
 H20	I-Reagent
-(-RT	B-Generic-Measure
-control).
-	I-Generic-Measure
+(	O
+-RT	B-Generic-Measure
+control	I-Generic-Measure
+)	O
+.	O
 
 Heat	B-Action
 to	O
 70C	B-Temperature
 for	O
 15	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Store	B-Action
 at	O
 -20C	B-Temperature
 until	O
-use.
-	O
+use	O
+.	O
 
 Incubate	B-Action
 at	O
 50C	B-Temperature
 for	O
 1	B-Time
-hour.
-	I-Time
+hour	I-Time
+.	O
 
 Section	O
-IX:	O
+IX	O
+:	O
 Quantification	B-Method
 of	O
 the	O
@@ -1067,23 +1177,25 @@ using	O
 a	O
 high	B-Modifier
 Sensitivity	I-Modifier
-bioanalyzer.
-	B-Device
+bioanalyzer	B-Device
+.	O
 
 Section	O
-VIII:	O
+VIII	O
+:	O
 Ampure	B-Method
 Cleanup	I-Method
 of	O
 amplified	B-Modifier
 cDNA	B-Reagent
---.
-	O
+--	O
+.	O
 
 Using	O
 a	O
 1.8X	B-Generic-Measure
-ratio,	I-Generic-Measure
+ratio	I-Generic-Measure
+,	O
 clean	B-Action
 up	I-Action
 the	O
@@ -1091,12 +1203,15 @@ PCR	B-Reagent
 products	I-Reagent
 following	O
 the	O
-manufacture’s	O
-instructions.
-	O
+manufacture	O
+’	O
+s	O
+instructions	O
+.	O
 
 Section	O
-VII:	O
+VII	O
+:	O
 PCR	B-Method
 amplification	I-Method
 of	O

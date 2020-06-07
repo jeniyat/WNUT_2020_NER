@@ -1,11 +1,12 @@
 Tangential	B-Method
 flow	I-Method
 filtration	I-Method
-(TFF)	I-Method
+(	O
+TFF	B-Method
+)	O
 concentration	B-Measure-Type
 of	O
-phytoplankton
-	B-Reagent
+phytoplankton	B-Reagent
 
 Get	B-Action
 Vivaflow	B-Device
@@ -17,18 +18,20 @@ Mount	I-Device
 Vivaflow	I-Device
 catridge	I-Device
 as	O
-Fig.
-	O
+Fig	O
+.	O
 
 1	O
-(image	O
+(	O
+image	O
 de	O
 C.	O
-Brussaard)	O
+Brussaard	O
+)	O
 in	O
 open	O
-circuit.
-	O
+circuit	O
+.	O
 
 Remove	B-Action
 the	O
@@ -38,8 +41,8 @@ the	O
 pump	B-Device
 to	O
 maximum	B-Speed
-speed.
-	I-Speed
+speed	I-Speed
+.	O
 
 Manometer	B-Device
 should	O
@@ -48,7 +51,8 @@ at	O
 about	O
 2.5	B-Generic-Measure
 bars	I-Generic-Measure
-(with	O
+(	O
+with	O
 a	O
 new	B-Modifier
 cassette	B-Device
@@ -56,7 +60,8 @@ sometimes	O
 the	O
 manometer	B-Device
 get	O
-stuck,	O
+stuck	O
+,	O
 if	O
 the	O
 value	O
@@ -69,8 +74,9 @@ a	O
 leak	O
 in	O
 the	O
-system).
-	B-Device
+system	B-Device
+)	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -82,14 +88,17 @@ mL	I-Amount
 of	O
 MilliQ	B-Reagent
 water	I-Reagent
-(longer	O
+(	O
+longer	O
 is	O
 cartridge	B-Device
 has	O
 been	O
 stored	B-Action
 in	O
-ethanol).	B-Reagent
+ethanol	B-Reagent
+)	O
+.	O
 
 Replace	B-Action
 MilliQ	B-Reagent
@@ -99,7 +108,8 @@ sample	B-Reagent
 in	O
 6	B-Amount
 L	I-Amount
-bottle.	B-Location
+bottle	B-Location
+.	O
 
 Take	B-Action
 sample	B-Reagent
@@ -109,8 +119,8 @@ cytometry	I-Method
 to	O
 compute	B-Action
 concentration	B-Measure-Type
-factor.
-	I-Measure-Type
+factor	I-Measure-Type
+.	O
 
 Rinse	B-Action
 cartridge	B-Device
@@ -119,7 +129,8 @@ about	B-Modifier
 250	B-Amount
 mL	I-Amount
 of	O
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Put	B-Action
 the	O
@@ -129,12 +140,15 @@ into	O
 the	O
 sample	B-Location
 bottle	I-Location
-(Fig.	O
+(	O
+Fig	O
+.	O
 2B	O
 -	O
 Recirculation	B-Method
-mode).
-	O
+mode	O
+)	O
+.	O
 
 Record	B-Action
 sample	B-Measure-Type
@@ -145,8 +159,8 @@ pump	B-Device
 increasing	O
 to	O
 macimum	B-Speed
-speed.
-	I-Speed
+speed	I-Speed
+.	O
 
 Clamp	B-Action
 the	O
@@ -163,8 +177,8 @@ gets	O
 up	O
 to	O
 2.5	B-Generic-Measure
-bars.
-	I-Generic-Measure
+bars	I-Generic-Measure
+.	O
 
 Concentrate	B-Action
 sample	B-Reagent
@@ -173,37 +187,44 @@ about	O
 250	B-Amount
 mL	I-Amount
 remains	O
-(6	B-Amount
+(	O
+6	B-Amount
 L	I-Amount
 takes	O
 about	B-Modifier
 one	B-Time
-hour).
-	I-Time
+hour	I-Time
+)	O
+.	O
 
 Transfer	B-Action
-sample to	B-Reagent
+sample	B-Reagent
+to	I-Reagent
 a	O
 smaller	B-Modifier
-bottle	B-Location
-(250	B-Amount
-mL)	I-Amount
+bottle	I-Modifier
+(	B-Location
+250	B-Amount
+mL	I-Amount
+)	I-Amount
 then	O
 finally	O
 to	O
 a	O
-50	B-Amount
-mL	I-Amount
-tube	B-Location
-with	O
-conical	B-Location
-bottom.	I-Location
+50	O
+mL	B-Amount
+tube	I-Amount
+with	B-Location
+conical	I-Location
+bottom	I-Location
+.	I-Location
 
 Continue	O
 to	O
 concentrate	B-Action
 very	B-Modifier
-carefully,	I-Modifier
+carefully	I-Modifier
+,	O
 lowering	B-Action
 the	O
 pump	B-Speed
@@ -216,7 +237,8 @@ is	O
 reduced	B-Action
 to	O
 15-20	B-Amount
-mL.	I-Amount
+mL	I-Amount
+.	O
 
 When	O
 final	B-Modifier
@@ -224,26 +246,31 @@ volume	B-Measure-Type
 is	O
 about	O
 10	B-Amount
-mL,	I-Amount
+mL	I-Amount
+,	O
 clamp	B-Action
 filtrate	B-Location
 tube	I-Location
 and	O
 recirculate	B-Action
 slowly	B-Modifier
-(no	O
+(	O
+no	O
 change	O
 of	O
 volume	B-Measure-Type
 should	O
 take	O
-place).	O
+place	O
+)	O
+.	O
 
 Leaving	B-Action
 the	O
 filtrate	B-Location
 tube	I-Location
-clamped,	O
+clamped	O
+,	O
 get	B-Action
 the	O
 feed	B-Device
@@ -262,7 +289,8 @@ total	B-Amount
 volume	I-Amount
 of	O
 concentrated	B-Modifier
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Take	B-Action
 sample	B-Reagent
@@ -270,7 +298,8 @@ for	O
 flow	B-Measure-Type
 cytometry	I-Measure-Type
 count	I-Measure-Type
-(to	O
+(	O
+to	O
 compare	B-Action
 with	O
 original	O
@@ -279,7 +308,9 @@ concnetration	B-Measure-Type
 and	O
 estimate	B-Action
 concentration	B-Measure-Type
-factor).	I-Measure-Type
+factor	I-Measure-Type
+)	O
+.	O
 
 Store	B-Action
 concentrated	B-Modifier
@@ -287,21 +318,31 @@ sample	B-Reagent
 for	O
 later	O
 use	O
-(e.g.	O
+(	O
+e.g	O
+.	O
 flow	B-Method
 cytometry	I-Method
-sorting,	B-Action
+sorting	B-Action
+,	O
 culture	B-Reagent
-etc...).	O
+etc	O
+...	O
+)	O
+.	O
 
 Go	O
 back	O
 to	O
-Fig.	O
+Fig	O
+.	O
 1	O
 configuration	O
-(Open	O
-circuit).	O
+(	O
+Open	O
+circuit	O
+)	O
+.	O
 
 Rinse	B-Action
 1	B-Time
@@ -309,14 +350,16 @@ min	I-Time
 with	O
 filtered	B-Modifier
 sea	B-Reagent
-water.	I-Reagent
+water	I-Reagent
+.	O
 
 Rinse	B-Action
 1	B-Time
 min	I-Time
 with	O
 distilled	B-Modifier
-water.	B-Reagent
+water	B-Reagent
+.	O
 
 Rinse	B-Action
 with	O
@@ -324,27 +367,34 @@ with	O
 mL	I-Amount
 NaOH	B-Reagent
 0.1	B-Concentration
-M.	I-Concentration
+M	I-Concentration
+.	O
 
 Put	B-Action
 all	O
 three	B-Numerical
 tubes	B-Location
-(feed,	B-Modifier
-retentate,	I-Modifier
-filtrate)	I-Modifier
+(	O
+feed	B-Modifier
+,	O
+retentate	B-Modifier
+,	O
+filtrate	B-Modifier
+)	O
 in	O
 bottle	B-Location
 containing	O
 NaOH	B-Reagent
 0.1	B-Concentration
-M.	I-Concentration
+M	I-Concentration
+.	O
 
 Recirculate	B-Action
 for	O
 20	B-Time
 min	I-Time
-(to	O
+(	O
+to	O
 get	O
 rid	O
 of	O
@@ -352,7 +402,9 @@ everything	O
 on	O
 the	O
 cartridge	B-Device
-filter).	I-Device
+filter	I-Device
+)	O
+.	O
 
 Rinse	B-Action
 with	O
@@ -361,8 +413,12 @@ mL	I-Amount
 of	O
 MilliQ	B-Reagent
 water	I-Reagent
-(Fig.	O
-1).	O
+(	O
+Fig	O
+.	O
+1	O
+)	O
+.	O
 
 Stop	B-Action
 the	O
@@ -371,24 +427,26 @@ and	O
 clamp	B-Action
 all	O
 three	B-Numerical
-tubes.	B-Location
+tubes	B-Location
+.	O
 
 Store	B-Action
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 For	O
 a	O
 storage	O
 beyond	O
 1	B-Time
-day,	I-Time
+day	I-Time
+,	O
 store	B-Action
 with	O
 Ethanol	B-Reagent
-10%
-	B-Concentration
+10	B-Concentration
+%	I-Concentration
 
 
 

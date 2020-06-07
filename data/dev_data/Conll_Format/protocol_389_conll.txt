@@ -3,8 +3,7 @@ Volume	B-Measure-Type
 Marine	B-Reagent
 Cyanophage	I-Reagent
 Phage	I-Reagent
-Purification
-	B-Method
+Purification	B-Method
 
 Grow	B-Action
 up	I-Action
@@ -12,7 +11,9 @@ cells	B-Reagent
 in	O
 large	B-Modifier
 volumes	B-Measure-Type
-(1-2L)	B-Amount
+(	O
+1-2L	B-Amount
+)	O
 to	O
 yield	O
 ~1011	B-Numerical
@@ -20,39 +21,49 @@ yield	O
 1012	I-Numerical
 cells	B-Reagent
 using	O
-'microbubbling'	B-Method
-technique.
-	I-Method
+'microbubbling	B-Method
+'	I-Method
+technique	I-Method
+.	O
 
 Add	B-Action
 Rnase	B-Reagent
 A	I-Reagent
-(10ug	B-Amount
+(	O
+10ug	B-Amount
 ml-1	I-Amount
 =	O
 for	O
-2L,	B-Amount
-250µl	I-Amount
+2L	B-Amount
+,	O
+250µl	B-Amount
 of	O
-Qiagen's	B-Reagent
+Qiagen	B-Reagent
+'s	I-Reagent
 100mg/ml	B-Concentration
-stock)	O
+stock	O
+)	O
 and	O
 DNase1	B-Reagent
-(0.25	B-Amount
+(	O
+0.25	B-Amount
 SU	I-Amount
 ml-1	I-Amount
-=2L,	I-Amount
+=2L	I-Amount
+,	O
 add	B-Action
 50µl	B-Amount
 of	O
-stock).
-	B-Reagent
+stock	B-Reagent
+)	O
+.	O
 
 Centrifuge	B-Action
 12,500	B-Speed
 rpm	I-Speed
-(23,975xg)	I-Speed
+(	O
+23,975xg	B-Speed
+)	O
 in	O
 Beckman	B-Device
 Ja-14	I-Device
@@ -69,34 +80,38 @@ a	O
 Kim	B-Location
 Wipe	I-Location
 tissue	I-Location
-paper.
-	I-Location
+paper	I-Location
+.	O
 
 Mix	B-Action
 in	O
 polyethylene	B-Reagent
 glycol	I-Reagent
-(PEG	B-Generic-Measure
-8,000;	I-Generic-Measure
+(	O
+PEG	B-Generic-Measure
+8,000	I-Generic-Measure
+;	O
 100g	B-Amount
-L-1)	I-Amount
+L-1	I-Amount
+)	O
 by	O
 gentle	B-Modifier
-stirring.
-	B-Method
+stirring	B-Method
+.	O
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Collect	B-Action
 PEG-phage	B-Reagent
 precipitate	I-Reagent
 by	O
 centrifuge	B-Action
-(6	B-Numerical
+(	O
+6	B-Numerical
 tubes	B-Location
 at	O
 a	O
@@ -104,10 +119,13 @@ time	O
 for	O
 the	O
 2L	B-Amount
-volumes)	B-Measure-Type
+volumes	B-Measure-Type
+)	O
 at	O
 12,500rpm	B-Speed
-(23,975xg)	I-Speed
+(	O
+23,975xg	B-Speed
+)	O
 in	O
 Beckman	B-Device
 Ja-14	I-Device
@@ -115,12 +133,12 @@ for	O
 15	B-Time
 minutes	I-Time
 at	O
-4°C.
-	B-Temperature
+4°C	B-Temperature
+.	O
 
 Discard	B-Action
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Gently	B-Modifier
 resuspend	B-Action
@@ -129,9 +147,11 @@ into	O
 ~1/150	B-Modifier
 volume	B-Amount
 Pro99	B-Reagent
-(~1-2	B-Modifier
-ml).
-	B-Amount
+(	O
+~1-2	B-Modifier
+ml	B-Amount
+)	O
+.	O
 
 Add	B-Action
 in	O
@@ -152,22 +172,24 @@ it	O
 rests	O
 at	O
 an	O
-angle.
-	O
+angle	O
+.	O
 
 Put	B-Action
 on	I-Action
 orbital	B-Device
 shaker	I-Device
-(150	B-Speed
-rpm)	I-Speed
+(	O
+150	B-Speed
+rpm	I-Speed
+)	O
 in	O
 cold	B-Location
 room	I-Location
 for	O
 overnight	B-Time
-re-suspension.
-	B-Method
+re-suspension	B-Method
+.	O
 
 Combine	B-Action
 resuspended	B-Modifier
@@ -178,38 +200,45 @@ into	O
 a	O
 single	B-Numerical
 tube	B-Location
-(now	O
+(	O
+now	O
 ready	O
 for	O
 layering	B-Action
 onto	O
 a	O
 CsCl	B-Reagent
-gradient).
-	I-Reagent
+gradient	I-Reagent
+)	O
+.	O
 
 Prepare	B-Action
 a	O
 CsCl	B-Reagent
 step	I-Reagent
 gradient	I-Reagent
-(1.3,	B-Generic-Measure
-1.4,	I-Generic-Measure
-1.5,	I-Generic-Measure
+(	O
+1.3	B-Generic-Measure
+,	I-Generic-Measure
+1.4	I-Generic-Measure
+,	I-Generic-Measure
+1.5	I-Generic-Measure
+,	I-Generic-Measure
 1.65	I-Generic-Measure
-bands)	I-Generic-Measure
+bands	I-Generic-Measure
+)	O
 in	O
 ultracentrifuge	B-Location
-tubes.	I-Location
-	O
+tubes	I-Location
+.	O
 
 Add	B-Action
 concentrated	B-Modifier
 phage	B-Reagent
 sample	I-Reagent
 at	O
-top.
-	B-Location
+top	B-Location
+.	O
 
 Spin	B-Action
 28,000	B-Speed
@@ -223,14 +252,15 @@ in	O
 SW28	B-Device
 swinging	I-Device
 bucket	I-Device
-rotor.
-	I-Device
+rotor	I-Device
+.	O
 
 Remove	B-Action
 purified	B-Modifier
 phage	B-Reagent
 band	I-Reagent
-(interface	O
+(	O
+interface	O
 of	O
 ρ	B-Generic-Measure
 =	I-Generic-Measure
@@ -240,7 +270,9 @@ and	I-Generic-Measure
 bands	B-Reagent
 on	O
 step	B-Reagent
-gradient).	I-Reagent
+gradient	I-Reagent
+)	O
+.	O
 
 Step	B-Action
 dialyze	I-Action
@@ -248,41 +280,58 @@ in	O
 Slide-A-Lyzer	B-Device
 dialysis	I-Device
 cassettes	I-Device
-(Pierce	O
-#66425;	O
+(	O
+Pierce	O
+#	O
+66425	O
+;	O
 10K	B-Generic-Measure
-MWCO,	I-Generic-Measure
+MWCO	I-Generic-Measure
+,	O
 0.5-3.0	B-Amount
 ml	I-Amount
-volume)	B-Measure-Type
+volume	B-Measure-Type
+)	O
 -	O
 30	B-Time
 minutes	I-Time
 against	O
 5xNaCl	B-Reagent
-(3M),	B-Concentration
+(	O
+3M	B-Concentration
+)	O
+,	O
 3xNaCl	B-Reagent
-(1.8M),	B-Concentration
+(	O
+1.8M	B-Concentration
+)	O
+,	O
 two	B-Numerical
 changes	B-Action
 of	O
 1xNaCl	B-Concentration
 buffer	B-Reagent
-[MTM100	O
+[	O
+MTM100	O
 =	O
 600	B-Concentration
 mM	I-Concentration
-NaCl,	B-Reagent
+NaCl	B-Reagent
+,	O
 100	B-Concentration
 mM	I-Concentration
 TrisHCL	B-Reagent
-(pH	B-pH
+(	O
+pH	B-pH
 =	I-pH
-7.5),	I-pH
+7.5	I-pH
+)	O
+,	O
 100	B-Concentration
 mM	I-Concentration
-MgCl2].	B-Reagent
-	O
+MgCl2	B-Reagent
+]	O
+.	O
 
 Store	B-Action
 dialyzed	B-Modifier
@@ -290,7 +339,8 @@ particles	B-Reagent
 at	O
 4°C	B-Temperature
 until	O
-needed.	O
+needed	O
+.	O
 
 Incubate	B-Action
 for	O
@@ -298,7 +348,8 @@ for	O
 hour	I-Time
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 116g	B-Amount
@@ -307,7 +358,8 @@ per	O
 Liter	B-Amount
 of	O
 lysate	B-Reagent
-(thus	O
+(	O
+thus	O
 2M	B-Concentration
 addition	O
 +	O
@@ -315,15 +367,16 @@ seawater	B-Reagent
 yields	O
 final	B-Modifier
 concentration	B-Measure-Type
-~2.6M).
-	B-Modifier
+~2.6M	B-Modifier
+)	O
+.	O
 
 Incubate	B-Action
 on	O
 ice	B-Location
 30	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 
 

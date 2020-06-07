@@ -1,48 +1,56 @@
 Seydoux	O
 lab	O
 Cas9	B-Reagent
-preparation
-	B-Method
+preparation	B-Method
 
 Transform	B-Action
 DE3	B-Reagent
 GOLD	I-Reagent
-(Agilent,	I-Reagent
-#230132)	I-Reagent
+(	I-Reagent
+Agilent	I-Reagent
+,	I-Reagent
+#	I-Reagent
+230132	I-Reagent
+)	I-Reagent
 cells	I-Reagent
 with	O
 nm2973	B-Reagent
 plasmid	I-Reagent
-(Fu	O
+(	O
+Fu	O
 et	O
 al	O
-2014)	O
+2014	O
+)	O
 and	O
 plate	B-Action
 on	O
 LB	B-Reagent
 +	I-Reagent
 50μg/mL	I-Reagent
-Carbenicillin.	I-Reagent
+Carbenicillin	I-Reagent
+.	O
 
 Inoculate	B-Action
 25mL	B-Amount
 LB	B-Reagent
 +	I-Reagent
-50 μg/mL	I-Reagent
+50	I-Reagent
+μg/mL	I-Reagent
 Carbenicillin	I-Reagent
-with	O
-bacteria	B-Reagent
-from	O
+with	I-Reagent
+bacteria	I-Reagent
+from	I-Reagent
 the	O
 fresh	B-Modifier
-transformation	B-Method
-and	O
+transformation	I-Modifier
+and	B-Method
 incubate	B-Action
-at	O
-37	B-Temperature
-°C overnight.
-	I-Temperature
+at	I-Action
+37	O
+°C	B-Temperature
+overnight	I-Temperature
+.	B-Time
 
 Transfer	B-Action
 5mL	B-Amount
@@ -53,27 +61,32 @@ to	O
 1L	B-Amount
 LB	B-Reagent
 +	I-Reagent
-0.1%	I-Reagent
+0.1	I-Reagent
+%	I-Reagent
 glucose	I-Reagent
 +	I-Reagent
-50 μg/mL	I-Reagent
-Carbenicillin.
-	I-Reagent
+50	I-Reagent
+μg/mL	I-Reagent
+Carbenicillin	I-Reagent
+.	I-Reagent
 
 Grow	B-Action
 at	O
 25	B-Temperature
-°C to OD600=~0.5.
-	I-Temperature
+°C	I-Temperature
+to	O
+OD600=~0.5	B-Generic-Measure
+.	I-Generic-Measure
 
 Shift	B-Action
 culture	B-Reagent
 to	O
 18	B-Temperature
-°C for	I-Temperature
+°C	I-Temperature
+for	O
 15‐25	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	I-Time
 
 Add	B-Action
 IPTG	B-Reagent
@@ -82,16 +95,16 @@ to	O
 mM	I-Concentration
 and	O
 incubate	B-Action
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Pellet	B-Action
 culture	B-Reagent
 and	O
 obtain	B-Action
 wet	B-Measure-Type
-weight.
-	I-Measure-Type
+weight	I-Measure-Type
+.	O
 
 Resuspend	B-Action
 at	O
@@ -104,32 +117,40 @@ A	I-Reagent
 +	O
 protease	B-Reagent
 inhibitor	I-Reagent
-(Roche,	O
-#11836170001)	O
+(	O
+Roche	O
+,	O
+#	O
+11836170001	O
+)	O
 +	O
 1mM	B-Concentration
-PMSF.
-	B-Reagent
+PMSF	B-Reagent
+.	O
 
 Sonicate	B-Action
 6	B-Time
 x	I-Time
 45s	I-Time
-(setting	O
+(	O
+setting	O
 3	B-Generic-Measure
 at	I-Generic-Measure
-30%,	I-Generic-Measure
+30	I-Generic-Measure
+%	I-Generic-Measure
+,	O
 1	B-Time
 second	I-Time
 pulse‐2	B-Action
 second	B-Time
-pause)	B-Action
+pause	B-Action
+)	O
 with	O
 1	B-Time
 minute	I-Time
 cooling	B-Action
-inbetween.
-	O
+inbetween	O
+.	O
 
 Spin	B-Action
 lysate	B-Reagent
@@ -143,24 +164,30 @@ supernatant	B-Reagent
 to	O
 a	O
 fresh	B-Modifier
-tube.
-	B-Location
+tube	B-Location
+.	O
 
 Equilibrate	B-Action
 a	O
 5mL	B-Amount
 Ni‐agarose	B-Reagent
-(Qiagen,	O
-#30410)	O
+(	O
+Qiagen	O
+,	O
+#	O
+30410	O
+)	O
 with	O
 column	B-Location
 with	O
 Buffer	B-Reagent
 A	I-Reagent
-(at	B-Modifier
+(	O
+at	B-Modifier
 least	I-Modifier
-25mL).
-	B-Amount
+25mL	B-Amount
+)	O
+.	O
 
 Batch	B-Action
 bind	I-Action
@@ -172,8 +199,8 @@ Ni‐agarose	B-Reagent
 minutes	I-Time
 at	O
 4	B-Temperature
-°C.
-	I-Temperature
+°C	I-Temperature
+.	O
 
 Wash	B-Action
 Ni‐agarose	B-Reagent
@@ -182,13 +209,15 @@ with	O
 100mL	B-Amount
 of	O
 Buffer	B-Reagent
-B.	I-Reagent
+B	I-Reagent
+.	I-Reagent
 
 Elute	B-Action
 protein	B-Reagent
 with	O
 Buffer	B-Reagent
-C.	I-Reagent
+C	I-Reagent
+.	I-Reagent
 
 Determine	B-Action
 fractions	B-Reagent
@@ -207,30 +236,37 @@ small	B-Amount
 amount	I-Amount
 on	O
 SDS‐PAGE	B-Reagent
-gel.
-	I-Reagent
+gel	I-Reagent
+.	O
 
 Pool	B-Action
-fractions.
-	B-Reagent
+fractions	B-Reagent
+.	O
 
 Equilibrate	B-Action
 a	O
 5mL	B-Amount
 Q	B-Reagent
 Sepharose	I-Reagent
-(Sigma,	I-Reagent
-#Q1126)	I-Reagent
+(	I-Reagent
+Sigma	I-Reagent
+,	I-Reagent
+#	I-Reagent
+Q1126	I-Reagent
+)	I-Reagent
 column	I-Reagent
 with	O
 1M	B-Concentration
 KCl	B-Reagent
-(25mL,	B-Amount
+(	O
+25mL	B-Amount
+,	O
 this	O
 charges	B-Action
 the	O
-column).
-	B-Location
+column	B-Location
+)	O
+.	O
 
 Equilibrate	B-Action
 Q	B-Reagent
@@ -239,19 +275,23 @@ column	I-Reagent
 with	O
 Buffer	B-Reagent
 C	I-Reagent
-(25mL).
-	B-Amount
+(	O
+25mL	B-Amount
+)	O
+.	O
 
 Flow	B-Action
 eluent	B-Reagent
-(from	O
+(	O
+from	O
 step	O
-17)	O
+17	O
+)	O
 over	O
 Q	B-Reagent
 Sepharose	I-Reagent
-column.
-	I-Reagent
+column	I-Reagent
+.	O
 
 Collect	B-Action
 flow‐through	B-Reagent
@@ -266,8 +306,8 @@ for	O
 hours	I-Time
 at	O
 4	B-Temperature
-°C.
-	I-Temperature
+°C	I-Temperature
+.	O
 
 Transfer	B-Action
 into	O
@@ -276,8 +316,8 @@ Buffer	B-Reagent
 D	I-Reagent
 and	O
 dialyze	B-Action
-overnight.
-	B-Time
+overnight	B-Time
+.	O
 
 Concentrate	B-Action
 protein	B-Reagent
@@ -289,22 +329,26 @@ a	O
 100K	B-Generic-Measure
 centrifugal	B-Device
 filter	I-Device
-(Milipore,	I-Device
-UFC910024).
-	O
+(	O
+Milipore	B-Device
+,	O
+UFC910024	O
+)	O
+.	O
 
 Aliquot	B-Action
 and	O
 flash‐freeze	B-Action
 in	O
 liquid	B-Reagent
-nitrogen.
-	I-Reagent
+nitrogen	I-Reagent
+.	O
 
 Store	B-Action
 aliquots	B-Reagent
-at ‐80°C.
-	B-Temperature
+at	O
+‐80°C	B-Temperature
+.	I-Temperature
 
 
 

@@ -5,8 +5,7 @@ from	O
 viruses	B-Reagent
 on	O
 a	O
-filter
-	B-Device
+filter	B-Device
 
 Add	B-Action
 1	B-Amount
@@ -24,8 +23,10 @@ K	I-Reagent
 to	O
 a	O
 low-volume	B-Modifier
-(1–3	O
-cc)	O
+(	O
+1–3	O
+cc	O
+)	O
 syringe	B-Location
 that	O
 has	O
@@ -36,10 +37,12 @@ a	O
 female–female	B-Device
 Luer-Lok	I-Device
 adapter	I-Device
-(the	O
+(	O
+the	O
 injection	B-Location
-syringe).
-	I-Location
+syringe	I-Location
+)	O
+.	O
 
 Ensure	B-Action
 that	O
@@ -51,7 +54,8 @@ in	O
 the	O
 injection	B-Location
 syringe-adapter	I-Location
-assembly,	I-Location
+assembly	I-Location
+,	O
 then	O
 connect	B-Action
 it	O
@@ -60,8 +64,8 @@ the	O
 outlet	B-Device
 of	O
 the	O
-filter.
-	B-Device
+filter	B-Device
+.	O
 
 Connect	B-Action
 a	O
@@ -72,10 +76,12 @@ to	O
 the	O
 filter	B-Device
 inlet	I-Device
-(the	O
+(	O
+the	O
 aspiration	B-Location
-syringe).
-	I-Location
+syringe	I-Location
+)	O
+.	O
 
 Hold	B-Action
 the	O
@@ -89,8 +95,8 @@ syringe	I-Device
 pushing	B-Action
 upward	B-Method
 from	I-Method
-below.
-	I-Method
+below	I-Method
+.	O
 
 Hold	B-Action
 the	O
@@ -101,9 +107,11 @@ the	O
 injection	B-Device
 syringe	I-Device
 and	O
-gently,	B-Modifier
+gently	B-Modifier
+,	O
 but	O
-firmly,	B-Modifier
+firmly	B-Modifier
+,	O
 push	B-Action
 extraction	B-Reagent
 buffer	I-Reagent
@@ -120,17 +128,19 @@ appear	B-Action
 in	O
 the	O
 aspiration	B-Location
-syringe.
-	I-Location
+syringe	I-Location
+.	O
 
 Incubate	B-Action
 the	O
 assembly	B-Device
-(filter	I-Device
+(	O
+filter	B-Device
 with	O
 two	B-Numerical
 syringes	B-Location
-attached)	B-Modifier
+attached	B-Modifier
+)	O
 for	O
 15	B-Temperature
 min	I-Temperature
@@ -139,8 +149,8 @@ at	O
 in	O
 a	O
 hybridization	B-Location
-oven.
-	I-Location
+oven	I-Location
+.	O
 
 Allow	B-Action
 the	O
@@ -148,8 +158,8 @@ syringe-filter	B-Device
 assembly	I-Device
 to	O
 cool	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -165,11 +175,13 @@ the	O
 aspiration	B-Device
 syringe	I-Device
 underneath	B-Location
-(and	O
+(	O
+and	O
 the	O
 filter	B-Device
 upside	B-Modifier
-down)	I-Modifier
+down	I-Modifier
+)	O
 and	O
 gently	B-Modifier
 pulling	B-Action
@@ -183,14 +195,14 @@ extract	B-Reagent
 into	B-Location
 the	I-Location
 aspiration	I-Location
-syringe.
-	I-Location
+syringe	I-Location
+.	O
 
 Detach	B-Action
 the	O
 aspiration	B-Device
-syringe.
-	I-Device
+syringe	I-Device
+.	O
 
 Transfer	B-Action
 the	O
@@ -198,16 +210,16 @@ extract	B-Reagent
 to	O
 a	O
 microcentrifuge	B-Device
-tube.
-	I-Device
+tube	I-Device
+.	O
 
 Chill	B-Action
 on	O
 ice	B-Location
 for	O
 2–3	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 one-half	B-Generic-Measure
@@ -217,16 +229,18 @@ MPC	I-Reagent
 protein	I-Reagent
 precipitation	I-Reagent
 reagent	I-Reagent
-(supplied	B-Modifier
+(	O
+supplied	B-Modifier
 in	O
 the	O
-kit)	B-Device
+kit	B-Device
+)	O
 and	O
 vortex	B-Action
 for	O
 10	B-Time
-s.
-	I-Time
+s	I-Time
+.	O
 
 Pellet	B-Action
 the	O
@@ -237,21 +251,24 @@ at	O
 10,000g	B-Speed
 for	O
 10	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
 the	O
 supernatant	B-Reagent
-(containing	B-Modifier
+(	O
+containing	B-Modifier
 the	I-Modifier
 nucleic	I-Modifier
-acids)	I-Modifier
+acids	I-Modifier
+)	O
 to	O
 a	O
 sterile	B-Modifier
 microcentrifuge	B-Device
-tube;	I-Device
+tube	I-Device
+;	O
 be	O
 very	B-Modifier
 careful	I-Modifier
@@ -259,11 +276,13 @@ to	O
 avoid	B-Action
 the	O
 pellet	B-Reagent
-(containing	B-Modifier
+(	O
+containing	B-Modifier
 the	I-Modifier
 SDS-protein	I-Modifier
-complex).
-	I-Modifier
+complex	I-Modifier
+)	O
+.	O
 
 Transfer	B-Action
 up	B-Modifier
@@ -276,35 +295,39 @@ sample	B-Reagent
 to	O
 a	O
 fresh	B-Device
-tube;	I-Device
+tube	I-Device
+;	O
 add	B-Action
 1	B-Amount
 µl	I-Amount
 polyacryl	B-Reagent
-carrier,	I-Reagent
+carrier	I-Reagent
+,	O
 and	O
 vortex	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Add	B-Action
 1	B-Amount
 µl	I-Amount
 polyacryl	B-Reagent
-carrier,	I-Reagent
+carrier	I-Reagent
+,	O
 and	O
 vortex	B-Action
-briefly.
-	B-Modifier
+briefly	B-Modifier
+.	O
 
 Add	B-Action
 an	O
 equal	B-Modifier
 volume	I-Modifier
 of	O
-100%	B-Generic-Measure
-isopropanol.
-	B-Reagent
+100	B-Generic-Measure
+%	I-Generic-Measure
+isopropanol	B-Reagent
+.	O
 
 Mix	B-Action
 by	O
@@ -312,8 +335,8 @@ inverting	B-Action
 the	O
 tube	B-Device
 several	B-Method
-times.
-	I-Method
+times	I-Method
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -322,40 +345,47 @@ at	O
 ≥10,000g	B-Speed
 for	O
 15–45	B-Time
-min.
-	I-Time
+min	I-Time
+.	O
 
 Decant	B-Action
 or	O
 aspirate	B-Action
 the	O
-supernatant.
-	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
 pellet	B-Reagent
-twice,	B-Method
+twice	B-Method
+,	O
 each	B-Modifier
 time	I-Modifier
 adding	B-Action
-70%	B-Generic-Measure
-ethanol,	B-Reagent
+70	B-Generic-Measure
+%	I-Generic-Measure
+ethanol	B-Reagent
+,	O
 centrifuging	B-Action
 for	O
 1	B-Time
-min,	I-Time
+min	I-Time
+,	O
 and	O
 decanting	B-Action
-(or	O
-aspirating)	B-Action
+(	O
+or	O
+aspirating	B-Action
+)	O
 the	O
-ethanol.
-	B-Reagent
+ethanol	B-Reagent
+.	O
 
 Air-dry	B-Action
 the	O
-pellet,	B-Reagent
+pellet	B-Reagent
+,	O
 then	O
 dissolve	B-Action
 in	O
@@ -363,18 +393,20 @@ in	O
 µL	I-Amount
 of	O
 0.02-	B-Modifier
-filtered,	I-Modifier
-sterile	I-Modifier
+filtered	I-Modifier
+,	O
+sterile	B-Modifier
 0.5×	B-Reagent
 TE	I-Reagent
 buffer	I-Reagent
 heated	B-Modifier
 to	O
-50°C.
-	B-Temperature
+50°C	B-Temperature
+.	O
 
 If	B-Modifier
-required,	I-Modifier
+required	I-Modifier
+,	O
 DNA	B-Reagent
 or	I-Reagent
 RNA	I-Reagent
@@ -394,8 +426,8 @@ digestion	I-Method
 with	O
 DNase	B-Reagent
 or	O
-RNase.
-	B-Reagent
+RNase	B-Reagent
+.	O
 
 
 

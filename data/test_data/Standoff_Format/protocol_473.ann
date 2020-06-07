@@ -1,63 +1,38 @@
-T1	Action 42 45	add
-E1	Action:T1 Site:T12 Acts-on:T14
-T2	Action 61 64	Mix
-E2	Action:T2 
-T3	Action 120 128	dissolve
-E3	Action:T3 
-T4	Action 144 148	boil
-E4	Action:T4 
-T5	Action 184 193	AUTOCLAVE
-E5	Action:T5 
-T7	Action 235 242	running
-E7	Action:T7 Acts-on:T25
-T8	Action 282 286	pour
-E8	Action:T8 Acts-on:T26 Site:T28
-T9	Action 341 344	run
-E9	Action:T9 Acts-on:T31 Site:T32
-T10	Action 375 381	remove
-E10	Action:T10 Acts-on:T34
-T11	Amount 28 33	500ml
-T12	Reagent 34 40	MilliQ
-T13	Amount 46 49	44g
-T14	Reagent 50 59	TCBS Agar
-R1	Measure Arg1:T14 Arg2:T13	
-R2	Measure Arg1:T12 Arg2:T11	
-T15	Modifier 65 75	thoroughly
-T16	Action 76 82	Loosen
-E11	Action:T16 Acts-on:T17
-T17	Seal 83 86	cap
-R3	Mod-Link Arg1:E2 Arg2:T15	
-T18	Action 99 103	boil
-E12	Action:T18 Acts-on:T19
-T19	Device 107 116	microwave
-T20	Modifier 129 139	completely
-T21	Time 167 175	1 minute
-T22	Modifier 153 166	approximately
-R4	Mod-Link Arg1:T21 Arg2:T22	
-R5	Setting Arg1:E4 Arg2:T21	
-R6	Mod-Link Arg1:E3 Arg2:T20	
-T6	Action 205 209	cool
-E6	Action:T6 
-T23	Modifier 213 226	approximately
-T24	Temperature 227 231	60ºC
-T25	Location 243 252	container
-R7	Setting Arg1:E6 Arg2:T24	
-R8	Mod-Link Arg1:T24 Arg2:T23	
-T26	Reagent 287 296	TCBS agar
-T27	Modifier 302 309	sterile
-T28	Location 310 316	plates
-R9	Mod-Link Arg1:T28 Arg2:T27	
-T29	Modifier 323 332	half way.
-R10	Mod-Link Arg1:E8 Arg2:T29	
-T30	Modifier 333 340	Quickly
-T31	Reagent 345 350	flame
-T32	Location 356 363	surface
-T33	Reagent 367 371	agar
-T34	Reagent 386 397	air bubbles
-R11	Mod-Link Arg1:E9 Arg2:T30	
-R12	Meronym Arg1:T32 Arg2:T33	
-T35	Location 0 16	TCBS Agar Plates
-T36	Amount 18 23	500ml
-R13	Measure Arg1:T35 Arg2:T36	
-T37	Device 259 266	MilliQ 
-T38	Reagent 275 280	flame
+T1	Location 0 16	TCBS Agar Plates
+T2	Amount 18 23	500ml
+T3	Amount 28 33	500ml
+T4	Reagent 34 40	MilliQ
+T5	Action 42 45	add
+T6	Amount 46 49	44g
+T7	Reagent 50 59	TCBS Agar
+T8	Action 61 64	Mix
+T9	Modifier 65 75	thoroughly
+T10	Action 76 82	Loosen
+T11	Seal 83 86	cap
+T12	Action 99 103	boil
+T13	Device 107 116	microwave
+T14	Action 120 128	dissolve
+T15	Modifier 129 139	completely
+T16	Action 144 148	boil
+T17	Modifier 153 166	approximately
+T18	Time 167 175	1 minute
+T19	Action 184 193	AUTOCLAVE
+T20	Action 204 208	cool
+T21	Modifier 212 225	approximately
+T22	Temperature 226 230	60ºC
+T23	Action 234 241	running
+T24	Location 242 251	container
+T25	Device 258 270	MilliQ Under
+T26	Reagent 273 279	flame,
+T27	Action 280 289	pour TCBS
+T28	Reagent 290 299	agar into
+T29	Modifier 300 314	sterile plates
+T30	Location 315 320	about
+T31	Modifier 321 330	half way.
+T32	Modifier 331 338	Quickly
+T33	Action 339 342	run
+T34	Reagent 343 348	flame
+T35	Location 354 361	surface
+T36	Reagent 365 369	agar
+T37	Action 373 379	remove
+T38	Reagent 384 395	air bubbles

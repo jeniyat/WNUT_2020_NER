@@ -2,7 +2,9 @@ Pulse	B-Reagent
 Field	I-Reagent
 Gel	I-Reagent
 Electrophoresis	B-Method
-(PFGE)	I-Method
+(	O
+PFGE	B-Method
+)	O
 Protocol	O
 for	O
 separation	B-Method
@@ -13,26 +15,29 @@ DNA	B-Reagent
 and	O
 Chlorella	B-Reagent
 virus	I-Reagent
-DNA
-	I-Reagent
+DNA	I-Reagent
 
 Harvest	B-Action
 Chlorella	B-Reagent
 NC64A	I-Reagent
-(or	I-Reagent
-Pbi)	I-Reagent
+(	I-Reagent
+or	I-Reagent
+Pbi	I-Reagent
+)	I-Reagent
 cells	I-Reagent
 from	O
 4	B-Location
 day	I-Location
 old	I-Location
 cultures	I-Location
-(1.2	B-Concentration
+(	B-Concentration
+1.2	I-Concentration
 -	I-Concentration
 2.0	I-Concentration
 x	I-Concentration
 107	I-Concentration
-cells/ml)	I-Concentration
+cells/ml	I-Concentration
+)	I-Concentration
 by	O
 centrifugation	B-Method
 at	O
@@ -41,26 +46,30 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Re-suspend	B-Action
 in	O
 MBBM	B-Reagent
-(NC64A	I-Reagent
-cells)	I-Reagent
+(	I-Reagent
+NC64A	I-Reagent
+cells	I-Reagent
+)	I-Reagent
 or	O
 FES	B-Reagent
-(Pbi	I-Reagent
-cells)	I-Reagent
+(	I-Reagent
+Pbi	I-Reagent
+cells	I-Reagent
+)	I-Reagent
 at	O
 concentration	B-Measure-Type
 of	O
 8.6	B-Concentration
 x	I-Concentration
 107	I-Concentration
-cells/mL.
-	I-Concentration
+cells/mL	I-Concentration
+.	O
 
 Add	B-Action
 chlorella	B-Reagent
@@ -70,37 +79,47 @@ a	O
 multiplicity	B-Generic-Measure
 of	I-Generic-Measure
 infection	I-Generic-Measure
-(MOI)	I-Generic-Measure
+(	O
+MOI	B-Generic-Measure
+)	O
 =	O
 10	B-Numerical
 plaque-forming	B-Measure-Type
 units	I-Measure-Type
-(pfu)/cell.
-	I-Measure-Type
+(	I-Measure-Type
+pfu	I-Measure-Type
+)	I-Measure-Type
+/cell	I-Measure-Type
+.	O
 
 Sample	B-Action
 infected	B-Modifier
 chlorella	B-Reagent
 cells	I-Reagent
-(25	B-Amount
-mL)	I-Amount
+(	O
+25	B-Amount
+mL	I-Amount
+)	O
 into	O
 prepared	B-Modifier
 centrifuge	B-Location
 tubes	I-Location
 with	O
 formaldehyde	B-Device
-(the	O
+(	O
+the	O
 final	B-Modifier
 formaldehyde	B-Reagent
 concentration	B-Measure-Type
 is	O
-4%)	B-Concentration
+4	B-Concentration
+%	I-Concentration
+)	O
 and	O
 place	B-Action
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -109,8 +128,8 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Wash	B-Action
 samples	B-Reagent
@@ -136,15 +155,15 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes.
-	I-Time
+minutes	I-Time
+.	O
 
 Repeat	B-Action
 wash	B-Method
 step	O
 3	B-Numerical
-times.
-	O
+times	O
+.	O
 
 Re-suspend	B-Action
 washed	B-Modifier
@@ -154,56 +173,69 @@ in	O
 0.5	B-Amount
 mL	I-Amount
 of	O
-SB.
-	B-Location
+SB	B-Location
+.	O
 
 Add	B-Action
 to	O
 the	O
-cells 0.5	B-Reagent
-mL of	B-Amount
-2%	B-Reagent
-low	I-Reagent
+cells	B-Reagent
+0.5	B-Amount
+mL	I-Amount
+of	O
+2	O
+%	O
+low	B-Reagent
 melting	I-Reagent
 point	I-Reagent
 agarose	I-Reagent
-(BioRad)	O
+(	I-Reagent
+BioRad	O
+)	O
 in	O
-SB	B-Location
-(kept	O
+SB	O
+(	B-Location
+kept	I-Location
 at	O
-45°C),	B-Temperature
-mix	B-Action
-well	O
-(work	O
-quickly,	O
+45°C	B-Temperature
+)	I-Temperature
+,	O
+mix	O
+well	B-Action
+(	O
+work	O
+quickly	O
+,	O
 try	O
 not	O
 to	O
 generate	O
 any	O
 air	O
-bubbles),	O
+bubbles	O
+)	O
+,	O
 and	O
 pour	B-Action
-the	O
-mix	B-Reagent
-into	O
+the	I-Action
+mix	O
+into	B-Reagent
 BioRad	B-Location
 plug	I-Location
-molds.
-	I-Location
+molds	I-Location
+.	I-Location
 
-Place plug	B-Action
-molds	B-Reagent
-in	O
+Place	B-Action
+plug	B-Reagent
+molds	I-Reagent
+in	I-Reagent
 refrigerator	B-Location
-for	O
-15	B-Time
-minutes	I-Time
-to	O
-solidify.
-	O
+for	I-Location
+15	O
+minutes	B-Time
+to	I-Time
+solidify	O
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
@@ -217,25 +249,29 @@ them	O
 into	O
 2	B-Amount
 mL	I-Amount
-of DB	B-Location
-amended	O
+of	O
+DB	B-Location
+amended	I-Location
 with	O
 1mg/mL	B-Concentration
-Proteinase	B-Reagent
-K.
-	I-Reagent
+Proteinase	I-Concentration
+K	B-Reagent
+.	I-Reagent
 
 After	O
-incubation,	B-Method
+incubation	B-Method
+,	O
 wash	B-Action
-agarose blocks for	B-Reagent
-30	B-Time
-minutes	I-Time
-with	O
-DB	B-Reagent
-4	B-Numerical
-times.
-	O
+agarose	B-Reagent
+blocks	I-Reagent
+for	I-Reagent
+30	O
+minutes	B-Time
+with	I-Time
+DB	O
+4	B-Reagent
+times	I-Reagent
+.	O
 
 Cut	B-Action
 blocks	B-Reagent
@@ -245,8 +281,8 @@ pieces	B-Size
 to	O
 fit	O
 gel	O
-wells.
-	O
+wells	O
+.	O
 
 Load	B-Action
 agarose	B-Reagent
@@ -259,79 +295,115 @@ seal	B-Action
 them	O
 with	O
 melted	B-Modifier
-(~45°C)	O
-1%	B-Modifier
+(	O
+~45°C	O
+)	O
+1	B-Modifier
+%	I-Modifier
 low	I-Modifier
 melting	I-Modifier
 point	I-Modifier
 agarose	B-Reagent
 in	O
 running	B-Location
-buffer.
-	I-Location
+buffer	I-Location
+.	O
 
 The	O
 chromosomes	B-Reagent
 of	O
 Hansenula	B-Reagent
 wingei	I-Reagent
-(1.05-3.13	O
-Mbp),	O
-cat#170-3667;	O
+(	O
+1.05-3.13	O
+Mbp	O
+)	O
+,	O
+cat	O
+#	O
+170-3667	O
+;	O
 Schizosaccharomyces	B-Reagent
-(3.5-5.7	O
-Mbp),	O
-cat#170-3633	O
-(Bio-Rad,	O
-Hercules,	O
-CA,	O
-USA),	O
+(	O
+3.5-5.7	O
+Mbp	O
+)	O
+,	O
+cat	O
+#	O
+170-3633	O
+(	O
+Bio-Rad	O
+,	O
+Hercules	O
+,	O
+CA	O
+,	O
+USA	O
+)	O
+,	O
 and	O
 Yeast	B-Reagent
 Chromosome	I-Reagent
 PFG	I-Reagent
 Marker	O
-(225-1,900	O
-Kbp),	O
-cat#N0345S	O
-(New	O
+(	O
+225-1,900	O
+Kbp	O
+)	O
+,	O
+cat	O
+#	O
+N0345S	O
+(	O
+New	O
 England	O
-Biolabs,	O
-Beverly,	O
-MA,	O
-USA)	O
+Biolabs	O
+,	O
+Beverly	O
+,	O
+MA	O
+,	O
+USA	O
+)	O
 are	O
 used	B-Action
 as	O
 molecular	B-Generic-Measure
 weight	I-Generic-Measure
-markers.
-	O
+markers	O
+.	O
 
 Separate	B-Action
 chromosomal	B-Reagent
 DNA	I-Reagent
- in	O
+in	O
 CHEF-DR	B-Location
- (BioRad,	I-Location
-Hercules,	I-Location
-CA)	I-Location
+(	I-Location
+BioRad	I-Location
+,	I-Location
+Hercules	I-Location
+,	I-Location
+CA	I-Location
+)	I-Location
 electrophoresis	I-Location
 unit	I-Location
-with	O
-1X	B-Modifier
-TAE	I-Modifier
-running	B-Reagent
-buffer.
-	I-Reagent
+with	I-Location
+1X	O
+TAE	B-Modifier
+running	I-Modifier
+buffer	B-Reagent
+.	I-Reagent
 
 Run	B-Action
 electrophoresis	B-Method
 at	O
 3	B-Speed
 V/cm	I-Speed
-(100	O
-V)	O
+(	O
+100	O
+V	O
+)	O
 with	O
 pulse	O
 time	O
@@ -343,15 +415,15 @@ to	I-Time
 seconds	I-Time
 for	O
 60	B-Time
-hrs.
-	I-Time
+hrs	I-Time
+.	O
 
 Change	B-Action
 buffer	B-Reagent
- every	O
-24	B-Time
-hrs.
-	I-Time
+every	O
+24	O
+hrs	B-Time
+.	I-Time
 
 Stain	B-Action
 gel	B-Reagent
@@ -361,25 +433,27 @@ mg/L	I-Amount
 ethidium	B-Reagent
 bromide	I-Reagent
 for	O
-20.
-	B-Numerical
+20	B-Numerical
+.	O
 
 Add	B-Action
 3.1	B-Amount
 ml	I-Amount
 of	O
-37%	B-Reagent
+37	B-Reagent
+%	I-Reagent
 formaldehyde	I-Reagent
 into	O
 40	B-Amount
 ml	I-Amount
 centrifuge	B-Location
-tubes and	I-Location
+tubes	I-Location
+and	O
 place	B-Action
-them	O
+them	I-Action
 on	O
-ice.
-	B-Location
+ice	B-Location
+.	I-Location
 
 Incubate	B-Action
 agarose	B-Reagent
@@ -390,19 +464,23 @@ hrs	I-Time
 at	O
 50°C	B-Temperature
 Prepare	B-Action
-1%	B-Reagent
+1	B-Reagent
+%	I-Reagent
 agarose	I-Reagent
 gel	I-Reagent
-(PFGE	B-Method
-grade)	O
+(	O
+PFGE	B-Method
+grade	O
+)	O
 in	O
 1×	B-Location
 TAE	I-Location
 buffer	I-Location
 using	O
-BioRad casting	B-Device
-stand.
-	I-Device
+BioRad	B-Device
+casting	I-Device
+stand	I-Device
+.	I-Device
 
 
 
