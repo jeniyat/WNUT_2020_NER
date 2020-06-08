@@ -40,23 +40,30 @@ The participants are required to produce predictions on the protocols as [StandO
 
 ## Directory Structure 
 ```
-|-- data
-|	|---train_data
-|	|		|---Conll_Format
-|	|		|---Standoff_Format
-|	|---test_data
-|	|		|---Conll_Format
-|	|		|---Standoff_Format
-|	|---dev_data
-|			|---Conll_Format
-|			|---Standoff_Format
-|
-|-- code
-|	|---baseline_CRF
-|	|---eval
-|	|---scripts
-|
-|__
+.
+├── code
+│   ├── baseline_CRF
+│   │   ├── Conll_Outputs
+│   │   ├── Standoff_Outputs
+│   │   ├── __pycache__
+│   │   └── gazetters
+│   ├── eval
+│   │   └── __pycache__
+│   └── scripts
+│       ├── convert_conll_to_standoff
+│       │   └── __pycache__
+│       └── convert_standoff_conll_ner
+│           └── __pycache__
+└── data
+    ├── dev_data
+    │   ├── Conll_Format
+    │   └── Standoff_Format
+    ├── test_data
+    │   ├── Conll_Format
+    │   └── Standoff_Format
+    └── train_data
+        ├── Conll_Format
+        └── Standoff_Format
 ```
 ## Relevant Paper:
 
