@@ -9,9 +9,9 @@ WNUT 2020 shared task is designed on the wet lab protocol data. Wet Lab protocol
 
 ## Shared-task Organizers
 
-[Jeniya Tabassum](https://sites.google.com/site/jeniyatabassum/) (Ohio State University)
-[Wei Xu](https://cocoxu.github.io/) (Ohio State University → Georgia Tech)
-[Alan Ritter](http://aritter.github.io/) (Ohio State University → Georgia Tech)
+- [Jeniya Tabassum](https://sites.google.com/site/jeniyatabassum/) (Ohio State University)
+- [Wei Xu](https://cocoxu.github.io/) (Ohio State University → Georgia Tech)
+- [Alan Ritter](http://aritter.github.io/) (Ohio State University → Georgia Tech)
 
 ## Data
 
