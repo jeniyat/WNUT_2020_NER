@@ -32,14 +32,16 @@ After discarding the duplicate protocols, the remaining 615 unique protocols are
 2) [dev_data](./data/dev_data/): 122 protocols  with 2838 sentences
 3) [test_data](./data/test_data/): 123 protocols  with 2813 sentences
 
-We will release a new test set on August 31, 2020 for the offical evaluation. Please sign up here to receive the offical evaluation data. 
 
-Data available: June 8
-Evaluation window: Aug 31 - Sep 4
-System Description Papers Submitted: Sep 18
-Papers Reviewed: Sep 28
-Papers Camera-ready: Oct 8
-Workshop Day: Nov 11
+**We will release a new test set on August 31, 2020 for the offical evaluation. Please sign up [here](https://forms.gle/HtnNezLTgkuj4DyQ8) to receive the data. **
+
+
+- Data available: June 8
+- Evaluation window: Aug 31 - Sep 4
+- System Description Papers Submitted: Sep 18
+- Papers Reviewed: Sep 28
+- Papers Camera-ready: Oct 8
+= Workshop Day: Nov 11
 
 
 
