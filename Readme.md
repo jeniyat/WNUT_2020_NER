@@ -54,7 +54,7 @@ The participants are required to produce predictions on the protocols as [StandO
 |-- code
 |	|---baseline_CRF
 |	|---eval
-|   |---scripts
+|	|---scripts
 |
 |__
 ```
