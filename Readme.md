@@ -45,15 +45,11 @@ The participants are required to produce predictions on the protocols as [StandO
 │   ├── baseline_CRF
 │   │   ├── Conll_Outputs
 │   │   ├── Standoff_Outputs
-│   │   ├── __pycache__
 │   │   └── gazetters
 │   ├── eval
-│   │   └── __pycache__
 │   └── scripts
 │       ├── convert_conll_to_standoff
-│       │   └── __pycache__
 │       └── convert_standoff_conll_ner
-│           └── __pycache__
 └── data
     ├── dev_data
     │   ├── Conll_Format
