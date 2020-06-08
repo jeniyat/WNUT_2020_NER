@@ -51,12 +51,12 @@ The participants are required to produce predictions on the protocols as [StandO
 |			|---Conll_Format
 |			|---Standoff_Format
 |
-|-- [code](./code/)
-	|--- [baseline_CRF](./code/baseline_CRF/)
-	|--- [eval](./code/eval/)
-	|--- [scripts](./code/scripts/)
-
-
+|-- code
+|	|---baseline_CRF
+|	|---eval
+|   |---scripts
+|
+|__
 ```
 ## Relevant Paper:
 
