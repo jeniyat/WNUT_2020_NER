@@ -4,7 +4,7 @@
 WNUT 2020 shared task is designed on the wet lab protocol data. All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 615 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020
 
 
-Wet Lab protocols are bascially collection of  steps in performing a lab procedures. They are noisy, dense, and domain-specific. Automatic or semi-automatic conversion of protocols into machine-readable format benefits biological research. In this task, system entries are invited for event recognition and relation extraction over these lab protocols. Note that these protocols are written by researchers and lab technicians worldwide, some of which may contain non-standard language or spelling errors. Below a sample of the input data:
+Wet Lab protocols are bascially collection of  steps in performing a lab procedures. They are noisy, dense, and domain-specific. Automatic or semi-automatic conversion of protocols into machine-readable format benefits biological research. In this task, participants are invited for event recognition and relation extraction over these lab protocols. Note that these protocols are written by researchers and lab technicians worldwide, some of which may contain non-standard language or spelling errors. Below a sample of the input data:
 
 ![nCoV-2019 sequencing protocol](./covid-data.png?raw=true "Title")
 
