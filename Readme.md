@@ -22,7 +22,7 @@ Our Wet Lab Protocol (WLP) dataset consists of 615 protocols selected from the 6
 - protocol 484 (duplicate of protocol 476)
 - protocol 621 (duplicate of protocol 570)
 
-After discarding the duplicate protocols, the remaining 615 unique protocols are re-annoated in brat with 3 annotators. The annotators added the missing entity-relations and also corrected the incosistencies. The updated dataset is provided in the [data directory](./data/Readme.md) in both StandOff and CoNLL format. The data is divided in 3 sub-directories as below:
+After discarding the duplicate protocols, the remaining 615 unique protocols are re-annoated in brat with 3 annotators with 0.75 inter-annotator agreement, measured by span-level Cohen’s Kappa. The annotators added the missing entity-relations and also corrected the incosistencies. The updated dataset is provided in the [data directory](./data/Readme.md) in both StandOff and CoNLL format. The data is divided in 3 sub-directories as below:
 
 1) [train_data](./data/train_data/): 370 protocols with 8436 sentences
 2) [dev_data](./data/dev_data/): 122 protocols  with 2838 sentences
