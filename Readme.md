@@ -33,7 +33,7 @@ After discarding the duplicate protocols, the remaining 615 unique protocols are
 3) [test_data](./data/test_data/): 123 protocols  with 2813 sentences
 
 
-**We will release a new test set on August 31, 2020 for the offical evaluation. Please sign up [here](https://forms.gle/HtnNezLTgkuj4DyQ8) to receive the data in email.**
+**We will release a new test set on August 31, 2020 for the offical evaluation. Please sign up [here](https://forms.gle/HtnNezLTgkuj4DyQ8) to receive the data in email. We will use a [mailing list](https://groups.google.com/forum/#!forum/wnut2020-sharedtask) for annoucements and discussions.**
 
 ## Timeline 
 
