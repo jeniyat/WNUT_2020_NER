@@ -4,7 +4,7 @@ We provided a simple Liner CRF model in the [baseline_CRF directory](./baseline_
 
 # The evaluation system:
 
-We provided the NER evalutation scipt in the [eval directory](./eval/Readme.md). To run the evalutaiton systeme the participants are required to produce entity sequence for each sentence and submit the predictions as either [StandOff format](../data/Readme.md##-The-standoff-format:) or [CoNLL format](../data/Readme.md##-The-conll-format:).
+We provided the NER evalutation scipt in the [eval directory](./eval/Readme.md). To run the evalutaiton system the participants are required to produce entity sequence for each sentence and submit the predictions as either [StandOff format](../data/Readme.md##-The-standoff-format:) or [CoNLL format](../data/Readme.md##-The-conll-format:).
 
 # The utility scripts:
 

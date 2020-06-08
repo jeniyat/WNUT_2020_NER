@@ -54,7 +54,7 @@ We have provided a feature based [Linear CRF tagger](./code/baseline_CRF/) for t
 
 ## Evaluation
 
-The participants are required to produce predictions on the protocols as [StandOff format](../../data/Readme.md##-The-standoff-format:), which will be compared with the gold data using the [evalution script](./code/eval/).
+The participants are required to produce predictions on the protocols as [StandOff format](../../data/Readme.md##-The-standoff-format:) or [CoNLL format](../../data/Readme.md##-The-conll-format:), which will be compared with the gold data using the [evalution script](./code/eval/).
 
 ## Directory Structure 
 ```
