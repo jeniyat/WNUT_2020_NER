@@ -1,7 +1,7 @@
 # WNUT 2020: Named Entity Extraction 
 
 
-WNUT 2020 shared task is designed on the wet lab protocol data. Wet Lab protocols are bascially collection of  steps in performing a lab procedures. They are noisy, dense, and domain-specific. Automatic or semi-automatic conversion of protocols into machine-readable format benefits biological research. In this task, participants are invited for event recognition and relation extraction over these lab protocols. Note that these protocols are written by researchers and lab technicians worldwide, some of which may contain non-standard language or spelling errors. 
+WNUT 2020 shared task is designed on the wet lab protocol data. Wet Lab protocols are bascially a collection of steps from different lab procedures. They are noisy, dense, and domain-specific. Automatic or semi-automatic conversion of protocols into machine-readable format benefits medical and biological research. In this task, participants are invited for event recognition and relation extraction over these lab protocols. Note that these protocols are written by researchers and lab technicians from all over the world, some of which may contain non-standard language or spelling errors. 
 
  All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 615 protocols. The brat styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020. Below is a sample of the input data:
 
@@ -22,7 +22,7 @@ Our Wet Lab Protocol (WLP) dataset consists of 615 protocols selected from the 6
 - protocol 484 (duplicate of protocol 476)
 - protocol 621 (duplicate of protocol 570)
 
-The remaining 615 uniqe protocols are re-annoated in brat with 3 annotators. The annotators added the missing entity-relations and also corrected the incosistencies. The updated dataset is provided in the [data directory](./data/Readme.md) in both StandOff and CoNLL format. The data is divided in 3 sub-directories as below:
+After discarding the duplicate protocols, the remaining 615 unique protocols are re-annoated in brat with 3 annotators. The annotators added the missing entity-relations and also corrected the incosistencies. The updated dataset is provided in the [data directory](./data/Readme.md) in both StandOff and CoNLL format. The data is divided in 3 sub-directories as below:
 
 1) [train_data](./data/train_data/): 370 protocols with 8436 sentences
 2) [dev_data](./data/dev_data/): 122 protocols  with 2838 sentences
