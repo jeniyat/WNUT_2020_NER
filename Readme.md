@@ -3,7 +3,7 @@
 
 WNUT 2020 shared task is designed on the wet lab protocol data. Wet Lab protocols are bascially a collection of steps from different lab procedures. They are noisy, dense, and domain-specific. Automatic or semi-automatic conversion of protocols into machine-readable format benefits medical and biological research. In this task, participants are invited for event recognition and relation extraction over these lab protocols. Note that these protocols are written by researchers and lab technicians from all over the world, some of which may contain non-standard language or spelling errors. 
 
- All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 615 protocols. The [BRAT](https://brat.nlplab.org/examples.html) styled annotated protocols can be visulalized in: http://bit.ly/WNUT2020. Below is a sample of the input data:
+ All of the protocols were collected from [protocols.io](https://www.protocols.io/) using their public APIs. The full protocol-dump is also available as json format in their [github repository](https://github.com/protocolsio/protocols). For this shared task, we provide the annotation of 615 protocols. The [BRAT](https://brat.nlplab.org/examples.html) styled annotated protocols can be visulalized at: http://bit.ly/WNUT2020. Below is a sample of the input data:
 
 ![nCoV-2019 sequencing protocol](./covid-data.png?raw=true "Title")
 
@@ -12,6 +12,11 @@ WNUT 2020 shared task is designed on the wet lab protocol data. Wet Lab protocol
 - [Jeniya Tabassum](https://sites.google.com/site/jeniyatabassum/) (Ohio State University)
 - [Wei Xu](https://cocoxu.github.io/) (Ohio State University → Georgia Tech)
 - [Alan Ritter](http://aritter.github.io/) (Ohio State University → Georgia Tech)
+
+## Shared-task Details
+
+- [Participat's Registration](https://docs.google.com/forms/d/e/1FAIpQLSem8kMoPeHJKa78xFSat1Iy8FWLFXB6zDG3qiRl92h3kahBUg/viewform) 
+- [Task' Website](http://noisy-text.github.io/2020/wlp-task.html) 
 
 ## Data
 
