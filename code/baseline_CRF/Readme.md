@@ -52,7 +52,7 @@ Example: Exclude Gazetteer Features:  `python crf_ner.py -include_gazetteer 0`
 
 ## Evaluting model performance:
 
-The following script should be used to evaluate the pefromnace of the model predictions:
+The following script should be used to evaluate the performance of the model predictions:
   
       ./evalutation.py
 
