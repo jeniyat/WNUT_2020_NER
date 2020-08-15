@@ -7,19 +7,13 @@ Protocol	I-Method
 Obtain	B-Action
 desired	B-Modifier
 tissue	B-Reagent
-(	O
-e.g	O
-.	O
-spleen	B-Reagent
-,	O
-lymph	B-Reagent
-node	I-Reagent
-,	O
-thymus	B-Reagent
-,	O
-bone	B-Reagent
-marrow	I-Reagent
-)	O
+(e.g.	O
+spleen,	B-Reagent
+lymph	I-Reagent
+node,	I-Reagent
+thymus,	I-Reagent
+bone	I-Reagent
+marrow)	I-Reagent
 and	O
 prepare	B-Action
 a	O
@@ -30,15 +24,10 @@ in	O
 Cell	B-Reagent
 Staining	I-Reagent
 Buffer	I-Reagent
-(	O
-BioLegend	O
-Cat	O
-.	O
-No	O
-.	O
-420201	O
-)	O
-.	O
+(BioLegend	O
+Cat.	O
+No.	O
+420201).	O
 
 Add	B-Action
 Cell	B-Reagent
@@ -56,38 +45,26 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes	I-Time
-,	O
+minutes,	I-Time
 discard	B-Action
-supernatant	B-Reagent
-.	O
+supernatant.	B-Reagent
 
 If	B-Modifier
 necessary	I-Modifier
-(	O
-e.g	O
-.	O
-spleen	B-Reagent
-)	O
-,	O
+(e.g.	O
+spleen),	B-Reagent
 dilute	B-Action
 10X	B-Concentration
 Red	B-Reagent
 Blood	I-Reagent
 Cell	I-Reagent
-(	I-Reagent
-RBC	I-Reagent
-)	I-Reagent
+(RBC)	I-Reagent
 Lysis	I-Reagent
 Buffer	I-Reagent
-(	O
-BioLegend	O
-Cat	O
-.	O
-No	O
-.	O
-420301	O
-)	O
+(BioLegend	O
+Cat.	O
+No.	O
+420301)	O
 to	O
 1X	B-Concentration
 working	B-Measure-Type
@@ -104,16 +81,14 @@ ml	I-Amount
 1X	B-Concentration
 RBC	B-Reagent
 Lysis	I-Reagent
-Buffer	I-Reagent
-.	O
+Buffer.	I-Reagent
 
 Incubate	B-Action
 on	B-Temperature
 ice	I-Temperature
 for	O
 5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Stop	B-Action
 cell	I-Action
@@ -127,8 +102,7 @@ Staining	I-Reagent
 Buffer	I-Reagent
 to	O
 the	O
-tube	B-Location
-.	O
+tube.	B-Location
 
 Centrifuge	B-Action
 for	O
@@ -140,8 +114,7 @@ x	I-Speed
 g	I-Speed
 and	O
 discard	B-Action
-supernatant	B-Reagent
-.	O
+supernatant.	B-Reagent
 
 Add	B-Action
 Cell	B-Reagent
@@ -159,11 +132,9 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes	I-Time
-,	O
+minutes,	I-Time
 discard	B-Action
-supernatant	B-Reagent
-.	O
+supernatant.	B-Reagent
 
 Count	B-Action
 viable	B-Modifier
@@ -186,28 +157,23 @@ distribute	B-Action
 of	O
 cell	B-Reagent
 suspension	I-Reagent
-(	O
-5-10	B-Concentration
+(5-10	B-Concentration
 x	I-Concentration
 105	I-Concentration
-cells/tube	I-Concentration
-)	O
+cells/tube)	I-Concentration
 into	O
 12	B-Size
 x	I-Size
 75	I-Size
 mm	I-Size
 plastic	B-Location
-tubes	I-Location
-.	O
+tubes.	I-Location
 
 Add	B-Action
 appropriately	B-Modifier
 conjugated	I-Modifier
-fluorescent	I-Modifier
-,	O
-biotinylated	B-Modifier
-,	O
+fluorescent,	I-Modifier
+biotinylated,	I-Modifier
 or	O
 purified	B-Modifier
 primary	I-Modifier
@@ -216,16 +182,11 @@ at	O
 predetermined	B-Concentration
 optimum	I-Concentration
 concentrations	I-Concentration
-(	O
-e.g	O
-.	O
-anti-CD3-FITC	B-Reagent
-,	O
-anti-CD4-Biotin	B-Reagent
-,	O
+(e.g.	O
+anti-CD3-FITC,	B-Reagent
+anti-CD4-Biotin,	I-Reagent
 and	O
-anti-CD8-APC	B-Reagent
-)	O
+anti-CD8-APC)	B-Reagent
 and	O
 incubate	B-Action
 on	B-Temperature
@@ -235,8 +196,7 @@ for	O
 minutes	I-Time
 in	B-Modifier
 the	I-Modifier
-dark	I-Modifier
-.	O
+dark.	I-Modifier
 
 Wash	B-Action
 with	O
@@ -256,13 +216,9 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
-(	O
-1/2	O
-)	O
-.	O
+(1/2).	O
 
 Wash	B-Action
 with	O
@@ -282,21 +238,16 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
-(	O
-2/2	O
-)	O
-.	O
+(2/2).	O
 
 If	O
 using	O
 a	O
 purified	B-Modifier
 primary	I-Modifier
-antibody	B-Reagent
-,	O
+antibody,	B-Reagent
 resuspend	B-Action
 pellet	B-Reagent
 in	O
@@ -315,13 +266,10 @@ fluorochrome	I-Reagent
 conjugated	I-Reagent
 secondary	I-Reagent
 antibody	I-Reagent
-(	O
-e.g	O
-.	O
+(e.g.	O
 FITC	B-Time
 anti-mouse	I-Time
-Ig	I-Time
-)	O
+Ig)	I-Time
 and	O
 incubate	B-Action
 on	B-Temperature
@@ -331,8 +279,7 @@ the	I-Modifier
 dark	I-Modifier
 for	O
 15-20	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Wash	B-Action
 with	O
@@ -352,13 +299,9 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
-(	O
-1/2	O
-)	O
-.	O
+(1/2).	O
 
 Wash	B-Action
 with	O
@@ -378,13 +321,9 @@ x	I-Speed
 g	I-Speed
 for	O
 5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
-(	O
-2/2	O
-)	O
-.	O
+(2/2).	O
 
 Resuspend	B-Action
 cell	B-Reagent
@@ -400,30 +339,22 @@ and	O
 add	B-Action
 5	B-Amount
 μl	I-Amount
-(	I-Amount
-0.25	I-Amount
-μg	I-Amount
-)	I-Amount
-/million	I-Amount
+(0.25	I-Amount
+μg)/million	I-Amount
 cells	I-Amount
 of	O
 7-AAD	B-Reagent
 Viability	I-Reagent
 Staining	I-Reagent
 Solution	I-Reagent
-(	O
-BioLegend	O
-Cat	O
-.	O
-No	O
-.	O
-420403	O
-)	O
+(BioLegend	O
+Cat.	O
+No.	O
+420403)	O
 to	O
 exclude	B-Action
 dead	B-Modifier
-cells	B-Reagent
-.	O
+cells.	B-Reagent
 
 Incubate	B-Action
 on	B-Temperature
@@ -433,15 +364,13 @@ for	O
 minutes	I-Time
 in	B-Modifier
 the	I-Modifier
-dark	I-Modifier
-.	O
+dark.	I-Modifier
 
 Analyze	B-Action
 with	O
 a	O
 Flow	B-Device
-Cytometer	I-Device
-.	O
+Cytometer.	I-Device
 
 
 

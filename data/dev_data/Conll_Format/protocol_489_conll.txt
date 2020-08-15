@@ -10,15 +10,13 @@ filter	B-Device
 Turn	B-Action
 on	I-Action
 4°C	B-Temperature
-centrifuge	B-Device
-.	O
+centrifuge.	B-Device
 
 Thaw	B-Action
 internal	B-Reagent
 standards	I-Reagent
 on	O
-ice	B-Location
-.	O
+ice.	B-Location
 
 Set	B-Action
 up	I-Action
@@ -31,13 +29,11 @@ Mo	B-Device
 Bio	I-Device
 Vortex	I-Device
 Genie	I-Device
-2	I-Device
-.	O
+2.	I-Device
 
 For	O
 each	B-Modifier
-sample	B-Reagent
-,	O
+sample,	B-Reagent
 prepare	B-Action
 a	O
 2.0	B-Amount
@@ -47,29 +43,25 @@ with	O
 the	O
 following	B-Reagent
 3-bead	I-Reagent
-mixture	I-Reagent
-:	O
+mixture:	I-Reagent
 200	B-Amount
 μl	I-Amount
 0.1	B-Size
 mm	I-Size
 zirconium	B-Reagent
-beads	I-Reagent
-,	O
+beads,	I-Reagent
 100	B-Amount
 μl	I-Amount
 0.4-0.6	B-Size
 mm	I-Size
 glass	B-Reagent
-beads	I-Reagent
-,	O
+beads,	I-Reagent
 100	B-Amount
 μl	I-Amount
 0.5	B-Size
 mm	I-Size
 zirconium	B-Reagent
-beads	I-Reagent
-.	O
+beads.	I-Reagent
 
 Add	B-Action
 Ambion	B-Reagent
@@ -77,26 +69,22 @@ Denaturation	I-Reagent
 Solution	I-Reagent
 to	O
 each	B-Modifier
-tube	B-Location
-.	O
+tube.	B-Location
 
 To	O
 each	B-Modifier
 bead	B-Location
-tube	I-Location
-,	O
+tube,	I-Location
 add	B-Action
 internal	B-Reagent
 standards	I-Reagent
 to	O
 reach	B-Action
-~0.5	B-Generic-Measure
-%	I-Generic-Measure
+~0.5%	B-Generic-Measure
 of	O
 expected	B-Modifier
 RNA	B-Reagent
-yield	B-Measure-Type
-.	O
+yield.	B-Measure-Type
 
 Place	B-Action
 one	B-Numerical
@@ -110,8 +98,7 @@ bead	B-Location
 tube	I-Location
 using	O
 RNase-free	B-Modifier
-forceps	B-Device
-.	O
+forceps.	B-Device
 
 Place	B-Action
 sample	B-Location
@@ -123,8 +110,7 @@ and	O
 beat	B-Action
 for	O
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Switch	B-Action
 tube	B-Location
@@ -133,8 +119,7 @@ and	O
 beat	B-Action
 another	B-Modifier
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Centrifuge	B-Action
 sample	B-Reagent
@@ -146,8 +131,7 @@ at	O
 5000	B-Speed
 rpm	I-Speed
 at	O
-4°C	B-Time
-.	O
+4°C.	B-Time
 
 Transfer	B-Action
 as	B-Modifier
@@ -165,13 +149,10 @@ new	B-Modifier
 ml	I-Amount
 centrifuge	B-Location
 tube	I-Location
-(	O
-Can	B-Modifier
+(Can	B-Modifier
 carryover	B-Action
 some	O
-beads	B-Reagent
-)	O
-.	O
+beads).	B-Reagent
 
 Centrifuge	B-Action
 RNA	B-Location
@@ -183,8 +164,7 @@ at	O
 5000	B-Speed
 rpm	I-Speed
 at	O
-4°C	B-Temperature
-.	O
+4°C.	B-Temperature
 
 Transfer	B-Action
 lysate	B-Reagent
@@ -193,27 +173,22 @@ new	B-Modifier
 2.0	B-Amount
 ml	I-Amount
 tube	B-Location
-(	O
-Do	B-Action
+(Do	B-Action
 not	I-Action
 carry	I-Action
 over	I-Action
 any	O
-beads	B-Reagent
-)	O
-.	O
+beads).	B-Reagent
 
 Add	B-Action
 1	B-Amount
 volume	I-Amount
 of	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 ethanol	B-Reagent
 to	O
 the	O
-lysate	B-Reagent
-.	O
+lysate.	B-Reagent
 
 Draw	B-Action
 the	O
@@ -239,8 +214,7 @@ out	I-Modifier
 times	O
 to	O
 shear	B-Action
-RNA	B-Reagent
-.	O
+RNA.	B-Reagent
 
 Apply	B-Action
 700	B-Amount
@@ -251,8 +225,7 @@ lysate	I-Reagent
 to	O
 RNeasy	B-Location
 mini	I-Location
-column	I-Location
-.	O
+column.	I-Location
 
 Close	B-Action
 tube	B-Location
@@ -263,12 +236,10 @@ centrifuge	B-Action
 sec	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
 Discard	B-Action
-flow-through	B-Reagent
-.	O
+flow-through.	B-Reagent
 
 Repeat	B-Action
 steps	B-Method
@@ -280,8 +251,7 @@ has	I-Modifier
 been	I-Modifier
 applied	I-Modifier
 to	I-Modifier
-column	I-Modifier
-.	O
+column.	I-Modifier
 
 Add	B-Action
 700	B-Amount
@@ -292,8 +262,7 @@ to	O
 RNeasy	B-Location
 Mini	I-Location
 spin	I-Location
-column	I-Location
-.	O
+column.	I-Location
 
 Centrifuge	B-Action
 for	O
@@ -301,13 +270,11 @@ for	O
 sec	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
 Discard	B-Action
 the	O
-flow-through	B-Reagent
-.	O
+flow-through.	B-Reagent
 
 Add	B-Action
 500	B-Amount
@@ -317,8 +284,7 @@ RPE	I-Reagent
 to	O
 RNeasy	B-Location
 spin	I-Location
-column	I-Location
-.	O
+column.	I-Location
 
 Centrifuge	B-Action
 for	O
@@ -326,12 +292,10 @@ for	O
 sec	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	I-Speed
+rpm.	I-Speed
 
 Discard	B-Action
-flow-through	B-Reagent
-.	O
+flow-through.	B-Reagent
 
 Add	B-Action
 500	B-Amount
@@ -341,8 +305,7 @@ RPE	I-Reagent
 to	O
 RNeasy	B-Location
 spin	I-Location
-column	I-Location
-.	O
+column.	I-Location
 
 Centrifuge	B-Action
 for	O
@@ -350,8 +313,7 @@ for	O
 min	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
 Place	B-Action
 column	B-Location
@@ -360,8 +322,7 @@ new	B-Modifier
 2.0	B-Amount
 ml	I-Amount
 collection	B-Location
-tube	I-Location
-.	O
+tube.	I-Location
 
 Centrifuge	B-Action
 for	O
@@ -369,8 +330,7 @@ for	O
 min	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
 Place	B-Action
 column	B-Location
@@ -380,8 +340,7 @@ new	B-Modifier
 1.5	B-Amount
 ml	I-Amount
 sterile	B-Modifier
-tube	B-Location
-.	O
+tube.	B-Location
 
 Add	B-Action
 35	B-Amount
@@ -394,8 +353,7 @@ filter	B-Location
 and	O
 close	B-Action
 the	O
-lid	B-Seal
-.	O
+lid.	B-Seal
 
 Incubate	B-Action
 tube	B-Location
@@ -404,8 +362,7 @@ for	O
 min	I-Time
 at	O
 room	B-Temperature
-temperature	I-Temperature
-.	O
+temperature.	I-Temperature
 
 Centrifuge	B-Action
 for	O
@@ -413,8 +370,7 @@ for	O
 min	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
 Add	B-Action
 another	O
@@ -424,8 +380,7 @@ RNase-free	B-Modifier
 water	B-Reagent
 into	O
 same	B-Modifier
-column/tube	B-Location
-.	O
+column/tube.	B-Location
 
 Incubate	B-Action
 for	O
@@ -433,8 +388,7 @@ for	O
 min	I-Time
 at	O
 room	B-Temperature
-temperature	I-Temperature
-.	O
+temperature.	I-Temperature
 
 Centrifuge	B-Action
 for	O
@@ -442,8 +396,7 @@ for	O
 min	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
 Discard	B-Action
 column	B-Location
@@ -453,19 +406,15 @@ tube	B-Location
 with	O
 RNA	B-Reagent
 on	O
-ice	B-Location
-.	O
+ice.	B-Location
 
 Quantify	B-Action
 extracted	B-Modifier
 RNA	B-Reagent
 with	O
 Nanodrop	B-Reagent
-(	O
-2	B-Amount
-μl	I-Amount
-)	O
-.	O
+(2	B-Amount
+μl).	I-Amount
 
 Mix	B-Action
 the	O
@@ -474,8 +423,7 @@ in	O
 a	O
 1.5	B-Amount
 ml	I-Amount
-tube	B-Location
-:	O
+tube:	B-Location
 
 componentamountextracted	B-Reagent
 sample50	I-Reagent
@@ -486,8 +434,7 @@ reaction	B-Reagent
 buffer10	I-Reagent
 μlTurbo	B-Amount
 DNase3	B-Reagent
-μl	B-Amount
-.	O
+μl.	B-Amount
 
 Incubate	B-Action
 for	O
@@ -495,8 +442,7 @@ for	O
 min	I-Time
 at	O
 37	B-Temperature
-°C	I-Temperature
-.	I-Temperature
+°C.	I-Temperature
 
 Add	B-Action
 3	B-Amount
@@ -505,8 +451,7 @@ more	B-Modifier
 Turbo	B-Reagent
 DNase	I-Reagent
 to	O
-sample	B-Reagent
-.	O
+sample.	B-Reagent
 
 Incubate	B-Action
 an	O
@@ -515,8 +460,7 @@ additional	B-Modifier
 min	I-Time
 at	O
 37	B-Temperature
-°C	I-Temperature
-.	O
+°C.	I-Temperature
 
 Add	B-Action
 20	B-Amount
@@ -525,15 +469,12 @@ inactivation	B-Reagent
 solution	I-Reagent
 to	O
 sample	B-Reagent
-(	O
-make	O
+(make	O
 sure	O
 solution	B-Reagent
 is	O
 well	B-Modifier
-mixed	I-Modifier
-)	O
-.	O
+mixed).	I-Modifier
 
 Vortex	B-Action
 on	B-Method
@@ -541,8 +482,7 @@ and	I-Method
 off	I-Method
 for	O
 ~4	B-Time
-min	I-Time
-.	I-Time
+min.	I-Time
 
 Spin	B-Action
 for	O
@@ -550,22 +490,17 @@ for	O
 min	I-Time
 at	O
 13000	B-Speed
-rpm	I-Speed
-.	O
+rpm.	I-Speed
 
-Carefully	B-Modifier
-,	O
-without	B-Modifier
+Carefully,	B-Modifier
+without	I-Modifier
 disturbing	B-Action
 inactivation	B-Reagent
-reagent	I-Reagent
-,	O
+reagent,	I-Reagent
 remove	B-Action
 supernatant	B-Reagent
-(	O
-~100	B-Amount
-μl	I-Amount
-)	O
+(~100	B-Amount
+μl)	I-Amount
 into	O
 a	O
 new	B-Modifier
@@ -575,21 +510,17 @@ tube	B-Location
 and	O
 place	B-Action
 on	O
-ice	B-Location
-.	O
+ice.	B-Location
 
 Quantify	B-Action
 DNased	B-Reagent
 RNA	I-Reagent
 with	O
 Nanodrop	B-Reagent
-(	O
-2	B-Amount
-μl	I-Amount
-)	O
+(2	B-Amount
+μl)	I-Amount
 
-Optional	B-Modifier
-:	O
+Optional:	B-Modifier
 Clean	B-Action
 and	O
 concentrate	B-Action
@@ -604,8 +535,7 @@ Concentrator-5	I-Action
 according	O
 to	O
 manufacturer	B-Method
-protocol	I-Method
-.	O
+protocol.	I-Method
 
 Store	B-Action
 RNA	B-Reagent

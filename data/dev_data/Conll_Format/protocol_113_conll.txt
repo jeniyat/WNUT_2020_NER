@@ -1,36 +1,25 @@
 Protein	B-Reagent
 Expression	B-Method
 Using	O
-BL21	B-Reagent
-(	I-Reagent
-DE3	I-Reagent
-)	I-Reagent
-(	O
-C2527	O
-)	O
+BL21(DE3)	B-Reagent
+(C2527)	O
 
 Transform	B-Action
 expression	B-Reagent
 plasmid	I-Reagent
 into	O
-BL21	B-Reagent
-(	I-Reagent
-DE3	I-Reagent
-)	I-Reagent
-.	O
+BL21(DE3).	B-Reagent
 
 Plate	B-Action
 on	O
 antibiotic	B-Location
 selection	I-Location
-plates	I-Location
-.	O
+plates.	I-Location
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-37°C	B-Temperature
-.	O
+37°C.	B-Temperature
 
 Resuspend	B-Action
 a	O
@@ -42,17 +31,14 @@ ml	I-Amount
 liquid	B-Reagent
 culture	I-Reagent
 with	I-Reagent
-antibiotic	I-Reagent
-.	O
+antibiotic.	I-Reagent
 
 Incubate	B-Action
 at	O
 37°C	B-Temperature
 until	O
-OD600	B-Measure-Type
-reaches	B-Action
-0.4–0.8	I-Action
-.	B-Numerical
+OD600 reaches	B-Measure-Type
+0.4–0.8.	B-Numerical
 
 Induce	B-Action
 with	O
@@ -67,24 +53,21 @@ mM	I-Concentration
 stock	O
 of	O
 IPTG	B-Reagent
-(	O
-final	B-Reagent
+(final	I-Reagent
 concentration	I-Reagent
 of	O
 40	B-Numerical
 or	O
 400	B-Concentration
-µM	I-Concentration
-)	O
+µM)	I-Concentration
 Induce	B-Action
-for	I-Action
-3	O
-to	B-Time
+for	O
+3	B-Time
+to	I-Time
 5	I-Time
 hours	I-Time
-at	I-Time
-37°C	B-Temperature
-.	I-Temperature
+at	O
+37°C.	B-Temperature
 
 Check	B-Action
 for	O
@@ -94,14 +77,12 @@ by	O
 Coomassie	B-Reagent
 stained	I-Reagent
 protein	I-Reagent
-gel	I-Reagent
-,	O
+gel,	I-Reagent
 Western	B-Action
 Blot	I-Action
 or	O
 activity	B-Action
-assay	I-Action
-.	O
+assay.	I-Action
 
 Check	B-Action
 expression	B-Method
@@ -111,17 +92,14 @@ the	O
 total	B-Modifier
 cell	B-Reagent
 extract	I-Reagent
-(	O
-soluble	B-Modifier
+(soluble	B-Modifier
 +	O
-insoluble	B-Modifier
-)	O
+insoluble)	B-Modifier
 and	O
 the	O
 soluble	B-Modifier
 fraction	B-Reagent
-only	O
-.	O
+only.	O
 
 
 

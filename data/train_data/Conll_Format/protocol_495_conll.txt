@@ -7,15 +7,10 @@ PCR	I-Method
 DNA	B-Method
 Cleanup	I-Method
 Kit	O
-(	O
-5	B-Amount
-μg	I-Amount
-)	O
-(	O
-NEB	O
-#	O
-T1030	O
-)	O
+(5	B-Amount
+μg)	I-Amount
+(NEB	O
+#T1030)	O
 
 Dilute	B-Action
 sample	B-Reagent
@@ -28,8 +23,7 @@ according	O
 to	O
 the	O
 table	O
-below	O
-.	O
+below.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -41,13 +35,11 @@ down	I-Method
 or	O
 flicking	B-Method
 the	I-Method
-tube	I-Method
-.	O
+tube.	I-Method
 
 Do	O
 not	O
-vortex	B-Action
-.	O
+vortex.	B-Action
 
 A	O
 sample	B-Modifier
@@ -56,22 +48,19 @@ of	I-Amount
 20–100	I-Amount
 μl	I-Amount
 is	O
-recommended	B-Modifier
-.	O
+recommended.	B-Modifier
 
 For	O
 smaller	B-Modifier
-samples	B-Reagent
-,	O
-TE	B-Reagent
+samples,	B-Reagent
+TE	I-Reagent
 can	O
 be	O
 used	O
 to	O
 adjust	B-Action
 the	O
-volume	B-Measure-Type
-.	O
+volume.	B-Measure-Type
 
 For	O
 diluted	B-Modifier
@@ -79,73 +68,50 @@ samples	B-Reagent
 larger	B-Modifier
 than	I-Modifier
 800	B-Amount
-μl	I-Amount
-,	O
+μl,	I-Amount
 load	B-Action
 a	O
 portion	B-Modifier
 of	O
 the	O
-sample	B-Reagent
-,	O
+sample,	B-Reagent
 proceed	B-Action
 with	O
 step	B-Method
-2	I-Method
-,	O
+2,	I-Method
 and	O
 then	O
 repeat	B-Action
 as	B-Modifier
-necessary	I-Modifier
-.	O
+necessary.	I-Modifier
 
-Sample	O
-TypeRatio	B-Measure-Type
-of	I-Measure-Type
+Sample TypeRatio	B-Measure-Type
+of	O
 Binding	B-Reagent
-Buffer	I-Reagent
-:	I-Reagent
+Buffer:	I-Reagent
 
 SampleExampledsDNA	B-Reagent
 >	B-Generic-Measure
 2	I-Generic-Measure
-kb	I-Generic-Measure
-(	O
-plasmids	B-Reagent
-,	I-Reagent
-gDNA	I-Reagent
-)	I-Reagent
-2:1200	B-Generic-Measure
-μl	I-Generic-Measure
-:	I-Generic-Measure
+kb (plasmids,	I-Generic-Measure
+gDNA)2:1200	B-Reagent
+μl:	B-Generic-Measure
 100	I-Generic-Measure
 μldsDNA	I-Generic-Measure
-<	B-Reagent
-2	B-Generic-Measure
+<	I-Generic-Measure
+2	I-Generic-Measure
 kb	I-Generic-Measure
-(	I-Generic-Measure
-some	O
-amplicons	B-Reagent
-,	I-Reagent
-fragments	I-Reagent
-)	I-Reagent
-5:1500	I-Reagent
-μl	B-Generic-Measure
-:	I-Generic-Measure
+(some	O
+amplicons,	B-Reagent
+fragments)5:1500	I-Reagent
+μl:	B-Generic-Measure
 100	I-Generic-Measure
 μlssDNA	I-Generic-Measure
-(	B-Reagent
-cDNA	I-Reagent
-,	I-Reagent
-M13	I-Reagent
-)	I-Reagent
-7:1700	I-Reagent
-μl	B-Generic-Measure
-:	I-Generic-Measure
+(cDNA,	B-Reagent
+M13)7:1700	I-Reagent
+μl:	B-Generic-Measure
 100	I-Generic-Measure
-μl	I-Generic-Measure
-.	I-Generic-Measure
+μl.	I-Generic-Measure
 
 Insert	B-Action
 column	B-Device
@@ -156,8 +122,7 @@ and	O
 load	B-Action
 sample	B-Reagent
 onto	O
-column	B-Location
-.	O
+column.	B-Location
 
 Spin	B-Action
 for	O
@@ -166,19 +131,16 @@ minute	I-Time
 at	O
 16,000	B-Speed
 x	I-Speed
-g	I-Speed
-,	O
+g,	I-Speed
 then	O
 discard	B-Action
-flow-through	B-Reagent
-.	O
+flow-through.	B-Reagent
 
 Re-insert	B-Action
 column	B-Device
 into	O
 collection	B-Location
-tube	I-Location
-.	O
+tube.	I-Location
 
 Add	B-Action
 200	B-Amount
@@ -186,11 +148,9 @@ Add	B-Action
 DNA	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
-(	O
-with	O
+(with	O
 ethanol	B-Reagent
-added	O
-)	O
+added)	O
 and	O
 spin	B-Action
 for	O
@@ -199,30 +159,24 @@ minute	I-Time
 at	O
 16,000	B-Speed
 x	I-Speed
-g	I-Speed
-.	O
+g.	I-Speed
 
 Discarding	B-Action
 flow-through	B-Reagent
 is	O
-optional	B-Modifier
-.	O
+optional.	B-Modifier
 
 Repeat	B-Action
 Step	O
-3	O
-.	O
+3.	O
 
-(	O
-Step	O
-3	O
-:	O
+(Step	O
+3:	O
 Re-insert	B-Action
 column	B-Location
 into	O
 collection	B-Location
-tube	I-Location
-.	O
+tube.	I-Location
 
 Add	B-Action
 200	B-Amount
@@ -238,15 +192,12 @@ minute	I-Time
 at	O
 16,000	B-Speed
 x	I-Speed
-g	I-Speed
-.	O
+g.	I-Speed
 
 Discarding	B-Action
 flow-through	B-Reagent
 is	O
-optional	B-Modifier
-)	O
-.	O
+optional).	B-Modifier
 
 Transfer	B-Action
 column	B-Device
@@ -256,8 +207,7 @@ clean	B-Modifier
 1.5	B-Amount
 ml	I-Amount
 microfuge	B-Location
-tube	I-Location
-.	O
+tube.	I-Location
 
 Use	O
 care	O
@@ -276,18 +226,15 @@ into	I-Action
 contact	I-Action
 with	O
 the	O
-flow-through	B-Reagent
-.	O
+flow-through.	B-Reagent
 
 If	B-Modifier
 in	I-Modifier
-doubt	I-Modifier
-,	O
+doubt,	I-Modifier
 re-spin	B-Action
 for	O
 1	B-Time
-minute	I-Time
-.	O
+minute.	I-Time
 
 Add	B-Action
 ≥	B-Amount
@@ -302,14 +249,12 @@ the	O
 center	B-Modifier
 of	O
 the	O
-matrix	B-Location
-.	O
+matrix.	B-Location
 
 Wait	B-Action
 for	O
 1	B-Time
-minute	I-Time
-,	O
+minute,	I-Time
 then	O
 spin	B-Action
 for	O
@@ -322,8 +267,7 @@ g	I-Speed
 to	O
 elute	B-Action
 the	O
-DNA	B-Reagent
-.	O
+DNA.	B-Reagent
 
 
 

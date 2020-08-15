@@ -9,48 +9,40 @@ filters	B-Device
 
 Prepare	B-Action
 lysis	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.	I-Reagent
 
 Prepare	B-Action
 Lysozyme	B-Reagent
 &	O
 RNase	B-Reagent
-Aliquot	B-Amount
-.	O
+Aliquot.	B-Amount
 
 Prepare	B-Action
 ProK	B-Reagent
-Aliquot	B-Amount
-.	O
+Aliquot.	B-Amount
 
 Thaw	B-Action
 filters	B-Reagent
 on	B-Temperature
-ice	I-Temperature
-.	O
+ice.	I-Temperature
 
 Do	B-Action
 quick	I-Action
 spin	I-Action
-down	I-Action
-.	O
+down.	I-Action
 
 Transfer	B-Action
 each	O
 filter	B-Reagent
 to	O
 screw	B-Location
-top	I-Location
-,	I-Location
+top,	I-Location
 O-ringed	I-Location
 eppendorf	I-Location
-tube	I-Location
-,	O
+tube,	I-Location
 also	O
 on	B-Temperature
-ice	I-Temperature
-.	O
+ice.	I-Temperature
 
 Add	B-Action
 250	B-Amount
@@ -63,29 +55,25 @@ and	O
 lysozyme	B-Reagent
 to	O
 each	O
-tube	B-Location
-.	O
+tube.	B-Location
 
 Incubate	B-Action
 37°C	B-Temperature
 for	O
 30	B-Time
-min.	I-Time
-,	O
+min.,	I-Time
 rotating	B-Modifier
 end	I-Modifier
 over	I-Modifier
 end	I-Modifier
 at	I-Modifier
-angle	I-Modifier
-,	O
+angle,	I-Modifier
 for	O
 optimal	B-Modifier
 mixing	B-Action
 with	O
 minimal	B-Modifier
-frothing	B-Action
-.	O
+frothing.	B-Action
 
 Add	B-Action
 18.75	B-Amount
@@ -94,62 +82,51 @@ of	O
 Proteinase	B-Reagent
 K	I-Reagent
 solution	I-Reagent
-(	O
-10	B-Concentration
+(10	B-Concentration
 mg/ml	I-Concentration
 made	O
 up	O
 in	O
 lysis	B-Reagent
-buffer	I-Reagent
-)	O
+buffer)	I-Reagent
 to	O
 a	O
 final	B-Modifier
-conc	B-Measure-Type
-.	O
+conc.	B-Measure-Type
 of	O
 0.65	B-Concentration
-mg/ml	I-Concentration
-.	O
+mg/ml.	I-Concentration
 
 Add	B-Action
 29.9	B-Amount
 µl	I-Amount
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 SDS	B-Reagent
 to	O
 a	O
 final	B-Modifier
-conc	B-Measure-Type
-.	O
+conc.	B-Measure-Type
 of	O
-1	B-Concentration
-%	I-Concentration
-.	O
+1%.	B-Concentration
 
 Incubate	B-Action
 at	O
 55°C	B-Temperature
 for	O
 2	B-Time
-hours	I-Time
-,	O
+hours,	I-Time
 rotating	B-Method
 end	I-Method
 over	I-Method
 end	I-Method
 at	I-Method
-angle	I-Method
-.	O
+angle.	I-Method
 
 Towards	O
 end	O
 of	O
 this	O
-time	O
-,	O
+time,	O
 turn	B-Action
 on	I-Action
 heat	B-Device
@@ -158,38 +135,31 @@ or	O
 hyb	B-Device
 oven	I-Device
 to	O
-70°C	B-Temperature
-.	O
+70°C.	B-Temperature
 
 Put	B-Action
 elution	B-Reagent
 liquid	I-Reagent
-(	O
-Buffer	B-Reagent
+(Buffer	I-Reagent
 AE	I-Reagent
 or	O
-water	B-Reagent
-)	O
+water)	B-Reagent
 into	O
 70°C	B-Temperature
 to	O
-preheat	B-Action
-.	O
+preheat.	B-Action
 
 Add	B-Action
 300	B-Amount
 µl	I-Amount
 Buffer	B-Reagent
 AL	I-Reagent
-(	O
-=Buffer	B-Reagent
+(=Buffer	I-Reagent
 AL/E	I-Reagent
 without	B-Modifier
 the	I-Modifier
 ethanol	I-Modifier
-added	I-Modifier
-)	O
-.	O
+added).	I-Modifier
 
 Mix	B-Action
 thoroughly	B-Modifier
@@ -198,23 +168,19 @@ vortexing	B-Method
 and	O
 spin	B-Action
 down	I-Action
-quickly	B-Modifier
-.	O
+quickly.	B-Modifier
 
 Incubate	B-Action
 70°C	B-Temperature
 for	O
 10	B-Time
-mins	I-Time
-.	O
+mins.	I-Time
 
 Add	B-Action
 300	B-Amount
 µl	I-Amount
-96-100	B-Concentration
-%	I-Concentration
-EtOH	B-Reagent
-.	O
+96-100%	B-Concentration
+EtOH.	B-Reagent
 
 Mix	B-Action
 by	O
@@ -223,35 +189,27 @@ vigorously	B-Modifier
 and	O
 spin	B-Action
 down	I-Action
-quickly	B-Modifier
-.	O
+quickly.	B-Modifier
 
 Check	B-Action
 pH	I-Action
 of	O
-lysate	B-Reagent
-,	O
-must	O
-be	O
-<	O
-7	B-pH
-to	I-pH
+lysate,	B-Reagent
+must be	O
+<7 to	B-pH
 get	O
-max	O
-.	O
+max.	O
 binding	B-Measure-Type
 efficiency	I-Measure-Type
-to	I-Measure-Type
-column	B-Location
-.	I-Location
+to	O
+column.	B-Location
 
 Pipet	B-Action
 onto	O
 96	B-Location
 well	I-Location
 spin	I-Location
-columns	I-Location
-,	O
+columns,	I-Location
 making	O
 sure	O
 not	O
@@ -262,8 +220,7 @@ rims	B-Location
 to	O
 avoid	O
 cross	O
-contamination	B-Method
-.	O
+contamination.	B-Method
 
 Place	B-Action
 the	O
@@ -277,8 +234,7 @@ S-block	B-Location
 for	O
 flow	B-Reagent
 through	I-Reagent
-collection	B-Method
-.	O
+collection.	B-Method
 
 Seal	B-Action
 plate	B-Location
@@ -291,23 +247,19 @@ Spin	B-Action
 xg	I-Speed
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 at	O
-40­°C	B-Temperature
-.	O
+40­°C.	B-Temperature
 
 Discard	B-Action
 flow	B-Reagent
-through	I-Reagent
-.	O
+through.	I-Reagent
 
 Place	B-Action
 in	O
 new	B-Location
 collection	I-Location
-tray	I-Location
-.	O
+tray.	I-Location
 
 Add	B-Action
 additional	O
@@ -316,17 +268,14 @@ if	O
 needed	O
 and	O
 repeat	B-Action
-spin	I-Action
-,	O
-etc	O
-.	O
+spin,	I-Action
+etc.	O
 
 Add	B-Action
 500	B-Amount
 µl	I-Amount
 Buffer	B-Reagent
-AW1	I-Reagent
-,	O
+AW1,	I-Reagent
 reseal	B-Action
 plate	B-Location
 Spin	B-Action
@@ -334,18 +283,15 @@ Spin	B-Action
 xg	I-Speed
 for	O
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 at	O
-40°C	B-Temperature
-.	O
+40°C.	B-Temperature
 
 Add	B-Action
 500	B-Amount
 µl	I-Amount
 Buffer	B-Reagent
-AW2	I-Reagent
-,	O
+AW2,	I-Reagent
 reseal	B-Action
 plate	B-Location
 Spin	B-Action
@@ -353,16 +299,13 @@ Spin	B-Action
 xg	I-Speed
 for	O
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 at	O
-40°C	B-Temperature
-.	O
+40°C.	B-Temperature
 
 To	O
 dry	B-Action
-columns	B-Location
-,	O
+columns,	B-Location
 either	O
 reseal	B-Action
 plate	B-Location
@@ -375,8 +318,7 @@ spin	B-Action
 xg	I-Speed
 for	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 at	O
 40°C	B-Temperature
 atop	B-Location
@@ -393,8 +335,7 @@ at	O
 70°C	B-Temperature
 for	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Transfer	B-Action
 column	B-Location
@@ -404,12 +345,9 @@ top	B-Location
 of	O
 rack	B-Location
 of	O
-``	B-Location
-elution	I-Location
+"elution	B-Location
 microtubes	I-Location
-RS	I-Location
-''	I-Location
-.	B-Action
+RS".	I-Location
 
 Add	B-Action
 200	B-Amount
@@ -419,43 +357,35 @@ pre-heated	B-Temperature
 Buffer	B-Reagent
 AE	I-Reagent
 or	O
-water	B-Reagent
-,	O
+water,	B-Reagent
 reseal	B-Action
 plate	B-Location
 Incubate	B-Action
 1	B-Time
-min	I-Time
-.	O
+min.	I-Time
 at	O
-RT	B-Temperature
-.	O
+RT.	B-Temperature
 
 Spin	B-Action
 5788	B-Speed
 xg	I-Speed
 2	B-Time
-min	I-Time
-.	I-Time
+min.	I-Time
 to	O
-elute	B-Action
-.	O
+elute.	B-Action
 
 Repeat	B-Action
 with	O
 second	O
 200	B-Amount
 µl	I-Amount
-(	O
-will	O
+(will	O
 increase	O
 total	O
 yield	O
 up	O
 to	O
-25	B-Generic-Measure
-%	I-Generic-Measure
-)	O
+25%)	B-Generic-Measure
 or	O
 if	O
 you	O
@@ -464,8 +394,7 @@ to	O
 keep	O
 the	O
 column	B-Location
-small	O
-,	O
+small,	O
 you	O
 could	O
 use	O
@@ -473,14 +402,12 @@ the	O
 first	O
 200	B-Amount
 µl	I-Amount
-elution	B-Reagent
-,	O
+elution,	B-Reagent
 heat	B-Action
 it	B-Mention
 back	O
 to	O
-70°C	B-Temperature
-,	O
+70°C,	B-Temperature
 and	O
 pass	B-Action
 it	B-Mention
@@ -488,17 +415,12 @@ through	O
 the	O
 column	B-Location
 again	O
-(	O
-will	O
+(will	O
 increase	O
 total	O
 yield	O
-approx	O
-.	O
-15	B-Generic-Measure
-%	I-Generic-Measure
-)	O
-.	O
+approx.	O
+15%).	B-Generic-Measure
 
 Can	O
 freeze	B-Action
@@ -506,13 +428,11 @@ elutants	B-Reagent
 and	O
 break	B-Action
 here	O
-overnight	B-Time
-,	O
+overnight,	B-Time
 or	O
 for	B-Time
 a	I-Time
-while	I-Time
-,	O
+while,	I-Time
 before	O
 proceeding	O
 with	O
@@ -520,8 +440,7 @@ Final	B-Modifier
 DNA	B-Reagent
 clean	B-Action
 up	I-Action
-step	O
-,	O
+step,	O
 particularly	O
 if	O
 DNA	B-Reagent
@@ -531,16 +450,14 @@ Buffer	B-Reagent
 AE	I-Reagent
 which	O
 is	O
-TE	B-Reagent
-,	O
+TE,	B-Reagent
 so	O
 will	O
 keep	O
 the	O
 DNA	B-Reagent
 relatively	O
-stable	B-Modifier
-.	O
+stable.	B-Modifier
 
 Transfer	B-Action
 the	O
@@ -553,17 +470,14 @@ well	I-Location
 PCR	I-Location
 purification	I-Location
 plate	I-Location
-(	O
-no	O
+(no	O
 more	O
 than	O
 300	B-Amount
 µl	I-Amount
 at	O
 a	O
-time	O
-)	O
-.	O
+time).	O
 
 Apply	B-Action
 vacuum	B-Device
@@ -573,11 +487,8 @@ inches	I-Generic-Measure
 Hg	I-Generic-Measure
 until	O
 dry	O
-(	O
-~20-30	B-Modifier
-min	B-Time
-.	O
-)	O
+(~20-30	B-Modifier
+min.)	B-Time
 
 Rinse	B-Action
 DNA	B-Reagent
@@ -585,16 +496,13 @@ with	O
 100	B-Amount
 µl	I-Amount
 Ambion	B-Reagent
-water	I-Reagent
-,	O
+water,	I-Reagent
 apply	B-Action
 vacuum	B-Device
 5-10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 until	O
-dry	O
-.	O
+dry.	O
 
 Rinse	B-Action
 a	O
@@ -611,15 +519,13 @@ sure	O
 all	O
 Buffer	B-Reagent
 TE	I-Reagent
-removed	B-Action
-.	O
+removed.	B-Action
 
 Add	B-Action
 20	B-Amount
 µl	I-Amount
 dilute	B-Reagent
-TE	I-Reagent
-.	O
+TE.	I-Reagent
 
 Pipette	B-Action
 up	B-Modifier

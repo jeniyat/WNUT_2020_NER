@@ -8,25 +8,20 @@ a	O
 self-excising	B-Modifier
 selection	B-Reagent
 cassette	I-Reagent
-(	O
-SEC	B-Reagent
-)	O
+(SEC)	I-Reagent
 
 See	O
 the	O
 Guidelines	O
-for	O
-:	O
-1	O
-.	O
+for:	O
+1.	O
 
 Choosing	B-Action
 the	O
 Cas9	B-Reagent
 targets	I-Reagent
 site	O
-2	O
-.	O
+2.	O
 
 Adding	B-Action
 the	O
@@ -36,8 +31,7 @@ to	O
 the	O
 Cas9–sgRNA	B-Reagent
 construct	I-Reagent
-3	O
-.	O
+3.	O
 
 Designing	B-Action
 primers	B-Reagent
@@ -59,12 +53,10 @@ and	O
 miniprep	B-Action
 the	O
 plasmid	B-Reagent
-DNA	I-Reagent
-.	O
+DNA.	I-Reagent
 
 Note	O
-that	O
-,	O
+that,	O
 prior	O
 to	O
 replacing	B-Action
@@ -73,9 +65,8 @@ ccdB	B-Reagent
 elements	I-Reagent
 with	O
 homology	B-Reagent
-arms	I-Reagent
-,	O
-FP–SEC	B-Reagent
+arms,	I-Reagent
+FP–SEC	I-Reagent
 vectors	I-Reagent
 must	O
 be	O
@@ -87,12 +78,9 @@ are	O
 resistant	B-Modifier
 to	O
 ccdB	B-Reagent
-(	O
-ccdB	B-Reagent
+(ccdB	I-Reagent
 Survival	I-Reagent
-cells	I-Reagent
-)	O
-.	O
+cells).	I-Reagent
 
 Digest	B-Action
 an	O
@@ -104,8 +92,7 @@ vector	I-Reagent
 overnight	B-Time
 at	O
 37°C	B-Temperature
-(	O
-consult	O
+(consult	O
 Table	O
 P1	O
 for	O
@@ -114,9 +101,7 @@ construct	B-Action
 and	O
 enzymes	B-Reagent
 to	O
-use	O
-)	O
-.	O
+use).	O
 
 Purify	B-Action
 the	O
@@ -131,8 +116,7 @@ column	I-Location
 to	O
 remove	B-Action
 the	O
-enzymes	B-Reagent
-.	O
+enzymes.	B-Reagent
 
 Process	B-Action
 the	O
@@ -141,8 +125,7 @@ digested	B-Reagent
 vector	I-Reagent
 as	O
 one	O
-sample	O
-;	O
+sample;	O
 do	B-Action
 not	I-Action
 attempt	I-Action
@@ -150,12 +133,10 @@ to	O
 gel	O
 purify	O
 individual	O
-bands	O
-.	O
+bands.	O
 
 The	O
-digested	B-Modifier
-,	I-Modifier
+digested,	B-Modifier
 purified	I-Modifier
 vector	B-Reagent
 may	O
@@ -175,18 +156,15 @@ to	O
 construct	B-Action
 multiple	O
 repair	B-Reagent
-templates	I-Reagent
-.	O
+templates.	I-Reagent
 
 Generate	B-Action
 two	B-Numerical
 PCR	B-Reagent
 products	I-Reagent
-(	O
-the	O
+(the	O
 homology	B-Reagent
-arms	I-Reagent
-)	O
+arms)	I-Reagent
 using	O
 genomic	B-Reagent
 DNA	I-Reagent
@@ -198,8 +176,7 @@ the	O
 primers	B-Reagent
 you	O
 designed	O
-above	O
-.	O
+above.	O
 
 Mix	B-Action
 the	O
@@ -216,15 +193,13 @@ single	B-Numerical
 PCR	B-Location
 cleanup	I-Location
 spin	I-Location
-column	I-Location
-.	O
+column.	I-Location
 
 Mix	B-Action
 1	B-Amount
 µL	I-Amount
 of	O
-vector	B-Reagent
-,	O
+vector,	B-Reagent
 4	B-Amount
 µL	I-Amount
 of	O
@@ -238,8 +213,7 @@ isothemal	B-Reagent
 assembly	I-Reagent
 enzyme	I-Reagent
 mix	I-Reagent
-(	O
-we	O
+(we	O
 use	O
 NEBuilder	B-Reagent
 HiFi	I-Reagent
@@ -247,9 +221,7 @@ DNA	I-Reagent
 assembly	I-Reagent
 mix	I-Reagent
 from	O
-NEB	B-Reagent
-)	O
-.	O
+NEB).	B-Reagent
 
 Incubate	B-Action
 1h	B-Time
@@ -261,8 +233,7 @@ directed	O
 by	O
 the	O
 enzyme	B-Reagent
-manufacturer	O
-.	O
+manufacturer.	O
 
 Transform	B-Action
 2	B-Amount
@@ -273,8 +244,7 @@ reaction	B-Reagent
 to	O
 suitable	O
 competent	B-Reagent
-cells	I-Reagent
-.	O
+cells.	I-Reagent
 
 Isolate	B-Action
 DNA	B-Reagent
@@ -296,8 +266,7 @@ insertion	B-Method
 of	O
 the	O
 homology	B-Reagent
-arms	I-Reagent
-.	O
+arms.	I-Reagent
 
 Prepare	B-Action
 an	O
@@ -305,100 +274,65 @@ injection	B-Reagent
 mix	I-Reagent
 containing	O
 the	O
-following	O
-:	O
+following:	O
 10	B-Concentration
 ng/µL	I-Concentration
 homologous	B-Reagent
 repair	I-Reagent
-template	I-Reagent
-,	O
-50	B-Concentration
-ng/µL	I-Concentration
-Cas9-sgRNA	I-Concentration
-construct	B-Reagent
+template, 50	I-Reagent
+ng/µL	B-Concentration
+Cas9-sgRNA	B-Reagent
+construct	O
 with	O
 your	O
 targeting	B-Modifier
-sequence	I-Modifier
-Fluorescent	I-Modifier
+sequence Fluorescent	I-Modifier
 co-injection	I-Modifier
-markers	I-Modifier
-(	B-Reagent
-to	I-Reagent
+markers	B-Reagent
+(to	O
 label	O
 extrachromosomal	O
-arrays	O
-)	O
-,	O
-10	O
-ng/µL	B-Concentration
-pGH8	I-Concentration
-(	B-Reagent
-Prab-3	I-Reagent
-:	O
-:mCherry	O
+arrays),  10	B-Concentration
+ng/µL	I-Concentration
+pGH8	B-Reagent
+(Prab-3::mCherry	O
 neuronal	O
 co-injection	O
-marker	O
-;	O
+marker;	O
 Addgene	O
-#	O
-19359	O
-)	O
-,	O
-5	O
-ng/µL	B-Concentration
-pCFJ104	I-Concentration
-(	B-Reagent
-Pmyo-3	I-Reagent
-:	O
-:mCherry	O
+#19359), 5	B-Concentration
+ng/µL	I-Concentration
+pCFJ104	B-Reagent
+(Pmyo-3::mCherry	O
 body	O
 wall	O
 muscle	O
 co-injection	B-Modifier
-marker	I-Modifier
-;	B-Reagent
-Addgene	I-Reagent
-#	O
-19328	O
-)	O
-,	O
-2.5	O
-ng/µL	B-Concentration
-pCFJ90	I-Concentration
-(	B-Reagent
-Pmyo-2	I-Reagent
-:	O
-:mCherry	O
+marker;	B-Reagent
+Addgene	O
+#19328), 2.5	B-Concentration
+ng/µL	I-Concentration
+pCFJ90	B-Reagent
+(Pmyo-2::mCherry	O
 pharyngeal	O
 co-injection	B-Modifier
-marker	I-Modifier
-;	B-Reagent
-Addgene	I-Reagent
-#	O
-19327	O
-)	O
-.	O
+marker;	B-Reagent
+Addgene	O
+#19327).	O
 
 Prepare	B-Action
 plasmid	B-Reagent
 DNA	I-Reagent
 using	O
-Invitrogen	B-Device
-’	I-Device
-s	I-Device
+Invitrogen’s	B-Device
 PureLink	I-Device
 mini-prep	I-Device
-kit	I-Device
-,	I-Device
+kit,	I-Device
 which	O
 gives	O
 high	O
 injection	B-Method
-efficiencies	O
-.	O
+efficiencies.	O
 
 Inject	B-Action
 the	O
@@ -414,15 +348,12 @@ worms	I-Reagent
 of	O
 strain	B-Reagent
 N2	I-Reagent
-(	O
-or	O
+(or	O
 substitute	B-Action
 any	O
 strain	B-Reagent
 you	O
-like	O
-)	O
-.	O
+like).	O
 
 Transfer	B-Action
 the	O
@@ -432,8 +363,7 @@ to	O
 new	O
 seeded	B-Location
 plates	I-Location
-(	O
-three	B-Numerical
+(three	B-Numerical
 animals	B-Reagent
 per	O
 plate	B-Location
@@ -441,22 +371,17 @@ works	O
 well	O
 in	O
 our	O
-hands	O
-)	O
-.	O
+hands).	O
 
 Use	B-Action
 regular	O
 NGM	B-Location
 plates	I-Location
-(	O
-no	O
-drug	O
-)	O
+(no	O
+drug)	O
 at	O
 this	O
-stage	O
-.	O
+stage.	O
 
 Also	O
 make	B-Action
@@ -465,8 +390,7 @@ control	B-Location
 plate	I-Location
 with	O
 uninjected	B-Modifier
-worms	B-Reagent
-,	O
+worms,	B-Reagent
 so	O
 that	O
 when	O
@@ -481,8 +405,7 @@ serve	O
 as	O
 a	O
 negative	B-Reagent
-control	I-Reagent
-.	O
+control.	I-Reagent
 
 Put	B-Action
 the	O
@@ -499,8 +422,7 @@ without	O
 selection	B-Method
 for	O
 2-3	B-Time
-days	I-Time
-.	O
+days.	I-Time
 
 Prepare	B-Action
 and	O
@@ -512,8 +434,7 @@ mg/mL	I-Concentration
 hygromycin	B-Reagent
 solution	I-Reagent
 in	O
-water	B-Reagent
-.	O
+water.	B-Reagent
 
 For	O
 6	B-Size
@@ -524,8 +445,7 @@ with	O
 10	B-Amount
 mL	I-Amount
 agar	B-Location
-plates	I-Location
-,	O
+plates,	I-Location
 pipet	B-Action
 500	B-Amount
 µL	I-Amount
@@ -538,8 +458,7 @@ of	O
 each	O
 plate	B-Location
 of	O
-worms	B-Reagent
-,	O
+worms,	B-Reagent
 for	O
 a	O
 final	B-Modifier
@@ -547,19 +466,15 @@ concentration	B-Measure-Type
 of	O
 ~250	B-Concentration
 µg/mL	I-Concentration
-(	O
-if	O
+(if	O
 using	O
 different	O
 size	O
-plates	B-Location
-,	O
+plates,	B-Location
 adjust	O
 the	O
 volume	B-Measure-Type
-accordingly	O
-)	O
-.	O
+accordingly).	O
 
 Swirl	B-Action
 gently	B-Modifier
@@ -573,21 +488,18 @@ entire	O
 surface	B-Location
 of	O
 the	O
-plate	B-Location
-,	O
+plate,	B-Location
 then	O
 let	O
 it	B-Mention
-dry	B-Action
-.	O
+dry.	B-Action
 
 Put	B-Action
 the	O
 worms	B-Reagent
 back	O
 at	O
-25ºC	B-Temperature
-.	O
+25ºC.	B-Temperature
 
 Examine	B-Action
 the	O
@@ -598,16 +510,13 @@ those	B-Mention
 that	O
 contain	O
 Roller	B-Reagent
-(	I-Reagent
-Rol	I-Reagent
-)	I-Reagent
+(Rol)	I-Reagent
 animals	I-Reagent
 that	O
 survived	O
 the	O
 hygromycin	B-Method
-treatment	I-Method
-.	O
+treatment.	I-Method
 
 Candidate	B-Action
 knock-in	B-Reagent
@@ -615,28 +524,22 @@ animals	I-Reagent
 are	O
 L4/adults	B-Reagent
 that	O
-1	O
-)	O
+1)	O
 survive	B-Action
 hygromycin	B-Method
-selection	I-Method
-;	O
-2	O
-)	O
+selection;	I-Method
+2)	O
 are	O
-Rol	B-Reagent
-;	O
+Rol;	B-Reagent
 and	O
-3	O
-)	O
+3)	O
 lack	B-Action
 the	O
 red	B-Modifier
 fluorescent	I-Modifier
 extrachromosomal	I-Modifier
 array	B-Reagent
-markers	I-Reagent
-.	O
+markers.	I-Reagent
 
 Single	B-Action
 5-10	B-Numerical
@@ -647,31 +550,25 @@ to	O
 new	B-Modifier
 plates	B-Location
 without	O
-hygromycin	B-Reagent
-.	O
+hygromycin.	B-Reagent
 
 Look	B-Action
 for	I-Action
 plates	B-Location
 where	O
-100	B-Numerical
-%	I-Numerical
+100%	B-Numerical
 of	O
 L4s	B-Reagent
 and	O
 adults	B-Reagent
 are	O
-Rollers	B-Reagent
-.	O
+Rollers.	B-Reagent
 
-(	O
-See	O
+(See	O
 the	O
 Guidelines	O
 for	O
-details	O
-.	O
-)	O
+details.)	O
 
 Pick	B-Action
 6-8	B-Amount
@@ -682,8 +579,7 @@ each	O
 of	O
 three	B-Numerical
 new	B-Modifier
-plates	B-Location
-.	O
+plates.	B-Location
 
 It	O
 is	O
@@ -694,8 +590,7 @@ marker	B-Method
 excision	I-Method
 using	B-Action
 older	B-Reagent
-animals	I-Reagent
-,	O
+animals,	I-Reagent
 but	O
 using	B-Action
 young	B-Reagent
@@ -714,8 +609,7 @@ not	O
 yet	O
 begun	O
 to	O
-divide	O
-.	O
+divide.	O
 
 Heat	B-Action
 shock	I-Action
@@ -726,14 +620,12 @@ at	O
 for	O
 4	B-Time
 hours	I-Time
-(	O
-or	O
+(or	O
 at	O
 32°C	B-Temperature
 for	O
 4-5	B-Time
-hours	I-Time
-)	O
+hours)	I-Time
 in	O
 an	O
 air	B-Device
@@ -742,10 +634,7 @@ to	O
 activate	B-Action
 expression	B-Method
 of	O
-hs	B-Reagent
-:	I-Reagent
-:Cre	I-Reagent
-.	O
+hs::Cre.	B-Reagent
 
 Return	B-Action
 the	O
@@ -753,16 +642,14 @@ plates	B-Location
 to	O
 20°C	B-Temperature
 or	O
-25°C	B-Temperature
-.	O
+25°C.	B-Temperature
 
 Pick	B-Action
 wild-type	B-Reagent
 worms	I-Reagent
 to	O
 new	B-Modifier
-plates	B-Location
-.	O
+plates.	B-Location
 
 
 

@@ -7,8 +7,7 @@ Bacteriophage	B-Reagent
 
 Prepare	B-Action
 Urea/SDS	B-Reagent
-Solution	I-Reagent
-.	O
+Solution.	I-Reagent
 
 Transfer	B-Action
 Urea	B-Reagent
@@ -17,8 +16,7 @@ solution	I-Reagent
 sample	B-Reagent
 to	O
 spin	B-Device
-filter	I-Device
-.	O
+filter.	I-Device
 
 Centrifuge	B-Action
 at	O
@@ -27,22 +25,17 @@ x	I-Speed
 g	I-Speed
 for	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Add	B-Action
 200µL	B-Amount
 fresh	B-Modifier
 Urea	B-Reagent
 solution	I-Reagent
-(	O
+(no	B-Modifier
+DTT,	B-Reagent
 no	B-Modifier
-DTT	B-Reagent
-,	O
-no	B-Modifier
-SDS	B-Reagent
-)	O
-.	O
+SDS).	B-Reagent
 
 Centrifuge	B-Action
 at	O
@@ -51,12 +44,10 @@ x	I-Speed
 g	I-Speed
 for	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Discard	B-Action
-flow­‐through	B-Reagent
-.	O
+flow­‐through.	B-Reagent
 
 Add	B-Action
 10µL	B-Amount
@@ -66,20 +57,15 @@ and	O
 90µL	B-Amount
 Urea	B-Reagent
 solution	I-Reagent
-(	O
+(no	B-Modifier
+DTT,	B-Reagent
 no	B-Modifier
-DTT	B-Reagent
-,	O
-no	B-Modifier
-SDS	B-Reagent
-)	O
-.	O
+SDS).	B-Reagent
 
 Vortex	B-Action
 for	O
 1	B-Time
-min	I-Time
-,	O
+min,	I-Time
 then	O
 incubate	B-Action
 without	B-Modifier
@@ -89,8 +75,7 @@ for	O
 min	I-Time
 in	O
 the	O
-dark	B-Method
-.	O
+dark.	B-Method
 
 Centrifuge	B-Action
 at	O
@@ -99,21 +84,16 @@ x	I-Speed
 g	I-Speed
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Add	B-Action
 100µL	B-Amount
 Urea	B-Reagent
 solution	I-Reagent
-(	O
+(no	B-Modifier
+DTT,	B-Reagent
 no	B-Modifier
-DTT	B-Reagent
-,	O
-no	B-Modifier
-SDS	B-Reagent
-)	O
-.	O
+SDS).	B-Reagent
 
 Centrifuge	B-Action
 at	O
@@ -122,18 +102,15 @@ x	I-Speed
 g	I-Speed
 for	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Repeat	B-Action
 this	O
 step	O
-twice	B-Numerical
-.	O
+twice.	B-Numerical
 
 Discard	B-Action
-flow­‐through	B-Reagent
-.	O
+flow­‐through.	B-Reagent
 
 Add	B-Action
 100µL	B-Amount
@@ -141,13 +118,10 @@ Add	B-Action
 ammonium	B-Reagent
 bicarbonate	I-Reagent
 solution	I-Reagent
-(	O
-provided	O
+(provided	O
 with	O
 FASP	B-Device
-kit	I-Device
-)	O
-.	O
+kit).	I-Device
 
 Centrifuge	B-Action
 at	O
@@ -156,26 +130,22 @@ x	I-Speed
 g	I-Speed
 for	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Transfer	B-Action
 filter	B-Device
 to	O
 new	O
 collection	B-Location
-tube	I-Location
-.	O
+tube.	I-Location
 
 Add	B-Action
 75µL	B-Amount
 digestion	B-Reagent
-solution	I-Reagent
-.	O
+solution.	I-Reagent
 
 Vortex	B-Action
-briefly	B-Modifier
-.	O
+briefly.	B-Modifier
 
 Incubate	B-Action
 at	O
@@ -185,19 +155,15 @@ for	O
 –	I-Time
 18	I-Time
 hours	I-Time
-(	O
-NO	B-Method
-ROCKING	I-Method
-)	O
-.	O
+(NO	B-Method
+ROCKING).	I-Method
 
 Add	B-Action
 40µL	B-Amount
 50mM	B-Concentration
 ammonium	B-Reagent
 bicarbonate	I-Reagent
-solution	I-Reagent
-.	O
+solution.	I-Reagent
 
 Centrifuge	B-Action
 at	O
@@ -206,14 +172,12 @@ x	I-Speed
 g	I-Speed
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Repeat	B-Action
 this	O
 step	O
-once	B-Numerical
-.	O
+once.	B-Numerical
 
 Add	B-Action
 50µL	B-Amount
@@ -222,13 +186,10 @@ M	I-Concentration
 sodium	B-Reagent
 chloride	I-Reagent
 solution	I-Reagent
-(	O
-provided	O
+(provided	O
 with	O
 FASP	B-Device
-kit	I-Device
-)	O
-.	O
+kit).	I-Device
 
 Centrifuge	B-Action
 at	O
@@ -237,31 +198,24 @@ x	I-Speed
 g	I-Speed
 for	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 
 Filtrate	B-Reagent
 contains	O
 digested	B-Modifier
-proteins	B-Reagent
-.	O
+proteins.	B-Reagent
 
 Add	B-Action
 170µL*	B-Amount
 H₂O	B-Reagent
 +	O
 formic	B-Reagent
-acid	I-Reagent
-.	O
+acid.	I-Reagent
 
 Aliquot	B-Action
-(	O
-150µL	B-Amount
+(150µL	B-Amount
 x	I-Amount
-2	I-Amount
-)	O
-*	O
-,	O
+2)*,	I-Amount
 freeze	B-Action
 
 

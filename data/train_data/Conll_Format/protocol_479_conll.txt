@@ -16,24 +16,21 @@ on	O
 18	B-Size
 mm	I-Size
 round	B-Location
-#	I-Location
-1	I-Location
+#1	I-Location
 coverglass	I-Location
 in	O
 a	O
 12-well	B-Location
 cell	I-Location
 culture	I-Location
-plate	I-Location
-.	O
+plate.	I-Location
 
 Add	B-Action
 1	B-Amount
 mL	I-Amount
 of	O
 fixation	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.	I-Reagent
 
 Incubate	B-Action
 at	O
@@ -41,8 +38,7 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 10	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Wash	B-Action
 twice	B-Numerical
@@ -51,20 +47,17 @@ with	O
 mL	I-Amount
 of	O
 1X	B-Concentration
-PBS	B-Reagent
-.	O
+PBS.	B-Reagent
 
 To	O
-permeabilize	B-Action
-,	O
-immerse	B-Action
+permeabilize,	B-Action
+immerse	I-Action
 cells	B-Reagent
 in	O
 1	B-Amount
 mL	I-Amount
 of	O
-0.1	B-Concentration
-%	I-Concentration
+0.1%	B-Concentration
 Triton	B-Reagent
 X-100	I-Reagent
 in	O
@@ -75,8 +68,7 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature	I-Temperature
-.	I-Temperature
+temperature.	I-Temperature
 
 Wash	B-Action
 with	O
@@ -84,8 +76,7 @@ with	O
 mL	I-Amount
 of	O
 1X	B-Concentration
-PBS	B-Reagent
-.	O
+PBS.	B-Reagent
 
 Add	B-Action
 1	B-Amount
@@ -97,8 +88,7 @@ primary	B-Reagent
 antibody	I-Reagent
 in	O
 1X	B-Concentration
-PBS	B-Reagent
-.	O
+PBS.	B-Reagent
 
 Incubate	B-Action
 at	O
@@ -106,8 +96,7 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 1	B-Time
-hour	I-Time
-.	O
+hour.	I-Time
 
 Wash	B-Action
 with	O
@@ -118,14 +107,12 @@ of	O
 PBS	B-Reagent
 for	O
 10	B-Time
-minutes	I-Time
-,	O
+minutes,	I-Time
 and	O
 repeat	B-Action
 2	B-Numerical
 more	O
-times	O
-.	O
+times.	O
 
 Add	B-Action
 1	B-Amount
@@ -137,8 +124,7 @@ secondary	B-Reagent
 antibody	I-Reagent
 in	O
 1X	B-Concentration
-PBS	B-Reagent
-.	O
+PBS.	B-Reagent
 
 Incubate	B-Action
 at	O
@@ -146,8 +132,7 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 1	B-Time
-hour	I-Time
-.	O
+hour.	I-Time
 
 Wash	B-Action
 with	O
@@ -158,22 +143,19 @@ of	O
 PBS	B-Reagent
 for	O
 10	B-Time
-minutes	I-Time
-,	O
+minutes,	I-Time
 and	O
 repeat	B-Action
 2	B-Numerical
 more	O
-times	O
-.	O
+times.	O
 
 Add	B-Action
 1	B-Amount
 mL	I-Amount
 of	O
 fixation	B-Reagent
-buffer	I-Reagent
-.	O
+buffer.	I-Reagent
 
 Incubate	B-Action
 at	O
@@ -181,8 +163,7 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 10	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Wash	B-Action
 twice	B-Numerical
@@ -191,14 +172,12 @@ with	O
 mL	I-Amount
 of	O
 1X	B-Concentration
-PBS	B-Reagent
-.	O
+PBS.	B-Reagent
 
 If	O
 frozen	B-Modifier
 before	O
-using	O
-,	O
+using,	O
 warm	B-Action
 the	O
 reconstituted	B-Modifier
@@ -206,18 +185,15 @@ probe	B-Reagent
 solution	I-Reagent
 to	O
 room	B-Temperature
-temperature	I-Temperature
-.	O
+temperature.	I-Temperature
 
 Mix	B-Action
 well	B-Modifier
 by	O
-vortexing	B-Action
-,	O
+vortexing,	B-Action
 then	O
 centrifuge	B-Action
-briefly	B-Modifier
-.	O
+briefly.	B-Modifier
 
 To	O
 prepare	B-Action
@@ -225,8 +201,7 @@ the	O
 Hybridization	B-Reagent
 Buffer	I-Reagent
 containing	O
-probe	B-Reagent
-,	O
+probe,	B-Reagent
 add	B-Action
 1	B-Amount
 μL	I-Amount
@@ -239,20 +214,16 @@ to	O
 μL	I-Amount
 of	O
 Hybridization	B-Reagent
-Buffer	I-Reagent
-,	O
+Buffer,	I-Reagent
 and	O
 then	O
 vortex	B-Action
 and	O
 centrifuge	B-Action
-(	O
-enough	O
+(enough	O
 for	O
 one	O
-coverglass	O
-)	O
-.	O
+coverglass).	O
 
 This	B-Mention
 creates	B-Action
@@ -262,8 +233,7 @@ probe	I-Reagent
 solution	I-Reagent
 of	O
 125	B-Concentration
-nM	I-Concentration
-.	O
+nM.	I-Concentration
 
 This	O
 solution	B-Reagent
@@ -271,11 +241,9 @@ will	O
 be	O
 used	O
 on	O
-steps	O
-20	O
+steps 20	O
 and	O
-21	O
-.	O
+21.	O
 
 Aspirate	B-Action
 the	O
@@ -290,8 +258,7 @@ cells	I-Reagent
 within	O
 the	O
 12-well	B-Location
-plate	I-Location
-.	O
+plate.	I-Location
 
 stellarisAdd	B-Action
 1	B-Amount
@@ -300,12 +267,9 @@ of	O
 Wash	B-Reagent
 Buffer	I-Reagent
 A	I-Reagent
-(	O
-see	O
+(see	O
 recipe	O
-above	O
-)	O
-,	O
+above),	O
 and	O
 incubate	B-Action
 at	O
@@ -313,19 +277,16 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2-5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Assemble	B-Action
 humidified	B-Location
-chamber	I-Location
-:	O
+chamber:	I-Location
 150	B-Size
 mm	I-Size
 tissue	B-Location
 culture	I-Location
-plate	I-Location
-;	O
+plate;	I-Location
 bottom	B-Action
 lined	I-Action
 evenly	B-Modifier
@@ -347,8 +308,7 @@ top	B-Location
 of	O
 the	O
 paper	B-Location
-towel	I-Location
-.	O
+towel.	I-Location
 
 This	O
 chamber	B-Location
@@ -363,14 +323,12 @@ solution	I-Reagent
 from	O
 under	O
 the	O
-coverglass	B-Location
-.	O
+coverglass.	B-Location
 
 Within	O
 the	O
 humidified	B-Location
-chamber	I-Location
-,	O
+chamber,	I-Location
 dispense	B-Action
 100	B-Amount
 μL	I-Amount
@@ -382,18 +340,15 @@ containing	O
 probe	B-Reagent
 onto	O
 the	O
-Parafilm	B-Seal
-.	O
+Parafilm.	B-Seal
 
 Gently	B-Modifier
 transfer	B-Action
 the	O
-coverglass	B-Location
-,	O
+coverglass,	B-Location
 cells	B-Modifier
 side	I-Modifier
-down	I-Modifier
-,	O
+down,	I-Modifier
 onto	O
 the	O
 100	B-Amount
@@ -403,8 +358,7 @@ of	O
 Hybridization	B-Reagent
 Buffer	I-Reagent
 containing	O
-probe	B-Reagent
-.	O
+probe.	B-Reagent
 
 Cover	B-Action
 the	O
@@ -414,13 +368,11 @@ with	O
 the	O
 tissue	B-Seal
 culture	I-Seal
-lid	I-Seal
-,	I-Seal
+lid,	I-Seal
 and	O
 seal	B-Action
 with	O
-Parafilm	B-Seal
-.	O
+Parafilm.	B-Seal
 
 Incubate	B-Action
 in	O
@@ -434,27 +386,22 @@ at	B-Modifier
 least	I-Modifier
 4	B-Time
 hours	I-Time
-(	O
-Incubation	B-Method
+(Incubation	B-Method
 can	O
 be	O
 continued	O
 up	B-Modifier
 to	I-Modifier
 16	B-Time
-hours	I-Time
-)	O
-.	O
+hours).	I-Time
 
 Gently	B-Modifier
 transfer	B-Action
 the	O
-coverglass	B-Location
-,	O
+coverglass,	B-Location
 cells	B-Modifier
 side	I-Modifier
-up	I-Modifier
-,	O
+up,	I-Modifier
 to	O
 a	O
 fresh	B-Modifier
@@ -466,8 +413,7 @@ mL	I-Amount
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
-A	I-Reagent
-.	O
+A.	I-Reagent
 
 Incubate	B-Action
 in	O
@@ -478,14 +424,12 @@ at	O
 °C	I-Temperature
 for	O
 30	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Aspirate	B-Action
 Wash	B-Reagent
 Buffer	I-Reagent
-A	I-Reagent
-,	O
+A,	I-Reagent
 and	O
 then	O
 add	B-Action
@@ -495,21 +439,18 @@ of	O
 DAPI	B-Reagent
 nuclear	I-Reagent
 stain	I-Reagent
-(	O
-Wash	B-Reagent
+(Wash	I-Reagent
 Buffer	I-Reagent
 A	I-Reagent
 consisting	O
 of	O
 5	B-Concentration
 ng/mL	I-Concentration
-DAPI	B-Reagent
-)	O
+DAPI)	B-Reagent
 to	O
 counterstain	B-Action
 the	O
-nuclei	B-Reagent
-.	O
+nuclei.	B-Reagent
 
 Incubate	B-Action
 in	O
@@ -520,15 +461,13 @@ at	O
 °C	I-Temperature
 for	O
 30	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Aspirate	B-Action
 the	O
 DAPI	B-Reagent
 staining	I-Reagent
-buffer	I-Reagent
-,	O
+buffer,	I-Reagent
 and	O
 then	O
 add	B-Action
@@ -544,18 +483,15 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2-5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Add	B-Action
 a	O
 small	B-Modifier
 drop	B-Reagent
-(	O
-approximately	B-Modifier
+(approximately	B-Modifier
 15	B-Amount
-μL	I-Amount
-)	O
+μL)	I-Amount
 of	O
 Vectashield	B-Reagent
 Mounting	I-Reagent
@@ -563,19 +499,16 @@ Medium	I-Reagent
 onto	O
 a	O
 microscope	B-Location
-slide	I-Location
-,	O
+slide,	I-Location
 and	O
 mount	B-Action
 coverglass	B-Location
 onto	O
 the	O
-slide	B-Location
-,	O
+slide,	B-Location
 cells	B-Modifier
 side	I-Modifier
-down	I-Modifier
-.	O
+down.	I-Modifier
 
 Gently	B-Modifier
 wick	B-Action
@@ -587,8 +520,7 @@ the	O
 perimeter	B-Location
 of	O
 the	O
-coverglass	B-Location
-.	O
+coverglass.	B-Location
 
 Seal	B-Action
 the	O
@@ -597,17 +529,14 @@ perimeter	I-Location
 with	O
 clear	B-Modifier
 nail	B-Reagent
-polish	I-Reagent
-,	O
+polish,	I-Reagent
 and	O
 allow	O
 to	O
-dry	B-Action
-.	O
+dry.	B-Action
 
 If	O
-necessary	O
-,	O
+necessary,	O
 gently	B-Modifier
 wipe	B-Action
 away	I-Action
@@ -618,13 +547,11 @@ off	O
 the	O
 coverglass	B-Location
 using	O
-water	B-Reagent
-.	O
+water.	B-Reagent
 
 Proceed	B-Action
 to	O
-Imaging	B-Method
-.	O
+Imaging.	B-Method
 
 
 

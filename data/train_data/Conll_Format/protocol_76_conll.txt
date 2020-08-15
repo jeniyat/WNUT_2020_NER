@@ -17,13 +17,11 @@ glass	I-Modifier
 bottom	B-Location
 cell	I-Location
 culture	I-Location
-plate	I-Location
-.	O
+plate.	I-Location
 
 Decant	B-Action
 growth	B-Reagent
-medium	I-Reagent
-,	O
+medium,	I-Reagent
 and	O
 wash	B-Action
 with	O
@@ -31,23 +29,19 @@ with	O
 μL	I-Amount
 of	O
 1X	B-Reagent
-PBS	I-Reagent
-.	O
+PBS.	I-Reagent
 
 To	O
 fix	B-Action
-cells	B-Reagent
-,	O
+cells,	B-Reagent
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
-3.7	B-Generic-Measure
-%	I-Generic-Measure
+3.7%	B-Generic-Measure
 Formaldehyde	B-Reagent
 fixation	I-Reagent
-solution	I-Reagent
-.	O
+solution.	I-Reagent
 
 Incubate	B-Action
 at	O
@@ -55,8 +49,7 @@ room	B-Generic-Measure
 temperature	I-Generic-Measure
 for	O
 10	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Wash	B-Action
 with	O
@@ -64,8 +57,7 @@ with	O
 μL	I-Amount
 of	O
 1X	B-Reagent
-PBS	I-Reagent
-.	O
+PBS.	I-Reagent
 
 Wash	B-Action
 with	O
@@ -73,8 +65,7 @@ with	O
 μL	I-Amount
 of	O
 1X	B-Reagent
-PBS	I-Reagent
-.	O
+PBS.	I-Reagent
 
 The	O
 Alternative	B-Method
@@ -93,8 +84,7 @@ not	B-Modifier
 meant	I-Modifier
 to	I-Modifier
 be	I-Modifier
-sequential	I-Modifier
-.	O
+sequential.	I-Modifier
 
 Grow	B-Action
 cells	B-Reagent
@@ -105,13 +95,11 @@ glass	B-Modifier
 bottom	B-Location
 cell	I-Location
 culture	I-Location
-plate	I-Location
-.	O
+plate.	I-Location
 
 Decant	B-Action
 growth	B-Reagent
-media	I-Reagent
-,	O
+media,	I-Reagent
 and	O
 wash	B-Action
 with	O
@@ -124,20 +112,16 @@ To	O
 fix	B-Action
 and	I-Action
 permeabilize	I-Action
-cells	B-Reagent
-,	O
+cells,	B-Reagent
 add	B-Action
 200	B-Amount
 μL	I-Amount
 of	O
 methanol-acetic	B-Reagent
 acid	I-Reagent
-(	O
-MeOH-AcOH	B-Reagent
-)	O
-fixation	B-Reagent
-solution	I-Reagent
-.	O
+(MeOH-AcOH)	I-Reagent
+fixation	I-Reagent
+solution.	I-Reagent
 
 Incubate	B-Action
 at	O
@@ -145,8 +129,7 @@ room	B-Generic-Measure
 temperature	I-Generic-Measure
 for	O
 10	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Cells	B-Reagent
 can	O
@@ -164,8 +147,7 @@ to	I-Modifier
 48	B-Time
 hours	I-Time
 before	B-Modifier
-hybridization	B-Method
-.	O
+hybridization.	B-Method
 
 Do	B-Modifier
 not	I-Modifier
@@ -177,14 +159,12 @@ the	O
 MeOH-AcOH	B-Reagent
 has	O
 completely	O
-evaporated	B-Modifier
-.	O
+evaporated.	B-Modifier
 
 If	O
 frozen	B-Modifier
 before	O
-using	O
-,	O
+using,	O
 warm	B-Action
 the	O
 reconstituted	B-Reagent
@@ -192,18 +172,15 @@ probe	I-Reagent
 stock	I-Reagent
 to	O
 room	B-Temperature
-temperature	I-Temperature
-.	O
+temperature.	I-Temperature
 
 Mix	B-Action
 well	B-Modifier
 by	O
-vortexing	B-Action
-,	O
+vortexing,	B-Action
 then	O
 centrifuge	B-Action
-briefly	B-Modifier
-.	O
+briefly.	B-Modifier
 
 To	O
 prepare	B-Action
@@ -211,8 +188,7 @@ the	O
 Hybridization	B-Reagent
 Buffer	I-Reagent
 containing	O
-probe	B-Reagent
-,	O
+probe,	B-Reagent
 add	B-Action
 1.5	B-Amount
 μL	I-Amount
@@ -225,19 +201,15 @@ to	O
 μL	I-Amount
 of	O
 Hybridization	B-Reagent
-Buffer	I-Reagent
-,	O
+Buffer,	I-Reagent
 and	O
 then	O
 vortexand	B-Action
 centrifuge	I-Action
-(	O
-enough	O
+(enough	O
 for	O
 one	O
-well	B-Location
-)	O
-.	O
+well).	B-Location
 
 This	O
 creates	O
@@ -247,8 +219,7 @@ probe	B-Reagent
 solution	I-Reagent
 of	O
 250	B-Concentration
-nM	I-Concentration
-.	O
+nM.	I-Concentration
 
 This	O
 solution	B-Reagent
@@ -257,21 +228,18 @@ be	O
 used	O
 on	O
 step	O
-17	O
-.	O
+17.	O
 
 Decant	B-Action
 MeOH-AcOH	B-Reagent
 or	O
-70	B-Generic-Measure
-%	I-Generic-Measure
+70%	B-Generic-Measure
 ethanol	B-Reagent
 from	O
 wells	B-Location
 containing	I-Location
 adherent	I-Location
-cells	I-Location
-.	O
+cells.	I-Location
 
 Add	B-Action
 200	B-Amount
@@ -280,12 +248,9 @@ of	O
 Wash	B-Reagent
 Buffer	I-Reagent
 A	I-Reagent
-(	O
-see	O
+(see	O
 recipe	O
-above	O
-)	O
-,	O
+above),	O
 and	O
 incubate	B-Action
 at	O
@@ -293,8 +258,7 @@ room	B-Generic-Measure
 temperature	I-Generic-Measure
 for	O
 2-5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Decant	B-Action
 Wash	B-Reagent
@@ -310,8 +274,7 @@ containing	B-Modifier
 Probe	I-Modifier
 into	O
 each	B-Modifier
-well	B-Location
-.	O
+well.	B-Location
 
 Incubate	B-Action
 in	O
@@ -324,9 +287,7 @@ for	O
 4	B-Time
 to	I-Time
 16	I-Time
-hoursa	I-Time
-)	O
-.	O
+hoursa).	I-Time
 
 Incubation	B-Method
 is	O
@@ -338,9 +299,7 @@ using	O
 the	O
 Standard	B-Method
 Fixation	I-Method
-Methodb	I-Method
-)	O
-.	O
+Methodb).	I-Method
 
 Incubation	B-Method
 is	O
@@ -352,16 +311,14 @@ using	O
 the	O
 Alternative	B-Method
 Fixation	I-Method
-Method	I-Method
-.	O
+Method.	I-Method
 
 Aspirate	B-Action
 the	O
 Hybridization	B-Reagent
 Buffer	I-Reagent
 containing	B-Modifier
-Probe	I-Modifier
-,	O
+Probe,	I-Modifier
 and	O
 add	B-Action
 200	B-Amount
@@ -369,8 +326,7 @@ add	B-Action
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
-A	I-Reagent
-.	O
+A.	I-Reagent
 
 Incubate	B-Action
 in	O
@@ -381,14 +337,12 @@ at	O
 °C	I-Temperature
 for	O
 30	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Decant	B-Action
 Wash	B-Reagent
 Buffer	I-Reagent
-A	I-Reagent
-,	O
+A,	I-Reagent
 and	O
 then	O
 add	B-Action
@@ -398,21 +352,18 @@ of	O
 DAPI	B-Reagent
 nuclear	I-Reagent
 stain	I-Reagent
-(	O
-Wash	B-Reagent
+(Wash	I-Reagent
 Buffer	I-Reagent
 A	I-Reagent
 consisting	O
 of	O
 5	B-Concentration
 ng/mL	I-Concentration
-DAPI	B-Reagent
-)	O
+DAPI)	B-Reagent
 to	B-Action
 counterstain	I-Action
 the	O
-nuclei	B-Reagent
-.	O
+nuclei.	B-Reagent
 
 Incubate	B-Action
 in	O
@@ -423,14 +374,12 @@ at	O
 °C	I-Temperature
 for	O
 30	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Decant	B-Action
 DAPI	B-Reagent
 staining	I-Reagent
-buffer	I-Reagent
-,	O
+buffer,	I-Reagent
 and	O
 then	O
 add	B-Action
@@ -439,8 +388,7 @@ add	B-Action
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
-B	I-Reagent
-.	O
+B.	I-Reagent
 
 Incubate	B-Action
 at	O
@@ -448,8 +396,7 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2-5	B-Time
-minutes	I-Time
-.	O
+minutes.	I-Time
 
 Add	B-Action
 30	B-Amount

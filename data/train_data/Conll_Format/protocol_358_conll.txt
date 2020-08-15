@@ -6,26 +6,18 @@ physiology/lysis	I-Reagent
 experiments	O
 
 Advance	O
-Preparation	B-Method
-:	O
-Aliquot	B-Action
-180	B-Amount
-µl	I-Amount
-seawater	I-Amount
-medium	B-Reagent
-(	I-Reagent
-e.g	O
-.	O
-ASW	B-Reagent
-)	I-Reagent
-into	O
-each	B-Location
-well	I-Location
-of	I-Location
-a	I-Location
-96-well	I-Location
-plate	I-Location
-.	I-Location
+Preparation:	B-Method
+Aliquot 180	B-Action
+µl	B-Amount
+seawater	B-Reagent
+medium	I-Reagent
+(e.g.	O
+ASW) into	B-Reagent
+each well	B-Location
+of	O
+a	O
+96-well	B-Location
+plate.	I-Location
 
 Keep	B-Action
 a	I-Action
@@ -34,17 +26,13 @@ of	I-Action
 your	I-Action
 plate	I-Action
 layout	I-Action
-(	O
-which	O
+(which	O
 samples	O
 in	O
 which	O
-wells	O
-)	O
-.	O
+wells).	O
 
-Plate-Setup	B-Location
-:	O
+Plate-Setup:	B-Location
 Add	B-Action
 20	B-Amount
 µl	I-Amount
@@ -56,58 +44,47 @@ ASW	B-Reagent
 for	O
 a	O
 10X	B-Concentration
-dilution	O
-.	O
+dilution.	O
 
 Mix	B-Action
 well	B-Modifier
 with	O
 a	O
-pipette	B-Device
-.	O
+pipette.	B-Device
 
-Read	B-Action
-fluorescence	B-Measure-Type
-using	I-Measure-Type
+Read fluorescence	B-Action
+using	O
 the	O
 Tecan	B-Device
 Infinite	I-Device
 Pro	I-Device
 200M	I-Device
 plate	I-Device
-reader	I-Device
-.	I-Device
+reader.	I-Device
 
 Set	B-Action
 up	I-Action
 a	O
 program	B-Device
-using	O
-the	O
+using the	O
 following	O
-wavelengths	B-Measure-Type
-:	I-Measure-Type
+wavelengths:	B-Measure-Type
 excitation	O
 440	B-Generic-Measure
-nm	I-Generic-Measure
-,	I-Generic-Measure
+nm,	I-Generic-Measure
 emission	O
 680	B-Generic-Measure
 nm	I-Generic-Measure
-for	I-Generic-Measure
+for	O
 chlorophyll	B-Reagent
-a	I-Reagent
-;	I-Reagent
+a;	I-Reagent
 excitation	O
-544	O
-nm	B-Generic-Measure
-,	I-Generic-Measure
-emission	I-Generic-Measure
-577	O
-nm	B-Generic-Measure
-for	I-Generic-Measure
-phycoerythrin	B-Reagent
-.	I-Reagent
+544	B-Generic-Measure
+nm,	I-Generic-Measure
+emission 577	I-Generic-Measure
+nm	I-Generic-Measure
+for	O
+phycoerythrin.	B-Reagent
 
 Plot	B-Action
 fluorescence	B-Measure-Type
@@ -122,9 +99,7 @@ of	O
 cell	B-Measure-Type
 growth	I-Measure-Type
 and/or	O
-phage	B-Measure-Type
-infection	I-Measure-Type
-.	I-Measure-Type
+phage infection.	B-Measure-Type
 
 
 

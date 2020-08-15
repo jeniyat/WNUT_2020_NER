@@ -23,8 +23,7 @@ stock	B-Reagent
 concentration	B-Measure-Type
 of	O
 0.1	B-Concentration
-μg/μL	I-Concentration
-.	O
+μg/μL.	I-Concentration
 
 Incubate	B-Action
 rehydrated	B-Reagent
@@ -33,17 +32,14 @@ overnight	B-Time
 at	O
 4°C	B-Temperature
 while	O
-rocking	B-Action
-,	O
+rocking,	B-Action
 and	O
 then	O
 incubate	B-Action
 for	O
-1	B-Time
-h	I-Time
-at	I-Time
-65°C	B-Temperature
-.	I-Temperature
+1 h	B-Time
+at	O
+65°C.	B-Temperature
 
 Prepare	B-Action
 working	B-Reagent
@@ -57,20 +53,17 @@ the	O
 stock	B-Reagent
 solution	I-Reagent
 to	O
-99	B-Amount
-μL	I-Amount
-of	I-Amount
+99 μL	B-Amount
+of	O
 nuclease-free	B-Reagent
 water	I-Reagent
-to	I-Reagent
+to	O
 produce	B-Action
-a	I-Action
+a	O
 final	O
 concentration	B-Measure-Type
-of	I-Measure-Type
-1	O
-ng/μL	B-Concentration
-.	I-Concentration
+of	O
+1 ng/μL.	B-Concentration
 
 Check	B-Action
 the	O
@@ -91,17 +84,14 @@ can	O
 be	O
 stored	B-Action
 at	O
-−20	B-Temperature
-°C	I-Temperature
-.	I-Temperature
+−20 °C.	B-Temperature
 
 Just	O
 prior	O
 to	O
 sample	B-Reagent
 DNA	I-Reagent
-extraction	B-Method
-,	O
+extraction,	B-Method
 add	B-Action
 enough	O
 standard	B-Reagent
@@ -111,31 +101,25 @@ each	B-Modifier
 sample	B-Reagent
 to	O
 reach	B-Action
-~0.1-1.0	B-Modifier
-%	B-Concentration
+~0.1-1.0%	B-Modifier
 of	O
 expected	O
 total	O
-reads	O
-.	O
+reads.	O
 
 Following	O
-sequencing	B-Action
-,	O
-quantify	B-Action
+sequencing,	B-Action
+quantify	I-Action
 the	O
 number	O
 of	O
 genomic	B-Measure-Type
 standard	I-Measure-Type
 reads	I-Measure-Type
-(	O
-steps	O
+(steps	O
 8	O
 and	O
-9	O
-)	O
-.	O
+9).	O
 
 Using	O
 a	O
@@ -143,8 +127,7 @@ bit	B-Measure-Type
 score	I-Measure-Type
 cutoff	I-Measure-Type
 of	O
-50	B-Numerical
-,	O
+50,	B-Numerical
 identify	B-Action
 standard	B-Measure-Type
 reads	I-Measure-Type
@@ -156,8 +139,7 @@ aganst	O
 the	O
 internal	O
 standard	O
-genome	B-Reagent
-.	O
+genome.	B-Reagent
 
 Using	O
 the	O
@@ -171,8 +153,7 @@ bit	B-Measure-Type
 score	I-Measure-Type
 cutoff	I-Measure-Type
 of	O
-40	B-Numerical
-,	O
+40,	B-Numerical
 perform	B-Action
 a	O
 BLASTx	B-Method
@@ -192,8 +173,7 @@ from	O
 the	O
 internal	O
 standard	O
-genome	B-Reagent
-.	O
+genome.	B-Reagent
 
 Quantify	B-Action
 recovered	B-Modifier
@@ -203,8 +183,7 @@ reads	B-Measure-Type
 and	O
 remove	B-Action
 from	O
-dataset	O
-.	O
+dataset.	O
 
 Calculate	B-Action
 the	O
@@ -216,21 +195,18 @@ internal	O
 standard	O
 recovered	O
 from	O
-sequencing	O
-:	O
-Sr=SS/SPSr	O
-=	O
+sequencing:	O
+Sr=SS/SPSr =	O
 number	B-Measure-Type
 of	I-Measure-Type
 molecules	I-Measure-Type
-of	I-Measure-Type
+of	O
 internal	O
 standard	O
 genome	B-Reagent
-recovered	I-Reagent
+recovered	O
 from	O
-sequencingSS	O
-=	O
+sequencingSS =	O
 number	O
 of	O
 protein	O
@@ -241,8 +217,7 @@ reads	O
 in	O
 the	O
 sequence	O
-librarySP	O
-=	O
+librarySP =	O
 number	O
 of	O
 protein	O
@@ -253,42 +228,32 @@ the	O
 internal	O
 standard	O
 reference	O
-genome	O
-.	O
+genome.	O
 
 Calculate	B-Action
 the	O
 community	B-Measure-Type
 gene	I-Measure-Type
 pool	I-Measure-Type
-size	I-Measure-Type
-:	O
-Pg=Ps*	O
-(	O
-Sa/Sr	O
-)	O
-Pg	O
-=	O
-total	O
+size:	I-Measure-Type
+Pg=Ps*(Sa/Sr)Pg = total	O
 number	B-Measure-Type
 of	I-Measure-Type
 protein	I-Measure-Type
 encoding	I-Measure-Type
 genes	I-Measure-Type
-in	I-Measure-Type
+in	O
 the	O
-samplePs	B-Reagent
-=	O
+samplePs =	B-Reagent
 number	B-Measure-Type
 of	I-Measure-Type
 protein	I-Measure-Type
 encoding	I-Measure-Type
 sequences	I-Measure-Type
-in	I-Measure-Type
-the	I-Measure-Type
+in	O
+the	O
 metagenome	B-Reagent
-librarySa	I-Reagent
-=	O
+librarySa =	O
 number	O
 of	O
 molecules	O
@@ -299,8 +264,7 @@ genome	O
 added	O
 to	O
 the	O
-sampleSr	O
-=	O
+sampleSr =	O
 number	O
 of	O
 molecules	O
@@ -310,8 +274,7 @@ standard	O
 genome	O
 recovered	O
 from	O
-sequencing	O
-.	O
+sequencing.	O
 
 Calculate	B-Action
 individual	O
@@ -320,26 +283,19 @@ abundances	O
 for	O
 genes	B-Reagent
 of	O
-interest	O
-:	O
-Ga=Gs*	O
-(	O
-Pg/Ps	O
-)	O
-Ga	O
-=	O
+interest:	O
+Ga=Gs*(Pg/Ps)Ga =	O
 number	B-Measure-Type
 of	I-Measure-Type
 molecules	I-Measure-Type
-of	I-Measure-Type
+of	O
 any	O
 particular	O
 gene	B-Reagent
-category	I-Reagent
+category	O
 in	O
 the	O
-sample	B-Reagent
-.	I-Reagent
+sample.	B-Reagent
 
 This	O
 can	O
@@ -372,27 +328,24 @@ interest	O
 in	O
 the	O
 sequence	O
-libraryPg	O
-=	O
-total	O
+libraryPg = total	O
 number	B-Measure-Type
 of	I-Measure-Type
 protein	I-Measure-Type
 encoding	I-Measure-Type
 genes	I-Measure-Type
-in	I-Measure-Type
+in	O
 the	O
-samplePs	B-Reagent
-=	O
+samplePs =	B-Reagent
 number	B-Measure-Type
 of	I-Measure-Type
 protein	I-Measure-Type
 encoding	I-Measure-Type
 sequences	I-Measure-Type
-in	I-Measure-Type
-the	I-Measure-Type
+in	O
+the	O
 metagenome	B-Reagent
-library	I-Reagent
+library	O
 
 
 
