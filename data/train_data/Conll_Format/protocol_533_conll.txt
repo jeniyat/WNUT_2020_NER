@@ -7,53 +7,57 @@ Anchor	B-Action
 the	O
 siRNA	B-Reagent
 sequence	I-Reagent
-(19nt)	B-Generic-Measure
-on	O
+19nt	B-Generic-Measure
+on	I-Generic-Measure
 your	O
 target	B-Reagent
-gene.	I-Reagent
+gene	I-Reagent
+.	I-Reagent
 
 Extract	B-Action
 2nt	B-Amount
 of	O
 upstream	B-Reagent
-+19nt	B-Amount
-siRNA	B-Reagent
-+	O
-1nt	B-Amount
-of	O
-downstream,	B-Reagent
-which	O
+19nt	B-Amount
+siRNA	I-Amount
+1nt	B-Reagent
+of	B-Amount
+downstream	B-Reagent
+,	I-Reagent
+which	I-Reagent
 is	O
 totally	B-Modifier
-22nt	B-Generic-Measure
-of	O
-nucleotides.	B-Reagent
+22nt	I-Modifier
+of	B-Generic-Measure
+nucleotides	B-Reagent
+.	I-Reagent
 
 Antisense	B-Reagent
-shRNA:	I-Reagent
+shRNA	I-Reagent
 Insert	B-Action
-the	O
+the	I-Action
 reverse	B-Reagent
 complement	I-Reagent
-of	O
+of	I-Reagent
 the	O
 22nt	B-Reagent
-into	O
-shRNA	B-Reagent
-backbone.	I-Reagent
+into	I-Reagent
+shRNA	I-Reagent
+backbone	I-Reagent
+.	I-Reagent
 
 Sense	B-Reagent
-shRNA:	I-Reagent
+shRNA	I-Reagent
 Insert	B-Action
-the	O
+the	I-Action
 22nt	B-Amount
-(from	B-Reagent
-step	I-Reagent
-2)	I-Reagent
-into	O
-shRNA	B-Reagent
-backbone.	I-Reagent
+from	I-Amount
+step	B-Reagent
+2	I-Reagent
+into	I-Reagent
+shRNA	I-Reagent
+backbone	I-Reagent
+.	I-Reagent
 
 Replace	B-Action
 the	O
@@ -62,20 +66,22 @@ nt	I-Reagent
 with	O
 other	B-Reagent
 nucleotide	I-Reagent
-(replace	B-Action
-A	B-Reagent
-with	O
-G	B-Reagent
-and	B-Modifier
-vice	I-Modifier
-versa;	I-Modifier
 replace	B-Action
-C	B-Reagent
-with	O
-T	B-Reagent
-and	B-Modifier
-vice	I-Modifier
-versa).	I-Modifier
+A	I-Action
+with	B-Reagent
+G	O
+and	B-Reagent
+vice	B-Modifier
+versa	I-Modifier
+;	I-Modifier
+replace	B-Action
+C	I-Action
+with	B-Reagent
+T	O
+and	B-Reagent
+vice	B-Modifier
+versa	I-Modifier
+.	I-Modifier
 
 Now	O
 your	O
@@ -83,14 +89,17 @@ shRNA	B-Reagent
 designing	B-Method
 job	I-Method
 is	O
-done.	B-Modifier
+done	B-Modifier
+.	O
 
 You	O
-see,	O
+see	O
+,	O
 how	O
 easy	B-Modifier
 it	B-Mention
-is!	O
+is	O
+!	O
 
 Synthesis	B-Action
 the	O
@@ -101,7 +110,8 @@ insert	B-Action
 them	B-Mention
 into	O
 pTRIPZ	B-Reagent
-vector.	I-Reagent
+vector	I-Reagent
+.	O
 
 You	O
 may	O
@@ -114,7 +124,8 @@ pTRIPZ	B-Reagent
 vector	I-Reagent
 into	O
 pGIPZ	B-Reagent
-vector.	I-Reagent
+vector	I-Reagent
+.	O
 
 
 

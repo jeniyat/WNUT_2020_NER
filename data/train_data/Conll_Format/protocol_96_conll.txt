@@ -3,14 +3,16 @@ Western	I-Method
 Blotting	I-Method
 
 Run	B-Action
-40%	B-Concentration
-of	O
-IP	B-Reagent
-eluate	I-Reagent
-on	O
-10%	B-Concentration
-gel	B-Reagent
-Tris-Glycine.	I-Reagent
+40	B-Concentration
+of	I-Concentration
+IP	O
+eluate	B-Reagent
+on	I-Reagent
+10	O
+gel	B-Concentration
+Tris	B-Reagent
+Glycine	I-Reagent
+.	I-Reagent
 
 Transfer	B-Action
 protein	B-Reagent
@@ -24,44 +26,50 @@ RT	B-Temperature
 with	O
 ice	B-Device
 pack	I-Device
-(100V).	B-Generic-Measure
+100V	B-Generic-Measure
+.	I-Generic-Measure
 
 Cut	B-Action
 membrane	B-Reagent
 just	O
 below	O
 180kD	B-Generic-Measure
-(top	O
+top	O
 MW	O
 marker	O
 on	O
 benchmark	B-Modifier
 prestained	I-Modifier
-ladder).	B-Reagent
+ladder	I-Modifier
+.	B-Reagent
 
 Cut	B-Action
 Membrane	B-Reagent
 at	O
-~82kD	B-Generic-Measure
-(the	O
+82kD	B-Generic-Measure
+the	I-Generic-Measure
 blue	B-Modifier
-band	B-Reagent
-above	B-Location
-the	O
+band	I-Modifier
+above	B-Reagent
+the	B-Location
 pink	B-Modifier
-band	B-Reagent
-using	O
+band	I-Modifier
+using	B-Reagent
 benchmark	B-Modifier
 prestained	I-Modifier
-ladder).	B-Reagent
+ladder	I-Modifier
+.	B-Reagent
 
-**Note,	O
+Note	O
+,	O
 the	O
-GST-tagged	B-Modifier
-protein	B-Reagent
-is	O
-~115	B-Generic-Measure
-kD.	I-Generic-Measure
+GST	O
+tagged	B-Modifier
+protein	I-Modifier
+is	B-Reagent
+115	I-Reagent
+kD	B-Generic-Measure
+.	I-Generic-Measure
 
 Cutting	B-Action
 the	O
@@ -72,10 +80,13 @@ places	O
 will	O
 help	B-Action
 reduce	I-Action
-non-specific	B-Method
-binding.	I-Method
+non	B-Method
+specific	I-Method
+binding	I-Method
+.	I-Method
 
-Also,	O
+Also	O
+,	O
 running	B-Method
 a	I-Method
 ladder	I-Method
@@ -107,30 +118,42 @@ angle	I-Modifier
 relative	I-Modifier
 to	O
 the	O
-membrane.	B-Location
+membrane	B-Location
+.	O
 
 Block	B-Action
 membrane	B-Reagent
 with	O
-5%	B-Concentration
-BSA	B-Reagent
-(IgG	I-Reagent
-and	O
-Protease-Free)/TBST	B-Reagent
-for	O
-2hrs	B-Time
+5	B-Concentration
+BSA	I-Concentration
+IgG	B-Reagent
+and	I-Reagent
+Protease	I-Reagent
+Free	I-Reagent
+TBST	I-Reagent
+for	I-Reagent
+2hrs	I-Reagent
 at	O
-RT.	B-Temperature
+RT	B-Time
+.	I-Time
 
 Probe	B-Action
 membrane	B-Reagent
 with	O
-phospho-threonine-HRP	B-Reagent
+phospho	B-Reagent
+threonine	I-Reagent
+HRP	I-Reagent
 antibody	I-Reagent
-in	O
-IgG-Free/Protease-Free	B-Reagent
-BSA/TBST	I-Reagent
-(1:1000).	B-Generic-Measure
+in	I-Reagent
+IgG	O
+Free	B-Reagent
+Protease	I-Reagent
+Free	I-Reagent
+BSA	I-Reagent
+TBST	I-Reagent
+1	I-Reagent
+1000	I-Reagent
+.	I-Reagent
 
 Probe	B-Action
 overnight	B-Time
@@ -141,7 +164,8 @@ cold	B-Location
 room	I-Location
 on	O
 tilting	B-Device
-tray.	I-Device
+tray	I-Device
+.	O
 
 Rinse	B-Action
 membrane	B-Reagent
@@ -153,29 +177,34 @@ of	O
 2hrs	B-Time
 with	O
 1x	B-Concentration
-TBST.	B-Reagent
+TBST	B-Reagent
+.	O
 
 Activate	B-Action
 membrane	B-Reagent
 with	O
 pico	B-Reagent
-ECL.	I-Reagent
+ECL	I-Reagent
+.	O
 
-**Note,	O
+Note	O
+,	O
 the	O
-anti-pThr	B-Reagent
+anti	B-Reagent
+pThr	I-Reagent
 antibody	I-Reagent
-is	O
-HRP	B-Modifier
-conjugated	I-Modifier
-so	O
-you	O
-don't	B-Modifier
-need	O
+is	I-Reagent
+HRP	I-Reagent
+conjugated	B-Modifier
+so	I-Modifier
+you	I-Modifier
+don't	I-Modifier
+need	I-Modifier
 to	O
-use	B-Action
-a	O
-secondary.	B-Reagent
+use	O
+a	B-Action
+secondary	I-Action
+.	B-Reagent
 
 
 

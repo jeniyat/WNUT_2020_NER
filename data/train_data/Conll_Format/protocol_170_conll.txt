@@ -4,11 +4,13 @@ Assay	I-Action
 Wash	B-Action
 and	O
 concentrate	B-Action
-blood,	B-Reagent
-prepare	B-Action
-2%	B-Concentration
 blood	B-Reagent
-solution.	I-Reagent
+,	O
+prepare	B-Action
+2	B-Concentration
+blood	I-Concentration
+solution	B-Reagent
+.	I-Reagent
 
 Add	B-Action
 3	B-Amount
@@ -20,18 +22,23 @@ to	O
 mL	I-Amount
 PBS	B-Reagent
 pH	B-pH
-5.7	I-pH
+5	I-pH
+.	I-pH
+7	I-pH
 and	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Centrifuge	B-Action
 10	B-Time
 min	I-Time
 500g	B-Speed
-4C.	B-Temperature
+4C	B-Temperature
+.	O
 
 Remove	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -40,13 +47,15 @@ a	O
 total	O
 of	O
 4	B-Numerical
-washes.	O
+washes	O
+.	O
 
 After	O
 the	O
 final	O
-wash,	B-Action
-remove	I-Action
+wash	B-Action
+,	O
+remove	B-Action
 200	B-Amount
 uL	I-Amount
 blood	B-Reagent
@@ -59,16 +68,22 @@ vial	B-Location
 and	O
 add	B-Action
 to	O
-9.8	B-Amount
+9	B-Amount
+.	I-Amount
+8	I-Amount
 mL	I-Amount
 PBS	B-Reagent
 pH	B-pH
-5.7.	I-pH
+5	I-pH
+.	I-pH
+7	I-pH
+.	O
 
 Prepare	B-Action
 endosomal	B-Reagent
 disruptor	I-Reagent
-solutions.	I-Reagent
+solutions	I-Reagent
+.	O
 
 Prepare	B-Action
 100	B-Amount
@@ -80,18 +95,22 @@ disruptors	I-Reagent
 at	O
 different	B-Concentration
 concentrations	I-Concentration
-(Ex	O
+Ex	O
 serial	B-Method
 10x	I-Method
 dilutions	I-Method
-of	O
+of	I-Method
 TritonX	B-Reagent
-from	O
-15	B-Concentration
-mg/mL	I-Concentration
-to	O
-.0015	B-Concentration
-mg/mL).	I-Concentration
+from	I-Reagent
+15	O
+mg	B-Concentration
+mL	I-Concentration
+to	I-Concentration
+.	O
+0015	B-Concentration
+mg	I-Concentration
+mL	I-Concentration
+.	I-Concentration
 
 Add	B-Action
 blood	B-Reagent
@@ -99,7 +118,8 @@ to	O
 endosomal	B-Reagent
 disruptors	I-Reagent
 and	O
-incubate.	B-Action
+incubate	B-Action
+.	O
 
 Add	B-Action
 50	B-Amount
@@ -111,14 +131,16 @@ to	O
 uL	I-Amount
 endosomal	B-Reagent
 disruptor	I-Reagent
-solutions.	I-Reagent
+solutions	I-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 37C	B-Temperature
 for	O
 30	B-Time
-min,	I-Time
+min	I-Time
+,	O
 starting	O
 timer	B-Device
 as	O
@@ -126,43 +148,48 @@ soon	O
 as	O
 last	O
 solution	B-Reagent
-added.	B-Action
+added	B-Action
+.	O
 
 Make	B-Action
 positive	B-Reagent
-control.	I-Reagent
+control	I-Reagent
+.	O
 
 Make	B-Action
 a	O
 positive	B-Reagent
 control	I-Reagent
-(known	O
-lysis)	B-Reagent
-by	O
+known	O
+lysis	B-Reagent
+by	I-Reagent
 adding	B-Action
-50	B-Amount
-uL	I-Amount
-blood	B-Reagent
-solution	I-Reagent
-to	O
-100	B-Amount
-uL	I-Amount
-diH2O	B-Reagent
-and	O
-freeze-thaw	B-Action
+50	I-Action
+uL	B-Amount
+blood	I-Amount
+solution	B-Reagent
+to	I-Reagent
+100	O
+uL	B-Amount
+diH2O	I-Amount
+and	B-Reagent
+freeze	B-Action
+thaw	I-Action
 cycling	I-Action
-3	B-Numerical
-times	O
-(freeze	B-Action
-in	O
--80C	B-Temperature
-freezer).	B-Device
+3	I-Action
+times	I-Action
+freeze	I-Action
+in	I-Action
+80C	I-Action
+freezer	B-Temperature
+.	B-Device
 
 Centrifuge	B-Action
 and	O
 place	B-Action
 in	O
-plate.	B-Location
+plate	B-Location
+.	O
 
 Centrifuge	B-Action
 in	O
@@ -172,7 +199,8 @@ at	O
 2500g	B-Speed
 for	O
 6	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Carefully	B-Modifier
 collect	B-Action
@@ -188,10 +216,11 @@ place	B-Action
 in	O
 96	B-Location
 well	I-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
-**Solutions	B-Reagent
-bubble	O
+Solutions	B-Reagent
+bubble	I-Reagent
 easily	O
 so	O
 be	O
@@ -201,23 +230,27 @@ not	O
 to	O
 introduce	O
 any	O
-air**.	O
+air	O
+.	O
 
 Disrupting	B-Action
 bottom	B-Modifier
 pellet	B-Reagent
 creates	O
 false	O
-positives.	O
+positives	O
+.	O
 
 Take	B-Action
-absorbance.	B-Measure-Type
+absorbance	B-Measure-Type
+.	O
 
 Take	B-Action
 absorbance	B-Measure-Type
 at	O
 541	B-Generic-Measure
-nm.	I-Generic-Measure
+nm	I-Generic-Measure
+.	O
 
 Can	O
 also	O

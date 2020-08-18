@@ -2,14 +2,15 @@ TruSeq	B-Device
 RNA	I-Device
 kit	I-Device
 protocol	O
-(with	O
-one-third	B-Amount
+with	O
+one	B-Amount
+third	I-Amount
 reaction	I-Amount
 volumes	I-Amount
-and	O
+and	I-Amount
 some	O
 minor	O
-changes)	O
+changes	O
 
 If	O
 not	O
@@ -17,12 +18,14 @@ performing	B-Action
 Poly	B-Method
 A	I-Method
 select	I-Method
-mRNA,	I-Method
+mRNA	I-Method
+,	O
 proceed	B-Action
 directly	B-Modifier
 to	O
 step	O
-24.	O
+24	O
+.	O
 
 Mix	B-Action
 500	B-Amount
@@ -36,8 +39,11 @@ a	O
 final	B-Measure-Type
 volume	I-Measure-Type
 of	O
-16.67	B-Amount
-uL.	I-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
+uL	I-Amount
+.	O
 
 Vortex	B-Action
 RNA	B-Reagent
@@ -45,11 +51,14 @@ purification	I-Reagent
 Beads	I-Reagent
 and	O
 add	B-Action
-16.67	B-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 to	O
 RNA	B-Reagent
-sample.	I-Reagent
+sample	I-Reagent
+.	O
 
 Mix	B-Action
 by	O
@@ -63,24 +72,26 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 in	O
-thermocycler:	B-Device
-65	B-Temperature
-°C	I-Temperature
-5	B-Time
-min	I-Time
-4	B-Temperature
-°C	I-Temperature
-hold.	O
+thermocycler	B-Device
+65	O
+C	B-Temperature
+5	I-Temperature
+min	B-Time
+4	I-Time
+C	B-Temperature
+hold	I-Temperature
+.	O
 
 When	O
 thermocycler	B-Device
 reaches	O
 4	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 remove	B-Action
 sample	B-Reagent
 and	O
@@ -92,7 +103,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 sample	B-Reagent
@@ -101,22 +113,27 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 all	B-Modifier
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Remove	B-Action
 sample	B-Reagent
 from	O
-rack.	B-Device
+rack	B-Device
+.	O
 
 Add	B-Action
-66.7	B-Amount
+66	B-Amount
+.	I-Amount
+7	I-Amount
 uL	I-Amount
 of	O
 Bead	B-Reagent
@@ -133,7 +150,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Place	B-Action
 the	O
@@ -145,7 +163,8 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	O
@@ -153,10 +172,13 @@ discard	B-Action
 all	B-Modifier
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
-16.67	B-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
 Elution	B-Reagent
@@ -172,18 +194,20 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 in	O
-thermocycler:	B-Device
-80	B-Temperature
-°C	I-Temperature
-2	B-Time
-min	I-Time
-25	B-Temperature
-°C	I-Temperature
-hold.	O
+thermocycler	B-Device
+80	O
+C	B-Temperature
+2	I-Temperature
+min	B-Time
+25	I-Time
+C	B-Temperature
+hold	I-Temperature
+.	O
 
 Remove	B-Action
 sample	B-Reagent
@@ -193,15 +217,18 @@ when	O
 it	B-Mention
 reaches	O
 25	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 and	O
 keep	B-Action
 at	O
 room	B-Temperature
-temp.	I-Temperature
+temp	I-Temperature
+.	O
 
 Add	B-Action
-16.67	B-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
 Bead	B-Reagent
@@ -218,7 +245,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -226,7 +254,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 sample	B-Reagent
@@ -235,21 +264,26 @@ magnetic	B-Device
 separator	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Remove	B-Action
 sample	B-Reagent
 from	O
-rack.	B-Device
+rack	B-Device
+.	O
 
 Add	B-Action
-66.7	B-Amount
+66	B-Amount
+.	I-Amount
+7	I-Amount
 uL	I-Amount
 of	O
 Bead	B-Reagent
@@ -266,7 +300,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Place	B-Action
 sample	B-Reagent
@@ -275,20 +310,27 @@ magnetic	B-Device
 separator	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
-6.5	B-Amount
+6	B-Amount
+.	I-Amount
+5	I-Amount
 uL	I-Amount
-Elute,	B-Reagent
-Prime,	I-Reagent
-Fragment.	I-Reagent
+Elute	B-Reagent
+,	I-Reagent
+Prime	I-Reagent
+,	I-Reagent
+Fragment	I-Reagent
+.	O
 
 Mix	B-Action
 and	I-Action
@@ -302,26 +344,33 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 If	O
 proceeding	B-Action
 directly	B-Modifier
 from	O
 step	O
-1,	O
+1	O
+,	O
 add	B-Action
 total	B-Modifier
 RNA	B-Reagent
 to	O
-6.5	B-Amount
+6	B-Amount
+.	I-Amount
+5	I-Amount
 uL	I-Amount
 of	O
-Elute,	B-Reagent
-Prime,	I-Reagent
+Elute	B-Reagent
+,	I-Reagent
+Prime	I-Reagent
+,	I-Reagent
 and	I-Reagent
 Fragment	I-Reagent
-mix,	I-Reagent
+mix	I-Reagent
+,	O
 and	O
 bring	B-Action
 up	I-Action
@@ -335,18 +384,20 @@ than	O
 10	B-Amount
 uL	I-Amount
 with	O
-dH2O.	B-Reagent
+dH2O	B-Reagent
+.	O
 
 Incubate	B-Action
 in	O
-thermocycler:	B-Device
-94	B-Temperature
-°C	I-Temperature
-8	B-Time
-min	I-Time
-4	B-Temperature
-°C	I-Temperature
-hold.	O
+thermocycler	B-Device
+94	O
+C	B-Temperature
+8	I-Temperature
+min	B-Time
+4	I-Time
+C	B-Temperature
+hold	I-Temperature
+.	O
 
 If	O
 not	O
@@ -354,12 +405,14 @@ performing	B-Action
 Poly	B-Method
 A	I-Method
 select	I-Method
-mRNA,	I-Method
+mRNA	I-Method
+,	O
 proceed	B-Action
 directly	B-Modifier
 to	O
 step	B-Method
-28.	I-Method
+28	I-Method
+.	O
 
 Place	B-Action
 sample	B-Reagent
@@ -369,10 +422,13 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
-5.67	B-Amount
+5	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
 the	O
@@ -380,48 +436,56 @@ supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-0.2	B-Amount
+0	B-Amount
+.	I-Amount
+2	I-Amount
 mL	I-Amount
 PCR	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
-2.67	B-Amount
+2	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
 First	B-Reagent
 Strand	I-Reagent
 Master	I-Reagent
 Mix	I-Reagent
-/	O
-Super	B-Reagent
+Super	I-Reagent
 Script	I-Reagent
 II	I-Reagent
 mix	I-Reagent
-to	O
-sample.	B-Reagent
+to	I-Reagent
+sample	I-Reagent
+.	I-Reagent
 
 Incubate	B-Action
 in	O
-thermocycler:	B-Device
-25	B-Temperature
-°C	I-Temperature
-10	B-Time
-min	I-Time
-42	B-Temperature
-°C	I-Temperature
-50	B-Time
-min	I-Time
-70	B-Temperature
-°C	I-Temperature
-15	B-Time
-min	I-Time
-4	B-Temperature
-°C	I-Temperature
-hold.	O
+thermocycler	B-Device
+25	O
+C	B-Temperature
+10	I-Temperature
+min	B-Time
+42	I-Time
+C	B-Temperature
+50	I-Temperature
+min	B-Time
+70	I-Time
+C	B-Temperature
+15	I-Temperature
+min	B-Time
+4	I-Time
+C	B-Temperature
+hold	I-Temperature
+.	O
 
 Add	B-Action
-8.33	B-Amount
+8	B-Amount
+.	I-Amount
+33	I-Amount
 uL	I-Amount
 of	O
 Second	B-Reagent
@@ -429,17 +493,19 @@ Strand	I-Reagent
 Master	I-Reagent
 Mix	I-Reagent
 to	O
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Incubate	B-Action
 in	O
 thermocycler	B-Device
 at	O
 16	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 1	B-Time
-hour.	I-Time
+hour	I-Time
+.	O
 
 Remove	B-Action
 sample	B-Reagent
@@ -450,30 +516,33 @@ let	B-Action
 warm	I-Action
 to	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Add	B-Action
 30	B-Amount
 uL	I-Amount
 of	O
-well-mixed	B-Modifier
-AMPure	B-Reagent
-XP	I-Reagent
+well	B-Modifier
+mixed	I-Modifier
+AMPure	I-Modifier
+XP	B-Reagent
 beads	I-Reagent
-and	O
+and	I-Reagent
 mix	B-Action
-by	O
+by	I-Action
 pipetting	B-Method
 up	I-Method
 and	I-Method
 down	I-Method
-until	O
+until	I-Method
 beads	B-Reagent
-are	O
+are	I-Reagent
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	I-Modifier
+.	B-Reagent
 
 Incubate	B-Action
 at	O
@@ -481,7 +550,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 15	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 on	I-Action
@@ -489,7 +559,8 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
@@ -498,7 +569,8 @@ discard	I-Action
 uL	I-Amount
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Keep	B-Action
 sample	B-Reagent
@@ -510,19 +582,22 @@ add	B-Action
 200	B-Amount
 uL	I-Amount
 of	O
-80%	B-Concentration
-ethanol.	B-Reagent
+80	B-Concentration
+ethanol	I-Concentration
+.	B-Reagent
 
 Incubate	B-Action
 for	O
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
 discard	I-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -536,7 +611,8 @@ a	O
 total	O
 of	O
 two	B-Numerical
-washes.	B-Action
+washes	B-Action
+.	O
 
 Add	B-Action
 22	B-Amount
@@ -554,7 +630,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -562,7 +639,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 in	O
@@ -570,7 +648,8 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
 20	B-Amount
@@ -581,51 +660,62 @@ supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-0.2	B-Amount
+0	B-Amount
+.	I-Amount
+2	I-Amount
 mL	I-Amount
 PCR	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
-13.3	B-Amount
+13	B-Amount
+.	I-Amount
+3	I-Amount
 uL	I-Amount
 of	O
 End	B-Reagent
 Repair	I-Reagent
 Mix	I-Reagent
 to	O
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 30	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
-53.5	B-Amount
+53	B-Amount
+.	I-Amount
+5	I-Amount
 uL	I-Amount
 of	O
-well-mixed	B-Modifier
-AMPure	B-Reagent
-XP	I-Reagent
+well	B-Modifier
+mixed	I-Modifier
+AMPure	I-Modifier
+XP	B-Reagent
 Beads	I-Reagent
-and	O
+and	I-Reagent
 mix	B-Action
-by	O
-pipetting	B-Action
-up	B-Method
-and	I-Method
+by	I-Action
+pipetting	I-Action
+up	I-Action
+and	B-Method
 down	I-Method
-until	O
+until	I-Method
 beads	B-Reagent
-are	O
+are	I-Reagent
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	I-Modifier
+.	B-Reagent
 
 Incubate	B-Action
 at	O
@@ -633,7 +723,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 15	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 on	I-Action
@@ -641,16 +732,20 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
 discard	I-Action
-81.6	B-Amount
+81	B-Amount
+.	I-Amount
+6	I-Amount
 uL	I-Amount
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Keep	B-Action
 sample	B-Reagent
@@ -662,19 +757,22 @@ add	B-Action
 200	B-Amount
 uL	I-Amount
 of	O
-80%	B-Concentration
-ethanol.	B-Reagent
+80	B-Concentration
+ethanol	I-Concentration
+.	B-Reagent
 
 Incubate	B-Action
 for	O
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
 discard	I-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -688,10 +786,13 @@ a	O
 total	O
 of	O
 two	B-Numerical
-washes.	B-Action
+washes	B-Action
+.	O
 
 Add	B-Action
-7.83	B-Amount
+7	B-Amount
+.	I-Amount
+83	I-Amount
 uL	I-Amount
 Resuspension	B-Reagent
 buffer	I-Reagent
@@ -708,7 +809,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -716,7 +818,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 in	I-Action
@@ -724,10 +827,13 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
-5.83	B-Amount
+5	B-Amount
+.	I-Amount
+83	I-Amount
 uL	I-Amount
 of	O
 the	O
@@ -735,42 +841,58 @@ supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-0.2	B-Amount
+0	B-Amount
+.	I-Amount
+2	I-Amount
 mL	I-Amount
 PCR	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
-4.17	B-Amount
+4	B-Amount
+.	I-Amount
+17	I-Amount
 uL	I-Amount
-A-Tailing	B-Reagent
+A	B-Reagent
+Tailing	I-Reagent
 Mix	I-Reagent
-to	O
-sample.	B-Reagent
+to	I-Reagent
+sample	I-Reagent
+.	I-Reagent
 
 Incubate	B-Action
 at	O
 37	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
-0.83	B-Amount
+0	B-Amount
+.	I-Amount
+83	I-Amount
 uL	I-Amount
 DNA	B-Reagent
-Ligase.	I-Reagent
+Ligase	I-Reagent
+.	O
 
 Mix	B-Action
-0.83	B-Amount
+0	B-Amount
+.	I-Amount
+83	I-Amount
 uL	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
-0.83	B-Amount
+0	B-Amount
+.	I-Amount
+83	I-Amount
 uL	I-Amount
 RNA	B-Reagent
-Adapter.	I-Reagent
+Adapter	I-Reagent
+.	O
 
 Index	B-Action
 and	I-Action
@@ -778,47 +900,55 @@ mix	I-Action
 by	O
 pipet	B-Method
 or	O
-flicking,	B-Method
+flicking	B-Method
+,	O
 and	O
 spin	B-Action
-down.	I-Action
+down	I-Action
+.	O
 
 Incubate	B-Action
 at	O
 30	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
-1.67	B-Amount
+1	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 Stop	B-Reagent
 Ligase	I-Reagent
-Mix.	I-Reagent
+Mix	I-Reagent
+.	O
 
 Add	B-Action
 14	B-Amount
 uL	I-Amount
-well-mixed	B-Modifier
-AMPure	B-Reagent
-XP	I-Reagent
+well	B-Modifier
+mixed	I-Modifier
+AMPure	I-Modifier
+XP	B-Reagent
 Beads	I-Reagent
-and	O
+and	I-Reagent
 mix	B-Action
-by	O
+by	I-Action
 pipetting	B-Method
 up	I-Method
 and	I-Method
 down	I-Method
-until	O
+until	I-Method
 beads	B-Reagent
-are	O
+are	I-Reagent
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	I-Modifier
+.	B-Reagent
 
 Incubate	B-Action
 at	O
@@ -826,7 +956,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 15	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 on	I-Action
@@ -836,16 +967,20 @@ for	O
 at	B-Modifier
 least	I-Modifier
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
 discard	I-Action
-23.16	B-Amount
+23	B-Amount
+.	I-Amount
+16	I-Amount
 uL	I-Amount
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Keep	B-Action
 sample	B-Reagent
@@ -857,19 +992,22 @@ add	B-Action
 200	B-Amount
 uL	I-Amount
 of	O
-80%	B-Concentration
-ethanol.	B-Reagent
+80	B-Concentration
+ethanol	I-Concentration
+.	B-Reagent
 
 Incubate	B-Action
 for	O
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -878,10 +1016,13 @@ and	I-Method
 67	I-Method
 one	B-Numerical
 more	O
-time.	O
+time	O
+.	O
 
 Add	B-Action
-18.67	B-Amount
+18	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
@@ -896,7 +1037,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -904,7 +1046,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 in	I-Action
@@ -912,10 +1055,13 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
-16.67	B-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
 the	O
@@ -923,19 +1069,26 @@ supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-0.2	B-Amount
+0	B-Amount
+.	I-Amount
+2	I-Amount
 mL	I-Amount
 PCR	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
-16.67	B-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
-well-mixed	B-Modifier
-AMPure	B-Reagent
-XP	I-Reagent
-beads.	I-Reagent
+well	B-Modifier
+mixed	I-Modifier
+AMPure	I-Modifier
+XP	B-Reagent
+beads	I-Reagent
+.	I-Reagent
 
 Mix	B-Action
 by	O
@@ -950,7 +1103,8 @@ are	O
 in	O
 a	O
 homogenous	B-Modifier
-suspension.	B-Reagent
+suspension	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -958,7 +1112,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 15	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 on	O
@@ -968,16 +1123,20 @@ for	O
 at	B-Modifier
 least	I-Modifier
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
 discard	I-Action
-28.34	B-Amount
+28	B-Amount
+.	I-Amount
+34	I-Amount
 uL	I-Amount
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Keep	B-Action
 sample	B-Reagent
@@ -989,19 +1148,22 @@ add	B-Action
 200	B-Amount
 uL	I-Amount
 of	O
-80%	B-Concentration
-ethanol.	B-Reagent
+80	B-Concentration
+ethanol	I-Concentration
+.	B-Reagent
 
 Incubate	B-Action
 for	O
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -1010,10 +1172,13 @@ and	I-Method
 78	I-Method
 one	B-Numerical
 more	O
-time.	O
+time	O
+.	O
 
 Add	B-Action
-9.67	B-Amount
+9	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
@@ -1023,7 +1188,8 @@ up	B-Method
 and	I-Method
 down	I-Method
 10	B-Numerical
-times.	O
+times	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -1031,7 +1197,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 in	O
@@ -1039,10 +1206,13 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
-7.67	B-Amount
+7	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
 the	O
@@ -1050,10 +1220,13 @@ supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-0.2	B-Amount
+0	B-Amount
+.	I-Amount
+2	I-Amount
 mL	I-Amount
 PCR	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Use	B-Action
 1	B-Amount
@@ -1068,26 +1241,34 @@ perform	O
 in	O
 following	O
 PCR	B-Method
-amplification.	I-Method
+amplification	I-Method
+.	O
 
 Mix	B-Action
-6.67	B-Amount
+6	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 Adapter	B-Reagent
 ligated	I-Reagent
 DNA	I-Reagent
 from	O
 step	O
-831.67	B-Amount
+831	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 PCR	B-Reagent
 Primer	I-Reagent
 Cocktail	I-Reagent
-8.33	B-Amount
+8	B-Amount
+.	I-Amount
+33	I-Amount
 uL	I-Amount
 PCR	B-Reagent
 Master	I-Reagent
-Mix.	I-Reagent
+Mix	I-Reagent
+.	O
 
 Amplify	B-Action
 with	O
@@ -1096,46 +1277,45 @@ following	O
 PCR	B-Method
 procotol	I-Method
 98	B-Temperature
-°C	I-Temperature
--	O
-30	B-Time
-seconds	I-Time
-5	B-Generic-Measure
--	I-Generic-Measure
-18	I-Generic-Measure
+C	I-Temperature
+30	O
+seconds	B-Time
+5	I-Time
+18	B-Generic-Measure
 cycles	I-Generic-Measure
-98	B-Temperature
-°C	I-Temperature
--	O
-10	B-Time
-seconds	I-Time
-60	B-Temperature
-°C	I-Temperature
--	O
-30	B-Time
-seconds	I-Time
-72	B-Temperature
-°C	I-Temperature
--	O
-30	B-Time
-seconds	I-Time
-72	B-Temperature
-°C	I-Temperature
--	O
-5	B-Generic-Measure
-hold	I-Generic-Measure
+98	I-Generic-Measure
+C	B-Temperature
+10	I-Temperature
+seconds	B-Time
+60	I-Time
+C	I-Time
+30	B-Temperature
+seconds	I-Temperature
+72	B-Time
+C	I-Time
+30	I-Time
+seconds	B-Temperature
+72	B-Time
+C	I-Time
+5	I-Time
+hold	I-Time
 at	O
-4	B-Temperature
-°C.	I-Temperature
+4	B-Generic-Measure
+C	I-Generic-Measure
+.	I-Generic-Measure
 
 Add	B-Action
-16.67	B-Amount
+16	B-Amount
+.	I-Amount
+67	I-Amount
 uL	I-Amount
 of	O
-well-mixed	B-Modifier
-AMPure	B-Reagent
-XP	I-Reagent
-beads.	I-Reagent
+well	B-Modifier
+mixed	I-Modifier
+AMPure	I-Modifier
+XP	B-Reagent
+beads	I-Reagent
+.	I-Reagent
 
 Incubate	B-Action
 at	O
@@ -1143,7 +1323,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 15	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 on	O
@@ -1153,16 +1334,20 @@ for	O
 at	B-Modifier
 least	I-Modifier
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
 and	I-Action
 discard	I-Action
-28.3	B-Amount
+28	B-Amount
+.	I-Amount
+3	I-Amount
 uL	I-Amount
 of	O
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Keep	B-Action
 sample	B-Reagent
@@ -1173,18 +1358,21 @@ and	O
 add	B-Action
 200	B-Amount
 uL	I-Amount
-80%	B-Concentration
-ethanol.	B-Reagent
+80	B-Concentration
+ethanol	I-Concentration
+.	B-Reagent
 
 Incubate	B-Action
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Remove	B-Action
 and	O
 discard	B-Action
 all	B-Modifier
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Repeat	B-Action
 steps	B-Method
@@ -1193,7 +1381,8 @@ and	I-Method
 92	I-Method
 one	B-Numerical
 more	O
-time.	O
+time	O
+.	O
 
 Let	O
 the	O
@@ -1204,7 +1393,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 12	B-Amount
@@ -1217,7 +1407,8 @@ up	B-Method
 and	I-Method
 down	I-Method
 10	B-Numerical
-times.	O
+times	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -1225,7 +1416,8 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 2	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Place	B-Action
 in	O
@@ -1233,7 +1425,8 @@ magnetic	B-Device
 rack	I-Device
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Transfer	B-Action
 10	B-Amount
@@ -1244,10 +1437,13 @@ supernatant	B-Reagent
 to	O
 a	O
 new	B-Modifier
-1.5	B-Amount
+1	B-Amount
+.	I-Amount
+5	I-Amount
 mL	I-Amount
 PCR	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Use	B-Action
 1	B-Amount
@@ -1255,14 +1451,25 @@ uL	I-Amount
 for	O
 qPCR	B-Reagent
 quantiation	I-Reagent
-(http://ethanomics.wordpress.com/ngs-qpcr-library-quantitation-protocol/)	O
+http	O
+ethanomics	O
+.	O
+wordpress	O
+.	O
+com	O
+ngs	O
+qpcr	O
+library	O
+quantitation	O
+protocol	O
 and	O
-run	B-Action
-1	B-Amount
-uL	I-Amount
+run	O
+1	O
+uL	O
 on	O
 the	O
-Bioanalyzer.	B-Device
+Bioanalyzer	B-Action
+.	B-Device
 
 
 

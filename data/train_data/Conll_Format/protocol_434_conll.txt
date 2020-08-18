@@ -1,6 +1,7 @@
-T-maze	B-Method
+T	B-Method
+maze	I-Method
 phototaxis	I-Method
-with	O
+with	I-Method
 LEDs	B-Device
 
 Clip	B-Action
@@ -9,7 +10,8 @@ of	O
 half	B-Generic-Measure
 of	O
 the	O
-flies.	B-Reagent
+flies	B-Reagent
+.	O
 
 Let	B-Action
 flies	B-Reagent
@@ -17,33 +19,38 @@ recover	B-Action
 for	O
 1	B-Time
 day	I-Time
-(at	O
-25°C,	B-Temperature
+at	O
+25	O
+C	B-Temperature
+,	I-Temperature
 faster	B-Modifier
-recovery).	B-Method
+recovery	I-Modifier
+.	B-Method
 
 Put	B-Action
 the	O
 flies	B-Reagent
 in	O
 the	O
-T-maze	B-Location
-(entrance	I-Location
-tube)	I-Location
-and	O
-let	B-Action
-them	B-Mention
-adapt	B-Action
-themselves	O
+T	B-Location
+maze	I-Location
+entrance	I-Location
+tube	I-Location
+and	I-Location
+let	O
+them	B-Action
+adapt	B-Mention
+themselves	B-Action
 to	O
 the	O
 machine	B-Device
-and	O
+and	I-Device
 the	O
 darkness	O
 for	O
-10	B-Time
-minutes.	I-Time
+10	O
+minutes	B-Time
+.	I-Time
 
 Move	B-Action
 the	O
@@ -51,21 +58,24 @@ flies	B-Reagent
 into	O
 the	O
 elevator	B-Location
-(the	O
+the	O
 mobile	B-Location
 part	I-Location
-of	O
+of	I-Location
 the	O
-T-maze),	B-Location
-and	O
-let	B-Action
-them	B-Mention
-stay	B-Action
-there	B-Location
-for	O
+T	O
+maze	B-Location
+,	I-Location
+and	I-Location
+let	O
+them	B-Action
+stay	B-Mention
+there	B-Action
+for	B-Location
 around	O
-1	B-Time
-minute.	I-Time
+1	O
+minute	B-Time
+.	I-Time
 
 Move	B-Action
 the	O
@@ -74,11 +84,13 @@ to	O
 the	O
 bottom	B-Modifier
 of	O
-T-maze	B-Location
-(taking	B-Action
-down	I-Action
-the	O
-elevator).	B-Device
+T	B-Location
+maze	I-Location
+taking	I-Location
+down	B-Action
+the	I-Action
+elevator	B-Device
+.	I-Device
 
 Now	O
 they	O
@@ -91,23 +103,26 @@ decision	O
 between	O
 two	B-Numerical
 different	O
-tubes:	B-Location
+tubes	B-Location
 one	B-Numerical
-is	O
+is	I-Numerical
 completely	B-Modifier
-dark,	I-Modifier
+dark	I-Modifier
+,	I-Modifier
 and	O
 the	O
 other	O
 one	B-Numerical
-has	O
+has	I-Numerical
 a	O
 LED	B-Device
-in	O
+in	I-Device
 the	O
-bottom/is	B-Location
+bottom	B-Location
+is	I-Location
 entirely	O
-transparent.	B-Modifier
+transparent	B-Modifier
+.	I-Modifier
 
 We	O
 are	O
@@ -115,13 +130,16 @@ going	O
 to	O
 use	O
 different	O
-LEDs:	B-Device
+LEDs	B-Device
 White	B-Modifier
-LEDs,	B-Device
+LEDs	I-Modifier
+,	B-Device
 Yellow	B-Modifier
-LEDs,	B-Device
+LEDs	I-Modifier
+,	B-Device
 Green	B-Modifier
-LEDs.	B-Device
+LEDs	I-Modifier
+.	B-Device
 
 Wait	B-Action
 for	O
@@ -133,7 +151,8 @@ flies	B-Reagent
 to	O
 make	O
 their	O
-decision,	O
+decision	O
+,	O
 and	O
 lock	B-Action
 them	B-Mention
@@ -144,10 +163,11 @@ that	O
 they	O
 have	O
 chosen	O
-(taking	B-Action
+taking	B-Action
 up	I-Action
-the	O
-elevator).	B-Device
+the	I-Action
+elevator	B-Device
+.	I-Device
 
 Anesthetize	B-Action
 the	O
@@ -160,7 +180,8 @@ them	B-Mention
 under	B-Modifier
 the	O
 magnifying	B-Location
-glass.	I-Location
+glass	I-Location
+.	O
 
 
 

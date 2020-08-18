@@ -8,38 +8,45 @@ yeast	B-Reagent
 in	O
 liquid	B-Reagent
 medium	I-Reagent
-overnight.	B-Time
+overnight	B-Time
+.	O
 
 Add	B-Action
 333	B-Amount
-μL	I-Amount
-(or	O
-1	B-Amount
-volume)	I-Amount
-yeast	B-Reagent
-culture	I-Reagent
-to	O
+L	I-Amount
+or	O
+1	O
+volume	B-Amount
+yeast	I-Amount
+culture	B-Reagent
+to	I-Reagent
 a	O
-1.5	B-Amount
+1	O
+.	O
+5	B-Amount
 mL	I-Amount
-microcentrifuge	B-Location
-tube.	I-Location
+microcentrifuge	I-Amount
+tube	B-Location
+.	I-Location
 
 Add	B-Action
 666	B-Amount
-μL	I-Amount
-(or	O
-2	B-Amount
-volume)	I-Amount
-of	O
-100%	B-Concentration
-Ethanol	B-Reagent
-to	O
-the	O
-1.5	B-Amount
-mL	I-Amount
-microcentrifuge	B-Location
-tube.	I-Location
+L	I-Amount
+or	O
+2	O
+volume	B-Amount
+of	I-Amount
+100	O
+Ethanol	B-Concentration
+to	B-Reagent
+the	I-Reagent
+1	O
+.	O
+5	O
+mL	B-Amount
+microcentrifuge	I-Amount
+tube	B-Location
+.	I-Location
 
 Let	O
 the	O
@@ -51,8 +58,10 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
-30-60	B-Time
-minutes.	I-Time
+30	B-Time
+60	I-Time
+minutes	I-Time
+.	I-Time
 
 Spin	B-Action
 down	I-Action
@@ -63,7 +72,8 @@ for	O
 minute	I-Time
 at	O
 2500	B-Speed
-RPM.	I-Speed
+RPM	I-Speed
+.	O
 
 Pour	B-Action
 out	I-Action
@@ -78,7 +88,8 @@ in	O
 of	O
 1	B-Concentration
 x	I-Concentration
-PBS,	B-Reagent
+PBS	B-Reagent
+,	O
 then	O
 centrifuge	B-Action
 for	O
@@ -86,7 +97,8 @@ for	O
 minute	I-Time
 at	O
 2500	B-Speed
-RPM.	I-Speed
+RPM	I-Speed
+.	O
 
 Pour	B-Action
 out	I-Action
@@ -98,17 +110,18 @@ the	O
 pellet	B-Reagent
 in	O
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 a	O
 1	B-Concentration
 x	I-Concentration
 PBS	B-Reagent
-/	O
-1:2000	B-Generic-Measure
-Dilution	B-Reagent
-DAPI	I-Reagent
-mixture.	I-Reagent
+1	O
+2000	B-Generic-Measure
+Dilution	I-Generic-Measure
+DAPI	B-Reagent
+mixture	I-Reagent
+.	I-Reagent
 
 Add	B-Action
 one	B-Numerical
@@ -120,24 +133,26 @@ suspended	B-Action
 in	O
 the	O
 PBS	B-Reagent
-/	I-Reagent
 DAPI	I-Reagent
 mixture	I-Reagent
-onto	O
+onto	I-Reagent
 a	O
 microscope	B-Location
-slide,	I-Location
+slide	I-Location
+,	I-Location
 add	B-Action
-a	O
+a	I-Action
 coverslip	B-Seal
-on	O
-top,	B-Location
+on	I-Seal
+top	B-Location
+,	I-Location
 and	O
 go	O
 observe	B-Action
-the	O
+the	I-Action
 stained	B-Modifier
-yeast.	B-Reagent
+yeast	I-Modifier
+.	B-Reagent
 
 
 

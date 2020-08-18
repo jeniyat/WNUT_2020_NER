@@ -9,23 +9,27 @@ unicellular	B-Modifier
 protists	B-Reagent
 
 Add	B-Action
-1/1000	B-Concentration
-Hoechst	B-Reagent
-dye	I-Reagent
-(1	B-Amount
-uL	I-Amount
-into	O
-1	B-Amount
-mL	I-Amount
-volume	B-Measure-Type
-of	O
-cells).Keep	B-Reagent
-cells	I-Reagent
-with	O
+1	B-Concentration
+1000	I-Concentration
+Hoechst	I-Concentration
 dye	B-Reagent
-protected	B-Action
-from	O
-light.	O
+1	I-Reagent
+uL	B-Amount
+into	I-Amount
+1	O
+mL	O
+volume	B-Amount
+of	B-Measure-Type
+cells	B-Reagent
+.	I-Reagent
+Keep	I-Reagent
+cells	B-Action
+with	B-Reagent
+dye	O
+protected	B-Reagent
+from	B-Action
+light	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -33,13 +37,16 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 10	B-Time
-minutes.Keep	I-Time
+minutes	I-Time
+.	O
+Keep	B-Action
 cells	B-Reagent
 with	O
 dye	B-Reagent
 protected	B-Action
 from	O
-light.	O
+light	O
+.	O
 
 Centrifuge	B-Action
 cells	B-Reagent
@@ -47,13 +54,15 @@ at	O
 1000g	B-Speed
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Resuspend	B-Action
 with	O
 fresh	B-Modifier
 growing	I-Modifier
-medium.	B-Reagent
+medium	B-Reagent
+.	O
 
 Use	O
 minimum	B-Modifier
@@ -68,7 +77,8 @@ in	I-Action
 to	O
 the	O
 slide	B-Location
-immediately.	B-Modifier
+immediately	B-Modifier
+.	O
 
 Mount	B-Action
 your	O
@@ -78,7 +88,8 @@ ready	O
 for	O
 observation	B-Method
 under	O
-microscope.	B-Device
+microscope	B-Device
+.	O
 
 
 

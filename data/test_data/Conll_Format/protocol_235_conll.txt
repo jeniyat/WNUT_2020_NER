@@ -7,12 +7,15 @@ Chemistry	O
 
 Filtering	B-Action
 Cultures	B-Reagent
-1.1	B-Numerical
+1	B-Numerical
+.	I-Numerical
+1	I-Numerical
 Oxalate	B-Reagent
 Wash	I-Reagent
 Preparation	B-Method
 Before	O
-filtration,	B-Method
+filtration	B-Method
+,	O
 make	B-Action
 an	O
 oxalate	B-Reagent
@@ -28,7 +31,8 @@ remove	B-Action
 extracellular	B-Reagent
 iron	I-Reagent
 from	O
-diatoms.	B-Reagent
+diatoms	B-Reagent
+.	O
 
 Mix	B-Action
 consecutively	B-Modifier
@@ -41,7 +45,8 @@ in	O
 ml	I-Amount
 of	O
 ultra	B-Reagent
-pure.	I-Reagent
+pure	I-Reagent
+.	O
 
 Take	B-Action
 up	O
@@ -54,19 +59,34 @@ once	O
 Ph	B-pH
 8	I-pH
 is	O
-reached.	O
+reached	O
+.	O
 
-15.3g,	B-Amount
-EDTA;	B-Reagent
-14.7g,	B-Amount
+15	B-Amount
+.	I-Amount
+3g	I-Amount
+,	O
+EDTA	B-Reagent
+;	O
+14	B-Amount
+.	I-Amount
+7g	I-Amount
+,	O
 Sodium	B-Reagent
-Citrate;	I-Reagent
-0.74g,	B-Amount
+Citrate	I-Reagent
+;	O
+0	B-Amount
+.	I-Amount
+74g	I-Amount
+,	O
 Potassium	B-Reagent
-Chloride;	I-Reagent
-5g,	B-Amount
+Chloride	I-Reagent
+;	O
+5g	B-Amount
+,	O
 Sodium	B-Reagent
-Chloride;	I-Reagent
+Chloride	I-Reagent
+;	O
 
 Several	B-Amount
 drops	I-Amount
@@ -77,11 +97,18 @@ until	O
 a	O
 Ph	B-pH
 of	I-pH
-6-712.6g,	I-pH
+6	I-pH
+712	I-pH
+.	I-pH
+6g	I-pH
+,	I-pH
 Oxalic	B-Reagent
 Acid	I-Reagent
-is	O
-1.2.	B-Numerical
+is	I-Reagent
+1	O
+.	B-Numerical
+2	I-Numerical
+.	I-Numerical
 
 Harvest	B-Action
 Diatoms	B-Reagent
@@ -89,7 +116,7 @@ Once	O
 They	O
 Have	O
 Been	O
-Filtered:	O
+Filtered	O
 
 Once	O
 cultures	B-Reagent
@@ -100,76 +127,88 @@ to	O
 their	O
 optimal	O
 density	B-Measure-Type
-(approximately	B-Modifier
-3500	B-Generic-Measure
-RFU),	I-Generic-Measure
+approximately	B-Modifier
+3500	I-Modifier
+RFU	B-Generic-Measure
+,	I-Generic-Measure
 they	B-Mention
-need	O
+need	I-Mention
 to	O
 be	O
-harvested.	B-Action
+harvested	B-Action
+.	I-Action
 
 In	O
 order	O
 to	O
 do	O
-so,	O
+so	O
+,	O
 the	O
 following	O
 items	O
 are	O
-needed:	O
-a	B-Device
-pair	I-Device
+needed	O
+a	O
+pair	B-Device
 of	I-Device
 tweezers	I-Device
-that	O
+that	I-Device
 have	O
 been	O
 cleaned	B-Action
-in	O
-10%	B-Concentration
-HCl	B-Reagent
-overnight,	B-Time
-polycarbonate	B-Location
-filters	I-Location
-(0.1um)	B-Size
-that	O
+in	I-Action
+10	O
+HCl	B-Concentration
+overnight	B-Reagent
+,	B-Time
+polycarbonate	I-Time
+filters	B-Location
+0	I-Location
+.	I-Location
+1um	B-Size
+that	I-Size
 have	O
 been	O
 washed	B-Action
-in	O
-10%	B-Concentration
-HCl	B-Reagent
-overnight	B-Time
-and	O
-rinsed	B-Action
-in	O
-UPW,	B-Reagent
-3	B-Numerical
-bottles:	B-Location
-one	I-Location
-to	B-Modifier
-collect	I-Modifier
-waste,	I-Modifier
+in	I-Action
+10	I-Action
+HCl	O
+overnight	B-Concentration
+and	B-Time
+rinsed	I-Time
+in	B-Action
+UPW	I-Action
+,	O
+3	O
+bottles	B-Reagent
 one	B-Location
-that	O
-contains	O
-ASW	B-Reagent
+to	I-Location
+collect	I-Location
+waste	B-Modifier
+,	I-Modifier
+one	I-Modifier
+that	I-Modifier
+contains	B-Location
+ASW	O
 and	O
-one	B-Location
+one	B-Reagent
 that	O
-contains	O
-UPW,	B-Reagent
-oxalate	I-Reagent
-wash,	I-Reagent
-a	O
-60ml	B-Amount
-syringe,	B-Device
-and	O
-syringe	B-Device
+contains	B-Location
+UPW	O
+,	O
+oxalate	B-Reagent
+wash	I-Reagent
+,	I-Reagent
+a	I-Reagent
+60ml	I-Reagent
+syringe	B-Amount
+,	B-Device
+and	I-Device
+syringe	I-Device
 filter	I-Device
-tip.	I-Device
+tip	I-Device
+.	I-Device
 
 Label	B-Action
 several	B-Numerical
@@ -181,7 +220,8 @@ designated	O
 solution	B-Reagent
 numbers	O
 on	O
-them.	O
+them	O
+.	O
 
 One	O
 tube	B-Location
@@ -198,29 +238,38 @@ tube	B-Location
 labeled	B-Action
 for	B-Modifier
 washed	I-Modifier
-solutions.	I-Modifier
+solutions	I-Modifier
+.	O
 
 For	O
-example,	O
+example	O
+,	O
 the	O
 tubes	B-Location
 may	O
-say,	O
-“solution	B-Reagent
-1#1	O
-unwashed”,	O
-“solution	B-Reagent
-1#2	O
-washed”.	O
+say	O
+,	O
+solution	B-Reagent
+1	O
+1	O
+unwashed	O
+,	O
+solution	B-Reagent
+1	I-Reagent
+2	O
+washed	O
+.	O
 
 Once	O
 tubes	B-Location
 are	O
-labeled,	B-Action
-assemble	I-Action
+labeled	B-Action
+,	O
+assemble	B-Action
 the	O
 filtration	B-Device
-apparatus.	I-Device
+apparatus	I-Device
+.	O
 
 Use	O
 polyethylene	B-Device
@@ -228,7 +277,8 @@ gloves	I-Device
 to	O
 handle	B-Action
 the	O
-tweezers,	B-Device
+tweezers	B-Device
+,	O
 remove	B-Action
 one	B-Numerical
 polycarbonate	B-Location
@@ -241,7 +291,8 @@ place	B-Action
 on	O
 the	O
 filter	B-Device
-rig.	I-Device
+rig	I-Device
+.	O
 
 Screw	B-Action
 the	O
@@ -255,14 +306,16 @@ rinse	B-Action
 the	O
 filter	B-Location
 with	O
-UPW,	B-Reagent
+UPW	B-Reagent
+,	O
 allowing	O
 the	O
 water	B-Reagent
 to	O
 be	O
 filtered	B-Modifier
-through.	O
+through	O
+.	O
 
 Pour	B-Action
 250ml	B-Amount
@@ -275,7 +328,8 @@ and	O
 allow	O
 it	B-Mention
 to	O
-drain.	O
+drain	O
+.	O
 
 Rinse	B-Action
 the	O
@@ -285,24 +339,28 @@ times	I-Numerical
 with	O
 5ml	B-Amount
 of	O
-ASW.	B-Reagent
+ASW	B-Reagent
+.	O
 
 Once	O
 filter	B-Device
 has	O
 completely	O
-drained,	B-Modifier
+drained	B-Modifier
+,	O
 unscrew	B-Action
 the	O
 reservoir	B-Location
 with	O
 polyethylene	B-Device
-gloves,	I-Device
+gloves	I-Device
+,	O
 remove	B-Action
 the	O
 filter	B-Location
 with	O
-tweezers,	B-Device
+tweezers	B-Device
+,	O
 and	O
 place	B-Action
 it	B-Mention
@@ -314,7 +372,8 @@ tube	B-Location
 that	B-Modifier
 is	I-Modifier
 labeled	I-Modifier
-“unwashed”.	I-Modifier
+unwashed	I-Modifier
+.	O
 
 Syringe	B-Action
 filter	I-Action
@@ -327,7 +386,8 @@ the	O
 remaining	O
 750ml	B-Amount
 of	O
-culture.	B-Reagent
+culture	B-Reagent
+.	O
 
 Invert	B-Action
 bottle	B-Location
@@ -337,7 +397,8 @@ allow	B-Action
 to	I-Action
 sit	I-Action
 for	O
-30min.	B-Time
+30min	B-Time
+.	O
 
 Invert	B-Action
 bottle	B-Location
@@ -353,7 +414,8 @@ filter	I-Location
 onto	O
 the	O
 filter	B-Device
-rig,	I-Device
+rig	I-Device
+,	O
 rinse	B-Action
 with	O
 UPW	B-Reagent
@@ -363,7 +425,8 @@ the	O
 remaining	O
 culture	B-Reagent
 onto	O
-filter.	B-Location
+filter	B-Location
+.	O
 
 Rinse	B-Action
 filter	B-Device
@@ -371,18 +434,22 @@ three	B-Numerical
 times	I-Numerical
 with	O
 5ml	B-Amount
-ASW,	B-Reagent
+ASW	B-Reagent
+,	O
 drain	B-Action
-completely,	B-Modifier
+completely	B-Modifier
+,	O
 remove	B-Action
-filter,	B-Location
+filter	B-Location
+,	O
 and	O
 place	B-Action
 in	O
 corresponding	O
 tube	B-Location
 labeled	B-Modifier
-“washed”.	I-Modifier
+washed	I-Modifier
+.	O
 
 Repeat	B-Action
 these	I-Action
@@ -395,7 +462,8 @@ the	O
 bottles	B-Location
 have	O
 been	O
-filtered.	B-Action
+filtered	B-Action
+.	O
 
 Rinse	B-Action
 tweezers	B-Device
@@ -406,14 +474,16 @@ well	O
 as	O
 the	O
 filter	B-Device
-rig,	I-Device
+rig	I-Device
+,	O
 and	O
 put	B-Action
 everything	B-Reagent
 back	B-Location
 in	I-Location
 its	I-Location
-place.	I-Location
+place	I-Location
+.	O
 
 Rinse	B-Action
 the	O
@@ -430,12 +500,15 @@ clean	B-Location
 lab	I-Location
 to	O
 be	O
-cleaned.	B-Action
+cleaned	B-Action
+.	O
 
 All	O
-cultures,	B-Reagent
+cultures	B-Reagent
+,	O
 once	O
-filtered,	B-Action
+filtered	B-Action
+,	O
 need	O
 to	O
 be	O
@@ -447,7 +520,8 @@ order	O
 to	O
 examine	B-Action
 iron	B-Measure-Type
-limitation.	I-Measure-Type
+limitation	I-Measure-Type
+.	O
 
 Preparation	B-Method
 for	O
@@ -462,7 +536,8 @@ clean	B-Modifier
 mL	I-Amount
 tube	B-Location
 for	O
-storage.	O
+storage	O
+.	O
 
 Transfer	B-Action
 the	O
@@ -471,13 +546,15 @@ into	O
 a	O
 small	B-Location
 teflon	I-Location
-(PFA)	I-Location
-vial.	I-Location
+PFA	I-Location
+vial	I-Location
+.	I-Location
 
 Add	B-Action
 1	B-Amount
 mL	I-Amount
-conc.	B-Reagent
+conc	B-Reagent
+.	O
 
 TE	B-Action
 clean	I-Action
@@ -485,26 +562,30 @@ HCl	B-Reagent
 and	O
 1	B-Amount
 mL	I-Amount
-conc.	B-Reagent
+conc	B-Reagent
+.	O
 
 TE	B-Action
 clean	I-Action
 HNO3	B-Reagent
 to	O
 each	B-Modifier
-vial.	B-Location
+vial	B-Location
+.	O
 
-CAREFUL:	O
+CAREFUL	O
 This	O
 reaction	B-Reagent
-will	O
+will	I-Reagent
 produce	B-Action
-a	O
+a	I-Action
 corrosive	B-Modifier
-and	O
-foul-smelling	B-Modifier
+and	I-Modifier
+foul	I-Modifier
+smelling	I-Modifier
 orange	I-Modifier
-gas.	B-Reagent
+gas	I-Modifier
+.	B-Reagent
 
 Place	B-Action
 caps	B-Seal
@@ -517,7 +598,8 @@ vials	B-Location
 in	O
 a	O
 fume	B-Location
-hood.	I-Location
+hood	I-Location
+.	O
 
 IF	O
 YOU	O
@@ -528,37 +610,42 @@ THEM	B-Mention
 ON	O
 A	O
 HOT	B-Location
-PLATE,	I-Location
+PLATE	I-Location
+,	O
 DO	O
 NOT	O
 TURN	B-Action
 ON	I-Action
-HEAT.	O
+HEAT	O
+.	O
 
-(If	O
+If	O
 hotplate	B-Location
-is	O
+is	I-Location
 not	O
-available,	O
+available	O
+,	O
 find	B-Action
-another	O
+another	I-Action
 good	B-Modifier
-place	B-Location
-to	O
+place	I-Modifier
+to	B-Location
 store	B-Action
-them	B-Mention
-overnight	B-Time
-in	O
+them	I-Action
+overnight	B-Mention
+in	B-Time
 a	O
 fume	B-Location
-hood.)	I-Location
+hood	I-Location
+.	I-Location
 
 After	O
 the	O
 samples	B-Reagent
 have	O
 reacted	B-Modifier
-overnight,	B-Time
+overnight	B-Time
+,	O
 remove	B-Action
 the	O
 filters	B-Location
@@ -570,7 +657,8 @@ a	B-Device
 pair	I-Device
 of	I-Device
 teflon	I-Device
-tweezers.	I-Device
+tweezers	I-Device
+.	O
 
 Try	O
 to	O
@@ -591,7 +679,8 @@ shells	I-Reagent
 remain	O
 on	O
 the	O
-filter.	B-Location
+filter	B-Location
+.	O
 
 The	O
 filter	B-Device
@@ -605,7 +694,8 @@ the	O
 acid	B-Reagent
 still	O
 in	O
-it,	B-Mention
+it	B-Mention
+,	O
 and	O
 this	O
 acid	B-Reagent
@@ -613,7 +703,8 @@ contains	O
 valuable	O
 amounts	O
 of	O
-Fe.	B-Reagent
+Fe	B-Reagent
+.	O
 
 Rinse	B-Action
 off	I-Action
@@ -634,7 +725,8 @@ TE	B-Reagent
 H2O	I-Reagent
 over	O
 each	B-Modifier
-filter.	B-Location
+filter	B-Location
+.	O
 
 Evaporate	B-Action
 samples	B-Reagent
@@ -643,7 +735,8 @@ dryness	I-Modifier
 on	O
 a	O
 hot	B-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Reconstitute	B-Action
 samples	B-Reagent
@@ -653,8 +746,11 @@ uL	I-Amount
 of	O
 10N	B-Concentration
 HCl	B-Reagent
-+0.001%	B-Concentration
-H2O2.	B-Reagent
+0	B-Concentration
+.	I-Concentration
+001	I-Concentration
+H2O2	I-Concentration
+.	B-Reagent
 
 Collect	B-Action
 a	O
@@ -664,23 +760,26 @@ samples	B-Reagent
 are	O
 run	B-Action
 through	O
-columns.	B-Location
+columns	B-Location
+.	O
 
 Run	B-Action
 samples	B-Reagent
 through	O
-‘mini’	B-Location
+mini	B-Location
 columns	I-Location
-(135	B-Amount
-uL)	I-Amount
-according	O
+135	B-Amount
+uL	I-Amount
+according	I-Amount
 to	O
 established	O
-procedures.	O
+procedures	O
+.	O
 
 While	O
 running	B-Action
-columns,	B-Location
+columns	B-Location
+,	O
 clean	B-Action
 each	O
 of	O
@@ -704,7 +803,9 @@ the	O
 hot	B-Device
 plate	I-Device
 with	O
-0.1	B-Concentration
+0	B-Concentration
+.	I-Concentration
+1	I-Concentration
 N	I-Concentration
 HNO3	B-Reagent
 for	O
@@ -714,7 +815,8 @@ or	I-Time
 two	I-Time
 as	O
 columns	B-Location
-run.	B-Action
+run	B-Action
+.	O
 
 Elute	B-Action
 from	O
@@ -729,24 +831,28 @@ your	O
 samples	B-Reagent
 came	O
 out	O
-of.	O
+of	O
+.	O
 
 Dry	B-Action
 down	I-Action
 overnight	B-Time
-(or	O
+or	O
 for	B-Time
 a	I-Time
 few	I-Time
-hours).	I-Time
+hours	I-Time
+.	I-Time
 
 Re	B-Action
 dissolve	I-Action
 in	O
 100ul	B-Amount
 of	O
-conc.	B-Reagent
-HNO3.	I-Reagent
+conc	B-Reagent
+.	I-Reagent
+HNO3	I-Reagent
+.	O
 
 Put	B-Action
 on	O
@@ -754,12 +860,15 @@ hot	B-Location
 plate	I-Location
 in	O
 bio	B-Location
-lab,	I-Location
-capped,	B-Action
+lab	I-Location
+,	O
+capped	B-Action
+,	O
 for	O
 30min	B-Time
 at	O
-350.	B-Temperature
+350	B-Temperature
+.	O
 
 Take	B-Action
 off	I-Action
@@ -778,12 +887,15 @@ biological	B-Location
 lab	I-Location
 to	O
 dry	B-Action
-down.	I-Action
+down	I-Action
+.	O
 
 Reconstitute	B-Action
 in	O
 1100ul	B-Amount
-0.1N	B-Concentration
+0	B-Concentration
+.	I-Concentration
+1N	I-Concentration
 HNO3	B-Reagent
 Take	B-Action
 off	I-Action
@@ -795,13 +907,16 @@ dilute	B-Action
 to	O
 1ml	B-Amount
 with	O
-.1N	B-Concentration
-HNO3,	B-Reagent
+.	B-Concentration
+1N	I-Concentration
+HNO3	B-Reagent
+,	O
 put	B-Action
 in	I-Action
 15	B-Amount
 ml	I-Amount
-vial.	B-Location
+vial	B-Location
+.	O
 
 Give	B-Action
 the	O
@@ -815,19 +930,21 @@ Tim	O
 to	O
 run	B-Action
 on	O
-element.	B-Reagent
+element	B-Reagent
+.	O
 
-(This	O
+This	O
 gives	O
 the	O
 concentration	B-Measure-Type
-that	O
+that	I-Measure-Type
 allows	O
 you	O
 to	O
 calculate	O
 step	O
-22).	O
+22	O
+.	O
 
 When	O
 you	O
@@ -839,17 +956,21 @@ of	O
 Fe	B-Reagent
 in	O
 each	O
-sample,	B-Reagent
+sample	B-Reagent
+,	O
 add	B-Action
 enough	O
-double-spike	B-Reagent
-to	O
+double	B-Reagent
+spike	I-Reagent
+to	I-Reagent
 get	O
 a	O
-1:2	B-Concentration
-sample:	B-Reagent
-spike	B-Measure-Type
-ratio.	I-Measure-Type
+1	O
+2	B-Concentration
+sample	I-Concentration
+spike	B-Reagent
+ratio	B-Measure-Type
+.	I-Measure-Type
 
 The	O
 sample	B-Reagent
@@ -857,7 +978,8 @@ is	O
 ready	O
 for	O
 isotopic	B-Method
-analysis.	I-Method
+analysis	I-Method
+.	O
 
 
 

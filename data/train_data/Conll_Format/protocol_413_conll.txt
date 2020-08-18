@@ -9,16 +9,20 @@ Label	B-Action
 one	B-Numerical
 tube	B-Location
 for	O
-each	plant.	B-Reagent
+each	B-Reagent
+plant	I-Reagent
+.	O
 
 Harvest	B-Action
-2-3	B-Numerical
-seedlings	B-Reagent
-and	O
+2	B-Numerical
+3	I-Numerical
+seedlings	I-Numerical
+and	B-Reagent
 place	B-Action
-in	O
+in	I-Action
 a	O
-mortar.	B-Device
+mortar	B-Device
+.	I-Device
 
 Fill	B-Action
 with	O
@@ -27,12 +31,14 @@ about	O
 ml	I-Amount
 of	O
 liquid	B-Reagent
-nitrogen.	I-Reagent
+nitrogen	I-Reagent
+.	O
 
 Grind	B-Action
 tissue	B-Reagent
 with	O
-pestle.	B-Device
+pestle	B-Device
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -42,33 +48,39 @@ extraction	B-Reagent
 buffer	I-Reagent
 to	O
 the	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 120	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
-10%	B-Concentration
-SDS.	B-Reagent
+10	B-Concentration
+SDS	I-Concentration
+.	B-Reagent
 
 Mix	B-Action
 by	O
-inverting.	B-Action
+inverting	B-Action
+.	O
 
 Incubate	B-Action
-tube(s)	B-Location
+tube	B-Location
+s	O
 at	O
-65	B-Temperature
-˚C	I-Temperature
-for	O
-20	B-Time
-minutes.	I-Time
+65	O
+C	B-Temperature
+for	I-Temperature
+20	O
+minutes	B-Time
+.	I-Time
 
 Add	B-Action
 300	B-Amount
-µl	I-Amount
+l	I-Amount
 5M	B-Concentration
-KOAc.	B-Reagent
+KOAc	B-Reagent
+.	O
 
 Mix	B-Action
 well	B-Modifier
@@ -76,27 +88,37 @@ by	O
 inverting	B-Action
 several	B-Numerical
 times	O
-(important!),	O
+important	O
+!	O
+,	O
 then	O
 place	B-Action
-on	O
-ice	B-Location
-5	B-Time
-minutes.	I-Time
+on	I-Action
+ice	O
+5	B-Location
+minutes	I-Location
+.	B-Time
 
 Centrifuge	B-Action
 for	O
 5	B-Time
 minutes	I-Time
-at	>12,000	rpm.	B-Modifier
+at	O
+12	B-Modifier
+,	B-Speed
+000	I-Speed
+rpm	I-Speed
+.	I-Speed
 
 Label	B-Action
-a	second	B-Modifier
-tube.	B-Location
+a	O
+second	B-Modifier
+tube	B-Location
+.	O
 
 Pass	B-Action
 700	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 the	O
 supernatant	B-Reagent
@@ -107,28 +129,34 @@ funnel	I-Device
 into	O
 the	O
 second	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 600	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
-isopropanol.	B-Reagent
+isopropanol	B-Reagent
+.	O
 
 Mix	B-Action
 the	O
 contents	B-Reagent
 thoroughly	B-Modifier
 by	O
-inverting.	B-Method
+inverting	B-Method
+.	O
 
 Spin	B-Action
 for	O
 5	B-Time
 minutes	I-Time
 at	O
-14,000	B-Speed
-rpm.	I-Speed
+14	B-Speed
+,	I-Speed
+000	I-Speed
+rpm	I-Speed
+.	O
 
 Carefully	B-Modifier
 pour	B-Action
@@ -136,7 +164,8 @@ off	I-Action
 and	O
 discard	B-Action
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Use	O
 a	O
@@ -144,7 +173,7 @@ P20	B-Device
 set	I-Device
 to	O
 20	B-Amount
-µl	I-Amount
+l	I-Amount
 to	O
 remove	B-Action
 the	O
@@ -156,34 +185,38 @@ without	B-Action
 disturbing	I-Action
 the	O
 DNA	B-Reagent
-pellet.	I-Reagent
+pellet	I-Reagent
+.	O
 
 Add	B-Action
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
-70%	B-Concentration
-ethanol	B-Reagent
-and	O
+70	B-Concentration
+ethanol	I-Concentration
+and	B-Reagent
 flick	B-Action
-the	O
+the	I-Action
 tube	B-Location
-until	O
+until	I-Location
 the	O
 pellet	B-Reagent
-comes	O
+comes	I-Reagent
 off	O
 the	O
-bottom.	B-Location
+bottom	B-Location
+.	I-Location
 
 Spin	B-Action
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Pour	B-Action
 off	I-Action
 the	O
-ethanol.	B-Reagent
+ethanol	B-Reagent
+.	O
 
 Use	O
 a	O
@@ -191,7 +224,7 @@ P20	B-Location
 set	O
 to	O
 20	B-Amount
-µl	I-Amount
+l	I-Amount
 to	O
 remove	B-Action
 the	O
@@ -200,24 +233,31 @@ drops	B-Reagent
 without	B-Action
 disturbing	I-Action
 the	O
-pellet.	B-Reagent
+pellet	B-Reagent
+.	O
 
 Leave	B-Action
 the	O
 tube	B-Location
-open	on	O
+open	O
+on	O
 the	O
 bench	B-Location
-to	air	B-Action
-dry	for	5-10	I-Action
-minutes.	B-Time
+to	O
+air	B-Action
+dry	I-Action
+for	O
+5	B-Time
+10	I-Time
+minutes	I-Time
+.	I-Time
 
 Resuspend	B-Action
 the	O
 DNA	B-Reagent
 in	O
 50	B-Amount
-µl	I-Amount
+l	I-Amount
 TE	B-Reagent
 and	O
 incubate	B-Action
@@ -229,14 +269,16 @@ for	O
 minutes	I-Time
 for	O
 complete	B-Method
-resuspension.	I-Method
+resuspension	I-Method
+.	O
 
 Samples	B-Reagent
 should	O
 be	O
 frozen	B-Modifier
 for	O
-storage.	O
+storage	O
+.	O
 
 
 

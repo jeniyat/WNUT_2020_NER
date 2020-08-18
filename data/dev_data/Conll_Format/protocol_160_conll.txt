@@ -7,36 +7,49 @@ Of	O
 Proteins	B-Reagent
 
 Prepare	B-Action
-30.0%	B-Concentration
-Acrylamide	B-Reagent
-stock	I-Reagent
+30	B-Concentration
+.	I-Concentration
+0	I-Concentration
+Acrylamide	I-Concentration
+stock	B-Reagent
 solution	I-Reagent
-(30.0:0.8).	O
+30	I-Reagent
+.	O
+0	O
+0	O
+.	O
+8	O
+.	O
 
 Prepare	B-Action
 Resolving	B-Reagent
 gel	I-Reagent
 buffer	I-Reagent
-(4X).	B-Concentration
+4X	B-Concentration
+.	I-Concentration
 
 Prepare	B-Action
 Stacking	B-Reagent
 gel	I-Reagent
 buffer	I-Reagent
-(4X).	B-Concentration
+4X	B-Concentration
+.	I-Concentration
 
 Prepare	B-Action
 Running	B-Reagent
 gel	I-Reagent
 buffer	I-Reagent
-(10X).	B-Concentration
+10X	B-Concentration
+.	I-Concentration
 
 Prepare	B-Action
 Cracking	B-Reagent
-buffer,	I-Reagent
+buffer	I-Reagent
+,	O
 4X	B-Concentration
-(10	B-Amount
-mL).	I-Amount
+10	B-Amount
+mL	I-Amount
+.	I-Amount
 
 See	O
 guidelines	O
@@ -45,7 +58,8 @@ Sample	O
 Recipe	O
 for	O
 Resolving	B-Reagent
-Gel.	I-Reagent
+Gel	I-Reagent
+.	O
 
 Mix	B-Action
 all	O
@@ -56,25 +70,28 @@ together	O
 except	O
 the	O
 ammonium	B-Reagent
-persulfate.	I-Reagent
+persulfate	I-Reagent
+.	O
 
 Gently	B-Modifier
 overlay	B-Action
 the	O
 gel	B-Reagent
 with	O
-d-H2O	B-Reagent
-(or	O
-1X	B-Concentration
-resolving	B-Modifier
-gel	B-Reagent
-buffer)	I-Reagent
-and	O
+d	B-Reagent
+H2O	I-Reagent
+or	I-Reagent
+1X	O
+resolving	B-Concentration
+gel	B-Modifier
+buffer	B-Reagent
+and	I-Reagent
 allow	O
 the	O
-gel	B-Mention
-to	O
-polymerize.	B-Action
+gel	O
+to	B-Mention
+polymerize	I-Mention
+.	B-Action
 
 Pour	B-Action
 the	O
@@ -85,7 +102,8 @@ after	O
 adding	B-Action
 the	O
 ammonium	B-Reagent
-persulfate.	I-Reagent
+persulfate	I-Reagent
+.	O
 
 Insert	B-Action
 the	O
@@ -94,7 +112,8 @@ comb	I-Device
 to	O
 form	B-Action
 the	O
-wells.	B-Location
+wells	B-Location
+.	O
 
 Allow	O
 the	O
@@ -106,12 +125,14 @@ for	O
 60	B-Time
 min	I-Time
 before	O
-use.	O
+use	O
+.	O
 
 See	O
 guidelines	O
 for	O
-ingredients.	O
+ingredients	O
+.	O
 
 Boil	B-Action
 the	O
@@ -120,13 +141,15 @@ in	O
 the	O
 cracking	B-Modifier
 buffer	B-Reagent
-5-10	B-Time
+5	B-Time
+10	I-Time
 min	I-Time
-before	O
+before	I-Time
 loading	B-Action
-onto	O
+onto	I-Action
 the	O
-gel.	B-Reagent
+gel	B-Reagent
+.	I-Reagent
 
 Electrophorese	B-Action
 the	O
@@ -134,20 +157,21 @@ gel	B-Reagent
 at	O
 100	B-Numerical
 volts	B-Measure-Type
-(constant)	O
+constant	O
 or	O
-10	B-Numerical
-milliamps	B-Measure-Type
-(constant)	O
+10	O
+milliamps	B-Numerical
+constant	B-Measure-Type
 until	O
 the	O
-dye	B-Reagent
-front	O
+dye	O
+front	B-Reagent
 just	O
-runs	B-Action
-off	O
+runs	O
+off	B-Action
 the	O
-gel.	B-Mention
+gel	O
+.	O
 
 See	O
 guidelines	O
@@ -158,7 +182,8 @@ Recipes	O
 and	O
 Stacking	B-Reagent
 Gel	I-Reagent
-Recipes.	O
+Recipes	O
+.	O
 
 Stain	B-Action
 the	O
@@ -171,48 +196,67 @@ according	O
 to	O
 the	O
 following	O
-recipe:	O
-1.0	B-Amount
-gm,	I-Amount
+recipe	O
+1	O
+.	B-Amount
+0	I-Amount
+gm	I-Amount
+,	I-Amount
 Coomassie	B-Reagent
 Brilliant	I-Reagent
-Blue;	I-Reagent
+Blue	I-Reagent
+;	I-Reagent
 R455	B-Amount
-mL,	I-Amount
-methanol;	B-Reagent
+mL	I-Amount
+,	I-Amount
+methanol	B-Reagent
+;	I-Reagent
 455	B-Amount
-mL,	I-Amount
-d-H2O;	B-Reagent
-90	B-Amount
-mL,	I-Amount
-glacial	B-Reagent
-acetic	I-Reagent
-acid;	I-Reagent
+mL	I-Amount
+,	I-Amount
+d	O
+H2O	B-Reagent
+;	I-Reagent
+90	I-Reagent
+mL	B-Amount
+,	I-Amount
+glacial	I-Amount
+acetic	B-Reagent
+acid	I-Reagent
+;	I-Reagent
 
 Gels	B-Reagent
 are	O
 destained	B-Action
 with	O
 the	O
-following:	O
+following	O
 700	B-Amount
-mL,	I-Amount
-methanol;	B-Reagent
+mL	I-Amount
+,	I-Amount
+methanol	B-Reagent
+;	I-Reagent
 200	B-Amount
-mL,	I-Amount
+mL	I-Amount
+,	I-Amount
 glacial	B-Reagent
 acetic	I-Reagent
-acid;	I-Reagent
+acid	I-Reagent
+;	I-Reagent
 2600	B-Amount
-mL,	I-Amount
-d-H2O	B-Reagent
-Stain	B-Action
-and	O
-destain	B-Action
-the	O
+mL	I-Amount
+,	I-Amount
+d	O
+H2O	B-Reagent
+Stain	I-Reagent
+and	B-Action
+destain	I-Action
+the	I-Action
 gels	B-Mention
-at	O
-65°C.	B-Temperature
+at	I-Mention
+65	O
+C	B-Temperature
+.	I-Temperature
 
 Small	B-Modifier
 foam	B-Reagent
@@ -244,12 +288,14 @@ not	O
 be	O
 changed	O
 as	O
-often.	O
+often	O
+.	O
 
 See	O
 guidelines	O
 for	O
-ingredients.	O
+ingredients	O
+.	O
 
 
 

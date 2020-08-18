@@ -11,7 +11,8 @@ pure	I-Reagent
 water	I-Reagent
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Replace	B-Action
 the	O
@@ -21,23 +22,34 @@ wash	B-Action
 for	O
 another	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Fix	B-Action
 gel	B-Reagent
 in	O
-30%	B-Concentration
-ethanol:10%	B-Reagent
-acetic	I-Reagent
-acid	I-Reagent
+30	B-Concentration
+ethanol	I-Concentration
+10	B-Reagent
+acetic	B-Concentration
+acid	B-Reagent
 solution	I-Reagent
-(i.e.,	O
-6:3:1	B-Concentration
-water:ethanol:acetic	I-Concentration
-acid)	I-Concentration
-for	O
-15	B-Time
-minutes.	I-Time
+i	I-Reagent
+.	I-Reagent
+e	I-Reagent
+.	O
+,	O
+6	O
+3	O
+1	O
+water	B-Concentration
+ethanol	I-Concentration
+acetic	I-Concentration
+acid	I-Concentration
+for	I-Concentration
+15	I-Concentration
+minutes	I-Concentration
+.	B-Time
 
 Replace	B-Action
 the	O
@@ -47,31 +59,34 @@ fix	B-Action
 for	O
 another	O
 15	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
-Note:	O
+Note	O
 Gel	B-Reagent
-may	O
+may	I-Reagent
 be	O
 kept	B-Action
-in	O
+in	I-Action
 fixing	B-Reagent
 solution	I-Reagent
-overnight	B-Time
-without	O
+overnight	I-Reagent
+without	B-Time
 affecting	O
 stain	O
-performance.	O
+performance	O
+.	O
 
 Wash	B-Action
 gel	B-Reagent
 in	O
-10%	B-Concentration
-ethanol	B-Reagent
-solution	I-Reagent
-for	O
-5	B-Time
-minutes.	I-Time
+10	B-Concentration
+ethanol	I-Concentration
+solution	B-Reagent
+for	I-Reagent
+5	O
+minutes	B-Time
+.	I-Time
 
 Replace	B-Action
 solution	B-Reagent
@@ -80,7 +95,8 @@ wash	B-Action
 for	O
 another	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Wash	B-Action
 gel	B-Reagent
@@ -89,7 +105,8 @@ ultrapure	B-Reagent
 water	I-Reagent
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Replace	B-Action
 water	B-Reagent
@@ -98,7 +115,8 @@ wash	B-Action
 for	O
 another	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Prepare	B-Action
 Sensitizer	B-Reagent
@@ -116,13 +134,19 @@ with	O
 parts	I-Generic-Measure
 ultrapure	B-Reagent
 water	I-Reagent
-(e.g.,	O
+e	O
+.	O
+g	O
+.	O
+,	O
 mix	B-Action
-50µL	B-Amount
-Sensitizer	B-Reagent
-with	O
+50	I-Action
+L	B-Amount
+Sensitizer	I-Amount
+with	B-Reagent
 25mL	B-Amount
-water).	B-Reagent
+water	I-Amount
+.	B-Reagent
 
 Incubate	B-Action
 gel	B-Reagent
@@ -133,7 +157,8 @@ Solution	I-Reagent
 for	O
 exactly	O
 1	B-Time
-minute,	I-Time
+minute	I-Time
+,	O
 then	O
 wash	B-Action
 with	O
@@ -145,7 +170,8 @@ water	I-Reagent
 for	O
 1	B-Time
 minute	I-Time
-each.	O
+each	O
+.	O
 
 Prepare	B-Action
 Stain	B-Reagent
@@ -163,13 +189,20 @@ with	O
 parts	I-Generic-Measure
 Silver	B-Reagent
 Stain	I-Reagent
-(e.g.,	O
-0.5mL	B-Amount
-of	O
+e	O
+.	O
+g	O
+.	O
+,	O
+0	O
+.	B-Amount
+5mL	I-Amount
+of	I-Amount
 Enhancer	B-Reagent
-with	O
+with	I-Reagent
 25mL	B-Amount
-Stain).	B-Reagent
+Stain	I-Amount
+.	B-Reagent
 
 Incubate	B-Action
 gel	B-Reagent
@@ -179,32 +212,34 @@ Working	I-Reagent
 Solution	I-Reagent
 for	O
 30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
-Note:	O
+Note	O
 Gel	B-Reagent
-may	O
+may	I-Reagent
 be	O
 incubated	B-Action
-in	O
+in	I-Action
 Stain	B-Reagent
 Working	I-Reagent
 Solution	I-Reagent
-for	O
-as	B-Modifier
-short	I-Modifier
+for	I-Reagent
+as	O
+short	B-Modifier
 as	I-Modifier
-5	B-Time
-minutes	I-Time
-or	O
-as	B-Modifier
-long	I-Modifier
+5	I-Modifier
+minutes	B-Time
+or	I-Time
+as	O
+long	B-Modifier
 as	I-Modifier
-overnight	B-Time
-without	O
+overnight	I-Modifier
+without	B-Time
 affecting	O
 stain	O
-performance.	O
+performance	O
+.	O
 
 Prepare	B-Action
 Developer	B-Reagent
@@ -223,24 +258,32 @@ parts	I-Generic-Measure
 Silver	B-Reagent
 Stain	I-Reagent
 Developer	I-Reagent
-(e.g.,	O
+e	O
+.	O
+g	O
+.	O
+,	O
 mix	B-Action
-0.5mL	B-Amount
-of	O
+0	I-Action
+.	B-Amount
+5mL	I-Amount
+of	I-Amount
 Enhancer	B-Reagent
-with	O
+with	I-Reagent
 25mL	B-Amount
-Developer).	B-Reagent
+Developer	I-Amount
+.	B-Reagent
 
 Prepare	B-Action
-5%	B-Concentration
-acetic	B-Reagent
-acid	I-Reagent
+5	B-Concentration
+acetic	I-Concentration
+acid	B-Reagent
 solution	I-Reagent
-as	O
+as	I-Reagent
 a	O
 Stop	B-Reagent
-Solution.	I-Reagent
+Solution	I-Reagent
+.	I-Reagent
 
 Quickly	B-Modifier
 wash	B-Action
@@ -254,7 +297,8 @@ water	I-Reagent
 for	O
 20	B-Time
 seconds	I-Time
-each.	O
+each	O
+.	O
 
 Immediately	B-Modifier
 add	B-Action
@@ -267,40 +311,47 @@ until	O
 protein	B-Reagent
 bands	I-Reagent
 appear	O
-(2-3	B-Time
-minutes).	I-Time
+2	O
+3	B-Time
+minutes	I-Time
+.	I-Time
 
-Note:	O
+Note	O
 Protein	B-Reagent
 bands	I-Reagent
-will	O
+will	I-Reagent
 begin	O
 to	O
 appear	O
 within	O
-30	B-Time
-seconds	I-Time
-and	O
+30	O
+seconds	B-Time
+and	I-Time
 then	O
 continue	O
 to	O
-develop.	O
+develop	O
+.	O
 
 Between	B-Modifier
 2	B-Time
 and	I-Time
 3	I-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 protein	B-Reagent
 detection	B-Method
-vs.	O
+vs	O
+.	O
 background	O
 is	O
-optimal.	O
+optimal	O
+.	O
 
 After	O
 3	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 lane	O
 background	O
 signal	O
@@ -308,7 +359,8 @@ may	O
 increase	O
 to	O
 undesirable	O
-levels.	O
+levels	O
+.	O
 
 When	O
 the	O
@@ -316,7 +368,8 @@ desired	B-Modifier
 band	B-Generic-Measure
 intensity	I-Generic-Measure
 is	O
-reached,	O
+reached	O
+,	O
 replace	B-Action
 Developer	B-Reagent
 Working	I-Reagent
@@ -325,13 +378,15 @@ with	O
 prepared	O
 Stop	B-Reagent
 Solution	I-Reagent
-(5%	B-Concentration
-acetic	B-Reagent
-acid).	I-Reagent
+5	O
+acetic	B-Concentration
+acid	B-Reagent
+.	I-Reagent
 
 Wash	B-Action
 gel	B-Reagent
-briefly,	B-Modifier
+briefly	B-Modifier
+,	O
 then	O
 replace	B-Action
 Stop	B-Reagent
@@ -340,7 +395,8 @@ and	O
 incubate	B-Action
 for	O
 10	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 
 

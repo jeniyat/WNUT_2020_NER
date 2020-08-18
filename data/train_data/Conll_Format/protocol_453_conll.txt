@@ -2,30 +2,34 @@ High	B-Modifier
 Efficiency	I-Modifier
 Transformation	B-Method
 Protocol	I-Method
-(modified)	B-Modifier
+modified	B-Modifier
 
 Warm	B-Action
 SOC	B-Reagent
 media	I-Reagent
 to	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Thaw	B-Action
 a	O
 tube	B-Location
 of	O
 NEB	B-Reagent
-5-alpha	I-Reagent
+5	I-Reagent
+alpha	I-Reagent
 Competent	I-Reagent
-E.	I-Reagent
+E	I-Reagent
+.	I-Reagent
 coli	I-Reagent
 cells	I-Reagent
-on	O
+on	I-Reagent
 ice	B-Location
-for	O
-10	B-Time
-minutes.	I-Time
+for	I-Location
+10	O
+minutes	B-Time
+.	I-Time
 
 Aliquot	B-Action
 25uL	B-Amount
@@ -35,38 +39,51 @@ cells	B-Reagent
 into	O
 a	O
 new	B-Modifier
-tube.	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
-0.5-2.5	B-Amount
-µl	I-Amount
-containing	O
-0.5	B-Generic-Measure
-pg-50	I-Generic-Measure
+0	B-Amount
+.	I-Amount
+5	I-Amount
+2	I-Amount
+.	I-Amount
+5	I-Amount
+l	I-Amount
+containing	I-Amount
+0	O
+.	B-Generic-Measure
+5	I-Generic-Measure
+pg	I-Generic-Measure
+50	I-Generic-Measure
 ng	I-Generic-Measure
-of	O
+of	I-Generic-Measure
 plasmid	B-Reagent
 DNA	I-Reagent
-to	O
+to	I-Reagent
 each	B-Modifier
-cell	B-Reagent
-mixture.	I-Reagent
+cell	I-Modifier
+mixture	B-Reagent
+.	I-Reagent
 
 Carefully	B-Modifier
 flick	B-Action
 the	O
 tube	B-Location
-4-5	B-Numerical
-times	O
+4	B-Numerical
+5	I-Numerical
+times	I-Numerical
 to	O
 mix	B-Action
-cells	B-Reagent
-and	O
-DNA.	B-Reagent
+cells	I-Action
+and	B-Reagent
+DNA	I-Reagent
+.	I-Reagent
 
 Do	O
 not	O
-vortex.	B-Action
+vortex	B-Action
+.	O
 
 Place	B-Action
 the	O
@@ -75,40 +92,47 @@ on	O
 ice	B-Location
 for	O
 30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Do	O
 not	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Heat	B-Action
 shock	I-Action
 at	O
 exactly	B-Modifier
-42°C	B-Temperature
+42	B-Temperature
+C	I-Temperature
 for	O
 exactly	B-Modifier
 30	B-Time
-seconds.	I-Time
+seconds	I-Time
+.	O
 
 Do	O
 not	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Place	B-Action
 on	O
 ice	B-Location
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Do	O
 not	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Pipette	B-Action
 475	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 room	B-Temperature
 temperature	I-Temperature
@@ -118,26 +142,32 @@ the	O
 mixture	B-Reagent
 in	O
 each	B-Modifier
-tube.	B-Location
+tube	B-Location
+.	O
 
 Place	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 for	O
 60	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 shaking	B-Action
 vigorously	B-Modifier
-(250	B-Speed
-rpm)	I-Speed
-or	O
-rotating.	B-Action
+250	B-Speed
+rpm	I-Speed
+or	I-Speed
+rotating	B-Action
+.	I-Action
 
 Warm	B-Action
 selection	B-Location
 plates	I-Location
 to	O
-37°C.	B-Temperature
+37	B-Temperature
+C	I-Temperature
+.	O
 
 Mix	B-Action
 the	O
@@ -148,31 +178,37 @@ flicking	B-Action
 the	O
 tube	B-Location
 and	O
-inverting.	B-Action
+inverting	B-Action
+.	O
 
 Perform	B-Action
 several	B-Numerical
-10-fold	B-Method
+10	B-Method
+fold	I-Method
 serial	I-Method
 dilutions	I-Method
-in	O
-SOC.	B-Reagent
+in	I-Method
+SOC	B-Reagent
+.	I-Reagent
 
 Spread	B-Action
-50-100	B-Amount
-µl	I-Amount
-of	O
+50	B-Amount
+100	I-Amount
+l	I-Amount
+of	I-Amount
 each	B-Modifier
-dilution	B-Reagent
-onto	O
+dilution	I-Modifier
+onto	B-Reagent
 a	O
 selection	B-Location
-plate.	I-Location
+plate	I-Location
+.	I-Location
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 
 
 

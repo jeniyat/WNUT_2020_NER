@@ -12,40 +12,50 @@ before	O
 adding	B-Action
 the	O
 next	B-Mention
-one.	I-Mention
+one	I-Mention
+.	O
 
 Dispense	B-Action
 into	O
 500	B-Amount
 ml	I-Amount
-acid-washed	B-Modifier
-polycarbonate	B-Location
-bottles.	I-Location
+acid	B-Modifier
+washed	I-Modifier
+polycarbonate	I-Modifier
+bottles	B-Location
+.	I-Location
 
 Autoclave	B-Action
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 pH	B-Action
 NaH2PO4	B-Reagent
 to	O
-7.5	B-Numerical
+7	B-Numerical
+.	I-Numerical
+5	I-Numerical
 using	O
 1M	B-Concentration
-NaOH.	B-Reagent
+NaOH	B-Reagent
+.	O
 
 Filter	B-Action
 sterilize	I-Action
 each	B-Modifier
 solution	B-Reagent
 using	O
-0.2	B-Size
-µm	I-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 syringe	B-Device
 filter	I-Device
 into	O
-new,	B-Modifier
-sterile	I-Modifier
+new	B-Modifier
+,	O
+sterile	B-Modifier
 50ml	B-Amount
 centrifuge	B-Location
 tubes	I-Location
@@ -55,32 +65,41 @@ washed	I-Modifier
 and	O
 sterile	B-Modifier
 polycarbonate	B-Location
-bottles.	I-Location
+bottles	I-Location
+.	O
 
 Store	B-Action
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 pH	B-Action
 HEPES	B-Reagent
 to	O
-7.5	B-Numerical
+7	B-Numerical
+.	I-Numerical
+5	I-Numerical
 using	O
 1M	B-Concentration
-NaOH.	B-Reagent
+NaOH	B-Reagent
+.	O
 
 Filter	B-Action
 sterilize	I-Action
 each	B-Modifier
 solution	B-Reagent
 using	O
-0.2	B-Size
-µm	I-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 syringe	B-Device
 filter	I-Device
 into	O
-new,	B-Modifier
-sterile	I-Modifier
+new	B-Modifier
+,	O
+sterile	B-Modifier
 15	B-Amount
 or	I-Amount
 50	I-Amount
@@ -93,11 +112,14 @@ washed	I-Modifier
 and	O
 sterile	B-Modifier
 polycarbonate	B-Location
-bottles.	I-Location
+bottles	I-Location
+.	O
 
 Store	B-Action
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 Dispense	B-Action
 5	B-Amount
@@ -105,7 +127,9 @@ ml	I-Amount
 of	O
 NaHCO3	B-Reagent
 and	O
-0.5	B-Amount
+0	B-Amount
+.	I-Amount
+5	I-Amount
 ml	I-Amount
 HEPES	B-Reagent
 per	O
@@ -120,17 +144,22 @@ Mix	I-Reagent
 when	O
 preparing	B-Action
 final	B-Reagent
-medium.	I-Reagent
+medium	I-Reagent
+.	O
 
 Weigh	B-Action
 out	I-Action
-0.2175	B-Amount
+0	B-Amount
+.	I-Amount
+2175	I-Amount
 g	I-Amount
-Na2EDTA·2H2O	B-Reagent
+Na2EDTA	B-Reagent
+2H2O	I-Reagent
 using	O
 dust	B-Device
 free	I-Device
-paper.	I-Device
+paper	I-Device
+.	O
 
 Transfer	B-Action
 to	O
@@ -144,7 +173,9 @@ filled	O
 with	O
 40	B-Amount
 ml	I-Amount
-MQ-water.	B-Reagent
+MQ	B-Reagent
+water	I-Reagent
+.	I-Reagent
 
 Dissolve	B-Action
 EDTA	B-Reagent
@@ -152,17 +183,22 @@ by	O
 inverting	B-Action
 flask	B-Location
 several	B-Numerical
-times.	I-Numerical
+times	I-Numerical
+.	O
 
 Weigh	B-Action
 out	I-Action
-0.16	B-Amount
+0	B-Amount
+.	I-Amount
+16	I-Amount
 g	I-Amount
-FeCl3·6H2O	B-Reagent
+FeCl3	B-Reagent
+6H2O	I-Reagent
 using	O
 dust	B-Device
 free	I-Device
-paper.	I-Device
+paper	I-Device
+.	O
 
 Dissolve	B-Action
 iron	B-Reagent
@@ -174,28 +210,35 @@ flask	I-Location
 by	O
 inverting	B-Action
 several	B-Numerical
-times.	I-Numerical
+times	I-Numerical
+.	O
 
 Individually	B-Modifier
 add	B-Action
 and	O
 dissolve	B-Action
 50	B-Amount
-µl	I-Amount
+l	I-Amount
 each	O
 of	O
 the	O
-ZnSO4,	B-Reagent
-CoCl2,	I-Reagent
-MnCl2,	I-Reagent
-Na2MoO4,	I-Reagent
-NaSeO3,	I-Reagent
+ZnSO4	B-Reagent
+,	O
+CoCl2	B-Reagent
+,	O
+MnCl2	B-Reagent
+,	O
+Na2MoO4	B-Reagent
+,	O
+NaSeO3	B-Reagent
+,	O
 and	O
 NiCl2	B-Reagent
 Primary	I-Reagent
 Trace	I-Reagent
 Metal	I-Reagent
-Stocks.	I-Reagent
+Stocks	I-Reagent
+.	O
 
 Adjust	B-Action
 volume	B-Measure-Type
@@ -204,34 +247,42 @@ to	O
 ml	I-Amount
 mark	O
 with	O
-MQ-water.	B-Reagent
+MQ	B-Reagent
+water	I-Reagent
+.	I-Reagent
 
 Filter	B-Action
 through	O
 a	O
-0.2	B-Size
-µm	I-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 syringe	B-Device
 filter	I-Device
 into	O
-sterile,	B-Modifier
-acid	I-Modifier
+sterile	B-Modifier
+,	O
+acid	B-Modifier
 washed	I-Modifier
 container	B-Location
 in	O
 laminar	B-Device
 flow	I-Device
-hood.	I-Device
+hood	I-Device
+.	O
 
 Store	B-Action
 sterile	B-Modifier
 stock	B-Reagent
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 Dispense	B-Action
 5	B-Amount
-µl	I-Amount
+l	I-Amount
 Stock	B-Reagent
 Trace	I-Reagent
 Metal	I-Reagent
@@ -248,7 +299,8 @@ Mix	I-Reagent
 when	O
 preparing	O
 final	B-Reagent
-medium.	I-Reagent
+medium	I-Reagent
+.	O
 
 
 

@@ -1,15 +1,18 @@
-One-step	B-Method
+One	B-Method
+step	I-Method
 growth	I-Method
 curves	I-Method
-for	O
+for	I-Method
 Cellulophaga	B-Reagent
 phages	I-Reagent
 
 Inoculate	B-Action
 a	O
 new	B-Modifier
-culture;	B-Reagent
-ie,	O
+culture	B-Reagent
+;	O
+ie	O
+,	O
 pick	B-Action
 a	O
 colony	B-Reagent
@@ -22,18 +25,21 @@ containing	O
 ml	I-Amount
 of	O
 MLB	B-Reagent
-media.	I-Reagent
+media	I-Reagent
+.	O
 
 Immediately	B-Modifier
 after	I-Modifier
 the	O
-transfer,	B-Action
-take	I-Action
+transfer	B-Action
+,	O
+take	B-Action
 a	O
-‘time	B-Time
-0’	I-Time
+time	B-Time
+0	I-Time
 growth	B-Measure-Type
-reading.	I-Measure-Type
+reading	I-Measure-Type
+.	O
 
 Continue	B-Action
 taking	I-Action
@@ -43,7 +49,8 @@ performed	I-Modifier
 in	O
 step	O
 2	O
-periodically.	B-Modifier
+periodically	B-Modifier
+.	O
 
 Do	O
 a	O
@@ -52,14 +59,16 @@ assay	I-Method
 to	O
 determine	B-Action
 the	O
-PFU/ml	B-Measure-Type
-of	O
+PFU	B-Measure-Type
+ml	I-Measure-Type
+of	I-Measure-Type
 the	O
 lysate	B-Reagent
-you	O
+you	I-Reagent
 plan	B-Modifier
 to	I-Modifier
-use.	I-Modifier
+use	I-Modifier
+.	I-Modifier
 
 Calculate	B-Action
 the	I-Action
@@ -67,7 +76,8 @@ volume	I-Action
 needed	O
 for	O
 107	B-Numerical
-phages.	B-Reagent
+phages	B-Reagent
+.	O
 
 Determine	B-Action
 the	I-Action
@@ -83,7 +93,8 @@ want	I-Modifier
 to	I-Modifier
 start	I-Modifier
 the	I-Modifier
-infection.	I-Modifier
+infection	I-Modifier
+.	O
 
 Calculate	B-Action
 the	I-Action
@@ -94,16 +105,20 @@ culture	I-Reagent
 needed	O
 for	O
 108	B-Numerical
-cells.	B-Reagent
+cells	B-Reagent
+.	O
 
 Pipet	B-Action
 this	B-Mention
 amount	I-Mention
 into	O
 a	O
-1.5	B-Amount
+1	B-Amount
+.	I-Amount
+5	I-Amount
 ml	I-Amount
-tube.	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 107	B-Numerical
@@ -127,23 +142,27 @@ adsorb	B-Action
 to	O
 the	O
 host	B-Reagent
-cells.	I-Reagent
+cells	I-Reagent
+.	O
 
 After	B-Modifier
 15	I-Modifier
-minutes,	I-Modifier
+minutes	I-Modifier
+,	O
 dilute	B-Action
 the	O
 infection	B-Reagent
-1:1000	B-Concentration
-in	O
+1	B-Concentration
+1000	I-Concentration
+in	I-Concentration
 MLB	B-Reagent
 media	I-Reagent
-in	O
+in	I-Reagent
 a	O
 250	B-Amount
 ml	I-Amount
-flask.	B-Location
+flask	I-Amount
+.	B-Location
 
 Take	B-Action
 a	I-Action
@@ -151,16 +170,16 @@ sample	I-Action
 immediately	B-Modifier
 after	I-Modifier
 dilution	I-Modifier
-–	O
 this	B-Mention
 is	O
-‘time	B-Time
-0’.	I-Time
+time	B-Time
+0	I-Time
+.	O
 
 Steps	O
 for	O
 centrifuged	B-Modifier
-sample:	B-Reagent
+sample	B-Reagent
 
 Steps	O
 for	O
@@ -168,7 +187,7 @@ samples	B-Reagent
 that	O
 are	O
 not	B-Modifier
-centrifuged:	I-Modifier
+centrifuged	I-Modifier
 
 Continue	B-Action
 sampling	I-Action
@@ -177,18 +196,22 @@ this	I-Modifier
 way	I-Modifier
 for	O
 8	B-Time
-hours.	I-Time
+hours	I-Time
+.	O
 
 Store	B-Action
 the	O
 filtered	B-Modifier
 samples	B-Reagent
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 The	B-Time
 next	I-Time
-day,	I-Time
+day	I-Time
+,	O
 count	B-Action
 the	O
 plaques	B-Reagent
@@ -201,7 +224,8 @@ a	O
 countable	B-Modifier
 number	B-Numerical
 of	O
-them.	B-Mention
+them	B-Mention
+.	O
 
 Decide	B-Action
 which	O
@@ -222,12 +246,15 @@ you	O
 do	B-Action
 this	O
 same	B-Modifier
-phage-host	B-Reagent
-pair.	I-Reagent
+phage	B-Reagent
+host	I-Reagent
+pair	I-Reagent
+.	I-Reagent
 
 The	B-Time
 next	I-Time
-day,	I-Time
+day	I-Time
+,	O
 count	B-Action
 any	O
 new	B-Modifier
@@ -241,41 +268,46 @@ these	B-Mention
 to	O
 your	O
 original	B-Measure-Type
-count.	I-Measure-Type
+count	I-Measure-Type
+.	O
 
 Count	B-Action
 again	B-Modifier
 on	I-Modifier
 the	I-Modifier
 third	I-Modifier
-day.	I-Modifier
+day	I-Modifier
+.	O
 
 Calculate	B-Action
-PFU/ml	B-Measure-Type
-at	O
+PFU	B-Measure-Type
+ml	I-Measure-Type
+at	I-Measure-Type
 each	B-Modifier
-time	B-Time
-point	I-Time
-for	O
+time	I-Modifier
+point	B-Time
+for	I-Time
 both	B-Modifier
-the	O
-centrifuged	B-Modifier
-(free	B-Measure-Type
-phage	I-Measure-Type
-only)	I-Measure-Type
-and	O
-not	B-Modifier
+the	I-Modifier
 centrifuged	I-Modifier
-(total	B-Measure-Type
-phage)	I-Measure-Type
-samples	B-Reagent
-Graph	B-Action
-the	O
-results.	O
+free	I-Modifier
+phage	B-Measure-Type
+only	I-Measure-Type
+and	I-Measure-Type
+not	O
+centrifuged	B-Modifier
+total	I-Modifier
+phage	B-Measure-Type
+samples	I-Measure-Type
+Graph	B-Reagent
+the	B-Action
+results	I-Action
+.	O
 
 Calculate	B-Action
 burst	B-Measure-Type
-size.	I-Measure-Type
+size	I-Measure-Type
+.	O
 
 
 

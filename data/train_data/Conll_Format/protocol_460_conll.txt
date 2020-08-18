@@ -3,27 +3,33 @@ T	I-Reagent
 Cell	I-Reagent
 Activation	B-Method
 with	O
-anti-CD3ε	B-Modifier
-Antibodies	B-Reagent
-(clone	O
-145-2C11)	O
+anti	B-Modifier
+CD3	I-Modifier
+Antibodies	I-Modifier
+clone	B-Reagent
+145	O
+2C11	O
 
 Prepare	B-Action
 a	O
 5	B-Concentration
-µg/ml	I-Concentration
-solution	B-Reagent
-of	I-Reagent
-anti-CD3ε	I-Reagent
-(clone	O
-145-2C11)	O
+g	I-Concentration
+ml	I-Concentration
+solution	I-Concentration
+of	B-Reagent
+anti	I-Reagent
+CD3	I-Reagent
+clone	I-Reagent
+145	O
+2C11	O
 in	O
-sterile	B-Modifier
-PBS.	B-Reagent
+sterile	O
+PBS	B-Modifier
+.	I-Modifier
 
 Dispense	B-Action
 50	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 the	O
 antibody	B-Reagent
@@ -33,34 +39,42 @@ each	B-Modifier
 microwell	B-Location
 of	O
 the	O
-96-well	B-Location
+96	B-Location
+well	I-Location
 assay	I-Location
-plate.	I-Location
+plate	I-Location
+.	I-Location
 
 For	O
 the	O
 unstimulated	B-Modifier
 control	B-Location
-wells,	I-Location
+wells	I-Location
+,	O
 add	B-Action
 50	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 sterile	B-Modifier
-PBS.	B-Reagent
+PBS	B-Reagent
+.	O
 
 Seal	B-Action
-plate.	B-Location
+plate	B-Location
+.	O
 
 Incubate	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 for	O
 2	B-Time
 hours	I-Time
 or	O
-4°C	B-Temperature
-overnight.	B-Time
+4	B-Temperature
+C	I-Temperature
+overnight	B-Time
+.	O
 
 Aseptically	B-Modifier
 decant	B-Action
@@ -68,7 +82,8 @@ antibody	B-Reagent
 solution	I-Reagent
 from	O
 microwell	B-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Wash	B-Action
 plate	B-Location
@@ -78,8 +93,10 @@ times	O
 with	O
 sterile	B-Modifier
 PBS	B-Reagent
-(wash	B-Action
-1/3).	O
+wash	B-Action
+1	I-Action
+3	O
+.	O
 
 Prepare	B-Action
 single	B-Numerical
@@ -88,7 +105,8 @@ suspension	I-Reagent
 of	I-Reagent
 cells	I-Reagent
 of	I-Reagent
-interest.	I-Reagent
+interest	I-Reagent
+.	O
 
 Resuspend	B-Action
 cells	B-Reagent
@@ -98,35 +116,42 @@ cell	B-Reagent
 culture	I-Reagent
 medium	I-Reagent
 to	O
-1-2	B-Generic-Measure
+1	B-Generic-Measure
+2	I-Generic-Measure
 x	I-Generic-Measure
-106/ml.	I-Generic-Measure
+106	I-Generic-Measure
+ml	I-Generic-Measure
+.	I-Generic-Measure
 
 Aliquot	B-Action
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 cell	B-Reagent
 suspension	I-Reagent
 into	O
 plate	B-Location
-microwells.	I-Location
+microwells	I-Location
+.	O
 
 Cover	B-Action
 with	O
-lid.	B-Seal
+lid	B-Seal
+.	O
 
 Incubate	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 in	O
-5%	B-Concentration
-CO2	B-Reagent
-and	O
-100%	B-Generic-Measure
+5	B-Concentration
+CO2	I-Concentration
+and	B-Reagent
+100	B-Generic-Measure
 humidity	I-Generic-Measure
-for	O
-3	B-Time
-days.	I-Time
+for	I-Generic-Measure
+3	O
+days	B-Time
+.	I-Time
 
 Wash	B-Action
 plate	B-Location
@@ -136,8 +161,10 @@ times	O
 with	O
 sterile	B-Modifier
 PBS	B-Reagent
-(wash	B-Action
-2/3).	O
+wash	B-Action
+2	I-Action
+3	O
+.	O
 
 Wash	B-Action
 plate	B-Location
@@ -147,11 +174,14 @@ times	O
 with	O
 sterile	B-Modifier
 PBS	B-Reagent
-(wash	I-Reagent
-3/3).	O
+wash	I-Reagent
+3	I-Reagent
+3	O
+.	O
 
 Discard	B-Action
-liquid.	B-Reagent
+liquid	B-Reagent
+.	O
 
 
 

@@ -7,11 +7,13 @@ Egg	I-Reagent
 Chambers	I-Reagent
 
 The	O
-fix:	B-Reagent
-4%	B-Concentration
-Paraformaldehyde,	B-Reagent
-1X	B-Concentration
-PBS.	B-Reagent
+fix	B-Reagent
+4	O
+Paraformaldehyde	B-Concentration
+,	B-Reagent
+1X	I-Reagent
+PBS	B-Concentration
+.	B-Reagent
 
 Place	B-Action
 10	B-Amount
@@ -24,12 +26,15 @@ the	O
 microwave	B-Device
 just	O
 to	O
-boil.	B-Action
+boil	B-Action
+.	O
 
 Add	B-Action
 the	O
-.4	B-Amount
-paraformaldehyde.	B-Reagent
+.	B-Amount
+4	I-Amount
+paraformaldehyde	B-Reagent
+.	O
 
 Add	B-Action
 4	B-Generic-Measure
@@ -37,14 +42,14 @@ drops	I-Generic-Measure
 of	O
 2M	B-Concentration
 NaCl	B-Reagent
-(	O
 make	O
 sure	O
 that	O
 Paraphormaldehyde	B-Reagent
-is	O
+is	I-Reagent
 completely	O
-dissolved).	B-Modifier
+dissolved	B-Modifier
+.	I-Modifier
 
 Add	B-Action
 one	B-Generic-Measure
@@ -55,35 +60,46 @@ to	O
 adjust	B-Action
 the	O
 PH	B-pH
-(7.5-8).	I-pH
+7	I-pH
+.	I-pH
+5	I-pH
+8	I-pH
+.	I-pH
 
 The	O
 block	B-Reagent
-:10	B-Amount
+10	B-Amount
 ml	I-Amount
-of	O
-1X	B-Concentration
-PBS	B-Reagent
-10µl/ml	B-Amount
-Normal	B-Reagent
-Donkey	I-Reagent
+of	I-Amount
+1X	O
+PBS	B-Concentration
+10	B-Reagent
+l	B-Amount
+ml	I-Amount
+Normal	I-Amount
+Donkey	B-Reagent
 Serum	I-Reagent
-10µl/ml	B-Amount
-10X	B-Concentration
-Triton.	B-Reagent
+10	I-Reagent
+l	B-Amount
+ml	I-Amount
+10X	I-Amount
+Triton	B-Concentration
+.	B-Reagent
 
 Set	B-Action
 up	I-Action
 the	O
 dissection	B-Device
-microscopy.	I-Device
+microscopy	I-Device
+.	O
 
 Put	B-Action
 the	O
 depression	B-Location
 slide	I-Location
 on	O
-it.	B-Mention
+it	B-Mention
+.	O
 
 Put	B-Action
 three	B-Generic-Measure
@@ -103,7 +119,8 @@ keep	O
 the	O
 egg	B-Reagent
 chambers	I-Reagent
-hydrated.	B-Action
+hydrated	B-Action
+.	O
 
 Anesthetize	B-Action
 the	O
@@ -111,7 +128,8 @@ flies	B-Reagent
 by	O
 using	O
 CO2	B-Location
-bed.	I-Location
+bed	I-Location
+.	O
 
 Hold	B-Action
 the	O
@@ -123,13 +141,15 @@ with	O
 a	O
 size	B-Size
 5	I-Size
-tweezer.	B-Device
+tweezer	B-Device
+.	O
 
 Place	B-Action
 it	B-Mention
 on	O
 the	O
-slide.	B-Location
+slide	B-Location
+.	O
 
 With	O
 your	O
@@ -157,14 +177,14 @@ and	O
 pull	B-Action
 it	B-Mention
 out	O
-(	O
 be	O
 sure	O
 to	O
 not	O
 damage	B-Action
-the	O
-ovaries).	B-Reagent
+the	I-Action
+ovaries	B-Reagent
+.	I-Reagent
 
 Squeeze	B-Action
 the	O
@@ -177,7 +197,8 @@ of	I-Reagent
 the	I-Reagent
 ovaries	I-Reagent
 comes	O
-out.	O
+out	O
+.	O
 
 Transfer	B-Action
 the	O
@@ -191,7 +212,8 @@ the	O
 fix	B-Location
 using	O
 transfer	B-Device
-piptte.	I-Device
+piptte	I-Device
+.	O
 
 Wash	B-Action
 the	O
@@ -202,7 +224,8 @@ with	O
 PBS	B-Reagent
 using	O
 transfer	B-Device
-piptte.	I-Device
+piptte	I-Device
+.	O
 
 Transfer	B-Action
 the	O
@@ -213,12 +236,14 @@ block	B-Reagent
 using	O
 the	O
 transfer	B-Device
-piptte.	I-Device
+piptte	I-Device
+.	O
 
 After	O
 blocking	B-Action
 the	O
-ovaries,	B-Reagent
+ovaries	B-Reagent
+,	O
 transfer	B-Action
 them	O
 into	O
@@ -237,21 +262,24 @@ antibody	I-Reagent
 over	B-Time
 night	I-Time
 at	O
-4C.	B-Temperature
+4C	B-Temperature
+.	O
 
 Next	O
-morning:	O
+morning	O
 
 Remove	B-Action
 the	O
-block.	B-Reagent
+block	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
 ovaries	B-Reagent
 3X	B-Numerical
 1X	B-Concentration
-PBS.	B-Reagent
+PBS	B-Reagent
+.	O
 
 Add	B-Action
 block	B-Reagent
@@ -260,29 +288,35 @@ at	O
 RT	B-Temperature
 for	O
 20	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 After	O
 30	B-Time
-mins.	I-Time
+mins	I-Time
+.	O
 
 Remove	B-Action
 the	O
-block.	B-Reagent
+block	B-Reagent
+.	O
 
 Wash	B-Action
 one	B-Numerical
 time	O
 with	O
 1X	B-Concentration
-PBS.	B-Reagent
+PBS	B-Reagent
+.	O
 
 Add	B-Action
-block.	B-Reagent
+block	B-Reagent
+.	O
 
 Add	B-Action
 secondry	B-Reagent
-antibodiy.	I-Reagent
+antibodiy	I-Reagent
+.	O
 
 Be	O
 sure	O
@@ -301,31 +335,37 @@ between	O
 antibody	I-Reagent
 with	O
 the	O
-light.	B-Reagent
+light	B-Reagent
+.	O
 
 Rock	B-Action
 at	O
 RT	B-Temperature
 for	O
-2-4	B-Time
-hours.	I-Time
+2	B-Time
+4	I-Time
+hours	I-Time
+.	I-Time
 
 After	O
 secondray	B-Action
-staining:	I-Action
+staining	I-Action
 
 Remove	B-Action
 the	O
-block.	B-Reagent
+block	B-Reagent
+.	O
 
 Wash	B-Action
 3X	B-Numerical
 with	O
 1X	B-Concentration
-PBS.	B-Reagent
+PBS	B-Reagent
+.	O
 
 Add	B-Action
-block.	B-Reagent
+block	B-Reagent
+.	O
 
 Rock	B-Action
 for	O
@@ -336,28 +376,32 @@ RT	B-Temperature
 After	O
 washing	B-Action
 the	O
-non-specific	B-Modifier
-secondary	B-Reagent
-antibody:	I-Reagent
+non	B-Modifier
+specific	I-Modifier
+secondary	I-Modifier
+antibody	B-Reagent
 
 Wash	B-Action
 one	B-Numerical
 time	O
 with	O
 1X	B-Concentration
-PBS.	B-Reagent
+PBS	B-Reagent
+.	O
 
 By	O
 using	O
 glass	B-Location
-piptte,	I-Location
+piptte	I-Location
+,	O
 transfer	B-Action
 the	O
 ovaries	B-Reagent
 into	O
 a	O
 regular	B-Location
-slide.	I-Location
+slide	I-Location
+.	O
 
 Try	O
 to	O
@@ -375,7 +419,8 @@ keep	O
 the	O
 egg	B-Reagent
 chamber	I-Reagent
-moisturized.	B-Action
+moisturized	B-Action
+.	O
 
 Put	B-Action
 three	B-Generic-Measure
@@ -392,7 +437,8 @@ on	O
 top	B-Location
 of	O
 the	O
-ovaries.	B-Reagent
+ovaries	B-Reagent
+.	O
 
 Heal	B-Action
 the	O
@@ -404,7 +450,8 @@ slip	I-Seal
 with	O
 a	O
 nail	B-Reagent
-polish.	I-Reagent
+polish	I-Reagent
+.	O
 
 The	O
 ovaries	B-Reagent
@@ -412,7 +459,8 @@ are	O
 ready	O
 to	O
 be	O
-visualized.	B-Action
+visualized	B-Action
+.	O
 
 
 

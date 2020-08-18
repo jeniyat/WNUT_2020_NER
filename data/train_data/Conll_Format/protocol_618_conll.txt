@@ -1,15 +1,19 @@
-One-step	B-Method
+One	B-Method
+step	I-Method
 growth	I-Method
 curves	I-Method
-for	O
+for	I-Method
 Cellulophaga	B-Reagent
-phages.	I-Reagent
+phages	I-Reagent
+.	I-Reagent
 
 Inoculate	B-Action
 a	O
 new	B-Reagent
-culture;	I-Reagent
-ie,	O
+culture	I-Reagent
+;	O
+ie	O
+,	O
 pick	B-Action
 a	O
 colony	B-Reagent
@@ -22,18 +26,21 @@ containing	O
 ml	I-Amount
 of	O
 MLB	B-Reagent
-media.	I-Reagent
+media	I-Reagent
+.	O
 
 Immediately	B-Modifier
 after	I-Modifier
 the	I-Modifier
-transfer,	I-Modifier
+transfer	I-Modifier
+,	O
 take	B-Action
 a	O
-‘time	O
-0’	O
+time	O
+0	O
 growth	B-Method
-reading.	I-Method
+reading	I-Method
+.	O
 
 Continue	B-Action
 taking	B-Method
@@ -43,7 +50,8 @@ performed	O
 in	O
 step	O
 2	O
-periodically.	B-Modifier
+periodically	B-Modifier
+.	O
 
 Do	O
 a	O
@@ -52,14 +60,16 @@ assay	I-Method
 to	O
 determine	B-Action
 the	O
-PFU/ml	B-Measure-Type
-of	O
+PFU	B-Measure-Type
+ml	I-Measure-Type
+of	I-Measure-Type
 the	O
 lysate	B-Reagent
-you	O
+you	I-Reagent
 plan	B-Modifier
 to	I-Modifier
-use.	I-Modifier
+use	I-Modifier
+.	I-Modifier
 
 Calculate	B-Action
 the	O
@@ -67,7 +77,8 @@ volume	B-Measure-Type
 needed	B-Modifier
 for	O
 107	B-Numerical
-phages.	B-Reagent
+phages	B-Reagent
+.	O
 
 Determine	B-Action
 the	O
@@ -83,7 +94,8 @@ want	B-Modifier
 to	I-Modifier
 start	B-Action
 the	O
-infection.	B-Method
+infection	B-Method
+.	O
 
 Calculate	B-Action
 the	O
@@ -94,16 +106,20 @@ culture	I-Reagent
 needed	O
 for	O
 108	B-Numerical
-cells.	B-Reagent
+cells	B-Reagent
+.	O
 
 Pipet	B-Action
 this	O
 amount	B-Reagent
 into	O
 a	O
-1.5	B-Amount
+1	B-Amount
+.	I-Amount
+5	I-Amount
 ml	I-Amount
-tube.	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 107	B-Numerical
@@ -127,23 +143,27 @@ adsorb	B-Action
 to	O
 the	O
 host	B-Reagent
-cells.	I-Reagent
+cells	I-Reagent
+.	O
 
 After	B-Modifier
 15	B-Time
-minutes,	I-Time
+minutes	I-Time
+,	O
 dilute	B-Action
 the	O
 infection	B-Reagent
-1:1000	B-Generic-Measure
-in	O
+1	B-Generic-Measure
+1000	I-Generic-Measure
+in	I-Generic-Measure
 MLB	B-Reagent
 media	I-Reagent
-in	O
+in	I-Reagent
 a	O
 250	B-Amount
 ml	I-Amount
-flask.	B-Location
+flask	I-Amount
+.	B-Location
 
 Take	B-Action
 a	O
@@ -151,15 +171,14 @@ sample	B-Reagent
 immediately	B-Modifier
 after	I-Modifier
 dilution	B-Method
-–	O
 this	B-Mention
 is	O
-‘time	O
-0’	O
+time	O
+0	O
 Steps	O
 for	O
 centrifuged	B-Modifier
-sample:	B-Reagent
+sample	B-Reagent
 
 Steps	O
 for	O
@@ -167,7 +186,7 @@ samples	B-Reagent
 that	O
 are	O
 not	B-Modifier
-centrifuged:	I-Modifier
+centrifuged	I-Modifier
 
 Continue	B-Action
 sampling	B-Reagent
@@ -176,18 +195,22 @@ this	B-Method
 way	I-Method
 for	O
 8	B-Time
-hours.	I-Time
+hours	I-Time
+.	O
 
 Store	B-Action
 the	O
 filtered	B-Reagent
 samples	I-Reagent
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 The	O
 next	B-Time
-day,	I-Time
+day	I-Time
+,	O
 count	B-Action
 the	O
 plaques	B-Reagent
@@ -200,7 +223,8 @@ a	O
 countable	B-Modifier
 number	B-Numerical
 of	O
-them.	B-Mention
+them	B-Mention
+.	O
 
 Decide	B-Action
 which	O
@@ -221,12 +245,15 @@ you	O
 do	B-Action
 this	O
 same	B-Modifier
-phage-host	B-Reagent
-pair.	I-Reagent
+phage	B-Reagent
+host	I-Reagent
+pair	I-Reagent
+.	I-Reagent
 
 The	O
 next	B-Time
-day,	I-Time
+day	I-Time
+,	O
 count	B-Action
 any	B-Modifier
 new	I-Modifier
@@ -240,41 +267,46 @@ these	B-Mention
 to	O
 your	O
 original	B-Modifier
-count.	B-Numerical
+count	B-Numerical
+.	O
 
 Count	B-Action
 again	B-Modifier
 on	O
 the	O
 third	B-Time
-day.	I-Time
+day	I-Time
+.	O
 
 Calculate	B-Action
-PFU/ml	B-Measure-Type
-at	O
+PFU	B-Measure-Type
+ml	I-Measure-Type
+at	I-Measure-Type
 each	B-Modifier
-time	B-Time
-point	I-Time
-for	O
+time	I-Modifier
+point	B-Time
+for	I-Time
 both	O
 the	O
 centrifuged	B-Reagent
-(free	B-Modifier
-phage	B-Reagent
-only)	B-Modifier
-and	O
-not	B-Reagent
-centrifuged	I-Reagent
-(total	B-Modifier
-phage)	I-Modifier
-samples.	B-Reagent
+free	I-Reagent
+phage	B-Modifier
+only	B-Reagent
+and	B-Modifier
+not	O
+centrifuged	B-Reagent
+total	I-Reagent
+phage	B-Modifier
+samples	I-Modifier
+.	B-Reagent
 
 Graph	B-Action
 the	O
 results	O
 Calculate	B-Action
 burst	B-Measure-Type
-size.	I-Measure-Type
+size	I-Measure-Type
+.	O
 
 
 

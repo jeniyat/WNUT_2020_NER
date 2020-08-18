@@ -5,11 +5,14 @@ Protocol	I-Method
 Create	B-Action
 mixture	B-Reagent
 of	O
-CsCl,	B-Reagent
-Proteinase	I-Reagent
-K,	I-Reagent
+CsCl	B-Reagent
+,	O
+Proteinase	B-Reagent
+K	I-Reagent
+,	O
 and	O
-SDS.	B-Reagent
+SDS	B-Reagent
+.	O
 
 Mix	B-Action
 and	O
@@ -17,7 +20,9 @@ incubate	B-Action
 1	B-Time
 hour	I-Time
 at	O
-56°C.	B-Temperature
+56	B-Temperature
+C	I-Temperature
+.	O
 
 Cool	B-Action
 to	O
@@ -32,18 +37,22 @@ phenol	B-Reagent
 and	O
 invert	B-Action
 several	B-Numerical
-times.	I-Numerical
+times	I-Numerical
+.	O
 
 Spin	B-Action
 3000g	B-Speed
-(6000	I-Speed
+6000	I-Speed
 rpm	I-Speed
-on	O
-microfuge),	B-Device
-5	B-Time
-minutes,	I-Time
-room	B-Temperature
-temperature.	I-Temperature
+on	I-Speed
+microfuge	B-Device
+,	I-Device
+5	O
+minutes	B-Time
+,	I-Time
+room	I-Time
+temperature	B-Temperature
+.	I-Temperature
 
 Carefully	B-Modifier
 transfer	B-Action
@@ -51,40 +60,52 @@ the	O
 supernatant	B-Reagent
 with	O
 a	O
-wide-bore	B-Device
+wide	B-Device
+bore	I-Device
 pipette	I-Device
-to	O
+to	I-Device
 a	O
 fresh	B-Modifier
-tube.	B-Location
+tube	I-Modifier
+.	B-Location
 
 Add	B-Action
 an	O
 equal	B-Amount
 volume	I-Amount
 of	O
-phenol:choroform	B-Reagent
-(1:1),	B-Concentration
-invert.	B-Action
+phenol	B-Reagent
+choroform	I-Reagent
+1	I-Reagent
+1	O
+,	B-Concentration
+invert	I-Concentration
+.	B-Action
 
 Spin	B-Action
-again,	B-Modifier
+again	B-Modifier
+,	O
 3000g	B-Speed
-(6000	I-Speed
+6000	I-Speed
 rpm	I-Speed
-on	O
-microfuge),	B-Device
-5	B-Time
-minutes,	I-Time
-room	B-Temperature
-temperature.	I-Temperature
+on	I-Speed
+microfuge	B-Device
+,	I-Device
+5	O
+minutes	B-Time
+,	I-Time
+room	I-Time
+temperature	B-Temperature
+.	I-Temperature
 
 Transfer	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 as	B-Modifier
 done	I-Modifier
-before.	I-Modifier
+before	I-Modifier
+.	O
 
 Add	B-Action
 an	O
@@ -93,26 +114,33 @@ volume	I-Amount
 of	O
 chloroform	B-Reagent
 and	O
-invert.	B-Action
+invert	B-Action
+.	O
 
 Spin	B-Action
-again,	B-Modifier
+again	B-Modifier
+,	O
 3000g	B-Speed
-(6000	I-Speed
+6000	I-Speed
 rpm	I-Speed
-on	O
-microfuge),	B-Device
-5	B-Time
-minutes,	I-Time
-room	B-Temperature
-temperature.	I-Temperature
+on	I-Speed
+microfuge	B-Device
+,	I-Device
+5	O
+minutes	B-Time
+,	I-Time
+room	I-Time
+temperature	B-Temperature
+.	I-Temperature
 
 Transfer	B-Action
 the	O
-supernatant,	B-Reagent
+supernatant	B-Reagent
+,	O
 as	B-Modifier
 done	I-Modifier
-before.	I-Modifier
+before	I-Modifier
+.	O
 
 
 

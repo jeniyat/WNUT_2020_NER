@@ -1,20 +1,29 @@
 Antibody	B-Reagent
 Purification	B-Method
-(small	O
-scale)	O
+small	O
+scale	O
 
 Centrifuge	B-Action
-anti-sera	B-Reagent
-@	O
-4ºC,	B-Temperature
-14,000g,	B-Speed
-10min.	B-Temperature
+anti	B-Reagent
+sera	I-Reagent
+4	I-Reagent
+C	O
+,	B-Temperature
+14	I-Temperature
+,	B-Speed
+000g	I-Speed
+,	I-Speed
+10min	I-Speed
+.	B-Temperature
 
-(Optional)	O
+Optional	O
 Filter	B-Action
-through	O
-0.2um	B-Size
-filter.	B-Device
+through	I-Action
+0	O
+.	O
+2um	B-Size
+filter	I-Size
+.	B-Device
 
 Apply	B-Action
 protein	B-Reagent
@@ -25,10 +34,12 @@ G	I-Reagent
 beads	O
 gently	B-Modifier
 to	O
-Bio-Rad	B-Location
+Bio	B-Location
+Rad	I-Location
 empty	I-Location
 gravity	I-Location
-column.	I-Location
+column	I-Location
+.	I-Location
 
 Set	B-Action
 up	I-Action
@@ -37,7 +48,8 @@ column	B-Location
 on	O
 a	O
 vacuum	B-Device
-manifold.	I-Device
+manifold	I-Device
+.	O
 
 Equilibrate	B-Action
 column	B-Location
@@ -48,26 +60,31 @@ of	O
 ice	B-Modifier
 cold	I-Modifier
 Binding	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Dilute	B-Action
-anti-sera	B-Reagent
-with	O
-2	B-Amount
-volumes	I-Amount
-of	O
+anti	B-Reagent
+sera	I-Reagent
+with	I-Reagent
+2	O
+volumes	B-Amount
+of	I-Amount
 Binding	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	I-Reagent
 
 Let	O
 diluted	B-Modifier
-anti-sera	B-Reagent
-go	B-Action
-through	I-Action
-the	O
+anti	B-Reagent
+sera	I-Reagent
+go	I-Reagent
+through	B-Action
+the	I-Action
 column	B-Location
-by	O
-gravity.	O
+by	I-Location
+gravity	O
+.	O
 
 Collect	B-Action
 flow	B-Reagent
@@ -76,7 +93,8 @@ and	O
 repeat	B-Action
 step	B-Method
 6	I-Method
-once.	B-Numerical
+once	B-Numerical
+.	O
 
 Wash	B-Action
 column	B-Location
@@ -85,9 +103,11 @@ with	O
 bed	I-Amount
 volumes	I-Amount
 of	O
-ice-cold	B-Modifier
-Binding	B-Reagent
-Buffer.	I-Reagent
+ice	B-Modifier
+cold	I-Modifier
+Binding	I-Modifier
+Buffer	B-Reagent
+.	I-Reagent
 
 Elute	B-Action
 antibody	B-Reagent
@@ -99,7 +119,8 @@ of	O
 room	B-Temperature
 temperature	I-Temperature
 Elution	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	I-Reagent
 
 Fill	B-Action
 up	I-Action
@@ -108,10 +129,14 @@ collecting	B-Location
 tube	I-Location
 with	O
 200	B-Amount
-μl	I-Amount
+l	I-Amount
 1M	B-Concentration
-Tris-HCl	B-Reagent
-(PH9.0).	B-pH
+Tris	B-Reagent
+HCl	I-Reagent
+PH9	I-Reagent
+.	B-pH
+0	I-pH
+.	I-pH
 
 Collect	B-Action
 1ml	B-Amount
@@ -121,23 +146,27 @@ through	I-Reagent
 in	O
 each	B-Modifier
 collecting	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Save	B-Action
 for	O
 antibody	B-Method
 activity	I-Method
-test.	I-Method
+test	I-Method
+.	O
 
-Re-equilibrate	B-Action
-column	B-Location
-with	O
-10	B-Amount
-bed	I-Amount
+Re	B-Action
+equilibrate	I-Action
+column	I-Action
+with	B-Location
+10	O
+bed	B-Amount
 volumes	I-Amount
-of	O
+of	I-Amount
 Binding	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	I-Reagent
 
 Store	B-Action
 Column	B-Location
@@ -145,7 +174,8 @@ at	O
 refrigerator	B-Device
 for	O
 later	O
-use.	O
+use	O
+.	O
 
 
 

@@ -8,7 +8,8 @@ bacteria	B-Reagent
 Prepare	B-Action
 M9	B-Reagent
 media	I-Reagent
-stocks.	I-Reagent
+stocks	I-Reagent
+.	O
 
 The	O
 recipe	B-Action
@@ -18,17 +19,18 @@ of	O
 minimal	B-Reagent
 growth	I-Reagent
 medium	I-Reagent
-(M9)	O
+M9	O
 is	O
 as	O
-follows:	O
+follows	O
 
 After	O
 cooling	B-Action
 of	O
 the	O
 autoclaved	B-Modifier
-mix,	B-Reagent
+mix	B-Reagent
+,	O
 add	B-Action
 the	O
 rest	O
@@ -36,10 +38,13 @@ of	O
 the	O
 components	B-Reagent
 by	O
-0.2	B-Size
-µm	I-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 filter	B-Device
-sterilization.	B-Method
+sterilization	B-Method
+.	O
 
 In	O
 order	O
@@ -48,21 +53,25 @@ prepare	B-Action
 solid	B-Reagent
 media	I-Reagent
 for	O
-plating,	O
+plating	O
+,	O
 add	B-Action
-1.5%	B-Concentration
-agar	B-Reagent
-(15	B-Amount
-gr	I-Amount
-agar	B-Reagent
-per	O
-1	B-Amount
-L	I-Amount
-of	O
-media)	B-Reagent
-prior	O
+1	B-Concentration
+.	I-Concentration
+5	I-Concentration
+agar	I-Concentration
+15	B-Reagent
+gr	B-Amount
+agar	I-Amount
+per	B-Reagent
+1	O
+L	O
+of	B-Amount
+media	B-Reagent
+prior	I-Reagent
 to	O
-autoclaving.	B-Action
+autoclaving	B-Action
+.	I-Action
 
 Allow	O
 cooling	B-Action
@@ -73,10 +82,14 @@ prior	O
 to	O
 add	B-Action
 the	O
-0.2µm	B-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 filter	B-Reagent
 sterilization	I-Reagent
-components.	I-Reagent
+components	I-Reagent
+.	O
 
 Pour	B-Action
 the	O
@@ -88,7 +101,8 @@ and	O
 allow	O
 solidification	B-Method
 of	O
-agar.	B-Reagent
+agar	B-Reagent
+.	O
 
 To	O
 prepare	B-Action
@@ -100,22 +114,28 @@ the	O
 M9	I-Reagent
 salts	I-Reagent
 stock	I-Reagent
-(autoclaved).	B-Modifier
+autoclaved	B-Modifier
+.	I-Modifier
 
 For	O
 isotopic	B-Action
-labeling,	I-Action
+labeling	I-Action
+,	O
 use	O
-D-glucose-1-13C	B-Reagent
-(99%	B-Concentration
-atom	B-Reagent
-13C)	I-Reagent
-and	O
-ammonium-15N	B-Reagent
+D	B-Reagent
+glucose	I-Reagent
+1	I-Reagent
+13C	I-Reagent
+99	I-Reagent
+atom	I-Reagent
+13C	B-Concentration
+and	B-Reagent
+ammonium	I-Reagent
+15N	I-Reagent
 chloride	I-Reagent
-(98%	B-Concentration
-atom	B-Reagent
-15N)	I-Reagent
+98	I-Reagent
+atom	I-Reagent
+15N	I-Reagent
 
 Vitamins	B-Reagent
 and	O
@@ -129,33 +149,42 @@ same	O
 as	O
 for	O
 algal	B-Reagent
-DY-V	I-Reagent
-media.	I-Reagent
+DY	I-Reagent
+V	I-Reagent
+media	I-Reagent
+.	I-Reagent
 
 Bacterial	B-Action
-plating.	I-Action
+plating	I-Action
+.	O
 
 Use	O
 a	O
 small	O
 volume	B-Measure-Type
-(i.e.	O
-0.1	B-Amount
-mL)	I-Amount
-of	O
+i	O
+.	O
+e	O
+.	O
+0	O
+.	B-Amount
+1	I-Amount
+mL	I-Amount
+of	I-Amount
 the	O
 sample	B-Reagent
-you	O
+you	I-Reagent
 want	O
 to	O
 isolate	B-Action
-your	O
+your	I-Action
 bacteria	B-Reagent
-to	O
+to	I-Reagent
 inoculate	B-Action
-M9	B-Reagent
-agar	I-Reagent
-plates.	B-Location
+M9	I-Action
+agar	B-Reagent
+plates	I-Reagent
+.	B-Location
 
 Ensure	O
 correct	O
@@ -171,7 +200,8 @@ picking	B-Action
 of	O
 individual	O
 colonies	B-Reagent
-afterwards.	O
+afterwards	O
+.	O
 
 Bacterial	B-Reagent
 growth	I-Reagent
@@ -181,7 +211,8 @@ at	O
 a	O
 temperature	B-Temperature
 of	I-Temperature
-choice.	I-Temperature
+choice	I-Temperature
+.	O
 
 Bacteria	B-Reagent
 isolated	B-Action
@@ -195,7 +226,8 @@ to	O
 grow	B-Action
 at	O
 30	B-Temperature
-ºC.	I-Temperature
+C	I-Temperature
+.	O
 
 Inspect	B-Action
 plates	B-Location
@@ -208,17 +240,20 @@ colonies	B-Reagent
 are	O
 visible	B-Modifier
 to	O
-pick.	B-Action
+pick	B-Action
+.	O
 
 Picking	B-Action
 and	O
 transfer	B-Action
 of	O
-colonies.	B-Reagent
+colonies	B-Reagent
+.	O
 
 Using	O
 sterile	B-Modifier
-picks,	B-Device
+picks	B-Device
+,	O
 transfer	B-Action
 a	O
 single	B-Amount
@@ -228,7 +263,8 @@ bacteria	I-Reagent
 into	O
 M9	B-Reagent
 liquid	I-Reagent
-media.	I-Reagent
+media	I-Reagent
+.	O
 
 Recommended	O
 to	O
@@ -240,11 +276,10 @@ into	O
 a	O
 small	O
 volume	B-Measure-Type
-(~	B-Modifier
-25	B-Amount
--	I-Amount
-50	I-Amount
-mL).	I-Amount
+25	B-Modifier
+50	B-Amount
+mL	I-Amount
+.	I-Amount
 
 Prepare	B-Action
 a	O
@@ -261,13 +296,15 @@ pick	B-Action
 a	O
 variety	O
 of	O
-colonies.	B-Reagent
+colonies	B-Reagent
+.	O
 
 Production	O
 of	O
 labeled	B-Modifier
 bacterial	I-Modifier
-biomass.	B-Reagent
+biomass	B-Reagent
+.	O
 
 In	O
 order	O
@@ -277,7 +314,8 @@ a	O
 large	B-Amount
 ammount	I-Amount
 of	O
-biomass,	B-Reagent
+biomass	B-Reagent
+,	O
 transfer	B-Action
 some	B-Amount
 of	I-Amount
@@ -292,8 +330,12 @@ to	O
 a	O
 larger	O
 volume	B-Measure-Type
-(i.e.	O
-1L).	B-Amount
+i	O
+.	O
+e	O
+.	O
+1L	O
+.	B-Amount
 
 Let	O
 bacteria	B-Reagent
@@ -311,43 +353,50 @@ is	O
 achieved	O
 of	O
 biomass	B-Reagent
-(can	O
+can	O
 be	O
-3-4	B-Time
+3	O
+4	B-Time
 days	I-Time
-until	O
+until	I-Time
 C	O
 and	O
 N	O
 is	O
-consummed).	O
+consummed	O
+.	O
 
-NOTE:	O
+NOTE	O
 for	O
 isotopic	B-Action
-labeling,	I-Action
-M9	B-Reagent
-media	I-Reagent
-used	O
+labeling	I-Action
+,	I-Action
+M9	O
+media	B-Reagent
+used	I-Reagent
 in	O
 this	O
 step	O
 will	O
 contain	O
 15NH4Cl	B-Generic-Measure
-and	O
+and	B-Reagent
 13C	B-Generic-Measure
-D-glucose.	B-Reagent
+D	I-Generic-Measure
+glucose	B-Reagent
+.	I-Reagent
 
 Production	B-Method
 of	O
-HKB.	B-Reagent
+HKB	B-Reagent
+.	O
 
 Once	O
 you	O
 have	O
 enough	O
-biomass,	B-Reagent
+biomass	B-Reagent
+,	O
 follow	O
 up	O
 with	O
@@ -358,11 +407,12 @@ making	B-Action
 heat	B-Modifier
 killed	I-Modifier
 bacteria	B-Reagent
-(start	O
+start	O
 at	O
 the	O
 3rd	O
-step).	O
+step	O
+.	O
 
 
 

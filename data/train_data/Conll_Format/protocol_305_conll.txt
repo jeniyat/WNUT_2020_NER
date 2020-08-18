@@ -1,49 +1,61 @@
-SDS-PAGE	B-Method
-for	O
+SDS	B-Method
+PAGE	I-Method
+for	I-Method
 Identifying	B-Action
-nonmucin	B-Reagent
-protein	I-Reagent
-in	O
-BSM	B-Reagent
+nonmucin	I-Action
+protein	B-Reagent
+in	I-Reagent
+BSM	I-Reagent
 
 Prepare	B-Action
 the	O
 sample	B-Reagent
-solutions:	I-Reagent
+solutions	I-Reagent
 
 prepare	B-Action
 the	O
 mucin	B-Reagent
-samples.	I-Reagent
+samples	I-Reagent
+.	O
 
 Assign	B-Action
 different	O
 volume	B-Measure-Type
 for	O
 each	O
-sample,	B-Reagent
-10ul,20ul,30ul,	B-Amount
-respectively.	O
+sample	B-Reagent
+,	O
+10ul	B-Amount
+,	O
+20ul	B-Amount
+,	O
+30ul	B-Amount
+,	O
+respectively	O
+.	O
 
 Add	B-Action
 DDI	B-Reagent
 water	I-Reagent
 to	O
 the	O
-samples,	B-Reagent
+samples	B-Reagent
+,	O
 let	O
 each	O
 tube	B-Location
 has	O
 30ul	B-Amount
-solution.	B-Reagent
+solution	B-Reagent
+.	O
 
 Add	B-Action
 loading	B-Reagent
 buffer	I-Reagent
 to	O
 each	B-Modifier
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Heating	B-Action
 them	O
@@ -51,12 +63,14 @@ in	O
 95	B-Temperature
 degree	I-Temperature
 for	O
-10min.	B-Time
+10min	B-Time
+.	O
 
 Loading	B-Action
 the	O
 running	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Add	B-Action
 some	O
@@ -65,7 +79,8 @@ buffer	I-Reagent
 into	O
 the	O
 electrophrosis	B-Device
-cell.	I-Device
+cell	I-Device
+.	O
 
 peel	B-Action
 the	O
@@ -81,14 +96,16 @@ the	O
 top	B-Seal
 green	I-Seal
 plastic	I-Seal
-cover,	I-Seal
+cover	I-Seal
+,	O
 set	B-Action
 the	O
 gel	B-Reagent
 in	O
 the	O
 electrophorsis	B-Device
-cell.	I-Device
+cell	I-Device
+.	O
 
 Fill	B-Action
 the	O
@@ -99,7 +116,8 @@ buffer	I-Location
 chambers	I-Location
 with	O
 running	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	I-Reagent
 
 Make	B-Action
 sure	I-Action
@@ -128,10 +146,12 @@ buffer	I-Device
 chamber	I-Device
 to	O
 the	O
-outer.	B-Device
+outer	B-Device
+.	O
 
 Performing	B-Action
-electrophorsis.	B-Method
+electrophorsis	B-Method
+.	O
 
 Load	B-Action
 the	O
@@ -139,7 +159,8 @@ protein	B-Reagent
 sample	I-Reagent
 on	O
 the	O
-gel.	B-Reagent
+gel	B-Reagent
+.	O
 
 Connect	B-Action
 the	O
@@ -154,30 +175,33 @@ perform	B-Action
 electrophores	B-Method
 in	O
 Run	O
-conditions:	O
+conditions	O
 150	B-Generic-Measure
-V~200	I-Generic-Measure
+V	I-Generic-Measure
+200	I-Generic-Measure
 VRun	I-Generic-Measure
-time:	B-Measure-Type
-until	O
+time	B-Measure-Type
+until	I-Measure-Type
 the	O
 loading	B-Reagent
 buffer	I-Reagent
-line	O
+line	I-Reagent
 come	O
 to	O
 the	O
 bottom	O
 of	O
 the	O
-gel	B-Reagent
-Staining.	B-Action
+gel	O
+Staining	B-Reagent
+.	B-Action
 
 Wash	B-Action
 gels	B-Reagent
 in	O
 DI	B-Reagent
-H2O.	I-Reagent
+H2O	I-Reagent
+.	O
 
 Remove	B-Action
 all	B-Modifier
@@ -188,29 +212,36 @@ container	I-Location
 and	O
 add	B-Action
 stain	B-Reagent
-(PageBlue),	O
+PageBlue	O
+,	O
 agitate	B-Action
-overnight.	B-Time
+overnight	I-Action
+.	B-Time
 
 Wash	B-Action
 gel	B-Reagent
 using	O
 DI	B-Reagent
-water,	I-Reagent
+water	I-Reagent
+,	O
 first	O
 time	O
 5	B-Time
-minutes;	I-Time
+minutes	I-Time
+;	O
 second	O
 time	O
 10	B-Time
-minutes;	I-Time
+minutes	I-Time
+;	O
 third	O
 time	O
 30	B-Time
-minutes;	I-Time
+minutes	I-Time
+;	O
 forth	O
-time,	O
+time	O
+,	O
 1	B-Time
 hour	I-Time
 and	O
@@ -223,7 +254,8 @@ in	O
 DI	B-Reagent
 water	I-Reagent
 agitate	B-Action
-overnight.	B-Time
+overnight	B-Time
+.	O
 
 
 

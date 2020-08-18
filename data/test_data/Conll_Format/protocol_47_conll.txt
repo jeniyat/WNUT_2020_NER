@@ -2,27 +2,38 @@ Transformation	B-Method
 and	I-Method
 Storage	I-Method
 Solution	I-Method
-(TSS)	I-Method
+TSS	I-Method
 
-ChemicalVolume/MassFinal	B-Measure-Type
-Conc.PEG	I-Measure-Type
+ChemicalVolume	B-Measure-Type
+MassFinal	I-Measure-Type
+Conc	I-Measure-Type
+.	I-Measure-Type
+PEG	I-Measure-Type
 8000	B-Generic-Measure
-or	O
-PEG	B-Generic-Measure
+or	I-Generic-Measure
+PEG	I-Generic-Measure
 335020	I-Generic-Measure
-g20%	B-Concentration
-(w/v)DMSO10	B-Reagent
-ml10%	B-Amount
-(w/v)MgCl2	B-Reagent
-*	I-Reagent
-H2O2.03	I-Reagent
-g100	B-Amount
-mMLB	B-Concentration
-Mediumadd	B-Reagent
-100	B-Amount
-ml	I-Amount
-(pH	B-pH
-6.5).	I-pH
+g20	I-Generic-Measure
+w	B-Concentration
+v	I-Concentration
+DMSO10	B-Reagent
+ml10	I-Reagent
+w	B-Amount
+v	I-Amount
+MgCl2	I-Amount
+H2O2	O
+.	B-Reagent
+03	I-Reagent
+g100	I-Reagent
+mMLB	I-Reagent
+Mediumadd	B-Amount
+100	B-Reagent
+ml	I-Reagent
+pH	I-Reagent
+6	B-Action
+.	I-Action
+5	I-Action
+.	B-Amount
 
 Prepare	B-Action
 2x	B-Concentration
@@ -30,13 +41,15 @@ TSS	B-Reagent
 without	O
 DMSO	B-Reagent
 and	O
-autoclave.	B-Action
+autoclave	B-Action
+.	O
 
 Add	B-Action
 sterile	B-Modifier
 DMSO	B-Reagent
 after	O
-autoclaving.	B-Action
+autoclaving	B-Action
+.	O
 
 Divide	B-Action
 in	O
@@ -47,7 +60,8 @@ and	O
 store	B-Action
 at	O
 4	B-Temperature
-°C.	I-Temperature
+C	I-Temperature
+.	O
 
 
 

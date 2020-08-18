@@ -2,8 +2,9 @@ Obtaining	B-Method
 pure	I-Method
 cyanophage	I-Method
 stocks	I-Method
-(plaque	I-Method
-purification).	I-Method
+plaque	I-Method
+purification	I-Method
+.	I-Method
 
 Make	B-Action
 a	O
@@ -12,17 +13,18 @@ series	I-Modifier
 of	O
 the	O
 lysate	B-Reagent
-(assume	B-Action
-104	B-Generic-Measure
-to	I-Generic-Measure
+assume	B-Action
+104	I-Action
+to	B-Generic-Measure
 105	I-Generic-Measure
 PFU	I-Generic-Measure
 per	I-Generic-Measure
 mL	I-Generic-Measure
-in	O
+in	I-Generic-Measure
 the	O
 plaque	B-Reagent
-lysate).	I-Reagent
+lysate	I-Reagent
+.	I-Reagent
 
 Repeat	B-Action
 the	O
@@ -39,16 +41,19 @@ the	O
 cyanophage	B-Reagent
 isolated	B-Modifier
 is	O
-clonal.	B-Modifier
+clonal	B-Modifier
+.	O
 
 Repeat	B-Action
 the	O
 plaque	B-Method
 purification	I-Method
 procedure	I-Method
-again.	I-Method
+again	I-Method
+.	O
 
-Finally,	O
+Finally	O
+,	O
 prepare	B-Action
 a	O
 primary	B-Reagent
@@ -63,34 +68,36 @@ purification	I-Method
 via	O
 method	B-Method
 A	I-Method
-"Liquid	I-Method
-Amplification"	I-Method
-OR	O
-method	B-Method
+Liquid	I-Method
+Amplification	I-Method
+OR	I-Method
+method	I-Method
 B	I-Method
-"Plate	I-Method
-Amplification"	I-Method
-Method	O
-A:	O
-liquid	B-Method
-amplification	I-Method
-Method	O
-B:	O
-plate	B-Method
-amplification	I-Method
-Titer	B-Action
-the	O
-final	B-Reagent
-stock	I-Reagent
-via	O
-plaque	B-Method
-assay.	I-Method
+Plate	I-Method
+Amplification	I-Method
+Method	I-Method
+A	O
+liquid	O
+amplification	B-Method
+Method	I-Method
+B	O
+plate	O
+amplification	B-Method
+Titer	I-Method
+the	I-Method
+final	B-Action
+stock	B-Reagent
+via	I-Reagent
+plaque	I-Reagent
+assay	B-Method
+.	I-Method
 
 Cyanophage	B-Reagent
 stocks	I-Reagent
 stored	B-Action
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 in	B-Modifier
 the	I-Modifier
 dark	I-Modifier
@@ -100,7 +107,8 @@ for	O
 at	B-Modifier
 least	I-Modifier
 a	B-Time
-year.	I-Time
+year	I-Time
+.	O
 
 
 

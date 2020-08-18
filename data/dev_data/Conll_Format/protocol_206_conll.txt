@@ -1,12 +1,14 @@
 Saltwater	B-Reagent
-BG-11	I-Reagent
-recipe	O
+BG	I-Reagent
+11	I-Reagent
+recipe	I-Reagent
 
 Bring	B-Action
 final	B-Modifier
 volume	B-Measure-Type
 to	O
-1L.	B-Amount
+1L	B-Amount
+.	O
 
 Adjust	B-Action
 pH	B-Measure-Type
@@ -15,39 +17,48 @@ the	O
 final	B-Modifier
 media	B-Reagent
 to	O
-8.2.	B-pH
+8	B-pH
+.	I-pH
+2	I-pH
+.	O
 
-*	O
 Be	O
 sure	O
 to	O
 add	B-Action
-K2HPO4	B-Reagent
-first,	O
+K2HPO4	I-Action
+first	B-Reagent
+,	O
 then	O
-NaSiO3,	B-Reagent
+NaSiO3	B-Reagent
+,	I-Reagent
 then	O
 add	B-Action
-the	O
+the	I-Action
 others	O
 stock	B-Reagent
 solutions	I-Reagent
-to	O
+to	I-Reagent
 prevent	B-Action
-precipitation.	B-Method
+precipitation	I-Action
+.	B-Method
 
-0.2	B-Size
+0	B-Size
+.	I-Size
+2	I-Size
 um	I-Size
 filter	B-Device
 sterilize	B-Action
 into	O
-clean,	B-Location
+clean	B-Location
+,	I-Location
 autoclaved	I-Location
 containers	I-Location
 in	O
 a	O
 biosafety	B-Location
-hood.	I-Location
+hood	I-Location
+.	O
 
 Do	O
 not	O
@@ -62,24 +73,32 @@ form	B-Action
 precipitate	B-Reagent
 and	O
 be	O
-cloudy!	B-Modifier
+cloudy	B-Modifier
+!	O
 
 To	O
 Prepare	B-Action
 Conjugation	B-Location
 Plates	I-Location
-(1/2	B-Concentration
-BG-11,	B-Reagent
-5%	B-Concentration
-LB,	B-Reagent
-1%	B-Concentration
-agar):	B-Reagent
-Dilute	B-Action
-Saltwater	B-Reagent
-BG-11	I-Reagent
-1:1	B-Concentration
-with	O
-ddH2O.	B-Reagent
+1	O
+2	B-Concentration
+BG	I-Concentration
+11	B-Reagent
+,	I-Reagent
+5	I-Reagent
+LB	I-Reagent
+,	B-Concentration
+1	I-Concentration
+agar	B-Reagent
+Dilute	B-Concentration
+Saltwater	B-Action
+BG	B-Reagent
+11	I-Reagent
+1	I-Reagent
+1	I-Reagent
+with	I-Reagent
+ddH2O	I-Reagent
+.	O
 
 Add	B-Action
 50mL	B-Amount
@@ -94,7 +113,8 @@ Conjugation	B-Reagent
 Plate	I-Reagent
 media	I-Reagent
 being	O
-made.	O
+made	O
+.	O
 
 Add	B-Action
 5g	B-Amount
@@ -114,7 +134,8 @@ Conjugation	B-Reagent
 Plate	I-Reagent
 media	I-Reagent
 being	O
-made.	O
+made	O
+.	O
 
 Distribute	B-Action
 500	B-Amount
@@ -127,7 +148,8 @@ to	O
 each	O
 1L	B-Amount
 Earlenmeyer	B-Location
-flask.	I-Location
+flask	I-Location
+.	O
 
 Cover	B-Action
 with	O
@@ -142,7 +164,8 @@ at	O
 121C	B-Temperature
 for	O
 30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Allow	O
 media	B-Reagent
@@ -153,7 +176,8 @@ stirring	B-Action
 on	O
 magnetic	B-Location
 stir	I-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Make	O
 sure	O
@@ -166,7 +190,8 @@ vigorous	B-Modifier
 as	O
 to	O
 cause	O
-bubbles.	O
+bubbles	O
+.	O
 
 It	B-Mention
 should	O
@@ -176,13 +201,15 @@ to	O
 be	O
 able	O
 to	O
-touch,	O
+touch	O
+,	O
 but	O
 not	O
 have	O
 the	O
 agar	B-Reagent
-solidified.	B-Modifier
+solidified	B-Modifier
+.	O
 
 Pour	B-Action
 plates	B-Location
@@ -190,24 +217,31 @@ and	O
 allow	O
 to	O
 cool	B-Action
-overnight.	B-Time
+overnight	B-Time
+.	O
 
 To	O
 Prepare	B-Action
 Selection	B-Location
 Plates	I-Location
-(1/2	B-Concentration
-BG-11,	B-Reagent
-1%	B-Concentration
-agar,	B-Reagent
-+	O
-antibiotics):	B-Reagent
-Dilute	B-Action
-Saltwater	B-Reagent
-BG-11	I-Reagent
-1:1	B-Concentration
-with	O
-ddH2O.	B-Reagent
+1	O
+2	B-Concentration
+BG	I-Concentration
+11	B-Reagent
+,	I-Reagent
+1	I-Reagent
+agar	I-Reagent
+,	I-Reagent
+antibiotics	I-Reagent
+Dilute	I-Reagent
+Saltwater	B-Action
+BG	B-Reagent
+11	I-Reagent
+1	I-Reagent
+1	I-Reagent
+with	I-Reagent
+ddH2O	I-Reagent
+.	O
 
 Add	B-Action
 5g	B-Amount
@@ -228,7 +262,8 @@ Selection	B-Reagent
 Plate	I-Reagent
 media	I-Reagent
 being	O
-made.	O
+made	O
+.	O
 
 Distribute	B-Action
 500	B-Amount
@@ -241,7 +276,8 @@ to	O
 each	O
 1L	B-Amount
 Earlenmeyer	B-Location
-flask.	I-Location
+flask	I-Location
+.	O
 
 Cover	B-Action
 flask	B-Location
@@ -255,7 +291,8 @@ at	O
 121C	B-Temperature
 for	O
 30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Allow	O
 media	B-Reagent
@@ -266,7 +303,8 @@ stirring	B-Action
 on	O
 magnetic	B-Location
 stir	I-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Make	O
 sure	O
@@ -279,7 +317,8 @@ vigorous	B-Modifier
 as	O
 to	O
 cause	O
-bubbles.	O
+bubbles	O
+.	O
 
 It	B-Mention
 should	O
@@ -289,13 +328,15 @@ to	O
 be	O
 able	O
 to	O
-touch,	O
+touch	O
+,	O
 but	O
 not	O
 have	O
 the	O
 agar	B-Reagent
-solidified.	B-Modifier
+solidified	B-Modifier
+.	O
 
 Add	B-Action
 500ul	B-Amount
@@ -308,7 +349,8 @@ the	O
 Selection	B-Reagent
 Plate	I-Reagent
 media	I-Reagent
-made.	O
+made	O
+.	O
 
 We	O
 make	B-Action
@@ -317,7 +359,8 @@ aliquots	B-Reagent
 of	O
 1000x	B-Concentration
 antibiotic	B-Reagent
-stocks.	I-Reagent
+stocks	I-Reagent
+.	O
 
 It	O
 is	O
@@ -337,7 +380,8 @@ the	O
 heat	O
 will	O
 destroy	B-Action
-them.	B-Mention
+them	B-Mention
+.	O
 
 Pour	B-Action
 plates	B-Location
@@ -345,7 +389,8 @@ and	O
 allow	O
 to	O
 cool	B-Action
-overnight.	B-Time
+overnight	B-Time
+.	O
 
 
 

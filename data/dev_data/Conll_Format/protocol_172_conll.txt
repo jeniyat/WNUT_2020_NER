@@ -5,7 +5,8 @@ and	O
 RNA	B-Reagent
 extraction	B-Method
 for	O
-RNA-Seq	B-Reagent
+RNA	B-Reagent
+Seq	I-Reagent
 
 Use	O
 sterile	B-Modifier
@@ -15,7 +16,8 @@ harvest	B-Action
 800	B-Amount
 ml	I-Amount
 of	O
-culture,	B-Reagent
+culture	B-Reagent
+,	O
 and	O
 divide	B-Action
 into	O
@@ -27,7 +29,8 @@ bottles	I-Location
 with	O
 200	B-Amount
 ml	I-Amount
-each.	B-Modifier
+each	B-Modifier
+.	O
 
 Spin	B-Action
 the	O
@@ -38,15 +41,19 @@ at	O
 g	I-Speed
 for	O
 10	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Carefully	B-Modifier
 decant	B-Action
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Use	O
-0.5	B-Amount
+0	B-Amount
+.	I-Amount
+5	I-Amount
 ml	I-Amount
 of	O
 RNALater	B-Reagent
@@ -60,11 +67,14 @@ it	B-Mention
 to	O
 a	O
 microcentrifuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Use	O
 another	O
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 ml	I-Amount
 of	O
 RNALater	B-Reagent
@@ -76,34 +86,41 @@ and	O
 obtain	B-Action
 any	B-Modifier
 remaining	I-Modifier
-cells.	B-Reagent
+cells	B-Reagent
+.	O
 
 Transfer	B-Action
 this	O
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 ml	I-Amount
 into	O
 the	O
 same	B-Modifier
 microcentrifuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Depending	O
 on	O
 whether	O
 you	O
 want	O
-pseudo-replicates,	O
+pseudo	O
+replicates	O
+,	O
 you	O
 can	O
 keep	B-Action
-the	O
-4	B-Numerical
-harvested	B-Modifier
-pellet	B-Reagent
-separate	O
+the	I-Action
+4	O
+harvested	B-Numerical
+pellet	B-Modifier
+separate	B-Reagent
 or	O
-mixed.	O
+mixed	O
+.	O
 
 Store	B-Action
 the	O
@@ -112,42 +129,46 @@ cells	B-Reagent
 at	B-Modifier
 or	I-Modifier
 below	I-Modifier
--20oC	B-Temperature
-until	O
+20oC	B-Temperature
+until	I-Temperature
 ready	O
 for	O
 RNA	B-Reagent
-extraction.	B-Method
+extraction	I-Reagent
+.	B-Method
 
 Before	O
 RNA	B-Reagent
-extraction,	B-Method
+extraction	B-Method
+,	O
 the	O
 RNALater	B-Reagent
 needs	O
 to	O
 be	O
-removed.	B-Action
+removed	B-Action
+.	O
 
 Thaw	B-Action
 samples	B-Reagent
 if	O
 they	O
 are	O
-frozen.	B-Modifier
+frozen	B-Modifier
+.	O
 
 Centrifuge	B-Action
 samples	B-Reagent
 at	O
->	B-Modifier
-10	B-Speed
-k	I-Speed
+10	B-Modifier
+k	B-Speed
 g	I-Speed
-for	O
-10	B-Time
-min	I-Time
-at	O
-4oC.	B-Temperature
+for	I-Speed
+10	O
+min	B-Time
+at	I-Time
+4oC	B-Temperature
+.	I-Temperature
 
 RNALater	B-Reagent
 sometimes	O
@@ -156,7 +177,8 @@ the	O
 buoyancy	B-Measure-Type
 of	O
 the	O
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 and	O
 make	O
 them	B-Mention
@@ -164,7 +186,8 @@ a	O
 bit	O
 harder	O
 to	O
-pellet.	B-Action
+pellet	B-Action
+.	O
 
 If	O
 you	O
@@ -174,18 +197,21 @@ the	O
 cells	B-Reagent
 are	O
 not	O
-pelleting,	B-Action
-spin	I-Action
+pelleting	B-Action
+,	O
+spin	B-Action
 harder	B-Modifier
 for	O
 a	O
 longer	B-Time
-time.	I-Time
+time	I-Time
+.	O
 
 Decant	B-Action
 supernatent	B-Reagent
 with	O
-RNALater.	B-Reagent
+RNALater	B-Reagent
+.	O
 
 Extract	B-Action
 RNA	B-Reagent
@@ -195,11 +221,12 @@ RNeasy	B-Reagent
 Plant	I-Reagent
 Mini	I-Reagent
 Kit	I-Reagent
-(Qiagen)	O
+Qiagen	O
 following	O
 the	O
 manufacturer's	B-Method
-instructions.	I-Method
+instructions	I-Method
+.	I-Method
 
 Remove	B-Action
 any	O
@@ -210,10 +237,12 @@ extracted	B-Reagent
 samples	I-Reagent
 using	O
 DNase	B-Reagent
-(Sigma),	O
+Sigma	O
+,	O
 following	O
 manufacturer's	B-Method
-instructions.	I-Method
+instructions	I-Method
+.	I-Method
 
 Clean	B-Action
 up	I-Action
@@ -224,14 +253,15 @@ using	O
 a	O
 RNA	B-Reagent
 Clean	I-Reagent
-&	I-Reagent
 Concentrator	I-Reagent
 kit	I-Reagent
-(Zymo),	O
+Zymo	I-Reagent
+,	O
 following	O
 the	O
 manufacturer's	B-Method
-instructions.	I-Method
+instructions	I-Method
+.	I-Method
 
 Quantify	B-Action
 the	O
@@ -239,16 +269,22 @@ RNA	B-Reagent
 using	O
 any	B-Method
 preferred	I-Method
-method,	I-Method
-e.g.	O
+method	I-Method
+,	O
+e	O
+.	O
+g	O
+.	O
 Qubit	B-Method
-fluorometer.	I-Method
+fluorometer	I-Method
+.	O
 
 Store	B-Action
 the	O
 RNA	B-Reagent
 at	O
--80oC.	B-Temperature
+80oC	B-Temperature
+.	I-Temperature
 
 It	O
 may	O

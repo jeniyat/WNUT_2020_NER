@@ -14,7 +14,8 @@ to	O
 collect	O
 the	O
 cell	B-Reagent
-pellet.	I-Reagent
+pellet	I-Reagent
+.	O
 
 Lyse	B-Action
 the	O
@@ -22,7 +23,7 @@ cell	B-Reagent
 pellet	I-Reagent
 with	O
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 lysis	B-Reagent
 buffer	I-Reagent
@@ -31,30 +32,38 @@ ice	B-Location
 for	O
 30	B-Time
 min	I-Time
-(For	O
-1	B-Numerical
-X	I-Numerical
+For	O
+1	O
+X	B-Numerical
 106	I-Numerical
-cells,	B-Reagent
+cells	I-Numerical
+,	B-Reagent
 lyse	B-Action
-with	O
+with	I-Action
 100	B-Amount
-µlof	I-Amount
+lof	I-Amount
 lysis	B-Reagent
-buffer).	I-Reagent
+buffer	I-Reagent
+.	I-Reagent
 
 Centrifuge	B-Action
 at	O
-14,000	B-Speed
+14	B-Speed
+,	I-Speed
+000	I-Speed
 rpm	I-Speed
-(16,000	I-Speed
+16	I-Speed
+,	I-Speed
+000	I-Speed
 x	I-Speed
-g)	I-Speed
-for	O
-10	B-Time
-minutes	I-Time
-at	O
-4°C.	B-Temperature
+g	I-Speed
+for	I-Speed
+10	O
+minutes	B-Time
+at	I-Time
+4	O
+C	O
+.	B-Temperature
 
 Transfer	B-Action
 the	O
@@ -66,27 +75,30 @@ tube	B-Location
 and	O
 discard	B-Action
 the	O
-pellet.	B-Reagent
+pellet	B-Reagent
+.	O
 
 Remove	B-Action
 20	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 supernatant	B-Reagent
 and	O
 mix	B-Action
 with	O
 20	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 2x	B-Concentration
 sample	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Boil	B-Action
 for	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Cool	B-Action
 at	O
@@ -94,18 +106,20 @@ room	B-Temperature
 temperature	I-Temperature
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Microcentrifuge	B-Action
 for	O
 5	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 Load	B-Action
 up	O
 to	O
 40	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 sample	B-Mention
 to	O
@@ -113,10 +127,13 @@ each	B-Location
 well	I-Location
 of	O
 a	O
-1.5	B-Reagent
+1	B-Reagent
+.	I-Reagent
+5	I-Reagent
 mm	I-Reagent
 thick	I-Reagent
-gel.	I-Reagent
+gel	I-Reagent
+.	O
 
 Set	O
 gel	O
@@ -125,8 +142,10 @@ conditions	O
 according	O
 to	O
 the	O
-manufacturer’s	O
-instructions.	O
+manufacturer	O
+s	O
+instructions	O
+.	O
 
 Transfer	B-Action
 the	O
@@ -143,8 +162,10 @@ settings	O
 according	O
 to	O
 the	O
-manufacturer’s	O
-instructions.	O
+manufacturer	O
+s	O
+instructions	O
+.	O
 
 Remove	B-Action
 the	O
@@ -162,25 +183,31 @@ blocking	B-Reagent
 buffer	I-Reagent
 consisting	O
 of	O
-5%	B-Concentration
-nonfat	B-Reagent
-dry	I-Reagent
-milk/TBS-T.	I-Reagent
-Incubate	B-Action
-the	O
-blot	B-Reagent
-for	O
-1	B-Time
-hour	I-Time
-at	O
-room	B-Temperature
-temperature,	I-Temperature
-or	O
+5	B-Concentration
+nonfat	I-Concentration
+dry	B-Reagent
+milk	I-Reagent
+TBS	I-Reagent
+T	I-Reagent
+.	I-Reagent
+Incubate	I-Reagent
+the	B-Action
+blot	O
+for	B-Reagent
+1	O
+hour	B-Time
+at	I-Time
+room	I-Time
+temperature	B-Temperature
+,	I-Temperature
+or	I-Temperature
 overnight	B-Time
-at	O
-4°C	B-Temperature
-with	O
-agitation.	B-Method
+at	I-Time
+4	I-Time
+C	O
+with	B-Temperature
+agitation	B-Method
+.	I-Method
 
 Dilute	B-Action
 the	O
@@ -189,15 +216,21 @@ antibody	I-Reagent
 to	O
 the	O
 recommended	B-Concentration
-concentration/dilution	I-Concentration
-in	O
-5%	B-Concentration
-nonfat	B-Reagent
-dry	I-Reagent
-milk/TBS-T**	I-Reagent
-(usually	O
+concentration	I-Concentration
+dilution	I-Concentration
+in	I-Concentration
+5	O
+nonfat	B-Concentration
+dry	B-Reagent
+milk	I-Reagent
+TBS	I-Reagent
+T	I-Reagent
+usually	I-Reagent
 at	O
-1µg/ml).	B-Concentration
+1	O
+g	O
+ml	O
+.	O
 
 Place	B-Action
 the	O
@@ -214,13 +247,16 @@ for	O
 hours	I-Time
 at	O
 room	B-Temperature
-temperature,	I-Temperature
+temperature	I-Temperature
+,	O
 or	O
 overnight	B-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 with	O
-agitation.	B-Method
+agitation	B-Method
+.	O
 
 Wash	B-Action
 for	O
@@ -229,28 +265,19 @@ minutes	I-Time
 with	O
 Wash	B-Reagent
 Buffer	I-Reagent
-(TBS	I-Reagent
-containing	O
-0.1%	B-Concentration
-Tween-20).	B-Reagent
+TBS	I-Reagent
+containing	I-Reagent
+0	O
+.	B-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
 
-[wash	O
-1/3].	O
-
-Wash	B-Action
-for	O
-5	B-Time
-minutes	I-Time
-with	O
-Wash	B-Reagent
-Buffer	I-Reagent
-(TBS	I-Reagent
-containing	O
-0.1%	B-Concentration
-Tween-20).	B-Reagent
-
-[wash	O
-2/3].	O
+wash	O
+1	O
+3	O
+.	O
 
 Wash	B-Action
 for	O
@@ -259,13 +286,40 @@ minutes	I-Time
 with	O
 Wash	B-Reagent
 Buffer	I-Reagent
-(TBS	I-Reagent
-containing	O
-0.1%	B-Concentration
-Tween-20).	B-Reagent
+TBS	I-Reagent
+containing	I-Reagent
+0	O
+.	B-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
 
-[wash	O
-3/3].	O
+wash	O
+2	O
+3	O
+.	O
+
+Wash	B-Action
+for	O
+5	B-Time
+minutes	I-Time
+with	O
+Wash	B-Reagent
+Buffer	I-Reagent
+TBS	I-Reagent
+containing	I-Reagent
+0	O
+.	B-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
+
+wash	O
+3	O
+3	O
+.	O
 
 Incubate	B-Action
 the	O
@@ -279,17 +333,23 @@ temperature	I-Temperature
 with	O
 horseradish	B-Reagent
 peroxidase	I-Reagent
-(HRP)‐conjugated	I-Reagent
+HRP	I-Reagent
+conjugated	I-Reagent
 secondary	I-Reagent
-antibody,	I-Reagent
-diluted	B-Action
-to	O
-1:1000	B-Concentration
-in	O
-5%	B-Concentration
-nonfat	B-Reagent
-dry	I-Reagent
-milk/TBS‐T.	I-Reagent
+antibody	I-Reagent
+,	I-Reagent
+diluted	I-Reagent
+to	B-Action
+1	O
+1000	B-Concentration
+in	I-Concentration
+5	I-Concentration
+nonfat	I-Concentration
+dry	B-Reagent
+milk	I-Reagent
+TBS	I-Reagent
+T	I-Reagent
+.	I-Reagent
 
 Wash	B-Action
 for	O
@@ -298,22 +358,16 @@ minutes	I-Time
 with	O
 TBS	B-Reagent
 containing	O
-0.1%	B-Concentration
-Tween‐20.	B-Reagent
+0	B-Concentration
+.	I-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
 
-(1/4).	O
-
-Wash	B-Action
-for	O
-10	B-Time
-minutes	I-Time
-with	O
-TBS	B-Reagent
-containing	O
-0.1%	B-Concentration
-Tween‐20.	B-Reagent
-
-(2/4).	O
+1	O
+4	O
+.	O
 
 Wash	B-Action
 for	O
@@ -322,10 +376,16 @@ minutes	I-Time
 with	O
 TBS	B-Reagent
 containing	O
-0.1%	B-Concentration
-Tween‐20.	B-Reagent
+0	B-Concentration
+.	I-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
 
-(3/4).	O
+2	O
+4	O
+.	O
 
 Wash	B-Action
 for	O
@@ -334,10 +394,34 @@ minutes	I-Time
 with	O
 TBS	B-Reagent
 containing	O
-0.1%	B-Concentration
-Tween‐20.	B-Reagent
+0	B-Concentration
+.	I-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
 
-(4/4).	O
+3	O
+4	O
+.	O
+
+Wash	B-Action
+for	O
+10	B-Time
+minutes	I-Time
+with	O
+TBS	B-Reagent
+containing	O
+0	B-Concentration
+.	I-Concentration
+1	I-Concentration
+Tween	I-Concentration
+20	B-Reagent
+.	I-Reagent
+
+4	O
+4	O
+.	O
 
 Wash	B-Action
 once	B-Numerical
@@ -345,68 +429,83 @@ for	O
 2	B-Time
 minutes	I-Time
 with	O
-PBS.	B-Reagent
+PBS	B-Reagent
+.	O
 
 Incubate	B-Action
 membrane	B-Reagent
-(protein	I-Reagent
-side	O
-up)	O
+protein	I-Reagent
+side	I-Reagent
+up	O
 with	O
-10	B-Amount
-ml	I-Amount
-of	O
-ECL	B-Mention
-(enhanced	B-Reagent
-chemiluminescence	I-Reagent
-substrate)	I-Reagent
-for	O
-1-2	B-Time
-minutes.	I-Time
+10	O
+ml	B-Amount
+of	I-Amount
+ECL	O
+enhanced	B-Mention
+chemiluminescence	B-Reagent
+substrate	I-Reagent
+for	I-Reagent
+1	O
+2	O
+minutes	B-Time
+.	I-Time
 
 The	O
 final	B-Modifier
 volume	B-Measure-Type
 required	O
 is	O
-0.125	B-Amount
-ml/cm2.	I-Amount
+0	B-Amount
+.	I-Amount
+125	I-Amount
+ml	I-Amount
+cm2	I-Amount
+.	I-Amount
 
 Drain	B-Action
 off	I-Action
 the	O
 excess	B-Reagent
 detection	I-Reagent
-reagent,	I-Reagent
+reagent	I-Reagent
+,	O
 wrap	B-Action
 up	I-Action
 the	O
-blots,	B-Reagent
+blots	B-Reagent
+,	O
 and	O
 gently	O
 smooth	B-Action
 out	I-Action
 any	O
 air	B-Reagent
-bubbles.	I-Reagent
+bubbles	I-Reagent
+.	O
 
 Place	B-Action
 the	O
 wrapped	B-Reagent
-blots,	I-Reagent
-protein	I-Reagent
+blots	I-Reagent
+,	O
+protein	B-Reagent
 side	O
-up,	O
+up	O
+,	O
 in	O
 an	O
-X-ray	B-Device
+X	B-Device
+ray	I-Device
 film	I-Device
 cassette	I-Device
-and	O
+and	I-Device
 expose	B-Action
 to	I-Action
-x-ray	I-Action
-film.	I-Action
+x	I-Action
+ray	I-Action
+film	I-Action
+.	I-Action
 
 Exposures	B-Method
 can	O
@@ -416,7 +515,8 @@ from	O
 seconds	I-Time
 to	I-Time
 60	I-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 
 

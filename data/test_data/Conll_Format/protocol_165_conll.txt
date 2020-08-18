@@ -11,28 +11,33 @@ protists	B-Reagent
 Prepare	B-Action
 9	B-Numerical
 tubes	B-Location
-(numbered	O
-#1–#9)	O
+numbered	O
+1	O
+9	O
 with	O
-4.5	B-Amount
-mL	I-Amount
-medium.	B-Reagent
+4	O
+.	O
+5	O
+mL	O
+medium	B-Amount
+.	B-Reagent
 
 Add	B-Action
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 the	O
 virus	B-Reagent
 filtrate	I-Reagent
-(virus	B-Measure-Type
+virus	B-Measure-Type
 size	I-Measure-Type
-fraction)	I-Measure-Type
-to	O
+fraction	I-Measure-Type
+to	I-Measure-Type
 tube	B-Location
-#1	I-Location
-and	O
-vortex.	B-Action
+1	I-Location
+and	I-Location
+vortex	B-Action
+.	I-Action
 
 Change	B-Action
 the	O
@@ -41,22 +46,24 @@ tip	I-Device
 and	O
 transfer	B-Action
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 suspension	B-Reagent
-#1	I-Reagent
-to	O
+1	I-Reagent
+to	I-Reagent
 tube	B-Location
-#2	I-Location
-and	O
-vortex.	B-Action
+2	I-Location
+and	I-Location
+vortex	B-Action
+.	I-Action
 
 Repeat	B-Action
 the	O
 procedure	B-Method
 to	O
 tube	B-Location
-#8.	I-Location
+8	I-Location
+.	I-Location
 
 Pour	B-Action
 vigorously	O
@@ -67,27 +74,31 @@ culture	I-Reagent
 into	O
 the	O
 reservoir	B-Location
-tray,	I-Location
+tray	I-Location
+,	O
 fill	B-Action
 the	O
 pipetter	B-Location
 and	O
 add	B-Action
 150	B-Amount
-μL	I-Amount
+L	I-Amount
 culture	B-Reagent
 to	O
 each	B-Modifier
 well	B-Location
 in	O
 lines	B-Location
-1–9	I-Location
+1	I-Location
+9	I-Location
 of	O
 a	O
-96-well	B-Location
+96	B-Location
+well	I-Location
 cell	I-Location
 culture	I-Location
-plate.	I-Location
+plate	I-Location
+.	I-Location
 
 Fill	B-Action
 the	O
@@ -95,37 +106,43 @@ pipetter	B-Location
 and	O
 add	B-Action
 150	B-Amount
-μL	I-Amount
+L	I-Amount
 culture	B-Reagent
 to	O
 each	B-Modifier
 well	B-Location
 in	O
 lines	B-Location
-1–9	I-Location
+1	I-Location
+9	I-Location
 of	O
 a	O
-96-well	B-Location
+96	B-Location
+well	I-Location
 cell	I-Location
 culture	I-Location
-plate.	I-Location
+plate	I-Location
+.	I-Location
 
 Empty	B-Action
 the	O
-tray.	B-Location
+tray	B-Location
+.	O
 
 Pour	B-Action
 dilution	B-Location
 tube	I-Location
-#9	I-Location
-(control	B-Reagent
-medium,	I-Reagent
-no	O
-virus)	B-Reagent
-into	O
+9	I-Location
+control	I-Location
+medium	B-Reagent
+,	I-Reagent
+no	I-Reagent
+virus	I-Reagent
+into	I-Reagent
 the	O
 reservoir	B-Location
-tray.	I-Location
+tray	I-Location
+.	I-Location
 
 Fill	B-Action
 the	O
@@ -133,18 +150,20 @@ pipetter	B-Device
 and	O
 add	B-Action
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 to	O
 each	B-Modifier
 well	B-Location
 in	O
 line	B-Location
-9.	I-Location
+9	I-Location
+.	O
 
 Empty	B-Action
 the	O
-tray.	B-Location
+tray	B-Location
+.	O
 
 Repeat	B-Action
 step	O
@@ -154,17 +173,19 @@ and	O
 for	O
 dilution	B-Location
 tube	I-Location
-#8–#1	I-Location
-and	O
+8	I-Location
+1	I-Location
+and	I-Location
 fill	B-Action
-the	O
+the	I-Action
 respective	B-Modifier
-well	B-Location
-lines	I-Location
-in	O
+well	I-Modifier
+lines	B-Location
+in	I-Location
 the	O
 culture	B-Location
-plate.	I-Location
+plate	I-Location
+.	I-Location
 
 Put	B-Action
 on	I-Action
@@ -178,12 +199,14 @@ plastic	B-Seal
 tape	I-Seal
 to	O
 avoid	B-Action
-drying.	I-Action
+drying	I-Action
+.	O
 
 Incubate	B-Action
 under	O
 appropriate	O
-conditions.	O
+conditions	O
+.	O
 
 Use	O
 an	O
@@ -201,7 +224,8 @@ cell	B-Reagent
 lysis	I-Reagent
 at	O
 regular	B-Time
-intervals.	I-Time
+intervals	I-Time
+.	O
 
 Mark	B-Action
 wells	B-Location
@@ -220,7 +244,8 @@ until	O
 no	O
 more	O
 lysis	B-Reagent
-occurs.	O
+occurs	O
+.	O
 
 Prepare	B-Action
 a	O
@@ -231,8 +256,10 @@ with	O
 virus	B-Reagent
 from	O
 the	O
-most-diluted	B-Modifier
-well.	B-Location
+most	B-Modifier
+diluted	I-Modifier
+well	I-Modifier
+.	B-Location
 
 Propagate	B-Action
 virus	B-Reagent
@@ -248,7 +275,8 @@ larger	B-Reagent
 volume	I-Reagent
 and	O
 store	B-Action
-appropriately.	O
+appropriately	O
+.	O
 
 
 

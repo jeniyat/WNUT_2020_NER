@@ -1,11 +1,12 @@
 Cryopreservation	B-Method
 
 Dilute	B-Action
-100%	B-Concentration
-Glycerol	B-Reagent
-to	O
-50%	B-Concentration
-Glycerol.	B-Reagent
+100	B-Concentration
+Glycerol	I-Concentration
+to	B-Reagent
+50	O
+Glycerol	B-Concentration
+.	B-Reagent
 
 In	O
 a	O
@@ -15,8 +16,9 @@ Falcon	B-Location
 tube	I-Location
 pour	B-Action
 25ml	B-Amount
-100%	B-Concentration
-glycerol.	B-Reagent
+100	B-Concentration
+glycerol	I-Concentration
+.	B-Reagent
 
 Add	B-Action
 25ml	B-Amount
@@ -24,12 +26,14 @@ autoclaved	B-Modifier
 MilliQ	B-Reagent
 and	O
 mix	B-Action
-thoroughly.	B-Modifier
+thoroughly	B-Modifier
+.	O
 
 Pour	B-Action
 into	O
 sterile	B-Modifier
-reservoir.	B-Location
+reservoir	B-Location
+.	O
 
 In	O
 sterile	B-Modifier
@@ -39,18 +43,20 @@ deep	B-Modifier
 well	I-Location
 plate	I-Location
 add	B-Action
-240μl	B-Amount
+240	B-Amount
+l	I-Amount
 of	O
-50%	B-Concentration
-glycerol	B-Reagent
-to	O
+50	B-Concentration
+glycerol	I-Concentration
+to	B-Reagent
 each	B-Modifier
-well	B-Location
-using	O
+well	I-Modifier
+using	B-Location
 an	O
-8	B-Generic-Measure
-channel	I-Generic-Measure
-pipet.	B-Location
+8	O
+channel	B-Generic-Measure
+pipet	I-Generic-Measure
+.	B-Location
 
 Take	B-Action
 pore	B-Reagent
@@ -61,14 +67,17 @@ of	O
 deep	B-Modifier
 96	B-Location
 well	I-Location
-plate.	I-Location
+plate	I-Location
+.	O
 
 Using	O
 a	O
 12	B-Generic-Measure
 channel	I-Generic-Measure
-200μl	B-Amount
-pipet,	B-Location
+200	B-Amount
+l	I-Amount
+pipet	B-Location
+,	O
 pipet	B-Action
 up	B-Method
 and	I-Method
@@ -78,10 +87,12 @@ bottom	B-Location
 of	O
 wells	B-Location
 3	B-Numerical
-times,	O
+times	O
+,	O
 then	O
 transfer	B-Action
-160μl	B-Amount
+160	B-Amount
+l	I-Amount
 from	O
 each	B-Modifier
 well	B-Location
@@ -89,7 +100,8 @@ to	O
 the	O
 plate	B-Location
 with	O
-glycerol.	B-Reagent
+glycerol	B-Reagent
+.	O
 
 Pipet	B-Action
 up	B-Method
@@ -98,14 +110,17 @@ down	I-Method
 in	O
 glycerol	B-Reagent
 5	B-Numerical
-times.	O
+times	O
+.	O
 
 Repeat	B-Action
 step	B-Method
 4	I-Method
 for	O
 all	B-Modifier
-rows/wells.	B-Location
+rows	B-Location
+wells	I-Location
+.	I-Location
 
 Seal	B-Action
 500ml	B-Amount
@@ -113,44 +128,50 @@ deep	B-Modifier
 96	B-Location
 well	I-Location
 plate	I-Location
-(glycerol	I-Location
-plate)	I-Location
-with	O
-foil.	B-Seal
+glycerol	I-Location
+plate	I-Location
+with	I-Location
+foil	B-Seal
+.	I-Seal
 
 Place	B-Action
 in	O
 shaker	B-Device
 for	O
 30	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
-Re-seal	B-Action
-2ml	B-Amount
-deep	B-Modifier
-96	B-Location
-well	I-Location
+Re	B-Action
+seal	I-Action
+2ml	I-Action
+deep	B-Amount
+96	B-Modifier
+well	B-Location
 plate	I-Location
-with	O
+with	I-Location
 pore	B-Seal
 film	I-Seal
-and	O
+and	I-Seal
 place	B-Action
-in	O
-refrigerator.	B-Device
+in	I-Action
+refrigerator	B-Device
+.	I-Device
 
 After	O
 30	B-Time
 minutes	I-Time
 on	O
-shaker,	B-Device
+shaker	B-Device
+,	O
 place	B-Action
 500ml	B-Amount
 deep	B-Modifier
 plate	B-Location
 in	O
--80ºC	B-Temperature
-freezer	B-Device
+80	B-Temperature
+C	I-Temperature
+freezer	I-Temperature
 
 
 

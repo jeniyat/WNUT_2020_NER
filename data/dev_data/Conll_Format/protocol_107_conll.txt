@@ -1,7 +1,9 @@
 Transformation	B-Method
 of	O
 competent	B-Modifier
-E.coli	B-Reagent
+E	B-Reagent
+.	I-Reagent
+coli	I-Reagent
 cells	I-Reagent
 with	O
 plasmid	B-Modifier
@@ -15,51 +17,61 @@ of	O
 competent	B-Reagent
 cells	I-Reagent
 on	O
-ice.	B-Temperature
+ice	B-Temperature
+.	O
 
-Pre-chill	B-Action
-the	O
+Pre	B-Action
+chill	I-Action
+the	I-Action
 required	B-Numerical
 number	I-Numerical
-of	O
+of	I-Numerical
 empty	B-Modifier
-1.5	B-Amount
+1	I-Modifier
+.	B-Amount
+5	I-Amount
 ml	I-Amount
-microcentrifuge	B-Location
-tubes.	I-Location
+microcentrifuge	I-Amount
+tubes	B-Location
+.	I-Location
 
 Pipette	B-Action
 50	B-Amount
-µl	I-Amount
+l	I-Amount
 aliquots	B-Reagent
 of	O
 cells	B-Reagent
 into	O
 the	O
-pre-chilled	B-Modifier
-tubes.	B-Location
+pre	B-Modifier
+chilled	I-Modifier
+tubes	I-Modifier
+.	B-Location
 
 Add	B-Action
-5-10	B-Amount
-µl	I-Amount
-of	O
+5	B-Amount
+10	I-Amount
+l	I-Amount
+of	I-Amount
 a	O
 ligation	B-Reagent
 reaction	I-Reagent
 mix	I-Reagent
-or	O
-5	B-Amount
-ng	I-Amount
-of	O
+or	I-Reagent
+5	O
+ng	B-Amount
+of	I-Amount
 pure	B-Reagent
 plasmid	I-Reagent
 DNA	I-Reagent
-to	O
+to	I-Reagent
 each	O
-tube.	B-Location
+tube	B-Location
+.	I-Location
 
 Mix	B-Action
-gently!	B-Modifier
+gently	B-Modifier
+!	O
 
 Incubate	B-Action
 the	O
@@ -68,7 +80,8 @@ of	O
 ice	B-Reagent
 for	O
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Heat	B-Action
 shock	I-Action
@@ -78,7 +91,9 @@ for	O
 45	B-Time
 sec	I-Time
 at	O
-42°C.	B-Temperature
+42	B-Temperature
+C	I-Temperature
+.	O
 
 Place	B-Action
 the	O
@@ -90,11 +105,12 @@ for	O
 at	B-Modifier
 least	I-Modifier
 2	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 800	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 SOC	B-Reagent
 medium	I-Reagent
@@ -107,13 +123,17 @@ for	O
 1	B-Time
 hour	I-Time
 at	O
-37°C.	B-Temperature
+37	B-Temperature
+C	I-Temperature
+.	O
 
 Transfer	B-Action
 the	O
 cultures	B-Reagent
 to	O
-1.5	B-Amount
+1	B-Amount
+.	I-Amount
+5	I-Amount
 ml	I-Amount
 microcentrifuge	B-Location
 tubes	I-Location
@@ -124,18 +144,20 @@ for	O
 min	I-Time
 at	O
 6000	B-Speed
-rpm.	I-Speed
+rpm	I-Speed
+.	O
 
 Remove	B-Action
 800	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 the	O
 supernatant	B-Reagent
 and	O
 resuspend	B-Action
 the	O
-pellet.	B-Reagent
+pellet	B-Reagent
+.	O
 
 Plate	B-Action
 out	I-Action
@@ -149,14 +171,17 @@ plate	I-Location
 containing	O
 the	O
 appropriate	O
-antibiotic.	B-Reagent
+antibiotic	B-Reagent
+.	O
 
 Incubate	B-Action
 the	O
 plates	B-Location
 overnight	B-Time
 at	O
-37°C.	B-Temperature
+37	B-Temperature
+C	I-Temperature
+.	O
 
 
 

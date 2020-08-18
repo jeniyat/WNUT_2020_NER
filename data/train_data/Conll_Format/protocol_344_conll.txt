@@ -7,30 +7,36 @@ out	O
 of	O
 incubator	B-Device
 and	O
-pre-cool	B-Action
-on	O
-ice.	B-Reagent
+pre	B-Action
+cool	I-Action
+on	I-Action
+ice	B-Reagent
+.	I-Reagent
 
 Rinse	B-Action
 cells	B-Reagent
 gently	B-Modifier
 with	O
-ice-cold	B-Modifier
-PBS	B-Reagent
-for	O
-twice.	B-Numerical
+ice	B-Modifier
+cold	I-Modifier
+PBS	I-Modifier
+for	B-Reagent
+twice	B-Numerical
+.	I-Numerical
 
 Scrape	B-Action
 cells	B-Reagent
 and	O
 spin	B-Action
 down	I-Action
-@	O
 500	B-Speed
-rpm,	I-Speed
-10min,	B-Time
-4	I-Time
-°C.	I-Time
+rpm	I-Speed
+,	I-Speed
+10min	B-Time
+,	I-Time
+4	O
+C	B-Time
+.	I-Time
 
 Add	B-Action
 500l	B-Amount
@@ -42,32 +48,41 @@ to	O
 each	O
 cell	B-Reagent
 pellets	I-Reagent
-(upto	B-Modifier
-2E+7	B-Numerical
-cells).	B-Reagent
+upto	B-Modifier
+2E	I-Modifier
+7	B-Numerical
+cells	I-Numerical
+.	B-Reagent
 
 Rotate	B-Action
 for	O
 2h	B-Time
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 Centrifuge	B-Action
-14,000rpm	B-Speed
+14	B-Speed
+,	I-Speed
+000rpm	I-Speed
 for	O
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Save	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
-(Optional)	O
+Optional	O
 Roughly	B-Modifier
-determine	B-Action
-protein	B-Reagent
-concentration	B-Measure-Type
-with	O
-OD280.	B-Reagent
+determine	I-Modifier
+protein	B-Action
+concentration	B-Reagent
+with	B-Measure-Type
+OD280	B-Reagent
+.	I-Reagent
 
 Adjust	B-Action
 all	O
@@ -75,24 +90,27 @@ samples	B-Reagent
 to	O
 the	O
 same	B-Measure-Type
-concentration.	I-Measure-Type
+concentration	I-Measure-Type
+.	O
 
 Determine	B-Action
 amount	B-Measure-Type
 of	O
 beads	B-Reagent
 needed	O
-(Rockland	B-Reagent
+Rockland	B-Reagent
 True	I-Reagent
 Blot	I-Reagent
 IP	I-Reagent
-beads;	I-Reagent
-20	B-Amount
-ul	I-Amount
-beads	B-Reagent
-per	O
+beads	I-Reagent
+;	I-Reagent
+20	O
+ul	B-Amount
+beads	I-Amount
+per	B-Reagent
 500ul	B-Amount
-sample).	B-Reagent
+sample	I-Amount
+.	B-Reagent
 
 Wash	B-Action
 beads	B-Reagent
@@ -101,24 +119,29 @@ in	O
 lysis	B-Reagent
 buffer	I-Reagent
 for	O
-twice.	B-Numerical
+twice	B-Numerical
+.	O
 
 Spin	B-Action
 down	I-Action
-@500g,	B-Speed
-30s.	B-Time
+500g	B-Speed
+,	I-Speed
+30s	B-Time
+.	I-Time
 
 Resuspend	B-Action
 pelleted	B-Modifier
 beads	B-Reagent
 in	O
-1mg/ml	B-Concentration
-BSA	B-Reagent
-,	O
+1mg	B-Concentration
+ml	I-Concentration
+BSA	I-Concentration
+,	B-Reagent
 rotate	B-Action
-@	O
-RT,	B-Temperature
-10min.	B-Time
+RT	I-Action
+,	B-Temperature
+10min	I-Temperature
+.	B-Time
 
 Remove	B-Action
 BSA	B-Reagent
@@ -130,15 +153,18 @@ lysis	B-Reagent
 buffer	I-Reagent
 for	O
 3	B-Numerical
-times.	O
+times	O
+.	O
 
 Resuspend	B-Action
 pelleted	B-Modifier
 beads	B-Reagent
-1:1	B-Concentration
-with	O
+1	B-Concentration
+1	I-Concentration
+with	I-Concentration
 lysis	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	I-Reagent
 
 Save	B-Action
 40ul	B-Amount
@@ -148,7 +174,8 @@ lysate	I-Reagent
 per	O
 sample	B-Reagent
 as	O
-input.	O
+input	O
+.	O
 
 Add	B-Action
 primary	B-Reagent
@@ -157,64 +184,73 @@ and	O
 beads	B-Reagent
 to	O
 IP	B-Reagent
-lysate.	I-Reagent
+lysate	I-Reagent
+.	O
 
 Rotate	B-Action
-@4	B-Temperature
-degree	I-Temperature
-for	O
-overnight.	B-Time
+4	O
+degree	B-Temperature
+for	I-Temperature
+overnight	B-Time
+.	I-Time
 
 Pellet	B-Action
 beads	B-Reagent
-@	O
 500g	B-Speed
-for	O
+for	I-Speed
 30sec	B-Time
-@RT	B-Temperature
-and	O
+RT	I-Time
+and	B-Temperature
 discard	B-Action
-the	O
-supernatant.	B-Reagent
+the	I-Action
+supernatant	B-Reagent
+.	I-Reagent
 
 Wash	B-Action
 beads	B-Reagent
 in	O
 1ml	B-Amount
-ice-cold	B-Modifier
-lysis	B-Reagent
-buffer.	I-Reagent
+ice	B-Modifier
+cold	I-Modifier
+lysis	I-Modifier
+buffer	B-Reagent
+.	I-Reagent
 
 Repeat	B-Action
 3	B-Numerical
-times.	O
+times	O
+.	O
 
 Resuspend	B-Action
 beads	B-Reagent
 in	O
 30ul	B-Amount
 of	O
-2×	B-Concentration
+2	B-Concentration
 loading	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Boil	B-Action
 the	O
 beads	B-Reagent
 for	O
-5min.	B-Time
+5min	B-Time
+.	O
 
 Centrifuge	B-Action
-@	O
-RT	B-Temperature
-for	O
-1min.	B-Time
+RT	O
+for	B-Temperature
+1min	B-Time
+.	I-Time
 
 Save	B-Action
 supernatant	B-Reagent
 and	O
 perform	B-Action
-SDS-PAGE.	I-Action
+SDS	I-Action
+PAGE	I-Action
+.	I-Action
 
 
 

@@ -3,26 +3,24 @@ for	I-Method
 Cell	I-Method
 Collection	I-Method
 Pump	I-Method
-→	O
 Steel	B-Device
 filter	I-Device
 tank	I-Device
-→	O
-A/E	B-Device
+A	I-Device
+E	I-Device
 filter	I-Device
-→	O
-Durapore	B-Device
-→	O
-DI	B-Modifier
-rinsed	I-Modifier
-cubie	B-Location
-container	I-Location
-(the	O
-one	B-Mention
-the	O
+Durapore	I-Device
+DI	I-Device
+rinsed	B-Modifier
+cubie	I-Modifier
+container	B-Location
+the	I-Location
+one	O
+the	B-Mention
 sample	B-Reagent
-was	B-Modifier
-in).	I-Modifier
+was	I-Reagent
+in	B-Modifier
+.	I-Modifier
 
 Clamp	B-Action
 all	B-Modifier
@@ -31,7 +29,8 @@ to	O
 manifolds	B-Location
 and	O
 filter	B-Location
-tanks.	I-Location
+tanks	I-Location
+.	O
 
 Make	B-Action
 sure	I-Action
@@ -39,7 +38,8 @@ bleeder	B-Device
 valves	I-Device
 are	B-Location
 on	I-Location
-top.	I-Location
+top	I-Location
+.	O
 
 Turn	B-Action
 on	I-Action
@@ -47,29 +47,33 @@ pump	B-Device
 and	O
 then	O
 bleed	B-Action
-A/E	B-Device
-then	O
-Durapore	B-Device
-and	O
+A	B-Device
+E	I-Device
+then	I-Device
+Durapore	I-Device
+and	I-Device
 the	O
-A/E	B-Device
-again.	O
+A	O
+E	B-Device
+again	I-Device
+.	O
 
 Keep	B-Action
 cubie	B-Location
 container	I-Location
 on	O
-ice-	B-Location
+ice	B-Location
 water	I-Location
-will	O
+will	I-Location
 be	O
 used	B-Action
-for	O
+for	I-Action
 viral	B-Measure-Type
-concentration.	I-Measure-Type
+concentration	I-Measure-Type
+.	I-Measure-Type
 
 Place	B-Action
-“out”	B-Location
+out	B-Location
 tube	I-Location
 from	O
 Durapore	B-Device
@@ -86,7 +90,8 @@ vacuum	B-Location
 side	I-Location
 of	O
 the	O
-pump.	B-Device
+pump	B-Device
+.	O
 
 Wait	B-Action
 until	O
@@ -101,7 +106,8 @@ only	B-Modifier
 bubbles	O
 are	O
 coming	B-Action
-through.	I-Action
+through	I-Action
+.	O
 
 Open	B-Action
 steel	B-Seal
@@ -116,7 +122,8 @@ bleeder	I-Device
 valve	I-Device
 to	O
 depressurize	B-Method
-(SLOWLY).	B-Modifier
+SLOWLY	B-Modifier
+.	I-Modifier
 
 When	O
 pressure	B-Measure-Type
@@ -127,7 +134,8 @@ push	B-Action
 in	I-Action
 steel	B-Seal
 tank	I-Seal
-lid,	I-Seal
+lid	I-Seal
+,	O
 allow	O
 a	O
 few	B-Time
@@ -137,7 +145,8 @@ for	O
 water	B-Reagent
 to	O
 drain	B-Action
-through.	I-Action
+through	I-Action
+.	O
 
 Disconnect	B-Action
 clamp	B-Device
@@ -145,15 +154,19 @@ from	O
 bottom	B-Location
 side	I-Location
 of	O
-A/E	B-Device
-filter,	I-Device
+A	B-Device
+E	I-Device
+filter	I-Device
+,	I-Device
 remove	B-Action
-tube	B-Location
-from	O
-“out”	B-Location
+tube	I-Action
+from	B-Location
+out	I-Location
 side	I-Location
-of	O
-A/E.	B-Device
+of	I-Location
+A	O
+E	B-Device
+.	I-Device
 
 Place	B-Action
 Durapore	B-Device
@@ -169,75 +182,90 @@ goes	B-Action
 into	O
 the	O
 filter	B-Location
-flask.	I-Location
+flask	I-Location
+.	O
 
 Once	O
 water	B-Reagent
 is	O
-out,	B-Modifier
+out	B-Modifier
+,	O
 open	B-Action
 manifold	B-Device
-slowly,	B-Modifier
+slowly	B-Modifier
+,	O
 fold	B-Action
 up	I-Action
 filter	B-Device
 and	O
 place	B-Action
 in	O
-whirlpack.	B-Location
+whirlpack	B-Location
+.	O
 
 Remove	B-Action
 Durapore	B-Location
-“out”	I-Location
+out	I-Location
 tube	I-Location
 from	O
 filter	B-Location
-flask,	I-Location
+flask	I-Location
+,	O
 place	B-Action
-A/E	B-Location
-“out”	I-Location
+A	B-Location
+E	I-Location
+out	I-Location
 tube	I-Location
-onto	O
-filter	B-Location
-flask.	I-Location
+onto	I-Location
+filter	I-Location
+flask	I-Location
+.	I-Location
 
 Place	B-Action
-A/E	B-Device
-on	O
-knees,	B-Location
+A	B-Device
+E	I-Device
+on	I-Device
+knees	B-Location
+,	I-Location
 let	O
 water	B-Reagent
-drain	B-Action
-out	I-Action
-into	O
+drain	I-Reagent
+out	B-Action
+into	I-Action
 the	O
 filter	B-Location
 flask	I-Location
-as	O
-before.	B-Method
+as	I-Location
+before	B-Method
+.	I-Method
 
 Open	B-Action
 manifold	B-Device
-slowly,	B-Modifier
+slowly	B-Modifier
+,	O
 peel	B-Action
 off	I-Action
 ring	B-Location
 of	O
-filter,	B-Device
-discard,	B-Action
+filter	B-Device
+,	O
+discard	B-Action
+,	O
 fold	B-Device
 filter	I-Device
 and	O
 place	B-Action
 in	O
-whirlpack.	B-Location
+whirlpack	B-Location
+.	O
 
 Okay	B-Modifier
 to	O
 turn	B-Action
 off	I-Action
 pump	B-Device
-now.	O
+now	O
+.	O
 
 
 

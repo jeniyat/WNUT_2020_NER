@@ -9,7 +9,8 @@ prepare	B-Action
 a	O
 single	B-Numerical
 cell	B-Reagent
-suspension.	I-Reagent
+suspension	I-Reagent
+.	O
 
 Use	O
 slides	B-Location
@@ -23,19 +24,22 @@ spleen	B-Reagent
 through	O
 a	O
 cell	B-Device
-strainer.	I-Device
+strainer	I-Device
+.	O
 
 Pellet	B-Action
 the	O
 cells	B-Reagent
 by	O
 centrifugation	B-Method
-(350	B-Speed
+350	B-Speed
 x	I-Speed
-g);	I-Speed
+g	I-Speed
+;	I-Speed
 aspirate	B-Action
-the	O
-supernatant.	B-Reagent
+the	I-Action
+supernatant	B-Reagent
+.	I-Reagent
 
 Dilute	B-Action
 the	O
@@ -62,17 +66,20 @@ ml	I-Amount
 of	O
 1X	B-Concentration
 Lysis	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Incubate	B-Action
 on	O
 ice	B-Location
 for	O
-4-5	B-Time
+4	B-Time
+5	I-Time
 minutes	I-Time
-with	O
+with	I-Time
 occasional	B-Modifier
-shaking.	B-Action
+shaking	I-Modifier
+.	B-Action
 
 Stop	B-Action
 the	O
@@ -83,22 +90,25 @@ the	O
 Lysis	B-Reagent
 Buffer	I-Reagent
 with	O
-20-30	B-Amount
+20	B-Amount
+30	I-Amount
 ml	I-Amount
-of	O
-1X	B-Concentration
-PBS.	B-Reagent
+of	I-Amount
+1X	O
+PBS	B-Concentration
+.	B-Reagent
 
 Spin	B-Action
 the	O
 cells	B-Reagent
-(350	B-Speed
+350	B-Speed
 x	I-Speed
-g)	I-Speed
-and	O
+g	I-Speed
+and	I-Speed
 discard	B-Action
-the	O
-supernatant.	B-Reagent
+the	I-Action
+supernatant	B-Reagent
+.	I-Reagent
 
 Resuspend	B-Action
 the	O
@@ -108,15 +118,18 @@ the	O
 appropriate	B-Modifier
 buffer	B-Reagent
 Count	B-Action
-cells,	B-Reagent
+cells	B-Reagent
+,	O
 adjust	B-Action
-density,	B-Measure-Type
+density	B-Measure-Type
+,	O
 and	O
 proceed	B-Action
 with	O
 cell	B-Method
 staining	I-Method
-procedures.	I-Method
+procedures	I-Method
+.	O
 
 
 

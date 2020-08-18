@@ -1,4 +1,5 @@
-One-Step	O
+One	O
+Step	O
 Growth	O
 Curves	O
 for	O
@@ -8,7 +9,8 @@ From	O
 an	O
 already	O
 growing	O
-culture,	B-Reagent
+culture	B-Reagent
+,	O
 split	B-Action
 cells	B-Reagent
 at	O
@@ -22,12 +24,14 @@ for	O
 the	O
 one	O
 step	O
-experiment.	O
+experiment	O
+.	O
 
 Immediately	O
 after	O
 the	O
-split,	O
+split	O
+,	O
 take	B-Action
 a	O
 'time	B-Modifier
@@ -37,7 +41,8 @@ reading	I-Generic-Measure
 using	O
 a	O
 plate	B-Device
-reader.	I-Device
+reader	I-Device
+.	O
 
 Continue	B-Action
 taking	I-Action
@@ -54,7 +59,8 @@ every	I-Modifier
 day	I-Modifier
 for	O
 21	B-Time
-days.	I-Time
+days	I-Time
+.	O
 
 Graph	B-Action
 the	O
@@ -67,7 +73,8 @@ determine	B-Action
 when	O
 exponential	B-Generic-Measure
 growth	O
-occurs!	O
+occurs	O
+!	O
 
 Repeat	B-Action
 2	B-Numerical
@@ -79,7 +86,8 @@ the	O
 host	O
 growth	O
 is	O
-consistent.	O
+consistent	O
+.	O
 
 During	O
 your	O
@@ -90,7 +98,8 @@ when	O
 exponential	O
 growth	O
 is	O
-occuring,	O
+occuring	O
+,	O
 fix	B-Action
 1	B-Amount
 ml	I-Amount
@@ -98,41 +107,46 @@ of	O
 cells	B-Reagent
 with	O
 5	B-Amount
-µl	I-Amount
-25%	B-Concentration
-glutaraldehyde.	B-Reagent
+l	I-Amount
+25	B-Concentration
+glutaraldehyde	I-Concentration
+.	B-Reagent
 
 Flash	B-Action
 freeze	I-Action
 in	O
 liquid	B-Reagent
 nitrogen	I-Reagent
-daily.	B-Time
+daily	B-Time
+.	O
 
 Store	B-Action
 in	O
--80°C	B-Temperature
-freezer.	B-Location
+80	B-Temperature
+C	I-Temperature
+freezer	I-Temperature
+.	B-Location
 
 Determine	B-Action
 the	O
 cell	B-Amount
 count	I-Amount
-(using	O
+using	O
 FCM	B-Reagent
-or	O
-DAPI)	B-Reagent
-that	O
+or	I-Reagent
+DAPI	I-Reagent
+that	I-Reagent
 is	O
 associated	O
 with	O
 the	O
 culture	B-Reagent
-fluorescence	B-Generic-Measure
-level	O
+fluorescence	I-Reagent
+level	B-Generic-Measure
 during	O
 exponential	O
-growth.	O
+growth	O
+.	O
 
 It	O
 is	O
@@ -142,10 +156,12 @@ infect	B-Action
 the	O
 host	B-Reagent
 in	B-Modifier
-late-exponential	I-Modifier
-(log	I-Modifier
-linear)	I-Modifier
-phase.	I-Modifier
+late	I-Modifier
+exponential	I-Modifier
+log	I-Modifier
+linear	I-Modifier
+phase	I-Modifier
+.	I-Modifier
 
 Do	B-Action
 a	I-Action
@@ -154,14 +170,16 @@ assay	I-Action
 to	O
 determine	B-Action
 the	O
-PFU/ml	B-Concentration
-of	O
+PFU	B-Concentration
+ml	I-Concentration
+of	I-Concentration
 the	O
 lysate	B-Reagent
-you	O
+you	I-Reagent
 plan	O
 to	O
-use.	O
+use	O
+.	O
 
 Calculate	B-Action
 the	O
@@ -169,7 +187,8 @@ volume	B-Measure-Type
 needed	O
 for	O
 107	B-Numerical
-phages.	B-Reagent
+phages	B-Reagent
+.	O
 
 Determine	B-Action
 the	O
@@ -180,8 +199,10 @@ to	O
 sample	O
 during	O
 the	O
-one-step	O
-experiement.	O
+one	O
+step	O
+experiement	O
+.	O
 
 Prepare	B-Action
 dilutions	B-Reagent
@@ -197,43 +218,50 @@ the	I-Method
 table	I-Method
 found	I-Method
 in	I-Method
-guidelines.	I-Method
+guidelines	I-Method
+.	O
 
 Turn	B-Action
 on	I-Action
 water	B-Location
 bath	I-Location
 to	O
-35°C	B-Temperature
+35	B-Temperature
+C	I-Temperature
 Label	B-Action
 a	O
 1L	B-Amount
 flask	B-Location
 with	O
 the	O
-phage,	B-Reagent
-host,	I-Reagent
+phage	B-Reagent
+,	O
+host	B-Reagent
+,	O
 and	O
 your	O
-initials.	O
+initials	O
+.	O
 
 Add	B-Action
 396	B-Amount
 ml	I-Amount
 SN	B-Reagent
 media	I-Reagent
-(or	O
+or	O
 however	O
 much	O
 to	O
-q.	O
+q	O
+.	O
 to	O
 400	B-Amount
-ml)	I-Amount
-to	O
+ml	I-Amount
+to	I-Amount
 the	O
-1L	B-Amount
-flask.	B-Location
+1L	O
+flask	B-Amount
+.	B-Location
 
 Label	B-Action
 1	B-Numerical
@@ -242,8 +270,9 @@ snap	B-Location
 cap	I-Location
 tube	I-Location
 the	B-Device
-"Infection	I-Device
-Tube".	I-Device
+Infection	I-Device
+Tube	I-Device
+.	I-Device
 
 Label	B-Action
 230	B-Numerical
@@ -253,33 +282,38 @@ cap	I-Location
 tubes	I-Location
 with	O
 the	B-Device
-red,	I-Device
+red	I-Device
+,	I-Device
 bolded	I-Device
 text	I-Device
-ids.	I-Device
+ids	I-Device
+.	O
 
 Add	B-Action
 1ml	B-Amount
 host	B-Reagent
 to	O
 each	B-Modifier
-tube.	B-Location
+tube	B-Location
+.	O
 
 Days	B-Time
 in	O
-advance,	O
+advance	O
+,	O
 pour	B-Action
 240	B-Numerical
 SN	B-Reagent
 bottom	I-Reagent
 agar	I-Reagent
 plates	I-Reagent
-(2ml	B-Amount
-SN	B-Reagent
-bottom	I-Reagent
+2ml	B-Amount
+SN	I-Amount
+bottom	B-Reagent
 agar	I-Reagent
-per	O
-plate).	B-Location
+per	I-Reagent
+plate	B-Location
+.	I-Location
 
 Lay	B-Action
 out	I-Action
@@ -287,7 +321,8 @@ the	O
 SN	B-Reagent
 bottom	I-Reagent
 agar	I-Reagent
-plates.	I-Reagent
+plates	I-Reagent
+.	O
 
 Label	B-Action
 230	B-Numerical
@@ -297,31 +332,37 @@ agar	I-Reagent
 plates	I-Reagent
 with	O
 the	O
-red,	O
+red	O
+,	O
 bolded	O
 text	O
-ids.	O
+ids	O
+.	O
 
 Label	B-Action
 2	B-Numerical
 plates	B-Location
-"Host	O
-(-)"	O
-Label	B-Action
-1.5µl	B-Amount
-centrifuge	B-Location
-tubes	I-Location
-with	O
-ALL	O
+Host	O
+Label	O
+1	B-Action
+.	I-Action
+5	I-Action
+l	I-Action
+centrifuge	I-Action
+tubes	B-Location
+with	I-Location
+ALL	I-Location
 THE	O
 IDS	O
-(See	O
+See	O
 table	O
 1	O
-guidelines).	O
+guidelines	O
+.	O
 
 Add	B-Action
-900µl	B-Amount
+900	B-Amount
+l	I-Amount
 SN	B-Reagent
 media	I-Reagent
 to	O
@@ -329,10 +370,12 @@ the	B-Location
 ids	I-Location
 highlighted	I-Location
 in	I-Location
-yellow.	I-Location
+yellow	I-Location
+.	O
 
 Add	B-Action
-990µl	B-Amount
+990	B-Amount
+l	I-Amount
 SN	B-Reagent
 media	I-Reagent
 to	O
@@ -340,12 +383,14 @@ the	B-Location
 ids	I-Location
 highlighted	I-Location
 in	I-Location
-blue.	I-Location
+blue	I-Location
+.	O
 
 Microwave	B-Action
 SN	B-Reagent
 top	I-Reagent
-agar.	I-Reagent
+agar	I-Reagent
+.	O
 
 Aliquot	B-Action
 heated	B-Modifier
@@ -356,15 +401,18 @@ agar	I-Reagent
 into	O
 50ml	B-Amount
 conical	B-Location
-tubes.	I-Location
+tubes	I-Location
+.	O
 
 Keep	B-Action
 warm	I-Action
 in	O
 the	O
-35°C	B-Temperature
+35	B-Temperature
+C	I-Temperature
 water	B-Location
-bath.	I-Location
+bath	I-Location
+.	O
 
 Determine	B-Action
 the	O
@@ -380,7 +428,8 @@ want	O
 to	O
 start	O
 the	O
-infection.	O
+infection	O
+.	O
 
 Calculate	B-Action
 the	O
@@ -392,12 +441,14 @@ needed	O
 for	O
 108	B-Numerical
 cells	B-Reagent
-(q.	O
+q	O
+.	O
 to	O
 2ml	B-Amount
-with	O
-SN	B-Reagent
-media).	I-Reagent
+with	I-Amount
+SN	O
+media	B-Reagent
+.	I-Reagent
 
 Pipet	B-Action
 this	B-Amount
@@ -410,21 +461,24 @@ snap	B-Location
 cap	I-Location
 tube	I-Location
 labeled	B-Modifier
-"Infection	I-Modifier
-Tube".	I-Modifier
+Infection	I-Modifier
+Tube	I-Modifier
+.	I-Modifier
 
 Add	B-Action
 107	B-Numerical
 phages	B-Reagent
-(q.	O
+q	O
+.	O
 to	O
 2ml	B-Amount
-with	O
-SN	B-Reagent
-media)	I-Reagent
-to	O
+with	I-Amount
+SN	O
+media	B-Reagent
+to	I-Reagent
 the	O
-tube.	B-Location
+tube	B-Location
+.	I-Location
 
 Allow	B-Action
 the	O
@@ -437,7 +491,8 @@ host	B-Reagent
 cells	I-Reagent
 for	O
 1	B-Time
-hour.	I-Time
+hour	I-Time
+.	O
 
 Put	B-Action
 the	O
@@ -456,7 +511,9 @@ dilute	B-Action
 the	O
 infection	B-Reagent
 to	O
-1:100.	B-Concentration
+1	B-Concentration
+100	I-Concentration
+.	I-Concentration
 
 Take	B-Action
 a	I-Action
@@ -464,24 +521,28 @@ sample	I-Action
 immediately	B-Time
 after	I-Time
 dilution	I-Time
--	O
 this	O
 is	O
 time	O
-0.	O
+0	O
+.	O
 
 Remove	B-Action
 the	O
 plunger	B-Seal
 of	O
 1ml	B-Amount
-luer-lock	B-Device
-syringe.	I-Device
+luer	B-Device
+lock	I-Device
+syringe	I-Device
+.	I-Device
 
 Add	B-Action
 a	O
-0.2	B-Size
-µm	I-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 25mm	I-Size
 diameter	I-Size
 syringe	B-Seal
@@ -489,7 +550,8 @@ filter	I-Seal
 to	O
 the	B-Location
 syringe	I-Location
-end.	I-Location
+end	I-Location
+.	O
 
 Pipet	B-Action
 1	B-Amount
@@ -504,7 +566,8 @@ using	O
 1	B-Amount
 ml	I-Amount
 serological	B-Device
-pipet.	I-Device
+pipet	I-Device
+.	O
 
 Add	B-Action
 the	O
@@ -514,7 +577,10 @@ to	O
 the	O
 syringe	B-Location
 and	O
-0.2µm	B-Size
+0	B-Size
+.	I-Size
+2	I-Size
+m	I-Size
 syringe	B-Seal
 filter	I-Seal
 the	O
@@ -522,10 +588,13 @@ the	O
 ml	O
 into	O
 a	O
-1.5	B-Amount
+1	B-Amount
+.	I-Amount
+5	I-Amount
 ml	I-Amount
 centrifuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Perform	B-Action
 a	I-Action
@@ -539,31 +608,38 @@ to	O
 102	B-Concentration
 per	I-Concentration
 ml	I-Concentration
-(10-3	I-Concentration
-dilution).	I-Concentration
+10	I-Concentration
+3	I-Concentration
+dilution	I-Concentration
+.	I-Concentration
 
 Add	B-Action
-250µl	B-Amount
+250	B-Amount
+l	I-Amount
 of	O
 the	O
-10-3	B-Concentration
-dilution	B-Reagent
-and	O
-250µl	B-Amount
-of	O
+10	B-Concentration
+3	I-Concentration
+dilution	I-Concentration
+and	B-Reagent
+250	B-Amount
+l	I-Amount
+of	I-Amount
 the	O
-10-2	B-Concentration
-dilution	B-Reagent
-to	O
+10	O
+2	B-Concentration
+dilution	I-Concentration
+to	B-Reagent
 the	O
 corresponding	O
 15ml	B-Amount
-snap	B-Location
-cap	I-Location
+snap	I-Amount
+cap	B-Location
 tube	I-Location
-with	O
-1ml	B-Amount
-host.	B-Reagent
+with	I-Location
+1ml	O
+host	B-Amount
+.	B-Reagent
 
 Allow	B-Action
 phage	B-Reagent
@@ -573,7 +649,8 @@ to	O
 incubate	B-Action
 for	O
 2	B-Time
-hours.	I-Time
+hours	I-Time
+.	O
 
 Plate	B-Action
 using	O
@@ -582,7 +659,8 @@ SN	B-Reagent
 top	I-Reagent
 agar	I-Reagent
 per	O
-plate.	B-Location
+plate	B-Location
+.	O
 
 Pipette	B-Action
 1ml	B-Amount
@@ -591,7 +669,9 @@ the	B-Location
 flask	I-Location
 into	O
 a	O
-1.5ml	B-Amount
+1	B-Amount
+.	I-Amount
+5ml	I-Amount
 centrifuge	B-Location
 tube	I-Location
 using	O
@@ -599,7 +679,8 @@ the	O
 same	B-Modifier
 1ml	B-Amount
 serological	B-Device
-pipette.	I-Device
+pipette	I-Device
+.	O
 
 Perform	B-Action
 a	O
@@ -613,30 +694,37 @@ to	O
 102	B-Concentration
 per	I-Concentration
 ml	I-Concentration
-(10-3).	I-Concentration
+10	I-Concentration
+3	I-Concentration
+.	I-Concentration
 
 Add	B-Action
-250µl	B-Amount
+250	B-Amount
+l	I-Amount
 of	O
 the	O
-10-3	B-Concentration
-dilution	B-Reagent
-and	O
-250µl	B-Amount
-of	O
+10	B-Concentration
+3	I-Concentration
+dilution	I-Concentration
+and	B-Reagent
+250	B-Amount
+l	I-Amount
+of	I-Amount
 the	O
-10-2	B-Concentration
-dilution	B-Reagent
-to	O
+10	O
+2	B-Concentration
+dilution	I-Concentration
+to	B-Reagent
 the	O
 corresponding	O
 15ml	B-Amount
-snap	B-Location
-cap	I-Location
+snap	I-Amount
+cap	B-Location
 tube	I-Location
-with	O
-1ml	B-Amount
-host.	B-Reagent
+with	I-Location
+1ml	O
+host	B-Amount
+.	B-Reagent
 
 Allow	B-Action
 phage	B-Reagent
@@ -656,7 +744,8 @@ SN	B-Reagent
 top	I-Reagent
 agar	I-Reagent
 per	B-Modifier
-plate.	I-Modifier
+plate	I-Modifier
+.	O
 
 Continue	B-Action
 sampling	I-Action
@@ -666,14 +755,15 @@ way	I-Modifier
 for	O
 16	B-Time
 hours	I-Time
-(and	O
+and	O
 sample	B-Action
-one	B-Numerical
-more	I-Numerical
+one	I-Action
+more	B-Numerical
 time	I-Numerical
-at	O
-24	B-Time
-hrs).	I-Time
+at	I-Numerical
+24	O
+hrs	B-Time
+.	I-Time
 
 At	O
 later	O
@@ -685,7 +775,8 @@ will	O
 need	O
 to	O
 be	O
-plated.	B-Action
+plated	B-Action
+.	O
 
 Be	O
 generous	O
@@ -693,12 +784,24 @@ with	O
 what	O
 you	O
 plate	B-Action
-(i.e.,	O
+i	O
+.	O
+e	O
+.	O
+,	O
 plate	B-Action
-10-2,	B-Concentration
-10-3,	I-Concentration
-10-4,	I-Concentration
-10-5).	I-Concentration
+10	I-Action
+2	B-Concentration
+,	I-Concentration
+10	I-Concentration
+3	I-Concentration
+,	I-Concentration
+10	I-Concentration
+4	I-Concentration
+,	I-Concentration
+10	I-Concentration
+5	I-Concentration
+.	I-Concentration
 
 The	O
 serial	B-Method
@@ -708,11 +811,12 @@ be	O
 performed	O
 as	O
 shown	O
-below:	O
+below	O
 
 In	O
 seven	B-Time
-days,	I-Time
+days	I-Time
+,	O
 count	B-Action
 the	O
 plaques	B-Reagent
@@ -725,7 +829,8 @@ a	O
 countable	O
 number	O
 of	O
-them.	B-Mention
+them	B-Mention
+.	O
 
 Count	B-Action
 again	I-Action
@@ -733,35 +838,40 @@ on	O
 day	B-Time
 14	I-Time
 and	O
-21.	B-Time
+21	B-Time
+.	O
 
 Calculate	B-Action
-PFU/ml	B-Concentration
-at	O
+PFU	B-Concentration
+ml	I-Concentration
+at	I-Concentration
 each	B-Time
 time	I-Time
 point	I-Time
-for	O
+for	I-Time
 both	O
 the	O
 centrifuged	B-Modifier
-(free	I-Modifier
+free	I-Modifier
 phage	I-Modifier
-only)	I-Modifier
-and	O
-not	B-Modifier
-centrifuged	I-Modifier
-(total	I-Modifier
-phage)	I-Modifier
-samples.	B-Reagent
+only	I-Modifier
+and	I-Modifier
+not	O
+centrifuged	B-Modifier
+total	I-Modifier
+phage	I-Modifier
+samples	I-Modifier
+.	B-Reagent
 
 Graph	B-Action
 the	I-Action
-results.	I-Action
+results	I-Action
+.	O
 
 Calculate	B-Action
 burst	B-Measure-Type
-size.	I-Measure-Type
+size	I-Measure-Type
+.	O
 
 Take	B-Action
 the	O
@@ -778,7 +888,8 @@ plateau	O
 before	O
 the	O
 burst	O
-(A).	O
+A	O
+.	O
 
 Take	B-Action
 the	O
@@ -795,12 +906,14 @@ plateau	O
 after	O
 the	O
 burst	O
-(B).	O
+B	O
+.	O
 
 Subtract	B-Action
 A	O
 and	O
-B.	O
+B	O
+.	O
 
 This	O
 the	O
@@ -810,7 +923,8 @@ or	O
 new	O
 phages	O
 released	O
-(C).	O
+C	O
+.	O
 
 Divide	B-Action
 C	O
@@ -820,20 +934,22 @@ number	O
 of	O
 infecting	O
 phage	O
-(TOTAL	O
+TOTAL	O
 phages	O
 at	O
 T0	O
 minus	O
 FREE	O
 at	O
-T0).	O
+T0	O
+.	O
 
 This	O
 is	O
 the	O
 burst	B-Generic-Measure
-size.	I-Generic-Measure
+size	I-Generic-Measure
+.	O
 
 
 

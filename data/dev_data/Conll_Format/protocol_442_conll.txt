@@ -10,25 +10,32 @@ into	O
 a	O
 1L	B-Amount
 Erlenmeyer	B-Location
-flask:	I-Location
-5g	B-Amount
-NaCl	B-Reagent
-5g	B-Amount
-Tryptone	B-Reagent
-2.5g	B-Amount
-Yeast.	B-Reagent
+flask	I-Location
+5g	O
+NaCl	B-Amount
+5g	B-Reagent
+Tryptone	B-Amount
+2	B-Reagent
+.	B-Amount
+5g	I-Amount
+Yeast	I-Amount
+.	B-Reagent
 
 Extract	B-Action
-7.5g	B-Amount
+7	B-Amount
+.	I-Amount
+5g	I-Amount
 Agar	B-Reagent
 add	B-Action
-(dH2O)	B-Reagent
-to	O
-500mL.	B-Amount
+dH2O	B-Reagent
+to	I-Reagent
+500mL	B-Amount
+.	I-Amount
 
 Swirl	B-Action
 to	O
-mix.	B-Action
+mix	B-Action
+.	O
 
 Cover	B-Action
 the	O
@@ -43,7 +50,8 @@ and	O
 label	B-Action
 with	O
 autoclave	B-Seal
-tape.	I-Seal
+tape	I-Seal
+.	O
 
 Autoclave	B-Action
 on	O
@@ -58,7 +66,8 @@ according	O
 to	O
 your	O
 autoclave's	B-Device
-specifications.	O
+specifications	O
+.	O
 
 After	O
 removing	B-Action
@@ -66,7 +75,8 @@ the	O
 solution	B-Reagent
 from	O
 the	O
-autoclave,	B-Device
+autoclave	B-Device
+,	O
 allow	B-Action
 the	O
 agar	B-Reagent
@@ -74,7 +84,9 @@ solution	I-Reagent
 to	O
 cool	B-Action
 to	O
-55°C.	B-Temperature
+55	B-Temperature
+C	I-Temperature
+.	O
 
 Add	B-Action
 the	O
@@ -86,30 +98,35 @@ antibiotic	B-Reagent
 to	O
 the	O
 solution	B-Reagent
-(500μL	B-Amount
-if	O
+500	B-Amount
+L	I-Amount
+if	I-Amount
 you	O
 are	O
 using	O
 a	O
-1,000x	B-Concentration
-antibiotic	B-Reagent
-stock)	I-Reagent
-and	O
+1	O
+,	B-Concentration
+000x	I-Concentration
+antibiotic	I-Concentration
+stock	B-Reagent
+and	I-Reagent
 swirl	B-Action
-to	O
-mix.	B-Action
+to	I-Action
+mix	O
+.	B-Action
 
 Pour	B-Action
-~20mL	B-Modifier
-of	O
-LB	B-Reagent
-agar	I-Reagent
-per	O
+20mL	B-Modifier
+of	B-Amount
+LB	O
+agar	B-Reagent
+per	I-Reagent
 10cm	B-Size
-polystyrene	B-Modifier
-Petri	B-Location
-dish.	I-Location
+polystyrene	I-Size
+Petri	B-Modifier
+dish	B-Location
+.	I-Location
 
 Place	B-Action
 the	O
@@ -123,10 +140,12 @@ them	B-Mention
 to	O
 cool	B-Action
 for	O
-30-60	B-Time
+30	B-Time
+60	I-Time
 minutes	I-Time
-(until	O
-solidified).	B-Modifier
+until	I-Time
+solidified	B-Modifier
+.	I-Modifier
 
 Invert	B-Action
 the	O
@@ -139,7 +158,8 @@ several	B-Time
 more	I-Time
 hours	I-Time
 or	O
-overnight.	B-Time
+overnight	B-Time
+.	O
 
 Label	B-Action
 the	O
@@ -160,7 +180,9 @@ sealed	B-Action
 with	O
 parafilm	B-Seal
 at	O
-4°C.	B-Temperature
+4	B-Temperature
+C	I-Temperature
+.	O
 
 
 

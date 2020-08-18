@@ -1,25 +1,31 @@
 Protein	B-Reagent
 Expression	B-Method
 Using	O
-BL21(DE3)	B-Reagent
-(C2527)	O
+BL21	B-Reagent
+DE3	I-Reagent
+C2527	I-Reagent
 
 Transform	B-Action
 expression	B-Reagent
 plasmid	I-Reagent
 into	O
-BL21(DE3).	B-Reagent
+BL21	B-Reagent
+DE3	I-Reagent
+.	I-Reagent
 
 Plate	B-Action
 on	O
 antibiotic	B-Location
 selection	I-Location
-plates.	I-Location
+plates	I-Location
+.	O
 
 Incubate	B-Action
 overnight	B-Time
 at	O
-37°C.	B-Temperature
+37	B-Temperature
+C	I-Temperature
+.	O
 
 Resuspend	B-Action
 a	O
@@ -31,22 +37,30 @@ ml	I-Amount
 liquid	B-Reagent
 culture	I-Reagent
 with	I-Reagent
-antibiotic.	I-Reagent
+antibiotic	I-Reagent
+.	O
 
 Incubate	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 until	O
 OD600	B-Measure-Type
 reaches	B-Action
-0.4–0.8.	B-Numerical
+0	B-Numerical
+.	I-Numerical
+4	I-Numerical
+0	I-Numerical
+.	I-Numerical
+8	I-Numerical
+.	O
 
 Induce	B-Action
 with	O
 4	B-Numerical
 or	O
 40	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 a	O
 100	B-Concentration
@@ -54,21 +68,23 @@ mM	I-Concentration
 stock	O
 of	O
 IPTG	B-Reagent
-(final	I-Reagent
+final	I-Reagent
 concentration	I-Reagent
-of	O
-40	B-Numerical
-or	O
+of	I-Reagent
+40	O
+or	B-Numerical
 400	B-Concentration
-µM)	I-Concentration
-Induce	B-Action
-for	O
-3	B-Time
-to	I-Time
-5	I-Time
+M	I-Concentration
+Induce	I-Concentration
+for	B-Action
+3	O
+to	O
+5	B-Time
 hours	I-Time
-at	O
-37°C.	B-Temperature
+at	I-Time
+37	O
+C	B-Temperature
+.	I-Temperature
 
 Check	B-Action
 for	O
@@ -78,12 +94,14 @@ by	O
 Coomassie	B-Reagent
 stained	I-Reagent
 protein	I-Reagent
-gel,	I-Reagent
+gel	I-Reagent
+,	O
 Western	B-Action
 Blot	I-Action
 or	O
 activity	B-Action
-assay.	I-Action
+assay	I-Action
+.	O
 
 Check	B-Action
 expression	B-Method
@@ -93,14 +111,14 @@ the	O
 total	B-Modifier
 cell	B-Reagent
 extract	I-Reagent
-(soluble	B-Modifier
-+	O
-insoluble)	B-Modifier
-and	O
+soluble	B-Modifier
+insoluble	I-Modifier
+and	I-Modifier
 the	O
 soluble	B-Modifier
-fraction	B-Reagent
-only.	O
+fraction	I-Modifier
+only	B-Reagent
+.	O
 
 
 

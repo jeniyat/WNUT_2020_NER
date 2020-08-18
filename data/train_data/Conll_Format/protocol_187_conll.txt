@@ -11,7 +11,8 @@ separate	B-Action
 1	B-Numerical
 mosquito	B-Reagent
 per	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Add	B-Action
 25	B-Amount
@@ -19,13 +20,15 @@ uL	I-Amount
 of	O
 fly	B-Reagent
 grinding	I-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Grind	B-Action
 mosquitoes	B-Reagent
 with	O
 a	O
-pestle.	B-Device
+pestle	B-Device
+.	O
 
 Rinse	B-Action
 pestle	B-Device
@@ -33,7 +36,8 @@ with	O
 25	B-Amount
 uL	I-Amount
 of	O
-buffer.	B-Reagent
+buffer	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -41,19 +45,22 @@ at	O
 C	I-Temperature
 for	O
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 7uL	B-Amount
 8M	B-Concentration
-KAc.	B-Reagent
+KAc	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O
 ice	B-Temperature
 for	O
 30	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -63,40 +70,44 @@ for	O
 15	B-Time
 min	I-Time
 at	O
-RT.	B-Temperature
+RT	B-Temperature
+.	O
 
 Collect	B-Action
 supernatant	B-Reagent
 and	O
 add	B-Action
-0.7	B-Amount
+0	B-Amount
+.	I-Amount
+7	I-Amount
 vol	I-Amount
-(28	I-Amount
+28	I-Amount
 uL	I-Amount
-over	O
-40	B-Amount
-uL)	I-Amount
-of	O
+over	I-Amount
+40	O
+uL	B-Amount
+of	I-Amount
 room	B-Temperature
 temperature	I-Temperature
-of	O
+of	I-Temperature
 isopropanol	B-Reagent
-(or	O
-1	B-Amount
-vol	I-Amount
-of	O
-ice	B-Modifier
-cold	I-Modifier
-100%	B-Concentration
-EtOH)	B-Reagent
-and	O
-incubate	B-Action
-for	O
-5	B-Time
-min	I-Time
+or	I-Reagent
+1	O
+vol	O
+of	B-Amount
+ice	I-Amount
+cold	B-Modifier
+100	I-Modifier
+EtOH	B-Concentration
+and	B-Reagent
+incubate	I-Reagent
+for	B-Action
+5	I-Action
+min	I-Action
 at	O
-room	B-Temperature
-temperature.	I-Temperature
+room	B-Time
+temperature	B-Temperature
+.	I-Temperature
 
 Centrifuge	B-Action
 at	O
@@ -106,7 +117,8 @@ for	O
 min	I-Time
 at	O
 max	B-Speed
-speed.	I-Speed
+speed	I-Speed
+.	O
 
 Discard	B-Action
 supernatant	B-Reagent
@@ -114,8 +126,9 @@ and	O
 add	B-Action
 100	B-Amount
 uL	I-Amount
-70%	B-Concentration
-EtOH.	B-Reagent
+70	B-Concentration
+EtOH	I-Concentration
+.	B-Reagent
 
 Centrifuge	B-Action
 for	O
@@ -124,7 +137,8 @@ at	O
 max	B-Speed
 speed	I-Speed
 at	O
-RT.	B-Temperature
+RT	B-Temperature
+.	O
 
 Discard	B-Action
 supernatant	B-Reagent
@@ -132,8 +146,9 @@ and	O
 add	B-Action
 100	B-Amount
 uL	I-Amount
-100%	B-Concentration
-EtOH.	B-Reagent
+100	B-Concentration
+EtOH	I-Concentration
+.	B-Reagent
 
 Centrifuge	B-Action
 for	O
@@ -143,7 +158,8 @@ at	O
 max	B-Speed
 speed	I-Speed
 at	O
-RT.	B-Temperature
+RT	B-Temperature
+.	O
 
 Discard	B-Action
 supernatant	B-Reagent
@@ -154,11 +170,13 @@ at	O
 RT	B-Temperature
 for	O
 1	B-Time
-hour.	I-Time
+hour	I-Time
+.	O
 
 Resuspend	B-Action
 in	O
-TE,	B-Reagent
+TE	B-Reagent
+,	O
 heat	B-Action
 for	O
 10	B-Time

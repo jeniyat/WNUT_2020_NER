@@ -3,7 +3,9 @@ Rich	I-Reagent
 Medium	I-Reagent
 
 Add	B-Action
-5.0	B-Amount
+5	B-Amount
+.	I-Amount
+0	I-Amount
 g	I-Amount
 Yeast	B-Reagent
 Extract	I-Reagent
@@ -12,7 +14,8 @@ a	O
 1	B-Amount
 Liter	I-Amount
 Erlenmeyer	B-Location
-Flask.	I-Location
+Flask	I-Location
+.	O
 
 Add	B-Action
 30	B-Amount
@@ -22,46 +25,62 @@ or	O
 Dextrose	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Add	B-Action
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 g	I-Amount
 Adenine	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Add	B-Action
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 g	I-Amount
 Uracil	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Add	B-Action
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 g	I-Amount
 Histidine	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Add	B-Action
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 Leucine	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Add	B-Action
-0.25	B-Amount
+0	B-Amount
+.	I-Amount
+25	I-Amount
 g	I-Amount
 Lysine	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -69,21 +88,23 @@ g	I-Amount
 Arginine	B-Reagent
 to	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
-Optional:	O
+Optional	O
 For	O
 solid	B-Modifier
-medium	B-Reagent
-add	B-Action
-20	B-Amount
-g	I-Amount
-Difco	B-Reagent
-Bacto	I-Reagent
+medium	I-Modifier
+add	B-Reagent
+20	B-Action
+g	B-Amount
+Difco	I-Amount
+Bacto	B-Reagent
 Agar	I-Reagent
-to	O
+to	I-Reagent
 the	O
-flask.	B-Location
+flask	B-Location
+.	I-Location
 
 Fill	B-Action
 the	O
@@ -98,7 +119,8 @@ Liter	I-Amount
 mark	O
 on	O
 the	O
-flask.	B-Location
+flask	B-Location
+.	O
 
 Place	B-Action
 a	O
@@ -122,7 +144,8 @@ the	O
 powder	B-Reagent
 into	O
 the	O
-water.	B-Reagent
+water	B-Reagent
+.	O
 
 Remove	B-Action
 the	O
@@ -131,7 +154,8 @@ bar	I-Device
 with	O
 a	O
 magnetic	B-Device
-rod.	I-Device
+rod	I-Device
+.	O
 
 Place	B-Action
 aluminum	B-Reagent
@@ -151,11 +175,13 @@ liquid	B-Method
 cycle	I-Method
 for	O
 20	B-Time
-minutes.	I-Time
+minutes	I-Time
+.	O
 
 If	O
 solid	B-Modifier
-medium,	B-Reagent
+medium	B-Reagent
+,	O
 pour	B-Action
 while	O
 still	O
@@ -173,11 +199,13 @@ overnight	B-Time
 on	O
 the	O
 lab	B-Location
-bench.	I-Location
+bench	I-Location
+.	O
 
 If	O
 liquid	B-Modifier
-medium,	B-Reagent
+medium	B-Reagent
+,	O
 aliquot	B-Action
 into	O
 smaller	O
@@ -185,9 +213,9 @@ amounts	O
 and	O
 store	B-Action
 at	O
-+	O
-4	B-Temperature
-C.	I-Temperature
+4	O
+C	B-Temperature
+.	I-Temperature
 
 
 

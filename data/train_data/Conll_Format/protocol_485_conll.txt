@@ -1,7 +1,8 @@
 NATURAL	B-Modifier
-SEAWATER-BASED	I-Modifier
-PRO99	B-Reagent
-MEDIUM	I-Reagent
+SEAWATER	I-Modifier
+BASED	I-Modifier
+PRO99	I-Modifier
+MEDIUM	B-Reagent
 
 Prepare	B-Action
 a	O
@@ -15,8 +16,10 @@ cleaning	B-Action
 with	O
 acid	B-Reagent
 and	O
-Milli-Q	B-Reagent
-water.	I-Reagent
+Milli	B-Reagent
+Q	I-Reagent
+water	I-Reagent
+.	I-Reagent
 
 Filter	B-Action
 raw	B-Modifier
@@ -24,16 +27,21 @@ seawater	B-Reagent
 through	O
 47mm	B-Size
 Whatman	B-Device
-GF/F	I-Device
-stacked	B-Action
-on	O
+GF	I-Device
+F	I-Device
+stacked	I-Device
+on	B-Action
 top	B-Location
-of	O
+of	I-Location
 a	O
 47mm	B-Size
-0.2µm	I-Size
-polycarbonate	B-Device
-filter.	I-Device
+0	I-Size
+.	I-Size
+2	I-Size
+m	I-Size
+polycarbonate	I-Size
+filter	B-Device
+.	I-Device
 
 Autoclave	B-Action
 seawater	B-Reagent
@@ -41,43 +49,55 @@ in	O
 a	O
 Teflon	B-Location
 bottle	I-Location
-(60	B-Time
+60	B-Time
 minutes	I-Time
-for	O
-2L).	B-Amount
+for	I-Time
+2L	O
+.	B-Amount
 
 Allow	O
 to	O
 cool	B-Action
-overnight.	B-Time
+overnight	B-Time
+.	O
 
 Prepare	B-Action
-0.5M	B-Concentration
+0	B-Concentration
+.	I-Concentration
+5M	I-Concentration
 NH4Cl	B-Reagent
-solution.	I-Reagent
+solution	I-Reagent
+.	O
 
 Prepare	B-Action
-0.025M	B-Concentration
-NaH2PO4·H2O	B-Reagent
-solution.	I-Reagent
+0	B-Concentration
+.	I-Concentration
+025M	I-Concentration
+NaH2PO4	B-Reagent
+H2O	I-Reagent
+solution	I-Reagent
+.	O
 
 Prepare	B-Action
 primary	B-Reagent
 trace	I-Reagent
 metal	I-Reagent
-stocks.	I-Reagent
+stocks	I-Reagent
+.	I-Reagent
 
 Prepare	B-Action
 trace	B-Reagent
 metal	I-Reagent
 working	I-Reagent
-stock.	I-Reagent
+stock	I-Reagent
+.	I-Reagent
 
 To	O
 make	B-Action
 up	I-Action
 the	O
-media,	B-Reagent
+media	B-Reagent
+,	O
 add	B-Action
 following	B-Amount
 volumes	I-Amount
@@ -94,19 +114,33 @@ liter	I-Amount
 of	O
 the	O
 autoclaved	B-Modifier
-seawater.	B-Reagent
+seawater	B-Reagent
+.	O
 
 NutrientVolumeFiltered	B-Modifier
 Seawater	B-Reagent
-1000.0mL0.5M	B-Amount
+1000	B-Amount
+.	I-Amount
+0mL0	I-Amount
+.	B-Concentration
+5M	I-Concentration
 NH4Cl	B-Reagent
-1.6mL0.025M	B-Amount
-NaH2PO4·H2O	B-Reagent
-2.0mLTrace	B-Amount
+1	B-Amount
+.	I-Amount
+6mL0	I-Amount
+.	B-Concentration
+025M	I-Concentration
+NaH2PO4	B-Reagent
+H2O	I-Reagent
+2	B-Amount
+.	I-Amount
+0mLTrace	I-Amount
 metal	B-Reagent
 working	I-Reagent
 stock	I-Reagent
-100µL.	B-Amount
+100	B-Amount
+L	I-Amount
+.	O
 
 Store	B-Action
 at	O
@@ -116,7 +150,8 @@ for	O
 up	B-Modifier
 to	I-Modifier
 one	B-Time
-month.	I-Time
+month	I-Time
+.	O
 
 
 

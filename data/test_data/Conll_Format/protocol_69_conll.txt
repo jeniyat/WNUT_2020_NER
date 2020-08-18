@@ -8,7 +8,8 @@ Trypsin	B-Reagent
 and	O
 gently	B-Modifier
 shake	B-Action
-plate.	B-Location
+plate	B-Location
+.	O
 
 Add	B-Action
 8ml	B-Amount
@@ -18,13 +19,15 @@ without	I-Reagent
 LIF	I-Reagent
 to	O
 inactivate	B-Action
-trypsin.	B-Reagent
+trypsin	B-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
 500rpm	B-Speed
 for	O
-10min.	B-Time
+10min	B-Time
+.	O
 
 Add	B-Action
 8ml	B-Amount
@@ -34,9 +37,11 @@ medium	I-Reagent
 to	O
 each	B-Modifier
 10cm	B-Size
-petri-dish	B-Location
-while	O
-centrifuging.	B-Method
+petri	B-Location
+dish	I-Location
+while	I-Location
+centrifuging	B-Method
+.	I-Method
 
 Gently	B-Modifier
 resuspend	B-Action
@@ -47,13 +52,15 @@ EB	B-Reagent
 medium	I-Reagent
 by	O
 5ml	B-Amount
-pipette,	B-Device
+pipette	B-Device
+,	O
 up	B-Method
 and	I-Method
 down	I-Method
 for	O
 5	B-Numerical
-times.	I-Numerical
+times	I-Numerical
+.	O
 
 Take	B-Action
 100ul	B-Amount
@@ -62,9 +69,11 @@ suspension	I-Reagent
 and	O
 dilute	B-Action
 into	O
-1ml.	B-Amount
+1ml	B-Amount
+.	O
 
-Count.	B-Action
+Count	B-Action
+.	O
 
 Take	B-Action
 appropriate	B-Numerical
@@ -74,32 +83,44 @@ cells	B-Reagent
 and	O
 dilute	B-Action
 into	O
-1×10^6	B-Concentration
-cells/ml.	I-Concentration
+1	B-Concentration
+10	I-Concentration
+6	I-Concentration
+cells	I-Concentration
+ml	I-Concentration
+.	I-Concentration
 
 Gently	B-Modifier
-re-suspend	B-Action
-by	O
+re	B-Action
+suspend	I-Action
+by	I-Action
 5ml	B-Size
-pipette,	B-Device
-up	B-Method
-and	I-Method
+pipette	I-Size
+,	B-Device
+up	O
+and	B-Method
 down	I-Method
-for	O
-4	B-Numerical
-times.	I-Numerical
+for	I-Method
+4	O
+times	B-Numerical
+.	I-Numerical
 
 Seed	B-Action
 2ml	B-Amount
 of	O
-cells/dish.	B-Reagent
+cells	B-Reagent
+dish	B-Location
+.	I-Location
 
 Save	B-Action
-2×10^6	B-Amount
-cells	B-Reagent
-for	O
+2	B-Amount
+10	I-Amount
+6	I-Amount
+cells	I-Amount
+for	B-Reagent
 RNA	B-Method
-extraction.	I-Method
+extraction	I-Method
+.	I-Method
 
 Transfer	B-Action
 medium	B-Reagent
@@ -107,7 +128,8 @@ containing	I-Reagent
 Ebs	I-Reagent
 to	O
 50ml	B-Size
-tubes.	B-Location
+tubes	B-Location
+.	O
 
 Carefully	B-Modifier
 add	B-Action
@@ -120,7 +142,8 @@ and	O
 put	B-Action
 back	I-Action
 in	I-Action
-incubator.	B-Device
+incubator	B-Device
+.	O
 
 Sink	B-Action
 cells	B-Reagent
@@ -129,16 +152,19 @@ tubes	B-Location
 by	B-Method
 gravity	I-Method
 for	O
-5min.	B-Time
+5min	B-Time
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 5ml	B-Amount
 medium	B-Reagent
 to	O
-pellets.	B-Reagent
+pellets	B-Reagent
+.	O
 
 Mix	B-Action
 samples	B-Reagent
@@ -147,29 +173,35 @@ inverting	I-Method
 a	B-Numerical
 few	I-Numerical
 times	I-Numerical
-gently.	B-Modifier
+gently	B-Modifier
+.	O
 
 Distribute	B-Action
 samples	B-Reagent
 to	O
 different	B-Modifier
-dishes.	B-Location
+dishes	B-Location
+.	O
 
 Prepare	B-Action
 gelatin	B-Reagent
 coated	I-Reagent
 chamber	I-Reagent
 slides	I-Reagent
-(2	B-Modifier
-well).	I-Modifier
+2	O
+well	B-Modifier
+.	I-Modifier
 
 Add	B-Action
-1.5ml	B-Amount
+1	B-Amount
+.	I-Amount
+5ml	I-Amount
 of	O
 medium	B-Reagent
 into	O
 each	B-Modifier
-well.	B-Location
+well	B-Location
+.	O
 
 Transfer	B-Action
 1	B-Amount
@@ -179,7 +211,8 @@ day4	B-Modifier
 Ebs	B-Reagent
 into	O
 15ml	B-Size
-tube.	B-Location
+tube	B-Location
+.	O
 
 Wait	B-Action
 for	O
@@ -193,36 +226,44 @@ tube	B-Location
 by	B-Method
 gravity	I-Method
 for	O
-5min.	B-Time
+5min	B-Time
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 10ml	B-Amount
 EB	B-Reagent
 medium	I-Reagent
 into	O
-pellets.	B-Reagent
+pellets	B-Reagent
+.	O
 
 Seed	B-Action
-0.5ml	B-Amount
+0	B-Amount
+.	I-Amount
+5ml	I-Amount
 of	O
 EB	B-Reagent
 to	O
 each	B-Modifier
-well.	B-Location
+well	B-Location
+.	O
 
 Change	B-Action
 medium	B-Reagent
-everyday:	B-Modifier
+everyday	B-Modifier
 suck	B-Action
-supernatant,	B-Reagent
+supernatant	I-Action
+,	B-Reagent
 replace	B-Action
-with	O
+with	I-Action
 fresh	B-Modifier
-EB	B-Reagent
-medium.	I-Reagent
+EB	I-Modifier
+medium	B-Reagent
+.	I-Reagent
 
 Take	B-Action
 2	B-Numerical
@@ -231,54 +272,64 @@ for	O
 each	B-Modifier
 group	B-Reagent
 on	O
-day6,	B-Time
-day8	I-Time
+day6	B-Time
+,	O
+day8	B-Time
 and	O
-day12.	B-Time
+day12	B-Time
+.	O
 
 Suck	B-Action
 the	O
 medium	B-Reagent
-carefully.	B-Modifier
+carefully	B-Modifier
+.	O
 
 Fix	B-Action
 with	O
-4%	B-Concentration
-PFA	B-Reagent
-for	O
+4	B-Concentration
+PFA	I-Concentration
+for	B-Reagent
 30min	B-Time
-@RT.	B-Temperature
+RT	I-Time
+.	B-Temperature
 
-(in	B-Location
-hood).	I-Location
-
-Wash	B-Action
-#1	B-Reagent
-with	O
-2ml	B-Amount
-of	O
-PBS.	B-Reagent
+in	B-Location
+hood	I-Location
+.	I-Location
 
 Wash	B-Action
-#2	B-Reagent
-with	O
+1	B-Reagent
+with	I-Reagent
 2ml	B-Amount
-of	O
-PBS.	B-Reagent
+of	I-Amount
+PBS	B-Reagent
+.	I-Reagent
 
 Wash	B-Action
-#3	B-Reagent
-with	O
+2	B-Reagent
+with	I-Reagent
 2ml	B-Amount
-of	O
-PBS.	B-Reagent
+of	I-Amount
+PBS	B-Reagent
+.	I-Reagent
+
+Wash	B-Action
+3	B-Reagent
+with	I-Reagent
+2ml	B-Amount
+of	I-Amount
+PBS	B-Reagent
+.	I-Reagent
 
 Store	B-Action
 samples	B-Reagent
 in	O
-PBS,	B-Reagent
-@	O
-4°C.	B-Temperature
+PBS	B-Reagent
+,	O
+4	O
+C	B-Temperature
+.	I-Temperature
 
 
 

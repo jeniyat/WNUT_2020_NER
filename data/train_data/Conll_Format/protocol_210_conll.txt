@@ -12,7 +12,8 @@ yield	B-Action
 a	O
 homogeneous	B-Reagent
 bead	I-Reagent
-suspension.	I-Reagent
+suspension	I-Reagent
+.	O
 
 Dissolve	B-Action
 approximately	B-Amount
@@ -22,63 +23,73 @@ each	B-Modifier
 of	O
 EDC	B-Reagent
 and	O
-S-NHS	B-Reagent
-into	O
-2	B-Numerical
-microcentrifuge	B-Location
-tubes	I-Location
-and	O
+S	B-Reagent
+NHS	I-Reagent
+into	I-Reagent
+2	O
+microcentrifuge	B-Numerical
+tubes	B-Location
+and	I-Location
 resuspend	B-Action
-in	O
+in	I-Action
 deionized	B-Reagent
 water	I-Reagent
-at	O
-50	B-Concentration
-mg/mL.	I-Concentration
+at	I-Reagent
+50	O
+mg	B-Concentration
+mL	I-Concentration
+.	I-Concentration
 
 Centrifuge	B-Action
 the	O
 100	B-Amount
-μl	I-Amount
+l	I-Amount
 bead	B-Reagent
 suspension	I-Reagent
 at	O
-10,000	B-Speed
+10	B-Speed
+,	I-Speed
+000	I-Speed
 x	I-Speed
-g.	I-Speed
+g	I-Speed
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
 the	O
 beads	B-Reagent
 in	O
 80	B-Amount
-μl	I-Amount
+l	I-Amount
 activation	B-Reagent
-buffer.	I-Reagent
+buffer	I-Reagent
+.	O
 
 Add	B-Action
 10	B-Amount
-μl	I-Amount
+l	I-Amount
 of	O
-S-NHS	B-Reagent
+S	B-Reagent
+NHS	I-Reagent
 solution	I-Reagent
-and	O
-10	B-Amount
-μl	I-Amount
-of	O
+and	I-Reagent
+10	O
+l	B-Amount
+of	I-Amount
 EDC	B-Reagent
 solution	I-Reagent
-to	O
+to	I-Reagent
 the	O
 bead	B-Reagent
-suspension.	I-Reagent
+suspension	I-Reagent
+.	I-Reagent
 
 Incubate	B-Action
 with	B-Modifier
@@ -92,7 +103,8 @@ dark	I-Modifier
 at	O
 roughly	O
 900	B-Speed
-rpm.	I-Speed
+rpm	I-Speed
+.	O
 
 Dilute	B-Action
 your	O
@@ -106,14 +118,18 @@ to	O
 a	O
 concentration	O
 of	O
-0.1	B-Concentration
-mg/ml	I-Concentration
-in	O
+0	B-Concentration
+.	I-Concentration
+1	I-Concentration
+mg	I-Concentration
+ml	I-Concentration
+in	I-Concentration
 a	O
 volume	O
 of	O
 100	B-Amount
-μl.	I-Amount
+l	I-Amount
+.	I-Amount
 
 Optimal	B-Modifier
 coupling	B-Action
@@ -123,8 +139,11 @@ at	O
 a	O
 concentration	B-Measure-Type
 within	O
-25-250	B-Concentration
-μg/ml.	I-Concentration
+25	B-Concentration
+250	I-Concentration
+g	I-Concentration
+ml	I-Concentration
+.	I-Concentration
 
 Note	O
 the	O
@@ -136,28 +155,34 @@ any	O
 other	O
 amine	B-Reagent
 groups	I-Reagent
-present.	O
+present	O
+.	O
 
 Centrifuge	B-Action
 the	O
 beads	B-Reagent
 at	O
-10,000	B-Speed
+10	B-Speed
+,	I-Speed
+000	I-Speed
 x	I-Speed
-g.	I-Speed
+g	I-Speed
+.	O
 
 Carefully	B-Modifier
 remove	B-Action
 and	O
 discard	B-Action
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 the	O
 diluted	B-Reagent
 protein	I-Reagent
-solution.	I-Reagent
+solution	I-Reagent
+.	O
 
 Agitate	B-Action
 the	O
@@ -178,20 +203,25 @@ rpm	I-Speed
 in	B-Modifier
 the	I-Modifier
 dark	I-Modifier
-(wrapped	B-Action
-in	O
-foil).	B-Seal
+wrapped	B-Action
+in	I-Action
+foil	B-Seal
+.	I-Seal
 
 Centrifuge	B-Action
 the	O
 beads	B-Reagent
 at	O
-10,000	B-Speed
+10	B-Speed
+,	I-Speed
+000	I-Speed
 x	I-Speed
-g.	I-Speed
+g	I-Speed
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 the	O
@@ -199,8 +229,10 @@ beads	B-Reagent
 three	B-Numerical
 times	I-Numerical
 with	O
-PBS/1%	B-Reagent
-BSA.	I-Reagent
+PBS	B-Reagent
+1	O
+BSA	B-Concentration
+.	B-Reagent
 
 Resuspend	B-Action
 the	O
@@ -209,8 +241,10 @@ pellet	I-Reagent
 in	O
 1	B-Amount
 ml	I-Amount
-PBS/1%	B-Reagent
-BSA.	I-Reagent
+PBS	B-Reagent
+1	O
+BSA	B-Concentration
+.	B-Reagent
 
 Determine	B-Action
 bead	I-Action
@@ -223,7 +257,8 @@ amount	I-Action
 of	O
 stock	B-Reagent
 used	O
-accordingly.	B-Modifier
+accordingly	B-Modifier
+.	O
 
 
 

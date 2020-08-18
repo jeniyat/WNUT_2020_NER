@@ -1,36 +1,44 @@
-CB-X™	B-Reagent
+CB	B-Reagent
+X	I-Reagent
 Protein	I-Reagent
-Assay	B-Action
-for	O
+Assay	I-Reagent
+for	B-Action
 simple	B-Modifier
-aqueous	B-Reagent
-samples	I-Reagent
+aqueous	I-Modifier
+samples	B-Reagent
 
 Chill	B-Action
-CB-X™	B-Reagent
-at	O
--20°C.	B-Temperature
+CB	B-Reagent
+X	I-Reagent
+at	I-Reagent
+20	O
+C	B-Temperature
+.	I-Temperature
 
 Prior	O
 to	O
-use,	O
+use	O
+,	O
 mix	B-Action
-CB-X™	B-Reagent
+CB	B-Reagent
+X	I-Reagent
 Assay	I-Reagent
 Dye	I-Reagent
-by	O
+by	I-Reagent
 gently	O
 inverting	B-Action
-the	O
+the	I-Action
 bottle	B-Location
-several	B-Numerical
-times.	I-Numerical
+several	I-Location
+times	B-Numerical
+.	I-Numerical
 
 DO	O
 NOT	O
 SHAKE	B-Action
 THE	O
-BOTTLE.	B-Location
+BOTTLE	B-Location
+.	O
 
 Dilute	B-Action
 the	O
@@ -44,22 +52,32 @@ buffer	B-Reagent
 as	O
 your	O
 protein	B-Reagent
-samples.	I-Reagent
+samples	I-Reagent
+.	O
 
 We	O
 recommend	O
 duplicates	O
 of	O
-5-6	B-Numerical
-dilutions	B-Reagent
-within	O
+5	B-Numerical
+6	I-Numerical
+dilutions	I-Numerical
+within	B-Reagent
 the	O
 range	O
 of	O
-0.1-1.0mg/ml.	B-Concentration
+0	O
+.	B-Concentration
+1	I-Concentration
+1	I-Concentration
+.	I-Concentration
+0mg	I-Concentration
+ml	I-Concentration
+.	I-Concentration
 
 Transfer	B-Action
-50µl	B-Amount
+50	B-Amount
+l	I-Amount
 diluted	B-Modifier
 protein	B-Reagent
 standards	I-Reagent
@@ -69,14 +87,16 @@ samples	I-Reagent
 to	O
 the	O
 assay	B-Location
-tubes.	I-Location
+tubes	I-Location
+.	O
 
 Set	B-Action
 up	I-Action
 a	O
 blank	B-Reagent
 containing	O
-50µl	B-Amount
+50	B-Amount
+l	I-Amount
 of	O
 the	O
 buffer	B-Reagent
@@ -84,19 +104,22 @@ used	O
 to	O
 generate	B-Action
 the	O
-standards.	B-Reagent
+standards	B-Reagent
+.	O
 
 Add	B-Action
 1ml	B-Amount
-CB-X™	B-Reagent
+CB	B-Reagent
+X	I-Reagent
 Assay	I-Reagent
 Dye	I-Reagent
-into	O
+into	I-Reagent
 each	B-Amount
-tube	B-Location
-and	O
+tube	I-Amount
+and	B-Location
 mix	B-Action
-well.	B-Modifier
+well	I-Action
+.	B-Modifier
 
 Incubate	B-Action
 for	O
@@ -104,13 +127,15 @@ for	O
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Read	B-Action
 the	O
 absorbance	B-Measure-Type
 at	O
-595nm.	B-Generic-Measure
+595nm	B-Generic-Measure
+.	O
 
 Prepare	B-Action
 a	O
@@ -126,7 +151,8 @@ concentration	I-Measure-Type
 of	O
 the	O
 unknown	B-Reagent
-samples.	I-Reagent
+samples	I-Reagent
+.	O
 
 
 

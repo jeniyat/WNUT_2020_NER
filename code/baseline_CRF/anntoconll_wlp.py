@@ -144,12 +144,19 @@ def text_to_conll(f):
     for s in sentences:
         nonspace_token_seen = False
         s = s.replace('\xa0', ' ')
-        print(s)
+        s = s.replace('\t', ' ')
+        s =  re.sub(r'[^\x00-\x7F]+',' ', s)
+        
+        # print(s)
+
+        
         # print(s.split(" "))
         # print(s.split("\t"))
         # print(s.split())
         
-        tokens = s.split(" ")
+        tokens = re.findall(r"[\w']+|[.,!?;]", s)
+        
+        
         
         
         token_w_pos = map_text_to_char(s, tokens, offset)
@@ -596,7 +603,7 @@ if __name__ == "__main__":
     covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", output_folder = 'all_data/train_data/Conll_Format/')
     covert_standoff_to_conll(input_folder_main= "all_data/test_data/test/", output_folder = 'all_data/test_data/Conll_Format/')
     covert_standoff_to_conll(input_folder_main= "all_data/dev_data/dev/", output_folder = 'all_data/dev_data/Conll_Format/')
-    covert_standoff_to_conll(input_folder_main= "all_data/sample_test/train/", output_folder = 'all_data/sample_test/Conll_Format/')
+    # covert_standoff_to_conll(input_folder_main= "all_data/sample_test/train/", output_folder = 'all_data/sample_test/Conll_Format/')
     
 
     # covert_standoff_to_conll(input_folder_main= "wo_labels_surprise/", output_folder = 'wo_labels_surprise_conll/')

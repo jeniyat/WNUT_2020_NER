@@ -8,32 +8,41 @@ plants	B-Reagent
 of	I-Reagent
 Arabidopsis	I-Reagent
 thaliana	I-Reagent
-(ecotype	O
-Col0)	O
+ecotype	O
+Col0	O
 on	O
 a	O
-3:1	B-Generic-Measure
-(v/v)	O
-compost	B-Location
-to	O
-vermiculite	B-Reagent
-mixture	I-Reagent
-at	O
-20oC,	B-Temperature
-under	O
+3	O
+1	O
+v	B-Generic-Measure
+v	I-Generic-Measure
+compost	I-Generic-Measure
+to	B-Location
+vermiculite	I-Location
+mixture	B-Reagent
+at	I-Reagent
+20oC	I-Reagent
+,	O
+under	B-Temperature
 short	O
 day	O
 conditions	O
-(12h	B-Time
-light:12h	I-Time
-dark)	I-Time
-and	O
-low	O
+12h	O
 light	O
+12h	B-Time
+dark	I-Time
+and	I-Time
+low	I-Time
+light	I-Time
 intensities	O
-(50-100µE	B-Generic-Measure
-m-2	I-Generic-Measure
-s-1).	I-Generic-Measure
+50	O
+100	O
+E	O
+m	O
+2	O
+s	O
+1	O
+.	B-Generic-Measure
 
 Prepare	B-Action
 fresh	B-Modifier
@@ -43,48 +52,55 @@ and	O
 transfer	B-Action
 to	O
 glass	B-Location
-petridish.	I-Location
+petridish	I-Location
+.	O
 
 Remove	B-Action
-20-40	B-Numerical
-leaves	B-Reagent
-from	O
-4	B-Modifier
-week	I-Modifier
+20	B-Numerical
+40	I-Numerical
+leaves	I-Numerical
+from	B-Reagent
+4	O
+week	B-Modifier
 old	I-Modifier
-Arabidopsis	B-Reagent
-thaliana	I-Reagent
-rosettes.	I-Reagent
+Arabidopsis	I-Modifier
+thaliana	B-Reagent
+rosettes	I-Reagent
+.	I-Reagent
 
 Pile	B-Action
 up	O
-5-10	B-Numerical
-leaves	B-Reagent
-at	O
+5	B-Numerical
+10	I-Numerical
+leaves	I-Numerical
+at	B-Reagent
 a	O
-time,	O
+time	O
+,	O
 cut	B-Action
-into	O
+into	I-Action
 thin	O
-(~2mm)	B-Modifier
-strips	B-Reagent
-across	O
+2mm	O
+strips	B-Size
+across	B-Reagent
 the	O
-leaf	B-Reagent
-using	O
+leaf	O
+using	B-Reagent
 a	O
-sharp	B-Modifier
-scapel	B-Device
-blade	I-Device
-dipped	B-Action
-into	O
-ethanol.	B-Reagent
+sharp	O
+scapel	B-Modifier
+blade	B-Device
+dipped	I-Device
+into	B-Action
+ethanol	B-Reagent
+.	I-Reagent
 
 Place	B-Action
 strips	B-Reagent
 into	O
 enzyme	B-Reagent
-solution.	I-Reagent
+solution	I-Reagent
+.	O
 
 Repeat	B-Action
 until	O
@@ -92,13 +108,15 @@ all	B-Modifier
 leaves	B-Reagent
 have	O
 been	O
-cut.	B-Action
+cut	B-Action
+.	O
 
 Vacuum	B-Action
 infiltrate	I-Action
 the	O
 enzyme	B-Reagent
-solution.	I-Reagent
+solution	I-Reagent
+.	O
 
 Leave	B-Action
 cells	B-Reagent
@@ -109,7 +127,8 @@ dish	I-Location
 at	O
 20oC	B-Temperature
 without	B-Method
-shaking.	I-Method
+shaking	I-Method
+.	O
 
 Twice	B-Action
 filter	B-Modifier
@@ -119,7 +138,8 @@ enzyme	B-Reagent
 solution	I-Reagent
 through	O
 a	O
-125μm	B-Amount
+125	B-Amount
+m	I-Amount
 nylon	B-Device
 mesh	I-Device
 to	O
@@ -129,10 +149,12 @@ debris	B-Reagent
 into	O
 a	O
 pointed	B-Location
-bottom,	I-Location
+bottom	I-Location
+,	I-Location
 glass	I-Location
 test	I-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Leave	B-Action
 cells	B-Reagent
@@ -143,7 +165,8 @@ the	O
 bottom	B-Location
 of	O
 the	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Carefully	B-Modifier
 aspirate	B-Action
@@ -155,11 +178,13 @@ leaving	B-Action
 the	O
 cell	B-Reagent
 pellet	I-Reagent
-intact.	O
+intact	O
+.	O
 
 Add	B-Action
 Incubation	B-Reagent
-Buffer.	I-Reagent
+Buffer	I-Reagent
+.	O
 
 Gently	B-Modifier
 resuspend	B-Action
@@ -173,7 +198,8 @@ swirling	B-Action
 of	O
 the	O
 test	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Check	B-Action
 protoplast	B-Measure-Type
@@ -184,7 +210,8 @@ yield	I-Action
 using	O
 a	O
 disposable	B-Modifier
-hemocytomer.	B-Device
+hemocytomer	B-Device
+.	O
 
 
 

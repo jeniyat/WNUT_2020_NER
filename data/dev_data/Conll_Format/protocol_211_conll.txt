@@ -1,12 +1,11 @@
 DNEasy	B-Reagent
 DNA	I-Reagent
 Extraction	B-Method
--	O
 Vibrio	B-Modifier
 Gram	I-Modifier
 Negative	I-Modifier
-Broth	B-Reagent
-Bacteria	I-Reagent
+Broth	I-Modifier
+Bacteria	B-Reagent
 
 Put	B-Action
 Buffer	B-Reagent
@@ -20,7 +19,8 @@ for	O
 5	B-Time
 minutes	I-Time
 before	O
-using.	O
+using	O
+.	O
 
 Transfer	B-Action
 250ul	B-Amount
@@ -31,34 +31,37 @@ to	O
 2ml	B-Amount
 deep	B-Location
 well	I-Location
-(autoclaved).	B-Modifier
+autoclaved	B-Modifier
+.	I-Modifier
 
 Harvest	B-Action
 cells	B-Reagent
-(maximum	O
-2	B-Numerical
-x	I-Numerical
+maximum	O
+2	O
+x	B-Numerical
 109	I-Numerical
-cells)	B-Reagent
-by	O
+cells	I-Numerical
+by	B-Reagent
 centrifuging	B-Action
-plate	B-Location
-for	O
-15	B-Time
-min	I-Time
-at	O
+plate	I-Action
+for	B-Location
+15	O
+min	B-Time
+at	I-Time
 4063	B-Speed
 x	I-Speed
-g.	I-Speed
+g	I-Speed
+.	I-Speed
 
 Discard	B-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
 pellet	B-Reagent
 in	O
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 ATL	I-Reagent
 by	O
@@ -67,7 +70,8 @@ up	B-Modifier
 and	I-Modifier
 down	I-Modifier
 15	B-Numerical
-times.	I-Numerical
+times	I-Numerical
+.	O
 
 Seal	B-Action
 with	O
@@ -81,7 +85,8 @@ at	O
 C	I-Temperature
 for	O
 one	B-Time
-hour.	I-Time
+hour	I-Time
+.	O
 
 Place	B-Action
 extra	O
@@ -90,9 +95,11 @@ on	O
 seal	B-Seal
 so	O
 foil	B-Seal
-doesn’t	O
+doesn	O
+t	O
 come	O
-off.	O
+off	O
+.	O
 
 Pipette	B-Action
 up	B-Modifier
@@ -102,36 +109,39 @@ down	I-Modifier
 times	I-Numerical
 and	O
 spin	B-Action
-down.	I-Action
+down	I-Action
+.	O
 
-(May	O
+May	O
 place	B-Action
-in	O
--80	B-Temperature
-C	I-Temperature
-and	O
+in	I-Action
+80	O
+C	B-Temperature
+and	I-Temperature
 continue	B-Action
 procedure	I-Action
-later	O
+later	I-Action
 at	O
 this	O
-point.)	O
+point	O
+.	O
 
 If	O
 placed	B-Action
 in	O
--80	B-Temperature
-C,	I-Temperature
+80	B-Temperature
+C	I-Temperature
+,	I-Temperature
 let	B-Action
 thaw	I-Action
-and	O
-spin	B-Action
+and	I-Action
+spin	I-Action
 down	I-Action
-@	O
-1000g	B-Speed
-for	O
-1	B-Time
-min.	I-Time
+1000g	I-Action
+for	B-Speed
+1	O
+min	B-Time
+.	I-Time
 
 Add	B-Action
 205	B-Amount
@@ -143,7 +153,8 @@ and	O
 uL	I-Amount
 molecular	B-Reagent
 grade	I-Reagent
-EtOH.	I-Reagent
+EtOH	I-Reagent
+.	O
 
 Pipette	B-Action
 up	B-Modifier
@@ -153,7 +164,8 @@ down	I-Modifier
 times	I-Numerical
 and	O
 spin	B-Action
-down.	I-Action
+down	I-Action
+.	O
 
 Place	B-Action
 DNeasy	B-Location
@@ -176,28 +188,30 @@ plates	I-Location
 for	O
 later	O
 sample	B-Reagent
-identification.	B-Method
+identification	B-Method
+.	O
 
 Carefully	B-Modifier
 transfer	B-Action
 the	O
 lysate	B-Reagent
-(approximately	O
-600ul)	B-Amount
-of	O
+approximately	O
+600ul	B-Amount
+of	I-Amount
 each	B-Modifier
-sample	B-Reagent
-from	O
+sample	I-Modifier
+from	B-Reagent
 step	O
 7	O
 to	O
 each	B-Modifier
-well	B-Location
-of	O
+well	I-Modifier
+of	B-Location
 the	O
 DNeasy	B-Location
 96	I-Location
-plates.	I-Location
+plates	I-Location
+.	I-Location
 
 Do	O
 not	O
@@ -205,9 +219,10 @@ transfer	B-Action
 more	O
 than	O
 900	B-Amount
-µl	I-Amount
+l	I-Amount
 per	B-Modifier
-well.	I-Modifier
+well	I-Modifier
+.	O
 
 Seal	B-Action
 each	O
@@ -217,14 +232,16 @@ plate	I-Location
 with	O
 a	O
 porous	B-Seal
-film.	I-Seal
+film	I-Seal
+.	O
 
 Centrifuge	B-Action
 for	O
 15	B-Time
 min	I-Time
 at	O
-4063g.	B-Speed
+4063g	B-Speed
+.	O
 
 If	O
 lysate	B-Reagent
@@ -233,22 +250,25 @@ in	O
 any	O
 of	O
 the	O
-wells,	B-Location
+wells	B-Location
+,	O
 centrifuge	B-Action
 for	O
 a	B-Time
 further	I-Time
 10	I-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Add	B-Action
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 AW1	I-Reagent
 to	O
 each	B-Modifier
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Seal	B-Action
 each	B-Modifier
@@ -261,35 +281,40 @@ new	B-Modifier
 AirPore	B-Seal
 Tape	I-Seal
 Sheet	I-Seal
-(provided).	O
+provided	O
+.	O
 
 Centrifuge	B-Action
 for	O
 5	B-Time
 min	I-Time
 at	O
-4063g.	B-Speed
+4063g	B-Speed
+.	O
 
 Remove	B-Action
 the	O
-tape.	B-Seal
+tape	B-Seal
+.	O
 
 Carefully	B-Modifier
 add	B-Action
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 AW2	I-Reagent
 to	O
 each	B-Modifier
-sample.	B-Reagent
+sample	B-Reagent
+.	O
 
 Centrifuge	B-Action
 for	O
 15	B-Time
 min	I-Time
 at	O
-4063g.	B-Speed
+4063g	B-Speed
+.	O
 
 Do	O
 not	O
@@ -298,7 +323,8 @@ the	O
 plate	B-Location
 with	O
 AirPore	B-Seal
-Tape.	I-Seal
+Tape	I-Seal
+.	O
 
 The	O
 heat	O
@@ -313,32 +339,34 @@ ethanol	B-Reagent
 in	O
 the	O
 sample	B-Reagent
-(from	O
+from	O
 Buffer	B-Reagent
-AW2)	I-Reagent
-that	O
+AW2	I-Reagent
+that	I-Reagent
 might	O
 otherwise	O
 inhibit	B-Action
-downstream	B-Modifier
-reactions.	B-Reagent
+downstream	I-Action
+reactions	B-Modifier
+.	B-Reagent
 
 Place	B-Action
 in	O
 new	B-Modifier
 collection	B-Location
 rack	I-Location
-(2ml	B-Amount
-deep	B-Location
-well	I-Location
-plate)	I-Location
-and	O
+2ml	B-Amount
+deep	I-Amount
+well	B-Location
+plate	I-Location
+and	I-Location
 spin	B-Action
-again	O
-15	B-Time
-minutes	I-Time
-at	O
-4063g.	B-Speed
+again	I-Action
+15	O
+minutes	B-Time
+at	I-Time
+4063g	B-Speed
+.	I-Speed
 
 Place	B-Action
 each	B-Modifier
@@ -356,20 +384,23 @@ rack	B-Location
 of	O
 VWR	B-Location
 500ul	B-Amount
-plate.	B-Location
+plate	B-Location
+.	O
 
 To	O
 elute	B-Action
 the	O
-DNA,	B-Reagent
+DNA	B-Reagent
+,	O
 add	B-Action
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 TE	I-Reagent
 to	O
 each	B-Modifier
-sample,	B-Reagent
+sample	B-Reagent
+,	O
 seal	B-Action
 and	O
 incubate	B-Action
@@ -378,17 +409,19 @@ for	O
 minute	I-Time
 at	O
 room	B-Temperature
-temp.	I-Temperature
+temp	I-Temperature
+.	O
 
 Centrifuge	B-Action
 for	O
 4	B-Time
 min	I-Time
 at	O
-4063g.	B-Speed
+4063g	B-Speed
+.	O
 
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 TE	I-Reagent
 is	O
@@ -397,33 +430,36 @@ to	O
 elute	B-Action
 up	O
 to	O
-75%	B-Amount
-of	O
+75	B-Amount
+of	I-Amount
 the	O
 DNA	B-Reagent
-from	O
+from	I-Reagent
 each	O
 well	O
 of	O
 the	O
 DNeasy	B-Location
 96	I-Location
-plate.	I-Location
+plate	I-Location
+.	I-Location
 
-Recommended:	O
+Recommended	O
 For	O
 maximum	O
 DNA	B-Reagent
-yield,	O
+yield	I-Reagent
+,	O
 repeat	B-Action
 step	I-Action
 16	I-Action
-with	O
+with	I-Action
 another	B-Amount
 200	I-Amount
-µl	I-Amount
-Buffer	B-Reagent
-TE.	I-Reagent
+l	I-Amount
+Buffer	I-Amount
+TE	B-Reagent
+.	I-Reagent
 
 Aliquot	B-Action
 20ul	B-Amount
@@ -433,7 +469,8 @@ DNA	I-Reagent
 to	O
 green	B-Location
 96	I-Location
-microplate.	I-Location
+microplate	I-Location
+.	O
 
 Seal	B-Action
 DNeasy	B-Location
@@ -443,22 +480,25 @@ and	O
 96	B-Location
 microplate	I-Location
 with	O
-non-sterile	B-Seal
-foil.	I-Seal
+non	B-Seal
+sterile	I-Seal
+foil	I-Seal
+.	I-Seal
 
 Place	B-Action
 DNeasy	B-Location
 96	I-Location
 plate	I-Location
 in	O
--80	B-Temperature
+80	B-Temperature
 C	I-Temperature
-and	O
-96	B-Location
-microplate	I-Location
-in	O
--20	B-Temperature
-C.	I-Temperature
+and	I-Temperature
+96	O
+microplate	B-Location
+in	I-Location
+20	O
+C	B-Temperature
+.	I-Temperature
 
 
 

@@ -1,10 +1,11 @@
-One-step	B-Modifier
-growth	B-Reagent
-experiments	I-Reagent
-(bacteriophages)	I-Reagent
+One	B-Modifier
+step	I-Modifier
+growth	I-Modifier
+experiments	B-Reagent
+bacteriophages	I-Reagent
 
 200	B-Amount
-µL	I-Amount
+L	I-Amount
 overnight	B-Reagent
 culture	I-Reagent
 is	O
@@ -19,8 +20,13 @@ with	O
 mL	I-Amount
 growth	B-Reagent
 medium	I-Reagent
-(e.g.,	O
-LB).	B-Reagent
+e	O
+.	O
+g	O
+.	O
+,	O
+LB	O
+.	B-Reagent
 
 Incubate	B-Action
 on	O
@@ -38,17 +44,20 @@ reached	O
 cell	B-Reagent
 density	B-Measure-Type
 of	O
-~5	B-Modifier
-×	B-Generic-Measure
-108	I-Generic-Measure
+5	B-Modifier
+108	B-Generic-Measure
 CFU	I-Generic-Measure
-mL–1	I-Generic-Measure
-(corresponding	O
+mL	I-Generic-Measure
+1	I-Generic-Measure
+corresponding	I-Generic-Measure
 to	O
 an	O
 OD525	B-Measure-Type
-of	O
-~0.3).	B-Modifier
+of	I-Measure-Type
+0	O
+.	O
+3	B-Modifier
+.	B-Numerical
 
 1	B-Amount
 mL	I-Amount
@@ -74,10 +83,13 @@ an	O
 multiplicity	B-Measure-Type
 of	I-Measure-Type
 infection	I-Measure-Type
-(MOI)	I-Measure-Type
-of	O
+MOI	I-Measure-Type
+of	I-Measure-Type
 approximately	B-Modifier
-0.01.	B-Numerical
+0	I-Modifier
+.	I-Modifier
+01	B-Numerical
+.	I-Numerical
 
 Incubate	B-Action
 for	O
@@ -92,18 +104,22 @@ adsorb	B-Action
 to	O
 the	O
 host	B-Reagent
-cells.	I-Reagent
+cells	I-Reagent
+.	O
 
 Centrifuge	B-Action
 the	O
 cells	B-Reagent
-(6000g,	B-Speed
-10	B-Time
-min).	I-Time
+6000g	B-Speed
+,	I-Speed
+10	O
+min	B-Time
+.	I-Time
 
 Remove	B-Action
 the	O
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Resuspend	B-Action
 the	O
@@ -113,45 +129,53 @@ in	O
 mL	I-Amount
 growth	B-Reagent
 medium	I-Reagent
-(e.g.,	O
-LB).	B-Reagent
+e	O
+.	O
+g	O
+.	O
+,	O
+LB	O
+.	B-Reagent
 
 Repeat	B-Action
 steps	I-Action
-5-7	I-Action
-to	O
-wash	B-Action
+5	I-Action
+7	I-Action
+to	I-Action
+wash	I-Action
 out	I-Action
-any	O
+any	I-Action
 further	O
 unadsorbed	B-Reagent
-phages.	I-Reagent
+phages	I-Reagent
+.	I-Reagent
 
 Transfer	B-Action
 50	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 the	O
 resuspended	B-Reagent
 culture	I-Reagent
-(bacteria	I-Reagent
-and	O
-adsorbed	B-Reagent
-phages)	I-Reagent
-to	O
-50	B-Amount
-mL	I-Amount
-growth	B-Reagent
-medium	I-Reagent
-in	O
+bacteria	I-Reagent
+and	I-Reagent
+adsorbed	I-Reagent
+phages	I-Reagent
+to	I-Reagent
+50	O
+mL	B-Amount
+growth	I-Amount
+medium	B-Reagent
+in	I-Reagent
 a	O
-100	B-Amount
-mL	I-Amount
-culture	B-Location
-flask	I-Location
-and	O
-mix	B-Action
-well.	B-Modifier
+100	O
+mL	B-Amount
+culture	I-Amount
+flask	B-Location
+and	I-Location
+mix	O
+well	B-Action
+.	B-Modifier
 
 Transfer	B-Action
 1	B-Amount
@@ -159,7 +183,8 @@ mL	I-Amount
 to	O
 a	O
 microfuge	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Incubate	B-Action
 the	O
@@ -170,23 +195,25 @@ cultures	B-Reagent
 on	O
 a	B-Location
 shaking	I-Location
-table.	I-Location
+table	I-Location
+.	O
 
 Determine	B-Action
 the	O
 number	B-Generic-Measure
 of	I-Generic-Measure
 PFU	I-Generic-Measure
-(total	I-Generic-Measure
+total	I-Generic-Measure
 infectious	I-Generic-Measure
-centers)	I-Generic-Measure
-by	O
+centers	I-Generic-Measure
+by	I-Generic-Measure
 plaque	B-Method
 assay	I-Method
-in	O
+in	I-Method
 the	O
 collected	B-Reagent
-sample.	I-Reagent
+sample	I-Reagent
+.	I-Reagent
 
 Continue	B-Action
 to	I-Action
@@ -197,8 +224,10 @@ PFU	B-Measure-Type
 over	O
 time	O
 for	O
-6–8	B-Time
-hours.	I-Time
+6	B-Time
+8	I-Time
+hours	I-Time
+.	O
 
 
 

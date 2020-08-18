@@ -2,7 +2,7 @@ General	B-Location
 tube	I-Location
 bacteria	B-Reagent
 extraction	B-Method
-(DNeasy)	O
+DNeasy	O
 
 Place	B-Action
 Buffer	B-Reagent
@@ -18,7 +18,8 @@ least	I-Modifier
 5	B-Time
 minutes	I-Time
 before	O
-starting.	O
+starting	O
+.	O
 
 Make	O
 sure	O
@@ -27,23 +28,26 @@ and	O
 AW2	B-Reagent
 have	O
 ethanol	B-Reagent
-added.	B-Action
+added	B-Action
+.	O
 
 Spin	B-Action
->500ul	B-Modifier
-of	O
+500ul	B-Modifier
+of	B-Amount
 bacteria	B-Reagent
 liquid	I-Reagent
 culture	I-Reagent
-at	O
+at	I-Reagent
 10000g	B-Speed
-for	O
-10	B-Time
-minutes.	I-Time
+for	I-Speed
+10	O
+minutes	B-Time
+.	I-Time
 
 Pour	B-Action
 off	I-Action
-supernatant.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Add	B-Action
 200ul	B-Amount
@@ -55,26 +59,29 @@ sample	B-Reagent
 and	O
 vortex	B-Action
 for	O
-15s.	B-Time
+15s	B-Time
+.	O
 
 Add	B-Action
 200ul	B-Amount
-100%	B-Concentration
-ethanol	B-Reagent
-to	O
+100	B-Concentration
+ethanol	I-Concentration
+to	B-Reagent
 each	B-Modifier
-sample	B-Reagent
-and	O
+sample	I-Modifier
+and	B-Reagent
 vortex	B-Action
-for	O
-15s.	B-Time
+for	I-Action
+15s	B-Time
+.	I-Time
 
 Briefly	B-Modifier
 spin	B-Action
 to	O
 collect	B-Action
 all	B-Amount
-liquid.	B-Reagent
+liquid	B-Reagent
+.	O
 
 Transfer	B-Action
 all	B-Amount
@@ -84,20 +91,23 @@ including	O
 precipitate	B-Reagent
 to	O
 spin	B-Location
-column.	I-Location
+column	I-Location
+.	O
 
 Centrifuge	B-Action
 at	O
 max	B-Modifier
 speed	B-Speed
-(>20000g)	B-Modifier
-for	O
-2	B-Time
-minutes.	I-Time
+20000g	B-Modifier
+for	B-Speed
+2	O
+minutes	B-Time
+.	I-Time
 
 Empty	B-Action
 collection	B-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 500ul	B-Amount
@@ -105,16 +115,18 @@ buffer	B-Reagent
 AW1	I-Reagent
 to	O
 spin	B-Location
-column.	I-Location
+column	I-Location
+.	O
 
 Spin	B-Action
 at	O
 max	B-Modifier
 speed	B-Measure-Type
-(>20000g)	B-Modifier
-for	O
-2	B-Time
-minutes.	I-Time
+20000g	B-Modifier
+for	B-Speed
+2	O
+minutes	B-Time
+.	I-Time
 
 Add	B-Action
 500ul	B-Amount
@@ -122,16 +134,18 @@ buffer	B-Reagent
 AW2	I-Reagent
 to	O
 spin	B-Location
-column.	I-Location
+column	I-Location
+.	O
 
 Spin	B-Action
 at	O
 max	B-Modifier
 speed	B-Measure-Type
-(>20000g)	B-Modifier
-for	O
-2	B-Time
-minutes.	I-Time
+20000g	B-Modifier
+for	B-Speed
+2	O
+minutes	B-Time
+.	I-Time
 
 Place	B-Action
 spin	B-Location
@@ -146,10 +160,11 @@ spin	B-Action
 at	O
 max	B-Modifier
 speed	B-Measure-Type
-(>20000g)	B-Modifier
-for	O
-3	B-Time
-minutes.	I-Time
+20000g	B-Modifier
+for	B-Speed
+3	O
+minutes	B-Time
+.	I-Time
 
 Transfer	B-Action
 spin	B-Location
@@ -157,10 +172,13 @@ column	I-Location
 to	O
 a	O
 labeled	B-Modifier
-1.5ml	B-Amount
+1	B-Amount
+.	I-Amount
+5ml	I-Amount
 Eppendorf	B-Location
 lobind	I-Location
-tube.	I-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 100ul	B-Amount
@@ -169,15 +187,17 @@ buffer	B-Reagent
 TE	I-Reagent
 directly	O
 to	O
-membrane/filter	B-Location
-in	O
-spin	B-Location
+membrane	B-Location
+filter	I-Location
+in	I-Location
+spin	I-Location
 column	I-Location
-and	O
+and	I-Location
 incubate	B-Action
-at	O
+at	I-Action
 room	B-Temperature
-temp.	I-Temperature
+temp	I-Temperature
+.	I-Temperature
 
 for	O
 1	B-Time

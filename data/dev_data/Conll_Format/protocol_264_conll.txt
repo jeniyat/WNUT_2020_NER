@@ -11,31 +11,37 @@ cleanup	I-Method
 necessary	O
 at	O
 this	O
-point.	O
+point	O
+.	O
 
 Incubate	B-Action
 transcription	B-Reagent
 mix	I-Reagent
 for	O
-~18	B-Time
+18	B-Time
 hours	I-Time
-at	O
-37˚	B-Temperature
-in	O
+at	I-Time
+37	O
+in	B-Temperature
 a	O
-thermalcycler.	B-Device
+thermalcycler	B-Device
+.	I-Device
 
 Add	B-Action
 1	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
-RNase-free	B-Reagent
-DNase;	I-Reagent
+RNase	B-Reagent
+free	I-Reagent
+DNase	I-Reagent
+;	I-Reagent
 incubated	B-Action
-20	B-Time
-min,	I-Time
+20	I-Action
+min	B-Time
+,	I-Time
 room	B-Temperature
-Temp.	I-Temperature
+Temp	I-Temperature
+.	I-Temperature
 
 Bring	B-Action
 volume	B-Measure-Type
@@ -43,42 +49,44 @@ to	O
 150	B-Amount
 uL	I-Amount
 with	O
-100%	B-Concentration
-EtOH	B-Reagent
-(this	O
+100	B-Concentration
+EtOH	I-Concentration
+this	B-Reagent
 helps	O
 binding	B-Action
-of	O
+of	I-Action
 small	B-Reagent
-fragments).	I-Reagent
+fragments	I-Reagent
+.	I-Reagent
 
 Add	B-Action
 5X	B-Concentration
 SPRI	B-Reagent
-(we	O
+we	O
 use	O
 homemade	B-Modifier
-SeraPure	B-Reagent
-beads	I-Reagent
-for	O
-RNA	B-Reagent
-binding)	B-Action
-5*10	O
-(IVT	B-Reagent
-sgRNA)	I-Reagent
-=	O
-50	B-Amount
-uL	I-Amount
+SeraPure	I-Modifier
+beads	B-Reagent
+for	I-Reagent
+RNA	I-Reagent
+binding	I-Reagent
+5	B-Action
+10	O
+IVT	O
+sgRNA	B-Reagent
+50	I-Reagent
+uL	I-Reagent
 of	O
-SPRI	B-Reagent
-Beads5*20	I-Reagent
-(IVT	I-Reagent
-sgRNA)	I-Reagent
-=	O
-100	B-Amount
-uL	I-Amount
-SPRI	B-Reagent
-Beads.	I-Reagent
+SPRI	B-Amount
+Beads5	B-Reagent
+20	I-Reagent
+IVT	I-Reagent
+sgRNA	O
+100	B-Reagent
+uL	I-Reagent
+SPRI	I-Reagent
+Beads	B-Amount
+.	I-Amount
 
 Pipette	B-Action
 to	O
@@ -90,60 +98,76 @@ Incubate	B-Action
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Place	B-Action
 on	O
 magnetic	B-Device
-stand,	I-Device
+stand	I-Device
+,	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Discard	B-Action
-supernatant.	B-Reagent
-
-Wash#1	B-Action
-Add	I-Action
-200	B-Amount
-uL,	I-Amount
-80%	B-Concentration
-EtOH.	B-Reagent
-
-Wait	B-Action
-2	B-Time
-min.	I-Time
-
-Remove	B-Action
-EtOH.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
-#2:	O
+1	O
 Add	B-Action
-200	B-Amount
-uL,	I-Amount
-80%	B-Concentration
-EtOH.	B-Reagent
+200	I-Action
+uL	B-Amount
+,	I-Amount
+80	O
+EtOH	B-Concentration
+.	B-Reagent
 
 Wait	B-Action
 2	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Remove	B-Action
-EtOH.	B-Reagent
+EtOH	B-Reagent
+.	O
+
+Wash	B-Action
+2	O
+Add	O
+200	B-Action
+uL	B-Amount
+,	I-Amount
+80	I-Amount
+EtOH	B-Concentration
+.	B-Reagent
+
+Wait	B-Action
+2	B-Time
+min	I-Time
+.	O
+
+Remove	B-Action
+EtOH	B-Reagent
+.	O
 
 Air	B-Action
 dry	I-Action
-5-10	B-Time
+5	B-Time
+10	I-Time
 min	I-Time
-(pellet	B-Reagent
-will	O
+pellet	I-Time
+will	B-Reagent
 change	O
 from	O
 a	O
-glossy/wet	B-Modifier
-to	O
-matte/dry.	B-Modifier
-)	O
+glossy	B-Modifier
+wet	I-Modifier
+to	I-Modifier
+matte	I-Modifier
+dry	I-Modifier
+.	I-Modifier
 
 Elute	B-Action
 20	B-Amount
@@ -151,37 +175,43 @@ uL	I-Amount
 of	O
 water	B-Reagent
 or	O
-TE.	B-Reagent
+TE	B-Reagent
+.	O
 
 Pipette	B-Action
 mix	B-Reagent
 10	B-Numerical
-times.	O
+times	O
+.	O
 
 Incubate	B-Action
 2	B-Time
 minutes	I-Time
 at	O
 room	B-Temperature
-temperature.	I-Temperature
+temperature	I-Temperature
+.	O
 
 Place	B-Action
 on	O
 magnetic	B-Device
-stand,	I-Device
+stand	I-Device
+,	O
 5	B-Time
-min.	I-Time
+min	I-Time
+.	O
 
 Keep	B-Action
-Supernatant.	B-Reagent
+Supernatant	B-Reagent
+.	O
 
 Transfer	B-Action
 to	O
 a	O
 new	B-Modifier
 plate	B-Location
-/	O
-tubes.	B-Location
+tubes	I-Location
+.	I-Location
 
 
 

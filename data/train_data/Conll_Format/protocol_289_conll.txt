@@ -7,23 +7,40 @@ cesium	B-Reagent
 chloride	I-Reagent
 densities	B-Measure-Type
 of	O
-p1.2,	B-Generic-Measure
-p1.4,	I-Generic-Measure
-p1.5	I-Generic-Measure
+p1	B-Generic-Measure
+.	I-Generic-Measure
+2	I-Generic-Measure
+,	I-Generic-Measure
+p1	I-Generic-Measure
+.	I-Generic-Measure
+4	I-Generic-Measure
+,	I-Generic-Measure
+p1	I-Generic-Measure
+.	I-Generic-Measure
+5	I-Generic-Measure
 and	I-Generic-Measure
-p1.65	I-Generic-Measure
+p1	I-Generic-Measure
+.	I-Generic-Measure
+65	I-Generic-Measure
 in	O
 seawater	B-Reagent
-(sw)	I-Reagent
-that	O
+sw	I-Reagent
+that	I-Reagent
 has	O
 been	O
-0.02μm	B-Size
-(or	O
-0.2μm)	B-Size
-filtered	B-Action
-and	O
-autoclaved.	B-Action
+0	O
+.	O
+02	B-Size
+m	I-Size
+or	I-Size
+0	O
+.	O
+2	O
+m	B-Size
+filtered	I-Size
+and	B-Action
+autoclaved	I-Action
+.	I-Action
 
 Place	B-Action
 tube	B-Location
@@ -31,19 +48,22 @@ of	O
 prepared	B-Modifier
 cesium	B-Reagent
 on	O
-balance.	B-Device
+balance	B-Device
+.	O
 
 Tare	B-Action
 balance	B-Device
 to	O
-0.	B-Numerical
+0	B-Numerical
+.	O
 
 Remove	B-Action
 1ml	B-Amount
 with	O
 sterile	B-Modifier
 pipet	B-Location
-tip.	I-Location
+tip	I-Location
+.	O
 
 Layer	B-Action
 CsCl	B-Reagent
@@ -60,26 +80,29 @@ have	O
 one	O
 or	O
 by	B-Device
-hand.	I-Device
+hand	I-Device
+.	O
 
 Carefully	B-Modifier
 layer	B-Action
 on	O
 sample	B-Reagent
-(~5ml	B-Modifier
-can	O
+5ml	B-Modifier
+can	B-Amount
 be	O
 layered	O
 with	O
 SW40	B-Device
-~15ml	B-Modifier
-with	O
-SW28).	B-Device
+15ml	I-Device
+with	B-Amount
+SW28	O
+.	B-Device
 
 Weigh	B-Action
 and	O
 balance	B-Action
-tubes.	B-Location
+tubes	B-Location
+.	O
 
 Centrifuge	B-Action
 using	O
@@ -88,35 +111,45 @@ or	O
 SW28	B-Device
 Beckman	I-Device
 rotor	I-Device
-@	O
-24,000rpm	B-Speed
-for	O
+24	O
+,	B-Speed
+000rpm	I-Speed
+for	I-Speed
 4hr	B-Time
-at	O
-4°C.	B-Temperature
+at	I-Time
+4	O
+C	B-Temperature
+.	I-Temperature
 
 Have	O
 sterile	B-Modifier
-0.5ml	B-Amount
+0	B-Amount
+.	I-Amount
+5ml	I-Amount
 tubes	B-Location
-(SW40)	B-Device
-or	O
-1.5ml	B-Amount
-tubes	B-Location
-(SW28)	B-Device
-labeled	B-Action
-1-24	O
-Open	B-Action
-tubes	B-Location
-in	O
-a	O
-rack.	B-Location
+SW40	B-Device
+or	I-Device
+1	O
+.	O
+5ml	B-Amount
+tubes	I-Amount
+SW28	B-Location
+labeled	B-Device
+1	B-Action
+24	I-Action
+Open	I-Action
+tubes	I-Action
+in	B-Location
+a	I-Location
+rack	I-Location
+.	O
 
 Place	B-Action
 tube	B-Location
 on	O
 ring	B-Device
-stand.	I-Device
+stand	I-Device
+.	O
 
 Puncture	B-Action
 about	O
@@ -133,9 +166,11 @@ a	O
 sterile	B-Modifier
 20	B-Device
 guage	I-Device
-needle,	I-Device
+needle	I-Device
+,	O
 bevel	B-Action
-up.	I-Action
+up	I-Action
+.	O
 
 Collect	B-Action
 droplets	B-Reagent
@@ -144,66 +179,84 @@ fill	B-Action
 each	O
 tube	B-Location
 in	O
-order.	O
+order	O
+.	O
 
 Place	B-Action
 tube	B-Location
 with	O
 sample	B-Reagent
 on	O
-4-place	B-Device
+4	B-Device
+place	I-Device
 balance	I-Device
-in	O
-holder.	B-Location
+in	I-Device
+holder	B-Location
+.	I-Location
 
 Tare	B-Action
 to	O
-0.	B-Numerical
+0	B-Numerical
+.	O
 
 With	O
 sterile	B-Modifier
 pipet	B-Device
-tip,	I-Device
+tip	I-Device
+,	O
 remove	B-Action
-100µl.	B-Amount
+100	B-Amount
+l	I-Amount
+.	O
 
 Take	B-Action
-measurement.	I-Action
+measurement	I-Action
+.	O
 
 Return	B-Action
 sample	B-Reagent
 to	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Remove	B-Action
 another	O
-100µl,	B-Amount
+100	B-Amount
+l	I-Amount
+,	O
 take	B-Action
-measurement,	I-Action
-return	I-Action
+measurement	I-Action
+,	O
+return	B-Action
 sample	B-Reagent
 to	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Remove	B-Action
 yet	O
 another	O
-100µl,	B-Amount
+100	B-Amount
+l	I-Amount
+,	O
 take	B-Action
-measurement,	I-Action
+measurement	I-Action
+,	O
 and	O
 return	B-Action
 sample	B-Reagent
 to	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 After	O
 all	O
 tubes	B-Location
 have	O
 been	O
-measured,	B-Action
-take	I-Action
+measured	B-Action
+,	O
+take	B-Action
 average	B-Measure-Type
 of	O
 the	O
@@ -211,11 +264,13 @@ the	O
 values	O
 for	O
 each	O
-tube.	B-Location
+tube	B-Location
+.	O
 
 Multiply	B-Action
 by	O
-10.	B-Numerical
+10	B-Numerical
+.	O
 
 Pool	B-Action
 and	O
@@ -230,21 +285,25 @@ virus	B-Reagent
 first	O
 by	O
 staining	B-Action
-10µl	B-Amount
+10	B-Amount
+l	I-Amount
 with	O
 SYBR	B-Reagent
-gold.	I-Reagent
+gold	I-Reagent
+.	O
 
 Count	B-Action
 under	O
 fluorescent	B-Device
-scope.	I-Device
+scope	I-Device
+.	O
 
 Pool	B-Action
 all	O
 samples	B-Reagent
 with	O
-virus.	B-Reagent
+virus	B-Reagent
+.	O
 
 
 
