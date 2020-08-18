@@ -176,10 +176,14 @@ suspension.	B-Reagent
 
 Incubate	B-Action
 in	O
-thermocycler: 80	B-Device
-°C 2	B-Temperature
-min 25	B-Time
-°C hold.	B-Temperature
+thermocycler:	B-Device
+80	B-Temperature
+°C	I-Temperature
+2	B-Time
+min	I-Time
+25	B-Temperature
+°C	I-Temperature
+hold.	O
 
 Remove	B-Action
 sample	B-Reagent
@@ -1090,21 +1094,25 @@ with	O
 the	O
 following	O
 PCR	B-Method
-procotol 98	I-Method
-°C	B-Temperature
+procotol	I-Method
+98	B-Temperature
+°C	I-Temperature
 -	O
 30	B-Time
 seconds	I-Time
 5	B-Generic-Measure
 -	I-Generic-Measure
 18	I-Generic-Measure
-cycles 98	I-Generic-Measure
-°C	B-Temperature
-- 10	B-Time
+cycles	I-Generic-Measure
+98	B-Temperature
+°C	I-Temperature
+-	O
+10	B-Time
 seconds	I-Time
 60	B-Temperature
 °C	I-Temperature
-- 30	B-Time
+-	O
+30	B-Time
 seconds	I-Time
 72	B-Temperature
 °C	I-Temperature
@@ -1113,7 +1121,8 @@ seconds	I-Time
 seconds	I-Time
 72	B-Temperature
 °C	I-Temperature
-- 5	B-Generic-Measure
+-	O
+5	B-Generic-Measure
 hold	I-Generic-Measure
 at	O
 4	B-Temperature

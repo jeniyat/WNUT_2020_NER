@@ -34,10 +34,18 @@ ReagentStock	I-Reagent
 ConcAmt/1Amt/NFinal	B-Measure-Type
 ConcNuclease	I-Measure-Type
 Free	B-Reagent
-H20---0.29  FS	I-Reagent
-Buffer5x2 1xBetaine5M2 1MMgCl21M0.06 6mMTSO100µM0.1 1µMDTT100mM0.5 5mMSuperscript	I-Reagent
-II200U/µL0.5 100URNase	I-Reagent
-OUT40U/µL  10USample----------	I-Reagent
+H20---0.29	I-Reagent
+FS	I-Reagent
+Buffer5x2	I-Reagent
+1xBetaine5M2	B-Numerical
+1MMgCl21M0.06	B-Concentration
+6mMTSO100µM0.1	I-Concentration
+1µMDTT100mM0.5	I-Concentration
+5mMSuperscript	I-Concentration
+II200U/µL0.5	B-Reagent
+100URNase	B-Generic-Measure
+OUT40U/µL	B-Reagent
+10USample----------	B-Generic-Measure
 (4.3)---------.	O
 
 Incubate	B-Action
@@ -65,7 +73,8 @@ Add	B-Action
 RT	B-Reagent
 mix	B-Action
 RTNum.	B-Reagent
-CycleGroupTempTime1xA4290m10xB502m B422m1xC7015mholdD4hold	B-Method
+CycleGroupTempTime1xA4290m10xB502m	B-Method
+B422m1xC7015mholdD4hold	I-Method
 Dilute	B-Action
 ISPCR	B-Reagent
 primers	I-Reagent
@@ -80,9 +89,12 @@ Strand	I-Reagent
 Rxn)--10µL-------KAPA	I-Reagent
 HiFi	I-Reagent
 Hot	I-Reagent
-Start2x12.5 1xISPCR	I-Reagent
-primers1µM2.5µL 0.1µM--------------------------Final	I-Reagent
-Volume 25µL.	O
+Start2x12.5	I-Reagent
+1xISPCR	B-Numerical
+primers1µM2.5µL	B-Reagent
+0.1µM--------------------------Final	B-Amount
+Volume	O
+25µL.	O
 
 Add	B-Action
 15µL	B-Amount

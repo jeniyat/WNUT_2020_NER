@@ -7,17 +7,17 @@ Chemistry	O
 
 Filtering	B-Action
 Cultures	B-Reagent
-1.1	I-Reagent
-Oxalate	B-Numerical
-Wash	B-Reagent
-Preparation	I-Reagent
-Before	B-Method
-filtration,	I-Method
-make	I-Method
-an	B-Action
+1.1	B-Numerical
+Oxalate	B-Reagent
+Wash	I-Reagent
+Preparation	B-Method
+Before	O
+filtration,	B-Method
+make	B-Action
+an	O
 oxalate	B-Reagent
 wash	I-Reagent
-that	I-Reagent
+that	O
 will	O
 be	O
 used	O
@@ -25,10 +25,10 @@ in	O
 order	O
 to	O
 remove	B-Action
-extracellular	I-Action
-iron	B-Reagent
-from	I-Reagent
-diatoms.	I-Reagent
+extracellular	B-Reagent
+iron	I-Reagent
+from	O
+diatoms.	B-Reagent
 
 Mix	B-Action
 consecutively	B-Modifier
@@ -57,20 +57,16 @@ is	O
 reached.	O
 
 15.3g,	B-Amount
-EDTA	B-Reagent
-;	O
+EDTA;	B-Reagent
 14.7g,	B-Amount
 Sodium	B-Reagent
-Citrate	I-Reagent
-;	O
+Citrate;	I-Reagent
 0.74g,	B-Amount
 Potassium	B-Reagent
-Chloride	I-Reagent
-;	O
+Chloride;	I-Reagent
 5g,	B-Amount
 Sodium	B-Reagent
-Chloride	I-Reagent
-;	O
+Chloride;	I-Reagent
 
 Several	B-Amount
 drops	I-Amount
@@ -93,8 +89,7 @@ Once	O
 They	O
 Have	O
 Been	O
-Filtered	O
-:	O
+Filtered:	O
 
 Once	O
 cultures	B-Reagent
@@ -123,8 +118,7 @@ the	O
 following	O
 items	O
 are	O
-needed	O
-:	O
+needed:	O
 a	B-Device
 pair	I-Device
 of	I-Device
@@ -134,8 +128,7 @@ have	O
 been	O
 cleaned	B-Action
 in	O
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 HCl	B-Reagent
 overnight,	B-Time
 polycarbonate	B-Location
@@ -146,8 +139,7 @@ have	O
 been	O
 washed	B-Action
 in	O
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 HCl	B-Reagent
 overnight	B-Time
 and	O
@@ -155,9 +147,8 @@ rinsed	B-Action
 in	O
 UPW,	B-Reagent
 3	B-Numerical
-bottles	B-Location
-:	O
-one	B-Location
+bottles:	B-Location
+one	I-Location
 to	B-Modifier
 collect	I-Modifier
 waste,	I-Modifier
@@ -215,20 +206,12 @@ the	O
 tubes	B-Location
 may	O
 say,	O
-“	O
-solution	B-Reagent
-1	O
-#	O
-1	O
-unwashed	O
-”,	O
-“	O
-solution	B-Reagent
-1	O
-#	O
-2	O
-washed	O
-”.	O
+“solution	B-Reagent
+1#1	O
+unwashed”,	O
+“solution	B-Reagent
+1#2	O
+washed”.	O
 
 Once	O
 tubes	B-Location
@@ -331,9 +314,7 @@ tube	B-Location
 that	B-Modifier
 is	I-Modifier
 labeled	I-Modifier
-“	I-Modifier
-unwashed	I-Modifier
-”.	I-Modifier
+“unwashed”.	I-Modifier
 
 Syringe	B-Action
 filter	I-Action
@@ -401,9 +382,7 @@ in	O
 corresponding	O
 tube	B-Location
 labeled	B-Modifier
-“	I-Modifier
-washed	I-Modifier
-”.	I-Modifier
+“washed”.	I-Modifier
 
 Repeat	B-Action
 these	I-Action
@@ -474,15 +453,15 @@ Preparation	B-Method
 for	O
 Isotopic	B-Method
 Analysis	I-Method
-Transfer	I-Method
-filter	B-Action
-to	B-Device
+Transfer	B-Action
+filter	B-Device
+to	O
 a	O
 clean	B-Modifier
-15	I-Modifier
-mL	B-Amount
+15	B-Amount
+mL	I-Amount
 tube	B-Location
-for	I-Location
+for	O
 storage.	O
 
 Transfer	B-Action
@@ -515,8 +494,7 @@ to	O
 each	B-Modifier
 vial.	B-Location
 
-CAREFUL	O
-:	O
+CAREFUL:	O
 This	O
 reaction	B-Reagent
 will	O
@@ -675,8 +653,7 @@ uL	I-Amount
 of	O
 10N	B-Concentration
 HCl	B-Reagent
-+0.001	B-Concentration
-%	I-Concentration
++0.001%	B-Concentration
 H2O2.	B-Reagent
 
 Collect	B-Action
@@ -692,9 +669,7 @@ columns.	B-Location
 Run	B-Action
 samples	B-Reagent
 through	O
-‘	B-Location
-mini	I-Location
-’	I-Location
+‘mini’	B-Location
 columns	I-Location
 (135	B-Amount
 uL)	I-Amount
@@ -812,21 +787,21 @@ in	O
 HNO3	B-Reagent
 Take	B-Action
 off	I-Action
-100ul	I-Action
-of	B-Amount
+100ul	B-Amount
+of	O
 sample	B-Reagent
-and	I-Reagent
+and	O
 dilute	B-Action
-to	I-Action
+to	O
 1ml	B-Amount
-with	I-Amount
+with	O
 .1N	B-Concentration
-HNO3,	I-Concentration
+HNO3,	B-Reagent
 put	B-Action
 in	I-Action
-15	I-Action
-ml	B-Amount
-vial.	I-Amount
+15	B-Amount
+ml	I-Amount
+vial.	B-Location
 
 Give	B-Action
 the	O
@@ -872,8 +847,7 @@ to	O
 get	O
 a	O
 1:2	B-Concentration
-sample	B-Reagent
-:	O
+sample:	B-Reagent
 spike	B-Measure-Type
 ratio.	I-Measure-Type
 

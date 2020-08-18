@@ -86,11 +86,13 @@ Add	B-Action
 0.5	B-Amount
 vol	I-Amount
 (250	I-Amount
-µL) 3	I-Amount
-M	B-Concentration
+µL)	I-Amount
+3	B-Concentration
+M	I-Concentration
 Potassium	B-Reagent
-Acetate to	I-Reagent
-lysis	I-Reagent
+Acetate	I-Reagent
+to	O
+lysis	B-Reagent
 mix.	I-Reagent
 
 Vortex	B-Action
@@ -98,11 +100,13 @@ to	O
 mix.	B-Action
 
 Centrifuge	B-Action
-at 12	B-Speed
+at	O
+12	B-Speed
 K	I-Speed
 rpm	I-Speed
 for	O
-a minimum	B-Modifier
+a	O
+minimum	B-Modifier
 of	I-Modifier
 15	B-Time
 minutes	I-Time
@@ -118,7 +122,8 @@ to	O
 fresh	B-Modifier
 1.5	B-Amount
 mL	I-Amount
-microcentrifuge tube.	B-Location
+microcentrifuge	B-Location
+tube.	I-Location
 
 Add	B-Action
 1	B-Amount
@@ -129,8 +134,10 @@ Isopropanol	B-Reagent
 ~	B-Modifier
 700	B-Amount
 µL	I-Amount
-) to	O
-the supernatant,	O
+)	O
+to	O
+the	O
+supernatant,	O
 mix	B-Action
 well,	O
 incubate	B-Action
@@ -190,10 +197,12 @@ supernatant.	B-Reagent
 Repeat	B-Action
 wash	O
 step	O
-with 500	B-Amount
+with	O
+500	B-Amount
 µL	I-Amount
 of	O
-cold 70%	B-Concentration
+cold	O
+70%	B-Concentration
 ethanol.	B-Reagent
 
 Spin	B-Action

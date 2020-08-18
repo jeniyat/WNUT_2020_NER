@@ -8,12 +8,10 @@ Fix	B-Action
 freshly	B-Reagent
 dissected	I-Reagent
 tissue	I-Reagent
-(<	B-Modifier
-3mm	B-Size
+(<3mm	B-Modifier
 thick)	O
 with	O
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 formalin	B-Reagent
 or	O
 other	B-Reagent
@@ -21,7 +19,7 @@ fixatives	I-Reagent
 for	O
 24-48	B-Time
 h	I-Time
-at	I-Time
+at	O
 room	B-Temperature
 temperature.	I-Temperature
 
@@ -39,8 +37,7 @@ Dehydrate	B-Action
 the	O
 tissue	B-Reagent
 through	O
-70	B-Concentration
-%	I-Concentration
+70%	B-Concentration
 alcohol,	B-Reagent
 45	B-Time
 min.	I-Time
@@ -127,12 +124,12 @@ a	O
 microtome	B-Location
 and	O
 float	B-Action
-in	I-Action
+in	O
 a	O
 40°C	B-Temperature
-water	I-Temperature
-bath	B-Location
-containing	I-Location
+water	B-Location
+bath	I-Location
+containing	O
 distilled	B-Reagent
 water.	I-Reagent
 
@@ -200,8 +197,7 @@ slides.	B-Location
 Transfer	B-Action
 slides	B-Reagent
 to	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 for	O
 a	O
@@ -212,8 +208,7 @@ change.	O
 Transfer	B-Action
 slides	B-Reagent
 to	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 for	O
 a	O
@@ -229,8 +224,7 @@ by	O
 incubating	B-Action
 sections	B-Reagent
 in	O
-3	B-Concentration
-%	I-Concentration
+3%	B-Concentration
 H2O2	B-Reagent
 solution	I-Reagent
 in	O
@@ -384,8 +378,7 @@ Add	B-Action
 blocking	B-Reagent
 buffer	I-Reagent
 (e.g.	O
-10	B-Concentration
-%	I-Concentration
+10%	B-Concentration
 fetal	B-Reagent
 bovine	I-Reagent
 serum	I-Reagent
@@ -421,8 +414,7 @@ antibody	B-Reagent
 dilution	I-Reagent
 buffer,	I-Reagent
 e.g.	O
-0.5	B-Concentration
-%	I-Concentration
+0.5%	B-Concentration
 bovine	B-Reagent
 serum	I-Reagent
 albumin	I-Reagent
@@ -604,45 +596,42 @@ solution	I-Reagent
 made	O
 just	O
 before	O
-use	O
-:	O
-0.05	B-Concentration
-%	I-Concentration
+use:	O
+0.05%	B-Concentration
 DAB	B-Reagent
 -	O
-0.015	B-Concentration
-%	I-Concentration
+0.015%	B-Concentration
 H2O2	B-Reagent
-in	I-Reagent
-PBS)	I-Reagent
+in	O
+PBS)	B-Reagent
 to	O
 the	O
 sections	B-Reagent
-on	I-Reagent
+on	O
 the	O
 slides	B-Location
-to	I-Location
+to	O
 reveal	B-Action
 the	I-Action
 color	I-Action
-of	I-Action
+of	O
 antibody	B-Reagent
 staining.	I-Reagent
 
 Allow	B-Action
-the	I-Action
+the	O
 color	B-Method
 development	I-Method
-for	I-Method
-<	O
-5	B-Modifier
-min	B-Time
-until	I-Time
+for	O
+<	B-Modifier
+5	B-Time
+min	I-Time
+until	O
 the	O
 desired	O
 color	B-Measure-Type
 intensity	I-Measure-Type
-is	I-Measure-Type
+is	O
 reached.	O
 
 Change	B-Action
@@ -693,9 +682,7 @@ sides	B-Location
 in	O
 Hematoxylin	B-Reagent
 (e.g.	O
-Gill	B-Reagent
-’	I-Reagent
-s	I-Reagent
+Gill’s	B-Reagent
 Hematoxylin)	I-Reagent
 for	O
 1-2	B-Time
@@ -721,8 +708,7 @@ through	O
 a	O
 change	O
 of	O
-95	B-Concentration
-%	I-Concentration
+95%	B-Concentration
 alcohol,	B-Reagent
 for	O
 5	B-Time
@@ -737,8 +723,7 @@ through	O
 a	O
 change	O
 of	O
-95	B-Concentration
-%	I-Concentration
+95%	B-Concentration
 alcohol,	B-Reagent
 for	O
 5	B-Time
@@ -817,8 +802,7 @@ Dehydrate	B-Action
 the	O
 tissue	B-Reagent
 through	O
-80	B-Concentration
-%	I-Concentration
+80%	B-Concentration
 alcohol,	B-Reagent
 45	B-Time
 min.	I-Time
@@ -827,8 +811,7 @@ Dehydrate	B-Action
 the	O
 tissue	B-Reagent
 through	O
-95	B-Concentration
-%	I-Concentration
+95%	B-Concentration
 alcohol,	B-Reagent
 45	B-Time
 min.	I-Time
@@ -840,8 +823,7 @@ through	O
 a	O
 change	O
 of	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 1	B-Time
 h.	I-Time
@@ -854,8 +836,7 @@ through	O
 a	O
 change	O
 of	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 1	B-Time
 h.	I-Time
@@ -868,8 +849,7 @@ through	O
 a	O
 change	O
 of	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 1	B-Time
 h.	I-Time
@@ -877,8 +857,7 @@ h.	I-Time
 
 Transfer	B-Action
 through	O
-95	B-Concentration
-%	I-Concentration
+95%	B-Concentration
 alcohol	B-Reagent
 for	O
 3	B-Time
@@ -886,8 +865,7 @@ min.	I-Time
 
 Transfer	B-Action
 through	O
-70	B-Concentration
-%	I-Concentration
+70%	B-Concentration
 alcohol	B-Reagent
 for	O
 3	B-Time
@@ -895,8 +873,7 @@ min.	I-Time
 
 Transfer	B-Action
 through	O
-50	B-Concentration
-%	I-Concentration
+50%	B-Concentration
 alcohol	B-Reagent
 for	O
 3	B-Time
@@ -910,8 +887,7 @@ through	O
 a	O
 change	O
 of	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 for	O
 5	B-Time
@@ -926,8 +902,7 @@ through	O
 a	O
 change	O
 of	O
-100	B-Concentration
-%	I-Concentration
+100%	B-Concentration
 alcohol,	B-Reagent
 for	O
 5	B-Time

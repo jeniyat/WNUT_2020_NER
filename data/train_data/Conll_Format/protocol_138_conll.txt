@@ -4,8 +4,10 @@ RNA	I-Reagent
 Extraction	B-Method
 
 Add	B-Action
-200 μL	B-Amount
-chloroform per	B-Reagent
+200	B-Amount
+μL	I-Amount
+chloroform	B-Reagent
+per	B-Modifier
 1	B-Amount
 mL	I-Amount
 TRIzol®	B-Reagent
@@ -14,7 +16,8 @@ used.	O
 
 Vortex	B-Action
 15s	B-Time
-and Incubate	B-Action
+and	O
+Incubate	B-Action
 at	O
 room	B-Temperature
 temperature	I-Temperature
@@ -261,7 +264,8 @@ silica	B-Location
 frit).	I-Location
 
 Add	B-Action
-350* μL	B-Amount
+350*	B-Amount
+μL	I-Amount
 Wash	B-Reagent
 Buffer	I-Reagent
 I	I-Reagent
@@ -316,7 +320,8 @@ step	O
 with	O
 addition	B-Method
 of	O
-700 μL	B-Amount
+700	B-Amount
+μL	I-Amount
 Wash	B-Reagent
 Buffer	I-Reagent
 I.	I-Reagent
@@ -363,8 +368,9 @@ Tube.	I-Location
 Repeat	B-Action
 with	O
 a	O
-second 500	B-Modifier
-μL	B-Amount
+second	B-Modifier
+500	B-Amount
+μL	I-Amount
 Wash	B-Reagent
 Buffer	I-Reagent
 II	I-Reagent
@@ -462,7 +468,8 @@ of	O
 the	O
 Spin	B-Device
 Cartridge	I-Device
-and Incubate	B-Action
+and	O
+Incubate	B-Action
 at	O
 room	B-Temperature
 temperature	I-Temperature
@@ -554,7 +561,8 @@ to	O
 Fragment.	B-Method
 
 Pull	B-Action
-out one	I-Action
+out	I-Action
+one	B-Numerical
 stocking,	B-Reagent
 comprising	O
 a	O
@@ -636,7 +644,8 @@ Pull	B-Action
 whole	B-Reagent
 sample	I-Reagent
 out	O
-with gloved	B-Device
+with	O
+gloved	B-Device
 hands	I-Device
 holding	B-Action
 the	O
@@ -711,7 +720,8 @@ explicitness	O
 here].	O
 
 Fracture	B-Action
-piece in	O
+piece	O
+in	O
 'two'	B-Reagent
 and	O
 allocate	B-Action
@@ -729,7 +739,8 @@ into	O
 ready	B-Location
 tube	I-Location
 with	O
-1 ml	B-Amount
+1	B-Amount
+ml	I-Amount
 trizol	B-Reagent
 and	O
 0.2	B-Amount
@@ -807,7 +818,8 @@ only	O
 on	O
 RNA	B-Method
 Extraction	I-Method
-Fragment (1).	I-Method
+Fragment	I-Method
+(1).	O
 
 Lyse	B-Action
 the	O
@@ -816,7 +828,9 @@ Immediately	B-Modifier
 Bead	B-Action
 beat	I-Action
 for	O
-45s with FastPrep	B-Time
+45s	B-Time
+with	O
+FastPrep	B-Device
 at	O
 max	B-Speed
 speed.	I-Speed
@@ -835,7 +849,8 @@ the	O
 lysate	B-Reagent
 with	O
 TRIzol®	B-Reagent
-Reagent at	I-Reagent
+Reagent	I-Reagent
+at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
@@ -853,7 +868,8 @@ Sample	B-Reagent
 is	O
 stable	O
 in	O
-TRIzol at	B-Reagent
+TRIzol	B-Reagent
+at	O
 room	B-Temperature
 temperature	I-Temperature
 after	O
@@ -862,7 +878,8 @@ beating.	I-Action
 
 Remove	B-Action
 the	O
-Lysate: Either	B-Reagent
+Lysate:	B-Reagent
+Either	O
 pipette	B-Action
 TRIZOL	B-Reagent
 mix	I-Reagent
@@ -896,8 +913,9 @@ Nest	B-Action
 into	O
 new,	B-Modifier
 clean	I-Modifier
-tube (5ml	B-Location
-spin	I-Location
+tube	B-Location
+(5ml	B-Amount
+spin	B-Location
 tubes?).	I-Location
 
 Spin	B-Action
@@ -918,7 +936,9 @@ Plus	I-Reagent
 RNA	I-Reagent
 Purification	I-Reagent
 Kit	I-Reagent
-(Ambion 12183-555) in	O
+(Ambion	O
+12183-555)	O
+in	O
 advance:	O
 TRIzol®	B-Reagent
 included	O
@@ -931,16 +951,20 @@ per	B-Modifier
 tissue	B-Reagent
 slurry	I-Reagent
 or	O
-1cm chunk	B-Reagent
-of skeleton, Chloroform,	I-Reagent
+1cm	O
+chunk	B-Reagent
+of	I-Reagent
+skeleton,	I-Reagent
+Chloroform,	I-Reagent
 need	O
 200	B-Amount
 uL/sample	I-Amount
 (or	O
 per	O
 1ml	B-Amount
-TRIZOL), 96–100%	B-Reagent
-ethanol,	I-Reagent
+TRIZOL),	B-Reagent
+96–100%	B-Concentration
+ethanol,	B-Reagent
 need	O
 60ml	B-Amount
 to	O
@@ -951,7 +975,8 @@ Buffer	I-Reagent
 II	I-Reagent
 for	O
 50	B-Numerical
-samples, Before	B-Reagent
+samples,	B-Reagent
+Before	O
 beginning	O
 lysis,	B-Method
 add	B-Action
@@ -974,7 +999,8 @@ Buffer	I-Reagent
 II	I-Reagent
 label	O
 to	O
-indicate that	O
+indicate	O
+that	O
 ethanol	B-Reagent
 was	O
 added.	B-Action
@@ -1001,15 +1027,18 @@ Prepare	B-Action
 PureLink	B-Reagent
 on-column	I-Reagent
 DNAse	I-Reagent
-treatment: Reconstitute	I-Reagent
+treatment:	I-Reagent
+Reconstitute	B-Action
 the	O
 PureLink™	B-Reagent
 DNase	I-Reagent
-(Invitrogen 12185-010)	O
+(Invitrogen	O
+12185-010)	O
 by	O
 dissolving	B-Action
 the	O
-lyophilized DNase	B-Reagent
+lyophilized	O
+DNase	B-Reagent
 in	O
 550	B-Amount
 μl	I-Amount
@@ -1024,7 +1053,8 @@ store	B-Action
 the	O
 reconstituted	B-Modifier
 PureLink™	B-Reagent
-DNase at	I-Reagent
+DNase	I-Reagent
+at	O
 4°C.	B-Temperature
 
 For	O
@@ -1034,7 +1064,8 @@ prepare	B-Action
 aliquots	B-Reagent
 of	O
 the	O
-PureLink™ DNase	B-Reagent
+PureLink™	B-Reagent
+DNase	I-Reagent
 and	O
 store	B-Action
 at	O
@@ -1046,8 +1077,9 @@ freezing	I-Action
 and	O
 thawing.	B-Action
 
-Thawed PureLink™	B-Modifier
-DNase	B-Reagent
+Thawed	B-Modifier
+PureLink™	B-Reagent
+DNase	I-Reagent
 stocks	I-Reagent
 may	O
 be	O
@@ -1110,7 +1142,8 @@ Tubes	I-Location
 for	O
 RNA	B-Method
 Extractions	I-Method
-(MoBio 13123-50/vwr	O
+(MoBio	O
+13123-50/vwr	O
 101672-312),	O
 ORBead	B-Location
 Beating	I-Location
@@ -1120,12 +1153,14 @@ RNA	B-Method
 Extractions	I-Method
 (BioSpec	O
 Zirconia	O
-Beads 11079107ZX)DNA	B-Location
+Beads	O
+11079107ZX)DNA	B-Location
 Extraction	I-Location
 Tubes	I-Location
 with	O
 buffer	B-Reagent
-(MoBio 12888-100-PBT)1.5	B-Amount
+(MoBio	O
+12888-100-PBT)1.5	B-Amount
 mL	I-Amount
 RNase-free	B-Modifier
 microcentrifuge	B-Location
@@ -1163,7 +1198,8 @@ code,	B-Measure-Type
 datetime,	I-Measure-Type
 bag	B-Location
 label,	B-Measure-Type
-3 caliper	I-Measure-Type
+3	I-Measure-Type
+caliper	I-Measure-Type
 measurements,	I-Measure-Type
 slurry	B-Reagent
 volume.	B-Measure-Type
@@ -1179,7 +1215,8 @@ and	O
 rough	B-Location
 ethanol	I-Location
 Calipers	I-Location
-Storage cups	I-Location
+Storage	I-Location
+cups	I-Location
 for	O
 inside	O
 cooler.	B-Device
@@ -1220,7 +1257,8 @@ with	O
 tubes.	B-Location
 
 Microplate	B-Device
-centrifuge Magnetic	I-Device
+centrifuge	I-Device
+Magnetic	I-Device
 stand-96	I-Device
 with	O
 beads	B-Reagent
@@ -1274,7 +1312,8 @@ Add	B-Action
 μL	I-Amount
 PureLink®	B-Reagent
 DNase	I-Reagent
-mixture directly	I-Reagent
+mixture	I-Reagent
+directly	B-Modifier
 onto	O
 the	O
 surface	B-Location
@@ -1293,7 +1332,8 @@ for	O
 minutes.	I-Time
 
 Add	B-Action
-350* μL	B-Amount
+350*	B-Amount
+μL	I-Amount
 Wash	B-Reagent
 Buffer	I-Reagent
 I	I-Reagent
@@ -1337,7 +1377,8 @@ DNAse	B-Method
 treatment	I-Method
 in	O
 the	O
-previous step	O
+previous	O
+step	O
 there	O
 would	O
 be	O
@@ -1347,7 +1388,8 @@ step	O
 with	O
 addition	B-Method
 of	O
-700 μL	B-Amount
+700	B-Amount
+μL	I-Amount
 Wash	B-Reagent
 Buffer	I-Reagent
 I,	I-Reagent

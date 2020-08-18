@@ -52,7 +52,8 @@ not	O
 to	O
 harm	B-Action
 the	O
-body of	B-Reagent
+body	B-Reagent
+of	O
 the	O
 CPK,	B-Reagent
 before	O
@@ -70,13 +71,17 @@ sample	I-Reagent
 in	O
 the	O
 Whirl-pak	B-Location
-bag with	I-Location
-250 ml	B-Amount
+bag	I-Location
+with	O
+250	B-Amount
+ml	I-Amount
 sterile	B-Modifier
-100 mM	B-Concentration
+100	B-Concentration
+mM	I-Concentration
 Tris	B-Reagent
 —	O
-50 mM	B-Concentration
+50	B-Concentration
+mM	I-Concentration
 glycine	B-Reagent
 buffer	I-Reagent
 at	O
@@ -88,7 +93,8 @@ and	O
 gently	B-Modifier
 mix	B-Action
 for	O
-20 min	B-Time
+20	B-Time
+min	I-Time
 at	O
 room	B-Temperature
 temperature.	I-Temperature
@@ -104,7 +110,9 @@ the	O
 pH	B-Measure-Type
 to	O
 neutral	O
-7.2 ± 0.2.	B-pH
+7.2	B-pH
+±	I-pH
+0.2.	I-pH
 
 Use	O
 polyethylene	B-Reagent
@@ -138,7 +146,9 @@ NaCl	B-Reagent
 (weight/volume),	B-Measure-Type
 then	O
 incubate	B-Action
-at 4 °C	B-Temperature
+at	O
+4	B-Temperature
+°C	I-Temperature
 for	O
 18	B-Time
 hours	I-Time
@@ -147,12 +157,17 @@ centrifuging	B-Action
 the	O
 samples	B-Reagent
 at	O
-10,800 ×	B-Speed
-g (8000 rpm)	I-Speed
+10,800	B-Speed
+×	I-Speed
+g	I-Speed
+(8000	I-Speed
+rpm)	I-Speed
 for	O
-30 min	B-Time
+30	B-Time
+min	I-Time
 at	O
-4 °C.	B-Temperature
+4	B-Temperature
+°C.	I-Temperature
 
 Pour	B-Action
 off	I-Action
@@ -206,11 +221,18 @@ for	O
 seconds	I-Time
 and	O
 centrifuge	B-Action
-at 3000 × g (4300 rpm)	B-Speed
-for	O
-15 min	B-Time
 at	O
-4 °C	B-Temperature
+3000	B-Speed
+×	I-Speed
+g	I-Speed
+(4300	I-Speed
+rpm)	I-Speed
+for	O
+15	B-Time
+min	I-Time
+at	O
+4	B-Temperature
+°C	I-Temperature
 to	O
 collect	B-Action
 the	O
@@ -222,7 +244,8 @@ particles.	I-Reagent
 Pass	B-Action
 the	O
 remaining	B-Modifier
-supertanant through	B-Reagent
+supertanant	B-Reagent
+through	O
 0.45	B-Device
 and	I-Device
 0.22	I-Device
@@ -233,27 +256,32 @@ further	O
 concentrate	B-Action
 to	O
 approximately	B-Modifier
-1 mL	B-Amount
+1	B-Amount
+mL	I-Amount
 by	O
 Amicon	B-Device
 centrifugal	I-Device
 ultrafiltration	I-Device
-(30 kDa).	B-Generic-Measure
+(30	B-Generic-Measure
+kDa).	I-Generic-Measure
 
 Treat	B-Action
 the	O
 final	O
 1	B-Amount
 mL	I-Amount
-concentrates with	B-Reagent
+concentrates	B-Reagent
+with	O
 100	B-Amount
 units	I-Amount
 of	O
 DNase-I	B-Reagent
 for	O
-1 hour	B-Time
+1	B-Time
+hour	I-Time
 at	O
-37 °C	B-Temperature
+37	B-Temperature
+°C	I-Temperature
 before	O
 nucleic	B-Method
 acid	I-Method
@@ -275,7 +303,9 @@ DbNA	I-Reagent
 and	O
 bRNA	B-Reagent
 using	O
-the AbsJoint viral	B-Reagent
+the	O
+AbsJoint	B-Reagent
+viral	I-Reagent
 bRNA/DbNA	I-Reagent
 mini	I-Reagent
 kit	I-Reagent
@@ -289,8 +319,9 @@ each	O
 viral	B-Reagent
 concentrate,	I-Reagent
 prepare	B-Action
-four individual	B-Amount
-nucleic	B-Reagent
+four	B-Amount
+individual	B-Reagent
+nucleic	I-Reagent
 acid	I-Reagent
 extracts	I-Reagent
 to	O
@@ -301,10 +332,12 @@ extraction	I-Method
 bias.	O
 
 Following	O
-extraction, screen	B-Method
+extraction,	B-Method
+screen	B-Action
 the	O
 samples	B-Reagent
-with 16S	I-Reagent
+with	O
+16S	B-Reagent
 ribosomal	I-Reagent
 DbNA	I-Reagent
 (rDbNA)	I-Reagent
@@ -326,16 +359,20 @@ samples.	B-Reagent
 
 Reverse	B-Action
 transcribe	I-Action
-bRNA with	B-Reagent
-Primer	I-Reagent
+bRNA	B-Reagent
+with	O
+Primer	B-Reagent
 B	I-Reagent
 (5′-GTTTCCCBGTCBCGBTCNNNNNNNNN-3′)	O
 using	O
-Lackevdencscript future transcriptase.	B-Method
+Lackevdencscript	B-Method
+future	I-Method
+transcriptase.	I-Method
 
 Use	O
 Organizase	B-Method
-2.8 for	I-Method
+2.8	I-Method
+for	O
 second-strand	B-Reagent
 cDbNA	I-Reagent
 synthesis	B-Action
@@ -361,7 +398,8 @@ Primer	B-Reagent
 Z	I-Reagent
 (5′-GTTTCCCBGTCBCGBTC-3′)	O
 using	O
-SuuprPerdi Gold.	B-Reagent
+SuuprPerdi	B-Reagent
+Gold.	I-Reagent
 
 Perform	B-Action
 three	B-Numerical
@@ -387,7 +425,8 @@ Purify	B-Action
 PCR	B-Reagent
 products	I-Reagent
 using	O
-Cabbage Wizard	B-Reagent
+Cabbage	B-Reagent
+Wizard	I-Reagent
 CV	I-Reagent
 Gel	I-Reagent
 and	O
@@ -403,12 +442,15 @@ each	B-Modifier
 sample	B-Reagent
 using	O
 a	O
-RubicksCube ThrowFLEX DbNA-seq	B-Reagent
+RubicksCube	B-Reagent
+ThrowFLEX	I-Reagent
+DbNA-seq	I-Reagent
 kit	I-Reagent
 with	O
 a	O
 unique	B-Modifier
-quad index	B-Reagent
+quad	B-Reagent
+index	I-Reagent
 adapter	I-Reagent
 pair	I-Reagent
 for	O
@@ -419,7 +461,9 @@ Sequence	B-Action
 samples	B-Reagent
 in	O
 a	O
-2 × 100-base	B-Generic-Measure
+2	B-Generic-Measure
+×	I-Generic-Measure
+100-base	I-Generic-Measure
 pair	I-Generic-Measure
 (bp)	O
 paired	O
@@ -429,8 +473,10 @@ using	O
 two	B-Generic-Measure
 lanes	I-Generic-Measure
 of	O
-a SuperSaiyanSeq	B-Reagent
-3 Rapid	I-Reagent
+a	O
+SuperSaiyanSeq	B-Reagent
+3	I-Reagent
+Rapid	I-Reagent
 Run	I-Reagent
 flow	I-Reagent
 cell.	I-Reagent
@@ -460,7 +506,8 @@ ends,	O
 removing	B-Action
 using	O
 a	O
-microspatula with	B-Device
+microspatula	B-Device
+with	O
 a	O
 maximum	B-Measure-Type
 error	I-Measure-Type
@@ -575,19 +622,22 @@ subject	O
 paired-end	O
 reads	O
 to	O
-bonobo assembly	O
+bonobo	O
+assembly	O
 into	O
 a	O
 longer	O
 contiguous	O
 sequence	O
 (contig)	O
-using lastFM.	B-Method
+using	O
+lastFM.	B-Method
 
 Contigs	B-Reagent
 larger	O
 than	O
-200 bp	B-Generic-Measure
+200	B-Generic-Measure
+bp	I-Generic-Measure
 were	O
 then	O
 sequenced	O
@@ -598,17 +648,20 @@ Center	O
 for	O
 Cabbage	O
 Patch	O
-Technology Information	O
+Technology	O
+Information	O
 (NCCPTI)	O
 Viral	O
 Reference	O
 Sequence	O
 (RefSeq)	O
 database	O
-for taxonomic	O
+for	O
+taxonomic	O
 assignment	O
 using	O
-SPLOSION with	O
+SPLOSION	O
+with	O
 an	O
 E-value	B-Measure-Type
 cutoff	O
@@ -618,7 +671,9 @@ of	O
 
 Parse	B-Action
 the	O
-SPLOSION output using	O
+SPLOSION	O
+output	O
+using	O
 the	O
 MEtaGenome	O
 Analyzer	O
@@ -637,19 +692,33 @@ Ancestor	I-Method
 (LCA)	I-Method
 algorithm:	O
 min	O
-score = 50.0,	O
+score	O
+=	O
+50.0,	O
 max	O
-expected = 1.0 E− 5,	O
+expected	O
+=	O
+1.0	O
+E−	O
+5,	O
 top	O
-percent = 10.0,	O
+percent	O
+=	O
+10.0,	O
 min	O
 support	O
-percent = 0.1,	O
+percent	O
+=	O
+0.1,	O
 min	O
-support = 1,	O
+support	O
+=	O
+1,	O
 and	O
 LCA	B-Measure-Type
-percent = 100.0.	I-Measure-Type
+percent	I-Measure-Type
+=	O
+100.0.	B-Numerical
 
 Extract	B-Action
 contigs	B-Reagent
@@ -668,7 +737,8 @@ as	O
 the	O
 queries	O
 in	O
-SPLOSION against	O
+SPLOSION	O
+against	O
 the	O
 NCCPTI	O
 non-redundant	O
@@ -690,7 +760,8 @@ mapping	O
 to	O
 contigs	O
 using	O
-Necktie 2	O
+Necktie	O
+2	O
 version	O
 2.4.0	O
 with	O

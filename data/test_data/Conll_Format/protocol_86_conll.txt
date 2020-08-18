@@ -12,8 +12,7 @@ microcentrifuge	B-Location
 tubes	I-Location
 as	O
 intermediate	B-Method
-#	I-Method
-1	I-Method
+#1	I-Method
 &	I-Method
 2.	I-Method
 
@@ -28,8 +27,7 @@ diluent	I-Reagent
 to	O
 intermediate	B-Location
 tubes	I-Location
-#	I-Location
-1	I-Location
+#1	I-Location
 &	I-Location
 2.	I-Location
 
@@ -63,17 +61,15 @@ minutes	I-Time
 at	O
 room	B-Temperature
 temperature	I-Temperature
-Note	O
-:	O
+Note:	O
 During	B-Modifier
-30	I-Modifier
-minute	B-Time
-incubation	I-Time
-;	B-Method
+30	B-Time
+minute	I-Time
+incubation;	B-Method
 proceed	B-Action
-thru	I-Action
+thru	O
 appropriate	B-Modifier
-sections	I-Modifier
+sections	O
 below	O
 (e.g.	O
 sections	O
@@ -122,8 +118,7 @@ diluent	I-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#	I-Location
-1.	I-Location
+#1.	I-Location
 
 Mix	B-Action
 well	B-Modifier
@@ -137,8 +132,7 @@ Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	B-Location
-#	I-Location
-1	I-Location
+#1	I-Location
 tube	I-Location
 and	O
 add	B-Action
@@ -149,8 +143,7 @@ standard	B-Reagent
 diluent	I-Reagent
 in	O
 intermediate	B-Location
-#	I-Location
-2	I-Location
+#2	I-Location
 tube.	I-Location
 
 Mix	B-Action
@@ -168,8 +161,7 @@ standard	B-Reagent
 in	O
 intermediate	B-Location
 tube	I-Location
-#	I-Location
-2	I-Location
+#2	I-Location
 will	O
 be	O
 25ng/mL.	B-Amount
@@ -180,11 +172,9 @@ a	O
 centrifuge	B-Location
 tube	I-Location
 as	O
-“	O
-1X	B-Method
+“1X	B-Method
 Incubation	I-Method
-Buffer	I-Method
-”.	O
+Buffer”.	I-Method
 
 Dilute	B-Action
 2X	B-Concentration
@@ -210,14 +200,11 @@ the	O
 50mL	B-Amount
 tube	B-Location
 labeled	B-Action
-“	O
-1X	B-Method
+“1X	B-Method
 Incubation	I-Method
-Buffer	I-Method
-”.	O
+Buffer”.	I-Method
 
-*Note	O
-:	O
+*Note:	O
 Lab	B-Modifier
 grade	I-Modifier
 filtered	I-Modifier
@@ -254,11 +241,9 @@ Label	B-Action
 a	O
 1L	B-Amount
 container	B-Location
-“	O
-1X	B-Method
+“1X	B-Method
 Wash	I-Method
-buffer	I-Method
-”.	O
+buffer”.	I-Method
 
 Dilute	B-Action
 5X	B-Concentration
@@ -294,8 +279,7 @@ Label	B-Action
 microcentrifuge	B-Location
 tubes	I-Location
 as	O
-#	B-Method
-1-8	I-Method
+#1-8	B-Method
 (use	B-Action
 enclosed	B-Modifier
 tubes).	B-Location
@@ -319,14 +303,12 @@ the	O
 standard	B-Location
 curve	I-Location
 tubes	I-Location
-(#	O
-2-8)	O
+(#2-8)	O
 and	O
 490uL	B-Amount
 to	O
 tube	B-Location
-#	I-Location
-1	I-Location
+#1	I-Location
 (standard	O
 curve	O
 top	O
@@ -336,8 +318,7 @@ Remove	B-Action
 10uL	B-Amount
 from	O
 intermediate	B-Location
-#	I-Location
-2	I-Location
+#2	I-Location
 and	O
 add	B-Action
 to	O
@@ -347,8 +328,7 @@ incubation	B-Reagent
 buffer	I-Reagent
 in	O
 tube	B-Location
-#	I-Location
-1	I-Location
+#1	I-Location
 (this	O
 will	O
 be	O
@@ -394,8 +374,7 @@ incubation	B-Reagent
 buffer	I-Reagent
 in	O
 tubes	B-Location
-#	I-Location
-2-7.	I-Location
+#2-7.	I-Location
 
 Mix	B-Action
 well	B-Modifier
@@ -464,8 +443,7 @@ duplicate	B-Numerical
 or	O
 triplicate.	B-Numerical
 
-Note	O
-:	O
+Note:	O
 All	B-Modifier
 sample	O
 matrices	O
@@ -546,12 +524,10 @@ a	O
 15mL	B-Amount
 tube	B-Location
 as	O
-``	B-Method
-Diluted	I-Method
+"Diluted	B-Method
 HRP	I-Method
 Detection	I-Method
-Antibody	I-Method
-''.	B-Action
+Antibody".	I-Method
 
 Add	B-Action
 6mL	B-Amount
@@ -563,12 +539,10 @@ to	O
 the	O
 tube	B-Location
 labeled	B-Action
-``	B-Method
-Diluted	I-Method
+"Diluted	B-Method
 HRP	I-Method
 Detection	I-Method
-Antibody	I-Method
-''.	B-Action
+Antibody".	I-Method
 
 Add	B-Action
 6uL	B-Amount
@@ -652,8 +626,7 @@ inTable	O
 3	O
 below.	O
 
-Note	O
-:	O
+Note:	O
 Wells	B-Location
 E1-E3	I-Location
 contain	B-Action
@@ -663,8 +636,7 @@ or	O
 blank	B-Modifier
 sample	B-Reagent
 (Std	O
-#	O
-8).	O
+#8).	O
 
 Add	B-Action
 50uL	B-Amount
@@ -712,8 +684,7 @@ overnight	B-Time
 at	O
 2-8°C.	B-Temperature
 
-NOTE	O
-:	O
+NOTE:	O
 Once	B-Modifier
 diluted	I-Modifier
 with	O
@@ -824,8 +795,7 @@ in	O
 the	O
 dark.	B-Location
 
-Note	O
-:	O
+Note:	O
 If	O
 running	B-Action
 multiple	B-Modifier
@@ -839,8 +809,7 @@ so	O
 that	O
 all	B-Modifier
 plates	B-Location
-are	B-Modifier
-n't	I-Modifier
+aren't	B-Modifier
 ready	I-Modifier
 for	O
 reading	B-Method

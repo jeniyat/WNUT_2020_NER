@@ -10,8 +10,9 @@ and	O
 sterilise	B-Action
 the	O
 spore	B-Reagent
-heads: Get	I-Reagent
-ready:	B-Action
+heads:	I-Reagent
+Get	B-Action
+ready:	I-Action
 At	O
 the	O
 flow	B-Device
@@ -253,7 +254,8 @@ sterile	B-Modifier
 water.	B-Reagent
 
 Plate	B-Action
-spores: Plate	B-Reagent
+spores:	B-Reagent
+Plate	B-Action
 the	O
 150	B-Amount
 μl	I-Amount
@@ -337,7 +339,8 @@ after	B-Modifier
 days.	I-Time
 
 Agro	B-Method
-transformation: Mix	I-Method
+transformation:	I-Method
+Mix	B-Action
 DNA	B-Reagent
 and	O
 Agro:	B-Reagent
@@ -886,8 +889,9 @@ grow.	B-Action
 
 Screening	B-Action
 for	O
-transformants: Positive	B-Reagent
-transformants	I-Reagent
+transformants:	B-Reagent
+Positive	B-Modifier
+transformants	B-Reagent
 grow	B-Action
 while	O
 non-trasnformed	B-Modifier

@@ -29,7 +29,8 @@ the	O
 cells	B-Reagent
 on	O
 the	O
-filters: Remove	B-Device
+filters:	B-Device
+Remove	B-Action
 the	O
 300	B-Amount
 µl	I-Amount
@@ -491,7 +492,8 @@ at	O
 ≥	B-Modifier
 8,000	B-Speed
 X	I-Speed
-g. Discard	I-Speed
+g.	I-Speed
+Discard	B-Action
 flow	B-Reagent
 through.	I-Reagent
 
@@ -748,10 +750,10 @@ primers	B-Reagent
 cycles)Herculase	I-Generic-Measure
 5X	B-Concentration
 buffer10µl95°C	B-Reagent
-2	O
-min95°C	B-Time
-2	O
-mindNTP	B-Time
+2	B-Time
+min95°C	I-Time
+2	I-Time
+mindNTP	I-Time
 (10mM)1.25µl95°C	B-Concentration
 20	B-Time
 sec95°C	I-Time
@@ -765,15 +767,15 @@ sec55°C	I-Time
 secR	I-Time
 primer	B-Reagent
 (10µM)1.25µl72°C	B-Concentration
-2	O
-min72°C	B-Time
-2	O
-minHerculase	B-Time
+2	B-Time
+min72°C	I-Time
+2	I-Time
+minHerculase	I-Time
 pol1µl72°C	B-Reagent
-3	O
-min72°C	B-Time
-3	O
-minH2OTo	B-Time
+3	B-Time
+min72°C	I-Time
+3	I-Time
+minH2OTo	I-Time
 50µl.	B-Amount
 
 Purify	B-Action
@@ -837,25 +839,35 @@ suggest	O
 250-500	B-Amount
 ng)*1µlATP	I-Amount
 (75	B-Concentration
-mM)2 µlGTP	I-Concentration
-(75	I-Concentration
-mM)2 µlCTP	I-Concentration
-(75	I-Concentration
-mM)1.5 µlUTP	I-Concentration
-(75	I-Concentration
-mM)1.5 µlBiotin-11-CTP	I-Concentration
-(10	I-Concentration
-mM,	I-Concentration
-Roche 04739205001)3.75 µlBiotin-16-UTP	B-Amount
+mM)2	I-Concentration
+µlGTP	B-Amount
+(75	B-Concentration
+mM)2	I-Concentration
+µlCTP	B-Amount
+(75	B-Concentration
+mM)1.5	I-Concentration
+µlUTP	B-Amount
+(75	B-Concentration
+mM)1.5	I-Concentration
+µlBiotin-11-CTP	B-Amount
 (10	B-Concentration
 mM,	I-Concentration
 Roche	O
-11388908910)3.75 µl10X	B-Amount
-buffer2 µlSUPERase•InTM	B-Reagent
-RNase	I-Reagent
-inhibitor0.5 µlT7	I-Reagent
-RNA	I-Reagent
-polymerase2 µl.	I-Reagent
+04739205001)3.75	B-Amount
+µlBiotin-16-UTP	I-Amount
+(10	B-Concentration
+mM,	I-Concentration
+Roche	O
+11388908910)3.75	B-Amount
+µl10X	I-Amount
+buffer2	B-Reagent
+µlSUPERase•InTM	B-Amount
+RNase	B-Reagent
+inhibitor0.5	I-Reagent
+µlT7	B-Amount
+RNA	B-Reagent
+polymerase2	I-Reagent
+µl.	B-Amount
 
 At	O
 room	B-Temperature
@@ -1079,13 +1091,15 @@ Hybridization.	B-Method
 
 For	O
 a	O
-50 µl	B-Amount
+50	B-Amount
+µl	I-Amount
 reaction*,	B-Reagent
 prepare	B-Action
 in	O
 a	O
 PCR	B-Location
-tube: Template,	I-Location
+tube:	I-Location
+Template,	B-Reagent
 total	O
 RNA	B-Reagent
 (ideally	O
@@ -1106,18 +1120,22 @@ probe	I-Reagent
 ng)**X	I-Amount
 µlSUPERase•In	I-Amount
 RNase	B-Reagent
-inhibitor1 µl20X	I-Reagent
-Sodium	I-Reagent
+inhibitor1	I-Reagent
+µl20X	B-Amount
+Sodium	B-Reagent
 chloride-citrate	I-Reagent
 (SSC)	I-Reagent
 buffer	I-Reagent
 (RNase	B-Modifier
-free)2.5 µlFormamide	I-Modifier
-(100%)***10 µlNuclease-free	B-Concentration
+free)2.5	I-Modifier
+µlFormamide	B-Amount
+(100%)***10	B-Concentration
+µlNuclease-free	B-Amount
 water	B-Reagent
 (if	O
 necessary)To	O
-50 µl.	B-Amount
+50	B-Amount
+µl.	I-Amount
 
 In	O
 a	O
@@ -1155,7 +1173,8 @@ for	O
 2-5	B-Time
 min.	I-Time
 
-Bead binding.	B-Reagent
+Bead	B-Reagent
+binding.	B-Action
 
 While	O
 the	O
@@ -1289,7 +1308,8 @@ volume).	B-Measure-Type
 Purify	B-Action
 subtracted	B-Modifier
 RNA	B-Reagent
-(200 µl)	B-Amount
+(200	B-Amount
+µl)	I-Amount
 to	O
 remove	B-Action
 formamide.	B-Reagent
@@ -1382,13 +1402,17 @@ reaction:	B-Reagent
 Nuclease-free	B-Modifier
 waterx	B-Reagent
 µlrRNA-subtracted	B-Amount
-RNAy µlRNA	B-Reagent
-fragmentation	I-Reagent
-solution1.0 µlcDNA	I-Reagent
-synthesis	I-Reagent
-primer2.0 µlTotal	I-Reagent
-reaction	I-Reagent
-volume12 µl.	B-Measure-Type
+RNAy	B-Reagent
+µlRNA	B-Amount
+fragmentation	B-Reagent
+solution1.0	I-Reagent
+µlcDNA	B-Amount
+synthesis	B-Reagent
+primer2.0	I-Reagent
+µlTotal	B-Amount
+reaction	B-Reagent
+volume12	B-Measure-Type
+µl.	B-Amount
 
 Fragment	B-Action
 RNA	B-Reagent
@@ -1432,18 +1456,22 @@ rxn:	O
 cDNA	B-Reagent
 synthesis	I-Reagent
 premix,	I-Reagent
-3 µl;	B-Amount
+3	B-Amount
+µl;	I-Amount
 100	B-Concentration
 mM,	I-Concentration
 DTT,	B-Reagent
-0.5 µl;	B-Amount
+0.5	B-Amount
+µl;	I-Amount
 StarScript	B-Reagent
 Reverse	I-Reagent
 Transcriptase,	I-Reagent
-0.5 µl;	B-Amount
+0.5	B-Amount
+µl;	I-Amount
 Total	O
 volume,	B-Measure-Type
-4 µl.	B-Amount
+4	B-Amount
+µl.	I-Amount
 
 Gently	B-Modifier
 but	O
@@ -1596,13 +1624,16 @@ ice:	B-Location
 Terminal	B-Reagent
 tagging	I-Reagent
 premix,	I-Reagent
-7.5 µl;	B-Amount
+7.5	B-Amount
+µl;	I-Amount
 DNA	B-Reagent
 polymerase,	I-Reagent
-0.5 µl;	B-Amount
+0.5	B-Amount
+µl;	I-Amount
 Total	O
 volume	B-Measure-Type
-8 µl.	B-Amount
+8	B-Amount
+µl.	I-Amount
 
 Remove	B-Action
 one	B-Numerical
@@ -1959,22 +1990,26 @@ E,	I-Reagent
 Forward	B-Reagent
 PCR	I-Reagent
 primer,	I-Reagent
-1 µl;	B-Amount
+1	B-Amount
+µl;	I-Amount
 Reverse	B-Reagent
 or	O
 ScriptSeq	B-Reagent
 index	I-Reagent
 primer,	I-Reagent
-1 µl;	B-Amount
+1	B-Amount
+µl;	I-Amount
 FailSafe	B-Reagent
 PCR	I-Reagent
 Enzyme	I-Reagent
 (1.25	B-Generic-Measure
 U),	I-Generic-Measure
-0.5 µl;	B-Amount
+0.5	B-Amount
+µl;	I-Amount
 Total	O
 Volume,	B-Measure-Type
-50 µl.	B-Amount
+50	B-Amount
+µl.	I-Amount
 
 Perform	B-Action
 PCR:	B-Method
@@ -2345,7 +2380,8 @@ For	O
 v2	B-Device
 sequencing	I-Device
 kits	I-Device
-with the	O
+with	O
+the	O
 MiSeq	B-Method
 and	O
 NextSeq,	B-Method

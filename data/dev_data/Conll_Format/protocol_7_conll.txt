@@ -54,7 +54,8 @@ sweetspot.	O
 Grow	B-Action
 1	B-Amount
 mL	I-Amount
-of E.	B-Reagent
+of	O
+E.	B-Reagent
 coli	I-Reagent
 culture	I-Reagent
 containing	O
@@ -102,7 +103,9 @@ to	O
 inoculate	B-Action
 50	B-Amount
 mL	I-Amount
-of fresh LB+antibiotic,	B-Modifier
+of	O
+fresh	B-Modifier
+LB+antibiotic,	B-Reagent
 1:50	B-Generic-Measure
 dilution,	I-Generic-Measure
 for	O
@@ -132,12 +135,15 @@ the	O
 hours	I-Time
 the	O
 E.	B-Reagent
-coli culture	I-Reagent
+coli	I-Reagent
+culture	I-Reagent
 is	O
 growing,	B-Action
 measure	I-Action
-the Phaeodactylum	B-Reagent
-tricornutum cell	I-Reagent
+the	O
+Phaeodactylum	B-Reagent
+tricornutum	I-Reagent
+cell	I-Reagent
 concentration	I-Reagent
 with	O
 a	O
@@ -152,7 +158,8 @@ volume	I-Amount
 needed	O
 to	O
 collect	B-Action
-2.5E8 cells	B-Amount
+2.5E8	B-Amount
+cells	B-Reagent
 for	O
 each	B-Modifier
 transformation.	B-Reagent
@@ -160,16 +167,20 @@ transformation.	B-Reagent
 For	O
 each	B-Modifier
 transformation,	B-Reagent
-centrifuge 50	B-Action
-mL	B-Amount
-of E.	B-Reagent
-coli culture	I-Reagent
+centrifuge	B-Action
+50	B-Amount
+mL	I-Amount
+of	O
+E.	B-Reagent
+coli	I-Reagent
+culture	I-Reagent
 and	O
 the	O
 required	B-Modifier
 Phaeodactylum	B-Reagent
 tricornutum	I-Reagent
-volume at	B-Measure-Type
+volume	B-Measure-Type
+at	O
 4000	B-Speed
 x	I-Speed
 g	I-Speed
@@ -182,13 +193,16 @@ at	O
 Resuspend	B-Action
 E.	B-Reagent
 coli	I-Reagent
-pellet in	I-Reagent
+pellet	I-Reagent
+in	O
 500	B-Amount
 μL	I-Amount
 of	O
 SOC	B-Reagent
-medium.Resuspend P.	I-Reagent
-tricornutum pellet	I-Reagent
+medium.Resuspend	I-Reagent
+P.	I-Reagent
+tricornutum	I-Reagent
+pellet	I-Reagent
 in	O
 500	B-Amount
 μL	I-Amount
@@ -196,7 +210,8 @@ of	O
 L1	B-Reagent
 medium.	I-Reagent
 
-Note: The	O
+Note:	O
+The	O
 diatom	B-Reagent
 and	O
 E.	B-Reagent
@@ -217,7 +232,8 @@ amount	B-Time
 of	I-Time
 time	I-Time
 they	B-Mention
-spend concentrated.	B-Action
+spend	B-Action
+concentrated.	B-Modifier
 
 In	O
 a	O
@@ -225,14 +241,17 @@ a	O
 mL	I-Amount
 tube	B-Location
 mix	B-Action
-200 μl	B-Amount
+200	B-Amount
+μl	I-Amount
 of	O
 E.	B-Reagent
 coli	I-Reagent
 cells	I-Reagent
 with	O
-200 μl	B-Amount
-of Phaeodactylum	B-Reagent
+200	B-Amount
+μl	I-Amount
+of	O
+Phaeodactylum	B-Reagent
 tricornutum	I-Reagent
 cells.	I-Reagent
 
@@ -244,14 +263,21 @@ a	O
 mL	I-Amount
 tube	B-Location
 mix	B-Action
-200 μl	B-Amount
-of SOC medium	B-Reagent
+200	B-Amount
+μl	I-Amount
+of	O
+SOC	B-Reagent
+medium	I-Reagent
 with	O
-200 μl	B-Amount
-of Phaeodactylum	B-Reagent
-tricornutum cells.	I-Reagent
+200	B-Amount
+μl	I-Amount
+of	O
+Phaeodactylum	B-Reagent
+tricornutum	I-Reagent
+cells.	I-Reagent
 
-Note: Incubate	B-Action
+Note:	O
+Incubate	B-Action
 and	O
 treat	B-Action
 the	O
@@ -268,7 +294,8 @@ the	O
 mixture	B-Reagent
 (400	B-Amount
 μL)	I-Amount
-on Conjugation	B-Location
+on	O
+Conjugation	B-Location
 Plates.	I-Location
 
 (0.5x	B-Numerical
@@ -310,8 +337,9 @@ days.	I-Time
 Collect	B-Action
 cells	B-Reagent
 by	O
-adding 1	B-Action
-mL	B-Amount
+adding	B-Action
+1	B-Amount
+mL	I-Amount
 of	O
 L1	B-Reagent
 medium.	I-Reagent
@@ -349,13 +377,16 @@ and	O
 filter	B-Device
 tips.	I-Device
 
-Spread 200 μl	B-Action
+Spread	B-Action
+200	B-Amount
+μl	I-Amount
 of	O
 the	O
 cell	B-Reagent
 suspension	I-Reagent
 on	O
-a Selection	B-Location
+a	O
+Selection	B-Location
 Plate.	I-Location
 
 Incubate	B-Action
@@ -377,12 +408,14 @@ minimum	I-Modifier
 of	O
 8-12	B-Time
 days,	I-Time
-untransformed Phaeodactylum	B-Modifier
-tricornutum	B-Reagent
+untransformed	B-Modifier
+Phaeodactylum	B-Reagent
+tricornutum	I-Reagent
 cells	I-Reagent
 die	B-Action
 off,	I-Action
-and colonies	B-Reagent
+and	O
+colonies	B-Reagent
 of	O
 transformed	B-Modifier
 cells	B-Reagent
@@ -406,18 +439,22 @@ be	O
 done	O
 in	O
 liquid	B-Reagent
-BG-11 Selection	I-Reagent
-media using	I-Reagent
-eGFP	I-Reagent
+BG-11	I-Reagent
+Selection	I-Reagent
+media	I-Reagent
+using	O
+eGFP	B-Reagent
 as	O
 a	O
-reporter and	O
+reporter	O
+and	O
 sorted	B-Action
 using	O
 FACS.	B-Reagent
 
 un-transformed	B-Modifier
-Pt eGFP	B-Reagent
+Pt	O
+eGFP	B-Reagent
 expression.	O
 
 This	O
@@ -427,7 +464,8 @@ modified	B-Action
 from	O
 the	O
 original	B-Method
-procedure and	I-Method
+procedure	I-Method
+and	O
 correspondence	O
 with	O
 the	O

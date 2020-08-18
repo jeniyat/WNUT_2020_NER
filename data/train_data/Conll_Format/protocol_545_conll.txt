@@ -107,7 +107,8 @@ the	I-Modifier
 forward	I-Modifier
 primer.	I-Modifier
 
-Mix 1µl	B-Action
+Mix	B-Action
+1µl	B-Amount
 100µM	B-Concentration
 stock	B-Reagent
 each	B-Modifier
@@ -129,10 +130,12 @@ follows:	O
 for	O
 5	B-Time
 min,	I-Time
-ramp down	B-Action
+ramp	B-Action
+down	I-Action
 to	O
 50	B-Temperature
-°C at	I-Temperature
+°C	I-Temperature
+at	O
 0.1	B-Measure-Type
 °C/sec,	I-Measure-Type
 50	B-Temperature
@@ -140,7 +143,8 @@ to	O
 for	O
 10	B-Time
 min	I-Time
-chill to	B-Action
+chill	B-Action
+to	O
 4	B-Temperature
 °C	I-Temperature
 at	O
@@ -171,7 +175,8 @@ and	O
 plasmid	B-Reagent
 list	O
 in	O
-the Guidelines).	O
+the	O
+Guidelines).	O
 
 Incubate	B-Action
 at	O
@@ -184,12 +189,15 @@ min.	I-Time
 Incubate	B-Action
 at	O
 16	B-Temperature
-°C for	I-Temperature
+°C	I-Temperature
+for	O
 15	B-Time
 min.	I-Time
 
 Incubate	B-Action
-at 37 °C	B-Temperature
+at	O
+37	B-Temperature
+°C	I-Temperature
 for	O
 10	B-Time
 min.	I-Time
@@ -203,7 +211,8 @@ for	O
 min.	I-Time
 
 Incubate	B-Action
-at 80	B-Temperature
+at	O
+80	B-Temperature
 °C	I-Temperature
 for	O
 15	B-Time

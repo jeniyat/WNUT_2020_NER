@@ -17,7 +17,8 @@ point,	I-Time
 collect	B-Action
 10ml	B-Amount
 from	O
-each experimental	B-Location
+each	O
+experimental	B-Location
 bottle/tube	I-Location
 into	O
 a	O
@@ -82,8 +83,9 @@ decant	B-Action
 supernatants	B-Reagent
 into	O
 labeled	B-Modifier
-sterile 50	I-Modifier
-ml	B-Amount
+sterile	I-Modifier
+50	B-Amount
+ml	I-Amount
 conical	B-Location
 tubes.	I-Location
 
@@ -127,8 +129,9 @@ ml	I-Amount
 tubes	B-Location
 using	O
 liquid	B-Reagent
-nitrogen; store	I-Reagent
-pellets	I-Reagent
+nitrogen;	I-Reagent
+store	B-Action
+pellets	B-Reagent
 in	O
 -80°C	B-Temperature
 freezer	B-Device
@@ -178,7 +181,8 @@ to	O
 the	O
 syringe.	B-Device
 
-Pour your	B-Action
+Pour	B-Action
+your	O
 20ml	B-Amount
 combined	B-Reagent
 supernatant	I-Reagent
@@ -194,11 +198,14 @@ plunger	B-Device
 on	O
 the	O
 syringe	B-Device
-and filter	B-Action
+and	O
+filter	B-Action
 your	O
-20ml supernatant	B-Amount
+20ml	B-Amount
+supernatant	B-Reagent
 into	O
-appropriate tubes	B-Location
+appropriate	O
+tubes	B-Location
 for	O
 your	O
 downstream	B-Reagent
