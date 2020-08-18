@@ -129,7 +129,7 @@ def text_to_conll(f):
     # print(f)
     if options.nosplit:
         sentences = f.readlines()
-        # print(sentences)
+        # print("sentences: ",sentences)
     else:
         sentences = []
         for l in f:
@@ -143,7 +143,11 @@ def text_to_conll(f):
     # print(sentences)
     for s in sentences:
         nonspace_token_seen = False
-        # print(s)
+        s = s.replace('\xa0', ' ')
+        print(s)
+        # print(s.split(" "))
+        # print(s.split("\t"))
+        # print(s.split())
         
         tokens = s.split(" ")
         
@@ -157,7 +161,7 @@ def text_to_conll(f):
             if not t.isspace():
                 l1=['O', pos, pos + len(t), t]
                 lines.append(l1)
-                print(l1)
+                # print(l1)
         
         lines.append([])
 
@@ -336,7 +340,7 @@ def process_files_v1(files):
 
     try:
         for fn in files:
-            # print("now_processing", fn)
+            print("now_processing", fn)
             try:
                 if fn == '-':
                     lines = process(sys.stdin)
@@ -566,19 +570,34 @@ def covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", ou
    
 
    
-    
-    list_of_files=Read_Main_Input_Folder(input_folder_main, phase_name="")
-    print(list_of_files)
-    process_files(list_of_files, output_folder,"")
+    list_of_folders = []
+    for dir,_,_ in sorted(os.walk(input_folder_main)):
+        if dir == input_folder_main:
+            continue
+        try:
+            folder_name = dir.replace(input_folder_main,"")
+            list_of_folders.append(folder_name)
+            # print(dir, input_folder_main, folder_name)
+            # list_of_phases.append(phase_num)
+        except: 
+            continue
+    print(list_of_folders)   
+    for folder in list_of_folders:
+        phase_name= folder +"/"
+        input_folder=input_folder_main+phase_name
+        # print(input_folder)
+        list_of_files=Read_Main_Input_Folder(input_folder, phase_name.replace("/",""))
+        # print(list_of_files)
+        # list_of_files=['checked_annotations_training/phase_01/protocol_0.txt']
+        process_files(list_of_files, output_folder,phase_name)
 
 
 if __name__ == "__main__":
-    covert_standoff_to_conll(input_folder_main= "../../../data/train_data/Standoff_Format/", output_folder = '../../../data/train_data/Conll_Format/')
-    covert_standoff_to_conll(input_folder_main= "../../../data/test_data/Standoff_Format/", output_folder = '../../../data/test_data/Conll_Format/')
-    covert_standoff_to_conll(input_folder_main= "../../../data/dev_data/Standoff_Format/", output_folder = '../../../data/dev_data/Conll_Format/')
-    # covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", output_folder = 'all_data/train_data/Conll_Format/')
-    # covert_standoff_to_conll(input_folder_main= "all_data/test_data/test/", output_folder = 'all_data/test_data/Conll_Format/')
-    # covert_standoff_to_conll(input_folder_main= "all_data/dev_data/dev/", output_folder = 'all_data/dev_data/Conll_Format/')
+    covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", output_folder = 'all_data/train_data/Conll_Format/')
+    covert_standoff_to_conll(input_folder_main= "all_data/test_data/test/", output_folder = 'all_data/test_data/Conll_Format/')
+    covert_standoff_to_conll(input_folder_main= "all_data/dev_data/dev/", output_folder = 'all_data/dev_data/Conll_Format/')
+    covert_standoff_to_conll(input_folder_main= "all_data/sample_test/train/", output_folder = 'all_data/sample_test/Conll_Format/')
+    
 
     # covert_standoff_to_conll(input_folder_main= "wo_labels_surprise/", output_folder = 'wo_labels_surprise_conll/')
     # covert_standoff_to_conll(input_folder_main= "wo_labels/general/", output_folder = 'wo_labels/general/')
