@@ -115,6 +115,9 @@ In the merged standoff format we combine this as below:
 
 ![standoff-vs-standoffmerged](./stand_off.png?raw=true)
 
+![smile]
+
+
 [smile]: ./stand_off.png
 {: height="36px" width="36px"}
 
