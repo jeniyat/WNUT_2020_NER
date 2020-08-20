@@ -115,10 +115,7 @@ In the merged standoff format we combine this as below:
 
 ![standoff-vs-standoffmerged](./stand_off.png?raw=true)
 
-![standoff-vs-standoffmerged]
 
-
-[standoff-vs-standoffmerged](./stand_off.png{: height="36px" width="36px"})
 
 Note that, the merged standoff format annotation files contains only entity information (they do not contain any relation).
 
