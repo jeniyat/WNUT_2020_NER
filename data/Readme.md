@@ -113,7 +113,10 @@ In the merged standoff format we combine this as below:
 			T36	Reagent 421 451	TetKanCam15ug/mL50ug/mL35ug/mL
 ```
 
-![standoff-vs-standoffmerged](./stand_off.png?raw=true){ width=50% }
+![standoff-vs-standoffmerged](./stand_off.png?raw=true)
+
+[smile]: ./stand_off.png
+{: height="36px" width="36px"}
 
 Note that, the merged standoff format annotation files contains only entity information (they do not contain any relation).
 
