@@ -3,32 +3,36 @@ protocol	O
 for	O
 unicellular	B-Reagent
 protists	I-Reagent
+:	O
 Lysotracker	B-Device
-and	I-Device
-Dapi	I-Device
+and	O
+Dapi	B-Device
 
 2	B-Concentration
-PFA	I-Concentration
-Fixation	B-Reagent
-Add	I-Reagent
-PFA	B-Action
-drop	B-Reagent
-by	B-Method
+%	I-Concentration
+PFA	B-Reagent
+Fixation	I-Reagent
+:	O
+Add	B-Action
+PFA	B-Reagent
+drop	B-Method
+by	I-Method
 drop	I-Method
-and	I-Method
+and	O
 mixing	B-Action
-carefully	I-Action
-into	B-Modifier
-1mL	O
-cells	B-Amount
-for	B-Reagent
+carefully	B-Modifier
+into	O
+1mL	B-Amount
+cells	B-Reagent
+for	O
 a	O
 final	O
 concentration	B-Measure-Type
-of	I-Measure-Type
-2	O
-PFA	B-Concentration
-.	B-Reagent
+of	O
+2	B-Concentration
+%	I-Concentration
+PFA	B-Reagent
+.	O
 
 Incubate	B-Action
 cells	B-Reagent
@@ -52,8 +56,9 @@ Wash	B-Action
 cells	B-Reagent
 with	O
 1XPBS	B-Concentration
-1	O
-2	O
+(	O
+1/2	O
+)	O
 .	O
 
 Resuspend	B-Action
@@ -64,22 +69,22 @@ with	O
 .	I-Reagent
 
 Add	B-Action
-1	B-Amount
-1000	I-Amount
-lysotracker	I-Amount
-dye	B-Reagent
-1	I-Reagent
-uL	O
-of	B-Amount
+1/1000	B-Amount
 lysotracker	B-Reagent
-for	I-Reagent
+dye	I-Reagent
+:	O
+1	B-Amount
+uL	I-Amount
+of	O
+lysotracker	B-Reagent
+for	O
 a	O
-1mL	O
-final	B-Amount
+1mL	B-Amount
+final	O
 Volume	B-Measure-Type
-of	I-Measure-Type
+of	O
 cells	B-Reagent
-.	I-Reagent
+.	O
 
 Room	B-Temperature
 temperature	I-Temperature
@@ -90,11 +95,10 @@ light	O
 .	O
 
 Add	B-Action
-1	B-Amount
-1000	I-Amount
-DAPI	I-Amount
-dye	B-Reagent
-.	I-Reagent
+1/1000	B-Amount
+DAPI	B-Reagent
+dye	I-Reagent
+.	O
 
 Room	B-Temperature
 temperature	I-Temperature
@@ -129,22 +133,25 @@ Wash	B-Action
 cells	B-Reagent
 with	O
 1XPBS	B-Concentration
-2	O
-2	O
+(	O
+2/2	O
+)	O
 .	O
 
 Wash	B-Action
 with	O
 1xPBS	B-Concentration
-1	O
-2	O
+(	O
+1/2	O
+)	O
 .	O
 
 Wash	B-Action
 with	O
 1xPBS	B-Concentration
-2	O
-2	O
+(	O
+2/2	O
+)	O
 .	O
 
 Incubate	B-Action

@@ -184,9 +184,11 @@ def process(fn,  output_directory ):
 
 
 if __name__ == "__main__":
-    conll_format_test_files = "Conll_Outputs/"
+    # conll_format_test_files = "Conll_Outputs/"
+    conll_format_test_files="../../../data/dev_data/Conll_Format/"
     list_of_test_files = utils.Read_Files_in_Input_Folder(conll_format_test_files)
-    standoff_output_directory = "Standoff_Outputs/"
+
+    standoff_output_directory = "../../../data/dev_data/Standoff_Format_Merged/"
     utils.make_dir_if_not_exists(standoff_output_directory)
     for file_name in list_of_test_files:
         file_values = file_name.split("/")
@@ -199,4 +201,7 @@ if __name__ == "__main__":
         process(file_name, output_directory)
         # # for line in open(file):
         #     # print(line)
+    list_of_converted_test_files = utils.Read_Files_in_Input_Folder(standoff_output_directory)
+
+    print(len(list_of_test_files), len(list_of_converted_test_files))
     

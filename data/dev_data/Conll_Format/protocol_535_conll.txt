@@ -1,31 +1,28 @@
 FASP	B-Method
 Kit	I-Method
-Protocol	I-Method
-ORNL	I-Method
-Developed	I-Method
+Protocol-ORNL	I-Method
+Developed	O
 for	O
 Bacteriophage	B-Reagent
 
 Prepare	B-Action
-Urea	B-Reagent
-SDS	I-Reagent
+Urea/SDS	B-Reagent
 Solution	I-Reagent
-.	I-Reagent
+.	O
 
 Transfer	B-Action
 Urea	B-Reagent
 solution	I-Reagent
-sample	I-Reagent
-to	I-Reagent
++	O
+sample	B-Reagent
+to	O
 spin	B-Device
 filter	I-Device
-.	I-Device
+.	O
 
 Centrifuge	B-Action
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -39,18 +36,18 @@ L	I-Amount
 fresh	B-Modifier
 Urea	B-Reagent
 solution	I-Reagent
+(	O
 no	B-Modifier
-DTT	I-Modifier
-,	B-Reagent
-no	O
-SDS	B-Modifier
-.	B-Reagent
+DTT	B-Reagent
+,	O
+no	B-Modifier
+SDS	B-Reagent
+)	O
+.	O
 
 Centrifuge	B-Action
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -73,12 +70,14 @@ and	O
 L	I-Amount
 Urea	B-Reagent
 solution	I-Reagent
-no	O
-DTT	B-Modifier
-,	B-Reagent
-no	I-Reagent
-SDS	B-Modifier
-.	B-Reagent
+(	O
+no	B-Modifier
+DTT	B-Reagent
+,	I-Reagent
+no	B-Modifier
+SDS	B-Reagent
+)	I-Reagent
+.	O
 
 Vortex	B-Action
 for	O
@@ -99,9 +98,7 @@ dark	B-Method
 
 Centrifuge	B-Action
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -114,18 +111,18 @@ Add	B-Action
 L	I-Amount
 Urea	B-Reagent
 solution	I-Reagent
-no	O
-DTT	B-Modifier
-,	B-Reagent
-no	I-Reagent
-SDS	B-Modifier
-.	B-Reagent
+(	O
+no	B-Modifier
+DTT	B-Reagent
+,	I-Reagent
+no	B-Modifier
+SDS	B-Reagent
+)	I-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -151,17 +148,17 @@ L	B-Amount
 ammonium	B-Concentration
 bicarbonate	B-Reagent
 solution	I-Reagent
-provided	I-Reagent
+(	I-Reagent
+provided	O
 with	O
-FASP	O
-kit	B-Device
+FASP	B-Device
+kit	I-Device
+)	I-Device
 .	I-Device
 
 Centrifuge	B-Action
 at	I-Action
-14	O
-,	B-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	I-Speed
@@ -196,8 +193,10 @@ for	I-Temperature
 4	O
 18	B-Time
 hours	I-Time
-NO	I-Time
+(	I-Time
+NO	O
 ROCKING	B-Method
+)	I-Method
 .	I-Method
 
 Add	B-Action
@@ -211,9 +210,7 @@ solution	I-Reagent
 
 Centrifuge	B-Action
 at	I-Action
-14	O
-,	B-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	I-Speed
@@ -230,24 +227,22 @@ once	B-Numerical
 Add	B-Action
 50	I-Action
 L	B-Amount
-0	I-Amount
-.	O
-5	B-Concentration
-M	I-Concentration
+0.5	I-Amount
+M	B-Concentration
 sodium	I-Concentration
 chloride	B-Reagent
 solution	I-Reagent
-provided	I-Reagent
+(	I-Reagent
+provided	O
 with	O
-FASP	O
-kit	B-Device
+FASP	B-Device
+kit	I-Device
+)	I-Device
 .	I-Device
 
 Centrifuge	B-Action
 at	I-Action
-14	O
-,	B-Speed
-000	I-Speed
+14,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	I-Speed
@@ -263,20 +258,24 @@ proteins	I-Modifier
 
 Add	B-Action
 170	I-Action
-L	B-Amount
-H	I-Amount
-O	O
-formic	B-Reagent
+L*	B-Amount
+H	O
+O	B-Reagent
++	I-Reagent
+formic	I-Reagent
 acid	I-Reagent
 .	I-Reagent
 
 Aliquot	B-Action
-150	I-Action
-L	B-Amount
+(	I-Action
+150	B-Amount
+L	I-Amount
 x	I-Amount
 2	I-Amount
-,	I-Amount
-freeze	I-Amount
+)	I-Amount
+*	I-Amount
+,	O
+freeze	B-Action
 
 
 

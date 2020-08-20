@@ -173,10 +173,9 @@ wells	B-Location
 closer	O
 to	O
 the	O
-negative	B-Location
-black	I-Location
+negative/black	B-Location
 end	I-Location
-.	I-Location
+.	O
 
 Pour	B-Action
 additional	B-Modifier
@@ -279,8 +278,7 @@ constant	B-Measure-Type
 voltage	I-Measure-Type
 of	O
 70	B-Generic-Measure
-V	I-Generic-Measure
-.	O
+V.	I-Generic-Measure
 Let	O
 run	B-Action
 for	O
@@ -315,20 +313,21 @@ a	O
 bin	B-Location
 with	O
 1	B-Concentration
-Ethidium	I-Concentration
-Bromide	B-Reagent
-,	I-Reagent
+%	I-Concentration
+Ethidium	B-Reagent
+Bromide	I-Reagent
+,	O
 ensuring	B-Action
-the	I-Action
+the	O
 solution	B-Reagent
-does	I-Reagent
+does	O
 not	O
 come	O
 into	O
 contact	O
 with	O
 skin	B-Location
-.	I-Location
+.	O
 
 Clean	B-Action
 all	O
@@ -349,12 +348,14 @@ in	O
 a	O
 bin	B-Location
 labelled	I-Location
+``	I-Location
 Ethidium	I-Location
 Bromide	I-Location
-,	I-Location
-and	I-Location
-wash	B-Action
-hands	I-Action
+''	O
+,	O
+and	B-Action
+wash	I-Action
+hands	O
 repeatedly	O
 afterwards	O
 .	O
@@ -430,9 +431,11 @@ into	O
 a	O
 wastebin	B-Location
 labelled	O
-Ethidium	B-Reagent
+``	B-Reagent
+Ethidium	I-Reagent
 Bromide	I-Reagent
-.	I-Reagent
+''	O
+.	O
 
 
 

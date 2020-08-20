@@ -53,10 +53,9 @@ Vortex	B-Action
 reaction	B-Reagent
 product	I-Reagent
 for	O
-2	B-Time
-3	I-Time
+2-3	B-Time
 sec	I-Time
-.	I-Time
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -67,17 +66,14 @@ for	O
 minute	I-Time
 to	O
 pellet	B-Action
-debris	B-Reagent
-.	O
-Transfer	B-Action
-DNA	B-Reagent
-containing	I-Reagent
+debris.Transfer	B-Reagent
+DNA-containing	I-Reagent
 supernatant	I-Reagent
-to	I-Reagent
+to	O
 a	O
 fresh	B-Modifier
-tube	I-Modifier
-.	B-Location
+tube	B-Location
+.	O
 
 Use	O
 1	B-Amount
@@ -101,13 +97,12 @@ in	O
 TE	B-Reagent
 Buffer	I-Reagent
 for	O
-long	B-Modifier
-term	I-Modifier
-storage	I-Modifier
-at	B-Action
-20	O
-C	B-Temperature
-.	I-Temperature
+long-term	B-Modifier
+storage	B-Action
+at	O
+-20	B-Temperature
+C	I-Temperature
+.	O
 
 
 

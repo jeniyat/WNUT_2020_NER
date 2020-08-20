@@ -1,7 +1,9 @@
 RNA	B-Reagent
 extraction	B-Method
 protocol	I-Method
+(	O
 Trizol	O
+)	O
 
 Add	B-Action
 1000	B-Amount
@@ -9,32 +11,33 @@ L	I-Amount
 of	O
 Trizol	B-Reagent
 per	B-Modifier
-50	B-Amount
-100	I-Amount
+50-100	B-Amount
 mg	I-Amount
-of	I-Amount
+of	O
 parsite	B-Reagent
 tissues	I-Reagent
-in	I-Reagent
+in	O
 a	O
-2	O
-mL	B-Amount
-eppendorf	I-Amount
-tube	B-Location
-RNAse	I-Location
+2	B-Amount
+mL	I-Amount
+eppendorf	B-Location
+tube	I-Location
+(	O
+RNAse	O
 free	O
+)	O
 and	O
 place	B-Action
-the	I-Action
+the	O
 parasite	B-Reagent
 tissues	I-Reagent
-into	I-Reagent
+into	O
 their	O
 respective	B-Modifier
-,	I-Modifier
-labelled	I-Modifier
-tube	I-Modifier
-.	B-Location
+,	O
+labelled	B-Modifier
+tube	B-Location
+.	O
 
 Add	B-Action
 1	B-Numerical
@@ -64,9 +67,7 @@ minutes	I-Time
 
 Centrifuge	B-Action
 at	O
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -89,10 +90,12 @@ eppendorf	B-Location
 after	O
 the	O
 centrifugation	B-Method
+(	O
 contains	O
 fatty	B-Reagent
 acids	I-Reagent
-.	I-Reagent
+)	O
+.	O
 
 Transfer	B-Action
 supernatant	B-Reagent
@@ -103,9 +106,11 @@ and	O
 labelled	B-Modifier
 eppendorf	B-Location
 tube	I-Location
-2	O
-mL	B-Amount
-.	I-Amount
+(	O
+2	B-Amount
+mL	I-Amount
+)	O
+.	O
 
 Incubate	B-Action
 at	O
@@ -146,9 +151,7 @@ VORTEX	B-Action
 
 Centrifuge	B-Action
 at	O
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -165,15 +168,17 @@ precaution	B-Modifier
 the	O
 aqueous	B-Reagent
 phase	I-Reagent
-supernatant	I-Reagent
-into	I-Reagent
+(	O
+supernatant	B-Reagent
+)	O
+into	O
 a	O
-new	O
-2	B-Modifier
-mL	I-Modifier
-eppendorf	B-Amount
-tube	B-Location
-.	I-Location
+new	B-Modifier
+2	B-Amount
+mL	I-Amount
+eppendorf	B-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 500	B-Amount
@@ -182,11 +187,14 @@ of	O
 RNAse	B-Reagent
 free	I-Reagent
 isopropanol	I-Reagent
+(	O
 100	B-Concentration
-and	I-Concentration
-mix	O
-thoroughly	B-Action
-.	B-Modifier
+%	I-Concentration
+)	O
+and	O
+mix	B-Action
+thoroughly	B-Modifier
+.	O
 
 Incubate	B-Action
 for	O
@@ -199,9 +207,7 @@ temperature	I-Temperature
 
 Centrifuge	B-Action
 at	O
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 for	O
@@ -221,15 +227,18 @@ Add	B-Action
 L	I-Amount
 of	O
 75	B-Concentration
-ethanol	I-Concentration
-kept	B-Reagent
+%	I-Concentration
+ethanol	B-Reagent
+(	O
+kept	O
 cold	O
 at	O
-20	O
-C	B-Temperature
-per	I-Temperature
-tube	B-Modifier
-.	B-Location
+-20	B-Temperature
+C	I-Temperature
+)	O
+per	B-Modifier
+tube	B-Location
+.	O
 
 Vortex	B-Action
 thoroughly	B-Modifier
@@ -258,23 +267,21 @@ the	O
 cap	B-Seal
 opened	B-Action
 for	O
-5	B-Time
-10	I-Time
+5-10	B-Time
 minutes	I-Time
-.	I-Time
+.	O
 
 Add	B-Action
-20	B-Amount
-50	I-Amount
+20-50	B-Amount
 L	I-Amount
-of	I-Amount
+of	O
 DEPC	B-Reagent
 treated	I-Reagent
 water	I-Reagent
-into	I-Reagent
+into	O
 each	B-Modifier
-tube	I-Modifier
-.	B-Location
+tube	B-Location
+.	O
 
 Place	B-Action
 the	O
@@ -282,12 +289,14 @@ tubes	B-Location
 into	O
 the	O
 incubator	B-Device
+(	O
 65	B-Temperature
 C	I-Temperature
-for	I-Temperature
-1	O
-minute	B-Time
-.	I-Time
+)	O
+for	O
+1	B-Time
+minute	I-Time
+.	O
 
 Vortex	B-Action
 thoroughly	B-Modifier

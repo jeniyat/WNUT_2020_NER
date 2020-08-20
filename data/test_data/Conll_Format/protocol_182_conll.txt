@@ -29,23 +29,29 @@ minutes	I-Time
 Separate	B-Action
 on	O
 magnet	B-Device
-6	O
-min	B-Time
-.	I-Time
+(	O
+6	B-Time
+min	I-Time
+.	O
+)	O
 
 Transfer	B-Action
 all	O
 supernatant	B-Reagent
+(	O
 about	O
 115	B-Amount
 l	I-Amount
-into	I-Amount
+)	O
+into	O
 a	O
-new	O
-well	B-Location
-off	I-Location
+new	B-Location
+well	I-Location
+(	O
+off	O
 magnet	B-Device
-.	I-Device
+)	O
+.	O
 
 Add	B-Action
 100	B-Amount
@@ -66,11 +72,13 @@ minutes	I-Time
 Separate	B-Action
 on	O
 magnet	B-Device
+(	O
 6min	B-Time
-,	I-Time
+)	O
+,	O
 discard	B-Action
-supernatant	I-Action
-.	B-Reagent
+supernatant	B-Reagent
+.	O
 
 Wash	B-Action
 beads	B-Reagent
@@ -79,8 +87,9 @@ with	O
 l	I-Amount
 of	O
 70	B-Concentration
-EtOH	I-Concentration
-.	B-Reagent
+%	I-Concentration
+EtOH	B-Reagent
+.	O
 
 Move	B-Action
 well	B-Modifier
@@ -92,8 +101,10 @@ Dry	B-Action
 beads	B-Reagent
 of	O
 EtOH	O
-10min	B-Time
-.	I-Time
+(	O
+~10min	B-Time
+)	O
+.	O
 
 Add	B-Action
 40	B-Amount

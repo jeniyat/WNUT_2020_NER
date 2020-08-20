@@ -8,12 +8,14 @@ Chambers	I-Reagent
 
 The	O
 fix	B-Reagent
-4	O
-Paraformaldehyde	B-Concentration
-,	B-Reagent
-1X	I-Reagent
-PBS	B-Concentration
-.	B-Reagent
+:	O
+4	B-Concentration
+%	I-Concentration
+Paraformaldehyde	B-Reagent
+,	O
+1X	B-Concentration
+PBS	B-Reagent
+.	O
 
 Place	B-Action
 10	B-Amount
@@ -31,8 +33,7 @@ boil	B-Action
 
 Add	B-Action
 the	O
-.	B-Amount
-4	I-Amount
+.4	B-Amount
 paraformaldehyde	B-Reagent
 .	O
 
@@ -42,14 +43,16 @@ drops	I-Generic-Measure
 of	O
 2M	B-Concentration
 NaCl	B-Reagent
+(	O
 make	O
 sure	O
 that	O
 Paraphormaldehyde	B-Reagent
-is	I-Reagent
+is	O
 completely	O
 dissolved	B-Modifier
-.	I-Modifier
+)	O
+.	O
 
 Add	B-Action
 one	B-Generic-Measure
@@ -60,31 +63,28 @@ to	O
 adjust	B-Action
 the	O
 PH	B-pH
-7	I-pH
-.	I-pH
-5	I-pH
-8	I-pH
-.	I-pH
+(	I-pH
+7.5-8	I-pH
+)	I-pH
+.	O
 
 The	O
 block	B-Reagent
+:10	B-Amount
+ml	I-Amount
+of	O
+1X	B-Concentration
+PBS	B-Reagent
 10	B-Amount
-ml	I-Amount
-of	I-Amount
-1X	O
-PBS	B-Concentration
-10	B-Reagent
-l	B-Amount
-ml	I-Amount
-Normal	I-Amount
-Donkey	B-Reagent
+l/ml	I-Amount
+Normal	B-Reagent
+Donkey	I-Reagent
 Serum	I-Reagent
-10	I-Reagent
-l	B-Amount
-ml	I-Amount
-10X	I-Amount
-Triton	B-Concentration
-.	B-Reagent
+10	B-Amount
+l/ml	I-Amount
+10X	B-Concentration
+Triton	B-Reagent
+.	O
 
 Set	B-Action
 up	I-Action
@@ -177,14 +177,16 @@ and	O
 pull	B-Action
 it	B-Mention
 out	O
+(	O
 be	O
 sure	O
 to	O
 not	O
 damage	B-Action
-the	I-Action
+the	O
 ovaries	B-Reagent
-.	I-Reagent
+)	O
+.	O
 
 Squeeze	B-Action
 the	O
@@ -267,6 +269,7 @@ at	O
 
 Next	O
 morning	O
+:	O
 
 Remove	B-Action
 the	O
@@ -342,14 +345,14 @@ Rock	B-Action
 at	O
 RT	B-Temperature
 for	O
-2	B-Time
-4	I-Time
+2-4	B-Time
 hours	I-Time
-.	I-Time
+.	O
 
 After	O
 secondray	B-Action
 staining	I-Action
+:	O
 
 Remove	B-Action
 the	O
@@ -376,10 +379,10 @@ RT	B-Temperature
 After	O
 washing	B-Action
 the	O
-non	B-Modifier
-specific	I-Modifier
-secondary	I-Modifier
-antibody	B-Reagent
+non-specific	B-Modifier
+secondary	B-Reagent
+antibody	I-Reagent
+:	O
 
 Wash	B-Action
 one	B-Numerical

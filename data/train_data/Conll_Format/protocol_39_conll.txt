@@ -6,8 +6,7 @@ recombinant	I-Reagent
 protein	I-Reagent
 
 Inoculate	B-Action
-E	B-Reagent
-.	I-Reagent
+E.	B-Reagent
 coli	I-Reagent
 BL21	I-Reagent
 strain	I-Reagent
@@ -23,17 +22,18 @@ in	O
 LB	B-Reagent
 liquid	I-Reagent
 medium	I-Reagent
+(	O
 containing	O
-100ug	B-Concentration
-mL	I-Concentration
-ampicillin	I-Concentration
-,	B-Reagent
-37	I-Reagent
-shaking	B-Temperature
-and	B-Action
-culture	I-Action
-overnight	I-Action
-.	B-Time
+100ug/mL	B-Concentration
+ampicillin	B-Reagent
+)	O
+,	O
+37	B-Temperature
+shaking	B-Action
+and	O
+culture	B-Action
+overnight	B-Time
+.	O
 
 Transfer	B-Action
 1mL	B-Amount
@@ -42,35 +42,33 @@ cultures	B-Reagent
 in	O
 100	B-Amount
 mL	I-Amount
+(	O
 containing	O
-100ug	B-Concentration
-mL	I-Concentration
-ampicillin	I-Concentration
+100ug/mL	B-Concentration
+ampicillin	B-Reagent
+)	O
 LB	B-Reagent
 liquid	I-Reagent
 medium	I-Reagent
-;	I-Reagent
-37	I-Reagent
-shake	B-Temperature
-culture	B-Action
-until	B-Reagent
+;	O
+37	B-Temperature
+shake	B-Action
+culture	B-Reagent
+until	O
 OD600	B-Generic-Measure
-0	I-Generic-Measure
-.	I-Generic-Measure
-6	I-Generic-Measure
-0	I-Generic-Measure
-.	I-Generic-Measure
-8	I-Generic-Measure
-.	I-Generic-Measure
+=	I-Generic-Measure
+0.6	I-Generic-Measure
+-	I-Generic-Measure
+0.8	I-Generic-Measure
+.	O
 
 Take	B-Action
 10ul	B-Amount
 samples	B-Reagent
 for	O
-SDS	B-Method
-PAGE	I-Method
+SDS-PAGE	B-Method
 analysis	I-Method
-.	I-Method
+.	O
 
 Add	B-Action
 IPTG	B-Reagent
@@ -79,22 +77,16 @@ a	O
 final	B-Reagent
 concentration	I-Reagent
 of	O
-0	B-Concentration
-.	I-Concentration
-5	I-Concentration
-mmol	I-Concentration
-l	I-Concentration
-,	I-Concentration
+0.5	B-Concentration
+mmol/l	I-Concentration
+,	O
 culture	B-Action
-1	I-Action
-3h	B-Time
-at	I-Time
-37	O
-.	B-Temperature
+1-3h	B-Time
+at	O
+37	B-Temperature
+.	O
 
-12	B-Speed
-,	I-Speed
-000rpm	I-Speed
+12,000rpm	B-Speed
 centrifugation	B-Method
 for	O
 10	B-Time
@@ -108,10 +100,10 @@ store	B-Action
 cell	B-Reagent
 precipitate	I-Reagent
 at	O
-20	B-Temperature
-or	I-Temperature
-70	O
-.	B-Temperature
+-20	B-Temperature
+or	O
+-70	B-Temperature
+.	O
 
 
 

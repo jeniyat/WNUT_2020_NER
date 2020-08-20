@@ -1,23 +1,21 @@
 SYBR	B-Action
 Staining	I-Action
-Jenn's	B-Method
+-	O
+Jenn	B-Method
+'s	I-Method
 Method	I-Method
 
 Remove	B-Action
-10	B-Concentration
-,	I-Concentration
-000x	I-Concentration
-SYBR	B-Reagent
-Gold	I-Reagent
-and	I-Reagent
-Anti	I-Reagent
-fade	I-Reagent
+10,000x	B-Concentration
+SYBR-Gold	B-Reagent
+and	O
+Anti-fade	B-Reagent
 solutions	I-Reagent
-from	I-Reagent
-20	O
-C	B-Temperature
-freezer	I-Temperature
-.	B-Device
+from	O
+-20	B-Temperature
+C	I-Temperature
+freezer	B-Device
+.	O
 
 Keep	B-Action
 SYBR	B-Reagent
@@ -34,9 +32,7 @@ dark	O
 .	O
 
 Have	B-Action
-0	B-Size
-.	I-Size
-02	I-Size
+0.02	B-Size
 m	I-Size
 filtered	B-Reagent
 TE	I-Reagent
@@ -62,14 +58,15 @@ of	O
 sample	B-Reagent
 .	O
 
-Mix	O
-by	B-Action
-inverting	I-Action
-tube	I-Action
-up	B-Location
-and	B-Method
+**	O
+Mix	B-Action
+by	O
+inverting	B-Action
+tube	B-Location
+up	B-Method
+and	I-Method
 down	I-Method
-.	I-Method
+.	O
 
 Label	B-Action
 frosted	B-Location
@@ -99,31 +96,30 @@ lights	O
 
 Dilute	B-Action
 SYBR	B-Reagent
-1	B-Generic-Measure
-10	I-Generic-Measure
-using	I-Generic-Measure
-5	O
-l	B-Amount
-in	I-Amount
-45	O
-l	B-Amount
-TE	I-Amount
-.	B-Reagent
+1:10	B-Generic-Measure
+using	O
+5	B-Amount
+l	I-Amount
+in	O
+45	B-Amount
+l	I-Amount
+TE	B-Reagent
+.	O
 
 Put	B-Action
 10	B-Amount
 l	I-Amount
 drop	B-Reagent
 of	I-Reagent
-Anti	I-Reagent
-fade	I-Reagent
-onto	I-Reagent
+Anti-fade	I-Reagent
+onto	O
 coverslips	B-Location
-.	I-Location
+.	O
 
 Label	B-Action
 petri	B-Location
 dishes	I-Location
+:	O
 mark	O
 in	O
 half	O
@@ -138,9 +134,7 @@ top	O
 .	O
 
 Pipet	B-Action
-2	B-Amount
-.	I-Amount
-5	I-Amount
+2.5	B-Amount
 l	I-Amount
 diluted	B-Modifier
 SYBR	B-Reagent
@@ -153,18 +147,18 @@ halves	I-Location
 of	O
 petri	B-Location
 dish	I-Location
-2	O
-drops	B-Numerical
-per	B-Reagent
+(	O
+2	B-Numerical
+drops	B-Reagent
+per	O
 dish	B-Location
-and	I-Location
-add	O
-97	B-Action
-.	B-Amount
-5	I-Amount
+)	O
+and	O
+add	B-Action
+97.5	B-Amount
 l	I-Amount
-TE	I-Amount
-.	B-Reagent
+TE	B-Reagent
+.	O
 
 Turn	B-Action
 vacuum	B-Device
@@ -228,9 +222,7 @@ and	O
 place	B-Action
 25	B-Amount
 mm	I-Amount
-0	B-Device
-.	I-Device
-02	I-Device
+0.02	B-Device
 m	I-Device
 Anodisc	I-Device
 filter	I-Device
@@ -263,9 +255,11 @@ filter	B-Device
 Let	O
 filter	B-Device
 dry	B-Action
-30	B-Modifier
+(	O
+~30	B-Modifier
 sec	B-Time
-.	I-Time
+)	O
+.	O
 
 With	O
 vacuum	B-Device
@@ -300,21 +294,20 @@ vacuum	B-Device
 Repeat	B-Action
 steps	O
 18	O
+-	O
 23	O
 until	O
 all	O
 samples	B-Reagent
-are	I-Reagent
+are	O
 stained	B-Modifier
-.	I-Modifier
+.	O
 
 After	O
 staining	B-Action
 ,	O
 place	B-Action
-0	B-Amount
-.	I-Amount
-5	I-Amount
+0.5	B-Amount
 ml	I-Amount
 water	B-Reagent
 on	O
@@ -341,12 +334,12 @@ Turn	B-Action
 on	I-Action
 vacuum	B-Device
 for	O
-30	B-Modifier
+~30	B-Modifier
 sec	B-Time
-to	I-Time
+to	O
 dry	B-Action
-filter	I-Action
-.	B-Device
+filter	B-Device
+.	O
 
 Remove	B-Action
 filter	B-Device
@@ -358,11 +351,10 @@ and	O
 place	B-Action
 coverslip	B-Seal
 with	O
-anti	B-Reagent
-fade	I-Reagent
-on	I-Reagent
+anti-fade	B-Reagent
+on	O
 top	B-Location
-.	I-Location
+.	O
 
 Set	B-Action
 down	I-Action

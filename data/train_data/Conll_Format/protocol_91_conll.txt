@@ -5,28 +5,23 @@ Prep	I-Method
 
 Dilute	B-Action
 5mL	B-Amount
-O	B-Reagent
-N	I-Reagent
-into	I-Reagent
+O/N	B-Reagent
+into	O
 500mL	B-Amount
-LB	I-Amount
-.	B-Reagent
+LB	B-Reagent
+.	O
 
 Grow	B-Action
 to	O
 OD	B-Generic-Measure
-0	I-Generic-Measure
-.	I-Generic-Measure
-6	I-Generic-Measure
-0	I-Generic-Measure
-.	I-Generic-Measure
-8	I-Generic-Measure
-1	I-Generic-Measure
-.	O
-5	B-Time
-3	I-Time
+0.6	I-Generic-Measure
+-0.8	I-Generic-Measure
+(	O
+~1.5	B-Time
+-3	I-Time
 hours	I-Time
-.	I-Time
+)	O
+.	O
 
 Pour	B-Action
 into	O
@@ -58,15 +53,17 @@ supernatant	B-Reagent
 .	O
 
 Resuspend	B-Action
++	I-Action
 combine	I-Action
-pellets	I-Action
-in	B-Reagent
+pellets	B-Reagent
+in	O
 250mL	B-Amount
-pre	I-Amount
-chilled	B-Modifier
-10	I-Modifier
-glycerol	B-Concentration
-.	B-Reagent
+pre	B-Modifier
+chilled	I-Modifier
+10	B-Concentration
+%	I-Concentration
+glycerol	B-Reagent
+.	O
 
 Spin	B-Action
 at	O
@@ -88,13 +85,16 @@ in	O
 pre	B-Modifier
 chilled	I-Modifier
 10	B-Concentration
-glycerol	I-Concentration
-switch	B-Reagent
+%	I-Concentration
+glycerol	B-Reagent
+(	O
+switch	O
 to	O
 50mL	B-Amount
-Falcon	I-Amount
-Tube	B-Location
-.	I-Location
+Falcon	B-Location
+Tube	I-Location
+)	I-Location
+.	O
 
 Spin	B-Action
 at	O
@@ -115,8 +115,9 @@ in	O
 pre	B-Modifier
 chilled	I-Modifier
 10	B-Concentration
-glycerol	I-Concentration
-.	B-Reagent
+%	I-Concentration
+glycerol	B-Reagent
+.	O
 
 SNAP	B-Action
 Freeze	I-Action

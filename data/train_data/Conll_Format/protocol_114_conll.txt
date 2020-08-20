@@ -19,17 +19,13 @@ Amniotic	B-Reagent
 fluid	I-Reagent
 to	O
 a	O
-1	B-Amount
-.	I-Amount
-5ml	I-Amount
+1.5ml	B-Amount
 centrifuge	B-Location
 tube	I-Location
 .	O
 
 Centrifuge	B-Action
-14	B-Speed
-,	I-Speed
-000xg	I-Speed
+14,000xg	B-Speed
 for	O
 5	B-Time
 seconds	I-Time
@@ -160,9 +156,7 @@ times	O
 
 Centrifuge	B-Action
 at	O
-16	B-Speed
-,	I-Speed
-000g	I-Speed
+16,000g	B-Speed
 for	O
 5	B-Time
 minutes	I-Time
@@ -207,9 +201,7 @@ times	O
 
 Centrifuge	B-Action
 at	O
-14	B-Speed
-,	I-Speed
-000rpm	I-Speed
+14,000rpm	B-Speed
 for	O
 5	B-Time
 minutes	I-Time
@@ -238,23 +230,22 @@ Add	B-Action
 200	B-Amount
 l	I-Amount
 70	B-Concentration
-ethanol	I-Concentration
-and	B-Reagent
+%	I-Concentration
+ethanol	B-Reagent
+and	O
 invert	B-Action
-the	I-Action
+the	O
 tube	B-Location
-twice	I-Location
-to	B-Numerical
+twice	B-Numerical
+to	O
 wash	B-Action
-the	I-Action
+the	O
 pellet	B-Reagent
-.	I-Reagent
+.	O
 
 Centrifuge	B-Action
 at	O
-14	B-Speed
-,	I-Speed
-000rpm	I-Speed
+14,000rpm	B-Speed
 for	O
 5	B-Time
 minutes	I-Time

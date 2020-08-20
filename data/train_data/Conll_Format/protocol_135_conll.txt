@@ -39,21 +39,15 @@ water	B-Location
 bath	I-Location
 .	O
 
-1	B-Amount
-.	I-Amount
-0	I-Amount
+1.0	B-Amount
 mL	I-Amount
 host	B-Reagent
 culture	I-Reagent
 and	O
 either	O
-1	B-Amount
-.	I-Amount
-0	I-Amount
+1.0	B-Amount
 or	O
-0	B-Amount
-.	I-Amount
-1	I-Amount
+0.1	B-Amount
 mL	I-Amount
 viral	B-Reagent
 concentrate	I-Reagent
@@ -136,15 +130,17 @@ The	O
 plates	B-Location
 are	O
 incubated	B-Action
+(	O
 top	O
 agar	O
 side	O
 down	O
+)	O
 overnight	B-Time
-to	I-Time
-48	O
-h	B-Time
-.	I-Time
+to	O
+48	B-Time
+h	I-Time
+.	O
 
 Temperate	B-Modifier
 phage	B-Reagent

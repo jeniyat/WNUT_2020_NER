@@ -1,4 +1,5 @@
 Immunohistochemistry	B-Method
+-	O
 Drosophila	B-Reagent
 Embryo	I-Reagent
 
@@ -129,13 +130,13 @@ embryos	B-Reagent
 to	O
 container	B-Location
 with	O
-50	B-Generic-Measure
-50	I-Generic-Measure
-4	I-Generic-Measure
-paraformaldehyde	B-Concentration
-and	B-Reagent
+50:50	B-Generic-Measure
+4	B-Concentration
+%	I-Concentration
+paraformaldehyde	B-Reagent
+and	I-Reagent
 heptane	I-Reagent
-.	I-Reagent
+.	O
 
 Shake	B-Action
 on	O
@@ -161,13 +162,15 @@ separate	B-Action
 Remove	B-Action
 bottom	B-Reagent
 phase	I-Reagent
+(	I-Reagent
 PFA	I-Reagent
-and	I-Reagent
+)	I-Reagent
+and	O
 dispose	B-Action
 of	I-Action
-as	I-Action
-required	B-Method
-.	I-Method
+as	B-Method
+required	I-Method
+.	O
 
 Be	O
 sure	O
@@ -245,13 +248,15 @@ to	O
 disposable	B-Modifier
 culture	B-Location
 tubes	I-Location
-flint	I-Location
+(	O
+flint	B-Location
 glass	I-Location
-and	I-Location
+)	O
+and	O
 allow	O
 to	O
 settle	B-Action
-.	I-Action
+.	O
 
 Remove	B-Action
 methanol	B-Reagent
@@ -351,21 +356,23 @@ optimized	B-Concentration
 concentrations	I-Concentration
 .	O
 
+(	O
 See	O
 Optimized	O
 Concentrations	B-Measure-Type
-for	I-Measure-Type
+for	O
 Developmental	O
 Studies	O
 Hybridoma	O
 Bank	O
 Antibodies	B-Reagent
-for	I-Reagent
+for	O
 use	O
 with	O
 Drosophila	B-Reagent
 Embryos	I-Reagent
-.	I-Reagent
+)	O
+.	O
 
 Wrap	B-Action
 tube	B-Location
@@ -455,9 +462,8 @@ studies	O
 used	O
 concentrations	B-Measure-Type
 of	O
-1	B-Concentration
-1000	I-Concentration
-.	I-Concentration
+1:1000	B-Concentration
+.	O
 
 Wrap	B-Action
 tube	B-Location
@@ -470,13 +476,12 @@ foil	B-Seal
 Rock	B-Action
 gently	B-Modifier
 for	O
-2	B-Time
-3	I-Time
+2-3	B-Time
 hours	I-Time
-at	I-Time
+at	O
 room	B-Temperature
 temperature	I-Temperature
-.	I-Temperature
+.	O
 
 Remove	B-Action
 blocking	B-Reagent
@@ -549,7 +554,8 @@ slide	I-Location
 .	O
 
 Using	O
-Whatman's	O
+Whatman	O
+'s	O
 paper	O
 ,	O
 carefully	B-Modifier

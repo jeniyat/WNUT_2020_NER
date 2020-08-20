@@ -26,12 +26,10 @@ tube	I-Location
 
 Incubate	B-Action
 1	B-Time
-hour	I-Time
-O	I-Time
-N	I-Time
-at	I-Time
-37C	O
-.	B-Temperature
+hour-O/N	I-Time
+at	O
+37C	B-Temperature
+.	O
 
 PCR	B-Action
 Purify	I-Action
@@ -80,18 +78,20 @@ minutes	I-Time
 Add	B-Action
 200ul	B-Amount
 LB	B-Reagent
+(	O
 if	O
 in	O
-96	O
-well	B-Location
-or	I-Location
-8	O
-strip	B-Location
-format	I-Location
+96	B-Location
+well	I-Location
+or	O
+8	B-Location
+strip	I-Location
+format	O
+)	O
 to	O
 each	B-Modifier
-reaction	I-Modifier
-.	B-Reagent
+reaction	B-Reagent
+.	O
 
 Shake	B-Action
 at	O

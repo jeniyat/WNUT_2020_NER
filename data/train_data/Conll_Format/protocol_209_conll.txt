@@ -23,36 +23,35 @@ L	I-Amount
 using	O
 Cas9	B-Reagent
 buffer	I-Reagent
+(	O
 20	B-Concentration
 mM	I-Concentration
-HEPES	I-Concentration
-KOH	B-Reagent
-pH	I-Reagent
-7	B-pH
-.	I-pH
-5	I-pH
-,	I-pH
-150	I-pH
-mM	B-Concentration
-KCl	I-Concentration
-,	B-Reagent
-10	I-Reagent
-glycerol	B-Concentration
-,	B-Reagent
-1	I-Reagent
-mM	I-Reagent
-TCEP	B-Concentration
-.	B-Reagent
+HEPES-KOH	B-Reagent
+pH	B-pH
+7.5	I-pH
+,	O
+150	B-Concentration
+mM	I-Concentration
+KCl	B-Reagent
+,	O
+10	B-Concentration
+%	I-Concentration
+glycerol	B-Reagent
+,	O
+1	B-Concentration
+mM	I-Concentration
+TCEP	B-Reagent
+)	O
+.	O
 
 For	O
 40	B-Concentration
 M	I-Concentration
 stock	B-Reagent
-2	O
-.	B-Amount
-5	I-Amount
+:	O
+2.5	B-Amount
 L	I-Amount
-.	I-Amount
+.	O
 
 Bring	B-Action
 120	B-Concentration
@@ -106,18 +105,19 @@ RNP	B-Reagent
 to	O
 form	O
 for	O
-10	B-Time
-20	I-Time
+10-20	B-Time
 minutes	I-Time
-.	I-Time
+.	O
 
 Count	B-Action
 cells	B-Reagent
 .	O
+(	O
 Trypsinize	B-Action
-as	I-Action
+as	O
 needed	O
 .	O
+)	O
 
 For	O
 each	O
@@ -160,22 +160,19 @@ cuvette	B-Location
 
 Prepare	B-Action
 a	O
-12	B-Location
-well	I-Location
-plate	I-Location
-with	I-Location
-1mL	O
-media	B-Amount
-per	B-Reagent
-well	B-Modifier
-,	I-Modifier
-and	I-Modifier
-pre	O
-warm	B-Action
-in	I-Action
-the	I-Action
+12-well-plate	B-Location
+with	O
+1mL	B-Amount
+media	B-Reagent
+per	B-Modifier
+well	I-Modifier
+,	O
+and	O
+pre-warm	B-Action
+in	O
+the	O
 incubator	B-Device
-.	I-Device
+.	O
 
 Prepare	B-Action
 and	O
@@ -192,8 +189,7 @@ Lonza	B-Device
 4d	I-Device
 using	O
 recommended	O
-cell	O
-type	O
+cell-type	O
 program	O
 .	O
 
@@ -230,13 +226,15 @@ L	I-Amount
 of	O
 nucleofector	B-Reagent
 solution	I-Reagent
+(	O
 usually	O
 SF	O
 media	O
+)	O
 using	O
 a	O
-P200	O
-.	B-Device
+P200	B-Device
+.	O
 
 Add	B-Action
 the	O
@@ -260,12 +258,14 @@ of	O
 100uM	B-Concentration
 donor	B-Reagent
 DNA	I-Reagent
+(	O
 100	B-Concentration
 pmoles	I-Concentration
-and	I-Concentration
-mix	O
-well	B-Action
-.	B-Modifier
+)	O
+and	O
+mix	B-Action
+well	B-Modifier
+.	O
 
 Add	B-Action
 nucleofection	B-Reagent
@@ -321,9 +321,8 @@ strips	I-Location
 for	O
 10	B-Time
 minutes	I-Time
-post	O
-nucleofection	B-Method
-.	I-Method
+post-nucleofection	B-Method
+.	O
 
 This	O
 is	O
@@ -336,13 +335,12 @@ efficiency	O
 Add	B-Action
 80uL	B-Amount
 of	O
-pre	B-Modifier
-warmed	I-Modifier
-media	I-Modifier
-to	B-Reagent
+pre-warmed	B-Modifier
+media	B-Reagent
+to	O
 each	B-Modifier
-well	I-Modifier
-.	B-Location
+well	B-Location
+.	O
 
 Pipette	B-Action
 mixture	B-Reagent
@@ -352,12 +350,10 @@ a	O
 P200	B-Device
 into	O
 your	O
-pre	B-Modifier
-warmed	I-Modifier
-12	I-Modifier
-well	B-Location
+pre-warmed	B-Modifier
+12-well	B-Location
 plate	I-Location
-.	I-Location
+.	O
 
 This	O
 should	O
@@ -386,8 +382,7 @@ the	O
 same	O
 well	B-Location
 ,	O
-chemistry	O
-style	O
+chemistry-style	O
 .	O
 
 Allow	B-Action
@@ -406,13 +401,12 @@ analysis	I-Method
 
 Consider	O
 including	B-Action
-un	B-Modifier
-zapped	I-Modifier
-controls	I-Modifier
-to	B-Reagent
+un-zapped	B-Modifier
+controls	B-Reagent
+to	O
 test	B-Action
-viability	I-Action
-.	B-Measure-Type
+viability	B-Measure-Type
+.	O
 
 
 

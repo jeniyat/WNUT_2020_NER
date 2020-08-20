@@ -5,15 +5,11 @@ Pellet	B-Action
 culture	B-Reagent
 in	O
 a	O
-1	B-Amount
-.	I-Amount
-8mL	I-Amount
+1.8mL	B-Amount
 centrifuge	B-Location
 tube	I-Location
 at	O
-8	B-Speed
-,	I-Speed
-000rpm	I-Speed
+8,000rpm	B-Speed
 for	O
 1	B-Time
 minute	I-Time
@@ -39,9 +35,8 @@ lysis	B-Reagent
 solution	I-Reagent
 and	O
 invert	B-Action
-4	B-Numerical
-6	I-Numerical
-times	I-Numerical
+4-6	B-Numerical
+times	O
 .	O
 
 Add	B-Action
@@ -53,9 +48,8 @@ and	O
 invert	B-Action
 the	O
 tube	B-Location
-4	B-Numerical
-6	I-Numerical
-times	I-Numerical
+4-6	B-Numerical
+times	O
 .	O
 
 Bind	B-Action
@@ -70,9 +64,7 @@ decanting	B-Action
 
 Centrifuge	B-Action
 at	O
-13	B-Speed
-,	I-Speed
-300	I-Speed
+13,300	B-Speed
 rpm	I-Speed
 for	O
 1	B-Time
@@ -96,13 +88,12 @@ minute	I-Time
 
 Discard	B-Action
 the	O
-flow	B-Reagent
-thru	I-Reagent
-and	I-Reagent
+flow-thru	B-Reagent
+and	O
 centrifuge	B-Action
-for	I-Action
-1	O
-minute	B-Time
+for	O
+1	B-Time
+minute	I-Time
 .	I-Time
 
 Elute	B-Action
@@ -131,13 +122,12 @@ minutes	I-Time
 
 Collect	B-Action
 the	O
-flow	B-Reagent
-thru	I-Reagent
-in	I-Reagent
+flow-thru	B-Reagent
+in	O
 a	O
 new	B-Modifier
-centrifuge	I-Modifier
-tube	B-Location
+centrifuge	B-Location
+tube	I-Location
 
 
 

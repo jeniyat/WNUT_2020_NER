@@ -5,8 +5,7 @@ and	O
 RNA	B-Reagent
 extraction	B-Method
 for	O
-RNA	B-Reagent
-Seq	I-Reagent
+RNA-Seq	B-Reagent
 
 Use	O
 sterile	B-Modifier
@@ -51,9 +50,7 @@ supernatant	B-Reagent
 .	O
 
 Use	O
-0	B-Amount
-.	I-Amount
-5	I-Amount
+0.5	B-Amount
 ml	I-Amount
 of	O
 RNALater	B-Reagent
@@ -72,9 +69,7 @@ tube	I-Location
 
 Use	O
 another	O
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 ml	I-Amount
 of	O
 RNALater	B-Reagent
@@ -91,9 +86,7 @@ cells	B-Reagent
 
 Transfer	B-Action
 this	O
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 ml	I-Amount
 into	O
 the	O
@@ -107,17 +100,16 @@ on	O
 whether	O
 you	O
 want	O
-pseudo	O
-replicates	O
+pseudo-replicates	O
 ,	O
 you	O
 can	O
 keep	B-Action
-the	I-Action
-4	O
-harvested	B-Numerical
-pellet	B-Modifier
-separate	B-Reagent
+the	O
+4	B-Numerical
+harvested	B-Modifier
+pellet	B-Reagent
+separate	O
 or	O
 mixed	O
 .	O
@@ -129,13 +121,13 @@ cells	B-Reagent
 at	B-Modifier
 or	I-Modifier
 below	I-Modifier
-20oC	B-Temperature
-until	I-Temperature
+-20oC	B-Temperature
+until	O
 ready	O
 for	O
 RNA	B-Reagent
-extraction	I-Reagent
-.	B-Method
+extraction	B-Method
+.	O
 
 Before	O
 RNA	B-Reagent
@@ -160,15 +152,16 @@ frozen	B-Modifier
 Centrifuge	B-Action
 samples	B-Reagent
 at	O
-10	B-Modifier
-k	B-Speed
+>	B-Modifier
+10	B-Speed
+k	I-Speed
 g	I-Speed
-for	I-Speed
-10	O
-min	B-Time
-at	I-Time
+for	O
+10	B-Time
+min	I-Time
+at	O
 4oC	B-Temperature
-.	I-Temperature
+.	O
 
 RNALater	B-Reagent
 sometimes	O
@@ -221,10 +214,13 @@ RNeasy	B-Reagent
 Plant	I-Reagent
 Mini	I-Reagent
 Kit	I-Reagent
+(	O
 Qiagen	O
+)	O
 following	O
 the	O
-manufacturer's	B-Method
+manufacturer	B-Method
+'s	I-Method
 instructions	I-Method
 .	I-Method
 
@@ -237,12 +233,15 @@ extracted	B-Reagent
 samples	I-Reagent
 using	O
 DNase	B-Reagent
+(	O
 Sigma	O
+)	O
 ,	O
 following	O
-manufacturer's	B-Method
+manufacturer	B-Method
+'s	I-Method
 instructions	I-Method
-.	I-Method
+.	O
 
 Clean	B-Action
 up	I-Action
@@ -253,15 +252,19 @@ using	O
 a	O
 RNA	B-Reagent
 Clean	I-Reagent
+&	I-Reagent
 Concentrator	I-Reagent
 kit	I-Reagent
-Zymo	I-Reagent
+(	O
+Zymo	O
+)	O
 ,	O
 following	O
 the	O
-manufacturer's	B-Method
+manufacturer	B-Method
+'s	I-Method
 instructions	I-Method
-.	I-Method
+.	O
 
 Quantify	B-Action
 the	O
@@ -271,9 +274,7 @@ any	B-Method
 preferred	I-Method
 method	I-Method
 ,	O
-e	O
-.	O
-g	O
+e.g	O
 .	O
 Qubit	B-Method
 fluorometer	I-Method
@@ -283,8 +284,8 @@ Store	B-Action
 the	O
 RNA	B-Reagent
 at	O
-80oC	B-Temperature
-.	I-Temperature
+-80oC	B-Temperature
+.	O
 
 It	O
 may	O
@@ -298,7 +299,8 @@ out	O
 so	O
 that	O
 you	O
-don't	O
+do	O
+n't	O
 need	O
 to	O
 thaw	B-Action

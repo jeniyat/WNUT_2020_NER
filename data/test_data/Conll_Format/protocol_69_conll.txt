@@ -37,11 +37,10 @@ medium	I-Reagent
 to	O
 each	B-Modifier
 10cm	B-Size
-petri	B-Location
-dish	I-Location
-while	I-Location
+petri-dish	B-Location
+while	O
 centrifuging	B-Method
-.	I-Method
+.	O
 
 Gently	B-Modifier
 resuspend	B-Action
@@ -84,43 +83,38 @@ and	O
 dilute	B-Action
 into	O
 1	B-Concentration
-10	I-Concentration
-6	I-Concentration
-cells	I-Concentration
-ml	I-Concentration
-.	I-Concentration
+10^6	I-Concentration
+cells/ml	I-Concentration
+.	O
 
 Gently	B-Modifier
-re	B-Action
-suspend	I-Action
-by	I-Action
+re-suspend	B-Action
+by	O
 5ml	B-Size
-pipette	I-Size
-,	B-Device
-up	O
-and	B-Method
+pipette	B-Device
+,	O
+up	B-Method
+and	I-Method
 down	I-Method
-for	I-Method
-4	O
-times	B-Numerical
-.	I-Numerical
+for	O
+4	B-Numerical
+times	I-Numerical
+.	O
 
 Seed	B-Action
 2ml	B-Amount
 of	O
-cells	B-Reagent
-dish	B-Location
-.	I-Location
+cells/dish	B-Reagent
+.	O
 
 Save	B-Action
 2	B-Amount
-10	I-Amount
-6	I-Amount
-cells	I-Amount
-for	B-Reagent
+10^6	I-Amount
+cells	B-Reagent
+for	O
 RNA	B-Method
 extraction	I-Method
-.	I-Method
+.	O
 
 Transfer	B-Action
 medium	B-Reagent
@@ -188,14 +182,14 @@ gelatin	B-Reagent
 coated	I-Reagent
 chamber	I-Reagent
 slides	I-Reagent
-2	O
-well	B-Modifier
-.	I-Modifier
+(	O
+2	B-Modifier
+well	I-Modifier
+)	O
+.	O
 
 Add	B-Action
-1	B-Amount
-.	I-Amount
-5ml	I-Amount
+1.5ml	B-Amount
 of	O
 medium	B-Reagent
 into	O
@@ -242,9 +236,7 @@ pellets	B-Reagent
 .	O
 
 Seed	B-Action
-0	B-Amount
-.	I-Amount
-5ml	I-Amount
+0.5ml	B-Amount
 of	O
 EB	B-Reagent
 to	O
@@ -255,15 +247,16 @@ well	B-Location
 Change	B-Action
 medium	B-Reagent
 everyday	B-Modifier
+:	O
 suck	B-Action
-supernatant	I-Action
-,	B-Reagent
+supernatant	B-Reagent
+,	O
 replace	B-Action
-with	I-Action
+with	O
 fresh	B-Modifier
-EB	I-Modifier
-medium	B-Reagent
-.	I-Reagent
+EB	B-Reagent
+medium	I-Reagent
+.	O
 
 Take	B-Action
 2	B-Numerical
@@ -288,48 +281,56 @@ carefully	B-Modifier
 Fix	B-Action
 with	O
 4	B-Concentration
-PFA	I-Concentration
-for	B-Reagent
+%	I-Concentration
+PFA	B-Reagent
+for	O
 30min	B-Time
-RT	I-Time
-.	B-Temperature
+@	O
+RT	B-Temperature
+.	O
 
+(	O
 in	B-Location
 hood	I-Location
-.	I-Location
+)	O
+.	O
 
 Wash	B-Action
-1	B-Reagent
-with	I-Reagent
+#	B-Reagent
+1	I-Reagent
+with	O
 2ml	B-Amount
-of	I-Amount
+of	O
 PBS	B-Reagent
-.	I-Reagent
+.	O
 
 Wash	B-Action
-2	B-Reagent
-with	I-Reagent
+#	B-Reagent
+2	I-Reagent
+with	O
 2ml	B-Amount
-of	I-Amount
+of	O
 PBS	B-Reagent
-.	I-Reagent
+.	O
 
 Wash	B-Action
-3	B-Reagent
-with	I-Reagent
+#	B-Reagent
+3	I-Reagent
+with	O
 2ml	B-Amount
-of	I-Amount
+of	O
 PBS	B-Reagent
-.	I-Reagent
+.	O
 
 Store	B-Action
 samples	B-Reagent
 in	O
 PBS	B-Reagent
 ,	O
-4	O
-C	B-Temperature
-.	I-Temperature
+@	O
+4	B-Temperature
+C	I-Temperature
+.	O
 
 
 

@@ -13,17 +13,16 @@ tube	I-Location
 add	B-Action
 the	O
 following	B-Reagent
+:	O
 
 Heat	B-Action
 for	O
-3	B-Time
-5	I-Time
+3-5	B-Time
 minutes	I-Time
-at	I-Time
-65	O
-80	B-Temperature
+at	O
+65-80	B-Temperature
 C	I-Temperature
-.	I-Temperature
+.	O
 
 Spin	B-Action
 briefly	B-Modifier
@@ -48,13 +47,12 @@ L	I-Amount
 .	O
 
 Add	B-Action
-M	B-Reagent
-MuLV	I-Reagent
+M-MuLV	B-Reagent
 Reverse	I-Reagent
 Transcriptase	I-Reagent
-1	I-Reagent
-L	B-Amount
-.	I-Amount
+1	B-Amount
+L	I-Amount
+.	O
 
 Incubate	B-Action
 at	O
@@ -78,14 +76,16 @@ minutes	I-Time
 Store	B-Action
 products	B-Reagent
 at	O
-20	B-Temperature
+-20	B-Temperature
 C	I-Temperature
-or	I-Temperature
+or	O
 proceed	B-Action
-to	I-Action
+to	O
 next	O
 step	O
+(	O
 s	O
+)	O
 .	O
 
 

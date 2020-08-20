@@ -16,9 +16,7 @@ spin	B-Action
 it	B-Mention
 down	O
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 rpm	I-Speed
 for	O
 5	B-Time
@@ -26,9 +24,7 @@ min	I-Time
 .	O
 
 Discard	B-Action
-0	B-Amount
-.	I-Amount
-9	I-Amount
+0.9	B-Amount
 ml	I-Amount
 of	O
 the	O
@@ -46,22 +42,21 @@ l	I-Amount
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-9	I-Amount
+0.9	B-Amount
 ml	I-Amount
 of	O
 100	B-Concentration
-methanol	I-Concentration
-to	B-Reagent
+%	I-Concentration
+methanol	B-Reagent
+to	O
 the	O
 sample	B-Reagent
-and	I-Reagent
+and	O
 mix	B-Action
-thoroughly	I-Action
-by	B-Modifier
+thoroughly	B-Modifier
+by	O
 vortexing	B-Action
-.	I-Action
+.	O
 
 Incubate	B-Action
 the	O
@@ -85,9 +80,7 @@ down	I-Action
 samples	B-Reagent
 again	O
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 rpm	I-Speed
 for	O
 5	B-Time
@@ -110,12 +103,13 @@ nm	I-Generic-Measure
 
 Use	B-Action
 90	B-Concentration
-methanol	I-Concentration
-as	B-Reagent
+%	I-Concentration
+methanol	B-Reagent
+as	O
 the	O
 reference	B-Reagent
 solution	I-Reagent
-.	I-Reagent
+.	O
 
 
 

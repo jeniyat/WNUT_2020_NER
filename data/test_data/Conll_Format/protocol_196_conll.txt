@@ -1,16 +1,14 @@
 RNA	B-Reagent
 Isolation	B-Method
 from	O
-Viral	B-Modifier
-infected	I-Modifier
-Chlorella	I-Modifier
-NC64A	B-Reagent
+Viral-infected	B-Modifier
+Chlorella	B-Reagent
+NC64A	I-Reagent
 
 Grow	B-Action
 NC64A	B-Reagent
 to	O
-mid	O
-log	O
+mid-log	O
 phase	O
 .	O
 
@@ -19,9 +17,8 @@ to	O
 1	B-Concentration
 x	I-Concentration
 108	I-Concentration
-cells	I-Concentration
-ml	I-Concentration
-.	I-Concentration
+cells/ml	I-Concentration
+.	O
 
 Use	B-Action
 30	B-Amount
@@ -31,32 +28,27 @@ cells	I-Reagent
 per	I-Reagent
 time	I-Reagent
 point	I-Reagent
-3	O
-x	B-Numerical
+(	O
+3	B-Numerical
+x	I-Numerical
 109	I-Numerical
-cells	I-Numerical
-91	B-Reagent
+cells~91	B-Reagent
 mg	B-Amount
-cells	I-Amount
-wet	B-Reagent
-weight	B-Modifier
-.	B-Generic-Measure
+cells	B-Reagent
+wet	B-Modifier
+weight	B-Generic-Measure
+)	O
+.	O
 
 Infect	B-Action
 with	O
 virus	B-Reagent
 at	O
-m	B-Measure-Type
-.	I-Measure-Type
-o	I-Measure-Type
-.	I-Measure-Type
-i	I-Measure-Type
-.	I-Measure-Type
-5	B-Numerical
-for	I-Numerical
+m.o.i.=5	B-Measure-Type
+for	O
 appropriate	O
 time	B-Measure-Type
-.	I-Measure-Type
+.	O
 
 Harvest	B-Action
 infected	B-Reagent
@@ -68,8 +60,7 @@ at	O
 rpm	I-Speed
 ,	O
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -88,14 +79,15 @@ nitrogen	I-Reagent
 
 Store	B-Action
 at	O
-80	B-Temperature
+-80	B-Temperature
 C	I-Temperature
-until	I-Temperature
+until	O
 ready	O
 to	O
 proceed	O
 to	O
 step	O
+#	O
 8	O
 .	O
 
@@ -110,26 +102,28 @@ freezer	B-Device
 at	O
 a	O
 time	O
+(	O
 keep	B-Action
-on	I-Action
+on	O
 ice	B-Location
-,	I-Location
+)	O
+,	O
 break	B-Action
-pellets	I-Action
-loose	B-Reagent
+pellets	B-Reagent
+loose	O
 with	O
 spatula	B-Device
-,	I-Device
-and	I-Device
-add	O
-1	B-Action
-ml	I-Action
-TRIZOL	B-Amount
-reagent	B-Reagent
-to	I-Reagent
+,	O
+and	O
+add	B-Action
+1	B-Amount
+ml	I-Amount
+TRIZOL	B-Reagent
+reagent	I-Reagent
+to	O
 each	O
 tube	B-Location
-.	I-Location
+.	O
 
 Work	B-Action
 as	O
@@ -157,22 +151,19 @@ into	O
 ml	I-Amount
 microcentrifuge	B-Location
 tube	I-Location
+(	I-Location
 s	I-Location
-containing	I-Location
-250	O
-mg	B-Amount
-of	I-Amount
-0	O
-.	O
-25	B-Size
-0	I-Size
-.	I-Size
-30	I-Size
+)	I-Location
+containing	O
+250	B-Amount
+mg	I-Amount
+of	O
+0.25-0.30	B-Size
 mm	I-Size
-baked	I-Size
-glass	B-Modifier
-beads	B-Reagent
-.	I-Reagent
+baked	B-Modifier
+glass	B-Reagent
+beads	I-Reagent
+.	O
 
 Immediately	B-Modifier
 vortex	B-Action
@@ -180,8 +171,7 @@ at	O
 highest	B-Speed
 speed	I-Speed
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -189,20 +179,20 @@ C	I-Temperature
 
 Place	B-Action
 at	O
-80	B-Temperature
+-80	B-Temperature
 C	I-Temperature
-overnight	I-Temperature
-.	B-Time
+overnight	B-Time
+.	O
 
 Repeat	O
 steps	O
-8	O
-12	O
+#	O
+8-12	O
 for	O
 the	O
 remaining	O
 samples	B-Reagent
-.	I-Reagent
+.	O
 
 Thaw	B-Action
 samples	B-Reagent
@@ -238,15 +228,12 @@ min	I-Time
 Centrifuge	B-Action
 samples	B-Reagent
 at	O
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 ,	O
 15	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -254,18 +241,17 @@ C	I-Temperature
 
 Withdraw	B-Action
 the	O
-RNA	B-Reagent
-containing	I-Reagent
+RNA-containing	B-Reagent
 aqueous	I-Reagent
 upper	I-Reagent
 phase	I-Reagent
-and	I-Reagent
+and	O
 deliver	B-Action
-to	I-Action
+to	O
 fresh	B-Modifier
-microcentrifuge	I-Modifier
-tube	B-Location
-.	I-Location
+microcentrifuge	B-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 500	B-Amount
@@ -285,15 +271,12 @@ temp	I-Temperature
 
 Centrifuge	B-Action
 at	O
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 ,	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -307,21 +290,19 @@ Wash	B-Action
 pellet	B-Reagent
 with	O
 75	B-Concentration
-EtOH	I-Concentration
-with	B-Reagent
+%	I-Concentration
+EtOH	B-Reagent
+with	O
 vortexing	B-Action
-.	I-Action
+.	O
 
 Centrifuge	B-Action
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 ,	I-Speed
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -332,10 +313,9 @@ pellets	B-Reagent
 in	O
 vacuum	B-Device
 dessicator	I-Device
-5	B-Time
-10	I-Time
+5-10	B-Time
 min	I-Time
-.	I-Time
+.	O
 
 DO	O
 NOT	O
@@ -353,9 +333,8 @@ pellet	B-Reagent
 in	O
 250	B-Amount
 l	I-Amount
-dd	B-Reagent
-H20	I-Reagent
-.	I-Reagent
+dd-H20	B-Reagent
+.	O
 
 Add	B-Action
 250	B-Amount
@@ -366,25 +345,24 @@ MOPS	B-Reagent
 ,	O
 20mM	B-Concentration
 MgCl2	B-Reagent
+(	O
 2X	B-Concentration
-,	I-Concentration
+)	O
+,	O
 and	O
-100	O
-200	B-Amount
-U	I-Amount
-RNAse	I-Amount
-free	B-Reagent
+100-200	B-Amount
+U	O
+RNAse-free	B-Reagent
 DNAse	I-Reagent
 I	I-Reagent
-.	I-Reagent
+.	O
 
 Incubate	B-Action
-1	B-Time
-2	I-Time
+1-2	B-Time
 h	I-Time
-on	I-Time
+on	O
 ice	B-Location
-.	I-Location
+.	O
 
 Extract	B-Action
 with	O
@@ -392,22 +370,22 @@ equal	O
 volume	B-Measure-Type
 of	O
 phenol	B-Reagent
+:	I-Reagent
 chloroform	I-Reagent
-500	I-Reagent
-l	B-Amount
-.	I-Amount
+(	O
+500	B-Amount
+l	I-Amount
+)	O
+.	O
 
 Centrifuge	B-Action
 at	O
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 ,	O
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -420,9 +398,7 @@ phase	I-Reagent
 add	B-Action
 NaOAc	B-Reagent
 to	O
-0	B-Concentration
-.	I-Concentration
-3	I-Concentration
+0.3	B-Concentration
 M	I-Concentration
 .	O
 
@@ -435,8 +411,7 @@ isopropanol	B-Reagent
 Let	O
 stand	B-Action
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 room	B-Temperature
 temp	I-Temperature
@@ -445,15 +420,12 @@ temp	I-Temperature
 Centrifuge	B-Action
 up	B-Modifier
 to	I-Modifier
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 ,	O
 10	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -467,21 +439,19 @@ Wash	B-Action
 pellet	B-Reagent
 with	O
 75	B-Concentration
-EtOH	I-Concentration
-with	B-Reagent
+%	I-Concentration
+EtOH	B-Reagent
+with	O
 vortexing	B-Action
-.	I-Action
+.	O
 
 Centrifuge	B-Action
-12	B-Speed
-,	I-Speed
-000	I-Speed
+12,000	B-Speed
 x	I-Speed
 g	I-Speed
 ,	O
 5	B-Time
-min	I-Time
-.	O
+min.	I-Time
 ,	O
 4	B-Temperature
 C	I-Temperature
@@ -492,10 +462,9 @@ pellets	B-Reagent
 in	O
 vacuum	B-Device
 dessicator	I-Device
-5	B-Time
-10	I-Time
+5-10	B-Time
 min	I-Time
-.	I-Time
+.	O
 
 Do	O
 not	O
@@ -506,11 +475,10 @@ completely	B-Modifier
 Resuspend	B-Action
 pellets	B-Reagent
 in	O
-40	B-Amount
-50	I-Amount
+40-50	B-Amount
 l	I-Amount
-water	I-Amount
-.	B-Reagent
+water	B-Reagent
+.	O
 
 
 

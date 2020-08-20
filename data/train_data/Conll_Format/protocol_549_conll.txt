@@ -1,6 +1,5 @@
 10x	B-Concentration
-Tris	B-Reagent
-Glycine	I-Reagent
+Tris-Glycine	B-Reagent
 PAGE	I-Reagent
 Running	I-Reagent
 Buffer	I-Reagent
@@ -15,24 +14,18 @@ dH20	B-Reagent
 .	O
 
 Add	B-Action
-30	B-Amount
-.	I-Amount
-2g	I-Amount
+30.2g	B-Amount
 Tris	B-Reagent
 base	I-Reagent
 .	O
 
 Add	B-Action
-144	B-Amount
-.	I-Amount
-2g	I-Amount
+144.2g	B-Amount
 glycine	B-Reagent
 pH	B-Measure-Type
 solution	B-Reagent
 to	O
-8	B-Numerical
-.	I-Numerical
-80	I-Numerical
+8.80	B-Numerical
 after	B-Modifier
 disolution	B-Action
 of	O
@@ -44,9 +37,12 @@ glycine	I-Reagent
 Add	B-Action
 10g	B-Amount
 SDS	B-Reagent
-1	O
-final	B-Concentration
-.	B-Modifier
+(	O
+1	B-Concentration
+%	I-Concentration
+final	B-Modifier
+)	O
+.	O
 
 Fill	B-Action
 to	O

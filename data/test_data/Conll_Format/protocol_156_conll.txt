@@ -2,7 +2,9 @@ General	B-Location
 tube	I-Location
 bacteria	B-Reagent
 extraction	B-Method
+(	O
 DNeasy	O
+)	O
 
 Place	B-Action
 Buffer	B-Reagent
@@ -32,17 +34,18 @@ added	B-Action
 .	O
 
 Spin	B-Action
-500ul	B-Modifier
-of	B-Amount
+>	B-Modifier
+500ul	B-Amount
+of	O
 bacteria	B-Reagent
 liquid	I-Reagent
 culture	I-Reagent
-at	I-Reagent
+at	O
 10000g	B-Speed
-for	I-Speed
-10	O
-minutes	B-Time
-.	I-Time
+for	O
+10	B-Time
+minutes	I-Time
+.	O
 
 Pour	B-Action
 off	I-Action
@@ -65,15 +68,16 @@ for	O
 Add	B-Action
 200ul	B-Amount
 100	B-Concentration
-ethanol	I-Concentration
-to	B-Reagent
+%	I-Concentration
+ethanol	B-Reagent
+to	O
 each	B-Modifier
-sample	I-Modifier
-and	B-Reagent
+sample	B-Reagent
+and	O
 vortex	B-Action
-for	I-Action
+for	O
 15s	B-Time
-.	I-Time
+.	O
 
 Briefly	B-Modifier
 spin	B-Action
@@ -98,11 +102,14 @@ Centrifuge	B-Action
 at	O
 max	B-Modifier
 speed	B-Speed
-20000g	B-Modifier
-for	B-Speed
-2	O
-minutes	B-Time
-.	I-Time
+(	O
+>	B-Modifier
+20000g	B-Speed
+)	O
+for	O
+2	B-Time
+minutes	I-Time
+.	O
 
 Empty	B-Action
 collection	B-Location
@@ -122,11 +129,14 @@ Spin	B-Action
 at	O
 max	B-Modifier
 speed	B-Measure-Type
-20000g	B-Modifier
-for	B-Speed
-2	O
-minutes	B-Time
-.	I-Time
+(	O
+>	B-Modifier
+20000g	B-Speed
+)	O
+for	O
+2	B-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 500ul	B-Amount
@@ -141,11 +151,14 @@ Spin	B-Action
 at	O
 max	B-Modifier
 speed	B-Measure-Type
-20000g	B-Modifier
-for	B-Speed
-2	O
-minutes	B-Time
-.	I-Time
+(	O
+>	B-Modifier
+20000g	B-Speed
+)	O
+for	O
+2	B-Time
+minutes	I-Time
+.	O
 
 Place	B-Action
 spin	B-Location
@@ -160,11 +173,14 @@ spin	B-Action
 at	O
 max	B-Modifier
 speed	B-Measure-Type
-20000g	B-Modifier
-for	B-Speed
-3	O
-minutes	B-Time
-.	I-Time
+(	O
+>	B-Modifier
+20000g	B-Speed
+)	O
+for	O
+3	B-Time
+minutes	I-Time
+.	O
 
 Transfer	B-Action
 spin	B-Location
@@ -172,9 +188,7 @@ column	I-Location
 to	O
 a	O
 labeled	B-Modifier
-1	B-Amount
-.	I-Amount
-5ml	I-Amount
+1.5ml	B-Amount
 Eppendorf	B-Location
 lobind	I-Location
 tube	I-Location
@@ -187,17 +201,16 @@ buffer	B-Reagent
 TE	I-Reagent
 directly	O
 to	O
-membrane	B-Location
-filter	I-Location
-in	I-Location
-spin	I-Location
+membrane/filter	B-Location
+in	O
+spin	B-Location
 column	I-Location
-and	I-Location
+and	O
 incubate	B-Action
-at	I-Action
+at	O
 room	B-Temperature
 temp	I-Temperature
-.	I-Temperature
+.	O
 
 for	O
 1	B-Time

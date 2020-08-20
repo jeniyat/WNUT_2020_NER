@@ -7,10 +7,11 @@ with	O
 Cas9	B-Reagent
 Nuclease	I-Reagent
 ,	O
-S	B-Reagent
-.	I-Reagent
+S.	B-Reagent
 pyogenes	I-Reagent
+(	O
 M0386	O
+)	O
 
 Prepare	B-Action
 300nM	B-Concentration
@@ -20,12 +21,11 @@ diluting	B-Action
 the	O
 stock	B-Reagent
 with	O
-nuclease	B-Modifier
-free	I-Modifier
-water	I-Modifier
-on	B-Reagent
+nuclease-free	B-Modifier
+water	B-Reagent
+on	O
 ice	B-Location
-.	I-Location
+.	O
 
 Prepare	B-Action
 30nM	B-Concentration
@@ -41,12 +41,11 @@ diluting	B-Action
 the	O
 stock	B-Reagent
 with	O
-nuclease	B-Modifier
-free	I-Modifier
-water	I-Modifier
-on	B-Reagent
+nuclease-free	B-Modifier
+water	B-Reagent
+on	O
 ice	B-Location
-.	I-Location
+.	O
 
 Assemble	B-Action
 the	O
@@ -58,21 +57,22 @@ in	O
 the	O
 following	O
 order	O
+(	O
 total	O
 volume	B-Measure-Type
-30	I-Measure-Type
-l	B-Amount
-.	I-Amount
+30	B-Amount
+l	I-Amount
+)	O
+.	O
 
-Pre	B-Action
-incubate	I-Action
-for	I-Action
-10	O
-minutes	B-Time
-at	I-Time
-37	O
-C	B-Temperature
-.	I-Temperature
+Pre-incubate	B-Action
+for	O
+10	B-Time
+minutes	I-Time
+at	O
+37	B-Temperature
+C	I-Temperature
+.	O
 
 Add	B-Action
 30nM	B-Concentration

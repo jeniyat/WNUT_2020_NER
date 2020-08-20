@@ -31,10 +31,9 @@ at	O
 C	I-Temperature
 in	O
 a	O
-swinging	B-Device
-bucket	I-Device
+swinging-bucket	B-Device
 rotor	I-Device
-.	I-Device
+.	O
 
 Centrifuge	B-Action
 time	B-Measure-Type
@@ -109,8 +108,10 @@ of	O
 the	O
 upper	B-Location
 reservoir	I-Location
+(	O
 Figure	O
 1	O
+)	O
 .	O
 
 Add	B-Action
@@ -120,28 +121,29 @@ to	O
 cover	B-Action
 the	O
 filter	B-Device
-1	O
-.	B-Modifier
-5	B-Amount
-ml	I-Amount
-.	I-Amount
+(	O
+~1.5	B-Modifier
+ml	B-Amount
+)	O
+.	O
 
 Vortex	B-Action
 the	O
 upper	B-Location
 reservoir	I-Location
-filter	B-Device
-parafilm	I-Device
-side	B-Seal
+(	O
+filter/parafilm	B-Device
+side	O
 down	O
+)	O
 at	O
 a	O
 setting	O
 of	O
-1200	O
-for	B-Speed
-20s	O
-.	B-Modifier
+1200	B-Speed
+for	O
+~20s	B-Modifier
+.	O
 
 Remove	B-Action
 the	O
@@ -161,14 +163,13 @@ sample	I-Reagent
 
 Repeat	B-Action
 steps	O
-8	O
-10	O
+8-10	O
 to	O
 fully	B-Modifier
-recover	I-Modifier
-your	B-Action
+recover	B-Action
+your	O
 sample	B-Reagent
-.	I-Reagent
+.	O
 
 Add	B-Action
 your	O
@@ -254,9 +255,11 @@ to	O
 cover	B-Action
 the	O
 filter	B-Device
-10	B-Amount
+(	O
+~10	B-Amount
 l	I-Amount
-.	I-Amount
+)	O
+.	O
 
 Swirl	B-Action
 the	O

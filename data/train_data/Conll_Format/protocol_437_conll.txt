@@ -41,13 +41,9 @@ CaCl2	B-Reagent
 .	O
 
 Dispense	B-Action
-2	B-Amount
-.	I-Amount
-0	I-Amount
+2.0	B-Amount
 or	O
-4	B-Amount
-.	I-Amount
-5	I-Amount
+4.5	B-Amount
 ml	I-Amount
 per	O
 sterile	B-Modifier
@@ -58,14 +54,16 @@ Inoculate	B-Action
 sterile	B-Reagent
 MPB	I-Reagent
 with	O
-1	B-Concentration
-5	I-Concentration
-vol	I-Concentration
+1:5	B-Concentration
+(	O
 vol	B-Measure-Type
-dilution	I-Measure-Type
-of	I-Measure-Type
-culture	I-Measure-Type
-.	B-Reagent
+:	I-Measure-Type
+vol	I-Measure-Type
+)	O
+dilution	B-Measure-Type
+of	O
+culture	B-Reagent
+.	O
 
 Incubate	B-Action
 at	O

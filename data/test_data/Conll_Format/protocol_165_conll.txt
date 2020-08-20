@@ -11,16 +11,18 @@ protists	B-Reagent
 Prepare	B-Action
 9	B-Numerical
 tubes	B-Location
+(	O
 numbered	O
+#	O
 1	O
+#	O
 9	O
+)	O
 with	O
-4	O
+4.5	B-Amount
+mL	I-Amount
+medium	B-Reagent
 .	O
-5	O
-mL	O
-medium	B-Amount
-.	B-Reagent
 
 Add	B-Action
 500	B-Amount
@@ -29,15 +31,18 @@ of	O
 the	O
 virus	B-Reagent
 filtrate	I-Reagent
+(	O
 virus	B-Measure-Type
 size	I-Measure-Type
 fraction	I-Measure-Type
-to	I-Measure-Type
+)	O
+to	O
 tube	B-Location
+#	I-Location
 1	I-Location
-and	I-Location
+and	O
 vortex	B-Action
-.	I-Action
+.	O
 
 Change	B-Action
 the	O
@@ -49,21 +54,24 @@ transfer	B-Action
 L	I-Amount
 of	O
 suspension	B-Reagent
+#	I-Reagent
 1	I-Reagent
-to	I-Reagent
+to	O
 tube	B-Location
+#	I-Location
 2	I-Location
-and	I-Location
+and	O
 vortex	B-Action
-.	I-Action
+.	O
 
 Repeat	B-Action
 the	O
 procedure	B-Method
 to	O
 tube	B-Location
+#	I-Location
 8	I-Location
-.	I-Location
+.	O
 
 Pour	B-Action
 vigorously	O
@@ -93,12 +101,11 @@ lines	B-Location
 9	I-Location
 of	O
 a	O
-96	B-Location
-well	I-Location
+96-well	B-Location
 cell	I-Location
 culture	I-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Fill	B-Action
 the	O
@@ -117,12 +124,11 @@ lines	B-Location
 9	I-Location
 of	O
 a	O
-96	B-Location
-well	I-Location
+96-well	B-Location
 cell	I-Location
 culture	I-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Empty	B-Action
 the	O
@@ -132,17 +138,20 @@ tray	B-Location
 Pour	B-Action
 dilution	B-Location
 tube	I-Location
+#	I-Location
 9	I-Location
-control	I-Location
-medium	B-Reagent
-,	I-Reagent
-no	I-Reagent
-virus	I-Reagent
-into	I-Reagent
+(	O
+control	B-Reagent
+medium	I-Reagent
+,	O
+no	O
+virus	B-Reagent
+)	O
+into	O
 the	O
 reservoir	B-Location
 tray	I-Location
-.	I-Location
+.	O
 
 Fill	B-Action
 the	O
@@ -173,19 +182,21 @@ and	O
 for	O
 dilution	B-Location
 tube	I-Location
+#	I-Location
 8	I-Location
+#	I-Location
 1	I-Location
-and	I-Location
+and	O
 fill	B-Action
-the	I-Action
+the	O
 respective	B-Modifier
-well	I-Modifier
-lines	B-Location
-in	I-Location
+well	B-Location
+lines	I-Location
+in	O
 the	O
 culture	B-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Put	B-Action
 on	I-Action
@@ -256,10 +267,9 @@ with	O
 virus	B-Reagent
 from	O
 the	O
-most	B-Modifier
-diluted	I-Modifier
-well	I-Modifier
-.	B-Location
+most-diluted	B-Modifier
+well	B-Location
+.	O
 
 Propagate	B-Action
 virus	B-Reagent

@@ -1,8 +1,7 @@
-One	O
-step	O
+One-step	O
 growth	B-Measure-Type
 curves	I-Measure-Type
-for	I-Measure-Type
+for	O
 Cellulophaga	B-Reagent
 phages	I-Reagent
 
@@ -39,7 +38,9 @@ time	O
 0	O
 growth	B-Measure-Type
 reading	I-Measure-Type
+(	O
 T0	O
+)	O
 .	O
 
 Continue	O
@@ -60,12 +61,11 @@ assay	I-Action
 to	O
 determine	B-Action
 the	O
-PFU	B-Concentration
-ml	I-Concentration
-of	I-Concentration
+PFU/ml	B-Concentration
+of	O
 the	O
 lysate	B-Reagent
-you	I-Reagent
+you	O
 plan	O
 to	O
 use	O
@@ -112,9 +112,7 @@ this	B-Amount
 amount	I-Amount
 into	O
 a	O
-1	B-Amount
-.	I-Amount
-5	I-Amount
+1.5	B-Amount
 ml	I-Amount
 tube	B-Location
 .	O
@@ -151,17 +149,16 @@ minutes	I-Time
 dilute	B-Action
 the	O
 infection	B-Reagent
-1	B-Generic-Measure
-1000	I-Generic-Measure
-in	I-Generic-Measure
+1:1000	B-Generic-Measure
+in	O
 MLB	B-Reagent
 media	I-Reagent
-in	I-Reagent
+in	O
 a	O
 250	B-Amount
 ml	I-Amount
-flask	I-Amount
-.	B-Location
+flask	B-Location
+.	O
 
 Take	B-Action
 a	O
@@ -228,10 +225,9 @@ you	O
 do	O
 this	O
 same	O
-phage	B-Reagent
-host	I-Reagent
+phage-host	B-Reagent
 pair	I-Reagent
-.	I-Reagent
+.	O
 
 The	O
 next	O
@@ -262,9 +258,8 @@ day	O
 .	O
 
 Calculate	B-Action
-PFU	B-Concentration
-ml	I-Concentration
-at	I-Concentration
+PFU/ml	B-Concentration
+at	O
 each	O
 time	O
 point	O
@@ -272,16 +267,20 @@ for	O
 both	O
 the	O
 centrifuged	B-Reagent
+(	I-Reagent
 free	I-Reagent
 phage	I-Reagent
 only	I-Reagent
-and	I-Reagent
+)	I-Reagent
+and	O
 not	O
 centrifuged	B-Reagent
+(	I-Reagent
 total	I-Reagent
 phage	I-Reagent
+)	I-Reagent
 samples	I-Reagent
-.	I-Reagent
+.	O
 
 Graph	B-Action
 the	O

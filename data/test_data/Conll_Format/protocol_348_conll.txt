@@ -27,20 +27,24 @@ only	O
 a	O
 small	B-Modifier
 volume	B-Measure-Type
+(	O
 ca	O
 .	O
-10	O
-L	B-Amount
-remains	I-Amount
+10	B-Amount
+L	I-Amount
+)	O
+remains	O
 .	O
 
 Add	B-Action
 100	B-Amount
 L	I-Amount
 TE	B-Reagent
+(	O
 or	O
 TEGED	B-Reagent
-.	I-Reagent
+)	O
+.	O
 
 Concentrate	B-Action
 the	O
@@ -83,10 +87,12 @@ of	O
 TE	B-Reagent
 or	O
 TEGED	B-Reagent
-5	O
-10	B-Amount
+(	O
+5	B-Amount
+10	I-Amount
 L	I-Amount
-.	I-Amount
+)	O
+.	O
 
 Recover	B-Action
 the	O
@@ -99,47 +105,49 @@ concentrate	B-Reagent
 .	O
 
 Optional	O
+:	O
 If	O
 conducting	B-Action
-electrophoresis	I-Action
-on	B-Method
+electrophoresis	B-Method
+on	O
 the	O
 sample	B-Reagent
-,	I-Reagent
+,	O
 add	B-Action
-SDS	I-Action
-EDTA	B-Reagent
+SDS-EDTA	B-Reagent
 loading	I-Reagent
 dye	I-Reagent
-to	I-Reagent
+to	O
 a	O
 final	B-Modifier
-concentration	I-Modifier
-of	B-Measure-Type
-1	O
+concentration	B-Measure-Type
+of	O
+1	B-Concentration
 .	O
 
 Heat	B-Action
 the	O
 recovered	B-Reagent
 sample	I-Reagent
+(	O
 with	O
 or	O
 without	O
 loading	B-Reagent
 buffer	I-Reagent
-to	I-Reagent
-60	O
-C	B-Temperature
-for	I-Temperature
-10	O
-min	B-Time
-to	I-Time
+)	O
+to	O
+60	B-Temperature
+C	I-Temperature
+for	O
+10	B-Time
+min	I-Time
+to	O
 release	B-Action
-the	I-Action
+the	O
 nucleic	B-Reagent
 acid	I-Reagent
-.	I-Reagent
+.	O
 
 
 

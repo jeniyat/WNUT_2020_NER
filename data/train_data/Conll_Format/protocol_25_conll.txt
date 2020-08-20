@@ -3,8 +3,7 @@ of	O
 yeast	B-Reagent
 cells	I-Reagent
 for	O
-RNA	B-Reagent
-FISH	I-Reagent
+RNA-FISH	B-Reagent
 
 Around	O
 10am	B-Time
@@ -26,16 +25,15 @@ CSM	B-Reagent
 
 Grow	B-Action
 for	O
-8	B-Time
-10	I-Time
+8-10	B-Time
 hours	I-Time
-in	I-Time
+in	O
 a	O
 shaker	B-Location
-at	I-Location
-30	O
-C	B-Temperature
-.	I-Temperature
+at	O
+30	B-Temperature
+C	I-Temperature
+.	O
 
 Measure	B-Action
 OD	B-Measure-Type
@@ -61,18 +59,13 @@ growth	B-Method
 Aiming	O
 for	O
 OD	B-Generic-Measure
-0	I-Generic-Measure
-.	I-Generic-Measure
-2	I-Generic-Measure
-0	I-Generic-Measure
-.	I-Generic-Measure
-4	I-Generic-Measure
-around	I-Generic-Measure
+0.2-0.4	I-Generic-Measure
+around	O
 10am	B-Time
-the	I-Time
+the	O
 next	O
 morning	B-Time
-.	I-Time
+.	O
 
 Transfer	B-Action
 to	O
@@ -101,9 +94,7 @@ for	O
 Spin	B-Action
 down	I-Action
 at	O
-3	B-Speed
-,	I-Speed
-000rpm	I-Speed
+3,000rpm	B-Speed
 for	O
 4min	B-Time
 .	O
@@ -116,37 +107,34 @@ pipetting	B-Method
 with	O
 1ml	B-Amount
 of	O
-ice	B-Modifier
-cold	I-Modifier
-BufferB	I-Modifier
-.	B-Reagent
+ice-cold	B-Modifier
+BufferB	B-Reagent
+.	O
 
 Transfer	B-Action
 to	O
-1	B-Amount
-.	I-Amount
-5ml	I-Amount
+1.5ml	B-Amount
 tubes	B-Location
 .	O
 
+(	O
 wash	O
-1	O
-2	O
+1/2	O
+)	O
 .	O
 
 Spin	B-Action
 down	O
 at	O
-3	B-Speed
-,	I-Speed
-000rpm	I-Speed
+3,000rpm	B-Speed
 for	O
 4min	B-Time
 .	O
 
+(	O
 wash	O
-1	O
-2	O
+1/2	O
+)	O
 .	O
 
 Wash	B-Action
@@ -154,29 +142,28 @@ once	O
 more	O
 with	O
 1ml	B-Amount
-ice	B-Reagent
-cold	I-Reagent
+ice-cold	B-Reagent
 BufferB	I-Reagent
-.	I-Reagent
+.	O
 
+(	O
 wash	O
-2	O
-2	O
+2/2	O
+)	O
 .	O
 
 Spin	B-Action
 down	O
 at	O
-3	B-Speed
-,	I-Speed
-000rpm	I-Speed
+3,000rpm	B-Speed
 for	O
 4min	B-Time
 .	O
 
+(	O
 wash	O
-2	O
-2	O
+2/2	O
+)	O
 .	O
 
 Decant	B-Action
@@ -189,9 +176,7 @@ BufferB	B-Reagent
 .	O
 
 Add	B-Action
-2	B-Amount
-.	I-Amount
-5ul	I-Amount
+2.5ul	B-Amount
 of	O
 Zymolyase	B-Reagent
 and	O
@@ -214,11 +199,13 @@ contrast	I-Device
 microscope	I-Device
 .	O
 
+(	O
 See	O
 more	O
 in	O
 the	O
 Guidelines	O
+)	O
 .	O
 
 Drop	B-Action
@@ -235,14 +222,16 @@ slide	I-Location
 do	O
 not	O
 cover	B-Action
+(	O
 pressure	O
 makes	O
 it	O
 look	O
 like	O
 they	B-Mention
-digested	I-Mention
-.	B-Modifier
+digested	B-Modifier
+)	O
+.	O
 
 Use	B-Action
 a	O
@@ -266,27 +255,27 @@ minutes	I-Time
 The	O
 cells	B-Reagent
 turn	O
-black	B-Modifier
-grey	I-Modifier
-from	I-Modifier
-white	I-Modifier
-shiny	I-Modifier
-.	I-Modifier
+black/grey	B-Modifier
+from	O
+white/shiny	B-Modifier
+.	O
 
 Aim	O
 for	O
 80	B-Amount
-90	I-Amount
-of	I-Amount
-the	I-Amount
+%	I-Amount
+-90	I-Amount
+%	I-Amount
+of	O
+the	O
 cells	B-Reagent
-within	I-Reagent
+within	O
 the	O
 view	O
 to	O
 be	O
 digested	B-Modifier
-.	I-Modifier
+.	O
 
 Do	O
 not	O
@@ -296,22 +285,19 @@ overdigest	B-Action
 Wash	B-Action
 with	O
 1ml	B-Amount
-ice	B-Reagent
-cold	I-Reagent
+ice-cold	B-Reagent
 BufferB	I-Reagent
-,	I-Reagent
-spinning	B-Action
-5	I-Action
-6min	B-Time
-at	I-Time
-2	O
 ,	O
-000rpm	B-Speed
-.	I-Speed
+spinning	B-Action
+5-6min	B-Time
+at	O
+2,000rpm	B-Speed
+.	O
 
+(	O
 wash	O
-1	O
-2	O
+1/2	O
+)	O
 .	O
 
 Decant	B-Action
@@ -320,22 +306,19 @@ wash	B-Action
 again	O
 with	O
 1ml	B-Amount
-ice	B-Reagent
-cold	I-Reagent
+ice-cold	B-Reagent
 BufferB	I-Reagent
-,	I-Reagent
-spinning	B-Action
-5	I-Action
-6min	B-Time
-at	I-Time
-2	O
 ,	O
-000rpm	B-Speed
-.	I-Speed
+spinning	B-Action
+5-6min	B-Time
+at	O
+2,000rpm	B-Speed
+.	O
 
+(	O
 wash	O
-2	O
-2	O
+2/2	O
+)	O
 .	O
 
 Resuspend	B-Action
@@ -343,12 +326,13 @@ in	O
 1ml	B-Amount
 of	O
 70	B-Concentration
-Ethanol	I-Concentration
-overnight	B-Reagent
-at	B-Time
-4	O
-C	B-Temperature
-.	I-Temperature
+%	I-Concentration
+Ethanol	B-Reagent
+overnight	B-Time
+at	O
+4	B-Temperature
+C	I-Temperature
+.	O
 
 
 

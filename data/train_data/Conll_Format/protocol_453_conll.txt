@@ -2,7 +2,9 @@ High	B-Modifier
 Efficiency	I-Modifier
 Transformation	B-Method
 Protocol	I-Method
+(	O
 modified	B-Modifier
+)	O
 
 Warm	B-Action
 SOC	B-Reagent
@@ -17,19 +19,17 @@ a	O
 tube	B-Location
 of	O
 NEB	B-Reagent
-5	I-Reagent
-alpha	I-Reagent
+5-alpha	I-Reagent
 Competent	I-Reagent
-E	I-Reagent
-.	I-Reagent
+E.	I-Reagent
 coli	I-Reagent
 cells	I-Reagent
-on	I-Reagent
+on	O
 ice	B-Location
-for	I-Location
-10	O
-minutes	B-Time
-.	I-Time
+for	O
+10	B-Time
+minutes	I-Time
+.	O
 
 Aliquot	B-Action
 25uL	B-Amount
@@ -43,42 +43,33 @@ tube	B-Location
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-5	I-Amount
-2	I-Amount
-.	I-Amount
-5	I-Amount
+0.5-2.5	B-Amount
 l	I-Amount
-containing	I-Amount
-0	O
-.	B-Generic-Measure
-5	I-Generic-Measure
-pg	I-Generic-Measure
-50	I-Generic-Measure
+containing	O
+0.5	B-Generic-Measure
+pg-50	I-Generic-Measure
 ng	I-Generic-Measure
-of	I-Generic-Measure
+of	O
 plasmid	B-Reagent
 DNA	I-Reagent
-to	I-Reagent
+to	O
 each	B-Modifier
-cell	I-Modifier
-mixture	B-Reagent
-.	I-Reagent
+cell	B-Reagent
+mixture	I-Reagent
+.	O
 
 Carefully	B-Modifier
 flick	B-Action
 the	O
 tube	B-Location
-4	B-Numerical
-5	I-Numerical
-times	I-Numerical
+4-5	B-Numerical
+times	O
 to	O
 mix	B-Action
-cells	I-Action
-and	B-Reagent
-DNA	I-Reagent
-.	I-Reagent
+cells	B-Reagent
+and	O
+DNA	B-Reagent
+.	O
 
 Do	O
 not	O
@@ -155,11 +146,13 @@ minutes	I-Time
 ,	O
 shaking	B-Action
 vigorously	B-Modifier
+(	O
 250	B-Speed
 rpm	I-Speed
-or	I-Speed
+)	O
+or	O
 rotating	B-Action
-.	I-Action
+.	O
 
 Warm	B-Action
 selection	B-Location
@@ -183,26 +176,24 @@ inverting	B-Action
 
 Perform	B-Action
 several	B-Numerical
-10	B-Method
-fold	I-Method
+10-fold	B-Method
 serial	I-Method
 dilutions	I-Method
-in	I-Method
+in	O
 SOC	B-Reagent
-.	I-Reagent
+.	O
 
 Spread	B-Action
-50	B-Amount
-100	I-Amount
+50-100	B-Amount
 l	I-Amount
-of	I-Amount
+of	O
 each	B-Modifier
-dilution	I-Modifier
-onto	B-Reagent
+dilution	B-Reagent
+onto	O
 a	O
 selection	B-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Incubate	B-Action
 overnight	B-Time

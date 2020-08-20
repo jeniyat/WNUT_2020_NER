@@ -86,9 +86,7 @@ multichannel	B-Location
 pipette	I-Location
 to	O
 add	B-Action
-7	B-Amount
-.	I-Amount
-5	I-Amount
+7.5	B-Amount
 l	I-Amount
 PCR	B-Reagent
 mix	I-Reagent
@@ -101,9 +99,7 @@ plate	I-Location
 .	O
 
 Add	B-Action
-2	B-Amount
-.	I-Amount
-5	I-Amount
+2.5	B-Amount
 l	I-Amount
 colony	B-Reagent
 solution	I-Reagent
@@ -127,15 +123,18 @@ complete	O
 .	O
 
 Load	B-Action
+(	O
 PCR	B-Reagent
 reaction	I-Reagent
 mix	I-Reagent
++	I-Reagent
 dye	I-Reagent
-into	I-Reagent
-gel	O
-and	B-Location
-run	O
-.	B-Action
+)	O
+into	O
+gel	B-Location
+and	O
+run	B-Action
+.	O
 
 Complete	O
 run	B-Action

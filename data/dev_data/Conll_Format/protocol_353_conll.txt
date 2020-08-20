@@ -2,7 +2,9 @@ Fixing	B-Action
 Cells	B-Reagent
 with	O
 Paraformaldehyde	B-Reagent
-PFA	I-Reagent
+(	O
+PFA	B-Reagent
+)	O
 
 Prepare	B-Action
 PFA	B-Reagent
@@ -18,9 +20,9 @@ the	O
 undiluted	B-Modifier
 stock	B-Reagent
 at	O
-20	B-Temperature
+-20	B-Temperature
 C	I-Temperature
-until	I-Temperature
+until	O
 needed	O
 .	O
 
@@ -31,36 +33,37 @@ volume	B-Measure-Type
 of	O
 the	O
 4	B-Concentration
-stock	I-Concentration
-to	B-Reagent
-samples	I-Reagent
-to	I-Reagent
+%	I-Concentration
+stock	B-Reagent
+to	O
+samples	B-Reagent
+to	O
 end	O
 up	O
 with	O
 a	O
 final	O
 concentration	B-Measure-Type
-of	I-Measure-Type
+of	O
 at	O
 most	O
-2	O
-PFA	B-Concentration
-.	B-Reagent
+2	B-Concentration
+%	I-Concentration
+PFA	B-Reagent
+.	O
 
 Fix	B-Action
 cells	B-Reagent
 on	O
 ice	B-Location
 for	O
-15	B-Time
-30	I-Time
+15-30	B-Time
 minutes	I-Time
-on	I-Time
+on	O
 ice	B-Location
-,	I-Location
+,	O
 Wash	B-Action
-2x	I-Action
+2x	B-Numerical
 with	O
 PBS	B-Reagent
 

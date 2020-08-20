@@ -2,16 +2,22 @@ Protein	B-Reagent
 Expression	B-Method
 Using	O
 BL21	B-Reagent
+(	I-Reagent
 DE3	I-Reagent
-C2527	I-Reagent
+)	I-Reagent
+(	O
+C2527	O
+)	O
 
 Transform	B-Action
 expression	B-Reagent
 plasmid	I-Reagent
 into	O
 BL21	B-Reagent
+(	I-Reagent
 DE3	I-Reagent
-.	I-Reagent
+)	I-Reagent
+.	O
 
 Plate	B-Action
 on	O
@@ -47,12 +53,8 @@ C	I-Temperature
 until	O
 OD600	B-Measure-Type
 reaches	B-Action
-0	B-Numerical
-.	I-Numerical
-4	I-Numerical
-0	I-Numerical
-.	I-Numerical
-8	I-Numerical
+0.4	B-Numerical
+0.8	I-Numerical
 .	O
 
 Induce	B-Action
@@ -68,23 +70,25 @@ mM	I-Concentration
 stock	O
 of	O
 IPTG	B-Reagent
-final	I-Reagent
+(	O
+final	B-Reagent
 concentration	I-Reagent
-of	I-Reagent
-40	O
-or	B-Numerical
+of	O
+40	B-Numerical
+or	O
 400	B-Concentration
 M	I-Concentration
-Induce	I-Concentration
-for	B-Action
-3	O
-to	O
-5	B-Time
+)	O
+Induce	B-Action
+for	O
+3	B-Time
+to	I-Time
+5	I-Time
 hours	I-Time
-at	I-Time
-37	O
-C	B-Temperature
-.	I-Temperature
+at	O
+37	B-Temperature
+C	I-Temperature
+.	O
 
 Check	B-Action
 for	O
@@ -111,13 +115,16 @@ the	O
 total	B-Modifier
 cell	B-Reagent
 extract	I-Reagent
+(	O
 soluble	B-Modifier
-insoluble	I-Modifier
-and	I-Modifier
++	O
+insoluble	B-Modifier
+)	O
+and	O
 the	O
 soluble	B-Modifier
-fraction	I-Modifier
-only	B-Reagent
+fraction	B-Reagent
+only	O
 .	O
 
 

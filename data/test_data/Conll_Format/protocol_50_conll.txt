@@ -3,9 +3,7 @@ Rich	I-Reagent
 Medium	I-Reagent
 
 Add	B-Action
-5	B-Amount
-.	I-Amount
-0	I-Amount
+5.0	B-Amount
 g	I-Amount
 Yeast	B-Reagent
 Extract	I-Reagent
@@ -29,9 +27,7 @@ flask	B-Location
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 g	I-Amount
 Adenine	B-Reagent
 to	O
@@ -40,9 +36,7 @@ flask	B-Location
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 g	I-Amount
 Uracil	B-Reagent
 to	O
@@ -51,9 +45,7 @@ flask	B-Location
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 g	I-Amount
 Histidine	B-Reagent
 to	O
@@ -62,9 +54,7 @@ flask	B-Location
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 Leucine	B-Reagent
 to	O
 the	O
@@ -72,9 +62,7 @@ flask	B-Location
 .	O
 
 Add	B-Action
-0	B-Amount
-.	I-Amount
-25	I-Amount
+0.25	B-Amount
 g	I-Amount
 Lysine	B-Reagent
 to	O
@@ -92,19 +80,20 @@ flask	B-Location
 .	O
 
 Optional	B-Modifier
+:	O
 For	O
 solid	B-Modifier
-medium	I-Modifier
-add	B-Reagent
-20	B-Action
-g	B-Amount
-Difco	I-Amount
-Bacto	B-Reagent
+medium	B-Reagent
+add	B-Action
+20	B-Amount
+g	I-Amount
+Difco	B-Reagent
+Bacto	I-Reagent
 Agar	I-Reagent
-to	I-Reagent
+to	O
 the	O
 flask	B-Location
-.	I-Location
+.	O
 
 Fill	B-Action
 the	O
@@ -199,10 +188,8 @@ overnight	B-Time
 on	O
 the	O
 lab	B-Location
-bench	I-Location
-.	O
-If	B-Modifier
-liquid	I-Modifier
+bench.If	I-Location
+liquid	B-Modifier
 medium	I-Modifier
 ,	O
 aliquot	B-Action
@@ -212,9 +199,10 @@ amounts	I-Modifier
 and	O
 store	B-Action
 at	O
-4	B-Temperature
++	B-Temperature
+4	I-Temperature
 C	I-Temperature
-.	I-Temperature
+.	O
 
 
 

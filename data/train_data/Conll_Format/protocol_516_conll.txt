@@ -2,8 +2,7 @@ Estimation	B-Method
 of	I-Method
 Humus	I-Method
 in	O
-Soil	B-Reagent
-Manure	I-Reagent
+Soil/Manure	B-Reagent
 
 Take	B-Action
 20	B-Amount
@@ -21,10 +20,11 @@ add	B-Action
 mL	I-Amount
 of	O
 extractant	B-Reagent
-1	O
-5	B-Concentration
+(	O
+1:5	B-Concentration
 ratio	I-Concentration
-.	I-Concentration
+)	O
+.	O
 
 Shake	B-Action
 well	B-Modifier
@@ -44,21 +44,22 @@ paper	I-Device
 no	I-Device
 .	I-Device
 1	I-Device
+(	O
 the	O
 residue	B-Reagent
 portion	I-Reagent
-on	I-Reagent
+on	O
 filter	B-Device
 paper	I-Device
-is	I-Device
+is	O
 called	O
 humin	B-Reagent
-and	I-Reagent
+and	O
 the	O
 filtrate	B-Reagent
-is	I-Reagent
-humus	I-Reagent
-.	I-Reagent
+is	O
+humus	B-Reagent
+.	O
 
 It	B-Mention
 is	O
@@ -69,6 +70,7 @@ color	O
 with	O
 pH	B-pH
 13	I-pH
+)	O
 .	O
 
 To	O
@@ -111,18 +113,19 @@ and	O
 a	O
 known	B-Generic-Measure
 volume	I-Generic-Measure
+(	O
 10	B-Amount
 mL	I-Amount
-is	I-Amount
+)	O
+is	O
 taken	B-Action
-in	I-Action
+in	O
 a	O
-pre	O
-weighed	B-Modifier
-100	I-Modifier
-mL	B-Size
-beaker	I-Size
-.	B-Location
+pre-weighed	B-Modifier
+100	B-Size
+mL	I-Size
+beaker	B-Location
+.	O
 
 The	O
 beaker	B-Location

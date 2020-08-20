@@ -6,10 +6,12 @@ Plates	B-Location
 of	O
 Agar	B-Reagent
 add	B-Action
+(	O
 dH2O	B-Reagent
-to	I-Reagent
+)	O
+to	O
 500mL	B-Amount
-.	I-Amount
+.	O
 
 Swirl	B-Action
 to	O
@@ -87,24 +89,22 @@ mix	B-Action
 iGEM	O
 standard	B-Modifier
 concentrations	B-Measure-Type
+:	O
 
-TetKanCam15ug	B-Reagent
-mL50ug	B-Concentration
-mL35ug	I-Concentration
-mL	I-Concentration
-.	I-Concentration
+TetKanCam15ug/mL50ug/mL35ug/mL	B-Reagent
+.	O
 
 Pour	B-Action
-20mL	B-Amount
-of	I-Amount
-LB	O
-agar	B-Reagent
-per	I-Reagent
+~20mL	B-Amount
+of	O
+LB	B-Reagent
+agar	I-Reagent
+per	O
 10cm	B-Size
-polystyrene	I-Size
-Petri	B-Location
+polystyrene	B-Location
+Petri	I-Location
 dish	I-Location
-.	I-Location
+.	O
 
 Place	B-Action
 the	O
@@ -118,12 +118,13 @@ them	B-Mention
 to	O
 cool	B-Action
 for	O
-30	B-Time
-60	I-Time
+30-60	B-Time
 minutes	I-Time
-until	I-Time
-solidified	B-Modifier
-.	I-Modifier
+(	O
+until	B-Modifier
+solidified	I-Modifier
+)	O
+.	O
 
 Invert	B-Action
 the	O

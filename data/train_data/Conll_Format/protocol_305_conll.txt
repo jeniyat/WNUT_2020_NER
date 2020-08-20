@@ -1,16 +1,16 @@
-SDS	B-Method
-PAGE	I-Method
-for	I-Method
+SDS-PAGE	B-Method
+for	O
 Identifying	B-Action
-nonmucin	I-Action
-protein	B-Reagent
-in	I-Reagent
-BSM	I-Reagent
+nonmucin	B-Reagent
+protein	I-Reagent
+in	O
+BSM	B-Reagent
 
 Prepare	B-Action
 the	O
 sample	B-Reagent
 solutions	I-Reagent
+:	O
 
 prepare	B-Action
 the	O
@@ -25,11 +25,7 @@ for	O
 each	O
 sample	B-Reagent
 ,	O
-10ul	B-Amount
-,	O
-20ul	B-Amount
-,	O
-30ul	B-Amount
+10ul,20ul,30ul	B-Amount
 ,	O
 respectively	O
 .	O
@@ -176,25 +172,26 @@ electrophores	B-Method
 in	O
 Run	O
 conditions	O
+:	O
 150	B-Generic-Measure
-V	I-Generic-Measure
-200	I-Generic-Measure
+V~200	I-Generic-Measure
 VRun	I-Generic-Measure
 time	B-Measure-Type
-until	I-Measure-Type
+:	O
+until	O
 the	O
 loading	B-Reagent
 buffer	I-Reagent
-line	I-Reagent
+line	O
 come	O
 to	O
 the	O
 bottom	O
 of	O
 the	O
-gel	O
-Staining	B-Reagent
-.	B-Action
+gel	B-Reagent
+Staining	B-Action
+.	O
 
 Wash	B-Action
 gels	B-Reagent
@@ -212,11 +209,13 @@ container	I-Location
 and	O
 add	B-Action
 stain	B-Reagent
+(	O
 PageBlue	O
+)	O
 ,	O
 agitate	B-Action
-overnight	I-Action
-.	B-Time
+overnight	B-Time
+.	O
 
 Wash	B-Action
 gel	B-Reagent

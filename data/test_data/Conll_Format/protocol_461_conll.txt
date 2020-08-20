@@ -1,29 +1,29 @@
 Antibody	B-Reagent
 Purification	B-Method
+(	O
 small	O
 scale	O
+)	O
 
 Centrifuge	B-Action
-anti	B-Reagent
-sera	I-Reagent
-4	I-Reagent
-C	O
-,	B-Temperature
-14	I-Temperature
-,	B-Speed
-000g	I-Speed
-,	I-Speed
-10min	I-Speed
-.	B-Temperature
-
-Optional	O
-Filter	B-Action
-through	I-Action
-0	O
+anti-sera	B-Reagent
+@	O
+4	B-Temperature
+C	I-Temperature
+,	O
+14,000g	B-Speed
+,	O
+10min	B-Temperature
 .	O
-2um	B-Size
-filter	I-Size
-.	B-Device
+
+(	O
+Optional	O
+)	O
+Filter	B-Action
+through	O
+0.2um	B-Size
+filter	B-Device
+.	O
 
 Apply	B-Action
 protein	B-Reagent
@@ -34,12 +34,11 @@ G	I-Reagent
 beads	O
 gently	B-Modifier
 to	O
-Bio	B-Location
-Rad	I-Location
+Bio-Rad	B-Location
 empty	I-Location
 gravity	I-Location
 column	I-Location
-.	I-Location
+.	O
 
 Set	B-Action
 up	I-Action
@@ -64,25 +63,23 @@ Buffer	I-Reagent
 .	O
 
 Dilute	B-Action
-anti	B-Reagent
-sera	I-Reagent
-with	I-Reagent
-2	O
-volumes	B-Amount
-of	I-Amount
+anti-sera	B-Reagent
+with	O
+2	B-Amount
+volumes	I-Amount
+of	O
 Binding	B-Reagent
 Buffer	I-Reagent
-.	I-Reagent
+.	O
 
 Let	O
 diluted	B-Modifier
-anti	B-Reagent
-sera	I-Reagent
-go	I-Reagent
-through	B-Action
-the	I-Action
+anti-sera	B-Reagent
+go	B-Action
+through	I-Action
+the	O
 column	B-Location
-by	I-Location
+by	O
 gravity	O
 .	O
 
@@ -103,11 +100,10 @@ with	O
 bed	I-Amount
 volumes	I-Amount
 of	O
-ice	B-Modifier
-cold	I-Modifier
-Binding	I-Modifier
-Buffer	B-Reagent
-.	I-Reagent
+ice-cold	B-Modifier
+Binding	B-Reagent
+Buffer	I-Reagent
+.	O
 
 Elute	B-Action
 antibody	B-Reagent
@@ -131,12 +127,11 @@ with	O
 200	B-Amount
 l	I-Amount
 1M	B-Concentration
-Tris	B-Reagent
-HCl	I-Reagent
-PH9	I-Reagent
-.	B-pH
-0	I-pH
-.	I-pH
+Tris-HCl	B-Reagent
+(	O
+PH9.0	B-pH
+)	O
+.	O
 
 Collect	B-Action
 1ml	B-Amount
@@ -156,17 +151,16 @@ activity	I-Method
 test	I-Method
 .	O
 
-Re	B-Action
-equilibrate	I-Action
-column	I-Action
-with	B-Location
-10	O
-bed	B-Amount
+Re-equilibrate	B-Action
+column	B-Location
+with	O
+10	B-Amount
+bed	I-Amount
 volumes	I-Amount
-of	I-Amount
+of	O
 Binding	B-Reagent
 Buffer	I-Reagent
-.	I-Reagent
+.	O
 
 Store	B-Action
 Column	B-Location

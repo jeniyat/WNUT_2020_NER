@@ -42,24 +42,27 @@ in	O
 a	O
 5	B-Size
 mL	I-Size
-12	I-Size
+(	O
+12	B-Size
 x	I-Size
 75	I-Size
 mm	I-Size
-polystyrene	I-Size
-tube	B-Location
-.	I-Location
+)	O
+polystyrene	B-Location
+tube	I-Location
+.	O
 
 Note	O
+:	O
 Keep	B-Action
-MojoSort	I-Action
-Buffer	B-Reagent
-on	I-Reagent
+MojoSort	B-Reagent
+Buffer	I-Reagent
+on	O
 ice	B-Temperature
-throughout	I-Temperature
-the	B-Modifier
+throughout	B-Modifier
+the	I-Modifier
 procedure	I-Modifier
-.	I-Modifier
+.	O
 
 Filter	B-Action
 the	O
@@ -100,9 +103,8 @@ to	O
 1	B-Concentration
 x	I-Concentration
 108	I-Concentration
-cells	I-Concentration
-mL	I-Concentration
-.	I-Concentration
+cells/mL	I-Concentration
+.	O
 
 Aliquot	B-Action
 100	B-Amount
@@ -110,13 +112,15 @@ L	I-Amount
 of	O
 cell	B-Reagent
 suspension	I-Reagent
+(	O
 107	B-Numerical
-cells	I-Numerical
-into	B-Reagent
+cells	B-Reagent
+)	O
+into	O
 a	O
-new	O
-tube	B-Location
-.	I-Location
+new	B-Location
+tube	I-Location
+.	O
 
 Add	B-Action
 5	B-Amount
@@ -124,21 +128,20 @@ L	I-Amount
 of	O
 the	O
 biotin	B-Reagent
-anti	I-Reagent
-human	I-Reagent
+anti-human	I-Reagent
 CD14	I-Reagent
 antibody	I-Reagent
-,	I-Reagent
+,	O
 mix	B-Action
-well	I-Action
-and	B-Modifier
+well	B-Modifier
+and	O
 incubate	B-Action
-on	I-Action
+on	O
 ice	B-Temperature
-for	I-Temperature
-15	O
-minutes	B-Time
-.	I-Time
+for	O
+15	B-Time
+minutes	I-Time
+.	O
 
 Scale	B-Action
 up	I-Action
@@ -179,19 +182,20 @@ cells	B-Reagent
 .	O
 
 Optional	B-Modifier
+:	O
 Take	B-Action
-an	I-Action
+an	O
 aliquot	B-Reagent
-before	I-Reagent
-adding	B-Modifier
-the	B-Action
+before	B-Modifier
+adding	B-Action
+the	O
 antibody	B-Reagent
-to	I-Reagent
+to	O
 monitor	B-Action
-purity	I-Action
-and	B-Measure-Type
-yield	I-Measure-Type
-.	I-Measure-Type
+purity	B-Measure-Type
+and	O
+yield	B-Measure-Type
+.	O
 
 Resuspend	B-Action
 the	O
@@ -301,14 +305,14 @@ This	O
 fraction	B-Reagent
 contains	O
 the	O
-CD4	B-Reagent
+CD4+	B-Reagent
 T	I-Reagent
 Cells	I-Reagent
-;	I-Reagent
-DO	O
-NOT	B-Action
+;	O
+DO	B-Action
+NOT	I-Action
 DISCARD	I-Action
-.	I-Action
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -402,9 +406,7 @@ indicated	B-Modifier
 volumes	B-Amount
 for	O
 107	B-Numerical
-cells	B-Reagent
-.	O
-10	O
+cells.10	B-Reagent
 .	O
 
 Add	B-Action
@@ -449,10 +451,10 @@ buffer	B-Reagent
 These	B-Mention
 are	O
 the	O
-CD4	B-Reagent
+CD4+	B-Reagent
 T	I-Reagent
 Cells	I-Reagent
-.	I-Reagent
+.	O
 
 Repeat	B-Action
 steps	O
@@ -476,16 +478,17 @@ separations	I-Method
 .	O
 
 Optional	B-Modifier
+:	O
 Take	B-Action
-a	I-Action
+a	O
 small	B-Modifier
-aliquot	I-Modifier
-to	B-Reagent
+aliquot	B-Reagent
+to	O
 monitor	B-Action
-purity	I-Action
-and	B-Measure-Type
-yield	I-Measure-Type
-.	I-Measure-Type
+purity	B-Measure-Type
+and	O
+yield	B-Measure-Type
+.	O
 
 
 

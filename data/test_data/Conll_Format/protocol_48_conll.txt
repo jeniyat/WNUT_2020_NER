@@ -11,32 +11,31 @@ a	O
 1L	B-Amount
 Erlenmeyer	B-Location
 flask	I-Location
-5g	O
-NaCl	B-Amount
-.	B-Reagent
+:	O
+5g	B-Amount
+NaCl	B-Reagent
+.	O
 
 5g	B-Amount
 Tryptone	B-Reagent
 .	O
 
-2	B-Amount
-.	I-Amount
-5g	I-Amount
+2.5g	B-Amount
 Yeast	B-Reagent
 Extract	I-Reagent
 .	O
 
-7	B-Amount
-.	I-Amount
-5g	I-Amount
+7.5g	B-Amount
 Agar	B-Reagent
 .	O
 
 add	B-Action
+(	O
 dH2O	B-Reagent
-to	I-Reagent
+)	O
+to	O
 500mL	B-Amount
-.	I-Amount
+.	O
 
 Swirl	B-Action
 to	O
@@ -71,7 +70,8 @@ or	O
 according	O
 to	O
 your	O
-autoclave's	B-Device
+autoclave	B-Device
+'s	I-Device
 specifications	O
 .	O
 
@@ -104,35 +104,35 @@ antibiotic	B-Reagent
 to	O
 the	O
 solution	B-Reagent
+(	O
 500	B-Amount
 L	I-Amount
-if	I-Amount
+if	O
 you	O
 are	O
 using	O
 a	O
-1	O
-,	B-Concentration
-000x	I-Concentration
-antibiotic	I-Concentration
-stock	B-Reagent
-and	I-Reagent
+1,000x	B-Concentration
+antibiotic	B-Reagent
+stock	I-Reagent
+)	O
+and	O
 swirl	B-Action
-to	I-Action
-mix	O
-.	B-Action
+to	O
+mix	B-Action
+.	O
 
 Pour	B-Action
-20mL	B-Modifier
-of	B-Amount
-LB	O
-agar	B-Reagent
-per	I-Reagent
+~20mL	B-Modifier
+of	O
+LB	B-Reagent
+agar	I-Reagent
+per	O
 10cm	B-Amount
-polystyrene	I-Amount
-Petri	B-Location
+polystyrene	B-Location
+Petri	I-Location
 dish	I-Location
-.	I-Location
+.	O
 
 Place	B-Action
 the	O
@@ -146,12 +146,13 @@ them	B-Mention
 to	O
 cool	B-Action
 for	O
-30	B-Time
-60	I-Time
+30-60	B-Time
 minutes	I-Time
-until	I-Time
+(	O
+until	O
 solidified	B-Modifier
-.	I-Modifier
+)	O
+.	O
 
 Invert	B-Action
 the	O

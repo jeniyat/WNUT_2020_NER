@@ -12,14 +12,13 @@ Grow	B-Action
 cells	B-Reagent
 in	O
 a	O
-96	B-Modifier
-well	I-Modifier
+96-well	B-Modifier
 glass	I-Modifier
-bottom	I-Modifier
-cell	B-Location
+bottom	B-Location
+cell	I-Location
 culture	I-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Decant	B-Action
 growth	B-Reagent
@@ -43,13 +42,12 @@ add	B-Action
 200	B-Amount
 L	I-Amount
 of	O
-3	B-Generic-Measure
-.	I-Generic-Measure
-7	I-Generic-Measure
-Formaldehyde	I-Generic-Measure
-fixation	B-Reagent
+3.7	B-Generic-Measure
+%	I-Generic-Measure
+Formaldehyde	B-Reagent
+fixation	I-Reagent
 solution	I-Reagent
-.	I-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -102,14 +100,13 @@ Grow	B-Action
 cells	B-Reagent
 in	O
 a	O
-96	B-Generic-Measure
-well	I-Generic-Measure
-glass	I-Generic-Measure
-bottom	B-Modifier
-cell	B-Location
+96-well	B-Generic-Measure
+glass	B-Modifier
+bottom	B-Location
+cell	I-Location
 culture	I-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Decant	B-Action
 growth	B-Reagent
@@ -133,14 +130,14 @@ add	B-Action
 200	B-Amount
 L	I-Amount
 of	O
-methanol	B-Reagent
-acetic	I-Reagent
+methanol-acetic	B-Reagent
 acid	I-Reagent
-MeOH	I-Reagent
-AcOH	I-Reagent
-fixation	I-Reagent
+(	O
+MeOH-AcOH	B-Reagent
+)	O
+fixation	B-Reagent
 solution	I-Reagent
-.	I-Reagent
+.	O
 
 Incubate	B-Action
 at	O
@@ -156,20 +153,19 @@ can	O
 be	O
 stored	B-Action
 at	O
-2	B-Temperature
++2	B-Temperature
 to	I-Temperature
-8	I-Temperature
++8	I-Temperature
 C	I-Temperature
-in	I-Temperature
-MeOH	B-Reagent
-AcOH	I-Reagent
-up	I-Reagent
-to	I-Reagent
-48	B-Modifier
-hours	I-Modifier
-before	B-Time
-hybridization	B-Modifier
-.	B-Method
+in	O
+MeOH-AcOH	B-Reagent
+up	B-Modifier
+to	I-Modifier
+48	B-Time
+hours	I-Time
+before	B-Modifier
+hybridization	B-Method
+.	O
 
 Do	B-Modifier
 not	I-Modifier
@@ -178,12 +174,11 @@ a	O
 well	B-Location
 if	O
 the	O
-MeOH	B-Reagent
-AcOH	I-Reagent
-has	I-Reagent
+MeOH-AcOH	B-Reagent
+has	O
 completely	O
 evaporated	B-Modifier
-.	I-Modifier
+.	O
 
 If	O
 frozen	B-Modifier
@@ -219,9 +214,7 @@ containing	O
 probe	B-Reagent
 ,	O
 add	B-Action
-1	B-Amount
-.	I-Amount
-5	I-Amount
+1.5	B-Amount
 L	I-Amount
 of	O
 probe	B-Reagent
@@ -238,11 +231,13 @@ and	O
 then	O
 vortexand	B-Action
 centrifuge	I-Action
+(	O
 enough	O
 for	O
 one	O
 well	B-Location
-.	I-Location
+)	O
+.	O
 
 This	O
 creates	O
@@ -266,17 +261,17 @@ step	O
 .	O
 
 Decant	B-Action
-MeOH	B-Reagent
-AcOH	I-Reagent
-or	I-Reagent
-70	O
-ethanol	B-Generic-Measure
-from	B-Reagent
+MeOH-AcOH	B-Reagent
+or	O
+70	B-Generic-Measure
+%	I-Generic-Measure
+ethanol	B-Reagent
+from	O
 wells	B-Location
 containing	I-Location
 adherent	I-Location
 cells	I-Location
-.	I-Location
+.	O
 
 Add	B-Action
 200	B-Amount
@@ -285,20 +280,21 @@ of	O
 Wash	B-Reagent
 Buffer	I-Reagent
 A	I-Reagent
+(	O
 see	O
 recipe	O
 above	O
+)	O
 ,	O
 and	O
 incubate	B-Action
-at	I-Action
+at	O
 room	B-Generic-Measure
 temperature	I-Generic-Measure
-for	I-Generic-Measure
-2	O
-5	O
-minutes	B-Time
-.	I-Time
+for	O
+2-5	B-Time
+minutes	I-Time
+.	O
 
 Decant	B-Action
 Wash	B-Reagent
@@ -329,6 +325,7 @@ for	O
 to	I-Time
 16	I-Time
 hoursa	I-Time
+)	O
 .	O
 
 Incubation	B-Method
@@ -342,6 +339,7 @@ the	O
 Standard	B-Method
 Fixation	I-Method
 Methodb	I-Method
+)	O
 .	O
 
 Incubation	B-Method
@@ -400,20 +398,21 @@ of	O
 DAPI	B-Reagent
 nuclear	I-Reagent
 stain	I-Reagent
-Wash	I-Reagent
+(	O
+Wash	B-Reagent
 Buffer	I-Reagent
 A	I-Reagent
-consisting	I-Reagent
+consisting	O
 of	O
-5	O
-ng	B-Concentration
-mL	I-Concentration
-DAPI	I-Concentration
-to	B-Reagent
-counterstain	B-Action
-the	I-Action
+5	B-Concentration
+ng/mL	I-Concentration
+DAPI	B-Reagent
+)	O
+to	B-Action
+counterstain	I-Action
+the	O
 nuclei	B-Reagent
-.	I-Reagent
+.	O
 
 Incubate	B-Action
 in	O
@@ -448,10 +447,9 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
-2	B-Time
-5	I-Time
+2-5	B-Time
 minutes	I-Time
-.	I-Time
+.	O
 
 Add	B-Action
 30	B-Amount

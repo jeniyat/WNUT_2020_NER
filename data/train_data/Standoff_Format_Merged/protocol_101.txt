@@ -1,0 +1,24 @@
+Building an HPC blast pipeline
+Login to the hpc (at the University of Arizona) with your user name Create a directory for the pipeline Go to the hpc-blast directory and create sub directories to hold std-err, std-out, data, blastdb, blast-results and scripts.
+Go to the blastdb directory and create the blast database.
+Copy the input files over from iPlant.
+We will be using the day/night transcriptomes we discussed last week.
+You will use two of the Perl scripts from the homework in the hpc pipeline.
+Put these into the scripts directory.
+config.sh : Now we need to create the config.sh script.
+This script will contain all of the environmental variables that the user will be able to modify for running blast.
+The idea of this script is to give the user one place to make any changes they need to run their particular blast job.
+The user should not have to go in and change any of the scripts in the 'scripts ' directory.
+Instead, we will capture all of these variable here.
+* note the the config.sh script is in the hpc-blast directory (in the first part of the pipeline), where it is easy for the user to modify it.
+blast-pipeline.sh : Now we will create the `` driver script '', the script that is used to run each part of the pipeline.
+run-fasta-splitter.sh.
+Create a shell script that runs the fasta splitter perl code.
+run-blast.sh : Create a shell script that runs blast on a compute node.
+run-parse-blast.sh : Create a shell script to parse the blast output that runs on a compute node on the cluster.
+04-blast-search.pl : modify the blast search script.Update the e-value to be less stringent.Modify the Perl script 04-blast-search.pl to include additional information about the hit.
+Make all of the scripts executable and then run the pipeline.If you do n't get any errors, the pipeline will take < 1 day to run.
+Check to see if the pipeline is running Once the pipeline is finished running (and you do n't see the jobs listed under qstat), check for std-errors and std-out.Note you can check while the pipeline is running too.
+Now you try.See if you can update the pipeline to add one final step that puts all of the parsed blast output into a single file for each of the original fasta files.Note that you can comment out the parts of the blast-pipeline.sh that you have already run in the steps above, to test your code.
+Otherwise, these will run again.Also, before you run this final step, make sure the blast parsing is complete.Can this run on the head node, or should we run this on a compute node? The complete pipeline can be found in github here.
+Commit your code to your own github abe487 repository using the directory : hpc-blast

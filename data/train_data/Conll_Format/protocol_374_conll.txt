@@ -29,9 +29,7 @@ Buffer	I-Reagent
 fold	I-Generic-Measure
 .	O
 
-i	O
-.	O
-e	O
+i.e	O
 .	O
 Use	B-Action
 1	B-Amount
@@ -51,14 +49,13 @@ Dilute	B-Action
 samples	B-Reagent
 at	B-Modifier
 least	I-Modifier
-1	B-Concentration
-1	I-Concentration
-with	I-Concentration
+1:1	B-Concentration
+with	O
 the	O
 appropriate	B-Modifier
-Dilution	I-Modifier
-Buffer	B-Reagent
-.	I-Reagent
+Dilution	B-Reagent
+Buffer	I-Reagent
+.	O
 
 Open	B-Action
 the	O
@@ -116,17 +113,20 @@ of	O
 these	O
 two	O
 methods	O
+(	O
 or	O
 see	O
 the	O
 Guidelines	O
 for	O
 using	O
-G	O
-Biosciences	B-Device
+G	B-Device
+Biosciences	I-Device
 Spot	I-Device
 Application	I-Device
 Device	I-Device
+)	O
+:	O
 
 Free	B-Method
 Drop	I-Method
@@ -199,17 +199,16 @@ an	O
 outside	B-Measure-Type
 bore	I-Measure-Type
 diameterof	I-Measure-Type
-0	B-Size
-.	I-Size
-6	I-Size
-0	I-Size
-.	I-Size
-7	I-Size
+0.6	B-Size
+0.7	I-Size
 mm	I-Size
+(	O
 Cat	O
 .	O
+#	O
 786	O
 64	O
+)	O
 .	O
 
 Keep	B-Action
@@ -234,9 +233,11 @@ from	O
 the	O
 pipette	B-Location
 tip	I-Location
+(	O
 see	O
 figure	O
 below	O
+)	O
 .	O
 
 Do	O
@@ -252,11 +253,12 @@ out	O
 .	O
 
 NOTE	O
+:	O
 Accurately	B-Modifier
-pipetting	I-Modifier
-1	B-Action
-l	B-Amount
-requires	I-Amount
+pipetting	B-Action
+1	B-Amount
+l	I-Amount
+requires	O
 skill	O
 and	O
 caution	O
@@ -268,13 +270,14 @@ of	O
 up	O
 to	O
 20	B-Generic-Measure
-could	I-Generic-Measure
+%	I-Generic-Measure
+could	O
 be	O
 due	O
 simply	O
 to	O
 pipetting	B-Action
-errors	I-Action
+errors	O
 .	O
 
 In	O
@@ -283,14 +286,16 @@ addition	O
 applying	B-Action
 more	O
 than	O
-1	B-Modifier
-l	B-Amount
-or	I-Amount
+>	B-Modifier
+1	B-Amount
+l	I-Amount
+or	O
 multiple	O
 spots	O
 are	O
 sometimes	O
 slow	O
+&	O
 tedious	O
 .	O
 
@@ -314,20 +319,21 @@ in	O
 a	O
 developing	B-Location
 tray	I-Location
+(	O
 Cat	O
 .	O
+#	O
 786	O
 024	O
+)	O
 or	O
-other	O
-small	B-Modifier
-dish	B-Location
-.	I-Location
+other	B-Modifier
+small	B-Location
+dish	I-Location
+.	O
 
 Apply	B-Action
-0	B-Amount
-.	I-Amount
-5ml	I-Amount
+0.5ml	B-Amount
 NUCLEIC	B-Reagent
 Dye	I-Reagent
 directly	B-Modifier
@@ -409,6 +415,7 @@ For	O
 Free	B-Method
 Drop	I-Method
 Method	I-Method
+:	O
 Compare	O
 the	O
 color	O
@@ -417,30 +424,31 @@ the	O
 test	B-Reagent
 sample	I-Reagent
 spot	I-Reagent
-with	I-Reagent
+with	O
 the	O
 dotMETRIC	B-Reagent
 Standard	I-Reagent
-provided	I-Reagent
+provided	O
 .	O
 
 For	O
 dotMETRIC	B-Method
 Application	I-Method
+:	O
 Use	O
 the	O
 NUCLEIC	B-Device
 dotMETRIC	I-Device
 scale	I-Device
-to	I-Device
+to	O
 determine	B-Action
-the	I-Action
+the	O
 concentration	B-Measure-Type
-of	I-Measure-Type
+of	O
 the	O
 diluted	B-Modifier
-sample	I-Modifier
-.	B-Reagent
+sample	B-Reagent
+.	O
 
 If	O
 a	O

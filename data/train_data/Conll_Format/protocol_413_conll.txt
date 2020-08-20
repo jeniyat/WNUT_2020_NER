@@ -14,15 +14,14 @@ plant	I-Reagent
 .	O
 
 Harvest	B-Action
-2	B-Numerical
-3	I-Numerical
-seedlings	I-Numerical
-and	B-Reagent
+2-3	B-Numerical
+seedlings	B-Reagent
+and	O
 place	B-Action
-in	I-Action
+in	O
 a	O
 mortar	B-Device
-.	I-Device
+.	O
 
 Fill	B-Action
 with	O
@@ -56,8 +55,9 @@ Add	B-Action
 l	I-Amount
 of	O
 10	B-Concentration
-SDS	I-Concentration
-.	B-Reagent
+%	I-Concentration
+SDS	B-Reagent
+.	O
 
 Mix	B-Action
 by	O
@@ -66,14 +66,16 @@ inverting	B-Action
 
 Incubate	B-Action
 tube	B-Location
+(	O
 s	O
+)	O
 at	O
-65	O
-C	B-Temperature
-for	I-Temperature
-20	O
-minutes	B-Time
-.	I-Time
+65	B-Temperature
+C	I-Temperature
+for	O
+20	B-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 300	B-Amount
@@ -88,27 +90,28 @@ by	O
 inverting	B-Action
 several	B-Numerical
 times	O
+(	O
 important	O
 !	O
+)	O
 ,	O
 then	O
 place	B-Action
-on	I-Action
-ice	O
-5	B-Location
-minutes	I-Location
-.	B-Time
+on	O
+ice	B-Location
+5	B-Time
+minutes	I-Time
+.	O
 
 Centrifuge	B-Action
 for	O
 5	B-Time
 minutes	I-Time
 at	O
-12	B-Modifier
-,	B-Speed
-000	I-Speed
+>	B-Modifier
+12,000	B-Speed
 rpm	I-Speed
-.	I-Speed
+.	O
 
 Label	B-Action
 a	O
@@ -152,9 +155,7 @@ for	O
 5	B-Time
 minutes	I-Time
 at	O
-14	B-Speed
-,	I-Speed
-000	I-Speed
+14,000	B-Speed
 rpm	I-Speed
 .	O
 
@@ -193,19 +194,20 @@ Add	B-Action
 l	I-Amount
 of	O
 70	B-Concentration
-ethanol	I-Concentration
-and	B-Reagent
+%	I-Concentration
+ethanol	B-Reagent
+and	O
 flick	B-Action
-the	I-Action
+the	O
 tube	B-Location
-until	I-Location
+until	O
 the	O
 pellet	B-Reagent
-comes	I-Reagent
+comes	O
 off	O
 the	O
 bottom	B-Location
-.	I-Location
+.	O
 
 Spin	B-Action
 5	B-Time
@@ -247,10 +249,9 @@ to	O
 air	B-Action
 dry	I-Action
 for	O
-5	B-Time
-10	I-Time
+5-10	B-Time
 minutes	I-Time
-.	I-Time
+.	O
 
 Resuspend	B-Action
 the	O

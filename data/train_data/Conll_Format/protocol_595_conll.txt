@@ -3,6 +3,7 @@ lab	I-Method
 Cas9	I-Method
 preparation	I-Method
 test	O
+:	O
 
 Tag	B-Action
 gtbp	B-Reagent
@@ -34,13 +35,15 @@ eGFP	I-Reagent
 and	O
 mCherry	B-Method
 tagging	I-Method
+(	O
 see	O
 guidelines	O
+)	O
 and	O
 Repair	B-Method
 template	I-Method
 synthesis	I-Method
-.	I-Method
+.	O
 
 Make	B-Action
 the	O
@@ -62,10 +65,13 @@ crRNA	B-Reagent
 gtbp	I-Reagent
 1	I-Reagent
 Ct	I-Reagent
+(	O
+#	O
 728	O
 in	O
 Table	O
 S3	O
+)	O
 .	O
 
 Inject	B-Action
@@ -90,21 +96,25 @@ Pool	B-Action
 the	O
 recovered	B-Modifier
 worms	B-Reagent
+(	O
 P0s	B-Modifier
-on	I-Modifier
-one	O
-plate	B-Numerical
-and	B-Location
+)	O
+on	O
+one	B-Numerical
+plate	B-Location
+and	O
 incubate	B-Action
-for	I-Action
-22	O
-23h	B-Time
-at	I-Time
-20	O
-C	B-Temperature
-day	I-Temperature
-1	B-Time
-.	I-Time
+for	O
+22	B-Time
+23h	I-Time
+at	O
+20	B-Temperature
+C	I-Temperature
+(	O
+day	B-Time
+1	I-Time
+)	O
+.	O
 
 Clone	B-Action
 the	O
@@ -122,9 +132,11 @@ for	O
 4	B-Time
 5	I-Time
 days	I-Time
-day	I-Time
+(	O
+day	B-Time
 2	I-Time
-.	I-Time
+)	O
+.	O
 
 When	B-Time
 the	I-Time

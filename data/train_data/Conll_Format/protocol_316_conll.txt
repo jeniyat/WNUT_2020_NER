@@ -2,11 +2,13 @@ Cryopreservation	B-Method
 
 Dilute	B-Action
 100	B-Concentration
-Glycerol	I-Concentration
-to	B-Reagent
-50	O
-Glycerol	B-Concentration
-.	B-Reagent
+%	I-Concentration
+Glycerol	B-Reagent
+to	O
+50	B-Concentration
+%	I-Concentration
+Glycerol	B-Reagent
+.	O
 
 In	O
 a	O
@@ -17,8 +19,9 @@ tube	I-Location
 pour	B-Action
 25ml	B-Amount
 100	B-Concentration
-glycerol	I-Concentration
-.	B-Reagent
+%	I-Concentration
+glycerol	B-Reagent
+.	O
 
 Add	B-Action
 25ml	B-Amount
@@ -47,16 +50,17 @@ add	B-Action
 l	I-Amount
 of	O
 50	B-Concentration
-glycerol	I-Concentration
-to	B-Reagent
+%	I-Concentration
+glycerol	B-Reagent
+to	O
 each	B-Modifier
-well	I-Modifier
-using	B-Location
+well	B-Location
+using	O
 an	O
-8	O
-channel	B-Generic-Measure
-pipet	I-Generic-Measure
-.	B-Location
+8	B-Generic-Measure
+channel	I-Generic-Measure
+pipet	B-Location
+.	O
 
 Take	B-Action
 pore	B-Reagent
@@ -118,9 +122,8 @@ step	B-Method
 4	I-Method
 for	O
 all	B-Modifier
-rows	B-Location
-wells	I-Location
-.	I-Location
+rows/wells	B-Location
+.	O
 
 Seal	B-Action
 500ml	B-Amount
@@ -128,11 +131,13 @@ deep	B-Modifier
 96	B-Location
 well	I-Location
 plate	I-Location
-glycerol	I-Location
+(	O
+glycerol	B-Location
 plate	I-Location
-with	I-Location
+)	O
+with	O
 foil	B-Seal
-.	I-Seal
+.	O
 
 Place	B-Action
 in	O
@@ -142,21 +147,20 @@ for	O
 minutes	I-Time
 .	O
 
-Re	B-Action
-seal	I-Action
-2ml	I-Action
-deep	B-Amount
-96	B-Modifier
-well	B-Location
+Re-seal	B-Action
+2ml	B-Amount
+deep	B-Modifier
+96	B-Location
+well	I-Location
 plate	I-Location
-with	I-Location
+with	O
 pore	B-Seal
 film	I-Seal
-and	I-Seal
+and	O
 place	B-Action
-in	I-Action
+in	O
 refrigerator	B-Device
-.	I-Device
+.	O
 
 After	O
 30	B-Time
@@ -169,9 +173,9 @@ place	B-Action
 deep	B-Modifier
 plate	B-Location
 in	O
-80	B-Temperature
+-80	B-Temperature
 C	I-Temperature
-freezer	I-Temperature
+freezer	B-Device
 
 
 

@@ -6,11 +6,12 @@ cells	I-Reagent
 
 Pellet	B-Action
 cells	B-Reagent
-1	O
-2	B-Modifier
-daily	B-Amount
-culture	B-Modifier
-.	B-Reagent
+(	O
+~1/2	B-Modifier
+daily	I-Modifier
+culture	B-Reagent
+)	O
+.	O
 
 Suspend	B-Action
 in	O
@@ -23,19 +24,20 @@ phenol	I-Reagent
 
 Add	B-Action
 about	O
-0	B-Amount
-.	I-Amount
-2ml	I-Amount
+0.2ml	B-Amount
 5	B-Concentration
-cetylpyridium	I-Concentration
-chloride	B-Reagent
-cationic	I-Reagent
+%	I-Concentration
+cetylpyridium	B-Reagent
+chloride	I-Reagent
+(	O
+cationic	B-Reagent
 detergent	I-Reagent
-to	I-Reagent
+)	O
+to	O
 facilitate	B-Action
-chlorophyll	I-Action
-extraction	B-Method
-.	I-Method
+chlorophyll	B-Method
+extraction	I-Method
+.	O
 
 Shake	B-Action
 suspension	B-Reagent
@@ -52,10 +54,12 @@ Add	B-Action
 10	B-Amount
 ml	I-Amount
 toluene	B-Reagent
+(	O
 to	O
 reduce	O
 density	B-Measure-Type
-.	I-Measure-Type
+)	O
+.	O
 
 Mix	B-Action
 .	O

@@ -5,10 +5,11 @@ medium	I-Reagent
 Combine	B-Action
 the	O
 following	B-Reagent
+:	O
 Autoclave	B-Action
-the	I-Action
+the	O
 medium	B-Reagent
-.	I-Reagent
+.	O
 
 Add	B-Action
 15	B-Amount
@@ -16,9 +17,11 @@ g	I-Amount
 of	O
 artificial	B-Reagent
 salt	I-Reagent
+(	I-Reagent
 Instant	I-Reagent
 Ocean	I-Reagent
-.	I-Reagent
+)	I-Reagent
+.	O
 
 Let	B-Action
 the	O
@@ -34,17 +37,19 @@ Add	B-Action
 15	B-Amount
 ml	I-Amount
 of	O
-Penicillin	B-Reagent
-Streptomycin	I-Reagent
-concentration	I-Reagent
-XX	O
-and	B-Concentration
-6	O
-ml	O
+Penicillin/Streptomycin	B-Reagent
+(	O
+concentration	O
+:	O
+XX	B-Concentration
+)	O
+and	O
+6	B-Amount
+ml	I-Amount
 of	O
-horse	B-Amount
-serum	B-Reagent
-.	I-Reagent
+horse	B-Reagent
+serum	I-Reagent
+.	O
 
 Pour	B-Action
 the	O

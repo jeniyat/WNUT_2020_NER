@@ -1,0 +1,11 @@
+Basic Illumina Sequence Quality Control
+Assess raw FASTQ sequences using the program FastQCGoal.
+Remove low quality sequences to increase average quality score of reads above 28 For current sequencing centers, the 5 ' end of has had Illumina adapters and primers removed.
+But there can be inclusion of the 3 ' end Illumina adapter in DNA fragments with length less than the number of the cycles for the sequencer.
+Remove Illumina adaptor sequences from 3 ' end of sequences - be sure to preserve reads of 0 length.
+Repeat step for all raw read files.
+Assess Cutadapt results with FastQC.
+Remove low quality base pairs from sequences, generally from the 3 ' end, using a sliding window of 10 bp that will trim all trailing bases if the average quality score drops below 28.
+Important : To maintain the order of paired-end Illumina sequences both reads must be input simultaneously with the same number of sequences submitted from each read pair, regardless of the length of the sequence.
+Assess file quality scores using FastQC.
+Utilize Trimmomatic for any other issues - such as poor quality in the first bp, etc.

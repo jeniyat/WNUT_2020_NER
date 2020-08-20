@@ -6,7 +6,9 @@ using	O
 T7	B-Reagent
 Endonuclease	I-Reagent
 I	I-Reagent
+(	O
 M0302	O
+)	O
 
 Set	B-Action
 up	I-Action
@@ -16,12 +18,12 @@ l	I-Amount
 PCR	B-Reagent
 reaction	I-Reagent
 using	O
-100	B-Modifier
+~100	B-Modifier
 ng	B-Amount
-of	I-Amount
+of	O
 genomic	B-Reagent
 DNA	I-Reagent
-as	I-Reagent
+as	O
 a	O
 template	O
 .	O
@@ -34,14 +36,15 @@ up	I-Action
 3	B-Numerical
 PCR	B-Reagent
 reactions	I-Reagent
-positive	I-Reagent
-,	I-Reagent
-negative	I-Reagent
-,	I-Reagent
-no	O
-template	B-Reagent
+(	O
+positive	B-Reagent
+,	O
+negative	B-Reagent
+,	O
+no-template	B-Reagent
 control	I-Reagent
-.	I-Reagent
+)	O
+.	O
 
 Gently	B-Modifier
 mix	B-Action
@@ -142,17 +145,20 @@ Assemble	B-Action
 reactions	B-Reagent
 as	O
 follows	O
+:	O
 Anneal	B-Action
-the	I-Action
+the	O
 PCR	B-Reagent
 products	I-Reagent
-in	I-Reagent
+in	O
 a	O
 thermocycler	B-Device
-see	I-Device
+(	O
+see	O
 guidelines	O
 for	O
 conditions	O
+)	O
 .	O
 
 Add	B-Action
@@ -184,14 +190,10 @@ the	O
 reaction	B-Reagent
 by	O
 adding	B-Action
-1	B-Amount
-.	I-Amount
-5	I-Amount
+1.5	B-Amount
 l	I-Amount
 of	O
-0	B-Concentration
-.	I-Concentration
-25	I-Concentration
+0.25	B-Concentration
 M	I-Concentration
 EDTA	B-Reagent
 .	O
@@ -239,12 +241,13 @@ determine	B-Action
 the	O
 percent	B-Measure-Type
 of	O
-nuclease	B-Reagent
-specific	I-Reagent
+nuclease-specific	B-Reagent
 cleavage	I-Reagent
 products	I-Reagent
-fraction	I-Reagent
+(	O
+fraction	O
 cleaved	O
+)	O
 .	O
 
 Calculate	B-Action
@@ -256,16 +259,22 @@ using	O
 the	O
 following	O
 formula	B-Method
-gene	B-Measure-Type
+:	O
+%	B-Measure-Type
+gene	I-Measure-Type
 modification	I-Measure-Type
-100	I-Measure-Type
+=	O
+100	O
 x	O
+(	O
 1	O
-1	O
+(	O
+1-	O
 fraction	O
 cleaved	O
-1	O
-2	O
+)	O
+1/2	O
+)	O
 
 
 

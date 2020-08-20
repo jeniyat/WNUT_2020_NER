@@ -1,7 +1,9 @@
 Quick	B-Method
 Ligation	I-Method
 Protocol	I-Method
+(	O
 M2200	O
+)	O
 
 Combine	B-Action
 50	B-Amount
@@ -10,13 +12,12 @@ of	O
 vector	B-Reagent
 with	O
 a	O
-3	B-Concentration
-fold	I-Concentration
+3-fold	B-Concentration
 molar	I-Concentration
 excess	I-Concentration
-of	I-Concentration
+of	O
 insert	B-Reagent
-.	I-Reagent
+.	O
 
 Adjust	B-Action
 volume	B-Measure-Type
@@ -59,12 +60,14 @@ incubate	B-Action
 at	O
 room	B-Temperature
 temperature	I-Temperature
-25	I-Temperature
+(	O
+25	B-Temperature
 C	I-Temperature
-for	I-Temperature
-5	O
-minutes	B-Time
-.	I-Time
+)	O
+for	O
+5	B-Time
+minutes	I-Time
+.	O
 
 Chill	B-Action
 on	O
@@ -75,9 +78,9 @@ transform	B-Action
 or	O
 store	B-Action
 at	O
-20	B-Temperature
+-20	B-Temperature
 C	I-Temperature
-.	I-Temperature
+.	O
 
 
 

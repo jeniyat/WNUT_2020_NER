@@ -32,31 +32,29 @@ flask	B-Location
 
 Incubate	B-Action
 for	O
-16	B-Time
-18	I-Time
+16-18	B-Time
 hours	I-Time
-at	I-Time
-37	O
-C	B-Temperature
-and	I-Temperature
+at	O
+37	B-Temperature
+C	I-Temperature
+and	O
 250	B-Speed
 rpm	I-Speed
-.	I-Speed
+.	O
 
-Pre	B-Action
-warm	I-Action
-2	I-Action
-,	B-Numerical
-1	O
-L	B-Size
-flasks	I-Size
-containing	B-Location
+Pre-warm	B-Action
+2	B-Numerical
+,	O
+1	B-Size
+L	I-Size
+flasks	B-Location
+containing	O
 250	B-Amount
 ml	I-Amount
-each	I-Amount
-of	B-Modifier
+each	B-Modifier
+of	O
 SOB	B-Reagent
-.	I-Reagent
+.	O
 
 Add	B-Action
 two	B-Numerical
@@ -69,12 +67,11 @@ to	O
 each	B-Modifier
 of	O
 the	O
-pre	B-Modifier
-warmed	I-Modifier
-250	I-Modifier
-ml	B-Size
-flasks	I-Size
-.	B-Location
+pre-warmed	B-Modifier
+250	B-Size
+ml	I-Size
+flasks	B-Location
+.	O
 
 Shake	B-Action
 at	O
@@ -90,13 +87,8 @@ reach	B-Action
 an	O
 OD600	B-Measure-Type
 of	O
-0	B-Numerical
-.	I-Numerical
-5	I-Numerical
-0	I-Numerical
-.	I-Numerical
-7	I-Numerical
-.	I-Numerical
+0.5-0.7	B-Numerical
+.	O
 
 Turn	B-Action
 on	I-Action
@@ -120,16 +112,17 @@ Place	B-Action
 L	I-Amount
 of	O
 10	B-Concentration
-glycerol	I-Concentration
-on	B-Reagent
+%	I-Concentration
+glycerol	B-Reagent
+on	O
 ice	B-Temperature
-well	I-Temperature
-in	B-Modifier
+well	B-Modifier
+in	I-Modifier
 advance	I-Modifier
 of	I-Modifier
 harvesting	I-Modifier
 cells	I-Modifier
-.	I-Modifier
+.	O
 
 Place	B-Action
 cultures	B-Reagent
@@ -162,12 +155,14 @@ into	O
 chilled	B-Temperature
 500	B-Size
 ml	I-Size
+(	O
 or	O
 1000	B-Size
 ml	I-Size
-centrifuge	I-Size
-bottles	B-Location
-.	I-Location
+)	O
+centrifuge	B-Location
+bottles	I-Location
+.	O
 
 Centrifuge	B-Action
 at	O
@@ -322,9 +317,9 @@ transfer	B-Action
 them	B-Mention
 to	O
 a	O
-80	B-Temperature
+-80	B-Temperature
 C	I-Temperature
-freezer	I-Temperature
+freezer	B-Device
 
 
 

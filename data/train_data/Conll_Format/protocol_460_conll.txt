@@ -3,29 +3,28 @@ T	I-Reagent
 Cell	I-Reagent
 Activation	B-Method
 with	O
-anti	B-Modifier
-CD3	I-Modifier
-Antibodies	I-Modifier
-clone	B-Reagent
-145	O
-2C11	O
+anti-CD3	B-Modifier
+Antibodies	B-Reagent
+(	O
+clone	O
+145-2C11	O
+)	O
 
 Prepare	B-Action
 a	O
 5	B-Concentration
-g	I-Concentration
-ml	I-Concentration
-solution	I-Concentration
-of	B-Reagent
-anti	I-Reagent
-CD3	I-Reagent
-clone	I-Reagent
-145	O
-2C11	O
+g/ml	I-Concentration
+solution	B-Reagent
+of	I-Reagent
+anti-CD3	I-Reagent
+(	O
+clone	O
+145-2C11	O
+)	O
 in	O
-sterile	O
-PBS	B-Modifier
-.	I-Modifier
+sterile	B-Modifier
+PBS	B-Reagent
+.	O
 
 Dispense	B-Action
 50	B-Amount
@@ -39,11 +38,10 @@ each	B-Modifier
 microwell	B-Location
 of	O
 the	O
-96	B-Location
-well	I-Location
+96-well	B-Location
 assay	I-Location
 plate	I-Location
-.	I-Location
+.	O
 
 For	O
 the	O
@@ -93,9 +91,10 @@ times	O
 with	O
 sterile	B-Modifier
 PBS	B-Reagent
+(	O
 wash	B-Action
-1	I-Action
-3	O
+1/3	O
+)	O
 .	O
 
 Prepare	B-Action
@@ -116,12 +115,10 @@ cell	B-Reagent
 culture	I-Reagent
 medium	I-Reagent
 to	O
-1	B-Generic-Measure
-2	I-Generic-Measure
+1-2	B-Generic-Measure
 x	I-Generic-Measure
-106	I-Generic-Measure
-ml	I-Generic-Measure
-.	I-Generic-Measure
+106/ml	I-Generic-Measure
+.	O
 
 Aliquot	B-Action
 200	B-Amount
@@ -144,26 +141,15 @@ at	O
 C	I-Temperature
 in	O
 5	B-Concentration
-CO2	I-Concentration
-and	B-Reagent
+%	I-Concentration
+CO2	B-Reagent
+and	O
 100	B-Generic-Measure
+%	I-Generic-Measure
 humidity	I-Generic-Measure
-for	I-Generic-Measure
-3	O
-days	B-Time
-.	I-Time
-
-Wash	B-Action
-plate	B-Location
-microwells	I-Location
-3	B-Numerical
-times	O
-with	O
-sterile	B-Modifier
-PBS	B-Reagent
-wash	B-Action
-2	I-Action
-3	O
+for	O
+3	B-Time
+days	I-Time
 .	O
 
 Wash	B-Action
@@ -174,9 +160,24 @@ times	O
 with	O
 sterile	B-Modifier
 PBS	B-Reagent
-wash	I-Reagent
-3	I-Reagent
-3	O
+(	O
+wash	B-Action
+2/3	O
+)	O
+.	O
+
+Wash	B-Action
+plate	B-Location
+microwells	I-Location
+3	B-Numerical
+times	O
+with	O
+sterile	B-Modifier
+PBS	B-Reagent
+(	O
+wash	B-Reagent
+3/3	O
+)	O
 .	O
 
 Discard	B-Action

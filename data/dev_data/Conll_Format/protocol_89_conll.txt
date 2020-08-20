@@ -9,9 +9,7 @@ by	O
 Size	O
 
 Inoculate	B-Action
-3	B-Amount
-.	I-Amount
-5	I-Amount
+3.5	B-Amount
 mL	I-Amount
 aliquots	B-Reagent
 of	O
@@ -88,19 +86,20 @@ Add	B-Action
 L	I-Amount
 of	O
 phenol	B-Reagent
+:	I-Reagent
 chloroform	I-Reagent
-1	I-Reagent
-1	O
-to	B-Concentration
-each	I-Concentration
-sample	B-Amount
-and	B-Reagent
-vortex	I-Reagent
-for	B-Action
-5	I-Action
-10	O
-sec	B-Time
-.	I-Time
+(	O
+1:1	B-Concentration
+)	I-Concentration
+to	O
+each	B-Amount
+sample	B-Reagent
+and	O
+vortex	B-Action
+for	O
+5-10	B-Time
+sec	I-Time
+.	O
 
 Centrifuge	B-Action
 the	O
@@ -128,19 +127,18 @@ aqueous	B-Reagent
 phases	I-Reagent
 onto	O
 a	O
-1	B-Concentration
-.	I-Concentration
-2	I-Concentration
-agarose	I-Concentration
-horizontal	B-Reagent
+1.2	B-Concentration
+%	I-Concentration
+agarose	B-Reagent
+horizontal	I-Reagent
 gel	I-Reagent
-made	I-Reagent
+made	O
 up	O
 with	O
-1X	O
-TPE	B-Concentration
-buffer	B-Reagent
-.	I-Reagent
+1X	B-Concentration
+TPE	B-Reagent
+buffer	I-Reagent
+.	O
 
 In	O
 the	O
@@ -152,10 +150,9 @@ DNA	I-Reagent
 digested	B-Modifier
 with	O
 HindIII	B-Reagent
-and	O
-or	O
+and/or	O
 StyI	B-Reagent
-for	I-Reagent
+for	O
 size	O
 markers	O
 .	O
@@ -198,11 +195,9 @@ TPE	B-Reagent
 buffer	I-Reagent
 for	O
 approximately	B-Modifier
-400	B-Generic-Measure
-450	I-Generic-Measure
-volt	I-Generic-Measure
-hours	I-Generic-Measure
-.	I-Generic-Measure
+400-450	B-Generic-Measure
+volt-hours	I-Generic-Measure
+.	O
 
 Stain	B-Action
 the	O
@@ -214,18 +209,14 @@ at	O
 a	O
 concentration	B-Measure-Type
 of	O
-0	B-Concentration
-.	I-Concentration
-5	I-Concentration
-g	I-Concentration
-mL	I-Concentration
-in	I-Concentration
-d	O
-H2O	B-Reagent
-for	I-Reagent
-30	O
-minutes	B-Time
-.	I-Time
+0.5	B-Concentration
+g/mL	I-Concentration
+in	O
+d-H2O	B-Reagent
+for	O
+30	B-Time
+minutes	I-Time
+.	O
 
 Observe	B-Action
 the	O
@@ -269,9 +260,8 @@ Destain	B-Action
 the	O
 gel	B-Reagent
 with	O
-d	B-Reagent
-H2O	I-Reagent
-.	I-Reagent
+d-H2O	B-Reagent
+.	O
 
 
 

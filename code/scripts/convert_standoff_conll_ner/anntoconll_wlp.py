@@ -23,7 +23,7 @@ options = None
 EMPTY_LINE_RE = re.compile(r'^\s*$')
 CONLL_LINE_RE = re.compile(r'^\S+\t\d+\t\d+.')
 
- 
+from nltk.tokenize import word_tokenize
 
 
 from map_text_to_char import map_text_to_char  #JT: Dec 6
@@ -122,6 +122,36 @@ TOKENIZATION_REGEX = re.compile(r'([0-9a-zA-Z]+|[^0-9a-zA-Z])')
 
 NEWLINE_TERM_REGEX = re.compile(r'(.*?\n)')
 
+def handle_non_standard_char(s):
+    s = s.replace('\xa0', ' ')
+
+        
+
+    s = s.replace('\x2f', "/")
+
+    
+
+    s = s.replace('\x27', "'")
+
+    s = s.replace('\x28', "(")
+    s = s.replace('\x29', ")")
+
+    s = s.replace('\x2e', ".")
+    
+
+    s = s.replace('\x5b', "[")
+    s = s.replace('\x5c', "\\")
+    s = s.replace('\x5d', "]")
+
+    s = s.replace('\x7b', "{")
+    s = s.replace('\x7b', "|")
+    s = s.replace('\x7d', "}")
+
+    s = s.replace('\t', ' ')
+
+    s =  re.sub(r'[^\x00-\x7F]+',' ', s)
+
+    return s
 
 def text_to_conll(f):
     """Convert plain text into CoNLL format."""
@@ -143,24 +173,20 @@ def text_to_conll(f):
     # print(sentences)
     for s in sentences:
         nonspace_token_seen = False
-        s = s.replace('\xa0', ' ')
-        s = s.replace('\t', ' ')
-        s =  re.sub(r'[^\x00-\x7F]+',' ', s)
+        s = handle_non_standard_char(s)
         
-        # print(s)
+        tokens = word_tokenize(s)
 
         
-        # print(s.split(" "))
-        # print(s.split("\t"))
-        # print(s.split())
-        
-        tokens = re.findall(r"[\w']+|[.,!?;]", s)
         
         
         
         
         token_w_pos = map_text_to_char(s, tokens, offset)
         # print("token_w_pos: ",token_w_pos)
+
+        if 'TetKanCam' in s:
+            print(token_w_pos)
 
         for(t, pos) in token_w_pos:
             t=t.strip()

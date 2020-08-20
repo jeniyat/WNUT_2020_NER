@@ -2,28 +2,33 @@ Transformation	B-Method
 Protocol	O
 for	O
 BL21	B-Reagent
+(	I-Reagent
 DE3	I-Reagent
+)	I-Reagent
 Competent	I-Reagent
 Cells	I-Reagent
-C2527H	I-Reagent
+(	O
+C2527H	O
+)	O
 
 Thaw	B-Action
 a	O
 tube	B-Location
 of	O
 BL21	B-Reagent
+(	I-Reagent
 DE3	I-Reagent
+)	I-Reagent
 Competent	I-Reagent
-E	I-Reagent
-.	I-Reagent
+E.	I-Reagent
 coli	I-Reagent
 cells	I-Reagent
-on	I-Reagent
-ice	O
-for	B-Location
-10	O
-minutes	B-Time
-.	I-Time
+on	O
+ice	B-Location
+for	O
+10	B-Time
+minutes	I-Time
+.	O
 
 Add	B-Action
 1	B-Amount
@@ -130,11 +135,13 @@ minutes	I-Time
 
 Shake	B-Action
 vigorously	B-Modifier
+(	O
 250	B-Speed
 rpm	I-Speed
-or	I-Speed
+)	O
+or	O
 rotate	B-Action
-.	I-Action
+.	O
 
 Warm	B-Action
 selection	B-Location
@@ -158,13 +165,12 @@ inverting	B-Action
 
 Perform	B-Action
 several	B-Modifier
-10	B-Method
-fold	I-Method
+10-fold	B-Method
 serial	I-Method
 dilutions	I-Method
-in	I-Method
+in	O
 SOC	B-Reagent
-.	I-Reagent
+.	O
 
 Spread	B-Action
 50	B-Amount

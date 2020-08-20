@@ -1,8 +1,9 @@
 Q5	B-Method
-Site	I-Method
-Directed	I-Method
+Site-Directed	I-Method
 Mutagenesis	I-Method
-E0552	I-Method
+(	O
+E0552	O
+)	O
 
 Assemble	B-Action
 the	O
@@ -10,11 +11,10 @@ following	B-Reagent
 reagents	I-Reagent
 in	O
 a	O
-thin	B-Modifier
-walled	I-Modifier
-PCR	I-Modifier
-tube	B-Location
-.	I-Location
+thin-walled	B-Modifier
+PCR	B-Location
+tube	I-Location
+.	O
 
 Mix	B-Action
 reagents	B-Reagent
@@ -31,19 +31,21 @@ the	O
 following	O
 cycling	B-Action
 conditions	O
+:	O
 
 Assemble	B-Action
 the	O
 following	B-Reagent
 reagents	I-Reagent
+:	O
 Mix	B-Action
-well	I-Action
-by	B-Modifier
+well	B-Modifier
+by	O
 pipetting	B-Method
 up	I-Method
 and	I-Method
 down	I-Method
-.	I-Method
+.	O
 
 Incubate	B-Action
 at	O
@@ -62,8 +64,7 @@ aliquot	B-Reagent
 of	O
 chemically	B-Reagent
 competent	I-Reagent
-E	I-Reagent
-.	I-Reagent
+E.	I-Reagent
 coli	I-Reagent
 cells	I-Reagent
 on	O
@@ -79,27 +80,28 @@ KLD	B-Reagent
 mix	I-Reagent
 from	O
 the	O
-KLD	B-Location
+``	B-Location
+KLD	I-Location
 Section	I-Location
+''	I-Location
 above	I-Location
-to	I-Location
-the	O
-tube	B-Location
-of	I-Location
-thawed	B-Modifier
-cells	I-Modifier
-.	B-Reagent
+to	O
+the	B-Location
+tube	I-Location
+of	B-Modifier
+thawed	I-Modifier
+cells	B-Reagent
+.	B-Modifier
 
 Carefully	B-Modifier
 flick	B-Action
 the	O
 tube	B-Location
-4	B-Numerical
-5	I-Numerical
-times	I-Numerical
+4-5	B-Numerical
+times	O
 to	O
 mix	B-Action
-.	I-Action
+.	O
 
 Do	O
 not	O
@@ -155,9 +157,11 @@ for	O
 minutes	I-Time
 with	O
 shaking	B-Action
+(	O
 250	B-Speed
 rpm	I-Speed
-.	I-Speed
+)	O
+.	O
 
 Mix	B-Action
 the	O
@@ -172,14 +176,13 @@ inverting	B-Action
 .	O
 
 Spread	B-Action
-50	B-Amount
-100	I-Amount
+50-100	B-Amount
 l	I-Amount
-onto	I-Amount
+onto	O
 a	O
 selection	B-Location
 plate	I-Location
-.	I-Location
+.	O
 
 Incubate	B-Action
 overnight	B-Time

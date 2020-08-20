@@ -19,11 +19,10 @@ Dispense	B-Action
 into	O
 500	B-Amount
 ml	I-Amount
-acid	B-Modifier
-washed	I-Modifier
-polycarbonate	I-Modifier
-bottles	B-Location
-.	I-Location
+acid-washed	B-Modifier
+polycarbonate	B-Location
+bottles	I-Location
+.	O
 
 Autoclave	B-Action
 30	B-Time
@@ -32,9 +31,7 @@ min	I-Time
 pH	B-Action
 NaH2PO4	B-Reagent
 to	O
-7	B-pH
-.	I-pH
-5	I-pH
+7.5	B-pH
 using	O
 1M	B-Concentration
 NaOH	B-Reagent
@@ -45,9 +42,7 @@ sterilize	I-Action
 each	B-Modifier
 solution	B-Reagent
 using	O
-0	B-Size
-.	I-Size
-2	I-Size
+0.2	B-Size
 m	I-Size
 syringe	B-Device
 filter	I-Device
@@ -74,9 +69,7 @@ C	I-Temperature
 pH	B-Action
 HEPES	B-Reagent
 to	O
-7	B-pH
-.	I-pH
-5	I-pH
+7.5	B-pH
 using	O
 1M	B-Concentration
 NaOH	B-Reagent
@@ -87,9 +80,7 @@ sterilize	I-Action
 each	B-Modifier
 solution	B-Reagent
 using	O
-0	B-Size
-.	I-Size
-2	I-Size
+0.2	B-Size
 m	I-Size
 syringe	B-Device
 filter	I-Device
@@ -124,9 +115,7 @@ ml	I-Amount
 of	O
 NaHCO3	B-Reagent
 and	O
-0	B-Amount
-.	I-Amount
-5	I-Amount
+0.5	B-Amount
 ml	I-Amount
 HEPES	B-Reagent
 per	B-Modifier
@@ -134,7 +123,8 @@ per	B-Modifier
 ml	I-Amount
 bottle	B-Location
 of	O
-Turk's	B-Reagent
+Turk	B-Reagent
+'s	I-Reagent
 Island	I-Reagent
 Salt	I-Reagent
 Mix	I-Reagent
@@ -146,9 +136,7 @@ medium	I-Reagent
 
 Weigh	B-Action
 out	I-Action
-0	B-Amount
-.	I-Amount
-2175	I-Amount
+0.2175	B-Amount
 g	I-Amount
 Na2EDTA	B-Reagent
 2H2O	I-Reagent
@@ -170,9 +158,8 @@ filled	O
 with	O
 40	B-Amount
 ml	I-Amount
-MQ	B-Reagent
-water	I-Reagent
-.	I-Reagent
+MQ-water	B-Reagent
+.	O
 
 Dissolve	B-Action
 EDTA	B-Reagent
@@ -185,9 +172,7 @@ times	O
 
 Weigh	B-Action
 out	I-Action
-0	B-Amount
-.	I-Amount
-16	I-Amount
+0.16	B-Amount
 g	I-Amount
 FeCl3	B-Reagent
 6H2O	I-Reagent
@@ -244,16 +229,13 @@ to	O
 ml	I-Amount
 mark	O
 with	O
-MQ	B-Reagent
-water	I-Reagent
+MQ-water	B-Reagent
 .	I-Reagent
 
 Filter	B-Action
 through	O
 a	O
-0	B-Size
-.	I-Size
-2	I-Size
+0.2	B-Size
 m	I-Size
 syringe	B-Device
 filter	I-Device
@@ -289,7 +271,8 @@ to	O
 ml	I-Amount
 bottle	B-Location
 of	O
-Turk's	B-Reagent
+Turk	B-Reagent
+'s	I-Reagent
 Island	I-Reagent
 Salt	I-Reagent
 Mix	I-Reagent

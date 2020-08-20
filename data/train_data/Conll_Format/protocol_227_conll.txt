@@ -25,15 +25,13 @@ DNA	I-Reagent
 sample	I-Reagent
 into	O
 an	O
-ice	B-Location
-water	I-Location
+ice-water	B-Location
 bath	I-Location
-in	I-Location
+in	O
 a	O
-cup	B-Device
-horn	I-Device
+cup-horn	B-Device
 sonicator	I-Device
-.	I-Device
+.	O
 
 Sonication	B-Method
 is	O
@@ -121,14 +119,15 @@ agarose	B-Reagent
 gel	I-Reagent
 to	O
 determine	B-Action
-optimal	I-Action
-sized	I-Action
-DNA	I-Action
-fragments	B-Reagent
-1	I-Reagent
-4	O
-kb	B-Generic-Measure
-.	I-Generic-Measure
+optimal-sized	I-Action
+DNA	B-Reagent
+fragments	I-Reagent
+(	O
+1	B-Generic-Measure
+4	I-Generic-Measure
+kb	I-Generic-Measure
+)	O
+.	O
 
 Once	O
 optimal	O
@@ -141,17 +140,19 @@ the	O
 remaining	B-Numerical
 5	I-Numerical
 aliquots	B-Reagent
+(	O
 approximately	B-Amount
 8	I-Amount
 g	I-Amount
-are	I-Amount
+)	O
+are	O
 sonicated	B-Action
-according	I-Action
-to	B-Modifier
+according	B-Modifier
+to	I-Modifier
 those	I-Modifier
 predetermined	I-Modifier
 conditions	I-Modifier
-.	I-Modifier
+.	O
 
 
 

@@ -7,16 +7,14 @@ algae	O
 using	O
 isotopic	O
 labeled	O
-heat	O
-killed	O
+heat-killed	O
 bacteria	O
 
 Prepare	B-Action
 modified	B-Modifier
-DY	B-Reagent
-V	I-Reagent
+DY-V	B-Reagent
 media	I-Reagent
-.	I-Reagent
+.	O
 
 Media	O
 used	O
@@ -28,13 +26,13 @@ a	O
 modified	O
 version	O
 of	O
-DY	O
-V	O
+DY-V	O
 media	O
 .	O
 
 Modifications	O
 were	O
+:	O
 No	O
 MES	O
 was	O
@@ -50,10 +48,10 @@ a	O
 source	O
 of	O
 carbon	O
+(	O
 bicarbonate	O
 and	O
-heat	O
-killed	O
+heat-killed	O
 bacteria	O
 are	O
 the	O
@@ -65,25 +63,28 @@ used	O
 in	O
 this	O
 media	O
+)	O
 .	O
 
 No	O
 Na2SiO3	O
 was	O
 used	O
+(	O
 Ochromonas	O
 does	O
 not	O
 need	O
 silica	O
+)	O
 .	O
 
 No	O
 NaNO3	O
+(	O
 ammonium	O
 and	O
-heat	O
-killed	O
+heat-killed	O
 bacteria	O
 were	O
 the	O
@@ -95,6 +96,7 @@ used	O
 in	O
 this	O
 media	O
+)	O
 .	O
 
 Sodium	B-Reagent
@@ -117,18 +119,18 @@ before	O
 algal	B-Reagent
 inoculum	I-Reagent
 by	O
-0	B-Size
-.	I-Size
-2	I-Size
+0.2	B-Size
 m	I-Size
 filtration	B-Action
 of	O
 a	O
 stock	B-Reagent
 solution	I-Reagent
+(	O
 do	O
 not	O
 autoclave	O
+)	O
 .	O
 
 Media	B-Reagent
@@ -142,14 +144,16 @@ Add	B-Action
 15N	B-Reagent
 13C	I-Reagent
 labeled	I-Reagent
-heat	I-Reagent
-killed	I-Reagent
+heat-killed	I-Reagent
 bacteria	I-Reagent
-HKB	I-Reagent
+(	O
+HKB	O
+)	O
 to	O
 the	O
 media	B-Reagent
-isolation	I-Reagent
+(	O
+isolation	O
 and	O
 labeling	O
 of	O
@@ -159,6 +163,7 @@ done	O
 following	O
 this	O
 protocol	O
+)	O
 .	O
 
 Add	B-Action
@@ -168,6 +173,7 @@ of	O
 the	O
 mixotrophic	B-Reagent
 algae	I-Reagent
+(	O
 volume	O
 of	O
 inoculum	O
@@ -187,9 +193,11 @@ carry	O
 over	O
 of	O
 nutrients	O
+)	O
 .	O
 
 NOTE	O
+:	O
 as	O
 an	O
 example	O
@@ -198,15 +206,13 @@ values	O
 commonly	O
 used	O
 were	O
-5x103	O
+~5x103	O
 Ochromonas	O
-mL	O
-1	O
+mL-1	O
 and	O
-5x107	O
+~5x107	O
 HKB	O
-mL	O
-1	O
+mL-1	O
 as	O
 starting	O
 concentrations	O
@@ -241,19 +247,20 @@ algae	B-Reagent
 growth	I-Reagent
 through	O
 microscopy	B-Method
+(	O
 live	O
 samples	O
-and	O
-or	O
+and/or	O
 fixed	O
 samples	O
+)	O
 and	O
 the	O
 decline	O
 of	O
-heat	O
-killed	O
+heat-killed	O
 bacteria	O
+(	O
 fixed	O
 samples	O
 and	O
@@ -282,8 +289,7 @@ allowed	O
 to	O
 grow	O
 for	O
-2	O
-3	O
+2-3	O
 generations	O
 before	O
 sampling	O
@@ -299,26 +305,26 @@ samples	O
 can	O
 be	O
 collected	O
+:	O
 
 Bulk	O
 measurements	O
+:	O
 filter	B-Action
-30	I-Action
-50	B-Amount
+30-50	B-Amount
 mL	I-Amount
-of	I-Amount
+of	O
 the	O
 cultures	B-Reagent
-onto	I-Reagent
-pre	O
-combusted	O
+onto	O
+pre-combusted	O
 glass	O
 fiber	O
 filters	O
 and	O
-dry	O
-at	B-Action
-60	I-Action
+dry	B-Action
+at	O
+60	O
 C	O
 over	O
 night	O
@@ -360,9 +366,9 @@ inorganic	O
 carbon	O
 and	O
 the	O
-C	O
+C-	O
 and	O
-N	O
+N-	O
 isotopic	O
 composition	O
 of	O
@@ -376,25 +382,26 @@ isotope	O
 rato	O
 mas	O
 spectrometer	O
+(	O
 IRMS	O
+)	O
 .	O
 
-Cell	O
-specific	O
+Cell-specific	O
 measurements	O
+:	O
 collect	B-Action
-2	I-Action
-mL	I-Action
-of	B-Amount
+2	B-Amount
+mL	I-Amount
+of	O
 sample	B-Reagent
-and	I-Reagent
-fix	O
-with	B-Action
-2X	O
-EM	B-Concentration
-grade	B-Reagent
+and	O
+fix	B-Action
+with	O
+2X	B-Concentration
+EM-grade	B-Reagent
 glutaraldehyde	I-Reagent
-.	I-Reagent
+.	O
 
 Sample	B-Reagent
 can	O
@@ -424,8 +431,7 @@ wafers	O
 ,	O
 wash	O
 with	O
-MQ	O
-water	O
+MQ-water	O
 and	O
 drye	O
 ;	O
@@ -449,7 +455,9 @@ NanoSIMS	O
 instrument	O
 .	O
 
+(	O
 NOTE	O
+:	O
 actual	O
 manipulation	O
 of	O
@@ -462,6 +470,7 @@ by	O
 an	O
 expert	O
 user	O
+)	O
 .	O
 
 

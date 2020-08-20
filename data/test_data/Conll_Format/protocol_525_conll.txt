@@ -18,10 +18,9 @@ Let	B-Action
 sit	I-Action
 on	O
 ice	B-Temperature
-15	B-Time
-30	I-Time
+15-30	B-Time
 minutes	I-Time
-.	I-Time
+.	O
 
 Microfuge	B-Action
 at	O
@@ -41,8 +40,9 @@ tube	B-Location
 halfway	B-Generic-Measure
 with	O
 70	B-Concentration
-ethanol	I-Concentration
-.	B-Reagent
+%	I-Concentration
+ethanol	B-Reagent
+.	O
 
 Spin	B-Action
 at	O
@@ -59,10 +59,13 @@ above	O
 step	O
 one	B-Numerical
 time	I-Numerical
+(	O
 2nd	B-Modifier
-70	I-Modifier
-wash	B-Concentration
-.	B-Action
+70	B-Concentration
+%	I-Concentration
+wash	B-Action
+)	O
+.	O
 
 Remove	B-Action
 as	B-Modifier
@@ -79,19 +82,21 @@ tube	B-Location
 open	B-Modifier
 on	O
 bench	B-Location
-15	B-Time
+~	B-Time
+15	I-Time
 minutes	I-Time
-.	I-Time
+.	O
 
 Dissolve	B-Action
 in	O
 TE	B-Reagent
 buffer	I-Reagent
-pH	B-Modifier
-7	B-pH
-.	I-pH
-6	I-pH
-.	I-pH
+(	O
+~	B-Modifier
+pH	B-pH
+7.6	I-pH
+)	O
+.	O
 
 
 

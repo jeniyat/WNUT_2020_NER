@@ -3,32 +3,36 @@ protocol	O
 for	O
 unicellular	B-Reagent
 protists	I-Reagent
-Mitotracker	I-Reagent
-and	I-Reagent
-Dapi	I-Reagent
+:	O
+Mitotracker	B-Reagent
+and	O
+Dapi	B-Reagent
 
 2	B-Concentration
-PFA	I-Concentration
-Fixation	B-Reagent
-Add	B-Method
-PFA	B-Action
-drop	B-Reagent
-by	B-Modifier
+%	I-Concentration
+PFA	B-Reagent
+Fixation	B-Method
+:	O
+Add	B-Action
+PFA	B-Reagent
+drop	B-Modifier
+by	I-Modifier
 drop	I-Modifier
-and	I-Modifier
+and	O
 mixing	B-Action
-carefully	I-Action
-into	B-Modifier
-1mL	O
-cells	B-Amount
-for	B-Reagent
+carefully	B-Modifier
+into	O
+1mL	B-Amount
+cells	B-Reagent
+for	O
 a	O
 final	B-Modifier
-concentration	I-Modifier
-of	B-Measure-Type
-2	O
-PFA	B-Concentration
-.	B-Reagent
+concentration	B-Measure-Type
+of	O
+2	B-Concentration
+%	I-Concentration
+PFA	B-Reagent
+.	O
 
 Incubate	B-Action
 cells	B-Reagent
@@ -52,8 +56,9 @@ Wash	B-Action
 cells	B-Reagent
 with	O
 1XPBS	B-Concentration
-1	O
-2	O
+(	O
+1/2	O
+)	O
 .	O
 
 Resuspend	B-Action
@@ -78,11 +83,10 @@ light	I-Action
 .	O
 
 Add	B-Action
-1	B-Concentration
-1000	I-Concentration
-DAPI	I-Concentration
-dye	B-Reagent
-.	I-Reagent
+1/1000	B-Concentration
+DAPI	B-Reagent
+dye	I-Reagent
+.	O
 
 Room	B-Temperature
 temperature	I-Temperature
@@ -117,8 +121,9 @@ Wash	B-Action
 cells	B-Reagent
 with	O
 1XPBS	B-Concentration
-2	O
-2	O
+(	O
+2/2	O
+)	O
 .	O
 
 Incubate	B-Action
@@ -152,15 +157,17 @@ light	I-Action
 Wash	B-Action
 with	O
 1xPBS	B-Concentration
-1	O
-2	O
+(	O
+1/2	O
+)	O
 .	O
 
 Wash	B-Action
 with	O
 1xPBS	B-Concentration
-2	O
-2	O
+(	O
+2/2	O
+)	O
 
 
 

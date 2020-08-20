@@ -1,8 +1,7 @@
 NATURAL	B-Modifier
-SEAWATER	I-Modifier
-BASED	I-Modifier
-PRO99	I-Modifier
-MEDIUM	B-Reagent
+SEAWATER-BASED	I-Modifier
+PRO99	B-Reagent
+MEDIUM	I-Reagent
 
 Prepare	B-Action
 a	O
@@ -16,10 +15,9 @@ cleaning	B-Action
 with	O
 acid	B-Reagent
 and	O
-Milli	B-Reagent
-Q	I-Reagent
+Milli-Q	B-Reagent
 water	I-Reagent
-.	I-Reagent
+.	O
 
 Filter	B-Action
 raw	B-Modifier
@@ -27,21 +25,18 @@ seawater	B-Reagent
 through	O
 47mm	B-Size
 Whatman	B-Device
-GF	I-Device
-F	I-Device
-stacked	I-Device
-on	B-Action
+GF/F	I-Device
+stacked	B-Action
+on	O
 top	B-Location
-of	I-Location
+of	O
 a	O
 47mm	B-Size
-0	I-Size
-.	I-Size
-2	I-Size
+0.2	I-Size
 m	I-Size
-polycarbonate	I-Size
-filter	B-Device
-.	I-Device
+polycarbonate	B-Device
+filter	I-Device
+.	O
 
 Autoclave	B-Action
 seawater	B-Reagent
@@ -49,11 +44,13 @@ in	O
 a	O
 Teflon	B-Location
 bottle	I-Location
+(	O
 60	B-Time
 minutes	I-Time
-for	I-Time
-2L	O
-.	B-Amount
+for	O
+2L	B-Amount
+)	O
+.	O
 
 Allow	O
 to	O
@@ -62,17 +59,13 @@ overnight	B-Time
 .	O
 
 Prepare	B-Action
-0	B-Concentration
-.	I-Concentration
-5M	I-Concentration
+0.5M	B-Concentration
 NH4Cl	B-Reagent
 solution	I-Reagent
 .	O
 
 Prepare	B-Action
-0	B-Concentration
-.	I-Concentration
-025M	I-Concentration
+0.025M	B-Concentration
 NaH2PO4	B-Reagent
 H2O	I-Reagent
 solution	I-Reagent
@@ -119,22 +112,12 @@ seawater	B-Reagent
 
 NutrientVolumeFiltered	B-Modifier
 Seawater	B-Reagent
-1000	B-Amount
-.	I-Amount
-0mL0	I-Amount
-.	B-Concentration
-5M	I-Concentration
+1000.0mL0.5M	B-Amount
 NH4Cl	B-Reagent
-1	B-Amount
-.	I-Amount
-6mL0	I-Amount
-.	B-Concentration
-025M	I-Concentration
+1.6mL0.025M	B-Amount
 NaH2PO4	B-Reagent
 H2O	I-Reagent
-2	B-Amount
-.	I-Amount
-0mLTrace	I-Amount
+2.0mLTrace	B-Amount
 metal	B-Reagent
 working	I-Reagent
 stock	I-Reagent

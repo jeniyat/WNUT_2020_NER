@@ -6,7 +6,7 @@ import re
 from glob import glob
 from nltk import word_tokenize
 
-sys.path.insert(1, '../scripts/convert_standoff_conll_ner/')
+sys.path.append('../../scripts/convert_standoff_conll_ner/')
 import anntoconll_wlp
 
 

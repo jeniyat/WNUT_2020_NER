@@ -9,7 +9,7 @@ The end of sentence is marked with an empty line.
 # The standoff format:
 
 
-In the standoff format Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
+In the standoff format each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
 
 Within the document, individual annotations are connected to specific spans of text through character offsets. For example, in a document beginning "Weigh 5.73 g of TCEP." the text "Weigh" is identified by the offset range 0..5. (All offsets all indexed from 0 and include the character at the start offset but exclude the character at the end offset.)
 
@@ -92,6 +92,28 @@ Binary relations have a unique ID and are defined by their type (e.g. Measure, M
 
 The format is similar to that applied for events, with the exception that the annotation does not identify a specific piece of text expressing the relation ("trigger"): the ID is separated by a TAB character, and the relation type and arguments by SPACE.
 
+
+# The standoff format merged:
+
+
+In the standoff format each text document in the dataset is acompanied by a corresponding annotation file similar to the Standoff format.  While creating this merged version of the data file we merged multiple annotation within the same word to one. For example [line 9 of protocol_524](https://github.com/jeniyat/WNUT_2020_NER/blob/master/data/dev_data/Standoff_Format/protocol_524.txt#L9) has the following anntation:
+
+```
+			T62	Reagent 428 431	Cam
+			T63	Reagent 425 428	Kan
+			T64	Reagent 422 425	Tet
+			R18	Measure Arg1:T62 Arg2:T61	
+			R19	Measure Arg1:T63 Arg2:T60	
+			R20	Measure Arg1:T64 Arg2:T59	
+
+```
+In the merged standoff format we combine this as below:
+
+```
+			T36	Reagent 421 451	TetKanCam15ug/mL50ug/mL35ug/mL
+```
+
+Note that, the merged standoff format annotation files contains only entity information (they do not contain any relation).
 
 # Setup a BRAT server:
 

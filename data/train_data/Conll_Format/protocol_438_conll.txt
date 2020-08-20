@@ -3,9 +3,7 @@ Value	I-Method
 Method	I-Method
 
 Weigh	B-Action
-0	B-Amount
-.	I-Amount
-01	I-Amount
+0.01	B-Amount
 mg	I-Amount
 oil	B-Reagent
 into	O
@@ -52,9 +50,7 @@ so	O
 
 Up	B-Modifier
 to	I-Modifier
-0	B-Amount
-.	I-Amount
-10	I-Amount
+0.10	B-Amount
 g	I-Amount
 can	O
 be	O
@@ -76,25 +72,26 @@ solvent	I-Reagent
 and	O
 vortex	B-Action
 to	O
-dissolve	B-Action
-make	O
+dissolve-make	B-Action
 sure	O
-it	O
-is	B-Mention
+it	B-Mention
+is	O
 fully	B-Modifier
 dissolved	I-Modifier
-.	I-Modifier
+.	O
 
 Prepare	B-Action
 a	O
 blank	B-Modifier
 tube	B-Location
+(	O
 solvent	B-Reagent
-in	I-Reagent
+in	O
 place	O
 of	O
 sample	B-Reagent
-.	I-Reagent
+)	O
+.	O
 
 Add	B-Action
 15	B-Amount
@@ -107,10 +104,9 @@ tubes	B-Location
 ,	O
 and	O
 vortex	B-Action
-2	B-Time
-4	I-Time
+2-4	B-Time
 sec	I-Time
-.	I-Time
+.	O
 
 Add	B-Action
 15	B-Amount
@@ -123,10 +119,9 @@ tubes	B-Location
 ,	O
 and	O
 vortex	B-Action
-2	B-Time
-4	I-Time
+2-4	B-Time
 sec	I-Time
-.	I-Time
+.	O
 
 Let	B-Action
 sit	I-Action
@@ -160,49 +155,54 @@ using	O
 the	O
 following	O
 calculations	O
+:	O
 
-a	O
-.	O
+a.	O
 PV	B-Measure-Type
+(	O
 meq	B-Reagent
 peroxide	I-Reagent
-per	I-Reagent
-kg	O
-sample	B-Amount
-As	B-Reagent
+per	O
+kg	B-Amount
+sample	B-Reagent
+)	O
+=	O
+(	O
+As	O
 Ab	O
+)	O
 x	O
 m	O
-55	O
-.	O
-84	O
+/	O
+(	O
+55.84	O
 x	O
 m0	O
 x	O
 2	O
-As	O
-absorbance	O
-of	B-Measure-Type
-sampleAb	I-Measure-Type
-absorbance	B-Reagent
-of	B-Measure-Type
-blankm	I-Measure-Type
-slope	I-Measure-Type
-of	B-Reagent
-standard	I-Reagent
-curvem0	O
-mass	O
-in	O
-grams	O
-of	B-Measure-Type
-the	I-Measure-Type
-sample55	B-Amount
-.	O
-84	O
-atomic	B-Reagent
-weight	I-Reagent
+)	O
+As=	O
+absorbance	B-Measure-Type
 of	O
-iron	B-Measure-Type
+sampleAb=	B-Reagent
+absorbance	B-Measure-Type
+of	O
+blankm	B-Reagent
+=	O
+slope	O
+of	O
+standard	O
+curvem0=mass	B-Measure-Type
+in	O
+grams	B-Amount
+of	O
+the	O
+sample55.84	B-Reagent
+=	O
+atomic	B-Measure-Type
+weight	I-Measure-Type
+of	O
+iron	B-Reagent
 
 
 
