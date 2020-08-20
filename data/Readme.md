@@ -113,7 +113,7 @@ In the merged standoff format we combine this as below:
 			T36	Reagent 421 451	TetKanCam15ug/mL50ug/mL35ug/mL
 ```
 
-![standoff-vs-standoffmerged](./stand_off.png?raw=true)<!-- .element height="10%" width="10%" -->
+![standoff-vs-standoffmerged](./stand_off.png?raw=true)<!-- .element height="1%" width="1%" -->
 
 
 
