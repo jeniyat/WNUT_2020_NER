@@ -1,19 +1,27 @@
+This folder contains the surprised test data for the WNUT-2020 shared task on "Entity Recognition over Wet Lab Protocols". Currently the data does not contain any gold labels. Hence all `*.ann` file are empty; `*_conll.txt` files have all labels as 'O'. The gold labels will be released after the evalauation period.
+
+
+
 # Submission of Model Predictions
  
-You need to submit your model prediction on these new data by  **September 4, 2020 (AoE)**, with a brief description (<= 280 characters ) of your model  using the form: https://forms.gle/cYdpeQsQVAG1hkWM6 . The submission must 
+You need to submit your model prediction on these new data by  **September 4, 2020 (AoE)**, with a brief description (<= 280 characters ) of your model  using the form: https://forms.gle/cYdpeQsQVAG1hkWM6 . 
  
  
-# Submission Folder Format
+# Submission Instruction
 
 You are required to submit your model predictions in a zip file. The name of the zipped file must be in the following format:
+
 ```
 	<team_name>.zip  
 	[e.g., ‘OSU_NLP’ team must submit the predictions in ‘OSU_NLP.zip’]
 ```
-The zipped file should contain the predictions on these 111 protocols. You can submit your prediction in any format: [conll](../../data#the-standoff-format)/standoff.
+
+The zipped file should contain the predictions on these 111 protocols. You can submit your prediction in any format: [conll](../../data#the-conll-format) / [standoff](../../data#the-standoff-format).
+
+
+If you choose to submit predictions as standoff format below is the required directory structure. 
 
 ```
-If you choose to submit predictions as standoff format below is the required directory structure. 
 OSU_NLP/
 	├── protocol_0623.ann
 	├── protocol_0623.txt
@@ -24,6 +32,7 @@ OSU_NLP/
 	├── protocol_0626.ann
 	├ ….
 ```
+
 If you choose to submit predictions as conll format below is the required directory structure. 
 
 ```
