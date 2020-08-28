@@ -6,7 +6,7 @@ Currently the data of this folder do not contain any gold labels. All `*.ann` fi
 
 # Submission of System Output
  
-You need to submit your model prediction on these new data by  **September 4, 2020 (AoE)**, with a brief description (<= 280 characters ) of your model  using the form: https://forms.gle/cYdpeQsQVAG1hkWM6 . 
+You need to submit your model prediction on these new data by  **September 4, 2020 (AoE)**, with a brief description (<= 280 characters) of your model  using the [output submission the form](https://forms.gle/xMjAVnN4YgNS7LpSA). 
  
  
 ## Submission Instructions
