@@ -1,6 +1,6 @@
 This folder contains the surprised test data for the WNUT-2020 shared task on "Entity Recognition over Wet Lab Protocols". 
 
-Currently the data of this folder do not contain any gold labels. Here, all `*.ann` files are empty and the `*_conll.txt` files have all labels as 'O'. The gold labels for this dataset will be released after the evalauation period.
+Currently the data of this folder do not contain any gold labels. Here, all `*.ann` files are empty and the `*_conll.txt` files have all labels as 'O'. The gold labels for this dataset will be released after the evalauation period closes.
 
 
 
