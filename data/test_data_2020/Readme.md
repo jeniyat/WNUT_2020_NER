@@ -24,26 +24,26 @@ The zipped file should contain the predictions on these 111 protocols. You can s
 If you choose to submit predictions as standoff format below is the required directory structure. 
 
 ```
-OSU_NLP/
-	├── protocol_0623.ann
-	├── protocol_0623.txt
-	├── protocol_0624.ann
-	├── protocol_0624.txt
-	├── protocol_0625.ann
-	├── protocol_0625.txt
-	├── protocol_0626.ann
-	├ ….
+	OSU_NLP/
+		├── protocol_0623.ann
+		├── protocol_0623.txt
+		├── protocol_0624.ann
+		├── protocol_0624.txt
+		├── protocol_0625.ann
+		├── protocol_0625.txt
+		├── protocol_0626.ann
+		├   ...
 ```
 
 If you choose to submit predictions as conll format below is the required directory structure. 
 
 ```
-OSU_NLP/
-	├── protocol_0623_conll.txt
-	├── protocol_0624_conll.txt
-	├── protocol_0625_conll.txt
-	├── protocol_0626_conll.txt
-	├  ...
+	OSU_NLP/
+		├── protocol_0623_conll.txt
+		├── protocol_0624_conll.txt
+		├── protocol_0625_conll.txt
+		├── protocol_0626_conll.txt
+		├   ...
  
  
 ```
