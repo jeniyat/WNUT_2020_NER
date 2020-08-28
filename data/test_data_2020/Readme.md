@@ -18,7 +18,7 @@ You are required to submit your model predictions in a zip file. The name of the
 	[e.g., ‘OSU_NLP’ team must submit the predictions in ‘OSU_NLP.zip’]
 ```
 
-The zipped file should contain the predictions on these 111 protocols. You can submit your prediction in any format: [conll](../../data#the-conll-format) / [standoff](../../data#the-standoff-format).
+The zipped file should contain the predictions on these 111 protocols. You can submit your predictions in any format: [conll](../../data#the-conll-format) / [standoff](../../data#the-standoff-format).
 
 
 If you choose to submit predictions as standoff format below is the required directory structure. 
