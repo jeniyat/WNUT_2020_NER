@@ -1,13 +1,15 @@
-This folder contains the surprised test data for the WNUT-2020 shared task on "Entity Recognition over Wet Lab Protocols". Currently the data does not contain any gold labels. Hence all `*.ann` file are empty; `*_conll.txt` files have all labels as 'O'. The gold labels will be released after the evalauation period.
+This folder contains the surprised test data for the WNUT-2020 shared task on "Entity Recognition over Wet Lab Protocols". 
+
+Currently the data of this folder do not contain any gold labels. All `*.ann` file are empty and all the `*_conll.txt` files have all labels as 'O'. The gold labels for this dataset will be released after the evalauation period.
 
 
 
-# Submission of Model Predictions
+# Submission of System Output
  
 You need to submit your model prediction on these new data by  **September 4, 2020 (AoE)**, with a brief description (<= 280 characters ) of your model  using the form: https://forms.gle/cYdpeQsQVAG1hkWM6 . 
  
  
-# Submission Instruction
+## Submission Instructions
 
 You are required to submit your model predictions in a zip file. The name of the zipped file must be in the following format:
 
