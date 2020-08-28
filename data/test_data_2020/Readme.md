@@ -25,14 +25,14 @@ If you choose to submit predictions as standoff format below is the required dir
 
 ```
 	OSU_NLP/
-		├── protocol_0623.ann
-		├── protocol_0623.txt
-		├── protocol_0624.ann
-		├── protocol_0624.txt
-		├── protocol_0625.ann
-		├── protocol_0625.txt
-		├── protocol_0626.ann
-		├   ...
+	  ├── protocol_0623.ann
+	  ├── protocol_0623.txt
+	  ├── protocol_0624.ann
+	  ├── protocol_0624.txt
+	  ├── protocol_0625.ann
+	  ├── protocol_0625.txt
+	  ├── protocol_0626.ann
+	  ├   ...
 ```
 
 If you choose to submit predictions as conll format below is the required directory structure. 
