@@ -1,16 +1,16 @@
 Intracellular	B-Action
 Staining	I-Action
 With	O
-True-Phos™	B-Reagent
+True-Phos	B-Reagent
 Perm	I-Reagent
 Buffer	I-Reagent
 in	O
 Whole	B-Modifier
 Blood	B-Reagent
 
-Warm	B-Action
-1	B-Numerical
-X	B-Reagent
+Warm	B-Reagent
+1	I-Reagent
+X	I-Reagent
 RBC	I-Reagent
 Lysis/Fixation	I-Reagent
 Solution	I-Reagent
@@ -50,15 +50,17 @@ tube	I-Location
 and	O
 warm	B-Action
 to	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 Chill	B-Action
-True-Phos™	B-Reagent
+True-Phos	B-Reagent
 Perm	I-Reagent
 Buffer	I-Reagent
 to	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 .	O
 
 For	O
@@ -73,13 +75,14 @@ aliquot	B-Action
 1.0	B-Amount
 mL	I-Amount
 of	O
-True-Phos™	B-Reagent
+True-Phos	B-Reagent
 Perm	I-Reagent
 Buffer	I-Reagent
 and	O
 chill	B-Action
 to	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 .	O
 
 Aliquot	B-Action
@@ -88,8 +91,8 @@ mL	I-Amount
 of	O
 whole	B-Reagent
 blood	I-Reagent
-(	I-Reagent
-heparin	I-Reagent
+(	O
+heparin	O
 )	O
 into	O
 a	O
@@ -131,8 +134,8 @@ conical	B-Location
 ,	O
 due	O
 to	O
-volume	B-Measure-Type
-constraints	I-Measure-Type
+volume	B-Measure_Type
+constraints	I-Measure_Type
 .	O
 
 -Prepare	B-Action
@@ -174,8 +177,8 @@ immediately	B-Modifier
 after	I-Modifier
 treatment	I-Modifier
 by	O
-pre-warmed	B-Modifier
-1	B-Reagent
+pre-warmed	B-Reagent
+1	I-Reagent
 X	I-Reagent
 RBC	I-Reagent
 Lysis/Fixation	I-Reagent
@@ -192,7 +195,8 @@ mixing	B-Action
 
 Incubate	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 for	O
 15	B-Time
 minutes	I-Time
@@ -299,13 +303,13 @@ pellet	I-Reagent
 
 While	O
 vortexing	B-Action
-,	I-Action
-permeabilize	I-Action
+,	O
+permeabilize	B-Action
 cells	B-Reagent
 by	O
 adding	B-Action
 pre-chilled	B-Modifier
-True-Phos™	B-Reagent
+True-Phos	B-Reagent
 Perm	I-Reagent
 Buffer	I-Reagent
 .	O
@@ -325,14 +329,15 @@ with	O
 mL	I-Amount
 of	O
 pre-chilled	B-Modifier
-True-Phos™	B-Reagent
+True-Phos	B-Reagent
 Perm	I-Reagent
 Buffer	I-Reagent
 .	O
 
 Incubate	B-Action
 at	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 for	O
 60	B-Time
 minutes	I-Time
@@ -409,16 +414,16 @@ the	O
 cells	B-Reagent
 in	O
 a	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 Cell	B-Reagent
 Staining	I-Reagent
 Buffer	I-Reagent
-equivalent	O
+equivalent	I-Reagent
 to	O
 the	O
 starting	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 blood	B-Reagent
 .	O
@@ -427,7 +432,7 @@ Example	O
 :	O
 if	O
 starting	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 whole	B-Reagent
 blood	I-Reagent

@@ -141,8 +141,8 @@ tissue	B-Reagent
 block	I-Reagent
 at	O
 5-8	B-Size
-µm	I-Size
-thickness	B-Measure-Type
+m	I-Size
+thickness	B-Measure_Type
 on	O
 a	O
 microtome	B-Device
@@ -150,8 +150,9 @@ and	O
 float	B-Action
 in	O
 a	O
-40°C	B-Location
-water	I-Location
+40	B-Temperature
+C	I-Temperature
+water	B-Location
 bath	I-Location
 containing	O
 distilled	B-Modifier
@@ -170,8 +171,8 @@ immunohistochemistry	O
 (	O
 e.g	O
 .	O
-Superfrost	B-Reagent
-Plus	I-Reagent
+Superfrost	O
+Plus	O
 )	O
 .	O
 
@@ -242,8 +243,8 @@ alcohol	B-Reagent
 ,	O
 for	O
 a	O
-3-minute	B-Action
-change	I-Action
+3-minute	B-Method
+change	I-Method
 .	O
 (	O
 1/2	O
@@ -258,8 +259,8 @@ alcohol	B-Reagent
 ,	O
 for	O
 a	O
-3-minute	B-Action
-change	I-Action
+3-minute	B-Method
+change	I-Method
 .	O
 (	O
 2/2	O
@@ -268,7 +269,7 @@ change	I-Action
 Block	B-Action
 endogenous	B-Reagent
 peroxidase	I-Reagent
-activity	O
+activity	I-Reagent
 by	O
 incubating	B-Action
 sections	B-Reagent
@@ -289,7 +290,7 @@ to	O
 block	B-Action
 endogenous	B-Reagent
 peroxidase	I-Reagent
-activity	O
+activity	I-Reagent
 .	O
 
 Change	B-Action
@@ -333,7 +334,7 @@ Perform	B-Action
 antigen	B-Method
 retrieval	I-Method
 to	O
-unmask	B-Location
+unmask	O
 the	O
 antigenic	B-Reagent
 epitope	I-Reagent
@@ -341,8 +342,8 @@ epitope	I-Reagent
 
 The	O
 most	O
-commonly	B-Modifier
-used	I-Modifier
+commonly	O
+used	O
 antigen	B-Method
 retrieval	I-Method
 is	O
@@ -380,7 +381,8 @@ and	O
 incubate	B-Action
 it	B-Mention
 at	O
-95-100°C	B-Temperature
+95-100	B-Temperature
+C	I-Temperature
 for	O
 10	B-Time
 min	I-Time
@@ -451,7 +453,7 @@ optional	B-Modifier
 )	O
 Add	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 blocking	B-Reagent
 buffer	I-Reagent
 (	O
@@ -459,8 +461,8 @@ e.g	O
 .	O
 10	B-Concentration
 %	I-Concentration
-fetal	B-Reagent
-bovine	I-Reagent
+fetal	I-Concentration
+bovine	B-Reagent
 serum	I-Reagent
 in	O
 PBS	B-Reagent
@@ -481,15 +483,15 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
-1h	O
+1h	B-Time
 .	O
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 appropriately	B-Modifier
-diluted	I-Modifier
-primary	B-Reagent
+diluted	B-Reagent
+primary	I-Reagent
 antibody	I-Reagent
 (	O
 in	O
@@ -563,7 +565,7 @@ min	I-Time
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 appropriately	B-Modifier
 diluted	B-Reagent
 biotinylated	I-Reagent
@@ -630,7 +632,7 @@ min	I-Time
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 appropriately	B-Modifier
 diluted	B-Reagent
 Sav-HRP	I-Reagent
@@ -702,7 +704,7 @@ min	I-Time
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 DAB	B-Reagent
 substrate	I-Reagent
 solution	I-Reagent
@@ -746,11 +748,11 @@ for	O
 <	B-Modifier
 5	B-Time
 min	I-Time
-until	O
-the	O
-desired	O
-color	O
-intensity	O
+until	B-Modifier
+the	I-Modifier
+desired	I-Modifier
+color	I-Modifier
+intensity	I-Modifier
 is	O
 reached	O
 .	O
@@ -817,7 +819,6 @@ Hematoxylin	B-Reagent
 e.g	O
 .	O
 Gill	B-Reagent
-’	I-Reagent
 s	I-Reagent
 Hematoxylin	I-Reagent
 )	O
@@ -962,8 +963,8 @@ in	O
 the	O
 tissue	B-Reagent
 sections	I-Reagent
-under	O
-microscopy	B-Method
+under	B-Method
+microscopy	I-Method
 .	O
 
 Dehydrate	B-Action

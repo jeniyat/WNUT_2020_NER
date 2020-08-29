@@ -14,7 +14,7 @@ tubes	B-Location
 (	O
 numbered	O
 #	O
-1–	O
+1	O
 #	O
 9	O
 )	O
@@ -26,7 +26,7 @@ medium	B-Reagent
 
 Add	B-Action
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 the	O
 virus	B-Reagent
@@ -51,7 +51,7 @@ tip	I-Location
 and	O
 transfer	B-Action
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 suspension	B-Reagent
 #	O
@@ -90,14 +90,15 @@ pipetter	B-Device
 and	O
 add	B-Action
 150	B-Amount
-μL	I-Amount
+L	I-Amount
 culture	B-Reagent
 to	O
 each	B-Modifier
 well	B-Location
 in	O
 lines	B-Location
-1–9	I-Location
+1	I-Location
+9	I-Location
 of	O
 a	O
 96-well	B-Location
@@ -112,14 +113,15 @@ pipetter	B-Device
 and	O
 add	B-Action
 150	B-Amount
-μL	I-Amount
+L	I-Amount
 culture	B-Reagent
 to	O
 each	B-Modifier
 well	B-Location
 in	O
 lines	B-Location
-1–9	I-Location
+1	I-Location
+9	I-Location
 of	O
 a	O
 96-well	B-Location
@@ -134,7 +136,7 @@ tray	B-Location
 .	O
 
 Pour	B-Action
-dilution	I-Action
+dilution	B-Modifier
 tube	B-Location
 #	I-Location
 9	I-Location
@@ -157,14 +159,14 @@ pipetter	B-Device
 and	O
 add	B-Action
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 to	O
 each	B-Modifier
 well	B-Location
 in	O
-line	B-Method
-9	I-Method
+line	O
+9	O
 .	O
 
 Empty	B-Action
@@ -176,12 +178,12 @@ Repeat	B-Action
 step	B-Method
 8	I-Method
 and	I-Method
-10	B-Numerical
+10	I-Method
 for	O
 dilution	B-Location
 tube	I-Location
 #	I-Location
-8–	I-Location
+8	I-Location
 #	I-Location
 1	I-Location
 and	O
@@ -232,14 +234,14 @@ of	O
 cell	B-Reagent
 lysis	I-Reagent
 at	O
-regular	B-Reagent
-intervals	I-Reagent
+regular	B-Modifier
+intervals	I-Modifier
 .	O
 
 Mark	B-Action
 wells	B-Location
 where	O
-lysis	B-Reagent
+lysis	B-Method
 is	O
 observed	O
 and	O
@@ -252,15 +254,15 @@ inspections	O
 until	O
 no	O
 more	O
-lysis	B-Reagent
+lysis	B-Method
 occurs	O
 .	O
 
 Prepare	B-Action
 a	O
-second	O
-extinction	B-Measure-Type
-dilution	I-Measure-Type
+second	B-Method
+extinction	I-Method
+dilution	I-Method
 with	O
 virus	B-Reagent
 from	O
@@ -280,7 +282,7 @@ well	B-Location
 in	O
 a	O
 larger	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 and	O
 store	B-Action
 appropriately	B-Modifier

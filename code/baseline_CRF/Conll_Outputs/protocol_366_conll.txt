@@ -17,18 +17,19 @@ host	B-Reagent
 cells	I-Reagent
 overnight	B-Time
 in	O
-L	B-Reagent
-broth	I-Reagent
+L	B-Amount
+broth	B-Reagent
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 Inoculate	B-Action
 100	B-Amount
 mL	I-Amount
 of	O
-L	B-Reagent
-broth	I-Reagent
+L	B-Amount
+broth	B-Reagent
 with	O
 1	B-Amount
 mL	I-Amount
@@ -44,10 +45,11 @@ cells	B-Reagent
 with	O
 shaking	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 to	O
 a	O
-density	B-Measure-Type
+density	B-Measure_Type
 of	O
 approximately	B-Modifier
 5	B-Concentration
@@ -81,7 +83,8 @@ at	O
 5	B-Time
 min	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Discard	B-Action
@@ -96,7 +99,7 @@ with	O
 1/2	O
 the	O
 original	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 with	O
 an	O
 ice	B-Temperature
@@ -139,11 +142,11 @@ Resuspend	B-Action
 the	O
 cells	B-Reagent
 with	O
-1/15	O
+1/15	B-Amount
 of	O
 the	O
 original	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 with	O
 an	O
 ice	B-Temperature
@@ -178,7 +181,8 @@ Store	B-Action
 the	O
 cells	B-Reagent
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 for	O
 12-24	B-Time
 hours	I-Time
@@ -189,14 +193,14 @@ the	O
 DNA	B-Reagent
 in	O
 as	O
-small	O
-a	O
-volume	B-Measure-Type
+small	B-Amount
+a	I-Amount
+volume	I-Amount
 as	O
 possible	O
 (	O
-1-2	B-Numerical
-µL/plate	B-Action
+1-2	B-Amount
+L/plate	I-Amount
 )	O
 .	O
 
@@ -214,7 +218,8 @@ Transfer	B-Action
 the	O
 mixtures	B-Reagent
 to	O
-42°C	B-Temperature
+42	B-Temperature
+C	I-Temperature
 for	O
 2	B-Time
 min	I-Time
@@ -224,15 +229,16 @@ Add	B-Action
 1.0	B-Amount
 mL	I-Amount
 of	O
-L	B-Reagent
-broth	I-Reagent
+L	B-Amount
+broth	B-Reagent
 to	O
 each	B-Modifier
 tube	B-Location
 and	O
 incubate	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 for	O
 30	B-Time
 min	I-Time
@@ -247,20 +253,20 @@ min	I-Time
 ampicillin	B-Reagent
 or	O
 kanamycin	B-Reagent
-selection	B-Method
-)	I-Method
-without	I-Method
-shaking	I-Method
+selection	I-Reagent
+)	O
+without	O
+shaking	B-Action
 .	O
 
 Spread	B-Action
 an	O
 appropriate	B-Modifier
-volume	B-Measure-Type
+volume	B-Measure_Type
 (	O
 usually	B-Modifier
 100-200	B-Amount
-µL	I-Amount
+L	I-Amount
 )	O
 of	O
 cells	B-Reagent
@@ -273,10 +279,10 @@ either	O
 the	O
 spread	B-Action
 plate	B-Location
-method	B-Method
-or	I-Method
-the	I-Method
-agar	I-Method
+method	I-Location
+or	O
+the	O
+agar	B-Method
 overlay	I-Method
 method	I-Method
 .	O
@@ -290,9 +296,9 @@ temperature	I-Temperature
 until	O
 the	O
 agar	B-Reagent
-overlay	B-Modifier
-has	I-Modifier
-solidified	I-Modifier
+overlay	I-Reagent
+has	O
+solidified	B-Modifier
 or	O
 the	O
 liquid	B-Reagent
@@ -310,7 +316,8 @@ plates	B-Location
 and	O
 incubate	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 Colonies	O
@@ -335,7 +342,8 @@ at	O
 5	B-Time
 min	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 

@@ -1,9 +1,9 @@
 Preparing	B-Action
-Biological	B-Modifier
+Biological	O
 Samples	B-Reagent
 for	O
 Column	B-Location
-Chemistry	O
+Chemistry	I-Location
 
 Filtering	B-Method
 Cultures	I-Method
@@ -54,8 +54,8 @@ L	I-Amount
 ultra	B-Modifier
 pure	I-Modifier
 once	B-Numerical
-Ph	B-Measure-Type
-8	I-Measure-Type
+Ph	B-Method
+8	I-Method
 is	O
 reached	O
 .	O
@@ -64,7 +64,7 @@ reached	O
 ,	O
 EDTA	B-Reagent
 ;	O
-14.7g	O
+14.7g	B-Amount
 ,	O
 Sodium	B-Reagent
 Citrate	I-Reagent
@@ -93,8 +93,8 @@ of	O
 ,	O
 Oxalic	B-Reagent
 Acid	I-Reagent
-is	I-Reagent
-1.2	I-Reagent
+is	O
+1.2	B-Numerical
 .	O
 
 Harvest	B-Action
@@ -103,7 +103,7 @@ Once	O
 They	B-Mention
 Have	O
 Been	O
-Filtered	B-Action
+Filtered	O
 :	O
 
 Once	O
@@ -113,12 +113,12 @@ been	O
 grown	B-Action
 to	O
 their	O
-optimal	B-Measure-Type
-density	I-Measure-Type
+optimal	O
+density	B-Measure_Type
 (	O
 approximately	B-Modifier
-3500	B-Generic-Measure
-RFU	I-Generic-Measure
+3500	B-Generic_Measure
+RFU	I-Generic_Measure
 )	O
 ,	O
 they	B-Mention
@@ -141,13 +141,13 @@ are	O
 needed	O
 :	O
 a	O
-pair	B-Reagent
+pair	B-Modifier
 of	O
 tweezers	B-Device
 that	O
 have	O
 been	O
-cleaned	B-Action
+cleaned	B-Modifier
 in	O
 10	B-Concentration
 %	I-Concentration
@@ -157,7 +157,7 @@ overnight	B-Time
 polycarbonate	B-Device
 filters	I-Device
 (	O
-0.1um	B-Size
+0.1um	O
 )	O
 that	O
 have	O
@@ -190,13 +190,13 @@ one	O
 that	O
 contains	O
 UPW	B-Reagent
-,	I-Reagent
-oxalate	I-Reagent
-wash	I-Reagent
+,	O
+oxalate	O
+wash	B-Action
 ,	O
 a	O
 60ml	B-Amount
-syringe	I-Amount
+syringe	B-Device
 ,	O
 and	O
 syringe	B-Device
@@ -205,7 +205,7 @@ tip	I-Device
 .	O
 
 Label	B-Action
-several	I-Action
+several	B-Numerical
 15ml	B-Amount
 tubes	B-Location
 with	O
@@ -243,21 +243,17 @@ tubes	B-Location
 may	O
 say	O
 ,	O
-“	O
 solution	B-Reagent
 1	I-Reagent
-#	O
-1	O
+#	I-Reagent
+1	I-Reagent
 unwashed	B-Modifier
-”	O
 ,	O
-“	O
 solution	B-Reagent
 1	I-Reagent
-#	O
-2	B-Modifier
-washed	I-Modifier
-”	I-Modifier
+#	I-Reagent
+2	I-Reagent
+washed	I-Reagent
 .	O
 
 Once	O
@@ -284,8 +280,8 @@ one	B-Numerical
 polycarbonate	B-Device
 filter	I-Device
 from	O
-its	O
-container	B-Location
+its	B-Location
+container	I-Location
 and	O
 place	B-Action
 on	O
@@ -346,7 +342,7 @@ Once	O
 filter	B-Device
 has	O
 completely	B-Modifier
-drained	I-Modifier
+drained	B-Action
 ,	O
 unscrew	B-Location
 the	I-Location
@@ -372,9 +368,7 @@ tube	B-Location
 that	O
 is	O
 labeled	B-Modifier
-“	I-Modifier
 unwashed	I-Modifier
-”	I-Modifier
 .	O
 
 Syringe	B-Device
@@ -405,8 +399,8 @@ for	O
 Invert	B-Action
 bottle	B-Location
 a	O
-second	B-Time
-time	I-Time
+second	O
+time	O
 and	O
 place	B-Action
 a	O
@@ -447,12 +441,10 @@ filter	B-Device
 and	O
 place	B-Action
 in	O
-corresponding	B-Modifier
-tube	I-Modifier
-labeled	I-Modifier
-“	I-Modifier
+corresponding	O
+tube	B-Location
+labeled	B-Modifier
 washed	I-Modifier
-”	I-Modifier
 .	O
 
 Repeat	B-Action
@@ -482,8 +474,8 @@ rig	I-Device
 ,	O
 and	O
 put	B-Action
-everything	I-Action
-back	I-Action
+everything	O
+back	O
 in	O
 its	B-Mention
 place	B-Action
@@ -504,7 +496,7 @@ clean	B-Modifier
 lab	B-Reagent
 to	O
 be	O
-cleaned	B-Action
+cleaned	B-Modifier
 .	O
 
 All	O
@@ -524,7 +516,7 @@ order	O
 to	O
 examine	B-Action
 iron	B-Reagent
-limitation	I-Reagent
+limitation	B-Method
 .	O
 
 Preparation	B-Method
@@ -559,21 +551,21 @@ vial	B-Location
 Add	B-Action
 1	B-Amount
 mL	I-Amount
-conc	B-Measure-Type
+conc	B-Measure_Type
 .	O
 
 TE	B-Reagent
-clean	B-Modifier
-HCl	B-Reagent
+clean	I-Reagent
+HCl	I-Reagent
 and	O
 1	B-Amount
 mL	I-Amount
-conc	B-Measure-Type
+conc	B-Measure_Type
 .	O
 
 TE	B-Reagent
-clean	B-Modifier
-HNO3	B-Reagent
+clean	I-Reagent
+HNO3	I-Reagent
 to	O
 each	B-Modifier
 vial	B-Location
@@ -586,11 +578,11 @@ reaction	B-Reagent
 will	O
 produce	B-Action
 a	O
-corrosive	O
-and	O
-foul-smelling	B-Action
-orange	B-Modifier
-gas	O
+corrosive	B-Method
+and	I-Method
+foul-smelling	I-Method
+orange	I-Method
+gas	I-Method
 .	O
 
 Place	B-Action
@@ -603,8 +595,8 @@ place	B-Action
 vials	B-Location
 in	O
 a	O
-fume	B-Device
-hood	I-Device
+fume	B-Location
+hood	I-Location
 .	O
 
 IF	B-Reagent
@@ -620,9 +612,9 @@ PLATE	I-Reagent
 ,	O
 DO	O
 NOT	O
-TURN	B-Method
-ON	I-Method
-HEAT	I-Method
+TURN	B-Reagent
+ON	I-Reagent
+HEAT	I-Reagent
 .	O
 
 (	O
@@ -642,8 +634,8 @@ them	B-Mention
 overnight	B-Time
 in	O
 a	O
-fume	B-Device
-hood	I-Device
+fume	B-Location
+hood	I-Location
 .	O
 )	O
 
@@ -651,7 +643,7 @@ After	O
 the	O
 samples	B-Reagent
 have	O
-reacted	O
+reacted	B-Modifier
 overnight	B-Time
 ,	O
 remove	B-Action
@@ -662,7 +654,7 @@ the	O
 vials	B-Location
 with	O
 a	O
-pair	B-Reagent
+pair	B-Modifier
 of	O
 teflon	B-Reagent
 tweezers	I-Reagent
@@ -706,10 +698,10 @@ it	B-Mention
 ,	O
 and	O
 this	O
-acid	B-Method
-contains	I-Method
-valuable	I-Method
-amounts	I-Method
+acid	B-Reagent
+contains	O
+valuable	O
+amounts	O
 of	O
 Fe	O
 .	O
@@ -753,9 +745,9 @@ in	O
 uL	I-Amount
 of	O
 10N	B-Concentration
-HCl	B-Reagent
-+0.001	O
-%	B-Concentration
+HCl	I-Concentration
++0.001	I-Concentration
+%	I-Concentration
 H2O2	B-Reagent
 .	O
 
@@ -772,11 +764,9 @@ columns	B-Location
 
 Run	B-Action
 samples	B-Reagent
-through	I-Reagent
-‘	I-Reagent
-mini	I-Reagent
-’	I-Reagent
-columns	I-Reagent
+through	O
+mini	B-Location
+columns	I-Location
 (	O
 135	B-Amount
 uL	I-Amount
@@ -795,8 +785,8 @@ clean	B-Modifier
 each	I-Modifier
 of	O
 your	O
-PFA	B-Location
-vials	I-Location
+PFA	B-Reagent
+vials	I-Reagent
 by	O
 blasting	O
 then	O
@@ -860,7 +850,7 @@ dissolve	B-Action
 in	O
 100ul	B-Amount
 of	O
-conc	B-Measure-Type
+conc	B-Measure_Type
 .	O
 HNO3	B-Reagent
 .	O
@@ -894,11 +884,11 @@ on	O
 hot	B-Location
 plate	I-Location
 in	O
-biological	B-Modifier
-lab	B-Reagent
-to	O
-dry	B-Action
-down	I-Action
+biological	B-Method
+lab	I-Method
+to	I-Method
+dry	I-Method
+down	I-Method
 .	O
 
 Reconstitute	B-Action
@@ -938,14 +928,14 @@ Tim	O
 to	O
 run	B-Action
 on	O
-element	B-Device
+element	B-Reagent
 .	O
 
 (	O
 This	O
 gives	O
 the	O
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 that	O
 allows	O
 you	O
@@ -978,7 +968,7 @@ a	O
 sample	B-Reagent
 :	O
 spike	B-Action
-ratio	B-Measure-Type
+ratio	B-Measure_Type
 .	O
 
 The	O

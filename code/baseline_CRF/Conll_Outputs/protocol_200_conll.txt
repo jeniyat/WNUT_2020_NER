@@ -6,7 +6,7 @@ Natural	B-Reagent
 Waters	I-Reagent
 
 Salt	B-Action
-lake	I-Action
+lake	O
 samples	B-Reagent
 are	O
 collected	B-Action
@@ -18,19 +18,19 @@ which	O
 typically	O
 range	O
 from	O
-15	B-Concentration
-%	I-Concentration
-w/v	B-Reagent
-total	I-Reagent
-salt	I-Reagent
+15	B-Generic_Measure
+%	I-Generic_Measure
+w/v	B-Measure_Type
+total	O
+salt	B-Reagent
 ,	O
-up	B-Generic-Measure
-to	I-Generic-Measure
-saturation	I-Generic-Measure
-(	I-Generic-Measure
-ca	I-Generic-Measure
-35	I-Generic-Measure
-%	I-Generic-Measure
+up	O
+to	O
+saturation	B-Reagent
+(	O
+ca	O
+35	B-Concentration
+%	I-Concentration
 )	O
 .	O
 
@@ -39,9 +39,10 @@ are	O
 collected	B-Action
 in	O
 sterile	B-Modifier
-5–10	B-Amount
+5	B-Amount
+10	I-Amount
 mL	I-Amount
-vessels	I-Amount
+vessels	B-Reagent
 and	O
 may	O
 be	O
@@ -56,7 +57,7 @@ temperature	I-Temperature
 
 In	O
 the	O
-laboratory	B-Location
+laboratory	O
 ,	O
 cells	B-Reagent
 and	O
@@ -90,8 +91,8 @@ plaque	B-Method
 assay	I-Method
 .	O
 
-The	O
-choice	O
+The	B-Modifier
+choice	I-Modifier
 of	O
 host	B-Reagent
 strains	I-Reagent
@@ -102,26 +103,26 @@ experimental	B-Reagent
 objectives	I-Reagent
 ,	O
 and	O
-includes	B-Location
-well-characterized	I-Location
-members	I-Location
+includes	O
+well-characterized	B-Modifier
+members	B-Reagent
 of	O
 the	O
 Halobacteriaceae	B-Reagent
 ,	O
 such	O
 as	O
-Hbt	B-Reagent
+Hbt	O
 .	O
 
 salinarum	B-Reagent
 (	O
 host	B-Reagent
 for	O
-ΦH	O
+H	B-Modifier
 and	O
-several	B-Numerical
-others	O
+several	B-Generic_Measure
+others	I-Generic_Measure
 )	O
 or	O
 Har	B-Reagent
@@ -173,7 +174,7 @@ mm	I-Size
 are	O
 made	O
 with	O
-MGM	B-Location
+MGM	B-Reagent
 (	O
 see	O
 guidelines	O
@@ -192,7 +193,7 @@ range	O
 of	O
 salt	B-Reagent
 water	I-Reagent
-concentrations	B-Measure-Type
+concentrations	I-Reagent
 should	O
 be	O
 examined	B-Action
@@ -205,7 +206,7 @@ to	O
 greatly	O
 affect	O
 the	O
-size	B-Measure-Type
+size	O
 and	O
 clarity	O
 of	O
@@ -218,7 +219,8 @@ be	O
 stored	B-Action
 indefinitely	B-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 (	O
 wrapped	B-Action
 in	O
@@ -242,11 +244,12 @@ use	O
 .	O
 
 For	O
-virus	B-Reagent
-isolation	B-Method
+virus	B-Method
+isolation	I-Method
 ,	O
-100–500	B-Amount
-µl	I-Amount
+100	B-Amount
+500	I-Amount
+l	I-Amount
 of	O
 the	O
 cleared	B-Modifier
@@ -256,7 +259,7 @@ is	O
 mixed	B-Action
 with	O
 150	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 exponentially	B-Modifier
 growing	I-Modifier
@@ -266,15 +269,17 @@ cells	I-Reagent
 
 Then	O
 ,	O
-3–4	B-Amount
+3	B-Amount
+4	I-Amount
 mL	I-Amount
 of	O
-molten	B-Temperature
+molten	B-Modifier
 (	O
-50°C	B-Temperature
+50	B-Temperature
+C	I-Temperature
 )	O
-top-layer	B-Reagent
-MGM	I-Reagent
+top-layer	B-Device
+MGM	I-Device
 (	O
 with	O
 0.7	B-Concentration
@@ -288,7 +293,7 @@ added	B-Action
 and	O
 the	O
 solution	B-Reagent
-mixed	B-Action
+mixed	I-Reagent
 gently	B-Modifier
 and	O
 poured	B-Action
@@ -305,7 +310,8 @@ a	O
 level	B-Location
 surface	I-Location
 for	O
-5–10	B-Time
+5	B-Time
+10	I-Time
 min	I-Time
 ,	O
 plates	B-Location
@@ -318,17 +324,20 @@ in	O
 airtight	B-Modifier
 containers	B-Location
 at	O
-30°C	B-Temperature
+30	B-Temperature
+C	I-Temperature
 and	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 for	O
-1–4	B-Time
-d	I-Time
+1	B-Generic_Measure
+4	I-Generic_Measure
+d	O
 ,	O
 and	O
-checked	B-Action
-every	B-Time
-day	I-Time
+checked	B-Modifier
+every	I-Modifier
+day	I-Modifier
 for	O
 plaques	B-Reagent
 .	O
@@ -341,7 +350,7 @@ picked	B-Action
 using	O
 sterile	B-Modifier
 glass	I-Modifier
-Pasteur	I-Modifier
+Pasteur	B-Device
 pipettes	B-Location
 ,	O
 or	O
@@ -361,13 +370,13 @@ to	O
 tubes	B-Location
 containing	O
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 halovirus	B-Reagent
 diluent	I-Reagent
 :	O
-2.47	B-Generic-Measure
-M	I-Generic-Measure
+2.47	B-Concentration
+M	I-Concentration
 ,	O
 NaCl	B-Reagent
 ;	O
@@ -410,8 +419,8 @@ the	O
 sample	B-Reagent
 .	O
 
-These	O
-suspensions	B-Reagent
+These	B-Reagent
+suspensions	I-Reagent
 are	O
 then	O
 replaqued	B-Action
@@ -425,10 +434,8 @@ isolates	B-Reagent
 and	O
 to	O
 eliminate	B-Action
-“	O
 false	O
 plaques	B-Reagent
-”	O
 caused	O
 by	O
 artifacts	O
@@ -437,7 +444,7 @@ the	O
 agar	B-Reagent
 overlay	I-Reagent
 or	O
-contaminants	B-Action
+contaminants	B-Reagent
 in	O
 the	O
 water	B-Reagent

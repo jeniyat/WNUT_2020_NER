@@ -1,11 +1,11 @@
-NEXTflex™	B-Amount
-Small	B-Modifier
+NEXTflex	B-Modifier
+Small	I-Modifier
 RNA	B-Method
 Sequencing	I-Method
 for	O
 Small	B-Modifier
 RNA	B-Reagent
-Starting	O
+Starting	B-Action
 Material	B-Reagent
 
 Vortex	B-Action
@@ -87,7 +87,8 @@ use	O
 Inhibitor	O
 Incubate	B-Action
 at	O
-22°C	B-Temperature
+22	B-Temperature
+C	I-Temperature
 for	O
 2	B-Time
 hours	I-Time
@@ -97,30 +98,30 @@ thermocycler	B-Device
 .	O
 
 For	O
-ligations	B-Reagent
+ligations	O
 to	O
 2	O
-’	O
 O-methylated	B-Modifier
 small	B-Reagent
 RNAs	I-Reagent
 ,	O
 such	O
-as	O
-those	O
-found	O
+as	B-Method
+those	I-Method
+found	I-Method
 in	O
 plants	B-Reagent
 ,	O
 incubate	B-Action
 at	O
-16°C	B-Temperature
+16	B-Temperature
+C	I-Temperature
 overnight	B-Time
 .	O
 
 Add	B-Action
 10	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Nuclease-free	B-Reagent
 Water	I-Reagent
@@ -135,7 +136,7 @@ pipetting	B-Action
 
 Add	B-Action
 6	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Adapter	B-Reagent
 Depletion	I-Reagent
@@ -149,14 +150,14 @@ pipetting	B-Action
 
 Add	B-Action
 40	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
 beads	I-Reagent
 and	O
 60	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 ispropanol	B-Reagent
 and	O
@@ -192,7 +193,7 @@ Wash	B-Action
 :	O
 Add	B-Action
 180	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -215,7 +216,7 @@ P300	B-Reagent
 set	I-Reagent
 to	O
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 .	O
 
 Wash	B-Action
@@ -224,7 +225,7 @@ Wash	B-Action
 :	O
 Add	B-Action
 180	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -247,7 +248,7 @@ P300	B-Reagent
 set	I-Reagent
 to	O
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 .	O
 
 Incubate	B-Action
@@ -288,7 +289,7 @@ bead	B-Reagent
 pellet	I-Reagent
 in	O
 22	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Resuspenion	B-Reagent
 Buffer	I-Reagent
@@ -318,7 +319,7 @@ incubation	I-Modifier
 ,	O
 add	B-Action
 6	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Adapter	B-Reagent
 Depletion	I-Reagent
@@ -341,16 +342,16 @@ clear	B-Modifier
 
 Transfer	B-Action
 20	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 supernatant	B-Reagent
 to	O
 the	O
-well	B-Location
-containing	O
-6	B-Amount
-µL	I-Amount
-Adapter	B-Reagent
+well	B-Modifier
+containing	I-Modifier
+6	I-Modifier
+L	B-Reagent
+Adapter	I-Reagent
 Depletion	I-Reagent
 Solution	I-Reagent
 and	O
@@ -362,7 +363,7 @@ pipette	B-Action
 
 Add	B-Action
 40	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -371,7 +372,7 @@ beads	I-Reagent
 
 Add	B-Action
 60	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 isopropanol	B-Reagent
 and	O
@@ -407,7 +408,7 @@ Wash	B-Action
 :	O
 Add	B-Action
 180	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -430,7 +431,7 @@ P300	B-Reagent
 set	I-Reagent
 to	O
 200	B-Amount
-µL	I-Amount
+L	I-Amount
 .	O
 
 Wash	B-Action
@@ -439,7 +440,7 @@ Wash	B-Action
 :	O
 Add	B-Action
 180	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -462,7 +463,7 @@ P300	B-Reagent
 set	I-Reagent
 to	O
 200	B-Amount
-µL	I-Amount
+L	I-Amount
 .	O
 
 Incubate	B-Action
@@ -481,8 +482,8 @@ all	O
 residual	B-Modifier
 liquid	B-Reagent
 that	O
-mayhave	B-Modifier
-collected	I-Modifier
+mayhave	O
+collected	B-Action
 at	O
 the	O
 bottom	B-Location
@@ -502,7 +503,7 @@ bead	B-Reagent
 pellet	I-Reagent
 in	O
 12	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Nuclease-freeWater	B-Reagent
 by	O
@@ -537,7 +538,7 @@ clear	B-Modifier
 
 Transfer	B-Action
 11	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 supernatant	B-Reagent
 to	O
@@ -552,18 +553,18 @@ reaction	B-Reagent
 ,	O
 add	B-Action
 1.5	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 the	O
 5	B-Reagent
-’	I-Reagent
-NEXTflex™	I-Reagent
+NEXTflex	I-Reagent
 4N	I-Reagent
 Adapter	I-Reagent
 and	O
 heat	B-Action
 at	O
-70°C	B-Temperature
+70	B-Temperature
+C	I-Temperature
 for	O
 2	B-Time
 minutes	I-Time
@@ -577,7 +578,8 @@ ice	B-Location
 
 Incubate	B-Action
 at	O
-20°C	B-Temperature
+20	B-Temperature
+C	I-Temperature
 for	O
 1	B-Time
 hour	I-Time
@@ -588,8 +590,8 @@ thermocycler	B-Device
 
 Add	B-Action
 1	B-Amount
-µL	I-Amount
-NEXTflex™	B-Reagent
+L	I-Amount
+NEXTflex	B-Reagent
 RT	I-Reagent
 primer	I-Reagent
 to	O
@@ -599,7 +601,8 @@ sample	B-Reagent
 
 Heat	B-Action
 at	O
-70°C	B-Temperature
+70	B-Temperature
+C	I-Temperature
 for	O
 2	B-Time
 minutes	I-Time
@@ -628,13 +631,15 @@ in	O
 a	O
 thermocycler	B-Device
 at	O
-44°C	B-Temperature
+44	B-Temperature
+C	I-Temperature
 for	O
 1	B-Time
 hour	I-Time
 followed	O
 by	O
-90°C	B-Temperature
+90	B-Temperature
+C	I-Temperature
 for	O
 10	B-Time
 minutes	I-Time
@@ -653,12 +658,13 @@ and	O
 samples	B-Reagent
 stored	B-Action
 at	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 .	O
 
 Add	B-Action
 10	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Adapter	B-Reagent
 Depletion	I-Reagent
@@ -675,14 +681,14 @@ pipette	B-Action
 
 Add	B-Action
 40	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
 beads	I-Reagent
 and	O
 90	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 ispropanol	B-Reagent
 and	O
@@ -718,7 +724,7 @@ Wash	B-Action
 :	O
 Add	B-Action
 180	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -741,7 +747,7 @@ P300	B-Reagent
 set	I-Reagent
 to	O
 200	B-Amount
-µL	I-Amount
+L	I-Amount
 .	O
 
 Wash	B-Action
@@ -750,7 +756,7 @@ Wash	B-Action
 :	O
 Add	B-Action
 180	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -773,7 +779,7 @@ P300	B-Reagent
 set	I-Reagent
 to	O
 200	B-Amount
-µL	I-Amount
+L	I-Amount
 .	O
 
 Incubate	B-Action
@@ -792,8 +798,8 @@ any	O
 residual	B-Modifier
 liquid	B-Reagent
 that	O
-mayhave	B-Modifier
-collected	I-Modifier
+mayhave	O
+collected	B-Action
 at	O
 the	O
 bottom	B-Location
@@ -813,7 +819,7 @@ bead	B-Reagent
 pellet	I-Reagent
 in	O
 19	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Nuclease-freeWater	B-Reagent
 by	O
@@ -843,7 +849,7 @@ clear	B-Modifier
 
 Transfer	B-Action
 18	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 supernatant	B-Reagent
 to	O
@@ -854,7 +860,7 @@ well	B-Location
 
 Add	B-Action
 5	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 6X	B-Concentration
 Gel	B-Reagent
@@ -882,8 +888,8 @@ gel	I-Reagent
 We	O
 recommend	O
 leaving	B-Action
-1-2	B-Numerical
-lanes	B-Location
+1-2	B-Generic_Measure
+lanes	I-Generic_Measure
 between	O
 samples	B-Reagent
 prepared	O
@@ -913,8 +919,8 @@ may	O
 be	O
 run	B-Action
 in	O
-adjacent	O
-lanes	B-Generic-Measure
+adjacent	B-Generic_Measure
+lanes	I-Generic_Measure
 .	O
 
 In	O
@@ -923,14 +929,14 @@ adjacent	B-Reagent
 lane	I-Reagent
 load	B-Action
 10	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Ready	O
 to	O
 Load	B-Action
-Low	O
-MW	O
-Ladder	B-Reagent
+Low	B-Reagent
+MW	I-Reagent
+Ladder	I-Reagent
 .	O
 
 Run	B-Action
@@ -941,8 +947,8 @@ with	O
 TBE	B-Reagent
 buffer	I-Reagent
 at	O
-200	B-Generic-Measure
-V	I-Generic-Measure
+200	B-Generic_Measure
+V	I-Generic_Measure
 until	O
 the	O
 lower	B-Reagent
@@ -1004,8 +1010,8 @@ Gold	I-Reagent
 Invitrogen	O
 )	O
 per	O
-manufacturer	B-Method
-instructions	I-Method
+manufacturer	O
+instructions	O
 .	O
 
 Visualize	B-Action
@@ -1029,8 +1035,8 @@ razor	B-Device
 cut	B-Action
 out	I-Action
 the	O
-~150	B-Generic-Measure
-bp	I-Generic-Measure
+~150	B-Modifier
+bp	I-Modifier
 band	B-Reagent
 and	O
 place	B-Action
@@ -1046,8 +1052,8 @@ not	I-Action
 cut	I-Action
 out	I-Action
 the	O
-~130	B-Generic-Measure
-bp	I-Generic-Measure
+~130	B-Modifier
+bp	I-Modifier
 band	B-Reagent
 ;	O
 this	O
@@ -1070,8 +1076,8 @@ The	O
 ladder	B-Reagent
 band	I-Reagent
 at	O
-200	B-Generic-Measure
-bp	I-Generic-Measure
+200	B-Generic_Measure
+bp	I-Generic_Measure
 is	O
 twice	B-Numerical
 as	O
@@ -1131,7 +1137,7 @@ tube	B-Location
 
 Add	B-Action
 300	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Elution	B-Reagent
 Buffer	I-Reagent
@@ -1265,14 +1271,14 @@ mix	B-Action
 well*	O
 :	O
 50	B-Amount
-µL	I-Amount
+L	I-Amount
 ,	O
 AMPure	B-Reagent
 XP	I-Reagent
 Beads	I-Reagent
 ;	O
 350	B-Amount
-µL	I-Amount
+L	I-Amount
 ,	O
 Isopropanol	B-Reagent
 .	O
@@ -1292,9 +1298,9 @@ this	O
 incubation	B-Method
 may	O
 increase	B-Action
-efficiency	B-Measure-Type
-of	I-Measure-Type
-recovery	I-Measure-Type
+efficiency	B-Measure_Type
+of	I-Measure_Type
+recovery	I-Measure_Type
 .	O
 
 Magnetize	B-Action
@@ -1318,7 +1324,7 @@ supernatant	B-Reagent
 ,	O
 add	B-Action
 950	B-Amount
-µL	I-Amount
+L	I-Amount
 80	B-Concentration
 %	I-Concentration
 ethanol	B-Reagent
@@ -1344,7 +1350,7 @@ supernatant	B-Reagent
 ,	O
 add	B-Action
 950	B-Amount
-µL	I-Amount
+L	I-Amount
 80	B-Concentration
 %	I-Concentration
 ethanol	B-Reagent
@@ -1394,7 +1400,7 @@ bead	B-Reagent
 pellet	I-Reagent
 in	O
 13	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 Resuspension	B-Reagent
 Buffer	I-Reagent
@@ -1435,7 +1441,7 @@ clear	B-Modifier
 
 Transfer	B-Action
 12	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 supernatant	B-Reagent
 to	O
@@ -1455,21 +1461,21 @@ library	I-Reagent
 
 Check	B-Action
 the	O
-size	B-Measure-Type
-distribution	I-Measure-Type
+size	B-Measure_Type
+distribution	I-Measure_Type
 and	O
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 of	O
 the	O
-final	B-Reagent
-library	I-Reagent
+final	B-Modifier
+library	B-Reagent
 by	O
-Bioanalyzer	B-Device
-HighSensitivity	I-Device
-DNA	B-Reagent
-Assay	I-Reagent
-(	I-Reagent
-Agilent	I-Reagent
+Bioanalyzer	B-Method
+HighSensitivity	I-Method
+DNA	I-Method
+Assay	I-Method
+(	O
+Agilent	O
 )	O
 .	O
 

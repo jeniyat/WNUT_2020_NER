@@ -1,15 +1,16 @@
 Modified	B-Modifier
-Qiagen	I-Modifier
-QIAprep	I-Modifier
+Qiagen	B-Reagent
+QIAprep	I-Reagent
 Spin	B-Action
 Miniprep	B-Method
 
 Resuspend	B-Action
-pelleted	B-Modifier
-bacterial	B-Reagent
+pelleted	B-Reagent
+bacterial	I-Reagent
 cells	I-Reagent
 in	O
-250μl	B-Amount
+250	B-Amount
+l	I-Amount
 Buffer	B-Reagent
 P1	I-Reagent
 and	O
@@ -27,8 +28,8 @@ A	I-Reagent
 has	O
 been	O
 added	B-Action
-to	B-Reagent
-Buffer	I-Reagent
+to	O
+Buffer	B-Reagent
 P1	I-Reagent
 .	O
 
@@ -51,8 +52,8 @@ reagent	I-Reagent
 has	O
 been	O
 added	B-Action
-to	B-Reagent
-Buffer	I-Reagent
+to	O
+Buffer	B-Reagent
 P1	I-Reagent
 ,	O
 vigorously	B-Modifier
@@ -91,7 +92,7 @@ remain	O
 
 Add	B-Action
 250	B-Amount
-μl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 P2	I-Reagent
 and	O
@@ -101,8 +102,9 @@ by	O
 inverting	B-Action
 the	O
 tube	B-Location
-4–6	B-Numerical
-times	O
+4	B-Numerical
+6	I-Numerical
+times	I-Numerical
 .	O
 
 Mix	B-Action
@@ -154,8 +156,8 @@ reaction	I-Reagent
 to	O
 proceed	B-Action
 for	O
-more	O
-than	O
+more	B-Modifier
+than	I-Modifier
 5	B-Time
 min	I-Time
 .	O
@@ -165,8 +167,8 @@ LyseBlue	B-Reagent
 has	O
 been	O
 added	B-Action
-to	B-Reagent
-Buffer	I-Reagent
+to	O
+Buffer	B-Reagent
 P1	I-Reagent
 the	O
 cell	B-Reagent
@@ -222,7 +224,7 @@ achieved	B-Action
 
 Add	B-Action
 350	B-Amount
-μl	I-Amount
+l	I-Amount
 Buffer	B-Reagent
 N3	I-Reagent
 and	O
@@ -234,8 +236,9 @@ by	O
 inverting	B-Action
 the	O
 tube	B-Location
-4–6	B-Numerical
-times	O
+4	B-Numerical
+6	I-Numerical
+times	I-Numerical
 .	O
 
 To	O
@@ -249,8 +252,8 @@ solution	B-Reagent
 thoroughly	B-Modifier
 ,	O
 immediately	B-Modifier
-after	I-Modifier
-addition	I-Modifier
+after	O
+addition	B-Action
 of	O
 Buffer	B-Reagent
 N3	I-Reagent
@@ -258,12 +261,12 @@ N3	I-Reagent
 
 Large	B-Action
 culture	B-Reagent
-volumes	B-Measure-Type
+volumes	B-Measure_Type
 (	O
 e.g	O
 .	O
 
-≥5	B-Amount
+5	B-Amount
 ml	I-Amount
 )	O
 may	O
@@ -310,8 +313,8 @@ colorless	B-Modifier
 
 A	O
 homogeneous	B-Reagent
-colorless	B-Modifier
-sus-	B-Reagent
+colorless	I-Reagent
+sus-	I-Reagent
 pension	I-Reagent
 indicates	O
 that	O
@@ -368,8 +371,9 @@ pipetting	B-Action
 
 Centrifuge	B-Action
 for	O
-30–60	B-Time
-s.	I-Time
+30	B-Temperature
+60	I-Temperature
+s.	O
 Place	B-Action
 flow	B-Reagent
 through	O
@@ -382,8 +386,9 @@ column	I-Location
 
 Centrifuge	B-Action
 for	O
-30–60	B-Time
-s.	I-Time
+30	B-Temperature
+60	I-Temperature
+s.	O
 Discard	B-Action
 the	O
 flow-through	B-Reagent
@@ -403,8 +408,9 @@ PB	I-Reagent
 and	O
 centrifuging	B-Action
 for	O
-30–60	B-Time
-s.	I-Time
+30	B-Temperature
+60	I-Temperature
+s.	O
 Discard	B-Action
 the	O
 flow-through	B-Reagent
@@ -418,7 +424,7 @@ to	O
 remove	B-Action
 trace	B-Reagent
 nuclease	I-Reagent
-activity	O
+activity	I-Reagent
 when	O
 using	O
 endA+	B-Reagent
@@ -426,12 +432,12 @@ strains	I-Reagent
 such	O
 as	O
 the	O
-JM	B-Location
+JM	O
 series	O
 ,	O
-HB101	O
+HB101	B-Reagent
 and	O
-its	O
+its	B-Mention
 derivatives	O
 ,	O
 or	O
@@ -447,8 +453,8 @@ of	O
 nuclease	B-Reagent
 activity	O
 or	O
-high	B-Modifier
-carbohydrate	I-Modifier
+high	B-Generic_Measure
+carbohydrate	I-Generic_Measure
 content	O
 .	O
 
@@ -459,13 +465,13 @@ as	O
 XL-1	B-Reagent
 Blue	I-Reagent
 and	O
-DH5®α	B-Modifier
+DH5	B-Modifier
 do	I-Modifier
 not	I-Modifier
 require	I-Modifier
 this	I-Modifier
 additional	I-Modifier
-wash	B-Action
+wash	I-Modifier
 step	O
 .	O
 
@@ -482,8 +488,9 @@ PE	I-Reagent
 and	O
 centrifuging	B-Action
 for	O
-30–60	B-Time
-s.	I-Time
+30	B-Temperature
+60	I-Temperature
+s.	O
 Discard	B-Action
 the	O
 flow-through	B-Reagent
@@ -526,10 +533,10 @@ additional	I-Modifier
 centrifugation	B-Method
 .	O
 
-Residual	B-Action
+Residual	B-Modifier
 ethanol	B-Reagent
-from	I-Reagent
-Buffer	I-Reagent
+from	O
+Buffer	B-Reagent
 PE	I-Reagent
 may	O
 inhibit	B-Action
@@ -557,15 +564,15 @@ DNA	B-Reagent
 ,	O
 add	B-Action
 20	B-Amount
-μl	I-Amount
+l	I-Amount
 water	B-Reagent
 to	O
 the	O
 center	B-Location
 of	O
-each	B-Modifier
-QIAprep	I-Modifier
-spin	B-Location
+each	B-Location
+QIAprep	I-Location
+spin	I-Location
 column	I-Location
 ,	O
 let	B-Action
@@ -586,15 +593,15 @@ DNA	B-Reagent
 ,	O
 add	B-Action
 30	B-Amount
-μl	I-Amount
+l	I-Amount
 water	B-Reagent
 to	O
 the	O
 center	B-Location
 of	O
-each	B-Modifier
-QIAprep	I-Modifier
-spin	B-Location
+each	B-Location
+QIAprep	I-Location
+spin	I-Location
 column	I-Location
 ,	O
 let	B-Action

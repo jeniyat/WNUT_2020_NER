@@ -16,9 +16,9 @@ plates	I-Location
 using	O
 0.4	B-Concentration
 %	I-Concentration
-GIBCO	I-Concentration
-LM	I-Concentration
-agarose	B-Reagent
+GIBCO	B-Reagent
+LM	I-Reagent
+agarose	I-Reagent
 (	O
 0.4g	B-Amount
 agarose	B-Reagent
@@ -29,7 +29,7 @@ ml	I-Amount
 .	O
 
 Make	B-Action
-up	I-Action
+up	B-Modifier
 plates	B-Location
 using	O
 filtered	B-Action
@@ -131,7 +131,7 @@ agarose	I-Location
 as	O
 0.5	B-Concentration
 %	I-Concentration
-GIBCO	I-Concentration
+GIBCO	B-Reagent
 .	O
 
 Low-Melt	B-Action
@@ -147,7 +147,7 @@ autoclaved	B-Modifier
 SSW	B-Reagent
 to	O
 make	B-Action
-up	I-Action
+up	B-Modifier
 plates	B-Location
 .	O
 
@@ -177,17 +177,19 @@ pre-heated	B-Modifier
 water	B-Location
 bath	I-Location
 to	O
-~29°C	B-Temperature
+~29	B-Temperature
+C	I-Temperature
 (	O
 solidifies	O
-~24-28°C	B-Temperature
+~24-28	B-Temperature
+C	I-Temperature
 )	O
 .	O
 
 Asceptically	B-Modifier
 add	B-Action
-filter	B-Device
-sterilized	B-Modifier
+filter	B-Modifier
+sterilized	I-Modifier
 nutrients	B-Reagent
 to	O
 bring	B-Action
@@ -205,7 +207,7 @@ choice	I-Modifier
 
 Add	B-Action
 appropriate	B-Modifier
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 cells	B-Reagent
 to	O
@@ -284,8 +286,8 @@ parafilm	I-Method
 the	O
 plates	B-Location
 (	O
-humidity	B-Measure-Type
-control	I-Measure-Type
+humidity	B-Measure_Type
+control	I-Measure_Type
 )	O
 and	O
 place	B-Action

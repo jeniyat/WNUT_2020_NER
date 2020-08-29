@@ -416,7 +416,7 @@ def process_files(files, output_directory_main, phase_name):
 
     
     for fn in files:
-        print("now_processing: ",fn)
+        # print("now_processing: ",fn)
         with open(fn, 'rU') as f:
             lines = text_to_conll(f)
             # print(lines)
@@ -569,7 +569,7 @@ def get_annotations(fn):
 
 # end standoff processing
 
-def Read_Main_Input_Folder(input_folder, phase_name):
+def Read_Main_Input_Folder(input_folder, phase_name=""):
     start_dir = input_folder
     # start_dir = "/Users/jeniya/Desktop/NER_RECOG_SW/brat-v1.3_Crunchy_Frog/data/so_annotated_data/selected/phase_01_01"
     pattern   = "*.txt"
@@ -589,6 +589,7 @@ def Read_Main_Input_Folder(input_folder, phase_name):
 
 
 def covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", output_folder = 'all_data/train_data/Conll_Format/'):
+    # print(input_folder_main, output_folder)
 
 
     global options
@@ -614,17 +615,33 @@ def covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", ou
             # list_of_phases.append(phase_num)
         except: 
             continue
-    print(list_of_folders)   
+    
+    if len(list_of_folders)==0:
+        list_of_folders=[input_folder_main]   
+    # print(list_of_folders)
     for folder in list_of_folders:
-        phase_name= folder +"/"
+        phase_name= ""
         input_folder=input_folder_main+phase_name
-        # print(input_folder)
+        # print("input_folder", input_folder)
         list_of_files=Read_Main_Input_Folder(input_folder, phase_name.replace("/",""))
         # print(list_of_files)
         # list_of_files=['checked_annotations_training/phase_01/protocol_0.txt']
         process_files(list_of_files, output_folder,phase_name)
 
 
+def convert_standoff_conll_single_file(input_standoff_folder, output_conll_folder, output_conll_file):
+    covert_standoff_to_conll(input_folder_main= input_standoff_folder, output_folder = output_conll_folder)
+    list_of_files = sorted(Read_Main_Input_Folder(output_conll_folder))
+
+    fout = open(output_conll_file,'w')
+    for file_path in list_of_files:
+        for line in open(file_path):
+            fout.write(line)
+        fout.write("\n")
+        fout.flush()
+
+
+    # print(list_of_files)
 if __name__ == "__main__":
     covert_standoff_to_conll(input_folder_main= "all_data/train_data/train/", output_folder = 'all_data/train_data/Conll_Format/')
     covert_standoff_to_conll(input_folder_main= "all_data/test_data/test/", output_folder = 'all_data/test_data/Conll_Format/')

@@ -1,4 +1,4 @@
-BetaMark™	B-Device
+BetaMark	B-Device
 x-40	I-Device
 ELISA	I-Device
 Kit	I-Device
@@ -114,9 +114,9 @@ vortex	B-Action
 .	O
 
 Once	O
-reconstituted	B-Reagent
-,	I-Reagent
-standard	I-Reagent
+reconstituted	B-Modifier
+,	O
+standard	O
 must	O
 be	O
 used	O
@@ -188,9 +188,9 @@ not	O
 vortex	B-Action
 The	O
 final	O
-concentration	B-Measure-Type
-of	I-Measure-Type
-standard	I-Measure-Type
+concentration	B-Measure_Type
+of	O
+standard	O
 in	O
 intermediate	B-Location
 tube	I-Location
@@ -207,11 +207,9 @@ a	O
 centrifuge	B-Location
 tube	I-Location
 as	O
-“	O
 1X	B-Concentration
 Incubation	B-Reagent
 Buffer	I-Reagent
-”	O
 .	O
 
 Dilute	B-Action
@@ -237,12 +235,10 @@ in	O
 the	O
 50mL	B-Amount
 tube	B-Location
-labeled	O
-“	O
+labeled	B-Modifier
 1X	B-Concentration
 Incubation	B-Reagent
 Buffer	I-Reagent
-”	O
 .	O
 
 *Note	O
@@ -290,11 +286,9 @@ Label	B-Action
 a	O
 1L	B-Amount
 container	B-Location
-“	O
 1X	B-Concentration
 Wash	B-Reagent
 buffer	I-Reagent
-”	O
 .	O
 
 Dilute	B-Action
@@ -322,7 +316,7 @@ water	I-Reagent
 for	O
 a	O
 total	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 625mL	B-Amount
 .	O
@@ -365,9 +359,9 @@ the	O
 standard	O
 curve	O
 tubes	B-Location
-(	I-Location
-#	I-Location
-2-8	I-Location
+(	O
+#	O
+2-8	O
 )	O
 and	O
 490uL	B-Amount
@@ -375,10 +369,10 @@ to	O
 tube	B-Location
 #	I-Location
 1	I-Location
-(	O
-standard	O
-curve	O
-top	B-Location
+(	I-Location
+standard	I-Location
+curve	I-Location
+top	I-Location
 point	I-Location
 )	O
 .	O
@@ -413,7 +407,7 @@ standard	O
 curve	O
 ,	O
 final	O
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 will	O
 be	O
 250pg/mL	B-Concentration
@@ -430,9 +424,9 @@ vortex	B-Action
 .	O
 
 Continue	O
-making	B-Action
-1.8	B-Amount
-fold	I-Amount
+making	O
+1.8	B-Generic_Measure
+fold	I-Generic_Measure
 serial	B-Method
 dilutions	I-Method
 by	O
@@ -508,15 +502,15 @@ will	O
 then	O
 be	O
 diluted	B-Modifier
-1:2	B-Generic-Measure
+1:2	B-Concentration
 in	O
 step	O
 VII	O
 for	O
 a	O
 final	O
-dilution	B-Measure-Type
-factor	I-Measure-Type
+dilution	B-Measure_Type
+factor	I-Measure_Type
 of	O
 1:10	B-Concentration
 .	O
@@ -572,8 +566,8 @@ to	O
 ensure	B-Action
 at	B-Modifier
 least	I-Modifier
-1	B-Numerical
-dilution	B-Method
+1	B-Time
+dilution	I-Time
 falls	O
 within	O
 the	O
@@ -601,7 +595,7 @@ the	O
 format	O
 of	O
 the	O
-assay	B-Reagent
+assay	B-Action
 ,	O
 samples	B-Reagent
 are	O
@@ -622,7 +616,7 @@ Diluted	B-Reagent
 HRP	I-Reagent
 Detection	B-Method
 Antibody	I-Method
-``	O
+``	I-Method
 .	O
 
 Add	B-Action
@@ -674,7 +668,8 @@ resealable	B-Modifier
 foil	B-Location
 pouch	I-Location
 at	O
-2-8°C	B-Temperature
+2-8	B-Temperature
+C	I-Temperature
 until	O
 use	O
 .	O
@@ -769,8 +764,8 @@ Add	B-Action
 per	B-Modifier
 well	B-Location
 of	O
-diluted	B-Modifier
-HRP	B-Reagent
+diluted	B-Reagent
+HRP	I-Reagent
 detection	I-Reagent
 antibody	I-Reagent
 to	O
@@ -798,7 +793,8 @@ shaker	I-Device
 Incubate	B-Action
 overnight	B-Time
 at	O
-2-8°C	B-Temperature
+2-8	B-Temperature
+C	I-Temperature
 .	O
 
 NOTE	O
@@ -808,16 +804,16 @@ diluted	B-Action
 with	O
 50uL	B-Amount
 of	O
-diluted	B-Modifier
-HRP	B-Reagent
+diluted	B-Reagent
+HRP	I-Reagent
 detection	I-Reagent
 antibody	I-Reagent
 ,	O
 the	O
-final	B-Measure-Type
-standard	I-Measure-Type
-cuve	I-Measure-Type
-concentrations	I-Measure-Type
+final	B-Reagent
+standard	I-Reagent
+cuve	I-Reagent
+concentrations	I-Reagent
 will	O
 be	O
 outlined	O
@@ -829,12 +825,12 @@ Table	O
 Please	B-Action
 use	O
 these	O
-concentrations	B-Measure-Type
+concentrations	B-Measure_Type
 to	O
 generate	B-Action
-your	I-Action
-standard	I-Action
-curve	I-Action
+your	O
+standard	O
+curve	O
 .	O
 
 Remove	B-Action
@@ -871,8 +867,8 @@ dry	I-Action
 
 Repeat	B-Action
 steps	O
-52-53	B-Generic-Measure
-4	I-Generic-Measure
+52-53	B-Generic_Measure
+4	I-Generic_Measure
 more	O
 times	O
 for	O
@@ -895,10 +891,10 @@ well	B-Location
 Read	B-Action
 Plate	I-Action
 at	O
-620nm	B-Generic-Measure
+620nm	B-Generic_Measure
 .	O
 
-Go	O
+Go	B-Action
 to	O
 Biolegend.com	O
 for	O
@@ -906,9 +902,9 @@ preparation	B-Method
 of	O
 brain	B-Reagent
 samples	I-Reagent
-for	I-Reagent
-BetaMark™	I-Reagent
-Beta	I-Reagent
+for	O
+BetaMark	O
+Beta	B-Reagent
 Amyloid	I-Reagent
 ELISA	I-Reagent
 .	O
@@ -938,11 +934,11 @@ of	O
 substrate	B-Reagent
 so	O
 that	O
-all	O
-plates	B-Location
-are	O
-n't	O
-ready	O
+all	B-Modifier
+plates	I-Modifier
+are	I-Modifier
+n't	I-Modifier
+ready	I-Modifier
 for	O
 reading	B-Action
 simultaneously	B-Modifier

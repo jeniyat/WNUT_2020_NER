@@ -52,12 +52,12 @@ buffer	I-Reagent
 with	O
 ~3ug	B-Modifier
 pSP64-NSERT-poly	B-Reagent
-(	I-Reagent
-A	I-Reagent
+(	O
+A	O
 )	O
 and	O
 5ul	B-Amount
-EcoRI	I-Amount
+EcoRI	B-Reagent
 .	O
 
 Incubate	B-Action
@@ -101,7 +101,7 @@ cutting	I-Action
 Assuming	O
 you	O
 observe	B-Action
-complete	O
+complete	B-Modifier
 digestion	B-Method
 ,	O
 clean	B-Modifier
@@ -133,7 +133,7 @@ have	O
 an	O
 idea	O
 for	O
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 .	O
 
 Set	B-Action
@@ -150,43 +150,43 @@ reagents	I-Reagent
 :	O
 1x5xTxn	O
 optimized	B-Modifier
-5x	I-Modifier
-buffer4ul	B-Concentration
+5x	B-Concentration
+buffer4ul	B-Reagent
 20ulDTT	B-Amount
 (	O
 100mM	B-Concentration
-)	I-Concentration
-2ul	I-Concentration
-10ulRecombinant	B-Amount
+)	O
+2ul	B-Amount
+10ulRecombinant	I-Amount
 RNasin0.75ul	B-Reagent
 3.75ul10mM	B-Amount
-rATP1ul	B-Concentration
-5ul10mM	B-Reagent
-rUTP1ul	B-Amount
-5ul10mM	B-Reagent
-rCTP1ul	B-Amount
-5ul10mM	B-Reagent
-rGTP1ul	B-Amount
-5ul4tUTP	B-Reagent
-(	I-Reagent
-10mM	I-Reagent
-)	I-Reagent
-2ul	I-Reagent
-10ulSP6	B-Concentration
-RNA	B-Amount
-Polymerase1ul	I-Amount
-5ul	I-Amount
+rATP1ul	B-Reagent
+5ul10mM	B-Amount
+rUTP1ul	B-Reagent
+5ul10mM	B-Amount
+rCTP1ul	B-Reagent
+5ul10mM	B-Amount
+rGTP1ul	B-Reagent
+5ul4tUTP	B-Amount
+(	O
+10mM	B-Concentration
+)	O
+2ul	B-Amount
+10ulSP6	I-Amount
+RNA	B-Reagent
+Polymerase1ul	I-Reagent
+5ul	B-Amount
 .	O
 
 Make	B-Action
 new	B-Modifier
 tubes	B-Location
 of	O
-6.25ul	B-Action
-of	B-Location
-linarized	I-Location
-plasmid	I-Location
-DNA	I-Location
+6.25ul	B-Amount
+of	O
+linarized	B-Reagent
+plasmid	I-Reagent
+DNA	I-Reagent
 .	O
 
 For	O
@@ -207,7 +207,7 @@ of	O
 water	B-Reagent
 .	O
 
-Concentrations	B-Measure-Type
+Concentrations	B-Measure_Type
 should	O
 be	O
 in	O
@@ -237,8 +237,8 @@ Incubate	B-Action
 1-2hr	B-Time
 in	O
 30/37C	B-Temperature
-water	B-Device
-bath	I-Device
+water	B-Reagent
+bath	I-Reagent
 .	O
 
 Remove	B-Action
@@ -285,8 +285,8 @@ with	O
 pipette	B-Action
 .	O
 
-Let	B-Action
-sit	I-Action
+Let	O
+sit	B-Action
 RT	B-Temperature
 for	O
 5min	B-Time
@@ -400,7 +400,7 @@ for	O
 about	O
 20min	B-Time
 at	O
-100V	B-Generic-Measure
+100V	B-Generic_Measure
 with	O
 the	O
 NEB	B-Reagent
@@ -423,7 +423,7 @@ now	O
 
 Quantify	B-Action
 on	O
-qubit	B-Device
+qubit	B-Method
 ,	O
 dilute	B-Action
 .	O

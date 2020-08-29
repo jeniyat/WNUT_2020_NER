@@ -1,4 +1,4 @@
-Stellaris®	B-Method
+Stellaris	B-Method
 RNA	I-Method
 FISH	I-Method
 Cells	I-Method
@@ -12,7 +12,6 @@ suspension	B-Reagent
 cells	I-Reagent
 (	O
 2	B-Numerical
-–	I-Numerical
 5	I-Numerical
 x	I-Numerical
 106	I-Numerical
@@ -36,8 +35,8 @@ a	O
 pellet	B-Reagent
 at	O
 base	B-Location
-of	I-Location
-tube	I-Location
+of	O
+tube	B-Location
 .	O
 
 Gently	B-Modifier
@@ -153,7 +152,7 @@ at	O
 +2	B-Temperature
 to	I-Temperature
 +8	I-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 Cells	B-Reagent
@@ -164,15 +163,15 @@ at	O
 +2	B-Temperature
 to	I-Temperature
 +8	I-Temperature
-°C	I-Temperature
+C	I-Temperature
 in	O
 70	B-Concentration
 %	I-Concentration
 ethanol	B-Reagent
 up	O
 to	O
-a	O
-week	O
+a	B-Time
+week	I-Time
 before	O
 hybridization	B-Method
 .	O
@@ -212,14 +211,14 @@ probe	B-Reagent
 ,	O
 add	B-Action
 1	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 probe	B-Reagent
 stock	I-Reagent
 solution	I-Reagent
 to	O
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Hybridization	B-Reagent
 Buffer	I-Reagent
@@ -277,13 +276,13 @@ Then	O
 place	B-Action
 50-	B-Amount
 500	I-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 cells	B-Reagent
 (	O
 depending	O
 on	O
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 )	O
 in	O
 a	O
@@ -303,7 +302,7 @@ poly-L-lysine	B-Reagent
 or	O
 cytospin	B-Action
 to	O
-adhere	O
+adhere	B-Action
 the	O
 fixed	B-Modifier
 and	O
@@ -346,7 +345,7 @@ resuspend	B-Action
 cells	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
@@ -373,7 +372,7 @@ Resuspend	B-Action
 cells	B-Reagent
 in	O
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Hybridization	B-Reagent
 Buffer	I-Reagent
@@ -398,7 +397,7 @@ the	O
 dark	B-Location
 at	O
 37	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 overnight	B-Time
 (	I-Time
 ~16	I-Time
@@ -413,8 +412,8 @@ cells	I-Reagent
 and	O
 aspirate	B-Action
 about	O
-50	B-Generic-Measure
-%	I-Generic-Measure
+50	B-Concentration
+%	I-Concentration
 of	O
 the	O
 Hybridization	B-Reagent
@@ -429,9 +428,9 @@ is	O
 very	O
 fluffy	B-Modifier
 and	O
-easy	O
-to	O
-lose	O
+easy	B-Modifier
+to	I-Modifier
+lose	I-Modifier
 at	O
 this	O
 point	O
@@ -439,7 +438,7 @@ point	O
 
 Add	B-Action
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
@@ -468,7 +467,7 @@ Resuspend	B-Action
 cells	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
@@ -481,7 +480,7 @@ the	O
 dark	B-Location
 at	O
 37	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 30	B-Time
 minutes	I-Time
@@ -502,7 +501,7 @@ Resuspend	B-Action
 cells	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 DAPI	B-Reagent
 nuclear	I-Reagent
@@ -530,7 +529,7 @@ the	O
 dark	B-Location
 at	O
 37	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 30	B-Time
 minutes	I-Time
@@ -551,7 +550,7 @@ Resuspend	B-Action
 cells	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Wash	B-Reagent
 Buffer	I-Reagent
@@ -578,7 +577,7 @@ drop	I-Modifier
 (	O
 approximately	B-Modifier
 30	B-Amount
-μL	I-Amount
+L	I-Amount
 )	O
 of	O
 Vectashield	B-Reagent
@@ -588,7 +587,7 @@ Medium	I-Reagent
 
 Place	B-Action
 5-10	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 cell	B-Reagent
 suspension	I-Reagent
@@ -649,7 +648,7 @@ slide	B-Location
 
 While	O
 applying	B-Action
-pressure	B-Measure-Type
+pressure	B-Measure_Type
 ,	O
 be	O
 careful	O

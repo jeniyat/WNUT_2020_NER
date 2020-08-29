@@ -1,12 +1,12 @@
-EpiQuik™	B-Device
-Total	I-Device
-Histone	I-Device
+EpiQuik	B-Action
+Total	B-Modifier
+Histone	B-Device
 Extraction	I-Device
 Kit	I-Device
 for	O
-Tissues	B-Reagent
+Tissues	O
 (	O
-Treated	O
+Treated	B-Method
 and	O
 Untreated	B-Action
 
@@ -18,8 +18,8 @@ in	O
 volumes	I-Amount
 (	O
 approximately	B-Modifier
-200	B-Concentration
-µl/107	I-Concentration
+200	B-Amount
+l/107	I-Amount
 cells	B-Reagent
 or	O
 100	B-Amount
@@ -47,7 +47,8 @@ for	O
 5	B-Time
 min	I-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 and	O
 transfer	B-Action
 the	O
@@ -76,19 +77,19 @@ Balance	B-Reagent
 Buffer	I-Reagent
 at	O
 a	O
-1:500	B-Concentration
-ratio	I-Concentration
+1:500	B-Generic_Measure
+ratio	I-Generic_Measure
 (	O
 e.g.	O
 ,	O
 1	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 DTT	B-Reagent
 Solution	I-Reagent
 +	O
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 Balance	B-Reagent
 Buffer	I-Reagent
@@ -124,12 +125,12 @@ supernatant	B-Reagent
 
 Quantify	B-Action
 the	O
-protein	B-Measure-Type
-concentration	I-Measure-Type
+protein	B-Reagent
+concentration	B-Measure_Type
 with	O
 an	O
-OD	B-Generic-Measure
-reading	I-Generic-Measure
+OD	B-Generic_Measure
+reading	I-Generic_Measure
 .	O
 
 BSA	B-Reagent
@@ -147,20 +148,22 @@ store	B-Action
 the	O
 extract	B-Action
 at	O
-–20°C	B-Temperature
+20	B-Temperature
+C	I-Temperature
 for	O
 several	B-Time
 days	I-Time
 ,	O
 or	O
-–80°C	B-Temperature
+80	B-Temperature
+C	I-Temperature
 for	O
 long-term	B-Modifier
 storage	B-Method
 .	O
 
 Avoid	B-Action
-repeated	O
+repeated	B-Modifier
 thawing	B-Action
 and	O
 freezing	B-Action
@@ -177,8 +180,8 @@ into	O
 small	B-Reagent
 pieces	I-Reagent
 (	O
-1-2	B-Numerical
-mm3	B-Reagent
+1-2	B-Time
+mm3	I-Time
 )	O
 with	O
 a	O
@@ -209,8 +212,8 @@ distilled	B-Modifier
 water	B-Reagent
 at	O
 a	O
-1:10	B-Generic-Measure
-ratio	I-Generic-Measure
+1:10	B-Generic_Measure
+ratio	I-Generic_Measure
 (	O
 e.g.	O
 ,	O
@@ -237,7 +240,7 @@ Buffer	I-Reagent
 at	O
 1	B-Amount
 ml	I-Amount
-per	B-Modifier
+per	O
 200	B-Amount
 mg	I-Amount
 of	O
@@ -248,8 +251,8 @@ disaggregate	B-Action
 tissue	B-Reagent
 pieces	I-Reagent
 by	O
-50-60	B-Generic-Measure
-strokes	I-Generic-Measure
+50-60	B-Numerical
+strokes	B-Method
 .	O
 
 Transfer	B-Action
@@ -270,7 +273,8 @@ for	O
 5	B-Time
 min	I-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Remove	B-Action
@@ -280,7 +284,7 @@ supernatant	B-Reagent
 If	O
 total	O
 mixture	B-Reagent
-volume	B-Measure-Type
+volume	B-Measure_Type
 is	O
 less	B-Modifier
 than	I-Modifier
@@ -303,7 +307,8 @@ for	O
 1	B-Time
 min	I-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 

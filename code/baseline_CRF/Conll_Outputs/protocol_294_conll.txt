@@ -18,12 +18,14 @@ slides	I-Location
 overnight	B-Time
 or	O
 add	B-Action
-appropriate	B-Modifier
-amount	I-Modifier
-of	I-Modifier
-cells	I-Modifier
-to	I-Modifier
-poly‐L‐lysine	I-Modifier
+appropriate	B-Amount
+amount	I-Amount
+of	O
+cells	B-Reagent
+to	O
+poly	B-Modifier
+L	I-Modifier
+lysine	I-Modifier
 coated	I-Modifier
 chamber	B-Location
 slides	I-Location
@@ -34,7 +36,8 @@ least	I-Modifier
 30	B-Time
 minutes	I-Time
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 At	O
@@ -45,8 +48,8 @@ cells	I-Reagent
 should	O
 be	O
 ~50	B-Modifier
-%	B-Generic-Measure
-confluent	I-Generic-Measure
+%	B-Concentration
+confluent	B-Reagent
 .	O
 
 Rinse	B-Action
@@ -67,10 +70,12 @@ cold	B-Modifier
 %	I-Concentration
 methanol	B-Reagent
 for	O
-5‐15	B-Time
+5	B-Time
+15	I-Time
 minutes	I-Time
 at	O
-‐20°C	B-Temperature
+20	B-Temperature
+C	I-Temperature
 .	O
 
 Rinse	B-Action
@@ -105,8 +110,8 @@ primary	B-Reagent
 antibody	I-Reagent
 to	O
 the	O
-recommended	B-Modifier
-concentration/dilution	B-Concentration
+recommended	B-Concentration
+concentration/dilution	I-Concentration
 in	O
 5	B-Concentration
 %	I-Concentration
@@ -120,12 +125,14 @@ chamber	I-Location
 slides	I-Location
 ,	O
 add	B-Action
-200μl	B-Amount
-per	B-Modifier
+200	B-Amount
+l	I-Amount
+per	O
 well	B-Location
 and	O
 incubate	B-Action
-2‐3	B-Time
+2	B-Time
+3	I-Time
 hours	I-Time
 at	O
 room	B-Temperature
@@ -133,7 +140,8 @@ temperature	I-Temperature
 or	O
 overnight	B-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Rinse	B-Action
@@ -166,7 +174,8 @@ step	O
 .	O
 
 Prepare	B-Action
-fluorophore‐conjugated	B-Reagent
+fluorophore	B-Reagent
+conjugated	I-Reagent
 secondary	I-Reagent
 antibody	I-Reagent
 in	O
@@ -182,8 +191,9 @@ data	O
 sheet	O
 and	O
 add	B-Action
-200μl	B-Amount
-per	B-Modifier
+200	B-Amount
+l	I-Amount
+per	O
 well	B-Location
 (	I-Location
 8	I-Location
@@ -222,7 +232,8 @@ each	O
 
 Coverslip	B-Action
 with	O
-anti‐fade	B-Modifier
+anti	B-Reagent
+fade	B-Modifier
 mounting	B-Reagent
 medium	I-Reagent
 .	O
@@ -238,7 +249,7 @@ the	O
 slide	B-Location
 to	O
 prevent	B-Action
-movement	O
+movement	I-Action
 of	O
 the	O
 coverslip	B-Seal
@@ -253,8 +264,8 @@ is	O
 recommended	O
 is	O
 a	O
-1:1:1	B-Concentration
-ratio	I-Concentration
+1:1:1	B-Generic_Measure
+ratio	I-Generic_Measure
 mixture	B-Reagent
 of	O
 vasoline	O
@@ -276,7 +287,8 @@ solution	I-Reagent
 methanol	B-Reagent
 stored	B-Action
 at	O
-‐20°C	B-Temperature
+20	B-Temperature
+C	I-Temperature
 for	O
 at	B-Modifier
 least	I-Modifier

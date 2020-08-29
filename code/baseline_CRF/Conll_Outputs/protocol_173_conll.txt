@@ -1,14 +1,14 @@
 Re-amplification	B-Method
-of	I-Method
-CRISPRa	I-Method
+of	O
+CRISPRa	B-Reagent
 and	O
 CRISPRi	B-Reagent
 libraries	I-Reagent
 
 Dilute	B-Action
 each	B-Modifier
-sub-library	B-Reagent
-to	O
+sub-library	I-Modifier
+to	I-Modifier
 50	B-Concentration
 ng/ul	I-Concentration
 in	O
@@ -89,14 +89,14 @@ cuvette	B-Location
 
 Electroporate	B-Action
 at	O
-2.0	B-Generic-Measure
-kV	I-Generic-Measure
+2.0	B-Generic_Measure
+kV	I-Generic_Measure
 ,	O
-200	B-Generic-Measure
-ohms	I-Generic-Measure
+200	B-Generic_Measure
+ohms	I-Generic_Measure
 ,	O
-25	O
-uF	O
+25	B-Amount
+uF	I-Amount
 (	O
 Gene	B-Reagent
 Pulser	I-Reagent
@@ -120,8 +120,8 @@ ml	I-Amount
 pipettes	B-Location
 and	O
 gel	B-Reagent
-loading	I-Reagent
-tips	I-Reagent
+loading	B-Action
+tips	B-Location
 .	O
 
 Wash	B-Action
@@ -165,7 +165,7 @@ large	B-Location
 square	I-Location
 plate	I-Location
 per	O
-sub-library	B-Reagent
+sub-library	O
 ,	O
 use	O
 autoclaved	B-Modifier
@@ -200,7 +200,7 @@ EB	B-Reagent
 ;	O
 an	O
 ideal	B-Action
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 is	O
 about	O
 2~3	B-Concentration
@@ -226,14 +226,12 @@ primers	B-Reagent
 a	O
 common	B-Reagent
 3	I-Reagent
-’	I-Reagent
 primer	I-Reagent
 ,	O
 with	O
 2	O
 different	O
-5	O
-’	O
+5	B-Numerical
 primers	B-Reagent
 for	O
 CRISPRa	B-Reagent
@@ -250,8 +248,8 @@ common	I-Reagent
 caagcagaagacggcatacgaCGACTCGGTGCCACTTTTTC	I-Reagent
 .	O
 
-oCRISPRi	B-Reagent
-TSS_1	I-Reagent
+oCRISPRi	B-Action
+TSS_1	B-Reagent
 (	O
 TruSeq	B-Method
 Index	I-Method
@@ -262,8 +260,8 @@ CTTGTA	I-Method
 aatgatacggcgaccaccgaGATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAgcacaaaaggaaactcaccct	O
 .	O
 
-oCRISPRi	B-Reagent
-TSS_2	I-Reagent
+oCRISPRi	B-Action
+TSS_2	B-Reagent
 (	O
 TruSeq	B-Method
 Index	I-Method
@@ -274,7 +272,7 @@ aatgatacggcgaccaccgaGATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATgcacaaaaggaaactcaccct
 
 Pool	B-Action
 sub-libraries	B-Reagent
-proportionally	I-Reagent
+proportionally	B-Modifier
 (	O
 based	O
 on	O
@@ -294,7 +292,7 @@ library	I-Reagent
 measure	B-Action
 the	O
 pooled	B-Action
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 and	O
 dilute	B-Action
 it	B-Mention

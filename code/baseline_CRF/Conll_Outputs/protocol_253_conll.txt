@@ -1,14 +1,14 @@
-Silver	B-Method
-Development	I-Method
-protocol	I-Method
+Silver	B-Action
+Development	B-Reagent
+protocol	O
 (	O
 silver	B-Reagent
 stain	I-Reagent
 )	O
 for	O
 0.75mm	B-Size
-polyacrylamide	B-Reagent
-gels	I-Reagent
+polyacrylamide	B-Location
+gels	I-Location
 
 Agitate	B-Action
 gel	B-Reagent
@@ -22,8 +22,8 @@ MeOH	B-Reagent
 %	I-Concentration
 acetic	B-Reagent
 acid	I-Reagent
-(	I-Reagent
-Fixer	I-Reagent
+(	O
+Fixer	B-Reagent
 1	I-Reagent
 )	O
 for	O
@@ -54,8 +54,8 @@ EtOH	B-Reagent
 glacial	B-Reagent
 acetic	I-Reagent
 acid	I-Reagent
-(	I-Reagent
-Fixer	I-Reagent
+(	O
+Fixer	B-Reagent
 2	I-Reagent
 )	O
 for	O
@@ -70,9 +70,9 @@ water	B-Reagent
 .	O
 
 Agitate	B-Action
-twice	B-Numerical
-(	O
-9	B-Time
+twice	B-Time
+(	I-Time
+9	I-Time
 min	I-Time
 each	O
 )	O
@@ -108,7 +108,7 @@ water	I-Reagent
 DDW	B-Reagent
 )	O
 for	O
-9min	O
+9min	B-Time
 (	O
 sensitization	B-Method
 )	O
@@ -132,8 +132,8 @@ with	O
 DDW	B-Reagent
 to	O
 remove	B-Action
-excess	B-Reagent
-AgNO3	I-Reagent
+excess	B-Modifier
+AgNO3	B-Reagent
 .	O
 
 Add	B-Action
@@ -146,8 +146,8 @@ developer	O
 37	B-Concentration
 %	I-Concentration
 formaldehyde	B-Reagent
-per	B-Amount
-liter	I-Amount
+per	O
+liter	B-Amount
 of	O
 3	B-Concentration
 %	I-Concentration
@@ -172,8 +172,8 @@ Add	B-Action
 80	B-Amount
 ml	I-Amount
 of	O
-stop	B-Action
-solution	B-Reagent
+stop	B-Reagent
+solution	I-Reagent
 (	O
 50	B-Amount
 g	I-Amount
@@ -183,8 +183,8 @@ tris	B-Reagent
 ml	I-Amount
 glacial	B-Reagent
 acetic	I-Reagent
-per	B-Amount
-liter	I-Amount
+per	O
+liter	B-Amount
 of	O
 distilled	B-Modifier
 water	B-Reagent
@@ -198,7 +198,7 @@ in	O
 %	I-Concentration
 glycerol	B-Reagent
 with	O
-bacteriostat	O
+bacteriostat	B-Action
 (	O
 0.02	B-Concentration
 %	I-Concentration

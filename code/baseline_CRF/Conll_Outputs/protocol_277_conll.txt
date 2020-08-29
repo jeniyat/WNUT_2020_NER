@@ -13,7 +13,8 @@ in	O
 storage	B-Reagent
 buffer	I-Reagent
 (	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 freezer	B-Device
 door	O
 )	O
@@ -25,32 +26,33 @@ solution	I-Reagent
 Dilute	B-Action
 stock	B-Reagent
 solution	I-Reagent
-1:40	B-Modifier
+1:40	B-Concentration
 in	O
 10x	B-Concentration
 reaction	B-Reagent
 buffer	I-Reagent
 =	O
-1,000	B-Concentration
-U/ml	I-Concentration
-=	I-Concentration
-1	I-Concentration
-U/ul	I-Concentration
-=	I-Concentration
-working	B-Reagent
-dilution	I-Reagent
+1,000	B-Generic_Measure
+U/ml	I-Generic_Measure
+=	I-Generic_Measure
+1	I-Generic_Measure
+U/ul	O
+=	O
+working	B-Action
+dilution	B-Reagent
 .	O
 
 Use	O
 at	O
 a	O
 1:10	B-Concentration
-dilution	I-Concentration
+dilution	B-Reagent
 :	O
-1μl	B-Amount
-per	B-Modifier
+1	B-Amount
+l	I-Amount
+per	O
 9	B-Amount
-μl	I-Amount
+l	I-Amount
 solution	B-Reagent
 to	O
 be	O
@@ -67,8 +69,8 @@ for	O
 
 Prepare	B-Action
 1M	B-Concentration
-EDTA	I-Concentration
-disodium	B-Reagent
+EDTA	B-Reagent
+disodium	I-Reagent
 salt	I-Reagent
 dihydrate	I-Reagent
 .	O
@@ -90,7 +92,7 @@ EDTA/100	I-Concentration
 mM	I-Concentration
 EGTA	B-Reagent
 final	I-Reagent
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 .	O
 
 

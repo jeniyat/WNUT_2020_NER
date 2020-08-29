@@ -17,7 +17,7 @@ Perchlorate	I-Reagent
 SP	I-Reagent
 )	O
 in	O
-2:1	B-Generic-Measure
+2:1	B-Generic_Measure
 .	O
 
 Mix	B-Action
@@ -39,9 +39,9 @@ with	O
 virus	B-Reagent
 prep	I-Reagent
 (	O
-~	B-Modifier
-10¹¹	B-Concentration
-PFU/ml	I-Concentration
+~	B-Size
+10	I-Size
+PFU/ml	B-Measure_Type
 )	O
 .	O
 
@@ -49,7 +49,8 @@ Incubate	B-Action
 the	O
 lysate	B-Reagent
 at	O
-55ºC	B-Temperature
+55	B-Temperature
+C	I-Temperature
 for	O
 1hrs	B-Time
 .	O
@@ -73,7 +74,7 @@ the	O
 proportion	O
 equal	O
 to	O
-1:1	B-Generic-Measure
+1:1	B-Generic_Measure
 .	O
 
 Shake	B-Action
@@ -81,7 +82,7 @@ them	B-Mention
 by	O
 hands	O
 for	O
-5mins	B-Time
+5mins	O
 .	O
 
 Transfer	B-Action
@@ -103,7 +104,8 @@ at	O
 14000	B-Speed
 rpm	I-Speed
 at	O
-4ºC	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Transfer	B-Action
@@ -123,7 +125,6 @@ tubes	I-Location
 .	O
 
 Don	B-Method
-’	I-Method
 t	I-Method
 worry	I-Method
 getting	I-Method
@@ -154,11 +155,11 @@ min	I-Time
 .	O
 
 Now	O
-it	O
-easy	B-Modifier
-to	I-Modifier
-get	I-Modifier
-pure	I-Modifier
+it	B-Mention
+easy	O
+to	O
+get	O
+pure	B-Modifier
 liquid	B-Reagent
 without	O
 protein	B-Reagent
@@ -173,12 +174,12 @@ stored	B-Action
 overnight	B-Time
 at	O
 4	B-Temperature
-ºC	I-Temperature
+C	I-Temperature
 .	O
 
 Estimate	B-Action
 the	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 the	O
 aqueous	B-Reagent
@@ -192,7 +193,7 @@ of	O
 (	O
 or	O
 5M	B-Concentration
-)	I-Concentration
+)	O
 Sodium	B-Reagent
 Acetate	I-Reagent
 (	O
@@ -246,7 +247,8 @@ cold	B-Modifier
 %	I-Concentration
 Ethanol	B-Reagent
 (	O
--20ºC	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 )	O
 .	O
 
@@ -309,7 +311,7 @@ TE	B-Reagent
 
 Estimate	B-Action
 DNA	B-Reagent
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 using	O
 spectrophotometer	B-Device
 or	O

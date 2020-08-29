@@ -30,7 +30,8 @@ rpm	I-Speed
 5	B-Time
 min	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Use	B-Action
@@ -58,7 +59,7 @@ BBM	B-Reagent
 Adjust	B-Action
 the	O
 final	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 to	O
 500	B-Amount
 mL	I-Amount
@@ -78,7 +79,7 @@ stock	B-Reagent
 add	B-Action
 0.1	B-Amount
 mL	I-Amount
-per	B-Modifier
+per	O
 50	B-Amount
 mL	I-Amount
 of	O
@@ -91,9 +92,9 @@ at	O
 an	O
 moi	B-Reagent
 (	O
-multiplicity	B-Measure-Type
-of	I-Measure-Type
-infection	I-Measure-Type
+multiplicity	B-Measure_Type
+of	I-Measure_Type
+infection	I-Measure_Type
 )	O
 of	O
 0.01	B-Numerical
@@ -102,7 +103,8 @@ of	O
 Incubate	B-Action
 overnight	B-Time
 at	O
-25°C	B-Temperature
+25	B-Temperature
+C	I-Temperature
 with	O
 continuous	B-Method
 light	I-Method
@@ -114,10 +116,8 @@ This	O
 material	B-Reagent
 is	O
 now	O
-termed	O
-“	O
+termed	B-Modifier
 lysate	B-Reagent
-”	O
 .	O
 
 Centrifuge	B-Action
@@ -135,7 +135,8 @@ rpm	I-Speed
 10	B-Time
 min	I-Time
 ,	O
-5°C	B-Temperature
+5	B-Temperature
+C	I-Temperature
 .	O
 
 Decant	B-Action
@@ -161,7 +162,8 @@ rpm	I-Speed
 60	B-Time
 min	I-Time
 ,	O
-5°C	B-Temperature
+5	B-Temperature
+C	I-Temperature
 .	O
 
 Decant	B-Action
@@ -177,7 +179,7 @@ d-H2O	B-Reagent
 to	O
 a	O
 final	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 1000	B-Amount
 mL	I-Amount
@@ -185,13 +187,15 @@ mL	I-Amount
 
 Place	B-Action
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Add	B-Action
 ,	O
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 :	O
 2-ME	O
 to	O
@@ -203,21 +207,21 @@ to	O
 mM	I-Concentration
 NaN3	B-Reagent
 to	O
-200	B-Concentration
-mg/liter	I-Concentration
-(	B-Reagent
+200	B-Numerical
+mg/liter	B-Reagent
+(	I-Reagent
 NH4	I-Reagent
 )	I-Reagent
 2SO4	I-Reagent
 to	O
-40	B-Concentration
-%	I-Concentration
-saturation	B-Reagent
+40	B-Generic_Measure
+%	I-Generic_Measure
+saturation	I-Generic_Measure
 Adjust	B-Action
 the	O
-pH	B-Generic-Measure
-to	I-Generic-Measure
-7.0	I-Generic-Measure
+pH	B-Generic_Measure
+to	I-Generic_Measure
+7.0	I-Generic_Measure
 with	O
 NaOH	B-Reagent
 .	O
@@ -226,7 +230,8 @@ Cover	B-Action
 and	O
 incubate	B-Action
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 overnight	B-Time
 .	O
 
@@ -245,7 +250,8 @@ rpm	I-Speed
 60	B-Time
 min	I-Time
 ,	O
-5°C	B-Temperature
+5	B-Temperature
+C	I-Temperature
 .	O
 
 Decant	B-Action
@@ -264,23 +270,24 @@ pellets	B-Reagent
 Add	B-Action
 ,	O
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 ,	O
 (	B-Reagent
 NH4	I-Reagent
 )	I-Reagent
 2SO4	I-Reagent
 to	O
-65	B-Generic-Measure
-%	I-Generic-Measure
-saturation	I-Generic-Measure
+65	B-Generic_Measure
+%	I-Generic_Measure
+saturation	I-Generic_Measure
 .	O
 
 Adjust	B-Action
 the	O
-pH	B-Generic-Measure
-to	I-Generic-Measure
-7.0	I-Generic-Measure
+pH	B-Generic_Measure
+to	I-Generic_Measure
+7.0	I-Generic_Measure
 with	O
 NaOH	B-Reagent
 .	O
@@ -289,7 +296,8 @@ Cover	B-Action
 and	O
 incubate	B-Action
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 overnight	B-Time
 .	O
 
@@ -308,7 +316,8 @@ rpm	I-Speed
 10	B-Time
 min	I-Time
 ,	O
-5°C	B-Temperature
+5	B-Temperature
+C	I-Temperature
 .	O
 
 Aspirate	B-Action
@@ -343,7 +352,7 @@ EDTA	B-Reagent
 2	B-Concentration
 mM	I-Concentration
 2-ME	I-Concentration
-+	B-Reagent
++	O
 2	B-Amount
 mg	I-Amount
 NaN3	B-Reagent
@@ -364,7 +373,8 @@ rpm	I-Speed
 60	B-Time
 min	I-Time
 ,	O
-5°C	B-Temperature
+5	B-Temperature
+C	I-Temperature
 .	O
 
 Save	B-Action
@@ -379,7 +389,8 @@ for	O
 48-72	B-Time
 hours	I-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 against	O
 10	B-Concentration
 mM	I-Concentration
@@ -433,7 +444,8 @@ rpm	I-Speed
 60	B-Time
 min	I-Time
 ,	O
-5°C	B-Temperature
+5	B-Temperature
+C	I-Temperature
 .	O
 
 Aliquot	B-Action
@@ -445,7 +457,8 @@ tubes	I-Location
 and	O
 store	B-Action
 at	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 .	O
 
 Assay	B-Action

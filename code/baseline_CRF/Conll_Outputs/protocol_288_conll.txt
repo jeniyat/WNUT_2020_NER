@@ -13,13 +13,13 @@ SE	B-Reagent
 buffer	I-Reagent
 for	O
 a	O
-final	B-Modifier
-concentration	B-Concentration
-of	I-Concentration
-1.5	I-Concentration
+final	O
+concentration	B-Measure_Type
+of	O
+1.5	B-Concentration
 %	I-Concentration
-(	B-Reagent
-wt/vol	I-Reagent
+(	O
+wt/vol	O
 )	O
 .	O
 
@@ -36,7 +36,8 @@ cool	B-Action
 and	O
 maintain	B-Action
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 in	O
 a	O
 water	B-Location
@@ -48,7 +49,8 @@ the	O
 viral	B-Reagent
 concentrate	I-Reagent
 to	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 in	O
 the	O
 water	B-Location
@@ -113,9 +115,10 @@ K	I-Reagent
 (	O
 1	B-Amount
 mg	I-Amount
-mL–1	B-Reagent
-final	I-Reagent
-concentration	B-Measure-Type
+mL	I-Amount
+1	I-Amount
+final	B-Modifier
+concentration	B-Measure_Type
 )	O
 .	O
 
@@ -135,7 +138,7 @@ being	O
 careful	O
 not	O
 to	O
-lose	O
+lose	B-Reagent
 the	O
 plugs	B-Reagent
 .	O
@@ -244,8 +247,9 @@ Store	B-Action
 the	O
 plugs	B-Reagent
 at	O
-4°C	B-Temperature
-submerged	B-Action
+4	B-Temperature
+C	I-Temperature
+submerged	B-Modifier
 in	O
 TE	B-Reagent
 .	O

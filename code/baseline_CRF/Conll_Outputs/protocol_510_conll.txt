@@ -1,5 +1,5 @@
-NEXTflex™	B-Amount
-mtDNA-Seq	I-Amount
+NEXTflex	B-Reagent
+mtDNA-Seq	I-Reagent
 for	O
 cell	B-Reagent
 samples	I-Reagent
@@ -19,9 +19,9 @@ in	O
 the	O
 cap	B-Seal
 or	O
-side	B-Location
-of	I-Location
-tube	I-Location
+side	O
+of	O
+tube	B-Location
 .	O
 
 Keep	B-Action
@@ -75,32 +75,31 @@ microcentrifuge	B-Location
 tubes	I-Location
 :	O
 
-μLNuclease-free	B-Modifier
-Water_	B-Reagent
-μLgDNA	I-Reagent
+LNuclease-free	B-Reagent
+Water_	I-Reagent
+LgDNA	I-Reagent
 (	O
-4	B-Numerical
-–	I-Numerical
-8	I-Numerical
-μg	I-Numerical
-)	I-Numerical
-5	I-Numerical
-μLNEXTflex™	B-Reagent
+4	B-Amount
+8	I-Amount
+g	I-Amount
+)	O
+5	B-Numerical
+LNEXTflex	B-Reagent
 mtDNA	I-Reagent
 Buffer	I-Reagent
 Mix	I-Reagent
 15	I-Reagent
-μLNEXTflex™	I-Reagent
+LNEXTflex	I-Reagent
 mtDNA	I-Reagent
 Buffer	I-Reagent
 Mix	I-Reagent
-25	B-Amount
-μLNEXTflex™	I-Amount
-Nuclear	B-Reagent
+25	I-Reagent
+LNEXTflex	I-Reagent
+Nuclear	I-Reagent
 DNA	I-Reagent
 Digest	I-Reagent
 Mix50	I-Reagent
-μLTOTAL	I-Reagent
+LTOTAL	I-Reagent
 .	O
 
 Mix	B-Action
@@ -118,14 +117,16 @@ for	O
 48	B-Time
 hours	I-Time
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 Incubate	B-Action
 the	O
 sample	B-Reagent
 at	O
-70°C	B-Temperature
+70	B-Temperature
+C	I-Temperature
 for	O
 30	B-Time
 minutes	I-Time
@@ -147,7 +148,7 @@ tube	B-Location
 
 Add	B-Action
 50	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -224,7 +225,7 @@ rack	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -267,7 +268,7 @@ rack	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -336,7 +337,7 @@ dried	B-Modifier
 beads	B-Reagent
 with	O
 36	B-Amount
-μL	I-Amount
+L	I-Amount
 Nuclease-free	B-Reagent
 Water	I-Reagent
 .	O
@@ -391,7 +392,7 @@ clear	B-Modifier
 Gently	B-Modifier
 transfer	B-Action
 35	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 clear	B-Modifier
 sample	B-Reagent
@@ -416,7 +417,7 @@ the	O
 digestion	B-Method
 with	O
 35	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 eluted	B-Reagent
 material	I-Reagent
@@ -434,29 +435,29 @@ follows	O
 :	O
 
 35	B-Numerical
-μLEluted	B-Modifier
-DNA	B-Reagent
+LEluted	B-Reagent
+DNA	I-Reagent
 (	O
 Step	O
 18	O
 )	O
-5	B-Amount
-μLNEXTflex™	I-Amount
-mtDNA	B-Reagent
+5	B-Numerical
+LNEXTflex	B-Reagent
+mtDNA	I-Reagent
 Buffer	I-Reagent
 Mix	I-Reagent
 15	I-Reagent
-μLNEXTflex™	I-Reagent
+LNEXTflex	I-Reagent
 mtDNA	I-Reagent
 Buffer	I-Reagent
 Mix	I-Reagent
 25	I-Reagent
-μLNEXTflex™	I-Reagent
+LNEXTflex	I-Reagent
 nuclear	I-Reagent
 DNA	I-Reagent
 Digest	I-Reagent
 Mix50	I-Reagent
-μLTOTAL	I-Reagent
+LTOTAL	I-Reagent
 .	O
 
 Incubate	B-Action
@@ -464,12 +465,13 @@ for	O
 2	B-Time
 hours	I-Time
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 Repeat	B-Action
-steps	B-Method
-6-18	I-Method
+steps	O
+6-18	O
 .	O
 
 For	O
@@ -540,7 +542,7 @@ tray	I-Location
 
 Load	B-Action
 3	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 the	O
 PCR	B-Reagent
@@ -548,14 +550,14 @@ product	I-Reagent
 mixed	I-Reagent
 with	O
 2	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 6X	B-Concentration
 Loading	B-Reagent
 Dye	I-Reagent
 and	O
 7	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 Nuclease-free	B-Reagent
 Water	I-Reagent
@@ -570,13 +572,13 @@ gel	B-Reagent
 along	O
 with	O
 6	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 MW	O
-100	B-Generic-Measure
-bp	I-Generic-Measure
-Ready-to-Load	B-Action
-Ladder	B-Reagent
+100	B-Generic_Measure
+bp	I-Generic_Measure
+Ready-to-Load	B-Reagent
+Ladder	I-Reagent
 .	O
 
 Run	B-Action
@@ -587,7 +589,7 @@ with	O
 TAE	B-Reagent
 buffer	I-Reagent
 at	O
-100-120V	B-Generic-Measure
+100-120V	B-Generic_Measure
 for	O
 60-120	B-Time
 minutes	I-Time
@@ -651,20 +653,20 @@ Guidelines	O
 Adjust	B-Action
 mtDNA	B-Reagent
 sample	I-Reagent
-volume	B-Measure-Type
+volume	B-Measure_Type
 to	O
 130	B-Amount
-μL	I-Amount
+L	I-Amount
 with	O
 Nuclease-free	B-Reagent
 Water	I-Reagent
 .	O
 
 Set	B-Action
-pipette	I-Action
+pipette	B-Location
 to	O
 130	B-Amount
-μL	I-Amount
+L	I-Amount
 and	O
 mix	B-Action
 well	B-Modifier
@@ -692,9 +694,9 @@ example	O
 ,	O
 using	O
 the	O
-Covaris	B-Reagent
-S2	I-Reagent
-system	I-Reagent
+Covaris	B-Device
+S2	I-Device
+system	I-Device
 ,	O
 the	O
 following	O
@@ -703,26 +705,22 @@ will	O
 produce	B-Action
 fragments	B-Reagent
 of	O
-150-200	B-Generic-Measure
-bp	I-Generic-Measure
-Peak	I-Generic-Measure
-Intensity	I-Generic-Measure
-–	I-Generic-Measure
-5	I-Generic-Measure
-Duty	I-Generic-Measure
-cycle	I-Generic-Measure
-–	I-Generic-Measure
-10	I-Generic-Measure
-%	I-Generic-Measure
-Cycles	I-Generic-Measure
-per	I-Generic-Measure
-burst	I-Generic-Measure
-–	I-Generic-Measure
-200	I-Generic-Measure
-Time	B-Measure-Type
-–	O
-180	B-Time
-s	I-Time
+150-200	B-Device
+bp	I-Device
+Peak	I-Device
+Intensity	I-Device
+5	I-Device
+Duty	I-Device
+cycle	I-Device
+10	B-Generic_Measure
+%	I-Generic_Measure
+Cycles	I-Generic_Measure
+per	I-Generic_Measure
+burst	B-Measure_Type
+200	I-Measure_Type
+Time	I-Measure_Type
+180	I-Measure_Type
+s	I-Measure_Type
 .	O
 
 Transfer	B-Action
@@ -757,18 +755,18 @@ SpeedVac	B-Device
 for	O
 2	B-Time
 hoursat	I-Time
-45°C	B-Temperature
+45	B-Temperature
+C	I-Temperature
 to	O
 reduce	B-Action
 the	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 your	O
 sample	B-Reagent
 to	O
-≤	O
 40	B-Amount
-μL	I-Amount
+L	I-Amount
 .	O
 
 Do	O
@@ -776,8 +774,8 @@ not	O
 let	O
 the	O
 sample	B-Reagent
-drydown	O
-completely	O
+drydown	I-Reagent
+completely	B-Modifier
 .	O
 
 Option	O
@@ -785,15 +783,14 @@ Option	O
 :	O
 Bead	B-Reagent
 Cleanup	O
-–	O
 Alternatively	O
 a	O
 2X	B-Concentration
 AMPure	B-Reagent
 XP	I-Reagent
 bead	I-Reagent
-clean	B-Modifier
-up	I-Modifier
+clean	I-Reagent
+up	O
 can	O
 be	O
 done	O
@@ -802,11 +799,11 @@ follows	O
 :	O
 
 After	O
-concentrating	O
+concentrating	B-Action
 the	O
 sample	B-Reagent
-,	I-Reagent
-Qubit®	I-Reagent
+,	O
+Qubit	B-Reagent
 dsDNA	I-Reagent
 reagents	I-Reagent
 can	O
@@ -816,7 +813,7 @@ to	O
 quantify	B-Action
 the	O
 DNA	B-Reagent
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 .	O
 
 For	O
@@ -838,31 +835,31 @@ PCR	I-Location
 Plate	I-Location
 :	O
 
-40	B-Amount
-μLmtDNA	I-Amount
+40	O
+LmtDNA	B-Reagent
 (	O
 from	O
 section	O
 ``	O
 Fragmentation	B-Method
-of	I-Method
-mtDNA	I-Method
-``	I-Method
-)	I-Method
-7	I-Method
-μLNEXTflex™	B-Amount
-mtDNA	I-Amount
-End	B-Reagent
+of	O
+mtDNA	B-Device
+``	I-Device
+)	O
+7	O
+LNEXTflex	B-Reagent
+mtDNA	I-Reagent
+End	I-Reagent
 Repair	I-Reagent
 Buffer	I-Reagent
 Mix3	I-Reagent
-μLNEXTflex™	I-Reagent
+LNEXTflex	I-Reagent
 mtDNA	I-Reagent
 End	I-Reagent
 Repair	I-Reagent
 Enzyme	I-Reagent
 Mix50	I-Reagent
-μLTOTAL	I-Reagent
+LTOTAL	I-Reagent
 .	O
 
 Mix	B-Action
@@ -885,12 +882,13 @@ for	O
 30	B-Time
 minutes	I-Time
 at	O
-22°C	B-Temperature
+22	B-Temperature
+C	I-Temperature
 .	O
 
 Add	B-Action
 80	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -972,7 +970,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1015,7 +1013,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1076,7 +1074,7 @@ Note	O
 :	O
 Do	O
 not	O
-overdry	O
+overdry	B-Action
 the	O
 beads	B-Reagent
 .	O
@@ -1086,7 +1084,7 @@ dried	B-Modifier
 beads	B-Reagent
 with	O
 17	B-Amount
-μL	I-Amount
+L	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
 .	O
@@ -1141,7 +1139,7 @@ clear	B-Modifier
 Gently	B-Modifier
 transfer	B-Action
 16	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 clear	B-Modifier
 sample	B-Reagent
@@ -1163,8 +1161,8 @@ Plate	I-Location
 :	O
 
 16	O
-μLEnd-Repaired	B-Modifier
-DNA	B-Reagent
+LEnd-Repaired	B-Reagent
+DNA	I-Reagent
 (	O
 from	O
 section	B-Device
@@ -1172,12 +1170,12 @@ section	B-Device
 Clean-Up	I-Device
 ``	I-Device
 )	O
-4.5	B-Amount
-μLNEXTflex™	I-Amount
-mtDNA	B-Reagent
+4.5	B-Concentration
+LNEXTflex	B-Reagent
+mtDNA	I-Reagent
 Adenylation	I-Reagent
 Mix20.5	I-Reagent
-μLTOTAL	I-Reagent
+LTOTAL	I-Reagent
 .	O
 
 Mix	B-Action
@@ -1200,7 +1198,8 @@ for	O
 30	B-Time
 minutes	I-Time
 at	O
-37°C	B-Temperature
+37	B-Temperature
+C	I-Temperature
 .	O
 
 For	O
@@ -1223,9 +1222,8 @@ PCR	I-Location
 Plate	I-Location
 :	O
 
-20.5	O
-μL3	B-Reagent
-’	I-Reagent
+20.5	B-Reagent
+L3	I-Reagent
 Adenylated	I-Reagent
 DNA	I-Reagent
 (	O
@@ -1235,18 +1233,18 @@ above	B-Modifier
 section	I-Modifier
 )	B-Amount
 27.5	I-Amount
-μLNEXTflex™	I-Amount
-mtDNA	B-Reagent
+LNEXTflex	B-Reagent
+mtDNA	I-Reagent
 Ligation	I-Reagent
 Mix2.0	I-Reagent
-μLNEXTflex™	I-Reagent
+LNEXTflex	I-Reagent
 mtDNA	I-Reagent
 Adapter	I-Reagent
-or	O
-NEXTflex™	B-Amount
-ChIP	B-Reagent
+or	I-Reagent
+NEXTflex	I-Reagent
+ChIP	I-Reagent
 Barcode50	I-Reagent
-μLTOTAL	I-Reagent
+LTOTAL	I-Reagent
 .	O
 
 Mix	B-Action
@@ -1269,12 +1267,13 @@ for	O
 15	B-Time
 minutes	I-Time
 at	O
-22°C	B-Temperature
+22	B-Temperature
+C	I-Temperature
 .	O
 
 Add	B-Action
 40	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -1323,10 +1322,10 @@ clear	B-Modifier
 .	O
 
 Set	B-Action
-pipette	I-Action
+pipette	B-Location
 to	O
 88	B-Amount
-μL	I-Amount
+L	I-Amount
 and	O
 gently	B-Modifier
 remove	B-Action
@@ -1359,7 +1358,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1400,7 +1399,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1460,7 +1459,7 @@ dried	B-Modifier
 beads	B-Reagent
 with	O
 52	B-Amount
-μL	I-Amount
+L	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
 .	O
@@ -1514,7 +1513,7 @@ clear	B-Modifier
 Gently	B-Modifier
 transfer	B-Action
 50	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 clear	B-Modifier
 sample	B-Reagent
@@ -1525,7 +1524,7 @@ well	B-Location
 
 Add	B-Action
 40	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -1574,10 +1573,10 @@ clear	B-Modifier
 .	O
 
 Set	B-Action
-pipette	I-Action
+pipette	B-Location
 to	O
 88	B-Amount
-μL	I-Amount
+L	I-Amount
 and	O
 gently	B-Modifier
 remove	B-Action
@@ -1611,7 +1610,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1652,7 +1651,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1712,7 +1711,7 @@ dried	B-Modifier
 beads	B-Reagent
 with	O
 38	B-Amount
-μL	I-Amount
+L	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
 .	O
@@ -1720,9 +1719,9 @@ Buffer	I-Reagent
 Mix	B-Action
 well	B-Modifier
 by	O
-pipetting	B-Action
-Ensure	B-Reagent
-beads	I-Reagent
+pipetting	B-Device
+Ensure	I-Device
+beads	I-Device
 are	O
 no	O
 longer	O
@@ -1765,7 +1764,7 @@ clear	B-Modifier
 Gently	B-Modifier
 transfer	B-Action
 36	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 clear	B-Modifier
 sample	B-Reagent
@@ -1793,7 +1792,7 @@ plate	I-Location
 :	O
 
 36	O
-μLPurified	B-Reagent
+LPurified	B-Reagent
 Ligation	I-Reagent
 Product	I-Reagent
 (	O
@@ -1805,14 +1804,14 @@ Clean-Up	I-Device
 ``	I-Device
 )	O
 12	O
-μLNEXTflex™	B-Amount
-PCR	B-Reagent
+LNEXTflex	B-Reagent
+PCR	I-Reagent
 Master	I-Reagent
 Mix2	I-Reagent
-μLNEXTflex™	I-Reagent
+LNEXTflex	I-Reagent
 Primer	I-Reagent
 Mix50	I-Reagent
-μLTOTAL	I-Reagent
+LTOTAL	I-Reagent
 .	O
 
 Mix	B-Action
@@ -1821,12 +1820,12 @@ by	O
 pipetting	B-Action
 .	O
 
-PCR	B-Reagent
-Cycles	I-Reagent
+PCR	B-Method
+Cycles	I-Method
 :	O
 Add	B-Action
 40	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -1874,10 +1873,10 @@ clear	B-Modifier
 .	O
 
 Set	B-Action
-pipette	I-Action
+pipette	B-Location
 to	O
 88	B-Amount
-μL	I-Amount
+L	I-Amount
 and	O
 gently	B-Modifier
 remove	B-Action
@@ -1910,7 +1909,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -1951,7 +1950,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -2011,7 +2010,7 @@ dried	B-Modifier
 beads	B-Reagent
 with	O
 52	B-Amount
-μL	I-Amount
+L	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
 .	O
@@ -2065,7 +2064,7 @@ clear	B-Modifier
 Gently	B-Modifier
 transfer	B-Action
 50	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 clear	B-Modifier
 sample	B-Reagent
@@ -2076,7 +2075,7 @@ well	B-Location
 
 Add	B-Action
 40	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 AMPure	B-Reagent
 XP	I-Reagent
@@ -2124,10 +2123,10 @@ clear	B-Modifier
 .	O
 
 Set	B-Action
-pipette	I-Action
+pipette	B-Location
 to	O
 90	B-Amount
-μL	I-Amount
+L	I-Amount
 and	O
 gently	B-Modifier
 remove	B-Action
@@ -2160,7 +2159,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -2201,7 +2200,7 @@ stand	B-Location
 gently	B-Modifier
 add	B-Action
 200	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 freshly	B-Modifier
 prepared	I-Modifier
@@ -2261,7 +2260,7 @@ dried	B-Modifier
 beads	B-Reagent
 with	O
 16	B-Amount
-μL	I-Amount
+L	I-Amount
 Resuspension	B-Reagent
 Buffer	I-Reagent
 .	O
@@ -2272,7 +2271,7 @@ by	O
 pipetting	B-Action
 .	O
 
-Ensurebeads	B-Reagent
+Ensurebeads	B-Action
 are	O
 no	O
 longer	O
@@ -2315,7 +2314,7 @@ clear	B-Modifier
 Gently	B-Modifier
 transfer	B-Action
 15	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 clear	B-Modifier
 sample	B-Reagent
@@ -2342,7 +2341,7 @@ templates	I-Reagent
 for	O
 optimal	O
 cluster	O
-density	B-Measure-Type
+density	B-Measure_Type
 .	O
 
 

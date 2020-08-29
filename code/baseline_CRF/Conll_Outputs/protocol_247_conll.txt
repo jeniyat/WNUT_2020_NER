@@ -7,10 +7,10 @@ relatives	O
 
 For	O
 each	B-Modifier
-sample	I-Modifier
-to	I-Modifier
-be	I-Modifier
-collected	I-Modifier
+sample	B-Reagent
+to	O
+be	O
+collected	B-Action
 ,	O
 one	B-Numerical
 anaerobic	B-Method
@@ -23,7 +23,7 @@ in	O
 guidelines	O
 )	O
 is	O
-prepared	B-Action
+prepared	O
 .	O
 
 A	O
@@ -32,23 +32,25 @@ amount	I-Amount
 (	O
 ca	O
 .	O
-50–220	B-Amount
+50	B-Amount
+220	I-Amount
 mg	I-Amount
 )	O
 of	O
-elemental	B-Device
-sulfur	I-Device
+elemental	B-Reagent
+sulfur	I-Reagent
 (	O
 e.g.	O
 ,	O
-Riedel-deHaën	O
+Riedel-deHa	B-Reagent
+n	O
 )	O
 is	O
 placed	B-Action
 in	O
 an	O
-anaerobic	B-Location
-tube	I-Location
+anaerobic	B-Modifier
+tube	B-Location
 .	O
 
 0.1	B-Amount
@@ -129,12 +131,13 @@ with	O
 high	B-Temperature
 temperature	I-Temperature
 >	B-Modifier
-70˚C	B-Temperature
+70	B-Temperature
+C	I-Temperature
 and	O
 low	O
-pH	B-Measure-Type
-<	I-Measure-Type
-4	I-Measure-Type
+pH	B-Generic_Measure
+<	I-Generic_Measure
+4	I-Generic_Measure
 .	O
 
 Samples	B-Reagent
@@ -176,7 +179,7 @@ to	O
 settle	B-Action
 ,	O
 the	O
-pH	B-Measure-Type
+pH	B-Measure_Type
 of	O
 the	O
 liquid	B-Reagent
@@ -186,7 +189,7 @@ adjusted	B-Action
 to	O
 ca	O
 .	O
-5.5	O
+5.5	B-Amount
 with	O
 solid	B-Reagent
 CaCO3	I-Reagent
@@ -199,7 +202,7 @@ stirring	I-Method
 
 Once	O
 the	O
-pH	B-Measure-Type
+pH	B-Measure_Type
 is	O
 adjusted	B-Action
 the	O
@@ -228,13 +231,13 @@ guidelines	O
 
 If	O
 the	O
-resazurin	B-Reagent
-indicator	I-Reagent
-changes	O
+resazurin	B-Action
+indicator	I-Action
+changes	I-Action
 to	O
 pink	O
 ,	O
-drops	O
+drops	B-Reagent
 of	O
 H2S-saturated	B-Reagent
 water	I-Reagent
@@ -269,7 +272,7 @@ in	O
 anaerobic	B-Modifier
 tubes	B-Location
 or	O
-filled	O
+filled	B-Action
 centrifuge	B-Location
 tubes	I-Location
 are	O
@@ -293,7 +296,8 @@ al	O
 Incubate	B-Action
 samples	B-Reagent
 at	O
-80˚C	B-Temperature
+80	B-Temperature
+C	I-Temperature
 with	O
 shaking	B-Action
 (	O
@@ -314,36 +318,38 @@ buffered	I-Reagent
 with	O
 0.7	B-Amount
 g	I-Amount
-glycine	B-Concentration
-per	I-Concentration
-liter	I-Concentration
+glycine	B-Reagent
+per	O
+liter	B-Amount
 and	O
 the	O
-pH	B-Measure-Type
-was	O
+pH	B-Generic_Measure
+was	I-Generic_Measure
 adjusted	B-Action
 to	O
-pH	B-pH
-3–3.5	I-pH
+pH	B-Measure_Type
+3	B-Numerical
+3.5	I-Numerical
 with	O
 1:2	B-Concentration
-diluted	I-Concentration
+diluted	B-Modifier
 sulfuric	B-Reagent
 acid	I-Reagent
 .	O
 
 For	O
 long-term	B-Modifier
-80˚C	B-Temperature
-growth	I-Temperature
+80	B-Temperature
+C	I-Temperature
+growth	O
 ,	O
 our	O
-favorite	B-Location
-bath	I-Location
-liquid	B-Reagent
+favorite	B-Reagent
+bath	I-Reagent
+liquid	I-Reagent
 is	O
 PEG	B-Reagent
-400	B-Numerical
+400	I-Reagent
 ,	O
 which	O
 is	O
@@ -355,9 +361,9 @@ nontoxic	B-Modifier
 water	B-Reagent
 soluble	B-Modifier
 compound	I-Modifier
-that	I-Modifier
-does	I-Modifier
-not	I-Modifier
+that	O
+does	O
+not	O
 evaporate	B-Action
 (	O
 see	O
@@ -383,12 +389,10 @@ or	O
 production	B-Method
 of	O
 a	O
-characteristic	B-Location
-“	I-Location
-damp	I-Location
-sock	I-Location
-”	I-Location
-odor	O
+characteristic	B-Reagent
+damp	I-Reagent
+sock	I-Reagent
+odor	I-Reagent
 (	O
 W.	O
 Zillig	B-Reagent
@@ -402,7 +406,7 @@ samples	B-Reagent
 are	O
 plated	B-Action
 on	O
-Gelrite®	B-Reagent
+Gelrite	B-Reagent
 plates	I-Reagent
 (	O
 see	O
@@ -474,8 +478,9 @@ made	O
 by	O
 slowly	B-Modifier
 adding	B-Action
-6–10	B-Amount
-grams/L	I-Amount
+6	B-Numerical
+10	I-Numerical
+grams/L	I-Numerical
 Gelrite	B-Reagent
 (	O
 Kelco	O
@@ -488,9 +493,9 @@ see	O
 above	O
 )	O
 and	O
-boiling	B-Modifier
-until	I-Modifier
-dissolved	I-Modifier
+boiling	B-Action
+until	O
+dissolved	B-Modifier
 .	O
 
 Calcium	B-Reagent
@@ -510,10 +515,10 @@ are	O
 added	B-Action
 to	O
 a	O
-final	B-Modifier
-concentration	B-Concentration
-of	I-Concentration
-1.5	I-Concentration
+final	O
+concentration	B-Measure_Type
+of	O
+1.5	B-Reagent
 and	O
 5	B-Concentration
 mM	I-Concentration
@@ -545,8 +550,8 @@ mm	I-Size
 )	O
 Petri	B-Location
 plates	I-Location
-with	I-Location
-cams	I-Location
+with	O
+cams	O
 .	O
 
 After	O
@@ -559,7 +564,8 @@ can	O
 be	O
 stored	B-Action
 at	O
-4˚C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 indefinitely	B-Time
 .	O
 
@@ -568,9 +574,9 @@ Approximately	B-Modifier
 mL	I-Amount
 ,	O
 from	O
-undiluted	B-Modifier
-to	B-Concentration
-10-3	I-Concentration
+undiluted	B-Action
+to	O
+10-3	B-Concentration
 ,	O
 of	O
 enrichment	B-Reagent
@@ -606,7 +612,9 @@ airtight	B-Modifier
 moist	I-Modifier
 containers	B-Location
 at	O
-75–80˚C	B-Temperature
+75	O
+80	B-Temperature
+C	I-Temperature
 for	O
 approximately	B-Modifier
 1	B-Time
@@ -617,7 +625,7 @@ appear	O
 (	O
 Fig	O
 .	O
-1C	B-Temperature
+1C	O
 in	O
 guidelines	O
 )	O

@@ -22,7 +22,7 @@ cultures	I-Reagent
 
 Perform	B-Action
 virus	B-Reagent
-screening	O
+screening	B-Action
 in	O
 sterile	B-Modifier
 96	B-Size
@@ -39,7 +39,8 @@ Store	B-Action
 seawater	B-Reagent
 filtrates	I-Reagent
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Absorb	B-Action
@@ -52,14 +53,14 @@ bacteria	B-Reagent
 
 Place	B-Action
 15	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 log	B-Reagent
 phase	I-Reagent
 cells	I-Reagent
 and	O
 15	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 seawater	B-Reagent
 filtrate	I-Reagent
@@ -91,7 +92,7 @@ hour	I-Time
 
 Add	B-Action
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 growth	B-Reagent
 media	I-Reagent
 (	O
@@ -149,9 +150,7 @@ fresh	B-Modifier
 liquid	B-Reagent
 media	I-Reagent
 (	O
-“	O
 frogging	B-Action
-”	O
 into	O
 new	B-Modifier
 wells	B-Location
@@ -167,7 +166,7 @@ out	I-Action
 cells	B-Reagent
 with	O
 0.2um	B-Size
-filtration	B-Device
+filtration	B-Location
 into	O
 1.5ml	B-Amount
 microfuge	B-Location
@@ -195,7 +194,8 @@ storage	O
 
 Store	B-Action
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Plaque-purify	B-Action
@@ -207,8 +207,8 @@ growing	B-Action
 cells	B-Reagent
 plus	O
 virus	B-Reagent
-on	I-Reagent
-solid	I-Reagent
+on	O
+solid	B-Reagent
 media	I-Reagent
 .	O
 
@@ -234,7 +234,7 @@ starting	O
 point	O
 ,	O
 25	B-Amount
-µl	I-Amount
+l	I-Amount
 virus	B-Reagent
 from	O
 96	B-Location
@@ -243,7 +243,7 @@ plate	I-Location
 enrichments	B-Method
 and	O
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 log-phase	B-Reagent
 host	I-Reagent
 bacteria	I-Reagent
@@ -264,7 +264,7 @@ agar	I-Reagent
 .	O
 
 Pour	B-Action
-over	O
+over	I-Action
 the	O
 solid	B-Reagent
 media	I-Reagent
@@ -284,7 +284,7 @@ of	O
 all	O
 plaque	B-Reagent
 types	I-Reagent
-present	I-Reagent
+present	O
 and	O
 record	B-Action
 appearance	O
@@ -302,13 +302,14 @@ the	O
 agar	B-Reagent
 plugs	I-Reagent
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 and	O
 allow	O
 the	O
 viruses	B-Reagent
-to	O
-diffuse	B-Action
+to	B-Action
+diffuse	I-Action
 out	I-Action
 of	O
 the	O
@@ -339,24 +340,24 @@ purification	B-Method
 
 Take	B-Action
 25	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 the	O
 plaque-purified	B-Reagent
 virus	I-Reagent
-(	I-Reagent
-agar	I-Reagent
+(	O
+agar	B-Reagent
 plug	I-Reagent
 in	O
-~100	B-Modifier
-µl	B-Amount
+~100	B-Amount
+l	I-Amount
 broth	B-Reagent
 )	O
 and	O
 absorb	B-Action
 to	O
 200	B-Amount
-µl	I-Amount
+l	I-Amount
 log-phase	B-Reagent
 bacteria	I-Reagent
 for	O
@@ -383,8 +384,8 @@ filter	B-Location
 culture	I-Location
 through	O
 0.2	B-Size
-µm	I-Size
-filter	I-Size
+m	I-Size
+filter	B-Device
 SYBR	B-Reagent
 stain	I-Reagent
 a	I-Reagent
@@ -394,8 +395,8 @@ the	O
 filtrate	B-Reagent
 to	O
 determine	B-Action
-how	B-Measure-Type
-much	I-Measure-Type
+how	B-Amount
+much	I-Amount
 virus	B-Reagent
 is	O
 present	O

@@ -18,15 +18,15 @@ mL	I-Amount
 each	O
 to	O
 a	O
-control	O
-or	O
-treatment	B-Method
+control	B-Method
+or	I-Method
+treatment	I-Method
 ,	O
 50-mL	B-Amount
 sterile	B-Modifier
 ,	O
-conical	B-Amount
-centrifuge	B-Location
+conical	B-Location
+centrifuge	I-Location
 tubes	I-Location
 .	O
 
@@ -41,9 +41,10 @@ mL	I-Amount
 and	O
 fix	B-Action
 with	O
-1	B-Generic-Measure
-%	I-Generic-Measure
-0.02-µm	B-Size
+1	B-Generic_Measure
+%	I-Generic_Measure
+0.02-	B-Size
+m	I-Size
 filtered	B-Modifier
 formalin	B-Reagent
 .	O
@@ -55,13 +56,13 @@ samples	I-Reagent
 ,	O
 add	B-Action
 1	B-Concentration
-µg/mL	I-Concentration
+g/mL	I-Concentration
 mitomycin	B-Reagent
 C	I-Reagent
 (	O
 or	O
 0.5	B-Concentration
-µg/mL	I-Concentration
+g/mL	I-Concentration
 in	O
 oligotrophic	B-Reagent
 environments	I-Reagent
@@ -73,7 +74,8 @@ samples	B-Reagent
 are	O
 incubated	B-Action
 for	O
-16–24	B-Time
+16	B-Time
+24	I-Time
 h	I-Time
 at	O
 room	B-Temperature
@@ -171,13 +173,13 @@ VDCC	B-Reagent
 ]	I-Reagent
 /BDC	I-Reagent
 T=o	I-Reagent
-'	O
+'	I-Reagent
 .	O
 
 The	O
 average	O
-burst	B-Measure-Type
-size	I-Measure-Type
+burst	B-Measure_Type
+size	I-Measure_Type
 can	O
 be	O
 derived	O
@@ -208,7 +210,7 @@ period	O
 Ackermann/Heldal	O
 ,	O
 this	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 )	O
 .	O
 

@@ -8,8 +8,8 @@ Chlorella	I-Method
 Viruses	I-Method
 
 For	O
-each	B-Reagent
-gradient	I-Reagent
+each	B-Modifier
+gradient	B-Reagent
 ,	O
 in	O
 100	B-Size
@@ -21,12 +21,12 @@ tubes	B-Location
 mix	B-Action
 together	O
 500	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 virus	B-Reagent
 ,	O
 60	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 10X	B-Concentration
 TEN	B-Reagent
@@ -36,7 +36,7 @@ pH	B-pH
 ,	O
 and	O
 60	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 1	B-Concentration
 %	I-Concentration
@@ -46,14 +46,14 @@ sarcosyl	I-Reagent
 
 Add	B-Action
 600	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 60	B-Concentration
 %	I-Concentration
-(	B-Reagent
-w/w	I-Reagent
-)	I-Reagent
-CsCl	I-Reagent
+(	O
+w/w	O
+)	O
+CsCl	B-Reagent
 to	O
 each	B-Modifier
 tube	B-Location
@@ -63,7 +63,8 @@ Heat	B-Action
 the	O
 tubes	B-Location
 at	O
-75°C	B-Temperature
+75	B-Temperature
+C	I-Temperature
 for	O
 15	B-Time
 min	I-Time
@@ -76,10 +77,10 @@ onto	O
 pre-formed	B-Modifier
 40-60	B-Concentration
 %	I-Concentration
-(	B-Reagent
-w/w	I-Reagent
-)	I-Reagent
-CsCl	I-Reagent
+(	O
+w/w	O
+)	O
+CsCl	B-Reagent
 gradients	I-Reagent
 in	O
 SW60	B-Device
@@ -98,14 +99,14 @@ gradient	B-Reagent
 
 Add	B-Action
 1200	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 the	O
 heated	B-Modifier
 virus	B-Reagent
 to	O
-each	B-Reagent
-gradient	I-Reagent
+each	B-Modifier
+gradient	B-Reagent
 .	O
 
 Centrifuge	B-Action
@@ -121,7 +122,8 @@ rpm	I-Speed
 18	B-Time
 hours	I-Time
 ,	O
-25°C	B-Temperature
+25	B-Temperature
+C	I-Temperature
 .	O
 
 Remove	B-Action
@@ -134,10 +136,10 @@ gradients	B-Reagent
 with	O
 a	O
 wide	B-Modifier
-bent	I-Modifier
-needle	I-Modifier
-to	I-Modifier
-silicon-coated	I-Modifier
+bent	B-Device
+needle	I-Device
+to	O
+silicon-coated	B-Modifier
 30	B-Amount
 mL	I-Amount
 corex	B-Location
@@ -211,7 +213,7 @@ tube	B-Location
 and	O
 adjust	B-Action
 the	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 each	B-Modifier
 tube	B-Location
@@ -229,7 +231,7 @@ the	O
 DNAs	B-Reagent
 with	O
 2X	B-Numerical
-volumes	B-Measure-Type
+volumes	B-Measure_Type
 of	O
 100	B-Concentration
 %	I-Concentration
@@ -241,7 +243,8 @@ well	B-Modifier
 and	O
 hold	B-Action
 at	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 overnight	B-Time
 .	O
 
@@ -261,7 +264,8 @@ rpm	I-Speed
 20	B-Time
 min	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Discard	B-Action
@@ -294,7 +298,7 @@ samples	I-Reagent
 with	O
 approximately	B-Modifier
 500	B-Amount
-µL	I-Amount
+L	I-Amount
 of	O
 1X	B-Concentration
 TE	B-Reagent
@@ -304,13 +308,14 @@ buffer	I-Reagent
 Determine	B-Action
 the	O
 DNA	B-Reagent
-concentrations	I-Reagent
+concentrations	B-Measure_Type
 and	O
 store	B-Action
 the	O
 DNAs	B-Reagent
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 

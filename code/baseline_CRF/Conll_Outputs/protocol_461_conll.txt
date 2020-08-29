@@ -8,7 +8,8 @@ scale	O
 Centrifuge	B-Action
 anti-sera	B-Reagent
 @	O
-4ºC	B-Temperature
+4	B-Temperature
+C	I-Temperature
 ,	O
 14,000g	B-Speed
 ,	O
@@ -32,11 +33,11 @@ protein	B-Reagent
 G	I-Reagent
 beads	I-Reagent
 gently	B-Modifier
-to	O
-Bio-Rad	B-Location
-empty	I-Location
-gravity	I-Location
-column	I-Location
+to	I-Modifier
+Bio-Rad	I-Modifier
+empty	I-Modifier
+gravity	I-Modifier
+column	B-Location
 .	O
 
 Set	B-Action
@@ -95,9 +96,9 @@ once	B-Numerical
 Wash	B-Action
 column	B-Location
 with	O
-10	B-Numerical
-bed	B-Modifier
-volumes	B-Measure-Type
+10	B-Location
+bed	I-Location
+volumes	B-Measure_Type
 of	O
 ice-cold	B-Modifier
 Binding	B-Reagent
@@ -109,7 +110,7 @@ antibody	B-Reagent
 with	O
 5	B-Location
 bed	I-Location
-volumes	B-Measure-Type
+volumes	B-Measure_Type
 of	O
 room	B-Temperature
 temperature	I-Temperature
@@ -124,7 +125,7 @@ collecting	B-Action
 tube	B-Location
 with	O
 200	B-Amount
-μl	I-Amount
+l	I-Amount
 1M	B-Concentration
 Tris-HCl	B-Reagent
 (	O
@@ -153,9 +154,9 @@ test	I-Reagent
 Re-equilibrate	B-Action
 column	B-Location
 with	O
-10	B-Numerical
-bed	B-Modifier
-volumes	B-Measure-Type
+10	B-Location
+bed	I-Location
+volumes	B-Measure_Type
 of	O
 Binding	B-Reagent
 Buffer	I-Reagent

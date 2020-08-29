@@ -10,9 +10,9 @@ Prep	I-Method
 Columns	I-Method
 
 Prepare	B-Action
-2	B-Numerical
-labeled	B-Modifier
-1.5ml	B-Amount
+2	B-Amount
+labeled	I-Amount
+1.5ml	I-Amount
 microfuge	B-Location
 tubes	I-Location
 per	O
@@ -47,15 +47,15 @@ sample	I-Reagent
 .	O
 
 Attach	B-Action
-minicolumn	I-Action
+minicolumn	O
 to	O
 bottom	B-Location
 of	O
 3ml	B-Amount
 or	O
 5ml	B-Amount
-sterile	B-Modifier
-syringe	B-Device
+sterile	B-Location
+syringe	I-Location
 that	O
 has	O
 had	O
@@ -78,7 +78,7 @@ solution	B-Reagent
 .	O
 
 Remove	B-Action
-minicolumn	I-Action
+minicolumn	O
 from	O
 the	O
 syringe	B-Device
@@ -89,7 +89,7 @@ plunger	B-Device
 .	O
 
 Reattach	B-Action
-minicolumn	I-Action
+minicolumn	O
 to	O
 the	O
 syringe	B-Device
@@ -118,7 +118,7 @@ resin	B-Reagent
 .	O
 
 Remove	B-Action
-minicolumn	I-Action
+minicolumn	O
 from	O
 syringe	B-Device
 and	O
@@ -144,7 +144,7 @@ liquid	B-Reagent
 .	O
 
 Place	B-Action
-minicolumn	I-Action
+minicolumn	O
 in	O
 new	B-Modifier
 sterile	I-Modifier
@@ -154,14 +154,16 @@ tube	I-Location
 .	O
 
 Add	B-Action
-100μl	B-Amount
-80°C	B-Temperature
+100	B-Amount
+l	I-Amount
+80	B-Temperature
+C	I-Temperature
 TE	B-Reagent
 buffer	I-Reagent
 to	O
 top	B-Location
-of	I-Location
-minicolumn	I-Location
+of	O
+minicolumn	O
 .	O
 
 Place	B-Action

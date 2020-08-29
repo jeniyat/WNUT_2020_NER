@@ -31,18 +31,18 @@ volume	I-Amount
 ca	O
 .	O
 10	B-Amount
-µL	I-Amount
+L	I-Amount
 )	O
 remains	O
 .	O
 
 Add	B-Action
 100	B-Amount
-µL	I-Amount
+L	I-Amount
 TE	B-Reagent
 (	O
 or	O
-TEGED	O
+TEGED	B-Reagent
 )	O
 .	O
 
@@ -54,7 +54,7 @@ to	O
 ca	O
 .	O
 10	B-Amount
-µL	I-Amount
+L	I-Amount
 .	O
 
 Repeat	B-Action
@@ -86,10 +86,11 @@ volume	I-Amount
 of	O
 TE	B-Reagent
 or	O
-TEGED	O
+TEGED	B-Reagent
 (	O
-5–10	B-Amount
-µL	I-Amount
+5	B-Amount
+10	I-Amount
+L	I-Amount
 )	O
 .	O
 
@@ -119,9 +120,9 @@ dye	I-Reagent
 to	O
 a	O
 final	O
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 of	O
-1×	B-Concentration
+1	O
 .	O
 
 Heat	B-Action
@@ -136,7 +137,8 @@ loading	B-Reagent
 buffer	I-Reagent
 )	O
 to	O
-60°C	B-Temperature
+60	B-Temperature
+C	I-Temperature
 for	O
 10	B-Time
 min	I-Time

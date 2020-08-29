@@ -13,8 +13,8 @@ HCR-FISH	B-Reagent
 1.1	I-Reagent
 ]	O
 Collect	B-Action
-juvenile	B-Modifier
-squid	B-Location
+juvenile	B-Reagent
+squid	I-Reagent
 from	O
 hatching	B-Method
 table	I-Method
@@ -35,16 +35,16 @@ cups	I-Location
 
 Colonize	B-Action
 with	O
-desired	O
-V.	B-Reagent
-fischeri	I-Reagent
+desired	B-Generic_Measure
+V.	I-Generic_Measure
+fischeri	B-Reagent
 strain	I-Reagent
 .	O
 
-[	B-Reagent
-1.2	I-Reagent
-]	I-Reagent
-Anesthetize	I-Reagent
+[	O
+1.2	B-Numerical
+]	O
+Anesthetize	B-Reagent
 squid	I-Reagent
 for	O
 2	B-Time
@@ -60,8 +60,8 @@ filtered	B-Modifier
 seawater	B-Reagent
 .	O
 
-[	O
-1.3	O
+[	B-Reagent
+1.3	I-Reagent
 ]	O
 Under	O
 dissecting	B-Device
@@ -69,12 +69,12 @@ scope	I-Device
 ,	O
 split	B-Action
 and	O
-peel	B-Action
-back	B-Modifier
-mantle	I-Modifier
-on	I-Modifier
-anterior	I-Modifier
-side	I-Modifier
+peel	B-Device
+back	I-Device
+mantle	I-Device
+on	O
+anterior	B-Location
+side	I-Location
 .	O
 
 Then	O
@@ -90,12 +90,12 @@ light	O
 organ	O
 .	O
 
-[	B-Reagent
-1.4	I-Reagent
+[	O
+1.4	B-Amount
 ]	O
 Place	B-Action
 dissected	B-Modifier
-squid	B-Location
+squid	B-Reagent
 into	O
 4	B-Concentration
 %	I-Concentration
@@ -108,7 +108,7 @@ incubate	B-Action
 overnight	B-Time
 at	O
 4	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 on	O
 shaker	B-Device
 to	O
@@ -122,8 +122,8 @@ to	O
 use	O
 are	O
 1.5mL	B-Amount
-screw-cap	I-Amount
-vials	B-Location
+screw-cap	B-Location
+vials	I-Location
 ,	O
 to	O
 prevent	B-Action
@@ -140,11 +140,11 @@ Proteinase	B-Reagent
 KUse	I-Reagent
 RNase-free	I-Reagent
 equipment	I-Reagent
-and	I-Reagent
-solutions	I-Reagent
+and	O
+solutions	B-Reagent
 throughout	O
 the	O
-remainder	O
+remainder	B-Modifier
 of	O
 the	O
 protocol	O
@@ -160,7 +160,8 @@ and	O
 washes	B-Action
 in	O
 a	O
-500-μL	B-Amount
+500-	B-Amount
+L	I-Amount
 volume	I-Amount
 ,	O
 on	O
@@ -225,7 +226,7 @@ rotator	B-Device
 .	O
 
 [	O
-2.3	O
+2.3	B-Numerical
 ]	O
 Stop	B-Action
 the	O
@@ -301,7 +302,7 @@ than	I-Modifier
 week	I-Time
 at	O
 4	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 in	O
 Permeabilization	B-Reagent
 Buffer	I-Reagent
@@ -333,7 +334,7 @@ Incubate	B-Action
 sample	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 50	B-Concentration
 %	I-Concentration
@@ -341,20 +342,20 @@ Hyb	B-Reagent
 Buffer	I-Reagent
 at	O
 65	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 30	B-Time
 min	I-Time
 .	O
 
 [	O
-3.2	O
+3.2	B-Numerical
 ]	O
 Change	B-Action
 sample	B-Reagent
 into	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 fresh	B-Modifier
 50	B-Concentration
@@ -366,7 +367,7 @@ and	O
 incubate	B-Action
 at	O
 65	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 2.5	B-Time
 h	I-Time
@@ -399,9 +400,9 @@ cover	B-Action
 of	O
 the	O
 plate	B-Location
-with	I-Location
-a	I-Location
-strip	I-Location
+with	O
+a	O
+strip	B-Location
 of	O
 parafilm	B-Seal
 .	O
@@ -432,7 +433,6 @@ Autofluorescence	B-Action
 (	O
 AF	O
 )	O
-–	O
 Follow	B-Action
 protocol	O
 but	O
@@ -454,14 +454,13 @@ step	O
 
 Non-Specific	B-Method
 Amplification	I-Method
-of	I-Method
-hairpins	I-Method
+of	O
+hairpins	O
 (	O
 NSA	B-Reagent
-)	O
-–	O
-Sample	B-Reagent
-incubated	B-Action
+)	I-Reagent
+Sample	I-Reagent
+incubated	I-Reagent
 without	O
 probes	B-Reagent
 (	O
@@ -479,9 +478,8 @@ Detection	B-Method
 of	O
 targets	B-Reagent
 (	O
-NSD	O
-)	O
-–	B-Reagent
+NSD	B-Reagent
+)	I-Reagent
 This	I-Reagent
 control	I-Reagent
 is	O
@@ -546,15 +544,15 @@ tissue	I-Location
 can	O
 give	O
 an	O
-estimate	B-Action
+estimate	O
 of	O
 NSD	O
 in	O
 the	O
 same	O
 sample	B-Reagent
-after	I-Reagent
-treatment	I-Reagent
+after	O
+treatment	B-Method
 .	O
 
 [	O
@@ -565,10 +563,10 @@ Mix	B-Action
 pmol	I-Amount
 of	O
 each	B-Modifier
-probe	B-Reagent
-in	O
+probe	I-Modifier
+in	I-Modifier
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 50	B-Concentration
 %	I-Concentration
@@ -576,7 +574,7 @@ Hyb	B-Reagent
 buffer	I-Reagent
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 30	B-Time
 min	I-Time
@@ -589,7 +587,7 @@ coordinated	B-Action
 with	O
 step	O
 [	O
-3.2	O
+3.2	B-Numerical
 ]	O
 so	O
 that	O
@@ -604,7 +602,7 @@ time	O
 .	O
 
 [	O
-4.2	B-Numerical
+4.2	O
 ]	O
 Remove	B-Action
 the	O
@@ -614,7 +612,7 @@ Hyb	B-Reagent
 buffer	I-Reagent
 from	O
 [	O
-3.2	O
+3.2	B-Numerical
 ]	O
 ,	O
 and	O
@@ -633,11 +631,11 @@ h	I-Time
 incubation	B-Method
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
-Probe	B-Action
-Washes	O
+Probe	B-Method
+Washes	I-Method
 .	O
 
 All	O
@@ -649,7 +647,7 @@ be	O
 pre-warmed	B-Modifier
 to	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 Probe	B-Action
@@ -676,7 +674,7 @@ Wash	B-Action
 samples	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 Probe	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
@@ -685,7 +683,7 @@ for	O
 min	I-Time
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 [	O
@@ -695,7 +693,7 @@ Wash	B-Action
 samples	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 (	O
 75	B-Concentration
 %	I-Concentration
@@ -715,7 +713,7 @@ for	O
 min	I-Time
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 [	O
@@ -725,17 +723,17 @@ Wash	B-Action
 samples	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 (	O
-50	B-Generic-Measure
-%	I-Generic-Measure
+50	B-Concentration
+%	I-Concentration
 of	O
 Probe	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
 +	O
-50	B-Generic-Measure
-%	I-Generic-Measure
+50	B-Concentration
+%	I-Concentration
 of	O
 5X	B-Concentration
 SSC	B-Reagent
@@ -745,17 +743,17 @@ for	O
 min	I-Time
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 [	O
 5.4	B-Amount
-]	I-Amount
-Wash	I-Amount
+]	O
+Wash	B-Action
 samples	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 (	O
 25	B-Concentration
 %	I-Concentration
@@ -763,9 +761,9 @@ of	O
 Probe	B-Reagent
 Wash	I-Reagent
 Buffer	I-Reagent
-+	I-Reagent
-75	I-Reagent
-%	I-Reagent
++	O
+75	B-Concentration
+%	I-Concentration
 of	O
 5X	B-Concentration
 SSC	B-Reagent
@@ -775,11 +773,11 @@ for	O
 min	I-Time
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 [	O
-5.5	O
+5.5	B-Amount
 ]	O
 Wash	B-Action
 samples	B-Reagent
@@ -788,7 +786,7 @@ times	O
 ,	O
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 5X	B-Concentration
 SSC	B-Reagent
@@ -797,7 +795,7 @@ for	O
 min	I-Time
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 [	O
@@ -810,7 +808,7 @@ times	O
 ,	O
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 5X	B-Concentration
 SSC	B-Reagent
@@ -819,7 +817,7 @@ for	O
 min	I-Time
 at	O
 45	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 Pre-hybridization	B-Method
@@ -832,7 +830,7 @@ Incubate	B-Action
 samples	B-Reagent
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 DNA	B-Reagent
 Amplification	I-Reagent
@@ -852,7 +850,7 @@ samples	B-Reagent
 in	O
 fresh	B-Modifier
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 DNA	B-Reagent
 Amplification	I-Reagent
@@ -874,7 +872,7 @@ pmol	I-Amount
 for	O
 every	B-Modifier
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 DNA	B-Reagent
 Amplification	I-Reagent
@@ -891,14 +889,14 @@ tube	I-Location
 .	O
 
 [	O
-6.4	O
+6.4	B-Amount
 ]	O
 Heat	B-Action
 the	O
 hairpins	O
 to	O
 95	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 for	O
 90	B-Time
 sec	I-Time
@@ -940,7 +938,7 @@ unmixed	B-Modifier
 ]	O
 Prepare	B-Action
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 fresh	B-Modifier
 DNA	B-Reagent
@@ -992,7 +990,7 @@ all	O
 hairpins	O
 in	O
 100	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 pre-equilibrated	B-Modifier
 DNA	B-Reagent
@@ -1004,20 +1002,20 @@ RT	B-Temperature
 
 (	O
 Final	B-Modifier
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 of	O
 each	B-Modifier
 hairpin	I-Modifier
-is	I-Modifier
-60	B-Concentration
-nM	I-Concentration
+is	O
+60	O
+nM	O
 .	O
 )	O
 
 Note	O
 :	O
 The	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 of	O
 this	O
 incubation	B-Method
@@ -1031,24 +1029,24 @@ needed	O
 i.e.	O
 ,	O
 for	O
-high-abundance	B-Device
-squid	I-Device
-transcripts	I-Device
+high-abundance	B-Reagent
+squid	I-Reagent
+transcripts	I-Reagent
 )	O
 ;	O
 however	O
 ,	O
 the	O
 hairpin	B-Action
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 must	O
 be	O
-kept	B-Modifier
-constant	I-Modifier
+kept	B-Action
+constant	O
 .	O
 
 [	O
-7.2	B-pH
+7.2	B-Numerical
 ]	O
 Remove	B-Action
 final	B-Reagent
@@ -1105,8 +1103,8 @@ Washes	I-Method
 
 Note	O
 :	O
-All	O
-solutions	B-Reagent
+All	B-Reagent
+solutions	I-Reagent
 used	O
 here	O
 must	O
@@ -1126,7 +1124,7 @@ times	O
 ,	O
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 5X	B-Concentration
 SSCTw	B-Reagent
@@ -1148,7 +1146,7 @@ times	O
 ,	O
 in	O
 500	B-Amount
-μL	I-Amount
+L	I-Amount
 of	O
 5X	B-Concentration
 SSCTw	B-Reagent
@@ -1182,21 +1180,21 @@ in	O
 SSCTw	B-Reagent
 at	O
 4	B-Temperature
-°C	I-Temperature
+C	I-Temperature
 .	O
 
 Note	O
 :	O
-The	O
-processed	B-Action
-samples	B-Reagent
+The	B-Reagent
+processed	I-Reagent
+samples	I-Reagent
 can	O
 be	O
 counterstained	O
 with	O
 phalloidin	B-Reagent
 or	O
-wheat	O
+wheat	B-Action
 germ	B-Reagent
 agglutinin	I-Reagent
 following	I-Reagent

@@ -8,8 +8,8 @@ NC64A	I-Reagent
 Grow	B-Action
 NC64A	B-Reagent
 to	O
-mid-log	O
-phase	O
+mid-log	B-Reagent
+phase	I-Reagent
 .	O
 
 Concentrate	B-Action
@@ -35,8 +35,8 @@ x	I-Numerical
 cells~91	B-Reagent
 mg	B-Amount
 cells	B-Reagent
-wet	B-Measure-Type
-weight	I-Measure-Type
+wet	B-Measure_Type
+weight	I-Measure_Type
 )	O
 .	O
 
@@ -44,10 +44,10 @@ Infect	B-Action
 with	O
 virus	B-Reagent
 at	O
-m.o.i.=5	O
+m.o.i.=5	B-Reagent
 for	O
 appropriate	B-Modifier
-time	I-Modifier
+time	O
 .	O
 
 Harvest	B-Action
@@ -62,7 +62,8 @@ rpm	I-Speed
 5	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Discard	B-Action
@@ -78,7 +79,8 @@ nitrogen	I-Reagent
 
 Store	B-Action
 at	O
--80°C	B-Temperature
+-80	B-Temperature
+C	I-Temperature
 until	O
 ready	O
 to	O
@@ -93,7 +95,7 @@ Take	B-Action
 1	B-Numerical
 to	I-Numerical
 2	I-Numerical
-samples	I-Numerical
+samples	B-Reagent
 from	O
 the	O
 freezer	B-Device
@@ -107,10 +109,10 @@ ice	B-Location
 )	O
 ,	O
 break	B-Action
-pellets	I-Action
-loose	B-Device
-with	I-Device
-spatula	I-Device
+pellets	B-Reagent
+loose	I-Reagent
+with	O
+spatula	B-Reagent
 ,	O
 and	O
 add	B-Action
@@ -135,8 +137,8 @@ degradation	B-Method
 .	O
 
 Break	B-Action
-pellets	I-Action
-up	I-Action
+pellets	B-Reagent
+up	B-Modifier
 with	B-Device
 spatula	I-Device
 and	O
@@ -171,12 +173,14 @@ speed	O
 5	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Place	B-Action
 at	O
--80°C	B-Temperature
+-80	B-Temperature
+C	I-Temperature
 overnight	B-Time
 .	O
 
@@ -201,7 +205,7 @@ minutes	I-Time
 
 Add	B-Action
 250	B-Amount
-µl	I-Amount
+l	I-Amount
 chloroform	B-Reagent
 to	O
 samples	B-Reagent
@@ -231,7 +235,8 @@ g	I-Speed
 15	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Withdraw	B-Action
@@ -250,7 +255,7 @@ tube	I-Location
 
 Add	B-Action
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 isopropanol	B-Reagent
 .	O
 
@@ -273,7 +278,8 @@ g	I-Speed
 10	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Discard	B-Action
@@ -298,7 +304,8 @@ g	I-Speed
 5	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Dry	B-Action
@@ -325,19 +332,19 @@ each	B-Modifier
 pellet	B-Reagent
 in	O
 250	B-Amount
-µl	I-Amount
-dd-H20	I-Amount
+l	I-Amount
+dd-H20	B-Reagent
 .	O
 
 Add	B-Action
 250	B-Amount
-µl	I-Amount
+l	I-Amount
 of	O
 2X	B-Concentration
 MOPS	B-Reagent
 ,	O
 20mM	B-Concentration
-MgCl2	I-Concentration
+MgCl2	B-Reagent
 (	O
 2X	B-Numerical
 )	O
@@ -367,7 +374,7 @@ phenol	B-Reagent
 chloroform	I-Reagent
 (	O
 500	B-Amount
-µl	I-Amount
+l	I-Amount
 )	O
 .	O
 
@@ -380,7 +387,8 @@ g	I-Speed
 5	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Withdraw	B-Action
@@ -419,7 +427,8 @@ g	I-Speed
 10	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Discard	B-Action
@@ -444,7 +453,8 @@ g	I-Speed
 5	B-Time
 min.	I-Time
 ,	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Dry	B-Action
@@ -466,7 +476,7 @@ Resuspend	B-Action
 pellets	B-Reagent
 in	O
 40-50	B-Amount
-µl	I-Amount
+l	I-Amount
 water	B-Reagent
 .	O
 

@@ -47,12 +47,13 @@ for	O
 10	B-Time
 minutes	I-Time
 at	O
-4˚C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 *Pellet	O
 contains	O
-ECM	B-Reagent
+ECM	B-Method
 ,	O
 polysaccharides	B-Location
 ,	O
@@ -68,9 +69,9 @@ the	O
 RNA	B-Reagent
 .	O
 
-In	O
-high	B-Modifier
-fat	B-Reagent
+In	B-Reagent
+high	I-Reagent
+fat	I-Reagent
 samples	I-Reagent
 ,	O
 a	O
@@ -156,7 +157,8 @@ for	O
 15	B-Time
 minutes	I-Time
 at	O
-4˚C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 *The	O
@@ -164,9 +166,9 @@ mixture	B-Reagent
 separates	O
 into	O
 a	O
-lower	B-Modifier
-red	I-Modifier
-phenol-chloroform	B-Reagent
+lower	B-Reagent
+red	I-Reagent
+phenol-chloroform	I-Reagent
 phase	I-Reagent
 ,	O
 an	O
@@ -192,7 +194,7 @@ phase	I-Reagent
 of	O
 the	O
 total	O
-volume	B-Measure-Type
+volume	B-Measure_Type
 )	O
 .	O
 
@@ -208,7 +210,7 @@ angling	O
 the	O
 tube	B-Location
 at	O
-45˚	O
+45	O
 and	O
 pipetting	B-Action
 the	O
@@ -259,8 +261,9 @@ desired	I-Method
 (	O
 saved	B-Action
 overnight	B-Time
-at	I-Time
-4˚C	I-Time
+at	O
+4	B-Temperature
+C	I-Temperature
 )	O
 ;	O
 however	O
@@ -320,29 +323,30 @@ for	O
 10	B-Time
 minutes	I-Time
 at	O
-4˚C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 *RNA	O
 is	O
-often	O
-visible	B-Modifier
+often	B-Action
+visible	I-Action
 prior	O
 to	O
 centrifugation	B-Method
 ,	O
 and	O
-forms	B-Action
+forms	O
 a	O
-gel-like	B-Reagent
-pellet	I-Reagent
+gel-like	O
+pellet	B-Reagent
 on	O
 the	O
 side	O
 and	O
 bottom	B-Location
-of	I-Location
-tube	I-Location
+of	O
+tube	B-Location
 .	O
 
 Remove	B-Action
@@ -352,7 +356,7 @@ from	O
 the	O
 tube	B-Location
 ,	O
-leaving	B-Action
+leaving	O
 the	O
 RNA	B-Reagent
 pellet	I-Reagent
@@ -382,7 +386,8 @@ least	I-Modifier
 1	B-Time
 year	I-Time
 at	O
--20˚C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 ,	O
 or	O
 at	B-Modifier
@@ -390,13 +395,14 @@ least	I-Modifier
 1	B-Time
 week	I-Time
 at	O
-4˚C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Briefly	B-Modifier
 vortex	B-Action
 the	O
-sample.Centrifuge	B-Action
+sample.Centrifuge	B-Reagent
 the	O
 tube	B-Location
 at	O
@@ -407,7 +413,8 @@ for	O
 5	B-Time
 minutes	I-Time
 at	O
-4˚C.Discard	O
+4	O
+C.Discard	O
 the	O
 wash	B-Action
 .	O
@@ -472,11 +479,12 @@ a	O
 water	B-Location
 bath	I-Location
 or	O
-heat	B-Device
-block	I-Device
-set	O
+heat	B-Reagent
+block	I-Reagent
+set	I-Reagent
 at	O
-55-60˚C	B-Temperature
+55-60	B-Temperature
+C	I-Temperature
 for	O
 10-15	B-Time
 minutes	I-Time
@@ -492,13 +500,14 @@ as	O
 DNase	B-Method
 treatment	I-Method
 or	O
-cDNA	B-Method
-synthesis	I-Method
+cDNA	B-Reagent
+synthesis	B-Method
 ,	O
 or	O
 store	B-Action
 at	O
--70˚C	B-Temperature
+-70	B-Temperature
+C	I-Temperature
 
 
 

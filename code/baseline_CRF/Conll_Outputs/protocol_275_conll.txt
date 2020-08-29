@@ -17,8 +17,8 @@ fixative	B-Reagent
 One	O
 of	O
 the	O
-commonly	B-Modifier
-used	I-Modifier
+commonly	O
+used	O
 fixation	B-Method
 methods	I-Method
 for	O
@@ -34,7 +34,8 @@ in	O
 pre-cooled	B-Modifier
 acetone	B-Reagent
 (	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 )	O
 for	O
 10	B-Time
@@ -80,8 +81,8 @@ OCT	B-Reagent
 Slowly	B-Modifier
 place	B-Action
 the	O
-base	O
-mold	B-Reagent
+base	B-Modifier
+mold	I-Modifier
 containing	O
 the	O
 tissue	B-Reagent
@@ -112,7 +113,8 @@ frozen	B-Modifier
 tissue	B-Reagent
 block	I-Reagent
 at	O
--80°C	B-Temperature
+-80	B-Temperature
+C	I-Temperature
 until	O
 ready	O
 for	O
@@ -131,7 +133,8 @@ cryostat	B-Device
 (	O
 e.g	O
 .	O
--20°C	B-Temperature
+-20	B-Temperature
+C	I-Temperature
 )	O
 prior	O
 to	O
@@ -139,7 +142,7 @@ sectioning	B-Action
 and	O
 allow	O
 the	O
-temperature	B-Measure-Type
+temperature	B-Measure_Type
 of	O
 the	O
 frozen	B-Modifier
@@ -149,7 +152,7 @@ to	O
 equilibrate	B-Action
 to	O
 the	O
-temperature	B-Measure-Type
+temperature	B-Measure_Type
 of	O
 the	O
 cryotome	O
@@ -164,11 +167,11 @@ block	I-Reagent
 into	O
 a	O
 desired	O
-thickness	B-Measure-Type
+thickness	B-Measure_Type
 (	O
 typically	B-Modifier
 5-10	B-Size
-µm	I-Size
+m	I-Size
 )	O
 using	O
 the	O
@@ -188,7 +191,7 @@ immunohistochemistry	O
 (	O
 e.g	O
 .	O
-Superfrost	B-Reagent
+Superfrost	O
 )	O
 .	O
 
@@ -212,7 +215,8 @@ sealed	B-Modifier
 slide	B-Location
 box	I-Location
 at	O
--80°C	B-Temperature
+-80	B-Temperature
+C	I-Temperature
 for	O
 later	O
 use	O
@@ -232,7 +236,6 @@ the	O
 tissue	B-Reagent
 sections	I-Reagent
 for	O
-≥	B-Modifier
 20	B-Time
 min	I-Time
 at	O
@@ -258,7 +261,7 @@ PBS	I-Reagent
 at	O
 a	O
 neutral	O
-pH	B-Measure-Type
+pH	B-Measure_Type
 for	O
 5	B-Time
 min	I-Time
@@ -285,7 +288,7 @@ PBS	I-Reagent
 at	O
 a	O
 neutral	O
-pH	B-Measure-Type
+pH	B-Measure_Type
 for	O
 5	B-Time
 min	I-Time
@@ -314,7 +317,7 @@ to	O
 block	B-Action
 endogenous	B-Reagent
 peroxidase	I-Reagent
-activity	O
+activity	I-Reagent
 .	O
 
 Rinse	B-Action
@@ -352,7 +355,7 @@ optional	B-Modifier
 )	O
 Add	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 blocking	B-Reagent
 buffer	I-Reagent
 (	O
@@ -360,8 +363,8 @@ e.g	O
 .	O
 10	B-Concentration
 %	I-Concentration
-fetal	B-Reagent
-bovine	I-Reagent
+fetal	I-Concentration
+bovine	B-Reagent
 serum	I-Reagent
 in	O
 PBS	B-Reagent
@@ -382,7 +385,7 @@ at	O
 room	B-Temperature
 temperature	I-Temperature
 for	O
-1h	O
+1h	B-Time
 .	O
 
 Drain	B-Action
@@ -397,11 +400,11 @@ slides	B-Location
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 an	O
 appropriately	B-Modifier
-diluted	I-Modifier
-primary	B-Reagent
+diluted	B-Reagent
+primary	I-Reagent
 antibody	I-Reagent
 (	O
 in	O
@@ -440,7 +443,8 @@ temperature	I-Temperature
 or	O
 overnight	B-Time
 at	O
-4°C	B-Temperature
+4	B-Temperature
+C	I-Temperature
 .	O
 
 Rinse	B-Action
@@ -475,7 +479,7 @@ min	I-Time
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 an	O
 appropriately	B-Modifier
 diluted	B-Reagent
@@ -569,7 +573,7 @@ min	I-Time
 
 Apply	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 DAB	B-Reagent
 substrate	I-Reagent
 solution	I-Reagent
@@ -611,14 +615,13 @@ the	O
 color	O
 development	O
 for	O
-≤	B-Time
-5	I-Time
+5	B-Time
 min	I-Time
-until	O
-the	O
-desired	O
-color	O
-intensity	O
+until	B-Modifier
+the	I-Modifier
+desired	I-Modifier
+color	I-Modifier
+intensity	I-Modifier
 is	O
 reached	O
 .	O
@@ -665,7 +668,6 @@ Hematoxylin	B-Reagent
 e.g	O
 .	O
 Gill	B-Reagent
-’	I-Reagent
 s	I-Reagent
 Hematoxylin	I-Reagent
 )	O
@@ -682,7 +684,6 @@ running	B-Reagent
 tap	I-Reagent
 water	I-Reagent
 for	O
-≥	B-Modifier
 15	B-Time
 min	I-Time
 .	O
@@ -745,7 +746,7 @@ change	O
 
 Add	B-Action
 100	B-Amount
-µl	I-Amount
+l	I-Amount
 pre-diluted	B-Modifier
 Sav-HRP	B-Reagent
 conjugates	I-Reagent
@@ -865,8 +866,8 @@ in	O
 the	O
 tissue	B-Reagent
 sections	I-Reagent
-under	O
-microscopy	B-Method
+under	B-Method
+microscopy	I-Method
 .	O
 
 

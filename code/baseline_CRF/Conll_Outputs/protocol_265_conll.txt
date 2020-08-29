@@ -1,6 +1,6 @@
 Re-amplification	B-Method
-of	I-Method
-CRISPRa	I-Method
+of	O
+CRISPRa	B-Reagent
 and	O
 CRISPRi	B-Reagent
 libraries	I-Reagent
@@ -12,16 +12,16 @@ Reference	O
 Genome-Scale	B-Reagent
 CRISPR-Mediated	I-Reagent
 Control	I-Reagent
-of	O
-Gene	B-Reagent
+of	I-Reagent
+Gene	I-Reagent
 Repression	I-Reagent
 and	O
 A	O
 
 Dilute	B-Action
 each	B-Modifier
-sub-library	B-Reagent
-to	O
+sub-library	I-Modifier
+to	I-Modifier
 50	B-Concentration
 ng/ul	I-Concentration
 in	O
@@ -102,14 +102,14 @@ cuvette	B-Location
 
 Electroporate	B-Action
 at	O
-20	B-Generic-Measure
-kV	I-Generic-Measure
+20	B-Generic_Measure
+kV	I-Generic_Measure
 ,	O
-200	B-Generic-Measure
-ohms	I-Generic-Measure
+200	B-Generic_Measure
+ohms	I-Generic_Measure
 ,	O
-25	O
-uF	O
+25	B-Amount
+uF	I-Amount
 (	O
 Gene	B-Reagent
 Pulser	I-Reagent
@@ -133,8 +133,8 @@ ml	I-Amount
 pipettes	B-Location
 and	O
 gel	B-Reagent
-loading	I-Reagent
-tips	I-Reagent
+loading	B-Action
+tips	B-Location
 .	O
 
 Wash	B-Action
@@ -177,7 +177,7 @@ large	B-Location
 square	I-Location
 plate	I-Location
 per	O
-sub-library	B-Reagent
+sub-library	O
 ,	O
 use	O
 autoclaved	B-Modifier
@@ -212,7 +212,7 @@ EB	B-Reagent
 ;	O
 an	O
 ideal	B-Action
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 is	O
 about	O
 2~3	B-Concentration
@@ -238,7 +238,7 @@ primers	B-Reagent
 
 Pool	B-Action
 sub-libraries	B-Reagent
-proportionally	I-Reagent
+proportionally	B-Modifier
 (	O
 based	O
 on	O
@@ -258,7 +258,7 @@ library	I-Reagent
 measure	B-Action
 the	O
 pooled	B-Action
-concentration	B-Measure-Type
+concentration	B-Measure_Type
 and	O
 dilute	B-Action
 it	B-Mention
