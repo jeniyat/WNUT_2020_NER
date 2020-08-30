@@ -1,0 +1,209 @@
+Mint-ChIP3: A low-input ChIP-seq protocol using multiplexed chromatin and T7 amplification
+Preliminary StepsPrechill microfuge to 4°C
+Thaw the chromatin adapters needed per your experimental design and hold on ice
+Prepare the following three master mixes and hold on ice, before taking cells from the freezer
+a. 2X MNase/Lysis Mastermix: The following yields a 2X lysis buffer with 60 U MNase per 20 ul, which is in routine use in our lab.
+We typically make excess MNase/Lysis Mastermix, because the MNase is highly concentrated and thus we avoid handling miniscule amounts of MNase.
+The sodium butyrate can be omitted if no acetyl marks are being ChIPed.
+The MNase can be used in a range from 30 U to 150 U per 20 ul; the MNase volume can be adjusted accordingly for lower or higher MNase amounts.
+The 100X Protease Inhibitor cocktail stock is made by dissolving 2 Roche 4693132001 tablets in 1 ml of molecular biology grade water.
+Store unused 100X stock at 4C and discard unused portion after 2 weeks.
+b. T7 Adapter Ligation Mastermix for 8 reactions: When performing 8 reactions, we make sufficient mastermix (MM) for 9 reactions, to accommodate any small losses that may occur during pipetting
+c. Ligase Quenching Solution [sufficient for 25 reactions]: Starting the Protocol
+1. Suspend cells in 20 ul of ice cold PBS (typically 50K to 100K per antibody in use)
+2. Achieve lysis by adding 20 ul of 2X MNase/Lysis Mastermix, mix by using a few gentle cycles of pipetting
+3. Hold on ice for 20 minutes [to achieve cell lysis].
+4. Transfer to a pre-warmed thermal cycler at 37oC for 10 minutes [to achieve MNase digestion]
+5. Immediately place samples on ice and add 4.8 uL of 0.5 M EGTA to each sample [to stop MNase activity]
+6. Use 1 uL of digested cells to measure the DNA concentration with the dsDNA Qubit kit
+T7 Adapter Ligation
+1. On ice, add 4 uL of 250 uM annealed chromatin adapter to the cell lysate.
+The EGTA should protect the dsDNA adapters from residual MNase activity.
+If multiplexing distinct chromatin preparations together, be sure to use a different adapter barcode with each to enable subsequent demultiplexing.  
+The following table summarizes 8 different barcodes we have found perform well; full adapter sequences and instructions for ordering are attached to this protocol
+2. Add 31.8 uL of T7 Adapter Ligation Mastermix and immediately mix contents well.
+The total volume should be about 80 uL at this point
+3. Cover the PCR plate with a foil cover, and incubate at room temperature for 2 hours [to ligate adapters to chromatin]
+4. After 2 hours, end the T7 Adapter Ligation reaction by adding 80 uL of the Ligase Quenching Solution (recipe above) to each sample.
+The total volume should be 160 uL at this point.
+The 160 uL is made up of cells, MNase/Lysis buffer mastermix, the T7 Adapter Ligation mastermix, and the Quenching solution
+Chromatin Multiplexing (Optional) and ChIP Construction: Because each sample has a unique Mint Chromatin Adapter, multiple chromatin samples can optimally be mixed together at this point.
+Follow one of the following two procedures to complete Day 1.
+a. Mint-ChIP without  Chromatin Multiplexing
+1. If you are using an input control in your experimental design, reserve 3% of the volume PRIOR to adding antibody.
+Hold the input control in a sealed tube at 4°C until Day 2
+2. Add 1-5 uL of antibody of interest to each sample and incubate rotating end over end overnight at 4oC.
+Depending on the antibody, the ideal volume of antibody to chromatin ratio will differ, and should be optimized empirically.
+We typically find that 1-2 ug of antibody works well for a range of antibodies and cell numbers.
+Mint-ChIP With Chromatin Multiplexing
+1. Mix up to 8 samples with distinct barcodes in a 1.5 ml microfuge tube (we typically use only 2 to 4 barcodes in a mixture)
+2. If you are using an input control in your experimental design, reserve 3% of the mixture PRIOR to adding antibody.
+Hold the input control in a sealed tube at 4°C until Day 2
+3. Whatever the total volume of the mixture, divide it evenly across the number of antibodies in use.
+Please see the comment above about the effective cell number per ChIP.
+In the case of a pooled sample, the relevant number is the total number of cells per chromatin prep per ChIP, not the total cell number over-all per ChIP.
+If the chromatin volume is under 100 ul, we supplement the chromatin with a 1:1 mixture of Ligase Quenching Solution and 1X MNase/Lysis Mastermix with the MNase omitted
+4. Add 1-5 uL of antibody of interest to each sample and incubate rotating end over end overnight at 4oC.  
+Depending on the antibody, the ideal volume of antibody to chromatin ratio will differ, as described above
+***This is the END of Day 1***.
+Day 2: Starting with chromatin-antibody complex and ending by set-up of In Vitro Transcription (IVT)Overview of Day 2
+1. Protein A/G Binding
+2.ChIP Wash
+3.1X SPRI Cleanup
+4.In Vitro Transcription (Overnight)
+1.Protein A/G Bead Binding:
+1.Remove Protein A/G Magnetic Beads from 4oC and leave on rotator for ~30 minutes at room temperature so that beads are thoroughly and evenly mixed.
+2. Calculate total Protein A/G bead slurry needed.
+The total total slurry needed is equal to 1/10 of the total combined volume of the chromatin - immune complexes (i.e. 20uL per 200uL chromatin - antibody complex).
+3.Wash an appropriate volume of Protein A/G beads with two volumes of lysis dilution buffer, by immobilizing beads on magnet, and removal of clear fluid.
+Then resuspend the washed beads in the same volume of lysis dilution buffer that was used to wash the beads.
+Add washed beads to each sample (10 ul of reuspended beads per 100 ul of immune complex) and incubate on rotator for 1 hour at 4oC
+5. While the samples are incubating, supplement ChIP Elution Buffer with Proteinase K (1.25 ul of 20 mg/ml Proteinase K per 100 ul of ChIP Elution Buffer; we call this CEBPK).
+You will require 100 ul of CEBPK per ChIP.
+Note, CEBPK tends to precipitate SDS if held on ice, so maintain at room temperature until used
+2. ChIP Wash: After the samples have incubated with Protein A/G beads for an hour, the ChIPs are ready to be washed.
+When washing, resuspend, magnetize, and aspirate as quickly as possible.
+Never leave for more than a minute
+1. Magnetize samples and remove the supernatant (chromatin plus non-adsorbed antibodies).
+As a precaution you may save the supernatant as a backup at -20°C.
+Do not let samples dry while on magnet.
+Proceed immediately to ChIP wash
+2. Pipette mix the beads with 200 ul per well of ice cold RIPA Low Salt Buffer.
+Transfer the beads as suspended in Low Salt Buffer mixture to a 96 well plate.
+Take pains to minimize bead loss during transfer
+Magnetize the plate and wait for the beads and Low Salt Buffer to separate, no more than 1 minuteRemove and discard the supernatant once it is cleared.
+Remove the plate from the magnetOptional: Resuspend the beads in another 200 uL of ice cold RIPA Low Salt Buffer    Magnetize the plate and wait for the beads and Low Salt Buffer to separate, no more than 1 minute    Remove and discard the supernatant once it is cleared.
+Remove the plate from the magnet
+3.Mix the beads with 200 uL of ice cold RIPA High Salt BufferMagnetize the plate and wait for the beads and High Salt Buffer to separateRemove and discard the supernatant once it is cleared.
+Remove the plate from the magnet
+4.Mix the beads with 200 uL of ice cold LiCl Wash BufferMagnetize the plate and wait for the beads and LiCl Wash Buffer to separateRemove and discard the supernatant once it is cleared.
+Remove the plate from the magnetOptional: Resuspend the beads in another 200 uL of ice cold LiCl Wash Buffer Magnetize the plate and wait for the beads and LiCl Wash Buffer to separate, no more than 1 minute Remove and discard the supernatant once it is cleared.
+5. Mix the beads with 200 uL of ice cold TEMagnetize the plate and wait for the beads and TE to separateRemove and discard the supernatant once it is cleared.
+Remove the plate from the magnetResuspend the beads in another 200 uL of ice cold TE BufferMagnetize the plate and wait for the beads and TE to separate, no more than 1 minuteRemove and discard the supernatant once it is cleared.
+6. Resuspend the chromatin/antibody beads using 100 uL of room temperature CEBPK made earlier.
+7. At this point, we resume processing the input control chromatin (or chromatin mixture) that was reserved on Day 1.
+Mix the reserved chromatin extract (typically about two microliters) with CEBPK to a total volume of 100 uL.
+8. Seal the plate with a foil cover and hold at 62oC for 1 hour in a thermocycler.9. While Proteinase K treatment is underway, remove SPRI beads from 4°C and resuspend by rotating at room temperature for at least 30 minutes
+3.  1x SPRI Cleanup: At Room Temperature
+1.Remove the plate from the thermocycler and hold at room temperature
+2. Magnetize the plate and wait for the beads and ChIP Elution Buffer to separate.
+Transfer the supernatant -- which contains your eluted ChIP DNA, and should be 100uL -- to new wells in the plate
+3.Remove the plate from the magnet and add 100 uL of suspended SPRI beads to your saved supernatant, to achieve a 1X SPRI cleanup.
+This should retain fragments over 100 BP in size
+Mix the supernatant and SPRI beads by pipetting up and down several timesIncubate at room temperature for 10 minutes
+4.Place the plate on the magnet, loosely cover with the plastic cover from a pipette tip box, and magnetize for 5 minutes    
+a.After 5 minutes, discard the supernatant, which represents sub-100 BP DNA fragments and diverse proteolysis byproducts
+5. Wash with 200 uL of freshly prepared 75% ethanol (and always prepare fresh 75% ethanol for each experiment)Mix by moving the plate from the center of the magnet to off center of the magnet.
+You will see the beads move from one side of the well to the other side of the well
+Leave on the magnet for 1 minute and then discard the ethanol
+6. Wash AGAIN with 200 uL of 75% ethanolMix by moving the plate from the center of the magnet to off center of the magnet.
+You will see the beads move from one side of the well to the other side of the well.
+Leave on the magnet for 1 minute and then discard the ethanol
+7. Air-dry at room temperature for exactly 5 minutes, and no longer; do not allow to over-dry
+8. Elute DNA in 15 uL Elution buffer (EB).
+Remove plate from magnet and resuspend beads in 15 uL EBLet rest for 1 minute off the magnet and then 2 minutes on the magnetOnce the beads are on the sides of the wells, remove and SAVE the supernatant; this is your purified ChIP DNA
+3. Remove plate from magnet and resuspend beads in 15 uL EBLet rest for 1 minute off the magnet and then 2 minutes on the magnetOnce the beads are on the sides of the wells, remove and SAVE the supernatant; this is your purified ChIP DNA
+4. Remove plate from magnet and resuspend beads in 15 uL EBLet rest for 1 minute off the magnet and then 2 minutes on the magnetOnce the beads are on the sides of the wells, remove and SAVE the supernatant; this is your purified ChIP DNA
+5. Remove plate from magnet and resuspend beads in 15 uL EBLet rest for 1 minute off the magnet and then 2 minutes on the magnetOnce the beads are on the sides of the wells, remove and SAVE the supernatant; this is your purified ChIP DNA
+6. Resuspend the chromatin/antibody beads using 100 uL of room temperature CEBPK made earlier.7. At this point, we resume processing the input control chromatin (or chromatin mixture) that was reserved on Day 1.
+Seal the plate with a foil cover and hold at 62oC for 1 hour in a thermocycler
+9. While Proteinase K treatment is underway, remove SPRI beads from 4°C and resuspend by rotating at room temperature for at least 30 minutes
+3.Wash AGAIN with 200 uL of 75% ethanolMix by moving the plate from the center of the magnet to off center of the magnet.  
+Remove plate from magnet and resuspend beads in 15 uL EBLet rest for 1 minute off the magnet and then 2 minutes on the magnetOnce the beads are on the sides of the wells, remove and SAVE the supernatant; this is your purified ChIP DNA
+7. Air-dry at room temperature for exactly 5 minutes, and no longer; do not allow to over-dry
+8. Elute DNA in 15 uL Elution buffer (EB).
+Remove plate from magnet and resuspend beads in 15 uL EBLet rest for 1 minute off the magnet and then 2 minutes on the magnetOnce the beads are on the sides of the wells, remove and SAVE the supernatant; this is your purified ChIP DNA
+9. Use 2 uL for Qubit measurement, to gain some insight into the success of your ChIP so far.
+We typically recover 0.50-2.00 ng/ul of ChIP DNA at this point.
+However, regardless of the ChIP DNA concentration, 8 ul of it will go into the IVT as shown in the box below.
+The remaining 5 ul is saved as a backup in case of a downstream failure
+4. In Vitro Transcription (Overnight):
+1.In a new plate, prepare the following mixture of ChIP DNA and IVT Mastermix:
+2.Cover plate with a foil cover and incubate at 37oC for 16 hours (overnight)
+***This is the END of Day 2***.
+Day 3: Starting with RNA Isolation and ending with Library ConstructionOverview of Day 3:
+1.RNA Isolation with Silane Beads
+2.Reverse Transcription (RNA to cDNA)
+3.Library PCR to Enrich Adapter-Modified DNA Fragments
+5.Final SPRI Cleanup
+1.RNA Isolation with Silane Beads:
+1.Remove Silane Beads and SPRI Beads from 4°C and incubate on a rotator for at least 30 minutes at room temperature, or until beads are thoroughly and evenly mixed.
+Add 1 uL of DNase to IVT RNA samples and incubate at 37°C for 15 minutes
+3. Using a 96 well plate, magnetize 20 uL of Silane Bead suspension per IVT reaction.
+Remove clear supernatant, and wash with four volumes of RLT Buffer (i.e. 80 uL RLT for 20 uL of beads), and resuspend washed beads in 4 volumes of RLT
+4. Transfer 60 uL of the washed beads to the 20 uL IVT reaction.
+The 60 uL will contain 15 uL of beads which will bind up to 3 ug of RNA.
+The remaining 20 ul of beads is discarded.  
+Incubate at room temperature for 1 minute
+5.Add 48 uL of 100% ethanol and mix well by pipettinga.
+Wait for 2.5 minutes, mix, and wait an additional 2.5 minutes (for a total of 5 minutes).
+6.Magnetize the platea.
+Remove and discard the supernatant once the solution looks clear.
+The RNA is adsorbed to the beads.
+Wash with 200 uL of FRESH 75% ethanola.
+Mix by moving the plate from the center of the magnet to off center of the magnet.
+Leave on the magnet for 1 minute and then remove the ethanol
+8.Wash AGAIN with 200 uL of FRESH 75% ethanol
+a.You will see the beads move from one side of the well to the other side of the well
+b. Leave on the magnet for 1 minute and then remove the ethanolc.
+It is critical to wash thoroughly to eliminate all DNase prior to the reverse transcription step
+9. Air-dry at room temperature for 2 minutes.
+Make sure not to over dry.
+10.Elute RNA with 9 uL TE
+a.Remove plate from magnet and resuspend beads in 9 uL TE.
+Make sure to get all the beads off the sides of the wells
+b.Let rest for 1 minute off the magnet and then 2 minutes on the magnetc.
+Once the beads are on the sides of the wells, remove and SAVE the supernatant; it is your IVT RNA prep.
+11. OPTIONAL: Measure 2 ul on RNA Qubit
+a.If below detection limit (4 ug/ml), the libraries are likely to be very low in complexity
+b. Total amount of RNA should be higher than input DNA for IVT reaction; typically the yield of RNA is 50 ng to 100 ng
+2. Reverse Transcription (RNA -> cDNA):
+1. Combine IVT RNA with random primer and annealing buffer and incubate mixture at 65°C for 5 minutes on the thermocycler, then immediately cool to 4°C in the thermal cycler (i.e. ramp as fast as the instrument will allow).
+Once the program cools to 4oC, remove the plate and place immediately on ice, for at least one minute.
+3. Supplement the primer annealed IVT RNA with the master mix described below and return the plate to the thermal cycler.
+The thermal profile should be as follows:    10 minutes at 25oC    50 minutes at 50oC    5 minutes at 85oC    4oC indefinite
+We employ a single PCR program with a pause in the middle to accomplish both the annealing and elongation steps.
+At the conclusion of the cDNA synthesis step, add 1 uL RNase to each sample, mix thoroughly, and incubate at 37oC for 15 minutes in a PCR machine, then return to 4C.
+At this point, you have eliminated the IVT RNA, and should only have cDNA
+3. 1X SPRI Cleanup:
+1.Add 68 uL of water to cDNA so that the volume is easier to work with manually.
+The total volume is now 100 ul per well.
+Add 100 uL of SPRI Beads (suspended at the start of Day 3) and mix by pipetting
+a.Incubate at room temperature for 10 minutes
+3.Magnetize plate for 5 minutes so that the beads separate out
+a.Remove and discard the supernatant
+4.Leave on the magnet for 1 minute and then remove the ethanol
+5.Leave on the magnet for 1 minute and then remove the ethanol
+6.Air-dry at room temperature for 5 minutes
+7.Elute cDNA in 24.5 uL TE
+a.Remove plate from magnet and resuspend beads in 24.5 uL TE.
+Once the beads are on the sides of the wells, remove and SAVE the supernatant; it is your cDNA.
+Use 1 ul of cDNA to measure cDNA concentration with ssDNA Qubit (this is not optional, as will be apparent immediately below).
+4. Library PCR to Enrich Adapter-Modified DNA Fragments:We put a maximum of 200 ng of cDNA into the PCR, so if the yield of cDNA exceeds 200 ng, then the cDNA needs to be diluted prior to PCR.
+Using more than 200 ng input cDNA impairs the yield of DS DNA with suitable ends for Illumina sequencing.
+If the yield of cDNA is under 200 ng, we use the entire 200 ng volume in the PCR reaction.
+If the yield of cDNA exceeds 200 ng, remove the appropriate volume of cDNA (containing up to 200 ng) and add it to Elution Buffer so that the combined volume sums to 22.5 ul.
+Prepare the following PCR enrichment reaction and place on thermal cycler for the following times and temperatures: 
+5.Post PCR Final SPRI Cleanup:
+1.Add 50 uL of molecular biology grade water and check that the volume is exactly 100 uL
+2.Add 60 uL of SPRI beads (0.60×) and mix by pipetting.
+The beads will bind DNA fragments of >700 bp.
+The purpose of this step is to remove these large fragments.
+a.Incubate at room temperature for 5 minutes
+3.Magnetize plate for 5 minutes to separate the beads out
+a.After 5 minutes, transfer the supernatant (about 160 uL) to clean plate wells.
+The supernatant should contain DNA fragments of <700 bp.
+It is your library, now cleared of high molecular weight fragments.
+4.Add 35 uL of SPRI beads (0.95×) and mix by pipetting.
+The beads will bind to DNA fragments of >200 bp, thus excluding unincorporated PCR primers, which remain in solution.
+a.Incubate at room temperature for 5 minutes
+5.After 5 minutes, remove and discard the supernatant
+6.Leave on the magnet for 1 minute and then remove the ethanol
+7.Air-dry at room temperature for 5 minutes
+9.Elute DNA in 40 uL Elution Buffer.
+a.Remove plate from magnet and resuspend beads in 40 uL EB.
+Once the beads are on the sides of the wells, remove and SAVE the supernatant.   
+The supernatant is your PCR product enriched for fragments in the size range of 200-700 bp.
+10.Analyze samples by dsDNA Qubit for concentration and BioAnalyzer for fragment size.
+An ideal BioAnalyzer trace is included here
+***This is the END of Day 3***.

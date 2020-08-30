@@ -1,0 +1,14 @@
+Taxonomic biomarker discovery with LEfSe
+Before beginning, we need to convert the sample names into consistent class names.
+This can easily be done by manually editing the {"blocks":[{"key":"630rg","text":"output\/merged_abundance_table.txt","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":[]}],"entityMap":[]} generated in the previous protocols or using the following "sed" based Unix command:.
+The first LEfSe step consists of formatting the input table, making sure the class information is in the first row and scaling the values in [0,1M] which is useful for numerical computational reasons.
+Now, the LEfSe biomarker discovery tool can be used with default statistical options.
+Here we change one default parameter to increase the threshold on the LDA effect size from 2 (default) to 4.
+The results of the operation can now be displayed plotting the resulting list of biomarkers with corresponding effect sizes.
+The resulting image ({"blocks":[{"key":"975lt","text":"output_images\/lefse_biomarkers.png","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":[]}],"entityMap":[]}) is shown below:.
+Another complementary visualization focuses on showing the biomarkers on the underlying taxonomic tree.
+The default plotting output is shown here:.
+Single features can also be plotted as barplots with {"blocks":[{"key":"25aim","text":"plot_features.py","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":[]}],"entityMap":[]}.
+For example, to plot the distribution of abundances for Firmicutes the command is:.
+All features (or all biomarkers) can also be exported in one compressed archive:.
+Here are the resulting figures for Firmicutes and for Veillonellaceae (extracted from biomarkers.zip).

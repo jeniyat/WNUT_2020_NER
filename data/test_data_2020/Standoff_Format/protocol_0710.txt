@@ -1,0 +1,69 @@
+DroNc-seq step-by-step
+Wash and filter barcoded beads (Chemgenes, Cat # Macosko-2011-10) as previously described.
+Isolate beads smaller than 40 µm, using a 40 µm cell strainer (PluriSelect, Cat # 43-50040-03).
+Suspend barcoded beads in Drop-seq Lysis Buffer.
+Count beads at 1:1 dilution in 20% PEG solution, using a disposable Fuchs-Rosenthal hemocytometer (VWR, Cat # 22-600-102) and resuspend beads at concentrations ranging between 325,000 and 350,000 per ml.
+Cell lines are cultured according to ATCC’s instructions.
+For DroNc-seq, wash cells once with 1x PBS, scrape them with 2 ml nuclease- and protease-free Nuclei EZ lysis or EZ PREP buffer (Sigma, Cat # EZ PREP NUC-101) and process as tissues, described below.
+Tissue samples may be flash-frozen on dry ice and stored at -80°C until they are processed for nuclei isolation.
+To preserve tissue in RNAlater, samples are placed in ice-cold RNAlater (ThermoFisher Scientific, Cat # AM7020) and stored at 4°C overnight.
+Remove RNAlater the following day and store samples at -80°C until processing.
+Use either fresh, frozen or RNAlater fixed tissue or fresh cells as input material.
+Prepare Nuclei Suspension Buffer (NSB; consisting of 1x PBS, 0.01% BSA (New England Biolabs, Cat # B9000S) and 0.1% RNAse inhibitor (Clontech, Cat #2313A)).
+Dounce homogenize tissue samples (smaller than 0.5 cm) or cell pellets in 2 ml of ice-cold Nuclei EZ lysis buffer (Sigma, #EZ PREP NUC-101).
+For brain tissue: grind 20-25 times with pestle A, followed by 20-25 times with pestle B (This may need to be modified for other tissues).
+Move sample to a 15 ml conical tube, add 2 ml of ice-cold Nuclei EZ lysis buffer and incubate on ice for 5 minutes.
+Collect nuclei by centrifugation at 500 x g for 5 minutes at 4°C.
+Discard supernatant and carefully resuspend nuclei in 4 ml of ice-cold Nuclei EZ lysis buffer.
+Incubate on ice for 5 minutes.
+Resuspend isolated nuclei in 4 ml of NSB and collect nuclei by centrifugation at 500 x g for 5 minutes at 4°C.
+Resuspend isolated nuclei in 1 ml of NSB, and filter through a 35 μm cell strainer (Corning, Cat # 352235).
+Stain 10 µl of the single nuclei suspension with DAPI (Fisher, Cat # D1306), load on an NI hemocytometer, and count under a microscope.
+A final concentration of 300,000 nuclei/ml is used for DroNc-seq experiments.
+Proceed immediately to microfluidic droplet co-encapsulation.
+Load the nuclei and barcoded bead suspension into 3 ml syringes (BD Scientific, Cat # BD309695) and connect to DroNc-seq microfluidic chip via 26G1/2 sterile needles (BD Scientific, Cat # BD305111) and PE2 tubing (Scientific Commodities, Inc.
+Cat # BB31695-PE/2).
+Flow both bead and nuclei suspensions at 1.5 ml/hr each, along with carrier oil (BioRad Sciences, Cat # 186-4006) loaded in 10 ml syringes (BD Scientific, Cat # BD309695) and flown at 16 ml/hr to co-encapsulate single nuclei and beads in ~75 µm drops at 4,500 drops/sec and double Poisson loading concentrations.
+Collect resulting emulsion via PE2 tubing into a 50 ml Falcon tube for a period of ~22 min each, and incubate at room temperature for up to 45 min before proceeding to break droplets.
+Emulsion collected after microfluidic co-encapsulation has the droplets cream to the top with clear oil collected under the droplets.
+Carefully remove the excess clear oil, add 30 ml of 6x SSC (Teknova, Inc., Cat # S0282) into each 50 ml Falcon collection tube, agitate it vigorously, and add 1 ml of 1H,1H,2H,2H-Perfluorooctan-1-ol (SynQuest Laboratories, Cat # 647-42-7).
+Vigorously shake the tubes by hand and centrifuge at 1,000 x g for 1 min.
+Carefully remove the supernatant from each tube and squirt an additional 30 ml of 6x SSC to kick up the beads from the oil-water interface into the aqueous phase.
+Remove the beads that were kicked up momentarily into the SSC with a 25 ml pipette and transfer them into a clean 50 ml Falcon tube, leaving the heavier oil behind.
+Centrifuge the newly transferred beads and SSC mix again at 1,000 x g for 1 min; carefully remove the supernatant leaving ~1 ml of SSC and bead sediment behind.
+Carefully transfer remaining SSC and bead mix into a 1.5 ml micro-centrifuge tube (Ambion, Cat # AM12450) and spin it down on a desktop micro-centrifuge for ~10 sec to generate a noticeable bead pellet.
+Remove any residual oil that got transferred into the 1.5 ml tube with a p200 pipette with low-retention pipette tip.
+Wash the beads again in 1.5 ml of 6x SSC.
+Wash the beads again in 300 µl of 5x Maxima H- RT buffer (Fisher, Cat # EP0753).
+A pellet of barcoded beads in each micro-centrifuge tube should have ~130,000 beads.
+Make a fresh batch of 200 µl RT mix for each barcoded bead aliquot, consisting of: 80 µl H2O, 40 µl Maxima 5x RT Buffer, 40 µl 20% Ficoll PM-400 (Sigma, Cat # F5415-50ML), 20 µl 10 mM dNTP (Takara Bio, Cat # 639125), 5 µl RNase Inhibitor (Lucigen, Cat # 30281-2), 10 µl Maxima H-RT enzyme (Fisher, Cat # EP0753), and 5 µl 100 µM Template Switch Oligo, AAGCAGTGGTATCAACGCAGAGTGAATrGrGrG (IDT, custom RNA oligo, HPLC purification).
+After the supernatant is carefully removed from each bead pellet, add 200 µl of the above RT mix into each tube, and incubate it under gentle rocking or tumbling for 30 min at room temperature, and then at 42°C for 1.5 hr in a rotisserie-style hybridization oven, for a total of two hours.
+Post RT, each bead has cDNA barcoded with the bead’s unique barcode (BC) bound onto it, also referred to as a STAMP6.
+Wash each STAMP pellet with 1 ml of TE buffer containing 0.5% SDS (TE-SDS).
+Wash each STAMP pellet with 1 ml of TE buffer containing 0.01% Tween-20 (TE-TW).
+(1/2).
+(2/2).
+Wash each STAMP pellet with 1 ml of 10 mM Tris pH 8.0.
+Spin down to remove all supernatant and treat the STAMPs with exonuclease I (New England Biolabs, Cat # M0293L) as follows: add 20 µl of Exo I buffer.
+Add 170 µl of RNAse free water.
+Add 10 µl of Exo I enzyme.
+Mix well by pipetting up and down, and incubate for 45 min at 37°C under rotation to remove all unextended primers.
+Wash the pellet with 1 ml of TE buffer containing 0.5% SDS (TE-SDS).
+Wash the pellet with 1 ml of TE buffer containing 0.01% Tween-20 (TE-TW).
+Wash the pellet with 1 ml of 10 mM Tris pH 8.0.
+Wash the pellet in 1 ml of RNAse free water.
+Resuspend pellet in 1 mL of H2O, and count them, by mixing 10 µl of bead suspension with an equal volume of 20% PEG solution.
+Resuspend aliquots of 5,000 beads in a PCR mix each consisting of 24.6 µl H2O, 0.4 µl 100 µM SMART PCRprimer, AAGCAGTGGTATCAACGCAGAGT (IDT, custom DNA oligo, standard desalting purification), and 25 µl 2x Kapa HiFi Hotstart Readymix (Kapa Biosystems, Cat # KK2602).
+Amplify the samples in separate wells on a skirted PCR plate, using the Eppendorf Thermocycler (Part # EP-950030020).
+i. Amplify Mouse PCR samples using the following PCR steps: 95°C for 3 min; then 4 cycles of: 98°C for 20 sec, 65°C for 45 sec, 72°C for 3 min; then 10 cycles of: 98°C for 20 sec, 67°C for 20 sec, 72°C for 3 min; and finally, 72°C for 5 min.
+Pool amplified mouse PCR products in batches of 4 wells or 16 wells.
+ii.
+Amplify Human PCR samples with either the previously mentioned PCR steps, or the following PCR steps: 95°C for 3 min; then 4 cycles of: 98°C for 20 sec, 65°C for 45 sec, 72°C for 3 min; then 12 cycles of: 98°C for 20 sec, 67°C for 20 sec, 72°C for 3 min; and finally, 72°C for 5 min.
+Pool amplified human PCR products in batches of 4 wells (16 total PCR cycles) or 16 wells (14 total PCR cycles).
+Combine the 5,000 STAMP aliquots of each well in a 1.5 ml Eppendorf tube and clean with 0.6X SPRI beads (Ampure XP beads, Beckman Coulter, Cat # A63881).
+Quantify purified cDNA using Qubit dsDNA HS Assay kit (ThermoFisher Scientific, Cat # Q32854) and BioAnalyzer High Sensitivity Chip (Agilent, Cat # 5067-4626).
+Use 550 pg of each sample library for fragmentation, tagging and amplification using the Nextera XT sample prep kit, 96 samples (Illumina, Cat # FC-131-1096), and custom primer, AATGATACGGCGACCACCGAGATCTACACGCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGT*A*C, (IDT, custom DNA oligo, HPLC purification) that enable selective amplification of the 3’ end, according to manufacturer’s instructions.
+Quantify Nextera libraries again with Qubit dsDNA HS Assay kit and BioAnalyzer High Sensitivity Chip.
+The libraries (at 2.2 pM (mouse, 16 wells pool), 2.7 pM (mouse, 4 wells pool) and 2.3 pM (human)) were sequenced on an Illumina NextSeq 500.
+We used NextSeq 75 cycle kits to sequence paired-end reads as follows: 20 bp (Read 1), 60 bp (Read 2), and 8 bp for Index 1, with Custom Read1 primer, GCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGTAC (IDT, custom DNA oligo, standard desalting), according to Illumina loading instructions.
+The sequencing cluster density and percent passing filter number from different experiments vary according to the quality of nuclei samples used, but were optimized at around a cluster density of 220 and a 90% passing filter.

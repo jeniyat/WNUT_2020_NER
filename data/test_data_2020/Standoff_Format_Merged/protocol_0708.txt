@@ -1,0 +1,20 @@
+Assembling Viral Metagenomic Data with SPAdes (Cyverse)
+Open SPAdes Open SPAdes from `` Apps. ``.
+Select Inputs Select the 'Inputs ' tab
+For Library1, Paired Reads, reads1Navigate to Community Data -- > iVirus -- > ExampleData -- > SPAdes -- > Input.
+Select OSD46_R1_shotgun_workable_PE.fastq Alternatively, copy-and-paste the location : /iplant/home/shared/iVirus/ExampleData/SPAdes/Inputs into the navigation bar and select the fastq file.
+For Library2, Paired Reads, reads2Navigate to Community Data -- > iVirus -- > ExampleData -- > SPAdes -- > Input.
+Select OSD46_R2_shotgun_workable_PE.fastq Alternatively, copy-and-paste the location : /iplant/home/shared/iVirus/ExampleData/SPAdes/Inputs into the navigation bar and select the fastq file.
+For Library2, Paired Reads, reads2.
+Select Parameters The default parameters will be sufficient for this example.
+Of note is the change in 'Kmer setting (s) ' where we have changed the default (35) to a mixture of 21,33,55.
+We have found this produces good viral assemblies, though your mileage may vary
+Also to note are the fact that the 'Input ' files are directly dependent on the 'Parameters. ' In this example we selected 2 paired end files.
+Each of these are 'paired reads ' because they have partners, and the 'pairing format, library 1 ' is 'paired end. ' With other data, users can mix-and-match paired and unpaired reads for up to 5 libraries.
+Launch Analysis Run the job! Depending on the dataset, this could take hours or days.
+This sample dataset should only take a few hours.
+Results Expect results can be found in the SPAdes ' 'Output ' directory
+An abbreviated output of important files generated during assembly.
+The most important files are contigs.fasta and scaffolds.fasta.
+They contained the assembled sequences (i.e. contigs).
+You should save this file.

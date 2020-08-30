@@ -1,0 +1,102 @@
+SARS-CoV-2 Enrichment Sequencing by Spiked Primer MSSPE method
+Nasopharyngeal and oropharyngeal swabs (combined into one tube) were collected from a symptomatic patient meeting case definition for possible infection with SARS-CoV-2.
+Extraction of viral nucleic acids from clinical sample was performed with a QIAamp Viral RNA Mini Kit (Qiagen #52906) as described by manufacturer Extracted RNA samples were DNAse-treated using the Zymo DNAse I kit.
+The nucleic acid was tested via real-time polymerase chain reaction for COVID-19 using both the Drosden and HKU protocols published by the World Health Organization and confirmed positive for COVID-19 on January 27th, 2020.
+Ct values for PUI = 24.
+RNA was quantified using the Qubit High Sensitivity RNA kit as described by the manufacturer.
+Qubit input RNA concentration for PUI = 6.9 ng/uL
+Library Preparation was performed with the NEBNext Ultra II non-directional RNA kit.
+Fragmentation & SARS-CoV-2 primer spike in Random primers at 1 μM are mixed with a 10 μM of SARS-CoV-2 primers (see below) at a 1:1 volume ratio.
+* (optional) ERCCs are internal synthetic RNA controls comprised of 92 synthetic RNAs that do not match to any known microbe in the NCBI NR/NT databases.
+** (optional) FastSelect is designed for removing human rRNA, omit this reagent if not using human derived samples and only incubate at 94°C and then directly to 4°C (omit ramping down steps).
+Thermocycler (heated lid set to 105°C): 
+8 min at 94°C (Adjust this fragmentation time depending on the quality of extracted RNA)
+2 min 75°C2 min 70°C
+2 min 65°C2 min 60°C
+2 min 55°C5 min 37°C
+5 min 25°C 8 min at 94°C (Adjust this fragmentation time depending on the quality of extracted RNA)
+5 min 25°C 
+The 73 primers tile across the entire SARS-CoV2 genome at a spacing of ~400bp.
+The PDF below shows the approximate location of the primer binding sites.
+First Strand Synthesis Mix the following by pipetting up and down.
+10 mins at 25°C
+15 mins at 42°C
+15 mins at 70°C
+Hold at 4°C 10 mins at 25°C
+Hold at 4°C
+Second Strand Synthesis Thermocycler (heated lid off): 
+1 hour at 16°C 
+Hold at 4°C 
+SPRI cleanup 
+*allow beads to sit in RT for 30 mins prior 
+Use SPRI Beads1.8x ratio of beads-to-total volume of sample.
+Prep 80% EtOH.
+Add 144uL of room temperature beads to 2nd Strand Synthesis Rxn.
+Mix well by pipetting gently.
+Pulse spin the tubes, but be sure not to spin down beads.
+Incubate for 5 mins at room temperature.
+Place samples on magnetic rack, and incubate for 5 mins on the rack.
+Remove supernatant.
+Add 200uL of 80% EtOH to samples while on the magnetic rack.
+Incubate at room temperature for 30s then remove the supernatant.
+Repeat EtOH wash step for a total of 2 times
+Air dry the beads for 5 mins while on the magnetic rack.
+Remove tube from magnetic rack.
+Elute DNA from beads into 53uL of 0.1x TE Buffer, 10mM Tris-HCl, or Nuclease free water.
+Vortex to mix.
+Spin tubes and incubate for 2 mins at room temperature off the magnetic rack.
+Place on magnetic rack until solution is clear ~ 5 mins.
+Remove 50uL of the supernatant and transfer to a clean nuclease free PCR tube.
+Use SPRI Beads
+1.8x ratio of beads-to-total volume of sample.
+**Checkpoint: Samples can be stored frozen at -20 °C and library prep resumed the next day.
+End Repair 
+Mix all the following by pipetting up and down 
+30 mins at 20°C
+30 mins at 65°C
+Adapter Ligation 
+dilute adaptor to dilution prior to making master mix.
+Adaptor concentration depends on the amount of input; 1:100 dilution for samples <5ng, 1:25 for input of >5ng
+Add adaptor separately after ligation master mix and ligation enhancer to avoid adaptor dimers.
+Thermocycler (heated lid off):
+15 mins at 20°C with heated lid off
+Proceed immediately to Bead Purification.
+15 mins at 20°C with heated lid off
+Proceed immediately to Bead Purification
+Thermocycler (heated lid off): 
+SPRI Cleanup 
+*allow beads to sit in RT for 30 mins prior
+Use SPRI bead 0.9x ratio of beads-to-total volume of sample.
+Add 87uL of room temperature beads (0.9x) to Adaptor Ligation reaction.
+Mix well.
+Repeat EtOH wash step for a total of 2 times.
+Air dry the beads for 5 mins while on the magnetic rack.
+Elute DNA from beads into 17uL of 0.1x TE Buffer, 10mM Tris-HCl, or Nuclease free water.
+Remove 15uL of the supernatant and transfer to a clean nuclease free PCR tube.
+Use SPRI bead 0.9x ratio of beads-to-total volume of sample.
+Place samples on magnetic rack, and incubate for 5 mins on the rack
+Remove supernatant.
+USER/Q5 Indexing PCR Mix the following components by pipetting up and down.
+Cycling conditions: ** PCR cycles are dependent on the input RNA.
+For libraries with <5ng input, perform 15-19 cycles of PCR.
+For 5-20ng input, perform 10-14 cycles of PCR.
+For >20ng input, perform 6-8 cycles of PCR.
+*allow beads to sit in RT for 30 mins prior
+Use SPRI Beads at 0.8x ratio of beads-to-total volume of sample.
+Add 43uL of room temperature Ampure Beads (0.8x) to barcoded DNA.
+Elute DNA from beads into 23uLof 0.1x TE Buffer, 10mMTris-HCL, or Nuclease free water.
+Remove 20uL of the supernatant and transfer to a clean nuclease free PCR tube.
+Use SPRI Beads at 0.8x ratio of beads-to-total volume of sample.
+** Checkpoint: Libraries are complete, samples can be stored frozen at -20 °C until ready for quantification and pooling.
+Libraries were quantified by the Qubit High Sensitivity DNA kit and the Agilent High Sensitivity D500 DNA Tapestation assay.
+If adapter dimers are found, library should be size selected using a SPRI ratio of 0.8x.
+Quantified library is then diluted down to the loading concentration for the iSeq, 100pM.
+This value will vary depending on the type of sequencer.
+The Illumina iSeq was loaded with 20uL of a 100pM library with a 5% PhiX spike in.
+Metagenomic sequencing results were uploaded onto IDseq.net directly from the Illumina Basespace Sequence Hub.
+The open-source cloud-based pipeline analyzed 1.8 million reads.
+The majority of reads mapped to the nasal and oral microbiome.
+Analyses of the viral components resulted in 3,077 single end reads aligning to the SARS-CoV2 taxon.
+Resulting reads from the Betacoronovirus genus were downloaded from IDseq and mapped to the NCBI genome accession number: MN908947.1.
+The geneious alignment displayed even coverage across the genome with an average coverage of 14.9x.
+One SNP was noted at position 25,654 in ORF3a resulting in a valine to leucine substitution when compared to NCBI accession MN908947.1.

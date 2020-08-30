@@ -1,0 +1,46 @@
+Single-nucleus isolation from frozen human lung tissue for single-nucleus RNA-seq
+Prepare cOmplete stock, 10x, keep on ice.
+Prepare Lysis buffer, 2 ml per sample, keep on ice
+Prepare Wash buffer, 4 ml per sample, keep on ice
+Prepare Resuspension buffer, 0.3 ml per sample, keep on ice.
+Take human lung sample from -80C or LN2 storage, cut ~5-73 mm piece, keep on dry ice until ready.
+Place human lung sample on a small plastic weighing boat, keep on ice, let thaw almost completely (~30-60 sec).
+Using 3 ml syringe and 30G needle, inject ~1 ml of the Lysis buffer into the tissue, move the needle to distribute solution evenly ("inflate" the tissue).
+Chop with scissors into ~1.5-2.0 mm pieces (~1 min).
+Transfer chopped lung tissue and solution into C tube, add the rest of the lysis buffer, final vol 2 ml.
+Close C tube, invert, make sure that all small pieces are at the base, keep on ice.
+Place C tube on MACS Tissue Dissociator and run m_lung_01 program, then run m_lung_02 program for 20 sec, stop, immediately place the tube on ice.
+The solution will be foamy and will contain small pieces of tissue.
+To bring foam down - briefly spin the tube in the swinging bucket rotor centrifuge (~30 sec, at 4C).
+Set 30 um filter on top of the 15 ml polypropylene tube (on ice).
+Using wide bore tip transfer lysis buffer and remaining pieces of the lung tissue on top of the filter
+Rinse the filter with 4 ml of Wash buffer, remove the filter, close the tube, mix by inverting.
+Keep on ice.
+Take 20 ul aliquot for counting: use AO/PI solution, count on Nexcellom K2 Cellometer.
+No AO-positive cells should be present, PI-positive nuclei should be uniformly round or oval
+Some debris will be present.
+Add 2 ul of DAPI (5 mg/ml stock) per 1 ml of the solution (~12 ul).
+Mix, incubate on ice for 5 min, proceed to cell sorting.
+On the sorter: make sure the UV laser is on, use 450/50 filter for DAPI.
+Gate on DAPI+ cells on log scale, then switch to linear and gate on G0/G1 and G2/M events, exclude subG0 events and doublets
+Optional: SYTO RNA Select Dye can be used instead or in addition to DAPI to identify nuclei containing RNA.
+Acquire with the Blue (488 nm) laser and 530/50 filter.
+Option A: Sort 10K events into RT mix, adjust the volume to 90 ul with H2O, add RT enzyme, proceed to emulsion generation using 10x Chromium.
+This step is based on Luciano Martelotto's protocol: https://community.10xgenomics.com/t5/Customer-Developed-Protocols/ct-p/customer-protocols (pdf).
+Option B: Sort nuclei into 200 ul of Capture buffer, use protein lo-bind 1.5 ml tubes, after sorting keep on ice
+Pellet nuclei using swinging bucket rotor centrifuge, 300 rcf, 5 min, 4C.
+Remove supernatant add appropriate volume of Resuspension buffer (based on the number of sorted nuclei, add enough buffer to obtain 1000 nuclei/ul, adjust for 20% loss during sorting and centrifugation), let sit on ice for 1 min before gently resuspending the pellet.
+Filter through 30 um filter if necessary.
+Count nuclei, adjust concentration if necessary, proceed with 10x Chromium.
+Typical flow cytometry plots:.
+UMAP plot demonstrating clustering of 4,342 nuclei into 16 clusters.
+Explanted lung from patient with systemic sclerosis-associated interstitial lung disease was frozen in liquid nitrogen and stored at -80C for several months prior to processing according to the protocol above.
+Librariy was prepared using 10x Genomics V2 3' chemistry, sequenced on Illumina HiSeq 4000, initial processing was performed using CellRanger package, both exonic and intronic reads were mapped to GRCh38 reference.
+Secondary analysis was performed using Seurat V3.0 R toolkit.
+Steps that require further optimization:
+- Tissue cutting: starting from thick (60-100 um) cryostat sections from the frozen tissue may improve sampling of the cell types deeply integrated into lung matrix
+- Decreasing concentration of the EZ lysis buffer 10 times does not affect nuclei yield.
+Impact on nuclei quality and cell type bias needs to be tested and validated.
+- Decreasing centrifugation speed from 400 rcf to 300 rcf results in nuclei with better morphology and less "blebbing"
+- Use of 70 um nozzle instead of 100 um nozzle will decrease amount of ambient RNA.
+- The impact of wash vs no wash protocol on ambient RNA needs to be validated.
