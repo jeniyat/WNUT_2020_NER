@@ -1,0 +1,395 @@
+T1	Method 54 75	centrifuge processing
+T2	Action 76 82	Excise
+E1	Action:T2 Acts-on:T3 Site:T4 Using:T7
+T3	Reagent 83 95	DNA fragment
+T4	Location 101 112	agarose gel
+T5	Modifier 118 123	clean
+T6	Modifier 125 130	sharp
+T7	Device 131 138	scalpel
+R1	Mod-Link Arg1:T7 Arg2:T6	
+R2	Mod-Link Arg1:T7 Arg2:T5	
+T8	Device 0 34	Qiagen QIAquick Gel Extraction Kit
+T9	Action 140 145	Weigh
+E2	Action:T9 Acts-on:T10 Site:T12
+T10	Reagent 150 159	gel slice
+T11	Modifier 165 174	colorless
+T12	Location 175 179	tube
+R3	Mod-Link Arg1:T12 Arg2:T11	
+T13	Amount 217 222	400mg
+T14	Amount 230 236	0.4cm3
+R4	Or Arg1:T14 Arg2:T13	
+T15	Action 239 242	Add
+E3	Action:T15 Acts-on:T18 Site:T40
+T16	Numerical 243 244	3
+T17	Measure-Type 245 252	volumes
+T18	Reagent 253 262	Buffer QG
+T19	Numerical 266 267	1
+T20	Reagent 199 202	gel
+T21	Location 207 213	column
+R5	Measure Arg1:T20 Arg2:T13	
+T22	Action 350 358	Incubate
+E4	Action:T22 
+T23	Temperature 362 366	50°C
+T24	Time 371 381	10 minutes
+T25	Action 441 447	Vortex
+E5	Action:T25 
+T26	Time 454 461	2-3 min
+T27	Action 470 478	dissolve
+E6	Action:T27 Acts-on:T28
+T28	Reagent 479 482	gel
+R6	Setting Arg1:E5 Arg2:T26	
+T29	Reagent 392 401	gel slice
+R7	Setting Arg1:E4 Arg2:T23	
+R8	Setting Arg1:E4 Arg2:T24	
+T30	Action 325 328	add
+E7	Action:T30 Acts-on:T107
+T31	Action 484 489	Check
+E8	Action:T31 Acts-on:T103
+T32	Measure-Type 920 926	volume
+T33	Modifier 912 919	maximum
+T34	Amount 930 935	800μL
+T35	Action 957 961	load
+E9	Action:T35 
+T36	Action 966 970	spin
+E10	Action:T36 
+T37	Measure-Type 948 955	volumes
+T38	Modifier 941 947	larger
+T39	Measure-Type 268 274	volume
+T40	Reagent 278 281	gel
+T41	Amount 295 300	100μL
+T42	Amount 283 288	100mg
+T43	Reagent 289 292	gel
+R9	Measure Arg1:T43 Arg2:T42	
+R10	Measure Arg1:T18 Arg2:T16	
+R11	Measure Arg1:T40 Arg2:T19	
+T44	Reagent 311 323	agarose gels
+T45	Concentration 308 310	2%
+T46	Numerical 329 330	6
+T47	Reagent 1307 1310	DNA
+T48	Time 1418 1429	2-5 minutes
+T49	Location 1401 1407	column
+T50	Method 1362 1372	sequencing
+T51	Method 1374 1394	blunt-ended ligation
+T52	Method 1328 1355	salt-sensitive applications
+R12	Setting Arg1:T49 Arg2:T48	
+T53	Action 1253 1257	wash
+E11	Action:T53 
+T54	Action 1259 1262	add
+E12	Action:T54 Acts-on:T56 Site:T57
+T55	Amount 1263 1269	750 μl
+T56	Reagent 1270 1279	Buffer PE
+T57	Device 1287 1302	QIAquick column
+R13	Measure Arg1:T56 Arg2:T55	
+T58	Action 1191 1198	Discard
+E13	Action:T58 Acts-on:T62
+T59	Location 1233 1248	collection tube
+T60	Location 1223 1229	column
+T61	Action 1216 1222	return
+E14	Action:T61 Acts-on:T60 Site:T59
+T62	Reagent 1199 1211	flow through
+T63	Reagent 1028 1031	DNA
+T64	Method 1077 1096	vitro transcription
+T65	Method 1101 1115	microinjection
+R14	Or Arg1:T64 Arg2:T65	
+T66	Action 1117 1120	add
+E15	Action:T66 Acts-on:T68 Site:T69
+T67	Amount 1121 1126	500μL
+T68	Reagent 1127 1136	Buffer QG
+T69	Location 1144 1159	QIAquick column
+T70	Action 1164 1174	centrifuge
+E16	Action:T70 
+T71	Time 1179 1189	one minute
+T72	Method 1062 1072	sequencing
+R15	Setting Arg1:E16 Arg2:T71	
+R16	Measure Arg1:T68 Arg2:T67	
+T73	Action 978 984	Return
+E17	Action:T73 Acts-on:T74 Site:T75
+T74	Location 985 1000	QIAquick column
+T75	Location 1004 1019	collection tube
+R17	Or Arg1:T72 Arg2:T64	
+T76	Action 806 810	bind
+E18	Action:T76 Acts-on:T77
+T77	Reagent 811 814	DNA
+T78	Action 816 821	apply
+E19	Action:T78 Acts-on:T79 Site:T80
+T79	Reagent 826 832	sample
+T80	Location 840 855	QIAquick column
+T81	Action 860 870	centrifuge
+E20	Action:T81 Acts-on:T79
+T82	Time 875 880	1 min
+T83	Action 886 893	discard
+E21	Action:T83 Acts-on:T84
+T84	Reagent 894 906	flow through
+R18	Setting Arg1:E20 Arg2:T82	
+T85	Action 738 743	Place
+E22	Action:T85 Acts-on:T86 Site:T88
+T86	Location 746 766	QIAquick spin column
+T87	Size 781 785	2 ml
+T88	Location 786 802	collection tube.
+R19	Measure Arg1:T88 Arg2:T87	
+T89	Action 660 669	purifying
+E23	Action:T89 
+T90	Action 686 689	add
+E24	Action:T90 Acts-on:T93
+T91	Numerical 690 691	1
+T92	Measure-Type 692 698	volume
+T93	Reagent 699 710	isopropanol
+T95	Action 733 736	mix
+E26	Action:T95 
+R20	Measure Arg1:T93 Arg2:T91	
+T94	Generic-Measure 671 676	500bp
+T96	Generic-Measure 681 684	4kb
+T97	Action 608 611	add
+E25	Action:T97 Acts-on:T100
+T98	Amount 612 616	10μL
+T99	Concentration 620 622	3M
+T100	Reagent 623 637	sodium acetate
+T101	pH 639 645	pH 5.0
+T102	Action 651 654	mix
+E27	Action:T102 
+R21	Measure Arg1:T100 Arg2:T99	
+R22	Measure Arg1:T100 Arg2:T101	
+R23	Measure Arg1:T100 Arg2:T98	
+T103	Reagent 499 506	mixture
+T104	Reagent 542 551	Buffer QG
+T105	Action 560 568	dissolve
+E28	Action:T105 Acts-on:T106
+T106	Reagent 569 576	agarose
+T107	Reagent 339 348	Buffer QG
+T108	Measure-Type 331 338	volumes
+R24	Measure Arg1:T107 Arg2:T46	
+R25	Measure Arg1:T44 Arg2:T45	
+T109	Measure-Type 723 728	yield
+T110	Modifier 406 426	completely dissolved
+R26	Mod-Link Arg1:T29 Arg2:T110	
+T118	Action 1430 1440	Centrifuge
+E29	Action:T118 
+T119	Time 1445 1453	1 minute
+R27	Setting Arg1:E29 Arg2:T119	
+T120	Action 1455 1462	Discard
+E30	Action:T120 Acts-on:T121
+T121	Reagent 1463 1475	flow-through
+T122	Action 1480 1485	place
+E31	Action:T122 Acts-on:T123 Site:T124
+T123	Location 1490 1505	QIAquick column
+T124	Location 1523 1527	tube
+T125	Action 1529 1539	Centrifuge
+E32	Action:T125 Acts-on:T126
+T126	Location 1544 1550	column
+T127	Modifier 1558 1568	additional
+T128	Time 1569 1574	1 min
+R28	Setting Arg1:E32 Arg2:T128	
+T129	Reagent 1608 1617	Buffer PE
+T130	Reagent 1660 1672	flow-through
+T131	Action 1676 1685	discarded
+E33	Action:T131 Acts-on:T130
+T132	Method 1709 1723	centrifugation
+T133	Modifier 1698 1708	additional
+T134	Action 1725 1730	Place
+E34	Action:T134 Acts-on:T135 Site:T138
+T135	Location 1731 1746	QIAquick column
+T136	Modifier 1752 1757	clean
+T137	Size 1758 1764	1.5 ml
+T138	Location 1765 1785	microcentrifuge tube
+R29	Measure Arg1:T138 Arg2:T137	
+R30	Mod-Link Arg1:T138 Arg2:T136	
+T139	Reagent 1595 1602	ethanol
+T140	Action 1790 1795	elute
+E35	Action:T140 Acts-on:T141
+T141	Reagent 1796 1799	DNA
+T142	Action 1801 1804	add
+E36	Action:T142 Acts-on:T144 Site:T150
+T143	Amount 1805 1810	50 µl
+T144	Reagent 1811 1820	Buffer EB
+T145	Concentration 1822 1827	10 mM
+T146	Reagent 1828 1835	Tris·Cl
+T147	pH 1837 1843	pH 8.5
+T148	Reagent 1848 1853	water
+T149	pH 1855 1865	pH 7.0–8.5
+T150	Location 1888 1905	QIAquick membrane
+T151	Action 1910 1920	centrifuge
+E37	Action:T151 Acts-on:T152
+T152	Location 1925 1931	column
+T153	Time 1936 1941	1 min
+R31	Measure Arg1:T144 Arg2:T143	
+R32	Measure Arg1:T146 Arg2:T145	
+R33	Measure Arg1:T146 Arg2:T147	
+R34	Measure Arg1:T148 Arg2:T149	
+R35	Meronym Arg1:T146 Arg2:T144	
+R36	Meronym Arg1:T148 Arg2:T144	
+R37	Setting Arg1:E37 Arg2:T153	
+T154	Reagent 1972 1975	DNA
+T155	Measure-Type 1976 1989	concentration
+T156	Action 1991 1994	add
+E38	Action:T156 Acts-on:T158 Site:T159 Measure-Type-Link:T155
+T157	Amount 1995 2000	30 µl
+T158	Reagent 2001 2015	elution buffer
+T159	Location 2037 2054	QIAquick membrane
+T160	Location 2064 2070	column
+T161	Action 2097 2107	centrifuge
+E39	Action:T161 Acts-on:T160
+T162	Time 2081 2086	1 min
+T163	Reagent 3126 3130	dyes
+T164	Action 3083 3088	Refer
+E40	Action:T164 
+T165	Reagent 2941 2957	bromophenol blue
+T166	Reagent 2959 2972	xylene cyanol
+T167	Reagent 2978 2986	orange G
+T168	Reagent 2905 2916	Loading dye
+T169	Numerical 2926 2927	3
+T170	Reagent 2928 2939	marker dyes
+R38	Measure Arg1:T170 Arg2:T169	
+R39	Measure Arg1:T158 Arg2:T157	
+T171	Location 2181 2198	QIAquick membrane
+T172	Method 2203 2219	complete elution
+T173	Reagent 2229 2232	DNA
+T174	Reagent 2135 2149	elution buffer
+T175	Action 2153 2162	dispensed
+E41	Action:T175 Acts-on:T174 Site:T171
+T176	Measure-Type 2253 2259	volume
+T177	Amount 2263 2268	48 µl
+T178	Amount 2274 2279	50 µl
+T179	Reagent 2280 2294	elution buffer
+T180	Measure-Type 2295 2301	volume
+T181	Amount 2307 2312	28 µl
+T182	Amount 2318 2323	30 µl
+T183	Reagent 2324 2338	elution buffer
+T184	Action 2840 2843	Mix
+E42	Action:T184 Acts-on:T185 Using:T187
+T185	Reagent 2848 2856	solution
+T187	Method 2860 2881	pipetting up and down
+T189	Reagent 2750 2753	DNA
+T190	Reagent 2605 2608	DNA
+T191	Modifier 2741 2749	purified
+T192	Modifier 2596 2604	purified
+T193	Action 2763 2771	analyzed
+E44	Action:T193 Acts-on:T189 Site:T194
+T194	Reagent 2777 2779	ge
+T195	Action 2782 2785	add
+E45	Action:T195 Acts-on:T198 Site:T202
+T196	Numerical 2786 2787	1
+T197	Measure-Type 2788 2794	volume
+T198	Reagent 2798 2809	Loading Dye
+T199	Numerical 2813 2814	5
+T200	Measure-Type 2815 2822	volumes
+T201	Modifier 2826 2834	purified
+T202	Reagent 2835 2838	DNA
+R40	Mod-Link Arg1:T202 Arg2:T201	
+R41	Measure Arg1:T198 Arg2:T196	
+R42	Measure Arg1:T202 Arg2:T199	
+R43	Mod-Link Arg1:T189 Arg2:T191	
+T204	Method 3045 3081	optimization of agarose gel run time
+T205	Method 3004 3040	estimation of DNA migration distance
+T206	Reagent 2631 2640	TE buffer
+T207	Reagent 2685 2689	EDTA
+T208	pH 2429 2435	pH 7.0
+T209	pH 2440 2443	8.5
+T210	Reagent 2456 2461	water
+T211	Action 2517 2522	store
+E46	Action:T211 Acts-on:T212
+T212	Reagent 2523 2526	DNA
+T213	Temperature 2530 2535	–20°C
+T214	Reagent 2539 2542	DNA
+T215	Reagent 2575 2590	buffering agent
+R44	Setting Arg1:E46 Arg2:T213	
+T216	Action 2547 2554	degrade
+E47	Action:T216 Acts-on:T214
+T217	Modifier 2421 2428	between
+T218	Concentration 2642 2647	10 mM
+T219	Concentration 2657 2661	1 mM
+T220	Reagent 2648 2655	Tris·Cl
+T221	Reagent 2662 2666	EDTA
+T222	pH 2668 2674	pH 8.0
+R45	Measure Arg1:T220 Arg2:T218	
+R46	Measure Arg1:T221 Arg2:T219	
+R47	Measure Arg1:T221 Arg2:T222	
+R48	Meronym Arg1:T220 Arg2:T206	
+R49	Meronym Arg1:T221 Arg2:T206	
+T223	Action 2621 2627	eluted
+E48	Action:T223 Acts-on:T190 Site:T206
+R50	Mod-Link Arg1:T190 Arg2:T192	
+T224	Action 2071 2076	stand
+E49	Action:T224 Acts-on:T160
+R51	Setting Arg1:E49 Arg2:T162	
+T225	Measure-Type 2339 2357	Elution efficiency
+T226	Measure-Type 2374 2376	pH
+T111	Measure-Type 2482 2484	pH
+T112	Method 2713 2732	enzymatic reactions
+T113	Measure-Type 3144 3162	migration distance
+T114	Action 3113 3121	identify
+E50	Action:T114 Acts-on:T163 Measure-Type-Link:T113 Measure-Type-Link2:T227 Measure-Type-Link3:T117
+T227	Measure-Type 3179 3189	percentage
+T115	Measure-Type 2390 2408	elution efficiency
+T116	Modifier 2382 2389	maximum
+T228	Modifier 203 206	per
+R52	Mod-Link Arg1:T21 Arg2:T228	
+T229	Modifier 224 229	about
+R53	Mod-Link Arg1:T14 Arg2:T229	
+T230	Amount 181 195	Maximum amount
+R54	Measure Arg1:T20 Arg2:T230	
+R55	Of-Type Arg1:T16 Arg2:T17	
+R56	Of-Type Arg1:T19 Arg2:T39	
+T231	Modifier 293 294	~
+R57	Measure Arg1:T43 Arg2:T41	
+R58	Mod-Link Arg1:T41 Arg2:T231	
+R59	Coreference-Link Arg1:T40 Arg2:T43	
+T232	Modifier 307 308	>
+R60	Mod-Link Arg1:T45 Arg2:T232	
+R61	Of-Type Arg1:T46 Arg2:T108	
+T233	Modifier 523 529	yellow
+T234	Mention 517 519	it
+R62	Coreference-Link Arg1:T234 Arg2:T103	
+R63	Mod-Link Arg1:T234 Arg2:T233	
+T235	Modifier 590 596	orange
+T236	Modifier 600 606	violet
+T237	Modifier 670 671	<
+R64	Mod-Link Arg1:T94 Arg2:T237	
+T238	Modifier 680 681	>
+R65	Mod-Link Arg1:T96 Arg2:T238	
+R66	Or Arg1:T94 Arg2:T96	
+R67	Of-Type Arg1:T91 Arg2:T92	
+T239	Action 714 722	increase
+E51	Action:T239 Measure-Type-Link:T109
+R68	Mod-Link Arg1:T128 Arg2:T127	
+T240	Modifier 1586 1594	Residual
+R69	Mod-Link Arg1:T139 Arg2:T240	
+R70	Meronym Arg1:T139 Arg2:T129	
+T241	Action 1641 1648	removed
+E52	Action:T241 Acts-on:T139
+T242	Modifier 1630 1640	completely
+R71	Mod-Link Arg1:E52 Arg2:T242	
+R72	Or Arg1:T144 Arg2:T148	
+T243	Location 1874 1880	center
+R73	Meronym Arg1:T243 Arg2:T150	
+T244	Modifier 1962 1971	increased
+R74	Mod-Link Arg1:T154 Arg2:T244	
+T245	Location 2023 2029	center
+R75	Meronym Arg1:T245 Arg2:T159	
+T246	Action 2119 2125	Ensure
+E53	Action:T246 
+R76	Coreference-Link Arg1:E53 Arg2:T174	
+T247	Modifier 2223 2228	bound
+R77	Mod-Link Arg1:T173 Arg2:T247	
+T248	Modifier 2238 2245	average
+R78	Of-Type Arg1:T177 Arg2:T176	
+T249	Reagent 2246 2252	eluate
+R79	Mod-Link Arg1:T249 Arg2:T248	
+R80	Measure Arg1:T249 Arg2:T177	
+R81	Measure Arg1:T179 Arg2:T178	
+R82	Of-Type Arg1:T178 Arg2:T180	
+R83	Measure Arg1:T249 Arg2:T181	
+R85	Measure Arg1:T183 Arg2:T182	
+R84	Coreference-Link Arg1:T207 Arg2:T221	
+R86	Of-Type Arg1:T196 Arg2:T197	
+R87	Of-Type Arg1:T199 Arg2:T200	
+T186	Action 2889 2896	loading
+E43	Action:T186 Acts-on:T188
+T188	Reagent 2901 2904	gel
+R88	Meronym Arg1:T170 Arg2:T168	
+R89	Meronym Arg1:T165 Arg2:T170	
+R90	Meronym Arg1:T166 Arg2:T170	
+R91	Meronym Arg1:T167 Arg2:T170	
+T250	Mention 2988 2992	that
+R92	Coreference-Link Arg1:T250 Arg2:T170	
+T117	Measure-Type 3194 3198	type
+T203	Reagent 3167 3178	agarose gel

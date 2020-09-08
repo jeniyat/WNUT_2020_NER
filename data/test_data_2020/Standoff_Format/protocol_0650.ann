@@ -1,0 +1,322 @@
+T1	Method 15 25	Extraction
+T2	Action 26 34	Transfer
+E1	Action:T2 Acts-on:T4 Site:T6
+T3	Amount 35 43	12-15 mL
+T4	Reagent 47 54	culture
+T5	Size 60 65	50 mL
+T6	Location 66 78	conical tube
+T7	Amount 80 85	10 mL
+T8	Reagent 89 96	culture
+T9	Action 122 125	add
+E2	Action:T9 Acts-on:T10 Site:T12
+T10	Reagent 135 138	ice
+T11	Amount 126 131	25 mL
+T12	Location 142 146	tube
+R1	Measure Arg1:T10 Arg2:T11	
+R2	Measure Arg1:T4 Arg2:T3	
+R3	Measure Arg1:T6 Arg2:T5	
+R4	Measure Arg1:T8 Arg2:T7	
+T13	Reagent 152 155	ice
+T14	Method 174 187	transcription
+T15	Modifier 189 200	Immediately
+T16	Action 201 207	pellet
+E3	Action:T16 
+T17	Speed 212 221	10,000x g
+T18	Temperature 226 230	4° C
+T19	Time 235 245	10 minutes
+T20	Action 250 257	discard
+E4	Action:T20 Acts-on:T21
+T21	Reagent 262 273	supernatant
+R5	Mod-Link Arg1:E3 Arg2:T15	
+R6	Setting Arg1:E3 Arg2:T17	
+R7	Setting Arg1:E3 Arg2:T18	
+R8	Setting Arg1:E3 Arg2:T19	
+T22	Action 275 287	Flash freeze
+E5	Action:T22 Acts-on:T23 Site:T24
+T23	Reagent 292 298	pellet
+T24	Reagent 302 317	liquid nitrogen
+T25	Action 322 327	store
+E6	Action:T25 Acts-on:T23
+T26	Temperature 331 337	-80º C
+T27	Method 344 354	extraction
+R9	Setting Arg1:E6 Arg2:T26	
+T28	Action 356 365	Resuspend
+E7	Action:T28 Acts-on:T29 Site:T31
+T29	Reagent 370 376	pellet
+T30	Amount 380 386	600 µL
+T31	Reagent 390 400	solution A
+T32	Action 405 411	vortex
+E8	Action:T32 Acts-on:T31
+R10	Measure Arg1:T31 Arg2:T30	
+T33	Action 584 590	Vortex
+E9	Action:T33 
+T34	Reagent 431 441	Solution A
+T35	Concentration 451 455	0.5%
+T36	Reagent 456 459	SDS
+T37	Concentration 461 466	20 mM
+T38	Reagent 467 481	sodium acetate
+T39	Concentration 483 488	10 mM
+T40	Reagent 489 493	EDTA
+T41	Reagent 497 513	RNase-free water
+R11	Measure Arg1:T36 Arg2:T35	
+R12	Measure Arg1:T38 Arg2:T37	
+R13	Measure Arg1:T40 Arg2:T39	
+R14	Meronym Arg1:T36 Arg2:T34	
+R15	Meronym Arg1:T38 Arg2:T34	
+R16	Meronym Arg1:T40 Arg2:T34	
+R17	Meronym Arg1:T41 Arg2:T34	
+T42	Modifier 515 526	Immediately
+T43	Action 527 530	add
+E10	Action:T43 Site:T45
+T44	Amount 534 540	500 µL
+T45	Reagent 541 563	acid phenol:chloroform
+T47	Action 564 573	preheated
+E11	Action:T47 Acts-on:T45
+T48	Temperature 577 582	65º C
+R18	Mod-Link Arg1:E10 Arg2:T42	
+R19	Measure Arg1:T45 Arg2:T44	
+R20	Setting Arg1:E11 Arg2:T48	
+T46	Action 592 600	Incubate
+E12	Action:T46 
+T49	Temperature 604 608	65°C
+T50	Time 613 619	10 min
+T51	Action 621 631	Centrifuge
+E13	Action:T51 Acts-on:T52 Site:T57
+T52	Reagent 636 641	cells
+R21	Setting Arg1:E12 Arg2:T49	
+T53	Temperature 704 720	room temperature
+T54	Time 725 731	10 min
+T55	Speed 645 655	21,000 x g
+T56	Speed 660 669	maximum g
+T57	Device 675 699	benchtop microcentrifuge
+R22	Setting Arg1:E12 Arg2:T50	
+R23	Setting Arg1:E13 Arg2:T55	
+R24	Or Arg1:T55 Arg2:T56	
+R25	Setting Arg1:E13 Arg2:T53	
+R26	Setting Arg1:E13 Arg2:T54	
+T58	Action 743 749	remove
+E14	Action:T58 Acts-on:T59
+T59	Reagent 754 765	supernatant
+T60	Modifier 733 742	Carefully
+R27	Mod-Link Arg1:E14 Arg2:T60	
+T61	Action 767 774	Extract
+E15	Action:T61 Acts-on:T62 Using:T64
+T62	Reagent 775 786	supernatant
+T63	Amount 798 804	500 µL
+T64	Reagent 809 831	acid phenol:chloroform
+R28	Measure Arg1:T64 Arg2:T63	
+T65	Method 833 843	Incubation
+T66	Method 866 876	extraction
+T67	Action 878 884	Remove
+E16	Action:T67 Acts-on:T68
+T68	Reagent 885 896	supernatant
+T69	Action 901 908	extract
+E17	Action:T69 Acts-on:T71 Using:T71
+T70	Temperature 914 930	room temperature
+T71	Reagent 931 964	phenol:chloroform:isoamyl alcohol
+T72	Action 968 974	remove
+E18	Action:T72 Acts-on:T73
+T73	Reagent 989 996	protein
+R29	Setting Arg1:E17 Arg2:T70	
+T74	Numerical 1012 1015	One
+T75	Numerical 1019 1022	two
+R30	Or Arg1:T75 Arg2:T74	
+T76	Method 1023 1034	extractions
+T77	Reagent 1062 1069	protein
+T78	Action 1052 1057	clear
+E19	Action:T78 Acts-on:T77 Using:T76
+T79	Action 1085 1092	Extract
+E20	Action:T79 Count:T80 Using:T82
+T80	Numerical 1093 1098	twice
+T81	Amount 1104 1110	400 µL
+T82	Reagent 1114 1124	chloroform
+T83	Reagent 1144 1150	phenol
+T84	Action 1128 1134	remove
+E21	Action:T84 Acts-on:T83
+T85	Modifier 1135 1143	residual
+R31	Mod-Link Arg1:T83 Arg2:T85	
+R32	Measure Arg1:T82 Arg2:T81	
+T86	Action 1152 1158	Place 
+E22	Action:T86 Acts-on:T87 Site:T88
+T87	Reagent 1162 1173	supernatent
+T88	Location 1187 1191	tube
+T89	Modifier 1181 1186	clean
+R33	Mod-Link Arg1:T88 Arg2:T89	
+T90	Action 1196 1199	add
+E23	Action:T90 Acts-on:T93 Site:T96
+T91	Numerical 1200 1203	2.5
+T92	Measure-Type 1204 1211	volumes
+R34	Of-Type Arg1:T91 Arg2:T92	
+T93	Reagent 1229 1236	ethanol
+T94	Concentration 1224 1228	100%
+T95	Modifier 1215 1223	ice-cold
+T96	Reagent 1244 1250	sample
+R35	Mod-Link Arg1:T93 Arg2:T95	
+R36	Measure Arg1:T93 Arg2:T94	
+R37	Measure Arg1:T93 Arg2:T91	
+T97	Action 1252 1257	Place
+E24	Action:T97 Site:T99
+T98	Temperature 1261 1266	-80°C
+T99	Device 1267 1274	freezer
+T100	Modifier 1279 1287	at least
+T101	Time 1288 1294	15 min
+R38	Mod-Link Arg1:T101 Arg2:T100	
+R39	Setting Arg1:T99 Arg2:T98	
+T102	Reagent 1296 1302	Sample
+T103	Action 1310 1316	stored
+E25	Action:T103 Acts-on:T102
+R40	Setting Arg1:E24 Arg2:T101	
+T104	Action 415 418	mix
+E26	Action:T104 Using:E8
+T105	Modifier 419 429	completely
+R41	Mod-Link Arg1:E26 Arg2:T105	
+T106	Action 1345 1355	Centrifuge
+E27	Action:T106 Acts-on:T107 Site:T110
+T107	Reagent 1360 1367	samples
+T108	Speed 1371 1381	21,000 x g
+T109	Speed 1386 1395	maximum g
+T110	Device 1401 1425	benchtop microcentrifuge
+T111	Temperature 1430 1433	4ºC
+T112	Time 1438 1444	30 min
+R43	Setting Arg1:E27 Arg2:T108	
+R44	Or Arg1:T109 Arg2:T108	
+R45	Setting Arg1:E27 Arg2:T111	
+R46	Setting Arg1:E27 Arg2:T112	
+T113	Action 1446 1452	Decant
+E28	Action:T113 Acts-on:T114
+T114	Reagent 1453 1459	liquid
+T115	Action 1461 1464	Add
+E29	Action:T115 Acts-on:T118
+T116	Amount 1465 1471	400 µL
+T117	Concentration 1475 1478	70%
+T118	Reagent 1479 1486	ethanol
+T119	Action 1490 1494	wash
+E30	Action:T119 Acts-on:T120
+T120	Reagent 1499 1509	RNA pellet
+R47	Measure Arg1:T118 Arg2:T116	
+R48	Measure Arg1:T118 Arg2:T117	
+T121	Action 1511 1519	Dislodge
+E31	Action:T121 Acts-on:T122 Site:T123
+T122	Reagent 1524 1530	pellet
+T123	Location 1540 1560	centrifuge tube wall
+T124	Action 1605 1615	Centrifuge
+E32	Action:T124 
+T125	Speed 1619 1626	maximum
+T126	Time 1631 1637	15 min
+R49	Setting Arg1:E32 Arg2:T125	
+R50	Setting Arg1:E32 Arg2:T126	
+T127	Modifier 1639 1648	Carefully
+T128	Action 1649 1657	aspirate
+E33	Action:T128 Acts-on:T129
+T129	Reagent 1662 1668	liquid
+T130	Action 1693 1700	air dry
+E34	Action:T130 Acts-on:T131
+T131	Reagent 1683 1689	pellet
+T132	Action 1704 1710	remove
+E35	Action:T132 Acts-on:T134
+T133	Modifier 1711 1714	all
+T134	Reagent 1715 1722	ethanol
+R51	Mod-Link Arg1:T134 Arg2:T133	
+R52	Mod-Link Arg1:E33 Arg2:T127	
+T135	Action 1724 1733	Resuspend
+E36	Action:T135 Acts-on:T137
+T136	Amount 1738 1743	50 µL
+T137	Reagent 1747 1763	RNase-free water
+R53	Measure Arg1:T137 Arg2:T136	
+T138	Measure-Type 1765 1771	Volume
+T139	Reagent 1775 1780	water
+T140	Action 1859 1862	Add
+E37	Action:T140 Acts-on:T142 Site:T146
+T141	Amount 1863 1868	50 µg
+T142	Reagent 1872 1875	RNA
+T143	Modifier 1881 1886	total
+T144	Measure-Type 1887 1893	volume
+T145	Amount 1897 1902	85 µL
+T146	Reagent 1906 1922	RNase-free water
+R54	Measure Arg1:T146 Arg2:T145	
+R55	Measure Arg1:T142 Arg2:T141	
+T147	Action 1924 1927	Add
+E38	Action:T147 Acts-on:T151
+T148	Action 1964 1967	Add
+E39	Action:T148 Acts-on:T152
+T149	Amount 1928 1933	10 µL
+T150	Amount 1968 1972	5 µL
+T151	Reagent 1937 1962	Turbo DNA-free 10x buffer
+R56	Measure Arg1:T151 Arg2:T149	
+T152	Reagent 1976 1994	Turbo DNase enzyme
+R57	Measure Arg1:T152 Arg2:T150	
+T153	Action 1996 2004	Incubate
+E40	Action:T153 
+T154	Temperature 2008 2012	37ºC
+T155	Time 2017 2023	20 min
+R58	Setting Arg1:E40 Arg2:T154	
+R59	Setting Arg1:E40 Arg2:T155	
+T156	Action 2025 2030	Bring
+E41	Action:T156 Using:T159
+T157	Measure-Type 2031 2037	volume
+T158	Amount 2041 2047	200 µL
+T159	Reagent 2054 2070	RNase-free water
+T160	Action 2072 2075	Add
+E42	Action:T160 Acts-on:T162
+T161	Amount 2076 2082	200 µL
+T162	Reagent 2086 2104	phenol:chlorofform
+T163	Action 2109 2116	extract
+E43	Action:T163 Count:T164
+T164	Numerical 2117 2125	one time
+T165	Reagent 2149 2160	supernatant
+T166	Action 2162 2165	add
+E44	Action:T166 Site:T165 Acts-on:T169 Acts-on2:T172
+T167	Concentration 2175 2177	3M
+T168	Amount 2166 2171	20 µL
+T169	Reagent 2178 2192	sodium acetate
+T170	Amount 2197 2203	750 µL
+T171	Concentration 2207 2211	100%
+T172	Reagent 2212 2219	ethanol
+T173	Action 2221 2232	Precipitate
+E45	Action:T173 Acts-on:T174
+T174	Reagent 2233 2236	RNA
+R60	Measure Arg1:T169 Arg2:T168	
+R61	Measure Arg1:T169 Arg2:T167	
+R62	Measure Arg1:T172 Arg2:T170	
+R63	Measure Arg1:T172 Arg2:T171	
+T175	Reagent 1805 1808	RNA
+T176	Reagent 1840 1843	RNA
+T177	Measure-Type 1844 1857	concentration
+T178	Action 1572 1579	attempt
+E46	Action:T178 
+T179	Action 1594 1603	resuspend
+E47	Action:T179 
+T180	Modifier 1583 1593	completely
+R64	Mod-Link Arg1:E47 Arg2:T180	
+T181	Modifier 1830 1839	dissolved
+R65	Mod-Link Arg1:T176 Arg2:T181	
+R66	Measure Arg1:T162 Arg2:T161	
+T182	Reagent 0 14	Hot-phenol RNA
+R67	Acts-on Arg1:T1 Arg2:T182	
+T183	Modifier 169 173	slow
+R68	Mod-Link Arg1:T14 Arg2:T183	
+T184	Modifier 211 212	~
+R69	Mod-Link Arg1:T17 Arg2:T184	
+R70	Setting Arg1:E13 Arg2:T56	
+T185	Modifier 787 792	again
+R71	Mod-Link Arg1:E15 Arg2:T185	
+T186	Modifier 805 808	hot
+R72	Mod-Link Arg1:T64 Arg2:T186	
+R73	Acts-on Arg1:E17 Arg2:T68	
+T187	Modifier 979 988	remaining
+R74	Mod-Link Arg1:T73 Arg2:T187	
+T188	Method 997 1010	contamination
+R75	Acts-on Arg1:T188 Arg2:T73	
+T189	Method 1070 1083	contamination
+R76	Acts-on Arg1:T189 Arg2:T77	
+R77	Count Arg1:T76 Arg2:T74	
+R78	Count Arg1:T76 Arg2:T75	
+R79	Setting Arg1:E27 Arg2:T109	
+T190	Modifier 1565 1571	do not
+R42	Mod-Link Arg1:E46 Arg2:T190	
+R80	Acts-on Arg1:E46 Arg2:E47	
+T191	Modifier 1737 1738	~
+R81	Mod-Link Arg1:T136 Arg2:T191	
+R82	Mod-Link Arg1:T144 Arg2:T143	
+R83	Acts-on Arg1:E41 Arg2:T157	
+R84	Of-Type Arg1:T158 Arg2:T157	

@@ -1,0 +1,285 @@
+T1	Method 28 44	nuclei isolation
+T2	Modifier 50 55	fresh
+T3	Modifier 60 66	frozen
+T4	Reagent 67 73	tissue
+T5	Method 78 86	snRNAseq
+R1	Mod-Link Arg1:T4 Arg2:T3	
+R2	Mod-Link Arg1:T4 Arg2:T2	
+T6	Action 93 97	chop
+E1	Action:T6 Acts-on:T7 Using:T8 Product:T10
+T7	Reagent 98 104	tissue
+T8	Device 112 123	razor blade
+T9	Modifier 127 132	small
+T10	Mention 133 139	pieces
+R4	Mod-Link Arg1:T10 Arg2:T9	
+T11	Reagent 145 151	tissue
+T12	Modifier 162 186	small as a grain of rice
+R5	Mod-Link Arg1:T11 Arg2:T12	
+T13	Action 188 193	Add  
+E2	Action:T13 Acts-on:T15 Site:T16
+T14	Modifier 193 200	chilled
+T15	Reagent 201 223	Nuclei EZ Lysis Buffer
+T16	Reagent 231 237	tissue
+T17	Size 241 247	1.5 mL
+T18	Location 248 252	tube
+R6	Mod-Link Arg1:T15 Arg2:T14	
+R7	Measure Arg1:T18 Arg2:T17	
+T19	Action 254 264	Homogenize
+E3	Action:T19 Acts-on:T20 Using:T21
+T20	Reagent 269 275	sample
+T21	Device 284 291	douncer
+T22	Action 293 301	stroking
+E4	Action:T22 Count:T23
+T23	Numerical 302 313	10-20 times
+T24	Action 316 324	Transfer
+E5	Action:T24 Acts-on:T25 Site:T27
+T25	Reagent 329 339	homogenate
+T26	Size 351 355	2 mL
+T27	Location 356 360	tube
+R8	Measure Arg1:T27 Arg2:T26	
+T28	Action 362 367	Add  
+E6	Action:T28 Acts-on:T30
+T29	Modifier 370 377	chilled
+T30	Reagent 378 400	Nuclei EZ Lysis Buffer
+T31	Action 402 405	mix
+E7	Action:T31 
+T32	Modifier 406 412	gently
+T33	Action 417 425	incubate
+E8	Action:T33 
+T34	Temperature 426 432	on ice
+R9	Setting Arg1:E8 Arg2:T34	
+R10	Mod-Link Arg1:T30 Arg2:T29	
+R11	Mod-Link Arg1:E7 Arg2:T32	
+T35	Modifier 439 445	Gently
+T36	Action 446 449	mix
+E9	Action:T36 Using:T38
+T37	Modifier 457 466	wide bore
+T38	Device 467 470	tip
+R12	Mod-Link Arg1:E9 Arg2:T35	
+R13	Mod-Link Arg1:T38 Arg2:T37	
+T39	Action 472 478	Repeat
+E10	Action:T39 Count:T40
+T40	Numerical 479 488	1-2 times
+T41	Modifier 489 495	during
+T42	Method 500 510	incubation
+R14	Mod-Link Arg1:E10 Arg2:T41	
+T43	Action 512 518	Filter
+E11	Action:T43 Acts-on:T44 Using:T46
+T44	Reagent 519 529	homogenate
+T45	Size 538 543	70 μm
+T46	Device 544 557	strainer mesh
+R15	Measure Arg1:T46 Arg2:T45	
+T47	Action 559 566	Collect
+E12	Action:T47 Acts-on:T48 Using:T51
+T48	Reagent 567 579	flow through
+T49	Modifier 585 596	polystyrene
+T50	Modifier 597 609	round-bottom
+T51	Location 610 619	FACS tube
+T52	Action 624 632	transfer
+E13	Action:T52 Site:T56 Measure-Type-Link:T53
+T53	Measure-Type 633 639	volume
+T54	Modifier 652 655	new
+T55	Size 656 660	2 mL
+T56	Location 661 665	tube
+R16	Mod-Link Arg1:T51 Arg2:T50	
+R17	Mod-Link Arg1:T51 Arg2:T49	
+R18	Mod-Link Arg1:T56 Arg2:T54	
+R19	Measure Arg1:T56 Arg2:T55	
+T57	Action 667 677	Centrifuge
+E14	Action:T57 Acts-on:T58
+T58	Reagent 682 688	nuclei
+T59	Action 706 712	remove
+E15	Action:T59 Acts-on:T60
+T60	Reagent 713 724	supernatant
+T61	Modifier 743 749	Gently
+T62	Action 750 759	resuspend
+E16	Action:T62 Acts-on:T63 Site:T64
+T63	Reagent 760 766	nuclei
+T64	Reagent 782 797	EZ Lysis buffer
+T65	Action 799 807	incubate
+E17	Action:T65 
+T66	Temperature 813 819	on ice
+R20	Setting Arg1:E17 Arg2:T66	
+R21	Mod-Link Arg1:E16 Arg2:T61	
+T67	Action 821 831	Centrifuge
+E18	Action:T67 Acts-on:T68
+T68	Reagent 836 842	nuclei
+T69	Action 857 863	remove
+E19	Action:T69 Acts-on:T70
+T70	Reagent 864 875	supernatant
+T71	Modifier 896 903	without
+T72	Action 904 914	disturbing
+E20	Action:T72 Acts-on:T73
+T73	Reagent 915 921	pellet
+T74	Reagent 926 932	pellet
+T75	Modifier 939 944	loose
+T76	Action 945 950	leave
+E21	Action:T76 
+R22	Mod-Link Arg1:T74 Arg2:T75	
+R23	Mod-Link Arg1:E20 Arg2:T71	
+T77	Modifier 876 895	as much as possible
+R24	Mod-Link Arg1:E19 Arg2:T77	
+T78	Action 962 967	Add  
+E22	Action:T78 Acts-on:T79 Acts-on2:T80
+T79	Reagent 967 978	Nuclei Wash
+T80	Reagent 983 1002	Resuspension Buffer
+T81	Action 1007 1017	incubate  
+E23	Action:T81 
+T82	Modifier 1017 1024	without
+T83	Action 1025 1037	resuspending
+E24	Action:T83 
+T84	Action 1041 1046	allow
+E25	Action:T84 
+T85	Method 1047 1065	buffer interchange
+R25	Mod-Link Arg1:E24 Arg2:T82	
+T86	Modifier 1067 1072	After
+T87	Method 1073 1083	incubation
+T88	Action 1085 1090	add  
+E26	Action:T88 Acts-on:T89 Acts-on2:T90
+R26	Mod-Link Arg1:E26 Arg2:T86	
+T89	Reagent 1093 1104	Nuclei Wash
+T90	Reagent 1109 1128	Resuspension Buffer
+T91	Action 1133 1142	resuspend
+E27	Action:T91 Acts-on:T92
+T92	Reagent 1147 1153	nuclei
+T93	Action 1155 1165	Centrifuge
+E28	Action:T93 Acts-on:T94
+T94	Reagent 1170 1176	nuclei
+T95	Action 1191 1197	remove
+E29	Action:T95 Acts-on:T96
+T96	Reagent 1198 1209	supernatant
+T97	Modifier 1228 1234	Gently
+T98	Action 1235 1244	resuspend
+E30	Action:T98 Acts-on:T99 Site:T100 Site2:T101
+T99	Reagent 1245 1251	nuclei
+T100	Reagent 1256 1267	Nuclei Wash
+T101	Reagent 1272 1291	Resuspension Buffer
+T102	Action 1296 1304	transfer
+E31	Action:T102 Site:T104
+T103	Size 1310 1316	1.5 mL
+T104	Location 1317 1321	tube
+T105	Action 1333 1336	see
+E32	Action:T105 Acts-on:T107
+T106	Modifier 1337 1342	small
+T107	Reagent 1343 1350	pellets
+R27	Mod-Link Arg1:T107 Arg2:T106	
+R28	Measure Arg1:T104 Arg2:T103	
+R29	Mod-Link Arg1:E30 Arg2:T97	
+T108	Action 1353 1359	Repeat
+E33	Action:T108 
+T109	Action 1372 1381	resuspend
+E34	Action:T109 Site:T111 Site2:T110
+T110	Reagent 1386 1397	Nuclei Wash
+T111	Reagent 1402 1421	Resuspension Buffer
+T112	Modifier 1422 1439	supplemented with
+T113	Reagent 1440 1444	DAPI
+R30	Mod-Link Arg1:T111 Arg2:T112	
+T114	Action 1446 1453	Collect
+E35	Action:T114 Acts-on:T115
+T115	Reagent 1458 1464	nuclei
+T116	Action 1468 1475	washing
+T117	Reagent 1480 1486	nuclei
+T118	Location 1496 1500	wall
+T119	Location 1504 1519	centrifuge tube
+T120	Action 1520 1526	Filter
+E37	Action:T120 Acts-on:T121 Count:T122 Using:T125
+T121	Reagent 1527 1533	nuclei
+T122	Numerical 1544 1548	once
+T123	Modifier 1535 1543	at least
+T124	Amount 1557 1562	35-µm
+T125	Device 1563 1576	cell strainer
+R32	Mod-Link Arg1:T122 Arg2:T123	
+R33	Measure Arg1:T125 Arg2:T124	
+T126	Modifier 1578 1586	Visually
+T127	Action 1587 1594	inspect
+E38	Action:T127 Measure-Type-Link:T128 Using:T129
+T128	Measure-Type 1595 1611	nuclei integrity
+T129	Device 1620 1630	microscope
+R34	Mod-Link Arg1:E38 Arg2:T126	
+T130	Action 1632 1639	Perform
+E39	Action:T130 
+T131	Method 1640 1659	cytometric analysis
+T132	Action 1661 1669	Identify
+E40	Action:T132 Acts-on:T134 Using:T135
+T133	Modifier 1670 1676	single
+T134	Reagent 1677 1683	nuclei
+T135	Reagent 1713 1724	DNA content
+T136	Action 1726 1730	gate
+E41	Action:T136 Site:T140
+T137	Action 1735 1739	sort
+E42	Action:T137 Site:T140
+T138	Modifier 1740 1748	directly
+T139	Concentration 1754 1757	10x
+T140	Reagent 1758 1767	RT Buffer
+T141	Modifier 1777 1784	without
+T142	Reagent 1789 1802	RT Enzyme Mix
+R36	Measure Arg1:T140 Arg2:T139	
+R37	Mod-Link Arg1:E42 Arg2:T138	
+R38	Mod-Link Arg1:T134 Arg2:T133	
+T143	Action 1804 1811	Proceed
+E43	Action:T143 
+T144	Modifier 1812 1823	immediately
+T145	Concentration 1833 1836	10x
+T146	Method 1837 1866	Genomics Single Cell Protocol
+T147	Action 1871 1879	minimize
+E44	Action:T147 Measure-Type-Link:T163
+T148	Method 1897 1923	nuclei preparation/sorting
+T149	Method 1928 1940	chip loading
+R39	Mod-Link Arg1:E43 Arg2:T144	
+T150	Action 1942 1947	Add  
+T151	Reagent 1947 1960	RT Enzyme Mix
+T152	Modifier 1968 1974	sorted
+T153	Reagent 1975 1981	nuclei
+T154	Reagent 1985 1994	RT buffer
+T155	Action 1996 1999	mix
+E46	Action:T155 
+T156	Modifier 2000 2004	well
+T157	Modifier 2009 2015	gently
+T158	Action 2020 2024	load
+E47	Action:T158 
+R40	Mod-Link Arg1:T153 Arg2:T152	
+R41	Mod-Link Arg1:E46 Arg2:T156	
+R42	Mod-Link Arg1:E46 Arg2:T157	
+T159	Method 0 23	‘Frankenstein’ protocol
+T160	Action 87 92	Mince
+E48	Action:T160 Product:T10
+R43	Or Arg1:E48 Arg2:E1	
+R44	Acts-on Arg1:E48 Arg2:T7	
+R45	Using Arg1:E48 Arg2:T8	
+R3	Meronym Arg1:T16 Arg2:T18	
+R46	Acts-on Arg1:E7 Arg2:T30	
+R47	Acts-on Arg1:E8 Arg2:T30	
+R48	Acts-on Arg1:E21 Arg2:T74	
+R49	Using Arg1:E25 Arg2:T85	
+R50	Mod-Link Arg1:T87 Arg2:T86	
+R51	Acts-on Arg1:E31 Arg2:T99	
+R31	Meronym Arg1:T118 Arg2:T119	
+R52	Acts-on Arg1:T116 Arg2:T117	
+R53	Site Arg1:T116 Arg2:T118	
+R54	Acts-on Arg1:E39 Arg2:T131	
+T161	Reagent 1688 1703	sub-populations
+R55	Acts-on Arg1:E40 Arg2:T161	
+T162	Action 1768 1776	prepared
+E36	Action:T162 
+R56	Acts-on Arg1:E36 Arg2:T140	
+R35	Mod-Link Arg1:T142 Arg2:T141	
+R57	Using Arg1:E36 Arg2:T142	
+R58	Setting Arg1:T146 Arg2:T145	
+T163	Measure-Type 1884 1888	time
+R59	Acts-on Arg1:T150 Arg2:T151	
+R60	Site Arg1:T150 Arg2:T153	
+R61	Meronym Arg1:T153 Arg2:T154	
+T164	Device 2025 2029	chip
+R62	Acts-on Arg1:E47 Arg2:T164	
+T165	Modifier 2042 2048	Single
+T166	Reagent 2049 2053	Cell
+T167	Size 2054 2056	3'
+T168	Reagent 2057 2065	Reagents
+R63	Mod-Link Arg1:T166 Arg2:T165	
+R64	Measure Arg1:T168 Arg2:T167	
+T169	Modifier 2080 2086	Single
+T170	Reagent 2087 2091	Cell
+R65	Mod-Link Arg1:T170 Arg2:T169	
+T171	Reagent 2101 2109	Reagents
+T172	Size 2098 2100	5'
+R66	Measure Arg1:T171 Arg2:T172	

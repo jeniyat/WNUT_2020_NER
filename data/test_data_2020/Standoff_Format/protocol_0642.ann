@@ -1,0 +1,435 @@
+T1	Method 0 29	Macrophage Phagocytosis Assay
+T2	Action 1741 1748	Perform
+E1	Action:T2 Site:T4
+T3	Method 1765 1784	microscope analysis
+T4	Location 1790 1816	Biosafety Class II Cabinet
+T5	Action 3196 3200	Stop
+E2	Action:T5 
+T6	Method 3201 3213	phagocytosis
+T7	Action 3217 3223	adding
+E3	Action:T7 Acts-on:T10 Site:T11
+T8	Amount 3224 3229	550µL
+T9	Modifier 3230 3238	ice-cold
+T10	Reagent 3239 3242	PBS
+T11	Location 3250 3254	well
+R1	Mod-Link Arg1:T10 Arg2:T9	
+R2	Measure Arg1:T10 Arg2:T8	
+T12	Action 3086 3097	Co-incubate
+E4	Action:T12 Acts-on:T13
+T13	Reagent 3098 3103	cells
+T14	Temperature 3153 3157	37oC
+T20	Concentration 3158 3160	5%
+T21	Reagent 3161 3164	CO2
+R3	Measure Arg1:T21 Arg2:T20	
+T22	Action 3055 3058	add
+E5	Action:T22 Acts-on:T23 Site:T24
+T23	Reagent 3059 3067	bacteria
+T24	Location 3071 3084	control wells
+T25	Action 2966 2976	Supplement
+E6	Action:T25 Acts-on:T16
+T15	Time 3108 3123	1/8/24/48 hours
+R4	Setting Arg1:E4 Arg2:T15	
+T16	Reagent 2981 2988	E. coli
+T18	Measure-Type 2994 2999	ratio
+T19	Generic-Measure 3003 3022	10 cells/macrophage
+R5	Of-Type Arg1:T19 Arg2:T18	
+T26	Generic-Measure 3025 3037	106 cells/mL
+T27	Action 3039 3042	add
+E7	Action:T27 
+T28	Amount 3043 3046	1mL
+R6	Of-Type Arg1:T26 Arg2:T18	
+T29	Action 2889 2895	Remove
+E8	Action:T29 Acts-on:T30 Site:T31
+T30	Reagent 2896 2912	macrophage media
+T31	Location 2922 2927	wells
+T32	Action 2932 2939	replace
+E9	Action:T32 Using:T34
+T33	Modifier 2945 2950	fresh
+T34	Reagent 2951 2956	media
+T35	Amount 2958 2963	500µL
+R7	Mod-Link Arg1:T34 Arg2:T33	
+R8	Measure Arg1:T34 Arg2:T35	
+T36	Action 2762 2771	Resuspend
+E10	Action:T36 Site:T38
+T37	Concentration 2797 2799	1x
+T38	Reagent 2800 2803	PBS
+T39	Measure-Type 2833 2846	concentration
+T40	Reagent 2850 2858	bacteria
+T41	Modifier 2827 2832	final
+R9	Measure Arg1:T38 Arg2:T37	
+T42	Action 2692 2701	Spin down
+E11	Action:T42 Acts-on:T43
+T43	Reagent 2702 2719	bacterial culture
+T44	Time 2724 2733	5 minutes
+T45	Speed 2737 2744	13,000g
+T46	Reagent 2755 2760	cells
+R10	Setting Arg1:E11 Arg2:T44	
+R11	Setting Arg1:E11 Arg2:T45	
+T47	Action 2582 2588	Induce
+E12	Action:T47 Acts-on:T48 Using:T71 Site:T51 Using2:T286
+T48	Reagent 2589 2597	cultures
+T49	Concentration 2603 2606	10%
+T50	Temperature 2663 2667	37oC
+T51	Device 2673 2690	shaking incubator
+T52	Action 2331 2335	Grow
+E13	Action:T52 Site:T66
+T53	Time 2401 2412	Three hours
+T54	Method 2428 2450	macrophage inoculation
+T55	Time 2464 2473	overnight
+T56	Action 2452 2463	sub-culture
+E14	Action:T56 Acts-on:T57
+T57	Reagent 2474 2491	bacterial culture
+T58	Reagent 2502 2510	bacteria
+T59	Amount 2535 2538	1mL
+T60	Modifier 2539 2548	overnight
+T61	Reagent 2549 2556	culture
+T62	Amount 2559 2562	9mL
+T63	Modifier 2563 2568	fresh
+T64	Reagent 2569 2579	Ab free LB
+R12	Mod-Link Arg1:T64 Arg2:T63	
+R13	Measure Arg1:T64 Arg2:T62	
+R14	Measure Arg1:T61 Arg2:T59	
+T65	Temperature 2339 2343	37oC
+T66	Device 2349 2366	shaking incubator
+T67	Measure-Type 2373 2378	OD600
+T68	Numerical 2382 2383	1
+T69	Measure-Type 2390 2398	cells/mL
+R15	Of-Type Arg1:T68 Arg2:T67	
+T70	Amount 2258 2263	100µL
+T71	Reagent 2607 2616	arabinose
+R19	Measure Arg1:T71 Arg2:T49	
+T72	Concentration 2630 2640	200µL/10mL
+T73	Reagent 2200 2203	GFP
+T74	Location 2977 2980	GFP
+T75	Reagent 2264 2269	stock
+T76	Amount 2273 2278	100mL
+T77	Reagent 2279 2290	Luria Broth
+T78	Reagent 2318 2329	antibiotics
+R21	Measure Arg1:T75 Arg2:T70	
+R22	Measure Arg1:T77 Arg2:T76	
+T79	Action 2160 2167	Grow up
+E15	Action:T79 Acts-on:T81
+T80	Modifier 2168 2177	overnight
+T81	Reagent 2178 2198	cultures of bacteria
+T83	Reagent 2213 2220	E. coli
+T84	Method 2233 2256	phagocytosis experiment
+R23	Mod-Link Arg1:T81 Arg2:T80	
+T85	Action 2113 2121	Incubate
+E16	Action:T85 Site:T90
+T86	Time 2122 2131	overnight
+T87	Temperature 2137 2141	37oC
+T88	Reagent 2145 2148	CO2
+T89	Concentration 2142 2144	5%
+T90	Device 2149 2158	incubator
+R24	Setting Arg1:E16 Arg2:T86	
+R26	Measure Arg1:T88 Arg2:T89	
+T91	Action 2061 2065	Seed
+E17	Action:T91 Count:T93 Acts-on:T92
+T92	Location 2068 2073	wells
+T93	Numerical 2066 2067	4
+T94	Action 2005 2010	Plate
+E18	Action:T94 Acts-on:T95
+T95	Reagent 2011 2016	cells
+T96	Method 2036 2059	phagocytosis experiment
+T97	Reagent 40 60	RAW264.7 macrophages
+T99	Location 60 63	GFP
+T100	Reagent 73 89	Escherichia coli
+T101	Reagent 138 142	DMEM
+T102	Reagent 221 252	ThermoFisherFoetal Bovine Serum
+T103	Reagent 254 257	FBS
+R27	Coreference-Link Arg1:T103 Arg2:T102	
+T104	Reagent 261 278	BovogenAmpicillin
+T107	Concentration 320 325	10g/L
+T108	Reagent 326 334	tryptone
+T109	Concentration 336 340	5g/L
+T110	Reagent 341 345	NaCl
+T111	Concentration 347 351	5g/L
+T112	Reagent 352 365	yeast extract
+T113	Amount 379 381	1L
+T114	Reagent 387 399	milliQ water
+T115	Concentration 399 402	10%
+T116	Reagent 403 412	arabinose
+T117	Concentration 412 417	100mM
+T118	Reagent 418 422	IPTG
+R28	Measure Arg1:T118 Arg2:T117	
+R29	Measure Arg1:T116 Arg2:T115	
+R30	Measure Arg1:T112 Arg2:T111	
+R31	Measure Arg1:T110 Arg2:T109	
+R32	Measure Arg1:T108 Arg2:T107	
+T119	Reagent 144 164	F12 Nutrient Mixture
+T120	Numerical 98 100	1x
+T121	Reagent 101 136	PBSDulbecco's Modified Eagle Medium
+R33	Coreference-Link Arg1:T101 Arg2:T121	
+T122	Reagent 190 200	phenol red
+T123	Reagent 205 217	high glucose
+T124	Reagent 177 188	L-glutamine
+T125	Location 432 446	Static 12 well
+T126	Location 447 461	plastic plates
+T127	Size 461 465	10cm
+T128	Location 466 493	cell culture treated plates
+T129	Location 508 520	Falcon tubes
+R34	Measure Arg1:T128 Arg2:T127	
+T130	Reagent 1823 1848	RAW264.7 macrophage cells
+T98	Generic-Measure 1852 1857	5x104
+T131	Location 1874 1887	12 well plate
+T132	Size 1893 1897	18mm
+T133	Location 1898 1923	diameter glass coverslips
+T134	Amount 1925 1930	500µL
+T135	Reagent 1931 1936	cells
+T136	Location 1941 1945	well
+T137	Amount 1964 1967	1mL
+T138	Modifier 1971 1976	fresh
+T139	Modifier 1977 1985	complete
+T140	Reagent 1986 2002	macrophage media
+R35	Mod-Link Arg1:T140 Arg2:T139	
+R36	Mod-Link Arg1:T140 Arg2:T138	
+R37	Measure Arg1:T140 Arg2:T137	
+R38	Measure Arg1:T133 Arg2:T132	
+R39	Measure Arg1:T135 Arg2:T134	
+T141	Size 520 524	18mm
+T142	Location 525 556	diameter round glass coverslips
+T143	Device 568 577	incubator
+T144	Concentration 561 563	5%
+T145	Reagent 564 567	CO2
+T146	Temperature 556 560	37oC
+T147	Temperature 577 581	37oC
+T148	Device 582 599	shaking incubator
+T149	Device 607 630	Glass microscope slides
+T150	Device 630 660	Upright fluorescent microscope
+T151	Location 697 723	Biosafety Class II cabinet
+T152	Reagent 666 669	GFP
+T153	Location 674 697	phase contrast channels
+R40	Measure Arg1:T145 Arg2:T144	
+R41	Setting Arg1:T143 Arg2:T146	
+R42	Setting Arg1:T148 Arg2:T147	
+R25	Setting Arg1:T90 Arg2:T87	
+R16	Setting Arg1:T66 Arg2:T65	
+R20	Setting Arg1:T51 Arg2:T50	
+T154	Reagent 915 918	FBS
+T155	Reagent 882 913	ThermoFisherFoetal Bovine Serum
+R43	Coreference-Link Arg1:T154 Arg2:T155	
+T156	Reagent 922 939	BovogenAmpicillin
+T157	Concentration 942 949	100mg/L
+T158	Reagent 949 958	Kanamycin
+T159	Concentration 961 967	50mg/L
+T160	Reagent 967 978	Luria Broth
+T161	Concentration 981 986	10g/L
+T162	Reagent 987 995	tryptone
+T163	Concentration 997 1001	5g/L
+T164	Reagent 762 797	PBSDulbecco's Modified Eagle Medium
+T165	Reagent 799 803	DMEM
+R44	Coreference-Link Arg1:T165 Arg2:T164	
+T166	Reagent 805 825	F12 Nutrient Mixture
+T167	Reagent 838 849	L-glutamine
+T168	Reagent 851 861	phenol red
+T169	Reagent 866 878	high glucose
+R45	Measure Arg1:T158 Arg2:T157	
+R46	Measure Arg1:T160 Arg2:T159	
+R47	Measure Arg1:T162 Arg2:T161	
+T170	Reagent 1002 1006	NaCl
+T171	Concentration 1008 1012	5g/L
+T172	Reagent 1013 1026	yeast extract
+T173	Amount 1040 1042	1L
+T174	Reagent 1048 1060	milliQ water
+T175	Concentration 1060 1063	10%
+T176	Reagent 1064 1073	arabinose
+T177	Concentration 1073 1078	100mM
+T178	Concentration 759 761	1x
+R50	Measure Arg1:T170 Arg2:T163	
+R51	Measure Arg1:T172 Arg2:T171	
+T179	Location 1100 1122	12 well plastic plates
+T180	Location 1127 1154	cell culture treated plates
+T181	Size 1122 1126	10cm
+R52	Measure Arg1:T180 Arg2:T181	
+T182	Location 1169 1181	Falcon tubes
+T183	Size 1181 1185	18mm
+T184	Location 1186 1217	diameter round glass coverslips
+R53	Measure Arg1:T184 Arg2:T183	
+T185	Temperature 1217 1221	37oC
+T186	Concentration 1222 1224	5%
+T187	Reagent 1225 1228	CO2
+R54	Measure Arg1:T187 Arg2:T186	
+T188	Temperature 1238 1242	37oC
+T189	Device 1229 1238	incubator
+R55	Setting Arg1:T189 Arg2:T185	
+T190	Device 1243 1260	shaking incubator
+T191	Device 1260 1268	Tweezers
+T192	Device 1268 1291	Glass microscope slides
+T193	Device 1291 1321	Upright fluorescent microscope
+T194	Reagent 1327 1330	GFP
+T195	Location 1335 1358	phase contrast channels
+R56	Setting Arg1:T190 Arg2:T188	
+T196	Location 1358 1384	Biosafety Class II cabinet
+T197	Location 1428 1450	12 well plastic plates
+T198	Size 1450 1454	10cm
+T199	Location 1455 1482	cell culture treated plates
+R57	Measure Arg1:T199 Arg2:T198	
+T200	Location 1497 1509	Falcon tubes
+T201	Size 1509 1513	18mm
+T202	Location 1514 1545	diameter round glass coverslips
+R58	Measure Arg1:T202 Arg2:T201	
+T203	Temperature 1545 1549	37oC
+T204	Concentration 1550 1552	5%
+T205	Reagent 1553 1556	CO2
+T206	Device 1557 1566	incubator
+T207	Temperature 1566 1570	37oC
+T208	Device 1571 1588	shaking incubator
+T209	Device 1588 1596	Tweezers
+T210	Device 1596 1619	Glass microscope slides
+T211	Device 1619 1649	Upright fluorescent microscope
+T212	Reagent 1655 1658	GFP
+T213	Location 1663 1686	phase contrast channels
+R59	Measure Arg1:T205 Arg2:T204	
+R60	Setting Arg1:T206 Arg2:T203	
+R61	Setting Arg1:T208 Arg2:T207	
+T214	Reagent 2078 2082	cell
+T215	Action 3168 3173	allow
+E19	Action:T215 Using:T21
+T216	Method 3178 3194	bacterial uptake
+T217	Action 3255 3263	Aspirate
+E20	Action:T217 Acts-on:T218 Using:T219
+T218	Reagent 3264 3275	supernatant
+T219	Device 3284 3291	pipette
+T220	Action 3301 3305	wash
+E21	Action:T220 Acts-on:T221 Count:T222 Using:T224
+T221	Reagent 3310 3315	cells
+T222	Numerical 3316 3327	three times
+T223	Modifier 3333 3337	cold
+T224	Reagent 3338 3341	PBS
+R62	Mod-Link Arg1:T224 Arg2:T223	
+T226	Action 3354 3362	Transfer
+E22	Action:T226 Acts-on:T227 Site:T228 Using2:T231
+T227	Location 3363 3373	coverslips
+T228	Location 3379 3395	microscope slide
+T229	Reagent 3403 3414	drop of PBS
+T230	Amount 3417 3420	6µL
+T231	Device 3428 3436	tweezers
+T232	Reagent 3463 3474	macrophages
+T233	Location 3504 3520	microscope slide
+T234	Modifier 3487 3496	face down
+T235	Action 3522 3526	Seal
+E23	Action:T235 Acts-on:T236 Using:T237
+T236	Location 3527 3544	microscope slides
+T237	Seal 3551 3568	clear nail polish
+T238	Action 3573 3585	allow to dry
+E24	Action:T238 Acts-on:T236
+T239	Action 3587 3594	Analyse
+E25	Action:T239 Acts-on:T240 Using:T245
+R63	Measure Arg1:T229 Arg2:T230	
+R64	Mod-Link Arg1:T232 Arg2:T234	
+T240	Reagent 3595 3600	cells
+T241	Reagent 3854 3865	macrophages
+T242	Reagent 3877 3886	bacteria 
+T243	Numerical 3757 3759	60
+T244	Reagent 3760 3771	macrophages
+T245	Device 3610 3640	upright fluorescent microscope
+T246	Reagent 3661 3672	macrophages
+T247	Reagent 3695 3703	bacteria
+T248	Action 3705 3710	Image
+E26	Action:T248 Count:T249 Acts-on:T250 Site:T251
+T249	Numerical 3711 3713	15
+T250	Reagent 3714 3725	macrophages
+T251	Location 3730 3739	coverslip
+T252	Numerical 3740 3743	x 4
+T253	Action 3678 3690	phagocytosed
+E27	Action:T253 Acts-on:T247
+T254	Reagent 3934 3952	macrophagePossible
+T255	Reagent 3907 3929	intracellular bacteria
+T256	Reagent 3987 3998	macrophages
+T257	Reagent 4013 4021	bacteria
+T258	Reagent 4051 4059	bacteria
+T259	Reagent 4064 4074	macrophage
+T260	Measure-Type 3840 3850	Percentage
+T261	Measure-Type 3973 3983	Percentage
+R65	Meronym Arg1:T124 Arg2:T119	
+R66	Meronym Arg1:T122 Arg2:T119	
+R67	Coreference-Link Arg1:T123 Arg2:T119	
+T105	Concentration 281 288	100mg/L
+T106	Reagent 288 297	Kanamycin
+R68	Measure Arg1:T106 Arg2:T105	
+T262	Concentration 300 306	50mg/L
+T263	Reagent 306 317	Luria Broth
+R69	Measure Arg1:T263 Arg2:T262	
+T264	Size 503 507	50mL
+R70	Measure Arg1:T129 Arg2:T264	
+R71	Measure Arg1:T142 Arg2:T141	
+T265	Device 599 607	Tweezers
+T266	Device 723 740	Spectrophotometer
+T267	Device 740 750	Centrifuge
+R72	Measure Arg1:T164 Arg2:T178	
+R73	Meronym Arg1:T167 Arg2:T166	
+R74	Meronym Arg1:T168 Arg2:T166	
+R75	Meronym Arg1:T169 Arg2:T166	
+T268	Reagent 1079 1083	IPTG
+R48	Measure Arg1:T268 Arg2:T177	
+R49	Measure Arg1:T176 Arg2:T175	
+R76	Measure Arg1:T174 Arg2:T173	
+T269	Modifier 1093 1099	Static
+R77	Mod-Link Arg1:T179 Arg2:T269	
+T270	Size 1164 1168	50mL
+R78	Measure Arg1:T182 Arg2:T270	
+T271	Device 1384 1401	Spectrophotometer
+T272	Device 1401 1411	Centrifuge
+T273	Modifier 1421 1427	Static
+R79	Mod-Link Arg1:T197 Arg2:T273	
+T274	Size 1492 1496	50mL
+R80	Measure Arg1:T200 Arg2:T274	
+T275	Location 1686 1704	Biosafety Class II
+T276	Action 1818 1822	Seed
+E28	Action:T276 Acts-on:T130 Site:T131
+T277	Measure-Type 1858 1868	cells/well
+R81	Of-Type Arg1:T98 Arg2:T277	
+R82	Setting Arg1:E28 Arg2:T98	
+T278	Modifier 1937 1940	per
+R83	Mod-Link Arg1:T136 Arg2:T278	
+T279	Action 1946 1958	supplemented
+E29	Action:T279 Acts-on:T136 Using:T140
+T280	Time 2025 2035	day before
+R84	Setting Arg1:E18 Arg2:T280	
+R85	Measure Arg1:T92 Arg2:T93	
+T82	Time 2222 2232	day before
+R86	Setting Arg1:E15 Arg2:T82	
+T281	Modifier 2385 2386	~
+T282	Numerical 2386 2389	108
+R87	Of-Type Arg1:T282 Arg2:T69	
+R88	Mod-Link Arg1:T282 Arg2:T281	
+T283	Modifier 2413 2419	before
+R89	Mod-Link Arg1:T53 Arg2:T283	
+R17	Setting Arg1:E14 Arg2:T55	
+T284	Action 2495 2501	ensure
+E30	Action:T284 Acts-on:T58
+R18	Mod-Link Arg1:T61 Arg2:T60	
+T285	Concentration 2617 2622	100mM
+T286	Reagent 2623 2627	IPTG
+R90	Measure Arg1:T286 Arg2:T285	
+T287	Modifier 2629 2630	~
+R91	Mod-Link Arg1:T72 Arg2:T287	
+T288	Reagent 2641 2658	bacterial culture
+R92	Measure Arg1:T288 Arg2:T72	
+R93	Or Arg1:T286 Arg2:T71	
+R94	Coreference-Link Arg1:T288 Arg2:T48	
+T289	Action 2748 2754	pellet
+E31	Action:T289 Acts-on:T46
+T290	Method 2881 2886	assay
+R95	Setting Arg1:E6 Arg2:T19	
+T17	Modifier 3024 3025	~
+R96	Mod-Link Arg1:T26 Arg2:T17	
+R97	Setting Arg1:E7 Arg2:T28	
+T291	Modifier 3049 3054	Don't
+R98	Mod-Link Arg1:E5 Arg2:T291	
+R99	Setting Arg1:E4 Arg2:T14	
+T225	Amount 3343 3347	1mL/
+T292	Action 3347 3351	wash
+E32	Action:T292 
+R100	Setting Arg1:E32 Arg2:T225	
+R101	Measure Arg1:T224 Arg2:T225	
+T293	Action 3644 3653	determine
+E33	Action:T293 Acts-on:T246
+T294	Modifier 3726 3729	per
+R102	Mod-Link Arg1:T251 Arg2:T294	
+T295	Reagent 3744 3754	replicates
+R103	Measure Arg1:T295 Arg2:T252	
+R104	Measure Arg1:T244 Arg2:T243	
+T296	Measure-Type 3889 3903	Average number
+T297	Measure-Type 4024 4038	Average number
+R105	Mod-Link Arg1:T39 Arg2:T41	

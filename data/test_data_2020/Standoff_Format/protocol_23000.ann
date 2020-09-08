@@ -1,0 +1,250 @@
+T1	Method 0 5	n-PCR
+T2	Numerical 10 12	10
+T3	Reagent 13 20	samples
+T4	Device 46 54	Pipettes
+T5	Amount 56 60	10µl
+T6	Modifier 61 74	presterilized
+T7	Device 75 86	filter tips
+T8	Amount 88 92	20µl
+T9	Modifier 93 106	presterilized
+T10	Device 107 118	filter tips
+T11	Amount 120 125	200µl
+T12	Modifier 126 139	presterilized
+T13	Device 140 151	filter tips
+T14	Amount 153 159	1000µl
+T15	Modifier 160 173	presterilized
+T16	Device 174 185	filter tips
+T17	Device 187 200	Thermal Cycle
+T18	Device 210 228	TProfessional TRIO
+T19	Method 231 246	Electrophoresis
+T20	Device 281 303	Taq DNA Polymerase kit
+T21	Amount 305 311	1000 U
+T22	Reagent 383 390	Buffers
+T23	Reagent 392 402	PCR Buffer
+T24	Reagent 407 427	CoralLoad PCR Buffer
+T25	Reagent 430 435	MgCl2
+T26	Reagent 437 447	Q solution
+T27	Reagent 449 471	Taq polymerase Buffers
+T28	Reagent 473 478	dNTPs
+T29	Modifier 479 492	Nuclease free
+T30	Reagent 493 496	H2O
+T31	Reagent 497 508	Forward (F)
+T32	Reagent 513 532	reverse (R) primers
+T33	Reagent 533 540	Agarose
+T34	Reagent 541 548	Markers
+T35	Generic-Measure 550 554	50pb
+T36	Generic-Measure 562 567	100pb
+T37	Method 604 615	Preparation
+T38	Method 620 627	storage
+T39	Reagent 631 639	reagents
+T40	Reagent 640 654	Stock reagents
+T41	Method 659 662	PCR
+T42	Concentration 664 667	10X
+T43	Reagent 668 674	buffer
+T44	Reagent 676 681	dNTPs
+T45	Reagent 683 688	MgCl2
+T46	Reagent 690 700	Q solution
+T47	Reagent 705 712	primers
+T48	Reagent 718 725	enzymes
+T49	Action 736 742	stored
+E1	Action:T49 Acts-on:T48 Acts-on2:T40
+T50	Temperature 746 751	-20°C
+T51	Reagent 753 767	Stock reagents
+T52	Action 778 785	diluted
+E2	Action:T52 Acts-on:T51 Measure-Type-Link:T53
+T53	Measure-Type 791 813	working concentrations
+T54	Action 818 827	aliquoted
+E3	Action:T54 Acts-on:T51 Site:T56
+T55	Temperature 831 836	-20°C
+T56	Location 851 856	tubes
+T57	Reagent 866 874	aliquots
+T58	Reagent 878 884	sample
+T59	Reagent 889 900	control DNA
+T62	Reagent 912 941	primary PCR (Nest-1) products
+T63	Action 950 954	kept
+E4	Action:T63 Acts-on:T62
+T64	Temperature 958 963	-20°C
+T65	Modifier 968 977	long-term
+T66	Method 978 985	storage
+T67	Action 997 1001	kept
+E5	Action:T67 Site:T68
+T68	Device 1009 1015	fridge
+T69	Method 1031 1034	PCR
+T70	Method 1053 1064	Primary PCR
+T71	Method 1066 1076	Nest-1 PCR
+T72	Reagent 1098 1103	PolEF
+T73	Reagent 1108 1122	PolER  primers
+T74	Reagent 1142 1149	samples
+T75	Reagent 1158 1174	positive control
+T76	Reagent 1176 1179	DNA
+T77	Reagent 1185 1198	MT2 cell line
+T78	Reagent 1206 1222	negative control
+T79	Reagent 1226 1233	PCR mix
+T80	Reagent 1244 1256	DNA template
+T81	Method 1258 1268	Nest-2 PCR
+T82	Reagent 1294 1307	primers PolIF
+T83	Reagent 1312 1317	PolIR
+T84	Reagent 1328 1343	primers Actin F
+T85	Reagent 1348 1355	Actin R
+T86	Action 1373 1380	amplify
+E6	Action:T86 Acts-on:T87 Using:T84 Using2:T85
+T87	Reagent 1381 1397	human Actin gene
+T88	Method 1408 1411	PCR
+T89	Action 1429 1435	remove
+E7	Action:T89 Acts-on:T90
+T90	Location 1436 1441	tubes
+T91	Modifier 1446 1453	briefly
+T92	Action 1454 1464	centrifuge
+E8	Action:T92 Commands:E9
+T93	Action 1468 1477	spin down
+E9	Action:T93 Acts-on:T94
+T94	Reagent 1478 1486	products
+T95	Action 1488 1493	Store
+E10	Action:T95 Acts-on:T96 Site:T97
+T96	Location 1494 1503	PCR tubes
+T97	Device 1511 1517	fridge
+T98	Device 1521 1528	freezer
+T99	Action 1529 1532	Run
+E11	Action:T99 Acts-on:T100 Using:T103
+T100	Reagent 1537 1544	samples
+T101	Concentration 1548 1550	2%
+T102	Reagent 1551 1562	Agarose gel
+T103	Method 1563 1578	electrophoresis
+T104	Reagent 1585 1611	gel red nucleic acid stain
+T106	Action 1613 1618	Score
+E13	Action:T106 
+T107	Reagent 1653 1658	bands
+T108	Action 1659 1668	comparing
+E14	Action:T108 Acts-on:T107 Acts-on2:T109
+T109	Reagent 1674 1687	control bands
+T110	Method 1690 1693	PCR
+T111	Action 1712 1715	run
+E15	Action:T111 Acts-on:T114
+T112	Modifier 1717 1725	at least
+T113	Numerical 1726 1729	two
+T114	Reagent 1730 1738	controls
+T115	Numerical 1740 1741	1
+T116	Reagent 1742 1750	positive
+T117	Numerical 1755 1756	1
+T118	Reagent 1757 1765	negative
+T119	Action 1777 1785	included
+E16	Action:T119 Acts-on:T120
+T120	Reagent 1805 1812	samples
+T121	Action 1815 1822	Prepare
+E17	Action:T121 Acts-on:T122
+T122	Reagent 1827 1841	PCR master mix
+T123	Action 1842 1853	calculating
+E18	Action:T123 Measure-Type-Link:T124
+T124	Measure-Type 1861 1867	volume
+T125	Reagent 1886 1893	samples
+T126	Amount 1894 1897	+8%
+T127	Action 1902 1909	account
+E19	Action:T127 Measure-Type-Link:T128 Measure-Type-Link2:T129
+T128	Measure-Type 1914 1928	pipetting loss
+T129	Measure-Type 1933 1944	dead volume
+T130	Reagent 1947 1957	Master Mix
+T131	Method 1962 1972	Nest-1 PCR
+T132	Concentration 1974 1977	10X
+T133	Reagent 1978 1988	PCR buffer
+T134	Reagent 1990 1995	dNTPs
+T135	Reagent 1997 2002	MgCl2
+T136	Reagent 2004 2011	primers
+T137	Reagent 2013 2027	Taq polymerase
+T138	Reagent 2032 2037	water
+T139	Reagent 2039 2049	Master Mix
+T140	Method 2054 2064	Nest-2 PCR
+T141	Concentration 2066 2069	10X
+T142	Reagent 2070 2090	CoralLoad PCR Buffer
+T143	Reagent 2092 2097	dNTPs
+T144	Reagent 2099 2104	MgCl2
+T145	Reagent 2106 2113	primers
+T146	Reagent 2115 2129	Taq polymerase
+T147	Reagent 2134 2139	water
+T148	Method 2141 2152	Preparation
+T149	Method 2178 2189	Preparation
+T150	Method 2156 2159	PCR
+T151	Method 2161 2171	Nest-1 PCR
+T152	Method 2193 2196	PCR
+T153	Method 2198 2208	Nest-2 PCR
+T154	Numerical 2175 2177	10
+T155	Numerical 2212 2214	10
+T156	Reagent 2215 2222	Primers
+T157	Method 2223 2234	PCR Cycling
+T158	Method 2246 2252	Nest-1
+T159	Method 2270 2276	Nest-2
+T160	Reagent 2254 2260	Pol EF
+T161	Reagent 2263 2269	Pol ER
+T162	Reagent 2278 2284	Pol IF
+T163	Reagent 2287 2293	Pol IR
+T164	Reagent 2296 2301	Act F
+T165	Reagent 2304 2309	Acr R
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Measure Arg1:T7 Arg2:T5	
+R3	Mod-Link Arg1:T7 Arg2:T6	
+R4	Measure Arg1:T10 Arg2:T8	
+R5	Mod-Link Arg1:T10 Arg2:T9	
+R6	Measure Arg1:T13 Arg2:T11	
+R7	Mod-Link Arg1:T13 Arg2:T12	
+R8	Measure Arg1:T16 Arg2:T14	
+R9	Mod-Link Arg1:T16 Arg2:T15	
+R10	Measure Arg1:T20 Arg2:T21	
+R11	Mod-Link Arg1:T30 Arg2:T29	
+R12	Or Arg1:T35 Arg2:T36	
+R13	Measure Arg1:T34 Arg2:T35	
+R14	Measure Arg1:T43 Arg2:T42	
+R15	Meronym Arg1:T43 Arg2:T40	
+R16	Meronym Arg1:T44 Arg2:T40	
+R17	Meronym Arg1:T45 Arg2:T40	
+R18	Meronym Arg1:T46 Arg2:T40	
+R19	Meronym Arg1:T47 Arg2:T40	
+R20	Setting Arg1:E1 Arg2:T50	
+R21	Setting Arg1:E3 Arg2:T55	
+R22	Meronym Arg1:T57 Arg2:T58	
+R23	Meronym Arg1:T57 Arg2:T59	
+R24	Setting Arg1:E4 Arg2:T64	
+R25	Meronym Arg1:T76 Arg2:T77	
+R26	Meronym Arg1:T76 Arg2:T75	
+R27	Meronym Arg1:T78 Arg2:T79	
+R28	Mod-Link Arg1:E8 Arg2:T91	
+R29	Or Arg1:T97 Arg2:T98	
+R30	Measure Arg1:T102 Arg2:T101	
+R31	Measure Arg1:T114 Arg2:T113	
+R32	Mod-Link Arg1:T113 Arg2:T112	
+R33	Measure Arg1:T116 Arg2:T115	
+R34	Measure Arg1:T118 Arg2:T117	
+R35	Meronym Arg1:T116 Arg2:T114	
+R36	Meronym Arg1:T118 Arg2:T114	
+R37	Measure Arg1:T125 Arg2:T126	
+R38	Measure Arg1:T133 Arg2:T132	
+R39	Measure Arg1:T142 Arg2:T141	
+R40	Meronym Arg1:T133 Arg2:T130	
+R41	Meronym Arg1:T134 Arg2:T130	
+R42	Meronym Arg1:T135 Arg2:T130	
+R43	Meronym Arg1:T136 Arg2:T130	
+R44	Meronym Arg1:T137 Arg2:T130	
+R45	Meronym Arg1:T138 Arg2:T130	
+R46	Meronym Arg1:T142 Arg2:T139	
+R47	Meronym Arg1:T143 Arg2:T139	
+R48	Meronym Arg1:T144 Arg2:T139	
+R49	Meronym Arg1:T145 Arg2:T139	
+R50	Meronym Arg1:T146 Arg2:T139	
+R51	Meronym Arg1:T147 Arg2:T139	
+T166	Modifier 858 865	Working
+R52	Mod-Link Arg1:T57 Arg2:T166	
+R53	Acts-on Arg1:E4 Arg2:T57	
+R54	Mod-Link Arg1:T66 Arg2:T65	
+R55	Using Arg1:T71 Arg2:T72	
+R56	Using Arg1:T71 Arg2:T73	
+R57	Coreference-Link Arg1:T71 Arg2:T70	
+R58	Using Arg1:T70 Arg2:T72	
+R59	Using Arg1:T70 Arg2:T73	
+T60	Action 1150 1157	include
+E20	Action:T60 
+R60	Site Arg1:E20 Arg2:T74	
+R61	Acts-on Arg1:E20 Arg2:T75	
+R62	Acts-on Arg1:E20 Arg2:T78	
+R63	Using Arg1:T81 Arg2:T82	
+R64	Using Arg1:T81 Arg2:T83	
+R65	Using Arg1:T103 Arg2:T104	
+T61	Modifier 1854 1860	enough
+R66	Mod-Link Arg1:T124 Arg2:T61	

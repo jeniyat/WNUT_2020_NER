@@ -1,0 +1,395 @@
+T1	Modifier 0 11	Adult mouse
+T2	Reagent 12 18	kidney
+T3	Method 19 31	dissociation
+R1	Mod-Link Arg1:T2 Arg2:T1	
+T4	Temperature 33 39	on ice
+T6	Reagent 51 57	kidney
+T7	Modifier 61 69	ice-cold
+T8	Reagent 70 73	PBS
+R2	Mod-Link Arg1:T8 Arg2:T7	
+T9	Device 81 92	razor blade
+T10	Action 94 99	mince
+E2	Action:T10 Using:T9 Acts-on:T15 Site:T13 Product:T239
+T11	Time 112 117	2 min
+T12	Modifier 124 128	fine
+T13	Location 138 148	petri dish
+T14	Temperature 149 155	on ice
+T15	Reagent 100 106	biopsy
+R3	Setting Arg1:E2 Arg2:T11	
+R5	Setting Arg1:E2 Arg2:T14	
+T16	Action 157 166	Weigh out
+E3	Action:T16 Acts-on:T19 Site:T20
+T17	Amount 167 172	18 mg
+T18	Modifier 176 182	minced
+T19	Reagent 183 189	kidney
+T20	Location 195 205	petri dish
+R6	Mod-Link Arg1:T19 Arg2:T18	
+R7	Measure Arg1:T19 Arg2:T17	
+T21	Action 207 215	Transfer
+E4	Action:T21 Site:T23
+T22	Size 219 225	1.5 mL
+T23	Location 226 230	tube
+T24	Amount 236 240	1 mL
+T25	Reagent 244 266	collagenase enzyme mix
+T26	Temperature 267 273	on ice
+R8	Measure Arg1:T23 Arg2:T22	
+R9	Measure Arg1:T25 Arg2:T24	
+R10	Setting Arg1:E4 Arg2:T26	
+T27	Action 275 283	Incubate
+E5	Action:T27 
+T28	Time 288 294	20 min
+T29	Temperature 295 301	on ice
+R11	Setting Arg1:E5 Arg2:T28	
+R12	Setting Arg1:E5 Arg2:T29	
+T30	Action 303 308	Shake
+E6	Action:T30 Acts-on:T31
+T31	Location 309 313	tube
+T32	Modifier 314 319	every
+T33	Time 320 326	30 sec
+R13	Mod-Link Arg1:T33 Arg2:T32	
+R14	Setting Arg1:E6 Arg2:T33	
+T34	Action 328 337	Triturate
+E7	Action:T34 Count:T35 Using:T39
+T35	Numerical 338 341	10x
+T36	Modifier 342 347	every
+T37	Time 365 370	2 min
+T38	Action 353 361	starting
+E8	Action:T38 
+R15	Setting Arg1:E8 Arg2:T37	
+T39	Device 379 384	p1000
+T40	Amount 392 398	700 µL
+T41	Modifier 409 414	first
+T42	Method 415 425	trituation
+T43	Action 426 433	cut off
+E9	Action:T43 Acts-on:T44 Using:T46
+T44	Location 438 441	end
+T45	Device 449 458	pipet tip
+T46	Device 464 475	razor blade
+R16	Meronym Arg1:T44 Arg2:T45	
+T47	Time 348 351	min
+R17	Setting Arg1:E7 Arg2:T47	
+R18	Mod-Link Arg1:T47 Arg2:T36	
+R19	Setting Arg1:T39 Arg2:T40	
+T48	Modifier 477 482	After
+T49	Time 483 489	20 min
+T50	Reagent 495 508	tissue chunks
+T51	Action 509 515	settle
+E10	Action:T51 Acts-on:T50
+T52	Temperature 516 522	on ice
+T53	Time 523 528	1 min
+R20	Setting Arg1:E10 Arg2:T49	
+R21	Mod-Link Arg1:T49 Arg2:T48	
+R22	Setting Arg1:E10 Arg2:T52	
+R23	Setting Arg1:E10 Arg2:T53	
+T54	Action 530 534	Spin
+E11	Action:T54 Acts-on:T55
+T55	Location 535 539	tube
+T56	Speed 540 544	70 g
+T57	Time 549 555	30 sec
+T58	Temperature 559 563	4 ºC
+T60	Reagent 577 586	glomeruli
+T61	Reagent 591 598	tubules
+T59	Action 567 576	spin down
+E12	Action:T59 Acts-on:T60 Acts-on2:T61
+R24	Setting Arg1:E11 Arg2:T56	
+R25	Setting Arg1:E11 Arg2:T57	
+R26	Setting Arg1:E11 Arg2:T58	
+T62	Action 600 606	Remove
+E13	Action:T62 Acts-on:T64
+T63	Amount 607 610	60%
+T64	Reagent 614 625	supernatant
+T66	Modifier 641 649	released
+T67	Reagent 650 655	cells
+T68	Action 661 666	apply
+E15	Action:T68 Site:T70
+T69	Concentration 670 675	40 µM
+T70	Device 676 682	filter
+T71	Size 686 691	50 mL
+T72	Location 692 699	conical
+R27	Measure Arg1:T72 Arg2:T71	
+R28	Measure Arg1:T70 Arg2:T69	
+R29	Measure Arg1:T64 Arg2:T63	
+R30	Mod-Link Arg1:T67 Arg2:T66	
+T73	Action 701 706	Rinse
+E16	Action:T73 Acts-on:T74 Using:T77
+T74	Device 707 713	filter
+T75	Amount 719 723	6 mL
+T76	Modifier 724 732	ice-cold
+T77	Reagent 733 740	PBS/BSA
+T78	Concentration 741 747	0.04%.
+R31	Mod-Link Arg1:T77 Arg2:T76	
+R32	Measure Arg1:T77 Arg2:T75	
+R33	Measure Arg1:T77 Arg2:T78	
+T79	Action 748 751	Add
+E17	Action:T79 Acts-on:T81 Site:T82
+T80	Amount 752 756	1 mL
+T81	Reagent 757 760	PBS
+T82	Location 764 768	tube
+T84	Modifier 780 789	remaining
+T85	Reagent 790 800	enzyme mix
+T86	Reagent 806 819	tissue chunks
+R34	Mod-Link Arg1:T85 Arg2:T84	
+R35	Measure Arg1:T81 Arg2:T80	
+T87	Action 821 830	Triturate
+E19	Action:T87 Count:T88
+T88	Numerical 831 834	10X
+T89	Action 836 841	Apply
+E20	Action:T89 Using:T91 Using2:T93
+T90	Concentration 845 851	100 µM
+T91	Device 852 858	filter
+T92	Size 862 867	50 mL
+T93	Location 868 875	conical
+R36	Measure Arg1:T91 Arg2:T90	
+R37	Measure Arg1:T93 Arg2:T92	
+T94	Action 877 882	Rinse
+E21	Action:T94 Acts-on:T95 Using:T97
+T95	Device 883 889	filter
+T96	Amount 892 897	10 mL
+T97	Reagent 898 901	PBS
+R38	Measure Arg1:T97 Arg2:T96	
+T98	Action 913 920	removes
+E22	Action:T98 Acts-on:T100
+T99	Modifier 921 929	residual
+T100	Reagent 930 943	tissue chunks
+T101	Action 950 956	saving
+E23	Action:T101 Acts-on:T102 Acts-on2:T103 Site:T104
+T102	Reagent 957 966	glomeruli
+T103	Reagent 971 978	tubules
+T104	Reagent 986 998	flow-through
+R39	Mod-Link Arg1:T100 Arg2:T99	
+T105	Action 1000 1008	Transfer
+E24	Action:T105 Acts-on:T106 Site:T108
+T106	Reagent 1009 1021	flow-through
+T107	Amount 1025 1030	15 mL
+T108	Location 1031 1038	conical
+R40	Measure Arg1:T108 Arg2:T107	
+T109	Action 1040 1044	Spin
+E25	Action:T109 
+T110	Speed 1045 1050	300 g
+T111	Time 1055 1067	five minutes
+T112	Action 1071 1077	pellet
+E26	Action:T112 Acts-on:T113
+T113	Reagent 1078 1090	flow-through
+T115	Reagent 1106 1115	glomeruli
+T116	Reagent 1120 1127	tubules
+R41	Setting Arg1:E25 Arg2:T110	
+R42	Setting Arg1:E25 Arg2:T111	
+T117	Action 1129 1135	Remove
+E28	Action:T117 Acts-on:T118
+T118	Reagent 1136 1147	supernatant
+T120	Action 1148 1151	Add
+E29	Action:T120 Acts-on:T122
+T121	Amount 1152 1156	1 mL
+T122	Reagent 1157 1159	b.
+T123	Reagent 1160 1175	lich enzyme mix
+T124	Location 1179 1183	tube
+T126	Reagent 1199 1211	flow-through
+T127	Concentration 1221 1227	100 µM
+T128	Device 1228 1234	filter
+T130	Reagent 1258 1265	tubules
+T131	Reagent 1270 1279	glomeruli
+R44	Measure Arg1:T122 Arg2:T121	
+T132	Modifier 1212 1216	from
+R45	Mod-Link Arg1:T126 Arg2:T132	
+R46	Measure Arg1:T128 Arg2:T127	
+T133	Action 1282 1291	Triturate
+E31	Action:T133 Count:T134
+T134	Numerical 1292 1295	10x
+T135	Action 1297 1305	Transfer
+E32	Action:T135 Site:T137
+T136	Size 1309 1315	1.5 mL
+T137	Location 1316 1320	tube
+R47	Measure Arg1:T137 Arg2:T136	
+T138	Time 1326 1332	15 min
+T139	Modifier 1333 1343	additional
+T140	Measure-Type 1344 1348	time
+T141	Time 1350 1356	35 min
+T142	Modifier 1357 1362	total
+T143	Method 1363 1372	digestion
+T144	Action 1374 1379	shake
+E33	Action:T144 Site:T145
+R49	Setting Arg1:E33 Arg2:T138	
+T145	Device 1383 1394	thermomixer
+T146	Speed 1398 1406	1400 RPM
+T147	Temperature 1410 1414	4 °C
+R50	Setting Arg1:E33 Arg2:T146	
+R51	Setting Arg1:E33 Arg2:T147	
+T148	Modifier 1416 1431	Halfway through
+T149	Action 1433 1437	stop
+E34	Action:T149 
+R52	Mod-Link Arg1:E34 Arg2:T148	
+T150	Action 1442 1449	passage
+E35	Action:T150 Using:T153
+T151	Numerical 1450 1452	5X
+T152	Generic-Measure 1455 1463	27 gauge
+T153	Device 1464 1470	needle
+R53	Measure Arg1:T153 Arg2:T152	
+T154	Action 1474 1487	help break up
+E36	Action:T154 Acts-on:T155 Acts-on2:T156 Using:T153
+T155	Reagent 1488 1495	tubules
+T156	Reagent 1500 1509	glomeruli
+T157	Action 1511 1520	Triturate
+E37	Action:T157 Count:T159 Acts-on:T158
+T158	Reagent 1521 1531	digest mix
+T159	Numerical 1532 1535	10X
+T160	Action 1540 1548	transfer
+E38	Action:T160 Site:T163
+T161	Modifier 1556 1560	same
+T162	Concentration 1561 1566	40 µM
+T163	Device 1567 1573	filter
+T164	Size 1577 1582	50 mL
+T165	Location 1583 1590	conical
+R54	Measure Arg1:T165 Arg2:T164	
+R55	Measure Arg1:T163 Arg2:T162	
+R56	Mod-Link Arg1:T163 Arg2:T161	
+T166	Action 1592 1597	Rinse
+E39	Action:T166 Using:T169
+T167	Amount 1600 1604	6 mL
+T168	Modifier 1605 1613	ice-cold
+T169	Reagent 1614 1621	PBS/BSA
+T170	Concentration 1622 1627	0.04%
+R57	Measure Arg1:T169 Arg2:T170	
+R58	Mod-Link Arg1:T169 Arg2:T168	
+R59	Measure Arg1:T169 Arg2:T167	
+T171	Action 1629 1637	Transfer
+E40	Action:T171 Acts-on:T172 Site:T175
+T172	Reagent 1638 1650	flow-through
+T174	Size 1677 1682	15 mL
+T175	Location 1683 1690	conical
+R60	Measure Arg1:T175 Arg2:T174	
+T176	Action 1692 1696	Spin
+E41	Action:T176 Acts-on:T177
+T177	Location 1701 1705	tube
+T178	Modifier 1711 1719	released
+T179	Reagent 1720 1725	cells
+T180	Speed 1726 1731	300 g
+T181	Time 1736 1741	5 min
+T182	Temperature 1745 1749	4 °C
+R61	Mod-Link Arg1:T179 Arg2:T178	
+R62	Setting Arg1:E41 Arg2:T180	
+R63	Setting Arg1:E41 Arg2:T181	
+R64	Setting Arg1:E41 Arg2:T182	
+T183	Action 1751 1757	Remove
+E42	Action:T183 Acts-on:T184
+T184	Reagent 1758 1769	supernatant
+T185	Action 1771 1776	leave
+E43	Action:T185 
+T186	Amount 1778 1784	100 µL
+R65	Setting Arg1:E43 Arg2:T186	
+T187	Action 1787 1790	Add
+E44	Action:T187 Acts-on:T189 Site:T191
+T188	Amount 1791 1797	900 µL
+T189	Reagent 1801 1816	RBC lysis buffe
+T190	Size 1825 1830	15 mL
+T191	Location 1831 1838	conical
+T193	Reagent 1854 1859	cells
+R66	Measure Arg1:T191 Arg2:T190	
+R67	Measure Arg1:T189 Arg2:T188	
+T194	Action 1861 1870	Triturate
+E46	Action:T194 Count:T195 Using:T197
+T195	Numerical 1871 1874	10X
+T196	Size 1881 1885	1 mL
+T197	Device 1886 1891	pipet
+R68	Measure Arg1:T197 Arg2:T196	
+T198	Action 1893 1900	Let sit
+E47	Action:T198 
+T199	Time 1901 1908	two min
+T200	Temperature 1909 1915	on ice
+R69	Setting Arg1:E47 Arg2:T199	
+R70	Setting Arg1:E47 Arg2:T200	
+T201	Action 1917 1920	Add
+E48	Action:T201 Acts-on:T204
+T202	Amount 1921 1926	10 mL
+T203	Modifier 1927 1935	ice-cold
+T204	Reagent 1936 1943	PBS/BSA
+T205	Concentration 1944 1949	0.04%
+T206	Action 1953 1959	dilute
+E49	Action:T206 Acts-on:T207
+T207	Reagent 1960 1976	RBC lysis buffer
+R71	Measure Arg1:T204 Arg2:T205	
+R72	Mod-Link Arg1:T204 Arg2:T203	
+R73	Measure Arg1:T204 Arg2:T202	
+T208	Action 1978 1982	Spin
+E50	Action:T208 
+T209	Speed 1983 1988	300 g
+T210	Time 1993 1998	5 min
+T211	Temperature 2002 2006	4 °C
+R74	Setting Arg1:E50 Arg2:T209	
+R75	Setting Arg1:E50 Arg2:T210	
+R76	Setting Arg1:E50 Arg2:T211	
+T212	Action 2008 2014	Remove
+E51	Action:T212 Acts-on:T213
+T213	Reagent 2015 2026	supernatant
+T214	Action 2031 2041	re-suspend
+E52	Action:T214 Site:T217 Acts-on:T213
+T215	Amount 2045 2055	100-200 µL
+T216	Modifier 2056 2064	ice-cold
+T217	Reagent 2065 2072	PBS/BSA
+T218	Concentration 2073 2078	0.04%
+R77	Mod-Link Arg1:T217 Arg2:T216	
+R78	Measure Arg1:T217 Arg2:T218	
+R79	Measure Arg1:T217 Arg2:T215	
+T219	Action 2080 2085	Check
+E53	Action:T219 Measure-Type-Link:T220 Measure-Type-Link2:T221 Using:T222 Using2:T223
+T220	Measure-Type 2086 2095	viability
+T221	Measure-Type 2100 2113	concentration
+T222	Device 2120 2133	hemocytometer
+T223	Reagent 2139 2150	trypan blue
+T225	Measure-Type 2178 2179	%
+T226	Modifier 2183 2189	viable
+T227	Reagent 2190 2195	cells
+T228	Method 2218 2227	procedure
+T229	Action 2236 2243	perform
+E54	Action:T229 Using:T231
+T230	Method 2244 2261	dead cell removal
+T231	Device 2272 2301	EasySep dead cell removal kit
+T232	Action 2165 2173	increase
+E55	Action:T232 Acts-on:T227 Measure-Type-Link:T225
+R80	Mod-Link Arg1:T227 Arg2:T226	
+T233	Action 2348 2354	Adjust
+E56	Action:T233 Measure-Type-Link:T234
+T234	Measure-Type 2355 2368	concentration
+T235	Concentration 2372 2384	100 cells/µL
+T236	Device 2389 2396	DropSeq
+T237	Concentration 2400 2414	1,000 cells/µL
+T119	Device 2419 2427	Chromium
+R81	Setting Arg1:E56 Arg2:T235	
+R82	Setting Arg1:E56 Arg2:T237	
+R83	Setting Arg1:T3 Arg2:T4	
+R84	Acts-on Arg1:T3 Arg2:T2	
+T5	Action 41 50	Transport
+E1	Action:T5 
+R85	Acts-on Arg1:E1 Arg2:T6	
+R86	Using Arg1:E1 Arg2:T8	
+T238	Modifier 111 112	~
+R87	Mod-Link Arg1:T11 Arg2:T238	
+T239	Reagent 129 134	paste
+R4	Mod-Link Arg1:T239 Arg2:T12	
+R88	Mod-Link Arg1:T42 Arg2:T41	
+R89	Meronym Arg1:T67 Arg2:T64	
+R90	Meronym Arg1:T70 Arg2:T72	
+R91	Acts-on Arg1:E15 Arg2:T64	
+R92	Meronym Arg1:T85 Arg2:T82	
+R93	Meronym Arg1:T86 Arg2:T82	
+R94	Meronym Arg1:T115 Arg2:T113	
+R95	Meronym Arg1:T116 Arg2:T113	
+R96	Meronym Arg1:T126 Arg2:T124	
+T65	Action 1246 1254	enriched
+E14	Action:T65 Product:T126
+R43	Using Arg1:E14 Arg2:T130	
+R97	Using Arg1:E14 Arg2:T131	
+R98	Mod-Link Arg1:T140 Arg2:T139	
+R99	Mod-Link Arg1:T143 Arg2:T142	
+R48	Setting Arg1:T143 Arg2:T141	
+R100	Count Arg1:E35 Arg2:T151	
+R101	Acts-on Arg1:E38 Arg2:T158	
+R102	Meronym Arg1:T163 Arg2:T165	
+R103	Meronym Arg1:T179 Arg2:T177	
+R104	Acts-on Arg1:E43 Arg2:T184	
+R105	Meronym Arg1:T193 Arg2:T191	
+R106	Acts-on Arg1:E54 Arg2:T230	
+R107	Of-Type Arg1:T235 Arg2:T234	
+R108	Setting Arg1:T236 Arg2:T235	
+R109	Setting Arg1:T119 Arg2:T237	
+T83	Modifier 1777 1778	~
+R110	Mod-Link Arg1:T186 Arg2:T83	

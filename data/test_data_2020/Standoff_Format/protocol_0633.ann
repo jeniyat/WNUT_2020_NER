@@ -1,0 +1,26 @@
+T1	Action 55 62	Prepare
+E1	Action:T1 Product:T4
+T2	Amount 65 70	20 μl
+T3	Action 93 101	Incubate
+E2	Action:T3 
+T4	Reagent 71 79	reaction
+T5	Temperature 105 109	37°C
+T6	Time 114 124	30 minutes
+T7	Action 126 130	Stop
+E3	Action:T7 Acts-on:T8 Using:T9
+T8	Reagent 131 139	reaction
+T9	Method 143 160	heat-inactivation
+T10	Temperature 164 168	65°C
+T11	Time 173 182	5 minutes
+R1	Measure Arg1:T4 Arg2:T2	
+R3	Setting Arg1:E2 Arg2:T5	
+R4	Setting Arg1:E2 Arg2:T6	
+R5	Setting Arg1:E3 Arg2:T10	
+R6	Setting Arg1:E3 Arg2:T11	
+T12	Method 0 17	Dephosphorylation
+T13	Reagent 32 35	DNA
+T14	Reagent 42 46	rSAP
+T15	Size 21 23	5´
+T16	Location 24 28	ends
+R7	Measure Arg1:T13 Arg2:T15	
+R8	Meronym Arg1:T13 Arg2:T16	

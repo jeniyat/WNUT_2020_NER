@@ -1,0 +1,422 @@
+T1	Modifier 0 4	High
+T2	Measure-Type 5 21	molecular weight
+T3	Reagent 22 25	DNA
+T4	Method 26 36	extraction
+T5	Action 57 64	Prepare
+E1	Action:T5 Acts-on:T6 Acts-on2:T7 Acts-on3:T8
+T6	Reagent 65 82	extraction buffer
+T7	Reagent 84 98	nuclear buffer
+T8	Reagent 103 112	TE buffer
+T9	Action 116 120	cool
+E2	Action:T9 
+T10	Mention 121 123	it
+T11	Temperature 132 136	4 °C
+R1	Setting Arg1:E2 Arg2:T11	
+T12	Action 138 145	Harvest
+E3	Action:T12 Acts-on:T15
+T13	Amount 146 150	50 g
+T14	Modifier 154 159	young
+T15	Reagent 160 166	leaves
+T16	Amount 172 175	1 L
+T17	Modifier 176 184	ice cold
+T18	Reagent 185 194	TE buffer
+R2	Mod-Link Arg1:T18 Arg2:T17	
+T19	pH 196 200	pH 7
+R3	Measure Arg1:T18 Arg2:T19	
+R4	Measure Arg1:T18 Arg2:T16	
+R5	Mod-Link Arg1:T15 Arg2:T14	
+R6	Measure Arg1:T15 Arg2:T13	
+T20	Action 203 211	Transfer
+E4	Action:T20 Acts-on:T21 Site:T23
+T21	Reagent 212 218	leaves
+T22	Modifier 224 235	pre-chilled
+T23	Device 236 250	Waring blender
+T24	Action 255 258	add
+E5	Action:T24 Acts-on:T26
+T25	Amount 259 265	600 mL
+T26	Reagent 266 279	lysis buffer 
+T27	Action 295 306	carried out
+E6	Action:T27 
+T28	Temperature 310 314	4 °C
+R7	Setting Arg1:E6 Arg2:T28	
+R8	Measure Arg1:T26 Arg2:T25	
+R9	Mod-Link Arg1:T23 Arg2:T22	
+T29	Action 333 343	Homogenise
+E7	Action:T29 Using:T31
+T30	Time 347 351	15 s
+T31	Method 352 358	bursts
+T32	Time 374 388	1 min and 15 s
+T34	Modifier 443 450	shorter
+T35	Measure-Type 451 456	times
+T36	Action 463 467	lead
+E9	Action:T36 Acts-on:T38
+T37	Modifier 471 480	more full
+T38	Reagent 481 487	nuclei
+R10	Mod-Link Arg1:T38 Arg2:T37	
+T39	Measure-Type 405 410	times
+T40	Method 392 404	homogenising
+R11	Setting Arg1:E7 Arg2:T30	
+R12	Setting Arg1:E7 Arg2:T32	
+T41	Reagent 427 441	plant material
+T42	Modifier 492 497	lower
+T43	Action 506 514	Transfer
+E10	Action:T43 Acts-on:T44 Site:T45
+T44	Reagent 515 529	plant material
+T45	Device 533 542	Miracloth
+T46	Device 544 562	filtrationmaterial
+T47	Reagent 567 578	homogenates
+T48	Action 584 591	squeeze
+E11	Action:T48 Site:T45
+T49	Modifier 613 620	further
+T50	Action 621 635	gravity filter
+E12	Action:T50 Using:T52
+T51	Numerical 644 645	8
+T52	Device 656 665	Miracloth
+T53	Numerical 600 601	4
+R13	Mod-Link Arg1:E12 Arg2:T49	
+T54	Action 667 670	Add
+E13	Action:T54 Acts-on:T57 Site:T58
+T55	Concentration 671 674	10%
+T56	Measure-Type 676 679	v/v
+T57	Reagent 681 693	Triton X-100
+T58	Reagent 701 711	homogenate
+T59	Modifier 717 722	final
+T60	Measure-Type 723 736	concentration
+T61	Concentration 740 744	0.5%
+T62	Measure-Type 746 749	v/v
+R16	Measure Arg1:T58 Arg2:T61	
+R18	Measure Arg1:T57 Arg2:T55	
+T63	Action 752 760	Incubate
+E14	Action:T63 Acts-on:T64 Using:T65 Using2:T67
+T64	Reagent 761 768	mixture
+T65	Location 775 783	ice bath
+T66	Modifier 789 795	gentle
+T67	Method 796 803	rocking
+T68	Time 808 814	30 min
+R19	Setting Arg1:E14 Arg2:T68	
+T69	Action 816 823	Discard
+E15	Action:T69 Acts-on:T70
+T70	Reagent 824 835	supernatant
+T71	Modifier 837 843	Gently
+T72	Action 844 853	resuspend
+E16	Action:T72 Acts-on:T73 Using:T74
+T73	Reagent 858 864	pellet
+T74	Device 880 894	painters brush
+T75	Modifier 896 904	not used
+T76	Modifier 918 928	sterilised
+T78	Modifier 948 960	freshly made
+T79	Modifier 961 972	pre-chilled
+T80	Reagent 973 987	nuclear buffer
+R20	Mod-Link Arg1:T80 Arg2:T79	
+R21	Mod-Link Arg1:T80 Arg2:T78	
+R23	Mod-Link Arg1:T74 Arg2:T76	
+R24	Mod-Link Arg1:T74 Arg2:T75	
+R25	Mod-Link Arg1:E16 Arg2:T71	
+T81	Action 989 992	Add
+E17	Action:T81 Acts-on:T83
+T82	Modifier 993 1003	sufficient
+T83	Reagent 1004 1018	nuclear buffer
+T84	Action 1022 1027	bring
+E18	Action:T84 
+T85	Measure-Type 1032 1038	volume
+T86	Amount 1045 1050	10 mL
+R27	Mod-Link Arg1:T83 Arg2:T82	
+T87	Action 1052 1062	Centrifuge
+E19	Action:T87 
+T88	Speed 1066 1071	600 g
+T89	Temperature 1076 1080	4 °C
+T90	Time 1085 1095	20 minutes
+R28	Setting Arg1:E19 Arg2:T88	
+R29	Setting Arg1:E19 Arg2:T89	
+R30	Setting Arg1:E19 Arg2:T90	
+T92	Method 1104 1117	washing steps
+T93	Numerical 1123 1128	twice
+T94	Reagent 1145 1151	pellet
+T95	Modifier 1160 1170	grey-white
+R31	Mod-Link Arg1:T94 Arg2:T95	
+T98	Modifier 1216 1222	Gently
+T99	Action 1223 1232	resuspend
+E21	Action:T99 Acts-on:T100 Using:T101
+T100	Reagent 1237 1243	pellet
+T101	Device 1252 1257	brush
+T103	Reagent 1268 1282	nuclear buffer
+T104	Action 1287 1290	add
+E22	Action:T104 Acts-on:T106
+T105	Modifier 1291 1300	sufficent
+T106	Reagent 1301 1315	nuclear buffer
+T107	Action 1319 1324	bring
+E23	Action:T107 
+T108	Measure-Type 1325 1331	volume
+T109	Amount 1338 1342	5 mL
+R33	Mod-Link Arg1:E21 Arg2:T98	
+R35	Mod-Link Arg1:T106 Arg2:T105	
+T110	Action 1344 1352	Incubate
+E24	Action:T110 
+T111	Temperature 1356 1361	60 °C
+T112	Time 1366 1373	10 mins
+T113	Action 1387 1391	cool
+E25	Action:T113 Site:T114
+T114	Location 1400 1405	bench
+T115	Temperature 1409 1411	RT
+R37	Setting Arg1:E25 Arg2:T115	
+R38	Setting Arg1:E24 Arg2:T111	
+R39	Setting Arg1:E24 Arg2:T112	
+T116	Action 1413 1416	Add
+E26	Action:T116 Acts-on:T118
+T117	Concentration 1417 1420	5 M
+T118	Reagent 1421 1439	sodium perchlorate
+T119	Modifier 1445 1450	final
+T120	Measure-Type 1451 1464	concentration
+T121	Concentration 1468 1471	1 M
+R40	Measure Arg1:T118 Arg2:T117	
+T122	Action 1473 1476	Add
+E27	Action:T122 Acts-on:T125 Site:T127
+T123	Modifier 1480 1485	equal
+T124	Measure-Type 1486 1492	volume
+T125	Reagent 1496 1528	phenol/chloroform/isoamylalcohol
+T126	Concentration 1530 1537	25:24:1
+T127	Location 1546 1550	tube
+R44	Measure Arg1:T125 Arg2:T126	
+T128	Action 1552 1555	Mix
+E28	Action:T128 Using:T129
+T129	Device 1561 1566	rotor
+T130	Time 1571 1578	10 mins
+R45	Setting Arg1:E28 Arg2:T130	
+T131	Action 1580 1590	Centrifuge
+E29	Action:T131 
+T132	Speed 1594 1600	3000 g
+T133	Temperature 1605 1610	22 oC
+T134	Time 1615 1622	10 mins
+R46	Setting Arg1:E29 Arg2:T132	
+R47	Setting Arg1:E29 Arg2:T133	
+R48	Setting Arg1:E29 Arg2:T134	
+T135	Action 1624 1632	Transfer
+E30	Action:T135 Acts-on:T137 Site:T139
+T136	Modifier 1637 1642	upper
+T137	Reagent 1643 1648	phase
+T138	Modifier 1654 1657	new
+T139	Location 1658 1662	tube
+T140	Action 1667 1674	discard
+E31	Action:T140 Acts-on:T142
+T141	Modifier 1675 1680	lower
+T142	Reagent 1681 1686	phase
+R49	Mod-Link Arg1:T137 Arg2:T136	
+R50	Mod-Link Arg1:T139 Arg2:T138	
+R51	Mod-Link Arg1:T142 Arg2:T141	
+T143	Action 1687 1693	Repeat
+E32	Action:T143 
+T144	Action 1707 1713	Repeat
+E33	Action:T144 Count:T145 Using:T146
+T145	Numerical 1726 1731	twice
+T146	Reagent 1752 1776	chlorofom/isoamylalcohol
+T147	Concentration 1778 1782	24:1
+T149	Action 1785 1796	Precipitate
+E34	Action:T149 Acts-on:T150
+T150	Reagent 1797 1800	DNA
+T151	Action 1804 1810	adding
+E35	Action:T151 Acts-on:T155
+T152	Numerical 1811 1813	2x
+T153	Measure-Type 1814 1820	volume
+T154	Modifier 1824 1832	ice cold
+T155	Reagent 1833 1840	ethanol
+T156	Modifier 1845 1851	gently
+T157	Action 1852 1858	invert
+E36	Action:T157 
+T158	Numerical 1859 1872	several times
+R54	Mod-Link Arg1:E36 Arg2:T156	
+R55	Count Arg1:E36 Arg2:T158	
+R56	Mod-Link Arg1:T155 Arg2:T154	
+R57	Measure Arg1:T155 Arg2:T152	
+T159	Action 1874 1882	Transfer
+E37	Action:T159 Acts-on:T160 Site:T162
+T160	Reagent 1887 1893	pellet
+T161	Size 1900 1906	1.5 mL
+T162	Location 1907 1921	Eppendorf tube
+T163	Reagent 1936 1943	Ethanol
+T164	Action 1947 1957	evaporate 
+E38	Action:T164 Acts-on:T163
+T165	Modifier 1961 1967	approx
+R58	Measure Arg1:T162 Arg2:T161	
+T166	Time 1969 1975	5 mins
+T167	Measure-Type 1992 1996	size
+T168	Reagent 2004 2010	pellet
+T169	Reagent 2023 2029	pellet
+T170	Action 2030 2039	dries out
+E39	Action:T170 Acts-on:T169
+T171	Modifier 2040 2050	completely
+T172	Modifier 2063 2072	difficult
+T173	Action 2076 2084	dissolve
+E40	Action:T173 Acts-on:T174
+T174	Reagent 2089 2092	DNA
+T175	Modifier 2093 2098	again
+R59	Mod-Link Arg1:E40 Arg2:T172	
+R60	Mod-Link Arg1:E40 Arg2:T175	
+R61	Mod-Link Arg1:E39 Arg2:T171	
+T176	Action 2101 2109	Meassure
+E41	Action:T176 Measure-Type-Link:T178 Acts-on:T177 Using:T179
+T177	Reagent 2110 2115	dsDNA
+T178	Measure-Type 2116 2129	concentration
+T179	Device 2136 2141	Qubit
+T180	Action 2146 2154	meassure
+E42	Action:T180 Measure-Type-Link:T181 Using:T182
+T181	Measure-Type 2155 2165	absorbance
+T182	Device 2172 2180	Nanodrop
+T183	Modifier 2198 2202	high
+T184	Measure-Type 2203 2216	concentration
+T185	Concentration 2245 2249	1:10
+T186	Method 2250 2259	dilutions
+T187	Action 2235 2239	make
+E43	Action:T187 Using:T186
+R62	Setting Arg1:E43 Arg2:T185	
+T188	Action 2262 2265	Run
+E44	Action:T188 Acts-on:T190 Using:T192 Using2:T193
+T189	Concentration 2268 2273	0.8 %
+T190	Reagent 2274 2290	TBE Agarose Gel 
+T191	Amount 2295 2301	200 ng
+T192	Reagent 2302 2307	dsDNA
+T193	Reagent 2312 2334	lambda-Hind-III ladder
+R64	Measure Arg1:T190 Arg2:T189	
+R65	Measure Arg1:T192 Arg2:T191	
+T197	Method 2366 2397	Pulse Field Gel Electrophoresis
+T198	Amount 2403 2409	200 ng
+T199	Reagent 2410 2415	dsDNA
+T200	Reagent 2422 2451	MidRange PFG Marker II ladder
+R68	Measure Arg1:T199 Arg2:T198	
+T202	Device 2464 2472	Nanodrop
+T203	Measure-Type 2481 2504	Qubit to Nanodrop ratio
+T204	Numerical 2506 2509	0.7
+T205	Concentration 2511 2516	0.8 %
+T206	Reagent 2517 2532	TBE Agarose Gel
+T208	Reagent 2558 2561	DNA
+T209	Modifier 2579 2583	same
+T210	Method 2584 2594	extraction
+R70	Measure Arg1:T206 Arg2:T205	
+T211	Method 2602 2633	Pulse Field Gel Electrophoresis
+T212	Action 2646 2655	determine
+E46	Action:T212 Measure-Type-Link:T213 Acts-on:T214
+T213	Measure-Type 2660 2679	degeree of shearing
+T214	Reagent 2687 2690	DNA
+T216	Method 2701 2710	vortexing
+T217	Method 2721 2730	pipetting
+T218	Measure-Type 2711 2716	times
+T219	Measure-Type 2731 2736	times
+T221	Modifier 2754 2762	original
+T222	Reagent 2763 2769	sample
+T223	Method 2775 2785	extraction
+T224	Measure-Type 2811 2824	concentration
+T225	Action 2833 2839	repeat
+E48	Action:T225 Acts-on:T226
+T226	Reagent 2844 2847	gel
+T227	Time 2854 2864	10 seconds
+T228	Method 2865 2874	vortexing
+T229	Numerical 2910 2917	5 times
+R71	Mod-Link Arg1:T222 Arg2:T221	
+T231	Time 2880 2884	20 s
+T232	Time 2890 2894	30 s
+T233	Time 2901 2905	60 s
+T234	Numerical 2946 2954	10 times
+T235	Numerical 2960 2968	30 times
+T236	Numerical 2974 2983	60 times 
+T237	Generic-Measure 3018 3024	267 kb
+T239	Modifier 3078 3084	longer
+T240	Reagent 3085 3088	DNA
+R72	Mod-Link Arg1:T240 Arg2:T239	
+T241	Modifier 3089 3097	couldn't
+T242	Action 3098 3103	enter
+E50	Action:T242 Site:T243
+T243	Reagent 3108 3111	gel
+T244	Modifier 3135 3138	red
+T245	Reagent 3139 3153	saturated bits
+T247	Location 3173 3180	pockets
+T248	Reagent 3199 3202	DNA
+T249	Generic-Measure 3211 3219	24-48 kb
+R73	Measure Arg1:T248 Arg2:T249	
+T250	Modifier 3203 3211	between 
+R74	Mod-Link Arg1:T249 Arg2:T250	
+T251	Modifier 3277 3283	longer
+T252	Method 3284 3293	vortexing
+T253	Measure-Type 3294 3299	times
+T254	Modifier 3305 3324	smaller and smaller
+T255	Action 3339 3347	produced
+E51	Action:T255 Acts-on:T256
+T256	Reagent 3325 3334	fragments
+R75	Mod-Link Arg1:T256 Arg2:T254	
+T258	Reagent 3377 3385	fragmets
+T259	Action 3395 3402	sheared
+E52	Action:T259 Acts-on:T258 Using:T260
+T260	Method 3411 3420	pipetting
+T262	Device 3468 3479	pipette tip
+T263	Measure-Type 3480 3484	size
+T264	Measure-Type 3494 3500	length
+T265	Reagent 3504 3513	fragmetns
+T266	Action 3514 3518	fits
+E53	Action:T266 Acts-on:T265
+T267	Device 3528 3540	pipette tips
+T268	Action 3546 3549	cut
+E54	Action:T268 Acts-on:T267
+R77	Mod-Link Arg1:T2 Arg2:T1	
+R78	Acts-on Arg1:T4 Arg2:T3	
+R79	Acts-on Arg1:E2 Arg2:T10	
+R80	Coreference-Link Arg1:T10 Arg2:T8	
+R81	Site Arg1:E3 Arg2:T18	
+T269	Location 327 331	room
+R82	Site Arg1:E6 Arg2:T269	
+R83	Mod-Link Arg1:T35 Arg2:T34	
+T33	Measure-Type 498 503	yield
+R84	Mod-Link Arg1:T33 Arg2:T42	
+R85	Acts-on Arg1:E9 Arg2:T33	
+T270	Location 602 608	layers
+R15	Measure Arg1:T270 Arg2:T53	
+R86	Site Arg1:E11 Arg2:T270	
+T271	Location 646 652	layers
+R87	Measure Arg1:T271 Arg2:T51	
+R14	Mod-Link Arg1:T60 Arg2:T59	
+R88	Of-Type Arg1:T61 Arg2:T60	
+R17	Mod-Link Arg1:T67 Arg2:T66	
+T272	Modifier 873 879	normal
+R89	Mod-Link Arg1:T74 Arg2:T272	
+T77	Action 938 944	soaked
+E8	Action:T77 
+R22	Acts-on Arg1:E8 Arg2:T74	
+R90	Site Arg1:E8 Arg2:T80	
+R26	Of-Type Arg1:T86 Arg2:T85	
+T91	Action 1097 1103	Repeat
+E20	Action:T91 
+R91	Acts-on Arg1:E20 Arg2:T92	
+R92	Count Arg1:E20 Arg2:T93	
+T96	Action 1258 1264	soaked
+E55	Action:T96 
+R32	Acts-on Arg1:E55 Arg2:T101	
+R34	Site Arg1:E55 Arg2:T103	
+R36	Of-Type Arg1:T109 Arg2:T108	
+R93	Mod-Link Arg1:T120 Arg2:T119	
+R42	Of-Type Arg1:T121 Arg2:T120	
+R41	Mod-Link Arg1:T124 Arg2:T123	
+R43	Measure Arg1:T146 Arg2:T147	
+R52	Of-Type Arg1:T152 Arg2:T153	
+R53	Acts-on Arg1:E36 Arg2:T150	
+R94	Mod-Link Arg1:T166 Arg2:T165	
+R95	Setting Arg1:E38 Arg2:T166	
+T97	Action 2360 2363	run
+E45	Action:T97 
+R63	Acts-on Arg1:E45 Arg2:T197	
+R67	Using Arg1:E45 Arg2:T199	
+R96	Using Arg1:E45 Arg2:T200	
+R66	Of-Type Arg1:T204 Arg2:T203	
+R69	Mod-Link Arg1:T210 Arg2:T209	
+T102	Action 2742 2748	tested
+E47	Action:T102 
+R97	Acts-on Arg1:E47 Arg2:T219	
+R98	Acts-on Arg1:E47 Arg2:T218	
+T148	Reagent 2750 2752	G1
+R99	Setting Arg1:T228 Arg2:T227	
+T194	Method 2918 2939	pipetting up and down
+R100	Count Arg1:T194 Arg2:T229	
+R101	Mod-Link Arg1:E50 Arg2:T241	
+R102	Acts-on Arg1:E50 Arg2:T240	
+T195	Action 3160 3165	stuck
+E49	Action:T195 
+R103	Site Arg1:E49 Arg2:T247	
+R104	Acts-on Arg1:E49 Arg2:T245	
+R105	Mod-Link Arg1:T245 Arg2:T244	
+R76	Mod-Link Arg1:T252 Arg2:T251	

@@ -1,0 +1,160 @@
+T1	Method 0 12	Cell culture
+T2	Reagent 16 20	7721
+T3	Reagent 24 34	HeLa cells
+T4	Action 35 42	Prepare
+E1	Action:T4 Acts-on:T5
+T5	Reagent 43 59	RPMI 1640 medium
+T6	Modifier 73 85	supplemented
+T7	Concentration 91 94	10%
+T8	Reagent 95 113	fetal bovine serum
+R1	Measure Arg1:T8 Arg2:T7	
+R2	Mod-Link Arg1:T5 Arg2:T6	
+T9	Concentration 133 135	1%
+T10	Reagent 136 159	penicillin/streptomycin
+R3	Measure Arg1:T10 Arg2:T9	
+T11	Action 174 178	Warm
+E2	Action:T11 Acts-on:T12
+T12	Reagent 179 185	medium
+T13	Temperature 189 192	37℃
+T15	Concentration 203 207	0.1%
+T16	Reagent 208 250	trypsin - ethylenediamine tetraacetic acid
+T17	Reagent 252 256	EDTA
+R4	Coreference-Link Arg1:T17 Arg2:T16	
+T18	Temperature 261 277	room temperature
+R5	Setting Arg1:E2 Arg2:T13	
+T14	Action 197 202	bring
+E3	Action:T14 Acts-on:T16
+R6	Setting Arg1:E3 Arg2:T18	
+R7	Measure Arg1:T16 Arg2:T15	
+T20	Reagent 287 292	cells
+T21	Device 299 309	microscope
+T23	Measure-Type 322 337	cell confluency
+T25	Action 366 378	Aspirate out
+E6	Action:T25 Acts-on:T27
+T26	Modifier 379 384	spent
+T27	Reagent 385 391	medium
+T28	Action 407 412	reach
+E7	Action:T28 Acts-on:T29
+T29	Reagent 401 406	cells
+T30	Modifier 413 426	approximately
+T31	Generic-Measure 427 441	90% confluency
+T32	Action 447 451	wash
+E8	Action:T32 Count:T33 Using:T34
+T33	Numerical 452 457	twice
+T34	Reagent 463 466	PBS
+R8	Setting Arg1:E7 Arg2:T31	
+R9	Mod-Link Arg1:T31 Arg2:T30	
+R10	Mod-Link Arg1:T27 Arg2:T26	
+T35	Action 468 471	Add
+E9	Action:T35 Acts-on:T38 Site:T40
+T36	Amount 472 476	1 ml
+T37	Concentration 477 481	0.1%
+T38	Reagent 482 494	trypsin-EDTA
+T39	Size 498 503	10-cm
+T40	Location 504 516	culture dish
+T41	Action 522 528	ensure
+E10	Action:T41 
+T42	Modifier 533 539	entire
+T43	Location 540 547	surface
+T44	Location 555 559	dish
+T46	Concentration 576 580	0.1%
+T47	Reagent 581 593	trypsin-EDTA
+R11	Measure Arg1:T47 Arg2:T46	
+R12	Meronym Arg1:T43 Arg2:T44	
+R13	Mod-Link Arg1:T43 Arg2:T42	
+R15	Measure Arg1:T38 Arg2:T37	
+R16	Measure Arg1:T38 Arg2:T36	
+R17	Measure Arg1:T40 Arg2:T39	
+T48	Action 595 603	Incubate
+E11	Action:T48 Acts-on:T49
+T49	Reagent 608 613	cells
+T50	Temperature 617 620	37℃
+T51	Time 625 633	2 minute
+R18	Setting Arg1:E11 Arg2:T50	
+R19	Setting Arg1:E11 Arg2:T51	
+T52	Action 635 643	Observe 
+E12	Action:T52 Acts-on:T53 Site:T54
+T53	Reagent 643 648	cells
+T54	Device 659 669	microscope
+T55	Reagent 680 685	cells
+T56	Modifier 696 710	fully detached
+T57	Action 717 729	aspirate out
+E13	Action:T57 Acts-on:T59
+T58	Concentration 734 738	0.1%
+T59	Reagent 739 751	trypsin-EDTA
+R20	Measure Arg1:T59 Arg2:T58	
+R21	Mod-Link Arg1:T55 Arg2:T56	
+T60	Modifier 670 675	until
+R22	Mod-Link Arg1:E12 Arg2:T60	
+T61	Action 753 756	Add
+E14	Action:T61 Acts-on:T63 Site:T64
+T62	Amount 757 761	5 ml
+T63	Reagent 762 768	medium
+T64	Location 776 780	dish
+T65	Modifier 782 788	gently
+T66	Action 789 794	pipet
+E15	Action:T66 Acts-on:T67
+T67	Reagent 799 804	cells
+T68	Action 810 817	harvest
+E16	Action:T68 Acts-on:T69 Using:T70
+T69	Reagent 822 827	cells
+T70	Method 831 845	centrifugation
+T71	Speed 849 858	1,000 rpm
+T72	Time 863 872	5 minutes
+R25	Measure Arg1:T63 Arg2:T62	
+R26	Mod-Link Arg1:E15 Arg2:T65	
+T73	Action 874 886	Aspirate out
+E17	Action:T73 Acts-on:T74
+T74	Reagent 891 897	medium
+T75	Modifier 910 913	not
+T76	Action 914 921	disrupt
+E18	Action:T76 Acts-on:T77
+T77	Reagent 926 937	cell pellet
+R27	Mod-Link Arg1:E18 Arg2:T75	
+T78	Action 939 948	Resuspend
+E19	Action:T78 Acts-on:T79 Site:T81
+T79	Reagent 953 958	cells
+T80	Amount 962 966	2 ml
+T81	Reagent 967 973	medium
+T82	Action 978 983	count
+E20	Action:T82 Using:T83
+T83	Reagent 989 1000	trypan blue
+R28	Measure Arg1:T81 Arg2:T80	
+T84	Action 1002 1006	Seed
+E21	Action:T84 Acts-on:T85 Site:T86
+T85	Reagent 1011 1016	cells
+T86	Location 1020 1034	24-well plates
+T87	Measure-Type 1040 1047	density
+T88	Generic-Measure 1051 1069	1x105 cells/500 μl
+R29	Of-Type Arg1:T88 Arg2:T87	
+R30	Setting Arg1:E21 Arg2:T88	
+T89	Action 1071 1078	Culture
+E22	Action:T89 Acts-on:T90 Using:T92
+T90	Reagent 1079 1084	cells
+T91	Concentration 1091 1093	5%
+T92	Reagent 1094 1097	CO2
+T93	Numerical 1104 1107	95%
+T94	Modifier 1108 1129	humidified atmosphere
+T95	Temperature 1133 1136	37℃
+R31	Measure Arg1:T92 Arg2:T91	
+R32	Setting Arg1:E22 Arg2:T95	
+R33	Mod-Link Arg1:T93 Arg2:T94	
+R34	Setting Arg1:E22 Arg2:T93	
+R35	Or Arg1:T2 Arg2:T3	
+R36	Acts-on Arg1:T1 Arg2:T2	
+R37	Acts-on Arg1:T1 Arg2:T3	
+T19	Action 279 286	Observe
+E4	Action:T19 
+R38	Acts-on Arg1:E4 Arg2:T20	
+R39	Site Arg1:E4 Arg2:T21	
+T22	Action 313 321	evaluate
+E5	Action:T22 Measure-Type-Link:T23 Measure-Type-Link2:T24
+T24	Measure-Type 342 364	presence of cell death
+T45	Action 563 570	covered
+E23	Action:T45 
+R14	Acts-on Arg1:E23 Arg2:T43	
+R40	Using Arg1:E23 Arg2:T47	
+R41	Acts-on Arg1:E10 Arg2:E23	
+R42	Setting Arg1:T70 Arg2:T71	
+R43	Setting Arg1:T70 Arg2:T72	
+R23	Acts-on Arg1:E20 Arg2:T79	

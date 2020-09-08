@@ -1,0 +1,1438 @@
+T1	Action 90 97	Harvest
+E1	Action:T1 Acts-on:T3
+T2	Modifier 98 103	fresh
+T3	Reagent 104 114	culture(s)
+T4	Temperature 118 134	room temperature
+T5	Action 139 144	count
+E2	Action:T5 Acts-on:T6
+T6	Reagent 145 150	cells
+T7	Method 0 7	CUT&RUN
+R1	Mod-Link Arg1:T3 Arg2:T2	
+R2	Setting Arg1:E1 Arg2:T4	
+T8	Numerical 192 199	500,000
+T9	Reagent 200 215	mammalian cells
+T10	Action 256 266	Centrifuge
+E3	Action:T10 
+R3	Measure Arg1:T9 Arg2:T8	
+T11	Time 267 272	3 min
+T12	Speed 273 280	600 x g
+T13	Temperature 284 300	room temperature
+T14	Action 305 313	withdraw
+E4	Action:T14 Acts-on:T15
+T15	Reagent 314 320	liquid
+R4	Setting Arg1:E3 Arg2:T11	
+R5	Setting Arg1:E3 Arg2:T12	
+R6	Setting Arg1:E3 Arg2:T13	
+T16	Method 161 169	protocol
+T17	Modifier 156 160	same
+T18	Action 177 181	used
+E5	Action:T18 
+T19	Action 322 331	Resuspend
+E6	Action:T19 Site:T22 Using:T24
+T20	Amount 335 341	1.5 mL
+T21	Temperature 342 358	room temperature
+T22	Reagent 359 370	Wash buffer
+T23	Modifier 374 380	gently
+T25	Action 395 403	transfer
+E8	Action:T25 Site:T27
+T26	Size 422 426	2 mL
+T27	Location 427 431	tube
+T28	Action 433 439	Repeat
+E9	Action:T28 Count:T29
+T29	Numerical 454 457	two
+R7	Measure Arg1:T22 Arg2:T20	
+R8	Setting Arg1:E6 Arg2:T21	
+R10	Measure Arg1:T27 Arg2:T26	
+T30	Action 470 479	Resuspend
+E10	Action:T30 Site:T33 Using:T35
+T31	Amount 483 487	1 mL
+T32	Temperature 488 504	room temperature
+T33	Reagent 505 516	Wash Buffer
+T34	Modifier 520 526	gently
+T36	Modifier 544 550	gently
+T37	Action 551 560	vortexing
+E12	Action:T37 Acts-on:T38
+T38	Reagent 565 570	cells
+T39	Temperature 574 590	room temperature
+T40	Action 592 595	add
+E13	Action:T40 Acts-on:T41
+T41	Reagent 600 632	ConA-coated magnetic bead slurry
+R12	Measure Arg1:T33 Arg2:T31	
+R13	Mod-Link Arg1:E12 Arg2:T36	
+R14	Setting Arg1:E12 Arg2:T39	
+T42	Action 634 640	Rotate
+E14	Action:T42 
+T43	Time 641 649	5-10 min
+T44	Temperature 653 669	room temperature
+R15	Setting Arg1:E14 Arg2:T43	
+R16	Setting Arg1:E14 Arg2:T44	
+T45	Action 671 674	Mix
+E15	Action:T45 Using:T48
+T46	Modifier 675 679	well
+T47	Modifier 683 691	vigorous
+T48	Method 692 701	inversion
+T49	Reagent 727 732	cells
+T50	Action 768 774	divide
+E16	Action:T50 Site:T58
+T51	Action 840 845	Place
+E17	Action:T51 Site:T52
+T52	Device 853 865	magnet stand
+T53	Action 869 874	clear
+E18	Action:T53 Acts-on:T55
+T54	Action 879 887	pull off
+E19	Action:T54 Acts-on:T55
+T55	Reagent 892 898	liquid
+R17	Mod-Link Arg1:E15 Arg2:T46	
+T56	Amount 780 788	aliquots
+T57	Size 792 798	1.5-mL
+T58	Location 799 804	tubes
+T59	Numerical 806 809	one
+T60	Reagent 819 827	antibody
+R18	Measure Arg1:T58 Arg2:T57	
+T61	Action 900 905	Place
+E20	Action:T61 Acts-on:T62 Site:T64
+T62	Location 911 915	tube
+T63	Speed 964 972	1100 rpm
+T64	Device 938 950	vortex mixer
+R19	Setting Arg1:T64 Arg2:T63	
+T65	Action 978 984	squirt
+E21	Action:T65 Acts-on:T67
+T66	Amount 985 994	50-150 μL
+T67	Reagent 1002 1017	Antibody buffer
+T68	Action 1127 1130	Tap
+E22	Action:T68 
+T69	Modifier 1050 1056	gently
+T70	Action 1057 1066	vortexing
+E23	Action:T70 Acts-on:T71
+R20	Mod-Link Arg1:E23 Arg2:T69	
+T71	Reagent 1080 1088	solution
+T72	Action 1092 1100	dislodge
+E24	Action:T72 Acts-on:T75
+T73	Modifier 1101 1105	most
+T74	Modifier 1109 1112	all
+R21	Or Arg1:T73 Arg2:T74	
+T75	Reagent 1120 1125	beads
+R22	Measure Arg1:T67 Arg2:T66	
+T76	Reagent 1157 1162	beads
+T77	Action 1164 1167	Mix
+E25	Action:T77 Acts-on:T78
+T78	Reagent 1175 1191	primary antibody
+T79	Modifier 1197 1202	final
+T80	Measure-Type 1203 1216	concentration
+T81	Generic-Measure 1220 1225	1:100
+R23	Of-Type Arg1:T81 Arg2:T80	
+T82	Reagent 1281 1299	immunofluorescence
+T83	Measure-Type 1263 1276	concentration
+T84	Action 1301 1306	Place
+E26	Action:T84 Site:T85 Site2:T86
+T85	Device 1312 1319	nutator
+T86	Device 1323 1335	tube rotator
+R24	Or Arg1:T86 Arg2:T85	
+T87	Temperature 1339 1355	room temperature
+T88	Time 1361 1365	2 hr
+T89	Temperature 1372 1376	4 °C
+T90	Time 1377 1386	overnight
+R25	Setting Arg1:E26 Arg2:T87	
+R26	Setting Arg1:E26 Arg2:T88	
+R27	Or Arg1:T87 Arg2:T89	
+R28	Or Arg1:T88 Arg2:T90	
+T91	Action 1388 1394	Remove
+E27	Action:T91 Acts-on:T92 Site:T93 Site2:T103
+T92	Reagent 1395 1401	liquid
+T93	Seal 1411 1414	cap
+T94	Modifier 1431 1436	quick
+T95	Action 1437 1442	pulse
+E28	Action:T95 Site:T96
+T96	Device 1448 1464	micro-centrifuge
+T97	Action 1466 1471	Place
+E29	Action:T97 Site:T98
+T98	Device 1479 1491	magnet stand
+T99	Time 1503 1507	30 s
+T100	Action 1513 1521	pull off
+E30	Action:T100 Acts-on:T102
+T101	Modifier 1522 1525	all
+T102	Reagent 1533 1539	liquid
+R29	Mod-Link Arg1:E28 Arg2:T94	
+T103	Location 1419 1423	side
+T104	Action 1541 1544	Add
+E31	Action:T104 Acts-on:T106
+T105	Amount 1545 1549	1 mL
+T106	Reagent 1550 1565	Dig-wash buffer
+T107	Action 1567 1570	mix
+E32	Action:T107 Using:T108 Using2:T112 Using3:T110
+T108	Method 1574 1583	inversion
+T109	Size 1616 1620	1 mL
+T110	Device 1621 1624	tip
+T111	Modifier 1591 1597	gentle
+R30	Measure Arg1:T106 Arg2:T105	
+R32	Measure Arg1:T110 Arg2:T109	
+R33	Setting Arg1:E29 Arg2:T99	
+R34	Mod-Link Arg1:T102 Arg2:T101	
+T114	Action 1673 1678	Place
+E35	Action:T114 Acts-on:T115 Site:T118
+T115	Location 1684 1688	tube
+T116	Generic-Measure 1694 1703	low angle
+T117	Generic-Measure 921 930	low angle
+T118	Device 1711 1723	vortex mixer
+T119	Speed 1737 1745	1100 rpm
+T120	Action 1751 1757	squirt
+E36	Action:T120 Acts-on:T122
+T121	Amount 1758 1764	150 μL
+T122	Reagent 1772 1787	Dig-wash buffer
+T123	Modifier 1848 1854	gently
+T124	Action 1855 1864	vortexing
+E37	Action:T124 Acts-on:T125
+T125	Reagent 1878 1886	solution
+T126	Modifier 1899 1903	most
+T127	Modifier 1907 1910	all
+T128	Reagent 1918 1923	beads
+R37	Mod-Link Arg1:T128 Arg2:T127	
+R38	Mod-Link Arg1:T128 Arg2:T126	
+R39	Setting Arg1:T118 Arg2:T119	
+R40	Measure Arg1:T122 Arg2:T121	
+R41	Mod-Link Arg1:E37 Arg2:T123	
+T129	Method 26 47	genome-wide profiling
+T130	Measure-Type 77 89	cell numbers
+T131	Reagent 753 763	suspension
+T132	Modifier 742 752	homogenous
+R42	Mod-Link Arg1:T131 Arg2:T132	
+T113	Action 1644 1650	Repeat
+E34	Action:T113 
+T133	Reagent 1792 1798	sample
+T164	Action 1924 1927	Add
+E50	Action:T164 Acts-on:T165
+T165	Reagent 1928 1946	secondary antibody
+T166	Modifier 1952 1957	final
+T167	Measure-Type 1958 1971	concentration
+T168	Concentration 1975 1980	1:100
+T169	Measure-Type 2018 2031	concentration
+T170	Reagent 2036 2054	immunofluorescence
+T171	Action 2056 2061	Place
+E51	Action:T171 Site:T172 Site2:T173
+T172	Device 2069 2076	nutator
+T173	Device 2080 2092	tube rotator
+T174	Temperature 2096 2100	4 °C
+T175	Time 2106 2110	1 hr
+R61	Or Arg1:T172 Arg2:T173	
+R62	Setting Arg1:E51 Arg2:T174	
+R63	Setting Arg1:E51 Arg2:T175	
+T176	Action 2112 2117	Place
+E52	Action:T176 Site:T177
+T177	Device 2125 2137	magnet stand
+T178	Time 2140 2146	30 sec
+T179	Action 2151 2156	clear
+E53	Action:T179 Acts-on:T182
+T180	Action 2161 2169	pull off
+E54	Action:T180 Acts-on:T182
+T181	Modifier 2170 2173	all
+T182	Reagent 2181 2187	liquid
+T183	Action 2189 2192	Add
+E55	Action:T183 Acts-on:T185
+R64	Setting Arg1:E52 Arg2:T178	
+R65	Mod-Link Arg1:T182 Arg2:T181	
+T184	Amount 2193 2197	1 mL
+T185	Reagent 2198 2213	Dig-Wash buffer
+T186	Action 2215 2218	mix
+E56	Action:T186 Using:T187 Using2:T194
+T187	Method 2222 2231	inversion
+T188	Modifier 2239 2245	gentle
+T189	Action 2304 2309	Place
+E57	Action:T189 Acts-on:T190 Site:T192
+T190	Location 2315 2319	tube
+T191	Generic-Measure 2325 2334	low angle
+T192	Device 2342 2354	vortex mixer
+T193	Speed 2368 2376	1100 rpm
+R67	Setting Arg1:E57 Arg2:T193	
+T195	Action 2379 2385	Squirt
+E59	Action:T195 Acts-on:T197 Site:T200 Acts-on2:T198
+T196	Amount 2386 2392	150 μL
+T197	Reagent 2400 2415	Protein A-MNase
+T198	Reagent 2419 2451	Protein A/G-MNase fusion protein
+T199	Concentration 2455 2464	700 ng/mL
+T200	Reagent 2512 2527	Dig-wash buffer
+T201	Reagent 2493 2507	glycerol stock
+T202	Modifier 2590 2596	gently
+T203	Action 2597 2606	vortexing
+E60	Action:T203 Acts-on:T204
+T204	Reagent 2620 2628	solution
+T205	Modifier 2641 2645	most
+T206	Modifier 2649 2652	all
+T207	Reagent 2660 2665	beads
+R68	Measure Arg1:T197 Arg2:T196	
+R69	Or Arg1:T197 Arg2:T198	
+R70	Measure Arg1:T198 Arg2:T199	
+T208	Concentration 2472 2477	1:200
+T209	Concentration 2483 2492	140 µg/mL
+R71	Measure Arg1:T201 Arg2:T209	
+R72	Mod-Link Arg1:E60 Arg2:T202	
+T210	Action 2667 2672	Place
+E61	Action:T210 Site:T211
+T211	Device 2680 2692	magnet stand
+T212	Time 2695 2699	30 s
+T213	Action 2704 2709	clear
+E62	Action:T213 Acts-on:T215
+T214	Action 2714 2722	pull off
+E63	Action:T214 Acts-on:T215
+T215	Reagent 2734 2740	liquid
+T216	Action 2742 2745	Add
+E64	Action:T216 Acts-on:T218
+T217	Amount 2746 2750	1 mL
+T218	Reagent 2751 2766	Dig-wash buffer
+T219	Action 2768 2771	mix
+E65	Action:T219 Using:T220 Using2:T222
+T220	Method 2775 2784	inversion
+T221	Modifier 2792 2798	gentle
+R73	Measure Arg1:T218 Arg2:T217	
+R75	Setting Arg1:E61 Arg2:T212	
+T223	Action 2857 2862	Place
+E67	Action:T223 Acts-on:T224 Site:T226
+T224	Location 2868 2872	tube
+T225	Generic-Measure 2878 2887	low angle
+T226	Device 2895 2907	vortex mixer
+T227	Speed 2921 2929	1100 rpm
+T228	Action 2935 2938	add
+E68	Action:T228 Acts-on:T230
+T229	Amount 2939 2945	100 μL
+T230	Reagent 2953 2968	Dig-wash buffer
+T232	Action 3038 3047	vortexing
+E69	Action:T232 Acts-on:T234
+T233	Modifier 3031 3037	gently
+T234	Reagent 3061 3069	solution
+T235	Reagent 3101 3106	beads
+T236	Action 3108 3114	Insert
+E70	Action:T236 Acts-on:T237 Using:T243 Site:T242 Site2:T239
+R77	Setting Arg1:T226 Arg2:T227	
+R78	Measure Arg1:T230 Arg2:T229	
+R79	Mod-Link Arg1:E69 Arg2:T233	
+T237	Location 3115 3120	tubes
+T238	Amount 3130 3136	1.5 mL
+T239	Location 3137 3142	wells
+T240	Temperature 3197 3201	0 °C
+T241	Action 3183 3193	chill down
+E71	Action:T241 Acts-on:T237
+T242	Location 3172 3179	wet ice
+T243	Device 3148 3168	heater block sitting
+R80	Measure Arg1:T239 Arg2:T238	
+R81	Setting Arg1:E71 Arg2:T240	
+T244	Action 3203 3209	Remove
+E72	Action:T244 Acts-on:T245 Site:T260
+T245	Location 3215 3219	tube
+T246	Action 3236 3239	mix
+E73	Action:T246 Acts-on:T249
+T247	Amount 3243 3247	2 μL
+T248	Concentration 3248 3254	100 mM
+T249	Reagent 3255 3260	CaCl2
+T250	Action 3303 3310	diluted
+E74	Action:T250 Using:T254
+T251	Concentration 3323 3326	1 M
+T252	Reagent 3327 3332	stock
+T253	Modifier 3339 3345	gentle
+T255	Modifier 3360 3371	immediately
+T256	Action 3372 3379	replace
+E76	Action:T256 Acts-on:T257 Site:T259
+T257	Location 3384 3388	tube
+T258	Temperature 3396 3400	0 °C
+T259	Device 3401 3406	block
+T260	Device 3229 3234	block
+R82	Measure Arg1:T249 Arg2:T247	
+R83	Measure Arg1:T249 Arg2:T248	
+T261	Generic-Measure 3311 3315	1:10
+R84	Measure Arg1:T252 Arg2:T251	
+R86	Mod-Link Arg1:E76 Arg2:T255	
+T262	Action 3408 3416	Incubate
+E77	Action:T262 
+T263	Temperature 3420 3424	0 °C
+T264	Time 3468 3474	30 min
+T265	Action 3477 3480	Add
+E78	Action:T265 Acts-on:T282
+T266	Amount 3481 3487	100 μL
+T267	Action 3507 3510	mix
+E79	Action:T267 Using:T269
+T268	Modifier 3514 3520	gentle
+T270	Action 3579 3585	remove
+E81	Action:T270 
+T271	Amount 3586 3592	100 μL
+T272	Action 3597 3600	add
+E82	Action:T272 Site:T274
+T273	Modifier 3606 3609	new
+T274	Location 3610 3614	tube
+T275	Amount 3626 3632	100 μL
+T276	Concentration 3633 3635	2X
+T277	Reagent 3636 3647	STOP Buffer
+T278	Action 3652 3655	mix
+E83	Action:T278 Using:T280
+T279	Modifier 3659 3665	gentle
+R87	Setting Arg1:E77 Arg2:T263	
+T281	Concentration 3488 3490	2X
+T282	Reagent 3491 3502	STOP Buffer
+R89	Measure Arg1:T282 Arg2:T266	
+T283	Action 3677 3685	Incubate
+E38	Action:T283 
+T284	Time 3686 3692	30 min
+T285	Temperature 3695 3700	37 °C
+R90	Mod-Link Arg1:T274 Arg2:T273	
+R91	Measure Arg1:T277 Arg2:T275	
+R92	Measure Arg1:T277 Arg2:T276	
+R94	Setting Arg1:E38 Arg2:T284	
+R95	Setting Arg1:E38 Arg2:T285	
+T286	Reagent 3712 3729	CUT&RUN fragments
+T287	Reagent 3749 3766	nuclear chromatin
+T288	Action 3768 3773	Place
+E39	Action:T288 Site:T289
+T289	Device 3781 3793	magnet stand
+T290	Modifier 3804 3811	Cleanly
+T291	Action 3812 3820	transfer
+E40	Action:T291 Acts-on:T292 Site:T136
+T292	Reagent 3825 3836	supernatant
+T293	Reagent 3857 3866	chromatin
+T294	Modifier 3848 3856	digested
+R96	Mod-Link Arg1:T293 Arg2:T294	
+T134	Modifier 3872 3877	fresh
+T135	Size 3878 3884	1.5-mL
+T136	Location 3885 3905	microcentrifuge tube
+T137	Method 3923 3951	Phenol Chloroform Extraction
+R97	Measure Arg1:T136 Arg2:T135	
+R98	Mod-Link Arg1:T136 Arg2:T134	
+R99	Mod-Link Arg1:E40 Arg2:T290	
+T138	Action 3963 3968	Place
+E41	Action:T138 Site:T139
+T139	Device 3976 3988	magnet stand
+T140	Time 3991 3997	30 sec
+T141	Action 4002 4007	clear
+E42	Action:T141 Acts-on:T144
+T142	Action 4012 4020	pull off
+E43	Action:T142 Acts-on:T144
+T143	Modifier 4021 4024	all
+T144	Reagent 4032 4038	liquid
+R100	Setting Arg1:E41 Arg2:T140	
+R101	Mod-Link Arg1:T144 Arg2:T143	
+R102	Measure Arg1:T185 Arg2:T184	
+T295	Action 2275 2281	Repeat
+E85	Action:T295 
+T145	Reagent 2533 2539	sample
+R44	Or Arg1:T206 Arg2:T205	
+R45	Mod-Link Arg1:T207 Arg2:T206	
+T296	Action 2828 2834	Repeat
+E86	Action:T296 
+T146	Reagent 2974 2980	sample
+T297	Action 4068 4073	Place
+E87	Action:T297 Site:T298
+T298	Device 4081 4093	magnet stand
+T299	Action 4097 4102	clear
+E88	Action:T299 Acts-on:T302
+T300	Action 4107 4115	pull off
+E89	Action:T300 Acts-on:T302
+T301	Modifier 4116 4119	all
+T302	Reagent 4127 4133	liquid
+T303	Action 4135 4138	Add
+E90	Action:T303 Acts-on:T305
+R103	Mod-Link Arg1:T302 Arg2:T301	
+T304	Amount 4139 4143	1 mL
+T305	Reagent 4144 4165	Low-Salt Rinse Buffer
+T306	Action 4167 4170	mix
+E91	Action:T306 Using:T307
+T307	Method 4174 4183	inversion
+T308	Modifier 4191 4197	gentle
+T310	Action 4231 4237	remove
+E93	Action:T310 Acts-on:T311 Site:T312 Site2:T315
+T311	Reagent 4238 4244	liquid
+T312	Seal 4250 4253	cap
+T313	Modifier 4270 4275	quick
+T314	Action 4276 4281	pulse
+E94	Action:T314 Site:T316
+T315	Location 4258 4262	side
+T316	Device 4287 4303	micro-centrifuge
+R104	Measure Arg1:T305 Arg2:T304	
+R106	Mod-Link Arg1:E94 Arg2:T313	
+T317	Action 4305 4310	Place
+E95	Action:T317 Acts-on:T318 Site:T320
+T318	Location 4316 4320	tube
+T319	Generic-Measure 4326 4335	low angle
+T320	Device 4343 4355	vortex mixer
+T321	Speed 4369 4377	1100 rpm
+T322	Action 4383 4386	add
+E96	Action:T322 Acts-on:T325
+T323	Amount 4387 4393	200 μL
+T324	Modifier 4397 4405	ice cold
+T325	Reagent 4406 4423	Incubation Buffer
+T326	Modifier 4445 4451	gently
+T328	Reagent 4475 4483	solution
+T329	Modifier 4496 4500	most
+T330	Modifier 4504 4507	all
+T331	Reagent 4515 4520	beads
+T332	Action 4522 4530	Incubate
+E98	Action:T332 
+T333	Temperature 4534 4538	0 °C
+T334	Time 4582 4587	5 min
+R107	Setting Arg1:E98 Arg2:T333	
+R108	Setting Arg1:E98 Arg2:T334	
+T335	Action 4590 4595	Place
+E99	Action:T335 Site:T337
+T336	Modifier 4600 4604	cold
+T337	Device 4606 4618	magnet stand
+T338	Action 4623 4628	allow
+E100	Action:T338 
+T339	Time 4642 4647	≥10 s
+T340	Action 4652 4658	remove
+E101	Action:T340 Acts-on:T341
+T341	Reagent 4659 4665	liquid
+R110	Measure Arg1:T325 Arg2:T323	
+R111	Mod-Link Arg1:T325 Arg2:T324	
+R113	Mod-Link Arg1:T331 Arg2:T330	
+R114	Mod-Link Arg1:T331 Arg2:T329	
+R115	Mod-Link Arg1:T337 Arg2:T336	
+R116	Setting Arg1:E100 Arg2:T339	
+T342	Action 4667 4670	Add
+E102	Action:T342 Acts-on:T344
+T343	Amount 4671 4677	200 μL
+T344	Reagent 4678 4689	STOP buffer
+T345	Action 4694 4697	mix
+E103	Action:T345 Using:T327
+T346	Modifier 4701 4707	gentle
+R117	Measure Arg1:T344 Arg2:T343	
+T348	Action 4825 4830	Place
+E105	Action:T348 Acts-on:T349 Site:T351
+T349	Location 4836 4840	tube
+T350	Generic-Measure 4846 4855	low angle
+T351	Device 4863 4875	vortex mixer
+T352	Speed 4889 4897	1100 rpm
+T353	Action 4903 4906	add
+E106	Action:T353 Acts-on:T357
+T354	Amount 4907 4912	24 μL
+T355	Modifier 4916 4924	ice cold
+T356	Concentration 4925 4927	1X
+T357	Reagent 4928 4949	pA-MNase Reaction Mix
+T359	Modifier 5012 5018	gently
+T361	Reagent 5042 5050	solution
+T362	Modifier 5063 5067	most
+T363	Modifier 5071 5074	all
+T364	Reagent 5082 5087	beads
+R120	Setting Arg1:T351 Arg2:T352	
+R121	Setting Arg1:T320 Arg2:T321	
+R122	Measure Arg1:T357 Arg2:T354	
+R123	Mod-Link Arg1:T357 Arg2:T355	
+R124	Measure Arg1:T357 Arg2:T356	
+R126	Mod-Link Arg1:T364 Arg2:T363	
+R127	Mod-Link Arg1:T364 Arg2:T362	
+T365	Action 5089 5095	Insert
+E108	Action:T365 Acts-on:T366 Site:T368
+T366	Location 5096 5101	tubes
+T367	Size 5111 5117	1.5 ml
+T368	Location 5118 5123	wells
+T369	Device 5129 5141	heater block
+T370	Location 5153 5160	wet ice
+T371	Action 5164 5169	chill
+E109	Action:T371 Site:T370 Acts-on:T366
+T372	Temperature 5178 5182	0 °C
+T373	Action 5184 5187	Add
+E110	Action:T373 Acts-on:T376
+T374	Amount 5188 5192	8 μL
+T375	Concentration 5193 5195	4X
+T376	Reagent 5196 5207	STOP Buffer
+T377	Action 5212 5215	mix
+E111	Action:T377 
+T378	Modifier 5219 5225	gentle
+T379	Action 5226 5235	vortexing
+E112	Action:T379 
+T380	Action 5274 5280	remove
+E113	Action:T380 
+T382	Action 5291 5294	add
+E114	Action:T382 Site:T384
+T383	Modifier 5300 5303	new
+T384	Location 5304 5308	tube
+T385	Amount 5320 5324	8 μL
+T386	Concentration 5325 5327	4X
+T387	Reagent 5328 5339	STOP Buffer
+T388	Action 5344 5347	mix
+E115	Action:T388 
+T389	Modifier 5351 5357	gentle
+T390	Action 5358 5367	vortexing
+E116	Action:T390 
+R128	Measure Arg1:T368 Arg2:T367	
+R129	Setting Arg1:E109 Arg2:T372	
+R130	Mod-Link Arg1:E112 Arg2:T378	
+R131	Measure Arg1:T376 Arg2:T374	
+R132	Measure Arg1:T376 Arg2:T375	
+R133	Mod-Link Arg1:T384 Arg2:T383	
+R134	Measure Arg1:T387 Arg2:T385	
+R135	Measure Arg1:T387 Arg2:T386	
+R136	Mod-Link Arg1:E116 Arg2:T389	
+T391	Modifier 5369 5376	Cleanly
+T392	Action 5377 5385	transfer
+E117	Action:T392 Acts-on:T394 Site:T399
+T393	Amount 5386 5391	30 μL
+T394	Reagent 5399 5410	supernatant
+T395	Modifier 5422 5430	digested
+T396	Reagent 5431 5440	chromatin
+T397	Modifier 5446 5451	fresh
+T398	Size 5452 5458	0.6 mL
+T399	Location 5459 5488	Low-Bind microcentrifuge tube
+T400	Modifier 5494 5505	immediately
+T401	Action 5506 5513	proceed
+E118	Action:T401 
+T402	Method 5519 5550	End Repair and Adapter Ligation
+T403	Action 5577 5580	add
+E119	Action:T403 Acts-on:T407 Site:T404 Acts-on2:T409
+T404	Reagent 5570 5576	sample
+T405	Amount 5581 5585	2 μL
+T406	Concentration 5586 5589	10%
+R137	Mod-Link Arg1:E117 Arg2:T391	
+R138	Measure Arg1:T394 Arg2:T393	
+R139	Mod-Link Arg1:T396 Arg2:T395	
+R140	Mod-Link Arg1:T399 Arg2:T397	
+R141	Measure Arg1:T399 Arg2:T398	
+R142	Mod-Link Arg1:E118 Arg2:T400	
+T407	Reagent 5590 5593	SDS
+T408	Amount 5609 5615	2.5 μL
+T409	Reagent 5616 5628	Proteinase K
+T410	Concentration 5630 5638	20 mg/ml
+T411	Action 5641 5644	Mix
+E120	Action:T411 Using:T412
+T412	Method 5648 5657	inversion
+T413	Action 5662 5670	incubate
+E121	Action:T413 
+T414	Time 5671 5675	1 hr
+T415	Temperature 5678 5683	50 °C
+T416	Action 5685 5688	Add
+E122	Action:T416 Acts-on:T419 Site:T420
+T417	Measure-Type 5698 5704	volume
+T418	Modifier 5692 5697	equal
+T419	Reagent 5708 5725	Phenol Chloroform
+T420	Reagent 5733 5739	sample
+T421	Amount 5749 5755	200 µL
+T422	Reagent 5756 5762	sample
+T423	Action 5763 5766	add
+E123	Action:T423 Site:T422 Acts-on:T425
+T424	Amount 5767 5773	200 µL
+T425	Reagent 5774 5791	Phenol Chloroform
+R143	Measure Arg1:T407 Arg2:T405	
+R144	Measure Arg1:T407 Arg2:T406	
+R145	Measure Arg1:T409 Arg2:T408	
+R146	Measure Arg1:T409 Arg2:T410	
+R147	Setting Arg1:E121 Arg2:T414	
+R46	Setting Arg1:E121 Arg2:T415	
+R47	Measure Arg1:T422 Arg2:T421	
+R48	Measure Arg1:T425 Arg2:T424	
+T426	Action 5794 5797	Mix
+E124	Action:T426 
+T427	Speed 5801 5811	full-speed
+T428	Action 5812 5821	vortexing
+E125	Action:T428 
+T429	Time 5823 5826	2 s
+R49	Setting Arg1:E125 Arg2:T429	
+R50	Setting Arg1:E125 Arg2:T427	
+T430	Action 5828 5836	Transfer
+E126	Action:T430 Site:T431
+T431	Location 5842 5857	phase-lock tube
+T432	Action 5887 5897	centrifuge
+E127	Action:T432 
+T433	Time 5898 5903	5 min
+T434	Temperature 5905 5921	room temperature
+T435	Speed 5924 5934	16,000 x g
+R51	Setting Arg1:E127 Arg2:T433	
+R52	Setting Arg1:E127 Arg2:T434	
+R53	Setting Arg1:E127 Arg2:T435	
+T436	Action 5936 5939	Add
+E44	Action:T436 Acts-on:T437 Site:T147
+T437	Reagent 5964 5974	chloroform
+T438	Modifier 5943 5953	equivalent
+T439	Measure-Type 5954 5960	volume
+T440	Measure-Type 5997 6003	volume
+T147	Reagent 5990 5996	sample
+T148	Modifier 5982 5989	initial
+T149	Amount 6016 6022	200 µL
+T150	Reagent 6032 6038	sample
+T151	Measure-Type 6039 6045	volume
+T152	Action 6046 6049	add
+E45	Action:T152 Site:T150 Acts-on:T154
+T153	Amount 6050 6056	200 µL
+T154	Reagent 6057 6067	chloroform
+R54	Mod-Link Arg1:T147 Arg2:T148	
+R55	Measure Arg1:T154 Arg2:T153	
+R56	Measure Arg1:T150 Arg2:T149	
+T155	Modifier 6023 6031	starting
+R57	Mod-Link Arg1:T150 Arg2:T155	
+T156	Action 4719 4724	Place
+E46	Action:T156 Site:T157
+T157	Device 4732 4744	magnet stand
+T158	Time 4756 4762	30 sec
+T159	Action 4768 4776	pull off
+E47	Action:T159 Acts-on:T161
+T160	Reagent 4955 4961	sample
+T161	Reagent 4788 4794	liquid
+R58	Setting Arg1:E46 Arg2:T158	
+T162	Modifier 4777 4780	all
+R59	Mod-Link Arg1:T161 Arg2:T162	
+T442	Action 4796 4802	Repeat
+E129	Action:T442 
+T163	Mention 5865 5880	Qiagen MaXtract
+R60	Coreference-Link Arg1:T163 Arg2:T431	
+T443	Action 6069 6075	Invert
+E130	Action:T443 Count:T448
+T444	Action 6097 6107	centrifuge
+E131	Action:T444 
+T445	Time 6108 6113	5 min
+T446	Temperature 6115 6131	room temperature
+T447	Speed 6134 6144	16,000 x g
+T448	Numerical 6077 6080	10X
+R148	Setting Arg1:E131 Arg2:T445	
+R149	Setting Arg1:E131 Arg2:T446	
+R150	Setting Arg1:E131 Arg2:T447	
+T449	Action 6146 6152	Remove
+E132	Action:T449 Acts-on:T450 Using:T451 Site:T453
+T450	Reagent 6157 6173	top liquid phase
+T452	Modifier 6192 6197	fresh
+T453	Location 6198 6202	tube
+T454	Amount 6214 6218	2 μL
+T455	Concentration 6219 6226	2 mg/mL
+T456	Reagent 6227 6235	glycogen
+T457	Generic-Measure 6245 6249	1:10
+T458	Concentration 6255 6263	20 mg/mL
+T459	Reagent 6264 6278	glycogen stock
+R151	Mod-Link Arg1:T453 Arg2:T452	
+R152	Measure Arg1:T456 Arg2:T454	
+R153	Measure Arg1:T456 Arg2:T455	
+R154	Measure Arg1:T459 Arg2:T458	
+T460	Action 6281 6284	Add
+E134	Action:T460 Acts-on:T463
+T461	Amount 6285 6291	500 μL
+T462	Concentration 6292 6296	100%
+T463	Reagent 6297 6304	ethanol
+T464	Action 6309 6312	mix
+E135	Action:T464 Using:T465 Using2:T466
+T466	Method 6329 6343	tube inversion
+R155	Measure Arg1:T463 Arg2:T461	
+R156	Measure Arg1:T463 Arg2:T462	
+T467	Action 6345 6350	Chill
+E137	Action:T467 Site:T468
+T468	Location 6354 6357	ice
+T469	Action 6362 6372	centrifuge
+E138	Action:T469 
+T470	Time 6373 6379	10 min
+T471	Temperature 6381 6385	4 °C
+T472	Speed 6388 6398	16,000 x g
+T473	Action 6400 6408	Pour off
+E139	Action:T473 Acts-on:T474
+T474	Reagent 6413 6419	liquid
+T475	Action 6424 6429	drain
+E140	Action:T475 Site:T476 Acts-on:T474
+T476	Location 6435 6446	paper towel
+T477	Action 6448 6453	Rinse
+E141	Action:T477 Acts-on:T479 Using:T482
+T478	Action 6585 6592	Air dry
+E142	Action:T478 
+R157	Setting Arg1:E138 Arg2:T470	
+R158	Setting Arg1:E138 Arg2:T471	
+R159	Setting Arg1:E138 Arg2:T472	
+T479	Reagent 6458 6464	pellet
+T480	Amount 6468 6472	1 ml
+T481	Concentration 6473 6477	100%
+T482	Reagent 6478 6485	ethanol
+T483	Action 6490 6500	centrifuge
+E143	Action:T483 Acts-on:T479
+T484	Time 6501 6506	1 min
+T485	Temperature 6508 6512	4 °C
+T486	Speed 6515 6525	16,000 x g
+T487	Modifier 6527 6536	Carefully
+T488	Action 6537 6545	pour off
+E144	Action:T488 Acts-on:T489
+T489	Reagent 6550 6556	liquid
+T490	Action 6561 6566	drain
+E145	Action:T490 Site:T491 Acts-on:T489
+T491	Location 6572 6583	paper towel
+T492	Reagent 6603 6609	pellet
+T493	Modifier 6613 6616	dry
+T494	Action 6618 6626	dissolve
+E146	Action:T494 Site:T497 Acts-on:T492 Site2:T498
+T495	Amount 6630 6638	30-50 μL
+T496	Concentration 6639 6643	1 mM
+T497	Reagent 6644 6652	Tris-HCl
+T498	Reagent 6665 6669	EDTA
+T499	Action 6676 6684	transfer
+E147	Action:T499 Acts-on:T492 Site:T502
+T500	Modifier 6690 6693	new
+T501	Size 6694 6700	0.6 mL
+T502	Location 6701 6729	Lo-Bind microcentrifuge tube
+R160	Measure Arg1:T482 Arg2:T480	
+R161	Measure Arg1:T482 Arg2:T481	
+R162	Setting Arg1:E143 Arg2:T484	
+R163	Setting Arg1:E143 Arg2:T485	
+R164	Setting Arg1:E143 Arg2:T486	
+R165	Mod-Link Arg1:E144 Arg2:T487	
+R166	Mod-Link Arg1:T492 Arg2:T493	
+R167	Measure Arg1:T497 Arg2:T495	
+R168	Measure Arg1:T497 Arg2:T496	
+T503	pH 6653 6657	pH 8
+R169	Measure Arg1:T497 Arg2:T503	
+T504	Concentration 6658 6664	0.1 mM
+R170	Measure Arg1:T498 Arg2:T504	
+R171	Mod-Link Arg1:T502 Arg2:T500	
+R172	Measure Arg1:T502 Arg2:T501	
+T505	Action 6741 6749	Quantify
+E148	Action:T505 Using:T507 Using2:T508
+T506	Amount 6750 6756	1-2 μL
+T507	Method 6776 6798	fluorescence detection
+T508	Device 6806 6822	Qubit instrument
+R173	Setting Arg1:E148 Arg2:T506	
+T509	Action 6834 6842	Evaluate
+E149	Action:T509 Acts-on:T511 Using:T512 Using2:T513 Using3:T514
+T510	Modifier 6859 6866	cleaved
+T511	Reagent 6867 6876	fragments
+T512	Method 6906 6931	capillary electrophoresis
+T513	Method 6937 6959	fluorescence detection
+T514	Device 6981 7003	Tapestation instrument
+T515	Action 7005 7012	Prepare
+E150	Action:T515 Acts-on:T529
+T516	Concentration 7013 7015	4X
+T517	Location 7078 7081	Ice
+T518	Action 7070 7077	Keep on
+E151	Action:T518 Site:T517
+T519	Action 7093 7096	Add
+E152	Action:T519 Acts-on:T522 Site:T524
+T520	Amount 7097 7102	10 µL
+T521	Concentration 7103 7105	4X
+T522	Reagent 7106 7116	ERA buffer
+T523	Amount 7125 7130	30 µL
+T524	Reagent 7131 7137	sample
+T525	Action 7142 7145	mix
+E153	Action:T525 Using:T527 Count:T528
+T527	Method 7149 7170	pipetting up and down
+T528	Numerical 7171 7178	5 times
+T529	Reagent 7016 7053	End Repair and A-tailing (ERA) buffer
+T531	Generic-Measure 7055 7067	10 µL/sample
+R175	Mod-Link Arg1:T511 Arg2:T510	
+R176	Measure Arg1:T529 Arg2:T531	
+R177	Measure Arg1:T522 Arg2:T520	
+R178	Measure Arg1:T522 Arg2:T521	
+R179	Measure Arg1:T524 Arg2:T523	
+T532	Action 7180 7185	Place
+E155	Action:T532 Site:T533
+T533	Device 7191 7203	thermocycler
+T534	Temperature 7232 7237	12 °C
+T535	Modifier 7273 7279	heated
+T536	Seal 7280 7283	lid
+T537	Temperature 7293 7299	>20 °C
+T538	Action 7302 7308	Remove
+E156	Action:T538 Acts-on:T548 Site:T549
+T539	Modifier 7309 7321	pre-annealed
+T540	Concentration 7322 7329	0.15 µM
+R180	Setting Arg1:T533 Arg2:T534	
+R181	Mod-Link Arg1:T536 Arg2:T535	
+T541	Action 7242 7245	run
+E157	Action:T541 Using:T542
+T542	Method 7260 7267	program
+R182	Setting Arg1:E157 Arg2:T537	
+T543	Action 7384 7387	Add
+E158	Action:T543 Acts-on:T546 Site:T547
+T544	Amount 7388 7392	5 µL
+T545	Concentration 7396 7403	0.15 µM
+T546	Reagent 7404 7418	TruSeq adapter
+T547	Reagent 7427 7433	sample
+T548	Reagent 7330 7344	TruSeq adapter
+T549	Location 7350 7357	freezer
+T550	Location 7379 7382	ice
+T551	Action 7435 7442	Prepare
+E159	Action:T551 Acts-on:T555 Site:T554
+T552	Concentration 7443 7445	2X
+T553	Amount 7469 7474	40 µL
+T554	Reagent 7479 7485	sample
+T555	Reagent 7446 7467	Rapid Ligase solution
+T556	Action 7488 7495	Keep on
+E160	Action:T556 Site:T557
+T557	Location 7496 7499	ice
+T558	Action 7511 7514	Add
+E161	Action:T558 Acts-on:T562 Site:T563
+T559	Amount 7515 7520	40 µL
+R183	Measure Arg1:T548 Arg2:T540	
+R184	Mod-Link Arg1:T548 Arg2:T539	
+T560	Action 7362 7375	allow to thaw
+E162	Action:T560 Acts-on:T548 Site:T550
+R185	Measure Arg1:T546 Arg2:T544	
+R186	Measure Arg1:T546 Arg2:T545	
+T561	Concentration 7521 7523	2X
+T562	Reagent 7524 7545	Rapid Ligase solution
+T563	Reagent 7554 7560	sample
+T564	Action 7565 7568	mix
+E163	Action:T564 Acts-on:T563 Acts-on2:T562 Using:T567 Count:T568
+T565	Modifier 7569 7573	well
+T567	Method 7577 7598	pipetting up and down
+T568	Numerical 7599 7607	10 times
+R187	Measure Arg1:T562 Arg2:T559	
+R188	Measure Arg1:T562 Arg2:T561	
+R189	Mod-Link Arg1:E163 Arg2:T565	
+R190	Measure Arg1:T555 Arg2:T552	
+R191	Measure Arg1:T555 Arg2:T553	
+T569	Action 6084 6087	mix
+E165	Action:T569 
+T570	Action 7608 7613	Place
+E166	Action:T570 Site:T571
+T571	Device 7619 7631	thermocycler
+T572	Temperature 7660 7665	20 °C
+T573	Action 7670 7678	incubate
+E167	Action:T573 
+T574	Temperature 7682 7687	20 °C
+T575	Time 7692 7701	20-30 min
+R192	Setting Arg1:T571 Arg2:T572	
+R193	Setting Arg1:E167 Arg2:T574	
+R194	Setting Arg1:E167 Arg2:T575	
+T576	Method 7713 7723	incubation
+T577	Action 7724 7731	proceed
+E168	Action:T577 
+T578	Method 7737 7759	Proteinase K digestion
+T579	Modifier 7760 7771	immediately
+R195	Mod-Link Arg1:E168 Arg2:T579	
+T580	Action 7773 7776	Add
+E169	Action:T580 Acts-on:T583 Acts-on2:T585 Site:T587
+T581	Amount 7777 7781	2 µL
+T582	Concentration 7782 7785	10%
+T583	Reagent 7786 7789	SDS
+T584	Amount 7794 7798	2 µL
+T585	Reagent 7799 7811	Proteinase K
+T586	Concentration 7813 7821	20 mg/mL
+T587	Reagent 7831 7837	sample
+T588	Action 7839 7842	Mix
+E170	Action:T588 Using:T590
+T589	Modifier 7843 7847	well
+T591	Action 7865 7873	incubate
+E172	Action:T591 
+T592	Temperature 7877 7882	37 °C
+T593	Time 7887 7901	1 hr-overnight
+R196	Measure Arg1:T585 Arg2:T584	
+R197	Measure Arg1:T583 Arg2:T581	
+R198	Measure Arg1:T583 Arg2:T582	
+R199	Measure Arg1:T585 Arg2:T586	
+R200	Mod-Link Arg1:E170 Arg2:T589	
+R201	Setting Arg1:E172 Arg2:T592	
+R202	Setting Arg1:E172 Arg2:T593	
+T594	Action 7903 7909	Remove
+E173	Action:T594 Acts-on:T595 Site:T596
+T595	Reagent 7910 7928	Ampure Bead Slurry
+T596	Location 7934 7946	refrigerator
+T597	Action 7948 7957	resuspend
+E174	Action:T597 Acts-on:T598 Using:T869
+T598	Reagent 7958 7963	beads
+T600	Temperature 8005 8021	room temperature
+T601	Action 7981 8001	allow to equilibrate
+E176	Action:T601 Acts-on:T598
+R203	Setting Arg1:E176 Arg2:T600	
+T602	Action 8045 8048	add
+E177	Action:T602 Acts-on:T604
+T603	Measure-Type 8059 8065	volume
+T604	Reagent 8069 8081	Ampure Beads
+T605	Amount 8091 8096	85 µL
+T606	Reagent 8097 8103	sample
+T607	Action 8104 8107	add
+E178	Action:T607 Site:T606 Acts-on:T609
+T608	Amount 8108 8113	85 µL
+T609	Reagent 8114 8126	Ampure Beads
+T610	Action 8132 8135	mix
+E179	Action:T610 Count:T614 Using:T613
+T611	Modifier 8136 8140	well
+T613	Method 8144 8165	pipetting up and down
+T614	Numerical 8166 8174	10 times
+T615	Numerical 8049 8054	1.0 X
+R204	Measure Arg1:T606 Arg2:T605	
+R205	Measure Arg1:T609 Arg2:T608	
+R206	Mod-Link Arg1:E179 Arg2:T611	
+T616	Action 8176 8184	Incubate
+E181	Action:T616 
+T617	Temperature 8188 8204	room temperature
+T618	Time 8209 8217	5-10 min
+T619	Reagent 8241 8244	DNA
+T620	Action 8246 8251	Place
+E182	Action:T620 Site:T621
+T621	Device 8255 8269	magnetic stand
+T622	Action 8274 8288	allow to clear
+E183	Action:T622 
+T623	Time 8293 8298	5 min
+R207	Setting Arg1:E183 Arg2:T623	
+R208	Setting Arg1:E181 Arg2:T617	
+R209	Setting Arg1:E181 Arg2:T618	
+T624	Action 8329 8335	remove
+E184	Action:T624 Acts-on:T625
+T625	Reagent 8336 8342	liquid
+T626	Action 8347 8354	discard
+E185	Action:T626 Acts-on:T625
+T627	Action 8385 8388	add
+E186	Action:T627 Acts-on:T630
+T628	Amount 8389 8395	200 µL
+T629	Concentration 8396 8399	80%
+T630	Reagent 8400 8413	EtOH solution
+T631	Action 8418 8426	incubate
+E187	Action:T631 Acts-on:T651
+T632	Time 8431 8441	30 seconds
+R210	Measure Arg1:T630 Arg2:T628	
+R211	Measure Arg1:T630 Arg2:T629	
+R212	Setting Arg1:E187 Arg2:T632	
+T633	Action 8443 8448	Leave
+E188	Action:T633 Acts-on:T634 Site:T635
+T634	Reagent 8453 8459	sample
+T635	Device 8467 8481	magnetic stand
+T636	Action 8486 8492	remove
+E189	Action:T636 Acts-on:T638
+T637	Action 8497 8504	discard
+E190	Action:T637 Acts-on:T638
+T638	Reagent 8505 8509	EtOH
+T639	Reagent 8571 8575	EtOH
+T640	Action 8511 8517	Repeat
+E191	Action:T640 
+T641	Action 8533 8537	wash
+E192	Action:T641 Acts-on:T642 Using:T639
+T642	Reagent 8542 8547	beads
+T643	Concentration 8567 8570	80%
+R213	Measure Arg1:T639 Arg2:T643	
+T644	Modifier 8582 8591	carefully
+T645	Action 8592 8598	remove
+E193	Action:T645 Acts-on:T647
+T646	Modifier 8599 8607	residual
+T647	Reagent 8608 8612	EtOH
+T648	Action 8618 8625	air-dry
+E194	Action:T648 Acts-on:T649
+T649	Reagent 8626 8631	beads
+T650	Time 8636 8641	5 min
+T651	Reagent 8379 8384	beads
+T652	Reagent 8323 8328	beads
+T653	Reagent 8227 8232	beads
+R214	Mod-Link Arg1:E193 Arg2:T644	
+R215	Mod-Link Arg1:T647 Arg2:T646	
+R216	Setting Arg1:E194 Arg2:T650	
+T654	Action 8643 8649	Remove
+E195	Action:T654 Acts-on:T655 Site:T656
+T655	Location 8650 8654	tube
+T656	Device 8664 8670	magnet
+T657	Action 8672 8675	add
+E196	Action:T657 Acts-on:T660
+T658	Amount 8676 8681	50 µL
+T659	Concentration 8682 8687	10 mM
+T660	Reagent 8688 8696	Tris-HCl
+T661	pH 8697 8701	pH 8
+T663	Method 8707 8726	pipette up and down
+T664	Numerical 8727 8730	10X
+T665	Reagent 8744 8749	beads
+R217	Measure Arg1:T660 Arg2:T658	
+R218	Measure Arg1:T660 Arg2:T659	
+R219	Measure Arg1:T660 Arg2:T661	
+T666	Action 8751 8759	Incubate
+E198	Action:T666 
+T667	Time 8760 8768	5-10 min
+T668	Reagent 8778 8781	DNA
+T669	Reagent 8795 8800	beads
+R221	Setting Arg1:E198 Arg2:T667	
+T670	Action 8802 8809	Prepare
+E199	Action:T670 Acts-on:T672
+T671	Amount 8810 8818	25-50 mL
+T672	Reagent 8822 8832	HXP Buffer
+T673	Concentration 8834 8837	20%
+T674	Reagent 8838 8846	PEG 8000
+T675	Concentration 8848 8853	2.5 M
+T676	Reagent 8854 8858	NaCl
+T677	Action 8864 8870	mixing
+E200	Action:T677 Acts-on:T681 Acts-on2:T684
+T678	Modifier 8871 8876	equal
+T679	Measure-Type 8877 8884	volumes
+T680	Concentration 8888 8891	40%
+T681	Reagent 8892 8900	PEG 8000
+T682	Measure-Type 8902 8907	wt/vl
+T683	Concentration 8913 8916	5 M
+T684	Reagent 8917 8921	NaCl
+T685	Reagent 8923 8933	HXP Buffer
+T686	Action 8941 8947	stored
+E201	Action:T686 Acts-on:T685
+T687	Temperature 8951 8955	4 °C
+T688	Time 8966 8975	two weeks
+T689	Action 8989 8995	rebind
+E202	Action:T689 Acts-on:T690 Site:T691
+T690	Reagent 9000 9003	DNA
+R222	Measure Arg1:T672 Arg2:T671	
+R223	Measure Arg1:T674 Arg2:T673	
+R224	Measure Arg1:T676 Arg2:T675	
+R225	Measure Arg1:T681 Arg2:T680	
+R226	Measure Arg1:T684 Arg2:T683	
+R227	Setting Arg1:E201 Arg2:T687	
+R228	Setting Arg1:E201 Arg2:T688	
+T691	Reagent 9007 9012	beads
+T692	Action 9035 9038	add
+E203	Action:T692 Acts-on:T723 Site:T724 Site2:T725
+T693	Action 9309 9315	Remove
+E204	Action:T693 Acts-on:T694 Site:T695
+T694	Location 9316 9320	tube
+T695	Device 9330 9336	magnet
+T696	Action 9338 9341	add
+E205	Action:T696 Acts-on:T699
+T697	Amount 9342 9347	35 µL
+T698	Concentration 9348 9353	10 mM
+T699	Reagent 9354 9362	Tris-HCl
+T700	pH 9363 9367	pH 8
+T702	Method 9373 9392	pipette up and down
+T703	Numerical 9393 9396	10X
+T704	Reagent 9410 9415	beads
+R229	Measure Arg1:T699 Arg2:T700	
+R230	Measure Arg1:T699 Arg2:T698	
+R231	Measure Arg1:T699 Arg2:T697	
+T705	Modifier 9248 9257	carefully
+T706	Action 9258 9264	remove
+E207	Action:T706 
+T707	Modifier 9265 9273	residual
+T708	Reagent 9274 9278	EtOH
+T709	Action 9284 9291	Air-Dry
+E208	Action:T709 Acts-on:T710
+T710	Reagent 9292 9297	beads
+T711	Time 9302 9307	5 min
+R232	Setting Arg1:E208 Arg2:T711	
+R233	Mod-Link Arg1:E207 Arg2:T705	
+R234	Mod-Link Arg1:T708 Arg2:T707	
+T712	Action 9133 9136	mix
+E209	Action:T712 Using:T715 Count:T716
+T713	Modifier 9137 9141	well
+T715	Method 9145 9166	pipetting up and down
+T716	Numerical 9167 9175	10 times
+T717	Action 9177 9183	Repeat
+E211	Action:T717 
+T718	Reagent 9208 9213	beads
+T719	Concentration 9233 9236	80%
+T720	Reagent 9237 9241	EtOH
+R235	Measure Arg1:T720 Arg2:T719	
+T721	Numerical 9039 9044	1.2 X
+T722	Measure-Type 9049 9055	volume
+T723	Reagent 9059 9069	HXP Buffer
+T724	Reagent 9073 9076	DNA
+T725	Reagent 9079 9084	beads
+T726	Amount 9094 9099	50 µL
+T727	Reagent 9100 9106	sample
+T728	Action 9107 9110	add
+E212	Action:T728 Acts-on:T730 Site:T727
+T729	Amount 9111 9116	60 µL
+T730	Reagent 9117 9127	HXP Buffer
+R236	Mod-Link Arg1:E209 Arg2:T713	
+R237	Measure Arg1:T730 Arg2:T729	
+R238	Measure Arg1:T727 Arg2:T726	
+T731	Action 7646 7656	pre-cooled
+E48	Action:T731 Acts-on:T571
+T732	Action 9400 9409	resuspend
+E49	Action:T732 Acts-on:T704 Using:T702 Count:T703
+T733	Action 9416 9421	Place
+E213	Action:T733 Site:T734
+T734	Device 9427 9441	magnetic stand
+T735	Time 9465 9470	3 min
+T736	Action 9472 9480	Transfer
+E214	Action:T736 Acts-on:T741 Site:T740
+T737	Amount 9485 9490	30 µL
+T738	Modifier 9517 9520	new
+T739	Amount 9521 9527	0.6-mL
+T740	Location 9528 9532	tube
+T741	Reagent 9494 9513	adapter ligated DNA
+T742	Action 9534 9541	Prepare
+E215	Action:T742 Acts-on:T743
+T743	Reagent 9542 9561	KAPA PCR Master Mix
+T744	Amount 9564 9569	20 µL
+T745	Reagent 9574 9580	sample
+R239	Measure Arg1:T741 Arg2:T737	
+R240	Mod-Link Arg1:T740 Arg2:T738	
+R241	Measure Arg1:T740 Arg2:T739	
+R242	Measure Arg1:T745 Arg2:T744	
+T746	Action 9584 9587	Add
+E216	Action:T746 Acts-on:T748 Site:T749
+T747	Amount 9588 9593	20 µL
+T748	Reagent 9594 9613	KAPA PCR Master Mix
+T749	Reagent 9622 9628	sample
+T750	Action 9633 9636	mix
+E217	Action:T750 Acts-on:T749 Using:T753 Count:T754
+T751	Modifier 9637 9641	well
+T753	Method 9645 9666	pipetting up and down
+T754	Numerical 9667 9675	10 times
+R243	Mod-Link Arg1:E217 Arg2:T751	
+R244	Measure Arg1:T748 Arg2:T747	
+T755	Action 9677 9682	Place
+E219	Action:T755 Site:T756
+T756	Device 9686 9698	thermocycler
+T757	Action 9703 9706	run
+E220	Action:T757 
+T758	Method 9721 9728	program
+T759	Modifier 9734 9740	heated
+T760	Seal 9741 9744	lid
+R245	Mod-Link Arg1:T760 Arg2:T759	
+T761	Action 9756 9759	Add
+E221	Action:T761 Acts-on:T774
+T762	Numerical 9760 9765	1.1 X
+T763	Measure-Type 9770 9776	volume
+T764	Action 9843 9846	mix
+E222	Action:T764 Using:T767 Count:T768
+T765	Modifier 9847 9851	well
+T767	Method 9855 9876	pipetting up and down
+T768	Numerical 9877 9885	10 times
+T769	Amount 9819 9824	55 µL
+T770	Action 9815 9818	add
+E224	Action:T770 Acts-on:T773 Site:T771
+T771	Reagent 9808 9814	sample
+T772	Amount 9802 9807	50 µL
+T773	Reagent 9825 9837	Ampure Beads
+T774	Reagent 9780 9792	Ampure Beads
+R246	Measure Arg1:T771 Arg2:T772	
+R247	Measure Arg1:T773 Arg2:T769	
+R248	Mod-Link Arg1:E222 Arg2:T765	
+T775	Action 9887 9893	Repeat
+E225	Action:T775 
+T776	Action 9910 9914	wash
+E226	Action:T776 Acts-on:T777 Using:T779
+T777	Reagent 9919 9924	beads
+T778	Concentration 9944 9947	80%
+T779	Reagent 9948 9952	EtOH
+T780	Action 9954 9960	Repeat
+E227	Action:T780 
+T781	Action 9978 9982	wash
+E228	Action:T781 Acts-on:T782 Using:T784
+T782	Reagent 9987 9992	beads
+T783	Concentration 10012 10015	80%
+T784	Reagent 10016 10020	EtOH
+R250	Measure Arg1:T779 Arg2:T778	
+R251	Measure Arg1:T784 Arg2:T783	
+T785	Action 10022 10028	Remove
+E229	Action:T785 Acts-on:T786 Site:T787
+T786	Location 10029 10033	tube
+T787	Device 10043 10049	magnet
+T788	Action 10051 10054	add
+E230	Action:T788 Acts-on:T792
+T789	Amount 10055 10063	25-55 µL
+T790	Concentration 10064 10068	10mM
+T791	pH 10078 10082	pH 8
+T792	Reagent 10069 10077	Tris-HCl
+T794	Method 10088 10107	pipette up and down
+T795	Numerical 10108 10111	10X
+T796	Reagent 10125 10130	beads
+R252	Measure Arg1:T792 Arg2:T789	
+R253	Measure Arg1:T792 Arg2:T790	
+R254	Measure Arg1:T792 Arg2:T791	
+T797	Action 10132 10140	Transfer
+E232	Action:T797 Acts-on:T803 Site:T801
+T798	Amount 10145 10152	20-50uL
+T799	Modifier 10179 10182	new
+T800	Amount 10183 10189	1.5 mL
+T801	Location 10190 10194	tube
+R255	Mod-Link Arg1:T801 Arg2:T799	
+R256	Measure Arg1:T801 Arg2:T800	
+T802	Method 10156 10163	CUT&RUN
+T803	Reagent 10164 10167	DNA
+T804	Action 10196 10204	Quantify
+E233	Action:T804 Using:T805
+T805	Method 10225 10245	dsDNA-specific assay
+T806	Method 10255 10260	Qubit
+R257	Measure Arg1:T803 Arg2:T798	
+T807	Action 10262 10271	Determine
+E234	Action:T807 Using:T808
+T808	Method 10310 10343	Agilent 4200 TapeStation analysis
+T809	Action 10345 10349	Pool
+E235	Action:T809 Acts-on:T810
+T810	Reagent 10350 10357	samples
+T811	Measure-Type 10361 10385	equimolar concentrations
+T812	Action 10390 10397	perform
+E236	Action:T812 Using:T813
+T813	Method 10398 10428	paired-end Illumina sequencing
+T814	Method 10530 10551	Bowtie2 version 2.2.5
+T815	Action 10501 10506	align
+E237	Action:T815 
+T816	Action 10699 10702	use
+E238	Action:T816 
+T817	Reagent 10816 10819	DNA
+T818	Action 9446 9460	allow to clear
+E239	Action:T818 
+R258	Setting Arg1:E239 Arg2:T735	
+T819	Action 10115 10124	resuspend
+E240	Action:T819 Acts-on:T796 Using:T794 Count:T795
+T820	Reagent 220 226	sample
+R259	Setting Arg1:E10 Arg2:T32	
+T35	Method 527 536	pipetting
+T821	Modifier 814 818	each
+R11	Mod-Link Arg1:T60 Arg2:T821	
+T822	Modifier 716 726	bead-bound
+R260	Mod-Link Arg1:T49 Arg2:T822	
+T823	Modifier 906 910	each
+R261	Mod-Link Arg1:T62 Arg2:T823	
+R262	Setting Arg1:E20 Arg2:T117	
+T825	Action 951 961	set to low
+E11	Action:T825 Acts-on:T64
+T824	Reagent 1022 1028	sample
+T826	Action 1134 1142	dislodge
+E241	Action:T826 Acts-on:T76
+T827	Modifier 1147 1156	remaining
+R35	Mod-Link Arg1:T76 Arg2:T827	
+R263	Setting Arg1:E26 Arg2:T89	
+R264	Setting Arg1:E26 Arg2:T90	
+T828	Modifier 1502 1503	~
+R265	Mod-Link Arg1:T99 Arg2:T828	
+T112	Method 1598 1607	pipetting
+T829	Method 1651 1665	Dig-wash steps
+T830	Modifier 1736 1737	~
+R31	Mod-Link Arg1:T119 Arg2:T830	
+T831	Action 1724 1734	set to low
+E33	Action:T831 Acts-on:T118
+T832	Action 1890 1898	dislodge
+E242	Action:T832 Acts-on:T128
+R266	Mod-Link Arg1:T167 Arg2:T166	
+R267	Measure Arg1:T165 Arg2:T168	
+T833	Modifier 2105 2106	~
+R268	Mod-Link Arg1:T175 Arg2:T833	
+T834	Modifier 2139 2140	~
+R269	Mod-Link Arg1:T178 Arg2:T834	
+T194	Method 2246 2255	pipetting
+T835	Method 2282 2296	Dig-wash steps
+R43	Setting Arg1:E57 Arg2:T191	
+T836	Action 2355 2365	set to low
+E58	Action:T836 Acts-on:T192
+R36	Setting Arg1:E35 Arg2:T116	
+T837	Modifier 2367 2368	~
+R66	Mod-Link Arg1:T193 Arg2:T837	
+R270	Measure Arg1:T198 Arg2:T196	
+R271	Measure Arg1:T197 Arg2:T199	
+R272	Measure Arg1:T201 Arg2:T208	
+T838	Action 2632 2640	dislodge
+E243	Action:T838 Acts-on:T207
+T839	Modifier 2694 2695	~
+R273	Mod-Link Arg1:T212 Arg2:T839	
+T222	Method 2799 2808	pipetting
+T840	Method 2835 2843	Dig-wash
+R74	Setting Arg1:E67 Arg2:T225	
+T841	Action 2908 2918	set to low
+E66	Action:T841 Acts-on:T226
+T842	Modifier 2920 2921	~
+R76	Mod-Link Arg1:T227 Arg2:T842	
+T231	Action 3073 3081	dislodge
+E244	Action:T231 Acts-on:T235
+T843	Modifier 3082 3086	most
+T844	Modifier 3090 3093	all
+R274	Mod-Link Arg1:T235 Arg2:T844	
+R275	Mod-Link Arg1:T235 Arg2:T843	
+R276	Or Arg1:T843 Arg2:T844	
+R277	Meronym Arg1:T243 Arg2:T239	
+T845	Reagent 3266 3272	sample
+T254	Method 3346 3355	vortexing
+R85	Setting Arg1:T259 Arg2:T258	
+R278	Setting Arg1:E77 Arg2:T264	
+R279	Measure Arg1:T282 Arg2:T281	
+T269	Method 3521 3530	vortexing
+T280	Method 3666 3675	vortexing
+T846	Modifier 3739 3748	insoluble
+R88	Mod-Link Arg1:T287 Arg2:T846	
+T847	Action 3704 3711	release
+E75	Action:T847 Acts-on:T286
+T848	Modifier 3990 3991	~
+R93	Mod-Link Arg1:T140 Arg2:T848	
+T441	Action 4039 4045	Repeat
+E80	Action:T441 
+T849	Method 4046 4060	Dig-wash steps
+T309	Method 4198 4207	pipetting
+R105	Setting Arg1:E95 Arg2:T319	
+T850	Action 4356 4368	set to low (
+E84	Action:T850 Acts-on:T320
+T851	Modifier 4368 4369	~
+R109	Mod-Link Arg1:T321 Arg2:T851	
+T852	Action 4487 4495	dislodge
+E92	Action:T852 Acts-on:T331
+T327	Method 4708 4717	vortexing
+T347	Modifier 4755 4756	~
+R112	Mod-Link Arg1:T158 Arg2:T347	
+T381	Method 4803 4817	Dig-wash steps
+R118	Setting Arg1:E105 Arg2:T350	
+T853	Action 4876 4886	set to low
+E97	Action:T853 Acts-on:T351
+T854	Modifier 4888 4889	~
+R119	Mod-Link Arg1:T352 Arg2:T854	
+T360	Action 5054 5062	dislodge
+E104	Action:T360 Acts-on:T364
+T855	Action 4452 4461	vortexing
+E107	Action:T855 Acts-on:T328
+R125	Mod-Link Arg1:E107 Arg2:T326	
+T358	Action 5019 5028	vortexing
+E128	Action:T358 Acts-on:T361
+R280	Mod-Link Arg1:E128 Arg2:T359	
+R281	Or Arg1:T363 Arg2:T362	
+R282	Or Arg1:T127 Arg2:T126	
+R283	Or Arg1:T330 Arg2:T329	
+R284	Meronym Arg1:T369 Arg2:T368	
+T856	Amount 5281 5286	24 μL
+T857	Concentration 5598 5602	0.1%
+R285	Measure Arg1:T407 Arg2:T857	
+T858	Modifier 6076 6077	~
+R286	Mod-Link Arg1:T448 Arg2:T858	
+T451	Method 6177 6186	pipetting
+R287	Meronym Arg1:T456 Arg2:T453	
+R288	Measure Arg1:T456 Arg2:T457	
+T465	Method 6316 6325	vortexing
+R289	Or Arg1:T466 Arg2:T465	
+R290	Measure Arg1:T529 Arg2:T516	
+T526	Modifier 7218 7228	pre-cooled
+R174	Mod-Link Arg1:T533 Arg2:T526	
+T530	Modifier 7422 7426	each
+R291	Mod-Link Arg1:T547 Arg2:T530	
+T859	Modifier 7475 7478	per
+R292	Mod-Link Arg1:T554 Arg2:T859	
+T860	Modifier 216 219	per
+R293	Mod-Link Arg1:T820 Arg2:T860	
+T861	Modifier 1018 1021	per
+R294	Mod-Link Arg1:T824 Arg2:T861	
+T862	Modifier 1788 1791	per
+R295	Mod-Link Arg1:T133 Arg2:T862	
+T863	Modifier 2529 2532	per
+R296	Mod-Link Arg1:T145 Arg2:T863	
+T864	Modifier 2970 2973	per
+R297	Mod-Link Arg1:T146 Arg2:T864	
+T865	Modifier 3262 3265	per
+R298	Mod-Link Arg1:T845 Arg2:T865	
+T866	Modifier 4951 4954	per
+R299	Mod-Link Arg1:T160 Arg2:T866	
+T867	Modifier 9570 9573	per
+R300	Mod-Link Arg1:T745 Arg2:T867	
+T868	Modifier 7549 7553	each
+R301	Mod-Link Arg1:T563 Arg2:T868	
+T566	Modifier 7826 7830	each
+R302	Mod-Link Arg1:T587 Arg2:T566	
+T590	Method 7851 7860	vortexing
+T869	Method 7967 7976	vortexing
+R303	Measure Arg1:T604 Arg2:T615	
+R304	Of-Type Arg1:T615 Arg2:T603	
+T599	Action 8236 8240	bind
+E133	Action:T599 Acts-on:T619 Using:T653
+T612	Modifier 8550 8561	second time
+R305	Mod-Link Arg1:E192 Arg2:T612	
+T662	Action 8734 8743	resuspend
+E136	Action:T662 Using:T663 Acts-on:T665
+T870	Action 8785 8794	elute off
+E154	Action:T870 Acts-on:T669 Using:T668
+R220	Meronym Arg1:T674 Arg2:T672	
+R306	Meronym Arg1:T676 Arg2:T672	
+R307	Of-Type Arg1:T721 Arg2:T722	
+T24	Method 381 390	pipetting
+T714	Action 9199 9203	wash
+E7	Action:T714 Acts-on:T718 Using:T720
+T871	Modifier 9216 9227	second time
+R9	Mod-Link Arg1:E7 Arg2:T871	
+T701	Modifier 9563 9564	~
+R308	Mod-Link Arg1:T744 Arg2:T701	
+T872	Modifier 9617 9621	each
+R309	Mod-Link Arg1:T749 Arg2:T872	
+R310	Of-Type Arg1:T762 Arg2:T763	
+R311	Measure Arg1:T774 Arg2:T762	
+R312	Measure Arg1:T723 Arg2:T721	
+T752	Modifier 9927 9938	second time
+R249	Mod-Link Arg1:E226 Arg2:T752	
+T766	Modifier 9995 10006	second time
+R313	Mod-Link Arg1:E228 Arg2:T766	
+T793	Reagent 10785 10791	genome
+T873	Modifier 73 76	low
+R314	Mod-Link Arg1:T130 Arg2:T873	
+R315	Mod-Link Arg1:T16 Arg2:T17	
+T874	Modifier 234 253	digestion time poin
+R316	Mod-Link Arg1:T24 Arg2:T23	
+R317	Mod-Link Arg1:T35 Arg2:T34	
+R318	Mod-Link Arg1:T48 Arg2:T47	
+R319	Acts-on Arg1:E16 Arg2:T49	
+T875	Modifier 963 964	~
+R320	Mod-Link Arg1:T63 Arg2:T875	
+R321	Mod-Link Arg1:T112 Arg2:T111	
+R322	Or Arg1:T112 Arg2:T108	
+T876	Reagent 1628 1634	clumps
+R323	Mod-Link Arg1:T194 Arg2:T188	
+T877	Reagent 2259 2265	clumps
+R324	Mod-Link Arg1:T222 Arg2:T221	
+T878	Reagent 2812 2818	clumps
+R325	Mod-Link Arg1:T309 Arg2:T308	
+T879	Reagent 4211 4217	clumps

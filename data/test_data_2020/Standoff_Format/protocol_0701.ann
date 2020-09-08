@@ -1,0 +1,105 @@
+T1	Method 12 22	extraction
+T2	Action 23 26	Add
+E1	Action:T2 Acts-on:T4 Site:T6 Site2:T7
+T3	Amount 27 31	50ul
+T4	Reagent 35 58	alkaline lysis solution
+T5	Size 64 69	0.2ml
+T6	Location 70 79	PCR tubes
+T7	Location 84 101	96 well PCR plate
+T8	Action 107 110	add
+E2	Action:T8 Acts-on:T9
+T9	Reagent 111 117	tissue
+R1	Measure Arg1:T4 Arg2:T3	
+R2	Measure Arg1:T6 Arg2:T5	
+T10	Reagent 118 127	Solutions
+T13	Reagent 182 190	solution
+T14	Reagent 195 201	tissue
+T15	Modifier 210 215	major
+T16	Measure-Type 216 227	determinant
+T17	Modifier 235 239	well
+T18	Method 245 259	DNA extraction
+T19	Action 265 269	work
+E3	Action:T19 Using:T18
+T20	Modifier 271 279	Too much
+T21	Reagent 280 286	tissue
+T22	Modifier 294 305	most common
+T23	Action 306 311	cause
+E4	Action:T23 
+T24	Method 315 326	PCR failure
+T26	Method 337 344	HotSHOT
+R5	Mod-Link Arg1:T21 Arg2:T20	
+R6	Mod-Link Arg1:E4 Arg2:T22	
+T27	Modifier 346 357	Sub-visible
+T28	Reagent 372 378	tissue
+T29	Measure-Type 383 387	size
+T30	Action 405 408	try
+E5	Action:T30 
+T31	Amount 409 413	25ul
+R8	Setting Arg1:E5 Arg2:T31	
+T32	Reagent 415 421	Tissue
+T33	Measure-Type 426 430	size
+T34	Action 460 464	need
+E6	Action:T34 Acts-on:T32
+T35	Modifier 454 459	might
+T36	Amount 465 469	75ul
+R9	Setting Arg1:E6 Arg2:T36	
+R10	Mod-Link Arg1:E6 Arg2:T35	
+T37	Action 471 476	Begin
+E7	Action:T37 
+T38	Action 480 486	trying
+E8	Action:T38 
+T39	Modifier 487 493	a few 
+T40	Measure-Type 493 518	tissue to solution ratios
+T42	Modifier 543 551	Too much
+T43	Reagent 552 558	tissue
+T44	Modifier 566 577	most common
+T45	Action 578 583	cause
+E9	Action:T45 
+T46	Method 599 606	HotSHOT
+R12	Mod-Link Arg1:T43 Arg2:T42	
+R13	Mod-Link Arg1:E9 Arg2:T44	
+T47	Action 618 626	Incubate
+E10	Action:T47 Site:T50
+T48	Temperature 630 634	95°C
+T49	Time 639 649	30 minutes
+T50	Device 656 667	PCR machine
+R14	Setting Arg1:E10 Arg2:T48	
+R15	Setting Arg1:E10 Arg2:T49	
+T51	Action 670 674	Add 
+E11	Action:T51 Acts-on:T55
+T52	Amount 674 678	50ul
+T53	Modifier 683 688	equal
+T54	Measure-Type 689 695	volume
+T55	Reagent 700 721	neutralizing solution
+R16	Measure Arg1:T55 Arg2:T52	
+T56	Action 723 728	Store
+E12	Action:T56 
+T57	Temperature 732 735	4°C
+T58	Temperature 739 744	-20°C
+T59	Modifier 749 753	long
+T60	Time 754 761	periods
+R17	Setting Arg1:E12 Arg2:T60	
+R18	Mod-Link Arg1:T60 Arg2:T59	
+R19	Setting Arg1:E12 Arg2:T57	
+R20	Setting Arg1:E12 Arg2:T58	
+T61	Action 763 766	Use
+E13	Action:T61 
+T62	Amount 767 772	1-5ul
+T63	Method 778 790	PCR reaction
+R21	Setting Arg1:E13 Arg2:T62	
+T64	Reagent 0 11	HotSHOT DNA
+R22	Acts-on Arg1:T1 Arg2:T64	
+R23	Or Arg1:T6 Arg2:T7	
+T12	Location 148 167	Description section
+T11	Action 132 140	detailed
+E14	Action:T11 
+R4	Acts-on Arg1:E14 Arg2:T10	
+R24	Site Arg1:E14 Arg2:T12	
+T65	Measure-Type 172 178	volume
+R3	Mod-Link Arg1:T18 Arg2:T17	
+T25	Generic-Measure 436 453	10pt Arial font o
+R7	Acts-on Arg1:E8 Arg2:T40	
+R11	Mod-Link Arg1:T40 Arg2:T39	
+T41	Modifier 587 594	failure
+R25	Mod-Link Arg1:T46 Arg2:T41	
+R26	Mod-Link Arg1:T54 Arg2:T53	

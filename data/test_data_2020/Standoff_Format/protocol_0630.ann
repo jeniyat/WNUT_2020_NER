@@ -1,0 +1,55 @@
+T1	Action 21 28	Prepare
+E1	Action:T1 Product:T6 Site:T16
+T2	Action 84 91	Prepare
+E2	Action:T2 Product:T7 Site:T19
+T3	Action 138 141	Mix
+E3	Action:T3 Acts-on:T10 Acts-on2:T13
+T4	Action 179 183	Make
+E4	Action:T4 Measure-Type-Link:T26 Using:T28
+T5	Action 234 242	Dissolve
+E5	Action:T5 Acts-on:T20 Site:T21 Measure-Type-Link:T22 Acts-on2:T30 Site2:T32
+T6	Reagent 29 43	stock solution
+T7	Reagent 92 106	stock solution
+T8	Amount 142 147	50 mL
+T9	Concentration 148 151	4 M
+T10	Reagent 152 156	NaCl
+T11	Amount 161 166	50 mL
+T12	Concentration 167 172	0.5 M
+T13	Reagent 173 177	EDTA
+T14	Concentration 47 50	4 M
+T15	Reagent 51 66	Sodium chloride
+T16	Reagent 70 82	MilliQ water
+T17	Concentration 110 115	0.5 M
+T18	Reagent 116 121	EDTA 
+T19	Reagent 124 136	MilliQ water
+T20	Reagent 243 246	SDS
+T21	Reagent 250 260	DNA Buffer
+T22	Measure-Type 272 285	concentration
+T23	Concentration 289 291	1%
+T24	Modifier 266 271	final
+T25	Modifier 192 197	final
+T26	Measure-Type 198 204	volume
+T27	Amount 208 214	500 mL
+T28	Reagent 220 232	MilliQ water
+T29	Amount 304 307	5 g
+T30	Reagent 308 311	SDS
+T31	Amount 315 321	500 mL
+T32	Reagent 325 335	DNA Buffer
+R1	Measure Arg1:T15 Arg2:T14	
+R2	Meronym Arg1:T15 Arg2:T6	
+R3	Meronym Arg1:T16 Arg2:T6	
+R4	Measure Arg1:T18 Arg2:T17	
+R5	Meronym Arg1:T18 Arg2:T7	
+R6	Meronym Arg1:T19 Arg2:T7	
+R7	Measure Arg1:T10 Arg2:T8	
+R8	Measure Arg1:T10 Arg2:T9	
+R9	Measure Arg1:T13 Arg2:T11	
+R10	Measure Arg1:T13 Arg2:T12	
+R16	Measure Arg1:T21 Arg2:T23	
+R17	Measure Arg1:T30 Arg2:T29	
+R18	Measure Arg1:T32 Arg2:T31	
+T33	Concentration 0 2	1%
+T34	Reagent 3 6	SDS
+T35	Reagent 10 20	DNA Buffer
+R19	Measure Arg1:T34 Arg2:T33	
+T36	Measure-Type 293 296	w/v

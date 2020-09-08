@@ -1,0 +1,172 @@
+T1	Method 0 16	Nuclei isolation
+T2	Reagent 22 34	human kidney
+T3	Modifier 39 53	single-nucleus
+T4	Method 54 61	RNA-seq
+T5	Action 62 69	Precool
+E1	Action:T5 Acts-on:T7 Acts-on2:T8
+T6	Modifier 70 73	all
+T7	Device 74 85	instruments
+T8	Reagent 90 97	buffers
+R1	Mod-Link Arg1:T7 Arg2:T6	
+R2	Mod-Link Arg1:T8 Arg2:T6	
+T9	Action 99 104	Start
+E2	Action:T9 Acts-on:T10
+T10	Reagent 110 122	kidney cubes
+T11	Modifier 131 136	fresh
+T12	Modifier 140 151	snap frozen
+T14	Size 153 170	smaller than 8 mm
+R3	Measure Arg1:T10 Arg2:T14	
+R4	Mod-Link Arg1:T10 Arg2:T11	
+R5	Mod-Link Arg1:T10 Arg2:T12	
+T13	Action 177 182	place
+E3	Action:T13 Acts-on:T16
+T15	Size 188 193	60 mm
+T16	Location 194 198	dish
+R6	Measure Arg1:T16 Arg2:T15	
+T17	Action 200 203	Add
+E4	Action:T17 Acts-on:T19
+T18	Amount 204 208	1 ml
+T19	Reagent 212 216	NLB1
+T20	Action 223 228	mince
+E5	Action:T20 Using:T23
+T21	Modifier 229 238	very well
+T22	Modifier 246 251	fresh
+T23	Device 252 263	razor blade
+R7	Mod-Link Arg1:E5 Arg2:T21	
+R8	Mod-Link Arg1:T23 Arg2:T22	
+R9	Measure Arg1:T19 Arg2:T18	
+T24	Action 265 273	Transfer
+E6	Action:T24 Acts-on:T26 Acts-on2:T27 Site:T28
+T25	Modifier 278 284	minced
+T26	Reagent 285 291	tissue
+T27	Reagent 297 301	NLB1
+T28	Device 309 330	Dounce tissue grinder
+T29	Action 335 338	add
+E7	Action:T29 Acts-on:T32
+T30	Modifier 339 346	another
+T31	Amount 347 351	1 ml
+T32	Reagent 355 359	NLB1
+R10	Measure Arg1:T32 Arg2:T31	
+R11	Mod-Link Arg1:T32 Arg2:T30	
+R12	Mod-Link Arg1:T26 Arg2:T25	
+T33	Action 361 366	Grind
+E8	Action:T33 Count:T34 Using:T36
+T34	Numerical 367 378	20-30 times
+T35	Modifier 386 391	loose
+T36	Device 392 398	pestle
+T37	Action 405 409	pass
+E9	Action:T37 Acts-on:T38 Site:T40
+T38	Reagent 414 424	homogenate
+T39	Size 435 441	200 µm
+T40	Device 442 450	strainer
+T41	Action 455 462	collect
+E10	Action:T41 Using:T44
+T42	Size 468 473	50 ml
+T43	Modifier 474 481	conical
+T44	Location 482 486	tube
+R13	Mod-Link Arg1:T44 Arg2:T43	
+R14	Mod-Link Arg1:T36 Arg2:T35	
+R15	Measure Arg1:T40 Arg2:T39	
+R16	Measure Arg1:T44 Arg2:T42	
+T45	Action 488 496	Transfer
+E11	Action:T45 Acts-on:T46 Site:T48
+T46	Reagent 501 511	homogenate
+T47	Modifier 512 517	again
+T48	Device 525 546	Dounce tissue grinder
+R17	Mod-Link Arg1:E11 Arg2:T47	
+T49	Action 548 553	Grind
+E12	Action:T49 Acts-on:T50 Count:T51 Using:T53
+T50	Reagent 558 568	homogenate
+T51	Numerical 569 580	10-15 times
+T52	Modifier 588 593	tight
+T53	Device 594 600	pestle
+R18	Mod-Link Arg1:T53 Arg2:T52	
+T54	Action 602 605	Add
+E13	Action:T54 Acts-on:T56
+T55	Amount 606 610	2 ml
+T56	Reagent 614 618	NLB1
+T57	Action 623 631	incubate
+E14	Action:T57 
+T58	Time 636 641	5 min
+T59	Temperature 642 648	on ice
+R19	Measure Arg1:T56 Arg2:T55	
+R20	Setting Arg1:E14 Arg2:T59	
+R21	Setting Arg1:E14 Arg2:T58	
+T60	Action 650 654	Pass
+E15	Action:T60 Acts-on:T61 Site2:T66 Using:T63
+T61	Reagent 659 669	homogenate
+T62	Size 680 685	40 µm
+T63	Device 686 694	strainer
+T64	Size 700 705	50 ml
+T65	Modifier 706 713	conical
+T66	Location 714 718	tube
+T67	Action 720 728	Transfer
+E16	Action:T67 Acts-on:T68 Site:T71
+T68	Reagent 733 743	homogenate
+T69	Size 751 756	15 ml
+T70	Modifier 757 764	conical
+T71	Location 765 769	tube
+R22	Measure Arg1:T63 Arg2:T62	
+R23	Measure Arg1:T66 Arg2:T64	
+R24	Mod-Link Arg1:T66 Arg2:T65	
+R25	Mod-Link Arg1:T71 Arg2:T70	
+R26	Measure Arg1:T71 Arg2:T69	
+T72	Action 771 781	Centrifuge
+E17	Action:T72 Acts-on:T73
+T73	Location 786 790	tube
+T74	Speed 794 799	500 G
+T75	Time 804 809	5 min
+T76	Temperature 813 816	4°C
+R27	Setting Arg1:E17 Arg2:T74	
+R28	Setting Arg1:E17 Arg2:T75	
+R29	Setting Arg1:E17 Arg2:T76	
+T77	Action 818 825	Discard
+E18	Action:T77 Acts-on:T78
+T78	Reagent 826 837	supernatant
+T79	Modifier 839 848	Carefully
+T80	Action 849 856	suspend
+E19	Action:T80 Acts-on:T81 Using:T83
+T81	Reagent 861 867	pellet
+T82	Amount 871 875	4 ml
+T83	Reagent 879 883	NLB2
+R30	Mod-Link Arg1:E19 Arg2:T79	
+R31	Measure Arg1:T83 Arg2:T82	
+T84	Action 885 893	Incubate
+E20	Action:T84 
+T85	Temperature 894 900	on ice
+T86	Time 905 910	5 min
+R32	Setting Arg1:E20 Arg2:T85	
+R33	Setting Arg1:E20 Arg2:T86	
+T87	Action 912 922	Centrifuge
+E21	Action:T87 
+T88	Speed 926 931	500 G
+T89	Time 936 941	5 min
+T90	Temperature 945 948	4°C
+R34	Setting Arg1:E21 Arg2:T88	
+R35	Setting Arg1:E21 Arg2:T89	
+R36	Setting Arg1:E21 Arg2:T90	
+T92	Action 960 967	suspend
+E23	Action:T92 Acts-on:T93 Using:T95
+T91	Modifier 950 959	Carefully
+T93	Reagent 972 978	pellet
+T94	Amount 982 986	2 ml
+T95	Reagent 990 993	NSB
+R37	Mod-Link Arg1:E23 Arg2:T91	
+R38	Measure Arg1:T95 Arg2:T94	
+T96	Action 995 999	Pass
+E22	Action:T96 Acts-on:T97 Using:T99 Site:T102
+T97	Reagent 1004 1014	suspension
+T98	Size 1025 1029	5 µm
+T99	Device 1030 1038	strainer
+T100	Size 1044 1049	50 ml
+T101	Modifier 1050 1057	conical
+T102	Location 1058 1062	tube
+R39	Measure Arg1:T99 Arg2:T98	
+R40	Mod-Link Arg1:T102 Arg2:T101	
+R41	Measure Arg1:T102 Arg2:T100	
+T103	Action 1064 1069	Count
+E24	Action:T103 Acts-on:T104 Using:T105
+T104	Reagent 1070 1076	nuclei
+T105	Device 1080 1093	hemocytometer
+R42	Mod-Link Arg1:T4 Arg2:T3	
+R43	Or Arg1:T11 Arg2:T12	

@@ -1,0 +1,88 @@
+T1	Method 0 36	DNA Clean & Concentrator™-5 Protocol
+T2	Size 42 48	1.5 ml
+T3	Location 49 69	microcentrifuge tube
+T4	Action 71 74	add
+E1	Action:T4 Site:T3 Acts-on:T7
+T5	Numerical 75 78	2-7
+T6	Measure-Type 79 86	volumes
+T7	Reagent 90 108	DNA Binding Buffer
+T8	Modifier 112 116	each
+T9	Measure-Type 117 123	volume
+T10	Reagent 127 137	DNA sample
+R2	Measure Arg1:T3 Arg2:T2	
+R3	Measure Arg1:T7 Arg2:T5	
+T11	Action 157 160	Mix
+E2	Action:T11 Using:T13
+T12	Modifier 161 168	briefly
+T13	Method 172 181	vortexing
+R4	Mod-Link Arg1:E2 Arg2:T12	
+T14	Modifier 187 196	efficient
+T15	Action 197 205	recovery
+E3	Action:T15 Acts-on:T18 Using:T21
+T16	Modifier 209 216	genomic
+T17	Modifier 220 225	large
+T18	Reagent 226 229	DNA
+T19	Generic-Measure 231 250	> 20 kb to > 200 kb
+T21	Device 261 293	Genomic DNA Clean & Concentrator
+R5	Mod-Link Arg1:E3 Arg2:T14	
+R6	Mod-Link Arg1:T18 Arg2:T17	
+R7	Mod-Link Arg1:T18 Arg2:T16	
+R8	Measure Arg1:T18 Arg2:T19	
+T22	Action 321 329	Transfer
+E4	Action:T22 Acts-on:T23 Site:T25 Site2:T26
+T23	Reagent 330 337	mixture
+T24	Modifier 343 351	provided
+T25	Device 352 370	Zymo-Spin™ Column2
+T26	Location 376 391	Collection Tube
+R10	Mod-Link Arg1:T25 Arg2:T24	
+T27	Action 393 403	Centrifuge
+E5	Action:T27 
+T28	Time 408 418	30 seconds
+R11	Setting Arg1:E5 Arg2:T28	
+T29	Action 420 427	Discard
+E6	Action:T29 Acts-on:T30
+T30	Reagent 432 444	flow-through
+T31	Action 446 449	Add
+E7	Action:T31 Acts-on:T33 Site:T34
+T32	Amount 450 456	200 μl
+T33	Reagent 457 472	DNA Wash Buffer
+T34	Device 480 486	column
+R12	Measure Arg1:T33 Arg2:T32	
+T35	Action 489 493	wash
+E8	Action:T35 
+T36	Action 501 505	wash
+E9	Action:T36 
+T38	Amount 518 521	6 μ
+T39	Reagent 523 541	DNA Elution Buffer
+T40	Reagent 546 551	water
+T41	Modifier 553 561	directly
+T42	Device 569 582	column matrix
+T43	Action 587 595	incubate
+E10	Action:T43 
+T44	Temperature 599 615	room temperature
+T45	Time 620 630	one minute
+T37	Action 512 515	Add
+E11	Action:T37 Acts-on:T39 Acts-on2:T40 Site:T42
+R13	Measure Arg1:T39 Arg2:T38	
+R14	Mod-Link Arg1:E11 Arg2:T41	
+R15	Setting Arg1:E10 Arg2:T44	
+R16	Setting Arg1:E10 Arg2:T45	
+T46	Action 632 640	Transfer
+E12	Action:T46 Acts-on:T47 Site:T49
+T47	Device 645 651	column
+T48	Size 657 663	1.5 ml
+T49	Location 664 684	microcentrifuge tube
+T50	Action 689 699	centrifuge
+E13	Action:T50 
+T51	Time 704 714	30 seconds
+T52	Action 718 723	elute
+E14	Action:T52 Acts-on:T53
+T53	Reagent 728 731	DNA
+R17	Setting Arg1:E13 Arg2:T51	
+R18	Measure Arg1:T49 Arg2:T48	
+R19	Of-Type Arg1:T5 Arg2:T6	
+R20	Mod-Link Arg1:T9 Arg2:T8	
+T20	Modifier 516 517	≥
+R1	Mod-Link Arg1:T38 Arg2:T20	
+R9	Acts-on Arg1:E10 Arg2:T42	
+R21	Acts-on Arg1:E13 Arg2:T49	

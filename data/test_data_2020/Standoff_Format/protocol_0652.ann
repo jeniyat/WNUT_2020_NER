@@ -1,0 +1,22 @@
+T1	Reagent 28 31	DNA
+T2	Amount 32 35	1µg
+R1	Measure Arg1:T1 Arg2:T2	
+T3	Amount 50 53	5µl
+T4	Reagent 41 49	NEBuffer
+T5	Concentration 55 57	1X
+T6	Numerical 37 40	10X
+T7	Reagent 60 78	Restriction Enzyme
+T8	Method 0 27	Restriction Digest Reaction
+T9	Numerical 81 89	10 units
+T10	Amount 115 118	1µl
+R2	Measure Arg1:T4 Arg2:T6	
+R3	Measure Arg1:T4 Arg2:T5	
+R4	Measure Arg1:T4 Arg2:T3	
+T11	Action 122 126	used
+E1	Action:T11 
+T12	Modifier 105 114	generally
+R5	Mod-Link Arg1:E1 Arg2:T12	
+R6	Setting Arg1:E1 Arg2:T10	
+T13	Modifier 93 103	sufficient
+R7	Mod-Link Arg1:T9 Arg2:T13	
+R8	Measure Arg1:T7 Arg2:T9	

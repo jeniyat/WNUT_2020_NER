@@ -1,0 +1,263 @@
+T1	Reagent 0 17	Drosophila embryo
+T2	Method 18 28	collection
+T3	Action 29 34	Place
+E1	Action:T3 Acts-on:T4 Site:T5
+T4	Location 38 54	apple-agar plate
+T5	Location 62 84	embryo collection cage
+T6	Action 88 95	provide
+E2	Action:T6 Acts-on:T7
+T7	Reagent 98 107	substrate
+T8	Method 112 122	egg laying
+T9	Modifier 124 132	Prior to
+T10	Action 133 139	adding
+E3	Action:T10 Site:T11
+T11	Location 144 149	plate
+R1	Mod-Link Arg1:E3 Arg2:T9	
+T12	Action 151 156	smear
+E4	Action:T12 Acts-on:T15 Measure-Type-Link:T14 Site:T21
+T13	Modifier 159 164	small
+T14	Measure-Type 165 173	quantity
+T15	Reagent 177 188	yeast paste
+T16	Modifier 190 193	dry
+T17	Reagent 194 199	yeast
+T18	Action 200 205	mixed
+E5	Action:T18 Acts-on:T17 Acts-on2:T19
+T19	Reagent 211 216	water
+T20	Modifier 222 252	peanut-butter like consistency
+R2	Mod-Link Arg1:T17 Arg2:T16	
+R3	Mod-Link Arg1:E5 Arg2:T20	
+T21	Location 263 269	centre
+T22	Reagent 277 287	apple-agar
+R4	Meronym Arg1:T21 Arg2:T22	
+R5	Mod-Link Arg1:T15 Arg2:T13	
+T23	Reagent 305 310	yeast
+T24	Action 316 325	encourage
+E6	Action:T24 Using:T23
+T25	Method 326 336	egg laying
+T26	Modifier 293 304	addition of
+R6	Mod-Link Arg1:T23 Arg2:T26	
+T27	Modifier 338 350	Water soaked
+T28	Modifier 351 360	absorbent
+T29	Action 381 386	added
+E7	Action:T29 Site:T30
+T30	Location 394 398	cage
+T31	Action 402 409	provide
+E8	Action:T31 
+T32	Modifier 410 418	moisture
+T33	Action 420 423	Add
+E9	Action:T33 Site:T34
+T34	Location 442 446	cage
+T35	Action 451 456	place
+E10	Action:T35 Acts-on:T36
+T36	Location 457 461	cage
+T37	Temperature 465 472	25±1 °C
+T38	Time 478 486	12 h:12h
+T39	Time 508 516	24 hours
+T40	Method 487 503	light:dark cycle
+R8	Setting Arg1:E10 Arg2:T37	
+R9	Setting Arg1:E10 Arg2:T38	
+T41	Action 518 523	Check
+E11	Action:T41 Acts-on:T42
+T42	Location 528 535	surface
+T43	Location 543 559	apple-agar plate
+T44	Reagent 564 568	eggs
+R12	Meronym Arg1:T42 Arg2:T43	
+T45	Modifier 586 593	too few
+T46	Reagent 594 598	eggs
+T47	Action 610 617	require
+E12	Action:T47 
+T48	Modifier 620 626	longer
+T49	Method 627 645	habituation period
+R13	Mod-Link Arg1:T46 Arg2:T45	
+T50	Action 647 654	Replace
+E13	Action:T50 Using:T52
+T51	Modifier 662 667	fresh
+T52	Location 668 684	apple-agar plate
+T53	Action 686 693	re-soak
+E14	Action:T53 
+T54	Action 714 719	leave
+E15	Action:T54 Site:T56
+T55	Modifier 739 741	in
+T56	Location 742 746	cage
+T57	Modifier 753 760	further
+T58	Time 761 769	24 hours
+R14	Mod-Link Arg1:T58 Arg2:T57	
+R15	Mod-Link Arg1:T56 Arg2:T55	
+R16	Setting Arg1:E15 Arg2:T58	
+R17	Mod-Link Arg1:T52 Arg2:T51	
+T59	Action 771 775	Take
+E16	Action:T59 Acts-on:T61 Site:T62
+T60	Modifier 776 785	egg laden
+T61	Location 786 802	apple-agar plate
+T62	Location 812 816	cage
+T63	Action 821 827	remove
+E17	Action:T63 Acts-on:T65 Site:T68
+T64	Modifier 828 837	remaining
+T65	Reagent 838 849	yeast paste
+T66	Modifier 858 862	dead
+T68	Location 878 890	agar surface
+R19	Mod-Link Arg1:T65 Arg2:T64	
+R20	Mod-Link Arg1:T61 Arg2:T60	
+T69	Action 892 900	Submerge
+E18	Action:T69 Acts-on:T70 Site:T72
+T70	Location 905 921	apple-agar plate
+T71	Concentration 925 927	1x
+T72	Reagent 928 931	PBS
+T73	Modifier 936 942	gently
+T74	Action 943 951	dislodge
+E19	Action:T74 Acts-on:T75 Using:T79 Site:T77
+T75	Reagent 952 956	eggs
+T77	Location 966 978	agar surface
+T78	Modifier 986 990	fine
+T79	Device 991 1001	paintbrush
+T80	Modifier 1003 1007	most
+T81	Reagent 1008 1012	eggs
+T82	Action 1021 1026	found
+E20	Action:T82 Site:T83 Acts-on:T81
+T83	Location 1034 1044	outer edge
+T84	Reagent 1052 1056	agar
+R21	Meronym Arg1:T83 Arg2:T84	
+R22	Mod-Link Arg1:T81 Arg2:T80	
+R23	Mod-Link Arg1:T79 Arg2:T78	
+R25	Measure Arg1:T72 Arg2:T71	
+R26	Mod-Link Arg1:E19 Arg2:T73	
+T85	Modifier 1058 1073	While suspended
+T86	Reagent 1077 1080	PBS
+T87	Action 1082 1090	transfer
+E21	Action:T87 Site:T89 Acts-on:T88
+R27	Mod-Link Arg1:E21 Arg2:T85	
+T88	Reagent 1095 1099	eggs
+T89	Location 1105 1116	falcon tube
+T90	Action 1121 1126	leave
+E22	Action:T90 
+T91	Time 1131 1136	5 min
+T92	Reagent 1151 1155	eggs
+T93	Action 1159 1163	sink
+E23	Action:T93 Acts-on:T92 Site:T94
+T94	Location 1171 1177	bottom
+T95	Reagent 1181 1189	solution
+R28	Meronym Arg1:T94 Arg2:T95	
+R29	Setting Arg1:E22 Arg2:T91	
+T96	Action 1191 1194	Cut
+E24	Action:T96 Acts-on:T100
+T97	Modifier 1199 1205	bottom
+T98	Size 1206 1209	4mm
+T99	Modifier 1216 1230	p1000 filtered
+T100	Device 1231 1242	pipette tip
+R30	Setting Arg1:E24 Arg2:T98	
+R31	Mod-Link Arg1:T98 Arg2:T97	
+R32	Mod-Link Arg1:T100 Arg2:T99	
+T101	Action 1260 1264	draw
+E25	Action:T101 Acts-on:T105 Acts-on2:T102
+T102	Mention 1252 1256	this
+T103	Amount 1265 1269	1 mL
+T104	Modifier 1274 1278	eggy
+T105	Reagent 1279 1287	solution
+R33	Mod-Link Arg1:T105 Arg2:T104	
+R34	Measure Arg1:T105 Arg2:T103	
+R35	Coreference-Link Arg1:T102 Arg2:T100	
+T106	Action 1290 1295	taken
+E26	Action:T106 Site:T107
+T107	Location 1305 1311	bottom
+T108	Location 1319 1330	falcon tube
+R36	Meronym Arg1:T107 Arg2:T108	
+T109	Action 1332 1340	Transfer
+E27	Action:T109 Site:T111
+T110	Size 1351 1357	1.5 mL
+T111	Location 1358 1378	microcentrifuge tube
+T112	Action 1392 1398	settle
+E28	Action:T112 
+R37	Measure Arg1:T111 Arg2:T110	
+T113	Action 1405 1415	drawing up
+E29	Action:T113 Acts-on:T114
+T114	Reagent 1416 1424	solution
+T115	Modifier 1427 1442	more consistent
+T116	Measure-Type 1443 1449	number
+T117	Reagent 1453 1457	eggs
+T118	Action 1461 1469	achieved
+E30	Action:T118 Acts-on:T117 Measure-Type-Link:T116 Using:T119
+T119	Method 1473 1487	snap-releasing
+T120	Device 1492 1507	pipette plunger
+T121	Method 1523 1537	gentle-release
+R38	Mod-Link Arg1:E30 Arg2:T115	
+T122	Action 1539 1542	Cut
+E31	Action:T122 Acts-on:T128
+T123	Modifier 1547 1553	bottom
+T124	Size 1554 1558	4 mm
+T125	Modifier 1559 1562	off
+T126	Modifier 1210 1213	off
+R39	Mod-Link Arg1:E24 Arg2:T126	
+T127	Modifier 1565 1577	p20 filtered
+T128	Device 1578 1589	pipette tip
+R40	Mod-Link Arg1:E31 Arg2:T125	
+R41	Setting Arg1:E31 Arg2:T124	
+R42	Mod-Link Arg1:T124 Arg2:T123	
+R43	Mod-Link Arg1:T128 Arg2:T127	
+T129	Action 1591 1594	Set
+E32	Action:T129 Acts-on:T130 Measure-Type-Link:T132
+T130	Device 1599 1606	pipette
+T131	Modifier 1612 1619	desired
+T132	Measure-Type 1620 1626	volume
+T133	Action 1631 1635	draw
+E33	Action:T133 Site:T134
+T134	Location 1650 1656	bottom
+T135	Location 1664 1684	microcentrifuge tube
+T136	Modifier 1686 1691	again
+T137	Action 1692 1697	using
+E34	Action:T137 
+T138	Method 1702 1724	snap-release pipetting
+R44	Mod-Link Arg1:E34 Arg2:T136	
+R45	Or Arg1:E34 Arg2:T138	
+R46	Mod-Link Arg1:T130 Arg2:T131	
+R47	Meronym Arg1:T134 Arg2:T135	
+T139	Action 1738 1746	practice
+E35	Action:T139 
+T140	Modifier 1749 1759	consistent
+T141	Measure-Type 1760 1766	number
+T142	Reagent 1770 1774	eggs
+T143	Action 1782 1790	obtained
+E36	Action:T143 Measure-Type-Link:T141 Acts-on:T142
+T144	Measure-Type 1794 1800	volume
+T145	Amount 1804 1807	5μL
+T146	Action 1813 1820	produce
+E37	Action:T146 Acts-on:T148
+T147	Numerical 1821 1826	102±4
+T148	Reagent 1827 1831	eggs
+R48	Measure Arg1:T148 Arg2:T147	
+R49	Setting Arg1:E37 Arg2:T145	
+R50	Mod-Link Arg1:T142 Arg2:T140	
+T149	Action 1833 1841	Dispense
+E38	Action:T149 Acts-on:T151 Site:T156
+T150	Modifier 1842 1851	collected
+T151	Reagent 1852 1856	eggs
+T152	Action 1878 1883	leave
+E39	Action:T152 
+T153	Action 1887 1894	develop
+E40	Action:T153 
+T156	Location 1862 1873	food source
+R52	Mod-Link Arg1:T151 Arg2:T150	
+R53	Acts-on Arg1:T2 Arg2:T1	
+R54	Acts-on Arg1:E6 Arg2:T25	
+T157	Reagent 361 372	cotton wool
+R55	Mod-Link Arg1:T157 Arg2:T27	
+R56	Mod-Link Arg1:T157 Arg2:T28	
+R57	Acts-on Arg1:E7 Arg2:T157	
+T158	Reagent 424 438	fly population
+R7	Acts-on Arg1:E9 Arg2:T158	
+R10	Setting Arg1:T40 Arg2:T39	
+T159	Reagent 600 605	flies
+R11	Mod-Link Arg1:T49 Arg2:T48	
+T160	Reagent 698 709	cotton wool
+R58	Acts-on Arg1:E14 Arg2:T160	
+T161	Reagent 724 738	fly population
+R59	Acts-on Arg1:E15 Arg2:T161	
+T162	Reagent 863 868	flies
+R60	Mod-Link Arg1:T162 Arg2:T66	
+R61	Acts-on Arg1:E17 Arg2:T162	
+T67	Action 1138 1146	allowing
+E41	Action:T67 
+R18	Acts-on Arg1:E41 Arg2:T92	
+T76	Action 1383 1388	allow
+E42	Action:T76 
+R24	Using Arg1:T119 Arg2:T120	
+R62	Of-Type Arg1:T145 Arg2:T144	

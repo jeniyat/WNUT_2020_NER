@@ -1,0 +1,140 @@
+T1	Reagent 0 12	Phage Buffer
+T2	Action 13 20	Prepare
+E1	Action:T2 Acts-on:T4
+T3	Concentration 21 23	5M
+T4	Reagent 24 28	NaCl
+T5	Action 32 42	dissolving
+T6	Amount 43 49	29.22g
+T7	Reagent 50 54	NaCl
+T8	Amount 58 63	100ml
+T9	Reagent 64 77	Milli Q water
+T10	Concentration 82 87	0.2um
+T11	Reagent 88 103	filter solution
+T12	Modifier 109 116	sterile
+T13	Location 117 126	container
+R1	Mod-Link Arg1:T13 Arg2:T12	
+R2	Measure Arg1:T4 Arg2:T3	
+R3	Measure Arg1:T7 Arg2:T6	
+R4	Measure Arg1:T9 Arg2:T8	
+R5	Measure Arg1:T11 Arg2:T10	
+T14	Action 128 135	Prepare
+E3	Action:T14 Acts-on:T16
+T15	Concentration 136 138	1M
+T16	Reagent 139 146	Tris-Cl
+T17	pH 148 153	pH7.4
+T19	Amount 169 175	7.882g
+T20	Reagent 176 184	Tris-HCl
+T21	Amount 188 192	90ml
+T22	Reagent 193 206	Milli Q water
+T23	Action 208 217	adjusting
+E5	Action:T23 Measure-Type-Link:T24
+T24	Measure-Type 218 220	pH
+T25	pH 224 227	7.4
+R6	Of-Type Arg1:T25 Arg2:T24	
+T26	Concentration 233 235	1N
+T27	Reagent 236 240	NaOH
+R8	Measure Arg1:T27 Arg2:T26	
+T29	Modifier 251 256	final
+T30	Measure-Type 257 263	volume
+T31	Amount 267 271	50ml
+T33	Size 305 310	0.2um
+T34	Device 311 317	filter
+T35	Modifier 325 332	sterile
+T36	Location 333 342	container
+R10	Mod-Link Arg1:T36 Arg2:T35	
+R11	Measure Arg1:T16 Arg2:T15	
+R12	Measure Arg1:T16 Arg2:T17	
+R13	Measure Arg1:T20 Arg2:T19	
+R14	Measure Arg1:T22 Arg2:T21	
+R15	Measure Arg1:T34 Arg2:T33	
+T37	Action 344 351	Prepare
+E7	Action:T37 Acts-on:T39
+T38	Concentration 352 354	1M
+T39	Reagent 355 360	MgSO4
+T41	Amount 375 380	12.3g
+T42	Reagent 381 391	MgSO4-7H2O
+T43	Amount 395 399	50ml
+T44	Reagent 400 413	Milli Q water
+T45	Action 418 434	filter sterilize
+E9	Action:T45 Using:T47 Site:T49
+T46	Size 443 448	0.2um
+T32	Action 276 294	filter sterilizing
+E10	Action:T32 Using:T34
+T47	Device 449 455	filter
+T48	Modifier 461 468	sterile
+T49	Location 469 478	container
+R16	Mod-Link Arg1:T49 Arg2:T48	
+R17	Measure Arg1:T39 Arg2:T38	
+R18	Measure Arg1:T42 Arg2:T41	
+R19	Measure Arg1:T44 Arg2:T43	
+R20	Measure Arg1:T47 Arg2:T46	
+T51	Amount 493 498	3.0ml
+T52	Concentration 499 501	5M
+T53	Reagent 502 506	NaCl
+T54	Amount 508 513	4.0ml
+T55	Concentration 514 516	1M
+T56	Reagent 517 524	Tris-Cl
+T57	pH 526 532	pH 7.4
+T58	Amount 538 543	1.0ml
+T59	Concentration 544 546	1M
+T60	Reagent 547 552	MgSO4
+T61	Amount 556 560	92ml
+T62	Modifier 561 568	sterile
+T63	Reagent 569 582	Milli Q water
+T64	Modifier 588 595	sterile
+T65	Location 596 605	container
+R21	Mod-Link Arg1:T65 Arg2:T64	
+R22	Mod-Link Arg1:T63 Arg2:T62	
+R23	Measure Arg1:T63 Arg2:T61	
+R24	Measure Arg1:T60 Arg2:T59	
+R25	Measure Arg1:T60 Arg2:T58	
+R26	Measure Arg1:T56 Arg2:T57	
+R27	Measure Arg1:T56 Arg2:T55	
+R28	Measure Arg1:T56 Arg2:T54	
+R29	Measure Arg1:T53 Arg2:T52	
+R30	Measure Arg1:T53 Arg2:T51	
+T50	Action 480 492	Mix together
+E11	Action:T50 Acts-on:T53 Acts-on2:T56 Acts-on3:T60 Acts-on4:T63 Site:T65
+T66	Action 607 613	Filter
+E12	Action:T66 Acts-on:T67 Using:T70 Site:T72
+T67	Reagent 614 622	solution
+T68	Size 633 639	0.02um
+T69	Modifier 640 646	Anotop
+T70	Device 647 661	syringe filter
+T71	Modifier 669 676	sterile
+T72	Location 677 686	container
+R31	Mod-Link Arg1:T72 Arg2:T71	
+R32	Mod-Link Arg1:T70 Arg2:T69	
+R33	Measure Arg1:T70 Arg2:T68	
+T73	Modifier 688 693	Final
+T74	Reagent 694 706	phage buffer
+T75	Concentration 715 720	150mM
+T76	Reagent 721 725	NaCl
+T77	Concentration 727 731	40mM
+T78	Reagent 732 739	Tris-Cl
+T79	pH 741 747	pH 7.4
+T80	Concentration 749 753	10mM
+T81	Reagent 754 759	MgSO4
+R34	Measure Arg1:T81 Arg2:T80	
+R35	Measure Arg1:T78 Arg2:T79	
+R36	Measure Arg1:T78 Arg2:T77	
+R37	Measure Arg1:T76 Arg2:T75	
+R38	Mod-Link Arg1:T74 Arg2:T73	
+R39	Acts-on Arg1:T5 Arg2:T7	
+R40	Site Arg1:T5 Arg2:T9	
+R41	Acts-on Arg1:T5 Arg2:T11	
+R42	Site Arg1:T5 Arg2:T13	
+T18	Action 158 168	dissolving
+E2	Action:T18 
+R44	Acts-on Arg1:E2 Arg2:T20	
+R45	Site Arg1:E2 Arg2:T22	
+R7	Using Arg1:E5 Arg2:T27	
+R9	Mod-Link Arg1:T30 Arg2:T29	
+R46	Site Arg1:E10 Arg2:T36	
+T28	Action 242 250	bringing
+E4	Action:T28 Measure-Type-Link:T30
+R47	Of-Type Arg1:T31 Arg2:T30	
+T40	Action 364 374	dissolving
+E6	Action:T40 
+R43	Acts-on Arg1:E6 Arg2:T42	
+R48	Site Arg1:E6 Arg2:T44	

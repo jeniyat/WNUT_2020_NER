@@ -1,0 +1,151 @@
+T1	Reagent 39 61	Iron-Binding Compounds
+T2	Reagent 0 15	Chrome Azurol S
+T3	Reagent 17 20	CAS
+R1	Coreference-Link Arg1:T3 Arg2:T2	
+T4	Method 22 34	Liquid Assay
+T5	Action 62 66	Take
+T6	Amount 67 71	6 mL
+T7	Concentration 72 77	10 mM
+T8	Reagent 78 82	CTAB
+T9	Reagent 84 89	HDTMA
+T11	Amount 110 115	40 mL
+T12	Reagent 116 127	Milli-Q H2O
+R2	Measure Arg1:T12 Arg2:T11	
+R3	Coreference-Link Arg1:T9 Arg2:T8	
+R4	Measure Arg1:T8 Arg2:T7	
+R5	Measure Arg1:T8 Arg2:T6	
+T13	Action 129 132	Mix
+E3	Action:T13 Acts-on:T15 Site:T23
+T14	Amount 133 139	1.5 mL
+T15	Reagent 140 155	FeCl3-HCl stock
+T16	Concentration 157 161	1 mM
+T17	Reagent 162 167	FeCl3
+T18	Concentration 181 186	10 mM
+T19	Reagent 187 190	HCl
+T20	Action 168 177	dissolved
+E4	Action:T20 Acts-on:T17 Site:T19
+T21	Amount 197 203	7.5 mL
+T22	Concentration 204 208	2 mM
+T23	Reagent 209 222	CAS dye stock
+R6	Measure Arg1:T15 Arg2:T14	
+R7	Measure Arg1:T17 Arg2:T16	
+R8	Measure Arg1:T19 Arg2:T18	
+R9	Meronym Arg1:T17 Arg2:T15	
+R10	Meronym Arg1:T19 Arg2:T15	
+R11	Measure Arg1:T23 Arg2:T22	
+R12	Measure Arg1:T23 Arg2:T21	
+T24	Modifier 224 230	Slowly
+T25	Action 231 234	add
+E5	Action:T25 Acts-on:T26 Site:T27
+T26	Reagent 235 249	Fe-CAS mixture
+T27	Reagent 253 266	CTAB solution
+T28	Action 273 281	stirring
+E6	Action:T28 
+R13	Mod-Link Arg1:E5 Arg2:T24	
+T29	Action 283 286	Add
+E7	Action:T29 Site:T35
+T30	Amount 287 293	6.5 mL
+T31	Concentration 297 301	12 N
+T32	Reagent 302 305	HCl
+T33	Modifier 306 312	slowly
+T34	Amount 316 321	25 mL
+T35	Reagent 322 333	Milli-Q H2O
+R14	Measure Arg1:T35 Arg2:T34	
+R15	Mod-Link Arg1:E7 Arg2:T33	
+R16	Measure Arg1:T32 Arg2:T31	
+R17	Measure Arg1:T32 Arg2:T30	
+T36	Action 335 338	Add
+E8	Action:T36 Acts-on:T38 Site:T39
+T37	Amount 339 344	4.3 g
+T38	Reagent 345 365	anhydrous piperazine
+T39	Reagent 373 386	acid solution
+R18	Measure Arg1:T38 Arg2:T37	
+T40	Action 388 391	Mix
+E9	Action:T40 Acts-on:T41 Site:T43
+T41	Reagent 396 420	piperazine acid solution
+T42	Modifier 421 427	slowly
+T43	Reagent 437 457	Fe-CAS*CTAB solution
+R19	Mod-Link Arg1:E9 Arg2:T42	
+T44	Action 459 464	Bring
+E10	Action:T44 Acts-on:T45 Measure-Type-Link:T48
+T45	Reagent 465 477	CAS solution
+T46	Amount 481 487	100 mL
+T47	Modifier 488 493	final
+T48	Measure-Type 494 500	volume
+T49	Action 502 505	Add
+E11	Action:T49 Acts-on:T50 Measure-Type-Link:T53
+T50	Reagent 513 535	5-sulfosalicyclic acid
+T51	Generic-Measure 543 547	4 mM
+T52	Modifier 548 553	final
+T53	Measure-Type 554 567	concentration
+T55	Action 569 573	Take
+E12	Action:T55 Acts-on:T56
+T56	Reagent 576 582	sample
+T57	Action 595 601	dilute
+E13	Action:T57 Using:T62 Acts-on:T58
+T58	Mention 602 604	it
+R20	Coreference-Link Arg1:T58 Arg2:T56	
+T59	Amount 611 617	0.5 mL
+T60	Modifier 618 623	final
+T61	Measure-Type 624 630	volume
+T62	Reagent 636 661	Chelex-100 treated water.
+T63	Action 662 665	Add
+E14	Action:T63 Acts-on:T65
+T64	Amount 666 672	0.5 mL
+T65	Reagent 673 685	CAS solution
+R21	Measure Arg1:T65 Arg2:T64	
+T66	Temperature 703 719	room temperature
+T67	Time 695 699	1 hr
+T68	Action 687 694	Let sit
+T70	Reagent 752 757	blank
+T71	Amount 761 767	0.5 mL
+T72	Reagent 768 792	chelex-100 treated water
+R24	Measure Arg1:T72 Arg2:T71	
+T73	Reagent 819 823	EDTA
+T74	Method 842 856	standard curve
+T75	Method 796 815	series of dilutions
+T76	Action 861 868	measure
+E16	Action:T76 
+T77	Action 882 887	place
+E17	Action:T77 Acts-on:T78 Site:T79
+T78	Reagent 892 898	sample
+T79	Device 904 921	spectrophotometer
+T80	Action 926 930	read
+E18	Action:T80 Measure-Type-Link:T81
+T81	Measure-Type 935 945	absorbance
+T82	Generic-Measure 949 955	630 nm
+T83	Action 960 965	graph
+E19	Action:T83 
+T84	Action 966 972	report
+E20	Action:T84 
+T85	Action 989 998	calculate
+E21	Action:T85 Measure-Type-Link:T86 Measure-Type-Link2:T88
+T86	Measure-Type 1003 1013	absorbance
+T87	Reagent 1021 1026	blank
+T88	Measure-Type 1027 1037	absorbance
+T89	Reagent 1045 1051	sample
+R25	Of-Type Arg1:T51 Arg2:T53	
+T54	Reagent 91 96	stock
+T10	Action 101 104	mix
+E1	Action:T10 
+R26	Acts-on Arg1:E1 Arg2:T54	
+R27	Acts-on Arg1:T5 Arg2:T8	
+R28	Site Arg1:E1 Arg2:T12	
+R29	Acts-on Arg1:E6 Arg2:T27	
+R30	Acts-on Arg1:E7 Arg2:T32	
+R31	Mod-Link Arg1:T48 Arg2:T47	
+R32	Measure Arg1:T45 Arg2:T46	
+R33	Mod-Link Arg1:T53 Arg2:T52	
+R34	Mod-Link Arg1:T61 Arg2:T60	
+R35	Measure Arg1:T58 Arg2:T59	
+R36	Of-Type Arg1:T46 Arg2:T48	
+R37	Of-Type Arg1:T59 Arg2:T61	
+R22	Setting Arg1:T68 Arg2:T67	
+R23	Setting Arg1:T68 Arg2:T66	
+T69	Generic-Measure 727 731	dark
+R38	Setting Arg1:T68 Arg2:T69	
+R39	Coreference-Link Arg1:T70 Arg2:T72	
+R40	Acts-on Arg1:T75 Arg2:T73	
+R42	Setting Arg1:E18 Arg2:T82	
+R41	Or Arg1:T86 Arg2:T88	
+R43	Or Arg1:T87 Arg2:T89	

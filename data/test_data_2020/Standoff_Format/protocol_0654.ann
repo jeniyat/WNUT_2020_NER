@@ -1,0 +1,314 @@
+T1	Action 1070 1076	Vortex
+E1	Action:T1 
+T2	Time 1081 1085	15 s
+R1	Setting Arg1:E1 Arg2:T2	
+T3	Reagent 87 109	Gram-Negative bacteria
+T4	Device 38 63	DNeasy Blood & Tissue Kit
+T5	Device 65 71	QIAGEN
+R2	Coreference-Link Arg1:T5 Arg2:T4	
+T6	Method 0 31	Genomic DNA extraction protocol
+T7	Action 110 114	Add 
+E2	Action:T7 Acts-on:T8 Site:T9
+T8	Reagent 115 122	Ethanol
+T9	Reagent 126 134	reagents
+T10	Device 138 148	QIAGEN kit
+T11	Action 1087 1090	Add
+E3	Action:T11 Acts-on:T13 Site:T87
+T12	Amount 1091 1097	200 µl
+T13	Reagent 1098 1107	Buffer AL
+T14	Reagent 165 184	vendor CSB solution
+T15	Reagent 186 208	Cell suspension buffer
+R3	Coreference-Link Arg1:T15 Arg2:T14	
+T16	Concentration 210 213	1 M
+T17	Reagent 214 222	Tris-HCl
+T18	pH 224 230	pH 8.0
+T19	Reagent 245 249	EDTA
+T20	Amount 234 239	10 ml
+T21	Concentration 239 244	0.5 M
+T22	pH 251 257	pH 8.0
+T23	Amount 261 266	20 ml
+T24	Action 267 271	Add 
+E4	Action:T24 Acts-on:T25
+T25	Reagent 272 287	deionized water
+T26	Amount 291 298	1 Litre
+T28	Temperature 308 320	+4°C to +8°C
+T29	Action 321 329	Prepare 
+E5	Action:T29 Acts-on:T30 Site:T32
+T30	Reagent 329 350	Proteinase K solution
+T33	Concentration 402 405	96%
+R7	Measure Arg1:T17 Arg2:T16	
+R8	Measure Arg1:T17 Arg2:T18	
+R10	Measure Arg1:T19 Arg2:T21	
+R11	Measure Arg1:T19 Arg2:T22	
+R9	Measure Arg1:T17 Arg2:T20	
+R12	Measure Arg1:T19 Arg2:T23	
+R15	Meronym Arg1:T17 Arg2:T14	
+R16	Meronym Arg1:T19 Arg2:T14	
+T36	Action 407 413	Streak
+E6	Action:T36 Acts-on:T42 Site:T37 Site2:T43
+T37	Location 457 489	Trypticase Soy Agar (TSA) plates
+T38	Action 511 519	Incubate
+E7	Action:T38 
+T39	Modifier 520 531	aerobically
+T40	Temperature 535 539	37°C
+T41	Time 544 555	18-24 hours
+R17	Mod-Link Arg1:E7 Arg2:T39	
+R18	Setting Arg1:E7 Arg2:T40	
+R19	Setting Arg1:E7 Arg2:T41	
+T42	Reagent 417 432	isolated colony
+T43	Location 438 451	test cultures
+T46	Amount 589 595	2.2 ml
+T47	Reagent 596 606	CSB Buffer
+R21	Measure Arg1:T47 Arg2:T46	
+T48	Measure-Type 624 639	optical density
+T49	Concentration 669 684	21х108 cells/ml
+T50	Numerical 664 667	7.0
+T51	Time 557 564	24-hour
+T52	Reagent 565 572	culture
+T53	Action 576 585	suspended
+E8	Action:T53 Acts-on:T52 Site:T47
+T54	Action 611 619	measured
+E9	Action:T54 Acts-on:T52 Measure-Type-Link:T48
+T55	Action 687 695	Transfer
+E10	Action:T55 Acts-on:T57 Site:T58
+T56	Amount 696 700	1 ml
+T57	Reagent 704 729	bacterial cell suspension
+T58	Location 737 757	microcentrifuge tube
+T59	Action 762 774	centrifuging
+E11	Action:T59 Acts-on:T57
+T60	Time 779 785	10 min
+T61	Speed 789 798	7 500 rpm
+R22	Measure Arg1:T57 Arg2:T56	
+R23	Setting Arg1:E11 Arg2:T60	
+R24	Setting Arg1:E11 Arg2:T61	
+T62	Modifier 800 808	Carfully
+T63	Action 809 816	discard
+E12	Action:T63 Acts-on:T64
+T64	Reagent 817 828	supernatant
+R25	Mod-Link Arg1:E12 Arg2:T62	
+T65	Action 830 833	Add
+E13	Action:T65 Acts-on:T67 Site:T69
+T66	Amount 834 840	180 µl
+T67	Reagent 841 851	Buffer ATL
+T68	Device 853 859	QIAGEN
+T69	Reagent 868 874	pellet
+T70	Action 889 899	resuspense
+E14	Action:T70 Acts-on:T72
+T71	Modifier 879 888	carefully
+T72	Mention 900 902	it
+R26	Measure Arg1:T67 Arg2:T66	
+R27	Mod-Link Arg1:E14 Arg2:T71	
+R28	Coreference-Link Arg1:T72 Arg2:T69	
+T73	Action 904 908	Add 
+E15	Action:T73 Acts-on:T75
+T74	Amount 908 913	20 µl
+T75	Reagent 914 926	Proteinase K
+T76	Device 928 934	QIAGEN
+T77	Amount 939 943	2 µl
+T78	Reagent 961 973	Proteinase K
+T79	Concentration 975 983	20 mg/ml
+R29	Measure Arg1:T78 Arg2:T79	
+R30	Measure Arg1:T75 Arg2:T74	
+R31	Measure Arg1:T78 Arg2:T77	
+R32	Or Arg1:T78 Arg2:T75	
+T80	Action 1011 1014	Mix
+E16	Action:T80 Using:T82
+T81	Modifier 1015 1025	thoroughly
+R33	Mod-Link Arg1:E16 Arg2:T81	
+T82	Method 1029 1038	vortexing
+T83	Action 1044 1052	incubate
+E17	Action:T83 
+T84	Time 1053 1060	1 hours
+T85	Temperature 1064 1068	56°C
+R34	Setting Arg1:E17 Arg2:T85	
+R35	Setting Arg1:E17 Arg2:T84	
+T86	Device 1109 1115	QIAGEN
+T87	Reagent 1124 1130	sample
+T88	Action 1136 1145	pipetting
+E18	Action:T88 Using:T90 Acts-on:T87
+T89	Modifier 1146 1156	thoroughly
+T90	Method 1157 1168	up and down
+T91	Reagent 1190 1198	solution
+R36	Mod-Link Arg1:E18 Arg2:T89	
+R37	Measure Arg1:T13 Arg2:T12	
+T92	Action 1205 1209	add 
+E19	Action:T92 Acts-on:T94
+T93	Amount 1209 1215	200 µl
+T94	Reagent 1216 1223	ethanol
+T95	Concentration 1224 1227	96%
+T96	Action 1250 1259	pipetting
+E20	Action:T96 
+T97	Modifier 1239 1249	thoroughly
+R38	Mod-Link Arg1:E20 Arg2:T97	
+R39	Measure Arg1:T94 Arg2:T95	
+R40	Measure Arg1:T94 Arg2:T93	
+T98	Action 1261 1264	Mix
+E21	Action:T98 Acts-on:T99 Using:T100
+T99	Reagent 1269 1275	sample
+T100	Method 1279 1288	vortexing
+T101	Action 1290 1295	Pipet
+E22	Action:T101 Acts-on:T102 Site:T104
+T102	Reagent 1300 1307	mixture
+T103	Reagent 1323 1334	precipitate
+T104	Location 1345 1368	DNeasy Mini spin column
+T105	Device 1370 1376	QIAGEN
+T106	Action 1378 1384	placed
+E23	Action:T106 Acts-on:T104 Site:T108
+T107	Size 1390 1394	2 ml
+T108	Location 1395 1410	collection tube
+T109	Action 1412 1422	Centrifuge
+E24	Action:T109 
+T110	Speed 1426 1435	8 000 rpm
+T111	Time 1440 1445	1 min
+R41	Setting Arg1:E24 Arg2:T110	
+R42	Setting Arg1:E24 Arg2:T111	
+R43	Measure Arg1:T108 Arg2:T107	
+T112	Action 1447 1454	Discard
+E25	Action:T112 Acts-on:T113 Site:T114
+T113	Reagent 1455 1467	flow-through
+T114	Location 1472 1487	collection tube
+T115	Action 1489 1494	Place
+E26	Action:T115 Acts-on:T116 Site:T118
+T116	Location 1499 1522	DNeasy Mini spin column
+T117	Modifier 1528 1531	new
+T118	Location 1532 1547	collection tube
+R44	Mod-Link Arg1:T118 Arg2:T117	
+T119	Action 1548 1551	Add
+E27	Action:T119 Acts-on:T121 Site:T122
+T120	Amount 1552 1558	500 µl
+T121	Reagent 1559 1569	Buffer AW1
+T122	Location 1577 1583	column
+T123	Action 1588 1598	centrifuge
+E28	Action:T123 
+T124	Speed 1602 1611	8 000 rpm
+T125	Time 1616 1621	1 min
+R45	Measure Arg1:T121 Arg2:T120	
+R46	Setting Arg1:E28 Arg2:T124	
+R47	Setting Arg1:E28 Arg2:T125	
+T126	Action 1629 1636	discard
+E29	Action:T126 Acts-on:T127 Site:T128
+T127	Reagent 1637 1649	flow-through
+T128	Location 1654 1669	collection tube
+T129	Action 1674 1679	place
+E30	Action:T129 Acts-on:T130 Site:T132
+T130	Location 1684 1707	DNeasy Mini spin column
+T131	Modifier 1713 1716	new
+T132	Location 1717 1732	collection tube
+R48	Mod-Link Arg1:T132 Arg2:T131	
+T133	Measure-Type 494 510	confluent growth
+T134	Action 1732 1735	Add
+E31	Action:T134 Acts-on:T136 Site:T137
+T135	Amount 1736 1742	500 µl
+T136	Reagent 1743 1753	Buffer AW2
+T137	Location 1761 1767	column
+T138	Action 1769 1779	Centrifuge
+E32	Action:T138 
+T139	Speed 1783 1793	14 000 rpm
+T140	Time 1798 1803	3 min
+T141	Action 1805 1810	Place
+E33	Action:T141 Acts-on:T142 Site:T145
+T142	Location 1815 1838	DNeasy Mini spin column
+T143	Modifier 1844 1849	clean
+T144	Size 1850 1856	1.5 ml
+T145	Location 1857 1877	microcentrifuge tube
+T146	Action 1882 1887	pipet
+E34	Action:T146 Site:T150
+T147	Amount 1888 1894	100 µl
+T148	Reagent 1895 1904	Buffer AE
+T149	Modifier 1905 1913	directly
+T150	Location 1923 1938	DNeasy membrane
+T151	Action 1939 1947	Incubate
+E35	Action:T151 Acts-on:T152
+T152	Reagent 1952 1958	sample
+T153	Temperature 1962 1978	room temperature
+T154	Temperature 1980 1987	23-25°С
+R49	Coreference-Link Arg1:T154 Arg2:T153	
+T155	Time 1993 2000	2-5 min
+T156	Action 2002 2012	centrifuge
+E36	Action:T156 Acts-on:T152
+T157	Speed 2016 2025	8 000 rpm
+T158	Time 2030 2035	1 min
+T159	Action 2039 2044	elute
+E37	Action:T159 Acts-on:T160
+T160	Reagent 2049 2061	DNA solution
+R50	Setting Arg1:E35 Arg2:T153	
+R51	Setting Arg1:E35 Arg2:T155	
+R52	Setting Arg1:E36 Arg2:T157	
+R53	Setting Arg1:E36 Arg2:T158	
+T161	Amount 2108 2116	80-90 µl
+T162	Reagent 2117 2120	DNA
+T163	Action 2122 2127	Place
+E38	Action:T163 Acts-on:T164 Site:T167
+T164	Location 2132 2155	DNeasy Mini spin column
+T165	Modifier 2167 2172	clean
+T166	Size 2173 2179	1.5 ml
+T167	Location 2180 2200	microcentrifuge tube
+T168	Action 2211 2216	pipet
+E39	Action:T168 Acts-on:T170 Site:T172
+T169	Amount 2217 2223	100 µl
+T170	Reagent 2224 2233	Buffer AE
+T171	Modifier 2234 2242	directly
+T172	Location 2252 2267	DNeasy membrane
+R54	Measure Arg1:T162 Arg2:T161	
+T173	Method 2072 2079	elution
+T174	Modifier 2066 2071	first
+R55	Mod-Link Arg1:T167 Arg2:T165	
+R56	Measure Arg1:T167 Arg2:T166	
+R57	Measure Arg1:T170 Arg2:T169	
+R58	Mod-Link Arg1:T170 Arg2:T171	
+T175	Action 2268 2276	Incubate
+E40	Action:T175 Acts-on:T176
+T176	Reagent 2281 2287	sample
+T177	Temperature 2291 2307	room temperature
+T178	Temperature 2309 2316	23-25°С
+R59	Coreference-Link Arg1:T178 Arg2:T177	
+T179	Time 2322 2329	2-5 min
+T180	Action 2339 2349	centrifuge
+E41	Action:T180 Acts-on:T176
+T181	Speed 2353 2362	8 000 rpm
+T182	Time 2367 2372	1 min
+R60	Setting Arg1:E41 Arg2:T181	
+R61	Setting Arg1:E41 Arg2:T182	
+R62	Setting Arg1:E40 Arg2:T177	
+R63	Setting Arg1:E40 Arg2:T179	
+T183	Modifier 2377 2383	second
+T184	Method 2384 2391	elution
+T185	Amount 2401 2411	100-110 µl
+T186	Reagent 2412 2415	DNA
+R64	Measure Arg1:T186 Arg2:T185	
+R65	Measure Arg1:T136 Arg2:T135	
+R66	Setting Arg1:E32 Arg2:T139	
+R67	Setting Arg1:E32 Arg2:T140	
+R68	Mod-Link Arg1:T145 Arg2:T143	
+R69	Measure Arg1:T145 Arg2:T144	
+R70	Measure Arg1:T148 Arg2:T147	
+R71	Mod-Link Arg1:E34 Arg2:T149	
+R72	Using Arg1:T6 Arg2:T4	
+T27	Action 299 304	Store
+E42	Action:T27 
+R13	Setting Arg1:E42 Arg2:T28	
+T31	Concentration 352 360	20 mg/ml
+T32	Reagent 365 380	deionized water
+R4	Measure Arg1:T30 Arg2:T31	
+T34	Action 380 385	Store
+E43	Action:T34 Site:T187
+T35	Temperature 389 394	-20°C
+R5	Setting Arg1:E43 Arg2:T35	
+T187	Reagent 394 401	Ethanol
+R6	Measure Arg1:T187 Arg2:T33	
+R14	Setting Arg1:E8 Arg2:T51	
+T44	Action 643 649	taking
+E44	Action:T44 
+R20	Using Arg1:E9 Arg2:E44	
+T45	Measure-Type 652 663	value of  D
+R73	Acts-on Arg1:E44 Arg2:T45	
+R74	Of-Type Arg1:T50 Arg2:T45	
+T188	Action 1172 1177	yield
+E45	Action:T188 
+R75	Acts-on Arg1:E45 Arg2:T91	
+T189	Modifier 1178 1189	homogeneous
+R76	Mod-Link Arg1:T91 Arg2:T189	
+R77	Using Arg1:E45 Arg2:E18	
+R78	Meronym Arg1:T103 Arg2:T102	
+R80	Mod-Link Arg1:T173 Arg2:T174	
+R79	Mod-Link Arg1:T184 Arg2:T183	

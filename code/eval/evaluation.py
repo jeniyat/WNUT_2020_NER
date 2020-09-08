@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import eval_utils
-import conlleval_py
+import conlleval_py_exact
+import conlleval_py_partial
 import os
 
 import shutil
@@ -8,7 +9,7 @@ from collections import OrderedDict
 import argparse
 
 import sys
-sys.path.insert(1, '../scripts/convert_conll_to_standoff/')
+sys.path.insert(1, 'scripts/convert_standoff_conll_ner/')
 import anntoconll_wlp
 
 
@@ -88,7 +89,11 @@ def compare_prediction(conll_file_gold, conll_file_pred, perf_file, to_latex):
 	fout.write("\n\n")
 	fout.close()
 
-	eval_result = conlleval_py.evaluate_conll_file(inputFile=pred_file)
+	print("-----------------------------")
+	print(" Performance with exact match")
+	print("-----------------------------")
+	eval_result = conlleval_py_exact.evaluate_conll_file(inputFile=pred_file)
+	print("\n\n")
 
 	if to_latex:
 		print_result(eval_result, perf_file)
@@ -128,12 +133,36 @@ def evaluate(input_gold_folder="../../data/test_data/Standoff_Format/", input_pr
 
 	combined_pred_file  = eval_utils.combine_and_merge_gold_pred(input_gold_folder, input_pred_folder)
 
-	eval_result = conlleval_py.evaluate_conll_file(inputFile=combined_pred_file)
+	print("\n\n")
+
+
+	print("-----------------------------")
+	print(" Performance with exact match")
+	print("-----------------------------")
+
+
+	eval_result = conlleval_py_exact.evaluate_conll_file(inputFile=combined_pred_file)
 
 	if to_latex:
 		print_result(eval_result, perf_file)
 
+	print("\n\n")
+
+	print("-----------------------------")
+	print(" Performance with partial match")
+	print("-----------------------------")
+
+
+	eval_result = conlleval_py_partial.evaluate_conll_file(inputFile=combined_pred_file)
+
+	if to_latex:
+		print_result(eval_result, perf_file)
+
+	print("\n\n")
+	
 	os.remove(combined_pred_file)
+
+
 
 	
 	if pred_file_type=="Standoff":
@@ -161,7 +190,7 @@ if __name__ == '__main__':
 
 
 	parser.add_argument(
-	    "-gold_data", default="../../data/test_data/Standoff_Format/",
+	    "-gold_data",  default="../gold_data/wlp_new_data_2020_Conll_Format/",
 	    help="Standoff_Format gold labeled files"
 	)
 
@@ -172,7 +201,7 @@ if __name__ == '__main__':
 
 
 	parser.add_argument(
-	    "-pred_data", default="../baseline_CRF/Standoff_Outputs/",
+	    "-pred_data",default="../all_system_output/Fancy_Man/",
 	    help="Standoff_Format prediction files"
 	)
 

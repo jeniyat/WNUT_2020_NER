@@ -1,0 +1,38 @@
+T1	Concentration 0 4	0.8%
+T2	Action 17 20	Add
+E1	Action:T2 Acts-on:T5 Site:T7 Site2:T9
+T3	Amount 21 27	100 mL
+T4	Concentration 31 33	1X
+T5	Reagent 34 44	TAE Buffer
+T6	Amount 48 53	0.8 g
+T7	Reagent 57 74	UltraPure Agarose
+T8	Amount 81 91	few grains
+T9	Reagent 92 103	ofguanosine
+R1	Measure Arg1:T5 Arg2:T4	
+R2	Measure Arg1:T7 Arg2:T6	
+R3	Measure Arg1:T9 Arg2:T8	
+R4	Measure Arg1:T5 Arg2:T3	
+T10	Action 105 114	Microwave
+E2	Action:T10 Using:T12
+T11	Time 119 127	1 minute
+T12	Device 131 153	conventional microwave
+T13	Action 155 163	swirling
+E3	Action:T13 
+T14	Time 167 177	30 seconds
+R5	Setting Arg1:E2 Arg2:T11	
+R6	Setting Arg1:E3 Arg2:T14	
+T15	Action 230 233	add
+E4	Action:T15 Acts-on:T17
+T16	Amount 234 238	6 uL
+T17	Reagent 242 258	Ethidium Bromide
+R7	Measure Arg1:T17 Arg2:T16	
+T18	Action 260 264	Pour
+E5	Action:T18 Site:T19 Using:T20
+T19	Location 270 278	gel dock
+T20	Device 284 288	comb
+T21	Reagent 5 16	Agarose Gel
+T22	Action 293 310	allow to solidify
+E6	Action:T22 
+T23	Action 179 192	Allow to cool
+E7	Action:T23 
+R8	Measure Arg1:T21 Arg2:T1	

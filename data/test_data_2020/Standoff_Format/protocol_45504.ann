@@ -1,0 +1,172 @@
+T1	Method 15 30	rapid detection
+T2	Reagent 38 71	2019 novel coronavirus SARS-CoV-2
+T3	Method 78 96	CRISPR diagnostics
+T4	Reagent 98 116	SARS-CoV-2 DETECTR
+T6	Reagent 125 136	patient RNA
+T7	Action 168 175	Prepare
+E2	Action:T7 
+T8	Reagent 176 198	LbCas12a RNP complexes
+T9	Reagent 207 214	samples
+T10	Action 221 227	tested
+E3	Action:T10 
+T11	Numerical 230 233	One
+T12	Reagent 234 241	complex
+T13	Reagent 246 252	N-gene
+T14	Reagent 254 260	E-gene
+T15	Reagent 266 279	RNase P gRNAs
+T16	Reagent 299 305	sample
+T17	Action 307 315	Incubate
+E4	Action:T17 
+T18	Reagent 316 324	LbCas12a
+T19	Reagent 330 334	gRNA
+T20	Action 338 346	generate
+E5	Action:T20 Product:T21
+T21	Reagent 347 360	RNP complexes
+T22	Time 365 373	00:30:00
+T23	Temperature 377 382	37 °C
+T24	Action 384 387	Add
+E6	Action:T24 Measure-Type-Link:T27
+T25	Reagent 388 406	reporter substrate
+T26	Modifier 410 415	final
+T27	Measure-Type 416 429	concentration
+T28	Concentration 433 451	500 Nanomolar (nM)
+T30	Action 453 458	Place
+E7	Action:T30 
+T31	Reagent 459 468	reactions
+T32	Location 472 475	ice
+T33	Action 491 498	proceed
+E8	Action:T33 
+T34	Location 503 506	ice
+T35	Action 508 515	prepare
+E9	Action:T35 
+T36	Numerical 516 521	three
+T37	Reagent 522 539	RT-LAMP reactions
+T38	Numerical 541 544	one
+T39	Reagent 554 560	N-gene
+T40	Reagent 562 568	E-gene
+T41	Reagent 574 593	RNase P primer sets
+T42	Action 595 603	Incubate
+E10	Action:T42 
+T43	Temperature 607 612	62 °C
+T44	Time 617 625	00:20:00
+T45	Action 627 634	Combine
+E11	Action:T45 
+T46	Amount 635 639	2 µl
+T47	Reagent 647 663	RT-LAMP reaction
+T48	Amount 669 674	20 µl
+T49	Reagent 682 694	LbCas12a RNP
+T50	Action 695 702	complex
+E12	Action:T50 
+T51	Modifier 712 723	appropriate
+T52	Reagent 724 728	gRNA
+T53	Action 730 733	Add
+E13	Action:T53 
+T54	Amount 734 739	80 µl
+T55	Concentration 740 742	1X
+T56	Reagent 743 755	NEBuffer 2.1
+T57	Action 757 765	Incubate
+E14	Action:T57 
+T58	Temperature 769 774	37 °C
+T59	Time 779 787	00:10:00
+T60	Action 789 795	Insert
+E15	Action:T60 
+T61	Device 796 846	Milenia HybriDetect 1 (TwistDx) lateral flow strip
+T62	Reagent 861 869	reaction
+T63	Modifier 847 855	directly
+T64	Action 871 876	Allow
+E16	Action:T64 
+T65	Device 881 899	lateral flow strip
+T66	Action 903 906	run
+E17	Action:T66 
+T67	Time 911 919	00:02:00
+T68	Temperature 923 939	Room temperature
+T69	Action 944 951	observe
+E18	Action:T69 
+T70	Measure-Type 956 962	result
+T71	Reagent 1116 1122	sample
+T72	Modifier 1128 1136	complete
+T73	Action 1137 1145	cleavage
+E19	Action:T73 
+T74	Reagent 1153 1170	reporter molecule
+T75	Measure-Type 1193 1199	signal
+T76	Location 974 978	line
+T77	Reagent 994 1004	sample pad
+T78	Location 1012 1024	control line
+T79	Location 1033 1037	line
+T80	Reagent 1069 1079	sample pad
+T81	Location 1087 1096	test line
+T82	Location 1207 1219	control line
+T83	Reagent 1232 1250	SARS-CoV-2 DETECTR
+T84	Method 1266 1275	detection
+T85	Numerical 1285 1292	156-625
+T86	Amount 1304 1309	20 µl
+T87	Reagent 1310 1318	reaction
+T88	Numerical 1323 1329	70-300
+T89	Time 1418 1428	30 minutes
+T90	Reagent 1429 1435	sample
+T91	Reagent 1293 1299	copies
+T92	Reagent 1330 1336	copies
+T93	Amount 1341 1343	µl
+T94	Reagent 1344 1349	input
+T95	Action 1355 1364	generates
+E20	Action:T95 Measure-Type-Link:T97
+T96	Modifier 1367 1380	clear visible
+T97	Measure-Type 1381 1387	signal
+T98	Device 1391 1410	lateral flow strips
+R1	Acts-on Arg1:T1 Arg2:T2	
+R2	Using Arg1:T1 Arg2:T3	
+T5	Action 117 124	Extract
+E1	Action:T5 
+R3	Acts-on Arg1:E1 Arg2:T6	
+R4	Acts-on Arg1:E2 Arg2:T8	
+R5	Acts-on Arg1:E3 Arg2:T9	
+R6	Measure Arg1:T12 Arg2:T11	
+R7	Acts-on Arg1:E4 Arg2:T18	
+R8	Setting Arg1:E5 Arg2:T22	
+R9	Setting Arg1:E5 Arg2:T23	
+R10	Acts-on Arg1:E4 Arg2:T19	
+R11	Acts-on Arg1:E6 Arg2:T25	
+R12	Mod-Link Arg1:T27 Arg2:T26	
+R13	Measure Arg1:T25 Arg2:T28	
+R14	Acts-on Arg1:E7 Arg2:T31	
+R15	Site Arg1:E7 Arg2:T32	
+R16	Site Arg1:E9 Arg2:T34	
+R17	Acts-on Arg1:E9 Arg2:T37	
+R18	Measure Arg1:T37 Arg2:T36	
+R19	Measure Arg1:T37 Arg2:T38	
+R20	Setting Arg1:E10 Arg2:T43	
+R21	Setting Arg1:E10 Arg2:T44	
+R22	Acts-on Arg1:E11 Arg2:T47	
+R23	Measure Arg1:T47 Arg2:T46	
+R24	Measure Arg1:T49 Arg2:T48	
+R25	Acts-on Arg1:E11 Arg2:T49	
+R26	Acts-on Arg1:E12 Arg2:T52	
+R27	Mod-Link Arg1:T52 Arg2:T51	
+R28	Acts-on Arg1:E13 Arg2:T56	
+R29	Measure Arg1:T56 Arg2:T54	
+R30	Measure Arg1:T56 Arg2:T55	
+R31	Setting Arg1:E14 Arg2:T58	
+R32	Setting Arg1:E14 Arg2:T59	
+R33	Acts-on Arg1:E15 Arg2:T61	
+R34	Mod-Link Arg1:E15 Arg2:T63	
+R35	Site Arg1:E15 Arg2:T62	
+R36	Acts-on Arg1:E16 Arg2:T65	
+R37	Setting Arg1:E17 Arg2:T67	
+R38	Setting Arg1:E17 Arg2:T68	
+R39	Acts-on Arg1:E18 Arg2:T70	
+R40	Mod-Link Arg1:E19 Arg2:T72	
+R41	Acts-on Arg1:E19 Arg2:T74	
+R42	Measure Arg1:T87 Arg2:T86	
+R43	Measure Arg1:T91 Arg2:T85	
+R44	Measure Arg1:T92 Arg2:T88	
+R45	Measure Arg1:T94 Arg2:T93	
+R46	Site Arg1:E20 Arg2:T98	
+R47	Setting Arg1:E20 Arg2:T89	
+R48	Mod-Link Arg1:T97 Arg2:T96	
+T99	Modifier 294 298	each
+R49	Mod-Link Arg1:T16 Arg2:T99	
+T29	Numerical 1277 1280	n=7
+T100	Modifier 1300 1303	per
+R50	Mod-Link Arg1:T86 Arg2:T100	
+T101	Modifier 1337 1340	per
+R51	Mod-Link Arg1:T93 Arg2:T101	

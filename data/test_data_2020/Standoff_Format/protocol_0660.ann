@@ -1,0 +1,232 @@
+T1	Method 0 10	Extraction
+T2	Reagent 14 17	DNA
+T3	Reagent 23 36	blood samples
+T4	Device 43 62	QIAamp DNA mini kit
+T5	Action 72 75	Add
+E1	Action:T5 Acts-on:T7 Site:T9
+T6	Amount 76 80	20µl
+T7	Reagent 84 99	Qiagen protease
+T8	Amount 108 113	1.5ml
+T9	Location 114 135	micro-centrifuge tube
+R1	Measure Arg1:T9 Arg2:T8	
+R2	Measure Arg1:T7 Arg2:T6	
+T10	Action 137 140	Add
+E2	Action:T10 Acts-on:T12 Site:T15
+T11	Amount 141 146	200µl
+T12	Reagent 150 161	whole blood
+T13	Modifier 171 175	same
+T14	Amount 176 181	1.5ml
+T15	Location 182 203	micro-centrifuge tube
+R3	Mod-Link Arg1:T15 Arg2:T13	
+R4	Measure Arg1:T15 Arg2:T14	
+R5	Measure Arg1:T12 Arg2:T11	
+T16	Action 205 209	Add 
+E3	Action:T16 Acts-on:T18
+T17	Amount 209 214	200µl
+T18	Reagent 218 224	buffer
+T19	Action 234 237	mix
+E4	Action:T19 Using:T20
+T20	Method 241 256	pulse vortexing
+T21	Time 261 271	15 seconds
+R6	Setting Arg1:E4 Arg2:T21	
+T22	Reagent 226 228	AL
+R7	Coreference-Link Arg1:T22 Arg2:T18	
+R8	Measure Arg1:T18 Arg2:T17	
+T23	Action 273 281	Incubate
+E5	Action:T23 Acts-on:T24 Site:T25
+T24	Reagent 286 294	solution
+T25	Location 300 310	water bath
+T26	Temperature 314 319	56 ºC
+T27	Time 324 334	10 minutes
+R9	Setting Arg1:E5 Arg2:T26	
+R10	Setting Arg1:E5 Arg2:T27	
+T28	Modifier 341 348	briefly
+T29	Action 349 359	centrifuge
+E6	Action:T29 Acts-on:T30
+T30	Location 364 368	tube
+R11	Mod-Link Arg1:E6 Arg2:T28	
+T31	Reagent 379 384	drops
+T32	Seal 408 411	lid
+T33	Action 372 378	remove
+E7	Action:T33 Acts-on:T31
+T34	Action 413 416	Add
+E8	Action:T34 Acts-on:T36 Site:T38
+T35	Amount 417 422	200µl
+T36	Reagent 426 433	ethanol
+T37	Concentration 435 439	100%
+T38	Reagent 448 454	sample
+T39	Action 459 462	mix
+E9	Action:T39 Using:T40 Acts-on:T38
+T40	Method 472 487	pulse vortexing
+T41	Time 492 502	15 seconds
+R12	Setting Arg1:E9 Arg2:T41	
+R13	Measure Arg1:T36 Arg2:T37	
+R14	Measure Arg1:T36 Arg2:T35	
+T42	Modifier 509 516	briefly
+T43	Action 517 527	centrifuge
+E10	Action:T43 Acts-on:T44
+T44	Reagent 532 538	mixure
+R15	Mod-Link Arg1:E10 Arg2:T42	
+T45	Action 545 553	transfer
+E11	Action:T45 Acts-on:T46 Site:T48
+T46	Reagent 558 565	mixture
+T47	Modifier 566 575	carefully
+T48	Location 583 606	QIAamp mini spin column
+T49	Location 618 633	collection tube
+R17	Mod-Link Arg1:E11 Arg2:T47	
+T50	Action 660 665	Close
+E12	Action:T50 Acts-on:T51
+T51	Seal 670 673	cap
+T52	Action 678 688	centrifuge
+E13	Action:T52 Acts-on:T53
+T53	Location 693 697	tube
+T54	Speed 701 708	8000rpm
+T55	Time 713 721	1 minute
+R18	Setting Arg1:E13 Arg2:T54	
+R19	Setting Arg1:E13 Arg2:T55	
+T56	Action 728 733	place
+E14	Action:T56 Acts-on:T57 Site:T60
+T57	Location 738 761	QIAamp mini spin column
+T58	Modifier 767 772	clean
+T59	Size 773 777	2 ml
+T60	Location 778 793	collection tube
+T61	Size 613 617	2 ml
+R16	Measure Arg1:T49 Arg2:T61	
+R20	Coreference-Link Arg1:T49 Arg2:T48	
+T62	Action 798 805	discard
+E15	Action:T62 Acts-on:T63
+T63	Location 810 814	tube
+T64	Reagent 830 838	filtrate
+T65	Action 840 843	Add
+E16	Action:T65 Acts-on:T67
+R21	Mod-Link Arg1:T60 Arg2:T58	
+R22	Measure Arg1:T60 Arg2:T59	
+T66	Amount 844 849	500µl
+T67	Reagent 853 859	buffer
+T68	Reagent 861 864	AW1
+R23	Coreference-Link Arg1:T68 Arg2:T67	
+T69	Action 894 904	centrifuge
+E17	Action:T69 
+T70	Speed 908 916	8000 rpm
+T71	Time 921 929	1 minute
+T72	Action 936 943	closing
+E18	Action:T72 Acts-on:T73
+T73	Seal 948 951	cap
+R24	Setting Arg1:E17 Arg2:T70	
+R25	Setting Arg1:E17 Arg2:T71	
+R26	Measure Arg1:T67 Arg2:T66	
+T74	Action 874 881	wetting
+E19	Action:T74 
+T75	Location 886 889	rim
+T76	Action 643 650	wetting
+E20	Action:T76 
+T77	Location 655 658	rim
+T78	Action 958 963	place
+E21	Action:T78 Acts-on:T79 Site:T82
+T79	Location 968 991	QIAamp mini spin column
+T80	Modifier 997 1002	clean
+T81	Size 1003 1006	2ml
+T82	Location 1007 1022	collection tube
+T83	Action 1027 1034	discard
+E22	Action:T83 Acts-on:T84
+T84	Location 1039 1043	tube
+T85	Reagent 1059 1067	filtrate
+R27	Mod-Link Arg1:T82 Arg2:T80	
+R28	Measure Arg1:T82 Arg2:T81	
+T86	Action 1069 1072	Add
+E23	Action:T86 Acts-on:T88
+T87	Amount 1073 1078	500µl
+T88	Reagent 1082 1088	buffer
+T89	Reagent 1090 1093	AW2
+R29	Coreference-Link Arg1:T89 Arg2:T88	
+T90	Action 1103 1110	wetting
+E24	Action:T90 
+T91	Action 1123 1133	centrifuge
+E25	Action:T91 
+T92	Speed 1137 1147	14,000 rpm
+T93	Time 1152 1161	3 minutes
+R30	Setting Arg1:E25 Arg2:T92	
+R31	Setting Arg1:E25 Arg2:T93	
+T94	Location 1115 1118	rim
+R32	Measure Arg1:T88 Arg2:T87	
+T95	Location 1178 1189	spin column
+T96	Action 1168 1173	place
+E26	Action:T96 Acts-on:T95 Site:T99
+T97	Modifier 1195 1198	new
+T98	Size 1199 1202	2ml
+T99	Location 1203 1218	collection tube
+T100	Action 1223 1230	discard
+E27	Action:T100 Acts-on:T101
+T101	Location 1235 1250	collection tube
+T102	Reagent 1260 1268	filtrate
+R33	Mod-Link Arg1:T99 Arg2:T97	
+R34	Measure Arg1:T99 Arg2:T98	
+T103	Action 1270 1280	Centrifuge
+E28	Action:T103 Acts-on:T104 Site:T105
+T104	Location 1285 1296	spin column
+T105	Location 1306 1321	collection tube
+T106	Speed 1331 1340	14,000rpm
+T107	Time 1345 1353	1 minute
+R35	Setting Arg1:E28 Arg2:T106	
+R36	Setting Arg1:E28 Arg2:T107	
+T108	Action 1355 1360	Place
+E29	Action:T108 Acts-on:T109 Site:T112
+T109	Location 1365 1388	QIAamp mini spin column
+T110	Modifier 1394 1399	clean
+T111	Size 1400 1405	1.5ml
+T112	Location 1406 1427	micro-centrifuge tube
+T113	Action 1432 1439	discard
+E30	Action:T113 Acts-on:T114
+T114	Location 1444 1459	collection tube
+T115	Reagent 1475 1483	filtrate
+R37	Mod-Link Arg1:T112 Arg2:T110	
+R38	Measure Arg1:T112 Arg2:T111	
+T116	Action 1490 1493	add
+E31	Action:T116 Acts-on:T118
+T117	Amount 1494 1499	200µl
+T118	Reagent 1503 1517	elusion buffer
+T119	Reagent 1519 1521	AE
+R39	Coreference-Link Arg1:T119 Arg2:T118	
+T120	Action 1527 1535	incubate
+E32	Action:T120 
+T121	Temperature 1539 1555	room temperature
+T122	Time 1560 1568	1 minute
+R40	Setting Arg1:E32 Arg2:T121	
+R41	Setting Arg1:E32 Arg2:T122	
+R42	Measure Arg1:T118 Arg2:T117	
+T123	Action 1575 1585	centrifuge
+E33	Action:T123 Acts-on:T124
+T124	Reagent 1590 1597	mixture
+T125	Speed 1601 1608	8000rpm
+T126	Time 1613 1621	1 minute
+R43	Setting Arg1:E33 Arg2:T125	
+R44	Setting Arg1:E33 Arg2:T126	
+T127	Action 1623 1630	Discard
+E34	Action:T127 Acts-on:T128
+T128	Location 1635 1658	QIAamp mini spin column
+T129	Action 1663 1668	store
+E35	Action:T129 Acts-on:T130
+T130	Location 1673 1694	micro-centrifuge tube
+T131	Modifier 1710 1716	eluted
+T132	Reagent 1717 1720	DNA
+T133	Temperature 1724 1729	-80°C
+R45	Mod-Link Arg1:T132 Arg2:T131	
+R46	Setting Arg1:E35 Arg2:T133	
+R48	Acts-on Arg1:T1 Arg2:T2	
+R49	Site Arg1:T1 Arg2:T3	
+T134	Location 394 400	inside
+R47	Meronym Arg1:T134 Arg2:T32	
+R50	Acts-on Arg1:E7 Arg2:T32	
+R51	Acts-on Arg1:E20 Arg2:T77	
+T135	Modifier 635 642	without
+R52	Mod-Link Arg1:E20 Arg2:T135	
+R53	Meronym Arg1:T64 Arg2:T63	
+T136	Modifier 866 873	without
+R54	Mod-Link Arg1:E19 Arg2:T136	
+R55	Acts-on Arg1:E19 Arg2:T75	
+R56	Meronym Arg1:T85 Arg2:T84	
+T137	Modifier 1095 1102	without
+R57	Mod-Link Arg1:E24 Arg2:T137	
+R58	Acts-on Arg1:E24 Arg2:T94	
+R59	Meronym Arg1:T102 Arg2:T101	
+R60	Meronym Arg1:T115 Arg2:T114	

@@ -1,0 +1,178 @@
+T1	Method 6 18	Purification
+T2	Method 22 47	Sucrose Density Gradients
+T3	Action 48 58	Centrifuge
+E1	Action:T3 Acts-on:T4 Site:T5
+T4	Reagent 59 65	lysate
+T5	Device 73 101	Sorvall Lynx 4000 centrifuge
+T6	Speed 105 114	5,000 rpm
+T7	Time 116 121	5 min
+T8	Temperature 123 126	4ºC
+R1	Setting Arg1:E1 Arg2:T6	
+R2	Setting Arg1:E1 Arg2:T7	
+R3	Setting Arg1:E1 Arg2:T8	
+T9	Action 128 135	Discard
+E2	Action:T9 Acts-on:T10
+T10	Reagent 140 147	pellets
+T11	Action 149 152	Add
+E3	Action:T11 Acts-on:T12 Site:T13
+T12	Reagent 153 165	Triton X-100
+T13	Reagent 173 192	lysate supernatants
+T14	Modifier 199 204	final
+T15	Measure-Type 205 218	concentration
+T16	Concentration 222 224	1%
+R4	Of-Type Arg1:T16 Arg2:T15	
+T17	Concentration 239 242	20%
+T18	Concentration 233 235	10
+T19	Action 251 261	Centrifuge
+E4	Action:T19 Acts-on:T20 Using:T21
+T20	Reagent 266 272	lysate
+T21	Device 280 319	Sorvall WX Ultra Series ultracentrifuge
+T22	Speed 323 333	17,000 rpm
+T23	Time 335 341	50 min
+T24	Temperature 343 346	4ºC
+R7	Setting Arg1:E4 Arg2:T22	
+R8	Setting Arg1:E4 Arg2:T23	
+R9	Setting Arg1:E4 Arg2:T24	
+T25	Action 348 355	Discard
+E5	Action:T25 Acts-on:T26
+T26	Reagent 360 372	supernatants
+T27	Action 374 383	Resuspend
+E6	Action:T27 Acts-on:T36 Site:T31
+T28	Modifier 409 414	small
+T29	Measure-Type 415 421	volume
+T30	Concentration 425 430	50 mM
+T31	Reagent 431 439	Tris-HCl
+T32	pH 441 447	pH 7.8
+T33	Amount 462 468	1.0 mL
+T34	Amount 473 479	100 mL
+T35	Reagent 480 486	lysate
+T36	Reagent 388 401	virus pellets
+R10	Measure Arg1:T31 Arg2:T30	
+R11	Measure Arg1:T31 Arg2:T32	
+R12	Measure Arg1:T35 Arg2:T34	
+T37	Action 488 493	Layer
+E7	Action:T37 Acts-on:T38 Site:T41
+T38	Reagent 498 514	virus suspension
+T39	Concentration 520 533	100-400 mg/mL
+T40	Concentration 535 541	10-40%
+R13	Coreference-Link Arg1:T40 Arg2:T39	
+T41	Reagent 543 567	linear sucrose gradients
+T42	Concentration 587 592	50 mM
+T43	Reagent 593 601	Tris-HCl
+T44	Location 610 629	polypropylene tubes
+T45	Amount 651 657	3-4 mL
+T46	Reagent 662 670	gradient
+T47	Action 697 700	add
+E8	Action:T47 Acts-on:T50 Site:T51
+T48	Reagent 681 695	sucrose stocks
+T49	Concentration 701 707	10-40%
+T50	Reagent 708 715	sucrose
+T51	Reagent 719 727	Tris-HCl
+T52	Action 732 741	autoclave
+E9	Action:T52 Acts-on:T50
+R14	Measure Arg1:T41 Arg2:T39	
+R15	Measure Arg1:T43 Arg2:T42	
+R16	Measure Arg1:T50 Arg2:T49	
+T53	Action 743 753	Centrifuge
+E10	Action:T53 Acts-on:T54 Site:T55
+T54	Reagent 758 767	gradients
+T55	Device 775 790	ultracentrifuge
+T56	Speed 794 804	20,000 rpm
+T57	Time 806 812	20 min
+T58	Temperature 814 817	4ºC
+R17	Setting Arg1:E10 Arg2:T56	
+R18	Setting Arg1:E10 Arg2:T57	
+R19	Setting Arg1:E10 Arg2:T58	
+T59	Reagent 823 828	virus
+T60	Reagent 881 889	gradient
+T61	Numerical 858 861	1/2
+T62	Numerical 865 868	2/3
+T63	Action 891 897	Remove
+E11	Action:T63 Acts-on:T64 Site:T65 Using:T67
+T64	Reagent 902 913	virus bands
+T65	Reagent 923 932	gradients
+T66	Modifier 938 945	sterile
+T67	Device 946 953	needles
+T68	Action 958 966	transfer
+E12	Action:T68 Acts-on:T64 Site:T70
+T69	Size 970 975	30 mL
+T70	Location 976 1006	polypropylene centrifuge tubes
+R20	Mod-Link Arg1:T67 Arg2:T66	
+R21	Measure Arg1:T70 Arg2:T69	
+T71	Action 1008 1013	Split
+E13	Action:T71 Acts-on:T72 Site:T76
+T72	Reagent 1018 1023	virus
+T73	Numerical 1029 1030	3
+T74	Modifier 1041 1048	between
+T75	Numerical 1049 1052	two
+T76	Location 1053 1058	tubes
+T77	Modifier 1060 1066	Slowly
+T78	Action 1067 1073	dilute
+E14	Action:T78 Acts-on:T81 Site:T82 Using:T84
+T79	Reagent 1031 1040	gradients
+R22	Measure Arg1:T79 Arg2:T73	
+R23	Mod-Link Arg1:T76 Arg2:T74	
+R24	Measure Arg1:T76 Arg2:T75	
+R25	Mod-Link Arg1:E14 Arg2:T77	
+T80	Action 1197 1206	Resuspend
+E15	Action:T80 Acts-on:T91 Using:T95
+T81	Reagent 1078 1083	virus
+T82	Location 1091 1095	tube
+T83	Concentration 1108 1113	50 mM
+T84	Reagent 1114 1122	Tris-HCl
+T85	Action 1124 1134	Centrifuge
+E16	Action:T85 Acts-on:T86 Site:T87
+T86	Location 1139 1144	tubes
+T87	Device 1152 1167	ultracentrifuge
+T88	Speed 1171 1181	27,000 rpm
+T89	Time 1183 1190	3 hours
+T90	Temperature 1192 1195	4ºC
+R26	Measure Arg1:T84 Arg2:T83	
+R27	Setting Arg1:E16 Arg2:T88	
+R28	Setting Arg1:E16 Arg2:T89	
+R29	Setting Arg1:E16 Arg2:T90	
+T91	Reagent 1211 1224	virus pellets
+T92	Measure-Type 1238 1244	volume
+T93	Modifier 1232 1237	small
+T94	Concentration 1248 1253	50 mM
+T95	Reagent 1254 1262	Tris-HCl
+T96	Action 1264 1269	Store
+E17	Action:T96 Acts-on:T97
+T97	Reagent 1274 1279	virus
+T98	Temperature 1283 1286	4ºC
+R30	Setting Arg1:E17 Arg2:T98	
+R31	Measure Arg1:T95 Arg2:T94	
+T99	Method 1303 1323	Filter sterilization
+T100	Device 1340 1364	cellulose acetate filter
+T101	Size 1332 1339	0.45 um
+R32	Setting Arg1:T100 Arg2:T101	
+T102	Reagent 0 5	Virus
+R33	Or Arg1:T18 Arg2:T17	
+T103	Reagent 243 248	stock
+R5	Measure Arg1:T103 Arg2:T18	
+R6	Measure Arg1:T103 Arg2:T17	
+T104	Modifier 469 472	per
+R34	Mod-Link Arg1:T35 Arg2:T104	
+T105	Action 568 581	equilibriated
+E18	Action:T105 Acts-on3:T41 Using:T43
+T107	Modifier 658 661	per
+R35	Mod-Link Arg1:T46 Arg2:T107	
+R36	Measure Arg1:T46 Arg2:T45	
+T108	Modifier 637 650	approximately
+R37	Mod-Link Arg1:T45 Arg2:T108	
+T106	Action 631 636	layer
+E19	Action:T106 Acts-on:T46
+T109	Action 602 606	made
+E20	Action:T109 Product:T43 Site:T44
+T110	Action 676 680	make
+E21	Action:T110 Product:T48
+T111	Reagent 847 851	band
+T112	Modifier 841 846	major
+R38	Mod-Link Arg1:T111 Arg2:T112	
+T113	Measure-Type 1096 1102	volume
+T114	Action 1295 1301	freeze
+E22	Action:T114 
+T115	Modifier 1288 1294	Do not
+R39	Mod-Link Arg1:E22 Arg2:T115	
+R40	Using Arg1:T1 Arg2:T2	
+R41	Acts-on Arg1:T1 Arg2:T102	

@@ -1,0 +1,102 @@
+T1	Method 0 29	Taxonomic biomarker discovery
+T2	Method 35 40	LEfSe
+T3	Modifier 41 47	Before
+T4	Action 48 57	beginning
+E1	Action:T4 
+R1	Mod-Link Arg1:E1 Arg2:T3	
+T5	Action 70 77	convert
+E2	Action:T5 Acts-on:T6
+T6	Reagent 82 88	sample
+T7	Modifier 100 110	consistent
+T8	Modifier 133 139	easily
+T9	Action 143 147	done
+E3	Action:T9 
+T10	Modifier 151 159	manually
+T11	Action 160 167	editing
+E4	Action:T11 
+T12	Action 339 348	generated
+E5	Action:T12 
+T13	Modifier 356 364	previous
+T14	Method 365 375	protocols 
+T16	Method 410 422	Unix command
+T17	Modifier 398 409	"sed" based
+R2	Mod-Link Arg1:E4 Arg2:T10	
+R3	Mod-Link Arg1:E3 Arg2:T8	
+T18	Modifier 429 434	first
+T19	Method 435 445	LEfSe step
+T20	Action 458 468	formatting
+E6	Action:T20 
+T21	Method 635 665	LEfSe biomarker discovery tool
+T22	Action 673 677	used
+E7	Action:T22 
+T23	Modifier 683 690	default
+T24	Action 486 497	making sure
+E8	Action:T24 Site:T25
+T25	Location 530 539	first row
+T26	Action 544 551	scaling
+E9	Action:T26 
+R4	Mod-Link Arg1:E7 Arg2:T23	
+T28	Action 720 726	change
+E10	Action:T28 
+T29	Numerical 727 730	one
+T30	Modifier 731 738	default
+T31	Action 752 760	increase
+E11	Action:T31 Measure-Type-Link:T32
+T32	Measure-Type 765 774	threshold
+T33	Method 782 785	LDA
+T34	Numerical 803 804	2
+T35	Modifier 806 813	default
+T36	Numerical 818 819	4
+R5	Mod-Link Arg1:T34 Arg2:T35	
+R6	Setting Arg1:E10 Arg2:T29	
+R7	Mod-Link Arg1:E10 Arg2:T30	
+T37	Method 840 849	operation
+T38	Action 861 870	displayed
+E12	Action:T38 
+T39	Modifier 884 893	resulting
+T40	Modifier 918 931	corresponding
+T41	Reagent 902 912	biomarkers
+T42	Action 1139 1144	shown
+E13	Action:T42 Site:T43
+T43	Location 1145 1150	below
+T45	Modifier 1161 1174	complementary
+T46	Method 1175 1188	visualization
+T47	Action 1200 1207	showing
+E14	Action:T47 Acts-on:T48
+T48	Reagent 1212 1222	biomarkers
+T49	Modifier 1261 1268	default
+T50	Action 1288 1293	shown
+E15	Action:T50 Site:T51
+R8	Mod-Link Arg1:E15 Arg2:T49	
+T51	Location 1294 1298	here
+T52	Modifier 1301 1307	Single
+T53	Action 1329 1336	plotted
+E16	Action:T53 
+T54	Action 1520 1524	plot
+E17	Action:T54 Measure-Type-Link:T56 Acts-on:T55
+T55	Reagent 1560 1570	Firmicutes
+T56	Measure-Type 1545 1555	abundances
+T57	Action 1575 1582	command
+E18	Action:T57 
+R9	Mod-Link Arg1:E16 Arg2:T52	
+T58	Modifier 1588 1591	All
+T59	Modifier 1605 1608	all
+T60	Reagent 1609 1619	biomarkers
+R10	Mod-Link Arg1:T60 Arg2:T59	
+T61	Action 1633 1641	exported
+E19	Action:T61 Count:T62
+T62	Numerical 1645 1648	one
+T63	Modifier 1649 1659	compressed
+T64	Modifier 1683 1692	resulting
+T65	Reagent 1705 1715	Firmicutes
+T66	Reagent 1724 1739	Veillonellaceae
+T67	Action 1741 1750	extracted
+E20	Action:T67 
+R11	Mod-Link Arg1:T65 Arg2:T64	
+R12	Mod-Link Arg1:T66 Arg2:T64	
+T68	Numerical 567 571	0,1M
+R13	Mod-Link Arg1:T14 Arg2:T13	
+R14	Mod-Link Arg1:T16 Arg2:T17	
+R15	Mod-Link Arg1:T19 Arg2:T18	
+R16	Setting Arg1:E9 Arg2:T68	
+R17	Mod-Link Arg1:T46 Arg2:T45	

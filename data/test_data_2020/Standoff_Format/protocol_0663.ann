@@ -1,0 +1,96 @@
+T1	Action 56 65	Transform
+E1	Action:T1 Acts-on:T2 Site:T3
+T2	Reagent 66 84	expression plasmid
+T3	Reagent 90 98	BL21(DE3
+T4	Method 0 18	Protein Expression
+T5	Reagent 25 34	BL21(DE3)
+T6	Action 101 106	Plate
+E2	Action:T6 Site:T7
+T7	Location 110 137	antibiotic selection plates
+T8	Action 139 147	Incubate
+E3	Action:T8 
+T9	Time 148 157	overnight
+T10	Temperature 161 165	37°C
+R1	Setting Arg1:E3 Arg2:T9	
+R2	Setting Arg1:E3 Arg2:T10	
+T11	Action 167 176	Inoculate
+E4	Action:T11 Acts-on:T13 Using:T14
+T12	Amount 177 180	1 L
+T13	Reagent 184 197	liquid medium
+T14	Reagent 204 214	antibiotic
+T15	Modifier 223 236	freshly grown
+T16	Reagent 237 243	colony
+T17	Amount 252 257	10 ml
+T18	Modifier 261 274	freshly grown
+T19	Reagent 275 282	culture
+T20	Numerical 291 297	single
+T21	Reagent 298 304	colony
+R3	Measure Arg1:T21 Arg2:T20	
+R4	Mod-Link Arg1:T19 Arg2:T18	
+R5	Mod-Link Arg1:T16 Arg2:T15	
+R6	Measure Arg1:T19 Arg2:T17	
+R7	Measure Arg1:T13 Arg2:T12	
+R8	Or Arg1:T16 Arg2:T19	
+T22	Action 307 315	Incubate
+E5	Action:T22 
+T23	Temperature 319 323	37°C
+T24	Measure-Type 330 335	OD600
+T25	Generic-Measure 344 351	0.4–0.8
+R9	Of-Type Arg1:T25 Arg2:T24	
+R10	Setting Arg1:E5 Arg2:T23	
+T26	Action 353 359	Induce
+E6	Action:T26 
+T27	Concentration 381 387	100 mM
+T28	Reagent 397 401	IPTG
+T29	Action 441 448	Express
+E7	Action:T29 Acts-on:T30
+T30	Reagent 449 456	protein
+T31	Measure-Type 463 475	optimal time
+T32	Measure-Type 476 487	temperature
+T33	Action 523 528	Check
+E8	Action:T33 Using:T36 Using2:T34 Using3:T35
+T34	Method 585 597	Western Blot
+T35	Method 601 615	activity assay
+T36	Reagent 554 583	Coomassie stained protein gel
+T37	Action 488 498	determined
+E9	Action:T37 
+T38	Modifier 403 408	final
+T39	Measure-Type 409 422	concentration
+T40	Generic-Measure 426 428	40
+T41	Generic-Measure 432 438	400 µM
+R11	Of-Type Arg1:T40 Arg2:T39	
+R12	Of-Type Arg1:T41 Arg2:T39	
+R13	Or Arg1:T41 Arg2:T40	
+T42	Action 617 622	Check
+E10	Action:T42 Measure-Type-Link:T44 Measure-Type-Link2:T43
+T43	Measure-Type 646 664	total cell extract
+T44	Measure-Type 695 711	soluble fraction
+T45	Numerical 365 366	4
+T46	Amount 370 375	40 µl
+R14	Or Arg1:T46 Arg2:T45	
+T47	Method 510 521	scale trial
+T48	Modifier 504 509	small
+T49	Modifier 666 673	soluble
+T50	Modifier 676 685	insoluble
+R16	Using Arg1:T4 Arg2:T5	
+T52	Modifier 36 47	Large Scale
+R17	Mod-Link Arg1:T4 Arg2:T52	
+R15	Using Arg1:E4 Arg2:T16	
+R18	Using Arg1:E4 Arg2:T19	
+R19	Meronym Arg1:T19 Arg2:T21	
+T51	Reagent 388 393	stock
+R20	Measure Arg1:T51 Arg2:T27	
+R21	Measure Arg1:T51 Arg2:T46	
+R22	Coreference-Link Arg1:T51 Arg2:T45	
+R23	Using Arg1:E6 Arg2:T51	
+R24	Meronym Arg1:T51 Arg2:T28	
+R25	Mod-Link Arg1:T39 Arg2:T38	
+R26	Measure Arg1:T51 Arg2:T40	
+R27	Measure Arg1:T51 Arg2:T41	
+R28	Using Arg1:E7 Arg2:T31	
+R29	Using Arg1:E7 Arg2:T32	
+R30	Or Arg1:T32 Arg2:T31	
+R31	Acts-on Arg1:E9 Arg2:T32	
+R32	Mod-Link Arg1:T47 Arg2:T48	
+R33	Mod-Link Arg1:T43 Arg2:T49	
+R34	Mod-Link Arg1:T43 Arg2:T50	

@@ -1,0 +1,54 @@
+T1	Reagent 0 9	Resazurin
+T3	Method 10 25	viability assay
+T5	Reagent 30 51	human primary T cells
+T6	Location 55 62	96-well
+T7	Action 70 73	Add
+E1	Action:T7 Acts-on:T9 Site:T11 Using:T13
+T8	Concentration 74 77	10X
+T9	Reagent 78 81	dye
+T10	Modifier 86 90	each
+T11	Location 91 95	well
+T12	Modifier 104 116	multichannel
+T13	Device 117 125	pipettor
+R2	Mod-Link Arg1:T13 Arg2:T12	
+T14	Amount 135 141	200 ul
+T15	Action 154 160	adding
+E2	Action:T15 Acts-on:T18
+T16	Amount 161 166	20 ul
+T17	Concentration 174 177	10X
+T18	Reagent 178 186	solution
+R3	Measure Arg1:T18 Arg2:T17	
+R5	Measure Arg1:T18 Arg2:T16	
+R4	Measure Arg1:T9 Arg2:T8	
+R6	Mod-Link Arg1:T11 Arg2:T10	
+T19	Action 189 197	Continue
+E3	Action:T19 Using:T20 Acts-on:T21
+T20	Method 198 207	culturing
+T21	Reagent 212 217	cells
+T23	Time 235 243	24 hours
+R8	Setting Arg1:E3 Arg2:T23	
+T24	Action 267 274	measure
+E4	Action:T24 Measure-Type-Link:T26 Using:T25
+T25	Device 251 263	plate reader
+T26	Measure-Type 279 289	absorbance
+T27	Generic-Measure 298 304	570 nm
+T28	Generic-Measure 309 315	595 nm
+R9	Setting Arg1:E4 Arg2:T27	
+R10	Setting Arg1:E4 Arg2:T28	
+T30	Generic-Measure 331 337	595 nm
+T31	Generic-Measure 359 365	570 nm
+T32	Modifier 370 374	each
+T33	Location 375 379	well
+R11	Mod-Link Arg1:T33 Arg2:T32	
+T35	Action 399 407	subtract
+E6	Action:T35 
+T36	Modifier 413 418	blank
+T37	Reagent 419 424	media
+T40	Reagent 447 456	treatment
+R13	Mod-Link Arg1:T37 Arg2:T36	
+T43	Measure-Type 525 531	number
+T44	Reagent 535 540	cells
+T45	Location 548 552	well
+T2	Action 317 325	Subtract
+E5	Action:T2 
+R1	Meronym Arg1:T44 Arg2:T45	

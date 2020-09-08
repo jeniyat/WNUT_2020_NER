@@ -1,0 +1,227 @@
+T1	Method 0 14	DNA Extraction
+T2	Method 16 33	PCR Amplification
+T3	Method 35 45	Sequencing
+T4	Method 50 71	Phylogenetic Analysis
+T5	Modifier 72 78	Before
+T6	Action 83 93	extraction
+E1	Action:T6 Acts-on:T7
+T7	Reagent 97 108	genomic DNA
+T8	Reagent 110 124	fungal isolate
+T9	Action 129 137	cultured
+E2	Action:T9 Acts-on:T8 Site:T10
+T10	Location 141 151	PDA plates
+T11	Temperature 155 160	28 °C
+T12	Modifier 161 172	in darkness
+T13	Time 177 185	5-7 days
+R1	Mod-Link Arg1:E1 Arg2:T5	
+R2	Setting Arg1:E2 Arg2:T11	
+R3	Mod-Link Arg1:E2 Arg2:T12	
+R4	Setting Arg1:E2 Arg2:T13	
+T14	Amount 187 193	100 mg
+T15	Reagent 194 208	Fungal mycelia
+T16	Action 214 224	picked out
+E3	Action:T16 Acts-on:T15 Site:T17
+T17	Device 230 236	mortar
+T18	Amount 241 248	1000 μl
+T19	Reagent 252 269	CTAB lysis buffer
+T20	Action 274 279	added
+E4	Action:T20 Acts-on:T19
+T21	Action 283 288	grind
+E5	Action:T21 
+T22	Temperature 292 296	65°C
+R5	Setting Arg1:E5 Arg2:T22	
+R6	Measure Arg1:T15 Arg2:T14	
+R7	Measure Arg1:T19 Arg2:T18	
+T23	Reagent 302 318	mycelial mixture
+T24	Action 323 334	transferred
+E6	Action:T24 Acts-on:T23 Site:T26
+T25	Size 340 346	1.5 ml
+T26	Location 347 361	Eppendorf tube
+T27	Amount 366 371	10 μL
+T28	Reagent 375 392	β-mercaptoethanol
+T29	Action 397 402	added
+E7	Action:T29 Acts-on:T28
+R8	Measure Arg1:T28 Arg2:T27	
+R9	Measure Arg1:T26 Arg2:T25	
+T30	Location 408 422	Eppendorf tube
+T31	Action 427 432	mixed
+E8	Action:T31 Acts-on:T30
+T32	Modifier 433 443	thoroughly
+T33	Action 448 460	water-bathed
+E9	Action:T33 Acts-on:T30 Using:T37
+T34	Temperature 464 468	65°C
+T35	Time 473 479	60 min
+T36	Modifier 485 495	continuous
+T37	Method 496 503	shaking
+R10	Mod-Link Arg1:E8 Arg2:T32	
+R11	Setting Arg1:E9 Arg2:T34	
+R12	Setting Arg1:E9 Arg2:T35	
+T38	Reagent 509 515	lysate
+T39	Action 520 529	extracted
+E10	Action:T39 Acts-on:T38 Measure-Type-Link:T41 Acts-on2:T42
+T40	Modifier 538 543	equal
+T41	Measure-Type 544 550	volume
+T42	Reagent 554 580	chloroform/isoamyl alcohol
+T43	Generic-Measure 582 586	24:1
+T44	Action 592 603	centrifuged
+E11	Action:T44 
+T45	Speed 607 615	12,000×g
+T46	Time 620 625	8 min
+T47	Temperature 629 633	4 °C
+R15	Measure Arg1:T42 Arg2:T43	
+R16	Setting Arg1:E11 Arg2:T45	
+R17	Setting Arg1:E11 Arg2:T46	
+R18	Setting Arg1:E11 Arg2:T47	
+T48	Reagent 639 650	supernatant
+T49	Action 655 666	transferred
+E12	Action:T49 Acts-on:T48 Site:T51
+T50	Modifier 672 675	new
+T51	Location 676 685	microtube
+T52	Action 690 699	extracted
+E13	Action:T52 Using:T53 Acts-on:T48
+T53	Reagent 705 731	chloroform/isoamyl alcohol
+T54	Generic-Measure 733 737	24:1
+T55	Speed 742 750	12,000×g
+T56	Time 755 760	8 min
+T57	Temperature 764 768	4 °C
+R19	Mod-Link Arg1:T51 Arg2:T50	
+R20	Measure Arg1:T53 Arg2:T54	
+R21	Setting Arg1:E13 Arg2:T55	
+R22	Setting Arg1:E13 Arg2:T56	
+R23	Setting Arg1:E13 Arg2:T57	
+T58	Action 770 776	Repeat
+E14	Action:T58 Count:T59
+T59	Numerical 784 788	once
+T60	Reagent 794 805	supernatant
+T61	Action 810 821	transferred
+E15	Action:T61 Acts-on:T60 Site:T63
+T62	Modifier 827 830	new
+T63	Location 831 840	microtube
+T64	Action 845 857	precipitated
+E16	Action:T64 Acts-on:T60
+T65	Action 861 867	adding
+E17	Action:T65 Acts-on:T69 Site:T63
+T66	Numerical 870 872	2×
+T67	Measure-Type 873 879	volume
+T68	Modifier 883 890	chilled
+T69	Reagent 891 902	isopropanol
+T70	Time 907 910	6 h
+T71	Temperature 914 919	−20°C
+R24	Mod-Link Arg1:T63 Arg2:T62	
+R25	Mod-Link Arg1:T69 Arg2:T68	
+R26	Measure Arg1:T69 Arg2:T66	
+T72	Modifier 925 934	resulting
+T73	Reagent 935 941	pellet
+T74	Action 946 955	collected
+E18	Action:T74 Acts-on:T73 Using:T75
+T75	Method 959 973	centrifugation
+T76	Speed 975 983	12,000×g
+T77	Time 985 991	15 min
+T78	Action 994 1000	washed
+E19	Action:T78 Count:T79 Using:T81 Acts-on:T73
+T79	Numerical 1001 1006	twice
+T80	Concentration 1012 1015	75%
+T81	Reagent 1016 1023	ethanol
+T82	Action 1025 1034	air-dried
+E20	Action:T82 Acts-on:T73
+T83	Action 1036 1047	resuspended
+E21	Action:T83 Using:T86 Acts-on:T73 Site:T86
+T84	Amount 1051 1056	20 μl
+T85	Modifier 1060 1067	sterile
+T86	Reagent 1068 1083	Millipore water
+T87	Action 1088 1097	deposited
+E22	Action:T87 Site:T89 Acts-on:T73
+T88	Temperature 1101 1105	-20℃
+T89	Location 1106 1113	freezer
+R29	Mod-Link Arg1:T73 Arg2:T72	
+R32	Measure Arg1:T81 Arg2:T80	
+R33	Mod-Link Arg1:T86 Arg2:T85	
+R34	Measure Arg1:T86 Arg2:T84	
+R35	Setting Arg1:E22 Arg2:T88	
+T90	Action 1127 1133	Set up
+E23	Action:T90 
+T91	Method 1138 1160	PCR reaction procedure
+T92	Temperature 1197 1200	94℃
+T93	Time 1205 1214	5 minutes
+T94	Temperature 1231 1234	94℃
+T95	Time 1239 1249	40 seconds
+T96	Temperature 1249 1252	55℃
+T97	Time 1257 1267	40 seconds
+T98	Temperature 1267 1270	72℃
+T99	Time 1275 1285	55 seconds
+T100	Generic-Measure 1285 1294	30 Cycles
+T101	Temperature 1321 1324	72℃
+T102	Time 1329 1339	10 minutes
+T103	Temperature 1356 1358	4℃
+T104	Action 1364 1368	hold
+E24	Action:T104 
+R36	Setting Arg1:E24 Arg2:T103	
+T105	Modifier 1374 1383	amplified
+T106	Reagent 1384 1392	products
+T107	Action 1398 1407	submitted
+E25	Action:T107 Acts-on:T106
+T108	Method 1412 1422	sequencing
+T109	Reagent 1451 1468	ITS-rDNA sequence
+T110	Action 1474 1482	obtained
+E26	Action:T110 Acts-on:T109
+T111	Action 1509 1516	removed
+E27	Action:T111 Using:T112 Acts-on:T138
+T112	Method 1523 1544	BioEdit5.0.6 software
+R37	Mod-Link Arg1:T106 Arg2:T105	
+T113	Action 1546 1553	Aligned
+E28	Action:T113 
+T114	Method 1591 1624	Basic Local Alignment Search Tool
+T115	Method 1626 1631	BLAST
+R38	Coreference-Link Arg1:T115 Arg2:T114	
+T116	Measure-Type 1658 1675	sequence homology
+T117	Action 1645 1649	find
+E29	Action:T117 Measure-Type-Link:T116
+T118	Modifier 1681 1696	closely related
+T119	Generic-Measure 1717 1720	98%
+T120	Method 1723 1744	Phylogenetic analyses
+T121	Reagent 1752 1762	endophytes
+T122	Action 1768 1779	carried out
+E30	Action:T122 Using:T123 Acts-on:T121
+T123	Method 1786 1803	MEGA 5.1 software
+T124	Method 1809 1837	neighbor-joining (NJ) method
+T125	Action 1850 1855	infer
+E31	Action:T125 
+T127	Reagent 1888 1903	fungal isolates
+T128	Numerical 1949 1954	1,000
+T129	Method 1955 1967	replications
+T130	Action 1913 1926	bootstrapping
+E32	Action:T130 Using:T129
+T131	Action 1981 1990	submitted
+E33	Action:T131 Acts-on:T132 Site:T141
+T132	Reagent 1991 2009	ITS-rDNA sequences
+T134	Modifier 2017 2031	representative
+T133	Reagent 2032 2040	isolates
+T135	Action 2056 2064	obtained
+E34	Action:T135 
+T136	Measure-Type 2069 2085	accession number
+R39	Setting Arg1:E34 Arg2:T136	
+R40	Mod-Link Arg1:T133 Arg2:T134	
+T137	Reagent 1563 1572	sequences
+T138	Location 1492 1503	cross peaks
+T139	Location 1580 1587	GenBank
+T140	Reagent 1697 1706	organisms
+R41	Mod-Link Arg1:T140 Arg2:T118	
+R42	Measure Arg1:T140 Arg2:T119	
+T141	Location 2044 2051	GenBank
+R43	Site Arg1:E7 Arg2:T26	
+R44	Mod-Link Arg1:T37 Arg2:T36	
+R13	Mod-Link Arg1:T41 Arg2:T40	
+R14	Setting Arg1:E16 Arg2:T70	
+R27	Setting Arg1:E16 Arg2:T71	
+R28	Setting Arg1:T75 Arg2:T76	
+R45	Setting Arg1:T75 Arg2:T77	
+R30	Acts-on Arg1:E23 Arg2:T91	
+R46	Acts-on Arg1:E28 Arg2:T137	
+R31	Site Arg1:E28 Arg2:T139	
+R47	Using Arg1:E28 Arg2:T114	
+T142	Modifier 1715 1716	≥
+R48	Mod-Link Arg1:T119 Arg2:T142	
+R49	Using Arg1:E31 Arg2:T124	
+R50	Acts-on Arg1:E31 Arg2:T127	
+R51	Count Arg1:T129 Arg2:T128	
+R52	Meronym Arg1:T132 Arg2:T133	

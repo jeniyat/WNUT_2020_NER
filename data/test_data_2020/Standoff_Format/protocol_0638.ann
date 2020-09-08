@@ -1,0 +1,259 @@
+T1	Method 0 10	Dissection
+T2	Reagent 14 23	mouse EDL
+T3	Reagent 28 42	Soleus muscles
+T4	Action 43 46	Pin
+E1	Action:T4 Acts-on:T10 Site:T5
+T5	Location 83 98	dissecting dish
+T6	Reagent 117 132	Ringer solution
+T7	Method 138 148	extraction
+T8	Reagent 156 162	Soleus
+T9	Action 171 177	remove
+E2	Action:T9 Acts-on:T13 Site:T14
+T10	Location 51 54	leg
+T11	Mention 109 111	it
+R1	Coreference-Link Arg1:T11 Arg2:T10	
+T12	Action 103 108	cover
+E3	Action:T12 Using:T6 Acts-on:T11
+T13	Reagent 182 186	skin
+T14	Location 194 197	leg
+T15	Action 210 216	remove
+E4	Action:T15 Acts-on:T16
+T16	Reagent 233 239	fascia
+T17	Modifier 217 220	all
+R2	Mod-Link Arg1:T16 Arg2:T17	
+T18	Action 249 253	Hold
+E5	Action:T18 Acts-on:T19 Using:T20
+T19	Reagent 258 273	Achilles tendon
+T20	Device 283 290	forceps
+T21	Device 320 328	scissors
+T22	Location 301 312	bodkin side
+T23	Modifier 330 339	carefully
+T24	Action 340 343	rub
+E6	Action:T24 Acts-on:T25 Site:T27 Site2:T28
+T25	Location 346 349	gap
+T26	Modifier 355 362	between
+T27	Reagent 367 382	Achilles tendon
+T28	Reagent 397 404	tendons
+T29	Location 415 418	gap
+T30	Action 431 434	cut
+E7	Action:T30 Acts-on:T31 Site:T32
+T31	Reagent 439 454	Achilles tendon
+T32	Location 483 487	foot
+R3	Mod-Link Arg1:E6 Arg2:T23	
+T33	Location 491 494	gap
+T34	Action 521 528	open up
+E8	Action:T34 Acts-on:T33
+T35	Modifier 502 511	naturally
+R6	Mod-Link Arg1:E8 Arg2:T35	
+T36	Action 540 544	help
+E9	Action:T36 Acts-on:T37
+T37	Location 550 553	gap
+T38	Modifier 530 539	Carefully
+T39	Action 557 564	open up
+E10	Action:T39 Acts-on:T37
+R7	Mod-Link Arg1:E9 Arg2:T38	
+T40	Reagent 581 587	fascia
+T41	Modifier 221 232	surrounding
+R8	Mod-Link Arg1:T16 Arg2:T41	
+T42	Modifier 569 580	surrounding
+R9	Mod-Link Arg1:T40 Arg2:T42	
+T43	Modifier 617 626	carefully
+T44	Action 627 630	cut
+E11	Action:T44 Acts-on:T45
+T45	Mention 631 633	it
+R10	Mod-Link Arg1:E11 Arg2:T43	
+R11	Coreference-Link Arg1:T45 Arg2:T40	
+T46	Reagent 675 688	Soleus muscle
+T47	Location 644 647	gap
+T48	Location 666 670	knee
+T49	Modifier 748 759	darker pink
+T50	Modifier 761 770	Carefully
+T51	Action 771 774	cut
+E12	Action:T51 Acts-on:T52 Site:T53
+T52	Reagent 779 785	tendon
+T53	Location 814 818	knee
+T54	Modifier 820 826	Gently
+T55	Action 827 831	hold
+E13	Action:T55 Acts-on:T56 Using:T58 Site:T57
+T56	Reagent 836 849	Soleus muscle
+T57	Reagent 857 869	upper tendon
+T58	Device 879 886	forceps
+T59	Action 891 900	pull down
+E14	Action:T59 Acts-on:T56
+T60	Modifier 901 912	very slowly
+T61	Modifier 917 924	careful
+T62	Modifier 955 966	surrounding
+T63	Reagent 967 973	fascia
+R12	Mod-Link Arg1:E12 Arg2:T50	
+T64	Mention 719 721	it
+R13	Mod-Link Arg1:E13 Arg2:T54	
+R14	Mod-Link Arg1:E14 Arg2:T60	
+R15	Mod-Link Arg1:E14 Arg2:T61	
+R16	Mod-Link Arg1:T63 Arg2:T62	
+T65	Action 943 950	cutting
+E15	Action:T65 Acts-on:T63
+T66	Mention 995 997	it
+R17	Coreference-Link Arg1:T66 Arg2:T56	
+T67	Reagent 1015 1021	muscle
+T68	Modifier 1009 1014	whole
+T69	Reagent 1036 1043	fascia 
+T70	Action 1043 1053	make a cut
+E16	Action:T70 Site:T71
+T71	Location 1061 1073	lower tendon
+R18	Mod-Link Arg1:T67 Arg2:T68	
+T72	Action 1075 1083	Separate
+E17	Action:T72 Acts-on:T73 Site:T74
+T73	Reagent 1088 1101	Soleus muscle
+T74	Location 1111 1114	leg
+T75	Action 1119 1124	clean
+E18	Action:T75 Acts-on:T73
+T76	Modifier 1130 1133	all
+T77	Modifier 1134 1142	leftover
+T78	Reagent 1143 1149	fascia
+R19	Mod-Link Arg1:T78 Arg2:T76	
+R20	Mod-Link Arg1:T78 Arg2:T77	
+T79	Action 1391 1397	remove
+E19	Action:T79 Acts-on:T81
+T80	Modifier 1398 1401	all
+T81	Reagent 1402 1408	fascia
+R21	Mod-Link Arg1:T81 Arg2:T80	
+T82	Action 1410 1413	Rub
+E20	Action:T82 Acts-on:T83 Site:T84
+T83	Reagent 1418 1425	tendons
+T84	Location 1433 1443	lower legs
+T85	Action 1313 1323	dissecting
+E21	Action:T85 Acts-on:T86
+T86	Reagent 1328 1338	EDL muscle
+T87	Action 1347 1350	pin
+E22	Action:T87 Acts-on:T88
+T88	Location 1355 1358	leg
+T89	Action 1180 1184	move
+E23	Action:T89 Acts-on:T90 Site:T92
+T90	Reagent 1189 1195	muscle
+T91	Modifier 1201 1204	new
+T92	Location 1205 1220	dissecting dish
+T93	Action 1222 1225	pin
+E24	Action:T93 Acts-on:T94
+T94	Reagent 1230 1236	muscle
+T95	Action 1262 1267	cover
+E25	Action:T95 Acts-on:T90 Using:T96
+T96	Reagent 1273 1288	Ringer solution
+T97	Action 1294 1299	store
+E26	Action:T97 Acts-on:T90
+T98	Temperature 1303 1307	4 °C
+R22	Mod-Link Arg1:T92 Arg2:T91	
+R23	Setting Arg1:E26 Arg2:T98	
+T99	Numerical 1453 1454	4
+T100	Reagent 1455 1470	EDL tendon ends
+T101	Modifier 1487 1496	V-looking
+T102	Reagent 1497 1512	Tibialis tendon
+R24	Mod-Link Arg1:T102 Arg2:T101	
+R25	Measure Arg1:T100 Arg2:T99	
+T103	Modifier 1553 1562	carefully
+T104	Action 1524 1531	checked
+E27	Action:T104 Acts-on:T105
+T105	Reagent 1544 1547	EDL
+T106	Mention 1571 1575	them
+T107	Device 1588 1595	forceps
+R26	Coreference-Link Arg1:T106 Arg2:T105	
+T108	Action 1563 1570	lifting
+E28	Action:T108 Acts-on:T106 Using:T107
+R27	Mod-Link Arg1:E28 Arg2:T103	
+T109	Action 1603 1610	lifting
+E29	Action:T109 Acts-on:T110
+T110	Reagent 1615 1626	tendon ends
+T111	Location 1631 1635	toes
+T112	Location 1643 1646	paw
+T113	Action 1654 1661	stretch
+E30	Action:T113 Acts-on:T111
+T114	Action 1663 1666	Cut
+E31	Action:T114 Acts-on:T115
+T115	Reagent 1671 1682	tendon ends
+T116	Location 1711 1715	foot
+T117	Reagent 1727 1738	tendon ends
+T118	Modifier 1758 1767	naturally
+T119	Action 1768 1776	opens up
+E32	Action:T119 
+T120	Reagent 1796 1803	fascias
+T121	Modifier 1784 1795	surrounding
+R28	Mod-Link Arg1:T120 Arg2:T121	
+T122	Action 1836 1840	Free
+E33	Action:T122 Acts-on:T133 Site:T153
+T123	Action 1911 1914	cut
+E34	Action:T123 Acts-on:T124
+T124	Reagent 1919 1931	upper tendon
+T125	Action 1933 1941	Separate
+E35	Action:T125 Acts-on:T126 Site:T127
+T126	Reagent 1946 1956	EDL muscle
+T127	Location 1966 1969	leg
+T128	Action 1974 1979	free 
+E36	Action:T128 Acts-on:T130 Acts-on2:T131
+T129	Modifier 1984 1987	all
+T130	Reagent 1988 1994	fascia
+T131	Reagent 1999 2002	fat
+T132	Reagent 2024 2031	muscles
+R29	Mod-Link Arg1:T130 Arg2:T129	
+R30	Mod-Link Arg1:T131 Arg2:T129	
+T133	Reagent 1845 1855	EDL muscle
+T134	Reagent 1881 1893	upper tendon
+T135	Action 1827 1834	removed
+E37	Action:T135 Acts-on:T120
+R31	Mod-Link Arg1:E32 Arg2:T118	
+T136	Modifier 2014 2023	dissected
+T137	Action 2004 2008	Move
+E38	Action:T137 Acts-on:T132 Site:T140
+T138	Action 2060 2063	Pin
+E39	Action:T138 Acts-on:T141 Site:T143
+R32	Mod-Link Arg1:T132 Arg2:T136	
+T139	Modifier 2037 2042	clean
+T140	Location 2043 2058	dissecting dish
+R33	Mod-Link Arg1:T140 Arg2:T139	
+T141	Reagent 2064 2071	muscles
+T142	Modifier 2072 2089	lightly stretched
+T143	Location 2097 2101	dish
+T144	Action 2106 2111	cover
+E40	Action:T144 Using:T146 Acts-on:T141
+T145	Concentration 2117 2121	3.7%
+T146	Reagent 2122 2125	PFA
+R34	Measure Arg1:T146 Arg2:T145	
+R35	Mod-Link Arg1:T141 Arg2:T142	
+T147	Action 2127 2132	Cover
+E41	Action:T147 Acts-on:T148 Using:T152
+T148	Location 2137 2141	dish
+T149	Temperature 2169 2172	4°C
+T150	Time 2173 2182	overnight
+T151	Action 2160 2165	store
+E42	Action:T151 Acts-on:T148
+T152	Seal 2147 2155	parafilm
+R36	Setting Arg1:E42 Arg2:T149	
+R37	Setting Arg1:E42 Arg2:T150	
+T153	Location 1865 1871	pocket
+T154	Location 1750 1756	pocket
+T155	Action 1743 1746	cut
+E43	Action:T155 Acts-on:T117
+R38	Meronym Arg1:T21 Arg2:T22	
+T156	Modifier 422 429	visible
+R4	Mod-Link Arg1:T29 Arg2:T156	
+T157	Modifier 455 475	as close as possible
+R5	Mod-Link Arg1:E7 Arg2:T157	
+T158	Mention 605 607	it
+R39	Coreference-Link Arg1:T158 Arg2:T40	
+T159	Modifier 651 658	open up
+R40	Mod-Link Arg1:T47 Arg2:T159	
+T160	Modifier 692 699	visible
+R41	Mod-Link Arg1:T46 Arg2:T160	
+R42	Mod-Link Arg1:T64 Arg2:T49	
+T161	Action 709 718	recognize
+E44	Action:T161 Acts-on:T64
+T162	Modifier 786 806	as close as possible
+R43	Mod-Link Arg1:E12 Arg2:T162	
+R44	Meronym Arg1:T111 Arg2:T112	
+T163	Modifier 1683 1703	as close as possible
+R45	Mod-Link Arg1:E31 Arg2:T163	
+T164	Modifier 1897 1904	visible
+R46	Mod-Link Arg1:T134 Arg2:T164	
+R47	Acts-on Arg1:T1 Arg2:T2	
+R48	Acts-on Arg1:T1 Arg2:T3	
+T165	Modifier 60 75	flexed position
+R49	Mod-Link Arg1:T10 Arg2:T165	
+R50	Acts-on Arg1:T7 Arg2:T8	

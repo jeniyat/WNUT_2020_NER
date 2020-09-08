@@ -1,0 +1,1532 @@
+T1	Method 15 67	Integrative Neuroscience Immunofluorescence Protocol
+T2	Action 68 71	Fix
+E1	Action:T2 Acts-on:T3 Using:T4 Using2:T8 Site:T9
+T3	Reagent 72 77	brain
+T4	Method 82 91	perfusion
+T5	Concentration 97 99	4%
+T6	Modifier 100 116	freshly prepared
+T7	Modifier 121 129	filtered
+T8	Reagent 130 142	formaldehyde
+T9	Reagent 146 171	Phosphate-Buffered Saline
+T10	Reagent 173 176	PBS
+R1	Meronym Arg1:T10 Arg2:T9	
+R2	Mod-Link Arg1:T8 Arg2:T7	
+R3	Mod-Link Arg1:T8 Arg2:T6	
+R4	Measure Arg1:T8 Arg2:T5	
+T11	Action 179 184	Rinse
+E2	Action:T11 Acts-on:T12 Using:T15
+T12	Reagent 185 196	vasculature
+T13	Modifier 197 202	first
+T14	Temperature 208 211	37C
+T15	Reagent 212 215	PBS
+T17	Reagent 230 242	formaldehyde
+T16	Action 222 229	perfuse
+E3	Action:T16 Acts-on:T17
+R5	Mod-Link Arg1:E2 Arg2:T13	
+R6	Setting Arg1:E2 Arg2:T14	
+T20	Modifier 267 277	NOT LONGER
+T21	Time 283 289	12 hrs
+T22	Numerical 295 297	10
+T23	Measure-Type 298 305	volumes
+T24	Concentration 309 311	4%
+T25	Reagent 312 324	formaldehyde
+T26	Temperature 328 330	4C
+T18	Action 244 252	Post fix
+E4	Action:T18 Site:T25
+T19	Time 253 262	overnight
+R7	Setting Arg1:E4 Arg2:T19	
+R8	Setting Arg1:E4 Arg2:T21	
+R9	Mod-Link Arg1:T21 Arg2:T20	
+R10	Measure Arg1:T25 Arg2:T22	
+R11	Measure Arg1:T25 Arg2:T24	
+R12	Setting Arg1:E4 Arg2:T26	
+T27	Action 332 336	Wash
+E5	Action:T27 Site:T30
+T28	Modifier 337 345	at least
+T29	Time 346 349	1hr
+T30	Reagent 353 356	PBS
+T31	Modifier 357 363	before
+T32	Action 364 374	sectioning
+E6	Action:T32 
+R13	Setting Arg1:E5 Arg2:T29	
+R14	Mod-Link Arg1:T29 Arg2:T28	
+R15	Mod-Link Arg1:E6 Arg2:T31	
+T33	Action 376 379	See
+E7	Action:T33 Site:T34
+T34	Location 412 417	below
+T35	Modifier 405 411	linked
+R16	Mod-Link Arg1:T34 Arg2:T35	
+T37	Action 496 505	Vibratome
+E8	Action:T37 
+T38	Generic-Measure 517 522	40 µm
+T39	Action 527 534	collect
+E9	Action:T39 Site:T41 Site2:T40
+T40	Location 540 561	24-well culture plate
+T41	Reagent 565 568	PBS
+T42	Action 570 582	treadmilling
+E10	Action:T42 Acts-on:T45 Site:T47
+T43	Modifier 583 588	after
+T44	Numerical 589 590	6
+T45	Location 591 596	wells
+T46	Modifier 609 614	first
+T47	Location 615 619	well
+R17	Mod-Link Arg1:T47 Arg2:T46	
+R18	Measure Arg1:T45 Arg2:T44	
+R19	Mod-Link Arg1:T45 Arg2:T43	
+R20	Setting Arg1:E8 Arg2:T38	
+T48	Numerical 635 642	180-200
+T49	Reagent 643 659	coronal sections
+R21	Measure Arg1:T49 Arg2:T48	
+T50	Reagent 676 691	olfactory bulbs
+T51	Reagent 699 704	nigra
+T52	Modifier 713 720	need to
+T53	Action 721 729	cut past
+E11	Action:T53 Acts-on:T54
+T54	Reagent 730 739	nigra/VTA
+T55	Action 780 783	cut
+E12	Action:T55 Acts-on:T56
+T56	Reagent 788 793	brain
+T57	Modifier 794 801	in half
+T58	Action 805 808	use
+E13	Action:T58 Acts-on:T59
+T59	Device 813 821	cryostat
+R22	Mod-Link Arg1:E12 Arg2:T57	
+R23	Mod-Link Arg1:E11 Arg2:T52	
+T60	Reagent 823 830	Agarose
+T61	Concentration 832 834	2%
+T63	Action 836 841	helps
+E14	Action:T63 Acts-on:T60
+R24	Measure Arg1:T60 Arg2:T61	
+T64	Modifier 889 897	tends to
+T65	Action 898 902	bind
+E15	Action:T65 Acts-on:T66
+T66	Reagent 903 913	antibodies
+R26	Mod-Link Arg1:E15 Arg2:T64	
+T68	Action 930 934	Save
+E16	Action:T68 Acts-on:T69 Site:T70
+T69	Reagent 935 943	sections
+T70	Reagent 947 950	PBS
+T71	Temperature 954 956	4C
+T72	Modifier 957 975	until ready to use
+R28	Mod-Link Arg1:E16 Arg2:T72	
+R29	Setting Arg1:E16 Arg2:T71	
+T73	Modifier 977 984	Ideally
+T74	Action 986 989	use
+E17	Action:T74 
+T75	Time 999 1007	few days
+T76	Modifier 990 998	within a
+R30	Mod-Link Arg1:T75 Arg2:T76	
+R31	Mod-Link Arg1:E17 Arg2:T73	
+R32	Setting Arg1:E17 Arg2:T75	
+T77	Action 1038 1044	freeze
+E18	Action:T77 Using:T78 Using2:T80 Site:T81
+T78	Reagent 1048 1062	cryoprotectant
+T79	Temperature 1069 1071	4C
+T80	Reagent 1083 1095	sodium azide
+T81	Reagent 1099 1102	PBS
+R33	Setting Arg1:E18 Arg2:T79	
+T82	Concentration 1077 1082	0.01%
+R34	Measure Arg1:T80 Arg2:T82	
+T83	Modifier 1122 1132	frequently
+T84	Action 1133 1142	increases
+E19	Action:T84 Measure-Type-Link:T85
+T85	Measure-Type 1143 1159	autofluorescence
+R35	Mod-Link Arg1:E19 Arg2:T83	
+T86	Modifier 1104 1113	Prolonged
+T87	Action 1161 1165	Wrap
+E20	Action:T87 Using:T88
+T88	Seal 1169 1173	foil
+T89	Reagent 1181 1187	brains
+T90	Action 1188 1195	contain
+E21	Action:T90 Site:T89 Acts-on:T92 Acts-on2:T93
+T91	Modifier 1196 1207	fluorescent
+T92	Reagent 1208 1215	protein
+T93	Reagent 1219 1226	tracers
+R36	Mod-Link Arg1:T92 Arg2:T91	
+T94	Action 1228 1235	Dispose
+E22	Action:T94 Acts-on:T95
+T95	Reagent 1239 1251	sodium azide
+T97	Action 1298 1304	Select
+E23	Action:T97 Acts-on:T98
+T98	Location 1305 1312	columns
+T99	Action 1316 1321	stain
+E24	Action:T99 Acts-on:T98
+T100	Action 1326 1331	place
+E25	Action:T100 Site:T102 Site2:T101
+T101	Reagent 1337 1340	PBS
+T102	Location 1348 1361	staining well
+T103	Measure-Type 1367 1373	number
+T104	Location 1377 1384	columns
+T105	Action 1394 1400	choose
+E26	Action:T105 Acts-on:T104 Measure-Type-Link:T103
+T107	Location 1416 1422	region
+T108	Action 1440 1446	sample
+E27	Action:T108 Acts-on:T107
+T109	Action 1468 1473	check
+E28	Action:T109 Measure-Type-Link:T110
+T110	Measure-Type 1474 1484	expression
+T111	Numerical 1486 1489	one
+T112	Location 1490 1494	well
+T113	Numerical 1500 1503	2-3
+T114	Modifier 1512 1522	sufficient
+T115	Numerical 1524 1527	1/6
+R39	Measure Arg1:T112 Arg2:T111	
+R40	Mod-Link Arg1:T112 Arg2:T114	
+T153	Modifier 1540 1547	smaller
+T154	Location 1548 1555	regions
+T155	Modifier 1557 1568	every other
+T156	Modifier 1572 1583	every third
+T157	Reagent 1584 1591	section
+T158	Modifier 1599 1607	required
+T159	Modifier 1612 1620	adequate
+T160	Method 1621 1629	sampling
+R51	Mod-Link Arg1:T154 Arg2:T153	
+R52	Mod-Link Arg1:T157 Arg2:T156	
+R53	Mod-Link Arg1:T157 Arg2:T155	
+R54	Mod-Link Arg1:T157 Arg2:T158	
+T161	Modifier 1631 1637	Around
+T162	Numerical 1638 1643	25-30
+T163	Measure-Type 1644 1657	sections/well
+T164	Amount 1663 1669	500 µL
+T165	Modifier 1674 1681	typical
+T166	Location 1687 1700	24-well plate
+T167	Action 1704 1707	use
+E38	Action:T167 Acts-on:T169
+T168	Modifier 1712 1719	smaller
+T169	Location 1720 1726	plates
+T170	Action 1730 1738	conserve
+E39	Action:T170 Acts-on:T171
+T171	Reagent 1739 1747	antibody
+R55	Mod-Link Arg1:T169 Arg2:T168	
+R56	Mod-Link Arg1:T162 Arg2:T161	
+R57	Of-Type Arg1:T162 Arg2:T163	
+T172	Device 1749 1762	Paint brushes
+T173	Modifier 1767 1772	great
+T174	Action 1777 1783	moving
+E40	Action:T174 Using:T172 Acts-on:T175 Site:T177
+T175	Reagent 1784 1792	sections
+T176	Modifier 1796 1799	new
+T177	Location 1800 1805	wells
+T178	Method 1810 1818	staining
+T179	Action 1831 1838	combine
+E41	Action:T179 Acts-on:T180 Site:T181
+T180	Location 1839 1846	columns
+T181	Location 1850 1863	12-well trays
+T182	Amount 1866 1872	800 µL
+R58	Mod-Link Arg1:T172 Arg2:T173	
+R59	Mod-Link Arg1:T177 Arg2:T176	
+R60	Measure Arg1:T181 Arg2:T182	
+T183	Modifier 1875 1883	Optional
+T184	Action 1885 1893	Incubate
+E42	Action:T184 Using:T188 Using2:T189
+T185	Numerical 1894 1897	2 x
+T186	Time 1898 1903	5 min
+T187	Concentration 1909 1916	5 mg/mL
+T188	Reagent 1917 1922	NaBH4
+T189	Reagent 1926 1931	water
+T190	Action 1935 1941	quench
+E43	Action:T190 Measure-Type-Link:T191
+T191	Measure-Type 1942 1958	autofluorescence
+R61	Setting Arg1:E42 Arg2:T186	
+R62	Count Arg1:E42 Arg2:T185	
+R63	Measure Arg1:T188 Arg2:T187	
+T194	Reagent 1988 1994	tissue
+T195	Action 2004 2010	stored
+E45	Action:T195 Acts-on:T194
+T196	Modifier 2015 2021	longer
+T197	Time 2028 2035	1 month
+R64	Setting Arg1:E45 Arg2:T197	
+R65	Mod-Link Arg1:T197 Arg2:T196	
+T198	Action 2037 2041	Wash
+E46	Action:T198 Using:T200 Count:T199
+T199	Numerical 2042 2047	twice
+T200	Reagent 2053 2056	PBS
+T201	Modifier 2071 2077	easier
+T202	Modifier 2081 2087	larger
+T203	Location 2088 2093	wells
+T204	Device 2102 2117	net cup inserts
+T205	Reagent 2144 2152	sections
+T206	Action 2153 2158	float
+E47	Action:T206 Site:T208 Acts-on:T205
+T207	Modifier 2159 2163	more
+T208	Reagent 2171 2190	borohydride bubbles
+R67	Mod-Link Arg1:E47 Arg2:T207	
+R68	Mod-Link Arg1:T203 Arg2:T202	
+T209	Modifier 2192 2200	Optional
+T210	Action 2212 2217	block
+E48	Action:T210 Measure-Type-Link:T211
+T211	Measure-Type 2218 2236	lipid fluorescence
+T212	Action 2249 2258	performed
+E49	Action:T212 
+R69	Mod-Link Arg1:E48 Arg2:T209	
+T213	Modifier 2265 2274	Carefully
+T214	Action 2275 2281	remove
+E50	Action:T214 Acts-on:T216
+T215	Action 2286 2293	replace
+E51	Action:T215 Acts-on:T216 Using:T217
+T216	Reagent 2294 2297	PBS
+T217	Reagent 2303 2307	PBST
+T218	Concentration 2309 2313	0.2%
+T219	Reagent 2314 2326	Triton X-100
+T220	Action 2332 2340	incubate
+E52	Action:T220 
+T221	Modifier 2345 2353	at least
+T222	Time 2354 2358	1 hr
+R70	Mod-Link Arg1:T222 Arg2:T221	
+R71	Setting Arg1:E52 Arg2:T222	
+R72	Mod-Link Arg1:E50 Arg2:T213	
+R73	Meronym Arg1:T219 Arg2:T217	
+R74	Measure Arg1:T219 Arg2:T218	
+T223	Device 2362 2371	pipet tip
+T224	Modifier 2372 2380	attached
+T225	Modifier 2386 2393	plastic
+T226	Device 2394 2408	transfer pipet
+T227	Modifier 2409 2419	works well
+T228	Action 2424 2432	removing
+E53	Action:T228 Using:T226 Using2:T223 Acts-on:T229
+T229	Reagent 2433 2442	solutions
+R75	Mod-Link Arg1:E53 Arg2:T227	
+R76	Mod-Link Arg1:T226 Arg2:T225	
+R77	Mod-Link Arg1:T223 Arg2:T224	
+T230	Modifier 2444 2449	Avoid
+T231	Action 2450 2458	touching
+E54	Action:T231 Acts-on:T232 Using:T233
+T232	Reagent 2463 2469	tissue
+T233	Device 2475 2482	suction
+T234	Action 2501 2504	rip
+E55	Action:T234 Acts-on:T236
+T235	Mention 2491 2495	this
+R78	Coreference-Link Arg1:T235 Arg2:E54	
+T236	Reagent 2509 2517	sections
+R79	Mod-Link Arg1:E54 Arg2:T230	
+T237	Action 2519 2524	Block
+E56	Action:T237 Using:T239
+T238	Concentration 2530 2532	5%
+T239	Reagent 2533 2553	Bovine Serum Albumin
+T240	Reagent 2555 2558	BSA
+T241	Action 2560 2568	prepared
+E57	Action:T241 Site:T242 Acts-on:T239
+T242	Reagent 2572 2576	PBST
+T243	Time 2581 2598	4 hr to overnight
+R80	Setting Arg1:E57 Arg2:T243	
+R81	Measure Arg1:T239 Arg2:T238	
+R82	Meronym Arg1:T240 Arg2:T239	
+T244	Generic-Measure 2600 2611	500 µL/well
+T245	Modifier 2615 2625	sufficient
+T246	Location 2631 2643	24-well tray
+R83	Mod-Link Arg1:T244 Arg2:T245	
+T247	Modifier 2645 2654	Overnight
+T248	Method 2655 2666	incubations
+T249	Device 2683 2697	orbital shaker
+T250	Modifier 2698 2709	in the cold
+R84	Mod-Link Arg1:T249 Arg2:T250	
+T251	Modifier 2731 2740	necessary
+T252	Action 2744 2749	block
+E58	Action:T252 Using:T253
+T253	Reagent 2759 2764	serum
+T254	Concentration 2766 2770	0.5%
+T255	Concentration 2773 2775	5%
+T256	Reagent 2776 2779	BSA
+T257	Reagent 2790 2797	species
+T258	Modifier 2811 2820	secondary
+T259	Reagent 2821 2829	antibody
+T260	Action 2834 2841	created
+E59	Action:T260 Acts-on:T259
+R85	Mod-Link Arg1:T259 Arg2:T258	
+R86	Mod-Link Arg1:E58 Arg2:T251	
+R87	Measure Arg1:T256 Arg2:T255	
+T261	Reagent 2875 2885	antibodies
+T262	Modifier 2890 2894	good
+T263	Reagent 2896 2899	BSA
+T264	Modifier 2903 2907	fine
+T265	Modifier 2912 2921	generally
+T266	Action 2922 2927	gives
+E60	Action:T266 
+T267	Modifier 2928 2932	less
+T116	Modifier 2933 2943	background
+T117	Measure-Type 2944 2960	autofluorescence
+T118	Reagent 2966 2971	serum
+R88	Mod-Link Arg1:E60 Arg2:T265	
+R89	Mod-Link Arg1:E60 Arg2:T267	
+R90	Mod-Link Arg1:T261 Arg2:T262	
+R41	Mod-Link Arg1:T263 Arg2:T264	
+T119	Action 2973 2979	Remove
+E61	Action:T119 Acts-on:T120
+T120	Reagent 2980 2992	BSA solution
+T121	Action 2997 3004	replace
+E62	Action:T121 Using:T123
+T122	Modifier 3010 3017	primary
+T123	Reagent 3018 3026	antibody
+T124	Reagent 3039 3043	PBST
+T125	Action 3027 3035	prepared
+E63	Action:T125 Acts-on:T123 Site:T124
+R42	Mod-Link Arg1:T123 Arg2:T122	
+T126	Reagent 3058 3074	chicken anti-GFP
+T127	Concentration 3076 3082	1:2000
+T128	Concentration 3084 3093	0.5 µL/mL
+R43	Measure Arg1:T126 Arg2:T127	
+R44	Measure Arg1:T126 Arg2:T128	
+T129	Method 3120 3128	protocol
+T130	Action 3136 3140	list
+E64	Action:T130 Acts-on:T131 Measure-Type-Link:T132
+T131	Reagent 3145 3155	antibodies
+T132	Measure-Type 3160 3174	concentrations
+T133	Action 3175 3179	used
+E65	Action:T133 
+T134	Modifier 3188 3196	specific
+T268	Action 3209 3217	Incubate
+E66	Action:T268 Site:T271
+T269	Time 3218 3234	overnight-72 hrs
+T270	Temperature 3238 3240	4C
+T271	Device 3248 3262	orbital shaker
+R91	Setting Arg1:E66 Arg2:T269	
+R92	Setting Arg1:E66 Arg2:T270	
+T272	Modifier 3264 3271	Shorter
+T273	Method 3272 3283	incubations
+T274	Modifier 3288 3296	possible
+T275	Measure-Type 3301 3321	antibody penetration
+T276	Action 3326 3332	suffer
+E67	Action:T276 Measure-Type-Link:T275
+T277	Action 3349 3355	choose
+E68	Action:T277 
+T279	Action 3357 3363	dilute
+E69	Action:T279 Acts-on:T280
+T280	Reagent 3368 3375	primary
+T281	Modifier 3376 3380	more
+T282	Action 3385 3393	incubate
+E70	Action:T282 
+T283	Modifier 3394 3400	longer
+T284	Modifier 3417 3423	higher
+T285	Measure-Type 3424 3437	concentration
+T286	Modifier 3444 3451	shorter
+T287	Measure-Type 3452 3456	time
+R94	Mod-Link Arg1:E69 Arg2:T281	
+R95	Mod-Link Arg1:E70 Arg2:T283	
+T288	Action 3458 3462	Wash
+E71	Action:T288 Count:T289 Using:T291 Site:T292
+T289	Numerical 3472 3475	3 x
+T290	Time 3476 3486	30 minutes
+R96	Setting Arg1:E71 Arg2:T290	
+T291	Reagent 3492 3496	PBST
+T292	Device 3504 3519	oribital shaker
+T293	Temperature 3523 3539	room temperature
+R97	Setting Arg1:E71 Arg2:T293	
+T294	Modifier 3541 3547	Longer
+T295	Modifier 3560 3573	always better
+T296	Action 3548 3554	washes
+E72	Action:T296 
+R98	Mod-Link Arg1:E72 Arg2:T294	
+R99	Mod-Link Arg1:E72 Arg2:T295	
+T297	Action 3575 3578	Add
+E73	Action:T297 Acts-on:T301
+T298	Modifier 3583 3602	species appropriate
+T299	Modifier 3603 3619	Alexa-conjugated
+T300	Modifier 3620 3629	secondary
+T301	Reagent 3630 3638	antibody
+T302	Action 3639 3646	diluted
+E74	Action:T302 Acts-on:T301 Using:T303
+T303	Reagent 3650 3654	PBST
+T304	Action 3659 3667	incubate
+E75	Action:T304 Site:T307
+T305	Time 3668 3677	overnight
+T306	Temperature 3681 3683	4C
+T307	Device 3690 3704	orbital shaker
+R100	Mod-Link Arg1:T301 Arg2:T300	
+R101	Mod-Link Arg1:T301 Arg2:T299	
+R102	Mod-Link Arg1:T301 Arg2:T298	
+R103	Setting Arg1:E75 Arg2:T305	
+R104	Setting Arg1:E75 Arg2:T306	
+T309	Reagent 3723 3746	AF488 goat anti-chicken
+T310	Reagent 3755 3767	GFP antibody
+T311	Modifier 3775 3783	possible
+T312	Action 3787 3795	incubate
+E77	Action:T312 
+T313	Time 3796 3803	all day
+T314	Measure-Type 3816 3827	penetration
+T315	Measure-Type 3832 3838	signal
+T316	Action 3839 3845	suffer
+E78	Action:T316 
+R105	Mod-Link Arg1:E77 Arg2:T311	
+R106	Setting Arg1:E77 Arg2:T313	
+T317	Action 3854 3859	image
+E79	Action:T317 Acts-on:T318 Acts-on2:T319 Acts-on3:T320 Acts-on4:T321 Acts-on5:T322 Using:T324
+T318	Reagent 3860 3870	AF350/DAPI
+T319	Reagent 3872 3877	AF405
+T320	Reagent 3879 3884	AF488
+T321	Reagent 3886 3891	AF555
+T322	Reagent 3893 3898	AF568
+T323	Reagent 3904 3913	AF633/647
+T324	Device 3921 3929	Axiozoom
+R107	Acts-on Arg1:E79 Arg2:T323	
+T325	Modifier 4000 4010	2P tunable
+T326	Generic-Measure 4011 4022	720-1100 nm
+T327	Method 4023 4033	excitation
+R108	Mod-Link Arg1:T326 Arg2:T325	
+T328	Device 3935 3941	LSM880
+T329	Action 3947 3952	image
+E80	Action:T329 Using:T328 Acts-on:T330
+T330	Reagent 3953 3956	AFs
+T331	Generic-Measure 4039 4045	760 nm
+T332	Modifier 4050 4052	2P
+T333	Method 4053 4063	excitation
+T334	Reagent 4067 4071	DAPI
+T335	Reagent 4076 4081	AF350
+T336	Action 4035 4038	Use
+E81	Action:T336 Using:T333
+R109	Setting Arg1:E81 Arg2:T331	
+T337	Reagent 4083 4087	DAPI
+T338	Action 4098 4104	excite
+E82	Action:T338 Acts-on:T337 Using:T340
+T339	Generic-Measure 4114 4120	405 nm
+T340	Device 4121 4126	laser
+R110	Measure Arg1:T340 Arg2:T339	
+T341	Action 4128 4132	Wrap
+E83	Action:T341 Using:T342
+T342	Seal 4136 4140	foil
+T343	Action 4144 4151	protect
+E84	Action:T343 
+T345	Modifier 4163 4168	after
+T346	Action 4169 4175	adding
+E85	Action:T346 Acts-on:T348
+T347	Modifier 4180 4189	secondary
+T348	Reagent 4190 4200	antibodies
+R113	Mod-Link Arg1:T348 Arg2:T347	
+T349	Action 4202 4206	Wash
+E86	Action:T349 Count:T350
+T350	Numerical 4207 4210	3 x
+T351	Time 4211 4218	30 mins
+R114	Setting Arg1:E86 Arg2:T351	
+T352	Reagent 4220 4224	DAPI
+T353	Concentration 4226 4234	1:20,000
+T354	Concentration 4242 4249	5 mg/mL
+T355	Reagent 4250 4255	stock
+T356	Amount 4257 4263	0.5 µL
+T357	Amount 4269 4274	10 mL
+T358	Reagent 4278 4282	PBST
+T359	Action 4291 4296	added
+E87	Action:T359 
+T360	Modifier 4304 4309	first
+T361	Action 4310 4314	wash
+E88	Action:T361 
+R115	Mod-Link Arg1:E88 Arg2:T360	
+R116	Measure Arg1:T352 Arg2:T353	
+R117	Measure Arg1:T355 Arg2:T354	
+R118	Measure Arg1:T358 Arg2:T357	
+T362	Action 4316 4323	Collect
+E89	Action:T362 Site:T366
+T364	Reagent 4324 4334	DAPI waste
+T365	Modifier 4342 4353	appropriate
+T366	Location 4354 4378	chemical waste container
+R120	Mod-Link Arg1:T366 Arg2:T365	
+T367	Modifier 4380 4393	Alternatively
+T368	Action 4408 4411	use
+E90	Action:T368 Acts-on:T369 Using:T372
+T369	Reagent 4412 4419	ToPro-3
+T370	Action 4421 4427	dilute
+E91	Action:T370 
+T371	Concentration 4428 4436	1:20,000
+T372	Method 4442 4457	staining nuclei
+T373	Modifier 4461 4468	far red
+T374	Generic-Measure 4470 4476	647 nm
+R121	Setting Arg1:E91 Arg2:T371	
+R122	Mod-Link Arg1:E90 Arg2:T373	
+T375	Action 4526 4530	wash
+E92	Action:T375 
+T376	Modifier 4496 4505	suspected
+T377	Reagent 4506 4514	mutagens
+T378	Reagent 4520 4524	DAPI
+T379	Modifier 4533 4548	few extra times
+R123	Mod-Link Arg1:E92 Arg2:T379	
+T380	Action 4490 4495	using
+E93	Action:T380 Acts-on:T377
+R125	Mod-Link Arg1:T377 Arg2:T376	
+T382	Action 4550 4554	Wear
+E29	Action:T382 
+T383	Action 4566 4571	clean
+E30	Action:T383 
+T384	Modifier 4572 4576	well
+R126	Mod-Link Arg1:E30 Arg2:T384	
+T386	Modifier 4583 4591	mounting
+T387	Reagent 4592 4597	media
+T388	Action 4598 4605	contain
+E31	Action:T388 Site:T387 Acts-on:T389
+T389	Reagent 4610 4619	DNA stain
+R128	Mod-Link Arg1:T387 Arg2:T386	
+T391	Mention 4620 4625	These
+T392	Modifier 4626 4633	tend to
+T393	Action 4634 4642	increase
+E94	Action:T393 Acts-on:T394
+T394	Location 4643 4653	background
+T395	Reagent 4669 4677	sections
+T396	Modifier 4690 4694	more
+T397	Reagent 4695 4698	dye
+T398	Modifier 4699 4713	than necessary
+R130	Mod-Link Arg1:T397 Arg2:T396	
+R131	Mod-Link Arg1:T397 Arg2:T398	
+R132	Mod-Link Arg1:E94 Arg2:T392	
+T399	Action 4658 4664	expose
+E95	Action:T399 Acts-on:T395
+T400	Modifier 4715 4723	Optional
+T401	Modifier 4732 4737	after
+T402	Reagent 4738 4743	NaBH4
+R133	Mod-Link Arg1:T402 Arg2:T401	
+T403	Action 4753 4758	Block
+E96	Action:T403 Acts-on:T404 Measure-Type-Link:T405
+T404	Reagent 4759 4765	myelin
+T405	Measure-Type 4766 4778	fluorescence
+T406	Action 4782 4792	incubating
+E97	Action:T406 Count:T407
+T407	Numerical 4793 4796	2 x
+T408	Time 4797 4803	5 mins
+T409	Modifier 4809 4817	filtered
+T410	Concentration 4818 4822	0.1%
+T411	Reagent 4823 4834	Sudan Black
+T412	Concentration 4838 4841	70%
+T413	Reagent 4842 4846	EtOH
+R134	Measure Arg1:T413 Arg2:T412	
+R135	Measure Arg1:T411 Arg2:T410	
+R136	Mod-Link Arg1:T411 Arg2:T409	
+R137	Setting Arg1:E97 Arg2:T408	
+T414	Action 4848 4852	Wash
+E98	Action:T414 Count:T415 Using:T416 Count2:T417 Using2:T419
+T415	Numerical 4853 4857	once
+T416	Reagent 4863 4868	water
+T417	Numerical 4875 4886	three times
+T418	Time 4891 4901	15 minutes
+T419	Reagent 4907 4911	PBST
+T420	Modifier 4912 4918	before
+T421	Action 4919 4929	continuing
+E99	Action:T421 
+R138	Setting Arg1:E98 Arg2:T418	
+R139	Mod-Link Arg1:E99 Arg2:T420	
+T422	Action 4948 4956	Increase
+E100	Action:T422 Acts-on:T423 Measure-Type-Link:T424
+T423	Reagent 4957 4963	Triton
+T424	Measure-Type 4964 4977	concentration
+T425	Modifier 4978 4984	2-fold
+T426	Method 4988 4998	destaining
+T427	Modifier 5002 5016	not sufficient
+T428	Action 5021 5028	destain
+E101	Action:T428 
+T429	Time 5029 5038	overnight
+R140	Setting Arg1:E101 Arg2:T429	
+R141	Mod-Link Arg1:E100 Arg2:T425	
+T430	Modifier 5053 5057	best
+T431	Action 5058 5067	performed
+E102	Action:T431 Site:T433
+T432	Numerical 5078 5080	12
+T433	Location 5081 5090	well tray
+T434	Reagent 5101 5109	sections
+T435	Modifier 5110 5117	tend to
+T436	Action 5118 5123	stick
+E103	Action:T436 Acts-on:T434
+T437	Modifier 5124 5132	together
+T438	Reagent 5152 5159	ethanol
+T439	Modifier 5140 5148	presence
+R142	Mod-Link Arg1:T438 Arg2:T439	
+R143	Mod-Link Arg1:E103 Arg2:T437	
+R144	Mod-Link Arg1:E103 Arg2:T435	
+R145	Mod-Link Arg1:E102 Arg2:T430	
+R146	Measure Arg1:T433 Arg2:T432	
+T440	Action 5161 5166	Mount
+E104	Action:T440 Acts-on:T441 Site:T444
+T441	Reagent 5167 5175	sections
+T442	Modifier 5176 5184	in order
+T443	Reagent 5190 5193	PBS
+T444	Location 5199 5221	Superfrost plus slides
+R147	Mod-Link Arg1:E104 Arg2:T442	
+T445	Action 5223 5229	Adding
+E105	Action:T445 Acts-on:T447
+T446	Modifier 5230 5235	a few
+T447	Measure-Type 5236 5241	drops
+T448	Reagent 5245 5248	PBS
+R149	Mod-Link Arg1:T447 Arg2:T446	
+T449	Action 5250 5258	ordering
+E106	Action:T449 Acts-on:T450 Site:T451
+T450	Reagent 5263 5271	sections
+T451	Reagent 5279 5282	PBS
+T452	Action 5293 5302	spreading
+E107	Action:T452 Acts-on:T453 Using:T454
+T453	Mention 5303 5307	them
+T454	Device 5313 5325	paintbrushes
+T455	Modifier 5333 5340	easiest
+R150	Coreference-Link Arg1:T453 Arg2:T450	
+T457	Reagent 5381 5389	sections
+T458	Location 5399 5405	slides
+T459	Location 5413 5423	petri dish
+T460	Reagent 5427 5430	PBS
+T462	Modifier 5432 5441	Carefully
+T463	Action 5442 5446	blot
+E110	Action:T463 Acts-on:T465
+T464	Modifier 5447 5453	excess
+T465	Reagent 5454 5457	PBS
+T466	Action 5480 5483	dry
+E111	Action:T466 Acts-on:T467
+T467	Reagent 5468 5476	sections
+T468	Modifier 5484 5491	upright
+T469	Modifier 5492 5503	long enough
+T470	Action 5507 5512	stick
+E112	Action:T470 
+T471	Time 5516 5524	3-5 mins
+T472	Modifier 5533 5536	not
+T473	Action 5537 5545	over-dry
+E113	Action:T473 
+R151	Mod-Link Arg1:E113 Arg2:T472	
+R152	Mod-Link Arg1:E110 Arg2:T462	
+R153	Mod-Link Arg1:T465 Arg2:T464	
+R154	Mod-Link Arg1:E111 Arg2:T468	
+R155	Mod-Link Arg1:E111 Arg2:T469	
+R156	Setting Arg1:E111 Arg2:T471	
+T474	Action 5557 5562	cause
+E114	Action:T474 
+T475	Measure-Type 5563 5579	autofluorescence
+T476	Action 5581 5586	Avoid
+E115	Action:T476 Acts-on:T477
+T477	Location 5591 5608	far right portion
+T478	Location 5616 5621	slide
+R157	Meronym Arg1:T477 Arg2:T478	
+T479	Device 5634 5647	slide holders
+T480	Modifier 5655 5667	higher power
+T481	Device 5668 5674	scopes
+T482	Action 5675 5682	obscure
+E116	Action:T482 Acts-on:T483
+T483	Location 5683 5704	this end of the slide
+R158	Meronym Arg1:T483 Arg2:T478	
+R159	Coreference-Link Arg1:T483 Arg2:T477	
+R160	Mod-Link Arg1:T481 Arg2:T480	
+T484	Action 5706 5709	Use
+E117	Action:T484 Acts-on:T486
+T485	Numerical 5712 5713	3
+T486	Measure-Type 5714 5719	drops
+T487	Reagent 5723 5734	Fluoromount
+T488	Action 5739 5743	seal
+E118	Action:T488 Using:T489
+T489	Seal 5749 5786	Sally Hansen Extreme Wear nail polish
+T490	Action 5788 5791	Use
+E119	Action:T490 Acts-on:T492 Site:T493
+T491	Numerical 5792 5796	#1.5
+T492	Device 5797 5807	coverslips
+T493	Device 5816 5833	Zeiss microscopes
+R163	Measure Arg1:T492 Arg2:T491	
+T494	Action 5835 5840	Image
+E120	Action:T494 Acts-on:T496 Using:T497
+T495	Modifier 5841 5846	every
+T496	Reagent 5847 5854	section
+T497	Device 5862 5870	Axiozoom
+T498	Modifier 5874 5883	low power
+T499	Numerical 5885 5891	11-16x
+T500	Numerical 5915 5919	100x
+T501	Modifier 5906 5914	multiple
+T502	Action 5931 5939	document
+E121	Action:T502 
+T503	Numerical 5951 5953	27
+T504	Time 5978 5988	30 minutes
+R164	Mod-Link Arg1:T496 Arg2:T495	
+R165	Mod-Link Arg1:T497 Arg2:T498	
+T505	Mention 5964 5966	it
+R166	Coreference-Link Arg1:T505 Arg2:E121	
+R167	Setting Arg1:E121 Arg2:T504	
+T507	Action 6003 6006	see
+E122	Action:T507 Measure-Type-Link:T508 Site:T509
+T508	Measure-Type 6009 6015	signal
+T509	Device 6023 6031	Axiozoom
+T510	Numerical 6035 6039	250x
+T511	Modifier 6045 6054	may still
+T512	Action 6055 6058	see
+E123	Action:T512 Count:T513 Site:T514
+T513	Numerical 6059 6062	one
+T514	Device 6070 6078	Axiovert
+T515	Action 6082 6087	check
+E124	Action:T515 
+T516	Action 6098 6103	image
+E32	Action:T516 
+T517	Modifier 6120 6130	high power
+T518	Method 6134 6140	tiling
+T519	Modifier 5895 5900	tiled
+T520	Modifier 6144 6154	high power
+T521	Modifier 6162 6167	above
+T522	Numerical 6168 6171	10x
+R168	Mod-Link Arg1:T522 Arg2:T521	
+T523	Modifier 6173 6182	if needed
+R169	Mod-Link Arg1:T522 Arg2:T523	
+R171	Setting Arg1:T509 Arg2:T510	
+R172	Mod-Link Arg1:E123 Arg2:T511	
+R173	Mod-Link Arg1:E32 Arg2:T517	
+T524	Modifier 6107 6115	confocal
+R45	Mod-Link Arg1:E32 Arg2:T524	
+T135	Action 6192 6198	select
+E33	Action:T135 Acts-on:T136
+T136	Reagent 6199 6206	regions
+T137	Action 6210 6215	image
+E34	Action:T137 Using:T138
+T138	Device 6225 6233	axiozoom
+T139	Action 6242 6246	Save
+E35	Action:T139 
+T140	Modifier 6247 6257	everything
+T141	Modifier 6265 6273	original
+R46	Mod-Link Arg1:E35 Arg2:T140	
+R47	Mod-Link Arg1:E35 Arg2:T141	
+T142	Action 6293 6298	saves
+E36	Action:T142 Measure-Type-Link:T145 Measure-Type-Link2:T147 Measure-Type-Link3:T146
+T143	Modifier 6299 6302	all
+T145	Measure-Type 6327 6341	exposure times
+T146	Measure-Type 6343 6357	objective/zoom
+T147	Measure-Type 6359 6366	scaling
+R48	Mod-Link Arg1:E36 Arg2:T143	
+T148	Action 6389 6395	export
+E37	Action:T148 Using:T150 Using2:T151 Site:T152
+T149	Modifier 6396 6401	later
+T150	Method 6407 6410	Zen
+T151	Method 6414 6419	Fiji 
+R50	Mod-Link Arg1:E37 Arg2:T149	
+T152	Device 6428 6435	desktop
+T525	Modifier 6436 6443	Helpful
+T526	Modifier 6457 6464	need to
+T527	Action 6465 6470	store
+E125	Action:T527 Acts-on:T528 Measure-Type-Link:T530
+T528	Location 6471 6477	slides
+T529	Modifier 6484 6488	long
+T530	Measure-Type 6489 6493	time
+T531	Action 6495 6500	store
+E126	Action:T531 Acts-on:T532 Site:T536 Site2:T537
+T532	Location 6501 6507	slides
+T533	Temperature 6511 6513	4C
+T534	Modifier 6517 6523	sealed
+T535	Modifier 6525 6535	humidified
+T536	Location 6536 6547	slide boxes
+T537	Location 6553 6564	plastic bag
+T538	Mention 6568 6572	they
+T539	Action 6578 6585	dry out
+E127	Action:T539 Acts-on:T538
+T540	Modifier 6586 6595	over time
+R174	Mod-Link Arg1:E127 Arg2:T540	
+R175	Coreference-Link Arg1:T538 Arg2:T532	
+R176	Mod-Link Arg1:E125 Arg2:T526	
+R177	Setting Arg1:E126 Arg2:T533	
+R178	Mod-Link Arg1:T536 Arg2:T535	
+R179	Mod-Link Arg1:T536 Arg2:T534	
+T541	Modifier 6602 6610	possible
+T542	Action 6614 6618	use 
+E128	Action:T542 Acts-on:T544
+T543	Modifier 6619 6627	pre-made
+T544	Reagent 6628 6640	formaldehyde
+T545	Modifier 6653 6659	likely
+T546	Action 6660 6664	give
+E129	Action:T546 Measure-Type-Link:T547
+T547	Measure-Type 6669 6685	autofluorescence
+R180	Mod-Link Arg1:E129 Arg2:T545	
+R181	Mod-Link Arg1:E128 Arg2:T541	
+R182	Mod-Link Arg1:T544 Arg2:T543	
+T548	Modifier 6687 6703	Freshly prepared
+T549	Method 6721 6733	lab protocol
+T550	Modifier 6737 6741	best
+T551	Modifier 6743 6748	NEVER
+T552	Action 6749 6752	use
+E130	Action:T552 Acts-on:T553
+T553	Reagent 6753 6761	formalin
+R183	Mod-Link Arg1:E130 Arg2:T551	
+T554	Modifier 6768 6776	possible
+T555	Action 6781 6789	drop fix
+E131	Action:T555 Acts-on:T556
+T556	Reagent 6791 6797	brains
+T557	Modifier 6798 6803	until
+T558	Measure-Type 6804 6809	~PN21
+T559	Time 6814 6819	24 hr
+T560	Temperature 6834 6837	37C
+T561	Temperature 6858 6860	4C
+R184	Mod-Link Arg1:E131 Arg2:T554	
+R185	Mod-Link Arg1:E131 Arg2:T557	
+R186	Setting Arg1:E131 Arg2:T559	
+T562	Action 6821 6830	beginning
+E132	Action:T562 
+T563	Action 6842 6854	transferring
+E133	Action:T563 
+R187	Setting Arg1:E132 Arg2:T560	
+R188	Setting Arg1:E133 Arg2:T561	
+T567	Modifier 6913 6923	very young
+T568	Method 6935 6944	perfusion
+T569	Modifier 6954 6963	difficult
+T570	Modifier 6976 6979	not
+T571	Action 6980 6987	respond
+E134	Action:T571 Acts-on:T572
+T572	Reagent 6991 7001	anesthesia
+R189	Mod-Link Arg1:E134 Arg2:T570	
+T573	Action 7003 7009	Expect
+E135	Action:T573 Measure-Type-Link:T576
+T574	Modifier 7010 7016	strong
+T575	Modifier 7017 7029	yellow-green
+T576	Measure-Type 7030 7046	autofluorescence
+R190	Mod-Link Arg1:E135 Arg2:T574	
+R191	Mod-Link Arg1:E135 Arg2:T575	
+T577	Location 7054 7065	vasculature
+T578	Action 7069 7075	appear
+E136	Action:T578 Using:T579 Measure-Type-Link:T576 Site:T577
+T579	Method 7081 7088	storage
+T580	Action 7090 7093	Use
+E137	Action:T580 Acts-on:T583 Acts-on2:T585
+T581	Modifier 7096 7101	small
+T582	Modifier 7102 7109	natural
+T583	Device 7110 7114	hair
+T584	Modifier 7118 7124	teklon
+T585	Device 7125 7136	paint brush
+T586	Action 7140 7148	transfer
+E138	Action:T586 Acts-on:T588
+T587	Action 7153 7158	mount
+E139	Action:T587 Acts-on:T588
+T588	Reagent 7159 7167	sections
+R192	Mod-Link Arg1:T585 Arg2:T584	
+R193	Mod-Link Arg1:T583 Arg2:T582	
+T589	Modifier 7182 7186	good
+T590	Mention 7187 7191	ones
+T591	Location 7199 7212	craft section
+R195	Mod-Link Arg1:T590 Arg2:T589	
+T592	Reagent 7214 7228	Brain sections
+T593	Action 7229 7234	stick
+E140	Action:T593 
+T594	Modifier 7238 7243	cheap
+T595	Action 7255 7258	try
+E141	Action:T595 
+T596	Numerical 7261 7264	few
+T597	Modifier 7284 7288	best
+T598	Action 7275 7279	find
+E142	Action:T598 
+T599	Amount 7296 7302	800 µL
+T600	Reagent 7306 7309	PBS
+T601	Location 7314 7318	well
+T602	Modifier 7310 7313	per
+T603	Modifier 7322 7332	sufficient
+T604	Action 7336 7343	collect
+E143	Action:T604 Acts-on:T605 Site:T607
+T605	Reagent 7348 7356	sections
+T606	Method 7361 7368	storage
+T607	Location 7374 7386	24-well tray
+R196	Measure Arg1:T600 Arg2:T599	
+R197	Mod-Link Arg1:T601 Arg2:T602	
+R198	Mod-Link Arg1:T600 Arg2:T603	
+T608	Location 7395 7400	wells
+T609	Modifier 7405 7413	too full
+T610	Modifier 7421 7430	difficult
+T611	Action 7434 7440	remove
+E144	Action:T611 
+T612	Modifier 7441 7448	without
+T613	Action 7449 7459	disturbing
+E145	Action:T613 Acts-on:T614
+T614	Reagent 7464 7470	slices
+R199	Mod-Link Arg1:E144 Arg2:T610	
+R200	Mod-Link Arg1:E145 Arg2:T612	
+R201	Mod-Link Arg1:T608 Arg2:T609	
+T615	Measure-Type 7472 7487	Surface tension
+T616	Action 7488 7493	holds
+E146	Action:T616 Measure-Type-Link:T615 Acts-on:T617
+T617	Reagent 7498 7506	sections
+T618	Modifier 7507 7511	best
+T619	Amount 7516 7522	500 µL
+R202	Mod-Link Arg1:E146 Arg2:T618	
+R203	Setting Arg1:E146 Arg2:T619	
+T620	Device 7523 7537	Squirt bottles
+T621	Modifier 7542 7547	great
+T622	Reagent 7552 7555	PBS
+T623	Reagent 7560 7564	PBST
+T624	Method 7565 7571	washes
+R204	Mod-Link Arg1:T620 Arg2:T621	
+T625	Action 7573 7580	Titrate
+E147	Action:T625 Acts-on:T626
+T626	Reagent 7581 7591	antibodies
+T627	Mention 7597 7601	they
+T628	Modifier 7602 7607	first
+T629	Action 7608 7614	arrive
+E148	Action:T629 Acts-on:T627
+T630	Modifier 7619 7624	every
+T631	Modifier 7625 7628	new
+T632	Action 7642 7649	receive
+E149	Action:T632 
+R205	Coreference-Link Arg1:T627 Arg2:T626	
+R206	Mod-Link Arg1:E148 Arg2:T628	
+R207	Mod-Link Arg1:E149 Arg2:T630	
+R208	Mod-Link Arg1:E149 Arg2:T631	
+T633	Action 7651 7655	Take
+E150	Action:T633 Count:T634 Acts-on:T635 Site:T636
+T634	Numerical 7656 7661	a few
+T635	Reagent 7662 7670	sections
+T636	Location 7680 7684	area
+T637	Modifier 7685 7696	of interest
+T638	Action 7701 7704	put
+E151	Action:T638 Acts-on:T639 Site:T642
+T639	Mention 7705 7709	them
+T640	Numerical 7715 7716	4
+T641	Modifier 7717 7726	different
+T642	Location 7727 7732	wells
+R209	Mod-Link Arg1:T636 Arg2:T637	
+R210	Coreference-Link Arg1:T639 Arg2:T635	
+R211	Mod-Link Arg1:T642 Arg2:T641	
+R212	Measure Arg1:T642 Arg2:T640	
+T643	Action 7734 7740	Dilute
+E152	Action:T643 Acts-on:T644 Measure-Type-Link:T646 Count:T647
+T644	Reagent 7745 7753	antibody
+T645	Modifier 7761 7770	suggested
+T646	Measure-Type 7771 7784	concentration
+T647	Numerical 7796 7801	twice
+T648	Numerical 7786 7790	half
+R213	Or Arg1:T646 Arg2:T645	
+R214	Setting Arg1:E152 Arg2:T648	
+T649	Concentration 7816 7822	1:1000
+T650	Concentration 7826 7833	1 µg/mL
+T651	Modifier 7838 7847	suggested
+R215	Mod-Link Arg1:T650 Arg2:T651	
+R216	Mod-Link Arg1:T649 Arg2:T651	
+T652	Concentration 7853 7858	1:500
+T653	Concentration 7860 7866	1:1000
+T654	Concentration 7872 7878	1:2000
+T655	Modifier 7883 7891	negative
+T656	Reagent 7892 7899	control
+R217	Mod-Link Arg1:T656 Arg2:T655	
+T657	Action 7901 7904	Use
+E153	Action:T657 Acts-on:T659 Measure-Type-Link:T661
+T658	Modifier 7907 7925	well-characterized
+T659	Reagent 7926 7935	secondary
+T660	Modifier 7943 7951	standard
+T661	Measure-Type 7952 7965	concentration
+T662	Concentration 7972 7978	1:1000
+T663	Reagent 7983 8005	AF488 goat anti-rabbit
+R218	Measure Arg1:T663 Arg2:T662	
+R219	Mod-Link Arg1:T659 Arg2:T658	
+R220	Or Arg1:T661 Arg2:T660	
+T664	Modifier 8011 8022	most common
+T665	Modifier 8023 8033	background
+T666	Modifier 8038 8045	lack of
+T667	Action 8071 8077	caused
+E154	Action:T667 Acts-on:T669
+T668	Modifier 8087 8095	too much
+T669	Reagent 8096 8104	antibody
+T670	Measure-Type 8046 8057	specificity
+R221	Mod-Link Arg1:T669 Arg2:T668	
+T671	Modifier 8105 8109	Less
+T672	Modifier 8113 8117	more
+T673	Action 8145 8153	quantify
+E155	Action:T673 
+T674	Numerical 8178 8179	2
+T675	Modifier 8180 8189	different
+T676	Reagent 8190 8200	antibodies
+T677	Numerical 8209 8210	2
+T678	Modifier 8211 8220	different
+T679	Location 8221 8228	regions
+T680	Reagent 8236 8243	protein
+T681	Action 8248 8260	help resolve
+E156	Action:T681 
+R222	Measure Arg1:T676 Arg2:T674	
+R223	Mod-Link Arg1:T676 Arg2:T675	
+R224	Measure Arg1:T679 Arg2:T677	
+R225	Mod-Link Arg1:T679 Arg2:T678	
+R226	Meronym Arg1:T679 Arg2:T680	
+T682	Action 8269 8271	Do
+E157	Action:T682 Acts-on:T683 Count:T685
+T683	Mention 8272 8276	them
+T684	Modifier 8277 8285	together
+T685	Numerical 8289 8290	2
+T686	Modifier 8291 8300	different
+R227	Mod-Link Arg1:E157 Arg2:T684	
+T687	Reagent 8312 8315	GFP
+T688	Action 8330 8335	stain
+E158	Action:T688 Using:T691 Acts-on:T689
+T689	Mention 8336 8338	it
+T690	Modifier 8339 8342	red
+T691	Reagent 8351 8359	antibody
+R228	Mod-Link Arg1:E158 Arg2:T690	
+R229	Coreference-Link Arg1:T689 Arg2:T687	
+T692	Modifier 8360 8364	Some
+T693	Reagent 8365 8373	antigens
+T694	Action 8374 8381	require
+E159	Action:T694 Acts-on:T693 Using:T695 Using2:T697 Using3:T702 Site:T703
+T695	Method 8382 8389	heating
+T696	Concentration 8393 8398	10 mM
+T697	Reagent 8399 8413	sodium citrate
+T698	pH 8415 8419	pH 6
+T699	Temperature 8421 8424	95C
+T700	Time 8429 8436	10 mins
+T701	Modifier 8442 8446	slow
+T702	Method 8447 8454	cooling
+T703	Location 8462 8467	bench
+R230	Mod-Link Arg1:T693 Arg2:T692	
+R231	Measure Arg1:T697 Arg2:T696	
+R232	Measure Arg1:T697 Arg2:T698	
+R233	Setting Arg1:E159 Arg2:T699	
+R234	Setting Arg1:E159 Arg2:T700	
+T704	Modifier 8488 8495	nuclear
+T705	Reagent 8496 8504	antigens
+T706	Reagent 8509 8517	proteins
+T707	Modifier 8521 8526	large
+T708	Reagent 8527 8536	complexes
+T709	Action 8541 8548	require
+E160	Action:T709 Using:T710 Acts-on:T705 Acts-on2:T706
+T710	Method 8549 8566	antigen retrieval
+R235	Meronym Arg1:T705 Arg2:T708	
+R236	Meronym Arg1:T706 Arg2:T708	
+R237	Mod-Link Arg1:T708 Arg2:T707	
+R238	Mod-Link Arg1:T705 Arg2:T704	
+T711	Action 8585 8592	amplify
+E161	Action:T711 Measure-Type-Link:T712 Using:T713 Using2:T714
+T712	Measure-Type 8597 8603	signal
+T713	Reagent 8613 8616	TSA
+T714	Reagent 8621 8634	avidin-biotin
+T715	Location 8660 8668	striatum
+T716	Action 8673 8680	require
+E162	Action:T716 Acts-on:T718
+T717	Modifier 8681 8686	extra
+T718	Reagent 8687 8695	controls
+T719	Method 8700 8714	blocking steps
+R239	Mod-Link Arg1:T718 Arg2:T717	
+T720	Method 8723 8733	experiment
+T721	Modifier 8739 8750	multi-label
+T722	Action 8766 8774	colabels
+E163	Action:T722 
+T723	Modifier 8775 8784	perfectly
+T724	Modifier 8795 8803	probably
+T725	Action 8804 8807	did
+E164	Action:T725 
+T726	Modifier 8818 8823	wrong
+R240	Mod-Link Arg1:E163 Arg2:T723	
+R241	Mod-Link Arg1:E164 Arg2:T724	
+R242	Mod-Link Arg1:E164 Arg2:T726	
+T727	Action 8825 8830	Check
+E165	Action:T727 Acts-on:T729
+T728	Modifier 8836 8845	secondary
+T729	Reagent 8846 8862	antibody species
+R243	Mod-Link Arg1:T729 Arg2:T728	
+T730	Modifier 8875 8879	goat
+T731	Reagent 8880 8887	primary
+T732	Reagent 8893 8904	secondaries
+T733	Modifier 8916 8922	donkey
+T734	Modifier 8905 8909	must
+T735	Action 8910 8912	be
+E166	Action:T735 Acts-on:T732
+T736	Action 8867 8872	using
+E167	Action:T736 Acts-on:T731
+T737	Modifier 8864 8866	If
+R244	Mod-Link Arg1:E167 Arg2:T737	
+R245	Mod-Link Arg1:T731 Arg2:T730	
+R246	Mod-Link Arg1:E166 Arg2:T734	
+R247	Mod-Link Arg1:T732 Arg2:T733	
+T739	Modifier 8949 8957	Too much
+T740	Modifier 8961 8964	any
+T741	Modifier 8965 8974	secondary
+T742	Reagent 8975 8983	antibody
+R248	Mod-Link Arg1:T742 Arg2:T741	
+R249	Mod-Link Arg1:T742 Arg2:T740	
+R250	Mod-Link Arg1:T742 Arg2:T739	
+T743	Action 8989 8994	stain
+E168	Action:T743 Using:T742 Site:T744 Site2:T745
+T744	Location 9021 9032	hippocampus
+T745	Location 9037 9043	cortex
+T746	Action 9045 9051	Dilute
+E169	Action:T746 Acts-on:T748
+T747	Modifier 9056 9065	secondary
+T748	Reagent 9066 9074	antibody
+T749	Modifier 9075 9083	two fold
+R251	Mod-Link Arg1:E169 Arg2:T749	
+R252	Mod-Link Arg1:T748 Arg2:T747	
+T750	Action 9088 9091	see
+E170	Action:T750 
+T751	Action 9098 9107	goes away
+E171	Action:T751 Site:T753
+T752	Modifier 9115 9123	negative
+T753	Reagent 9124 9131	control
+T754	Modifier 9138 9143	still
+T755	Action 9144 9153	detecting
+E172	Action:T755 Measure-Type-Link:T757
+T756	Modifier 9159 9163	real
+T757	Measure-Type 9164 9170	signal
+R253	Mod-Link Arg1:E172 Arg2:T754	
+R254	Mod-Link Arg1:T753 Arg2:T752	
+T758	Modifier 9171 9181	Anti-mouse
+T759	Reagent 9182 9193	secondaries
+T760	Modifier 9194 9203	sometimes
+T761	Action 9204 9211	pick up
+E173	Action:T761 
+T762	Modifier 9241 9251	endogenous
+T763	Modifier 9252 9257	mouse
+T764	Reagent 9258 9273	immunoglobulins
+R255	Mod-Link Arg1:T764 Arg2:T763	
+R256	Mod-Link Arg1:T764 Arg2:T762	
+R257	Mod-Link Arg1:T759 Arg2:T758	
+R258	Mod-Link Arg1:E173 Arg2:T760	
+T765	Reagent 9279 9286	control
+T766	Action 9292 9296	show
+E174	Action:T766 Using:T765
+T767	Modifier 9304 9312	artifact
+T768	Reagent 9314 9337	AF647 donkey anti-mouse
+T769	Action 9338 9348	recognizes
+E175	Action:T769 Using:T768
+T770	Modifier 9366 9368	B6
+T771	Modifier 9378 9385	not all
+T772	Modifier 9386 9395	secondary
+T773	Reagent 9396 9406	antibodies
+R259	Mod-Link Arg1:T773 Arg2:T772	
+R260	Mod-Link Arg1:T773 Arg2:T771	
+T774	Action 9407 9412	react
+E176	Action:T774 Using:T773 Acts-on:T775
+T775	Reagent 9418 9436	B6 immunoglobulins
+T776	Modifier 9466 9482	isotype-specific
+T777	Reagent 9483 9494	secondaries
+T778	Modifier 9502 9508	really
+T779	Action 9509 9513	need
+E177	Action:T779 Acts-on:T780
+T780	Mention 9514 9518	them
+R261	Coreference-Link Arg1:T780 Arg2:T777	
+R262	Mod-Link Arg1:T777 Arg2:T776	
+R263	Mod-Link Arg1:E177 Arg2:T778	
+T781	Reagent 9527 9535	antibody
+T782	Modifier 9546 9552	rarely
+T783	Action 9553 9557	tell
+E178	Action:T783 
+T784	Modifier 9562 9567	which
+T785	Reagent 9568 9585	mouse IgG isotype
+T786	Reagent 9589 9595	strain
+T787	Action 9600 9604	used
+E179	Action:T787 Using:T785 Using2:T786 Product:T789
+T788	Modifier 9613 9623	immunizing
+T789	Reagent 9624 9631	antigen
+R264	Mod-Link Arg1:T785 Arg2:T784	
+R265	Mod-Link Arg1:E178 Arg2:T782	
+R266	Mod-Link Arg1:T789 Arg2:T788	
+T790	Modifier 9633 9642	Sometimes
+T791	Reagent 9654 9661	mixture
+T792	Modifier 9669 9677	possible
+T793	Action 9681 9689	purchase
+E180	Action:T793 Acts-on:T794
+T794	Device 9690 9709	mouse blocking kits
+T795	Modifier 9751 9754	not
+T796	Action 9755 9761	proven
+E181	Action:T796 
+T797	Modifier 9762 9781	particularly useful
+R267	Mod-Link Arg1:E181 Arg2:T795	
+R268	Mod-Link Arg1:E181 Arg2:T797	
+R269	Mod-Link Arg1:E180 Arg2:T792	
+T798	Modifier 9792 9802	Monoclonal
+T799	Reagent 9803 9813	antibodies
+T800	Action 9840 9848	increase
+E182	Action:T800 Using:T799 Measure-Type-Link:T801
+T801	Measure-Type 9849 9860	specificity
+T802	Modifier 9865 9874	sometimes
+T803	Action 9875 9882	produce
+E183	Action:T803 Measure-Type-Link:T805
+T804	Modifier 9885 9890	lower
+T805	Measure-Type 9891 9897	signal
+T806	Reagent 9905 9915	polyclonal
+T807	Modifier 9929 9933	only
+T808	Action 9934 9943	recognize
+E184	Action:T808 Count:T809 Acts-on:T810
+T809	Numerical 9944 9947	one
+T810	Reagent 9948 9955	epitope
+R270	Mod-Link Arg1:E184 Arg2:T807	
+R271	Mod-Link Arg1:T799 Arg2:T798	
+R272	Mod-Link Arg1:E183 Arg2:T802	
+R273	Mod-Link Arg1:E183 Arg2:T804	
+T811	Reagent 9956 9967	Sudan Black
+T812	Concentration 9969 9973	0.1%
+T813	Concentration 9977 9980	70%
+T814	Reagent 9981 9985	EtOH
+T815	Numerical 9987 9990	2 x
+T816	Time 9991 9998	10 mins
+T817	Action 10015 10021	quench
+E185	Action:T817 Using:T811 Acts-on:T819
+T818	Modifier 10022 10029	mounted
+T819	Location 10030 10036	slides
+T820	Measure-Type 10059 10075	autofluorescence
+T821	Method 10083 10090	storage
+R274	Mod-Link Arg1:T819 Arg2:T818	
+T822	Action 10047 10058	accumulated
+E186	Action:T822 Site:T819 Measure-Type-Link:T820
+R275	Measure Arg1:T811 Arg2:T812	
+R276	Measure Arg1:T814 Arg2:T813	
+T823	Action 10092 10099	Destain
+E187	Action:T823 Site:T824
+T824	Location 10105 10115	Coplin jar
+T825	Time 10116 10125	overnight
+R277	Setting Arg1:E187 Arg2:T825	
+T826	Device 10129 10136	Pap pen
+T827	Action 10142 10146	hold
+E188	Action:T827 Using:T826 Acts-on:T828 Site:T829
+T828	Reagent 10147 10158	Sudan Black
+T829	Location 10166 10171	slide
+T830	Modifier 10172 10178	during
+T831	Method 10183 10193	incubation
+T832	Modifier 10194 10199	Older
+T833	Modifier 10212 10220	terrible
+T834	Measure-Type 10225 10237	fluorescence
+T835	Reagent 10249 10259	lipofuscin
+T836	Time 10271 10278	90 days
+T837	Modifier 10282 10286	best
+R278	Mod-Link Arg1:T836 Arg2:T837	
+T838	Modifier 10295 10302	have to
+T839	Action 10303 10306	use
+E189	Action:T839 
+T840	Modifier 10307 10312	older
+T841	Action 10333 10335	do
+E190	Action:T841 Using:T842
+T842	Method 10336 10344	controls
+R279	Mod-Link Arg1:E189 Arg2:T838	
+R280	Mod-Link Arg1:E189 Arg2:T840	
+T843	Modifier 10365 10374	important
+T844	Modifier 10379 10387	punctate
+T845	Modifier 10392 10405	intracellular
+T846	Reagent 10406 10414	antigens
+T847	Modifier 10419 10429	high power
+T848	Method 10430 10437	imaging
+R281	Mod-Link Arg1:T846 Arg2:T845	
+R282	Mod-Link Arg1:T846 Arg2:T844	
+T849	Reagent 10447 10457	lipofuscin
+T850	Action 10467 10476	fluoresce
+E191	Action:T850 Site:T853 Using:T849
+T851	Modifier 10480 10489	more than
+T852	Numerical 10490 10493	one
+T853	Location 10494 10501	channel
+R283	Mod-Link Arg1:T852 Arg2:T851	
+R284	Measure Arg1:T853 Arg2:T852	
+T854	Modifier 10519 10526	present
+T855	Modifier 10534 10536	no
+T856	Reagent 10537 10544	primary
+R285	Mod-Link Arg1:T856 Arg2:T855	
+T857	Modifier 10558 10564	better
+T858	Action 10568 10573	start
+E192	Action:T858 Using:T860
+T859	Modifier 10581 10585	nice
+T860	Reagent 10586 10594	specimen
+T861	Modifier 10617 10623	poorly
+T862	Modifier 10624 10629	fixed
+T863	Reagent 10630 10637	section
+T864	Action 10654 10658	look
+E193	Action:T864 Acts-on:T863
+T865	Modifier 10659 10665	pretty
+T866	Location 10643 10653	background
+R286	Mod-Link Arg1:E192 Arg2:T857	
+R287	Mod-Link Arg1:T860 Arg2:T859	
+T867	Action 10610 10614	make
+E194	Action:T867 Acts-on:T863
+R288	Mod-Link Arg1:T863 Arg2:T862	
+R289	Mod-Link Arg1:T863 Arg2:T861	
+R290	Mod-Link Arg1:E193 Arg2:T865	
+T868	Modifier 10694 10702	post hoc
+T869	Method 10703 10720	image enhancement
+T870	Action 10722 10732	start over
+E195	Action:T870 
+T871	Modifier 10674 10681	have to
+T872	Action 10682 10684	do
+E196	Action:T872 Using:T869
+T873	Modifier 10685 10690	a lot
+R291	Mod-Link Arg1:E196 Arg2:T871	
+R292	Mod-Link Arg1:E196 Arg2:T873	
+T874	Action 10733 10738	Think
+E197	Action:T874 
+T875	Action 10757 10763	seeing
+E198	Action:T875 
+T876	Modifier 10764 10770	before
+T877	Action 10775 10782	believe
+E199	Action:T877 
+R293	Mod-Link Arg1:E199 Arg2:T876	
+T878	Reagent 10795 10803	receptor
+T879	Modifier 10804 10813	inside of
+T880	Reagent 10816 10820	cell
+T881	Location 10831 10838	surface
+R294	Mod-Link Arg1:T880 Arg2:T879	
+T882	Mention 10845 10847	it
+R295	Coreference-Link Arg1:T882 Arg2:T878	
+T883	Reagent 10862 10869	peptide
+T884	Modifier 10875 10882	doesn’t
+T885	Action 10883 10888	stain
+E200	Action:T885 Using:T883 Acts-on:T886
+R296	Mod-Link Arg1:E200 Arg2:T884	
+T886	Location 10889 10898	terminals
+T887	Reagent 10903 10914	transporter
+T888	Modifier 10915 10922	clearly
+T889	Action 10923 10933	associated
+E201	Action:T889 Using:T887 Acts-on:T890
+T890	Reagent 10941 10948	nucleus
+R297	Mod-Link Arg1:E201 Arg2:T888	
+T891	Action 10966 10976	looks like
+E202	Action:T891 Site:T892
+T892	Location 10998 11009	hippocampus
+T893	Reagent 11051 11056	brain
+T894	Modifier 11119 11141	particularly important
+T895	Action 11147 11152	doing
+E203	Action:T895 Using:T896
+T896	Method 11153 11169	virus injections
+T897	Modifier 11178 11182	many
+T898	Action 11183 11192	transport
+E204	Action:T898 
+T899	Modifier 11217 11227	en passant
+T900	Method 11236 11247	projections
+T901	Modifier 11255 11263	injected
+T902	Location 11264 11270	region
+T903	Modifier 11275 11285	retrograde
+T904	Action 11286 11295	transport
+E205	Action:T904 
+R298	Mod-Link Arg1:E205 Arg2:T903	
+R299	Mod-Link Arg1:E203 Arg2:T894	
+T905	Modifier 11066 11073	correct
+T906	Measure-Type 11074 11084	proportion
+T907	Modifier 11098 11103	whole
+T908	Reagent 11104 11109	brain
+T909	Action 11086 11090	Look
+E206	Action:T909 Acts-on:T908
+R300	Mod-Link Arg1:T908 Arg2:T907	
+T910	Modifier 11029 11037	supposed
+T911	Action 11038 11043	to be
+E207	Action:T911 Site:T893
+R301	Mod-Link Arg1:E207 Arg2:T910	
+R302	Mod-Link Arg1:E204 Arg2:T897	
+T912	Reagent 11210 11216	fibers
+R303	Mod-Link Arg1:T912 Arg2:T899	
+T913	Modifier 11200 11206	damage
+R304	Mod-Link Arg1:T912 Arg2:T913	
+R305	Mod-Link Arg1:T902 Arg2:T901	
+T914	Method 11311 11321	Injections
+T915	Location 11327 11335	amygdala
+T916	Modifier 11336 11345	sometimes
+T917	Action 11346 11351	label
+E208	Action:T917 Site:T919 Using:T918
+T918	Method 11352 11363	projections
+T919	Location 11367 11384	auditory thalamus
+T920	Device 11397 11403	needle
+T921	Action 11404 11418	passes through
+E209	Action:T921 Acts-on:T920 Site:T922
+T922	Location 11423 11438	auditory cortex
+R306	Mod-Link Arg1:E208 Arg2:T916	
+T925	Method 11473 11483	injections
+T926	Modifier 11498 11516	extremely variable
+T927	Modifier 11521 11525	need
+T928	Action 11532 11540	verified
+E210	Action:T928 
+R307	Mod-Link Arg1:E210 Arg2:T927	
+T929	Action 11542 11545	See
+E211	Action:T929 
+T930	Modifier 11580 11584	easy
+T931	Action 11592 11594	do
+E212	Action:T931 Site:T932
+T932	Reagent 11603 11609	tissue
+T933	Modifier 11610 11615	after
+T934	Method 11616 11635	ex-vivo experiments
+R308	Mod-Link Arg1:E212 Arg2:T933	
+T935	Modifier 11637 11641	Thin
+T936	Reagent 11642 11650	sections
+T937	Modifier 11655 11659	best
+T938	Action 11672 11677	stain
+E213	Action:T938 Acts-on:T941
+T939	Modifier 11668 11671	can
+T940	Modifier 11678 11683	thick
+T941	Reagent 11684 11692	sections
+T942	Modifier 11699 11710	optogenetic
+T943	Method 11711 11722	experiments
+R309	Mod-Link Arg1:E213 Arg2:T939	
+R310	Mod-Link Arg1:T941 Arg2:T940	
+R311	Mod-Link Arg1:T936 Arg2:T935	
+T944	Modifier 11741 11749	a lot of
+T945	Modifier 11762 11770	a lot of
+T946	Reagent 11771 11778	species
+R312	Mod-Link Arg1:T946 Arg2:T945	
+T947	Action 11840 11842	DO
+E214	Action:T947 
+T948	Method 11843 11851	CONTROLS
+T949	Modifier 11856 11865	different
+T950	Reagent 11879 11886	species
+T951	Reagent 11887 11897	antibodies
+T952	Modifier 11898 11904	before
+T953	Action 11905 11914	believing
+E215	Action:T953 
+T954	Method 11915 11929	colocalization
+R313	Mod-Link Arg1:E215 Arg2:T952	
+R314	Mod-Link Arg1:T950 Arg2:T949	
+R315	Mod-Link Arg1:T951 Arg2:T949	
+T955	Action 11834 11838	work
+E216	Action:T955 
+T956	Method 11723 11735	Multi-labels
+T957	Modifier 294 295	~
+R316	Mod-Link Arg1:T22 Arg2:T957	
+T36	Reagent 506 513	section
+T958	Modifier 634 635	~
+R317	Mod-Link Arg1:T48 Arg2:T958	
+T959	Action 663 670	section
+E217	Action:T959 
+R318	Acts-on Arg1:E217 Arg2:T49	
+R319	Site Arg1:E217 Arg2:T50	
+T960	Reagent 752 761	coeruleus
+R320	Coreference-Link Arg1:T960 Arg2:T54	
+R25	Or Arg1:T93 Arg2:T92	
+T62	Measure-Type 1528 1534	series
+T67	Modifier 1662 1663	~
+R27	Mod-Link Arg1:T164 Arg2:T67	
+T96	Modifier 1865 1866	~
+R37	Mod-Link Arg1:T182 Arg2:T96	
+T106	Modifier 2027 2028	~
+R38	Mod-Link Arg1:T197 Arg2:T106	
+R66	Mod-Link Arg1:T285 Arg2:T284	
+R93	Mod-Link Arg1:T287 Arg2:T286	
+T192	Action 3719 3722	use
+E44	Action:T192 
+R321	Acts-on Arg1:E44 Arg2:T309	
+T193	Reagent 3957 3960	405
+T278	Reagent 3962 3965	488
+T308	Reagent 3967 3970	543
+T961	Reagent 3972 3975	555
+T962	Reagent 3977 3980	568
+T963	Reagent 3982 3985	633
+T964	Reagent 3987 3990	647
+R322	Meronym Arg1:T193 Arg2:T330	
+R323	Meronym Arg1:T278 Arg2:T330	
+R324	Meronym Arg1:T308 Arg2:T330	
+R325	Meronym Arg1:T961 Arg2:T330	
+R326	Meronym Arg1:T962 Arg2:T330	
+R327	Meronym Arg1:T963 Arg2:T330	
+R328	Meronym Arg1:T964 Arg2:T330	
+R111	Mod-Link Arg1:E85 Arg2:T345	
+R119	Acts-on Arg1:E89 Arg2:T364	
+R124	Coreference-Link Arg1:T378 Arg2:T377	
+T344	Numerical 5073 5074	6
+R127	Or Arg1:T432 Arg2:T344	
+R129	Measure Arg1:T433 Arg2:T344	
+T363	Action 5375 5380	slide
+E76	Action:T363 
+R148	Acts-on Arg1:E76 Arg2:T457	
+R329	Site Arg1:E76 Arg2:T458	
+R330	Meronym Arg1:T458 Arg2:T459	
+R331	Site Arg1:E76 Arg2:T460	
+R112	Or Arg1:T458 Arg2:T460	
+T381	Action 5462 5467	allow
+E108	Action:T381 
+R332	Acts-on Arg1:E108 Arg2:T467	
+T385	Modifier 5710 5711	~
+R333	Mod-Link Arg1:T485 Arg2:T385	
+R161	Of-Type Arg1:T485 Arg2:T486	
+T390	Modifier 5977 5978	~
+R162	Mod-Link Arg1:T504 Arg2:T390	
+T456	Modifier 5997 6002	don’t
+R170	Mod-Link Arg1:E122 Arg2:T456	
+T144	Device 6372 6379	filters
+R49	Acts-on Arg1:E36 Arg2:T144	
+T461	Measure-Type 6310 6318	metadata
+R334	Mod-Link Arg1:T461 Arg2:T143	
+R335	Acts-on Arg1:E36 Arg2:T461	
+R336	Or Arg1:T151 Arg2:T150	
+T506	Reagent 6924 6928	mice
+R337	Mod-Link Arg1:T506 Arg2:T567	
+T564	Reagent 6968 6972	mice
+R338	Acts-on Arg1:E134 Arg2:T564	
+R194	Or Arg1:T585 Arg2:T583	
+R339	Mod-Link Arg1:T583 Arg2:T581	
+T565	Modifier 7295 7296	~
+R340	Mod-Link Arg1:T599 Arg2:T565	
+T566	Modifier 7515 7516	~
+R341	Mod-Link Arg1:T619 Arg2:T566	
+R342	Or Arg1:T650 Arg2:T649	
+R343	Mod-Link Arg1:T757 Arg2:T756	
+R344	Or Arg1:T786 Arg2:T785	
+T965	Modifier 10261 10270	Less than
+R345	Mod-Link Arg1:T836 Arg2:T965	
+T966	Mention 9924 9928	they
+R346	Coreference-Link Arg1:T966 Arg2:T794	
+T967	Reagent 10979 10990	Nissl stain
+T923	Action 11750 11757	thought
+E109	Action:T923 
+R347	Acts-on Arg1:E109 Arg2:T956	
+R348	Mod-Link Arg1:E109 Arg2:T944	
+T924	Modifier 5514 5515	~
+R349	Mod-Link Arg1:T471 Arg2:T924	

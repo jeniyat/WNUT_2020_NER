@@ -1,0 +1,227 @@
+T2	Action 28 34	detect
+E2	Action:T2 Acts-on:T3
+T3	Reagent 35 62	respiratory syncytial virus
+T4	Action 63 66	Fix
+E3	Action:T4 Acts-on:T5
+T5	Reagent 71 76	cells
+T6	Action 77 84	immerge
+E4	Action:T6 Acts-on:T7 Site:T9
+T7	Mention 85 89	them
+T8	Modifier 97 106	pure cold
+T9	Reagent 107 114	acetone
+T10	Time 119 123	5min
+T11	Action 125 129	Wash
+E5	Action:T11 Acts-on:T13 Site:T14
+T12	Concentration 130 132	3X
+T13	Reagent 137 143	sample
+T14	Reagent 147 150	PBS
+T15	Time 155 159	3min
+T16	Temperature 172 188	room temperature
+T17	Temperature 190 194	r.t.
+R1	Coreference-Link Arg1:T17 Arg2:T16	
+T18	Action 197 209	Permeabilize
+E6	Action:T18 Acts-on:T19
+T19	Reagent 214 219	cells
+T20	Action 220 228	incubate
+E7	Action:T20 Acts-on:T22
+T21	Concentration 234 238	0.1%
+T22	Reagent 239 250	Triton-X100
+T23	Time 255 260	15min
+T24	Temperature 264 268	r.t.
+T25	Action 269 273	Wash
+E8	Action:T25 Acts-on:T27 Site:T28
+T26	Concentration 274 276	3X
+T27	Reagent 281 287	sample
+T28	Reagent 291 294	PBS
+T29	Time 299 303	3min
+T30	Temperature 316 319	r.t
+T31	Action 321 329	Incubate
+E9	Action:T31 Acts-on:T32 Using:T34
+T32	Reagent 334 339	cells
+T33	Concentration 345 350	1:100
+T34	Reagent 351 359	dilution
+T35	Modifier 364 372	anti-RSV
+T36	Reagent 373 398	blend monoclonal antibody
+T37	Reagent 434 437	PBS
+T38	Concentration 443 445	1%
+T39	Reagent 446 466	Bovine Serum Albumin
+T40	Reagent 468 471	BSA
+T41	Concentration 477 481	0.2%
+T42	Reagent 482 490	Tween 20
+T43	Action 492 496	Keep
+E10	Action:T43 Acts-on:T44
+T44	Mention 497 499	it
+T45	Device 520 527	chamber
+T46	Time 532 537	30min
+T47	Temperature 541 545	r.t.
+T48	Action 546 550	Wash
+E11	Action:T48 Acts-on:T50 Site:T51
+T49	Concentration 551 553	3X
+T50	Reagent 558 564	sample
+T51	Reagent 568 571	PBS
+T52	Time 576 580	5min
+T53	Temperature 593 596	r.t
+T54	Action 598 606	Incubate
+E12	Action:T54 Acts-on:T55 Site:T58
+T55	Reagent 611 617	sample
+T56	Time 622 627	15min
+T57	Temperature 631 634	r.t
+T58	Reagent 642 656	Block solution
+T59	Concentration 658 661	10%
+T60	Reagent 665 679	specific serum
+T61	Action 680 687	diluted
+E13	Action:T61 Acts-on:T60 Site:T62
+T62	Reagent 691 694	PBS
+T63	Concentration 695 697	1X
+T64	Action 700 704	Wash
+E14	Action:T64 Acts-on:T66 Site:T67
+T65	Concentration 705 707	3X
+T66	Reagent 712 718	sample
+T67	Reagent 722 725	PBS
+T68	Time 730 734	3min
+T69	Temperature 747 750	r.t
+T70	Action 752 760	Incubate
+E15	Action:T70 Acts-on:T71
+T71	Reagent 765 770	cells
+T72	Reagent 780 807	secondary antibody solution
+T73	Time 812 817	30min
+T74	Temperature 821 825	r.t.
+T75	Device 850 857	chamber
+T76	Reagent 872 918	Donkey anti-mouse IgG (H+L) secondary antibody
+T77	Action 919 929	conjugated
+E16	Action:T77 Acts-on:T76 Using:T78
+T78	Reagent 935 951	Alexa Fluor® 488
+T79	Action 1011 1018	diluted
+E17	Action:T79 Site:T81 Site2:T83
+T80	Concentration 1019 1024	1:200
+T81	Reagent 1028 1031	PBS
+T82	Concentration 1037 1039	1%
+T83	Reagent 1040 1043	BSA
+T84	Action 1045 1049	Wash
+E18	Action:T84 Acts-on:T86 Site:T87
+T85	Concentration 1050 1052	3X
+T86	Reagent 1057 1063	sample
+T87	Reagent 1067 1070	PBS
+T88	Time 1075 1079	5min
+T89	Temperature 1092 1095	r.t
+T90	Action 1097 1105	Incubate
+E19	Action:T90 Acts-on:T91 Acts-on2:T93
+T91	Reagent 1110 1115	cells
+T92	Concentration 1121 1127	5µg/ml
+T93	Reagent 1131 1144	DAPI solution
+T94	Action 1146 1153	diluted
+E20	Action:T94 Site:T95
+T95	Reagent 1157 1160	PBS
+T96	Time 1166 1170	5min
+T97	Temperature 1174 1178	r.t.
+T98	Device 1203 1210	chamber
+T99	Action 1212 1216	Wash
+E21	Action:T99 Acts-on:T101 Site:T102
+T100	Concentration 1217 1219	2X
+T101	Reagent 1224 1230	sample
+T102	Reagent 1234 1237	PBS
+T103	Time 1242 1246	5min
+T104	Temperature 1259 1262	r.t
+T105	Action 1264 1269	Mount
+E22	Action:T105 Acts-on:T106 Using:T108
+T106	Seal 1270 1279	coverslip
+T107	Generic-Measure 1287 1291	drop
+T108	Reagent 1295 1310	mounting medium
+T109	Concentration 1312 1315	90%
+T110	Reagent 1316 1324	glycerol
+T111	Action 1325 1332	diluted
+E23	Action:T111 Acts-on:T110 Site:T112
+T112	Reagent 1336 1339	PBS
+T113	Action 1342 1346	Seal
+E24	Action:T113 Acts-on:T114 Using:T115
+T114	Seal 1347 1356	coverslip
+T115	Seal 1362 1373	nail polish
+T116	Action 1423 1428	Store
+E25	Action:T116 
+T117	Temperature 1440 1445	-20°C
+T118	Temperature 1449 1453	+4°C
+T119	Action 1377 1384	prevent
+E26	Action:T119 Site:T120
+T120	Device 1411 1421	microscope
+R2	Coreference-Link Arg1:T7 Arg2:T5	
+R3	Mod-Link Arg1:T9 Arg2:T8	
+R4	Setting Arg1:E4 Arg2:T10	
+R5	Measure Arg1:T13 Arg2:T12	
+R6	Setting Arg1:E5 Arg2:T15	
+R7	Setting Arg1:E5 Arg2:T16	
+R8	Measure Arg1:T22 Arg2:T21	
+R9	Setting Arg1:E7 Arg2:T23	
+R10	Setting Arg1:E7 Arg2:T24	
+R11	Measure Arg1:T27 Arg2:T26	
+R12	Setting Arg1:E8 Arg2:T29	
+R13	Setting Arg1:E8 Arg2:T30	
+R14	Measure Arg1:T34 Arg2:T33	
+R15	Coreference-Link Arg1:T34 Arg2:T36	
+R16	Mod-Link Arg1:T36 Arg2:T35	
+R18	Measure Arg1:T39 Arg2:T38	
+R19	Coreference-Link Arg1:T40 Arg2:T39	
+R20	Measure Arg1:T42 Arg2:T41	
+R21	Setting Arg1:E10 Arg2:T46	
+R22	Setting Arg1:E10 Arg2:T47	
+R23	Measure Arg1:T50 Arg2:T49	
+R24	Setting Arg1:E11 Arg2:T52	
+R25	Setting Arg1:E11 Arg2:T53	
+R26	Setting Arg1:E12 Arg2:T56	
+R27	Setting Arg1:E12 Arg2:T57	
+R28	Measure Arg1:T60 Arg2:T59	
+R29	Measure Arg1:T62 Arg2:T63	
+R30	Measure Arg1:T66 Arg2:T65	
+R31	Setting Arg1:E14 Arg2:T68	
+R32	Setting Arg1:E14 Arg2:T69	
+R33	Meronym Arg1:T72 Arg2:T71	
+R34	Setting Arg1:E15 Arg2:T73	
+R35	Setting Arg1:E15 Arg2:T74	
+R36	Setting Arg1:E17 Arg2:T80	
+R37	Measure Arg1:T83 Arg2:T82	
+R38	Setting Arg1:E18 Arg2:T88	
+R39	Setting Arg1:E18 Arg2:T89	
+R40	Measure Arg1:T86 Arg2:T85	
+R41	Measure Arg1:T93 Arg2:T92	
+R42	Setting Arg1:E19 Arg2:T96	
+R43	Setting Arg1:E19 Arg2:T97	
+R44	Measure Arg1:T101 Arg2:T100	
+R45	Setting Arg1:E21 Arg2:T103	
+R46	Setting Arg1:E21 Arg2:T104	
+R48	Measure Arg1:T110 Arg2:T109	
+R49	Setting Arg1:E25 Arg2:T117	
+R50	Or Arg1:T117 Arg2:T118	
+T1	Method 0 24	Immunofluorescence Assay
+R51	Using Arg1:E2 Arg2:T1	
+T121	Modifier 160 164	each
+R52	Mod-Link Arg1:T13 Arg2:T121	
+T122	Modifier 304 308	each
+R53	Mod-Link Arg1:T27 Arg2:T122	
+R17	Site Arg1:E9 Arg2:T37	
+R54	Meronym Arg1:T39 Arg2:T37	
+R55	Meronym Arg1:T42 Arg2:T37	
+T123	Modifier 509 519	humidified
+T124	Location 500 506	inside
+R56	Meronym Arg1:T45 Arg2:T124	
+R57	Mod-Link Arg1:T45 Arg2:T123	
+T125	Modifier 581 585	each
+R58	Mod-Link Arg1:T50 Arg2:T125	
+T126	Modifier 735 739	each
+R59	Mod-Link Arg1:T66 Arg2:T126	
+T127	Modifier 839 849	humidified
+R60	Mod-Link Arg1:T75 Arg2:T127	
+T128	Location 830 836	inside
+R61	Meronym Arg1:T75 Arg2:T128	
+R62	Site Arg1:E10 Arg2:T124	
+R63	Site Arg1:E15 Arg2:T128	
+T129	Modifier 1080 1084	each
+R64	Mod-Link Arg1:T86 Arg2:T129	
+T130	Location 1183 1189	inside
+T131	Modifier 1192 1202	humidified
+R65	Mod-Link Arg1:T98 Arg2:T131	
+R66	Meronym Arg1:T98 Arg2:T130	
+R67	Site Arg1:E19 Arg2:T130	
+T132	Modifier 1247 1251	each
+R68	Mod-Link Arg1:T101 Arg2:T132	
+R47	Measure Arg1:T108 Arg2:T107	
+T133	Location 1405 1410	under
+R69	Meronym Arg1:T120 Arg2:T133	

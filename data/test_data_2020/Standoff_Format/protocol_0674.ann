@@ -1,0 +1,24 @@
+T1	Modifier 0 9	Suggested
+T2	Method 10 18	protocol
+T3	Action 23 30	loading
+E1	Action:T3 Acts-on:T4
+T4	Device 33 50	DNA Ladder/marker
+T5	Action 51 58	Prepare
+E2	Action:T5 Acts-on:T7 Measure-Type-Link:T10
+T6	Modifier 59 66	loading
+T7	Reagent 67 74	mixture
+T8	Amount 76 80	6 μl
+T9	Modifier 81 86	total
+T10	Measure-Type 87 93	volume
+R1	Mod-Link Arg1:T7 Arg2:T6	
+T11	Action 97 100	Mix
+E3	Action:T11 
+T12	Modifier 101 107	gently
+R2	Mod-Link Arg1:E3 Arg2:T12	
+T13	Action 109 113	Load
+E4	Action:T13 Site:T14
+T14	Reagent 123 134	agarose gel
+R3	Measure Arg1:T7 Arg2:T8	
+R4	Mod-Link Arg1:T10 Arg2:T9	
+R5	Of-Type Arg1:T8 Arg2:T10	
+R6	Mod-Link Arg1:T2 Arg2:T1	

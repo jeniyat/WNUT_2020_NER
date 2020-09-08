@@ -1,0 +1,137 @@
+T1	Numerical 52 55	10x
+T2	Reagent 11 23	formaldehyde
+T3	Method 24 51	agarose gel-electrophoresis
+T4	Method 0 10	Denaturing
+T5	Reagent 56 66	MEN buffer
+T6	Concentration 68 74	200 mM
+T7	Reagent 75 79	MOPS
+T8	Concentration 81 86	50 mM
+T9	Reagent 87 92	NaOAc
+T10	Concentration 94 99	10 mM
+T11	Reagent 100 104	EDTA
+T12	pH 106 114	pH = 7.0
+T13	Reagent 114 126	Formaldehyde
+T14	Modifier 126 136	Ultra pure
+T15	Reagent 137 142	water
+T16	Reagent 142 149	Agarose
+R3	Measure Arg1:T11 Arg2:T10	
+R4	Coreference-Link Arg1:T9 Arg2:T8	
+R5	Measure Arg1:T7 Arg2:T6	
+R6	Measure Arg1:T5 Arg2:T1	
+T17	Numerical 162 165	one
+T18	Amount 166 172	100 mL
+T19	Reagent 173 176	gel
+R7	Measure Arg1:T19 Arg2:T17	
+R8	Measure Arg1:T19 Arg2:T18	
+T20	Device 183 220	PeqLab Mini L electrophoresis chamber
+T21	Action 222 230	Assemble
+E1	Action:T21 Acts-on:T22 Using:T24
+T22	Device 231 242	gel chamber
+T23	Modifier 248 256	suitable
+T24	Device 257 261	comb
+R9	Mod-Link Arg1:T24 Arg2:T23	
+T25	Action 262 266	Heat
+E2	Action:T25 Site:T29
+T26	Amount 267 272	1.3 g
+T27	Amount 276 281	85 mL
+T28	Modifier 282 292	ultra pure
+T29	Reagent 293 298	water
+R10	Mod-Link Arg1:T29 Arg2:T28	
+R11	Measure Arg1:T29 Arg2:T27	
+R12	Setting Arg1:E2 Arg2:T26	
+T30	Action 300 308	Let cool
+E3	Action:T30 
+T31	Location 309 323	Under the hood
+T32	Modifier 325 332	quickly
+T33	Action 333 336	add
+E4	Action:T33 Site:T31 Acts-on:T36 Acts-on2:T38
+T34	Amount 337 342	10 mL
+T35	Concentration 343 346	10x
+T36	Reagent 347 357	MEN buffer
+T37	Amount 362 366	5 mL
+T38	Reagent 367 379	formaldehyde
+T39	Action 384 388	pour
+E5	Action:T39 Acts-on:T40
+T40	Reagent 389 392	gel
+R13	Mod-Link Arg1:E4 Arg2:T32	
+R14	Measure Arg1:T38 Arg2:T37	
+R15	Measure Arg1:T36 Arg2:T35	
+R16	Measure Arg1:T36 Arg2:T34	
+T41	Method 398 420	Northern Blot Analysis
+T42	Amount 422 428	1-3 µg
+T43	Reagent 432 435	RNA
+T44	Action 446 452	loaded
+E6	Action:T44 Acts-on:T43
+R18	Measure Arg1:T43 Arg2:T42	
+T46	Action 462 468	Adjust
+E7	Action:T46 Acts-on:T49 Measure-Type-Link:T47 Measure-Type-Link2:T48
+T47	Measure-Type 469 482	concentration
+T48	Measure-Type 487 493	volume
+T49	Reagent 501 512	RNA samples
+T50	Modifier 523 533	RNase-free
+T51	Reagent 534 539	ddH2O
+R19	Mod-Link Arg1:T51 Arg2:T50	
+T52	Action 541 544	Add
+E8	Action:T52 Acts-on:T56 Measure-Type-Link:T54
+T53	Modifier 545 550	equal
+T54	Measure-Type 551 558	amounts
+T55	Numerical 562 564	2x
+T56	Reagent 565 580	RNA Loading Dye
+R20	Measure Arg1:T56 Arg2:T55	
+R21	Mod-Link Arg1:T56 Arg2:T53	
+T57	Action 581 589	Denature
+E9	Action:T57 Acts-on:T58
+T58	Reagent 590 593	RNA
+T59	Temperature 597 601	95˚C
+T60	Time 606 611	5 min
+R22	Setting Arg1:E9 Arg2:T59	
+R23	Setting Arg1:E9 Arg2:T60	
+T61	Action 613 622	Snap cool
+E10	Action:T61 
+T62	Location 623 629	on ice
+R24	Site Arg1:E10 Arg2:T62	
+T63	Action 631 634	Add
+E11	Action:T63 Acts-on:T65 Site:T66
+T64	Numerical 635 637	1x
+T65	Reagent 638 641	MEN
+T66	Device 649 656	chamber
+T67	Reagent 666 672	buffer
+R25	Measure Arg1:T65 Arg2:T64	
+T68	Location 685 690	wells
+T70	Reagent 706 712	buffer
+T71	Action 675 684	Make sure
+E12	Action:T71 Acts-on:T68
+T72	Action 713 717	Load
+E13	Action:T72 Acts-on:T73
+T73	Reagent 718 721	RNA
+T74	Action 722 730	Separate
+E14	Action:T74 Acts-on:T75
+T75	Reagent 731 734	RNA
+T76	Generic-Measure 738 746	5-6 V/cm
+T77	Modifier 751 759	at least
+T78	Time 760 770	30 minutes
+T79	Modifier 774 780	longer
+R27	Mod-Link Arg1:T78 Arg2:T79	
+R28	Mod-Link Arg1:T78 Arg2:T77	
+R29	Setting Arg1:E14 Arg2:T78	
+R30	Measure Arg1:T75 Arg2:T76	
+T80	Action 791 799	Document
+E15	Action:T80 Acts-on:T81 Using:T82
+T81	Reagent 804 807	gel
+T82	Device 818 851	BioRad ChemiDoc MP Imaging System
+T83	Action 852 855	Use
+E16	Action:T83 Acts-on:T84
+T84	Method 867 873	GelRed
+T85	Method 881 906	Ethidium bromide protocol
+R2	Measure Arg1:T13 Arg2:T12	
+R31	Mod-Link Arg1:T15 Arg2:T14	
+T45	Location 457 461	well
+T86	Modifier 453 456	per
+R17	Mod-Link Arg1:T45 Arg2:T86	
+R32	Site Arg1:E6 Arg2:T45	
+R1	Acts-on Arg1:T4 Arg2:T2	
+R33	Meronym Arg1:T67 Arg2:T65	
+T69	Action 695 702	covered
+E17	Action:T69 
+R26	Acts-on Arg1:E17 Arg2:T68	
+R34	Using Arg1:E17 Arg2:T70	

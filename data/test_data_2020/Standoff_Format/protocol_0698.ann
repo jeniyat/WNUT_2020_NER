@@ -1,0 +1,292 @@
+T1	Method 0 13	Cell Counting
+T2	Device 22 36	haemocytometer
+T3	Location 38 59	Neubauer cell chamber
+T4	Reagent 66 71	fixer
+T5	Action 72 77	Clean
+E1	Action:T5 Acts-on:T6 Using:T8
+T6	Device 82 96	haemocytometer
+T7	Concentration 103 106	70%
+T8	Reagent 107 114	ethanol
+T9	Modifier 115 125	before use
+R1	Mod-Link Arg1:E1 Arg2:T9	
+R2	Measure Arg1:T8 Arg2:T7	
+T10	Action 127 134	Moisten
+E2	Action:T10 Using:T14 Acts-on:T13
+T11	Modifier 139 145	raised
+T12	Modifier 146 151	glass
+T13	Location 152 157	rails
+T14	Location 167 170	tip
+T15	Modifier 176 185	moistened
+T16	Action 197 202	affix
+E3	Action:T16 Acts-on:T17 Site:T20
+R4	Mod-Link Arg1:T13 Arg2:T12	
+R5	Mod-Link Arg1:T13 Arg2:T11	
+T17	Seal 207 216	coverslip
+T18	Modifier 226 232	raised
+T19	Modifier 233 238	glass
+T20	Location 239 244	rails
+T21	Modifier 251 266	gentle pressure
+T22	Measure-Type 276 281	depth
+T23	Location 289 296	chamber
+T24	Modifier 300 307	ensured
+R6	Mod-Link Arg1:T23 Arg2:T24	
+R7	Mod-Link Arg1:E3 Arg2:T21	
+R8	Mod-Link Arg1:T20 Arg2:T19	
+R9	Mod-Link Arg1:T20 Arg2:T18	
+T25	Modifier 309 315	Gently
+T26	Action 316 319	mix
+E4	Action:T26 Acts-on:T27 Site:T28
+T27	Reagent 324 339	cell suspension
+T28	Location 347 352	flask
+T29	Action 357 365	transfer
+E5	Action:T29 Site:T31
+T30	Size 369 372	1ml
+T31	Location 376 390	Eppendorf tube
+R10	Mod-Link Arg1:E4 Arg2:T25	
+R11	Measure Arg1:T31 Arg2:T30	
+T32	Device 398 410	micropipette
+T33	Action 412 415	mix
+E6	Action:T33 Using:T32 Acts-on:T34 Site:T35
+T34	Reagent 420 425	cells
+T35	Reagent 434 440	sample
+T36	Modifier 441 446	again
+T37	Action 451 459	take out
+E7	Action:T37 Acts-on:T39
+T38	Amount 460 467	100 µl 
+T39	Reagent 471 476	cells
+T40	Action 481 484	add
+E8	Action:T40 Acts-on:T43
+T41	Amount 485 491	100 µl
+T42	Concentration 495 497	1X
+T43	Reagent 498 503	fixer
+T44	Action 508 511	mix
+E9	Action:T44 
+T45	Modifier 512 518	gently
+T46	Modifier 519 524	again
+R12	Mod-Link Arg1:E9 Arg2:T45	
+R13	Mod-Link Arg1:E9 Arg2:T46	
+R14	Mod-Link Arg1:E6 Arg2:T36	
+R15	Measure Arg1:T39 Arg2:T38	
+R16	Measure Arg1:T43 Arg2:T42	
+R17	Measure Arg1:T43 Arg2:T41	
+T47	Modifier 526 535	Carefully
+T48	Action 537 540	add
+E10	Action:T48 Acts-on:T51 Site:T52
+T49	Amount 541 546	20 µl
+T50	Modifier 554 559	mixed
+T51	Reagent 560 566	sample
+T52	Location 574 578	grid
+T53	Modifier 584 591	between
+T54	Seal 596 605	coverslip
+T55	Location 614 630	counting chamber
+T56	Device 634 648	haemocytometer
+T57	Action 650 655	avoid
+E11	Action:T57 Acts-on:T59
+T58	Modifier 656 664	overfill
+T59	Location 672 679	chamber
+T60	Action 705 710	reach
+E12	Action:T60 Acts-on:T61 Site:T62
+T61	Reagent 695 701	sample
+T62	Location 715 720	edges
+T63	Location 728 735	grooves
+R18	Meronym Arg1:T62 Arg2:T63	
+R19	Mod-Link Arg1:T59 Arg2:T58	
+R20	Mod-Link Arg1:E10 Arg2:T47	
+R21	Mod-Link Arg1:T51 Arg2:T50	
+R22	Measure Arg1:T51 Arg2:T49	
+R23	Mod-Link Arg1:T52 Arg2:T53	
+R26	Meronym Arg1:T52 Arg2:T56	
+T64	Action 737 744	Re-load
+E13	Action:T64 Acts-on:T65
+T65	Device 749 756	pipette
+T66	Action 761 765	fill
+E14	Action:T66 Acts-on:T68
+T67	Modifier 770 776	second
+T68	Location 777 784	chamber
+T69	Modifier 785 796	if required
+R24	Mod-Link Arg1:E14 Arg2:T69	
+R25	Mod-Link Arg1:T68 Arg2:T67	
+T70	Action 798 803	Focus
+E15	Action:T70 Acts-on:T72 Using:T74
+T71	Device 808 822	haemocytometer
+T72	Location 823 827	grid
+R27	Meronym Arg1:T72 Arg2:T71	
+T73	Numerical 838 841	10X
+T74	Device 859 869	microscope
+R28	Setting Arg1:T74 Arg2:T73	
+T75	Location 875 882	chamber
+T77	Numerical 892 895	two
+T78	Modifier 896 905	identical
+T79	Modifier 915 919	Each
+T80	Measure-Type 934 938	area
+T81	Size 942 947	9 mm2
+T82	Size 949 953	1 mm
+T83	Modifier 957 961	each
+T84	Location 962 966	side
+R29	Measure Arg1:T84 Arg2:T82	
+R30	Mod-Link Arg1:T84 Arg2:T83	
+T85	Action 987 994	divided
+E17	Action:T85 Acts-on:T99 Product:T100
+T86	Numerical 1000 1004	nine
+T87	Modifier 1005 1012	primary
+T88	Measure-Type 1029 1033	area
+T89	Size 1037 1041	1mm2
+T90	Action 1043 1048	Count
+E18	Action:T90 Acts-on:T91 Site:T101
+T91	Reagent 1053 1059	cells 
+T92	Numerical 1066 1067	4
+T93	Modifier 1068 1073	large
+T94	Modifier 1082 1090	commonly
+T95	Action 1091 1095	used
+E19	Action:T95 Using:T96 Acts-on:T101
+T96	Method 1100 1117	WBC cell counting
+R31	Mod-Link Arg1:E19 Arg2:T94	
+T97	Location 906 913	squares
+R32	Mod-Link Arg1:T97 Arg2:T78	
+R33	Measure Arg1:T97 Arg2:T77	
+T98	Location 920 926	square
+R34	Mod-Link Arg1:T98 Arg2:T79	
+R35	Measure Arg1:T98 Arg2:T81	
+T99	Location 975 982	squares
+T100	Location 1013 1020	squares
+R36	Mod-Link Arg1:T100 Arg2:T87	
+R37	Measure Arg1:T100 Arg2:T86	
+T101	Location 1074 1081	squares
+R38	Mod-Link Arg1:T101 Arg2:T93	
+R39	Measure Arg1:T101 Arg2:T92	
+T102	Numerical 1125 1126	4
+T103	Modifier 1127 1132	large
+T104	Modifier 1133 1139	corner
+T105	Location 1140 1147	squares
+T107	Numerical 1156 1158	16
+T108	Modifier 1159 1166	smaller
+T109	Modifier 1167 1176	secondary
+T110	Location 1177 1184	squares
+T111	Modifier 1186 1190	each
+T112	Measure-Type 1199 1203	area
+T113	Size 1207 1215	0.04 mm2
+R40	Mod-Link Arg1:T105 Arg2:T104	
+R41	Mod-Link Arg1:T105 Arg2:T103	
+R42	Measure Arg1:T105 Arg2:T102	
+R43	Mod-Link Arg1:T110 Arg2:T109	
+R44	Mod-Link Arg1:T110 Arg2:T108	
+R45	Measure Arg1:T110 Arg2:T107	
+R46	Measure Arg1:T110 Arg2:T113	
+R47	Mod-Link Arg1:T110 Arg2:T111	
+T114	Action 1217 1226	Calculate
+E21	Action:T114 Measure-Type-Link:T115
+T115	Measure-Type 1231 1259	number of cells counted / µL
+T116	Modifier 1264 1269	total
+T117	Numerical 1281 1282	4
+T118	Numerical 1291 1293	16
+T119	Measure-Type 1304 1314	cells / ml
+T120	Numerical 1317 1320	104
+T121	Numerical 1324 1325	4
+T122	Location 1326 1333	squares
+T123	Numerical 1339 1342	one
+T124	Device 1343 1357	haemocytometer
+T125	Location 1358 1362	grid
+R48	Meronym Arg1:T125 Arg2:T124	
+R49	Measure Arg1:T125 Arg2:T123	
+T126	Action 1364 1370	Divide
+E22	Action:T126 
+T127	Numerical 1385 1386	.
+R50	Setting Arg1:E22 Arg2:T127	
+R51	Measure Arg1:T122 Arg2:T121	
+T128	Action 1392 1400	multiply
+E23	Action:T128 
+T129	Numerical 1404 1405	2
+T130	Action 1409 1415	adjust
+E24	Action:T130 
+T131	Concentration 1424 1427	1:2
+T132	Method 1428 1436	dilution
+T133	Reagent 1448 1453	fixer
+R52	Setting Arg1:E23 Arg2:T129	
+T134	Modifier 1455 1462	Average
+T135	Measure-Type 1463 1478	number of cells
+T136	Numerical 1482 1485	one
+T137	Modifier 1486 1491	large
+T138	Location 1492 1498	square
+T139	Numerical 1520 1523	104
+T140	Numerical 1551 1552	2
+T141	Concentration 1554 1557	1:1
+T142	Method 1558 1566	dilution
+T143	Reagent 1572 1583	trypan blue
+T144	Numerical 1584 1588	104 
+R53	Mod-Link Arg1:T138 Arg2:T137	
+R54	Measure Arg1:T138 Arg2:T136	
+T145	Action 1609 1614	Focus
+E25	Action:T145 Acts-on:T147
+T146	Modifier 1622 1628	middle
+T147	Location 1629 1635	square
+T149	Numerical 1648 1650	16
+T150	Location 1651 1658	squares
+T152	Numerical 1678 1680	25
+T153	Modifier 1681 1686	small
+T154	Location 1687 1694	squares
+R55	Mod-Link Arg1:T154 Arg2:T153	
+R56	Measure Arg1:T154 Arg2:T152	
+R57	Measure Arg1:T150 Arg2:T149	
+R58	Mod-Link Arg1:T147 Arg2:T146	
+T155	Action 1696 1701	Count
+E28	Action:T155 Acts-on:T158 Site:T161
+T156	Modifier 1702 1705	all
+T157	Modifier 1710 1714	live
+T158	Reagent 1715 1720	cells
+T159	Modifier 1721 1728	present
+T160	Modifier 1736 1742	middle
+T161	Location 1743 1749	square
+R59	Mod-Link Arg1:T158 Arg2:T156	
+R60	Mod-Link Arg1:T158 Arg2:T157	
+R61	Mod-Link Arg1:T158 Arg2:T159	
+R62	Mod-Link Arg1:T161 Arg2:T160	
+R63	Using Arg1:T1 Arg2:T4	
+R64	Using Arg1:T1 Arg2:T2	
+R65	Meronym Arg1:T3 Arg2:T2	
+T162	Device 186 192	finger
+R3	Mod-Link Arg1:T162 Arg2:T15	
+R66	Meronym Arg1:T14 Arg2:T162	
+R67	Acts-on Arg1:E5 Arg2:T27	
+T163	Measure-Type 842 851	objective
+R68	Of-Type Arg1:T73 Arg2:T163	
+R69	Meronym Arg1:T97 Arg2:T75	
+R70	Of-Type Arg1:T81 Arg2:T80	
+R71	Of-Type Arg1:T89 Arg2:T88	
+R72	Meronym Arg1:T110 Arg2:T105	
+R73	Of-Type Arg1:T113 Arg2:T112	
+T76	Measure-Type 1270 1275	count
+T106	Location 1294 1300	corner
+R74	Measure Arg1:T106 Arg2:T118	
+T164	Location 1283 1287	sets
+R75	Measure Arg1:T164 Arg2:T117	
+R76	Mod-Link Arg1:T76 Arg2:T116	
+T165	Measure-Type 1375 1380	count
+R77	Acts-on Arg1:E22 Arg2:T165	
+R78	Setting Arg1:T132 Arg2:T131	
+R79	Mod-Link Arg1:T135 Arg2:T134	
+T166	Measure-Type 1501 1516	dilution factor
+T167	Measure-Type 1524 1539	dilution factor
+R80	Of-Type Arg1:T140 Arg2:T167	
+R81	Setting Arg1:T142 Arg2:T141	
+R82	Using Arg1:T142 Arg2:T143	
+T168	Measure-Type 1590 1607	conversion factor
+R83	Of-Type Arg1:T144 Arg2:T168	
+R84	Meronym Arg1:T150 Arg2:T147	
+R85	Meronym Arg1:T154 Arg2:T150	
+T148	Measure-Type 1754 1760	volume
+T151	Numerical 1764 1767	one
+T169	Modifier 1768 1773	large
+T170	Modifier 1774 1780	corner
+T171	Location 1781 1787	square
+T172	Size 1788 1799	1mm2x 0.1mm
+R86	Measure Arg1:T171 Arg2:T172	
+R87	Measure Arg1:T171 Arg2:T151	
+R88	Mod-Link Arg1:T171 Arg2:T169	
+R89	Mod-Link Arg1:T171 Arg2:T170	
+R90	Of-Type Arg1:T172 Arg2:T148	
+T173	Measure-Type 1801 1828	No. of Viable Cells Counted
+T174	Measure-Type 1831 1850	Total Cells Counted
+T175	Modifier 1852 1858	viable
+T176	Modifier 1863 1867	dead
+T177	Numerical 1871 1874	100
+T178	Measure-Type 1877 1891	% viable cells

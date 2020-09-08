@@ -1,0 +1,364 @@
+T1	Method 20 42	Western Blot Detection
+T2	Reagent 44 67	nitrocellulose membrane
+T3	Modifier 0 13	Near-Infrared
+T4	Modifier 15 18	NIR
+R1	Or Arg1:T4 Arg2:T3	
+T5	Method 75 92	membrane transfer
+T6	Modifier 69 74	After
+T7	Action 106 113	removed
+E1	Action:T7 Acts-on:T8 Site:T9
+T8	Reagent 118 126	membrane
+T9	Location 136 150	transfer stack
+T10	Reagent 162 170	membrane
+T11	Action 174 181	air dry
+E2	Action:T11 Acts-on:T10
+T12	Time 200 206	1 hour
+T14	Temperature 210 226	room temperature
+T16	Action 188 193	takes
+E3	Action:T16 
+R4	Setting Arg1:E3 Arg2:T12	
+R5	Setting Arg1:E3 Arg2:T14	
+T13	Modifier 257 262	After
+T17	Action 272 281	air dried
+E4	Action:T17 Acts-on:T18
+T18	Reagent 287 295	membrane
+R2	Mod-Link Arg1:E4 Arg2:T13	
+T19	Action 297 300	wet
+E5	Action:T19 Acts-on:T20 Using:T22
+T20	Mention 301 303	it
+R3	Coreference-Link Arg1:T20 Arg2:T18	
+T21	Concentration 307 309	1X
+T22	Reagent 310 313	PBS
+T23	Reagent 317 320	TBS
+R7	Or Arg1:T22 Arg2:T23	
+R8	Measure Arg1:T22 Arg2:T21	
+T24	Time 325 334	2 minutes
+T25	Modifier 339 359	until fully hydrated
+T26	Modifier 371 382	appropriate
+T27	Reagent 383 396	buffer system
+T28	Action 399 404	Place
+E6	Action:T28 Acts-on:T29 Site:T30
+T29	Reagent 405 413	membrane
+T30	Location 417 431	incubation box
+T32	Reagent 446 454	membrane
+T33	Reagent 458 481	Odyssey Blocking Buffer
+T34	Reagent 483 486	PBS
+T35	Reagent 490 493	TBS
+R11	Or Arg1:T35 Arg2:T34	
+T36	Time 499 505	1 hour
+T37	Modifier 511 517	gentle
+T38	Method 518 525	shaking
+T40	Modifier 542 552	sufficient
+T41	Reagent 553 568	blocking buffer
+T42	Action 572 577	cover
+E9	Action:T42 Using:T41 Acts-on:T39
+R14	Mod-Link Arg1:T41 Arg2:T40	
+T39	Reagent 582 590	membrane
+T43	Modifier 594 601	minimum
+T44	Generic-Measure 605 615	0.4 mL/cm2
+R15	Measure Arg1:T41 Arg2:T44	
+R16	Mod-Link Arg1:T44 Arg2:T43	
+T46	Reagent 631 655	Primary antibody diluent
+T47	Reagent 657 680	Odyssey Blocking Buffer
+T48	Reagent 682 685	PBS
+T49	Reagent 689 692	TBS
+T50	Concentration 696 700	0.2%
+T51	Reagent 701 710	Tween® 20
+T52	Modifier 712 718	final 
+T53	Measure-Type 718 731	concentration
+R18	Measure Arg1:T51 Arg2:T50	
+R19	Or Arg1:T49 Arg2:T48	
+T55	Reagent 741 757	primary antibody
+T56	Reagent 761 784	Odyssey Blocking Buffer
+T57	Concentration 787 791	0.2%
+T58	Reagent 792 800	Tween 20
+T59	Method 846 871	Western blot applications
+T61	Method 833 841	dilution
+R22	Measure Arg1:T58 Arg2:T57	
+T62	Method 873 882	Dilutions
+T65	Generic-Measure 904 919	1:200 - 1:5,000
+T67	Modifier 988 998	completely
+T68	Action 999 1004	cover
+E11	Action:T68 Acts-on:T71 Using:T70
+R26	Mod-Link Arg1:E11 Arg2:T67	
+T69	Modifier 960 966	enough
+T70	Reagent 967 984	antibody solution
+T71	Reagent 1009 1017	membrane
+R27	Mod-Link Arg1:T70 Arg2:T69	
+T72	Action 1019 1027	Incubate
+E12	Action:T72 Acts-on:T73 Site:T75 Using2:T79
+T73	Reagent 1028 1032	blot
+T74	Modifier 1036 1043	diluted
+T75	Reagent 1044 1060	primary antibody
+T76	Time 1065 1078	1 to 4 hours*
+T77	Temperature 1082 1098	room temperature
+T78	Modifier 1104 1110	gentle
+T79	Method 1111 1118	shaking
+T80	Time 1123 1132	overnight
+T81	Temperature 1136 1140	4 °C
+R28	Or Arg1:T76 Arg2:T80	
+R29	Or Arg1:T77 Arg2:T81	
+R30	Mod-Link Arg1:T75 Arg2:T74	
+R31	Setting Arg1:E12 Arg2:T76	
+R32	Setting Arg1:E12 Arg2:T77	
+T83	Modifier 1179 1186	in full
+T84	Action 1212 1216	stop
+E14	Action:T84 
+T85	Modifier 1217 1222	until
+T86	Time 1223 1240	the following day
+R34	Mod-Link Arg1:T86 Arg2:T85	
+R35	Setting Arg1:E14 Arg2:T86	
+T87	Method 1149 1158	procedure
+T88	Action 1242 1250	Incubate
+E15	Action:T88 Acts-on:T89 Site:T90 Using2:T94
+T89	Reagent 1255 1259	blot
+T90	Reagent 1263 1279	primary antibody
+T91	Time 1280 1289	overnight
+T92	Temperature 1293 1297	4 °C
+T93	Modifier 1303 1309	gentle
+T94	Method 1310 1317	shaking
+T95	Action 1323 1329	resume
+E16	Action:T95 Acts-on:T96
+T96	Method 1334 1342	protocol
+T97	Time 1347 1355	next day
+R36	Setting Arg1:E16 Arg2:T97	
+R37	Setting Arg1:E15 Arg2:T91	
+R38	Setting Arg1:E15 Arg2:T92	
+T98	Action 1357 1365	Pour off
+E17	Action:T98 Acts-on:T99
+T99	Reagent 1366 1391	primary antibody solution
+T100	Action 1394 1398	wash
+E18	Action:T100 
+T101	Action 1405 1410	Rinse
+E19	Action:T101 Acts-on:T102 Using:T104
+T102	Reagent 1411 1419	membrane
+T103	Modifier 1425 1436	appropriate
+T104	Reagent 1437 1443	buffer
+T105	Concentration 1446 1448	1X
+T106	Reagent 1449 1454	TBS-T
+T107	Concentration 1456 1460	0.1%
+T108	Reagent 1461 1470	Tween® 20
+T109	Concentration 1475 1477	1X
+T110	Reagent 1478 1483	PBS-T
+T111	Concentration 1485 1489	0.1%
+T112	Reagent 1490 1498	Tween 20
+R39	Measure Arg1:T112 Arg2:T111	
+R41	Measure Arg1:T110 Arg2:T109	
+R42	Measure Arg1:T108 Arg2:T107	
+R44	Measure Arg1:T106 Arg2:T105	
+R45	Or Arg1:T106 Arg2:T110	
+R46	Mod-Link Arg1:T104 Arg2:T103	
+T113	Action 1501 1506	Cover
+E20	Action:T113 Acts-on:T114 Using:T116
+T114	Reagent 1507 1511	blot
+T115	Concentration 1517 1519	1X
+T116	Reagent 1520 1525	TBS-T
+T117	Concentration 1527 1531	0.1%
+T118	Reagent 1532 1540	Tween 20
+T119	Concentration 1545 1547	1X
+T120	Reagent 1548 1553	PBS-T
+T121	Concentration 1555 1559	0.1%
+T122	Reagent 1560 1568	Tween 20
+R48	Measure Arg1:T122 Arg2:T121	
+R49	Measure Arg1:T120 Arg2:T119	
+R51	Measure Arg1:T118 Arg2:T117	
+R53	Measure Arg1:T116 Arg2:T115	
+R54	Or Arg1:T116 Arg2:T120	
+T123	Action 1571 1576	Shake
+E21	Action:T123 Site:T125
+T124	Modifier 1577 1587	vigorously
+T125	Device 1591 1606	platform shaker
+T126	Temperature 1610 1626	room temperature
+T127	Time 1631 1640	5 minutes
+R55	Mod-Link Arg1:E21 Arg2:T124	
+R56	Setting Arg1:E21 Arg2:T126	
+R57	Setting Arg1:E21 Arg2:T127	
+T128	Action 1642 1650	Pour off
+E22	Action:T128 Acts-on:T129
+T129	Reagent 1651 1664	wash solution
+T130	Action 1667 1671	wash
+E23	Action:T130 
+T131	Action 1678 1682	wash
+E24	Action:T131 
+T132	Action 1690 1694	wash
+E25	Action:T132 
+T133	Reagent 1701 1727	Secondary antibody diluent
+T134	Reagent 1734 1749	blocking buffer
+T135	Action 1751 1754	add
+E26	Action:T135 Acts-on:T136 Site:T134
+T136	Reagent 1755 1763	Tween 20
+T137	Modifier 1769 1774	final
+T138	Concentration 1792 1796	0.2%
+R59	Setting Arg1:E26 Arg2:T138	
+T139	Action 1805 1808	add
+E27	Action:T139 Acts-on:T140
+T140	Reagent 1809 1812	SDS
+T141	Action 1814 1821	Protect
+E28	Action:T141 Acts-on:T142
+T142	Reagent 1822 1830	membrane
+T144	Method 1849 1859	incubation
+T145	Action 1861 1869	Incubate
+E29	Action:T145 Acts-on:T146 Site:T148 Using2:T152
+T146	Reagent 1870 1874	blot
+T147	Modifier 1878 1885	diluted
+T148	Reagent 1886 1904	secondary antibody
+T149	Time 1909 1917	one hour
+T150	Temperature 1921 1937	room temperature
+T151	Modifier 1943 1949	gentle
+T152	Method 1950 1957	shaking
+T153	Action 1959 1966	Protect
+E30	Action:T153 Acts-on:T154
+T154	Reagent 1967 1975	membrane
+T156	Action 2002 2010	Pour off
+E31	Action:T156 Acts-on:T158
+R63	Mod-Link Arg1:T148 Arg2:T147	
+R64	Setting Arg1:E29 Arg2:T149	
+R65	Setting Arg1:E29 Arg2:T150	
+T157	Modifier 2011 2020	secondary
+T158	Reagent 2021 2038	antibody solution
+R66	Mod-Link Arg1:T158 Arg2:T157	
+T159	Action 2041 2045	wash
+E32	Action:T159 
+T160	Action 2051 2056	Rinse
+E33	Action:T160 Acts-on:T161 Using:T163
+T161	Reagent 2057 2065	membrane
+T162	Concentration 2071 2073	1X
+T163	Reagent 2074 2077	TBS
+T164	Concentration 2081 2083	1X
+T165	Reagent 2084 2087	PBS
+T166	Modifier 2089 2103	as appropriate
+R67	Mod-Link Arg1:E33 Arg2:T166	
+R68	Measure Arg1:T163 Arg2:T162	
+R69	Measure Arg1:T165 Arg2:T164	
+R70	Or Arg1:T163 Arg2:T165	
+T167	Action 2108 2114	remove
+E34	Action:T167 Acts-on:T169
+T168	Modifier 2115 2123	residual
+T169	Reagent 2124 2133	Tween 20.
+R71	Mod-Link Arg1:T169 Arg2:T168	
+T170	Reagent 2138 2150	Western blot
+T171	Modifier 2158 2172	ready to image
+R72	Mod-Link Arg1:T170 Arg2:T171	
+T172	Reagent 2178 2186	membrane
+T173	Action 2194 2200	stored
+E35	Action:T173 Acts-on:T172 Site:T175
+T174	Concentration 2204 2206	1X
+T175	Reagent 2207 2210	TBS
+T176	Concentration 2214 2216	1X
+T177	Reagent 2217 2220	PBS
+R73	Measure Arg1:T177 Arg2:T176	
+R74	Measure Arg1:T175 Arg2:T174	
+T178	Modifier 2225 2230	up to
+T179	Time 2231 2239	48 hours
+T181	Temperature 2255 2259	4 °C
+R75	Or Arg1:T175 Arg2:T177	
+R76	Mod-Link Arg1:T179 Arg2:T178	
+R77	Setting Arg1:E35 Arg2:T179	
+R79	Setting Arg1:E35 Arg2:T181	
+T182	Reagent 2268 2272	blot
+T183	Action 2316 2323	air-dry
+E36	Action:T183 Acts-on:T184
+T184	Reagent 2328 2332	blot
+T185	Action 2337 2342	store
+E37	Action:T185 Acts-on:T184
+T187	Action 2276 2284	prepared
+E38	Action:T187 Acts-on:T182
+T188	Modifier 2285 2294	more than
+T189	Time 2295 2303	48 hours
+T190	Modifier 2307 2314	advance
+R80	Mod-Link Arg1:T189 Arg2:T188	
+R81	Mod-Link Arg1:E38 Arg2:T190	
+R82	Setting Arg1:E38 Arg2:T189	
+T191	Temperature 2358 2374	room temperature
+T192	Modifier 2375 2395	until ready to image
+R83	Setting Arg1:E37 Arg2:T191	
+R85	Mod-Link Arg1:E37 Arg2:T192	
+T193	Modifier 2397 2402	Dried
+T194	Reagent 2403 2408	blots
+T196	Action 2433 2439	imaged
+E39	Action:T196 Acts-on:T194
+T197	Modifier 2440 2445	up to
+T198	Time 2446 2453	3 years
+R87	Mod-Link Arg1:T198 Arg2:T197	
+R88	Mod-Link Arg1:T194 Arg2:T193	
+T200	Measure-Type 2487 2493	signal
+T201	Reagent 2497 2505	membrane
+T202	Modifier 2509 2519	too strong
+T203	Action 2533 2539	adjust
+E40	Action:T203 Acts-on:T204
+T204	Measure-Type 2544 2562	imaging parameters
+T205	Action 2566 2574	optimize
+E41	Action:T205 
+T206	Method 2586 2601	Odyssey Classic
+T207	Method 2684 2694	Odyssey Fc
+T208	Device 2727 2738	Odyssey CLx
+T210	Reagent 2616 2624	membrane
+T213	Measure-Type 2703 2725	image acquisition time
+T214	Method 2748 2765	AutoScan function
+T215	Action 2769 2776	improve
+E44	Action:T215 Using:T214
+T216	Measure-Type 2781 2794	dynamic range
+R6	Mod-Link Arg1:T27 Arg2:T26	
+T15	Action 361 366	using
+E45	Action:T15 
+R10	Acts-on Arg1:E45 Arg2:T27	
+R90	Or Arg1:T25 Arg2:T24	
+R91	Using Arg1:E5 Arg2:T23	
+R9	Setting Arg1:E5 Arg2:T24	
+R92	Mod-Link Arg1:T1 Arg2:T3	
+T217	Action 538 541	use
+E46	Action:T217 
+R93	Acts-on Arg1:E46 Arg2:T41	
+R17	Meronym Arg1:T47 Arg2:T46	
+R94	Meronym Arg1:T51 Arg2:T46	
+R20	Mod-Link Arg1:T53 Arg2:T52	
+R12	Mod-Link Arg1:T38 Arg2:T37	
+T45	Action 734 740	Dilute
+E8	Action:T45 
+R95	Acts-on Arg1:E8 Arg2:T55	
+R96	Site Arg1:E8 Arg2:T56	
+R97	Site Arg1:E8 Arg2:T58	
+T31	Action 436 441	block
+E7	Action:T31 
+R13	Acts-on Arg1:E7 Arg2:T32	
+R21	Site Arg1:E7 Arg2:T33	
+R98	Setting Arg1:E7 Arg2:T36	
+R99	Using Arg1:E7 Arg2:T38	
+R23	Setting Arg1:T62 Arg2:T65	
+T54	Reagent 938 954	primary antibody
+T60	Action 956 959	Use
+E10	Action:T60 
+R24	Acts-on Arg1:E10 Arg2:T70	
+T63	Action 1169 1178	completed
+E13	Action:T63 
+R25	Mod-Link Arg1:E13 Arg2:T83	
+T64	Modifier 1159 1168	cannot be
+R33	Mod-Link Arg1:E13 Arg2:T64	
+R100	Acts-on Arg1:E13 Arg2:T87	
+R47	Meronym Arg1:T106 Arg2:T104	
+R101	Meronym Arg1:T110 Arg2:T104	
+T66	Measure-Type 1775 1788	concentration
+R40	Of-Type Arg1:T138 Arg2:T66	
+R43	Mod-Link Arg1:T66 Arg2:T137	
+T82	Modifier 1798 1804	Do not
+R50	Mod-Link Arg1:E27 Arg2:T82	
+R52	Mod-Link Arg1:T152 Arg2:T151	
+T143	Method 1994 2000	washes
+R58	Using Arg1:E33 Arg2:T165	
+R60	Site Arg1:E35 Arg2:T177	
+R61	Setting Arg1:E39 Arg2:T198	
+T155	Modifier 2454 2459	later
+R62	Mod-Link Arg1:T198 Arg2:T155	
+T180	Measure-Type 2476 2482	signal
+T186	Modifier 2523 2531	too weak
+T195	Measure-Type 2646 2668	scan intensity setting
+T199	Modifier 2630 2635	lower
+T209	Modifier 2639 2645	higher
+R78	Or Arg1:T209 Arg2:T199	
+T211	Action 2603 2611	Re-image
+E42	Action:T211 
+R84	Acts-on Arg1:E42 Arg2:T210	
+T212	Action 2696 2702	Adjust
+E43	Action:T212 
+R86	Acts-on Arg1:E43 Arg2:T213	
+R89	Acts-on Arg1:E44 Arg2:T216	

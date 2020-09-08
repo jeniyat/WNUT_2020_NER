@@ -1,0 +1,84 @@
+T1	Action 35 42	Amplify
+E1	Action:T1 Acts-on:T2
+T2	Reagent 43 50	samples
+T3	Amount 54 64	triplicate
+T4	Action 140 144	Pool
+E2	Action:T4 
+T5	Action 660 667	Measure
+E3	Action:T5 Measure-Type-Link:T6 Measure-Type-Link2:T7 Acts-on:T18
+T6	Measure-Type 668 681	concentration
+T9	Modifier 705 711	final 
+T10	Action 562 567	Clean
+E4	Action:T10 Acts-on:T34 Using:T15
+T11	Action 739 743	Send
+E5	Action:T11 Acts-on2:T14
+T12	Amount 747 754	aliquot
+T13	Method 759 769	sequencing
+T14	Reagent 781 799	sequencing primers
+T15	Device 588 621	MoBio UltraClean PCR Clean-Up Kit
+T16	Action 363 370	Combine
+E6	Action:T16 Acts-on:T22 Site:T27
+T17	Reagent 494 498	pool
+T18	Reagent 711 715	pool
+T19	Action 266 274	Quantify
+E7	Action:T19 Acts-on:T20 Using:T21
+T20	Reagent 275 284	amplicons
+T21	Device 290 324	Quant-iT PicoGreen dsDNA Assay Kit
+T22	Reagent 390 398	amplicon
+T23	Reagent 409 415	sample
+T24	Amount 417 423	240 ng
+R1	Measure Arg1:T23 Arg2:T24	
+T25	Numerical 432 438	single
+T26	Modifier 440 447	sterile
+T27	Location 448 452	tube
+R2	Mod-Link Arg1:T27 Arg2:T26	
+R3	Measure Arg1:T27 Arg2:T25	
+R4	Mod-Link Arg1:T18 Arg2:T9	
+T28	Action 216 219	Run
+E8	Action:T28 Acts-on:T29 Site:T31
+T29	Reagent 220 229	amplicons
+T30	Reagent 240 246	sample
+T31	Location 253 264	agarose gel
+T32	Modifier 507 519	gel-isolated
+T33	Reagent 553 560	samples
+T34	Reagent 568 581	amplicon pool
+T35	Numerical 193 199	single
+T36	Measure-Type 200 206	volume
+T37	Amount 208 213	75 µL
+T38	Reagent 179 185	sample
+T39	Reagent 79 85	sample
+T40	Amount 119 124	25-µL
+T41	Method 125 138	PCR reactions
+T42	Numerical 107 108	3
+R5	Measure Arg1:T38 Arg2:T37	
+T43	Modifier 488 493	final
+R6	Mod-Link Arg1:T17 Arg2:T43	
+T44	Method 156 169	PCR reactions
+T45	Amount 145 155	triplicate
+T46	Action 94 103	amplified
+E9	Action:T46 Acts-on:T39
+T47	Reagent 0 7	EMP 16S
+T48	Method 8 34	Illumina Amplicon Protocol
+R7	Setting Arg1:E1 Arg2:T3	
+R8	Setting Arg1:E9 Arg2:T42	
+T49	Action 109 118	replicate
+E10	Action:T49 Using:T41
+R10	Setting Arg1:E2 Arg2:T45	
+T50	Modifier 174 178	each
+R11	Mod-Link Arg1:T38 Arg2:T50	
+R12	Of-Type Arg1:T35 Arg2:T36	
+T51	Modifier 235 239	each
+R13	Mod-Link Arg1:T30 Arg2:T51	
+R14	Mod-Link Arg1:T17 Arg2:T32	
+T52	Modifier 541 552	low-biomass
+R15	Mod-Link Arg1:T33 Arg2:T52	
+T7	Measure-Type 686 701	A260/A280 ratio
+T8	Modifier 730 737	cleaned
+R16	Mod-Link Arg1:T18 Arg2:T8	
+R17	Setting Arg1:E5 Arg2:T12	
+T53	Modifier 74 78	each
+R18	Mod-Link Arg1:T39 Arg2:T53	
+R9	Setting Arg1:T41 Arg2:T40	
+R19	Acts-on Arg1:E2 Arg2:T44	
+T54	Modifier 404 408	each
+R20	Mod-Link Arg1:T23 Arg2:T54	

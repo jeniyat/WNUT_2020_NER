@@ -1,0 +1,352 @@
+T1	Method 0 34	NeuN Immunohistochemistry Protocol
+T2	Action 38 44	remove
+E1	Action:T2 Acts-on:T4
+T3	Modifier 49 55	excess
+T4	Reagent 56 81	paraformaldehyde fixative
+T5	Action 83 87	wash
+E2	Action:T5 Using:T7
+T6	Concentration 93 98	0,1 M
+T7	Reagent 99 102	PBS
+T8	Temperature 146 162	room temperature
+T9	Time 167 172	3 min
+T10	Modifier 116 129	free-floating
+R1	Mod-Link Arg1:T4 Arg2:T3	
+R2	Measure Arg1:T7 Arg2:T6	
+R3	Setting Arg1:E2 Arg2:T8	
+R4	Setting Arg1:E2 Arg2:T9	
+T11	Method 133 142	agitation
+T12	Numerical 175 178	1/3
+T13	Numerical 182 185	2/3
+T14	Numerical 189 192	3/3
+T15	Action 195 203	Incubate
+E3	Action:T15 Using:T17 Site:T20
+T16	Concentration 209 212	12%
+T17	Reagent 213 223	Boric acid
+T18	pH 225 232	pH =9,0
+T19	Temperature 234 238	70°C
+T20	Location 245 255	water bath
+T21	Time 260 266	1 hour
+R5	Measure Arg1:T17 Arg2:T16	
+R6	Setting Arg1:E3 Arg2:T21	
+R7	Measure Arg1:T17 Arg2:T18	
+R8	Setting Arg1:E3 Arg2:T19	
+T22	Action 268 274	Remove
+E4	Action:T22 Acts-on:T23 Site:T24
+T23	Reagent 279 289	recipients
+T24	Location 295 305	water bath
+T25	Action 310 314	wait
+E5	Action:T25 Acts-on:T26
+T26	Mention 321 323	it
+T27	Temperature 330 346	room temperature
+R9	Setting Arg1:E5 Arg2:T27	
+R10	Coreference-Link Arg1:T26 Arg2:T23	
+T28	Action 348 352	Wash
+E6	Action:T28 Using:T30
+T29	Concentration 371 375	0,1%
+T30	Reagent 376 381	PBS/T
+T31	Time 386 395	5 minutes
+T32	Time 433 442	2 minutes
+T33	Method 444 451	shaking
+T34	Concentration 420 424	0,1M
+T35	Reagent 425 428	PBS
+T36	Action 397 401	Wash
+E7	Action:T36 Using:T35 Using2:T33
+R11	Measure Arg1:T30 Arg2:T29	
+R12	Setting Arg1:E6 Arg2:T31	
+R13	Measure Arg1:T35 Arg2:T34	
+R14	Setting Arg1:E7 Arg2:T32	
+T37	Action 454 462	Incubate
+E8	Action:T37 Using:T38 Using2:T44
+T38	Reagent 468 483	blocking buffer
+T39	Reagent 485 527	Normal Goat Serum Blocking Solution S-1000
+T40	Concentration 528 531	10%
+T41	Concentration 535 539	0,3%
+T42	Reagent 540 544	PBST
+R15	Measure Arg1:T42 Arg2:T41	
+R16	Measure Arg1:T39 Arg2:T40	
+T43	Time 551 559	12 hours
+T44	Method 563 579	gentle agitation
+T45	Method 583 596	refrigeration
+T46	Temperature 597 600	4°C
+R17	Setting Arg1:E8 Arg2:T43	
+R18	Using Arg1:E8 Arg2:T45	
+R19	Setting Arg1:E8 Arg2:T46	
+T47	Action 602 608	Remove
+E9	Action:T47 Acts-on:T48
+T48	Reagent 613 618	serum
+T49	Action 623 631	incubate
+E10	Action:T49 Using:T50
+T50	Reagent 637 655	Anti NeuN Antibody
+T51	Reagent 657 693	MAB377 Anti-NeuN Antibody, clone A60
+R20	Coreference-Link Arg1:T51 Arg2:T50	
+T52	Action 696 703	diluted
+E11	Action:T52 Acts-on:T50 Using:T55 Using2:T54
+T53	Concentration 707 711	0,3%
+T54	Reagent 711 716	PBS/T
+T55	Method 727 736	agitation
+T56	Time 738 747	overnight
+T57	Temperature 751 754	4°C
+R21	Measure Arg1:T54 Arg2:T53	
+R22	Setting Arg1:E11 Arg2:T57	
+R23	Setting Arg1:E11 Arg2:T56	
+T58	Action 756 760	Wash
+E12	Action:T58 Using:T60 Using2:T63
+T59	Concentration 779 783	0,1M
+T60	Reagent 784 789	PBS/T
+T61	Concentration 790 794	0,1%
+T62	Time 799 808	2 minutes
+T63	Method 810 817	shaking
+R24	Measure Arg1:T60 Arg2:T59	
+R25	Measure Arg1:T60 Arg2:T61	
+R26	Setting Arg1:E12 Arg2:T62	
+T64	Action 820 828	Incubate
+E13	Action:T64 Using:T66
+T65	Modifier 834 843	secondary
+T66	Reagent 844 852	antibody
+T67	Reagent 854 895	Biotinylated Goat Anti-Mouse IgG Antibody
+T68	Action 928 935	diluted
+E14	Action:T68 Acts-on:T66 Using:T70
+T69	Concentration 939 943	0,3%
+T70	Reagent 944 949	PBS/T
+T71	Concentration 953 958	1:250
+T72	Time 964 970	1 hour
+T73	Temperature 974 990	room temperature
+R27	Mod-Link Arg1:T66 Arg2:T65	
+R28	Coreference-Link Arg1:T67 Arg2:T66	
+R29	Measure Arg1:T70 Arg2:T69	
+R30	Setting Arg1:E14 Arg2:T71	
+R31	Setting Arg1:E14 Arg2:T72	
+R32	Setting Arg1:E14 Arg2:T73	
+T74	Action 992 1000	Incubate
+E15	Action:T74 Using:T76 Using2:T81
+T75	Concentration 1006 1010	0,3%
+T76	Reagent 1011 1028	hydrogen peroxide
+T77	Action 1030 1037	diluted
+E16	Action:T77 Acts-on:T76 Using:T79
+T78	Concentration 1041 1046	0,1 M
+T79	Reagent 1047 1050	PBS
+T80	Time 1056 1066	15 minutes
+T81	Method 1078 1085	shaking
+T82	Modifier 1072 1077	light
+T83	Modifier 720 726	gentle
+R33	Measure Arg1:T76 Arg2:T75	
+R34	Measure Arg1:T79 Arg2:T78	
+R35	Setting Arg1:E15 Arg2:T80	
+T84	Action 1087 1091	Wash
+E17	Action:T84 Using:T85 Using2:T88
+T85	Reagent 1106 1111	PBS/T
+T86	Concentration 1112 1116	0,1%
+T87	Time 1121 1130	2 minutes
+T88	Method 1132 1139	shaking
+T89	Numerical 1142 1145	1/3
+T90	Numerical 1203 1206	2/3
+T91	Numerical 1264 1267	3/3
+T92	Method 1193 1200	shaking
+T93	Method 1254 1261	shaking
+T94	Time 1182 1191	2 minutes
+T95	Time 1243 1252	2 minutes
+T96	Concentration 1234 1238	0,1%
+T97	Concentration 1173 1177	0,1%
+T98	Reagent 1167 1172	PBS/T
+T99	Reagent 1228 1233	PBS/T
+T100	Action 1148 1152	Wash
+E18	Action:T100 Using:T98 Using2:T92
+T101	Action 1209 1213	Wash
+E19	Action:T101 Using:T99 Using2:T93
+R36	Setting Arg1:E17 Arg2:T87	
+R37	Measure Arg1:T85 Arg2:T86	
+R38	Measure Arg1:T98 Arg2:T97	
+R39	Measure Arg1:T99 Arg2:T96	
+R40	Setting Arg1:E18 Arg2:T94	
+R41	Setting Arg1:E19 Arg2:T95	
+T102	Action 1270 1278	Incubate
+E20	Action:T102 Using:T103
+T103	Reagent 1282 1310	VECTASTAIN® ABC KIT solution
+T104	Time 1315 1321	1 hour
+T105	Modifier 1323 1328	total
+T106	Temperature 1333 1336	4ºC
+T107	Modifier 1342 1347	light
+T108	Method 1348 1355	shaking
+T109	Method 1496 1503	shaking
+T110	Modifier 1490 1495	light
+T111	Time 1410 1420	30 minutes
+R42	Setting Arg1:E20 Arg2:T104	
+R43	Setting Arg1:E20 Arg2:T106	
+R44	Mod-Link Arg1:T104 Arg2:T105	
+T112	Amount 1362 1369	37,5 µl
+T113	Amount 1374 1380	37,5µl
+T114	Amount 1388 1395	1,88 ml
+T115	Concentration 1396 1400	0,3%
+T116	Reagent 1400 1405	PBS/T
+R45	Measure Arg1:T116 Arg2:T115	
+R46	Measure Arg1:T116 Arg2:T114	
+T117	Action 1422 1425	Add
+E21	Action:T117 Acts-on:T120
+T118	Amount 1426 1434	13,12 ml
+T119	Concentration 1435 1439	0,3%
+T120	Reagent 1439 1444	PBS/T
+T121	Action 1449 1457	incubate
+E22	Action:T121 Using:T109
+T122	Time 1462 1477	30 more minutes
+T123	Temperature 1481 1484	4ºC
+R47	Setting Arg1:E22 Arg2:T122	
+R48	Setting Arg1:E22 Arg2:T123	
+R49	Measure Arg1:T120 Arg2:T119	
+R50	Measure Arg1:T120 Arg2:T118	
+T124	Action 1504 1508	Wash
+E23	Action:T124 Using:T126 Using2:T128
+T125	Concentration 1514 1518	0,1%
+T126	Reagent 1519 1525	PBS /T
+T127	Time 1530 1539	5 minutes
+T128	Method 1542 1549	shaking
+R51	Measure Arg1:T126 Arg2:T125	
+R52	Setting Arg1:E23 Arg2:T127	
+T129	Numerical 1553 1556	1/2
+T130	Numerical 1560 1563	2/2
+T131	Modifier 1566 1573	Firstly
+T132	Action 1574 1581	prepare
+E24	Action:T132 Acts-on:T133
+T133	Reagent 1586 1596	Solution A
+T134	Action 1600 1603	mix
+E25	Action:T134 Acts-on:T136 Acts-on2:T140
+T135	Amount 1604 1610	0,006g
+T136	Reagent 1614 1630	Diaminobenzidine
+T137	Reagent 1632 1635	DAB
+T138	Amount 1642 1646	5 ml
+T139	Modifier 1650 1659	distilled
+T140	Reagent 1660 1665	water
+R53	Mod-Link Arg1:T140 Arg2:T139	
+R54	Measure Arg1:T140 Arg2:T138	
+R55	Mod-Link Arg1:E24 Arg2:T131	
+R56	Meronym Arg1:T137 Arg2:T136	
+R57	Measure Arg1:T136 Arg2:T135	
+T141	Modifier 1667 1675	Secondly
+T142	Action 1677 1684	prepare
+E26	Action:T142 Acts-on:T143
+T143	Reagent 1689 1699	Solution B
+T144	Action 1703 1709	mixing
+E27	Action:T144 Acts-on:T146 Acts-on2:T148
+T145	Amount 1710 1716	0,250g
+T146	Reagent 1720 1743	Nickel ammonium sulfate
+T147	Amount 1749 1753	5 ml
+T148	Reagent 1757 1771	Acetate Buffer
+T149	pH 1772 1778	pH 6.0
+R58	Mod-Link Arg1:E26 Arg2:T141	
+R59	Measure Arg1:T146 Arg2:T145	
+R60	Measure Arg1:T148 Arg2:T147	
+R61	Measure Arg1:T148 Arg2:T149	
+T150	Modifier 1780 1787	Thirdly
+T151	Action 1788 1791	mix
+E28	Action:T151 Acts-on:T152
+T152	Reagent 1792 1808	Solution A and B
+T153	Action 1809 1815	adding
+E29	Action:T153 Acts-on:T154 Acts-on2:T157 Site:T152
+T154	Reagent 1816 1833	ammonium chloride
+T155	Amount 1835 1841	0,004g
+T156	Amount 1848 1854	0.020g
+T157	Reagent 1855 1866	α-D-Glucose
+R62	Measure Arg1:T157 Arg2:T156	
+R63	Measure Arg1:T154 Arg2:T155	
+R64	Mod-Link Arg1:E28 Arg2:T150	
+T158	Action 1868 1873	Leave
+E30	Action:T158 Site:T159
+T159	Reagent 1894 1908	mix of A and B
+T160	Time 1913 1922	5 minutes
+R65	Setting Arg1:E30 Arg2:T160	
+T161	Action 1924 1932	Incubate
+E31	Action:T161 Using:T162
+T162	Reagent 1947 1959	solution GND
+T163	Action 1964 1968	wait
+E32	Action:T163 
+T164	Time 1973 1982	3 minutes
+R66	Setting Arg1:E32 Arg2:T164	
+T165	Action 1984 1987	Add
+E33	Action:T165 Acts-on:T167
+T166	Amount 1988 1994	0,007g
+T167	Reagent 1998 2013	Glucose-oxidase
+T168	Modifier 2018 2022	each
+T169	Amount 2023 2026	3ml
+T170	Reagent 2030 2042	GND solution
+T171	Method 2047 2057	revelation
+R67	Measure Arg1:T170 Arg2:T169	
+R68	Mod-Link Arg1:T169 Arg2:T168	
+R69	Measure Arg1:T167 Arg2:T166	
+T172	Action 2059 2063	Stop
+E34	Action:T172 Using:T173
+T173	Method 2064 2074	revelation
+T174	Modifier 2084 2088	goal
+T175	Measure-Type 2089 2097	contrast
+T176	Modifier 2101 2109	achieved
+R70	Mod-Link Arg1:E34 Arg2:T176	
+T177	Action 2111 2114	use
+E35	Action:T177 Acts-on:T179
+T178	Modifier 2117 2125	low gain
+T179	Device 2126 2136	microscope
+R71	Mod-Link Arg1:T179 Arg2:T178	
+T180	Action 2139 2145	Remove
+E36	Action:T180 Acts-on:T181
+T181	Reagent 2150 2171	GDN + Glucose oxidase
+T182	Action 2176 2180	wash
+E37	Action:T182 Using:T184
+T183	Concentration 2200 2204	0,1M
+T184	Reagent 2205 2208	PBS
+T185	Time 2213 2222	2 minutes
+T186	Modifier 2228 2233	light
+T187	Method 2234 2241	shaking
+R72	Measure Arg1:T184 Arg2:T183	
+R73	Setting Arg1:E37 Arg2:T185	
+T188	Action 2243 2248	Mount
+E38	Action:T188 Site:T191
+T189	Modifier 2265 2276	appropriate
+T190	Modifier 2277 2288	gelatinized
+T191	Location 2289 2306	microscope slides
+T192	Action 2311 2314	dry
+E39	Action:T192 
+T193	Temperature 2318 2334	room temperature
+T194	Time 2339 2347	12 hours
+T195	Modifier 2348 2355	or more
+T196	Reagent 2373 2388	mounting medium
+T197	Modifier 2389 2398	of choice
+R74	Mod-Link Arg1:T196 Arg2:T197	
+R75	Mod-Link Arg1:T191 Arg2:T190	
+R76	Mod-Link Arg1:T191 Arg2:T189	
+R77	Setting Arg1:E39 Arg2:T193	
+R78	Setting Arg1:E39 Arg2:T194	
+R79	Mod-Link Arg1:T194 Arg2:T195	
+T198	Action 2400 2409	Dihydrate
+E40	Action:T198 
+T199	Action 2414 2417	add
+E41	Action:T199 Acts-on:T200
+T200	Location 2422 2432	coverslips
+T201	Reagent 107 115	sections
+R80	Mod-Link Arg1:T201 Arg2:T10	
+T202	Reagent 357 365	sections
+R81	Acts-on Arg1:E6 Arg2:T202	
+T203	Reagent 406 414	sections
+R82	Acts-on Arg1:E7 Arg2:T203	
+T204	Reagent 765 773	sections
+R83	Acts-on Arg1:E12 Arg2:T204	
+T205	Reagent 1092 1100	sections
+R84	Acts-on Arg1:E17 Arg2:T205	
+T206	Reagent 1153 1161	sections
+R85	Acts-on Arg1:E18 Arg2:T206	
+T207	Reagent 1214 1222	sections
+R86	Acts-on Arg1:E19 Arg2:T207	
+T208	Reagent 1878 1885	section
+R87	Acts-on Arg1:E30 Arg2:T208	
+T209	Reagent 1933 1941	sections
+R88	Acts-on Arg1:E31 Arg2:T209	
+T210	Reagent 2253 2261	sections
+R89	Acts-on Arg1:E38 Arg2:T210	
+T211	Reagent 2185 2193	sections
+R90	Acts-on Arg1:E37 Arg2:T211	
+R91	Mod-Link Arg1:T81 Arg2:T82	
+R92	Mod-Link Arg1:T108 Arg2:T107	
+R93	Mod-Link Arg1:T109 Arg2:T110	
+T212	Reagent 1370 1371	A
+R94	Measure Arg1:T212 Arg2:T112	
+T213	Reagent 1381 1382	B
+R95	Measure Arg1:T213 Arg2:T113	
+R96	Mod-Link Arg1:T175 Arg2:T174	
+R97	Mod-Link Arg1:T187 Arg2:T186	
+R98	Using Arg1:E37 Arg2:T187	

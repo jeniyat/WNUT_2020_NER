@@ -1,0 +1,86 @@
+T1	Reagent 0 24	Respiratory picornavirus
+T3	Modifier 36 55	conventional nested
+T4	Method 56 62	RT-PCR
+T6	Measure-Type 94 108	amplicon sizes
+T7	Modifier 119 120	~
+T8	Generic-Measure 120 134	380 base pairs
+T9	Reagent 299 314	oligonucleotide
+T10	Modifier 293 298	named
+T11	Reagent 397 409	REACTION MIX
+T12	Action 419 425	set up
+E3	Action:T12 Acts-on:T13
+T13	Reagent 431 445	reaction mixes
+T14	Reagent 496 502	Strips
+T15	Concentration 506 508	8x
+T16	Amount 509 514	0.2ml
+T17	Location 515 520	tubes
+T18	Action 543 549	Freeze
+E4	Action:T18 Site:T20
+T19	Modifier 555 565	frost-free
+T20	Device 566 573	freezer
+T21	Temperature 577 582	-20°C
+T22	Action 596 604	Dispense
+E5	Action:T22 Site:T24
+T23	Amount 605 609	18µL
+T24	Location 620 633	reaction tube
+T25	Reagent 635 649	Total reaction
+T26	Measure-Type 650 656	volume
+T27	Amount 665 669	20µl
+T28	Reagent 675 683	reaction
+T29	Action 693 696	run
+E6	Action:T29 Acts-on:T28 Using:T30
+T30	Device 705 750	SimpliAmp (Applied Biosystems) thermal cycler
+T31	Action 751 759	Transfer
+E7	Action:T31 Acts-on:T33
+T32	Amount 760 763	5µl
+T33	Reagent 767 787	nucleic acid extract
+T34	Modifier 789 798	extracted
+T35	Reagent 799 802	RNA
+T36	Reagent 804 812	controls
+T37	Reagent 816 819	NTC
+T38	Modifier 821 834	nuclease-free
+T39	Reagent 835 840	water
+T40	Modifier 846 855	defrosted
+T41	Location 856 870	reaction tubes
+T42	Action 875 880	cycle
+E8	Action:T42 Acts-on:T41
+T43	Action 881 889	Transfer
+E9	Action:T43 Acts-on:T47
+T44	Amount 890 893	2µl
+T45	Concentration 897 902	1:100
+T46	Modifier 903 914	pre-diluted
+T48	Modifier 937 946	defrosted
+T49	Amount 947 952	0.2ml
+T50	Location 953 967	reaction tubes
+T51	Action 972 977	cycle
+E11	Action:T51 Acts-on:T50
+R1	Mod-Link Arg1:T8 Arg2:T7	
+R2	Mod-Link Arg1:T9 Arg2:T10	
+R3	Measure Arg1:T17 Arg2:T16	
+R4	Measure Arg1:T17 Arg2:T15	
+R5	Mod-Link Arg1:T20 Arg2:T19	
+R6	Setting Arg1:E4 Arg2:T21	
+R7	Setting Arg1:E5 Arg2:T23	
+R8	Measure Arg1:T25 Arg2:T27	
+R9	Measure Arg1:T33 Arg2:T32	
+R10	Mod-Link Arg1:T35 Arg2:T34	
+R11	Or Arg1:T36 Arg2:T37	
+R12	Mod-Link Arg1:T39 Arg2:T38	
+R13	Mod-Link Arg1:T41 Arg2:T40	
+R14	Meronym Arg1:T35 Arg2:T33	
+R15	Meronym Arg1:T36 Arg2:T33	
+T47	Reagent 923 931	amplicon
+R16	Mod-Link Arg1:T47 Arg2:T46	
+R17	Measure Arg1:T47 Arg2:T45	
+R18	Measure Arg1:T47 Arg2:T44	
+R19	Mod-Link Arg1:T50 Arg2:T48	
+R20	Measure Arg1:T50 Arg2:T49	
+T2	Method 25 35	genotyping
+R21	Acts-on Arg1:T2 Arg2:T1	
+T5	Method 65 82	Wisdom VP42 assay
+R22	Mod-Link Arg1:T4 Arg2:T3	
+R23	Coreference-Link Arg1:T5 Arg2:T4	
+T52	Modifier 85 93	Expected
+R24	Mod-Link Arg1:T6 Arg2:T52	
+T53	Modifier 583 595	until needed
+R25	Mod-Link Arg1:E4 Arg2:T53	

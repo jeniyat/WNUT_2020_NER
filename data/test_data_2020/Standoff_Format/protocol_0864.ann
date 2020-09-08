@@ -1,0 +1,273 @@
+T1	Method 0 25	Cell Culture Transfection
+T2	Reagent 29 35	HEK293
+T4	Time 59 66	One day
+T5	Modifier 67 75	prior to
+R1	Mod-Link Arg1:T4 Arg2:T5	
+T6	Action 90 95	plate
+E1	Action:T6 Acts-on:T7 Site:T9
+T7	Reagent 96 101	cells
+T8	Concentration 124 144	500,000 cells per mL
+T9	Location 150 163	12-well plate
+R2	Setting Arg1:E1 Arg2:T8	
+R3	Setting Arg1:E1 Arg2:T4	
+T10	Action 165 171	Modify
+E2	Action:T10 
+T11	Method 176 188	transfection
+T12	Action 215 224	calculate
+E3	Action:T12 Acts-on:T14
+T14	Reagent 234 238	cDNA
+T15	Modifier 248 254	needed
+R4	Mod-Link Arg1:T14 Arg2:T15	
+T17	Action 297 304	include
+E4	Action:T17 Acts-on:T18
+T18	Reagent 305 322	negative controls
+T19	Measure-Type 331 343	total amount
+T20	Reagent 354 359	siRNA
+T22	Action 375 384	Sterilize
+E5	Action:T22 Acts-on:T23 Using:T25
+T23	Location 389 406	biosafety cabinet
+T24	Concentration 412 415	10%
+T25	Reagent 416 422	bleach
+T26	Time 427 437	20 minutes
+R7	Measure Arg1:T25 Arg2:T24	
+R8	Setting Arg1:E5 Arg2:T26	
+T27	Action 439 449	Spray down
+E6	Action:T27 Acts-on:T28 Using:T30
+T28	Location 454 471	biosafety cabinet
+T29	Concentration 477 480	70%
+T30	Reagent 481 488	ethanol
+T31	Action 493 496	use
+E7	Action:T31 Using:T32 Acts-on:T28
+T32	Reagent 497 505	UV light
+T33	Time 510 520	15 minutes
+T34	Modifier 526 535	secondary
+R9	Measure Arg1:T30 Arg2:T29	
+R10	Setting Arg1:E7 Arg2:T33	
+T36	Action 574 582	aspirate
+E8	Action:T36 Acts-on:T38 Using:T42
+T37	Modifier 583 586	all
+T38	Reagent 587 592	media
+T39	Modifier 598 604	plated
+T40	Reagent 605 610	cells
+T41	Modifier 618 625	sterile
+T42	Device 626 639	glass pipette
+R12	Mod-Link Arg1:T42 Arg2:T41	
+R13	Mod-Link Arg1:T40 Arg2:T39	
+R14	Mod-Link Arg1:T38 Arg2:T37	
+T43	Modifier 641 659	Gently but quickly
+T44	Action 660 667	replace
+E9	Action:T44 Using:T47
+T45	Amount 673 679	800 µL
+T46	Modifier 680 699	fresh warm complete
+T47	Reagent 700 704	DMEM
+T48	Action 714 728	not to pipette
+E10	Action:T48 
+T49	Modifier 729 746	vigorously enough
+T50	Action 750 755	cause
+E11	Action:T50 Acts-on:T51
+T51	Reagent 756 761	cells
+T52	Action 765 771	detach
+E12	Action:T52 Acts-on:T51
+R16	Mod-Link Arg1:E10 Arg2:T49	
+R17	Mod-Link Arg1:E9 Arg2:T43	
+R18	Mod-Link Arg1:T47 Arg2:T46	
+R19	Measure Arg1:T47 Arg2:T45	
+T55	Reagent 822 834	master mixes
+T56	Amount 838 844	1.5 mL
+T57	Location 845 866	microcentrifuge tubes
+T60	Modifier 898 903	First
+T61	Action 905 908	add
+E14	Action:T61 Acts-on:T62 Site:T63
+T62	Reagent 909 917	Opti-Mem
+T63	Location 936 941	tubes
+R20	Mod-Link Arg1:E14 Arg2:T60	
+R22	Measure Arg1:T57 Arg2:T56	
+T65	Measure-Type 961 975	concentrations
+T66	Reagent 979 983	cDNA
+T68	Action 1026 1029	Mix
+E16	Action:T68 Using:T70
+T69	Modifier 1030 1040	thoroughly
+T70	Method 1044 1052	flicking
+R24	Mod-Link Arg1:E16 Arg2:T69	
+T71	Action 1059 1062	add
+E17	Action:T71 Acts-on:T72 Site:T75
+T72	Reagent 1067 1071	cDNA
+T73	Reagent 1085 1104	Opti-Mem master mix
+T74	Reagent 925 935	master mix
+R25	Meronym Arg1:T74 Arg2:T63	
+T75	Location 1105 1110	tubes
+R26	Meronym Arg1:T73 Arg2:T75	
+T76	Reagent 1119 1143	lipofectamine master mix
+T77	Action 1145 1148	add
+E18	Action:T77 Acts-on:T78 Site:T79 Site2:T76
+T78	Reagent 1149 1162	lipofectamine
+T79	Reagent 1166 1174	Opti-Mem
+T80	Action 1176 1179	mix
+E19	Action:T80 
+T81	Modifier 1180 1184	well
+T82	Action 1212 1215	sit
+E20	Action:T82 Acts-on:T83
+T83	Reagent 1203 1211	solution
+T84	Time 1220 1229	5 minutes
+R27	Setting Arg1:E20 Arg2:T84	
+R28	Mod-Link Arg1:E19 Arg2:T81	
+T85	Action 1231 1234	Add
+E21	Action:T85 Acts-on:T87 Site:T88
+T86	Modifier 1239 1246	diluted
+T87	Reagent 1247 1260	lipofectamine
+T88	Reagent 1264 1268	cDNA
+T89	Generic-Measure 1278 1287	1:1 ratio
+R29	Setting Arg1:E21 Arg2:T89	
+R30	Mod-Link Arg1:T87 Arg2:T86	
+T90	Amount 1290 1297	+350 µL
+T91	Action 1299 1302	Mix
+E22	Action:T91 
+T92	Modifier 1303 1307	well
+R31	Mod-Link Arg1:E22 Arg2:T92	
+T93	Reagent 1313 1321	solution
+T94	Action 1322 1325	sit
+E23	Action:T94 Acts-on:T93
+T95	Modifier 1330 1338	at least
+T96	Time 1339 1349	20 minutes
+R32	Mod-Link Arg1:T96 Arg2:T95	
+R33	Setting Arg1:E23 Arg2:T96	
+T97	Modifier 1358 1364	plated
+T98	Reagent 1365 1370	cells
+T99	Action 1372 1377	label
+E24	Action:T99 Acts-on:T100 Site:T98
+T100	Location 1378 1383	wells
+T101	Modifier 1384 1397	in triplicate
+T102	Modifier 1402 1406	each
+T103	Method 1407 1416	treatment
+R35	Mod-Link Arg1:T98 Arg2:T97	
+T105	Mention 1436 1440	them
+T107	Action 1480 1483	Mix
+E26	Action:T107 Acts-on:T108
+T108	Reagent 1488 1523	Lipofectamine + Master Mix solution
+T109	Modifier 1524 1534	thoroughly
+T110	Action 1539 1542	add
+E27	Action:T110 Using:T114 Acts-on:T113
+T111	Amount 1543 1549	200 µL
+T112	Modifier 1553 1568	each respective
+T113	Reagent 1569 1572	mix
+T114	Method 1596 1611	circular motion
+R36	Mod-Link Arg1:T113 Arg2:T112	
+R37	Measure Arg1:T113 Arg2:T111	
+R38	Mod-Link Arg1:E26 Arg2:T109	
+T115	Action 1620 1627	pipette
+E28	Action:T115 Site:T117
+T116	Modifier 1628 1636	directly
+T117	Reagent 1643 1648	cells
+T118	Reagent 1654 1660	stream
+R39	Mod-Link Arg1:E28 Arg2:T116	
+T119	Action 1661 1664	Mix
+E29	Action:T119 Acts-on:T120 Using:T122
+T120	Reagent 1669 1674	media
+T121	Modifier 1680 1691	very gentle
+T122	Method 1692 1699	shaking
+T123	Action 1706 1712	return
+E30	Action:T123 Acts-on:T124 Site:T125
+T124	Reagent 1717 1722	cells
+T125	Device 1730 1739	incubator
+T126	Temperature 1743 1747	37°C
+T127	Concentration 1752 1754	5%
+T128	Reagent 1755 1758	CO2
+R41	Measure Arg1:T128 Arg2:T127	
+R42	Meronym Arg1:T128 Arg2:T125	
+R43	Setting Arg1:T125 Arg2:T126	
+T129	Time 1764 1772	next day
+T130	Action 1774 1782	aspirate
+E31	Action:T130 Acts-on:T132
+T131	Modifier 1787 1790	old
+T132	Reagent 1791 1796	media
+T134	Action 1823 1826	add
+E32	Action:T134 Acts-on:T137
+T135	Amount 1827 1831	1 mL
+T136	Modifier 1835 1848	warm complete
+T137	Reagent 1849 1859	DMEM media
+R45	Mod-Link Arg1:T137 Arg2:T136	
+R46	Measure Arg1:T137 Arg2:T135	
+R47	Setting Arg1:E31 Arg2:T129	
+R48	Mod-Link Arg1:T132 Arg2:T131	
+T138	Time 1861 1878	The following day
+T139	Action 1880 1888	plan for
+E33	Action:T139 
+T140	Method 1889 1899	cell lysis
+T141	Method 1901 1914	protein assay
+T143	Method 1920 1942	gel sample preparation
+R50	Setting Arg1:E33 Arg2:T138	
+T3	Reagent 41 45	cDNA
+T144	Reagent 53 58	siRNA
+R51	Or Arg1:T3 Arg2:T144	
+T145	Measure-Type 107 120	concentration
+R52	Of-Type Arg1:T8 Arg2:T145	
+T146	Reagent 347 350	DNA
+R6	Or Arg1:T146 Arg2:T20	
+T21	Action 368 373	added
+E34	Action:T21 
+R53	Acts-on Arg1:T1 Arg2:T2	
+R54	Using Arg1:T1 Arg2:T3	
+R55	Using Arg1:T1 Arg2:T144	
+T147	Method 76 88	transfection
+R56	Mod-Link Arg1:T147 Arg2:T5	
+T148	Location 189 200	spreadsheet
+R57	Acts-on Arg1:E2 Arg2:T148	
+T13	Reagent 239 244	siRNA
+R5	Or Arg1:T13 Arg2:T14	
+R58	Acts-on Arg1:E3 Arg2:T13	
+R59	Mod-Link Arg1:T13 Arg2:T15	
+R60	Acts-on Arg1:E34 Arg2:T19	
+T16	Reagent 536 549	decontaminant
+R11	Mod-Link Arg1:T16 Arg2:T34	
+R61	Coreference-Link Arg1:T16 Arg2:T32	
+T35	Numerical 551 556	Three
+T149	Location 557 562	wells
+R15	Measure Arg1:T149 Arg2:T35	
+R62	Site Arg1:E8 Arg2:T40	
+T54	Location 790 814	transfection spreadsheet
+T150	Action 816 821	label
+E13	Action:T150 
+R63	Acts-on Arg1:E13 Arg2:T55	
+R21	Site Arg1:E13 Arg2:T57	
+T59	Modifier 876 896	triplicate condition
+R64	Mod-Link Arg1:T57 Arg2:T59	
+T58	Reagent 984 989	siRNA
+T64	Action 943 955	Double check
+E15	Action:T64 Measure-Type-Link:T65
+R23	Or Arg1:T66 Arg2:T58	
+T67	Action 990 995	match
+E35	Action:T67 
+R65	Acts-on Arg1:E35 Arg2:T65	
+T151	Location 1000 1024	transfection spreadsheet
+R66	Using Arg1:E35 Arg2:T151	
+R67	Using Arg1:E13 Arg2:T54	
+T53	Reagent 1072 1077	siRNA
+R68	Or Arg1:T72 Arg2:T53	
+R69	Acts-on Arg1:E17 Arg2:T53	
+T152	Reagent 1269 1274	siRNA
+R70	Or Arg1:T88 Arg2:T152	
+R71	Acts-on Arg1:E21 Arg2:T152	
+R72	Mod-Link Arg1:T152 Arg2:T86	
+R34	Mod-Link Arg1:T100 Arg2:T101	
+R73	Mod-Link Arg1:T103 Arg2:T102	
+T104	Action 1429 1435	number
+E25	Action:T104 
+T106	Action 1444 1449	match
+E36	Action:T106 
+T153	Location 1454 1478	transfection spreadsheet
+R74	Using Arg1:E36 Arg2:T153	
+R75	Acts-on Arg1:E25 Arg2:T105	
+T154	Modifier 1587 1595	dropwise
+T155	Modifier 1578 1585	careful
+R76	Mod-Link Arg1:T114 Arg2:T155	
+R77	Mod-Link Arg1:T114 Arg2:T154	
+T156	Modifier 1613 1619	Do not
+R78	Mod-Link Arg1:E28 Arg2:T156	
+R40	Meronym Arg1:T117 Arg2:T118	
+R79	Mod-Link Arg1:T122 Arg2:T121	
+T133	Numerical 1797 1802	three
+T157	Location 1803 1808	wells
+R44	Measure Arg1:T157 Arg2:T133	
+R49	Acts-on Arg1:E33 Arg2:T140	
+R80	Acts-on Arg1:E33 Arg2:T141	
+R81	Acts-on Arg1:E33 Arg2:T143	

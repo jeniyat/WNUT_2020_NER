@@ -1,0 +1,127 @@
+T1	Location 44 54	T-75 flask
+T2	Action 49 61	flask:Remove
+E1	Action:T2 Acts-on:T4
+T3	Action 66 73	discard
+E2	Action:T3 Acts-on:T4
+T4	Reagent 74 88	culture medium
+T5	Reagent 0 8	Neuro-2a
+T7	Action 98 103	rinse
+E4	Action:T7 Acts-on:T8 Using:T47 Using2:T11
+T6	Modifier 90 97	Briefly
+T8	Reagent 108 118	cell layer
+T9	Concentration 124 129	0.25%
+T10	Concentration 146 153	0.53 mM
+T11	Reagent 154 167	EDTA solution
+T12	Reagent 212 229	trypsin inhibitor
+T13	Action 231 234	Add
+E3	Action:T13 Acts-on:T15 Site:T40
+T14	Amount 242 248	3.0 mL
+T15	Reagent 252 273	Trypsin-EDTA solution
+T16	Action 863 875	Resubculture
+E5	Action:T16 Acts-on:T17
+T17	Reagent 881 886	cells
+T18	Action 832 838	Change
+E6	Action:T18 Acts-on:T19
+T19	Reagent 839 844	media
+T20	Time 851 861	2 - 4 days
+T21	Action 748 753	Plate
+E7	Action:T21 Acts-on:T22 Site:T64
+T22	Reagent 754 759	cells
+T23	Action 815 823	incubate
+E8	Action:T23 Acts-on:T22
+T24	Temperature 827 830	37C
+R1	Setting Arg1:E8 Arg2:T24	
+T25	Location 783 793	T-75 flask
+T26	Location 797 809	6-well plate
+T27	Action 666 672	Pipett
+E9	Action:T27 Acts-on:T61 Site:T37
+T28	Amount 673 677	10mL
+T29	Size 719 723	40mL
+R2	Setting Arg1:E6 Arg2:T20	
+R3	Or Arg1:T26 Arg2:T25	
+T30	Action 590 593	Add
+E10	Action:T30 Acts-on:T66
+T31	Amount 594 599	10 mL
+T32	Action 630 638	aspirate
+E11	Action:T32 Acts-on:T33
+T33	Reagent 639 644	cells
+T34	Action 655 664	pipetting
+E12	Action:T34 
+T35	Modifier 648 654	gently
+T36	Size 702 706	60um
+T37	Device 707 713	filter
+R4	Measure Arg1:T37 Arg2:T36	
+T38	Reagent 508 513	Cells
+T39	Temperature 560 564	37°C
+T41	Action 287 294	observe
+E14	Action:T41 Acts-on:T42 Using:T43
+T42	Reagent 295 300	cells
+T43	Device 310 329	inverted microscope
+T44	Reagent 336 346	cell layer
+T45	Time 376 385	5 minutes
+T46	Reagent 182 197	traces of serum
+T47	Reagent 136 143	Trypsin
+R5	Measure Arg1:T47 Arg2:T9	
+R6	Measure Arg1:T11 Arg2:T10	
+R7	Mod-Link Arg1:E4 Arg2:T6	
+T48	Action 171 177	remove
+E15	Action:T48 Acts-on:T46
+T49	Modifier 178 181	all
+R8	Mod-Link Arg1:T46 Arg2:T49	
+T50	Amount 235 238	2.0
+R9	Or Arg1:T14 Arg2:T50	
+R10	Measure Arg1:T15 Arg2:T14	
+T51	Action 350 359	dispersed
+E16	Action:T51 Acts-on:T44
+T52	Location 463 468	flask
+T53	Action 440 447	hitting
+E17	Action:T53 Acts-on:T52
+T54	Action 451 458	shaking
+E18	Action:T54 Acts-on:T52
+T55	Reagent 491 496	cells
+T56	Reagent 431 436	cells
+T57	Action 419 426	agitate
+E19	Action:T57 Acts-on:T56
+T58	Numerical 891 899	70 - 90%
+T59	Measure-Type 900 909	confluent
+R11	Of-Type Arg1:T58 Arg2:T59	
+T60	Numerical 737 740	1:5
+T61	Reagent 678 693	cell suspension
+R12	Measure Arg1:T61 Arg2:T28	
+T62	Reagent 23 31	Neuro 2a
+T63	Mention 33 36	N2a
+R13	Coreference-Link Arg1:T63 Arg2:T62	
+R14	Or Arg1:E18 Arg2:E17	
+T64	Location 775 781	vessel
+T65	Modifier 763 774	appropriate
+R15	Mod-Link Arg1:T64 Arg2:T65	
+T66	Reagent 612 625	growth medium
+T67	Modifier 603 611	complete
+R16	Mod-Link Arg1:T66 Arg2:T67	
+R17	Measure Arg1:T66 Arg2:T31	
+R19	Mod-Link Arg1:E12 Arg2:T35	
+T68	Method 9 21	cell culture
+T69	Measure-Type 131 134	w/v
+R18	Of-Type Arg1:T9 Arg2:T69	
+R20	Meronym Arg1:T12 Arg2:T46	
+T40	Location 277 282	flask
+T70	Location 301 306	under
+R21	Meronym Arg1:T70 Arg2:T43	
+R22	Coreference-Link Arg1:E16 Arg2:T45	
+T71	Modifier 412 418	do not
+R23	Mod-Link Arg1:E19 Arg2:T71	
+T72	Action 500 506	detach
+E13	Action:T72 Acts-on:T55
+T73	Action 536 542	detach
+E20	Action:T73 Acts-on:T38
+T74	Modifier 523 535	difficult to
+R24	Mod-Link Arg1:E20 Arg2:T74	
+T75	Action 550 556	placed
+E21	Action:T75 Acts-on:T38
+R25	Setting Arg1:E21 Arg2:T39	
+T76	Action 568 578	facilitate
+E22	Action:T76 
+T77	Method 579 588	dispersal
+R26	Coreference-Link Arg1:T25 Arg2:T64	
+R27	Coreference-Link Arg1:T26 Arg2:T64	
+R28	Measure Arg1:T17 Arg2:T58	

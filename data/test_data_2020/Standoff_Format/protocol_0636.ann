@@ -1,0 +1,423 @@
+T1	Reagent 0 18	Haematoxylin Eosin
+T2	Reagent 20 23	H&E
+R1	Coreference-Link Arg1:T2 Arg2:T1	
+T4	Reagent 34 46	Formaldehyde
+T5	Method 47 55	fixation
+T6	Action 57 62	Rinse
+E2	Action:T6 Acts-on:T8 Using:T9
+T7	Modifier 63 68	fresh
+T8	Reagent 69 81	colon tissue
+T9	Reagent 87 97	PBS buffer
+T10	Action 104 107	fix
+E3	Action:T10 Acts-on:T11 Using:T14
+T11	Reagent 108 115	tissues
+T12	Modifier 121 126	fresh
+T13	Concentration 127 129	4%
+T14	Reagent 130 138	formalin
+T15	Time 143 151	24 hours
+T16	Temperature 155 171	room temperature
+R2	Mod-Link Arg1:T8 Arg2:T7	
+R3	Measure Arg1:T14 Arg2:T13	
+R4	Mod-Link Arg1:T14 Arg2:T12	
+R5	Setting Arg1:E3 Arg2:T15	
+R6	Setting Arg1:E3 Arg2:T16	
+T17	Modifier 192 198	enough
+T18	Reagent 199 207	fixative
+T19	Action 211 216	cover
+E4	Action:T19 Acts-on:T20 Using:T18
+T20	Reagent 217 224	tissues
+R7	Mod-Link Arg1:T18 Arg2:T17	
+T21	Measure-Type 235 241	volume
+T22	Numerical 252 256	5-10
+T23	Reagent 266 272	tissue
+T24	Measure-Type 273 279	volume
+T25	Method 281 288	Washing
+T28	Action 356 361	rinse
+E5	Action:T28 Acts-on:T29
+T29	Reagent 366 374	fixative
+T30	Time 341 354	30~60 minutes
+T31	Modifier 313 327	formalin fixed
+T32	Reagent 328 340	colon tissue
+R8	Mod-Link Arg1:T32 Arg2:T31	
+T26	Modifier 290 300	small flow
+T27	Action 307 312	rinse
+E6	Action:T27 Acts-on:T32
+R9	Setting Arg1:E6 Arg2:T30	
+T33	Method 376 387	Dehydration
+T35	Concentration 440 443	70%
+T36	Reagent 444 451	Ethanol
+T37	Time 453 466	15~30 minuate
+T38	Concentration 468 471	80%
+T39	Reagent 472 479	Ethanol
+T40	Time 493 502	2~4 hours
+T41	Concentration 504 507	95%
+T42	Reagent 508 515	Ethanol
+T43	Time 529 538	2~4 hours
+T44	Concentration 540 544	100%
+T45	Reagent 545 552	Ethanol
+T46	Action 566 572	ensure
+E8	Action:T46 Acts-on:T48
+T47	Concentration 578 582	100%
+T48	Reagent 583 590	ethanol
+T49	Modifier 591 600	anhydrous
+T50	Reagent 602 609	ethanol
+T51	Action 617 623	placed
+E9	Action:T51 Acts-on:T50 Acts-on2:T52
+T52	Location 631 640	container
+T53	Modifier 644 653	anhydrous
+T54	Reagent 654 668	copper sulfate
+T55	Action 672 678	absorb
+E10	Action:T55 Using:T54
+T56	Numerical 690 695	three
+T57	Numerical 517 520	one
+T58	Numerical 481 484	one
+T59	Time 705 713	1.5 hour
+T60	Modifier 714 718	each
+T34	Method 410 419	embedding
+R10	Measure Arg1:T36 Arg2:T35	
+R11	Measure Arg1:T39 Arg2:T38	
+R12	Measure Arg1:T42 Arg2:T41	
+R13	Measure Arg1:T45 Arg2:T44	
+R14	Measure Arg1:T48 Arg2:T47	
+R15	Mod-Link Arg1:T48 Arg2:T49	
+R16	Mod-Link Arg1:T54 Arg2:T53	
+R17	Mod-Link Arg1:T59 Arg2:T60	
+T61	Modifier 738 748	dehydrated
+T62	Reagent 749 761	colon tissue
+T63	Action 765 771	placed
+E7	Action:T63 Acts-on:T62 Site:T64
+T64	Reagent 775 792	xylene I solution
+T65	Concentration 794 798	100%
+T66	Reagent 799 806	ethanol
+T67	Modifier 811 815	pure
+T68	Modifier 816 821	fresh
+T69	Reagent 822 837	xylene solution
+T70	Concentration 838 841	1:1
+R18	Measure Arg1:T66 Arg2:T65	
+R19	Mod-Link Arg1:T69 Arg2:T68	
+R20	Mod-Link Arg1:T69 Arg2:T67	
+R21	Measure Arg1:T64 Arg2:T70	
+T71	Time 847 857	30 minutes
+R22	Setting Arg1:E7 Arg2:T71	
+T72	Action 864 870	placed
+E11	Action:T72 Acts-on:T62 Site:T73 Site2:T227
+T73	Reagent 913 921	solution
+T74	Modifier 885 889	pure
+T75	Modifier 890 895	fresh
+T76	Reagent 896 911	xylene solution
+R23	Mod-Link Arg1:T76 Arg2:T75	
+R24	Mod-Link Arg1:T76 Arg2:T74	
+T77	Time 926 936	30 minutes
+R25	Setting Arg1:E11 Arg2:T77	
+T78	Method 939 950	Soaking wax
+T79	Reagent 973 976	wax
+T80	Temperature 994 1002	52~56 ºC
+T81	Device 1008 1018	thermostat
+T82	Action 1022 1025	set
+E12	Action:T82 Acts-on:T81
+T83	Temperature 1029 1034	56 ºC
+T84	Action 1036 1042	filled
+E13	Action:T84 Acts-on:T85 Acts-on2:T86 Site:T89
+T85	Reagent 1048 1062	melted wax cup
+T86	Reagent 1076 1088	colon tissue
+T87	Modifier 1064 1075	transparent
+T88	Modifier 1094 1098	soft
+T89	Location 1099 1106	wax cup
+T90	Time 1111 1117	1 hour
+T91	Modifier 1129 1133	hard
+T92	Reagent 1134 1137	wax
+T93	Modifier 1138 1145	dipping
+T94	Reagent 1146 1149	wax
+T95	Time 1162 1168	1 hour
+R26	Setting Arg1:E12 Arg2:T83	
+R27	Setting Arg1:E13 Arg2:T90	
+R28	Mod-Link Arg1:T92 Arg2:T91	
+R29	Mod-Link Arg1:T94 Arg2:T93	
+R30	Mod-Link Arg1:T86 Arg2:T87	
+R31	Mod-Link Arg1:T89 Arg2:T88	
+T96	Method 1171 1180	Embedding
+T97	Action 1211 1214	put
+E14	Action:T97 Acts-on:T99 Site:T100
+T98	Modifier 1219 1225	melted
+T99	Reagent 1226 1234	hard wax
+T100	Location 1244 1263	embedding metal box
+T101	Modifier 1274 1281	quickly
+T102	Action 1314 1321	heating
+E15	Action:T102 Acts-on:T106 Site:T117
+T103	Reagent 1282 1294	colon tissue
+T104	Modifier 1298 1302	hard
+T105	Location 1303 1310	wax cup
+T106	Device 1326 1333	forceps
+T107	Action 1384 1393	embedding
+E16	Action:T107 Acts-on:T258
+T108	Modifier 1400 1411	immediately
+T109	Modifier 1421 1425	cold
+T110	Method 1426 1439	water cooling
+T111	Time 1453 1463	20 minutes
+T112	Method 1474 1488	solidification
+T113	Reagent 1532 1553	paraffin tissue block
+T114	Action 1561 1567	stored
+E17	Action:T114 Acts-on:T113
+T115	Temperature 1571 1587	room temperature
+T116	Time 1592 1597	years
+R32	Setting Arg1:E17 Arg2:T115	
+R33	Setting Arg1:E17 Arg2:T116	
+R34	Mod-Link Arg1:T99 Arg2:T98	
+R35	Mod-Link Arg1:T105 Arg2:T104	
+T117	Location 1357 1360	box
+R36	Mod-Link Arg1:E16 Arg2:T108	
+T118	Action 1599 1603	Trim
+E18	Action:T118 Acts-on:T119
+T119	Reagent 1604 1619	paraffin blocks
+T120	Action 1637 1640	cut
+E19	Action:T120 Acts-on:T119
+T121	Size 1644 1651	3-10 um
+T122	Size 1653 1657	5 um
+T123	Generic-Measure 1707 1720	20~30 degrees
+T124	Modifier 1620 1632	as necessary
+R37	Mod-Link Arg1:E18 Arg2:T124	
+R38	Setting Arg1:E19 Arg2:T121	
+T125	Action 1729 1734	Place
+E20	Action:T125 Acts-on:T126 Site:T127
+T126	Reagent 1735 1750	paraffin ribbon
+T127	Location 1754 1764	water bath
+T128	Temperature 1774 1782	40-45 ºC
+R39	Setting Arg1:E20 Arg2:T128	
+T129	Action 1791 1796	Mount
+E21	Action:T129 Acts-on:T265 Site:T130
+T130	Location 1811 1823	glass slides
+T131	Action 1825 1830	slide
+E22	Action:T131 Site:T134 Acts-on:T132
+T132	Location 1835 1840	glass
+T133	Temperature 1848 1862	60 temperature
+T134	Device 1863 1870	mounter
+T135	Action 1875 1880	place
+E23	Action:T135 Acts-on:T136 Product:T266
+T136	Mention 1881 1883	it
+T137	Time 1888 1897	1-2 hours
+R41	Coreference-Link Arg1:T136 Arg2:T132	
+R43	Setting Arg1:E23 Arg2:T137	
+T138	Action 1914 1921	Prepare
+E24	Action:T138 Acts-on:T141
+T139	Modifier 1922 1936	formalin-fixed
+T140	Modifier 1938 1955	paraffin-embedded
+T141	Reagent 1956 1971	tissue sections
+R44	Mod-Link Arg1:T141 Arg2:T139	
+R45	Mod-Link Arg1:T141 Arg2:T140	
+T142	Reagent 1983 2000	paraffin sections
+T143	Action 2005 2011	placed
+E25	Action:T143 Acts-on:T142 Site:T144 Site2:T145
+T144	Reagent 2015 2032	xylene I solution
+T145	Reagent 2037 2055	xylene II solution
+T147	Time 2065 2074	5 minutes
+T148	Temperature 2076 2081	56 ºC
+R47	Setting Arg1:E25 Arg2:T147	
+R48	Setting Arg1:E25 Arg2:T148	
+T149	Reagent 2108 2123	paraffin slices
+T150	Action 2132 2138	placed
+E26	Action:T150 Acts-on:T149 Site:T155
+T151	Concentration 2142 2146	100%
+T152	Concentration 2148 2151	95%
+T153	Concentration 2153 2156	80%
+T154	Concentration 2161 2164	75%
+T155	Reagent 2165 2181	ethanol solution
+T156	Time 2197 2206	3 minutes
+T157	Action 2217 2222	rinse
+E27	Action:T157 Using:T158
+T158	Reagent 2238 2243	water
+T159	Time 2248 2257	5 minutes
+R49	Measure Arg1:T155 Arg2:T151	
+R50	Measure Arg1:T155 Arg2:T152	
+R51	Measure Arg1:T155 Arg2:T153	
+R52	Measure Arg1:T155 Arg2:T154	
+R53	Setting Arg1:E26 Arg2:T156	
+R55	Setting Arg1:E27 Arg2:T159	
+T161	Method 2095 2106	Rehydration
+T162	Method 1973 1981	Dewaxing
+T163	Method 2273 2293	Hematoxylin staining
+T164	Reagent 2299 2316	paraffin sections
+T166	Reagent 2330 2341	hematoxylin
+T167	Time 2348 2358	10 minutes
+T168	Temperature 2360 2365	30 ºC
+T169	Action 2374 2379	rinse
+E29	Action:T169 Using:T263
+T170	Time 2384 2394	15 minutes
+T171	Action 2396 2401	drain
+E30	Action:T171 Acts-on:T172
+T172	Reagent 2406 2411	water
+R57	Setting Arg1:E29 Arg2:T170	
+T173	Method 2414 2429	Differentiation
+T174	Action 2431 2434	put
+E28	Action:T174 Acts-on:T175 Site:T177
+T175	Reagent 2439 2454	paraffin slices
+T176	Concentration 2460 2462	1%
+T177	Reagent 2463 2520	hydrochloric acid ethanol differentiation liquid solution
+T178	Time 2524 2536	5~30 seconds
+T179	Mention 2547 2552	slice
+T180	Modifier 2557 2560	red
+R58	Coreference-Link Arg1:T179 Arg2:T175	
+R59	Mod-Link Arg1:T179 Arg2:T180	
+T181	Action 2567 2572	rinse
+E31	Action:T181 Using:T182 Acts-on:T184
+T182	Reagent 2573 2578	water
+T183	Time 2589 2599	15 minutes
+T184	Location 2607 2614	section
+T185	Modifier 2638 2642	blue
+T186	Action 2644 2649	check
+E32	Action:T186 Acts-on:T187
+T187	Reagent 2654 2661	nucleus
+T188	Action 2677 2680	use
+E33	Action:T188 
+T189	Device 2681 2691	microscope
+T190	Modifier 2665 2676	appropriate
+R60	Mod-Link Arg1:T187 Arg2:T190	
+R61	Coreference-Link Arg1:E33 Arg2:T189	
+R62	Mod-Link Arg1:T184 Arg2:T185	
+R63	Setting Arg1:E31 Arg2:T183	
+T191	Method 2693 2712	Eosin dye re dyeing
+T192	Reagent 2719 2728	eosin dye
+T193	Action 2729 2737	staining
+E34	Action:T193 Using:T192
+T194	Time 2738 2743	2 min
+T195	Reagent 2745 2754	tap water
+T196	Action 2755 2759	wash
+E35	Action:T196 Using:T195 Using2:T199
+T197	Time 2764 2769	1 min
+T198	Concentration 2771 2775	0.5%
+T199	Reagent 2776 2798	eosin alcohol solution
+T200	Time 2803 2814	1-2 minutes
+R64	Setting Arg1:E34 Arg2:T194	
+R65	Setting Arg1:E35 Arg2:T197	
+R66	Measure Arg1:T199 Arg2:T198	
+R67	Setting Arg1:E35 Arg2:T200	
+T201	Method 2816 2827	Dehydration
+T202	Reagent 2829 2844	paraffin slices
+T203	Action 2853 2856	put
+E36	Action:T203 Acts-on:T202 Site:T206
+T204	Concentration 2862 2865	95%
+T205	Concentration 2870 2874	100%
+T206	Reagent 2875 2891	ethanol solution
+T207	Time 2896 2905	5 minutes
+T208	Action 2912 2922	dehydrated
+E37	Action:T208 Using:T210 Acts-on:T202
+T209	Concentration 2926 2929	95%
+T210	Reagent 2930 2937	ethanol
+T211	Time 2942 2951	2 minutes
+T212	Action 2953 2963	dehydrated
+E38	Action:T212 Acts-on:T202 Using:T214
+T213	Concentration 2967 2970	95%
+T214	Reagent 2971 2978	ethanol
+T215	Time 2983 2992	2 minutes
+T216	Action 2994 3004	dehydrated
+E39	Action:T216 Acts-on:T202 Using:T218
+T217	Concentration 3008 3012	100%
+T218	Reagent 3013 3020	ethanol
+T219	Time 3025 3033	1 minute
+T220	Action 3035 3045	dehydrated
+E40	Action:T220 Acts-on:T202 Using:T222
+T221	Concentration 3049 3053	100%
+T222	Reagent 3054 3061	ethanol
+T223	Time 3066 3074	1 minute
+R68	Measure Arg1:T206 Arg2:T205	
+R69	Measure Arg1:T206 Arg2:T204	
+R70	Setting Arg1:E36 Arg2:T207	
+R71	Measure Arg1:T210 Arg2:T209	
+R72	Setting Arg1:E37 Arg2:T211	
+R73	Measure Arg1:T214 Arg2:T213	
+R74	Setting Arg1:E38 Arg2:T215	
+R75	Measure Arg1:T218 Arg2:T217	
+R76	Setting Arg1:E39 Arg2:T219	
+R77	Measure Arg1:T222 Arg2:T221	
+R78	Setting Arg1:E40 Arg2:T223	
+T224	Action 3090 3094	Wipe
+E41	Action:T224 Acts-on:T225 Site:T226 Using:T269
+T225	Reagent 3103 3109	xylene
+T226	Location 3118 3122	back
+T227	Reagent 874 883	xylene II
+R79	Coreference-Link Arg1:T227 Arg2:T76	
+T228	Action 3151 3159	Dripping
+E42	Action:T228 Count:T229 Using:T230 Acts-on:T232 Site:T234
+T229	Numerical 3160 3163	1-2
+T230	Reagent 3164 3169	drops
+T231	Modifier 3173 3180	neutral
+T232	Reagent 3181 3191	Canada gum
+T233	Modifier 3201 3204	dry
+T234	Reagent 3205 3210	slice
+T235	Modifier 3216 3223	quickly
+T236	Action 3232 3237	cover
+E43	Action:T236 Using:T238 Using2:T239 Acts-on:T270
+T237	Modifier 3243 3248	clean
+T238	Seal 3249 3258	coverslip
+T239	Device 3285 3293	tweezers
+R81	Mod-Link Arg1:T234 Arg2:T233	
+R83	Mod-Link Arg1:T238 Arg2:T237	
+T240	Action 3295 3300	Place
+E44	Action:T240 Site:T241
+T241	Location 3313 3324	paper towel
+T242	Action 3328 3332	cure
+E45	Action:T242 
+T243	Time 3333 3342	overnight
+R84	Setting Arg1:E45 Arg2:T243	
+T244	Reagent 3348 3355	nucleus
+T245	Modifier 3359 3363	blue
+T246	Reagent 3365 3374	cytoplasm
+T247	Reagent 3379 3393	fibrous tissue
+T248	Modifier 3421 3424	red
+R85	Mod-Link Arg1:T244 Arg2:T245	
+R86	Mod-Link Arg1:T246 Arg2:T248	
+R87	Mod-Link Arg1:T247 Arg2:T248	
+T3	Method 25 33	staining
+T249	Action 173 182	Make sure
+E1	Action:T249 
+T250	Reagent 226 234	Fixative
+R88	Of-Type Arg1:T22 Arg2:T21	
+R89	Measure Arg1:T250 Arg2:T22	
+T251	Reagent 301 306	water
+R90	Mod-Link Arg1:T251 Arg2:T26	
+T252	Reagent 401 409	paraffin
+T253	Action 420 428	schedule
+E46	Action:T253 
+R91	Setting Arg1:E46 Arg2:T37	
+R92	Setting Arg1:E46 Arg2:T40	
+R93	Setting Arg1:E46 Arg2:T43	
+R94	Setting Arg1:E46 Arg2:T59	
+R95	Mod-Link Arg1:T62 Arg2:T61	
+T254	Reagent 1181 1188	tissues
+T255	Reagent 1194 1209	paraffin blocks
+T256	Numerical 1516 1519	two
+T257	Reagent 1497 1515	ax embedding block
+R96	Measure Arg1:T257 Arg2:T256	
+T258	Location 1394 1399	frame
+T259	Reagent 1658 1663	slice
+T260	Measure-Type 1664 1673	thickness
+T160	Modifier 2259 2264	dried
+T261	Reagent 2265 2270	water
+R54	Mod-Link Arg1:T261 Arg2:T160	
+T262	Modifier 2228 2237	distilled
+R97	Mod-Link Arg1:T158 Arg2:T262	
+T165	Action 2317 2324	stained
+E47	Action:T165 Acts-on:T164 Using:T166
+R56	Setting Arg1:E47 Arg2:T167	
+R98	Setting Arg1:E47 Arg2:T168	
+T263	Reagent 2368 2373	water
+R99	Measure Arg1:T177 Arg2:T176	
+R100	Measure Arg1:T259 Arg2:T122	
+T264	Measure-Type 1692 1703	blade angle
+T265	Reagent 1797 1805	sections
+R101	Setting Arg1:T134 Arg2:T133	
+T266	Reagent 1907 1912	slice
+T146	Measure-Type 2188 2192	time
+R40	Setting Arg1:E28 Arg2:T178	
+T267	Seal 3076 3088	Sealing glue
+T268	Location 3128 3133	slide
+R42	Meronym Arg1:T226 Arg2:T268	
+T269	Location 3139 3149	paper towe
+R46	Mod-Link Arg1:T232 Arg2:T231	
+T270	Mention 3229 3231	it
+R80	Coreference-Link Arg1:T270 Arg2:T234	
+T271	Action 3224 3228	take
+E48	Action:T271 Acts-on:T270
+R82	Mod-Link Arg1:E48 Arg2:T235	
+T272	Modifier 1362 1373	flat bottom
+R102	Mod-Link Arg1:T117 Arg2:T272	
+R103	Mod-Link Arg1:T110 Arg2:T109	

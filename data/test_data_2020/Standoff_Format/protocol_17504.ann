@@ -1,0 +1,205 @@
+T1	Reagent 0 22	SARS-CoV2 virus plaque
+T3	Measure-Type 31 46	Biosafety level
+T4	Generic-Measure 47 48	3
+R1	Of-Type Arg1:T4 Arg2:T3	
+T5	Reagent 50 55	Media
+T6	Modifier 67 75	modified
+T7	Reagent 76 80	DMEM
+T8	Reagent 83 87	DMEM
+T9	Concentration 93 95	2%
+T10	Reagent 96 99	FBS
+T11	Amount 103 109	475 ml
+T12	Reagent 111 115	DMEM
+T13	Reagent 120 131	L-Glutamate
+T14	Reagent 133 148	Sodium pyruvate
+T15	Amount 150 154	5 ml
+T16	Concentration 156 160	100x
+T17	Reagent 161 164	P/S
+T18	Amount 165 169	5 ml
+T19	Concentration 170 174	100x
+T20	Reagent 175 200	Non-Essential Amino Acids
+T21	Reagent 202 206	NEAA
+R2	Coreference-Link Arg1:T21 Arg2:T20	
+T22	Amount 217 221	5 ml
+T23	Concentration 222 224	1M
+T24	Reagent 225 230	HEPES
+T25	Amount 231 236	10 ml
+T26	Reagent 237 240	FBS
+T27	Reagent 241 246	Media
+T28	Concentration 258 260	2X
+T29	Reagent 260 263	MEM
+T30	Modifier 265 272	Sterile
+T31	Device 273 279	filter
+T32	Size 285 290	22 μm
+T33	Device 291 306	filtration unit
+T34	Amount 308 314	100 ml
+T35	Concentration 315 318	10x
+T36	Reagent 319 322	MEM
+T37	Amount 323 328	10 ml
+T38	Concentration 329 333	100x
+T39	Reagent 334 337	P/S
+T40	Amount 338 343	10 ml
+T41	Concentration 344 348	100x
+T42	Reagent 349 360	L-Glutamine
+T43	Amount 361 365	6 ml
+T44	Concentration 366 369	35%
+T45	Reagent 369 372	BSA
+T46	Amount 373 379	340 ml
+T47	Modifier 380 387	sterile
+T48	Reagent 388 393	ddH2O
+T49	Amount 394 399	10 ml
+T50	Concentration 400 402	1M
+T51	Reagent 403 408	HEPES
+T52	Amount 409 414	24 ml
+T53	Concentration 415 417	5%
+T54	Reagent 418 424	NaHCO3
+T55	Reagent 425 438	Overlay Media
+T56	Mention 447 451	this
+T57	Modifier 460 477	warm to the touch
+T58	Action 483 488	added
+E2	Action:T58 Site:T59 Acts-on:T56
+T59	Reagent 492 497	cells
+T60	Amount 499 503	1 ml
+T61	Reagent 505 508	PBS
+T62	Amount 509 516	31.5 ml
+T63	Concentration 517 519	2X
+T64	Reagent 520 523	MEM
+T65	Amount 524 531	17.5 ml
+T66	Reagent 532 542	Oxoid Agar
+T67	Action 543 547	Seed
+E3	Action:T67 Acts-on:T68 Site:T69
+T68	Reagent 548 561	Vero E6 cells
+T69	Location 565 578	6-well plates
+T70	Time 579 588	overnight
+T71	Temperature 592 597	37 °C
+T75	Action 615 621	Dilute
+E4	Action:T75 Acts-on:T76 Site:T78
+T76	Reagent 626 642	SARS-CoV-2 virus
+T77	Modifier 643 658	logarithmically
+T78	Reagent 662 677	infection media
+T79	Action 678 685	Replace
+E5	Action:T79 Acts-on:T80 Using:T82
+T80	Reagent 686 691	media
+T81	Modifier 697 705	modified
+T82	Reagent 706 710	DMEM
+T83	Action 715 718	add
+E6	Action:T83 Acts-on:T85 Site:T86
+T84	Modifier 719 726	diluted
+T85	Reagent 727 732	virus
+T86	Location 741 745	well
+T87	Generic-Measure 747 758	200 µl/well
+T89	Action 760 765	Allow
+E7	Action:T89 Using:T91
+T90	Reagent 766 771	virus
+T91	Method 772 782	adsorption
+T92	Time 787 795	01:00:00
+T93	Action 797 806	agitating
+E8	Action:T93 Acts-on:T94
+T94	Location 811 816	plate
+T95	Time 823 831	00:10:00
+T96	Action 833 837	Heat
+E9	Action:T96 Acts-on:T97
+T97	Reagent 842 855	overlay media
+T98	Reagent 856 874	oxoid agar mixture
+T99	Modifier 885 907	homogenous consistency
+T100	Action 912 915	add
+E10	Action:T100 Acts-on:T101 Site:T102
+T101	Mention 916 918	it
+T102	Location 927 931	well
+T105	Action 944 952	incubate
+E11	Action:T105 Acts-on:T101 Using:T107
+T106	Temperature 956 961	37 °C
+T107	Device 962 971	incubator
+T108	Time 976 984	72:00:00
+T109	Action 986 989	Fix
+E12	Action:T109 Acts-on:T110 Using:T112
+T110	Location 994 999	plate
+T111	Concentration 1005 1007	5%
+T112	Reagent 1008 1020	formaldehyde
+T113	Reagent 1025 1033	methanol
+T116	Time 1054 1063	Overnight
+T117	Action 1067 1073	ensure
+E13	Action:T117 Using:T119
+T118	Reagent 1074 1079	virus
+T119	Method 1080 1092	inactivation
+T120	Action 1097 1102	Stain
+E14	Action:T120 Using:T121
+T121	Reagent 1108 1122	crystal violet
+T122	Time 1127 1135	01:00:00
+T123	Action 1139 1148	determine
+E15	Action:T123 Measure-Type-Link:T124
+T124	Measure-Type 1149 1161	viral titers
+T125	Measure-Type 1163 1169	PFU/ml
+R3	Mod-Link Arg1:T7 Arg2:T6	
+R4	Measure Arg1:T10 Arg2:T9	
+R5	Meronym Arg1:T10 Arg2:T8	
+R6	Measure Arg1:T12 Arg2:T11	
+R7	Meronym Arg1:T13 Arg2:T12	
+R8	Meronym Arg1:T14 Arg2:T12	
+R9	Measure Arg1:T17 Arg2:T15	
+R10	Measure Arg1:T17 Arg2:T16	
+R11	Measure Arg1:T20 Arg2:T18	
+R12	Measure Arg1:T20 Arg2:T19	
+R13	Measure Arg1:T24 Arg2:T22	
+R14	Measure Arg1:T24 Arg2:T23	
+R15	Measure Arg1:T26 Arg2:T25	
+R16	Measure Arg1:T29 Arg2:T28	
+R17	Mod-Link Arg1:T31 Arg2:T30	
+R18	Measure Arg1:T33 Arg2:T32	
+R19	Measure Arg1:T36 Arg2:T34	
+R20	Measure Arg1:T36 Arg2:T35	
+R21	Measure Arg1:T39 Arg2:T37	
+R22	Measure Arg1:T39 Arg2:T38	
+R23	Measure Arg1:T42 Arg2:T40	
+R24	Measure Arg1:T42 Arg2:T41	
+R25	Measure Arg1:T45 Arg2:T43	
+R26	Measure Arg1:T45 Arg2:T44	
+R27	Measure Arg1:T48 Arg2:T46	
+R28	Mod-Link Arg1:T48 Arg2:T47	
+R29	Measure Arg1:T51 Arg2:T49	
+R30	Measure Arg1:T51 Arg2:T50	
+R31	Measure Arg1:T54 Arg2:T52	
+R32	Measure Arg1:T54 Arg2:T53	
+R33	Coreference-Link Arg1:T56 Arg2:T55	
+R34	Mod-Link Arg1:T56 Arg2:T57	
+T126	Action 440 446	Ensure
+E16	Action:T126 Acts-on:T56
+R35	Measure Arg1:T61 Arg2:T60	
+R36	Measure Arg1:T64 Arg2:T62	
+R37	Measure Arg1:T64 Arg2:T63	
+R38	Measure Arg1:T66 Arg2:T65	
+R39	Setting Arg1:E3 Arg2:T70	
+R40	Setting Arg1:E3 Arg2:T71	
+R43	Mod-Link Arg1:E4 Arg2:T77	
+R44	Mod-Link Arg1:T82 Arg2:T81	
+R45	Mod-Link Arg1:T85 Arg2:T84	
+R46	Setting Arg1:E7 Arg2:T92	
+R48	Setting Arg1:E8 Arg2:T95	
+R49	Coreference-Link Arg1:T97 Arg2:T98	
+R50	Mod-Link Arg1:T98 Arg2:T99	
+R51	Coreference-Link Arg1:T101 Arg2:T98	
+R53	Setting Arg1:E11 Arg2:T106	
+R54	Setting Arg1:E11 Arg2:T108	
+R55	Measure Arg1:T112 Arg2:T111	
+R56	Meronym Arg1:T113 Arg2:T112	
+R59	Setting Arg1:E12 Arg2:T116	
+R60	Setting Arg1:E14 Arg2:T122	
+R61	Coreference-Link Arg1:T8 Arg2:T7	
+T127	Method 247 253	recipe
+T128	Method 56 62	recipe
+R62	Meronym Arg1:T33 Arg2:T31	
+T129	Modifier 736 740	each
+R63	Mod-Link Arg1:T86 Arg2:T129	
+R47	Setting Arg1:E6 Arg2:T87	
+T88	Modifier 817 822	every
+R64	Mod-Link Arg1:T95 Arg2:T88	
+T114	Generic-Measure 1037 1052	1.5 ml/per well
+R57	Setting Arg1:E12 Arg2:T114	
+T103	Generic-Measure 933 941	2ml/well
+R52	Setting Arg1:E10 Arg2:T103	
+T104	Modifier 922 926	each
+R58	Mod-Link Arg1:T102 Arg2:T104	
+T72	Generic-Measure 599 613	106 cells/well
+R41	Setting Arg1:E3 Arg2:T72	
+T2	Method 23 29	assays
+R42	Acts-on Arg1:T2 Arg2:T1	

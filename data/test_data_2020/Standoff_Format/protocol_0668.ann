@@ -1,0 +1,76 @@
+T1	Modifier 0 13	Half strength
+T2	Reagent 14 16	MS
+T3	Reagent 20 27	B5 vits
+T4	Concentration 32 34	1%
+T5	Reagent 35 42	sucrose
+T6	Reagent 44 57	growth medium
+R2	Mod-Link Arg1:T2 Arg2:T1	
+R3	Measure Arg1:T5 Arg2:T4	
+T7	Action 58 61	Add
+E1	Action:T7 Acts-on:T8
+T8	Reagent 62 77	Murashige&Skoog
+T9	Reagent 84 95	B5 vitamins
+T10	Action 98 101	Add
+E2	Action:T10 Acts-on:T12
+T11	Action 111 114	Add
+E3	Action:T11 Acts-on:T13
+T12	Reagent 102 109	sucrose
+T13	Reagent 115 119	dH2O
+T14	Action 121 127	Adjust
+E4	Action:T14 Measure-Type-Link:T15
+T15	Measure-Type 128 130	pH
+T16	pH 134 137	5.7
+R4	Of-Type Arg1:T16 Arg2:T15	
+R5	Setting Arg1:E4 Arg2:T16	
+T17	Action 144 152	stirring
+E5	Action:T17 
+T18	Action 154 157	Add
+E6	Action:T18 Site:T21 Acts-on:T19
+T19	Reagent 158 162	agar
+T20	Reagent 166 172	medium
+T21	Location 173 179	bottle
+T22	Modifier 181 186	solid
+T23	Reagent 187 193	medium
+T25	Action 201 204	Add
+E7	Action:T25 Acts-on:T27 Site:T29
+T26	Modifier 209 213	pHed
+T27	Reagent 214 220	medium
+T28	Modifier 228 243	agar-containing
+T29	Location 244 250	bottle
+R10	Mod-Link Arg1:T27 Arg2:T26	
+R11	Mod-Link Arg1:T29 Arg2:T28	
+T30	Reagent 252 256	Agar
+T31	Action 271 276	added
+E8	Action:T31 Acts-on:T30 Site:T33
+T32	Modifier 264 267	not
+R12	Mod-Link Arg1:E8 Arg2:T32	
+T33	Location 284 289	flask
+T34	Action 293 298	avoid
+E9	Action:T34 
+T35	Action 324 330	poured
+E10	Action:T35 Site:T36
+T36	Location 336 343	bottles
+T37	Action 357 365	sediment
+E11	Action:T37 Site:T38
+T38	Location 373 385	flask bottom
+T39	Modifier 348 356	tends to
+R13	Mod-Link Arg1:E11 Arg2:T39	
+T40	Action 388 394	Top up
+E12	Action:T40 Using:T42
+T41	Amount 398 401	1 L
+T42	Reagent 407 411	dH2O
+R14	Setting Arg1:E12 Arg2:T41	
+T43	Action 413 422	Autoclave
+E13	Action:T43 Acts-on:T44
+T44	Reagent 423 428	media
+T45	Modifier 429 435	before
+T46	Action 436 443	pouring
+E14	Action:T46 Acts-on:T47
+T47	Location 444 450	plates
+R15	Mod-Link Arg1:E14 Arg2:T45	
+R16	Meronym Arg1:T3 Arg2:T2	
+R17	Meronym Arg1:T5 Arg2:T2	
+R1	Meronym Arg1:T9 Arg2:T8	
+R6	Meronym Arg1:T20 Arg2:T21	
+R7	Mod-Link Arg1:T23 Arg2:T22	
+R8	Coreference-Link Arg1:T23 Arg2:T20	

@@ -1,0 +1,127 @@
+T1	Method 0 9	Isolation
+T2	Reagent 13 29	endophytic fungi
+T3	Reagent 30 45	Plant materials
+T4	Action 62 68	washed
+E1	Action:T4 Acts-on:T3 Using:T6
+T5	Modifier 51 61	thoroughly
+T6	Reagent 82 91	tap water
+T7	Action 93 96	cut
+E2	Action:T7 Acts-on:T3
+T8	Reagent 133 139	pieces
+T9	Size 141 147	2-3 cm
+T10	Method 158 171	sterilization
+T11	Concentration 202 206	75 %
+T12	Reagent 207 214	ethanol
+T13	Time 219 224	1 min
+T14	Action 191 198	dipping
+E3	Action:T14 Site:T12 Acts-on:T76
+R1	Measure Arg1:T12 Arg2:T11	
+R2	Setting Arg1:E3 Arg2:T13	
+R3	Mod-Link Arg1:E1 Arg2:T5	
+T15	Modifier 127 132	small
+R4	Mod-Link Arg1:T8 Arg2:T15	
+R5	Measure Arg1:T8 Arg2:T9	
+T16	Reagent 230 237	samples
+T17	Action 246 256	sterilized
+E4	Action:T17 Acts-on:T16 Site:T18
+T18	Reagent 260 275	bleach solution
+T19	Concentration 287 292	1.3 %
+T20	Reagent 293 312	sodium hypochlorite
+T21	Time 317 322	3 min
+R6	Measure Arg1:T20 Arg2:T19	
+R7	Setting Arg1:E4 Arg2:T21	
+R8	Meronym Arg1:T20 Arg2:T18	
+T22	Reagent 391 410	sodium hypochlorite
+T23	Action 427 434	rinsing
+E5	Action:T23 Using:T25 Count:T26
+T24	Modifier 440 447	sterile
+T25	Reagent 448 463	Millipore water
+T26	Numerical 464 475	three times
+T27	Time 477 482	3 min
+R9	Mod-Link Arg1:T25 Arg2:T24	
+T28	Action 416 423	removed
+E6	Action:T28 Acts-on:T22
+R10	Setting Arg1:E5 Arg2:T27	
+T29	Reagent 494 501	tissues
+T30	Action 507 512	dried
+E7	Action:T30 Acts-on:T29 Using:T32
+T31	Modifier 517 524	sterile
+T32	Method 525 541	laminar air flow
+T33	Reagent 591 598	tissues
+T34	Reagent 606 619	stem cuttings
+T35	Action 625 632	removed
+E8	Action:T35 Acts-on:T33
+T36	Concentration 358 362	75 %
+T37	Reagent 363 370	ethanol
+T38	Time 375 379	30 s
+T39	Action 344 354	sterilized
+E9	Action:T39 Acts-on:T40 Site:T37
+T40	Location 336 343	surface
+R11	Measure Arg1:T37 Arg2:T36	
+R12	Setting Arg1:E9 Arg2:T38	
+T41	Location 574 579	flame
+T42	Reagent 638 645	tissues
+T43	Action 651 654	cut
+E10	Action:T43 Acts-on:T42 Using:T48
+T44	Modifier 660 665	small
+T45	Reagent 666 674	segments
+T46	Size 676 685	5mm X 5mm
+T47	Modifier 695 702	sterile
+T48	Device 703 710	scalpel
+R13	Mod-Link Arg1:T48 Arg2:T47	
+R14	Mod-Link Arg1:T45 Arg2:T44	
+R15	Measure Arg1:T45 Arg2:T46	
+R16	Mod-Link Arg1:T32 Arg2:T31	
+T49	Modifier 585 590	outer
+R17	Mod-Link Arg1:T33 Arg2:T49	
+T50	Modifier 747 752	fresh
+T51	Location 753 763	PDA plates
+T52	Method 774 794	hyphal tip method.10
+T53	Reagent 719 726	isolate
+T54	Action 732 743	transferred
+E11	Action:T54 Acts-on:T53 Site:T51 Using:T52
+R18	Mod-Link Arg1:T51 Arg2:T50	
+T55	Location 1000 1010	PDA plates
+T56	Reagent 1029 1041	streptomycin
+T57	Action 1045 1053	suppress
+E12	Action:T57 Measure-Type-Link:T72
+T58	Reagent 969 977	segments
+T59	Modifier 963 968	Small
+T60	Action 987 996	incubated
+E13	Action:T60 Acts-on:T58 Site:T55
+T61	Method 829 842	sterilization
+T62	Modifier 879 890	disinfected
+T63	Reagent 891 906	plant fragments
+T64	Location 910 920	PDA plates
+R19	Mod-Link Arg1:T63 Arg2:T62	
+T65	Action 860 875	making imprints
+E14	Action:T65 Acts-on:T63 Site:T64
+R20	Mod-Link Arg1:T58 Arg2:T59	
+T66	Temperature 1074 1079	28 °C
+T67	Time 1096 1105	2-4 weeks
+T68	Action 1115 1122	checked
+E15	Action:T68 Acts-on:T58 Measure-Type-Link:T73
+T69	Time 1123 1128	daily
+R21	Setting Arg1:E15 Arg2:T69	
+R22	Setting Arg1:E13 Arg2:T66	
+R23	Setting Arg1:E13 Arg2:T67	
+T71	Action 1011 1023	supplemented
+E16	Action:T71 Acts-on:T58 Using:T56
+T72	Measure-Type 1054 1070	bacterial growth
+T73	Measure-Type 1133 1146	hyphal growth
+T74	Measure-Type 942 948	growth
+T75	Action 953 961	observed
+E17	Action:T75 Measure-Type-Link:T74 Acts-on:T81
+R24	Meronym Arg1:T8 Arg2:T3	
+T76	Location 150 157	Surface
+T77	Modifier 483 487	each
+R25	Setting Arg1:T77 Arg2:T27	
+T78	Action 554 569	passing through
+E18	Action:T78 Site:T41 Acts-on:T29
+R26	Meronym Arg1:T33 Arg2:T34	
+R27	Meronym Arg1:T45 Arg2:T42	
+T79	Location 821 828	surface
+T80	Mention 926 931	which
+R28	Coreference-Link Arg1:T80 Arg2:T64	
+T81	Reagent 935 941	fungal
+R29	Acts-on Arg1:T1 Arg2:T2	

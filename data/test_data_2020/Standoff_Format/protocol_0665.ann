@@ -1,0 +1,210 @@
+T1	Method 0 24	DNA Extraction Procedure
+T2	Reagent 31 34	SDS
+T3	Action 35 38	Cut
+E1	Action:T3 Acts-on:T4
+T4	Reagent 39 45	tissue
+T5	Action 50 55	grind
+E2	Action:T5 Acts-on:T4 Using:T6
+T6	Reagent 59 74	liquid nitrogen
+T7	Action 76 84	Transfer
+E3	Action:T7 Acts-on:T9 Site:T11
+T8	Modifier 85 92	grinded
+T9	Reagent 93 99	tissue
+T10	Size 103 108	15 ml
+T11	Location 109 113	tube
+R1	Mod-Link Arg1:T9 Arg2:T8	
+R2	Measure Arg1:T11 Arg2:T10	
+T12	Action 115 118	Add
+E4	Action:T12 Acts-on:T14
+T13	Amount 119 122	6ml
+T14	Reagent 123 126	TEN
+T15	Amount 128 133	700µl
+T16	Concentration 134 137	20%
+T17	Reagent 138 141	SDS
+T18	Temperature 142 145	56℃
+T19	Modifier 145 152	preheat
+R3	Mod-Link Arg1:T17 Arg2:T19	
+R4	Mod-Link Arg1:T18 Arg2:T19	
+T20	Amount 155 160	150µl
+T21	Reagent 161 181	beta mercaptoethanol
+T22	Amount 186 192	150 µl
+T23	Reagent 193 205	proteinase K
+T24	Modifier 207 214	rapidly
+T25	Action 215 218	mix
+E5	Action:T25 Acts-on:T23 Acts-on2:T21 Acts-on3:T17 Acts-on4:T14
+R5	Mod-Link Arg1:E5 Arg2:T24	
+R6	Measure Arg1:T14 Arg2:T13	
+R7	Measure Arg1:T17 Arg2:T16	
+R8	Measure Arg1:T17 Arg2:T15	
+R9	Measure Arg1:T21 Arg2:T20	
+R10	Measure Arg1:T23 Arg2:T22	
+T26	Action 220 228	Incubate
+E6	Action:T26 Acts-on:T27
+T27	Reagent 229 239	homogenate
+T28	Time 244 247	2 h
+T29	Temperature 251 255	56 ℃
+T30	Modifier 258 264	gently
+T31	Action 265 273	blending
+E7	Action:T31 
+T32	Modifier 278 283	every
+T33	Time 284 294	5 ~ 10 min
+R11	Mod-Link Arg1:T33 Arg2:T32	
+R12	Mod-Link Arg1:E7 Arg2:T30	
+R13	Setting Arg1:E7 Arg2:T33	
+R14	Setting Arg1:E6 Arg2:T29	
+R15	Setting Arg1:E6 Arg2:T28	
+T34	Action 296 305	Cool down
+E8	Action:T34 
+T35	Temperature 309 325	room temperature
+R16	Setting Arg1:E8 Arg2:T35	
+T36	Action 327 330	Add
+E9	Action:T36 Acts-on:T39 Measure-Type-Link:T38
+T37	Modifier 334 340	equal 
+T38	Measure-Type 340 346	volume
+T39	Reagent 350 371	Tris saturated phenol
+T40	Action 376 379	mix
+E10	Action:T40 Acts-on:T39
+R17	Mod-Link Arg1:E9 Arg2:T37	
+T41	Action 381 391	Centrifuge
+E11	Action:T41 
+T42	Temperature 395 411	room temperature
+T43	Temperature 414 418	16 ℃
+T44	Speed 425 436	14000 RPM  
+T45	Time 440 446	10 min
+T46	Action 453 457	save
+E12	Action:T46 Acts-on:T47
+T47	Reagent 458 469	supernatant
+R18	Setting Arg1:E11 Arg2:T42	
+R19	Setting Arg1:E11 Arg2:T43	
+R20	Setting Arg1:E11 Arg2:T44	
+R21	Setting Arg1:E11 Arg2:T45	
+T48	Action 471 474	Add
+E13	Action:T48 Acts-on:T49 Acts-on2:T50 Site:T52
+T49	Reagent 475 485	chloroform
+T50	Reagent 490 505	isoamyl alcohol
+T51	Concentration 507 511	24:1
+T52	Reagent 521 532	supernatant
+T53	Action 539 542	mix
+E14	Action:T53 Acts-on:T52
+R22	Measure Arg1:T50 Arg2:T51	
+R23	Measure Arg1:T49 Arg2:T51	
+T54	Action 544 554	Centrifuge
+E15	Action:T54 
+T55	Speed 560 569	14000 RPM
+T56	Time 574 580	10 min
+T57	Action 582 586	save
+E16	Action:T57 Acts-on:T58
+T58	Reagent 587 598	supernatant
+R24	Setting Arg1:E15 Arg2:T55	
+R25	Setting Arg1:E15 Arg2:T56	
+T59	Action 600 609	Resuspend
+E17	Action:T59 Acts-on:T60 Using:T64
+T60	Reagent 610 623	nuclei pellet
+T61	Numerical 629 634	0.8 X
+T62	Measure-Type 635 641	volume
+T63	Modifier 645 651	frozen
+T64	Reagent 652 669	isopropyl alcohol
+R26	Mod-Link Arg1:T64 Arg2:T63	
+R27	Measure Arg1:T64 Arg2:T61	
+T65	Action 671 675	Wash
+E18	Action:T65 Using:T67
+T66	Modifier 681 685	cold
+T67	Reagent 686 693	ethanol
+T68	Concentration 694 697	75%
+R28	Measure Arg1:T67 Arg2:T68	
+R29	Mod-Link Arg1:T67 Arg2:T66	
+T69	Action 720 723	dry
+E19	Action:T69 
+T70	Action 725 728	Add
+E20	Action:T70 Acts-on:T72 Acts-on2:T74
+T71	Amount 729 735	200 µl
+T72	Reagent 736 739	TEN
+T73	Amount 744 748	2 µl
+T74	Reagent 749 754	RNAse
+T75	Concentration 756 765	100 mg/ml
+R30	Measure Arg1:T74 Arg2:T75	
+R31	Measure Arg1:T74 Arg2:T73	
+R32	Measure Arg1:T72 Arg2:T71	
+T76	Temperature 768 772	37 ℃
+T77	Time 777 783	30 min
+T78	Method 785 816	incubation period precipitation
+T79	Reagent 833 844	precipitate
+T80	Action 845 853	dissolve
+E21	Action:T80 Acts-on:T79
+T81	Modifier 854 864	completely
+R33	Mod-Link Arg1:E21 Arg2:T81	
+T82	Device 822 831	Tip dolly
+T83	Action 866 869	Add
+E22	Action:T83 Acts-on:T84 Acts-on2:T90
+T84	Reagent 870 876	buffer
+T85	Reagent 878 881	TEN
+T86	Amount 886 892	200 µl
+T87	Concentration 893 896	20%
+T88	Reagent 897 900	SDS
+T89	Amount 906 911	40 µl
+T90	Reagent 912 922	Protease K
+T91	Amount 929 933	2 ml
+R35	Measure Arg1:T90 Arg2:T89	
+R36	Measure Arg1:T88 Arg2:T87	
+R37	Measure Arg1:T88 Arg2:T86	
+R38	Meronym Arg1:T85 Arg2:T84	
+R39	Meronym Arg1:T88 Arg2:T84	
+T92	Action 935 943	Incubate
+E23	Action:T92 
+T93	Time 948 954	30 min
+T94	Temperature 958 962	56 ℃
+T95	Action 964 967	Add
+E24	Action:T95 Acts-on:T96 Acts-on2:T97
+T96	Reagent 968 978	chloroform
+T97	Reagent 983 998	isoamyl alcohol
+T98	Concentration 1000 1004	24:1
+T99	Reagent 1009 1020	supernatant
+T100	Action 1027 1030	mix
+E25	Action:T100 Acts-on:T99
+R40	Measure Arg1:T96 Arg2:T98	
+R41	Measure Arg1:T97 Arg2:T98	
+R42	Setting Arg1:E23 Arg2:T93	
+R43	Setting Arg1:E23 Arg2:T94	
+T101	Action 1031 1042	Centrifuge 
+E26	Action:T101 
+T102	Speed 1047 1056	14000 RPM
+T103	Time 1061 1067	10 min
+T104	Action 1069 1073	save
+E27	Action:T104 Acts-on:T105
+T105	Reagent 1074 1085	supernatant
+T106	Action 1087 1092	Wash 
+E28	Action:T106 Count:T107 Using:T109
+T107	Numerical 1092 1097	twice
+T108	Modifier 1103 1107	cold
+T109	Reagent 1108 1115	ethanol
+T110	Concentration 1116 1119	75%
+T111	Action 1121 1124	Add
+E29	Action:T111 Acts-on:T113
+T112	Amount 1125 1131	300 µl
+T113	Reagent 1132 1134	EB
+T114	pH 1136 1142	pH 8.0
+T115	Action 1147 1155	dissolve
+E30	Action:T115 
+R44	Setting Arg1:E26 Arg2:T102	
+R45	Setting Arg1:E26 Arg2:T103	
+R46	Mod-Link Arg1:T109 Arg2:T108	
+R47	Measure Arg1:T109 Arg2:T110	
+R48	Measure Arg1:T113 Arg2:T112	
+R49	Measure Arg1:T113 Arg2:T114	
+R50	Using Arg1:T1 Arg2:T2	
+R51	Acts-on Arg1:E4 Arg2:T17	
+R52	Acts-on Arg1:E4 Arg2:T21	
+R53	Acts-on Arg1:E4 Arg2:T23	
+R54	Mod-Link Arg1:T38 Arg2:T37	
+T116	Modifier 413 414	＞
+R55	Mod-Link Arg1:T43 Arg2:T116	
+R56	Of-Type Arg1:T61 Arg2:T62	
+R57	Setting Arg1:T78 Arg2:T76	
+R58	Setting Arg1:T78 Arg2:T77	
+R59	Using Arg1:T78 Arg2:T82	
+T117	Modifier 923 928	up to
+R34	Mod-Link Arg1:T91 Arg2:T117	
+R60	Setting Arg1:E22 Arg2:T91	
+R61	Site Arg1:E24 Arg2:T99	
+T118	Numerical 700 703	1/2
+T119	Numerical 707 710	2/2

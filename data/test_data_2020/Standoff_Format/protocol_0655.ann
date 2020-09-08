@@ -1,0 +1,119 @@
+T1	Method 0 14	DNA extraction
+T2	Method 25 51	ammonium acetate technique
+T3	Action 52 55	Add
+E1	Action:T3 Acts-on:T5 Acts-on2:T7
+T4	Amount 56 61	50 µl
+T5	Reagent 65 70	blood
+T6	Amount 72 78	200 µl
+T7	Reagent 84 107	DNA extraction solution
+T8	Reagent 124 132	tris-HCL
+T9	Concentration 133 138	30 mM
+T10	pH 139 143	ph 8
+T11	Reagent 145 149	EDTA
+T12	Concentration 150 155	10 mM
+T13	Concentration 161 165	0,4%
+T14	Reagent 166 169	SDS
+T15	Amount 176 180	3 µl
+T16	Reagent 181 193	proteinase K
+T17	Action 195 201	Vortex
+E2	Action:T17 
+T18	Time 206 215	overnight
+T19	Temperature 219 222	56°
+R1	Measure Arg1:T5 Arg2:T4	
+R2	Measure Arg1:T7 Arg2:T6	
+R3	Measure Arg1:T8 Arg2:T9	
+R4	Measure Arg1:T8 Arg2:T10	
+R5	Measure Arg1:T11 Arg2:T12	
+R6	Measure Arg1:T14 Arg2:T13	
+R7	Measure Arg1:T16 Arg2:T15	
+R8	Meronym Arg1:T8 Arg2:T7	
+R9	Meronym Arg1:T11 Arg2:T7	
+R10	Meronym Arg1:T14 Arg2:T7	
+T20	Action 229 237	incubate
+E3	Action:T20 
+T21	Temperature 238 242	70°C
+T22	Time 250 261	three hours
+T23	Action 262 269	shaking
+E4	Action:T23 
+T24	Modifier 270 280	frequently
+R12	Mod-Link Arg1:E4 Arg2:T24	
+R13	Setting Arg1:E3 Arg2:T21	
+R14	Setting Arg1:E2 Arg2:T18	
+R15	Setting Arg1:E2 Arg2:T19	
+R16	Setting Arg1:E3 Arg2:T22	
+T25	Action 282 285	Add
+E5	Action:T25 Acts-on:T27
+T26	Amount 286 292	200 µl
+T27	Reagent 293 298	AcNH4
+T28	Concentration 299 302	4 M
+R17	Measure Arg1:T27 Arg2:T28	
+R18	Measure Arg1:T27 Arg2:T26	
+T29	Action 304 310	Vortex
+E6	Action:T29 
+T30	Action 315 323	incubate
+E7	Action:T30 
+T31	Time 324 334	30 minutes
+R19	Setting Arg1:E7 Arg2:T31	
+T32	Action 336 341	Shake
+E8	Action:T32 
+T33	Time 348 358	10 minutes
+T34	Action 360 370	Centrifuge
+E9	Action:T34 
+T35	Time 371 381	15 minutes
+T36	Speed 385 394	13000 rpm
+R20	Setting Arg1:E9 Arg2:T36	
+R21	Setting Arg1:E9 Arg2:T35	
+T37	Reagent 405 416	supernatant
+T38	Modifier 420 423	new
+T39	Location 424 429	tubes
+R22	Mod-Link Arg1:T39 Arg2:T38	
+T40	Action 396 400	Move
+E10	Action:T40 Acts-on:T37 Site:T39
+T41	Action 431 434	Add
+E11	Action:T41 Acts-on:T44
+T42	Amount 435 441	800 µl
+T43	Modifier 445 449	cold
+T44	Reagent 450 454	EtOH
+T45	Concentration 455 459	100%
+R23	Mod-Link Arg1:T44 Arg2:T43	
+R24	Measure Arg1:T44 Arg2:T45	
+R25	Measure Arg1:T44 Arg2:T42	
+T46	Action 461 467	Remove
+E12	Action:T46 Acts-on:T47
+T47	Reagent 472 483	supernatant
+T48	Action 485 489	Wash
+E13	Action:T48 Acts-on:T49 Using:T51
+T49	Reagent 494 500	pellet
+T50	Amount 506 512	800 µl
+T51	Reagent 516 520	EtOH
+T52	Concentration 521 524	70%
+R26	Measure Arg1:T51 Arg2:T50	
+R27	Measure Arg1:T51 Arg2:T52	
+T53	Action 526 536	Centrifuge
+E14	Action:T53 
+T54	Time 537 546	5 minutes
+T55	Speed 550 559	13000 rpm
+R28	Setting Arg1:E14 Arg2:T54	
+R29	Setting Arg1:E14 Arg2:T55	
+T56	Action 561 567	Remove
+E15	Action:T56 Acts-on:T57
+T57	Reagent 572 583	supernatant
+T58	Action 588 591	dry
+E16	Action:T58 Acts-on:T57
+T59	Action 593 596	Add
+E17	Action:T59 Acts-on:T61
+T60	Amount 597 603	200 µl
+T61	Reagent 604 613	TE Buffer
+T62	Action 618 623	leave
+E18	Action:T62 Acts-on:T61 Site:T64
+T63	Time 624 633	2-3 hours
+T64	Device 641 645	oven
+T65	Temperature 649 653	37°C
+R30	Measure Arg1:T61 Arg2:T60	
+R31	Setting Arg1:E18 Arg2:T63	
+R32	Setting Arg1:T64 Arg2:T65	
+R33	Using Arg1:T1 Arg2:T2	
+R11	Acts-on Arg1:E1 Arg2:T16	
+R34	Setting Arg1:E8 Arg2:T33	
+T66	Modifier 342 347	every
+R35	Mod-Link Arg1:T33 Arg2:T66	

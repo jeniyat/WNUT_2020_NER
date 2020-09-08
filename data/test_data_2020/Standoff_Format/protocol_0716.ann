@@ -1,0 +1,159 @@
+T1	Device 0 27	Zyppy™ Plasmid Miniprep Kit
+T2	Action 28 31	Add
+E1	Action:T2 Acts-on:T5 Site:T9
+T3	Amount 32 38	600 μl
+T5	Reagent 42 59	bacterial culture
+T6	Action 60 65	grown
+E2	Action:T6 Acts-on:T5 Site:T7
+T7	Reagent 69 78	LB medium
+T8	Size 84 90	1.5 ml
+T9	Location 91 111	microcentrifuge tube
+R1	Measure Arg1:T9 Arg2:T8	
+R3	Measure Arg1:T5 Arg2:T3	
+T10	Action 113 116	Add
+E3	Action:T10 Acts-on:T13
+T11	Amount 117 123	100 μl
+T12	Concentration 127 129	7X
+T13	Reagent 130 142	Lysis Buffer
+T14	Modifier 144 148	Blue
+R4	Mod-Link Arg1:T13 Arg2:T14	
+T16	Action 155 158	mix
+E4	Action:T16 Using:T17 Acts-on:T18 Count:T19
+T17	Method 162 171	inverting
+T18	Location 176 180	tube
+T19	Numerical 181 190	4-6 times
+R6	Measure Arg1:T13 Arg2:T12	
+R7	Measure Arg1:T13 Arg2:T11	
+T20	Action 192 199	Proceed
+E5	Action:T20 
+T21	Modifier 210 216	within
+T22	Time 217 226	2 minutes
+R8	Setting Arg1:E5 Arg2:T22	
+R9	Mod-Link Arg1:T22 Arg2:T21	
+T23	Action 228 231	Add
+E6	Action:T23 Acts-on:T26
+T24	Modifier 242 246	cold
+T25	Amount 232 238	350 μl
+T26	Reagent 247 268	Neutralization Buffer
+T27	Modifier 270 276	Yellow
+T28	Action 282 285	mix
+E7	Action:T28 
+T29	Modifier 286 296	thoroughly
+R10	Mod-Link Arg1:E7 Arg2:T29	
+R11	Mod-Link Arg1:T26 Arg2:T27	
+R12	Mod-Link Arg1:T26 Arg2:T24	
+R13	Measure Arg1:T26 Arg2:T25	
+T30	Reagent 302 308	sample
+T31	Action 314 318	turn
+E8	Action:T31 Acts-on:T30
+T32	Modifier 319 325	yellow
+T33	Method 335 349	neutralization
+T34	Modifier 353 361	complete
+T35	Modifier 368 377	yellowish
+T36	Reagent 378 389	precipitate
+T37	Action 395 399	form
+E9	Action:T37 Acts-on:T36
+R14	Mod-Link Arg1:T36 Arg2:T35	
+R15	Mod-Link Arg1:T30 Arg2:T32	
+T38	Action 401 407	Invert
+E10	Action:T38 Acts-on:T39 Count:T41
+T39	Reagent 412 418	sample
+T40	Modifier 422 432	additional
+T41	Numerical 433 442	2-3 times
+T42	Action 446 452	ensure
+E11	Action:T42 
+T43	Modifier 453 461	complete
+T44	Method 462 476	neutralization
+R17	Mod-Link Arg1:T41 Arg2:T40	
+T45	Action 478 488	Centrifuge
+E12	Action:T45 
+T46	Speed 492 511	11,000 – 16,000 x g
+T47	Time 516 527	2-4 minutes
+R18	Setting Arg1:E12 Arg2:T46	
+R19	Setting Arg1:E12 Arg2:T47	
+T48	Action 529 537	Transfer
+E13	Action:T48 Acts-on:T49 Site:T52
+T49	Reagent 542 553	supernatant
+T50	Amount 556 562	900 μl
+T51	Modifier 573 581	provided
+T52	Location 582 603	Zymo-Spin™ IIN column
+R20	Mod-Link Arg1:T52 Arg2:T51	
+R21	Measure Arg1:T49 Arg2:T50	
+T53	Modifier 605 610	Avoid
+T54	Action 611 621	disturbing
+E14	Action:T54 Acts-on:T55
+T55	Reagent 626 644	cell debris pellet
+R22	Mod-Link Arg1:E14 Arg2:T53	
+T56	Action 646 651	Place
+E15	Action:T56 Acts-on:T57 Site:T58
+T57	Location 656 662	column
+T58	Location 670 685	Collection Tube
+T59	Action 690 700	centrifuge
+E16	Action:T59 
+T60	Time 705 715	15 seconds
+R23	Setting Arg1:E16 Arg2:T60	
+T61	Action 717 724	Discard
+E17	Action:T61 Acts-on:T62
+T62	Reagent 729 741	flow-through
+T63	Action 746 751	place
+E18	Action:T63 Acts-on:T64 Site:T67
+T64	Location 756 762	column
+T65	Modifier 763 767	back
+T66	Modifier 777 781	same
+T67	Location 782 797	Collection Tube
+R24	Mod-Link Arg1:T67 Arg2:T66	
+R25	Mod-Link Arg1:E18 Arg2:T65	
+T68	Action 799 802	Add
+E19	Action:T68 Acts-on:T70 Site:T71
+T69	Amount 803 809	200 μl
+T70	Reagent 813 829	Endo-Wash Buffer
+T71	Location 837 843	column
+T72	Action 845 855	Centrifuge
+E20	Action:T72 
+R26	Measure Arg1:T70 Arg2:T69	
+T73	Time 860 870	30 seconds
+R27	Setting Arg1:E20 Arg2:T73	
+T74	Action 872 875	Add
+E21	Action:T74 Acts-on:T76 Site:T77
+T75	Amount 876 882	400 μl
+T76	Reagent 886 904	Zyppy™ Wash Buffer
+T77	Location 912 918	column
+R28	Measure Arg1:T76 Arg2:T75	
+T78	Action 920 930	Centrifuge
+E22	Action:T78 
+T79	Time 935 943	1 minute
+R29	Setting Arg1:E22 Arg2:T79	
+T80	Action 945 953	Transfer
+E23	Action:T80 Acts-on:T81 Site:T84
+T81	Location 958 964	column
+T82	Modifier 972 977	clean
+T83	Amount 978 984	1.5 ml
+T84	Location 985 1005	microcentrifuge tube
+T85	Action 1011 1014	add
+E24	Action:T85 Acts-on:T87 Site:T89
+T86	Amount 1015 1020	30 μl
+T87	Reagent 1024 1046	Zyppy™ Elution Buffer2
+T88	Modifier 1047 1055	directly
+T89	Location 1063 1076	column matrix
+T90	Action 1081 1090	let stand
+E25	Action:T90 
+T91	Time 1095 1105	one minute
+T92	Temperature 1109 1125	room temperature
+R30	Setting Arg1:E25 Arg2:T91	
+R31	Setting Arg1:E25 Arg2:T92	
+R32	Measure Arg1:T84 Arg2:T83	
+R33	Mod-Link Arg1:T84 Arg2:T82	
+R34	Measure Arg1:T87 Arg2:T86	
+R35	Mod-Link Arg1:E24 Arg2:T88	
+T93	Action 1127 1137	Centrifuge
+E26	Action:T93 
+T94	Time 1142 1152	30 seconds
+T95	Action 1156 1161	elute
+E27	Action:T95 Acts-on:T96
+T96	Reagent 1166 1177	plasmid DNA
+R36	Setting Arg1:E26 Arg2:T94	
+R2	Mod-Link Arg1:T33 Arg2:T34	
+R5	Acts-on Arg1:E11 Arg2:T44	
+R16	Mod-Link Arg1:T44 Arg2:T43	
+T4	Modifier 555 556	~
+R37	Mod-Link Arg1:T50 Arg2:T4	

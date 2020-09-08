@@ -1,0 +1,140 @@
+T1	Modifier 0 5	Basic
+T2	Reagent 6 18	Cell Culture
+T3	Action 32 39	Plating
+E1	Action:T3 Acts-on:T4
+T4	Reagent 40 45	Cells
+T5	Action 46 51	Split
+E2	Action:T5 Acts-on:T6
+T6	Reagent 52 57	cells
+T8	Method 72 128	Basic Cell Culture Maintenance: Splitting Cells protocol
+T9	Reagent 130 135	Cells
+T10	Modifier 136 144	leftover
+R1	Mod-Link Arg1:T9 Arg2:T10	
+T11	Location 156 162	flasks
+T12	Modifier 150 156	split 
+T13	Action 179 184	count
+E3	Action:T13 Acts-on:T15 Using:T9
+T14	Action 189 194	plate
+E4	Action:T14 Acts-on:T15
+T15	Reagent 195 200	cells
+T16	Action 202 205	Add
+E5	Action:T16 Acts-on:T18 Acts-on2:T21
+R2	Mod-Link Arg1:T11 Arg2:T12	
+T17	Amount 206 211	75 μL
+T18	Reagent 212 217	media
+T19	Amount 222 227	25 μL
+T20	Modifier 228 236	leftover
+T21	Reagent 237 242	cells
+T22	Size 250 256	1.5 mL
+T23	Location 257 277	microcentrifuge tube
+R3	Measure Arg1:T23 Arg2:T22	
+R4	Mod-Link Arg1:T21 Arg2:T20	
+R5	Measure Arg1:T21 Arg2:T19	
+R6	Measure Arg1:T18 Arg2:T17	
+T24	Concentration 280 283	1:4
+T25	Method 284 292	dilution
+T26	Action 295 298	Mix
+E6	Action:T26 Using:T28
+T27	Modifier 299 309	thoroughly
+T28	Method 313 321	flicking
+R7	Mod-Link Arg1:E6 Arg2:T27	
+T29	Action 323 327	Load
+E7	Action:T29 Site:T31
+T30	Amount 328 333	10 μL
+T31	Device 343 356	hemacytometer
+T32	Action 361 365	view
+E8	Action:T32 Using:T33
+T33	Device 372 382	microscope
+R8	Setting Arg1:E7 Arg2:T30	
+T36	Measure-Type 390 408	cells per quadrant
+T37	Action 410 417	Average
+E10	Action:T37 
+T38	Action 424 432	Multiply
+E11	Action:T38 
+T39	Numerical 436 442	10,000
+T40	Measure-Type 451 466	dilution factor
+T41	Action 472 481	Calculate
+E12	Action:T41 Acts-on:T43 Acts-on2:T44 Measure-Type-Link:T42
+T42	Measure-Type 482 488	amount
+T43	Reagent 492 497	cells
+T44	Reagent 504 509	media
+T45	Modifier 500 503	new
+T46	Action 520 526	create
+E13	Action:T46 Acts-on:T47
+T47	Reagent 529 539	master mix
+T48	Method 546 550	C1V1
+T49	Measure-Type 561 574	concentration
+T50	Reagent 578 583	cells
+T51	Amount 588 590	mL
+T52	Reagent 591 596	cells
+T53	Modifier 510 516	needed
+R12	Mod-Link Arg1:T44 Arg2:T45	
+T54	Numerical 608 611	one
+T55	Location 612 616	well
+T56	Amount 619 623	1 mL
+T57	Action 625 628	Add
+E14	Action:T57 Acts-on:T59 Count:T58
+T58	Numerical 629 630	3
+T59	Location 636 641	wells
+T60	Measure-Type 645 651	volume
+T61	Action 683 690	account
+E15	Action:T61 
+T62	Action 703 709	Create
+E16	Action:T62 Acts-on:T63 Site:T65
+T63	Reagent 710 720	master mix
+T64	Size 724 729	50 mL
+T65	Location 730 741	falcon tube
+T66	Action 743 749	Invert
+E17	Action:T66 Acts-on:T67
+T67	Reagent 750 760	master mix
+T68	Modifier 761 774	several times
+R14	Mod-Link Arg1:E17 Arg2:T68	
+T69	Modifier 780 794	before plating
+T70	Action 798 804	ensure
+E18	Action:T70 
+T71	Modifier 811 823	evenly mixed
+R15	Mod-Link Arg1:E17 Arg2:T69	
+T72	Action 825 830	Label
+E19	Action:T72 Acts-on:T73
+T73	Location 831 837	plates
+R16	Measure Arg1:T65 Arg2:T64	
+R17	Mod-Link Arg1:T67 Arg2:T71	
+T74	Action 871 874	Add
+E20	Action:T74 Acts-on:T76 Site:T78
+T75	Amount 875 879	1 mL
+T76	Reagent 880 890	master mix
+T77	Modifier 894 898	each
+T78	Location 899 903	well
+R18	Mod-Link Arg1:T78 Arg2:T77	
+R19	Measure Arg1:T76 Arg2:T75	
+T79	Modifier 905 911	Gently
+T80	Action 912 915	mix
+E21	Action:T80 Acts-on:T81 Using:T83
+T81	Location 916 922	plates
+T82	Modifier 928 934	gentle
+T83	Method 935 942	shaking
+R20	Mod-Link Arg1:E21 Arg2:T79	
+T84	Action 944 951	Return 
+E22	Action:T84 Acts-on:T85 Site:T86
+T85	Reagent 955 960	cells
+T86	Device 968 977	incubator
+T87	Temperature 981 985	37°C
+T88	Concentration 990 992	5%
+T89	Reagent 993 996	CO2
+R21	Setting Arg1:E22 Arg2:T87	
+R22	Measure Arg1:T89 Arg2:T88	
+T7	Action 58 67	following
+E23	Action:T7 
+R23	Acts-on Arg1:E23 Arg2:T8	
+R24	Site Arg1:E5 Arg2:T23	
+R25	Setting Arg1:T25 Arg2:T24	
+T34	Action 384 389	Count
+E9	Action:T34 Measure-Type-Link:T36
+R9	Mod-Link Arg1:T44 Arg2:T53	
+R10	Using Arg1:E13 Arg2:T48	
+T35	Location 601 605	well
+T90	Mention 805 807	it
+R11	Coreference-Link Arg1:T90 Arg2:T67	
+R13	Mod-Link Arg1:T83 Arg2:T82	
+R26	Mod-Link Arg1:T2 Arg2:T1	
+R27	Measure Arg1:T55 Arg2:T54	

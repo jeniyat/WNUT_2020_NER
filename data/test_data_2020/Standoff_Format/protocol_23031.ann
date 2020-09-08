@@ -1,0 +1,100 @@
+T1	Reagent 0 12	Mayaro virus
+T3	Method 13 43	real-time RT-PCR - 2016 method
+T4	Action 44 49	Assay
+E1	Action:T4 Site:T5 Site2:T6 Using:T7
+T5	Device 74 89	Rotor-Gene 6000
+T6	Device 92 111	Rotor-Gene Q 5-plex
+T7	Device 118 139	100-place rotor discs
+T8	Reagent 141 155	Total reaction
+T9	Measure-Type 156 162	volume
+T10	Amount 166 170	20µL
+T11	Action 172 179	Prepare
+E2	Action:T11 Acts-on:T12 Measure-Type-Link:T13
+T12	Reagent 205 213	reaction
+T13	Measure-Type 222 233	dead volume
+T14	Numerical 243 244	2
+T15	Action 252 258	Adjust
+E3	Action:T15 Using:T16
+T16	Device 283 300	robotic dispenser
+T17	Action 302 310	Dispense
+E4	Action:T17 Site:T19
+T18	Amount 311 315	15µL
+T19	Location 324 337	reaction well
+T20	Action 340 343	Add
+E5	Action:T20 Acts-on:T22 Acts-on2:T24 Acts-on3:T25
+T21	Amount 344 347	5µL
+T22	Reagent 351 359	template
+T23	Modifier 361 370	extracted
+T24	Reagent 371 374	DNA
+T25	Reagent 376 384	controls
+T26	Reagent 388 391	NTC
+T27	Modifier 393 406	nuclease-free
+T28	Reagent 407 412	water
+T29	Reagent 415 429	Total reaction
+T30	Measure-Type 430 436	volume
+T31	Amount 440 444	20µL
+T32	Method 445 448	PCR
+T34	Method 511 536	real-time fluorogenic PCR
+T35	Measure-Type 577 592	sigmoidal curve
+T36	Measure-Type 599 604	trace
+T37	Measure-Type 754 776	fluorescence intensity
+T38	Reagent 808 824	positive control
+T39	Action 780 788	measured
+E6	Action:T39 
+T40	Measure-Type 826 832	y-axis
+T41	Measure-Type 709 727	horizontal plateau
+T42	Measure-Type 875 892	fluorescent curve
+T43	Measure-Type 956 972	log-linear phase
+T44	Modifier 980 981	<
+T45	Generic-Measure 981 990	40 cycles
+T46	Measure-Type 993 997	flat
+T47	Measure-Type 1001 1020	non-sigmoidal curve
+T50	Modifier 1075 1076	>
+T51	Generic-Measure 1076 1085	40 cycles
+R1	Mod-Link Arg1:T51 Arg2:T50	
+T52	Reagent 1118 1122	NTCs
+T54	Action 1134 1141	produce
+T55	Modifier 1163 1175	satisfactory
+T56	Measure-Type 1176 1211	sigmoidal amplification curve shape
+T58	Measure-Type 1240 1265	fluorescent signal output
+T59	Measure-Type 1272 1286	crossing point
+T60	Measure-Type 1290 1310	threshold cycle (CT)
+T61	Measure-Type 1365 1384	fluorescence levels
+T62	Method 1426 1436	validation
+T63	Measure-Type 1452 1467	threshold level
+T64	Measure-Type 1485 1508	normalized linear scale
+T65	Measure-Type 1521 1540	LP-log-linear phase
+T66	Action 1551 1560	generated
+E9	Action:T66 
+T67	Method 1596 1613	PCR amplification
+T68	Measure-Type 1666 1685	fluorescence signal
+T69	Method 1635 1648	amplification
+T70	Measure-Type 1714 1734	PP-the plateau phase
+T71	Measure-Type 1785 1803	fluorescent signal
+T72	Action 1822 1829	cycling
+E10	Action:T72 
+T73	Measure-Type 1696 1712	transition phase
+R2	Measure Arg1:T8 Arg2:T10	
+R3	Setting Arg1:E4 Arg2:T18	
+R4	Mod-Link Arg1:T28 Arg2:T27	
+R5	Or Arg1:T25 Arg2:T26	
+R6	Mod-Link Arg1:T24 Arg2:T23	
+R7	Measure Arg1:T22 Arg2:T21	
+R8	Measure Arg1:T29 Arg2:T31	
+R9	Mod-Link Arg1:T45 Arg2:T44	
+R10	Acts-on Arg1:T3 Arg2:T1	
+T2	Modifier 319 323	each
+R11	Mod-Link Arg1:T19 Arg2:T2	
+R12	Coreference-Link Arg1:T28 Arg2:T26	
+R13	Measure Arg1:T24 Arg2:T21	
+R14	Measure Arg1:T25 Arg2:T21	
+R15	Measure Arg1:T26 Arg2:T21	
+R16	Acts-on Arg1:E6 Arg2:T37	
+T33	Measure-Type 844 864	threshold (CT) value
+R17	Mod-Link Arg1:T56 Arg2:T55	
+T57	Method 1232 1239	assay’s
+T74	Modifier 1812 1821	continued
+R18	Mod-Link Arg1:E10 Arg2:T74	
+T48	Measure-Type 1066 1069	CT 
+R19	Of-Type Arg1:T51 Arg2:T48	
+T49	Measure-Type 1144 1149	curve

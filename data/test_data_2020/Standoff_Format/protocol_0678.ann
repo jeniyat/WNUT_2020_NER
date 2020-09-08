@@ -1,0 +1,195 @@
+T1	Method 0 11	Preparation
+T2	Modifier 15 35	chemically competent
+T3	Reagent 36 41	cells
+R1	Mod-Link Arg1:T3 Arg2:T2	
+T5	Reagent 51 54	Ice
+T6	Modifier 56 63	sterile
+T7	Size 64 70	1.5 mL
+T8	Location 71 76	tubes
+T9	Action 78 83	label
+E1	Action:T9 
+T10	Modifier 84 99	before starting
+T11	Modifier 102 112	pre-cooled
+T12	Device 113 123	centrifuge
+T13	Concentration 123 129	100 mM
+T14	Reagent 130 135	CaCl2
+T15	Reagent 137 145	glycerol
+T16	Modifier 152 159	sterile
+T17	Concentration 159 164	85 mM
+T18	Reagent 165 170	CaCl2
+T19	Concentration 176 179	15%
+T20	Reagent 180 188	glycerol
+T21	Action 199 203	work
+E2	Action:T21 
+T22	Modifier 210 217	sterile
+T23	Action 232 237	avoid
+E3	Action:T23 
+R4	Mod-Link Arg1:T8 Arg2:T6	
+R5	Measure Arg1:T8 Arg2:T7	
+R6	Mod-Link Arg1:E1 Arg2:T10	
+R7	Coreference-Link Arg1:E1 Arg2:T8	
+R8	Mod-Link Arg1:T12 Arg2:T11	
+R10	Measure Arg1:T14 Arg2:T13	
+R13	Mod-Link Arg1:T14 Arg2:T16	
+R14	Mod-Link Arg1:T15 Arg2:T16	
+R15	Measure Arg1:T18 Arg2:T17	
+R16	Measure Arg1:T20 Arg2:T19	
+R19	Mod-Link Arg1:E2 Arg2:T22	
+T24	Action 257 266	Inoculate
+E4	Action:T24 Acts-on:T27 Site:T28 Using:T30 Using2:T33
+T25	Amount 269 273	5 ml
+T26	Modifier 274 283	overnight
+T27	Reagent 284 291	culture
+T28	Reagent 295 305	LB-medium 
+T29	Modifier 305 312	without
+T30	Reagent 313 324	antibiotics
+T31	Modifier 339 343	with
+T32	Modifier 344 355	appropriate
+T33	Reagent 356 367	antibiotics
+R20	Mod-Link Arg1:T27 Arg2:T26	
+R21	Measure Arg1:T27 Arg2:T25	
+R22	Mod-Link Arg1:T30 Arg2:T29	
+R23	Mod-Link Arg1:T33 Arg2:T32	
+R24	Mod-Link Arg1:T33 Arg2:T31	
+T34	Action 388 392	Grow
+E5	Action:T34 
+T35	Time 393 403	over night
+T36	Temperature 407 412	37 ˚C
+T37	Speed 416 423	250 rpm
+R25	Setting Arg1:E5 Arg2:T37	
+R26	Setting Arg1:E5 Arg2:T36	
+R27	Setting Arg1:E5 Arg2:T35	
+T38	Action 425 434	Inoculate
+E6	Action:T38 Acts-on:T40 Using:T44
+T39	Amount 435 441	100 ml
+T40	Reagent 442 451	LB-medium
+T41	Numerical 457 462	1/100
+T42	Measure-Type 463 469	volume
+T43	Modifier 477 486	overnight
+T44	Reagent 487 494	culture
+T45	Action 499 507	incubate
+E7	Action:T45 
+T46	Measure-Type 514 519	OD600
+T47	Numerical 522 531	0.5 - 0.6
+T48	Temperature 535 540	37 °C
+T49	Speed 545 552	230 rpm
+R28	Setting Arg1:E7 Arg2:T47	
+R29	Of-Type Arg1:T47 Arg2:T46	
+R30	Setting Arg1:E7 Arg2:T48	
+R31	Setting Arg1:E7 Arg2:T49	
+R32	Measure Arg1:T40 Arg2:T39	
+R33	Mod-Link Arg1:T44 Arg2:T43	
+T50	Action 554 562	Transfer
+E8	Action:T50 Acts-on:T51 Site:T55
+T51	Reagent 563 568	cells
+T52	Numerical 572 575	two
+T53	Modifier 576 583	sterile
+T54	Amount 584 589	50 ml
+T55	Location 590 602	falcon tubes
+T56	Action 607 615	incubate
+E9	Action:T56 Acts-on:T55
+T57	Location 616 622	on ice
+T58	Time 627 633	20 min
+R35	Measure Arg1:T55 Arg2:T54	
+R36	Mod-Link Arg1:T55 Arg2:T53	
+R38	Measure Arg1:T55 Arg2:T52	
+R37	Setting Arg1:E9 Arg2:T57	
+R39	Setting Arg1:E9 Arg2:T58	
+T59	Modifier 653 660	always 
+T60	Action 660 664	keep
+E10	Action:T60 Acts-on:T61
+T61	Reagent 665 670	cells
+T62	Modifier 671 675	cold
+R40	Mod-Link Arg1:T61 Arg2:T62	
+R41	Mod-Link Arg1:E10 Arg2:T59	
+T63	Action 677 687	Centrifuge
+E11	Action:T63 
+T64	Time 692 697	5 min
+T65	Speed 701 709	4500 rpm
+T66	Temperature 714 718	4 °C
+T67	Action 720 728	pre-cool
+E12	Action:T67 Acts-on:T68
+T68	Device 729 739	centrifuge
+T69	Action 745 752	discard
+E13	Action:T69 Acts-on:T70
+T70	Reagent 757 768	supernatant
+R42	Setting Arg1:E11 Arg2:T64	
+R43	Setting Arg1:E11 Arg2:T65	
+R44	Setting Arg1:E11 Arg2:T66	
+T71	Modifier 770 779	Carefully
+T72	Action 780 787	suspend
+E14	Action:T72 Acts-on:T75 Site:T79
+T73	Modifier 881 885	each
+T74	Modifier 788 792	each
+T75	Reagent 793 799	pellet
+T76	Amount 803 808	20 ml
+T77	Modifier 812 821	ice-cold 
+T78	Concentration 821 827	100 mM
+T79	Reagent 828 833	CaCl2
+T80	Action 838 846	incubate
+E15	Action:T80 
+T81	Location 847 853	on ice
+T82	Time 858 861	1 h
+R45	Mod-Link Arg1:T79 Arg2:T77	
+R46	Measure Arg1:T79 Arg2:T78	
+R47	Mod-Link Arg1:E14 Arg2:T71	
+R48	Mod-Link Arg1:T75 Arg2:T74	
+R49	Measure Arg1:T79 Arg2:T76	
+R50	Setting Arg1:E15 Arg2:T81	
+R51	Setting Arg1:E15 Arg2:T82	
+T83	Modifier 863 872	Carefully
+T84	Action 873 880	suspend
+E16	Action:T84 Acts-on:T85 Site:T89
+T85	Reagent 886 892	pellet
+T86	Amount 896 900	2 ml
+T87	Modifier 901 908	icecold
+T88	Concentration 909 914	85 mM
+T89	Reagent 915 920	CaCl2
+T90	Concentration 932 935	15%
+T91	Reagent 936 944	Glycerol
+R52	Measure Arg1:T91 Arg2:T90	
+R53	Mod-Link Arg1:E16 Arg2:T83	
+R54	Mod-Link Arg1:T85 Arg2:T73	
+R55	Measure Arg1:T89 Arg2:T88	
+R56	Mod-Link Arg1:T89 Arg2:T87	
+R57	Measure Arg1:T89 Arg2:T86	
+T93	Action 946 953	Pipette
+E18	Action:T93 Acts-on:T106 Site:T98
+T94	Amount 954 965	50 - 200 µl
+T95	Modifier 978 986	prepared
+T96	Modifier 988 998	pre-cooled
+T97	Amount 999 1005	1.5 ml
+T98	Location 1006 1011	tubes
+T99	Action 1013 1017	work
+E19	Action:T99 
+T100	Location 1018 1024	on ice
+R58	Setting Arg1:E19 Arg2:T100	
+T101	Action 1027 1039	shock-freeze
+E20	Action:T101 Using:T103 Using2:T102
+T102	Reagent 1043 1058	liquid nitrogen
+T103	Reagent 1065 1073	dry ice 
+T104	Action 1077 1082	store
+E21	Action:T104 
+T105	Temperature 1086 1092	-80 °C
+R59	Setting Arg1:E21 Arg2:T105	
+T106	Reagent 966 974	aliquots
+R60	Measure Arg1:T106 Arg2:T94	
+R61	Mod-Link Arg1:T97 Arg2:T96	
+R62	Mod-Link Arg1:T97 Arg2:T95	
+T107	Method 1097 1115	DNA transformation
+T108	Action 1117 1121	thaw
+E22	Action:T108 Acts-on:T110
+T109	Modifier 1122 1131	competent
+T110	Reagent 1132 1137	cells
+T111	Temperature 1138 1144	on ice
+R63	Setting Arg1:E22 Arg2:T111	
+R64	Mod-Link Arg1:T110 Arg2:T109	
+R65	Acts-on Arg1:T1 Arg2:T3	
+T4	Method 238 251	contamination
+R2	Acts-on Arg1:E3 Arg2:T4	
+T112	Reagent 330 334	DH5a
+T113	Reagent 379 386	strains
+R3	Of-Type Arg1:T41 Arg2:T42	
+R9	Measure Arg1:T44 Arg2:T41	
+R11	Using Arg1:E11 Arg2:T68	
+R12	Meronym Arg1:T91 Arg2:T89	

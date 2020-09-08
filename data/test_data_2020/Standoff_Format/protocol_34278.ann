@@ -1,0 +1,166 @@
+T1	Modifier 0 15	WHO-recommended
+T2	Reagent 16 23	handrub
+T3	Method 24 36	formulations
+T4	Method 48 60	preparations
+T5	Action 61 65	Pour
+E1	Action:T5 
+T6	Modifier 75 80	large
+T7	Location 81 87	bottle
+T8	Location 91 95	tank
+T9	Modifier 96 101	up to
+T10	Generic-Measure 106 120	graduated mark
+T11	Action 122 125	Add
+E2	Action:T11 
+T12	Location 136 154	measuring cylinder
+T13	Action 156 159	Add
+E3	Action:T13 
+T14	Location 168 186	measuring cylinder
+T15	Action 188 191	Top
+E4	Action:T15 
+T16	Location 196 202	bottle
+T17	Location 203 207	tank
+T18	Modifier 208 213	up to
+T19	Generic-Measure 218 231	10-liter mark
+T20	Modifier 237 254	sterile distilled
+T21	Modifier 258 269	cold boiled
+T22	Reagent 270 275	water
+T23	Action 277 282	Place
+E5	Action:T23 
+T24	Seal 287 290	lid
+T25	Seal 298 307	screw cap
+T26	Location 315 319	tank
+T27	Location 320 326	bottle
+T28	Method 353 364	preparation
+T29	Method 386 397	evaporation
+T30	Action 378 385	prevent
+E6	Action:T30 
+T31	Action 399 402	Mix
+E7	Action:T31 
+T32	Reagent 407 415	solution
+T33	Action 419 426	shaking
+E8	Action:T33 
+T34	Modifier 427 433	gently
+T35	Device 466 472	paddle
+T36	Modifier 474 485	Immediately
+T37	Action 486 495	divide up
+E9	Action:T37 
+T38	Reagent 500 508	solution
+T39	Modifier 518 523	final
+T40	Location 524 534	containers
+T41	Action 536 540	Pour
+E10	Action:T41 
+T42	Modifier 550 555	large
+T43	Location 556 562	bottle
+T44	Location 566 570	tank
+T45	Modifier 571 576	up to
+T46	Generic-Measure 581 595	graduated mark
+T47	Action 597 600	Add
+E11	Action:T47 
+T48	Location 611 629	measuring cylinder
+T49	Action 631 634	Add
+E12	Action:T49 
+T50	Location 643 661	measuring cylinder
+T51	Action 663 666	Top
+E13	Action:T51 
+T52	Location 671 677	bottle
+T53	Location 678 682	tank
+T54	Modifier 683 688	up to
+T55	Generic-Measure 693 706	10-liter mark
+T56	Modifier 712 729	sterile distilled
+T57	Modifier 733 744	cold boiled
+T58	Reagent 745 750	water
+T59	Action 752 757	Place
+E14	Action:T59 
+T60	Seal 762 765	lid
+T61	Seal 773 782	screw cap
+T62	Location 790 794	tank
+T63	Location 795 801	bottle
+T64	Method 828 839	preparation
+T65	Action 853 860	prevent
+E15	Action:T65 
+T66	Method 861 872	evaporation
+T67	Action 874 877	Mix
+E16	Action:T67 
+T68	Reagent 882 890	solution
+T69	Action 894 901	shaking
+E17	Action:T69 
+T70	Modifier 902 908	gently
+T71	Device 941 947	paddle
+T72	Action 458 463	using
+E18	Action:T72 
+T73	Action 933 938	using
+E19	Action:T73 
+T74	Action 949 954	Place
+E20	Action:T74 
+T75	Location 959 966	bottles
+T76	Modifier 997 1008	Immediately
+T77	Action 1009 1018	divide up
+E21	Action:T77 
+T78	Reagent 1023 1031	solution
+T79	Modifier 1041 1046	final
+T80	Location 1047 1057	containers
+T81	Action 1059 1064	Place
+E22	Action:T81 
+T82	Location 1069 1076	bottles
+R1	Mod-Link Arg1:T2 Arg2:T1	
+R2	Site Arg1:E1 Arg2:T7	
+R3	Mod-Link Arg1:T7 Arg2:T6	
+R4	Or Arg1:T7 Arg2:T8	
+R5	Mod-Link Arg1:T10 Arg2:T9	
+R6	Setting Arg1:E1 Arg2:T10	
+R7	Using Arg1:E2 Arg2:T12	
+R8	Using Arg1:E3 Arg2:T14	
+R9	Acts-on Arg1:E4 Arg2:T16	
+R10	Or Arg1:T16 Arg2:T17	
+R11	Mod-Link Arg1:T19 Arg2:T18	
+R12	Setting Arg1:E4 Arg2:T19	
+R13	Or Arg1:T20 Arg2:T21	
+R14	Mod-Link Arg1:T22 Arg2:T21	
+R15	Using Arg1:E4 Arg2:T22	
+R16	Acts-on Arg1:E5 Arg2:T24	
+R17	Or Arg1:T24 Arg2:T25	
+R18	Site Arg1:E5 Arg2:T26	
+R19	Or Arg1:T26 Arg2:T27	
+R20	Acts-on Arg1:E6 Arg2:T29	
+R21	Acts-on Arg1:E7 Arg2:T32	
+R22	Using Arg1:E7 Arg2:E8	
+R23	Mod-Link Arg1:E8 Arg2:T34	
+R24	Or Arg1:E8 Arg2:E18	
+R25	Acts-on Arg1:E18 Arg2:T35	
+R26	Mod-Link Arg1:E9 Arg2:T36	
+R27	Acts-on Arg1:E9 Arg2:T38	
+R28	Mod-Link Arg1:T40 Arg2:T39	
+R29	Site Arg1:E9 Arg2:T40	
+R30	Acts-on Arg1:E10 Arg2:T43	
+R31	Mod-Link Arg1:T43 Arg2:T42	
+R32	Or Arg1:T43 Arg2:T44	
+R33	Mod-Link Arg1:T46 Arg2:T45	
+R34	Setting Arg1:E10 Arg2:T46	
+R35	Using Arg1:E11 Arg2:T48	
+R36	Using Arg1:E12 Arg2:T50	
+R37	Acts-on Arg1:E13 Arg2:T52	
+R38	Or Arg1:T52 Arg2:T53	
+R39	Mod-Link Arg1:T55 Arg2:T54	
+R40	Setting Arg1:E13 Arg2:T55	
+R41	Or Arg1:T56 Arg2:T57	
+R42	Mod-Link Arg1:T58 Arg2:T57	
+R43	Using Arg1:E13 Arg2:T58	
+R44	Acts-on Arg1:E14 Arg2:T60	
+R45	Or Arg1:T60 Arg2:T61	
+R46	Or Arg1:T62 Arg2:T63	
+R47	Site Arg1:E14 Arg2:T62	
+R48	Acts-on Arg1:E16 Arg2:T68	
+R49	Acts-on Arg1:E15 Arg2:T66	
+R50	Mod-Link Arg1:E17 Arg2:T70	
+R51	Or Arg1:E17 Arg2:E19	
+R52	Acts-on Arg1:E19 Arg2:T71	
+R53	Acts-on Arg1:E20 Arg2:T75	
+R54	Mod-Link Arg1:E21 Arg2:T76	
+R55	Acts-on Arg1:E21 Arg2:T78	
+R56	Site Arg1:E21 Arg2:T80	
+R57	Mod-Link Arg1:T80 Arg2:T79	
+R58	Acts-on Arg1:E22 Arg2:T82	
+T83	Location 970 980	quarantine
+T84	Location 1080 1090	quarantine
+R59	Site Arg1:E20 Arg2:T83	
+R60	Site Arg1:E22 Arg2:T84	

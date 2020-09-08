@@ -1,0 +1,180 @@
+T1	Method 34 37	MIC
+T2	Method 0 32	Minimal Inhibitory Concentration
+T3	Action 93 99	Streak
+E1	Action:T3 
+T4	Reagent 104 112	bacteria
+T5	Location 118 129	agar plates
+T6	Reagent 138 147	inhibitor
+T7	Action 149 157	Incubate
+E2	Action:T7 Acts-on:T8
+T8	Location 158 164	plates
+T9	Time 169 175	18-24h
+T10	Temperature 179 183	37ºC
+R1	Setting Arg1:E2 Arg2:T9	
+R2	Setting Arg1:E2 Arg2:T10	
+T11	Reagent 194 201	isolate
+T12	Action 360 367	Measure
+E3	Action:T12 Acts-on:T24 Measure-Type-Link:T23
+T13	Action 530 533	Add
+E4	Action:T13 Acts-on:T30 Site:T31
+T14	Action 203 209	select
+E5	Action:T14 Acts-on:T16 Count:T15
+T15	Numerical 210 223	three to five
+T16	Reagent 248 256	colonies
+T17	Location 266 277	agar plates
+T18	Action 282 290	transfer
+E6	Action:T18 Acts-on:T22 Site:T19
+T19	Location 301 311	glass tube
+T20	Amount 317 320	5ml
+T21	Reagent 321 329	MH-Broth
+R3	Measure Arg1:T21 Arg2:T20	
+T22	Mention 291 295	them
+R4	Coreference-Link Arg1:T22 Arg2:T16	
+T23	Measure-Type 368 373	OD450
+T24	Reagent 377 385	cultures
+T25	Action 403 407	make
+T26	Action 331 339	Incubate
+E8	Action:T26 
+T27	Time 344 350	18-24h
+T28	Temperature 354 358	37ºC
+R5	Setting Arg1:E8 Arg2:T27	
+R6	Setting Arg1:E8 Arg2:T28	
+T29	Amount 534 539	100µl
+T30	Reagent 540 543	MBH
+T31	Location 549 558	column 12
+R7	Measure Arg1:T30 Arg2:T29	
+T32	Action 492 499	Pipette
+E9	Action:T32 Acts-on:T33 Site:T34
+T33	Reagent 508 511	MHB
+T34	Location 517 528	column 2-11
+T35	Amount 500 504	50µl
+R8	Measure Arg1:T33 Arg2:T35	
+T36	Action 447 450	Use
+E10	Action:T36 
+T37	Reagent 426 429	MHB
+T38	Amount 421 425	x mL
+T39	Measure-Type 433 438	OD450
+T40	Generic-Measure 441 445	0,01
+R9	Of-Type Arg1:T40 Arg2:T39	
+T41	Reagent 408 417	dilutions
+T42	Action 560 563	Add
+E11	Action:T42 Acts-on:T44 Site:T45
+T43	Amount 564 569	100µl
+T44	Reagent 577 587	antibiotic
+T45	Location 593 601	column 1
+R10	Measure Arg1:T44 Arg2:T43	
+T46	Action 603 611	Withdraw
+E12	Action:T46 Site:T48
+T47	Amount 612 616	50µl
+T48	Location 627 631	well
+T49	Location 635 643	column 1
+T50	Location 675 680	wells
+T51	Location 684 692	column 2
+T52	Action 694 697	Mix
+E13	Action:T52 
+T54	Method 701 722	pipetting up and down
+T55	Numerical 723 732	4-6 times
+T56	Action 645 648	add
+E15	Action:T56 Acts-on:T57 Site:T50
+T57	Mention 649 653	this
+R11	Coreference-Link Arg1:T57 Arg2:T47	
+T58	Location 745 753	column 2
+T59	Location 776 784	column 1
+T60	Action 787 793	Repeat
+E16	Action:T60 
+T61	Location 810 819	column 10
+T62	Action 822 829	discard
+E17	Action:T62 Acts-on:T63
+T63	Reagent 844 852	solution
+T64	Location 858 867	column 10
+T65	Modifier 834 843	withdrawn
+R12	Mod-Link Arg1:T63 Arg2:T65	
+T66	Action 869 875	Vortex
+E18	Action:T66 Acts-on:T67
+T67	Reagent 880 899	bacteria suspension
+T68	Action 913 916	Add
+E19	Action:T68 Acts-on:T70 Site:T71
+T69	Amount 917 921	50µl
+T70	Reagent 929 939	suspension
+T71	Location 948 952	well
+T72	Location 956 968	columns 1-11
+T73	Action 970 975	Cover
+E20	Action:T73 Acts-on:T74 Using:T75
+T74	Location 980 986	plates
+T75	Seal 992 996	film
+R13	Measure Arg1:T70 Arg2:T69	
+T76	Seal 1026 1030	seal
+T77	Modifier 1020 1025	tight
+T78	Method 1046 1057	evaporation
+T79	Action 1081 1087	repeat
+E21	Action:T79 Count:T81
+T80	Method 1094 1105	plate setup
+T81	Numerical 1106 1117	three times
+T82	Action 1133 1141	Incubate
+E22	Action:T82 Acts-on:T83
+T83	Location 1146 1151	plate
+T84	Temperature 1155 1159	37ºC
+T85	Time 1164 1170	16-24h
+R14	Setting Arg1:E22 Arg2:T84	
+R15	Setting Arg1:E22 Arg2:T85	
+T86	Action 1172 1179	Measure
+E23	Action:T86 Measure-Type-Link:T87
+T87	Measure-Type 1184 1190	growth
+T88	Action 1194 1207	determinating
+E24	Action:T88 Measure-Type-Link:T89
+T89	Measure-Type 1208 1213	OD450
+R16	Mod-Link Arg1:T76 Arg2:T77	
+T90	Action 1011 1017	create
+E25	Action:T90 Acts-on:T76
+T91	Action 1214 1221	Compare
+E26	Action:T91 
+T92	Action 1263 1270	exclude
+E27	Action:T92 
+T93	Numerical 1240 1245	three
+T94	Reagent 1246 1257	triplicates
+R17	Coreference-Link Arg1:T1 Arg2:T2	
+T95	Reagent 39 57	Müller-Hinton Agar
+T96	Reagent 62 67	Broth
+T97	Action 67 72	Plate
+E28	Action:T97 
+T98	Reagent 77 81	agar
+T99	Location 85 91	plates
+R18	Acts-on Arg1:E28 Arg2:T98	
+R19	Site Arg1:E28 Arg2:T99	
+T100	Modifier 189 193	each
+T101	Modifier 224 247	morphologically similar
+R20	Mod-Link Arg1:T16 Arg2:T101	
+R21	Site Arg1:E5 Arg2:T17	
+R22	Meronym Arg1:T21 Arg2:T19	
+R23	Measure Arg1:T37 Arg2:T38	
+R25	Measure Arg1:T37 Arg2:T40	
+E7	Action:T25 Product:T41
+R24	Site Arg1:E7 Arg2:T37	
+R26	Meronym Arg1:T48 Arg2:T49	
+T102	Modifier 622 626	each
+R27	Mod-Link Arg1:T48 Arg2:T102	
+R28	Using Arg1:E13 Arg2:T54	
+R29	Count Arg1:E13 Arg2:T55	
+T53	Reagent 764 772	dilution
+T103	Numerical 756 763	twofold
+R30	Measure Arg1:T53 Arg2:T103	
+R31	Site Arg1:E16 Arg2:T61	
+R32	Site Arg1:E17 Arg2:T64	
+T104	Modifier 943 947	each
+R33	Mod-Link Arg1:T71 Arg2:T104	
+R34	Meronym Arg1:T71 Arg2:T72	
+T105	Action 1034 1041	prevent
+E14	Action:T105 
+R35	Acts-on Arg1:E14 Arg2:T78	
+R36	Acts-on Arg1:E21 Arg2:T80	
+T106	Reagent 1119 1130	triplicates
+R39	Using Arg1:E23 Arg2:E24	
+T107	Modifier 1088 1093	every
+R37	Mod-Link Arg1:T80 Arg2:T107	
+R38	Measure Arg1:T94 Arg2:T93	
+R40	Site Arg1:E26 Arg2:T94	
+R41	Acts-on Arg1:E1 Arg2:T4	
+R42	Site Arg1:E1 Arg2:T5	
+T108	Modifier 130 137	without
+R43	Mod-Link Arg1:T6 Arg2:T108	
+R44	Mod-Link Arg1:T11 Arg2:T100	

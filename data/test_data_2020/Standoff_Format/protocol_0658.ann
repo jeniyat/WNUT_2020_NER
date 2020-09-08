@@ -1,0 +1,134 @@
+T1	Method 0 10	Extraction
+T2	Reagent 14 25	genomic DNA
+T3	Reagent 32 48	"Edwards" buffer
+T4	Action 49 54	Grind
+E1	Action:T4 Acts-on:T5 Site:T6 Using:T22
+T5	Reagent 55 61	tissue
+T6	Location 148 162	microfuge tube
+T7	Time 198 211	10-15 seconds
+T8	Action 213 216	Add
+E2	Action:T8 Acts-on:T10
+T9	Amount 217 223	400 µl
+T10	Reagent 224 238	Edwards buffer
+R1	Measure Arg1:T10 Arg2:T9	
+T11	Action 240 245	Grind
+E3	Action:T11 
+T12	Modifier 246 253	briefly
+T13	Reagent 279 285	tissue
+T14	Device 291 297	pestle
+R2	Mod-Link Arg1:E3 Arg2:T12	
+T15	Action 299 305	Vortex
+E4	Action:T15 
+T16	Modifier 63 68	fresh
+T17	Modifier 72 78	frozen
+R3	Or Arg1:T17 Arg2:T16	
+T18	Reagent 86 95	seedlings
+R4	Mod-Link Arg1:T18 Arg2:T17	
+T19	Generic-Measure 97 110	0.5-1 rosette
+T20	Reagent 114 128	cauline leaves
+T21	Reagent 130 143	inflorescence
+R5	Meronym Arg1:T18 Arg2:T5	
+R6	Measure Arg1:T20 Arg2:T19	
+R7	Meronym Arg1:T20 Arg2:T5	
+R8	Meronym Arg1:T21 Arg2:T5	
+T22	Device 179 193	plastic pestle
+R9	Setting Arg1:E1 Arg2:T7	
+T23	Action 168 178	autoclaved
+E5	Action:T23 Acts-on:T22
+T24	Modifier 268 278	remaining 
+R10	Mod-Link Arg1:T13 Arg2:T24	
+T25	Action 257 263	remove
+E6	Action:T25 Acts-on:T13 Site:T14
+T26	Time 306 315	5 seconds
+R11	Setting Arg1:E4 Arg2:T26	
+T27	Reagent 321 326	preps
+T28	Action 334 338	kept
+E7	Action:T28 Acts-on:T27
+T29	Temperature 342 358	room temperature
+T30	Temperature 360 362	RT
+T31	Reagent 374 379	preps
+R12	Setting Arg1:E7 Arg2:T29	
+R13	Coreference-Link Arg1:T30 Arg2:T29	
+T32	Action 403 413	Centrifuge
+E8	Action:T32 Site:T33
+T33	Device 427 446	tabletop centrifuge
+T34	Speed 450 460	full speed
+T35	Speed 462 472	13.000 rpm
+R14	Coreference-Link Arg1:T35 Arg2:T34	
+T36	Time 414 423	5 minutes
+R15	Setting Arg1:E8 Arg2:T36	
+R16	Setting Arg1:E8 Arg2:T34	
+T37	Action 475 483	Transfer
+E9	Action:T37 Acts-on:T39 Site:T41
+T38	Amount 484 490	300 µl
+T39	Reagent 491 502	supernatant
+T40	Modifier 510 515	fresh
+T41	Location 516 530	microfuge tube
+R17	Measure Arg1:T39 Arg2:T38	
+R18	Mod-Link Arg1:T41 Arg2:T40	
+T42	Action 531 534	Add
+E10	Action:T42 Acts-on:T44
+T43	Amount 535 541	300 µl
+T44	Reagent 542 553	isopropanol
+T45	Action 558 561	mix
+E11	Action:T45 Acts-on:T44
+R19	Measure Arg1:T44 Arg2:T43	
+T46	Action 562 567	Leave
+E12	Action:T46 
+T47	Time 572 581	2 minutes
+T48	Temperature 585 587	RT
+R20	Setting Arg1:E12 Arg2:T47	
+R21	Setting Arg1:E12 Arg2:T48	
+T49	Action 589 599	Centrifuge
+E13	Action:T49 
+T50	Time 600 610	10 minutes
+T51	Temperature 614 616	RT
+R22	Setting Arg1:E13 Arg2:T50	
+T52	Action 633 640	discard
+E14	Action:T52 Acts-on:T55 Site:T56
+T53	Action 618 628	Decant off
+E15	Action:T53 Acts-on:T55
+T54	Modifier 641 644	all
+T55	Reagent 645 656	supernatant
+T56	Reagent 662 670	S1-waste
+R23	Mod-Link Arg1:T55 Arg2:T54	
+T57	Action 672 676	Wash
+E16	Action:T57 Acts-on:T73 Using:T67
+T58	Action 797 806	Resuspend
+E17	Action:T58 Acts-on:T59 Site:T62
+T59	Reagent 807 813	pellet
+T60	Amount 817 822	40 µl
+T61	Modifier 826 833	sterile
+T62	Reagent 834 839	ddH2O
+T63	Action 841 849	incubate
+E18	Action:T63 
+T64	Temperature 853 857	37°C
+R24	Setting Arg1:E18 Arg2:T64	
+R25	Mod-Link Arg1:T62 Arg2:T61	
+R26	Measure Arg1:T62 Arg2:T60	
+T65	Amount 689 695	700 µl
+T66	Concentration 696 700	70 %
+T67	Reagent 701 705	EtOH
+T68	Action 712 722	centrifuge
+E19	Action:T68 
+T69	Time 727 736	5 minutes
+T70	Speed 740 750	full speed
+T71	Action 755 762	discard
+E20	Action:T71 Acts-on:T72
+T72	Reagent 763 767	EtOH
+R27	Setting Arg1:E19 Arg2:T69	
+R28	Setting Arg1:E19 Arg2:T70	
+R29	Measure Arg1:T67 Arg2:T66	
+R30	Measure Arg1:T67 Arg2:T65	
+T73	Reagent 677 683	pellet
+T74	Action 769 776	Air dry
+E21	Action:T74 Acts-on:T75
+T75	Reagent 777 787	DNA pellet
+T76	Temperature 791 795	37°C
+R31	Setting Arg1:E21 Arg2:T76	
+T77	Numerical 398 400	20
+R32	Acts-on Arg1:T1 Arg2:T2	
+R33	Using Arg1:T1 Arg2:T3	
+T78	Modifier 391 398	up to ~
+R34	Mod-Link Arg1:T77 Arg2:T78	
+R35	Measure Arg1:T31 Arg2:T77	

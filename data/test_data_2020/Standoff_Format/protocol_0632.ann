@@ -1,0 +1,319 @@
+T1	Action 25 35	Centrifuge
+E1	Action:T1 Acts-on:T3
+T2	Amount 36 46	10 – 15 ml
+T3	Reagent 50 61	yeast cells
+T4	Amount 67 72	15-ml
+T5	Location 81 85	tube
+T6	Modifier 73 80	conical
+T7	Speed 89 98	1,500 rcf
+T8	Temperature 100 116	room temperature
+T9	Time 122 127	3 min
+T10	Action 128 134	Decant
+E2	Action:T10 Acts-on:T11
+T11	Reagent 135 146	supernatant
+T12	Action 151 157	freeze
+E3	Action:T12 Acts-on:T13 Site:T14
+T13	Reagent 158 163	cells
+T14	Reagent 167 182	liquid nitrogen
+T15	Modifier 187 193	frozen
+T16	Reagent 194 205	cell pellet
+T17	Action 207 210	add
+E4	Action:T17 Acts-on:T20 Acts-on2:T22 Site:T16
+T18	Amount 211 217	800 µl
+T19	Modifier 221 235	acid saturated
+T20	Reagent 236 242	phenol
+T21	Amount 247 253	800 µl
+T22	Reagent 257 269	lysis buffer
+T23	Action 270 276	Vortex
+E5	Action:T23 Acts-on:T24 Site:T25
+T24	Reagent 283 290	pellets
+T25	Reagent 298 306	solution
+T26	Action 309 314	Place
+E6	Action:T26 Acts-on:T27 Site:T28
+T27	Location 315 320	tubes
+T28	Device 324 334	MultiTherm
+T29	Action 346 356	pre-heated
+E7	Action:T29 Acts-on:T28
+T30	Temperature 360 364	65°C
+T31	Action 366 373	Vortex 
+E8	Action:T31 
+T32	Time 398 404	45 min
+T33	Temperature 408 412	65°C
+T34	Action 414 422	Transfer
+E9	Action:T34 Acts-on:T35 Site:T38
+T35	Reagent 423 429	lysate
+T36	Modifier 433 443	RNase-free
+T37	Size 444 448	2-ml
+T38	Location 449 453	tube
+T39	Action 454 464	Centrifuge
+E10	Action:T39 Site:T42
+T40	Time 465 471	10 min
+T41	Speed 475 484	max speed
+T42	Device 488 503	microcentrifuge
+T43	Temperature 507 510	4°C
+T44	Action 511 519	Transfer
+E11	Action:T44 Acts-on:T45 Site:T48
+T45	Reagent 524 537	aqueous phase
+T46	Modifier 543 559	fresh RNase-free
+T47	Size 560 564	2-ml
+T48	Location 565 569	tube
+T49	Amount 581 587	800 µl
+T50	Reagent 588 594	phenol
+T51	Action 595 601	Vortex
+E12	Action:T51 
+T52	Modifier 602 609	briefly
+T53	Action 614 624	centrifuge
+E13	Action:T53 Site:T56
+T54	Time 625 630	5 min
+T55	Speed 634 643	5,000 rpm
+T56	Device 649 664	microcentrifuge
+T57	Temperature 668 684	room temperature
+T58	Action 685 694	Transfer 
+E14	Action:T58 Acts-on:T59 Site:T62
+T59	Reagent 698 711	aqueous phase
+T60	Modifier 717 733	fresh RNase-free
+T61	Size 734 738	2-ml
+T62	Location 739 743	tube
+T63	Amount 755 761	800 µl
+T64	Reagent 762 772	chloroform
+T65	Action 773 779	Vortex
+E15	Action:T65 
+T66	Modifier 780 787	briefly
+T67	Action 792 802	centrifuge
+E16	Action:T67 Site:T70
+T68	Time 803 808	5 min
+T69	Speed 812 821	5,000 rpm
+T70	Device 827 842	microcentrifuge
+T71	Temperature 846 862	room temperature
+T72	Action 863 871	Transfer
+E17	Action:T72 Acts-on:T73 Site:T76
+T73	Reagent 872 885	aqueous phase
+T74	Modifier 891 907	fresh RNase-free
+T75	Size 908 912	2-ml
+T76	Location 913 917	tube
+T77	Action 919 922	Add
+E18	Action:T77 Acts-on:T80 Measure-Type-Link:T83 Acts-on2:T87 Measure-Type-Link2:T90
+T78	Amount 923 928	75 µl
+T79	Concentration 929 932	3 M
+T80	Reagent 933 938	NaOAc
+T81	pH 939 945	pH 5.2
+T82	Numerical 947 950	0.1
+T83	Measure-Type 951 957	volume
+T84	Modifier 963 964	~
+T85	Amount 965 971	1.8 ml
+T86	Concentration 972 976	100%
+T87	Reagent 977 984	ethanol
+T88	Modifier 986 987	~
+T89	Numerical 987 990	2.5
+T90	Measure-Type 991 998	volumes
+T91	Action 1000 1005	Place
+E19	Action:T91 Acts-on:T92
+T92	Location 1006 1011	tubes
+T93	Temperature 1015 1020	-20°C
+T95	Modifier 1044 1045	>
+T96	Time 1045 1052	2 hours
+T97	Time 1054 1063	overnight
+T98	Action 1087 1093	Pellet
+E20	Action:T98 Acts-on:T99 Site:T102
+T99	Reagent 1094 1097	RNA
+T100	Speed 1101 1110	max speed
+T101	Time 1115 1121	30 min
+T102	Device 1125 1140	microcentrifuge
+T103	Temperature 1144 1147	4°C
+T104	Modifier 1148 1157	Carefully
+T105	Action 1158 1164	decant
+E21	Action:T105 Acts-on:T106
+T106	Reagent 1165 1176	supernatant
+T107	Action 1181 1184	add
+E22	Action:T107 Acts-on:T110
+T108	Amount 1185 1189	1 ml
+T109	Concentration 1190 1193	70%
+T110	Reagent 1194 1198	EtOH
+T111	Action 1202 1206	wash
+E23	Action:T111 Acts-on:T112
+T112	Reagent 1207 1213	pellet
+T113	Action 1214 1225	Centrifuge 
+E24	Action:T113 
+T114	Speed 1228 1237	max speed
+T115	Time 1242 1248	15 min
+T116	Temperature 1252 1255	4°C
+T117	Action 1256 1262	Remove
+E25	Action:T117 Acts-on:T118 Using:T120
+T118	Reagent 1263 1270	ethanol
+T119	Size 1279 1283	1-ml
+T120	Device 1284 1291	pipette
+T121	Modifier 1297 1307	RNase-free
+T122	Device 1308 1320	pipette tips
+T123	Action 1322 1332	Centrifuge
+E26	Action:T123 
+T124	Modifier 1333 1340	briefly
+T125	Time 1342 1349	1-2 min
+T126	Speed 1354 1363	max speed
+T127	Action 1367 1374	collect
+E27	Action:T127 Acts-on:T129 Site:T130
+T128	Modifier 1379 1387	residual
+T129	Reagent 1388 1395	ethanol
+T130	Location 1417 1421	tube
+T131	Action 1426 1432	remove
+E28	Action:T131 Acts-on:T182 Using:T133
+T132	Size 1445 1450	10-ul
+T133	Device 1451 1459	pipette 
+T134	Modifier 1464 1474	RNase-free
+T135	Device 1475 1487	pipette tips
+T136	Action 1500 1506	Pellet
+E29	Action:T136 Acts-on:T137 Site:T140
+T137	Reagent 1507 1510	RNA
+T138	Speed 1514 1523	max speed
+T139	Time 1528 1534	30 min
+T140	Device 1538 1553	microcentrifuge
+T141	Temperature 1557 1560	4°C
+T142	Modifier 1561 1570	Carefully
+T143	Action 1571 1577	decant
+E30	Action:T143 Acts-on:T144
+T144	Reagent 1578 1589	supernatant
+T145	Action 1594 1597	add
+E31	Action:T145 Acts-on:T148
+T146	Amount 1598 1602	1 ml
+T147	Concentration 1603 1606	70%
+T148	Reagent 1607 1611	EtOH
+T149	Action 1615 1619	wash
+E32	Action:T149 Acts-on:T150
+T150	Reagent 1620 1626	pellet
+T151	Action 1627 1638	Centrifuge 
+E33	Action:T151 
+T152	Speed 1641 1650	max speed
+T153	Time 1655 1661	15 min
+T154	Temperature 1665 1668	4°C
+T155	Action 1669 1675	Remove
+E34	Action:T155 Acts-on:T156 Using:T158
+T156	Reagent 1676 1683	ethanol
+T157	Size 1692 1696	1-ml
+T158	Device 1697 1704	pipette
+T159	Modifier 1710 1720	RNase-free
+T160	Device 1721 1733	pipette tips
+T161	Action 1735 1745	Centrifuge
+E35	Action:T161 
+T162	Modifier 1746 1753	briefly
+T163	Time 1755 1762	1-2 min
+T164	Speed 1767 1776	max speed
+T165	Action 1780 1787	collect
+E36	Action:T165 Acts-on:T167 Site:T168
+T166	Modifier 1792 1800	residual
+T167	Reagent 1801 1808	ethanol
+T168	Location 1830 1834	tube
+T169	Action 1839 1845	remove
+E37	Action:T169 Using:T171
+T170	Size 1858 1863	10-ul
+T171	Device 1864 1872	pipette 
+T172	Modifier 1877 1887	RNase-free
+T173	Device 1888 1900	pipette tips
+T174	Action 1904 1913	Resuspend
+E38	Action:T174 Acts-on:T175 Site:T178 Using:T179
+T175	Reagent 1914 1920	pellet
+T176	Amount 1924 1929	50 µl
+T177	Modifier 1930 1940	RNase-free
+T178	Reagent 1941 1943	TE
+T179	Method 1947 1968	pipetting up and down
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Mod-Link Arg1:T5 Arg2:T6	
+R3	Measure Arg1:T5 Arg2:T4	
+R4	Setting Arg1:E1 Arg2:T7	
+R5	Setting Arg1:E1 Arg2:T8	
+R6	Setting Arg1:E1 Arg2:T9	
+R8	Mod-Link Arg1:T16 Arg2:T15	
+R9	Setting Arg1:E4 Arg2:T18	
+R10	Mod-Link Arg1:T20 Arg2:T19	
+R11	Measure Arg1:T22 Arg2:T21	
+R12	Setting Arg1:E7 Arg2:T30	
+R13	Setting Arg1:E8 Arg2:T32	
+R14	Setting Arg1:E8 Arg2:T33	
+T180	Speed 376 393	maximum intensity
+R15	Setting Arg1:E8 Arg2:T180	
+R16	Mod-Link Arg1:T38 Arg2:T36	
+R17	Measure Arg1:T38 Arg2:T37	
+R18	Setting Arg1:E10 Arg2:T40	
+R19	Setting Arg1:E10 Arg2:T41	
+R20	Setting Arg1:E10 Arg2:T43	
+R21	Mod-Link Arg1:T48 Arg2:T46	
+R22	Measure Arg1:T48 Arg2:T47	
+R23	Meronym Arg1:T50 Arg2:T48	
+R24	Measure Arg1:T50 Arg2:T49	
+R25	Mod-Link Arg1:E12 Arg2:T52	
+R26	Setting Arg1:E13 Arg2:T54	
+R27	Setting Arg1:E13 Arg2:T55	
+R28	Setting Arg1:E13 Arg2:T57	
+R29	Mod-Link Arg1:T62 Arg2:T60	
+R30	Measure Arg1:T62 Arg2:T61	
+R31	Measure Arg1:T64 Arg2:T63	
+R32	Meronym Arg1:T64 Arg2:T62	
+R33	Mod-Link Arg1:E15 Arg2:T66	
+R34	Setting Arg1:E16 Arg2:T68	
+R35	Setting Arg1:E16 Arg2:T69	
+R36	Setting Arg1:E16 Arg2:T71	
+R37	Measure Arg1:T76 Arg2:T75	
+R38	Mod-Link Arg1:T76 Arg2:T74	
+R41	Measure Arg1:T80 Arg2:T79	
+R42	Measure Arg1:T80 Arg2:T78	
+R43	Measure Arg1:T80 Arg2:T81	
+R44	Mod-Link Arg1:T85 Arg2:T84	
+R48	Measure Arg1:T87 Arg2:T85	
+R49	Measure Arg1:T87 Arg2:T86	
+R50	Mod-Link Arg1:T89 Arg2:T88	
+R51	Setting Arg1:E19 Arg2:T93	
+T94	Action 1024 1035	precipitate
+E39	Action:T94 Acts-on:T181
+T181	Reagent 1036 1039	RNA
+R52	Setting Arg1:E39 Arg2:T96	
+R53	Setting Arg1:E39 Arg2:T97	
+R54	Mod-Link Arg1:T96 Arg2:T95	
+R55	Setting Arg1:E20 Arg2:T100	
+R56	Setting Arg1:E20 Arg2:T101	
+R57	Setting Arg1:E20 Arg2:T103	
+R58	Mod-Link Arg1:E21 Arg2:T104	
+R61	Setting Arg1:E24 Arg2:T114	
+R62	Setting Arg1:E24 Arg2:T115	
+R63	Setting Arg1:E24 Arg2:T116	
+R64	Measure Arg1:T120 Arg2:T119	
+R65	Mod-Link Arg1:T122 Arg2:T121	
+R66	Mod-Link Arg1:E26 Arg2:T124	
+R67	Setting Arg1:E26 Arg2:T125	
+R68	Setting Arg1:E26 Arg2:T126	
+R69	Mod-Link Arg1:T129 Arg2:T128	
+T182	Mention 1433 1437	that
+R71	Measure Arg1:T133 Arg2:T132	
+R72	Mod-Link Arg1:T135 Arg2:T134	
+R73	Setting Arg1:E29 Arg2:T138	
+R74	Setting Arg1:E29 Arg2:T139	
+R75	Setting Arg1:E29 Arg2:T141	
+R76	Mod-Link Arg1:E30 Arg2:T142	
+R79	Measure Arg1:T148 Arg2:T147	
+R80	Measure Arg1:T148 Arg2:T146	
+R81	Setting Arg1:E33 Arg2:T152	
+R82	Setting Arg1:E33 Arg2:T153	
+R83	Setting Arg1:E33 Arg2:T154	
+R84	Measure Arg1:T158 Arg2:T157	
+R85	Mod-Link Arg1:T160 Arg2:T159	
+R86	Mod-Link Arg1:E35 Arg2:T162	
+R87	Setting Arg1:E35 Arg2:T163	
+R88	Setting Arg1:E35 Arg2:T164	
+R89	Mod-Link Arg1:T167 Arg2:T166	
+T183	Mention 1846 1850	that
+R90	Coreference-Link Arg1:T183 Arg2:T167	
+R91	Measure Arg1:T171 Arg2:T170	
+R92	Mod-Link Arg1:T173 Arg2:T172	
+R93	Mod-Link Arg1:T178 Arg2:T177	
+R94	Measure Arg1:T178 Arg2:T176	
+T184	Reagent 0 3	RNA
+T185	Method 4 13	Isolation
+T186	Reagent 19 24	Yeast
+R7	Of-Type Arg1:T82 Arg2:T83	
+R39	Of-Type Arg1:T89 Arg2:T90	
+R40	Measure Arg1:T110 Arg2:T109	
+R45	Measure Arg1:T110 Arg2:T108	
+T187	Location 1403 1409	bottom
+R46	Meronym Arg1:T130 Arg2:T187	
+T188	Location 1816 1822	bottom
+R47	Meronym Arg1:T168 Arg2:T188	
+R59	Coreference-Link Arg1:T182 Arg2:T129	
+R60	Site Arg1:T185 Arg2:T186	
+R70	Acts-on Arg1:T185 Arg2:T184	
