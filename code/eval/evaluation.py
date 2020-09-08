@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import eval_utils
-import conlleval_py_exact
+import conlleval_py as conlleval_py_exact
 import conlleval_py_partial
 import os
 
@@ -190,7 +190,7 @@ if __name__ == '__main__':
 
 
 	parser.add_argument(
-	    "-gold_data",  default="../gold_data/wlp_new_data_2020_Conll_Format/",
+	    "-gold_data",  default="../../data/test_data_2020/Conll_Format/",
 	    help="Standoff_Format gold labeled files"
 	)
 
@@ -201,7 +201,7 @@ if __name__ == '__main__':
 
 
 	parser.add_argument(
-	    "-pred_data",default="../all_system_output/Fancy_Man/",
+	    "-pred_data",default="../../data/test_data_2020/Conll_Format/",
 	    help="Standoff_Format prediction files"
 	)
 
