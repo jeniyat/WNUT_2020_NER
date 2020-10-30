@@ -85,7 +85,14 @@ The participants are required to produce predictions on the protocols as [StandO
         └── Standoff_Format
 ```
 ## Relevant Paper:
-
+ Paper about the shared task:
+ @inproceedings{tabassum2020,
+  title={{WNUT-2020 Task 1 Overview: Extracting Entities and Relations from Wet Lab Protocols}},
+  author={Tabassum, Jeniya and Lee, Sydney and Xu, Wei and Ritter, Alan },,
+  booktitle={Proceedings of EMNLP 2020 Workshop on Noisy User-generated Text (WNUT)},
+  year={2020}
+}
+ 
  Paper about the dataset:
    
 	@inproceedings{kulkarni2018wetlab,
